@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 """STEP 1: grade any unscored past slates for a given sport using the
 ESPN-derived archive in data/raw/master_<sport>_scores.csv (see
-fetch_scores.py). Grades the Ledger pick, the Second Opinion pick, and —
-independently — the prior-game trend check and blowout-win regression
-check's own named favorites, so each signal's real hit rate is measurable
-on its own (mirrors the Diamond Ledger CFB skill's SIGNAL GRADING rule,
-which the live NFL data already follows too).
+fetch_scores.py). For two-way sports (NFL/CFB/MLB/NBA) this independently
+grades the Ledger pick, the Second Opinion pick, and — where the sport's
+model tracks them — the trend/blowout checks' own named favorites, so each
+signal's real hit rate is measurable on its own. Three-way sports (soccer)
+dispatch to that sport's own 3-way grading function instead.
 """
 import csv
+import importlib
 import os
 import sys
 from datetime import datetime, timezone
@@ -44,10 +45,18 @@ def _num(v):
         return None
 
 
-def find_match(scores_for_date, away, home):
-    for row in scores_for_date:
-        if row["Away_Team"] == away and row["Home_Team"] == home:
-            return row
+def find_match(scores_for_date, g):
+    game_id = g.get("espnGameId")
+    if game_id:
+        for row in scores_for_date:
+            if row.get("Game_ID") == game_id:
+                return row
+    away, home = g["away"], g["home"]
+    matches = [r for r in scores_for_date if r["Away_Team"] == away and r["Home_Team"] == home]
+    if len(matches) == 1:
+        return matches[0]
+    if len(matches) > 1:  # doubleheader-style duplicate matchup; time isn't in the CSV, so bail
+        return None
     for row in scores_for_date:
         if (away in row["Away_Team"] or row["Away_Team"] in away) and (home in row["Home_Team"] or row["Home_Team"] in home):
             return row
@@ -60,13 +69,34 @@ def is_resolved(status):
 
 
 def grade_named(g, team, away_score, home_score):
-    """Grade any named team (pick, altPick, altTrendFavors, altBlowoutFavors)
-    against a finished game, using that team's own stored odds/spread."""
+    """Two-way grading: any named team (pick, altPick, altTrendFavors,
+    altBlowoutFavors, ...) against a finished game, using that team's own
+    stored odds/spread."""
     if team == g["away"]:
         return grade_pick(team, away_score, home_score, g.get("awayMoneyline"), g.get("awaySpread"), g.get("awaySpreadOdds"))
     if team == g["home"]:
         return grade_pick(team, home_score, away_score, g.get("homeMoneyline"), g.get("homeSpread"), g.get("homeSpreadOdds"))
     return {"correct": None, "pickReturn": None, "pickCover": None, "pickSpreadReturn": None}
+
+
+TWO_WAY_SIGNAL_FIELDS = [
+    ("pick", "correct", "pickReturn", "pickCover", "pickSpreadReturn"),
+    ("altPick", "altCorrect", "altReturn", "altCover", "altSpreadReturn"),
+    ("altTrendFavors", "altTrendCorrect", "altTrendReturn", "altTrendCover", "altTrendSpreadReturn"),
+    ("altBlowoutFavors", "altBlowoutCorrect", "altBlowoutReturn", "altBlowoutCover", "altBlowoutSpreadReturn"),
+    ("altRestBlowoutFavors", "altRestBlowoutCorrect", "altRestBlowoutReturn", "altRestBlowoutCover", "altRestBlowoutSpreadReturn"),
+]
+
+
+def grade_two_way_game(g, away_score, home_score):
+    for pick_field, correct_field, return_field, cover_field, spread_return_field in TWO_WAY_SIGNAL_FIELDS:
+        if pick_field not in g:
+            continue  # this sport's model doesn't track this signal
+        graded = grade_named(g, g.get(pick_field), away_score, home_score)
+        g[correct_field] = graded["correct"]
+        g[return_field] = graded["pickReturn"]
+        g[cover_field] = graded["pickCover"]
+        g[spread_return_field] = graded["pickSpreadReturn"]
 
 
 def main(sport_key):
@@ -83,6 +113,8 @@ def main(sport_key):
         print(f"[{cfg['label']}] no unscored past slates to grade.")
         return
 
+    model = importlib.import_module(f"lib.{cfg['model']}") if cfg["kind"] == "three_way" else None
+
     for date_str, doc in pending:
         games = doc.get("games", [])
         scores_for_date = scores_by_date.get(date_str, [])
@@ -90,39 +122,28 @@ def main(sport_key):
         missing = []
         matches = {}
 
-        for g in games:
-            row = find_match(scores_for_date, g["away"], g["home"])
+        for i, g in enumerate(games):
+            row = find_match(scores_for_date, g)
             if row is None or not is_resolved(row.get("Status")):
                 all_resolved = False
                 missing.append(f"{g['away']} @ {g['home']}")
                 continue
-            matches[(g["away"], g["home"])] = row
+            matches[i] = row
 
         if not all_resolved:
             print(f"[{cfg['label']}] {date_str}: leaving unscored, missing/incomplete: {missing}")
             continue
 
-        for g in games:
-            row = matches[(g["away"], g["home"])]
+        for i, g in enumerate(games):
+            row = matches[i]
             away_score = _num(row.get("Away_Score"))
             home_score = _num(row.get("Home_Score"))
             g["awayScore"], g["homeScore"] = away_score, home_score
 
-            ledger = grade_named(g, g.get("pick"), away_score, home_score)
-            g["correct"], g["pickReturn"] = ledger["correct"], ledger["pickReturn"]
-            g["pickCover"], g["pickSpreadReturn"] = ledger["pickCover"], ledger["pickSpreadReturn"]
-
-            alt = grade_named(g, g.get("altPick"), away_score, home_score)
-            g["altCorrect"], g["altReturn"] = alt["correct"], alt["pickReturn"]
-            g["altCover"], g["altSpreadReturn"] = alt["pickCover"], alt["pickSpreadReturn"]
-
-            trend = grade_named(g, g.get("altTrendFavors"), away_score, home_score)
-            g["altTrendCorrect"], g["altTrendReturn"] = trend["correct"], trend["pickReturn"]
-            g["altTrendCover"], g["altTrendSpreadReturn"] = trend["pickCover"], trend["pickSpreadReturn"]
-
-            blowout = grade_named(g, g.get("altBlowoutFavors"), away_score, home_score)
-            g["altBlowoutCorrect"], g["altBlowoutReturn"] = blowout["correct"], blowout["pickReturn"]
-            g["altBlowoutCover"], g["altBlowoutSpreadReturn"] = blowout["pickCover"], blowout["pickSpreadReturn"]
+            if cfg["kind"] == "three_way":
+                g.update(model.grade_game(g, away_score, home_score))
+            else:
+                grade_two_way_game(g, away_score, home_score)
 
         doc["scored"] = True
         doc["scoredAt"] = datetime.now(timezone.utc).isoformat()

@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       sports:
-        description: "Space-separated sport keys to run (default: nfl cfb)"
+        description: "Space-separated sport keys to run (default: nfl cfb mlb nba epl)"
         required: false
-        default: "nfl cfb"
+        default: "nfl cfb mlb nba epl"
 
 permissions:
   contents: write
@@ -29,7 +29,7 @@ jobs:
       - name: Run Diamond Ledger cycle
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb' }}
+        run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba epl' }}
 
       - name: Commit and push results
         run: |

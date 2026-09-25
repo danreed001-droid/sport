@@ -8,16 +8,18 @@ SPORTS = {
     "nfl": {
         "label": "NFL",
         "collection": "nfl",
+        "model": "nfl_model",
+        "kind": "two_way",
         "espn_sport": "football",
         "espn_league": "nfl",
         "qb_veto_threshold": 5.0,
         "qb_rating_note": "NFL passer rating (0-158.3 scale)",
-        "offense_pool_fixed_n": 32,
-        "spread_kind": "spread",
     },
     "cfb": {
         "label": "College Football (FBS)",
         "collection": "cfb",
+        "model": "nfl_model",
+        "kind": "two_way",
         "espn_sport": "football",
         "espn_league": "college-football",
         # TENTATIVE per the Diamond Ledger CFB skill — carried over from the
@@ -25,8 +27,35 @@ SPORTS = {
         # Flag to the user for confirmation once real CFB slates run.
         "qb_veto_threshold": 8.0,
         "qb_rating_note": "NCAA passer efficiency rating (wider scale, often 130-170+ for good starters)",
-        "offense_pool_fixed_n": None,  # dynamic: rank among however many FBS teams have played
-        "spread_kind": "spread",
+    },
+    "mlb": {
+        "label": "MLB",
+        "collection": "mlb",
+        "model": "mlb_model",
+        "kind": "two_way",
+        "espn_sport": "baseball",
+        "espn_league": "mlb",
+    },
+    "nba": {
+        # NEW model, no prior Diamond Ledger skill — built by analogy to
+        # the NFL model with the user's approval. All thresholds TENTATIVE.
+        "label": "NBA",
+        "collection": "nba",
+        "model": "nba_model",
+        "kind": "two_way",
+        "espn_sport": "basketball",
+        "espn_league": "nba",
+    },
+    "epl": {
+        # EXPERIMENTAL: 3-way (home/draw/away) market, no prior Diamond
+        # Ledger skill. Defaults to the English Premier League; point
+        # espn_league at a different soccer league to cover another one.
+        "label": "Premier League",
+        "collection": "epl",
+        "model": "soccer_model",
+        "kind": "three_way",
+        "espn_sport": "soccer",
+        "espn_league": "eng.1",
     },
 }
 
