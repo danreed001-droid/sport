@@ -37,14 +37,32 @@ SPORTS = {
         "espn_league": "mlb",
     },
     "nba": {
-        # NEW model, no prior Diamond Ledger skill — built by analogy to
-        # the NFL model with the user's approval. All thresholds TENTATIVE.
+        # nba_model.py here is a standalone experimental model (offensive/net
+        # rating + star-veto), NOT what generates the real "nba" collection
+        # data — that comes from the live "Diamond Ledger — Basketball"
+        # scheduled Routine, whose actual schema is ORtg/DRtg + defense-veto.
+        # The report only needs the universal pick/correct/return fields,
+        # which are consistent across both, so this entry is just for label/
+        # collection/kind lookup in build_report.py.
         "label": "NBA",
         "collection": "nba",
         "model": "nba_model",
         "kind": "two_way",
         "espn_sport": "basketball",
         "espn_league": "nba",
+    },
+    "ncaab": {
+        # Men's college basketball, AP Top 25-involving games only — mirrors
+        # the real "Diamond Ledger — Basketball" scheduled Routine's schema
+        # (awayORtg/homeORtg/awayDRtg/homeDRtg + defense-veto), not the
+        # nba_model.py file (that model is NOT used to generate this data;
+        # the report only reads the universal pick/correct/return fields).
+        "label": "NCAA Basketball",
+        "collection": "ncaab",
+        "model": "nba_model",
+        "kind": "two_way",
+        "espn_sport": "basketball",
+        "espn_league": "mens-college-basketball",
     },
     "epl": {
         # EXPERIMENTAL: 3-way (home/draw/away) market, no prior Diamond
