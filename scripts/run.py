@@ -4,11 +4,12 @@ print a results report. This is the fully-deterministic half of Diamond
 Ledger — no LLM involved — meant to run unattended on a schedule (see
 .github/workflows/diamond-ledger.yml).
 
-STEP 2 (generating today's slate) needs a live Claude Code session to do the
-research — see generate_slate.py's prep/apply modes and the
-diamond-ledger-generate skill — so it is NOT run from here.
+STEP 2 (generating each day's slate) is not run from here at all: the live
+"Diamond Ledger" scheduled Routines (NFL, CFB, MLB, Basketball) do their own
+research in claude.ai and mirror the slate they generate straight into
+data/<collection>/<date>.json. This script only grades what's already there.
 
-Usage: python scripts/run.py [sport ...]   (default: nfl cfb mlb nba epl)
+Usage: python scripts/run.py [sport ...]   (default: nfl cfb mlb nba ncaab epl)
 """
 import os
 import sys
@@ -20,7 +21,7 @@ import score_slate  # noqa: E402
 from lib import sports, store, report  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 
-DEFAULT_SPORTS = ["nfl", "cfb", "mlb", "nba", "epl"]
+DEFAULT_SPORTS = ["nfl", "cfb", "mlb", "nba", "ncaab", "epl"]
 
 
 def _fmt(totals):

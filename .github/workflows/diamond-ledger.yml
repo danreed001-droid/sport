@@ -1,10 +1,11 @@
 name: Diamond Ledger (scoring)
 
 # Grades past slates against ESPN's public scores feed. Fully deterministic,
-# no LLM/API key involved. Generating each new day's slate is a separate,
-# manual routine run from a live Claude Code session (see the
-# diamond-ledger-generate skill) since it needs Claude to actually do the
-# research — that step pushes its own commit when it runs.
+# no LLM/API key involved. Each day's slate itself is generated separately by
+# the live "Diamond Ledger" scheduled Routines (NFL, CFB, MLB, Basketball),
+# which do their own research in claude.ai and mirror the result straight
+# into data/<collection>/<date>.json with their own commit — this workflow
+# never generates picks, only grades what's already there.
 
 on:
   schedule:
@@ -12,9 +13,9 @@ on:
   workflow_dispatch:
     inputs:
       sports:
-        description: "Space-separated sport keys to score (default: nfl cfb mlb nba epl)"
+        description: "Space-separated sport keys to score (default: nfl cfb mlb nba ncaab epl)"
         required: false
-        default: "nfl cfb mlb nba epl"
+        default: "nfl cfb mlb nba ncaab epl"
 
 permissions:
   contents: write
@@ -33,7 +34,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Fetch scores and grade past slates
-        run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba epl' }}
+        run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab epl' }}
 
       - name: Commit and push results
         run: |

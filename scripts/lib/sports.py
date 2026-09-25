@@ -1,73 +1,58 @@
-"""Per-sport configuration registry. NFL and CFB mirror the same Ledger +
-Second Opinion rules (per the existing Diamond Ledger skills for each),
-differing only in the constants below. Adding a new sport that follows the
-same shape means adding one entry here.
+"""Per-sport configuration registry, used by the deterministic scoring
+pipeline (score_slate.py/fetch_scores.py/run.py) and the report builder.
+
+Picks themselves are generated entirely by the live "Diamond Ledger"
+scheduled Routines (NFL, CFB, MLB, Basketball) in claude.ai, each running its
+own real research and mirroring the slate it generates into
+data/<collection>/<date>.json in this repo. Nothing in this repo generates
+picks — "model" below is only set for a sport whose *scoring* needs
+sport-specific grading logic (currently just the three-way soccer market);
+two-way sports all grade through the shared logic in score_slate.py.
 """
 
 SPORTS = {
     "nfl": {
         "label": "NFL",
         "collection": "nfl",
-        "model": "nfl_model",
         "kind": "two_way",
         "espn_sport": "football",
         "espn_league": "nfl",
-        "qb_veto_threshold": 5.0,
-        "qb_rating_note": "NFL passer rating (0-158.3 scale)",
     },
     "cfb": {
         "label": "College Football (FBS)",
         "collection": "cfb",
-        "model": "nfl_model",
         "kind": "two_way",
         "espn_sport": "football",
         "espn_league": "college-football",
-        # TENTATIVE per the Diamond Ledger CFB skill — carried over from the
-        # NFL number, scaled for the wider NCAA passer-efficiency range.
-        # Flag to the user for confirmation once real CFB slates run.
-        "qb_veto_threshold": 8.0,
-        "qb_rating_note": "NCAA passer efficiency rating (wider scale, often 130-170+ for good starters)",
     },
     "mlb": {
         "label": "MLB",
         "collection": "mlb",
-        "model": "mlb_model",
         "kind": "two_way",
         "espn_sport": "baseball",
         "espn_league": "mlb",
     },
     "nba": {
-        # nba_model.py here is a standalone experimental model (offensive/net
-        # rating + star-veto), NOT what generates the real "nba" collection
-        # data — that comes from the live "Diamond Ledger — Basketball"
-        # scheduled Routine, whose actual schema is ORtg/DRtg + defense-veto.
-        # The report only needs the universal pick/correct/return fields,
-        # which are consistent across both, so this entry is just for label/
-        # collection/kind lookup in build_report.py.
         "label": "NBA",
         "collection": "nba",
-        "model": "nba_model",
         "kind": "two_way",
         "espn_sport": "basketball",
         "espn_league": "nba",
     },
     "ncaab": {
-        # Men's college basketball, AP Top 25-involving games only — mirrors
-        # the real "Diamond Ledger — Basketball" scheduled Routine's schema
-        # (awayORtg/homeORtg/awayDRtg/homeDRtg + defense-veto), not the
-        # nba_model.py file (that model is NOT used to generate this data;
-        # the report only reads the universal pick/correct/return fields).
+        # Men's college basketball, AP Top 25-involving games only, per the
+        # live "Diamond Ledger — Basketball" Routine's scope.
         "label": "NCAA Basketball",
         "collection": "ncaab",
-        "model": "nba_model",
         "kind": "two_way",
         "espn_sport": "basketball",
         "espn_league": "mens-college-basketball",
     },
     "epl": {
-        # EXPERIMENTAL: 3-way (home/draw/away) market, no prior Diamond
-        # Ledger skill. Defaults to the English Premier League; point
-        # espn_league at a different soccer league to cover another one.
+        # No live scheduled Routine generates this one yet, so it stays
+        # empty in the real report until one exists. English Premier League
+        # by default; point espn_league at a different soccer league to
+        # cover another one instead.
         "label": "Premier League",
         "collection": "epl",
         "model": "soccer_model",
