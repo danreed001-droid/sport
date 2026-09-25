@@ -1,0 +1,44 @@
+name: Diamond Ledger
+
+on:
+  schedule:
+    - cron: "0 13 * * *"  # ~9am ET (13:00 UTC; adjust +/-1h across DST if it matters to you)
+  workflow_dispatch:
+    inputs:
+      sports:
+        description: "Space-separated sport keys to run (default: nfl cfb)"
+        required: false
+        default: "nfl cfb"
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Diamond Ledger cycle
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb' }}
+
+      - name: Commit and push results
+        run: |
+          git config user.name "diamond-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Diamond Ledger: automated update $(date -u +%F)"
+            git push
+          fi
