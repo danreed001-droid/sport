@@ -93,6 +93,13 @@
 
   /* ---------- league cards ---------- */
   #leagues{display:flex; flex-direction:column; gap:28px;}
+
+  /* ---------- game logs (bottom section) ---------- */
+  #gameLogsSection{margin-top:44px;}
+  .logs-title{font-size:26px; margin-bottom:6px;}
+  .logs-sub{color:var(--ink-2); font-size:14px; margin:0 0 20px;}
+  #gameLogs{display:flex; flex-direction:column; gap:24px;}
+  .log-section .card-head h3{font-size:20px; font-family:'Big Shoulders Display',sans-serif; font-weight:800;}
   .card{
     background:var(--surface-1); border:1px solid var(--border); border-radius:18px;
     padding:24px; box-shadow:var(--shadow);
@@ -180,6 +187,12 @@
   <div class="overview" id="overview"></div>
   <main id="leagues"></main>
 
+  <section id="gameLogsSection">
+    <h2 class="logs-title">Game Logs</h2>
+    <p class="logs-sub">Every graded game, in full — the record behind each league's summary above.</p>
+    <div id="gameLogs"></div>
+  </section>
+
   <footer>
     <strong>How to read this.</strong> Every bet is flat $100 at the odds stored on pick day — never re-fetched, never closing lines.
     Moneyline profit uses standard American-odds payout; against-the-spread bets default to −110 when no price was stored.
@@ -228,7 +241,7 @@
       if (!btn) return;
       var filter = btn.getAttribute('data-filter');
       bar.querySelectorAll('.filter-btn').forEach(function(b){ b.classList.toggle('active', b === btn); });
-      document.querySelectorAll('#leagues .card').forEach(function(card){
+      document.querySelectorAll('#leagues .card, #gameLogs .log-section').forEach(function(card){
         card.hidden = !(filter === 'all' || card.getAttribute('data-league') === filter);
       });
     });
@@ -471,13 +484,28 @@
       var chartHost = document.createElement('div');
       card.appendChild(chartHost);
       renderChart(chartHost, lg.ledgerSeries, lg.altSeries);
-
-      var tableHost = document.createElement('div');
-      card.appendChild(tableHost);
-      renderTable(tableHost, lg.games, lg.kind);
     }
 
     return card;
+  }
+
+  function renderLogSection(key){
+    var lg = DATA.leagues[key];
+    if (!lg.games.length) return null;
+    var sec = document.createElement('section');
+    sec.className = 'card log-section';
+    sec.setAttribute('data-league', key);
+
+    var head = document.createElement('div');
+    head.className = 'card-head';
+    head.innerHTML = '<h3>'+lg.label+'</h3><div class="n">'+lg.games.length+' games</div>';
+    sec.appendChild(head);
+
+    var tableHost = document.createElement('div');
+    sec.appendChild(tableHost);
+    renderTable(tableHost, lg.games, lg.kind);
+
+    return sec;
   }
 
   var badge = document.getElementById('dataBadge');
@@ -494,5 +522,14 @@
   renderOverview();
   var host = document.getElementById('leagues');
   ORDER.forEach(function(key){ host.appendChild(renderLeagueCard(key)); });
+
+  var logsHost = document.getElementById('gameLogs');
+  var logsSection = document.getElementById('gameLogsSection');
+  var anyLogs = false;
+  ORDER.forEach(function(key){
+    var sec = renderLogSection(key);
+    if (sec){ anyLogs = true; logsHost.appendChild(sec); }
+  });
+  logsSection.hidden = !anyLogs;
 })();
 </script>
