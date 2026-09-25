@@ -394,17 +394,11 @@ def build_game(espn_game, research_game, pct, league_ypp, cfg):
     return game
 
 
-def build_slate(session, cfg, research_slate_fn):
-    espn_games = fetch_games(session, cfg)
-    if not espn_games:
-        return None
-
-    from lib.dates import today_et_str, weekday_et
-    date_str = today_et_str()
-    system_prompt = build_system_prompt(cfg)
-    user_prompt = build_user_prompt(date_str, weekday_et(date_str), espn_games, cfg)
-    research = research_slate_fn(system_prompt, user_prompt)
-
+def assemble(espn_games, research, cfg):
+    """Pure: turn ESPN's pregame facts plus a completed research JSON
+    (matching build_user_prompt's schema, however it was produced —
+    typically by a Claude Code session doing WebSearch, not an API call)
+    into the final graded-later game objects."""
     league_ypp = research.get("leagueYPP", {}) or {}
     pct = offense_percentiles(league_ypp)
     research_games = research.get("games", []) or []

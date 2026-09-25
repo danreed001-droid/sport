@@ -1,4 +1,10 @@
-name: Diamond Ledger
+name: Diamond Ledger (scoring)
+
+# Grades past slates against ESPN's public scores feed. Fully deterministic,
+# no LLM/API key involved. Generating each new day's slate is a separate,
+# manual routine run from a live Claude Code session (see the
+# diamond-ledger-generate skill) since it needs Claude to actually do the
+# research — that step pushes its own commit when it runs.
 
 on:
   schedule:
@@ -6,7 +12,7 @@ on:
   workflow_dispatch:
     inputs:
       sports:
-        description: "Space-separated sport keys to run (default: nfl cfb mlb nba epl)"
+        description: "Space-separated sport keys to score (default: nfl cfb mlb nba epl)"
         required: false
         default: "nfl cfb mlb nba epl"
 
@@ -26,9 +32,7 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run Diamond Ledger cycle
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      - name: Fetch scores and grade past slates
         run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba epl' }}
 
       - name: Commit and push results
@@ -39,6 +43,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           else
-            git commit -m "Diamond Ledger: automated update $(date -u +%F)"
+            git commit -m "Diamond Ledger: score past slates $(date -u +%F)"
             git push
           fi

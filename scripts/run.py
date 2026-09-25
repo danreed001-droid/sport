@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
-"""Run the full Diamond Ledger cycle for one or more sports: fetch scores,
-grade past slates, generate today's slate if needed, print a results report.
+"""Run STEP 1 (fetch scores, grade past slates) for one or more sports and
+print a results report. This is the fully-deterministic half of Diamond
+Ledger — no LLM involved — meant to run unattended on a schedule (see
+.github/workflows/diamond-ledger.yml).
 
-Usage: python scripts/run.py [sport ...]   (default: nfl cfb)
+STEP 2 (generating today's slate) needs a live Claude Code session to do the
+research — see generate_slate.py's prep/apply modes and the
+diamond-ledger-generate skill — so it is NOT run from here.
+
+Usage: python scripts/run.py [sport ...]   (default: nfl cfb mlb nba epl)
 """
 import os
 import sys
@@ -11,7 +17,6 @@ sys.path.insert(0, os.path.dirname(__file__))
 
 import fetch_scores  # noqa: E402
 import score_slate  # noqa: E402
-import generate_slate  # noqa: E402
 from lib import sports, store, report  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 
@@ -33,17 +38,16 @@ def run_sport(sport_key, summary_lines):
     print(f"--- STEP 1: scoring past {cfg['label']} slates ---")
     score_slate.main(sport_key)
 
-    print(f"--- STEP 2: generating today's {cfg['label']} slate ---")
-    generate_slate.main(sport_key)
-
     print(f"--- {cfg['label']} results ---")
     docs = store.list_docs(cfg["collection"])
     today = today_et_str()
     r = report.report_for(docs, slate_date=today)
 
     summary_lines.append(f"\n## {cfg['label']}")
-    for label, key in (("Ledger", "ledger"), ("Second Opinion", "secondOpinion"),
-                       ("Trend-check signal", "trendSignal"), ("Blowout-check signal", "blowoutSignal")):
+    rows = [("Ledger", "ledger"), ("Second Opinion", "secondOpinion")]
+    if cfg["kind"] == "two_way":
+        rows += [("Trend-check signal", "trendSignal"), ("Blowout-check signal", "blowoutSignal")]
+    for label, key in rows:
         slate_line = _fmt(r["slate"][key])
         season_line = _fmt(r["seasonToDate"][key])
         print(f"{label}: today's slate - {slate_line}")
@@ -53,7 +57,7 @@ def run_sport(sport_key, summary_lines):
 
 def main():
     requested = sys.argv[1:] or DEFAULT_SPORTS
-    summary_lines = ["# Diamond Ledger results"]
+    summary_lines = ["# Diamond Ledger results (scoring only)"]
     for sport_key in requested:
         run_sport(sport_key, summary_lines)
 
