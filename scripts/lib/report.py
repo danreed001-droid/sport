@@ -57,6 +57,61 @@ def blowout_signal_totals(games):
     return _signal_totals(games, "altBlowoutFavors", "altBlowoutCorrect", "altBlowoutReturn", "altBlowoutCover", "altBlowoutSpreadReturn")
 
 
+def cumulative_series(games, return_key):
+    """Running total of `return_key` by date, for a bankroll-growth chart.
+    Expects each game dict to carry its own "date" (the caller flattens docs
+    into games and stamps the doc's date onto each one first)."""
+    by_date = {}
+    for g in games:
+        date = g.get("date")
+        if date is None:
+            continue
+        by_date.setdefault(date, 0.0)
+        r = g.get(return_key)
+        if r is not None:
+            by_date[date] += r
+    running = 0.0
+    series = []
+    for date in sorted(by_date):
+        running += by_date[date]
+        series.append({"date": date, "value": round(running, 2)})
+    return series
+
+
+def html_payload(label, kind, games):
+    """Shape consumed by the report template (scripts/report/template.html),
+    for one league. `games` must already have "date" stamped on each item.
+
+    Trend/blowout/rest-blowout "extra signal" blocks are included only when
+    this league's own games actually carry that field — checked by key
+    presence, not by whether it ever fired, so a real 0-0-0 record still
+    shows up for a sport that tracks the check."""
+    if kind == "three_way":
+        ledger = _totals(games, "pick", "correct", "pickReturn", "pickCover", "pickSpreadReturn")
+        alt = _totals(games, "altPick", "altCorrect", "altReturn", "altCover", "altSpreadReturn")
+    else:
+        ledger = ledger_totals(games)
+        alt = second_opinion_totals(games)
+
+    payload = {
+        "label": label, "kind": kind,
+        "ledger": ledger, "secondOpinion": alt,
+        "ledgerSeries": cumulative_series(games, "pickReturn"),
+        "altSeries": cumulative_series(games, "altReturn"),
+        "games": sorted(games, key=lambda g: g.get("date", ""), reverse=True),
+    }
+    if any("altTrendFavors" in g for g in games):
+        payload["trendSignal"] = trend_signal_totals(games)
+    if any("altBlowoutFavors" in g for g in games):
+        payload["blowoutSignal"] = blowout_signal_totals(games)
+    if any("altRestBlowoutFavors" in g for g in games):
+        payload["restBlowoutSignal"] = _signal_totals(
+            games, "altRestBlowoutFavors", "altRestBlowoutCorrect",
+            "altRestBlowoutReturn", "altRestBlowoutCover", "altRestBlowoutSpreadReturn",
+        )
+    return payload
+
+
 def report_for(all_docs, slate_date=None):
     all_games = []
     slate_games = []

@@ -286,7 +286,12 @@ def assemble(espn_games, research, cfg):
 
 
 def grade_game(g, away_score, home_score):
-    """3-way moneyline-only grading — no spread/ATS for soccer."""
+    """3-way moneyline-only grading — no spread/ATS for soccer.
+
+    `pick`/`altPick` are the exact team name (matching `away`/`home`) or the
+    literal "Draw" — same convention as every other sport's pick field, not
+    a "home"/"away" side label — so results must be resolved against the
+    game's own team names before comparing to the actual outcome."""
     result = {"correct": None, "pickReturn": None, "altCorrect": None, "altReturn": None}
     if away_score is None or home_score is None:
         return result
@@ -298,15 +303,25 @@ def grade_game(g, away_score, home_score):
     else:
         outcome = "draw"
 
+    def resolve_side(pick):
+        if pick is None:
+            return None
+        if pick == g["away"]:
+            return "away"
+        if pick == g["home"]:
+            return "home"
+        if pick.lower() == "draw":
+            return "draw"
+        return None
+
     price_for = {"away": g.get("awayMoneyline"), "draw": g.get("drawMoneyline"), "home": g.get("homeMoneyline")}
 
     for pick_field, correct_field, return_field in (("pick", "correct", "pickReturn"), ("altPick", "altCorrect", "altReturn")):
-        pick = g.get(pick_field)
-        if pick is None:
+        side = resolve_side(g.get(pick_field))
+        if side is None:
             continue
-        pick_key = pick.lower()
-        correct = (pick_key == outcome)
-        price = price_for.get(pick_key)
+        correct = (side == outcome)
+        price = price_for.get(side)
         if price is None:
             pick_return = None
         else:
