@@ -27,14 +27,23 @@ def build_real_payload():
     for sport_key, cfg in sports.SPORTS.items():
         docs = store.list_docs(cfg["collection"])
         games = []
+        pending = None
         for date_str, doc in docs:
             if not doc.get("scored"):
+                # Not graded yet (games haven't been played) -- surface it as
+                # "today's picks" rather than folding it into the historical
+                # record, and keep only the most recent such date.
+                if pending is None or date_str > pending["date"]:
+                    pending = {"date": date_str, "weekday": doc.get("weekday"), "games": doc.get("games", [])}
                 continue
             for g in doc.get("games", []):
                 g = dict(g)
                 g["date"] = date_str
                 games.append(g)
-        leagues[sport_key] = report.html_payload(cfg["label"], cfg["kind"], games)
+        payload = report.html_payload(cfg["label"], cfg["kind"], games)
+        if pending:
+            payload["pending"] = pending
+        leagues[sport_key] = payload
     return {"generatedAt": "REAL", "leagues": leagues}
 
 
@@ -49,9 +58,9 @@ def main():
             payload = json.load(f)
     else:
         payload = build_real_payload()
-        empty = all(not lg["games"] for lg in payload["leagues"].values())
+        empty = all(not lg["games"] and not lg.get("pending") for lg in payload["leagues"].values())
         if empty:
-            print("No scored games in data/ yet — the report will render with empty leagues.")
+            print("No scored or pending games in data/ yet — the report will render with empty leagues.")
             print("Run with --demo to preview the design with sample data instead.")
 
     with open(TEMPLATE_PATH, "r", encoding="utf-8") as f:

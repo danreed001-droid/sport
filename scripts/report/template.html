@@ -117,6 +117,13 @@
 
   .chart-wrap{position:relative; margin-bottom:20px;}
   svg.chart{width:100%; height:auto; display:block; overflow:visible;}
+  .pending{
+    background:var(--surface-2); border:1px dashed var(--border); border-radius:12px;
+    padding:14px 16px; margin-bottom:20px;
+  }
+  .pending-head{font-weight:700; font-size:13px; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:10px; color:var(--ink-1);}
+  .pending-head .conf{text-transform:none; letter-spacing:0; font-weight:500;}
+  .pending table.games{background:transparent;}
   .chart-empty{
     display:flex; align-items:center; justify-content:center; height:120px;
     color:var(--ink-muted); font-size:13px; background:var(--surface-2); border-radius:12px; margin-bottom:20px;
@@ -159,7 +166,7 @@
 <div class="wrap">
   <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">🌙</button>
   <header class="hero">
-    <div class="badge">Preview · sample data</div>
+    <div class="badge" id="dataBadge">Preview · sample data</div>
     <h1 class="title">DIAMOND LEDGER</h1>
     <p class="tagline">Two independent models, five leagues, every pick graded straight-up, against the spread, and at a flat $100 stake.</p>
     <div class="legend-row">
@@ -176,9 +183,9 @@
   <footer>
     <strong>How to read this.</strong> Every bet is flat $100 at the odds stored on pick day — never re-fetched, never closing lines.
     Moneyline profit uses standard American-odds payout; against-the-spread bets default to −110 when no price was stored.
-    Premier League is graded moneyline-only against a 3-way market (Home / Draw / Away) — there's no spread. This page is currently
-    showing illustrative sample data in the exact shape the real pipeline produces; it will reflect real graded slates once
-    <code>data/&lt;league&gt;/*.json</code> has scored games in it.
+    Premier League is graded moneyline-only against a 3-way market (Home / Draw / Away) — there's no spread.
+    <span id="dataFooterNote">This page is currently showing illustrative sample data in the exact shape the real pipeline
+    produces; it will reflect real graded slates once <code>data/&lt;league&gt;/*.json</code> has scored games in it.</span>
   </footer>
 </div>
 
@@ -409,6 +416,22 @@
     container.innerHTML = '<div class="table-scroll"><table class="games"><thead>'+head+'</thead><tbody>'+rows+'</tbody></table></div>';
   }
 
+  function renderPendingSection(pending, kind){
+    var rows = pending.games.map(function(g){
+      var ledgerPick = g.pick ? g.pick + (g.confidence ? ' <span class="conf">('+g.confidence+')</span>' : '')
+        : '<span class="pill none">skip</span>' + (g.skipReason ? ' <span class="conf">'+g.skipReason+'</span>' : '');
+      var altPick = g.altPick ? g.altPick + (g.altConfidence ? ' <span class="conf">('+g.altConfidence+')</span>' : '')
+        : '<span class="pill none">pass</span>';
+      return '<tr><td class="matchup">'+g.away+' @ '+g.home+(g.time ? '<div class="conf">'+g.time+'</div>' : '')+'</td>'+
+        '<td>'+ledgerPick+'</td><td>'+altPick+'</td></tr>';
+    }).join('');
+    return '<div class="pending">' +
+      '<div class="pending-head">Today’s picks &mdash; '+(pending.weekday || '')+' '+pending.date+' <span class="conf">not yet graded</span></div>' +
+      '<div class="table-scroll"><table class="games"><thead><tr><th>Matchup</th><th>Ledger</th><th>2nd Opinion</th></tr></thead>' +
+      '<tbody>'+rows+'</tbody></table></div>' +
+    '</div>';
+  }
+
   function renderLeagueCard(key){
     var lg = DATA.leagues[key];
     var card = document.createElement('section');
@@ -417,8 +440,14 @@
 
     var head = document.createElement('div');
     head.className = 'card-head';
-    head.innerHTML = '<h2>'+lg.label+'</h2><div class="n">'+lg.games.length+' games graded this preview</div>';
+    head.innerHTML = '<h2>'+lg.label+'</h2><div class="n">'+lg.games.length+' games graded so far</div>';
     card.appendChild(head);
+
+    if (lg.pending && lg.pending.games.length){
+      var pendingHost = document.createElement('div');
+      pendingHost.innerHTML = renderPendingSection(lg.pending, lg.kind);
+      card.appendChild(pendingHost);
+    }
 
     var blocks = [
       renderPredictorBlock('The Ledger', '--ledger-color', lg.ledger, lg.kind),
@@ -438,15 +467,25 @@
     compare.innerHTML = blocks.join('');
     card.appendChild(compare);
 
-    var chartHost = document.createElement('div');
-    card.appendChild(chartHost);
-    renderChart(chartHost, lg.ledgerSeries, lg.altSeries);
+    if (lg.games.length){
+      var chartHost = document.createElement('div');
+      card.appendChild(chartHost);
+      renderChart(chartHost, lg.ledgerSeries, lg.altSeries);
 
-    var tableHost = document.createElement('div');
-    card.appendChild(tableHost);
-    renderTable(tableHost, lg.games, lg.kind);
+      var tableHost = document.createElement('div');
+      card.appendChild(tableHost);
+      renderTable(tableHost, lg.games, lg.kind);
+    }
 
     return card;
+  }
+
+  var badge = document.getElementById('dataBadge');
+  if (DATA.generatedAt && DATA.generatedAt !== 'DEMO'){
+    badge.textContent = 'Live — real graded + pending picks';
+    document.getElementById('dataFooterNote').textContent =
+      'Scored records reflect games data/<league>/*.json has actually graded; "today’s picks" panels are real, ' +
+      'ungraded slates generated by the pipeline and will move into the record once played and scored.';
   }
 
   initTheme();
