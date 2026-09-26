@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-25",
+  "picks": {
+    "mlb-2026-09-25-cleveland-guardians-kansas-city-royals-7-40-pm-et": {
+      "sport": "mlb",
+      "away": "Cleveland Guardians",
+      "home": "Kansas City Royals",
+      "time": "7:40 PM ET",
+      "side": "away",
+      "team": "Cleveland Guardians",
+      "spread": -1.5,
+      "spreadOdds": 122,
+      "moneyline": -142,
+      "submittedAt": "2026-09-25T23:26:35.095Z",
+      "source": "Ledger Reasons page (migrated)"
+    },
+    "mlb-2026-09-25-los-angeles-dodgers-san-francisco-giants-10-15-pm-et": {
+      "sport": "mlb",
+      "away": "Los Angeles Dodgers",
+      "home": "San Francisco Giants",
+      "time": "10:15 PM ET",
+      "side": "away",
+      "team": "Los Angeles Dodgers",
+      "spread": null,
+      "spreadOdds": null,
+      "moneyline": -130,
+      "submittedAt": "2026-09-25T23:29:09.603Z",
+      "source": "Ledger Reasons page (migrated)"
+    }
+  },
+  "scores": {
+    "mlb-2026-09-25-atlanta-braves-miami-marlins-7-10-pm-et": "ANa",
+    "mlb-2026-09-25-baltimore-orioles-new-york-yankees-4-05-pm-et": "HNN",
+    "mlb-2026-09-25-baltimore-orioles-new-york-yankees-7-05-pm-et": "NNN",
+    "mlb-2026-09-25-chicago-cubs-boston-red-sox-1-05-pm-et": "aNA",
+    "mlb-2026-09-25-chicago-cubs-boston-red-sox-6-05-pm-et": "AN",
+    "mlb-2026-09-25-cincinnati-reds-toronto-blue-jays-7-07-pm-et": "hN",
+    "mlb-2026-09-25-cleveland-guardians-kansas-city-royals-7-40-pm-et": "aNaAA",
+    "mlb-2026-09-25-colorado-rockies-chicago-white-sox-7-40-pm-et": "hNhhN",
+    "mlb-2026-09-25-houston-astros-athletics-9-40-pm-et": "aNa",
+    "mlb-2026-09-25-los-angeles-angels-seattle-mariners-10-10-pm-et": "NN",
+    "mlb-2026-09-25-los-angeles-dodgers-san-francisco-giants-10-15-pm-et": "Aaaa",
+    "mlb-2026-09-25-new-york-mets-washington-nationals-6-45-pm-et": "Nhh",
+    "mlb-2026-09-25-pittsburgh-pirates-detroit-tigers-6-40-pm-et": "Ha",
+    "mlb-2026-09-25-st-louis-cardinals-milwaukee-brewers-7-40-pm-et": "hN",
+    "mlb-2026-09-25-tampa-bay-rays-philadelphia-phillies-6-40-pm-et": "aNNHH",
+    "mlb-2026-09-25-texas-rangers-minnesota-twins-8-10-pm-et": "NNNH"
+  }
+}

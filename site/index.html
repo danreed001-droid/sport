@@ -196,11 +196,13 @@ footer b{color:var(--ink);}
     savePending();
   }
 
-  function choose(id, side){
-    var now = effectiveSide(id), c = committedSide(id);
-    var next = now===side ? null : side;
+  function setSide(id, next){
+    var c = committedSide(id);
     if((next||null) === (c||null)) delete pending[id];
     else pending[id] = next || 'none';
+  }
+  function choose(id, side){
+    setSide(id, effectiveSide(id)===side ? null : side);
     savePending();
     renderPickRow(id);
     renderSubmitBar();
@@ -208,6 +210,7 @@ footer b{color:var(--ink);}
 
   // ---- your score for each Second Opinion reason: A away, a half away, N neutral, h half home, H home ----
   var PTS = {A:[1,0], a:[.5,0], N:[0,0], h:[0,.5], H:[0,1]};
+  var BET_MARGIN = 2.5;
   var DIRS = {North:'N.',South:'S.',East:'E.',West:'W.',Central:'C.',Northern:'N.',Southern:'S.',Eastern:'E.',Western:'W.'};
   function nick(name, sport){
     var w = String(name).split(' ');
@@ -239,6 +242,8 @@ footer b{color:var(--ink);}
   function setScore(id, idx, c){
     var arr = scoresFor(id).split(''); arr[idx] = c; var code = arr.join('');
     if(code === baseScores(id)) delete pendingScores[id]; else pendingScores[id] = code;
+    var t = tallyOf(code), m = Math.abs(t.a - t.h);
+    setSide(id, m >= BET_MARGIN ? (t.a > t.h ? 'away' : 'home') : null);
     savePending(); renderScore(id); renderPickRow(id); renderSubmitBar();
   }
   function scoreInner(id){
@@ -337,7 +342,7 @@ footer b{color:var(--ink);}
       var t = tallyOf(scoresFor(id)), m = Math.abs(t.a-t.h);
       var sp2 = GAMES[id].sport;
       notes += '<span class="tallyline">Your reasons tally <b>'+esc(nick(g.away,sp2))+' '+fmtPts(t.a)+' – '+fmtPts(t.h)+' '+esc(nick(g.home,sp2))+'</b>'
-        + (m ? ' · leans '+esc(t.a>t.h?g.away:g.home)+' by '+fmtPts(m) : ' · even') + (pendingScores[id] ? ' · <i>not submitted</i>' : '') + '</span>';
+        + (m >= BET_MARGIN ? ' · bet '+esc(t.a>t.h?g.away:g.home)+' (margin '+fmtPts(m)+')' : m ? ' · leans '+esc(t.a>t.h?g.away:g.home)+' by '+fmtPts(m)+', under 2.5 = no bet' : ' · even, no bet') + (pendingScores[id] ? ' · <i>not submitted</i>' : '') + '</span>';
     }
     var committed = DATA.myPicks[id];
     if(!changed && committed && committed.result) notes += '<span class="val">'+resultChips(committed.result)+'</span>';
@@ -404,7 +409,7 @@ footer b{color:var(--ink);}
       + (sportsHtml || '<section><p class="sec-p">No games on the slate.</p></section>')
       + '<section><div class="eyebrow">By sport</div><h2 class="sec-h">Where the records come from</h2>'+bySportTable()+'</section>'
       + '<footer><b>How submitting works</b><ol>'
-        + '<li>Tap a side on any game, and score any Second Opinion reason Away, ½ Away, Neutral, ½ Home or Home (each starts on the Second Opinion\'s own call). Everything is kept in this browser right away, marked <i>not submitted</i>.</li>'
+        + '<li>Tap a side on any game, and score any Second Opinion reason Away, ½ Away, Neutral, ½ Home or Home (each starts on the Second Opinion\'s own call). When your tally margin reaches 2.5 your pick is set to the leading side; under 2.5 it clears to no bet. Tapping a side yourself overrides it. Everything is kept in this browser right away, marked <i>not submitted</i>.</li>'
         + '<li>Hit <b>Submit to repo</b>. GitHub opens a pre-filled issue — click <b>Submit new issue</b> there.</li>'
         + '<li>The <span class="mono">Pick intake</span> workflow commits your picks to <span class="mono">data/mypicks/'+esc(s.date)+'.json</span>, replies on the issue and closes it.</li>'
         + '<li>This page rebuilds within a couple of minutes and your picks show <i>in repo</i>. Change a pick and submit again any time before the game is final.</li>'
