@@ -81,6 +81,7 @@ def build():
 
     totals = {"ledger": blank(), "alt": blank(), "mine": blank()}
     by_sport = {}
+    plays = []
     for sport, docs in all_docs.items():
         for date_str, doc in docs:
             picks_today = mypicks.get(date_str, {}).get("picks", {})
@@ -93,6 +94,12 @@ def build():
                         continue
                     r = grade(sport, g, side)
                     tally(totals[who], r)
+                    tier = g.get("confidence") if who == "ledger" else g.get("altConfidence") if who == "alt" else None
+                    ats_code = {"cover": "W", "miss": "L", "push": "P"}.get(r["ats"]["result"])
+                    plays.append({"d": date_str, "s": sport, "w": who, "t": tier,
+                                  "a": ats_code, "ap": r["ats"]["profit"],
+                                  "m": r["ml"]["result"] if r["ml"]["counted"] else None, "mp": r["ml"]["profit"],
+                                  "x": 0 if r["ml"]["counted"] else 1})
                     bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "mine": blank()})
                     tally(bucket[who], r)
 
@@ -140,6 +147,8 @@ def build():
         "myPicks": committed,
         "myScores": mypicks.get(slate_date, {}).get("scores", {}),
         "scoreboard": totals,
+        "plays": sorted(plays, key=lambda p: p["d"]),
+        "sportLabels": {k: cfg["label"] for k, cfg in sports.SPORTS.items()},
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
     }
 
