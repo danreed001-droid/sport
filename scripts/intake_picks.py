@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
-from lib.picks import game_id, is_final, line_for  # noqa: E402
+from lib.picks import game_id, is_final, line_for, team_for  # noqa: E402
 
 BLOCK = re.compile(r"```json\s*(\{.*?\})\s*```", re.S)
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -93,7 +93,8 @@ def process(issue):
             continue
         sport, doc, g = games[gid]
         label = f"{g['away']} @ {g['home']}"
-        if side not in ("away", "home", "none"):
+        allowed = ("away", "home", "none", "draw") if g.get("drawMoneyline") is not None else ("away", "home", "none")
+        if side not in allowed:
             rejected.append(f"{label} — unknown side `{side}`")
             continue
         if is_final(doc, g):
@@ -106,11 +107,11 @@ def process(issue):
         ln = line_for(g, side)
         current["picks"][gid] = {
             "sport": sport, "away": g["away"], "home": g["home"], "time": g.get("time"),
-            "side": side, "team": g[side], "spread": ln["spread"], "spreadOdds": ln["spreadOdds"],
+            "side": side, "team": team_for(g, side), "spread": ln["spread"], "spreadOdds": ln["spreadOdds"],
             "moneyline": ln["moneyline"], "submittedAt": now, "issue": issue.get("number"),
         }
         spread = ln["spread"]
-        saved.append(f"{g[side]} {'' if spread is None else ('+' if spread > 0 else '') + str(spread)} ({label})")
+        saved.append(f"{team_for(g, side)} {'' if spread is None else ('+' if spread > 0 else '') + str(spread)} ({label})".replace("  ", " "))
 
     changed = bool(saved or cleared or scored)
     if changed:

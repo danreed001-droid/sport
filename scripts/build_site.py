@@ -22,7 +22,7 @@ SLATE_FIELDS = [
     "away", "home", "time", "awayPitcher", "homePitcher", "statLines",
     "pick", "confidence", "skipped", "skipReason",
     "altPick", "altConfidence", "altCategoryTally", "altReasons",
-    "awayMoneyline", "homeMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
+    "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore",
 ]
 
@@ -89,7 +89,7 @@ def build():
                     continue
                 mine = picks_today.get(game_id(sport, date_str, g), {}).get("side")
                 for who, side in (("ledger", ledger_side(g)), ("alt", alt_side(g)), ("mine", mine)):
-                    if side not in ("away", "home"):
+                    if side not in ("away", "home", "draw"):
                         continue
                     r = grade(sport, g, side)
                     tally(totals[who], r)

@@ -26,7 +26,13 @@ def side_of(g, team):
         return "away"
     if team == g.get("home"):
         return "home"
+    if isinstance(team, str) and team.lower() == "draw" and _num(g.get("drawMoneyline")):
+        return "draw"
     return None
+
+
+def team_for(g, side):
+    return "Draw" if side == "draw" else g.get(side)
 
 
 def line_for(g, side):
@@ -53,13 +59,20 @@ def payout(odds, won):
 
 def grade(sport, g, side):
     """Grade one side of a final game. Moneyline is skipped (counted=False)
-    when the pick is an NFL/college dog of more than 7 points."""
+    when the pick is an NFL/college dog of more than 7 points. A soccer draw
+    pick is moneyline-only."""
+    if side == "draw":
+        won = g["awayScore"] == g["homeScore"]
+        odds = g.get("drawMoneyline")
+        return {"ml": {"result": "W" if won else "L", "profit": round(payout(odds, won), 2) if _num(odds) else None, "counted": True},
+                "ats": {"result": None, "profit": None}}
     other = "home" if side == "away" else "away"
     mine, theirs = g[f"{side}Score"], g[f"{other}Score"]
     ln = line_for(g, side)
 
     ml = {"result": None, "profit": None, "counted": not is_big_dog(sport, ln["spread"])}
-    if ml["counted"] and mine != theirs:
+    three_way = _num(g.get("drawMoneyline"))
+    if ml["counted"] and (mine != theirs or three_way):
         won = mine > theirs
         ml["result"] = "W" if won else "L"
         if _num(ln["moneyline"]):

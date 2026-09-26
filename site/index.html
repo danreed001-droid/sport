@@ -91,6 +91,7 @@ details.why ul{margin:8px 0 0;padding-left:17px;line-height:1.55;}
 .state.repo{background:var(--mine-soft);color:var(--mine);}
 .state.local{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn);}
 .pickbtns{display:flex;gap:8px;}
+.pickbtn.draw{flex:.7;}
 .pickbtn{flex:1;min-width:0;font:inherit;background:var(--surface);border:1.5px solid var(--rule-2);color:var(--ink);border-radius:8px;padding:9px 8px;cursor:pointer;text-align:center;transition:background .12s,border-color .12s;}
 .pickbtn:hover:not([disabled]){border-color:var(--mine);}
 .pickbtn:focus-visible{outline:2px solid var(--mine);outline-offset:2px;}
@@ -163,7 +164,7 @@ footer b{color:var(--ink);}
 <script>
 (function(){
   var DATA = null;
-  var ORDER = ['nfl','cfb','mlb','nba','ncaab','epl'];
+  var ORDER = ['nfl','cfb','mlb','nba','ncaab','soccer','epl'];
   var TIER = {solid:'Solid', lean:'Lean', 'toss-up':'Toss-up', strong:'Strong'};
   var SKIP = {'opsa-veto':'Worse OPS-against','opsa-close':'OPS-against too close','whip-veto':'Worse WHIP','whip-close':'WHIP too close',
     'ops-gap':'OPS too close','off-gap':'Offense too close','qb-veto':'Worse QB','qb-close':'QBs too close',
@@ -318,7 +319,7 @@ footer b{color:var(--ink);}
   function lineText(g){
     var parts = [];
     if(num(g.awaySpread)&&num(g.homeSpread)) parts.push('Spread '+sgn(g.awaySpread)+' / '+sgn(g.homeSpread));
-    if(num(g.awayMoneyline)||num(g.homeMoneyline)) parts.push('ML '+(num(g.awayMoneyline)?sgn(g.awayMoneyline):'n/a')+' / '+(num(g.homeMoneyline)?sgn(g.homeMoneyline):'n/a'));
+    if(num(g.awayMoneyline)||num(g.homeMoneyline)) parts.push('ML '+(num(g.awayMoneyline)?sgn(g.awayMoneyline):'n/a')+(num(g.drawMoneyline)?' / draw '+sgn(g.drawMoneyline):'')+' / '+(num(g.homeMoneyline)?sgn(g.homeMoneyline):'n/a'));
     return parts.join('<br>');
   }
   function btnLabel(team, spread, ml){
@@ -352,6 +353,7 @@ footer b{color:var(--ink);}
     return '<div class="pickhead"><span class="lbl">Your pick</span>'+state+'</div>'
       + '<div class="pickbtns">'
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="away" aria-pressed="'+(side==='away')+'"'+dis+'>'+btnLabel(g.away,g.awaySpread,g.awayMoneyline)+'</button>'
+      + (num(g.drawMoneyline) ? '<button type="button" class="pickbtn draw" data-id="'+esc(id)+'" data-side="draw" aria-pressed="'+(side==='draw')+'"'+dis+'>'+btnLabel('Draw',null,g.drawMoneyline)+'</button>' : '')
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="home" aria-pressed="'+(side==='home')+'"'+dis+'>'+btnLabel(g.home,g.homeSpread,g.homeMoneyline)+'</button>'
       + '</div>' + notes;
   }
@@ -361,7 +363,8 @@ footer b{color:var(--ink);}
   }
   function card(sport, g){
     GAMES[g.id] = {sport:sport, game:g};
-    var who = sport==='mlb' && (g.awayPitcher||g.homePitcher) ? '<div class="sub">'+esc(g.awayPitcher||'TBD')+' vs '+esc(g.homePitcher||'TBD')+'</div>' : '';
+    var who = sport==='mlb' && (g.awayPitcher||g.homePitcher) ? '<div class="sub">'+esc(g.awayPitcher||'TBD')+' vs '+esc(g.homePitcher||'TBD')+'</div>'
+      : g.competition ? '<div class="sub">'+esc(g.competition)+'</div>' : '';
     var score = g.final ? '<span class="sc">'+g.awayScore+'–'+g.homeScore+' F</span>' : '';
     var reasons = (g.altReasons&&g.altReasons.length) ? '<details class="score" id="sc-'+esc(g.id)+'"></details>' : '';
     var stat = (g.statLines&&g.statLines.length) ? '<details class="why"><summary style="color:var(--ledger)">Ledger inputs</summary><ul>'+g.statLines.map(function(r){return '<li>'+esc(r)+'</li>';}).join('')+'</ul></details>' : '';
@@ -396,7 +399,9 @@ footer b{color:var(--ink);}
     var sportsHtml = ORDER.filter(function(k){ return s.sports[k]; }).map(function(k){
       var sp = s.sports[k];
       return '<section id="'+k+'"><div class="eyebrow">'+esc(sp.label)+'</div><h2 class="sec-h">'+sp.games.length+' game'+(sp.games.length===1?'':'s')+'</h2>'
-        + (k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>' : '<p class="sec-p">Tap a side to pick it against the spread.</p>')
+        + (k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>'
+          : k==='soccer' ? '<p class="sec-p">Three-way moneyline: pick home, draw or away. No spread.</p>'
+          : '<p class="sec-p">Tap a side to pick it against the spread.</p>')
         + '<div class="games">'+sp.games.map(function(g){ return card(k,g); }).join('')+'</div></section>';
     }).join('');
     document.getElementById('app').innerHTML =

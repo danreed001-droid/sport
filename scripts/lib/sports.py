@@ -48,6 +48,18 @@ SPORTS = {
         "espn_sport": "basketball",
         "espn_league": "mens-college-basketball",
     },
+    "soccer": {
+        # The live "Diamond Ledger — Soccer" Routine's collection: matches from
+        # several competitions (MLS, Liga MX, European leagues) in one daily
+        # doc. Graded in the ledger database and mirrored here already scored,
+        # so it's deliberately left out of the ESPN scoring workflow's list.
+        "label": "Soccer",
+        "collection": "soccer",
+        "model": "soccer_model",
+        "kind": "three_way",
+        "espn_sport": "soccer",
+        "espn_league": None,
+    },
     "epl": {
         # No live scheduled Routine generates this one yet, so it stays
         # empty in the real report until one exists. English Premier League

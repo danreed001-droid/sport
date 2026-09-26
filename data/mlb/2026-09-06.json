@@ -5,6 +5,7 @@
   "scored": true,
   "scoredAt": "2026-09-07T13:00:00Z",
   "generatedAt": "2026-09-06T13:10:00Z",
+  "note": "First slate generated under the no-flip model: run differential is now the sole, un-overridable determinant of pick direction (home-field flip removed 9/6).",
   "games": [
     {"away":"Brewers","awayERA":3.45,"awayMoneyline":-165,"awayOPS":0.739,"awayOppOPS":0.718,"awayPitcher":"Kyle Harrison","awayRD":174,"awayScore":6,"awayWHIP":1.196,"confidence":"solid","correct":false,"home":"Reds","homeERA":4.83,"homeMoneyline":135,"homeOPS":0.706,"homeOppOPS":0.809,"homePitcher":"Brady Singer","homeRD":-111,"homeScore":9,"homeWHIP":1.447,"moneylineSource":"backfilled: Athlon 9/6 4:31am ET","opsGap":62.07,"pick":"Brewers","pickReturn":-100},
     {"away":"Braves","awayERA":4.25,"awayOPS":0.724,"awayOppOPS":0.726,"awayPitcher":"Tyler Mahle","awayRD":121,"awayScore":5,"awayWHIP":1.288,"confidence":"skip","correct":null,"home":"Phillies","homeERA":4.93,"homeOPS":0.713,"homeOppOPS":0.815,"homePitcher":"Aaron Nola","homeRD":33,"homeScore":4,"homeWHIP":1.399,"opsGap":27.59,"pick":null,"skipReason":"ops-gap","skipped":true},

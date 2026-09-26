@@ -5,6 +5,7 @@
   "scored": true,
   "scoredAt": "2026-09-06T13:00:00Z",
   "generatedAt": "2026-09-05T21:30:00Z",
+  "note": "Re-generated same-day under the full current model (OPS-gap screen, ERA/OPS-against-or-WHIP, home-field flip, pitcher-quality screen) to replace the earlier OPS-only version.",
   "games": [
     {"away":"Giants","awayOPS":0.715,"awayPitcher":"Anthony Molina","awayRD":-73,"awayScore":9,"confidence":"skip","correct":null,"home":"Mets","homeOPS":0.697,"homePitcher":"Zac Thornton","homeRD":-50,"homeScore":5,"opsGap":27.6,"pick":null,"skipReason":"ops-gap","skipped":true},
     {"away":"Cubs","awayERA":3.46,"awayMoneyline":-135,"awayOPS":0.77,"awayPitcher":"Javier Assad","awayRD":133,"awayScore":6,"awayWHIP":1.1,"confidence":"solid","correct":true,"home":"Marlins","homeERA":10.8,"homeMoneyline":111,"homeOPS":0.723,"homePitcher":"Ryan Gusto","homeRD":14,"homeScore":5,"homeWHIP":1.8,"moneylineSource":"backfilled: Athlon 9/5 8:31am ET","opsGap":44.8,"pick":"Cubs","pickReturn":74.07},
