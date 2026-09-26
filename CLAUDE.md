@@ -3,15 +3,20 @@
 `main` is the default branch and the only long-lived one. Work on a branch and
 merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
 
-## Always push after generating or scoring a daily slate
+## How data flows
 
-For every daily Diamond Ledger routine (NFL, CFB, MLB, NBA, NCAAB, EPL): after
-generating today's picks (STEP 2) or scoring a past slate (STEP 1), commit the
-resulting `data/<collection>/<date>.json` file(s) and push before ending the
-run, whether it was triggered live or on a schedule. The repo is the source of
-truth the pick sheet reads from. Mirror the slate exactly as it was written to
-the ledger database; don't generate a second, different slate for a date that
-already has one.
+- **Picks:** the daily Diamond Ledger Routines (NFL, CFB, MLB, NBA/NCAAB,
+  soccer) research each day's games and write the slate to the ledger
+  database only. They don't push to git.
+- **Into the repo:** the hourly "Diamond Ledger — sync to GitHub" Routine runs
+  `scripts/sync_ledger.py` on an export of the database and commits new or
+  changed slates in `data/<sport>/` to `main`. Mirror the database exactly;
+  never generate a second, different slate for a date that already has one.
+- **Grading:** `.github/workflows/diamond-ledger.yml` grades NFL, CFB, MLB,
+  NBA and NCAAB every morning from ESPN (`fetch_scores.py` then
+  `score_slate.py`). The sport Routines no longer grade. Soccer is the
+  exception: its Routine still grades in the database and the sync brings
+  those results over.
 
 ## The user's own picks come from the pick sheet, not from Claude
 
