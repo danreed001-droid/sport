@@ -6,6 +6,7 @@ name: Pick sheet (GitHub Pages)
 
 on:
   push:
+    branches: [main]
   workflow_run:
     workflows: ["Diamond Ledger (scoring)", "Pick intake"]
     types: [completed]
@@ -22,7 +23,6 @@ concurrency:
 
 jobs:
   deploy:
-    if: github.event_name != 'push' || github.ref_name == 'main'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

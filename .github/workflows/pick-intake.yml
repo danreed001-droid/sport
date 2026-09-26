@@ -24,7 +24,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.repository.default_branch }}
+          ref: main
 
       - uses: actions/setup-python@v5
         with:
@@ -44,7 +44,7 @@ jobs:
           git add data/mypicks/
           git commit -m "My picks from issue #${ISSUE_NUMBER}"
           for i in 1 2 3; do
-            git pull --rebase origin "${{ github.event.repository.default_branch }}" && git push && exit 0
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
             sleep 5
           done
           exit 1
