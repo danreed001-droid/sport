@@ -1,0 +1,91 @@
+{
+  "date": "2026-09-26",
+  "picks": {
+    "cfb-2026-09-26-oklahoma-georgia-3-30-pm-et": {
+      "sport": "cfb",
+      "away": "Oklahoma",
+      "home": "Georgia",
+      "time": "3:30 PM ET",
+      "side": "home",
+      "team": "Georgia",
+      "spread": -13.5,
+      "spreadOdds": -110,
+      "moneyline": -550,
+      "submittedAt": "2026-09-26T16:37:07+00:00",
+      "issue": 1
+    },
+    "cfb-2026-09-26-ole-miss-florida-3-30-pm-et": {
+      "sport": "cfb",
+      "away": "Ole Miss",
+      "home": "Florida",
+      "time": "3:30 PM ET",
+      "side": "home",
+      "team": "Florida",
+      "spread": -3.5,
+      "spreadOdds": -102,
+      "moneyline": -164,
+      "submittedAt": "2026-09-26T16:37:07+00:00",
+      "issue": 1
+    },
+    "cfb-2026-09-26-texas-tennessee-12-00-pm-et": {
+      "sport": "cfb",
+      "away": "Texas",
+      "home": "Tennessee",
+      "time": "12:00 PM ET",
+      "side": "home",
+      "team": "Tennessee",
+      "spread": 5.5,
+      "spreadOdds": -115,
+      "moneyline": 164,
+      "submittedAt": "2026-09-26T16:37:07+00:00",
+      "issue": 1
+    },
+    "mlb-2026-09-26-cleveland-guardians-kansas-city-royals-7-10-pm-et": {
+      "sport": "mlb",
+      "away": "Cleveland Guardians",
+      "home": "Kansas City Royals",
+      "time": "7:10 PM ET",
+      "side": "away",
+      "team": "Cleveland Guardians",
+      "spread": -1.5,
+      "spreadOdds": 125,
+      "moneyline": -142,
+      "submittedAt": "2026-09-26T16:37:07+00:00",
+      "issue": 1
+    },
+    "mlb-2026-09-26-colorado-rockies-chicago-white-sox-7-10-pm-et": {
+      "sport": "mlb",
+      "away": "Colorado Rockies",
+      "home": "Chicago White Sox",
+      "time": "7:10 PM ET",
+      "side": "home",
+      "team": "Chicago White Sox",
+      "spread": -1.5,
+      "spreadOdds": -110,
+      "moneyline": -235,
+      "submittedAt": "2026-09-26T16:37:07+00:00",
+      "issue": 1
+    }
+  },
+  "scores": {
+    "cfb-2026-09-26-central-michigan-miami-6-30-pm-et": "HhNNh",
+    "cfb-2026-09-26-houston-georgia-southern-4-00-pm-et": "AhhNNh",
+    "cfb-2026-09-26-illinois-ohio-state-12-00-pm-et": "HAa",
+    "cfb-2026-09-26-iowa-michigan-3-30-pm-et": "NANhA",
+    "cfb-2026-09-26-missouri-mississippi-state-7-45-pm-et": "NNHA",
+    "cfb-2026-09-26-notre-dame-purdue-2-00-pm-et": "Aaa",
+    "cfb-2026-09-26-oklahoma-georgia-3-30-pm-et": "HNhNhhh",
+    "cfb-2026-09-26-ole-miss-florida-3-30-pm-et": "hHNNhh",
+    "cfb-2026-09-26-oregon-usc-7-30-pm-et": "NNaNNHa",
+    "cfb-2026-09-26-south-carolina-alabama-7-00-pm-et": "NAaa",
+    "cfb-2026-09-26-texas-a-m-lsu-7-30-pm-et": "NahH",
+    "cfb-2026-09-26-texas-tennessee-12-00-pm-et": "Nhhhhh",
+    "cfb-2026-09-26-utah-iowa-state-3-30-pm-et": "AhNA",
+    "cfb-2026-09-26-wisconsin-penn-state-5-00-pm-et": "hHNN",
+    "mlb-2026-09-26-arizona-diamondbacks-san-diego-padres-8-40-pm-et": "NHA",
+    "mlb-2026-09-26-cleveland-guardians-kansas-city-royals-7-10-pm-et": "AAa",
+    "mlb-2026-09-26-colorado-rockies-chicago-white-sox-7-10-pm-et": "HHh",
+    "mlb-2026-09-26-new-york-mets-washington-nationals-12-35-pm-et": "NNN",
+    "mlb-2026-09-26-tampa-bay-rays-philadelphia-phillies-7-15-pm-et": "aNAH"
+  }
+}
