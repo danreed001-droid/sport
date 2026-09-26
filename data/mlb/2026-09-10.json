@@ -1,0 +1,15 @@
+{
+  "date": "2026-09-10",
+  "weekday": "Thursday",
+  "sport": "mlb",
+  "scored": true,
+  "scoredAt": "2026-09-12T00:00:00Z",
+  "generatedAt": "2026-09-10T18:00:00Z",
+  "games": [
+    {"away":"Colorado Rockies","awayERA":5.91,"awayMoneyline":267,"awayOPS":0.738,"awayOppOPS":0.868,"awayPitcher":"Ryan Feltner","awayRD":-147,"awayScore":3,"awayWHIP":1.58,"confidence":"solid","correct":true,"home":"New York Yankees","homeERA":2.73,"homeMoneyline":-347,"homeOPS":0.719,"homeOppOPS":0.53,"homePitcher":"Max Fried","homeRD":124,"homeScore":10,"homeWHIP":0.99,"moneylineSource":"backfilled: Athlon 9/10 4:25am ET","opsGap":31.03,"pick":"New York Yankees","pickReturn":28.82,"skipReason":null,"skipped":false},
+    {"away":"Tampa Bay Rays","awayERA":3.04,"awayOPS":0.734,"awayOppOPS":0.675,"awayPitcher":"Nick Martinez","awayRD":58,"awayScore":1,"awayWHIP":1.1,"confidence":"skip","correct":null,"home":"Atlanta Braves","homeERA":3.25,"homeOPS":0.718,"homeOppOPS":0.681,"homePitcher":"Martín Pérez","homeRD":108,"homeScore":3,"homeWHIP":1.27,"opsGap":31.03,"pick":null,"pickReturn":null,"skipReason":"opsa-close","skipped":true},
+    {"away":"Houston Astros","awayERA":5.98,"awayOPS":0.725,"awayOppOPS":0.824,"awayPitcher":"Cristian Javier","awayRD":-41,"awayScore":2,"awayWHIP":1.55,"confidence":"skip","correct":null,"home":"Philadelphia Phillies","homeERA":3.23,"homeOPS":0.714,"homeOppOPS":0.65,"homePitcher":"Zack Wheeler","homeRD":38,"homeScore":1,"homeWHIP":1.08,"opsGap":27.59,"pick":null,"pickReturn":null,"skipReason":"ops-gap","skipped":true},
+    {"away":"Texas Rangers","awayERA":4.21,"awayOPS":0.718,"awayOppOPS":0.648,"awayPitcher":"Jacob deGrom","awayRD":-40,"awayScore":3,"awayWHIP":1.18,"confidence":"skip","correct":null,"home":"Seattle Mariners","homeERA":3.71,"homeOPS":0.684,"homeOppOPS":0.684,"homePitcher":"Logan Gilbert","homeRD":-75,"homeScore":4,"homeWHIP":1.07,"opsGap":44.83,"pick":null,"pickReturn":null,"skipReason":"opsa-close","skipped":true},
+    {"away":"Pittsburgh Pirates","awayERA":4.83,"awayOPS":0.734,"awayOppOPS":0.715,"awayPitcher":"Jared Jones","awayRD":34,"awayScore":2,"awayWHIP":1.28,"confidence":"skip","correct":null,"home":"Chicago White Sox","homeERA":0.56,"homeOPS":0.725,"homeOppOPS":0.415,"homePitcher":"Hagen Smith","homeRD":41,"homeScore":0,"homeWHIP":0.94,"opsGap":10.34,"pick":null,"pickReturn":null,"skipReason":"ops-gap","skipped":true}
+  ]
+}

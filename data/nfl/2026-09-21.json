@@ -1,0 +1,11 @@
+{
+  "date": "2026-09-21",
+  "weekday": "Monday",
+  "sport": "nfl",
+  "scored": true,
+  "scoredAt": "2026-09-22T12:20:00Z",
+  "generatedAt": "2026-09-21T12:43:17Z",
+  "games": [
+    {"altBlowoutCheck":"Backfilled: neither team's prior game was a 13+ point win (Giants +8, Rams lost).","altBlowoutCorrect":null,"altBlowoutCover":null,"altBlowoutFavors":null,"altBlowoutReturn":null,"altBlowoutSpreadReturn":null,"altCategoryTally":"5-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Giants +2.29 vs Rams -4.94 PD/g favors Giants","Rest: Rams 11 days since their Sept 10 opener vs Giants 8 days favors Rams","Travel: Giants make a cross-country trip through three time zones favors Rams","Injuries/Lineup: Rams lose OLB Myles Garrett to IR (knee surgery), S Kam Kinchens out, WR Jordan Whittington doubtful, WR Puka Nacua questionable; Giants have nobody ruled out favors Giants","Form: Giants 1-0 (won 28-20 over Dallas) vs Rams 0-1 (lost 27-7 to San Francisco) favors Giants","Motivation/Spot: Rams in a home prime-time bounce-back spot after an 0-1 start favors Rams","Market: line moved from Rams -7.5 at open down to -6.5 favors Giants","Matchup splits: Giants front generated a 37.8% pressure rate in Week 1 and Stafford's rating drops over 32 points when pressured favors Giants"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Backfilled (CBS): Giants' prior game (W 28-20 vs DAL) and Rams' prior game (L 7-27 vs SF) matched no pattern.","altTrendCorrect":null,"altTrendCover":null,"altTrendFavors":null,"altTrendReturn":null,"altTrendSpreadReturn":null,"away":"New York Giants","awayMoneyline":250,"awayPDpg":2.29,"awayQB":"Jaxson Dart","awayQBRating":113,"awayScore":6,"awaySpread":6.5,"awaySpreadOdds":-102,"awayYPP":5.79,"confidence":"solid","correct":false,"home":"Los Angeles Rams","homeMoneyline":-310,"homePDpg":-4.94,"homeQB":"Matthew Stafford","homeQBRating":85.3,"homeScore":28,"homeSpread":-6.5,"homeSpreadOdds":-120,"homeYPP":5.09,"offGap":32.3,"pick":"New York Giants","pickCover":false,"pickReturn":-100,"pickSpreadReturn":-100,"skipped":false,"statLines":["PD/g +2.29 vs -4.94","Yds/play 5.79 vs 5.09 · 32-pt gap","QB rating 113.0 vs 85.3 (Dart vs Stafford)"],"time":"8:15 PM ET"}
+  ]
+}

@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pick Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#f6f4ec; --surface:#ffffff; --surface-2:#ece7d3; --ink:#201d16; --muted:#726c58;
+  --rule:#ddd5b9; --rule-2:#c9bf9c;
+  --ledger:#2f6fb0; --opinion:#bd6420; --mine:#1f7a4a; --mine-soft:rgba(31,122,74,.13);
+  --win:#1f7a4a; --loss:#b23b2f; --loss-soft:rgba(178,59,47,.12); --push:#8a8672; --warn:#9a6a12;
+  --shadow:0 1px 2px rgba(32,29,22,.05), 0 10px 26px -18px rgba(32,29,22,.4);
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    --paper:#14150f; --surface:#1c1d15; --surface-2:#23241a; --ink:#efece0; --muted:#a19a83;
+    --rule:#33301f; --rule-2:#454027;
+    --ledger:#6ea6e0; --opinion:#e2934f; --mine:#4fc283; --mine-soft:rgba(79,194,131,.16);
+    --win:#4fc283; --loss:#e0776a; --loss-soft:rgba(224,119,106,.16); --push:#b1ab90; --warn:#e0b458;
+    --shadow:0 1px 2px rgba(0,0,0,.4), 0 10px 26px -18px rgba(0,0,0,.7);
+    color-scheme:dark;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:70px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Work Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;padding-bottom:calc(90px + env(safe-area-inset-bottom,0px));}
+h1,h2,h3{font-family:'Big Shoulders Display','Arial Narrow',system-ui,sans-serif;text-transform:uppercase;letter-spacing:.01em;text-wrap:balance;margin:0;}
+.mono{font-family:'IBM Plex Mono',ui-monospace,Menlo,monospace;font-variant-numeric:tabular-nums;}
+.wrap{max-width:920px;margin:0 auto;padding-inline:16px;}
+[hidden]{display:none!important}
+
+.topbar{position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);}
+.topbar .wrap{display:flex;align-items:center;gap:14px;min-height:56px;padding-block:8px;flex-wrap:wrap;}
+.brand{display:flex;align-items:baseline;gap:8px;margin-right:auto;}
+.brand .chip{width:10px;height:10px;background:var(--mine);border-radius:2px;transform:rotate(45deg);flex:none;align-self:center;}
+.brand b{font-family:'Big Shoulders Display',sans-serif;font-size:21px;font-weight:800;text-transform:uppercase;}
+.brand span{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;}
+.stamp{font-size:11.5px;color:var(--muted);font-family:'IBM Plex Mono',monospace;text-align:right;}
+
+.hero{padding-block:26px 4px;}
+.hero h1{font-size:clamp(32px,6vw,48px);font-weight:800;line-height:.98;}
+.hero p{margin:10px 0 0;max-width:62ch;color:var(--muted);font-size:14.5px;}
+
+section{padding-block:26px;border-top:1px solid var(--rule);}
+section.hero{border-top:0;}
+.eyebrow{font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px;margin-bottom:8px;}
+.eyebrow::after{content:"";flex:1;height:1px;background:var(--rule);}
+.sec-h{font-size:21px;font-weight:700;margin-bottom:4px;}
+.sec-p{color:var(--muted);max-width:66ch;margin:0 0 16px;font-size:13px;}
+
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;}
+.tile{background:var(--surface);border:1px solid var(--rule);border-radius:10px;box-shadow:var(--shadow);overflow:hidden;}
+.tile-h{display:flex;align-items:center;gap:8px;padding:12px 16px 10px;border-bottom:1px solid var(--rule);}
+.sw{width:9px;height:9px;border-radius:2px;flex:none;}
+.tile-h h3{font-size:15px;font-weight:700;}
+.tile-h .role{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+.tile-body{padding:12px 16px 14px;display:grid;grid-template-columns:1fr 1fr;gap:12px 14px;}
+.stat .k{font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);}
+.stat .v{font-family:'IBM Plex Mono',monospace;font-size:17px;font-weight:600;margin-top:2px;}
+.stat .n{font-size:11px;color:var(--muted);}
+.tile-note{grid-column:1/-1;font-size:11px;color:var(--muted);border-top:1px dashed var(--rule);padding-top:8px;}
+.pos{color:var(--win);} .neg{color:var(--loss);} .flat{color:var(--muted);}
+
+.games{display:flex;flex-direction:column;gap:12px;}
+.game{background:var(--surface);border:1px solid var(--rule);border-radius:12px;box-shadow:var(--shadow);padding:14px 16px 15px;display:flex;flex-direction:column;gap:11px;}
+.game-top{display:flex;justify-content:space-between;align-items:flex-start;gap:6px 14px;flex-wrap:wrap;}
+.teams{font-family:'Big Shoulders Display',sans-serif;font-size:21px;font-weight:700;line-height:1.1;}
+.teams .sc{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--muted);margin-left:8px;}
+.sub{font-size:11.5px;color:var(--muted);font-family:'IBM Plex Mono',monospace;margin-top:2px;}
+.lines{font-size:11.5px;color:var(--muted);font-family:'IBM Plex Mono',monospace;text-align:right;}
+.models{display:flex;gap:8px;flex-wrap:wrap;}
+.badge{flex:1 1 160px;background:var(--surface-2);border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:2px;}
+.badge .lbl{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;}
+.badge.ledger .lbl{color:var(--ledger);} .badge.opinion .lbl{color:var(--opinion);}
+.badge .val{font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.badge .val.none{color:var(--muted);font-weight:500;font-style:italic;font-size:12.5px;}
+.badge .tier{font-size:11px;color:var(--muted);}
+details.why{font-size:12px;color:var(--muted);}
+details.why summary{cursor:pointer;color:var(--opinion);font-weight:600;font-size:11.5px;width:max-content;max-width:100%;}
+details.why ul{margin:8px 0 0;padding-left:17px;line-height:1.55;}
+
+.pickrow{border-top:1px solid var(--rule);padding-top:11px;display:flex;flex-direction:column;gap:8px;}
+.pickhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+.pickhead .lbl{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--mine);font-weight:700;}
+.state{font-size:10.5px;font-weight:700;letter-spacing:.03em;padding:2px 8px;border-radius:999px;}
+.state.repo{background:var(--mine-soft);color:var(--mine);}
+.state.local{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn);}
+.pickbtns{display:flex;gap:8px;}
+.pickbtn{flex:1;min-width:0;font:inherit;background:var(--surface);border:1.5px solid var(--rule-2);color:var(--ink);border-radius:8px;padding:9px 8px;cursor:pointer;text-align:center;transition:background .12s,border-color .12s;}
+.pickbtn:hover:not([disabled]){border-color:var(--mine);}
+.pickbtn:focus-visible{outline:2px solid var(--mine);outline-offset:2px;}
+.pickbtn[aria-pressed="true"]{background:var(--mine-soft);border-color:var(--mine);color:var(--mine);}
+.pickbtn[disabled]{opacity:.5;cursor:not-allowed;}
+.pickbtn .nm{display:block;font-weight:700;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.pickbtn .ln{display:block;margin-top:1px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
+.note{font-size:11px;color:var(--muted);}
+.note.dog{color:var(--warn);}
+.score{border-top:1px solid var(--rule);padding-top:10px;}
+.score summary{cursor:pointer;font-size:11.5px;font-weight:600;color:var(--opinion);}
+.score summary .yt{color:var(--ink);font-family:'IBM Plex Mono',monospace;font-weight:600;margin-left:6px;}
+.reasons{display:flex;flex-direction:column;gap:12px;margin-top:10px;}
+.reason p{margin:0 0 6px;font-size:12.5px;line-height:1.5;}
+.seg5{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1.5fr) minmax(0,1fr) minmax(0,2fr);gap:4px;}
+.seg5 button{font:inherit;font-size:11px;font-weight:600;min-width:0;padding:6px 2px;border-radius:6px;border:1px solid var(--rule-2);background:var(--surface);color:var(--muted);cursor:pointer;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.seg5 button.half{font-weight:500;}
+.seg5 button[aria-pressed="true"]{background:color-mix(in srgb,var(--opinion) 16%,transparent);border-color:var(--opinion);color:var(--ink);font-weight:700;}
+.seg5 button:focus-visible{outline:2px solid var(--opinion);outline-offset:1px;}
+.seg5 button[disabled]{opacity:.5;cursor:not-allowed;}
+.tallyline{font-size:11.5px;color:var(--muted);}
+.tallyline b{color:var(--ink);font-family:'IBM Plex Mono',monospace;}
+.chip{font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:999px;font-family:'IBM Plex Mono',monospace;}
+.chip.w{background:var(--mine-soft);color:var(--win);} .chip.l{background:var(--loss-soft);color:var(--loss);} .chip.p{background:var(--surface-2);color:var(--push);}
+
+.scroller{overflow-x:auto;border:1px solid var(--rule);border-radius:10px;background:var(--surface);}
+table{border-collapse:collapse;width:100%;font-size:12.5px;min-width:620px;}
+th,td{padding:8px 12px;text-align:right;border-bottom:1px solid var(--rule);white-space:nowrap;font-variant-numeric:tabular-nums;}
+th{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);background:var(--surface-2);}
+th:first-child,td:first-child{text-align:left;}
+tbody tr:last-child td{border-bottom:0;}
+td.mono{font-family:'IBM Plex Mono',monospace;}
+
+footer{border-top:1px solid var(--rule);padding-block:22px 30px;color:var(--muted);font-size:12.5px;line-height:1.6;}
+footer ol,footer ul{margin:6px 0 14px;padding-left:20px;}
+footer b{color:var(--ink);}
+
+.submitbar{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--ink);color:var(--paper);padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:0 -8px 24px -12px rgba(0,0,0,.45);}
+.submitbar .wrap{display:flex;align-items:center;gap:10px 14px;min-height:64px;padding-block:10px;flex-wrap:wrap;}
+.submitbar .msg{margin-right:auto;font-size:13px;}
+.submitbar .msg b{font-family:'IBM Plex Mono',monospace;}
+.submitbar a,.submitbar button{font:inherit;font-weight:700;font-size:13px;border-radius:8px;padding:9px 14px;cursor:pointer;text-decoration:none;}
+.submitbar a{background:var(--mine);color:#fff;border:0;}
+.submitbar button{background:transparent;color:var(--paper);border:1px solid color-mix(in srgb,var(--paper) 40%,transparent);}
+.submitbar a:focus-visible,.submitbar button:focus-visible{outline:2px solid var(--paper);outline-offset:2px;}
+.loading{color:var(--muted);padding:40px 0;}
+
+@media (max-width:540px){
+  .lines{text-align:left;}
+  .tile-body{grid-template-columns:1fr 1fr;}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <div class="brand"><span class="chip"></span><b>Pick Sheet</b><span>Diamond Ledger</span></div>
+  <div class="stamp" id="stamp"></div>
+</div></div>
+
+<main class="wrap" id="app"><p class="loading">Loading today's slate…</p></main>
+
+<div class="submitbar" id="submitbar" hidden><div class="wrap">
+  <div class="msg" id="submitmsg"></div>
+  <button type="button" id="discard">Discard</button>
+  <a id="submitlink" href="#" target="_blank" rel="noopener">Submit to repo</a>
+</div></div>
+
+<script>
+(function(){
+  var DATA = null;
+  var ORDER = ['nfl','cfb','mlb','nba','ncaab','epl'];
+  var TIER = {solid:'Solid', lean:'Lean', 'toss-up':'Toss-up', strong:'Strong'};
+  var SKIP = {'opsa-veto':'Worse OPS-against','opsa-close':'OPS-against too close','whip-veto':'Worse WHIP','whip-close':'WHIP too close',
+    'ops-gap':'OPS too close','off-gap':'Offense too close','qb-veto':'Worse QB','qb-close':'QBs too close',
+    'def-veto':'Worse defense','fcs':'FCS opponent','no-data':'Missing data'};
+
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+  function num(v){ return typeof v==='number' && isFinite(v); }
+  function sgn(v){ return num(v) ? (v>0?'+':'')+v : ''; }
+  function money(v){ if(!num(v)) return '—'; var r=Math.round(v); return (r>=0?'+$':'−$')+Math.abs(r).toLocaleString(); }
+  function pct(w,n){ return n ? Math.round(w/n*1000)/10+'%' : ''; }
+  function cls(v){ return !num(v)||v===0 ? 'flat' : v>0 ? 'pos' : 'neg'; }
+
+  // ---- your unsubmitted picks live in this browser until you submit them ----
+  function pendingKey(){ return 'picksheet.pending.' + DATA.slate.date; }
+  function loadPending(){ try{ var o = JSON.parse(localStorage.getItem(pendingKey())||'{}')||{}; return {sides:o.sides||{}, scores:o.scores||{}}; }catch(e){ return {sides:{}, scores:{}}; } }
+  function savePending(){ try{ localStorage.setItem(pendingKey(), JSON.stringify({sides:pending, scores:pendingScores})); }catch(e){} }
+  var pending = {}, pendingScores = {};
+
+  function committedSide(id){ var p = DATA.myPicks[id]; return p ? p.side : null; }
+  function effectiveSide(id){ return pending.hasOwnProperty(id) ? (pending[id]==='none'?null:pending[id]) : committedSide(id); }
+
+  function reconcile(){
+    Object.keys(pending).forEach(function(id){
+      var c = committedSide(id), p = pending[id];
+      if((p==='none' && !c) || p===c) delete pending[id];
+    });
+    Object.keys(pendingScores).forEach(function(id){
+      if(!GAMES[id] || pendingScores[id]===baseScores(id)) delete pendingScores[id];
+    });
+    savePending();
+  }
+
+  function choose(id, side){
+    var now = effectiveSide(id), c = committedSide(id);
+    var next = now===side ? null : side;
+    if((next||null) === (c||null)) delete pending[id];
+    else pending[id] = next || 'none';
+    savePending();
+    renderPickRow(id);
+    renderSubmitBar();
+  }
+
+  // ---- your score for each Second Opinion reason: A away, a half away, N neutral, h half home, H home ----
+  var PTS = {A:[1,0], a:[.5,0], N:[0,0], h:[0,.5], H:[0,1]};
+  var DIRS = {North:'N.',South:'S.',East:'E.',West:'W.',Central:'C.',Northern:'N.',Southern:'S.',Eastern:'E.',Western:'W.'};
+  function nick(name, sport){
+    var w = String(name).split(' ');
+    if(sport==='mlb' || sport==='nfl' || sport==='nba'){
+      var two = w.slice(-2).join(' ');
+      return /^(Red|White) Sox$|^Blue Jays$|^Trail Blazers$/.test(two) ? two : w[w.length-1];
+    }
+    if(name.length<=12) return name;
+    return w.map(function(x,i){ return i===w.length-1 && x==='State' ? 'St.' : (i===0 && DIRS[x] && w.length>1 ? DIRS[x] : x); }).join(' ');
+  }
+  function mentions(text, team){
+    var t = text.toLowerCase(), full = team.toLowerCase(), last = full.split(' ').pop();
+    if(t.indexOf(full)>=0) return full.length + 100;
+    return new RegExp('\\b'+last.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'\\b').test(t) ? last.length : 0;
+  }
+  function defaultCode(g, reason){
+    var low = reason.toLowerCase(), seg = null, i = low.lastIndexOf('favors ');
+    if(i>=0) seg = reason.slice(i+7);
+    else if((i = low.indexOf(' favored'))>=0) seg = reason.slice(0,i).split(':').pop();
+    if(!seg) return 'N';
+    var a = mentions(seg, g.away), h = mentions(seg, g.home);
+    return a>h ? 'A' : h>a ? 'H' : 'N';
+  }
+  function defaultScores(id){ var g = GAMES[id].game; return (g.altReasons||[]).map(function(r){ return defaultCode(g, r); }).join(''); }
+  function baseScores(id){ return (DATA.myScores||{})[id] || defaultScores(id); }
+  function scoresFor(id){ return pendingScores[id] || baseScores(id); }
+  function fmtPts(v){ return String(Math.round(v*2)/2); }
+  function tallyOf(code){ var a=0,h=0; code.split('').forEach(function(c){ a+=PTS[c][0]; h+=PTS[c][1]; }); return {a:a,h:h}; }
+  function setScore(id, idx, c){
+    var arr = scoresFor(id).split(''); arr[idx] = c; var code = arr.join('');
+    if(code === baseScores(id)) delete pendingScores[id]; else pendingScores[id] = code;
+    savePending(); renderScore(id); renderPickRow(id); renderSubmitBar();
+  }
+  function scoreInner(id){
+    var g = GAMES[id].game, code = scoresFor(id), t = tallyOf(code);
+    var sp = GAMES[id].sport, an = esc(nick(g.away, sp)), hn = esc(nick(g.home, sp)), dis = g.final ? ' disabled' : '';
+    var opts = [['A',an,'',esc(g.away)],['a','½','half','Half point to '+esc(g.away)],['N','Neutral','','Neutral'],['h','½','half','Half point to '+esc(g.home)],['H',hn,'',esc(g.home)]];
+    return '<summary>Second Opinion reasons — score them yourself<span class="yt">'+an+' '+fmtPts(t.a)+' – '+fmtPts(t.h)+' '+hn+'</span></summary>'
+      + '<div class="reasons">' + g.altReasons.map(function(r, i){
+          return '<div class="reason"><p>'+esc(r)+'</p><div class="seg5" role="group" aria-label="Your score for this reason">'
+            + opts.map(function(o){ return '<button type="button" class="'+o[2]+'" data-sid="'+esc(id)+'" data-i="'+i+'" data-c="'+o[0]+'" title="'+o[3]+'" aria-label="'+o[3]+'" aria-pressed="'+(code[i]===o[0])+'"'+dis+'>'+o[1]+'</button>'; }).join('')
+            + '</div></div>';
+        }).join('') + '</div>';
+  }
+  function renderScore(id){
+    var el = document.getElementById('sc-'+id);
+    if(!el) return;
+    var open = el.open; el.innerHTML = scoreInner(id); el.open = open;
+  }
+
+  // ---- scoreboard ----
+  function tile(label, color, role, a, note){
+    var atsN = a.atsW + a.atsL, mlN = a.mlW + a.mlL;
+    return '<div class="tile"><div class="tile-h"><span class="sw" style="background:'+color+'"></span><h3>'+label+'</h3><span class="role">'+role+'</span></div>'
+      + '<div class="tile-body">'
+      + '<div class="stat"><div class="k">ATS record</div><div class="v">'+(atsN||a.atsP ? a.atsW+'-'+a.atsL+(a.atsP?'-'+a.atsP:'') : '—')+'</div><div class="n">'+pct(a.atsW,atsN)+'&nbsp;</div></div>'
+      + '<div class="stat"><div class="k">ATS $100/play</div><div class="v '+cls(a.atsProfit)+'">'+(a.atsPriced?money(a.atsProfit):'—')+'</div><div class="n">'+a.atsPriced+' plays</div></div>'
+      + '<div class="stat"><div class="k">ML record</div><div class="v">'+(mlN ? a.mlW+'-'+a.mlL : '—')+'</div><div class="n">'+pct(a.mlW,mlN)+'&nbsp;</div></div>'
+      + '<div class="stat"><div class="k">ML $100/play</div><div class="v '+cls(a.mlProfit)+'">'+(a.mlPriced?money(a.mlProfit):'—')+'</div><div class="n">'+a.mlPriced+' plays</div></div>'
+      + (note ? '<div class="tile-note">'+note+'</div>' : '')
+      + '</div></div>';
+  }
+  function dogNote(a){ return a.mlSkippedDogs ? a.mlSkippedDogs+' football pick'+(a.mlSkippedDogs===1?'':'s')+' on a 7+ point dog left out of ML (ATS only).' : ''; }
+
+  function bySportTable(){
+    var rows = ORDER.filter(function(k){ return DATA.bySport[k]; }).map(function(k){
+      var b = DATA.bySport[k];
+      function cells(a){
+        var atsN=a.atsW+a.atsL, mlN=a.mlW+a.mlL;
+        return '<td class="mono">'+(atsN||a.atsP?a.atsW+'-'+a.atsL+(a.atsP?'-'+a.atsP:''):'—')+'</td><td class="mono '+cls(a.atsProfit)+'">'+(a.atsPriced?money(a.atsProfit):'—')+'</td>'
+          +'<td class="mono">'+(mlN?a.mlW+'-'+a.mlL:'—')+'</td><td class="mono '+cls(a.mlProfit)+'">'+(a.mlPriced?money(a.mlProfit):'—')+'</td>';
+      }
+      return '<tr><td><b>'+esc(b.label)+'</b></td>'+cells(b.ledger)+cells(b.alt)+cells(b.mine)+'</tr>';
+    }).join('');
+    if(!rows) return '<p class="sec-p">No graded games yet.</p>';
+    return '<div class="scroller"><table><thead>'
+      + '<tr><th></th><th colspan="4" style="text-align:center;color:var(--ledger)">Ledger</th><th colspan="4" style="text-align:center;color:var(--opinion)">Second Opinion</th><th colspan="4" style="text-align:center;color:var(--mine)">You</th></tr>'
+      + '<tr><th>Sport</th><th>ATS</th><th>$</th><th>ML</th><th>$</th><th>ATS</th><th>$</th><th>ML</th><th>$</th><th>ATS</th><th>$</th><th>ML</th><th>$</th></tr>'
+      + '</thead><tbody>'+rows+'</tbody></table></div>';
+  }
+
+  // ---- game cards ----
+  function resultChips(r){
+    if(!r) return '';
+    var out = '';
+    var ats = r.ats && r.ats.result;
+    if(ats) out += '<span class="chip '+(ats==='cover'?'w':ats==='miss'?'l':'p')+'">ATS '+(ats==='cover'?'✓':ats==='miss'?'✕':'push')+'</span>';
+    var ml = r.ml && r.ml.result;
+    if(r.ml && !r.ml.counted) out += '<span class="chip p">ML n/a</span>';
+    else if(ml) out += '<span class="chip '+(ml==='W'?'w':'l')+'">ML '+(ml==='W'?'✓':'✕')+'</span>';
+    return out;
+  }
+  function ledgerBadge(g){
+    if(g.pick && g.confidence!=='skip' && !g.skipped)
+      return '<div class="badge ledger"><span class="lbl">The Ledger</span><span class="val">'+esc(g.pick)+resultChips(g.results&&g.results.ledger)+'</span><span class="tier">'+esc(TIER[g.confidence]||g.confidence)+'</span></div>';
+    return '<div class="badge ledger"><span class="lbl">The Ledger</span><span class="val none">'+esc(SKIP[g.skipReason]||'No pick')+'</span></div>';
+  }
+  function altBadge(g){
+    if(g.altPick && g.altConfidence!=='pass')
+      return '<div class="badge opinion"><span class="lbl">Second Opinion</span><span class="val">'+esc(g.altPick)+resultChips(g.results&&g.results.alt)+'</span><span class="tier">'+esc(TIER[g.altConfidence]||g.altConfidence)+' · '+esc(g.altCategoryTally||'')+'</span></div>';
+    return '<div class="badge opinion"><span class="lbl">Second Opinion</span><span class="val none">Pass'+(g.altCategoryTally?' ('+esc(g.altCategoryTally)+')':'')+'</span></div>';
+  }
+  function lineText(g){
+    var parts = [];
+    if(num(g.awaySpread)&&num(g.homeSpread)) parts.push('Spread '+sgn(g.awaySpread)+' / '+sgn(g.homeSpread));
+    if(num(g.awayMoneyline)||num(g.homeMoneyline)) parts.push('ML '+(num(g.awayMoneyline)?sgn(g.awayMoneyline):'n/a')+' / '+(num(g.homeMoneyline)?sgn(g.homeMoneyline):'n/a'));
+    return parts.join('<br>');
+  }
+  function btnLabel(team, spread, ml){
+    var ln = num(spread) ? sgn(spread) : (num(ml) ? 'ML '+sgn(ml) : 'no line');
+    return '<span class="nm">'+esc(team)+'</span><span class="ln">'+ln+'</span>';
+  }
+
+  var GAMES = {};
+  function pickRowInner(id){
+    var e = GAMES[id], g = e.game, sport = e.sport;
+    var side = effectiveSide(id), c = committedSide(id);
+    var changed = pending.hasOwnProperty(id);
+    var state = changed ? '<span class="state local">not submitted</span>' : (c ? '<span class="state repo">in repo</span>' : '');
+    var notes = '';
+    if(side){
+      var spread = side==='away' ? g.awaySpread : g.homeSpread;
+      if((sport==='nfl'||sport==='cfb') && num(spread) && spread>7)
+        notes += '<span class="note dog">'+esc(g[side])+' is a '+sgn(spread)+' dog — counts ATS only, left out of your ML record.</span>';
+    }
+    if(g.altReasons && g.altReasons.length){
+      var t = tallyOf(scoresFor(id)), m = Math.abs(t.a-t.h);
+      var sp2 = GAMES[id].sport;
+      notes += '<span class="tallyline">Your reasons tally <b>'+esc(nick(g.away,sp2))+' '+fmtPts(t.a)+' – '+fmtPts(t.h)+' '+esc(nick(g.home,sp2))+'</b>'
+        + (m ? ' · leans '+esc(t.a>t.h?g.away:g.home)+' by '+fmtPts(m) : ' · even') + (pendingScores[id] ? ' · <i>not submitted</i>' : '') + '</span>';
+    }
+    var committed = DATA.myPicks[id];
+    if(!changed && committed && committed.result) notes += '<span class="val">'+resultChips(committed.result)+'</span>';
+    else if(!changed && c && !g.final) notes += '<span class="note">Grades automatically once the game is final.</span>';
+    if(g.final && !c) notes += '<span class="note">Game is final — picks are locked.</span>';
+    var dis = g.final ? ' disabled' : '';
+    return '<div class="pickhead"><span class="lbl">Your pick</span>'+state+'</div>'
+      + '<div class="pickbtns">'
+      + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="away" aria-pressed="'+(side==='away')+'"'+dis+'>'+btnLabel(g.away,g.awaySpread,g.awayMoneyline)+'</button>'
+      + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="home" aria-pressed="'+(side==='home')+'"'+dis+'>'+btnLabel(g.home,g.homeSpread,g.homeMoneyline)+'</button>'
+      + '</div>' + notes;
+  }
+  function renderPickRow(id){
+    var el = document.getElementById('pr-'+id);
+    if(el) el.innerHTML = pickRowInner(id);
+  }
+  function card(sport, g){
+    GAMES[g.id] = {sport:sport, game:g};
+    var who = sport==='mlb' && (g.awayPitcher||g.homePitcher) ? '<div class="sub">'+esc(g.awayPitcher||'TBD')+' vs '+esc(g.homePitcher||'TBD')+'</div>' : '';
+    var score = g.final ? '<span class="sc">'+g.awayScore+'–'+g.homeScore+' F</span>' : '';
+    var reasons = (g.altReasons&&g.altReasons.length) ? '<details class="score" id="sc-'+esc(g.id)+'"></details>' : '';
+    var stat = (g.statLines&&g.statLines.length) ? '<details class="why"><summary style="color:var(--ledger)">Ledger inputs</summary><ul>'+g.statLines.map(function(r){return '<li>'+esc(r)+'</li>';}).join('')+'</ul></details>' : '';
+    return '<article class="game">'
+      + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
+      + '<div class="lines">'+lineText(g)+'</div></div>'
+      + '<div class="models">'+ledgerBadge(g)+altBadge(g)+'</div>'
+      + stat + reasons
+      + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
+      + '</article>';
+  }
+
+  // ---- submit bar ----
+  function issueUrl(){
+    var body = 'Picks submitted from the pick sheet. Leave the block below as-is — the Pick intake workflow reads it, commits the picks to data/mypicks/, and closes this issue.\n\n```json\n'
+      + JSON.stringify({date:DATA.slate.date, picks:pending, scores:pendingScores}) + '\n```\n';
+    return 'https://github.com/'+DATA.repo+'/issues/new?title='+encodeURIComponent('picks '+DATA.slate.date)+'&body='+encodeURIComponent(body);
+  }
+  function renderSubmitBar(){
+    var n = Object.keys(pending).length + Object.keys(pendingScores).length;
+    var bar = document.getElementById('submitbar');
+    bar.hidden = n===0;
+    if(!n) return;
+    document.getElementById('submitmsg').innerHTML = '<b>'+n+'</b> change'+(n===1?'':'s')+' (picks or reason scores) saved in this browser, not in the repo yet.';
+    document.getElementById('submitlink').href = issueUrl();
+  }
+
+  function render(){
+    var s = DATA.slate, sb = DATA.scoreboard;
+    var dateLabel = new Date(s.date+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',timeZone:'UTC'});
+    document.getElementById('stamp').innerHTML = 'Slate '+esc(s.date)+'<br>updated '+esc(new Date(DATA.generatedAt).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}));
+    var sportsHtml = ORDER.filter(function(k){ return s.sports[k]; }).map(function(k){
+      var sp = s.sports[k];
+      return '<section id="'+k+'"><div class="eyebrow">'+esc(sp.label)+'</div><h2 class="sec-h">'+sp.games.length+' game'+(sp.games.length===1?'':'s')+'</h2>'
+        + (k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>' : '<p class="sec-p">Tap a side to pick it against the spread.</p>')
+        + '<div class="games">'+sp.games.map(function(g){ return card(k,g); }).join('')+'</div></section>';
+    }).join('');
+    document.getElementById('app').innerHTML =
+      '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger)">The Ledger</b> and <b style="color:var(--opinion)">the Second Opinion</b> are the two models; <b style="color:var(--mine)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
+      + '<section><div class="eyebrow">Season to date</div><h2 class="sec-h">Scoreboard</h2><p class="sec-p">Every graded game, flat $100 a play at the lines stored on pick day.</p><div class="board">'
+        + tile('The Ledger','var(--ledger)','stats model',sb.ledger,dogNote(sb.ledger))
+        + tile('Second Opinion','var(--opinion)','9-category vote',sb.alt,dogNote(sb.alt))
+        + tile('You','var(--mine)','your picks',sb.mine,dogNote(sb.mine) || (sb.mine.atsPriced||sb.mine.mlW+sb.mine.mlL ? '' : 'Starts counting with your first graded pick.'))
+      + '</div></section>'
+      + (sportsHtml || '<section><p class="sec-p">No games on the slate.</p></section>')
+      + '<section><div class="eyebrow">By sport</div><h2 class="sec-h">Where the records come from</h2>'+bySportTable()+'</section>'
+      + '<footer><b>How submitting works</b><ol>'
+        + '<li>Tap a side on any game, and score any Second Opinion reason Away, ½ Away, Neutral, ½ Home or Home (each starts on the Second Opinion\'s own call). Everything is kept in this browser right away, marked <i>not submitted</i>.</li>'
+        + '<li>Hit <b>Submit to repo</b>. GitHub opens a pre-filled issue — click <b>Submit new issue</b> there.</li>'
+        + '<li>The <span class="mono">Pick intake</span> workflow commits your picks to <span class="mono">data/mypicks/'+esc(s.date)+'.json</span>, replies on the issue and closes it.</li>'
+        + '<li>This page rebuilds within a couple of minutes and your picks show <i>in repo</i>. Change a pick and submit again any time before the game is final.</li>'
+        + '</ol><b>Grading rules</b><ul>'
+        + '<li>Every pick is graded against the spread and on the moneyline, $100 flat, at the lines stored when the slate was made.</li>'
+        + '<li>NFL and college football: a pick on a team getting more than 7 points counts <b>ATS only</b> — it\'s left out of the moneyline record for every predictor.</li>'
+        + '<li>Only issues you open yourself are read; this repo is public, so anyone can see your picks.</li>'
+        + '</ul></footer>';
+    Object.keys(GAMES).forEach(function(id){ renderScore(id); renderPickRow(id); });
+    renderSubmitBar();
+  }
+
+  document.addEventListener('click', function(e){
+    var b = e.target.closest('.pickbtn');
+    if(b && !b.disabled) choose(b.getAttribute('data-id'), b.getAttribute('data-side'));
+    var sb = e.target.closest('.seg5 button');
+    if(sb && !sb.disabled) setScore(sb.getAttribute('data-sid'), +sb.getAttribute('data-i'), sb.getAttribute('data-c'));
+  });
+  document.getElementById('discard').addEventListener('click', function(){
+    pending = {}; pendingScores = {}; savePending();
+    Object.keys(GAMES).forEach(function(id){ renderScore(id); renderPickRow(id); }); renderSubmitBar();
+  });
+  document.getElementById('submitlink').addEventListener('click', function(){
+    document.getElementById('submitmsg').innerHTML = 'GitHub opened in a new tab — click <b>Submit new issue</b> there. Your picks show <i>in repo</i> here a couple of minutes later.';
+  });
+
+  fetch('data.json', {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }).then(function(d){
+    DATA = d; var lp = loadPending(); pending = lp.sides; pendingScores = lp.scores; render(); reconcile(); Object.keys(GAMES).forEach(renderPickRow); renderSubmitBar();
+  }).catch(function(){
+    document.getElementById('app').innerHTML = '<p class="loading">Couldn\'t load data.json. If you opened this file directly, run <span class="mono">python scripts/build_site.py</span> and open <span class="mono">_site/index.html</span> through a local server instead.</p>';
+  });
+})();
+</script>
+</body>
+</html>
