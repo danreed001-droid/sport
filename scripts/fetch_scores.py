@@ -15,15 +15,30 @@ from datetime import timedelta
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, sports  # noqa: E402
-from lib.dates import now_et  # noqa: E402
+from lib.dates import ET, now_et  # noqa: E402
+from datetime import datetime
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_DIR = os.path.join(REPO_ROOT, "data", "raw")
 
 FIELDNAMES = [
     "Game_ID", "Date", "Status", "Away_Team", "Away_Score", "Away_Diff",
-    "Home_Team", "Home_Score", "Home_Diff", "Away_ML", "Home_ML",
+    "Home_Team", "Home_Score", "Home_Diff", "Away_ML", "Home_ML", "Start_ET",
 ]
+
+# How many days back each run re-crawls. More than yesterday so a slate whose
+# late games weren't final at the last run still gets its scores.
+CRAWL_DAYS = 3
+
+
+def _et_start(iso_utc):
+    """ESPN event times are UTC; the ledger's dates and kickoff times are US
+    Eastern, so a 10:10 PM ET game belongs to that day, not the next one."""
+    try:
+        dt = datetime.fromisoformat(iso_utc.replace("Z", "+00:00")).astimezone(ET)
+    except (ValueError, AttributeError):
+        return iso_utc[:10], ""
+    return dt.strftime("%Y-%m-%d"), dt.strftime("%I:%M %p").lstrip("0")
 
 
 def _csv_path(sport_key):
@@ -65,7 +80,7 @@ def main(sport_key):
     differentials = espn.fetch_standings(session, cfg["espn_sport"], cfg["espn_league"])
 
     now = now_et()
-    dates_to_crawl = [(now - timedelta(days=1)).strftime("%Y%m%d"), now.strftime("%Y%m%d")]
+    dates_to_crawl = [(now - timedelta(days=n)).strftime("%Y%m%d") for n in range(CRAWL_DAYS, -1, -1)]
 
     for date_str in dates_to_crawl:
         try:
@@ -78,7 +93,7 @@ def main(sport_key):
             try:
                 game_id = str(ev.get("id"))
                 existing = history.get(game_id, {})
-                game_date = ev.get("date", "")[:10]
+                game_date, start_et = _et_start(ev.get("date", ""))
                 status_type = ev.get("status", {}).get("type", {})
                 detail = status_type.get("shortDetail") or status_type.get("description", "Scheduled")
                 is_completed = bool(status_type.get("completed"))
@@ -123,6 +138,7 @@ def main(sport_key):
                     "Home_Diff": home_diff if home_diff is not None else existing.get("Home_Diff", "-"),
                     "Away_ML": away_ml if away_ml is not None else "-",
                     "Home_ML": home_ml if home_ml is not None else "-",
+                    "Start_ET": start_et,
                 }
             except Exception as exc:
                 print(f"[{cfg['label']}] skipping event due to error: {exc}")

@@ -45,7 +45,26 @@ def _num(v):
         return None
 
 
-def find_match(scores_for_date, g):
+def _clock(s):
+    """'1:05 PM ET' / '01:05 PM' -> '1:05 PM'; anything unparseable -> ''."""
+    s = (s or "").upper().replace("EDT", "").replace("EST", "").replace("ET", "").strip()
+    parts = s.split()
+    if len(parts) != 2 or ":" not in parts[0] or parts[1] not in ("AM", "PM"):
+        return ""
+    h, m = parts[0].split(":", 1)
+    return f"{int(h)}:{m} {parts[1]}" if h.isdigit() and m.isdigit() else ""
+
+
+def _minutes(s):
+    c = _clock(s)
+    if not c:
+        return None
+    hm, ap = c.split()
+    h, m = (int(v) for v in hm.split(":"))
+    return (h % 12 + (12 if ap == "PM" else 0)) * 60 + m
+
+
+def find_match(scores_for_date, g, games=None):
     game_id = g.get("espnGameId")
     if game_id:
         for row in scores_for_date:
@@ -55,8 +74,12 @@ def find_match(scores_for_date, g):
     matches = [r for r in scores_for_date if r["Away_Team"] == away and r["Home_Team"] == home]
     if len(matches) == 1:
         return matches[0]
-    if len(matches) > 1:  # doubleheader-style duplicate matchup; time isn't in the CSV, so bail
-        return None
+    if len(matches) > 1:  # doubleheader: pair games by start order (game 2's time often moves)
+        twins = sorted((x for x in (games or [g]) if x["away"] == away and x["home"] == home), key=lambda x: _minutes(x.get("time")))
+        rows = sorted(matches, key=lambda r: _minutes(r.get("Start_ET")))
+        if len(twins) != len(rows) or any(_minutes(r.get("Start_ET")) is None for r in rows) or any(_minutes(x.get("time")) is None for x in twins):
+            return None
+        return rows[twins.index(g)]
     for row in scores_for_date:
         if (away in row["Away_Team"] or row["Away_Team"] in away) and (home in row["Home_Team"] or row["Home_Team"] in home):
             return row
@@ -123,7 +146,7 @@ def main(sport_key):
         matches = {}
 
         for i, g in enumerate(games):
-            row = find_match(scores_for_date, g)
+            row = find_match(scores_for_date, g, games)
             if row is None or not is_resolved(row.get("Status")):
                 all_resolved = False
                 missing.append(f"{g['away']} @ {g['home']}")
