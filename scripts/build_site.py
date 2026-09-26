@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
-from lib.picks import game_id, grade, is_final, is_big_dog, line_for, side_of  # noqa: E402
+from lib.picks import game_id, grade, is_final, is_big_dog, line_for, side_of, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
 SLATE_FIELDS = [
@@ -86,20 +86,27 @@ def build():
         for date_str, doc in docs:
             picks_today = mypicks.get(date_str, {}).get("picks", {})
             for g in doc.get("games", []):
-                if not is_final(doc, g):
-                    continue
+                final = is_final(doc, g)
                 mine = picks_today.get(game_id(sport, date_str, g), {}).get("side")
                 for who, side in (("ledger", ledger_side(g)), ("alt", alt_side(g)), ("mine", mine)):
                     if side not in ("away", "home", "draw"):
                         continue
+                    tier = g.get("confidence") if who == "ledger" else g.get("altConfidence") if who == "alt" else None
+                    ln = line_for(g, side)
+                    play = {"d": date_str, "s": sport, "w": who, "t": tier,
+                            "g": f"{g.get('away')} @ {g.get('home')}", "k": team_for(g, side),
+                            "sp": ln["spread"], "mo": ln["moneyline"]}
+                    if not final:
+                        play.update({"a": None, "ap": None, "m": None, "mp": None, "x": 0, "pd": 1})
+                        plays.append(play)
+                        continue
                     r = grade(sport, g, side)
                     tally(totals[who], r)
-                    tier = g.get("confidence") if who == "ledger" else g.get("altConfidence") if who == "alt" else None
                     ats_code = {"cover": "W", "miss": "L", "push": "P"}.get(r["ats"]["result"])
-                    plays.append({"d": date_str, "s": sport, "w": who, "t": tier,
-                                  "a": ats_code, "ap": r["ats"]["profit"],
-                                  "m": r["ml"]["result"] if r["ml"]["counted"] else None, "mp": r["ml"]["profit"],
-                                  "x": 0 if r["ml"]["counted"] else 1})
+                    play.update({"a": ats_code, "ap": r["ats"]["profit"],
+                                 "m": r["ml"]["result"] if r["ml"]["counted"] else None, "mp": r["ml"]["profit"],
+                                 "x": 0 if r["ml"]["counted"] else 1, "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
+                    plays.append(play)
                     bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "mine": blank()})
                     tally(bucket[who], r)
 

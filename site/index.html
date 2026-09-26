@@ -130,6 +130,28 @@ details.tv summary{cursor:pointer;color:var(--muted);font-size:11.5px;width:max-
 details.tv .scroller{margin-top:8px;}
 details.tv table{min-width:0;}
 .empty{color:var(--muted);font-size:12.5px;padding:24px 0;text-align:center;}
+.logtbl{min-width:760px;font-size:12.5px;}
+.logtbl th,.logtbl td{padding:7px 8px;}
+.logtbl td .tier{display:block;font-size:11px;}
+.logtbl.dayview .c-date{display:none;}
+.logtbl td.gm{min-width:180px;}
+.logtbl td.gm .sc{display:block;font-size:11px;}
+.logtbl td{text-align:left;}
+.logtbl th{text-align:left;}
+.logtbl td.mono,.logtbl th:nth-child(6),.logtbl th:nth-child(8),.logtbl th:nth-child(9),.logtbl th:nth-child(11){text-align:right;}
+.logtbl td.gm{max-width:300px;white-space:normal;}
+.logtbl tbody tr:hover td{background:var(--surface-2);}
+.logtbl tfoot td{font-weight:700;background:var(--surface-2);border-top:1px solid var(--rule-2);}
+.logtbl .who{display:inline-flex;align-items:center;gap:6px;}
+.logtbl .who i{width:12px;height:3px;border-radius:2px;display:block;}
+.logtbl .muted{color:var(--muted);font-weight:400;}
+.res{font-weight:700;font-size:12px;white-space:nowrap;}
+.res.w{color:var(--win);} .res.l{color:var(--loss);} .res.p{color:var(--push);} .res.pend{color:var(--warn);font-weight:600;}
+.stepbtn{font:inherit;font-size:15px;font-weight:700;line-height:1;background:var(--surface);color:var(--ink);border:1px solid var(--rule-2);border-radius:8px;padding:5px 10px;cursor:pointer;}
+.stepbtn:disabled{opacity:.35;cursor:default;}
+.stepbtn:focus-visible{outline:2px solid var(--ledger);outline-offset:1px;}
+.logmore{display:flex;align-items:center;gap:12px;margin-top:10px;font-size:12px;color:var(--muted);}
+.logmore button{font:inherit;font-size:12px;font-weight:600;background:var(--surface);color:var(--ink);border:1px solid var(--rule-2);border-radius:8px;padding:6px 12px;cursor:pointer;}
 .games{display:flex;flex-direction:column;gap:12px;}
 .game{background:var(--surface);border:1px solid var(--rule);border-radius:12px;box-shadow:var(--shadow);padding:14px 16px 15px;display:flex;flex-direction:column;gap:11px;}
 .game-top{display:flex;justify-content:space-between;align-items:flex-start;gap:6px 14px;flex-wrap:wrap;}
@@ -359,8 +381,8 @@ footer b{color:var(--ink);}
     }
     return null;
   }
-  function filteredPlays(){
-    var ps = DATA.plays, rb = rangeBounds();
+  function filteredPlays(withPending){
+    var ps = withPending ? DATA.plays : DATA.plays.filter(function(p){ return !p.pd; }), rb = rangeBounds();
     if(DASH.sport !== 'all') ps = ps.filter(function(p){ return p.s === DASH.sport; });
     if(rb) ps = ps.filter(function(p){ return p.d >= rb[0] && p.d <= rb[1]; });
     return ps;
@@ -576,6 +598,86 @@ footer b{color:var(--ink);}
       + '</div></section>';
   }
 
+  var LOG = {who:'all', result:'all', shown:50, mode:'day', day:null, from:null, to:null};
+  function logSportPlays(){ return DATA.plays.filter(function(p){ return DASH.sport==='all' || p.s===DASH.sport; }); }
+  function logDays(){ var seen = {}; logSportPlays().forEach(function(p){ seen[p.d] = 1; }); return Object.keys(seen).sort(); }
+  function logHtml(){
+    function seg(name, opts){
+      return '<span class="segctl" role="group" aria-label="'+name+'">'+opts.map(function(o){ return '<button type="button" data-lf="'+name+'" data-v="'+o[0]+'" aria-pressed="'+(LOG[name]===o[0])+'">'+o[1]+'</button>'; }).join('')+'</span>';
+    }
+    return '<section id="picklog"><div class="eyebrow">Pick log</div><h2 class="sec-h">Every pick, win or lose</h2>'
+      + '<p class="sec-p">Each model\'s pick and yours, graded against the spread and on the moneyline at $100 a bet. Pick a day or a date range; the sport filter above applies too.</p>'
+      + '<div class="filters">'
+        + '<span class="fgroup"><span class="flbl">Dates</span>'+seg('mode',[['day','Day'],['range','Range']])
+          + '<span class="daterange" id="lday"><button type="button" class="stepbtn" id="lprev" aria-label="Previous day with picks">‹</button><label for="ldate" class="sr">Day</label><input type="date" id="ldate"><button type="button" class="stepbtn" id="lnext" aria-label="Next day with picks">›</button></span>'
+          + '<span class="daterange" id="lrange" hidden><label for="lfrom" class="sr">From</label><input type="date" id="lfrom"> <span class="to">to</span> <label for="lto" class="sr">To</label><input type="date" id="lto"></span></span>'
+        + '<span class="fgroup"><span class="flbl">Model</span>'+seg('who',[['all','All'],['ledger','Ledger'],['alt','2nd Opinion'],['mine','You']])+'</span>'
+        + '<span class="fgroup"><span class="flbl">Show</span>'+seg('result',[['all','All picks'],['graded','Graded'],['pending','Pending']])+'</span>'
+      + '</div>'
+      + '<div class="scroller"><table class="logtbl" id="logtbl"></table></div>'
+      + '<div class="logmore"><button type="button" id="logmore" hidden>Show 50 more</button><span id="logcount"></span></div>'
+      + '</section>';
+  }
+  function resCell(r){
+    if(r==='W') return '<span class="res w">✓ Won</span>';
+    if(r==='L') return '<span class="res l">✕ Lost</span>';
+    if(r==='P') return '<span class="res p">Push</span>';
+    return '';
+  }
+  function renderLog(){
+    if(!document.getElementById('picklog')) return;
+    var days = logDays(), last = days[days.length-1] || todayStr();
+    if(!LOG.day) LOG.day = last;
+    if(!LOG.from) LOG.from = days.length > 6 ? days[days.length-7] : (days[0] || last);
+    if(!LOG.to) LOG.to = last;
+    var lo = LOG.mode==='day' ? LOG.day : (LOG.from <= LOG.to ? LOG.from : LOG.to), hi = LOG.mode==='day' ? LOG.day : (LOG.from <= LOG.to ? LOG.to : LOG.from);
+    document.getElementById('lday').hidden = LOG.mode !== 'day';
+    document.getElementById('lrange').hidden = LOG.mode !== 'range';
+    var ld = document.getElementById('ldate'), lf = document.getElementById('lfrom'), lt = document.getElementById('lto');
+    ld.value = LOG.day; lf.value = LOG.from; lt.value = LOG.to;
+    [ld, lf, lt].forEach(function(i){ i.min = days[0] || ''; i.max = last; });
+    document.getElementById('lprev').disabled = !days.some(function(d){ return d < LOG.day; });
+    document.getElementById('lnext').disabled = !days.some(function(d){ return d > LOG.day; });
+    var rows = logSportPlays().filter(function(p){ return p.d >= lo && p.d <= hi; }).filter(function(p){
+      return (LOG.who==='all' || p.w===LOG.who) && (LOG.result==='all' || (LOG.result==='pending' ? p.pd : !p.pd));
+    }).slice().sort(function(a,b){ return a.d<b.d ? 1 : a.d>b.d ? -1 : (a.s<b.s ? -1 : a.s>b.s ? 1 : 0); });
+    var WL = {ledger:WHO[0], alt:WHO[1], mine:WHO[2]}, t = {aw:0,al:0,ap:0,a$:0,mw:0,ml:0,m$:0};
+    rows.forEach(function(p){
+      if(p.a==='W') t.aw++; else if(p.a==='L') t.al++; else if(p.a==='P') t.ap++;
+      if(num(p.ap)) t.a$ += p.ap;
+      if(p.m==='W') t.mw++; else if(p.m==='L') t.ml++;
+      if(num(p.mp)) t.m$ += p.mp;
+    });
+    var body = rows.slice(0, LOG.shown).map(function(p){
+      var w = WL[p.w], pend = p.pd;
+      var ats = pend ? '<span class="res pend">Pending</span>' : (p.a ? resCell(p.a) : '<span class="muted">no line</span>');
+      var ml = pend ? '<span class="res pend">Pending</span>' : (p.x ? '<span class="muted" title="Football pick on a 7+ point dog: counted ATS only">ATS only</span>' : (p.m ? resCell(p.m) : '<span class="muted">—</span>'));
+      return '<tr>'
+        + '<td class="c-date">'+fmtDay(p.d)+'</td>'
+        + '<td>'+esc((DATA.sportLabels[p.s]||p.s).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB'))+'</td>'
+        + '<td><span class="who"><i style="background:'+w.c+'"></i>'+esc(w.short)+'</span></td>'
+        + '<td class="gm">'+esc(p.g)+(p.sc ? '<span class="muted sc">Final '+esc(p.sc)+'</span>' : '')+'</td>'
+        + '<td><b>'+esc(p.k)+'</b>'+(p.t ? '<span class="muted tier">'+esc(TIER[p.t]||p.t)+'</span>' : '')+'</td>'
+        + '<td class="mono">'+(num(p.sp) ? sgn(p.sp) : '—')+'</td>'
+        + '<td>'+ats+'</td>'
+        + '<td class="mono '+(num(p.ap)?cls(p.ap):'flat')+'">'+(num(p.ap) ? money(p.ap) : '—')+'</td>'
+        + '<td class="mono">'+(num(p.mo) ? sgn(p.mo) : '—')+'</td>'
+        + '<td>'+ml+'</td>'
+        + '<td class="mono '+(num(p.mp)?cls(p.mp):'flat')+'">'+(num(p.mp) ? money(p.mp) : '—')+'</td>'
+        + '</tr>';
+    }).join('');
+    var tbl = document.getElementById('logtbl'); tbl.classList.toggle('dayview', LOG.mode==='day');
+    var graded = rows.some(function(p){ return !p.pd; });
+    var foot = rows.length ? '<tfoot><tr><td class="c-date"></td><td colspan="5">Total · '+rows.length+' pick'+(rows.length===1?'':'s')+(rows.length>LOG.shown?' (all, not just the rows shown)':'')+'</td>'
+      + '<td class="mono">'+(t.aw+t.al+t.ap ? t.aw+'-'+t.al+(t.ap?'-'+t.ap:'') : '—')+'</td><td class="mono '+(graded?cls(t.a$):'flat')+'">'+(graded?money(t.a$):'—')+'</td><td></td>'
+      + '<td class="mono">'+(t.mw+t.ml ? t.mw+'-'+t.ml : '—')+'</td><td class="mono '+(graded?cls(t.m$):'flat')+'">'+(graded?money(t.m$):'—')+'</td></tr></tfoot>' : '';
+    document.getElementById('logtbl').innerHTML = '<thead><tr><th class="c-date">Date</th><th>Sport</th><th>Model</th><th>Game</th><th>Pick</th><th>Spread</th><th>ATS</th><th>ATS $</th><th>ML odds</th><th>ML</th><th>ML $</th></tr></thead>'
+      + '<tbody>'+(body || '<tr><td colspan="11" class="muted" style="text-align:center;padding:20px;white-space:normal">'+(LOG.mode==='day' ? 'No picks on '+fmtLong(LOG.day)+'. Use ‹ › to jump to a day with picks.' : 'No picks match these filters.')+'</td></tr>')+'</tbody>' + foot;
+    var more = document.getElementById('logmore');
+    more.hidden = rows.length <= LOG.shown;
+    document.getElementById('logcount').textContent = rows.length ? 'Showing '+Math.min(LOG.shown, rows.length)+' of '+rows.length : '';
+  }
+
   function renderDash(){
     if(!document.getElementById('dashboard')) return;
     var list = filteredPlays(), mk = DASH.market==='ats' ? 'against the spread' : 'on the moneyline';
@@ -742,6 +844,7 @@ footer b{color:var(--ink);}
     document.getElementById('app').innerHTML =
       '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models; <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
       + dashHtml()
+      + logHtml()
       + (sportsHtml || '<section><p class="sec-p">No games on the slate.</p></section>')
       + '<footer><b>How submitting works</b><ol>'
         + '<li>Tap a side on any game, and score any Second Opinion reason Away, ½ Away, Neutral, ½ Home or Home (each starts on the Second Opinion\'s own call). When your tally margin reaches 2.5 your pick is set to the leading side; under 2.5 it clears to no bet. Tapping a side yourself overrides it. Everything is kept in this browser right away, marked <i>not submitted</i>.</li>'
@@ -756,6 +859,7 @@ footer b{color:var(--ink);}
     Object.keys(GAMES).forEach(function(id){ renderScore(id); renderPickRow(id); });
     renderSubmitBar();
     renderDash();
+    renderLog();
   }
 
   document.addEventListener('click', function(e){
@@ -765,19 +869,34 @@ footer b{color:var(--ink);}
     if(sb && !sb.disabled) setScore(sb.getAttribute('data-sid'), +sb.getAttribute('data-i'), sb.getAttribute('data-c'));
   });
   document.addEventListener('click', function(e){
-    var f = e.target.closest('.segctl button');
+    var lf = e.target.closest('.segctl button[data-lf]');
+    if(lf){
+      LOG[lf.getAttribute('data-lf')] = lf.getAttribute('data-v'); LOG.shown = 50;
+      document.querySelectorAll('.segctl button[data-lf="'+lf.getAttribute('data-lf')+'"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b===lf)); });
+      renderLog(); return;
+    }
+    if(e.target.id === 'logmore'){ LOG.shown += 50; renderLog(); return; }
+    if(e.target.id === 'lprev' || e.target.id === 'lnext'){
+      var ds = logDays(), cur = LOG.day;
+      var nxt = e.target.id === 'lprev' ? ds.filter(function(d){ return d < cur; }).pop() : ds.filter(function(d){ return d > cur; })[0];
+      if(nxt){ LOG.day = nxt; LOG.shown = 50; renderLog(); }
+      return;
+    }
+    var f = e.target.closest('.segctl button[data-f]');
     if(!f) return;
     if(f.getAttribute('data-f')==='range' && f.getAttribute('data-v')==='custom' && DASH.range!=='custom'){
       var prev = rangeBounds() || dataBounds(); DASH.from = prev[0]; DASH.to = prev[1];
     }
     DASH[f.getAttribute('data-f')] = f.getAttribute('data-v'); saveDash();
     document.querySelectorAll('.segctl button[data-f="'+f.getAttribute('data-f')+'"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b===f)); });
-    renderDash();
+    LOG.shown = 50; renderDash(); renderLog();
   });
   document.addEventListener('change', function(e){
+    var lk = {ldate:'day', lfrom:'from', lto:'to'}[e.target.id];
+    if(lk){ if(e.target.value){ LOG[lk] = e.target.value; LOG.shown = 50; renderLog(); } return; }
     if(e.target.id !== 'rfrom' && e.target.id !== 'rto') return;
     if(!e.target.value) return;
-    DASH[e.target.id === 'rfrom' ? 'from' : 'to'] = e.target.value; saveDash(); renderDash();
+    DASH[e.target.id === 'rfrom' ? 'from' : 'to'] = e.target.value; saveDash(); renderDash(); renderLog();
   });
   var rt = null;
   window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(function(){ if(DATA) renderDash(); }, 150); });
