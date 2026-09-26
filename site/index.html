@@ -80,6 +80,12 @@ section.hero{border-top:0;}
 .segctl button+button{border-left:1px solid var(--rule-2);}
 .segctl button[aria-pressed="true"]{background:var(--ink);color:var(--paper);}
 .segctl button:focus-visible{outline:2px solid var(--ledger);outline-offset:-2px;}
+.daterange{display:inline-flex;align-items:center;gap:6px;}
+.daterange input{font:inherit;font-size:12px;font-weight:600;background:var(--surface);color:var(--ink);border:1px solid var(--rule-2);border-radius:8px;padding:5px 8px;color-scheme:inherit;}
+.daterange input:focus-visible{outline:2px solid var(--ledger);outline-offset:1px;}
+.daterange .to{font-size:12px;color:var(--muted);}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+.rangelbl{margin:-6px 0 14px;font-size:12px;color:var(--muted);font-family:'IBM Plex Mono',monospace;}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;}
 .kpi{background:var(--surface);border:1px solid var(--rule);border-radius:12px;box-shadow:var(--shadow);padding:14px 16px 12px;display:flex;flex-direction:column;gap:8px;min-width:0;}
 .kpi-h{display:flex;align-items:center;gap:8px;}
@@ -329,22 +335,41 @@ footer b{color:var(--ink);}
     {k:'alt', label:'Second Opinion', short:'2nd Opinion', role:'9-category vote', c:'var(--opinion)'},
     {k:'mine', label:'You', short:'You', role:'your picks', c:'var(--mine)'}
   ];
-  var DASH = {sport:'all', market:'ats', range:'season'};
+  var DASH = {sport:'all', market:'ats', range:'all', from:null, to:null};
   try{ var ds = JSON.parse(localStorage.getItem('picksheet.dash')||'null'); if(ds) DASH = Object.assign(DASH, ds); }catch(e){}
+  if(['7','30','year','all','custom'].indexOf(DASH.range) < 0) DASH.range = 'all';
   function saveDash(){ try{ localStorage.setItem('picksheet.dash', JSON.stringify(DASH)); }catch(e){} }
   var SVGNS = 'http://www.w3.org/2000/svg';
   function fmtDay(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'}); }
   function dayNum(d){ return Date.parse(d+'T00:00:00Z')/864e5; }
   function sportsInPlays(){ var seen = {}; DATA.plays.forEach(function(p){ seen[p.s]=1; }); return ORDER.filter(function(k){ return seen[k]; }); }
 
-  function filteredPlays(){
-    var ps = DATA.plays;
-    if(DASH.sport !== 'all') ps = ps.filter(function(p){ return p.s === DASH.sport; });
-    if(DASH.range !== 'season' && DATA.plays.length){
-      var last = dayNum(DATA.plays[DATA.plays.length-1].d), span = +DASH.range;
-      ps = ps.filter(function(p){ return dayNum(p.d) > last - span; });
+  function isoDay(dt){ return dt.getFullYear()+'-'+String(dt.getMonth()+1).padStart(2,'0')+'-'+String(dt.getDate()).padStart(2,'0'); }
+  function todayStr(){ return isoDay(new Date()); }
+  function daysAgo(n){ var d = new Date(); d.setDate(d.getDate()-n); return isoDay(d); }
+  function dataBounds(){ var ps = DATA.plays; return ps.length ? [ps[0].d, ps[ps.length-1].d] : [todayStr(), todayStr()]; }
+  // [from, to] inclusive YYYY-MM-DD, or null for all time
+  function rangeBounds(){
+    if(DASH.range==='7') return [daysAgo(6), todayStr()];
+    if(DASH.range==='30') return [daysAgo(29), todayStr()];
+    if(DASH.range==='year') return [new Date().getFullYear()+'-01-01', todayStr()];
+    if(DASH.range==='custom'){
+      var b = dataBounds(), f = DASH.from || b[0], t = DASH.to || b[1];
+      return f <= t ? [f, t] : [t, f];
     }
+    return null;
+  }
+  function filteredPlays(){
+    var ps = DATA.plays, rb = rangeBounds();
+    if(DASH.sport !== 'all') ps = ps.filter(function(p){ return p.s === DASH.sport; });
+    if(rb) ps = ps.filter(function(p){ return p.d >= rb[0] && p.d <= rb[1]; });
     return ps;
+  }
+  function fmtLong(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric',timeZone:'UTC'}); }
+  function rangeLabel(){
+    var rb = rangeBounds();
+    if(!rb){ var b = dataBounds(); return DATA.plays.length ? 'All time · '+fmtLong(b[0])+' – '+fmtLong(b[1]) : 'All time'; }
+    return fmtLong(rb[0])+' – '+fmtLong(rb[1]);
   }
   function outcome(p){ return DASH.market==='ats' ? {r:p.a, v:p.ap} : {r:p.m, v:p.mp}; }
   function summarize(list, who){
@@ -537,10 +562,12 @@ footer b{color:var(--ink);}
     return '<section id="dashboard"><div class="eyebrow">Scorecard</div><h2 class="sec-h">How everyone is doing</h2>'
       + '<p class="sec-p">Every graded play, flat $100 a bet at the lines stored on pick day. The filters apply to everything below them.</p>'
       + '<div class="filters">'
-        + '<span class="fgroup"><span class="flbl">Range</span>'+seg('range',[['season','Season'],['14','14 days'],['7','7 days']])+'</span>'
+        + '<span class="fgroup"><span class="flbl">Range</span>'+seg('range',[['7','7 days'],['30','30 days'],['year','This year'],['all','All time'],['custom','Custom']])
+          + '<span class="daterange" id="rcustom"'+(DASH.range==='custom'?'':' hidden')+'><label for="rfrom" class="sr">From</label><input type="date" id="rfrom"> <span class="to">to</span> <label for="rto" class="sr">To</label><input type="date" id="rto"></span></span>'
         + '<span class="fgroup"><span class="flbl">Sport</span>'+seg('sport',[['all','All']].concat(sp.map(function(k){ return [k, esc(DATA.sportLabels[k]||k.toUpperCase()).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB')]; })))+'</span>'
         + '<span class="fgroup"><span class="flbl">Market</span>'+seg('market',[['ats','Against the spread'],['ml','Moneyline']])+'</span>'
       + '</div>'
+      + '<p class="rangelbl" id="rangelbl"></p>'
       + '<div class="kpis" id="kpis"></div>'
       + '<div class="charts">'
         + '<div class="chartcard wide"><h3>Profit over time</h3><div class="csub" id="c1sub"></div><div class="legend" id="c1leg"></div><div class="plot" id="c1"></div><details class="tv"><summary>Show as a table</summary><div class="scroller" id="c1tbl"></div></details></div>'
@@ -552,6 +579,11 @@ footer b{color:var(--ink);}
   function renderDash(){
     if(!document.getElementById('dashboard')) return;
     var list = filteredPlays(), mk = DASH.market==='ats' ? 'against the spread' : 'on the moneyline';
+    var rc = document.getElementById('rcustom'), rf = document.getElementById('rfrom'), rt = document.getElementById('rto'), db = dataBounds();
+    rc.hidden = DASH.range !== 'custom';
+    if(DASH.range === 'custom'){ var cb = rangeBounds(); rf.value = cb[0]; rt.value = cb[1]; }
+    rf.min = rt.min = db[0]; rf.max = rt.max = todayStr();
+    document.getElementById('rangelbl').textContent = rangeLabel() + ' · ' + list.filter(function(p){ return DASH.market==='ats' ? p.a : p.m; }).length + ' graded plays';
     var ser = seriesFor(list);
     document.getElementById('kpis').innerHTML = WHO.map(function(w, i){
       var a = summarize(list, w.k), r = roi(a), n = a.w+a.l;
@@ -735,9 +767,17 @@ footer b{color:var(--ink);}
   document.addEventListener('click', function(e){
     var f = e.target.closest('.segctl button');
     if(!f) return;
+    if(f.getAttribute('data-f')==='range' && f.getAttribute('data-v')==='custom' && DASH.range!=='custom'){
+      var prev = rangeBounds() || dataBounds(); DASH.from = prev[0]; DASH.to = prev[1];
+    }
     DASH[f.getAttribute('data-f')] = f.getAttribute('data-v'); saveDash();
     document.querySelectorAll('.segctl button[data-f="'+f.getAttribute('data-f')+'"]').forEach(function(b){ b.setAttribute('aria-pressed', String(b===f)); });
     renderDash();
+  });
+  document.addEventListener('change', function(e){
+    if(e.target.id !== 'rfrom' && e.target.id !== 'rto') return;
+    if(!e.target.value) return;
+    DASH[e.target.id === 'rfrom' ? 'from' : 'to'] = e.target.value; saveDash(); renderDash();
   });
   var rt = null;
   window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(function(){ if(DATA) renderDash(); }, 150); });
