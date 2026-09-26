@@ -12,6 +12,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   `scripts/sync_ledger.py` on an export of the database and commits new or
   changed slates in `data/<sport>/` to `main`. Mirror the database exactly;
   never generate a second, different slate for a date that already has one.
+- **Research check (final say):** the "Diamond Ledger — research check"
+  Routine runs at 11:40 AM ET. It fact-checks that day's slates in the database,
+  fixes a wrong fact that changes a pick (or removes a moved game) for games
+  that haven't started, marks each change with `auditNote`/`auditChanges`, and
+  commits its report to `data/audits/<date>.md` plus the mirrored slates.
+  Nothing else changes a pick after it's generated.
 - **Grading:** `.github/workflows/diamond-ledger.yml` grades NFL, CFB, MLB,
   NBA and NCAAB every morning from ESPN (`fetch_scores.py` then
   `score_slate.py`). The sport Routines no longer grade. Soccer is the
