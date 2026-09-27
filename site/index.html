@@ -84,6 +84,8 @@ section.hero{border-top:0;}
 .daterange input{font:inherit;font-size:12px;font-weight:600;background:var(--surface);color:var(--ink);border:1px solid var(--rule-2);border-radius:8px;padding:5px 8px;color-scheme:inherit;}
 .daterange input:focus-visible{outline:2px solid var(--ledger);outline-offset:1px;}
 .daterange .to{font-size:12px;color:var(--muted);}
+.checklbl{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--muted);cursor:pointer;}
+.checklbl input{margin:0;cursor:pointer;}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
 .rangelbl{margin:-6px 0 14px;font-size:12px;color:var(--muted);font-family:'IBM Plex Mono',monospace;}
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px;}
@@ -357,9 +359,10 @@ footer b{color:var(--ink);}
     {k:'alt', label:'Second Opinion', short:'2nd Opinion', role:'9-category vote', c:'var(--opinion)'},
     {k:'mine', label:'You', short:'You', role:'your picks', c:'var(--mine)'}
   ];
-  var DASH = {sport:'all', market:'ats', range:'all', from:null, to:null};
+  var DASH = {sport:'all', market:'ats', range:'all', from:null, to:null, mlCutoff:false};
   try{ var ds = JSON.parse(localStorage.getItem('picksheet.dash')||'null'); if(ds) DASH = Object.assign(DASH, ds); }catch(e){}
   if(['7','30','year','all','custom'].indexOf(DASH.range) < 0) DASH.range = 'all';
+  DASH.mlCutoff = !!DASH.mlCutoff;
   function saveDash(){ try{ localStorage.setItem('picksheet.dash', JSON.stringify(DASH)); }catch(e){} }
   var SVGNS = 'http://www.w3.org/2000/svg';
   function fmtDay(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'}); }
@@ -398,7 +401,7 @@ footer b{color:var(--ink);}
     var a = {w:0,l:0,p:0,profit:0,priced:0,dogs:0};
     list.forEach(function(p){
       if(p.w !== who) return;
-      if(DASH.market==='ml' && p.x){ a.dogs++; return; }
+      if(DASH.market==='ml' && DASH.mlCutoff && p.x){ a.dogs++; return; }
       var o = outcome(p);
       if(o.r==='W') a.w++; else if(o.r==='L') a.l++; else if(o.r==='P') a.p++;
       if(num(o.v)){ a.profit += o.v; a.priced++; }
@@ -407,14 +410,14 @@ footer b{color:var(--ink);}
   }
   function seriesFor(list){
     var dates = [];
-    list.forEach(function(p){ if(!(DASH.market==='ml' && p.x) && outcome(p).r && dates.indexOf(p.d)<0) dates.push(p.d); });
+    list.forEach(function(p){ if(!(DASH.market==='ml' && DASH.mlCutoff && p.x) && outcome(p).r && dates.indexOf(p.d)<0) dates.push(p.d); });
     dates.sort();
     var out = WHO.map(function(w){
       var cum = 0, wins = 0, n = 0, any = false, prof = [], rate = [], day = [];
       dates.forEach(function(d){
         var dw = 0, dl = 0, dp = 0;
         list.forEach(function(p){
-          if(p.w!==w.k || p.d!==d || (DASH.market==='ml' && p.x)) return;
+          if(p.w!==w.k || p.d!==d || (DASH.market==='ml' && DASH.mlCutoff && p.x)) return;
           var o = outcome(p);
           if(num(o.v)){ cum += o.v; any = true; }
           if(o.r==='W'){ wins++; n++; dw++; } else if(o.r==='L'){ n++; dl++; } else if(o.r==='P') dp++;
@@ -587,7 +590,8 @@ footer b{color:var(--ink);}
         + '<span class="fgroup"><span class="flbl">Range</span>'+seg('range',[['7','7 days'],['30','30 days'],['year','This year'],['all','All time'],['custom','Custom']])
           + '<span class="daterange" id="rcustom"'+(DASH.range==='custom'?'':' hidden')+'><label for="rfrom" class="sr">From</label><input type="date" id="rfrom"> <span class="to">to</span> <label for="rto" class="sr">To</label><input type="date" id="rto"></span></span>'
         + '<span class="fgroup"><span class="flbl">Sport</span>'+seg('sport',[['all','All']].concat(sp.map(function(k){ return [k, esc(DATA.sportLabels[k]||k.toUpperCase()).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB')]; })))+'</span>'
-        + '<span class="fgroup"><span class="flbl">Market</span>'+seg('market',[['ats','Against the spread'],['ml','Moneyline']])+'</span>'
+        + '<span class="fgroup"><span class="flbl">Market</span>'+seg('market',[['ats','Against the spread'],['ml','Moneyline']])
+          + '<label class="checklbl" title="When checked, leaves out −400-or-shorter favorites and 7+ point NFL/college/NCAAB dogs from the moneyline record and profit, for every predictor. Unchecked, every graded pick counts on the moneyline regardless of price."><input type="checkbox" id="mlcutoff"'+(DASH.mlCutoff?' checked':'')+'> Apply −400 fav / 7+ dog cutoff</label></span>'
       + '</div>'
       + '<p class="rangelbl" id="rangelbl"></p>'
       + '<div class="kpis" id="kpis"></div>'
@@ -645,6 +649,11 @@ footer b{color:var(--ink);}
     rows.forEach(function(p){
       if(p.a==='W') t.aw++; else if(p.a==='L') t.al++; else if(p.a==='P') t.ap++;
       if(num(p.ap)) t.a$ += p.ap;
+      // The log's own ML column always shows "No ML bet"/"ATS only" for a
+      // skipped pick (see the `ml` cell below), so its totals leave those
+      // out regardless of the dashboard's cutoff filter, to match what's
+      // displayed in each row.
+      if(p.x) return;
       if(p.m==='W') t.mw++; else if(p.m==='L') t.ml++;
       if(num(p.mp)) t.m$ += p.mp;
     });
@@ -685,7 +694,7 @@ footer b{color:var(--ink);}
     rc.hidden = DASH.range !== 'custom';
     if(DASH.range === 'custom'){ var cb = rangeBounds(); rf.value = cb[0]; rt.value = cb[1]; }
     rf.min = rt.min = db[0]; rf.max = rt.max = todayStr();
-    document.getElementById('rangelbl').textContent = rangeLabel() + ' · ' + list.filter(function(p){ return DASH.market==='ats' ? p.a : p.m; }).length + ' graded plays';
+    document.getElementById('rangelbl').textContent = rangeLabel() + ' · ' + list.filter(function(p){ return DASH.market==='ats' ? p.a : (p.m && !(DASH.mlCutoff && p.x)); }).length + ' graded plays';
     var ser = seriesFor(list);
     document.getElementById('kpis').innerHTML = WHO.map(function(w, i){
       var a = summarize(list, w.k), r = roi(a), n = a.w+a.l;
@@ -896,6 +905,7 @@ footer b{color:var(--ink);}
     LOG.shown = 50; renderDash(); renderLog();
   });
   document.addEventListener('change', function(e){
+    if(e.target.id === 'mlcutoff'){ DASH.mlCutoff = e.target.checked; saveDash(); renderDash(); return; }
     var lk = {ldate:'day', lfrom:'from', lto:'to'}[e.target.id];
     if(lk){ if(e.target.value){ LOG[lk] = e.target.value; LOG.shown = 50; renderLog(); } return; }
     if(e.target.id !== 'rfrom' && e.target.id !== 'rto') return;
