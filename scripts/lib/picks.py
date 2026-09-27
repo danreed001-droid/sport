@@ -4,7 +4,7 @@ workflow that commits your picks into data/mypicks/)."""
 import re
 
 BIG_DOG_LIMIT = 7
-BIG_DOG_SPORTS = {"nfl", "cfb"}
+BIG_DOG_SPORTS = {"nfl", "cfb", "ncaab"}
 DEFAULT_SPREAD_ODDS = -110
 
 
@@ -59,8 +59,8 @@ def payout(odds, won):
 
 def grade(sport, g, side):
     """Grade one side of a final game. Moneyline is skipped (counted=False)
-    when the pick is an NFL/college dog of more than 7 points. A soccer draw
-    pick is moneyline-only."""
+    when the pick is an NFL, college football or college basketball dog of
+    more than 7 points. A soccer draw pick is moneyline-only."""
     if side == "draw":
         won = g["awayScore"] == g["homeScore"]
         odds = g.get("drawMoneyline")

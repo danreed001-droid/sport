@@ -17,8 +17,8 @@ def grade_pick(pick_team, pick_score, other_score, moneyline, spread_for_pick, s
 
     A pick getting more than big_dog_limit points is graded ATS only: its
     straight-up result and moneyline return are left out (None), so neither
-    counts toward the moneyline record or profit. NFL/CFB pass 7, the pick
-    sheet's rule.
+    counts toward the moneyline record or profit. NFL, CFB and NCAAB pass 7,
+    the pick sheet's rule.
 
     Returns {correct, pickReturn, pickCover, pickSpreadReturn}. Ties,
     postponements/cancellations, and games with no pick all fall out of this

@@ -36,5 +36,5 @@ opens a `picks YYYY-MM-DD` issue, and `.github/workflows/pick-intake.yml` runs
 Don't write picks into game objects in `data/<sport>/` (no `userPick`,
 `yourPick`, `myPick` fields) and don't ask the user to tell you their picks.
 Grading of their picks happens in `scripts/lib/picks.py` from the game's final
-score and stored lines: ATS and moneyline at $100 flat, with NFL/CFB picks on a
+score and stored lines: ATS and moneyline at $100 flat, with NFL, CFB and NCAAB picks on a
 team getting more than 7 points counted ATS only.
