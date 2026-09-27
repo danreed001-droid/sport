@@ -12,8 +12,13 @@ def moneyline_payout(odds):
     return round(10000 / abs(odds), 2)
 
 
-def grade_pick(pick_team, pick_score, other_score, moneyline, spread_for_pick, spread_odds_for_pick):
+def grade_pick(pick_team, pick_score, other_score, moneyline, spread_for_pick, spread_odds_for_pick, big_dog_limit=10):
     """Grade one predictor's pick against a finished game.
+
+    A pick getting more than big_dog_limit points is graded ATS only: its
+    straight-up result and moneyline return are left out (None), so neither
+    counts toward the moneyline record or profit. NFL/CFB pass 7, the pick
+    sheet's rule.
 
     Returns {correct, pickReturn, pickCover, pickSpreadReturn}. Ties,
     postponements/cancellations, and games with no pick all fall out of this
@@ -25,8 +30,8 @@ def grade_pick(pick_team, pick_score, other_score, moneyline, spread_for_pick, s
     if pick_score == other_score:
         return {"correct": None, "pickReturn": None, "pickCover": None, "pickSpreadReturn": None}
 
-    correct = pick_score > other_score
-    big_underdog = spread_for_pick is not None and spread_for_pick > 10
+    big_underdog = spread_for_pick is not None and spread_for_pick > big_dog_limit
+    correct = None if big_underdog else pick_score > other_score
 
     if big_underdog or moneyline is None:
         pick_return = None

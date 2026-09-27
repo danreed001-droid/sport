@@ -16,6 +16,7 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
 from lib.grading import grade_pick  # noqa: E402
+from lib.picks import BIG_DOG_LIMIT, BIG_DOG_SPORTS  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -91,14 +92,14 @@ def is_resolved(status):
     return s.startswith("final") or "postponed" in s or "cancel" in s
 
 
-def grade_named(g, team, away_score, home_score):
+def grade_named(g, team, away_score, home_score, big_dog_limit=10):
     """Two-way grading: any named team (pick, altPick, altTrendFavors,
     altBlowoutFavors, ...) against a finished game, using that team's own
     stored odds/spread."""
     if team == g["away"]:
-        return grade_pick(team, away_score, home_score, g.get("awayMoneyline"), g.get("awaySpread"), g.get("awaySpreadOdds"))
+        return grade_pick(team, away_score, home_score, g.get("awayMoneyline"), g.get("awaySpread"), g.get("awaySpreadOdds"), big_dog_limit)
     if team == g["home"]:
-        return grade_pick(team, home_score, away_score, g.get("homeMoneyline"), g.get("homeSpread"), g.get("homeSpreadOdds"))
+        return grade_pick(team, home_score, away_score, g.get("homeMoneyline"), g.get("homeSpread"), g.get("homeSpreadOdds"), big_dog_limit)
     return {"correct": None, "pickReturn": None, "pickCover": None, "pickSpreadReturn": None}
 
 
@@ -111,11 +112,11 @@ TWO_WAY_SIGNAL_FIELDS = [
 ]
 
 
-def grade_two_way_game(g, away_score, home_score):
+def grade_two_way_game(g, away_score, home_score, big_dog_limit=10):
     for pick_field, correct_field, return_field, cover_field, spread_return_field in TWO_WAY_SIGNAL_FIELDS:
         if pick_field not in g:
             continue  # this sport's model doesn't track this signal
-        graded = grade_named(g, g.get(pick_field), away_score, home_score)
+        graded = grade_named(g, g.get(pick_field), away_score, home_score, big_dog_limit)
         g[correct_field] = graded["correct"]
         g[return_field] = graded["pickReturn"]
         g[cover_field] = graded["pickCover"]
@@ -166,7 +167,7 @@ def main(sport_key):
             if cfg["kind"] == "three_way":
                 g.update(model.grade_game(g, away_score, home_score))
             else:
-                grade_two_way_game(g, away_score, home_score)
+                grade_two_way_game(g, away_score, home_score, BIG_DOG_LIMIT if sport_key in BIG_DOG_SPORTS else 10)
 
         doc["scored"] = True
         doc["scoredAt"] = datetime.now(timezone.utc).isoformat()
