@@ -9,6 +9,7 @@ name: Diamond Ledger (scoring)
 
 on:
   schedule:
+    - cron: "0 11 * * *"  # ~7am ET (11:00 UTC; adjust +/-1h across DST if it matters to you)
     - cron: "0 13 * * *"  # ~9am ET (13:00 UTC; adjust +/-1h across DST if it matters to you)
   workflow_dispatch:
     inputs:
