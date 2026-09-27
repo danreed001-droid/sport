@@ -103,8 +103,12 @@ def build():
                     r = grade(sport, g, side)
                     tally(totals[who], r)
                     ats_code = {"cover": "W", "miss": "L", "push": "P"}.get(r["ats"]["result"])
+                    # "m"/"mp" carry the moneyline result/profit even for a skipped
+                    # pick (a -400-or-shorter fav, or a 7+ point NFL/college dog) —
+                    # "x" flags why, so the site can include or exclude those via
+                    # its own filter instead of the build baking in one answer.
                     play.update({"a": ats_code, "ap": r["ats"]["profit"],
-                                 "m": r["ml"]["result"] if r["ml"]["counted"] else None, "mp": r["ml"]["profit"],
+                                 "m": r["ml"]["result"], "mp": r["ml"]["profit"],
                                  "x": {"dog": 1, "fav": 2}.get(r["ml"]["skip"], 0), "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
                     plays.append(play)
                     bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "mine": blank()})

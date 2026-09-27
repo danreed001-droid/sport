@@ -81,9 +81,9 @@ def grade(sport, g, side):
     if side == "draw":
         won = g["awayScore"] == g["homeScore"]
         odds = g.get("drawMoneyline")
-        if is_heavy_fav(odds):
-            return {"ml": {"result": None, "profit": None, "counted": False, "skip": "fav"}, "ats": {"result": None, "profit": None}}
-        return {"ml": {"result": "W" if won else "L", "profit": round(payout(odds, won), 2) if _num(odds) else None, "counted": True, "skip": None},
+        heavy = is_heavy_fav(odds)
+        return {"ml": {"result": "W" if won else "L", "profit": round(payout(odds, won), 2) if _num(odds) else None,
+                       "counted": not heavy, "skip": "fav" if heavy else None},
                 "ats": {"result": None, "profit": None}}
     other = "home" if side == "away" else "away"
     mine, theirs = g[f"{side}Score"], g[f"{other}Score"]
@@ -92,7 +92,11 @@ def grade(sport, g, side):
     skip = ml_skip(sport, ln)
     ml = {"result": None, "profit": None, "counted": skip is None, "skip": skip}
     three_way = _num(g.get("drawMoneyline"))
-    if ml["counted"] and (mine != theirs or three_way):
+    # Result and profit are always computed, even when `counted` is False
+    # (a -400-or-shorter favorite, or a 7+ point NFL/college dog) — the site
+    # decides whether to include those in the moneyline record via a filter,
+    # rather than the grading step throwing the numbers away.
+    if mine != theirs or three_way:
         won = mine > theirs
         ml["result"] = "W" if won else "L"
         if _num(ln["moneyline"]):
