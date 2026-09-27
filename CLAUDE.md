@@ -37,4 +37,6 @@ Don't write picks into game objects in `data/<sport>/` (no `userPick`,
 `yourPick`, `myPick` fields) and don't ask the user to tell you their picks.
 Grading of their picks happens in `scripts/lib/picks.py` from the game's final
 score and stored lines: ATS and moneyline at $100 flat, with NFL, CFB and NCAAB picks on a
-team getting more than 7 points counted ATS only.
+team getting more than 7 points counted ATS only. In any sport, a pick priced
+-400 or shorter is left out of the moneyline record and profit (win or lose);
+this applies to the Ledger and Second Opinion too (`scripts/lib/grading.py`).

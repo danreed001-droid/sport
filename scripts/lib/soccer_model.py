@@ -5,6 +5,7 @@ generates EPL picks, so this repo never assembles a slate for it; if one
 ever ran and mirrored data/epl/<date>.json here, score_slate.py would grade
 it with grade_game below (moneyline-only — soccer has no standard point
 spread the way NFL/MLB do)."""
+from lib.grading import HEAVY_FAV_ML
 
 
 def grade_game(g, away_score, home_score):
@@ -42,8 +43,10 @@ def grade_game(g, away_score, home_score):
         side = resolve_side(g.get(pick_field))
         if side is None:
             continue
-        correct = (side == outcome)
         price = price_for.get(side)
+        if price is not None and price <= HEAVY_FAV_ML:
+            continue  # -400 or shorter: not a moneyline bet, left out of the record
+        correct = (side == outcome)
         if price is None:
             pick_return = None
         else:

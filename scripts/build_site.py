@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
-from lib.picks import game_id, grade, is_final, is_big_dog, line_for, side_of, team_for  # noqa: E402
+from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
 SLATE_FIELDS = [
@@ -38,7 +38,7 @@ def load_mypicks():
 
 def blank():
     return {"atsW": 0, "atsL": 0, "atsP": 0, "atsProfit": 0.0, "atsPriced": 0,
-            "mlW": 0, "mlL": 0, "mlProfit": 0.0, "mlPriced": 0, "mlSkippedDogs": 0}
+            "mlW": 0, "mlL": 0, "mlProfit": 0.0, "mlPriced": 0, "mlSkipped": 0}
 
 
 def tally(acc, g_result):
@@ -53,7 +53,7 @@ def tally(acc, g_result):
         acc["atsProfit"] += ats["profit"]
         acc["atsPriced"] += 1
     if not ml["counted"]:
-        acc["mlSkippedDogs"] += 1
+        acc["mlSkipped"] += 1
     elif ml["result"] == "W":
         acc["mlW"] += 1
     elif ml["result"] == "L":
@@ -105,7 +105,7 @@ def build():
                     ats_code = {"cover": "W", "miss": "L", "push": "P"}.get(r["ats"]["result"])
                     play.update({"a": ats_code, "ap": r["ats"]["profit"],
                                  "m": r["ml"]["result"] if r["ml"]["counted"] else None, "mp": r["ml"]["profit"],
-                                 "x": 0 if r["ml"]["counted"] else 1, "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
+                                 "x": {"dog": 1, "fav": 2}.get(r["ml"]["skip"], 0), "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
                     plays.append(play)
                     bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "mine": blank()})
                     tally(bucket[who], r)
@@ -137,7 +137,9 @@ def build():
         sport = p.get("sport")
         game = next((g for g in slate["sports"].get(sport, {}).get("games", []) if g["id"] == gid), None)
         if game:
-            entry["bigDog"] = is_big_dog(sport, line_for(game, p["side"])["spread"])
+            skip = ml_skip(sport, line_for(game, p["side"]))
+            entry["bigDog"] = skip == "dog"
+            entry["heavyFav"] = skip == "fav"
             if game["final"]:
                 entry["result"] = grade(sport, game, p["side"])
         committed[gid] = entry

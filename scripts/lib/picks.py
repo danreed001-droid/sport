@@ -5,6 +5,7 @@ import re
 
 BIG_DOG_LIMIT = 7
 BIG_DOG_SPORTS = {"nfl", "cfb", "ncaab"}
+HEAVY_FAV_ML = -400  # any sport: a pick priced this short or shorter isn't a moneyline bet
 DEFAULT_SPREAD_ODDS = -110
 
 
@@ -51,6 +52,21 @@ def is_big_dog(sport, spread):
     return sport in BIG_DOG_SPORTS and _num(spread) and spread > BIG_DOG_LIMIT
 
 
+def is_heavy_fav(moneyline):
+    return _num(moneyline) and moneyline <= HEAVY_FAV_ML
+
+
+def ml_skip(sport, ln):
+    """Why a pick stays out of the moneyline record, or None if it counts:
+    "dog" for a big football/college basketball dog, "fav" for a -400 or
+    shorter favorite."""
+    if is_big_dog(sport, ln["spread"]):
+        return "dog"
+    if is_heavy_fav(ln["moneyline"]):
+        return "fav"
+    return None
+
+
 def payout(odds, won):
     if not won:
         return -100.0
@@ -58,19 +74,23 @@ def payout(odds, won):
 
 
 def grade(sport, g, side):
-    """Grade one side of a final game. Moneyline is skipped (counted=False)
-    when the pick is an NFL, college football or college basketball dog of
-    more than 7 points. A soccer draw pick is moneyline-only."""
+    """Grade one side of a final game. Moneyline is skipped (counted=False,
+    skip says why) when the pick is an NFL, college football or college
+    basketball dog of more than 7 points, or in any sport a favorite priced
+    -400 or shorter. A soccer draw pick is moneyline-only."""
     if side == "draw":
         won = g["awayScore"] == g["homeScore"]
         odds = g.get("drawMoneyline")
-        return {"ml": {"result": "W" if won else "L", "profit": round(payout(odds, won), 2) if _num(odds) else None, "counted": True},
+        if is_heavy_fav(odds):
+            return {"ml": {"result": None, "profit": None, "counted": False, "skip": "fav"}, "ats": {"result": None, "profit": None}}
+        return {"ml": {"result": "W" if won else "L", "profit": round(payout(odds, won), 2) if _num(odds) else None, "counted": True, "skip": None},
                 "ats": {"result": None, "profit": None}}
     other = "home" if side == "away" else "away"
     mine, theirs = g[f"{side}Score"], g[f"{other}Score"]
     ln = line_for(g, side)
 
-    ml = {"result": None, "profit": None, "counted": not is_big_dog(sport, ln["spread"])}
+    skip = ml_skip(sport, ln)
+    ml = {"result": None, "profit": None, "counted": skip is None, "skip": skip}
     three_way = _num(g.get("drawMoneyline"))
     if ml["counted"] and (mine != theirs or three_way):
         won = mine > theirs

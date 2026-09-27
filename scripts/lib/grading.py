@@ -2,6 +2,8 @@
 SCORING rules exactly (moneyline payout, big-underdog rule, ATS cover/return).
 """
 
+HEAVY_FAV_ML = -400  # a pick priced this short or shorter isn't a moneyline bet
+
 
 def moneyline_payout(odds):
     """Profit on a flat $100 bet at American odds, if the bet wins."""
@@ -18,7 +20,8 @@ def grade_pick(pick_team, pick_score, other_score, moneyline, spread_for_pick, s
     A pick getting more than big_dog_limit points is graded ATS only: its
     straight-up result and moneyline return are left out (None), so neither
     counts toward the moneyline record or profit. NFL, CFB and NCAAB pass 7,
-    the pick sheet's rule.
+    the pick sheet's rule. The same goes for a favorite priced at
+    HEAVY_FAV_ML (-400) or shorter, in any sport.
 
     Returns {correct, pickReturn, pickCover, pickSpreadReturn}. Ties,
     postponements/cancellations, and games with no pick all fall out of this
@@ -31,9 +34,10 @@ def grade_pick(pick_team, pick_score, other_score, moneyline, spread_for_pick, s
         return {"correct": None, "pickReturn": None, "pickCover": None, "pickSpreadReturn": None}
 
     big_underdog = spread_for_pick is not None and spread_for_pick > big_dog_limit
-    correct = None if big_underdog else pick_score > other_score
+    ml_skipped = big_underdog or (moneyline is not None and moneyline <= HEAVY_FAV_ML)
+    correct = None if ml_skipped else pick_score > other_score
 
-    if big_underdog or moneyline is None:
+    if ml_skipped or moneyline is None:
         pick_return = None
     else:
         pick_return = moneyline_payout(moneyline) if correct else -100.0

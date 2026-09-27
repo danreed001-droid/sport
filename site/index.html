@@ -651,7 +651,7 @@ footer b{color:var(--ink);}
     var body = rows.slice(0, LOG.shown).map(function(p){
       var w = WL[p.w], pend = p.pd;
       var ats = pend ? '<span class="res pend">Pending</span>' : (p.a ? resCell(p.a) : '<span class="muted">no line</span>');
-      var ml = pend ? '<span class="res pend">Pending</span>' : (p.x ? '<span class="muted" title="NFL or college pick on a 7+ point dog: counted ATS only">ATS only</span>' : (p.m ? resCell(p.m) : '<span class="muted">—</span>'));
+      var ml = pend ? '<span class="res pend">Pending</span>' : (p.x ? (p.x===2 ? '<span class="muted" title="Priced -400 or shorter: not a moneyline bet">No ML bet</span>' : '<span class="muted" title="NFL or college pick on a 7+ point dog: counted ATS only">ATS only</span>') : (p.m ? resCell(p.m) : '<span class="muted">—</span>'));
       return '<tr>'
         + '<td class="c-date">'+fmtDay(p.d)+'</td>'
         + '<td>'+esc((DATA.sportLabels[p.s]||p.s).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB'))+'</td>'
@@ -689,7 +689,7 @@ footer b{color:var(--ink);}
     var ser = seriesFor(list);
     document.getElementById('kpis').innerHTML = WHO.map(function(w, i){
       var a = summarize(list, w.k), r = roi(a), n = a.w+a.l;
-      var note = a.dogs ? '<div class="kpi-note">'+a.dogs+' NFL/college pick'+(a.dogs===1?'':'s')+' on a 7+ point dog left out of the moneyline.</div>'
+      var note = a.dogs ? '<div class="kpi-note">'+a.dogs+' pick'+(a.dogs===1?'':'s')+' left out of the moneyline (7+ point NFL/college dogs, favorites at −400 or shorter).</div>'
         : (!(n+a.p) ? '<div class="kpi-note">'+(w.k==='mine' ? 'No graded picks in this view yet.' : 'No graded plays in this view.')+'</div>' : '');
       return '<div class="kpi"><div class="kpi-h"><i class="key" style="background:'+w.c+'"></i><b>'+w.label+'</b><span>'+w.role+'</span></div>'
         + '<div class="kpi-main"><div class="kpi-fig '+(a.priced?cls(a.profit):'flat')+'">'+(a.priced?money(a.profit):'—')+'<small>profit '+mk+'</small></div>'+sparkSvg(ser.series[i].prof, w.c)+'</div>'
@@ -773,8 +773,11 @@ footer b{color:var(--ink);}
     var notes = '';
     if(side){
       var spread = side==='away' ? g.awaySpread : g.homeSpread;
-      if((sport==='nfl'||sport==='cfb') && num(spread) && spread>7)
+      var price = side==='away' ? g.awayMoneyline : side==='home' ? g.homeMoneyline : g.drawMoneyline;
+      if((sport==='nfl'||sport==='cfb'||sport==='ncaab') && num(spread) && spread>7)
         notes += '<span class="note dog">'+esc(g[side])+' is a '+sgn(spread)+' dog — counts ATS only, left out of your ML record.</span>';
+      else if(num(price) && price<=-400)
+        notes += '<span class="note dog">'+esc(side==='draw'?'Draw':g[side])+' is '+sgn(price)+' — too short to bet on the moneyline, left out of your ML record.</span>';
     }
     if(g.altReasons && g.altReasons.length){
       var t = tallyOf(scoresFor(id)), m = Math.abs(t.a-t.h);
@@ -854,6 +857,7 @@ footer b{color:var(--ink);}
         + '</ol><b>Grading rules</b><ul>'
         + '<li>Every pick is graded against the spread and on the moneyline, $100 flat, at the lines stored when the slate was made.</li>'
         + '<li>NFL, college football and college basketball: a pick on a team getting more than 7 points counts <b>ATS only</b> — it\'s left out of the moneyline record for every predictor.</li>'
+        + '<li>Any sport: a pick priced −400 or shorter on the moneyline is too short to bet, so it\'s left out of the moneyline record and profit for every predictor, win or lose.</li>'
         + '<li>Only issues you open yourself are read; this repo is public, so anyone can see your picks.</li>'
         + '</ul></footer>';
     Object.keys(GAMES).forEach(function(id){ renderScore(id); renderPickRow(id); });
