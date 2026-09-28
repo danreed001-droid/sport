@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Builds the GitHub Pages pick sheet: copies site/index.html and writes
 data.json with the latest slate, the season scoreboard for the Ledger, the
-Second Opinion and your own picks (data/mypicks/), and your picks on the
-latest slate.
+Second Opinion, the NFL/CFB-only Trend check and Blowout check, and your own
+picks (data/mypicks/), and your picks on the latest slate.
 
 Usage: python scripts/build_site.py [--out _site]
 """
@@ -22,7 +22,7 @@ SLATE_FIELDS = [
     "away", "home", "time", "awayPitcher", "homePitcher", "statLines",
     "pick", "confidence", "skipped", "skipReason",
     "altPick", "altConfidence", "altCategoryTally", "altReasons",
-    "altTrendCheck", "altBlowoutCheck",
+    "altTrendCheck", "altBlowoutCheck", "altTrendFavors", "altBlowoutFavors",
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore",
 ]
@@ -76,11 +76,25 @@ def alt_side(g):
     return None
 
 
+def trend_side(g):
+    return side_of(g, g["altTrendFavors"]) if g.get("altTrendFavors") else None
+
+
+def blowout_side(g):
+    return side_of(g, g["altBlowoutFavors"]) if g.get("altBlowoutFavors") else None
+
+
+# Trend/blowout are only populated on NFL and CFB games; every other sport's
+# games lack these keys entirely so trend_side/blowout_side return None for
+# them and these two "models" contribute nothing outside football.
+MODEL_SIDES = (("ledger", ledger_side), ("alt", alt_side), ("trend", trend_side), ("blowout", blowout_side))
+
+
 def build():
     mypicks = load_mypicks()
     all_docs = {k: store.list_docs(cfg["collection"]) for k, cfg in sports.SPORTS.items()}
 
-    totals = {"ledger": blank(), "alt": blank(), "mine": blank()}
+    totals = {"ledger": blank(), "alt": blank(), "trend": blank(), "blowout": blank(), "mine": blank()}
     by_sport = {}
     plays = []
     for sport, docs in all_docs.items():
@@ -89,7 +103,7 @@ def build():
             for g in doc.get("games", []):
                 final = is_final(doc, g)
                 mine = picks_today.get(game_id(sport, date_str, g), {}).get("side")
-                for who, side in (("ledger", ledger_side(g)), ("alt", alt_side(g)), ("mine", mine)):
+                for who, side in [(k, f(g)) for k, f in MODEL_SIDES] + [("mine", mine)]:
                     if side not in ("away", "home", "draw"):
                         continue
                     tier = g.get("confidence") if who == "ledger" else g.get("altConfidence") if who == "alt" else None
@@ -112,7 +126,7 @@ def build():
                                  "m": r["ml"]["result"], "mp": r["ml"]["profit"],
                                  "x": {"dog": 1, "fav": 2}.get(r["ml"]["skip"], 0), "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
                     plays.append(play)
-                    bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "mine": blank()})
+                    bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "trend": blank(), "blowout": blank(), "mine": blank()})
                     tally(bucket[who], r)
 
     slate_date = max((d for docs in all_docs.values() for d, _ in docs), default=None)
@@ -130,7 +144,7 @@ def build():
                 if row["final"]:
                     row["results"] = {
                         who: grade(sport, g, side)
-                        for who, side in (("ledger", ledger_side(g)), ("alt", alt_side(g)))
+                        for who, side in [(k, f(g)) for k, f in MODEL_SIDES]
                         if side
                     }
                 games.append(row)

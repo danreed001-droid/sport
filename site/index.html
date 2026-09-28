@@ -12,8 +12,8 @@
 :root{
   --paper:#f6f4ec; --surface:#fcfcfb; --surface-2:#ece7d3; --ink:#201d16; --muted:#726c58;
   --rule:#ddd5b9; --rule-2:#c9bf9c; --grid:#e6e1cf; --axis:#b9b2a0;
-  --ledger:#2a78d6; --opinion:#eb6834; --mine:#1baf7a;
-  --ledger-ink:#1c5cab; --opinion-ink:#b3471b; --mine-ink:#0b7a52; --mine-soft:rgba(27,175,122,.14);
+  --ledger:#2a78d6; --opinion:#eb6834; --trend:#7c5cd6; --blowout:#0e7c86; --mine:#1baf7a;
+  --ledger-ink:#1c5cab; --opinion-ink:#b3471b; --trend-ink:#5b3fb0; --blowout-ink:#0b6169; --mine-ink:#0b7a52; --mine-soft:rgba(27,175,122,.14);
   --win:#006300; --loss:#d03b3b; --loss-soft:rgba(208,59,59,.12); --push:#8a8672; --warn:#9a6a12;
   --shadow:0 1px 2px rgba(32,29,22,.05), 0 10px 26px -18px rgba(32,29,22,.4);
   color-scheme:light;
@@ -21,8 +21,8 @@
 :root[data-theme="dark"]{
   --paper:#0f100e; --surface:#1a1a19; --surface-2:#232320; --ink:#f3f2ec; --muted:#9b9a92;
   --rule:#2c2c2a; --rule-2:#3d3d39; --grid:#2c2c2a; --axis:#46463f;
-  --ledger:#3987e5; --opinion:#d95926; --mine:#199e70;
-  --ledger-ink:#86b6ef; --opinion-ink:#f0955e; --mine-ink:#4fd3a0; --mine-soft:rgba(25,158,112,.18);
+  --ledger:#3987e5; --opinion:#d95926; --trend:#a78bfa; --blowout:#2dd4bf; --mine:#199e70;
+  --ledger-ink:#86b6ef; --opinion-ink:#f0955e; --trend-ink:#c4b5fd; --blowout-ink:#5eead4; --mine-ink:#4fd3a0; --mine-soft:rgba(25,158,112,.18);
   --win:#0ca30c; --loss:#e66767; --loss-soft:rgba(230,103,103,.16); --push:#a8a79e; --warn:#e0b458;
   --shadow:0 1px 2px rgba(0,0,0,.45), 0 12px 28px -18px rgba(0,0,0,.8);
   color-scheme:dark;
@@ -165,6 +165,7 @@ details.tv table{min-width:0;}
 .badge{flex:1 1 160px;background:var(--surface-2);border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:2px;}
 .badge .lbl{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;}
 .badge.ledger .lbl{color:var(--ledger-ink);} .badge.opinion .lbl{color:var(--opinion-ink);}
+.badge.trend .lbl{color:var(--trend-ink);} .badge.blowout .lbl{color:var(--blowout-ink);}
 .badge .val{font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
 .badge .val.none{color:var(--muted);font-weight:500;font-style:italic;font-size:12.5px;}
 .badge .tier{font-size:11px;color:var(--muted);}
@@ -357,8 +358,11 @@ footer b{color:var(--ink);}
   var WHO = [
     {k:'ledger', label:'The Ledger', short:'Ledger', role:'stats model', c:'var(--ledger)'},
     {k:'alt', label:'Second Opinion', short:'2nd Opinion', role:'9-category vote', c:'var(--opinion)'},
+    {k:'trend', label:'Trend check', short:'Trend', role:'prior-game pattern · NFL/CFB', c:'var(--trend)'},
+    {k:'blowout', label:'Blowout check', short:'Blowout', role:'regression flag · NFL/CFB', c:'var(--blowout)'},
     {k:'mine', label:'You', short:'You', role:'your picks', c:'var(--mine)'}
   ];
+  var WHO_BY_KEY = {}; WHO.forEach(function(w){ WHO_BY_KEY[w.k] = w; });
   var DASH = {sport:'all', market:'ats', range:'all', from:null, to:null, mlCutoff:false};
   try{ var ds = JSON.parse(localStorage.getItem('picksheet.dash')||'null'); if(ds) DASH = Object.assign(DASH, ds); }catch(e){}
   if(['7','30','year','all','custom'].indexOf(DASH.range) < 0) DASH.range = 'all';
@@ -615,7 +619,7 @@ footer b{color:var(--ink);}
         + '<span class="fgroup"><span class="flbl">Dates</span>'+seg('mode',[['day','Day'],['range','Range']])
           + '<span class="daterange" id="lday"><button type="button" class="stepbtn" id="lprev" aria-label="Previous day with picks">‹</button><label for="ldate" class="sr">Day</label><input type="date" id="ldate"><button type="button" class="stepbtn" id="lnext" aria-label="Next day with picks">›</button></span>'
           + '<span class="daterange" id="lrange" hidden><label for="lfrom" class="sr">From</label><input type="date" id="lfrom"> <span class="to">to</span> <label for="lto" class="sr">To</label><input type="date" id="lto"></span></span>'
-        + '<span class="fgroup"><span class="flbl">Model</span>'+seg('who',[['all','All'],['ledger','Ledger'],['alt','2nd Opinion'],['mine','You']])+'</span>'
+        + '<span class="fgroup"><span class="flbl">Model</span>'+seg('who',[['all','All'],['ledger','Ledger'],['alt','2nd Opinion'],['trend','Trend'],['blowout','Blowout'],['mine','You']])+'</span>'
         + '<span class="fgroup"><span class="flbl">Show</span>'+seg('result',[['all','All picks'],['graded','Graded'],['pending','Pending']])+'</span>'
       + '</div>'
       + '<div class="scroller"><table class="logtbl" id="logtbl"></table></div>'
@@ -645,7 +649,7 @@ footer b{color:var(--ink);}
     var rows = logSportPlays().filter(function(p){ return p.d >= lo && p.d <= hi; }).filter(function(p){
       return (LOG.who==='all' || p.w===LOG.who) && (LOG.result==='all' || (LOG.result==='pending' ? p.pd : !p.pd));
     }).slice().sort(function(a,b){ return a.d<b.d ? 1 : a.d>b.d ? -1 : (a.s<b.s ? -1 : a.s>b.s ? 1 : 0); });
-    var WL = {ledger:WHO[0], alt:WHO[1], mine:WHO[2]}, t = {aw:0,al:0,ap:0,a$:0,mw:0,ml:0,m$:0};
+    var WL = WHO_BY_KEY, t = {aw:0,al:0,ap:0,a$:0,mw:0,ml:0,m$:0};
     rows.forEach(function(p){
       if(p.a==='W') t.aw++; else if(p.a==='L') t.al++; else if(p.a==='P') t.ap++;
       if(num(p.ap)) t.a$ += p.ap;
@@ -762,6 +766,16 @@ footer b{color:var(--ink);}
       return '<div class="badge opinion"><span class="lbl">Second Opinion</span><span class="val">'+esc(g.altPick)+resultChips(g.results&&g.results.alt)+'</span><span class="tier">'+esc(TIER[g.altConfidence]||g.altConfidence)+' · '+esc(g.altCategoryTally||'')+'</span></div>';
     return '<div class="badge opinion"><span class="lbl">Second Opinion</span><span class="val none">Pass'+(g.altCategoryTally?' ('+esc(g.altCategoryTally)+')':'')+'</span></div>';
   }
+  function trendBadge(g){
+    if(g.altTrendFavors)
+      return '<div class="badge trend"><span class="lbl">Trend check</span><span class="val">'+esc(g.altTrendFavors)+resultChips(g.results&&g.results.trend)+'</span></div>';
+    return '<div class="badge trend"><span class="lbl">Trend check</span><span class="val none">No signal</span></div>';
+  }
+  function blowoutBadge(g){
+    if(g.altBlowoutFavors)
+      return '<div class="badge blowout"><span class="lbl">Blowout check</span><span class="val">'+esc(g.altBlowoutFavors)+resultChips(g.results&&g.results.blowout)+'</span></div>';
+    return '<div class="badge blowout"><span class="lbl">Blowout check</span><span class="val none">No signal</span></div>';
+  }
   function lineText(g){
     var parts = [];
     if(num(g.awaySpread)&&num(g.homeSpread)) parts.push('Spread '+sgn(g.awaySpread)+' / '+sgn(g.homeSpread));
@@ -817,15 +831,17 @@ footer b{color:var(--ink);}
     var score = g.final ? '<span class="sc">'+g.awayScore+'–'+g.homeScore+' F</span>' : '';
     var reasons = (g.altReasons&&g.altReasons.length) ? '<details class="score" id="sc-'+esc(g.id)+'"></details>' : '';
     var stat = (g.statLines&&g.statLines.length) ? '<details class="why"><summary style="color:var(--ledger-ink)">Ledger inputs</summary><ul>'+g.statLines.map(function(r){return '<li>'+esc(r)+'</li>';}).join('')+'</ul></details>' : '';
+    var football = sport==='nfl' || sport==='cfb';
+    var models = ledgerBadge(g) + altBadge(g) + (football ? trendBadge(g)+blowoutBadge(g) : '');
     var checks = '';
-    if(sport==='nfl' || sport==='cfb'){
-      if(g.altTrendCheck) checks += '<details class="why"><summary>Trend check</summary><ul><li>'+esc(g.altTrendCheck)+'</li></ul></details>';
-      if(g.altBlowoutCheck) checks += '<details class="why"><summary>Blowout check</summary><ul><li>'+esc(g.altBlowoutCheck)+'</li></ul></details>';
+    if(football){
+      if(g.altTrendCheck) checks += '<details class="why"><summary style="color:var(--trend-ink)">Trend check — why</summary><ul><li>'+esc(g.altTrendCheck)+'</li></ul></details>';
+      if(g.altBlowoutCheck) checks += '<details class="why"><summary style="color:var(--blowout-ink)">Blowout check — why</summary><ul><li>'+esc(g.altBlowoutCheck)+'</li></ul></details>';
     }
     return '<article class="game">'
       + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
       + '<div class="lines">'+lineText(g)+'</div></div>'
-      + '<div class="models">'+ledgerBadge(g)+altBadge(g)+'</div>'
+      + '<div class="models">'+models+'</div>'
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
       + '</article>';
@@ -859,7 +875,7 @@ footer b{color:var(--ink);}
         + '<div class="games">'+sp.games.map(function(g){ return card(k,g); }).join('')+'</div></section>';
     }).join('');
     document.getElementById('app').innerHTML =
-      '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models; <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
+      '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models in every sport; on NFL and CFB games, <b style="color:var(--trend-ink)">Trend check</b> and <b style="color:var(--blowout-ink)">Blowout check</b> are tracked alongside them. <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
       + dashHtml()
       + logHtml()
       + (sportsHtml || '<section><p class="sec-p">No games on the slate.</p></section>')
