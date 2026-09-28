@@ -817,11 +817,16 @@ footer b{color:var(--ink);}
     var score = g.final ? '<span class="sc">'+g.awayScore+'–'+g.homeScore+' F</span>' : '';
     var reasons = (g.altReasons&&g.altReasons.length) ? '<details class="score" id="sc-'+esc(g.id)+'"></details>' : '';
     var stat = (g.statLines&&g.statLines.length) ? '<details class="why"><summary style="color:var(--ledger-ink)">Ledger inputs</summary><ul>'+g.statLines.map(function(r){return '<li>'+esc(r)+'</li>';}).join('')+'</ul></details>' : '';
+    var checks = '';
+    if(sport==='nfl' || sport==='cfb'){
+      if(g.altTrendCheck) checks += '<details class="why"><summary>Trend check</summary><ul><li>'+esc(g.altTrendCheck)+'</li></ul></details>';
+      if(g.altBlowoutCheck) checks += '<details class="why"><summary>Blowout check</summary><ul><li>'+esc(g.altBlowoutCheck)+'</li></ul></details>';
+    }
     return '<article class="game">'
       + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
       + '<div class="lines">'+lineText(g)+'</div></div>'
       + '<div class="models">'+ledgerBadge(g)+altBadge(g)+'</div>'
-      + stat + reasons
+      + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
       + '</article>';
   }

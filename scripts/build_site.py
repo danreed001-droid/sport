@@ -22,6 +22,7 @@ SLATE_FIELDS = [
     "away", "home", "time", "awayPitcher", "homePitcher", "statLines",
     "pick", "confidence", "skipped", "skipReason",
     "altPick", "altConfidence", "altCategoryTally", "altReasons",
+    "altTrendCheck", "altBlowoutCheck",
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore",
 ]
