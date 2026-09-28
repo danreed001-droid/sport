@@ -14,22 +14,34 @@ Rules: a new date is always written; a graded (scored) database doc replaces
 the repo copy whenever they differ; an ungraded database doc never replaces a
 repo copy that's already graded (the ESPN scoring workflow may have graded it
 first).
+
+The daily research check leaves its findings for a sport in that doc's
+"auditReport" field (a Markdown section starting "## <Sport> (N games)").
+That field stays out of the slate file; the sections for a date are joined
+into data/audits/<date>.md instead.
 """
 import glob
 import json
 import os
 import sys
+from datetime import date
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import store  # noqa: E402
 
 COLLECTIONS = {"days": "mlb", "nfl": "nfl", "cfb": "cfb", "nba": "nba", "ncaab": "ncaab", "soccer": "soccer"}
+AUDIT_INTRO = (
+    "Fact-check of the day's slates. The research check has the final say: when a\n"
+    "wrong fact changes a pick, it's fixed in the ledger before first pitch/kickoff\n"
+    "and listed under **Changed**.\n"
+)
 
 
 def normalize(doc, sport):
     doc = dict(doc)
     doc.pop("id", None)
     doc.pop("version", None)
+    doc.pop("auditReport", None)
     if "games" not in doc and "matches" in doc:
         doc["games"] = doc.pop("matches")
     doc["sport"] = sport
@@ -52,17 +64,38 @@ def render(doc):
     return "\n".join(lines) + "\n"
 
 
+def write_audit(date_str, sections):
+    """Joins the research check's per-sport sections into data/audits/<date>.md.
+    Returns True when the file changed."""
+    d = date.fromisoformat(date_str)
+    title = f"# Research check — {d.strftime('%A, %b')} {d.day}, {d.year}\n"
+    body = title + "\n" + AUDIT_INTRO + "".join("\n" + sec.strip() + "\n" for sec in sections)
+    out = os.path.join(store.REPO_ROOT, "data", "audits", f"{date_str}.md")
+    if os.path.exists(out):
+        with open(out, encoding="utf-8") as f:
+            if f.read() == body:
+                return False
+    os.makedirs(os.path.dirname(out), exist_ok=True)
+    with open(out, "w", encoding="utf-8") as f:
+        f.write(body)
+    return True
+
+
 def main():
     if len(sys.argv) != 2:
         print(__doc__)
         sys.exit(2)
     export_dir = sys.argv[1]
     written = []
+    audits = {}
     for coll, sport in COLLECTIONS.items():
         for path in sorted(glob.glob(os.path.join(export_dir, coll, "*.json"))):
             with open(path, encoding="utf-8") as f:
-                doc = normalize(json.load(f), sport)
+                raw = json.load(f)
+            doc = normalize(raw, sport)
             date_str = doc.get("date") or os.path.splitext(os.path.basename(path))[0]
+            if isinstance(raw.get("auditReport"), str) and raw["auditReport"].strip():
+                audits.setdefault(date_str, []).append(raw["auditReport"])
             current = store.read_doc(sport, date_str)
             if current is not None:
                 if normalize(current, sport) == doc:
@@ -74,6 +107,9 @@ def main():
             with open(out, "w", encoding="utf-8") as f:
                 f.write(render(doc))
             written.append(f"{sport}/{date_str}{' (graded)' if doc.get('scored') else ''}")
+    for date_str, sections in sorted(audits.items()):
+        if write_audit(date_str, sections):
+            written.append(f"audits/{date_str}")
     if written:
         print("Updated: " + ", ".join(written))
     else:
