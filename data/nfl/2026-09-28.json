@@ -2,9 +2,58 @@
   "date": "2026-09-28",
   "weekday": "Monday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-09-28T12:41:37Z",
   "games": [
-    {"altBlowoutCheck":"N/A — neither team's most recent game was a 17+ point win (Bears lost 9-3 to MIN in Wk2; Eagles won by only 4 over TEN in Wk2). No swing applied.","altCategoryTally":"3-0 Eagles","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Eagles (Bears' +4.8 PD/g built almost entirely under Caleb Williams, not tonight's emergency starter Case Keenum, so discounted per WEIGHTED-RULE; Eagles' own +3.1 PD/g is unaffected by any QB change and is materially positive, carrying the category alone)","Injuries/Lineup: Eagles (Bears are starting Case Keenum, a 38-year-old third-stringer with no regular-season pass attempt since Dec 24 2023, after Caleb Williams (hamstring, Grade 2 strain, OUT) and Tyson Bagent (cleared concussion protocol but not chosen) were bypassed; single position (QB) affected so this stays a normal 1-vote category, not weighted x2)","Form: Eagles (Bears' 1-1 start, incl. a 59-37 Wk1 win, was produced entirely under Caleb Williams, not tonight's starter Keenum, so discounted per WEIGHTED-RULE; Eagles' 2-0 start under the same starter, Hurts, both season, is clearly strong and carries the category alone)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Bears prior game (Wk2 vs MIN, CBS Gametracker): 297 total net yds, 134 rush yds/31 att, 163 pass yds/35 att (4.66 YPA), lost 9-3 (-6) — no pattern matched. Eagles prior game (Wk2 at TEN, CBS Gametracker): 341 total net yds, 89 rush yds/32 att, 252 pass yds/37 att (6.81 YPA), won 24-20 (+4) — no pattern matched. Net trend-check swing: 0.","away":"Philadelphia Eagles","awayMoneyline":-201,"awayPDpg":3.09,"awayQB":"Jalen Hurts","awayQBRating":100.7,"awayScore":null,"awaySpread":-3.5,"awaySpreadOdds":-110,"awayYPP":5.27,"confidence":"skip","correct":null,"home":"Chicago Bears","homeMoneyline":166,"homePDpg":4.77,"homeQB":"Case Keenum","homeQBRating":null,"homeScore":null,"homeSpread":3.5,"homeSpreadOdds":-110,"homeYPP":6.06,"offGap":22.58,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g (blended) +3.1 vs +4.8","Yds/play 5.27 vs 6.06 · Bears rank 7th, Eagles 14th of 32 (23-pt off-gap)","QB rating 100.7 vs n/a (Hurts vs Keenum, emergency 3rd-string, no 2025-26 attempts)"],"time":"8:15 PM ET"}
-  ]
+    {
+      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a 17+ point win (Bears lost 9-3 to MIN in Wk2; Eagles won by only 4 over TEN in Wk2). No swing applied.",
+      "altCategoryTally": "3-0 Eagles",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Eagles (Bears' +4.8 PD/g built almost entirely under Caleb Williams, not tonight's emergency starter Case Keenum, so discounted per WEIGHTED-RULE; Eagles' own +3.1 PD/g is unaffected by any QB change and is materially positive, carrying the category alone)",
+        "Injuries/Lineup: Eagles (Bears are starting Case Keenum, a 38-year-old third-stringer with no regular-season pass attempt since Dec 24 2023, after Caleb Williams (hamstring, Grade 2 strain, OUT) and Tyson Bagent (cleared concussion protocol but not chosen) were bypassed; single position (QB) affected so this stays a normal 1-vote category, not weighted x2)",
+        "Form: Eagles (Bears' 1-1 start, incl. a 59-37 Wk1 win, was produced entirely under Caleb Williams, not tonight's starter Keenum, so discounted per WEIGHTED-RULE; Eagles' 2-0 start under the same starter, Hurts, both season, is clearly strong and carries the category alone)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "altTrendCheck": "Bears prior game (Wk2 vs MIN, CBS Gametracker): 297 total net yds, 134 rush yds/31 att, 163 pass yds/35 att (4.66 YPA), lost 9-3 (-6) \u2014 no pattern matched. Eagles prior game (Wk2 at TEN, CBS Gametracker): 341 total net yds, 89 rush yds/32 att, 252 pass yds/37 att (6.81 YPA), won 24-20 (+4) \u2014 no pattern matched. Net trend-check swing: 0.",
+      "away": "Philadelphia Eagles",
+      "awayMoneyline": -201,
+      "awayPDpg": 3.09,
+      "awayQB": "Jalen Hurts",
+      "awayQBRating": 100.7,
+      "awayScore": 7.0,
+      "awaySpread": -3.5,
+      "awaySpreadOdds": -110,
+      "awayYPP": 5.27,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Chicago Bears",
+      "homeMoneyline": 166,
+      "homePDpg": 4.77,
+      "homeQB": "Case Keenum",
+      "homeQBRating": null,
+      "homeScore": 27.0,
+      "homeSpread": 3.5,
+      "homeSpreadOdds": -110,
+      "homeYPP": 6.06,
+      "offGap": 22.58,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g (blended) +3.1 vs +4.8",
+        "Yds/play 5.27 vs 6.06 \u00b7 Bears rank 7th, Eagles 14th of 32 (23-pt off-gap)",
+        "QB rating 100.7 vs n/a (Hurts vs Keenum, emergency 3rd-string, no 2025-26 attempts)"
+      ],
+      "time": "8:15 PM ET"
+    }
+  ],
+  "scoredAt": "2026-09-29T18:20:42.523440+00:00"
 }
