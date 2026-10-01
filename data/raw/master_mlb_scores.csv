@@ -1,8 +1,9 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401907972,2026-09-30,9/30 - 2:00 PM EDT,Philadelphia Phillies,0,0.09,Atlanta Braves,0,0.72,-,-,2:00 PM
-401907897,2026-09-30,9/30 - 5:00 PM EDT,Chicago White Sox,0,0.35,Houston Astros,0,-0.2,-,-,5:00 PM
-401907963,2026-09-30,9/30 - 8:00 PM EDT,Boston Red Sox,0,0.48,New York Yankees,0,0.86,-,-,8:00 PM
-401907975,2026-09-30,9/30 - 10:00 PM EDT,Chicago Cubs,0,0.91,San Diego Padres,0,0.25,-,-,10:00 PM
+401907973,2026-10-01,10/1 - 8:00 PM EDT,Philadelphia Phillies,0,0.09,Atlanta Braves,0,0.72,-,-,8:00 PM
+401907972,2026-09-30,Final/10,Philadelphia Phillies,4,0.09,Atlanta Braves,3,0.72,-117,-103,2:00 PM
+401907897,2026-09-30,Final,Chicago White Sox,7,0.35,Houston Astros,3,-0.2,128,-154,5:00 PM
+401907963,2026-09-30,Final,Boston Red Sox,2,0.48,New York Yankees,9,0.86,113,-137,8:00 PM
+401907975,2026-09-30,Final,Chicago Cubs,1,0.91,San Diego Padres,4,0.25,123,-149,10:00 PM
 401907965,2026-09-29,Final,Philadelphia Phillies,3,0.09,Atlanta Braves,5,0.72,158,-192,2:00 PM
 401907896,2026-09-29,Final,Chicago White Sox,6,0.35,Houston Astros,3,-0.2,102,-123,5:00 PM
 401907924,2026-09-29,Final,Boston Red Sox,0,0.48,New York Yankees,9,0.86,109,-131,8:00 PM
