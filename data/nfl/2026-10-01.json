@@ -2,9 +2,58 @@
   "date": "2026-10-01",
   "weekday": "Thursday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-10-01T12:30:00Z",
   "games": [
-    {"altBlowoutCheck":"Neither team's most recent game was a 17+ point win (Steelers won by 3, Browns won by 3), so the blowout-win regression check does not apply to either team — no swing either way.","altCategoryTally":"4-0","altConfidence":"lean","altCorrect":null,"altCover":null,"altPick":"Pittsburgh Steelers","altReasons":["Scoring margin: Steelers (blended PD/g -0.87 vs Browns -5.78; no QB-change discount applies — Rodgers and Watson have each started all 3 of their team's games this season)","Injuries/Lineup: Steelers (weighted x2 — multi-starter cluster: Browns OL starters Elgton Jenkins (concussion, questionable) and Teven Jenkins (back, questionable) both banged up, plus CB Tyson Campbell (knee, questionable); Steelers' own concern is limited to one starter, CB Jalen Ramsey (wrist, questionable))","Matchup splits: Steelers (T.J. Watt/Alex Highsmith pass rush vs a Browns offensive line missing/limited at both starting guard spots)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Steelers prior game (Wk3 vs CIN, CBS box score): W 30-27, 411 total net yds, 23 rush att/138 yds, 34 pass att/273 yds (8.0 YPA, 7.21 YPP) — no pattern matched (win, not a loss, so Pattern A n/a; YPP too high for Pattern B; rush attempts under 34 for Patterns C/D). Browns prior game (Wk3 vs CAR, CBS box score): W 21-18, 259 total net yds, 30 rush att/132 yds, 31 pass att/127 yds (4.1 YPA, 4.25 YPP) — no pattern matched (win, not a loss; YPA too low for Pattern B; rush attempts/pass attempts both just under the Pattern C/D thresholds).","away":"Pittsburgh Steelers","awayMoneyline":-148,"awayPDpg":-0.87,"awayQB":"Aaron Rodgers","awayQBRating":81,"awayScore":null,"awaySpread":-2.5,"awaySpreadOdds":-110,"awayYPP":4.79,"confidence":"skip","correct":null,"home":"Cleveland Browns","homeMoneyline":125,"homePDpg":-5.78,"homeQB":"Deshaun Watson","homeQBRating":104.1,"homeScore":null,"homeSpread":2.5,"homeSpreadOdds":-110,"homeYPP":5.02,"offGap":9.68,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g -0.9 vs -5.8 (blended 50/50 2026/2025)","Yds/play 4.79 vs 5.02 · 9.7-pt percentile gap (off-gap skip)","QB rating 81.0 vs 104.1 (Rodgers vs Watson, both full-season starters)"],"time":"8:15 PM ET"}
-  ]
+    {
+      "altBlowoutCheck": "Neither team's most recent game was a 17+ point win (Steelers won by 3, Browns won by 3), so the blowout-win regression check does not apply to either team \u2014 no swing either way.",
+      "altCategoryTally": "4-0",
+      "altConfidence": "lean",
+      "altCorrect": false,
+      "altCover": false,
+      "altPick": "Pittsburgh Steelers",
+      "altReasons": [
+        "Scoring margin: Steelers (blended PD/g -0.87 vs Browns -5.78; no QB-change discount applies \u2014 Rodgers and Watson have each started all 3 of their team's games this season)",
+        "Injuries/Lineup: Steelers (weighted x2 \u2014 multi-starter cluster: Browns OL starters Elgton Jenkins (concussion, questionable) and Teven Jenkins (back, questionable) both banged up, plus CB Tyson Campbell (knee, questionable); Steelers' own concern is limited to one starter, CB Jalen Ramsey (wrist, questionable))",
+        "Matchup splits: Steelers (T.J. Watt/Alex Highsmith pass rush vs a Browns offensive line missing/limited at both starting guard spots)"
+      ],
+      "altReturn": -100.0,
+      "altSpreadReturn": -100.0,
+      "altTrendCheck": "Steelers prior game (Wk3 vs CIN, CBS box score): W 30-27, 411 total net yds, 23 rush att/138 yds, 34 pass att/273 yds (8.0 YPA, 7.21 YPP) \u2014 no pattern matched (win, not a loss, so Pattern A n/a; YPP too high for Pattern B; rush attempts under 34 for Patterns C/D). Browns prior game (Wk3 vs CAR, CBS box score): W 21-18, 259 total net yds, 30 rush att/132 yds, 31 pass att/127 yds (4.1 YPA, 4.25 YPP) \u2014 no pattern matched (win, not a loss; YPA too low for Pattern B; rush attempts/pass attempts both just under the Pattern C/D thresholds).",
+      "away": "Pittsburgh Steelers",
+      "awayMoneyline": -148,
+      "awayPDpg": -0.87,
+      "awayQB": "Aaron Rodgers",
+      "awayQBRating": 81,
+      "awayScore": 24.0,
+      "awaySpread": -2.5,
+      "awaySpreadOdds": -110,
+      "awayYPP": 4.79,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Cleveland Browns",
+      "homeMoneyline": 125,
+      "homePDpg": -5.78,
+      "homeQB": "Deshaun Watson",
+      "homeQBRating": 104.1,
+      "homeScore": 27.0,
+      "homeSpread": 2.5,
+      "homeSpreadOdds": -110,
+      "homeYPP": 5.02,
+      "offGap": 9.68,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g -0.9 vs -5.8 (blended 50/50 2026/2025)",
+        "Yds/play 4.79 vs 5.02 \u00b7 9.7-pt percentile gap (off-gap skip)",
+        "QB rating 81.0 vs 104.1 (Rodgers vs Watson, both full-season starters)"
+      ],
+      "time": "8:15 PM ET"
+    }
+  ],
+  "scoredAt": "2026-10-02T18:05:07.855216+00:00"
 }
