@@ -10,6 +10,9 @@ name: Diamond Ledger (scoring)
 on:
   schedule:
     - cron: "0 13 * * *"  # ~9am ET (13:00 UTC; adjust +/-1h across DST if it matters to you)
+    # Backup: GitHub often starts scheduled runs hours late. Re-running is
+    # harmless — only slates still unscored get graded.
+    - cron: "0 17 * * *"  # ~1pm ET
   workflow_dispatch:
     inputs:
       sports:
