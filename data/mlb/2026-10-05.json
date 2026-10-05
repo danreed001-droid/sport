@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-05",
+  "weekday": "Monday",
+  "sport": "mlb",
+  "scored": false,
+  "generatedAt": "2026-10-05T15:03:11Z",
+  "games": [
+    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: White Sox +56 season run diff vs Guardians +11 (gap of 45, clears the 15-run threshold) favors White Sox","Form: White Sox hotter over last 10 games (.453 SLG, 16 HR) vs Guardians (.260 AVG, 15 HR) favors White Sox"],"altReturn":null,"altSpreadReturn":null,"away":"Chicago White Sox","awayERA":4.44,"awayMoneyline":130,"awayOPS":0.726,"awayOppOPS":null,"awayPitcher":"Anthony Kay","awayRD":56,"awayScore":null,"awaySpread":1.5,"awaySpreadOdds":-180,"awayWHIP":1.37,"confidence":"skip","correct":null,"home":"Cleveland Guardians","homeERA":3.56,"homeMoneyline":-157,"homeOPS":0.696,"homeOppOPS":null,"homePitcher":"Gavin Williams","homeRD":11,"homeScore":null,"homeSpread":-1.5,"homeSpreadOdds":148,"homeWHIP":1.04,"opsGap":55.17,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"whip-veto","skipped":true,"time":"5:00 PM ET"},
+    {"altCategoryTally":"2-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Yankees +138 season run diff vs Rays +86 (gap of 52, clears the 15-run threshold) favors Yankees","Injuries/Lineup (weighted x2 -- multi-player cluster): Yankees missing Aaron Judge (10-day IL, leg) and Clarke Schmidt (15-day IL, biceps) favors Rays","Form: Yankees hotter over last 10 games (14 HR, .246 AVG, Ben Rice .324/4 HR, Austin Wells .615 SLG) vs Rays (8 HR, .228 AVG) favors Yankees"],"altReturn":null,"altSpreadReturn":null,"away":"New York Yankees","awayERA":1.95,"awayMoneyline":-126,"awayOPS":0.72,"awayOppOPS":null,"awayPitcher":"Cam Schlittler","awayRD":138,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":-176,"awayWHIP":0.92,"confidence":"skip","correct":null,"home":"Tampa Bay Rays","homeERA":5.11,"homeMoneyline":108,"homeOPS":0.728,"homeOppOPS":null,"homePitcher":"Freddy Peralta","homeRD":86,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":146,"homeWHIP":1.41,"opsGap":20.69,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"ops-gap","skipped":true,"time":"8:00 PM ET"}
+  ]
+}
