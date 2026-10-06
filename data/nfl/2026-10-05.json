@@ -2,9 +2,62 @@
   "date": "2026-10-05",
   "weekday": "Monday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-10-05T12:58:37Z",
   "games": [
-    {"altBlowoutCheck":"Falcons off a 35-14 (+21) win over Green Bay - takeaway margin roughly even (1 forced, 1 allowed, not +2 or more), led only 17-7 at half (not within one score before pulling away), 41 rush attempts (run-heavy win, hit), Falcons are the underdog tonight not a 3+ pt favorite, and Falcons carry a turnover-prone history this season (worst giveaway margin in the NFL - 2 INT by Cooper Rush in Wk1 including a pick-six, 2 more INT by Rush in Wk2, 1 INT by Penix in Wk3); Saints' defense ranks only middling (7th-worst down-conversion rate allowed, 8th-worst points/drive allowed, ~5.3 YPP allowed) so it doesn't clear the 'takes it away' bar - 2 of 5 conditions hit, regression flag OFF: no swing.","altCategoryTally":"3-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: neutral (Falcons' -5.7 PD/g this season was built mostly under Cooper Rush, who started Weeks 1-2; tonight's starter Penix has made only 1 start this season (Wk3 vs GB); Saints' own -0.7 PD/g isn't independently strong enough to carry the category alone)","Rest: Saints (Falcons are on a short week, having played Thursday 10/1 just 4 days before this Monday game; Saints had a standard Sunday-to-Monday turnaround)","Injuries/Lineup (weighted x2 - multi-starter cluster): Falcons (Saints are missing 3 front-seven starters at the EDGE/pass-rush spot or near it - Carl Granderson (ankle, OUT), Anfernee Jennings (knee, OUT), Kaden Elliss (calf, OUT), with Pete Werner also questionable; this group accounts for the bulk of Saints' linebacker/edge snaps)","Form: neutral (Falcons' 1-2 record over the last 3 games reflects 2 Cooper Rush starts and only 1 Penix start, so it doesn't carry for tonight's starter; Saints' own 1-2 record over the same stretch isn't clearly strong enough to carry the category alone)","Market: Saints (spread has moved from Saints -1.5 to Saints -2.5 this week per CBS Sports, market buying further into the favorite)","Matchup splits: Falcons (Falcons' run defense allows an NFL-best 47.7 rush yds/game; Saints' ground game already ranks 21st at 3.8 YPC and lead back Travis Etienne is dealing with a hamstring injury)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Falcons prior game (Wk3 @ GB, CBS box score): won 35-14, 498 total net yds, 41 rush att/242 yds, 25 pass att/256 yds (10.2 YPA), YPP 7.55 - no pattern matched. Saints prior game (Wk3 vs LV, CBS box score): lost 27-35, 381 total net yds, 28 rush att/148 yds, 42 pass att/233 yds (5.55 YPA) - no pattern matched (closest miss: rush/pass ratio 0.67 satisfies Pattern C's ratio test but 28 rush attempts falls short of the 34-attempt threshold).","away":"Atlanta Falcons","awayMoneyline":110,"awayPDpg":-4.24,"awayQB":"Michael Penix Jr.","awayQBRating":95,"awayScore":null,"awaySpread":1.5,"awaySpreadOdds":-105,"awayYPP":5.6,"confidence":"skip","correct":null,"home":"New Orleans Saints","homeMoneyline":-130,"homePDpg":-2.6,"homeQB":"Tyler Shough","homeQBRating":99.2,"homeScore":null,"homeSpread":-1.5,"homeSpreadOdds":-115,"homeYPP":5.4,"offGap":19.4,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g -4.2 vs -2.6 (0.5x2026 + 0.5x2025 blend)","Yds/play 5.6 vs 5.4 (season per-play from CBS box scores) · ~19-pt off-gap","QB rating 95.0 vs 99.2 (Penix, blended 2026/2025, 1 start this season vs Shough, 2026 only, 3 starts)","Saints missing 3 EDGE/LB starters (Granderson, Jennings, Elliss); Falcons on short week (played Thu 10/1)"],"time":"8:15 PM ET"}
-  ]
+    {
+      "altBlowoutCheck": "Falcons off a 35-14 (+21) win over Green Bay - takeaway margin roughly even (1 forced, 1 allowed, not +2 or more), led only 17-7 at half (not within one score before pulling away), 41 rush attempts (run-heavy win, hit), Falcons are the underdog tonight not a 3+ pt favorite, and Falcons carry a turnover-prone history this season (worst giveaway margin in the NFL - 2 INT by Cooper Rush in Wk1 including a pick-six, 2 more INT by Rush in Wk2, 1 INT by Penix in Wk3); Saints' defense ranks only middling (7th-worst down-conversion rate allowed, 8th-worst points/drive allowed, ~5.3 YPP allowed) so it doesn't clear the 'takes it away' bar - 2 of 5 conditions hit, regression flag OFF: no swing.",
+      "altCategoryTally": "3-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: neutral (Falcons' -5.7 PD/g this season was built mostly under Cooper Rush, who started Weeks 1-2; tonight's starter Penix has made only 1 start this season (Wk3 vs GB); Saints' own -0.7 PD/g isn't independently strong enough to carry the category alone)",
+        "Rest: Saints (Falcons are on a short week, having played Thursday 10/1 just 4 days before this Monday game; Saints had a standard Sunday-to-Monday turnaround)",
+        "Injuries/Lineup (weighted x2 - multi-starter cluster): Falcons (Saints are missing 3 front-seven starters at the EDGE/pass-rush spot or near it - Carl Granderson (ankle, OUT), Anfernee Jennings (knee, OUT), Kaden Elliss (calf, OUT), with Pete Werner also questionable; this group accounts for the bulk of Saints' linebacker/edge snaps)",
+        "Form: neutral (Falcons' 1-2 record over the last 3 games reflects 2 Cooper Rush starts and only 1 Penix start, so it doesn't carry for tonight's starter; Saints' own 1-2 record over the same stretch isn't clearly strong enough to carry the category alone)",
+        "Market: Saints (spread has moved from Saints -1.5 to Saints -2.5 this week per CBS Sports, market buying further into the favorite)",
+        "Matchup splits: Falcons (Falcons' run defense allows an NFL-best 47.7 rush yds/game; Saints' ground game already ranks 21st at 3.8 YPC and lead back Travis Etienne is dealing with a hamstring injury)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "altTrendCheck": "Falcons prior game (Wk3 @ GB, CBS box score): won 35-14, 498 total net yds, 41 rush att/242 yds, 25 pass att/256 yds (10.2 YPA), YPP 7.55 - no pattern matched. Saints prior game (Wk3 vs LV, CBS box score): lost 27-35, 381 total net yds, 28 rush att/148 yds, 42 pass att/233 yds (5.55 YPA) - no pattern matched (closest miss: rush/pass ratio 0.67 satisfies Pattern C's ratio test but 28 rush attempts falls short of the 34-attempt threshold).",
+      "away": "Atlanta Falcons",
+      "awayMoneyline": 110,
+      "awayPDpg": -4.24,
+      "awayQB": "Michael Penix Jr.",
+      "awayQBRating": 95,
+      "awayScore": 45.0,
+      "awaySpread": 1.5,
+      "awaySpreadOdds": -105,
+      "awayYPP": 5.6,
+      "confidence": "skip",
+      "correct": null,
+      "home": "New Orleans Saints",
+      "homeMoneyline": -130,
+      "homePDpg": -2.6,
+      "homeQB": "Tyler Shough",
+      "homeQBRating": 99.2,
+      "homeScore": 24.0,
+      "homeSpread": -1.5,
+      "homeSpreadOdds": -115,
+      "homeYPP": 5.4,
+      "offGap": 19.4,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g -4.2 vs -2.6 (0.5x2026 + 0.5x2025 blend)",
+        "Yds/play 5.6 vs 5.4 (season per-play from CBS box scores) \u00b7 ~19-pt off-gap",
+        "QB rating 95.0 vs 99.2 (Penix, blended 2026/2025, 1 start this season vs Shough, 2026 only, 3 starts)",
+        "Saints missing 3 EDGE/LB starters (Granderson, Jennings, Elliss); Falcons on short week (played Thu 10/1)"
+      ],
+      "time": "8:15 PM ET"
+    }
+  ],
+  "scoredAt": "2026-10-06T18:39:49.294395+00:00"
 }
