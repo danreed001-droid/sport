@@ -12,7 +12,7 @@
   "auditedAt": "2026-10-04T15:48:40Z",
   "games": [
     {
-      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (Colts won by 2, Commanders won by 2).",
+      "altBlowoutCheck": "N/A — neither team's most recent game was a win by 17+ (Colts won by 2, Commanders won by 2).",
       "altCategoryTally": "3-1",
       "altConfidence": "pass",
       "altCorrect": null,
@@ -20,14 +20,14 @@
       "altPick": null,
       "altReasons": [
         "Scoring margin: neutral (Commanders' -5.6 PD/g built mostly under Jayden Daniels, not tonight's starter Mariota; Colts' own -1.6 PD/g isn't independently strong enough to carry the category alone)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Colts): Commanders QB Jayden Daniels out (elbow) + WR1 Terry McLaurin out per CBS tiebreaker (NFL.com listed him questionable)",
-        "Form: neutral (Commanders' 1-2 record mixes 2 Daniels starts and 1 Mariota start \u2014 not reliably built under tonight's starter; Colts' own 1-2 record isn't strong enough to carry the category alone)",
+        "Injuries/Lineup (weighted x2 — favors Colts): Commanders QB Jayden Daniels out (elbow) + WR1 Terry McLaurin out per CBS tiebreaker (NFL.com listed him questionable)",
+        "Form: neutral (Commanders' 1-2 record mixes 2 Daniels starts and 1 Mariota start — not reliably built under tonight's starter; Colts' own 1-2 record isn't strong enough to carry the category alone)",
         "Market: favors Commanders (line moved from Colts -4.5 to -3.5 toward Washington)",
         "Matchup splits: favors Colts (Colts' run game vs Washington's bottom-2 scoring defense; Colts D ranks worst in the league but Washington offense also banged up)"
       ],
       "altReturn": null,
       "altSpreadReturn": null,
-      "altTrendCheck": "Colts prior game (Wk3 vs HOU, W 19-17): 300 total yds, 36 pass att (6.53 YPA), 31 rush att \u2014 no pattern matched. Commanders prior game (Wk3 vs SEA, W 33-31): 258 total yds, 31 pass att (5.90 YPA), 32 rush att \u2014 no pattern matched.",
+      "altTrendCheck": "Colts prior game (Wk3 vs HOU, W 19-17): 300 total yds, 36 pass att (6.53 YPA), 31 rush att — no pattern matched. Commanders prior game (Wk3 vs SEA, W 33-31): 258 total yds, 31 pass att (5.90 YPA), 32 rush att — no pattern matched.",
       "away": "Indianapolis Colts",
       "awayMoneyline": -180,
       "awayPDpg": -1.575,
@@ -57,13 +57,23 @@
       "skipped": true,
       "statLines": [
         "PD/g -1.6 vs -5.6",
-        "Yds/play 4.71 vs 4.73 \u00b7 3.2-pt gap",
+        "Yds/play 4.71 vs 4.73 · 3.2-pt gap",
         "QB rating 80.8 vs 97.9 (Jones vs Mariota, blended)"
       ],
-      "time": "9:30 AM ET"
+      "time": "9:30 AM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (Ravens won by 3, Titans lost).",
+      "altBlowoutCheck": "N/A — neither team's most recent game was a win by 17+ (Ravens won by 3, Titans lost).",
       "altCategoryTally": "5-2",
       "altConfidence": "pass",
       "altCorrect": null,
@@ -71,7 +81,7 @@
       "altPick": null,
       "altReasons": [
         "Scoring margin: favors Ravens (+3.1 PD/g vs Titans' -9.4, both under their season-long starters)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Titans): Ravens missing edge rusher Trey Hendrickson (finger procedure) plus LT Ronnie Stanley and WR1 Zay Flowers both questionable \u2014 a 3-position cluster; Titans' own issue is limited to interior OL depth",
+        "Injuries/Lineup (weighted x2 — favors Titans): Ravens missing edge rusher Trey Hendrickson (finger procedure) plus LT Ronnie Stanley and WR1 Zay Flowers both questionable — a 3-position cluster; Titans' own issue is limited to interior OL depth",
         "Form: favors Ravens (2-1 vs 0-3, both under their current starters all season)",
         "Motivation/Spot: favors Ravens (playoff-caliber team at home vs. winless Titans)",
         "Weather/Venue: favors Ravens (rain/wet conditions at M&T Bank Stadium likely to suppress Tennessee's already-struggling pass game more than Baltimore's run-heavy attack)",
@@ -79,7 +89,7 @@
       ],
       "altReturn": null,
       "altSpreadReturn": null,
-      "altTrendCheck": "Titans prior game (Wk3 @ NYG, L 7-12): 262 total yds, 36 pass att (5.03 YPA), 21 rush att \u2014 no pattern matched. Ravens prior game (Wk3 @ DAL, W 34-31): 378 total yds, 20 pass att (9.30 YPA), 38 rush att, overall YPP 6.52 \u2014 no pattern matched (elite YPA but overall YPP exceeds the 5.15 threshold).",
+      "altTrendCheck": "Titans prior game (Wk3 @ NYG, L 7-12): 262 total yds, 36 pass att (5.03 YPA), 21 rush att — no pattern matched. Ravens prior game (Wk3 @ DAL, W 34-31): 378 total yds, 20 pass att (9.30 YPA), 38 rush att, overall YPP 6.52 — no pattern matched (elite YPA but overall YPP exceeds the 5.15 threshold).",
       "away": "Tennessee Titans",
       "awayMoneyline": 525,
       "awayPDpg": -9.37,
@@ -107,13 +117,23 @@
       "pickSpreadReturn": -100.0,
       "statLines": [
         "PD/g -9.4 vs +3.1",
-        "Yds/play 4.76 vs 6.72 \u00b7 77-pt gap",
+        "Yds/play 4.76 vs 6.72 · 77-pt gap",
         "QB rating 80.9 vs 113.1 (Ward vs Jackson)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (Bills won by 8, Patriots lost).",
+      "altBlowoutCheck": "N/A — neither team's most recent game was a win by 17+ (Bills won by 8, Patriots lost).",
       "altCategoryTally": "6-1",
       "altConfidence": "strong",
       "altCorrect": false,
@@ -121,7 +141,7 @@
       "altPick": "Buffalo Bills",
       "altReasons": [
         "Scoring margin: favors Bills (+7.2 PD/g vs Patriots' +2.5, both under season-long starters)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Bills): Patriots missing CB1 Christian Gonzalez (shoulder) and top interior rusher Christian Barmore (shoulder), both out; Bills' CB1 Christian Benford is only questionable",
+        "Injuries/Lineup (weighted x2 — favors Bills): Patriots missing CB1 Christian Gonzalez (shoulder) and top interior rusher Christian Barmore (shoulder), both out; Bills' CB1 Christian Benford is only questionable",
         "Form: favors Bills (3-0 vs 1-2, both under season-long starters)",
         "Motivation/Spot: favors Bills (AFC East rival controlling its own destiny at 3-0 vs. 1-2 Patriots)",
         "Market: favors Bills (line moved from -6.5 to -7 with heavy public/money backing Buffalo)",
@@ -129,7 +149,7 @@
       ],
       "altReturn": -100.0,
       "altSpreadReturn": -100.0,
-      "altTrendCheck": "Patriots prior game (Wk3 @ JAX, L 6-35): 317 total yds, 31 pass att (7.55 YPA), 26 rush att, overall YPP 5.56 \u2014 no pattern matched (narrowly cleared the YPA bar but overall YPP exceeds 5.15). Bills prior game (Wk3 vs LAC, W 24-16): 350 total yds, 26 pass att (6.69 YPA), 33 rush att \u2014 no pattern matched.",
+      "altTrendCheck": "Patriots prior game (Wk3 @ JAX, L 6-35): 317 total yds, 31 pass att (7.55 YPA), 26 rush att, overall YPP 5.56 — no pattern matched (narrowly cleared the YPA bar but overall YPP exceeds 5.15). Bills prior game (Wk3 vs LAC, W 24-16): 350 total yds, 26 pass att (6.69 YPA), 33 rush att — no pattern matched.",
       "away": "New England Patriots",
       "awayMoneyline": 240,
       "awayPDpg": 2.5,
@@ -157,13 +177,23 @@
       "pickSpreadReturn": -100.0,
       "statLines": [
         "PD/g +2.5 vs +7.2",
-        "Yds/play 5.12 vs 6.55 \u00b7 48-pt gap",
+        "Yds/play 5.12 vs 6.55 · 48-pt gap",
         "QB rating 58.6 vs 104.1 (Maye vs Allen)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "Bears off a 27-7 win over PHI (Wk3): +3 takeaway margin, only a 10-7 (one-score) lead at half before pulling away, 35 rush attempts, favored -3.5 vs the Jets today, and the Jets rank top-5 in the NFL in pass defense (3rd-fewest pass yards allowed) \u2014 4 of 5 conditions hit, regression flag ON: +6 to the Jets.",
+      "altBlowoutCheck": "Bears off a 27-7 win over PHI (Wk3): +3 takeaway margin, only a 10-7 (one-score) lead at half before pulling away, 35 rush attempts, favored -3.5 vs the Jets today, and the Jets rank top-5 in the NFL in pass defense (3rd-fewest pass yards allowed) — 4 of 5 conditions hit, regression flag ON: +6 to the Jets.",
       "altCategoryTally": "10-1",
       "altConfidence": "strong",
       "altCorrect": false,
@@ -172,14 +202,14 @@
       "altReasons": [
         "Scoring margin: neutral (Bears' +6.8 PD/g was built mostly under Caleb Williams/Case Keenum, not tonight's first-time starter Bagent; Jets' own -5.5 PD/g isn't independently strong enough to carry the category alone)",
         "Rest: favors Jets (Bears played a Monday-night game, a short 6-day turnaround, vs. Jets' normal 7-day rest)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Jets): Bears missing starting QB Caleb Williams (hamstring) and starting LT Braxton Jones (IR)",
+        "Injuries/Lineup (weighted x2 — favors Jets): Bears missing starting QB Caleb Williams (hamstring) and starting LT Braxton Jones (IR)",
         "Form: neutral (Bears' 2-1 record was built under Williams/Keenum, not tonight's starter Bagent; Jets' own 1-2 record isn't strong enough to carry the category alone)",
         "Weather/Venue: favors Bears (wind at Soldier Field mildly hampers deep passing, favoring Chicago's run-heavy approach)",
         "Matchup splits: favors Jets (NFL's 2nd-fewest total yards/3rd-fewest pass yards allowed defense against a backup-QB-led Bears passing game)"
       ],
       "altReturn": -100.0,
       "altSpreadReturn": -100.0,
-      "altTrendCheck": "Jets prior game (Wk3 @ DET, L 24-31): 335 total yds, 37 pass att (7.49 YPA), 19 rush att \u2014 no pattern matched (narrowly missed the Pattern-B YPA threshold). Bears prior game (Wk3 vs PHI, W 27-7): 375 total yds, 34 pass att (7.26 YPA), 35 rush att \u2014 no pattern matched (narrowly missed Pattern C: rush/pass ratio 1.03 vs required \u22641.0).",
+      "altTrendCheck": "Jets prior game (Wk3 @ DET, L 24-31): 335 total yds, 37 pass att (7.49 YPA), 19 rush att — no pattern matched (narrowly missed the Pattern-B YPA threshold). Bears prior game (Wk3 vs PHI, W 27-7): 375 total yds, 34 pass att (7.26 YPA), 35 rush att — no pattern matched (narrowly missed Pattern C: rush/pass ratio 1.03 vs required ≤1.0).",
       "away": "New York Jets",
       "awayMoneyline": 142,
       "awayPDpg": -5.47,
@@ -209,13 +239,23 @@
       "skipped": true,
       "statLines": [
         "PD/g -5.5 vs +6.8",
-        "Yds/play 5.04 vs 5.86 \u00b7 42-pt gap",
-        "QB rating 110.0 vs 113.5 (Smith vs Bagent, Bagent on 2025 rating \u2014 0 starts in 2026 entering today)"
+        "Yds/play 5.04 vs 5.86 · 42-pt gap",
+        "QB rating 110.0 vs 113.5 (Smith vs Bagent, Bagent on 2025 rating — 0 starts in 2026 entering today)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altBlowoutFavors": "New York Jets",
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": false,
+      "altBlowoutReturn": -100.0,
+      "altBlowoutCover": false,
+      "altBlowoutSpreadReturn": -100.0
     },
     {
-      "altBlowoutCheck": "Jaguars off a 35-6 win over NE (Wk3): takeaway margin +2-3 (source inconsistent) but only an 11-point lead at half (not within one score), Jaguars are underdogs (+2.5) today so the market hasn't bought in, only 30 rush attempts in the blowout (below the 33 threshold), and no turnover-prone history found for Lawrence \u2014 only 2 of 5 conditions hit, regression flag OFF.",
+      "altBlowoutCheck": "Jaguars off a 35-6 win over NE (Wk3): takeaway margin +2-3 (source inconsistent) but only an 11-point lead at half (not within one score), Jaguars are underdogs (+2.5) today so the market hasn't bought in, only 30 rush attempts in the blowout (below the 33 threshold), and no turnover-prone history found for Lawrence — only 2 of 5 conditions hit, regression flag OFF.",
       "altCategoryTally": "3-0",
       "altConfidence": "pass",
       "altCorrect": null,
@@ -228,7 +268,7 @@
       ],
       "altReturn": null,
       "altSpreadReturn": null,
-      "altTrendCheck": "Bengals prior game (Wk3 @ PIT, L 27-30): 352 total yds, 37 pass att (7.27 YPA), 18 rush att \u2014 no pattern matched. Jaguars prior game (Wk3 vs NE, W 35-6): 315 total yds, 29 pass att (6.14 YPA), 30 rush att \u2014 no pattern matched (narrowly missed Pattern C: ratio 1.03).",
+      "altTrendCheck": "Bengals prior game (Wk3 @ PIT, L 27-30): 352 total yds, 37 pass att (7.27 YPA), 18 rush att — no pattern matched. Jaguars prior game (Wk3 vs NE, W 35-6): 315 total yds, 29 pass att (6.14 YPA), 30 rush att — no pattern matched (narrowly missed Pattern C: ratio 1.03).",
       "away": "Jacksonville Jaguars",
       "awayMoneyline": 120,
       "awayPDpg": 11.725,
@@ -258,27 +298,37 @@
       "skipped": true,
       "statLines": [
         "PD/g +11.7 vs +0.5",
-        "Yds/play 5.51 vs 5.45 \u00b7 3.2-pt gap",
+        "Yds/play 5.51 vs 5.45 · 3.2-pt gap",
         "QB rating 107.8 vs 106.6 (Lawrence vs Burrow)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 both teams lost their most recent game.",
+      "altBlowoutCheck": "N/A — both teams lost their most recent game.",
       "altCategoryTally": "2-1",
       "altConfidence": "pass",
       "altCorrect": null,
       "altCover": null,
       "altPick": null,
       "altReasons": [
-        "Scoring margin: neutral (Cowboys -0.2 PD/g vs Texans -0.3 PD/g \u2014 essentially even, no clear signal)",
+        "Scoring margin: neutral (Cowboys -0.2 PD/g vs Texans -0.3 PD/g — essentially even, no clear signal)",
         "Travel: favors Texans (Cowboys played an international game in Rio de Janeiro last week, a mild residual travel/schedule disruption; Texans are at home with no travel)",
         "Motivation/Spot: favors Cowboys (0-3 Texans carrying a desperation/pressure narrative vs. a more stable 1-2 Cowboys team)",
         "Form: favors Cowboys (1-2 vs 0-3, both under season-long starters)"
       ],
       "altReturn": null,
       "altSpreadReturn": null,
-      "altTrendCheck": "Cowboys prior game (Wk3 vs BAL in Rio, L 31-34): 415 total yds, 40 pass att, 30 rush att \u2014 no pattern matched (narrowly missed Pattern D's 41-attempt threshold and Pattern C's 34-rush threshold). Texans prior game (Wk3 @ IND, L 17-19): 223 total yds, 27 pass att, 21 rush att \u2014 no pattern matched.",
+      "altTrendCheck": "Cowboys prior game (Wk3 vs BAL in Rio, L 31-34): 415 total yds, 40 pass att, 30 rush att — no pattern matched (narrowly missed Pattern D's 41-attempt threshold and Pattern C's 34-rush threshold). Texans prior game (Wk3 @ IND, L 17-19): 223 total yds, 27 pass att, 21 rush att — no pattern matched.",
       "away": "Dallas Cowboys",
       "awayMoneyline": 120,
       "awayPDpg": -0.175,
@@ -306,13 +356,23 @@
       "pickSpreadReturn": 90.91,
       "statLines": [
         "PD/g -0.2 vs -0.3",
-        "Yds/play 5.60 vs 4.84 \u00b7 52-pt gap",
+        "Yds/play 5.60 vs 4.84 · 52-pt gap",
         "QB rating 107.2 vs 88.0 (Prescott vs Stroud)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (Giants won by 5, Cardinals lost).",
+      "altBlowoutCheck": "N/A — neither team's most recent game was a win by 17+ (Giants won by 5, Cardinals lost).",
       "altCategoryTally": "4-0",
       "altConfidence": "lean",
       "altCorrect": false,
@@ -320,13 +380,13 @@
       "altPick": "Arizona Cardinals",
       "altReasons": [
         "Scoring margin: neutral (Giants' -3.2 PD/g was built with rookie Jaxson Dart under center for much of it before his season-ending knee injury; tonight's starter Winston doesn't carry that signal, and Cardinals' own -6.9 PD/g isn't independently strong enough to carry the category alone)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Cardinals): Giants lost starting QB Jaxson Dart for the season (knee) and starting edge/LB Brian Burns (torn ACL); Cardinals' own loss (CB1 Will Johnson, season-ending) is a single flagged position by comparison",
+        "Injuries/Lineup (weighted x2 — favors Cardinals): Giants lost starting QB Jaxson Dart for the season (knee) and starting edge/LB Brian Burns (torn ACL); Cardinals' own loss (CB1 Will Johnson, season-ending) is a single flagged position by comparison",
         "Market: favors Cardinals (line moved from Cardinals getting points to Cardinals favored, a news-driven shift after Dart's injury)",
         "Matchup splits: favors Cardinals (Arizona's offense ranks top-half vs. a Giants defense further weakened by the Burns loss)"
       ],
       "altReturn": -100.0,
       "altSpreadReturn": -100.0,
-      "altTrendCheck": "Cardinals prior game (Wk3 vs SF, L 30-36): 365 total yds, 52 pass att, 27 rush att \u2014 no pattern matched (high pass volume but rush attempts below the 34 threshold for Pattern D). Giants prior game (Wk3 vs TEN, W 12-7): 238 total yds, 22 pass att, 33 rush att \u2014 no pattern matched.",
+      "altTrendCheck": "Cardinals prior game (Wk3 vs SF, L 30-36): 365 total yds, 52 pass att, 27 rush att — no pattern matched (high pass volume but rush attempts below the 34 threshold for Pattern D). Giants prior game (Wk3 vs TEN, W 12-7): 238 total yds, 22 pass att, 33 rush att — no pattern matched.",
       "away": "Arizona Cardinals",
       "awayMoneyline": -115,
       "awayPDpg": -6.91,
@@ -356,13 +416,23 @@
       "skipped": true,
       "statLines": [
         "PD/g -6.9 vs -3.2",
-        "Yds/play 4.55 vs 4.50 \u00b7 3.2-pt gap",
+        "Yds/play 4.55 vs 4.50 · 3.2-pt gap",
         "QB rating 91.5 vs 55.6 (Brissett vs Winston, Winston's own 2026 rating)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 both teams lost their most recent game.",
+      "altBlowoutCheck": "N/A — both teams lost their most recent game.",
       "altCategoryTally": "6-1",
       "altConfidence": "strong",
       "altCorrect": true,
@@ -371,14 +441,14 @@
       "altReasons": [
         "Scoring margin: favors Rams (+4.7 PD/g vs Eagles' -0.7, both under season-long starters)",
         "Rest: favors Rams (Eagles played a Monday-night game, a short 6-day turnaround, vs. Rams' normal 7-day rest)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Rams): Eagles missing both starting WRs (DeVonta Smith, Marquise Brown), TE Dallas Goedert, starting LB Zack Baun, starting S Marcus Epps and OT Fred Johnson (all out) \u2014 a severe multi-position cluster",
+        "Injuries/Lineup (weighted x2 — favors Rams): Eagles missing both starting WRs (DeVonta Smith, Marquise Brown), TE Dallas Goedert, starting LB Zack Baun, starting S Marcus Epps and OT Fred Johnson (all out) — a severe multi-position cluster",
         "Motivation/Spot: favors Eagles (home after a primetime loss, historically dominant in this series)",
         "Market: favors Rams (line moved from -2.5 to -3.5 toward LA after results elsewhere, with heavy money on the Rams)",
         "Matchup splits: favors Rams (Eagles' top-2 receivers out against a Rams secondary, while Hurts is coming off his worst game of the season)"
       ],
       "altReturn": 64.52,
       "altSpreadReturn": 90.91,
-      "altTrendCheck": "Rams prior game (Wk3 @ DEN, L 26-30): 482 total yds, 55 pass att, 23 rush att \u2014 no pattern matched (huge pass volume but rush attempts below the 34 threshold for Pattern D). Eagles prior game (Wk3 @ CHI, L 7-27): 248 total yds, 26 pass att, 19 rush att \u2014 no pattern matched (lost by 20+ but total yards far short of Pattern A's 426 threshold).",
+      "altTrendCheck": "Rams prior game (Wk3 @ DEN, L 26-30): 482 total yds, 55 pass att, 23 rush att — no pattern matched (huge pass volume but rush attempts below the 34 threshold for Pattern D). Eagles prior game (Wk3 @ CHI, L 7-27): 248 total yds, 26 pass att, 19 rush att — no pattern matched (lost by 20+ but total yards far short of Pattern A's 426 threshold).",
       "auditNote": "Second Opinion tally was mis-added (reasons give Rams 6, Eagles 1, not 6-2), so Rams lean becomes strong; also removed A.J. Brown (traded to NE) from the Eagles injury list.",
       "away": "Los Angeles Rams",
       "awayMoneyline": -155,
@@ -409,13 +479,23 @@
       "skipped": true,
       "statLines": [
         "PD/g +4.7 vs -0.7",
-        "Yds/play 6.30 vs 5.27 \u00b7 29-pt gap",
+        "Yds/play 6.30 vs 5.27 · 29-pt gap",
         "QB rating 88.1 vs 90.2 (Stafford vs Hurts)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 both teams lost their most recent game.",
+      "altBlowoutCheck": "N/A — both teams lost their most recent game.",
       "altCategoryTally": "3-3",
       "altConfidence": "pass",
       "altCorrect": null,
@@ -424,14 +504,14 @@
       "altReasons": [
         "Scoring margin: neutral (Buccaneers' -3.7 PD/g was built entirely under Baker Mayfield, not tonight's first-time starter Jalon Daniels; Packers' own -4.9 PD/g isn't materially positive enough to carry the category alone)",
         "Rest: favors Packers (10-day mini-bye off a Thursday-night game vs. Buccaneers' normal rest)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Green Bay): Buccaneers lost starting QB Baker Mayfield (thumb, 3+ weeks) and starting CB Benjamin Morrison, a QB+CB cluster; Green Bay also has its own OL cluster (starting guards Aaron Banks and Jacob Monk both out) but the Bucs' QB loss is the more decisive factor",
-        "Weather/Venue: favors Buccaneers (cold-climate Packers traveling into ~88\u00b0F heat/humidity with thunderstorm risk)",
+        "Injuries/Lineup (weighted x2 — favors Green Bay): Buccaneers lost starting QB Baker Mayfield (thumb, 3+ weeks) and starting CB Benjamin Morrison, a QB+CB cluster; Green Bay also has its own OL cluster (starting guards Aaron Banks and Jacob Monk both out) but the Bucs' QB loss is the more decisive factor",
+        "Weather/Venue: favors Buccaneers (cold-climate Packers traveling into ~88°F heat/humidity with thunderstorm risk)",
         "Market: favors Buccaneers (spread held flat at -3.5 despite the Mayfield injury news, a reverse-line-movement signal, with majority of bets/money on Tampa Bay ATS)",
         "Matchup splits: favors Buccaneers (Tampa's defense ranks 6th in EPA/play allowed against a Green Bay offense ranked 28th in offensive EPA/play with a league-worst rushing attack)"
       ],
       "altReturn": null,
       "altSpreadReturn": null,
-      "altTrendCheck": "Packers prior game (Wk3 vs ATL TNF, L 14-35): 328 total yds, 53 pass att, only 9 rush att (season-worst ground game) \u2014 no pattern matched (high pass volume but failed Pattern D due to minimal rush attempts). Buccaneers prior game (Wk3 vs MIN, L 16-23): 243 total yds, 37 pass att, 21 rush att \u2014 no pattern matched.",
+      "altTrendCheck": "Packers prior game (Wk3 vs ATL TNF, L 14-35): 328 total yds, 53 pass att, only 9 rush att (season-worst ground game) — no pattern matched (high pass volume but failed Pattern D due to minimal rush attempts). Buccaneers prior game (Wk3 vs MIN, L 16-23): 243 total yds, 37 pass att, 21 rush att — no pattern matched.",
       "away": "Green Bay Packers",
       "awayMoneyline": -172,
       "awayPDpg": -4.925,
@@ -459,13 +539,23 @@
       "pickSpreadReturn": 90.91,
       "statLines": [
         "PD/g -4.9 vs -3.7",
-        "Yds/play 5.26 vs 4.71 \u00b7 45-pt gap",
+        "Yds/play 5.26 vs 4.71 · 45-pt gap",
         "QB rating 83.5 vs n/a (Love vs Daniels, making his first career start)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (Vikings won by 7, Dolphins lost).",
+      "altBlowoutCheck": "N/A — neither team's most recent game was a win by 17+ (Vikings won by 7, Dolphins lost).",
       "altCategoryTally": "3-2",
       "altConfidence": "pass",
       "altCorrect": null,
@@ -480,7 +570,7 @@
       ],
       "altReturn": null,
       "altSpreadReturn": null,
-      "altTrendCheck": "Dolphins prior game (Wk3 vs KC, L 10-24): 329 total yds, 36 pass att, 31 rush att \u2014 no pattern matched (narrowly missed Pattern C's 34-rush threshold). Vikings prior game (Wk3 @ TB, W 23-16): 230 total yds, 29 pass att, 23 rush att \u2014 no pattern matched.",
+      "altTrendCheck": "Dolphins prior game (Wk3 vs KC, L 10-24): 329 total yds, 36 pass att, 31 rush att — no pattern matched (narrowly missed Pattern C's 34-rush threshold). Vikings prior game (Wk3 @ TB, W 23-16): 230 total yds, 29 pass att, 23 rush att — no pattern matched.",
       "auditNote": "Prices were a copy of the Titans-Ravens game (+525/-750, 11.5); corrected to DraftKings via ESPN (MIN -10, ML -535/+400). Game remains a skip.",
       "away": "Miami Dolphins",
       "awayMoneyline": 400,
@@ -511,13 +601,23 @@
       "skipped": true,
       "statLines": [
         "PD/g -10.6 vs +5.3",
-        "Yds/play 5.04 vs 4.28 \u00b7 39-pt gap",
+        "Yds/play 5.04 vs 4.28 · 39-pt gap",
         "QB rating 74.1 vs 54.3 (Willis vs Murray, Murray's own 2026 rating)"
       ],
-      "time": "4:05 PM ET"
+      "time": "4:05 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (Chiefs won by 14, Raiders by 8).",
+      "altBlowoutCheck": "N/A — neither team's most recent game was a win by 17+ (Chiefs won by 14, Raiders by 8).",
       "altCategoryTally": "2-1",
       "altConfidence": "pass",
       "altCorrect": null,
@@ -530,7 +630,7 @@
       ],
       "altReturn": null,
       "altSpreadReturn": null,
-      "altTrendCheck": "Chiefs prior game (Wk3 @ MIA, W 24-10): 334 total yds, 24 pass att (10.25 YPA), 25 rush att, overall YPP 6.82 \u2014 no pattern matched (elite YPA but overall YPP exceeds the 5.15 threshold). Raiders prior game (Wk3 @ NO, W 35-27): 340 total yds, 33 pass att (7.52 YPA), 27 rush att, overall YPP 5.67 \u2014 no pattern matched (barely cleared the YPA bar but overall YPP too high).",
+      "altTrendCheck": "Chiefs prior game (Wk3 @ MIA, W 24-10): 334 total yds, 24 pass att (10.25 YPA), 25 rush att, overall YPP 6.82 — no pattern matched (elite YPA but overall YPP exceeds the 5.15 threshold). Raiders prior game (Wk3 @ NO, W 35-27): 340 total yds, 33 pass att (7.52 YPA), 27 rush att, overall YPP 5.67 — no pattern matched (barely cleared the YPA bar but overall YPP too high).",
       "away": "Kansas City Chiefs",
       "awayMoneyline": -225,
       "awayPDpg": 7.335,
@@ -560,13 +660,23 @@
       "skipped": true,
       "statLines": [
         "PD/g +7.3 vs +0.0",
-        "Yds/play 6.44 vs 4.92 \u00b7 65-pt gap",
+        "Yds/play 6.44 vs 4.92 · 65-pt gap",
         "QB rating 108.9 vs 107.2 (Mahomes vs Cousins)"
       ],
-      "time": "4:25 PM ET"
+      "time": "4:25 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (both lost their last game; Seattle's 31-7 blowout win over Arizona was 2 games back under Drew Lock, not their most recent game under tonight's starter).",
+      "altBlowoutCheck": "N/A — neither team's most recent game was a win by 17+ (both lost their last game; Seattle's 31-7 blowout win over Arizona was 2 games back under Drew Lock, not their most recent game under tonight's starter).",
       "altCategoryTally": "5-2",
       "altConfidence": "pass",
       "altCorrect": null,
@@ -574,7 +684,7 @@
       "altPick": null,
       "altReasons": [
         "Scoring margin: favors Seahawks (+9.8 PD/g vs Chargers' -4.5; Darnold missed only a single game to a glute injury, not a multi-game absence, so no discount applies)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Seahawks): Chargers' WR1 Ladd McConkey (questionable), CB1 Donte Jackson (questionable, concussion), and starting G Kayode Awosika (out) \u2014 a 3-position cluster",
+        "Injuries/Lineup (weighted x2 — favors Seahawks): Chargers' WR1 Ladd McConkey (questionable), CB1 Donte Jackson (questionable, concussion), and starting G Kayode Awosika (out) — a 3-position cluster",
         "Motivation/Spot: favors Seahawks (home team rebounding from a 2-point road loss vs. a desperate, winless Chargers team)",
         "Market: favors Chargers (line moved from -7.5 to -7 toward LA despite the lopsided injury news)",
         "Matchup splits: favors Chargers (Seattle's O-line and run game are struggling; LB Drake Thomas has been a tested coverage liability)",
@@ -582,7 +692,7 @@
       ],
       "altReturn": null,
       "altSpreadReturn": null,
-      "altTrendCheck": "Chargers prior game (Wk3 @ BUF, L 16-24): 348 total yds, 34 pass att, 28 rush att \u2014 no pattern matched. Seahawks prior game (Wk3 @ WAS, L 31-33): 437 total yds, 46 pass att (8.54 YPA), 18 rush att, overall YPP 6.83 \u2014 no pattern matched (elite YPA and high pass volume, but overall YPP and rush attempts don't clear the thresholds).",
+      "altTrendCheck": "Chargers prior game (Wk3 @ BUF, L 16-24): 348 total yds, 34 pass att, 28 rush att — no pattern matched. Seahawks prior game (Wk3 @ WAS, L 31-33): 437 total yds, 46 pass att (8.54 YPA), 18 rush att, overall YPP 6.83 — no pattern matched (elite YPA and high pass volume, but overall YPP and rush attempts don't clear the thresholds).",
       "away": "Los Angeles Chargers",
       "awayMoneyline": 280,
       "awayPDpg": -4.51,
@@ -610,13 +720,23 @@
       "pickSpreadReturn": 0.0,
       "statLines": [
         "PD/g -4.5 vs +9.8",
-        "Yds/play 5.23 vs 6.16 \u00b7 32-pt gap",
+        "Yds/play 5.23 vs 6.16 · 32-pt gap",
         "QB rating 73.4 vs 104.2 (Herbert vs Darnold, Darnold's own 2026 rating)"
       ],
-      "time": "4:25 PM ET"
+      "time": "4:25 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (Broncos won by 4, 49ers won by 6).",
+      "altBlowoutCheck": "N/A — neither team's most recent game was a win by 17+ (Broncos won by 4, 49ers won by 6).",
       "altCategoryTally": "4-3",
       "altConfidence": "pass",
       "altCorrect": null,
@@ -624,7 +744,7 @@
       "altPick": null,
       "altReasons": [
         "Scoring margin: favors 49ers (+9.9 PD/g vs Broncos' +1.0, both under season-long starters)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Broncos): 49ers missing edge rushers Nick Bosa and Mykel Williams (both out) plus LT Trent Williams questionable; Broncos' only absence is a backup OLB",
+        "Injuries/Lineup (weighted x2 — favors Broncos): 49ers missing edge rushers Nick Bosa and Mykel Williams (both out) plus LT Trent Williams questionable; Broncos' only absence is a backup OLB",
         "Motivation/Spot: favors Broncos (49ers have a Week 5 division trip to Seattle looming as a soft lookahead spot)",
         "Market: favors 49ers (line moved from Broncos +2.5 to 49ers -3, a steam move)",
         "Matchup splits: favors 49ers (Purdy has not been sacked all season behind an elite OL; Christian McCaffrey projects to exploit a weak Broncos run defense)",
@@ -632,7 +752,7 @@
       ],
       "altReturn": null,
       "altSpreadReturn": null,
-      "altTrendCheck": "Broncos prior game (Wk3 vs LAR, W 30-26): 257 total yds, 34 pass att, 25 rush att \u2014 no pattern matched. 49ers prior game (Wk3 vs ARI, W 36-30): 437 total yds, 27 pass att (11.0 YPA), 23 rush att, overall YPP 8.74 \u2014 no pattern matched (elite YPA but overall YPP far exceeds the 5.15 threshold).",
+      "altTrendCheck": "Broncos prior game (Wk3 vs LAR, W 30-26): 257 total yds, 34 pass att, 25 rush att — no pattern matched. 49ers prior game (Wk3 vs ARI, W 36-30): 437 total yds, 27 pass att (11.0 YPA), 23 rush att, overall YPP 8.74 — no pattern matched (elite YPA but overall YPP far exceeds the 5.15 threshold).",
       "away": "Denver Broncos",
       "awayMoneyline": 130,
       "awayPDpg": 0.98,
@@ -660,13 +780,23 @@
       "pickSpreadReturn": 95.24,
       "statLines": [
         "PD/g +1.0 vs +9.9",
-        "Yds/play 4.97 vs 7.35 \u00b7 71-pt gap",
+        "Yds/play 4.97 vs 7.35 · 71-pt gap",
         "QB rating 80.3 vs 133.1 (Nix vs Purdy)"
       ],
-      "time": "4:25 PM ET"
+      "time": "4:25 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
-      "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (Lions won by 7, Panthers lost).",
+      "altBlowoutCheck": "N/A — neither team's most recent game was a win by 17+ (Lions won by 7, Panthers lost).",
       "altCategoryTally": "7-0",
       "altConfidence": "strong",
       "altCorrect": false,
@@ -674,7 +804,7 @@
       "altPick": "Detroit Lions",
       "altReasons": [
         "Scoring margin: favors Lions (+1.7 PD/g vs Panthers' -1.0, both under season-long starters)",
-        "Injuries/Lineup (weighted x2 \u2014 favors Lions): Panthers have both starting cornerbacks out (Jaycee Horn, Mike Jackson), plus WR Xavier Legette out and starting LG Damien Lewis out \u2014 a severe multi-position cluster",
+        "Injuries/Lineup (weighted x2 — favors Lions): Panthers have both starting cornerbacks out (Jaycee Horn, Mike Jackson), plus WR Xavier Legette out and starting LG Damien Lewis out — a severe multi-position cluster",
         "Motivation/Spot: favors Lions (national SNF spotlight, Carolina's depleted secondary compounds the spot)",
         "Market: favors Lions (line moved from -3 to -3.5 on Carolina's injury news)",
         "Matchup splits: favors Lions (Goff's 8 TD/0 INT season against a Panthers secondary now missing both starting corners)",
@@ -682,7 +812,7 @@
       ],
       "altReturn": -100.0,
       "altSpreadReturn": -100.0,
-      "altTrendCheck": "Lions prior game (Wk3 vs NYJ, W 31-24): 381 total yds, 32 pass att (7.81 YPA), 30 rush att, overall YPP 6.15 \u2014 no pattern matched (cleared the YPA bar but overall YPP exceeds 5.15). Panthers prior game (Wk3 @ CLE, L 18-21): 360 total yds, 48 pass att, 23 rush att \u2014 no pattern matched (high pass volume but rush attempts below the 34 threshold for Pattern D).",
+      "altTrendCheck": "Lions prior game (Wk3 vs NYJ, W 31-24): 381 total yds, 32 pass att (7.81 YPA), 30 rush att, overall YPP 6.15 — no pattern matched (cleared the YPA bar but overall YPP exceeds 5.15). Panthers prior game (Wk3 @ CLE, L 18-21): 360 total yds, 48 pass att, 23 rush att — no pattern matched (high pass volume but rush attempts below the 34 threshold for Pattern D).",
       "auditNote": "Second Opinion tally corrected from 7-1 to 7-0 (no category listed favors Carolina); still strong Lions.",
       "away": "Detroit Lions",
       "awayMoneyline": -189,
@@ -713,10 +843,20 @@
       "skipped": true,
       "statLines": [
         "PD/g +1.7 vs -1.0",
-        "Yds/play 5.55 vs 6.01 \u00b7 10-pt gap",
+        "Yds/play 5.55 vs 6.01 · 10-pt gap",
         "QB rating 116.1 vs 96.4 (Goff vs Young)"
       ],
-      "time": "8:20 PM ET"
+      "time": "8:20 PM ET",
+      "altBlowoutFavors": null,
+      "altTrendFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     }
   ],
   "scoredAt": "2026-10-05T12:47:34.288929+00:00"
