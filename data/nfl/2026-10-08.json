@@ -5,6 +5,62 @@
   "scored": false,
   "generatedAt": "2026-10-08T13:14:32Z",
   "games": [
-    {"altBlowoutCheck":"Doesn't apply to either team — neither's most recent game was a 17+ point win (Buccaneers lost by 3; Cowboys won by 4).","altCategoryTally":"3-1 Cowboys (net +2; lead ≤ 3 is a pass)","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: neutral (Buccaneers' -3.4 blended PD/g was built mostly under Baker Mayfield, who started 3 of their 4 games this season, not tonight's starter Jalon Daniels; Cowboys' own +0.1 blended PD/g isn't independently strong enough to carry the category alone)","Rest: neutral (both teams are on the same short week, Sunday Oct 4 to Thursday Oct 8, so neither has a rest edge)","Travel: Cowboys (Buccaneers must travel from Tampa to Dallas on a short week for the road Thursday game; Cowboys stay home)","Injuries/Lineup: Cowboys (Buccaneers' starting QB Baker Mayfield is out with a dislocated thumb, rookie Jalon Daniels confirmed starting in his place; Cowboys CB Cobie Durant and Buccaneers edge Rueben Bain Jr. are both just questionable, roughly offsetting — not a multi-starter cluster for either side, so not double-weighted)","Form: Cowboys (Dallas is 2-1 in its last 3 games, all started by Dak Prescott; Tampa Bay is 0-3 in its last 3, but that record was built mostly under Baker Mayfield, who started 2 of those 3 games, not tonight's starter Jalon Daniels, so it does not carry the category for Tampa Bay)","Motivation/Spot: neutral (non-division matchup, no clear rivalry, revenge, or standings-pressure signal)","Weather/Venue: neutral (dome game at AT&T Stadium, no weather factor)","Market: Buccaneers (opening line was Cowboys -10 as of Oct 5, shrunk to about Cowboys -8 to -8.5 by game day — the number moving toward Tampa Bay)","Matchup splits: neutral (Dallas's pass rush has only 4.0 sacks through 4 games, so a rookie-QB-vs-pass-rush edge for Dallas isn't clearly verified)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Buccaneers prior game (Wk4 vs GB, CBS Gametracker): lost 14-17, 275 total net yds, 134 passing yds on 19-27 (YPA 4.96), 31 rush att/141 rush yds (YPP 275/58=4.74) — no pattern matched. Cowboys prior game (Wk4 at HOU, CBS Gametracker): won 34-30, 399 total net yds, 324 net passing yds on 32-45 (YPA 7.2), 25 rush att/75 rush yds (YPP 399/70=5.70) — no pattern matched.","away":"Tampa Bay Buccaneers","awayMoneyline":360,"awayPDpg":-3.4,"awayQB":"Jalon Daniels","awayQBRating":null,"awayScore":null,"awaySpread":8.5,"awaySpreadOdds":-110,"awayYPP":5.3,"confidence":"skip","correct":null,"home":"Dallas Cowboys","homeMoneyline":-470,"homePDpg":0.1,"homeQB":"Dak Prescott","homeQBRating":105,"homeScore":null,"homeSpread":-8.5,"homeSpreadOdds":-110,"homeYPP":5.8,"offGap":29,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g -3.4 vs +0.1 (blended 2026/2025)","Yds/play 5.3 vs 5.8 (TB rank 23/32, DAL rank 14/32 — 29.0-pt percentile gap, just under the 30 screen)","QB rating N/A (Daniels, 2nd career start) vs 105.0 (Prescott)"],"time":"8:15 PM ET"}
+    {
+      "altBlowoutCheck": "Doesn't apply to either team \u2014 neither's most recent game was a 17+ point win (Buccaneers lost by 3; Cowboys won by 4).",
+      "altCategoryTally": "3-1 Cowboys (net +2; lead \u2264 3 is a pass)",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: neutral (Buccaneers' -3.4 blended PD/g was built mostly under Baker Mayfield, who started 3 of their 4 games this season, not tonight's starter Jalon Daniels; Cowboys' own +0.1 blended PD/g isn't independently strong enough to carry the category alone)",
+        "Rest: neutral (both teams are on the same short week, Sunday Oct 4 to Thursday Oct 8, so neither has a rest edge)",
+        "Travel: Cowboys (Buccaneers must travel from Tampa to Dallas on a short week for the road Thursday game; Cowboys stay home)",
+        "Injuries/Lineup: Cowboys (Buccaneers' starting QB Baker Mayfield is out with a dislocated thumb, rookie Jalon Daniels confirmed starting in his place; Cowboys CB Cobie Durant and Buccaneers edge Rueben Bain Jr. are both just questionable, roughly offsetting \u2014 not a multi-starter cluster for either side, so not double-weighted)",
+        "Form: Cowboys (Dallas is 2-1 in its last 3 games, all started by Dak Prescott; Tampa Bay is 0-3 in its last 3, but that record was built mostly under Baker Mayfield, who started 2 of those 3 games, not tonight's starter Jalon Daniels, so it does not carry the category for Tampa Bay)",
+        "Motivation/Spot: neutral (non-division matchup, no clear rivalry, revenge, or standings-pressure signal)",
+        "Weather/Venue: neutral (dome game at AT&T Stadium, no weather factor)",
+        "Market: Buccaneers (opening line was Cowboys -10 as of Oct 5, shrunk to about Cowboys -8 to -8.5 by game day \u2014 the number moving toward Tampa Bay)",
+        "Matchup splits: neutral (Dallas's pass rush has only 4.0 sacks through 4 games, so a rookie-QB-vs-pass-rush edge for Dallas isn't clearly verified)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "altTrendCheck": "Buccaneers prior game (Wk4 vs GB, CBS Gametracker): lost 14-17, 275 total net yds, 134 passing yds on 19-27 (YPA 4.96), 31 rush att/141 rush yds (YPP 275/58=4.74) \u2014 no pattern matched. Cowboys prior game (Wk4 at HOU, CBS Gametracker): won 34-30, 399 total net yds, 324 net passing yds on 32-45 (YPA 7.2), 25 rush att/75 rush yds (YPP 399/70=5.70) \u2014 no pattern matched.",
+      "away": "Tampa Bay Buccaneers",
+      "awayMoneyline": 360,
+      "awayPDpg": -3.4,
+      "awayQB": "Jalon Daniels",
+      "awayQBRating": null,
+      "awayScore": null,
+      "awaySpread": 8.5,
+      "awaySpreadOdds": -110,
+      "awayYPP": 5.3,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Dallas Cowboys",
+      "homeMoneyline": -470,
+      "homePDpg": 0.1,
+      "homeQB": "Dak Prescott",
+      "homeQBRating": 105,
+      "homeScore": null,
+      "homeSpread": -8.5,
+      "homeSpreadOdds": -110,
+      "homeYPP": 5.8,
+      "offGap": 29,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g -3.4 vs +0.1 (blended 2026/2025)",
+        "Yds/play 5.3 vs 5.8 (TB rank 23/32, DAL rank 14/32 \u2014 29.0-pt percentile gap, just under the 30 screen)",
+        "QB rating N/A (Daniels, 2nd career start) vs 105.0 (Prescott)"
+      ],
+      "time": "8:15 PM ET",
+      "altTrendFavors": null,
+      "altBlowoutFavors": null
+    }
   ]
 }

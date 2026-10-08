@@ -60,7 +60,19 @@
         "Yds/play 6.64 vs 6.13 (nat'l rank unavailable this cycle)",
         "QB eff 184.8 vs 132.3 (Carr vs Edwards)"
       ],
-      "time": "12:00 PM ET"
+      "time": "12:00 PM ET",
+      "altTrendCheck": "Backfilled: Notre Dame prior game (49-10 vs Purdue Boilermakers: 444 yds, 26 pass att/267 yds, 32 rush att) \u2014 no pattern matched. North Carolina prior game (20-28 vs Clemson Tigers: 349 yds, 30 pass att/135 yds, 39 rush att) \u2014 no pattern matched. Net: Notre Dame +0, North Carolina +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: Notre Dame off a 49-10 win over Purdue Boilermakers (+39) \u2014 1 of 5 hit (favored 3+) \u2014 regression flag OFF",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "3-0",
@@ -110,7 +122,19 @@
         "Yds/play 5.53 vs 7.81 (nat'l rank unavailable this cycle)",
         "QB eff 115.4 vs 197.3 (McKenzie vs Jennings)"
       ],
-      "time": "12:00 PM ET"
+      "time": "12:00 PM ET",
+      "altTrendCheck": "Backfilled: Boston College prior game (14-21 vs Virginia Tech Hokies: 261 yds, 23 pass att/111 yds, 38 rush att) \u2014 no pattern matched. SMU prior game (34-24 vs Missouri State Bears: 567 yds, 39 pass att/439 yds, 40 rush att) \u2014 no pattern matched. Net: Boston College +0, SMU +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: N/A \u2014 neither team's most recent game was a win by 17+.",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "4-2",
@@ -164,7 +188,19 @@
         "Yds/play 8.53 vs 4.87 (nat'l rank unavailable this cycle)",
         "QB eff 228.2 vs 115.6 (Mensah vs Reynolds, true-Fr starter; Vizzina is available but not 100%)"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "altTrendCheck": "Backfilled: Miami prior game (52-3 vs Central Michigan Chippewas: 572 yds, 34 pass att/371 yds, 34 rush att) \u2014 C fade (34 rush/34 pass) +2 Clemson. Clemson prior game (24-10 vs California Golden Bears: 363 yds, 22 pass att/106 yds, 48 rush att) \u2014 no pattern matched. Net: Miami +0, Clemson +2.",
+      "altTrendFavors": "Clemson",
+      "altBlowoutCheck": "Backfilled: Miami off a 52-3 win over Central Michigan Chippewas (+49) \u2014 3 of 5 hit (padded win, favored 3+, 33+ carries) \u2014 blowout came against an outmatched opponent \u2014 discounted as a mismatch, not a padded win \u2014 regression flag OFF",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": false,
+      "altTrendSpreadReturn": -100.0,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "4-2",
@@ -217,7 +253,19 @@
         "Yds/play 6.38 vs 7.38 (nat'l rank unavailable this cycle)",
         "QB eff 151.4 vs 183.2 (Jenkins, probable, starter Barnett out, vs Weigman)"
       ],
-      "time": "12:00 PM ET"
+      "time": "12:00 PM ET",
+      "altTrendCheck": "Backfilled: UCF prior game (21-13 vs TCU Horned Frogs: 266 yds, 20 pass att/160 yds, 33 rush att) \u2014 B (YPA 8.00, YPP 5.02) +2 UCF. Houston prior game (42-28 vs Georgia Southern Eagles: 441 yds, 22 pass att/239 yds, 41 rush att) \u2014 no pattern matched. Net: UCF +2, Houston +0.",
+      "altTrendFavors": "UCF",
+      "altBlowoutCheck": "Backfilled: N/A \u2014 neither team's most recent game was a win by 17+.",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": true,
+      "altTrendSpreadReturn": 90.91,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "4-0",
@@ -268,7 +316,19 @@
         "Yds/play 8.33 vs 6.59 (nat'l rank unavailable this cycle)",
         "QB eff 186.7 vs 158.3 (Bachmeier vs Craig)"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "altTrendCheck": "Backfilled: BYU prior game (41-23 vs Colorado State Rams: 559 yds, 17 pass att/227 yds, 41 rush att) \u2014 no pattern matched. TCU prior game (13-21 vs UCF Knights: 343 yds, 40 pass att/310 yds, 27 rush att) \u2014 B (YPA 7.75, YPP 5.12) +2 TCU. Net: BYU +0, TCU +2.",
+      "altTrendFavors": "TCU",
+      "altBlowoutCheck": "Backfilled: BYU off a 41-23 win over Colorado State Rams (+18) \u2014 2 of 5 hit (favored 3+, 33+ carries) \u2014 blowout came against an outmatched opponent \u2014 regression flag OFF",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": false,
+      "altTrendReturn": null,
+      "altTrendCover": false,
+      "altTrendSpreadReturn": -100.0,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "4-2",
@@ -322,7 +382,19 @@
         "Yds/play 6.30 vs 5.55 (nat'l rank unavailable this cycle)",
         "QB eff 141.8 vs n/a (Hammond vs Wilson, who replaced the benched Lewis; Wilson's rating not computed)"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "altTrendCheck": "Backfilled: Texas Tech prior game (49-14 vs Sam Houston Bearkats: 470 yds, 31 pass att/251 yds, 35 rush att) \u2014 no pattern matched. Colorado prior game (13-23 vs Baylor Bears: 363 yds, 42 pass att/280 yds, 39 rush att) \u2014 C fade (39 rush/42 pass) +2 Texas Tech; D fade (42 pass att, 39 rush att) +2 Texas Tech. Net: Texas Tech +4, Colorado +0.",
+      "altTrendFavors": "Texas Tech",
+      "altBlowoutCheck": "Backfilled: Texas Tech off a 49-14 win over Sam Houston Bearkats (+35) \u2014 4 of 5 hit (padded win, favored 3+, 33+ carries, turnover-prone) \u2014 blowout came against an outmatched opponent \u2014 discounted as a mismatch, not a padded win \u2014 regression flag OFF",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": true,
+      "altTrendSpreadReturn": 94.34,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "2-1",
@@ -372,7 +444,19 @@
         "Yds/play 7.83 vs 6.60 (nat'l rank unavailable this cycle)",
         "QB eff 187.2 vs 145.7 (Sayin vs Brown)"
       ],
-      "time": "3:30 PM ET"
+      "time": "3:30 PM ET",
+      "altTrendCheck": "Backfilled: Ohio State prior game (42-19 vs Illinois Fighting Illini: 518 yds, 36 pass att/367 yds, 32 rush att) \u2014 no pattern matched. Iowa prior game (20-19 vs Michigan Wolverines: 285 yds, 35 pass att/227 yds, 24 rush att) \u2014 no pattern matched. Net: Ohio State +0, Iowa +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: Ohio State off a 42-19 win over Illinois Fighting Illini (+23) \u2014 2 of 5 hit (favored 3+, opponent takes it away) \u2014 regression flag OFF",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "1-1",
@@ -421,7 +505,19 @@
         "Yds/play 6.24 vs 7.32 (nat'l rank unavailable this cycle; USC play count lower-confidence)",
         "QB eff 151.0 vs 208.8 (Williams Jr. vs Maiava)"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "altTrendCheck": "Backfilled: Washington prior game (24-27 vs Minnesota Golden Gophers: 279 yds, 28 pass att/239 yds, 27 rush att) \u2014 B (YPA 8.54, YPP 5.07) +2 Washington. USC prior game (27-41 vs Oregon Ducks: 446 yds, 42 pass att/326 yds, 33 rush att) \u2014 A (lost by 14 with 446 yds) +2 USC. Net: Washington +2, USC +2.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: N/A \u2014 neither team's most recent game was a win by 17+.",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "1-1",
@@ -470,7 +566,19 @@
         "Yds/play 7.31 vs 6.00 (nat'l rank unavailable this cycle)",
         "QB eff 204.6 vs 144.6 (Hoover vs Lonergan)"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "altTrendCheck": "Backfilled: Indiana prior game (29-23 vs Northwestern: 472 yds, 29 pass att/201 yds, 40 rush att) \u2014 no pattern matched. Rutgers prior game (58-7 vs Howard: 534 yds, 25 pass att/268 yds, 47 rush att) \u2014 no pattern matched. Net: Indiana +0, Rutgers +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: Rutgers off a 58-7 win over Howard (+51) \u2014 4 of 5 hit (padded win, opponent takes it away, 33+ carries, turnover-prone) \u2014 blowout came against an outmatched opponent \u2014 discounted as a mismatch, not a padded win \u2014 regression flag OFF",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "4-0",
@@ -521,7 +629,19 @@
         "Yds/play 4.94 vs 6.20 (nat'l rank unavailable this cycle)",
         "QB eff 111.8 vs 151.4 (Brosterhous, expected starter, vs Madsen)"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "altTrendCheck": "Backfilled: Utah State prior game (21-10 vs Troy: 413 yds, 28 pass att/242 yds, 31 rush att) \u2014 no pattern matched. Boise State prior game (32-7 vs Western Michigan: 377 yds, 23 pass att/204 yds, 42 rush att) \u2014 no pattern matched. Net: Utah State +0, Boise State +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: Boise State off a 32-7 win over Western Michigan (+25) \u2014 2 of 5 hit (favored 3+, 33+ carries) \u2014 regression flag OFF",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "1-1",
@@ -570,7 +690,19 @@
         "Yds/play 7.06 vs 7.46 (nat'l rank unavailable this cycle)",
         "QB eff 177.5 vs 187.8 (Russell vs Taylor)"
       ],
-      "time": "12:00 PM ET"
+      "time": "12:00 PM ET",
+      "altTrendCheck": "Backfilled: Alabama prior game (49-18 vs South Carolina: 489 yds, 27 pass att/365 yds, 30 rush att) \u2014 no pattern matched. Mississippi State prior game (31-24 vs Missouri: 499 yds, 38 pass att/360 yds, 40 rush att) \u2014 no pattern matched. Net: Alabama +0, Mississippi State +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: Alabama off a 49-18 win over South Carolina (+31) \u2014 3 of 5 hit (padded win, favored 3+, turnover-prone) \u2014 regression flag ON: +6 to Mississippi State",
+      "altBlowoutFavors": "Mississippi State",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": false,
+      "altBlowoutReturn": -100.0,
+      "altBlowoutCover": false,
+      "altBlowoutSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "5-0",
@@ -622,7 +754,19 @@
         "Yds/play 5.49 vs 8.15 (nat'l rank unavailable this cycle)",
         "QB eff 135.6 vs 209.1 (Curtis, questionable w/ injury, vs Stockton)"
       ],
-      "time": "12:45 PM ET"
+      "time": "12:45 PM ET",
+      "altTrendCheck": "Backfilled: Vanderbilt prior game (15-21 vs Auburn: 311 yds, 34 pass att/199 yds, 41 rush att) \u2014 no pattern matched. Georgia prior game (41-13 vs Oklahoma: 306 yds, 27 pass att/177 yds, 26 rush att) \u2014 no pattern matched. Net: Vanderbilt +0, Georgia +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: Georgia off a 41-13 win over Oklahoma (+28) \u2014 2 of 5 hit (padded win, favored 3+) \u2014 regression flag OFF",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "3-3",
@@ -675,7 +819,19 @@
         "Yds/play 6.06 (thru 3 games) vs 6.19, Tennessee ranked 64th nat'l",
         "QB eff 132.6 vs 150.2 (Brown vs Brandon, true-Fr starter)"
       ],
-      "time": "3:30 PM ET"
+      "time": "3:30 PM ET",
+      "altTrendCheck": "Backfilled: Auburn prior game (21-15 vs Vanderbilt: 279 yds, 27 pass att/140 yds, 31 rush att) \u2014 no pattern matched. Tennessee prior game (17-20 vs Texas: 221 yds, 32 pass att/151 yds, 44 rush att) \u2014 no pattern matched. Net: Auburn +0, Tennessee +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: N/A \u2014 neither team's most recent game was a win by 17+.",
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altCategoryTally": "5-1",
@@ -728,7 +884,19 @@
         "Yds/play 7.60 vs ~6.11 (nat'l rank unavailable this cycle)",
         "QB eff 182.9 vs 173.7 (Philo vs Simmons)"
       ],
-      "time": "3:30 PM ET"
+      "time": "3:30 PM ET",
+      "altTrendCheck": "Backfilled: Florida prior game (52-28 vs Ole Miss: 498 yds, 23 pass att/196 yds, 53 rush att) \u2014 no pattern matched. Missouri prior game (24-31 vs Mississippi State: 414 yds, 40 pass att/295 yds, 35 rush att) \u2014 C fade (35 rush/40 pass) +2 Florida. Net: Florida +2, Missouri +0.",
+      "altTrendFavors": "Florida",
+      "altBlowoutCheck": "Backfilled: Florida off a 52-28 win over Ole Miss (+24) \u2014 3 of 5 hit (padded win, favored 3+, 33+ carries) \u2014 regression flag ON: +6 to Missouri",
+      "altBlowoutFavors": "Missouri",
+      "altTrendCorrect": false,
+      "altTrendReturn": -100.0,
+      "altTrendCover": false,
+      "altTrendSpreadReturn": -100.0,
+      "altBlowoutCorrect": true,
+      "altBlowoutReturn": 180.0,
+      "altBlowoutCover": true,
+      "altBlowoutSpreadReturn": 90.91
     },
     {
       "altCategoryTally": "3-1",
@@ -779,7 +947,19 @@
         "Yds/play no-data both teams this cycle",
         "QB eff 165.3 vs n/a (Minchey vs Sellers)"
       ],
-      "time": "4:15 PM ET"
+      "time": "4:15 PM ET",
+      "altTrendCheck": "Backfilled: Kentucky prior game (45-21 vs South Alabama: 567 yds, 26 pass att/177 yds, 42 rush att) \u2014 no pattern matched. South Carolina prior game (18-49 vs Alabama: 419 yds, 33 pass att/203 yds, 40 rush att) \u2014 no pattern matched. Net: Kentucky +0, South Carolina +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: Kentucky off a 45-21 win over South Alabama (+24) \u2014 3 of 5 hit (padded win, 33+ carries, turnover-prone) \u2014 regression flag ON: +6 to South Carolina",
+      "altBlowoutFavors": "South Carolina",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": false,
+      "altBlowoutReturn": -100.0,
+      "altBlowoutCover": false,
+      "altBlowoutSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "3-2",
@@ -831,7 +1011,19 @@
         "Yds/play no-data both teams this cycle",
         "QB eff n/a vs 127.3 (Strong, returning from injury, vs Leavitt, questionable hamstring)"
       ],
-      "time": "7:45 PM ET"
+      "time": "7:45 PM ET",
+      "altTrendCheck": "Backfilled: McNeese prior game (27-24 vs East Texas A&M: 412 yds, 27 pass att/202 yds, 34 rush att) \u2014 no pattern matched. LSU prior game (35-6 vs Texas A&M: 506 yds, 28 pass att/312 yds, 38 rush att) \u2014 no pattern matched. Net: McNeese +0, LSU +0.",
+      "altTrendFavors": null,
+      "altBlowoutCheck": "Backfilled: LSU off a 35-6 win over Texas A&M (+29) \u2014 3 of 5 hit (favored 3+, 33+ carries, turnover-prone) \u2014 regression flag ON: +6 to McNeese",
+      "altBlowoutFavors": "McNeese",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": true,
+      "altBlowoutSpreadReturn": 90.91
     }
   ],
   "scoredAt": "2026-10-04T15:14:57.217570+00:00"
