@@ -2,7 +2,7 @@
   "date": "2026-10-08",
   "weekday": "Thursday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-10-08T13:14:32Z",
   "games": [
     {
@@ -31,7 +31,7 @@
       "awayPDpg": -3.4,
       "awayQB": "Jalon Daniels",
       "awayQBRating": null,
-      "awayScore": null,
+      "awayScore": 24.0,
       "awaySpread": 8.5,
       "awaySpreadOdds": -110,
       "awayYPP": 5.3,
@@ -42,7 +42,7 @@
       "homePDpg": 0.1,
       "homeQB": "Dak Prescott",
       "homeQBRating": 105,
-      "homeScore": null,
+      "homeScore": 16.0,
       "homeSpread": -8.5,
       "homeSpreadOdds": -110,
       "homeYPP": 5.8,
@@ -60,7 +60,16 @@
       ],
       "time": "8:15 PM ET",
       "altTrendFavors": null,
-      "altBlowoutFavors": null
+      "altBlowoutFavors": null,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     }
-  ]
+  ],
+  "scoredAt": "2026-10-09T18:33:06.588392+00:00"
 }
