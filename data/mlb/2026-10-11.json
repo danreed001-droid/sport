@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-11",
+  "weekday": "Sunday",
+  "sport": "mlb",
+  "scored": false,
+  "generatedAt": "2026-10-11T14:45:56Z",
+  "games": [
+    {"altCategoryTally":"6-0","altConfidence":"strong","altCorrect":null,"altCover":null,"altPick":"Milwaukee Brewers","altReasons":["Travel: Milwaukee Brewers favored -- Dodgers travel from Los Angeles (Pacific) to Milwaukee (Central), a 2-hour time zone change, with no travel burden for the home Brewers","Injuries/Lineup (weighted x2 -- multi-player cluster): Milwaukee Brewers favored -- Dodgers are without relievers Tanner Scott (out, injury) and Blake Treinen (right shoulder inflammation, unlikely to pitch this postseason), with infielder Miguel Rojas (lower back) also questionable after exiting NLDS Game 3; Brewers have no injuries listed entering Game 1","Form: Milwaukee Brewers favored -- Brewers' NLDS pitching staff posted a 1.80 ERA and William Contreras hit .375 as Milwaukee advanced; Dodgers hit just .203 as a team in their NLDS and Shohei Ohtani went 1-for-20 with 9 strikeouts in his last series","Market: Milwaukee Brewers favored -- moneyline moved from near even (Dodgers -107/Brewers -112, DraftKings, Oct 9) to a clearer Brewers favorite by game day (Brewers -115/Dodgers -105, BetMGM, Oct 11), consistent with the Dodgers' bullpen injury news","Matchup splits: Milwaukee Brewers favored -- Milwaukee swept the regular-season series 6-0 against Los Angeles"],"altReturn":null,"altSpreadReturn":null,"away":"Los Angeles Dodgers","awayERA":2.72,"awayMoneyline":-105,"awayOPS":0.765,"awayOppOPS":0.6,"awayPitcher":"Tarik Skubal","awayRD":201,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":170,"awayWHIP":0.96,"confidence":"skip","correct":null,"home":"Milwaukee Brewers","homeERA":1.8,"homeMoneyline":-115,"homeOPS":0.742,"homeOppOPS":0.47,"homePitcher":"Jacob Misiorowski","homeRD":214,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":-210,"homeWHIP":0.8,"opsGap":6.9,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"ops-gap","skipped":true,"time":"8:00 PM ET"}
+  ]
+}
