@@ -1,11 +1,15 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401902645,2026-10-10,10/10 - 6:30 PM EDT,LA Clippers,0,-,Toronto Raptors,0,-,-,-,6:30 PM
-401898396,2026-10-10,10/10 - 7:00 PM EDT,Atlanta Hawks,0,-,Indiana Pacers,0,-,-,-,7:00 PM
-401906510,2026-10-10,10/10 - 7:00 PM EDT,Detroit Pistons,0,-,Washington Wizards,0,-,-,-,7:00 PM
-401898397,2026-10-10,10/10 - 8:00 PM EDT,Minnesota Timberwolves,0,-,Miami Heat,0,-,-,-,8:00 PM
-401898398,2026-10-10,10/10 - 8:00 PM EDT,Philadelphia 76ers,0,-,Boston Celtics,0,-,-,-,8:00 PM
-401898399,2026-10-10,10/10 - 8:30 PM EDT,Sacramento Kings,0,-,Golden State Warriors,0,-,-,-,8:30 PM
-401898720,2026-10-10,10/10 - 10:30 PM EDT,San Antonio Spurs,0,-,Phoenix Suns,0,-,-,-,10:30 PM
+401898400,2026-10-11,Final,Dallas Mavericks,132,-,Houston Rockets,115,-,-110,-110,6:00 AM
+401898401,2026-10-11,10/11 - 6:30 PM EDT,Orlando Magic,0,-,Cleveland Cavaliers,0,-,-,-,6:30 PM
+401901821,2026-10-11,10/11 - 7:00 PM EDT,Milwaukee Bucks,0,-,Charlotte Hornets,0,-,-,-,7:00 PM
+401908941,2026-10-11,10/11 - 9:00 PM EDT,Chicago Bulls,0,-,Denver Nuggets,0,-,-,-,9:00 PM
+401902645,2026-10-10,Final,LA Clippers,106,-,Toronto Raptors,114,-,154,-185,6:30 PM
+401898396,2026-10-10,Final,Atlanta Hawks,119,-,Indiana Pacers,117,-,102,-122,7:00 PM
+401906510,2026-10-10,Final/OT,Detroit Pistons,108,-,Washington Wizards,114,-,-118,-102,7:00 PM
+401898397,2026-10-10,Final,Minnesota Timberwolves,125,-,Miami Heat,124,-,-148,124,8:00 PM
+401898398,2026-10-10,Final,Philadelphia 76ers,106,-,Boston Celtics,144,-,215,-265,8:00 PM
+401898399,2026-10-10,Final,Sacramento Kings,106,-,Golden State Warriors,111,-,200,-245,8:30 PM
+401898720,2026-10-10,Final,San Antonio Spurs,98,-,Phoenix Suns,102,-,-290,235,10:30 PM
 401898395,2026-10-09,Final,Houston Rockets,135,-,Dallas Mavericks,117,-,-148,124,8:00 AM
 401908940,2026-10-09,Final,Memphis Grizzlies,104,-,Chicago Bulls,100,-,110,-130,8:00 PM
 401898392,2026-10-08,Final,Boston Celtics,124,-,Cleveland Cavaliers,113,-,136,-162,7:00 PM
