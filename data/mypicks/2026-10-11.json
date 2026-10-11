@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-11",
+  "picks": {
+    "nfl-2026-10-11-indianapolis-colts-pittsburgh-steelers-1-00-pm-et": {
+      "sport": "nfl",
+      "away": "Indianapolis Colts",
+      "home": "Pittsburgh Steelers",
+      "time": "1:00 PM ET",
+      "side": "home",
+      "team": "Pittsburgh Steelers",
+      "spread": -2.5,
+      "spreadOdds": -110,
+      "moneyline": -145,
+      "submittedAt": "2026-10-11T13:16:56+00:00",
+      "issue": 8
+    }
+  },
+  "scores": {
+    "nfl-2026-10-11-chicago-bears-green-bay-packers-1-00-pm-et": "NNhaN",
+    "nfl-2026-10-11-cleveland-browns-new-york-jets-1-00-pm-et": "NaaNh",
+    "nfl-2026-10-11-detroit-lions-arizona-cardinals-4-25-pm-et": "NahNa",
+    "nfl-2026-10-11-houston-texans-tennessee-titans-1-00-pm-et": "Naa",
+    "nfl-2026-10-11-indianapolis-colts-pittsburgh-steelers-1-00-pm-et": "NhhhNhh",
+    "nfl-2026-10-11-minnesota-vikings-new-orleans-saints-1-00-pm-et": "NhNh",
+    "nfl-2026-10-11-philadelphia-eagles-jacksonville-jaguars-9-30-am-et": "NhhNa",
+    "nfl-2026-10-11-san-francisco-49ers-seattle-seahawks-4-25-pm-et": "NaN"
+  }
+}
