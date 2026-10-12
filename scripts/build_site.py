@@ -2,7 +2,8 @@
 """Builds the GitHub Pages pick sheet: copies site/index.html and writes
 data.json with the latest slate, the season scoreboard for the Ledger, the
 Second Opinion, the NFL/CFB-only Trend check and Blowout check, and your own
-picks (data/mypicks/), and your picks on the latest slate.
+picks (data/mypicks/, each tagged with the models that agreed or disagreed),
+and your picks on the latest slate.
 
 Usage: python scripts/build_site.py [--out _site]
 """
@@ -103,7 +104,8 @@ def build():
             for g in doc.get("games", []):
                 final = is_final(doc, g)
                 mine = picks_today.get(game_id(sport, date_str, g), {}).get("side")
-                for who, side in [(k, f(g)) for k, f in MODEL_SIDES] + [("mine", mine)]:
+                model_sides = [(k, f(g)) for k, f in MODEL_SIDES]
+                for who, side in model_sides + [("mine", mine)]:
                     if side not in ("away", "home", "draw"):
                         continue
                     tier = g.get("confidence") if who == "ledger" else g.get("altConfidence") if who == "alt" else None
@@ -111,6 +113,11 @@ def build():
                     play = {"d": date_str, "s": sport, "w": who, "t": tier,
                             "g": f"{g.get('away')} @ {g.get('home')}", "k": team_for(g, side),
                             "sp": ln["spread"], "mo": ln["moneyline"]}
+                    if who == "mine":
+                        # Which models were on your side ("ag") or the other
+                        # side ("op") of this game, for the agreement table.
+                        play["ag"] = [k for k, s in model_sides if s == side]
+                        play["op"] = [k for k, s in model_sides if s and s != side]
                     if not final:
                         play.update({"a": None, "ap": None, "m": None, "mp": None, "x": 0, "pd": 1})
                         plays.append(play)

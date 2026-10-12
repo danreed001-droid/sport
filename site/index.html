@@ -102,6 +102,14 @@ section.hero{border-top:0;}
 .kpi-stats div{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-family:'IBM Plex Mono',monospace;}
 .kpi-stats b{display:block;font-size:14px;color:var(--ink);letter-spacing:0;text-transform:none;font-family:'Work Sans',sans-serif;margin-top:1px;}
 .kpi-note{font-size:11px;color:var(--muted);}
+.agcard{margin-top:12px;}
+.agtbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;}
+.agtbl th,.agtbl td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--rule);white-space:nowrap;}
+.agtbl th{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+.agtbl .num{text-align:right;}
+.agtbl tr.tot td{font-weight:700;}
+.agtbl tbody tr:last-child td{border-bottom:0;}
+.agtbl .key{display:inline-block;width:10px;height:3px;border-radius:2px;margin-right:7px;vertical-align:middle;}
 .charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:12px;margin-top:12px;}
 .chartcard{background:var(--surface);border:1px solid var(--rule);border-radius:12px;box-shadow:var(--shadow);padding:14px 14px 10px;min-width:0;position:relative;}
 .chartcard.wide{grid-column:1/-1;}
@@ -599,6 +607,7 @@ footer b{color:var(--ink);}
       + '</div>'
       + '<p class="rangelbl" id="rangelbl"></p>'
       + '<div class="kpis" id="kpis"></div>'
+      + '<div class="chartcard agcard"><h3>Your picks with the models</h3><div class="csub" id="agsub"></div><div class="scroller"><table class="agtbl" id="agtbl"></table></div></div>'
       + '<div class="charts">'
         + '<div class="chartcard wide"><h3>Profit over time</h3><div class="csub" id="c1sub"></div><div class="legend" id="c1leg"></div><div class="plot" id="c1"></div><details class="tv"><summary>Show as a table</summary><div class="scroller" id="c1tbl"></div></details></div>'
         + '<div class="chartcard"><h3>Win rate over time</h3><div class="csub" id="c2sub"></div><div class="plot" id="c2"></div><details class="tv"><summary>Show as a table</summary><div class="scroller" id="c2tbl"></div></details></div>'
@@ -691,6 +700,34 @@ footer b{color:var(--ink);}
     document.getElementById('logcount').textContent = rows.length ? 'Showing '+Math.min(LOG.shown, rows.length)+' of '+rows.length : '';
   }
 
+  // Your graded picks split by which models (Ledger, Second Opinion, Trend,
+  // Blowout) were on the same side or the other side of the same game.
+  function renderAgree(list, mk){
+    var mine = list.filter(function(p){ return p.w==='mine'; });
+    var models = WHO.filter(function(w){ return w.k!=='mine'; });
+    var has = function(p, k, key){ return (p[key]||[]).indexOf(k) >= 0; };
+    var rows = [
+      ['All your picks', function(){ return true; }, 1],
+      ['At least 1 model with you', function(p){ return (p.ag||[]).length >= 1; }],
+      ['2 or more models with you', function(p){ return (p.ag||[]).length >= 2; }],
+      ['Models with you, none against', function(p){ return (p.ag||[]).length && !(p.op||[]).length; }],
+      ['A model on the other side', function(p){ return (p.op||[]).length >= 1; }],
+      ['No model picked the game', function(p){ return !(p.ag||[]).length && !(p.op||[]).length; }]
+    ].concat(models.map(function(w){ return ['With '+(/^The /.test(w.label)?'the '+w.label.slice(4):'the '+w.label), function(p){ return has(p, w.k, 'ag'); }, 0, w.c]; }))
+     .concat(models.map(function(w){ return ['Against '+(/^The /.test(w.label)?'the '+w.label.slice(4):'the '+w.label), function(p){ return has(p, w.k, 'op'); }, 0, w.c]; }));
+    document.getElementById('agsub').textContent = mine.length
+      ? 'Your graded picks '+mk+', grouped by which models took the same side or the other side of that game.'
+      : 'No graded picks of yours in this view yet. Once you make picks, this shows how they do when the models agree or disagree.';
+    document.getElementById('agtbl').innerHTML = mine.length ? '<thead><tr><th>When</th><th class="num">Picks</th><th class="num">Record</th><th class="num">Win %</th><th class="num">Profit</th><th class="num">ROI</th></tr></thead><tbody>'
+      + rows.map(function(r){
+          var sub = mine.filter(r[1]);
+          if(!sub.length && !r[2]) return '';
+          var a = summarize(sub, 'mine'), n = a.w+a.l, ro = roi(a);
+          return '<tr'+(r[2]?' class="tot"':'')+'><td>'+(r[3]?'<i class="key" style="background:'+r[3]+'"></i>':'')+esc(r[0])+'</td><td class="num">'+sub.length+'</td><td class="num">'+recText(a)+'</td><td class="num">'+(n?pct(a.w,n):'—')+'</td>'
+            + '<td class="num '+(a.priced?cls(a.profit):'flat')+'">'+(a.priced?money(a.profit):'—')+'</td><td class="num '+(ro==null?'flat':cls(ro))+'">'+(ro==null?'—':(ro>0?'+':'')+ro+'%')+'</td></tr>';
+        }).join('') + '</tbody>' : '';
+  }
+
   function renderDash(){
     if(!document.getElementById('dashboard')) return;
     var list = filteredPlays(), mk = DASH.market==='ats' ? 'against the spread' : 'on the moneyline';
@@ -709,6 +746,8 @@ footer b{color:var(--ink);}
         + '<div class="kpi-stats"><div>Record<b>'+recText(a)+'</b></div><div>Win %<b>'+(n?pct(a.w,n):'—')+'</b></div><div>ROI<b class="'+(r==null?'flat':cls(r))+'">'+(r==null?'—':(r>0?'+':'')+r+'%')+'</b></div></div>'
         + note + '</div>';
     }).join('');
+
+    renderAgree(list, mk);
 
     var legend = WHO.map(function(w, i){ return '<span><i style="background:'+w.c+'"></i>'+w.label+(ser.series[i].any?'':' (no plays)')+'</span>'; }).join('');
     document.getElementById('c1leg').innerHTML = legend;
