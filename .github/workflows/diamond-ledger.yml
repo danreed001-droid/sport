@@ -13,6 +13,10 @@ on:
     # Backup: GitHub often starts scheduled runs hours late. Re-running is
     # harmless — only slates still unscored get graded.
     - cron: "0 17 * * *"  # ~1pm ET
+    # More backups: GitHub sometimes drops scheduled runs entirely (both
+    # runs above were skipped on 2026-10-12).
+    - cron: "0 21 * * *"  # ~5pm ET
+    - cron: "0 2 * * *"   # ~10pm ET
   workflow_dispatch:
     inputs:
       sports:
