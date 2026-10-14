@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-13",
+  "weekday": "Tuesday",
+  "sport": "mlb",
+  "scored": false,
+  "generatedAt": "2026-10-13T14:32:06Z",
+  "games": [
+    {"altCategoryTally":"3-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Tampa Bay Rays +86 season run diff vs Cleveland Guardians +11 favors Rays (75-run gap clears the 15-run threshold)","Injuries/Lineup (weighted x2 -- multi-player cluster): Guardians missing 1B/DH Rhys Hoskins (left off ALDS/ALCS roster with injury) and reliever Colin Holderman (injured, also left off roster) favors Rays","Matchup splits: Rays rank 25th in MLB vs LHP this season (.678 OPS) and face lefty Messick tonight, while Guardians rank 24th vs RHP (.706 OPS) facing righty Peralta -- Guardians' lineup is comparatively better-suited to tonight's handedness matchup, favors Guardians"],"altReturn":null,"altSpreadReturn":null,"away":"Cleveland Guardians","awayERA":2.56,"awayMoneyline":115,"awayOPS":0.696,"awayOppOPS":0.623,"awayPitcher":"Parker Messick","awayRD":11,"awayScore":null,"awaySpread":1.5,"awaySpreadOdds":-200,"awayWHIP":1.063,"confidence":"skip","correct":null,"home":"Tampa Bay Rays","homeERA":4.42,"homeMoneyline":-135,"homeOPS":0.728,"homeOppOPS":0.732,"homePitcher":"Freddy Peralta","homeRD":86,"homeScore":null,"homeSpread":-1.5,"homeSpreadOdds":165,"homeWHIP":1.325,"opsGap":62.07,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"opsa-veto","skipped":true,"time":"8:00 PM ET"}
+  ]
+}
