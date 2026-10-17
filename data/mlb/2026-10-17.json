@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-17",
+  "weekday": "Saturday",
+  "sport": "mlb",
+  "scored": false,
+  "generatedAt": "2026-10-17T14:08:20Z",
+  "games": [
+    {"altCategoryTally":"3-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Tampa Bay Rays +86 season run differential vs Cleveland Guardians +11 (75-run gap, clears the 15-run floor) favors Rays; no WEIGHTED-RULE discount applies since neither Martinez nor Armstrong is a first-start-for-team debut or 15+ day IL return arm","Injuries/Lineup: Rays left-hander Shane McClanahan remains out for the rest of the postseason (left forearm tightness) -- a single-player absence, favors Guardians","Form: Guardians favored -- Cleveland has won 5 of its last 6 games overall and leads the ALCS 2-1, having won its last two games at home; Tampa Bay is 1-2 in the series since Game 1","Market: Guardians favored -- Tampa Bay is drawing roughly 75% of bets and 83% of handle on the moneyline, yet the line has stayed close to even (Rays -112 to -116, Guardians -104 to -105) instead of moving toward Tampa Bay the way that lopsided public money would suggest, consistent with sharper money on Cleveland","Matchup splits: Rays favored -- Tampa Bay ranks 4th in MLB with a .751 OPS vs RHP, a good fit against Cleveland's righty-heavy bullpen-game plan (Armstrong, Bibee, Cecconi); Guardians' .706 OPS vs RHP (24th) lags facing longtime Rays RHP starter Nick Martinez"],"altReturn":null,"altSpreadReturn":null,"away":"Tampa Bay Rays","awayERA":3.1,"awayMoneyline":-112,"awayOPS":0.728,"awayOppOPS":null,"awayPitcher":"Nick Martinez","awayRD":86,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":162,"awayWHIP":1.09,"confidence":"lean","correct":null,"home":"Cleveland Guardians","homeERA":4.58,"homeMoneyline":-104,"homeOPS":0.696,"homeOppOPS":null,"homePitcher":"Shawn Armstrong (opener)","homeRD":11,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":-196,"homeWHIP":1.39,"note":"ALCS Game 4 (rescheduled from Fri. rainout)","opsGap":62.07,"pick":"Tampa Bay Rays","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"time":"8:00 PM ET"}
+  ]
+}
