@@ -1,8 +1,8 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
 401878771,2026-10-17,Scheduled,Chelsea,0,0.33,Everton,0,0.5,-,-,7:30 AM
-401879262,2026-10-17,Scheduled,Liverpool,0,0.0,Brentford,0,1.0,-,-,10:00 AM
+401879262,2026-10-17,90'+2',Liverpool,2,0.0,Brentford,1,1.0,-,-,10:00 AM
 401878770,2026-10-17,Scheduled,Hull City,0,0.33,Fulham,0,-0.67,-,-,10:00 AM
-401879259,2026-10-17,Scheduled,Ipswich Town,0,-0.5,Manchester City,0,1.83,-,-,10:00 AM
+401879259,2026-10-17,90'+10',Ipswich Town,2,-0.5,Manchester City,3,1.83,-,-,10:00 AM
 401879258,2026-10-17,Scheduled,Aston Villa,0,-0.83,Newcastle United,0,-0.5,-,-,12:30 PM
 401879267,2026-10-12,2',Newcastle United,0,0.0,Coventry City,0,-1.8,-,-,3:00 PM
 401878773,2026-10-10,HT,Tottenham Hotspur,0,-1.2,Manchester United,0,0.0,-,-,12:30 PM
