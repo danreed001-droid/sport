@@ -2,9 +2,53 @@
   "date": "2026-10-16",
   "weekday": "Friday",
   "sport": "mlb",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-10-16T14:19:31Z",
   "games": [
-    {"altCategoryTally":"2-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Rays +86 run differential vs Guardians +11 (75-run gap, well above the 15-run floor) favors Rays","Form: Guardians have won 2 of their last 3 ALCS games (including Game 3), while the Rays are 1-2 in the ALCS since sweeping the ALDS -- favors Guardians","Matchup splits: Rays rank 4th in MLB with a .751 OPS vs RHP, favoring Rays against Cleveland's righty-heavy bullpen-game plan (Bibee, Cecconi as likely arms); Guardians' .706 OPS vs RHP (24th) lags facing long-time Rays RHP starter Nick Martinez"],"altReturn":null,"altSpreadReturn":null,"away":"Tampa Bay Rays","awayERA":3.1,"awayMoneyline":-104,"awayOPS":0.728,"awayOppOPS":null,"awayPitcher":"Nick Martinez","awayRD":86,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":174,"awayWHIP":1.09,"confidence":"lean","correct":null,"home":"Cleveland Guardians","homeERA":null,"homeMoneyline":100,"homeOPS":0.696,"homeOppOPS":null,"homePitcher":"TBD (bullpen game)","homeRD":11,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":-182,"homeWHIP":null,"opsGap":62.07,"pick":"Tampa Bay Rays","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"time":"8:00 PM ET"}
-  ]
+    {
+      "altCategoryTally": "2-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Rays +86 run differential vs Guardians +11 (75-run gap, well above the 15-run floor) favors Rays",
+        "Form: Guardians have won 2 of their last 3 ALCS games (including Game 3), while the Rays are 1-2 in the ALCS since sweeping the ALDS -- favors Guardians",
+        "Matchup splits: Rays rank 4th in MLB with a .751 OPS vs RHP, favoring Rays against Cleveland's righty-heavy bullpen-game plan (Bibee, Cecconi as likely arms); Guardians' .706 OPS vs RHP (24th) lags facing long-time Rays RHP starter Nick Martinez"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Tampa Bay Rays",
+      "awayERA": 3.1,
+      "awayMoneyline": -104,
+      "awayOPS": 0.728,
+      "awayOppOPS": null,
+      "awayPitcher": "Nick Martinez",
+      "awayRD": 86,
+      "awayScore": 0.0,
+      "awaySpread": -1.5,
+      "awaySpreadOdds": 174,
+      "awayWHIP": 1.09,
+      "confidence": "lean",
+      "correct": null,
+      "home": "Cleveland Guardians",
+      "homeERA": null,
+      "homeMoneyline": 100,
+      "homeOPS": 0.696,
+      "homeOppOPS": null,
+      "homePitcher": "TBD (bullpen game)",
+      "homeRD": 11,
+      "homeScore": 0.0,
+      "homeSpread": 1.5,
+      "homeSpreadOdds": -182,
+      "homeWHIP": null,
+      "opsGap": 62.07,
+      "pick": "Tampa Bay Rays",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "time": "8:00 PM ET"
+    }
+  ],
+  "scoredAt": "2026-10-17T06:29:26.060779+00:00"
 }
