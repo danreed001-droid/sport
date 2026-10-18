@@ -1,0 +1,46 @@
+{
+  "date": "2026-10-18",
+  "picks": {
+    "nfl-2026-10-18-arizona-cardinals-los-angeles-rams-4-05-pm-et": {
+      "sport": "nfl",
+      "away": "Arizona Cardinals",
+      "home": "Los Angeles Rams",
+      "time": "4:05 PM ET",
+      "side": "away",
+      "team": "Arizona Cardinals",
+      "spread": 12.5,
+      "spreadOdds": -102,
+      "moneyline": 640,
+      "submittedAt": "2026-10-18T16:56:24+00:00",
+      "issue": 10
+    },
+    "nfl-2026-10-18-carolina-panthers-philadelphia-eagles-1-00-pm-et": {
+      "sport": "nfl",
+      "away": "Carolina Panthers",
+      "home": "Philadelphia Eagles",
+      "time": "1:00 PM ET",
+      "side": "away",
+      "team": "Carolina Panthers",
+      "spread": -3.5,
+      "spreadOdds": -110,
+      "moneyline": -180,
+      "submittedAt": "2026-10-18T16:56:24+00:00",
+      "issue": 10
+    }
+  },
+  "scores": {
+    "mlb-2026-10-18-tampa-bay-rays-cleveland-guardians-5-08-pm-et": "aaah",
+    "nfl-2026-10-18-arizona-cardinals-los-angeles-rams-4-05-pm-et": "NNhN",
+    "nfl-2026-10-18-baltimore-ravens-cleveland-browns-1-00-pm-et": "NhN",
+    "nfl-2026-10-18-buffalo-bills-las-vegas-raiders-4-25-pm-et": "NNN",
+    "nfl-2026-10-18-carolina-panthers-philadelphia-eagles-1-00-pm-et": "NaNaNa",
+    "nfl-2026-10-18-chicago-bears-atlanta-falcons-1-00-pm-et": "NNN",
+    "nfl-2026-10-18-dallas-cowboys-green-bay-packers-8-20-pm-et": "NNNN",
+    "nfl-2026-10-18-houston-texans-jacksonville-jaguars-9-30-am-et": "NhN",
+    "nfl-2026-10-18-los-angeles-chargers-kansas-city-chiefs-4-25-pm-et": "NhNhN",
+    "nfl-2026-10-18-new-orleans-saints-new-york-giants-1-00-pm-et": "NaN",
+    "nfl-2026-10-18-new-york-jets-new-england-patriots-1-00-pm-et": "NNHN",
+    "nfl-2026-10-18-pittsburgh-steelers-tampa-bay-buccaneers-1-00-pm-et": "NhN",
+    "nfl-2026-10-18-tennessee-titans-indianapolis-colts-1-00-pm-et": "NNN"
+  }
+}
