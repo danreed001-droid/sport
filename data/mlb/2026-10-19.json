@@ -2,11 +2,62 @@
   "date": "2026-10-19",
   "weekday": "Monday",
   "sport": "mlb",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-10-19T14:13:21Z",
-  "auditChanges": ["MLB Guardians @ Rays: corrected Guardians' starter Cecconi -> Armstrong (ERA 4.58, WHIP 1.39); still skip (whip-close), no pick change"],
+  "auditChanges": [
+    "MLB Guardians @ Rays: corrected Guardians' starter Cecconi -> Armstrong (ERA 4.58, WHIP 1.39); still skip (whip-close), no pick change"
+  ],
   "auditedAt": "2026-10-19T15:50:00Z",
   "games": [
-    {"altCategoryTally":"4-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Rays +86 season run diff vs Guardians +11 (gap 75, >=15 threshold) favors Rays","Rest: Cleveland's top relievers (Messick, Griffin) are taxed/limited, forcing a bullpen game behind opener Armstrong, while Tampa's bullpen is fresher after Rasmussen's 7 IP in Game 5 and Peralta threw only 9 relief pitches -- favors Rays","Form: Rays have won the last two games of this series (Games 4-5) to take a 3-2 lead, while Cleveland has dropped back-to-back games facing elimination -- favors Rays","Market: Public money is heavily on Tampa Bay (~68% of money, ~73% of tickets) with no reverse line movement noted -- favors Rays","Matchup splits: Jose Ramirez is 3-for-6 with 4 walks against Peralta this season -- favors Guardians"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Guardians' opener is Shawn Armstrong (not Slade Cecconi); his 4.58 ERA/1.39 WHIP replace Cecconi's, and the WHIP gap is still within 0.20, so the skip stands.","away":"Cleveland Guardians","awayERA":4.58,"awayMoneyline":120,"awayOPS":0.696,"awayOppOPS":null,"awayPitcher":"Shawn Armstrong","awayRD":11,"awayScore":null,"awaySpread":1.5,"awaySpreadOdds":-190,"awayWHIP":1.39,"confidence":"skip","correct":null,"home":"Tampa Bay Rays","homeERA":4.42,"homeMoneyline":-145,"homeOPS":0.728,"homeOppOPS":null,"homePitcher":"Freddy Peralta","homeRD":86,"homeScore":null,"homeSpread":-1.5,"homeSpreadOdds":155,"homeWHIP":1.33,"opsGap":62.07,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"whip-close","skipped":true,"time":"8:08 PM ET"}
-  ]
+    {
+      "altCategoryTally": "4-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Rays +86 season run diff vs Guardians +11 (gap 75, >=15 threshold) favors Rays",
+        "Rest: Cleveland's top relievers (Messick, Griffin) are taxed/limited, forcing a bullpen game behind opener Armstrong, while Tampa's bullpen is fresher after Rasmussen's 7 IP in Game 5 and Peralta threw only 9 relief pitches -- favors Rays",
+        "Form: Rays have won the last two games of this series (Games 4-5) to take a 3-2 lead, while Cleveland has dropped back-to-back games facing elimination -- favors Rays",
+        "Market: Public money is heavily on Tampa Bay (~68% of money, ~73% of tickets) with no reverse line movement noted -- favors Rays",
+        "Matchup splits: Jose Ramirez is 3-for-6 with 4 walks against Peralta this season -- favors Guardians"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Guardians' opener is Shawn Armstrong (not Slade Cecconi); his 4.58 ERA/1.39 WHIP replace Cecconi's, and the WHIP gap is still within 0.20, so the skip stands.",
+      "away": "Cleveland Guardians",
+      "awayERA": 4.58,
+      "awayMoneyline": 120,
+      "awayOPS": 0.696,
+      "awayOppOPS": null,
+      "awayPitcher": "Shawn Armstrong",
+      "awayRD": 11,
+      "awayScore": 3.0,
+      "awaySpread": 1.5,
+      "awaySpreadOdds": -190,
+      "awayWHIP": 1.39,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Tampa Bay Rays",
+      "homeERA": 4.42,
+      "homeMoneyline": -145,
+      "homeOPS": 0.728,
+      "homeOppOPS": null,
+      "homePitcher": "Freddy Peralta",
+      "homeRD": 86,
+      "homeScore": 7.0,
+      "homeSpread": -1.5,
+      "homeSpreadOdds": 155,
+      "homeWHIP": 1.33,
+      "opsGap": 62.07,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "whip-close",
+      "skipped": true,
+      "time": "8:08 PM ET"
+    }
+  ],
+  "scoredAt": "2026-10-20T07:03:17.897909+00:00"
 }
