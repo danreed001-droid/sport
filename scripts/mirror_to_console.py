@@ -8,7 +8,7 @@ each slate that is missing or different there.
 
 Usage: python scripts/mirror_to_console.py <console_export_dir> <out_dir>
   <console_export_dir>/<collection>/<date>.json, as ArtifactData's out_dir
-  writes it (collections: days, nfl, cfb, nba, ncaab).
+  writes it (collections: days, nfl, cfb, nba, ncaab, soccer).
   Writes <out_dir>/<collection>/<date>.json for each slate to "set" and
   prints one "<collection>/<date>" line per slate, or "Console is current."
 """
@@ -20,9 +20,9 @@ sys.path.insert(0, os.path.dirname(__file__))
 from lib import store  # noqa: E402
 from sync_ledger import normalize  # noqa: E402
 
-# Console collection -> data/ folder. Soccer stays out: its three-way
-# model doesn't fit the Console's two-way scorecards.
-COLLECTIONS = {"days": "mlb", "nfl": "nfl", "cfb": "cfb", "nba": "nba", "ncaab": "ncaab"}
+# Console collection -> data/ folder.
+COLLECTIONS = {"days": "mlb", "nfl": "nfl", "cfb": "cfb", "nba": "nba", "ncaab": "ncaab",
+               "soccer": "soccer"}
 
 
 def main():
