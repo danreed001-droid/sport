@@ -14,7 +14,7 @@ import time
 from datetime import timedelta
 
 sys.path.insert(0, os.path.dirname(__file__))
-from lib import espn, sports  # noqa: E402
+from lib import espn, sports, store  # noqa: E402
 from lib.dates import ET, now_et  # noqa: E402
 from datetime import datetime
 
@@ -29,6 +29,18 @@ FIELDNAMES = [
 # How many days back each run re-crawls. More than yesterday so a slate whose
 # late games weren't final at the last run still gets its scores.
 CRAWL_DAYS = 3
+# Older slates still ungraded (e.g. scores that never arrived) are re-crawled
+# too, as far back as this.
+PENDING_LOOKBACK_DAYS = 45
+
+
+def _pending_dates(cfg, now):
+    """YYYYMMDD dates of past slates in this sport's collection that are
+    still unscored, within PENDING_LOOKBACK_DAYS."""
+    today = now.strftime("%Y-%m-%d")
+    oldest = (now - timedelta(days=PENDING_LOOKBACK_DAYS)).strftime("%Y-%m-%d")
+    return [d.replace("-", "") for d, doc in store.list_docs(cfg["collection"])
+            if not doc.get("scored") and oldest <= d < today]
 
 
 def _et_start(iso_utc):
@@ -77,10 +89,15 @@ def main(sport_key):
     history = load_history(sport_key)
     print(f"[{cfg['label']}] loaded {len(history)} historical games from repo archive.")
 
-    differentials = espn.fetch_standings(session, cfg["espn_sport"], cfg["espn_league"])
+    try:
+        differentials = espn.fetch_standings(session, cfg["espn_sport"], cfg["espn_league"])
+    except Exception as exc:  # e.g. soccer's combined "all" feed has no standings
+        print(f"[{cfg['label']}] no standings ({exc}); point differentials left blank.")
+        differentials = {}
 
     now = now_et()
     dates_to_crawl = [(now - timedelta(days=n)).strftime("%Y%m%d") for n in range(CRAWL_DAYS, -1, -1)]
+    dates_to_crawl = sorted(set(dates_to_crawl) | set(_pending_dates(cfg, now)))
 
     for date_str in dates_to_crawl:
         try:
@@ -107,7 +124,8 @@ def main(sport_key):
                 if home_ml is None:
                     home_ml = _existing_ml(existing, "Home_ML")
 
-                if (away_ml is None or home_ml is None) and (is_completed or "final" in str(detail).lower()):
+                if (cfg.get("summary_odds", True) and (away_ml is None or home_ml is None)
+                        and (is_completed or "final" in str(detail).lower())):
                     s_aml, s_hml = espn.fetch_summary_odds(session, cfg["espn_sport"], cfg["espn_league"], game_id)
                     away_ml = away_ml if away_ml is not None else s_aml
                     home_ml = home_ml if home_ml is not None else s_hml

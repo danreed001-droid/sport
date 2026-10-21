@@ -10,8 +10,10 @@ dispatch to that sport's own 3-way grading function instead.
 import csv
 import importlib
 import os
+import re
 import sys
-from datetime import datetime, timezone
+import unicodedata
+from datetime import date, datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
@@ -20,6 +22,10 @@ from lib.picks import BIG_DOG_LIMIT, BIG_DOG_SPORTS  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# A game with no score row at all on its slate date this many days later was
+# moved or postponed: it's graded as void (no result) so the rest of its
+# slate isn't held back forever.
+VOID_AFTER_DAYS = 4
 
 
 def _csv_path(sport_key):
@@ -87,9 +93,56 @@ def find_match(scores_for_date, g, games=None):
     return None
 
 
+# Common short names a slate may use for a club ESPN lists differently.
+TEAM_ALIASES = {
+    "nycfc": "new york city", "chivas": "guadalajara", "psg": "paris saint germain",
+    "lafc": "los angeles", "sporting kc": "sporting kansas city", "man city": "manchester city",
+    "man united": "manchester united", "man utd": "manchester united", "spurs": "tottenham hotspur",
+    "inter": "internazionale", "atletico madrid": "atletico de madrid", "bayern": "bayern munich",
+}
+_FILLER = {"fc", "cf", "sc", "afc", "cd", "club", "de", "the", "ac", "ssc", "as", "sv", "fk", "sk", "vfb", "bsc"}
+
+
+def _norm_team(name):
+    s = (name or "").replace("ø", "o").replace("Ø", "O").replace(".", "")
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
+    s = re.sub(r"[^a-z0-9 ]+", " ", s)
+    s = " ".join(s.split())
+    s = TEAM_ALIASES.get(s, s)
+    return frozenset(t for t in s.split() if t not in _FILLER) or frozenset(s.split())
+
+
+def _same_team(a, b):
+    na, nb = _norm_team(a), _norm_team(b)
+    return bool(na and nb) and (na == nb or na <= nb or nb <= na)
+
+
+def find_match_loose(scores_for_date, g):
+    """Fallback for slates whose names differ from ESPN's (accents, "FC",
+    nicknames) or whose home/away is reversed. Returns (row, swapped) where
+    swapped means the slate's away team is ESPN's home team, or (None, False).
+    Only an unambiguous single match counts."""
+    hits = []
+    for row in scores_for_date:
+        if _same_team(g["away"], row["Away_Team"]) and _same_team(g["home"], row["Home_Team"]):
+            hits.append((row, False))
+        elif _same_team(g["away"], row["Home_Team"]) and _same_team(g["home"], row["Away_Team"]):
+            hits.append((row, True))
+    return hits[0] if len(hits) == 1 else (None, False)
+
+
 def is_resolved(status):
     s = (status or "").strip().lower()
-    return s.startswith("final") or "postponed" in s or "cancel" in s
+    return (s.startswith("final") or s.startswith("ft") or s == "aet"
+            or "postponed" in s or "cancel" in s)
+
+
+def went_past_90(status):
+    """Soccer matches decided in extra time or on penalties: a 3-way
+    moneyline settles on the 90-minute score, which the final score doesn't
+    give, so these are left ungraded."""
+    s = (status or "").strip().lower()
+    return s == "aet" or "pen" in s
 
 
 def grade_named(g, team, away_score, home_score, big_dog_limit=10):
@@ -146,8 +199,17 @@ def main(sport_key):
         missing = []
         matches = {}
 
+        swapped = {}
+        voided = set()
+        age_days = (date.fromisoformat(today) - date.fromisoformat(date_str)).days
         for i, g in enumerate(games):
             row = find_match(scores_for_date, g, games)
+            if row is None:
+                row, swapped[i] = find_match_loose(scores_for_date, g)
+            if row is None and scores_for_date and age_days >= VOID_AFTER_DAYS:
+                voided.add(i)
+                matches[i] = {"Away_Score": None, "Home_Score": None, "Status": "Not played on this date"}
+                continue
             if row is None or not is_resolved(row.get("Status")):
                 all_resolved = False
                 missing.append(f"{g['away']} @ {g['home']}")
@@ -162,6 +224,12 @@ def main(sport_key):
             row = matches[i]
             away_score = _num(row.get("Away_Score"))
             home_score = _num(row.get("Home_Score"))
+            if swapped.get(i):  # slate lists this match the other way round
+                away_score, home_score = home_score, away_score
+            if cfg["kind"] == "three_way" and went_past_90(row.get("Status")):
+                away_score = home_score = None
+            if i in voided:
+                g["gradeNote"] = "Not played on this date (moved or postponed); no result."
             g["awayScore"], g["homeScore"] = away_score, home_score
 
             if cfg["kind"] == "three_way":

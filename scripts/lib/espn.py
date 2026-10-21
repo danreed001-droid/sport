@@ -40,7 +40,7 @@ def fmt_num(val):
 
 
 def fetch_scoreboard(session, espn_sport, espn_league, yyyymmdd):
-    url = f"https://site.api.espn.com/apis/site/v2/sports/{espn_sport}/{espn_league}/scoreboard?dates={yyyymmdd}"
+    url = f"https://site.api.espn.com/apis/site/v2/sports/{espn_sport}/{espn_league}/scoreboard?dates={yyyymmdd}&limit=1000"
     r = session.get(url, timeout=15)
     r.raise_for_status()
     return r.json().get("events", [])
@@ -109,7 +109,7 @@ def fetch_event_odds_from_scoreboard(comp):
     signed spreads always come from the Claude research step instead."""
     odds_list = comp.get("odds", [])
     home_ml = away_ml = None
-    if odds_list:
+    if odds_list and isinstance(odds_list[0], dict):  # soccer feeds can send [None]
         odds_data = odds_list[0]
         home_ml = fmt_ml((odds_data.get("homeTeamOdds") or {}).get("moneyLine"))
         away_ml = fmt_ml((odds_data.get("awayTeamOdds") or {}).get("moneyLine"))

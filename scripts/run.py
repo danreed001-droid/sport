@@ -9,7 +9,7 @@ STEP 2 (generating each day's slate) is not run from here at all: the live
 research in claude.ai and mirror the slate they generate straight into
 data/<collection>/<date>.json. This script only grades what's already there.
 
-Usage: python scripts/run.py [sport ...]   (default: nfl cfb mlb nba ncaab epl)
+Usage: python scripts/run.py [sport ...]   (default: nfl cfb mlb nba ncaab soccer epl)
 """
 import os
 import sys
@@ -21,7 +21,7 @@ import score_slate  # noqa: E402
 from lib import sports, store, report  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 
-DEFAULT_SPORTS = ["nfl", "cfb", "mlb", "nba", "ncaab", "epl"]
+DEFAULT_SPORTS = ["nfl", "cfb", "mlb", "nba", "ncaab", "soccer", "epl"]
 
 
 def _fmt(totals):

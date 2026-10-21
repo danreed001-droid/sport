@@ -21,10 +21,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   the sections into `data/audits/<date>.md`.
   Nothing else changes a pick after it's generated.
 - **Grading:** `.github/workflows/diamond-ledger.yml` grades NFL, CFB, MLB,
-  NBA and NCAAB every morning from ESPN (`fetch_scores.py` then
-  `score_slate.py`). The sport Routines no longer grade. Soccer is the
-  exception: its Routine still grades in the database and the sync brings
-  those results over.
+  NBA, NCAAB and soccer every morning from ESPN (`fetch_scores.py` then
+  `score_slate.py`). The sport Routines no longer grade. Soccer uses ESPN's
+  combined soccer feed and grades the 3-way moneyline; matches decided in
+  extra time or on penalties get no result.
 
 ## The user's own picks come from the pick sheet, not from Claude
 

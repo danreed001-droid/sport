@@ -50,15 +50,18 @@ SPORTS = {
     },
     "soccer": {
         # The live "Diamond Ledger — Soccer" Routine's collection: matches from
-        # several competitions (MLS, Liga MX, European leagues) in one daily
-        # doc. Graded in the ledger database and mirrored here already scored,
-        # so it's deliberately left out of the ESPN scoring workflow's list.
+        # several competitions (MLS, Liga MX, UEFA, CONMEBOL...) in one daily
+        # doc. Graded here like every other sport, from ESPN's combined
+        # "all" soccer scoreboard, which spans every competition at once.
         "label": "Soccer",
         "collection": "soccer",
         "model": "soccer_model",
         "kind": "three_way",
         "espn_sport": "soccer",
-        "espn_league": None,
+        "espn_league": "all",
+        # Slates carry their own prices; skip the per-match odds lookups the
+        # combined feed would otherwise need (hundreds of matches a day).
+        "summary_odds": False,
     },
     "epl": {
         # No live scheduled Routine generates this one yet, so it stays

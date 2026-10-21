@@ -20,9 +20,9 @@ on:
   workflow_dispatch:
     inputs:
       sports:
-        description: "Space-separated sport keys to score (default: nfl cfb mlb nba ncaab epl)"
+        description: "Space-separated sport keys to score (default: nfl cfb mlb nba ncaab soccer epl)"
         required: false
-        default: "nfl cfb mlb nba ncaab epl"
+        default: "nfl cfb mlb nba ncaab soccer epl"
 
 permissions:
   contents: write
@@ -41,7 +41,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Fetch scores and grade past slates
-        run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab epl' }}
+        run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab soccer epl' }}
 
       - name: Commit and push results
         run: |
