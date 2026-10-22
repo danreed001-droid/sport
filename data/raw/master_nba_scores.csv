@@ -1,15 +1,17 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401909834,2026-10-21,10:33 - 2nd,Atlanta Hawks,35,-,Orlando Magic,33,-,-,-,7:00 PM
-401909835,2026-10-21,7:18 - 2nd,Milwaukee Bucks,33,-,Washington Wizards,34,-,-,-,7:00 PM
-401909091,2026-10-21,6:28 - 1st,Minnesota Timberwolves,22,-,Miami Heat,17,-,-,-,7:30 PM
-401909836,2026-10-21,7:28 - 1st,Charlotte Hornets,5,-,Brooklyn Nets,11,-,-,-,7:30 PM
-401909837,2026-10-21,8:10 - 1st,Chicago Bulls,6,-,Toronto Raptors,9,-,-,-,7:30 PM
-401909838,2026-10-21,10/21 - 8:00 PM EDT,Utah Jazz,0,-,Memphis Grizzlies,0,-,-,-,8:00 PM
-401909839,2026-10-21,10/21 - 8:00 PM EDT,Indiana Pacers,0,-,New Orleans Pelicans,0,-,-,-,8:00 PM
-401909840,2026-10-21,10/21 - 8:30 PM EDT,Dallas Mavericks,0,-,Houston Rockets,0,-,-,-,8:30 PM
-401909092,2026-10-21,10/21 - 10:00 PM EDT,Golden State Warriors,0,-,Los Angeles Lakers,0,-,-,-,10:00 PM
-401909841,2026-10-21,10/21 - 10:00 PM EDT,Phoenix Suns,0,-,Portland Trail Blazers,0,-,-,-,10:00 PM
-401909842,2026-10-21,10/21 - 10:30 PM EDT,Sacramento Kings,0,-,LA Clippers,0,-,-,-,10:30 PM
+401909093,2026-10-22,10/22 - 7:00 PM EDT,Cleveland Cavaliers,0,-,Philadelphia 76ers,0,-,-,-,7:00 PM
+401909094,2026-10-22,10/22 - 9:30 PM EDT,Denver Nuggets,0,-,Oklahoma City Thunder,0,-,-,-,9:30 PM
+401909834,2026-10-21,Final,Atlanta Hawks,132,-,Orlando Magic,125,-,114,-135,7:00 PM
+401909835,2026-10-21,Final,Milwaukee Bucks,116,-,Washington Wizards,128,-,145,-175,7:00 PM
+401909091,2026-10-21,Final,Minnesota Timberwolves,131,-,Miami Heat,106,-,-102,-118,7:30 PM
+401909836,2026-10-21,Final,Charlotte Hornets,110,-,Brooklyn Nets,103,-,-120,100,7:30 PM
+401909837,2026-10-21,Final,Chicago Bulls,92,-,Toronto Raptors,135,-,360,-470,7:30 PM
+401909838,2026-10-21,Final,Utah Jazz,103,-,Memphis Grizzlies,123,-,105,-125,8:00 PM
+401909839,2026-10-21,Final,Indiana Pacers,123,-,New Orleans Pelicans,120,-,-142,120,8:00 PM
+401909840,2026-10-21,Final,Dallas Mavericks,110,-,Houston Rockets,128,-,330,-425,8:30 PM
+401909092,2026-10-21,Final,Golden State Warriors,105,-,Los Angeles Lakers,127,-,190,-230,10:00 PM
+401909841,2026-10-21,Final,Phoenix Suns,83,-,Portland Trail Blazers,124,-,130,-155,10:00 PM
+401909842,2026-10-21,Final,Sacramento Kings,96,-,LA Clippers,121,-,154,-185,10:30 PM
 401909088,2026-10-20,Final,Boston Celtics,113,-,Detroit Pistons,121,-,-125,105,3:00 PM
 401909089,2026-10-20,Final,Philadelphia 76ers,106,-,New York Knicks,100,-,145,-175,7:00 PM
 401909090,2026-10-20,Final,Oklahoma City Thunder,116,-,San Antonio Spurs,104,-,-118,-102,9:50 PM
