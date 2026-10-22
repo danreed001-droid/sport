@@ -1,12 +1,12 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401915548,2026-10-22,Scheduled,AZ Alkmaar,0,-,Ararat-Armenia,0,-,-,-,12:45 PM
-401915556,2026-10-22,Scheduled,NEC Nijmegen,0,-,Dinamo Zagreb,0,-,-,-,12:45 PM
-401915558,2026-10-22,Scheduled,Torreense,0,-,Ferencvaros,0,-,-,-,12:45 PM
-401915547,2026-10-22,Scheduled,Stade Rennais,0,-,Juventus,0,-,-,-,12:45 PM
-401915546,2026-10-22,Scheduled,Sunderland,0,-,Lech Poznan,0,-,-,-,12:45 PM
-401915559,2026-10-22,Scheduled,Bayer Leverkusen,0,-,OFI Crete,0,-,-,-,12:45 PM
-401915557,2026-10-22,Scheduled,Marseille,0,-,SK Sturm Graz,0,-,-,-,12:45 PM
-401915545,2026-10-22,Scheduled,Hapoel Be'er,0,-,Union St.-Gilloise,0,-,-,-,12:45 PM
+401915548,2026-10-22,HT,AZ Alkmaar,2,-,Ararat-Armenia,0,-,-,-,12:45 PM
+401915556,2026-10-22,HT,NEC Nijmegen,2,-,Dinamo Zagreb,2,-,-,-,12:45 PM
+401915558,2026-10-22,HT,Torreense,1,-,Ferencvaros,1,-,-,-,12:45 PM
+401915547,2026-10-22,HT,Stade Rennais,2,-,Juventus,1,-,-,-,12:45 PM
+401915546,2026-10-22,HT,Sunderland,1,-,Lech Poznan,0,-,-,-,12:45 PM
+401915559,2026-10-22,HT,Bayer Leverkusen,2,-,OFI Crete,0,-,-,-,12:45 PM
+401915557,2026-10-22,HT,Marseille,0,-,SK Sturm Graz,1,-,-,-,12:45 PM
+401915545,2026-10-22,HT,Hapoel Be'er,0,-,Union St.-Gilloise,1,-,-,-,12:45 PM
 401915552,2026-10-22,Scheduled,AC Milan,0,-,AFC Bournemouth,0,-,-,-,3:00 PM
 401915553,2026-10-22,Scheduled,Crystal Palace,0,-,Besiktas,0,-,-,-,3:00 PM
 401915555,2026-10-22,Scheduled,Celta Vigo,0,-,Celtic,0,-,-,-,3:00 PM
@@ -17,16 +17,16 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401915544,2026-10-22,Scheduled,Benfica,0,-,Omonia Nicosia,0,-,-,-,3:00 PM
 401915543,2026-10-22,Scheduled,Lyon,0,-,TSG Hoffenheim,0,-,-,-,3:00 PM
 401915539,2026-10-22,Scheduled,Levski Sofia,0,-,Viktoria Plzen,0,-,-,-,3:00 PM
-401915846,2026-10-22,Scheduled,Panathinaikos,0,-,Kairat Almaty,0,-,-,-,10:30 AM
-401915844,2026-10-22,Scheduled,CSKA Sofia,0,-,FC Nordsjælland,0,-,-,-,12:45 PM
-401915840,2026-10-22,Scheduled,FC Lugano,0,-,Getafe,0,-,-,-,12:45 PM
-401915845,2026-10-22,Scheduled,Mjällby AIF,0,-,Iberia 1999,0,-,-,-,12:45 PM
-401915839,2026-10-22,Scheduled,CSU Craiova,0,-,Inter D'Escaldes,0,-,-,-,12:45 PM
-401915842,2026-10-22,Scheduled,Brighton & Hove Albion,0,-,Jablonec,0,-,-,-,12:45 PM
-401915841,2026-10-22,Scheduled,SK Brann,0,-,Kauno Zalgiris,0,-,-,-,12:45 PM
-401915838,2026-10-22,Scheduled,Riga FC,0,-,Pafos,0,-,-,-,12:45 PM
-401915843,2026-10-22,Scheduled,F.C. København,0,-,Red Star Belgrade,0,-,-,-,12:45 PM
-401915745,2026-10-22,Scheduled,Heart of Midlothian,0,-,Trabzonspor,0,-,-,-,12:45 PM
+401915846,2026-10-22,FT,Panathinaikos,5,-,Kairat Almaty,1,-,-,-,10:30 AM
+401915844,2026-10-22,HT,CSKA Sofia,1,-,FC Nordsjælland,0,-,-,-,12:45 PM
+401915840,2026-10-22,HT,FC Lugano,3,-,Getafe,1,-,-,-,12:45 PM
+401915845,2026-10-22,HT,Mjällby AIF,0,-,Iberia 1999,0,-,-,-,12:45 PM
+401915839,2026-10-22,HT,CSU Craiova,2,-,Inter D'Escaldes,0,-,-,-,12:45 PM
+401915842,2026-10-22,HT,Brighton & Hove Albion,0,-,Jablonec,0,-,-,-,12:45 PM
+401915841,2026-10-22,HT,SK Brann,3,-,Kauno Zalgiris,1,-,-,-,12:45 PM
+401915838,2026-10-22,HT,Riga FC,0,-,Pafos,0,-,-,-,12:45 PM
+401915843,2026-10-22,HT,F.C. København,1,-,Red Star Belgrade,2,-,-,-,12:45 PM
+401915745,2026-10-22,HT,Heart of Midlothian,0,-,Trabzonspor,1,-,-,-,12:45 PM
 401915744,2026-10-22,Scheduled,Egnatia,0,-,AGF,0,-,-,-,3:00 PM
 401915837,2026-10-22,Scheduled,Atalanta,0,-,Ajax Amsterdam,0,-,-,-,3:00 PM
 401915836,2026-10-22,Scheduled,SC Freiburg,0,-,AS Monaco,0,-,-,-,3:00 PM
@@ -37,25 +37,25 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401915833,2026-10-22,Scheduled,FC Twente,0,-,Lincoln Red Imps,0,-,-,-,3:00 PM
 401912521,2026-10-22,Scheduled,Estudiantes de La Plata,0,-,Flamengo,0,-,-,-,8:30 PM
 401878621,2026-10-22,Scheduled,Carolina Ascent FC,0,-,Fort Lauderdale United FC,0,-,-,-,7:30 PM
-401926253,2026-10-22,Scheduled,COTON GREEN WOMEN,0,-,Lye Town,0,-,-,-,2:45 PM
-401900891,2026-10-22,Scheduled,Al Fayha,0,-,Al Hazem,0,-,-,-,9:40 AM
-401900445,2026-10-22,Scheduled,Al Shabab,0,-,Al Fateh,0,-,-,-,10:45 AM
+401926253,2026-10-22,Scheduled,Coton Green,0,-,Lye Town,0,-,-,-,2:45 PM
+401900891,2026-10-22,FT,Al Fayha,2,-,Al Hazem,2,-,-,-,9:40 AM
+401900445,2026-10-22,FT,Al Shabab,3,-,Al Fateh,1,-,-,-,10:45 AM
 401900892,2026-10-22,Scheduled,Al Khaleej,0,-,Al Ahli,0,-,-,-,2:00 PM
 401886335,2026-10-22,Scheduled,Cruz Azul Hidalgo,0,-,Alebrijes de Oaxaca,0,-,-,-,9:00 PM
 401924346,2026-10-22,Scheduled,León,0,-,Atlas,0,-,-,-,9:06 PM
 401930976,2026-10-22,Scheduled,Rajasthan United FC,0,-,Delhi FC,0,-,-,-,5:30 AM
-401874121,2026-10-22,Scheduled,Samoa U17,0,-,China PR U17,0,-,-,-,11:00 AM
-401874054,2026-10-22,Scheduled,Australia U17,0,-,Spain U17,0,-,-,-,11:00 AM
+401874121,2026-10-22,FT,Samoa U17,0,-,China PR U17,7,-,-,-,11:00 AM
+401874054,2026-10-22,FT,Australia U17,1,-,Spain U17,3,-,-,-,11:00 AM
 401874125,2026-10-22,Scheduled,Mexico U17,0,-,Chile U17,0,-,-,-,2:00 PM
 401890782,2026-10-22,Scheduled,Kenya U17,0,-,United States U17,0,-,-,-,2:00 PM
 401877877,2026-10-22,Scheduled,Deportivo Pasto,0,-,Atlético Nacional,0,-,-,-,9:00 PM
 401929987,2026-10-22,Scheduled,The Strongest,0,-,Always Ready,0,-,-,-,8:00 PM
 401922485,2026-10-22,Scheduled,Alajuelense,0,-,FC Motagua,0,-,-,-,9:00 PM
-401898758,2026-10-22,Scheduled,Fairleigh Dickinson,0,-,Long Island University,0,-,-,-,1:00 PM
+401898758,2026-10-22,4',Fairleigh Dickinson,0,-,Long Island University,0,-,-,-,1:00 PM
 401900654,2026-10-22,Scheduled,Charlotte,0,-,Tulsa,0,-,-,-,8:00 PM
 401898925,2026-10-22,Scheduled,Bradley,0,-,Missouri State,0,-,-,-,8:30 PM
-401897682,2026-10-22,Scheduled,Northern Kentucky,0,-,Detroit Mercy,0,-,-,-,1:00 PM
-401901111,2026-10-22,Scheduled,Milwaukee,0,-,Purdue Fort Wayne,0,-,-,-,1:00 PM
+401897682,2026-10-22,34',Northern Kentucky,2,-,Detroit Mercy,0,-,-,-,1:00 PM
+401901111,2026-10-22,35',Milwaukee,0,-,Purdue Fort Wayne,0,-,-,-,1:00 PM
 401897204,2026-10-22,Scheduled,Portland State,0,-,Northern Colorado,0,-,-,-,2:00 PM
 401889742,2026-10-22,Scheduled,SMU,0,-,California,0,-,-,-,3:00 PM
 401889940,2026-10-22,Scheduled,Loyola Chicago,0,-,George Washington,0,-,-,-,3:00 PM
