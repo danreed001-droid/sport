@@ -15,31 +15,31 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401878620,2026-10-23,Scheduled,Sporting Jax,0,-,Lexington SC,0,-,-,-,7:30 PM
 401882483,2026-10-23,Scheduled,Valencia,0,-,Atlético Madrid,0,-,-,-,1:30 PM
 401885655,2026-10-23,Scheduled,Montpellier,0,-,Paris Saint-Germain,0,-,-,-,3:05 PM
-401928436,2026-10-23,Scheduled,Clyde,0,-,Penicuik,0,-,-,-,2:30 PM
-401892156,2026-10-23,Scheduled,Perth Glory FC,0,-,Brisbane Roar FC,0,-,-,-,5:00 AM
+401928436,2026-10-23,Postponed,Clyde,0,-,Penicuik,0,-,-,-,2:30 PM
+401892156,2026-10-23,FT,Perth Glory FC,1,-,Brisbane Roar FC,2,-,-,-,5:00 AM
 401913249,2026-10-23,Scheduled,Brisbane Roar,0,-,Western Sydney ,0,-,-,-,11:15 PM
-401900444,2026-10-23,Scheduled,Al Nassr,0,-,Al Faisaly,0,-,-,-,9:30 AM
-401900890,2026-10-23,Scheduled,Al Diriyah,0,-,Al Ittihad,0,-,-,-,11:30 AM
+401900444,2026-10-23,FT,Al Nassr,3,-,Al Faisaly,1,-,-,-,9:30 AM
+401900890,2026-10-23,FT,Al Diriyah,0,-,Al Ittihad,2,-,-,-,11:30 AM
 401900888,2026-10-23,Scheduled,Al Hilal,0,-,Al Qadsiah,0,-,-,-,2:00 PM
 401885412,2026-10-23,Scheduled,Maritimo,0,-,Vitória de Guimaraes,0,-,-,-,3:45 PM
-401888268,2026-10-23,Scheduled,Kocaelispor,0,-,Alanyaspor,0,-,-,-,1:00 PM
+401888268,2026-10-23,31',Kocaelispor,1,-,Alanyaspor,0,-,-,-,1:00 PM
 401886334,2026-10-23,Scheduled,Cancún FC,0,-,Tepatitlán FC,0,-,-,-,9:00 PM
 401924366,2026-10-23,Scheduled,Pumas UNAM,0,-,Tijuana,0,-,-,-,11:10 PM
 401859958,2026-10-23,Scheduled,Ottawa Rapid FC,0,-,Montreal Roses FC,0,-,-,-,7:00 PM
-401879829,2026-10-23,Scheduled,Gazovik Orenburg,0,-,Akhmat Grozny,0,-,-,-,12:30 PM
+401879829,2026-10-23,HT,Gazovik Orenburg,1,-,Akhmat Grozny,0,-,-,-,12:30 PM
 401878967,2026-10-23,Scheduled,KV Mechelen,0,-,KV Kortrijk,0,-,-,-,2:45 PM
 401883152,2026-10-23,Scheduled,Real Valladolid,0,-,Granada,0,-,-,-,2:30 PM
-401885082,2026-10-23,Scheduled,St. Pauli,0,-,SV Darmstadt 98,0,-,-,-,12:30 PM
-401885079,2026-10-23,Scheduled,VfL Wolfsburg,0,-,VfL Bochum,0,-,-,-,12:30 PM
+401885082,2026-10-23,HT,St. Pauli,0,-,SV Darmstadt 98,0,-,-,-,12:30 PM
+401885079,2026-10-23,HT,VfL Wolfsburg,1,-,VfL Bochum,0,-,-,-,12:30 PM
 401899585,2026-10-23,Scheduled,Vicenza,0,-,Empoli,0,-,-,-,2:30 PM
 401876713,2026-10-23,Scheduled,Stade Laval,0,-,AS Nancy Lorraine,0,-,-,-,2:00 PM
 401876717,2026-10-23,Scheduled,Guingamp,0,-,Clermont Foot,0,-,-,-,2:00 PM
 401876715,2026-10-23,Scheduled,Metz,0,-,Dunkerque,0,-,-,-,2:00 PM
 401876712,2026-10-23,Scheduled,Grenoble,0,-,Pau,0,-,-,-,2:00 PM
 401876710,2026-10-23,Scheduled,Annecy,0,-,Sochaux,0,-,-,-,2:00 PM
-401881763,2026-10-23,Scheduled,Austria Vienna,0,-,SC Rheindorf Altach,0,-,-,-,1:30 PM
-401890163,2026-10-23,Scheduled,North Korea U17,0,-,Nigeria U17,0,-,-,-,11:00 AM
-401874128,2026-10-23,Scheduled,Poland U17,0,-,Puerto Rico U17,0,-,-,-,11:00 AM
+401881763,2026-10-23,1',Austria Vienna,0,-,SC Rheindorf Altach,0,-,-,-,1:30 PM
+401890163,2026-10-23,FT,North Korea U17,1,-,Nigeria U17,3,-,-,-,11:00 AM
+401874128,2026-10-23,FT,Poland U17,6,-,Puerto Rico U17,2,-,-,-,11:00 AM
 401874053,2026-10-23,Scheduled,Morocco U17,0,-,Argentina U17,0,-,-,-,2:00 PM
 401874120,2026-10-23,Scheduled,Germany U17,0,-,New Zealand U17,0,-,-,-,2:00 PM
 401889245,2026-10-23,Scheduled,Tamworth,0,-,Gateshead,0,-,-,-,2:45 PM
@@ -52,9 +52,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401875878,2026-10-23,Scheduled,Heracles Almelo,0,-,NAC Breda,0,-,-,-,2:00 PM
 401875877,2026-10-23,Scheduled,Jong Ajax,0,-,TOP Oss,0,-,-,-,2:00 PM
 401875876,2026-10-23,Scheduled,FC Emmen,0,-,Vitesse,0,-,-,-,2:00 PM
-401842851,2026-10-23,Scheduled,Malmö FF,0,-,IF Elfsborg,0,-,-,-,1:00 PM
-401842852,2026-10-23,Scheduled,Halmstads BK,0,-,Västerås SK,0,-,-,-,1:00 PM
-401874550,2026-10-23,Scheduled,Brøndby IF,0,-,Randers FC,0,-,-,-,1:00 PM
+401842851,2026-10-23,30',Malmö FF,0,-,IF Elfsborg,0,-,-,-,1:00 PM
+401842852,2026-10-23,30',Halmstads BK,0,-,Västerås SK,0,-,-,-,1:00 PM
+401874550,2026-10-23,28',Brøndby IF,1,-,Randers FC,0,-,-,-,1:00 PM
 401841638,2026-10-23,Scheduled,Sarmiento (Junín),0,-,Gimnasia La Plata,0,-,-,-,5:00 PM
 401841637,2026-10-23,Scheduled,Platense,0,-,Gimnasia (Mendoza),0,-,-,-,5:30 PM
 401841643,2026-10-23,Scheduled,Atlético Tucumán,0,-,Tigre,0,-,-,-,8:15 PM
@@ -73,8 +73,8 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401926749,2026-10-23,Scheduled,CD Estrella Roja,0,-,Olancho FC,0,-,-,-,9:00 PM
 401876832,2026-10-23,Scheduled,Sporting San José,0,-,Escorpiones Belén,0,-,-,-,10:00 PM
 401899776,2026-10-23,Scheduled,Internacional Santa Tecla,0,-,Inca Aruba,0,-,-,-,8:00 PM
-401925428,2026-10-23,Scheduled,East Bengal FC,0,-,Inter Kashi,0,-,-,-,7:30 AM
-401914219,2026-10-23,Scheduled,Scottland Mabvuku,0,-,Petro de Luanda,0,-,-,-,10:30 AM
+401925428,2026-10-23,FT,East Bengal FC,5,-,Inter Kashi,1,-,-,-,7:30 AM
+401914219,2026-10-23,FT,Scottland Mabvuku,0,-,Petro de Luanda,3,-,-,-,10:30 AM
 401914243,2026-10-23,Scheduled,Wiliete SC,0,-,Mamelodi Sundowns,0,-,-,-,2:00 PM
 401914240,2026-10-23,Scheduled,African Stars,0,-,Orlando Pirates,0,-,-,-,2:00 PM
 401914244,2026-10-23,Scheduled,Rangers International,0,-,MC Alger,0,-,-,-,3:00 PM
