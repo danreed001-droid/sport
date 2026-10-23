@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-23",
+  "weekday": "Friday",
+  "sport": "mlb",
+  "scored": false,
+  "generatedAt": "2026-10-23T14:20:00Z",
+  "games": [
+    {"altCategoryTally":"5-0","altConfidence":"strong","altCorrect":null,"altCover":null,"altPick":"Milwaukee Brewers","altReasons":["Scoring margin: Brewers +207 season run differential vs Rays +86 (121-run gap, well above the 15-run floor) favors Brewers; neither Game 1 starter is a debut/returning-from-injury arm so no WEIGHTED-RULE discount applies","Rest: Brewers have had 8 days off since clinching the NLCS sweep (Oct 15) vs Rays' 4 days since clinching the ALCS (Oct 19) -- notably fresher bullpen favors Brewers","Form: Brewers are 7-1 this postseason and just swept the NLCS 4-0; Rays are 7-2 and needed all 6 games (with 2 losses) to beat Cleveland in the ALCS -- favors Brewers","Market: Brewers' Game 1 moneyline shortened from -162 at series open to -198 by game day (run line from +150 to +126) -- line movement favors Brewers","Matchup splits: Rays starter Nick Martinez has a 6.10 ERA over his last 5 outings against Milwaukee, and the Brewers won this year's season series 2-1 -- favors Brewers"],"altReturn":null,"altSpreadReturn":null,"away":"Tampa Bay Rays","awayERA":3.1,"awayMoneyline":162,"awayOPS":0.728,"awayOppOPS":null,"awayPitcher":"Nick Martinez","awayRD":86,"awayScore":null,"awaySpread":1.5,"awaySpreadOdds":-152,"awayWHIP":1.09,"confidence":"skip","correct":null,"home":"Milwaukee Brewers","homeERA":1.8,"homeMoneyline":-198,"homeOPS":0.743,"homeOppOPS":null,"homePitcher":"Jacob Misiorowski","homeRD":207,"homeScore":null,"homeSpread":-1.5,"homeSpreadOdds":126,"homeWHIP":0.8,"opsGap":13.79,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"ops-gap","skipped":true,"time":"8:08 PM ET"}
+  ]
+}
