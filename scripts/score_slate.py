@@ -8,6 +8,7 @@ signal's real hit rate is measurable on its own. Three-way sports (soccer)
 dispatch to that sport's own 3-way grading function instead.
 """
 import csv
+import difflib
 import importlib
 import os
 import re
@@ -99,6 +100,11 @@ TEAM_ALIASES = {
     "lafc": "los angeles", "sporting kc": "sporting kansas city", "man city": "manchester city",
     "man united": "manchester united", "man utd": "manchester united", "spurs": "tottenham hotspur",
     "inter": "internazionale", "atletico madrid": "atletico de madrid", "bayern": "bayern munich",
+    "inter milan": "internazionale", "olympique lyonnais": "lyon", "lyonnais": "lyon",
+    "wolves": "wolverhampton wanderers", "forest": "nottingham forest",
+    "west brom": "west bromwich albion", "sporting lisbon": "sporting cp",
+    "bayern munchen": "bayern munich", "fc bayern munich": "bayern munich",
+    "atletico mineiro": "atletico mg", "borussia monchengladbach": "monchengladbach",
 }
 _FILLER = {"fc", "cf", "sc", "afc", "cd", "club", "de", "the", "ac", "ssc", "as", "sv", "fk", "sk", "vfb", "bsc"}
 
@@ -117,18 +123,56 @@ def _same_team(a, b):
     return bool(na and nb) and (na == nb or na <= nb or nb <= na)
 
 
+def _team_similarity(a, b):
+    """0-1 string similarity on normalized, space-joined team names — a
+    last-resort fallback for name variants token matching can't bridge
+    (e.g. "Atlético Mineiro" vs "Atlético-MG", "Inter Milan" vs
+    "Internazionale", "Hapoel Beer Sheva" vs "Hapoel Be'er")."""
+    sa, sb = " ".join(sorted(_norm_team(a))), " ".join(sorted(_norm_team(b)))
+    if not sa or not sb:
+        return 0.0
+    return difflib.SequenceMatcher(None, sa, sb).ratio()
+
+
+FUZZY_THRESHOLD = 0.6
+FUZZY_MARGIN = 0.08  # best match must clear the runner-up by this much
+
+
 def find_match_loose(scores_for_date, g):
     """Fallback for slates whose names differ from ESPN's (accents, "FC",
-    nicknames) or whose home/away is reversed. Returns (row, swapped) where
-    swapped means the slate's away team is ESPN's home team, or (None, False).
-    Only an unambiguous single match counts."""
+    nicknames, abbreviations) or whose home/away is reversed. Returns (row,
+    swapped) where swapped means the slate's away team is ESPN's home team,
+    or (None, False). Tries an unambiguous token-subset match first, then an
+    unambiguous fuzzy-string match (both sides must clear FUZZY_THRESHOLD,
+    and the combined score must beat every other candidate by FUZZY_MARGIN,
+    so a near-tie refuses rather than guesses)."""
     hits = []
     for row in scores_for_date:
         if _same_team(g["away"], row["Away_Team"]) and _same_team(g["home"], row["Home_Team"]):
             hits.append((row, False))
         elif _same_team(g["away"], row["Home_Team"]) and _same_team(g["home"], row["Away_Team"]):
             hits.append((row, True))
-    return hits[0] if len(hits) == 1 else (None, False)
+    if len(hits) == 1:
+        return hits[0]
+    if hits:
+        return (None, False)  # ambiguous token match — don't fall through to fuzzy
+
+    scored = []
+    for row in scores_for_date:
+        for swapped, (away_row, home_row) in (
+            (False, (row["Away_Team"], row["Home_Team"])),
+            (True, (row["Home_Team"], row["Away_Team"])),
+        ):
+            sa, sh = _team_similarity(g["away"], away_row), _team_similarity(g["home"], home_row)
+            if sa >= FUZZY_THRESHOLD and sh >= FUZZY_THRESHOLD:
+                scored.append((sa + sh, row, swapped))
+    if not scored:
+        return (None, False)
+    scored.sort(key=lambda x: -x[0])
+    if len(scored) > 1 and scored[0][0] - scored[1][0] < FUZZY_MARGIN:
+        return (None, False)  # two candidates too close to trust either
+    _, row, swapped = scored[0]
+    return (row, swapped)
 
 
 def is_resolved(status):
