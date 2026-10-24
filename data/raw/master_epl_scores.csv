@@ -1,7 +1,7 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401879256,2026-10-24,Scheduled,Manchester City,0,1.71,Aston Villa,0,-0.57,-,-,7:30 AM
-401878768,2026-10-24,Scheduled,Everton,0,0.14,Arsenal,0,0.86,-,-,10:00 AM
-401879255,2026-10-24,Scheduled,Fulham,0,-0.43,Coventry City,0,-1.14,-,-,10:00 AM
+401879256,2026-10-24,FT,Manchester City,1,1.38,Aston Villa,2,-0.38,-160,380,7:30 AM
+401878768,2026-10-24,FT,Everton,0,-0.12,Arsenal,2,1.0,800,-285,10:00 AM
+401879255,2026-10-24,FT,Fulham,1,-0.25,Coventry City,0,-1.12,110,240,10:00 AM
 401878767,2026-10-24,Scheduled,Tottenham Hotspur,0,-0.57,Chelsea,0,0.57,-,-,12:30 PM
 401879253,2026-10-23,FT,Nottingham Forest,1,-0.5,Ipswich Town,1,-0.5,125,225,3:00 PM
 401879257,2026-10-19,FT,Coventry City,1,-1.14,Tottenham Hotspur,3,-0.57,450,-180,3:00 PM

@@ -1,11 +1,11 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
 401878967,2026-11-04,Scheduled,KV Mechelen,0,-,KV Kortrijk,0,-,-,-,2:30 PM
-401879256,2026-10-24,Scheduled,Manchester City,0,-,Aston Villa,0,-,-,-,7:30 AM
-401878768,2026-10-24,Scheduled,Everton,0,-,Arsenal,0,-,-,-,10:00 AM
-401879255,2026-10-24,Scheduled,Fulham,0,-,Coventry City,0,-,-,-,10:00 AM
+401879256,2026-10-24,FT,Manchester City,1,-,Aston Villa,2,-,-,-,7:30 AM
+401878768,2026-10-24,FT,Everton,0,-,Arsenal,2,-,-,-,10:00 AM
+401879255,2026-10-24,FT,Fulham,1,-,Coventry City,0,-,-,-,10:00 AM
 401878767,2026-10-24,Scheduled,Tottenham Hotspur,0,-,Chelsea,0,-,-,-,12:30 PM
-401882830,2026-10-24,Scheduled,Elche,0,-,Rayo Vallecano,0,-,-,-,8:00 AM
-401882831,2026-10-24,Scheduled,Espanyol,0,-,Racing Santander,0,-,-,-,10:15 AM
+401882830,2026-10-24,FT,Elche,3,-,Rayo Vallecano,0,-,-,-,8:00 AM
+401882831,2026-10-24,FT,Espanyol,1,-,Racing Santander,2,-,-,-,10:15 AM
 401882827,2026-10-24,Scheduled,Villarreal,0,-,Valencia,0,-,-,-,12:30 PM
 401882834,2026-10-24,Scheduled,Deportivo,0,-,Atlético Madrid,0,-,-,-,3:00 PM
 761903,2026-10-24,Scheduled,Nashville SC,0,-,CF Montréal,0,-,-,-,1:30 PM
@@ -24,87 +24,87 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 761901,2026-10-24,Scheduled,Seattle Sounders FC,0,-,San Diego FC,0,-,-,-,10:30 PM
 401854093,2026-10-24,Scheduled,Racing Louisville FC,0,-,Denver Summit FC,0,-,-,-,6:30 PM
 401854030,2026-10-24,Scheduled,Bay FC,0,-,Angel City FC,0,-,-,-,8:45 PM
-401874958,2026-10-24,Scheduled,Bologna,0,-,Cagliari,0,-,-,-,9:00 AM
-401874961,2026-10-24,Scheduled,Sassuolo,0,-,Como,0,-,-,-,9:00 AM
-401874948,2026-10-24,Scheduled,AS Roma,0,-,Napoli,0,-,-,-,12:00 PM
+401874958,2026-10-24,FT,Bologna,2,-,Cagliari,0,-,-,-,9:00 AM
+401874961,2026-10-24,FT,Sassuolo,0,-,Como,2,-,-,-,9:00 AM
+401874948,2026-10-24,17',AS Roma,0,-,Napoli,0,-,-,-,12:00 PM
 401874955,2026-10-24,Scheduled,Parma,0,-,Lazio,0,-,-,-,2:45 PM
-401884758,2026-10-24,Scheduled,1. FC Union Berlin,0,-,FC Augsburg,0,-,-,-,9:30 AM
-401884756,2026-10-24,Scheduled,Schalke 04,0,-,FC Cologne,0,-,-,-,9:30 AM
-401884757,2026-10-24,Scheduled,Werder Bremen,0,-,Mainz,0,-,-,-,9:30 AM
-401884762,2026-10-24,Scheduled,SV Elversberg,0,-,RB Leipzig,0,-,-,-,9:30 AM
-401884755,2026-10-24,Scheduled,Hamburg SV,0,-,SC Paderborn 07,0,-,-,-,9:30 AM
+401884758,2026-10-24,FT,1. FC Union Berlin,1,-,FC Augsburg,1,-,-,-,9:30 AM
+401884756,2026-10-24,FT,Schalke 04,0,-,FC Cologne,0,-,-,-,9:30 AM
+401884757,2026-10-24,FT,Werder Bremen,3,-,Mainz,2,-,-,-,9:30 AM
+401884762,2026-10-24,FT,SV Elversberg,0,-,RB Leipzig,4,-,-,-,9:30 AM
+401884755,2026-10-24,FT,Hamburg SV,0,-,SC Paderborn 07,1,-,-,-,9:30 AM
 401884763,2026-10-24,Scheduled,Eintracht Frankfurt,0,-,Borussia Dortmund,0,-,-,-,12:30 PM
 401876427,2026-10-24,Scheduled,Paris FC,0,-,Lens,0,-,-,-,2:45 PM
 401876926,2026-10-24,Scheduled,Toluca,0,-,León,0,-,-,-,7:00 PM
 401876925,2026-10-24,Scheduled,Guadalajara,0,-,Monterrey,0,-,-,-,9:00 PM
 401876924,2026-10-24,Scheduled,Tigres UANL,0,-,Pumas UNAM,0,-,-,-,11:10 PM
-401875573,2026-10-24,Scheduled,PEC Zwolle,0,-,FC Utrecht,0,-,-,-,10:30 AM
+401875573,2026-10-24,88',PEC Zwolle,1,-,FC Utrecht,0,-,-,-,10:30 AM
 401875572,2026-10-24,Scheduled,SC Cambuur,0,-,Willem II,0,-,-,-,12:45 PM
 401875571,2026-10-24,Scheduled,Heerenveen,0,-,ADO Den Haag,0,-,-,-,3:00 PM
-401902880,2026-10-24,Scheduled,Arsenal,0,-,Tottenham Hotspur,0,-,-,-,7:45 AM
-401902884,2026-10-24,Scheduled,West Ham United,0,-,Brighton & Hove Albion,0,-,-,-,12:15 PM
-401880205,2026-10-24,Scheduled,Norwich City,0,-,Charlton Athletic,0,-,-,-,7:30 AM
-401880203,2026-10-24,Scheduled,Millwall,0,-,Portsmouth,0,-,-,-,7:30 AM
-401880200,2026-10-24,Scheduled,Derby County,0,-,Sheffield United,0,-,-,-,7:30 AM
-401880208,2026-10-24,Scheduled,Wrexham,0,-,Blackburn Rovers,0,-,-,-,10:00 AM
-401880206,2026-10-24,Scheduled,Birmingham City,0,-,Cardiff City,0,-,-,-,10:00 AM
-401880204,2026-10-24,Scheduled,Burnley,0,-,Lincoln City,0,-,-,-,10:00 AM
-401880202,2026-10-24,Scheduled,West Bromwich Albion,0,-,Preston North End,0,-,-,-,10:00 AM
-401880201,2026-10-24,Scheduled,Swansea City,0,-,Queens Park Rangers,0,-,-,-,10:00 AM
-401880199,2026-10-24,Scheduled,Bristol City,0,-,Stoke City,0,-,-,-,10:00 AM
-401880198,2026-10-24,Scheduled,Southampton,0,-,West Ham United,0,-,-,-,10:00 AM
-401880197,2026-10-24,Scheduled,Watford,0,-,Wolverhampton Wanderers,0,-,-,-,10:00 AM
+401902880,2026-10-24,FT,Arsenal,2,-,Tottenham Hotspur,1,-,-,-,7:45 AM
+401902884,2026-10-24,3',West Ham United,0,-,Brighton & Hove Albion,0,-,-,-,12:15 PM
+401880205,2026-10-24,FT,Norwich City,3,-,Charlton Athletic,1,-,-,-,7:30 AM
+401880203,2026-10-24,FT,Millwall,1,-,Portsmouth,2,-,-,-,7:30 AM
+401880200,2026-10-24,FT,Derby County,1,-,Sheffield United,1,-,-,-,7:30 AM
+401880208,2026-10-24,FT,Wrexham,0,-,Blackburn Rovers,2,-,-,-,10:00 AM
+401880206,2026-10-24,FT,Birmingham City,0,-,Cardiff City,1,-,-,-,10:00 AM
+401880204,2026-10-24,FT,Burnley,1,-,Lincoln City,4,-,-,-,10:00 AM
+401880202,2026-10-24,FT,West Bromwich Albion,1,-,Preston North End,1,-,-,-,10:00 AM
+401880201,2026-10-24,FT,Swansea City,0,-,Queens Park Rangers,5,-,-,-,10:00 AM
+401880199,2026-10-24,FT,Bristol City,0,-,Stoke City,0,-,-,-,10:00 AM
+401880198,2026-10-24,FT,Southampton,3,-,West Ham United,2,-,-,-,10:00 AM
+401880197,2026-10-24,FT,Watford,0,-,Wolverhampton Wanderers,1,-,-,-,10:00 AM
 401878619,2026-10-24,Scheduled,Tampa Bay Sun FC,0,-,Brooklyn FC,0,-,-,-,4:00 PM
 401928634,2026-10-24,Scheduled,Bolton,0,-,Harrogate Town,0,-,-,-,12:30 PM
-401882484,2026-10-24,Scheduled,Sevilla,0,-,Athletic Club,0,-,-,-,6:00 AM
-401882477,2026-10-24,Scheduled,Espanyol,0,-,Real Sociedad,0,-,-,-,6:00 AM
-401882478,2026-10-24,Scheduled,CD Tenerife,0,-,Real Madrid,0,-,-,-,10:00 AM
-401882481,2026-10-24,Scheduled,FC Badalona,0,-,Dux Logroño,0,-,-,-,12:15 PM
+401882484,2026-10-24,FT,Sevilla,0,-,Athletic Club,0,-,-,-,6:00 AM
+401882477,2026-10-24,FT,Espanyol,1,-,Real Sociedad,1,-,-,-,6:00 AM
+401882478,2026-10-24,FT,CD Tenerife,2,-,Real Madrid,3,-,-,-,10:00 AM
+401882481,2026-10-24,2',FC Badalona,0,-,Dux Logroño,0,-,-,-,12:15 PM
 401882479,2026-10-24,Scheduled,Granada,0,-,Barcelona,0,-,-,-,2:30 PM
-401885699,2026-10-24,Scheduled,Paris FC,0,-,Saint-Malo,0,-,-,-,9:00 AM
-401885700,2026-10-24,Scheduled,Toulouse,0,-,FC Fleury 91,0,-,-,-,12:00 PM
-401888029,2026-10-24,Scheduled,Lens,0,-,Le Havre AC,0,-,-,-,12:00 PM
-401885654,2026-10-24,Scheduled,Strasbourg,0,-,Nantes,0,-,-,-,12:00 PM
+401885699,2026-10-24,Postponed,Paris FC,0,-,Saint-Malo,0,-,-,-,9:00 AM
+401885700,2026-10-24,Postponed,Toulouse,0,-,FC Fleury 91,0,-,-,-,12:00 PM
+401888029,2026-10-24,18',Lens,0,-,Le Havre AC,0,-,-,-,12:00 PM
+401885654,2026-10-24,18',Strasbourg,1,-,Nantes,0,-,-,-,12:00 PM
 401885656,2026-10-24,Scheduled,Marseille,0,-,OL Lyonnes,0,-,-,-,3:00 PM
-401878362,2026-10-24,Scheduled,Aberdeen,0,-,Dundee United,0,-,-,-,10:00 AM
-401878361,2026-10-24,Scheduled,Kilmarnock,0,-,Falkirk,0,-,-,-,10:00 AM
-401878358,2026-10-24,Scheduled,St Johnstone,0,-,Rangers,0,-,-,-,10:00 AM
-401878357,2026-10-24,Scheduled,Dundee,0,-,St Mirren,0,-,-,-,10:00 AM
-401928432,2026-10-24,Scheduled,Forfar Athletic,0,-,Bo'ness United,0,-,-,-,10:00 AM
-401928429,2026-10-24,Scheduled,Clachnacuddin,0,-,Bonnyton Thistle,0,-,-,-,10:00 AM
-401928435,2026-10-24,Scheduled,Strathspey Thistle,0,-,Brechin City,0,-,-,-,10:00 AM
-401928414,2026-10-24,Scheduled,Cowdenbeath,0,-,Brora Rangers,0,-,-,-,10:00 AM
-401928407,2026-10-24,Scheduled,Tranent Juniors,0,-,Clydebank,0,-,-,-,10:00 AM
-401928412,2026-10-24,Scheduled,Banks O'Dee,0,-,Cumbernauld Colts,0,-,-,-,10:00 AM
-401928438,2026-10-24,Scheduled,Keith,0,-,Dumbarton,0,-,-,-,10:00 AM
-401928431,2026-10-24,Scheduled,Largs Thistle,0,-,Dunipace,0,-,-,-,10:00 AM
-401928437,2026-10-24,Scheduled,Kelty Hearts,0,-,Edinburgh City,0,-,-,-,10:00 AM
-401928411,2026-10-24,Scheduled,Cumnock,0,-,Gretna 2008,0,-,-,-,10:00 AM
-401928434,2026-10-24,Scheduled,Musselburgh Athletic,0,-,Hill of Beath Hawthorn,0,-,-,-,10:00 AM
-401928410,2026-10-24,Scheduled,Annan Athletic,0,-,Huntly,0,-,-,-,10:00 AM
-401928427,2026-10-24,Scheduled,Formartine United,0,-,Johnstone Burgh FC,0,-,-,-,10:00 AM
-401928413,2026-10-24,Scheduled,Spartans FC,0,-,Lochee United,0,-,-,-,10:00 AM
-401928409,2026-10-24,Scheduled,Stirling Albion,0,-,Renfrew,0,-,-,-,10:00 AM
-401928430,2026-10-24,Scheduled,Elgin City,0,-,Stirling University,0,-,-,-,10:00 AM
-401928428,2026-10-24,Scheduled,Tayport,0,-,Stranraer,0,-,-,-,10:00 AM
-401928408,2026-10-24,Scheduled,Pollok,0,-,Threave Rovers,0,-,-,-,10:00 AM
-401928433,2026-10-24,Scheduled,Caledonian Braves,0,-,Troon,0,-,-,-,10:00 AM
+401878362,2026-10-24,FT,Aberdeen,2,-,Dundee United,3,-,-,-,10:00 AM
+401878361,2026-10-24,FT,Kilmarnock,0,-,Falkirk,3,-,-,-,10:00 AM
+401878358,2026-10-24,FT,St Johnstone,0,-,Rangers,4,-,-,-,10:00 AM
+401878357,2026-10-24,FT,Dundee,1,-,St Mirren,2,-,-,-,10:00 AM
+401928432,2026-10-24,FT,Forfar Athletic,1,-,Bo'ness United,2,-,-,-,10:00 AM
+401928429,2026-10-24,FT,Clachnacuddin,3,-,Bonnyton Thistle,0,-,-,-,10:00 AM
+401928435,2026-10-24,114',Strathspey Thistle,2,-,Brechin City,2,-,-,-,10:00 AM
+401928414,2026-10-24,111',Cowdenbeath,1,-,Brora Rangers,2,-,-,-,10:00 AM
+401928407,2026-10-24,FT,Tranent Juniors,1,-,Clydebank,2,-,-,-,10:00 AM
+401928412,2026-10-24,Susp,Banks O'Dee,2,-,Cumbernauld Colts,3,-,-,-,10:00 AM
+401928438,2026-10-24,FT,Keith,0,-,Dumbarton,1,-,-,-,10:00 AM
+401928431,2026-10-24,FT,Largs Thistle,5,-,Dunipace,1,-,-,-,10:00 AM
+401928437,2026-10-24,FT,Kelty Hearts,1,-,Edinburgh City,4,-,-,-,10:00 AM
+401928411,2026-10-24,FT,Cumnock,3,-,Gretna 2008,0,-,-,-,10:00 AM
+401928434,2026-10-24,Postponed,Musselburgh Athletic,0,-,Hill of Beath Hawthorn,0,-,-,-,10:00 AM
+401928410,2026-10-24,117',Annan Athletic,2,-,Huntly,2,-,-,-,10:00 AM
+401928427,2026-10-24,Postponed,Formartine United,0,-,Johnstone Burgh FC,0,-,-,-,10:00 AM
+401928413,2026-10-24,FT,Spartans FC,2,-,Lochee United,1,-,-,-,10:00 AM
+401928409,2026-10-24,FT,Stirling Albion,1,-,Renfrew,2,-,-,-,10:00 AM
+401928430,2026-10-24,FT,Elgin City,2,-,Stirling University,1,-,-,-,10:00 AM
+401928428,2026-10-24,FT,Tayport,1,-,Stranraer,3,-,-,-,10:00 AM
+401928408,2026-10-24,Postponed,Pollok,0,-,Threave Rovers,0,-,-,-,10:00 AM
+401928433,2026-10-24,108',Caledonian Braves,3,-,Troon,4,-,-,-,10:00 AM
 401892155,2026-10-24,FT,Macarthur FC,1,-,Newcastle Jets,1,-,-,-,12:00 AM
-401892154,2026-10-24,HT,Auckland FC,1,-,Western Sydney Wanderers FC,1,-,-,-,2:00 AM
-401892153,2026-10-24,Scheduled,Melbourne City FC,0,-,Melbourne Victory,0,-,-,-,4:40 AM
+401892154,2026-10-24,FT,Auckland FC,2,-,Western Sydney Wanderers FC,5,-,-,-,2:00 AM
+401892153,2026-10-24,FT,Melbourne City FC,1,-,Melbourne Victory,1,-,-,-,4:40 AM
 401892152,2026-10-24,Scheduled,Central Coast Mariners FC,0,-,Wellington Phoenix,0,-,-,-,10:00 PM
 401913248,2026-10-24,FT,Canberra United ,1,-,Central Coast Mariners,5,-,-,-,12:00 AM
-401913247,2026-10-24,HT,Perth Glory,0,-,Adelaide United ,0,-,-,-,2:00 AM
+401913247,2026-10-24,FT,Perth Glory,0,-,Adelaide United ,0,-,-,-,2:00 AM
 401913246,2026-10-24,Scheduled,Melbourne Victory ,0,-,Wellington Phoenix,0,-,-,-,7:15 PM
-401900886,2026-10-24,Scheduled,Abha,0,-,Neom SC,0,-,-,-,10:00 AM
-401900889,2026-10-24,Scheduled,Al Ettifaq,0,-,Al Kholood,0,-,-,-,11:05 AM
+401900886,2026-10-24,FT,Abha,0,-,Neom SC,2,-,-,-,10:00 AM
+401900889,2026-10-24,53',Al Ettifaq,2,-,Al Kholood,0,-,-,-,11:05 AM
 401900887,2026-10-24,Scheduled,Al Taawoun,0,-,Al Riyadh,0,-,-,-,2:00 PM
-401885419,2026-10-24,Scheduled,Casa Pia,0,-,Estrela,0,-,-,-,10:30 AM
+401885419,2026-10-24,86',Casa Pia,1,-,Estrela,0,-,-,-,10:30 AM
 401885420,2026-10-24,Scheduled,Arouca,0,-,Alverca,0,-,-,-,1:00 PM
 401885417,2026-10-24,Scheduled,FC Porto,0,-,Gil Vicente,0,-,-,-,3:30 PM
-401888269,2026-10-24,Scheduled,Kasimpasa,0,-,Eyupspor,0,-,-,-,6:30 AM
-401888270,2026-10-24,Scheduled,Erzurum BB,0,-,Gaziantep FK,0,-,-,-,9:00 AM
-401888375,2026-10-24,Scheduled,Amed SFK,0,-,Samsunspor,0,-,-,-,12:00 PM
+401888269,2026-10-24,FT,Kasimpasa,1,-,Eyupspor,0,-,-,-,6:30 AM
+401888270,2026-10-24,FT,Erzurum BB,3,-,Gaziantep FK,1,-,-,-,9:00 AM
+401888375,2026-10-24,19',Amed SFK,0,-,Samsunspor,0,-,-,-,12:00 PM
 401842304,2026-10-24,Scheduled,Brooklyn FC,0,-,Loudoun United FC,0,-,-,-,5:00 PM
 401842300,2026-10-24,Scheduled,Indy Eleven,0,-,Charleston Battery,0,-,-,-,6:00 PM
 401842303,2026-10-24,Scheduled,Rhode Island FC,0,-,Hartford Athletic,0,-,-,-,7:00 PM
@@ -133,96 +133,96 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401924396,2026-10-24,Scheduled,Necaxa,0,-,Pachuca,0,-,-,-,7:00 PM
 401924353,2026-10-24,Scheduled,Querétaro,0,-,FC Juárez,0,-,-,-,8:06 PM
 401924395,2026-10-24,Scheduled,Toluca,0,-,Cruz Azul,0,-,-,-,8:10 PM
-401879826,2026-10-24,Scheduled,Dinamo Moscow,0,-,Akron Tolyatti,0,-,-,-,5:45 AM
-401879824,2026-10-24,Scheduled,Rodina Moscow,0,-,Fakel Voronezh,0,-,-,-,8:00 AM
-401879827,2026-10-24,Scheduled,Krylia Sovetov,0,-,Rubin Kazan,0,-,-,-,10:15 AM
+401879826,2026-10-24,FT,Dinamo Moscow,1,-,Akron Tolyatti,3,-,-,-,5:45 AM
+401879824,2026-10-24,FT,Rodina Moscow,1,-,Fakel Voronezh,0,-,-,-,8:00 AM
+401879827,2026-10-24,FT,Krylia Sovetov,2,-,Rubin Kazan,0,-,-,-,10:15 AM
 401879830,2026-10-24,Scheduled,FC Baltika Kaliningrad,0,-,Krasnodar,0,-,-,-,12:30 PM
-401878968,2026-10-24,Scheduled,Royal Charleroi SC,0,-,Antwerp,0,-,-,-,10:00 AM
-401878969,2026-10-24,Scheduled,Lommel SK,0,-,OH Leuven,0,-,-,-,12:15 PM
+401878968,2026-10-24,FT,Royal Charleroi SC,0,-,Antwerp,3,-,-,-,10:00 AM
+401878969,2026-10-24,2',Lommel SK,0,-,OH Leuven,0,-,-,-,12:15 PM
 401878965,2026-10-24,Scheduled,Waasland-Beveren,0,-,KVC Westerlo,0,-,-,-,2:45 PM
 401878966,2026-10-24,Scheduled,Zulte-Waregem,0,-,RAAL La Louvière,0,-,-,-,2:45 PM
-401883128,2026-10-24,Scheduled,Eibar,0,-,Córdoba,0,-,-,-,8:00 AM
-401883151,2026-10-24,Scheduled,Mallorca,0,-,Leganés,0,-,-,-,10:15 AM
+401883128,2026-10-24,FT,Eibar,0,-,Córdoba,2,-,-,-,8:00 AM
+401883151,2026-10-24,FT,Mallorca,1,-,Leganés,1,-,-,-,10:15 AM
 401883308,2026-10-24,Scheduled,RC Celta Fortuna,0,-,Girona,0,-,-,-,12:30 PM
 401883150,2026-10-24,Scheduled,Real Sociedad II,0,-,Las Palmas,0,-,-,-,12:30 PM
 401883153,2026-10-24,Scheduled,Real Oviedo,0,-,Almería,0,-,-,-,3:00 PM
-401885083,2026-10-24,Scheduled,Energie Cottbus,0,-,1. FC Heidenheim 1846,0,-,-,-,7:00 AM
-401885077,2026-10-24,Scheduled,Karlsruher SC,0,-,1. FC Magdeburg,0,-,-,-,7:00 AM
-401885081,2026-10-24,Scheduled,Arminia Bielefeld,0,-,Hertha Berlin,0,-,-,-,7:00 AM
+401885083,2026-10-24,FT,Energie Cottbus,1,-,1. FC Heidenheim 1846,1,-,-,-,7:00 AM
+401885077,2026-10-24,FT,Karlsruher SC,1,-,1. FC Magdeburg,6,-,-,-,7:00 AM
+401885081,2026-10-24,FT,Arminia Bielefeld,0,-,Hertha Berlin,1,-,-,-,7:00 AM
 401885080,2026-10-24,Scheduled,Kaiserslautern,0,-,1. FC Nürnberg,0,-,-,-,2:30 PM
-401899586,2026-10-24,Scheduled,Juve Stabia,0,-,Cremonese,0,-,-,-,9:00 AM
-401899583,2026-10-24,Scheduled,Cesena,0,-,Modena,0,-,-,-,9:00 AM
-401899581,2026-10-24,Scheduled,Sampdoria,0,-,Sudtirol,0,-,-,-,9:00 AM
-401899588,2026-10-24,Scheduled,Padova,0,-,US Avellino,0,-,-,-,9:00 AM
-401899580,2026-10-24,Scheduled,Mantova,0,-,Virtus Entella,0,-,-,-,9:00 AM
-401899587,2026-10-24,Scheduled,Ascoli,0,-,Catanzaro,0,-,-,-,11:15 AM
+401899586,2026-10-24,FT,Juve Stabia,1,-,Cremonese,0,-,-,-,9:00 AM
+401899583,2026-10-24,FT,Cesena,0,-,Modena,3,-,-,-,9:00 AM
+401899581,2026-10-24,FT,Sampdoria,1,-,Sudtirol,1,-,-,-,9:00 AM
+401899588,2026-10-24,FT,Padova,1,-,US Avellino,0,-,-,-,9:00 AM
+401899580,2026-10-24,FT,Mantova,1,-,Virtus Entella,0,-,-,-,9:00 AM
+401899587,2026-10-24,HT,Ascoli,4,-,Catanzaro,1,-,-,-,11:15 AM
 401899589,2026-10-24,Scheduled,Benevento,0,-,Arezzo,0,-,-,-,1:30 PM
-401876716,2026-10-24,Scheduled,Rodez Aveyron,0,-,Dijon FCO,0,-,-,-,8:00 AM
+401876716,2026-10-24,FT,Rodez Aveyron,2,-,Dijon FCO,1,-,-,-,8:00 AM
 401876711,2026-10-24,Scheduled,Nantes,0,-,Saint-Étienne,0,-,-,-,2:45 PM
-401881764,2026-10-24,Scheduled,Wolfsberger,0,-,TSV Hartberg,0,-,-,-,11:00 AM
-401881762,2026-10-24,Scheduled,Grazer AK,0,-,WSG Swarovski Tirol,0,-,-,-,11:00 AM
+401881764,2026-10-24,61',Wolfsberger,0,-,TSV Hartberg,0,-,-,-,11:00 AM
+401881762,2026-10-24,58',Grazer AK,1,-,WSG Swarovski Tirol,0,-,-,-,11:00 AM
 401881765,2026-10-24,Scheduled,Austria Lustenau,0,-,Rapid Vienna,0,-,-,-,1:30 PM
-401896814,2026-10-24,Scheduled,Kifisia,0,-,Iraklis,0,-,-,-,12:00 PM
+401896814,2026-10-24,17',Kifisia,0,-,Iraklis,1,-,-,-,12:00 PM
 401896743,2026-10-24,Scheduled,Levadiakos,0,-,Asteras Tripoli,0,-,-,-,12:30 PM
 401896744,2026-10-24,Scheduled,Panetolikos,0,-,AEK Athens,0,-,-,-,1:00 PM
-401861487,2026-10-24,Scheduled,Dalian Yingbo,0,-,Chengdu Rongcheng,0,-,-,-,3:30 AM
-401861513,2026-10-24,Scheduled,Qingdao Hainiu,0,-,Chongqing Tonglianglong,0,-,-,-,3:30 AM
-401861488,2026-10-24,Scheduled,Beijing Guoan,0,-,Henan,0,-,-,-,3:30 AM
-401861512,2026-10-24,Scheduled,Zhejiang Professional FC,0,-,Liaoning Tieren,0,-,-,-,3:30 AM
-401861483,2026-10-24,Scheduled,Yunnan Yukun,0,-,Qingdao West Coast,0,-,-,-,3:30 AM
-401861484,2026-10-24,Scheduled,SHANGHAI SHENHUA FC,0,-,Shenzhen Xinpengcheng,0,-,-,-,3:30 AM
-401861485,2026-10-24,Scheduled,Shanghai Port FC,0,-,Tianjin Jinmen Tiger,0,-,-,-,3:30 AM
-401861486,2026-10-24,Scheduled,Shandong Taishan,0,-,Wuhan Three Towns,0,-,-,-,3:30 AM
-401874129,2026-10-24,Scheduled,Norway U17,0,-,Brazil U17,0,-,-,-,11:00 AM
-401890081,2026-10-24,Scheduled,Canada U17,0,-,Ghana U17,0,-,-,-,11:00 AM
+401861487,2026-10-24,FT,Dalian Yingbo,1,-,Chengdu Rongcheng,0,-,-,-,3:30 AM
+401861513,2026-10-24,FT,Qingdao Hainiu,0,-,Chongqing Tonglianglong,2,-,-,-,3:30 AM
+401861488,2026-10-24,FT,Beijing Guoan,4,-,Henan,3,-,-,-,3:30 AM
+401861512,2026-10-24,FT,Zhejiang Professional FC,4,-,Liaoning Tieren,2,-,-,-,3:30 AM
+401861483,2026-10-24,FT,Yunnan Yukun,1,-,Qingdao West Coast,1,-,-,-,3:30 AM
+401861484,2026-10-24,FT,SHANGHAI SHENHUA FC,1,-,Shenzhen Xinpengcheng,2,-,-,-,3:30 AM
+401861485,2026-10-24,FT,Shanghai Port FC,3,-,Tianjin Jinmen Tiger,1,-,-,-,3:30 AM
+401861486,2026-10-24,FT,Shandong Taishan,5,-,Wuhan Three Towns,3,-,-,-,3:30 AM
+401874129,2026-10-24,61',Norway U17,0,-,Brazil U17,2,-,-,-,11:00 AM
+401890081,2026-10-24,59',Canada U17,0,-,Ghana U17,0,-,-,-,11:00 AM
 401874060,2026-10-24,Scheduled,Japan U17,0,-,Venezuela U17,0,-,-,-,2:00 PM
 401891033,2026-10-24,Scheduled,France U17,0,-,Zambia U17,0,-,-,-,2:00 PM
-401880772,2026-10-24,Scheduled,Wigan Athletic,0,-,Huddersfield Town,0,-,-,-,7:30 AM
-401880771,2026-10-24,Scheduled,Leicester City,0,-,Luton Town,0,-,-,-,7:30 AM
-401880778,2026-10-24,Scheduled,Wycombe Wanderers,0,-,AFC Wimbledon,0,-,-,-,10:00 AM
-401880777,2026-10-24,Scheduled,Mansfield Town,0,-,Blackpool,0,-,-,-,10:00 AM
-401880776,2026-10-24,Scheduled,Peterborough United,0,-,Bromley,0,-,-,-,10:00 AM
-401880775,2026-10-24,Scheduled,Leyton Orient,0,-,Burton Albion,0,-,-,-,10:00 AM
-401880774,2026-10-24,Scheduled,Plymouth Argyle,0,-,Cambridge United,0,-,-,-,10:00 AM
-401880773,2026-10-24,Scheduled,Sheffield Wednesday,0,-,Doncaster Rovers,0,-,-,-,10:00 AM
-401880770,2026-10-24,Scheduled,Stockport County,0,-,Notts County,0,-,-,-,10:00 AM
-401880769,2026-10-24,Scheduled,Bradford City,0,-,Oxford United,0,-,-,-,10:00 AM
-401880768,2026-10-24,Scheduled,Barnsley,0,-,Reading,0,-,-,-,10:00 AM
-401880767,2026-10-24,Scheduled,Milton Keynes Dons,0,-,Stevenage,0,-,-,-,10:00 AM
-401881299,2026-10-24,Scheduled,Swindon Town,0,-,Bristol Rovers,0,-,-,-,7:30 AM
-401881298,2026-10-24,Scheduled,Newport County,0,-,Cheltenham Town,0,-,-,-,7:30 AM
-401881293,2026-10-24,Scheduled,Colchester United,0,-,Northampton Town,0,-,-,-,7:30 AM
-401881300,2026-10-24,Scheduled,Oldham Athletic,0,-,Barnet,0,-,-,-,10:00 AM
-401881297,2026-10-24,Scheduled,Crewe Alexandra,0,-,Chesterfield,0,-,-,-,10:00 AM
-401881296,2026-10-24,Scheduled,Tranmere Rovers,0,-,Crawley Town,0,-,-,-,10:00 AM
-401881295,2026-10-24,Scheduled,Fleetwood Town,0,-,Exeter City,0,-,-,-,10:00 AM
-401881294,2026-10-24,Scheduled,Grimsby Town,0,-,Gillingham,0,-,-,-,10:00 AM
-401881292,2026-10-24,Scheduled,Accrington Stanley,0,-,Rochdale,0,-,-,-,10:00 AM
-401881291,2026-10-24,Scheduled,Shrewsbury Town,0,-,Rotherham United,0,-,-,-,10:00 AM
-401881289,2026-10-24,Scheduled,Port Vale,0,-,York City,0,-,-,-,10:00 AM
-401889244,2026-10-24,Scheduled,Boston United,0,-,Eastleigh,0,-,-,-,7:30 AM
-401889243,2026-10-24,Scheduled,Sutton United,0,-,Harrogate Town,0,-,-,-,7:30 AM
-401889242,2026-10-24,Scheduled,Wealdstone,0,-,Aldershot Town,0,-,-,-,10:00 AM
-401889241,2026-10-24,Scheduled,Forest Green Rovers,0,-,Barrow,0,-,-,-,10:00 AM
-401889240,2026-10-24,Scheduled,AFC Fylde,0,-,Boreham Wood,0,-,-,-,10:00 AM
-401889421,2026-10-24,Scheduled,AFC Hornchurch,0,-,Hartlepool United,0,-,-,-,10:00 AM
-401889239,2026-10-24,Scheduled,Woking,0,-,Scunthorpe United,0,-,-,-,10:00 AM
-401889238,2026-10-24,Scheduled,Carlisle United,0,-,Solihull Moors,0,-,-,-,10:00 AM
-401889237,2026-10-24,Scheduled,FC Halifax Town,0,-,Southend United,0,-,-,-,10:00 AM
-401889236,2026-10-24,Scheduled,Altrincham,0,-,Yeovil Town,0,-,-,-,10:00 AM
+401880772,2026-10-24,FT,Wigan Athletic,1,-,Huddersfield Town,2,-,-,-,7:30 AM
+401880771,2026-10-24,FT,Leicester City,1,-,Luton Town,2,-,-,-,7:30 AM
+401880778,2026-10-24,FT,Wycombe Wanderers,1,-,AFC Wimbledon,1,-,-,-,10:00 AM
+401880777,2026-10-24,FT,Mansfield Town,4,-,Blackpool,1,-,-,-,10:00 AM
+401880776,2026-10-24,FT,Peterborough United,1,-,Bromley,1,-,-,-,10:00 AM
+401880775,2026-10-24,FT,Leyton Orient,1,-,Burton Albion,2,-,-,-,10:00 AM
+401880774,2026-10-24,FT,Plymouth Argyle,3,-,Cambridge United,2,-,-,-,10:00 AM
+401880773,2026-10-24,FT,Sheffield Wednesday,0,-,Doncaster Rovers,2,-,-,-,10:00 AM
+401880770,2026-10-24,FT,Stockport County,1,-,Notts County,1,-,-,-,10:00 AM
+401880769,2026-10-24,FT,Bradford City,0,-,Oxford United,0,-,-,-,10:00 AM
+401880768,2026-10-24,FT,Barnsley,1,-,Reading,2,-,-,-,10:00 AM
+401880767,2026-10-24,FT,Milton Keynes Dons,1,-,Stevenage,0,-,-,-,10:00 AM
+401881299,2026-10-24,FT,Swindon Town,0,-,Bristol Rovers,0,-,-,-,7:30 AM
+401881298,2026-10-24,FT,Newport County,0,-,Cheltenham Town,1,-,-,-,7:30 AM
+401881293,2026-10-24,FT,Colchester United,0,-,Northampton Town,2,-,-,-,7:30 AM
+401881300,2026-10-24,FT,Oldham Athletic,1,-,Barnet,1,-,-,-,10:00 AM
+401881297,2026-10-24,FT,Crewe Alexandra,1,-,Chesterfield,5,-,-,-,10:00 AM
+401881296,2026-10-24,FT,Tranmere Rovers,1,-,Crawley Town,1,-,-,-,10:00 AM
+401881295,2026-10-24,FT,Fleetwood Town,1,-,Exeter City,2,-,-,-,10:00 AM
+401881294,2026-10-24,FT,Grimsby Town,4,-,Gillingham,1,-,-,-,10:00 AM
+401881292,2026-10-24,FT,Accrington Stanley,5,-,Rochdale,0,-,-,-,10:00 AM
+401881291,2026-10-24,FT,Shrewsbury Town,3,-,Rotherham United,3,-,-,-,10:00 AM
+401881289,2026-10-24,FT,Port Vale,0,-,York City,2,-,-,-,10:00 AM
+401889244,2026-10-24,FT,Boston United,2,-,Eastleigh,4,-,-,-,7:30 AM
+401889243,2026-10-24,FT,Sutton United,1,-,Harrogate Town,3,-,-,-,7:30 AM
+401889242,2026-10-24,FT,Wealdstone,1,-,Aldershot Town,0,-,-,-,10:00 AM
+401889241,2026-10-24,Susp,Forest Green Rovers,0,-,Barrow,1,-,-,-,10:00 AM
+401889240,2026-10-24,FT,AFC Fylde,0,-,Boreham Wood,4,-,-,-,10:00 AM
+401889421,2026-10-24,FT,AFC Hornchurch,1,-,Hartlepool United,2,-,-,-,10:00 AM
+401889239,2026-10-24,FT,Woking,3,-,Scunthorpe United,2,-,-,-,10:00 AM
+401889238,2026-10-24,FT,Carlisle United,2,-,Solihull Moors,1,-,-,-,10:00 AM
+401889237,2026-10-24,FT,FC Halifax Town,2,-,Southend United,2,-,-,-,10:00 AM
+401889236,2026-10-24,FT,Altrincham,2,-,Yeovil Town,1,-,-,-,10:00 AM
 401889235,2026-10-24,Scheduled,Worthing,0,-,Kidderminster Harriers,0,-,-,-,12:30 PM
-401878541,2026-10-24,Scheduled,Ayr United,0,-,Greenock Morton,0,-,-,-,10:00 AM
-401878540,2026-10-24,Scheduled,Arbroath,0,-,Livingston,0,-,-,-,10:00 AM
-401878539,2026-10-24,Scheduled,Stenhousemuir,0,-,Partick Thistle,0,-,-,-,10:00 AM
-401878538,2026-10-24,Scheduled,Dunfermline Athletic,0,-,Queen's Park,0,-,-,-,10:00 AM
-401878537,2026-10-24,Scheduled,Inverness Caledonian Thistle,0,-,Raith Rovers,0,-,-,-,10:00 AM
-401875875,2026-10-24,Scheduled,VVV-Venlo,0,-,FC Dordrecht,0,-,-,-,10:30 AM
-401842856,2026-10-24,Scheduled,Degerfors IF,0,-,BK Häcken,0,-,-,-,9:00 AM
-401842853,2026-10-24,Scheduled,AIK,0,-,IK Sirius,0,-,-,-,9:00 AM
-401842850,2026-10-24,Scheduled,Örgryte IS,0,-,Djurgården,0,-,-,-,11:30 AM
-401842855,2026-10-24,Scheduled,IF Brommapojkarna,0,-,Kalmar FF,0,-,-,-,11:30 AM
-401843372,2026-10-24,Scheduled,Vålerenga,0,-,Bodo/Glimt,0,-,-,-,10:00 AM
-401843371,2026-10-24,Scheduled,Rosenborg,0,-,Hamarkameratene,0,-,-,-,12:00 PM
+401878541,2026-10-24,Postponed,Ayr United,0,-,Greenock Morton,0,-,-,-,10:00 AM
+401878540,2026-10-24,FT,Arbroath,0,-,Livingston,1,-,-,-,10:00 AM
+401878539,2026-10-24,FT,Stenhousemuir,0,-,Partick Thistle,3,-,-,-,10:00 AM
+401878538,2026-10-24,FT,Dunfermline Athletic,1,-,Queen's Park,0,-,-,-,10:00 AM
+401878537,2026-10-24,FT,Inverness Caledonian Thistle,2,-,Raith Rovers,0,-,-,-,10:00 AM
+401875875,2026-10-24,90'+2',VVV-Venlo,4,-,FC Dordrecht,1,-,-,-,10:30 AM
+401842856,2026-10-24,FT,Degerfors IF,0,-,BK Häcken,4,-,-,-,9:00 AM
+401842853,2026-10-24,FT,AIK,2,-,IK Sirius,1,-,-,-,9:00 AM
+401842850,2026-10-24,45'+3',Örgryte IS,0,-,Djurgården,1,-,-,-,11:30 AM
+401842855,2026-10-24,45'+2',IF Brommapojkarna,1,-,Kalmar FF,0,-,-,-,11:30 AM
+401843372,2026-10-24,FT,Vålerenga,1,-,Bodo/Glimt,0,-,-,-,10:00 AM
+401843371,2026-10-24,18',Rosenborg,0,-,Hamarkameratene,0,-,-,-,12:00 PM
 401841641,2026-10-24,Scheduled,Lanús,0,-,Banfield,0,-,-,-,1:45 PM
 401841631,2026-10-24,Scheduled,Defensa y Justicia,0,-,Talleres (Córdoba),0,-,-,-,4:00 PM
 401841632,2026-10-24,Scheduled,Newell's Old Boys,0,-,San Lorenzo,0,-,-,-,6:15 PM
@@ -253,9 +253,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401860407,2026-10-24,Scheduled,Vila Nova,0,-,São Bernardo,0,-,-,-,3:30 PM
 401860402,2026-10-24,Scheduled,Londrina,0,-,CRB,0,-,-,-,5:30 PM
 401860409,2026-10-24,Scheduled,Fortaleza,0,-,Ponte Preta,0,-,-,-,5:30 PM
-401850674,2026-10-24,Scheduled,Deportes Concepcion,0,-,La Serena,0,-,-,-,11:30 AM
+401850674,2026-10-24,45'+1',Deportes Concepcion,1,-,La Serena,2,-,-,-,11:30 AM
 401850673,2026-10-24,Scheduled,Cobresal,0,-,O'Higgins,0,-,-,-,7:00 PM
-401930318,2026-10-24,Scheduled,Albion FC,0,-,Central Español Fútbol Club,0,-,-,-,9:00 AM
+401930318,2026-10-24,FT,Albion FC,3,-,Central Español Fútbol Club,1,-,-,-,9:00 AM
 401930319,2026-10-24,Scheduled,Racing (Montevideo),0,-,Defensor Sporting,0,-,-,-,3:00 PM
 401930316,2026-10-24,Scheduled,Danubio,0,-,Deportivo Maldonado,0,-,-,-,6:00 PM
 401878057,2026-10-24,Scheduled,Cúcuta Deportivo,0,-,América de Cali,0,-,-,-,7:05 PM
@@ -264,20 +264,20 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401886132,2026-10-24,Scheduled,Sporting Cristal,0,-,Cusco FC,0,-,-,-,4:15 PM
 401886162,2026-10-24,Scheduled,Juan Pablo II,0,-,Universitario,0,-,-,-,8:30 PM
 401888576,2026-10-24,Scheduled,Sportivo Trinidense,0,-,Nacional Asunción,0,-,-,-,4:00 PM
-401888654,2026-10-24,Scheduled,Deportivo Recoleta,0,-,2 de Mayo,0,-,-,-,6:30 PM
+401888654,2026-10-24,Scheduled,Deportivo Recoleta,0,-,2 de Mayo,0,-,-,-,6:20 PM
 401921376,2026-10-24,Scheduled,Deportivo Cuenca,0,-,Manta F.C.,0,-,-,-,12:30 PM
 401921375,2026-10-24,Scheduled,Delfín,0,-,Orense,0,-,-,-,3:00 PM
 401921346,2026-10-24,Scheduled,Macará,0,-,Liga de Quito,0,-,-,-,5:30 PM
 401930958,2026-10-24,Scheduled,Academia Puerto Cabello,0,-,Monagas SC,0,-,-,-,5:30 PM
-401930957,2026-10-24,Scheduled,Deportivo Táchira,0,-,Caracas FC,0,-,-,-,7:30 PM
+401930957,2026-10-24,Scheduled,Deportivo Táchira,0,-,Caracas FC,0,-,-,-,6:00 PM
 401930017,2026-10-24,Scheduled,Blooming,0,-,GV San José,0,-,-,-,3:00 PM
 401930002,2026-10-24,Scheduled,Real Potosí,0,-,San Antonio Bulo Bulo,0,-,-,-,5:15 PM
 401930001,2026-10-24,Scheduled,ABB,0,-,Independiente Petrolero,0,-,-,-,7:30 PM
-401877565,2026-10-24,85',Shimizu S-Pulse,0,-,Sanfrecce Hiroshima,4,-,-,-,1:00 AM
-401877587,2026-10-24,45'+1',Kashiwa Reysol,1,-,Kashima Antlers,1,-,-,-,2:00 AM
-401877570,2026-10-24,45'+1',Avispa Fukuoka,0,-,Tokyo Verdy 1969,1,-,-,-,2:00 AM
-401877584,2026-10-24,45'+1',Machida Zelvia,0,-,Vissel Kobe,0,-,-,-,2:00 AM
-401877567,2026-10-24,Scheduled,Kyoto Sanga,0,-,Gamba Osaka,0,-,-,-,3:00 AM
+401877565,2026-10-24,FT,Shimizu S-Pulse,0,-,Sanfrecce Hiroshima,4,-,-,-,1:00 AM
+401877587,2026-10-24,FT,Kashiwa Reysol,3,-,Kashima Antlers,2,-,-,-,2:00 AM
+401877570,2026-10-24,FT,Avispa Fukuoka,1,-,Tokyo Verdy 1969,3,-,-,-,2:00 AM
+401877584,2026-10-24,FT,Machida Zelvia,0,-,Vissel Kobe,0,-,-,-,2:00 AM
+401877567,2026-10-24,FT,Kyoto Sanga,2,-,Gamba Osaka,2,-,-,-,3:00 AM
 401926748,2026-10-24,Scheduled,Génesis PN,0,-,CD Choloma,0,-,-,-,5:00 PM
 401926747,2026-10-24,Scheduled,Platense,0,-,Real España,0,-,-,-,7:15 PM
 401926746,2026-10-24,Scheduled,Club Deportivo Marathón,0,-,CA Independiente Siguatepeque,0,-,-,-,8:30 PM
@@ -289,19 +289,19 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401899702,2026-10-24,Scheduled,CD FAS,0,-,Águila,0,-,-,-,5:00 PM
 401899663,2026-10-24,Scheduled,Isidro Metapán,0,-,Alianza FC,0,-,-,-,5:00 PM
 401899703,2026-10-24,Scheduled,Cacahuatique,0,-,CD Municipal Limeño,0,-,-,-,8:00 PM
-401925427,2026-10-24,Scheduled,NorthEast United FC,0,-,Odisha FC,0,-,-,-,10:00 AM
+401925427,2026-10-24,FT,NorthEast United FC,0,-,Odisha FC,0,-,-,-,10:00 AM
 401913120,2026-10-24,Scheduled,Asswehly SC,0,-,Esperance Sportive de Tunis,0,-,-,-,12:00 PM
 401914246,2026-10-24,Scheduled,Horoya,0,-,Al-Merrikh,0,-,-,-,1:00 PM
 401914234,2026-10-24,Scheduled,El Merriekh Bentiu,0,-,Pyramids FC,0,-,-,-,1:00 PM
 401914252,2026-10-24,Scheduled,APR FC,0,-,Zamalek,0,-,-,-,1:00 PM
 401914238,2026-10-24,Scheduled,Star Sport Academy,0,-,RSB Berkane,0,-,-,-,3:00 PM
-401912494,2026-10-24,Scheduled,ZED FC,0,-,Azam FC,0,-,-,-,9:00 AM
+401912494,2026-10-24,FT,ZED FC,0,-,Azam FC,1,-,-,-,9:00 AM
 401912474,2026-10-24,Scheduled,Esperence Sportive de Zarzis,0,-,Réal Bamako,0,-,-,-,12:00 PM
 401912480,2026-10-24,Scheduled,Welwalo Adigrat,0,-,Al Ahli Tripoli,0,-,-,-,1:00 PM
 401912483,2026-10-24,Scheduled,Rayon Sport,0,-,Associação Black Bulls,0,-,-,-,1:00 PM
 401912486,2026-10-24,Scheduled,AFAD Plateau,0,-,Club Sportif Sfaxien,0,-,-,-,1:00 PM
 401912490,2026-10-24,Postponed,Douanes,0,-,CR Belouizdad,0,-,-,-,3:00 PM
-401887574,2026-10-24,Scheduled,Georgetown,0,-,Villanova,0,-,-,-,12:00 PM
+401887574,2026-10-24,12',Georgetown,0,-,Villanova,0,-,-,-,12:00 PM
 401899072,2026-10-24,Scheduled,Mercer,0,-,VMI,0,-,-,-,12:30 PM
 401898422,2026-10-24,Scheduled,Lafayette,0,-,American University,0,-,-,-,1:00 PM
 401898184,2026-10-24,Scheduled,Canisius,0,-,Fairfield,0,-,-,-,1:00 PM
@@ -368,11 +368,11 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401901738,2026-10-24,Scheduled,Seattle U,0,-,San Francisco,0,-,-,-,10:00 PM
 401897958,2026-10-24,Scheduled,San Diego State,0,-,UC Riverside,0,-,-,-,10:00 PM
 401898050,2026-10-24,Scheduled,California Baptist,0,-,UC San Diego,0,-,-,-,10:00 PM
-401890054,2026-10-24,Scheduled,Merrimack,0,-,Niagara,0,-,-,-,11:00 AM
-401886265,2026-10-24,Scheduled,Pennsylvania,0,-,Cornell,0,-,-,-,12:00 PM
-401886761,2026-10-24,Scheduled,Central Michigan,0,-,Massachusetts,0,-,-,-,12:00 PM
-401890020,2026-10-24,Scheduled,Mount St. Mary's,0,-,Sacred Heart,0,-,-,-,12:00 PM
-401899991,2026-10-24,Scheduled,Canisius,0,-,Saint Peter's,0,-,-,-,12:00 PM
+401890054,2026-10-24,52',Merrimack,1,-,Niagara,0,-,-,-,11:00 AM
+401886265,2026-10-24,12',Pennsylvania,0,-,Cornell,0,-,-,-,12:00 PM
+401886761,2026-10-24,12',Central Michigan,0,-,Massachusetts,0,-,-,-,12:00 PM
+401890020,2026-10-24,7',Mount St. Mary's,1,-,Sacred Heart,1,-,-,-,12:00 PM
+401899991,2026-10-24,5',Canisius,0,-,Saint Peter's,0,-,-,-,12:00 PM
 401886708,2026-10-24,Scheduled,Buffalo,0,-,Bowling Green,0,-,-,-,1:00 PM
 401900222,2026-10-24,Scheduled,Army,0,-,Bucknell,0,-,-,-,1:00 PM
 401900200,2026-10-24,Scheduled,Lehigh,0,-,Colgate,0,-,-,-,1:00 PM
