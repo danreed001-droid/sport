@@ -1,12 +1,19 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401909853,2026-10-24,8:42 - 2nd,Miami Heat,38,-,Charlotte Hornets,39,-,-,-,6:00 PM
-401909854,2026-10-24,10/24 - 7:30 PM EDT,Brooklyn Nets,0,-,Cleveland Cavaliers,0,-,-,-,7:30 PM
-401909855,2026-10-24,10/24 - 7:30 PM EDT,Milwaukee Bucks,0,-,Philadelphia 76ers,0,-,-,-,7:30 PM
-401909857,2026-10-24,10/24 - 8:00 PM EDT,Washington Wizards,0,-,Chicago Bulls,0,-,-,-,8:00 PM
-401909858,2026-10-24,10/24 - 8:00 PM EDT,San Antonio Spurs,0,-,Dallas Mavericks,0,-,-,-,8:00 PM
-401909856,2026-10-24,10/24 - 8:30 PM EDT,Houston Rockets,0,-,Atlanta Hawks,0,-,-,-,8:30 PM
-401909859,2026-10-24,10/24 - 9:00 PM EDT,New Orleans Pelicans,0,-,Denver Nuggets,0,-,-,-,9:00 PM
-401909860,2026-10-24,10/24 - 10:00 PM EDT,Golden State Warriors,0,-,Phoenix Suns,0,-,-,-,10:00 PM
+401909861,2026-10-25,10/25 - 5:00 PM EDT,Los Angeles Lakers,0,-,Utah Jazz,0,-,-,-,5:00 PM
+401909862,2026-10-25,10/25 - 6:00 PM EDT,Indiana Pacers,0,-,Brooklyn Nets,0,-,-,-,6:00 PM
+401909863,2026-10-25,10/25 - 7:00 PM EDT,Orlando Magic,0,-,New York Knicks,0,-,-,-,7:00 PM
+401909864,2026-10-25,10/25 - 7:00 PM EDT,Toronto Raptors,0,-,Minnesota Timberwolves,0,-,-,-,7:00 PM
+401909865,2026-10-25,10/25 - 7:00 PM EDT,LA Clippers,0,-,Oklahoma City Thunder,0,-,-,-,7:00 PM
+401909866,2026-10-25,10/25 - 7:30 PM EDT,Detroit Pistons,0,-,Philadelphia 76ers,0,-,-,-,7:30 PM
+401909867,2026-10-25,10/25 - 9:00 PM EDT,Memphis Grizzlies,0,-,Sacramento Kings,0,-,-,-,9:00 PM
+401909853,2026-10-24,Final,Miami Heat,110,-,Charlotte Hornets,115,-,-180,150,6:00 PM
+401909854,2026-10-24,Final,Brooklyn Nets,121,-,Cleveland Cavaliers,125,-,380,-500,7:30 PM
+401909855,2026-10-24,Final,Milwaukee Bucks,116,-,Philadelphia 76ers,127,-,470,-650,7:30 PM
+401909857,2026-10-24,Final,Washington Wizards,124,-,Chicago Bulls,120,-,105,-125,8:00 PM
+401909858,2026-10-24,Final,San Antonio Spurs,122,-,Dallas Mavericks,106,-,-900,600,8:00 PM
+401909856,2026-10-24,Final,Houston Rockets,121,-,Atlanta Hawks,114,-,-112,-108,8:30 PM
+401909859,2026-10-24,Final/OT,New Orleans Pelicans,135,-,Denver Nuggets,141,-,370,-485,9:00 PM
+401909860,2026-10-24,Final,Golden State Warriors,122,-,Phoenix Suns,131,-,320,-410,10:00 PM
 401909848,2026-10-23,Final,Chicago Bulls,132,-,Milwaukee Bucks,125,-,-102,-118,4:00 PM
 401909095,2026-10-23,Final,New York Knicks,103,-,Boston Celtics,107,-,124,-148,7:00 PM
 401909843,2026-10-23,Final,Atlanta Hawks,128,-,Charlotte Hornets,81,-,-142,120,7:00 PM

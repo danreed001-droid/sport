@@ -7,16 +7,16 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401858498,2026-10-24,Final,Rutgers Scarlet Knights,14,-,Northwestern Wildcats,42,-,525,-750,12:00 PM
 401856841,2026-10-24,Final,West Virginia Mountaineers,24,-,TCU Horned Frogs,20,-,285,-360,12:00 PM
 401862809,2026-10-24,Final,Rice Owls,49,-,Florida Atlantic Owls,51,-,270,-340,12:00 PM
-401866450,2026-10-24,9:21 - 4th,Western Michigan Broncos,35,-,Toledo Rockets,38,-,-,-,12:00 PM
-401856834,2026-10-24,10:30 - 3rd,Baylor Bears,14,-,Kansas Jayhawks,10,-,-,-,1:00 PM
-401866446,2026-10-24,7:10 - 3rd,Akron Zips,14,-,Kent State Golden Flashes,7,-,-,-,1:00 PM
-401866476,2026-10-24,9:11 - 3rd,Miami (OH) RedHawks,14,-,Central Michigan Chippewas,17,-,-,-,1:00 PM
-401858495,2026-10-24,13:11 - 1st,Oregon Ducks,0,-,Illinois Fighting Illini,0,-,-,-,3:00 PM
-401856835,2026-10-24,1:44 - 4th,BYU Cougars,24,-,UCF Knights,24,-,-,-,3:30 PM
-401858499,2026-10-24,3:32 - 4th,Michigan State Spartans,10,-,UCLA Bruins,28,-,-,-,3:30 PM
-401856731,2026-10-24,2:00 - 4th,Tennessee Volunteers,24,-,South Carolina Gamecocks,17,-,-,-,3:30 PM
-401856727,2026-10-24,3:30 - 4th,Texas A&M Aggies,20,-,Alabama Crimson Tide,31,-,-,-,3:30 PM
-401858497,2026-10-24,0:18 - 4th,Iowa Hawkeyes,10,-,Minnesota Golden Gophers,10,-,-,-,3:30 PM
+401866450,2026-10-24,Final,Western Michigan Broncos,38,-,Toledo Rockets,45,-,120,-142,12:00 PM
+401856834,2026-10-24,Final,Baylor Bears,24,-,Kansas Jayhawks,25,-,-102,-118,1:00 PM
+401866446,2026-10-24,Final,Akron Zips,20,-,Kent State Golden Flashes,35,-,124,-148,1:00 PM
+401866476,2026-10-24,Final,Miami (OH) RedHawks,28,-,Central Michigan Chippewas,27,-,-166,140,1:00 PM
+401858495,2026-10-24,Final,Oregon Ducks,10,-,Illinois Fighting Illini,21,-,-410,320,3:00 PM
+401856835,2026-10-24,Final/2OT,BYU Cougars,31,-,UCF Knights,39,-,-305,245,3:30 PM
+401858499,2026-10-24,Final,Michigan State Spartans,10,-,UCLA Bruins,28,-,575,-850,3:30 PM
+401856731,2026-10-24,Final,Tennessee Volunteers,24,-,South Carolina Gamecocks,27,-,114,-135,3:30 PM
+401856727,2026-10-24,Final,Texas A&M Aggies,20,-,Alabama Crimson Tide,31,-,440,-600,3:30 PM
+401858497,2026-10-24,Final,Iowa Hawkeyes,10,-,Minnesota Golden Gophers,13,-,-290,235,3:30 PM
 401856730,2026-10-24,Final,Oklahoma Sooners,23,-,Mississippi State Bulldogs,15,-,-122,102,3:30 PM
 401858273,2026-10-24,End of 4th,Boston College Eagles,49,-,Georgia Tech Yellow Jackets,27,-,-,-,3:30 PM
 401862810,2026-10-24,Final,North Texas Mean Green,49,-,Navy Midshipmen,39,-,-148,124,3:30 PM
@@ -29,8 +29,13 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401864528,2026-10-24,10:13 - 3rd,San José State Spartans,3,-,Nevada Wolf Pack,7,-,-,-,5:00 PM
 401869967,2026-10-24,Halftime,Louisiana Ragin' Cajuns,21,-,Southern Miss Golden Eagles,21,-,-,-,5:00 PM
 401871093,2026-10-24,7:37 - 3rd,Old Dominion Monarchs,0,-,Louisiana Tech Bulldogs,23,-,-,-,5:00 PM
-401860907,2026-10-24,9:59 - 2nd,Boise State Broncos,7,-,Washington State Cougars,0,-,-,-,6:00 PM
+401860907,2026-10-24,Final,Boise State Broncos,31,-,Washington State Cougars,10,-,-625,455,6:00 PM
 401860905,2026-10-24,8:02 - 1st,San Diego State Aztecs,6,-,Colorado State Rams,7,-,-,-,6:30 PM
+401856732,2026-10-24,Final,Ole Miss Rebels,27,-,Texas Longhorns,34,-,142,-170,7:30 PM
+401856837,2026-10-24,Final,Houston Cougars,13,-,Utah Utes,21,-,190,-230,10:15 PM
+401856729,2026-10-24,Final,Vanderbilt Commodores,17,-,Kentucky Wildcats,34,-,340,-440,7:30 PM
+401858500,2026-10-24,Final,USC Trojans,7,-,Wisconsin Badgers,24,-,-125,105,7:30 PM
+401856838,2026-10-24,Final,Iowa State Cyclones,3,-,Arizona Wildcats,39,-,295,-375,7:30 PM
 401858271,2026-10-23,Final,Duke Blue Devils,19,-,Virginia Cavaliers,16,-,114,-135,7:00 PM
 401861965,2026-10-23,Final,Massachusetts Minutemen,16,-,UConn Huskies,35,-,390,-520,7:00 PM
 401862808,2026-10-23,Final,Army Black Knights,38,-,Tulsa Golden Hurricane,35,-,-118,-102,8:30 PM
