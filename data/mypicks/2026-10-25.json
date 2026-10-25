@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-25",
+  "picks": {
+    "nba-2026-10-25-toronto-raptors-minnesota-timberwolves-7-00-pm-et": {
+      "sport": "nba",
+      "away": "Toronto Raptors",
+      "home": "Minnesota Timberwolves",
+      "time": "7:00 PM ET",
+      "side": "home",
+      "team": "Minnesota Timberwolves",
+      "spread": -1.5,
+      "spreadOdds": -104,
+      "moneyline": -105,
+      "submittedAt": "2026-10-25T16:53:52+00:00",
+      "issue": 12
+    }
+  },
+  "scores": {
+    "nba-2026-10-25-detroit-pistons-philadelphia-76ers-7-30-pm-et": "NANhNHNNN",
+    "nba-2026-10-25-la-clippers-oklahoma-city-thunder-7-00-pm-et": "NNhhNNHAN",
+    "nba-2026-10-25-los-angeles-lakers-utah-jazz-5-00-pm-et": "NNNaNNNNN",
+    "nba-2026-10-25-memphis-grizzlies-sacramento-kings-9-00-pm-et": "NNAANNNNN",
+    "nba-2026-10-25-toronto-raptors-minnesota-timberwolves-7-00-pm-et": "NNNNNNNHN",
+    "nfl-2026-10-25-cincinnati-bengals-baltimore-ravens-1-00-pm-et": "NNaN",
+    "nfl-2026-10-25-green-bay-packers-detroit-lions-4-25-pm-et": "NhhN",
+    "nfl-2026-10-25-kansas-city-chiefs-seattle-seahawks-8-20-pm-et": "NNhNN",
+    "nfl-2026-10-25-los-angeles-rams-las-vegas-raiders-4-25-pm-et": "NhNN",
+    "nfl-2026-10-25-miami-dolphins-new-york-jets-1-00-pm-et": "NNaH",
+    "nfl-2026-10-25-new-york-giants-houston-texans-1-00-pm-et": "NhNN",
+    "nfl-2026-10-25-pittsburgh-steelers-new-orleans-saints-9-30-am-et": "NaN"
+  }
+}
