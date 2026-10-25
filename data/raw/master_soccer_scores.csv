@@ -4,29 +4,29 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401878766,2026-10-25,FT,Brentford,1,-,Hull City,1,-,-,-,10:00 AM
 401878765,2026-10-25,FT,Brighton & Hove Albion,0,-,Liverpool,2,-,-,-,10:00 AM
 401879252,2026-10-25,FT,AFC Bournemouth,3,-,Manchester United,0,-,-,-,10:00 AM
-401878764,2026-10-25,23',Leeds United,0,-,Sunderland,0,-,-,-,12:30 PM
+401878764,2026-10-25,FT,Leeds United,0,-,Sunderland,0,-,-,-,12:30 PM
 401882835,2026-10-25,FT,Getafe,0,-,Athletic Club,4,-,-,-,9:00 AM
-401882833,2026-10-25,80',Real Betis,0,-,Celta Vigo,0,-,-,-,11:15 AM
-401882829,2026-10-25,Scheduled,Levante,0,-,Real Sociedad,0,-,-,-,1:30 PM
+401882833,2026-10-25,FT,Real Betis,0,-,Celta Vigo,0,-,-,-,11:15 AM
+401882829,2026-10-25,90'+2',Levante,1,-,Real Sociedad,2,-,-,-,1:30 PM
 401882832,2026-10-25,Scheduled,Real Madrid,0,-,Barcelona,0,-,-,-,4:00 PM
 761904,2026-10-25,Scheduled,LA Galaxy,0,-,LAFC,0,-,-,-,9:00 PM
-401854031,2026-10-25,Scheduled,Gotham FC,0,-,Orlando Pride,0,-,-,-,3:00 PM
+401854031,2026-10-25,14',Gotham FC,0,-,Orlando Pride,0,-,-,-,3:00 PM
 401854032,2026-10-25,Scheduled,Washington Spirit,0,-,Kansas City Current,0,-,-,-,5:00 PM
 401854094,2026-10-25,Scheduled,Boston Legacy FC,0,-,San Diego Wave FC,0,-,-,-,7:00 PM
 401930375,2026-10-25,FT,Auckland United FC,0,-,Naegohyang,2,-,-,-,3:00 AM
 401875036,2026-10-25,FT,Fiorentina,1,-,Internazionale,2,-,-,-,7:30 AM
 401874972,2026-10-25,FT,Frosinone,4,-,Atalanta,4,-,-,-,10:00 AM
 401874952,2026-10-25,FT,Venezia,0,-,Genoa,1,-,-,-,10:00 AM
-401874772,2026-10-25,Scheduled,Juventus,0,-,Lecce,0,-,-,-,1:00 PM
+401874772,2026-10-25,FT,Juventus,2,-,Lecce,0,-,-,-,1:00 PM
 401874779,2026-10-25,Scheduled,AC Milan,0,-,Udinese,0,-,-,-,3:45 PM
 401884760,2026-10-25,FT,Bayer Leverkusen,0,-,TSG Hoffenheim,3,-,-,-,10:30 AM
-401884759,2026-10-25,23',Bayern Munich,1,-,SC Freiburg,0,-,-,-,12:30 PM
+401884759,2026-10-25,FT,Bayern Munich,3,-,SC Freiburg,1,-,-,-,12:30 PM
 401876425,2026-10-25,FT,Lille,1,-,AS Monaco,1,-,-,-,10:00 AM
-401876429,2026-10-25,38',Le Mans,0,-,AJ Auxerre,0,-,-,-,12:15 PM
-401876430,2026-10-25,38',Lorient,0,-,Angers,0,-,-,-,12:15 PM
-401876426,2026-10-25,38',Le Havre AC,0,-,Marseille,2,-,-,-,12:15 PM
-401876424,2026-10-25,38',Strasbourg,0,-,Stade Rennais,1,-,-,-,12:15 PM
-401876423,2026-10-25,37',Troyes,0,-,Toulouse,0,-,-,-,12:15 PM
+401876429,2026-10-25,FT,Le Mans,1,-,AJ Auxerre,1,-,-,-,12:15 PM
+401876430,2026-10-25,FT,Lorient,0,-,Angers,0,-,-,-,12:15 PM
+401876426,2026-10-25,FT,Le Havre AC,3,-,Marseille,4,-,-,-,12:15 PM
+401876424,2026-10-25,FT,Strasbourg,0,-,Stade Rennais,3,-,-,-,12:15 PM
+401876423,2026-10-25,FT,Troyes,0,-,Toulouse,0,-,-,-,12:15 PM
 401876923,2026-10-25,Scheduled,Puebla,0,-,Atlas,0,-,-,-,7:00 PM
 401876921,2026-10-25,Scheduled,Cruz Azul,0,-,Querétaro,0,-,-,-,9:00 PM
 401876922,2026-10-25,Scheduled,Pachuca,0,-,América,0,-,-,-,9:05 PM
@@ -34,14 +34,14 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401875570,2026-10-25,FT,Excelsior,0,-,Fortuna Sittard,1,-,-,-,7:15 AM
 401875569,2026-10-25,FT,FC Groningen,2,-,NEC Nijmegen,2,-,-,-,9:30 AM
 401875568,2026-10-25,FT,Feyenoord Rotterdam,1,-,PSV Eindhoven,1,-,-,-,9:30 AM
-401875567,2026-10-25,46',Ajax Amsterdam,2,-,Sparta Rotterdam,1,-,-,-,11:45 AM
-401875566,2026-10-25,Scheduled,FC Twente,0,-,AZ Alkmaar,0,-,-,-,3:00 PM
+401875567,2026-10-25,FT,Ajax Amsterdam,2,-,Sparta Rotterdam,1,-,-,-,11:45 AM
+401875566,2026-10-25,21',FC Twente,0,-,AZ Alkmaar,0,-,-,-,3:00 PM
 401902883,2026-10-25,FT,Chelsea,3,-,Crystal Palace,1,-,-,-,8:00 AM
 401902885,2026-10-25,FT,Charlton Athletic,0,-,Birmingham City,1,-,-,-,10:00 AM
 401902882,2026-10-25,FT,Aston Villa,3,-,Everton,2,-,-,-,10:00 AM
 401902881,2026-10-25,FT,London City Lionesses,2,-,Liverpool,2,-,-,-,10:00 AM
-401902886,2026-10-25,Scheduled,Manchester City,0,-,Manchester United,0,-,-,-,2:00 PM
-401878618,2026-10-25,Scheduled,Dallas Trinity FC,0,-,DC Power FC,0,-,-,-,3:00 PM
+401902886,2026-10-25,65',Manchester City,0,-,Manchester United,0,-,-,-,2:00 PM
+401878618,2026-10-25,14',Dallas Trinity FC,0,-,DC Power FC,1,-,-,-,3:00 PM
 401928702,2026-10-25,FT,Hashtag United FC,0,-,Exeter City,2,-,-,-,8:00 AM
 401928645,2026-10-25,FT,Bristol Rovers,6,-,Abingdon United,0,-,-,-,10:00 AM
 401928697,2026-10-25,FT,Oxford United,5,-,AFC Portchester,0,-,-,-,10:00 AM
@@ -71,7 +71,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401928689,2026-10-25,FT,Boldmere St. Michael's,3,-,Port Vale,1,-,-,-,10:00 AM
 401928710,2026-10-25,FT,Cheltenham Town,0,-,Portsmouth,4,-,-,-,10:00 AM
 401928632,2026-10-25,Postponed,i2i International,0,-,Preston North End,0,-,-,-,10:00 AM
-401928709,2026-10-25,Scheduled,Lewes,0,-,Queens Park Rangers,0,-,-,-,10:00 AM
+401928709,2026-10-25,FT,Lewes,1,-,Queens Park Rangers,0,-,-,-,10:00 AM
 401928729,2026-10-25,FT,Crewe Alexandra,1,-,Royston Town,0,-,-,-,10:00 AM
 401928693,2026-10-25,Postponed,SJR Workshop,0,-,South Shields,0,-,-,-,10:00 AM
 401928708,2026-10-25,FT,Portishead Town,2,-,St Agnes AFC,0,-,-,-,10:00 AM
@@ -83,109 +83,109 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401928694,2026-10-25,Scheduled,Chester-le-Street Town,0,-,Wigan Athletic,0,-,-,-,10:00 AM
 401928698,2026-10-25,FT,Keynsham Town,1,-,Winchester City Flyers,0,-,-,-,10:00 AM
 401928696,2026-10-25,Scheduled,Mancunian Unity,0,-,Workington Town,0,-,-,-,10:00 AM
-401928705,2026-10-25,Scheduled,Marine Academy Plymouth,0,-,Actonians,0,-,-,-,11:00 AM
-401928704,2026-10-25,Scheduled,Bromley,0,-,Barking,0,-,-,-,11:00 AM
-401928700,2026-10-25,Scheduled,AFC Wimbledon,0,-,Hammersmith,0,-,-,-,11:00 AM
-401928711,2026-10-25,Scheduled,Chesterfield,0,-,Harpenden Town,0,-,-,-,11:00 AM
-401928728,2026-10-25,Scheduled,Sporting Khalsa,0,-,Rugby Borough,0,-,-,-,11:00 AM
-401928701,2026-10-25,Scheduled,Chatham Town,0,-,Tooting Bec,0,-,-,-,11:00 AM
+401928705,2026-10-25,FT-Pens,Marine Academy Plymouth,0,-,Actonians,0,-,-,-,11:00 AM
+401928704,2026-10-25,FT,Bromley,0,-,Barking,2,-,-,-,11:00 AM
+401928700,2026-10-25,FT,AFC Wimbledon,3,-,Hammersmith,0,-,-,-,11:00 AM
+401928711,2026-10-25,FT-Pens,Chesterfield,0,-,Harpenden Town,0,-,-,-,11:00 AM
+401928728,2026-10-25,FT,Sporting Khalsa,0,-,Rugby Borough,3,-,-,-,11:00 AM
+401928701,2026-10-25,FT,Chatham Town,1,-,Tooting Bec,0,-,-,-,11:00 AM
 401882482,2026-10-25,FT,Alavés,1,-,Deportivo,2,-,-,-,7:45 AM
-401882480,2026-10-25,HT,Madrid CFF,2,-,Eibar,0,-,-,-,12:00 PM
+401882480,2026-10-25,FT,Madrid CFF,2,-,Eibar,2,-,-,-,12:00 PM
 401878360,2026-10-25,FT,Celtic,2,-,Hibernian,1,-,-,-,8:00 AM
 401878359,2026-10-25,FT,Heart of Midlothian,2,-,Motherwell,0,-,-,-,10:00 AM
 401892151,2026-10-25,FT,Adelaide United FC,1,-,Sydney FC,2,-,-,-,12:00 AM
 401913245,2026-10-25,FT,Melbourne City,5,-,Sydney FC ,0,-,-,-,2:45 AM
-401885418,2026-10-25,61',Moreirense,3,-,Estoril,0,-,-,-,11:30 AM
-401885416,2026-10-25,Scheduled,Braga,0,-,C.D. Nacional,0,-,-,-,2:00 PM
-401885415,2026-10-25,Scheduled,FC Famalicao,0,-,Rio Ave,0,-,-,-,2:00 PM
+401885418,2026-10-25,FT,Moreirense,3,-,Estoril,1,-,-,-,11:30 AM
+401885416,2026-10-25,58',Braga,0,-,C.D. Nacional,1,-,-,-,2:00 PM
+401885415,2026-10-25,61',FC Famalicao,1,-,Rio Ave,0,-,-,-,2:00 PM
 401885413,2026-10-25,Scheduled,Académico de Viseu,0,-,Sporting CP,0,-,-,-,4:30 PM
 401888266,2026-10-25,FT,Genclerbirligi,0,-,Konyaspor,2,-,-,-,9:00 AM
-401888376,2026-10-25,HT,Çorum FK,0,-,Goztepe,2,-,-,-,12:00 PM
-401886329,2026-10-25,Scheduled,Correcaminos UAT,0,-,Tlaxcala FC,0,-,-,-,2:00 PM
+401888376,2026-10-25,FT,Çorum FK,0,-,Goztepe,2,-,-,-,12:00 PM
+401886329,2026-10-25,59',Correcaminos UAT,0,-,Tlaxcala FC,1,-,-,-,2:00 PM
 401886333,2026-10-25,Scheduled,Club Atlético Morelia,0,-,Tapatío,0,-,-,-,7:00 PM
 401924394,2026-10-25,Scheduled,Monterrey,0,-,Tigres UANL,0,-,-,-,8:06 PM
 401859959,2026-10-25,Scheduled,Calgary Wild FC,0,-,Vancouver Rise FC,0,-,-,-,4:00 PM
 401879831,2026-10-25,FT,Lokomotiv Moscow,0,-,Rostov,2,-,-,-,6:45 AM
 401879828,2026-10-25,FT,Spartak Moscow,0,-,CSKA Moscow,2,-,-,-,9:00 AM
-401879825,2026-10-25,59',Dynamo Makhachkala,0,-,Zenit St Petersburg,0,-,-,-,11:30 AM
+401879825,2026-10-25,FT,Dynamo Makhachkala,0,-,Zenit St Petersburg,2,-,-,-,11:30 AM
 401878963,2026-10-25,FT,Standard Liege,1,-,Racing Genk,2,-,-,-,8:30 AM
-401878964,2026-10-25,90'+4',Sint-Truidense,2,-,Club Brugge,3,-,-,-,11:00 AM
-401878962,2026-10-25,Scheduled,Anderlecht,0,-,KAA Gent,0,-,-,-,1:30 PM
-401878961,2026-10-25,Scheduled,Cercle Brugge KSV,0,-,Union St.-Gilloise,0,-,-,-,2:15 PM
+401878964,2026-10-25,FT,Sint-Truidense,2,-,Club Brugge,3,-,-,-,11:00 AM
+401878962,2026-10-25,90'+2',Anderlecht,0,-,KAA Gent,4,-,-,-,1:30 PM
+401878961,2026-10-25,46',Cercle Brugge KSV,1,-,Union St.-Gilloise,0,-,-,-,2:15 PM
 401883127,2026-10-25,FT,Tenerife,1,-,CD Sabadell,1,-,-,-,9:00 AM
-401883132,2026-10-25,76',Eldense,0,-,Albacete,2,-,-,-,11:15 AM
-401883130,2026-10-25,77',Ceuta,1,-,Cádiz,2,-,-,-,11:15 AM
-401883129,2026-10-25,Scheduled,Sporting Gijón,0,-,Castellón,0,-,-,-,1:30 PM
+401883132,2026-10-25,FT,Eldense,0,-,Albacete,2,-,-,-,11:15 AM
+401883130,2026-10-25,FT,Ceuta,1,-,Cádiz,3,-,-,-,11:15 AM
+401883129,2026-10-25,90'+3',Sporting Gijón,0,-,Castellón,4,-,-,-,1:30 PM
 401885078,2026-10-25,FT,Dynamo Dresden,0,-,Holstein Kiel,3,-,-,-,8:30 AM
 401885076,2026-10-25,FT,Hannover 96,0,-,TSV Eintracht Braunschweig,2,-,-,-,8:30 AM
 401885075,2026-10-25,FT,SpVgg Greuther Fürth,0,-,VfL Osnabruck,3,-,-,-,8:30 AM
 401899582,2026-10-25,FT,Carrarese,1,-,Palermo,2,-,-,-,10:00 AM
-401899584,2026-10-25,36',Pisa,0,-,Hellas Verona,0,-,-,-,12:15 PM
+401899584,2026-10-25,FT,Pisa,1,-,Hellas Verona,1,-,-,-,12:15 PM
 401881767,2026-10-25,FT,SV Josko Ried,2,-,SK Sturm Graz,2,-,-,-,9:30 AM
-401881766,2026-10-25,HT,RB Salzburg,1,-,LASK Linz,1,-,-,-,12:00 PM
+401881766,2026-10-25,FT,RB Salzburg,3,-,LASK Linz,1,-,-,-,12:00 PM
 401896815,2026-10-25,FT,Kalamata,0,-,Olympiacos,5,-,-,-,10:00 AM
-401896741,2026-10-25,HT,Panathinaikos,0,-,Volos NFC,0,-,-,-,12:00 PM
-401896742,2026-10-25,Scheduled,Atromitos,0,-,Aris,0,-,-,-,1:30 PM
-401896740,2026-10-25,Scheduled,PAOK,0,-,OFI Crete,0,-,-,-,2:00 PM
-401874059,2026-10-25,90'+3',Spain U17,3,-,Chile U17,0,-,-,-,11:00 AM
+401896741,2026-10-25,FT,Panathinaikos,1,-,Volos NFC,0,-,-,-,12:00 PM
+401896742,2026-10-25,88',Atromitos,1,-,Aris,3,-,-,-,1:30 PM
+401896740,2026-10-25,62',PAOK,0,-,OFI Crete,1,-,-,-,2:00 PM
+401874059,2026-10-25,FT,Spain U17,3,-,Chile U17,1,-,-,-,11:00 AM
 401874127,2026-10-25,FT,Australia U17,0,-,Mexico U17,1,-,-,-,11:00 AM
-401874124,2026-10-25,Scheduled,United States U17,0,-,China PR U17,0,-,-,-,2:00 PM
-401891032,2026-10-25,Scheduled,Kenya U17,0,-,Samoa U17,0,-,-,-,2:00 PM
+401874124,2026-10-25,58',United States U17,0,-,China PR U17,1,-,-,-,2:00 PM
+401891032,2026-10-25,63',Kenya U17,3,-,Samoa U17,0,-,-,-,2:00 PM
 401882146,2026-10-25,FT,AZ Alkmaar,0,-,Heerenveen,1,-,-,-,7:15 AM
-401882145,2026-10-25,50',ADO Den Haag,0,-,FC Utrecht,0,-,-,-,11:45 AM
-401882144,2026-10-25,46',FC Twente,0,-,PEC Zwolle,1,-,-,-,11:45 AM
+401882145,2026-10-25,FT,ADO Den Haag,0,-,FC Utrecht,1,-,-,-,11:45 AM
+401882144,2026-10-25,FT,FC Twente,1,-,PEC Zwolle,1,-,-,-,11:45 AM
 401842857,2026-10-25,FT,IFK Göteborg,1,-,GAIS,1,-,-,-,9:00 AM
-401842854,2026-10-25,67',Hammarby IF,0,-,Mjällby AIF,0,-,-,-,11:30 AM
+401842854,2026-10-25,FT,Hammarby IF,2,-,Mjällby AIF,0,-,-,-,11:30 AM
 401874547,2026-10-25,FT,Lyngby Boldklub,2,-,FC Midtjylland,3,-,-,-,9:00 AM
 401874735,2026-10-25,FT,FC Nordsjælland,1,-,Silkeborg IF,1,-,-,-,9:00 AM
-401874546,2026-10-25,90'+3',Sønderjyske Fodbold,1,-,AC Horsens,5,-,-,-,11:00 AM
-401874553,2026-10-25,Scheduled,Viborg FF,0,-,AGF,0,-,-,-,1:00 PM
+401874546,2026-10-25,FT,Sønderjyske Fodbold,1,-,AC Horsens,5,-,-,-,11:00 AM
+401874553,2026-10-25,FT,Viborg FF,1,-,AGF,2,-,-,-,1:00 PM
 401843373,2026-10-25,FT,Tromso,1,-,Viking FK,3,-,-,-,9:30 AM
-401843366,2026-10-25,HT,Sandefjord,0,-,IK Start,0,-,-,-,12:00 PM
-401843370,2026-10-25,HT,KFUM Oslo,0,-,Kristiansund BK,2,-,-,-,12:00 PM
-401843369,2026-10-25,HT,SK Brann,0,-,Lillestrom,1,-,-,-,12:00 PM
-401843367,2026-10-25,HT,Aalesund,1,-,Sarpsborg FK,0,-,-,-,12:00 PM
-401843368,2026-10-25,Scheduled,Fredrikstad,0,-,Molde,0,-,-,-,2:15 PM
-401841629,2026-10-25,Scheduled,Belgrano (Córdoba),0,-,Aldosivi,0,-,-,-,1:45 PM
+401843366,2026-10-25,FT,Sandefjord,0,-,IK Start,1,-,-,-,12:00 PM
+401843370,2026-10-25,FT,KFUM Oslo,2,-,Kristiansund BK,2,-,-,-,12:00 PM
+401843369,2026-10-25,FT,SK Brann,2,-,Lillestrom,3,-,-,-,12:00 PM
+401843367,2026-10-25,FT,Aalesund,1,-,Sarpsborg FK,2,-,-,-,12:00 PM
+401843368,2026-10-25,47',Fredrikstad,1,-,Molde,3,-,-,-,2:15 PM
+401841629,2026-10-25,76',Belgrano (Córdoba),0,-,Aldosivi,1,-,-,-,1:45 PM
 401841636,2026-10-25,Scheduled,Boca Juniors,0,-,Independiente,0,-,-,-,4:00 PM
 401841634,2026-10-25,Scheduled,Racing Club,0,-,River Plate,0,-,-,-,6:15 PM
 401841640,2026-10-25,Scheduled,Estudiantes de Río Cuarto,0,-,Barracas Central,0,-,-,-,8:30 PM
 401841639,2026-10-25,Scheduled,Vélez Sarsfield,0,-,Central Córdoba (Santiago del Estero),0,-,-,-,8:30 PM
-401844231,2026-10-25,Scheduled,Deportivo Morón,0,-,Almirante Brown,0,-,-,-,2:30 PM
-401844238,2026-10-25,Scheduled,Los Andes,0,-,Estudiantes (Buenos Aires),0,-,-,-,2:30 PM
-401844241,2026-10-25,Scheduled,Atlanta,0,-,Gimnasia y Esgrima (Jujuy),0,-,-,-,3:00 PM
-401844244,2026-10-25,Scheduled,Agropecuario,0,-,Patronato,0,-,-,-,3:00 PM
-401844230,2026-10-25,Scheduled,All Boys,0,-,Racing (Córdoba),0,-,-,-,3:00 PM
-401844229,2026-10-25,Scheduled,Chacarita Juniors,0,-,Temperley,0,-,-,-,3:00 PM
+401844231,2026-10-25,HT,Deportivo Morón,0,-,Almirante Brown,1,-,-,-,2:30 PM
+401844238,2026-10-25,45',Los Andes,0,-,Estudiantes (Buenos Aires),0,-,-,-,2:30 PM
+401844241,2026-10-25,16',Atlanta,0,-,Gimnasia y Esgrima (Jujuy),0,-,-,-,3:00 PM
+401844244,2026-10-25,15',Agropecuario,0,-,Patronato,0,-,-,-,3:00 PM
+401844230,2026-10-25,19',All Boys,0,-,Racing (Córdoba),0,-,-,-,3:00 PM
+401844229,2026-10-25,14',Chacarita Juniors,0,-,Temperley,0,-,-,-,3:00 PM
 401844232,2026-10-25,Scheduled,Acassuso,0,-,Central Norte,0,-,-,-,4:00 PM
 401844237,2026-10-25,Scheduled,Güemes,0,-,Deportivo Maipú,0,-,-,-,4:00 PM
 401844240,2026-10-25,Scheduled,Gimnasia y Tiro (Salta),0,-,Midland,0,-,-,-,4:00 PM
 401844242,2026-10-25,Scheduled,Godoy Cruz Antonio Tomba,0,-,Mitre (Santiago del Estero),0,-,-,-,4:00 PM
-401845157,2026-10-25,Scheduled,Dock Sud,0,-,Talleres de Remedios,0,-,-,-,2:00 PM
-401850675,2026-10-25,59',Coquimbo Unido,1,-,Ñublense,1,-,-,-,11:30 AM
-401850669,2026-10-25,Scheduled,Universidad Católica,0,-,Unión La Calera,0,-,-,-,2:00 PM
+401845157,2026-10-25,55',Dock Sud,0,-,Talleres de Remedios,3,-,-,-,2:00 PM
+401850675,2026-10-25,FT,Coquimbo Unido,1,-,Ñublense,2,-,-,-,11:30 AM
+401850669,2026-10-25,58',Universidad Católica,1,-,Unión La Calera,1,-,-,-,2:00 PM
 401850672,2026-10-25,Scheduled,Colo Colo,0,-,Palestino,0,-,-,-,4:30 PM
 401850670,2026-10-25,Scheduled,Deportes Limache,0,-,Universidad de Concepción,0,-,-,-,7:00 PM
 401930338,2026-10-25,FT,Progreso,1,-,Montevideo Wanderers,0,-,-,-,9:00 AM
-401930337,2026-10-25,HT,Cerro,1,-,Montevideo City Torque,1,-,-,-,12:00 PM
-401930336,2026-10-25,Scheduled,Boston River,0,-,Cerro Largo,0,-,-,-,3:00 PM
+401930337,2026-10-25,FT,Cerro,1,-,Montevideo City Torque,3,-,-,-,12:00 PM
+401930336,2026-10-25,21',Boston River,0,-,Cerro Largo,0,-,-,-,3:00 PM
 401930335,2026-10-25,Scheduled,Liverpool,0,-,Nacional,0,-,-,-,6:30 PM
-401877906,2026-10-25,Scheduled,Deportivo Cali,0,-,Fortaleza CEIF,0,-,-,-,3:00 PM
+401877906,2026-10-25,22',Deportivo Cali,1,-,Fortaleza CEIF,0,-,-,-,3:00 PM
 401878036,2026-10-25,Scheduled,Internacional de Bogotá,0,-,Alianza FC,0,-,-,-,5:05 PM
 401878052,2026-10-25,Scheduled,Independiente Medellín,0,-,Atlético Nacional,0,-,-,-,7:10 PM
 401877918,2026-10-25,Scheduled,Deportivo Pasto,0,-,Deportes Tolima,0,-,-,-,9:15 PM
-401886158,2026-10-25,HT,Cienciano del Cusco,0,-,Comerciantes Unidos,1,-,-,-,12:00 PM
-401886159,2026-10-25,Scheduled,Alianza Lima,0,-,Deportivo Moquegua,0,-,-,-,2:15 PM
+401886158,2026-10-25,FT,Cienciano del Cusco,1,-,Comerciantes Unidos,3,-,-,-,12:00 PM
+401886159,2026-10-25,HT,Alianza Lima,0,-,Deportivo Moquegua,0,-,-,-,2:15 PM
 401886157,2026-10-25,Scheduled,FC Cajamarca,0,-,Sport Boys,0,-,-,-,4:30 PM
 401886156,2026-10-25,Scheduled,Los Chankas,0,-,Deportivo Garcilaso,0,-,-,-,7:00 PM
 401888653,2026-10-25,FT,Club Olimpia,3,-,Sportivo Ameliano,2,-,-,-,9:00 AM
 401888578,2026-10-25,Scheduled,Cerro Porteño,0,-,Sportivo San Lorenzo,0,-,-,-,6:30 PM
-401921335,2026-10-25,22',Libertad (Ecuador),0,-,Leones,0,-,-,-,12:30 PM
-401921334,2026-10-25,Scheduled,Guayaquil City FC,0,-,Emelec,0,-,-,-,3:00 PM
+401921335,2026-10-25,FT,Libertad (Ecuador),1,-,Leones,4,-,-,-,12:30 PM
+401921334,2026-10-25,21',Guayaquil City FC,0,-,Emelec,0,-,-,-,3:00 PM
 401921329,2026-10-25,Scheduled,Barcelona SC,0,-,Aucas,0,-,-,-,5:30 PM
 401930960,2026-10-25,Scheduled,Carabobo,0,-,Portuguesa,0,-,-,-,5:30 PM
 401930959,2026-10-25,Scheduled,Metropolitanos,0,-,Deportivo La Guaira,0,-,-,-,7:30 PM
-401930000,2026-10-25,Scheduled,Real Oruro,0,-,Always Ready,0,-,-,-,3:00 PM
+401930000,2026-10-25,22',Real Oruro,1,-,Always Ready,0,-,-,-,3:00 PM
 401929999,2026-10-25,Scheduled,Real Tomayapo,0,-,Aurora,0,-,-,-,5:15 PM
 401930016,2026-10-25,Scheduled,The Strongest,0,-,Oriente Petrolero,0,-,-,-,7:30 PM
 401877568,2026-10-25,FT,Yokohama F. Marinos,1,-,Nagoya Grampus,1,-,-,-,1:00 AM
@@ -197,7 +197,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401926745,2026-10-25,Scheduled,Club Deportivo Olimpia,0,-,UPNFM,0,-,-,-,7:15 PM
 401876835,2026-10-25,Scheduled,Saprissa,0,-,AD San Carlos,0,-,-,-,6:00 PM
 401876833,2026-10-25,Scheduled,Pérez Zeledón,0,-,Alajuelense,0,-,-,-,8:00 PM
-401879590,2026-10-25,Scheduled,Marquense,0,-,Cobán Imperial,0,-,-,-,3:00 PM
+401879590,2026-10-25,14',Marquense,0,-,Cobán Imperial,0,-,-,-,3:00 PM
 401879638,2026-10-25,Scheduled,CD Malacateco,0,-,Deportivo San Pedro,0,-,-,-,5:10 PM
 401879589,2026-10-25,Scheduled,Aurora FC,0,-,Suchitepequez,0,-,-,-,7:30 PM
 401899701,2026-10-25,Scheduled,Luis Ángel Firpo,0,-,C.D. Platense,0,-,-,-,5:00 PM
@@ -205,29 +205,29 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401925426,2026-10-25,FT,Punjab FC,3,-,Churchill Brothers,2,-,-,-,7:30 AM
 401925425,2026-10-25,FT,Mumbai City FC,0,-,Kerala Blasters FC,0,-,-,-,10:00 AM
 401914262,2026-10-25,FT,15 de Agosto,0,-,Simba SC,3,-,-,-,9:00 AM
-401914236,2026-10-25,Scheduled,Teungueth,0,-,Colombe Sportiv Du Dja Et Lobo,0,-,-,-,11:00 AM
-401914251,2026-10-25,Scheduled,Sidama Coffee,0,-,Al Hilal Omdurman,0,-,-,-,12:00 PM
-401914263,2026-10-25,Scheduled,Maghreb As De Fès,0,-,ASEC Mimosas,0,-,-,-,12:00 PM
-401914264,2026-10-25,Scheduled,TP Mazembe,0,-,Club Africain,0,-,-,-,1:00 PM
-401914249,2026-10-25,Scheduled,San Pédro,0,-,FC Nouadhibou,0,-,-,-,1:00 PM
+401914236,2026-10-25,FT,Teungueth,0,-,Colombe Sportiv Du Dja Et Lobo,1,-,-,-,11:00 AM
+401914251,2026-10-25,FT,Sidama Coffee,0,-,Al Hilal Omdurman,2,-,-,-,12:00 PM
+401914263,2026-10-25,FT,Maghreb As De Fès,2,-,ASEC Mimosas,1,-,-,-,12:00 PM
+401914264,2026-10-25,FT,TP Mazembe,0,-,Club Africain,1,-,-,-,1:00 PM
+401914249,2026-10-25,FT,San Pédro,0,-,FC Nouadhibou,2,-,-,-,1:00 PM
 401912246,2026-10-25,FT,Kabuscorp,1,-,AS Maniema Union,4,-,-,-,9:00 AM
 401912250,2026-10-25,FT,Durban City,3,-,ASPL 2000,0,-,-,-,9:00 AM
-401912249,2026-10-25,Scheduled,Diarra,0,-,ASKO Kara,0,-,-,-,11:30 AM
-401912242,2026-10-25,Scheduled,Kitara FC,0,-,Al Ahly,0,-,-,-,12:00 PM
-401912489,2026-10-25,Scheduled,Tusker FC,0,-,Singida Black Stars,0,-,-,-,12:00 PM
+401912249,2026-10-25,FT,Diarra,0,-,ASKO Kara,1,-,-,-,11:30 AM
+401912242,2026-10-25,FT,Kitara FC,0,-,Al Ahly,4,-,-,-,12:00 PM
+401912489,2026-10-25,FT,Tusker FC,1,-,Singida Black Stars,1,-,-,-,12:00 PM
 401912481,2026-10-25,Scheduled,CO Korhogo,0,-,AS FAR,0,-,-,-,3:00 PM
-401912488,2026-10-25,Scheduled,The Panthers FC,0,-,USM Alger,0,-,-,-,3:00 PM
-401898772,2026-10-25,84',New Haven,3,-,Howard,1,-,-,-,11:00 AM
-401899178,2026-10-25,Scheduled,Massachusetts,0,-,Kansas City,0,-,-,-,1:00 PM
-401898890,2026-10-25,Scheduled,Stonehill,0,-,Long Island University,0,-,-,-,1:00 PM
-401898850,2026-10-25,Scheduled,Le Moyne,0,-,Mercyhurst,0,-,-,-,1:00 PM
-401898926,2026-10-25,Scheduled,Drake,0,-,Bradley,0,-,-,-,2:00 PM
-401898746,2026-10-25,Scheduled,Chicago State,0,-,Central Connecticut,0,-,-,-,2:00 PM
-401899251,2026-10-25,Scheduled,West Virginia,0,-,Georgia Southern,0,-,-,-,2:00 PM
-401901566,2026-10-25,Scheduled,Cleveland State,0,-,Northern Illinois,0,-,-,-,2:00 PM
-401884178,2026-10-25,Scheduled,Clemson,0,-,Virginia Tech,0,-,-,-,2:00 PM
-401898906,2026-10-25,Scheduled,Belmont,0,-,Bowling Green,0,-,-,-,3:00 PM
-401891753,2026-10-25,Scheduled,Notre Dame,0,-,Louisville,0,-,-,-,3:00 PM
+401912488,2026-10-25,FT,The Panthers FC,0,-,USM Alger,3,-,-,-,3:00 PM
+401898772,2026-10-25,FT,New Haven,3,-,Howard,1,-,-,-,11:00 AM
+401899178,2026-10-25,FT,Massachusetts,2,-,Kansas City,3,-,-,-,1:00 PM
+401898890,2026-10-25,FT,Stonehill,0,-,Long Island University,0,-,-,-,1:00 PM
+401898850,2026-10-25,FT,Le Moyne,1,-,Mercyhurst,2,-,-,-,1:00 PM
+401898926,2026-10-25,52',Drake,0,-,Bradley,0,-,-,-,2:00 PM
+401898746,2026-10-25,62',Chicago State,0,-,Central Connecticut,5,-,-,-,2:00 PM
+401899251,2026-10-25,46',West Virginia,1,-,Georgia Southern,0,-,-,-,2:00 PM
+401901566,2026-10-25,55',Cleveland State,1,-,Northern Illinois,1,-,-,-,2:00 PM
+401884178,2026-10-25,48',Clemson,2,-,Virginia Tech,1,-,-,-,2:00 PM
+401898906,2026-10-25,10',Belmont,0,-,Bowling Green,2,-,-,-,3:00 PM
+401891753,2026-10-25,16',Notre Dame,0,-,Louisville,0,-,-,-,3:00 PM
 401898433,2026-10-25,Scheduled,Bucknell,0,-,Army,0,-,-,-,4:00 PM
 401892243,2026-10-25,Scheduled,Binghamton,0,-,Bryant,0,-,-,-,4:00 PM
 401902108,2026-10-25,Scheduled,Rhode Island,0,-,George Mason,0,-,-,-,4:00 PM
@@ -239,96 +239,96 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401898563,2026-10-25,Scheduled,Houston Christian,0,-,Incarnate Word,0,-,-,-,7:00 PM
 401892209,2026-10-25,Scheduled,Queens University,0,-,Central Arkansas,0,-,-,-,8:00 PM
 401900262,2026-10-25,Scheduled,San Diego,0,-,UCLA,0,-,-,-,9:00 PM
-401887615,2026-10-25,42',Hofstra,0,-,Drexel,0,-,-,-,12:00 PM
-401887248,2026-10-25,44',Binghamton,1,-,Maine,2,-,-,-,12:00 PM
-401883655,2026-10-25,HT,Illinois,0,-,Ohio State,2,-,-,-,12:00 PM
-401886280,2026-10-25,42',Dartmouth,0,-,Princeton,1,-,-,-,12:00 PM
-401889882,2026-10-25,44',Davidson,1,-,St Bonaventure,0,-,-,-,12:00 PM
-401886694,2026-10-25,Scheduled,Ohio,0,-,Ball State,0,-,-,-,1:00 PM
-401885536,2026-10-25,Scheduled,Queens University,0,-,Bellarmine,0,-,-,-,1:00 PM
-401887262,2026-10-25,Scheduled,UMBC,0,-,Bryant,0,-,-,-,1:00 PM
-401887402,2026-10-25,Scheduled,Charleston,0,-,Campbell,0,-,-,-,1:00 PM
-401887065,2026-10-25,Scheduled,Kansas State,0,-,Cincinnati,0,-,-,-,1:00 PM
-401897671,2026-10-25,Scheduled,Milwaukee,0,-,Cleveland State,0,-,-,-,1:00 PM
-401900083,2026-10-25,Scheduled,Mercyhurst,0,-,Delaware State,0,-,-,-,1:00 PM
-401897683,2026-10-25,Scheduled,Wright State,0,-,Detroit Mercy,0,-,-,-,1:00 PM
-401889902,2026-10-25,Scheduled,Saint Louis,0,-,Duquesne,0,-,-,-,1:00 PM
-401901514,2026-10-25,Scheduled,North Alabama,0,-,Eastern Kentucky,0,-,-,-,1:00 PM
-401887631,2026-10-25,Scheduled,Hampton,0,-,Elon,0,-,-,-,1:00 PM
-401901433,2026-10-25,Scheduled,Rice,0,-,Florida Atlantic,0,-,-,-,1:00 PM
-401889914,2026-10-25,Scheduled,George Washington,0,-,Fordham,0,-,-,-,1:00 PM
-401889930,2026-10-25,Scheduled,La Salle,0,-,George Mason,0,-,-,-,1:00 PM
-401883692,2026-10-25,Scheduled,Rutgers,0,-,Indiana,0,-,-,-,1:00 PM
-401885545,2026-10-25,Scheduled,Stetson,0,-,Jacksonville,0,-,-,-,1:00 PM
-401897581,2026-10-25,Scheduled,Delaware,0,-,Jacksonville State,0,-,-,-,1:00 PM
-401891349,2026-10-25,Scheduled,Georgia State,0,-,James Madison,0,-,-,-,1:00 PM
-401886671,2026-10-25,Scheduled,Akron,0,-,Kent State,0,-,-,-,1:00 PM
-401900046,2026-10-25,Scheduled,Central Connecticut,0,-,Le Moyne,0,-,-,-,1:00 PM
-401890300,2026-10-25,Scheduled,App State,0,-,Marshall,0,-,-,-,1:00 PM
-401883759,2026-10-25,Scheduled,Penn State,0,-,Michigan,0,-,-,-,1:00 PM
-401883744,2026-10-25,Scheduled,Maryland,0,-,Michigan State,0,-,-,-,1:00 PM
-401887640,2026-10-25,Scheduled,Towson,0,-,Monmouth,0,-,-,-,1:00 PM
-401900056,2026-10-25,Scheduled,Long Island University,0,-,New Haven,0,-,-,-,1:00 PM
-401887276,2026-10-25,Scheduled,UMass Lowell,0,-,NJIT,0,-,-,-,1:00 PM
-401900229,2026-10-25,Scheduled,Florida Gulf Coast,0,-,North Florida,0,-,-,-,1:00 PM
-401901127,2026-10-25,Scheduled,Northern Kentucky,0,-,Oakland,0,-,-,-,1:00 PM
-401900287,2026-10-25,Scheduled,Jackson State,0,-,Prairie View A&M,0,-,-,-,1:00 PM
-401897727,2026-10-25,Scheduled,Green Bay,0,-,Purdue Fort Wayne,0,-,-,-,1:00 PM
-401889956,2026-10-25,Scheduled,Richmond,0,-,Rhode Island,0,-,-,-,1:00 PM
-401901118,2026-10-25,Scheduled,Northern Illinois,0,-,Robert Morris,0,-,-,-,1:00 PM
-401889892,2026-10-25,Scheduled,Dayton,0,-,Saint Joseph's,0,-,-,-,1:00 PM
-401897615,2026-10-25,Scheduled,Liberty,0,-,Sam Houston,0,-,-,-,1:00 PM
-401900074,2026-10-25,Scheduled,Howard,0,-,Stonehill,0,-,-,-,1:00 PM
-401887649,2026-10-25,Scheduled,Northeastern,0,-,Stony Brook,0,-,-,-,1:00 PM
-401889668,2026-10-25,Scheduled,Houston Christian,0,-,Texas A&M-Corpus Christi,0,-,-,-,1:00 PM
-401887034,2026-10-25,Scheduled,Houston,0,-,UCF,0,-,-,-,1:00 PM
-401889948,2026-10-25,Scheduled,Loyola Chicago,0,-,VCU,0,-,-,-,1:00 PM
-401886895,2026-10-25,Scheduled,Miami (OH),0,-,Western Michigan,0,-,-,-,1:00 PM
-401889468,2026-10-25,Scheduled,UNC Wilmington,0,-,William & Mary,0,-,-,-,1:00 PM
-401901101,2026-10-25,Scheduled,IU Indianapolis,0,-,Youngstown State,0,-,-,-,1:00 PM
-401890335,2026-10-25,Scheduled,Arkansas State,0,-,Troy,0,-,-,-,1:30 PM
-401900258,2026-10-25,Scheduled,Alabama A&M,0,-,Arkansas-Pine Bluff,0,-,-,-,2:00 PM
-401889854,2026-10-25,Scheduled,West Georgia,0,-,Austin Peay,0,-,-,-,2:00 PM
-401901505,2026-10-25,Scheduled,Abilene Christian,0,-,Central Arkansas,0,-,-,-,2:00 PM
-401900064,2026-10-25,Scheduled,Wagner,0,-,Chicago State,0,-,-,-,2:00 PM
-401889630,2026-10-25,Scheduled,McNeese,0,-,East Texas A&M,0,-,-,-,2:00 PM
-401901041,2026-10-25,Scheduled,Illinois State,0,-,Evansville,0,-,-,-,2:00 PM
-401889685,2026-10-25,Scheduled,UT Rio Grande Valley,0,-,Incarnate Word,0,-,-,-,2:00 PM
-401883711,2026-10-25,Scheduled,USC,0,-,Iowa,0,-,-,-,2:00 PM
-401900541,2026-10-25,Scheduled,SIU Edwardsville,0,-,Lindenwood,0,-,-,-,2:00 PM
-401885560,2026-10-25,Scheduled,West Florida,0,-,Lipscomb,0,-,-,-,2:00 PM
-401891361,2026-10-25,Scheduled,Louisiana Tech,0,-,Louisiana,0,-,-,-,2:00 PM
-401883888,2026-10-25,Scheduled,Oregon,0,-,Minnesota,0,-,-,-,2:00 PM
-401897638,2026-10-25,Scheduled,Florida International,0,-,Missouri State,0,-,-,-,2:00 PM
-401901058,2026-10-25,Scheduled,Indiana State,0,-,Murray State,0,-,-,-,2:00 PM
-401900026,2026-10-25,Scheduled,Vermont,0,-,New Hampshire,0,-,-,-,2:00 PM
-401888011,2026-10-25,Scheduled,Memphis,0,-,North Texas,0,-,-,-,2:00 PM
-401897194,2026-10-25,Scheduled,Montana,0,-,Northern Colorado,0,-,-,-,2:00 PM
-401890173,2026-10-25,Scheduled,Nicholls,0,-,Northwestern State,0,-,-,-,2:00 PM
-401886862,2026-10-25,Scheduled,West Virginia,0,-,Oklahoma State,0,-,-,-,2:00 PM
-401890345,2026-10-25,Scheduled,Coastal Carolina,0,-,Old Dominion,0,-,-,-,2:00 PM
-401891381,2026-10-25,Scheduled,UL Monroe,0,-,South Alabama,0,-,-,-,2:00 PM
-401900269,2026-10-25,Scheduled,Alabama State,0,-,Southern,0,-,-,-,2:00 PM
-401901032,2026-10-25,Scheduled,Drake,0,-,Southern Illinois,0,-,-,-,2:00 PM
-401900531,2026-10-25,Scheduled,Eastern Illinois,0,-,Southern Indiana,0,-,-,-,2:00 PM
-401890367,2026-10-25,Scheduled,Georgia Southern,0,-,Southern Miss,0,-,-,-,2:00 PM
-401889867,2026-10-25,Scheduled,Little Rock,0,-,Tarleton State,0,-,-,-,2:00 PM
-401887056,2026-10-25,Scheduled,Kansas,0,-,TCU,0,-,-,-,2:00 PM
-401900278,2026-10-25,Scheduled,Alcorn State,0,-,Texas Southern,0,-,-,-,2:00 PM
-401888044,2026-10-25,Scheduled,South Florida,0,-,Tulsa,0,-,-,-,2:00 PM
-401901071,2026-10-25,Scheduled,Northern Iowa,0,-,UIC,0,-,-,-,2:00 PM
-401886886,2026-10-25,Scheduled,Texas Tech,0,-,Utah,0,-,-,-,2:00 PM
-401901382,2026-10-25,Scheduled,Temple,0,-,UTSA,0,-,-,-,2:00 PM
-401900671,2026-10-25,Scheduled,Morehead State,0,-,Western Illinois,0,-,-,-,2:00 PM
-401897647,2026-10-25,Scheduled,New Mexico State,0,-,Western Kentucky,0,-,-,-,2:00 PM
-401884284,2026-10-25,Scheduled,Washington,0,-,Wisconsin,0,-,-,-,2:00 PM
-401883930,2026-10-25,Scheduled,UCLA,0,-,Nebraska,0,-,-,-,2:05 PM
-401886954,2026-10-25,Scheduled,Baylor,0,-,Arizona,0,-,-,-,3:00 PM
-401900340,2026-10-25,Scheduled,Utah State,0,-,Gonzaga,0,-,-,-,3:00 PM
-401897606,2026-10-25,Scheduled,Middle Tennessee,0,-,Kennesaw State,0,-,-,-,3:00 PM
-401885863,2026-10-25,Scheduled,Mississippi State,0,-,LSU,0,-,-,-,3:00 PM
-401897213,2026-10-25,Scheduled,Portland State,0,-,Northern Arizona,0,-,-,-,3:00 PM
-401890422,2026-10-25,Scheduled,Fresno State,0,-,San Diego State,0,-,-,-,3:00 PM
+401887615,2026-10-25,FT,Hofstra,0,-,Drexel,0,-,-,-,12:00 PM
+401887248,2026-10-25,FT,Binghamton,2,-,Maine,2,-,-,-,12:00 PM
+401883655,2026-10-25,FT,Illinois,0,-,Ohio State,3,-,-,-,12:00 PM
+401886280,2026-10-25,FT,Dartmouth,1,-,Princeton,2,-,-,-,12:00 PM
+401889882,2026-10-25,FT,Davidson,2,-,St Bonaventure,1,-,-,-,12:00 PM
+401886694,2026-10-25,FT,Ohio,1,-,Ball State,1,-,-,-,1:00 PM
+401885536,2026-10-25,FT,Queens University,0,-,Bellarmine,2,-,-,-,1:00 PM
+401887262,2026-10-25,FT,UMBC,0,-,Bryant,0,-,-,-,1:00 PM
+401887402,2026-10-25,FT,Charleston,0,-,Campbell,2,-,-,-,1:00 PM
+401887065,2026-10-25,FT,Kansas State,0,-,Cincinnati,1,-,-,-,1:00 PM
+401897671,2026-10-25,FT,Milwaukee,4,-,Cleveland State,0,-,-,-,1:00 PM
+401900083,2026-10-25,FT,Mercyhurst,1,-,Delaware State,0,-,-,-,1:00 PM
+401897683,2026-10-25,FT,Wright State,0,-,Detroit Mercy,1,-,-,-,1:00 PM
+401889902,2026-10-25,FT,Saint Louis,2,-,Duquesne,0,-,-,-,1:00 PM
+401901514,2026-10-25,FT,North Alabama,1,-,Eastern Kentucky,0,-,-,-,1:00 PM
+401887631,2026-10-25,FT,Hampton,2,-,Elon,4,-,-,-,1:00 PM
+401901433,2026-10-25,FT,Rice,3,-,Florida Atlantic,0,-,-,-,1:00 PM
+401889914,2026-10-25,FT,George Washington,0,-,Fordham,2,-,-,-,1:00 PM
+401889930,2026-10-25,FT,La Salle,5,-,George Mason,1,-,-,-,1:00 PM
+401883692,2026-10-25,FT,Rutgers,4,-,Indiana,0,-,-,-,1:00 PM
+401885545,2026-10-25,FT,Stetson,3,-,Jacksonville,2,-,-,-,1:00 PM
+401897581,2026-10-25,FT,Delaware,2,-,Jacksonville State,1,-,-,-,1:00 PM
+401891349,2026-10-25,90',Georgia State,1,-,James Madison,1,-,-,-,1:00 PM
+401886671,2026-10-25,FT,Akron,1,-,Kent State,2,-,-,-,1:00 PM
+401900046,2026-10-25,FT,Central Connecticut,1,-,Le Moyne,0,-,-,-,1:00 PM
+401890300,2026-10-25,FT,App State,1,-,Marshall,0,-,-,-,1:00 PM
+401883759,2026-10-25,FT,Penn State,2,-,Michigan,2,-,-,-,1:00 PM
+401883744,2026-10-25,FT,Maryland,0,-,Michigan State,1,-,-,-,1:00 PM
+401887640,2026-10-25,FT,Towson,2,-,Monmouth,0,-,-,-,1:00 PM
+401900056,2026-10-25,FT,Long Island University,2,-,New Haven,2,-,-,-,1:00 PM
+401887276,2026-10-25,90',UMass Lowell,2,-,NJIT,0,-,-,-,1:00 PM
+401900229,2026-10-25,FT,Florida Gulf Coast,1,-,North Florida,2,-,-,-,1:00 PM
+401901127,2026-10-25,FT,Northern Kentucky,2,-,Oakland,1,-,-,-,1:00 PM
+401900287,2026-10-25,90',Jackson State,0,-,Prairie View A&M,0,-,-,-,1:00 PM
+401897727,2026-10-25,FT,Green Bay,3,-,Purdue Fort Wayne,2,-,-,-,1:00 PM
+401889956,2026-10-25,FT,Richmond,1,-,Rhode Island,1,-,-,-,1:00 PM
+401901118,2026-10-25,FT,Northern Illinois,2,-,Robert Morris,2,-,-,-,1:00 PM
+401889892,2026-10-25,90',Dayton,2,-,Saint Joseph's,1,-,-,-,1:00 PM
+401897615,2026-10-25,FT,Liberty,0,-,Sam Houston,0,-,-,-,1:00 PM
+401900074,2026-10-25,FT,Howard,0,-,Stonehill,2,-,-,-,1:00 PM
+401887649,2026-10-25,FT,Northeastern,0,-,Stony Brook,2,-,-,-,1:00 PM
+401889668,2026-10-25,FT,Houston Christian,1,-,Texas A&M-Corpus Christi,0,-,-,-,1:00 PM
+401887034,2026-10-25,FT,Houston,1,-,UCF,0,-,-,-,1:00 PM
+401889948,2026-10-25,90',Loyola Chicago,0,-,VCU,0,-,-,-,1:00 PM
+401886895,2026-10-25,FT,Miami (OH),1,-,Western Michigan,0,-,-,-,1:00 PM
+401889468,2026-10-25,FT,UNC Wilmington,0,-,William & Mary,0,-,-,-,1:00 PM
+401901101,2026-10-25,FT,IU Indianapolis,1,-,Youngstown State,2,-,-,-,1:00 PM
+401890335,2026-10-25,76',Arkansas State,1,-,Troy,2,-,-,-,1:30 PM
+401900258,2026-10-25,50',Alabama A&M,3,-,Arkansas-Pine Bluff,0,-,-,-,2:00 PM
+401889854,2026-10-25,57',West Georgia,0,-,Austin Peay,0,-,-,-,2:00 PM
+401901505,2026-10-25,57',Abilene Christian,1,-,Central Arkansas,1,-,-,-,2:00 PM
+401900064,2026-10-25,60',Wagner,3,-,Chicago State,0,-,-,-,2:00 PM
+401889630,2026-10-25,53',McNeese,0,-,East Texas A&M,0,-,-,-,2:00 PM
+401901041,2026-10-25,54',Illinois State,0,-,Evansville,0,-,-,-,2:00 PM
+401889685,2026-10-25,57',UT Rio Grande Valley,0,-,Incarnate Word,0,-,-,-,2:00 PM
+401883711,2026-10-25,53',USC,0,-,Iowa,2,-,-,-,2:00 PM
+401900541,2026-10-25,HT,SIU Edwardsville,1,-,Lindenwood,1,-,-,-,2:00 PM
+401885560,2026-10-25,55',West Florida,0,-,Lipscomb,1,-,-,-,2:00 PM
+401891361,2026-10-25,54',Louisiana Tech,0,-,Louisiana,4,-,-,-,2:00 PM
+401883888,2026-10-25,52',Oregon,0,-,Minnesota,2,-,-,-,2:00 PM
+401897638,2026-10-25,53',Florida International,0,-,Missouri State,0,-,-,-,2:00 PM
+401901058,2026-10-25,58',Indiana State,1,-,Murray State,0,-,-,-,2:00 PM
+401900026,2026-10-25,49',Vermont,1,-,New Hampshire,4,-,-,-,2:00 PM
+401888011,2026-10-25,52',Memphis,0,-,North Texas,0,-,-,-,2:00 PM
+401897194,2026-10-25,57',Montana,0,-,Northern Colorado,2,-,-,-,2:00 PM
+401890173,2026-10-25,58',Nicholls,0,-,Northwestern State,0,-,-,-,2:00 PM
+401886862,2026-10-25,56',West Virginia,1,-,Oklahoma State,0,-,-,-,2:00 PM
+401890345,2026-10-25,56',Coastal Carolina,0,-,Old Dominion,2,-,-,-,2:00 PM
+401891381,2026-10-25,47',UL Monroe,1,-,South Alabama,1,-,-,-,2:00 PM
+401900269,2026-10-25,58',Alabama State,0,-,Southern,0,-,-,-,2:00 PM
+401901032,2026-10-25,50',Drake,2,-,Southern Illinois,2,-,-,-,2:00 PM
+401900531,2026-10-25,54',Eastern Illinois,1,-,Southern Indiana,0,-,-,-,2:00 PM
+401890367,2026-10-25,53',Georgia Southern,0,-,Southern Miss,1,-,-,-,2:00 PM
+401889867,2026-10-25,55',Little Rock,0,-,Tarleton State,4,-,-,-,2:00 PM
+401887056,2026-10-25,47',Kansas,1,-,TCU,2,-,-,-,2:00 PM
+401900278,2026-10-25,48',Alcorn State,1,-,Texas Southern,2,-,-,-,2:00 PM
+401888044,2026-10-25,51',South Florida,0,-,Tulsa,0,-,-,-,2:00 PM
+401901071,2026-10-25,58',Northern Iowa,0,-,UIC,2,-,-,-,2:00 PM
+401886886,2026-10-25,53',Texas Tech,1,-,Utah,0,-,-,-,2:00 PM
+401901382,2026-10-25,47',Temple,0,-,UTSA,1,-,-,-,2:00 PM
+401900671,2026-10-25,58',Morehead State,0,-,Western Illinois,0,-,-,-,2:00 PM
+401897647,2026-10-25,53',New Mexico State,1,-,Western Kentucky,1,-,-,-,2:00 PM
+401884284,2026-10-25,49',Washington,1,-,Wisconsin,2,-,-,-,2:00 PM
+401883930,2026-10-25,52',UCLA,2,-,Nebraska,0,-,-,-,2:05 PM
+401886954,2026-10-25,13',Baylor,1,-,Arizona,0,-,-,-,3:00 PM
+401900340,2026-10-25,12',Utah State,0,-,Gonzaga,0,-,-,-,3:00 PM
+401897606,2026-10-25,14',Middle Tennessee,1,-,Kennesaw State,0,-,-,-,3:00 PM
+401885863,2026-10-25,17',Mississippi State,0,-,LSU,0,-,-,-,3:00 PM
+401897213,2026-10-25,17',Portland State,0,-,Northern Arizona,0,-,-,-,3:00 PM
+401890422,2026-10-25,12',Fresno State,1,-,San Diego State,0,-,-,-,3:00 PM
 401886968,2026-10-25,Scheduled,Colorado,0,-,Arizona State,0,-,-,-,4:00 PM
 401897440,2026-10-25,Scheduled,UC Irvine,0,-,Cal Poly,0,-,-,-,4:00 PM
 401890077,2026-10-25,Scheduled,Utah Tech,0,-,Eastern Washington,0,-,-,-,4:00 PM
