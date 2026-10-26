@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-26",
+  "weekday": "Monday",
+  "sport": "mlb",
+  "scored": false,
+  "generatedAt": "2026-10-26T14:15:00Z",
+  "games": [
+    {"altCategoryTally":"4-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Brewers favored -- season run differential +214 vs Rays' +86 (128-run gap, well over the 15-run floor); neither Gasser nor Peralta is a new-to-team or 15+ day IL-return starter, so no WEIGHTED-RULE discount applies","Rest: Rays favored -- Tampa Bay had Sunday's scheduled off-day and a fully rested bullpen, while Milwaukee's Ashby and Uribe carried heavy relief innings closing out Game 2","Travel: Rays favored -- Tampa Bay stays home at Tropicana Field while Milwaukee travels in from Wisconsin after Saturday's Game 2","Form: Brewers favored -- enter Game 3 having won Games 1 and 2 to take the series lead, extending a dominant postseason run (bullpen 7-1, 1.33 ERA entering the series)","Motivation/Spot: Rays favored -- facing a 0-2 series deficit at home, with elevated urgency to avoid an 0-3 hole","Matchup splits: Rays favored -- Tampa Bay is stacking right-handed bats (Diaz, Aranda, Vilade, Caminero, etc.) to exploit the platoon matchup against lefty Gasser"],"altReturn":null,"altSpreadReturn":null,"away":"Milwaukee Brewers","awayERA":3.87,"awayMoneyline":102,"awayOPS":0.743,"awayOppOPS":0.701,"awayPitcher":"Robert Gasser","awayRD":214,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":180,"awayWHIP":1.19,"confidence":"skip","correct":null,"home":"Tampa Bay Rays","homeERA":4.42,"homeMoneyline":-120,"homeOPS":0.728,"homeOppOPS":0.732,"homePitcher":"Freddy Peralta","homeRD":86,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":-220,"homeWHIP":1.33,"opsGap":13.8,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"ops-gap","skipped":true,"time":"8:00 PM ET"}
+  ]
+}
