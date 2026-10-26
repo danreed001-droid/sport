@@ -1,4 +1,5 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
+401873009,2026-10-26,10/26 - 8:15 PM EDT,Dallas Cowboys,0,-,Philadelphia Eagles,0,-,-,-,8:15 PM
 401873011,2026-10-25,Final,Pittsburgh Steelers,16,-,New Orleans Saints,10,-,-162,136,9:30 AM
 401873017,2026-10-25,Final,San Francisco 49ers,20,-,Atlanta Falcons,29,-,-142,120,1:00 PM
 401873013,2026-10-25,Final,Cleveland Browns,27,-,Tennessee Titans,24,-,-135,114,1:00 PM
@@ -7,10 +8,10 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401873018,2026-10-25,Final,Tampa Bay Buccaneers,43,-,Carolina Panthers,13,-,142,-170,1:00 PM
 401873012,2026-10-25,Final,Cincinnati Bengals,35,-,Baltimore Ravens,13,-,-162,136,1:00 PM
 401873016,2026-10-25,Final/OT,New York Giants,27,-,Houston Texans,21,-,390,-520,1:00 PM
-401873019,2026-10-25,6:21 - 4th,Denver Broncos,30,-,Arizona Cardinals,16,-,-,-,4:05 PM
-401873020,2026-10-25,7:50 - 4th,Green Bay Packers,14,-,Detroit Lions,17,-,-,-,4:25 PM
-401873021,2026-10-25,13:12 - 4th,Los Angeles Rams,28,-,Las Vegas Raiders,18,-,-,-,4:25 PM
-401873022,2026-10-25,10/25 - 8:20 PM EDT,Kansas City Chiefs,0,-,Seattle Seahawks,0,-,-,-,8:20 PM
+401873019,2026-10-25,Final,Denver Broncos,30,-,Arizona Cardinals,16,-,-238,195,4:05 PM
+401873020,2026-10-25,Final,Green Bay Packers,17,-,Detroit Lions,20,-,160,-192,4:25 PM
+401873021,2026-10-25,Final,Los Angeles Rams,35,-,Las Vegas Raiders,21,-,-192,160,4:25 PM
+401873022,2026-10-25,Final,Kansas City Chiefs,3,-,Seattle Seahawks,20,-,136,-162,8:20 PM
 401873010,2026-10-22,Final,New England Patriots,24,-,Chicago Bears,30,-,130,-155,8:15 PM
 401873008,2026-10-19,Final,Washington Commanders,17,-,San Francisco 49ers,23,-,320,-410,8:15 PM
 401872996,2026-10-18,Final,Houston Texans,34,-,Jacksonville Jaguars,31,-,120,-142,9:30 AM
