@@ -2,16 +2,16 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401878967,2026-11-04,Scheduled,KV Mechelen,0,-,KV Kortrijk,0,-,-,-,2:30 PM
 401882828,2026-10-26,Scheduled,Osasuna,0,-,Sevilla,0,-,-,-,4:00 PM
 401876422,2026-10-26,Scheduled,Lyon,0,-,Paris Saint-Germain,0,-,-,-,3:30 PM
-401885414,2026-10-26,Scheduled,Benfica,0,-,Santa Clara,0,-,-,-,2:45 PM
-401888264,2026-10-26,Scheduled,Istanbul Basaksehir,0,-,Besiktas,0,-,-,-,12:00 PM
-401888267,2026-10-26,Scheduled,Trabzonspor,0,-,Caykur Rizespor,0,-,-,-,12:00 PM
-401888265,2026-10-26,Scheduled,Fenerbahce,0,-,Galatasaray,0,-,-,-,2:30 PM
+401885414,2026-10-26,7',Benfica,0,-,Santa Clara,0,-,-,-,2:45 PM
+401888264,2026-10-26,FT,Istanbul Basaksehir,0,-,Besiktas,2,-,-,-,12:00 PM
+401888267,2026-10-26,FT,Trabzonspor,4,-,Caykur Rizespor,3,-,-,-,12:00 PM
+401888265,2026-10-26,23',Fenerbahce,0,-,Galatasaray,0,-,-,-,2:30 PM
 401912644,2026-10-26,FT,Al Ittihad,2,-,Neftchi Fergana,1,-,-,-,9:45 AM
-401912643,2026-10-26,Scheduled,Al-Gharafa,0,-,Al Ahli,0,-,-,-,12:00 PM
-401912642,2026-10-26,Scheduled,Tractor,0,-,Al Ain,0,-,-,-,12:00 PM
+401912643,2026-10-26,FT,Al-Gharafa,1,-,Al Ahli,2,-,-,-,12:00 PM
+401912642,2026-10-26,FT,Tractor,1,-,Al Ain,2,-,-,-,12:00 PM
 401912622,2026-10-26,Postponed,Al Wasl,0,-,Al Nassr,0,-,-,-,2:15 PM
-401912640,2026-10-26,Scheduled,Al Sadd,0,-,Al Qadsiah,0,-,-,-,2:15 PM
-401912641,2026-10-26,Scheduled,Pakhtakor,0,-,Al-Quwa Al-Jawiya,0,-,-,-,2:15 PM
+401912640,2026-10-26,38',Al Sadd,0,-,Al Qadsiah,0,-,-,-,2:15 PM
+401912641,2026-10-26,39',Pakhtakor,0,-,Al-Quwa Al-Jawiya,0,-,-,-,2:15 PM
 401924397,2026-10-26,Scheduled,Guadalajara,0,-,Atlante,0,-,-,-,5:45 PM
 401924400,2026-10-26,Scheduled,Puebla,0,-,Atlas,0,-,-,-,7:00 PM
 401924371,2026-10-26,Scheduled,León,0,-,Santos,0,-,-,-,9:06 PM
@@ -20,12 +20,12 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401876718,2026-10-26,Scheduled,Stade de Reims,0,-,Boulogne,0,-,-,-,3:45 PM
 401876714,2026-10-26,Scheduled,Red Star FC 93,0,-,Montpellier,0,-,-,-,3:45 PM
 401881290,2026-10-26,Scheduled,Salford City,0,-,Walsall,0,-,-,-,4:00 PM
-401874531,2026-10-26,Scheduled,Odense Boldklub,0,-,F.C. København,0,-,-,-,2:00 PM
+401874531,2026-10-26,HT,Odense Boldklub,1,-,F.C. København,0,-,-,-,2:00 PM
 401841630,2026-10-26,Scheduled,Estudiantes de La Plata,0,-,Unión (Santa Fe),0,-,-,-,6:00 PM
 401841635,2026-10-26,Scheduled,Deportivo Riestra,0,-,Instituto (Córdoba),0,-,-,-,8:15 PM
-401844243,2026-10-26,Scheduled,San Martín (San Juan),0,-,Nueva Chicago,0,-,-,-,12:00 PM
-401844235,2026-10-26,Scheduled,San Miguel,0,-,Defensores de Belgrano,0,-,-,-,2:30 PM
-401845156,2026-10-26,Scheduled,Villa San Carlos,0,-,UAI Urquiza,0,-,-,-,2:00 PM
+401844243,2026-10-26,FT,San Martín (San Juan),1,-,Nueva Chicago,1,-,-,-,12:00 PM
+401844235,2026-10-26,25',San Miguel,0,-,Defensores de Belgrano,0,-,-,-,2:30 PM
+401845156,2026-10-26,HT,Villa San Carlos,0,-,UAI Urquiza,0,-,-,-,2:00 PM
 401845163,2026-10-26,Scheduled,Defensores Unidos,0,-,Brown de Adrogué,0,-,-,-,6:00 PM
 401841279,2026-10-26,Scheduled,Grêmio,0,-,Coritiba,0,-,-,-,6:30 PM
 401841286,2026-10-26,Scheduled,Atlético-MG,0,-,Flamengo,0,-,-,-,7:00 PM
@@ -37,7 +37,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401921377,2026-10-26,Scheduled,Mushuc Runa,0,-,Técnico Universitario,0,-,-,-,4:30 PM
 401929998,2026-10-26,Scheduled,Guabirá,0,-,Nacional Potosí,0,-,-,-,6:00 PM
 401930015,2026-10-26,Scheduled,Universitario de Vinto,0,-,Bolívar,0,-,-,-,8:00 PM
-401925424,2026-10-26,86',Chennaiyin FC,0,-,Mohun Bagan Super Giant,0,-,-,-,10:00 AM
+401925424,2026-10-26,FT,Chennaiyin FC,0,-,Mohun Bagan Super Giant,1,-,-,-,10:00 AM
 401891029,2026-10-26,Scheduled,Washington,0,-,Michigan,0,-,-,-,7:00 PM
 401887044,2026-10-26,Scheduled,BYU,0,-,Iowa State,0,-,-,-,7:00 PM
 401879254,2026-10-25,FT,Newcastle United,2,-,Crystal Palace,0,-,-,-,10:00 AM
