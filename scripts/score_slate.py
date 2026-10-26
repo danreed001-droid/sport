@@ -108,12 +108,18 @@ TEAM_ALIASES = {
 }
 _FILLER = {"fc", "cf", "sc", "afc", "cd", "club", "de", "the", "ac", "ssc", "as", "sv", "fk", "sk", "vfb", "bsc"}
 
+# Geographic name variants (the German/local spelling vs. the English one
+# ESPN commonly uses, or vice versa) — safe as a plain word swap, unlike a
+# club nickname like "inter", which is also a fragment of unrelated clubs
+# (Inter Miami, Deportivo Inter...) and must stay a whole-string alias only.
+_CITY_WORDS = {"koln": "cologne", "munchen": "munich"}
+
 
 def _norm_team(name):
     s = (name or "").replace("ø", "o").replace("Ø", "O").replace(".", "")
     s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
     s = re.sub(r"[^a-z0-9 ]+", " ", s)
-    s = " ".join(s.split())
+    s = " ".join(_CITY_WORDS.get(t, t) for t in s.split())
     s = TEAM_ALIASES.get(s, s)
     return frozenset(t for t in s.split() if t not in _FILLER) or frozenset(s.split())
 
