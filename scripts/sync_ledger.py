@@ -48,6 +48,29 @@ def normalize(doc, sport):
     return doc
 
 
+# Fields this repo writes onto ledger slates itself (scripts/nba_stats_signals.py
+# and its grading in score_slate.py). The database never has them, so a sync
+# from the database must carry them over from the repo copy instead of
+# dropping them.
+REPO_OWNED_GAME_FIELDS = ("statsFavors", "statsCheck", "statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn")
+
+
+def carry_repo_fields(current, doc):
+    """Copies REPO_OWNED_GAME_FIELDS from the repo's copy of a slate onto
+    the incoming database copy, matching games by away/home team."""
+    if not current:
+        return doc
+    by_matchup = {(g.get("away"), g.get("home")): g for g in current.get("games", [])}
+    for g in doc.get("games", []):
+        old = by_matchup.get((g.get("away"), g.get("home")))
+        if not old:
+            continue
+        for k in REPO_OWNED_GAME_FIELDS:
+            if k in old and k not in g:
+                g[k] = old[k]
+    return doc
+
+
 def render(doc):
     head = ["date", "weekday", "sport", "scored", "scoredAt", "generatedAt"]
     lines = ["{"]
@@ -97,6 +120,7 @@ def main():
             if isinstance(raw.get("auditReport"), str) and raw["auditReport"].strip():
                 audits.setdefault(date_str, []).append(raw["auditReport"])
             current = store.read_doc(sport, date_str)
+            doc = carry_repo_fields(current, doc)
             if current is not None:
                 if normalize(current, sport) == doc:
                     continue

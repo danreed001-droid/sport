@@ -200,7 +200,13 @@
         "NetRtg -5.7 vs -6.5 (27.6th vs 20.7th pct of 30 teams \u2014 gap 6.9)",
         "DAL missing Kyrie Irving, Cooper Flagg, Caleb Martin, Tarik Biberovic, Santi Aldama, Dereck Lively II (6 out, including their top-2 options); MIA reports a clean injury sheet"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "statsFavors": "Miami Heat",
+      "statsCheck": "Backing Miami Heat: top scorer Giannis Antetokounmpo (23.6 ppg) was held to 14 last game, under 70% of his average, and Miami Heat is home -- teams in this spot covered 57.9% ATS at home (n=537).",
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "3-5",
@@ -250,7 +256,13 @@
         "IND is on the 2nd night of a true road back-to-back (@BKN Oct 25 \u2192 @MIL); MIL is rested",
         "IND's Sheppard/McConnell are day-to-day and Furphy is out for the season; MIL reports no injuries"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "statsFavors": "Milwaukee Bucks",
+      "statsCheck": "Backing Milwaukee Bucks: top scorer Tyler Herro (20.8 ppg) was held to 13 last game, under 70% of his average, and Milwaukee Bucks is home -- teams in this spot covered 60.8% ATS when the opponent has a better record (n=273).",
+      "statsCorrect": true,
+      "statsReturn": 145.0,
+      "statsCover": true,
+      "statsSpreadReturn": 90.91
     },
     {
       "altCategoryTally": "3-4",
@@ -451,5 +463,5 @@
       "time": "10:00 PM ET"
     }
   ],
-  "scoredAt": "2026-10-27T20:05:32.056640+00:00"
+  "scoredAt": "2026-10-27T22:12:09.100826+00:00"
 }

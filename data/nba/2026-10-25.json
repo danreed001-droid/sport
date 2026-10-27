@@ -150,7 +150,13 @@
         "NetRtg blend: Raptors +13.8 (82.8th pct) vs Timberwolves +13.2 (81.0th pct) \u2014 gap 1.7, below the 30-point screen threshold",
         "Timberwolves missing Donte DiVincenzo (Achilles, out); Raptors missing only backup big Nate Bittle (foot)"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "statsFavors": "Minnesota Timberwolves",
+      "statsCheck": "Backing Minnesota Timberwolves: top scorer Anthony Edwards (24.8 ppg) was held to 15 last game, under 70% of his average, and Minnesota Timberwolves is home -- teams in this spot covered 57.9% ATS at home (n=537).",
+      "statsCorrect": true,
+      "statsReturn": 95.24,
+      "statsCover": true,
+      "statsSpreadReturn": 96.15
     },
     {
       "altCategoryTally": "0-4",
@@ -349,5 +355,5 @@
       "time": "9:00 PM ET"
     }
   ],
-  "scoredAt": "2026-10-26T07:21:14.077796+00:00"
+  "scoredAt": "2026-10-27T22:12:09.099582+00:00"
 }

@@ -232,8 +232,14 @@ def main(sport_key):
     today = today_et_str()
     scores_by_date = load_scores_by_date(sport_key)
     docs = store.list_docs(cfg["collection"])
+    # A slate can arrive already graded from the ledger database but carry an
+    # NBA Stats pick this repo added that nobody has graded yet; regrade it
+    # (idempotent for everything else).
+    def needs_stats_grade(doc):
+        return any(g.get("statsFavors") and "statsCorrect" not in g for g in doc.get("games", []))
+
     pending = sorted(
-        [(d, doc) for d, doc in docs if not doc.get("scored") and d < today],
+        [(d, doc) for d, doc in docs if (not doc.get("scored") or needs_stats_grade(doc)) and d < today],
         key=lambda x: x[0],
     )
 
