@@ -908,7 +908,10 @@ footer b{color:var(--ink);}
     var sportsHtml = ORDER.filter(function(k){ return s.sports[k]; }).map(function(k){
       var sp = s.sports[k];
       return '<section id="'+k+'"><div class="eyebrow">'+esc(sp.label)+'</div><h2 class="sec-h">'+sp.games.length+' game'+(sp.games.length===1?'':'s')+'</h2>'
-        + (k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>'
+        + (k==='nba_stats' ? (sp.games.length===0
+            ? '<p class="sec-p">No signal today — this model only picks a game when one of its three backtested situations fires.</p>'
+            : '<p class="sec-p">Backtested signal picks; see each card for the historical rate behind it.</p>')
+          : k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>'
           : k==='soccer' ? '<p class="sec-p">Three-way moneyline: pick home, draw or away. No spread.</p>'
           : '<p class="sec-p">Tap a side to pick it against the spread.</p>')
         + '<div class="games">'+sp.games.map(function(g){ return card(k,g); }).join('')+'</div></section>';
