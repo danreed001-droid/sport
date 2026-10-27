@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-27",
+  "weekday": "Tuesday",
+  "sport": "mlb",
+  "scored": false,
+  "generatedAt": "2026-10-27T14:19:29Z",
+  "games": [
+    {"altCategoryTally":"4-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Brewers +214 run diff vs Rays +86 run diff (gap 128 runs, well above the 15-run floor) favors Brewers; no major-starter-change discount applies since both May (31 starts) and Jax (23 starts) are each team's regular 2026 starters","Rest: Brewers rested top relievers Aaron Ashby, Abner Uribe and Trevor Megill in Monday's Game 3 blowout, giving them a fresher bullpen for Game 4 (no travel day, both games in Tampa) favors Brewers","Injuries/Lineup: Rays starter Shane McClanahan ruled out for the rest of the postseason (forearm tightness), thinning Tampa Bay's pitching depth, favors Brewers","Form: Brewers have won the first 3 games of the World Series; Rays have dropped 3 straight to open the series, favors Brewers","Motivation/Spot: Rays face elimination in a win-or-go-home Game 4 down 3-0, a clear desperation/motivation edge, favors Rays","Matchup splits: Rays' Yandy Diaz is 3-for-4 with a double against Dustin May in his career, favors Rays"],"altReturn":null,"altSpreadReturn":null,"away":"Milwaukee Brewers","awayERA":4.7,"awayMoneyline":-136,"awayOPS":0.743,"awayOppOPS":null,"awayPitcher":"Dustin May","awayRD":214,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":136,"awayWHIP":1.32,"confidence":"skip","correct":null,"home":"Tampa Bay Rays","homeERA":3.53,"homeMoneyline":116,"homeOPS":0.728,"homeOppOPS":null,"homePitcher":"Griffin Jax","homeRD":86,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":-164,"homeWHIP":1.18,"opsGap":13.8,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"ops-gap","skipped":true,"time":"8:00 PM ET (World Series Game 4, Tropicana Field)"}
+  ]
+}
