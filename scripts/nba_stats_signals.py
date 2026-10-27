@@ -18,6 +18,9 @@ ESPN has archived lines for: 2020-21 to 2022-23 and 2025-26 on):
   4. Its top scorer (18+ ppg, 5+ games) was held under 70% of his season
      average last game, and it's playing at home -> covered 57.9% ATS
      (n=537); 60.8% (n=273) when the opponent has a better record
+  5. Lost its last game with 22+ team turnovers, playing at home, opponent
+     has a worse record -> covered 62.1% ATS (n=29 -- small; the broader
+     "lost with 22+ turnovers, any next game" version is 58.6%, n=191)
 
 "Better/worse record" compares each team's season-to-date win% entering the
 game. A game gets "statsFavors" (team name) and "statsCheck" (the reasoning,
@@ -25,9 +28,9 @@ with the backtested rate) when rules fire and agree on a side; if they point
 at opposite sides, the game gets no pick. Most days no game qualifies.
 
 Needs data/nba/<date>.json to already exist for the target date (the live
-Routine's own slate). Per-player points for completed games are cached in
-data/raw/nba_player_points.json so each run only fetches games it hasn't
-seen.
+Routine's own slate). Per-player points and team turnovers for completed
+games are cached in data/raw/nba_player_points.json so each run only
+fetches games it hasn't seen.
 
 Usage: python scripts/nba_stats_signals.py [YYYY-MM-DD ...]   (default: today ET)
 """
@@ -48,6 +51,7 @@ MIN_BLOWN_LEAD = 10
 STAR_MIN_PPG = 18
 STAR_MIN_GP = 5
 COLD_CUTOFF = 0.7
+SLOPPY_LOSS_TO = 22
 
 RULES = {
     "streak": "5+ game win streak, home, vs. a worse-record opponent -- "
@@ -139,9 +143,10 @@ def blown_lead(q_entry, team, opp):
     return best
 
 
-class PlayerPoints:
-    """Per-player points for completed games, persisted so finished games
-    are only ever fetched once: {event_id: {team_name: {player_id: [pts, name]}}}."""
+class BoxCache:
+    """Box-score bits for completed games, persisted so finished games are
+    only ever fetched once:
+    {event_id: {"pts": {team: {player_id: [pts, name]}}, "to": {team: turnovers}}}."""
 
     def __init__(self, session):
         self.session = session
@@ -151,11 +156,18 @@ class PlayerPoints:
                 self.data = json.load(f)
         self.dirty = False
 
-    def get(self, event_id, team):
-        if event_id not in self.data:
-            self.data[event_id] = self._fetch(event_id)
+    def _entry(self, event_id):
+        e = self.data.get(event_id)
+        if not isinstance(e, dict) or "pts" not in e:  # missing, failed, or pre-turnover format
+            e = self.data[event_id] = self._fetch(event_id)
             self.dirty = True
-        return (self.data.get(event_id) or {}).get(team)
+        return e or {}
+
+    def get(self, event_id, team):
+        return self._entry(event_id).get("pts", {}).get(team)
+
+    def turnovers(self, event_id, team):
+        return self._entry(event_id).get("to", {}).get(team)
 
     def _fetch(self, event_id):
         try:
@@ -165,8 +177,9 @@ class PlayerPoints:
             ).json()
         except Exception:
             return None
-        out = {}
-        for t in d.get("boxscore", {}).get("players", []):
+        box = d.get("boxscore", {})
+        pts_by_team, to_by_team = {}, {}
+        for t in box.get("players", []):
             if not t.get("statistics"):
                 continue
             cat = t["statistics"][0]
@@ -183,8 +196,16 @@ class PlayerPoints:
                     pts[ath["athlete"]["id"]] = [int(st[i]), ath["athlete"].get("displayName")]
                 except (TypeError, ValueError, KeyError):
                     continue
-            out[t["team"]["displayName"]] = pts
-        return out or None
+            pts_by_team[t["team"]["displayName"]] = pts
+        for t in box.get("teams", []):
+            stats = {s.get("name"): s.get("displayValue") for s in t.get("statistics", [])}
+            try:
+                to_by_team[t["team"]["displayName"]] = int(stats["totalTurnovers"])
+            except (KeyError, TypeError, ValueError):
+                continue
+        if not pts_by_team:
+            return None
+        return {"pts": pts_by_team, "to": to_by_team}
 
     def save(self):
         if self.dirty:
@@ -248,6 +269,13 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
             if not last["won"] and is_home and opp_weaker and blown_lead(q_entry, team, last["opp"]) >= MIN_BLOWN_LEAD:
                 picks.append((opp, f"Fading {team}: {RULES['blown_lead']}."))
 
+        if is_home and opp_weaker and not last["won"]:
+            to = points.turnovers(last["event_id"], team)
+            if to is not None and to >= SLOPPY_LOSS_TO:
+                picks.append((team, f"Backing {team}: lost last game with {to} turnovers ({SLOPPY_LOSS_TO}+), "
+                                    f"now home vs. a worse-record opponent -- teams in this spot covered "
+                                    f"62.1% ATS (n=29, small sample)."))
+
         if is_home:
             cold = cold_star(points, prior, team)
             if cold:
@@ -295,7 +323,7 @@ def run_for_date(session, points, by_team, q_cache, date_str):
 def main():
     dates = sys.argv[1:] or [today_et_str()]
     session = espn.make_session()
-    points = PlayerPoints(session)
+    points = BoxCache(session)
     by_team = load_team_logs()
     q_cache = {}
     try:
