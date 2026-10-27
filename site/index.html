@@ -12,8 +12,8 @@
 :root{
   --paper:#f6f4ec; --surface:#fcfcfb; --surface-2:#ece7d3; --ink:#201d16; --muted:#726c58;
   --rule:#ddd5b9; --rule-2:#c9bf9c; --grid:#e6e1cf; --axis:#b9b2a0;
-  --ledger:#2a78d6; --opinion:#eb6834; --trend:#7c5cd6; --blowout:#0e7c86; --mine:#1baf7a;
-  --ledger-ink:#1c5cab; --opinion-ink:#b3471b; --trend-ink:#5b3fb0; --blowout-ink:#0b6169; --mine-ink:#0b7a52; --mine-soft:rgba(27,175,122,.14);
+  --ledger:#2a78d6; --opinion:#eb6834; --trend:#7c5cd6; --blowout:#0e7c86; --stats:#b8860b; --mine:#1baf7a;
+  --ledger-ink:#1c5cab; --opinion-ink:#b3471b; --trend-ink:#5b3fb0; --blowout-ink:#0b6169; --stats-ink:#8a6508; --mine-ink:#0b7a52; --mine-soft:rgba(27,175,122,.14);
   --win:#006300; --loss:#d03b3b; --loss-soft:rgba(208,59,59,.12); --push:#8a8672; --warn:#9a6a12;
   --shadow:0 1px 2px rgba(32,29,22,.05), 0 10px 26px -18px rgba(32,29,22,.4);
   color-scheme:light;
@@ -21,8 +21,8 @@
 :root[data-theme="dark"]{
   --paper:#0f100e; --surface:#1a1a19; --surface-2:#232320; --ink:#f3f2ec; --muted:#9b9a92;
   --rule:#2c2c2a; --rule-2:#3d3d39; --grid:#2c2c2a; --axis:#46463f;
-  --ledger:#3987e5; --opinion:#d95926; --trend:#a78bfa; --blowout:#2dd4bf; --mine:#199e70;
-  --ledger-ink:#86b6ef; --opinion-ink:#f0955e; --trend-ink:#c4b5fd; --blowout-ink:#5eead4; --mine-ink:#4fd3a0; --mine-soft:rgba(25,158,112,.18);
+  --ledger:#3987e5; --opinion:#d95926; --trend:#a78bfa; --blowout:#2dd4bf; --stats:#e3b341; --mine:#199e70;
+  --ledger-ink:#86b6ef; --opinion-ink:#f0955e; --trend-ink:#c4b5fd; --blowout-ink:#5eead4; --stats-ink:#f0cc75; --mine-ink:#4fd3a0; --mine-soft:rgba(25,158,112,.18);
   --win:#0ca30c; --loss:#e66767; --loss-soft:rgba(230,103,103,.16); --push:#a8a79e; --warn:#e0b458;
   --shadow:0 1px 2px rgba(0,0,0,.45), 0 12px 28px -18px rgba(0,0,0,.8);
   color-scheme:dark;
@@ -173,7 +173,7 @@ details.tv table{min-width:0;}
 .badge{flex:1 1 160px;background:var(--surface-2);border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:2px;}
 .badge .lbl{font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;}
 .badge.ledger .lbl{color:var(--ledger-ink);} .badge.opinion .lbl{color:var(--opinion-ink);}
-.badge.trend .lbl{color:var(--trend-ink);} .badge.blowout .lbl{color:var(--blowout-ink);}
+.badge.trend .lbl{color:var(--trend-ink);} .badge.blowout .lbl{color:var(--blowout-ink);} .badge.stats .lbl{color:var(--stats-ink);}
 .badge .val{font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
 .badge .val.none{color:var(--muted);font-weight:500;font-style:italic;font-size:12.5px;}
 .badge .tier{font-size:11px;color:var(--muted);}
@@ -262,7 +262,7 @@ footer b{color:var(--ink);}
 <script>
 (function(){
   var DATA = null;
-  var ORDER = ['nfl','cfb','mlb','nba','ncaab','nba_stats','soccer','epl'];
+  var ORDER = ['nfl','cfb','mlb','nba','ncaab','soccer','epl'];
   var TIER = {solid:'Solid', lean:'Lean', 'toss-up':'Toss-up', strong:'Strong'};
   var SKIP = {'opsa-veto':'Worse OPS-against','opsa-close':'OPS-against too close','whip-veto':'Worse WHIP','whip-close':'WHIP too close',
     'ops-gap':'OPS too close','off-gap':'Offense too close','qb-veto':'Worse QB','qb-close':'QBs too close',
@@ -313,7 +313,7 @@ footer b{color:var(--ink);}
   var DIRS = {North:'N.',South:'S.',East:'E.',West:'W.',Central:'C.',Northern:'N.',Southern:'S.',Eastern:'E.',Western:'W.'};
   function nick(name, sport){
     var w = String(name).split(' ');
-    if(sport==='mlb' || sport==='nfl' || sport==='nba' || sport==='nba_stats'){
+    if(sport==='mlb' || sport==='nfl' || sport==='nba'){
       var two = w.slice(-2).join(' ');
       return /^(Red|White) Sox$|^Blue Jays$|^Trail Blazers$/.test(two) ? two : w[w.length-1];
     }
@@ -368,6 +368,7 @@ footer b{color:var(--ink);}
     {k:'alt', label:'Second Opinion', short:'2nd Opinion', role:'9-category vote', c:'var(--opinion)'},
     {k:'trend', label:'Trend check', short:'Trend', role:'prior-game pattern · NFL/CFB', c:'var(--trend)'},
     {k:'blowout', label:'Blowout check', short:'Blowout', role:'regression flag · NFL/CFB', c:'var(--blowout)'},
+    {k:'stats', label:'NBA Stats', short:'NBA Stats', role:'backtested signal · NBA', c:'var(--stats)'},
     {k:'mine', label:'You', short:'You', role:'your picks', c:'var(--mine)'}
   ];
   var WHO_BY_KEY = {}; WHO.forEach(function(w){ WHO_BY_KEY[w.k] = w; });
@@ -815,6 +816,11 @@ footer b{color:var(--ink);}
       return '<div class="badge blowout"><span class="lbl">Blowout check</span><span class="val">'+esc(g.altBlowoutFavors)+resultChips(g.results&&g.results.blowout)+'</span></div>';
     return '<div class="badge blowout"><span class="lbl">Blowout check</span><span class="val none">No signal</span></div>';
   }
+  function statsBadge(g){
+    if(g.statsFavors)
+      return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val">'+esc(g.statsFavors)+resultChips(g.results&&g.results.stats)+'</span></div>';
+    return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val none">No signal</span></div>';
+  }
   function lineText(g){
     var parts = [];
     if(num(g.awaySpread)&&num(g.homeSpread)) parts.push('Spread '+sgn(g.awaySpread)+' / '+sgn(g.homeSpread));
@@ -871,12 +877,13 @@ footer b{color:var(--ink);}
     var reasons = (g.altReasons&&g.altReasons.length) ? '<details class="score" id="sc-'+esc(g.id)+'"></details>' : '';
     var stat = (g.statLines&&g.statLines.length) ? '<details class="why"><summary style="color:var(--ledger-ink)">Ledger inputs</summary><ul>'+g.statLines.map(function(r){return '<li>'+esc(r)+'</li>';}).join('')+'</ul></details>' : '';
     var football = sport==='nfl' || sport==='cfb';
-    var models = ledgerBadge(g) + altBadge(g) + (football ? trendBadge(g)+blowoutBadge(g) : '');
+    var models = ledgerBadge(g) + altBadge(g) + (football ? trendBadge(g)+blowoutBadge(g) : '') + (sport==='nba' ? statsBadge(g) : '');
     var checks = '';
     if(football){
       if(g.altTrendCheck) checks += '<details class="why"><summary style="color:var(--trend-ink)">Trend check — why</summary><ul><li>'+esc(g.altTrendCheck)+'</li></ul></details>';
       if(g.altBlowoutCheck) checks += '<details class="why"><summary style="color:var(--blowout-ink)">Blowout check — why</summary><ul><li>'+esc(g.altBlowoutCheck)+'</li></ul></details>';
     }
+    if(sport==='nba' && g.statsCheck) checks += '<details class="why"><summary style="color:var(--stats-ink)">NBA Stats — why</summary><ul><li>'+esc(g.statsCheck)+'</li></ul></details>';
     return '<article class="game">'
       + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
       + '<div class="lines">'+lineText(g)+'</div></div>'
@@ -908,16 +915,13 @@ footer b{color:var(--ink);}
     var sportsHtml = ORDER.filter(function(k){ return s.sports[k]; }).map(function(k){
       var sp = s.sports[k];
       return '<section id="'+k+'"><div class="eyebrow">'+esc(sp.label)+'</div><h2 class="sec-h">'+sp.games.length+' game'+(sp.games.length===1?'':'s')+'</h2>'
-        + (k==='nba_stats' ? (sp.games.length===0
-            ? '<p class="sec-p">No signal today — this model only picks a game when one of its three backtested situations fires.</p>'
-            : '<p class="sec-p">Backtested signal picks; see each card for the historical rate behind it.</p>')
-          : k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>'
+        + (k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>'
           : k==='soccer' ? '<p class="sec-p">Three-way moneyline: pick home, draw or away. No spread.</p>'
           : '<p class="sec-p">Tap a side to pick it against the spread.</p>')
         + '<div class="games">'+sp.games.map(function(g){ return card(k,g); }).join('')+'</div></section>';
     }).join('');
     document.getElementById('app').innerHTML =
-      '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models in every sport; on NFL and CFB games, <b style="color:var(--trend-ink)">Trend check</b> and <b style="color:var(--blowout-ink)">Blowout check</b> are tracked alongside them. <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
+      '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models in every sport; on NFL and CFB games, <b style="color:var(--trend-ink)">Trend check</b> and <b style="color:var(--blowout-ink)">Blowout check</b> are tracked alongside them, and on NBA games, <b style="color:var(--stats-ink)">NBA Stats</b> is — a deterministic fade of three backtested situations (a 5+ win streak, an OT win, a blown 10+ point lead). <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
       + dashHtml()
       + logHtml()
       + (sportsHtml || '<section><p class="sec-p">No games on the slate.</p></section>')

@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-"""NBA Stats: a deterministic, backtested signal engine (no LLM research,
-unlike the other Diamond Ledger sports). It fades a team coming off one of
-three specific situations, each one backtested across every NBA regular
-season game from 2020-21 through 2026-27 (7,293 games):
+"""NBA Stats: a deterministic, backtested model patched directly onto each
+day's NBA slate (data/nba/<date>.json), alongside the Ledger and Second
+Opinion -- the same way Trend check/Blowout check ride along on NFL/CFB
+games. No LLM research involved: it fades a team coming off one of three
+specific situations, each backtested across every NBA regular season game
+from 2020-21 through 2026-27 (7,293 games):
 
   1. 5+ game win streak, playing at home, next opponent has a worse
      record  -> faded 57.2% of the time ATS (n=208)
@@ -14,22 +16,23 @@ season game from 2020-21 through 2026-27 (7,293 games):
 "Opponent has a worse/better record" compares each team's win% in this
 season to date, entering the game being picked. Every pick is a fade: the
 play is the FLAGGED team's opponent to cover, not the flagged team itself.
+It sets "statsFavors" (team name) and "statsCheck" (the reasoning, with the
+backtested rate) on whichever games in that day's NBA slate qualify --
+most days, none do, and those two fields are simply left unset.
 
-This is sparse by design -- most days have zero qualifying games. A game
-only gets a pick when a rule fires; otherwise it's left out of the slate
-entirely (there is no "no signal" entry to skip, unlike the researched
-sports' slates).
+Needs data/nba/<date>.json to already exist for the target date (the live
+Routine's own slate) since that's where today's matchups and spreads come
+from; this script only adds its own two fields to games already there.
 
-Usage: python scripts/nba_stats_signals.py [YYYY-MM-DD]   (default: today ET)
+Usage: python scripts/nba_stats_signals.py [YYYY-MM-DD ...]   (default: today ET)
 """
 import csv
 import os
 import sys
-from datetime import datetime, timedelta
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, store  # noqa: E402
-from lib.dates import today_et_str, et_date_of_iso  # noqa: E402
+from lib.dates import today_et_str  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
@@ -45,7 +48,6 @@ RULES = {
                   "worse-record opponent -- faded 60.8% of the time ATS "
                   "(n=79, 2020-21–2026-27)",
 }
-CONFIDENCE = {"streak": "lean", "ot_win": "solid", "blown_lead": "lean"}
 
 
 def load_team_logs():
@@ -134,111 +136,74 @@ def blown_lead(q_entry, team, opp):
     return worst_for_opp
 
 
-def fetch_spread(session, comp, event_id):
-    away_ml, home_ml = espn.fetch_event_odds_from_scoreboard(comp)
-    home_spread = away_spread = None
-    odds_list = comp.get("odds") or []
-    if odds_list and isinstance(odds_list[0], dict):
-        sp = odds_list[0].get("spread")
-        if isinstance(sp, (int, float)):
-            home_spread, away_spread = sp, -sp
-    if home_spread is None:
-        try:
-            r = session.get(
-                f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event={event_id}",
-                timeout=12,
-            )
-            for o in (r.json().get("pickcenter") or []):
-                if isinstance(o, dict) and isinstance(o.get("spread"), (int, float)):
-                    home_spread, away_spread = o["spread"], -o["spread"]
-                    break
-        except Exception:
-            pass
-    return away_ml, home_ml, away_spread, home_spread
+def evaluate_game(session, by_team, q_cache, date_str, home, away):
+    """Returns (flagged_team, pick_team, rule_key) or None."""
+    for team, is_home, opp in ((home, True, away), (away, False, home)):
+        games = by_team.get(team, [])
+        prior = [g for g in games if g["date"] < date_str]
+        if not prior:
+            continue
+        last = prior[-1]
+        opp_games = by_team.get(opp, [])
+        team_w, team_l = season_record(games, date_str)
+        opp_w, opp_l = season_record(opp_games, date_str)
+        if not (team_w + team_l) or not (opp_w + opp_l):
+            continue
+        team_pct, opp_pct = team_w / (team_w + team_l), opp_w / (opp_w + opp_l)
+        opp_weaker, opp_stronger = opp_pct < team_pct, opp_pct > team_pct
+
+        streak = win_streak_ending_at(prior, len(prior) - 1)
+        if streak >= MIN_STREAK and is_home and opp_weaker:
+            return team, opp, "streak"
+
+        q = quarter_data(session, q_cache, last["date"])
+        q_entry = next((v for v in q.values() if team in v.get("teams", {}) and last["opp"] in v.get("teams", {})), None)
+        if q_entry and q_entry.get("period") and q_entry["period"] > 4 and last["won"] and opp_stronger:
+            return team, opp, "ot_win"
+        if q_entry and not last["won"] and is_home and opp_weaker:
+            lead = blown_lead(q_entry, team, last["opp"])
+            if lead >= MIN_BLOWN_LEAD:
+                return team, opp, "blown_lead"
+    return None
+
+
+def run_for_date(session, by_team, q_cache, date_str):
+    doc = store.read_doc("nba", date_str)
+    if doc is None:
+        print(f"{date_str}: no NBA slate yet, nothing to patch.")
+        return
+    changed = 0
+    for g in doc.get("games", []):
+        away, home = g.get("away"), g.get("home")
+        if not away or not home:
+            continue
+        fired = evaluate_game(session, by_team, q_cache, date_str, home, away)
+        if fired:
+            flagged_team, pick_team, rule_key = fired
+            g["statsFavors"] = pick_team
+            g["statsCheck"] = f"Fading {flagged_team}: {RULES[rule_key]}."
+            changed += 1
+            print(f"  {date_str} {away} @ {home}: fade {flagged_team} -> pick {pick_team} [{rule_key}]")
+        else:
+            g.pop("statsFavors", None)
+            g.pop("statsCheck", None)
+    if changed and doc.get("scored"):
+        # This slate was already graded before statsFavors existed on it --
+        # force a regrade so score_slate.py's next pass fills in the new
+        # statsCorrect/statsCover/etc fields too (idempotent: everything
+        # else it recomputes comes out the same).
+        doc["scored"] = False
+    store.write_doc("nba", date_str, doc)
+    print(f"{date_str}: patched {changed} signal pick(s) onto the NBA slate.")
 
 
 def main():
-    date_str = sys.argv[1] if len(sys.argv) > 1 else today_et_str()
+    dates = sys.argv[1:] or [today_et_str()]
     session = espn.make_session()
     by_team = load_team_logs()
-
-    # ESPN's scoreboard ?dates= query buckets by its own (roughly UTC) day,
-    # which doesn't always match the US-Eastern day fetch_scores.py stores
-    # games under -- query the surrounding days too and keep only events
-    # whose true ET date is the one we're generating a slate for.
-    query_date = datetime.strptime(date_str, "%Y-%m-%d")
-    events, seen_ids = [], set()
-    for delta in (-1, 0, 1):
-        probe = (query_date + timedelta(days=delta)).strftime("%Y%m%d")
-        try:
-            for ev in espn.fetch_scoreboard(session, "basketball", "nba", probe):
-                if ev["id"] not in seen_ids and et_date_of_iso(ev["date"]) == date_str:
-                    seen_ids.add(ev["id"])
-                    events.append(ev)
-        except Exception as exc:
-            print(f"scoreboard fetch failed for {probe}: {exc}", file=sys.stderr)
     q_cache = {}
-    games_out = []
-
-    for ev in events:
-        comp = ev["competitions"][0]
-        competitors = comp["competitors"]
-        home = next(c for c in competitors if c["homeAway"] == "home")["team"]["displayName"]
-        away = next(c for c in competitors if c["homeAway"] == "away")["team"]["displayName"]
-
-        fired = None  # (flagged_team, opponent, rule_key)
-        for team, is_home, opp in ((home, True, away), (away, False, home)):
-            games = by_team.get(team, [])
-            prior = [g for g in games if g["date"] < date_str]
-            if not prior:
-                continue
-            last = prior[-1]
-            opp_games = by_team.get(opp, [])
-            team_w, team_l = season_record(games, date_str)
-            opp_w, opp_l = season_record(opp_games, date_str)
-            if not (team_w + team_l) or not (opp_w + opp_l):
-                continue
-            team_pct, opp_pct = team_w / (team_w + team_l), opp_w / (opp_w + opp_l)
-            opp_weaker, opp_stronger = opp_pct < team_pct, opp_pct > team_pct
-
-            streak = win_streak_ending_at(prior, len(prior) - 1)
-            if streak >= MIN_STREAK and is_home and opp_weaker:
-                fired = (team, opp, "streak")
-                break
-
-            q = quarter_data(session, q_cache, last["date"])
-            q_entry = next((v for v in q.values() if team in v.get("teams", {}) and last["opp"] in v.get("teams", {})), None)
-            if q_entry and q_entry.get("period") and q_entry["period"] > 4 and last["won"] and opp_stronger:
-                fired = (team, opp, "ot_win")
-                break
-            if q_entry and not last["won"] and is_home and opp_weaker:
-                lead = blown_lead(q_entry, team, last["opp"])
-                if lead >= MIN_BLOWN_LEAD:
-                    fired = (team, opp, "blown_lead")
-                    break
-
-        if not fired:
-            continue
-        flagged_team, pick_team, rule_key = fired
-        away_ml, home_ml, away_sp, home_sp = fetch_spread(session, comp, ev["id"])
-        games_out.append({
-            "away": away, "home": home, "time": ev["date"],
-            "awayMoneyline": away_ml, "homeMoneyline": home_ml,
-            "awaySpread": away_sp, "homeSpread": home_sp,
-            "awaySpreadOdds": None, "homeSpreadOdds": None,
-            "pick": pick_team, "confidence": CONFIDENCE[rule_key],
-            "signalRule": rule_key, "signalAgainst": flagged_team,
-            "skipped": home_sp is None, "skipReason": "no-spread-yet" if home_sp is None else None,
-            "statLines": [f"Fading {flagged_team}: {RULES[rule_key]}."],
-        })
-
-    doc = {"date": date_str, "sport": "nba_stats", "scored": False,
-           "generatedAt": datetime.utcnow().isoformat(timespec="seconds") + "Z", "games": games_out}
-    store.write_doc("nba_stats", date_str, doc)
-    print(f"Wrote {len(games_out)} signal pick(s) for {date_str}.")
-    for g in games_out:
-        print(f"  {g['away']} @ {g['home']}: fade {g['signalAgainst']} -> pick {g['pick']} "
-              f"[{g['signalRule']}]{' (no spread yet)' if g['skipped'] else ''}")
+    for date_str in dates:
+        run_for_date(session, by_team, q_cache, date_str)
 
 
 if __name__ == "__main__":

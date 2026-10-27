@@ -212,6 +212,7 @@ TWO_WAY_SIGNAL_FIELDS = [
     ("altTrendFavors", "altTrendCorrect", "altTrendReturn", "altTrendCover", "altTrendSpreadReturn"),
     ("altBlowoutFavors", "altBlowoutCorrect", "altBlowoutReturn", "altBlowoutCover", "altBlowoutSpreadReturn"),
     ("altRestBlowoutFavors", "altRestBlowoutCorrect", "altRestBlowoutReturn", "altRestBlowoutCover", "altRestBlowoutSpreadReturn"),
+    ("statsFavors", "statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn"),
 ]
 
 

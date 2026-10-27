@@ -24,6 +24,7 @@ SLATE_FIELDS = [
     "pick", "confidence", "skipped", "skipReason",
     "altPick", "altConfidence", "altCategoryTally", "altReasons",
     "altTrendCheck", "altBlowoutCheck", "altTrendFavors", "altBlowoutFavors",
+    "statsFavors", "statsCheck",
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore",
 ]
@@ -85,17 +86,22 @@ def blowout_side(g):
     return side_of(g, g["altBlowoutFavors"]) if g.get("altBlowoutFavors") else None
 
 
-# Trend/blowout are only populated on NFL and CFB games; every other sport's
-# games lack these keys entirely so trend_side/blowout_side return None for
-# them and these two "models" contribute nothing outside football.
-MODEL_SIDES = (("ledger", ledger_side), ("alt", alt_side), ("trend", trend_side), ("blowout", blowout_side))
+def stats_side(g):
+    return side_of(g, g["statsFavors"]) if g.get("statsFavors") else None
+
+
+# Trend/blowout are only populated on NFL and CFB games, and stats only on
+# NBA games; every other sport's games lack these keys entirely so these
+# three "models" contribute nothing outside their one sport.
+MODEL_SIDES = (("ledger", ledger_side), ("alt", alt_side), ("trend", trend_side),
+               ("blowout", blowout_side), ("stats", stats_side))
 
 
 def build():
     mypicks = load_mypicks()
     all_docs = {k: store.list_docs(cfg["collection"]) for k, cfg in sports.SPORTS.items()}
 
-    totals = {"ledger": blank(), "alt": blank(), "trend": blank(), "blowout": blank(), "mine": blank()}
+    totals = {"ledger": blank(), "alt": blank(), "trend": blank(), "blowout": blank(), "stats": blank(), "mine": blank()}
     by_sport = {}
     plays = []
     for sport, docs in all_docs.items():
@@ -133,7 +139,7 @@ def build():
                                  "m": r["ml"]["result"], "mp": r["ml"]["profit"],
                                  "x": {"dog": 1, "fav": 2}.get(r["ml"]["skip"], 0), "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
                     plays.append(play)
-                    bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "trend": blank(), "blowout": blank(), "mine": blank()})
+                    bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "trend": blank(), "blowout": blank(), "stats": blank(), "mine": blank()})
                     tally(bucket[who], r)
 
     slate_date = max((d for docs in all_docs.values() for d, _ in docs), default=None)
