@@ -21,6 +21,12 @@ ESPN has archived lines for: 2020-21 to 2022-23 and 2025-26 on):
   5. Lost its last game with 22+ team turnovers, playing at home, opponent
      has a worse record -> covered 62.1% ATS (n=29 -- small; the broader
      "lost with 22+ turnovers, any next game" version is 58.6%, n=191)
+  7. Was out-assisted by 18+ last game, playing on the road
+     -> covered 69.2% ATS (n=26 -- the thinnest rule)
+
+  Fade (continued):
+  6. Had 18+ more assists than its opponent last game, home or away
+     -> faded 64.2% of the time ATS (n=53; every priced season agrees)
 
 "Better/worse record" compares each team's season-to-date win% entering the
 game. A game gets "statsFavors" (team name) and "statsCheck" (the reasoning,
@@ -28,9 +34,9 @@ with the backtested rate) when rules fire and agree on a side; if they point
 at opposite sides, the game gets no pick. Most days no game qualifies.
 
 Needs data/nba/<date>.json to already exist for the target date (the live
-Routine's own slate). Per-player points and team turnovers for completed
-games are cached in data/raw/nba_player_points.json so each run only
-fetches games it hasn't seen.
+Routine's own slate). Per-player points and team turnovers/assists for
+completed games are cached in data/raw/nba_player_points.json so each run
+only fetches games it hasn't seen.
 
 Usage: python scripts/nba_stats_signals.py [YYYY-MM-DD ...]   (default: today ET)
 """
@@ -52,6 +58,7 @@ STAR_MIN_PPG = 18
 STAR_MIN_GP = 5
 COLD_CUTOFF = 0.7
 SLOPPY_LOSS_TO = 22
+ASSIST_GAP = 18
 
 RULES = {
     "streak": "5+ game win streak, home, vs. a worse-record opponent -- "
@@ -158,7 +165,7 @@ class BoxCache:
 
     def _entry(self, event_id):
         e = self.data.get(event_id)
-        if not isinstance(e, dict) or "pts" not in e:  # missing, failed, or pre-turnover format
+        if not isinstance(e, dict) or "ast" not in e:  # missing, failed, or an older format
             e = self.data[event_id] = self._fetch(event_id)
             self.dirty = True
         return e or {}
@@ -169,6 +176,9 @@ class BoxCache:
     def turnovers(self, event_id, team):
         return self._entry(event_id).get("to", {}).get(team)
 
+    def assists(self, event_id, team):
+        return self._entry(event_id).get("ast", {}).get(team)
+
     def _fetch(self, event_id):
         try:
             d = self.session.get(
@@ -178,7 +188,7 @@ class BoxCache:
         except Exception:
             return None
         box = d.get("boxscore", {})
-        pts_by_team, to_by_team = {}, {}
+        pts_by_team, to_by_team, ast_by_team = {}, {}, {}
         for t in box.get("players", []):
             if not t.get("statistics"):
                 continue
@@ -199,13 +209,15 @@ class BoxCache:
             pts_by_team[t["team"]["displayName"]] = pts
         for t in box.get("teams", []):
             stats = {s.get("name"): s.get("displayValue") for s in t.get("statistics", [])}
-            try:
-                to_by_team[t["team"]["displayName"]] = int(stats["totalTurnovers"])
-            except (KeyError, TypeError, ValueError):
-                continue
+            name = t["team"]["displayName"]
+            for key, out in (("totalTurnovers", to_by_team), ("assists", ast_by_team)):
+                try:
+                    out[name] = int(stats[key])
+                except (KeyError, TypeError, ValueError):
+                    pass
         if not pts_by_team:
             return None
-        return {"pts": pts_by_team, "to": to_by_team}
+        return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team}
 
     def save(self):
         if self.dirty:
@@ -268,6 +280,15 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
                 picks.append((opp, f"Fading {team}: {RULES['ot_win']}."))
             if not last["won"] and is_home and opp_weaker and blown_lead(q_entry, team, last["opp"]) >= MIN_BLOWN_LEAD:
                 picks.append((opp, f"Fading {team}: {RULES['blown_lead']}."))
+
+        mine, theirs = points.assists(last["event_id"], team), points.assists(last["event_id"], last["opp"])
+        if mine is not None and theirs is not None:
+            if mine - theirs >= ASSIST_GAP:
+                picks.append((opp, f"Fading {team}: had {mine - theirs} more assists than its opponent last game "
+                                   f"({ASSIST_GAP}+) -- teams in this spot were faded 64.2% of the time ATS (n=53)."))
+            if theirs - mine >= ASSIST_GAP and not is_home:
+                picks.append((team, f"Backing {team}: was out-assisted by {theirs - mine} last game ({ASSIST_GAP}+), "
+                                    f"now on the road -- teams in this spot covered 69.2% ATS (n=26, small sample)."))
 
         if is_home and opp_weaker and not last["won"]:
             to = points.turnovers(last["event_id"], team)
