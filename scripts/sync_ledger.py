@@ -49,25 +49,23 @@ def normalize(doc, sport):
 
 
 # Fields this repo writes onto ledger slates itself (scripts/nba_stats_signals.py
-# and its grading in score_slate.py). The database never has them, so a sync
-# from the database must carry them over from the repo copy instead of
-# dropping them.
+# and its grading in score_slate.py). The repo copy is the source of truth
+# for them: a database copy may lack them, or hold a stale version mirrored
+# back from an earlier repo state, so a sync always takes the repo's.
 REPO_OWNED_GAME_FIELDS = ("statsFavors", "statsCheck", "statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn")
 
 
 def carry_repo_fields(current, doc):
-    """Copies REPO_OWNED_GAME_FIELDS from the repo's copy of a slate onto
-    the incoming database copy, matching games by away/home team."""
-    if not current:
-        return doc
-    by_matchup = {(g.get("away"), g.get("home")): g for g in current.get("games", [])}
+    """Replaces REPO_OWNED_GAME_FIELDS on the incoming database copy with the
+    repo copy's values (or their absence), matching games by away/home."""
+    by_matchup = {(g.get("away"), g.get("home")): g for g in (current or {}).get("games", [])}
     for g in doc.get("games", []):
-        old = by_matchup.get((g.get("away"), g.get("home")))
-        if not old:
-            continue
+        old = by_matchup.get((g.get("away"), g.get("home")), {})
         for k in REPO_OWNED_GAME_FIELDS:
-            if k in old and k not in g:
+            if k in old:
                 g[k] = old[k]
+            else:
+                g.pop(k, None)
     return doc
 
 
