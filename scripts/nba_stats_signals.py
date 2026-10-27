@@ -27,6 +27,9 @@ ESPN has archived lines for: 2020-21 to 2022-23 and 2025-26 on):
   Fade (continued):
   6. Had 18+ more assists than its opponent last game, home or away
      -> faded 64.2% of the time ATS (n=53; every priced season agrees)
+  8. Won its last game by under 10 with 6+ more steals than its opponent,
+     unless it's now home vs. a better-record team -> faded 61.0% of the
+     time ATS (n=141; any win by 10+ is a coin flip, 49.9%)
 
 "Better/worse record" compares each team's season-to-date win% entering the
 game. A game gets "statsFavors" (team name) and "statsCheck" (the reasoning,
@@ -59,6 +62,8 @@ STAR_MIN_GP = 5
 COLD_CUTOFF = 0.7
 SLOPPY_LOSS_TO = 22
 ASSIST_GAP = 18
+STEAL_GAP = 6
+CLOSE_WIN = 10
 
 RULES = {
     "streak": "5+ game win streak, home, vs. a worse-record opponent -- "
@@ -165,7 +170,7 @@ class BoxCache:
 
     def _entry(self, event_id):
         e = self.data.get(event_id)
-        if not isinstance(e, dict) or "ast" not in e:  # missing, failed, or an older format
+        if not isinstance(e, dict) or "type" not in e:  # missing, failed, or an older format
             e = self.data[event_id] = self._fetch(event_id)
             self.dirty = True
         return e or {}
@@ -179,6 +184,12 @@ class BoxCache:
     def assists(self, event_id, team):
         return self._entry(event_id).get("ast", {}).get(team)
 
+    def steals(self, event_id, team):
+        return self._entry(event_id).get("stl", {}).get(team)
+
+    def is_regular_season(self, event_id):
+        return self._entry(event_id).get("type") == 2
+
     def _fetch(self, event_id):
         try:
             d = self.session.get(
@@ -188,7 +199,7 @@ class BoxCache:
         except Exception:
             return None
         box = d.get("boxscore", {})
-        pts_by_team, to_by_team, ast_by_team = {}, {}, {}
+        pts_by_team, to_by_team, ast_by_team, stl_by_team = {}, {}, {}, {}
         for t in box.get("players", []):
             if not t.get("statistics"):
                 continue
@@ -210,14 +221,15 @@ class BoxCache:
         for t in box.get("teams", []):
             stats = {s.get("name"): s.get("displayValue") for s in t.get("statistics", [])}
             name = t["team"]["displayName"]
-            for key, out in (("totalTurnovers", to_by_team), ("assists", ast_by_team)):
+            for key, out in (("totalTurnovers", to_by_team), ("assists", ast_by_team), ("steals", stl_by_team)):
                 try:
                     out[name] = int(stats[key])
                 except (KeyError, TypeError, ValueError):
                     pass
         if not pts_by_team:
             return None
-        return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team}
+        return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team, "stl": stl_by_team,
+                "type": d.get("header", {}).get("season", {}).get("type")}
 
     def save(self):
         if self.dirty:
@@ -290,6 +302,13 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
                 picks.append((team, f"Backing {team}: was out-assisted by {theirs - mine} last game ({ASSIST_GAP}+), "
                                     f"now on the road -- teams in this spot covered 69.2% ATS (n=26, small sample)."))
 
+        margin = last["team_score"] - last["opp_score"]
+        if last["won"] and margin < CLOSE_WIN and not (is_home and opp_stronger):
+            ms, ts = points.steals(last["event_id"], team), points.steals(last["event_id"], last["opp"])
+            if ms is not None and ts is not None and ms - ts >= STEAL_GAP:
+                picks.append((opp, f"Fading {team}: won last game by {margin:g} with {ms - ts} more steals "
+                                   f"({STEAL_GAP}+) -- teams in this spot were faded 61.0% of the time ATS (n=141)."))
+
         if is_home and opp_weaker and not last["won"]:
             to = points.turnovers(last["event_id"], team)
             if to is not None and to >= SLOPPY_LOSS_TO:
@@ -345,7 +364,11 @@ def main():
     dates = sys.argv[1:] or [today_et_str()]
     session = espn.make_session()
     points = BoxCache(session)
-    by_team = load_team_logs()
+    # The backtests are regular-season only, and the scores archive also
+    # holds preseason games -- drop those so streaks, records and "last game"
+    # mean what they meant in the backtest.
+    by_team = {team: [g for g in games if points.is_regular_season(g["event_id"])]
+               for team, games in load_team_logs().items()}
     q_cache = {}
     try:
         for date_str in dates:
