@@ -262,7 +262,7 @@ footer b{color:var(--ink);}
 <script>
 (function(){
   var DATA = null;
-  var ORDER = ['nfl','cfb','mlb','nba','ncaab','soccer','epl'];
+  var ORDER = ['nfl','cfb','mlb','nba','ncaab','nba_stats','soccer','epl'];
   var TIER = {solid:'Solid', lean:'Lean', 'toss-up':'Toss-up', strong:'Strong'};
   var SKIP = {'opsa-veto':'Worse OPS-against','opsa-close':'OPS-against too close','whip-veto':'Worse WHIP','whip-close':'WHIP too close',
     'ops-gap':'OPS too close','off-gap':'Offense too close','qb-veto':'Worse QB','qb-close':'QBs too close',
@@ -313,7 +313,7 @@ footer b{color:var(--ink);}
   var DIRS = {North:'N.',South:'S.',East:'E.',West:'W.',Central:'C.',Northern:'N.',Southern:'S.',Eastern:'E.',Western:'W.'};
   function nick(name, sport){
     var w = String(name).split(' ');
-    if(sport==='mlb' || sport==='nfl' || sport==='nba'){
+    if(sport==='mlb' || sport==='nfl' || sport==='nba' || sport==='nba_stats'){
       var two = w.slice(-2).join(' ');
       return /^(Red|White) Sox$|^Blue Jays$|^Trail Blazers$/.test(two) ? two : w[w.length-1];
     }

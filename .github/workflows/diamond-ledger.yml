@@ -5,7 +5,13 @@ name: Diamond Ledger (scoring)
 # the live "Diamond Ledger" scheduled Routines (NFL, CFB, MLB, Basketball),
 # which do their own research in claude.ai and mirror the result straight
 # into data/<collection>/<date>.json with their own commit — this workflow
-# never generates picks, only grades what's already there.
+# never generates picks for those sports, only grades what's already there.
+#
+# nba_stats is the one exception: it's a deterministic, backtested signal
+# engine (scripts/nba_stats_signals.py), not live research, so this workflow
+# generates ITS slate too, re-running each cycle so spreads fill in as they
+# post. Re-running is harmless either way -- only unscored slates get graded,
+# and nba_stats_signals.py just overwrites today's file with current odds.
 
 on:
   schedule:
@@ -20,9 +26,9 @@ on:
   workflow_dispatch:
     inputs:
       sports:
-        description: "Space-separated sport keys to score (default: nfl cfb mlb nba ncaab soccer epl)"
+        description: "Space-separated sport keys to score (default: nfl cfb mlb nba ncaab nba_stats soccer epl)"
         required: false
-        default: "nfl cfb mlb nba ncaab soccer epl"
+        default: "nfl cfb mlb nba ncaab nba_stats soccer epl"
 
 permissions:
   contents: write
@@ -40,8 +46,11 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Generate today's NBA Stats signal picks
+        run: python scripts/nba_stats_signals.py
+
       - name: Fetch scores and grade past slates
-        run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab soccer epl' }}
+        run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab nba_stats soccer epl' }}
 
       - name: Commit and push results
         run: |

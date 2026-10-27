@@ -21,7 +21,7 @@ import score_slate  # noqa: E402
 from lib import sports, store, report  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 
-DEFAULT_SPORTS = ["nfl", "cfb", "mlb", "nba", "ncaab", "soccer", "epl"]
+DEFAULT_SPORTS = ["nfl", "cfb", "mlb", "nba", "ncaab", "nba_stats", "soccer", "epl"]
 
 
 def _fmt(totals):

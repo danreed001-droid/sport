@@ -1,13 +1,16 @@
 """Per-sport configuration registry, used by the deterministic scoring
 pipeline (score_slate.py/fetch_scores.py/run.py) and the report builder.
 
-Picks themselves are generated entirely by the live "Diamond Ledger"
-scheduled Routines (NFL, CFB, MLB, Basketball) in claude.ai, each running its
-own real research and mirroring the slate it generates into
-data/<collection>/<date>.json in this repo. Nothing in this repo generates
-picks — "model" below is only set for a sport whose *scoring* needs
-sport-specific grading logic (currently just the three-way soccer market);
-two-way sports all grade through the shared logic in score_slate.py.
+Picks for every sport but nba_stats are generated entirely by the live
+"Diamond Ledger" scheduled Routines (NFL, CFB, MLB, Basketball) in
+claude.ai, each running its own real research and mirroring the slate it
+generates into data/<collection>/<date>.json in this repo. nba_stats is the
+one exception: its slate is generated in this repo too, deterministically,
+by scripts/nba_stats_signals.py -- no LLM research needed since it's just a
+fixed set of backtested trigger conditions. "model" below is only set for a
+sport whose *scoring* needs sport-specific grading logic (currently just
+the three-way soccer market); two-way sports all grade through the shared
+logic in score_slate.py.
 """
 
 SPORTS = {
@@ -62,6 +65,19 @@ SPORTS = {
         # Slates carry their own prices; skip the per-match odds lookups the
         # combined feed would otherwise need (hundreds of matches a day).
         "summary_odds": False,
+    },
+    "nba_stats": {
+        # Rule-based NBA signal engine (scripts/nba_stats_signals.py), not a
+        # live research Routine like the others: deterministic, backtested
+        # trigger conditions fade a team coming off one of three specific
+        # situations (5+ win streak, an OT win, a blown 10+ point lead) when
+        # the matchup/opponent context from the backtest also holds. Sparse
+        # by design -- most slates have no qualifying game at all.
+        "label": "NBA Stats",
+        "collection": "nba_stats",
+        "kind": "two_way",
+        "espn_sport": "basketball",
+        "espn_league": "nba",
     },
     "epl": {
         # No live scheduled Routine generates this one yet, so it stays
