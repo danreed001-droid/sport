@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-15",
+  "sport": "nba_stats",
+  "scored": true,
+  "generatedAt": "2026-10-27T18:24:16Z",
+  "games": [
+    {
+      "away": "Oklahoma City Thunder",
+      "home": "Houston Rockets",
+      "time": "2026-10-16T00:30Z",
+      "awayMoneyline": null,
+      "homeMoneyline": null,
+      "awaySpread": -2.5,
+      "homeSpread": 2.5,
+      "awaySpreadOdds": null,
+      "homeSpreadOdds": null,
+      "pick": "Houston Rockets",
+      "confidence": "solid",
+      "signalRule": "ot_win",
+      "signalAgainst": "Oklahoma City Thunder",
+      "skipped": false,
+      "skipReason": null,
+      "statLines": [
+        "Fading Oklahoma City Thunder: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77, 2020-21\u20132026-27)."
+      ],
+      "awayScore": 89.0,
+      "homeScore": 116.0,
+      "correct": true,
+      "pickReturn": null,
+      "pickCover": true,
+      "pickSpreadReturn": 90.91
+    }
+  ],
+  "scoredAt": "2026-10-27T18:25:07.882924+00:00"
+}
