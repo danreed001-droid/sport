@@ -1,7 +1,7 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
 401878967,2026-11-04,Scheduled,KV Mechelen,0,-,KV Kortrijk,0,-,-,-,2:30 PM
 401928436,2026-10-27,FT-Pens,Clyde,1,-,Penicuik,1,-,-,-,3:45 PM
-401891182,2026-10-27,Scheduled,California Baptist,0,-,UC Santa Barbara,0,-,-,-,10:00 PM
+401891182,2026-10-27,14',California Baptist,0,-,UC Santa Barbara,0,-,-,-,10:00 PM
 401921833,2026-10-27,FT,Peterborough United,0,-,Bradford City,2,-,-,-,3:45 PM
 401921835,2026-10-27,FT-Pens,Arsenal,1,-,Fleetwood Town,1,-,-,-,4:00 PM
 401928493,2026-10-27,FT,Girona,2,-,CD Cuarte,0,-,-,-,1:30 PM
@@ -82,26 +82,26 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401878552,2026-10-27,FT,Dunfermline Athletic,1,-,Stenhousemuir,0,-,-,-,3:45 PM
 401842858,2026-10-27,FT,IF Elfsborg,2,-,AIK,2,-,-,-,2:00 PM
 401841642,2026-10-27,FT,Independiente Rivadavia,0,-,Argentinos Juniors,1,-,-,-,6:00 PM
-401860406,2026-10-27,53',Goiás,0,-,Ceará,0,-,-,-,7:00 PM
-401877953,2026-10-27,58',Águilas Doradas,2,-,Cúcuta Deportivo,0,-,-,-,7:00 PM
-401877861,2026-10-27,Scheduled,Atlético Junior,0,-,Boyacá Chicó FC,0,-,-,-,9:05 PM
+401860406,2026-10-27,FT,Goiás,2,-,Ceará,0,-,-,-,7:00 PM
+401877953,2026-10-27,FT,Águilas Doradas,2,-,Cúcuta Deportivo,0,-,-,-,7:00 PM
+401877861,2026-10-27,58',Atlético Junior,0,-,Boyacá Chicó FC,0,-,-,-,9:05 PM
 401886153,2026-10-27,FT,Sport Huancayo,0,-,Juan Pablo II,2,-,-,-,4:00 PM
 401931015,2026-10-27,FT,Caracas FC,1,-,Academia Puerto Cabello,0,-,-,-,5:30 PM
-401930974,2026-10-27,45',Monagas SC,0,-,Deportivo Táchira,2,-,-,-,7:30 PM
-401922484,2026-10-27,Scheduled,Club Deportivo Marathón,0,-,Alianza FC,0,-,-,-,10:00 PM
+401930974,2026-10-27,FT,Monagas SC,0,-,Deportivo Táchira,2,-,-,-,7:30 PM
+401922484,2026-10-27,16',Club Deportivo Marathón,0,-,Alianza FC,0,-,-,-,10:00 PM
 401899062,2026-10-27,FT,Oral Roberts,1,-,Liberty,2,-,-,-,1:00 PM
 401898223,2026-10-27,Canceled,Army,0,-,Fairfield,0,-,-,-,6:00 PM
 401898794,2026-10-27,FT,Green Bay,0,-,Michigan State,3,-,-,-,6:00 PM
 401891953,2026-10-27,FT,William & Mary,0,-,North Carolina,6,-,-,-,6:00 PM
-401925326,2026-10-27,89',UConn,2,-,St. John's,2,-,-,-,6:00 PM
-401931955,2026-10-27,90',Furman,1,-,UNC Greensboro,1,-,-,-,6:00 PM
-401898083,2026-10-27,53',Hofstra,0,-,Columbia,1,-,-,-,7:00 PM
-401892007,2026-10-27,53',Lipscomb,1,-,Evansville,1,-,-,-,7:00 PM
-401898069,2026-10-27,50',Brown,0,-,Holy Cross,0,-,-,-,7:00 PM
-401901263,2026-10-27,52',Davidson,2,-,Presbyterian,0,-,-,-,7:00 PM
-401887575,2026-10-27,47',Villanova,2,-,Saint Joseph's,1,-,-,-,7:00 PM
-401887779,2026-10-27,45',DePaul,2,-,Seton Hall,1,-,-,-,7:00 PM
-401892340,2026-10-27,52',Monmouth,1,-,Temple,0,-,-,-,7:00 PM
+401925326,2026-10-27,FT,UConn,2,-,St. John's,3,-,-,-,6:00 PM
+401931955,2026-10-27,FT,Furman,1,-,UNC Greensboro,1,-,-,-,6:00 PM
+401898083,2026-10-27,FT,Hofstra,0,-,Columbia,2,-,-,-,7:00 PM
+401892007,2026-10-27,FT,Lipscomb,1,-,Evansville,2,-,-,-,7:00 PM
+401898069,2026-10-27,FT,Brown,0,-,Holy Cross,0,-,-,-,7:00 PM
+401901263,2026-10-27,FT,Davidson,3,-,Presbyterian,1,-,-,-,7:00 PM
+401887575,2026-10-27,FT,Villanova,2,-,Saint Joseph's,2,-,-,-,7:00 PM
+401887779,2026-10-27,FT,DePaul,3,-,Seton Hall,1,-,-,-,7:00 PM
+401892340,2026-10-27,FT,Monmouth,2,-,Temple,1,-,-,-,7:00 PM
 401882828,2026-10-26,FT,Osasuna,0,-,Sevilla,2,-,-,-,4:00 PM
 401876422,2026-10-26,FT,Lyon,0,-,Paris Saint-Germain,2,-,-,-,3:30 PM
 401885414,2026-10-26,FT,Benfica,2,-,Santa Clara,1,-,-,-,2:45 PM
