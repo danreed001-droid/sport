@@ -30,6 +30,9 @@ ESPN has archived lines for: 2020-21 to 2022-23 and 2025-26 on):
   8. Won its last game by under 10 with 6+ more steals than its opponent,
      unless it's now home vs. a better-record team -> faded 61.0% of the
      time ATS (n=141; any win by 10+ is a coin flip, 49.9%)
+  9. Won its last game after trailing by 5+ through 3 quarters, and plays
+     again the next day (second night of a back-to-back) -> faded 68.1% of
+     the time ATS (n=91; the same comeback with a day of rest is 49.3%)
 
 "Better/worse record" compares each team's season-to-date win% entering the
 game. A game gets "statsFavors" (team name) and "statsCheck" (the reasoning,
@@ -47,6 +50,7 @@ import csv
 import json
 import os
 import sys
+from datetime import date
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, store  # noqa: E402
@@ -64,6 +68,7 @@ SLOPPY_LOSS_TO = 22
 ASSIST_GAP = 18
 STEAL_GAP = 6
 CLOSE_WIN = 10
+LATE_COMEBACK = 5
 
 RULES = {
     "streak": "5+ game win streak, home, vs. a worse-record opponent -- "
@@ -153,6 +158,15 @@ def blown_lead(q_entry, team, opp):
         o_cum += o or 0
         best = max(best, t_cum - o_cum)
     return best
+
+
+def trailed_after_three(q_entry, team, opp):
+    """How many points `team` trailed `opp` by after 3 quarters (negative or
+    zero if it led or was tied), or None without three quarters of data."""
+    t_q, o_q = q_entry["teams"].get(team), q_entry["teams"].get(opp)
+    if not t_q or not o_q or len(t_q) < 3 or len(o_q) < 3 or None in t_q[:3] + o_q[:3]:
+        return None
+    return sum(o_q[:3]) - sum(t_q[:3])
 
 
 class BoxCache:
@@ -299,6 +313,12 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
                 picks.append((opp, f"Fading {team}: {RULES['ot_win']}."))
             if not last["won"] and is_home and opp_weaker and blown_lead(q_entry, team, last["opp"]) >= MIN_BLOWN_LEAD:
                 picks.append((opp, f"Fading {team}: {RULES['blown_lead']}."))
+            back_to_back = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days == 1
+            trail = trailed_after_three(q_entry, team, last["opp"]) if last["won"] and back_to_back else None
+            if trail is not None and trail >= LATE_COMEBACK:
+                picks.append((opp, f"Fading {team}: came back to win last night after trailing by {trail:g} "
+                                   f"through 3 quarters ({LATE_COMEBACK}+), now on the second night of a back-to-back "
+                                   f"-- teams in this spot were faded 68.1% of the time ATS (n=91)."))
 
         mine, theirs = points.assists(last["event_id"], team), points.assists(last["event_id"], last["opp"])
         if mine is not None and theirs is not None:
