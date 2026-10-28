@@ -126,7 +126,7 @@ def build():
                     play_rules = None
                     if rule_src and g.get(rule_src[0]):
                         nums = [str(r.get("rule")) for r in g[rule_src[0]]]
-                        tier = ("Rules " if len(nums) > 1 else "Rule ") + " + ".join(nums)
+                        tier = ("Rules " if len(nums) > 1 else "Rule ") + " + ".join(nums) + (" · stacked" if len(nums) > 1 else "")
                         play_rules = [{"n": r.get("rule"), "name": rule_src[1].get(r.get("rule"), r.get("name", "")),
                                        "bt": rule_src[2].get(r.get("rule"), r.get("backtest", ""))} for r in g[rule_src[0]]]
                     ln = line_for(g, side)
@@ -170,6 +170,7 @@ def build():
             for rule in g.get("statsRules") or []:
                 if key and rule.get("rule") in rule_records:
                     rule_records[rule["rule"]][key] += 1
+    stats_stacked = stacked_record(all_docs.get("nba", []), "nba", "statsFavors", "statsRules")
     stats_rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], **rule_records[n]}
                    for n in sorted(RULE_NAMES)]
     nfl_records = {n: {"w": 0, "l": 0, "p": 0} for n in nfl_stats_rules.RULE_NAMES}
@@ -181,6 +182,8 @@ def build():
             for rule in g.get("nflStatsRules") or []:
                 if key and rule.get("rule") in nfl_records:
                     nfl_records[rule["rule"]][key] += 1
+    nfl_stacked = {**stacked_record(all_docs.get("nfl", []), "nfl", "nflStatsFavors", "nflStatsRules"),
+                   "backtest": nfl_stats_rules.STACKED_BACKTEST}
     nfl_rules = [{"rule": n, "name": nfl_stats_rules.RULE_NAMES[n], "backtest": nfl_stats_rules.RULE_BACKTEST[n], **nfl_records[n]}
                  for n in sorted(nfl_stats_rules.RULE_NAMES)]
 
@@ -235,7 +238,22 @@ def build():
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
         "nflStatsRules": nfl_rules,
+        "statsStacked": stats_stacked,
+        "nflStatsStacked": nfl_stacked,
     }
+
+
+def stacked_record(docs, sport, favors, rules):
+    """This season's record on picks two or more rules agreed on."""
+    rec = {"w": 0, "l": 0, "p": 0}
+    for _, doc in docs:
+        for g in doc.get("games", []):
+            if not g.get(favors) or len(g.get(rules) or []) < 2 or not is_final(doc, g):
+                continue
+            key = {"cover": "w", "miss": "l", "push": "p"}.get(grade(sport, g, side_of(g, g[favors]))["ats"]["result"])
+            if key:
+                rec[key] += 1
+    return rec
 
 
 def main():

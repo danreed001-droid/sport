@@ -11,6 +11,8 @@ scripts/lib/nfl_stats_rules.py.
   for 300+ yards in a win.
   Rule 5: back a road team after a 10+ point loss with 3+ turnovers in which
   it gained about as many yards as its opponent (within 75).
+  Rule 6: fade a team that gained 500+ yards, 300+ of them passing, last game.
+  A pick two or more rules agree on is "stacked" (69.4% ATS in the replay).
   Neutral-site games (London, Germany, etc.) are left out, as in the backtests;
   if the rules point at opposite sides, the game gets no pick.
 
@@ -42,6 +44,8 @@ TO_LOSS_MARGIN = 10  # rule 5: lost last game by this many or more...
 TO_LOSS_TURNOVERS = 3  # ...with this many turnovers or more...
 TO_LOSS_YARDS = 75   # ...and total yards within this many of the opponent's
 BIG_PASS = 300       # rule 4: QB passing yards in last game's win
+BIG_YARDS = 500      # rule 6: team total yards last game...
+BIG_YARDS_PASS = 300  # ...with this many net passing yards or more
 BIG_RUSH = 150       # rule 3: top rusher's yards in the team's last game
 LOOKBACK_DAYS = 16   # how far back to look for a team's last regular-season game
 FIELDS = ("nflStatsFavors", "nflStatsCheck", "nflStatsRules")
@@ -113,14 +117,15 @@ _BOX = {}
 
 
 def team_box(session, event_id):
-    """{team name: {"to": turnovers, "yds": total yards}} from an ESPN game's box score."""
+    """{team name: {"to": turnovers, "yds": total yards, "pass": net passing yards}} from an ESPN game's box score."""
     if event_id not in _BOX:
         out = {}
         try:
             d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event={event_id}", timeout=20).json()
             for t in d.get("boxscore", {}).get("teams", []):
                 st = {x.get("name"): x.get("displayValue") for x in t.get("statistics", [])}
-                out[t["team"]["displayName"]] = {"to": _num(st.get("turnovers")), "yds": _num(st.get("totalYards"))}
+                out[t["team"]["displayName"]] = {"to": _num(st.get("turnovers")), "yds": _num(st.get("totalYards")),
+                                                 "pass": _num(st.get("netPassingYards"))}
         except Exception:
             pass
         _BOX[event_id] = out
@@ -288,6 +293,12 @@ def evaluate(session, date_str, g, neutral):
                     picks.append((opp, 4, f"Fading {team}: {passer[0]} threw for {passer[1]:g} yards in last game's win ({BIG_PASS}+), and "
                                           f"{team} is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, "
                                           f"2017-2025 (n=121), every season 55%+."))
+        if last:
+            me = team_box(session, last["eid"]).get(team) or {}
+            if None not in (me.get("yds"), me.get("pass")) and me["yds"] >= BIG_YARDS and me["pass"] >= BIG_YARDS_PASS:
+                picks.append((opp, 6, f"Fading {team}: gained {me['yds']:g} yards last game, {me['pass']:g} of them passing "
+                                      f"({BIG_YARDS}+ with {BIG_YARDS_PASS}+ through the air) -- teams in this spot were faded 60.0% of the time "
+                                      f"ATS next game, 2017-2025 (n=115)."))
         if last and last["won"] and not last["neutral"] and last["spread"] is not None and last["spread"] >= UPSET_DOG:
             picks.append((opp, 2, f"Fading {team}: won last game ({last['date']}, vs. {last['opp']}) as a {last['spread']:g}-point "
                                   f"underdog ({UPSET_DOG}+) -- teams coming off an upset that big were faded 60.0% of the time ATS "

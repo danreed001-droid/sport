@@ -246,7 +246,7 @@
       "homeSpread": 10,
       "homeSpreadOdds": -110,
       "homeYPP": 5.12,
-      "nflStatsCheck": "Rule 1: Backing Miami Dolphins: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+      "nflStatsCheck": "Rule 1: Backing Miami Dolphins: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons. Rule 6: Fading Kansas City Chiefs: gained 523 yards last game, 371 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115).",
       "nflStatsCorrect": null,
       "nflStatsCover": false,
       "nflStatsFavors": "Miami Dolphins",
@@ -257,6 +257,12 @@
           "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
           "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
           "detail": "Backing Miami Dolphins: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        },
+        {
+          "rule": 6,
+          "name": "Fade a team that gained 500+ yards, 300+ of them passing, last game",
+          "backtest": "60.0% ATS, n=115 (2017-2025); 2017-21 59.8%, 2022-25 60.7%; only losing season 2021 (7-8)",
+          "detail": "Fading Kansas City Chiefs: gained 523 yards last game, 371 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115)."
         }
       ],
       "nflStatsSpreadReturn": -100.0,
