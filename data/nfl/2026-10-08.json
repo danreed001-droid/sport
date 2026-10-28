@@ -68,7 +68,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Tampa Bay Buccaneers",
+      "nflStatsRules": [
+        {
+          "rule": 4,
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading Dallas Cowboys: Dak Prescott threw for 335 yards in last game's win (300+), and Dallas Cowboys is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
+        }
+      ],
+      "nflStatsCheck": "Rule 4: Fading Dallas Cowboys: Dak Prescott threw for 335 yards in last game's win (300+), and Dallas Cowboys is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 360.0,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 90.91
     }
   ],
   "scoredAt": "2026-10-09T18:33:06.588392+00:00"

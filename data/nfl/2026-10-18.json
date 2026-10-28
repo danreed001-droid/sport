@@ -480,7 +480,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Dallas Cowboys",
+      "nflStatsRules": [
+        {
+          "rule": 4,
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading Green Bay Packers: Jordan Love threw for 367 yards in last game's win (300+), and Green Bay Packers is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
+        }
+      ],
+      "nflStatsCheck": "Rule 4: Fading Green Bay Packers: Jordan Love threw for 367 yards in last game's win (300+), and Green Bay Packers is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "nflStatsCorrect": false,
+      "nflStatsReturn": -100.0,
+      "nflStatsCover": false,
+      "nflStatsSpreadReturn": -100.0
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Saints lost by 10, Giants tied) \u2014 not applicable to either side.",
@@ -599,7 +613,21 @@
       "altBlowoutCorrect": false,
       "altBlowoutReturn": -100.0,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": 0.0
+      "altBlowoutSpreadReturn": 0.0,
+      "nflStatsFavors": "New York Jets",
+      "nflStatsRules": [
+        {
+          "rule": 4,
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading New England Patriots: Drake Maye threw for 374 yards in last game's win (300+), and New England Patriots is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
+        }
+      ],
+      "nflStatsCheck": "Rule 4: Fading New England Patriots: Drake Maye threw for 374 yards in last game's win (300+), and New England Patriots is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "nflStatsCorrect": false,
+      "nflStatsReturn": -100.0,
+      "nflStatsCover": null,
+      "nflStatsSpreadReturn": 0.0
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Steelers won by 12, Buccaneers won by 8) \u2014 not applicable to either side.",

@@ -377,7 +377,21 @@
         "Yds/play 5.45 vs 7.67 \u00b7 42-pt gap",
         "QB rating 89.4 vs 114.0 (Shough vs Jackson)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "nflStatsFavors": "New Orleans Saints",
+      "nflStatsRules": [
+        {
+          "rule": 4,
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading Baltimore Ravens: Lamar Jackson threw for 324 yards in last game's win (300+), and Baltimore Ravens is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
+        }
+      ],
+      "nflStatsCheck": "Rule 4: Fading Baltimore Ravens: Lamar Jackson threw for 324 yards in last game's win (300+), and Baltimore Ravens is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 340.0,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 86.96
     },
     {
       "altBlowoutCheck": "Backfilled: neither team's prior game was a 13+ point win.",

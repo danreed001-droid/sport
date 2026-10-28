@@ -7,6 +7,8 @@ scripts/lib/nfl_stats_rules.py.
   Rule 1: back a home underdog of 7+ points (fade a road favorite of 7+).
   Rule 2: fade a team that won its last game as an underdog of 7+ points.
   Rule 3: back an underdog whose top rusher ran for 150+ yards last game.
+  Rule 4: fade a home team vs. a worse-record opponent after its QB threw
+  for 300+ yards in a win.
   Neutral-site games (London, Germany, etc.) are left out, as in the backtests;
   if the rules point at opposite sides, the game gets no pick.
 
@@ -34,6 +36,7 @@ from lib.nfl_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 
 BIG_HOME_DOG = 7
 UPSET_DOG = 7        # rule 2: won its last game as an underdog of this many points or more
+BIG_PASS = 300       # rule 4: QB passing yards in last game's win
 BIG_RUSH = 150       # rule 3: top rusher's yards in the team's last game
 LOOKBACK_DAYS = 16   # how far back to look for a team's last regular-season game
 FIELDS = ("nflStatsFavors", "nflStatsCheck", "nflStatsRules")
@@ -99,6 +102,58 @@ def last_game(session, team, date_str):
 
 
 _RUSH = {}
+_PASS = {}
+
+
+def season_pct(session, team, date_str):
+    """The team's regular-season win share before date_str (ties count as
+    non-wins, as in the backtest), from ESPN's scoreboards; None before its
+    first game."""
+    d0 = date.fromisoformat(date_str)
+    d = date(d0.year if d0.month >= 8 else d0.year - 1, 8, 25)
+    w = n = 0
+    while d < d0:
+        for ev in _board(session, d.isoformat()):
+            if (ev.get("season") or {}).get("type") != 2 or et_date_of_iso(ev["date"]) != d.isoformat():
+                continue
+            comp = ev["competitions"][0]
+            if not comp.get("status", {}).get("type", {}).get("completed"):
+                continue
+            t = {c["team"]["displayName"]: float(c["score"]) for c in comp["competitors"]}
+            if team in t:
+                other = next(v for k, v in t.items() if k != team)
+                n += 1
+                w += t[team] > other
+        d += timedelta(days=1)
+    return w / n if n else None
+
+
+def top_passer(session, event_id, team):
+    """(name, passing yards) for the team's QB with the most attempts in an ESPN game, or None."""
+    if event_id not in _PASS:
+        out = {}
+        try:
+            d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event={event_id}", timeout=20).json()
+            for t in d.get("boxscore", {}).get("players", []):
+                for cat in t.get("statistics", []):
+                    if cat.get("name") != "passing":
+                        continue
+                    labels = cat.get("labels", [])
+                    ia = labels.index("C/ATT") if "C/ATT" in labels else None
+                    iy = labels.index("YDS") if "YDS" in labels else None
+                    best = None
+                    for a in cat.get("athletes", []):
+                        st = a.get("stats") or []
+                        att = _num(str(st[ia]).split("/")[-1]) if ia is not None and ia < len(st) else None
+                        yds = _num(st[iy]) if iy is not None and iy < len(st) else None
+                        if att is not None and yds is not None and (best is None or att > best[2]):
+                            best = (a["athlete"].get("displayName"), yds, att)
+                    if best:
+                        out[t["team"]["displayName"]] = best[:2]
+        except Exception:
+            pass
+        _PASS[event_id] = out
+    return _PASS[event_id].get(team)
 
 
 def top_rusher(session, event_id, team):
@@ -196,6 +251,14 @@ def evaluate(session, date_str, g, neutral):
             if rusher and rusher[1] >= BIG_RUSH:
                 picks.append((team, 3, f"Backing {team}: {rusher[0]} ran for {rusher[1]:g} yards last game ({BIG_RUSH}+), and {team} "
                                        f"is a {line:g}-point underdog now -- teams in this spot covered 66.7% ATS, 2017-2025 (n=39, small sample)."))
+        if last and last["won"] and team == g["home"]:
+            passer = top_passer(session, last["eid"], team)
+            if passer and passer[1] >= BIG_PASS:
+                mine, theirs = season_pct(session, team, date_str), season_pct(session, opp, date_str)
+                if mine is not None and theirs is not None and theirs < mine:
+                    picks.append((opp, 4, f"Fading {team}: {passer[0]} threw for {passer[1]:g} yards in last game's win ({BIG_PASS}+), and "
+                                          f"{team} is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, "
+                                          f"2017-2025 (n=121), every season 55%+."))
         if last and last["won"] and not last["neutral"] and last["spread"] is not None and last["spread"] >= UPSET_DOG:
             picks.append((opp, 2, f"Fading {team}: won last game ({last['date']}, vs. {last['opp']}) as a {last['spread']:g}-point "
                                   f"underdog ({UPSET_DOG}+) -- teams coming off an upset that big were faded 60.0% of the time ATS "
