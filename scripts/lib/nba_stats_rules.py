@@ -14,10 +14,10 @@ RULE_NAMES = {
     16: "Back a home team on a back-to-back after losing to a team that shot 50%+ from three",
     17: "Fade a home team after a win where it allowed 130+ (any rest)",
 }
-# Backtest rate, then the record replayed on four seasons none of the rules
-# were found on: 2018-19, 2019-20, 2023-24 and 2024-25.
+# Backtest rate, then the record replayed on six seasons none of the rules
+# were found on: 2016-17 through 2019-20, 2023-24 and 2024-25.
 RULE_BACKTEST = {
-    2: "63.6% ATS, n=77; unseen seasons: 65-43", 9: "68.1% ATS, n=91; unseen seasons: 44-26",
-    14: "62.3% ATS, n=122; unseen seasons: 77-48", 16: "68.5% ATS, n=54; unseen seasons: 28-13",
-    17: "65.5% ATS, n=58; unseen seasons: 35-22",
+    2: "63.6% ATS, n=77; 6 unseen seasons: 95-62", 9: "68.1% ATS, n=91; 6 unseen seasons: 62-49",
+    14: "62.3% ATS, n=122; 6 unseen seasons: 91-67", 16: "68.5% ATS, n=54; 6 unseen seasons: 37-24",
+    17: "65.5% ATS, n=58; 6 unseen seasons: 39-24",
 }

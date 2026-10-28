@@ -409,7 +409,7 @@
         {
           "rule": 14,
           "name": "Fade a team on a back-to-back vs. a weaker team after all 5 starters scored 10+ in a win",
-          "backtest": "62.3% ATS, n=122; unseen seasons: 77-48",
+          "backtest": "62.3% ATS, n=122; 6 unseen seasons: 91-67",
           "detail": "Fading Memphis Grizzlies: all 5 starters scored 10+ in last game's win (Cedric Coward 17, Cameron Boozer 14, Jaylen Wells 16, Isaiah Stewart 13, Ty Jerome 31), now on a back-to-back vs. a worse-record opponent -- teams in this spot were faded 62.3% of the time ATS (n=122)."
         }
       ],
@@ -472,7 +472,7 @@
         {
           "rule": 17,
           "name": "Fade a home team after a win where it allowed 130+ (any rest)",
-          "backtest": "65.5% ATS, n=58; unseen seasons: 35-22",
+          "backtest": "65.5% ATS, n=58; 6 unseen seasons: 39-24",
           "detail": "Fading Denver Nuggets: won last game but allowed 135 points (130+), now at home -- teams in this spot were faded 65.5% of the time ATS (n=58)."
         }
       ],
