@@ -122,7 +122,9 @@ def main():
             if current is not None:
                 if normalize(current, sport) == doc:
                     continue
-                if current.get("scored") and not doc.get("scored"):
+                # A slate NBA Stats built from ESPN (autoSlate) always yields
+                # to the routine's own, even after grading; it's re-graded.
+                if current.get("scored") and not doc.get("scored") and not current.get("autoSlate"):
                     continue
             out = os.path.join(store.REPO_ROOT, "data", sport, f"{date_str}.json")
             os.makedirs(os.path.dirname(out), exist_ok=True)

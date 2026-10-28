@@ -28,8 +28,10 @@ fired, with its reason) and "statsCheck" (the same reasons as one string)
 when rules fire and agree on a side; if they point at opposite sides, the
 game gets no pick. Most days no game qualifies.
 
-Needs data/nba/<date>.json to already exist for the target date (the live
-Routine's own slate). Per-player points and team turnovers/assists/steals/
+When data/nba/<date>.json doesn't exist yet (the live Routine writes it
+later in the day), builds a bare slate from ESPN -- teams, tip times, lines
+-- marked autoSlate, so NBA Stats never waits on the Routine; the Routine's
+slate replaces it when it syncs in, keeping the NBA Stats fields. Per-player points and team turnovers/assists/steals/
 free throws/rebounds/starters/player assists/threes for completed games are cached in data/raw/nba_player_points.json
 so each run only fetches games it hasn't seen.
 
@@ -39,12 +41,13 @@ import csv
 import json
 import os
 import sys
-from datetime import date
+from datetime import date, datetime, timezone
+from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
-from lib.dates import today_et_str  # noqa: E402
+from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
@@ -442,11 +445,82 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
     return picks[0][0], rules
 
 
+def _num(v):
+    try:
+        return float(str(v).replace("+", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def espn_lines(session, event_id):
+    """Current spread (home side), spread odds and moneylines from ESPN's
+    pickcenter, or {} when the game has no line posted yet."""
+    try:
+        d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event={event_id}",
+                        timeout=20).json()
+    except Exception:
+        return {}
+    pc = (d.get("pickcenter") or [{}])[0]
+    home, away = pc.get("homeTeamOdds") or {}, pc.get("awayTeamOdds") or {}
+    close = ((pc.get("pointSpread") or {}).get("home") or {}).get("close") or {}
+    spread = _num(close.get("line"))
+    if spread is None:
+        spread = _num(pc.get("spread"))
+    out = {}
+    if spread is not None:
+        out.update(homeSpread=spread, awaySpread=-spread)
+    for key, side in (("homeSpreadOdds", home), ("awaySpreadOdds", away)):
+        if _num(side.get("spreadOdds")) is not None:
+            out[key] = _num(side.get("spreadOdds"))
+    for key, side in (("homeMoneyline", home), ("awayMoneyline", away)):
+        if _num(side.get("moneyLine")) is not None:
+            out[key] = _num(side.get("moneyLine"))
+    return out
+
+
+def build_espn_slate(session, date_str):
+    """A bare NBA slate (teams, tip time, lines) straight from ESPN, for days
+    the Claude routine hasn't written one yet, so NBA Stats never waits on it.
+    Marked autoSlate: the routine's own slate replaces it when it syncs in
+    (sync_ledger.py keeps the NBA Stats fields). None if ESPN lists no games."""
+    try:
+        events = espn.fetch_scoreboard(session, "basketball", "nba", date_str.replace("-", ""))
+    except Exception:
+        return None
+    games = []
+    for ev in events:
+        if et_date_of_iso(ev["date"]) != date_str:
+            continue
+        comp = ev["competitions"][0]
+        teams = {c["homeAway"]: c["team"]["displayName"] for c in comp["competitors"]}
+        tip = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(ZoneInfo("America/New_York"))
+        games.append({"espnId": ev["id"], "away": teams.get("away"), "home": teams.get("home"),
+                      "time": tip.strftime("%I:%M %p").lstrip("0") + " ET", **espn_lines(session, ev["id"])})
+    if not games:
+        return None
+    return {"date": date_str, "weekday": weekday_et(date_str), "sport": "nba", "scored": False, "autoSlate": True,
+            "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "games": games}
+
+
 def run_for_date(session, points, by_team, q_cache, date_str):
     doc = store.read_doc("nba", date_str)
     if doc is None:
-        print(f"{date_str}: no NBA slate yet, nothing to patch.")
-        return
+        doc = build_espn_slate(session, date_str)
+        if doc is None:
+            print(f"{date_str}: no NBA games on ESPN, nothing to patch.")
+            return
+        store.write_doc("nba", date_str, doc)
+        print(f"{date_str}: no slate from the routine yet -- built one from ESPN ({len(doc['games'])} games).")
+    elif doc.get("autoSlate") and not doc.get("scored"):
+        # Fill in lines ESPN hadn't posted yet when the slate was built.
+        filled = 0
+        for g in doc.get("games", []):
+            if g.get("homeSpread") is None and g.get("espnId"):
+                lines = espn_lines(session, g["espnId"])
+                g.update(lines)
+                filled += bool(lines)
+        if filled:
+            store.write_doc("nba", date_str, doc)
     changed = 0
     for g in doc.get("games", []):
         away, home = g.get("away"), g.get("home")
