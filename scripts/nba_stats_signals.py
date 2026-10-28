@@ -10,15 +10,15 @@ where it backtested at 62%+ ATS. Names, rest days and rates are in
 scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
 
   Fades (pick the flagged team's opponent): 2 OT win, 9 late comeback,
-  13 top scorer's 1.5x+ night in a loss, now vs. a worse-record team,
   14 all 5 starters scored 10+ in a win, now on a back-to-back vs. a
   worse-record team, 17 won while allowing 130+, now at home.
-  Backs (pick the flagged team): 5 sloppy turnover loss, 16 lost to an
-  opponent that shot 50%+ from three, now home on a back-to-back.
-  Retired: rule 4 (never cleared 62%), and rules 1, 3, 6, 7, 8, 10, 11, 12
-  and 15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
+  Backs (pick the flagged team): 16 lost to an opponent that shot 50%+ from
+  three, now home on a back-to-back.
+  Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
+  15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
-  lines).
+  lines); and rules 5 and 13, which then went under 60% on 2018-19 and
+  2019-20 too.
 
 "Better/worse record" compares each team's season-to-date win% entering the
 game. A game gets "statsFavors" (team name), "statsRules" (every rule that
@@ -50,20 +50,16 @@ from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 POINTS_CACHE = os.path.join(REPO_ROOT, "data", "raw", "nba_player_points.json")
-SLOPPY_LOSS_TO = 22
 # Rest days (for the team the rule is about) on which each rule backtested
 # at 62%+ ATS: "b2b" = played yesterday, "1" = one day off, "2+" = two or more.
 ALLOWED_REST = {
-    2: {"b2b", "1", "2+"}, 5: {"b2b"}, 9: {"b2b"}, 13: {"b2b", "2+"}, 14: {"b2b"},
-    16: {"b2b"}, 17: {"b2b", "1", "2+"},
+    2: {"b2b", "1", "2+"}, 9: {"b2b"}, 14: {"b2b"}, 16: {"b2b"}, 17: {"b2b", "1", "2+"},
 }
 LATE_COMEBACK = 5
-HOT_STAR = 1.5        # rule 13: top scorer's points last game, as a multiple of his season average
 STARTER_PTS = 10      # rule 14: points every starter scored
 HOT_OPP_THREES = 0.5  # rule 16: opponent's 3-point % last game (on HOT_OPP_3PA+ attempts)
 HOT_OPP_3PA = 25
 SHOOTOUT_ALLOWED = 130  # rule 17: points allowed in last game's win
-STAR_MIN_GAMES = 8    # games he must have played for the team to count as its top scorer
 
 RULES = {
     "ot_win": "won last game in OT, now facing a better-record opponent -- "
@@ -140,17 +136,6 @@ def trailed_after_three(q_entry, team, opp):
     return sum(o_q[:3]) - sum(t_q[:3])
 
 
-
-def top_scorers(points, games, team, n=1):
-    """[(player id, name, season ppg), ...] for the team's top `n` scorers by
-    average across `games` (their games for this team only, STAR_MIN_GAMES+),
-    best first."""
-    seen = {}
-    for g in games:
-        for pid, (pts, name) in (points.get(g["event_id"], team) or {}).items():
-            seen.setdefault(pid, [name, []])[1].append(pts)
-    ranked = sorted(((sum(p) / len(p), pid) for pid, (_, p) in seen.items() if len(p) >= STAR_MIN_GAMES), reverse=True)
-    return [(pid, seen[pid][0], avg) for avg, pid in ranked[:n]]
 
 
 class BoxCache:
@@ -305,13 +290,6 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
                                    f"through 3 quarters ({LATE_COMEBACK}+), now on the second night of a back-to-back "
                                    f"-- teams in this spot were faded 68.1% of the time ATS (n=91)."))
 
-        if is_home and opp_weaker and not last["won"]:
-            to = points.turnovers(last["event_id"], team)
-            if to is not None and to >= SLOPPY_LOSS_TO:
-                picks.append((team, 5, f"Backing {team}: lost last game with {to} turnovers ({SLOPPY_LOSS_TO}+), "
-                                    f"now home vs. a worse-record opponent -- teams in this spot covered "
-                                    f"77.8% ATS on a back-to-back (n=9, small sample)."))
-
         if last["won"] and is_home and last["opp_score"] >= SHOOTOUT_ALLOWED:
             picks.append((opp, 17, f"Fading {team}: won last game but allowed {last['opp_score']:g} points ({SHOOTOUT_ALLOWED}+), "
                                 f"now at home -- teams in this spot were faded 65.5% of the time ATS (n=58)."))
@@ -330,14 +308,6 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
                 picks.append((opp, 14, f"Fading {team}: all 5 starters scored {STARTER_PTS}+ in last game's win ({who}), "
                                     f"now on a back-to-back vs. a worse-record opponent -- teams in this spot were faded "
                                     f"62.3% of the time ATS (n=122)."))
-
-        if not last["won"] and opp_weaker:
-            top = top_scorers(points, prior[:-1], team, 1)
-            star_line = (points.get(last["event_id"], team) or {}).get(top[0][0]) if top else None
-            if star_line and star_line[0] >= HOT_STAR * top[0][2]:
-                picks.append((opp, 13, f"Fading {team}: top scorer {top[0][1]} had {star_line[0]} points in last game's loss "
-                                    f"({HOT_STAR:g}x+ his {top[0][2]:.1f} average), now vs. a worse-record opponent -- teams in this "
-                                    f"spot were faded 75.8% of the time ATS on a back-to-back or 2+ days of rest (n=33, small sample)."))
 
         # Keep only the rules whose backtest cleared 62% for this team's rest
         # (days off since its last game).
