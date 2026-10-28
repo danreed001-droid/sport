@@ -30,9 +30,6 @@ ESPN has archived lines for: 2020-21 to 2022-23 and 2025-26 on):
   8. Won its last game by under 10 with 6+ more steals than its opponent,
      unless it's now home vs. a better-record team -> faded 61.0% of the
      time ATS (n=141; any win by 10+ is a coin flip, 49.9%)
-  9. Made 10+ fewer free throws than its opponent last game, now on the
-     road vs. a worse-record team -> faded 60.5% of the time ATS (n=200;
-     the same road spot with even free throws is 48.8%)
 
 "Better/worse record" compares each team's season-to-date win% entering the
 game. A game gets "statsFavors" (team name) and "statsCheck" (the reasoning,
@@ -67,7 +64,6 @@ SLOPPY_LOSS_TO = 22
 ASSIST_GAP = 18
 STEAL_GAP = 6
 CLOSE_WIN = 10
-FT_GAP = 10
 
 RULES = {
     "streak": "5+ game win streak, home, vs. a worse-record opponent -- "
@@ -312,13 +308,6 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
             if theirs - mine >= ASSIST_GAP and not is_home:
                 picks.append((team, f"Backing {team}: was out-assisted by {theirs - mine} last game ({ASSIST_GAP}+), "
                                     f"now on the road -- teams in this spot covered 69.2% ATS (n=26, small sample)."))
-
-        if not is_home and opp_weaker:
-            mf, tf = points.free_throws_made(last["event_id"], team), points.free_throws_made(last["event_id"], last["opp"])
-            if mf is not None and tf is not None and tf - mf >= FT_GAP:
-                picks.append((opp, f"Fading {team}: made {tf - mf} fewer free throws than its opponent last game "
-                                   f"({FT_GAP}+), now on the road vs. a worse-record team -- teams in this spot "
-                                   f"were faded 60.5% of the time ATS (n=200)."))
 
         margin = last["team_score"] - last["opp_score"]
         if last["won"] and margin < CLOSE_WIN and not (is_home and opp_stronger):
