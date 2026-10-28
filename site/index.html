@@ -143,6 +143,8 @@ details.tv table{min-width:0;}
 .logtbl{min-width:760px;font-size:12.5px;}
 .logtbl th,.logtbl td{padding:7px 8px;}
 .logtbl td .tier{display:block;font-size:11px;}
+.logtbl td .rblurb{display:block;font-size:11px;line-height:1.35;color:var(--muted);white-space:normal;max-width:280px;margin-top:3px;}
+.logtbl td .rblurb b{color:var(--stats-ink);font-weight:600;}
 .logtbl.dayview .c-date{display:none;}
 .logtbl td.gm{min-width:180px;}
 .logtbl td.gm .sc{display:block;font-size:11px;}
@@ -685,7 +687,7 @@ footer b{color:var(--ink);}
         + '<td>'+esc((DATA.sportLabels[p.s]||p.s).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB'))+'</td>'
         + '<td><span class="who"><i style="background:'+w.c+'"></i>'+esc(w.short)+'</span></td>'
         + '<td class="gm">'+esc(p.g)+(p.sc ? '<span class="muted sc">Final '+esc(p.sc)+'</span>' : '')+'</td>'
-        + '<td><b>'+esc(p.k)+'</b>'+(p.t ? '<span class="muted tier">'+esc(TIER[p.t]||p.t)+'</span>' : '')+'</td>'
+        + '<td><b>'+esc(p.k)+'</b>'+(p.rr ? p.rr.map(function(r){ var sr = (DATA.statsRules||[]).filter(function(x){ return x.rule===r.n; })[0], sn = sr ? sr.w+sr.l+sr.p : 0; return '<span class="rblurb"><b>Rule '+esc(r.n)+'</b> · '+esc(r.name)+' · past: '+esc(String(r.bt).replace(/, n=(\d+)/, ' over $1 games'))+(sn ? ' · this season '+sr.w+'-'+sr.l+(sr.p?'-'+sr.p:'') : '')+'</span>'; }).join('') : (p.t ? '<span class="muted tier">'+esc(TIER[p.t]||p.t)+'</span>' : ''))+'</td>'
         + '<td class="mono">'+(num(p.sp) ? sgn(p.sp) : '—')+'</td>'
         + '<td>'+ats+'</td>'
         + '<td class="mono '+(num(p.ap)?cls(p.ap):'flat')+'">'+(num(p.ap) ? money(p.ap) : '—')+'</td>'

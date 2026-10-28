@@ -119,10 +119,15 @@ def build():
                     if who == "stats" and g.get("statsRules"):
                         nums = [str(r.get("rule")) for r in g["statsRules"]]
                         tier = ("Rules " if len(nums) > 1 else "Rule ") + " + ".join(nums)
+                    play_rules = [{"n": r.get("rule"), "name": RULE_NAMES.get(r.get("rule"), r.get("name", "")),
+                                   "bt": RULE_BACKTEST.get(r.get("rule"), r.get("backtest", ""))}
+                                  for r in (g.get("statsRules") or [])] if who == "stats" else None
                     ln = line_for(g, side)
                     play = {"d": date_str, "s": sport, "w": who, "t": tier,
                             "g": f"{g.get('away')} @ {g.get('home')}", "k": team_for(g, side),
                             "sp": ln["spread"], "mo": ln["moneyline"]}
+                    if play_rules:
+                        play["rr"] = play_rules
                     if who == "mine":
                         # Which models were on your side ("ag") or the other
                         # side ("op") of this game, for the agreement table.
