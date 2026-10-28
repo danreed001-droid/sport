@@ -30,6 +30,9 @@ ESPN has archived lines for: 2020-21 to 2022-23 and 2025-26 on):
   8. Won its last game by under 10 with 6+ more steals than its opponent,
      unless it's now home vs. a better-record team -> faded 61.0% of the
      time ATS (n=141; any win by 10+ is a coin flip, 49.9%)
+  9. Made 10+ fewer free throws than its opponent last game, now on the
+     road vs. a worse-record team -> faded 60.5% of the time ATS (n=200;
+     the same road spot with even free throws is 48.8%)
 
 "Better/worse record" compares each team's season-to-date win% entering the
 game. A game gets "statsFavors" (team name) and "statsCheck" (the reasoning,
@@ -64,6 +67,7 @@ SLOPPY_LOSS_TO = 22
 ASSIST_GAP = 18
 STEAL_GAP = 6
 CLOSE_WIN = 10
+FT_GAP = 10
 
 RULES = {
     "streak": "5+ game win streak, home, vs. a worse-record opponent -- "
@@ -170,7 +174,7 @@ class BoxCache:
 
     def _entry(self, event_id):
         e = self.data.get(event_id)
-        if not isinstance(e, dict) or "type" not in e:  # missing, failed, or an older format
+        if not isinstance(e, dict) or "ftm" not in e:  # missing, failed, or an older format
             e = self.data[event_id] = self._fetch(event_id)
             self.dirty = True
         return e or {}
@@ -187,6 +191,9 @@ class BoxCache:
     def steals(self, event_id, team):
         return self._entry(event_id).get("stl", {}).get(team)
 
+    def free_throws_made(self, event_id, team):
+        return self._entry(event_id).get("ftm", {}).get(team)
+
     def is_regular_season(self, event_id):
         return self._entry(event_id).get("type") == 2
 
@@ -199,7 +206,7 @@ class BoxCache:
         except Exception:
             return None
         box = d.get("boxscore", {})
-        pts_by_team, to_by_team, ast_by_team, stl_by_team = {}, {}, {}, {}
+        pts_by_team, to_by_team, ast_by_team, stl_by_team, ftm_by_team = {}, {}, {}, {}, {}
         for t in box.get("players", []):
             if not t.get("statistics"):
                 continue
@@ -226,9 +233,13 @@ class BoxCache:
                     out[name] = int(stats[key])
                 except (KeyError, TypeError, ValueError):
                     pass
+            try:
+                ftm_by_team[name] = int(str(stats["freeThrowsMade-freeThrowsAttempted"]).split("-")[0])
+            except (KeyError, TypeError, ValueError):
+                pass
         if not pts_by_team:
             return None
-        return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team, "stl": stl_by_team,
+        return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team, "stl": stl_by_team, "ftm": ftm_by_team,
                 "type": d.get("header", {}).get("season", {}).get("type")}
 
     def save(self):
@@ -301,6 +312,13 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
             if theirs - mine >= ASSIST_GAP and not is_home:
                 picks.append((team, f"Backing {team}: was out-assisted by {theirs - mine} last game ({ASSIST_GAP}+), "
                                     f"now on the road -- teams in this spot covered 69.2% ATS (n=26, small sample)."))
+
+        if not is_home and opp_weaker:
+            mf, tf = points.free_throws_made(last["event_id"], team), points.free_throws_made(last["event_id"], last["opp"])
+            if mf is not None and tf is not None and tf - mf >= FT_GAP:
+                picks.append((opp, f"Fading {team}: made {tf - mf} fewer free throws than its opponent last game "
+                                   f"({FT_GAP}+), now on the road vs. a worse-record team -- teams in this spot "
+                                   f"were faded 60.5% of the time ATS (n=200)."))
 
         margin = last["team_score"] - last["opp_score"]
         if last["won"] and margin < CLOSE_WIN and not (is_home and opp_stronger):
