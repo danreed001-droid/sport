@@ -19,11 +19,10 @@ RULE_NAMES = {
     11: "Back a home team vs. a stronger team after its top scorer's dud in a loss (any rest)",
     12: "Back a home team vs. a weaker team after its top 3 scorers all went under their averages in a loss (any rest)",
     13: "Fade a team vs. a weaker team after its top scorer's 1.5x+ night in a loss (back-to-back or 2+ days)",
-    14: "Fade a team on a back-to-back vs. a weaker team after all 5 starters scored 10+ in a win",
 }
 RULE_BACKTEST = {
     1: "65.3% ATS, n=49", 2: "63.6% ATS, n=77", 3: "79.2% ATS, n=24", 5: "77.8% ATS, n=9",
     6: "79.2% ATS, n=24", 7: "72.7% ATS, n=22", 8: "64.5% ATS, n=62", 9: "68.1% ATS, n=91",
     10: "72.4% ATS, n=58", 11: "68.6% ATS, n=70", 12: "68.1% ATS, n=72",
-    13: "75.8% ATS, n=33", 14: "62.3% ATS, n=122",
+    13: "75.8% ATS, n=33",
 }
