@@ -1,0 +1,1355 @@
+game_id,date,away,home,away_score,home_score,provider,spread_open,spread_close,spread_odds_open,spread_odds_close,total_open,total_close,home_ml_open,home_ml_close,away_ml_open,away_ml_close
+401809243,2025-10-21,Houston Rockets,Oklahoma City Thunder,124,125,,,,,,,,,,,
+401809234,2025-10-22,Cleveland Cavaliers,New York Knicks,111,119,,,,,,,,,,,
+401809244,2025-10-22,Golden State Warriors,Los Angeles Lakers,119,109,,,,,,,,,,,
+401809933,2025-10-22,Brooklyn Nets,Charlotte Hornets,117,136,,,,,,,,,,,
+401809934,2025-10-22,Miami Heat,Orlando Magic,121,125,,,,,,,,,,,
+401809935,2025-10-22,Toronto Raptors,Atlanta Hawks,138,118,,,,,,,,,,,
+401809936,2025-10-22,Philadelphia 76ers,Boston Celtics,117,116,,,,,,,,,,,
+401809235,2025-10-23,San Antonio Spurs,Dallas Mavericks,125,92,,,,,,,,,,,
+401809236,2025-10-23,Oklahoma City Thunder,Indiana Pacers,141,135,,,,,,,,,,,
+401809937,2025-10-23,Detroit Pistons,Chicago Bulls,111,115,,,,,,,,,,,
+401809938,2025-10-23,New Orleans Pelicans,Memphis Grizzlies,122,128,,,,,,,,,,,
+401809939,2025-10-23,Washington Wizards,Milwaukee Bucks,120,133,,,,,,,,,,,
+401809940,2025-10-23,LA Clippers,Utah Jazz,108,129,,,,,,,,,,,
+401809941,2025-10-23,Sacramento Kings,Phoenix Suns,116,120,,,,,,,,,,,
+401809942,2025-10-23,Minnesota Timberwolves,Portland Trail Blazers,118,114,,,,,,,,,,,
+401809237,2025-10-24,Denver Nuggets,Golden State Warriors,131,137,,,,,,,,,,,
+401809943,2025-10-24,Atlanta Hawks,Orlando Magic,111,107,,,,,,,,,,,
+401809944,2025-10-24,Cleveland Cavaliers,Brooklyn Nets,131,124,,,,,,,,,,,
+401809945,2025-10-24,Boston Celtics,New York Knicks,95,105,,,,,,,,,,,
+401809946,2025-10-24,Milwaukee Bucks,Toronto Raptors,122,116,,,,,,,,,,,
+401809947,2025-10-25,Detroit Pistons,Houston Rockets,115,111,,,,,,,,,,,
+401809948,2025-10-25,Miami Heat,Memphis Grizzlies,146,114,,,,,,,,,,,
+401809949,2025-10-25,San Antonio Spurs,New Orleans Pelicans,120,116,,,,,,,,,,,
+401809950,2025-10-25,Washington Wizards,Dallas Mavericks,117,107,,,,,,,,,,,
+401809951,2025-10-25,Minnesota Timberwolves,Los Angeles Lakers,110,128,,,,,,,,,,,
+401809952,2025-10-25,Golden State Warriors,Portland Trail Blazers,119,139,,,,,,,,,,,
+401809953,2025-10-25,Utah Jazz,Sacramento Kings,104,105,,,,,,,,,,,
+401809954,2025-10-25,Phoenix Suns,LA Clippers,102,129,,,,,,,,,,,
+401809955,2025-10-25,Chicago Bulls,Orlando Magic,110,98,,,,,,,,,,,
+401809956,2025-10-25,Oklahoma City Thunder,Atlanta Hawks,117,100,,,,,,,,,,,
+401809957,2025-10-25,Charlotte Hornets,Philadelphia 76ers,121,125,,,,,,,,,,,
+401809958,2025-10-26,Indiana Pacers,Memphis Grizzlies,103,128,,,,,,,,,,,
+401809959,2025-10-26,Phoenix Suns,Denver Nuggets,111,133,,,,,,,,,,,
+401809960,2025-10-26,Brooklyn Nets,San Antonio Spurs,107,118,,,,,,,,,,,
+401809961,2025-10-26,Boston Celtics,Detroit Pistons,113,119,,,,,,,,,,,
+401809962,2025-10-26,Milwaukee Bucks,Cleveland Cavaliers,113,118,,,,,,,,,,,
+401809963,2025-10-26,New York Knicks,Miami Heat,107,115,,,,,,,,,,,
+401809964,2025-10-26,Charlotte Hornets,Washington Wizards,139,113,,,,,,,,,,,
+401809965,2025-10-26,Indiana Pacers,Minnesota Timberwolves,110,114,,,,,,,,,,,
+401809966,2025-10-26,Toronto Raptors,Dallas Mavericks,129,139,,,,,,,,,,,
+401809245,2025-10-27,Cleveland Cavaliers,Detroit Pistons,116,95,,,,,,,,,,,
+401809967,2025-10-27,Portland Trail Blazers,LA Clippers,107,114,,,,,,,,,,,
+401809968,2025-10-27,Los Angeles Lakers,Sacramento Kings,127,120,,,,,,,,,,,
+401809969,2025-10-27,Orlando Magic,Philadelphia 76ers,124,136,,,,,,,,,,,
+401809246,2025-10-28,Denver Nuggets,Minnesota Timberwolves,127,114,,,,,,,,,,,
+401809970,2025-10-28,Atlanta Hawks,Chicago Bulls,123,128,,,,,,,,,,,
+401809971,2025-10-28,Brooklyn Nets,Houston Rockets,109,137,,,,,,,,,,,
+401809972,2025-10-28,Boston Celtics,New Orleans Pelicans,122,90,,,,,,,,,,,
+401809973,2025-10-28,Toronto Raptors,San Antonio Spurs,103,121,,,,,,,,,,,
+401809974,2025-10-28,Oklahoma City Thunder,Dallas Mavericks,101,94,,,,,,,,,,,
+401809975,2025-10-28,Phoenix Suns,Utah Jazz,134,138,,,,,,,,,,,
+401809976,2025-10-28,Memphis Grizzlies,Golden State Warriors,118,131,,,,,,,,,,,
+401809977,2025-10-28,Portland Trail Blazers,Los Angeles Lakers,122,108,,,,,,,,,,,
+401809978,2025-10-28,Philadelphia 76ers,Washington Wizards,139,134,,,,,,,,,,,
+401809979,2025-10-28,Charlotte Hornets,Miami Heat,117,144,,,,,,,,,,,
+401809980,2025-10-29,New York Knicks,Milwaukee Bucks,111,121,,,,,,,,,,,
+401809981,2025-10-29,Sacramento Kings,Oklahoma City Thunder,101,107,,,,,,,,,,,
+401809982,2025-10-29,LA Clippers,Golden State Warriors,79,98,,,,,,,,,,,
+401809983,2025-10-29,Cleveland Cavaliers,Boston Celtics,105,125,,,,,,,,,,,
+401809984,2025-10-29,Orlando Magic,Detroit Pistons,116,135,,,,,,,,,,,
+401809985,2025-10-29,Atlanta Hawks,Brooklyn Nets,117,112,,,,,,,,,,,
+401809986,2025-10-29,Houston Rockets,Toronto Raptors,139,121,,,,,,,,,,,
+401809987,2025-10-30,Sacramento Kings,Chicago Bulls,113,126,,,,,,,,,,,
+401809988,2025-10-30,Indiana Pacers,Dallas Mavericks,105,107,,,,,,,,,,,
+401809989,2025-10-30,New Orleans Pelicans,Denver Nuggets,88,122,,,,,,,,,,,
+401809990,2025-10-30,Portland Trail Blazers,Utah Jazz,136,134,,,,,,,,,,,
+401809991,2025-10-30,Los Angeles Lakers,Minnesota Timberwolves,116,115,,,,,,,,,,,
+401809992,2025-10-30,Memphis Grizzlies,Phoenix Suns,114,113,,,,,,,,,,,
+401809993,2025-10-30,Orlando Magic,Charlotte Hornets,123,107,,,,,,,,,,,
+401809502,2025-10-31,Atlanta Hawks,Indiana Pacers,128,108,,,,,,,,,,,
+401809503,2025-10-31,Boston Celtics,Philadelphia 76ers,109,108,,,,,,,,,,,
+401809504,2025-10-31,Toronto Raptors,Cleveland Cavaliers,112,101,,,,,,,,,,,
+401809994,2025-10-31,Golden State Warriors,Milwaukee Bucks,110,120,,,,,,,,,,,
+401809995,2025-10-31,Washington Wizards,Oklahoma City Thunder,108,127,,,,,,,,,,,
+401809996,2025-10-31,Miami Heat,San Antonio Spurs,101,107,,,,,,,,,,,
+401809505,2025-11-01,New York Knicks,Chicago Bulls,125,135,,,,,,,,,,,
+401809506,2025-11-01,Los Angeles Lakers,Memphis Grizzlies,117,112,,,,,,,,,,,
+401809507,2025-11-01,Utah Jazz,Phoenix Suns,96,118,,,,,,,,,,,
+401809508,2025-11-01,Denver Nuggets,Portland Trail Blazers,107,109,,,,,,,,,,,
+401809509,2025-11-01,New Orleans Pelicans,LA Clippers,124,126,,,,,,,,,,,
+401809997,2025-11-01,Sacramento Kings,Milwaukee Bucks,135,133,,,,,,,,,,,
+401809998,2025-11-01,Minnesota Timberwolves,Charlotte Hornets,122,105,,,,,,,,,,,
+401809999,2025-11-01,Golden State Warriors,Indiana Pacers,109,114,,,,,,,,,,,
+401810000,2025-11-01,Orlando Magic,Washington Wizards,125,94,,,,,,,,,,,
+401810001,2025-11-02,Houston Rockets,Boston Celtics,128,101,,,,,,,,,,,
+401810002,2025-11-02,Dallas Mavericks,Detroit Pistons,110,122,,,,,,,,,,,
+401810003,2025-11-02,New Orleans Pelicans,Oklahoma City Thunder,106,137,,,,,,,,,,,
+401810004,2025-11-02,Philadelphia 76ers,Brooklyn Nets,129,105,,,,,,,,,,,
+401810005,2025-11-02,Utah Jazz,Charlotte Hornets,103,126,,,,,,,,,,,
+401810006,2025-11-02,Atlanta Hawks,Cleveland Cavaliers,109,117,,,,,,,,,,,
+401810007,2025-11-02,Memphis Grizzlies,Toronto Raptors,104,117,,,,,,,,,,,
+401810008,2025-11-03,Chicago Bulls,New York Knicks,116,128,,,,,,,,,,,
+401810009,2025-11-03,San Antonio Spurs,Phoenix Suns,118,130,,,,,,,,,,,
+401810010,2025-11-03,Miami Heat,Los Angeles Lakers,120,130,,,,,,,,,,,
+401810011,2025-11-04,Minnesota Timberwolves,Brooklyn Nets,125,109,,,,,,,,,,,
+401810012,2025-11-04,Milwaukee Bucks,Indiana Pacers,117,115,,,,,,,,,,,
+401810013,2025-11-04,Utah Jazz,Boston Celtics,105,103,,,,,,,,,,,
+401810014,2025-11-04,Washington Wizards,New York Knicks,102,119,,,,,,,,,,,
+401810015,2025-11-04,Dallas Mavericks,Houston Rockets,102,110,,,,,,,,,,,
+401810016,2025-11-04,Detroit Pistons,Memphis Grizzlies,114,106,,,,,,,,,,,
+401810017,2025-11-04,Sacramento Kings,Denver Nuggets,124,130,,,,,,,,,,,
+401810018,2025-11-04,Los Angeles Lakers,Portland Trail Blazers,123,115,,,,,,,,,,,
+401810019,2025-11-04,Miami Heat,LA Clippers,120,119,,,,,,,,,,,
+401810020,2025-11-05,Milwaukee Bucks,Toronto Raptors,100,128,,,,,,,,,,,
+401810021,2025-11-05,Orlando Magic,Atlanta Hawks,112,127,,,,,,,,,,,
+401810022,2025-11-05,Philadelphia 76ers,Chicago Bulls,111,113,,,,,,,,,,,
+401810023,2025-11-05,Charlotte Hornets,New Orleans Pelicans,112,116,,,,,,,,,,,
+401810024,2025-11-05,Phoenix Suns,Golden State Warriors,107,118,,,,,,,,,,,
+401810025,2025-11-05,Oklahoma City Thunder,LA Clippers,126,107,,,,,,,,,,,
+401810026,2025-11-06,Philadelphia 76ers,Cleveland Cavaliers,121,132,,,,,,,,,,,
+401810027,2025-11-06,Utah Jazz,Detroit Pistons,103,114,,,,,,,,,,,
+401810028,2025-11-06,Brooklyn Nets,Indiana Pacers,112,103,,,,,,,,,,,
+401810029,2025-11-06,Washington Wizards,Boston Celtics,107,136,,,,,,,,,,,
+401810030,2025-11-06,Minnesota Timberwolves,New York Knicks,114,137,,,,,,,,,,,
+401810031,2025-11-06,Houston Rockets,Memphis Grizzlies,124,109,,,,,,,,,,,
+401810032,2025-11-06,New Orleans Pelicans,Dallas Mavericks,101,99,,,,,,,,,,,
+401810033,2025-11-06,Miami Heat,Denver Nuggets,112,122,,,,,,,,,,,
+401810034,2025-11-06,San Antonio Spurs,Los Angeles Lakers,116,118,,,,,,,,,,,
+401810035,2025-11-06,Oklahoma City Thunder,Portland Trail Blazers,119,121,,,,,,,,,,,
+401810036,2025-11-06,Golden State Warriors,Sacramento Kings,116,121,,,,,,,,,,,
+401810037,2025-11-07,LA Clippers,Phoenix Suns,102,115,,,,,,,,,,,
+401809510,2025-11-08,Boston Celtics,Orlando Magic,110,123,,,,,,,,,,,
+401809511,2025-11-08,Cleveland Cavaliers,Washington Wizards,148,115,,,,,,,,,,,
+401809512,2025-11-08,Toronto Raptors,Atlanta Hawks,109,97,,,,,,,,,,,
+401809773,2025-11-08,Detroit Pistons,Brooklyn Nets,125,107,,,,,,,,,,,
+401809774,2025-11-08,Houston Rockets,San Antonio Spurs,110,121,,,,,,,,,,,
+401809775,2025-11-08,Charlotte Hornets,Miami Heat,108,126,,,,,,,,,,,
+401809776,2025-11-08,Dallas Mavericks,Memphis Grizzlies,104,118,,,,,,,,,,,
+401809777,2025-11-08,Chicago Bulls,Milwaukee Bucks,110,126,,,,,,,,,,,
+401809778,2025-11-08,Utah Jazz,Minnesota Timberwolves,97,137,,,,,,,,,,,
+401809779,2025-11-08,Golden State Warriors,Denver Nuggets,104,129,,,,,,,,,,,
+401809780,2025-11-08,Oklahoma City Thunder,Sacramento Kings,132,101,,,,,,,,,,,
+401810038,2025-11-09,Dallas Mavericks,Washington Wizards,111,105,,,,,,,,,,,
+401810039,2025-11-09,Toronto Raptors,Philadelphia 76ers,120,130,,,,,,,,,,,
+401810040,2025-11-09,Los Angeles Lakers,Atlanta Hawks,102,122,,,,,,,,,,,
+401810041,2025-11-09,Chicago Bulls,Cleveland Cavaliers,122,128,,,,,,,,,,,
+401810042,2025-11-09,Portland Trail Blazers,Miami Heat,131,136,,,,,,,,,,,
+401810043,2025-11-09,New Orleans Pelicans,San Antonio Spurs,119,126,,,,,,,,,,,
+401810044,2025-11-09,Indiana Pacers,Denver Nuggets,100,117,,,,,,,,,,,
+401810045,2025-11-09,Phoenix Suns,LA Clippers,114,103,,,,,,,,,,,
+401810046,2025-11-09,Houston Rockets,Milwaukee Bucks,122,115,,,,,,,,,,,
+401810047,2025-11-09,Brooklyn Nets,New York Knicks,98,134,,,,,,,,,,,
+401810048,2025-11-09,Boston Celtics,Orlando Magic,111,107,,,,,,,,,,,
+401810049,2025-11-09,Oklahoma City Thunder,Memphis Grizzlies,114,100,,,,,,,,,,,
+401810050,2025-11-10,Detroit Pistons,Philadelphia 76ers,111,108,,,,,,,,,,,
+401810051,2025-11-10,Indiana Pacers,Golden State Warriors,83,114,,,,,,,,,,,
+401810052,2025-11-10,Minnesota Timberwolves,Sacramento Kings,144,117,,,,,,,,,,,
+401810053,2025-11-11,Los Angeles Lakers,Charlotte Hornets,121,111,,,,,,,,,,,
+401810054,2025-11-11,Washington Wizards,Detroit Pistons,135,137,,,,,,,,,,,
+401810055,2025-11-11,Portland Trail Blazers,Orlando Magic,112,115,,,,,,,,,,,
+401810056,2025-11-11,Cleveland Cavaliers,Miami Heat,138,140,,,,,,,,,,,
+401810057,2025-11-11,San Antonio Spurs,Chicago Bulls,121,117,,,,,,,,,,,
+401810058,2025-11-11,Milwaukee Bucks,Dallas Mavericks,116,114,,,,,,,,,,,
+401810059,2025-11-11,New Orleans Pelicans,Phoenix Suns,98,121,,,,,,,,,,,
+401810060,2025-11-11,Minnesota Timberwolves,Utah Jazz,120,113,,,,,,,,,,,
+401810061,2025-11-11,Atlanta Hawks,LA Clippers,105,102,,,,,,,,,,,
+401810062,2025-11-12,Toronto Raptors,Brooklyn Nets,119,109,,,,,,,,,,,
+401810063,2025-11-12,Memphis Grizzlies,New York Knicks,120,133,,,,,,,,,,,
+401810064,2025-11-12,Boston Celtics,Philadelphia 76ers,100,102,,,,,,,,,,,
+401810065,2025-11-12,Golden State Warriors,Oklahoma City Thunder,102,126,,,,,,,,,,,
+401810066,2025-11-12,Indiana Pacers,Utah Jazz,128,152,,,,,,,,,,,
+401810067,2025-11-12,Denver Nuggets,Sacramento Kings,122,108,,,,,,,,,,,
+401810068,2025-11-13,Milwaukee Bucks,Charlotte Hornets,100,111,,,,,,,,,,,
+401810069,2025-11-13,Chicago Bulls,Detroit Pistons,113,124,,,,,,,,,,,
+401810070,2025-11-13,Orlando Magic,New York Knicks,124,107,,,,,,,,,,,
+401810071,2025-11-13,Memphis Grizzlies,Boston Celtics,95,131,,,,,,,,,,,
+401810072,2025-11-13,Cleveland Cavaliers,Miami Heat,130,116,,,,,,,,,,,
+401810073,2025-11-13,Washington Wizards,Houston Rockets,112,135,,,,,,,,,,,
+401810074,2025-11-13,Portland Trail Blazers,New Orleans Pelicans,125,117,,,,,,,,,,,
+401810075,2025-11-13,Golden State Warriors,San Antonio Spurs,125,120,,,,,,,,,,,
+401810076,2025-11-13,Phoenix Suns,Dallas Mavericks,123,114,,,,,,,,,,,
+401810077,2025-11-13,Los Angeles Lakers,Oklahoma City Thunder,92,121,,,,,,,,,,,
+401810078,2025-11-13,Atlanta Hawks,Sacramento Kings,133,100,,,,,,,,,,,
+401810079,2025-11-13,Denver Nuggets,LA Clippers,130,116,,,,,,,,,,,
+401810080,2025-11-14,Toronto Raptors,Cleveland Cavaliers,126,113,,,,,,,,,,,
+401810081,2025-11-14,Indiana Pacers,Phoenix Suns,98,133,,,,,,,,,,,
+401810082,2025-11-14,Atlanta Hawks,Utah Jazz,132,122,,,,,,,,,,,
+401809781,2025-11-15,Miami Heat,New York Knicks,132,140,,,,,,,,,,,
+401809782,2025-11-15,Brooklyn Nets,Orlando Magic,98,105,,,,,,,,,,,
+401809783,2025-11-15,Philadelphia 76ers,Detroit Pistons,105,114,,,,,,,,,,,
+401809784,2025-11-15,Portland Trail Blazers,Houston Rockets,116,140,,,,,,,,,,,
+401809785,2025-11-15,Charlotte Hornets,Milwaukee Bucks,134,147,,,,,,,,,,,
+401809786,2025-11-15,Sacramento Kings,Minnesota Timberwolves,110,124,,,,,,,,,,,
+401809787,2025-11-15,Los Angeles Lakers,New Orleans Pelicans,118,104,,,,,,,,,,,
+401809788,2025-11-15,LA Clippers,Dallas Mavericks,133,127,,,,,,,,,,,
+401809789,2025-11-15,Golden State Warriors,San Antonio Spurs,109,108,,,,,,,,,,,
+401810083,2025-11-15,Memphis Grizzlies,Cleveland Cavaliers,100,108,,,,,,,,,,,
+401810084,2025-11-16,Oklahoma City Thunder,Charlotte Hornets,109,96,,,,,,,,,,,
+401810085,2025-11-16,Toronto Raptors,Indiana Pacers,129,111,,,,,,,,,,,
+401810086,2025-11-16,Los Angeles Lakers,Milwaukee Bucks,119,95,,,,,,,,,,,
+401810087,2025-11-16,Denver Nuggets,Minnesota Timberwolves,123,112,,,,,,,,,,,
+401810088,2025-11-16,LA Clippers,Boston Celtics,118,121,,,,,,,,,,,
+401810089,2025-11-16,Sacramento Kings,San Antonio Spurs,110,123,,,,,,,,,,,
+401810090,2025-11-16,Brooklyn Nets,Washington Wizards,129,106,,,,,,,,,,,
+401810091,2025-11-17,Orlando Magic,Houston Rockets,113,117,,,,,,,,,,,
+401810092,2025-11-17,Golden State Warriors,New Orleans Pelicans,124,106,,,,,,,,,,,
+401810093,2025-11-17,Portland Trail Blazers,Dallas Mavericks,133,138,,,,,,,,,,,
+401810094,2025-11-17,Atlanta Hawks,Phoenix Suns,124,122,,,,,,,,,,,
+401810095,2025-11-17,Chicago Bulls,Utah Jazz,147,150,,,,,,,,,,,
+401810096,2025-11-18,Milwaukee Bucks,Cleveland Cavaliers,106,118,,,,,,,,,,,
+401810097,2025-11-18,Indiana Pacers,Detroit Pistons,112,127,,,,,,,,,,,
+401810098,2025-11-18,LA Clippers,Philadelphia 76ers,108,110,,,,,,,,,,,
+401810099,2025-11-18,New York Knicks,Miami Heat,113,115,,,,,,,,,,,
+401810100,2025-11-18,Charlotte Hornets,Toronto Raptors,108,110,,,,,,,,,,,
+401810101,2025-11-18,Dallas Mavericks,Minnesota Timberwolves,96,120,,,,,,,,,,,
+401810102,2025-11-18,Oklahoma City Thunder,New Orleans Pelicans,126,109,,,,,,,,,,,
+401810103,2025-11-18,Chicago Bulls,Denver Nuggets,130,127,,,,,,,,,,,
+401810104,2025-11-19,Golden State Warriors,Orlando Magic,113,121,,,,,,,,,,,
+401810105,2025-11-19,Boston Celtics,Brooklyn Nets,113,99,,,,,,,,,,,
+401810106,2025-11-19,Detroit Pistons,Atlanta Hawks,120,112,,,,,,,,,,,
+401810107,2025-11-19,Memphis Grizzlies,San Antonio Spurs,101,111,,,,,,,,,,,
+401810108,2025-11-19,Utah Jazz,Los Angeles Lakers,126,140,,,,,,,,,,,
+401810109,2025-11-19,Phoenix Suns,Portland Trail Blazers,127,110,,,,,,,,,,,
+401810110,2025-11-20,Houston Rockets,Cleveland Cavaliers,114,104,,,,,,,,,,,
+401810111,2025-11-20,Charlotte Hornets,Indiana Pacers,118,127,,,,,,,,,,,
+401810112,2025-11-20,Golden State Warriors,Miami Heat,96,110,,,,,,,,,,,
+401810113,2025-11-20,Toronto Raptors,Philadelphia 76ers,121,112,,,,,,,,,,,
+401810114,2025-11-20,Washington Wizards,Minnesota Timberwolves,109,120,,,,,,,,,,,
+401810115,2025-11-20,Denver Nuggets,New Orleans Pelicans,125,118,,,,,,,,,,,
+401810116,2025-11-20,Sacramento Kings,Oklahoma City Thunder,99,113,,,,,,,,,,,
+401810117,2025-11-20,New York Knicks,Dallas Mavericks,113,111,,,,,,,,,,,
+401810118,2025-11-20,Chicago Bulls,Portland Trail Blazers,122,121,,,,,,,,,,,
+401810119,2025-11-21,LA Clippers,Orlando Magic,101,129,,,,,,,,,,,
+401810120,2025-11-21,Sacramento Kings,Memphis Grizzlies,96,137,,,,,,,,,,,
+401810121,2025-11-21,Philadelphia 76ers,Milwaukee Bucks,123,114,,,,,,,,,,,
+401810122,2025-11-21,Atlanta Hawks,San Antonio Spurs,126,135,,,,,,,,,,,
+401809790,2025-11-22,Indiana Pacers,Cleveland Cavaliers,109,120,,,,,,,,,,,
+401809791,2025-11-22,Brooklyn Nets,Boston Celtics,113,105,,,,,,,,,,,
+401809792,2025-11-22,Washington Wizards,Toronto Raptors,110,140,,,,,,,,,,,
+401809793,2025-11-22,Miami Heat,Chicago Bulls,143,107,,,,,,,,,,,
+401809794,2025-11-22,New Orleans Pelicans,Dallas Mavericks,115,118,,,,,,,,,,,
+401809795,2025-11-22,Minnesota Timberwolves,Phoenix Suns,113,114,,,,,,,,,,,
+401809796,2025-11-22,Denver Nuggets,Houston Rockets,112,109,,,,,,,,,,,
+401809797,2025-11-22,Oklahoma City Thunder,Utah Jazz,144,112,,,,,,,,,,,
+401809798,2025-11-22,Portland Trail Blazers,Golden State Warriors,127,123,,,,,,,,,,,
+401810123,2025-11-22,LA Clippers,Charlotte Hornets,131,116,,,,,,,,,,,
+401810124,2025-11-22,New York Knicks,Orlando Magic,121,133,,,,,,,,,,,
+401810125,2025-11-23,Atlanta Hawks,New Orleans Pelicans,115,98,,,,,,,,,,,
+401810126,2025-11-23,Washington Wizards,Chicago Bulls,120,121,,,,,,,,,,,
+401810127,2025-11-23,Detroit Pistons,Milwaukee Bucks,129,116,,,,,,,,,,,
+401810128,2025-11-23,Memphis Grizzlies,Dallas Mavericks,102,96,,,,,,,,,,,
+401810129,2025-11-23,Sacramento Kings,Denver Nuggets,128,123,,,,,,,,,,,
+401810130,2025-11-23,Miami Heat,Philadelphia 76ers,127,117,,,,,,,,,,,
+401810131,2025-11-23,Charlotte Hornets,Atlanta Hawks,110,113,,,,,,,,,,,
+401810132,2025-11-23,Orlando Magic,Boston Celtics,129,138,,,,,,,,,,,
+401810133,2025-11-23,LA Clippers,Cleveland Cavaliers,105,120,,,,,,,,,,,
+401810134,2025-11-23,Brooklyn Nets,Toronto Raptors,109,119,,,,,,,,,,,
+401810135,2025-11-24,Portland Trail Blazers,Oklahoma City Thunder,95,122,,,,,,,,,,,
+401810136,2025-11-24,San Antonio Spurs,Phoenix Suns,102,111,,,,,,,,,,,
+401810137,2025-11-24,Los Angeles Lakers,Utah Jazz,108,106,,,,,,,,,,,
+401810138,2025-11-25,Detroit Pistons,Indiana Pacers,122,117,,,,,,,,,,,
+401810139,2025-11-25,Cleveland Cavaliers,Toronto Raptors,99,110,DraftKings,2.5,-1.5,-110,-105,234.5,234.5,-112,-122,-108,-105
+401810140,2025-11-25,New York Knicks,Brooklyn Nets,113,100,DraftKings,12.5,12.5,-105,-105,228.5,227.5,,,,
+401810141,2025-11-25,Dallas Mavericks,Miami Heat,102,106,DraftKings,-8.5,-7.5,-108,-112,241.5,240.5,-355,-270,280,220
+401810142,2025-11-25,Denver Nuggets,Memphis Grizzlies,125,115,DraftKings,6.5,8.5,-105,-118,233.5,235.5,230,220,-305,-270
+401810143,2025-11-25,Portland Trail Blazers,Milwaukee Bucks,115,103,DraftKings,-1.5,-1.5,-112,-102,,,-135,-115,114,-105
+401810144,2025-11-25,Chicago Bulls,New Orleans Pelicans,130,143,DraftKings,4.5,4.5,-110,-110,245.5,245.5,,,,
+401810145,2025-11-25,Houston Rockets,Phoenix Suns,114,92,DraftKings,5.5,6.5,-102,-110,224.5,224.5,200,190,-245,-230
+401810146,2025-11-25,Utah Jazz,Golden State Warriors,117,134,DraftKings,,,,,239.5,238.5,,,,
+401810147,2025-11-25,Minnesota Timberwolves,Sacramento Kings,112,117,DraftKings,9.5,9.5,-102,-102,238.5,236.5,,,,
+401809799,2025-11-26,Atlanta Hawks,Washington Wizards,113,132,DraftKings,10.5,10.5,-110,-102,236.5,240.5,,,,
+401809800,2025-11-26,Orlando Magic,Philadelphia 76ers,144,103,DraftKings,2.5,4.5,-110,-105,229.5,229.5,114,160,-135,-192
+401809801,2025-11-26,LA Clippers,Los Angeles Lakers,118,135,DraftKings,-5.5,-6.5,-110,-105,227.5,227.5,-230,-258,190,210
+401809802,2025-11-26,Detroit Pistons,Boston Celtics,114,117,DraftKings,3.5,1.5,-110,-105,228.5,234.5,136,105,-162,-125
+401809803,2025-11-27,New York Knicks,Charlotte Hornets,129,101,DraftKings,7.5,6.5,-110,-108,236.5,242.5,240,215,-298,-265
+401809804,2025-11-27,Milwaukee Bucks,Miami Heat,103,106,DraftKings,-6.5,-10.5,-118,-108,232.5,236.5,-360,-440,285,340
+401809805,2025-11-27,Indiana Pacers,Toronto Raptors,95,97,DraftKings,-9.5,-9.5,-110,-112,235.5,233.5,-410,-440,320,340
+401809806,2025-11-27,Minnesota Timberwolves,Oklahoma City Thunder,105,113,DraftKings,-8.5,-10.5,-110,-115,229.5,226.5,-375,-470,295,360
+401809807,2025-11-27,Memphis Grizzlies,New Orleans Pelicans,133,128,DraftKings,2.5,3.5,-110,-105,233.5,236.5,114,140,-135,-166
+401809808,2025-11-27,Houston Rockets,Golden State Warriors,104,100,DraftKings,1.5,-3.5,-115,-105,224.5,224.5,-162,-162,136,136
+401809809,2025-11-27,San Antonio Spurs,Portland Trail Blazers,115,102,DraftKings,-2.5,-1.5,-118,-105,237.5,240.5,,,,
+401809810,2025-11-27,Phoenix Suns,Sacramento Kings,112,100,DraftKings,3.5,4.5,-110,-108,234.5,233.5,136,154,-162,-185
+401809811,2025-11-29,Cleveland Cavaliers,Atlanta Hawks,123,130,DraftKings,4.5,6.5,-105,-105,238.5,236.5,160,210,-192,-258
+401809812,2025-11-29,Philadelphia 76ers,Brooklyn Nets,115,103,DraftKings,5.5,7.5,-102,-105,228.5,222.5,200,235,-245,-290
+401809813,2025-11-29,Chicago Bulls,Charlotte Hornets,116,123,DraftKings,3.5,2.5,-115,-110,246.5,248.5,124,120,-148,-142
+401809814,2025-11-29,Orlando Magic,Detroit Pistons,112,109,DraftKings,-5.5,-3.5,-105,-110,232.5,230.5,-205,-162,170,136
+401809815,2025-11-29,Washington Wizards,Indiana Pacers,86,119,DraftKings,-6.5,-6.5,-110,-110,237.5,240.5,-238,-258,195,210
+401809816,2025-11-29,Milwaukee Bucks,New York Knicks,109,118,DraftKings,-6.5,-7.5,-115,-115,234.5,232.5,-265,-278,215,225
+401809817,2025-11-29,Phoenix Suns,Oklahoma City Thunder,119,123,DraftKings,-14.5,-14.5,-110,-115,227.5,223.5,-1100,-1050,700,675
+401809818,2025-11-29,San Antonio Spurs,Denver Nuggets,139,136,DraftKings,-10.5,-7.5,-105,-105,236.5,238.5,-455,-305,350,245
+401809819,2025-11-29,Sacramento Kings,Utah Jazz,119,128,DraftKings,1.5,-2.5,-120,-110,240.5,242.5,-110,-142,-110,120
+401809820,2025-11-29,Dallas Mavericks,Los Angeles Lakers,119,129,DraftKings,-10.5,-10.5,-110,-102,232.5,232.5,-455,-455,350,350
+401809821,2025-11-29,Memphis Grizzlies,LA Clippers,112,107,DraftKings,-7.5,-6.5,-110,-108,227.5,224.5,-285,-265,230,215
+401810148,2025-11-29,Boston Celtics,Minnesota Timberwolves,115,119,DraftKings,-7.5,-5.5,-105,-118,228.5,229.5,-250,-238,200,195
+401810149,2025-11-29,Toronto Raptors,Charlotte Hornets,111,118,DraftKings,7.5,6.5,-105,-105,231.5,234.5,260,230,-325,-285
+401810150,2025-11-30,Chicago Bulls,Indiana Pacers,101,103,DraftKings,4.5,2.5,-105,-110,243.5,239.5,160,120,-192,-142
+401810151,2025-11-30,Detroit Pistons,Miami Heat,138,135,DraftKings,-1.5,-3.5,-115,-112,236.5,239.5,-125,-166,105,140
+401810152,2025-11-30,Brooklyn Nets,Milwaukee Bucks,99,116,DraftKings,-11.5,-11.5,-105,-108,224.5,218.5,-550,-575,410,425
+401810153,2025-11-30,New Orleans Pelicans,Golden State Warriors,96,104,DraftKings,-7.5,-9.5,-112,-112,223.5,228.5,-325,-425,260,330
+401810154,2025-11-30,Denver Nuggets,Phoenix Suns,130,112,DraftKings,5.5,3.5,-108,-105,233.5,233.5,180,142,-225,-170
+401810155,2025-11-30,Dallas Mavericks,LA Clippers,114,110,DraftKings,-6.5,-9.5,-118,100,218.5,224.5,-270,-380,220,300
+401810156,2025-11-30,Houston Rockets,Utah Jazz,129,101,DraftKings,11.5,11.5,-105,-112,234.5,233.5,440,425,-600,-575
+401810157,2025-11-30,Boston Celtics,Cleveland Cavaliers,117,115,DraftKings,-7.5,-7.5,-115,-108,230.5,234.5,-305,-285,245,230
+401810158,2025-11-30,Toronto Raptors,New York Knicks,94,116,DraftKings,-6.5,-8.5,-110,-112,236.5,229.5,-250,-345,205,275
+401810159,2025-11-30,Atlanta Hawks,Philadelphia 76ers,142,134,DraftKings,-1.5,-2.5,-110,-110,234.5,232.5,-120,-142,100,120
+401810160,2025-11-30,Oklahoma City Thunder,Portland Trail Blazers,123,115,DraftKings,12.5,11.5,-110,-110,230.5,234.5,525,490,-750,-675
+401810161,2025-12-01,San Antonio Spurs,Minnesota Timberwolves,112,125,DraftKings,-3.5,-4.5,-110,-110,231.5,233.5,-155,-185,130,154
+401810162,2025-12-01,Memphis Grizzlies,Sacramento Kings,115,107,DraftKings,2.5,3.5,-105,-118,231.5,233.5,124,124,-148,-148
+401810163,2025-12-01,New Orleans Pelicans,Los Angeles Lakers,121,133,DraftKings,-14.5,-15.5,-110,-115,234.5,228.5,-850,-1450,575,850
+401810164,2025-12-02,Atlanta Hawks,Detroit Pistons,98,99,DraftKings,-7.5,-9.5,-110,-105,232.5,232.5,-298,-410,240,320
+401810165,2025-12-02,Cleveland Cavaliers,Indiana Pacers,135,119,DraftKings,5.5,4.5,-110,-110,233.5,230.5,180,160,-218,-192
+401810166,2025-12-02,Milwaukee Bucks,Washington Wizards,126,129,DraftKings,9.5,10.5,-110,-110,237.5,232.5,330,330,-425,-425
+401810167,2025-12-02,Charlotte Hornets,Brooklyn Nets,103,116,DraftKings,4.5,4.5,-110,-108,226.5,227.5,154,154,-185,-185
+401810168,2025-12-02,LA Clippers,Miami Heat,123,140,DraftKings,-5.5,-6.5,-105,-102,235.5,235.5,-205,-245,170,200
+401810169,2025-12-02,Chicago Bulls,Orlando Magic,120,125,DraftKings,-7.5,-9.5,-105,-110,239.5,239.5,-290,-380,235,300
+401810170,2025-12-02,Dallas Mavericks,Denver Nuggets,131,121,DraftKings,-10.5,-11.5,-110,-105,234.5,235.5,-455,-550,350,410
+401810171,2025-12-02,Houston Rockets,Utah Jazz,125,133,DraftKings,12.5,11.5,-110,-115,231.5,235.5,455,400,-625,-535
+401810172,2025-12-02,Phoenix Suns,Los Angeles Lakers,125,108,DraftKings,-6.5,-5.5,-110,-108,234.5,231.5,-245,-225,200,185
+401810173,2025-12-03,Washington Wizards,Philadelphia 76ers,102,121,DraftKings,-13.5,-13.5,-102,-105,237.5,234.5,-850,-800,575,550
+401810174,2025-12-03,Portland Trail Blazers,Toronto Raptors,118,121,DraftKings,-5.5,-4.5,-110,-115,232.5,230.5,-218,-198,180,164
+401810175,2025-12-03,New York Knicks,Boston Celtics,117,123,DraftKings,1.5,1.5,-110,-115,229.5,230.5,102,-105,-122,-115
+401810176,2025-12-03,Minnesota Timberwolves,New Orleans Pelicans,149,142,DraftKings,8.5,12.5,-110,-112,231.5,229.5,260,490,-325,-675
+401810177,2025-12-03,Memphis Grizzlies,San Antonio Spurs,119,126,DraftKings,-5.5,-5.5,-105,-102,230.5,232.5,-205,-205,170,170
+401810178,2025-12-03,Oklahoma City Thunder,Golden State Warriors,124,112,DraftKings,11.5,11.5,-110,-110,223.5,223.5,440,410,-600,-550
+401810179,2025-12-04,Portland Trail Blazers,Cleveland Cavaliers,122,110,DraftKings,-9.5,-10.5,-115,-102,237.5,244.5,-395,-485,320,370
+401810180,2025-12-04,Denver Nuggets,Indiana Pacers,135,120,DraftKings,7.5,8.5,-110,-115,235.5,238.5,-305,250,-305,-310
+401810181,2025-12-04,San Antonio Spurs,Orlando Magic,114,112,DraftKings,-6.5,-8.5,-115,-110,233.5,235.5,-258,-360,210,285
+401810182,2025-12-04,LA Clippers,Atlanta Hawks,115,92,DraftKings,-4.5,-1.5,-105,-110,229.5,226.5,-175,-125,145,105
+401810183,2025-12-04,Charlotte Hornets,New York Knicks,104,119,DraftKings,-10.5,-9.5,-102,-102,236.5,235.5,-440,-395,350,310
+401810184,2025-12-04,Brooklyn Nets,Chicago Bulls,113,103,DraftKings,-8.5,-7.5,-115,-112,232.5,231.5,-340,-325,270,260
+401810185,2025-12-04,Sacramento Kings,Houston Rockets,95,121,DraftKings,-15.5,-15.5,-110,-110,230.5,231.5,-1350,-1350,750,800
+401810186,2025-12-04,Detroit Pistons,Milwaukee Bucks,109,113,DraftKings,3.5,4.5,-115,-108,232.5,228.5,120,160,-142,-192
+401810187,2025-12-04,Miami Heat,Dallas Mavericks,108,118,DraftKings,3.5,4.5,-110,-108,239.5,238.5,142,154,-170,-185
+401810188,2025-12-05,Golden State Warriors,Philadelphia 76ers,98,99,DraftKings,-3.5,-4.5,-110,-105,221.5,224.5,-155,-175,130,145
+401810189,2025-12-05,Boston Celtics,Washington Wizards,146,101,DraftKings,8.5,10.5,-110,-105,228.5,231.5,295,370,-395,-485
+401810190,2025-12-05,Utah Jazz,Brooklyn Nets,123,110,DraftKings,3.5,5.5,-110,-112,231.5,231.5,145,170,-175,-205
+401810191,2025-12-05,Los Angeles Lakers,Toronto Raptors,123,120,DraftKings,1.5,-2.5,-120,-112,230.5,228.5,-108,-135,-112,114
+401810192,2025-12-05,Minnesota Timberwolves,New Orleans Pelicans,125,116,DraftKings,11.5,11.5,-110,-108,233.5,232.5,410,425,-550,-575
+401810193,2025-12-06,Los Angeles Lakers,Boston Celtics,105,126,DraftKings,-7.5,-8.5,-102,-112,224.5,227.5,-245,-340,200,270
+401810194,2025-12-06,Miami Heat,Orlando Magic,105,106,DraftKings,-5.5,-6.5,-115,-110,240.5,241.5,-205,-225,170,185
+401810195,2025-12-06,Denver Nuggets,Atlanta Hawks,134,133,DraftKings,8.5,3.5,-115,-110,237.5,238.5,245,136,-290,-162
+401810196,2025-12-06,San Antonio Spurs,Cleveland Cavaliers,117,130,DraftKings,-5.5,-5.5,-110,-105,238.5,239.5,-198,-192,164,160
+401810197,2025-12-06,Portland Trail Blazers,Detroit Pistons,116,122,DraftKings,-6.5,-8.5,-110,-105,237.5,235.5,-238,-340,195,270
+401810198,2025-12-06,Utah Jazz,New York Knicks,112,146,DraftKings,-15.5,-16.5,-110,-105,240.5,243.5,-1200,-1350,750,800
+401810199,2025-12-06,Charlotte Hornets,Toronto Raptors,111,86,DraftKings,-8.5,-6.5,-108,-110,231.5,230.5,-360,-270,285,220
+401810200,2025-12-06,Indiana Pacers,Chicago Bulls,120,105,DraftKings,-5.5,-4.5,-105,-115,238.5,234.5,-218,-192,180,160
+401810201,2025-12-06,Phoenix Suns,Houston Rockets,98,117,DraftKings,-11.5,-8.5,-112,-110,223.5,219.5,-535,-380,400,300
+401810202,2025-12-06,LA Clippers,Memphis Grizzlies,98,107,DraftKings,1.5,2.5,-110,-115,224.5,222.5,110,114,-130,-135
+401810203,2025-12-06,Philadelphia 76ers,Milwaukee Bucks,116,101,DraftKings,1.5,1.5,-108,-115,225.5,221.5,114,-105,-135,-115
+401810204,2025-12-06,Dallas Mavericks,Oklahoma City Thunder,111,132,DraftKings,-14.5,-15.5,-118,-112,228.5,229.5,-1050,-1200,675,750
+401810205,2025-12-06,New Orleans Pelicans,Brooklyn Nets,101,119,DraftKings,-1.5,-3.5,-110,-115,226.5,227.5,-125,-166,105,140
+401810206,2025-12-07,Atlanta Hawks,Washington Wizards,131,116,DraftKings,8.5,9.5,-110,-110,237.5,237.5,260,330,-325,-425
+401810207,2025-12-07,Golden State Warriors,Cleveland Cavaliers,99,94,DraftKings,-8.5,-8.5,-110,-120,226.5,230.5,-325,-375,260,295
+401810208,2025-12-07,Milwaukee Bucks,Detroit Pistons,112,124,DraftKings,-11.5,-12.5,-110,-112,224.5,223.5,-575,-675,425,490
+401810209,2025-12-07,Sacramento Kings,Miami Heat,127,111,DraftKings,-7.5,-8.5,-110,-110,239.5,241.5,-285,-360,230,285
+401810210,2025-12-07,LA Clippers,Minnesota Timberwolves,106,109,DraftKings,-9.5,-8.5,-110,-112,225.5,227.5,-410,-375,320,295
+401810211,2025-12-07,Houston Rockets,Dallas Mavericks,109,122,DraftKings,10.5,6.5,-110,-105,221.5,221.5,425,210,-575,-258
+401810212,2025-12-07,Orlando Magic,New York Knicks,100,106,DraftKings,-3.5,-1.5,-115,100,232.5,229.5,-162,-122,136,102
+401810213,2025-12-07,Boston Celtics,Toronto Raptors,121,113,DraftKings,2.5,3.5,-115,-112,227.5,224.5,114,130,-135,-155
+401810214,2025-12-07,Denver Nuggets,Charlotte Hornets,115,106,DraftKings,10.5,10.5,-105,-115,234.5,235.5,350,360,-455,-470
+401810215,2025-12-07,Portland Trail Blazers,Memphis Grizzlies,96,119,DraftKings,-1.5,-1.5,100,-115,234.5,232.5,-110,-125,-110,105
+401810216,2025-12-08,Golden State Warriors,Chicago Bulls,123,91,DraftKings,1.5,1.5,-120,-118,227.5,229.5,-110,-105,-110,-115
+401810217,2025-12-08,Los Angeles Lakers,Philadelphia 76ers,112,108,DraftKings,3.5,2.5,-110,-105,235.5,233.5,136,120,-162,-142
+401810218,2025-12-08,Oklahoma City Thunder,Utah Jazz,131,101,DraftKings,11.5,11.5,-110,-102,236.5,233.5,455,440,-625,-600
+401809833,2025-12-09,Miami Heat,Orlando Magic,108,117,DraftKings,-5.5,-1.5,-105,-110,238.5,234.5,-205,-118,170,-102
+401810219,2025-12-09,Sacramento Kings,Indiana Pacers,105,116,DraftKings,-3.5,-3.5,-115,-115,234.5,231.5,-162,-162,136,136
+401810220,2025-12-09,Phoenix Suns,Minnesota Timberwolves,108,105,DraftKings,-9.5,-8.5,-110,-105,228.5,225.5,-395,-375,310,295
+401810221,2025-12-09,San Antonio Spurs,New Orleans Pelicans,135,132,DraftKings,9.5,8.5,-115,-105,237.5,238.5,300,300,-380,-380
+401809834,2025-12-10,New York Knicks,Toronto Raptors,117,101,DraftKings,2.5,6.5,-115,-105,235.5,226.5,110,210,-130,-258
+401809835,2025-12-11,Phoenix Suns,Oklahoma City Thunder,89,138,DraftKings,-14.5,-15.5,-110,-108,226.5,221.5,-950,-1100,625,700
+401809836,2025-12-11,San Antonio Spurs,Los Angeles Lakers,132,119,DraftKings,-4.5,-7.5,-110,-102,236.5,243.5,-180,-285,150,230
+401836746,2025-12-12,LA Clippers,Houston Rockets,113,115,DraftKings,-8.5,-8.5,-110,-112,221.5,221.5,-345,-380,275,300
+401836747,2025-12-12,Boston Celtics,Milwaukee Bucks,101,116,DraftKings,7.5,9.5,-115,-108,227.5,222.5,220,320,-270,-410
+401836748,2025-12-12,Portland Trail Blazers,New Orleans Pelicans,120,143,DraftKings,5.5,4.5,-110,-118,237.5,242.5,170,142,-205,-170
+401836749,2025-12-12,Denver Nuggets,Sacramento Kings,136,105,DraftKings,9.5,10.5,-110,-112,239.5,239.5,300,370,-380,-485
+401809837,2025-12-13,New York Knicks,Orlando Magic,132,120,DraftKings,3.5,3.5,-105,-105,224.5,225.5,140,150,-166,-180
+401836750,2025-12-13,Chicago Bulls,Charlotte Hornets,129,126,DraftKings,1.5,2.5,-120,-105,236.5,229.5,-110,120,-110,-142
+401836751,2025-12-13,Atlanta Hawks,Detroit Pistons,115,142,DraftKings,-6.5,-6.5,-110,-115,233.5,233.5,-238,-285,195,230
+401836752,2025-12-13,Indiana Pacers,Philadelphia 76ers,105,115,DraftKings,-6.5,-5.5,-110,-110,227.5,221.5,-245,-230,200,190
+401836753,2025-12-13,Cleveland Cavaliers,Washington Wizards,130,126,DraftKings,14.5,16.5,-110,-112,236.5,245.5,575,850,-850,-1450
+401836754,2025-12-13,Utah Jazz,Memphis Grizzlies,130,126,DraftKings,-6.5,-7.5,-110,-105,234.5,243.5,-238,-278,195,225
+401836795,2025-12-13,Brooklyn Nets,Dallas Mavericks,111,119,DraftKings,-7.5,-7.5,-110,-105,225.5,218.5,-285,-290,230,235
+401836796,2025-12-13,Minnesota Timberwolves,Golden State Warriors,127,120,DraftKings,2.5,-4.5,-110,-115,222.5,228.5,114,-192,-135,160
+401809838,2025-12-14,San Antonio Spurs,Oklahoma City Thunder,111,109,DraftKings,-10.5,-10.5,-115,-115,226.5,233.5,-455,-575,350,425
+401836797,2025-12-14,Washington Wizards,Indiana Pacers,108,89,DraftKings,-9.5,-10.5,-105,-105,234.5,233.5,-375,-425,295,330
+401836798,2025-12-14,Philadelphia 76ers,Atlanta Hawks,117,120,DraftKings,-2.5,-4.5,-112,-105,232.5,226.5,-142,-175,120,145
+401836799,2025-12-14,Charlotte Hornets,Cleveland Cavaliers,119,111,DraftKings,-11.5,-11.5,-115,-118,235.5,232.5,-535,-625,400,455
+401836800,2025-12-14,Milwaukee Bucks,Brooklyn Nets,82,127,DraftKings,1.5,1.5,-110,-108,218.5,215.5,100,102,-120,-122
+401836801,2025-12-15,Sacramento Kings,Minnesota Timberwolves,103,117,DraftKings,-11.5,-9.5,-110,-110,229.5,235.5,-600,-410,440,320
+401836802,2025-12-15,Golden State Warriors,Portland Trail Blazers,131,136,DraftKings,4.5,5.5,-110,-115,235.5,237.5,160,170,-192,-205
+401836804,2025-12-15,New Orleans Pelicans,Chicago Bulls,114,104,DraftKings,-5.5,-4.5,-110,-110,240.5,248.5,-198,-192,164,160
+401839699,2025-12-15,Los Angeles Lakers,Phoenix Suns,116,114,DraftKings,2.5,-1.5,-110,-108,228.5,232.5,114,-115,-135,-105
+401836803,2025-12-16,Detroit Pistons,Boston Celtics,112,105,DraftKings,-1.5,-1.5,-108,-108,230.5,231.5,-118,-118,-102,-102
+401836805,2025-12-16,Dallas Mavericks,Utah Jazz,133,140,DraftKings,2.5,1.5,-110,-115,236.5,240.5,114,-105,-135,-115
+401836806,2025-12-16,Houston Rockets,Denver Nuggets,125,128,DraftKings,-1.5,1.5,-105,-112,233.5,236.5,-115,-105,-105,-115
+401836807,2025-12-16,Memphis Grizzlies,LA Clippers,121,103,DraftKings,-4.5,-5.5,-110,-110,228.5,229.5,-180,-218,150,180
+401839023,2025-12-16,Toronto Raptors,Miami Heat,106,96,DraftKings,-5.5,-4.5,-110,-115,237.5,233.5,-218,-185,180,154
+401809839,2025-12-17,San Antonio Spurs,New York Knicks,113,124,DraftKings,-2.5,-2.5,-105,-105,228.5,233.5,-130,-135,110,114
+401810222,2025-12-18,Cleveland Cavaliers,Chicago Bulls,111,127,DraftKings,4.5,5.5,-110,-108,240.5,242.5,150,180,-180,-218
+401810223,2025-12-18,Memphis Grizzlies,Minnesota Timberwolves,116,110,DraftKings,-7.5,-6.5,-110,-112,236.5,226.5,-285,-265,230,215
+401810224,2025-12-19,LA Clippers,Oklahoma City Thunder,101,122,DraftKings,-14.5,-16.5,-110,-115,224.5,222.5,-950,-1600,625,900
+401810225,2025-12-19,Washington Wizards,San Antonio Spurs,94,119,DraftKings,-15.5,-15.5,-110,-112,240.5,240.5,-1100,-1200,700,750
+401810226,2025-12-19,Atlanta Hawks,Charlotte Hornets,126,133,DraftKings,4.5,4.5,-110,-110,231.5,240.5,150,154,-180,-185
+401810227,2025-12-19,New York Knicks,Indiana Pacers,114,113,DraftKings,5.5,3.5,-115,-108,223.5,226.5,164,136,-198,-162
+401810228,2025-12-19,Miami Heat,Brooklyn Nets,106,95,DraftKings,6.5,8.5,-110,-118,227.5,228.5,205,230,-250,-285
+401810229,2025-12-19,Toronto Raptors,Milwaukee Bucks,111,105,DraftKings,4.5,4.5,-110,-102,220.5,218.5,150,160,-180,-192
+401810230,2025-12-19,Houston Rockets,New Orleans Pelicans,128,133,DraftKings,9.5,9.5,-105,-115,234.5,236.5,330,320,-425,-410
+401810231,2025-12-19,Detroit Pistons,Dallas Mavericks,114,116,DraftKings,5.5,5.5,-110,-105,230.5,230.5,170,180,-205,-218
+401810232,2025-12-19,Orlando Magic,Denver Nuggets,115,126,DraftKings,-7.5,-6.5,-110,-108,233.5,237.5,-298,-270,240,220
+401810233,2025-12-19,Golden State Warriors,Phoenix Suns,98,99,DraftKings,1.5,1.5,-110,-108,228.5,229.5,100,110,-120,-130
+401810234,2025-12-19,Los Angeles Lakers,Utah Jazz,143,135,DraftKings,6.5,9.5,-110,-120,241.5,242.5,200,310,-245,-395
+401810235,2025-12-19,Sacramento Kings,Portland Trail Blazers,133,134,DraftKings,-7.5,-8.5,-110,-115,235.5,238.5,-298,-340,240,270
+401810236,2025-12-20,Miami Heat,Boston Celtics,116,129,DraftKings,-5.5,-7.5,-115,-110,233.5,233.5,-225,-305,185,245
+401810237,2025-12-20,Philadelphia 76ers,New York Knicks,116,107,DraftKings,-6.5,-6.5,-102,-108,228.5,230.5,-218,-245,180,200
+401810238,2025-12-20,San Antonio Spurs,Atlanta Hawks,126,98,DraftKings,2.5,3.5,-115,-112,242.5,238.5,110,142,-130,-170
+401810239,2025-12-20,Chicago Bulls,Cleveland Cavaliers,136,125,DraftKings,-6.5,-4.5,-110,-105,239.5,238.5,-265,-180,215,150
+401810240,2025-12-20,Oklahoma City Thunder,Minnesota Timberwolves,107,112,DraftKings,7.5,5.5,-110,-102,226.5,232.5,260,210,-325,-258
+401810241,2025-12-20,Houston Rockets,Denver Nuggets,115,101,DraftKings,-1.5,1.5,-110,-110,235.5,235.5,-120,102,100,-122
+401810242,2025-12-21,Dallas Mavericks,Philadelphia 76ers,114,121,DraftKings,-2.5,-1.5,-110,-108,227.5,226.5,-135,-120,114,100
+401810243,2025-12-21,Boston Celtics,Toronto Raptors,112,96,DraftKings,2.5,-1.5,-110,-112,225.5,221.5,114,-122,-135,102
+401810244,2025-12-21,Indiana Pacers,New Orleans Pelicans,109,128,DraftKings,-2.5,-2.5,-110,-105,232.5,235.5,-135,-130,114,110
+401810245,2025-12-21,Charlotte Hornets,Detroit Pistons,86,112,DraftKings,-9.5,-10.5,-110,-108,233.5,234.5,-395,-500,310,380
+401810246,2025-12-21,Washington Wizards,Memphis Grizzlies,130,122,DraftKings,-10.5,-12.5,-110,-105,236.5,233.5,-470,-600,360,440
+401810247,2025-12-21,Phoenix Suns,Golden State Warriors,116,119,DraftKings,-4.5,-6.5,-110,-102,228.5,226.5,-198,-230,164,190
+401810248,2025-12-21,Orlando Magic,Utah Jazz,128,127,DraftKings,7.5,7.5,-110,-110,241.5,240.5,225,245,-278,-305
+401810249,2025-12-21,Portland Trail Blazers,Sacramento Kings,98,93,DraftKings,4.5,4.5,-110,-115,239.5,235.5,150,145,-180,-175
+401810250,2025-12-21,Los Angeles Lakers,LA Clippers,88,103,DraftKings,3.5,1.5,-115,-105,229.5,229.5,124,110,-148,-130
+401810251,2025-12-21,Chicago Bulls,Atlanta Hawks,152,150,DraftKings,-4.5,-4.5,-115,-102,245.5,248.5,-192,-175,160,145
+401810252,2025-12-21,Toronto Raptors,Brooklyn Nets,81,96,DraftKings,4.5,3.5,-110,-115,220.5,216.5,145,130,-175,-155
+401810253,2025-12-21,Miami Heat,New York Knicks,125,132,DraftKings,-8.5,-7.5,-110,-102,236.5,236.5,-310,-290,250,235
+401810254,2025-12-22,San Antonio Spurs,Washington Wizards,124,113,DraftKings,15.5,15.5,-110,-108,238.5,237.5,700,800,-1100,-1350
+401810255,2025-12-22,Milwaukee Bucks,Minnesota Timberwolves,100,103,DraftKings,-11.5,-12.5,-110,-102,222.5,226.5,-650,-625,470,455
+401810256,2025-12-22,Houston Rockets,Sacramento Kings,124,125,DraftKings,12.5,12.5,-115,-115,230.5,222.5,455,455,-625,-625
+401810257,2025-12-23,Charlotte Hornets,Cleveland Cavaliers,132,139,DraftKings,-9.5,-9.5,-110,-115,236.5,239.5,-380,-375,300,295
+401810258,2025-12-23,Indiana Pacers,Boston Celtics,95,103,DraftKings,-9.5,-11.5,-110,-112,226.5,225.5,-395,-600,310,440
+401810259,2025-12-23,Dallas Mavericks,New Orleans Pelicans,113,119,DraftKings,-1.5,1.5,-105,-115,236.5,241.5,-115,-108,-105,-112
+401810260,2025-12-23,Utah Jazz,Denver Nuggets,112,135,DraftKings,-15.5,-12.5,-110,-108,245.5,251.5,-1100,-675,700,490
+401810261,2025-12-23,Memphis Grizzlies,Oklahoma City Thunder,103,119,DraftKings,-16.5,-15.5,-110,-108,226.5,234.5,-1350,-1200,800,750
+401810262,2025-12-23,Orlando Magic,Golden State Warriors,97,120,DraftKings,-4.5,-6.5,-110,-108,228.5,228.5,-175,-230,145,190
+401810263,2025-12-23,Detroit Pistons,Portland Trail Blazers,110,102,DraftKings,5.5,6.5,-105,-115,235.5,234.5,185,200,-225,-245
+401810264,2025-12-24,Washington Wizards,Charlotte Hornets,109,126,DraftKings,-6.5,-6.5,-105,-115,234.5,239.5,-218,-250,180,205
+401810265,2025-12-24,Brooklyn Nets,Philadelphia 76ers,114,106,DraftKings,-10.5,-9.5,-110,-112,221.5,219.5,-470,-395,360,310
+401810266,2025-12-24,Chicago Bulls,Atlanta Hawks,126,123,DraftKings,-4.5,-3.5,-105,-110,254.5,254.5,-166,-148,140,124
+401810267,2025-12-24,New Orleans Pelicans,Cleveland Cavaliers,118,141,DraftKings,-9.5,-9.5,100,-112,236.5,248.5,-345,-425,275,330
+401810268,2025-12-24,Milwaukee Bucks,Indiana Pacers,111,94,DraftKings,-1.5,1.5,-102,-115,197.5,216.5,-112,-108,-108,-112
+401810269,2025-12-24,Toronto Raptors,Miami Heat,112,91,DraftKings,-4.5,-5.5,-105,-108,228.5,227.5,-175,-218,145,180
+401810270,2025-12-24,Denver Nuggets,Dallas Mavericks,130,131,DraftKings,6.5,6.5,-110,-115,237.5,236.5,215,200,-265,-245
+401810271,2025-12-24,New York Knicks,Minnesota Timberwolves,104,115,DraftKings,-6.5,-7.5,-110,-105,224.5,230.5,-245,-278,200,225
+401810272,2025-12-24,Oklahoma City Thunder,San Antonio Spurs,110,130,DraftKings,6.5,6.5,-110,-112,234.5,236.5,205,190,-250,-230
+401810273,2025-12-24,Los Angeles Lakers,Phoenix Suns,108,132,DraftKings,-4.5,-3.5,-110,-102,224.5,226.5,-175,-148,145,124
+401810274,2025-12-24,Memphis Grizzlies,Utah Jazz,137,128,DraftKings,2.5,4.5,-110,-115,244.5,242.5,114,145,-135,-175
+401810275,2025-12-24,Orlando Magic,Portland Trail Blazers,110,106,DraftKings,1.5,1.5,-102,-110,234.5,230.5,110,102,-130,-122
+401810276,2025-12-24,Detroit Pistons,Sacramento Kings,136,127,DraftKings,8.5,9.5,-105,-108,229.5,225.5,295,330,-375,-425
+401810277,2025-12-24,Houston Rockets,LA Clippers,108,128,DraftKings,6.5,7.5,-110,-115,221.5,219.5,220,235,-270,-290
+401809238,2025-12-25,Cleveland Cavaliers,New York Knicks,124,126,DraftKings,-5.5,-4.5,-105,-102,235.5,241.5,-198,-180,164,150
+401809239,2025-12-25,San Antonio Spurs,Oklahoma City Thunder,117,102,DraftKings,-10.5,-10.5,-115,-102,232.5,234.5,-535,-355,400,280
+401809240,2025-12-25,Dallas Mavericks,Golden State Warriors,116,126,DraftKings,-7.5,-8.5,-105,-115,227.5,231.5,-285,-310,230,250
+401809241,2025-12-26,Houston Rockets,Los Angeles Lakers,119,96,DraftKings,1.5,1.5,-112,-105,231.5,231.5,-102,105,-118,-125
+401809242,2025-12-26,Minnesota Timberwolves,Denver Nuggets,138,142,DraftKings,-4.5,1.5,-105,-115,237.5,238.5,-175,-105,145,-115
+401810278,2025-12-27,Miami Heat,Atlanta Hawks,126,111,DraftKings,-4.5,-2.5,-110,-120,242.5,250.5,-175,-148,145,124
+401810279,2025-12-27,Charlotte Hornets,Orlando Magic,120,105,DraftKings,-5.5,-5.5,-110,-112,231.5,227.5,-198,-230,164,190
+401810280,2025-12-27,Toronto Raptors,Washington Wizards,117,138,DraftKings,8.5,8.5,-110,-112,228.5,225.5,280,260,-355,-325
+401810281,2025-12-27,Boston Celtics,Indiana Pacers,140,122,DraftKings,6.5,8.5,-110,-108,220.5,222.5,200,270,-245,-340
+401810282,2025-12-27,Philadelphia 76ers,Chicago Bulls,102,109,DraftKings,-1.5,1.5,-108,-108,240.5,241.5,-118,105,-102,-125
+401810283,2025-12-27,Milwaukee Bucks,Memphis Grizzlies,104,125,DraftKings,-4.5,-5.5,-110,-102,227.5,228.5,-185,-185,154,154
+401810284,2025-12-27,Phoenix Suns,New Orleans Pelicans,115,108,DraftKings,3.5,5.5,-110,-112,238.5,241.5,130,164,-155,-198
+401810285,2025-12-27,Detroit Pistons,Utah Jazz,129,131,DraftKings,10.5,9.5,-110,-115,243.5,245.5,340,320,-440,-410
+401810286,2025-12-27,LA Clippers,Portland Trail Blazers,119,103,DraftKings,1.5,2.5,-108,-110,226.5,227.5,102,110,-122,-130
+401810287,2025-12-27,Dallas Mavericks,Sacramento Kings,107,113,DraftKings,2.5,2.5,-105,-105,228.5,233.5,120,120,-142,-142
+401810288,2025-12-28,Denver Nuggets,Orlando Magic,126,127,DraftKings,4.5,3.5,-115,-112,237.5,235.5,142,142,-170,-170
+401810289,2025-12-28,Phoenix Suns,New Orleans Pelicans,123,114,DraftKings,5.5,4.5,-110,-112,238.5,241.5,170,154,-205,-185
+401810290,2025-12-28,New York Knicks,Atlanta Hawks,128,125,DraftKings,4.5,5.5,-110,-102,244.5,244.5,154,185,-185,-225
+401810291,2025-12-28,Indiana Pacers,Miami Heat,116,142,DraftKings,-8.5,-6.5,-110,-112,230.5,233.5,-340,-270,270,220
+401810292,2025-12-28,Milwaukee Bucks,Chicago Bulls,112,103,DraftKings,-6.5,-2.5,-110,-105,235.5,233.5,-245,-125,200,105
+401810293,2025-12-28,Cleveland Cavaliers,Houston Rockets,100,117,DraftKings,-5.5,-2.5,-115,-110,235.5,231.5,-218,-135,180,114
+401810294,2025-12-28,Brooklyn Nets,Minnesota Timberwolves,123,107,DraftKings,-9.5,-12.5,-110,-105,224.5,224.5,-410,-650,320,470
+401810295,2025-12-28,Utah Jazz,San Antonio Spurs,127,114,DraftKings,-16.5,-14.5,-110,-105,245.5,244.5,-1350,-800,800,550
+401810296,2025-12-28,Golden State Warriors,Toronto Raptors,127,141,DraftKings,3.5,4.5,-105,-105,226.5,227.5,136,150,-162,-180
+401810297,2025-12-28,Philadelphia 76ers,Oklahoma City Thunder,104,129,DraftKings,-14.5,-14.5,-110,-115,227.5,226.5,-1000,-800,650,550
+401810298,2025-12-28,Memphis Grizzlies,Washington Wizards,112,116,DraftKings,6.5,8.5,-105,-118,238.5,241.5,205,235,-250,-290
+401810299,2025-12-28,Boston Celtics,Portland Trail Blazers,108,114,DraftKings,5.5,6.5,-105,-108,231.5,231.5,180,210,-218,-258
+401810300,2025-12-29,Detroit Pistons,LA Clippers,99,112,DraftKings,3.5,3.5,-110,-108,200.5,224.5,130,130,-155,-155
+401810301,2025-12-29,Sacramento Kings,Los Angeles Lakers,101,125,DraftKings,-11.5,-12.5,-115,-110,233.5,231.5,-575,-500,425,380
+401810302,2025-12-30,Milwaukee Bucks,Charlotte Hornets,123,113,DraftKings,3.5,2.5,-105,-102,227.5,227.5,140,124,-166,-148
+401810303,2025-12-30,Phoenix Suns,Washington Wizards,115,101,DraftKings,10.5,10.5,-110,-118,234.5,233.5,350,330,-455,-425
+401810304,2025-12-30,Golden State Warriors,Brooklyn Nets,120,107,DraftKings,4.5,6.5,-115,-118,228.5,226.5,154,180,-185,-218
+401810305,2025-12-30,Denver Nuggets,Miami Heat,123,147,DraftKings,4.5,1.5,-110,-105,244.5,244.5,145,105,-175,-125
+401810306,2025-12-30,Orlando Magic,Toronto Raptors,106,107,DraftKings,1.5,1.5,-115,-115,223.5,220.5,100,102,-120,-122
+401810307,2025-12-30,Minnesota Timberwolves,Chicago Bulls,136,101,DraftKings,4.5,6.5,-110,-112,237.5,243.5,150,180,-180,-218
+401810308,2025-12-30,Indiana Pacers,Houston Rockets,119,126,DraftKings,-14.5,-12.5,-105,-108,222.5,223.5,-800,-625,550,455
+401810309,2025-12-30,New York Knicks,New Orleans Pelicans,130,125,DraftKings,8.5,8.5,-110,-118,239.5,247.5,280,275,-355,-345
+401810310,2025-12-30,Atlanta Hawks,Oklahoma City Thunder,129,140,DraftKings,-16.5,-17.5,-110,-105,237.5,232.5,-1200,-1100,750,700
+401810311,2025-12-30,Cleveland Cavaliers,San Antonio Spurs,113,101,DraftKings,-5.5,-3.5,-110,-110,242.5,243.5,-198,-162,164,136
+401810312,2025-12-30,Dallas Mavericks,Portland Trail Blazers,122,125,DraftKings,-1.5,-2.5,-110,-115,235.5,232.5,-120,-135,100,114
+401810313,2025-12-31,Philadelphia 76ers,Memphis Grizzlies,139,136,DraftKings,-1.5,1.5,-105,-108,233.5,235.5,-115,102,-105,-122
+401810314,2025-12-31,Boston Celtics,Utah Jazz,129,119,DraftKings,7.5,8.5,-105,-105,239.5,243.5,240,240,-298,-298
+401810315,2025-12-31,Detroit Pistons,Los Angeles Lakers,128,106,DraftKings,2.5,2.5,-110,-110,231.5,233.5,114,124,-135,-148
+401810316,2025-12-31,Sacramento Kings,LA Clippers,90,131,DraftKings,-8.5,-9.5,-115,-105,223.5,218.5,-395,-375,310,295
+401810317,2025-12-31,Golden State Warriors,Charlotte Hornets,132,125,DraftKings,6.5,7.5,-105,-112,232.5,234.5,210,230,-258,-285
+401810318,2025-12-31,Minnesota Timberwolves,Atlanta Hawks,102,126,DraftKings,3.5,5.5,-110,-105,242.5,240.5,130,170,-155,-205
+401810319,2025-12-31,Orlando Magic,Indiana Pacers,112,110,DraftKings,3.5,4.5,-110,-110,225.5,229.5,130,160,-155,-192
+401810320,2025-12-31,Phoenix Suns,Cleveland Cavaliers,113,129,DraftKings,-5.5,-6.5,-110,-112,235.5,232.5,-205,-258,170,210
+401810321,2026-01-01,New Orleans Pelicans,Chicago Bulls,118,134,DraftKings,1.5,-1.5,-115,-115,244.5,248.5,-102,-122,-118,102
+401810322,2026-01-01,New York Knicks,San Antonio Spurs,132,134,DraftKings,-2.5,-3.5,-110,-110,236.5,235.5,-135,-162,114,136
+401810323,2026-01-01,Denver Nuggets,Toronto Raptors,106,103,DraftKings,-6.5,-7.5,-110,-102,224.5,229.5,-250,-270,205,220
+401810324,2026-01-01,Washington Wizards,Milwaukee Bucks,114,113,DraftKings,-11.5,-10.5,-110,-108,232.5,234.5,-550,-500,410,380
+401810325,2026-01-01,Portland Trail Blazers,Oklahoma City Thunder,95,124,DraftKings,-15.5,-15.5,-105,-112,233.5,232.5,-1100,-1000,700,650
+401810326,2026-01-01,Houston Rockets,Brooklyn Nets,120,96,DraftKings,11.5,13.5,-110,-118,222.5,217.5,390,440,-520,-600
+401810327,2026-01-02,Miami Heat,Detroit Pistons,118,112,DraftKings,-4.5,-4.5,-115,-108,239.5,235.5,-192,-185,160,154
+401810328,2026-01-02,Philadelphia 76ers,Dallas Mavericks,123,108,DraftKings,1.5,2.5,-115,-110,230.5,231.5,-105,114,-115,-135
+401810329,2026-01-02,Boston Celtics,Sacramento Kings,120,106,DraftKings,9.5,10.5,-110,-112,228.5,229.5,295,340,-375,-440
+401810330,2026-01-02,Utah Jazz,LA Clippers,101,118,DraftKings,-9.5,-13.5,-110,-118,236.5,230.5,-425,-850,330,575
+401810331,2026-01-03,San Antonio Spurs,Indiana Pacers,123,113,DraftKings,5.5,4.5,-115,-102,238.5,239.5,160,170,-192,-205
+401810332,2026-01-03,Brooklyn Nets,Washington Wizards,99,119,DraftKings,1.5,-2.5,-112,-115,227.5,224.5,-105,-148,-115,124
+401810333,2026-01-03,Denver Nuggets,Cleveland Cavaliers,108,113,DraftKings,-11.5,-13.5,-115,-110,236.5,240.5,-520,-850,390,575
+401810334,2026-01-03,Atlanta Hawks,New York Knicks,111,99,DraftKings,-6.5,-4.5,-115,-105,245.5,239.5,-265,-185,215,154
+401810335,2026-01-03,Orlando Magic,Chicago Bulls,114,121,DraftKings,4.5,5.5,-110,-115,237.5,233.5,145,164,-175,-198
+401810336,2026-01-03,Charlotte Hornets,Milwaukee Bucks,121,122,DraftKings,-5.5,-5.5,-110,-118,231.5,233.5,-230,-230,190,190
+401810337,2026-01-03,Portland Trail Blazers,New Orleans Pelicans,122,109,DraftKings,1.5,3.5,-110,-110,241.5,240.5,100,136,-120,-162
+401810338,2026-01-03,Sacramento Kings,Phoenix Suns,102,129,DraftKings,-11.5,-13.5,-110,-110,228.5,223.5,-600,-750,440,525
+401810339,2026-01-03,Oklahoma City Thunder,Golden State Warriors,131,94,DraftKings,7.5,13.5,-110,-108,230.5,226.5,220,500,-270,-700
+401810340,2026-01-03,Memphis Grizzlies,Los Angeles Lakers,121,128,DraftKings,-4.5,-5.5,-105,-102,239.5,241.5,-170,-205,142,170
+401810341,2026-01-03,Minnesota Timberwolves,Miami Heat,125,115,DraftKings,3.5,2.5,-110,-105,237.5,235.5,130,120,-155,-142
+401810342,2026-01-04,Philadelphia 76ers,New York Knicks,130,119,DraftKings,-4.5,-3.5,-110,-115,233.5,233.5,-175,-175,145,145
+401810343,2026-01-04,Atlanta Hawks,Toronto Raptors,117,134,DraftKings,-2.5,-5.5,-110,-105,232.5,232.5,-135,-205,114,170
+401810344,2026-01-04,Charlotte Hornets,Chicago Bulls,112,99,DraftKings,-1.5,-2.5,-110,-105,237.5,241.5,-122,-135,102,114
+401810345,2026-01-04,Portland Trail Blazers,San Antonio Spurs,115,110,DraftKings,-7.5,-8.5,-110,-102,241.5,234.5,-278,-325,225,260
+401810346,2026-01-04,Houston Rockets,Dallas Mavericks,104,110,DraftKings,7.5,7.5,-110,-102,225.5,228.5,230,260,-285,-325
+401810347,2026-01-04,Utah Jazz,Golden State Warriors,114,123,DraftKings,-12.5,-12.5,-110,-112,238.5,248.5,-520,-600,390,440
+401810348,2026-01-04,Boston Celtics,LA Clippers,146,115,DraftKings,1.5,-1.5,-115,-115,221.5,219.5,-105,-135,-115,114
+401810349,2026-01-04,Detroit Pistons,Cleveland Cavaliers,114,110,DraftKings,-4.5,-3.5,-110,-105,235.5,239.5,-175,-155,145,130
+401810350,2026-01-04,Indiana Pacers,Orlando Magic,127,135,DraftKings,-7.5,-6.5,-110,-110,225.5,228.5,-290,-245,235,200
+401810351,2026-01-04,Denver Nuggets,Brooklyn Nets,115,127,DraftKings,2.5,2.5,-105,-112,219.5,224.5,120,120,-142,-142
+401810352,2026-01-04,New Orleans Pelicans,Miami Heat,106,125,DraftKings,-6.5,-7.5,-110,-115,240.5,247.5,-250,-298,205,240
+401810353,2026-01-04,Minnesota Timberwolves,Washington Wizards,141,115,DraftKings,10.5,10.5,-115,-102,234.5,240.5,370,330,-485,-425
+401810354,2026-01-05,Oklahoma City Thunder,Phoenix Suns,105,108,DraftKings,8.5,10.5,-115,-115,226.5,229.5,285,310,-360,-395
+401810355,2026-01-05,Milwaukee Bucks,Sacramento Kings,115,98,DraftKings,6.5,6.5,-115,-110,228.5,227.5,195,195,-238,-238
+401810356,2026-01-05,Memphis Grizzlies,Los Angeles Lakers,114,120,DraftKings,-5.5,-5.5,-115,-112,240.5,238.5,-225,-218,185,180
+401810357,2026-01-06,New York Knicks,Detroit Pistons,90,121,DraftKings,2.5,1.5,-110,-112,235.5,233.5,114,105,-135,-125
+401810358,2026-01-06,Chicago Bulls,Boston Celtics,101,115,DraftKings,-10.5,-10.5,-110,-105,236.5,236.5,-455,-455,350,350
+401810359,2026-01-06,Atlanta Hawks,Toronto Raptors,100,118,DraftKings,-3.5,-2.5,-115,-108,235.5,237.5,-166,-135,140,114
+401810360,2026-01-06,Phoenix Suns,Houston Rockets,97,100,DraftKings,-7.5,-8.5,-110,-102,222.5,222.5,-290,-305,235,245
+401810361,2026-01-06,Charlotte Hornets,Oklahoma City Thunder,124,97,DraftKings,-16.5,-15.5,-110,-105,232.5,235.5,-1350,-1050,800,675
+401810362,2026-01-06,Denver Nuggets,Philadelphia 76ers,125,124,DraftKings,-10.5,-14.5,-110,-115,227.5,228.5,-455,-850,350,575
+401810363,2026-01-06,Golden State Warriors,LA Clippers,102,103,DraftKings,-1.5,3.5,-110,-105,224.5,222.5,-120,136,100,-162
+401810364,2026-01-06,Utah Jazz,Portland Trail Blazers,117,137,DraftKings,-5.5,-5.5,-110,-118,243.5,242.5,-218,-230,180,190
+401810365,2026-01-07,Cleveland Cavaliers,Indiana Pacers,120,116,DraftKings,4.5,6.5,-105,-108,232.5,237.5,160,200,-192,-245
+401810366,2026-01-07,Orlando Magic,Washington Wizards,112,120,DraftKings,7.5,7.5,-110,-110,234.5,235.5,235,235,-290,-290
+401810367,2026-01-07,San Antonio Spurs,Memphis Grizzlies,105,106,DraftKings,5.5,5.5,-110,-102,237.5,237.5,170,200,-205,-245
+401810368,2026-01-07,Miami Heat,Minnesota Timberwolves,94,122,DraftKings,-5.5,-5.5,-115,-110,236.5,238.5,-218,-205,180,170
+401810369,2026-01-07,Los Angeles Lakers,New Orleans Pelicans,111,103,DraftKings,5.5,5.5,-115,-110,237.5,245.5,170,185,-205,-225
+401810370,2026-01-07,Dallas Mavericks,Sacramento Kings,100,98,DraftKings,4.5,4.5,-105,-105,230.5,233.5,154,160,-185,-192
+401810371,2026-01-08,Toronto Raptors,Charlotte Hornets,97,96,DraftKings,2.5,2.5,-115,-115,231.5,229.5,105,114,-125,-135
+401810372,2026-01-08,Chicago Bulls,Detroit Pistons,93,108,DraftKings,-10.5,-7.5,-110,-120,233.5,227.5,-440,-325,340,260
+401810373,2026-01-08,Washington Wizards,Philadelphia 76ers,110,131,DraftKings,-11.5,-16.5,-110,-110,234.5,233.5,-550,-850,410,575
+401810374,2026-01-08,New Orleans Pelicans,Atlanta Hawks,100,117,DraftKings,-9.5,-10.5,-110,-115,241.5,246.5,-360,-440,285,340
+401810375,2026-01-08,Denver Nuggets,Boston Celtics,114,110,DraftKings,-9.5,-10.5,-110,-105,229.5,230.5,-380,-375,300,295
+401810376,2026-01-08,Orlando Magic,Brooklyn Nets,104,103,DraftKings,2.5,2.5,-115,-118,223.5,220.5,110,105,-130,-125
+401810377,2026-01-08,LA Clippers,New York Knicks,111,123,DraftKings,-5.5,-4.5,-115,-118,225.5,223.5,-218,-205,180,170
+401810378,2026-01-08,Los Angeles Lakers,San Antonio Spurs,91,107,DraftKings,-5.5,-8.5,-110,-115,234.5,233.5,-205,-310,170,250
+401810379,2026-01-08,Phoenix Suns,Memphis Grizzlies,117,98,DraftKings,3.5,5.5,-110,-110,227.5,231.5,136,170,-162,-205
+401810380,2026-01-08,Utah Jazz,Oklahoma City Thunder,125,129,DraftKings,-17.5,-19.5,-110,-110,237.5,242.5,-1650,-1100,950,700
+401810381,2026-01-08,Milwaukee Bucks,Golden State Warriors,113,120,DraftKings,-6.5,-6.5,-105,-108,227.5,228.5,-238,-258,195,210
+401810382,2026-01-08,Houston Rockets,Portland Trail Blazers,102,103,DraftKings,5.5,7.5,-110,-110,225.5,222.5,180,220,-218,-270
+401810383,2026-01-09,Indiana Pacers,Charlotte Hornets,114,112,DraftKings,-3.5,-4.5,-115,-112,234.5,232.5,-162,-185,136,154
+401810385,2026-01-09,Cleveland Cavaliers,Minnesota Timberwolves,122,131,DraftKings,-3.5,-3.5,-110,-105,238.5,239.5,-155,-148,130,124
+401810386,2026-01-09,Dallas Mavericks,Utah Jazz,114,116,DraftKings,5.5,5.5,-110,-118,241.5,243.5,180,160,-218,-192
+401810387,2026-01-10,Toronto Raptors,Boston Celtics,117,125,DraftKings,-7.5,-9.5,-115,-112,223.5,223.5,-290,-360,235,285
+401810388,2026-01-10,Philadelphia 76ers,Orlando Magic,103,91,DraftKings,1.5,3.5,-110,-115,227.5,226.5,100,130,-120,-155
+401810389,2026-01-10,New Orleans Pelicans,Washington Wizards,128,107,DraftKings,2.5,3.5,-110,-115,239.5,242.5,114,124,-135,-148
+401810390,2026-01-10,LA Clippers,Brooklyn Nets,121,105,DraftKings,3.5,5.5,-110,-105,213.5,214.5,120,180,-142,-218
+401810391,2026-01-10,Oklahoma City Thunder,Memphis Grizzlies,117,116,DraftKings,4.5,5.5,-108,-105,231.5,229.5,150,180,-180,-218
+401810392,2026-01-10,Atlanta Hawks,Denver Nuggets,110,87,DraftKings,-1.5,3.5,-115,-115,238.5,229.5,-130,124,110,-148
+401810393,2026-01-10,New York Knicks,Phoenix Suns,107,112,DraftKings,2.5,1.5,-105,-115,233.5,229.5,120,-102,-142,-118
+401810394,2026-01-10,Sacramento Kings,Golden State Warriors,103,137,DraftKings,-12.5,-15.5,-115,-102,229.5,231.5,-750,-800,525,550
+401810395,2026-01-10,Houston Rockets,Portland Trail Blazers,105,111,DraftKings,5.5,6.5,-108,-105,220.5,222.5,180,210,-218,-258
+401810396,2026-01-10,Milwaukee Bucks,Los Angeles Lakers,105,101,DraftKings,-2.5,-3.5,-110,-105,231.5,228.5,-135,-155,114,130
+401810397,2026-01-10,Minnesota Timberwolves,Cleveland Cavaliers,134,146,DraftKings,-3.5,-2.5,-110,-112,238.5,240.5,-155,-142,130,120
+401810398,2026-01-11,Miami Heat,Indiana Pacers,99,123,DraftKings,7.5,6.5,-110,-112,236.5,235.5,230,200,-285,-245
+401810399,2026-01-11,LA Clippers,Detroit Pistons,98,92,DraftKings,-5.5,-1.5,-115,-105,220.5,213.5,-230,-115,190,-105
+401810400,2026-01-11,San Antonio Spurs,Boston Celtics,100,95,DraftKings,-1.5,1.5,-105,-115,228.5,231.5,-115,-108,-105,-112
+401810401,2026-01-11,Dallas Mavericks,Chicago Bulls,107,125,DraftKings,-2.5,-4.5,-115,-105,231.5,233.5,-142,-175,120,145
+401810402,2026-01-11,Charlotte Hornets,Utah Jazz,150,95,DraftKings,4.5,6.5,-110,-118,238.5,241.5,150,170,-180,-205
+401810403,2026-01-11,New Orleans Pelicans,Orlando Magic,118,128,DraftKings,-6.5,-7.5,-105,-108,234.5,236.5,-225,-258,185,210
+401810404,2026-01-11,Brooklyn Nets,Memphis Grizzlies,98,103,DraftKings,-6.5,-7.5,-115,-115,222.5,220.5,-250,-265,205,215
+401810405,2026-01-11,Philadelphia 76ers,Toronto Raptors,115,116,DraftKings,4.5,1.5,-115,-108,231.5,219.5,142,105,-170,-125
+401810406,2026-01-11,New York Knicks,Portland Trail Blazers,123,114,DraftKings,4.5,5.5,-110,-108,231.5,230.5,145,180,-180,-218
+401810407,2026-01-12,San Antonio Spurs,Minnesota Timberwolves,103,104,DraftKings,-2.5,-2.5,-110,-108,234.5,233.5,-142,-142,120,120
+401810408,2026-01-12,Miami Heat,Oklahoma City Thunder,112,124,DraftKings,-14.5,-14.5,-105,-118,233.5,234.5,-850,-800,575,550
+401810409,2026-01-12,Milwaukee Bucks,Denver Nuggets,104,108,DraftKings,1.5,6.5,-105,-115,223.5,219.5,105,180,-130,-218
+401810410,2026-01-12,Washington Wizards,Phoenix Suns,93,112,DraftKings,-13.5,-15.5,-110,-102,229.5,230.5,-850,-900,575,600
+401810411,2026-01-12,Atlanta Hawks,Golden State Warriors,124,111,DraftKings,-6.5,-7.5,-110,-105,235.5,237.5,-230,-278,190,225
+401810412,2026-01-12,Houston Rockets,Sacramento Kings,98,111,DraftKings,12.5,14.5,-110,-110,223.5,223.5,470,525,-650,-750
+401810413,2026-01-13,Utah Jazz,Cleveland Cavaliers,123,112,DraftKings,-12.5,-13.5,-118,-105,248.5,249.5,-750,-575,525,425
+401810414,2026-01-13,Boston Celtics,Indiana Pacers,96,98,DraftKings,6.5,5.5,-110,-112,224.5,227.5,205,170,-250,-205
+401810415,2026-01-13,Philadelphia 76ers,Toronto Raptors,115,102,DraftKings,2.5,3.5,-110,-110,222.5,221.5,114,136,-135,-162
+401810416,2026-01-13,Brooklyn Nets,Dallas Mavericks,105,113,DraftKings,-4.5,-3.5,-110,-105,222.5,218.5,-185,-155,154,130
+401810417,2026-01-13,Los Angeles Lakers,Sacramento Kings,112,124,DraftKings,9.5,9.5,-110,-112,228.5,231.5,300,285,-380,-360
+401810418,2026-01-13,Charlotte Hornets,LA Clippers,109,117,DraftKings,-5.5,-4.5,-110,-118,224.5,222.5,-218,-192,180,160
+401810419,2026-01-14,Phoenix Suns,Miami Heat,121,127,DraftKings,1.5,-1.5,-115,-115,230.5,232.5,-105,-122,-115,102
+401810420,2026-01-14,Chicago Bulls,Houston Rockets,113,119,DraftKings,-11.5,-12.5,-110,-108,225.5,224.5,-550,-550,410,410
+401810421,2026-01-14,Minnesota Timberwolves,Milwaukee Bucks,139,106,DraftKings,-2.5,-1.5,-110,-115,228.5,229.5,-135,-130,114,110
+401810422,2026-01-14,Denver Nuggets,New Orleans Pelicans,122,116,DraftKings,3.5,2.5,-110,-112,234.5,234.5,130,114,-155,-135
+401810423,2026-01-14,San Antonio Spurs,Oklahoma City Thunder,98,119,DraftKings,-6.5,-8.5,-110,-108,229.5,230.5,-250,-310,205,250
+401810424,2026-01-14,Atlanta Hawks,Los Angeles Lakers,116,141,DraftKings,-1.5,-1.5,-105,-112,234.5,233.5,-115,-125,-105,105
+401810425,2026-01-14,Portland Trail Blazers,Golden State Warriors,97,119,DraftKings,-10.5,-10.5,-105,-115,226.5,225.5,-395,-470,310,360
+401810426,2026-01-15,Toronto Raptors,Indiana Pacers,115,101,DraftKings,2.5,-1.5,-115,-108,224.5,220.5,110,-118,-130,-102
+401810427,2026-01-15,Cleveland Cavaliers,Philadelphia 76ers,133,107,DraftKings,-1.5,1.5,-110,-120,238.5,236.5,-120,-110,100,-110
+401810428,2026-01-15,Utah Jazz,Chicago Bulls,126,128,DraftKings,-2.5,-5.5,-110,-118,245.5,240.5,-135,-225,114,185
+401810429,2026-01-15,Brooklyn Nets,New Orleans Pelicans,113,116,DraftKings,1.5,-1.5,-108,105,229.5,232.5,102,-112,-122,-108
+401810430,2026-01-15,Denver Nuggets,Dallas Mavericks,118,109,DraftKings,1.5,-1.5,-120,-105,224.5,224.5,-110,-115,-110,-105
+401810431,2026-01-15,New York Knicks,Sacramento Kings,101,112,DraftKings,10.5,10.5,-110,-102,232.5,229.5,390,350,-520,-455
+401810432,2026-01-15,Washington Wizards,LA Clippers,105,119,DraftKings,-13.5,-11.5,-110,-115,225.5,227.5,-800,-500,550,380
+401810433,2026-01-15,Memphis Grizzlies,Orlando Magic,111,118,DraftKings,-4.5,-5.5,-112,-108,230.5,227.5,-180,-230,150,190
+401810434,2026-01-16,Phoenix Suns,Detroit Pistons,105,108,DraftKings,-6.5,-7.5,-105,-108,221.5,219.5,-238,-265,195,215
+401810435,2026-01-16,Boston Celtics,Miami Heat,119,114,DraftKings,1.5,2.5,-110,-108,232.5,235.5,102,124,-122,-148
+401810436,2026-01-16,Oklahoma City Thunder,Houston Rockets,111,91,DraftKings,4.5,4.5,-105,-112,221.5,221.5,150,145,-180,-175
+401810437,2026-01-16,Milwaukee Bucks,San Antonio Spurs,101,119,DraftKings,-7.5,-7.5,-115,-105,227.5,225.5,-290,-238,235,195
+401810438,2026-01-16,Utah Jazz,Dallas Mavericks,122,144,DraftKings,1.5,-2.5,-115,-108,235.5,238.5,-105,-135,-115,114
+401810439,2026-01-16,New York Knicks,Golden State Warriors,113,126,DraftKings,-3.5,-7.5,-110,-108,231.5,228.5,-155,-265,130,215
+401810440,2026-01-16,Atlanta Hawks,Portland Trail Blazers,101,117,DraftKings,4.5,3.5,-110,-105,229.5,229.5,154,142,-185,-170
+401810441,2026-01-16,Charlotte Hornets,Los Angeles Lakers,135,117,DraftKings,-4.5,-3.5,-115,-102,233.5,233.5,-192,-162,160,136
+401810442,2026-01-17,Chicago Bulls,Brooklyn Nets,109,112,DraftKings,1.5,-1.5,-120,-105,225.5,224.5,-110,-115,-110,-105
+401810443,2026-01-17,New Orleans Pelicans,Indiana Pacers,119,127,DraftKings,-1.5,-4.5,-110,-115,235.5,241.5,-120,-192,100,160
+401810444,2026-01-17,Cleveland Cavaliers,Philadelphia 76ers,117,115,DraftKings,-1.5,-2.5,-102,-105,235.5,233.5,-112,-135,-108,114
+401810445,2026-01-17,LA Clippers,Toronto Raptors,121,117,DraftKings,1.5,-2.5,-110,-108,216.5,213.5,100,-135,-120,114
+401810446,2026-01-17,Minnesota Timberwolves,Houston Rockets,105,110,DraftKings,-3.5,-3.5,-110,-120,223.5,221.5,-170,-162,142,136
+401810447,2026-01-17,Washington Wizards,Sacramento Kings,115,128,DraftKings,-7.5,-7.5,-105,-108,231.5,234.5,-258,-265,210,215
+401810448,2026-01-17,Utah Jazz,Dallas Mavericks,120,138,DraftKings,-3.5,-3.5,-115,-102,242.5,240.5,-166,-155,140,130
+401810449,2026-01-18,Boston Celtics,Atlanta Hawks,132,106,DraftKings,4.5,3.5,-110,-110,229.5,230.5,150,136,-180,-162
+401810450,2026-01-18,Indiana Pacers,Detroit Pistons,78,121,DraftKings,-12.5,-15.5,-110,-112,225.5,225.5,-700,-950,500,625
+401810451,2026-01-18,Phoenix Suns,New York Knicks,106,99,DraftKings,-3.5,-1.5,-110,-108,223.5,224.5,-170,-115,142,-105
+401810452,2026-01-18,Oklahoma City Thunder,Miami Heat,120,122,DraftKings,9.5,11.5,-110,-112,234.5,235.5,285,390,-360,-520
+401810453,2026-01-18,Minnesota Timberwolves,San Antonio Spurs,123,126,DraftKings,-6.5,-4.5,-110,-115,229.5,234.5,-238,-198,195,164
+401810454,2026-01-18,Charlotte Hornets,Golden State Warriors,116,136,DraftKings,-6.5,-7.5,-115,-115,234.5,236.5,-250,-298,205,240
+401810455,2026-01-18,Washington Wizards,Denver Nuggets,115,121,DraftKings,-12.5,-10.5,-110,-108,231.5,227.5,-575,-485,425,370
+401810456,2026-01-18,Los Angeles Lakers,Portland Trail Blazers,116,132,DraftKings,-2.5,-3.5,-110,-108,224.5,223.5,-135,-155,114,130
+401810457,2026-01-18,Orlando Magic,Memphis Grizzlies,109,126,DraftKings,5.5,2.5,-110,-105,227.5,229.5,170,120,-205,-142
+401809247,2026-01-19,Milwaukee Bucks,Atlanta Hawks,112,110,DraftKings,-1.5,-1.5,-110,-105,231.5,232.5,-122,-120,102,100
+401809248,2026-01-19,Oklahoma City Thunder,Cleveland Cavaliers,136,104,DraftKings,6.5,6.5,-105,-118,233.5,229.5,180,185,-218,-225
+401809249,2026-01-19,Dallas Mavericks,New York Knicks,114,97,DraftKings,-9.5,-12.5,-110,-115,229.5,231.5,-410,-550,320,410
+401810458,2026-01-19,Brooklyn Nets,Chicago Bulls,102,124,DraftKings,-5.5,-7.5,-115,-102,222.5,223.5,-218,-258,180,210
+401810459,2026-01-19,New Orleans Pelicans,Houston Rockets,110,119,DraftKings,-12.5,-13.5,-110,-115,229.5,232.5,-700,-850,500,575
+401810460,2026-01-19,Charlotte Hornets,Denver Nuggets,110,87,DraftKings,-3.5,2.5,-105,-108,230.5,225.5,-148,114,124,-135
+401810461,2026-01-19,Portland Trail Blazers,Sacramento Kings,117,110,DraftKings,-1.5,1.5,-115,-112,228.5,230.5,-125,-102,105,-118
+401810462,2026-01-19,Toronto Raptors,Los Angeles Lakers,93,110,DraftKings,-1.5,-2.5,-105,-112,226.5,226.5,-115,-135,-105,114
+401810463,2026-01-19,LA Clippers,Washington Wizards,110,106,DraftKings,7.5,6.5,-115,-110,223.5,227.5,230,210,-285,-258
+401810466,2026-01-19,Utah Jazz,San Antonio Spurs,110,123,DraftKings,-16.5,-16.5,-110,-115,240.5,237.5,-1100,-1000,700,650
+401809250,2026-01-20,Boston Celtics,Detroit Pistons,103,104,DraftKings,-3.5,-2.5,-110,-110,224.5,223.5,-155,-135,130,114
+401810464,2026-01-20,Indiana Pacers,Philadelphia 76ers,104,113,DraftKings,-8.5,-6.5,-110,-115,228.5,230.5,-340,-258,270,210
+401810465,2026-01-20,Phoenix Suns,Brooklyn Nets,126,117,DraftKings,7.5,9.5,-110,-115,218.5,214.5,240,310,-298,-395
+401810467,2026-01-20,Miami Heat,Golden State Warriors,112,135,DraftKings,-6.5,-5.5,-105,-105,236.5,239.5,-225,-205,185,170
+401810468,2026-01-21,Phoenix Suns,Philadelphia 76ers,116,110,DraftKings,-1.5,2.5,-105,-112,224.5,222.5,-115,120,-105,-142
+401810469,2026-01-21,LA Clippers,Chicago Bulls,110,138,DraftKings,-1.5,-2.5,-115,-110,227.5,224.5,-125,-142,105,120
+401810470,2026-01-21,San Antonio Spurs,Houston Rockets,106,111,DraftKings,-3.5,-4.5,-110,-112,224.5,220.5,-155,-175,130,145
+401810471,2026-01-21,Minnesota Timberwolves,Utah Jazz,122,127,DraftKings,10.5,12.5,-110,-105,244.5,238.5,350,470,-455,-650
+401810472,2026-01-21,Los Angeles Lakers,Denver Nuggets,115,107,DraftKings,1.5,3.5,-115,-112,226.5,228.5,-102,140,-118,-166
+401810473,2026-01-21,Toronto Raptors,Golden State Warriors,145,127,DraftKings,-6.5,-4.5,-105,-108,228.5,224.5,-230,-180,190,150
+401810474,2026-01-21,Miami Heat,Sacramento Kings,130,117,DraftKings,2.5,4.5,-115,-112,236.5,238.5,114,150,-135,-180
+401810475,2026-01-22,Cleveland Cavaliers,Charlotte Hornets,94,87,DraftKings,2.5,3.5,-110,-115,236.5,238.5,120,130,-142,-155
+401810476,2026-01-22,Indiana Pacers,Boston Celtics,104,119,DraftKings,-10.5,-10.5,-110,-110,227.5,225.5,-485,-470,370,360
+401810477,2026-01-22,Brooklyn Nets,New York Knicks,66,120,DraftKings,-11.5,-12.5,-110,-112,225.5,219.5,-600,-625,440,455
+401810478,2026-01-22,Atlanta Hawks,Memphis Grizzlies,124,122,DraftKings,-2.5,-1.5,-110,-102,236.5,239.5,-142,-120,120,100
+401810479,2026-01-22,Detroit Pistons,New Orleans Pelicans,112,104,DraftKings,8.5,7.5,-110,-112,232.5,233.5,270,220,-340,-270
+401810480,2026-01-22,Oklahoma City Thunder,Milwaukee Bucks,122,102,DraftKings,9.5,12.5,-110,-118,226.5,225.5,310,410,-395,-550
+401810481,2026-01-22,Toronto Raptors,Sacramento Kings,122,109,DraftKings,4.5,5.5,-105,-118,223.5,226.5,160,170,-192,-205
+401810482,2026-01-23,Charlotte Hornets,Orlando Magic,124,97,DraftKings,-6.5,-3.5,-110,-112,230.5,224.5,-250,-166,205,140
+401810483,2026-01-23,Houston Rockets,Philadelphia 76ers,122,128,DraftKings,2.5,1.5,-105,-105,221.5,221.5,120,114,-142,-135
+401810484,2026-01-23,Denver Nuggets,Washington Wizards,107,97,DraftKings,6.5,6.5,-110,-112,230.5,227.5,200,205,-245,-250
+401810485,2026-01-23,Golden State Warriors,Dallas Mavericks,115,123,DraftKings,2.5,6.5,-105,-112,230.5,234.5,120,205,-142,-250
+401810486,2026-01-23,Chicago Bulls,Minnesota Timberwolves,120,115,DraftKings,-9.5,-9.5,-110,-105,238.5,239.5,-410,-375,320,295
+401810487,2026-01-23,San Antonio Spurs,Utah Jazz,126,109,DraftKings,13.5,12.5,-110,-112,238.5,238.5,525,425,-750,-575
+401810488,2026-01-23,Los Angeles Lakers,LA Clippers,104,112,DraftKings,1.5,-2.5,-120,-112,223.5,224.5,-110,-142,-110,120
+401810489,2026-01-23,Miami Heat,Portland Trail Blazers,110,127,DraftKings,-2.5,-3.5,-110,-105,240.5,234.5,-135,-155,114,130
+401810490,2026-01-24,Houston Rockets,Detroit Pistons,111,104,DraftKings,-3.5,-4.5,-110,-110,217.5,217.5,-155,-175,130,145
+401810491,2026-01-24,Phoenix Suns,Atlanta Hawks,103,110,DraftKings,3.5,3.5,-110,-115,230.5,233.5,130,124,-155,-148
+401810492,2026-01-24,Boston Celtics,Brooklyn Nets,130,126,DraftKings,8.5,8.5,-105,-118,216.5,215.5,285,280,-360,-355
+401810493,2026-01-24,Sacramento Kings,Cleveland Cavaliers,118,123,DraftKings,-12.5,-13.5,-110,-105,235.5,233.5,-600,-575,440,425
+401810494,2026-01-24,New Orleans Pelicans,Memphis Grizzlies,133,127,DraftKings,-4.5,-4.5,-110,-118,237.5,240.5,-180,-198,150,164
+401810495,2026-01-24,Denver Nuggets,Milwaukee Bucks,102,100,DraftKings,-4.5,-8.5,-110,-115,222.5,213.5,-185,-325,154,260
+401810496,2026-01-24,Indiana Pacers,Oklahoma City Thunder,117,114,DraftKings,-16.5,-15.5,-110,-110,226.5,226.5,-1200,-900,750,600
+401810497,2026-01-24,Toronto Raptors,Portland Trail Blazers,110,98,DraftKings,2.5,3.5,-110,-105,227.5,225.5,114,142,-135,-170
+401810498,2026-01-24,New York Knicks,Philadelphia 76ers,112,109,DraftKings,1.5,1.5,-120,-118,229.5,227.5,-110,-105,-110,-115
+401810500,2026-01-24,Washington Wizards,Charlotte Hornets,115,119,DraftKings,-10.5,-11.5,-115,-112,231.5,231.5,-485,-520,370,390
+401810501,2026-01-25,Cleveland Cavaliers,Orlando Magic,119,105,DraftKings,1.5,-1.5,-110,-110,228.5,225.5,100,-122,-120,102
+401810502,2026-01-25,Boston Celtics,Chicago Bulls,111,114,DraftKings,3.5,3.5,-105,-115,233.5,232.5,136,130,-162,-155
+401810503,2026-01-25,Los Angeles Lakers,Dallas Mavericks,116,110,DraftKings,3.5,4.5,-110,-118,233.5,233.5,140,145,-166,-175
+401810504,2026-01-25,Miami Heat,Utah Jazz,147,116,DraftKings,7.5,6.5,-110,-110,245.5,244.5,220,210,-270,-258
+401810505,2026-01-25,Sacramento Kings,Detroit Pistons,116,139,DraftKings,-14.5,-12.5,-110,-115,226.5,226.5,-800,-650,550,470
+401857824,2026-01-25,Golden State Warriors,Minnesota Timberwolves,111,85,DraftKings,-6.5,-5.5,-110,-105,236.5,237.5,-230,-198,190,164
+401810508,2026-01-26,Toronto Raptors,Oklahoma City Thunder,103,101,DraftKings,-12.5,-11.5,-110,-105,225.5,225.5,-575,-520,425,390
+401810509,2026-01-26,New Orleans Pelicans,San Antonio Spurs,104,95,DraftKings,-12.5,-11.5,-110,-110,237.5,239.5,-675,-535,490,400
+401810510,2026-01-26,Miami Heat,Phoenix Suns,111,102,DraftKings,-3.5,-4.5,-110,-108,230.5,225.5,-155,-180,130,150
+401810511,2026-01-26,Brooklyn Nets,LA Clippers,89,126,DraftKings,-9.5,-10.5,-115,-112,212.5,211.5,-395,-470,310,360
+401810512,2026-01-26,Philadelphia 76ers,Charlotte Hornets,93,130,DraftKings,-2.5,-1.5,-115,-112,226.5,229.5,-148,-122,124,102
+401810514,2026-01-26,Indiana Pacers,Atlanta Hawks,116,132,DraftKings,-4.5,-5.5,-115,-108,232.5,234.5,-185,-225,154,185
+401810513,2026-01-27,Orlando Magic,Cleveland Cavaliers,98,114,DraftKings,-4.5,-4.5,-115,-118,226.5,221.5,-192,-205,160,170
+401810515,2026-01-27,Portland Trail Blazers,Boston Celtics,94,102,DraftKings,-7.5,-8.5,-115,-110,224.5,223.5,-298,-345,240,275
+401810516,2026-01-27,Los Angeles Lakers,Chicago Bulls,129,118,DraftKings,1.5,1.5,-108,-108,236.5,235.5,105,100,-125,-120
+401810517,2026-01-27,Memphis Grizzlies,Houston Rockets,99,108,DraftKings,-10.5,-11.5,-115,-102,222.5,225.5,-470,-520,360,390
+401810518,2026-01-27,Golden State Warriors,Minnesota Timberwolves,83,108,DraftKings,-7.5,-8.5,-110,-105,232.5,226.5,-290,-298,235,240
+401810519,2026-01-28,Portland Trail Blazers,Washington Wizards,111,115,DraftKings,7.5,7.5,-110,-118,233.5,232.5,230,210,-285,-258
+401810520,2026-01-28,Sacramento Kings,New York Knicks,87,103,DraftKings,-13.5,-14.5,-105,-112,230.5,225.5,-650,-800,470,550
+401810521,2026-01-28,Milwaukee Bucks,Philadelphia 76ers,122,139,DraftKings,-9.5,-10.5,-105,100,221.5,219.5,-375,-380,295,300
+401810522,2026-01-28,New Orleans Pelicans,Oklahoma City Thunder,95,104,DraftKings,-14.5,-14.5,-110,-108,234.5,233.5,-900,-850,600,575
+401810523,2026-01-28,Detroit Pistons,Denver Nuggets,109,107,DraftKings,5.5,7.5,-105,-115,218.5,216.5,180,225,-218,-278
+401810524,2026-01-28,Brooklyn Nets,Phoenix Suns,102,106,DraftKings,-8.5,-7.5,-110,-115,213.5,210.5,-340,-305,270,245
+401810525,2026-01-28,LA Clippers,Utah Jazz,115,103,DraftKings,10.5,8.5,-110,-105,231.5,234.5,330,270,-425,-340
+401810526,2026-01-29,Los Angeles Lakers,Cleveland Cavaliers,99,129,DraftKings,-2.5,-3.5,-110,-112,234.5,233.5,-135,-162,114,136
+401810527,2026-01-29,Chicago Bulls,Indiana Pacers,110,113,DraftKings,1.5,1.5,-110,-105,235.5,235.5,100,105,-120,-125
+401810528,2026-01-29,Atlanta Hawks,Boston Celtics,117,106,DraftKings,-7.5,-5.5,-110,-110,231.5,232.5,-298,-205,240,170
+401810529,2026-01-29,Orlando Magic,Miami Heat,133,124,DraftKings,-2.5,-3.5,-110,-108,228.5,232.5,-135,-148,114,124
+401810530,2026-01-29,New York Knicks,Toronto Raptors,119,92,DraftKings,-1.5,-1.5,-108,-115,224.5,220.5,-120,-122,100,102
+401810531,2026-01-29,Charlotte Hornets,Memphis Grizzlies,112,97,DraftKings,1.5,2.5,-110,-112,230.5,231.5,100,114,-120,-135
+401810532,2026-01-29,Minnesota Timberwolves,Dallas Mavericks,118,105,DraftKings,6.5,8.5,-105,-105,231.5,228.5,210,260,-258,-325
+401810533,2026-01-29,Golden State Warriors,Utah Jazz,140,124,DraftKings,8.5,8.5,-110,-108,240.5,242.5,250,240,-310,-298
+401810534,2026-01-29,San Antonio Spurs,Houston Rockets,111,99,DraftKings,-2.5,-2.5,-115,-112,219.5,220.5,-142,-142,120,120
+401810535,2026-01-30,Sacramento Kings,Philadelphia 76ers,111,113,DraftKings,-11.5,-9.5,-105,-115,227.5,229.5,-485,-410,370,320
+401810536,2026-01-30,Milwaukee Bucks,Washington Wizards,99,109,DraftKings,2.5,1.5,-110,-102,223.5,223.5,114,105,-135,-125
+401810537,2026-01-30,Houston Rockets,Atlanta Hawks,104,86,DraftKings,4.5,6.5,-110,-108,226.5,224.5,150,220,-180,-270
+401810538,2026-01-30,Charlotte Hornets,Dallas Mavericks,123,121,DraftKings,3.5,3.5,-105,-115,228.5,225.5,136,130,-162,-155
+401810539,2026-01-30,Brooklyn Nets,Denver Nuggets,103,107,DraftKings,-7.5,-6.5,-110,-105,211.5,209.5,-298,-245,240,200
+401810540,2026-01-30,Detroit Pistons,Phoenix Suns,96,114,DraftKings,5.5,3.5,-115,-115,215.5,214.5,164,130,-198,-155
+401810541,2026-01-30,Oklahoma City Thunder,Minnesota Timberwolves,111,123,DraftKings,5.5,5.5,-110,-110,226.5,227.5,180,170,-218,-205
+401850920,2026-01-30,Miami Heat,Chicago Bulls,116,113,DraftKings,-1.5,2.5,-110,-115,242.5,237.5,-120,110,100,-130
+401810542,2026-01-31,Toronto Raptors,Orlando Magic,120,130,DraftKings,-1.5,-2.5,-105,-110,221.5,221.5,-115,-142,-105,120
+401810543,2026-01-31,Los Angeles Lakers,Washington Wizards,142,111,DraftKings,8.5,10.5,-115,-105,229.5,229.5,260,360,-325,-470
+401810544,2026-01-31,Sacramento Kings,Boston Celtics,93,112,DraftKings,-10.5,-11.5,-110,-115,221.5,216.5,-485,-520,370,390
+401810545,2026-01-31,Portland Trail Blazers,New York Knicks,97,127,DraftKings,-7.5,-6.5,-105,-115,227.5,223.5,-258,-250,210,205
+401810546,2026-01-31,Memphis Grizzlies,New Orleans Pelicans,106,114,DraftKings,-2.5,-3.5,-110,-112,235.5,230.5,-135,-155,114,130
+401810548,2026-01-31,Cleveland Cavaliers,Phoenix Suns,113,126,DraftKings,4.5,1.5,-110,-105,224.5,221.5,145,102,-175,-122
+401810549,2026-01-31,Brooklyn Nets,Utah Jazz,109,99,DraftKings,-2.5,-3.5,-115,-115,228.5,226.5,-148,-162,124,136
+401810550,2026-01-31,LA Clippers,Denver Nuggets,109,122,DraftKings,5.5,2.5,-115,-110,210.5,218.5,180,120,-218,-142
+401810551,2026-01-31,Detroit Pistons,Golden State Warriors,131,124,DraftKings,1.5,-2.5,-110,-105,226.5,226.5,102,-130,-122,110
+401810552,2026-01-31,San Antonio Spurs,Charlotte Hornets,106,111,DraftKings,3.5,3.5,-110,-105,226.5,227.5,130,140,-155,-166
+401810547,2026-02-01,Chicago Bulls,Miami Heat,125,118,DraftKings,-4.5,-5.5,-110,-115,237.5,231.5,-192,-205,160,170
+401810553,2026-02-01,Atlanta Hawks,Indiana Pacers,124,129,DraftKings,1.5,1.5,-110,-112,233.5,234.5,102,102,-122,-122
+401810554,2026-02-01,New Orleans Pelicans,Philadelphia 76ers,114,124,DraftKings,-8.5,-6.5,-115,-105,232.5,234.5,-360,-225,285,185
+401810555,2026-02-01,Minnesota Timberwolves,Memphis Grizzlies,131,114,DraftKings,7.5,11.5,-110,-115,230.5,229.5,225,370,-278,-485
+401810556,2026-02-01,Dallas Mavericks,Houston Rockets,107,111,DraftKings,-10.5,-10.5,-115,-110,221.5,222.5,-535,-425,400,330
+401810557,2026-02-01,Milwaukee Bucks,Boston Celtics,79,107,DraftKings,-13.5,-12.5,-110,-115,217.5,217.5,-750,-625,525,455
+401810559,2026-02-01,Brooklyn Nets,Detroit Pistons,77,130,DraftKings,-13.5,-13.5,-110,-110,213.5,214.5,-750,-700,525,500
+401810560,2026-02-01,Chicago Bulls,Miami Heat,91,134,DraftKings,-3.5,-5.5,-105,-110,235.5,233.5,-155,-218,130,180
+401810561,2026-02-01,Utah Jazz,Toronto Raptors,100,107,DraftKings,-11.5,-10.5,-110,-102,233.5,234.5,-575,-395,425,310
+401810562,2026-02-01,Sacramento Kings,Washington Wizards,112,116,DraftKings,2.5,1.5,-110,-112,230.5,226.5,114,-102,-135,-118
+401810558,2026-02-02,Orlando Magic,San Antonio Spurs,103,112,DraftKings,-6.5,-4.5,-110,-112,225.5,222.5,-250,-198,205,164
+401810563,2026-02-02,Los Angeles Lakers,New York Knicks,100,112,DraftKings,-4.5,-5.5,-110,-118,229.5,227.5,-180,-225,150,185
+401810564,2026-02-02,LA Clippers,Phoenix Suns,117,93,DraftKings,-1.5,-2.5,-105,-115,214.5,209.5,-115,-148,-105,124
+401810565,2026-02-02,Cleveland Cavaliers,Portland Trail Blazers,130,111,DraftKings,1.5,3.5,-115,-102,229.5,228.5,-105,150,-115,-180
+401810566,2026-02-02,Oklahoma City Thunder,Denver Nuggets,121,111,DraftKings,4.5,7.5,-110,-122,228.5,225.5,150,190,-180,-230
+401810567,2026-02-02,New Orleans Pelicans,Charlotte Hornets,95,102,DraftKings,-6.5,-6.5,-115,-118,235.5,230.5,-270,-278,220,225
+401810568,2026-02-03,Houston Rockets,Indiana Pacers,118,114,DraftKings,5.5,6.5,-110,-115,218.5,218.5,170,205,-205,-250
+401810569,2026-02-03,Minnesota Timberwolves,Memphis Grizzlies,128,137,DraftKings,7.5,7.5,-115,-112,226.5,232.5,215,245,-265,-305
+401810570,2026-02-03,Philadelphia 76ers,LA Clippers,128,113,DraftKings,-2.5,1.5,-115,-118,221.5,220.5,-148,-105,124,-115
+401810571,2026-02-04,Denver Nuggets,Detroit Pistons,121,124,DraftKings,-6.5,-5.5,-110,-102,224.5,229.5,-230,-192,190,160
+401810572,2026-02-04,Utah Jazz,Indiana Pacers,131,122,DraftKings,-4.5,2.5,-110,-102,236.5,232.5,-192,120,160,-142
+401810573,2026-02-04,New York Knicks,Washington Wizards,132,101,DraftKings,13.5,12.5,-110,-105,226.5,227.5,525,455,-750,-625
+401810574,2026-02-04,Los Angeles Lakers,Brooklyn Nets,125,109,DraftKings,8.5,7.5,-105,-102,222.5,223.5,295,270,-375,-340
+401810575,2026-02-04,Atlanta Hawks,Miami Heat,127,115,DraftKings,-5.5,-1.5,-110,-105,237.5,235.5,-205,-118,170,-102
+401810576,2026-02-04,Boston Celtics,Dallas Mavericks,110,100,DraftKings,7.5,7.5,-110,-118,223.5,223.5,235,215,-290,-265
+401810577,2026-02-04,Chicago Bulls,Milwaukee Bucks,115,131,DraftKings,2.5,1.5,-110,-112,227.5,222.5,120,-102,-142,-118
+401810578,2026-02-04,Orlando Magic,Oklahoma City Thunder,92,128,DraftKings,-7.5,-11.5,-105,-115,219.5,222.5,-270,-520,220,390
+401810579,2026-02-04,Philadelphia 76ers,Golden State Warriors,113,94,DraftKings,-1.5,-4.5,-105,-112,217.5,222.5,-120,-175,100,145
+401810580,2026-02-04,Phoenix Suns,Portland Trail Blazers,130,125,DraftKings,2.5,2.5,-115,-105,222.5,218.5,114,124,-135,-148
+401810581,2026-02-05,Denver Nuggets,New York Knicks,127,134,DraftKings,-4.5,-4.5,-110,-118,226.5,228.5,-185,-192,154,160
+401810582,2026-02-05,Minnesota Timberwolves,Toronto Raptors,128,126,DraftKings,-1.5,2.5,-105,-112,225.5,228.5,-115,120,-105,-142
+401810583,2026-02-05,Boston Celtics,Houston Rockets,114,93,DraftKings,-5.5,-8.5,-115,-102,216.5,210.5,-225,-305,185,245
+401810584,2026-02-05,New Orleans Pelicans,Milwaukee Bucks,137,141,DraftKings,4.5,4.5,-105,-105,222.5,223.5,160,150,-192,-180
+401810585,2026-02-05,Oklahoma City Thunder,San Antonio Spurs,106,116,DraftKings,2.5,-9.5,-115,-115,226.5,221.5,110,-410,-130,320
+401810586,2026-02-05,Memphis Grizzlies,Sacramento Kings,129,125,DraftKings,-2.5,-2.5,-110,-115,230.5,236.5,-135,-148,114,124
+401810587,2026-02-05,Cleveland Cavaliers,LA Clippers,124,91,DraftKings,1.5,2.5,-110,-105,221.5,221.5,102,124,-122,-148
+401810588,2026-02-06,Washington Wizards,Detroit Pistons,126,117,DraftKings,-14.5,-16.5,-115,-115,224.5,227.5,-850,-1200,575,750
+401810589,2026-02-06,Brooklyn Nets,Orlando Magic,98,118,DraftKings,-11.5,-9.5,-115,-105,214.5,214.5,-575,-395,425,310
+401810590,2026-02-06,Utah Jazz,Atlanta Hawks,119,121,DraftKings,-9.5,-8.5,-115,-112,238.5,245.5,-360,-310,285,250
+401810591,2026-02-06,Chicago Bulls,Toronto Raptors,107,123,DraftKings,-9.5,-7.5,-105,-105,227.5,227.5,-395,-310,310,250
+401810592,2026-02-06,Charlotte Hornets,Houston Rockets,109,99,DraftKings,-4.5,-4.5,-105,-110,219.5,218.5,-166,-185,140,154
+401810593,2026-02-06,San Antonio Spurs,Dallas Mavericks,135,123,DraftKings,5.5,7.5,-105,-102,225.5,230.5,190,250,-230,-310
+401810594,2026-02-06,Golden State Warriors,Phoenix Suns,101,97,DraftKings,-6.5,-5.5,-110,-112,221.5,212.5,-238,-218,195,180
+401810595,2026-02-06,Philadelphia 76ers,Los Angeles Lakers,115,119,DraftKings,-3.5,-2.5,-110,-108,231.5,236.5,-155,-135,130,114
+401810596,2026-02-07,Miami Heat,Boston Celtics,96,98,DraftKings,-7.5,-5.5,-115,-112,229.5,227.5,-278,-225,225,185
+401810597,2026-02-07,New York Knicks,Detroit Pistons,80,118,DraftKings,-1.5,-5.5,-110,-112,224.5,219.5,-122,-218,102,180
+401810598,2026-02-07,Indiana Pacers,Milwaukee Bucks,99,105,DraftKings,-1.5,1.5,-105,-108,223.5,223.5,-118,102,-102,-122
+401810599,2026-02-07,New Orleans Pelicans,Minnesota Timberwolves,119,115,DraftKings,-11.5,-8.5,-110,-110,235.5,237.5,-455,-345,350,275
+401810600,2026-02-07,Memphis Grizzlies,Portland Trail Blazers,115,135,DraftKings,-6.5,-8.5,-115,-115,234.5,235.5,-265,-290,215,235
+401810601,2026-02-07,LA Clippers,Sacramento Kings,114,111,DraftKings,3.5,3.5,-110,-112,222.5,221.5,130,140,-155,-166
+401810602,2026-02-07,Washington Wizards,Brooklyn Nets,113,127,DraftKings,-4.5,-8.5,-110,100,220.5,216.5,-175,-298,145,240
+401810603,2026-02-07,Houston Rockets,Oklahoma City Thunder,112,106,DraftKings,-4.5,-3.5,-110,-112,215.5,213.5,-175,-162,145,136
+401810604,2026-02-07,Dallas Mavericks,San Antonio Spurs,125,138,DraftKings,-11.5,-11.5,-110,-108,230.5,234.5,-485,-455,370,350
+401810605,2026-02-08,Utah Jazz,Orlando Magic,117,120,DraftKings,-9.5,-7.5,-110,-105,235.5,234.5,-345,-278,275,225
+401810606,2026-02-08,Charlotte Hornets,Atlanta Hawks,126,119,DraftKings,2.5,1.5,-110,-108,230.5,232.5,114,105,-135,-125
+401810607,2026-02-08,Denver Nuggets,Chicago Bulls,136,120,DraftKings,4.5,9.5,-110,-115,229.5,235.5,154,275,-185,-345
+401810608,2026-02-08,Golden State Warriors,Los Angeles Lakers,99,105,DraftKings,-2.5,-1.5,-110,-118,225.5,220.5,-135,-130,114,110
+401810609,2026-02-08,Philadelphia 76ers,Phoenix Suns,109,103,DraftKings,-1.5,-2.5,102,-102,221.5,224.5,-110,-135,-110,114
+401810610,2026-02-08,Memphis Grizzlies,Portland Trail Blazers,115,122,DraftKings,-9.5,-9.5,-110,-105,237.5,228.5,-360,-340,285,270
+401810611,2026-02-08,Cleveland Cavaliers,Sacramento Kings,132,126,DraftKings,11.5,12.5,-105,-105,231.5,229.5,370,455,-485,-625
+401810612,2026-02-08,New York Knicks,Boston Celtics,111,89,DraftKings,-3.5,-3.5,-110,-102,214.5,215.5,-162,-155,136,130
+401810613,2026-02-08,Miami Heat,Washington Wizards,132,101,DraftKings,10.5,13.5,-110,-118,235.5,235.5,350,455,-455,-625
+401810614,2026-02-08,Indiana Pacers,Toronto Raptors,104,122,DraftKings,-8.5,-7.5,-110,-110,224.5,226.5,-340,-345,270,275
+401810615,2026-02-08,LA Clippers,Minnesota Timberwolves,115,96,DraftKings,7.5,-8.5,-115,-118,226.5,222.5,235,-360,-290,285
+401810616,2026-02-10,Detroit Pistons,Charlotte Hornets,110,104,DraftKings,2.5,2.5,-110,-115,225.5,222.5,114,114,-135,-135
+401810617,2026-02-10,Chicago Bulls,Brooklyn Nets,115,123,DraftKings,2.5,3.5,-110,-112,224.5,218.5,114,130,-135,-155
+401810618,2026-02-10,Utah Jazz,Miami Heat,115,111,DraftKings,-9.5,-5.5,-105,-115,243.5,234.5,-355,-250,280,205
+401810619,2026-02-10,Milwaukee Bucks,Orlando Magic,99,118,DraftKings,-8.5,-9.5,-110,-112,218.5,220.5,-345,-395,275,310
+401810620,2026-02-10,Atlanta Hawks,Minnesota Timberwolves,116,138,DraftKings,-6.5,-8.5,-110,-118,235.5,239.5,-250,-325,205,260
+401810621,2026-02-10,Sacramento Kings,New Orleans Pelicans,94,120,DraftKings,-5.5,-9.5,-110,-108,233.5,229.5,-218,-395,180,310
+401810622,2026-02-10,Cleveland Cavaliers,Denver Nuggets,119,117,DraftKings,1.5,-2.5,-110,-110,233.5,242.5,102,-135,-122,114
+401810623,2026-02-10,Memphis Grizzlies,Golden State Warriors,113,114,DraftKings,-6.5,-9.5,-110,-105,224.5,218.5,-238,-395,195,310
+401810624,2026-02-10,Oklahoma City Thunder,Los Angeles Lakers,119,110,DraftKings,5.5,7.5,-110,-118,220.5,222.5,170,195,-205,-238
+401810625,2026-02-10,Philadelphia 76ers,Portland Trail Blazers,118,135,DraftKings,2.5,-3.5,-115,-105,230.5,231.5,110,-162,-130,136
+401810626,2026-02-11,Indiana Pacers,New York Knicks,137,134,DraftKings,-11.5,-11.5,-110,-105,224.5,227.5,-550,-550,410,410
+401810627,2026-02-11,LA Clippers,Houston Rockets,95,102,DraftKings,-7.5,-9.5,-110,-102,210.5,213.5,-298,-310,240,250
+401810628,2026-02-11,Dallas Mavericks,Phoenix Suns,111,120,DraftKings,-7.5,-8.5,-110,-105,227.5,229.5,-285,-340,230,270
+401810629,2026-02-11,San Antonio Spurs,Los Angeles Lakers,136,108,DraftKings,7.5,13.5,-105,-105,227.5,226.5,235,500,-290,-700
+401810630,2026-02-12,Atlanta Hawks,Charlotte Hornets,107,110,DraftKings,-5.5,-2.5,-115,-105,231.5,235.5,-218,-130,180,110
+401810631,2026-02-12,Washington Wizards,Cleveland Cavaliers,113,138,DraftKings,-17.5,-17.5,-110,-112,235.5,238.5,-1450,-1200,850,750
+401810632,2026-02-12,Milwaukee Bucks,Orlando Magic,116,108,DraftKings,-10.5,-11.5,-102,-102,220.5,219.5,-470,-485,360,370
+401810633,2026-02-12,Chicago Bulls,Boston Celtics,105,124,DraftKings,-12.5,-13.5,-115,-115,226.5,227.5,-600,-700,440,500
+401810634,2026-02-12,Indiana Pacers,Brooklyn Nets,115,110,DraftKings,-3.5,-6.5,-110,-112,213.5,215.5,-155,-225,130,185
+401810635,2026-02-12,New York Knicks,Philadelphia 76ers,138,89,DraftKings,2.5,2.5,-118,-115,223.5,224.5,110,114,-130,-135
+401810636,2026-02-12,Detroit Pistons,Toronto Raptors,113,95,DraftKings,1.5,-1.5,-110,-102,223.5,223.5,102,-115,-122,-105
+401810637,2026-02-12,LA Clippers,Houston Rockets,105,102,DraftKings,-8.5,-8.5,-110,-118,210.5,212.5,-360,-325,285,260
+401810638,2026-02-12,Portland Trail Blazers,Minnesota Timberwolves,109,133,DraftKings,-7.5,-7.5,-110,-108,235.5,237.5,-278,-290,225,235
+401810639,2026-02-12,Miami Heat,New Orleans Pelicans,123,111,DraftKings,-1.5,-1.5,-105,-110,232.5,233.5,-118,-125,-102,105
+401810640,2026-02-12,Oklahoma City Thunder,Phoenix Suns,136,109,DraftKings,6.5,7.5,-110,-102,217.5,211.5,190,225,-230,-278
+401810641,2026-02-12,Sacramento Kings,Utah Jazz,93,121,DraftKings,-6.5,-5.5,-110,-112,234.5,229.5,-238,-205,195,170
+401810642,2026-02-12,Memphis Grizzlies,Denver Nuggets,116,122,DraftKings,-13.5,-14.5,-110,-105,236.5,239.5,-650,-675,470,490
+401810643,2026-02-12,San Antonio Spurs,Golden State Warriors,126,113,DraftKings,5.5,7.5,-110,-115,216.5,220.5,170,195,-205,-238
+401810644,2026-02-13,Milwaukee Bucks,Oklahoma City Thunder,110,93,DraftKings,-13.5,-13.5,-110,-108,216.5,214.5,-750,-625,525,455
+401810645,2026-02-13,Portland Trail Blazers,Utah Jazz,135,119,DraftKings,7.5,6.5,-108,-118,237.5,236.5,230,190,-285,-230
+401810646,2026-02-13,Dallas Mavericks,Los Angeles Lakers,104,124,DraftKings,6.5,-6.5,-110,-105,234.5,237.5,190,-258,-230,210
+401838140,2026-02-15,World,Team Stars,35,37,,,,,,,,,,,
+401838141,2026-02-15,Team Stars,Team Stripes,40,42,,,,,,,,,,,
+401838142,2026-02-15,World,Team Stripes,45,48,,,,,,,,,,,
+401838143,2026-02-16,Team Stars,Team Stripes,47,21,,,,,,,,,,,
+401810647,2026-02-20,Houston Rockets,Charlotte Hornets,105,101,DraftKings,2.5,4.5,-115,-105,215.5,218.5,114,160,-135,-192
+401810648,2026-02-20,Brooklyn Nets,Cleveland Cavaliers,84,112,DraftKings,-13.5,-15.5,-110,-115,225.5,229.5,-800,-1050,550,675
+401810649,2026-02-20,Atlanta Hawks,Philadelphia 76ers,117,107,DraftKings,-4.5,-1.5,-115,-102,235.5,241.5,-192,-115,160,-105
+401810650,2026-02-20,Indiana Pacers,Washington Wizards,105,112,DraftKings,1.5,2.5,-110,-118,233.5,233.5,102,110,-122,-130
+401810651,2026-02-20,Detroit Pistons,New York Knicks,126,111,DraftKings,-2.5,-3.5,-115,-115,222.5,218.5,-142,-162,120,136
+401810652,2026-02-20,Toronto Raptors,Chicago Bulls,110,101,DraftKings,4.5,6.5,-110,-118,230.5,234.5,154,185,-185,-225
+401810653,2026-02-20,Phoenix Suns,San Antonio Spurs,94,121,DraftKings,-6.5,-7.5,-115,-120,225.5,229.5,-270,-285,220,230
+401810654,2026-02-20,Boston Celtics,Golden State Warriors,121,110,DraftKings,3.5,5.5,-110,-108,223.5,211.5,136,180,-162,-218
+401810655,2026-02-20,Orlando Magic,Sacramento Kings,131,94,DraftKings,10.5,8.5,-110,-118,223.5,226.5,380,275,-500,-345
+401810656,2026-02-20,Denver Nuggets,LA Clippers,114,115,DraftKings,3.5,4.5,-110,-108,224.5,226.5,136,154,-162,-185
+401810657,2026-02-21,Cleveland Cavaliers,Charlotte Hornets,118,113,DraftKings,4.5,5.5,-110,-108,235.5,229.5,145,180,-175,-218
+401810658,2026-02-21,Indiana Pacers,Washington Wizards,118,131,DraftKings,2.5,-1.5,-110,-108,232.5,230.5,114,-122,-135,102
+401810659,2026-02-21,Utah Jazz,Memphis Grizzlies,114,123,DraftKings,-4.5,-2.5,-105,-105,242.5,237.5,-170,-135,142,114
+401810660,2026-02-21,Miami Heat,Atlanta Hawks,128,97,DraftKings,2.5,3.5,-110,-115,242.5,243.5,114,124,-135,-148
+401810661,2026-02-21,Dallas Mavericks,Minnesota Timberwolves,111,122,DraftKings,-11.5,-13.5,-115,-115,235.5,239.5,-600,-700,440,500
+401810662,2026-02-21,Milwaukee Bucks,New Orleans Pelicans,139,118,DraftKings,-3.5,-4.5,-110,-112,225.5,224.5,-155,-180,130,150
+401810663,2026-02-21,Brooklyn Nets,Oklahoma City Thunder,86,105,DraftKings,-16.5,-16.5,-105,-115,211.5,215.5,-1350,-1200,800,750
+401810664,2026-02-21,LA Clippers,Los Angeles Lakers,122,125,DraftKings,-6.5,-7.5,-110,-105,224.5,228.5,-245,-258,200,210
+401810665,2026-02-21,Denver Nuggets,Portland Trail Blazers,157,103,DraftKings,4.5,1.5,-115,-112,237.5,241.5,145,102,-175,-122
+401810666,2026-02-21,Orlando Magic,Phoenix Suns,110,113,DraftKings,-2.5,-3.5,-110,-102,220.5,218.5,-135,-162,114,136
+401810667,2026-02-22,Philadelphia 76ers,New Orleans Pelicans,111,126,DraftKings,4.5,3.5,-110,-105,229.5,235.5,150,142,-180,-170
+401810668,2026-02-22,Memphis Grizzlies,Miami Heat,120,136,DraftKings,-8.5,-11.5,-110,-112,238.5,238.5,-355,-550,280,410
+401810669,2026-02-22,Detroit Pistons,Chicago Bulls,126,110,DraftKings,10.5,10.5,-110,-105,229.5,234.5,370,410,-485,-550
+401810670,2026-02-22,Sacramento Kings,San Antonio Spurs,122,139,DraftKings,-17.5,-18.5,-112,-108,226.5,230.5,-1800,-1650,1000,950
+401810671,2026-02-22,Houston Rockets,New York Knicks,106,108,DraftKings,-2.5,-3.5,-108,-112,212.5,220.5,-142,-162,120,136
+401810672,2026-02-22,Cleveland Cavaliers,Oklahoma City Thunder,113,121,DraftKings,1.5,4.5,-108,-118,223.5,228.5,-105,145,-115,-175
+401810673,2026-02-22,Brooklyn Nets,Atlanta Hawks,104,115,DraftKings,-8.5,-9.5,-110,-105,230.5,227.5,-340,-410,270,320
+401810674,2026-02-22,Toronto Raptors,Milwaukee Bucks,122,94,DraftKings,3.5,4.5,-115,-115,221.5,219.5,130,136,-155,-162
+401810675,2026-02-22,Denver Nuggets,Golden State Warriors,117,128,DraftKings,5.5,6.5,-115,-118,230.5,228.5,170,195,-205,-238
+401810676,2026-02-22,Dallas Mavericks,Indiana Pacers,134,130,DraftKings,2.5,1.5,-105,-115,232.5,237.5,120,-102,-142,-118
+401810677,2026-02-22,Charlotte Hornets,Washington Wizards,129,112,DraftKings,10.5,10.5,-110,-110,228.5,223.5,380,400,-500,-535
+401810678,2026-02-22,Boston Celtics,Los Angeles Lakers,111,89,DraftKings,1.5,1.5,-110,-118,228.5,230.5,-105,-105,-115,-115
+401810679,2026-02-23,Philadelphia 76ers,Minnesota Timberwolves,135,108,DraftKings,-8.5,-9.5,-110,-105,236.5,239.5,-340,-360,270,285
+401810680,2026-02-23,New York Knicks,Chicago Bulls,105,99,DraftKings,10.5,9.5,-110,-115,232.5,234.5,370,300,-485,-380
+401810681,2026-02-23,Portland Trail Blazers,Phoenix Suns,92,77,DraftKings,3.5,3.5,-110,-105,223.5,224.5,130,136,-155,-162
+401810682,2026-02-23,Orlando Magic,LA Clippers,111,109,DraftKings,-4.5,-4.5,-110,-108,215.5,215.5,-180,-180,150,150
+401810683,2026-02-24,San Antonio Spurs,Detroit Pistons,114,103,DraftKings,-2.5,-1.5,-110,-110,227.5,232.5,-135,-122,114,102
+401810684,2026-02-24,Sacramento Kings,Memphis Grizzlies,123,114,DraftKings,-4.5,-2.5,-110,-110,232.5,233.5,-180,-142,150,120
+401810685,2026-02-24,Utah Jazz,Houston Rockets,105,125,DraftKings,-15.5,-13.5,-110,-108,223.5,228.5,-1050,-850,675,575
+401810686,2026-02-25,Philadelphia 76ers,Indiana Pacers,135,114,DraftKings,6.5,10.5,-110,-105,234.5,234.5,200,400,-245,-535
+401810687,2026-02-25,Washington Wizards,Atlanta Hawks,98,119,DraftKings,-12.5,-12.5,-115,100,237.5,236.5,-750,-650,525,470
+401810688,2026-02-25,Dallas Mavericks,Brooklyn Nets,123,114,DraftKings,1.5,1.5,-105,-110,224.5,226.5,105,100,-125,-120
+401810689,2026-02-25,Oklahoma City Thunder,Toronto Raptors,116,107,DraftKings,1.5,-1.5,-110,100,218.5,216.5,102,-112,-122,-108
+401810690,2026-02-25,New York Knicks,Cleveland Cavaliers,94,109,DraftKings,-3.5,-4.5,-110,-102,228.5,231.5,-155,-170,130,142
+401810691,2026-02-25,Charlotte Hornets,Chicago Bulls,131,99,DraftKings,7.5,8.5,-112,-122,231.5,232.5,225,250,-278,-310
+401810692,2026-02-25,Miami Heat,Milwaukee Bucks,117,128,DraftKings,5.5,6.5,-110,-112,227.5,229.5,180,180,-218,-218
+401810693,2026-02-25,Golden State Warriors,New Orleans Pelicans,109,113,DraftKings,1.5,1.5,-105,-110,225.5,229.5,105,102,-125,-122
+401810694,2026-02-25,Boston Celtics,Phoenix Suns,97,81,DraftKings,6.5,5.5,-110,-112,211.5,207.5,200,180,-245,-218
+401810695,2026-02-25,Orlando Magic,Los Angeles Lakers,110,109,DraftKings,-6.5,-6.5,-110,-110,226.5,228.5,-250,-245,205,200
+401810696,2026-02-25,Minnesota Timberwolves,Portland Trail Blazers,124,121,DraftKings,5.5,6.5,-110,-115,237.5,234.5,170,195,-205,-238
+401810697,2026-02-26,Oklahoma City Thunder,Detroit Pistons,116,124,DraftKings,-5.5,-10.5,-110,-110,217.5,220.5,-205,-440,170,340
+401810698,2026-02-26,San Antonio Spurs,Toronto Raptors,110,107,DraftKings,6.5,5.5,-110,-108,228.5,230.5,200,180,-245,-218
+401810699,2026-02-26,Golden State Warriors,Memphis Grizzlies,133,112,DraftKings,2.5,3.5,-110,-105,226.5,227.5,120,150,-142,-180
+401810700,2026-02-26,Sacramento Kings,Houston Rockets,97,128,DraftKings,-15.5,-13.5,-110,-115,221.5,222.5,-1050,-850,675,575
+401810701,2026-02-26,Cleveland Cavaliers,Milwaukee Bucks,116,118,DraftKings,8.5,3.5,-110,-118,227.5,220.5,270,130,-340,-155
+401810702,2026-02-26,Boston Celtics,Denver Nuggets,84,103,DraftKings,-3.5,-3.5,-115,-110,228.5,228.5,-162,-155,136,130
+401810703,2026-02-27,Charlotte Hornets,Indiana Pacers,133,109,DraftKings,12.5,12.5,-110,-108,230.5,229.5,500,490,-700,-675
+401810704,2026-02-27,Miami Heat,Philadelphia 76ers,117,124,DraftKings,-2.5,-2.5,-115,-105,237.5,240.5,-142,-135,120,114
+401810705,2026-02-27,Washington Wizards,Atlanta Hawks,96,126,DraftKings,-12.5,-10.5,-105,-105,233.5,236.5,-650,-520,470,390
+401810706,2026-02-27,San Antonio Spurs,Brooklyn Nets,126,110,DraftKings,13.5,10.5,-110,-105,224.5,223.5,575,425,-850,-575
+401810707,2026-02-27,Houston Rockets,Orlando Magic,113,108,DraftKings,1.5,2.5,-115,-115,215.5,214.5,-105,120,-115,-142
+401810708,2026-02-27,Portland Trail Blazers,Chicago Bulls,121,112,DraftKings,3.5,3.5,-115,-105,235.5,235.5,136,142,-162,-170
+401810709,2026-02-27,Sacramento Kings,Dallas Mavericks,130,121,DraftKings,-6.5,-7.5,-105,-115,232.5,236.5,-238,-310,195,250
+401810710,2026-02-27,Los Angeles Lakers,Phoenix Suns,110,113,DraftKings,4.5,5.5,-110,-108,217.5,223.5,154,180,-185,-218
+401810711,2026-02-27,New Orleans Pelicans,Utah Jazz,129,118,DraftKings,3.5,6.5,-105,-115,240.5,245.5,140,195,-166,-238
+401810712,2026-02-27,Minnesota Timberwolves,LA Clippers,94,88,DraftKings,3.5,8.5,-105,-108,225.5,220.5,136,275,-162,-345
+401810713,2026-02-28,Cleveland Cavaliers,Detroit Pistons,119,122,DraftKings,-7.5,-8.5,-110,-115,224.5,227.5,-278,-340,225,270
+401810714,2026-02-28,Brooklyn Nets,Boston Celtics,111,148,DraftKings,-16.5,-16.5,-112,-115,209.5,208.5,-1350,-1350,800,800
+401810715,2026-02-28,New York Knicks,Milwaukee Bucks,127,98,DraftKings,8.5,8.5,-110,-112,221.5,219.5,260,240,-325,-298
+401810716,2026-02-28,Memphis Grizzlies,Dallas Mavericks,124,105,DraftKings,-5.5,-4.5,-108,-115,235.5,241.5,-205,-198,170,164
+401810717,2026-02-28,Denver Nuggets,Oklahoma City Thunder,121,127,DraftKings,-8.5,-6.5,-112,-112,230.5,234.5,-325,-250,260,205
+401810718,2026-02-28,Portland Trail Blazers,Charlotte Hornets,93,109,DraftKings,-7.5,-6.5,-115,-110,229.5,228.5,-298,-270,240,220
+401810719,2026-02-28,Houston Rockets,Miami Heat,105,115,DraftKings,4.5,2.5,-115,-110,224.5,226.5,142,120,-170,-142
+401810720,2026-03-01,Toronto Raptors,Washington Wizards,134,125,DraftKings,14.5,13.5,-110,-105,227.5,229.5,575,600,-850,-900
+401810721,2026-03-01,Los Angeles Lakers,Golden State Warriors,129,101,DraftKings,2.5,3.5,-105,-108,224.5,225.5,120,140,-142,-166
+401810722,2026-03-01,New Orleans Pelicans,Utah Jazz,115,105,DraftKings,6.5,5.5,-105,-115,243.5,244.5,220,180,-270,-218
+401810723,2026-03-01,San Antonio Spurs,New York Knicks,89,114,DraftKings,1.5,1.5,-110,-115,228.5,227.5,102,-102,-122,-118
+401810724,2026-03-01,Cleveland Cavaliers,Brooklyn Nets,106,102,DraftKings,11.5,12.5,-110,-115,223.5,224.5,410,440,-550,-600
+401810725,2026-03-01,Milwaukee Bucks,Chicago Bulls,97,120,DraftKings,3.5,2.5,-110,-112,227.5,231.5,136,114,-162,-135
+401810726,2026-03-01,Minnesota Timberwolves,Denver Nuggets,117,108,DraftKings,-1.5,-2.5,-108,-115,238.5,240.5,-120,-142,100,120
+401810727,2026-03-01,Memphis Grizzlies,Indiana Pacers,125,106,DraftKings,-1.5,-1.5,-102,102,237.5,236.5,-115,-108,-105,-112
+401810728,2026-03-01,Portland Trail Blazers,Atlanta Hawks,101,135,DraftKings,-6.5,-6.5,-105,-110,238.5,235.5,-225,-230,185,190
+401810730,2026-03-01,Detroit Pistons,Orlando Magic,106,92,DraftKings,6.5,5.5,-115,-115,220.5,224.5,195,170,-238,-205
+401810729,2026-03-02,Philadelphia 76ers,Boston Celtics,98,114,DraftKings,-8.5,-8.5,-105,-115,223.5,219.5,-325,-345,260,275
+401810731,2026-03-02,Oklahoma City Thunder,Dallas Mavericks,100,87,DraftKings,15.5,16.5,-105,-115,231.5,236.5,750,750,-1200,-1200
+401810732,2026-03-02,New Orleans Pelicans,LA Clippers,117,137,DraftKings,-6.5,-8.5,-110,-112,226.5,222.5,-250,-340,205,270
+401810733,2026-03-02,Sacramento Kings,Los Angeles Lakers,104,128,DraftKings,-13.5,-12.5,-110,-120,231.5,235.5,-750,-750,525,525
+401810734,2026-03-03,Houston Rockets,Washington Wizards,123,118,DraftKings,16.5,14.5,-110,-110,221.5,224.5,800,650,-1350,-1000
+401810735,2026-03-03,Boston Celtics,Milwaukee Bucks,108,81,DraftKings,7.5,2.5,-110,-115,215.5,216.5,230,114,-285,-135
+401810736,2026-03-03,Denver Nuggets,Utah Jazz,128,125,DraftKings,11.5,11.5,-115,-110,241.5,242.5,455,425,-625,-575
+401810737,2026-03-03,LA Clippers,Golden State Warriors,114,101,DraftKings,1.5,1.5,-115,-120,219.5,216.5,-105,-108,-115,-112
+401810738,2026-03-04,Dallas Mavericks,Charlotte Hornets,90,117,DraftKings,-11.5,-13.5,-110,-110,229.5,226.5,-575,-675,425,490
+401810739,2026-03-04,Detroit Pistons,Cleveland Cavaliers,109,113,DraftKings,1.5,2.5,-110,-108,227.5,227.5,100,120,-120,-142
+401810740,2026-03-04,Washington Wizards,Orlando Magic,109,126,DraftKings,-15.5,-15.5,-110,-115,227.5,228.5,-1200,-1350,750,800
+401810741,2026-03-04,Brooklyn Nets,Miami Heat,98,124,DraftKings,-13.5,-12.5,-110,-115,226.5,225.5,-900,-675,600,490
+401810742,2026-03-04,New York Knicks,Toronto Raptors,111,95,DraftKings,1.5,2.5,-110,-105,223.5,221.5,102,124,-122,-148
+401810743,2026-03-04,San Antonio Spurs,Philadelphia 76ers,131,91,DraftKings,5.5,7.5,-102,-105,231.5,231.5,185,245,-225,-305
+401810744,2026-03-04,Oklahoma City Thunder,Chicago Bulls,116,108,DraftKings,11.5,9.5,-110,-115,228.5,231.5,410,300,-550,-380
+401810745,2026-03-04,Memphis Grizzlies,Minnesota Timberwolves,110,117,DraftKings,-14.5,-14.5,-110,-108,239.5,235.5,-850,-800,575,550
+401810746,2026-03-04,New Orleans Pelicans,Los Angeles Lakers,101,110,DraftKings,-10.5,-7.5,-110,-115,236.5,242.5,-455,-325,350,260
+401810747,2026-03-04,Phoenix Suns,Sacramento Kings,114,103,DraftKings,10.5,9.5,-110,-115,227.5,224.5,360,285,-470,-360
+401810748,2026-03-05,Oklahoma City Thunder,New York Knicks,103,100,DraftKings,3.5,4.5,-110,-115,222.5,221.5,140,150,-166,-180
+401810749,2026-03-05,Charlotte Hornets,Boston Celtics,118,89,DraftKings,-5.5,-6.5,-115,-115,216.5,214.5,-218,-250,180,205
+401810750,2026-03-05,Utah Jazz,Philadelphia 76ers,102,106,DraftKings,-9.5,-7.5,-105,-102,241.5,238.5,-425,-325,330,260
+401810751,2026-03-05,Portland Trail Blazers,Memphis Grizzlies,122,114,DraftKings,7.5,9.5,-115,-108,236.5,231.5,220,310,-270,-395
+401810752,2026-03-05,Atlanta Hawks,Milwaukee Bucks,131,113,DraftKings,-1.5,-1.5,100,-102,230.5,232.5,-110,-115,-110,-105
+401810753,2026-03-05,Indiana Pacers,LA Clippers,107,130,DraftKings,-12.5,-11.5,-110,-110,224.5,230.5,-700,-650,500,470
+401810754,2026-03-06,Dallas Mavericks,Orlando Magic,114,115,DraftKings,-8.5,-7.5,-110,-120,227.5,230.5,-355,-325,280,260
+401810755,2026-03-06,Utah Jazz,Washington Wizards,122,112,DraftKings,-2.5,-3.5,-110,-115,242.5,240.5,-142,-166,120,140
+401810756,2026-03-06,Brooklyn Nets,Miami Heat,110,126,DraftKings,-13.5,-12.5,-110,-112,225.5,225.5,-800,-800,550,550
+401810757,2026-03-06,Golden State Warriors,Houston Rockets,115,113,DraftKings,-8.5,-9.5,-110,-112,214.5,214.5,-325,-395,260,310
+401810758,2026-03-06,Toronto Raptors,Minnesota Timberwolves,107,115,DraftKings,-6.5,-4.5,-110,-118,228.5,226.5,-238,-218,195,180
+401810759,2026-03-06,Detroit Pistons,San Antonio Spurs,106,121,DraftKings,-2.5,-2.5,-115,-115,227.5,227.5,-148,-148,124,124
+401810760,2026-03-06,Chicago Bulls,Phoenix Suns,105,103,DraftKings,-10.5,-10.5,-110,-118,225.5,224.5,-470,-600,360,440
+401810761,2026-03-06,Los Angeles Lakers,Denver Nuggets,113,120,DraftKings,-4.5,-3.5,-110,-115,238.5,240.5,-180,-170,150,142
+401810762,2026-03-06,New Orleans Pelicans,Sacramento Kings,133,123,DraftKings,4.5,6.5,-115,-105,231.5,236.5,150,215,-180,-265
+401810763,2026-03-07,Dallas Mavericks,Boston Celtics,100,120,DraftKings,-15.5,-15.5,-110,-108,225.5,226.5,-1050,-1200,675,750
+401810764,2026-03-07,Miami Heat,Charlotte Hornets,128,120,DraftKings,-6.5,-7.5,-110,-108,230.5,229.5,-245,-298,200,240
+401810765,2026-03-07,Portland Trail Blazers,Houston Rockets,99,106,DraftKings,-7.5,-6.5,-110,-108,223.5,220.5,-278,-265,225,215
+401810766,2026-03-07,New York Knicks,Denver Nuggets,142,103,DraftKings,1.5,-1.5,-122,-102,232.5,229.5,-110,-115,-110,-105
+401810767,2026-03-07,New Orleans Pelicans,Phoenix Suns,116,118,DraftKings,-5.5,-3.5,-115,-115,225.5,228.5,-225,-175,185,145
+401810768,2026-03-07,LA Clippers,San Antonio Spurs,112,116,DraftKings,-8.5,-7.5,-110,-105,223.5,221.5,-310,-278,250,225
+401810769,2026-03-07,Indiana Pacers,Los Angeles Lakers,117,128,DraftKings,-10.5,-9.5,-105,-102,235.5,235.5,-485,-410,370,320
+401810770,2026-03-07,Orlando Magic,Minnesota Timberwolves,119,92,DraftKings,-7.5,-6.5,-110,-115,226.5,224.5,-298,-265,240,215
+401810771,2026-03-07,Brooklyn Nets,Detroit Pistons,107,105,DraftKings,-13.5,-13.5,-110,-110,214.5,214.5,-750,-800,525,550
+401810772,2026-03-07,Philadelphia 76ers,Atlanta Hawks,116,125,DraftKings,-4.5,-6.5,-110,-112,232.5,234.5,-185,-278,154,225
+401810773,2026-03-08,LA Clippers,Memphis Grizzlies,123,120,DraftKings,6.5,7.5,-102,-108,227.5,229.5,225,245,-278,-305
+401810774,2026-03-08,Utah Jazz,Milwaukee Bucks,99,113,DraftKings,-9.5,-9.5,-115,-105,234.5,230.5,-485,-440,370,340
+401810775,2026-03-08,Golden State Warriors,Oklahoma City Thunder,97,104,DraftKings,-15.5,-11.5,-110,-115,219.5,219.5,-800,-625,550,455
+401810776,2026-03-08,Boston Celtics,Cleveland Cavaliers,109,98,DraftKings,1.5,-1.5,-120,-108,225.5,224.5,-110,-120,-110,100
+401810777,2026-03-08,New York Knicks,Los Angeles Lakers,97,110,DraftKings,3.5,5.5,-105,-112,228.5,226.5,140,164,-166,-198
+401810778,2026-03-08,Detroit Pistons,Miami Heat,110,121,DraftKings,1.5,1.5,-108,-118,228.5,230.5,105,-105,-125,-115
+401810779,2026-03-08,Dallas Mavericks,Toronto Raptors,92,122,DraftKings,-9.5,-9.5,-110,-118,227.5,233.5,-410,-395,320,310
+401810780,2026-03-08,Washington Wizards,New Orleans Pelicans,118,138,DraftKings,-8.5,-11.5,-110,-112,239.5,244.5,-360,-535,285,400
+401810781,2026-03-09,Orlando Magic,Milwaukee Bucks,130,91,DraftKings,1.5,6.5,-112,-115,221.5,216.5,-102,185,-118,-225
+401810782,2026-03-09,Houston Rockets,San Antonio Spurs,120,145,DraftKings,-4.5,-5.5,-110,-118,223.5,223.5,-180,-230,150,190
+401810783,2026-03-09,Charlotte Hornets,Phoenix Suns,99,111,DraftKings,3.5,4.5,-110,-105,219.5,218.5,136,170,-162,-205
+401810784,2026-03-09,Indiana Pacers,Portland Trail Blazers,111,131,DraftKings,-7.5,-9.5,-110,-102,236.5,238.5,-310,-410,250,320
+401810785,2026-03-09,Chicago Bulls,Sacramento Kings,110,126,DraftKings,3.5,4.5,-105,-110,235.5,236.5,142,170,-170,-205
+401810786,2026-03-09,Philadelphia 76ers,Cleveland Cavaliers,101,115,DraftKings,-10.5,-14.5,-110,-105,225.5,226.5,-485,-850,370,575
+401810787,2026-03-09,Memphis Grizzlies,Brooklyn Nets,115,126,DraftKings,1.5,-1.5,-118,-110,223.5,220.5,-108,-122,-112,102
+401810788,2026-03-09,Denver Nuggets,Oklahoma City Thunder,126,129,DraftKings,-7.5,-3.5,-110,-112,231.5,237.5,-298,-155,240,130
+401810789,2026-03-10,Golden State Warriors,Utah Jazz,116,119,DraftKings,5.5,6.5,-118,-110,228.5,224.5,170,215,-205,-265
+401810790,2026-03-10,New York Knicks,LA Clippers,118,126,DraftKings,1.5,1.5,-108,-108,220.5,220.5,105,110,-125,-130
+401810791,2026-03-10,Memphis Grizzlies,Philadelphia 76ers,129,139,DraftKings,-5.5,-4.5,-110,-110,229.5,229.5,-218,-192,180,160
+401810792,2026-03-10,Detroit Pistons,Brooklyn Nets,138,100,DraftKings,14.5,15.5,-110,-118,216.5,216.5,650,700,-1000,-1100
+401810793,2026-03-10,Washington Wizards,Miami Heat,129,150,DraftKings,-15.5,-15.5,-110,-115,241.5,235.5,-1200,-1200,750,750
+401810794,2026-03-10,Dallas Mavericks,Atlanta Hawks,112,124,DraftKings,-8.5,-9.5,-110,-115,238.5,240.5,-360,-425,285,330
+401810795,2026-03-11,Toronto Raptors,Houston Rockets,99,113,DraftKings,-5.5,-4.5,-105,-108,218.5,220.5,-218,-192,180,160
+401810796,2026-03-11,Phoenix Suns,Milwaukee Bucks,129,114,DraftKings,2.5,2.5,-115,-120,218.5,219.5,110,110,-130,-130
+401810797,2026-03-11,Boston Celtics,San Antonio Spurs,116,125,DraftKings,-2.5,-3.5,-112,-115,223.5,221.5,-135,-162,114,136
+401810798,2026-03-11,Chicago Bulls,Golden State Warriors,130,124,DraftKings,-5.5,-6.5,-105,-105,229.5,227.5,-205,-238,170,195
+401810799,2026-03-11,Charlotte Hornets,Portland Trail Blazers,103,101,DraftKings,3.5,3.5,-110,-118,229.5,227.5,130,130,-155,-155
+401810800,2026-03-11,Indiana Pacers,Sacramento Kings,109,114,DraftKings,-3.5,-3.5,-110,-105,234.5,236.5,-162,-162,136,136
+401810801,2026-03-11,Minnesota Timberwolves,Los Angeles Lakers,106,120,DraftKings,1.5,2.5,-110,-105,232.5,229.5,100,120,-120,-142
+401810802,2026-03-11,Cleveland Cavaliers,Orlando Magic,122,128,DraftKings,2.5,3.5,-110,-115,225.5,226.5,114,130,-135,-155
+401810803,2026-03-12,Toronto Raptors,New Orleans Pelicans,111,122,DraftKings,1.5,2.5,-105,-110,232.5,235.5,105,120,-125,-142
+401810804,2026-03-12,New York Knicks,Utah Jazz,134,117,DraftKings,12.5,13.5,-110,-105,230.5,231.5,500,650,-700,-1000
+401810805,2026-03-12,Houston Rockets,Denver Nuggets,93,129,DraftKings,-5.5,-6.5,-105,-115,227.5,232.5,-218,-265,180,215
+401810806,2026-03-12,Charlotte Hornets,Sacramento Kings,117,109,DraftKings,12.5,14.5,-110,-105,227.5,224.5,500,650,-700,-1000
+401810807,2026-03-12,Minnesota Timberwolves,LA Clippers,128,153,DraftKings,-1.5,-1.5,-105,-105,225.5,226.5,-115,-115,-105,-105
+401810808,2026-03-12,Philadelphia 76ers,Detroit Pistons,109,131,DraftKings,-14.5,-14.5,-110,-108,219.5,224.5,-1050,-1050,675,675
+401810809,2026-03-12,Phoenix Suns,Indiana Pacers,123,108,DraftKings,8.5,9.5,-105,-118,225.5,222.5,280,320,-355,-410
+401810810,2026-03-12,Washington Wizards,Orlando Magic,131,136,DraftKings,-14.5,-14.5,-110,100,229.5,236.5,-1000,-950,650,625
+401810811,2026-03-12,Brooklyn Nets,Atlanta Hawks,97,108,DraftKings,-13.5,-15.5,-110,-110,226.5,226.5,-800,-1200,550,750
+401810812,2026-03-12,Milwaukee Bucks,Miami Heat,105,112,DraftKings,-5.5,-5.5,-115,-108,228.5,233.5,-230,-218,190,180
+401810813,2026-03-13,Denver Nuggets,San Antonio Spurs,136,131,DraftKings,-4.5,-3.5,-105,-108,234.5,241.5,-185,-155,154,130
+401810814,2026-03-13,Boston Celtics,Oklahoma City Thunder,102,104,DraftKings,-6.5,-8.5,-110,-110,216.5,216.5,-238,-345,195,275
+401810815,2026-03-13,Chicago Bulls,Los Angeles Lakers,130,142,DraftKings,-10.5,-10.5,-110,-115,232.5,240.5,-500,-575,380,425
+401810816,2026-03-13,Memphis Grizzlies,Detroit Pistons,110,126,DraftKings,-15.5,-16.5,-110,-110,230.5,233.5,-1200,-1600,750,900
+401810817,2026-03-13,New York Knicks,Indiana Pacers,101,92,DraftKings,12.5,12.5,-110,-110,227.5,228.5,525,490,-750,-675
+401810818,2026-03-13,Phoenix Suns,Toronto Raptors,115,122,DraftKings,-3.5,-5.5,-110,-112,218.5,221.5,-162,-205,136,170
+401810820,2026-03-13,Cleveland Cavaliers,Dallas Mavericks,138,105,DraftKings,12.5,13.5,-110,-118,231.5,236.5,455,500,-625,-700
+401810966,2026-03-13,Dallas Mavericks,Memphis Grizzlies,120,112,DraftKings,4.5,5.5,-115,-112,235.5,239.5,145,180,-175,-218
+401810819,2026-03-14,New Orleans Pelicans,Houston Rockets,105,107,DraftKings,-6.5,-5.5,-110,-112,225.5,230.5,-258,-225,210,185
+401810821,2026-03-14,Minnesota Timberwolves,Golden State Warriors,127,117,DraftKings,6.5,4.5,-110,-105,228.5,224.5,195,170,-238,-205
+401810822,2026-03-14,Utah Jazz,Portland Trail Blazers,114,124,DraftKings,-12.5,-15.5,-110,-115,235.5,235.5,-750,-1200,525,750
+401810823,2026-03-14,Chicago Bulls,LA Clippers,108,119,DraftKings,-11.5,-13.5,-110,-110,234.5,235.5,-485,-850,370,575
+401810824,2026-03-14,Brooklyn Nets,Philadelphia 76ers,97,104,DraftKings,-9.5,-8.5,-110,-110,215.5,217.5,-410,-380,320,300
+401810825,2026-03-14,Milwaukee Bucks,Atlanta Hawks,99,122,DraftKings,-7.5,-11.5,-110,-105,231.5,228.5,-278,-500,225,380
+401810826,2026-03-14,Washington Wizards,Boston Celtics,100,111,DraftKings,-19.5,-20.5,-110,-110,227.5,232.5,-2100,-2400,1100,1200
+401810828,2026-03-14,Charlotte Hornets,San Antonio Spurs,102,115,DraftKings,-5.5,-6.5,-112,-102,228.5,232.5,-205,-245,170,200
+401810827,2026-03-15,Orlando Magic,Miami Heat,121,117,DraftKings,-2.5,-4.5,-112,-112,235.5,236.5,-142,-185,120,154
+401810829,2026-03-15,Denver Nuggets,Los Angeles Lakers,125,127,DraftKings,1.5,1.5,-110,-105,240.5,244.5,102,102,-122,-122
+401810830,2026-03-15,Sacramento Kings,LA Clippers,118,109,DraftKings,-13.5,-13.5,-110,-115,230.5,231.5,-750,-950,525,625
+401810831,2026-03-15,Minnesota Timberwolves,Oklahoma City Thunder,103,116,DraftKings,-8.5,-8.5,-115,-118,225.5,227.5,-340,-380,270,300
+401810832,2026-03-15,Dallas Mavericks,Cleveland Cavaliers,130,120,DraftKings,-16.5,-14.5,-110,-112,239.5,233.5,-1450,-1200,850,750
+401810833,2026-03-15,Detroit Pistons,Toronto Raptors,108,119,DraftKings,4.5,3.5,-115,-118,220.5,224.5,145,130,-175,-155
+401810834,2026-03-15,Indiana Pacers,Milwaukee Bucks,123,134,DraftKings,-6.5,-7.5,-110,-115,228.5,227.5,-258,-298,210,240
+401810835,2026-03-15,Portland Trail Blazers,Philadelphia 76ers,103,109,DraftKings,6.5,8.5,-110,-115,229.5,228.5,205,270,-250,-340
+401810836,2026-03-16,Golden State Warriors,New York Knicks,107,110,DraftKings,-13.5,-14.5,-105,-115,216.5,218.5,-675,-950,490,625
+401810837,2026-03-16,Utah Jazz,Sacramento Kings,111,116,DraftKings,-2.5,-3.5,-110,-110,232.5,230.5,-142,-162,120,136
+401810838,2026-03-16,Orlando Magic,Atlanta Hawks,112,124,DraftKings,-1.5,-3.5,102,-108,231.5,232.5,-110,-155,-110,130
+401810839,2026-03-16,Golden State Warriors,Washington Wizards,125,117,DraftKings,6.5,7.5,-110,-110,230.5,234.5,240,250,-298,-310
+401810840,2026-03-16,Portland Trail Blazers,Brooklyn Nets,114,95,DraftKings,10.5,10.5,-110,-105,222.5,221.5,400,390,-535,-520
+401810841,2026-03-16,Phoenix Suns,Boston Celtics,112,120,DraftKings,-9.5,-8.5,-110,-115,214.5,216.5,-395,-375,310,295
+401810842,2026-03-17,Memphis Grizzlies,Chicago Bulls,107,132,DraftKings,-4.5,-7.5,-112,-105,239.5,243.5,-192,-278,160,225
+401810843,2026-03-17,Dallas Mavericks,New Orleans Pelicans,111,129,DraftKings,-7.5,-8.5,-118,-115,235.5,240.5,-298,-340,240,270
+401810844,2026-03-17,Los Angeles Lakers,Houston Rockets,100,92,DraftKings,-1.5,1.5,-105,-118,223.5,223.5,-115,-102,-105,-118
+401810845,2026-03-17,San Antonio Spurs,LA Clippers,119,115,DraftKings,6.5,8.5,-105,-120,223.5,234.5,210,270,-258,-340
+401810846,2026-03-17,Miami Heat,Charlotte Hornets,106,136,DraftKings,-3.5,-5.5,-115,-105,233.5,236.5,-162,-205,136,170
+401810847,2026-03-17,Oklahoma City Thunder,Orlando Magic,113,108,DraftKings,9.5,9.5,-105,-102,222.5,224.5,320,350,-410,-455
+401810848,2026-03-17,Detroit Pistons,Washington Wizards,130,117,DraftKings,17.5,19.5,-110,-112,233.5,233.5,950,1100,-1650,-2100
+401810849,2026-03-17,Indiana Pacers,New York Knicks,110,136,DraftKings,-15.5,-13.5,-112,-112,224.5,222.5,-900,-800,600,550
+401810850,2026-03-18,Cleveland Cavaliers,Milwaukee Bucks,123,116,DraftKings,9.5,12.5,-110,-110,227.5,226.5,310,455,-395,-625
+401810851,2026-03-18,Phoenix Suns,Minnesota Timberwolves,104,116,DraftKings,-4.5,-3.5,-110,-110,221.5,221.5,-198,-170,164,142
+401810852,2026-03-18,Philadelphia 76ers,Denver Nuggets,96,124,DraftKings,-15.5,-15.5,-110,-105,232.5,235.5,-1100,-1200,700,750
+401810853,2026-03-18,San Antonio Spurs,Sacramento Kings,132,104,DraftKings,14.5,13.5,-110,-115,232.5,233.5,675,575,-1050,-850
+401810854,2026-03-18,Golden State Warriors,Boston Celtics,99,120,DraftKings,-12.5,-11.5,-110,-112,214.5,216.5,-600,-625,440,455
+401810855,2026-03-18,Oklahoma City Thunder,Brooklyn Nets,121,92,DraftKings,19.5,19.5,-110,-115,215.5,216.5,1200,1200,-2400,-2400
+401810856,2026-03-18,Portland Trail Blazers,Indiana Pacers,127,119,DraftKings,10.5,11.5,-110,-108,235.5,233.5,360,490,-470,-675
+401810857,2026-03-19,Toronto Raptors,Chicago Bulls,139,109,DraftKings,7.5,7.5,-110,-112,234.5,237.5,235,235,-290,-290
+401810859,2026-03-19,Utah Jazz,Minnesota Timberwolves,111,147,DraftKings,-12.5,-12.5,-110,-115,234.5,231.5,-650,-800,470,550
+401810860,2026-03-19,LA Clippers,New Orleans Pelicans,109,124,DraftKings,-1.5,2.5,-115,-115,228.5,236.5,-125,110,105,-130
+401810861,2026-03-19,Atlanta Hawks,Dallas Mavericks,135,120,DraftKings,9.5,8.5,-110,-118,239.5,239.5,330,260,-425,-325
+401810862,2026-03-19,Los Angeles Lakers,Houston Rockets,124,116,DraftKings,-1.5,-1.5,-110,-118,222.5,223.5,-122,-130,102,110
+401810863,2026-03-19,Orlando Magic,Charlotte Hornets,111,130,DraftKings,-4.5,-5.5,-110,-115,226.5,225.5,-180,-225,150,185
+401810864,2026-03-19,Detroit Pistons,Washington Wizards,117,95,DraftKings,16.5,14.5,-110,-112,230.5,231.5,750,750,-1200,-1200
+401858693,2026-03-19,Denver Nuggets,Memphis Grizzlies,118,125,DraftKings,13.5,12.5,-110,-112,240.5,246.5,500,525,-700,-750
+401810865,2026-03-20,Los Angeles Lakers,Miami Heat,134,126,DraftKings,-2.5,-3.5,-105,-105,240.5,242.5,-130,-148,110,124
+401810866,2026-03-20,Cleveland Cavaliers,Chicago Bulls,115,110,DraftKings,13.5,9.5,-110,-110,238.5,236.5,525,370,-750,-485
+401810867,2026-03-20,LA Clippers,New Orleans Pelicans,99,105,DraftKings,-1.5,-4.5,-110,-108,233.5,228.5,-120,-166,100,140
+401810868,2026-03-20,Phoenix Suns,San Antonio Spurs,100,101,DraftKings,-9.5,-9.5,-110,-110,225.5,228.5,-380,-470,300,360
+401810869,2026-03-20,Milwaukee Bucks,Utah Jazz,96,128,DraftKings,4.5,5.5,-110,-102,229.5,227.5,160,205,-192,-250
+401810870,2026-03-20,Philadelphia 76ers,Sacramento Kings,139,118,DraftKings,3.5,2.5,-110,-108,231.5,228.5,136,124,-162,-148
+401810871,2026-03-20,New York Knicks,Brooklyn Nets,93,92,DraftKings,18.5,18.5,-110,-108,215.5,214.5,1100,1100,-2100,-2100
+401810872,2026-03-20,Golden State Warriors,Detroit Pistons,101,115,DraftKings,-6.5,-6.5,-110,-108,217.5,219.5,-238,-238,195,195
+401810873,2026-03-21,Atlanta Hawks,Houston Rockets,95,117,DraftKings,-3.5,-2.5,-110,-115,225.5,227.5,-166,-148,140,124
+401810874,2026-03-21,Boston Celtics,Memphis Grizzlies,117,112,DraftKings,14.5,15.5,-110,-110,228.5,230.5,600,800,-900,-1350
+401810875,2026-03-21,Portland Trail Blazers,Minnesota Timberwolves,108,104,DraftKings,-2.5,-1.5,-110,-105,229.5,231.5,-135,-115,114,-105
+401810876,2026-03-21,Toronto Raptors,Denver Nuggets,115,121,DraftKings,-6.5,-6.5,-110,-112,234.5,239.5,-258,-270,210,220
+401810877,2026-03-21,Oklahoma City Thunder,Washington Wizards,132,111,DraftKings,21.5,21.5,-110,-110,228.5,230.5,1700,1300,-4500,-2800
+401810878,2026-03-21,Memphis Grizzlies,Charlotte Hornets,101,124,DraftKings,-15.5,-18.5,-110,-115,234.5,233.5,-1200,-1650,750,950
+401810879,2026-03-21,Los Angeles Lakers,Orlando Magic,105,104,DraftKings,2.5,2.5,-110,-102,231.5,234.5,120,130,-142,-155
+401810880,2026-03-21,Cleveland Cavaliers,New Orleans Pelicans,111,106,DraftKings,5.5,4.5,-110,-108,233.5,237.5,170,170,-205,-205
+401810881,2026-03-22,Golden State Warriors,Atlanta Hawks,110,126,DraftKings,-8.5,-7.5,-115,-110,228.5,228.5,-360,-310,285,250
+401810882,2026-03-22,Miami Heat,Houston Rockets,122,123,DraftKings,-2.5,-2.5,-105,-112,228.5,228.5,-135,-142,114,120
+401810883,2026-03-22,Indiana Pacers,San Antonio Spurs,119,134,DraftKings,-17.5,-16.5,-110,-110,231.5,235.5,-1800,-1600,1000,900
+401810884,2026-03-22,LA Clippers,Dallas Mavericks,138,131,DraftKings,7.5,7.5,-110,-120,232.5,233.5,235,220,-290,-270
+401810885,2026-03-22,Philadelphia 76ers,Utah Jazz,126,116,DraftKings,6.5,5.5,-110,-108,233.5,228.5,220,185,-270,-225
+401810886,2026-03-22,Milwaukee Bucks,Phoenix Suns,108,105,DraftKings,-10.5,-11.5,-110,-105,219.5,218.5,-485,-600,370,440
+401810887,2026-03-22,Portland Trail Blazers,Denver Nuggets,112,128,DraftKings,-8.5,-8.5,-115,100,240.5,237.5,-360,-340,285,270
+401810888,2026-03-22,Brooklyn Nets,Sacramento Kings,122,126,DraftKings,-4.5,-6.5,-110,-118,218.5,218.5,-185,-250,154,205
+401810889,2026-03-22,Washington Wizards,New York Knicks,113,145,DraftKings,-18.5,-22.5,-110,-108,227.5,229.5,-2100,-3600,1100,1500
+401810890,2026-03-23,Minnesota Timberwolves,Boston Celtics,102,92,DraftKings,-9.5,-10.5,-110,-110,219.5,222.5,-380,-440,300,340
+401810891,2026-03-23,Toronto Raptors,Phoenix Suns,98,120,DraftKings,1.5,4.5,-118,-110,220.5,219.5,-105,150,-115,-180
+401810892,2026-03-23,Memphis Grizzlies,Atlanta Hawks,107,146,DraftKings,-12.5,-13.5,-115,-110,240.5,238.5,-700,-900,500,600
+401810893,2026-03-23,Los Angeles Lakers,Detroit Pistons,110,113,DraftKings,1.5,1.5,-108,-108,228.5,224.5,105,105,-125,-125
+401810894,2026-03-23,Indiana Pacers,Orlando Magic,128,126,DraftKings,-12.5,-10.5,-110,-110,232.5,233.5,-700,-535,500,400
+401810895,2026-03-23,Oklahoma City Thunder,Philadelphia 76ers,123,103,DraftKings,13.5,16.5,-105,-118,222.5,226.5,600,750,-900,-1200
+401810896,2026-03-23,San Antonio Spurs,Miami Heat,136,111,DraftKings,5.5,3.5,-105,-118,240.5,244.5,185,130,-225,-155
+401810897,2026-03-24,Houston Rockets,Chicago Bulls,124,132,DraftKings,8.5,8.5,-105,-102,227.5,233.5,275,295,-345,-375
+401810898,2026-03-24,Toronto Raptors,Utah Jazz,143,127,DraftKings,12.5,8.5,-110,-112,231.5,230.5,525,310,-750,-395
+401810899,2026-03-24,Golden State Warriors,Dallas Mavericks,137,131,DraftKings,2.5,3.5,-110,-120,229.5,230.5,114,114,-135,-135
+401810900,2026-03-24,Brooklyn Nets,Portland Trail Blazers,99,134,DraftKings,-13.5,-15.5,-110,-112,220.5,218.5,-900,-1100,600,700
+401810901,2026-03-24,Milwaukee Bucks,LA Clippers,96,129,DraftKings,-11.5,-13.5,-110,-118,225.5,221.5,-575,-900,425,600
+401810902,2026-03-24,Sacramento Kings,Charlotte Hornets,90,134,DraftKings,-16.5,-18.5,-110,-105,226.5,233.5,-1350,-1800,800,1000
+401810903,2026-03-24,New Orleans Pelicans,New York Knicks,116,121,DraftKings,-9.5,-8.5,-110,-105,231.5,229.5,-375,-355,295,280
+401810904,2026-03-25,Orlando Magic,Cleveland Cavaliers,131,136,DraftKings,-10.5,-10.5,-110,-112,228.5,230.5,-455,-455,350,350
+401810905,2026-03-25,Denver Nuggets,Phoenix Suns,125,123,DraftKings,5.5,5.5,-110,-105,233.5,233.5,180,185,-218,-225
+401810906,2026-03-25,Atlanta Hawks,Detroit Pistons,130,129,DraftKings,-2.5,-2.5,-112,-112,226.5,229.5,-142,-148,120,124
+401810907,2026-03-25,Los Angeles Lakers,Indiana Pacers,137,130,DraftKings,12.5,8.5,-115,-108,237.5,241.5,490,330,-675,-425
+401810908,2026-03-25,Chicago Bulls,Philadelphia 76ers,137,157,DraftKings,-6.5,-6.5,-105,-105,237.5,241.5,-230,-245,190,200
+401810909,2026-03-25,Oklahoma City Thunder,Boston Celtics,109,119,DraftKings,3.5,2.5,-118,-115,217.5,222.5,124,110,-148,-130
+401810910,2026-03-25,Miami Heat,Cleveland Cavaliers,120,103,DraftKings,-3.5,-2.5,-115,-115,242.5,243.5,-162,-148,136,124
+401810911,2026-03-26,San Antonio Spurs,Memphis Grizzlies,123,98,DraftKings,15.5,16.5,-110,-102,235.5,234.5,750,1000,-1200,-1800
+401810912,2026-03-26,Washington Wizards,Utah Jazz,133,110,DraftKings,-4.5,-3.5,-110,-105,240.5,239.5,-185,-155,154,130
+401810913,2026-03-26,Houston Rockets,Minnesota Timberwolves,108,110,DraftKings,1.5,1.5,-122,-105,222.5,223.5,-110,110,-110,-130
+401810914,2026-03-26,Dallas Mavericks,Denver Nuggets,135,142,DraftKings,-13.5,-10.5,-110,-112,244.5,246.5,-900,-650,600,470
+401810915,2026-03-26,Brooklyn Nets,Golden State Warriors,106,109,DraftKings,-10.5,-12.5,-115,-108,218.5,217.5,-550,-625,410,455
+401810916,2026-03-26,Milwaukee Bucks,Portland Trail Blazers,99,130,DraftKings,-12.5,-15.5,-105,-110,225.5,226.5,-625,-1050,455,675
+401810917,2026-03-26,Toronto Raptors,LA Clippers,94,119,DraftKings,-3.5,-3.5,-105,-118,224.5,226.5,-155,-180,130,150
+401810918,2026-03-26,New York Knicks,Charlotte Hornets,103,114,DraftKings,1.5,-2.5,-118,-105,223.5,224.5,-108,-130,-112,110
+401810919,2026-03-26,New Orleans Pelicans,Detroit Pistons,108,129,DraftKings,-5.5,-4.5,-115,-115,225.5,225.5,-218,-225,180,185
+401810920,2026-03-26,Sacramento Kings,Orlando Magic,117,121,DraftKings,-15.5,-15.5,-110,-112,228.5,230.5,-1200,-1350,750,800
+401810921,2026-03-27,LA Clippers,Indiana Pacers,114,113,DraftKings,9.5,8.5,-110,-102,235.5,235.5,340,300,-440,-380
+401810922,2026-03-27,Atlanta Hawks,Boston Celtics,102,109,DraftKings,-7.5,-4.5,-110,-115,224.5,223.5,-278,-218,225,180
+401810923,2026-03-27,Miami Heat,Cleveland Cavaliers,128,149,DraftKings,-4.5,-5.5,-110,-110,241.5,240.5,-180,-218,150,180
+401810924,2026-03-28,Houston Rockets,Memphis Grizzlies,119,109,DraftKings,12.5,13.5,-110,-102,226.5,227.5,500,625,-700,-950
+401810925,2026-03-28,Chicago Bulls,Oklahoma City Thunder,113,131,DraftKings,-19.5,-18.5,-110,-115,236.5,241.5,-2800,-2100,1300,1100
+401810926,2026-03-28,New Orleans Pelicans,Toronto Raptors,106,119,DraftKings,-7.5,-8.5,-105,-110,228.5,229.5,-278,-325,225,260
+401810927,2026-03-28,Utah Jazz,Denver Nuggets,129,135,DraftKings,-18.5,-19.5,-110,-115,248.5,247.5,-2800,-2100,1300,1100
+401810928,2026-03-28,Washington Wizards,Golden State Warriors,126,131,DraftKings,-13.5,-12.5,-110,-105,234.5,230.5,-800,-750,550,525
+401810929,2026-03-28,Dallas Mavericks,Portland Trail Blazers,100,93,DraftKings,-9.5,-10.5,-118,-112,235.5,240.5,-410,-500,320,380
+401810930,2026-03-28,Brooklyn Nets,Los Angeles Lakers,99,116,DraftKings,-17.5,-18.5,-110,-105,220.5,224.5,-1600,-2100,900,1100
+401810931,2026-03-28,San Antonio Spurs,Milwaukee Bucks,127,95,DraftKings,18.5,17.5,-110,-112,226.5,227.5,1000,1000,-1800,-1800
+401810932,2026-03-28,Philadelphia 76ers,Charlotte Hornets,118,114,DraftKings,-5.5,-6.5,-110,-110,229.5,231.5,-205,-250,170,205
+401810933,2026-03-28,Sacramento Kings,Atlanta Hawks,113,123,DraftKings,-15.5,-13.5,-110,-108,237.5,234.5,-900,-800,600,550
+401810935,2026-03-28,Detroit Pistons,Minnesota Timberwolves,109,87,DraftKings,-2.5,2.5,-105,-118,224.5,221.5,-130,110,110,-130
+401810934,2026-03-29,Chicago Bulls,Memphis Grizzlies,124,125,DraftKings,3.5,5.5,-110,-115,243.5,247.5,136,170,-162,-205
+401810936,2026-03-29,Utah Jazz,Phoenix Suns,109,134,DraftKings,-16.5,-17.5,-110,-108,230.5,232.5,-1350,-1650,800,950
+401810937,2026-03-29,LA Clippers,Milwaukee Bucks,127,113,DraftKings,13.5,17.5,-110,-112,222.5,219.5,550,800,-800,-1350
+401810938,2026-03-29,Miami Heat,Indiana Pacers,118,135,DraftKings,9.5,8.5,-110,-110,242.5,245.5,310,280,-395,-355
+401810939,2026-03-29,Sacramento Kings,Brooklyn Nets,99,116,DraftKings,-1.5,-1.5,-110,-112,221.5,216.5,-120,-120,100,100
+401810940,2026-03-29,Boston Celtics,Charlotte Hornets,114,99,DraftKings,-2.5,-2.5,-105,-108,215.5,216.5,-130,-135,110,114
+401810941,2026-03-29,Orlando Magic,Toronto Raptors,87,139,DraftKings,-2.5,-1.5,-115,-110,225.5,226.5,-142,-122,120,102
+401810942,2026-03-29,Washington Wizards,Portland Trail Blazers,88,123,DraftKings,-15.5,-16.5,-110,-112,235.5,235.5,-1100,-1650,700,950
+401810943,2026-03-29,Houston Rockets,New Orleans Pelicans,134,102,DraftKings,6.5,5.5,-110,-108,224.5,226.5,195,205,-238,-250
+401810944,2026-03-29,New York Knicks,Oklahoma City Thunder,100,111,DraftKings,-9.5,-7.5,-102,-115,224.5,223.5,-345,-360,275,285
+401810945,2026-03-30,Golden State Warriors,Denver Nuggets,93,116,DraftKings,-11.5,-11.5,-110,-115,237.5,238.5,-575,-625,425,455
+401810946,2026-03-30,Philadelphia 76ers,Miami Heat,109,119,DraftKings,1.5,2.5,-110,-110,245.5,242.5,102,120,-122,-142
+401810947,2026-03-30,Boston Celtics,Atlanta Hawks,102,112,DraftKings,-1.5,-2.5,-105,-110,222.5,225.5,-118,-142,-102,120
+401810948,2026-03-31,Phoenix Suns,Memphis Grizzlies,131,105,DraftKings,12.5,12.5,-105,-115,230.5,228.5,575,500,-850,-700
+401810949,2026-03-31,Chicago Bulls,San Antonio Spurs,114,129,DraftKings,-17.5,-17.5,-115,-115,243.5,246.5,-1800,-2100,1000,1100
+401810950,2026-03-31,Minnesota Timberwolves,Dallas Mavericks,124,94,DraftKings,6.5,8.5,-105,-108,235.5,236.5,215,280,-265,-355
+401810951,2026-03-31,Cleveland Cavaliers,Utah Jazz,122,113,DraftKings,17.5,16.5,-110,-110,243.5,242.5,950,900,-1650,-1600
+401810952,2026-03-31,Detroit Pistons,Oklahoma City Thunder,110,114,DraftKings,-13.5,-11.5,-110,-118,219.5,217.5,-750,-650,525,470
+401810953,2026-03-31,Washington Wizards,Los Angeles Lakers,101,120,DraftKings,-16.5,-15.5,-110,-112,236.5,237.5,-1450,-1450,850,850
+401810954,2026-03-31,Phoenix Suns,Orlando Magic,111,115,DraftKings,-2.5,-2.5,-110,-105,222.5,225.5,-135,-130,114,110
+401810955,2026-03-31,Charlotte Hornets,Brooklyn Nets,117,86,DraftKings,15.5,18.5,-105,-115,217.5,219.5,800,1100,-1350,-2100
+401810956,2026-04-01,Toronto Raptors,Detroit Pistons,116,127,DraftKings,-2.5,-3.5,-105,-110,220.5,219.5,-135,-155,114,130
+401810957,2026-04-01,New York Knicks,Houston Rockets,94,111,DraftKings,1.5,1.5,-118,-115,219.5,218.5,-108,-105,-112,-115
+401810958,2026-04-01,Cleveland Cavaliers,Los Angeles Lakers,113,127,DraftKings,-1.5,-2.5,-115,-105,236.5,236.5,-125,-130,105,110
+401810959,2026-04-01,Portland Trail Blazers,LA Clippers,114,104,DraftKings,-5.5,-4.5,-105,-115,227.5,225.5,-198,-198,164,164
+401810960,2026-04-01,Philadelphia 76ers,Washington Wizards,153,131,DraftKings,15.5,14.5,-110,-115,237.5,239.5,750,750,-1200,-1200
+401810961,2026-04-01,Boston Celtics,Miami Heat,147,129,DraftKings,4.5,4.5,-105,-108,228.5,229.5,164,164,-198,-198
+401810962,2026-04-01,Atlanta Hawks,Orlando Magic,130,101,DraftKings,4.5,2.5,-115,-110,233.5,235.5,145,120,-175,-142
+401858694,2026-04-01,Dallas Mavericks,Milwaukee Bucks,99,123,DraftKings,1.5,2.5,-115,-108,227.5,231.5,-102,120,-118,-142
+401810858,2026-04-02,New York Knicks,Memphis Grizzlies,130,119,DraftKings,14.5,13.5,-110,-108,228.5,224.5,650,600,-1000,-900
+401810963,2026-04-02,Sacramento Kings,Toronto Raptors,123,115,DraftKings,-13.5,-12.5,-110,-115,225.5,227.5,-1000,-750,650,525
+401810964,2026-04-02,Indiana Pacers,Chicago Bulls,145,126,DraftKings,-4.5,-3.5,-115,-115,242.5,246.5,-192,-170,160,142
+401810965,2026-04-02,Milwaukee Bucks,Houston Rockets,113,119,DraftKings,-17.5,-19.5,-110,-105,216.5,216.5,-1600,-2400,900,1200
+401810967,2026-04-02,Denver Nuggets,Utah Jazz,130,117,DraftKings,17.5,17.5,-110,-115,248.5,249.5,1000,1000,-1800,-1800
+401810968,2026-04-02,San Antonio Spurs,Golden State Warriors,127,113,DraftKings,11.5,14.5,-105,-108,227.5,228.5,440,700,-600,-1100
+401810969,2026-04-02,Phoenix Suns,Charlotte Hornets,107,127,DraftKings,-5.5,-5.5,-110,-112,220.5,227.5,-205,-230,170,190
+401810970,2026-04-02,Minnesota Timberwolves,Detroit Pistons,108,113,DraftKings,-2.5,-5.5,-105,-110,223.5,220.5,-130,-205,110,170
+401810971,2026-04-03,Los Angeles Lakers,Oklahoma City Thunder,96,139,DraftKings,-7.5,-9.5,-115,-108,228.5,233.5,-298,-380,240,300
+401810972,2026-04-03,Cleveland Cavaliers,Golden State Warriors,118,111,DraftKings,10.5,10.5,-115,-112,226.5,230.5,340,370,-440,-485
+401810973,2026-04-03,New Orleans Pelicans,Portland Trail Blazers,106,118,DraftKings,-6.5,-5.5,-110,-118,231.5,235.5,-238,-245,195,200
+401810974,2026-04-03,San Antonio Spurs,LA Clippers,118,99,DraftKings,4.5,-2.5,-115,-110,231.5,231.5,142,-142,-170,120
+401810975,2026-04-03,Indiana Pacers,Charlotte Hornets,108,129,DraftKings,-15.5,-15.5,-110,-110,233.5,234.5,-1350,-1600,800,900
+401810976,2026-04-03,Minnesota Timberwolves,Philadelphia 76ers,103,115,DraftKings,-2.5,-3.5,-105,-115,233.5,233.5,-135,-170,114,142
+401810977,2026-04-03,Atlanta Hawks,Brooklyn Nets,141,107,DraftKings,15.5,16.5,-110,-105,225.5,225.5,800,1000,-1350,-1800
+401810978,2026-04-03,Chicago Bulls,New York Knicks,96,136,DraftKings,-15.5,-13.5,-110,-108,237.5,236.5,-1350,-1200,800,750
+401810979,2026-04-04,Utah Jazz,Houston Rockets,106,140,DraftKings,-17.5,-18.5,-110,-112,231.5,231.5,-1600,-2100,900,1100
+401810980,2026-04-04,Toronto Raptors,Memphis Grizzlies,128,96,DraftKings,13.5,14.5,-110,-105,231.5,233.5,550,700,-800,-1100
+401810981,2026-04-04,Boston Celtics,Milwaukee Bucks,133,101,DraftKings,17.5,17.5,-110,-105,218.5,217.5,1000,1200,-1800,-2400
+401810982,2026-04-04,Orlando Magic,Dallas Mavericks,138,127,DraftKings,7.5,6.5,-105,-108,234.5,239.5,240,220,-298,-270
+401810983,2026-04-04,New Orleans Pelicans,Sacramento Kings,113,117,DraftKings,5.5,6.5,-110,-105,234.5,232.5,180,200,-218,-245
+401810984,2026-04-04,Washington Wizards,Miami Heat,136,152,DraftKings,-17.5,-18.5,-110,-108,247.5,245.5,-1800,-2400,1000,1200
+401810985,2026-04-04,San Antonio Spurs,Denver Nuggets,134,136,DraftKings,2.5,1.5,-110,-108,243.5,244.5,110,105,-130,-125
+401810986,2026-04-04,Detroit Pistons,Philadelphia 76ers,116,93,DraftKings,-1.5,3.5,-105,-108,226.5,225.5,-118,142,-102,-170
+401810987,2026-04-05,Toronto Raptors,Boston Celtics,101,115,DraftKings,-9.5,-9.5,-110,-102,220.5,221.5,-395,-425,310,330
+401810988,2026-04-05,Washington Wizards,Brooklyn Nets,115,121,DraftKings,-4.5,-3.5,-110,-108,230.5,230.5,-185,-162,154,136
+401810989,2026-04-05,Phoenix Suns,Chicago Bulls,120,110,DraftKings,10.5,11.5,-110,-112,234.5,243.5,360,455,-470,-625
+401810990,2026-04-05,Memphis Grizzlies,Milwaukee Bucks,115,131,DraftKings,-5.5,-7.5,-115,-108,226.5,230.5,-225,-278,185,225
+401810991,2026-04-05,Indiana Pacers,Cleveland Cavaliers,108,117,DraftKings,-17.5,-16.5,-110,-112,237.5,240.5,-1600,-1800,900,1000
+401810992,2026-04-05,Charlotte Hornets,Minnesota Timberwolves,122,108,DraftKings,-1.5,4.5,-105,-105,229.5,226.5,-115,154,-105,-185
+401810993,2026-04-05,Orlando Magic,New Orleans Pelicans,112,108,DraftKings,3.5,6.5,-110,-110,234.5,236.5,136,205,-162,-250
+401810994,2026-04-05,Utah Jazz,Oklahoma City Thunder,111,146,DraftKings,-21.5,-24.5,-110,-115,239.5,239.5,-4500,-9000,1700,2500
+401810995,2026-04-05,Los Angeles Lakers,Dallas Mavericks,128,134,DraftKings,6.5,1.5,-110,-102,235.5,234.5,205,105,-250,-125
+401810996,2026-04-06,LA Clippers,Sacramento Kings,138,109,DraftKings,11.5,13.5,-105,-112,231.5,228.5,455,600,-625,-900
+401810997,2026-04-06,Houston Rockets,Golden State Warriors,117,116,DraftKings,3.5,3.5,-110,-108,223.5,227.5,130,150,-155,-180
+401810998,2026-04-06,New York Knicks,Atlanta Hawks,108,105,DraftKings,-1.5,-1.5,100,-110,230.5,226.5,-110,-122,-110,102
+401810999,2026-04-06,Detroit Pistons,Orlando Magic,107,123,DraftKings,2.5,1.5,-105,-115,226.5,222.5,124,-102,-148,-118
+401811000,2026-04-07,Cleveland Cavaliers,Memphis Grizzlies,142,126,DraftKings,14.5,13.5,-110,-112,238.5,231.5,625,700,-950,-1100
+401811001,2026-04-07,Philadelphia 76ers,San Antonio Spurs,102,115,DraftKings,-8.5,-8.5,-110,-112,234.5,237.5,-340,-375,270,295
+401811002,2026-04-07,Portland Trail Blazers,Denver Nuggets,132,137,DraftKings,-9.5,-6.5,-110,-115,239.5,235.5,-395,-290,310,235
+401811003,2026-04-07,Chicago Bulls,Washington Wizards,129,98,DraftKings,5.5,5.5,-110,-105,248.5,249.5,180,185,-218,-225
+401811005,2026-04-07,Milwaukee Bucks,Brooklyn Nets,90,96,DraftKings,2.5,1.5,-115,-110,219.5,218.5,110,100,-130,-120
+401811006,2026-04-07,Miami Heat,Toronto Raptors,95,121,DraftKings,1.5,-2.5,-115,-112,238.5,240.5,102,-142,-122,120
+401811007,2026-04-07,Minnesota Timberwolves,Indiana Pacers,124,104,DraftKings,12.5,12.5,-110,-105,229.5,234.5,470,525,-650,-750
+401811004,2026-04-08,Charlotte Hornets,Boston Celtics,102,113,DraftKings,-6.5,-4.5,-105,-105,219.5,221.5,-230,-198,190,164
+401811008,2026-04-08,Utah Jazz,New Orleans Pelicans,137,156,DraftKings,-11.5,-6.5,-110,-102,242.5,242.5,-600,-245,440,200
+401811009,2026-04-08,Sacramento Kings,Golden State Warriors,105,110,DraftKings,-15.5,-14.5,-110,-112,233.5,233.5,-1100,-1100,700,700
+401811010,2026-04-08,Oklahoma City Thunder,Los Angeles Lakers,123,87,DraftKings,13.5,17.5,-105,-108,225.5,221.5,750,1100,-1200,-2100
+401811011,2026-04-08,Dallas Mavericks,LA Clippers,103,116,DraftKings,-11.5,-11.5,-110,-118,235.5,235.5,-535,-650,400,470
+401811012,2026-04-08,Houston Rockets,Phoenix Suns,119,105,DraftKings,1.5,1.5,-110,-110,217.5,221.5,105,-102,-125,-118
+401811013,2026-04-08,Atlanta Hawks,Cleveland Cavaliers,116,122,DraftKings,-2.5,-4.5,-110,-105,236.5,237.5,-135,-175,114,145
+401811014,2026-04-08,Minnesota Timberwolves,Orlando Magic,120,132,DraftKings,-5.5,-11.5,-115,-112,225.5,233.5,-230,-470,190,360
+401811015,2026-04-08,Milwaukee Bucks,Detroit Pistons,111,137,DraftKings,-18.5,-22.5,-110,-105,220.5,222.5,-2100,-3200,1100,1400
+401811016,2026-04-09,Portland Trail Blazers,San Antonio Spurs,101,112,DraftKings,-3.5,-2.5,-110,-118,236.5,229.5,-162,-155,136,130
+401811017,2026-04-09,Memphis Grizzlies,Denver Nuggets,119,136,DraftKings,-22.5,-23.5,-110,-110,245.5,247.5,-4000,-5000,1600,1800
+401811018,2026-04-09,Oklahoma City Thunder,LA Clippers,128,110,DraftKings,6.5,8.5,-110,-105,225.5,223.5,210,295,-258,-375
+401811019,2026-04-09,Dallas Mavericks,Phoenix Suns,107,112,DraftKings,-10.5,-12.5,-110,-110,230.5,234.5,-500,-700,380,500
+401811020,2026-04-09,Miami Heat,Toronto Raptors,114,128,DraftKings,-4.5,-4.5,-115,-105,236.5,236.5,-192,-170,160,142
+401811021,2026-04-09,Chicago Bulls,Washington Wizards,119,108,DraftKings,5.5,6.5,-110,-102,244.5,249.5,180,230,-218,-285
+401811022,2026-04-09,Indiana Pacers,Brooklyn Nets,123,94,DraftKings,1.5,3.5,-110,-115,223.5,224.5,102,136,-122,-162
+401811023,2026-04-09,Boston Celtics,New York Knicks,106,112,DraftKings,-3.5,-3.5,-110,-112,217.5,210.5,-155,-162,130,136
+401811024,2026-04-10,Philadelphia 76ers,Houston Rockets,102,113,DraftKings,-3.5,-6.5,-115,-108,226.5,226.5,-162,-258,136,210
+401811025,2026-04-10,Los Angeles Lakers,Golden State Warriors,119,103,DraftKings,-5.5,-1.5,-105,-108,225.5,222.5,-205,-118,170,-102
+401811026,2026-04-10,Detroit Pistons,Charlotte Hornets,118,100,DraftKings,-2.5,-6.5,-110,-105,222.5,225.5,-135,-218,114,180
+401811027,2026-04-10,Miami Heat,Washington Wizards,140,117,DraftKings,17.5,15.5,-110,-105,249.5,243.5,1000,900,-1800,-1600
+401811028,2026-04-10,Cleveland Cavaliers,Atlanta Hawks,102,124,DraftKings,-6.5,-8.5,-105,-105,234.5,233.5,-245,-355,200,280
+401811029,2026-04-10,New Orleans Pelicans,Boston Celtics,118,144,DraftKings,-16.5,-18.5,-110,-105,224.5,227.5,-1350,-2100,800,1100
+401811030,2026-04-10,Philadelphia 76ers,Indiana Pacers,105,94,DraftKings,14.5,14.5,-110,-105,234.5,234.5,700,700,-1100,-1100
+401811031,2026-04-10,Toronto Raptors,New York Knicks,95,112,DraftKings,-5.5,-6.5,-108,-108,219.5,218.5,-198,-270,164,220
+401811032,2026-04-11,Orlando Magic,Chicago Bulls,127,103,DraftKings,14.5,16.5,-110,-115,241.5,246.5,675,800,-1050,-1350
+401811033,2026-04-11,Minnesota Timberwolves,Houston Rockets,136,132,DraftKings,-9.5,-9.5,-115,-112,218.5,227.5,-375,-485,295,370
+401811034,2026-04-11,Brooklyn Nets,Milwaukee Bucks,108,125,DraftKings,-8.5,-10.5,-115,-102,220.5,218.5,-360,-500,285,380
+401811035,2026-04-11,Dallas Mavericks,San Antonio Spurs,120,139,DraftKings,-16.5,-18.5,-110,-105,235.5,236.5,-1450,-2100,850,1100
+401811036,2026-04-11,Memphis Grizzlies,Utah Jazz,101,147,DraftKings,-3.5,-4.5,-110,-115,246.5,247.5,-155,-180,130,150
+401811037,2026-04-11,Oklahoma City Thunder,Denver Nuggets,107,127,DraftKings,-10.5,-2.5,-110,-108,231.5,223.5,-440,-142,340,120
+401811038,2026-04-11,LA Clippers,Portland Trail Blazers,97,116,DraftKings,-1.5,-1.5,-110,-115,225.5,226.5,-122,-122,102,102
+401811039,2026-04-11,Golden State Warriors,Sacramento Kings,118,124,DraftKings,11.5,10.5,-110,-102,229.5,228.5,380,380,-500,-500
+401811040,2026-04-11,Phoenix Suns,Los Angeles Lakers,73,101,DraftKings,1.5,2.5,-105,-115,220.5,217.5,105,110,-125,-130
+401811041,2026-04-12,Orlando Magic,Boston Celtics,108,113,DraftKings,3.5,12.5,-110,-102,216.5,222.5,136,525,-162,-750
+401811042,2026-04-12,Washington Wizards,Cleveland Cavaliers,117,130,DraftKings,-17.5,-10.5,-105,-115,238.5,234.5,-1650,-500,950,380
+401811043,2026-04-12,Detroit Pistons,Indiana Pacers,133,121,DraftKings,12.5,16.5,-102,-112,229.5,232.5,575,750,-850,-1200
+401811044,2026-04-12,Atlanta Hawks,Miami Heat,117,143,DraftKings,6.5,-10.5,-110,-112,243.5,239.5,200,-470,-245,360
+401811045,2026-04-12,Charlotte Hornets,New York Knicks,110,96,DraftKings,8.5,14.5,-115,-112,215.5,217.5,270,600,-340,-900
+401811046,2026-04-12,Milwaukee Bucks,Philadelphia 76ers,106,126,DraftKings,-16.5,-16.5,-105,-108,227.5,225.5,-1100,-1350,700,800
+401811047,2026-04-12,Brooklyn Nets,Toronto Raptors,101,136,DraftKings,-18.5,-23.5,-115,-115,217.5,218.5,-2800,-5000,1300,1800
+401811048,2026-04-13,Chicago Bulls,Dallas Mavericks,128,149,DraftKings,-7.5,-5.5,-110,-105,245.5,249.5,-290,-205,235,170
+401811049,2026-04-13,Memphis Grizzlies,Houston Rockets,101,132,DraftKings,-16.5,-14.5,-108,-115,226.5,230.5,-1350,-1100,800,700
+401811050,2026-04-13,New Orleans Pelicans,Minnesota Timberwolves,126,132,DraftKings,-10.5,-3.5,-110,-112,233.5,239.5,-470,-180,360,150
+401811051,2026-04-13,Phoenix Suns,Oklahoma City Thunder,135,103,DraftKings,-5.5,-7.5,-118,-105,215.5,213.5,-225,-310,185,250
+401811052,2026-04-13,Denver Nuggets,San Antonio Spurs,128,118,DraftKings,2.5,-9.5,-110,-112,238.5,235.5,114,-440,-135,340
+401811053,2026-04-13,Utah Jazz,Los Angeles Lakers,107,131,DraftKings,-16.5,-14.5,-110,-110,236.5,239.5,-1650,-1100,950,700
+401811054,2026-04-13,Golden State Warriors,LA Clippers,110,115,DraftKings,-8.5,-3.5,-118,-112,224.5,229.5,-360,-162,285,136
+401811055,2026-04-13,Sacramento Kings,Portland Trail Blazers,110,122,DraftKings,-16.5,-18.5,-110,-110,228.5,226.5,-1450,-2400,850,1200
+401902644,2026-10-03,Miami Heat,Toronto Raptors,129,105,,,,,,,,,,,
+401914127,2026-10-04,Utah Jazz,Denver Nuggets,109,97,,,,,,,,,,,
+401918010,2026-10-04,Golden State Warriors,LA Clippers,101,104,,,,,,,,,,,
+401898388,2026-10-05,Memphis Grizzlies,Atlanta Hawks,132,123,DraftKings,-2.5,-3.5,-118,-110,232.5,232.5,-162,-166,136,140
+401898716,2026-10-05,Los Angeles Lakers,Sacramento Kings,127,103,DraftKings,6.5,3.5,-110,-110,229.5,228.5,195,130,-238,-155
+401908947,2026-10-05,Phoenix Suns,Detroit Pistons,107,109,DraftKings,-3.5,-2.5,-108,-112,218.5,216.5,-155,-130,130,110
+401914101,2026-10-05,New York Knicks,Philadelphia 76ers,97,120,DraftKings,-1.5,4.5,-108,-110,230.5,228.5,-118,160,-102,-192
+401914102,2026-10-05,Minnesota Timberwolves,Milwaukee Bucks,116,97,DraftKings,5.5,5.5,-115,-110,231.5,231.5,164,170,-198,-205
+401898389,2026-10-06,New Orleans Pelicans,Oklahoma City Thunder,116,110,DraftKings,-7.5,2.5,-105,-115,225.5,223.5,-278,110,225,-130
+401898390,2026-10-06,Los Angeles Lakers,Golden State Warriors,98,124,DraftKings,-2.5,-7.5,-115,-102,220.5,221.5,-142,-258,120,210
+401901820,2026-10-06,Brooklyn Nets,Charlotte Hornets,124,90,DraftKings,-4.5,-1.5,-115,-105,212.5,213.5,-192,-115,160,-105
+401914128,2026-10-06,Denver Nuggets,Utah Jazz,117,106,DraftKings,1.5,-1.5,-118,102,230.5,230.5,-105,-110,-115,-110
+401898391,2026-10-07,Orlando Magic,Memphis Grizzlies,122,118,DraftKings,2.5,1.5,-115,-105,233.5,235.5,110,110,-130,-130
+401908620,2026-10-07,Milwaukee Bucks,Oklahoma City Thunder,128,126,DraftKings,-9.5,-12.5,-115,-105,220.5,218.5,-455,-520,350,390
+401908939,2026-10-07,Phoenix Suns,Chicago Bulls,117,124,DraftKings,2.5,2.5,-105,-108,227.5,228.5,120,114,-142,-135
+401914123,2026-10-07,Minnesota Timberwolves,Indiana Pacers,112,123,DraftKings,1.5,2.5,-105,-112,234.5,237.5,110,114,-130,-135
+401914129,2026-10-07,Golden State Warriors,Portland Trail Blazers,118,123,DraftKings,-6.5,-14.5,-110,-112,222.5,218.5,-238,-535,195,400
+401898392,2026-10-08,Boston Celtics,Cleveland Cavaliers,124,113,DraftKings,-1.5,-3.5,100,-108,220.5,222.5,-112,-162,-108,136
+401898393,2026-10-08,New Orleans Pelicans,Miami Heat,118,128,DraftKings,-7.5,-7.5,-110,-110,232.5,234.5,-298,-285,240,230
+401898394,2026-10-08,Atlanta Hawks,San Antonio Spurs,123,116,DraftKings,-7.5,-8.5,-105,-112,226.5,227.5,-230,-270,190,220
+401898717,2026-10-08,Sacramento Kings,Los Angeles Lakers,110,114,DraftKings,-6.5,-10.5,-110,-115,228.5,232.5,-218,-375,180,295
+401901823,2026-10-08,Philadelphia 76ers,Brooklyn Nets,108,114,DraftKings,6.5,8.5,-115,-105,220.5,220.5,190,240,-230,-298
+401906508,2026-10-08,Washington Wizards,New York Knicks,111,109,DraftKings,-6.5,-6.5,-110,-110,227.5,227.5,-245,-230,200,190
+401898395,2026-10-09,Houston Rockets,Dallas Mavericks,135,117,DraftKings,2.5,3.5,-115,-115,221.5,231.5,110,124,-130,-148
+401908940,2026-10-09,Memphis Grizzlies,Chicago Bulls,104,100,DraftKings,-3.5,-2.5,-110,-110,237.5,239.5,-155,-130,130,110
+401898396,2026-10-10,Atlanta Hawks,Indiana Pacers,119,117,DraftKings,-2.5,-1.5,-108,-112,234.5,234.5,-135,-122,114,102
+401898397,2026-10-10,Minnesota Timberwolves,Miami Heat,125,124,DraftKings,-1.5,3.5,-108,-112,234.5,231.5,-118,124,-102,-148
+401898398,2026-10-10,Philadelphia 76ers,Boston Celtics,106,144,DraftKings,-4.5,-7.5,-115,-108,222.5,224.5,-175,-265,145,215
+401898399,2026-10-10,Sacramento Kings,Golden State Warriors,106,111,DraftKings,-7.5,-6.5,-115,-112,229.5,229.5,-258,-245,210,200
+401898720,2026-10-10,San Antonio Spurs,Phoenix Suns,98,102,DraftKings,4.5,7.5,-115,102,222.5,224.5,140,235,-166,-290
+401902645,2026-10-10,LA Clippers,Toronto Raptors,106,114,DraftKings,-4.5,-4.5,-108,-112,220.5,219.5,-166,-185,140,154
+401906510,2026-10-10,Detroit Pistons,Washington Wizards,108,114,DraftKings,3.5,1.5,-115,-115,226.5,223.5,124,-102,-148,-118
+401898400,2026-10-11,Dallas Mavericks,Houston Rockets,132,115,DraftKings,-3.5,-1.5,-110,-105,231.5,231.5,-155,-110,130,-110
+401898401,2026-10-11,Orlando Magic,Cleveland Cavaliers,105,119,DraftKings,-5.5,-5.5,-110,-105,228.5,229.5,-192,-198,160,164
+401901821,2026-10-11,Milwaukee Bucks,Charlotte Hornets,90,105,DraftKings,-3.5,-3.5,-115,-112,222.5,223.5,-170,-155,136,130
+401908941,2026-10-11,Chicago Bulls,Denver Nuggets,128,133,DraftKings,-7.5,-7.5,-115,-108,232.5,235.5,-310,-265,250,215
+401898402,2026-10-12,Oklahoma City Thunder,Atlanta Hawks,110,113,DraftKings,-7.5,-4.5,-110,-115,222.5,224.5,-285,-185,230,154
+401898721,2026-10-12,San Antonio Spurs,Utah Jazz,109,119,DraftKings,3.5,-5.5,-110,-115,227.5,228.5,130,-218,-155,180
+401901824,2026-10-12,Brooklyn Nets,Washington Wizards,131,122,DraftKings,-3.5,-2.5,-105,-115,222.5,224.5,-148,-142,124,120
+401914124,2026-10-12,Minnesota Timberwolves,New York Knicks,122,104,DraftKings,-2.5,1.5,-110,-118,227.5,228.5,-142,-108,120,-112
+401914130,2026-10-12,London Lions,Portland Trail Blazers,66,119,DraftKings,-36.5,-36.5,-110,-110,210.5,212.5,,,,
+401898403,2026-10-13,Cleveland Cavaliers,Orlando Magic,116,132,DraftKings,1.5,1.5,-122,-115,230.5,230.5,-110,-105,-110,-115
+401898718,2026-10-13,Golden State Warriors,Los Angeles Lakers,101,89,DraftKings,-2.5,2.5,-112,-115,227.5,228.5,-135,114,114,-135
+401901826,2026-10-13,Portland Trail Blazers,Sacramento Kings,110,98,DraftKings,4.5,6.5,-115,-110,228.5,229.5,140,200,-166,-245
+401908621,2026-10-13,Indiana Pacers,Oklahoma City Thunder,112,114,DraftKings,-6.5,-6.5,-110,-115,228.5,230.5,-265,-230,215,190
+401908944,2026-10-13,New York Knicks,Toronto Raptors,98,148,DraftKings,-10.5,-11.5,-110,-110,218.5,220.5,-455,-410,350,320
+401898404,2026-10-14,Brooklyn Nets,Miami Heat,128,144,DraftKings,-7.5,-3.5,-105,-115,232.5,236.5,-278,-166,225,140
+401898405,2026-10-14,Charlotte Hornets,Boston Celtics,93,114,DraftKings,-8.5,-8.5,-110,-105,225.5,224.5,-340,-325,270,260
+401898722,2026-10-14,Phoenix Suns,San Antonio Spurs,103,123,DraftKings,-7.5,-11.5,-115,-115,224.5,221.5,-305,-535,245,400
+401901825,2026-10-14,New Orleans Pelicans,Dallas Mavericks,101,97,DraftKings,-2.5,2.5,-115,-105,233.5,229.5,-142,124,120,-148
+401908942,2026-10-14,Chicago Bulls,Milwaukee Bucks,125,104,DraftKings,1.5,6.5,-110,-110,233.5,232.5,102,190,-122,-230
+401914125,2026-10-14,Detroit Pistons,Minnesota Timberwolves,128,106,DraftKings,-2.5,-4.5,-115,-105,227.5,228.5,-142,-180,120,150
+401918011,2026-10-14,Denver Nuggets,LA Clippers,110,122,DraftKings,2.5,5.5,-105,-110,225.5,226.5,120,180,-142,-218
+401908622,2026-10-15,Oklahoma City Thunder,Houston Rockets,89,116,DraftKings,3.5,2.5,-105,-112,224.5,229.5,136,120,-162,-142
+401908945,2026-10-15,Toronto Raptors,New York Knicks,120,122,DraftKings,-5.5,-3.5,-110,-115,225.5,228.5,-205,-170,170,142
+401898406,2026-10-16,Miami Heat,Orlando Magic,115,136,DraftKings,-2.5,-7.5,-115,-118,233.5,235.5,-142,-285,120,230
+401898407,2026-10-16,Boston Celtics,Philadelphia 76ers,125,120,DraftKings,-5.5,-10.5,-110,-105,224.5,225.5,-185,-425,154,330
+401898408,2026-10-16,Atlanta Hawks,Dallas Mavericks,135,111,DraftKings,-1.5,-1.5,-108,-102,232.5,237.5,-120,-115,100,-105
+401898409,2026-10-16,Portland Trail Blazers,Golden State Warriors,118,128,DraftKings,2.5,1.5,-115,-105,226.5,227.5,110,-102,-130,-118
+401898719,2026-10-16,Denver Nuggets,Los Angeles Lakers,121,106,DraftKings,-6.5,-3.5,-105,-105,233.5,231.5,-198,-148,164,124
+401898843,2026-10-16,Sacramento Kings,San Antonio Spurs,97,126,DraftKings,-13.5,-13.5,-115,-105,229.5,231.5,-650,-600,525,440
+401901822,2026-10-16,Charlotte Hornets,Memphis Grizzlies,98,116,DraftKings,-1.5,-1.5,-115,-118,228.5,229.5,-125,-130,105,110
+401906509,2026-10-16,Washington Wizards,New Orleans Pelicans,106,107,DraftKings,2.5,-1.5,-105,-112,230.5,230.5,120,-122,-142,102
+401908943,2026-10-16,Minnesota Timberwolves,Chicago Bulls,116,133,DraftKings,-1.5,-6.5,102,-105,234.5,234.5,-110,-238,-110,195
+401908946,2026-10-16,Toronto Raptors,Detroit Pistons,125,129,DraftKings,-10.5,-12.5,-105,-105,221.5,219.5,-360,-485,285,370
+401908948,2026-10-16,Utah Jazz,Phoenix Suns,119,116,DraftKings,-4.5,-4.5,-105,-115,225.5,225.5,-170,-180,142,150
+401914126,2026-10-16,Milwaukee Bucks,Indiana Pacers,128,127,DraftKings,-9.5,-7.5,-110,-115,233.5,234.5,-325,-298,260,240
+401909088,2026-10-20,Boston Celtics,Detroit Pistons,113,121,DraftKings,-2.5,1.5,-105,-108,224.5,220.5,-125,105,105,-125
+401909089,2026-10-20,Philadelphia 76ers,New York Knicks,106,100,DraftKings,-3.5,-4.5,-118,-108,229.5,231.5,-170,-175,142,145
+401909090,2026-10-20,Oklahoma City Thunder,San Antonio Spurs,116,104,DraftKings,-1.5,1.5,-115,-112,228.5,229.5,-125,-102,105,-118
+401909091,2026-10-21,Minnesota Timberwolves,Miami Heat,131,106,DraftKings,-3.5,-1.5,-110,-108,236.5,240.5,-155,-118,130,-102
+401909092,2026-10-21,Golden State Warriors,Los Angeles Lakers,105,127,DraftKings,-5.5,-6.5,-110,-112,231.5,233.5,-205,-230,170,190
+401909834,2026-10-21,Atlanta Hawks,Orlando Magic,132,125,DraftKings,-2.5,-2.5,-110,-102,232.5,233.5,-135,-135,114,114
+401909835,2026-10-21,Milwaukee Bucks,Washington Wizards,116,128,DraftKings,-6.5,-4.5,-110,-105,238.5,239.5,-238,-175,195,145
+401909836,2026-10-21,Charlotte Hornets,Brooklyn Nets,110,103,DraftKings,4.5,1.5,-110,-112,226.5,220.5,142,100,-170,-120
+401909837,2026-10-21,Chicago Bulls,Toronto Raptors,92,135,DraftKings,-8.5,-10.5,-115,-112,235.5,237.5,-345,-470,275,360
+401909838,2026-10-21,Utah Jazz,Memphis Grizzlies,103,123,DraftKings,2.5,-1.5,-102,-115,241.5,240.5,124,-125,-148,105
+401909839,2026-10-21,Indiana Pacers,New Orleans Pelicans,123,120,DraftKings,4.5,2.5,-110,-102,240.5,238.5,145,120,-175,-142
+401909840,2026-10-21,Dallas Mavericks,Houston Rockets,110,128,DraftKings,-8.5,-9.5,-110,-118,226.5,230.5,-340,-425,270,330
+401909841,2026-10-21,Phoenix Suns,Portland Trail Blazers,83,124,DraftKings,-4.5,-3.5,-110,-110,236.5,232.5,-170,-155,142,130
+401909842,2026-10-21,Sacramento Kings,LA Clippers,96,121,DraftKings,-4.5,-5.5,-105,-105,230.5,226.5,-155,-185,130,154
+401909093,2026-10-22,Cleveland Cavaliers,Philadelphia 76ers,106,114,DraftKings,-4.5,-2.5,-110,-110,233.5,237.5,-175,-135,145,114
+401909094,2026-10-22,Denver Nuggets,Oklahoma City Thunder,84,96,DraftKings,-7.5,-7.5,-110,-118,231.5,236.5,-278,-340,225,270
+401909095,2026-10-23,New York Knicks,Boston Celtics,103,107,DraftKings,-2.5,-2.5,-110,-115,223.5,220.5,-135,-148,114,124
+401909096,2026-10-23,Houston Rockets,San Antonio Spurs,114,110,DraftKings,-5.5,-4.5,-118,-115,225.5,224.5,-225,-185,185,154
+401909843,2026-10-23,Atlanta Hawks,Charlotte Hornets,128,81,DraftKings,2.5,2.5,-110,-110,226.5,226.5,114,120,-135,-142
+401909844,2026-10-23,Dallas Mavericks,Indiana Pacers,121,105,DraftKings,-5.5,-7.5,-115,-105,234.5,241.5,-205,-265,170,215
+401909845,2026-10-23,Minnesota Timberwolves,Orlando Magic,115,93,DraftKings,1.5,-1.5,-110,-110,237.5,234.5,-102,-122,-118,102
+401909846,2026-10-23,Toronto Raptors,Washington Wizards,112,102,DraftKings,4.5,9.5,-105,-118,235.5,236.5,154,270,-185,-340
+401909847,2026-10-23,Detroit Pistons,Miami Heat,128,111,DraftKings,-1.5,2.5,-115,-115,234.5,235.5,-125,110,105,-130
+401909848,2026-10-23,Chicago Bulls,Milwaukee Bucks,132,125,DraftKings,-1.5,-1.5,100,-105,239.5,241.5,-110,-118,-110,-102
+401909849,2026-10-23,New Orleans Pelicans,Utah Jazz,119,120,DraftKings,-5.5,-1.5,-105,-102,241.5,238.5,-205,-112,170,-108
+401909850,2026-10-23,Memphis Grizzlies,Golden State Warriors,111,108,DraftKings,-3.5,-4.5,-110,-105,235.5,236.5,-155,-162,130,136
+401909851,2026-10-23,LA Clippers,Los Angeles Lakers,117,125,DraftKings,-9.5,-8.5,-110,-112,229.5,225.5,-380,-360,300,285
+401909852,2026-10-23,Portland Trail Blazers,Sacramento Kings,128,120,DraftKings,6.5,9.5,-110,-110,232.5,231.5,190,360,-230,-470
+401909853,2026-10-24,Miami Heat,Charlotte Hornets,110,115,DraftKings,3.5,4.5,-110,-112,231.5,227.5,124,150,-148,-180
+401909854,2026-10-24,Brooklyn Nets,Cleveland Cavaliers,121,125,DraftKings,-11.5,-11.5,-105,-108,232.5,228.5,-455,-500,350,380
+401909855,2026-10-24,Milwaukee Bucks,Philadelphia 76ers,116,127,DraftKings,-12.5,-12.5,-115,-112,230.5,234.5,-625,-650,455,470
+401909856,2026-10-24,Houston Rockets,Atlanta Hawks,121,114,DraftKings,-1.5,1.5,-105,-118,230.5,227.5,-115,-108,-105,-112
+401909857,2026-10-24,Washington Wizards,Chicago Bulls,124,120,DraftKings,1.5,-1.5,-118,-115,243.5,244.5,-110,-125,-110,105
+401909858,2026-10-24,San Antonio Spurs,Dallas Mavericks,122,106,DraftKings,11.5,14.5,-110,-105,230.5,229.5,360,600,-470,-900
+401909859,2026-10-24,New Orleans Pelicans,Denver Nuggets,135,141,DraftKings,-11.5,-11.5,-110,-105,237.5,239.5,-485,-485,370,370
+401909860,2026-10-24,Golden State Warriors,Phoenix Suns,122,131,DraftKings,-6.5,-9.5,-105,-115,224.5,221.5,-205,-410,170,320
+401909861,2026-10-25,Los Angeles Lakers,Utah Jazz,132,123,DraftKings,6.5,6.5,-110,-110,236.5,237.5,210,205,-258,-250
+401909862,2026-10-25,Indiana Pacers,Brooklyn Nets,136,109,DraftKings,5.5,5.5,-105,-108,232.5,231.5,180,180,-218,-218
+401909863,2026-10-25,Orlando Magic,New York Knicks,111,102,DraftKings,-7.5,-6.5,-115,-115,225.5,224.5,-310,-270,250,220
+401909864,2026-10-25,Toronto Raptors,Minnesota Timberwolves,94,117,DraftKings,-2.5,-3.5,-105,-115,231.5,228.5,-130,-166,110,140
+401909865,2026-10-25,LA Clippers,Oklahoma City Thunder,101,108,DraftKings,-14.5,-16.5,-110,-108,221.5,223.5,-950,-1350,625,800
+401909866,2026-10-25,Detroit Pistons,Philadelphia 76ers,106,93,DraftKings,-2.5,1.5,-110,-105,226.5,228.5,-130,110,110,-130
+401909867,2026-10-25,Memphis Grizzlies,Sacramento Kings,123,112,DraftKings,3.5,3.5,-105,-105,236.5,234.5,136,150,-162,-180
+401909868,2026-10-26,Washington Wizards,Charlotte Hornets,103,110,DraftKings,-2.5,-2.5,-115,-110,228.5,225.5,-142,-142,120,120
+401909869,2026-10-26,Minnesota Timberwolves,Cleveland Cavaliers,125,127,DraftKings,-4.5,-3.5,-105,-105,232.5,234.5,-170,-155,142,130
+401909870,2026-10-26,Chicago Bulls,Boston Celtics,99,134,DraftKings,-13.5,-14.5,-110,-105,233.5,233.5,-850,-750,575,525
+401909871,2026-10-26,Dallas Mavericks,Miami Heat,113,109,DraftKings,-7.5,-7.5,-110,-110,235.5,240.5,-290,-270,235,220
+401909872,2026-10-26,Indiana Pacers,Milwaukee Bucks,102,110,DraftKings,4.5,3.5,-110,-110,239.5,239.5,145,130,-175,-155
+401909873,2026-10-26,Phoenix Suns,Oklahoma City Thunder,114,125,DraftKings,-9.5,-8.5,-115,-110,218.5,221.5,-380,-325,300,260
+401909874,2026-10-26,Atlanta Hawks,Houston Rockets,110,120,DraftKings,-5.5,-4.5,-110,-112,229.5,228.5,-218,-192,180,160
+401909875,2026-10-26,Memphis Grizzlies,Utah Jazz,110,105,DraftKings,-1.5,1.5,-105,-118,237.5,237.5,-115,-108,-105,-112
+401909876,2026-10-26,Golden State Warriors,Denver Nuggets,134,114,DraftKings,-7.5,-6.5,-110,-118,235.5,236.5,-290,-270,235,220

@@ -52,6 +52,9 @@ jobs:
       - name: Fetch scores and grade past slates
         run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab soccer epl' }}
 
+      - name: Archive finished NBA games' opening and closing lines
+        run: python scripts/archive_nba_lines.py
+
       - name: Commit and push results
         run: |
           git config user.name "diamond-ledger-bot"
