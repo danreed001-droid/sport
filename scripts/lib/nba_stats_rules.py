@@ -17,8 +17,8 @@ RULE_NAMES = {
 }
 # Backtest rate, then the record when replayed on 2023-24 and 2024-25 (unseen).
 RULE_BACKTEST = {
-    2: "63.6% ATS, n=77; unseen 2023-25: 29-13", 5: "77.8% ATS, n=9; unseen 2023-25: 3-1",
-    9: "68.1% ATS, n=91; unseen 2023-25: 24-14", 13: "75.8% ATS, n=33; unseen 2023-25: 6-3",
-    14: "62.3% ATS, n=122; unseen 2023-25: 47-29", 16: "68.5% ATS, n=54; unseen 2023-25: 15-10",
-    17: "65.5% ATS, n=58; unseen 2023-25: 20-13",
+    2: "63.6% ATS, n=77; unseen 2023-25: 31-13", 5: "77.8% ATS, n=9; unseen 2023-25: 3-1",
+    9: "68.1% ATS, n=91; unseen 2023-25: 24-15", 13: "75.8% ATS, n=33; unseen 2023-25: 6-3",
+    14: "62.3% ATS, n=122; unseen 2023-25: 49-29", 16: "68.5% ATS, n=54; unseen 2023-25: 15-10",
+    17: "65.5% ATS, n=58; unseen 2023-25: 21-13",
 }
