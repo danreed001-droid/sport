@@ -66,7 +66,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Atlanta Falcons",
+      "nflStatsRules": [
+        {
+          "rule": 3,
+          "name": "Back an underdog whose top rusher ran for 150+ yards last game",
+          "backtest": "66.7% ATS, n=39 (2017-2025); 2017-21 61.9%, 2022-25 72.2%",
+          "detail": "Backing Atlanta Falcons: Bijan Robinson ran for 194 yards last game (150+), and Atlanta Falcons is a 1.5-point underdog now -- teams in this spot covered 66.7% ATS, 2017-2025 (n=39, small sample)."
+        }
+      ],
+      "nflStatsCheck": "Rule 3: Backing Atlanta Falcons: Bijan Robinson ran for 194 yards last game (150+), and Atlanta Falcons is a 1.5-point underdog now -- teams in this spot covered 66.7% ATS, 2017-2025 (n=39, small sample).",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 110.0,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 95.24
     }
   ],
   "scoredAt": "2026-10-06T18:39:49.294395+00:00"

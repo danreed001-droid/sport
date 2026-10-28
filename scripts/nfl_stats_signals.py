@@ -6,6 +6,7 @@ scripts/lib/nfl_stats_rules.py.
 
   Rule 1: back a home underdog of 7+ points (fade a road favorite of 7+).
   Rule 2: fade a team that won its last game as an underdog of 7+ points.
+  Rule 3: back an underdog whose top rusher ran for 150+ yards last game.
   Neutral-site games (London, Germany, etc.) are left out, as in the backtests;
   if the rules point at opposite sides, the game gets no pick.
 
@@ -33,6 +34,7 @@ from lib.nfl_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 
 BIG_HOME_DOG = 7
 UPSET_DOG = 7        # rule 2: won its last game as an underdog of this many points or more
+BIG_RUSH = 150       # rule 3: top rusher's yards in the team's last game
 LOOKBACK_DAYS = 16   # how far back to look for a team's last regular-season game
 FIELDS = ("nflStatsFavors", "nflStatsCheck", "nflStatsRules")
 GRADE_FIELDS = ("nflStatsCorrect", "nflStatsReturn", "nflStatsCover", "nflStatsSpreadReturn")
@@ -92,8 +94,37 @@ def last_game(session, team, date_str):
                 except Exception:
                     home_spread = None
             spread = None if home_spread is None else (home_spread if side == "home" else -home_spread)
-            return {"won": won, "spread": spread, "neutral": bool(comp.get("neutralSite")), "date": d, "opp": names[other]}
+            return {"won": won, "spread": spread, "neutral": bool(comp.get("neutralSite")), "date": d, "opp": names[other], "eid": ev["id"]}
     return None
+
+
+_RUSH = {}
+
+
+def top_rusher(session, event_id, team):
+    """(name, yards) for the team's leading rusher in an ESPN game, or None."""
+    if event_id not in _RUSH:
+        out = {}
+        try:
+            d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event={event_id}", timeout=20).json()
+            for t in d.get("boxscore", {}).get("players", []):
+                for cat in t.get("statistics", []):
+                    if cat.get("name") != "rushing":
+                        continue
+                    labels = cat.get("labels", [])
+                    i = labels.index("YDS") if "YDS" in labels else None
+                    best = None
+                    for a in cat.get("athletes", []):
+                        st = a.get("stats") or []
+                        yds = _num(st[i]) if i is not None and i < len(st) else None
+                        if yds is not None and (best is None or yds > best[1]):
+                            best = (a["athlete"].get("displayName"), yds)
+                    if best:
+                        out[t["team"]["displayName"]] = best
+        except Exception:
+            pass
+        _RUSH[event_id] = out
+    return _RUSH[event_id].get(team)
 
 
 def espn_games(session, date_str):
@@ -159,6 +190,12 @@ def evaluate(session, date_str, g, neutral):
                                     f"covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."))
     for team, opp in ((g["home"], g["away"]), (g["away"], g["home"])):
         last = last_game(session, team, date_str)
+        line = None if spread is None else (spread if team == g["home"] else -spread)
+        if last and line is not None and line > 0:
+            rusher = top_rusher(session, last["eid"], team)
+            if rusher and rusher[1] >= BIG_RUSH:
+                picks.append((team, 3, f"Backing {team}: {rusher[0]} ran for {rusher[1]:g} yards last game ({BIG_RUSH}+), and {team} "
+                                       f"is a {line:g}-point underdog now -- teams in this spot covered 66.7% ATS, 2017-2025 (n=39, small sample)."))
         if last and last["won"] and not last["neutral"] and last["spread"] is not None and last["spread"] >= UPSET_DOG:
             picks.append((opp, 2, f"Fading {team}: won last game ({last['date']}, vs. {last['opp']}) as a {last['spread']:g}-point "
                                   f"underdog ({UPSET_DOG}+) -- teams coming off an upset that big were faded 60.0% of the time ATS "
