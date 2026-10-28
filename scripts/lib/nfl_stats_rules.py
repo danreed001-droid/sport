@@ -2,11 +2,15 @@
 (scripts/nfl_stats_signals.py) and the site build (scripts/build_site.py),
 which has no network dependencies. Backtested on every NFL regular-season
 game 2020-2025 with ESPN closing spreads (core odds feed); it was one of 20
-ideas set before looking, found on 2020-23 and confirmed on 2024-25."""
+ideas set before looking, found on 2020-23 and confirmed on 2024-25.
+Rule 2 came from a second batch of pre-set ideas and was checked on
+2017-2025; the NFL bar is 60% (smaller samples than the NBA's 62%)."""
 
 RULE_NAMES = {
     1: "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+    2: "Fade a team that won its last game as a 7+ point underdog",
 }
 RULE_BACKTEST = {
     1: "64.7% ATS, n=116; held-out 2024-25: 26-11",
+    2: "60.0% ATS, n=100 (2017-2025); 2017-21 59.1%, 2022-25 61.8%",
 }

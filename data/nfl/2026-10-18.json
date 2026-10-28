@@ -658,7 +658,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Pittsburgh Steelers",
+      "nflStatsRules": [
+        {
+          "rule": 2,
+          "name": "Fade a team that won its last game as a 7+ point underdog",
+          "backtest": "60.0% ATS, n=100 (2017-2025); 2017-21 59.1%, 2022-25 61.8%",
+          "detail": "Fading Tampa Bay Buccaneers: won last game (2026-10-08, vs. Dallas Cowboys) as a 8.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100)."
+        }
+      ],
+      "nflStatsCheck": "Rule 2: Fading Tampa Bay Buccaneers: won last game (2026-10-08, vs. Dallas Cowboys) as a 8.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100).",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 69.44,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 86.96
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Titans lost by 23, Colts lost by 12) \u2014 not applicable to either side.",

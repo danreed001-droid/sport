@@ -675,7 +675,21 @@
         "Yds/play 5.70 vs 5.46 \u00b7 6-pt gap",
         "QB rating 95.9 vs 98.6 (Lock vs Brissett)"
       ],
-      "time": "4:25 PM ET"
+      "time": "4:25 PM ET",
+      "nflStatsFavors": "Seattle Seahawks",
+      "nflStatsRules": [
+        {
+          "rule": 2,
+          "name": "Fade a team that won its last game as a 7+ point underdog",
+          "backtest": "60.0% ATS, n=100 (2017-2025); 2017-21 59.1%, 2022-25 61.8%",
+          "detail": "Fading Arizona Cardinals: won last game (2026-09-13, vs. Los Angeles Chargers) as a 8.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100)."
+        }
+      ],
+      "nflStatsCheck": "Rule 2: Fading Arizona Cardinals: won last game (2026-09-13, vs. Los Angeles Chargers) as a 8.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100).",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 47.62,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 98.04
     },
     {
       "altBlowoutCheck": "Backfilled: 49ers' prior game was a 20-pt win over LAR, but only 2 of 5 conditions hit (padded win via close halftime, favored -13.5) \u2014 no regression flag.",

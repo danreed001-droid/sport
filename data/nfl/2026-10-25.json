@@ -119,7 +119,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Cleveland Browns",
+      "nflStatsRules": [
+        {
+          "rule": 2,
+          "name": "Fade a team that won its last game as a 7+ point underdog",
+          "backtest": "60.0% ATS, n=100 (2017-2025); 2017-21 59.1%, 2022-25 61.8%",
+          "detail": "Fading Tennessee Titans: won last game (2026-10-18, vs. Indianapolis Colts) as a 7-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100)."
+        }
+      ],
+      "nflStatsCheck": "Rule 2: Fading Tennessee Titans: won last game (2026-10-18, vs. Indianapolis Colts) as a 7-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100).",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 76.34,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 90.91
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a 17+ point win \u2014 check does not apply.",
@@ -536,7 +550,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Denver Broncos",
+      "nflStatsRules": [
+        {
+          "rule": 2,
+          "name": "Fade a team that won its last game as a 7+ point underdog",
+          "backtest": "60.0% ATS, n=100 (2017-2025); 2017-21 59.1%, 2022-25 61.8%",
+          "detail": "Fading Arizona Cardinals: won last game (2026-10-18, vs. Los Angeles Rams) as a 12.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100)."
+        }
+      ],
+      "nflStatsCheck": "Rule 2: Fading Arizona Cardinals: won last game (2026-10-18, vs. Los Angeles Rams) as a 12.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100).",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 44.44,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 92.59
     },
     {
       "altBlowoutCheck": "Detroit's most recent game was a 45-21 win over Arizona (Week 5, before a bye) \u2014 evaluated: padded win NO (24-7 at halftime, not close, only +1 takeaway margin), market bought in YES (Lions -3.5 today), run-heavy NO (32 rush attempts, just under the 33 threshold), turnover-prone NO (Goff has 0 INT this season) \u2014 only 1-2 of 5 sub-conditions hold; check does not fire.",
