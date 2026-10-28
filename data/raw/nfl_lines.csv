@@ -1,0 +1,380 @@
+game_id,date,away,home,away_score,home_score,provider,spread_open,spread_close,spread_odds_open,spread_odds_close,total_open,total_close,home_ml_open,home_ml_close,away_ml_open,away_ml_close
+401772510,2025-09-04,Dallas Cowboys,Philadelphia Eagles,20,24,,,,,,,,,,,
+401772714,2025-09-05,Kansas City Chiefs,Los Angeles Chargers,21,27,,,,,,,,,,,
+401772718,2025-09-07,Arizona Cardinals,New Orleans Saints,20,13,,,,,,,,,,,
+401772719,2025-09-07,Miami Dolphins,Indianapolis Colts,8,33,,,,,,,,,,,
+401772720,2025-09-07,Las Vegas Raiders,New England Patriots,20,13,,,,,,,,,,,
+401772721,2025-09-07,Pittsburgh Steelers,New York Jets,34,32,,,,,,,,,,,
+401772722,2025-09-07,Detroit Lions,Green Bay Packers,13,27,,,,,,,,,,,
+401772723,2025-09-07,Houston Texans,Los Angeles Rams,9,14,,,,,,,,,,,
+401772827,2025-09-07,New York Giants,Washington Commanders,6,21,,,,,,,,,,,
+401772828,2025-09-07,Carolina Panthers,Jacksonville Jaguars,10,26,,,,,,,,,,,
+401772829,2025-09-07,Cincinnati Bengals,Cleveland Browns,17,16,,,,,,,,,,,
+401772830,2025-09-07,Tampa Bay Buccaneers,Atlanta Falcons,23,20,,,,,,,,,,,
+401772831,2025-09-07,San Francisco 49ers,Seattle Seahawks,17,13,,,,,,,,,,,
+401772832,2025-09-07,Tennessee Titans,Denver Broncos,12,20,,,,,,,,,,,
+401772918,2025-09-07,Baltimore Ravens,Buffalo Bills,40,41,,,,,,,,,,,
+401772810,2025-09-08,Minnesota Vikings,Chicago Bears,27,24,,,,,,,,,,,
+401772936,2025-09-11,Washington Commanders,Green Bay Packers,18,27,,,,,,,,,,,
+401772724,2025-09-14,Los Angeles Rams,Tennessee Titans,33,19,,,,,,,,,,,
+401772725,2025-09-14,Jacksonville Jaguars,Cincinnati Bengals,27,31,,,,,,,,,,,
+401772726,2025-09-14,Cleveland Browns,Baltimore Ravens,17,41,,,,,,,,,,,
+401772727,2025-09-14,Buffalo Bills,New York Jets,30,10,,,,,,,,,,,
+401772728,2025-09-14,New England Patriots,Miami Dolphins,33,27,,,,,,,,,,,
+401772729,2025-09-14,Denver Broncos,Indianapolis Colts,28,29,,,,,,,,,,,
+401772730,2025-09-14,Carolina Panthers,Arizona Cardinals,22,27,,,,,,,,,,,
+401772833,2025-09-14,San Francisco 49ers,New Orleans Saints,26,21,,,,,,,,,,,
+401772834,2025-09-14,New York Giants,Dallas Cowboys,37,40,,,,,,,,,,,
+401772835,2025-09-14,Chicago Bears,Detroit Lions,21,52,,,,,,,,,,,
+401772836,2025-09-14,Seattle Seahawks,Pittsburgh Steelers,31,17,,,,,,,,,,,
+401772837,2025-09-14,Philadelphia Eagles,Kansas City Chiefs,20,17,,,,,,,,,,,
+401772919,2025-09-14,Atlanta Falcons,Minnesota Vikings,22,6,,,,,,,,,,,
+401772715,2025-09-15,Tampa Bay Buccaneers,Houston Texans,20,19,,,,,,,,,,,
+401772811,2025-09-15,Los Angeles Chargers,Las Vegas Raiders,20,9,,,,,,,,,,,
+401772937,2025-09-18,Miami Dolphins,Buffalo Bills,21,31,,,,,,,,,,,
+401772731,2025-09-21,Cincinnati Bengals,Minnesota Vikings,10,48,,,,,,,,,,,
+401772732,2025-09-21,Pittsburgh Steelers,New England Patriots,21,14,,,,,,,,,,,
+401772733,2025-09-21,Indianapolis Colts,Tennessee Titans,41,20,,,,,,,,,,,
+401772734,2025-09-21,Houston Texans,Jacksonville Jaguars,10,17,,,,,,,,,,,
+401772735,2025-09-21,Denver Broncos,Los Angeles Chargers,20,23,,,,,,,,,,,
+401772736,2025-09-21,New Orleans Saints,Seattle Seahawks,13,44,,,,,,,,,,,
+401772838,2025-09-21,Atlanta Falcons,Carolina Panthers,0,30,,,,,,,,,,,
+401772839,2025-09-21,Los Angeles Rams,Philadelphia Eagles,26,33,,,,,,,,,,,
+401772840,2025-09-21,New York Jets,Tampa Bay Buccaneers,27,29,,,,,,,,,,,
+401772841,2025-09-21,Las Vegas Raiders,Washington Commanders,24,41,,,,,,,,,,,
+401772842,2025-09-21,Green Bay Packers,Cleveland Browns,10,13,,,,,,,,,,,
+401772843,2025-09-21,Arizona Cardinals,San Francisco 49ers,15,16,,,,,,,,,,,
+401772844,2025-09-21,Dallas Cowboys,Chicago Bears,14,31,,,,,,,,,,,
+401772920,2025-09-21,Kansas City Chiefs,New York Giants,22,9,,,,,,,,,,,
+401772812,2025-09-22,Detroit Lions,Baltimore Ravens,38,30,,,,,,,,,,,
+401772938,2025-09-25,Seattle Seahawks,Arizona Cardinals,23,20,,,,,,,,,,,
+401772632,2025-09-28,Minnesota Vikings,Pittsburgh Steelers,21,24,,,,,,,,,,,
+401772737,2025-09-28,Los Angeles Chargers,New York Giants,18,21,,,,,,,,,,,
+401772738,2025-09-28,Tennessee Titans,Houston Texans,0,26,,,,,,,,,,,
+401772739,2025-09-28,Washington Commanders,Atlanta Falcons,27,34,,,,,,,,,,,
+401772740,2025-09-28,New Orleans Saints,Buffalo Bills,19,31,,,,,,,,,,,
+401772741,2025-09-28,Baltimore Ravens,Kansas City Chiefs,20,37,,,,,,,,,,,
+401772742,2025-09-28,Chicago Bears,Las Vegas Raiders,25,24,,,,,,,,,,,
+401772845,2025-09-28,Philadelphia Eagles,Tampa Bay Buccaneers,31,25,,,,,,,,,,,
+401772846,2025-09-28,Cleveland Browns,Detroit Lions,10,34,,,,,,,,,,,
+401772847,2025-09-28,Carolina Panthers,New England Patriots,13,42,,,,,,,,,,,
+401772848,2025-09-28,Jacksonville Jaguars,San Francisco 49ers,26,21,,,,,,,,,,,
+401772849,2025-09-28,Indianapolis Colts,Los Angeles Rams,20,27,,,,,,,,,,,
+401772921,2025-09-28,Green Bay Packers,Dallas Cowboys,40,40,,,,,,,,,,,
+401772716,2025-09-29,Cincinnati Bengals,Denver Broncos,3,28,,,,,,,,,,,
+401772813,2025-09-29,New York Jets,Miami Dolphins,21,27,,,,,,,,,,,
+401772939,2025-10-02,San Francisco 49ers,Los Angeles Rams,26,23,,,,,,,,,,,
+401772633,2025-10-05,Minnesota Vikings,Cleveland Browns,21,17,,,,,,,,,,,
+401772743,2025-10-05,Houston Texans,Baltimore Ravens,44,10,,,,,,,,,,,
+401772744,2025-10-05,New York Giants,New Orleans Saints,14,26,,,,,,,,,,,
+401772745,2025-10-05,Denver Broncos,Philadelphia Eagles,21,17,,,,,,,,,,,
+401772746,2025-10-05,Tampa Bay Buccaneers,Seattle Seahawks,38,35,,,,,,,,,,,
+401772747,2025-10-05,Tennessee Titans,Arizona Cardinals,22,21,,,,,,,,,,,
+401772850,2025-10-05,Dallas Cowboys,New York Jets,37,22,,,,,,,,,,,
+401772851,2025-10-05,Las Vegas Raiders,Indianapolis Colts,6,40,,,,,,,,,,,
+401772852,2025-10-05,Miami Dolphins,Carolina Panthers,24,27,,,,,,,,,,,
+401772853,2025-10-05,Washington Commanders,Los Angeles Chargers,27,10,,,,,,,,,,,
+401772854,2025-10-05,Detroit Lions,Cincinnati Bengals,37,24,,,,,,,,,,,
+401772922,2025-10-05,New England Patriots,Buffalo Bills,23,20,,,,,,,,,,,
+401772814,2025-10-06,Kansas City Chiefs,Jacksonville Jaguars,28,31,,,,,,,,,,,
+401772940,2025-10-09,Philadelphia Eagles,New York Giants,17,34,,,,,,,,,,,
+401772634,2025-10-12,Denver Broncos,New York Jets,13,11,,,,,,,,,,,
+401772748,2025-10-12,Cleveland Browns,Pittsburgh Steelers,9,23,,,,,,,,,,,
+401772749,2025-10-12,San Francisco 49ers,Tampa Bay Buccaneers,19,30,,,,,,,,,,,
+401772750,2025-10-12,Los Angeles Chargers,Miami Dolphins,29,27,,,,,,,,,,,
+401772751,2025-10-12,New England Patriots,New Orleans Saints,25,19,,,,,,,,,,,
+401772752,2025-10-12,Cincinnati Bengals,Green Bay Packers,18,27,,,,,,,,,,,
+401772855,2025-10-12,Los Angeles Rams,Baltimore Ravens,17,3,,,,,,,,,,,
+401772856,2025-10-12,Arizona Cardinals,Indianapolis Colts,27,31,,,,,,,,,,,
+401772857,2025-10-12,Seattle Seahawks,Jacksonville Jaguars,20,12,,,,,,,,,,,
+401772858,2025-10-12,Dallas Cowboys,Carolina Panthers,27,30,,,,,,,,,,,
+401772859,2025-10-12,Tennessee Titans,Las Vegas Raiders,10,20,,,,,,,,,,,
+401772923,2025-10-12,Detroit Lions,Kansas City Chiefs,17,30,,,,,,,,,,,
+401772717,2025-10-13,Chicago Bears,Washington Commanders,25,24,,,,,,,,,,,
+401772815,2025-10-13,Buffalo Bills,Atlanta Falcons,14,24,,,,,,,,,,,
+401772941,2025-10-16,Pittsburgh Steelers,Cincinnati Bengals,31,33,,,,,,,,,,,
+401772635,2025-10-19,Los Angeles Rams,Jacksonville Jaguars,35,7,,,,,,,,,,,
+401772753,2025-10-19,Las Vegas Raiders,Kansas City Chiefs,0,31,,,,,,,,,,,
+401772754,2025-10-19,Miami Dolphins,Cleveland Browns,6,31,,,,,,,,,,,
+401772755,2025-10-19,New England Patriots,Tennessee Titans,31,13,,,,,,,,,,,
+401772756,2025-10-19,Indianapolis Colts,Los Angeles Chargers,38,24,,,,,,,,,,,
+401772757,2025-10-19,New York Giants,Denver Broncos,32,33,,,,,,,,,,,
+401772860,2025-10-19,Carolina Panthers,New York Jets,13,6,,,,,,,,,,,
+401772861,2025-10-19,New Orleans Saints,Chicago Bears,14,26,,,,,,,,,,,
+401772862,2025-10-19,Philadelphia Eagles,Minnesota Vikings,28,22,,,,,,,,,,,
+401772863,2025-10-19,Green Bay Packers,Arizona Cardinals,27,23,,,,,,,,,,,
+401772864,2025-10-19,Washington Commanders,Dallas Cowboys,22,44,,,,,,,,,,,
+401772924,2025-10-19,Atlanta Falcons,San Francisco 49ers,10,20,,,,,,,,,,,
+401772816,2025-10-20,Tampa Bay Buccaneers,Detroit Lions,9,24,,,,,,,,,,,
+401772826,2025-10-20,Houston Texans,Seattle Seahawks,19,27,,,,,,,,,,,
+401772942,2025-10-23,Minnesota Vikings,Los Angeles Chargers,10,37,,,,,,,,,,,
+401772758,2025-10-26,New York Jets,Cincinnati Bengals,39,38,,,,,,,,,,,
+401772759,2025-10-26,Chicago Bears,Baltimore Ravens,16,30,,,,,,,,,,,
+401772760,2025-10-26,Miami Dolphins,Atlanta Falcons,34,10,,,,,,,,,,,
+401772761,2025-10-26,Tennessee Titans,Indianapolis Colts,14,38,,,,,,,,,,,
+401772762,2025-10-26,Dallas Cowboys,Denver Broncos,24,44,,,,,,,,,,,
+401772865,2025-10-26,Buffalo Bills,Carolina Panthers,40,9,,,,,,,,,,,
+401772866,2025-10-26,San Francisco 49ers,Houston Texans,15,26,,,,,,,,,,,
+401772867,2025-10-26,New York Giants,Philadelphia Eagles,20,38,,,,,,,,,,,
+401772868,2025-10-26,Cleveland Browns,New England Patriots,13,32,,,,,,,,,,,
+401772869,2025-10-26,Tampa Bay Buccaneers,New Orleans Saints,23,3,,,,,,,,,,,
+401772925,2025-10-26,Green Bay Packers,Pittsburgh Steelers,35,25,,,,,,,,,,,
+401772817,2025-10-27,Washington Commanders,Kansas City Chiefs,7,28,,,,,,,,,,,
+401772943,2025-10-30,Baltimore Ravens,Miami Dolphins,28,6,,,,,,,,,,,
+401772763,2025-11-02,Atlanta Falcons,New England Patriots,23,24,,,,,,,,,,,
+401772764,2025-11-02,Los Angeles Chargers,Tennessee Titans,27,20,,,,,,,,,,,
+401772765,2025-11-02,Chicago Bears,Cincinnati Bengals,47,42,,,,,,,,,,,
+401772766,2025-11-02,Indianapolis Colts,Pittsburgh Steelers,20,27,,,,,,,,,,,
+401772767,2025-11-02,San Francisco 49ers,New York Giants,34,24,,,,,,,,,,,
+401772768,2025-11-02,Kansas City Chiefs,Buffalo Bills,21,28,,,,,,,,,,,
+401772870,2025-11-02,Denver Broncos,Houston Texans,18,15,,,,,,,,,,,
+401772871,2025-11-02,Minnesota Vikings,Detroit Lions,27,24,,,,,,,,,,,
+401772872,2025-11-02,Carolina Panthers,Green Bay Packers,16,13,,,,,,,,,,,
+401772873,2025-11-02,Jacksonville Jaguars,Las Vegas Raiders,30,29,,,,,,,,,,,
+401772874,2025-11-02,New Orleans Saints,Los Angeles Rams,10,34,,,,,,,,,,,
+401772926,2025-11-02,Seattle Seahawks,Washington Commanders,38,14,,,,,,,,,,,
+401772818,2025-11-03,Arizona Cardinals,Dallas Cowboys,27,17,,,,,,,,,,,
+401772944,2025-11-06,Las Vegas Raiders,Denver Broncos,7,10,,,,,,,,,,,
+401772636,2025-11-09,Atlanta Falcons,Indianapolis Colts,25,31,,,,,,,,,,,
+401772769,2025-11-09,Cleveland Browns,New York Jets,20,27,,,,,,,,,,,
+401772770,2025-11-09,Jacksonville Jaguars,Houston Texans,29,36,,,,,,,,,,,
+401772771,2025-11-09,Buffalo Bills,Miami Dolphins,13,30,,,,,,,,,,,
+401772772,2025-11-09,New England Patriots,Tampa Bay Buccaneers,28,23,,,,,,,,,,,
+401772773,2025-11-09,Arizona Cardinals,Seattle Seahawks,22,44,,,,,,,,,,,
+401772875,2025-11-09,New York Giants,Chicago Bears,20,24,,,,,,,,,,,
+401772876,2025-11-09,Baltimore Ravens,Minnesota Vikings,27,19,,,,,,,,,,,
+401772877,2025-11-09,New Orleans Saints,Carolina Panthers,17,7,,,,,,,,,,,
+401772878,2025-11-09,Detroit Lions,Washington Commanders,44,22,,,,,,,,,,,
+401772879,2025-11-09,Los Angeles Rams,San Francisco 49ers,42,26,,,,,,,,,,,
+401772927,2025-11-09,Pittsburgh Steelers,Los Angeles Chargers,10,25,,,,,,,,,,,
+401772630,2025-11-10,Philadelphia Eagles,Green Bay Packers,10,7,,,,,,,,,,,
+401772945,2025-11-13,New York Jets,New England Patriots,14,27,,,,,,,,,,,
+401772631,2025-11-16,Washington Commanders,Miami Dolphins,13,16,,,,,,,,,,,
+401772774,2025-11-16,Cincinnati Bengals,Pittsburgh Steelers,12,34,,,,,,,,,,,
+401772775,2025-11-16,Los Angeles Chargers,Jacksonville Jaguars,6,35,,,,,,,,,,,
+401772776,2025-11-16,Tampa Bay Buccaneers,Buffalo Bills,32,44,,,,,,,,,,,
+401772777,2025-11-16,Baltimore Ravens,Cleveland Browns,23,16,,,,,,,,,,,
+401772778,2025-11-16,Kansas City Chiefs,Denver Broncos,19,22,,,,,,,,,,,
+401772880,2025-11-16,Chicago Bears,Minnesota Vikings,19,17,,,,,,,,,,,
+401772881,2025-11-16,Houston Texans,Tennessee Titans,16,13,,,,,,,,,,,
+401772882,2025-11-16,Carolina Panthers,Atlanta Falcons,30,27,,,,,,,,,,,
+401772883,2025-11-16,Green Bay Packers,New York Giants,27,20,,,,,,,,,,,
+401772884,2025-11-16,Seattle Seahawks,Los Angeles Rams,19,21,,,,,,,,,,,
+401772885,2025-11-16,San Francisco 49ers,Arizona Cardinals,41,22,,,,,,,,,,,
+401772928,2025-11-16,Detroit Lions,Philadelphia Eagles,9,16,,,,,,,,,,,
+401772819,2025-11-17,Dallas Cowboys,Las Vegas Raiders,33,16,,,,,,,,,,,
+401772946,2025-11-20,Buffalo Bills,Houston Texans,19,23,,,,,,,,,,,
+401772779,2025-11-23,Indianapolis Colts,Kansas City Chiefs,20,23,,,,,,,,,,,
+401772780,2025-11-23,Pittsburgh Steelers,Chicago Bears,28,31,,,,,,,,,,,
+401772781,2025-11-23,New England Patriots,Cincinnati Bengals,26,20,,,,,,,,,,,
+401772782,2025-11-23,New York Jets,Baltimore Ravens,10,23,,,,,,,,,,,
+401772783,2025-11-23,Jacksonville Jaguars,Arizona Cardinals,27,24,,,,,,,,,,,
+401772784,2025-11-23,Cleveland Browns,Las Vegas Raiders,24,10,,,,,,,,,,,
+401772886,2025-11-23,Seattle Seahawks,Tennessee Titans,30,24,,,,,,,,,,,
+401772887,2025-11-23,Minnesota Vikings,Green Bay Packers,6,23,,,,,,,,,,,
+401772888,2025-11-23,New York Giants,Detroit Lions,27,34,,,,,,,,,,,
+401772889,2025-11-23,Atlanta Falcons,New Orleans Saints,24,10,,,,,,,,,,,
+401772890,2025-11-23,Philadelphia Eagles,Dallas Cowboys,21,24,,,,,,,,,,,
+401772929,2025-11-23,Tampa Bay Buccaneers,Los Angeles Rams,7,34,,,,,,,,,,,
+401772820,2025-11-24,Carolina Panthers,San Francisco 49ers,9,20,DraftKings,-7,-7,-120,-120,49.5,48.5,,,,
+401772694,2025-11-27,Kansas City Chiefs,Dallas Cowboys,28,31,DraftKings,,,,,51.5,53.5,,,,
+401772891,2025-11-27,Green Bay Packers,Detroit Lions,31,24,DraftKings,,,,,48.5,48.5,,,,
+401772930,2025-11-27,Cincinnati Bengals,Baltimore Ravens,32,14,DraftKings,-6.5,-7,-115,-120,52.5,52.5,,,,
+401772621,2025-11-28,Chicago Bears,Philadelphia Eagles,24,15,DraftKings,-6.5,-7,-115,-115,43.5,43.5,,,,
+401772785,2025-11-30,San Francisco 49ers,Cleveland Browns,26,8,DraftKings,6,5.5,-110,-112,39.5,35.5,205,205,-270,-250
+401772786,2025-11-30,Jacksonville Jaguars,Tennessee Titans,25,3,DraftKings,6,6,-108,-112,41.5,42.5,,,,
+401772787,2025-11-30,Houston Texans,Indianapolis Colts,20,16,DraftKings,-3.5,-3,-118,-115,,,,,,
+401772788,2025-11-30,Las Vegas Raiders,Los Angeles Chargers,14,31,DraftKings,-9.5,-9.5,-108,-115,41.5,40.5,,,,
+401772789,2025-11-30,Buffalo Bills,Pittsburgh Steelers,26,7,DraftKings,3,3,-102,100,46.5,44.5,,,,
+401772892,2025-11-30,New Orleans Saints,Miami Dolphins,17,21,DraftKings,,,,,41.5,42.5,,,,
+401772893,2025-11-30,Atlanta Falcons,New York Jets,24,27,DraftKings,3,3,-118,-112,38.5,38.5,,,,
+401772894,2025-11-30,Los Angeles Rams,Carolina Panthers,28,31,DraftKings,10.5,10,-112,-110,45.5,44.5,425,425,-575,-575
+401772895,2025-11-30,Arizona Cardinals,Tampa Bay Buccaneers,17,20,DraftKings,-3,-4.5,-102,-112,44.5,45.5,,,,
+401772896,2025-11-30,Minnesota Vikings,Seattle Seahawks,0,26,DraftKings,-10.5,-12.5,-105,-110,41.5,42.5,,,,
+401772931,2025-11-30,Denver Broncos,Washington Commanders,27,26,DraftKings,6,6.5,-112,-115,,,,,,
+401772821,2025-12-01,New York Giants,New England Patriots,15,33,DraftKings,-7,-7,-115,-115,46.5,46.5,-410,-360,320,285
+401772947,2025-12-04,Dallas Cowboys,Detroit Lions,30,44,DraftKings,-3.5,-3.5,-115,-110,54.5,55.5,-218,-185,180,154
+401772790,2025-12-07,Miami Dolphins,New York Jets,34,10,DraftKings,2.5,2.5,-105,-105,41.5,41.5,120,124,-148,-148
+401772791,2025-12-07,Pittsburgh Steelers,Baltimore Ravens,27,22,DraftKings,-7,-5.5,-102,-120,45.5,43.5,-325,-278,260,225
+401772792,2025-12-07,New Orleans Saints,Tampa Bay Buccaneers,24,20,DraftKings,-8.5,-7.5,-110,-118,42.5,41.5,-455,-425,350,330
+401772793,2025-12-07,Indianapolis Colts,Jacksonville Jaguars,19,36,DraftKings,2.5,2.5,100,-108,49.5,44.5,105,114,-125,-135
+401772794,2025-12-07,Denver Broncos,Las Vegas Raiders,24,17,DraftKings,7.5,8.5,-110,-110,40.5,40.5,350,360,-455,-470
+401772897,2025-12-07,Chicago Bears,Green Bay Packers,21,28,DraftKings,-7,-6.5,100,-115,46.5,44.5,-325,-305,260,245
+401772898,2025-12-07,Tennessee Titans,Cleveland Browns,31,29,DraftKings,-4.5,-4.5,-110,100,34.5,33.5,-218,-205,180,170
+401772899,2025-12-07,Washington Commanders,Minnesota Vikings,0,31,DraftKings,-1.5,-1.5,-105,-102,42.5,43.5,-148,-115,114,-105
+401772900,2025-12-07,Seattle Seahawks,Atlanta Falcons,37,9,DraftKings,7.5,7,-110,-120,44.5,44.5,320,285,-425,-360
+401772901,2025-12-07,Los Angeles Rams,Arizona Cardinals,45,17,DraftKings,7.5,9.5,-110,-110,48.5,49.5,360,370,-470,-485
+401772902,2025-12-07,Cincinnati Bengals,Buffalo Bills,34,39,DraftKings,-6.5,-6,-110,-112,53.5,54.5,-340,-285,245,230
+401772932,2025-12-07,Houston Texans,Kansas City Chiefs,20,10,DraftKings,-5.5,-4.5,-110,-105,43.5,41.5,-225,-218,185,180
+401772822,2025-12-08,Philadelphia Eagles,Los Angeles Chargers,19,22,DraftKings,1.5,1.5,-105,-115,42.5,41.5,114,100,-135,-120
+401772948,2025-12-11,Atlanta Falcons,Tampa Bay Buccaneers,29,28,DraftKings,-5.5,-6,-110,-112,44.5,43.5,-238,-285,195,230
+401772795,2025-12-14,Buffalo Bills,New England Patriots,35,31,DraftKings,1.5,2.5,-122,-110,48.5,49.5,-108,120,-112,-142
+401772796,2025-12-14,Baltimore Ravens,Cincinnati Bengals,24,0,DraftKings,3,2.5,-120,105,51.5,51.5,130,136,-155,-162
+401772797,2025-12-14,New York Jets,Jacksonville Jaguars,20,48,DraftKings,-9.5,-13.5,-110,-115,43.5,40.5,-470,-1000,360,650
+401772798,2025-12-14,Los Angeles Chargers,Kansas City Chiefs,16,13,DraftKings,-5.5,-5.5,-110,-120,44.5,41.5,-230,-258,190,210
+401772799,2025-12-14,Indianapolis Colts,Seattle Seahawks,16,18,DraftKings,-3.5,-12.5,-110,-118,46.5,41.5,-185,-950,154,625
+401772800,2025-12-14,Green Bay Packers,Denver Broncos,26,34,DraftKings,1.5,1.5,-110,-108,42.5,42.5,105,102,-125,-122
+401772903,2025-12-14,Arizona Cardinals,Houston Texans,20,40,DraftKings,-7,-10.5,-115,-110,42.5,42.5,-355,-625,280,455
+401772904,2025-12-14,Cleveland Browns,Chicago Bears,3,31,DraftKings,-7,-7.5,-105,-108,40.5,38.5,-355,-375,280,295
+401772905,2025-12-14,Washington Commanders,New York Giants,29,21,DraftKings,1.5,-3,-110,-105,47.5,45.5,105,-155,-125,130
+401772906,2025-12-14,Las Vegas Raiders,Philadelphia Eagles,0,31,DraftKings,-12.5,-12.5,-110,-112,40.5,36.5,-950,-950,625,625
+401772907,2025-12-14,Tennessee Titans,San Francisco 49ers,24,37,DraftKings,-12.5,-12.5,-110,-112,44.5,44.5,-900,-950,600,625
+401772908,2025-12-14,Carolina Panthers,New Orleans Saints,17,20,DraftKings,2.5,2.5,-102,-105,39.5,41.5,124,124,-148,-148
+401772909,2025-12-14,Detroit Lions,Los Angeles Rams,34,41,DraftKings,-4.5,-5.5,-110,-115,50.5,54.5,-205,-245,170,200
+401772933,2025-12-14,Minnesota Vikings,Dallas Cowboys,34,26,DraftKings,-7.5,-5.5,-105,-110,47.5,47.5,-425,-265,330,215
+401772823,2025-12-15,Miami Dolphins,Pittsburgh Steelers,15,28,DraftKings,-3,-3,-108,-120,43.5,43.5,-166,-185,140,154
+401772949,2025-12-18,Los Angeles Rams,Seattle Seahawks,37,38,DraftKings,-1.5,-1.5,102,-112,47.5,42.5,-112,-130,-108,110
+401772612,2025-12-20,Philadelphia Eagles,Washington Commanders,29,18,DraftKings,5.5,7,-110,100,45.5,43.5,210,300,-258,-380
+401772613,2025-12-20,Green Bay Packers,Chicago Bears,16,22,DraftKings,3,-1.5,-110,-105,46.5,44.5,136,-118,-162,-102
+401772801,2025-12-21,New York Jets,New Orleans Saints,6,29,DraftKings,-3.5,-7,-110,-108,40.5,39.5,-192,-325,160,260
+401772802,2025-12-21,Buffalo Bills,Cleveland Browns,23,20,DraftKings,8.5,10.5,-110,-110,42.5,41.5,360,440,-470,-600
+401772803,2025-12-21,Kansas City Chiefs,Tennessee Titans,9,26,DraftKings,11.5,3.5,-110,-115,41.5,37.5,470,154,-650,-185
+401772804,2025-12-21,New England Patriots,Baltimore Ravens,28,24,DraftKings,-2.5,-3.5,-110,-118,48.5,47.5,-142,-205,120,170
+401772805,2025-12-21,Las Vegas Raiders,Houston Texans,21,23,DraftKings,-12.5,-14.5,-110,-102,37.5,39.5,-700,-1450,500,850
+401772806,2025-12-21,Pittsburgh Steelers,Detroit Lions,29,24,DraftKings,-6.5,-7.5,-110,-115,49.5,52.5,-285,-425,230,330
+401772910,2025-12-21,Los Angeles Chargers,Dallas Cowboys,34,17,DraftKings,-1.5,-1.5,-110,-105,48.5,50.5,-125,-118,105,-102
+401772911,2025-12-21,Minnesota Vikings,New York Giants,16,13,DraftKings,1.5,2.5,-115,-102,43.5,41.5,-102,124,-118,-148
+401772912,2025-12-21,Tampa Bay Buccaneers,Carolina Panthers,20,23,DraftKings,1.5,3,-110,-115,45.5,44.5,105,130,-125,-155
+401772913,2025-12-21,Jacksonville Jaguars,Denver Broncos,34,20,DraftKings,-2.5,-3.5,-120,100,43.5,46.5,-148,-175,124,145
+401772914,2025-12-21,Atlanta Falcons,Arizona Cardinals,26,19,DraftKings,-1.5,2.5,-105,-108,46.5,48.5,-118,120,-102,-142
+401772934,2025-12-21,Cincinnati Bengals,Miami Dolphins,45,21,DraftKings,1.5,3.5,-110,-105,50.5,48.5,105,170,-125,-205
+401772824,2025-12-22,San Francisco 49ers,Indianapolis Colts,48,27,DraftKings,5.5,4.5,-110,-115,45.5,46.5,195,185,-238,-225
+401772622,2025-12-25,Denver Broncos,Kansas City Chiefs,20,13,DraftKings,5.5,13.5,-110,-110,39.5,37.5,185,750,-225,-1200
+401772710,2025-12-25,Dallas Cowboys,Washington Commanders,30,23,DraftKings,3,8.5,-110,100,51.5,50.5,136,400,-162,-535
+401772711,2025-12-25,Detroit Lions,Minnesota Vikings,10,23,DraftKings,3.5,7.5,-115,-120,48.5,45.5,150,285,-180,-360
+401772951,2025-12-27,Houston Texans,Los Angeles Chargers,20,16,DraftKings,1.5,-1.5,-110,-105,39.5,40.5,105,-118,-125,-102
+401772953,2025-12-27,Baltimore Ravens,Green Bay Packers,41,24,DraftKings,-2.5,-2.5,-110,-112,46.5,37.5,-142,-142,120,120
+401772807,2025-12-28,Pittsburgh Steelers,Cleveland Browns,6,13,DraftKings,3.5,3.5,-105,-105,35.5,34.5,154,170,-185,-205
+401772808,2025-12-28,New England Patriots,New York Jets,42,10,DraftKings,9.5,12.5,-110,100,44.5,42.5,380,650,-500,-1000
+401772809,2025-12-28,New Orleans Saints,Tennessee Titans,34,26,DraftKings,1.5,1.5,-110,-122,39.5,38.5,105,-110,-125,-110
+401772915,2025-12-28,Jacksonville Jaguars,Indianapolis Colts,23,17,DraftKings,5.5,4.5,-110,-112,44.5,48.5,195,190,-238,-230
+401772916,2025-12-28,Tampa Bay Buccaneers,Miami Dolphins,17,20,DraftKings,3,5.5,-115,-102,46.5,44.5,130,215,-155,-265
+401772917,2025-12-28,Philadelphia Eagles,Buffalo Bills,13,12,DraftKings,-3,-3.5,-110,-102,46.5,45.5,-162,-170,136,142
+401772935,2025-12-28,Chicago Bears,San Francisco 49ers,38,42,DraftKings,-3,-4.5,-110,-105,50.5,51.5,-162,-225,136,185
+401772950,2025-12-28,New York Giants,Las Vegas Raiders,34,10,DraftKings,3,3,-110,-118,43.5,40.5,136,136,-162,-162
+401772952,2025-12-28,Seattle Seahawks,Carolina Panthers,27,10,DraftKings,7.5,6.5,-110,-102,42.5,42.5,320,245,-410,-305
+401772954,2025-12-28,Arizona Cardinals,Cincinnati Bengals,14,37,DraftKings,-5.5,-7,-110,-110,51.5,53.5,-238,-345,195,275
+401772825,2025-12-29,Los Angeles Rams,Atlanta Falcons,24,27,DraftKings,8.5,7.5,-110,-118,48.5,48.5,350,295,-455,-375
+401772961,2026-01-03,Seattle Seahawks,San Francisco 49ers,13,3,DraftKings,1.5,2.5,-125,100,49.5,48.5,-108,130,-112,-155
+401772969,2026-01-03,Carolina Panthers,Tampa Bay Buccaneers,14,16,DraftKings,-3.5,-3,-110,-108,45.5,42.5,-192,-155,160,130
+401772955,2026-01-04,Arizona Cardinals,Los Angeles Rams,20,37,DraftKings,-8.5,-14.5,-110,-105,45.5,49.5,-470,-1350,360,800
+401772956,2026-01-04,Los Angeles Chargers,Denver Broncos,3,19,DraftKings,-10,-15.5,-110,-112,38.5,37.5,-485,-1650,370,950
+401772957,2026-01-04,Kansas City Chiefs,Las Vegas Raiders,12,14,DraftKings,5.5,3.5,-110,-118,35.5,35.5,200,180,-245,-218
+401772958,2026-01-04,Miami Dolphins,New England Patriots,10,38,DraftKings,-10.5,-14.5,-110,-112,46.5,43.5,-625,-1350,455,800
+401772959,2026-01-04,Washington Commanders,Philadelphia Eagles,24,17,DraftKings,-7.5,-3,-108,-118,42.5,38.5,-345,-180,275,150
+401772960,2026-01-04,Baltimore Ravens,Pittsburgh Steelers,24,26,DraftKings,3,4.5,-110,-115,43.5,41.5,136,170,-162,-205
+401772962,2026-01-04,Indianapolis Colts,Houston Texans,30,38,DraftKings,-9.5,-9.5,-110,-110,40.5,37.5,-455,-520,350,390
+401772963,2026-01-04,Dallas Cowboys,New York Giants,17,34,DraftKings,4.5,3,-110,-105,52.5,50.5,180,140,-218,-166
+401772964,2026-01-04,Cleveland Browns,Cincinnati Bengals,20,18,DraftKings,-7,-8.5,-105,-115,44.5,47.5,-325,-440,260,340
+401772965,2026-01-04,Detroit Lions,Chicago Bears,19,16,DraftKings,1.5,-3,-115,-112,50.5,51.5,100,-170,-120,142
+401772966,2026-01-04,New Orleans Saints,Atlanta Falcons,17,19,DraftKings,-3,-3.5,100,-120,42.5,43.5,-155,-192,130,160
+401772967,2026-01-04,New York Jets,Buffalo Bills,8,35,DraftKings,-12.5,-13.5,-110,-105,39.5,39.5,-800,-800,550,550
+401772968,2026-01-04,Green Bay Packers,Minnesota Vikings,3,16,DraftKings,-6.5,-13.5,-110,-105,37.5,37.5,-325,-750,260,525
+401772970,2026-01-04,Tennessee Titans,Jacksonville Jaguars,7,41,DraftKings,-10,-13.5,-110,-105,45.5,46.5,-575,-850,425,575
+401872656,2026-09-09,New England Patriots,Seattle Seahawks,10,13,DraftKings,-3.5,-3,-110,-120,44.5,44.5,-192,-170,160,142
+401872657,2026-09-10,San Francisco 49ers,Los Angeles Rams,27,7,DraftKings,-2.5,-3.5,-120,-115,48.5,47.5,-155,-218,130,180
+401872658,2026-09-13,Atlanta Falcons,Pittsburgh Steelers,13,20,DraftKings,-3,-6.5,-120,-112,42.5,40.5,-175,-298,145,240
+401872659,2026-09-13,Baltimore Ravens,Indianapolis Colts,41,23,DraftKings,3.5,3,-110,-110,49.5,48.5,154,136,-185,-162
+401872660,2026-09-13,Buffalo Bills,Houston Texans,36,31,DraftKings,1.5,1.5,-122,-115,45.5,44.5,-108,-110,-112,-110
+401872661,2026-09-13,Chicago Bears,Carolina Panthers,59,37,DraftKings,2.5,3,-110,-108,44.5,47.5,114,140,-135,-166
+401872922,2026-09-13,Cleveland Browns,Jacksonville Jaguars,10,34,DraftKings,-7,-8.5,-110,-115,40.5,40.5,-285,-470,230,360
+401872923,2026-09-13,New Orleans Saints,Detroit Lions,30,31,DraftKings,-7,-7,-110,-110,48.5,49.5,-325,-340,260,270
+401872924,2026-09-13,New York Jets,Tennessee Titans,23,10,DraftKings,-3,-1.5,-115,-105,39.5,39.5,-170,-118,142,-102
+401872925,2026-09-13,Tampa Bay Buccaneers,Cincinnati Bengals,27,33,DraftKings,-3.5,-3.5,-110,-112,50.5,50.5,-198,-198,164,164
+401872926,2026-09-13,Arizona Cardinals,Los Angeles Chargers,26,14,DraftKings,-11.5,-8.5,-110,-120,45.5,47.5,-625,-485,470,370
+401872927,2026-09-13,Green Bay Packers,Minnesota Vikings,22,39,DraftKings,1.5,-2.5,-110,-110,44.5,46.5,105,-142,-125,120
+401872928,2026-09-13,Miami Dolphins,Las Vegas Raiders,13,27,DraftKings,-3,-3,-120,-110,41.5,40.5,-180,-170,150,142
+401872929,2026-09-13,Washington Commanders,Philadelphia Eagles,22,24,DraftKings,-5.5,-6,-110,-110,46.5,43.5,-238,-238,195,195
+401872930,2026-09-13,Dallas Cowboys,New York Giants,20,28,DraftKings,2.5,3,-115,-108,48.5,47.5,110,140,-130,-166
+401872931,2026-09-14,Denver Broncos,Kansas City Chiefs,10,31,DraftKings,-2.5,-2.5,-120,-108,42.5,42.5,-155,-130,130,110
+401872932,2026-09-17,Detroit Lions,Buffalo Bills,31,41,DraftKings,-3,-5.5,-110,-105,52.5,54.5,-162,-245,136,200
+401872933,2026-09-20,Carolina Panthers,Atlanta Falcons,34,3,DraftKings,-1.5,2.5,-105,-102,43.5,43.5,-120,120,100,-142
+401872934,2026-09-20,Cincinnati Bengals,Houston Texans,20,6,DraftKings,-2.5,-3,-110,-102,46.5,45.5,-135,-148,114,124
+401872935,2026-09-20,Cleveland Browns,Tampa Bay Buccaneers,23,19,DraftKings,-5.5,-8.5,-110,-105,42.5,41.5,-245,-425,200,330
+401872936,2026-09-20,Green Bay Packers,New York Jets,20,17,DraftKings,6.5,3.5,-110,-112,42.5,44.5,230,154,-285,-185
+401872937,2026-09-20,Minnesota Vikings,Chicago Bears,9,3,DraftKings,-3.5,-4.5,-110,-112,45.5,46.5,-185,-218,154,180
+401872938,2026-09-20,New Orleans Saints,Baltimore Ravens,24,17,DraftKings,-7.5,-8.5,-110,-105,46.5,45.5,-380,-360,300,285
+401872939,2026-09-20,Philadelphia Eagles,Tennessee Titans,24,20,DraftKings,4.5,7,-110,-105,42.5,39.5,180,260,-218,-325
+401872940,2026-09-20,Jacksonville Jaguars,Denver Broncos,13,20,DraftKings,-2.5,-2.5,-115,-115,44.5,45.5,-142,-142,120,120
+401872941,2026-09-20,Las Vegas Raiders,Los Angeles Chargers,26,14,DraftKings,-8.5,-6.5,-110,-122,42.5,43.5,-425,-325,330,260
+401872942,2026-09-20,Miami Dolphins,San Francisco 49ers,13,35,DraftKings,-10.5,-12.5,-110,-110,46.5,44.5,-575,-900,425,600
+401872943,2026-09-20,Seattle Seahawks,Arizona Cardinals,31,7,DraftKings,10,3.5,-110,100,44.5,40.5,380,180,-500,-218
+401872944,2026-09-20,Washington Commanders,Dallas Cowboys,20,37,DraftKings,-4.5,-4.5,-105,-105,51.5,51.5,-205,-225,170,185
+401872945,2026-09-20,Indianapolis Colts,Kansas City Chiefs,30,33,DraftKings,-5.5,-6,-110,-108,47.5,46.5,-250,-265,205,215
+401872946,2026-09-20,Pittsburgh Steelers,New England Patriots,3,20,DraftKings,-4.5,-4.5,-110,-118,43.5,41.5,-225,-218,185,180
+401872947,2026-09-21,New York Giants,Los Angeles Rams,6,28,DraftKings,-8.5,-7,-110,102,47.5,47.5,-375,-310,295,250
+401872948,2026-09-24,Atlanta Falcons,Green Bay Packers,35,14,DraftKings,-7.5,-4.5,-110,-112,46.5,43.5,-360,-238,285,195
+401872949,2026-09-27,Carolina Panthers,Cleveland Browns,18,21,DraftKings,1.5,2.5,-115,-112,39.5,41.5,100,110,-120,-130
+401872950,2026-09-27,Cincinnati Bengals,Pittsburgh Steelers,27,30,DraftKings,1.5,3.5,-120,-112,47.5,42.5,-105,154,-115,-185
+401872951,2026-09-27,Houston Texans,Indianapolis Colts,17,19,DraftKings,1.5,1.5,-105,-108,45.5,42.5,110,100,-130,-120
+401872952,2026-09-27,Kansas City Chiefs,Miami Dolphins,24,10,DraftKings,7,10,-105,-112,44.5,45.5,270,440,-340,-600
+401872953,2026-09-27,Los Angeles Chargers,Buffalo Bills,16,24,DraftKings,-2.5,-7,-110,-115,48.5,50.5,-142,-345,120,275
+401872954,2026-09-27,New York Jets,Detroit Lions,24,31,DraftKings,-9.5,-7,-110,-115,44.5,49.5,-440,-355,340,280
+401872955,2026-09-27,Seattle Seahawks,Washington Commanders,31,33,DraftKings,3.5,8.5,-110,-115,46.5,40.5,164,320,-198,-410
+401872956,2026-09-27,Tennessee Titans,New York Giants,7,12,DraftKings,-3,-2.5,-120,-118,45.5,37.5,-175,-135,145,114
+401872957,2026-09-27,New England Patriots,Jacksonville Jaguars,6,35,DraftKings,-1.5,-3,-105,-102,45.5,46.5,-118,-155,-102,130
+401872958,2026-09-27,Arizona Cardinals,San Francisco 49ers,30,36,DraftKings,-11.5,-7.5,-110,-110,46.5,48.5,-650,-395,470,310
+401872959,2026-09-27,Minnesota Vikings,Tampa Bay Buccaneers,23,16,DraftKings,-1.5,-1.5,-110,-102,43.5,42.5,-125,-115,105,-105
+401872960,2026-09-27,Baltimore Ravens,Dallas Cowboys,34,31,DraftKings,2.5,3,-110,-108,52.5,54.5,114,136,-135,-162
+401872961,2026-09-27,Las Vegas Raiders,New Orleans Saints,35,27,DraftKings,-3,-3.5,-110,-108,42.5,44.5,-166,-198,140,164
+401872962,2026-09-27,Los Angeles Rams,Denver Broncos,26,30,DraftKings,2.5,-1.5,-105,-108,45.5,44.5,120,-118,-142,-102
+401872963,2026-09-28,Philadelphia Eagles,Chicago Bears,7,27,DraftKings,-1.5,3,-105,-105,46.5,42.5,-118,154,-102,-185
+401872964,2026-10-01,Pittsburgh Steelers,Cleveland Browns,24,27,DraftKings,2.5,2.5,-110,100,40.5,38.5,114,124,-135,-148
+401872965,2026-10-04,Indianapolis Colts,Washington Commanders,30,13,DraftKings,-1.5,4.5,102,-102,48.5,46.5,-110,185,-110,-225
+401872966,2026-10-04,Arizona Cardinals,New York Giants,24,36,DraftKings,-7,2.5,-110,-115,45.5,43.5,-325,110,260,-130
+401872967,2026-10-04,Dallas Cowboys,Houston Texans,34,30,DraftKings,-2.5,-3,-110,-105,47.5,48.5,-135,-155,114,130
+401872968,2026-10-04,Green Bay Packers,Tampa Bay Buccaneers,17,14,DraftKings,1.5,2.5,-110,-102,47.5,38.5,105,124,-125,-148
+401872969,2026-10-04,Jacksonville Jaguars,Cincinnati Bengals,22,17,DraftKings,-2.5,-2.5,-110,-118,51.5,51.5,-135,-148,114,124
+401872970,2026-10-04,Los Angeles Rams,Philadelphia Eagles,24,20,DraftKings,1.5,4.5,-115,-115,47.5,42.5,-102,164,-118,-198
+401872971,2026-10-04,New England Patriots,Buffalo Bills,29,26,DraftKings,-3,-7,-110,-108,49.5,49.5,-162,-345,136,275
+401872972,2026-10-04,New York Jets,Chicago Bears,12,23,DraftKings,-8.5,-3.5,-110,-110,45.5,43.5,-380,-198,300,164
+401872973,2026-10-04,Tennessee Titans,Baltimore Ravens,18,24,DraftKings,-8.5,-11.5,-110,-105,47.5,41.5,-395,-800,310,550
+401872974,2026-10-04,Miami Dolphins,Minnesota Vikings,10,15,DraftKings,-7.5,-10,-110,-105,43.5,38.5,-395,-535,310,400
+401872975,2026-10-04,Denver Broncos,San Francisco 49ers,14,24,DraftKings,-2.5,-3,-110,-105,46.5,48.5,-135,-166,114,140
+401872976,2026-10-04,Kansas City Chiefs,Las Vegas Raiders,30,27,DraftKings,5.5,3.5,-110,102,43.5,47.5,210,170,-258,-205
+401872977,2026-10-04,Los Angeles Chargers,Seattle Seahawks,23,30,DraftKings,-3,-7,-110,-105,45.5,43.5,-162,-345,136,275
+401872978,2026-10-04,Detroit Lions,Carolina Panthers,26,32,DraftKings,3,3.5,-110,-105,45.5,52.5,136,160,-162,-192
+401872979,2026-10-05,Atlanta Falcons,New Orleans Saints,45,24,DraftKings,-2.5,-1.5,-110,100,45.5,48.5,-135,-115,114,-105
+401872980,2026-10-08,Tampa Bay Buccaneers,Dallas Cowboys,24,16,DraftKings,-3.5,-8.5,-110,-118,52.5,49.5,-205,-500,170,380
+401872981,2026-10-11,Philadelphia Eagles,Jacksonville Jaguars,17,19,DraftKings,2.5,-7.5,-115,-118,44.5,41.5,110,-360,-130,285
+401872982,2026-10-11,Cincinnati Bengals,Miami Dolphins,31,24,DraftKings,5.5,7.5,-110,-112,48.5,45.5,205,295,-250,-375
+401872983,2026-10-11,Cleveland Browns,New York Jets,12,17,DraftKings,-1.5,-2.5,-110,-115,38.5,38.5,-125,-135,105,114
+401872984,2026-10-11,Houston Texans,Tennessee Titans,26,3,DraftKings,3.5,6.5,-110,-110,43.5,37.5,160,240,-192,-298
+401872985,2026-10-11,Indianapolis Colts,Pittsburgh Steelers,22,34,DraftKings,-2.5,-3,-110,-108,47.5,42.5,-135,-162,114,136
+401872986,2026-10-11,Las Vegas Raiders,New England Patriots,17,45,DraftKings,-8.5,-3.5,-110,-108,45.5,45.5,-425,-360,330,285
+401872987,2026-10-11,Minnesota Vikings,New Orleans Saints,23,13,DraftKings,1.5,2.5,-115,-115,44.5,41.5,100,114,-120,-135
+401872988,2026-10-11,New York Giants,Washington Commanders,27,27,DraftKings,-2.5,-3.5,-110,-108,48.5,41.5,-135,-185,114,154
+401872989,2026-10-11,Denver Broncos,Los Angeles Chargers,23,17,DraftKings,-2.5,3,-115,-108,44.5,42.5,-142,142,120,-170
+401872990,2026-10-11,Chicago Bears,Green Bay Packers,7,31,DraftKings,-3,1.5,-110,-102,49.5,46.5,-166,110,140,-130
+401872991,2026-10-11,Detroit Lions,Arizona Cardinals,45,21,DraftKings,8.5,4.5,-110,-105,49.5,55.5,310,200,-395,-245
+401872992,2026-10-11,San Francisco 49ers,Seattle Seahawks,32,29,DraftKings,-3.5,-3,-110,-110,46.5,46.5,-198,-166,164,140
+401872993,2026-10-11,Baltimore Ravens,Atlanta Falcons,30,23,DraftKings,4.5,-3,-110,-118,48.5,44.5,180,-170,-218,142
+401872994,2026-10-12,Buffalo Bills,Los Angeles Rams,37,34,DraftKings,-3,-3.5,-110,-105,53.5,55.5,-155,-185,130,154
+401872995,2026-10-15,Seattle Seahawks,Denver Broncos,14,17,DraftKings,2.5,3,-115,-120,43.5,40.5,110,130,-130,-155
+401872996,2026-10-18,Houston Texans,Jacksonville Jaguars,34,31,DraftKings,1.5,-2.5,-118,-118,41.5,42.5,-105,-142,-115,120
+401872997,2026-10-18,Baltimore Ravens,Cleveland Browns,10,13,DraftKings,6.5,3,-110,-108,44.5,40.5,220,140,-270,-166
+401872998,2026-10-18,Carolina Panthers,Philadelphia Eagles,25,14,DraftKings,-6.5,3,-110,-105,43.5,39.5,-285,136,230,-162
+401872999,2026-10-18,Chicago Bears,Atlanta Falcons,31,23,DraftKings,3,1.5,-105,-118,47.5,50.5,140,-105,-166,-115
+401873000,2026-10-18,New Orleans Saints,New York Giants,34,27,DraftKings,-2.5,1.5,-115,-125,45.5,46.5,-148,-112,124,-108
+401873001,2026-10-18,New York Jets,New England Patriots,19,26,DraftKings,-9.5,-7.5,-110,-102,42.5,42.5,-455,-345,350,275
+401873002,2026-10-18,Pittsburgh Steelers,Tampa Bay Buccaneers,26,19,DraftKings,-1.5,2.5,-110,-105,45.5,37.5,-125,114,105,-135
+401873003,2026-10-18,Tennessee Titans,Indianapolis Colts,26,20,DraftKings,-3.5,-6.5,-110,-108,48.5,43.5,-192,-298,160,240
+401873004,2026-10-18,Arizona Cardinals,Los Angeles Rams,18,16,DraftKings,-13.5,-13.5,-110,-112,46.5,51.5,-700,-900,500,600
+401873005,2026-10-18,Buffalo Bills,Las Vegas Raiders,33,30,DraftKings,6.5,5.5,-110,-115,47.5,54.5,230,200,-285,-245
+401873006,2026-10-18,Los Angeles Chargers,Kansas City Chiefs,6,22,DraftKings,-2.5,-7.5,-110,-105,46.5,41.5,-135,-425,114,330
+401873007,2026-10-18,Dallas Cowboys,Green Bay Packers,13,23,DraftKings,-3,1.5,-110,-112,51.5,54.5,-166,102,140,-122
+401873008,2026-10-19,Washington Commanders,San Francisco 49ers,17,23,DraftKings,-5.5,-7.5,-110,-102,50.5,51.5,-250,-410,205,320
+401873010,2026-10-22,New England Patriots,Chicago Bears,24,30,DraftKings,-1.5,-3,-105,-108,47.5,50.5,-120,-155,100,130
+401873011,2026-10-25,Pittsburgh Steelers,New Orleans Saints,16,10,DraftKings,2.5,3,-115,-105,42.5,42.5,114,136,-135,-162
+401873012,2026-10-25,Cincinnati Bengals,Baltimore Ravens,35,13,DraftKings,-3.5,3,-110,-112,52.5,46.5,-192,136,160,-162
+401873013,2026-10-25,Cleveland Browns,Tennessee Titans,27,24,DraftKings,-2.5,2.5,-115,-110,40.5,37.5,-142,114,120,-135
+401873014,2026-10-25,Indianapolis Colts,Minnesota Vikings,10,16,DraftKings,-3,-6.5,-105,-120,47.5,41.5,-162,-340,136,270
+401873015,2026-10-25,Miami Dolphins,New York Jets,28,25,DraftKings,-2.5,-3.5,-110,-120,41.5,39.5,-142,-218,120,180
+401873016,2026-10-25,New York Giants,Houston Texans,27,21,DraftKings,-5.5,-10,-110,-112,43.5,43.5,-238,-520,195,390
+401873017,2026-10-25,San Francisco 49ers,Atlanta Falcons,20,29,DraftKings,4.5,2.5,-110,-108,47.5,49.5,180,120,-218,-142
+401873018,2026-10-25,Tampa Bay Buccaneers,Carolina Panthers,43,13,DraftKings,1.5,-3,-115,-112,45.5,44.5,-102,-170,-118,142
+401873019,2026-10-25,Denver Broncos,Arizona Cardinals,30,16,DraftKings,7.5,4.5,-110,-108,43.5,44.5,285,195,-360,-238
+401873020,2026-10-25,Green Bay Packers,Detroit Lions,17,20,DraftKings,-1.5,-3.5,-110,-112,50.5,55.5,-125,-192,105,160
+401873021,2026-10-25,Los Angeles Rams,Las Vegas Raiders,35,21,DraftKings,7.5,3.5,-110,-118,46.5,49.5,285,160,-360,-192
+401873022,2026-10-25,Kansas City Chiefs,Seattle Seahawks,3,20,DraftKings,-3,-3,-105,-108,45.5,43.5,-155,-162,130,136
+401873009,2026-10-26,Dallas Cowboys,Philadelphia Eagles,38,21,DraftKings,-3,4.5,-110,-115,48.5,43.5,-162,185,136,-225
