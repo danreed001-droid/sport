@@ -11,10 +11,12 @@ RULE_NAMES = {
     2: "Fade a team that won its last game as a 7+ point underdog",
     3: "Back an underdog whose top rusher ran for 150+ yards last game",
     4: "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+    5: "Back a road team after a 10+ point loss with 3+ turnovers and yards within 75 of the opponent",
 }
 RULE_BACKTEST = {
     1: "64.7% ATS, n=116; held-out 2024-25: 26-11",
     2: "60.0% ATS, n=100 (2017-2025); 2017-21 59.1%, 2022-25 61.8%",
     3: "66.7% ATS, n=39 (2017-2025); 2017-21 61.9%, 2022-25 72.2%",
     4: "60.3% ATS, n=121 (2017-2025); every season 55%+",
+    5: "65.3% ATS, n=75 (2017-2025); no losing season",
 }

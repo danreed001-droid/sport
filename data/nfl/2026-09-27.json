@@ -331,7 +331,21 @@
         "Yds/play 5.12 vs 7.07",
         "QB rating 71.6 vs 125.8 (Herbert vs Allen)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "nflStatsFavors": "Los Angeles Chargers",
+      "nflStatsRules": [
+        {
+          "rule": 5,
+          "name": "Back a road team after a 10+ point loss with 3+ turnovers and yards within 75 of the opponent",
+          "backtest": "65.3% ATS, n=75 (2017-2025); no losing season",
+          "detail": "Backing Los Angeles Chargers: lost last game by 12 with 3 turnovers while gaining 310 yards to 305 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 5: Backing Los Angeles Chargers: lost last game by 12 with 3 turnovers while gaining 310 yards to 305 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season.",
+      "nflStatsCorrect": false,
+      "nflStatsReturn": -100.0,
+      "nflStatsCover": false,
+      "nflStatsSpreadReturn": -100.0
     },
     {
       "altBlowoutCheck": "Patriots off 20-3 win over PIT (17-pt margin, qualifies) \u2014 but NE is not favored today (they're +3 underdogs, so 'market bought in' fails outright); takeaway margin even, halftime/rush-attempts unconfirmed, JAX defensive ranks unconfirmed, but Maye already has 4 INTs in 2 games (turnover-prone flag). Only 1 of 5 conditions met \u2014 regression flag OFF.",

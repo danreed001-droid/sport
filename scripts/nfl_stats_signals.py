@@ -9,6 +9,8 @@ scripts/lib/nfl_stats_rules.py.
   Rule 3: back an underdog whose top rusher ran for 150+ yards last game.
   Rule 4: fade a home team vs. a worse-record opponent after its QB threw
   for 300+ yards in a win.
+  Rule 5: back a road team after a 10+ point loss with 3+ turnovers in which
+  it gained about as many yards as its opponent (within 75).
   Neutral-site games (London, Germany, etc.) are left out, as in the backtests;
   if the rules point at opposite sides, the game gets no pick.
 
@@ -36,6 +38,9 @@ from lib.nfl_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 
 BIG_HOME_DOG = 7
 UPSET_DOG = 7        # rule 2: won its last game as an underdog of this many points or more
+TO_LOSS_MARGIN = 10  # rule 5: lost last game by this many or more...
+TO_LOSS_TURNOVERS = 3  # ...with this many turnovers or more...
+TO_LOSS_YARDS = 75   # ...and total yards within this many of the opponent's
 BIG_PASS = 300       # rule 4: QB passing yards in last game's win
 BIG_RUSH = 150       # rule 3: top rusher's yards in the team's last game
 LOOKBACK_DAYS = 16   # how far back to look for a team's last regular-season game
@@ -84,6 +89,7 @@ def last_game(session, team, date_str):
             side = "home" if names["home"] == team else "away"
             other = "away" if side == "home" else "home"
             won = float(t[side]["score"]) > float(t[other]["score"])
+            margin = float(t[side]["score"]) - float(t[other]["score"])
             home_spread = None
             doc = store.read_doc("nfl", d)
             for g in (doc or {}).get("games", []):
@@ -97,12 +103,28 @@ def last_game(session, team, date_str):
                 except Exception:
                     home_spread = None
             spread = None if home_spread is None else (home_spread if side == "home" else -home_spread)
-            return {"won": won, "spread": spread, "neutral": bool(comp.get("neutralSite")), "date": d, "opp": names[other], "eid": ev["id"]}
+            return {"won": won, "spread": spread, "neutral": bool(comp.get("neutralSite")), "date": d, "opp": names[other], "eid": ev["id"], "margin": margin}
     return None
 
 
 _RUSH = {}
 _PASS = {}
+_BOX = {}
+
+
+def team_box(session, event_id):
+    """{team name: {"to": turnovers, "yds": total yards}} from an ESPN game's box score."""
+    if event_id not in _BOX:
+        out = {}
+        try:
+            d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event={event_id}", timeout=20).json()
+            for t in d.get("boxscore", {}).get("teams", []):
+                st = {x.get("name"): x.get("displayValue") for x in t.get("statistics", [])}
+                out[t["team"]["displayName"]] = {"to": _num(st.get("turnovers")), "yds": _num(st.get("totalYards"))}
+        except Exception:
+            pass
+        _BOX[event_id] = out
+    return _BOX[event_id]
 
 
 def season_pct(session, team, date_str):
@@ -251,6 +273,13 @@ def evaluate(session, date_str, g, neutral):
             if rusher and rusher[1] >= BIG_RUSH:
                 picks.append((team, 3, f"Backing {team}: {rusher[0]} ran for {rusher[1]:g} yards last game ({BIG_RUSH}+), and {team} "
                                        f"is a {line:g}-point underdog now -- teams in this spot covered 66.7% ATS, 2017-2025 (n=39, small sample)."))
+        if last and team == g["away"] and last["margin"] <= -TO_LOSS_MARGIN:
+            box = team_box(session, last["eid"])
+            me, them = box.get(team) or {}, box.get(last["opp"]) or {}
+            if None not in (me.get("to"), me.get("yds"), them.get("yds")) and me["to"] >= TO_LOSS_TURNOVERS and abs(me["yds"] - them["yds"]) <= TO_LOSS_YARDS:
+                picks.append((team, 5, f"Backing {team}: lost last game by {-last['margin']:g} with {me['to']:g} turnovers while gaining "
+                                       f"{me['yds']:g} yards to {them['yds']:g} -- a turnover-driven loss, not a beating -- and is on the road now; "
+                                       f"teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season."))
         if last and last["won"] and team == g["home"]:
             passer = top_passer(session, last["eid"], team)
             if passer and passer[1] >= BIG_PASS:

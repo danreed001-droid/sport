@@ -259,7 +259,21 @@
         "Yds/play 7.59 vs 4.18 \u00b7 77-pt gap",
         "QB rating 99.0 vs 50.3 (Young vs Rush)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "nflStatsFavors": "Carolina Panthers",
+      "nflStatsRules": [
+        {
+          "rule": 5,
+          "name": "Back a road team after a 10+ point loss with 3+ turnovers and yards within 75 of the opponent",
+          "backtest": "65.3% ATS, n=75 (2017-2025); no losing season",
+          "detail": "Backing Carolina Panthers: lost last game by 22 with 3 turnovers while gaining 478 yards to 552 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 5: Backing Carolina Panthers: lost last game by 22 with 3 turnovers while gaining 478 yards to 552 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season.",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 67.57,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 86.96
     },
     {
       "altBlowoutCheck": "Backfilled: Jets' prior game was a 13-pt win over TEN, but only 2 of 5 conditions hit (padded win, 39 carries) \u2014 no regression flag.",
