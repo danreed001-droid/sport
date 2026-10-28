@@ -2,47 +2,28 @@
 """NBA Stats: a deterministic, backtested model patched directly onto each
 day's NBA slate (data/nba/<date>.json), alongside the Ledger and Second
 Opinion -- the same way Trend check/Blowout check ride along on NFL/CFB
-games. No LLM research involved. Four rules, each backtested on every NBA
-regular season game from 2020-21 through 2026-27 (ATS rates use the games
-ESPN has archived lines for: 2020-21 to 2022-23 and 2025-26 on):
+games. No LLM research involved. Rules were backtested on every NBA regular
+season game from 2020-21 through 2026-27 (ATS rates use the games ESPN has
+archived lines for: 2020-21 to 2022-23 and 2025-26 on), and each one only
+fires on the rest days -- the flagged team's days off since its last game --
+where it backtested at 62%+ ATS. Names, rest days and rates are in
+scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
 
-  Fades (pick the flagged team's opponent):
-  1. 5+ game win streak, playing at home, opponent has a worse record
-     -> faded 57.2% of the time ATS (n=208)
-  2. Won its last game in OT, opponent has a better record
-     -> faded 63.6% of the time ATS (n=77)
-  3. Blew a 10+ point lead and lost its last game, playing at home,
-     opponent has a worse record -> faded 60.8% of the time ATS (n=79)
-
-  Back (pick the flagged team):
-  4. Its top scorer (18+ ppg, 5+ games) was held under 70% of his season
-     average last game, and it's playing at home -> covered 57.9% ATS
-     (n=537); 60.8% (n=273) when the opponent has a better record
-  5. Lost its last game with 22+ team turnovers, playing at home, opponent
-     has a worse record -> covered 62.1% ATS (n=29 -- small; the broader
-     "lost with 22+ turnovers, any next game" version is 58.6%, n=191)
-  7. Was out-assisted by 18+ last game, playing on the road
-     -> covered 69.2% ATS (n=26 -- the thinnest rule)
-
-  Fade (continued):
-  6. Had 18+ more assists than its opponent last game, home or away
-     -> faded 64.2% of the time ATS (n=53; every priced season agrees)
-  8. Won its last game by under 10 with 6+ more steals than its opponent,
-     unless it's now home vs. a better-record team -> faded 61.0% of the
-     time ATS (n=141; any win by 10+ is a coin flip, 49.9%)
-  9. Won its last game after trailing by 5+ through 3 quarters, and plays
-     again the next day (second night of a back-to-back) -> faded 68.1% of
-     the time ATS (n=91; the same comeback with a day of rest is 49.3%)
+  Fades (pick the flagged team's opponent): 1 win streak, 2 OT win,
+  3 blown lead, 6 assist edge, 8 close win built on steals, 9 late comeback.
+  Backs (pick the flagged team): 5 sloppy turnover loss, 7 out-assisted.
+  Rule 4 (cold top scorer) is retired.
 
 "Better/worse record" compares each team's season-to-date win% entering the
-game. A game gets "statsFavors" (team name) and "statsCheck" (the reasoning,
-with the backtested rate) when rules fire and agree on a side; if they point
-at opposite sides, the game gets no pick. Most days no game qualifies.
+game. A game gets "statsFavors" (team name), "statsRules" (every rule that
+fired, with its reason) and "statsCheck" (the same reasons as one string)
+when rules fire and agree on a side; if they point at opposite sides, the
+game gets no pick. Most days no game qualifies.
 
 Needs data/nba/<date>.json to already exist for the target date (the live
-Routine's own slate). Per-player points and team turnovers/assists for
-completed games are cached in data/raw/nba_player_points.json so each run
-only fetches games it hasn't seen.
+Routine's own slate). Per-player points and team turnovers/assists/steals/
+free throws for completed games are cached in data/raw/nba_player_points.json
+so each run only fetches games it hasn't seen.
 
 Usage: python scripts/nba_stats_signals.py [YYYY-MM-DD ...]   (default: today ET)
 """
@@ -62,22 +43,25 @@ SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 POINTS_CACHE = os.path.join(REPO_ROOT, "data", "raw", "nba_player_points.json")
 MIN_STREAK = 5
 MIN_BLOWN_LEAD = 10
-STAR_MIN_PPG = 18
-STAR_MIN_GP = 5
-COLD_CUTOFF = 0.7
 SLOPPY_LOSS_TO = 22
 ASSIST_GAP = 18
 STEAL_GAP = 6
 CLOSE_WIN = 10
+# Rest days (for the team the rule is about) on which each rule backtested
+# at 62%+ ATS: "b2b" = played yesterday, "1" = one day off, "2+" = two or more.
+ALLOWED_REST = {
+    1: {"b2b"}, 2: {"b2b", "1", "2+"}, 3: {"b2b"}, 5: {"b2b"}, 6: {"1"},
+    7: {"b2b", "1"}, 8: {"b2b", "2+"}, 9: {"b2b"},
+}
 LATE_COMEBACK = 5
 
 RULES = {
     "streak": "5+ game win streak, home, vs. a worse-record opponent -- "
-              "faded 57.2% of the time ATS (n=208)",
+              "faded 65.3% of the time ATS on a back-to-back (n=49)",
     "ot_win": "won last game in OT, now facing a better-record opponent -- "
               "faded 63.6% of the time ATS (n=77)",
     "blown_lead": "blew a 10+ point lead and lost last game, home, vs. a "
-                  "worse-record opponent -- faded 60.8% of the time ATS (n=79)",
+                  "worse-record opponent -- faded 79.2% of the time ATS on a back-to-back (n=24)",
 }
 
 
@@ -259,33 +243,6 @@ class BoxCache:
                 json.dump(self.data, f, separators=(",", ":"))
 
 
-def cold_star(points, prior, team):
-    """If `team`'s top scorer entering its last game (18+ ppg over 5+ games)
-    played that game and scored under 70% of his average, returns
-    (name, ppg, pts_last); otherwise None."""
-    if len(prior) < STAR_MIN_GP + 1:
-        return None
-    totals, gp, names = {}, {}, {}
-    for g in prior[:-1]:
-        for pid, (pts, name) in (points.get(g["event_id"], team) or {}).items():
-            totals[pid] = totals.get(pid, 0) + pts
-            gp[pid] = gp.get(pid, 0) + 1
-            names[pid] = name
-    cands = [(totals[p] / gp[p], p) for p in gp if gp[p] >= STAR_MIN_GP]
-    if not cands:
-        return None
-    ppg, star = max(cands)
-    if ppg < STAR_MIN_PPG:
-        return None
-    last = points.get(prior[-1]["event_id"], team) or {}
-    if star not in last:
-        return None
-    pts_last = last[star][0]
-    if pts_last >= COLD_CUTOFF * ppg:
-        return None
-    return names[star], ppg, pts_last
-
-
 def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
     """Returns (pick_team, check_text) or None. Collects every rule that
     fires for either team; skips the game if they disagree on a side."""
@@ -296,6 +253,7 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
         if not prior:
             continue
         last = prior[-1]
+        start = len(picks)
         team_w, team_l = season_record(games, date_str)
         opp_w, opp_l = season_record(by_team.get(opp, []), date_str)
         if not (team_w + team_l) or not (opp_w + opp_l):
@@ -325,34 +283,30 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
         if mine is not None and theirs is not None:
             if mine - theirs >= ASSIST_GAP:
                 picks.append((opp, 6, f"Fading {team}: had {mine - theirs} more assists than its opponent last game "
-                                   f"({ASSIST_GAP}+) -- teams in this spot were faded 64.2% of the time ATS (n=53)."))
+                                   f"({ASSIST_GAP}+) -- teams in this spot were faded 79.2% of the time ATS with 1 day of rest (n=24)."))
             if theirs - mine >= ASSIST_GAP and not is_home:
                 picks.append((team, 7, f"Backing {team}: was out-assisted by {theirs - mine} last game ({ASSIST_GAP}+), "
-                                    f"now on the road -- teams in this spot covered 69.2% ATS (n=26, small sample)."))
+                                    f"now on the road -- teams in this spot covered 72.7% ATS on a back-to-back or 1 day of rest (n=22, small sample)."))
 
         margin = last["team_score"] - last["opp_score"]
         if last["won"] and margin < CLOSE_WIN and not (is_home and opp_stronger):
             ms, ts = points.steals(last["event_id"], team), points.steals(last["event_id"], last["opp"])
             if ms is not None and ts is not None and ms - ts >= STEAL_GAP:
                 picks.append((opp, 8, f"Fading {team}: won last game by {margin:g} with {ms - ts} more steals "
-                                   f"({STEAL_GAP}+) -- teams in this spot were faded 61.0% of the time ATS (n=141)."))
+                                   f"({STEAL_GAP}+) -- teams in this spot were faded 64.5% of the time ATS on a back-to-back or 2+ days of rest (n=62)."))
 
         if is_home and opp_weaker and not last["won"]:
             to = points.turnovers(last["event_id"], team)
             if to is not None and to >= SLOPPY_LOSS_TO:
                 picks.append((team, 5, f"Backing {team}: lost last game with {to} turnovers ({SLOPPY_LOSS_TO}+), "
                                     f"now home vs. a worse-record opponent -- teams in this spot covered "
-                                    f"62.1% ATS (n=29, small sample)."))
+                                    f"77.8% ATS on a back-to-back (n=9, small sample)."))
 
-        if is_home:
-            cold = cold_star(points, prior, team)
-            if cold:
-                name, ppg, pts_last = cold
-                rate = ("covered 60.8% ATS when the opponent has a better record (n=273)" if opp_stronger
-                        else "covered 57.9% ATS at home (n=537)")
-                picks.append((team, 4, f"Backing {team}: top scorer {name} ({ppg:.1f} ppg) was held to "
-                                    f"{pts_last} last game, under 70% of his average, and {team} is home "
-                                    f"-- teams in this spot {rate}."))
+        # Keep only the rules whose backtest cleared 62% for this team's rest
+        # (days off since its last game).
+        gap = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days - 1
+        rest = "b2b" if gap <= 0 else ("1" if gap == 1 else "2+")
+        picks[start:] = [pk for pk in picks[start:] if rest in ALLOWED_REST[pk[1]]]
     sides = {p for p, _, _ in picks}
     if len(sides) != 1:
         return None

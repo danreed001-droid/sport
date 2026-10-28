@@ -593,7 +593,7 @@
         "NetRtg blend 21.13 vs -17.36 (100.00th vs 6.90th pct of 30 teams \u2014 gap 93.10)",
         "Injuries: POR missing Shaedon Sharpe (out, meniscus) + Youngblood/Carlson (day-to-day); SAC missing Cardwell/Raynaud (out), Simmons (out for season) + Monk (day-to-day)"
       ],
-      "statsCheck": "Rule 6: Fading Portland Trail Blazers: had 18 more assists than its opponent last game (18+) -- teams in this spot were faded 64.2% of the time ATS (n=53).",
+      "statsCheck": "Rule 6: Fading Portland Trail Blazers: had 18 more assists than its opponent last game (18+) -- teams in this spot were faded 79.2% of the time ATS with 1 day of rest (n=24).",
       "statsCorrect": false,
       "statsCover": true,
       "statsFavors": "Sacramento Kings",
@@ -603,9 +603,9 @@
       "statsRules": [
         {
           "rule": 6,
-          "name": "Fade a team after an 18+ assist edge",
-          "backtest": "64.2% ATS, n=53",
-          "detail": "Fading Portland Trail Blazers: had 18 more assists than its opponent last game (18+) -- teams in this spot were faded 64.2% of the time ATS (n=53)."
+          "name": "Fade a team after an 18+ assist edge (1 day of rest)",
+          "backtest": "79.2% ATS, n=24",
+          "detail": "Fading Portland Trail Blazers: had 18 more assists than its opponent last game (18+) -- teams in this spot were faded 79.2% of the time ATS with 1 day of rest (n=24)."
         }
       ]
     }
