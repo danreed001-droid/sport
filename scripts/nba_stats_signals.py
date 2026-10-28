@@ -10,7 +10,8 @@ where it backtested at 62%+ ATS. Names, rest days and rates are in
 scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
 
   Fades (pick the flagged team's opponent): 1 win streak, 2 OT win,
-  3 blown lead, 6 assist edge, 8 close win built on steals, 9 late comeback.
+  3 blown lead, 6 assist edge, 8 close win built on steals, 9 late comeback,
+  10 out-rebounded by 18+.
   Backs (pick the flagged team): 5 sloppy turnover loss, 7 out-assisted.
   Rule 4 (cold top scorer) is retired.
 
@@ -22,7 +23,7 @@ game gets no pick. Most days no game qualifies.
 
 Needs data/nba/<date>.json to already exist for the target date (the live
 Routine's own slate). Per-player points and team turnovers/assists/steals/
-free throws for completed games are cached in data/raw/nba_player_points.json
+free throws/rebounds for completed games are cached in data/raw/nba_player_points.json
 so each run only fetches games it hasn't seen.
 
 Usage: python scripts/nba_stats_signals.py [YYYY-MM-DD ...]   (default: today ET)
@@ -47,11 +48,12 @@ SLOPPY_LOSS_TO = 22
 ASSIST_GAP = 18
 STEAL_GAP = 6
 CLOSE_WIN = 10
+REBOUND_GAP = 18
 # Rest days (for the team the rule is about) on which each rule backtested
 # at 62%+ ATS: "b2b" = played yesterday, "1" = one day off, "2+" = two or more.
 ALLOWED_REST = {
     1: {"b2b"}, 2: {"b2b", "1", "2+"}, 3: {"b2b"}, 5: {"b2b"}, 6: {"1"},
-    7: {"b2b", "1"}, 8: {"b2b", "2+"}, 9: {"b2b"},
+    7: {"b2b", "1"}, 8: {"b2b", "2+"}, 9: {"b2b"}, 10: {"2+"},
 }
 LATE_COMEBACK = 5
 
@@ -169,7 +171,7 @@ class BoxCache:
 
     def _entry(self, event_id):
         e = self.data.get(event_id)
-        if not isinstance(e, dict) or "ftm" not in e:  # missing, failed, or an older format
+        if not isinstance(e, dict) or "reb" not in e:  # missing, failed, or an older format
             e = self.data[event_id] = self._fetch(event_id)
             self.dirty = True
         return e or {}
@@ -186,6 +188,9 @@ class BoxCache:
     def steals(self, event_id, team):
         return self._entry(event_id).get("stl", {}).get(team)
 
+    def rebounds(self, event_id, team):
+        return self._entry(event_id).get("reb", {}).get(team)
+
     def free_throws_made(self, event_id, team):
         return self._entry(event_id).get("ftm", {}).get(team)
 
@@ -201,7 +206,7 @@ class BoxCache:
         except Exception:
             return None
         box = d.get("boxscore", {})
-        pts_by_team, to_by_team, ast_by_team, stl_by_team, ftm_by_team = {}, {}, {}, {}, {}
+        pts_by_team, to_by_team, ast_by_team, stl_by_team, ftm_by_team, reb_by_team = {}, {}, {}, {}, {}, {}
         for t in box.get("players", []):
             if not t.get("statistics"):
                 continue
@@ -210,16 +215,22 @@ class BoxCache:
             if "PTS" not in labels:
                 continue
             i = labels.index("PTS")
-            pts = {}
+            r = labels.index("REB") if "REB" in labels else None
+            pts, reb = {}, 0
             for ath in cat.get("athletes", []):
                 st = ath.get("stats") or []
                 if ath.get("didNotPlay") or len(st) <= i:
                     continue
                 try:
                     pts[ath["athlete"]["id"]] = [int(st[i]), ath["athlete"].get("displayName")]
+                    # Player rebounds, summed -- the backtest's definition (the
+                    # team total can also include uncredited "team rebounds").
+                    reb += int(st[r]) if r is not None and r < len(st) else 0
                 except (TypeError, ValueError, KeyError):
                     continue
             pts_by_team[t["team"]["displayName"]] = pts
+            if r is not None:
+                reb_by_team[t["team"]["displayName"]] = reb
         for t in box.get("teams", []):
             stats = {s.get("name"): s.get("displayValue") for s in t.get("statistics", [])}
             name = t["team"]["displayName"]
@@ -234,7 +245,7 @@ class BoxCache:
                 pass
         if not pts_by_team:
             return None
-        return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team, "stl": stl_by_team, "ftm": ftm_by_team,
+        return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team, "stl": stl_by_team, "ftm": ftm_by_team, "reb": reb_by_team,
                 "type": d.get("header", {}).get("season", {}).get("type")}
 
     def save(self):
@@ -287,6 +298,12 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
             if theirs - mine >= ASSIST_GAP and not is_home:
                 picks.append((team, 7, f"Backing {team}: was out-assisted by {theirs - mine} last game ({ASSIST_GAP}+), "
                                     f"now on the road -- teams in this spot covered 72.7% ATS on a back-to-back or 1 day of rest (n=22, small sample)."))
+
+        mr, tr2 = points.rebounds(last["event_id"], team), points.rebounds(last["event_id"], last["opp"])
+        if mr is not None and tr2 is not None and tr2 - mr >= REBOUND_GAP:
+            picks.append((opp, 10, f"Fading {team}: was out-rebounded by {tr2 - mr} last game ({REBOUND_GAP}+), "
+                                   f"now coming off 2+ days of rest -- teams in this spot were faded 72.4% "
+                                   f"of the time ATS (n=58)."))
 
         margin = last["team_score"] - last["opp_score"]
         if last["won"] and margin < CLOSE_WIN and not (is_home and opp_stronger):

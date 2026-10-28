@@ -14,8 +14,10 @@ RULE_NAMES = {
     7: "Back a road team after being out-assisted by 18+ (back-to-back or 1 day)",
     8: "Fade a close win built on 6+ more steals (back-to-back or 2+ days)",
     9: "Fade a late comeback on the back-to-back",
+    10: "Fade a team out-rebounded by 18+ (2+ days of rest)",
 }
 RULE_BACKTEST = {
     1: "65.3% ATS, n=49", 2: "63.6% ATS, n=77", 3: "79.2% ATS, n=24", 5: "77.8% ATS, n=9",
     6: "79.2% ATS, n=24", 7: "72.7% ATS, n=22", 8: "64.5% ATS, n=62", 9: "68.1% ATS, n=91",
+    10: "72.4% ATS, n=58",
 }
