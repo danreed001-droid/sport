@@ -180,6 +180,10 @@ details.tv table{min-width:0;}
 .badge .val{font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
 .badge .val.none{color:var(--muted);font-weight:500;font-style:italic;font-size:12.5px;}
 .badge .tier{font-size:11px;color:var(--muted);}
+.betcall{display:inline-block;margin-left:4px;padding:0 5px;border-radius:4px;font-size:11px;font-weight:700;white-space:nowrap;}
+.badge .betcall{display:block;width:max-content;margin:3px 0 0;}
+.betcall.ats{color:var(--ledger-ink);background:rgba(42,120,214,.13);}
+.betcall.ml{color:var(--opinion-ink);background:rgba(235,104,52,.14);}
 .tier .stacked,.why summary .stacked,.logtbl .stacked{display:inline-block;margin-left:4px;padding:0 5px;border-radius:4px;font-weight:700;color:var(--mine-ink);background:var(--mine-soft);}
 .stackrow td{font-weight:600;}
 details.why{font-size:12px;color:var(--muted);}
@@ -691,7 +695,7 @@ footer b{color:var(--ink);}
         + '<td>'+esc((DATA.sportLabels[p.s]||p.s).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB'))+'</td>'
         + '<td><span class="who"><i style="background:'+w.c+'"></i>'+esc(w.short)+'</span></td>'
         + '<td class="gm">'+esc(p.g)+(p.sc ? '<span class="muted sc">Final '+esc(p.sc)+'</span>' : '')+'</td>'
-        + '<td><b>'+esc(p.k)+'</b>'+(p.rr && p.rr.length>1 ? ' <span class="stacked">stacked · '+p.rr.length+' rules</span>' : '')+(p.rr ? p.rr.map(function(r){ var sr = ((p.w==='nflstats' ? DATA.nflStatsRules : DATA.statsRules)||[]).filter(function(x){ return x.rule===r.n; })[0], sn = sr ? sr.w+sr.l+sr.p : 0; return '<span class="rblurb'+(p.w==='nflstats'?' nfl':'')+'"><b>Rule '+esc(r.n)+'</b> · '+esc(r.name)+' · past: '+esc(String(r.bt).replace(/, n=(\d+)/, ' over $1 games'))+(sn ? ' · this season '+sr.w+'-'+sr.l+(sr.p?'-'+sr.p:'') : '')+'</span>'; }).join('') : (p.t ? '<span class="muted tier">'+esc(TIER[p.t]||p.t).replace(' · stacked', ' <span class="stacked">stacked</span>')+'</span>' : ''))+'</td>'
+        + '<td><b>'+esc(p.k)+'</b>'+((p.w==='stats' || p.w==='nflstats') ? ' '+betTag(p.sp, p.mo) : '')+(p.rr && p.rr.length>1 ? ' <span class="stacked">stacked · '+p.rr.length+' rules</span>' : '')+(p.rr ? p.rr.map(function(r){ var sr = ((p.w==='nflstats' ? DATA.nflStatsRules : DATA.statsRules)||[]).filter(function(x){ return x.rule===r.n; })[0], sn = sr ? sr.w+sr.l+sr.p : 0; return '<span class="rblurb'+(p.w==='nflstats'?' nfl':'')+'"><b>Rule '+esc(r.n)+'</b> · '+esc(r.name)+' · past: '+esc(String(r.bt).replace(/, n=(\d+)/, ' over $1 games'))+(sn ? ' · this season '+sr.w+'-'+sr.l+(sr.p?'-'+sr.p:'') : '')+'</span>'; }).join('') : (p.t ? '<span class="muted tier">'+esc(TIER[p.t]||p.t).replace(' · stacked', ' <span class="stacked">stacked</span>')+'</span>' : ''))+'</td>'
         + '<td class="mono">'+(num(p.sp) ? sgn(p.sp) : '—')+'</td>'
         + '<td>'+ats+'</td>'
         + '<td class="mono '+(num(p.ap)?cls(p.ap):'flat')+'">'+(num(p.ap) ? money(p.ap) : '—')+'</td>'
@@ -832,6 +836,15 @@ footer b{color:var(--ink);}
     if(!r || !(r.w+r.l+r.p)) return 'no graded picks yet this season';
     return 'this season '+r.w+'-'+r.l+(r.p?'-'+r.p:'');
   }
+  // NBA/NFL Stats bet call: the moneyline on a small underdog (+100 to +149),
+  // where it paid more than the spread in both sports' backtests; the spread
+  // everywhere else.
+  function betCall(spread, ml){
+    if(num(ml) && ml>=100 && ml<=149) return {k:'ml', txt:'Bet ML '+sgn(ml)};
+    return {k:'ats', txt:'Bet ATS'+(num(spread) ? ' '+sgn(spread) : '')};
+  }
+  function betTag(spread, ml){ var b = betCall(spread, ml); return '<span class="betcall '+b.k+'">'+esc(b.txt)+'</span>'; }
+  function pickLine(g, team){ var h = team===g.home; return {sp: h ? g.homeSpread : g.awaySpread, ml: h ? g.homeMoneyline : g.awayMoneyline}; }
   function ruleTier(nums){
     if(!nums.length) return '';
     return '<span class="tier">Rule'+(nums.length>1?'s ':' ')+nums.join(' + ')+(nums.length>1?' <span class="stacked">stacked</span>':'')+'</span>';
@@ -846,7 +859,7 @@ footer b{color:var(--ink);}
     if(g.statsFavors){
       var nums = ruleNums(g);
       var tier = ruleTier(nums);
-      return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val">'+esc(g.statsFavors)+resultChips(g.results&&g.results.stats)+'</span>'+tier+'</div>';
+      return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val">'+esc(g.statsFavors)+resultChips(g.results&&g.results.stats)+'</span>'+tier+(function(l){ return betTag(l.sp, l.ml); })(pickLine(g, g.statsFavors))+'</div>';
     }
     return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val none">No signal</span></div>';
   }
@@ -854,7 +867,7 @@ footer b{color:var(--ink);}
     if(g.nflStatsFavors){
       var nums = (g.nflStatsRules||[]).map(function(r){ return r.rule; });
       var tier = ruleTier(nums);
-      return '<div class="badge nflstats"><span class="lbl">NFL Stats</span><span class="val">'+esc(g.nflStatsFavors)+resultChips(g.results&&g.results.nflstats)+'</span>'+tier+'</div>';
+      return '<div class="badge nflstats"><span class="lbl">NFL Stats</span><span class="val">'+esc(g.nflStatsFavors)+resultChips(g.results&&g.results.nflstats)+'</span>'+tier+(function(l){ return betTag(l.sp, l.ml); })(pickLine(g, g.nflStatsFavors))+'</div>';
     }
     return '<div class="badge nflstats"><span class="lbl">NFL Stats</span><span class="val none">No signal</span></div>';
   }
@@ -984,7 +997,7 @@ footer b{color:var(--ink);}
         + '<div class="games">'+sp.games.map(function(g){ return card(k,g); }).join('')+'</div></section>';
     }).join('');
     document.getElementById('app').innerHTML =
-      '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models in every sport; on NFL and CFB games, <b style="color:var(--trend-ink)">Trend check</b> and <b style="color:var(--blowout-ink)">Blowout check</b> are tracked alongside them, and on NBA games, <b style="color:var(--stats-ink)">NBA Stats</b> is — five backtested rules that fade a team coming off an OT win (vs. a stronger team), a late comeback the night before a back-to-back, a win where all 5 starters scored 10+ (now on a back-to-back vs. a weaker team) or a home win where it allowed 130+, or back a team coming off a loss to a team that shot 50%+ from three (now home on a back-to-back). Each rule only fires on the rest days where it backtested at 62% or better, and each went 60%+ on four seasons it was never found on. On NFL games, <b style="color:var(--nflstats-ink)">NFL Stats</b> backs a home underdog of 7+ points (64.7% against the spread from 2020-2025) fades a team coming off a win as a 7+ point underdog (60.0%, 2017-2025), backs an underdog whose top rusher ran for 150+ yards last game (66.7%, small sample), fades a home team vs. a weaker team after its QB threw for 300+ in a win (60.3%), backs a road team after a 10+ point loss driven by 3+ turnovers rather than yards (65.3%), and fades a team that gained 500+ yards with 300+ passing (60.0%). A pick two or more rules agree on is marked <b>stacked</b>: those went 69.4% when all six rules were replayed on 2017-2025. <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
+      '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models in every sport; on NFL and CFB games, <b style="color:var(--trend-ink)">Trend check</b> and <b style="color:var(--blowout-ink)">Blowout check</b> are tracked alongside them, and on NBA games, <b style="color:var(--stats-ink)">NBA Stats</b> is — five backtested rules that fade a team coming off an OT win (vs. a stronger team), a late comeback the night before a back-to-back, a win where all 5 starters scored 10+ (now on a back-to-back vs. a weaker team) or a home win where it allowed 130+, or back a team coming off a loss to a team that shot 50%+ from three (now home on a back-to-back). Each rule only fires on the rest days where it backtested at 62% or better, and each went 60%+ on four seasons it was never found on. On NFL games, <b style="color:var(--nflstats-ink)">NFL Stats</b> backs a home underdog of 7+ points (64.7% against the spread from 2020-2025) fades a team coming off a win as a 7+ point underdog (60.0%, 2017-2025), backs an underdog whose top rusher ran for 150+ yards last game (66.7%, small sample), fades a home team vs. a weaker team after its QB threw for 300+ in a win (60.3%), backs a road team after a 10+ point loss driven by 3+ turnovers rather than yards (65.3%), and fades a team that gained 500+ yards with 300+ passing (60.0%). A pick two or more rules agree on is marked <b>stacked</b>: those went 69.4% when all six rules were replayed on 2017-2025. Each NBA and NFL Stats pick also says how to bet it: <b>ML</b> when the team is a small underdog (+100 to +149), where the moneyline paid more than the spread in the backtests for both sports, and <b>ATS</b> otherwise. <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
       + dashHtml()
       + logHtml()
       + (sportsHtml || '<section><p class="sec-p">No games on the slate.</p></section>')
