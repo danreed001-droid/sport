@@ -1,0 +1,12 @@
+"""NFL Stats rule names and backtest rates, shared by the signal engine
+(scripts/nfl_stats_signals.py) and the site build (scripts/build_site.py),
+which has no network dependencies. Backtested on every NFL regular-season
+game 2020-2025 with ESPN closing spreads (core odds feed); it was one of 20
+ideas set before looking, found on 2020-23 and confirmed on 2024-25."""
+
+RULE_NAMES = {
+    1: "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+}
+RULE_BACKTEST = {
+    1: "64.7% ATS, n=116; held-out 2024-25: 26-11",
+}

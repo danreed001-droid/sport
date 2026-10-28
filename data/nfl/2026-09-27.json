@@ -241,7 +241,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Miami Dolphins",
+      "nflStatsRules": [
+        {
+          "rule": 1,
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing Miami Dolphins: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        }
+      ],
+      "nflStatsCheck": "Rule 1: Backing Miami Dolphins: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+      "nflStatsCorrect": null,
+      "nflStatsReturn": null,
+      "nflStatsCover": false,
+      "nflStatsSpreadReturn": -100.0
     },
     {
       "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win of 17+ points (Bills won by 10, Chargers lost).",
@@ -484,7 +498,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Washington Commanders",
+      "nflStatsRules": [
+        {
+          "rule": 1,
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing Washington Commanders: a 7.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        }
+      ],
+      "nflStatsCheck": "Rule 1: Backing Washington Commanders: a 7.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+      "nflStatsCorrect": null,
+      "nflStatsReturn": null,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 90.91
     },
     {
       "altBlowoutCheck": "N/A \u2014 both teams lost their most recent game.",
@@ -847,5 +875,5 @@
       "altBlowoutSpreadReturn": null
     }
   ],
-  "scoredAt": "2026-09-28T09:57:26.911226+00:00"
+  "scoredAt": "2026-10-28T02:54:31.680536+00:00"
 }

@@ -17,6 +17,7 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
+from lib import nfl_stats_rules  # noqa: E402
 from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
@@ -25,7 +26,7 @@ SLATE_FIELDS = [
     "pick", "confidence", "skipped", "skipReason",
     "altPick", "altConfidence", "altCategoryTally", "altReasons",
     "altTrendCheck", "altBlowoutCheck", "altTrendFavors", "altBlowoutFavors",
-    "statsFavors", "statsCheck", "statsRules",
+    "statsFavors", "statsCheck", "statsRules", "nflStatsFavors", "nflStatsCheck", "nflStatsRules",
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore",
 ]
@@ -91,18 +92,22 @@ def stats_side(g):
     return side_of(g, g["statsFavors"]) if g.get("statsFavors") else None
 
 
-# Trend/blowout are only populated on NFL and CFB games, and stats only on
-# NBA games; every other sport's games lack these keys entirely so these
-# three "models" contribute nothing outside their one sport.
+def nflstats_side(g):
+    return side_of(g, g["nflStatsFavors"]) if g.get("nflStatsFavors") else None
+
+
+# Trend/blowout are only populated on NFL and CFB games, stats only on NBA
+# games and nflstats only on NFL games; every other sport's games lack these
+# keys entirely so these "models" contribute nothing outside their sport.
 MODEL_SIDES = (("ledger", ledger_side), ("alt", alt_side), ("trend", trend_side),
-               ("blowout", blowout_side), ("stats", stats_side))
+               ("blowout", blowout_side), ("stats", stats_side), ("nflstats", nflstats_side))
 
 
 def build():
     mypicks = load_mypicks()
     all_docs = {k: store.list_docs(cfg["collection"]) for k, cfg in sports.SPORTS.items()}
 
-    totals = {"ledger": blank(), "alt": blank(), "trend": blank(), "blowout": blank(), "stats": blank(), "mine": blank()}
+    totals = {k: blank() for k in ("ledger", "alt", "trend", "blowout", "stats", "nflstats", "mine")}
     by_sport = {}
     plays = []
     for sport, docs in all_docs.items():
@@ -116,12 +121,14 @@ def build():
                     if side not in ("away", "home", "draw"):
                         continue
                     tier = g.get("confidence") if who == "ledger" else g.get("altConfidence") if who == "alt" else None
-                    if who == "stats" and g.get("statsRules"):
-                        nums = [str(r.get("rule")) for r in g["statsRules"]]
+                    rule_src = {"stats": ("statsRules", RULE_NAMES, RULE_BACKTEST),
+                                "nflstats": ("nflStatsRules", nfl_stats_rules.RULE_NAMES, nfl_stats_rules.RULE_BACKTEST)}.get(who)
+                    play_rules = None
+                    if rule_src and g.get(rule_src[0]):
+                        nums = [str(r.get("rule")) for r in g[rule_src[0]]]
                         tier = ("Rules " if len(nums) > 1 else "Rule ") + " + ".join(nums)
-                    play_rules = [{"n": r.get("rule"), "name": RULE_NAMES.get(r.get("rule"), r.get("name", "")),
-                                   "bt": RULE_BACKTEST.get(r.get("rule"), r.get("backtest", ""))}
-                                  for r in (g.get("statsRules") or [])] if who == "stats" else None
+                        play_rules = [{"n": r.get("rule"), "name": rule_src[1].get(r.get("rule"), r.get("name", "")),
+                                       "bt": rule_src[2].get(r.get("rule"), r.get("backtest", ""))} for r in g[rule_src[0]]]
                     ln = line_for(g, side)
                     play = {"d": date_str, "s": sport, "w": who, "t": tier,
                             "g": f"{g.get('away')} @ {g.get('home')}", "k": team_for(g, side),
@@ -148,7 +155,7 @@ def build():
                                  "m": r["ml"]["result"], "mp": r["ml"]["profit"],
                                  "x": {"dog": 1, "fav": 2}.get(r["ml"]["skip"], 0), "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
                     plays.append(play)
-                    bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "trend": blank(), "blowout": blank(), "stats": blank(), "mine": blank()})
+                    bucket = by_sport.setdefault(sport, {k: blank() for k in ("ledger", "alt", "trend", "blowout", "stats", "nflstats", "mine")})
                     tally(bucket[who], r)
 
     # NBA Stats record per rule this season: a pick counts toward every rule
@@ -165,6 +172,17 @@ def build():
                     rule_records[rule["rule"]][key] += 1
     stats_rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], **rule_records[n]}
                    for n in sorted(RULE_NAMES)]
+    nfl_records = {n: {"w": 0, "l": 0, "p": 0} for n in nfl_stats_rules.RULE_NAMES}
+    for date_str, doc in all_docs.get("nfl", []):
+        for g in doc.get("games", []):
+            if not g.get("nflStatsFavors") or not is_final(doc, g):
+                continue
+            key = {"cover": "w", "miss": "l", "push": "p"}.get(grade("nfl", g, side_of(g, g["nflStatsFavors"]))["ats"]["result"])
+            for rule in g.get("nflStatsRules") or []:
+                if key and rule.get("rule") in nfl_records:
+                    nfl_records[rule["rule"]][key] += 1
+    nfl_rules = [{"rule": n, "name": nfl_stats_rules.RULE_NAMES[n], "backtest": nfl_stats_rules.RULE_BACKTEST[n], **nfl_records[n]}
+                 for n in sorted(nfl_stats_rules.RULE_NAMES)]
 
     slate_date = max((d for docs in all_docs.values() for d, _ in docs), default=None)
     slate = {"date": slate_date, "weekday": None, "sports": {}}
@@ -216,6 +234,7 @@ def build():
         "sportLabels": {k: cfg["label"] for k, cfg in sports.SPORTS.items()},
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
+        "nflStatsRules": nfl_rules,
     }
 
 

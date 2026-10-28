@@ -213,6 +213,7 @@ TWO_WAY_SIGNAL_FIELDS = [
     ("altBlowoutFavors", "altBlowoutCorrect", "altBlowoutReturn", "altBlowoutCover", "altBlowoutSpreadReturn"),
     ("altRestBlowoutFavors", "altRestBlowoutCorrect", "altRestBlowoutReturn", "altRestBlowoutCover", "altRestBlowoutSpreadReturn"),
     ("statsFavors", "statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn"),
+    ("nflStatsFavors", "nflStatsCorrect", "nflStatsReturn", "nflStatsCover", "nflStatsSpreadReturn"),
 ]
 
 
@@ -233,10 +234,11 @@ def main(sport_key):
     scores_by_date = load_scores_by_date(sport_key)
     docs = store.list_docs(cfg["collection"])
     # A slate can arrive already graded from the ledger database but carry an
-    # NBA Stats pick this repo added that nobody has graded yet; regrade it
+    # NBA/NFL Stats pick this repo added that nobody has graded yet; regrade it
     # (idempotent for everything else).
     def needs_stats_grade(doc):
-        return any(g.get("statsFavors") and "statsCorrect" not in g for g in doc.get("games", []))
+        return any((g.get("statsFavors") and "statsCorrect" not in g)
+                   or (g.get("nflStatsFavors") and "nflStatsCorrect" not in g) for g in doc.get("games", []))
 
     pending = sorted(
         [(d, doc) for d, doc in docs if (not doc.get("scored") or needs_stats_grade(doc)) and d < today],

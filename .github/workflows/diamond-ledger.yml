@@ -49,6 +49,9 @@ jobs:
       - name: Patch today's NBA Stats picks onto the NBA slate
         run: python scripts/nba_stats_signals.py
 
+      - name: Patch today's NFL Stats picks onto the NFL slate
+        run: python scripts/nfl_stats_signals.py
+
       - name: Fetch scores and grade past slates
         run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab soccer epl' }}
 

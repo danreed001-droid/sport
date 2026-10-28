@@ -124,7 +124,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Miami Dolphins",
+      "nflStatsRules": [
+        {
+          "rule": 1,
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing Miami Dolphins: a 7-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        }
+      ],
+      "nflStatsCheck": "Rule 1: Backing Miami Dolphins: a 7-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+      "nflStatsCorrect": false,
+      "nflStatsReturn": -100.0,
+      "nflStatsCover": null,
+      "nflStatsSpreadReturn": 0.0
     },
     {
       "altBlowoutCheck": "Not applicable \u2014 neither team's last game was a win by 17+ points (Bears won by 11, Packers by 3).",
@@ -305,7 +319,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Tennessee Titans",
+      "nflStatsRules": [
+        {
+          "rule": 1,
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing Tennessee Titans: a 7-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        }
+      ],
+      "nflStatsCheck": "Rule 1: Backing Tennessee Titans: a 7-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+      "nflStatsCorrect": false,
+      "nflStatsReturn": -100.0,
+      "nflStatsCover": false,
+      "nflStatsSpreadReturn": -100.0
     },
     {
       "altBlowoutCheck": "Colts off a 30-13 win over WAS (within 8 points at half [10-6] before pulling away despite a -1 turnover margin in-game; only 30 rush attempts, short of the 33+ run-heavy bar; Steelers favored -2.5 per CBS, just under the 3+ market-buy-in threshold; Steelers rank top-10 in takeaways [tied 2nd] and top-5 in pass defense [1st]; Daniel Jones has 7 turnovers in 4 games, a clear turnover-prone pattern) \u2014 3 of 5 hit, regression flag ON: +6 to Steelers.",
@@ -788,5 +816,5 @@
       "altBlowoutSpreadReturn": null
     }
   ],
-  "scoredAt": "2026-10-12T19:02:15.464990+00:00"
+  "scoredAt": "2026-10-28T02:54:31.682255+00:00"
 }
