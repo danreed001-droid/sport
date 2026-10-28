@@ -16,6 +16,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
+from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
@@ -24,7 +25,7 @@ SLATE_FIELDS = [
     "pick", "confidence", "skipped", "skipReason",
     "altPick", "altConfidence", "altCategoryTally", "altReasons",
     "altTrendCheck", "altBlowoutCheck", "altTrendFavors", "altBlowoutFavors",
-    "statsFavors", "statsCheck",
+    "statsFavors", "statsCheck", "statsRules",
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore",
 ]
@@ -142,6 +143,21 @@ def build():
                     bucket = by_sport.setdefault(sport, {"ledger": blank(), "alt": blank(), "trend": blank(), "blowout": blank(), "stats": blank(), "mine": blank()})
                     tally(bucket[who], r)
 
+    # NBA Stats record per rule this season: a pick counts toward every rule
+    # that triggered it.
+    rule_records = {n: {"w": 0, "l": 0, "p": 0} for n in RULE_NAMES}
+    for date_str, doc in all_docs.get("nba", []):
+        for g in doc.get("games", []):
+            if not g.get("statsFavors") or not is_final(doc, g):
+                continue
+            r = grade("nba", g, side_of(g, g["statsFavors"]))["ats"]["result"]
+            key = {"cover": "w", "miss": "l", "push": "p"}.get(r)
+            for rule in g.get("statsRules") or []:
+                if key and rule.get("rule") in rule_records:
+                    rule_records[rule["rule"]][key] += 1
+    stats_rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], **rule_records[n]}
+                   for n in sorted(RULE_NAMES)]
+
     slate_date = max((d for docs in all_docs.values() for d, _ in docs), default=None)
     slate = {"date": slate_date, "weekday": None, "sports": {}}
     for sport, docs in all_docs.items():
@@ -191,6 +207,7 @@ def build():
         "plays": sorted(plays, key=lambda p: p["d"]),
         "sportLabels": {k: cfg["label"] for k, cfg in sports.SPORTS.items()},
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
+        "statsRules": stats_rules,
     }
 
 

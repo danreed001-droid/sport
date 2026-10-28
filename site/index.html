@@ -180,6 +180,11 @@ details.tv table{min-width:0;}
 details.why{font-size:12px;color:var(--muted);}
 details.why summary{cursor:pointer;color:var(--opinion-ink);font-weight:600;font-size:11.5px;width:max-content;max-width:100%;}
 details.why ul{margin:8px 0 0;padding-left:17px;line-height:1.55;}
+details.rules-tbl{margin:0 0 14px;}
+details.rules-tbl .tblwrap{overflow-x:auto;margin-top:8px;}
+details.rules-tbl table{border-collapse:collapse;width:100%;font-size:12px;}
+details.rules-tbl th,details.rules-tbl td{text-align:left;padding:5px 8px;border-bottom:1px solid var(--rule);vertical-align:top;}
+details.rules-tbl th{color:var(--muted);font-weight:600;}
 
 .pickrow{border-top:1px solid var(--rule);padding-top:11px;display:flex;flex-direction:column;gap:8px;}
 .pickhead{display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
@@ -816,10 +821,27 @@ footer b{color:var(--ink);}
       return '<div class="badge blowout"><span class="lbl">Blowout check</span><span class="val">'+esc(g.altBlowoutFavors)+resultChips(g.results&&g.results.blowout)+'</span></div>';
     return '<div class="badge blowout"><span class="lbl">Blowout check</span><span class="val none">No signal</span></div>';
   }
+  function ruleSeason(n){
+    var r = (DATA.statsRules||[]).filter(function(x){ return x.rule===n; })[0];
+    if(!r || !(r.w+r.l+r.p)) return 'no graded picks yet this season';
+    return 'this season '+r.w+'-'+r.l+(r.p?'-'+r.p:'');
+  }
+  function ruleNums(g){ return (g.statsRules||[]).map(function(r){ return r.rule; }); }
   function statsBadge(g){
-    if(g.statsFavors)
-      return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val">'+esc(g.statsFavors)+resultChips(g.results&&g.results.stats)+'</span></div>';
+    if(g.statsFavors){
+      var nums = ruleNums(g);
+      var tier = nums.length ? '<span class="tier">Rule'+(nums.length>1?'s ':' ')+nums.join(' + ')+'</span>' : '';
+      return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val">'+esc(g.statsFavors)+resultChips(g.results&&g.results.stats)+'</span>'+tier+'</div>';
+    }
     return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val none">No signal</span></div>';
+  }
+  function statsRulesTable(){
+    var rules = DATA.statsRules||[];
+    if(!rules.length) return '';
+    return '<details class="why rules-tbl"><summary style="color:var(--stats-ink)">NBA Stats rules — backtest and this season</summary>'
+      + '<div class="tblwrap"><table><thead><tr><th>#</th><th>Rule</th><th>Backtest</th><th>This season</th></tr></thead><tbody>'
+      + rules.map(function(r){ var n = r.w+r.l+r.p; return '<tr><td class="mono">'+r.rule+'</td><td>'+esc(r.name)+'</td><td class="mono">'+esc(r.backtest)+'</td><td class="mono">'+(n?r.w+'-'+r.l+(r.p?'-'+r.p:''):'—')+'</td></tr>'; }).join('')
+      + '</tbody></table></div></details>';
   }
   function lineText(g){
     var parts = [];
@@ -883,7 +905,11 @@ footer b{color:var(--ink);}
       if(g.altTrendCheck) checks += '<details class="why"><summary style="color:var(--trend-ink)">Trend check — why</summary><ul><li>'+esc(g.altTrendCheck)+'</li></ul></details>';
       if(g.altBlowoutCheck) checks += '<details class="why"><summary style="color:var(--blowout-ink)">Blowout check — why</summary><ul><li>'+esc(g.altBlowoutCheck)+'</li></ul></details>';
     }
-    if(sport==='nba' && g.statsCheck) checks += '<details class="why"><summary style="color:var(--stats-ink)">NBA Stats — why</summary><ul><li>'+esc(g.statsCheck)+'</li></ul></details>';
+    if(sport==='nba' && g.statsRules && g.statsRules.length){
+      checks += '<details class="why"><summary style="color:var(--stats-ink)">NBA Stats — why ('+g.statsRules.length+' rule'+(g.statsRules.length>1?'s':'')+')</summary><ul>'
+        + g.statsRules.map(function(r){ return '<li><b>Rule '+r.rule+' · '+esc(r.name)+'</b><br><span class="mono">Backtest '+esc(r.backtest)+' · '+esc(ruleSeason(r.rule))+'</span><br>'+esc(r.detail)+'</li>'; }).join('')
+        + '</ul></details>';
+    } else if(sport==='nba' && g.statsCheck) checks += '<details class="why"><summary style="color:var(--stats-ink)">NBA Stats — why</summary><ul><li>'+esc(g.statsCheck)+'</li></ul></details>';
     return '<article class="game">'
       + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
       + '<div class="lines">'+lineText(g)+'</div></div>'
@@ -918,6 +944,7 @@ footer b{color:var(--ink);}
         + (k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>'
           : k==='soccer' ? '<p class="sec-p">Three-way moneyline: pick home, draw or away. No spread.</p>'
           : '<p class="sec-p">Tap a side to pick it against the spread.</p>')
+        + (k==='nba' ? statsRulesTable() : '')
         + '<div class="games">'+sp.games.map(function(g){ return card(k,g); }).join('')+'</div></section>';
     }).join('');
     document.getElementById('app').innerHTML =

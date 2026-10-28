@@ -56,11 +56,19 @@
       ],
       "time": "6:00 PM ET",
       "statsFavors": "Charlotte Hornets",
-      "statsCheck": "Backing Charlotte Hornets: lost last game with 27 turnovers (22+), now home vs. a worse-record opponent -- teams in this spot covered 62.1% ATS (n=29, small sample).",
+      "statsCheck": "Rule 5: Backing Charlotte Hornets: lost last game with 27 turnovers (22+), now home vs. a worse-record opponent -- teams in this spot covered 62.1% ATS (n=29, small sample).",
       "statsCorrect": true,
       "statsReturn": 120.0,
       "statsCover": true,
-      "statsSpreadReturn": 86.96
+      "statsSpreadReturn": 86.96,
+      "statsRules": [
+        {
+          "rule": 5,
+          "name": "Back a home team vs. a weaker team after a 22+ turnover loss",
+          "backtest": "62.1% ATS, n=29",
+          "detail": "Backing Charlotte Hornets: lost last game with 27 turnovers (22+), now home vs. a worse-record opponent -- teams in this spot covered 62.1% ATS (n=29, small sample)."
+        }
+      ]
     },
     {
       "altCategoryTally": "1-2",
