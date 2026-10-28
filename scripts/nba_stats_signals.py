@@ -13,11 +13,13 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   3 blown lead, 6 assist edge, 8 close win built on steals, 9 late comeback,
   10 out-rebounded by 18+, 13 top scorer's 1.5x+ night in a loss, now vs. a
   worse-record team, 14 all 5 starters scored 10+ in a win, now on a
-  back-to-back vs. a worse-record team.
+  back-to-back vs. a worse-record team, 15 top passer's dud in a loss, now on
+  the road vs. a worse-record team, 17 won while allowing 130+, now at home.
   Backs (pick the flagged team): 5 sloppy turnover loss, 7 out-assisted,
   11 top scorer's dud in a loss, now home vs. a better-record team,
   12 top 3 scorers all under their averages in a loss, now home vs. a
-  worse-record team.
+  worse-record team, 16 lost to an opponent that shot 50%+ from three, now
+  home on a back-to-back.
   Rule 4 (cold top scorer, without the loss/better-record conditions) is retired.
 
 "Better/worse record" compares each team's season-to-date win% entering the
@@ -28,7 +30,7 @@ game gets no pick. Most days no game qualifies.
 
 Needs data/nba/<date>.json to already exist for the target date (the live
 Routine's own slate). Per-player points and team turnovers/assists/steals/
-free throws/rebounds/starters for completed games are cached in data/raw/nba_player_points.json
+free throws/rebounds/starters/player assists/threes for completed games are cached in data/raw/nba_player_points.json
 so each run only fetches games it hasn't seen.
 
 Usage: python scripts/nba_stats_signals.py [YYYY-MM-DD ...]   (default: today ET)
@@ -60,11 +62,16 @@ ALLOWED_REST = {
     1: {"b2b"}, 2: {"b2b", "1", "2+"}, 3: {"b2b"}, 5: {"b2b"}, 6: {"1"},
     7: {"b2b", "1"}, 8: {"b2b", "2+"}, 9: {"b2b"}, 10: {"2+"}, 11: {"b2b", "1", "2+"},
     12: {"b2b", "1", "2+"}, 13: {"b2b", "2+"}, 14: {"b2b"},
+    15: {"1", "2+"}, 16: {"b2b"}, 17: {"b2b", "1", "2+"},
 }
 LATE_COMEBACK = 5
 COLD_STAR = 0.5       # top scorer's points last game, as a share of his season average
 HOT_STAR = 1.5        # ...and the hot-night multiple for rule 13
 STARTER_PTS = 10      # rule 14: points every starter scored
+COLD_PASSER = 0.5     # rule 15: top passer's assists last game, as a share of his average
+HOT_OPP_THREES = 0.5  # rule 16: opponent's 3-point % last game (on HOT_OPP_3PA+ attempts)
+HOT_OPP_3PA = 25
+SHOOTOUT_ALLOWED = 130  # rule 17: points allowed in last game's win
 STAR_MIN_GAMES = 8    # games he must have played for the team to count as its top scorer
 
 RULES = {
@@ -166,6 +173,18 @@ def trailed_after_three(q_entry, team, opp):
     return sum(o_q[:3]) - sum(t_q[:3])
 
 
+def top_passer(points, games, team):
+    """(player id, name, season apg) for the team's top passer by average
+    across `games` (his games for this team only, STAR_MIN_GAMES+), or None."""
+    seen = {}
+    for g in games:
+        names = points.get(g["event_id"], team) or {}
+        for pid, ast in (points.player_assists(g["event_id"], team) or {}).items():
+            seen.setdefault(pid, [names.get(pid, [0, pid])[1], []])[1].append(ast)
+    best = max(((sum(v) / len(v), pid) for pid, (_, v) in seen.items() if len(v) >= STAR_MIN_GAMES), default=None)
+    return (best[1], seen[best[1]][0], best[0]) if best else None
+
+
 def top_scorers(points, games, team, n=1):
     """[(player id, name, season ppg), ...] for the team's top `n` scorers by
     average across `games` (their games for this team only, STAR_MIN_GAMES+),
@@ -193,7 +212,7 @@ class BoxCache:
 
     def _entry(self, event_id):
         e = self.data.get(event_id)
-        if not isinstance(e, dict) or "starters" not in e:  # missing, failed, or an older format
+        if not isinstance(e, dict) or "ast_p" not in e:  # missing, failed, or an older format
             e = self.data[event_id] = self._fetch(event_id)
             self.dirty = True
         return e or {}
@@ -216,6 +235,14 @@ class BoxCache:
     def free_throws_made(self, event_id, team):
         return self._entry(event_id).get("ftm", {}).get(team)
 
+    def player_assists(self, event_id, team):
+        return self._entry(event_id).get("ast_p", {}).get(team)
+
+    def threes(self, event_id, team):
+        """(made, attempted) threes for `team`, or None."""
+        v = self._entry(event_id).get("tp", {}).get(team)
+        return tuple(v) if v else None
+
     def starters(self, event_id, team):
         return self._entry(event_id).get("starters", {}).get(team)
 
@@ -232,6 +259,7 @@ class BoxCache:
             return None
         box = d.get("boxscore", {})
         pts_by_team, to_by_team, ast_by_team, stl_by_team, ftm_by_team, reb_by_team, starters_by_team = {}, {}, {}, {}, {}, {}, {}
+        ast_p_by_team, tp_by_team = {}, {}
         for t in box.get("players", []):
             if not t.get("statistics"):
                 continue
@@ -241,7 +269,8 @@ class BoxCache:
                 continue
             i = labels.index("PTS")
             r = labels.index("REB") if "REB" in labels else None
-            pts, reb, starters = {}, 0, []
+            a = labels.index("AST") if "AST" in labels else None
+            pts, reb, starters, ast_p = {}, 0, [], {}
             for ath in cat.get("athletes", []):
                 st = ath.get("stats") or []
                 if ath.get("didNotPlay") or len(st) <= i:
@@ -250,6 +279,8 @@ class BoxCache:
                     pts[ath["athlete"]["id"]] = [int(st[i]), ath["athlete"].get("displayName")]
                     if ath.get("starter"):
                         starters.append(ath["athlete"]["id"])
+                    if a is not None and a < len(st):
+                        ast_p[ath["athlete"]["id"]] = int(st[a])
                     # Player rebounds, summed -- the backtest's definition (the
                     # team total can also include uncredited "team rebounds").
                     reb += int(st[r]) if r is not None and r < len(st) else 0
@@ -257,6 +288,7 @@ class BoxCache:
                     continue
             pts_by_team[t["team"]["displayName"]] = pts
             starters_by_team[t["team"]["displayName"]] = starters
+            ast_p_by_team[t["team"]["displayName"]] = ast_p
             if r is not None:
                 reb_by_team[t["team"]["displayName"]] = reb
         for t in box.get("teams", []):
@@ -271,10 +303,14 @@ class BoxCache:
                 ftm_by_team[name] = int(str(stats["freeThrowsMade-freeThrowsAttempted"]).split("-")[0])
             except (KeyError, TypeError, ValueError):
                 pass
+            try:
+                tp_by_team[name] = [int(v) for v in str(stats["threePointFieldGoalsMade-threePointFieldGoalsAttempted"]).split("-")]
+            except (KeyError, TypeError, ValueError):
+                pass
         if not pts_by_team:
             return None
         return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team, "stl": stl_by_team, "ftm": ftm_by_team, "reb": reb_by_team,
-                "starters": starters_by_team, "type": d.get("header", {}).get("season", {}).get("type")}
+                "starters": starters_by_team, "ast_p": ast_p_by_team, "tp": tp_by_team, "type": d.get("header", {}).get("season", {}).get("type")}
 
     def save(self):
         if self.dirty:
@@ -346,6 +382,25 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
                 picks.append((team, 5, f"Backing {team}: lost last game with {to} turnovers ({SLOPPY_LOSS_TO}+), "
                                     f"now home vs. a worse-record opponent -- teams in this spot covered "
                                     f"77.8% ATS on a back-to-back (n=9, small sample)."))
+
+        if last["won"] and is_home and last["opp_score"] >= SHOOTOUT_ALLOWED:
+            picks.append((opp, 17, f"Fading {team}: won last game but allowed {last['opp_score']:g} points ({SHOOTOUT_ALLOWED}+), "
+                                f"now at home -- teams in this spot were faded 65.5% of the time ATS (n=58)."))
+
+        if not last["won"] and is_home:
+            three = points.threes(last["event_id"], last["opp"])
+            if three and three[1] >= HOT_OPP_3PA and three[0] / three[1] >= HOT_OPP_THREES:
+                picks.append((team, 16, f"Backing {team}: lost last game while its opponent shot {three[0]}-of-{three[1]} "
+                                     f"({three[0] / three[1]:.0%}) from three, now home on a back-to-back -- teams in this "
+                                     f"spot covered 68.5% ATS (n=54)."))
+
+        if not last["won"] and not is_home and opp_weaker:
+            passer = top_passer(points, prior[:-1], team)
+            ast = (points.player_assists(last["event_id"], team) or {}).get(passer[0]) if passer else None
+            if ast is not None and ast < COLD_PASSER * passer[2]:
+                picks.append((opp, 15, f"Fading {team}: top passer {passer[1]} had {ast} assists in last game's loss "
+                                    f"(under half his {passer[2]:.1f} average), now on the road vs. a worse-record opponent "
+                                    f"-- teams in this spot were faded 68.6% of the time ATS with 1 or 2+ days of rest (n=70)."))
 
         if last["won"] and opp_weaker:
             box, five = points.get(last["event_id"], team) or {}, points.starters(last["event_id"], team) or []
