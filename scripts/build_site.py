@@ -16,7 +16,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
-from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
+from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
 from lib import nfl_stats_rules  # noqa: E402
 from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, team_for  # noqa: E402
 
@@ -170,7 +170,8 @@ def build():
             for rule in g.get("statsRules") or []:
                 if key and rule.get("rule") in rule_records:
                     rule_records[rule["rule"]][key] += 1
-    stats_stacked = stacked_record(all_docs.get("nba", []), "nba", "statsFavors", "statsRules")
+    stats_stacked = {**stacked_record(all_docs.get("nba", []), "nba", "statsFavors", "statsRules"),
+                     "backtest": STACKED_BACKTEST}
     stats_rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], **rule_records[n]}
                    for n in sorted(RULE_NAMES)]
     nfl_records = {n: {"w": 0, "l": 0, "p": 0} for n in nfl_stats_rules.RULE_NAMES}

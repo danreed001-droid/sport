@@ -21,3 +21,6 @@ RULE_BACKTEST = {
     14: "62.3% ATS, n=122; 6 unseen seasons: 91-67", 16: "68.5% ATS, n=54; 6 unseen seasons: 37-24",
     17: "65.5% ATS, n=58; 6 unseen seasons: 39-24",
 }
+# A pick two or more rules agree on ("stacked"), replayed on the same six
+# unseen seasons: one-rule picks went 57.4% (269-200).
+STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule picks 57.4%"

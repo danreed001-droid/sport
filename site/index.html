@@ -180,7 +180,7 @@ details.tv table{min-width:0;}
 .badge .val{font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
 .badge .val.none{color:var(--muted);font-weight:500;font-style:italic;font-size:12.5px;}
 .badge .tier{font-size:11px;color:var(--muted);}
-.tier .stacked{display:inline-block;margin-left:4px;padding:0 5px;border-radius:4px;font-weight:700;color:var(--mine-ink);background:var(--mine-soft);}
+.tier .stacked,.why summary .stacked,.logtbl .stacked{display:inline-block;margin-left:4px;padding:0 5px;border-radius:4px;font-weight:700;color:var(--mine-ink);background:var(--mine-soft);}
 .stackrow td{font-weight:600;}
 details.why{font-size:12px;color:var(--muted);}
 details.why summary{cursor:pointer;color:var(--opinion-ink);font-weight:600;font-size:11.5px;width:max-content;max-width:100%;}
@@ -691,7 +691,7 @@ footer b{color:var(--ink);}
         + '<td>'+esc((DATA.sportLabels[p.s]||p.s).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB'))+'</td>'
         + '<td><span class="who"><i style="background:'+w.c+'"></i>'+esc(w.short)+'</span></td>'
         + '<td class="gm">'+esc(p.g)+(p.sc ? '<span class="muted sc">Final '+esc(p.sc)+'</span>' : '')+'</td>'
-        + '<td><b>'+esc(p.k)+'</b>'+(p.rr ? p.rr.map(function(r){ var sr = ((p.w==='nflstats' ? DATA.nflStatsRules : DATA.statsRules)||[]).filter(function(x){ return x.rule===r.n; })[0], sn = sr ? sr.w+sr.l+sr.p : 0; return '<span class="rblurb'+(p.w==='nflstats'?' nfl':'')+'"><b>Rule '+esc(r.n)+'</b> · '+esc(r.name)+' · past: '+esc(String(r.bt).replace(/, n=(\d+)/, ' over $1 games'))+(sn ? ' · this season '+sr.w+'-'+sr.l+(sr.p?'-'+sr.p:'') : '')+'</span>'; }).join('') : (p.t ? '<span class="muted tier">'+esc(TIER[p.t]||p.t)+'</span>' : ''))+'</td>'
+        + '<td><b>'+esc(p.k)+'</b>'+(p.rr && p.rr.length>1 ? ' <span class="stacked">stacked · '+p.rr.length+' rules</span>' : '')+(p.rr ? p.rr.map(function(r){ var sr = ((p.w==='nflstats' ? DATA.nflStatsRules : DATA.statsRules)||[]).filter(function(x){ return x.rule===r.n; })[0], sn = sr ? sr.w+sr.l+sr.p : 0; return '<span class="rblurb'+(p.w==='nflstats'?' nfl':'')+'"><b>Rule '+esc(r.n)+'</b> · '+esc(r.name)+' · past: '+esc(String(r.bt).replace(/, n=(\d+)/, ' over $1 games'))+(sn ? ' · this season '+sr.w+'-'+sr.l+(sr.p?'-'+sr.p:'') : '')+'</span>'; }).join('') : (p.t ? '<span class="muted tier">'+esc(TIER[p.t]||p.t).replace(' · stacked', ' <span class="stacked">stacked</span>')+'</span>' : ''))+'</td>'
         + '<td class="mono">'+(num(p.sp) ? sgn(p.sp) : '—')+'</td>'
         + '<td>'+ats+'</td>'
         + '<td class="mono '+(num(p.ap)?cls(p.ap):'flat')+'">'+(num(p.ap) ? money(p.ap) : '—')+'</td>'
@@ -937,12 +937,12 @@ footer b{color:var(--ink);}
       if(g.altBlowoutCheck) checks += '<details class="why"><summary style="color:var(--blowout-ink)">Blowout check — why</summary><ul><li>'+esc(g.altBlowoutCheck)+'</li></ul></details>';
     }
     if(sport==='nba' && g.statsRules && g.statsRules.length){
-      checks += '<details class="why"><summary style="color:var(--stats-ink)">NBA Stats — why ('+g.statsRules.length+' rule'+(g.statsRules.length>1?'s':'')+')</summary><ul>'
+      checks += '<details class="why"><summary style="color:var(--stats-ink)">NBA Stats — why ('+g.statsRules.length+' rule'+(g.statsRules.length>1?'s · <span class="stacked">stacked</span>':'')+')</summary><ul>'
         + g.statsRules.map(function(r){ return '<li><b>Rule '+r.rule+' · '+esc(r.name)+'</b><br><span class="mono">Backtest '+esc(r.backtest)+' · '+esc(ruleSeason(r.rule))+'</span><br>'+esc(r.detail)+'</li>'; }).join('')
         + '</ul></details>';
     } else if(sport==='nba' && g.statsCheck) checks += '<details class="why"><summary style="color:var(--stats-ink)">NBA Stats — why</summary><ul><li>'+esc(g.statsCheck)+'</li></ul></details>';
     if(sport==='nfl' && g.nflStatsRules && g.nflStatsRules.length){
-      checks += '<details class="why"><summary style="color:var(--nflstats-ink)">NFL Stats — why</summary><ul>'
+      checks += '<details class="why"><summary style="color:var(--nflstats-ink)">NFL Stats — why ('+g.nflStatsRules.length+' rule'+(g.nflStatsRules.length>1?'s · <span class="stacked">stacked</span>':'')+')</summary><ul>'
         + g.nflStatsRules.map(function(r){ return '<li><b>Rule '+r.rule+' · '+esc(r.name)+'</b><br><span class="mono">Backtest '+esc(r.backtest)+' · '+esc(ruleSeason(r.rule, DATA.nflStatsRules))+'</span><br>'+esc(r.detail)+'</li>'; }).join('')
         + '</ul></details>';
     }
