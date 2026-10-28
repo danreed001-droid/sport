@@ -11,9 +11,12 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
 
   Fades (pick the flagged team's opponent): 1 win streak, 2 OT win,
   3 blown lead, 6 assist edge, 8 close win built on steals, 9 late comeback,
-  10 out-rebounded by 18+.
+  10 out-rebounded by 18+, 13 top scorer's 1.5x+ night in a loss, now vs. a
+  worse-record team.
   Backs (pick the flagged team): 5 sloppy turnover loss, 7 out-assisted,
-  11 top scorer's dud in a loss, now home vs. a better-record team.
+  11 top scorer's dud in a loss, now home vs. a better-record team,
+  12 top 3 scorers all under their averages in a loss, now home vs. a
+  worse-record team.
   Rule 4 (cold top scorer, without the loss/better-record conditions) is retired.
 
 "Better/worse record" compares each team's season-to-date win% entering the
@@ -55,9 +58,11 @@ REBOUND_GAP = 18
 ALLOWED_REST = {
     1: {"b2b"}, 2: {"b2b", "1", "2+"}, 3: {"b2b"}, 5: {"b2b"}, 6: {"1"},
     7: {"b2b", "1"}, 8: {"b2b", "2+"}, 9: {"b2b"}, 10: {"2+"}, 11: {"b2b", "1", "2+"},
+    12: {"b2b", "1", "2+"}, 13: {"b2b", "2+"},
 }
 LATE_COMEBACK = 5
 COLD_STAR = 0.5       # top scorer's points last game, as a share of his season average
+HOT_STAR = 1.5        # ...and the hot-night multiple for rule 13
 STAR_MIN_GAMES = 8    # games he must have played for the team to count as its top scorer
 
 RULES = {
@@ -159,16 +164,16 @@ def trailed_after_three(q_entry, team, opp):
     return sum(o_q[:3]) - sum(t_q[:3])
 
 
-def top_scorer(points, games, team):
-    """(player name, season ppg, his points list) for the team's top scorer
-    by average across `games` (his games for this team only, STAR_MIN_GAMES+),
-    or None."""
+def top_scorers(points, games, team, n=1):
+    """[(player id, name, season ppg), ...] for the team's top `n` scorers by
+    average across `games` (their games for this team only, STAR_MIN_GAMES+),
+    best first."""
     seen = {}
     for g in games:
         for pid, (pts, name) in (points.get(g["event_id"], team) or {}).items():
             seen.setdefault(pid, [name, []])[1].append(pts)
-    best = max(((sum(p) / len(p), pid) for pid, (_, p) in seen.items() if len(p) >= STAR_MIN_GAMES), default=None)
-    return (best[1], seen[best[1]][0], best[0]) if best else None
+    ranked = sorted(((sum(p) / len(p), pid) for pid, (_, p) in seen.items() if len(p) >= STAR_MIN_GAMES), reverse=True)
+    return [(pid, seen[pid][0], avg) for avg, pid in ranked[:n]]
 
 
 class BoxCache:
@@ -334,13 +339,24 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
                                     f"now home vs. a worse-record opponent -- teams in this spot covered "
                                     f"77.8% ATS on a back-to-back (n=9, small sample)."))
 
-        if is_home and opp_stronger and not last["won"]:
-            star = top_scorer(points, prior[:-1], team)
-            line = (points.get(last["event_id"], team) or {}).get(star[0]) if star else None
-            if line and line[0] < COLD_STAR * star[2]:
-                picks.append((team, 11, f"Backing {team}: top scorer {star[1]} had {line[0]} points in last game's loss "
+        if not last["won"] and (is_home or opp_weaker):
+            top = top_scorers(points, prior[:-1], team, 3)
+            box = points.get(last["event_id"], team) or {}
+            lines = [box.get(pid) for pid, _, _ in top]
+            star, star_line = (top[0], lines[0]) if top else (None, None)
+            if is_home and opp_stronger and star_line and star_line[0] < COLD_STAR * star[2]:
+                picks.append((team, 11, f"Backing {team}: top scorer {star[1]} had {star_line[0]} points in last game's loss "
                                      f"(under half his {star[2]:.1f} average), now home vs. a better-record opponent "
                                      f"-- teams in this spot covered 68.6% ATS (n=70)."))
+            if is_home and opp_weaker and len(top) == 3 and all(lines) and all(ln[0] < avg for ln, (_, _, avg) in zip(lines, top)):
+                who = ", ".join(f"{name} {ln[0]} ({avg:.1f})" for ln, (_, name, avg) in zip(lines, top))
+                picks.append((team, 12, f"Backing {team}: its top 3 scorers were all under their averages in last game's loss "
+                                     f"({who}), now home vs. a worse-record opponent -- teams in this spot covered "
+                                     f"68.1% ATS (n=72)."))
+            if opp_weaker and star_line and star_line[0] >= HOT_STAR * star[2]:
+                picks.append((opp, 13, f"Fading {team}: top scorer {star[1]} had {star_line[0]} points in last game's loss "
+                                    f"({HOT_STAR:g}x+ his {star[2]:.1f} average), now vs. a worse-record opponent -- teams in this "
+                                    f"spot were faded 75.8% of the time ATS on a back-to-back or 2+ days of rest (n=33, small sample)."))
 
         # Keep only the rules whose backtest cleared 62% for this team's rest
         # (days off since its last game).
