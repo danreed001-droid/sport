@@ -116,6 +116,9 @@ def build():
                     if side not in ("away", "home", "draw"):
                         continue
                     tier = g.get("confidence") if who == "ledger" else g.get("altConfidence") if who == "alt" else None
+                    if who == "stats" and g.get("statsRules"):
+                        nums = [str(r.get("rule")) for r in g["statsRules"]]
+                        tier = ("Rules " if len(nums) > 1 else "Rule ") + " + ".join(nums)
                     ln = line_for(g, side)
                     play = {"d": date_str, "s": sport, "w": who, "t": tier,
                             "g": f"{g.get('away')} @ {g.get('home')}", "k": team_for(g, side),

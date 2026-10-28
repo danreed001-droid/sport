@@ -634,7 +634,7 @@ footer b{color:var(--ink);}
         + '<span class="fgroup"><span class="flbl">Dates</span>'+seg('mode',[['day','Day'],['range','Range']])
           + '<span class="daterange" id="lday"><button type="button" class="stepbtn" id="lprev" aria-label="Previous day with picks">‹</button><label for="ldate" class="sr">Day</label><input type="date" id="ldate"><button type="button" class="stepbtn" id="lnext" aria-label="Next day with picks">›</button></span>'
           + '<span class="daterange" id="lrange" hidden><label for="lfrom" class="sr">From</label><input type="date" id="lfrom"> <span class="to">to</span> <label for="lto" class="sr">To</label><input type="date" id="lto"></span></span>'
-        + '<span class="fgroup"><span class="flbl">Model</span>'+seg('who',[['all','All'],['ledger','Ledger'],['alt','2nd Opinion'],['trend','Trend'],['blowout','Blowout'],['mine','You']])+'</span>'
+        + '<span class="fgroup"><span class="flbl">Model</span>'+seg('who',[['all','All'],['ledger','Ledger'],['alt','2nd Opinion'],['trend','Trend'],['blowout','Blowout'],['stats','NBA Stats'],['mine','You']])+'</span>'
         + '<span class="fgroup"><span class="flbl">Show</span>'+seg('result',[['all','All picks'],['graded','Graded'],['pending','Pending']])+'</span>'
       + '</div>'
       + '<div class="scroller"><table class="logtbl" id="logtbl"></table></div>'
@@ -707,7 +707,7 @@ footer b{color:var(--ink);}
   }
 
   // Your graded picks split by which models (Ledger, Second Opinion, Trend,
-  // Blowout) were on the same side or the other side of the same game.
+  // Blowout, NBA Stats) were on the same side or the other side of the same game.
   function renderAgree(list, mk){
     var mine = list.filter(function(p){ return p.w==='mine'; });
     var models = WHO.filter(function(w){ return w.k!=='mine'; });
