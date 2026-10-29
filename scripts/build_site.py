@@ -15,7 +15,7 @@ import sys
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from lib import sports, store  # noqa: E402
+from lib import manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
 from lib import nfl_stats_rules  # noqa: E402
 from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, team_for  # noqa: E402
@@ -28,7 +28,7 @@ SLATE_FIELDS = [
     "altTrendCheck", "altBlowoutCheck", "altTrendFavors", "altBlowoutFavors",
     "statsFavors", "statsCheck", "statsRules", "nflStatsFavors", "nflStatsCheck", "nflStatsRules",
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
-    "awayScore", "homeScore",
+    "awayScore", "homeScore", "manualFields",
 ]
 
 
@@ -240,9 +240,20 @@ def build():
         "statsRules": stats_rules,
         "nflStatsRules": nfl_rules,
         "health": read_health(),
+        "manual": read_manual(),
         "statsStacked": stats_stacked,
         "nflStatsStacked": nfl_stacked,
     }
+
+
+def read_manual():
+    """{sport: {date: {game key: entry}}} -- every hand-entered game, so the
+    "Enter data by hand" page can show and correct what's already there."""
+    out = {}
+    for sport in manual.SPORTS:
+        for d in manual.dates(sport):
+            out.setdefault(sport, {})[d] = manual.load(sport, d)
+    return out
 
 
 def read_health():
@@ -273,6 +284,7 @@ def main():
         out_dir = sys.argv[sys.argv.index("--out") + 1]
     os.makedirs(out_dir, exist_ok=True)
     shutil.copy(os.path.join(store.REPO_ROOT, "site", "index.html"), os.path.join(out_dir, "index.html"))
+    shutil.copy(os.path.join(store.REPO_ROOT, "site", "manual.html"), os.path.join(out_dir, "manual.html"))
     payload = build()
     with open(os.path.join(out_dir, "data.json"), "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))

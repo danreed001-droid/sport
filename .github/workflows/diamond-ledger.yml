@@ -59,6 +59,11 @@ jobs:
           done
           exit 1
 
+      - name: Apply hand-entered data (data/manual/) to slates and scores
+        id: manual
+        continue-on-error: true
+        run: python scripts/apply_manual.py
+
       - name: Patch today's NBA Stats picks onto the NBA slate
         id: nba
         continue-on-error: true
@@ -83,6 +88,7 @@ jobs:
         if: always()
         run: >
           python scripts/health.py
+          manual=${{ steps.manual.outcome }}
           nbaStats=${{ steps.nba.outcome }} nflStats=${{ steps.nfl.outcome }}
           scoring=${{ steps.score.outcome }} lines=${{ steps.lines.outcome }}
 
@@ -106,7 +112,7 @@ jobs:
           exit 1
 
       - name: Mark the run failed if any step failed
-        if: steps.nba.outcome == 'failure' || steps.nfl.outcome == 'failure' || steps.score.outcome == 'failure' || steps.lines.outcome == 'failure'
+        if: steps.manual.outcome == 'failure' || steps.nba.outcome == 'failure' || steps.nfl.outcome == 'failure' || steps.score.outcome == 'failure' || steps.lines.outcome == 'failure'
         run: |
-          echo "::error::A step failed: NBA Stats=${{ steps.nba.outcome }}, NFL Stats=${{ steps.nfl.outcome }}, scoring=${{ steps.score.outcome }}, lines=${{ steps.lines.outcome }}"
+          echo "::error::A step failed: manual data=${{ steps.manual.outcome }}, NBA Stats=${{ steps.nba.outcome }}, NFL Stats=${{ steps.nfl.outcome }}, scoring=${{ steps.score.outcome }}, lines=${{ steps.lines.outcome }}"
           exit 1

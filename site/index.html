@@ -180,6 +180,9 @@ details.tv table{min-width:0;}
 .badge .val{font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
 .badge .val.none{color:var(--muted);font-weight:500;font-style:italic;font-size:12.5px;}
 .badge .tier{font-size:11px;color:var(--muted);}
+.manuallink{font-size:12px;font-weight:600;color:var(--muted);text-decoration:none;border:1px solid var(--rule-2);border-radius:8px;padding:4px 9px;}
+.manuallink:hover{color:var(--ink);}
+.handnote{font-size:11px;color:var(--warn);font-weight:600;}
 .healthbar{margin:14px 0 0;padding:10px 14px;border-radius:10px;font-size:13px;line-height:1.45;color:var(--ink);background:rgba(235,104,52,.14);border:1px solid rgba(235,104,52,.45);}
 .healthbar a{color:var(--opinion-ink);font-weight:600;}
 .betcall{display:inline-block;margin-left:4px;padding:0 5px;border-radius:4px;font-size:11px;font-weight:700;white-space:nowrap;}
@@ -263,6 +266,7 @@ footer b{color:var(--ink);}
 
 <div class="topbar"><div class="wrap">
   <div class="brand"><span class="chip"></span><b>Pick Sheet</b><span>Diamond Ledger</span></div>
+  <a class="manuallink" href="manual.html">Enter data by hand</a>
   <div class="stamp" id="stamp"></div>
   <button type="button" class="themebtn" id="themebtn" aria-label="Switch to light mode"></button>
 </div></div>
@@ -889,6 +893,14 @@ footer b{color:var(--ink);}
       + rules.map(function(r){ var n = r.w+r.l+r.p; return '<tr><td class="mono">'+r.rule+'</td><td>'+esc(r.name)+'</td><td class="mono">'+esc(r.backtest)+'</td><td class="mono">'+(n?r.w+'-'+r.l+(r.p?'-'+r.p:''):'—')+'</td></tr>'; }).join('') + stackedRow(DATA.statsStacked)
       + '</tbody></table></div></details>';
   }
+  function manualLabel(fields){
+    var parts = [];
+    if(fields.some(function(f){ return /Spread/.test(f); })) parts.push('spread');
+    if(fields.some(function(f){ return /Moneyline/.test(f); })) parts.push('moneyline');
+    if(fields.indexOf('total')>=0) parts.push('total');
+    if(fields.indexOf('awayScore')>=0) parts.push('final score');
+    return parts.join(', ') || 'data';
+  }
   function lineText(g){
     var parts = [];
     if(num(g.awaySpread)&&num(g.homeSpread)) parts.push('Spread '+sgn(g.awaySpread)+' / '+sgn(g.homeSpread));
@@ -963,7 +975,7 @@ footer b{color:var(--ink);}
     }
     return '<article class="game">'
       + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
-      + '<div class="lines">'+lineText(g)+'</div></div>'
+      + '<div class="lines">'+lineText(g)+(g.manualFields && g.manualFields.length ? '<br><span class="handnote" title="Entered on the Enter data by hand page">\u270e hand-entered: '+esc(manualLabel(g.manualFields))+'</span>' : '')+'</div></div>'
       + '<div class="models">'+models+'</div>'
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
@@ -997,7 +1009,7 @@ footer b{color:var(--ink);}
       if(s.status === 'failure') msgs.push('<b>'+esc(s.label)+'</b> failed in the last automatic run'+(s.failingSince ? ' (failing since '+esc(s.failingSince)+')' : '')+(s.okOn ? '; last worked '+esc(s.okOn) : '')+'.');
     });
     if(!msgs.length) return '';
-    return '<div class="healthbar" role="status">'+msgs.join('<br>')+' <a href="'+runUrl+'" target="_blank" rel="noopener">Run it by hand</a> (Run workflow), or wait — the health check retries every few hours.</div>';
+    return '<div class="healthbar" role="status">'+msgs.join('<br>')+' <a href="'+runUrl+'" target="_blank" rel="noopener">Run it by hand</a> (Run workflow), or wait — the health check retries every few hours. If a feed is down, <a href="manual.html">enter the data by hand</a>.</div>';
   }
   function render(){
     var s = DATA.slate;

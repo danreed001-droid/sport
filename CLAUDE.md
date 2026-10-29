@@ -46,6 +46,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
+- **Hand-entered data is the last resort** when a feed doesn't deliver: the
+  pick sheet's "Enter data by hand" page (`site/manual.html`) opens a
+  `data <sport> YYYY-MM-DD` issue; `.github/workflows/data-intake.yml` runs
+  `scripts/intake_manual.py` to merge it into `data/manual/<sport>/<date>.json`
+  (format in `scripts/lib/manual.py`) and starts a scoring run. Those values
+  win over ESPN everywhere: `apply_manual.py` (first step of every scoring
+  run) puts games and lines on the slates, building a slate when none exists,
+  and re-grades edited ones; `fetch_scores.py` writes the finals into the
+  scores archive; NBA/NFL Stats read the box-score facts for their rules.
+  Don't edit `data/manual/` on the user's behalf unless they ask.
 
 ## The user's own picks come from the pick sheet, not from Claude
 

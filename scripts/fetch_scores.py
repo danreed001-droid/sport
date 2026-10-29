@@ -14,7 +14,7 @@ import time
 from datetime import timedelta
 
 sys.path.insert(0, os.path.dirname(__file__))
-from lib import espn, sports, store  # noqa: E402
+from lib import espn, manual, sports, store  # noqa: E402
 from lib.dates import ET, now_et  # noqa: E402
 from datetime import datetime
 
@@ -80,6 +80,45 @@ def _existing_ml(existing, key):
         return int(float(val))
     except ValueError:
         return None
+
+
+def save_history(sport_key, history):
+    """Write the scores archive, newest first; returns the rows."""
+    all_records = sorted(history.values(), key=lambda x: x.get("Date", ""), reverse=True)
+    path = _csv_path(sport_key)
+    with open(path + ".tmp", "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
+        writer.writeheader()
+        writer.writerows(all_records)
+    os.replace(path + ".tmp", path)
+    return all_records
+
+
+def apply_manual_scores(sport_key, history):
+    """Hand-entered final scores (data/manual/<sport>/, see lib/manual.py)
+    win over ESPN's: they overwrite the matching archive row, or add one when
+    ESPN never listed the game. Re-applied every run, so a later ESPN crawl
+    can't undo them."""
+    n = 0
+    for date_str in manual.dates(sport_key):
+        for e in manual.load(sport_key, date_str).values():
+            if not manual.has_final(e):
+                continue
+            row = next((r for r in history.values() if r.get("Date") == date_str
+                        and r.get("Away_Team") == e["away"] and r.get("Home_Team") == e["home"]), None)
+            if row is None:
+                gid = "manual-" + "-".join("".join(c for c in s.lower() if c.isalnum()) for s in (date_str, e["away"], e["home"]))
+                row = history[gid] = {"Game_ID": gid, "Date": date_str, "Away_Team": e["away"], "Home_Team": e["home"],
+                                      "Away_Diff": "-", "Home_Diff": "-", "Away_ML": "-", "Home_ML": "-", "Start_ET": e.get("time", "")}
+            row["Away_Score"], row["Home_Score"] = e["awayScore"], e["homeScore"]
+            row["Status"] = "FT-Pens (manual)" if e.get("decidedAfter90") else ("Final/OT (manual)" if e.get("ot") else "Final (manual)")
+            if "awayMoneyline" in e:
+                row["Away_ML"] = e["awayMoneyline"]
+            if "homeMoneyline" in e:
+                row["Home_ML"] = e["homeMoneyline"]
+            n += 1
+    if n:
+        print(f"[{sports.get(sport_key)['label']}] {n} hand-entered final score(s) applied.")
 
 
 def main(sport_key):
@@ -162,13 +201,8 @@ def main(sport_key):
                 print(f"[{cfg['label']}] skipping event due to error: {exc}")
                 continue
 
-    all_records = list(history.values())
-    all_records.sort(key=lambda x: x.get("Date", ""), reverse=True)
-
-    with open(_csv_path(sport_key), "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDNAMES)
-        writer.writeheader()
-        writer.writerows(all_records)
+    apply_manual_scores(sport_key, history)
+    all_records = save_history(sport_key, history)
 
     yesterday_str = (now - timedelta(days=1)).strftime("%Y-%m-%d")
     today_str = now.strftime("%Y-%m-%d")

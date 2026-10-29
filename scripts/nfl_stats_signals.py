@@ -34,7 +34,7 @@ from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(__file__))
-from lib import espn, store  # noqa: E402
+from lib import espn, manual, store  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
 from lib.nfl_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 
@@ -80,6 +80,16 @@ def last_game(session, team, date_str):
     d0 = date.fromisoformat(date_str)
     for k in range(1, LOOKBACK_DAYS + 1):
         d = (d0 - timedelta(days=k)).isoformat()
+        m = manual.team_game("nfl", d, team)
+        if manual.has_final(m):  # entered by hand (lib/manual.py): wins over ESPN
+            side = "home" if m["home"] == team else "away"
+            mine, theirs = (m["homeScore"], m["awayScore"]) if side == "home" else (m["awayScore"], m["homeScore"])
+            doc_g = next((g for g in (store.read_doc("nfl", d) or {}).get("games", [])
+                          if g.get("home") == m["home"] and g.get("away") == m["away"]), {})
+            home_spread = _num(doc_g.get("homeSpread", m.get("homeSpread")))
+            spread = None if home_spread is None else (home_spread if side == "home" else -home_spread)
+            return {"won": mine > theirs, "spread": spread, "neutral": False, "date": d,
+                    "opp": m["away"] if side == "home" else m["home"], "eid": f"manual:{d}", "margin": mine - theirs}
         for ev in _board(session, d):
             if (ev.get("season") or {}).get("type") != 2 or et_date_of_iso(ev["date"]) != d:
                 continue
@@ -140,6 +150,7 @@ def season_pct(session, team, date_str):
     d = date(d0.year if d0.month >= 8 else d0.year - 1, 8, 25)
     w = n = 0
     while d < d0:
+        listed = set()
         for ev in _board(session, d.isoformat()):
             if (ev.get("season") or {}).get("type") != 2 or et_date_of_iso(ev["date"]) != d.isoformat():
                 continue
@@ -147,10 +158,19 @@ def season_pct(session, team, date_str):
             if not comp.get("status", {}).get("type", {}).get("completed"):
                 continue
             t = {c["team"]["displayName"]: float(c["score"]) for c in comp["competitors"]}
+            listed.add(frozenset(t))
+            m = manual.team_game("nfl", d.isoformat(), team) if team in t else None
+            if manual.has_final(m) and frozenset((m["away"], m["home"])) == frozenset(t):
+                t = {m["away"]: m["awayScore"], m["home"]: m["homeScore"]}  # hand-entered score wins
             if team in t:
                 other = next(v for k, v in t.items() if k != team)
                 n += 1
                 w += t[team] > other
+        m = manual.team_game("nfl", d.isoformat(), team)
+        if manual.has_final(m) and frozenset((m["away"], m["home"])) not in listed:
+            mine, theirs = (m["homeScore"], m["awayScore"]) if m["home"] == team else (m["awayScore"], m["homeScore"])
+            n += 1
+            w += mine > theirs
         d += timedelta(days=1)
     return w / n if n else None
 
@@ -261,6 +281,32 @@ def build_espn_slate(session, date_str, games):
             "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "games": rows}
 
 
+def _rusher(session, last, team):
+    mb = manual.team_box("nfl", last["date"], team)
+    if mb.get("topRusherYards") is not None:
+        return (mb.get("topRusherName") or "Their top rusher", mb["topRusherYards"])
+    return None if str(last["eid"]).startswith("manual") else top_rusher(session, last["eid"], team)
+
+
+def _passer(session, last, team):
+    mb = manual.team_box("nfl", last["date"], team)
+    if mb.get("topPasserYards") is not None:
+        return (mb.get("topPasserName") or "Their QB", mb["topPasserYards"])
+    return None if str(last["eid"]).startswith("manual") else top_passer(session, last["eid"], team)
+
+
+def _box(session, last, team):
+    """{to, yds, pass} for `team` in its last game: ESPN's, with any
+    hand-entered numbers on top."""
+    espn_box = {} if str(last["eid"]).startswith("manual") else (team_box(session, last["eid"]).get(team) or {})
+    mb = manual.team_box("nfl", last["date"], team)
+    out = dict(espn_box)
+    for k, mk in (("to", "turnovers"), ("yds", "totalYards"), ("pass", "passYards")):
+        if mb.get(mk) is not None:
+            out[k] = mb[mk]
+    return out
+
+
 def evaluate(session, date_str, g, neutral):
     """(pick team, [rule dicts]) or None. Collects every rule that fires;
     skips the game if they point at opposite sides."""
@@ -275,19 +321,18 @@ def evaluate(session, date_str, g, neutral):
         last = last_game(session, team, date_str)
         line = None if spread is None else (spread if team == g["home"] else -spread)
         if last and line is not None and line > 0:
-            rusher = top_rusher(session, last["eid"], team)
+            rusher = _rusher(session, last, team)
             if rusher and rusher[1] >= BIG_RUSH:
                 picks.append((team, 3, f"Backing {team}: {rusher[0]} ran for {rusher[1]:g} yards last game ({BIG_RUSH}+), and {team} "
                                        f"is a {line:g}-point underdog now -- teams in this spot covered 66.7% ATS, 2017-2025 (n=39, small sample)."))
         if last and team == g["away"] and last["margin"] <= -TO_LOSS_MARGIN:
-            box = team_box(session, last["eid"])
-            me, them = box.get(team) or {}, box.get(last["opp"]) or {}
+            me, them = _box(session, last, team), _box(session, last, last["opp"])
             if None not in (me.get("to"), me.get("yds"), them.get("yds")) and me["to"] >= TO_LOSS_TURNOVERS and abs(me["yds"] - them["yds"]) <= TO_LOSS_YARDS:
                 picks.append((team, 5, f"Backing {team}: lost last game by {-last['margin']:g} with {me['to']:g} turnovers while gaining "
                                        f"{me['yds']:g} yards to {them['yds']:g} -- a turnover-driven loss, not a beating -- and is on the road now; "
                                        f"teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season."))
         if last and last["won"] and team == g["home"]:
-            passer = top_passer(session, last["eid"], team)
+            passer = _passer(session, last, team)
             if passer and passer[1] >= BIG_PASS:
                 mine, theirs = season_pct(session, team, date_str), season_pct(session, opp, date_str)
                 if mine is not None and theirs is not None and theirs < mine:
@@ -295,7 +340,7 @@ def evaluate(session, date_str, g, neutral):
                                           f"{team} is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, "
                                           f"2017-2025 (n=121), every season 55%+."))
         if last:
-            me = team_box(session, last["eid"]).get(team) or {}
+            me = _box(session, last, team)
             if None not in (me.get("yds"), me.get("pass")) and me["yds"] >= BIG_YARDS and me["pass"] >= BIG_YARDS_PASS:
                 picks.append((opp, 6, f"Fading {team}: gained {me['yds']:g} yards last game, {me['pass']:g} of them passing "
                                       f"({BIG_YARDS}+ with {BIG_YARDS_PASS}+ through the air) -- teams in this spot were faded 60.0% of the time "

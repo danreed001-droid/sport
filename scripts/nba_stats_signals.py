@@ -43,7 +43,7 @@ from datetime import date, datetime, timezone
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(__file__))
-from lib import espn, store  # noqa: E402
+from lib import espn, manual, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
 
@@ -215,6 +215,10 @@ class BoxCache:
     def is_regular_season(self, event_id):
         return self._entry(event_id).get("type") == 2
 
+    def season_type(self, event_id):
+        """ESPN's season type (2 = regular season), None if unknown."""
+        return self._entry(event_id).get("type")
+
     def _fetch(self, event_id):
         try:
             d = self.session.get(
@@ -306,6 +310,14 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
         q = quarter_data(session, q_cache, last["date"])
         q_entry = next((v for v in q.values()
                         if team in v["teams"] and last["opp"] in v["teams"]), None)
+        # Hand-entered data for that game (lib/manual.py) wins over ESPN's.
+        m_game = manual.team_game("nba", last["date"], team) or {}
+        m_box, m_opp = manual.team_box("nba", last["date"], team), manual.team_box("nba", last["date"], last["opp"])
+        if m_box.get("quarters") and m_opp.get("quarters"):
+            q_entry = {"period": max(len(m_box["quarters"]), len(m_opp["quarters"])),
+                       "teams": {team: m_box["quarters"], last["opp"]: m_opp["quarters"]}}
+        if m_game.get("ot"):
+            q_entry = dict(q_entry or {"teams": {}}, period=max((q_entry or {}).get("period") or 0, 5))
         if q_entry:
             if q_entry.get("period") and q_entry["period"] > 4 and last["won"] and opp_stronger:
                 picks.append((opp, 2, f"Fading {team}: {RULES['ot_win']}."))
@@ -321,14 +333,19 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
                                 f"now at home -- teams in this spot were faded 65.5% of the time ATS (n=58)."))
 
         if not last["won"] and is_home:
-            three = points.threes(last["event_id"], last["opp"])
+            three = ((m_opp["threesMade"], m_opp["threesAttempted"]) if "threesMade" in m_opp and "threesAttempted" in m_opp
+                     else points.threes(last["event_id"], last["opp"]))
             if three and three[1] >= HOT_OPP_3PA and three[0] / three[1] >= HOT_OPP_THREES:
                 picks.append((team, 16, f"Backing {team}: lost last game while its opponent shot {three[0]}-of-{three[1]} "
                                      f"({three[0] / three[1]:.0%}) from three, now home on a back-to-back -- teams in this "
                                      f"spot covered 68.5% ATS (n=54)."))
 
         if last["won"] and opp_weaker:
-            box, five = points.get(last["event_id"], team) or {}, points.starters(last["event_id"], team) or []
+            if m_box.get("starterPoints"):
+                box = {i: [p, f"starter {i + 1}"] for i, p in enumerate(m_box["starterPoints"])}
+                five = list(box)
+            else:
+                box, five = points.get(last["event_id"], team) or {}, points.starters(last["event_id"], team) or []
             if len(five) == 5 and all(box.get(pid, [0])[0] >= STARTER_PTS for pid in five):
                 who = ", ".join(f"{box[pid][1]} {box[pid][0]}" for pid in five)
                 picks.append((opp, 14, f"Fading {team}: all 5 starters scored {STARTER_PTS}+ in last game's win ({who}), "
@@ -460,8 +477,14 @@ def main():
     # The backtests are regular-season only, and the scores archive also
     # holds preseason games -- drop those so streaks, records and "last game"
     # mean what they meant in the backtest.
-    by_team = {team: [g for g in games if points.is_regular_season(g["event_id"])]
-               for team, games in load_team_logs().items()}
+    def regular(g, team):
+        if str(g["event_id"]).startswith("manual-"):
+            return True  # entered by hand (ESPN never listed it)
+        t = points.season_type(g["event_id"])
+        if t is None:  # ESPN couldn't say: a hand-entered box score vouches for it
+            return manual.team_game("nba", g["date"], team) is not None
+        return t == 2
+    by_team = {team: [g for g in games if regular(g, team)] for team, games in load_team_logs().items()}
     q_cache = {}
     try:
         for date_str in dates:

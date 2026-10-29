@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Enter Data</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('picksheet.theme')||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#f6f4ec; --surface:#fcfcfb; --surface-2:#ece7d3; --ink:#201d16; --muted:#726c58;
+  --rule:#ddd5b9; --rule-2:#c9bf9c; --accent:#2a78d6; --accent-ink:#1c5cab; --warn:#b3471b; --ok:#0b7a52;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f100e; --surface:#1a1a19; --surface-2:#232320; --ink:#f3f2ec; --muted:#9b9a92;
+    --rule:#2c2c2a; --rule-2:#3d3d39; --accent:#3987e5; --accent-ink:#86b6ef; --warn:#f0955e; --ok:#4fd3a0;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f100e; --surface:#1a1a19; --surface-2:#232320; --ink:#f3f2ec; --muted:#9b9a92;
+  --rule:#2c2c2a; --rule-2:#3d3d39; --accent:#3987e5; --accent-ink:#86b6ef; --warn:#f0955e; --ok:#4fd3a0;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Work Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+h1,h2{font-family:'Big Shoulders Display','Arial Narrow',system-ui,sans-serif;text-transform:uppercase;letter-spacing:.01em;margin:0;}
+h1{font-size:34px;line-height:1.05;}
+h2{font-size:20px;margin:0 0 8px;}
+.wrap{max-width:760px;margin:0 auto;padding:16px;}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;}
+.top a{color:var(--accent-ink);font-weight:600;text-decoration:none;}
+.lede{color:var(--muted);margin:6px 0 16px;}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:14px;margin:0 0 12px;}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;}
+label{display:flex;flex-direction:column;gap:3px;font-size:12px;font-weight:600;color:var(--muted);min-width:0;}
+label.chk{flex-direction:row;align-items:center;gap:6px;color:var(--ink);font-size:13px;}
+input,select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface-2);border:1px solid var(--rule-2);border-radius:8px;padding:7px 9px;min-width:0;}
+input:focus-visible,select:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:1px;}
+input.n{width:84px;font-family:'IBM Plex Mono',ui-monospace,monospace;}
+input.s{width:56px;font-family:'IBM Plex Mono',ui-monospace,monospace;}
+input.t{width:230px;max-width:100%;}
+.grow{flex:1 1 220px;}
+.grow select,.grow input{width:100%;}
+.teamcol{flex:1 1 300px;min-width:0;}
+.teamcol h3{font-size:13px;margin:4px 0 8px;font-family:inherit;text-transform:none;}
+.note{font-size:12px;color:var(--muted);margin:6px 0 0;}
+button{font:inherit;font-weight:700;border-radius:9px;padding:9px 14px;border:1px solid var(--rule-2);background:var(--surface-2);color:var(--ink);cursor:pointer;}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff;}
+button.link{background:none;border:none;color:var(--warn);padding:0 4px;font-weight:600;}
+.pending li{margin:4px 0;}
+.msg{font-weight:600;margin:8px 0 0;}
+.msg.err{color:var(--warn);} .msg.ok{color:var(--ok);}
+.mono{font-family:'IBM Plex Mono',ui-monospace,monospace;}
+code{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;background:var(--surface-2);padding:1px 4px;border-radius:4px;}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./">← Pick sheet</a></div>
+  <h1>Enter data by hand</h1>
+  <p class="lede">The last resort when the automatic feeds don't deliver: a missing game or line, a score ESPN never posted, or a box-score number the NBA/NFL Stats rules need. Fill in only what's missing or wrong. Whatever you enter here wins over ESPN, and the next run uses it for slates, grading and every rule.</p>
+
+  <div class="card">
+    <div class="row">
+      <label>Sport<select id="sport"></select></label>
+      <label>Date (ET)<input type="date" id="date"></label>
+      <label class="grow">Game<select id="game"></select></label>
+    </div>
+    <div class="row" id="typed" style="margin-top:10px">
+      <label>Away team<input class="t" id="away" list="teams" autocomplete="off"></label>
+      <label>Home team<input class="t" id="home" list="teams" autocomplete="off"></label>
+      <label>Start time<input class="n" id="time" placeholder="7:30 PM"></label>
+    </div>
+    <datalist id="teams"></datalist>
+    <p class="note">Use the team's full name as ESPN writes it (pick from the suggestions). The existing entry for a game, if any, is filled in below.</p>
+  </div>
+
+  <div class="card">
+    <h2>Final score</h2>
+    <div class="row">
+      <label><span id="lblAwayScore">Away</span><input class="n" inputmode="numeric" data-f="awayScore"></label>
+      <label><span id="lblHomeScore">Home</span><input class="n" inputmode="numeric" data-f="homeScore"></label>
+      <label class="chk"><input type="checkbox" data-flag="ot"> Went to overtime</label>
+      <label class="chk" id="soccerFlag"><input type="checkbox" data-flag="decidedAfter90"> Decided in extra time / penalties</label>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Lines</h2>
+    <div class="row">
+      <label><span id="lblAwaySpread">Away spread</span><input class="n" inputmode="decimal" data-f="awaySpread" placeholder="+3.5"></label>
+      <label><span id="lblAwayML">Away moneyline</span><input class="n" inputmode="numeric" data-f="awayMoneyline" placeholder="+140"></label>
+      <label><span id="lblHomeML">Home moneyline</span><input class="n" inputmode="numeric" data-f="homeMoneyline" placeholder="-160"></label>
+      <label id="drawML">Draw moneyline<input class="n" inputmode="numeric" data-f="drawMoneyline"></label>
+      <label>Total (O/U)<input class="n" inputmode="decimal" data-f="total"></label>
+    </div>
+    <p class="note">The home spread is the away spread flipped. Spread odds default to −110 when left out.</p>
+  </div>
+
+  <div class="card" id="boxCard">
+    <h2 id="boxTitle">Box score</h2>
+    <p class="note" id="boxNote" style="margin:0 0 10px"></p>
+    <div class="row" id="boxRow"></div>
+  </div>
+
+  <div class="row" style="margin-bottom:12px">
+    <button type="button" id="add">Add this game</button>
+    <button type="button" id="clearForm">Clear form</button>
+  </div>
+  <p class="msg" id="msg" role="status"></p>
+
+  <div class="card" id="pendingCard" hidden>
+    <h2>Ready to submit</h2>
+    <ul class="pending" id="pending"></ul>
+    <button type="button" class="primary" id="submit">Submit to repo</button>
+    <p class="note">Opens a GitHub issue with this data (you need to be signed in to GitHub as the repo owner). Press <b>Submit new issue</b> there; a workflow saves it to <code>data/manual/</code> within a minute, replies on the issue, and starts a scoring run so the pick sheet updates.</p>
+  </div>
+
+  <div class="card">
+    <h2>If this page doesn't work either</h2>
+    <p class="note" style="margin:0">Edit or create <code>data/manual/&lt;sport&gt;/&lt;YYYY-MM-DD&gt;.json</code> directly on GitHub (format at the top of <code>scripts/lib/manual.py</code>), then run <b>Actions → Diamond Ledger (scoring) → Run workflow</b>. <a id="repoLink" href="#" target="_blank" rel="noopener">Open the repo</a>.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  var SPORTS = [['nfl','NFL'],['nba','NBA'],['cfb','College football'],['ncaab','College basketball'],['mlb','MLB'],['soccer','Soccer'],['epl','Premier League']];
+  var BOX = {
+    nba: {title:'Box score (NBA Stats rules)', note:'Quarters feed Rules 2 and 9 (overtime, late comebacks); starters’ points feed Rule 14; the opponent’s threes feed Rule 16. Enter the game the team played before the one being picked.',
+      fields:[['quarters','Points by quarter (Q1 Q2 Q3 Q4, then OT)', 'list', 8], ['starterPoints','Starters’ points (all five)', 'list', 5], ['threesMade','Threes made'], ['threesAttempted','Threes attempted']]},
+    nfl: {title:'Box score (NFL Stats rules)', note:'Turnovers and yards feed Rules 5 and 6; the top rusher feeds Rule 3; the QB feeds Rule 4. Enter the game the team played before the one being picked.',
+      fields:[['turnovers','Turnovers'], ['totalYards','Total yards'], ['passYards','Net passing yards'], ['topRusherName','Top rusher', 'text'], ['topRusherYards','Rushing yards'], ['topPasserName','QB (most attempts)', 'text'], ['topPasserYards','Passing yards']]}
+  };
+  var DATA = {repo:'danreed001-droid/sport', slate:{date:null, sports:{}}, plays:[], manual:{}};
+  var pending = [];
+  var $ = function(id){ return document.getElementById(id); };
+  function todayET(){ return new Date().toLocaleDateString('en-CA', {timeZone:'America/New_York'}); }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function sport(){ return $('sport').value; }
+  function slateGames(){ var s = DATA.slate.sports[sport()]; return ($('date').value === DATA.slate.date && s) ? s.games : []; }
+  function existing(away, home){ return ((DATA.manual[sport()]||{})[$('date').value]||{})[away+' @ '+home] || null; }
+
+  function teamsFor(sp){
+    var set = {};
+    (DATA.plays||[]).forEach(function(p){ if(p.s===sp && p.g){ p.g.split(' @ ').forEach(function(t){ set[t]=1; }); } });
+    var s = DATA.slate.sports[sp]; (s ? s.games : []).forEach(function(g){ set[g.away]=1; set[g.home]=1; });
+    return Object.keys(set).sort();
+  }
+  function fillTeams(){ $('teams').innerHTML = teamsFor(sport()).map(function(t){ return '<option value="'+esc(t)+'">'; }).join(''); }
+  function fillGames(){
+    var gs = slateGames();
+    $('game').innerHTML = gs.map(function(g, i){ return '<option value="'+i+'">'+esc(g.away+' @ '+g.home+(g.time?' · '+g.time:''))+'</option>'; }).join('') + '<option value="typed">Another game (type the teams)</option>';
+    onGame();
+  }
+  function onGame(){
+    var v = $('game').value, gs = slateGames();
+    $('typed').hidden = v !== 'typed';
+    if(v !== 'typed' && gs[+v]){ $('away').value = gs[+v].away; $('home').value = gs[+v].home; $('time').value = gs[+v].time || ''; }
+    else { $('away').value = ''; $('home').value = ''; $('time').value = ''; }
+    labels(); prefill();
+  }
+  function labels(){
+    var a = $('away').value || 'Away', h = $('home').value || 'Home';
+    $('lblAwayScore').textContent = a; $('lblHomeScore').textContent = h;
+    $('lblAwaySpread').textContent = a+' spread'; $('lblAwayML').textContent = a+' ML'; $('lblHomeML').textContent = h+' ML';
+    buildBox();
+  }
+  function buildBox(){
+    var b = BOX[sport()];
+    $('boxCard').hidden = !b;
+    if(!b) return;
+    $('boxTitle').textContent = b.title; $('boxNote').textContent = b.note;
+    var teams = [$('away').value || 'Away team', $('home').value || 'Home team'];
+    $('boxRow').innerHTML = teams.map(function(t, ti){
+      return '<div class="teamcol"><h3>'+esc(t)+'</h3><div class="row">' + b.fields.map(function(f){
+        if(f[2]==='list'){
+          var n = f[3], cells = ''; for(var i=0;i<n;i++) cells += '<input class="s" inputmode="numeric" data-box="'+ti+'" data-list="'+f[0]+'" data-i="'+i+'" aria-label="'+esc(f[1])+' '+(i+1)+'">';
+          return '<label style="flex-basis:100%">'+esc(f[1])+'<span class="row" style="gap:4px">'+cells+'</span></label>';
+        }
+        return '<label>'+esc(f[1])+'<input class="'+(f[2]==='text'?'t':'n')+'" '+(f[2]==='text'?'':'inputmode="numeric" ')+'data-box="'+ti+'" data-bf="'+f[0]+'"></label>';
+      }).join('') + '</div></div>';
+    }).join('');
+  }
+  function clearFields(){
+    document.querySelectorAll('[data-f],[data-bf],[data-list]').forEach(function(i){ i.value=''; });
+    document.querySelectorAll('[data-flag]').forEach(function(i){ i.checked=false; });
+  }
+  function prefill(){
+    clearFields();
+    var e = existing($('away').value, $('home').value) || {};
+    if(e.time && !$('time').value) $('time').value = e.time;
+    document.querySelectorAll('[data-f]').forEach(function(i){ if(e[i.dataset.f]!=null) i.value = e[i.dataset.f]; });
+    document.querySelectorAll('[data-flag]').forEach(function(i){ i.checked = !!e[i.dataset.flag]; });
+    var teams = [e.away, e.home];
+    document.querySelectorAll('[data-box]').forEach(function(i){
+      var bx = ((e.box||{})[teams[+i.dataset.box]]) || {};
+      if(i.dataset.bf && bx[i.dataset.bf]!=null) i.value = bx[i.dataset.bf];
+      if(i.dataset.list && bx[i.dataset.list] && bx[i.dataset.list][+i.dataset.i]!=null) i.value = bx[i.dataset.list][+i.dataset.i];
+    });
+    if(e.away) say('This game already has hand-entered data (filled in below); change what you need.', 'ok');
+  }
+  function say(t, cls){ $('msg').textContent = t || ''; $('msg').className = 'msg '+(cls||''); }
+
+  function collect(){
+    var away = $('away').value.trim(), home = $('home').value.trim();
+    if(!away || !home) return {err:'Enter both teams.'};
+    if(away === home) return {err:'Away and home are the same team.'};
+    var e = {away:away, home:home}, any = false, bad = null;
+    if($('time').value.trim()) e.time = $('time').value.trim();
+    document.querySelectorAll('[data-f]').forEach(function(i){
+      var v = i.value.trim(); if(!v) return;
+      var n = Number(v.replace('+','')); if(!isFinite(n)){ bad = i.closest('label').textContent.trim(); return; }
+      e[i.dataset.f] = n; any = true;
+    });
+    document.querySelectorAll('[data-flag]').forEach(function(i){ if(i.checked && !i.closest('[hidden]')){ e[i.dataset.flag] = true; any = true; } });
+    if((e.awayScore==null) !== (e.homeScore==null)) return {err:'Enter both scores, or neither.'};
+    var box = {}, teams = [away, home];
+    document.querySelectorAll('[data-box]').forEach(function(i){
+      var v = i.value.trim(); if(!v) return;
+      var t = teams[+i.dataset.box]; box[t] = box[t] || {};
+      if(i.dataset.bf){
+        if(i.classList.contains('t')) box[t][i.dataset.bf] = v;
+        else { var n = Number(v); if(!isFinite(n)){ bad = i.closest('label').textContent.trim(); return; } box[t][i.dataset.bf] = n; }
+      } else {
+        var n2 = Number(v); if(!isFinite(n2)){ bad = 'a list entry'; return; }
+        (box[t][i.dataset.list] = box[t][i.dataset.list] || [])[+i.dataset.i] = n2;
+      }
+      any = true;
+    });
+    if(bad) return {err:'Not a number: '+bad+'.'};
+    for(var t in box){ for(var k in box[t]){ if(Array.isArray(box[t][k])){
+      var arr = box[t][k]; for(var j=0;j<arr.length;j++){ if(arr[j]==null) return {err:t+': fill the '+(k==='quarters'?'quarters':'starters’ points')+' in order, with no gaps.'}; }
+      if(k==='quarters' && arr.length<4) return {err:t+': enter all four quarters.'};
+      if(k==='starterPoints' && arr.length!==5) return {err:t+': enter all five starters.'};
+    } } }
+    if(Object.keys(box).length) e.box = box;
+    if(!any) return {err:'Nothing entered for this game yet.'};
+    return {entry:e};
+  }
+  function renderPending(){
+    $('pendingCard').hidden = !pending.length;
+    $('pending').innerHTML = pending.map(function(e, i){
+      var bits = [];
+      if(e.awayScore!=null) bits.push('final '+e.awayScore+'–'+e.homeScore+(e.ot?' OT':''));
+      if(e.awaySpread!=null) bits.push('spread '+(e.awaySpread>0?'+':'')+e.awaySpread);
+      if(e.awayMoneyline!=null || e.homeMoneyline!=null) bits.push('moneylines');
+      if(e.total!=null) bits.push('total '+e.total);
+      if(e.box) bits.push('box score: '+Object.keys(e.box).join(', '));
+      return '<li><b>'+esc(e.away+' @ '+e.home)+'</b> — '+esc(bits.join(' · '))+' <button type="button" class="link" data-rm="'+i+'">remove</button></li>';
+    }).join('');
+  }
+
+  $('add').onclick = function(){
+    var r = collect(); if(r.err){ say(r.err, 'err'); return; }
+    pending = pending.filter(function(e){ return !(e.away===r.entry.away && e.home===r.entry.home); });
+    pending.push(r.entry); renderPending(); say('Added. Add another game for the same sport and date, or submit.', 'ok');
+  };
+  $('clearForm').onclick = function(){ clearFields(); say(''); };
+  $('pending').onclick = function(ev){ var i = ev.target.getAttribute('data-rm'); if(i!=null){ pending.splice(+i,1); renderPending(); } };
+  $('submit').onclick = function(){
+    if(!pending.length) return;
+    var payload = {sport:sport(), date:$('date').value, games:pending};
+    var body = 'Hand-entered data from the pick sheet. Submitting this issue saves it to `data/manual/'+payload.sport+'/'+payload.date+'.json`; a scoring run then uses it.\n\n```json\n'+JSON.stringify(payload)+'\n```\n';
+    var url = 'https://github.com/'+DATA.repo+'/issues/new?title='+encodeURIComponent('data '+payload.sport+' '+payload.date)+'&body='+encodeURIComponent(body);
+    if(url.length > 7500){ say('Too much for one submission: submit fewer games at a time.', 'err'); return; }
+    window.open(url, '_blank', 'noopener');
+    say('GitHub opened in a new tab: press Submit new issue there. The data is saved within a minute.', 'ok');
+  };
+  function changedScope(){
+    if(pending.length && !confirm('Switching sport or date clears the '+pending.length+' game(s) not yet submitted. Continue?')){ return false; }
+    pending = []; renderPending(); return true;
+  }
+  var lastSport, lastDate;
+  $('sport').onchange = function(){ if(!changedScope()){ $('sport').value = lastSport; return; } lastSport = sport(); $('soccerFlag').hidden = $('drawML').hidden = !/soccer|epl/.test(sport()); fillTeams(); fillGames(); };
+  $('date').onchange = function(){ if(!changedScope()){ $('date').value = lastDate; return; } lastDate = $('date').value; fillGames(); };
+  $('game').onchange = onGame;
+  $('away').oninput = $('home').oninput = function(){ labels(); };
+  $('away').onchange = $('home').onchange = function(){ labels(); prefill(); };
+
+  function init(){
+    $('repoLink').href = 'https://github.com/'+DATA.repo+'/tree/main/data';
+    $('sport').innerHTML = SPORTS.map(function(s){ return '<option value="'+s[0]+'">'+s[1]+'</option>'; }).join('');
+    var first = SPORTS.filter(function(s){ return DATA.slate.sports[s[0]]; })[0];
+    if(first) $('sport').value = first[0];
+    $('date').value = DATA.slate.date || todayET();
+    lastSport = sport(); lastDate = $('date').value;
+    $('soccerFlag').hidden = $('drawML').hidden = !/soccer|epl/.test(sport());
+    fillTeams(); fillGames();
+  }
+  fetch('data.json', {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function(d){ DATA = d; DATA.manual = d.manual || {}; init(); })
+    .catch(function(){ init(); say('Couldn’t load the pick sheet’s data, so there are no game lists: type the teams instead.', 'err'); });
+})();
+</script>
+</body>
+</html>

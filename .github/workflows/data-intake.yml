@@ -1,0 +1,75 @@
+name: Data intake
+
+# The pick sheet's "Enter data by hand" page (site/manual.html) opens a
+# "data <sport> YYYY-MM-DD" issue. This merges it into
+# data/manual/<sport>/<date>.json, starts a scoring run so the data is used
+# right away, replies on the issue, and closes it. Only the repo owner's
+# issues are processed: the repo is public, so anyone else's is ignored.
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+  actions: write   # start the scoring run
+
+concurrency:
+  group: data-intake
+  cancel-in-progress: false
+
+jobs:
+  intake:
+    if: startsWith(github.event.issue.title, 'data ') && github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Merge into data/manual
+        id: intake
+        run: python scripts/intake_manual.py --summary "$RUNNER_TEMP/summary.md"
+
+      - name: Commit and push
+        if: steps.intake.outputs.changed == 'true'
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          git config user.name "diamond-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/manual/
+          git commit -m "Hand-entered data from issue #${ISSUE_NUMBER}"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 5))
+          done
+          exit 1
+
+      - name: Start a scoring run
+        if: steps.intake.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run diamond-ledger.yml --repo "$GITHUB_REPOSITORY" --ref main
+
+      - name: Reply and close
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          JOB_STATUS: ${{ job.status }}
+        run: |
+          if [ "$JOB_STATUS" != "success" ] || [ ! -f "$RUNNER_TEMP/summary.md" ]; then
+            echo "This data was **not** saved — something failed in the Actions run. Open the run log for details, then submit again (or edit data/manual/ directly)." > "$RUNNER_TEMP/summary.md"
+            gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/summary.md"
+            exit 0
+          fi
+          gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file "$RUNNER_TEMP/summary.md"
+          gh issue close "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY"
