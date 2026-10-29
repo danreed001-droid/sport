@@ -8,6 +8,7 @@ and your picks on the latest slate.
 Usage: python scripts/build_site.py [--out _site]
 """
 import glob
+import hashlib
 import json
 import os
 import shutil
@@ -283,9 +284,17 @@ def main():
     if "--out" in sys.argv:
         out_dir = sys.argv[sys.argv.index("--out") + 1]
     os.makedirs(out_dir, exist_ok=True)
-    shutil.copy(os.path.join(store.REPO_ROOT, "site", "index.html"), os.path.join(out_dir, "index.html"))
+    # The page's code version goes into both the HTML and data.json. data.json
+    # is always fetched fresh, so a browser holding an older cached copy of
+    # the page sees the mismatch and reloads itself (site/index.html).
+    with open(os.path.join(store.REPO_ROOT, "site", "index.html"), encoding="utf-8") as f:
+        page = f.read()
+    version = hashlib.sha1(page.encode("utf-8")).hexdigest()[:12]
+    with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as f:
+        f.write(page.replace("__PAGE_VERSION__", version))
     shutil.copy(os.path.join(store.REPO_ROOT, "site", "manual.html"), os.path.join(out_dir, "manual.html"))
     payload = build()
+    payload["pageVersion"] = version
     with open(os.path.join(out_dir, "data.json"), "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
     n = sum(len(s["games"]) for s in payload["slate"]["sports"].values())
