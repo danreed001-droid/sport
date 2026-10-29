@@ -30,6 +30,12 @@
       "status": "success",
       "okOn": "2026-10-29",
       "failingSince": null
+    },
+    "ncaabSlate": {
+      "label": "NCAA basketball slate",
+      "status": "success",
+      "okOn": "2026-10-29",
+      "failingSince": null
     }
   }
 }
