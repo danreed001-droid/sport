@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-29",
+  "steps": {
+    "nbaStats": {
+      "label": "NBA Stats picks",
+      "status": "success",
+      "okOn": "2026-10-29",
+      "failingSince": null
+    },
+    "nflStats": {
+      "label": "NFL Stats picks",
+      "status": "success",
+      "okOn": "2026-10-29",
+      "failingSince": null
+    },
+    "scoring": {
+      "label": "Scores and grading",
+      "status": "success",
+      "okOn": "2026-10-29",
+      "failingSince": null
+    },
+    "lines": {
+      "label": "Line archive",
+      "status": "success",
+      "okOn": "2026-10-29",
+      "failingSince": null
+    }
+  }
+}
