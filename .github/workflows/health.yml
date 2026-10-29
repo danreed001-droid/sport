@@ -1,0 +1,37 @@
+name: Health check
+
+# Watches the scoring and Pages workflows so the pick sheet keeps updating
+# without anyone looking: re-enables them if GitHub switched them off,
+# re-runs them when they stall, and opens a "Health check" issue (GitHub
+# emails the owner) when something stays broken. See scripts/health_check.py.
+
+on:
+  schedule:
+    - cron: "41 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  actions: write   # enable / re-run the other workflows
+  contents: read
+  issues: write    # open and close the Health check issue
+  pages: read      # find the live site's URL
+
+concurrency:
+  group: health-check
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Check, repair, report
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/health_check.py

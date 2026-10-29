@@ -96,6 +96,31 @@ def load_team_logs():
     return by_team
 
 
+def season_start(date_str):
+    """First day of the NBA season date_str falls in (Aug 1 of its start
+    year). The scores archive keeps growing across seasons, so every rule
+    looks only at games on or after this day: last season's games never
+    count toward a record or a "last game"."""
+    d = date.fromisoformat(date_str)
+    return f"{d.year if d.month >= 8 else d.year - 1}-08-01"
+
+
+def regular_season_games(session, date_str):
+    """{(away, home): True/False} -- whether each of ESPN's games on date_str
+    is a regular-season game (season type 2). The rules were only backtested
+    on the regular season, so preseason, play-in and playoff games get no
+    pick. Empty when ESPN can't be reached (then every game is evaluated)."""
+    try:
+        events = espn.fetch_scoreboard(session, "basketball", "nba", date_str.replace("-", ""))
+    except Exception:
+        return {}
+    out = {}
+    for ev in events:
+        teams = {c["homeAway"]: c["team"]["displayName"] for c in ev["competitions"][0]["competitors"]}
+        out[(teams.get("away"), teams.get("home"))] = (ev.get("season") or {}).get("type") == 2
+    return out
+
+
 def season_record(games, before_date):
     w = l = 0
     for g in games:
@@ -263,15 +288,16 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
     """Returns (pick_team, check_text) or None. Collects every rule that
     fires for either team; skips the game if they disagree on a side."""
     picks = []  # (pick_team, rule number, text)
+    season0 = season_start(date_str)
     for team, is_home, opp in ((home, True, away), (away, False, home)):
-        games = by_team.get(team, [])
+        games = [g for g in by_team.get(team, []) if g["date"] >= season0]
         prior = [g for g in games if g["date"] < date_str]
         if not prior:
             continue
         last = prior[-1]
         start = len(picks)
         team_w, team_l = season_record(games, date_str)
-        opp_w, opp_l = season_record(by_team.get(opp, []), date_str)
+        opp_w, opp_l = season_record([g for g in by_team.get(opp, []) if g["date"] >= season0], date_str)
         if not (team_w + team_l) or not (opp_w + opp_l):
             continue
         team_pct, opp_pct = team_w / (team_w + team_l), opp_w / (opp_w + opp_l)
@@ -399,11 +425,15 @@ def run_for_date(session, points, by_team, q_cache, date_str):
         if filled:
             store.write_doc("nba", date_str, doc)
     changed = 0
+    regular = regular_season_games(session, date_str)
     for g in doc.get("games", []):
         away, home = g.get("away"), g.get("home")
         if not away or not home:
             continue
-        result = evaluate_game(session, points, by_team, q_cache, date_str, home, away)
+        if regular.get((away, home), True):
+            result = evaluate_game(session, points, by_team, q_cache, date_str, home, away)
+        else:
+            result = None  # preseason / play-in / playoffs: not what the rules were tested on
         before = (g.get("statsFavors"), g.get("statsCheck"), g.get("statsRules"))
         if result:
             if result[0] != before[0]:

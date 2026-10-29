@@ -7,22 +7,23 @@ name: Diamond Ledger (scoring)
 # into data/<collection>/<date>.json with their own commit — this workflow
 # never generates picks for those sports, only grades what's already there.
 #
-# "NBA Stats" is a deterministic, backtested model (scripts/
-# nba_stats_signals.py) patched directly onto that same NBA slate before
-# grading -- not live research, so no Routine needed. Re-running each cycle
-# is harmless; it just re-checks the day's games against the three trigger
-# conditions and leaves non-qualifying games alone.
+# "NBA Stats" and "NFL Stats" are deterministic, backtested models (scripts/
+# nba_stats_signals.py, scripts/nfl_stats_signals.py) patched onto the day's
+# slate before grading -- they build the slate from ESPN themselves when no
+# Routine has written one, so they need nothing outside this repo.
+#
+# Built to keep running unattended:
+# - It runs every hour. GitHub starts scheduled runs late (often hours) and
+#   sometimes skips them, and every run is idempotent, so frequent runs are
+#   the redundancy. Minute :17 avoids the top-of-the-hour queue.
+# - Each step can fail without stopping the others; whatever succeeded is
+#   still committed, then the run is marked failed so it shows in Actions.
+# - data/health.json records each step's status for the pick sheet and the
+#   Health check workflow (which re-runs this one if it stalls).
 
 on:
   schedule:
-    - cron: "0 13 * * *"  # ~9am ET (13:00 UTC; adjust +/-1h across DST if it matters to you)
-    # Backup: GitHub often starts scheduled runs hours late. Re-running is
-    # harmless — only slates still unscored get graded.
-    - cron: "0 17 * * *"  # ~1pm ET
-    # More backups: GitHub sometimes drops scheduled runs entirely (both
-    # runs above were skipped on 2026-10-12).
-    - cron: "0 21 * * *"  # ~5pm ET
-    - cron: "0 2 * * *"   # ~10pm ET
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       sports:
@@ -33,39 +34,79 @@ on:
 permissions:
   contents: write
 
+# Never two runs at once (they'd race on the same files and on the push);
+# a run that starts while one is going waits for it.
+concurrency:
+  group: diamond-ledger
+  cancel-in-progress: false
+
 jobs:
   run:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          for i in 1 2 3; do
+            pip install -r requirements.txt && exit 0
+            sleep $((i * 15))
+          done
+          exit 1
 
       - name: Patch today's NBA Stats picks onto the NBA slate
+        id: nba
+        continue-on-error: true
         run: python scripts/nba_stats_signals.py
 
       - name: Patch today's NFL Stats picks onto the NFL slate
+        id: nfl
+        continue-on-error: true
         run: python scripts/nfl_stats_signals.py
 
       - name: Fetch scores and grade past slates
+        id: score
+        continue-on-error: true
         run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab soccer epl' }}
 
       - name: Archive finished NBA and NFL games' opening and closing lines
+        id: lines
+        continue-on-error: true
         run: python scripts/archive_lines.py nba nfl
 
+      - name: Record run health
+        if: always()
+        run: >
+          python scripts/health.py
+          nbaStats=${{ steps.nba.outcome }} nflStats=${{ steps.nfl.outcome }}
+          scoring=${{ steps.score.outcome }} lines=${{ steps.lines.outcome }}
+
       - name: Commit and push results
+        if: always()
         run: |
           git config user.name "diamond-ledger-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/
           if git diff --cached --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "Diamond Ledger: score past slates $(date -u +%F)"
-            git push
+            exit 0
           fi
+          git commit -m "Diamond Ledger: score past slates $(date -u +%F)"
+          # Routines and pick intake push to main too: rebase and retry.
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            git rebase --abort 2>/dev/null || true  # a real conflict: the next hourly run redoes it from scratch
+            sleep $((i * 10))
+          done
+          exit 1
+
+      - name: Mark the run failed if any step failed
+        if: steps.nba.outcome == 'failure' || steps.nfl.outcome == 'failure' || steps.score.outcome == 'failure' || steps.lines.outcome == 'failure'
+        run: |
+          echo "::error::A step failed: NBA Stats=${{ steps.nba.outcome }}, NFL Stats=${{ steps.nfl.outcome }}, scoring=${{ steps.score.outcome }}, lines=${{ steps.lines.outcome }}"
+          exit 1

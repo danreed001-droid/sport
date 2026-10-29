@@ -21,10 +21,31 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   the sections into `data/audits/<date>.md`.
   Nothing else changes a pick after it's generated.
 - **Grading:** `.github/workflows/diamond-ledger.yml` grades NFL, CFB, MLB,
-  NBA, NCAAB and soccer every morning from ESPN (`fetch_scores.py` then
-  `score_slate.py`). The sport Routines no longer grade. Soccer uses ESPN's
-  combined soccer feed and grades the 3-way moneyline; matches decided in
-  extra time or on penalties get no result.
+  NBA, NCAAB and soccer every hour from ESPN (`fetch_scores.py` then
+  `score_slate.py`), after patching on the NBA Stats and NFL Stats picks. The
+  sport Routines no longer grade. Soccer uses ESPN's combined soccer feed and
+  grades the 3-way moneyline; matches decided in extra time or on penalties
+  get no result.
+
+## Keeping it running unattended
+
+- The scoring workflow runs hourly (GitHub starts scheduled runs late and
+  sometimes skips them; every run is idempotent). Its steps fail
+  independently, whatever succeeded is still committed, and the run is then
+  marked failed. ESPN requests retry transient errors (`lib/espn.py`).
+- `data/health.json` holds each step's last status (dates only, so it changes
+  about once a day: that daily bot commit keeps GitHub from switching off the
+  scheduled workflows after 60 days without repo activity in the off-season).
+  The pick sheet shows a warning banner when the page is 6+ hours old or a
+  step is failing.
+- `.github/workflows/health.yml` (every 4 hours) re-enables the scoring and
+  Pages workflows, re-runs scoring if nothing has succeeded in 3+ hours,
+  rebuilds the site if the live data.json is 6+ hours old, and opens a
+  "Health check" issue (closed automatically on recovery) when it can't fix
+  things itself.
+- NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
+  the current season's games from the growing scores archive.
+- `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
 
 ## The user's own picks come from the pick sheet, not from Claude
 

@@ -239,9 +239,19 @@ def build():
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
         "nflStatsRules": nfl_rules,
+        "health": read_health(),
         "statsStacked": stats_stacked,
         "nflStatsStacked": nfl_stacked,
     }
+
+
+def read_health():
+    """data/health.json (each scoring step's last status), or {} if absent."""
+    try:
+        with open(os.path.join(store.REPO_ROOT, "data", "health.json"), encoding="utf-8") as f:
+            return json.load(f)
+    except (OSError, ValueError):
+        return {}
 
 
 def stacked_record(docs, sport, favors, rules):

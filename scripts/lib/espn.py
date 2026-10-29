@@ -5,7 +5,36 @@ Uses curl_cffi with a browser TLS fingerprint because ESPN's site API blocks
 plain requests/urllib3 clients without one. This is the "own script" that
 fetches scores directly instead of relying on the Google Drive feed.
 """
+import time
+
 from curl_cffi import requests as curl_requests
+
+RETRY_STATUSES = {429, 500, 502, 503, 504}
+
+
+class RetrySession:
+    """A curl_cffi session whose get() retries timeouts, connection errors and
+    429/5xx responses (3 tries, 2s then 6s apart), so one ESPN hiccup doesn't
+    cost a run its picks or grades. Anything else passes straight through."""
+
+    def __init__(self, session, tries=3, waits=(2, 6)):
+        self._s, self.tries, self.waits = session, tries, waits
+
+    def get(self, url, **kw):
+        for attempt in range(self.tries):
+            last = attempt == self.tries - 1
+            try:
+                r = self._s.get(url, **kw)
+            except Exception:
+                if last:
+                    raise
+            else:
+                if r.status_code not in RETRY_STATUSES or last:
+                    return r
+            time.sleep(self.waits[min(attempt, len(self.waits) - 1)])
+
+    def __getattr__(self, name):
+        return getattr(self._s, name)
 
 
 def make_session():
@@ -18,7 +47,7 @@ def make_session():
             "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         ),
     })
-    return s
+    return RetrySession(s)
 
 
 def fmt_ml(val):

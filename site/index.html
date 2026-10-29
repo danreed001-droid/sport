@@ -180,6 +180,8 @@ details.tv table{min-width:0;}
 .badge .val{font-size:13.5px;font-weight:700;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
 .badge .val.none{color:var(--muted);font-weight:500;font-style:italic;font-size:12.5px;}
 .badge .tier{font-size:11px;color:var(--muted);}
+.healthbar{margin:14px 0 0;padding:10px 14px;border-radius:10px;font-size:13px;line-height:1.45;color:var(--ink);background:rgba(235,104,52,.14);border:1px solid rgba(235,104,52,.45);}
+.healthbar a{color:var(--opinion-ink);font-weight:600;}
 .betcall{display:inline-block;margin-left:4px;padding:0 5px;border-radius:4px;font-size:11px;font-weight:700;white-space:nowrap;}
 .badge .betcall{display:block;width:max-content;margin:3px 0 0;}
 .betcall.ats{color:var(--ledger-ink);background:rgba(42,120,214,.13);}
@@ -983,6 +985,20 @@ footer b{color:var(--ink);}
     document.getElementById('submitlink').href = issueUrl();
   }
 
+  // A warning at the top when the page has stopped updating or part of the
+  // hourly run is failing, so a stuck pipeline is never silent.
+  function healthBanner(){
+    var msgs = [], runUrl = 'https://github.com/'+DATA.repo+'/actions/workflows/diamond-ledger.yml';
+    var age = (Date.now() - Date.parse(DATA.generatedAt)) / 3600000;
+    if(isFinite(age) && age >= 6) msgs.push('This page last updated <b>'+(age >= 48 ? Math.round(age/24)+' days' : Math.round(age)+' hours')+' ago</b>; it normally updates every hour. Picks and results below may be out of date.');
+    var steps = (DATA.health && DATA.health.steps) || {};
+    Object.keys(steps).forEach(function(k){
+      var s = steps[k];
+      if(s.status === 'failure') msgs.push('<b>'+esc(s.label)+'</b> failed in the last automatic run'+(s.failingSince ? ' (failing since '+esc(s.failingSince)+')' : '')+(s.okOn ? '; last worked '+esc(s.okOn) : '')+'.');
+    });
+    if(!msgs.length) return '';
+    return '<div class="healthbar" role="status">'+msgs.join('<br>')+' <a href="'+runUrl+'" target="_blank" rel="noopener">Run it by hand</a> (Run workflow), or wait — the health check retries every few hours.</div>';
+  }
   function render(){
     var s = DATA.slate;
     var dateLabel = new Date(s.date+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',timeZone:'UTC'});
@@ -996,7 +1012,7 @@ footer b{color:var(--ink);}
         + (k==='nba' ? statsRulesTable() : '') + (k==='nfl' ? nflStatsRulesTable() : '')
         + '<div class="games">'+sp.games.map(function(g){ return card(k,g); }).join('')+'</div></section>';
     }).join('');
-    document.getElementById('app').innerHTML =
+    document.getElementById('app').innerHTML = healthBanner() +
       '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models in every sport; on NFL and CFB games, <b style="color:var(--trend-ink)">Trend check</b> and <b style="color:var(--blowout-ink)">Blowout check</b> are tracked alongside them, and on NBA games, <b style="color:var(--stats-ink)">NBA Stats</b> is — five backtested rules that fade a team coming off an OT win (vs. a stronger team), a late comeback the night before a back-to-back, a win where all 5 starters scored 10+ (now on a back-to-back vs. a weaker team) or a home win where it allowed 130+, or back a team coming off a loss to a team that shot 50%+ from three (now home on a back-to-back). Each rule only fires on the rest days where it backtested at 62% or better, and each went 60%+ on four seasons it was never found on. On NFL games, <b style="color:var(--nflstats-ink)">NFL Stats</b> backs a home underdog of 7+ points (64.7% against the spread from 2020-2025) fades a team coming off a win as a 7+ point underdog (60.0%, 2017-2025), backs an underdog whose top rusher ran for 150+ yards last game (66.7%, small sample), fades a home team vs. a weaker team after its QB threw for 300+ in a win (60.3%), backs a road team after a 10+ point loss driven by 3+ turnovers rather than yards (65.3%), and fades a team that gained 500+ yards with 300+ passing (60.0%). A pick two or more rules agree on is marked <b>stacked</b>: those went 69.4% when all six rules were replayed on 2017-2025. Each NBA and NFL Stats pick also says how to bet it: <b>ML</b> when the team is a small underdog (+100 to +149), where the moneyline paid more than the spread in the backtests for both sports, and <b>ATS</b> otherwise. <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
       + dashHtml()
       + logHtml()

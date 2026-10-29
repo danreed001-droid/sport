@@ -1,1 +1,3 @@
-curl_cffi>=0.7.0
+# Pinned to the version the scripts are known to work with, so an upstream
+# release can't break the scheduled runs overnight. Bump deliberately.
+curl_cffi==0.17.0

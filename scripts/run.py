@@ -13,6 +13,7 @@ Usage: python scripts/run.py [sport ...]   (default: nfl cfb mlb nba ncaab socce
 """
 import os
 import sys
+import traceback
 
 sys.path.insert(0, os.path.dirname(__file__))
 
@@ -59,13 +60,25 @@ def run_sport(sport_key, summary_lines):
 def main():
     requested = sys.argv[1:] or DEFAULT_SPORTS
     summary_lines = ["# Diamond Ledger results (scoring only)"]
+    failed = []
     for sport_key in requested:
-        run_sport(sport_key, summary_lines)
+        # One sport's feed breaking (ESPN outage, schema change) shouldn't
+        # stop the rest from being graded; the run still fails at the end so
+        # the failure shows up in Actions and the health check.
+        try:
+            run_sport(sport_key, summary_lines)
+        except Exception:
+            traceback.print_exc()
+            failed.append(sport_key)
+            summary_lines.append(f"\n## {sport_key}: FAILED (see the run log)")
 
     summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
     if summary_path:
         with open(summary_path, "a", encoding="utf-8") as f:
             f.write("\n".join(summary_lines) + "\n")
+    if failed:
+        print(f"\nFailed: {', '.join(failed)}", file=sys.stderr)
+        sys.exit(1)
 
 
 if __name__ == "__main__":

@@ -210,7 +210,7 @@ def top_rusher(session, event_id, team):
 
 
 def espn_games(session, date_str):
-    """{(away, home): {espnId, neutral, time}} for ESPN's NFL games on date_str (ET)."""
+    """{(away, home): {espnId, neutral, time, regular}} for ESPN's NFL games on date_str (ET)."""
     try:
         events = espn.fetch_scoreboard(session, "football", "nfl", date_str.replace("-", ""))
     except Exception:
@@ -223,7 +223,8 @@ def espn_games(session, date_str):
         teams = {c["homeAway"]: c["team"]["displayName"] for c in comp["competitors"]}
         kick = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(ZoneInfo("America/New_York"))
         out[(teams.get("away"), teams.get("home"))] = {"espnId": ev["id"], "neutral": bool(comp.get("neutralSite")),
-                                                      "time": kick.strftime("%I:%M %p").lstrip("0") + " ET"}
+                                                      "time": kick.strftime("%I:%M %p").lstrip("0") + " ET",
+                                                      "regular": (ev.get("season") or {}).get("type") == 2}
     return out
 
 
@@ -330,8 +331,10 @@ def run_for_date(session, date_str):
         away, home = g.get("away"), g.get("home")
         if not away or not home:
             continue
-        neutral = (games.get((away, home)) or {}).get("neutral", False)
-        result = evaluate(session, date_str, g, neutral)
+        info = games.get((away, home)) or {}
+        # The rules were only backtested on regular-season games: preseason
+        # and playoff games get no pick (unknown -- ESPN down -- is evaluated).
+        result = evaluate(session, date_str, g, info.get("neutral", False)) if info.get("regular", True) else None
         before = tuple(g.get(k) for k in FIELDS)
         if result:
             if result[0] != before[0]:
