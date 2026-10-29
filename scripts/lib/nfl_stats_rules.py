@@ -13,6 +13,7 @@ RULE_NAMES = {
     4: "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
     5: "Back a road team after a 10+ point loss with 3+ turnovers and yards within 75 of the opponent",
     6: "Fade a team that gained 500+ yards, 300+ of them passing, last game",
+    9: "Fade a team after a game with both a 100-yard rusher and a 300-yard passer",
 }
 RULE_BACKTEST = {
     1: "64.7% ATS, n=116; held-out 2024-25: 26-11",
@@ -21,7 +22,8 @@ RULE_BACKTEST = {
     4: "60.3% ATS, n=121 (2017-2025); every season 55%+",
     5: "65.3% ATS, n=75 (2017-2025); no losing season",
     6: "60.0% ATS, n=115 (2017-2025); 2017-21 59.8%, 2022-25 60.7%; only losing season 2021 (7-8)",
+    9: "67.1% ATS, n=85 (2017-2025); 2017-21 66.1%, 2022-25 69.0%; no losing season",
 }
-# A pick two or more rules agree on ("stacked"), from replaying all six
-# rules together on 2017-2025 (without 2023): one-rule picks went 59.1%.
-STACKED_BACKTEST = "69.4% ATS, 34-15 (2017-2025 replay of all six rules); no losing season"
+# A pick two or more rules agree on ("stacked"), from replaying all the
+# rules together on 2017-2025 (without 2023): one-rule picks went 58.8%.
+STACKED_BACKTEST = "69.7% ATS, 53-23 (2017-2025 replay of all the rules)"

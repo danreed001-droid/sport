@@ -12,6 +12,8 @@ scripts/lib/nfl_stats_rules.py.
   Rule 5: back a road team after a 10+ point loss with 3+ turnovers in which
   it gained about as many yards as its opponent (within 75).
   Rule 6: fade a team that gained 500+ yards, 300+ of them passing, last game.
+  Rule 9: fade a team after a game with both a 100-yard rusher and a
+  300-yard passer (only the pair works: either one alone is a coin flip).
   A pick two or more rules agree on is "stacked" (69.4% ATS in the replay).
   Neutral-site games (London, Germany, etc.) are left out, as in the backtests;
   if the rules point at opposite sides, the game gets no pick.
@@ -45,6 +47,7 @@ TO_LOSS_TURNOVERS = 3  # ...with this many turnovers or more...
 TO_LOSS_YARDS = 75   # ...and total yards within this many of the opponent's
 BIG_PASS = 300       # rule 4: QB passing yards in last game's win
 BIG_YARDS = 500      # rule 6: team total yards last game...
+BOTH_RUSH, BOTH_PASS = 100, 300  # rule 9: top rusher and top passer, same game
 BIG_YARDS_PASS = 300  # ...with this many net passing yards or more
 BIG_RUSH = 150       # rule 3: top rusher's yards in the team's last game
 LOOKBACK_DAYS = 16   # how far back to look for a team's last regular-season game
@@ -60,6 +63,10 @@ def _num(v):
 
 
 _BOARDS = {}
+# ESPN lookups that failed this run (scoreboards, box scores, odds). A game
+# whose evaluation hit one keeps the pick it already had: a missing number
+# would otherwise drop a rule -- and with it a pick and its grade.
+FAILS = [0]
 
 
 def _board(session, date_str):
@@ -68,7 +75,10 @@ def _board(session, date_str):
         try:
             _BOARDS[date_str] = espn.fetch_scoreboard(session, "football", "nfl", date_str.replace("-", ""))
         except Exception:
-            _BOARDS[date_str] = []
+            _BOARDS[date_str] = None
+    if _BOARDS[date_str] is None:
+        FAILS[0] += 1
+        return []
     return _BOARDS[date_str]
 
 
@@ -115,6 +125,7 @@ def last_game(session, team, date_str):
                                         timeout=20).json().get("items", [])
                     home_spread = _num(next((i.get("spread") for i in items if i.get("spread") is not None), None))
                 except Exception:
+                    FAILS[0] += 1
                     home_spread = None
             spread = None if home_spread is None else (home_spread if side == "home" else -home_spread)
             return {"won": won, "spread": spread, "neutral": bool(comp.get("neutralSite")), "date": d, "opp": names[other], "eid": ev["id"], "margin": margin}
@@ -137,8 +148,11 @@ def team_box(session, event_id):
                 out[t["team"]["displayName"]] = {"to": _num(st.get("turnovers")), "yds": _num(st.get("totalYards")),
                                                  "pass": _num(st.get("netPassingYards"))}
         except Exception:
-            pass
+            out = None
         _BOX[event_id] = out
+    if _BOX[event_id] is None:
+        FAILS[0] += 1
+        return {}
     return _BOX[event_id]
 
 
@@ -198,8 +212,11 @@ def top_passer(session, event_id, team):
                     if best:
                         out[t["team"]["displayName"]] = best[:2]
         except Exception:
-            pass
+            out = None
         _PASS[event_id] = out
+    if _PASS[event_id] is None:
+        FAILS[0] += 1
+        return None
     return _PASS[event_id].get(team)
 
 
@@ -224,8 +241,11 @@ def top_rusher(session, event_id, team):
                     if best:
                         out[t["team"]["displayName"]] = best
         except Exception:
-            pass
+            out = None
         _RUSH[event_id] = out
+    if _RUSH[event_id] is None:
+        FAILS[0] += 1
+        return None
     return _RUSH[event_id].get(team)
 
 
@@ -340,6 +360,11 @@ def evaluate(session, date_str, g, neutral):
                                           f"{team} is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, "
                                           f"2017-2025 (n=121), every season 55%+."))
         if last:
+            rusher, passer = _rusher(session, last, team), _passer(session, last, team)
+            if rusher and passer and rusher[1] >= BOTH_RUSH and passer[1] >= BOTH_PASS:
+                picks.append((opp, 9, f"Fading {team}: {rusher[0]} ran for {rusher[1]:g} and {passer[0]} threw for {passer[1]:g} "
+                                      f"in its last game ({BOTH_RUSH}+ rushing and {BOTH_PASS}+ passing, same game) -- teams in this "
+                                      f"spot were faded 67.1% of the time ATS next game, 2017-2025 (n=85), no losing season."))
             me = _box(session, last, team)
             if None not in (me.get("yds"), me.get("pass")) and me["yds"] >= BIG_YARDS and me["pass"] >= BIG_YARDS_PASS:
                 picks.append((opp, 6, f"Fading {team}: gained {me['yds']:g} yards last game, {me['pass']:g} of them passing "
@@ -379,8 +404,12 @@ def run_for_date(session, date_str):
         info = games.get((away, home)) or {}
         # The rules were only backtested on regular-season games: preseason
         # and playoff games get no pick (unknown -- ESPN down -- is evaluated).
+        fails = FAILS[0]
         result = evaluate(session, date_str, g, info.get("neutral", False)) if info.get("regular", True) else None
         before = tuple(g.get(k) for k in FIELDS)
+        if FAILS[0] > fails and before[0] and (result is None or result[0] != before[0] or result[1] != before[2]):
+            print(f"  {date_str} {away} @ {home}: an ESPN lookup failed -- keeping the existing pick ({before[0]}); next run re-checks")
+            continue
         if result:
             if result[0] != before[0]:
                 for k in GRADE_FIELDS:

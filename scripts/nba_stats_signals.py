@@ -141,7 +141,8 @@ def quarter_data(session, cache, date_str):
     try:
         events = espn.fetch_scoreboard(session, "basketball", "nba", date_str.replace("-", ""))
     except Exception:
-        events = []
+        FAILS[0] += 1
+        return {}  # not cached: retried at the next use
     for ev in events:
         comp = ev["competitions"][0]
         teams = {c["team"]["displayName"]: [p.get("value") for p in (c.get("linescores") or [])]
@@ -163,6 +164,12 @@ def trailed_after_three(q_entry, team, opp):
 
 
 
+# ESPN lookups that failed this run (box scores, scoreboards). A game whose
+# evaluation hit one keeps the pick it already had: a missing number would
+# otherwise drop a rule -- and with it a pick and its grade.
+FAILS = [0]
+
+
 class BoxCache:
     """Box-score bits for completed games, persisted so finished games are
     only ever fetched once:
@@ -181,6 +188,8 @@ class BoxCache:
         if not isinstance(e, dict) or "ast_p" not in e:  # missing, failed, or an older format
             e = self.data[event_id] = self._fetch(event_id)
             self.dirty = True
+        if e is None:
+            FAILS[0] += 1
         return e or {}
 
     def get(self, event_id, team):
@@ -422,7 +431,7 @@ def build_espn_slate(session, date_str):
             "generatedAt": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"), "games": games}
 
 
-def run_for_date(session, points, by_team, q_cache, date_str):
+def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False):
     doc = store.read_doc("nba", date_str)
     if doc is None:
         doc = build_espn_slate(session, date_str)
@@ -447,11 +456,15 @@ def run_for_date(session, points, by_team, q_cache, date_str):
         away, home = g.get("away"), g.get("home")
         if not away or not home:
             continue
+        fails = FAILS[0]
         if regular.get((away, home), True):
             result = evaluate_game(session, points, by_team, q_cache, date_str, home, away)
         else:
             result = None  # preseason / play-in / playoffs: not what the rules were tested on
         before = (g.get("statsFavors"), g.get("statsCheck"), g.get("statsRules"))
+        if (FAILS[0] > fails or setup_failed) and before[0] and (result is None or result[0] != before[0] or result[1] != before[2]):
+            print(f"  {date_str} {away} @ {home}: an ESPN lookup failed -- keeping the existing pick ({before[0]}); next run re-checks")
+            continue
         if result:
             if result[0] != before[0]:
                 for k in ("statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn"):
@@ -487,8 +500,11 @@ def main():
     by_team = {team: [g for g in games if regular(g, team)] for team, games in load_team_logs().items()}
     q_cache = {}
     try:
+        # A failed lookup while sorting regular-season games could drop a
+        # team's last game, so it protects every existing pick this run.
+        setup_failed = FAILS[0] > 0
         for date_str in dates:
-            run_for_date(session, points, by_team, q_cache, date_str)
+            run_for_date(session, points, by_team, q_cache, date_str, setup_failed)
     finally:
         points.save()
 
