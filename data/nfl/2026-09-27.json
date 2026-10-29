@@ -246,7 +246,7 @@
       "homeSpread": 10,
       "homeSpreadOdds": -110,
       "homeYPP": 5.12,
-      "nflStatsCheck": "Rule 1: Backing Miami Dolphins: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons. Rule 6: Fading Kansas City Chiefs: gained 523 yards last game, 371 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115). Rule 9: Fading Kansas City Chiefs: Kenneth Walker III ran for 117 and Patrick Mahomes threw for 382 in its last game (100+ rushing and 300+ passing, same game) -- teams in this spot were faded 67.1% of the time ATS next game, 2017-2025 (n=85), no losing season.",
+      "nflStatsCheck": "Rule 1: Backing Miami Dolphins: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons. Rule 6: Fading Kansas City Chiefs: gained 523 yards last game, 371 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115). Rule 9: Fading Kansas City Chiefs: Kenneth Walker III ran for 117 and Patrick Mahomes threw for 382 in its last game (100+ rushing and 350+ passing, same game) -- teams in this spot were faded 83.3% of the time ATS next game, 2017-2025 (n=24, small sample), no losing season.",
       "nflStatsCorrect": null,
       "nflStatsCover": false,
       "nflStatsFavors": "Miami Dolphins",
@@ -266,9 +266,9 @@
         },
         {
           "rule": 9,
-          "name": "Fade a team after a game with both a 100-yard rusher and a 300-yard passer",
-          "backtest": "67.1% ATS, n=85 (2017-2025); 2017-21 66.1%, 2022-25 69.0%; no losing season",
-          "detail": "Fading Kansas City Chiefs: Kenneth Walker III ran for 117 and Patrick Mahomes threw for 382 in its last game (100+ rushing and 300+ passing, same game) -- teams in this spot were faded 67.1% of the time ATS next game, 2017-2025 (n=85), no losing season."
+          "name": "Fade a team after a game with both a 100-yard rusher and a 350-yard passer",
+          "backtest": "83.3% ATS, n=24 (2017-2025); 2017-21 14-4, 2022-25 6-0; no losing season (small sample)",
+          "detail": "Fading Kansas City Chiefs: Kenneth Walker III ran for 117 and Patrick Mahomes threw for 382 in its last game (100+ rushing and 350+ passing, same game) -- teams in this spot were faded 83.3% of the time ATS next game, 2017-2025 (n=24, small sample), no losing season."
         }
       ],
       "nflStatsSpreadReturn": -100.0,

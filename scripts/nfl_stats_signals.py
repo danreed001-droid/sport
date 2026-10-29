@@ -13,7 +13,7 @@ scripts/lib/nfl_stats_rules.py.
   it gained about as many yards as its opponent (within 75).
   Rule 6: fade a team that gained 500+ yards, 300+ of them passing, last game.
   Rule 9: fade a team after a game with both a 100-yard rusher and a
-  300-yard passer (only the pair works: either one alone is a coin flip).
+  350-yard passer (only the pair works: either one alone is a coin flip).
   A pick two or more rules agree on is "stacked" (69.4% ATS in the replay).
   Neutral-site games (London, Germany, etc.) are left out, as in the backtests;
   if the rules point at opposite sides, the game gets no pick.
@@ -47,7 +47,7 @@ TO_LOSS_TURNOVERS = 3  # ...with this many turnovers or more...
 TO_LOSS_YARDS = 75   # ...and total yards within this many of the opponent's
 BIG_PASS = 300       # rule 4: QB passing yards in last game's win
 BIG_YARDS = 500      # rule 6: team total yards last game...
-BOTH_RUSH, BOTH_PASS = 100, 300  # rule 9: top rusher and top passer, same game
+BOTH_RUSH, BOTH_PASS = 100, 350  # rule 9: top rusher and top passer, same game
 BIG_YARDS_PASS = 300  # ...with this many net passing yards or more
 BIG_RUSH = 150       # rule 3: top rusher's yards in the team's last game
 LOOKBACK_DAYS = 16   # how far back to look for a team's last regular-season game
@@ -364,7 +364,7 @@ def evaluate(session, date_str, g, neutral):
             if rusher and passer and rusher[1] >= BOTH_RUSH and passer[1] >= BOTH_PASS:
                 picks.append((opp, 9, f"Fading {team}: {rusher[0]} ran for {rusher[1]:g} and {passer[0]} threw for {passer[1]:g} "
                                       f"in its last game ({BOTH_RUSH}+ rushing and {BOTH_PASS}+ passing, same game) -- teams in this "
-                                      f"spot were faded 67.1% of the time ATS next game, 2017-2025 (n=85), no losing season."))
+                                      f"spot were faded 83.3% of the time ATS next game, 2017-2025 (n=24, small sample), no losing season."))
             me = _box(session, last, team)
             if None not in (me.get("yds"), me.get("pass")) and me["yds"] >= BIG_YARDS and me["pass"] >= BIG_YARDS_PASS:
                 picks.append((opp, 6, f"Fading {team}: gained {me['yds']:g} yards last game, {me['pass']:g} of them passing "

@@ -124,21 +124,7 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null,
-      "nflStatsFavors": "Philadelphia Eagles",
-      "nflStatsRules": [
-        {
-          "rule": 9,
-          "name": "Fade a team after a game with both a 100-yard rusher and a 300-yard passer",
-          "backtest": "67.1% ATS, n=85 (2017-2025); 2017-21 66.1%, 2022-25 69.0%; no losing season",
-          "detail": "Fading Carolina Panthers: Chuba Hubbard ran for 122 and Bryce Young threw for 329 in its last game (100+ rushing and 300+ passing, same game) -- teams in this spot were faded 67.1% of the time ATS next game, 2017-2025 (n=85), no losing season."
-        }
-      ],
-      "nflStatsCheck": "Rule 9: Fading Carolina Panthers: Chuba Hubbard ran for 122 and Bryce Young threw for 329 in its last game (100+ rushing and 300+ passing, same game) -- teams in this spot were faded 67.1% of the time ATS next game, 2017-2025 (n=85), no losing season.",
-      "nflStatsCorrect": false,
-      "nflStatsReturn": -100.0,
-      "nflStatsCover": false,
-      "nflStatsSpreadReturn": -100.0
+      "altBlowoutSpreadReturn": null
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Ravens won by 7 in OT, Browns lost) \u2014 not applicable to either side.",
