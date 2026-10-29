@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-29",
+  "weekday": "Thursday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-10-29T07:57:09Z",
+  "games": [
+    {
+      "espnId": "401873023",
+      "away": "Carolina Panthers",
+      "home": "Green Bay Packers",
+      "time": "8:15 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": -112.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": -192.0,
+      "awayMoneyline": 160.0,
+      "nflStatsFavors": "Carolina Panthers",
+      "nflStatsRules": [
+        {
+          "rule": 5,
+          "name": "Back a road team after a 10+ point loss with 3+ turnovers and yards within 75 of the opponent",
+          "backtest": "65.3% ATS, n=75 (2017-2025); no losing season",
+          "detail": "Backing Carolina Panthers: lost last game by 30 with 4 turnovers while gaining 266 yards to 322 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 5: Backing Carolina Panthers: lost last game by 30 with 4 turnovers while gaining 266 yards to 322 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season."
+    }
+  ]
+}
