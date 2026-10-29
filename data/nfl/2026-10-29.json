@@ -3,30 +3,8 @@
   "weekday": "Thursday",
   "sport": "nfl",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-10-29T07:57:09Z",
+  "generatedAt": "2026-10-29T18:00:00Z",
   "games": [
-    {
-      "espnId": "401873023",
-      "away": "Carolina Panthers",
-      "home": "Green Bay Packers",
-      "time": "8:15 PM ET",
-      "homeSpread": -3.5,
-      "awaySpread": 3.5,
-      "homeSpreadOdds": -112.0,
-      "awaySpreadOdds": -108.0,
-      "homeMoneyline": -192.0,
-      "awayMoneyline": 160.0,
-      "nflStatsFavors": "Carolina Panthers",
-      "nflStatsRules": [
-        {
-          "rule": 5,
-          "name": "Back a road team after a 10+ point loss with 3+ turnovers and yards within 75 of the opponent",
-          "backtest": "65.3% ATS, n=75 (2017-2025); no losing season",
-          "detail": "Backing Carolina Panthers: lost last game by 30 with 4 turnovers while gaining 266 yards to 322 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season."
-        }
-      ],
-      "nflStatsCheck": "Rule 5: Backing Carolina Panthers: lost last game by 30 with 4 turnovers while gaining 266 yards to 322 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season."
-    }
+    {"altBlowoutCheck":"Not applicable to either team — this check requires a 17+ point win in the team's last game. Carolina's last game was a 30-point loss to Tampa Bay (13-43) and Green Bay's last game was a 3-point loss to Detroit (17-20); neither was a blowout win, so no sub-conditions were evaluated and no points apply either way.","altBlowoutFavors":null,"altCategoryTally":"4-0","altConfidence":"lean","altCorrect":null,"altCover":null,"altPick":"Green Bay Packers","altReasons":["Scoring margin: Green Bay (blended PD/g +0.8 vs Carolina -2.6). No QB-change discount applies — Jordan Love and Bryce Young have each been their team's primary starter all season.","Rest: neutral — both teams are on the identical short Thursday turnaround from their Week 7 Sunday games.","Travel: Green Bay (Carolina must travel from Charlotte to Green Bay on a short week, a cold-weather, time-zone-crossing road trip; Packers stay home).","Injuries/Lineup: neutral — two multi-starter clusters cancel out. Carolina is missing top pass-rusher Jaelan Phillips (hamstring) and its highest-PFF-graded lineman Damien Lewis (knee) — a cluster that would weight x2 for Green Bay — but Green Bay is missing two O-line starters, C Sean Rhyan (ankle) and RG Travis Glover (knee) — a cluster that would weight x2 for Carolina. The two double-weighted clusters offset, netting this category to neutral.","Form: neutral — both teams are 2-1 over their last three games (Carolina beat Detroit and Philadelphia before a 30-point blowout loss to Tampa Bay; Green Bay beat Chicago and Dallas before a 3-point loss at Detroit). No QB-change discount applies since Young and Love started all three games apiece.","Motivation/Spot: neutral — no clear rivalry, lookahead, or standings-pressure signal found; the lone revenge angle (Carolina won at Lambeau last November) belongs to Green Bay, not Carolina.","Weather/Venue: neutral — mild outdoor conditions at Lambeau (mid-50s°F, light wind under 15mph, ~15% rain chance); Carolina already plays outdoors, so there's no dome-to-outdoor penalty.","Market: Green Bay (line has moved from GB -3/-162 at open to GB -3.5/-4 and -194 to -200 by game week across multiple books, with the total ticking up too — consensus money trending toward the Packers).","Matchup splits: Green Bay (Carolina is down to two healthy cornerbacks, Will Lee III and Chau Smith-Wade, with Jaycee Horn and Mike Jackson on IR and Akayleb Evans banged up after allowing a 143.1 rating to Tampa Bay — a clean mismatch against Jordan Love and Christian Watson's passing attack)."],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Carolina prior game (Wk7 vs TB, CBS Gametracker): lost 43-13 (margin -30), 266 total net yards, 17/31 passing (5.74 YPA), 18 rush attempts — no pattern matched (Pattern A needs 426+ total yards, had 266; Pattern B needs 7.5+ YPA, had 5.74; Patterns C/D need 34+ rush attempts, had 18). Green Bay prior game (Wk7 at DET, CBS Gametracker): lost 17-20 (margin -3), 324 total net yards, 27/45 passing (5.87 YPA), 19 rush attempts — no pattern matched (margin under 11 for Pattern A; YPA under 7.5 for Pattern B; rush attempts under 34 for Patterns C/D). Net: no pattern fired for either team.","altTrendFavors":null,"away":"Carolina Panthers","awayMoneyline":162,"awayPDpg":-2.6,"awayQB":"Bryce Young","awayQBRating":100,"awayScore":null,"awaySpread":3.5,"awaySpreadOdds":-105,"awayYPP":5.78,"confidence":"skip","correct":null,"home":"Green Bay Packers","homeMoneyline":-194,"homePDpg":0.8,"homeQB":"Jordan Love","homeQBRating":95.5,"homeScore":null,"homeSpread":-3.5,"homeSpreadOdds":-115,"homeYPP":5.36,"nflStatsCheck":"Rule 5: Backing Carolina Panthers: lost last game by 30 with 4 turnovers while gaining 266 yards to 322 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season.","nflStatsFavors":"Carolina Panthers","nflStatsRules":[{"backtest":"65.3% ATS, n=75 (2017-2025); no losing season","detail":"Backing Carolina Panthers: lost last game by 30 with 4 turnovers while gaining 266 yards to 322 -- a turnover-driven loss, not a beating -- and is on the road now; teams in this spot covered 65.3% ATS, 2017-2025 (n=75), no losing season.","name":"Back a road team after a 10+ point loss with 3+ turnovers and yards within 75 of the opponent","rule":5}],"offGap":22.6,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g -2.6 vs +0.8 (blended 50/50 this season + last season)","Yds/play 5.78 vs 5.36 — offense-percentile gap ~22.6 pts (Panthers ~76th pctl, Packers ~53rd pctl), below the 30-pt skip threshold","QB rating 100.0 vs 95.5 (Young vs Love, 2026 season)"],"time":"8:15 PM ET"}
   ]
 }
