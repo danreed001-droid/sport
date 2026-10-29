@@ -52,6 +52,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   Routine's scope and the feed the grader reads -- with lines from ESPN's
   pickcenter, marked autoSlate so a Routine's slate still replaces it.
   `archive_lines.py` keeps NCAAB opening/closing lines too.
+- NCAAB Stats (`scripts/ncaab_stats_signals.py`, rules in `scripts/lib/ncaab_stats_rules.py`)
+  patches picks onto the NCAAB slate each run, like NBA/NFL Stats: Rule 1 backs a
+  team after a loss where the opponent out-shot it from three by 25+ points of
+  3P%. Each team's previous game comes from ESPN's team schedule and its box score.
 - **Hand-entered data is the last resort** when a feed doesn't deliver: the
   pick sheet's "Enter data by hand" page (`site/manual.html`) opens a
   `data <sport> YYYY-MM-DD` issue; `.github/workflows/data-intake.yml` runs

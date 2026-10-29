@@ -17,7 +17,7 @@ editing the file directly on GitHub. Used by:
     slate when none exists) and has edited games re-graded;
   - scripts/fetch_scores.py: final scores into the scores archive, so every
     model grades from them and NBA Stats sees them as played games;
-  - scripts/nba_stats_signals.py / nfl_stats_signals.py: the box-score
+  - scripts/nba_stats_signals.py / nfl_stats_signals.py / ncaab_stats_signals.py: the box-score
     facts their rules read (quarters, starters' points, threes, turnovers,
     yards, top rusher and passer).
 """
@@ -43,6 +43,7 @@ LINE_FIELDS = ("awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
                "awayMoneyline", "homeMoneyline", "drawMoneyline", "total")
 BOX_FIELDS = {
     "nba": {"threesMade": (0, 60, True), "threesAttempted": (0, 100, True)},
+    "ncaab": {"threesMade": (0, 60, True), "threesAttempted": (0, 100, True)},
     "nfl": {"turnovers": (0, 15, True), "totalYards": (-100, 1200, True), "passYards": (-100, 900, True),
             "topRusherYards": (-50, 400, True), "topPasserYards": (-50, 700, True)},
 }

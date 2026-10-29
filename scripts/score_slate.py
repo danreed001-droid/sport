@@ -214,6 +214,7 @@ TWO_WAY_SIGNAL_FIELDS = [
     ("altRestBlowoutFavors", "altRestBlowoutCorrect", "altRestBlowoutReturn", "altRestBlowoutCover", "altRestBlowoutSpreadReturn"),
     ("statsFavors", "statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn"),
     ("nflStatsFavors", "nflStatsCorrect", "nflStatsReturn", "nflStatsCover", "nflStatsSpreadReturn"),
+    ("ncaabStatsFavors", "ncaabStatsCorrect", "ncaabStatsReturn", "ncaabStatsCover", "ncaabStatsSpreadReturn"),
 ]
 
 
@@ -238,7 +239,8 @@ def main(sport_key):
     # (idempotent for everything else).
     def needs_stats_grade(doc):
         return any((g.get("statsFavors") and "statsCorrect" not in g)
-                   or (g.get("nflStatsFavors") and "nflStatsCorrect" not in g) for g in doc.get("games", []))
+                   or (g.get("nflStatsFavors") and "nflStatsCorrect" not in g)
+                   or (g.get("ncaabStatsFavors") and "ncaabStatsCorrect" not in g) for g in doc.get("games", []))
 
     pending = sorted(
         [(d, doc) for d, doc in docs if (not doc.get("scored") or needs_stats_grade(doc)) and d < today],

@@ -18,7 +18,7 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
-from lib import nfl_stats_rules  # noqa: E402
+from lib import ncaab_stats_rules, nfl_stats_rules  # noqa: E402
 from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
@@ -28,6 +28,7 @@ SLATE_FIELDS = [
     "altPick", "altConfidence", "altCategoryTally", "altReasons",
     "altTrendCheck", "altBlowoutCheck", "altTrendFavors", "altBlowoutFavors",
     "statsFavors", "statsCheck", "statsRules", "nflStatsFavors", "nflStatsCheck", "nflStatsRules",
+    "ncaabStatsFavors", "ncaabStatsCheck", "ncaabStatsRules",
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore", "manualFields",
 ]
@@ -97,18 +98,22 @@ def nflstats_side(g):
     return side_of(g, g["nflStatsFavors"]) if g.get("nflStatsFavors") else None
 
 
+def ncaabstats_side(g):
+    return side_of(g, g["ncaabStatsFavors"]) if g.get("ncaabStatsFavors") else None
+
+
 # Trend/blowout are only populated on NFL and CFB games, stats only on NBA
 # games and nflstats only on NFL games; every other sport's games lack these
 # keys entirely so these "models" contribute nothing outside their sport.
 MODEL_SIDES = (("ledger", ledger_side), ("alt", alt_side), ("trend", trend_side),
-               ("blowout", blowout_side), ("stats", stats_side), ("nflstats", nflstats_side))
+               ("blowout", blowout_side), ("stats", stats_side), ("nflstats", nflstats_side), ("ncaabstats", ncaabstats_side))
 
 
 def build():
     mypicks = load_mypicks()
     all_docs = {k: store.list_docs(cfg["collection"]) for k, cfg in sports.SPORTS.items()}
 
-    totals = {k: blank() for k in ("ledger", "alt", "trend", "blowout", "stats", "nflstats", "mine")}
+    totals = {k: blank() for k in ("ledger", "alt", "trend", "blowout", "stats", "nflstats", "ncaabstats", "mine")}
     by_sport = {}
     plays = []
     for sport, docs in all_docs.items():
@@ -123,7 +128,8 @@ def build():
                         continue
                     tier = g.get("confidence") if who == "ledger" else g.get("altConfidence") if who == "alt" else None
                     rule_src = {"stats": ("statsRules", RULE_NAMES, RULE_BACKTEST),
-                                "nflstats": ("nflStatsRules", nfl_stats_rules.RULE_NAMES, nfl_stats_rules.RULE_BACKTEST)}.get(who)
+                                "nflstats": ("nflStatsRules", nfl_stats_rules.RULE_NAMES, nfl_stats_rules.RULE_BACKTEST),
+                                "ncaabstats": ("ncaabStatsRules", ncaab_stats_rules.RULE_NAMES, ncaab_stats_rules.RULE_BACKTEST)}.get(who)
                     play_rules = None
                     if rule_src and g.get(rule_src[0]):
                         nums = [str(r.get("rule")) for r in g[rule_src[0]]]
@@ -156,7 +162,7 @@ def build():
                                  "m": r["ml"]["result"], "mp": r["ml"]["profit"],
                                  "x": {"dog": 1, "fav": 2}.get(r["ml"]["skip"], 0), "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
                     plays.append(play)
-                    bucket = by_sport.setdefault(sport, {k: blank() for k in ("ledger", "alt", "trend", "blowout", "stats", "nflstats", "mine")})
+                    bucket = by_sport.setdefault(sport, {k: blank() for k in ("ledger", "alt", "trend", "blowout", "stats", "nflstats", "ncaabstats", "mine")})
                     tally(bucket[who], r)
 
     # NBA Stats record per rule this season: a pick counts toward every rule
@@ -188,6 +194,17 @@ def build():
                    "backtest": nfl_stats_rules.STACKED_BACKTEST}
     nfl_rules = [{"rule": n, "name": nfl_stats_rules.RULE_NAMES[n], "backtest": nfl_stats_rules.RULE_BACKTEST[n], **nfl_records[n]}
                  for n in sorted(nfl_stats_rules.RULE_NAMES)]
+    ncaab_records = {n: {"w": 0, "l": 0, "p": 0} for n in ncaab_stats_rules.RULE_NAMES}
+    for date_str, doc in all_docs.get("ncaab", []):
+        for g in doc.get("games", []):
+            if not g.get("ncaabStatsFavors") or not is_final(doc, g):
+                continue
+            key = {"cover": "w", "miss": "l", "push": "p"}.get(grade("ncaab", g, side_of(g, g["ncaabStatsFavors"]))["ats"]["result"])
+            for rule in g.get("ncaabStatsRules") or []:
+                if key and rule.get("rule") in ncaab_records:
+                    ncaab_records[rule["rule"]][key] += 1
+    ncaab_rules = [{"rule": n, "name": ncaab_stats_rules.RULE_NAMES[n], "backtest": ncaab_stats_rules.RULE_BACKTEST[n], **ncaab_records[n]}
+                   for n in sorted(ncaab_stats_rules.RULE_NAMES)]
 
     slate_date = max((d for docs in all_docs.values() for d, _ in docs), default=None)
     slate = {"date": slate_date, "weekday": None, "sports": {}}
@@ -240,6 +257,7 @@ def build():
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
         "nflStatsRules": nfl_rules,
+        "ncaabStatsRules": ncaab_rules,
         "health": read_health(),
         "manual": read_manual(),
         "statsStacked": stats_stacked,

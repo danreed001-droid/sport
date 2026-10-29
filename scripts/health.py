@@ -22,7 +22,7 @@ from lib import store  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 
 PATH = os.path.join(store.REPO_ROOT, "data", "health.json")
-LABELS = {"manual": "Hand-entered data", "nbaStats": "NBA Stats picks", "nflStats": "NFL Stats picks", "ncaabSlate": "NCAA basketball slate", "scoring": "Scores and grading", "lines": "Line archive"}
+LABELS = {"manual": "Hand-entered data", "nbaStats": "NBA Stats picks", "nflStats": "NFL Stats picks", "ncaabSlate": "NCAA basketball slate", "ncaabStats": "NCAAB Stats picks", "scoring": "Scores and grading", "lines": "Line archive"}
 
 
 def load():

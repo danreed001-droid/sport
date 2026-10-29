@@ -79,6 +79,11 @@ jobs:
         continue-on-error: true
         run: python scripts/auto_slate.py ncaab
 
+      - name: Patch today's NCAAB Stats picks onto the NCAA basketball slate
+        id: ncaabstats
+        continue-on-error: true
+        run: python scripts/ncaab_stats_signals.py
+
       - name: Fetch scores and grade past slates
         id: score
         continue-on-error: true
@@ -94,7 +99,7 @@ jobs:
         run: >
           python scripts/health.py
           manual=${{ steps.manual.outcome }}
-          nbaStats=${{ steps.nba.outcome }} nflStats=${{ steps.nfl.outcome }} ncaabSlate=${{ steps.ncaab.outcome }}
+          nbaStats=${{ steps.nba.outcome }} nflStats=${{ steps.nfl.outcome }} ncaabSlate=${{ steps.ncaab.outcome }} ncaabStats=${{ steps.ncaabstats.outcome }}
           scoring=${{ steps.score.outcome }} lines=${{ steps.lines.outcome }}
 
       - name: Commit and push results
@@ -117,7 +122,7 @@ jobs:
           exit 1
 
       - name: Mark the run failed if any step failed
-        if: steps.manual.outcome == 'failure' || steps.nba.outcome == 'failure' || steps.nfl.outcome == 'failure' || steps.ncaab.outcome == 'failure' || steps.score.outcome == 'failure' || steps.lines.outcome == 'failure'
+        if: steps.manual.outcome == 'failure' || steps.nba.outcome == 'failure' || steps.nfl.outcome == 'failure' || steps.ncaab.outcome == 'failure' || steps.ncaabstats.outcome == 'failure' || steps.score.outcome == 'failure' || steps.lines.outcome == 'failure'
         run: |
-          echo "::error::A step failed: manual data=${{ steps.manual.outcome }}, NBA Stats=${{ steps.nba.outcome }}, NFL Stats=${{ steps.nfl.outcome }}, NCAAB slate=${{ steps.ncaab.outcome }}, scoring=${{ steps.score.outcome }}, lines=${{ steps.lines.outcome }}"
+          echo "::error::A step failed: manual data=${{ steps.manual.outcome }}, NBA Stats=${{ steps.nba.outcome }}, NFL Stats=${{ steps.nfl.outcome }}, NCAAB slate=${{ steps.ncaab.outcome }}, NCAAB Stats=${{ steps.ncaabstats.outcome }}, scoring=${{ steps.score.outcome }}, lines=${{ steps.lines.outcome }}"
           exit 1

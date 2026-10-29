@@ -49,12 +49,14 @@ def normalize(doc, sport):
 
 
 # Fields this repo writes onto ledger slates itself (scripts/nba_stats_signals.py,
-# scripts/nfl_stats_signals.py and their grading in score_slate.py). The repo copy is the source of truth
+# scripts/nfl_stats_signals.py, scripts/ncaab_stats_signals.py and their grading in score_slate.py). The repo copy is the source of truth
 # for them: a database copy may lack them, or hold a stale version mirrored
 # back from an earlier repo state, so a sync always takes the repo's.
 REPO_OWNED_GAME_FIELDS = ("statsFavors", "statsCheck", "statsRules", "statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn",
                           "nflStatsFavors", "nflStatsCheck", "nflStatsRules", "nflStatsCorrect", "nflStatsReturn",
-                          "nflStatsCover", "nflStatsSpreadReturn")
+                          "nflStatsCover", "nflStatsSpreadReturn",
+                          "ncaabStatsFavors", "ncaabStatsCheck", "ncaabStatsRules", "ncaabStatsCorrect", "ncaabStatsReturn",
+                          "ncaabStatsCover", "ncaabStatsSpreadReturn")
 
 
 def carry_repo_fields(current, doc):
