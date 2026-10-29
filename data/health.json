@@ -36,6 +36,12 @@
       "status": "success",
       "okOn": "2026-10-29",
       "failingSince": null
+    },
+    "ncaabStats": {
+      "label": "NCAAB Stats picks",
+      "status": "success",
+      "okOn": "2026-10-29",
+      "failingSince": null
     }
   }
 }
