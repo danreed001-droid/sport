@@ -393,10 +393,16 @@ footer b{color:var(--ink);}
     {k:'mine', label:'You', short:'You', role:'your picks', c:'var(--mine)'}
   ];
   var WHO_BY_KEY = {}; WHO.forEach(function(w){ WHO_BY_KEY[w.k] = w; });
-  var DASH = {sport:'all', market:'ats', range:'all', from:null, to:null, mlCutoff:false};
+  var DASH = {sports:[], market:'ats', range:'all', from:null, to:null, mlCutoff:false};
   try{ var ds = JSON.parse(localStorage.getItem('picksheet.dash')||'null'); if(ds) DASH = Object.assign(DASH, ds); }catch(e){}
   if(['7','30','year','all','custom'].indexOf(DASH.range) < 0) DASH.range = 'all';
   DASH.mlCutoff = !!DASH.mlCutoff;
+  // Sport filter is multi-select: an empty list means every sport. (Older
+  // saved filters held a single 'sport'; carry it over.)
+  if(!Array.isArray(DASH.sports)) DASH.sports = [];
+  if(DASH.sport && DASH.sport !== 'all' && DASH.sports.indexOf(DASH.sport) < 0) DASH.sports.push(DASH.sport);
+  delete DASH.sport;
+  function sportOn(k){ return !DASH.sports.length || DASH.sports.indexOf(k) >= 0; }
   function saveDash(){ try{ localStorage.setItem('picksheet.dash', JSON.stringify(DASH)); }catch(e){} }
   var SVGNS = 'http://www.w3.org/2000/svg';
   function fmtDay(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'}); }
@@ -420,7 +426,7 @@ footer b{color:var(--ink);}
   }
   function filteredPlays(withPending){
     var ps = withPending ? DATA.plays : DATA.plays.filter(function(p){ return !p.pd; }), rb = rangeBounds();
-    if(DASH.sport !== 'all') ps = ps.filter(function(p){ return p.s === DASH.sport; });
+    if(DASH.sports.length) ps = ps.filter(function(p){ return sportOn(p.s); });
     if(rb) ps = ps.filter(function(p){ return p.d >= rb[0] && p.d <= rb[1]; });
     return ps;
   }
@@ -617,13 +623,17 @@ footer b{color:var(--ink);}
     function seg(name, opts){
       return '<span class="segctl" role="group" aria-label="'+name+'">'+opts.map(function(o){ return '<button type="button" data-f="'+name+'" data-v="'+o[0]+'" aria-pressed="'+(DASH[name]===o[0])+'">'+o[1]+'</button>'; }).join('')+'</span>';
     }
-    if(DASH.sport!=='all' && sp.indexOf(DASH.sport)<0) DASH.sport = 'all';
+    DASH.sports = DASH.sports.filter(function(k){ return sp.indexOf(k) >= 0; });
+    if(DASH.sports.length === sp.length) DASH.sports = [];  // every sport picked = all
     return '<section id="dashboard"><div class="eyebrow">Scorecard</div><h2 class="sec-h">How everyone is doing</h2>'
-      + '<p class="sec-p">Every graded play, flat $100 a bet at the lines stored on pick day. The filters apply to everything below them.</p>'
+      + '<p class="sec-p">Every graded play, flat $100 a bet at the lines stored on pick day. The filters apply to everything below them; tap more than one sport to combine them.</p>'
       + '<div class="filters">'
         + '<span class="fgroup"><span class="flbl">Range</span>'+seg('range',[['7','7 days'],['30','30 days'],['year','This year'],['all','All time'],['custom','Custom']])
           + '<span class="daterange" id="rcustom"'+(DASH.range==='custom'?'':' hidden')+'><label for="rfrom" class="sr">From</label><input type="date" id="rfrom"> <span class="to">to</span> <label for="rto" class="sr">To</label><input type="date" id="rto"></span></span>'
-        + '<span class="fgroup"><span class="flbl">Sport</span>'+seg('sport',[['all','All']].concat(sp.map(function(k){ return [k, esc(DATA.sportLabels[k]||k.toUpperCase()).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB')]; })))+'</span>'
+        + '<span class="fgroup"><span class="flbl">Sports</span><span class="segctl" role="group" aria-label="Sports (pick one or more)">'
+          + '<button type="button" data-sp="all" aria-pressed="'+(!DASH.sports.length)+'">All</button>'
+          + sp.map(function(k){ return '<button type="button" data-sp="'+k+'" aria-pressed="'+(DASH.sports.indexOf(k)>=0)+'">'+esc(DATA.sportLabels[k]||k.toUpperCase()).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB')+'</button>'; }).join('')
+          + '</span></span>'
         + '<span class="fgroup"><span class="flbl">Market</span>'+seg('market',[['ats','Against the spread'],['ml','Moneyline']])
           + '<label class="checklbl" title="When checked, leaves out −400-or-shorter favorites and 7+ point NFL/college/NCAAB dogs from the moneyline record and profit, for every predictor. Unchecked, every graded pick counts on the moneyline regardless of price."><input type="checkbox" id="mlcutoff"'+(DASH.mlCutoff?' checked':'')+'> Apply −400 fav / 7+ dog cutoff</label></span>'
       + '</div>'
@@ -638,14 +648,14 @@ footer b{color:var(--ink);}
   }
 
   var LOG = {who:'all', result:'all', shown:50, mode:'day', day:null, from:null, to:null};
-  function logSportPlays(){ return DATA.plays.filter(function(p){ return DASH.sport==='all' || p.s===DASH.sport; }); }
+  function logSportPlays(){ return DATA.plays.filter(function(p){ return sportOn(p.s); }); }
   function logDays(){ var seen = {}; logSportPlays().forEach(function(p){ seen[p.d] = 1; }); return Object.keys(seen).sort(); }
   function logHtml(){
     function seg(name, opts){
       return '<span class="segctl" role="group" aria-label="'+name+'">'+opts.map(function(o){ return '<button type="button" data-lf="'+name+'" data-v="'+o[0]+'" aria-pressed="'+(LOG[name]===o[0])+'">'+o[1]+'</button>'; }).join('')+'</span>';
     }
     return '<section id="picklog"><div class="eyebrow">Pick log</div><h2 class="sec-h">Every pick, win or lose</h2>'
-      + '<p class="sec-p">Each model\'s pick and yours, graded against the spread and on the moneyline at $100 a bet. Pick a day or a date range; the sport filter above applies too.</p>'
+      + '<p class="sec-p">Each model\'s pick and yours, graded against the spread and on the moneyline at $100 a bet. Pick a day or a date range; the sports filter above applies too.</p>'
       + '<div class="filters">'
         + '<span class="fgroup"><span class="flbl">Dates</span>'+seg('mode',[['day','Day'],['range','Range']])
           + '<span class="daterange" id="lday"><button type="button" class="stepbtn" id="lprev" aria-label="Previous day with picks">‹</button><label for="ldate" class="sr">Day</label><input type="date" id="ldate"><button type="button" class="stepbtn" id="lnext" aria-label="Next day with picks">›</button></span>'
@@ -785,7 +795,7 @@ footer b{color:var(--ink);}
       series: ser.series.map(function(s){ return {label:s.label, short:s.short, c:s.c, vals:s.rate, day:s.day}; }),
       fmt:function(v){ return Math.round(v*10)/10+'%'; }, fmtAxis:function(v){ return v+'%'; }});
 
-    var sportsNow = sportsInPlays().filter(function(k){ return DASH.sport==='all' || k===DASH.sport; });
+    var sportsNow = sportsInPlays().filter(sportOn);
     var groups = sportsNow.map(function(k){
       var sl = list.filter(function(p){ return p.s===k; });
       var lab = (DATA.sportLabels[k]||k).replace('College Football (FBS)','College FB');
@@ -1064,6 +1074,18 @@ footer b{color:var(--ink);}
       var ds = logDays(), cur = LOG.day;
       var nxt = e.target.id === 'lprev' ? ds.filter(function(d){ return d < cur; }).pop() : ds.filter(function(d){ return d > cur; })[0];
       if(nxt){ LOG.day = nxt; LOG.shown = 50; renderLog(); }
+      return;
+    }
+    var spb = e.target.closest('.segctl button[data-sp]');
+    if(spb){
+      var k = spb.getAttribute('data-sp'), i = DASH.sports.indexOf(k);
+      if(k === 'all') DASH.sports = [];
+      else if(i >= 0) DASH.sports.splice(i, 1);
+      else DASH.sports.push(k);
+      if(DASH.sports.length === sportsInPlays().length) DASH.sports = [];
+      saveDash();
+      document.querySelectorAll('.segctl button[data-sp]').forEach(function(b){ var v = b.getAttribute('data-sp'); b.setAttribute('aria-pressed', String(v === 'all' ? !DASH.sports.length : DASH.sports.indexOf(v) >= 0)); });
+      LOG.shown = 50; renderDash(); renderLog();
       return;
     }
     var f = e.target.closest('.segctl button[data-f]');

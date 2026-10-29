@@ -74,22 +74,27 @@ jobs:
         continue-on-error: true
         run: python scripts/nfl_stats_signals.py
 
+      - name: Build today's NCAA basketball slate from ESPN if no Routine has
+        id: ncaab
+        continue-on-error: true
+        run: python scripts/auto_slate.py ncaab
+
       - name: Fetch scores and grade past slates
         id: score
         continue-on-error: true
         run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab soccer epl' }}
 
-      - name: Archive finished NBA and NFL games' opening and closing lines
+      - name: Archive finished NBA, NFL and NCAAB games' opening and closing lines
         id: lines
         continue-on-error: true
-        run: python scripts/archive_lines.py nba nfl
+        run: python scripts/archive_lines.py nba nfl ncaab
 
       - name: Record run health
         if: always()
         run: >
           python scripts/health.py
           manual=${{ steps.manual.outcome }}
-          nbaStats=${{ steps.nba.outcome }} nflStats=${{ steps.nfl.outcome }}
+          nbaStats=${{ steps.nba.outcome }} nflStats=${{ steps.nfl.outcome }} ncaabSlate=${{ steps.ncaab.outcome }}
           scoring=${{ steps.score.outcome }} lines=${{ steps.lines.outcome }}
 
       - name: Commit and push results
@@ -112,7 +117,7 @@ jobs:
           exit 1
 
       - name: Mark the run failed if any step failed
-        if: steps.manual.outcome == 'failure' || steps.nba.outcome == 'failure' || steps.nfl.outcome == 'failure' || steps.score.outcome == 'failure' || steps.lines.outcome == 'failure'
+        if: steps.manual.outcome == 'failure' || steps.nba.outcome == 'failure' || steps.nfl.outcome == 'failure' || steps.ncaab.outcome == 'failure' || steps.score.outcome == 'failure' || steps.lines.outcome == 'failure'
         run: |
-          echo "::error::A step failed: manual data=${{ steps.manual.outcome }}, NBA Stats=${{ steps.nba.outcome }}, NFL Stats=${{ steps.nfl.outcome }}, scoring=${{ steps.score.outcome }}, lines=${{ steps.lines.outcome }}"
+          echo "::error::A step failed: manual data=${{ steps.manual.outcome }}, NBA Stats=${{ steps.nba.outcome }}, NFL Stats=${{ steps.nfl.outcome }}, NCAAB slate=${{ steps.ncaab.outcome }}, scoring=${{ steps.score.outcome }}, lines=${{ steps.lines.outcome }}"
           exit 1

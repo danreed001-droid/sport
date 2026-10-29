@@ -167,3 +167,32 @@ def fetch_summary_odds(session, espn_sport, espn_league, event_id):
     except Exception:
         pass
     return None, None
+
+
+def pickcenter_lines(session, espn_sport, espn_league, event_id):
+    """Current lines from a game's summary (ESPN's pickcenter): {homeSpread,
+    awaySpread, homeSpreadOdds, awaySpreadOdds, homeMoneyline, awayMoneyline,
+    total}, only the ones posted; {} when there are none yet."""
+    try:
+        d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/{espn_sport}/{espn_league}/summary?event={event_id}",
+                        timeout=20).json()
+    except Exception:
+        return {}
+    pc = (d.get("pickcenter") or [{}])[0]
+    if not isinstance(pc, dict):
+        return {}
+    home, away = pc.get("homeTeamOdds") or {}, pc.get("awayTeamOdds") or {}
+    close = ((pc.get("pointSpread") or {}).get("home") or {}).get("close") or {}
+    spread = fmt_num(str(close.get("line", "")).replace("+", "") or None) if close.get("line") is not None else fmt_num(pc.get("spread"))
+    out = {}
+    if spread is not None:
+        out.update(homeSpread=spread, awaySpread=-spread)
+    for key, side, field in (("homeSpreadOdds", home, "spreadOdds"), ("awaySpreadOdds", away, "spreadOdds"),
+                             ("homeMoneyline", home, "moneyLine"), ("awayMoneyline", away, "moneyLine")):
+        v = fmt_ml(side.get(field))
+        if v is not None:
+            out[key] = v
+    if fmt_num(pc.get("overUnder")) is not None:
+        out["total"] = fmt_num(pc.get("overUnder"))
+    return out
+

@@ -46,6 +46,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
+- NCAA basketball: when no Routine has written the day's slate,
+  `scripts/auto_slate.py ncaab` (every scoring run) builds it from ESPN's
+  default scoreboard -- the games involving an AP Top 25 team, the Basketball
+  Routine's scope and the feed the grader reads -- with lines from ESPN's
+  pickcenter, marked autoSlate so a Routine's slate still replaces it.
+  `archive_lines.py` keeps NCAAB opening/closing lines too.
 - **Hand-entered data is the last resort** when a feed doesn't deliver: the
   pick sheet's "Enter data by hand" page (`site/manual.html`) opens a
   `data <sport> YYYY-MM-DD` issue; `.github/workflows/data-intake.yml` runs

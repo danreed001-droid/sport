@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Archives each finished NBA or NFL game's opening and closing lines (spread,
+"""Archives each finished NBA, NFL or NCAA basketball game's opening and closing lines (spread,
 total, moneyline, DraftKings via ESPN's pickcenter) to data/raw/<sport>_lines.csv,
 so line-movement ideas can be backtested later. ESPN only exposes opening lines
 for recent seasons, so this keeps our own copy.
@@ -12,7 +12,7 @@ archive also holds preseason games, so they're archived too. nba_lines.csv
 was seeded with all of 2025-26 and nfl_lines.csv with the 2025 and 2026
 seasons so far (whatever opening lines ESPN still had).
 
-Usage: python scripts/archive_lines.py nba|nfl [...]   (default: nba nfl)
+Usage: python scripts/archive_lines.py nba|nfl|ncaab [...]   (default: nba nfl)
 """
 import csv
 import os
@@ -23,7 +23,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ESPN_PATH = {"nba": "basketball/nba", "nfl": "football/nfl"}
+ESPN_PATH = {"nba": "basketball/nba", "nfl": "football/nfl", "ncaab": "basketball/mens-college-basketball"}
 RETRY_DAYS = 3
 FIELDS = ["game_id", "date", "away", "home", "away_score", "home_score", "provider",
           "spread_open", "spread_close", "spread_odds_open", "spread_odds_close",
@@ -81,7 +81,8 @@ def archive(sport):
             done = {row["game_id"] for row in csv.DictReader(f)}
     with open(scores_csv, encoding="utf-8") as f:
         finals = [r for r in csv.DictReader(f)
-                  if (r.get("Status") or "").startswith("Final") and r["Game_ID"] not in done]
+                  if (r.get("Status") or "").startswith("Final") and r["Game_ID"] not in done
+                  and not r["Game_ID"].startswith("manual-")]  # hand-entered games have no ESPN summary
     if not finals:
         print(f"{label} lines: nothing new to archive.")
         return
