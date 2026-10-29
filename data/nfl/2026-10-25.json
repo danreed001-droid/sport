@@ -193,7 +193,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Baltimore Ravens",
+      "nflStatsRules": [
+        {
+          "rule": 10,
+          "name": "Bet on the ATS record catching up: back a winning team covering under 40%, fade a losing team covering 60%+",
+          "backtest": "back side 66.7% ATS (n=78), fade side 61.9% (n=147), 2017-2025; no losing season either way",
+          "detail": "Backing Baltimore Ravens: 4-2 straight up but only 2-4 against the spread (33%) -- a winning team that hasn't been covering covered 66.7% ATS in its next game, 2017-2025 (n=78), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 10: Backing Baltimore Ravens: 4-2 straight up but only 2-4 against the spread (33%) -- a winning team that hasn't been covering covered 66.7% ATS in its next game, 2017-2025 (n=78), no losing season.",
+      "nflStatsCorrect": false,
+      "nflStatsReturn": -100.0,
+      "nflStatsCover": false,
+      "nflStatsSpreadReturn": -100.0
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a 17+ point win \u2014 check does not apply.",
@@ -313,7 +327,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Miami Dolphins",
+      "nflStatsRules": [
+        {
+          "rule": 10,
+          "name": "Bet on the ATS record catching up: back a winning team covering under 40%, fade a losing team covering 60%+",
+          "backtest": "back side 66.7% ATS (n=78), fade side 61.9% (n=147), 2017-2025; no losing season either way",
+          "detail": "Fading New York Jets: 2-4 straight up but 3-2 against the spread (60%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 10: Fading New York Jets: 2-4 straight up but 3-2 against the spread (60%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season.",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 180.0,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 90.91
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a 17+ point win \u2014 check does not apply.",
@@ -624,7 +652,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Green Bay Packers",
+      "nflStatsRules": [
+        {
+          "rule": 10,
+          "name": "Bet on the ATS record catching up: back a winning team covering under 40%, fade a losing team covering 60%+",
+          "backtest": "back side 66.7% ATS (n=78), fade side 61.9% (n=147), 2017-2025; no losing season either way",
+          "detail": "Backing Green Bay Packers: 4-2 straight up but only 2-4 against the spread (33%) -- a winning team that hasn't been covering covered 66.7% ATS in its next game, 2017-2025 (n=78), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 10: Backing Green Bay Packers: 4-2 straight up but only 2-4 against the spread (33%) -- a winning team that hasn't been covering covered 66.7% ATS in its next game, 2017-2025 (n=78), no losing season.",
+      "nflStatsCorrect": false,
+      "nflStatsReturn": -100.0,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 102.0
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a 17+ point win \u2014 check does not apply.",

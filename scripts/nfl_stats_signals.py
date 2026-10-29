@@ -14,6 +14,10 @@ scripts/lib/nfl_stats_rules.py.
   Rule 6: fade a team that gained 500+ yards, 300+ of them passing, last game.
   Rule 9: fade a team after a game with both a 100-yard rusher and a
   350-yard passer (only the pair works: either one alone is a coin flip).
+  Rule 10: bet on a team's ATS record catching up with its record -- back a
+  winning team that has covered under 40%, fade a losing team that has
+  covered 60%+ (5+ games with a line). When the two records agree, there's
+  no edge; it's their disagreement that reverts.
   A pick two or more rules agree on is "stacked" (69.4% ATS in the replay).
   Neutral-site games (London, Germany, etc.) are left out, as in the backtests;
   if the rules point at opposite sides, the game gets no pick.
@@ -48,6 +52,8 @@ TO_LOSS_YARDS = 75   # ...and total yards within this many of the opponent's
 BIG_PASS = 300       # rule 4: QB passing yards in last game's win
 BIG_YARDS = 500      # rule 6: team total yards last game...
 BOTH_RUSH, BOTH_PASS = 100, 350  # rule 9: top rusher and top passer, same game
+ATS_MIN_GAMES = 5             # rule 10: games with a line needed...
+ATS_LOW, ATS_HIGH = 0.4, 0.6  # ...a winning team covering under 40%, a losing team covering 60%+
 BIG_YARDS_PASS = 300  # ...with this many net passing yards or more
 BIG_RUSH = 150       # rule 3: top rusher's yards in the team's last game
 LOOKBACK_DAYS = 16   # how far back to look for a team's last regular-season game
@@ -154,6 +160,72 @@ def team_box(session, event_id):
         FAILS[0] += 1
         return {}
     return _BOX[event_id]
+
+
+_ODDS = {}
+
+
+def _home_spread(session, d, home, away, event_id):
+    """A game's closing home spread: our own slate for that date (which
+    carries any hand-entered line), else ESPN's core odds feed; None if
+    neither has one."""
+    for g in (store.read_doc("nfl", d) or {}).get("games", []):
+        if g.get("home") == home and g.get("away") == away and _num(g.get("homeSpread")) is not None:
+            return _num(g.get("homeSpread"))
+    if event_id not in _ODDS:
+        try:
+            items = session.get(f"https://sports.core.api.espn.com/v2/sports/football/leagues/nfl/events/{event_id}/competitions/{event_id}/odds",
+                                timeout=20).json().get("items", [])
+            _ODDS[event_id] = _num(next((i.get("spread") for i in items if i.get("spread") is not None), None))
+        except Exception:
+            FAILS[0] += 1
+            return None  # not cached: retried next time
+    return _ODDS[event_id]
+
+
+def season_ats(session, team, date_str):
+    """The team's regular-season record before date_str, straight up and
+    against the spread: {w, n, cov, miss} (ties are non-wins, pushes and
+    games without a line are left out of the ATS count, as in the backtest).
+    Games come from ESPN's scoreboards since Aug 25, plus hand-entered finals."""
+    d0 = date.fromisoformat(date_str)
+    d = date(d0.year if d0.month >= 8 else d0.year - 1, 8, 25)
+    out = {"w": 0, "n": 0, "cov": 0, "miss": 0}
+
+    def add(mine, theirs, my_spread):
+        out["n"] += 1
+        out["w"] += mine > theirs
+        if my_spread is not None and mine - theirs + my_spread != 0:
+            out["cov" if mine - theirs + my_spread > 0 else "miss"] += 1
+
+    while d < d0:
+        ds, listed = d.isoformat(), set()
+        m = manual.team_game("nfl", ds, team)
+        for ev in _board(session, ds):
+            if (ev.get("season") or {}).get("type") != 2 or et_date_of_iso(ev["date"]) != ds:
+                continue
+            comp = ev["competitions"][0]
+            if not comp.get("status", {}).get("type", {}).get("completed"):
+                continue
+            t = {c["homeAway"]: c for c in comp["competitors"]}
+            names = {s_: t[s_]["team"]["displayName"] for s_ in ("home", "away")}
+            listed.add(frozenset(names.values()))
+            if team not in names.values():
+                continue
+            score = {s_: float(t[s_]["score"]) for s_ in ("home", "away")}
+            if manual.has_final(m) and frozenset((m["away"], m["home"])) == frozenset(names.values()):
+                score = {"home": m["homeScore"], "away": m["awayScore"]}  # hand-entered score wins
+            side = "home" if names["home"] == team else "away"
+            other = "away" if side == "home" else "home"
+            hs = _home_spread(session, ds, names["home"], names["away"], ev["id"])
+            add(score[side], score[other], None if hs is None else (hs if side == "home" else -hs))
+        if manual.has_final(m) and frozenset((m["away"], m["home"])) not in listed:
+            side = "home" if m["home"] == team else "away"
+            hs = _num(m.get("homeSpread"))
+            mine, theirs = (m["homeScore"], m["awayScore"]) if side == "home" else (m["awayScore"], m["homeScore"])
+            add(mine, theirs, None if hs is None else (hs if side == "home" else -hs))
+        d += timedelta(days=1)
+    return out
 
 
 def season_pct(session, team, date_str):
@@ -338,6 +410,18 @@ def evaluate(session, date_str, g, neutral):
         picks.append((g["home"], 1, f"Backing {g['home']}: a {spread:g}-point home underdog ({BIG_HOME_DOG}+) -- home dogs this big "
                                     f"covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."))
     for team, opp in ((g["home"], g["away"]), (g["away"], g["home"])):
+        rec = season_ats(session, team, date_str)
+        graded = rec["cov"] + rec["miss"]
+        if graded >= ATS_MIN_GAMES and rec["n"]:
+            pct, win = rec["cov"] / graded, rec["w"] / rec["n"]
+            su = f"{rec['w']}-{rec['n'] - rec['w']}"
+            ats = f"{rec['cov']}-{rec['miss']}"
+            if pct < ATS_LOW and win > 0.5:
+                picks.append((team, 10, f"Backing {team}: {su} straight up but only {ats} against the spread ({pct:.0%}) -- a winning team "
+                                        f"that hasn't been covering covered 66.7% ATS in its next game, 2017-2025 (n=78), no losing season."))
+            elif pct >= ATS_HIGH and win < 0.5:
+                picks.append((opp, 10, f"Fading {team}: {su} straight up but {ats} against the spread ({pct:.0%}) -- a losing team that "
+                                       f"keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season."))
         last = last_game(session, team, date_str)
         line = None if spread is None else (spread if team == g["home"] else -spread)
         if last and line is not None and line > 0:
@@ -376,7 +460,12 @@ def evaluate(session, date_str, g, neutral):
                                   f"in their next game, 2017-2025 (n=100)."))
     if len({p for p, _, _ in picks}) != 1:
         return None
-    return picks[0][0], [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], "detail": t} for _, n, t in sorted(picks, key=lambda x: x[1])]
+    # One entry per rule: Rule 10 can fire from both teams' records at once
+    # (backing one, fading the other) -- that's still one rule, not a stack.
+    merged = {}
+    for _, n, t in sorted(picks, key=lambda x: x[1]):
+        merged[n] = merged[n] + " Also: " + t if n in merged else t
+    return picks[0][0], [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], "detail": t} for n, t in merged.items()]
 
 
 def run_for_date(session, date_str):

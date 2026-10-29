@@ -480,21 +480,7 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null,
-      "nflStatsFavors": "Dallas Cowboys",
-      "nflStatsRules": [
-        {
-          "rule": 4,
-          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
-          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
-          "detail": "Fading Green Bay Packers: Jordan Love threw for 367 yards in last game's win (300+), and Green Bay Packers is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
-        }
-      ],
-      "nflStatsCheck": "Rule 4: Fading Green Bay Packers: Jordan Love threw for 367 yards in last game's win (300+), and Green Bay Packers is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
-      "nflStatsCorrect": false,
-      "nflStatsReturn": -100.0,
-      "nflStatsCover": false,
-      "nflStatsSpreadReturn": -100.0
+      "altBlowoutSpreadReturn": null
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Saints lost by 10, Giants tied) \u2014 not applicable to either side.",
@@ -613,27 +599,7 @@
       "altBlowoutCorrect": false,
       "altBlowoutReturn": -100.0,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": 0.0,
-      "nflStatsFavors": "New York Jets",
-      "nflStatsRules": [
-        {
-          "rule": 4,
-          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
-          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
-          "detail": "Fading New England Patriots: Drake Maye threw for 374 yards in last game's win (300+), and New England Patriots is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
-        },
-        {
-          "rule": 6,
-          "name": "Fade a team that gained 500+ yards, 300+ of them passing, last game",
-          "backtest": "60.0% ATS, n=115 (2017-2025); 2017-21 59.8%, 2022-25 60.7%; only losing season 2021 (7-8)",
-          "detail": "Fading New England Patriots: gained 536 yards last game, 371 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115)."
-        }
-      ],
-      "nflStatsCheck": "Rule 4: Fading New England Patriots: Drake Maye threw for 374 yards in last game's win (300+), and New England Patriots is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+. Rule 6: Fading New England Patriots: gained 536 yards last game, 371 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115).",
-      "nflStatsCorrect": false,
-      "nflStatsReturn": -100.0,
-      "nflStatsCover": null,
-      "nflStatsSpreadReturn": 0.0
+      "altBlowoutSpreadReturn": 0.0
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Steelers won by 12, Buccaneers won by 8) \u2014 not applicable to either side.",
@@ -751,7 +717,21 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "nflStatsFavors": "Tennessee Titans",
+      "nflStatsRules": [
+        {
+          "rule": 10,
+          "name": "Bet on the ATS record catching up: back a winning team covering under 40%, fade a losing team covering 60%+",
+          "backtest": "back side 66.7% ATS (n=78), fade side 61.9% (n=147), 2017-2025; no losing season either way",
+          "detail": "Fading Indianapolis Colts: 2-3 straight up but 3-2 against the spread (60%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 10: Fading Indianapolis Colts: 2-3 straight up but 3-2 against the spread (60%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season.",
+      "nflStatsCorrect": true,
+      "nflStatsReturn": 260.0,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 89.29
     }
   ],
   "scoredAt": "2026-10-19T07:14:23.639172+00:00"
