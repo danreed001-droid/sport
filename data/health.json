@@ -24,6 +24,12 @@
       "status": "success",
       "okOn": "2026-10-29",
       "failingSince": null
+    },
+    "manual": {
+      "label": "Hand-entered data",
+      "status": "success",
+      "okOn": "2026-10-29",
+      "failingSince": null
     }
   }
 }

@@ -1,11 +1,11 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
 401878967,2026-11-04,Scheduled,KV Mechelen,0,-,KV Kortrijk,0,-,-,-,2:30 PM
 401928494,2026-10-29,Scheduled,Zamora CF,0,-,Coruxo,0,-,-,-,2:00 PM
-401928515,2026-10-29,Scheduled,Huesca,0,-,Peña Sport,0,-,-,-,1:00 PM
+401928515,2026-10-29,12',Huesca,0,-,Peña Sport,0,-,-,-,1:00 PM
 401928525,2026-10-29,Scheduled,Ceuta,0,-,Poblense,0,-,-,-,2:00 PM
 401928511,2026-10-29,Scheduled,Real Valladolid,0,-,Covadonga,0,-,-,-,3:00 PM
-401928528,2026-10-29,Scheduled,Real Jaen CF,0,-,Mijas Las Lagunas,0,-,-,-,3:00 PM
-401928490,2026-10-29,Scheduled,Real Oviedo,0,-,Numancia,0,-,-,-,1:00 PM
+401928528,2026-10-29,Postponed,Real Jaen CF,0,-,Mijas Las Lagunas,0,-,-,-,3:00 PM
+401928490,2026-10-29,24',Real Oviedo,0,-,Numancia,0,-,-,-,1:00 PM
 401928530,2026-10-29,Scheduled,Granada,0,-,Cieza,0,-,-,-,2:30 PM
 401928517,2026-10-29,Scheduled,UD Ourense,0,-,Gimnástica Torrelavega,0,-,-,-,3:30 PM
 401928548,2026-10-29,Scheduled,Cádiz,0,-,Xerez,0,-,-,-,4:00 PM
@@ -38,20 +38,20 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401925227,2026-10-29,Scheduled,Gemert,0,-,Purmersteijn,0,-,-,-,3:00 PM
 401925229,2026-10-29,Scheduled,ROHDA Raalte,0,-,RKAV Volendam,0,-,-,-,3:00 PM
 401925237,2026-10-29,Scheduled,FC Emmen,0,-,FC Groningen,0,-,-,-,4:00 PM
-401900882,2026-10-29,Scheduled,Al Hazem,0,-,Al Khaleej,0,-,-,-,10:35 AM
+401900882,2026-10-29,FT,Al Hazem,2,-,Al Khaleej,4,-,-,-,10:35 AM
 401900881,2026-10-29,Scheduled,Al Kholood,0,-,Al Nassr,0,-,-,-,2:00 PM
 401900880,2026-10-29,Scheduled,Al Qadsiah,0,-,Al Riyadh,0,-,-,-,2:00 PM
 401912777,2026-10-29,FT,Lion City Sailors FC,2,-,Adelaide United FC,0,-,-,-,3:45 AM
-401912775,2026-10-29,57',Kuching City,0,-,Gangwon FC,1,-,-,-,6:00 AM
-401912776,2026-10-29,57',Preah Khan Reach Svay Rieng FC,4,-,Tampines Rovers FC,0,-,-,-,6:00 AM
-401912772,2026-10-29,Scheduled,Kitchee SC,0,-,Phnom Penh Crown FC,0,-,-,-,8:15 AM
-401912773,2026-10-29,Scheduled,Machida Zelvia,0,-,Shanghai Shenhua FC,0,-,-,-,8:15 AM
-401912774,2026-10-29,Scheduled,BG Pathum United,0,-,Tai Po FC,0,-,-,-,8:15 AM
+401912775,2026-10-29,FT,Kuching City,0,-,Gangwon FC,1,-,-,-,6:00 AM
+401912776,2026-10-29,FT,PKR Svay Rieng,5,-,Tampines Rovers FC,1,-,-,-,6:00 AM
+401912772,2026-10-29,FT,Kitchee SC,0,-,Phnom Penh Crown FC,2,-,-,-,8:15 AM
+401912773,2026-10-29,FT,Machida Zelvia,1,-,Shanghai Shenhua FC,0,-,-,-,8:15 AM
+401912774,2026-10-29,FT,BG Pathum United,3,-,Tai Po FC,0,-,-,-,8:15 AM
 401886328,2026-10-29,Scheduled,Mineros de Zacatecas,0,-,Alebrijes de Oaxaca,0,-,-,-,9:00 PM
-401928145,2026-10-29,Scheduled,Brondby,0,-,Rosenborg,0,-,-,-,1:00 PM
-401928143,2026-10-29,Scheduled,Torreense,0,-,Sparta Prague,0,-,-,-,1:00 PM
-401916255,2026-10-29,Scheduled,France U17,0,-,China PR U17,0,-,-,-,11:00 AM
-401916268,2026-10-29,Scheduled,Mexico U17,0,-,Nigeria U17,0,-,-,-,11:00 AM
+401928145,2026-10-29,27',Brondby,1,-,Rosenborg,0,-,-,-,1:00 PM
+401928143,2026-10-29,27',Torreense,0,-,Sparta Prague,0,-,-,-,1:00 PM
+401916255,2026-10-29,FT-Pens,France U17,0,-,China PR U17,0,-,-,-,11:00 AM
+401916268,2026-10-29,FT,Mexico U17,1,-,Nigeria U17,2,-,-,-,11:00 AM
 401916252,2026-10-29,Scheduled,Kenya U17,0,-,Japan U17,0,-,-,-,2:00 PM
 401916266,2026-10-29,Scheduled,United States U17,0,-,Spain U17,0,-,-,-,2:00 PM
 401842861,2026-10-29,Scheduled,IK Sirius,0,-,Hammarby IF,0,-,-,-,1:30 PM
@@ -66,7 +66,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401886131,2026-10-29,Scheduled,Alianza Lima,0,-,Sporting Cristal,0,-,-,-,4:30 PM
 401886150,2026-10-29,Scheduled,Comerciantes Unidos,0,-,Melgar,0,-,-,-,8:30 PM
 401922481,2026-10-29,Scheduled,FC Motagua,0,-,Alajuelense,0,-,-,-,10:00 PM
-401879593,2026-10-29,Scheduled,Xelajú MC,0,-,Deportivo Mixco,0,-,-,-,1:00 PM
+401879593,2026-10-29,22',Xelajú MC,0,-,Deportivo Mixco,0,-,-,-,1:00 PM
 401879639,2026-10-29,Scheduled,Deportivo San Pedro,0,-,Antigua GFC,0,-,-,-,8:00 PM
 401879594,2026-10-29,Scheduled,CD Guastatoya,0,-,Marquense,0,-,-,-,10:10 PM
 401898531,2026-10-29,Scheduled,Southern Indiana,0,-,Eastern Illinois,0,-,-,-,3:00 PM
@@ -76,8 +76,8 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401899021,2026-10-29,Scheduled,Coastal Carolina,0,-,West Virginia,0,-,-,-,7:00 PM
 401898576,2026-10-29,Scheduled,Incarnate Word,0,-,UT Rio Grande Valley,0,-,-,-,7:30 PM
 401898564,2026-10-29,Scheduled,Lindenwood,0,-,Houston Christian,0,-,-,-,8:00 PM
-401889496,2026-10-29,Scheduled,East Tennessee State,0,-,Chattanooga,0,-,-,-,12:00 PM
-401900065,2026-10-29,Scheduled,Wagner,0,-,Mercyhurst,0,-,-,-,1:00 PM
+401889496,2026-10-29,61',East Tennessee State,1,-,Chattanooga,1,-,-,-,12:00 PM
+401900065,2026-10-29,24',Wagner,0,-,Mercyhurst,1,-,-,-,1:00 PM
 401886871,2026-10-29,Scheduled,Western Michigan,0,-,Massachusetts,0,-,-,-,3:00 PM
 401886904,2026-10-29,Scheduled,Toledo,0,-,Ohio,0,-,-,-,3:00 PM
 401900107,2026-10-29,Scheduled,South Dakota State,0,-,North Dakota,0,-,-,-,4:00 PM
