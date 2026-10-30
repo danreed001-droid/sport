@@ -80,6 +80,12 @@ section.hero{border-top:0;}
 .segctl button+button{border-left:1px solid var(--rule-2);}
 .segctl button[aria-pressed="true"]{background:var(--ink);color:var(--paper);}
 .segctl button:focus-visible{outline:2px solid var(--ledger);outline-offset:-2px;}
+.segctl.leagues{max-width:100%;overflow-x:auto;}
+.segctl.leagues button{white-space:nowrap;}
+.slatebar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:22px 0 4px;}
+.slatebar .flbl{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);}
+.slatebar .hint{font-size:12px;color:var(--muted);}
+section.emptyleague .sec-p{margin-bottom:0;}
 .daterange{display:inline-flex;align-items:center;gap:6px;}
 .daterange input{font:inherit;font-size:12px;font-weight:600;background:var(--surface);color:var(--ink);border:1px solid var(--rule-2);border-radius:8px;padding:5px 8px;color-scheme:inherit;}
 .daterange input:focus-visible{outline:2px solid var(--ledger);outline-offset:1px;}
@@ -410,6 +416,27 @@ footer b{color:var(--ink);}
   function fmtDay(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{month:'short',day:'numeric',timeZone:'UTC'}); }
   function dayNum(d){ return Date.parse(d+'T00:00:00Z')/864e5; }
   function sportsInPlays(){ var seen = {}; DATA.plays.forEach(function(p){ seen[p.s]=1; }); return ORDER.filter(function(k){ return seen[k]; }); }
+  // Leagues you can pick from: any with graded plays or games on today's slate,
+  // plus NCAA basketball always, so it is selectable before its season's first game.
+  function leagueList(){
+    var seen = {ncaab:1};
+    DATA.plays.forEach(function(p){ seen[p.s]=1; });
+    Object.keys(DATA.slate.sports||{}).forEach(function(k){ seen[k]=1; });
+    return ORDER.filter(function(k){ return seen[k]; });
+  }
+  function leagueName(k){ return (DATA.sportLabels[k]||k.toUpperCase()).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB'); }
+  function leagueChips(){
+    var lg = leagueList();
+    return '<span class="segctl leagues" role="group" aria-label="Leagues (pick one or more)">'
+      + '<button type="button" data-sp="all" aria-pressed="'+(!DASH.sports.length)+'">All</button>'
+      + lg.map(function(k){ return '<button type="button" data-sp="'+k+'" aria-pressed="'+(DASH.sports.indexOf(k)>=0)+'">'+esc(leagueName(k))+'</button>'; }).join('')
+      + '</span>';
+  }
+  function applySlateFilter(){
+    document.querySelectorAll('#slate > section[data-lg]').forEach(function(sec){ sec.hidden = !sportOn(sec.getAttribute('data-lg')); });
+    var h = document.getElementById('slatehint');
+    if(h) h.textContent = DASH.sports.length ? 'Showing '+DASH.sports.map(leagueName).join(', ')+' — this filter also drives the scorecard and pick log.' : 'Showing every league.';
+  }
 
   function isoDay(dt){ return dt.getFullYear()+'-'+String(dt.getMonth()+1).padStart(2,'0')+'-'+String(dt.getDate()).padStart(2,'0'); }
   function todayStr(){ return isoDay(new Date()); }
@@ -621,21 +648,18 @@ footer b{color:var(--ink);}
   }
 
   function dashHtml(){
-    var sp = sportsInPlays();
+    var sp = leagueList();
     function seg(name, opts){
       return '<span class="segctl" role="group" aria-label="'+name+'">'+opts.map(function(o){ return '<button type="button" data-f="'+name+'" data-v="'+o[0]+'" aria-pressed="'+(DASH[name]===o[0])+'">'+o[1]+'</button>'; }).join('')+'</span>';
     }
     DASH.sports = DASH.sports.filter(function(k){ return sp.indexOf(k) >= 0; });
     if(DASH.sports.length === sp.length) DASH.sports = [];  // every sport picked = all
     return '<section id="dashboard"><div class="eyebrow">Scorecard</div><h2 class="sec-h">How everyone is doing</h2>'
-      + '<p class="sec-p">Every graded play, flat $100 a bet at the lines stored on pick day. The filters apply to everything below them; tap more than one sport to combine them.</p>'
+      + '<p class="sec-p">Every graded play, flat $100 a bet at the lines stored on pick day. The filters apply to everything below them, including today\'s slate; tap more than one league to combine them.</p>'
       + '<div class="filters">'
         + '<span class="fgroup"><span class="flbl">Range</span>'+seg('range',[['7','7 days'],['30','30 days'],['year','This year'],['all','All time'],['custom','Custom']])
           + '<span class="daterange" id="rcustom"'+(DASH.range==='custom'?'':' hidden')+'><label for="rfrom" class="sr">From</label><input type="date" id="rfrom"> <span class="to">to</span> <label for="rto" class="sr">To</label><input type="date" id="rto"></span></span>'
-        + '<span class="fgroup"><span class="flbl">Sports</span><span class="segctl" role="group" aria-label="Sports (pick one or more)">'
-          + '<button type="button" data-sp="all" aria-pressed="'+(!DASH.sports.length)+'">All</button>'
-          + sp.map(function(k){ return '<button type="button" data-sp="'+k+'" aria-pressed="'+(DASH.sports.indexOf(k)>=0)+'">'+esc(DATA.sportLabels[k]||k.toUpperCase()).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB')+'</button>'; }).join('')
-          + '</span></span>'
+        + '<span class="fgroup"><span class="flbl">Leagues</span>'+leagueChips()+'</span>'
         + '<span class="fgroup"><span class="flbl">Market</span>'+seg('market',[['ats','Against the spread'],['ml','Moneyline']])
           + '<label class="checklbl" title="When checked, leaves out −400-or-shorter favorites and 7+ point NFL/college/NCAAB dogs from the moneyline record and profit, for every predictor. Unchecked, every graded pick counts on the moneyline regardless of price."><input type="checkbox" id="mlcutoff"'+(DASH.mlCutoff?' checked':'')+'> Apply −400 fav / 7+ dog cutoff</label></span>'
       + '</div>'
@@ -1047,9 +1071,11 @@ footer b{color:var(--ink);}
     var s = DATA.slate;
     var dateLabel = new Date(s.date+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',timeZone:'UTC'});
     document.getElementById('stamp').innerHTML = 'Slate '+esc(s.date)+'<br>updated '+esc(new Date(DATA.generatedAt).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'}));
-    var sportsHtml = ORDER.filter(function(k){ return s.sports[k]; }).map(function(k){
+    var sportsHtml = leagueList().map(function(k){
       var sp = s.sports[k];
-      return '<section id="'+k+'"><div class="eyebrow">'+esc(sp.label)+'</div><h2 class="sec-h">'+sp.games.length+' game'+(sp.games.length===1?'':'s')+'</h2>'
+      if(!sp) return '<section id="'+k+'" data-lg="'+k+'" class="emptyleague"><div class="eyebrow">'+esc(DATA.sportLabels[k]||k)+'</div><h2 class="sec-h">No games on today\'s slate</h2>'
+        + '<p class="sec-p">'+(k==='ncaab' ? 'NCAA basketball is set up and waiting for its season. ' : '')+'Its slate (AP Top 25 games, with lines) builds itself from ESPN within the hour once games are scheduled, and the picks and grading appear here with no other setup.</p></section>';
+      return '<section id="'+k+'" data-lg="'+k+'"><div class="eyebrow">'+esc(sp.label)+'</div><h2 class="sec-h">'+sp.games.length+' game'+(sp.games.length===1?'':'s')+'</h2>'
         + (k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>'
           : k==='soccer' ? '<p class="sec-p">Three-way moneyline: pick home, draw or away. No spread.</p>'
           : '<p class="sec-p">Tap a side to pick it against the spread.</p>')
@@ -1060,7 +1086,8 @@ footer b{color:var(--ink);}
       '<section class="hero"><h1>'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models in every sport; on NFL and CFB games, <b style="color:var(--trend-ink)">Trend check</b> and <b style="color:var(--blowout-ink)">Blowout check</b> are tracked alongside them, and on NBA games, <b style="color:var(--stats-ink)">NBA Stats</b> is — five backtested rules that fade a team coming off an OT win (vs. a stronger team), a late comeback the night before a back-to-back, a win where all 5 starters scored 10+ (now on a back-to-back vs. a weaker team) or a home win where it allowed 130+, or back a team coming off a loss to a team that shot 50%+ from three (now home on a back-to-back). Each rule only fires on the rest days where it backtested at 62% or better, and each went 60%+ on four seasons it was never found on. On NFL games, <b style="color:var(--nflstats-ink)">NFL Stats</b> backs a home underdog of 7+ points (64.7% against the spread from 2020-2025) fades a team coming off a win as a 7+ point underdog (60.0%, 2017-2025), backs an underdog whose top rusher ran for 150+ yards last game (66.7%, small sample), fades a home team vs. a weaker team after its QB threw for 300+ in a win (60.3%), backs a road team after a 10+ point loss driven by 3+ turnovers rather than yards (65.3%), fades a team that gained 500+ yards with 300+ passing (60.0%), and fades a team after a game with both a 100-yard rusher and a 350-yard passer (83.3%, small sample), and bets on a team\'s ATS record catching up with its record: backs a winning team that has covered under 40% (66.7%) and fades a losing team that has covered 60%+ (61.9%). <b style="color:var(--ncaabstats-ink)">NCAAB Stats</b> backs a team after a loss that was mostly three-point shooting luck: its opponent out-shot it from three by 25+ points of percentage (60.5% against the spread, 2018-19 to 2025-26). A pick two or more rules agree on is marked <b>stacked</b>: those went 77.6% when all the rules were replayed on 2017-2025. Each NBA and NFL Stats pick also says how to bet it: <b>ML</b> when the team is a small underdog (+100 to +149), where the moneyline paid more than the spread in the backtests for both sports, and <b>ATS</b> otherwise. <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
       + dashHtml()
       + logHtml()
-      + (sportsHtml || '<section><p class="sec-p">No games on the slate.</p></section>')
+      + '<div class="slatebar"><span class="flbl">Leagues</span>'+leagueChips()+'<span class="hint" id="slatehint"></span></div>'
+      + '<div id="slate">'+sportsHtml+'</div>'
       + '<footer><b>How submitting works</b><ol>'
         + '<li>Tap a side on any game, and score any Second Opinion reason Away, ½ Away, Neutral, ½ Home or Home (each starts on the Second Opinion\'s own call). When your tally margin reaches 2.5 your pick is set to the leading side; under 2.5 it clears to no bet. Tapping a side yourself overrides it. Everything is kept in this browser right away, marked <i>not submitted</i>.</li>'
         + '<li>Hit <b>Submit to repo</b>. GitHub opens a pre-filled issue — click <b>Submit new issue</b> there.</li>'
@@ -1076,6 +1103,7 @@ footer b{color:var(--ink);}
     renderSubmitBar();
     renderDash();
     renderLog();
+    applySlateFilter();
   }
 
   document.addEventListener('click', function(e){
@@ -1104,10 +1132,10 @@ footer b{color:var(--ink);}
       if(k === 'all') DASH.sports = [];
       else if(i >= 0) DASH.sports.splice(i, 1);
       else DASH.sports.push(k);
-      if(DASH.sports.length === sportsInPlays().length) DASH.sports = [];
+      if(DASH.sports.length === leagueList().length) DASH.sports = [];
       saveDash();
       document.querySelectorAll('.segctl button[data-sp]').forEach(function(b){ var v = b.getAttribute('data-sp'); b.setAttribute('aria-pressed', String(v === 'all' ? !DASH.sports.length : DASH.sports.indexOf(v) >= 0)); });
-      LOG.shown = 50; renderDash(); renderLog();
+      LOG.shown = 50; renderDash(); renderLog(); applySlateFilter();
       return;
     }
     var f = e.target.closest('.segctl button[data-f]');
