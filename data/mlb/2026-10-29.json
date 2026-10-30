@@ -2,9 +2,8 @@
   "date": "2026-10-29",
   "weekday": "Thursday",
   "sport": "mlb",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-10-29T14:38:18Z",
-  "games": [
-
-  ]
+  "games": [],
+  "scoredAt": "2026-10-30T06:28:05.489666+00:00"
 }

@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-30",
+  "weekday": "Friday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-10-30T06:28:02Z",
+  "games": [
+    {
+      "espnId": "401909277",
+      "away": "Charlotte Hornets",
+      "home": "Washington Wizards",
+      "time": "7:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": -115.0,
+      "awayMoneyline": -105.0
+    },
+    {
+      "espnId": "401909278",
+      "away": "Chicago Bulls",
+      "home": "Boston Celtics",
+      "time": "7:30 PM ET",
+      "homeSpread": -15.5,
+      "awaySpread": 15.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -850.0,
+      "awayMoneyline": 575.0
+    },
+    {
+      "espnId": "401909279",
+      "away": "Detroit Pistons",
+      "home": "Brooklyn Nets",
+      "time": "7:30 PM ET",
+      "homeSpread": 7.5,
+      "awaySpread": -7.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": 230.0,
+      "awayMoneyline": -285.0
+    },
+    {
+      "espnId": "401909280",
+      "away": "New York Knicks",
+      "home": "Philadelphia 76ers",
+      "time": "7:30 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": 102.0,
+      "awayMoneyline": -122.0
+    },
+    {
+      "espnId": "401909281",
+      "away": "Orlando Magic",
+      "home": "Toronto Raptors",
+      "time": "7:30 PM ET",
+      "homeSpread": -5.5,
+      "awaySpread": 5.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -205.0,
+      "awayMoneyline": 170.0
+    },
+    {
+      "espnId": "401909282",
+      "away": "Indiana Pacers",
+      "home": "Miami Heat",
+      "time": "8:00 PM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": -278.0,
+      "awayMoneyline": 225.0
+    },
+    {
+      "espnId": "401909283",
+      "away": "Houston Rockets",
+      "home": "Dallas Mavericks",
+      "time": "8:00 PM ET",
+      "homeSpread": 5.5,
+      "awaySpread": -5.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": 180.0,
+      "awayMoneyline": -218.0
+    },
+    {
+      "espnId": "401909284",
+      "away": "LA Clippers",
+      "home": "Minnesota Timberwolves",
+      "time": "8:00 PM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -265.0,
+      "awayMoneyline": 215.0
+    },
+    {
+      "espnId": "401909285",
+      "away": "Los Angeles Lakers",
+      "home": "Golden State Warriors",
+      "time": "10:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": 110.0,
+      "awayMoneyline": -130.0
+    },
+    {
+      "espnId": "401909286",
+      "away": "Denver Nuggets",
+      "home": "Phoenix Suns",
+      "time": "10:00 PM ET",
+      "homeSpread": 4.5,
+      "awaySpread": -4.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 142.0,
+      "awayMoneyline": -170.0
+    }
+  ]
+}
