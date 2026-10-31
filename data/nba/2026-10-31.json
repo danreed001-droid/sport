@@ -76,7 +76,17 @@
       "homeSpreadOdds": -105.0,
       "awaySpreadOdds": -115.0,
       "homeMoneyline": -575.0,
-      "awayMoneyline": 425.0
+      "awayMoneyline": 425.0,
+      "statsFavors": "Minnesota Timberwolves",
+      "statsRules": [
+        {
+          "rule": 2,
+          "name": "Fade an OT winner vs. a stronger team (any rest)",
+          "backtest": "63.6% ATS, n=77; 6 unseen seasons: 95-62",
+          "detail": "Fading San Antonio Spurs: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77)."
+        }
+      ],
+      "statsCheck": "Rule 2: Fading San Antonio Spurs: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77)."
     },
     {
       "espnId": "401909902",

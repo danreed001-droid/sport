@@ -72,10 +72,10 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401878346,2026-10-31,Scheduled,St Mirren,0,-,Motherwell,0,-,-,-,11:00 AM
 401920023,2026-10-31,Scheduled,Aberdeen,0,-,Rangers,0,-,-,-,1:30 PM
 401892149,2026-10-31,FT,Wellington Phoenix,3,-,Newcastle Jets,0,-,-,-,12:00 AM
-401892148,2026-10-31,18',Sydney FC,0,-,Melbourne City FC,0,-,-,-,2:00 AM
+401892148,2026-10-31,FT,Sydney FC,1,-,Melbourne City FC,2,-,-,-,2:00 AM
 401892147,2026-10-31,Scheduled,Western Sydney Wanderers FC,0,-,Macarthur FC,0,-,-,-,4:40 AM
 401913244,2026-10-31,FT,Sydney FC ,1,-,Brisbane Roar,0,-,-,-,12:00 AM
-401913243,2026-10-31,18',Adelaide United ,0,-,Central Coast Mariners,1,-,-,-,2:00 AM
+401913243,2026-10-31,FT,Adelaide United ,0,-,Central Coast Mariners,2,-,-,-,2:00 AM
 401900878,2026-10-31,Scheduled,Al Ettifaq,0,-,Al Taawoun,0,-,-,-,9:30 AM
 401900884,2026-10-31,Scheduled,Al Faisaly,0,-,Al Fayha,0,-,-,-,10:55 AM
 401900883,2026-10-31,Scheduled,Al Fateh,0,-,Al Hilal,0,-,-,-,2:00 PM
@@ -198,12 +198,12 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401930973,2026-10-31,Scheduled,Monagas SC,0,-,Caracas FC,0,-,-,-,7:30 PM
 401930012,2026-10-31,Scheduled,Nacional Potosí,0,-,Real Oruro,0,-,-,-,3:00 PM
 401930022,2026-10-31,Scheduled,San Antonio Bulo Bulo,0,-,ABB,0,-,-,-,5:15 PM
-401877579,2026-10-31,53',FC Tokyo,2,-,Fagiano Okayama,0,-,-,-,1:00 AM
-401877562,2026-10-31,51',Shimizu S-Pulse,0,-,Kyoto Sanga,2,-,-,-,1:00 AM
-401877564,2026-10-31,53',Sanfrecce Hiroshima,1,-,Mito Hollyhock,0,-,-,-,1:00 AM
-401877583,2026-10-31,14',Cerezo Osaka,0,-,Kashima Antlers,0,-,-,-,2:00 AM
-401877561,2026-10-31,13',Nagoya Grampus,1,-,Vissel Kobe,0,-,-,-,2:00 AM
-401877563,2026-10-31,Scheduled,Urawa Red Diamonds,0,-,Kashiwa Reysol,0,-,-,-,3:00 AM
+401877579,2026-10-31,FT,FC Tokyo,4,-,Fagiano Okayama,0,-,-,-,1:00 AM
+401877562,2026-10-31,FT,Shimizu S-Pulse,0,-,Kyoto Sanga,2,-,-,-,1:00 AM
+401877564,2026-10-31,FT,Sanfrecce Hiroshima,3,-,Mito Hollyhock,0,-,-,-,1:00 AM
+401877583,2026-10-31,FT,Cerezo Osaka,1,-,Kashima Antlers,4,-,-,-,2:00 AM
+401877561,2026-10-31,FT,Nagoya Grampus,1,-,Vissel Kobe,3,-,-,-,2:00 AM
+401877563,2026-10-31,67',Urawa Red Diamonds,0,-,Kashiwa Reysol,1,-,-,-,3:00 AM
 401926743,2026-10-31,Scheduled,Génesis PN,0,-,UPNFM,0,-,-,-,5:00 PM
 401926742,2026-10-31,Scheduled,Juticalpa FC,0,-,Real España,0,-,-,-,7:15 PM
 401926741,2026-10-31,Scheduled,Club Deportivo Olimpia,0,-,CD Choloma,0,-,-,-,9:30 PM
@@ -444,7 +444,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401901403,2026-10-30,FT,UTSA,1,-,North Texas,2,-,-,-,8:00 PM
 401890393,2026-10-30,FT,Boise State,4,-,Texas State,0,-,-,-,8:00 PM
 401886984,2026-10-30,FT,Baylor,0,-,Texas Tech,1,-,-,-,8:00 PM
-401886955,2026-10-30,85',Arizona,0,-,Arizona State,1,-,-,-,10:20 PM
+401886955,2026-10-30,FT,Arizona,0,-,Arizona State,1,-,-,-,10:20 PM
 401887020,2026-10-30,FT,Cincinnati,0,-,Colorado,1,-,-,-,9:00 PM
 401900347,2026-10-30,FT,Utah State,5,-,Oregon State,0,-,-,-,9:00 PM
 401886887,2026-10-30,FT,Utah,1,-,BYU,3,-,-,-,9:30 PM
