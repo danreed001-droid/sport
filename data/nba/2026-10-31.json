@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-31",
+  "weekday": "Saturday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-10-31T06:18:26Z",
+  "games": [
+    {
+      "espnId": "401909896",
+      "away": "Portland Trail Blazers",
+      "home": "Utah Jazz",
+      "time": "3:00 PM ET",
+      "homeSpread": 6.5,
+      "awaySpread": -6.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 185.0,
+      "awayMoneyline": -225.0
+    },
+    {
+      "espnId": "401909897",
+      "away": "Philadelphia 76ers",
+      "home": "Charlotte Hornets",
+      "time": "6:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 100.0,
+      "awayMoneyline": -120.0
+    },
+    {
+      "espnId": "401909898",
+      "away": "Atlanta Hawks",
+      "home": "New Orleans Pelicans",
+      "time": "7:00 PM ET",
+      "homeSpread": 4.5,
+      "awaySpread": -4.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": 142.0,
+      "awayMoneyline": -170.0
+    },
+    {
+      "espnId": "401909899",
+      "away": "Sacramento Kings",
+      "home": "Memphis Grizzlies",
+      "time": "8:00 PM ET",
+      "homeSpread": -10.5,
+      "awaySpread": 10.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": -455.0,
+      "awayMoneyline": 350.0
+    },
+    {
+      "espnId": "401909900",
+      "away": "Cleveland Cavaliers",
+      "home": "Milwaukee Bucks",
+      "time": "8:00 PM ET",
+      "homeSpread": 9.5,
+      "awaySpread": -9.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": 285.0,
+      "awayMoneyline": -360.0
+    },
+    {
+      "espnId": "401909901",
+      "away": "Minnesota Timberwolves",
+      "home": "San Antonio Spurs",
+      "time": "8:00 PM ET",
+      "homeSpread": -12.5,
+      "awaySpread": 12.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": -575.0,
+      "awayMoneyline": 425.0
+    },
+    {
+      "espnId": "401909902",
+      "away": "Oklahoma City Thunder",
+      "home": "Houston Rockets",
+      "time": "8:30 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -170.0,
+      "awayMoneyline": 142.0
+    }
+  ]
+}
