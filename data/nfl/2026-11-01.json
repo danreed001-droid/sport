@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-01",
+  "weekday": "Sunday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-01T06:10:51Z",
+  "games": [
+    {
+      "espnId": "401873026",
+      "away": "Baltimore Ravens",
+      "home": "Buffalo Bills",
+      "time": "1:00 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": 100.0,
+      "awaySpreadOdds": -120.0,
+      "homeMoneyline": -170.0,
+      "awayMoneyline": 142.0,
+      "nflStatsFavors": "Baltimore Ravens",
+      "nflStatsRules": [
+        {
+          "rule": 10,
+          "name": "Bet on the ATS record catching up: back a winning team covering under 40%, fade a losing team covering 60%+",
+          "backtest": "back side 66.7% ATS (n=78), fade side 61.9% (n=147), 2017-2025; no losing season either way",
+          "detail": "Backing Baltimore Ravens: 4-3 straight up but only 2-5 against the spread (29%) -- a winning team that hasn't been covering covered 66.7% ATS in its next game, 2017-2025 (n=78), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 10: Backing Baltimore Ravens: 4-3 straight up but only 2-5 against the spread (29%) -- a winning team that hasn't been covering covered 66.7% ATS in its next game, 2017-2025 (n=78), no losing season."
+    },
+    {
+      "espnId": "401873031",
+      "away": "Tennessee Titans",
+      "home": "Cincinnati Bengals",
+      "time": "1:00 PM ET",
+      "homeSpread": -12.5,
+      "awaySpread": 12.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -700.0,
+      "awayMoneyline": 500.0
+    },
+    {
+      "espnId": "401873024",
+      "away": "Arizona Cardinals",
+      "home": "Dallas Cowboys",
+      "time": "1:00 PM ET",
+      "homeSpread": -7.0,
+      "awaySpread": 7.0,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -325.0,
+      "awayMoneyline": 260.0
+    },
+    {
+      "espnId": "401873030",
+      "away": "Minnesota Vikings",
+      "home": "Detroit Lions",
+      "time": "1:00 PM ET",
+      "homeSpread": -3.0,
+      "awaySpread": 3.0,
+      "homeSpreadOdds": -120.0,
+      "awaySpreadOdds": 100.0,
+      "homeMoneyline": -170.0,
+      "awayMoneyline": 142.0,
+      "nflStatsFavors": "Detroit Lions",
+      "nflStatsRules": [
+        {
+          "rule": 10,
+          "name": "Bet on the ATS record catching up: back a winning team covering under 40%, fade a losing team covering 60%+",
+          "backtest": "back side 66.7% ATS (n=78), fade side 61.9% (n=147), 2017-2025; no losing season either way",
+          "detail": "Backing Detroit Lions: 4-2 straight up but only 2-4 against the spread (33%) -- a winning team that hasn't been covering covered 66.7% ATS in its next game, 2017-2025 (n=78), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 10: Backing Detroit Lions: 4-2 straight up but only 2-4 against the spread (33%) -- a winning team that hasn't been covering covered 66.7% ATS in its next game, 2017-2025 (n=78), no losing season."
+    },
+    {
+      "espnId": "401873029",
+      "away": "Las Vegas Raiders",
+      "home": "New York Jets",
+      "time": "1:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -122.0,
+      "awayMoneyline": 102.0,
+      "nflStatsFavors": "New York Jets",
+      "nflStatsRules": [
+        {
+          "rule": 10,
+          "name": "Bet on the ATS record catching up: back a winning team covering under 40%, fade a losing team covering 60%+",
+          "backtest": "back side 66.7% ATS (n=78), fade side 61.9% (n=147), 2017-2025; no losing season either way",
+          "detail": "Fading Las Vegas Raiders: 3-4 straight up but 5-2 against the spread (71%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 10: Fading Las Vegas Raiders: 3-4 straight up but 5-2 against the spread (71%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season."
+    },
+    {
+      "espnId": "401873027",
+      "away": "Cleveland Browns",
+      "home": "Pittsburgh Steelers",
+      "time": "1:00 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -192.0,
+      "awayMoneyline": 160.0
+    },
+    {
+      "espnId": "401873025",
+      "away": "Atlanta Falcons",
+      "home": "Tampa Bay Buccaneers",
+      "time": "1:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": -125.0,
+      "awayMoneyline": 105.0
+    },
+    {
+      "espnId": "401873028",
+      "away": "Indianapolis Colts",
+      "home": "Jacksonville Jaguars",
+      "time": "1:00 PM ET",
+      "homeSpread": -10.0,
+      "awaySpread": 10.0,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -485.0,
+      "awayMoneyline": 370.0
+    },
+    {
+      "espnId": "401873032",
+      "away": "Los Angeles Chargers",
+      "home": "Los Angeles Rams",
+      "time": "4:05 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -112.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": -258.0,
+      "awayMoneyline": 210.0
+    },
+    {
+      "espnId": "401873033",
+      "away": "Kansas City Chiefs",
+      "home": "Denver Broncos",
+      "time": "4:25 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -120.0,
+      "awaySpreadOdds": 100.0,
+      "homeMoneyline": -105.0,
+      "awayMoneyline": -115.0
+    },
+    {
+      "espnId": "401873034",
+      "away": "New England Patriots",
+      "home": "Miami Dolphins",
+      "time": "4:25 PM ET",
+      "homeSpread": 7.0,
+      "awaySpread": -7.0,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": 270.0,
+      "awayMoneyline": -340.0,
+      "nflStatsFavors": "Miami Dolphins",
+      "nflStatsRules": [
+        {
+          "rule": 1,
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing Miami Dolphins: a 7-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        }
+      ],
+      "nflStatsCheck": "Rule 1: Backing Miami Dolphins: a 7-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+    },
+    {
+      "espnId": "401873035",
+      "away": "Philadelphia Eagles",
+      "home": "Washington Commanders",
+      "time": "8:20 PM ET",
+      "homeSpread": -6.0,
+      "awaySpread": 6.0,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -258.0,
+      "awayMoneyline": 210.0
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-01",
+  "weekday": "Sunday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-01T06:11:00Z",
+  "games": [
+    {
+      "espnId": "401920982",
+      "away": "Notre Dame Fighting Irish",
+      "home": "Villanova Wildcats",
+      "time": "9:30 AM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": -325,
+      "awayMoneyline": 260,
+      "total": 147.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401920409",
+      "away": "Liberty Flames",
+      "home": "High Point Panthers",
+      "time": "11:59 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -310,
+      "awayMoneyline": 250,
+      "total": 155.5,
+      "neutral": true
+    }
+  ]
+}

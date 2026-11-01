@@ -1,0 +1,58 @@
+{
+  "date": "2026-11-01",
+  "weekday": "Sunday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-01T06:10:50Z",
+  "games": [
+    {
+      "espnId": "401909903",
+      "away": "Boston Celtics",
+      "home": "Orlando Magic",
+      "time": "3:30 PM ET",
+      "homeSpread": 6.5,
+      "awaySpread": -6.5,
+      "homeSpreadOdds": -112.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": 210.0,
+      "awayMoneyline": -258.0
+    },
+    {
+      "espnId": "401909904",
+      "away": "Brooklyn Nets",
+      "home": "Indiana Pacers",
+      "time": "5:00 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": -175.0,
+      "awayMoneyline": 145.0
+    },
+    {
+      "espnId": "401909905",
+      "away": "LA Clippers",
+      "home": "Golden State Warriors",
+      "time": "8:30 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": -130.0,
+      "awayMoneyline": 110.0
+    },
+    {
+      "espnId": "401909906",
+      "away": "Toronto Raptors",
+      "home": "Los Angeles Lakers",
+      "time": "9:00 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -180.0,
+      "awayMoneyline": 150.0
+    }
+  ]
+}
