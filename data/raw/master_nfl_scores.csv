@@ -1,15 +1,15 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401873026,2026-11-01,12:26 - 4th,Baltimore Ravens,10,-,Buffalo Bills,23,-,-,-,1:00 PM
-401873031,2026-11-01,11:29 - 4th,Tennessee Titans,27,-,Cincinnati Bengals,23,-,-,-,1:00 PM
-401873024,2026-11-01,3:54 - 4th,Arizona Cardinals,17,-,Dallas Cowboys,27,-,-,-,1:00 PM
-401873030,2026-11-01,6:48 - 4th,Minnesota Vikings,15,-,Detroit Lions,12,-,-,-,1:00 PM
-401873029,2026-11-01,3:26 - 4th,Las Vegas Raiders,35,-,New York Jets,33,-,-,-,1:00 PM
-401873027,2026-11-01,7:05 - 4th,Cleveland Browns,6,-,Pittsburgh Steelers,27,-,-,-,1:00 PM
-401873025,2026-11-01,1:56 - 4th,Atlanta Falcons,0,-,Tampa Bay Buccaneers,16,-,-,-,1:00 PM
-401873028,2026-11-01,8:18 - 4th,Indianapolis Colts,7,-,Jacksonville Jaguars,42,-,-,-,1:00 PM
-401873032,2026-11-01,11/1 - 4:05 PM EST,Los Angeles Chargers,0,-,Los Angeles Rams,0,-,-,-,4:05 PM
-401873033,2026-11-01,11/1 - 4:25 PM EST,Kansas City Chiefs,0,-,Denver Broncos,0,-,-,-,4:25 PM
-401873034,2026-11-01,11/1 - 4:25 PM EST,New England Patriots,0,-,Miami Dolphins,0,-,-,-,4:25 PM
+401873026,2026-11-01,Final,Baltimore Ravens,10,-,Buffalo Bills,36,-,136,-162,1:00 PM
+401873031,2026-11-01,Final/OT,Tennessee Titans,36,-,Cincinnati Bengals,43,-,625,-950,1:00 PM
+401873024,2026-11-01,Final/OT,Arizona Cardinals,33,-,Dallas Cowboys,30,-,270,-340,1:00 PM
+401873030,2026-11-01,Final,Minnesota Vikings,15,-,Detroit Lions,19,-,145,-175,1:00 PM
+401873029,2026-11-01,Final,Las Vegas Raiders,38,-,New York Jets,33,-,110,-130,1:00 PM
+401873027,2026-11-01,Final,Cleveland Browns,6,-,Pittsburgh Steelers,27,-,160,-192,1:00 PM
+401873025,2026-11-01,Final,Atlanta Falcons,0,-,Tampa Bay Buccaneers,16,-,110,-130,1:00 PM
+401873028,2026-11-01,Final,Indianapolis Colts,7,-,Jacksonville Jaguars,42,-,380,-500,1:00 PM
+401873032,2026-11-01,10:42 - 3rd,Los Angeles Chargers,9,-,Los Angeles Rams,17,-,-,-,4:05 PM
+401873033,2026-11-01,1:15 - 2nd,Kansas City Chiefs,14,-,Denver Broncos,13,-,-,-,4:25 PM
+401873034,2026-11-01,Halftime,New England Patriots,3,-,Miami Dolphins,13,-,-,-,4:25 PM
 401873035,2026-11-01,11/1 - 8:20 PM EST,Philadelphia Eagles,0,-,Washington Commanders,0,-,-,-,8:20 PM
 401873023,2026-10-29,Final,Carolina Panthers,19,-,Green Bay Packers,27,-,154,-185,8:15 PM
 401873009,2026-10-26,Final,Dallas Cowboys,38,-,Philadelphia Eagles,21,-,-225,185,8:15 PM
