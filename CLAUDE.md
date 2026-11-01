@@ -33,6 +33,13 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   sometimes skips them; every run is idempotent). Its steps fail
   independently, whatever succeeded is still committed, and the run is then
   marked failed. ESPN requests retry transient errors (`lib/espn.py`).
+- Score redundancy, so one bad feed can't hold a slate ungraded: each
+  scoreboard date is read at two page sizes and merged (ESPN's CFB board
+  dropped to 25 games at `limit=1000` on 2026-10-31); then any game on an
+  unscored past slate whose archived row still isn't final is looked up on its
+  own ESPN game page (`refresh_unfinished_slate_games` in `fetch_scores.py`).
+  If a slate is still ungraded at noon ET the next day, the health check
+  starts a scoring run and opens its issue naming the games, for entry by hand.
 - `data/health.json` holds each step's last status (dates only, so it changes
   about once a day: that daily bot commit keeps GitHub from switching off the
   scheduled workflows after 60 days without repo activity in the off-season).

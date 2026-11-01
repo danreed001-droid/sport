@@ -8,8 +8,10 @@
      site if the live data.json is 6+ hours old.
   3. Opens (or updates) one "Health check" issue when something is still
      wrong: no successful scoring run in 12+ hours, 3+ failed runs in a row,
-     a live site 12+ hours old, or a step failing for 2+ days. Closes it
-     once everything is healthy again.
+     a live site 12+ hours old, a step failing for 2+ days, or a past slate
+     still ungraded at noon ET the day after (the issue names the games
+     holding it up, so their finals can be entered by hand). Closes it once
+     everything is healthy again.
 
 Needs the gh CLI with GH_TOKEN, and GITHUB_REPOSITORY (both set in Actions).
 """
@@ -18,11 +20,17 @@ import os
 import subprocess
 import sys
 import urllib.request
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from lib import store  # noqa: E402
-from lib.dates import today_et_str  # noqa: E402
+from lib import sports, store  # noqa: E402
+from lib.dates import ET, now_et, today_et_str  # noqa: E402
+import score_slate  # noqa: E402
+
+# Every slate's games are over by early morning ET; one still ungraded at
+# this hour the next day is stuck, not just waiting for the next run.
+GRADE_BY_HOUR_ET = 12
+OVERDUE_LOOKBACK_DAYS = 45
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
 OWNER = REPO.split("/")[0]
@@ -45,6 +53,32 @@ def hours_since(iso):
     return (datetime.now(timezone.utc) - datetime.fromisoformat(iso.replace("Z", "+00:00"))).total_seconds() / 3600
 
 
+def overdue_slates():
+    """[(label, date, ["Away @ Home", ...])] for past slates still ungraded
+    after GRADE_BY_HOUR_ET the next day, with the games that aren't final in
+    the scores archive (empty if they all are and only grading is behind)."""
+    now = now_et()
+    out, seen = [], set()
+    for key, cfg in sports.SPORTS.items():
+        if cfg["collection"] in seen:
+            continue
+        seen.add(cfg["collection"])
+        scores = None
+        for d, doc in store.list_docs(cfg["collection"]):
+            if doc.get("scored") or not doc.get("games"):
+                continue
+            day = date.fromisoformat(d)
+            due = datetime(day.year, day.month, day.day, GRADE_BY_HOUR_ET, tzinfo=ET) + timedelta(days=1)
+            age = (now.date() - day).days
+            if now < due or age > OVERDUE_LOOKBACK_DAYS:
+                continue
+            if scores is None:
+                scores = score_slate.load_scores_by_date(key)
+            m = score_slate.match_slate(doc["games"], scores.get(d, []), age)
+            out.append((cfg["label"], d, m["missing"]))
+    return out
+
+
 def main():
     problems, actions = [], []
 
@@ -63,9 +97,14 @@ def main():
         if r["conclusion"] != "failure":
             break
         streak += 1
+    overdue = overdue_slates()
     if (ok_age is None or ok_age >= 3) and not busy:
         if gh("workflow", "run", SCORING) is not None:
             actions.append("started a scoring run (none had succeeded in 3+ hours)")
+            busy = True
+    if overdue and not busy:
+        if gh("workflow", "run", SCORING) is not None:
+            actions.append("started a scoring run (a past slate is still ungraded)")
     if ok_age is None or ok_age >= 12:
         problems.append(f"No successful scoring run in {'the last 10 runs' if ok_age is None else f'{ok_age:.0f} hours'}.")
     if streak >= 3:
@@ -85,6 +124,15 @@ def main():
             actions.append(f"rebuilt the site (live data was {site_age:.0f} hours old)")
     if site_age is not None and site_age >= 12:
         problems.append(f"The live pick sheet is {site_age:.0f} hours old.")
+
+    manual_page = f"{pages_url.rstrip('/')}/manual.html" if pages_url else "the pick sheet's \"Enter data by hand\" page"
+    for label, d, missing in overdue:
+        if missing:
+            problems.append(f"{label} {d} is still ungraded: ESPN has no final score for "
+                            f"{', '.join(missing)}. Enter the final(s) by hand at {manual_page} "
+                            f"and the next scoring run grades the slate.")
+        else:
+            problems.append(f"{label} {d} has every final score but hasn't been graded yet; check the latest scoring run.")
 
     try:
         with open(os.path.join(store.REPO_ROOT, "data", "health.json"), encoding="utf-8") as f:

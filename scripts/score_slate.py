@@ -105,6 +105,7 @@ TEAM_ALIASES = {
     "west brom": "west bromwich albion", "sporting lisbon": "sporting cp",
     "bayern munchen": "bayern munich", "fc bayern munich": "bayern munich",
     "atletico mineiro": "atletico mg", "borussia monchengladbach": "monchengladbach",
+    "rennes": "stade rennais",
 }
 _FILLER = {"fc", "cf", "sc", "afc", "cd", "club", "de", "the", "ac", "ssc", "as", "sv", "fk", "sk", "vfb", "bsc"}
 
@@ -229,6 +230,31 @@ def grade_two_way_game(g, away_score, home_score, big_dog_limit=10):
         g[spread_return_field] = graded["pickSpreadReturn"]
 
 
+def match_slate(games, scores_for_date, age_days):
+    """Pair each slate game with its row in the scores archive. Returns
+    {"matches": {i: row}, "swapped": {i: bool}, "voided": set of i,
+     "missing": ["Away @ Home", ...], "unresolved_rows": [row, ...]}.
+    A slate is gradable only when "missing" is empty. "unresolved_rows" are
+    the archive rows of slate games that exist but aren't final, which
+    fetch_scores.py re-checks one by one in case the scoreboard dropped them."""
+    out = {"matches": {}, "swapped": {}, "voided": set(), "missing": [], "unresolved_rows": []}
+    for i, g in enumerate(games):
+        row = find_match(scores_for_date, g, games)
+        if row is None:
+            row, out["swapped"][i] = find_match_loose(scores_for_date, g)
+        if row is None and scores_for_date and age_days >= VOID_AFTER_DAYS:
+            out["voided"].add(i)
+            out["matches"][i] = {"Away_Score": None, "Home_Score": None, "Status": "Not played on this date"}
+            continue
+        if row is None or not is_resolved(row.get("Status")):
+            out["missing"].append(f"{g['away']} @ {g['home']}")
+            if row is not None:
+                out["unresolved_rows"].append(row)
+            continue
+        out["matches"][i] = row
+    return out
+
+
 def main(sport_key):
     cfg = sports.get(sport_key)
     today = today_et_str()
@@ -255,30 +281,12 @@ def main(sport_key):
 
     for date_str, doc in pending:
         games = doc.get("games", [])
-        scores_for_date = scores_by_date.get(date_str, [])
-        all_resolved = True
-        missing = []
-        matches = {}
-
-        swapped = {}
-        voided = set()
         age_days = (date.fromisoformat(today) - date.fromisoformat(date_str)).days
-        for i, g in enumerate(games):
-            row = find_match(scores_for_date, g, games)
-            if row is None:
-                row, swapped[i] = find_match_loose(scores_for_date, g)
-            if row is None and scores_for_date and age_days >= VOID_AFTER_DAYS:
-                voided.add(i)
-                matches[i] = {"Away_Score": None, "Home_Score": None, "Status": "Not played on this date"}
-                continue
-            if row is None or not is_resolved(row.get("Status")):
-                all_resolved = False
-                missing.append(f"{g['away']} @ {g['home']}")
-                continue
-            matches[i] = row
+        m = match_slate(games, scores_by_date.get(date_str, []), age_days)
+        matches, swapped, voided = m["matches"], m["swapped"], m["voided"]
 
-        if not all_resolved:
-            print(f"[{cfg['label']}] {date_str}: leaving unscored, missing/incomplete: {missing}")
+        if m["missing"]:
+            print(f"[{cfg['label']}] {date_str}: leaving unscored, missing/incomplete: {m['missing']}")
             continue
 
         for i, g in enumerate(games):

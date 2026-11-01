@@ -16,7 +16,8 @@ from datetime import timedelta
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, manual, sports, store  # noqa: E402
 from lib.dates import ET, now_et  # noqa: E402
-from datetime import datetime
+from datetime import date, datetime
+import score_slate  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_DIR = os.path.join(REPO_ROOT, "data", "raw")
@@ -32,6 +33,49 @@ CRAWL_DAYS = 3
 # Older slates still ungraded (e.g. scores that never arrived) are re-crawled
 # too, as far back as this.
 PENDING_LOOKBACK_DAYS = 45
+
+
+# At most this many single-game lookups per sport per run (normally a
+# handful at most; the cap only bounds a pathological day).
+STALE_REFRESH_MAX = 40
+
+
+def refresh_unfinished_slate_games(session, cfg, history, now):
+    """Backup for the scoreboard. A game on an unscored past slate whose
+    archived row isn't final (because the scoreboard stopped listing it, or
+    listed it mid-game for the last time) is looked up on its own summary
+    page and its row updated. Without this one frozen row holds its whole
+    slate ungraded indefinitely (as happened to CFB on 2026-10-31). Returns
+    the number of rows updated."""
+    today = now.strftime("%Y-%m-%d")
+    oldest = (now - timedelta(days=PENDING_LOOKBACK_DAYS)).strftime("%Y-%m-%d")
+    by_date = {}
+    for row in history.values():
+        by_date.setdefault(row.get("Date"), []).append(row)
+    stale = []
+    for d, doc in store.list_docs(cfg["collection"]):
+        if doc.get("scored") or not (oldest <= d < today):
+            continue
+        age = (date.fromisoformat(today) - date.fromisoformat(d)).days
+        m = score_slate.match_slate(doc.get("games", []), by_date.get(d, []), age)
+        stale += [r for r in m["unresolved_rows"] if not str(r.get("Game_ID", "")).startswith("manual-")]
+    updated = 0
+    for row in stale[:STALE_REFRESH_MAX]:
+        res = espn.fetch_event_result(session, cfg["espn_sport"], cfg["espn_league"], row["Game_ID"])
+        time.sleep(0.1)
+        if not res or res["status"] == row.get("Status"):
+            continue
+        print(f"[{cfg['label']}] {row['Date']} {row['Away_Team']} @ {row['Home_Team']}: "
+              f"scoreboard had '{row.get('Status')}', game page says '{res['status']}'")
+        row["Status"] = res["status"]
+        for side, key in (("away", "Away_Score"), ("home", "Home_Score")):
+            score = res[side][1]
+            if score not in (None, ""):
+                row[key] = score
+        updated += 1
+    if len(stale) > STALE_REFRESH_MAX:
+        print(f"[{cfg['label']}] {len(stale) - STALE_REFRESH_MAX} more unfinished game(s) left for the next run.")
+    return updated
 
 
 def _pending_dates(cfg, now):
@@ -200,6 +244,11 @@ def main(sport_key):
             except Exception as exc:
                 print(f"[{cfg['label']}] skipping event due to error: {exc}")
                 continue
+
+    try:
+        refresh_unfinished_slate_games(session, cfg, history, now)
+    except Exception as exc:  # noqa: BLE001 -- a backup must never cost the run its scoreboard data
+        print(f"[{cfg['label']}] single-game refresh skipped: {exc}")
 
     apply_manual_scores(sport_key, history)
     all_records = save_history(sport_key, history)

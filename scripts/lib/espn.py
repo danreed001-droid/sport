@@ -68,11 +68,54 @@ def fmt_num(val):
         return None
 
 
+# Each scoreboard is read at more than one page size and the results merged.
+# ESPN's page-size handling is inconsistent: on 2026-10-31 college football
+# returned only its 25 featured games for limit=1000 but all 47 for limit=500,
+# while the combined soccer feed needs more than 300 to get every match. One
+# extra request per date is cheap insurance against either cap.
+SCOREBOARD_LIMITS = (1000, 500)
+
+
 def fetch_scoreboard(session, espn_sport, espn_league, yyyymmdd):
-    url = f"https://site.api.espn.com/apis/site/v2/sports/{espn_sport}/{espn_league}/scoreboard?dates={yyyymmdd}&limit=1000"
-    r = session.get(url, timeout=15)
-    r.raise_for_status()
-    return r.json().get("events", [])
+    """Every event on a date's scoreboard, merged across SCOREBOARD_LIMITS
+    (deduplicated by event id). Raises only if every request failed."""
+    events, errors = {}, []
+    for limit in SCOREBOARD_LIMITS:
+        url = (f"https://site.api.espn.com/apis/site/v2/sports/{espn_sport}/{espn_league}"
+               f"/scoreboard?dates={yyyymmdd}&limit={limit}")
+        try:
+            r = session.get(url, timeout=15)
+            r.raise_for_status()
+            for ev in r.json().get("events", []):
+                events.setdefault(str(ev.get("id")), ev)
+        except Exception as exc:  # noqa: BLE001
+            errors.append(exc)
+    if errors and len(errors) == len(SCOREBOARD_LIMITS):
+        raise errors[0]
+    return list(events.values())
+
+
+def fetch_event_result(session, espn_sport, espn_league, event_id):
+    """One game's current status and score from its summary page: the backup
+    for a game the scoreboard stopped listing (so its archived row would
+    otherwise stay frozen mid-game forever). Returns {"status", "completed",
+    "away": (name, score), "home": (name, score)} or None."""
+    url = f"https://site.api.espn.com/apis/site/v2/sports/{espn_sport}/{espn_league}/summary?event={event_id}"
+    try:
+        r = session.get(url, timeout=12)
+        if r.status_code != 200:
+            return None
+        comp = (r.json().get("header", {}).get("competitions") or [{}])[0]
+        st = comp.get("status", {}).get("type", {})
+        out = {"status": st.get("shortDetail") or st.get("description"), "completed": bool(st.get("completed"))}
+        for c in comp.get("competitors", []):
+            side = "home" if c.get("homeAway") == "home" else "away"
+            out[side] = (c.get("team", {}).get("displayName"), c.get("score"))
+        if not out["status"] or "home" not in out or "away" not in out:
+            return None
+        return out
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def fetch_standings(session, espn_sport, espn_league):
