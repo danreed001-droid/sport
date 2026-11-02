@@ -2,7 +2,7 @@
   "date": "2026-11-01",
   "weekday": "Sunday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "autoSlate": true,
   "generatedAt": "2026-11-01T06:11:00Z",
   "games": [
@@ -18,7 +18,9 @@
       "homeMoneyline": -325,
       "awayMoneyline": 260,
       "total": 147.5,
-      "neutral": true
+      "neutral": true,
+      "awayScore": 74.0,
+      "homeScore": 72.0
     },
     {
       "espnId": "401920409",
@@ -32,7 +34,10 @@
       "homeMoneyline": -310,
       "awayMoneyline": 250,
       "total": 155.5,
-      "neutral": true
+      "neutral": true,
+      "awayScore": 57.0,
+      "homeScore": 72.0
     }
-  ]
+  ],
+  "scoredAt": "2026-11-02T11:13:55.668419+00:00"
 }
