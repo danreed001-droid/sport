@@ -82,6 +82,11 @@ pick a side and score each Second Opinion reason (A away, a half away, N
 neutral, h half home, H home); a tally margin of 2.5+ sets the pick. Submitting
 opens a `picks YYYY-MM-DD` issue, and `.github/workflows/pick-intake.yml` runs
 `scripts/intake_picks.py` to commit them to `data/mypicks/<date>.json`.
+The "My grading" page (`site/grading.html`, data from
+`scripts/lib/grading_patterns.py` via `build_site.py`) shows how those
+category grades have held up: for each non-neutral grade, did the graded side
+win and cover, by category, full vs half grade, sport, lean size, and
+favorite vs underdog. It's a record of their grading, never a pick.
 
 Don't write picks into game objects in `data/<sport>/` (no `userPick`,
 `yourPick`, `myPick` fields) and don't ask the user to tell you their picks.

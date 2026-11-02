@@ -3,7 +3,8 @@
 data.json with the latest slate, the season scoreboard for the Ledger, the
 Second Opinion, the NFL/CFB-only Trend check and Blowout check, and your own
 picks (data/mypicks/, each tagged with the models that agreed or disagreed),
-and your picks on the latest slate.
+and your picks on the latest slate, plus how your category grading has
+held up (lib/grading_patterns.py, shown on site/grading.html).
 
 Usage: python scripts/build_site.py [--out _site]
 """
@@ -16,7 +17,7 @@ import sys
 from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
-from lib import manual, sports, store  # noqa: E402
+from lib import grading_patterns, manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
 from lib import ncaab_stats_rules, nfl_stats_rules  # noqa: E402
 from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, team_for  # noqa: E402
@@ -260,6 +261,7 @@ def build():
         "ncaabStatsRules": ncaab_rules,
         "health": read_health(),
         "manual": read_manual(),
+        "grading": grading_patterns.build(mypicks),
         "statsStacked": stats_stacked,
         "nflStatsStacked": nfl_stacked,
     }
@@ -310,7 +312,8 @@ def main():
     version = hashlib.sha1(page.encode("utf-8")).hexdigest()[:12]
     with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(page.replace("__PAGE_VERSION__", version))
-    shutil.copy(os.path.join(store.REPO_ROOT, "site", "manual.html"), os.path.join(out_dir, "manual.html"))
+    for extra in ("manual.html", "grading.html"):
+        shutil.copy(os.path.join(store.REPO_ROOT, "site", extra), os.path.join(out_dir, extra))
     payload = build()
     payload["pageVersion"] = version
     with open(os.path.join(out_dir, "data.json"), "w", encoding="utf-8") as f:

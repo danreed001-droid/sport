@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>My Grading</title>
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('picksheet.theme')||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#f6f4ec; --surface:#fcfcfb; --surface-2:#ece7d3; --ink:#201d16; --muted:#726c58;
+  --rule:#ddd5b9; --rule-2:#c9bf9c; --accent:#2a78d6; --accent-ink:#1c5cab; --warn:#b3471b; --ok:#0b7a52;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f100e; --surface:#1a1a19; --surface-2:#232320; --ink:#f3f2ec; --muted:#9b9a92;
+    --rule:#2c2c2a; --rule-2:#3d3d39; --accent:#3987e5; --accent-ink:#86b6ef; --warn:#f0955e; --ok:#4fd3a0;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f100e; --surface:#1a1a19; --surface-2:#232320; --ink:#f3f2ec; --muted:#9b9a92;
+  --rule:#2c2c2a; --rule-2:#3d3d39; --accent:#3987e5; --accent-ink:#86b6ef; --warn:#f0955e; --ok:#4fd3a0;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Work Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+h1,h2{font-family:'Big Shoulders Display','Arial Narrow',system-ui,sans-serif;text-transform:uppercase;letter-spacing:.01em;margin:0;}
+h1{font-size:34px;line-height:1.05;}
+h2{font-size:20px;margin:0 0 4px;}
+.wrap{max-width:820px;margin:0 auto;padding:16px;}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;}
+.top a{color:var(--accent-ink);font-weight:600;text-decoration:none;}
+.lede{color:var(--muted);margin:6px 0 14px;max-width:66ch;}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:14px;margin:0 0 12px;}
+.sub{color:var(--muted);font-size:12.5px;margin:0 0 10px;}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin:0 0 12px;}
+label{display:flex;flex-direction:column;gap:3px;font-size:12px;font-weight:600;color:var(--muted);}
+select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface-2);border:1px solid var(--rule-2);border-radius:8px;padding:7px 9px;}
+select:focus-visible{outline:2px solid var(--accent);outline-offset:1px;}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin:0 0 12px;}
+.tile{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:10px 12px;}
+.tile .k{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+.tile .v{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;font-weight:600;line-height:1.2;}
+.tile .s{font-size:12px;color:var(--muted);}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+table{width:100%;border-collapse:collapse;font-size:13.5px;}
+th{font-size:11.5px;font-weight:600;color:var(--muted);text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule-2);white-space:nowrap;}
+td{padding:7px 8px;border-bottom:1px solid var(--rule);vertical-align:middle;white-space:nowrap;}
+tr:last-child td{border-bottom:none;}
+td.num,th.num{text-align:right;font-family:'IBM Plex Mono',ui-monospace,monospace;}
+.good{color:var(--ok);font-weight:600;} .bad{color:var(--warn);font-weight:600;} .thin{color:var(--muted);}
+.bar{position:relative;height:8px;min-width:90px;background:var(--surface-2);border-radius:4px;overflow:hidden;}
+.bar i{position:absolute;left:0;top:0;bottom:0;background:var(--rule-2);border-radius:4px;}
+.bar i.good{background:var(--ok);} .bar i.bad{background:var(--warn);}
+.bar b{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink);opacity:.55;}
+.legend{font-size:12px;color:var(--muted);margin:8px 0 0;}
+.note{font-size:12.5px;color:var(--muted);margin:4px 0 0;}
+.empty{color:var(--muted);padding:6px 0;}
+.loading{color:var(--muted);}
+@media (max-width:560px){.barcol,.rw{display:none} td,th{padding:6px 4px;} td:first-child{white-space:normal;min-width:70px;} table{font-size:13px;} .card{padding:12px 10px;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./">← Pick sheet</a></div>
+  <h1>My grading</h1>
+  <p class="lede">How your category grades have held up. For every reason you graded toward a side (A/a away, h/H home), did that side win, and did it cover the spread? Neutral grades and unfinished games aren't counted. Updates every time games are graded.</p>
+
+  <div class="filters">
+    <label>Sport<select id="sport"></select></label>
+    <label>Games from<select id="range">
+      <option value="all">Whole season</option>
+      <option value="30">Last 30 days</option>
+      <option value="14">Last 14 days</option>
+    </select></label>
+  </div>
+
+  <div id="out"><p class="loading">Loading…</p></div>
+</div>
+
+<script>
+(function(){
+  var BREAK_EVEN = 52.4;       // ATS win rate needed at -110
+  var THIN = 20;               // fewer decided grades than this = early read
+  var RECENT_DAYS = 21;
+  var D = null, LABELS = {};
+
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function rec(){return {w:0,l:0,p:0,sw:0,sl:0,n:0};}
+  function add(r,x){
+    r.n++;
+    if(x.ats==='W')r.w++; else if(x.ats==='L')r.l++; else if(x.ats==='P')r.p++;
+    if(x.su==='W')r.sw++; else if(x.su==='L')r.sl++;
+  }
+  function pct(w,l){return (w+l)?100*w/(w+l):null;}
+  function cls(w,l){var p=pct(w,l); if(p===null||w+l<THIN)return 'thin'; return p>=55?'good':(p<50?'bad':'');}
+  function wl(w,l,p){return w+'-'+l+(p?'-'+p:'');}
+  function pc(w,l){var p=pct(w,l);return p===null?'–':Math.round(p)+'%';}
+  function coverCell(r){
+    var c=cls(r.w,r.l);
+    return '<td class="num '+c+'">'+wl(r.w,r.l,r.p)+'</td><td class="num '+c+'">'+pc(r.w,r.l)+'</td>';
+  }
+  function bar(r){
+    var p=pct(r.w,r.l); if(p===null)return '<div class="bar"></div>';
+    var c=cls(r.w,r.l);
+    return '<div class="bar" title="'+Math.round(p)+'% covered; line marks the '+BREAK_EVEN+'% break-even"><i class="'+(c==='thin'?'':c)+'" style="width:'+p.toFixed(1)+'%"></i><b style="left:'+BREAK_EVEN+'%"></b></div>';
+  }
+  function addDays(iso,n){var d=new Date(iso+'T12:00:00Z');d.setUTCDate(d.getUTCDate()+n);return d.toISOString().slice(0,10);}
+
+  function render(){
+    var sport=document.getElementById('sport').value, range=document.getElementById('range').value;
+    var all=D.cats.concat(D.games), last='';
+    all.forEach(function(x){if(x.d>last)last=x.d;});
+    var from=range==='all'?'':addDays(last,-(+range)+1), recentFrom=addDays(last,-RECENT_DAYS+1);
+    function keep(x){return (sport==='all'||x.s===sport)&&x.d>=from;}
+    var cats=D.cats.filter(keep), games=D.games.filter(keep);
+    if(!games.length){document.getElementById('out').innerHTML='<div class="card"><p class="empty">No graded, finished games for this filter yet.</p></div>';return;}
+
+    var tot=rec(), byCat={}, full=rec(), half=rec(), fav=rec(), dog=rec(), sportsSeen={};
+    cats.forEach(function(x){
+      add(tot,x); add(x.f?full:half,x);
+      if(x.fav===true)add(fav,x); else if(x.fav===false)add(dog,x);
+      var c=byCat[x.c]||(byCat[x.c]={all:rec(),recent:rec(),full:rec(),half:rec(),sp:{}});
+      add(c.all,x); add(x.f?c.full:c.half,x); if(x.d>=recentFrom)add(c.recent,x);
+      (c.sp[x.s]||(c.sp[x.s]=rec())); add(c.sp[x.s],x); sportsSeen[x.s]=1;
+    });
+
+    var h='';
+    h+='<div class="tiles">'
+      +'<div class="tile"><div class="k">Games graded</div><div class="v">'+games.length+'</div><div class="s">'+esc(games[0].d)+' to '+esc(last)+'</div></div>'
+      +'<div class="tile"><div class="k">Grades given</div><div class="v">'+tot.n+'</div><div class="s">not counting neutral</div></div>'
+      +'<div class="tile"><div class="k">Graded side covered</div><div class="v '+cls(tot.w,tot.l)+'">'+pc(tot.w,tot.l)+'</div><div class="s">'+wl(tot.w,tot.l,tot.p)+' · break-even '+BREAK_EVEN+'%</div></div>'
+      +'<div class="tile"><div class="k">Graded side won</div><div class="v">'+pc(tot.sw,tot.sl)+'</div><div class="s">'+wl(tot.sw,tot.sl)+' straight up</div></div>'
+      +'</div>';
+
+    // By category
+    var names=Object.keys(byCat).sort(function(a,b){return byCat[b].all.n-byCat[a].all.n;});
+    h+='<div class="card"><h2>By category</h2><p class="sub">Covered = the side you graded toward covered the spread. Last '+RECENT_DAYS+' days shows whether a category is holding up lately.</p><div class="scroll"><table><thead><tr>'
+      +'<th>Category</th><th class="num">Grades</th><th class="num barcol">Won</th><th class="num">Covered</th><th class="num">%</th><th class=\"barcol\">vs break-even</th><th class="num">Last '+RECENT_DAYS+'d</th>'
+      +'</tr></thead><tbody>';
+    names.forEach(function(n){
+      var c=byCat[n];
+      h+='<tr><td>'+esc(n)+'</td><td class="num">'+c.all.n+'</td><td class="num barcol">'+pc(c.all.sw,c.all.sl)+'</td>'+coverCell(c.all)
+        +'<td class="barcol">'+bar(c.all)+'</td><td class="num '+cls(c.recent.w,c.recent.l)+'">'+(c.recent.w+c.recent.l?'<span class="rw">'+wl(c.recent.w,c.recent.l)+' · </span>'+pc(c.recent.w,c.recent.l):'–')+'</td></tr>';
+    });
+    h+='</tbody></table></div><p class="legend"><span class="good">Green</span>: 55%+ covered. <span class="bad">Orange</span>: under 50%. Grey: fewer than '+THIN+' decided grades, too early to read.</p></div>';
+
+    // Full vs half
+    function fh(r){return r.w+r.l?'<td class="num '+cls(r.w,r.l)+'">'+wl(r.w,r.l)+'</td><td class="num '+cls(r.w,r.l)+'">'+pc(r.w,r.l)+'</td>':'<td class="num thin">–</td><td class="num thin">–</td>';}
+    h+='<div class="card"><h2>Full vs half grades</h2><p class="sub">Are your strong grades (A/H) more reliable than your half grades (a/h)? Spread record of each.</p><div class="scroll"><table><thead><tr><th></th><th class="num">Full (A/H)</th><th class="num">%</th><th class="num">Half (a/h)</th><th class="num">%</th></tr></thead><tbody>'
+      +'<tr><td><b>All categories</b></td>'+fh(full)+fh(half)+'</tr>';
+    names.forEach(function(n){h+='<tr><td>'+esc(n)+'</td>'+fh(byCat[n].full)+fh(byCat[n].half)+'</tr>';});
+    h+='</tbody></table></div></div>';
+
+    // How grades combine (per game)
+    var lean={a:rec(),b:rec(),c:rec()}, mixed=rec(), oneway=rec(), none=0;
+    games.forEach(function(g){
+      if(!g.lean){none++;return;}
+      var a=Math.abs(g.lean); add(a<=1?lean.a:(a<=2?lean.b:lean.c),g);
+      add(g.mixed?mixed:oneway,g);
+    });
+    function row(label,r){return '<tr><td>'+label+'</td><td class="num">'+r.n+'</td><td class="num">'+pc(r.sw,r.sl)+'</td>'+coverCell(r)+'<td class="barcol">'+bar(r)+'</td></tr>';}
+    h+='<div class="card"><h2>How your grades add up</h2><p class="sub">Per game: your grades tallied (A/H = 1, a/h = ½), and the side they lean to. '+none+' graded game'+(none===1?'':'s')+' had no lean.</p><div class="scroll"><table><thead><tr><th>Game lean</th><th class="num">Games</th><th class="num">Won</th><th class="num">Covered</th><th class="num">%</th><th class=\"barcol\">vs break-even</th></tr></thead><tbody>'
+      +row('Lean ½–1',lean.a)+row('Lean 1½–2',lean.b)+row('Lean 2½+',lean.c)
+      +row('All grades one way',oneway)+row('Grades pointing both ways',mixed)
+      +'</tbody></table></div></div>';
+
+    // Favorite vs underdog
+    h+='<div class="card"><h2>Favorite vs underdog</h2><p class="sub">Each grade, split by whether you graded toward the betting favorite or the underdog.</p><div class="scroll"><table><thead><tr><th></th><th class="num">Grades</th><th class="num">Won</th><th class="num">Covered</th><th class="num">%</th><th class=\"barcol\">vs break-even</th></tr></thead><tbody>'
+      +row('Toward the favorite',fav)+row('Toward the underdog',dog)+'</tbody></table></div></div>';
+
+    // Category x sport
+    var sps=Object.keys(sportsSeen).sort();
+    if(sport==='all'&&sps.length>1){
+      h+='<div class="card"><h2>Category by sport</h2><p class="sub">Covered record of your grades in each category, per sport.</p><div class="scroll"><table><thead><tr><th>Category</th>';
+      sps.forEach(function(s){h+='<th class="num" title="'+esc(LABELS[s]||s)+'">'+esc(s.toUpperCase())+'</th>';});
+      h+='</tr></thead><tbody>';
+      names.forEach(function(n){
+        h+='<tr><td>'+esc(n)+'</td>';
+        sps.forEach(function(s){var r=byCat[n].sp[s]; h+=r&&(r.w+r.l)?'<td class="num '+cls(r.w,r.l)+'">'+wl(r.w,r.l)+'</td>':'<td class="num thin">–</td>';});
+        h+='</tr>';
+      });
+      h+='</tbody></table></div></div>';
+    }
+
+    h+='<p class="note">Spread results use the lines stored on each slate; a push counts for neither side. Small samples swing a lot: treat anything grey as an early read.</p>';
+    document.getElementById('out').innerHTML=h;
+  }
+
+  fetch('data.json',{cache:'no-store'}).then(function(r){return r.json();}).then(function(data){
+    D=data.grading||{cats:[],games:[]}; LABELS=data.sportLabels||{};
+    var sel=document.getElementById('sport'), seen={};
+    D.games.forEach(function(g){seen[g.s]=1;});
+    sel.innerHTML='<option value="all">All sports</option>'+Object.keys(seen).sort().map(function(s){return '<option value="'+esc(s)+'">'+esc(LABELS[s]||s)+'</option>';}).join('');
+    try{var saved=JSON.parse(localStorage.getItem('picksheet.grading')||'{}');
+      if(saved.sport&&seen[saved.sport])sel.value=saved.sport; if(saved.range)document.getElementById('range').value=saved.range;}catch(e){}
+    ['sport','range'].forEach(function(id){document.getElementById(id).addEventListener('change',function(){
+      try{localStorage.setItem('picksheet.grading',JSON.stringify({sport:sel.value,range:document.getElementById('range').value}));}catch(e){}
+      render();});});
+    render();
+  }).catch(function(e){document.getElementById('out').innerHTML='<div class="card"><p class="empty">Couldn\'t load the data ('+esc(e.message)+').</p></div>';});
+})();
+</script>
+</body>
+</html>
