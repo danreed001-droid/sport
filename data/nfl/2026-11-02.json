@@ -3,20 +3,8 @@
   "weekday": "Monday",
   "sport": "nfl",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-02T06:50:55Z",
+  "generatedAt": "2026-11-02T13:23:22Z",
   "games": [
-    {
-      "espnId": "401873036",
-      "away": "Chicago Bears",
-      "home": "Seattle Seahawks",
-      "time": "8:15 PM ET",
-      "homeSpread": -3.0,
-      "awaySpread": 3.0,
-      "homeSpreadOdds": -118.0,
-      "awaySpreadOdds": -102.0,
-      "homeMoneyline": -170.0,
-      "awayMoneyline": 142.0
-    }
+    {"altBlowoutCheck":"Seahawks off a 20-3 win over KC (17-pt margin qualifies as a blowout win): (1) Padded win — FAILS: takeaways were even 1-1 and Seattle already led 10-0 at half (not tied/within one score before pulling away); (2) Market bought in — HITS: Seahawks now favored -3 vs Chicago; (3) Opponent takes it away — HITS: Bears' defense leads the NFL in takeaways forced this season; (4) Run-heavy win — HITS: 41 rushing attempts in the win; (5) Turnover-prone — HITS: Darnold has 8 INT in 6 games this season with multiple multi-turnover games (incl. a 3-turnover game vs WAS and 2 INT vs DEN), turnovers factoring into multiple Seattle losses. 4 of 5 sub-conditions hit — regression flag ON: +6 to Chicago Bears.","altBlowoutFavors":"Chicago Bears","altCategoryTally":"Bears 4-2 (base categories) + 6 (blowout-win regression vs SEA) = Bears +8","altConfidence":"strong","altCorrect":null,"altCover":null,"altPick":"Chicago Bears","altReasons":["Scoring margin: Seahawks (blended PD/g +8.7 vs Bears' +4.3; both QBs started the majority of their team's games this season — Williams 4/7, Darnold 6/7 — so no major-QB-change discount applies to either side)","Rest: Bears (played Thu 10/22 vs NE, giving them 11 days to prepare for this MNF game, vs Seattle's normal 8-day turnaround off a Sun 10/25 game at KC)","Travel: Seahawks (Bears make a cross-country Central-to-Pacific trip, crossing 2 time zones, for a Monday road game; Seattle stays home)","Injuries/Lineup: Bears (Seahawks are missing starting LT Charles Cross — out/doubtful, ankle — exposing Darnold's blind side; no second premium-position Seattle starter is out: WR Rashid Shaheed is questionable but is not Seattle's WR1, Jaxon Smith-Njigba, who is healthy, and RB Zach Charbonnet is expected to play, so this stays a single non-weighted vote, not a multi-starter cluster)","Form (last 3): Bears (2-1: L at GB, W at ATL, W vs NE, all started by Williams, vs Seattle's 1-2: L vs SF, L at DEN in OT, W vs KC, all started by Darnold — no QB-change discount needed on either side)","Market: Bears (line has drifted from Seahawks -3.5 at open to Seahawks -3 now, a half-point reverse move toward the Bears)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Bears prior game (Wk7 vs NE, CBS box score, W 30-24): 405 total net yds, 33 pass att/289 yds (8.76 YPA), 30 rush att, YPP 6.43 — no pattern matched (won, so Pattern A doesn't apply; YPA clears 7.5 but YPP 6.43 fails Pattern B's ≤5.15 test; rush att 30 fails Pattern C/D's 34+ threshold). Seahawks prior game (Wk7 vs KC, CBS box score, W 20-3): 410 total net yds, 28 pass att/257 yds (9.18 YPA), 41 rush att, YPP 5.94 — no pattern matched (won, so Pattern A doesn't apply; YPA clears 7.5 but YPP 5.94 fails Pattern B's ≤5.15 test; rush/pass ratio 1.46 fails Pattern C's ≤1.0 test; pass att 28 fails Pattern D's 41+ threshold).","altTrendFavors":null,"away":"Chicago Bears","awayMoneyline":145,"awayPDpg":4.3,"awayQB":"Caleb Williams","awayQBRating":105.6,"awayScore":null,"awaySpread":3,"awaySpreadOdds":-105,"awayYPP":5.88,"confidence":"skip","correct":null,"home":"Seattle Seahawks","homeMoneyline":-173,"homePDpg":8.7,"homeQB":"Sam Darnold","homeQBRating":80.5,"homeScore":null,"homeSpread":-3,"homeSpreadOdds":-115,"homeYPP":5.84,"offGap":6.5,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g (blended 50/50 this/last season) +4.3 vs +8.7","Yds/play 5.88 vs 5.84 — rank 13th vs 15th of 32 (62% vs 55% percentile, 6.5-pt gap)","QB rating 105.6 vs 80.5 (Williams vs Darnold, both season-only — each has majority starts)"],"time":"8:15 PM ET"}
   ]
 }
