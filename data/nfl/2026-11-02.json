@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-02",
+  "weekday": "Monday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-02T06:50:55Z",
+  "games": [
+    {
+      "espnId": "401873036",
+      "away": "Chicago Bears",
+      "home": "Seattle Seahawks",
+      "time": "8:15 PM ET",
+      "homeSpread": -3.0,
+      "awaySpread": 3.0,
+      "homeSpreadOdds": -118.0,
+      "awaySpreadOdds": -102.0,
+      "homeMoneyline": -170.0,
+      "awayMoneyline": 142.0
+    }
+  ]
+}
