@@ -18,7 +18,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   (ESPN's injury report says "Out"; checked until tip-off, then frozen);
   19 (on trial) on the road on a back-to-back after losing at home to a
   worse-record team.
-  Fades, on trial: 20-29 a team coming off a ROAD UPSET WIN (it had the worse
+  Fades: 20-32 a team coming off a ROAD UPSET WIN (30-32, the broad versions,
+  were found on 2022-24 and held on 2024-26; 20-29 are on trial) (it had the worse
   record, the home team 5+ games played), sliced by home/road now, the next
   opponent's record, rest, the win's margin and whether it was a 7+ point
   underdog in that win (spread from data/raw/nba_lines.csv) -- see ROAD_UPSET.
@@ -76,6 +77,10 @@ ROAD_UPSET = {
     27: {"stronger": False, "rested": True, "close": False, "notbig": True},
     28: {"home": True, "close": True, "notbig": True},
     29: {"home": False, "stronger": False, "close": True},
+    # The three broad versions that were found on 2022-24 and held on 2024-26:
+    30: {"notbig": True},
+    31: {"stronger": False},
+    32: {"rested": True, "notbig": True},
 }
 _HOME_SPREAD = None
 
@@ -101,7 +106,8 @@ ALLOWED_REST = {
     19: {"b2b"},
     **{n: ({"1", "2+"} if c.get("rested") else {"b2b", "1", "2+"}) for n, c in {
         20: {"rested": True}, 21: {}, 22: {"rested": True}, 23: {}, 24: {"rested": True},
-        25: {}, 26: {"rested": True}, 27: {"rested": True}, 28: {}, 29: {}}.items()},
+        25: {}, 26: {"rested": True}, 27: {"rested": True}, 28: {}, 29: {},
+        30: {}, 31: {}, 32: {"rested": True}}.items()},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
