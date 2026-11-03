@@ -1,0 +1,76 @@
+name: NBA game-time picks
+
+# Re-runs only the NBA pick steps (NBA Stats, NBA Totals) every 15 minutes in
+# the evening, so the injury report (rules that need a player listed Out, and
+# the pick sheet's "Injury watch") and the totals line are checked close to
+# tip-off instead of once an hour. Games that have started are never changed
+# by either script. GitHub starts scheduled runs late (often 5-15+ minutes)
+# and sometimes skips them; the hourly scoring workflow still runs too.
+#
+# 21:00-04:45 UTC = 4:00 PM-11:45 PM EST (5:00 PM-12:45 AM EDT).
+
+on:
+  schedule:
+    - cron: "*/15 21-23 * * *"
+    - cron: "*/15 0-4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nba-gametime
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          for i in 1 2 3; do
+            pip install -r requirements.txt && exit 0
+            sleep $((i * 15))
+          done
+          exit 1
+
+      - name: NBA Stats picks (today)
+        id: nba
+        continue-on-error: true
+        run: python scripts/nba_stats_signals.py
+
+      - name: NBA Totals picks (today)
+        id: totals
+        continue-on-error: true
+        run: python scripts/nba_totals_signals.py
+
+      - name: Commit and push changes
+        if: always()
+        run: |
+          git config user.name "diamond-ledger-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/nba/ data/raw/nba_player_points.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "NBA game-time picks $(TZ=America/New_York date +'%F %H:%M ET')"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            git rebase --abort 2>/dev/null || true  # a real conflict: the next run redoes it from scratch
+            sleep $((i * 10))
+          done
+          exit 1
+
+      - name: Mark the run failed if a step failed
+        if: steps.nba.outcome == 'failure' || steps.totals.outcome == 'failure'
+        run: |
+          echo "::error::NBA Stats=${{ steps.nba.outcome }}, NBA Totals=${{ steps.totals.outcome }}"
+          exit 1

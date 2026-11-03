@@ -52,7 +52,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, manual, store  # noqa: E402
-from lib.nba_absence import big_scorers, injury_out  # noqa: E402
+from lib.nba_absence import big_scorers, injury_status, watch_entries  # noqa: E402
 from score_slate import _same_team  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
@@ -170,9 +170,10 @@ def regular_season_games(session, date_str):
 
 
 def tonight_games(session, date_str):
-    """{(away, home): {"state", "out"}} for ESPN's games on date_str; "out"
-    is a function team -> set of player ids ESPN's injury report lists as Out
-    (fetched lazily, only for games that haven't started; None if unknown)."""
+    """{(away, home): {"state", "out", "status"}} for ESPN's games on date_str;
+    "out" is a function team -> set of player ids ESPN's injury report lists
+    as Out, "status" team -> {player_id: (name, status)} (both fetched lazily,
+    only for games that haven't started; None if unknown)."""
     try:
         events = espn.fetch_scoreboard(session, "basketball", "nba", date_str.replace("-", ""))
     except Exception:
@@ -182,14 +183,22 @@ def tonight_games(session, date_str):
         comp = ev["competitions"][0]
         teams = {c["homeAway"]: c["team"]["displayName"] for c in comp["competitors"]}
         cache = {}
-        def out_fn(team, eid=ev["id"], cache=cache):
+        def status_fn(team, eid=ev["id"], cache=cache):
             if "inj" not in cache:
-                cache["inj"] = injury_out(session, eid)
+                cache["inj"] = injury_status(session, eid)
             inj = cache["inj"]
             if inj is None:
                 return None
-            return set().union(*[set(v) for k, v in inj.items() if _same_team(team, k)])
-        out[(teams.get("away"), teams.get("home"))] = {"state": (comp.get("status") or {}).get("type", {}).get("state"), "out": out_fn}
+            merged = {}
+            for k, v in inj.items():
+                if _same_team(team, k):
+                    merged.update(v)
+            return merged
+        def out_fn(team, status_fn=status_fn):
+            st = status_fn(team)
+            return None if st is None else {pid for pid, v in st.items() if v[1] == "out"}
+        out[(teams.get("away"), teams.get("home"))] = {"state": (comp.get("status") or {}).get("type", {}).get("state"),
+                                                       "out": out_fn, "status": status_fn}
     return out
 
 
@@ -453,6 +462,9 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                     picks.append((team, 18, f"Backing {team}: {who} scored 30+ in its last game and is out tonight; "
                                          f"now home vs. a better-record team -- teams in this spot covered 61.7% ATS "
                                          f"(29-18, 2022-23 to 2025-26)."))
+                elif "watch" in tonight:
+                    tonight["watch"] += watch_entries(big, tonight["status"](team), 18,
+                                                      f"NBA Stats rule 18 would back {slate_name.get(team, team)}")
             elif big:  # started or final: keep whatever was decided before tip-off
                 prev = next((r for r in tonight.get("prior") or [] if r.get("rule") == 18), None)
                 if prev:
@@ -583,10 +595,17 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
         if not away or not home:
             continue
         fails = FAILS[0]
+        watch_before = g.get("statsWatch")
         if regular.get((away, home), True):
             ev = next((v for (a, h), v in tonight.items() if _same_team(away, a) and _same_team(home, h)), None)
-            ctx = None if ev is None else {"state": ev["state"], "out": ev["out"], "prior": g.get("statsRules") or []}
+            ctx = None if ev is None else {"state": ev["state"], "out": ev["out"], "status": ev["status"],
+                                           "prior": g.get("statsRules") or [], "watch": []}
             result = evaluate_game(session, points, by_team, q_cache, date_str, home, away, ctx)
+            if ctx and ctx["state"] == "pre":  # injury watch: refreshed until tip-off, then kept as it was
+                if ctx["watch"]:
+                    g["statsWatch"] = ctx["watch"]
+                else:
+                    g.pop("statsWatch", None)
         else:
             result = None  # preseason / play-in / playoffs: not what the rules were tested on
         before = (g.get("statsFavors"), g.get("statsCheck"), g.get("statsRules"))
@@ -603,7 +622,7 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
         else:
             for k in ("statsFavors", "statsCheck", "statsRules", "statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn"):
                 g.pop(k, None)
-        if (g.get("statsFavors"), g.get("statsCheck"), g.get("statsRules")) != before:
+        if (g.get("statsFavors"), g.get("statsCheck"), g.get("statsRules")) != before or g.get("statsWatch") != watch_before:
             changed += 1
     if changed:
         store.write_doc("nba", date_str, doc)

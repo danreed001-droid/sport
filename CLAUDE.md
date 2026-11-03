@@ -81,6 +81,13 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   situation (NBA Stats 20-29, NBA Totals 4-8) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).
+- `.github/workflows/nba-gametime.yml` re-runs only `nba_stats_signals.py` and
+  `nba_totals_signals.py` every 15 minutes, 4 PM-midnight ET, so injury-based
+  rules (NBA Stats 18, NBA Totals 3) and totals lines are checked near
+  tip-off; it commits `data/nba/` and pages.yml rebuilds after it. When a
+  pick would fire if a listed-but-not-Out player sits (questionable,
+  doubtful, day-to-day), the scripts write `statsWatch` / `totalsWatch` and
+  the card shows an "Injury watch" until the game is final.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page

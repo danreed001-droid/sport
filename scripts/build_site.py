@@ -33,7 +33,7 @@ SLATE_FIELDS = [
     "ncaabStatsFavors", "ncaabStatsCheck", "ncaabStatsRules",
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore", "manualFields",
-    "totalsLine", "totalsFavors", "totalsCheck", "totalsRules",
+    "totalsLine", "totalsFavors", "totalsCheck", "totalsRules", "statsWatch", "totalsWatch",
 ]
 
 

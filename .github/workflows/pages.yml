@@ -8,7 +8,7 @@ on:
   push:
     branches: [main]
   workflow_run:
-    workflows: ["Diamond Ledger (scoring)", "Pick intake"]
+    workflows: ["Diamond Ledger (scoring)", "Pick intake", "NBA game-time picks"]
     types: [completed]
   workflow_dispatch:
 

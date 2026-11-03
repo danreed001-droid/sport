@@ -57,7 +57,8 @@ REPO_OWNED_GAME_FIELDS = ("statsFavors", "statsCheck", "statsRules", "statsCorre
                           "nflStatsCover", "nflStatsSpreadReturn",
                           "ncaabStatsFavors", "ncaabStatsCheck", "ncaabStatsRules", "ncaabStatsCorrect", "ncaabStatsReturn",
                           "ncaabStatsCover", "ncaabStatsSpreadReturn",
-                          "totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsCorrect", "totalsReturn", "totalsBackfill")
+                          "totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsCorrect", "totalsReturn", "totalsBackfill",
+                          "totalsWatch", "statsWatch")
 
 
 def carry_repo_fields(current, doc):

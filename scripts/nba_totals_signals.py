@@ -38,7 +38,7 @@ from datetime import date
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, store  # noqa: E402
-from lib.nba_absence import big_scorers, injury_out  # noqa: E402
+from lib.nba_absence import big_scorers, injury_status, watch_entries  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str  # noqa: E402
 from lib.nba_totals_rules import OT_LOOKBACK_DAYS, OVER_RULES, RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from score_slate import _same_team  # noqa: E402
@@ -46,7 +46,7 @@ from score_slate import _same_team  # noqa: E402
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
-FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck")
+FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsWatch")
 # Bumped whenever rules are added, so --backfill rechecks past games with them.
 BACKFILL_VERSION = 4
 
@@ -114,7 +114,7 @@ def home_upset_loss(rows, team, opp_now, date_str, since):
     return {"last": last, "margin": last["pa"] - last["pf"], "rested": gap > 1, "record": (mine, theirs)}
 
 
-def evaluate(g, rows, date_str, since, spread, points=None, absent=None):
+def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=None, watch=None):
     """Rules that fire for game g. absent(team_name) -> set of player ids out
     tonight (None if unknown); points is NBA Stats' BoxCache. Without them
     rule 3 isn't checked."""
@@ -128,7 +128,10 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None):
         mine, theirs = (float(hl["Home_Score"]), float(hl["Away_Score"])) if was_home else (float(hl["Away_Score"]), float(hl["Home_Score"]))
         if mine > theirs:
             out_now = absent(g["home"])
-            sitting = [b for b in big_scorers(points, hl["Game_ID"], team, 30, 39) if out_now is not None and b[0] in out_now]
+            big = big_scorers(points, hl["Game_ID"], team, 30, 39)
+            sitting = [b for b in big if out_now is not None and b[0] in out_now]
+            if not sitting and watch is not None and status is not None:
+                watch += watch_entries(big, status(g["home"]), 3, "NBA Totals rule 3 would bet the over")
             if sitting:
                 who = ", ".join(f"{n} ({p})" for _, p, n in sitting)
                 rules.append({"rule": 3, "detail": f"{g['home']} (home) won its last game on {hl['Date']} and {who} "
@@ -195,10 +198,24 @@ def run_for_date(session, points, rows, date_str):
             if lines.get("total") is not None:
                 g["totalsLine"] = lines["total"]
             spread = lines.get("homeSpread", g.get("homeSpread"))
-            inj = injury_out(session, ev["id"])
-            absent = (lambda team: None) if inj is None else (
-                lambda team: set().union(*[set(v) for k, v in inj.items() if _same_team(team, k)]))
-            rules = evaluate(g, rows, date_str, since, spread, points, absent)
+            inj = injury_status(session, ev["id"])
+            def status(team, inj=inj):
+                if inj is None:
+                    return None
+                merged = {}
+                for k, v in inj.items():
+                    if _same_team(team, k):
+                        merged.update(v)
+                return merged
+            def absent(team):
+                st = status(team)
+                return None if st is None else {pid for pid, v in st.items() if v[1] == "out"}
+            watch = []
+            rules = evaluate(g, rows, date_str, since, spread, points, absent, status, watch)
+            if watch:
+                g["totalsWatch"] = watch
+            else:
+                g.pop("totalsWatch", None)
             side = verdict(rules)
             if rules and not side:
                 print(f"  {date_str} {g['away']} @ {g['home']}: rules {[r['rule'] for r in rules]} disagree -- no pick")
