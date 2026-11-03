@@ -13,7 +13,9 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   14 all 5 starters scored 10+ in a win, now on a back-to-back vs. a
   worse-record team, 17 won while allowing 130+, now at home.
   Backs (pick the flagged team): 16 lost to an opponent that shot 50%+ from
-  three, now home on a back-to-back.
+  three, now home on a back-to-back; 18 (on trial) home vs. a better-record
+  team while the player who scored 30+ in its last game is out tonight
+  (ESPN's injury report says "Out"; checked until tip-off, then frozen).
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -44,6 +46,8 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, manual, store  # noqa: E402
+from lib.nba_absence import big_scorers, injury_out  # noqa: E402
+from score_slate import _same_team  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
 
@@ -54,6 +58,7 @@ POINTS_CACHE = os.path.join(REPO_ROOT, "data", "raw", "nba_player_points.json")
 # at 62%+ ATS: "b2b" = played yesterday, "1" = one day off, "2+" = two or more.
 ALLOWED_REST = {
     2: {"b2b", "1", "2+"}, 9: {"b2b"}, 14: {"b2b"}, 16: {"b2b"}, 17: {"b2b", "1", "2+"},
+    18: {"b2b", "1", "2+"},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
@@ -118,6 +123,30 @@ def regular_season_games(session, date_str):
     for ev in events:
         teams = {c["homeAway"]: c["team"]["displayName"] for c in ev["competitions"][0]["competitors"]}
         out[(teams.get("away"), teams.get("home"))] = (ev.get("season") or {}).get("type") == 2
+    return out
+
+
+def tonight_games(session, date_str):
+    """{(away, home): {"state", "out"}} for ESPN's games on date_str; "out"
+    is a function team -> set of player ids ESPN's injury report lists as Out
+    (fetched lazily, only for games that haven't started; None if unknown)."""
+    try:
+        events = espn.fetch_scoreboard(session, "basketball", "nba", date_str.replace("-", ""))
+    except Exception:
+        return {}
+    out = {}
+    for ev in events:
+        comp = ev["competitions"][0]
+        teams = {c["homeAway"]: c["team"]["displayName"] for c in comp["competitors"]}
+        cache = {}
+        def out_fn(team, eid=ev["id"], cache=cache):
+            if "inj" not in cache:
+                cache["inj"] = injury_out(session, eid)
+            inj = cache["inj"]
+            if inj is None:
+                return None
+            return set().union(*[set(v) for k, v in inj.items() if _same_team(team, k)])
+        out[(teams.get("away"), teams.get("home"))] = {"state": (comp.get("status") or {}).get("type", {}).get("state"), "out": out_fn}
     return out
 
 
@@ -297,11 +326,21 @@ class BoxCache:
                 json.dump(self.data, f, separators=(",", ":"))
 
 
-def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
+def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonight=None):
     """Returns (pick_team, check_text) or None. Collects every rule that
-    fires for either team; skips the game if they disagree on a side."""
+    fires for either team; skips the game if they disagree on a side.
+    tonight: {"state": ESPN game state, "out": team -> set of player ids out
+    (None if unknown), "prior": the game's current statsRules} for rule 18."""
     picks = []  # (pick_team, rule number, text)
     season0 = season_start(date_str)
+    # Slates sometimes spell a team differently from ESPN's archive ("LA
+    # Lakers" vs "Los Angeles Lakers"): look teams up by the archive's name,
+    # and hand the pick back under the slate's.
+    def resolve(name):
+        return name if name in by_team else next((k for k in by_team if _same_team(name, k)), name)
+    H, A = resolve(home), resolve(away)
+    slate_name = {H: home, A: away}
+    home, away = H, A
     for team, is_home, opp in ((home, True, away), (away, False, home)):
         games = [g for g in by_team.get(team, []) if g["date"] >= season0]
         prior = [g for g in games if g["date"] < date_str]
@@ -361,6 +400,21 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
                                     f"now on a back-to-back vs. a worse-record opponent -- teams in this spot were faded "
                                     f"62.3% of the time ATS (n=122)."))
 
+        if is_home and opp_stronger and tonight is not None:
+            big = big_scorers(points, last["event_id"], team, 30)
+            if big and tonight.get("state") == "pre":
+                out = tonight["out"](team)
+                hit = [b for b in big if out is not None and b[0] in out]
+                if hit:
+                    who = ", ".join(f"{n} ({p} pts)" for _, p, n in hit)
+                    picks.append((team, 18, f"Backing {team}: {who} scored 30+ in its last game and is out tonight; "
+                                         f"now home vs. a better-record team -- teams in this spot covered 61.7% ATS "
+                                         f"(29-18, 2022-23 to 2025-26)."))
+            elif big:  # started or final: keep whatever was decided before tip-off
+                prev = next((r for r in tonight.get("prior") or [] if r.get("rule") == 18), None)
+                if prev:
+                    picks.append((team, 18, prev.get("detail", "")))
+
         # Keep only the rules whose backtest cleared 62% for this team's rest
         # (days off since its last game).
         gap = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days - 1
@@ -371,7 +425,7 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away):
         return None
     rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], "detail": text}
              for _, n, text in sorted(picks, key=lambda x: x[1])]
-    return picks[0][0], rules
+    return slate_name.get(picks[0][0], picks[0][0]), rules
 
 
 def _num(v):
@@ -452,13 +506,16 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
             store.write_doc("nba", date_str, doc)
     changed = 0
     regular = regular_season_games(session, date_str)
+    tonight = tonight_games(session, date_str)
     for g in doc.get("games", []):
         away, home = g.get("away"), g.get("home")
         if not away or not home:
             continue
         fails = FAILS[0]
         if regular.get((away, home), True):
-            result = evaluate_game(session, points, by_team, q_cache, date_str, home, away)
+            ev = next((v for (a, h), v in tonight.items() if _same_team(away, a) and _same_team(home, h)), None)
+            ctx = None if ev is None else {"state": ev["state"], "out": ev["out"], "prior": g.get("statsRules") or []}
+            result = evaluate_game(session, points, by_team, q_cache, date_str, home, away, ctx)
         else:
             result = None  # preseason / play-in / playoffs: not what the rules were tested on
         before = (g.get("statsFavors"), g.get("statsCheck"), g.get("statsRules"))

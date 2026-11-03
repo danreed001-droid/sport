@@ -53,7 +53,7 @@
         "OKC missing J.Williams, Holmgren, Caruso, Sorber, Topic, Wallace (SGA healthy); CLE only minor day-to-days"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "5-0",
@@ -103,7 +103,7 @@
         "IND on 2nd night of back-to-back (lost to BKN 90-98 on 11/1), without Haliburton/McConnell/Sheppard; ATL without Landale (out), Johnson (Q)"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "0-6",
@@ -153,7 +153,7 @@
         "BKN on 2nd night of back-to-back (beat IND 98-90 on 11/1); NYK rested; NYK's own form down from last year's #5 NetRtg but no major roster loss confirmed"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "3-1",
@@ -203,7 +203,7 @@
         "WAS missing Young, A.Davis, George, Whitmore (all season-long); ORL missing its top 3 - Banchero, Suggs, Isaac - tonight"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": true,
+      "totalsBackfill": 2,
       "totalsLine": 224.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -266,7 +266,7 @@
         "CHI is the league's worst team by PD/g and extremely banged up (Claxton + 7 others day-to-day); PHI new core (Embiid/J.Brown/LeBron) all managing minor day-to-day issues but reportedly available"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "5-0",
@@ -316,7 +316,7 @@
         "CHA traded away LaMelo Ball and Miles Bridges this offseason and is missing Knueppel/G.Williams (both out since Sept); DET missing starting C Jalen Duren"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "0-4",
@@ -366,7 +366,20 @@
         "SAC missing Sabonis, De'Andre Hunter, and Zach LaVine all for the season; DAL's Cooper Flagg and Kyrie Irving both trending toward available but not fully confirmed"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2,
+      "totalsLine": 232.5,
+      "totalsFavors": "Over",
+      "totalsRules": [
+        {
+          "rule": 3,
+          "detail": "Dallas Mavericks (home) won its last game on 2026-10-30 and Kyrie Irving (35) is out tonight.",
+          "name": "Over when the home team won its last game and that game's 30-39 point scorer is out (on trial)",
+          "backtest": "65.2% overs, 43-23 (2022-23 to 2025-26); over in 3 of 4 seasons, small sample"
+        }
+      ],
+      "totalsCheck": "Rule 3: Dallas Mavericks (home) won its last game on 2026-10-30 and Kyrie Irving (35) is out tonight. (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "2-1",
@@ -416,7 +429,7 @@
         "MIN missing Anthony Edwards (knee surgery, ~2 months) - its best player; MIL post-Giannis-trade is one of the league's worst teams by net rating"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "0-5",
@@ -466,7 +479,7 @@
         "MEM has the league's best record/point differential despite trading away Ja Morant; NO's Jordan Poole was out until approx. today, Yves Missi still out"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "2-3",
@@ -516,7 +529,7 @@
         "BOS on 2nd night of a back-to-back (beat ORL 108-97 on 11/1), traveling to HOU; HOU rested with newly-acquired Kevin Durant, several role players day-to-day (Sheppard, Smart, Adams, Phillips, Sengun)"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "0-5",
@@ -566,7 +579,7 @@
         "UTA missing Nurkic, Hayes, and Hinson; SAS's De'Aaron Fox/Wembanyama core reported healthy and has been consistently strong both years"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "0-5",
@@ -616,7 +629,7 @@
         "POR missing three guards - Ja Morant, Damian Lillard, and Shaedon Sharpe - all out; DEN's Jokic reported healthy, Denver playing at altitude"
       ],
       "time": "9:00 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "3-2",
@@ -666,7 +679,7 @@
         "GSW on 2nd night of a back-to-back (beat LAC 124-112 on 11/1) and missing Draymond Green, Horford, Podziemski, with Curry's own status uncertain; PHX has the league's worst defensive rating"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": true,
+      "totalsBackfill": 2,
       "totalsLine": 227.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -729,7 +742,7 @@
         "Rematch of the Kawhi Leonard/Brandon Ingram trade - neither centerpiece plays tonight (Kawhi out for TOR, Ingram out for LAC); both teams on 2nd night of a back-to-back"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": true
+      "totalsBackfill": 2
     },
     {
       "altCategoryTally": "1-5",
@@ -779,7 +792,7 @@
         "LAL on 2nd night of a back-to-back (beat TOR 131-125 on 11/1), now built around Luka Doncic post-LeBron departure; MIA's Giannis has not yet translated to a positive team net rating"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": true,
+      "totalsBackfill": 2,
       "totalsLine": 237.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -795,5 +808,5 @@
       "totalsReturn": -100.0
     }
   ],
-  "scoredAt": "2026-11-03T12:13:32.139816+00:00"
+  "scoredAt": "2026-11-03T12:52:07.552890+00:00"
 }

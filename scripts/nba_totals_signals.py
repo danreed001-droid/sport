@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""NBA Totals: patches full-game UNDER picks onto the day's NBA slate
+"""NBA Totals: patches full-game total picks onto the day's NBA slate
 (data/nba/<date>.json), like nba_stats_signals.py does for sides. Rules in
 lib/nba_totals_rules.py:
 
-  1. the spread is 3 points or less;
-  2. the road team's previous regular-season game (within 10 days) went to OT.
+  1. UNDER: the spread is 3 points or less;
+  2. UNDER: the road team's previous regular-season game (within 10 days) went to OT;
+  3. OVER (on trial): the home team won its last game and a player who scored
+     30-39 in it is out tonight (ESPN injury report: "Out").
+
+If an over rule and an under rule both fire, the game gets no pick.
 
 Fields written on a game: totalsLine (the line the pick is graded against),
-totalsFavors ("Under"), totalsRules ([{rule, name, backtest, detail}]) and
+totalsFavors ("Under" or "Over"), totalsRules ([{rule, name, backtest, detail}]) and
 totalsCheck (plain-text why). Until tip-off every run refreshes the line from
 ESPN's pickcenter (DraftKings), so grading uses a near-closing total, and the
 rules are re-evaluated on it; once a game has started nothing changes.
@@ -20,7 +24,8 @@ Usage: python scripts/nba_totals_signals.py [YYYY-MM-DD ...]   (default: today E
 --backfill applies the rules to finished games on past slates that have no
 NBA Totals fields yet, using the DraftKings closing spread and total archived
 in data/raw/nba_lines.csv (the same lines the backtest graded against). Those
-picks are marked totalsBackfill: true. Default: every past slate this season.
+picks are marked totalsBackfill (2 = checked with all three rules; for rule 3,
+"out" means not in that game's box score). Default: every past slate this season.
 """
 import csv
 import os
@@ -29,8 +34,9 @@ from datetime import date
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, store  # noqa: E402
+from lib.nba_absence import big_scorers, injury_out  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str  # noqa: E402
-from lib.nba_totals_rules import CLOSE_SPREAD, OT_LOOKBACK_DAYS, RULE_BACKTEST, RULE_NAMES  # noqa: E402
+from lib.nba_totals_rules import CLOSE_SPREAD, OT_LOOKBACK_DAYS, OVER_RULES, RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from score_slate import _same_team  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -59,7 +65,10 @@ def last_game(rows, team, before, since):
     return best
 
 
-def evaluate(g, rows, date_str, since, spread):
+def evaluate(g, rows, date_str, since, spread, points=None, absent=None):
+    """Rules that fire for game g. absent(team_name) -> set of player ids out
+    tonight (None if unknown); points is NBA Stats' BoxCache. Without them
+    rule 3 isn't checked."""
     rules = []
     if spread is not None and abs(spread) <= CLOSE_SPREAD:
         rules.append({"rule": 1, "detail": f"Spread {g['home']} {spread:+g} (3 points or less)."})
@@ -70,12 +79,30 @@ def evaluate(g, rows, date_str, since, spread):
             opp = last["Home_Team"] if _same_team(g["away"], last["Away_Team"]) else last["Away_Team"]
             rules.append({"rule": 2, "detail": f"{g['away']} (road) went to {last['Status'].split('/')[-1]} vs {opp} on {last['Date']} "
                                                f"({last['Away_Team']} {last['Away_Score']}, {last['Home_Team']} {last['Home_Score']})."})
+    hl = last_game(rows, g["home"], date_str, since) if points is not None and absent is not None else None
+    if hl and (date.fromisoformat(date_str) - date.fromisoformat(hl["Date"])).days <= OT_LOOKBACK_DAYS:
+        was_home = _same_team(g["home"], hl["Home_Team"])
+        team = hl["Home_Team"] if was_home else hl["Away_Team"]
+        mine, theirs = (float(hl["Home_Score"]), float(hl["Away_Score"])) if was_home else (float(hl["Away_Score"]), float(hl["Home_Score"]))
+        if mine > theirs:
+            out_now = absent(g["home"])
+            sitting = [b for b in big_scorers(points, hl["Game_ID"], team, 30, 39) if out_now is not None and b[0] in out_now]
+            if sitting:
+                who = ", ".join(f"{n} ({p})" for _, p, n in sitting)
+                rules.append({"rule": 3, "detail": f"{g['home']} (home) won its last game on {hl['Date']} and {who} "
+                                                   f"is out tonight."})
     for r in rules:
         r["name"], r["backtest"] = RULE_NAMES[r["rule"]], RULE_BACKTEST[r["rule"]]
     return rules
 
 
-def run_for_date(session, rows, date_str):
+def verdict(rules):
+    """'Over', 'Under', or None when no rule fired or the rules disagree."""
+    sides = {"Over" if r["rule"] in OVER_RULES else "Under" for r in rules}
+    return sides.pop() if len(sides) == 1 else None
+
+
+def run_for_date(session, points, rows, date_str):
     doc = store.read_doc("nba", date_str)
     if doc is None:
         print(f"{date_str}: no NBA slate yet, nothing to patch.")
@@ -110,13 +137,19 @@ def run_for_date(session, rows, date_str):
             if lines.get("total") is not None:
                 g["totalsLine"] = lines["total"]
             spread = lines.get("homeSpread", g.get("homeSpread"))
-            rules = evaluate(g, rows, date_str, since, spread)
-            if rules and g.get("totalsLine") is not None:
-                g["totalsFavors"] = "Under"
+            inj = injury_out(session, ev["id"])
+            absent = (lambda team: None) if inj is None else (
+                lambda team: set().union(*[set(v) for k, v in inj.items() if _same_team(team, k)]))
+            rules = evaluate(g, rows, date_str, since, spread, points, absent)
+            side = verdict(rules)
+            if rules and not side:
+                print(f"  {date_str} {g['away']} @ {g['home']}: rules {[r['rule'] for r in rules]} disagree -- no pick")
+            if side and g.get("totalsLine") is not None:
+                g["totalsFavors"] = side
                 g["totalsRules"] = rules
                 g["totalsCheck"] = " ".join(f"Rule {r['rule']}: {r['detail']}" for r in rules)
                 picks += 1
-                print(f"  {date_str} {g['away']} @ {g['home']}: Under {g['totalsLine']:g} -- rules {[r['rule'] for r in rules]}")
+                print(f"  {date_str} {g['away']} @ {g['home']}: {side} {g['totalsLine']:g} -- rules {[r['rule'] for r in rules]}")
             else:
                 for k in ("totalsFavors", "totalsRules", "totalsCheck"):
                     g.pop(k, None)
@@ -127,7 +160,7 @@ def run_for_date(session, rows, date_str):
     print(f"{date_str}: {picks} NBA Totals pick(s).")
 
 
-def backfill(rows, dates):
+def backfill(points, rows, dates):
     with open(LINES_CSV, encoding="utf-8") as f:
         lines = list(csv.DictReader(f))
     today = today_et_str()
@@ -141,8 +174,8 @@ def backfill(rows, dates):
         since = season_start(date_str)
         changed = 0
         for g in doc.get("games", []):
-            if g.get("totalsFavors") or "totalsBackfill" in g:
-                continue  # already has a live or backfilled verdict
+            if g.get("totalsBackfill") == 2 or (g.get("totalsFavors") and not g.get("totalsBackfill")):
+                continue  # already checked with every rule, or a live pick
             if not isinstance(g.get("awayScore"), (int, float)) or not isinstance(g.get("homeScore"), (int, float)):
                 continue  # not final
             ln = next((r for r in lines if r["date"] == date_str and _same_team(g.get("away"), r["away"])
@@ -151,32 +184,57 @@ def backfill(rows, dates):
                 total, spread = float(ln["total_close"]), float(ln["spread_close"])
             except (TypeError, ValueError):
                 continue  # no archived closing line
-            rules = evaluate(g, rows, date_str, since, spread)
-            g["totalsBackfill"] = True  # checked, even when no rule fired, so it's never re-done
-            if rules:
-                g["totalsLine"], g["totalsFavors"], g["totalsRules"] = total, "Under", rules
+            def absent(team, gid=ln["game_id"]):
+                """Players out of this finished game: anyone not in its box score."""
+                points.get(gid, team)  # makes sure the game's box is cached
+                names = list(((points.data.get(gid) or {}).get("pts") or {}))
+                key = next((k for k in names if _same_team(team, k)), None)
+                box = points.get(gid, key) if key else None
+                return None if box is None else _NotIn(box)
+            rules = evaluate(g, rows, date_str, since, spread, points, absent)
+            side = verdict(rules)
+            before = (g.get("totalsFavors"), [r["rule"] for r in g.get("totalsRules") or []])
+            g["totalsBackfill"] = 2  # checked with every rule, even when none fired, so it's never re-done
+            for k in ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsCorrect", "totalsReturn"):
+                g.pop(k, None)
+            if side:
+                g["totalsLine"], g["totalsFavors"], g["totalsRules"] = total, side, rules
                 g["totalsCheck"] = " ".join(f"Rule {r['rule']}: {r['detail']}" for r in rules) + " (backfilled from the DraftKings closing line)"
                 total_picks += 1
-                print(f"  {date_str} {g['away']} @ {g['home']}: Under {total:g} -- rules {[r['rule'] for r in rules]}")
+                if before != (side, [r["rule"] for r in rules]):
+                    print(f"  {date_str} {g['away']} @ {g['home']}: {side} {total:g} -- rules {[r['rule'] for r in rules]}")
+            elif before[0]:
+                print(f"  {date_str} {g['away']} @ {g['home']}: was {before[0]} {before[1]}, now no pick (rules {[r['rule'] for r in rules]})")
             changed += 1
         if changed:
             store.write_doc("nba", date_str, doc)
     print(f"backfilled {total_picks} NBA Totals pick(s).")
 
 
+class _NotIn:
+    """'Players out' for a finished game: anyone not in its box score."""
+    def __init__(self, box):
+        self.box = box
+
+    def __contains__(self, pid):
+        return pid not in self.box
+
+
 def main():
-    if sys.argv[1:2] == ["--backfill"]:
-        with open(SCORES_CSV, encoding="utf-8") as f:
-            rows = list(csv.DictReader(f))
-        start = season_start(today_et_str())
-        backfill(rows, sys.argv[2:] or [d for d, _ in store.list_docs("nba") if d >= start])
-        return
-    dates = sys.argv[1:] or [today_et_str()]
+    from nba_stats_signals import BoxCache
+    session = espn.make_session()
+    points = BoxCache(session)
     with open(SCORES_CSV, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-    session = espn.make_session()
-    for d in dates:
-        run_for_date(session, rows, d)
+    try:
+        if sys.argv[1:2] == ["--backfill"]:
+            start = season_start(today_et_str())
+            backfill(points, rows, sys.argv[2:] or [d for d, _ in store.list_docs("nba") if d >= start])
+            return
+        for d in sys.argv[1:] or [today_et_str()]:
+            run_for_date(session, points, rows, d)
+    finally:
+        points.save()
 
 
 if __name__ == "__main__":
