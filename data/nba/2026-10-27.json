@@ -54,7 +54,7 @@
         "Jayson Tatum (BOS leading scorer, 24.0 ppg) questionable on 2nd night of B2B; Devin Carter (mono) out for BOS; BKN reported close to full strength"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "3-4",
@@ -104,7 +104,7 @@
         "Pistons' Jalen Duren & Ugonna Onyenso out; Ausar Thompson/Isaiah Joe/Isaac Jones/Elijah Harkless questionable for DET; Knicks' Jose Alvarado out"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "0-6",
@@ -154,7 +154,7 @@
         "Kings missing Ben Simmons (out for season, Achilles), Maxime Raynaud, Dylan Cardwell, Keegan Murray (all out); Spurs missing Tobias Harris, Jayden Quaintance (both out) \u2014 Victor Wembanyama not on the injury report"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "2-3",
@@ -204,20 +204,7 @@
         "LAL roster changed since 2025-26 \u2014 LeBron James left for Philadelphia; Shaedon Sharpe (meniscus) out for POR, Henderson/Carlson questionable"
       ],
       "time": "11:00 PM ET",
-      "totalsBackfill": 3,
-      "totalsLine": 234.5,
-      "totalsFavors": "Under",
-      "totalsRules": [
-        {
-          "rule": 1,
-          "detail": "Spread Los Angeles Lakers -1.5 (3 points or less).",
-          "name": "Under when the spread is 3 points or less",
-          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
-        }
-      ],
-      "totalsCheck": "Rule 1: Spread Los Angeles Lakers -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
-      "totalsCorrect": false,
-      "totalsReturn": -100.0
+      "totalsBackfill": 4
     }
   ]
 }

@@ -60,20 +60,7 @@
         "Both teams report clean injury sheets for their core rotation tonight (DET: Taurean Prince GTD, personal reasons); Tatum fully healthy after Achilles recovery"
       ],
       "time": "3:00 PM ET",
-      "totalsBackfill": 3,
-      "totalsLine": 220.5,
-      "totalsFavors": "Under",
-      "totalsRules": [
-        {
-          "rule": 1,
-          "detail": "Spread Detroit Pistons +1.5 (3 points or less).",
-          "name": "Under when the spread is 3 points or less",
-          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
-        }
-      ],
-      "totalsCheck": "Rule 1: Spread Detroit Pistons +1.5 (3 points or less). (backfilled from the DraftKings closing line)",
-      "totalsCorrect": false,
-      "totalsReturn": -100.0
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "0-5",
@@ -128,7 +115,7 @@
         "NYK raises its 2026 championship banner pregame"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "3-3",
@@ -185,20 +172,7 @@
         "Rematch of last season's 7-game Western Conference Finals (SAS won Game 7)"
       ],
       "time": "9:30 PM ET",
-      "totalsBackfill": 3,
-      "totalsLine": 229.5,
-      "totalsFavors": "Under",
-      "totalsRules": [
-        {
-          "rule": 1,
-          "detail": "Spread San Antonio Spurs +1.5 (3 points or less).",
-          "name": "Under when the spread is 3 points or less",
-          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
-        }
-      ],
-      "totalsCheck": "Rule 1: Spread San Antonio Spurs +1.5 (3 points or less). (backfilled from the DraftKings closing line)",
-      "totalsCorrect": true,
-      "totalsReturn": 90.91
+      "totalsBackfill": 4
     }
   ]
 }

@@ -54,20 +54,7 @@
         "Magic missing Anthony Black, Jonathan Isaac, Izaiyah Nelson, Noah Penda (all out)"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 3,
-      "totalsLine": 233.5,
-      "totalsFavors": "Under",
-      "totalsRules": [
-        {
-          "rule": 1,
-          "detail": "Spread Orlando Magic -2.5 (3 points or less).",
-          "name": "Under when the spread is 3 points or less",
-          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
-        }
-      ],
-      "totalsCheck": "Rule 1: Spread Orlando Magic -2.5 (3 points or less). (backfilled from the DraftKings closing line)",
-      "totalsCorrect": false,
-      "totalsReturn": -100.0
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "3-1",
@@ -117,7 +104,7 @@
         "Wizards missing AJ Dybantsa, Jamir Watkins, Tristan Vukcevic (all out); Bucks' Nate Ament questionable"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "1-3",
@@ -167,20 +154,7 @@
         "Hornets missing Kon Knueppel, Coby White, Kylan Boswell, Grant Williams (all out) \u2014 severe cluster"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 3,
-      "totalsLine": 220.5,
-      "totalsFavors": "Under",
-      "totalsRules": [
-        {
-          "rule": 1,
-          "detail": "Spread Brooklyn Nets +1.5 (3 points or less).",
-          "name": "Under when the spread is 3 points or less",
-          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
-        }
-      ],
-      "totalsCheck": "Rule 1: Spread Brooklyn Nets +1.5 (3 points or less). (backfilled from the DraftKings closing line)",
-      "totalsCorrect": true,
-      "totalsReturn": 90.91
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "0-4",
@@ -230,7 +204,7 @@
         "Bulls' Nicolas Claxton out; Okoro, Hawkins, Miller, Swain, Collins all questionable"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "1-2",
@@ -280,20 +254,7 @@
         "Timberwolves' Donte DiVincenzo out (season, Achilles); Heat's Vladislav Goldin questionable"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 3,
-      "totalsLine": 240.5,
-      "totalsFavors": "Under",
-      "totalsRules": [
-        {
-          "rule": 1,
-          "detail": "Spread Miami Heat -1.5 (3 points or less).",
-          "name": "Under when the spread is 3 points or less",
-          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
-        }
-      ],
-      "totalsCheck": "Rule 1: Spread Miami Heat -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
-      "totalsCorrect": true,
-      "totalsReturn": 90.91
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "0-4",
@@ -343,20 +304,7 @@
         "Pacers missing Aaron Nesmith, T.J. McConnell, Johnny Furphy (all out); no Pelicans injuries reported"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 3,
-      "totalsLine": 238.5,
-      "totalsFavors": "Under",
-      "totalsRules": [
-        {
-          "rule": 1,
-          "detail": "Spread New Orleans Pelicans +2.5 (3 points or less).",
-          "name": "Under when the spread is 3 points or less",
-          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
-        }
-      ],
-      "totalsCheck": "Rule 1: Spread New Orleans Pelicans +2.5 (3 points or less). (backfilled from the DraftKings closing line)",
-      "totalsCorrect": false,
-      "totalsReturn": -100.0
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "0-4",
@@ -406,20 +354,7 @@
         "Jazz missing Trey Alexander, Blake Hinson, Tony Bradley, Jusuf Nurkic (all out); Grizzlies' Isaiah Stewart questionable"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 3,
-      "totalsLine": 240.5,
-      "totalsFavors": "Under",
-      "totalsRules": [
-        {
-          "rule": 1,
-          "detail": "Spread Memphis Grizzlies -1.5 (3 points or less).",
-          "name": "Under when the spread is 3 points or less",
-          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
-        }
-      ],
-      "totalsCheck": "Rule 1: Spread Memphis Grizzlies -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
-      "totalsCorrect": true,
-      "totalsReturn": 90.91
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "0-4",
@@ -469,7 +404,7 @@
         "Mavericks missing Santi Aldama, Dereck Lively II, Tarik Biberovic, Caleb Martin (all out), Jett Howard questionable"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "0-4",
@@ -519,7 +454,7 @@
         "Warriors' Stephen Curry questionable; Podziemski, Porzingis, Butler, Moody all out \u2014 major cluster; Lakers' Thiero, Carr out, Sexton questionable"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "3-1",
@@ -569,7 +504,7 @@
         "Blazers' Deni Avdija questionable, Sharpe/Carlson/Youngblood out; Suns' Mark Williams out, Kennard questionable"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "2-1",
@@ -619,7 +554,7 @@
         "Clippers missing Bradley Beal, Brandon Ingram (both out), plus Miller, Niederhauser, Strus; Kings' Ben Simmons out for season, Monk questionable"
       ],
       "time": "10:30 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     }
   ]
 }

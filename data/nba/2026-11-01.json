@@ -3,7 +3,7 @@
   "weekday": "Sunday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-02T06:51:08.633721+00:00",
+  "scoredAt": "2026-11-03T13:42:06.882473+00:00",
   "generatedAt": "2026-11-01T16:19:21Z",
   "games": [
     {
@@ -29,7 +29,7 @@
       "awayMoneyline": -258,
       "awayNetRtg": 8.8,
       "awayPDpg": 8.45,
-      "awayScore": 108,
+      "awayScore": 108.0,
       "awaySpread": -6.5,
       "awaySpreadOdds": -108,
       "confidence": "solid",
@@ -38,7 +38,7 @@
       "homeMoneyline": 210,
       "homeNetRtg": -3.4,
       "homePDpg": -4,
-      "homeScore": 97,
+      "homeScore": 97.0,
       "homeSpread": 6.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 68.97,
@@ -55,7 +55,7 @@
         "BOS: Devin Carter out (illness), Mitchell Robinson questionable"
       ],
       "time": "3:30 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "2-0",
@@ -80,7 +80,7 @@
       "awayMoneyline": 145,
       "awayNetRtg": -10.55,
       "awayPDpg": -10.5,
-      "awayScore": 98,
+      "awayScore": 98.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -89,7 +89,7 @@
       "homeMoneyline": -175,
       "homeNetRtg": -5,
       "homePDpg": -5.55,
-      "homeScore": 90,
+      "homeScore": 90.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 20.69,
@@ -106,7 +106,7 @@
         "BKN: Egor Demin and Mikel Brown Jr. both out"
       ],
       "time": "5:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "0-0",
@@ -131,7 +131,7 @@
       "awayMoneyline": 114,
       "awayNetRtg": -2.15,
       "awayPDpg": -2.65,
-      "awayScore": 112,
+      "awayScore": 112.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -140,7 +140,7 @@
       "homeMoneyline": -135,
       "homeNetRtg": 0.75,
       "homePDpg": 0.4,
-      "homeScore": 124,
+      "homeScore": 124.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 13.8,
@@ -157,7 +157,20 @@
         "GSW: Jimmy Butler, Moses Moody, Kristaps Porzingis all out"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4,
+      "totalsLine": 220.5,
+      "totalsFavors": "Over",
+      "totalsRules": [
+        {
+          "rule": 3,
+          "detail": "Golden State Warriors (home) won its last game on 2026-10-30 and Stephen Curry (31) is out tonight.",
+          "name": "Over when the home team won its last game and that game's 30-39 point scorer is out (on trial)",
+          "backtest": "65.2% overs, 43-23 (2022-23 to 2025-26); over in 3 of 4 seasons, small sample"
+        }
+      ],
+      "totalsCheck": "Rule 3: Golden State Warriors (home) won its last game on 2026-10-30 and Stephen Curry (31) is out tonight. (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "0-3",
@@ -182,7 +195,7 @@
       "awayMoneyline": 160,
       "awayNetRtg": 6.65,
       "awayPDpg": 6.7,
-      "awayScore": 125,
+      "awayScore": 125.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -191,7 +204,7 @@
       "homeMoneyline": -192,
       "homeNetRtg": 3.7,
       "homePDpg": 3.5,
-      "homeScore": 131,
+      "homeScore": 131.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 3.45,
@@ -208,7 +221,7 @@
         "LAL: no notable absences found in the injury report"
       ],
       "time": "9:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     }
   ]
 }

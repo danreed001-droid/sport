@@ -3,8 +3,8 @@
 (data/nba/<date>.json), like nba_stats_signals.py does for sides. Rules in
 lib/nba_totals_rules.py:
 
-  1. UNDER: the spread is 3 points or less;
-  2. UNDER: the road team's previous regular-season game (within 10 days) went to OT;
+  (1 and 2, the spread-3-or-less and road-team-off-OT unders, were retired:
+  below the 61% the user keeps.)
   3. OVER (on trial): the home team won its last game and a player who scored
      30-39 in it is out tonight (ESPN injury report: "Out").
   4-8. UNDER: a team lost its last game AT HOME to a worse-record team (it had
@@ -40,7 +40,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, store  # noqa: E402
 from lib.nba_absence import big_scorers, injury_out  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str  # noqa: E402
-from lib.nba_totals_rules import CLOSE_SPREAD, OT_LOOKBACK_DAYS, OVER_RULES, RULE_BACKTEST, RULE_NAMES  # noqa: E402
+from lib.nba_totals_rules import OT_LOOKBACK_DAYS, OVER_RULES, RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from score_slate import _same_team  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -48,7 +48,7 @@ SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck")
 # Bumped whenever rules are added, so --backfill rechecks past games with them.
-BACKFILL_VERSION = 3
+BACKFILL_VERSION = 4
 
 
 def season_start(date_str):
@@ -119,15 +119,8 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None):
     tonight (None if unknown); points is NBA Stats' BoxCache. Without them
     rule 3 isn't checked."""
     rules = []
-    if spread is not None and abs(spread) <= CLOSE_SPREAD:
-        rules.append({"rule": 1, "detail": f"Spread {g['home']} {spread:+g} (3 points or less)."})
-    last = last_game(rows, g["away"], date_str, since)
-    if last and "ot" in str(last["Status"]).lower():
-        gap = (date.fromisoformat(date_str) - date.fromisoformat(last["Date"])).days
-        if gap <= OT_LOOKBACK_DAYS:
-            opp = last["Home_Team"] if _same_team(g["away"], last["Away_Team"]) else last["Away_Team"]
-            rules.append({"rule": 2, "detail": f"{g['away']} (road) went to {last['Status'].split('/')[-1]} vs {opp} on {last['Date']} "
-                                               f"({last['Away_Team']} {last['Away_Score']}, {last['Home_Team']} {last['Home_Score']})."})
+    # Rules 1 (spread 3 or less, 54.2%) and 2 (road team off OT, 55.3%) were
+    # retired 2026-11-03: only rules that backtested at 61%+ are kept.
     hl = last_game(rows, g["home"], date_str, since) if points is not None and absent is not None else None
     if hl and (date.fromisoformat(date_str) - date.fromisoformat(hl["Date"])).days <= OT_LOOKBACK_DAYS:
         was_home = _same_team(g["home"], hl["Home_Team"])

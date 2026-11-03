@@ -52,8 +52,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   things itself.
 - NBA Totals (`scripts/nba_totals_signals.py`, rules in `scripts/lib/nba_totals_rules.py`)
   runs right after NBA Stats each scoring run and flags full-game totals on the
-  NBA slate: rule 1 UNDER, spread 3 points or less; rule 2 UNDER, the road
-  team's last game (within 10 days) went to OT; rule 3 OVER (on trial), the
+  NBA slate. Only rules that backtested at 61%+ are kept (the user's bar for
+  NBA Stats and NBA Totals); rules 1-2 (54-55% unders) were retired on
+  2026-11-03 and their numbers aren't reused. Rule 3 OVER (on trial), the
   home team won its last game and that game's 30-39 point scorer is out
   tonight (ESPN injury report "Out", `lib/nba_absence.py`); rules 4-8 UNDER
   after a team lost at home to a worse-record team and now faces a
@@ -63,9 +64,8 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   `nba_totals_signals.py` and rerun `--backfill` so past games are rechecked. It writes `totalsLine` (refreshed from
   ESPN's pickcenter every run until tip-off, then frozen), `totalsFavors`,
   `totalsRules` and `totalsCheck`; `score_slate.py` grades them
-  (`totalsCorrect`/`totalsReturn`, $100 at -110). Regular season only. Both
-  are thin backtested edges (~54-55% unders, 2022-23 on), tracked to see if
-  they hold; the pick sheet shows them as "NBA Totals". The season's games
+  (`totalsCorrect`/`totalsReturn`, $100 at -110). Regular season only. The
+  pick sheet shows them as "NBA Totals". The season's games
   before NBA Totals went live (2026-10-20 to 11-02) were backfilled with
   `nba_totals_signals.py --backfill` on the archived DraftKings closing lines
   and are marked `totalsBackfill: true`; the pick sheet says how many.

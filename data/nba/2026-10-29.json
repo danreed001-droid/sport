@@ -54,20 +54,7 @@
         "Hawks: Gueye (foot) and Veesaar (knee, out for season) out; Cavaliers: Tomlin (back) out - no star-level absences either side"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 3,
-      "totalsLine": 237.5,
-      "totalsFavors": "Under",
-      "totalsRules": [
-        {
-          "rule": 1,
-          "detail": "Spread Atlanta Hawks -1.5 (3 points or less).",
-          "name": "Under when the spread is 3 points or less",
-          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
-        }
-      ],
-      "totalsCheck": "Rule 1: Spread Atlanta Hawks -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
-      "totalsCorrect": true,
-      "totalsReturn": 90.91
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "2-4",
@@ -117,7 +104,7 @@
         "Kings missing Keegan Murray, Maxime Raynaud, Dylan Cardwell, Ben Simmons (4 out); Pelicans missing Yves Missi (out) and Jordan Poole (game-time decision)"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     },
     {
       "altCategoryTally": "4-3",
@@ -168,7 +155,7 @@
         "Trail Blazers missing Shaedon Sharpe (knee, long-term) and Chris Youngblood (GTD); Grizzlies no injuries reported"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 3
+      "totalsBackfill": 4
     }
   ]
 }
