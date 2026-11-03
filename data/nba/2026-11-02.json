@@ -3,7 +3,7 @@
   "weekday": "Monday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-03T15:18:36.281273+00:00",
+  "scoredAt": "2026-11-03T15:33:18.833050+00:00",
   "generatedAt": "2026-11-02T16:50:00Z",
   "games": [
     {
@@ -54,7 +54,7 @@
         "OKC missing J.Williams, Holmgren, Caruso, Sorber, Topic, Wallace (SGA healthy); CLE only minor day-to-days"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "5-0",
@@ -104,7 +104,7 @@
         "IND on 2nd night of back-to-back (lost to BKN 90-98 on 11/1), without Haliburton/McConnell/Sheppard; ATL without Landale (out), Johnson (Q)"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 6,
+      "totalsBackfill": 7,
       "totalsLine": 226.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -167,7 +167,7 @@
         "BKN on 2nd night of back-to-back (beat IND 98-90 on 11/1); NYK rested; NYK's own form down from last year's #5 NetRtg but no major roster loss confirmed"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "3-1",
@@ -217,7 +217,7 @@
         "WAS missing Young, A.Davis, George, Whitmore (all season-long); ORL missing its top 3 - Banchero, Suggs, Isaac - tonight"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-5",
@@ -267,7 +267,7 @@
         "CHI is the league's worst team by PD/g and extremely banged up (Claxton + 7 others day-to-day); PHI new core (Embiid/J.Brown/LeBron) all managing minor day-to-day issues but reportedly available"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "5-0",
@@ -317,7 +317,7 @@
         "CHA traded away LaMelo Ball and Miles Bridges this offseason and is missing Knueppel/G.Williams (both out since Sept); DET missing starting C Jalen Duren"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-4",
@@ -367,7 +367,7 @@
         "SAC missing Sabonis, De'Andre Hunter, and Zach LaVine all for the season; DAL's Cooper Flagg and Kyrie Irving both trending toward available but not fully confirmed"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 6,
+      "totalsBackfill": 7,
       "totalsLine": 232.5,
       "totalsFavors": "Over",
       "totalsRules": [
@@ -430,7 +430,7 @@
         "MIN missing Anthony Edwards (knee surgery, ~2 months) - its best player; MIL post-Giannis-trade is one of the league's worst teams by net rating"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-5",
@@ -480,7 +480,7 @@
         "MEM has the league's best record/point differential despite trading away Ja Morant; NO's Jordan Poole was out until approx. today, Yves Missi still out"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "2-3",
@@ -530,7 +530,7 @@
         "BOS on 2nd night of a back-to-back (beat ORL 108-97 on 11/1), traveling to HOU; HOU rested with newly-acquired Kevin Durant, several role players day-to-day (Sheppard, Smart, Adams, Phillips, Sengun)"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-5",
@@ -580,7 +580,7 @@
         "UTA missing Nurkic, Hayes, and Hinson; SAS's De'Aaron Fox/Wembanyama core reported healthy and has been consistently strong both years"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-5",
@@ -630,7 +630,7 @@
         "POR missing three guards - Ja Morant, Damian Lillard, and Shaedon Sharpe - all out; DEN's Jokic reported healthy, Denver playing at altitude"
       ],
       "time": "9:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "3-2",
@@ -680,7 +680,7 @@
         "GSW on 2nd night of a back-to-back (beat LAC 124-112 on 11/1) and missing Draymond Green, Horford, Podziemski, with Curry's own status uncertain; PHX has the league's worst defensive rating"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "3-0",
@@ -730,7 +730,32 @@
         "Rematch of the Kawhi Leonard/Brandon Ingram trade - neither centerpiece plays tonight (Kawhi out for TOR, Ingram out for LAC); both teams on 2nd night of a back-to-back"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7,
+      "totalsLine": 220.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 17,
+          "detail": "Both teams played last night: LA Clippers on the road, Toronto Raptors on the road (lost); spread LA Clippers +6.5; the road team has the better record.",
+          "name": "Both teams on a back-to-back: under when both played on the road last night and the road team has the better record (on trial)",
+          "backtest": "67.5% unders, 27-13 (2022-23 to now); under every season"
+        },
+        {
+          "rule": 18,
+          "detail": "Both teams played last night: LA Clippers on the road, Toronto Raptors on the road (lost); spread LA Clippers +6.5; the road team has the better record.",
+          "name": "Both teams on a back-to-back: under when the road team is favored, has the better record, and the home team played on the road last night (on trial)",
+          "backtest": "62.8% unders, 27-16 (2022-23 to now); under every season"
+        },
+        {
+          "rule": 19,
+          "detail": "Both teams played last night: LA Clippers on the road, Toronto Raptors on the road (lost); spread LA Clippers +6.5; the road team has the better record.",
+          "name": "Both teams on a back-to-back: under when the home team played on the road last night, the road team lost last night, and the spread is 5+ (on trial)",
+          "backtest": "62.2% unders, 28-17 (2022-23 to now); under every season"
+        }
+      ],
+      "totalsCheck": "Rule 17: Both teams played last night: LA Clippers on the road, Toronto Raptors on the road (lost); spread LA Clippers +6.5; the road team has the better record. Rule 18: Both teams played last night: LA Clippers on the road, Toronto Raptors on the road (lost); spread LA Clippers +6.5; the road team has the better record. Rule 19: Both teams played last night: LA Clippers on the road, Toronto Raptors on the road (lost); spread LA Clippers +6.5; the road team has the better record. (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "1-5",
@@ -780,7 +805,7 @@
         "LAL on 2nd night of a back-to-back (beat TOR 131-125 on 11/1), now built around Luka Doncic post-LeBron departure; MIA's Giannis has not yet translated to a positive team net rating"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     }
   ]
 }

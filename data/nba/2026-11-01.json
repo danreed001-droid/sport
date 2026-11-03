@@ -3,7 +3,7 @@
   "weekday": "Sunday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-03T15:23:54.064050+00:00",
+  "scoredAt": "2026-11-03T15:33:18.831913+00:00",
   "generatedAt": "2026-11-01T16:19:21Z",
   "games": [
     {
@@ -55,7 +55,7 @@
         "BOS: Devin Carter out (illness), Mitchell Robinson questionable"
       ],
       "time": "3:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "2-0",
@@ -106,7 +106,7 @@
         "BKN: Egor Demin and Mikel Brown Jr. both out"
       ],
       "time": "5:00 PM ET",
-      "totalsBackfill": 6,
+      "totalsBackfill": 7,
       "statsFavors": "Brooklyn Nets",
       "statsRules": [
         {
@@ -173,20 +173,7 @@
         "GSW: Jimmy Butler, Moses Moody, Kristaps Porzingis all out"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": 6,
-      "totalsLine": 220.5,
-      "totalsFavors": "Over",
-      "totalsRules": [
-        {
-          "rule": 3,
-          "detail": "Golden State Warriors (home) won its last game on 2026-10-30 and Stephen Curry (31) is out tonight.",
-          "name": "Over when the home team won its last game and that game's 30-39 point scorer is out (on trial)",
-          "backtest": "65.2% overs, 43-23 (2022-23 to now); over in 3 of 4 seasons, small sample"
-        }
-      ],
-      "totalsCheck": "Rule 3: Golden State Warriors (home) won its last game on 2026-10-30 and Stephen Curry (31) is out tonight. (backfilled from the DraftKings closing line)",
-      "totalsCorrect": true,
-      "totalsReturn": 90.91,
+      "totalsBackfill": 7,
       "statsFavors": "LA Clippers",
       "statsRules": [
         {
@@ -202,7 +189,20 @@
       "statsCorrect": false,
       "statsReturn": -100.0,
       "statsCover": false,
-      "statsSpreadReturn": -100.0
+      "statsSpreadReturn": -100.0,
+      "totalsLine": 220.5,
+      "totalsFavors": "Over",
+      "totalsRules": [
+        {
+          "rule": 3,
+          "detail": "Golden State Warriors (home) won its last game on 2026-10-30 and Stephen Curry (31) is out tonight.",
+          "name": "Over when the home team won its last game and that game's 30-39 point scorer is out (on trial)",
+          "backtest": "65.2% overs, 43-23 (2022-23 to now); over in 3 of 4 seasons, small sample"
+        }
+      ],
+      "totalsCheck": "Rule 3: Golden State Warriors (home) won its last game on 2026-10-30 and Stephen Curry (31) is out tonight. (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "0-3",
@@ -253,7 +253,7 @@
         "LAL: no notable absences found in the injury report"
       ],
       "time": "9:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     }
   ]
 }

@@ -61,7 +61,8 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   better-record one (4 lost by 1-9, 5 that and rested, 6 now on the road, 7
   that and rested, 8 road after losing by 10+); rules 9-15 UNDER (on trial)
   when the home team is back from a 20+ point road win (`ROAD_BLOWOUT`); rule
-  16 OVER (on trial) after a 30+ point road loss, now vs. a worse-record team. An over and an under rule on
+  16 OVER (on trial) after a 30+ point road loss, now vs. a worse-record team;
+  rules 17-19 UNDER (on trial) when both teams are on a back-to-back (`BOTH_B2B`). An over and an under rule on
   the same game cancel out (no pick). Adding rules: bump BACKFILL_VERSION in
   `nba_totals_signals.py` and rerun `--backfill` so past games are rechecked. It writes `totalsLine` (refreshed from
   ESPN's pickcenter every run until tip-off, then frozen), `totalsFavors`,
@@ -83,7 +84,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   back a team after a 30+ point win (33 now home vs. a stronger team, 34 a
   road win where it wasn't a 7+ favorite); 30-32 were tried and removed.
   Rules 35-40 (on trial) play a team after a 20+ point loss (`BLOWOUT_LOSS`;
-  38 fades, the rest back), one family. `nba_stats_signals.py --backfill
+  38 fades, the rest back), one family. Rules 41-43 (on trial) back the home
+  team when both teams are on a back-to-back (`BOTH_B2B`; they need tonight's
+  spread, passed in as `home_spread`). `nba_stats_signals.py --backfill
   RULE ...` applies just those rules to this season's finished games (rules
   marked `"backfill": true`, a pick made only by backfill `statsBackfill:
   true`); a game already picked the other way is left alone. 38-39 were

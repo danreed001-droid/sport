@@ -15,6 +15,7 @@ lib/nba_totals_rules.py:
      (ROAD_BLOWOUT has each one's extra conditions).
   16. OVER (on trial): a team lost its last game by 30+ on the road and now
      faces a worse-record team.
+  17-19. UNDER (on trial): both teams on a back-to-back (BOTH_B2B).
 
 If an over rule and an under rule both fire, the game gets no pick.
 
@@ -52,7 +53,7 @@ SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsWatch")
 # Bumped whenever rules are added, so --backfill rechecks past games with them.
-BACKFILL_VERSION = 6
+BACKFILL_VERSION = 7
 
 
 def season_start(date_str):
@@ -140,6 +141,14 @@ def home_after_road_blowout(rows, home_team, opp_now, date_str, since):
             "notbig": my_spread is None or my_spread > -7, "spread": my_spread}
 
 
+# Rules 17-19: both teams on a back-to-back -> under, when:
+BOTH_B2B = {
+    17: {"road_better": True, "home_was_home": False, "road_was_home": False},
+    18: {"road_fav": True, "road_better": True, "home_was_home": False},
+    19: {"home_was_home": False, "road_won": False, "big_spread": True},
+}
+
+
 # Rules 9-15 conditions on (vs weaker team?, rested?, won by 20-29?, not a 7+ favorite in that win?).
 ROAD_BLOWOUT = {
     9: {"weaker": True, "rested": True, "notbig": True},
@@ -190,6 +199,20 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=
                 rules.append({"rule": 7, "detail": f"{lost}; {vs}, rested."})
             if u["margin"] >= 10:
                 rules.append({"rule": 8, "detail": f"{lost} (10+); {vs}."})
+    # Rules 17-19: both teams on the second night of a back-to-back -> under.
+    prev = date.fromordinal(date.fromisoformat(date_str).toordinal() - 1).isoformat()
+    hlog, alog = team_log(rows, g["home"], since, date_str), team_log(rows, g["away"], since, date_str)
+    if hlog and alog and hlog[-1]["date"] == prev and alog[-1]["date"] == prev and spread not in (None, 0):
+        hp, ap = win_pct(hlog), win_pct(alog)
+        if hp is not None and ap is not None and hp != ap:
+            f = {"road_better": ap > hp, "road_fav": spread > 0, "home_was_home": hlog[-1]["home"],
+                 "road_was_home": alog[-1]["home"], "road_won": alog[-1]["pf"] > alog[-1]["pa"], "big_spread": abs(spread) >= 5}
+            why = (f"Both teams played last night: {g['home']} {'at home' if f['home_was_home'] else 'on the road'}, "
+                   f"{g['away']} {'at home' if f['road_was_home'] else 'on the road'} ({'won' if f['road_won'] else 'lost'}); "
+                   f"spread {g['home']} {spread:+g}; {'the road team' if f['road_better'] else 'the home team'} has the better record.")
+            for n, cond in BOTH_B2B.items():
+                if all(f[k] == v for k, v in cond.items()):
+                    rules.append({"rule": n, "detail": why})
     for side, opp in (("home", "away"), ("away", "home")):  # rule 16: after a 30+ road loss, vs a weaker team -> over
         log = team_log(rows, g[side], since, date_str)
         if not log:

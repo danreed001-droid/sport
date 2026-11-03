@@ -3,7 +3,7 @@
   "weekday": "Thursday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-10-30T06:28:05.865282+00:00",
+  "scoredAt": "2026-11-03T15:33:18.830202+00:00",
   "generatedAt": "2026-10-29T15:28:53Z",
   "games": [
     {
@@ -29,7 +29,7 @@
       "awayMoneyline": -107,
       "awayNetRtg": 2.98,
       "awayPDpg": 3.05,
-      "awayScore": 111,
+      "awayScore": 111.0,
       "awaySpread": 1,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -38,7 +38,7 @@
       "homeMoneyline": -113,
       "homeNetRtg": 3.58,
       "homePDpg": 3.75,
-      "homeScore": 114,
+      "homeScore": 114.0,
       "homeSpread": -1,
       "homeSpreadOdds": -110,
       "netRtgGap": 1.72,
@@ -54,7 +54,23 @@
         "Hawks: Gueye (foot) and Veesaar (knee, out for season) out; Cavaliers: Tomlin (back) out - no star-level absences either side"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7,
+      "statsFavors": "Atlanta Hawks",
+      "statsRules": [
+        {
+          "rule": 41,
+          "name": "Both teams on a back-to-back: back the home team when it's favored and the road team has the better record (on trial)",
+          "backtest": "65.1% ATS, n=43 (28-15, 2022-23 to now), every season; on trial",
+          "detail": "Backing Atlanta Hawks: both teams played last night (Atlanta Hawks at home, Cleveland Cavaliers won); Atlanta Hawks favored by 1, and Cleveland Cavaliers has the better record -- 65.1% ATS, n=43 (28-15, 2022-23 to now), every season; on trial.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 41: Backing Atlanta Hawks: both teams played last night (Atlanta Hawks at home, Cleveland Cavaliers won); Atlanta Hawks favored by 1, and Cleveland Cavaliers has the better record -- 65.1% ATS, n=43 (28-15, 2022-23 to now), every season; on trial.",
+      "statsCorrect": true,
+      "statsReturn": 88.5,
+      "statsCover": true,
+      "statsSpreadReturn": 90.91
     },
     {
       "altCategoryTally": "2-4",
@@ -79,7 +95,7 @@
       "awayMoneyline": 213,
       "awayNetRtg": -13.84,
       "awayPDpg": -13.88,
-      "awayScore": 120,
+      "awayScore": 120.0,
       "awaySpread": 6,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -88,7 +104,7 @@
       "homeMoneyline": -217,
       "homeNetRtg": -5.08,
       "homePDpg": -5.13,
-      "homeScore": 132,
+      "homeScore": 132.0,
       "homeSpread": -6,
       "homeSpreadOdds": -110,
       "netRtgGap": 27.59,
@@ -104,7 +120,7 @@
         "Kings missing Keegan Murray, Maxime Raynaud, Dylan Cardwell, Ben Simmons (4 out); Pelicans missing Yves Missi (out) and Jordan Poole (game-time decision)"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "4-3",
@@ -129,7 +145,7 @@
       "awayMoneyline": 234,
       "awayNetRtg": 1.95,
       "awayPDpg": 1.88,
-      "awayScore": 124,
+      "awayScore": 124.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -107,
       "confidence": "skip",
@@ -138,7 +154,7 @@
       "homeMoneyline": -290,
       "homeNetRtg": 9.22,
       "homePDpg": 9.19,
-      "homeScore": 103,
+      "homeScore": 103.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -113,
       "netRtgGap": 17.24,
@@ -155,7 +171,7 @@
         "Trail Blazers missing Shaedon Sharpe (knee, long-term) and Chris Youngblood (GTD); Grizzlies no injuries reported"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     }
   ]
 }

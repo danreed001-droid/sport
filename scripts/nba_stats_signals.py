@@ -26,6 +26,7 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   34 after a 30+ point ROAD win where it wasn't a 7+ point favorite.
   (30-32 were tried and removed; numbers aren't reused.)
   35-40 (on trial), after a 20+ point loss -- see BLOWOUT_LOSS (38 is a fade).
+  41-43 (on trial), both teams on a back-to-back: back the home team -- BOTH_B2B.
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -95,6 +96,37 @@ BLOWOUT_LOSS = [
     (39, True, {"home": False, "stronger": True, "road_loss": True, "big": False, "notbigdog": True}),
     (40, True, {"home": True, "stronger": False, "b2b": False, "road_loss": False, "big": False}),
 ]
+# Rules 41-43: both teams on a back-to-back -> back the home team, when:
+BOTH_B2B = {
+    41: {"home_fav": True, "road_better": True},
+    42: {"home_fav": True, "home_was_home": False, "road_won": False},
+    43: {"home_fav": True, "home_was_home": False, "big_spread": True},
+}
+
+
+def both_b2b_facts(by_team, season0, date_str, home, away, home_spread):
+    """Facts for rules 41-43 when both teams played yesterday (regular season,
+    this season) and the records differ, else None. home_spread: tonight's
+    home spread (negative = home favored); a pick'em or no line -> None."""
+    if home_spread is None or home_spread == 0:
+        return None
+    prev = date.fromordinal(date.fromisoformat(date_str).toordinal() - 1).isoformat()
+    lg = {}
+    for t in (home, away):
+        gs = [g for g in by_team.get(t, []) if season0 <= g["date"] < date_str]
+        if not gs or gs[-1]["date"] != prev:
+            return None
+        lg[t] = gs
+    rec = {t: season_record(lg[t], date_str) for t in (home, away)}
+    if not all(w + l for w, l in rec.values()):
+        return None
+    hp, ap = (rec[t][0] / (rec[t][0] + rec[t][1]) for t in (home, away))
+    if hp == ap:
+        return None
+    return {"home_fav": home_spread < 0, "road_better": ap > hp, "home_was_home": lg[home][-1]["is_home"],
+            "road_won": lg[away][-1]["won"], "big_spread": abs(home_spread) >= 5}
+
+
 _HOME_SPREAD = None
 
 
@@ -121,7 +153,7 @@ ALLOWED_REST = {
         20: {"rested": True}, 21: {}, 22: {"rested": True}, 23: {}, 24: {"rested": True},
         25: {}, 26: {"rested": True}, 27: {"rested": True}, 28: {}, 29: {},
         33: {}, 34: {}, 35: {}, 36: {}, 37: {"rested": True}, 38: {"rested": True},
-        39: {}, 40: {"rested": True}}.items()},
+        39: {}, 40: {"rested": True}, 41: {}, 42: {}, 43: {}}.items()},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
@@ -398,7 +430,7 @@ class BoxCache:
                 json.dump(self.data, f, separators=(",", ":"))
 
 
-def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonight=None, only_rules=None):
+def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonight=None, only_rules=None, home_spread=None):
     """Returns (pick_team, check_text) or None. Collects every rule that
     fires for either team; skips the game if they disagree on a side.
     tonight: {"state": ESPN game state, "out": team -> set of player ids out
@@ -554,6 +586,16 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
         gap = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days - 1
         rest = "b2b" if gap <= 0 else ("1" if gap == 1 else "2+")
         picks[start:] = [pk for pk in picks[start:] if rest in ALLOWED_REST[pk[1]]]
+    # Rules 41-43: both teams on the second night of a back-to-back; back the home team.
+    bb = both_b2b_facts(by_team, season0, date_str, home, away, home_spread)
+    if bb:
+        for n, cond in BOTH_B2B.items():
+            if all(bb[k] == v for k, v in cond.items()):
+                picks.append((home, n, f"Backing {home}: both teams played last night ({home} "
+                                       f"{'at home' if bb['home_was_home'] else 'on the road'}, {away} "
+                                       f"{'won' if bb['road_won'] else 'lost'}); {home} favored by {-home_spread:g}"
+                                       f"{', and ' + away + ' has the better record' if bb['road_better'] else ''} -- {RULE_BACKTEST[n]}."))
+
     if only_rules is not None:  # backfill: just these rules, as if no other rule existed
         picks = [p for p in picks if p[1] in only_rules]
     sides = {p for p, _, _ in picks}
@@ -653,7 +695,8 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
             ev = next((v for (a, h), v in tonight.items() if _same_team(away, a) and _same_team(home, h)), None)
             ctx = None if ev is None else {"state": ev["state"], "out": ev["out"], "status": ev["status"],
                                            "prior": g.get("statsRules") or [], "watch": []}
-            result = evaluate_game(session, points, by_team, q_cache, date_str, home, away, ctx)
+            result = evaluate_game(session, points, by_team, q_cache, date_str, home, away, ctx,
+                                   home_spread=g.get("homeSpread"))
             if ctx and ctx["state"] == "pre":  # injury watch: refreshed until tip-off, then kept as it was
                 if ctx["watch"]:
                     g["statsWatch"] = ctx["watch"]
@@ -703,7 +746,8 @@ def backfill(session, points, by_team, q_cache, rules, dates):
         for g in doc.get("games", []):
             if not isinstance(g.get("awayScore"), (int, float)):
                 continue
-            r = evaluate_game(session, points, by_team, q_cache, date_str, g["home"], g["away"], None, set(rules))
+            r = evaluate_game(session, points, by_team, q_cache, date_str, g["home"], g["away"], None, set(rules),
+                              home_spread=g.get("homeSpread"))
             if not r:
                 continue
             pick, new = r

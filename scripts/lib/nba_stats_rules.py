@@ -36,6 +36,9 @@ RULE_NAMES = {
     38: "Fade a home team vs. a weaker team, rested, after a 20-29 point road loss (on trial)",
     39: "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
     40: "Back a home team vs. a weaker team, rested, after a 20-29 point home loss (on trial)",
+    41: "Both teams on a back-to-back: back the home team when it's favored and the road team has the better record (on trial)",
+    42: "Both teams on a back-to-back: back a favored home team that played on the road last night when the road team lost last night (on trial)",
+    43: "Both teams on a back-to-back: back a home team favored by 5+ that played on the road last night (on trial)",
 }
 # Backtest rate, then the record replayed on six seasons none of the rules
 # were found on: 2016-17 through 2019-20, 2023-24 and 2024-25.
@@ -63,6 +66,9 @@ RULE_BACKTEST = {
     38: "63.8% ATS, n=47 (30-17, 2022-23 to now), every season; on trial",
     39: "62.5% ATS, n=48 (30-18, 2022-23 to now), every season; on trial",
     40: "62.0% ATS, n=50 (31-19, 2022-23 to 2025-26), every season; on trial",
+    41: "65.1% ATS, n=43 (28-15, 2022-23 to now), every season; on trial",
+    42: "63.0% ATS, n=46 (29-17, 2022-23 to 2025-26), every season; on trial",
+    43: "62.5% ATS, n=48 (30-18, 2022-23 to 2025-26), every season; on trial",
 }
 # A pick two or more rules agree on ("stacked"), replayed on the same six
 # unseen seasons: one-rule picks went 57.4% (269-200).
@@ -73,7 +79,8 @@ STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule pick
 # slices of one situation each, so
 # several firing on one game is not independent agreement: "stacked" counts
 # distinct families, not rules.
-FAMILY = {**{n: "road-upset" for n in range(20, 30)}, **{n: "blowout-loss" for n in range(35, 41)}}
+FAMILY = {**{n: "road-upset" for n in range(20, 30)}, **{n: "blowout-loss" for n in range(35, 41)},
+          **{n: "both-b2b" for n in range(41, 44)}}
 
 
 def families(nums):

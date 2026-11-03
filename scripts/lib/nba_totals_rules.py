@@ -27,6 +27,9 @@ RULE_NAMES = {
     14: "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
     15: "Under when the home team is back from a 20-29 point road win, now vs. a weaker team (on trial)",
     16: "Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)",
+    17: "Both teams on a back-to-back: under when both played on the road last night and the road team has the better record (on trial)",
+    18: "Both teams on a back-to-back: under when the road team is favored, has the better record, and the home team played on the road last night (on trial)",
+    19: "Both teams on a back-to-back: under when the home team played on the road last night, the road team lost last night, and the spread is 5+ (on trial)",
 }
 RULE_BACKTEST = {
     3: "65.2% overs, 43-23 (2022-23 to now); over in 3 of 4 seasons, small sample",
@@ -43,6 +46,9 @@ RULE_BACKTEST = {
     14: "63.3% unders, 57-33 (2022-23 to now); under every season",
     15: "62.5% unders, 40-24 (2022-23 to now); under every season",
     16: "71.4% overs, 30-12 (2022-23 to 2025-26); over every season",
+    17: "67.5% unders, 27-13 (2022-23 to now); under every season",
+    18: "62.8% unders, 27-16 (2022-23 to now); under every season",
+    19: "62.2% unders, 28-17 (2022-23 to now); under every season",
 }
 OVER_RULES = {3, 16}
 OT_LOOKBACK_DAYS = 10
@@ -50,7 +56,8 @@ OT_LOOKBACK_DAYS = 10
 
 # Rules 4-8 are overlapping slices of one situation (a home loss to a
 # worse-record team): several on one game count as one family, not "stacked".
-FAMILY = {**{n: "home-upset-loss" for n in range(4, 9)}, **{n: "home-after-road-blowout" for n in range(9, 16)}}
+FAMILY = {**{n: "home-upset-loss" for n in range(4, 9)}, **{n: "home-after-road-blowout" for n in range(9, 16)},
+          **{n: "both-b2b" for n in range(17, 20)}}
 
 
 def families(nums):

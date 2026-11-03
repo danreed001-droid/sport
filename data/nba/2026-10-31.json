@@ -3,7 +3,7 @@
   "weekday": "Saturday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-03T15:23:54.062996+00:00",
+  "scoredAt": "2026-11-03T15:33:18.830773+00:00",
   "generatedAt": "2026-10-31T15:21:31Z",
   "games": [
     {
@@ -54,7 +54,7 @@
         "Injuries: POR - Shaedon Sharpe OUT (meniscus, ~6 mo), Ja Morant Q (hamstring), Robert Williams III Q; UTA - Jusuf Nurkic OUT, Jaren Jackson Jr. OUT, Trey Alexander OUT, Lauri Markkanen Q (wrist)"
       ],
       "time": "3:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "3-1",
@@ -105,7 +105,20 @@
         "Both teams played Oct. 30 (Philadelphia vs. Knicks, Charlotte vs. Wizards) - second night of a back-to-back for each"
       ],
       "time": "6:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7,
+      "totalsLine": 211.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 18,
+          "detail": "Both teams played last night: Charlotte Hornets on the road, Philadelphia 76ers at home (won); spread Charlotte Hornets +1.5; the road team has the better record.",
+          "name": "Both teams on a back-to-back: under when the road team is favored, has the better record, and the home team played on the road last night (on trial)",
+          "backtest": "62.8% unders, 27-16 (2022-23 to now); under every season"
+        }
+      ],
+      "totalsCheck": "Rule 18: Both teams played last night: Charlotte Hornets on the road, Philadelphia 76ers at home (won); spread Charlotte Hornets +1.5; the road team has the better record. (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "5-0",
@@ -155,7 +168,7 @@
         "Injuries: ATL - Mouhamed Gueye OUT, Henri Veesaar OUT (season); NO - Yves Missi OUT, Jordan Poole Q, Dejounte Murray Q (personal)"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-6",
@@ -205,7 +218,7 @@
         "Injuries: SAC - Dylan Cardwell OUT, Maxime Raynaud OUT, Keegan Murray OUT, Ben Simmons OUT (season); MEM - Scotty Pippen Jr. Q, Ty Jerome Q, Quinten Post Q (ankle)"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 6,
+      "totalsBackfill": 7,
       "totalsLine": 229.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -304,7 +317,7 @@
         "Injuries: CLE - Nae'Qwan Tomlin OUT, Meleek Thomas Q; MIL - no new names surfaced on today's report"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-5",
@@ -369,7 +382,7 @@
       ],
       "statsSpreadReturn": 86.96,
       "time": "8:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "1-4",
@@ -420,7 +433,7 @@
         "Houston played at home Oct. 30 (vs. Mavericks) and is on the second night of a back-to-back; Oklahoma City is rested"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": 6,
+      "totalsBackfill": 7,
       "statsFavors": "Oklahoma City Thunder",
       "statsRules": [
         {

@@ -3,7 +3,7 @@
   "weekday": "Saturday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-10-25T07:13:08.988907+00:00",
+  "scoredAt": "2026-11-03T15:33:18.828093+00:00",
   "generatedAt": "2026-10-24T15:29:14Z",
   "games": [
     {
@@ -29,7 +29,7 @@
       "awayMoneyline": -142,
       "awayNetRtg": -10.75,
       "awayPDpg": -11.34,
-      "awayScore": 110,
+      "awayScore": 110.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": -105,
       "confidence": "solid",
@@ -38,13 +38,13 @@
       "homeMoneyline": 120,
       "homeNetRtg": 6.03,
       "homePDpg": 5.92,
-      "homeScore": 115,
+      "homeScore": 115.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -115,
       "netRtgGap": 48.28,
       "pick": "Charlotte Hornets",
       "pickCover": true,
-      "pickReturn": 120,
+      "pickReturn": 120.0,
       "pickSpreadReturn": 86.96,
       "skipReason": null,
       "skipped": false,
@@ -55,7 +55,7 @@
         "Both teams on a back-to-back (Heat @ Pistons, Hornets vs Hawks, both 10/23)"
       ],
       "time": "6:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "1-2",
@@ -80,7 +80,7 @@
       "awayMoneyline": 390,
       "awayNetRtg": -8.65,
       "awayPDpg": -8.5,
-      "awayScore": 121,
+      "awayScore": 121.0,
       "awaySpread": 11.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -89,7 +89,7 @@
       "homeMoneyline": -520,
       "homeNetRtg": -1.65,
       "homePDpg": -1.95,
-      "homeScore": 125,
+      "homeScore": 125.0,
       "homeSpread": -11.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 17.24,
@@ -105,7 +105,7 @@
         "Both teams rested: Nets 2 days off since 10/21 loss at Charlotte; Cavaliers 1 day off since 10/22 loss at Philadelphia"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-5",
@@ -125,12 +125,12 @@
         "Matchup splits: neutral \u2014 no specific stylistic mismatch stat found."
       ],
       "altReturn": null,
-      "altSpreadReturn": -100,
+      "altSpreadReturn": -100.0,
       "away": "Milwaukee Bucks",
       "awayMoneyline": 490,
       "awayNetRtg": -9.16,
       "awayPDpg": -9.11,
-      "awayScore": 116,
+      "awayScore": 116.0,
       "awaySpread": 12.5,
       "awaySpreadOdds": -108,
       "confidence": "solid",
@@ -139,14 +139,14 @@
       "homeMoneyline": -675,
       "homeNetRtg": 3.2,
       "homePDpg": 3.41,
-      "homeScore": 127,
+      "homeScore": 127.0,
       "homeSpread": -12.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 37.93,
       "pick": "Philadelphia 76ers",
       "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": -100,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -156,7 +156,7 @@
         "Bucks on a back-to-back (played Chicago 10/23); 76ers rested. Joel Embiid (Phila) has a recurring knee-injury history; no confirmed status for tonight"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "2-2",
@@ -181,7 +181,7 @@
       "awayMoneyline": -600,
       "awayNetRtg": -1.62,
       "awayPDpg": -1.85,
-      "awayScore": 122,
+      "awayScore": 122.0,
       "awaySpread": -12.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
@@ -190,7 +190,7 @@
       "homeMoneyline": 440,
       "homeNetRtg": -11.86,
       "homePDpg": -11.76,
-      "homeScore": 106,
+      "homeScore": 106.0,
       "homeSpread": 12.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 34.48,
@@ -207,7 +207,20 @@
         "Victor Wembanyama (Spurs) carries a recurring injury history, no confirmed status for tonight; Kyrie Irving (Mavs) was cleared with 'no restrictions' in late Sept, exact tonight status unconfirmed"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7,
+      "totalsLine": 229.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 19,
+          "detail": "Both teams played last night: Dallas Mavericks on the road, San Antonio Spurs at home (lost); spread Dallas Mavericks +14.5; the home team has the better record.",
+          "name": "Both teams on a back-to-back: under when the home team played on the road last night, the road team lost last night, and the spread is 5+ (on trial)",
+          "backtest": "62.2% unders, 28-17 (2022-23 to now); under every season"
+        }
+      ],
+      "totalsCheck": "Rule 19: Both teams played last night: Dallas Mavericks on the road, San Antonio Spurs at home (lost); spread Dallas Mavericks +14.5; the home team has the better record. (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "1-3",
@@ -232,7 +245,7 @@
       "awayMoneyline": -102,
       "awayNetRtg": -0.01,
       "awayPDpg": 0.01,
-      "awayScore": 124,
+      "awayScore": 124.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -241,7 +254,7 @@
       "homeMoneyline": -118,
       "homeNetRtg": -22.37,
       "homePDpg": -24.11,
-      "homeScore": 120,
+      "homeScore": 120.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 55.17,
@@ -258,7 +271,7 @@
         "Market note: line opened Washington -1.5 favored, now sits Chicago -1.5 \u2014 a full-side reversal since open"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "1-4",
@@ -283,7 +296,7 @@
       "awayMoneyline": -102,
       "awayNetRtg": 11.84,
       "awayPDpg": 11.61,
-      "awayScore": 121,
+      "awayScore": 121.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -292,7 +305,7 @@
       "homeMoneyline": -118,
       "homeNetRtg": 4.39,
       "homePDpg": 4.71,
-      "homeScore": 114,
+      "homeScore": 114.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 17.24,
@@ -309,7 +322,7 @@
         "Fred VanVleet (Rockets' starting PG) is out for the season (torn ACL from an offseason workout)"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-5",
@@ -329,12 +342,12 @@
         "Matchup splits: neutral \u2014 no specific stylistic mismatch stat found."
       ],
       "altReturn": null,
-      "altSpreadReturn": -100,
+      "altSpreadReturn": -100.0,
       "away": "New Orleans Pelicans",
       "awayMoneyline": 370,
       "awayNetRtg": -3.77,
       "awayPDpg": -3.75,
-      "awayScore": 135,
+      "awayScore": 135.0,
       "awaySpread": 11.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -343,7 +356,7 @@
       "homeMoneyline": -485,
       "homeNetRtg": -3.94,
       "homePDpg": -3.43,
-      "homeScore": 141,
+      "homeScore": 141.0,
       "homeSpread": -11.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 3.45,
@@ -360,7 +373,7 @@
         "Zion Williamson (Pelicans) carries a recurring foot/health flag; multiple reports suggest he may again be unavailable, but tonight's status wasn't independently confirmed"
       ],
       "time": "9:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     },
     {
       "altCategoryTally": "0-6",
@@ -380,12 +393,12 @@
         "Matchup splits: neutral \u2014 no specific stylistic mismatch stat found."
       ],
       "altReturn": 26.67,
-      "altSpreadReturn": -100,
+      "altSpreadReturn": -100.0,
       "away": "Golden State Warriors",
       "awayMoneyline": 295,
       "awayNetRtg": -11.36,
       "awayPDpg": -11.28,
-      "awayScore": 122,
+      "awayScore": 122.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -394,7 +407,7 @@
       "homeMoneyline": -375,
       "homeNetRtg": -20.51,
       "homePDpg": -19.77,
-      "homeScore": 131,
+      "homeScore": 131.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 13.79,
@@ -411,7 +424,7 @@
         "Jimmy Butler (Warriors' No. 2 star) is out for the season with a torn ACL; Stephen Curry (ankle tweak 10/19) is expected to play"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 7
     }
   ]
 }
