@@ -42,6 +42,12 @@
       "status": "success",
       "okOn": "2026-11-03",
       "failingSince": null
+    },
+    "nbaTotals": {
+      "label": "NBA Totals picks",
+      "status": "success",
+      "okOn": "2026-11-03",
+      "failingSince": null
     }
   }
 }
