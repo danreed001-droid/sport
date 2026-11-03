@@ -15,8 +15,6 @@ that). Rules 4 and 5 were found on 2022-24 and held on 2024-26; 3, 6, 7 and
 RULE_NAMES = {
     3: "Over when the home team won its last game and that game's 30-39 point scorer is out (on trial)",
     6: "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
-    7: "Rule 6, and the team is rested (on trial)",
-    8: "Rule 6, after losing that home game by 10+ (on trial)",
     9: "Under when the home team is back from a 20+ road win, now vs. a weaker team and rested, and wasn't a 7+ pt favorite in that win (on trial)",
     10: "Under when the home team is back from a 20+ road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)",
     14: "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
@@ -25,8 +23,6 @@ RULE_NAMES = {
 RULE_BACKTEST = {
     3: "65.1% overs, 56-30 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
     6: "62.6% unders, 107-64 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30",
-    7: "61.4% unders, 89-56 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 31-26",
-    8: "63.5% unders, 40-23 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 10-11",
     9: "63.5% unders, 47-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 18-13",
     10: "62.8% unders, 59-35 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-17",
     14: "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24",
@@ -34,8 +30,10 @@ RULE_BACKTEST = {
 }
 
 # Retired 2026-11-03 (under 61% on 2018-19 and 2021-22 to now): 4, 5, 11, 12, 13, 15, 17, 18, 19. Earlier: 1, 2.
+# Also retired 2026-11-03 for going under 55% on the unseen seasons (2018-19 +
+# 2021-22): 7, 8.
 # Their code paths stay in nba_totals_signals.py but never pick; numbers aren't reused.
-RETIRED = {1, 2, 4, 5, 11, 12, 13, 15, 17, 18, 19}
+RETIRED = {1, 2, 4, 5, 7, 8, 11, 12, 13, 15, 17, 18, 19}
 
 OVER_RULES = {3, 16}
 OT_LOOKBACK_DAYS = 10

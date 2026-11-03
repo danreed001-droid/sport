@@ -19,7 +19,6 @@ RULE_NAMES = {
     21: "Fade a road-upset winner now home vs. a stronger team, after winning by 1-9 as less than a 7-pt dog (on trial)",
     24: "Fade a road-upset winner now home, rested, after winning by 1-9 as less than a 7-pt dog (on trial)",
     28: "Fade a road-upset winner now home after winning by 1-9 as less than a 7-pt dog (on trial)",
-    35: "Back a team on a back-to-back after a 20+ point road loss where it wasn't a 7+ pt dog (on trial)",
     36: "Back a team on the road after a 30+ point home loss (on trial)",
     37: "Back a team on the road, rested, after a 30+ point home loss (on trial)",
     39: "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
@@ -35,7 +34,6 @@ RULE_BACKTEST = {
     21: "65.8% ATS, 50-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8",
     24: "62.8% ATS, 76-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14",
     28: "61.5% ATS, 88-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17",
-    35: "62.3% ATS, 38-23 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-10",
     36: "64.9% ATS, 48-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8",
     37: "65.6% ATS, 42-22 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-6",
     39: "61.4% ATS, 43-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9",
@@ -45,8 +43,10 @@ RULE_BACKTEST = {
 
 # Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the
 # 2019-20 bubble and 2020-21 empty-arena seasons left out): 14, 18, 19, 22, 23, 25, 26, 27, 29, 33, 34, 38, 40, 42.
+# Also retired 2026-11-03 for going under 55% on the unseen seasons (2018-19 +
+# 2021-22): 35.
 # Their code paths stay in nba_stats_signals.py but never pick; numbers aren't reused.
-RETIRED = {14, 18, 19, 22, 23, 25, 26, 27, 29, 33, 34, 38, 40, 42}
+RETIRED = {14, 18, 19, 22, 23, 25, 26, 27, 29, 33, 34, 35, 38, 40, 42}
 
 # A pick two or more rules agree on ("stacked"), replayed on the same six
 # unseen seasons: one-rule picks went 57.4% (269-200).
