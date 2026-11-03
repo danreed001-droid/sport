@@ -52,7 +52,21 @@
         "NetRtg blended +2.98 vs +3.58 (63.8th vs 65.5th pct of 30 teams - gap 1.72)",
         "Hawks: Gueye (foot) and Veesaar (knee, out for season) out; Cavaliers: Tomlin (back) out - no star-level absences either side"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 237.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Atlanta Hawks -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Atlanta Hawks -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "2-4",
@@ -101,7 +115,8 @@
         "NetRtg blended -13.84 vs -5.08 (3.4th vs 31.0th pct of 30 teams - gap 27.59)",
         "Kings missing Keegan Murray, Maxime Raynaud, Dylan Cardwell, Ben Simmons (4 out); Pelicans missing Yves Missi (out) and Jordan Poole (game-time decision)"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "4-3",
@@ -151,8 +166,9 @@
         "Memphis traded Ja Morant to Portland in June 2026 (also dealt Bane '25, JJJ Feb '26) - last-season half of both blends predates that trade",
         "Trail Blazers missing Shaedon Sharpe (knee, long-term) and Chris Youngblood (GTD); Grizzlies no injuries reported"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "totalsBackfill": true
     }
   ],
-  "scoredAt": "2026-10-30T06:28:05.865282+00:00"
+  "scoredAt": "2026-11-03T12:13:32.136962+00:00"
 }

@@ -52,7 +52,8 @@
         "NetRtg pct (blend) 62.1 vs 15.5 of 30 teams (gap 46.6)",
         "Injuries: POR - Shaedon Sharpe OUT (meniscus, ~6 mo), Ja Morant Q (hamstring), Robert Williams III Q; UTA - Jusuf Nurkic OUT, Jaren Jackson Jr. OUT, Trey Alexander OUT, Lauri Markkanen Q (wrist)"
       ],
-      "time": "3:00 PM ET"
+      "time": "3:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "3-1",
@@ -102,7 +103,21 @@
         "Injuries: PHI - Jaylen Brown Q (knee), Ariel Hukporti OUT (season), Jabari Walker OUT, Dom Barlow OUT, Tacko Fall OUT; CHA - Coby White OUT, Kon Knueppel OUT, Grant Williams OUT, Kylan Boswell OUT, Dennis Schroder Q",
         "Both teams played Oct. 30 (Philadelphia vs. Knicks, Charlotte vs. Wizards) - second night of a back-to-back for each"
       ],
-      "time": "6:00 PM ET"
+      "time": "6:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 211.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Charlotte Hornets +1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Charlotte Hornets +1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "5-0",
@@ -151,7 +166,8 @@
         "NetRtg pct (blend) 65.5 vs 34.5 of 30 teams (gap 31.0)",
         "Injuries: ATL - Mouhamed Gueye OUT, Henri Veesaar OUT (season); NO - Yves Missi OUT, Jordan Poole Q, Dejounte Murray Q (personal)"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-6",
@@ -200,7 +216,8 @@
         "NetRtg pct (blend) 3.5 vs 55.2 of 30 teams (gap 51.7)",
         "Injuries: SAC - Dylan Cardwell OUT, Maxime Raynaud OUT, Keegan Murray OUT, Ben Simmons OUT (season); MEM - Scotty Pippen Jr. Q, Ty Jerome Q, Quinten Post Q (ankle)"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "2-0",
@@ -249,7 +266,8 @@
         "NetRtg pct (blend) 63.8 vs 15.5 of 30 teams (gap 48.3)",
         "Injuries: CLE - Nae'Qwan Tomlin OUT, Meleek Thomas Q; MIL - no new names surfaced on today's report"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-5",
@@ -313,7 +331,8 @@
       "statsCorrect": null,
       "statsReturn": null,
       "statsCover": true,
-      "statsSpreadReturn": 86.96
+      "statsSpreadReturn": 86.96,
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "1-4",
@@ -363,8 +382,22 @@
         "Injuries: OKC - Jalen Williams OUT (to Mar.), Cason Wallace OUT (to Mar.), Alex Caruso OUT, Nikola Topic OUT, Thomas Sorber OUT, Chet Holmgren Q; HOU - Steven Adams OUT, Alperen Sengun Q (back), Reed Sheppard Q, Marcus Smart Q",
         "Houston played at home Oct. 30 (vs. Mavericks) and is on the second night of a back-to-back; Oklahoma City is rested"
       ],
-      "time": "8:30 PM ET"
+      "time": "8:30 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 219.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Houston Rockets -2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Houston Rockets -2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     }
   ],
-  "scoredAt": "2026-11-01T06:11:04.392009+00:00"
+  "scoredAt": "2026-11-03T12:13:32.138234+00:00"
 }

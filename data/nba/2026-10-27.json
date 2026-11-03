@@ -52,7 +52,8 @@
         "NetRtg -11.25 vs +3.12 (3.45th vs 68.97th pct of 30 teams \u2014 gap 65.52)",
         "Jayson Tatum (BOS leading scorer, 24.0 ppg) questionable on 2nd night of B2B; Devin Carter (mono) out for BOS; BKN reported close to full strength"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "3-4",
@@ -101,7 +102,8 @@
         "NetRtg +10.41 vs +0.08 (89.66th vs 48.28th pct of 30 teams \u2014 gap 41.38)",
         "Pistons' Jalen Duren & Ugonna Onyenso out; Ausar Thompson/Isaiah Joe/Isaac Jones/Elijah Harkless questionable for DET; Knicks' Jose Alvarado out"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-6",
@@ -150,7 +152,8 @@
         "NetRtg -12.29 vs +4.16 (0.00th vs 72.41st pct of 30 teams \u2014 gap 72.41)",
         "Kings missing Ben Simmons (out for season, Achilles), Maxime Raynaud, Dylan Cardwell, Keegan Murray (all out); Spurs missing Tobias Harris, Jayden Quaintance (both out) \u2014 Victor Wembanyama not on the injury report"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "2-3",
@@ -199,8 +202,22 @@
         "NetRtg +12.46 vs +7.34 (96.55th vs 79.31st pct of 30 teams \u2014 gap 17.24)",
         "LAL roster changed since 2025-26 \u2014 LeBron James left for Philadelphia; Shaedon Sharpe (meniscus) out for POR, Henderson/Carlson questionable"
       ],
-      "time": "11:00 PM ET"
+      "time": "11:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 234.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Los Angeles Lakers -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Los Angeles Lakers -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     }
   ],
-  "scoredAt": "2026-10-28T07:51:21.876872+00:00"
+  "scoredAt": "2026-11-03T12:13:32.135490+00:00"
 }

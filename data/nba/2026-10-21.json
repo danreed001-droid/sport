@@ -3,7 +3,7 @@
   "weekday": "Wednesday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-10-23T17:40:32.663656+00:00",
+  "scoredAt": "2026-11-03T12:13:32.130407+00:00",
   "generatedAt": "2026-10-21T23:14:00Z",
   "games": [
     {
@@ -29,7 +29,7 @@
       "awayMoneyline": 110,
       "awayNetRtg": 2.36,
       "awayPDpg": 2.5,
-      "awayScore": 132,
+      "awayScore": 132.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -38,7 +38,7 @@
       "homeMoneyline": -130,
       "homeNetRtg": 0.56,
       "homePDpg": 0.6,
-      "homeScore": 125,
+      "homeScore": 125.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 17.24,
@@ -53,7 +53,21 @@
         "NetRtg +2.36 vs +0.56 (62.07th vs 44.83rd pct of 30 teams \u2014 gap 17.24)",
         "Magic missing Anthony Black, Jonathan Isaac, Izaiyah Nelson, Noah Penda (all out)"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 233.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Orlando Magic -2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Orlando Magic -2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "3-1",
@@ -78,7 +92,7 @@
       "awayMoneyline": 145,
       "awayNetRtg": -6.49,
       "awayPDpg": -6.2,
-      "awayScore": 116,
+      "awayScore": 116.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -87,7 +101,7 @@
       "homeMoneyline": -175,
       "homeNetRtg": -11.84,
       "homePDpg": -12,
-      "homeScore": 128,
+      "homeScore": 128.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 17.24,
@@ -102,7 +116,8 @@
         "NetRtg -6.49 vs -11.84 (17.24th vs 0.00 pct of 30 teams \u2014 gap 17.24)",
         "Wizards missing AJ Dybantsa, Jamir Watkins, Tristan Vukcevic (all out); Bucks' Nate Ament questionable"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "1-3",
@@ -127,7 +142,7 @@
       "awayMoneyline": -118,
       "awayNetRtg": 5.03,
       "awayPDpg": 4.8,
-      "awayScore": 110,
+      "awayScore": 110.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -108,
       "confidence": "solid",
@@ -136,7 +151,7 @@
       "homeMoneyline": -102,
       "homeNetRtg": -10.27,
       "homePDpg": -10,
-      "homeScore": 103,
+      "homeScore": 103.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 72.41,
@@ -151,7 +166,21 @@
         "NetRtg +5.03 vs -10.27 (75.86th vs 3.45th pct of 30 teams \u2014 gap 72.41)",
         "Hornets missing Kon Knueppel, Coby White, Kylan Boswell, Grant Williams (all out) \u2014 severe cluster"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 220.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Brooklyn Nets +1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Brooklyn Nets +1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "0-4",
@@ -176,7 +205,7 @@
       "awayMoneyline": 340,
       "awayNetRtg": -5.14,
       "awayPDpg": -5.2,
-      "awayScore": 92,
+      "awayScore": 92.0,
       "awaySpread": 10.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -185,7 +214,7 @@
       "homeMoneyline": -440,
       "homeNetRtg": 2.58,
       "homePDpg": 2.8,
-      "homeScore": 135,
+      "homeScore": 135.0,
       "homeSpread": -10.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 37.93,
@@ -200,7 +229,8 @@
         "NetRtg -5.14 vs +2.58 (27.59th vs 65.52nd pct of 30 teams \u2014 gap 37.93)",
         "Bulls' Nicolas Claxton out; Okoro, Hawkins, Miller, Swain, Collins all questionable"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "1-2",
@@ -225,7 +255,7 @@
       "awayMoneyline": 102,
       "awayNetRtg": 3.08,
       "awayPDpg": 3.4,
-      "awayScore": 131,
+      "awayScore": 131.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -108,
       "confidence": "skip",
@@ -234,7 +264,7 @@
       "homeMoneyline": -122,
       "homeNetRtg": 2.18,
       "homePDpg": 2.4,
-      "homeScore": 106,
+      "homeScore": 106.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 10.34,
@@ -249,7 +279,21 @@
         "NetRtg +3.08 vs +2.18 (68.97th vs 58.62nd pct of 30 teams \u2014 gap 10.34)",
         "Timberwolves' Donte DiVincenzo out (season, Achilles); Heat's Vladislav Goldin questionable"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 240.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Miami Heat -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Miami Heat -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "0-4",
@@ -268,13 +312,13 @@
         "Market: neutral \u2014 no notable line movement found",
         "Matchup splits: neutral \u2014 no specific verified mismatch found"
       ],
-      "altReturn": -100,
+      "altReturn": -100.0,
       "altSpreadReturn": 89.29,
       "away": "Indiana Pacers",
       "awayMoneyline": -155,
       "awayNetRtg": -7.96,
       "awayPDpg": -8,
-      "awayScore": 123,
+      "awayScore": 123.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": -108,
       "confidence": "skip",
@@ -283,7 +327,7 @@
       "homeMoneyline": 130,
       "homeNetRtg": -4.65,
       "homePDpg": -4.5,
-      "homeScore": 120,
+      "homeScore": 120.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 17.24,
@@ -298,7 +342,21 @@
         "NetRtg -7.96 vs -4.65 (13.79th vs 31.03rd pct of 30 teams \u2014 gap 17.24)",
         "Pacers missing Aaron Nesmith, T.J. McConnell, Johnny Furphy (all out); no Pelicans injuries reported"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 238.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread New Orleans Pelicans +2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread New Orleans Pelicans +2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "0-4",
@@ -317,13 +375,13 @@
         "Market: neutral \u2014 no notable line movement found",
         "Matchup splits: neutral \u2014 no specific verified mismatch found"
       ],
-      "altReturn": 80,
+      "altReturn": 80.0,
       "altSpreadReturn": 92.59,
       "away": "Utah Jazz",
       "awayMoneyline": 105,
       "awayNetRtg": -8.21,
       "awayPDpg": -8.4,
-      "awayScore": 103,
+      "awayScore": 103.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -332,7 +390,7 @@
       "homeMoneyline": -125,
       "homeNetRtg": -5.9,
       "homePDpg": -6,
-      "homeScore": 123,
+      "homeScore": 123.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 10.34,
@@ -347,7 +405,21 @@
         "NetRtg -8.21 vs -5.90 (10.34th vs 20.69th pct of 30 teams \u2014 gap 10.34)",
         "Jazz missing Trey Alexander, Blake Hinson, Tony Bradley, Jusuf Nurkic (all out); Grizzlies' Isaiah Stewart questionable"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 240.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Memphis Grizzlies -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Memphis Grizzlies -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "0-4",
@@ -372,7 +444,7 @@
       "awayMoneyline": 331,
       "awayNetRtg": -5.43,
       "awayPDpg": -5.5,
-      "awayScore": 110,
+      "awayScore": 110.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": -106,
       "confidence": "solid",
@@ -381,7 +453,7 @@
       "homeMoneyline": -400,
       "homeNetRtg": 5.39,
       "homePDpg": 5.2,
-      "homeScore": 128,
+      "homeScore": 128.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 58.62,
@@ -396,7 +468,8 @@
         "NetRtg -5.43 vs +5.39 (24.14th vs 82.76th pct of 30 teams \u2014 gap 58.62)",
         "Mavericks missing Santi Aldama, Dereck Lively II, Tarik Biberovic, Caleb Martin (all out), Jett Howard questionable"
       ],
-      "time": "8:30 PM ET"
+      "time": "8:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-4",
@@ -421,7 +494,7 @@
       "awayMoneyline": 190,
       "awayNetRtg": -0.55,
       "awayPDpg": -0.6,
-      "awayScore": 105,
+      "awayScore": 105.0,
       "awaySpread": 6.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -430,7 +503,7 @@
       "homeMoneyline": -230,
       "homeNetRtg": 1.74,
       "homePDpg": 1.7,
-      "homeScore": 127,
+      "homeScore": 127.0,
       "homeSpread": -6.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 20.69,
@@ -445,7 +518,8 @@
         "NetRtg -0.55 vs +1.74 (34.48th vs 55.17th pct of 30 teams \u2014 gap 20.69)",
         "Warriors' Stephen Curry questionable; Podziemski, Porzingis, Butler, Moody all out \u2014 major cluster; Lakers' Thiero, Carr out, Sexton questionable"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "3-1",
@@ -470,7 +544,7 @@
       "awayMoneyline": 120,
       "awayNetRtg": 1.42,
       "awayPDpg": 1.5,
-      "awayScore": 83,
+      "awayScore": 83.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -105,
       "confidence": "skip",
@@ -479,7 +553,7 @@
       "homeMoneyline": -142,
       "homeNetRtg": -0.17,
       "homePDpg": -0.3,
-      "homeScore": 124,
+      "homeScore": 124.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -115,
       "netRtgGap": 10.34,
@@ -494,7 +568,8 @@
         "NetRtg +1.42 vs -0.17 (51.72nd vs 41.38th pct of 30 teams \u2014 gap 10.34)",
         "Blazers' Deni Avdija questionable, Sharpe/Carlson/Youngblood out; Suns' Mark Williams out, Kennard questionable"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "2-1",
@@ -519,7 +594,7 @@
       "awayMoneyline": 154,
       "awayNetRtg": -10.07,
       "awayPDpg": -10,
-      "awayScore": 96,
+      "awayScore": 96.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -528,7 +603,7 @@
       "homeMoneyline": -185,
       "homeNetRtg": 1.13,
       "homePDpg": 1.2,
-      "homeScore": 121,
+      "homeScore": 121.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 41.38,
@@ -543,7 +618,8 @@
         "NetRtg -10.07 vs +1.13 (6.90th vs 48.28th pct of 30 teams \u2014 gap 41.38)",
         "Clippers missing Bradley Beal, Brandon Ingram (both out), plus Miller, Niederhauser, Strus; Kings' Ben Simmons out for season, Monk questionable"
       ],
-      "time": "10:30 PM ET"
+      "time": "10:30 PM ET",
+      "totalsBackfill": true
     }
   ]
 }

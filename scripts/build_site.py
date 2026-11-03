@@ -306,11 +306,12 @@ def totals_result(g):
 def nba_totals_record(docs):
     """This season's NBA Totals record: per rule (a pick counts for every rule
     that flagged it), picks both rules agreed on, and all picks with $100
-    profit at -110."""
+    profit at -110, plus how many were backfilled (totalsBackfill: graded
+    after the fact on the archived closing line, see nba_totals_signals.py)."""
     rules = {n: {"w": 0, "l": 0, "p": 0} for n in nba_totals_rules.RULE_NAMES}
     both = {"w": 0, "l": 0, "p": 0}
-    allp = {"w": 0, "l": 0, "p": 0, "profit": 0.0}
-    for _, doc in docs:
+    allp = {"w": 0, "l": 0, "p": 0, "profit": 0.0, "backfilled": 0, "backfilledThrough": None}
+    for date_str, doc in docs:
         for g in doc.get("games", []):
             r = totals_result(g)
             if not r or not is_final(doc, g):
@@ -324,6 +325,9 @@ def nba_totals_record(docs):
                 both[key] += 1
             allp[key] += 1
             allp["profit"] += g.get("totalsReturn") or 0
+            if g.get("totalsBackfill"):
+                allp["backfilled"] += 1
+                allp["backfilledThrough"] = max(allp["backfilledThrough"] or date_str, date_str)
     allp["profit"] = round(allp["profit"], 2)
     return {"rules": [{"rule": n, "name": nba_totals_rules.RULE_NAMES[n], "backtest": nba_totals_rules.RULE_BACKTEST[n], **rules[n]}
                       for n in sorted(rules)],

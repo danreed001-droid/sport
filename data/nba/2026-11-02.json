@@ -52,7 +52,8 @@
         "NetRtg blend 5.1 vs 4.5 (pct 79.3 vs 72.4 of 30 teams - gap 6.9)",
         "OKC missing J.Williams, Holmgren, Caruso, Sorber, Topic, Wallace (SGA healthy); CLE only minor day-to-days"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "5-0",
@@ -101,7 +102,8 @@
         "NetRtg blend 1.70 vs -5.99 (pct 51.7 vs 17.2 of 30 teams - gap 34.5)",
         "IND on 2nd night of back-to-back (lost to BKN 90-98 on 11/1), without Haliburton/McConnell/Sheppard; ATL without Landale (out), Johnson (Q)"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-6",
@@ -150,7 +152,8 @@
         "NetRtg blend -8.85 vs 2.90 (pct 13.8 vs 62.1 of 30 teams - gap 48.3)",
         "BKN on 2nd night of back-to-back (beat IND 98-90 on 11/1); NYK rested; NYK's own form down from last year's #5 NetRtg but no major roster loss confirmed"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "3-1",
@@ -199,7 +202,21 @@
         "NetRtg blend -5.51 vs -4.16 (pct 24.1 vs 27.6 of 30 teams - gap 3.4)",
         "WAS missing Young, A.Davis, George, Whitmore (all season-long); ORL missing its top 3 - Banchero, Suggs, Isaac - tonight"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 224.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Orlando Magic -2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Orlando Magic -2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "0-5",
@@ -248,7 +265,8 @@
         "NetRtg blend -9.99 vs 1.79 (pct 3.4 vs 58.6 of 30 teams - gap 55.2)",
         "CHI is the league's worst team by PD/g and extremely banged up (Claxton + 7 others day-to-day); PHI new core (Embiid/J.Brown/LeBron) all managing minor day-to-day issues but reportedly available"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "5-0",
@@ -297,7 +315,8 @@
         "NetRtg blend 8.07 vs -1.69 (pct 93.1 vs 34.5 of 30 teams - gap 58.6)",
         "CHA traded away LaMelo Ball and Miles Bridges this offseason and is missing Knueppel/G.Williams (both out since Sept); DET missing starting C Jalen Duren"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-4",
@@ -346,7 +365,8 @@
         "NetRtg blend -14.27 vs -1.42 (pct 0.0 vs 41.4 of 30 teams - gap 41.4)",
         "SAC missing Sabonis, De'Andre Hunter, and Zach LaVine all for the season; DAL's Cooper Flagg and Kyrie Irving both trending toward available but not fully confirmed"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "2-1",
@@ -395,7 +415,8 @@
         "NetRtg blend -9.65 vs 7.17 (pct 6.9 vs 86.2 of 30 teams - gap 79.3)",
         "MIN missing Anthony Edwards (knee surgery, ~2 months) - its best player; MIL post-Giannis-trade is one of the league's worst teams by net rating"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-5",
@@ -444,7 +465,8 @@
         "NetRtg blend -1.52 vs 4.48 (pct 37.9 vs 69.0 of 30 teams - gap 31.0)",
         "MEM has the league's best record/point differential despite trading away Ja Morant; NO's Jordan Poole was out until approx. today, Yves Missi still out"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "2-3",
@@ -493,7 +515,8 @@
         "NetRtg blend 8.71 vs 9.03 (pct 96.6 vs 100.0 of 30 teams - gap 3.4)",
         "BOS on 2nd night of a back-to-back (beat ORL 108-97 on 11/1), traveling to HOU; HOU rested with newly-acquired Kevin Durant, several role players day-to-day (Sheppard, Smart, Adams, Phillips, Sengun)"
       ],
-      "time": "8:30 PM ET"
+      "time": "8:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-5",
@@ -542,7 +565,8 @@
         "NetRtg blend -9.13 vs 7.74 (pct 10.3 vs 89.7 of 30 teams - gap 79.3)",
         "UTA missing Nurkic, Hayes, and Hinson; SAS's De'Aaron Fox/Wembanyama core reported healthy and has been consistently strong both years"
       ],
-      "time": "8:30 PM ET"
+      "time": "8:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-5",
@@ -591,7 +615,8 @@
         "NetRtg blend 5.74 vs 1.73 (pct 82.8 vs 55.2 of 30 teams - gap 27.6)",
         "POR missing three guards - Ja Morant, Damian Lillard, and Shaedon Sharpe - all out; DEN's Jokic reported healthy, Denver playing at altitude"
       ],
-      "time": "9:00 PM ET"
+      "time": "9:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "3-2",
@@ -640,7 +665,21 @@
         "NetRtg blend -5.78 vs 1.31 (pct 20.7 vs 48.3 of 30 teams - gap 27.6)",
         "GSW on 2nd night of a back-to-back (beat LAC 124-112 on 11/1) and missing Draymond Green, Horford, Podziemski, with Curry's own status uncertain; PHX has the league's worst defensive rating"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 227.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Golden State Warriors -2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Golden State Warriors -2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "3-0",
@@ -689,7 +728,8 @@
         "NetRtg blend 4.76 vs -3.26 (pct 75.9 vs 31.0 of 30 teams - gap 44.8)",
         "Rematch of the Kawhi Leonard/Brandon Ingram trade - neither centerpiece plays tonight (Kawhi out for TOR, Ingram out for LAC); both teams on 2nd night of a back-to-back"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "1-5",
@@ -738,8 +778,22 @@
         "NetRtg blend -0.41 vs 3.47 (pct 44.8 vs 65.5 of 30 teams - gap 20.7)",
         "LAL on 2nd night of a back-to-back (beat TOR 131-125 on 11/1), now built around Luka Doncic post-LeBron departure; MIA's Giannis has not yet translated to a positive team net rating"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 237.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread LA Lakers -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread LA Lakers -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     }
   ],
-  "scoredAt": "2026-11-03T12:12:31.131772+00:00"
+  "scoredAt": "2026-11-03T12:13:32.139816+00:00"
 }

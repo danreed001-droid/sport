@@ -941,7 +941,7 @@ footer b{color:var(--ink);}
       + rules.map(function(r){ var k = r.w+r.l+r.p; return '<tr><td class="mono">'+r.rule+'</td><td>'+esc(r.name)+'</td><td class="mono">'+esc(r.backtest)+'</td><td class="mono">'+(k?r.w+'-'+r.l+(r.p?'-'+r.p:''):'—')+'</td></tr>'; }).join('')
       + '<tr class="stackrow"><td class="mono">1+2</td><td>Both rules flag the game</td><td class="mono">—</td><td class="mono">'+(bn?b.w+'-'+b.l+(b.p?'-'+b.p:''):'—')+'</td></tr>'
       + '<tr class="stackrow"><td class="mono">All</td><td>Every NBA Totals pick, $100 at -110</td><td class="mono">break-even 52.4%</td><td class="mono">'+(n?all.w+'-'+all.l+(all.p?'-'+all.p:'')+' · '+(all.profit>=0?'+':'−')+'$'+Math.abs(all.profit).toFixed(0):'—')+'</td></tr>'
-      + '</tbody></table></div><p class="note" style="margin:8px 0 0">Thin edges: both rules backtested around 54–55% unders, so they only pay at -110 or better. The line shown is the one graded: it updates from DraftKings (via ESPN) every hour until tip-off.</p></details>';
+      + '</tbody></table></div>'+(all.backfilled ? '<p class="note" style="margin:8px 0 0">This season includes '+all.backfilled+' pick'+(all.backfilled===1?'':'s')+' backfilled through '+esc(all.backfilledThrough)+': the rules applied after the fact to games already played, on the DraftKings closing line. Picks from then on are made live before tip-off.</p>' : '')+'<p class="note" style="margin:8px 0 0">Thin edges: both rules backtested around 54–55% unders, so they only pay at -110 or better. The line shown is the one graded: it updates from DraftKings (via ESPN) every hour until tip-off.</p></details>';
   }
   function ncaabStatsRulesTable(){
     var rules = DATA.ncaabStatsRules||[];

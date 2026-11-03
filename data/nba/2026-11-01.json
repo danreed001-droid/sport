@@ -53,7 +53,8 @@
         "ORL: Paolo Banchero, Jalen Suggs, Jonathan Isaac all out",
         "BOS: Devin Carter out (illness), Mitchell Robinson questionable"
       ],
-      "time": "3:30 PM ET"
+      "time": "3:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "2-0",
@@ -103,7 +104,8 @@
         "IND: Tyrese Haliburton out all season (Achilles), Ivica Zubac questionable/out (ankle), Obi Toppin questionable, Aaron Nesmith day-to-day",
         "BKN: Egor Demin and Mikel Brown Jr. both out"
       ],
-      "time": "5:00 PM ET"
+      "time": "5:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-0",
@@ -153,7 +155,21 @@
         "LAC: Brandon Ingram, Bradley Beal, Max Strus all out",
         "GSW: Jimmy Butler, Moses Moody, Kristaps Porzingis all out"
       ],
-      "time": "8:30 PM ET"
+      "time": "8:30 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 220.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Golden State Warriors -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Golden State Warriors -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "0-3",
@@ -203,8 +219,9 @@
         "TOR: Kawhi Leonard out",
         "LAL: no notable absences found in the injury report"
       ],
-      "time": "9:00 PM ET"
+      "time": "9:00 PM ET",
+      "totalsBackfill": true
     }
   ],
-  "scoredAt": "2026-11-02T06:51:08.633721+00:00"
+  "scoredAt": "2026-11-03T12:13:32.138845+00:00"
 }

@@ -3,7 +3,7 @@
   "weekday": "Friday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-10-24T06:49:16.348556+00:00",
+  "scoredAt": "2026-11-03T12:13:32.132108+00:00",
   "generatedAt": "2026-10-23T15:30:00Z",
   "games": [
     {
@@ -29,7 +29,7 @@
       "awayMoneyline": 110,
       "awayNetRtg": 0.35,
       "awayPDpg": 0.17,
-      "awayScore": 103,
+      "awayScore": 103.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -38,7 +38,7 @@
       "homeMoneyline": -130,
       "homeNetRtg": -0.01,
       "homePDpg": -0.15,
-      "homeScore": 107,
+      "homeScore": 107.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 3.44,
@@ -53,7 +53,21 @@
         "NetRtg blend 0.35 vs -0.01 (51.72nd vs 48.28th pct of 30 teams \u2014 gap 3.44)",
         "Injuries: NYK Akins/McCullar/Nickel questionable (bench); BOS Devin Carter out (bench) \u2014 both minor"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 220.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Boston Celtics -2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Boston Celtics -2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "2-1",
@@ -78,7 +92,7 @@
       "awayMoneyline": -135,
       "awayNetRtg": 4.39,
       "awayPDpg": 4.71,
-      "awayScore": 128,
+      "awayScore": 128.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -87,7 +101,7 @@
       "homeMoneyline": 114,
       "homeNetRtg": 6.03,
       "homePDpg": 5.92,
-      "homeScore": 81,
+      "homeScore": 81.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 6.9,
@@ -102,7 +116,21 @@
         "NetRtg blend 4.39 vs 6.03 (62.07th vs 68.97th pct of 30 teams \u2014 gap 6.90)",
         "Injuries: CHA has four day-to-day (Grant Williams, Boswell, Knueppel, Coby White); ATL has Veesaar (out for season) and Gueye (out)"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 226.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Charlotte Hornets +2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Charlotte Hornets +2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "0-3",
@@ -127,7 +155,7 @@
       "awayMoneyline": 215,
       "awayNetRtg": -11.86,
       "awayPDpg": -11.76,
-      "awayScore": 121,
+      "awayScore": 121.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -136,7 +164,7 @@
       "homeMoneyline": -265,
       "homeNetRtg": -2.54,
       "homePDpg": -2.5,
-      "homeScore": 105,
+      "homeScore": 105.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 24.14,
@@ -151,7 +179,8 @@
         "NetRtg blend -11.86 vs -2.54 (13.79th vs 37.93th pct of 30 teams \u2014 gap 24.14)",
         "Injuries: DAL missing Aldama, Biberovic, Lively II, Caleb Martin (out) + Howard (doubtful); IND missing Furphy, McConnell (out) + Nesmith, Sheppard (questionable). Haliburton confirmed playing for IND"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "3-0",
@@ -176,7 +205,7 @@
       "awayMoneyline": -108,
       "awayNetRtg": 13.38,
       "awayPDpg": 14.18,
-      "awayScore": 115,
+      "awayScore": 115.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -185,7 +214,7 @@
       "homeMoneyline": -112,
       "homeNetRtg": -2.93,
       "homePDpg": -3.19,
-      "homeScore": 93,
+      "homeScore": 93.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 58.62,
@@ -200,7 +229,21 @@
         "NetRtg blend 13.38 vs -2.93 (93.10th vs 34.48th pct of 30 teams \u2014 gap 58.62)",
         "Injuries: ORL missing Penda (out) + Black/Isaac/Nelson (day-to-day); MIN missing only DiVincenzo (Achilles, out). Banchero/Wagner not on ORL's report"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 234.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Orlando Magic -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Orlando Magic -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "4-0",
@@ -225,7 +268,7 @@
       "awayMoneyline": -325,
       "awayNetRtg": 21.09,
       "awayPDpg": 22.92,
-      "awayScore": 112,
+      "awayScore": 112.0,
       "awaySpread": -8.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -234,7 +277,7 @@
       "homeMoneyline": 260,
       "homeNetRtg": -0.01,
       "homePDpg": 0.01,
-      "homeScore": 102,
+      "homeScore": 102.0,
       "homeSpread": 8.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 51.72,
@@ -250,7 +293,8 @@
         "Injuries: WAS missing Dybantsa, Vukcevic, Watkins (out) + Okpara (questionable); TOR only missing depth piece Bittle",
         "Market: moneyline moved from -185/+154 (open) to -325/+260 (now); spread moved from -4.5 to -8.5 toward Toronto"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "1-0",
@@ -275,7 +319,7 @@
       "awayMoneyline": -120,
       "awayNetRtg": 8.2,
       "awayPDpg": 8.08,
-      "awayScore": 128,
+      "awayScore": 128.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -284,7 +328,7 @@
       "homeMoneyline": 100,
       "homeNetRtg": -10.75,
       "homePDpg": -11.34,
-      "homeScore": 111,
+      "homeScore": 111.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 55.17,
@@ -299,7 +343,21 @@
         "NetRtg blend 8.20 vs -10.75 (75.86th vs 20.69th pct of 30 teams \u2014 gap 55.17)",
         "Injuries: no reliably current injury report found for either club tonight \u2014 treated as neutral"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 235.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Miami Heat +2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Miami Heat +2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "0-3",
@@ -324,7 +382,7 @@
       "awayMoneyline": -102,
       "awayNetRtg": -22.37,
       "awayPDpg": -24.11,
-      "awayScore": 132,
+      "awayScore": 132.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -118,
       "confidence": "skip",
@@ -333,7 +391,7 @@
       "homeMoneyline": -118,
       "homeNetRtg": -9.16,
       "homePDpg": -9.11,
-      "homeScore": 125,
+      "homeScore": 125.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -102,
       "netRtgGap": 24.14,
@@ -348,7 +406,21 @@
         "NetRtg blend -22.37 vs -9.16 (0.00th vs 24.14th pct of 30 teams \u2014 gap 24.14)",
         "Injuries: CHI missing Claxton (out, hamstring) + Hawkins/Swain (day-to-day, illness); MIL fully healthy \u2014 'Bucks Injuries: None'"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 241.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Milwaukee Bucks -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Milwaukee Bucks -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "3-0",
@@ -373,7 +445,7 @@
       "awayMoneyline": 170,
       "awayNetRtg": 11.84,
       "awayPDpg": 11.61,
-      "awayScore": 114,
+      "awayScore": 114.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -118,
       "confidence": "solid",
@@ -382,13 +454,13 @@
       "homeMoneyline": -205,
       "homeNetRtg": -1.62,
       "homePDpg": -1.85,
-      "homeScore": 110,
+      "homeScore": 110.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -102,
       "netRtgGap": 41.38,
       "pick": "Houston Rockets",
       "pickCover": true,
-      "pickReturn": 170,
+      "pickReturn": 170.0,
       "pickSpreadReturn": 84.75,
       "skipReason": null,
       "skipped": false,
@@ -397,7 +469,8 @@
         "NetRtg blend 11.84 vs -1.62 (82.76th vs 41.38th pct of 30 teams \u2014 gap 41.38)",
         "Injuries: SAS missing Quaintance (out, knee) + Harris (day-to-day, calf); HOU only Adams (day-to-day, calf). Wembanyama confirmed healthy"
       ],
-      "time": "9:30 PM ET"
+      "time": "9:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "1-1",
@@ -422,7 +495,7 @@
       "awayMoneyline": -112,
       "awayNetRtg": -3.77,
       "awayPDpg": -3.75,
-      "awayScore": 119,
+      "awayScore": 119.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -102,
       "confidence": "skip",
@@ -431,7 +504,7 @@
       "homeMoneyline": -108,
       "homeNetRtg": -13.9,
       "homePDpg": -14.22,
-      "homeScore": 120,
+      "homeScore": 120.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -118,
       "netRtgGap": 20.69,
@@ -446,7 +519,21 @@
         "NetRtg blend -3.77 vs -13.90 (31.03rd vs 10.34th pct of 30 teams \u2014 gap 20.69)",
         "Injuries: Markkanen's and Zion's current status could not be reliably confirmed for tonight's game \u2014 treated as neutral"
       ],
-      "time": "9:30 PM ET"
+      "time": "9:30 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 238.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Utah Jazz -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Utah Jazz -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "3-0",
@@ -471,7 +558,7 @@
       "awayMoneyline": 150,
       "awayNetRtg": 6.84,
       "awayPDpg": 7,
-      "awayScore": 111,
+      "awayScore": 111.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
@@ -480,13 +567,13 @@
       "homeMoneyline": -180,
       "homeNetRtg": -11.36,
       "homePDpg": -11.28,
-      "homeScore": 108,
+      "homeScore": 108.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 55.17,
       "pick": "Memphis Grizzlies",
       "pickCover": true,
-      "pickReturn": 150,
+      "pickReturn": 150.0,
       "pickSpreadReturn": 89.29,
       "skipReason": null,
       "skipped": false,
@@ -495,7 +582,8 @@
         "NetRtg blend 6.84 vs -11.36 (72.41st vs 17.24th pct of 30 teams \u2014 gap 55.17)",
         "Injuries: GSW missing Jimmy Butler (out, torn ACL), Porzingis (out, POTS), Moses Moody (out, patellar tendon rupture) + Bassey/Podziemski (GTD); MEM only Coward (doubtful) + Stewart (questionable)"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-3",
@@ -520,7 +608,7 @@
       "awayMoneyline": 295,
       "awayNetRtg": 12.89,
       "awayPDpg": 13.07,
-      "awayScore": 117,
+      "awayScore": 117.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -529,7 +617,7 @@
       "homeMoneyline": -375,
       "homeNetRtg": 11.96,
       "homePDpg": 11.88,
-      "homeScore": 125,
+      "homeScore": 125.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 3.45,
@@ -544,7 +632,8 @@
         "NetRtg blend 12.89 vs 11.96 (89.66th vs 86.21st pct of 30 teams \u2014 gap 3.45)",
         "Injuries: LAC missing Bradley Beal, Brandon Ingram, Jordan Miller, Yanic Konan Niederhauser, Max Strus (all out); LAL missing only two-way players Carr/Thiero (out) + LaRavia (questionable). Luka Doncic confirmed 'good to go without restrictions' for LAL"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-0",
@@ -569,7 +658,7 @@
       "awayMoneyline": -440,
       "awayNetRtg": 21.13,
       "awayPDpg": 20.36,
-      "awayScore": 128,
+      "awayScore": 128.0,
       "awaySpread": -9.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -578,14 +667,14 @@
       "homeMoneyline": 340,
       "homeNetRtg": -17.36,
       "homePDpg": -17.5,
-      "homeScore": 120,
+      "homeScore": 120.0,
       "homeSpread": 9.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 93.1,
       "pick": "Portland Trail Blazers",
       "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": -100,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -593,7 +682,8 @@
         "NetRtg blend 21.13 vs -17.36 (100.00th vs 6.90th pct of 30 teams \u2014 gap 93.10)",
         "Injuries: POR missing Shaedon Sharpe (out, meniscus) + Youngblood/Carlson (day-to-day); SAC missing Cardwell/Raynaud (out), Simmons (out for season) + Monk (day-to-day)"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "totalsBackfill": true
     }
   ]
 }

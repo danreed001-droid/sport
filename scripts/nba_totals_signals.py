@@ -15,6 +15,12 @@ Regular-season games only (the backtest's scope). Graded in score_slate.py
 (totalsCorrect / totalsReturn).
 
 Usage: python scripts/nba_totals_signals.py [YYYY-MM-DD ...]   (default: today ET)
+       python scripts/nba_totals_signals.py --backfill [YYYY-MM-DD ...]
+
+--backfill applies the rules to finished games on past slates that have no
+NBA Totals fields yet, using the DraftKings closing spread and total archived
+in data/raw/nba_lines.csv (the same lines the backtest graded against). Those
+picks are marked totalsBackfill: true. Default: every past slate this season.
 """
 import csv
 import os
@@ -29,6 +35,7 @@ from score_slate import _same_team  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
+LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck")
 
 
@@ -120,7 +127,50 @@ def run_for_date(session, rows, date_str):
     print(f"{date_str}: {picks} NBA Totals pick(s).")
 
 
+def backfill(rows, dates):
+    with open(LINES_CSV, encoding="utf-8") as f:
+        lines = list(csv.DictReader(f))
+    today = today_et_str()
+    total_picks = 0
+    for date_str in dates:
+        if date_str >= today:
+            continue
+        doc = store.read_doc("nba", date_str)
+        if doc is None:
+            continue
+        since = season_start(date_str)
+        changed = 0
+        for g in doc.get("games", []):
+            if g.get("totalsFavors") or "totalsBackfill" in g:
+                continue  # already has a live or backfilled verdict
+            if not isinstance(g.get("awayScore"), (int, float)) or not isinstance(g.get("homeScore"), (int, float)):
+                continue  # not final
+            ln = next((r for r in lines if r["date"] == date_str and _same_team(g.get("away"), r["away"])
+                       and _same_team(g.get("home"), r["home"])), None)
+            try:
+                total, spread = float(ln["total_close"]), float(ln["spread_close"])
+            except (TypeError, ValueError):
+                continue  # no archived closing line
+            rules = evaluate(g, rows, date_str, since, spread)
+            g["totalsBackfill"] = True  # checked, even when no rule fired, so it's never re-done
+            if rules:
+                g["totalsLine"], g["totalsFavors"], g["totalsRules"] = total, "Under", rules
+                g["totalsCheck"] = " ".join(f"Rule {r['rule']}: {r['detail']}" for r in rules) + " (backfilled from the DraftKings closing line)"
+                total_picks += 1
+                print(f"  {date_str} {g['away']} @ {g['home']}: Under {total:g} -- rules {[r['rule'] for r in rules]}")
+            changed += 1
+        if changed:
+            store.write_doc("nba", date_str, doc)
+    print(f"backfilled {total_picks} NBA Totals pick(s).")
+
+
 def main():
+    if sys.argv[1:2] == ["--backfill"]:
+        with open(SCORES_CSV, encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+        start = season_start(today_et_str())
+        backfill(rows, sys.argv[2:] or [d for d, _ in store.list_docs("nba") if d >= start])
+        return
     dates = sys.argv[1:] or [today_et_str()]
     with open(SCORES_CSV, encoding="utf-8") as f:
         rows = list(csv.DictReader(f))

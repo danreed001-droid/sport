@@ -58,7 +58,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   `totalsRules` and `totalsCheck`; `score_slate.py` grades them
   (`totalsCorrect`/`totalsReturn`, $100 at -110). Regular season only. Both
   are thin backtested edges (~54-55% unders, 2022-23 on), tracked to see if
-  they hold; the pick sheet shows them as "NBA Totals".
+  they hold; the pick sheet shows them as "NBA Totals". The season's games
+  before NBA Totals went live (2026-10-20 to 11-02) were backfilled with
+  `nba_totals_signals.py --backfill` on the archived DraftKings closing lines
+  and are marked `totalsBackfill: true`; the pick sheet says how many.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.

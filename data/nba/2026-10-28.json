@@ -52,7 +52,21 @@
         "NetRtg -5.01 vs +5.75 (24.14pct vs 75.86pct of 30 teams \u2014 gap 51.72)",
         "Injuries: MIA Larsson/Fontecchio GTD; ATL Wiggins GTD, Gueye/Veesaar out"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 243.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Atlanta Hawks -2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Atlanta Hawks -2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "0-5",
@@ -101,7 +115,8 @@
         "NetRtg -6.08 vs +1.73 (17.24pct vs 58.62pct of 30 teams \u2014 gap 41.38)",
         "Injuries: WAS Champagnie/Watkins/Vukcevic out, Dybantsa GTD (cluster); CLE Diop/Tomlin out (bench)"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "1-4",
@@ -150,7 +165,8 @@
         "NetRtg -0.93 vs +10.41 (48.28pct vs 93.10pct of 30 teams \u2014 gap 44.82)",
         "Injuries: CHA White/Knueppel/Williams/Boswell out (star-out cluster); DET Duren out, Joe GTD"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "5-0",
@@ -199,7 +215,8 @@
         "NetRtg +1.17 vs -3.33 (55.17pct vs 34.48pct of 30 teams \u2014 gap 20.69)",
         "Injuries: IND Haliburton/Nesmith/Nembhard/Toppin GTD, McConnell/Sheppard/Furphy out (star-out cluster); PHI Walker/Barlow/Hukporti out (bench)"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-2",
@@ -248,7 +265,8 @@
         "NetRtg -3.03 vs +5.63 (37.93pct vs 72.41pct of 30 teams \u2014 gap 34.48)",
         "Injuries: ORL Banchero/Suggs/Isaac/Nelson/Penda out (star-out cluster); TOR Leonard out (star), Bittle out"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "3-3",
@@ -297,7 +315,8 @@
         "NetRtg -2.21 vs -3.85 (41.38pct vs 31.03pct of 30 teams \u2014 gap 10.35)",
         "Injuries: DEN Jones/Diallo/Strawther out, Johnson GTD (cluster); NOP Missi out, Poole GTD"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "3-2",
@@ -346,7 +365,8 @@
         "NetRtg +0.08 vs -11.27 (51.72pct vs 3.45pct of 30 teams \u2014 gap 48.27)",
         "Injuries: NYK Alvarado GTD; CHI Claxton out, P.Williams GTD"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "0-4",
@@ -395,7 +415,8 @@
         "NetRtg +7.59 vs -5.81 (82.76pct vs 20.69pct of 30 teams \u2014 gap 62.07)",
         "Injuries: HOU Sengun out (star-out cluster), Smart GTD, Adams out; MIL no injuries reported"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "1-2",
@@ -444,7 +465,8 @@
         "NetRtg -1.92 vs +9.91 (44.83pct vs 89.66pct of 30 teams \u2014 gap 44.83)",
         "Injuries: GSW Butler out (star-out cluster), Porzingis/Moody out, Lendeborg GTD; MIN Edwards out (star), DiVincenzo out"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "5-3",
@@ -507,7 +529,8 @@
       "statsCorrect": null,
       "statsReturn": null,
       "statsCover": true,
-      "statsSpreadReturn": 95.24
+      "statsSpreadReturn": 95.24,
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "2-3",
@@ -556,7 +579,8 @@
         "NetRtg +10.85 vs -4.53 (96.55pct vs 27.59pct of 30 teams \u2014 gap 68.96)",
         "Injuries: OKC Holmgren/Sorber/Caruso/Topic/J.Williams/Wallace out, Mitchell GTD (large cluster); DAL Lively/de Larrea out, Irving/Aldama/Biberovic/Martin/Marshall GTD"
       ],
-      "time": "9:30 PM ET"
+      "time": "9:30 PM ET",
+      "totalsBackfill": true
     },
     {
       "altCategoryTally": "5-1",
@@ -605,8 +629,22 @@
         "NetRtg +7.34 vs +2.23 (79.31pct vs 65.52pct of 30 teams \u2014 gap 13.79)",
         "Injuries: LAL Carr/Thiero returning (minor); LAC Ingram/Beal/Hachimura/Miller/Niederhauser/Strus out (large cluster)"
       ],
-      "time": "10:30 PM ET"
+      "time": "10:30 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 224.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread LA Clippers -1.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread LA Clippers -1.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     }
   ],
-  "scoredAt": "2026-10-29T07:57:13.061558+00:00"
+  "scoredAt": "2026-11-03T12:13:32.136092+00:00"
 }

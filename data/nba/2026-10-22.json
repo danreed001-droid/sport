@@ -53,7 +53,21 @@
         "No notable current injuries flagged for either team entering tonight per pregame previews; confirm final injury report",
         "76ers opened 1-0 with a 106-100 road win at the Knicks (held NYK to 37% FG, 6 players in double figures); Cavaliers have not yet played in 2026-27"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "totalsBackfill": true,
+      "totalsLine": 237.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 1,
+          "detail": "Spread Philadelphia 76ers -2.5 (3 points or less).",
+          "name": "Under when the spread is 3 points or less",
+          "backtest": "54.2% unders, 637-539 (2022-23 to 2026-27); under won every season"
+        }
+      ],
+      "totalsCheck": "Rule 1: Spread Philadelphia 76ers -2.5 (3 points or less). (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "3-5",
@@ -103,8 +117,9 @@
         "Nuggets missing G Julian Strawther (knee, out), F Spencer Jones (hamstring, questionable); Thunder missing Otega Oweh (out for season, Achilles), Nikola Topic (back, questionable), Thomas Sorber (knee, questionable)",
         "Thunder opened 1-0 with a 116-104 road win at San Antonio (Shai Gilgeous-Alexander 32 pts); Nuggets' last action was an Oct. 16 preseason win over the Lakers"
       ],
-      "time": "9:30 PM ET"
+      "time": "9:30 PM ET",
+      "totalsBackfill": true
     }
   ],
-  "scoredAt": "2026-10-23T06:52:56.829260+00:00"
+  "scoredAt": "2026-11-03T12:13:32.131470+00:00"
 }
