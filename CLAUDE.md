@@ -50,6 +50,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   rebuilds the site if the live data.json is 6+ hours old, and opens a
   "Health check" issue (closed automatically on recovery) when it can't fix
   things itself.
+- **Rule bar (2026-11-03):** NBA Stats and NBA Totals keep only rules at 61%+
+  when every current rule is replayed on 2018-19 and 2021-22 to now (the
+  2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
+  2021-22 were never seen by the rules found on 2022-26). Active: NBA Stats
+  2, 9, 16, 17, 20, 21, 24, 28, 35, 36, 37, 39, 41, 43; NBA Totals 3, 6, 7, 8,
+  9, 10, 14, 16. Retired rules are listed in `RETIRED` in each rules file;
+  their code stays but the scripts drop them, and numbers aren't reused.
+  Older seasons' odds (kyleskom, 2018-19 to 2021-22) store the spread
+  unsigned, so the favorite comes from the moneylines, and call Charlotte
+  "Bobcats".
 - NBA Totals (`scripts/nba_totals_signals.py`, rules in `scripts/lib/nba_totals_rules.py`)
   runs right after NBA Stats each scoring run and flags full-game totals on the
   NBA slate. Only rules that backtested at 61%+ are kept (the user's bar for

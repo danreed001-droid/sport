@@ -53,7 +53,7 @@ SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsWatch")
 # Bumped whenever rules are added, so --backfill rechecks past games with them.
-BACKFILL_VERSION = 7
+BACKFILL_VERSION = 8
 
 
 def season_start(date_str):
@@ -237,6 +237,7 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=
         for n, cond in ROAD_BLOWOUT.items():
             if all(facts[k] == v for k, v in cond.items()):
                 rules.append({"rule": n, "detail": why})
+    rules = [r for r in rules if r["rule"] in RULE_NAMES]  # retired rules (lib/nba_totals_rules.RETIRED) never pick
     for r in rules:
         r["name"], r["backtest"] = RULE_NAMES[r["rule"]], RULE_BACKTEST[r["rule"]]
     return rules

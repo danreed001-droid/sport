@@ -13,63 +13,41 @@ better record; "less than a 7-pt dog" includes being favored in that game."""
 RULE_NAMES = {
     2: "Fade an OT winner vs. a stronger team (any rest)",
     9: "Fade a late comeback on the back-to-back",
-    14: "Fade a team on a back-to-back vs. a weaker team after all 5 starters scored 10+ in a win",
     16: "Back a home team on a back-to-back after losing to a team that shot 50%+ from three",
     17: "Fade a home team after a win where it allowed 130+ (any rest)",
-    18: "Back a home team vs. a stronger team when last game's 30+ point scorer is out (on trial)",
-    19: "Back a road team on a back-to-back after a home loss to a worse-record team (on trial)",
     20: "Fade a road-upset winner now home vs. a stronger team, rested, after winning by 1-9 as less than a 7-pt dog (on trial)",
     21: "Fade a road-upset winner now home vs. a stronger team, after winning by 1-9 as less than a 7-pt dog (on trial)",
-    22: "Fade a road-upset winner now on the road vs. a weaker team, rested, after winning by 1-9 (on trial)",
-    23: "Fade a road-upset winner now home vs. a weaker team after winning by 10+ (on trial)",
     24: "Fade a road-upset winner now home, rested, after winning by 1-9 as less than a 7-pt dog (on trial)",
-    25: "Fade a road-upset winner vs. a weaker team after winning by 10+ as less than a 7-pt dog (on trial)",
-    26: "Fade a road-upset winner now on the road vs. a weaker team, rested (on trial)",
-    27: "Fade a road-upset winner vs. a weaker team, rested, after winning by 10+ as less than a 7-pt dog (on trial)",
     28: "Fade a road-upset winner now home after winning by 1-9 as less than a 7-pt dog (on trial)",
-    29: "Fade a road-upset winner now on the road vs. a weaker team after winning by 1-9 (on trial)",
-    33: "Back a team after a 30+ point win, now home vs. a stronger team (on trial)",
-    34: "Back a team after a 30+ point road win where it wasn't a 7+ pt favorite (on trial)",
     35: "Back a team on a back-to-back after a 20+ point road loss where it wasn't a 7+ pt dog (on trial)",
     36: "Back a team on the road after a 30+ point home loss (on trial)",
     37: "Back a team on the road, rested, after a 30+ point home loss (on trial)",
-    38: "Fade a home team vs. a weaker team, rested, after a 20-29 point road loss (on trial)",
     39: "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
-    40: "Back a home team vs. a weaker team, rested, after a 20-29 point home loss (on trial)",
     41: "Both teams on a back-to-back: back the home team when it's favored and the road team has the better record (on trial)",
-    42: "Both teams on a back-to-back: back a favored home team that played on the road last night when the road team lost last night (on trial)",
     43: "Both teams on a back-to-back: back a home team favored by 5+ that played on the road last night (on trial)",
 }
-# Backtest rate, then the record replayed on six seasons none of the rules
-# were found on: 2016-17 through 2019-20, 2023-24 and 2024-25.
 RULE_BACKTEST = {
-    2: "63.6% ATS, n=77; 6 unseen seasons: 95-62", 9: "68.1% ATS, n=91; 6 unseen seasons: 62-49",
-    14: "62.3% ATS, n=122; 6 unseen seasons: 91-67", 16: "68.5% ATS, n=54; 6 unseen seasons: 37-24",
-    17: "65.5% ATS, n=58; 6 unseen seasons: 39-24",
-    18: "61.7% ATS, n=47 (2022-23 to 2025-26), covered every season; on trial",
-    19: "65.9% ATS, n=44 (2022-23 to 2025-26), covered every season; on trial",
-    20: "71.4% ATS, n=42 (30-12) (2022-23 to 2025-26); on trial",
-    21: "67.3% ATS, n=55 (37-18) (2022-23 to 2025-26); on trial",
-    22: "65.5% ATS, n=58 (38-20) (2022-23 to 2025-26); on trial",
-    23: "64.3% ATS, n=42 (27-15) (2022-23 to 2025-26); on trial",
-    24: "63.1% ATS, n=84 (53-31) (2022-23 to 2025-26); on trial",
-    25: "63.1% ATS, n=84 (53-31) (2022-23 to 2025-26); on trial",
-    26: "62.9% ATS, n=105 (66-39) (2022-23 to 2025-26); on trial",
-    27: "62.5% ATS, n=64 (40-24) (2022-23 to 2025-26); on trial",
-    28: "62.4% ATS, n=101 (63-38) (2022-23 to 2025-26); on trial",
-    29: "62.3% ATS, n=69 (43-26) (2022-23 to 2025-26); on trial",
-    33: "66.0% ATS, n=47 (31-16, 2022-23 to 2025-26), covered every season; on trial",
-    34: "63.2% ATS, n=57 (36-21, 2022-23 to 2025-26), covered every season; on trial",
-    35: "67.5% ATS, n=40 (27-13, 2022-23 to 2025-26), every season; on trial",
-    36: "65.4% ATS, n=52 (34-18, 2022-23 to 2025-26), every season; on trial",
-    37: "65.2% ATS, n=46 (30-16, 2022-23 to 2025-26), every season; on trial",
-    38: "63.8% ATS, n=47 (30-17, 2022-23 to now), every season; on trial",
-    39: "62.5% ATS, n=48 (30-18, 2022-23 to now), every season; on trial",
-    40: "62.0% ATS, n=50 (31-19, 2022-23 to 2025-26), every season; on trial",
-    41: "65.1% ATS, n=43 (28-15, 2022-23 to now), every season; on trial",
-    42: "63.0% ATS, n=46 (29-17, 2022-23 to 2025-26), every season; on trial",
-    43: "62.5% ATS, n=48 (30-18, 2022-23 to 2025-26), every season; on trial",
+    2: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+    9: "69.9% ATS, 65-28 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+    16: "73.9% ATS, 34-12 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+    17: "62.6% ATS, 62-37 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+    20: "68.3% ATS, 41-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-7",
+    21: "65.8% ATS, 50-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8",
+    24: "62.8% ATS, 76-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14",
+    28: "61.5% ATS, 88-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17",
+    35: "62.3% ATS, 38-23 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-10",
+    36: "64.9% ATS, 48-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8",
+    37: "65.6% ATS, 42-22 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-6",
+    39: "61.4% ATS, 43-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9",
+    41: "64.2% ATS, 34-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 6-4",
+    43: "62.3% ATS, 43-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
 }
+
+# Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the
+# 2019-20 bubble and 2020-21 empty-arena seasons left out): 14, 18, 19, 22, 23, 25, 26, 27, 29, 33, 34, 38, 40, 42.
+# Their code paths stay in nba_stats_signals.py but never pick; numbers aren't reused.
+RETIRED = {14, 18, 19, 22, 23, 25, 26, 27, 29, 33, 34, 38, 40, 42}
+
 # A pick two or more rules agree on ("stacked"), replayed on the same six
 # unseen seasons: one-rule picks went 57.4% (269-200).
 STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule picks 57.4%"

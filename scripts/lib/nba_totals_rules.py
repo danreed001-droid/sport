@@ -14,42 +14,29 @@ that). Rules 4 and 5 were found on 2022-24 and held on 2024-26; 3, 6, 7 and
 # team is coming off an OT game (55.3%, 131-106). Numbers aren't reused.
 RULE_NAMES = {
     3: "Over when the home team won its last game and that game's 30-39 point scorer is out (on trial)",
-    4: "Under when a team lost by 1-9 at home to a worse-record team and now faces a better-record team",
-    5: "Rule 4, and the team is rested",
     6: "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
     7: "Rule 6, and the team is rested (on trial)",
     8: "Rule 6, after losing that home game by 10+ (on trial)",
     9: "Under when the home team is back from a 20+ road win, now vs. a weaker team and rested, and wasn't a 7+ pt favorite in that win (on trial)",
     10: "Under when the home team is back from a 20+ road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)",
-    11: "Under when the home team is back from a 20-29 point road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)",
-    12: "Under when the home team is back from a 20-29 point road win and wasn't a 7+ pt favorite in it (on trial)",
-    13: "Under when the home team is back from a 20-29 point road win (on trial)",
     14: "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
-    15: "Under when the home team is back from a 20-29 point road win, now vs. a weaker team (on trial)",
     16: "Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)",
-    17: "Both teams on a back-to-back: under when both played on the road last night and the road team has the better record (on trial)",
-    18: "Both teams on a back-to-back: under when the road team is favored, has the better record, and the home team played on the road last night (on trial)",
-    19: "Both teams on a back-to-back: under when the home team played on the road last night, the road team lost last night, and the spread is 5+ (on trial)",
 }
 RULE_BACKTEST = {
-    3: "65.2% overs, 43-23 (2022-23 to now); over in 3 of 4 seasons, small sample",
-    4: "63.6% unders, 89-51 (2022-23 to now); found on 2022-24 (52-32), held on 2024-26 (37-19); every season",
-    5: "63.8% unders, 74-42 (2022-23 to 2025-26); found on 2022-24 (45-27), held on 2024-26 (29-15); every season",
-    6: "66.3% unders, 69-35 (2022-23 to 2025-26); under every season",
-    7: "65.2% unders, 58-31 (2022-23 to 2025-26); under every season",
-    8: "71.4% unders, 30-12 (2022-23 to 2025-26); under every season, small sample",
-    9: "67.4% unders, 29-14 (2022-23 to now); under every season",
-    10: "66.0% unders, 35-18 (2022-23 to now); under every season",
-    11: "64.3% unders, 27-15 (2022-23 to now); under every season",
-    12: "63.5% unders, 40-23 (2022-23 to now); under every season",
-    13: "63.4% unders, 59-34 (2022-23 to now); under every season",
-    14: "63.3% unders, 57-33 (2022-23 to now); under every season",
-    15: "62.5% unders, 40-24 (2022-23 to now); under every season",
-    16: "71.4% overs, 30-12 (2022-23 to 2025-26); over every season",
-    17: "67.5% unders, 27-13 (2022-23 to now); under every season",
-    18: "62.8% unders, 27-16 (2022-23 to now); under every season",
-    19: "62.2% unders, 28-17 (2022-23 to now); under every season",
+    3: "65.1% overs, 56-30 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
+    6: "62.6% unders, 107-64 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30",
+    7: "61.4% unders, 89-56 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 31-26",
+    8: "63.5% unders, 40-23 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 10-11",
+    9: "63.5% unders, 47-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 18-13",
+    10: "62.8% unders, 59-35 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-17",
+    14: "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24",
+    16: "67.2% overs, 41-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-8",
 }
+
+# Retired 2026-11-03 (under 61% on 2018-19 and 2021-22 to now): 4, 5, 11, 12, 13, 15, 17, 18, 19. Earlier: 1, 2.
+# Their code paths stay in nba_totals_signals.py but never pick; numbers aren't reused.
+RETIRED = {1, 2, 4, 5, 11, 12, 13, 15, 17, 18, 19}
+
 OVER_RULES = {3, 16}
 OT_LOOKBACK_DAYS = 10
 

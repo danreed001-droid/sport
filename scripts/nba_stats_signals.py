@@ -514,7 +514,7 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                     picks.append((team, 18, f"Backing {team}: {who} scored 30+ in its last game and is out tonight; "
                                          f"now home vs. a better-record team -- teams in this spot covered 61.7% ATS "
                                          f"(29-18, 2022-23 to 2025-26)."))
-                elif "watch" in tonight:
+                elif "watch" in tonight and 18 in RULE_NAMES:
                     tonight["watch"] += watch_entries(big, tonight["status"](team), 18,
                                                       f"NBA Stats rule 18 would back {slate_name.get(team, team)}")
             elif big:  # started or final: keep whatever was decided before tip-off
@@ -540,7 +540,7 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                         picks.append((opp, n, f"Fading {team}: won at better-record {last['opp']} "
                                               f"{last['team_score']:g}-{last['opp_score']:g} {dog} last game; now {where} vs. "
                                               f"{'a better' if opp_stronger else 'a worse'}-record team"
-                                              f"{', rested' if facts['rested'] else ', on a back-to-back'} -- {RULE_BACKTEST[n]}."))
+                                              f"{', rested' if facts['rested'] else ', on a back-to-back'} -- {RULE_BACKTEST.get(n, '')}."))
 
         lost_by = last["opp_score"] - last["team_score"]
         if lost_by >= 20 and team_pct != opp_pct:  # rules 35-40: after a 20+ point loss
@@ -559,7 +559,7 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                     verb = "Backing" if back else "Fading"
                     picks.append((pick, n, f"{verb} {team}: {lost}; now {'home' if is_home else 'on the road'} vs. "
                                            f"{'a better' if opp_stronger else 'a worse'}-record team"
-                                           f"{', on a back-to-back' if f['b2b'] else ', rested'} -- {RULE_BACKTEST[n]}."))
+                                           f"{', on a back-to-back' if f['b2b'] else ', rested'} -- {RULE_BACKTEST.get(n, '')}."))
 
         big_margin = last["team_score"] - last["opp_score"]
         if big_margin >= 30 and team_pct != opp_pct:  # rules 33-34: back a team after a 30+ point win
@@ -568,10 +568,10 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
             score = f"{last['team_score']:g}-{last['opp_score']:g}"
             if is_home and opp_stronger:
                 picks.append((team, 33, f"Backing {team}: won by {big_margin:g} last game ({score} vs {last['opp']}), now home "
-                                     f"vs. a better-record team -- {RULE_BACKTEST[33]}."))
+                                     f"vs. a better-record team -- {RULE_BACKTEST.get(33, '')}."))
             if not last["is_home"] and (my_spread is None or my_spread > -7):
                 picks.append((team, 34, f"Backing {team}: won by {big_margin:g} on the road last game ({score} at {last['opp']})"
-                                     f"{f' as a {my_spread:+g}' if my_spread is not None else ''} -- {RULE_BACKTEST[34]}."))
+                                     f"{f' as a {my_spread:+g}' if my_spread is not None else ''} -- {RULE_BACKTEST.get(34, '')}."))
 
         if not is_home and last["is_home"] and not last["won"] and team_pct != opp_pct:  # as backtested: equal records excluded
             tw, tl = season_record(games, last["date"])
@@ -594,14 +594,15 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 picks.append((home, n, f"Backing {home}: both teams played last night ({home} "
                                        f"{'at home' if bb['home_was_home'] else 'on the road'}, {away} "
                                        f"{'won' if bb['road_won'] else 'lost'}); {home} favored by {-home_spread:g}"
-                                       f"{', and ' + away + ' has the better record' if bb['road_better'] else ''} -- {RULE_BACKTEST[n]}."))
+                                       f"{', and ' + away + ' has the better record' if bb['road_better'] else ''} -- {RULE_BACKTEST.get(n, '')}."))
 
+    picks = [p for p in picks if p[1] in RULE_NAMES]  # retired rules (lib/nba_stats_rules.RETIRED) never pick
     if only_rules is not None:  # backfill: just these rules, as if no other rule existed
         picks = [p for p in picks if p[1] in only_rules]
     sides = {p for p, _, _ in picks}
     if len(sides) != 1:
         return None
-    rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], "detail": text}
+    rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST.get(n, ''), "detail": text}
              for _, n, text in sorted(picks, key=lambda x: x[1])]
     return slate_name.get(picks[0][0], picks[0][0]), rules
 
