@@ -28,9 +28,6 @@ RULE_NAMES = {
     27: "Fade a road-upset winner vs. a weaker team, rested, after winning by 10+ as less than a 7-pt dog (on trial)",
     28: "Fade a road-upset winner now home after winning by 1-9 as less than a 7-pt dog (on trial)",
     29: "Fade a road-upset winner now on the road vs. a weaker team after winning by 1-9 (on trial)",
-    30: "Fade a road-upset winner that was less than a 7-pt dog in that win",
-    31: "Fade a road-upset winner now facing a weaker team",
-    32: "Fade a road-upset winner that was less than a 7-pt dog in that win, now rested",
 }
 # Backtest rate, then the record replayed on six seasons none of the rules
 # were found on: 2016-17 through 2019-20, 2023-24 and 2024-25.
@@ -50,19 +47,16 @@ RULE_BACKTEST = {
     27: "62.5% ATS, n=64 (40-24) (2022-23 to 2025-26); on trial",
     28: "62.4% ATS, n=101 (63-38) (2022-23 to 2025-26); on trial",
     29: "62.3% ATS, n=69 (43-26) (2022-23 to 2025-26); on trial",
-    30: "58.5% ATS, n=422 (247-175, 2022-23 to 2025-26); found on 2022-24, held on 2024-26 (118-82); every season",
-    31: "59.0% ATS, n=239 (141-98, 2022-23 to 2025-26); found on 2022-24, held on 2024-26 (63-44); every season",
-    32: "59.2% ATS, n=331 (196-135, 2022-23 to 2025-26); found on 2022-24, held on 2024-26 (91-68); every season",
 }
 # A pick two or more rules agree on ("stacked"), replayed on the same six
 # unseen seasons: one-rule picks went 57.4% (269-200).
 STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule picks 57.4%"
 
 
-# Rules 20-32 are overlapping slices of one situation (a road-upset win), so
+# Rules 20-29 are overlapping slices of one situation (a road-upset win), so
 # several firing on one game is not independent agreement: "stacked" counts
 # distinct families, not rules.
-FAMILY = {n: "road-upset" for n in range(20, 33)}
+FAMILY = {n: "road-upset" for n in range(20, 30)}
 
 
 def families(nums):

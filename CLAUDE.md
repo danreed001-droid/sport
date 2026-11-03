@@ -75,11 +75,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   Stats looks teams up by the scores archive's name, so a slate's "LA Lakers"
   still finds "Los Angeles Lakers". Rule 19 (on trial) backs a road team on a
   back-to-back after a home loss to a worse-record team (games between equal
-  records excluded, as in the backtest). Rules 20-32 fade a team
+  records excluded, as in the backtest). Rules 20-29 (on trial) fade a team
   coming off a road upset win (`ROAD_UPSET` in `nba_stats_signals.py`; the
-  win's spread comes from `data/raw/nba_lines.csv`); 30-32 are the broad
-  versions that held on 2024-26, 20-29 narrower slices on trial. Overlapping slices of one
-  situation (NBA Stats 20-32, NBA Totals 4-8) are one "family": several firing
+  win's spread comes from `data/raw/nba_lines.csv`). Overlapping slices of one
+  situation (NBA Stats 20-29, NBA Totals 4-8) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
