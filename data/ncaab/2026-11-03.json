@@ -3,67 +3,12 @@
   "weekday": "Tuesday",
   "sport": "ncaab",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-03T10:55:32Z",
+  "generatedAt": "2026-11-03T16:24:10Z",
   "games": [
-    {
-      "espnId": "401906848",
-      "away": "Wofford Terriers",
-      "home": "Tennessee Volunteers",
-      "time": "6:00 PM ET",
-      "homeSpread": -26.5,
-      "awaySpread": 26.5,
-      "homeSpreadOdds": -112,
-      "awaySpreadOdds": -108,
-      "homeMoneyline": -20000,
-      "awayMoneyline": 3500,
-      "total": 154.5
-    },
-    {
-      "espnId": "401921801",
-      "away": "Manhattan Jaspers",
-      "home": "Kentucky Wildcats",
-      "time": "7:00 PM ET",
-      "homeSpread": -33.5,
-      "awaySpread": 33.5,
-      "homeSpreadOdds": -105,
-      "awaySpreadOdds": -115,
-      "total": 158.5
-    },
-    {
-      "espnId": "401920422",
-      "away": "Drexel Dragons",
-      "home": "Virginia Cavaliers",
-      "time": "7:30 PM ET",
-      "homeSpread": -31.5,
-      "awaySpread": 31.5,
-      "homeSpreadOdds": -108,
-      "awaySpreadOdds": -112,
-      "total": 142.5
-    },
-    {
-      "espnId": "401906757",
-      "away": "Sam Houston Bearkats",
-      "home": "Alabama Crimson Tide",
-      "time": "7:30 PM ET",
-      "homeSpread": -26.5,
-      "awaySpread": 26.5,
-      "homeSpreadOdds": -112,
-      "awaySpreadOdds": -108,
-      "homeMoneyline": -10000,
-      "awayMoneyline": 3000,
-      "total": 171.5
-    },
-    {
-      "espnId": "401929372",
-      "away": "Arkansas-Pine Bluff Golden Lions",
-      "home": "Arkansas Razorbacks",
-      "time": "8:00 PM ET",
-      "homeSpread": -38.5,
-      "awaySpread": 38.5,
-      "homeSpreadOdds": -110,
-      "awaySpreadOdds": -110,
-      "total": 163.5
-    }
+    {"altCategoryTally":"0-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin favors Tennessee (+9.2 PD/g vs Wofford's +1.7).","Neutral — both teams open the season fully rested, no back-to-back or short-rest edge.","Neutral — Wofford's trip from Spartanburg, SC to Knoxville is a short regional road trip, not a notable travel burden.","Neutral — Tennessee's Terrence Hill is questionable (ankle) but coach Rick Barnes said the roster is otherwise 'good to go'; no player is ruled out.","Neutral — season opener; no current-season games for either team to form a recent-form read.","Neutral — opening night for both programs, no rivalry, revenge or lookahead spot identified.","Neutral — no verified elite home-crowd edge beyond an ordinary season-opener atmosphere at Food City Center.","Neutral — no reverse line movement or notable market shift could be verified for this game.","Neutral — no specific unit-vs-unit or stylistic mismatch could be verified between these two rosters."],"altReturn":null,"altSpreadReturn":null,"away":"Wofford Terriers","awayMoneyline":4000,"awayPDpg":1.7,"awayRank":null,"awayScore":null,"awaySpread":26.5,"awaySpreadOdds":-108,"confidence":"skip","correct":null,"home":"Tennessee Volunteers","homeMoneyline":-50000,"homePDpg":9.2,"homeRank":8,"homeScore":null,"homeSpread":-26.5,"homeSpreadOdds":-112,"offGap":2.48,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +1.7 vs +9.2 (2025-26 final; 0 GP in 2026-27)","Off eff (ORtg) 115.2 (66th of 365) vs 115.8 (57th of 365) — offense pct gap 2.5 (Sports Reference)","Def eff (DRtg) 112.8 (318th of 365) vs 102.1 (62nd of 365)","Tennessee: G Terrence Hill questionable (ankle); Harris and Lundblade expected available"],"time":"6:00 PM ET"},
+    {"altCategoryTally":"0-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin favors Virginia (+11.6 PD/g vs Drexel's +0.8).","Neutral — both teams open the season fully rested.","Neutral — Drexel's trip from Philadelphia to Charlottesville is a short in-region road trip.","Neutral — no injuries or lineup changes reported for either team entering the opener.","Neutral — season opener; no recent-form data for either side.","Neutral — opening night, no rivalry or revenge narrative identified.","Neutral — no verified elite home-crowd edge beyond a typical sold-out ACC season opener at John Paul Jones Arena.","Neutral — no line movement data could be verified for this game.","Neutral — no specific stylistic mismatch could be verified between the two rosters."],"altReturn":null,"altSpreadReturn":null,"away":"Drexel Dragons","awayMoneyline":5000,"awayPDpg":0.8,"awayRank":null,"awayScore":null,"awaySpread":31.5,"awaySpreadOdds":-112,"confidence":"solid","correct":null,"home":"Virginia Cavaliers","homeMoneyline":-100000,"homePDpg":11.6,"homeRank":9,"homeScore":null,"homeSpread":-31.5,"homeSpreadOdds":-108,"offGap":76.65,"pick":"Virginia Cavaliers","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g +0.8 vs +11.6 (2025-26 final; 0 GP in 2026-27)","Off eff (ORtg) 103.6 (305th of 365) vs 119.0 (26th of 365) — offense pct gap 76.7 (Sports Reference)","Def eff (DRtg) 102.4 (69th of 365) vs 101.8 (59th of 365)","No notable injuries reported for either team entering the opener"],"time":"7:30 PM ET"},
+    {"altCategoryTally":"1-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin favors Kentucky (+6.2 PD/g vs Manhattan's -4.9).","Neutral — both teams open the season fully rested.","Neutral — Manhattan's trip from Riverdale, NY to Lexington is a standard one-game regional road trip.","Favors Manhattan — Kentucky forward Kam Williams (foot) is not expected to play, per coach Mark Pope.","Neutral — season opener; no current-season recent-form data for either side.","Neutral — opening night at Rupp Arena, no rivalry or revenge angle identified.","Favors Kentucky — Rupp Arena is one of the largest and loudest home-court environments in college basketball, a well-established edge for a sold-out season opener.","Neutral — no line movement data could be verified for this game.","Neutral — no specific stylistic mismatch could be verified between the two rosters."],"altReturn":null,"altSpreadReturn":null,"away":"Manhattan Jaspers","awayMoneyline":4000,"awayPDpg":-4.9,"awayRank":null,"awayScore":null,"awaySpread":33,"awaySpreadOdds":-110,"confidence":"solid","correct":null,"home":"Kentucky Wildcats","homeMoneyline":-20000,"homePDpg":6.2,"homeRank":23,"homeScore":null,"homeSpread":-33,"homeSpreadOdds":-110,"offGap":46.43,"pick":"Kentucky Wildcats","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -4.9 vs +6.2 (2025-26 final; 0 GP in 2026-27)","Off eff (ORtg) 107.1 (236th of 365) vs 115.2 (67th of 365) — offense pct gap 46.4 (Sports Reference)","Def eff (DRtg) 114.2 (331st of 365) vs 106.3 (162nd of 365)","Kentucky: F Kam Williams (foot) not expected to play per coach Mark Pope"],"time":"6:00 PM ET"},
+    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin favors Arkansas (+9.2 PD/g vs Arkansas-Pine Bluff's -3.7).","Neutral — both teams open the season fully rested.","Neutral — Arkansas-Pine Bluff's trip from Pine Bluff to Fayetteville is an in-state road trip, not a notable burden.","Neutral — no injuries reported for either team entering the opener.","Neutral — season opener; no current-season recent-form data for either side.","Neutral — opening night for Calipari's touted freshman class, but no rivalry, revenge or letdown angle identified.","Favors Arkansas — Bud Walton Arena ('The Basketball Palace of Mid-America') is a well-established, notably loud home-court environment for a top-15 team's season-opening sellout.","Neutral — no line movement data could be verified for this game.","Neutral — no specific stylistic mismatch could be verified between the two rosters."],"altReturn":null,"altSpreadReturn":null,"away":"Arkansas-Pine Bluff Golden Lions","awayMoneyline":15000,"awayPDpg":-3.7,"awayRank":null,"awayScore":null,"awaySpread":40.5,"awaySpreadOdds":-110,"confidence":"solid","correct":null,"home":"Arkansas Razorbacks","homeMoneyline":-100000,"homePDpg":9.2,"homeRank":12,"homeScore":null,"homeSpread":-40.5,"homeSpreadOdds":-110,"offGap":66.49,"pick":"Arkansas Razorbacks","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -3.7 vs +9.2 (2025-26 final; 0 GP in 2026-27)","Off eff (ORtg) 106.4 (248th of 365) vs 122.2 (6th of 365) — offense pct gap 66.5 (Sports Reference)","Def eff (DRtg) 111.6 (299th of 365) vs 109.8 (250th of 365)","No notable injuries reported for either team entering the opener"],"time":"8:00 PM ET"},
+    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Neutral — Alabama's raw PD/g edge (+8.5 vs Sam Houston's +7.2) can't count for Alabama because the Tide's best player, G Aden Holloway, is out; it isn't credited to Sam Houston either since nothing in Sam Houston's own numbers drives it.","Neutral — both teams open the season fully rested.","Neutral — Sam Houston's trip from Huntsville, TX to Tuscaloosa is a standard one-game road trip.","Favors Sam Houston (weighted x2 — multi-player cluster) — Alabama is missing star G Aden Holloway (suspended) and freshman G Diaz (out), with G Anderson (elbow) doubtful: a 2+ rotation-player cluster.","Neutral — season opener; no current-season recent-form data, and the 'star out' discount already covers Holloway's absence.","Neutral — opening night, no rivalry or revenge angle identified.","Neutral — no verified elite home-crowd edge beyond an ordinary SEC season-opener atmosphere at Coleman Coliseum.","Neutral — no line movement data could be verified for this game.","Neutral — no specific stylistic mismatch could be verified between the two rosters."],"altReturn":null,"altSpreadReturn":null,"away":"Sam Houston Bearkats","awayMoneyline":5000,"awayPDpg":7.2,"awayRank":null,"awayScore":null,"awaySpread":26.5,"awaySpreadOdds":-108,"confidence":"skip","correct":null,"home":"Alabama Crimson Tide","homeMoneyline":-10000,"homePDpg":8.5,"homeRank":20,"homeScore":null,"homeSpread":-26.5,"homeSpreadOdds":-110,"offGap":14.84,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +7.2 vs +8.5 (2025-26 final; 0 GP in 2026-27)","Off eff (ORtg) 115.5 (62nd of 365) vs 122.1 (8th of 365) — offense pct gap 14.8 (Sports Reference)","Def eff (DRtg) 105.5 (142nd of 365) vs 110.7 (280th of 365)","Alabama: star G Aden Holloway out (suspension); G Diaz out; G Anderson doubtful (elbow) — injury cluster"],"time":"7:30 PM ET"}
   ]
 }
