@@ -28,6 +28,8 @@ RULE_NAMES = {
     27: "Fade a road-upset winner vs. a weaker team, rested, after winning by 10+ as less than a 7-pt dog (on trial)",
     28: "Fade a road-upset winner now home after winning by 1-9 as less than a 7-pt dog (on trial)",
     29: "Fade a road-upset winner now on the road vs. a weaker team after winning by 1-9 (on trial)",
+    33: "Back a team after a 30+ point win, now home vs. a stronger team (on trial)",
+    34: "Back a team after a 30+ point road win where it wasn't a 7+ pt favorite (on trial)",
 }
 # Backtest rate, then the record replayed on six seasons none of the rules
 # were found on: 2016-17 through 2019-20, 2023-24 and 2024-25.
@@ -47,6 +49,8 @@ RULE_BACKTEST = {
     27: "62.5% ATS, n=64 (40-24) (2022-23 to 2025-26); on trial",
     28: "62.4% ATS, n=101 (63-38) (2022-23 to 2025-26); on trial",
     29: "62.3% ATS, n=69 (43-26) (2022-23 to 2025-26); on trial",
+    33: "66.0% ATS, n=47 (31-16, 2022-23 to 2025-26), covered every season; on trial",
+    34: "63.2% ATS, n=57 (36-21, 2022-23 to 2025-26), covered every season; on trial",
 }
 # A pick two or more rules agree on ("stacked"), replayed on the same six
 # unseen seasons: one-rule picks went 57.4% (269-200).

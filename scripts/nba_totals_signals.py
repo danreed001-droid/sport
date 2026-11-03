@@ -11,6 +11,8 @@ lib/nba_totals_rules.py:
      the better season win % going in, 5+ games played) and now faces a
      better-record team: 4 lost by 1-9; 5 lost by 1-9 and rested; 6 now on the
      road; 7 on the road and rested; 8 on the road after losing by 10+.
+  9-15. UNDER (on trial): the home team won its last game by 20+ ON THE ROAD
+     (ROAD_BLOWOUT has each one's extra conditions).
 
 If an over rule and an under rule both fire, the game gets no pick.
 
@@ -48,7 +50,7 @@ SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsWatch")
 # Bumped whenever rules are added, so --backfill rechecks past games with them.
-BACKFILL_VERSION = 4
+BACKFILL_VERSION = 5
 
 
 def season_start(date_str):
@@ -83,9 +85,9 @@ def team_log(rows, team, since, before):
         except (TypeError, ValueError):
             continue
         if _same_team(team, r["Home_Team"]):
-            out.append({"date": r["Date"], "home": True, "opp": r["Away_Team"], "pf": h, "pa": a})
+            out.append({"date": r["Date"], "home": True, "opp": r["Away_Team"], "pf": h, "pa": a, "id": r.get("Game_ID")})
         elif _same_team(team, r["Away_Team"]):
-            out.append({"date": r["Date"], "home": False, "opp": r["Home_Team"], "pf": a, "pa": h})
+            out.append({"date": r["Date"], "home": False, "opp": r["Home_Team"], "pf": a, "pa": h, "id": r.get("Game_ID")})
     return sorted(out, key=lambda x: x["date"])
 
 
@@ -112,6 +114,40 @@ def home_upset_loss(rows, team, opp_now, date_str, since):
     if theirs is None or not theirs > mine:
         return None
     return {"last": last, "margin": last["pa"] - last["pf"], "rested": gap > 1, "record": (mine, theirs)}
+
+
+def home_after_road_blowout(rows, home_team, opp_now, date_str, since):
+    """Rules 9-15: the HOME team's last game (within 10 days) was a 20+ point
+    road win. Returns the facts the rules use, or None. Records are season win
+    % going in (games between equal records excluded, as backtested); the
+    win's spread is the archived closing line (data/raw/nba_lines.csv)."""
+    import nba_stats_signals as NS  # its lines lookup (also patched by replays)
+    log = team_log(rows, home_team, since, date_str)
+    if not log:
+        return None
+    last = log[-1]
+    gap = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days
+    if gap > OT_LOOKBACK_DAYS or last["home"] or last["pf"] - last["pa"] < 20:
+        return None
+    mine, theirs = win_pct(log), win_pct(team_log(rows, opp_now, since, date_str))
+    if mine is None or theirs is None or mine == theirs:
+        return None
+    hs = NS.home_spread_of(last["id"]) if last.get("id") else None
+    my_spread = -hs if hs is not None else None  # it was the road team
+    return {"last": last, "margin": last["pf"] - last["pa"], "rested": gap > 1, "weaker": theirs < mine,
+            "notbig": my_spread is None or my_spread > -7, "spread": my_spread}
+
+
+# Rules 9-15 conditions on (vs weaker team?, rested?, won by 20-29?, not a 7+ favorite in that win?).
+ROAD_BLOWOUT = {
+    9: {"weaker": True, "rested": True, "notbig": True},
+    10: {"weaker": True, "notbig": True},
+    11: {"weaker": True, "small": True, "notbig": True},
+    12: {"small": True, "notbig": True},
+    13: {"small": True},
+    14: {"weaker": True},
+    15: {"weaker": True, "small": True},
+}
 
 
 def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=None, watch=None):
@@ -152,6 +188,16 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=
                 rules.append({"rule": 7, "detail": f"{lost}; {vs}, rested."})
             if u["margin"] >= 10:
                 rules.append({"rule": 8, "detail": f"{lost} (10+); {vs}."})
+    b = home_after_road_blowout(rows, g["home"], g["away"], date_str, since)
+    if b:
+        facts = {"weaker": b["weaker"], "rested": b["rested"], "small": b["margin"] <= 29, "notbig": b["notbig"]}
+        line = f" as a {b['spread']:+g}" if b["spread"] is not None else ""
+        why = (f"{g['home']} won by {b['margin']:g} on the road at {b['last']['opp']} on {b['last']['date']}{line}; "
+               f"now home vs. {'a worse' if b['weaker'] else 'a better'}-record {g['away']}"
+               f"{', rested' if b['rested'] else ', on a back-to-back'}.")
+        for n, cond in ROAD_BLOWOUT.items():
+            if all(facts[k] == v for k, v in cond.items()):
+                rules.append({"rule": n, "detail": why})
     for r in rules:
         r["name"], r["backtest"] = RULE_NAMES[r["rule"]], RULE_BACKTEST[r["rule"]]
     return rules

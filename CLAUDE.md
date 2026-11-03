@@ -59,7 +59,8 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   tonight (ESPN injury report "Out", `lib/nba_absence.py`); rules 4-8 UNDER
   after a team lost at home to a worse-record team and now faces a
   better-record one (4 lost by 1-9, 5 that and rested, 6 now on the road, 7
-  that and rested, 8 road after losing by 10+). An over and an under rule on
+  that and rested, 8 road after losing by 10+); rules 9-15 UNDER (on trial)
+  when the home team is back from a 20+ point road win (`ROAD_BLOWOUT`). An over and an under rule on
   the same game cancel out (no pick). Adding rules: bump BACKFILL_VERSION in
   `nba_totals_signals.py` and rerun `--backfill` so past games are rechecked. It writes `totalsLine` (refreshed from
   ESPN's pickcenter every run until tip-off, then frozen), `totalsFavors`,
@@ -77,8 +78,11 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   back-to-back after a home loss to a worse-record team (games between equal
   records excluded, as in the backtest). Rules 20-29 (on trial) fade a team
   coming off a road upset win (`ROAD_UPSET` in `nba_stats_signals.py`; the
-  win's spread comes from `data/raw/nba_lines.csv`). Overlapping slices of one
-  situation (NBA Stats 20-29, NBA Totals 4-8) are one "family": several firing
+  win's spread comes from `data/raw/nba_lines.csv`). Rules 33-34 (on trial)
+  back a team after a 30+ point win (33 now home vs. a stronger team, 34 a
+  road win where it wasn't a 7+ favorite); 30-32 were tried and removed.
+  Overlapping slices of one situation (NBA Stats 20-29, NBA Totals 4-8 and
+  9-15) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).
 - `.github/workflows/nba-gametime.yml` re-runs only `nba_stats_signals.py` and

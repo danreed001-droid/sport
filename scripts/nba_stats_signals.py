@@ -22,6 +22,9 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   record, the home team 5+ games played), sliced by home/road now, the next
   opponent's record, rest, the win's margin and whether it was a 7+ point
   underdog in that win (spread from data/raw/nba_lines.csv) -- see ROAD_UPSET.
+  Backs, on trial: 33 home vs. a better-record team after a 30+ point win;
+  34 after a 30+ point ROAD win where it wasn't a 7+ point favorite.
+  (30-32 were tried and removed; numbers aren't reused.)
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -101,7 +104,8 @@ ALLOWED_REST = {
     19: {"b2b"},
     **{n: ({"1", "2+"} if c.get("rested") else {"b2b", "1", "2+"}) for n, c in {
         20: {"rested": True}, 21: {}, 22: {"rested": True}, 23: {}, 24: {"rested": True},
-        25: {}, 26: {"rested": True}, 27: {"rested": True}, 28: {}, 29: {}}.items()},
+        25: {}, 26: {"rested": True}, 27: {"rested": True}, 28: {}, 29: {},
+        33: {}, 34: {}}.items()},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
@@ -489,6 +493,18 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                                               f"{last['team_score']:g}-{last['opp_score']:g} {dog} last game; now {where} vs. "
                                               f"{'a better' if opp_stronger else 'a worse'}-record team"
                                               f"{', rested' if facts['rested'] else ', on a back-to-back'} -- {RULE_BACKTEST[n]}."))
+
+        big_margin = last["team_score"] - last["opp_score"]
+        if big_margin >= 30 and team_pct != opp_pct:  # rules 33-34: back a team after a 30+ point win
+            hs = home_spread_of(last["event_id"])
+            my_spread = (hs if last["is_home"] else -hs) if hs is not None else None
+            score = f"{last['team_score']:g}-{last['opp_score']:g}"
+            if is_home and opp_stronger:
+                picks.append((team, 33, f"Backing {team}: won by {big_margin:g} last game ({score} vs {last['opp']}), now home "
+                                     f"vs. a better-record team -- {RULE_BACKTEST[33]}."))
+            if not last["is_home"] and (my_spread is None or my_spread > -7):
+                picks.append((team, 34, f"Backing {team}: won by {big_margin:g} on the road last game ({score} at {last['opp']})"
+                                     f"{f' as a {my_spread:+g}' if my_spread is not None else ''} -- {RULE_BACKTEST[34]}."))
 
         if not is_home and last["is_home"] and not last["won"] and team_pct != opp_pct:  # as backtested: equal records excluded
             tw, tl = season_record(games, last["date"])

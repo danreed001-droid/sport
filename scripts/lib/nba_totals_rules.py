@@ -19,14 +19,28 @@ RULE_NAMES = {
     6: "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
     7: "Rule 6, and the team is rested (on trial)",
     8: "Rule 6, after losing that home game by 10+ (on trial)",
+    9: "Under when the home team is back from a 20+ road win, now vs. a weaker team and rested, and wasn't a 7+ pt favorite in that win (on trial)",
+    10: "Under when the home team is back from a 20+ road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)",
+    11: "Under when the home team is back from a 20-29 point road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)",
+    12: "Under when the home team is back from a 20-29 point road win and wasn't a 7+ pt favorite in it (on trial)",
+    13: "Under when the home team is back from a 20-29 point road win (on trial)",
+    14: "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
+    15: "Under when the home team is back from a 20-29 point road win, now vs. a weaker team (on trial)",
 }
 RULE_BACKTEST = {
-    3: "65.2% overs, 43-23 (2022-23 to 2025-26); over in 3 of 4 seasons, small sample",
-    4: "63.6% unders, 89-51 (2022-23 to 2025-26); found on 2022-24 (52-32), held on 2024-26 (37-19); every season",
+    3: "65.2% overs, 43-23 (2022-23 to now); over in 3 of 4 seasons, small sample",
+    4: "63.6% unders, 89-51 (2022-23 to now); found on 2022-24 (52-32), held on 2024-26 (37-19); every season",
     5: "63.8% unders, 74-42 (2022-23 to 2025-26); found on 2022-24 (45-27), held on 2024-26 (29-15); every season",
     6: "66.3% unders, 69-35 (2022-23 to 2025-26); under every season",
     7: "65.2% unders, 58-31 (2022-23 to 2025-26); under every season",
     8: "71.4% unders, 30-12 (2022-23 to 2025-26); under every season, small sample",
+    9: "67.4% unders, 29-14 (2022-23 to now); under every season",
+    10: "66.0% unders, 35-18 (2022-23 to now); under every season",
+    11: "64.3% unders, 27-15 (2022-23 to now); under every season",
+    12: "63.5% unders, 40-23 (2022-23 to now); under every season",
+    13: "63.4% unders, 59-34 (2022-23 to now); under every season",
+    14: "63.3% unders, 57-33 (2022-23 to now); under every season",
+    15: "62.5% unders, 40-24 (2022-23 to now); under every season",
 }
 OVER_RULES = {3}
 OT_LOOKBACK_DAYS = 10
@@ -34,7 +48,7 @@ OT_LOOKBACK_DAYS = 10
 
 # Rules 4-8 are overlapping slices of one situation (a home loss to a
 # worse-record team): several on one game count as one family, not "stacked".
-FAMILY = {n: "home-upset-loss" for n in range(4, 9)}
+FAMILY = {**{n: "home-upset-loss" for n in range(4, 9)}, **{n: "home-after-road-blowout" for n in range(9, 16)}}
 
 
 def families(nums):
