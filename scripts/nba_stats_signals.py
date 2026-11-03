@@ -18,6 +18,10 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   (ESPN's injury report says "Out"; checked until tip-off, then frozen);
   19 (on trial) on the road on a back-to-back after losing at home to a
   worse-record team.
+  Fades, on trial: 20-29 a team coming off a ROAD UPSET WIN (it had the worse
+  record, the home team 5+ games played), sliced by home/road now, the next
+  opponent's record, rest, the win's margin and whether it was a 7+ point
+  underdog in that win (spread from data/raw/nba_lines.csv) -- see ROAD_UPSET.
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -56,12 +60,48 @@ from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 POINTS_CACHE = os.path.join(REPO_ROOT, "data", "raw", "nba_player_points.json")
+LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
+
+# Rules 20-29: fade a team after a road upset win. Each is a set of conditions
+# on (now home?, next opponent stronger?, rested?, won by 1-9?, not a 7+ point
+# underdog in that win?); None = either. Backtested 2022-23 to 2025-26.
+ROAD_UPSET = {
+    20: {"home": True, "stronger": True, "rested": True, "close": True, "notbig": True},
+    21: {"home": True, "stronger": True, "close": True, "notbig": True},
+    22: {"home": False, "stronger": False, "rested": True, "close": True},
+    23: {"home": True, "stronger": False, "close": False},
+    24: {"home": True, "rested": True, "close": True, "notbig": True},
+    25: {"stronger": False, "close": False, "notbig": True},
+    26: {"home": False, "stronger": False, "rested": True},
+    27: {"stronger": False, "rested": True, "close": False, "notbig": True},
+    28: {"home": True, "close": True, "notbig": True},
+    29: {"home": False, "stronger": False, "close": True},
+}
+_HOME_SPREAD = None
+
+
+def home_spread_of(event_id):
+    """The home team's closing spread for a finished game (data/raw/nba_lines.csv), or None."""
+    global _HOME_SPREAD
+    if _HOME_SPREAD is None:
+        _HOME_SPREAD = {}
+        if os.path.exists(LINES_CSV):
+            with open(LINES_CSV, encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    try:
+                        _HOME_SPREAD[r["game_id"]] = float(r["spread_close"])
+                    except (TypeError, ValueError):
+                        pass
+    return _HOME_SPREAD.get(str(event_id))
 # Rest days (for the team the rule is about) on which each rule backtested
 # at 62%+ ATS: "b2b" = played yesterday, "1" = one day off, "2+" = two or more.
 ALLOWED_REST = {
     2: {"b2b", "1", "2+"}, 9: {"b2b"}, 14: {"b2b"}, 16: {"b2b"}, 17: {"b2b", "1", "2+"},
     18: {"b2b", "1", "2+"},
     19: {"b2b"},
+    **{n: ({"1", "2+"} if c.get("rested") else {"b2b", "1", "2+"}) for n, c in {
+        20: {"rested": True}, 21: {}, 22: {"rested": True}, 23: {}, 24: {"rested": True},
+        25: {}, 26: {"rested": True}, 27: {"rested": True}, 28: {}, 29: {}}.items()},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
@@ -417,6 +457,26 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 prev = next((r for r in tonight.get("prior") or [] if r.get("rule") == 18), None)
                 if prev:
                     picks.append((team, 18, prev.get("detail", "")))
+
+        if not last["is_home"] and last["won"] and team_pct != opp_pct:
+            tw, tl = season_record(games, last["date"])
+            ow, ol = season_record([g for g in by_team.get(last["opp"], []) if g["date"] >= season0], last["date"])
+            if tw + tl and ow + ol >= 5 and tw / (tw + tl) < ow / (ow + ol):
+                hs = home_spread_of(last["event_id"])
+                my_spread = -hs if hs is not None else None  # it was the road team
+                margin = last["team_score"] - last["opp_score"]
+                facts = {"home": is_home, "stronger": opp_stronger,
+                         "rested": (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days > 1,
+                         "close": margin <= 9, "notbig": my_spread is None or my_spread < 7}
+                where = "home" if is_home else "on the road"
+                dog = f"as a {my_spread:+g} underdog" if my_spread is not None and my_spread > 0 else (
+                      f"as a {my_spread:+g} favorite" if my_spread is not None else "")
+                for n, cond in ROAD_UPSET.items():
+                    if all(facts[k] == v for k, v in cond.items()):
+                        picks.append((opp, n, f"Fading {team}: won at better-record {last['opp']} "
+                                              f"{last['team_score']:g}-{last['opp_score']:g} {dog} last game; now {where} vs. "
+                                              f"{'a better' if opp_stronger else 'a worse'}-record team"
+                                              f"{', rested' if facts['rested'] else ', on a back-to-back'} -- {RULE_BACKTEST[n]}."))
 
         if not is_home and last["is_home"] and not last["won"] and team_pct != opp_pct:  # as backtested: equal records excluded
             tw, tl = season_record(games, last["date"])

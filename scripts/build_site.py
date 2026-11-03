@@ -19,6 +19,7 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import grading_patterns, manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
+from lib.nba_stats_rules import families as nba_families  # noqa: E402
 from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules  # noqa: E402
 from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, team_for  # noqa: E402
 
@@ -135,7 +136,8 @@ def build():
                     play_rules = None
                     if rule_src and g.get(rule_src[0]):
                         nums = [str(r.get("rule")) for r in g[rule_src[0]]]
-                        tier = ("Rules " if len(nums) > 1 else "Rule ") + " + ".join(nums) + (" · stacked" if len(nums) > 1 else "")
+                        stacked = (nba_families([r.get("rule") for r in g[rule_src[0]]]) if who == "stats" else len(nums)) > 1
+                        tier = ("Rules " if len(nums) > 1 else "Rule ") + " + ".join(nums) + (" · stacked" if stacked else "")
                         play_rules = [{"n": r.get("rule"), "name": rule_src[1].get(r.get("rule"), r.get("name", "")),
                                        "bt": rule_src[2].get(r.get("rule"), r.get("backtest", ""))} for r in g[rule_src[0]]]
                     ln = line_for(g, side)
@@ -179,7 +181,7 @@ def build():
             for rule in g.get("statsRules") or []:
                 if key and rule.get("rule") in rule_records:
                     rule_records[rule["rule"]][key] += 1
-    stats_stacked = {**stacked_record(all_docs.get("nba", []), "nba", "statsFavors", "statsRules"),
+    stats_stacked = {**stacked_record(all_docs.get("nba", []), "nba", "statsFavors", "statsRules", nba_families),
                      "backtest": STACKED_BACKTEST}
     stats_rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], **rule_records[n]}
                    for n in sorted(RULE_NAMES)]
@@ -321,7 +323,7 @@ def nba_totals_record(docs):
             for n in nums:
                 if n in rules:
                     rules[n][key] += 1
-            if len(nums) > 1:
+            if nba_totals_rules.families(nums) > 1:
                 both[key] += 1
             allp[key] += 1
             allp["profit"] += g.get("totalsReturn") or 0
@@ -334,12 +336,14 @@ def nba_totals_record(docs):
             "all": {**allp, "both": both}}
 
 
-def stacked_record(docs, sport, favors, rules):
-    """This season's record on picks two or more rules agreed on."""
+def stacked_record(docs, sport, favors, rules, families=len):
+    """This season's record on picks two or more rules agreed on (rule
+    families for NBA Stats: overlapping slices of one situation count once)."""
     rec = {"w": 0, "l": 0, "p": 0}
     for _, doc in docs:
         for g in doc.get("games", []):
-            if not g.get(favors) or len(g.get(rules) or []) < 2 or not is_final(doc, g):
+            nums = [r.get("rule") for r in g.get(rules) or []]
+            if not g.get(favors) or families(nums) < 2 or not is_final(doc, g):
                 continue
             key = {"cover": "w", "miss": "l", "push": "p"}.get(grade(sport, g, side_of(g, g[favors]))["ats"]["result"])
             if key:

@@ -35,3 +35,12 @@ OVER_RULES = {3}
 # -110 or better.
 CLOSE_SPREAD = 3.0
 OT_LOOKBACK_DAYS = 10
+
+
+# Rules 4-8 are overlapping slices of one situation (a home loss to a
+# worse-record team): several on one game count as one family, not "stacked".
+FAMILY = {n: "home-upset-loss" for n in range(4, 9)}
+
+
+def families(nums):
+    return len({FAMILY.get(n, n) for n in nums})
