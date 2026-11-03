@@ -185,6 +185,10 @@ def build():
                      "backtest": STACKED_BACKTEST}
     stats_rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], **rule_records[n]}
                    for n in sorted(RULE_NAMES)]
+    # NBA Stats picks (or rules on a pick) added after the fact by
+    # `nba_stats_signals.py --backfill`, so the page can say so.
+    stats_backfilled = sum(1 for _, doc in all_docs.get("nba", []) for g in doc.get("games", [])
+                           if g.get("statsFavors") and any(r.get("backfill") for r in g.get("statsRules") or []))
     nfl_records = {n: {"w": 0, "l": 0, "p": 0} for n in nfl_stats_rules.RULE_NAMES}
     for date_str, doc in all_docs.get("nfl", []):
         for g in doc.get("games", []):
@@ -265,6 +269,7 @@ def build():
         "sportLabels": {k: cfg["label"] for k, cfg in sports.SPORTS.items()},
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
+        "statsBackfilled": stats_backfilled,
         "nflStatsRules": nfl_rules,
         "ncaabStatsRules": ncaab_rules,
         "health": read_health(),

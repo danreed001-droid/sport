@@ -83,7 +83,11 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   back a team after a 30+ point win (33 now home vs. a stronger team, 34 a
   road win where it wasn't a 7+ favorite); 30-32 were tried and removed.
   Rules 35-40 (on trial) play a team after a 20+ point loss (`BLOWOUT_LOSS`;
-  38 fades, the rest back), one family.
+  38 fades, the rest back), one family. `nba_stats_signals.py --backfill
+  RULE ...` applies just those rules to this season's finished games (rules
+  marked `"backfill": true`, a pick made only by backfill `statsBackfill:
+  true`); a game already picked the other way is left alone. 38-39 were
+  backfilled on 2026-11-03 (4 games).
   Overlapping slices of one situation (NBA Stats 20-29, NBA Totals 4-8 and
   9-15) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`

@@ -3,7 +3,7 @@
   "weekday": "Saturday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-03T15:18:36.278083+00:00",
+  "scoredAt": "2026-11-03T15:23:54.062996+00:00",
   "generatedAt": "2026-10-31T15:21:31Z",
   "games": [
     {
@@ -420,7 +420,23 @@
         "Houston played at home Oct. 30 (vs. Mavericks) and is on the second night of a back-to-back; Oklahoma City is rested"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 6,
+      "statsFavors": "Oklahoma City Thunder",
+      "statsRules": [
+        {
+          "rule": 39,
+          "name": "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
+          "backtest": "62.5% ATS, n=48 (30-18, 2022-23 to now), every season; on trial",
+          "detail": "Backing Oklahoma City Thunder: lost by 24 on the road last game (96-120 vs Dallas Mavericks) as a -4.5; now on the road vs. a better-record team, rested -- 62.5% ATS, n=48 (30-18, 2022-23 to now), every season; on trial.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 39: Backing Oklahoma City Thunder: lost by 24 on the road last game (96-120 vs Dallas Mavericks) as a -4.5; now on the road vs. a better-record team, rested -- 62.5% ATS, n=48 (30-18, 2022-23 to now), every season; on trial.",
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     }
   ]
 }

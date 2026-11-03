@@ -46,6 +46,9 @@ free throws/rebounds/starters/player assists/threes for completed games are cach
 so each run only fetches games it hasn't seen.
 
 Usage: python scripts/nba_stats_signals.py [YYYY-MM-DD ...]   (default: today ET)
+       python scripts/nba_stats_signals.py --backfill RULE [RULE ...] [-- YYYY-MM-DD ...]
+         applies only those rules to finished past games (default: this season);
+         see backfill().
 """
 import csv
 import json
@@ -395,7 +398,7 @@ class BoxCache:
                 json.dump(self.data, f, separators=(",", ":"))
 
 
-def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonight=None):
+def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonight=None, only_rules=None):
     """Returns (pick_team, check_text) or None. Collects every rule that
     fires for either team; skips the game if they disagree on a side.
     tonight: {"state": ESPN game state, "out": team -> set of player ids out
@@ -551,6 +554,8 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
         gap = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days - 1
         rest = "b2b" if gap <= 0 else ("1" if gap == 1 else "2+")
         picks[start:] = [pk for pk in picks[start:] if rest in ALLOWED_REST[pk[1]]]
+    if only_rules is not None:  # backfill: just these rules, as if no other rule existed
+        picks = [p for p in picks if p[1] in only_rules]
     sides = {p for p, _, _ in picks}
     if len(sides) != 1:
         return None
@@ -678,8 +683,62 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
     print(f"{date_str}: {picks} NBA Stats pick(s).")
 
 
+def backfill(session, points, by_team, q_cache, rules, dates):
+    """Apply only `rules` to finished games on past slates (this season by
+    default), from the games before each one -- what the rules would have
+    picked live. A game with no NBA Stats pick gets one; a game whose pick
+    already agrees gets the rule added; a game picked the other way is left
+    alone (live, the disagreement would have meant no pick). Backfilled rules
+    carry "backfill": true, and a pick that came only from backfill gets
+    statsBackfill: true. Graded by score_slate.py like any other pick."""
+    today = today_et_str()
+    added = 0
+    for date_str in dates:
+        if date_str >= today:
+            continue
+        doc = store.read_doc("nba", date_str)
+        if doc is None:
+            continue
+        changed = False
+        for g in doc.get("games", []):
+            if not isinstance(g.get("awayScore"), (int, float)):
+                continue
+            r = evaluate_game(session, points, by_team, q_cache, date_str, g["home"], g["away"], None, set(rules))
+            if not r:
+                continue
+            pick, new = r
+            have = {x.get("rule") for x in g.get("statsRules") or []}
+            new = [dict(x, backfill=True) for x in new if x["rule"] not in have]
+            if not new:
+                continue
+            if g.get("statsFavors") and g["statsFavors"] != pick:
+                print(f"  {date_str} {g['away']} @ {g['home']}: rules {[x['rule'] for x in new]} pick {pick}, "
+                      f"but the existing pick is {g['statsFavors']} -- left alone")
+                continue
+            if not g.get("statsFavors"):
+                g["statsFavors"], g["statsRules"], g["statsBackfill"] = pick, [], True
+            g["statsRules"] = sorted(g["statsRules"] + new, key=lambda x: x["rule"])
+            g["statsCheck"] = " ".join(f"Rule {x['rule']}: {x['detail']}" for x in g["statsRules"])
+            for k in ("statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn"):
+                g.pop(k, None)  # regraded by score_slate.py
+            changed = True
+            added += 1
+            print(f"  {date_str} {g['away']} @ {g['home']}: {pick} -- backfilled rules {[x['rule'] for x in new]}")
+        if changed:
+            store.write_doc("nba", date_str, doc)
+    print(f"backfilled {added} game(s) with rules {sorted(rules)}.")
+
+
 def main():
-    dates = sys.argv[1:] or [today_et_str()]
+    backfill_rules = None
+    args = sys.argv[1:]
+    if args[:1] == ["--backfill"]:
+        # python scripts/nba_stats_signals.py --backfill 38 39 [-- YYYY-MM-DD ...]
+        rest = args[1:]
+        dates = rest[rest.index("--") + 1:] if "--" in rest else []
+        backfill_rules = [int(x) for x in (rest[:rest.index("--")] if "--" in rest else rest)]
+        args = dates
+    dates = args or [today_et_str()]
     session = espn.make_session()
     points = BoxCache(session)
     # The backtests are regular-season only, and the scores archive also
@@ -698,6 +757,12 @@ def main():
         # A failed lookup while sorting regular-season games could drop a
         # team's last game, so it protects every existing pick this run.
         setup_failed = FAILS[0] > 0
+        if backfill_rules is not None:
+            if not args:
+                s0 = season_start(today_et_str())
+                dates = [d for d, _ in store.list_docs("nba") if d >= s0]
+            backfill(session, points, by_team, q_cache, backfill_rules, dates)
+            return
         for date_str in dates:
             run_for_date(session, points, by_team, q_cache, date_str, setup_failed)
     finally:

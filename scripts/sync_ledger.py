@@ -56,7 +56,7 @@ REPO_OWNED_GAME_FIELDS = ("statsFavors", "statsCheck", "statsRules", "statsCorre
                           "nflStatsFavors", "nflStatsCheck", "nflStatsRules", "nflStatsCorrect", "nflStatsReturn",
                           "nflStatsCover", "nflStatsSpreadReturn",
                           "ncaabStatsFavors", "ncaabStatsCheck", "ncaabStatsRules", "ncaabStatsCorrect", "ncaabStatsReturn",
-                          "ncaabStatsCover", "ncaabStatsSpreadReturn",
+                          "ncaabStatsCover", "ncaabStatsSpreadReturn", "statsBackfill",
                           "totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsCorrect", "totalsReturn", "totalsBackfill",
                           "totalsWatch", "statsWatch")
 

@@ -981,7 +981,7 @@ footer b{color:var(--ink);}
     return '<details class="why rules-tbl"><summary style="color:var(--stats-ink)">NBA Stats rules — backtest and this season</summary>'
       + '<div class="tblwrap"><table><thead><tr><th>#</th><th>Rule</th><th>Backtest</th><th>This season</th></tr></thead><tbody>'
       + rules.map(function(r){ var n = r.w+r.l+r.p; return '<tr><td class="mono">'+r.rule+'</td><td>'+esc(r.name)+'</td><td class="mono">'+esc(r.backtest)+'</td><td class="mono">'+(n?r.w+'-'+r.l+(r.p?'-'+r.p:''):'—')+'</td></tr>'; }).join('') + stackedRow(DATA.statsStacked)
-      + '</tbody></table></div></details>';
+      + '</tbody></table></div>'+(DATA.statsBackfilled ? '<p class="note" style="margin:8px 0 0">This season includes '+DATA.statsBackfilled+' pick'+(DATA.statsBackfilled===1?'':'s')+' backfilled after rules were added: the rule applied to games already played, from the games before each one.</p>' : '')+'</details>';
   }
   function manualLabel(fields){
     var parts = [];

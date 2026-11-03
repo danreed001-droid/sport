@@ -3,7 +3,7 @@
   "weekday": "Sunday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-03T15:18:36.279648+00:00",
+  "scoredAt": "2026-11-03T15:23:54.064050+00:00",
   "generatedAt": "2026-11-01T16:19:21Z",
   "games": [
     {
@@ -106,7 +106,23 @@
         "BKN: Egor Demin and Mikel Brown Jr. both out"
       ],
       "time": "5:00 PM ET",
-      "totalsBackfill": 6
+      "totalsBackfill": 6,
+      "statsFavors": "Brooklyn Nets",
+      "statsRules": [
+        {
+          "rule": 38,
+          "name": "Fade a home team vs. a weaker team, rested, after a 20-29 point road loss (on trial)",
+          "backtest": "63.8% ATS, n=47 (30-17, 2022-23 to now), every season; on trial",
+          "detail": "Fading Indiana Pacers: lost by 20 on the road last game (125-145 vs Miami Heat) as a +8.5; now home vs. a worse-record team, rested -- 63.8% ATS, n=47 (30-17, 2022-23 to now), every season; on trial.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 38: Fading Indiana Pacers: lost by 20 on the road last game (125-145 vs Miami Heat) as a +8.5; now home vs. a worse-record team, rested -- 63.8% ATS, n=47 (30-17, 2022-23 to now), every season; on trial.",
+      "statsCorrect": true,
+      "statsReturn": 145.0,
+      "statsCover": true,
+      "statsSpreadReturn": 86.96
     },
     {
       "altCategoryTally": "0-0",
@@ -170,7 +186,23 @@
       ],
       "totalsCheck": "Rule 3: Golden State Warriors (home) won its last game on 2026-10-30 and Stephen Curry (31) is out tonight. (backfilled from the DraftKings closing line)",
       "totalsCorrect": true,
-      "totalsReturn": 90.91
+      "totalsReturn": 90.91,
+      "statsFavors": "LA Clippers",
+      "statsRules": [
+        {
+          "rule": 39,
+          "name": "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
+          "backtest": "62.5% ATS, n=48 (30-18, 2022-23 to now), every season; on trial",
+          "detail": "Backing LA Clippers: lost by 26 on the road last game (101-127 vs Minnesota Timberwolves) as a +6.5; now on the road vs. a better-record team, rested -- 62.5% ATS, n=48 (30-18, 2022-23 to now), every season; on trial.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 39: Backing LA Clippers: lost by 26 on the road last game (101-127 vs Minnesota Timberwolves) as a +6.5; now on the road vs. a better-record team, rested -- 62.5% ATS, n=48 (30-18, 2022-23 to now), every season; on trial.",
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "0-3",
