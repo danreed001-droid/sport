@@ -106,6 +106,9 @@ TEAM_ALIASES = {
     "bayern munchen": "bayern munich", "fc bayern munich": "bayern munich",
     "atletico mineiro": "atletico mg", "borussia monchengladbach": "monchengladbach",
     "rennes": "stade rennais",
+    # NBA: slates sometimes say "LA Lakers"; ESPN says "Los Angeles Lakers"
+    # (and "LA Clippers"), so both LA spellings fold to the long form.
+    "la lakers": "los angeles lakers", "la clippers": "los angeles clippers",
 }
 _FILLER = {"fc", "cf", "sc", "afc", "cd", "club", "de", "the", "ac", "ssc", "as", "sv", "fk", "sk", "vfb", "bsc"}
 
@@ -228,6 +231,25 @@ def grade_two_way_game(g, away_score, home_score, big_dog_limit=10):
         g[return_field] = graded["pickReturn"]
         g[cover_field] = graded["pickCover"]
         g[spread_return_field] = graded["pickSpreadReturn"]
+    grade_totals(g, away_score, home_score)
+
+
+def grade_totals(g, away_score, home_score):
+    """NBA Totals (scripts/nba_totals_signals.py): an Over/Under pick on the
+    game total, graded against the stored totalsLine at -110. totalsCorrect is
+    True/False, or None on a push; totalsReturn is the $100 result."""
+    if not g.get("totalsFavors") or not isinstance(g.get("totalsLine"), (int, float)):
+        return
+    if away_score is None or home_score is None:
+        g["totalsCorrect"] = g["totalsReturn"] = None
+        return
+    pts = away_score + home_score
+    if pts == g["totalsLine"]:
+        g["totalsCorrect"], g["totalsReturn"] = None, 0.0
+        return
+    won = (pts < g["totalsLine"]) if g["totalsFavors"].lower() == "under" else (pts > g["totalsLine"])
+    g["totalsCorrect"] = won
+    g["totalsReturn"] = round(10000 / 110, 2) if won else -100.0
 
 
 def match_slate(games, scores_for_date, age_days):
@@ -266,7 +288,8 @@ def main(sport_key):
     def needs_stats_grade(doc):
         return any((g.get("statsFavors") and "statsCorrect" not in g)
                    or (g.get("nflStatsFavors") and "nflStatsCorrect" not in g)
-                   or (g.get("ncaabStatsFavors") and "ncaabStatsCorrect" not in g) for g in doc.get("games", []))
+                   or (g.get("ncaabStatsFavors") and "ncaabStatsCorrect" not in g)
+                   or (g.get("totalsFavors") and "totalsCorrect" not in g) for g in doc.get("games", []))
 
     pending = sorted(
         [(d, doc) for d, doc in docs if (not doc.get("scored") or needs_stats_grade(doc)) and d < today],

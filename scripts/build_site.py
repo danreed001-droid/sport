@@ -19,7 +19,7 @@ from datetime import datetime, timezone
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import grading_patterns, manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
-from lib import ncaab_stats_rules, nfl_stats_rules  # noqa: E402
+from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules  # noqa: E402
 from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
@@ -32,6 +32,7 @@ SLATE_FIELDS = [
     "ncaabStatsFavors", "ncaabStatsCheck", "ncaabStatsRules",
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore", "manualFields",
+    "totalsLine", "totalsFavors", "totalsCheck", "totalsRules",
 ]
 
 
@@ -207,6 +208,8 @@ def build():
     ncaab_rules = [{"rule": n, "name": ncaab_stats_rules.RULE_NAMES[n], "backtest": ncaab_stats_rules.RULE_BACKTEST[n], **ncaab_records[n]}
                    for n in sorted(ncaab_stats_rules.RULE_NAMES)]
 
+    nba_totals = nba_totals_record(all_docs.get("nba", []))
+
     slate_date = max((d for docs in all_docs.values() for d, _ in docs), default=None)
     slate = {"date": slate_date, "weekday": None, "sports": {}}
     for sport, docs in all_docs.items():
@@ -225,6 +228,9 @@ def build():
                         for who, side in [(k, f(g)) for k, f in MODEL_SIDES]
                         if side
                     }
+                    t = totals_result(g)
+                    if t:
+                        row["results"]["totals"] = {"result": t}
                 games.append(row)
             slate["sports"][sport] = {"label": sports.SPORTS[sport]["label"], "games": games}
 
@@ -263,6 +269,8 @@ def build():
         "manual": read_manual(),
         "grading": grading_patterns.build(mypicks),
         "statsStacked": stats_stacked,
+        "nbaTotalsRules": nba_totals["rules"],
+        "nbaTotals": nba_totals["all"],
         "nflStatsStacked": nfl_stacked,
     }
 
@@ -284,6 +292,42 @@ def read_health():
             return json.load(f)
     except (OSError, ValueError):
         return {}
+
+
+def totals_result(g):
+    """'W', 'L' or 'P' for a graded NBA Totals pick, else None."""
+    if not g.get("totalsFavors") or "totalsCorrect" not in g:
+        return None
+    if g["totalsCorrect"] is None:
+        return "P" if g.get("totalsReturn") == 0 else None
+    return "W" if g["totalsCorrect"] else "L"
+
+
+def nba_totals_record(docs):
+    """This season's NBA Totals record: per rule (a pick counts for every rule
+    that flagged it), picks both rules agreed on, and all picks with $100
+    profit at -110."""
+    rules = {n: {"w": 0, "l": 0, "p": 0} for n in nba_totals_rules.RULE_NAMES}
+    both = {"w": 0, "l": 0, "p": 0}
+    allp = {"w": 0, "l": 0, "p": 0, "profit": 0.0}
+    for _, doc in docs:
+        for g in doc.get("games", []):
+            r = totals_result(g)
+            if not r or not is_final(doc, g):
+                continue
+            key = r.lower()
+            nums = [x.get("rule") for x in g.get("totalsRules") or []]
+            for n in nums:
+                if n in rules:
+                    rules[n][key] += 1
+            if len(nums) > 1:
+                both[key] += 1
+            allp[key] += 1
+            allp["profit"] += g.get("totalsReturn") or 0
+    allp["profit"] = round(allp["profit"], 2)
+    return {"rules": [{"rule": n, "name": nba_totals_rules.RULE_NAMES[n], "backtest": nba_totals_rules.RULE_BACKTEST[n], **rules[n]}
+                      for n in sorted(rules)],
+            "all": {**allp, "both": both}}
 
 
 def stacked_record(docs, sport, favors, rules):

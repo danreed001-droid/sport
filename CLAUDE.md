@@ -50,6 +50,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   rebuilds the site if the live data.json is 6+ hours old, and opens a
   "Health check" issue (closed automatically on recovery) when it can't fix
   things itself.
+- NBA Totals (`scripts/nba_totals_signals.py`, rules in `scripts/lib/nba_totals_rules.py`)
+  runs right after NBA Stats each scoring run and flags full-game UNDERs on the
+  NBA slate: rule 1, spread 3 points or less; rule 2, the road team's last
+  game (within 10 days) went to OT. It writes `totalsLine` (refreshed from
+  ESPN's pickcenter every run until tip-off, then frozen), `totalsFavors`,
+  `totalsRules` and `totalsCheck`; `score_slate.py` grades them
+  (`totalsCorrect`/`totalsReturn`, $100 at -110). Regular season only. Both
+  are thin backtested edges (~54-55% unders, 2022-23 on), tracked to see if
+  they hold; the pick sheet shows them as "NBA Totals".
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
