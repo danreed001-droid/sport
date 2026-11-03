@@ -4,9 +4,10 @@ basketball slate (data/ncaab/<date>.json), alongside the Ledger and Second
 Opinion. No LLM research involved. Rules and rates are in
 scripts/lib/ncaab_stats_rules.py.
 
-  Rule 1: back a team after a loss in which the opponent's three-point
-  percentage beat its own by 25+ points (both teams 15+ attempts) -- a loss
-  that was mostly shooting luck. Backtest: 60.5% ATS, 2018-19 to 2025-26.
+  No active rules: rule 1 (back a team after a loss in which the opponent's
+  three-point percentage beat its own by 25+ points, both teams 15+ attempts)
+  was retired on 2026-11-03 at 58.7% (108-76) when replayed on 2018-19 to
+  2025-26; its code stays but never picks (lib/ncaab_stats_rules.RETIRED).
 
 Each team's previous game comes from ESPN's team schedule (regular season and
 postseason), its threes from that game's box score; hand-entered box scores
@@ -154,6 +155,7 @@ def evaluate(session, date_str, g):
                                    f"while {last['opp']} shot {theirs[0]}-of-{theirs[1]} from three ({theirs[0] / theirs[1]:.0%}) to its "
                                    f"{mine[0]}-of-{mine[1]} ({mine[0] / mine[1]:.0%}) -- a {gap * 100:.0f}-point gap, a loss mostly down to "
                                    f"shooting luck; teams in this spot covered 60.5% ATS, 2018-19 to 2025-26 (n=233), no losing season."))
+    picks = [p for p in picks if p[1] in RULE_NAMES]  # retired rules (lib/ncaab_stats_rules.RETIRED) never pick
     if len({p for p, _, _ in picks}) != 1:
         return None
     merged = {}
