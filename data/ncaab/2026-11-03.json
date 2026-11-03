@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-03",
+  "weekday": "Tuesday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-03T10:55:32Z",
+  "games": [
+    {
+      "espnId": "401906848",
+      "away": "Wofford Terriers",
+      "home": "Tennessee Volunteers",
+      "time": "6:00 PM ET",
+      "homeSpread": -26.5,
+      "awaySpread": 26.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -20000,
+      "awayMoneyline": 3500,
+      "total": 154.5
+    },
+    {
+      "espnId": "401921801",
+      "away": "Manhattan Jaspers",
+      "home": "Kentucky Wildcats",
+      "time": "7:00 PM ET",
+      "homeSpread": -33.5,
+      "awaySpread": 33.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "total": 158.5
+    },
+    {
+      "espnId": "401920422",
+      "away": "Drexel Dragons",
+      "home": "Virginia Cavaliers",
+      "time": "7:30 PM ET",
+      "homeSpread": -31.5,
+      "awaySpread": 31.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "total": 142.5
+    },
+    {
+      "espnId": "401906757",
+      "away": "Sam Houston Bearkats",
+      "home": "Alabama Crimson Tide",
+      "time": "7:30 PM ET",
+      "homeSpread": -26.5,
+      "awaySpread": 26.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -10000,
+      "awayMoneyline": 3000,
+      "total": 171.5
+    },
+    {
+      "espnId": "401929372",
+      "away": "Arkansas-Pine Bluff Golden Lions",
+      "home": "Arkansas Razorbacks",
+      "time": "8:00 PM ET",
+      "homeSpread": -38.5,
+      "awaySpread": 38.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 163.5
+    }
+  ]
+}
