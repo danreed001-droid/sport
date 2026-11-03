@@ -3,7 +3,7 @@
   "weekday": "Thursday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-03T12:52:07.544432+00:00",
+  "scoredAt": "2026-11-03T13:00:17.577646+00:00",
   "generatedAt": "2026-10-22T15:18:12Z",
   "games": [
     {
@@ -55,7 +55,7 @@
         "76ers opened 1-0 with a 106-100 road win at the Knicks (held NYK to 37% FG, 6 players in double figures); Cavaliers have not yet played in 2026-27"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 237.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -119,7 +119,7 @@
         "Thunder opened 1-0 with a 116-104 road win at San Antonio (Shai Gilgeous-Alexander 32 pts); Nuggets' last action was an Oct. 16 preseason win over the Lakers"
       ],
       "time": "9:30 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     }
   ]
 }

@@ -3,7 +3,7 @@
   "weekday": "Thursday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-03T12:52:07.550574+00:00",
+  "scoredAt": "2026-11-03T13:00:17.586855+00:00",
   "generatedAt": "2026-10-29T15:28:53Z",
   "games": [
     {
@@ -54,7 +54,7 @@
         "Hawks: Gueye (foot) and Veesaar (knee, out for season) out; Cavaliers: Tomlin (back) out - no star-level absences either side"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 237.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -117,7 +117,7 @@
         "Kings missing Keegan Murray, Maxime Raynaud, Dylan Cardwell, Ben Simmons (4 out); Pelicans missing Yves Missi (out) and Jordan Poole (game-time decision)"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "4-3",
@@ -168,7 +168,7 @@
         "Trail Blazers missing Shaedon Sharpe (knee, long-term) and Chris Youngblood (GTD); Grizzlies no injuries reported"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     }
   ]
 }

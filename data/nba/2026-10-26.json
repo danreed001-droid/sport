@@ -3,7 +3,7 @@
   "weekday": "Monday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-03T12:52:07.547753+00:00",
+  "scoredAt": "2026-11-03T13:00:17.582951+00:00",
   "generatedAt": "2026-10-26T15:33:53Z",
   "games": [
     {
@@ -54,7 +54,7 @@
         "CHA missing Coby White, Grant Williams, Kon Knueppel (hamstring/hamstring/calf, all out); WAS has rookie AJ Dybantsa (ankle) working back from missing the first 3 games"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 225.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -118,7 +118,7 @@
         "MIN missing Donte DiVincenzo (Achilles); CLE's absences (Diop, Tomlin) are deep bench/two-way"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "0-4",
@@ -168,7 +168,7 @@
         "CHI missing P. Williams, N. Essengue, N. Claxton (groin/head/hamstring, all out) \u2014 a 3-man cluster; BOS reports only D. Carter (illness)"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "0-3",
@@ -218,7 +218,7 @@
         "DAL missing Kyrie Irving, Cooper Flagg, Caleb Martin, Tarik Biberovic, Santi Aldama, Dereck Lively II (6 out, including their top-2 options); MIA reports a clean injury sheet"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "3-5",
@@ -269,7 +269,7 @@
         "IND's Sheppard/McConnell are day-to-day and Furphy is out for the season; MIL reports no injuries"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "3-4",
@@ -320,7 +320,7 @@
         "OKC is on the 2nd night of a back-to-back but stays home (no added travel)"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "3-2",
@@ -370,7 +370,7 @@
         "HOU missing Marcus Smart, Steven Adams, Fred VanVleet (3 out); ATL missing Veesaar (out for season, ACL) and Gueye (foot surgery)"
       ],
       "time": "8:30 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "4-4",
@@ -435,7 +435,7 @@
       ],
       "statsSpreadReturn": -100.0,
       "time": "9:00 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 237.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -512,7 +512,7 @@
       ],
       "statsSpreadReturn": 96.15,
       "time": "10:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     }
   ]
 }

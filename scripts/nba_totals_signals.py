@@ -7,6 +7,10 @@ lib/nba_totals_rules.py:
   2. UNDER: the road team's previous regular-season game (within 10 days) went to OT;
   3. OVER (on trial): the home team won its last game and a player who scored
      30-39 in it is out tonight (ESPN injury report: "Out").
+  4-8. UNDER: a team lost its last game AT HOME to a worse-record team (it had
+     the better season win % going in, 5+ games played) and now faces a
+     better-record team: 4 lost by 1-9; 5 lost by 1-9 and rested; 6 now on the
+     road; 7 on the road and rested; 8 on the road after losing by 10+.
 
 If an over rule and an under rule both fire, the game gets no pick.
 
@@ -24,7 +28,7 @@ Usage: python scripts/nba_totals_signals.py [YYYY-MM-DD ...]   (default: today E
 --backfill applies the rules to finished games on past slates that have no
 NBA Totals fields yet, using the DraftKings closing spread and total archived
 in data/raw/nba_lines.csv (the same lines the backtest graded against). Those
-picks are marked totalsBackfill (2 = checked with all three rules; for rule 3,
+picks are marked totalsBackfill (= BACKFILL_VERSION once checked with every rule; for rule 3,
 "out" means not in that game's box score). Default: every past slate this season.
 """
 import csv
@@ -43,6 +47,8 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck")
+# Bumped whenever rules are added, so --backfill rechecks past games with them.
+BACKFILL_VERSION = 3
 
 
 def season_start(date_str):
@@ -63,6 +69,49 @@ def last_game(rows, team, before, since):
             if best is None or r["Date"] > best["Date"]:
                 best = r
     return best
+
+
+def team_log(rows, team, since, before):
+    """The team's finished games in [since, before), oldest first:
+    [{date, home, opp, pf, pa}]."""
+    out = []
+    for r in rows:
+        if not (since <= r["Date"] < before) or not str(r["Status"]).lower().startswith("final"):
+            continue
+        try:
+            a, h = float(r["Away_Score"]), float(r["Home_Score"])
+        except (TypeError, ValueError):
+            continue
+        if _same_team(team, r["Home_Team"]):
+            out.append({"date": r["Date"], "home": True, "opp": r["Away_Team"], "pf": h, "pa": a})
+        elif _same_team(team, r["Away_Team"]):
+            out.append({"date": r["Date"], "home": False, "opp": r["Home_Team"], "pf": a, "pa": h})
+    return sorted(out, key=lambda x: x["date"])
+
+
+def win_pct(log):
+    return sum(1 for x in log if x["pf"] > x["pa"]) / len(log) if log else None
+
+
+def home_upset_loss(rows, team, opp_now, date_str, since):
+    """If `team`'s last game (within 10 days) was a home loss to a worse-record
+    team and tonight's opponent has the better record, the facts rules 4-8
+    use; else None. Records are season win % going into each game."""
+    log = team_log(rows, team, since, date_str)
+    if not log:
+        return None
+    last = log[-1]
+    gap = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days
+    if gap > OT_LOOKBACK_DAYS or not last["home"] or last["pf"] >= last["pa"]:
+        return None
+    before = log[:-1]
+    them = team_log(rows, last["opp"], since, last["date"])
+    if len(before) < 5 or not them or not win_pct(before) > win_pct(them):
+        return None
+    mine, theirs = win_pct(log), win_pct(team_log(rows, opp_now, since, date_str))
+    if theirs is None or not theirs > mine:
+        return None
+    return {"last": last, "margin": last["pa"] - last["pf"], "rested": gap > 1, "record": (mine, theirs)}
 
 
 def evaluate(g, rows, date_str, since, spread, points=None, absent=None):
@@ -91,6 +140,22 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None):
                 who = ", ".join(f"{n} ({p})" for _, p, n in sitting)
                 rules.append({"rule": 3, "detail": f"{g['home']} (home) won its last game on {hl['Date']} and {who} "
                                                    f"is out tonight."})
+    for side, opp in (("home", "away"), ("away", "home")):
+        u = home_upset_loss(rows, g[side], g[opp], date_str, since)
+        if not u:
+            continue
+        lost = f"{g[side]} lost at home to {u['last']['opp']} by {u['margin']:g} on {u['last']['date']} (the worse-record team)"
+        vs = f"now {'on the road' if side == 'away' else 'at home'} vs. better-record {g[opp]}"
+        if u["margin"] <= 9:
+            rules.append({"rule": 4, "detail": f"{lost}; {vs}."})
+            if u["rested"]:
+                rules.append({"rule": 5, "detail": f"{lost}; {vs}, rested."})
+        if side == "away":
+            rules.append({"rule": 6, "detail": f"{lost}; {vs}."})
+            if u["rested"]:
+                rules.append({"rule": 7, "detail": f"{lost}; {vs}, rested."})
+            if u["margin"] >= 10:
+                rules.append({"rule": 8, "detail": f"{lost} (10+); {vs}."})
     for r in rules:
         r["name"], r["backtest"] = RULE_NAMES[r["rule"]], RULE_BACKTEST[r["rule"]]
     return rules
@@ -174,7 +239,7 @@ def backfill(points, rows, dates):
         since = season_start(date_str)
         changed = 0
         for g in doc.get("games", []):
-            if g.get("totalsBackfill") == 2 or (g.get("totalsFavors") and not g.get("totalsBackfill")):
+            if g.get("totalsBackfill") == BACKFILL_VERSION or (g.get("totalsFavors") and not g.get("totalsBackfill")):
                 continue  # already checked with every rule, or a live pick
             if not isinstance(g.get("awayScore"), (int, float)) or not isinstance(g.get("homeScore"), (int, float)):
                 continue  # not final
@@ -194,7 +259,7 @@ def backfill(points, rows, dates):
             rules = evaluate(g, rows, date_str, since, spread, points, absent)
             side = verdict(rules)
             before = (g.get("totalsFavors"), [r["rule"] for r in g.get("totalsRules") or []])
-            g["totalsBackfill"] = 2  # checked with every rule, even when none fired, so it's never re-done
+            g["totalsBackfill"] = BACKFILL_VERSION  # checked with every rule, even when none fired, so it's never re-done
             for k in ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsCorrect", "totalsReturn"):
                 g.pop(k, None)
             if side:

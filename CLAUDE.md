@@ -55,8 +55,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   NBA slate: rule 1 UNDER, spread 3 points or less; rule 2 UNDER, the road
   team's last game (within 10 days) went to OT; rule 3 OVER (on trial), the
   home team won its last game and that game's 30-39 point scorer is out
-  tonight (ESPN injury report "Out", `lib/nba_absence.py`). An over and an
-  under rule on the same game cancel out (no pick). It writes `totalsLine` (refreshed from
+  tonight (ESPN injury report "Out", `lib/nba_absence.py`); rules 4-8 UNDER
+  after a team lost at home to a worse-record team and now faces a
+  better-record one (4 lost by 1-9, 5 that and rested, 6 now on the road, 7
+  that and rested, 8 road after losing by 10+). An over and an under rule on
+  the same game cancel out (no pick). Adding rules: bump BACKFILL_VERSION in
+  `nba_totals_signals.py` and rerun `--backfill` so past games are rechecked. It writes `totalsLine` (refreshed from
   ESPN's pickcenter every run until tip-off, then frozen), `totalsFavors`,
   `totalsRules` and `totalsCheck`; `score_slate.py` grades them
   (`totalsCorrect`/`totalsReturn`, $100 at -110). Regular season only. Both
@@ -69,7 +73,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   the player who scored 30+ in its last game is listed Out tonight; it's
   checked until tip-off and then frozen (the game's existing statsRules). NBA
   Stats looks teams up by the scores archive's name, so a slate's "LA Lakers"
-  still finds "Los Angeles Lakers".
+  still finds "Los Angeles Lakers". Rule 19 (on trial) backs a road team on a
+  back-to-back after a home loss to a worse-record team (games between equal
+  records excluded, as in the backtest).
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.

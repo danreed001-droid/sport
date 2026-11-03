@@ -3,7 +3,7 @@
   "weekday": "Friday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-03T12:52:07.545297+00:00",
+  "scoredAt": "2026-11-03T13:00:17.578434+00:00",
   "generatedAt": "2026-10-23T15:30:00Z",
   "games": [
     {
@@ -54,7 +54,7 @@
         "Injuries: NYK Akins/McCullar/Nickel questionable (bench); BOS Devin Carter out (bench) \u2014 both minor"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 220.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -117,7 +117,7 @@
         "Injuries: CHA has four day-to-day (Grant Williams, Boswell, Knueppel, Coby White); ATL has Veesaar (out for season) and Gueye (out)"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 226.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -180,7 +180,7 @@
         "Injuries: DAL missing Aldama, Biberovic, Lively II, Caleb Martin (out) + Howard (doubtful); IND missing Furphy, McConnell (out) + Nesmith, Sheppard (questionable). Haliburton confirmed playing for IND"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "3-0",
@@ -230,7 +230,7 @@
         "Injuries: ORL missing Penda (out) + Black/Isaac/Nelson (day-to-day); MIN missing only DiVincenzo (Achilles, out). Banchero/Wagner not on ORL's report"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 234.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -294,7 +294,7 @@
         "Market: moneyline moved from -185/+154 (open) to -325/+260 (now); spread moved from -4.5 to -8.5 toward Toronto"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "1-0",
@@ -344,7 +344,7 @@
         "Injuries: no reliably current injury report found for either club tonight \u2014 treated as neutral"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 235.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -407,7 +407,7 @@
         "Injuries: CHI missing Claxton (out, hamstring) + Hawkins/Swain (day-to-day, illness); MIL fully healthy \u2014 'Bucks Injuries: None'"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 241.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -470,7 +470,7 @@
         "Injuries: SAS missing Quaintance (out, knee) + Harris (day-to-day, calf); HOU only Adams (day-to-day, calf). Wembanyama confirmed healthy"
       ],
       "time": "9:30 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "1-1",
@@ -520,7 +520,7 @@
         "Injuries: Markkanen's and Zion's current status could not be reliably confirmed for tonight's game \u2014 treated as neutral"
       ],
       "time": "9:30 PM ET",
-      "totalsBackfill": 2,
+      "totalsBackfill": 3,
       "totalsLine": 238.5,
       "totalsFavors": "Under",
       "totalsRules": [
@@ -583,7 +583,7 @@
         "Injuries: GSW missing Jimmy Butler (out, torn ACL), Porzingis (out, POTS), Moses Moody (out, patellar tendon rupture) + Bassey/Podziemski (GTD); MEM only Coward (doubtful) + Stewart (questionable)"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "0-3",
@@ -633,7 +633,7 @@
         "Injuries: LAC missing Bradley Beal, Brandon Ingram, Jordan Miller, Yanic Konan Niederhauser, Max Strus (all out); LAL missing only two-way players Carr/Thiero (out) + LaRavia (questionable). Luka Doncic confirmed 'good to go without restrictions' for LAL"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     },
     {
       "altCategoryTally": "0-0",
@@ -683,7 +683,7 @@
         "Injuries: POR missing Shaedon Sharpe (out, meniscus) + Youngblood/Carlson (day-to-day); SAC missing Cardwell/Raynaud (out), Simmons (out for season) + Monk (day-to-day)"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 2
+      "totalsBackfill": 3
     }
   ]
 }

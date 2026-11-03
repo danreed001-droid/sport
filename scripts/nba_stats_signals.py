@@ -15,7 +15,9 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   Backs (pick the flagged team): 16 lost to an opponent that shot 50%+ from
   three, now home on a back-to-back; 18 (on trial) home vs. a better-record
   team while the player who scored 30+ in its last game is out tonight
-  (ESPN's injury report says "Out"; checked until tip-off, then frozen).
+  (ESPN's injury report says "Out"; checked until tip-off, then frozen);
+  19 (on trial) on the road on a back-to-back after losing at home to a
+  worse-record team.
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -59,6 +61,7 @@ POINTS_CACHE = os.path.join(REPO_ROOT, "data", "raw", "nba_player_points.json")
 ALLOWED_REST = {
     2: {"b2b", "1", "2+"}, 9: {"b2b"}, 14: {"b2b"}, 16: {"b2b"}, 17: {"b2b", "1", "2+"},
     18: {"b2b", "1", "2+"},
+    19: {"b2b"},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
@@ -414,6 +417,14 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 prev = next((r for r in tonight.get("prior") or [] if r.get("rule") == 18), None)
                 if prev:
                     picks.append((team, 18, prev.get("detail", "")))
+
+        if not is_home and last["is_home"] and not last["won"] and team_pct != opp_pct:  # as backtested: equal records excluded
+            tw, tl = season_record(games, last["date"])
+            ow, ol = season_record([g for g in by_team.get(last["opp"], []) if g["date"] >= season0], last["date"])
+            if tw + tl >= 5 and ow + ol and tw / (tw + tl) > ow / (ow + ol):
+                picks.append((team, 19, f"Backing {team}: lost at home to worse-record {last['opp']} "
+                                     f"({last['team_score']:g}-{last['opp_score']:g}) last night, now on the road on a "
+                                     f"back-to-back -- teams in this spot covered 65.9% ATS (29-15, 2022-23 to 2025-26)."))
 
         # Keep only the rules whose backtest cleared 62% for this team's rest
         # (days off since its last game).
