@@ -25,6 +25,7 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   Backs, on trial: 33 home vs. a better-record team after a 30+ point win;
   34 after a 30+ point ROAD win where it wasn't a 7+ point favorite.
   (30-32 were tried and removed; numbers aren't reused.)
+  35-40 (on trial), after a 20+ point loss -- see BLOWOUT_LOSS (38 is a fade).
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -80,6 +81,17 @@ ROAD_UPSET = {
     28: {"home": True, "close": True, "notbig": True},
     29: {"home": False, "stronger": False, "close": True},
 }
+# Rules 35-40: after a 20+ point loss -> (rule, back the team? (else fade), conditions on
+# now home?, next opponent stronger?, back-to-back?, that loss on the road?,
+# lost by 30+?, not a 7+ point underdog in it?). Backtested 2022-23 to 2025-26.
+BLOWOUT_LOSS = [
+    (35, True, {"b2b": True, "road_loss": True, "notbigdog": True}),
+    (36, True, {"home": False, "road_loss": False, "big": True}),
+    (37, True, {"home": False, "b2b": False, "road_loss": False, "big": True}),
+    (38, False, {"home": True, "stronger": False, "b2b": False, "road_loss": True, "big": False}),
+    (39, True, {"home": False, "stronger": True, "road_loss": True, "big": False, "notbigdog": True}),
+    (40, True, {"home": True, "stronger": False, "b2b": False, "road_loss": False, "big": False}),
+]
 _HOME_SPREAD = None
 
 
@@ -105,7 +117,8 @@ ALLOWED_REST = {
     **{n: ({"1", "2+"} if c.get("rested") else {"b2b", "1", "2+"}) for n, c in {
         20: {"rested": True}, 21: {}, 22: {"rested": True}, 23: {}, 24: {"rested": True},
         25: {}, 26: {"rested": True}, 27: {"rested": True}, 28: {}, 29: {},
-        33: {}, 34: {}}.items()},
+        33: {}, 34: {}, 35: {}, 36: {}, 37: {"rested": True}, 38: {"rested": True},
+        39: {}, 40: {"rested": True}}.items()},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
@@ -493,6 +506,25 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                                               f"{last['team_score']:g}-{last['opp_score']:g} {dog} last game; now {where} vs. "
                                               f"{'a better' if opp_stronger else 'a worse'}-record team"
                                               f"{', rested' if facts['rested'] else ', on a back-to-back'} -- {RULE_BACKTEST[n]}."))
+
+        lost_by = last["opp_score"] - last["team_score"]
+        if lost_by >= 20 and team_pct != opp_pct:  # rules 35-40: after a 20+ point loss
+            hs = home_spread_of(last["event_id"])
+            my_spread = (hs if last["is_home"] else -hs) if hs is not None else None
+            f = {"home": is_home, "stronger": opp_stronger,
+                 "b2b": (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days == 1,
+                 "road_loss": not last["is_home"], "big": lost_by >= 30,
+                 "notbigdog": my_spread is None or my_spread < 7}
+            where = "on the road" if f["road_loss"] else "at home"
+            lost = (f"lost by {lost_by:g} {where} last game ({last['team_score']:g}-{last['opp_score']:g} vs {last['opp']})"
+                    f"{f' as a {my_spread:+g}' if my_spread is not None else ''}")
+            for n, back, cond in BLOWOUT_LOSS:
+                if all(f[k] == v for k, v in cond.items()):
+                    pick = team if back else opp
+                    verb = "Backing" if back else "Fading"
+                    picks.append((pick, n, f"{verb} {team}: {lost}; now {'home' if is_home else 'on the road'} vs. "
+                                           f"{'a better' if opp_stronger else 'a worse'}-record team"
+                                           f"{', on a back-to-back' if f['b2b'] else ', rested'} -- {RULE_BACKTEST[n]}."))
 
         big_margin = last["team_score"] - last["opp_score"]
         if big_margin >= 30 and team_pct != opp_pct:  # rules 33-34: back a team after a 30+ point win

@@ -30,6 +30,12 @@ RULE_NAMES = {
     29: "Fade a road-upset winner now on the road vs. a weaker team after winning by 1-9 (on trial)",
     33: "Back a team after a 30+ point win, now home vs. a stronger team (on trial)",
     34: "Back a team after a 30+ point road win where it wasn't a 7+ pt favorite (on trial)",
+    35: "Back a team on a back-to-back after a 20+ point road loss where it wasn't a 7+ pt dog (on trial)",
+    36: "Back a team on the road after a 30+ point home loss (on trial)",
+    37: "Back a team on the road, rested, after a 30+ point home loss (on trial)",
+    38: "Fade a home team vs. a weaker team, rested, after a 20-29 point road loss (on trial)",
+    39: "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
+    40: "Back a home team vs. a weaker team, rested, after a 20-29 point home loss (on trial)",
 }
 # Backtest rate, then the record replayed on six seasons none of the rules
 # were found on: 2016-17 through 2019-20, 2023-24 and 2024-25.
@@ -51,16 +57,23 @@ RULE_BACKTEST = {
     29: "62.3% ATS, n=69 (43-26) (2022-23 to 2025-26); on trial",
     33: "66.0% ATS, n=47 (31-16, 2022-23 to 2025-26), covered every season; on trial",
     34: "63.2% ATS, n=57 (36-21, 2022-23 to 2025-26), covered every season; on trial",
+    35: "67.5% ATS, n=40 (27-13, 2022-23 to 2025-26), every season; on trial",
+    36: "65.4% ATS, n=52 (34-18, 2022-23 to 2025-26), every season; on trial",
+    37: "65.2% ATS, n=46 (30-16, 2022-23 to 2025-26), every season; on trial",
+    38: "63.8% ATS, n=47 (30-17, 2022-23 to now), every season; on trial",
+    39: "62.5% ATS, n=48 (30-18, 2022-23 to now), every season; on trial",
+    40: "62.0% ATS, n=50 (31-19, 2022-23 to 2025-26), every season; on trial",
 }
 # A pick two or more rules agree on ("stacked"), replayed on the same six
 # unseen seasons: one-rule picks went 57.4% (269-200).
 STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule picks 57.4%"
 
 
-# Rules 20-29 are overlapping slices of one situation (a road-upset win), so
+# Rules 20-29 (a road-upset win) and 35-40 (a 20+ point loss) are overlapping
+# slices of one situation each, so
 # several firing on one game is not independent agreement: "stacked" counts
 # distinct families, not rules.
-FAMILY = {n: "road-upset" for n in range(20, 30)}
+FAMILY = {**{n: "road-upset" for n in range(20, 30)}, **{n: "blowout-loss" for n in range(35, 41)}}
 
 
 def families(nums):

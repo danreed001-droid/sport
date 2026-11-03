@@ -26,6 +26,7 @@ RULE_NAMES = {
     13: "Under when the home team is back from a 20-29 point road win (on trial)",
     14: "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
     15: "Under when the home team is back from a 20-29 point road win, now vs. a weaker team (on trial)",
+    16: "Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)",
 }
 RULE_BACKTEST = {
     3: "65.2% overs, 43-23 (2022-23 to now); over in 3 of 4 seasons, small sample",
@@ -41,8 +42,9 @@ RULE_BACKTEST = {
     13: "63.4% unders, 59-34 (2022-23 to now); under every season",
     14: "63.3% unders, 57-33 (2022-23 to now); under every season",
     15: "62.5% unders, 40-24 (2022-23 to now); under every season",
+    16: "71.4% overs, 30-12 (2022-23 to 2025-26); over every season",
 }
-OVER_RULES = {3}
+OVER_RULES = {3, 16}
 OT_LOOKBACK_DAYS = 10
 
 

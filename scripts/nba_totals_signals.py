@@ -13,6 +13,8 @@ lib/nba_totals_rules.py:
      road; 7 on the road and rested; 8 on the road after losing by 10+.
   9-15. UNDER (on trial): the home team won its last game by 20+ ON THE ROAD
      (ROAD_BLOWOUT has each one's extra conditions).
+  16. OVER (on trial): a team lost its last game by 30+ on the road and now
+     faces a worse-record team.
 
 If an over rule and an under rule both fire, the game gets no pick.
 
@@ -50,7 +52,7 @@ SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsWatch")
 # Bumped whenever rules are added, so --backfill rechecks past games with them.
-BACKFILL_VERSION = 5
+BACKFILL_VERSION = 6
 
 
 def season_start(date_str):
@@ -188,6 +190,20 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=
                 rules.append({"rule": 7, "detail": f"{lost}; {vs}, rested."})
             if u["margin"] >= 10:
                 rules.append({"rule": 8, "detail": f"{lost} (10+); {vs}."})
+    for side, opp in (("home", "away"), ("away", "home")):  # rule 16: after a 30+ road loss, vs a weaker team -> over
+        log = team_log(rows, g[side], since, date_str)
+        if not log:
+            continue
+        last = log[-1]
+        if (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days > OT_LOOKBACK_DAYS:
+            continue
+        if last["home"] or last["pa"] - last["pf"] < 30:
+            continue
+        mine, theirs = win_pct(log), win_pct(team_log(rows, g[opp], since, date_str))
+        if mine is None or theirs is None or not theirs < mine:
+            continue
+        rules.append({"rule": 16, "detail": f"{g[side]} lost by {last['pa'] - last['pf']:g} on the road at {last['opp']} on "
+                                            f"{last['date']}; now {'home' if side == 'home' else 'on the road'} vs. worse-record {g[opp]}."})
     b = home_after_road_blowout(rows, g["home"], g["away"], date_str, since)
     if b:
         facts = {"weaker": b["weaker"], "rested": b["rested"], "small": b["margin"] <= 29, "notbig": b["notbig"]}
