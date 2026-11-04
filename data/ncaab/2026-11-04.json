@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-04",
+  "weekday": "Wednesday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-04T06:28:21Z",
+  "games": [
+    {
+      "espnId": "401920232",
+      "away": "Framingham State Rams",
+      "home": "Dartmouth Big Green",
+      "time": "6:30 PM ET"
+    },
+    {
+      "espnId": "401929450",
+      "away": "Regent Regent Royals",
+      "home": "Old Dominion Monarchs",
+      "time": "7:00 PM ET"
+    },
+    {
+      "espnId": "401929438",
+      "away": "Christendom Crusaders",
+      "home": "App State Mountaineers",
+      "time": "7:00 PM ET"
+    },
+    {
+      "espnId": "401928853",
+      "away": "Virginia Lynchburg Dragons",
+      "home": "Morgan State Bears",
+      "time": "7:00 PM ET"
+    },
+    {
+      "espnId": "401926142",
+      "away": "Concordia Chicago Cougars",
+      "home": "SIU Edwardsville Cougars",
+      "time": "7:00 PM ET"
+    },
+    {
+      "espnId": "401922290",
+      "away": "Erskine Flying Fleet",
+      "home": "UNC Asheville Bulldogs",
+      "time": "7:00 PM ET"
+    },
+    {
+      "espnId": "401920410",
+      "away": "Maryland Eastern Shore Hawks",
+      "home": "High Point Panthers",
+      "time": "7:00 PM ET",
+      "homeSpread": -30.5,
+      "awaySpread": 30.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -100000,
+      "awayMoneyline": 5000,
+      "total": 148.5
+    },
+    {
+      "espnId": "401920191",
+      "away": "Longwood Lancers",
+      "home": "Saint Joseph's Hawks",
+      "time": "7:00 PM ET",
+      "homeSpread": -9.5,
+      "awaySpread": 9.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -410,
+      "awayMoneyline": 320,
+      "total": 149.5
+    },
+    {
+      "espnId": "401902276",
+      "away": "Fairleigh Dickinson Knights",
+      "home": "Butler Bulldogs",
+      "time": "7:00 PM ET",
+      "homeSpread": -24.5,
+      "awaySpread": 24.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -8000,
+      "awayMoneyline": 2200,
+      "total": 152.5
+    },
+    {
+      "espnId": "401927361",
+      "away": "Central College Dutch",
+      "home": "Drake Bulldogs",
+      "time": "7:30 PM ET"
+    },
+    {
+      "espnId": "401926214",
+      "away": "Blue Mountain Christian Toppers",
+      "home": "Tennessee Tech Golden Eagles",
+      "time": "7:30 PM ET"
+    },
+    {
+      "espnId": "401926151",
+      "away": "Webster Gorloks",
+      "home": "Southeast Missouri State Redhawks",
+      "time": "7:30 PM ET"
+    },
+    {
+      "espnId": "401926111",
+      "away": "Bob Jones Bruins",
+      "home": "Furman Paladins",
+      "time": "7:30 PM ET"
+    },
+    {
+      "espnId": "401919028",
+      "away": "Cal State Northridge Matadors",
+      "home": "Wichita State Shockers",
+      "time": "7:30 PM ET",
+      "homeSpread": -14.5,
+      "awaySpread": 14.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -1650,
+      "awayMoneyline": 950,
+      "total": 161.5
+    },
+    {
+      "espnId": "401917977",
+      "away": "Champion Christian Tigers",
+      "home": "UL Monroe Warhawks",
+      "time": "7:30 PM ET"
+    },
+    {
+      "espnId": "401928811",
+      "away": "Northern Kentucky Norse",
+      "home": "South Dakota Coyotes",
+      "time": "8:00 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": 120,
+      "awayMoneyline": -142,
+      "total": 160.5
+    },
+    {
+      "espnId": "401925893",
+      "away": "Randolph Wildcats",
+      "home": "Norfolk State Spartans",
+      "time": "8:00 PM ET"
+    },
+    {
+      "espnId": "401923391",
+      "away": "Saint Mary of the Woods Pomeroys",
+      "home": "Southern Indiana Screaming Eagles",
+      "time": "8:00 PM ET"
+    },
+    {
+      "espnId": "401920798",
+      "away": "SE Louisiana Lions",
+      "home": "Auburn Tigers",
+      "time": "8:00 PM ET",
+      "homeSpread": -26.5,
+      "awaySpread": 26.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -20000,
+      "awayMoneyline": 3500,
+      "total": 151.5
+    },
+    {
+      "espnId": "401929171",
+      "away": "West Coast Baptist Eagles",
+      "home": "Boise State Broncos",
+      "time": "9:00 PM ET"
+    },
+    {
+      "espnId": "401925939",
+      "away": "Grace University Lancers",
+      "home": "Utah Tech Trailblazers",
+      "time": "9:00 PM ET"
+    },
+    {
+      "espnId": "401922030",
+      "away": "Salish Kootenai Bison",
+      "home": "Montana Grizzlies",
+      "time": "9:00 PM ET"
+    },
+    {
+      "espnId": "401918052",
+      "away": "Radford Highlanders",
+      "home": "California Golden Bears",
+      "time": "9:00 PM ET",
+      "homeSpread": -15.5,
+      "awaySpread": 15.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -2100,
+      "awayMoneyline": 1100,
+      "total": 156.5
+    },
+    {
+      "espnId": "401917514",
+      "away": "Queens University Royals",
+      "home": "Loyola Marymount Lions",
+      "time": "10:00 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -270,
+      "awayMoneyline": 220,
+      "total": 157.5
+    },
+    {
+      "espnId": "401917513",
+      "away": "Milwaukee Panthers",
+      "home": "Santa Clara Broncos",
+      "time": "10:00 PM ET",
+      "homeSpread": -17.5,
+      "awaySpread": 17.5,
+      "homeSpreadOdds": -102,
+      "awaySpreadOdds": -118,
+      "homeMoneyline": -2100,
+      "awayMoneyline": 1100,
+      "total": 160.5
+    },
+    {
+      "espnId": "401917512",
+      "away": "North Dakota State Bison",
+      "home": "Saint Mary's Gaels",
+      "time": "10:00 PM ET",
+      "homeSpread": -12.5,
+      "awaySpread": 12.5,
+      "homeSpreadOdds": -118,
+      "awaySpreadOdds": -102,
+      "homeMoneyline": -1100,
+      "awayMoneyline": 700,
+      "total": 148.5
+    }
+  ]
+}
