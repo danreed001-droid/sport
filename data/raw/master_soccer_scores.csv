@@ -1,5 +1,5 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401878967,2026-11-04,Scheduled,KV Mechelen,0,-,KV Kortrijk,0,-,-,-,2:30 PM
+401878967,2026-11-04,31',KV Mechelen,0,-,KV Kortrijk,0,-,-,-,2:30 PM
 401928518,2026-11-04,Postponed,Real Unión Irun,0,-,Portugalete,0,-,-,-,1:00 PM
 401928497,2026-11-04,Postponed,CD Sabadell,0,-,Utebo,0,-,-,-,2:30 PM
 401928519,2026-11-04,Postponed,UD Logroñés,0,-,Amorebieta,0,-,-,-,2:00 PM
@@ -7,22 +7,22 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401928524,2026-11-04,Postponed,FC Cartagena,0,-,CD Minera,0,-,-,-,2:30 PM
 401928500,2026-11-04,Postponed,Barakaldo,0,-,Reus FC Reddis,0,-,-,-,2:30 PM
 401929680,2026-11-04,Scheduled,Coquimbo Unido,0,-,Unión La Calera,0,-,-,-,5:00 PM
-401915383,2026-11-04,Scheduled,Real Madrid,0,-,AEK Athens,0,-,-,-,12:45 PM
-401915382,2026-11-04,Scheduled,Liverpool,0,-,Fenerbahce,0,-,-,-,12:45 PM
+401915383,2026-11-04,FT,Real Madrid,3,-,AEK Athens,2,-,-,-,12:45 PM
+401915382,2026-11-04,FT,Liverpool,2,-,Fenerbahce,3,-,-,-,12:45 PM
 401915304,2026-11-04,Scheduled,Real Betis,0,-,Borussia Dortmund,0,-,-,-,3:00 PM
-401915301,2026-11-04,Scheduled,Napoli,0,-,FC Porto,0,-,-,-,3:00 PM
-401915305,2026-11-04,Scheduled,Como,0,-,Lens,0,-,-,-,3:00 PM
-401915303,2026-11-04,Scheduled,Club Brugge,0,-,PSV Eindhoven,0,-,-,-,3:00 PM
+401915301,2026-11-04,1',Napoli,0,-,FC Porto,0,-,-,-,3:00 PM
+401915305,2026-11-04,1',Como,0,-,Lens,0,-,-,-,3:00 PM
+401915303,2026-11-04,2',Club Brugge,0,-,PSV Eindhoven,0,-,-,-,3:00 PM
 401915306,2026-11-04,Scheduled,Manchester City,0,-,RB Leipzig,0,-,-,-,3:00 PM
-401915381,2026-11-04,Scheduled,Arsenal,0,-,Slavia Prague,0,-,-,-,3:00 PM
-401915302,2026-11-04,Scheduled,Sabah FK,0,-,Viking FK,0,-,-,-,3:00 PM
-401915551,2026-11-04,Scheduled,Olympiacos,0,-,Stade Rennais,0,-,-,-,10:30 AM
-401933098,2026-11-04,Scheduled,Siroco Les Abymes,0,-,Sporting Club Baie-Mahault,0,-,-,-,12:00 PM
-401880175,2026-11-04,Scheduled,West Ham United,0,-,Cardiff City,0,-,-,-,2:45 PM
-401880173,2026-11-04,Scheduled,Middlesbrough,0,-,Wrexham,0,-,-,-,2:45 PM
-401880176,2026-11-04,Scheduled,Wolverhampton Wanderers,0,-,Bristol City,0,-,-,-,3:00 PM
-401933038,2026-11-04,Scheduled,Congo DR,0,-,Sao Tome E Principe,0,-,-,-,7:00 AM
-401933059,2026-11-04,Scheduled,Chad,0,-,Central African Republic,0,-,-,-,10:00 AM
+401915381,2026-11-04,1',Arsenal,0,-,Slavia Prague,0,-,-,-,3:00 PM
+401915302,2026-11-04,2',Sabah FK,0,-,Viking FK,0,-,-,-,3:00 PM
+401915551,2026-11-04,FT,Olympiacos,0,-,Stade Rennais,0,-,-,-,10:30 AM
+401933098,2026-11-04,Scheduled,Siroco Les Abymes,0,-,Sporting Club Baie-Mahault,0,-,-,-,2:00 PM
+401880175,2026-11-04,16',West Ham United,0,-,Cardiff City,1,-,-,-,2:45 PM
+401880173,2026-11-04,18',Middlesbrough,0,-,Wrexham,0,-,-,-,2:45 PM
+401880176,2026-11-04,3',Wolverhampton Wanderers,0,-,Bristol City,0,-,-,-,3:00 PM
+401933038,2026-11-04,FT,Congo,4,-,Sao Tome E Principe,1,-,-,-,7:00 AM
+401933059,2026-11-04,FT,Chad,1,-,Central African Republic,1,-,-,-,10:00 AM
 401928559,2026-11-04,Postponed,Eibar,0,-,Levante,0,-,-,-,12:00 PM
 401928540,2026-11-04,Postponed,Dux Logroño,0,-,Osasuna,0,-,-,-,1:00 PM
 401928541,2026-11-04,Postponed,Madrid CFF,0,-,CD Argual,0,-,-,-,2:00 PM
@@ -31,17 +31,17 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401912613,2026-11-04,FT,Kashima Antlers,0,-,Buriram United,0,-,-,-,7:15 AM
 401912769,2026-11-04,FT,Persib Bandung,2,-,Melbourne Victory,1,-,-,-,2:45 AM
 401912768,2026-11-04,FT,The Cong-Viettel FC,0,-,FC Seoul,3,-,-,-,5:00 AM
-401912767,2026-11-04,83',Gol Gohar Sirjan FC,0,-,Arkadag FK,1,-,-,-,8:45 AM
-401912766,2026-11-04,Scheduled,Al-Khaldiya SC,0,-,Al Wahda FC,0,-,-,-,11:00 AM
-401912764,2026-11-04,Scheduled,Al-Nahda Club,0,-,Al-Rayyan SC,0,-,-,-,11:00 AM
-401912765,2026-11-04,Scheduled,FC Nasaf,0,-,Kuwait SC,0,-,-,-,11:00 AM
-401912762,2026-11-04,Scheduled,Al-Faisaly SC,0,-,Al Taawoun,0,-,-,-,1:15 PM
-401912763,2026-11-04,Scheduled,Al Jazira Club,0,-,Al-Muharraq SC,0,-,-,-,1:15 PM
+401912767,2026-11-04,FT,Gol Gohar Sirjan FC,0,-,Arkadag FK,1,-,-,-,8:45 AM
+401912766,2026-11-04,FT,Al-Khaldiya SC,2,-,Al Wahda FC,1,-,-,-,11:00 AM
+401912764,2026-11-04,FT,Al-Nahda Club,0,-,Al-Rayyan SC,2,-,-,-,11:00 AM
+401912765,2026-11-04,FT,FC Nasaf,3,-,Kuwait SC,2,-,-,-,11:00 AM
+401912762,2026-11-04,90'+1',Al-Faisaly SC,1,-,Al Taawoun,3,-,-,-,1:15 PM
+401912763,2026-11-04,89',Al Jazira Club,2,-,Al-Muharraq SC,0,-,-,-,1:15 PM
 401931921,2026-11-04,Scheduled,Club Atlético Morelia,0,-,Venados FC,0,-,-,-,6:00 PM
 401931916,2026-11-04,Scheduled,Club Atlético La Paz,0,-,Tlaxcala FC,0,-,-,-,8:05 PM
-401916247,2026-11-04,27',North Korea U17,0,-,Japan U17,0,-,-,-,10:00 AM
-401916229,2026-11-04,Scheduled,Nigeria U17,0,-,Brazil U17,0,-,-,-,1:00 PM
-401880891,2026-11-04,Scheduled,Reading,0,-,Oxford United,0,-,-,-,2:45 PM
+401916247,2026-11-04,FT-Pens,North Korea U17,1,-,Japan U17,1,-,-,-,10:00 AM
+401916229,2026-11-04,FT,Nigeria U17,3,-,Brazil U17,1,-,-,-,1:00 PM
+401880891,2026-11-04,17',Reading,0,-,Oxford United,0,-,-,-,2:45 PM
 401841306,2026-11-04,Scheduled,Vasco da Gama,0,-,Athletico-PR,0,-,-,-,5:30 PM
 401841307,2026-11-04,Scheduled,Grêmio,0,-,Flamengo,0,-,-,-,5:30 PM
 401841305,2026-11-04,Scheduled,Atlético-MG,0,-,Botafogo,0,-,-,-,7:30 PM
@@ -70,9 +70,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401902015,2026-11-04,Postponed,Stellenbosch,0,-,Richards Bay FC,0,-,-,-,12:30 PM
 401902014,2026-11-04,Postponed,Orlando Pirates,0,-,Siwelele,0,-,-,-,12:30 PM
 401902009,2026-11-04,Postponed,Durban City,0,-,TS Galaxy FC,0,-,-,-,12:30 PM
-401898237,2026-11-04,Scheduled,Manhattan,0,-,Iona,0,-,-,-,1:00 PM
-401898260,2026-11-04,Scheduled,Merrimack,0,-,Quinnipiac,0,-,-,-,2:00 PM
-401929742,2026-11-04,Scheduled,South Carolina Upstate,0,-,UNC Asheville,0,-,-,-,2:00 PM
+401898237,2026-11-04,85',Manhattan,1,-,Iona,3,-,-,-,1:00 PM
+401898260,2026-11-04,HT,Merrimack,0,-,Quinnipiac,0,-,-,-,2:00 PM
+401929742,2026-11-04,HT,South Carolina Upstate,0,-,UNC Asheville,0,-,-,-,2:00 PM
 401898186,2026-11-04,Scheduled,Niagara,0,-,Canisius,0,-,-,-,6:00 PM
 401898225,2026-11-04,Scheduled,Sacred Heart,0,-,Fairfield,0,-,-,-,6:00 PM
 401929725,2026-11-04,Scheduled,Stanford,0,-,Louisville,0,-,-,-,6:00 PM
@@ -93,11 +93,11 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401891017,2026-11-04,Scheduled,Penn State,0,-,Maryland,0,-,-,-,8:00 PM
 401898834,2026-11-04,Scheduled,Wisconsin,0,-,Northwestern,0,-,-,-,8:00 PM
 401898825,2026-11-04,Scheduled,Washington,0,-,UCLA,0,-,-,-,8:00 PM
-401890062,2026-11-04,Scheduled,Canisius,0,-,Mount St. Mary's,0,-,-,-,12:00 PM
-401900223,2026-11-04,Scheduled,Bucknell,0,-,American University,0,-,-,-,1:00 PM
-401890045,2026-11-04,Scheduled,Quinnipiac,0,-,Saint Peter's,0,-,-,-,2:00 PM
-401890006,2026-11-04,Scheduled,Marist,0,-,Siena,0,-,-,-,2:00 PM
-401933135,2026-11-04,Scheduled,Texas A&M-San Antonio,0,-,Texas A&M-Corpus Christi,0,-,-,-,2:00 PM
+401890062,2026-11-04,FT,Canisius,2,-,Mount St. Mary's,7,-,-,-,12:00 PM
+401900223,2026-11-04,87',Bucknell,5,-,American University,1,-,-,-,1:00 PM
+401890045,2026-11-04,HT,Quinnipiac,1,-,Saint Peter's,0,-,-,-,2:00 PM
+401890006,2026-11-04,HT,Marist,0,-,Siena,1,-,-,-,2:00 PM
+401933135,2026-11-04,HT,Texas A&M-San Antonio,0,-,Texas A&M-Corpus Christi,3,-,-,-,2:00 PM
 401900005,2026-11-04,Scheduled,Iona,0,-,Manhattan,0,-,-,-,3:00 PM
 401929909,2026-11-04,Scheduled,Michigan,0,-,Ohio State,0,-,-,-,5:00 PM
 401900214,2026-11-04,Scheduled,Holy Cross,0,-,Army,0,-,-,-,6:00 PM
