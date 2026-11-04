@@ -1,0 +1,240 @@
+{
+  "date": "2026-11-04",
+  "weekday": "Wednesday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-04T05:34:32Z",
+  "games": [
+    {
+      "espnId": "401909922",
+      "away": "Philadelphia 76ers",
+      "home": "Detroit Pistons",
+      "time": "7:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -106.0,
+      "awaySpreadOdds": -114.0,
+      "homeMoneyline": -125.0,
+      "awayMoneyline": 106.0,
+      "totalsLine": 217.5
+    },
+    {
+      "espnId": "401909923",
+      "away": "Atlanta Hawks",
+      "home": "Washington Wizards",
+      "time": "7:00 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -117.0,
+      "awaySpreadOdds": -104.0,
+      "homeMoneyline": 120.0,
+      "awayMoneyline": -142.0,
+      "totalsLine": 232.5
+    },
+    {
+      "espnId": "401909924",
+      "away": "Milwaukee Bucks",
+      "home": "Boston Celtics",
+      "time": "7:30 PM ET",
+      "homeSpread": -11.5,
+      "awaySpread": 11.5,
+      "homeSpreadOdds": -106.0,
+      "awaySpreadOdds": -114.0,
+      "homeMoneyline": -567.0,
+      "awayMoneyline": 424.0,
+      "totalsLine": 223.5
+    },
+    {
+      "espnId": "401909925",
+      "away": "Charlotte Hornets",
+      "home": "Brooklyn Nets",
+      "time": "7:30 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 136.0,
+      "awayMoneyline": -162.0,
+      "statsFavors": "Charlotte Hornets",
+      "statsRules": [
+        {
+          "rule": 36,
+          "name": "Back a team on the road after a 30+ point home loss (on trial)",
+          "backtest": "64.9% ATS, 48-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8",
+          "detail": "Backing Charlotte Hornets: lost by 33 at home last game (91-124 vs Detroit Pistons) as a +5.5; now on the road vs. a worse-record team, rested -- 64.9% ATS, 48-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8."
+        },
+        {
+          "rule": 37,
+          "name": "Back a team on the road, rested, after a 30+ point home loss (on trial)",
+          "backtest": "65.6% ATS, 42-22 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-6",
+          "detail": "Backing Charlotte Hornets: lost by 33 at home last game (91-124 vs Detroit Pistons) as a +5.5; now on the road vs. a worse-record team, rested -- 65.6% ATS, 42-22 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-6."
+        }
+      ],
+      "statsCheck": "Rule 36: Backing Charlotte Hornets: lost by 33 at home last game (91-124 vs Detroit Pistons) as a +5.5; now on the road vs. a worse-record team, rested -- 64.9% ATS, 48-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8. Rule 37: Backing Charlotte Hornets: lost by 33 at home last game (91-124 vs Detroit Pistons) as a +5.5; now on the road vs. a worse-record team, rested -- 65.6% ATS, 42-22 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-6.",
+      "totalsLine": 213.5
+    },
+    {
+      "espnId": "401909926",
+      "away": "Chicago Bulls",
+      "home": "New York Knicks",
+      "time": "7:30 PM ET",
+      "homeSpread": -11.5,
+      "awaySpread": 11.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": -597.0,
+      "awayMoneyline": 443.0,
+      "totalsLine": 233.5
+    },
+    {
+      "espnId": "401909927",
+      "away": "Indiana Pacers",
+      "home": "Memphis Grizzlies",
+      "time": "8:00 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -258.0,
+      "awayMoneyline": 212.0,
+      "totalsLine": 230.5
+    },
+    {
+      "espnId": "401909928",
+      "away": "Utah Jazz",
+      "home": "New Orleans Pelicans",
+      "time": "8:00 PM ET",
+      "homeSpread": -5.5,
+      "awaySpread": 5.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -217.0,
+      "awayMoneyline": 180.0,
+      "statsFavors": "Utah Jazz",
+      "statsRules": [
+        {
+          "rule": 17,
+          "name": "Fade a home team after a win where it allowed 130+ (any rest)",
+          "backtest": "62.6% ATS, 62-37 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+          "detail": "Fading New Orleans Pelicans: won last game but allowed 134 points (130+), now at home -- teams in this spot were faded 65.5% of the time ATS (n=58)."
+        },
+        {
+          "rule": 24,
+          "name": "Fade a road-upset winner now home, rested, after winning by 1-9 as less than a 7-pt dog (on trial)",
+          "backtest": "62.8% ATS, 76-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14",
+          "detail": "Fading New Orleans Pelicans: won at better-record Memphis Grizzlies 135-134 as a +5.5 underdog last game; now home vs. a worse-record team, rested -- 62.8% ATS, 76-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14."
+        },
+        {
+          "rule": 28,
+          "name": "Fade a road-upset winner now home after winning by 1-9 as less than a 7-pt dog (on trial)",
+          "backtest": "61.5% ATS, 88-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17",
+          "detail": "Fading New Orleans Pelicans: won at better-record Memphis Grizzlies 135-134 as a +5.5 underdog last game; now home vs. a worse-record team, rested -- 61.5% ATS, 88-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17."
+        }
+      ],
+      "statsCheck": "Rule 17: Fading New Orleans Pelicans: won last game but allowed 134 points (130+), now at home -- teams in this spot were faded 65.5% of the time ATS (n=58). Rule 24: Fading New Orleans Pelicans: won at better-record Memphis Grizzlies 135-134 as a +5.5 underdog last game; now home vs. a worse-record team, rested -- 62.8% ATS, 76-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14. Rule 28: Fading New Orleans Pelicans: won at better-record Memphis Grizzlies 135-134 as a +5.5 underdog last game; now home vs. a worse-record team, rested -- 61.5% ATS, 88-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17.",
+      "totalsLine": 234.5
+    },
+    {
+      "espnId": "401909929",
+      "away": "Cleveland Cavaliers",
+      "home": "Oklahoma City Thunder",
+      "time": "8:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": -135.0,
+      "awayMoneyline": 114.0,
+      "totalsLine": 228.5
+    },
+    {
+      "espnId": "401909930",
+      "away": "Minnesota Timberwolves",
+      "home": "Houston Rockets",
+      "time": "8:30 PM ET",
+      "homeSpread": -8.5,
+      "awaySpread": 8.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -310.0,
+      "awayMoneyline": 251.0,
+      "totalsLine": 220.5
+    },
+    {
+      "espnId": "401909931",
+      "away": "Toronto Raptors",
+      "home": "Denver Nuggets",
+      "time": "9:00 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -192.0,
+      "awayMoneyline": 160.0,
+      "totalsLine": 230.5
+    },
+    {
+      "espnId": "401909932",
+      "away": "Portland Trail Blazers",
+      "home": "Phoenix Suns",
+      "time": "9:00 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -111.0,
+      "awaySpreadOdds": -109.0,
+      "homeMoneyline": 130.0,
+      "awayMoneyline": -155.0,
+      "totalsLine": 227.5
+    },
+    {
+      "espnId": "401909933",
+      "away": "Dallas Mavericks",
+      "home": "San Antonio Spurs",
+      "time": "9:30 PM ET",
+      "homeSpread": -11.5,
+      "awaySpread": 11.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -545.0,
+      "awayMoneyline": 411.0,
+      "totalsLine": 227.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 6,
+          "detail": "Dallas Mavericks lost at home to Sacramento Kings by 15 on 2026-11-02 (the worse-record team); now on the road vs. better-record San Antonio Spurs.",
+          "name": "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
+          "backtest": "62.6% unders, 107-64 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30"
+        }
+      ],
+      "totalsCheck": "Rule 6: Dallas Mavericks lost at home to Sacramento Kings by 15 on 2026-11-02 (the worse-record team); now on the road vs. better-record San Antonio Spurs."
+    },
+    {
+      "espnId": "401909934",
+      "away": "Los Angeles Lakers",
+      "home": "Sacramento Kings",
+      "time": "10:00 PM ET",
+      "homeSpread": 11.5,
+      "awaySpread": -11.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": 429.0,
+      "awayMoneyline": -574.0,
+      "totalsLine": 234.5
+    },
+    {
+      "espnId": "401909935",
+      "away": "Miami Heat",
+      "home": "LA Clippers",
+      "time": "10:30 PM ET",
+      "homeSpread": 5.5,
+      "awaySpread": -5.5,
+      "homeSpreadOdds": -111.0,
+      "awaySpreadOdds": -109.0,
+      "homeMoneyline": 171.0,
+      "awayMoneyline": -205.0,
+      "totalsLine": 233.5
+    }
+  ]
+}
