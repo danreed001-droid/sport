@@ -2,14 +2,14 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401928527,2026-11-05,Postponed,Levante,0,-,CD Tarancon,0,-,-,-,1:00 PM
 401928505,2026-11-05,Postponed,Mallorca,0,-,Alcoyano,0,-,-,-,3:00 PM
 401926824,2026-11-05,Scheduled,Antofagasta,0,-,Universidad de Chile,0,-,-,-,5:00 PM
-401915534,2026-11-05,Scheduled,Ferencvaros,0,-,AC Milan,0,-,-,-,12:45 PM
-401915538,2026-11-05,Scheduled,RB Salzburg,0,-,Anderlecht,0,-,-,-,12:45 PM
-401915526,2026-11-05,Scheduled,TSG Hoffenheim,0,-,Crystal Palace,0,-,-,-,12:45 PM
-401915536,2026-11-05,Scheduled,Jagiellonia Bialystok,0,-,Levski Sofia,0,-,-,-,12:45 PM
-401915527,2026-11-05,Scheduled,Viktoria Plzen,0,-,Lillestrom,0,-,-,-,12:45 PM
-401915535,2026-11-05,Scheduled,Omonia Nicosia,0,-,NEC Nijmegen,0,-,-,-,12:45 PM
-401915537,2026-11-05,Scheduled,Lyon,0,-,Real Sociedad,0,-,-,-,12:45 PM
-401915528,2026-11-05,Scheduled,AFC Bournemouth,0,-,Sparta Prague,0,-,-,-,12:45 PM
+401915534,2026-11-05,HT,Ferencvaros,0,-,AC Milan,0,-,-,-,12:45 PM
+401915538,2026-11-05,HT,RB Salzburg,0,-,Anderlecht,1,-,-,-,12:45 PM
+401915526,2026-11-05,HT,TSG Hoffenheim,1,-,Crystal Palace,0,-,-,-,12:45 PM
+401915536,2026-11-05,HT,Jagiellonia Bialystok,0,-,Levski Sofia,0,-,-,-,12:45 PM
+401915527,2026-11-05,HT,Viktoria Plzen,1,-,Lillestrom,0,-,-,-,12:45 PM
+401915535,2026-11-05,HT,Omonia Nicosia,1,-,NEC Nijmegen,0,-,-,-,12:45 PM
+401915537,2026-11-05,HT,Lyon,0,-,Real Sociedad,1,-,-,-,12:45 PM
+401915528,2026-11-05,HT,AFC Bournemouth,0,-,Sparta Prague,1,-,-,-,12:45 PM
 401915529,2026-11-05,Scheduled,Juventus,0,-,AZ Alkmaar,0,-,-,-,3:00 PM
 401915533,2026-11-05,Scheduled,Marseille,0,-,Bayer Leverkusen,0,-,-,-,3:00 PM
 401915525,2026-11-05,Scheduled,Lech Poznan,0,-,Benfica,0,-,-,-,3:00 PM
@@ -19,15 +19,15 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401915524,2026-11-05,Scheduled,NK Celje,0,-,SK Sturm Graz,0,-,-,-,3:00 PM
 401915523,2026-11-05,Scheduled,Dinamo Zagreb,0,-,Sunderland,0,-,-,-,3:00 PM
 401915530,2026-11-05,Scheduled,Ararat-Armenia,0,-,Torreense,0,-,-,-,3:00 PM
-401915831,2026-11-05,Scheduled,Braga,0,-,AGF,0,-,-,-,12:45 PM
-401915830,2026-11-05,Scheduled,Kairat Almaty,0,-,Atalanta,0,-,-,-,12:45 PM
-401915829,2026-11-05,Scheduled,Ajax Amsterdam,0,-,FC Midtjylland,0,-,-,-,12:45 PM
-401915828,2026-11-05,Scheduled,Heart of Midlothian,0,-,FC Thun,0,-,-,-,12:45 PM
-401915826,2026-11-05,Scheduled,KAA Gent,0,-,KuPS Kuopio,0,-,-,-,12:45 PM
-401915742,2026-11-05,Scheduled,Hajduk Split,0,-,Lincoln Red Imps,0,-,-,-,12:45 PM
-401915741,2026-11-05,Scheduled,Borac Banja Luka,0,-,Mjällby AIF,0,-,-,-,12:45 PM
-401915827,2026-11-05,Scheduled,Inter D'Escaldes,0,-,Red Star Belgrade,0,-,-,-,12:45 PM
-401915825,2026-11-05,Scheduled,SC Freiburg,0,-,Trabzonspor,0,-,-,-,12:45 PM
+401915831,2026-11-05,HT,Braga,0,-,AGF,0,-,-,-,12:45 PM
+401915830,2026-11-05,HT,Kairat Almaty,0,-,Atalanta,0,-,-,-,12:45 PM
+401915829,2026-11-05,HT,Ajax Amsterdam,1,-,FC Midtjylland,1,-,-,-,12:45 PM
+401915828,2026-11-05,HT,Heart of Midlothian,0,-,FC Thun,2,-,-,-,12:45 PM
+401915826,2026-11-05,HT,KAA Gent,0,-,KuPS Kuopio,0,-,-,-,12:45 PM
+401915742,2026-11-05,HT,Hajduk Split,0,-,Lincoln Red Imps,0,-,-,-,12:45 PM
+401915741,2026-11-05,46',Borac Banja Luka,0,-,Mjällby AIF,0,-,-,-,12:45 PM
+401915827,2026-11-05,HT,Inter D'Escaldes,0,-,Red Star Belgrade,0,-,-,-,12:45 PM
+401915825,2026-11-05,46',SC Freiburg,1,-,Trabzonspor,0,-,-,-,12:45 PM
 401915824,2026-11-05,Scheduled,FC Nordsjælland,0,-,AS Monaco,0,-,-,-,3:00 PM
 401915817,2026-11-05,Scheduled,Egnatia,0,-,CSU Craiova,0,-,-,-,3:00 PM
 401915740,2026-11-05,Scheduled,Iberia 1999,0,-,F.C. København,0,-,-,-,3:00 PM
@@ -43,19 +43,19 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401900443,2026-11-05,Postponed,Al Shabab,0,-,Abha,0,-,-,-,3:00 PM
 401900872,2026-11-05,Postponed,Al Khaleej,0,-,Al Kholood,0,-,-,-,3:00 PM
 401900870,2026-11-05,Postponed,Al Fayha,0,-,Al Qadsiah,0,-,-,-,3:00 PM
-401912759,2026-11-05,HT,Phnom Penh Crown FC,0,-,Kitchee SC,1,-,-,-,5:00 AM
-401912761,2026-11-05,Scheduled,Adelaide United FC,0,-,Lion City Sailors FC,0,-,-,-,5:00 AM
-401912760,2026-11-05,HT,Shanghai Shenhua FC,0,-,Machida Zelvia,1,-,-,-,5:00 AM
-401912758,2026-11-05,Scheduled,Tai Po FC,0,-,BG Pathum United,0,-,-,-,7:15 AM
-401912756,2026-11-05,Scheduled,Gangwon FC,0,-,Kuching City,0,-,-,-,7:15 AM
-401912757,2026-11-05,Scheduled,Tampines Rovers FC,0,-,PKR Svay Rieng,0,-,-,-,7:15 AM
+401912759,2026-11-05,FT,Phnom Penh Crown FC,1,-,Kitchee SC,2,-,-,-,5:00 AM
+401912761,2026-11-05,FT,Adelaide United FC,0,-,Lion City Sailors FC,5,-,-,-,5:00 AM
+401912760,2026-11-05,FT,Shanghai Shenhua FC,1,-,Machida Zelvia,2,-,-,-,5:00 AM
+401912758,2026-11-05,FT,Tai Po FC,1,-,BG Pathum United,4,-,-,-,7:15 AM
+401912756,2026-11-05,FT,Gangwon FC,0,-,Kuching City,2,-,-,-,7:15 AM
+401912757,2026-11-05,FT,Tampines Rovers FC,0,-,PKR Svay Rieng,2,-,-,-,7:15 AM
 401931917,2026-11-05,Scheduled,Piratas,0,-,Cancún FC,0,-,-,-,8:00 PM
 401931854,2026-11-05,Scheduled,Leones Negros,0,-,Durango,0,-,-,-,10:05 PM
 401924349,2026-11-05,Scheduled,Tigres UANL,0,-,Atlante,0,-,-,-,4:45 PM
 401924386,2026-11-05,Scheduled,Atlas,0,-,Necaxa,0,-,-,-,6:00 PM
 401924360,2026-11-05,Scheduled,Toluca,0,-,Querétaro,0,-,-,-,8:06 PM
 401924364,2026-11-05,Scheduled,Tijuana,0,-,Santos,0,-,-,-,10:10 PM
-401841659,2026-11-05,Scheduled,River Plate,0,-,Aldosivi,0,-,-,-,1:00 PM
+401841659,2026-11-05,HT,River Plate,0,-,Aldosivi,0,-,-,-,1:00 PM
 401841667,2026-11-05,Scheduled,Belgrano (Córdoba),0,-,Gimnasia La Plata,0,-,-,-,5:15 PM
 401841300,2026-11-05,Scheduled,Remo,0,-,Palmeiras,0,-,-,-,5:30 PM
 401841303,2026-11-05,Scheduled,Bahia,0,-,Cruzeiro,0,-,-,-,7:30 PM
@@ -67,18 +67,18 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401926714,2026-11-05,Scheduled,Platense,0,-,Club Deportivo Marathón,0,-,-,-,8:30 PM
 401876889,2026-11-05,Scheduled,Cartaginés,0,-,Inter de San Carlos,0,-,-,-,6:00 PM
 401876827,2026-11-05,Scheduled,Saprissa,0,-,Herediano,0,-,-,-,9:00 PM
-401932722,2026-11-05,Scheduled,India,0,-,Pakistan,0,-,-,-,4:30 AM
-401932723,2026-11-05,Scheduled,Bangladesh,0,-,Bhutan,0,-,-,-,9:00 AM
-401925417,2026-11-05,Scheduled,NorthEast United FC,0,-,Churchill Brothers,0,-,-,-,6:30 AM
-401925416,2026-11-05,Scheduled,Odisha FC,0,-,Mohun Bagan Super Giant,0,-,-,-,9:00 AM
-401930704,2026-11-05,Scheduled,Dempo Sports Club,0,-,Samaleswari SC,0,-,-,-,8:00 AM
+401932722,2026-11-05,FT,India,3,-,Pakistan,2,-,-,-,4:30 AM
+401932723,2026-11-05,FT,Bangladesh,1,-,Bhutan,0,-,-,-,9:00 AM
+401925417,2026-11-05,FT,NorthEast United FC,2,-,Churchill Brothers,0,-,-,-,6:30 AM
+401925416,2026-11-05,FT,Odisha FC,2,-,Mohun Bagan Super Giant,3,-,-,-,9:00 AM
+401930704,2026-11-05,FT,Dempo Sports Club,2,-,Samaleswari SC,1,-,-,-,8:00 AM
 401929837,2026-11-05,Scheduled,Liberty,0,-,East Tennessee State,0,-,-,-,3:00 PM
 401929750,2026-11-05,Scheduled,Charleston,0,-,Elon,0,-,-,-,5:00 PM
 401929838,2026-11-05,Scheduled,VMI,0,-,UNC Greensboro,0,-,-,-,5:00 PM
 401898885,2026-11-05,Scheduled,New Haven,0,-,Central Connecticut,0,-,-,-,6:00 PM
 401929751,2026-11-05,Scheduled,Drexel,0,-,Hofstra,0,-,-,-,7:30 PM
-401929921,2026-11-05,Scheduled,William & Mary,0,-,Elon,0,-,-,-,12:00 PM
-401890174,2026-11-05,Scheduled,UT Rio Grande Valley,0,-,Northwestern State,0,-,-,-,12:00 PM
+401929921,2026-11-05,83',William & Mary,1,-,Elon,0,-,-,-,12:00 PM
+401890174,2026-11-05,81',UT Rio Grande Valley,1,-,Northwestern State,2,-,-,-,12:00 PM
 401901051,2026-11-05,Scheduled,Valparaiso,0,-,Illinois State,0,-,-,-,2:00 PM
 401901059,2026-11-05,Scheduled,Southern Illinois,0,-,Indiana State,0,-,-,-,2:00 PM
 401896626,2026-11-05,Scheduled,Belmont,0,-,Murray State,0,-,-,-,2:00 PM
@@ -269,7 +269,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401912603,2026-11-03,FT,Shabab Al Ahli,0,-,Al Hilal,2,-,-,-,1:15 PM
 401912771,2026-11-03,FT,Al-Seeb Club,2,-,East Bengal FC,0,-,-,-,8:45 AM
 401912770,2026-11-03,FT,Al-Shorta SC,3,-,Al-Hussein SC,0,-,-,-,11:00 AM
-401932877,2026-11-03,Scheduled,Japan Soccer College,0,-,Vegalta Sendai,0,-,-,-,10:00 PM
+401932877,2026-11-03,FT,Japan Soccer College,1,-,Vegalta Sendai,6,-,-,-,10:00 PM
 401906342,2026-11-03,FT,Brighton & Hove Albion U21,0,-,Cambridge United,6,-,-,-,2:00 PM
 401906343,2026-11-03,FT,Crystal Palace U21,2,-,Newport County,1,-,-,-,2:00 PM
 401906344,2026-11-03,FT,Doncaster Rovers,4,-,Rochdale,1,-,-,-,2:00 PM
