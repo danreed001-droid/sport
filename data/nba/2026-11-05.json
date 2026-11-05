@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-05",
+  "weekday": "Thursday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-05T05:53:40Z",
+  "games": [
+    {
+      "espnId": "401909936",
+      "away": "Orlando Magic",
+      "home": "Phoenix Suns",
+      "time": "9:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -112.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": -121.0,
+      "awayMoneyline": 102.0,
+      "totalsLine": 224.5
+    },
+    {
+      "espnId": "401909937",
+      "away": "Miami Heat",
+      "home": "Golden State Warriors",
+      "time": "10:00 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -185.0,
+      "awayMoneyline": 155.0,
+      "statsFavors": "Miami Heat",
+      "statsRules": [
+        {
+          "rule": 39,
+          "name": "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
+          "backtest": "61.4% ATS, 43-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9",
+          "detail": "Backing Miami Heat: lost by 21 on the road last game (117-138 vs Los Angeles Lakers) as a +1.5; now on the road vs. a better-record team, rested -- 61.4% ATS, 43-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9."
+        }
+      ],
+      "statsCheck": "Rule 39: Backing Miami Heat: lost by 21 on the road last game (117-138 vs Los Angeles Lakers) as a +1.5; now on the road vs. a better-record team, rested -- 61.4% ATS, 43-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9.",
+      "totalsLine": 238.5
+    }
+  ]
+}
