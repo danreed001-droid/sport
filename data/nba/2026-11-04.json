@@ -53,7 +53,8 @@
         "WAS missing 7 incl. Beekman, Vukcevic, Champagnie, Watkins (out); Sarr, Gill (Q); ATL missing/Q 4 (Landale, Gueye, Veesaar out; Johnson Q)"
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 230.5
+      "totalsLine": 230.5,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "2-1",
@@ -103,7 +104,20 @@
         "DET missing Isaiah Joe, Jalen Duren (starting C, hamstring) - out; PHI missing Dom Barlow, Ariel Hukporti (season) - deep bench bigs"
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 219.5
+      "totalsBackfill": 9,
+      "totalsLine": 219.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 21,
+          "detail": "Philadelphia 76ers lost the last meeting at home by 13 (Detroit Pistons 106 @ Philadelphia 76ers 93, 2026-10-25); tonight the underdog with the better record.",
+          "name": "Revenge: under when the team that lost the last meeting at home by 10-19 is the underdog with the better record (on trial)",
+          "backtest": "64.1% unders, 59-33 (2018-19 and 2021-22 to now); unseen 17-8; 2024-now 19-13"
+        }
+      ],
+      "totalsCheck": "Rule 21: Philadelphia 76ers lost the last meeting at home by 13 (Detroit Pistons 106 @ Philadelphia 76ers 93, 2026-10-25); tonight the underdog with the better record. (backfilled from the DraftKings closing line)",
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "2-0",
@@ -154,7 +168,8 @@
         "BOS: Jayson Tatum (Q, rest), Payton Pritchard (Q, shoulder), Devin Carter (out, illness); MIL - no injuries reported"
       ],
       "time": "7:30 PM ET",
-      "totalsLine": 221.5
+      "totalsLine": 221.5,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "2-2",
@@ -224,7 +239,8 @@
       "statsCorrect": false,
       "statsReturn": -100.0,
       "statsCover": false,
-      "statsSpreadReturn": -100.0
+      "statsSpreadReturn": -100.0,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-4",
@@ -274,7 +290,8 @@
         "CHI: Jalen Smith (Q, finger), Nicolas Claxton (Q, hamstring); NYK: Josh Hart (Q, ankle)"
       ],
       "time": "7:30 PM ET",
-      "totalsLine": 233.5
+      "totalsLine": 233.5,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "2-2",
@@ -324,7 +341,8 @@
         "CLE: Jaylon Tyson, Peyton Watson, Nae'Qwan Tomlin all out; OKC: Jaylin Williams (Q); Nikola Topic, Thomas Sorber, Chet Holmgren, Jalen Williams, Cason Wallace all out (several long-term)"
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-2",
@@ -400,7 +418,8 @@
       "statsCorrect": false,
       "statsReturn": -100.0,
       "statsCover": false,
-      "statsSpreadReturn": -100.0
+      "statsSpreadReturn": -100.0,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-4",
@@ -451,7 +470,24 @@
         "IND: Ivica Zubac, Kelly Oubre Jr., Obi Toppin (Q); T.J. McConnell, Tyrese Haliburton (best player, long-term), Ben Sheppard, Johnny Furphy all out; MEM: Scotty Pippen Jr. out, Quinten Post (Q)"
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 227.5
+      "totalsLine": 227.5,
+      "statsFavors": "Indiana Pacers",
+      "statsRules": [
+        {
+          "rule": 45,
+          "name": "Revenge: back a team with the worse record after losing the last meeting by 10-19 as the favorite, its 2nd+ straight loss to them (on trial)",
+          "backtest": "64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16",
+          "detail": "Backing Indiana Pacers: Indiana Pacers lost the last meeting by 19 (Memphis Grizzlies 125 @ Indiana Pacers 106, 2026-03-01) as the favorite, its 2 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 45: Backing Indiana Pacers: Indiana Pacers lost the last meeting by 19 (Memphis Grizzlies 125 @ Indiana Pacers 106, 2026-03-01) as the favorite, its 2 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16.",
+      "totalsBackfill": 9,
+      "statsCorrect": true,
+      "statsReturn": 218.0,
+      "statsCover": true,
+      "statsSpreadReturn": 84.75
     },
     {
       "altCategoryTally": "0-4",
@@ -501,7 +537,8 @@
         "MIN: Terrence Shannon Jr. (Q); Enrique Freeman, Anthony Edwards (best player, out until Dec 21), Donte DiVincenzo (long-term) all out; HOU: Clint Capela (Q), Steven Adams out"
       ],
       "time": "8:30 PM ET",
-      "totalsLine": 219.5
+      "totalsLine": 219.5,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "4-0",
@@ -552,7 +589,8 @@
         "POR: no injuries reported; PHX: Rasheer Fleming (Q), Jordan Goodwin (Q), Mark Williams (long-term) out"
       ],
       "time": "9:00 PM ET",
-      "totalsLine": 227.5
+      "totalsLine": 227.5,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-4",
@@ -602,7 +640,8 @@
         "TOR: Jakob Poeltl (Q); Nate Bittle, Kawhi Leonard (best player, out) also out; DEN: Spencer Jones, Julian Strawther (long-term) out; Cameron Johnson, Alpha Diallo (Q)"
       ],
       "time": "9:00 PM ET",
-      "totalsLine": 231.5
+      "totalsLine": 231.5,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-4",
@@ -715,7 +754,8 @@
         "LAL played at Miami on Nov 2 and now plays at Sacramento on one day of rest - a cross-country, cross-time-zone back-to-back road trip"
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 233.5
+      "totalsLine": 233.5,
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "3-0",
@@ -766,8 +806,9 @@
         "MIA: Myron Gardner (Q); Giannis Antetokounmpo (wrist, listed Q by one report/probable by another); LAC: Brandon Ingram, Yanic Konan Niederhauser, Bradley Beal, Jordan Miller (long-term) all out"
       ],
       "time": "10:30 PM ET",
-      "totalsLine": 233.5
+      "totalsLine": 233.5,
+      "totalsBackfill": 9
     }
   ],
-  "scoredAt": "2026-11-05T10:59:07.597893+00:00"
+  "scoredAt": "2026-11-05T17:35:20.648274+00:00"
 }

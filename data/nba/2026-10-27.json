@@ -3,7 +3,7 @@
   "weekday": "Tuesday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-10-28T07:51:21.876872+00:00",
+  "scoredAt": "2026-11-05T17:35:20.644499+00:00",
   "generatedAt": "2026-10-27T15:29:32Z",
   "games": [
     {
@@ -29,7 +29,7 @@
       "awayMoneyline": 375,
       "awayNetRtg": -11.25,
       "awayPDpg": -11.33,
-      "awayScore": 124,
+      "awayScore": 124.0,
       "awaySpread": 11.5,
       "awaySpreadOdds": -105,
       "confidence": "solid",
@@ -38,14 +38,14 @@
       "homeMoneyline": -525,
       "homeNetRtg": 3.12,
       "homePDpg": 2.85,
-      "homeScore": 125,
+      "homeScore": 125.0,
       "homeSpread": -11.5,
       "homeSpreadOdds": -115,
       "netRtgGap": 65.52,
       "pick": "Boston Celtics",
       "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": -100,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -54,7 +54,7 @@
         "Jayson Tatum (BOS leading scorer, 24.0 ppg) questionable on 2nd night of B2B; Devin Carter (mono) out for BOS; BKN reported close to full strength"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "3-4",
@@ -79,7 +79,7 @@
       "awayMoneyline": 130,
       "awayNetRtg": 10.41,
       "awayPDpg": 10.42,
-      "awayScore": 97,
+      "awayScore": 97.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
@@ -88,14 +88,14 @@
       "homeMoneyline": -155,
       "homeNetRtg": 0.08,
       "homePDpg": 0,
-      "homeScore": 111,
+      "homeScore": 111.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 41.38,
       "pick": "Detroit Pistons",
       "pickCover": false,
-      "pickReturn": -100,
-      "pickSpreadReturn": -100,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -104,7 +104,37 @@
         "Pistons' Jalen Duren & Ugonna Onyenso out; Ausar Thompson/Isaiah Joe/Isaac Jones/Elijah Harkless questionable for DET; Knicks' Jose Alvarado out"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9,
+      "statsFavors": "New York Knicks",
+      "statsRules": [
+        {
+          "rule": 44,
+          "name": "Revenge: back a team at home with the worse record after losing the last meeting by 10-19 as the favorite (on trial)",
+          "backtest": "67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15",
+          "detail": "Backing New York Knicks: New York Knicks lost the last meeting by 15 (Detroit Pistons 126 @ New York Knicks 111, 2026-02-20) as the favorite, its 3 straight loss to them; tonight home, favored, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15.",
+          "backfill": true
+        },
+        {
+          "rule": 45,
+          "name": "Revenge: back a team with the worse record after losing the last meeting by 10-19 as the favorite, its 2nd+ straight loss to them (on trial)",
+          "backtest": "64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16",
+          "detail": "Backing New York Knicks: New York Knicks lost the last meeting by 15 (Detroit Pistons 126 @ New York Knicks 111, 2026-02-20) as the favorite, its 3 straight loss to them; tonight home, favored, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16.",
+          "backfill": true
+        },
+        {
+          "rule": 46,
+          "name": "Revenge: back a favored team with the worse record after losing the last meeting as the favorite, its 2nd+ straight loss to them (on trial)",
+          "backtest": "62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16",
+          "detail": "Backing New York Knicks: New York Knicks lost the last meeting by 15 (Detroit Pistons 126 @ New York Knicks 111, 2026-02-20) as the favorite, its 3 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 44: Backing New York Knicks: New York Knicks lost the last meeting by 15 (Detroit Pistons 126 @ New York Knicks 111, 2026-02-20) as the favorite, its 3 straight loss to them; tonight home, favored, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15. Rule 45: Backing New York Knicks: New York Knicks lost the last meeting by 15 (Detroit Pistons 126 @ New York Knicks 111, 2026-02-20) as the favorite, its 3 straight loss to them; tonight home, favored, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16. Rule 46: Backing New York Knicks: New York Knicks lost the last meeting by 15 (Detroit Pistons 126 @ New York Knicks 111, 2026-02-20) as the favorite, its 3 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16.",
+      "statsCorrect": true,
+      "statsReturn": 64.52,
+      "statsCover": true,
+      "statsSpreadReturn": 92.59
     },
     {
       "altCategoryTally": "0-6",
@@ -129,7 +159,7 @@
       "awayMoneyline": 950,
       "awayNetRtg": -12.29,
       "awayPDpg": -12.34,
-      "awayScore": 103,
+      "awayScore": 103.0,
       "awaySpread": 17.5,
       "awaySpreadOdds": -105,
       "confidence": "solid",
@@ -138,7 +168,7 @@
       "homeMoneyline": -1650,
       "homeNetRtg": 4.16,
       "homePDpg": 4.15,
-      "homeScore": 130,
+      "homeScore": 130.0,
       "homeSpread": -17.5,
       "homeSpreadOdds": -115,
       "netRtgGap": 72.41,
@@ -154,7 +184,7 @@
         "Kings missing Ben Simmons (out for season, Achilles), Maxime Raynaud, Dylan Cardwell, Keegan Murray (all out); Spurs missing Tobias Harris, Jayden Quaintance (both out) \u2014 Victor Wembanyama not on the injury report"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "2-3",
@@ -179,7 +209,7 @@
       "awayMoneyline": 114,
       "awayNetRtg": 12.46,
       "awayPDpg": 12.11,
-      "awayScore": 136,
+      "awayScore": 136.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -188,7 +218,7 @@
       "homeMoneyline": -135,
       "homeNetRtg": 7.34,
       "homePDpg": 7.38,
-      "homeScore": 129,
+      "homeScore": 129.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 17.24,
@@ -204,7 +234,7 @@
         "LAL roster changed since 2025-26 \u2014 LeBron James left for Philadelphia; Shaedon Sharpe (meniscus) out for POR, Henderson/Carlson questionable"
       ],
       "time": "11:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     }
   ]
 }

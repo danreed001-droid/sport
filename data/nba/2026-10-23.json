@@ -3,7 +3,7 @@
   "weekday": "Friday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-10-24T06:49:16.348556+00:00",
+  "scoredAt": "2026-11-05T17:35:20.642792+00:00",
   "generatedAt": "2026-10-23T15:30:00Z",
   "games": [
     {
@@ -29,7 +29,7 @@
       "awayMoneyline": 110,
       "awayNetRtg": 0.35,
       "awayPDpg": 0.17,
-      "awayScore": 103,
+      "awayScore": 103.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -38,7 +38,7 @@
       "homeMoneyline": -130,
       "homeNetRtg": -0.01,
       "homePDpg": -0.15,
-      "homeScore": 107,
+      "homeScore": 107.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 3.44,
@@ -54,7 +54,7 @@
         "Injuries: NYK Akins/McCullar/Nickel questionable (bench); BOS Devin Carter out (bench) \u2014 both minor"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "2-1",
@@ -79,7 +79,7 @@
       "awayMoneyline": -135,
       "awayNetRtg": 4.39,
       "awayPDpg": 4.71,
-      "awayScore": 128,
+      "awayScore": 128.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -88,7 +88,7 @@
       "homeMoneyline": 114,
       "homeNetRtg": 6.03,
       "homePDpg": 5.92,
-      "homeScore": 81,
+      "homeScore": 81.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 6.9,
@@ -104,7 +104,7 @@
         "Injuries: CHA has four day-to-day (Grant Williams, Boswell, Knueppel, Coby White); ATL has Veesaar (out for season) and Gueye (out)"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-3",
@@ -129,7 +129,7 @@
       "awayMoneyline": 215,
       "awayNetRtg": -11.86,
       "awayPDpg": -11.76,
-      "awayScore": 121,
+      "awayScore": 121.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -138,7 +138,7 @@
       "homeMoneyline": -265,
       "homeNetRtg": -2.54,
       "homePDpg": -2.5,
-      "homeScore": 105,
+      "homeScore": 105.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 24.14,
@@ -154,7 +154,23 @@
         "Injuries: DAL missing Aldama, Biberovic, Lively II, Caleb Martin (out) + Howard (doubtful); IND missing Furphy, McConnell (out) + Nesmith, Sheppard (questionable). Haliburton confirmed playing for IND"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9,
+      "statsFavors": "Dallas Mavericks",
+      "statsRules": [
+        {
+          "rule": 48,
+          "name": "Revenge: fade a home favorite that lost the last meeting at home as the underdog (on trial)",
+          "backtest": "63.4% ATS, 83-48 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 37-26",
+          "detail": "Fading Indiana Pacers: Indiana Pacers lost the last meeting by 4 (Dallas Mavericks 134 @ Indiana Pacers 130, 2026-02-22) as the underdog, its 2 straight loss to them; tonight home, favored, with the better record -- 63.4% ATS, 83-48 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 37-26.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 48: Fading Indiana Pacers: Indiana Pacers lost the last meeting by 4 (Dallas Mavericks 134 @ Indiana Pacers 130, 2026-02-22) as the underdog, its 2 straight loss to them; tonight home, favored, with the better record -- 63.4% ATS, 83-48 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 37-26.",
+      "statsCorrect": true,
+      "statsReturn": 215.0,
+      "statsCover": true,
+      "statsSpreadReturn": 90.91
     },
     {
       "altCategoryTally": "3-0",
@@ -179,7 +195,7 @@
       "awayMoneyline": -108,
       "awayNetRtg": 13.38,
       "awayPDpg": 14.18,
-      "awayScore": 115,
+      "awayScore": 115.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -188,7 +204,7 @@
       "homeMoneyline": -112,
       "homeNetRtg": -2.93,
       "homePDpg": -3.19,
-      "homeScore": 93,
+      "homeScore": 93.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 58.62,
@@ -204,7 +220,7 @@
         "Injuries: ORL missing Penda (out) + Black/Isaac/Nelson (day-to-day); MIN missing only DiVincenzo (Achilles, out). Banchero/Wagner not on ORL's report"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "4-0",
@@ -229,7 +245,7 @@
       "awayMoneyline": -325,
       "awayNetRtg": 21.09,
       "awayPDpg": 22.92,
-      "awayScore": 112,
+      "awayScore": 112.0,
       "awaySpread": -8.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -238,7 +254,7 @@
       "homeMoneyline": 260,
       "homeNetRtg": -0.01,
       "homePDpg": 0.01,
-      "homeScore": 102,
+      "homeScore": 102.0,
       "homeSpread": 8.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 51.72,
@@ -255,7 +271,7 @@
         "Market: moneyline moved from -185/+154 (open) to -325/+260 (now); spread moved from -4.5 to -8.5 toward Toronto"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "1-0",
@@ -280,7 +296,7 @@
       "awayMoneyline": -120,
       "awayNetRtg": 8.2,
       "awayPDpg": 8.08,
-      "awayScore": 128,
+      "awayScore": 128.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -289,7 +305,7 @@
       "homeMoneyline": 100,
       "homeNetRtg": -10.75,
       "homePDpg": -11.34,
-      "homeScore": 111,
+      "homeScore": 111.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 55.17,
@@ -305,7 +321,7 @@
         "Injuries: no reliably current injury report found for either club tonight \u2014 treated as neutral"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-3",
@@ -330,7 +346,7 @@
       "awayMoneyline": -102,
       "awayNetRtg": -22.37,
       "awayPDpg": -24.11,
-      "awayScore": 132,
+      "awayScore": 132.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -118,
       "confidence": "skip",
@@ -339,7 +355,7 @@
       "homeMoneyline": -118,
       "homeNetRtg": -9.16,
       "homePDpg": -9.11,
-      "homeScore": 125,
+      "homeScore": 125.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -102,
       "netRtgGap": 24.14,
@@ -355,7 +371,7 @@
         "Injuries: CHI missing Claxton (out, hamstring) + Hawkins/Swain (day-to-day, illness); MIL fully healthy \u2014 'Bucks Injuries: None'"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "3-0",
@@ -380,7 +396,7 @@
       "awayMoneyline": 170,
       "awayNetRtg": 11.84,
       "awayPDpg": 11.61,
-      "awayScore": 114,
+      "awayScore": 114.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -118,
       "confidence": "solid",
@@ -389,13 +405,13 @@
       "homeMoneyline": -205,
       "homeNetRtg": -1.62,
       "homePDpg": -1.85,
-      "homeScore": 110,
+      "homeScore": 110.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -102,
       "netRtgGap": 41.38,
       "pick": "Houston Rockets",
       "pickCover": true,
-      "pickReturn": 170,
+      "pickReturn": 170.0,
       "pickSpreadReturn": 84.75,
       "skipReason": null,
       "skipped": false,
@@ -405,7 +421,7 @@
         "Injuries: SAS missing Quaintance (out, knee) + Harris (day-to-day, calf); HOU only Adams (day-to-day, calf). Wembanyama confirmed healthy"
       ],
       "time": "9:30 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "1-1",
@@ -430,7 +446,7 @@
       "awayMoneyline": -112,
       "awayNetRtg": -3.77,
       "awayPDpg": -3.75,
-      "awayScore": 119,
+      "awayScore": 119.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -102,
       "confidence": "skip",
@@ -439,7 +455,7 @@
       "homeMoneyline": -108,
       "homeNetRtg": -13.9,
       "homePDpg": -14.22,
-      "homeScore": 120,
+      "homeScore": 120.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -118,
       "netRtgGap": 20.69,
@@ -455,7 +471,7 @@
         "Injuries: Markkanen's and Zion's current status could not be reliably confirmed for tonight's game \u2014 treated as neutral"
       ],
       "time": "9:30 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "3-0",
@@ -480,7 +496,7 @@
       "awayMoneyline": 150,
       "awayNetRtg": 6.84,
       "awayPDpg": 7,
-      "awayScore": 111,
+      "awayScore": 111.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
@@ -489,13 +505,13 @@
       "homeMoneyline": -180,
       "homeNetRtg": -11.36,
       "homePDpg": -11.28,
-      "homeScore": 108,
+      "homeScore": 108.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 55.17,
       "pick": "Memphis Grizzlies",
       "pickCover": true,
-      "pickReturn": 150,
+      "pickReturn": 150.0,
       "pickSpreadReturn": 89.29,
       "skipReason": null,
       "skipped": false,
@@ -505,7 +521,7 @@
         "Injuries: GSW missing Jimmy Butler (out, torn ACL), Porzingis (out, POTS), Moses Moody (out, patellar tendon rupture) + Bassey/Podziemski (GTD); MEM only Coward (doubtful) + Stewart (questionable)"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-3",
@@ -530,7 +546,7 @@
       "awayMoneyline": 295,
       "awayNetRtg": 12.89,
       "awayPDpg": 13.07,
-      "awayScore": 117,
+      "awayScore": 117.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -539,7 +555,7 @@
       "homeMoneyline": -375,
       "homeNetRtg": 11.96,
       "homePDpg": 11.88,
-      "homeScore": 125,
+      "homeScore": 125.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 3.45,
@@ -555,7 +571,7 @@
         "Injuries: LAC missing Bradley Beal, Brandon Ingram, Jordan Miller, Yanic Konan Niederhauser, Max Strus (all out); LAL missing only two-way players Carr/Thiero (out) + LaRavia (questionable). Luka Doncic confirmed 'good to go without restrictions' for LAL"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-0",
@@ -580,7 +596,7 @@
       "awayMoneyline": -440,
       "awayNetRtg": 21.13,
       "awayPDpg": 20.36,
-      "awayScore": 128,
+      "awayScore": 128.0,
       "awaySpread": -9.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -589,14 +605,14 @@
       "homeMoneyline": 340,
       "homeNetRtg": -17.36,
       "homePDpg": -17.5,
-      "homeScore": 120,
+      "homeScore": 120.0,
       "homeSpread": 9.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 93.1,
       "pick": "Portland Trail Blazers",
       "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": -100,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -605,7 +621,7 @@
         "Injuries: POR missing Shaedon Sharpe (out, meniscus) + Youngblood/Carlson (day-to-day); SAC missing Cardwell/Raynaud (out), Simmons (out for season) + Monk (day-to-day)"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     }
   ]
 }

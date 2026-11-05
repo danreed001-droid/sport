@@ -3,7 +3,7 @@
   "weekday": "Friday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-10-31T06:18:30.310652+00:00",
+  "scoredAt": "2026-11-05T17:35:20.645109+00:00",
   "generatedAt": "2026-10-30T15:30:00Z",
   "auditChanges": [
     "NBA Magic @ Raptors: Second Opinion lean Toronto -> pass (Toronto's own 2-man injury cluster cancels the x2 weight). Ledger pick unchanged.",
@@ -34,7 +34,7 @@
       "awayMoneyline": 102,
       "awayNetRtg": -1.2,
       "awayPDpg": -1.2,
-      "awayScore": 79,
+      "awayScore": 79.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -120,
       "confidence": "skip",
@@ -43,7 +43,7 @@
       "homeMoneyline": -106,
       "homeNetRtg": -7,
       "homePDpg": -7.1,
-      "homeScore": 95,
+      "homeScore": 95.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 24.14,
@@ -59,7 +59,7 @@
         "Injuries: CHA missing Knueppel, White, G.Williams, Boswell (all out); WAS missing Champagnie, Vukcevic, Watkins (out), Tre Johnson (DTD)"
       ],
       "time": "7:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "1-5",
@@ -79,12 +79,12 @@
         "Matchup splits: neutral - Boston's bench shooting (10-14 from three) and Chicago's bench struggles (12-37) both look due for regression"
       ],
       "altReturn": null,
-      "altSpreadReturn": -100,
+      "altSpreadReturn": -100.0,
       "away": "Chicago Bulls",
       "awayMoneyline": 610,
       "awayNetRtg": -10.1,
       "awayPDpg": -10.7,
-      "awayScore": 111,
+      "awayScore": 111.0,
       "awaySpread": 16.5,
       "awaySpreadOdds": -118,
       "confidence": "solid",
@@ -93,14 +93,14 @@
       "homeMoneyline": -850,
       "homeNetRtg": 8,
       "homePDpg": 7.85,
-      "homeScore": 125,
+      "homeScore": 125.0,
       "homeSpread": -16.5,
       "homeSpreadOdds": -104,
       "netRtgGap": 89.66,
       "pick": "Boston Celtics",
       "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": -100,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -110,7 +110,7 @@
         "Rest/Market: BOS has had multiple days rest since Tuesday's win; spread moved 15.5->14.5 toward CHI"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "2-0",
@@ -135,7 +135,7 @@
       "awayMoneyline": -258,
       "awayNetRtg": 7.4,
       "awayPDpg": 7.3,
-      "awayScore": 110,
+      "awayScore": 110.0,
       "awaySpread": -7.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -144,7 +144,7 @@
       "homeMoneyline": 220,
       "homeNetRtg": -9.8,
       "homePDpg": -9.85,
-      "homeScore": 94,
+      "homeScore": 94.0,
       "homeSpread": 7.5,
       "homeSpreadOdds": -115,
       "netRtgGap": 79.31,
@@ -160,7 +160,7 @@
         "Injuries: DET missing I.Joe (DTD), Duren (out); BKN missing Demin, Bilodeau (both out)"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "3-1",
@@ -185,7 +185,7 @@
       "awayMoneyline": -112,
       "awayNetRtg": 3.35,
       "awayPDpg": 3.3,
-      "awayScore": 93,
+      "awayScore": 93.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -194,7 +194,7 @@
       "homeMoneyline": 102,
       "homeNetRtg": 1.55,
       "homePDpg": 1.6,
-      "homeScore": 98,
+      "homeScore": 98.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 10.34,
@@ -210,7 +210,7 @@
         "Injuries: NYK down only Alvarado; PHI down 4 - J.Walker, Fall, Barlow, Hukporti (season-ending)"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-2",
@@ -236,7 +236,7 @@
       "awayMoneyline": 170,
       "awayNetRtg": -5.75,
       "awayPDpg": -5.95,
-      "awayScore": 121,
+      "awayScore": 121.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -245,14 +245,14 @@
       "homeMoneyline": -205,
       "homeNetRtg": 8.65,
       "homePDpg": 8.9,
-      "homeScore": 114,
+      "homeScore": 114.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 72.41,
       "pick": "Toronto Raptors",
       "pickCover": false,
-      "pickReturn": -100,
-      "pickSpreadReturn": -100,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -262,7 +262,7 @@
         "Context: TOR won last meeting 129-99 (Wed) and has won 10 straight home vs East; ORL 0-4 at Scotiabank Arena in last 4"
       ],
       "time": "7:30 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "2-0",
@@ -288,7 +288,7 @@
       "awayMoneyline": -190,
       "awayNetRtg": 9.8,
       "awayPDpg": 9.7,
-      "awayScore": 111,
+      "awayScore": 111.0,
       "awaySpread": -6.5,
       "awaySpreadOdds": -106,
       "confidence": "solid",
@@ -297,14 +297,14 @@
       "homeMoneyline": 180,
       "homeNetRtg": -1.7,
       "homePDpg": -1.75,
-      "homeScore": 116,
+      "homeScore": 116.0,
       "homeSpread": 6.5,
       "homeSpreadOdds": -114,
       "netRtgGap": 62.07,
       "pick": "Houston Rockets",
       "pickCover": false,
-      "pickReturn": -100,
-      "pickSpreadReturn": -100,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -313,7 +313,7 @@
         "Injuries: HOU down Sheppard, Adams (out), Sengun and Smart (questionable); DAL far thinner - Kyrie Irving, Lively, Gafford, Exum, Biberovic, Aldama, K.Thompson all out, P.Washington questionable"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-3",
@@ -338,7 +338,7 @@
       "awayMoneyline": 235,
       "awayNetRtg": -3.85,
       "awayPDpg": -3.9,
-      "awayScore": 125,
+      "awayScore": 125.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -347,7 +347,7 @@
       "homeMoneyline": -245,
       "homeNetRtg": -2.65,
       "homePDpg": -2.7,
-      "homeScore": 145,
+      "homeScore": 145.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 6.9,
@@ -363,7 +363,37 @@
         "Injuries: IND missing Haliburton, McConnell, B.Sheppard (surgery), Furphy (season-ending) - all out; MIA down only Fontecchio (DTD)"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9,
+      "statsFavors": "Miami Heat",
+      "statsRules": [
+        {
+          "rule": 44,
+          "name": "Revenge: back a team at home with the worse record after losing the last meeting by 10-19 as the favorite (on trial)",
+          "backtest": "67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15",
+          "detail": "Backing Miami Heat: Miami Heat lost the last meeting by 17 (Miami Heat 118 @ Indiana Pacers 135, 2026-03-29) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15.",
+          "backfill": true
+        },
+        {
+          "rule": 45,
+          "name": "Revenge: back a team with the worse record after losing the last meeting by 10-19 as the favorite, its 2nd+ straight loss to them (on trial)",
+          "backtest": "64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16",
+          "detail": "Backing Miami Heat: Miami Heat lost the last meeting by 17 (Miami Heat 118 @ Indiana Pacers 135, 2026-03-29) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16.",
+          "backfill": true
+        },
+        {
+          "rule": 46,
+          "name": "Revenge: back a favored team with the worse record after losing the last meeting as the favorite, its 2nd+ straight loss to them (on trial)",
+          "backtest": "62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16",
+          "detail": "Backing Miami Heat: Miami Heat lost the last meeting by 17 (Miami Heat 118 @ Indiana Pacers 135, 2026-03-29) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 44: Backing Miami Heat: Miami Heat lost the last meeting by 17 (Miami Heat 118 @ Indiana Pacers 135, 2026-03-29) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15. Rule 45: Backing Miami Heat: Miami Heat lost the last meeting by 17 (Miami Heat 118 @ Indiana Pacers 135, 2026-03-29) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16. Rule 46: Backing Miami Heat: Miami Heat lost the last meeting by 17 (Miami Heat 118 @ Indiana Pacers 135, 2026-03-29) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16.",
+      "statsCorrect": true,
+      "statsReturn": 40.82,
+      "statsCover": true,
+      "statsSpreadReturn": 90.91
     },
     {
       "altCategoryTally": "0-2",
@@ -388,7 +418,7 @@
       "awayMoneyline": 235,
       "awayNetRtg": -0.15,
       "awayPDpg": -0.15,
-      "awayScore": 101,
+      "awayScore": 101.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -397,7 +427,7 @@
       "homeMoneyline": -238,
       "homeNetRtg": 7.7,
       "homePDpg": 8,
-      "homeScore": 127,
+      "homeScore": 127.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 41.38,
@@ -413,7 +443,7 @@
         "Injuries: LAC extremely thin - Niederhauser, Strus, Ingram, Beal, Miller out, Hachimura DTD (6 total); MIN missing star Anthony Edwards and DiVincenzo (both out)"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "2-2",
@@ -438,7 +468,7 @@
       "awayMoneyline": -164,
       "awayNetRtg": 1,
       "awayPDpg": 1,
-      "awayScore": 127,
+      "awayScore": 127.0,
       "awaySpread": -4.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -447,7 +477,7 @@
       "homeMoneyline": 143,
       "homeNetRtg": -6.5,
       "homePDpg": -6.45,
-      "homeScore": 120,
+      "homeScore": 120.0,
       "homeSpread": 4.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 31.03,
@@ -463,7 +493,7 @@
         "Injuries: DEN down 4 - C.Johnson, S.Jones, Diallo, Strawther (all out); PHX missing M.Williams (out), Ighodaro (DTD)"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "0-0",
@@ -488,7 +518,7 @@
       "awayMoneyline": -120,
       "awayNetRtg": 5.7,
       "awayPDpg": 5.65,
-      "awayScore": 95,
+      "awayScore": 95.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -114,
       "confidence": "lean",
@@ -497,14 +527,14 @@
       "homeMoneyline": 106,
       "homeNetRtg": -1.2,
       "homePDpg": -1.2,
-      "homeScore": 112,
+      "homeScore": 112.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 31.03,
       "pick": "Los Angeles Lakers",
       "pickCover": false,
-      "pickReturn": -100,
-      "pickSpreadReturn": -100,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -513,7 +543,7 @@
         "Injuries: LAL's Luka Doncic questionable (back); also down Carr, Thiero (out), Z.Williams DTD; GSW missing Porzingis, Moody, Jimmy Butler (all out, long-term), Santos DTD"
       ],
       "time": "10:00 PM ET",
-      "totalsBackfill": 8
+      "totalsBackfill": 9
     }
   ]
 }

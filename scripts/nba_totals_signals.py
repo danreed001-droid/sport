@@ -369,7 +369,8 @@ def backfill(points, rows, dates):
             side = verdict(rules)
             before = (g.get("totalsFavors"), [r["rule"] for r in g.get("totalsRules") or []])
             g["totalsBackfill"] = BACKFILL_VERSION  # checked with every rule, even when none fired, so it's never re-done
-            for k in ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsCorrect", "totalsReturn"):
+            # A game with no pick keeps the line recorded before tip-off; a backfilled pick uses the closing line.
+            for k in (("totalsLine",) if side else ()) + ("totalsFavors", "totalsRules", "totalsCheck", "totalsCorrect", "totalsReturn"):
                 g.pop(k, None)
             if side:
                 g["totalsLine"], g["totalsFavors"], g["totalsRules"] = total, side, rules
