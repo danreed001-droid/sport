@@ -3,104 +3,15 @@
   "weekday": "Thursday",
   "sport": "ncaab",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-05T10:59:01Z",
+  "generatedAt": "2026-11-05T16:35:07Z",
   "games": [
-    {
-      "espnId": "401909726",
-      "away": "Wake Forest Demon Deacons",
-      "home": "Vanderbilt Commodores",
-      "time": "6:00 PM ET",
-      "homeSpread": -17.5,
-      "awaySpread": 17.5,
-      "homeSpreadOdds": -112,
-      "awaySpreadOdds": -108,
-      "homeMoneyline": -2400,
-      "awayMoneyline": 1200,
-      "total": 154.5
-    },
-    {
-      "espnId": "401906770",
-      "away": "Jacksonville Dolphins",
-      "home": "Florida Gators",
-      "time": "8:00 PM ET",
-      "homeSpread": -33.5,
-      "awaySpread": 33.5,
-      "homeSpreadOdds": -110,
-      "awaySpreadOdds": -110,
-      "total": 152.5
-    },
-    {
-      "espnId": "401909563",
-      "away": "Coastal Carolina Chanticleers",
-      "home": "Duke Blue Devils",
-      "time": "8:00 PM ET",
-      "homeSpread": -40.5,
-      "awaySpread": 40.5,
-      "homeSpreadOdds": -115,
-      "awaySpreadOdds": -105,
-      "total": 147.5
-    },
-    {
-      "espnId": "401925754",
-      "away": "Toledo Rockets",
-      "home": "Michigan State Spartans",
-      "time": "8:00 PM ET",
-      "homeSpread": -26.5,
-      "awaySpread": 26.5,
-      "homeSpreadOdds": -108,
-      "awaySpreadOdds": -112,
-      "homeMoneyline": -10000,
-      "awayMoneyline": 3000,
-      "total": 153.5
-    },
-    {
-      "espnId": "401906864",
-      "away": "Gardner-Webb Runnin' Bulldogs",
-      "home": "Texas Longhorns",
-      "time": "8:00 PM ET",
-      "homeSpread": -38.5,
-      "awaySpread": 38.5,
-      "homeSpreadOdds": -110,
-      "awaySpreadOdds": -110,
-      "total": 154.5
-    },
-    {
-      "espnId": "401913526",
-      "away": "Pennsylvania Quakers",
-      "home": "Illinois Fighting Illini",
-      "time": "8:30 PM ET",
-      "homeSpread": -30.5,
-      "awaySpread": 30.5,
-      "homeSpreadOdds": -110,
-      "awaySpreadOdds": -110,
-      "total": 169.5
-    },
-    {
-      "espnId": "401921133",
-      "away": "Bethune-Cookman Wildcats",
-      "home": "Texas Tech Red Raiders",
-      "time": "9:00 PM ET",
-      "homeSpread": -26.5,
-      "awaySpread": 26.5,
-      "homeSpreadOdds": -110,
-      "awaySpreadOdds": -110,
-      "homeMoneyline": -10000,
-      "awayMoneyline": 3000,
-      "total": 150.5
-    },
-    {
-      "espnId": "401909739",
-      "away": "Cal Poly Mustangs",
-      "home": "Arizona Wildcats",
-      "time": "10:30 PM ET",
-      "homeSpread": -30.5,
-      "awaySpread": 30.5,
-      "homeSpreadOdds": -115,
-      "awaySpreadOdds": -105,
-      "homeMoneyline": -100000,
-      "awayMoneyline": 5000,
-      "total": 173.5
-    }
+    {"altCategoryTally":"1-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: blended PD/g 11.6 (Wake) vs 28.4 (Vandy) favors Vanderbilt, though Wake's last-season component is unreliable given its roster overhaul -- favors Vanderbilt","Rest: no rest discrepancy noted -- neutral","Travel: standard non-conference road trip, nothing notable -- neutral","Injuries/Lineup: no current in-game injuries flagged either side (Collins' departure is an offseason roster change, not a tonight injury) -- neutral","Form: both 1-0 in blowout openers, but Vanderbilt's margin (+46) dwarfs Wake's (+21) -- favors Vanderbilt","Motivation/Spot: this is leg two of a home-and-home Vandy won last year -- a revenge/measuring-stick spot for Wake Forest -- favors Wake Forest","Venue/Crowd: Memorial Gym, no notable extra edge cited -- neutral","Market: line moved only 1 point (Vandy -17.5 to -18.5) -- not a decisive signal -- neutral","Matchup splits: no specific unit mismatch beyond the overall gap already captured -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Wake Forest Demon Deacons","awayMoneyline":1300,"awayPDpg":11.6,"awayRank":null,"awayScore":null,"awaySpread":18.5,"awaySpreadOdds":-115,"confidence":"skip","correct":null,"home":"Vanderbilt Commodores","homeMoneyline":-2800,"homePDpg":28.4,"homeRank":24,"homeScore":null,"homeSpread":-18.5,"homeSpreadOdds":-105,"offGap":18.96,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +21.0 (1 GP) vs +46.0 (1 GP) this season; blended 50/50 with 2025-26 final (+2.2 / +10.8) -> 11.6 vs 28.4","AdjOE 109.0 (rank 107/365, pct 70.9) vs 115.4 (rank 38/365, pct 89.8) -- gap 19.0 (current-season only; last-season split unavailable)","Wake Forest returns just 1 scholarship player after a near-total transfer-portal overhaul (last season's number barely represents this roster); Vanderbilt lost G Frankie Collins (injury/departure) but returns its core"],"time":"6:00 PM ET"},
+    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: blended PD/g 1.75 (Toledo) vs 23.95 (MSU) -- favors Michigan State","Rest: no rest discrepancy noted -- neutral","Travel: standard MAC road trip for Toledo, nothing notable -- neutral","Injuries/Lineup: no injuries reported either side -- neutral","Form: MSU 1-0 in a 37-point blowout; Toledo 0-1 in a narrow 1-point loss -- favors Michigan State","Motivation/Spot: standard non-conference buy game for MSU's home slate, no rivalry/revenge -- neutral","Venue/Crowd: Breslin Center, solid environment but nothing exceptional cited -- neutral","Market: line moved only 1 point (MSU -26.5 to -27.5) -- not decisive -- neutral","Matchup splits: no specific unit mismatch beyond the overall gap already captured -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Toledo Rockets","awayMoneyline":3500,"awayPDpg":1.75,"awayRank":null,"awayScore":null,"awaySpread":27.5,"awaySpreadOdds":-112,"confidence":"solid","correct":null,"home":"Michigan State Spartans","homeMoneyline":-20000,"homePDpg":23.95,"homeRank":6,"homeScore":null,"homeSpread":-27.5,"homeSpreadOdds":-108,"offGap":37.09,"pick":"Michigan State Spartans","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -1.0 (1 GP) vs +37.0 (1 GP) this season; blended 50/50 with 2025-26 final (+4.5 / +10.9) -> 1.75 vs 23.95","AdjOE 106.0 (rank 149/365, pct 59.3) vs 118.0 (rank 14/365, pct 96.4) -- gap 37.1","AdjDE 105.5 (rank 170) vs 93.5 (rank 9) -- MSU's defense is far better, so no def-veto","No notable injuries either side; MSU PG Jeremy Fears Jr. looked fully healthy (13p/11a in the opener)"],"time":"8:00 PM ET"},
+    {"altCategoryTally":"1-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: blended PD/g -28.65 (Gardner-Webb) vs 28.3 (Texas) -- favors Texas","Rest: no rest discrepancy noted -- neutral","Travel: standard road trip for Gardner-Webb, nothing notable -- neutral","Injuries/Lineup: Texas is missing G Mikey Lewis (fractured foot) and Gardner-Webb has no reported absences -- favors Gardner-Webb","Form: Texas 1-0 in a 50-point blowout win; Gardner-Webb 0-1 in a 40-point blowout loss -- favors Texas","Motivation/Spot: standard buy game for Texas, no rivalry/revenge -- neutral","Venue/Crowd: Moody Center, nothing notable cited beyond standard home court -- neutral","Market: line moved 2 points toward Texas (-39.5 to -41.5) -- favors Texas","Matchup splits: no specific unit mismatch beyond the overall gap already captured -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Gardner-Webb Runnin' Bulldogs","awayMoneyline":3300,"awayPDpg":-28.65,"awayRank":null,"awayScore":null,"awaySpread":41.5,"awaySpreadOdds":-105,"confidence":"skip","correct":null,"home":"Texas Longhorns","homeMoneyline":-10000,"homePDpg":28.3,"homeRank":7,"homeScore":null,"homeSpread":-41.5,"homeSpreadOdds":-115,"offGap":null,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"no-data","skipped":true,"statLines":["PD/g -40.0 (1 GP) vs +50.0 (1 GP) this season; blended 50/50 with 2025-26 final (-17.3 / +6.6) -> -28.65 vs 28.3","Current adjusted efficiency for Gardner-Webb unavailable (KenPom/BartTorvik/TeamRankings all blocked automated access despite repeated attempts) -- Ledger skipped for no-data","Texas missing G Mikey Lewis (fractured foot, out indefinitely); no injuries reported for Gardner-Webb"],"time":"8:00 PM ET"},
+    {"altCategoryTally":"1-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: using Jacksonville's 2025-26 final PD/g (-0.3, this season's margin unknown) vs Florida's blended 12.8 -- favors Florida","Rest: no rest discrepancy noted -- neutral","Travel: short in-state trip for Jacksonville, nothing notable -- neutral","Injuries/Lineup: no injuries reported either side -- neutral","Form: both 1-0, but Florida beat a high-major (Miami) while Jacksonville beat a small non-D1-caliber opponent -- favors Florida","Motivation/Spot: Jacksonville HC Jordan Mincy, a former Florida assistant, returns to Gainesville -- favors Jacksonville","Venue/Crowd: standard home setting at Exactech Arena, nothing exceptional cited -- neutral","Market: no notable line movement reported -- neutral","Matchup splits: no specific unit mismatch beyond the overall gap already captured -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Jacksonville Dolphins","awayMoneyline":3300,"awayPDpg":null,"awayRank":null,"awayScore":null,"awaySpread":34.5,"awaySpreadOdds":null,"confidence":"skip","correct":null,"home":"Florida Gators","homeMoneyline":-10000,"homePDpg":12.8,"homeRank":1,"homeScore":null,"homeSpread":-34.5,"homeSpreadOdds":null,"offGap":45.61,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"no-data","skipped":true,"statLines":["Jacksonville's this-season PD/g is unknown (1-0, but the exact margin vs Paine College could not be found); Florida is +10.0 (1 GP), blended 50/50 with 2025-26 final +15.6 -> 12.8","AdjOE 104.9 (rank 172/365, pct 53.0) vs 119.6 (rank 6/365, pct 98.6) -- gap 45.6","Florida returns its entire Final Four core (Haugh, Chinyelu, Condon, Fland, Klavzar) plus transfer Aberdeen, no injuries reported; Jacksonville HC Jordan Mincy (ex-UF assistant) returns to Gainesville","Ledger skipped: Jacksonville's this-season PD/g is genuinely unavailable (no-data)"],"time":"8:00 PM ET"},
+    {"altCategoryTally":"0-4","altConfidence":"lean","altCorrect":null,"altCover":null,"altPick":"Duke Blue Devils","altReasons":["Scoring margin: blended PD/g -1.35 (Coastal) vs 26.0 (Duke) -- favors Duke","Rest: no rest discrepancy noted -- neutral","Travel: standard road trip for Coastal Carolina, nothing notable -- neutral","Injuries/Lineup: no current in-game injuries flagged either side (Coastal's newcomers are an offseason roster change, not a tonight injury) -- neutral","Form: Duke 1-0 in a dominant win; Coastal Carolina 0-1 in a bad home loss to Eastern Michigan -- favors Duke","Motivation/Spot: standard non-conference buy game, no rivalry/revenge -- neutral","Venue/Crowd: Cameron Indoor Stadium is a nationally notable home-court advantage -- favors Duke","Market: line has continued drifting toward Duke (-39.5 to -40/-40.5) -- favors Duke","Matchup splits: no specific unit mismatch beyond the overall gap already captured -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Coastal Carolina Chanticleers","awayMoneyline":3300,"awayPDpg":-1.35,"awayRank":null,"awayScore":null,"awaySpread":40,"awaySpreadOdds":null,"confidence":"skip","correct":null,"home":"Duke Blue Devils","homeMoneyline":-10000,"homePDpg":26,"homeRank":2,"homeScore":null,"homeSpread":-40,"homeSpreadOdds":null,"offGap":null,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"no-data","skipped":true,"statLines":["PD/g -1.0 (1 GP) vs +34.0 (1 GP) this season; blended 50/50 with 2025-26 final (-1.7 / +18.0) -> -1.35 vs 26.0","Current adjusted efficiency for Coastal Carolina unavailable (KenPom/BartTorvik both blocked repeatedly) -- Ledger skipped for no-data; Duke currently AdjOE rank 3/365, AdjDE rank 1/365","Coastal Carolina brought in 11 newcomers and lost its opener to Eastern Michigan 70-71; Duke lost freshman Cameron Boozer to the NBA draft but has reloaded (current #3 offense, #1 defense nationally)"],"time":"8:00 PM ET"},
+    {"altCategoryTally":"1-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Illinois's blended 23.75 vs Penn's 2025-26 final +1.5 -- favors Illinois","Rest: no rest discrepancy noted -- neutral","Travel: Penn's true road opener in Champaign, nothing flagged as unusual -- neutral","Injuries/Lineup: Penn's TJ Power/Ethan Roberts injury histories could not be confirmed as current -- neutral (unverifiable)","Form: Illinois is fresh off a 104-71 blowout with the nation's #1 current adjusted offense; Penn has no current-season sample -- favors Illinois","Motivation/Spot: explicit rematch of last March's NCAA Tournament blowout (Illinois won 105-70) -- a classic revenge spot for Penn -- favors Penn","Venue/Crowd: State Farm Center, nothing exceptional cited beyond standard home court -- neutral","Market: no notable line movement reported -- neutral","Matchup splits: no specific unit mismatch beyond the overall gap already captured -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Penn Quakers","awayMoneyline":3300,"awayPDpg":1.5,"awayRank":null,"awayScore":null,"awaySpread":30.5,"awaySpreadOdds":null,"confidence":"skip","correct":null,"home":"Illinois Fighting Illini","homeMoneyline":-10000,"homePDpg":23.75,"homeRank":3,"homeScore":null,"homeSpread":-30.5,"homeSpreadOdds":null,"offGap":null,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"no-data","skipped":true,"statLines":["Penn has played 0 games this season (tonight is its opener), so uses 2025-26 final PD/g +1.5; Illinois is +33.0 (1 GP) blended 50/50 with 2025-26 final +14.5 -> 23.75","Current and last-season adjusted-efficiency figures for Penn are unavailable -- Ledger skipped for no-data; Illinois currently AdjOE rank 1/365 (122.2), AdjDE rank 16/365","Rematch of the 2025-26 NCAA Tournament first round, which Illinois won 105-70 en route to the Final Four; no injuries confirmed for either team tonight"],"time":"8:30 PM ET"},
+    {"altCategoryTally":"1-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: blended PD/g would favor Texas Tech, but Toppin (Tech's best player) is out, so this can't count for Tech -- neutral","Rest: no rest discrepancy noted -- neutral","Travel: standard road trip for Bethune-Cookman, nothing notable -- neutral","Injuries/Lineup: Texas Tech is missing star F JT Toppin; Bethune-Cookman has no reported absences -- favors Bethune-Cookman","Form: Tech's blowout opener can't count for Tech per the Toppin-out rule, and Bethune-Cookman's own 0-1 form doesn't swing it to them -- neutral","Motivation/Spot: standard buy game for Tech's home opener, no rivalry/revenge -- neutral","Venue/Crowd: United Supermarkets Arena, nothing exceptional cited -- neutral","Market: line moved 3 points toward Tech (-26.5 to -29.5) even without Toppin -- favors Texas Tech","Matchup splits: no specific unit mismatch beyond the overall gap already captured -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Bethune-Cookman Wildcats","awayMoneyline":2500,"awayPDpg":-5.3,"awayRank":null,"awayScore":null,"awaySpread":29.5,"awaySpreadOdds":-115,"confidence":"solid","correct":null,"home":"Texas Tech Red Raiders","homeMoneyline":-9000,"homePDpg":20.6,"homeRank":19,"homeScore":null,"homeSpread":-29.5,"homeSpreadOdds":-105,"offGap":53.3,"pick":"Texas Tech Red Raiders","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -9.0 (1 GP) vs +34.0 (1 GP) this season; blended 50/50 with 2025-26 final (-1.6 / +7.2) -> -5.3 vs 20.6","AdjOE 103.5 (rank 201/365, pct 45.1) vs 119.5 (rank 7/365, pct 98.4) -- gap 53.3","AdjDE 105.8 (rank 180) vs 96.4 (rank 23) -- Tech's defense is better, so no def-veto","Texas Tech star F JT Toppin (recovering from a Feb. 2026 ACL tear) is still out and missed the opener too; no injuries reported for Bethune-Cookman"],"time":"9:00 PM ET"},
+    {"altCategoryTally":"0-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: blended PD/g 6.55 (Cal Poly) vs 10.4 (Arizona) favors Arizona on raw margin, and Arizona's win came over a ranked opponent (then-#15 UCLA) vs Cal Poly's D-II opponent -- favors Arizona","Rest: no rest discrepancy noted -- neutral","Travel: standard road trip for Cal Poly, nothing notable -- neutral","Injuries/Lineup: no injuries reported either side -- neutral","Form: Arizona's neutral-site win over a ranked UCLA team is far more impressive than Cal Poly's win over a D-II opponent -- favors Arizona","Motivation/Spot: standard home-opener buy game for Arizona, no rivalry/revenge -- neutral","Venue/Crowd: McKale Center has a well-known home-court reputation -- favors Arizona","Market: spread moved only 1 point toward Arizona while the total jumped ~5 points (not team-directional) -- neutral","Matchup splits: no specific unit mismatch beyond the overall gap already captured -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Cal Poly Mustangs","awayMoneyline":5000,"awayPDpg":6.55,"awayRank":null,"awayScore":null,"awaySpread":30.5,"awaySpreadOdds":-105,"confidence":"skip","correct":null,"home":"Arizona Wildcats","homeMoneyline":-20000,"homePDpg":10.4,"homeRank":5,"homeScore":null,"homeSpread":-30.5,"homeSpreadOdds":-115,"offGap":null,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"no-data","skipped":true,"statLines":["PD/g +16.0 (1 GP, vs a D-II opponent) vs +4.0 (1 GP, neutral-site win over then-#15 UCLA) this season; blended 50/50 with 2025-26 final (-2.9 / +16.8) -> 6.55 vs 10.4","Current adjusted efficiency for Cal Poly unavailable (BartTorvik page never cleared its bot-check despite ~6 attempts) -- Ledger skipped for no-data; Arizona currently AdjOE rank 12/365, AdjDE rank 2/365","Arizona returns Final Four pieces Krivas and Kharchenkov plus transfer RJ Godfrey (his suspension applied only to Aug. exhibitions, not tonight); no injuries reported for Cal Poly"],"time":"10:30 PM ET"}
   ]
 }
