@@ -22,7 +22,6 @@ RULE_NAMES = {
     36: "Back a team on the road after a 30+ point home loss (on trial)",
     37: "Back a team on the road, rested, after a 30+ point home loss (on trial)",
     39: "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
-    41: "Both teams on a back-to-back: back the home team when it's favored and the road team has the better record (on trial)",
     43: "Both teams on a back-to-back: back a home team favored by 5+ that played on the road last night (on trial)",
     44: "Revenge: back a team at home with the worse record after losing the last meeting by 10-19 as the favorite (on trial)",
     45: "Revenge: back a team with the worse record after losing the last meeting by 10-19 as the favorite, its 2nd+ straight loss to them (on trial)",
@@ -33,24 +32,23 @@ RULE_NAMES = {
 }
 RULE_BACKTEST = {
     2: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
-    9: "69.9% ATS, 65-28 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
-    16: "73.9% ATS, 34-12 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
-    17: "62.6% ATS, 62-37 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
-    20: "68.3% ATS, 41-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-7",
-    21: "65.8% ATS, 50-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8",
-    24: "62.8% ATS, 76-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14",
-    28: "61.5% ATS, 88-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17",
+    9: "68.9% ATS, 62-28 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+    16: "69.0% ATS, 29-13 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+    17: "62.0% ATS, 62-38 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+    20: "68.9% ATS, 42-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-7",
+    21: "66.2% ATS, 51-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8",
+    24: "63.1% ATS, 77-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14",
+    28: "61.8% ATS, 89-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17",
     36: "64.9% ATS, 48-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8",
-    37: "65.6% ATS, 42-22 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-6",
-    39: "61.4% ATS, 43-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9",
-    41: "64.2% ATS, 34-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 6-4",
-    43: "62.3% ATS, 43-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
+    37: "64.6% ATS, 42-23 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-6",
+    39: "62.0% ATS, 44-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9",
+    43: "64.9% ATS, 37-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
     44: "67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15",
     45: "64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16",
     46: "62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16",
     47: "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
     48: "63.4% ATS, 83-48 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 37-26",
-    49: "69.1% ATS, 85-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 31-15",
+    49: "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
 }
 
 # Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the
@@ -58,7 +56,10 @@ RULE_BACKTEST = {
 # Also retired 2026-11-03 for going under 55% on the unseen seasons (2018-19 +
 # 2021-22): 35.
 # Their code paths stay in nba_stats_signals.py but never pick; numbers aren't reused.
-RETIRED = {14, 18, 19, 22, 23, 25, 26, 27, 29, 33, 34, 35, 38, 40, 42}
+# Retired 2026-11-05: 41 (60.0%, 27-18) once 2025-26 games were dated by their
+# Eastern tip-off date -- the lines archive's 2025-26 dates are UTC, a day late
+# for evening games, which had miscounted some back-to-backs in the replay.
+RETIRED = {14, 18, 19, 22, 23, 25, 26, 27, 29, 33, 34, 35, 38, 40, 41, 42}
 
 # A pick two or more rules agree on ("stacked"), replayed on the same six
 # unseen seasons: one-rule picks went 57.4% (269-200).

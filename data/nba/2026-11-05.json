@@ -103,7 +103,7 @@
         "Heat are on the 2nd night of a back-to-back (OT win at LA Clippers Nov 4) with an LA-to-Bay-Area turnaround; no Heat injuries found on trackers",
         "Warriors are rested (3 days off) on a 5-game win streak despite missing Butler, Porzingis, Moody and Santos (4 OUT)"
       ],
-      "statsCheck": "Rule 2: Fading Miami Heat: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77). Rule 9: Fading Miami Heat: came back to win last night after trailing by 9 through 3 quarters (5+), now on the second night of a back-to-back -- teams in this spot were faded 68.1% of the time ATS (n=91). Rule 49: Fading Miami Heat: only 8 players played 10+ minutes in last night's game (vs LA Clippers), now a +7.5 underdog on the second night of a back-to-back -- 69.1% ATS, 85-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 31-15.",
+      "statsCheck": "Rule 2: Fading Miami Heat: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77). Rule 9: Fading Miami Heat: came back to win last night after trailing by 9 through 3 quarters (5+), now on the second night of a back-to-back -- teams in this spot were faded 68.1% of the time ATS (n=91). Rule 49: Fading Miami Heat: only 8 players played 10+ minutes in last night's game (vs LA Clippers), now a +7.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13.",
       "statsFavors": "Golden State Warriors",
       "statsRules": [
         {
@@ -115,14 +115,14 @@
         {
           "rule": 9,
           "name": "Fade a late comeback on the back-to-back",
-          "backtest": "69.9% ATS, 65-28 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+          "backtest": "68.9% ATS, 62-28 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
           "detail": "Fading Miami Heat: came back to win last night after trailing by 9 through 3 quarters (5+), now on the second night of a back-to-back -- teams in this spot were faded 68.1% of the time ATS (n=91)."
         },
         {
           "rule": 49,
           "name": "Fade a 7+ point underdog on a back-to-back that used 8 or fewer players (10+ min) last game (on trial)",
-          "backtest": "69.1% ATS, 85-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 31-15",
-          "detail": "Fading Miami Heat: only 8 players played 10+ minutes in last night's game (vs LA Clippers), now a +7.5 underdog on the second night of a back-to-back -- 69.1% ATS, 85-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 31-15."
+          "backtest": "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
+          "detail": "Fading Miami Heat: only 8 players played 10+ minutes in last night's game (vs LA Clippers), now a +7.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
         }
       ],
       "time": "10:00 PM ET",

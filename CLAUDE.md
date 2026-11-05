@@ -55,8 +55,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 41, 43, 44, 45, 46, 47, 48, 49; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
+  `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
+  evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
+  start time in Eastern. Re-dating them on 2026-11-05 retired NBA Stats 41
+  (60.0%).
   Older seasons' odds (kyleskom, 2018-19 to 2021-22) store the spread
   unsigned, so the favorite comes from the moneylines, and call Charlotte
   "Bobcats".
