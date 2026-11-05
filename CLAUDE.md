@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 41, 43, 44, 45, 46, 47, 48; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 41, 43, 44, 45, 46, 47, 48, 49; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   Older seasons' odds (kyleskom, 2018-19 to 2021-22) store the spread
   unsigned, so the favorite comes from the moneylines, and call Charlotte
@@ -113,6 +113,13 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   10-19 last season, worse record, only that meeting; 48 FADES a team that lost
   at home as the underdog and is now a home favorite. Revenge with both teams in
   good form, and adding turnover trends, were tested and didn't clear the bar.
+  Rule 49 (on trial) fades a 7+ point underdog on a back-to-back whose last
+  game used 8 or fewer players for 10+ minutes (`BoxCache.rotation`, from the
+  box score's MIN; both teams 6+ games played). It came from a 2026-11-05
+  search of player box-score facts (last game / last 3, both teams) where a
+  game-level shuffle passed 36-91 combinations vs 79 real, so it's on trial;
+  last-game team stats and 3/5-game stat trends were also searched and were
+  no better than luck.
   Overlapping slices of one situation (NBA Stats 20-29, 35-40, 41-43, 44-48; NBA Totals 4-8,
   9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`

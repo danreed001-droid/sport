@@ -158,6 +158,7 @@ ALLOWED_REST = {
         25: {}, 26: {"rested": True}, 27: {"rested": True}, 28: {}, 29: {},
         33: {}, 34: {}, 35: {}, 36: {}, 37: {"rested": True}, 38: {"rested": True},
         39: {}, 40: {"rested": True}, 41: {}, 42: {}, 43: {}, 44: {}, 45: {}, 46: {}, 47: {}, 48: {}}.items()},
+    49: {"b2b"},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
@@ -358,6 +359,17 @@ class BoxCache:
     def starters(self, event_id, team):
         return self._entry(event_id).get("starters", {}).get(team)
 
+    def rotation(self, event_id, team):
+        """How many of `team`'s players played 10+ minutes (rule 49). Entries
+        cached before this was added are fetched again once, when needed."""
+        e = self._entry(event_id)
+        if e and "rot" not in e:
+            new = self._fetch(event_id)
+            if new:
+                e = self.data[event_id] = new
+                self.dirty = True
+        return (e or {}).get("rot", {}).get(team)
+
     def is_regular_season(self, event_id):
         return self._entry(event_id).get("type") == 2
 
@@ -375,7 +387,7 @@ class BoxCache:
             return None
         box = d.get("boxscore", {})
         pts_by_team, to_by_team, ast_by_team, stl_by_team, ftm_by_team, reb_by_team, starters_by_team = {}, {}, {}, {}, {}, {}, {}
-        ast_p_by_team, tp_by_team = {}, {}
+        ast_p_by_team, tp_by_team, rot_by_team = {}, {}, {}
         for t in box.get("players", []):
             if not t.get("statistics"):
                 continue
@@ -384,6 +396,8 @@ class BoxCache:
             if "PTS" not in labels:
                 continue
             i = labels.index("PTS")
+            mi = labels.index("MIN") if "MIN" in labels else None
+            rot = 0
             r = labels.index("REB") if "REB" in labels else None
             a = labels.index("AST") if "AST" in labels else None
             pts, reb, starters, ast_p = {}, 0, [], {}
@@ -397,6 +411,11 @@ class BoxCache:
                         starters.append(ath["athlete"]["id"])
                     if a is not None and a < len(st):
                         ast_p[ath["athlete"]["id"]] = int(st[a])
+                    if mi is not None and mi < len(st):
+                        try:
+                            rot += float(str(st[mi]).split(":")[0]) >= 10
+                        except ValueError:
+                            pass
                     # Player rebounds, summed -- the backtest's definition (the
                     # team total can also include uncredited "team rebounds").
                     reb += int(st[r]) if r is not None and r < len(st) else 0
@@ -405,6 +424,8 @@ class BoxCache:
             pts_by_team[t["team"]["displayName"]] = pts
             starters_by_team[t["team"]["displayName"]] = starters
             ast_p_by_team[t["team"]["displayName"]] = ast_p
+            if mi is not None:
+                rot_by_team[t["team"]["displayName"]] = rot
             if r is not None:
                 reb_by_team[t["team"]["displayName"]] = reb
         for t in box.get("teams", []):
@@ -426,7 +447,7 @@ class BoxCache:
         if not pts_by_team:
             return None
         return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team, "stl": stl_by_team, "ftm": ftm_by_team, "reb": reb_by_team,
-                "starters": starters_by_team, "ast_p": ast_p_by_team, "tp": tp_by_team, "type": d.get("header", {}).get("season", {}).get("type")}
+                "starters": starters_by_team, "ast_p": ast_p_by_team, "tp": tp_by_team, "rot": rot_by_team, "type": d.get("header", {}).get("season", {}).get("type")}
 
     def save(self):
         if self.dirty:
@@ -584,6 +605,19 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 picks.append((team, 19, f"Backing {team}: lost at home to worse-record {last['opp']} "
                                      f"({last['team_score']:g}-{last['opp_score']:g}) last night, now on the road on a "
                                      f"back-to-back -- teams in this spot covered 65.9% ATS (29-15, 2022-23 to 2025-26)."))
+
+        # Rule 49: fade a 7+ point underdog on a back-to-back whose last game
+        # used 8 or fewer players for 10+ minutes (as backtested: 6+ games
+        # played this season by both teams).
+        my_spread = None if home_spread is None else (home_spread if is_home else -home_spread)
+        opp_prior = [g for g in by_team.get(opp, []) if season0 <= g["date"] < date_str]
+        if (my_spread is not None and my_spread >= 7 and len(prior) >= 6 and len(opp_prior) >= 6
+                and (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days == 1):
+            rot = points.rotation(last["event_id"], team)
+            if rot is not None and rot <= 8:
+                picks.append((opp, 49, f"Fading {team}: only {rot} players played 10+ minutes in last night's game "
+                                    f"(vs {last['opp']}), now a {my_spread:+g} underdog on the second night of a back-to-back "
+                                    f"-- {RULE_BACKTEST.get(49, '')}."))
 
         # Keep only the rules whose backtest cleared 62% for this team's rest
         # (days off since its last game).
