@@ -168,6 +168,21 @@ def build():
                     plays.append(play)
                     bucket = by_sport.setdefault(sport, {k: blank() for k in ("ledger", "alt", "trend", "blowout", "stats", "nflstats", "ncaabstats", "mine")})
                     tally(bucket[who], r)
+                # NBA Totals picks go in the pick log too, under their own keys
+                # (tl line, tr result, tp profit) so the spread/moneyline
+                # dashboard figures never count them.
+                if sport == "nba" and g.get("totalsFavors") and isinstance(g.get("totalsLine"), (int, float)):
+                    play = {"d": date_str, "s": sport, "w": "totals", "g": f"{g.get('away')} @ {g.get('home')}",
+                            "k": f"{g['totalsFavors']} {g['totalsLine']:g}", "tl": g["totalsLine"],
+                            "rr": [{"n": x.get("rule"), "name": nba_totals_rules.RULE_NAMES.get(x.get("rule"), x.get("name", "")),
+                                    "bt": nba_totals_rules.RULE_BACKTEST.get(x.get("rule"), x.get("backtest", ""))}
+                                   for x in g.get("totalsRules") or []]}
+                    if final:
+                        play.update({"tr": totals_result(g), "tp": g.get("totalsReturn"),
+                                     "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
+                    else:
+                        play["pd"] = 1
+                    plays.append(play)
 
     # NBA Stats record per rule this season: a pick counts toward every rule
     # that triggered it.

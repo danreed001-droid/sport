@@ -154,6 +154,7 @@ details.tv table{min-width:0;}
 .logtbl td .rblurb b{color:var(--stats-ink);font-weight:600;}
 .logtbl td .rblurb.nfl b{color:var(--nflstats-ink);}
 .logtbl td .rblurb.ncaab b{color:var(--ncaabstats-ink);}
+.logtbl td .rblurb.tot b{color:var(--totals-ink);}
 .logtbl.dayview .c-date{display:none;}
 .logtbl td.gm{min-width:180px;}
 .logtbl td.gm .sc{display:block;font-size:11px;}
@@ -405,6 +406,8 @@ footer b{color:var(--ink);}
     {k:'mine', label:'You', short:'You', role:'your picks', c:'var(--mine)'}
   ];
   var WHO_BY_KEY = {}; WHO.forEach(function(w){ WHO_BY_KEY[w.k] = w; });
+  // NBA Totals picks show in the pick log only (they are over/under bets, not sides).
+  WHO_BY_KEY.totals = {k:'totals', label:'NBA Totals', short:'NBA Totals', c:'var(--totals)'};
   var DASH = {sports:[], market:'ats', range:'all', from:null, to:null, mlCutoff:false};
   try{ var ds = JSON.parse(localStorage.getItem('picksheet.dash')||'null'); if(ds) DASH = Object.assign(DASH, ds); }catch(e){}
   if(['7','30','year','all','custom'].indexOf(DASH.range) < 0) DASH.range = 'all';
@@ -685,12 +688,12 @@ footer b{color:var(--ink);}
       return '<span class="segctl" role="group" aria-label="'+name+'">'+opts.map(function(o){ return '<button type="button" data-lf="'+name+'" data-v="'+o[0]+'" aria-pressed="'+(LOG[name]===o[0])+'">'+o[1]+'</button>'; }).join('')+'</span>';
     }
     return '<section id="picklog"><div class="eyebrow">Pick log</div><h2 class="sec-h">Every pick, win or lose</h2>'
-      + '<p class="sec-p">Each model\'s pick and yours, graded against the spread and on the moneyline at $100 a bet. Pick a day or a date range; the sports filter above applies too.</p>'
+      + '<p class="sec-p">Each model\'s pick and yours, graded against the spread and on the moneyline at $100 a bet; NBA Totals picks are graded on the over/under at $100, -110, shown in the ATS columns and kept out of the ATS total. Pick a day or a date range; the sports filter above applies too.</p>'
       + '<div class="filters">'
         + '<span class="fgroup"><span class="flbl">Dates</span>'+seg('mode',[['day','Day'],['range','Range']])
           + '<span class="daterange" id="lday"><button type="button" class="stepbtn" id="lprev" aria-label="Previous day with picks">‹</button><label for="ldate" class="sr">Day</label><input type="date" id="ldate"><button type="button" class="stepbtn" id="lnext" aria-label="Next day with picks">›</button></span>'
           + '<span class="daterange" id="lrange" hidden><label for="lfrom" class="sr">From</label><input type="date" id="lfrom"> <span class="to">to</span> <label for="lto" class="sr">To</label><input type="date" id="lto"></span></span>'
-        + '<span class="fgroup"><span class="flbl">Model</span>'+seg('who',[['all','All'],['ledger','Ledger'],['alt','2nd Opinion'],['trend','Trend'],['blowout','Blowout'],['stats','NBA Stats'],['nflstats','NFL Stats'],['ncaabstats','NCAAB Stats'],['mine','You']])+'</span>'
+        + '<span class="fgroup"><span class="flbl">Model</span>'+seg('who',[['all','All'],['ledger','Ledger'],['alt','2nd Opinion'],['trend','Trend'],['blowout','Blowout'],['stats','NBA Stats'],['nflstats','NFL Stats'],['ncaabstats','NCAAB Stats'],['totals','NBA Totals'],['mine','You']])+'</span>'
         + '<span class="fgroup"><span class="flbl">Show</span>'+seg('result',[['all','All picks'],['graded','Graded'],['pending','Pending']])+'</span>'
       + '</div>'
       + '<div class="scroller"><table class="logtbl" id="logtbl"></table></div>'
@@ -702,6 +705,19 @@ footer b{color:var(--ink);}
     if(r==='L') return '<span class="res l">✕ Lost</span>';
     if(r==='P') return '<span class="res p">Push</span>';
     return '';
+  }
+  function totalsLogRow(p, w){
+    var res = p.pd ? '<span class="res pend">Pending</span>' : (p.tr ? resCell(p.tr) : '<span class="muted">—</span>');
+    return '<tr>'
+      + '<td class="c-date">'+fmtDay(p.d)+'</td><td>'+esc(DATA.sportLabels[p.s]||p.s)+'</td>'
+      + '<td><span class="who"><i style="background:'+w.c+'"></i>'+esc(w.short)+'</span></td>'
+      + '<td class="gm">'+esc(p.g)+(p.sc ? '<span class="muted sc">Final '+esc(p.sc)+'</span>' : '')+'</td>'
+      + '<td><b>'+esc(p.k)+'</b>'+(famCount((p.rr||[]).map(function(r){ return r.n; }), totFam)>1 ? ' <span class="stacked">stacked · '+p.rr.length+' rules</span>' : '')
+      + (p.rr||[]).map(function(r){ var sr = (DATA.nbaTotalsRules||[]).filter(function(x){ return x.rule===r.n; })[0], sn = sr ? sr.w+sr.l+sr.p : 0; return '<span class="rblurb tot"><b>Rule '+esc(r.n)+'</b> · '+esc(r.name)+' · past: '+esc(r.bt)+(sn ? ' · this season '+sr.w+'-'+sr.l+(sr.p?'-'+sr.p:'') : '')+'</span>'; }).join('')+'</td>'
+      + '<td class="mono" title="Total (over/under)">O/U '+esc(String(p.tl))+'</td>'
+      + '<td>'+res+'</td>'
+      + '<td class="mono '+(num(p.tp)?cls(p.tp):'flat')+'">'+(num(p.tp) ? money(p.tp) : '—')+'</td>'
+      + '<td class="mono">—</td><td><span class="muted">—</span></td><td class="mono flat">—</td></tr>';
   }
   function renderLog(){
     if(!document.getElementById('picklog')) return;
@@ -720,8 +736,9 @@ footer b{color:var(--ink);}
     var rows = logSportPlays().filter(function(p){ return p.d >= lo && p.d <= hi; }).filter(function(p){
       return (LOG.who==='all' || p.w===LOG.who) && (LOG.result==='all' || (LOG.result==='pending' ? p.pd : !p.pd));
     }).slice().sort(function(a,b){ return a.d<b.d ? 1 : a.d>b.d ? -1 : (a.s<b.s ? -1 : a.s>b.s ? 1 : 0); });
-    var WL = WHO_BY_KEY, t = {aw:0,al:0,ap:0,a$:0,mw:0,ml:0,m$:0};
+    var WL = WHO_BY_KEY, t = {aw:0,al:0,ap:0,a$:0,mw:0,ml:0,m$:0}, tt = {w:0,l:0,p:0,v:0,n:0};
     rows.forEach(function(p){
+      if(p.w==='totals'){ tt.n++; if(p.tr==='W') tt.w++; else if(p.tr==='L') tt.l++; else if(p.tr==='P') tt.p++; if(num(p.tp)) tt.v += p.tp; return; }
       if(p.a==='W') t.aw++; else if(p.a==='L') t.al++; else if(p.a==='P') t.ap++;
       if(num(p.ap)) t.a$ += p.ap;
       // The log's own ML column always shows "No ML bet"/"ATS only" for a
@@ -734,6 +751,7 @@ footer b{color:var(--ink);}
     });
     var body = rows.slice(0, LOG.shown).map(function(p){
       var w = WL[p.w], pend = p.pd;
+      if(p.w==='totals') return totalsLogRow(p, w);
       var ats = pend ? '<span class="res pend">Pending</span>' : (p.a ? resCell(p.a) : '<span class="muted">no line</span>');
       var ml = pend ? '<span class="res pend">Pending</span>' : (p.x ? (p.x===2 ? '<span class="muted" title="Priced -400 or shorter: not a moneyline bet">No ML bet</span>' : '<span class="muted" title="NFL or college pick on a 7+ point dog: counted ATS only">ATS only</span>') : (p.m ? resCell(p.m) : '<span class="muted">—</span>'));
       return '<tr>'
@@ -751,8 +769,8 @@ footer b{color:var(--ink);}
         + '</tr>';
     }).join('');
     var tbl = document.getElementById('logtbl'); tbl.classList.toggle('dayview', LOG.mode==='day');
-    var graded = rows.some(function(p){ return !p.pd; });
-    var foot = rows.length ? '<tfoot><tr><td class="c-date"></td><td colspan="5">Total · '+rows.length+' pick'+(rows.length===1?'':'s')+(rows.length>LOG.shown?' (all, not just the rows shown)':'')+'</td>'
+    var graded = rows.some(function(p){ return !p.pd && p.w!=='totals'; });
+    var foot = rows.length ? '<tfoot><tr><td class="c-date"></td><td colspan="5">Total · '+rows.length+' pick'+(rows.length===1?'':'s')+(rows.length>LOG.shown?' (all, not just the rows shown)':'')+(tt.n ? ' · NBA Totals '+(tt.w+tt.l+tt.p ? tt.w+'-'+tt.l+(tt.p?'-'+tt.p:'')+' '+money(tt.v) : 'pending')+' (not in the ATS total)' : '')+'</td>'
       + '<td class="mono">'+(t.aw+t.al+t.ap ? t.aw+'-'+t.al+(t.ap?'-'+t.ap:'') : '—')+'</td><td class="mono '+(graded?cls(t.a$):'flat')+'">'+(graded?money(t.a$):'—')+'</td><td></td>'
       + '<td class="mono">'+(t.mw+t.ml ? t.mw+'-'+t.ml : '—')+'</td><td class="mono '+(graded?cls(t.m$):'flat')+'">'+(graded?money(t.m$):'—')+'</td></tr></tfoot>' : '';
     document.getElementById('logtbl').innerHTML = '<thead><tr><th class="c-date">Date</th><th>Sport</th><th>Model</th><th>Game</th><th>Pick</th><th>Spread</th><th>ATS</th><th>ATS $</th><th>ML odds</th><th>ML</th><th>ML $</th></tr></thead>'
