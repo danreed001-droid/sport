@@ -19,6 +19,8 @@ RULE_NAMES = {
     10: "Under when the home team is back from a 20+ road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)",
     14: "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
     16: "Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)",
+    20: "Revenge: under when the team that lost the last meeting at home earlier this season is the underdog with the better record (on trial)",
+    21: "Revenge: under when the team that lost the last meeting at home by 10-19 is the underdog with the better record (on trial)",
 }
 RULE_BACKTEST = {
     3: "65.1% overs, 56-30 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
@@ -27,6 +29,8 @@ RULE_BACKTEST = {
     10: "62.8% unders, 59-35 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-17",
     14: "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24",
     16: "67.2% overs, 41-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-8",
+    20: "65.2% unders, 58-31 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 19-14; 2024-now 14-9",
+    21: "64.1% unders, 59-33 (2018-19 and 2021-22 to now); unseen 17-8; 2024-now 19-13",
 }
 
 # Retired 2026-11-03 (under 61% on 2018-19 and 2021-22 to now): 4, 5, 11, 12, 13, 15, 17, 18, 19. Earlier: 1, 2.
@@ -42,7 +46,7 @@ OT_LOOKBACK_DAYS = 10
 # Rules 4-8 are overlapping slices of one situation (a home loss to a
 # worse-record team): several on one game count as one family, not "stacked".
 FAMILY = {**{n: "home-upset-loss" for n in range(4, 9)}, **{n: "home-after-road-blowout" for n in range(9, 16)},
-          **{n: "both-b2b" for n in range(17, 20)}}
+          **{n: "both-b2b" for n in range(17, 20)}, **{n: "revenge" for n in range(20, 22)}}
 
 
 def families(nums):

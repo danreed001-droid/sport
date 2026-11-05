@@ -24,6 +24,11 @@ RULE_NAMES = {
     39: "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
     41: "Both teams on a back-to-back: back the home team when it's favored and the road team has the better record (on trial)",
     43: "Both teams on a back-to-back: back a home team favored by 5+ that played on the road last night (on trial)",
+    44: "Revenge: back a team at home with the worse record after losing the last meeting by 10-19 as the favorite (on trial)",
+    45: "Revenge: back a team with the worse record after losing the last meeting by 10-19 as the favorite, its 2nd+ straight loss to them (on trial)",
+    46: "Revenge: back a favored team with the worse record after losing the last meeting as the favorite, its 2nd+ straight loss to them (on trial)",
+    47: "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
+    48: "Revenge: fade a home favorite that lost the last meeting at home as the underdog (on trial)",
 }
 RULE_BACKTEST = {
     2: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
@@ -39,6 +44,11 @@ RULE_BACKTEST = {
     39: "61.4% ATS, 43-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9",
     41: "64.2% ATS, 34-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 6-4",
     43: "62.3% ATS, 43-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
+    44: "67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15",
+    45: "64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16",
+    46: "62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16",
+    47: "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
+    48: "63.4% ATS, 83-48 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 37-26",
 }
 
 # Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the
@@ -58,7 +68,7 @@ STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule pick
 # several firing on one game is not independent agreement: "stacked" counts
 # distinct families, not rules.
 FAMILY = {**{n: "road-upset" for n in range(20, 30)}, **{n: "blowout-loss" for n in range(35, 41)},
-          **{n: "both-b2b" for n in range(41, 44)}}
+          **{n: "both-b2b" for n in range(41, 44)}, **{n: "revenge" for n in range(44, 49)}}
 
 
 def families(nums):

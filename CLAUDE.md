@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 41, 43; NBA Totals 3, 6, 9, 10, 14, 16. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 41, 43, 44, 45, 46, 47, 48; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   Older seasons' odds (kyleskom, 2018-19 to 2021-22) store the spread
   unsigned, so the favorite comes from the moneylines, and call Charlotte
@@ -72,7 +72,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   that and rested, 8 road after losing by 10+); rules 9-15 UNDER (on trial)
   when the home team is back from a 20+ point road win (`ROAD_BLOWOUT`); rule
   16 OVER (on trial) after a 30+ point road loss, now vs. a worse-record team;
-  rules 17-19 UNDER (on trial) when both teams are on a back-to-back (`BOTH_B2B`). An over and an under rule on
+  rules 17-19 UNDER (on trial) when both teams are on a back-to-back (`BOTH_B2B`);
+  rules 20-21 UNDER (on trial, revenge family) when the team that lost the last
+  meeting at home is now the underdog with the better record (20 that meeting
+  earlier this season, 21 lost it by 10-19). An over and an under rule on
   the same game cancel out (no pick). Adding rules: bump BACKFILL_VERSION in
   `nba_totals_signals.py` and rerun `--backfill` so past games are rechecked. It writes `totalsLine` (refreshed from
   ESPN's pickcenter every run until tip-off, then frozen), `totalsFavors`,
@@ -101,8 +104,17 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   marked `"backfill": true`, a pick made only by backfill `statsBackfill:
   true`); a game already picked the other way is left alone. 38-39 were
   backfilled on 2026-11-03 (4 games).
-  Overlapping slices of one situation (NBA Stats 20-29, NBA Totals 4-8 and
-  9-15) are one "family": several firing
+  Rules 44-48 (on trial, one "revenge" family) play the team that lost the
+  last regular-season meeting with tonight's opponent (this season or last,
+  within 400 days; `lib/nba_revenge.py`, meetings from `data/raw/nba_lines.csv`,
+  equal records excluded): 44 lost it by 10-19 as the favorite, now home with
+  the worse record; 45 same margin as the favorite, worse record, 2+ straight
+  losses to them; 46 favored then and now, worse record, 2+ straight; 47 lost by
+  10-19 last season, worse record, only that meeting; 48 FADES a team that lost
+  at home as the underdog and is now a home favorite. Revenge with both teams in
+  good form, and adding turnover trends, were tested and didn't clear the bar.
+  Overlapping slices of one situation (NBA Stats 20-29, 35-40, 41-43, 44-48; NBA Totals 4-8,
+  9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).
 - `.github/workflows/nba-gametime.yml` re-runs only `nba_stats_signals.py` and

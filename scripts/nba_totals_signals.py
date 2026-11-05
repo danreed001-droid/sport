@@ -16,6 +16,8 @@ lib/nba_totals_rules.py:
   16. OVER (on trial): a team lost its last game by 30+ on the road and now
      faces a worse-record team.
   17-19. UNDER (on trial): both teams on a back-to-back (BOTH_B2B).
+  20-21. UNDER (on trial): revenge spot (lib/nba_revenge.py) -- the team that
+     lost the last meeting at home is tonight's underdog with the better record.
 
 If an over rule and an under rule both fire, the game gets no pick.
 
@@ -44,6 +46,7 @@ from datetime import date
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, store  # noqa: E402
 from lib.nba_absence import big_scorers, injury_status, watch_entries  # noqa: E402
+from lib.nba_revenge import revenge_facts  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str  # noqa: E402
 from lib.nba_totals_rules import OT_LOOKBACK_DAYS, OVER_RULES, RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from score_slate import _same_team  # noqa: E402
@@ -53,7 +56,7 @@ SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsWatch")
 # Bumped whenever rules are added, so --backfill rechecks past games with them.
-BACKFILL_VERSION = 8
+BACKFILL_VERSION = 9
 
 
 def season_start(date_str):
@@ -237,6 +240,16 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=
         for n, cond in ROAD_BLOWOUT.items():
             if all(facts[k] == v for k, v in cond.items()):
                 rules.append({"rule": n, "detail": why})
+    # Rules 20-21: revenge spot where the revenge team has the better record but is the underdog -> under.
+    rv = revenge_facts(g["home"], g["away"], date_str, spread, _same_team)
+    if rv and rv["lost_at_home"] and not rv["fav_now"] and not rv["worse_now"]:
+        rt = g["home"] if rv["rev"] == "home" else g["away"]
+        why = (f"{rt} lost the last meeting at home by {rv['margin']:g} ({rv['last_score']}, {rv['last_date']}); "
+               f"tonight the underdog with the better record.")
+        if rv["recent"] == "earlier this season":
+            rules.append({"rule": 20, "detail": why})
+        if 10 <= rv["margin"] <= 19:
+            rules.append({"rule": 21, "detail": why})
     rules = [r for r in rules if r["rule"] in RULE_NAMES]  # retired rules (lib/nba_totals_rules.RETIRED) never pick
     for r in rules:
         r["name"], r["backtest"] = RULE_NAMES[r["rule"]], RULE_BACKTEST[r["rule"]]

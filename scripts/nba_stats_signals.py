@@ -27,6 +27,9 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   (30-32 were tried and removed; numbers aren't reused.)
   35-40 (on trial), after a 20+ point loss -- see BLOWOUT_LOSS (38 is a fade).
   41-43 (on trial), both teams on a back-to-back: back the home team -- BOTH_B2B.
+  44-48 (on trial), revenge: the team that lost the last meeting
+  (lib/nba_revenge.py) -- 44-47 back it after an upset loss / a 10-19 loss,
+  48 fades it as a home favorite after a home loss it was expected to take.
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -61,6 +64,7 @@ from zoneinfo import ZoneInfo
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn, manual, store  # noqa: E402
 from lib.nba_absence import big_scorers, injury_status, watch_entries  # noqa: E402
+from lib.nba_revenge import revenge_facts  # noqa: E402
 from score_slate import _same_team  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
@@ -153,7 +157,7 @@ ALLOWED_REST = {
         20: {"rested": True}, 21: {}, 22: {"rested": True}, 23: {}, 24: {"rested": True},
         25: {}, 26: {"rested": True}, 27: {"rested": True}, 28: {}, 29: {},
         33: {}, 34: {}, 35: {}, 36: {}, 37: {"rested": True}, 38: {"rested": True},
-        39: {}, 40: {"rested": True}, 41: {}, 42: {}, 43: {}}.items()},
+        39: {}, 40: {"rested": True}, 41: {}, 42: {}, 43: {}, 44: {}, 45: {}, 46: {}, 47: {}, 48: {}}.items()},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
@@ -595,6 +599,27 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                                        f"{'at home' if bb['home_was_home'] else 'on the road'}, {away} "
                                        f"{'won' if bb['road_won'] else 'lost'}); {home} favored by {-home_spread:g}"
                                        f"{', and ' + away + ' has the better record' if bb['road_better'] else ''} -- {RULE_BACKTEST.get(n, '')}."))
+
+    # Rules 44-48: revenge -- the team that lost the last meeting (lib/nba_revenge.py).
+    rv = revenge_facts(home, away, date_str, home_spread, _same_team)
+    if rv:
+        rt = home if rv["rev"] == "home" else away
+        ot = away if rt == home else home
+        mid = 10 <= rv["margin"] <= 19
+        fire = {44: mid and rv["was_fav"] and rv["home_now"] and rv["worse_now"],
+                45: mid and rv["was_fav"] and rv["worse_now"] and rv["streak"] >= 2,
+                46: rv["was_fav"] and rv["fav_now"] and rv["worse_now"] and rv["streak"] >= 2,
+                47: mid and rv["recent"] == "last season" and rv["worse_now"] and rv["streak"] == 1,
+                48: rv["lost_at_home"] and not rv["was_fav"] and rv["home_now"] and rv["fav_now"]}
+        why = (f"{rt} lost the last meeting by {rv['margin']:g} ({rv['last_score']}, {rv['last_date']})"
+               f"{' as the favorite' if rv['was_fav'] else ' as the underdog'}"
+               f"{', its ' + str(rv['streak']) + ' straight loss to them' if rv['streak'] >= 2 else ''}; tonight "
+               f"{'home' if rv['home_now'] else 'on the road'}, {'favored' if rv['fav_now'] else 'the underdog'}, "
+               f"with the {'worse' if rv['worse_now'] else 'better'} record")
+        for n, ok in fire.items():
+            if ok:
+                pick = ot if n == 48 else rt
+                picks.append((pick, n, f"{'Fading' if n == 48 else 'Backing'} {rt}: {why} -- {RULE_BACKTEST.get(n, '')}."))
 
     picks = [p for p in picks if p[1] in RULE_NAMES]  # retired rules (lib/nba_stats_rules.RETIRED) never pick
     if only_rules is not None:  # backfill: just these rules, as if no other rule existed
