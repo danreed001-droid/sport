@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-05",
+  "weekday": "Thursday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-05T10:59:01Z",
+  "games": [
+    {
+      "espnId": "401909726",
+      "away": "Wake Forest Demon Deacons",
+      "home": "Vanderbilt Commodores",
+      "time": "6:00 PM ET",
+      "homeSpread": -17.5,
+      "awaySpread": 17.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -2400,
+      "awayMoneyline": 1200,
+      "total": 154.5
+    },
+    {
+      "espnId": "401906770",
+      "away": "Jacksonville Dolphins",
+      "home": "Florida Gators",
+      "time": "8:00 PM ET",
+      "homeSpread": -33.5,
+      "awaySpread": 33.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 152.5
+    },
+    {
+      "espnId": "401909563",
+      "away": "Coastal Carolina Chanticleers",
+      "home": "Duke Blue Devils",
+      "time": "8:00 PM ET",
+      "homeSpread": -40.5,
+      "awaySpread": 40.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "total": 147.5
+    },
+    {
+      "espnId": "401925754",
+      "away": "Toledo Rockets",
+      "home": "Michigan State Spartans",
+      "time": "8:00 PM ET",
+      "homeSpread": -26.5,
+      "awaySpread": 26.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -10000,
+      "awayMoneyline": 3000,
+      "total": 153.5
+    },
+    {
+      "espnId": "401906864",
+      "away": "Gardner-Webb Runnin' Bulldogs",
+      "home": "Texas Longhorns",
+      "time": "8:00 PM ET",
+      "homeSpread": -38.5,
+      "awaySpread": 38.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 154.5
+    },
+    {
+      "espnId": "401913526",
+      "away": "Pennsylvania Quakers",
+      "home": "Illinois Fighting Illini",
+      "time": "8:30 PM ET",
+      "homeSpread": -30.5,
+      "awaySpread": 30.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 169.5
+    },
+    {
+      "espnId": "401921133",
+      "away": "Bethune-Cookman Wildcats",
+      "home": "Texas Tech Red Raiders",
+      "time": "9:00 PM ET",
+      "homeSpread": -26.5,
+      "awaySpread": 26.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -10000,
+      "awayMoneyline": 3000,
+      "total": 150.5
+    },
+    {
+      "espnId": "401909739",
+      "away": "Cal Poly Mustangs",
+      "home": "Arizona Wildcats",
+      "time": "10:30 PM ET",
+      "homeSpread": -30.5,
+      "awaySpread": 30.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -100000,
+      "awayMoneyline": 5000,
+      "total": 173.5
+    }
+  ]
+}

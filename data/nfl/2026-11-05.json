@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-05",
+  "weekday": "Thursday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-05T10:58:53Z",
+  "games": [
+    {
+      "espnId": "401873037",
+      "away": "Jacksonville Jaguars",
+      "home": "Baltimore Ravens",
+      "time": "8:15 PM ET",
+      "homeSpread": 10.0,
+      "awaySpread": -10.0,
+      "homeSpreadOdds": -112.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": 400.0,
+      "awayMoneyline": -535.0,
+      "nflStatsFavors": "Baltimore Ravens",
+      "nflStatsRules": [
+        {
+          "rule": 1,
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing Baltimore Ravens: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        }
+      ],
+      "nflStatsCheck": "Rule 1: Backing Baltimore Ravens: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+    }
+  ]
+}

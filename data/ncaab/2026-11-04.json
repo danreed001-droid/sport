@@ -2,7 +2,7 @@
   "date": "2026-11-04",
   "weekday": "Wednesday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "autoSlate": true,
   "generatedAt": "2026-11-04T06:28:21Z",
   "games": [
@@ -10,37 +10,49 @@
       "espnId": "401920232",
       "away": "Framingham State Rams",
       "home": "Dartmouth Big Green",
-      "time": "6:30 PM ET"
+      "time": "6:30 PM ET",
+      "awayScore": 50.0,
+      "homeScore": 107.0
     },
     {
       "espnId": "401929450",
       "away": "Regent Regent Royals",
       "home": "Old Dominion Monarchs",
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "awayScore": 47.0,
+      "homeScore": 91.0
     },
     {
       "espnId": "401929438",
       "away": "Christendom Crusaders",
       "home": "App State Mountaineers",
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "awayScore": 43.0,
+      "homeScore": 108.0
     },
     {
       "espnId": "401928853",
       "away": "Virginia Lynchburg Dragons",
       "home": "Morgan State Bears",
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "awayScore": 58.0,
+      "homeScore": 95.0
     },
     {
       "espnId": "401926142",
       "away": "Concordia Chicago Cougars",
       "home": "SIU Edwardsville Cougars",
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "awayScore": 61.0,
+      "homeScore": 85.0
     },
     {
       "espnId": "401922290",
       "away": "Erskine Flying Fleet",
       "home": "UNC Asheville Bulldogs",
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "awayScore": 74.0,
+      "homeScore": 101.0
     },
     {
       "espnId": "401920410",
@@ -53,7 +65,9 @@
       "awaySpreadOdds": -110,
       "homeMoneyline": -100000,
       "awayMoneyline": 5000,
-      "total": 148.5
+      "total": 148.5,
+      "awayScore": 49.0,
+      "homeScore": 63.0
     },
     {
       "espnId": "401920191",
@@ -66,7 +80,9 @@
       "awaySpreadOdds": -108,
       "homeMoneyline": -410,
       "awayMoneyline": 320,
-      "total": 149.5
+      "total": 149.5,
+      "awayScore": 73.0,
+      "homeScore": 82.0
     },
     {
       "espnId": "401902276",
@@ -79,31 +95,41 @@
       "awaySpreadOdds": -112,
       "homeMoneyline": -8000,
       "awayMoneyline": 2200,
-      "total": 152.5
+      "total": 152.5,
+      "awayScore": 65.0,
+      "homeScore": 99.0
     },
     {
       "espnId": "401927361",
       "away": "Central College Dutch",
       "home": "Drake Bulldogs",
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "awayScore": 48.0,
+      "homeScore": 101.0
     },
     {
       "espnId": "401926214",
       "away": "Blue Mountain Christian Toppers",
       "home": "Tennessee Tech Golden Eagles",
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "awayScore": 70.0,
+      "homeScore": 117.0
     },
     {
       "espnId": "401926151",
       "away": "Webster Gorloks",
       "home": "Southeast Missouri State Redhawks",
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "awayScore": 65.0,
+      "homeScore": 90.0
     },
     {
       "espnId": "401926111",
       "away": "Bob Jones Bruins",
       "home": "Furman Paladins",
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "awayScore": 52.0,
+      "homeScore": 121.0
     },
     {
       "espnId": "401919028",
@@ -116,13 +142,17 @@
       "awaySpreadOdds": -105,
       "homeMoneyline": -1650,
       "awayMoneyline": 950,
-      "total": 161.5
+      "total": 161.5,
+      "awayScore": 67.0,
+      "homeScore": 79.0
     },
     {
       "espnId": "401917977",
       "away": "Champion Christian Tigers",
       "home": "UL Monroe Warhawks",
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "awayScore": 55.0,
+      "homeScore": 99.0
     },
     {
       "espnId": "401928811",
@@ -135,19 +165,25 @@
       "awaySpreadOdds": -112,
       "homeMoneyline": 120,
       "awayMoneyline": -142,
-      "total": 160.5
+      "total": 160.5,
+      "awayScore": 102.0,
+      "homeScore": 94.0
     },
     {
       "espnId": "401925893",
       "away": "Randolph Wildcats",
       "home": "Norfolk State Spartans",
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "awayScore": 71.0,
+      "homeScore": 78.0
     },
     {
       "espnId": "401923391",
       "away": "Saint Mary of the Woods Pomeroys",
       "home": "Southern Indiana Screaming Eagles",
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "awayScore": 42.0,
+      "homeScore": 112.0
     },
     {
       "espnId": "401920798",
@@ -160,25 +196,33 @@
       "awaySpreadOdds": -112,
       "homeMoneyline": -20000,
       "awayMoneyline": 3500,
-      "total": 151.5
+      "total": 151.5,
+      "awayScore": 59.0,
+      "homeScore": 92.0
     },
     {
       "espnId": "401929171",
       "away": "West Coast Baptist Eagles",
       "home": "Boise State Broncos",
-      "time": "9:00 PM ET"
+      "time": "9:00 PM ET",
+      "awayScore": 53.0,
+      "homeScore": 132.0
     },
     {
       "espnId": "401925939",
       "away": "Grace University Lancers",
       "home": "Utah Tech Trailblazers",
-      "time": "9:00 PM ET"
+      "time": "9:00 PM ET",
+      "awayScore": 52.0,
+      "homeScore": 103.0
     },
     {
       "espnId": "401922030",
       "away": "Salish Kootenai Bison",
       "home": "Montana Grizzlies",
-      "time": "9:00 PM ET"
+      "time": "9:00 PM ET",
+      "awayScore": 40.0,
+      "homeScore": 105.0
     },
     {
       "espnId": "401918052",
@@ -191,7 +235,9 @@
       "awaySpreadOdds": -110,
       "homeMoneyline": -2100,
       "awayMoneyline": 1100,
-      "total": 156.5
+      "total": 156.5,
+      "awayScore": 70.0,
+      "homeScore": 84.0
     },
     {
       "espnId": "401917514",
@@ -204,7 +250,9 @@
       "awaySpreadOdds": -105,
       "homeMoneyline": -270,
       "awayMoneyline": 220,
-      "total": 157.5
+      "total": 157.5,
+      "awayScore": 96.0,
+      "homeScore": 95.0
     },
     {
       "espnId": "401917513",
@@ -217,7 +265,9 @@
       "awaySpreadOdds": -118,
       "homeMoneyline": -2100,
       "awayMoneyline": 1100,
-      "total": 160.5
+      "total": 160.5,
+      "awayScore": 72.0,
+      "homeScore": 95.0
     },
     {
       "espnId": "401917512",
@@ -230,7 +280,10 @@
       "awaySpreadOdds": -102,
       "homeMoneyline": -1100,
       "awayMoneyline": 700,
-      "total": 148.5
+      "total": 148.5,
+      "awayScore": 64.0,
+      "homeScore": 105.0
     }
-  ]
+  ],
+  "scoredAt": "2026-11-05T10:59:14.269861+00:00"
 }

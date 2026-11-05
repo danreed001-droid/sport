@@ -1,52 +1,52 @@
 {
-  "date": "2026-11-04",
+  "date": "2026-11-05",
   "steps": {
     "nbaStats": {
       "label": "NBA Stats picks",
       "status": "success",
-      "okOn": "2026-11-04",
+      "okOn": "2026-11-05",
       "failingSince": null
     },
     "nflStats": {
       "label": "NFL Stats picks",
       "status": "success",
-      "okOn": "2026-11-04",
+      "okOn": "2026-11-05",
       "failingSince": null
     },
     "scoring": {
       "label": "Scores and grading",
       "status": "success",
-      "okOn": "2026-11-04",
+      "okOn": "2026-11-05",
       "failingSince": null
     },
     "lines": {
       "label": "Line archive",
       "status": "success",
-      "okOn": "2026-11-04",
+      "okOn": "2026-11-05",
       "failingSince": null
     },
     "manual": {
       "label": "Hand-entered data",
       "status": "success",
-      "okOn": "2026-11-04",
+      "okOn": "2026-11-05",
       "failingSince": null
     },
     "ncaabSlate": {
       "label": "NCAA basketball slate",
       "status": "success",
-      "okOn": "2026-11-04",
+      "okOn": "2026-11-05",
       "failingSince": null
     },
     "ncaabStats": {
       "label": "NCAAB Stats picks",
       "status": "success",
-      "okOn": "2026-11-04",
+      "okOn": "2026-11-05",
       "failingSince": null
     },
     "nbaTotals": {
       "label": "NBA Totals picks",
       "status": "success",
-      "okOn": "2026-11-04",
+      "okOn": "2026-11-05",
       "failingSince": null
     }
   }
