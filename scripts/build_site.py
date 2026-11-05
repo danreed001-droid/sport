@@ -278,6 +278,7 @@ def build():
         "statsStacked": stats_stacked,
         "nbaTotalsRules": nba_totals["rules"],
         "nbaTotals": nba_totals["all"],
+        "nbaTotalsPlays": nba_totals["plays"],
         "nflStatsStacked": nfl_stacked,
     }
 
@@ -318,6 +319,7 @@ def nba_totals_record(docs):
     rules = {n: {"w": 0, "l": 0, "p": 0} for n in nba_totals_rules.RULE_NAMES}
     both = {"w": 0, "l": 0, "p": 0}
     allp = {"w": 0, "l": 0, "p": 0, "profit": 0.0, "backfilled": 0, "backfilledThrough": None}
+    plays = []  # every graded pick {d, r, v}, so the dashboard can filter by date
     for date_str, doc in docs:
         for g in doc.get("games", []):
             r = totals_result(g)
@@ -332,13 +334,14 @@ def nba_totals_record(docs):
                 both[key] += 1
             allp[key] += 1
             allp["profit"] += g.get("totalsReturn") or 0
+            plays.append({"d": date_str, "r": r, "v": g.get("totalsReturn") or 0})
             if g.get("totalsBackfill"):
                 allp["backfilled"] += 1
                 allp["backfilledThrough"] = max(allp["backfilledThrough"] or date_str, date_str)
     allp["profit"] = round(allp["profit"], 2)
     return {"rules": [{"rule": n, "name": nba_totals_rules.RULE_NAMES[n], "backtest": nba_totals_rules.RULE_BACKTEST[n], **rules[n]}
                       for n in sorted(rules)],
-            "all": {**allp, "both": both}}
+            "all": {**allp, "both": both}, "plays": plays}
 
 
 def stacked_record(docs, sport, favors, rules, families=len):

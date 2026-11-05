@@ -108,6 +108,7 @@ section.emptyleague .sec-p{margin-bottom:0;}
 .kpi-stats div{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.07em;font-family:'IBM Plex Mono',monospace;}
 .kpi-stats b{display:block;font-size:14px;color:var(--ink);letter-spacing:0;text-transform:none;font-family:'Work Sans',sans-serif;margin-top:1px;}
 .kpi-note{font-size:11px;color:var(--muted);}
+.kpi-tot{margin-top:2px;}
 .agcard{margin-top:12px;}
 .agtbl{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;}
 .agtbl th,.agtbl td{padding:7px 10px;text-align:left;border-bottom:1px solid var(--rule);white-space:nowrap;}
@@ -789,6 +790,19 @@ footer b{color:var(--ink);}
         }).join('') + '</tbody>' : '';
   }
 
+  // NBA Totals (over/under) record for the NBA Stats card, in the dashboard's sport and date range.
+  function totalsKpi(){
+    if(DASH.sports.length && !sportOn('nba')) return '';
+    var rb = rangeBounds(), w = 0, l = 0, pu = 0, v = 0;
+    (DATA.nbaTotalsPlays||[]).forEach(function(p){
+      if(rb && (p.d < rb[0] || p.d > rb[1])) return;
+      if(p.r==='W') w++; else if(p.r==='L') l++; else if(p.r==='P') pu++;
+      v += p.v||0;
+    });
+    var n = w+l;
+    return '<div class="kpi-stats kpi-tot"><div>NBA Totals<b>'+(n+pu ? w+'-'+l+(pu?'-'+pu:'') : '—')+'</b></div><div>Win %<b>'+(n?pct(w,n):'—')+'</b></div><div>Profit<b class="'+(n+pu?cls(v):'flat')+'">'+(n+pu?money(v):'—')+'</b></div></div>'
+      + '<div class="kpi-note">Over/under picks, $100 at −110 (the same in either market view).</div>';
+  }
   function renderDash(){
     if(!document.getElementById('dashboard')) return;
     var list = filteredPlays(), mk = DASH.market==='ats' ? 'against the spread' : 'on the moneyline';
@@ -805,7 +819,7 @@ footer b{color:var(--ink);}
       return '<div class="kpi"><div class="kpi-h"><i class="key" style="background:'+w.c+'"></i><b>'+w.label+'</b><span>'+w.role+'</span></div>'
         + '<div class="kpi-main"><div class="kpi-fig '+(a.priced?cls(a.profit):'flat')+'">'+(a.priced?money(a.profit):'—')+'<small>profit '+mk+'</small></div>'+sparkSvg(ser.series[i].prof, w.c)+'</div>'
         + '<div class="kpi-stats"><div>Record<b>'+recText(a)+'</b></div><div>Win %<b>'+(n?pct(a.w,n):'—')+'</b></div><div>ROI<b class="'+(r==null?'flat':cls(r))+'">'+(r==null?'—':(r>0?'+':'')+r+'%')+'</b></div></div>'
-        + note + '</div>';
+        + note + (w.k==='stats' ? totalsKpi() : '') + '</div>';
     }).join('');
 
     renderAgree(list, mk);
