@@ -922,6 +922,10 @@ footer b{color:var(--ink);}
   }
   function betTag(spread, ml){ var b = betCall(spread, ml); return '<span class="betcall '+b.k+'">'+esc(b.txt)+'</span>'; }
   function pickLine(g, team){ var h = team===g.home; return {sp: h ? g.homeSpread : g.awaySpread, ml: h ? g.homeMoneyline : g.awayMoneyline}; }
+  // NBA Stats is graded at its own live line (statsLine), kept until tip-off.
+  function statsLineFor(g, team){ var L = g.statsLine || {}, h = team===g.home, p = pickLine(g, team);
+    var sp = h ? L.homeSpread : L.awaySpread, ml = h ? L.homeMoneyline : L.awayMoneyline;
+    return {sp: num(sp) ? sp : p.sp, ml: num(ml) ? ml : p.ml, live: num(sp)}; }
   // Overlapping slices of one situation (NBA Stats 20-29, NBA Totals 4-8 and 9-15)
   // count once when deciding whether a pick is "stacked".
   function nbaFam(n){ return (n>=20 && n<=29) ? 'road-upset' : (n>=35 && n<=40) ? 'blowout-loss' : (n>=41 && n<=43) ? 'both-b2b' : (n>=44 && n<=48) ? 'revenge' : n; }
@@ -941,7 +945,8 @@ footer b{color:var(--ink);}
     if(g.statsFavors){
       var nums = ruleNums(g);
       var tier = ruleTier(nums, nbaFam);
-      return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val">'+esc(g.statsFavors)+resultChips(g.results&&g.results.stats)+'</span>'+tier+(function(l){ return betTag(l.sp, l.ml); })(pickLine(g, g.statsFavors))+'</div>';
+      var sl = statsLineFor(g, g.statsFavors);
+      return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val">'+esc(g.statsFavors)+(num(sl.sp) ? ' <span class="mono" title="'+(sl.live ? 'Live line (DraftKings via ESPN), kept at tip-off: NBA Stats is graded at it' : 'Slate line')+'">'+sgn(sl.sp)+'</span>' : '')+resultChips(g.results&&g.results.stats)+'</span>'+tier+betTag(sl.sp, sl.ml)+'</div>';
     }
     return '<div class="badge stats"><span class="lbl">NBA Stats</span><span class="val none">No signal</span></div>';
   }

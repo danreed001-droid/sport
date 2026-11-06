@@ -5,7 +5,140 @@
   "scored": false,
   "generatedAt": "2026-11-05T16:35:07Z",
   "games": [
-    {"altCategoryTally":"1-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: blended PD/g -4.2 (Magic) vs -4.75 (Suns) would lean Magic, but Banchero (Magic's best player) is out, so this can't count for Magic -- neutral","Rest: Magic are rested (last played Nov 2); Suns play the 2nd night of a back-to-back after losing at home to Portland on Nov 4 -- favors Magic","Travel: no distinct travel burden beyond the back-to-back already captured under Rest -- neutral","Injuries/Lineup: Magic are missing 5 rotation players (Banchero, Suggs, Isaac, Penda, Nelson) vs Suns' 1 confirmed out (Mark Williams) plus 2 game-time decisions -- favors Suns (weighted x2 -- multi-player cluster)","Form: Suns are 1-4 in their last 5 (4-game skid); Magic are 2-3 but Form can't count for Magic per the Banchero-out rule, and Suns' own skid blocks it swinging to them -- neutral","Motivation/Spot: no rivalry, revenge, or letdown/lookahead angle identified for either team -- neutral","Venue/Crowd: standard Phoenix home setting, nothing notable cited -- neutral","Market: line has held near Suns -1.5 since opening with only the total drifting down 2 points -- no clear directional signal -- neutral","Matchup splits: no specific unit-vs-unit mismatch identified -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Orlando Magic","awayMoneyline":-108,"awayNetRtg":-4.22,"awayPDpg":-4.2,"awayScore":null,"awaySpread":1.5,"awaySpreadOdds":-118,"confidence":"skip","correct":null,"home":"Phoenix Suns","homeMoneyline":-110,"homeNetRtg":-4.78,"homePDpg":-4.75,"homeScore":null,"homeSpread":-1.5,"homeSpreadOdds":-102,"netRtgGap":1.72,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"netrtg-gap","skipped":true,"statLines":["PD/g -9.0 (7 GP) vs -11.0 (6 GP) this season; blended 50/50 with 2025-26 final (+0.6 / +1.5) -> -4.2 vs -4.75","NetRtg -9.00 (rank 24/30) vs -10.98 (rank 25/30) this season; blended with 2025-26 final ranks (17 / 15) -> pct 32.8 vs 34.5 (gap 1.7)","Magic missing Banchero, Suggs, Isaac, Penda, Nelson (5 OUT, incl. best player); Suns missing Mark Williams (OUT) plus Goodwin/Fleming (game-time decisions) and are on 2nd night of a back-to-back"],"time":"9:00 PM ET","totalsLine":222.5},
-    {"altCategoryTally":"2-5","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: blended PD/g -1.25 (Heat) vs +1.15 (Warriors); Curry (Warriors' best player) is healthy so this counts -- favors Warriors","Rest: Warriors rested 3 days; Heat play the 2nd night of a back-to-back -- favors Warriors","Travel: Heat are on a cross-country LA-to-Bay-Area road back-to-back after an OT game -- favors Warriors","Injuries/Lineup: Warriors are missing 4 rotation players (Butler, Porzingis, Moody, Santos) vs no Heat injuries found -- favors Heat (weighted x2 -- multi-player cluster)","Form: Warriors are 5-0 in their last 5 (active win streak) vs Heat 3-2 -- favors Warriors","Motivation/Spot: no rivalry, revenge, or letdown/lookahead angle identified for either team -- neutral","Venue/Crowd: standard Chase Center home setting, nothing notable cited -- neutral","Market: line moved from Warriors -4.5 to -7.5, a 3-point shift toward Golden State -- favors Warriors","Matchup splits: no specific unit-vs-unit mismatch identified -- neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Miami Heat","awayMoneyline":230,"awayNetRtg":-1.67,"awayPDpg":-1.25,"awayScore":null,"awaySpread":7.5,"awaySpreadOdds":-114,"confidence":"skip","correct":null,"home":"Golden State Warriors","homeMoneyline":-281,"homeNetRtg":1.3,"homePDpg":1.15,"homeScore":null,"homeSpread":-7.5,"homeSpreadOdds":-106,"netRtgGap":3.45,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"netrtg-gap","skipped":true,"statLines":["PD/g -4.9 (8 GP) vs +2.9 (8 GP) this season; blended 50/50 with 2025-26 final (+2.4 / -0.6) -> -1.25 vs +1.15","NetRtg -5.51 (rank 21/30) vs +3.14 (rank 12/30) this season; blended with 2025-26 final ranks (13 / 20) -> pct 44.8 vs 48.3 (gap 3.4)","Heat are on the 2nd night of a back-to-back (OT win at LA Clippers Nov 4) with an LA-to-Bay-Area turnaround; no Heat injuries found on trackers","Warriors are rested (3 days off) on a 5-game win streak despite missing Butler, Porzingis, Moody and Santos (4 OUT)"],"statsCheck":"Rule 2: Fading Miami Heat: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77). Rule 9: Fading Miami Heat: came back to win last night after trailing by 9 through 3 quarters (5+), now on the second night of a back-to-back -- teams in this spot were faded 68.1% of the time ATS (n=91).","statsFavors":"Golden State Warriors","statsRules":[{"backtest":"66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)","detail":"Fading Miami Heat: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77).","name":"Fade an OT winner vs. a stronger team (any rest)","rule":2},{"backtest":"68.9% ATS, 62-28 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)","detail":"Fading Miami Heat: came back to win last night after trailing by 9 through 3 quarters (5+), now on the second night of a back-to-back -- teams in this spot were faded 68.1% of the time ATS (n=91).","name":"Fade a late comeback on the back-to-back","rule":9}],"time":"10:00 PM ET","totalsLine":235.5}
+    {
+      "altCategoryTally": "1-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: blended PD/g -4.2 (Magic) vs -4.75 (Suns) would lean Magic, but Banchero (Magic's best player) is out, so this can't count for Magic -- neutral",
+        "Rest: Magic are rested (last played Nov 2); Suns play the 2nd night of a back-to-back after losing at home to Portland on Nov 4 -- favors Magic",
+        "Travel: no distinct travel burden beyond the back-to-back already captured under Rest -- neutral",
+        "Injuries/Lineup: Magic are missing 5 rotation players (Banchero, Suggs, Isaac, Penda, Nelson) vs Suns' 1 confirmed out (Mark Williams) plus 2 game-time decisions -- favors Suns (weighted x2 -- multi-player cluster)",
+        "Form: Suns are 1-4 in their last 5 (4-game skid); Magic are 2-3 but Form can't count for Magic per the Banchero-out rule, and Suns' own skid blocks it swinging to them -- neutral",
+        "Motivation/Spot: no rivalry, revenge, or letdown/lookahead angle identified for either team -- neutral",
+        "Venue/Crowd: standard Phoenix home setting, nothing notable cited -- neutral",
+        "Market: line has held near Suns -1.5 since opening with only the total drifting down 2 points -- no clear directional signal -- neutral",
+        "Matchup splits: no specific unit-vs-unit mismatch identified -- neutral"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Orlando Magic",
+      "awayMoneyline": -108,
+      "awayNetRtg": -4.22,
+      "awayPDpg": -4.2,
+      "awayScore": null,
+      "awaySpread": 1.5,
+      "awaySpreadOdds": -118,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Phoenix Suns",
+      "homeMoneyline": -110,
+      "homeNetRtg": -4.78,
+      "homePDpg": -4.75,
+      "homeScore": null,
+      "homeSpread": -1.5,
+      "homeSpreadOdds": -102,
+      "netRtgGap": 1.72,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "netrtg-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g -9.0 (7 GP) vs -11.0 (6 GP) this season; blended 50/50 with 2025-26 final (+0.6 / +1.5) -> -4.2 vs -4.75",
+        "NetRtg -9.00 (rank 24/30) vs -10.98 (rank 25/30) this season; blended with 2025-26 final ranks (17 / 15) -> pct 32.8 vs 34.5 (gap 1.7)",
+        "Magic missing Banchero, Suggs, Isaac, Penda, Nelson (5 OUT, incl. best player); Suns missing Mark Williams (OUT) plus Goodwin/Fleming (game-time decisions) and are on 2nd night of a back-to-back"
+      ],
+      "time": "9:00 PM ET",
+      "totalsLine": 222.5,
+      "statsSpread": -1.5,
+      "statsLine": {
+        "homeSpread": -1.5,
+        "awaySpread": 1.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -121,
+        "awayMoneyline": 102
+      }
+    },
+    {
+      "altCategoryTally": "2-5",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: blended PD/g -1.25 (Heat) vs +1.15 (Warriors); Curry (Warriors' best player) is healthy so this counts -- favors Warriors",
+        "Rest: Warriors rested 3 days; Heat play the 2nd night of a back-to-back -- favors Warriors",
+        "Travel: Heat are on a cross-country LA-to-Bay-Area road back-to-back after an OT game -- favors Warriors",
+        "Injuries/Lineup: Warriors are missing 4 rotation players (Butler, Porzingis, Moody, Santos) vs no Heat injuries found -- favors Heat (weighted x2 -- multi-player cluster)",
+        "Form: Warriors are 5-0 in their last 5 (active win streak) vs Heat 3-2 -- favors Warriors",
+        "Motivation/Spot: no rivalry, revenge, or letdown/lookahead angle identified for either team -- neutral",
+        "Venue/Crowd: standard Chase Center home setting, nothing notable cited -- neutral",
+        "Market: line moved from Warriors -4.5 to -7.5, a 3-point shift toward Golden State -- favors Warriors",
+        "Matchup splits: no specific unit-vs-unit mismatch identified -- neutral"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Miami Heat",
+      "awayMoneyline": 230,
+      "awayNetRtg": -1.67,
+      "awayPDpg": -1.25,
+      "awayScore": null,
+      "awaySpread": 7.5,
+      "awaySpreadOdds": -114,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Golden State Warriors",
+      "homeMoneyline": -281,
+      "homeNetRtg": 1.3,
+      "homePDpg": 1.15,
+      "homeScore": null,
+      "homeSpread": -7.5,
+      "homeSpreadOdds": -106,
+      "netRtgGap": 3.45,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "netrtg-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g -4.9 (8 GP) vs +2.9 (8 GP) this season; blended 50/50 with 2025-26 final (+2.4 / -0.6) -> -1.25 vs +1.15",
+        "NetRtg -5.51 (rank 21/30) vs +3.14 (rank 12/30) this season; blended with 2025-26 final ranks (13 / 20) -> pct 44.8 vs 48.3 (gap 3.4)",
+        "Heat are on the 2nd night of a back-to-back (OT win at LA Clippers Nov 4) with an LA-to-Bay-Area turnaround; no Heat injuries found on trackers",
+        "Warriors are rested (3 days off) on a 5-game win streak despite missing Butler, Porzingis, Moody and Santos (4 OUT)"
+      ],
+      "statsCheck": "Rule 2: Fading Miami Heat: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77). Rule 9: Fading Miami Heat: came back to win last night after trailing by 9 through 3 quarters (5+), now on the second night of a back-to-back -- teams in this spot were faded 68.1% of the time ATS (n=91).",
+      "statsFavors": "Golden State Warriors",
+      "statsRules": [
+        {
+          "rule": 2,
+          "name": "Fade an OT winner vs. a stronger team (any rest)",
+          "backtest": "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+          "detail": "Fading Miami Heat: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77)."
+        },
+        {
+          "rule": 9,
+          "name": "Fade a late comeback on the back-to-back",
+          "backtest": "68.9% ATS, 62-28 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+          "detail": "Fading Miami Heat: came back to win last night after trailing by 9 through 3 quarters (5+), now on the second night of a back-to-back -- teams in this spot were faded 68.1% of the time ATS (n=91)."
+        }
+      ],
+      "time": "10:00 PM ET",
+      "totalsLine": 235.5,
+      "statsSpread": -3.5,
+      "statsLine": {
+        "homeSpread": -3.5,
+        "awaySpread": 3.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -167,
+        "awayMoneyline": 140
+      }
+    }
   ]
 }

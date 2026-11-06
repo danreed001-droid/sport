@@ -136,7 +136,11 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   NBA Stats rules that read tonight's spread use `statsSpread`: ESPN
   pickcenter's (DraftKings) line, refreshed until tip-off and then kept,
   because a slate's line can be stale (2026-11-05 Heat @ Warriors: slate
-  -7.5, market -3.5).
+  -7.5, market -3.5). The whole live line (spread, its odds, moneylines) is
+  kept as `statsLine`, and NBA Stats picks are graded at it everywhere
+  (`lib/picks.stats_view`: score_slate.py, the dashboard, pick log, rule
+  records); every other model is still graded at the slate's line. Games
+  from before 2026-11-05 have no statsLine and stay graded at the slate's.
   Overlapping slices of one situation (NBA Stats 20-29, 35-40, 41-43, 44-48; NBA Totals 4-8,
   9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`

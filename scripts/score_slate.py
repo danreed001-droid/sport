@@ -19,6 +19,7 @@ from datetime import date, datetime, timezone
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
 from lib.grading import grade_pick  # noqa: E402
+from lib.picks import stats_view  # noqa: E402
 from lib.picks import BIG_DOG_LIMIT, BIG_DOG_SPORTS  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 
@@ -226,7 +227,8 @@ def grade_two_way_game(g, away_score, home_score, big_dog_limit=10):
     for pick_field, correct_field, return_field, cover_field, spread_return_field in TWO_WAY_SIGNAL_FIELDS:
         if pick_field not in g:
             continue  # this sport's model doesn't track this signal
-        graded = grade_named(g, g.get(pick_field), away_score, home_score, big_dog_limit)
+        # NBA Stats is graded at its own live line (lib/picks.stats_view).
+        graded = grade_named(stats_view(g) if pick_field == "statsFavors" else g, g.get(pick_field), away_score, home_score, big_dog_limit)
         g[correct_field] = graded["correct"]
         g[return_field] = graded["pickReturn"]
         g[cover_field] = graded["pickCover"]

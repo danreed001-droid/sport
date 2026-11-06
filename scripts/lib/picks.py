@@ -36,6 +36,22 @@ def team_for(g, side):
     return "Draw" if side == "draw" else g.get(side)
 
 
+STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
+
+
+def stats_view(g):
+    """The game as NBA Stats is graded: its live line (statsLine, kept from
+    ESPN's pickcenter until tip-off by nba_stats_signals.py) in place of the
+    slate's spread, odds and moneylines. Falls back to statsSpread alone, then
+    to the slate. Every other model is graded at the slate's line."""
+    line = g.get("statsLine") or {}
+    if not line and g.get("statsSpread") is not None:
+        line = {"homeSpread": g["statsSpread"], "awaySpread": -g["statsSpread"]}
+    if not line:
+        return g
+    return {**g, **{k: line[k] for k in STATS_LINE_KEYS if line.get(k) is not None}}
+
+
 def line_for(g, side):
     return {
         "moneyline": g.get(f"{side}Moneyline"),

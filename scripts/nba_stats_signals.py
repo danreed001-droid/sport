@@ -161,6 +161,7 @@ ALLOWED_REST = {
     49: {"b2b"},
     50: {"b2b", "1", "2+"},
 }
+STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
 HOT_OPP_THREES = 0.5  # rule 16: opponent's 3-point % last game (on HOT_OPP_3PA+ attempts)
@@ -774,7 +775,7 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
         if not away or not home:
             continue
         fails = FAILS[0]
-        watch_before, spread_before = g.get("statsWatch"), g.get("statsSpread")
+        watch_before, spread_before = g.get("statsWatch"), (g.get("statsSpread"), g.get("statsLine"))
         if regular.get((away, home), True):
             ev = next((v for (a, h), v in tonight.items() if _same_team(away, a) and _same_team(home, h)), None)
             ctx = None if ev is None else {"state": ev["state"], "out": ev["out"], "status": ev["status"],
@@ -782,10 +783,13 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
             # Rules that read tonight's spread (43-49) use the market's current line
             # (ESPN pickcenter / DraftKings), refreshed until tip-off and then kept
             # as statsSpread: a slate's line can be stale.
+            # statsLine keeps the whole live line (spread, its odds, moneylines): NBA
+            # Stats picks are graded at it (lib/picks.stats_view), not the slate's.
             if ctx and ctx["state"] == "pre" and ev.get("id"):
-                live = espn.pickcenter_lines(session, "basketball", "nba", ev["id"]).get("homeSpread")
-                if live is not None:
-                    g["statsSpread"] = live
+                live = espn.pickcenter_lines(session, "basketball", "nba", ev["id"])
+                if live.get("homeSpread") is not None:
+                    g["statsSpread"] = live["homeSpread"]
+                    g["statsLine"] = {k: live[k] for k in STATS_LINE_KEYS if live.get(k) is not None}
             result = evaluate_game(session, points, by_team, q_cache, date_str, home, away, ctx,
                                    home_spread=g.get("statsSpread", g.get("homeSpread")),
                                    market=action_network.lookup(mk, away, home, _same_team))
@@ -811,7 +815,7 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
             for k in ("statsFavors", "statsCheck", "statsRules", "statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn"):
                 g.pop(k, None)
         if (g.get("statsFavors"), g.get("statsCheck"), g.get("statsRules")) != before or g.get("statsWatch") != watch_before \
-                or g.get("statsSpread") != spread_before:
+                or (g.get("statsSpread"), g.get("statsLine")) != spread_before:
             changed += 1
     if changed:
         store.write_doc("nba", date_str, doc)
