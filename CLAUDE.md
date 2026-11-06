@@ -165,7 +165,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   After deploying, pages.yml also force-pushes the built `data.json` to the
   `site-data` branch (one commit, data.json only; the reason the workflow has
   `contents: write`), so a Routine that can read raw.githubusercontent.com but
-  not the Pages site can fetch it.
+  not the Pages site can fetch it. The Basketball Routine reads it: today's
+  NCAAB stand-in slate as its starting game list and spread check, and the
+  season records and NBA Stats/Totals rule flags for its closing summary
+  (context only, never an input to the Ledger or Second Opinion).
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
