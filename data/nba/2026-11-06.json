@@ -1,0 +1,238 @@
+{
+  "date": "2026-11-06",
+  "weekday": "Friday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-06T05:50:24Z",
+  "games": [
+    {
+      "espnId": "401909287",
+      "away": "Washington Wizards",
+      "home": "Atlanta Hawks",
+      "time": "7:00 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -241.0,
+      "awayMoneyline": 199.0,
+      "statsSpread": -6.5,
+      "statsLine": {
+        "homeSpread": -6.5,
+        "awaySpread": 6.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -241,
+        "awayMoneyline": 199
+      },
+      "totalsLine": 230.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 6,
+          "detail": "Washington Wizards lost at home to Atlanta Hawks by 15 on 2026-11-04 (the worse-record team); now on the road vs. better-record Atlanta Hawks.",
+          "name": "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
+          "backtest": "62.2% unders, 107-65 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30"
+        }
+      ],
+      "totalsCheck": "Rule 6: Washington Wizards lost at home to Atlanta Hawks by 15 on 2026-11-04 (the worse-record team); now on the road vs. better-record Atlanta Hawks."
+    },
+    {
+      "espnId": "401909288",
+      "away": "Boston Celtics",
+      "home": "Charlotte Hornets",
+      "time": "7:00 PM ET",
+      "homeSpread": 8.5,
+      "awaySpread": -8.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 276.0,
+      "awayMoneyline": -344.0,
+      "statsSpread": 8.5,
+      "statsLine": {
+        "homeSpread": 8.5,
+        "awaySpread": -8.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 276,
+        "awayMoneyline": -344
+      },
+      "totalsLine": 210.5
+    },
+    {
+      "espnId": "401909289",
+      "away": "Philadelphia 76ers",
+      "home": "Cleveland Cavaliers",
+      "time": "7:30 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": 111.0,
+      "awayMoneyline": -132.0,
+      "statsSpread": 2.5,
+      "statsLine": {
+        "homeSpread": 2.5,
+        "awaySpread": -2.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 111,
+        "awayMoneyline": -132
+      },
+      "totalsLine": 228.5
+    },
+    {
+      "espnId": "401909290",
+      "away": "Utah Jazz",
+      "home": "Dallas Mavericks",
+      "time": "8:00 PM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -106.0,
+      "awaySpreadOdds": -114.0,
+      "homeMoneyline": -253.0,
+      "awayMoneyline": 208.0,
+      "statsSpread": -7.5,
+      "statsLine": {
+        "homeSpread": -7.5,
+        "awaySpread": 7.5,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": -253,
+        "awayMoneyline": 208
+      },
+      "totalsLine": 226.5
+    },
+    {
+      "espnId": "401909291",
+      "away": "Oklahoma City Thunder",
+      "home": "Memphis Grizzlies",
+      "time": "8:00 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": 128.0,
+      "awayMoneyline": -152.0,
+      "statsSpread": 3.5,
+      "statsLine": {
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": 128,
+        "awayMoneyline": -152
+      },
+      "totalsLine": 225.5
+    },
+    {
+      "espnId": "401909292",
+      "away": "Toronto Raptors",
+      "home": "Milwaukee Bucks",
+      "time": "8:00 PM ET",
+      "homeSpread": 6.5,
+      "awaySpread": -6.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -116.0,
+      "homeMoneyline": 216.0,
+      "awayMoneyline": -263.0,
+      "statsSpread": 6.5,
+      "statsLine": {
+        "homeSpread": 6.5,
+        "awaySpread": -6.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": 216,
+        "awayMoneyline": -263
+      },
+      "totalsLine": 230.5
+    },
+    {
+      "espnId": "401909293",
+      "away": "Minnesota Timberwolves",
+      "home": "New Orleans Pelicans",
+      "time": "8:00 PM ET",
+      "homeSpread": 4.5,
+      "awaySpread": -4.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 154.0,
+      "awayMoneyline": -184.0,
+      "statsSpread": 4.5,
+      "statsLine": {
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 154,
+        "awayMoneyline": -184
+      },
+      "statsFavors": "Minnesota Timberwolves",
+      "statsRules": [
+        {
+          "rule": 2,
+          "name": "Fade an OT winner vs. a stronger team (any rest)",
+          "backtest": "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+          "detail": "Fading New Orleans Pelicans: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77)."
+        }
+      ],
+      "statsCheck": "Rule 2: Fading New Orleans Pelicans: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77).",
+      "totalsLine": 230.5
+    },
+    {
+      "espnId": "401909294",
+      "away": "Portland Trail Blazers",
+      "home": "Los Angeles Lakers",
+      "time": "10:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": -148.0,
+      "awayMoneyline": 124.0,
+      "statsSpread": -2.5,
+      "statsLine": {
+        "homeSpread": -2.5,
+        "awaySpread": 2.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -148,
+        "awayMoneyline": 124
+      },
+      "statsFavors": "Los Angeles Lakers",
+      "statsRules": [
+        {
+          "rule": 46,
+          "name": "Revenge: back a favored team with the worse record after losing the last meeting as the favorite, its 2nd+ straight loss to them (on trial)",
+          "backtest": "62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16",
+          "detail": "Backing Los Angeles Lakers: Los Angeles Lakers lost the last meeting by 7 (Portland Trail Blazers 136 @ Los Angeles Lakers 129, 2026-10-27) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16."
+        }
+      ],
+      "statsCheck": "Rule 46: Backing Los Angeles Lakers: Los Angeles Lakers lost the last meeting by 7 (Portland Trail Blazers 136 @ Los Angeles Lakers 129, 2026-10-27) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16.",
+      "totalsLine": 232.5
+    },
+    {
+      "espnId": "401909295",
+      "away": "San Antonio Spurs",
+      "home": "Sacramento Kings",
+      "time": "10:00 PM ET",
+      "homeSpread": 15.5,
+      "awaySpread": -15.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": 710.0,
+      "awayMoneyline": -1100.0,
+      "statsSpread": 15.5,
+      "statsLine": {
+        "homeSpread": 15.5,
+        "awaySpread": -15.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": 710,
+        "awayMoneyline": -1100
+      },
+      "totalsLine": 228.5
+    }
+  ]
+}
