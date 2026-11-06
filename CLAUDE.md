@@ -162,6 +162,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
   never replaces the live one.
+  After deploying, pages.yml also force-pushes the built `data.json` to the
+  `site-data` branch (one commit, data.json only; the reason the workflow has
+  `contents: write`), so a Routine that can read raw.githubusercontent.com but
+  not the Pages site can fetch it.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.

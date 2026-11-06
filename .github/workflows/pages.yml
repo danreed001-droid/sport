@@ -3,6 +3,11 @@ name: Pick sheet (GitHub Pages)
 # Rebuilds and deploys the pick sheet from main whenever main changes,
 # and after the scoring or pick-intake workflows finish (their bot commits
 # don't trigger push events on their own).
+#
+# It also publishes the built data.json to the `site-data` branch, so a
+# Routine that can read raw.githubusercontent.com but not the Pages site can
+# fetch https://raw.githubusercontent.com/<owner>/<repo>/site-data/data.json.
+# That branch holds one commit (data.json only), replaced on every deploy.
 
 on:
   push:
@@ -13,7 +18,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write   # push data.json to the site-data branch
   pages: write
   id-token: write
 
@@ -51,3 +56,15 @@ jobs:
 
       - id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Publish data.json to the site-data branch
+        run: |
+          rev=$(git rev-parse --short HEAD)
+          mkdir _data && cp _site/data.json _data/
+          cd _data
+          git init -q -b site-data
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -q -m "Pick sheet data from main@$rev"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" site-data
