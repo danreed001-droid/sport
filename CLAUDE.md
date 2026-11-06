@@ -224,6 +224,18 @@ category grades have held up: for each non-neutral grade, did the graded side
 win and cover, by category, full vs half grade, sport, lean size, and
 favorite vs underdog. It's a record of their grading, never a pick.
 
+Over/under picks: each game's pick row also has Over / Under buttons at the
+game's total. `scripts/slate_totals.py` (every scoring run, and NBA in the
+game-time run) puts ESPN pickcenter's line on today's and tomorrow's slates as
+`gameTotal`, `gameTotalOverOdds`, `gameTotalUnderOdds`, refreshed until the game
+starts (repo-owned in `sync_ledger.py`). The submitted payload's `totals` map
+(game id -> over/under/none) is saved by `intake_picks.py` under `totals` in
+`data/mypicks/<date>.json`, locked at the slate's line and odds at submission
+(NBA falls back to `totalsLine`). They're graded in `lib/picks.grade_total`
+($100 at the locked odds, -110 if none; landing on the line is a push) and
+shown in the pick log ("Your O/U") and as a row on the dashboard's You card,
+kept out of the ATS/moneyline figures.
+
 Don't write picks into game objects in `data/<sport>/` (no `userPick`,
 `yourPick`, `myPick` fields) and don't ask the user to tell you their picks.
 Grading of their picks happens in `scripts/lib/picks.py` from the game's final

@@ -66,9 +66,9 @@ REPO_OWNED_GAME_FIELDS = ("statsFavors", "statsCheck", "statsRules", "statsCorre
 def carry_repo_fields(current, doc):
     """Replaces REPO_OWNED_GAME_FIELDS on the incoming database copy with the
     repo copy's values (or their absence), matching games by away/home."""
-    key = "matches" if "matches" in doc else "games"   # soccer slates hold "matches"
-    by_matchup = {(g.get("away"), g.get("home")): g for g in (current or {}).get(key, [])}
-    for g in doc.get(key, []):
+    rows = lambda d: (d or {}).get("games") or (d or {}).get("matches") or []   # soccer: "matches" before normalizing
+    by_matchup = {(g.get("away"), g.get("home")): g for g in rows(current)}
+    for g in rows(doc):
         old = by_matchup.get((g.get("away"), g.get("home")), {})
         for k in REPO_OWNED_GAME_FIELDS:
             if k in old:

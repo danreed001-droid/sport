@@ -218,6 +218,8 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .state.repo{background:var(--mine-soft);color:var(--mine-ink);}
 .state.local{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn);}
 .pickbtns{display:flex;gap:8px;}
+.ttlhead{margin-top:10px;}
+.pickbtn .pr{color:var(--muted);font-size:12px;}
 .pickbtn.draw{flex:.7;}
 .pickbtn{flex:1;min-width:0;font:inherit;background:var(--surface);border:1.5px solid var(--rule-2);color:var(--ink);border-radius:8px;padding:9px 8px;cursor:pointer;text-align:center;transition:background .12s,border-color .12s;}
 .pickbtn:hover:not([disabled]){border-color:var(--mine);}
@@ -309,9 +311,19 @@ footer b{color:var(--ink);}
 
   // ---- your unsubmitted picks live in this browser until you submit them ----
   function pendingKey(){ return 'picksheet.pending.' + DATA.slate.date; }
-  function loadPending(){ try{ var o = JSON.parse(localStorage.getItem(pendingKey())||'{}')||{}; return {sides:o.sides||{}, scores:o.scores||{}}; }catch(e){ return {sides:{}, scores:{}}; } }
-  function savePending(){ try{ localStorage.setItem(pendingKey(), JSON.stringify({sides:pending, scores:pendingScores})); }catch(e){} }
-  var pending = {}, pendingScores = {};
+  function loadPending(){ try{ var o = JSON.parse(localStorage.getItem(pendingKey())||'{}')||{}; return {sides:o.sides||{}, scores:o.scores||{}, totals:o.totals||{}}; }catch(e){ return {sides:{}, scores:{}, totals:{}}; } }
+  function savePending(){ try{ localStorage.setItem(pendingKey(), JSON.stringify({sides:pending, scores:pendingScores, totals:pendingTotals})); }catch(e){} }
+  var pending = {}, pendingScores = {}, pendingTotals = {};
+
+  // ---- your over/under picks: locked at the slate's line when submitted ----
+  function committedTotal(id){ var t = (DATA.myTotals||{})[id]; return t ? t.side : null; }
+  function effectiveTotal(id){ return pendingTotals.hasOwnProperty(id) ? (pendingTotals[id]==='none'?null:pendingTotals[id]) : committedTotal(id); }
+  function gameTotalLine(g){ return num(g.gameTotal) ? {t:g.gameTotal, o:g.gameTotalOverOdds, u:g.gameTotalUnderOdds} : num(g.totalsLine) ? {t:g.totalsLine, o:null, u:null} : null; }
+  function chooseTotal(id, ou){
+    var next = effectiveTotal(id)===ou ? null : ou, c = committedTotal(id);
+    if((next||null) === (c||null)) delete pendingTotals[id]; else pendingTotals[id] = next || 'none';
+    savePending(); renderPickRow(id); renderSubmitBar();
+  }
 
   function committedSide(id){ var p = DATA.myPicks[id]; return p ? p.side : null; }
   function effectiveSide(id){ return pending.hasOwnProperty(id) ? (pending[id]==='none'?null:pending[id]) : committedSide(id); }
@@ -320,6 +332,10 @@ footer b{color:var(--ink);}
     Object.keys(pending).forEach(function(id){
       var c = committedSide(id), p = pending[id];
       if((p==='none' && !c) || p===c) delete pending[id];
+    });
+    Object.keys(pendingTotals).forEach(function(id){
+      var c = committedTotal(id), p = pendingTotals[id];
+      if((p==='none' && !c) || p===c) delete pendingTotals[id];
     });
     Object.keys(pendingScores).forEach(function(id){
       if(!GAMES[id] || pendingScores[id]===baseScores(id)) delete pendingScores[id];
@@ -408,6 +424,7 @@ footer b{color:var(--ink);}
   var WHO_BY_KEY = {}; WHO.forEach(function(w){ WHO_BY_KEY[w.k] = w; });
   // NBA Totals picks show in the pick log only (they are over/under bets, not sides).
   WHO_BY_KEY.totals = {k:'totals', label:'NBA Totals', short:'NBA Totals', c:'var(--totals)'};
+  WHO_BY_KEY.mytotal = {k:'mytotal', label:'Your O/U', short:'You (O/U)', c:'var(--mine)'};
   var DASH = {sports:[], market:'ats', range:'all', from:null, to:null, mlCutoff:false};
   try{ var ds = JSON.parse(localStorage.getItem('picksheet.dash')||'null'); if(ds) DASH = Object.assign(DASH, ds); }catch(e){}
   if(['7','30','year','all','custom'].indexOf(DASH.range) < 0) DASH.range = 'all';
@@ -693,7 +710,7 @@ footer b{color:var(--ink);}
         + '<span class="fgroup"><span class="flbl">Dates</span>'+seg('mode',[['day','Day'],['range','Range']])
           + '<span class="daterange" id="lday"><button type="button" class="stepbtn" id="lprev" aria-label="Previous day with picks">‹</button><label for="ldate" class="sr">Day</label><input type="date" id="ldate"><button type="button" class="stepbtn" id="lnext" aria-label="Next day with picks">›</button></span>'
           + '<span class="daterange" id="lrange" hidden><label for="lfrom" class="sr">From</label><input type="date" id="lfrom"> <span class="to">to</span> <label for="lto" class="sr">To</label><input type="date" id="lto"></span></span>'
-        + '<span class="fgroup"><span class="flbl">Model</span>'+seg('who',[['all','All'],['ledger','Ledger'],['alt','2nd Opinion'],['trend','Trend'],['blowout','Blowout'],['stats','NBA Stats'],['nflstats','NFL Stats'],['ncaabstats','NCAAB Stats'],['totals','NBA Totals'],['mine','You']])+'</span>'
+        + '<span class="fgroup"><span class="flbl">Model</span>'+seg('who',[['all','All'],['ledger','Ledger'],['alt','2nd Opinion'],['trend','Trend'],['blowout','Blowout'],['stats','NBA Stats'],['nflstats','NFL Stats'],['ncaabstats','NCAAB Stats'],['totals','NBA Totals'],['mine','You'],['mytotal','Your O/U']])+'</span>'
         + '<span class="fgroup"><span class="flbl">Show</span>'+seg('result',[['all','All picks'],['graded','Graded'],['pending','Pending']])+'</span>'
       + '</div>'
       + '<div class="scroller"><table class="logtbl" id="logtbl"></table></div>'
@@ -738,7 +755,7 @@ footer b{color:var(--ink);}
     }).slice().sort(function(a,b){ return a.d<b.d ? 1 : a.d>b.d ? -1 : (a.s<b.s ? -1 : a.s>b.s ? 1 : 0); });
     var WL = WHO_BY_KEY, t = {aw:0,al:0,ap:0,a$:0,mw:0,ml:0,m$:0}, tt = {w:0,l:0,p:0,v:0,n:0};
     rows.forEach(function(p){
-      if(p.w==='totals'){ tt.n++; if(p.tr==='W') tt.w++; else if(p.tr==='L') tt.l++; else if(p.tr==='P') tt.p++; if(num(p.tp)) tt.v += p.tp; return; }
+      if(p.w==='totals' || p.w==='mytotal'){ tt.n++; if(p.tr==='W') tt.w++; else if(p.tr==='L') tt.l++; else if(p.tr==='P') tt.p++; if(num(p.tp)) tt.v += p.tp; return; }
       if(p.a==='W') t.aw++; else if(p.a==='L') t.al++; else if(p.a==='P') t.ap++;
       if(num(p.ap)) t.a$ += p.ap;
       // The log's own ML column always shows "No ML bet"/"ATS only" for a
@@ -751,7 +768,7 @@ footer b{color:var(--ink);}
     });
     var body = rows.slice(0, LOG.shown).map(function(p){
       var w = WL[p.w], pend = p.pd;
-      if(p.w==='totals') return totalsLogRow(p, w);
+      if(p.w==='totals' || p.w==='mytotal') return totalsLogRow(p, w);
       var ats = pend ? '<span class="res pend">Pending</span>' : (p.a ? resCell(p.a) : '<span class="muted">no line</span>');
       var ml = pend ? '<span class="res pend">Pending</span>' : (p.x ? (p.x===2 ? '<span class="muted" title="Priced -400 or shorter: not a moneyline bet">No ML bet</span>' : '<span class="muted" title="NFL or college pick on a 7+ point dog: counted ATS only">ATS only</span>') : (p.m ? resCell(p.m) : '<span class="muted">—</span>'));
       return '<tr>'
@@ -769,8 +786,8 @@ footer b{color:var(--ink);}
         + '</tr>';
     }).join('');
     var tbl = document.getElementById('logtbl'); tbl.classList.toggle('dayview', LOG.mode==='day');
-    var graded = rows.some(function(p){ return !p.pd && p.w!=='totals'; });
-    var foot = rows.length ? '<tfoot><tr><td class="c-date"></td><td colspan="5">Total · '+rows.length+' pick'+(rows.length===1?'':'s')+(rows.length>LOG.shown?' (all, not just the rows shown)':'')+(tt.n ? ' · NBA Totals '+(tt.w+tt.l+tt.p ? tt.w+'-'+tt.l+(tt.p?'-'+tt.p:'')+' '+money(tt.v) : 'pending')+' (not in the ATS total)' : '')+'</td>'
+    var graded = rows.some(function(p){ return !p.pd && p.w!=='totals' && p.w!=='mytotal'; });
+    var foot = rows.length ? '<tfoot><tr><td class="c-date"></td><td colspan="5">Total · '+rows.length+' pick'+(rows.length===1?'':'s')+(rows.length>LOG.shown?' (all, not just the rows shown)':'')+(tt.n ? ' · totals '+(tt.w+tt.l+tt.p ? tt.w+'-'+tt.l+(tt.p?'-'+tt.p:'')+' '+money(tt.v) : 'pending')+' (not in the ATS total)' : '')+'</td>'
       + '<td class="mono">'+(t.aw+t.al+t.ap ? t.aw+'-'+t.al+(t.ap?'-'+t.ap:'') : '—')+'</td><td class="mono '+(graded?cls(t.a$):'flat')+'">'+(graded?money(t.a$):'—')+'</td><td></td>'
       + '<td class="mono">'+(t.mw+t.ml ? t.mw+'-'+t.ml : '—')+'</td><td class="mono '+(graded?cls(t.m$):'flat')+'">'+(graded?money(t.m$):'—')+'</td></tr></tfoot>' : '';
     document.getElementById('logtbl').innerHTML = '<thead><tr><th class="c-date">Date</th><th>Sport</th><th>Model</th><th>Game</th><th>Pick</th><th>Spread</th><th>ATS</th><th>ATS $</th><th>ML odds</th><th>ML</th><th>ML $</th></tr></thead>'
@@ -821,6 +838,19 @@ footer b{color:var(--ink);}
     return '<div class="kpi-stats kpi-tot"><div>NBA Totals<b>'+(n+pu ? w+'-'+l+(pu?'-'+pu:'') : '—')+'</b></div><div>Win %<b>'+(n?pct(w,n):'—')+'</b></div><div>Profit<b class="'+(n+pu?cls(v):'flat')+'">'+(n+pu?money(v):'—')+'</b></div></div>'
       + '<div class="kpi-note">Over/under picks, $100 at −110 (the same in either market view).</div>';
   }
+  // Your own over/under picks for the You card, in the dashboard's sport and date range.
+  function myTotalsKpi(list){
+    var w = 0, l = 0, pu = 0, v = 0;
+    list.forEach(function(p){
+      if(p.w!=='mytotal' || !p.tr) return;
+      if(p.tr==='W') w++; else if(p.tr==='L') l++; else pu++;
+      v += p.tp||0;
+    });
+    var n = w+l;
+    if(!(n+pu)) return '';
+    return '<div class="kpi-stats kpi-tot"><div>Your O/U<b>'+w+'-'+l+(pu?'-'+pu:'')+'</b></div><div>Win %<b>'+(n?pct(w,n):'—')+'</b></div><div>Profit<b class="'+cls(v)+'">'+money(v)+'</b></div></div>'
+      + '<div class="kpi-note">Your over/under picks, $100 at the locked odds (the same in either market view).</div>';
+  }
   function renderDash(){
     if(!document.getElementById('dashboard')) return;
     var list = filteredPlays(), mk = DASH.market==='ats' ? 'against the spread' : 'on the moneyline';
@@ -837,7 +867,7 @@ footer b{color:var(--ink);}
       return '<div class="kpi"><div class="kpi-h"><i class="key" style="background:'+w.c+'"></i><b>'+w.label+'</b><span>'+w.role+'</span></div>'
         + '<div class="kpi-main"><div class="kpi-fig '+(a.priced?cls(a.profit):'flat')+'">'+(a.priced?money(a.profit):'—')+'<small>profit '+mk+'</small></div>'+sparkSvg(ser.series[i].prof, w.c)+'</div>'
         + '<div class="kpi-stats"><div>Record<b>'+recText(a)+'</b></div><div>Win %<b>'+(n?pct(a.w,n):'—')+'</b></div><div>ROI<b class="'+(r==null?'flat':cls(r))+'">'+(r==null?'—':(r>0?'+':'')+r+'%')+'</b></div></div>'
-        + note + (w.k==='stats' ? totalsKpi() : '') + '</div>';
+        + note + (w.k==='stats' ? totalsKpi() : '') + (w.k==='mine' ? myTotalsKpi(list) : '') + '</div>';
     }).join('');
 
     renderAgree(list, mk);
@@ -1070,7 +1100,26 @@ footer b{color:var(--ink);}
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="away" aria-pressed="'+(side==='away')+'"'+dis+'>'+btnLabel(g.away,g.awaySpread,g.awayMoneyline)+'</button>'
       + (num(g.drawMoneyline) ? '<button type="button" class="pickbtn draw" data-id="'+esc(id)+'" data-side="draw" aria-pressed="'+(side==='draw')+'"'+dis+'>'+btnLabel('Draw',null,g.drawMoneyline)+'</button>' : '')
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="home" aria-pressed="'+(side==='home')+'"'+dis+'>'+btnLabel(g.home,g.homeSpread,g.homeMoneyline)+'</button>'
-      + '</div>' + notes;
+      + '</div>' + notes + totalRowInner(id);
+  }
+  function totalRowInner(id){
+    var g = GAMES[id].game, L = gameTotalLine(g), ou = effectiveTotal(id), c = (DATA.myTotals||{})[id];
+    if(!L && !c) return '';
+    var changed = pendingTotals.hasOwnProperty(id), dis = g.final ? ' disabled' : '';
+    var state = changed ? '<span class="state local">not submitted</span>' : (c ? '<span class="state repo">in repo</span>' : '');
+    var odds = function(v){ return num(v) ? ' <span class="pr">'+sgn(v)+'</span>' : ''; };
+    var note = '';
+    if(c && !changed){
+      if(c.result) note = '<span class="val"><span class="chip '+(c.result.result==='W'?'w':c.result.result==='L'?'l':'p')+'">'+(c.result.result==='P'?'push':(c.result.result==='W'?'✓ ':'✕ ')+money(c.result.profit))+'</span></span>';
+      if(L && c.line !== L.t) note += '<span class="note">Your '+esc(c.side)+' is locked at '+esc(String(c.line))+' (the line when you submitted); the line now is '+esc(String(L.t))+'.</span>';
+      else if(!c.result && !g.final) note += '<span class="note">Locked at '+esc(String(c.line))+'. Grades automatically once the game is final.</span>';
+    }
+    if(!L) return '<div class="pickhead"><span class="lbl">Your total</span>'+state+'</div><div class="note">'+esc((c.side==='over'?'Over ':'Under ')+c.line)+'</div>'+note;
+    return '<div class="pickhead ttlhead"><span class="lbl">Your total</span>'+state+'</div>'
+      + '<div class="pickbtns">'
+      + '<button type="button" class="pickbtn ttlbtn" data-id="'+esc(id)+'" data-ou="over" aria-pressed="'+(ou==='over')+'"'+dis+'>Over '+esc(String(L.t))+odds(L.o)+'</button>'
+      + '<button type="button" class="pickbtn ttlbtn" data-id="'+esc(id)+'" data-ou="under" aria-pressed="'+(ou==='under')+'"'+dis+'>Under '+esc(String(L.t))+odds(L.u)+'</button>'
+      + '</div>' + note;
   }
   function renderPickRow(id){
     var el = document.getElementById('pr-'+id);
@@ -1122,15 +1171,15 @@ footer b{color:var(--ink);}
   // ---- submit bar ----
   function issueUrl(){
     var body = 'Picks submitted from the pick sheet. Leave the block below as-is — the Pick intake workflow reads it, commits the picks to data/mypicks/, and closes this issue.\n\n```json\n'
-      + JSON.stringify({date:DATA.slate.date, picks:pending, scores:pendingScores}) + '\n```\n';
+      + JSON.stringify({date:DATA.slate.date, picks:pending, scores:pendingScores, totals:pendingTotals}) + '\n```\n';
     return 'https://github.com/'+DATA.repo+'/issues/new?title='+encodeURIComponent('picks '+DATA.slate.date)+'&body='+encodeURIComponent(body);
   }
   function renderSubmitBar(){
-    var n = Object.keys(pending).length + Object.keys(pendingScores).length;
+    var n = Object.keys(pending).length + Object.keys(pendingScores).length + Object.keys(pendingTotals).length;
     var bar = document.getElementById('submitbar');
     bar.hidden = n===0;
     if(!n) return;
-    document.getElementById('submitmsg').innerHTML = '<b>'+n+'</b> change'+(n===1?'':'s')+' (picks or reason scores) saved in this browser, not in the repo yet.';
+    document.getElementById('submitmsg').innerHTML = '<b>'+n+'</b> change'+(n===1?'':'s')+' (picks, totals or reason scores) saved in this browser, not in the repo yet.';
     document.getElementById('submitlink').href = issueUrl();
   }
 
@@ -1189,7 +1238,10 @@ footer b{color:var(--ink);}
 
   document.addEventListener('click', function(e){
     var b = e.target.closest('.pickbtn');
-    if(b && !b.disabled) choose(b.getAttribute('data-id'), b.getAttribute('data-side'));
+    if(b && !b.disabled){
+      if(b.hasAttribute('data-ou')) chooseTotal(b.getAttribute('data-id'), b.getAttribute('data-ou'));
+      else choose(b.getAttribute('data-id'), b.getAttribute('data-side'));
+    }
     var sb = e.target.closest('.seg5 button');
     if(sb && !sb.disabled) setScore(sb.getAttribute('data-sid'), +sb.getAttribute('data-i'), sb.getAttribute('data-c'));
   });
@@ -1253,7 +1305,7 @@ footer b{color:var(--ink);}
     paintThemeBtn();
   });
   document.getElementById('discard').addEventListener('click', function(){
-    pending = {}; pendingScores = {}; savePending();
+    pending = {}; pendingScores = {}; pendingTotals = {}; savePending();
     Object.keys(GAMES).forEach(function(id){ renderScore(id); renderPickRow(id); }); renderSubmitBar();
   });
   document.getElementById('submitlink').addEventListener('click', function(){
@@ -1272,7 +1324,7 @@ footer b{color:var(--ink);}
         return;
       }
     }
-    DATA = d; var lp = loadPending(); pending = lp.sides; pendingScores = lp.scores; render(); reconcile(); Object.keys(GAMES).forEach(renderPickRow); renderSubmitBar();
+    DATA = d; var lp = loadPending(); pending = lp.sides; pendingScores = lp.scores; pendingTotals = lp.totals; render(); reconcile(); Object.keys(GAMES).forEach(renderPickRow); renderSubmitBar();
   }).catch(function(){
     document.getElementById('app').innerHTML = '<p class="loading">Couldn\'t load data.json. If you opened this file directly, run <span class="mono">python scripts/build_site.py</span> and open <span class="mono">_site/index.html</span> through a local server instead.</p>';
   });

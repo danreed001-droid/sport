@@ -21,7 +21,7 @@ from lib import grading_patterns, manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
 from lib.nba_stats_rules import families as nba_families  # noqa: E402
 from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules  # noqa: E402
-from lib.picks import game_id, grade, is_final, line_for, ml_skip, side_of, stats_view, team_for  # noqa: E402
+from lib.picks import game_id, grade, grade_total, is_final, line_for, ml_skip, side_of, stats_view, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
 SLATE_FIELDS = [
@@ -34,6 +34,7 @@ SLATE_FIELDS = [
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore", "manualFields",
     "totalsLine", "totalsFavors", "totalsCheck", "totalsRules", "statsWatch", "statsLine", "totalsWatch",
+    "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds",
 ]
 
 
@@ -171,6 +172,18 @@ def build():
                     plays.append(play)
                     bucket = by_sport.setdefault(sport, {k: blank() for k in ("ledger", "alt", "trend", "blowout", "stats", "nflstats", "ncaabstats", "mine")})
                     tally(bucket[who], r)
+                # Your own over/under picks (data/mypicks totals), graded at the
+                # line they were submitted at; kept apart from sides like NBA Totals.
+                mt = mypicks.get(date_str, {}).get("totals", {}).get(game_id(sport, date_str, g))
+                if mt and isinstance(mt.get("line"), (int, float)):
+                    play = {"d": date_str, "s": sport, "w": "mytotal", "g": f"{g.get('away')} @ {g.get('home')}",
+                            "k": f"{mt['side'].title()} {mt['line']:g}", "tl": mt["line"]}
+                    if final:
+                        r = grade_total(g, mt["side"], mt["line"], mt.get("odds"))
+                        play.update({"tr": r["result"], "tp": r["profit"], "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
+                    else:
+                        play["pd"] = 1
+                    plays.append(play)
                 # NBA Totals picks go in the pick log too, under their own keys
                 # (tl line, tr result, tp profit) so the spread/moneyline
                 # dashboard figures never count them.
@@ -271,6 +284,14 @@ def build():
                 entry["result"] = grade(sport, game, p["side"])
         committed[gid] = entry
 
+    my_totals = {}
+    for gid, t in mypicks.get(slate_date, {}).get("totals", {}).items():
+        entry = dict(t)
+        game = next((g for g in slate["sports"].get(t.get("sport"), {}).get("games", []) if g["id"] == gid), None)
+        if game and game["final"] and isinstance(t.get("line"), (int, float)):
+            entry["result"] = grade_total(game, t["side"], t["line"], t.get("odds"))
+        my_totals[gid] = entry
+
     for block in [totals, *by_sport.values()]:
         for acc in block.values():
             acc["atsProfit"] = round(acc["atsProfit"], 2)
@@ -281,6 +302,7 @@ def build():
         "repo": REPO,
         "slate": slate,
         "myPicks": committed,
+        "myTotals": my_totals,
         "myScores": mypicks.get(slate_date, {}).get("scores", {}),
         "scoreboard": totals,
         "plays": sorted(plays, key=lambda p: p["d"]),

@@ -83,6 +83,27 @@ def ml_skip(sport, ln):
     return None
 
 
+def game_total_line(g):
+    """The over/under line the pick sheet offers for a game: (total, over
+    odds, under odds). gameTotal comes from scripts/slate_totals.py (every
+    sport); NBA games without one fall back to NBA Totals' totalsLine."""
+    if _num(g.get("gameTotal")):
+        return g["gameTotal"], g.get("gameTotalOverOdds"), g.get("gameTotalUnderOdds")
+    if _num(g.get("totalsLine")):
+        return g["totalsLine"], None, None
+    return None, None, None
+
+
+def grade_total(g, side, line, odds=None):
+    """Your over/under pick on a final game, $100 at its stored odds (-110 if
+    none): {"result": "W"|"L"|"P", "profit"}."""
+    total = g["awayScore"] + g["homeScore"]
+    if total == line:
+        return {"result": "P", "profit": 0.0}
+    won = (total > line) == (side == "over")
+    return {"result": "W" if won else "L", "profit": round(payout(odds if _num(odds) else -110, won), 2)}
+
+
 def payout(odds, won):
     if not won:
         return -100.0

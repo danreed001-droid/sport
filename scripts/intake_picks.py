@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
-from lib.picks import game_id, is_final, line_for, team_for  # noqa: E402
+from lib.picks import game_id, game_total_line, is_final, line_for, team_for  # noqa: E402
 
 BLOCK = re.compile(r"```json\s*(\{.*?\})\s*```", re.S)
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -53,7 +53,9 @@ def process(issue):
     date_str = payload.get("date")
     picks = payload.get("picks") or {}
     scores = payload.get("scores") or {}
-    if not isinstance(date_str, str) or not DATE.match(date_str) or not isinstance(picks, dict) or not isinstance(scores, dict):
+    totals = payload.get("totals") or {}
+    if (not isinstance(date_str, str) or not DATE.match(date_str) or not isinstance(picks, dict) or not isinstance(scores, dict)
+            or not isinstance(totals, dict)):
         return False, "The picks block is missing a valid date or picks list."
 
     games = games_for(date_str)
@@ -67,6 +69,7 @@ def process(issue):
             current = json.load(f)
     current.setdefault("picks", {})
     current.setdefault("scores", {})
+    current.setdefault("totals", {})
 
     now = datetime.now(timezone.utc).isoformat(timespec="seconds")
     saved, cleared, rejected, scored = [], [], [], []
@@ -113,11 +116,40 @@ def process(issue):
         spread = ln["spread"]
         saved.append(f"{team_for(g, side)} {'' if spread is None else ('+' if spread > 0 else '') + str(spread)} ({label})".replace("  ", " "))
 
+    # Over/under picks: locked at the slate's line (and its odds) when submitted.
+    for gid, ou in totals.items():
+        if gid not in games:
+            rejected.append(f"`{gid}` — not on the {date_str} slate")
+            continue
+        sport, doc, g = games[gid]
+        label = f"{g['away']} @ {g['home']}"
+        if ou not in ("over", "under", "none"):
+            rejected.append(f"{label} — unknown total pick `{ou}`")
+            continue
+        if is_final(doc, g):
+            rejected.append(f"{label} — already final, picks are locked")
+            continue
+        if ou == "none":
+            if current["totals"].pop(gid, None):
+                cleared.append(f"{label} total")
+            continue
+        line, over_odds, under_odds = game_total_line(g)
+        if line is None:
+            rejected.append(f"{label} — no over/under line on the slate yet")
+            continue
+        odds = over_odds if ou == "over" else under_odds
+        current["totals"][gid] = {
+            "sport": sport, "away": g["away"], "home": g["home"], "time": g.get("time"),
+            "side": ou, "line": line, "odds": odds, "submittedAt": now, "issue": issue.get("number"),
+        }
+        saved.append(f"{ou.title()} {line:g}{'' if odds is None else f' ({odds:+g})'} ({label})")
+
     changed = bool(saved or cleared or scored)
     if changed:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         current["picks"] = dict(sorted(current["picks"].items()))
         current["scores"] = dict(sorted(current["scores"].items()))
+        current["totals"] = dict(sorted(current["totals"].items()))
         with open(path, "w", encoding="utf-8") as f:
             json.dump(current, f, indent=2, ensure_ascii=False)
             f.write("\n")

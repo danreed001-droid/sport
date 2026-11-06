@@ -64,6 +64,11 @@ jobs:
         continue-on-error: true
         run: python scripts/apply_manual.py
 
+      - name: Put each game's over/under line on today's and tomorrow's slates (for your O/U picks)
+        id: ouLines
+        continue-on-error: true
+        run: python scripts/slate_totals.py
+
       - name: Save Action Network's NBA board (betting splits) for the Basketball Routine
         id: market
         continue-on-error: true

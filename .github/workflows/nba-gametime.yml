@@ -45,6 +45,10 @@ jobs:
         continue-on-error: true
         run: python scripts/archive_market.py
 
+      - name: NBA over/under lines (for your O/U picks)
+        continue-on-error: true
+        run: python scripts/slate_totals.py nba
+
       - name: NBA Stats picks (today)
         id: nba
         continue-on-error: true
