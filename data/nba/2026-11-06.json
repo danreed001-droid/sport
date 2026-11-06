@@ -17,16 +17,16 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -241.0,
       "awayMoneyline": 199.0,
-      "statsSpread": -6.5,
+      "statsSpread": -7.5,
       "statsLine": {
-        "homeSpread": -6.5,
-        "awaySpread": 6.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -241,
-        "awayMoneyline": 199
+        "homeSpread": -7.5,
+        "awaySpread": 7.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": -297,
+        "awayMoneyline": 241
       },
-      "totalsLine": 230.5,
+      "totalsLine": 228.5,
       "totalsFavors": "Under",
       "totalsRules": [
         {
@@ -53,12 +53,12 @@
       "statsLine": {
         "homeSpread": 8.5,
         "awaySpread": -8.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": 276,
-        "awayMoneyline": -344
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 261,
+        "awayMoneyline": -324
       },
-      "totalsLine": 210.5
+      "totalsLine": 207.5
     },
     {
       "espnId": "401909289",
@@ -75,12 +75,12 @@
       "statsLine": {
         "homeSpread": 2.5,
         "awaySpread": -2.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
-        "homeMoneyline": 120,
-        "awayMoneyline": -142
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 124,
+        "awayMoneyline": -148
       },
-      "totalsLine": 228.5
+      "totalsLine": 230.5
     },
     {
       "espnId": "401909290",
@@ -97,12 +97,12 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
-        "homeMoneyline": -253,
-        "awayMoneyline": 208
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -277,
+        "awayMoneyline": 227
       },
-      "totalsLine": 226.5
+      "totalsLine": 225.5
     },
     {
       "espnId": "401909291",
@@ -119,12 +119,12 @@
       "statsLine": {
         "homeSpread": 3.5,
         "awaySpread": -3.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": 128,
-        "awayMoneyline": -152
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -117,
+        "homeMoneyline": 142,
+        "awayMoneyline": -170
       },
-      "totalsLine": 225.5
+      "totalsLine": 223.5
     },
     {
       "espnId": "401909292",
@@ -143,8 +143,8 @@
         "awaySpread": -6.5,
         "homeSpreadOdds": -105,
         "awaySpreadOdds": -115,
-        "homeMoneyline": 206,
-        "awayMoneyline": -249
+        "homeMoneyline": 211,
+        "awayMoneyline": -257
       },
       "totalsLine": 230.5
     },
@@ -165,8 +165,8 @@
         "awaySpread": -4.5,
         "homeSpreadOdds": -115,
         "awaySpreadOdds": -105,
-        "homeMoneyline": 154,
-        "awayMoneyline": -184
+        "homeMoneyline": 146,
+        "awayMoneyline": -174
       },
       "statsFavors": "Minnesota Timberwolves",
       "statsRules": [
@@ -195,10 +195,10 @@
       "statsLine": {
         "homeSpread": -2.5,
         "awaySpread": 2.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -148,
-        "awayMoneyline": 124
+        "homeSpreadOdds": -119,
+        "awaySpreadOdds": -101,
+        "homeMoneyline": -155,
+        "awayMoneyline": 130
       },
       "statsFavors": "Los Angeles Lakers",
       "statsRules": [
@@ -210,7 +210,7 @@
         }
       ],
       "statsCheck": "Rule 46: Backing Los Angeles Lakers: Los Angeles Lakers lost the last meeting by 7 (Portland Trail Blazers 136 @ Los Angeles Lakers 129, 2026-10-27) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16.",
-      "totalsLine": 232.5
+      "totalsLine": 231.5
     },
     {
       "espnId": "401909295",
@@ -223,14 +223,14 @@
       "awaySpreadOdds": -106.0,
       "homeMoneyline": 710.0,
       "awayMoneyline": -1100.0,
-      "statsSpread": 15.5,
+      "statsSpread": 16.5,
       "statsLine": {
-        "homeSpread": 15.5,
-        "awaySpread": -15.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
-        "homeMoneyline": 650,
-        "awayMoneyline": -990
+        "homeSpread": 16.5,
+        "awaySpread": -16.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 740,
+        "awayMoneyline": -1180
       },
       "totalsLine": 229.5
     }

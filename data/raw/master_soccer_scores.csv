@@ -18,9 +18,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401885697,2026-11-06,Scheduled,Toulouse,0,-,Nantes,0,-,-,-,1:00 PM
 401885647,2026-11-06,Scheduled,Montpellier,0,-,Paris FC,0,-,-,-,1:00 PM
 401885648,2026-11-06,Scheduled,Le Havre AC,0,-,Paris Saint-Germain,0,-,-,-,3:00 PM
-401892144,2026-11-06,Scheduled,Central Coast Mariners FC,0,-,Sydney FC,0,-,-,-,3:40 AM
+401892144,2026-11-06,FT,Central Coast Mariners FC,1,-,Sydney FC,4,-,-,-,3:40 AM
 401892143,2026-11-06,Scheduled,Wellington Phoenix,0,-,Auckland FC,0,-,-,-,11:00 PM
-401913239,2026-11-06,Scheduled,Wellington Phoenix,0,-,Adelaide United ,0,-,-,-,3:00 AM
+401913239,2026-11-06,FT,Wellington Phoenix,2,-,Adelaide United ,0,-,-,-,3:00 AM
 401913181,2026-11-06,Scheduled,Newcastle Jets ,0,-,Central Coast Mariners,0,-,-,-,11:00 PM
 401900874,2026-11-06,Postponed,Al Riyadh,0,-,Al Fateh,0,-,-,-,3:00 PM
 401900442,2026-11-06,Postponed,Al Nassr,0,-,Al Hazem,0,-,-,-,3:00 PM
@@ -70,9 +70,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401877557,2026-11-06,Scheduled,Tokyo Verdy 1969,0,-,Shimizu S-Pulse,0,-,-,-,11:00 PM
 401879602,2026-11-06,Scheduled,Suchitepequez,0,-,CD Guastatoya,0,-,-,-,9:00 PM
 401899772,2026-11-06,Scheduled,Isidro Metapán,0,-,Inca Aruba,0,-,-,-,7:00 PM
-401925415,2026-11-06,Scheduled,Bengaluru FC,0,-,FC GOA,0,-,-,-,9:00 AM
-401930703,2026-11-06,Scheduled,Mohammedan SC,0,-,Bengaluru United FC,0,-,-,-,5:30 AM
-401930702,2026-11-06,Scheduled,Chanmari FC,0,-,Shillong Lajong FC,0,-,-,-,8:00 AM
+401925415,2026-11-06,FT,Bengaluru FC,2,-,FC GOA,1,-,-,-,9:00 AM
+401930703,2026-11-06,FT,Mohammedan SC,3,-,Bengaluru United FC,4,-,-,-,5:30 AM
+401930702,2026-11-06,FT,Chanmari FC,1,-,Shillong Lajong FC,1,-,-,-,8:00 AM
 401929720,2026-11-06,Scheduled,Dayton,0,-,Saint Louis,0,-,-,-,2:00 PM
 401929721,2026-11-06,Scheduled,Fordham,0,-,George Mason,0,-,-,-,3:00 PM
 401929693,2026-11-06,Scheduled,Florida International,0,-,Charlotte,0,-,-,-,6:00 PM
