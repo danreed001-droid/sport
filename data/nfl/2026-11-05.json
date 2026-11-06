@@ -2,9 +2,84 @@
   "date": "2026-11-05",
   "weekday": "Thursday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-05T13:30:00Z",
   "games": [
-    {"altBlowoutCheck":"Jaguars off 42-7 win over IND (3 takeaways incl. a 92-yd pick-six vs 1 giveaway = +2 takeaway margin [cond.1 hit]; led 28-0 at half, not a come-from-tight-game script; favored by ~10 in this game [cond.2 hit]; Ravens defense ranks ~21st in takeaways forced, ~22nd in points allowed, ~19th in pass defense — not top-10/top-5 anywhere [cond.3 miss]; 33 rush attempts in the win [cond.4 hit]; no 2026 turnover-prone pattern for Lawrence or JAX ball-carriers [cond.5 miss]) — 3 of 5 hit, regression flag ON: +6 to Baltimore Ravens.","altBlowoutFavors":"Baltimore Ravens","altCategoryTally":"6-6","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Jacksonville (blended PD/g +10.1 vs Baltimore -0.7; Jacksonville's number carries no QB-change discount, while Baltimore's is further undercut by its own QB change to Fagnano, reinforcing rather than weakening the Jacksonville lean)","Injuries/Lineup (weighted x2 — multi-starter cluster): Jacksonville. Baltimore is without both quarterbacks who played for it this season — Lamar Jackson (thumb surgery, IR) and Tyler Huntley (season-ending turf toe) — plus two offensive line starters questionable (OT Roger Rosengarten, G John Simpson), forcing undrafted rookie Joe Fagnano into his first career NFL start","Form: Jacksonville (5-2, fresh off a 42-7 blowout win over Indianapolis). Baltimore's 3-game losing streak, including last week's 36-10 loss at Buffalo, was built almost entirely under Lamar Jackson, not tonight's starter Fagnano — neutralized as a signal for Baltimore specifically, but Jacksonville's own strong, unaffected form carries the category on its own merits","Market: Jacksonville. The line moved from Baltimore -4.5 at open to Jacksonville -10 by game week, a roughly 14.5-point swing driven entirely by Baltimore's QB collapse","Matchup splits: Jacksonville. Jaguars' pass rush (Josh Hines-Allen, Arik Armstead, Travon Walker) faces a Baltimore O-line already down two starters, protecting a true rookie making his first career start"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Jaguars prior game (Wk8 vs IND, box score): 42-7 win, 17 pass att/11 comp (183-218 yds, YPA ~10.8-12.8), 33 rush att (183 yds) — no pattern matched (team won, so Pattern A doesn't apply; too efficient to meet Pattern B's low-YPP requirement; not run-heavy/high-volume enough for Pattern C/D). Ravens prior game (Wk8 at BUF, CBS Gametracker): 10-36 loss, only 144 total net yards (68 passing on 12/26, YPA 2.6; 76 rushing on 19 att) — no pattern matched (lost by 26 but far short of Pattern A's 426-yard bar; attempt volumes too low for Pattern C/D). Net: no trend-check swing either way.","altTrendFavors":null,"away":"Jacksonville Jaguars","awayMoneyline":-520,"awayPDpg":10.13,"awayQB":"Trevor Lawrence","awayQBRating":112.6,"awayScore":null,"awaySpread":-10,"awaySpreadOdds":-110,"awayYPP":5.92,"confidence":"skip","correct":null,"home":"Baltimore Ravens","homeMoneyline":390,"homePDpg":-0.74,"homeQB":"Joe Fagnano","homeQBRating":null,"homeScore":null,"homeSpread":10,"homeSpreadOdds":-110,"homeYPP":5.63,"nflStatsCheck":"Rule 1: Backing Baltimore Ravens: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.","nflStatsFavors":"Baltimore Ravens","nflStatsRules":[{"backtest":"64.7% ATS, n=116; held-out 2024-25: 26-11","detail":"Backing Baltimore Ravens: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.","name":"Back a home underdog of 7+ points (fade a road favorite of 7+)","rule":1}],"offGap":8.1,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +10.1 vs -0.7 (blended 50/50 2026/2025)","Yds/play 5.92 vs 5.63 (~82nd vs ~74th percentile, 8.1-pt gap, under 30-pt threshold)","QB rating 112.6 vs n/a (Lawrence vs Fagnano — Baltimore QB room decimated, Jackson & Huntley both out)"],"time":"8:15 PM ET"}
-  ]
+    {
+      "altBlowoutCheck": "Jaguars off 42-7 win over IND (3 takeaways incl. a 92-yd pick-six vs 1 giveaway = +2 takeaway margin [cond.1 hit]; led 28-0 at half, not a come-from-tight-game script; favored by ~10 in this game [cond.2 hit]; Ravens defense ranks ~21st in takeaways forced, ~22nd in points allowed, ~19th in pass defense \u2014 not top-10/top-5 anywhere [cond.3 miss]; 33 rush attempts in the win [cond.4 hit]; no 2026 turnover-prone pattern for Lawrence or JAX ball-carriers [cond.5 miss]) \u2014 3 of 5 hit, regression flag ON: +6 to Baltimore Ravens.",
+      "altBlowoutFavors": "Baltimore Ravens",
+      "altCategoryTally": "6-6",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Jacksonville (blended PD/g +10.1 vs Baltimore -0.7; Jacksonville's number carries no QB-change discount, while Baltimore's is further undercut by its own QB change to Fagnano, reinforcing rather than weakening the Jacksonville lean)",
+        "Injuries/Lineup (weighted x2 \u2014 multi-starter cluster): Jacksonville. Baltimore is without both quarterbacks who played for it this season \u2014 Lamar Jackson (thumb surgery, IR) and Tyler Huntley (season-ending turf toe) \u2014 plus two offensive line starters questionable (OT Roger Rosengarten, G John Simpson), forcing undrafted rookie Joe Fagnano into his first career NFL start",
+        "Form: Jacksonville (5-2, fresh off a 42-7 blowout win over Indianapolis). Baltimore's 3-game losing streak, including last week's 36-10 loss at Buffalo, was built almost entirely under Lamar Jackson, not tonight's starter Fagnano \u2014 neutralized as a signal for Baltimore specifically, but Jacksonville's own strong, unaffected form carries the category on its own merits",
+        "Market: Jacksonville. The line moved from Baltimore -4.5 at open to Jacksonville -10 by game week, a roughly 14.5-point swing driven entirely by Baltimore's QB collapse",
+        "Matchup splits: Jacksonville. Jaguars' pass rush (Josh Hines-Allen, Arik Armstead, Travon Walker) faces a Baltimore O-line already down two starters, protecting a true rookie making his first career start"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "altTrendCheck": "Jaguars prior game (Wk8 vs IND, box score): 42-7 win, 17 pass att/11 comp (183-218 yds, YPA ~10.8-12.8), 33 rush att (183 yds) \u2014 no pattern matched (team won, so Pattern A doesn't apply; too efficient to meet Pattern B's low-YPP requirement; not run-heavy/high-volume enough for Pattern C/D). Ravens prior game (Wk8 at BUF, CBS Gametracker): 10-36 loss, only 144 total net yards (68 passing on 12/26, YPA 2.6; 76 rushing on 19 att) \u2014 no pattern matched (lost by 26 but far short of Pattern A's 426-yard bar; attempt volumes too low for Pattern C/D). Net: no trend-check swing either way.",
+      "altTrendFavors": null,
+      "away": "Jacksonville Jaguars",
+      "awayMoneyline": -520,
+      "awayPDpg": 10.13,
+      "awayQB": "Trevor Lawrence",
+      "awayQBRating": 112.6,
+      "awayScore": 33.0,
+      "awaySpread": -10,
+      "awaySpreadOdds": -110,
+      "awayYPP": 5.92,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Baltimore Ravens",
+      "homeMoneyline": 390,
+      "homePDpg": -0.74,
+      "homeQB": "Joe Fagnano",
+      "homeQBRating": null,
+      "homeScore": 10.0,
+      "homeSpread": 10,
+      "homeSpreadOdds": -110,
+      "homeYPP": 5.63,
+      "nflStatsCheck": "Rule 1: Backing Baltimore Ravens: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+      "nflStatsFavors": "Baltimore Ravens",
+      "nflStatsRules": [
+        {
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing Baltimore Ravens: a 10-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "rule": 1
+        }
+      ],
+      "offGap": 8.1,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +10.1 vs -0.7 (blended 50/50 2026/2025)",
+        "Yds/play 5.92 vs 5.63 (~82nd vs ~74th percentile, 8.1-pt gap, under 30-pt threshold)",
+        "QB rating 112.6 vs n/a (Lawrence vs Fagnano \u2014 Baltimore QB room decimated, Jackson & Huntley both out)"
+      ],
+      "time": "8:15 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": false,
+      "altBlowoutSpreadReturn": -100.0,
+      "nflStatsCorrect": null,
+      "nflStatsReturn": null,
+      "nflStatsCover": false,
+      "nflStatsSpreadReturn": -100.0
+    }
+  ],
+  "scoredAt": "2026-11-06T07:25:07.600544+00:00"
 }

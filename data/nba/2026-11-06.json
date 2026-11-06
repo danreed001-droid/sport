@@ -53,8 +53,8 @@
       "statsLine": {
         "homeSpread": 8.5,
         "awaySpread": -8.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
         "homeMoneyline": 276,
         "awayMoneyline": -344
       },
@@ -77,8 +77,8 @@
         "awaySpread": -2.5,
         "homeSpreadOdds": -108,
         "awaySpreadOdds": -112,
-        "homeMoneyline": 111,
-        "awayMoneyline": -132
+        "homeMoneyline": 120,
+        "awayMoneyline": -142
       },
       "totalsLine": 228.5
     },
@@ -141,8 +141,8 @@
       "statsLine": {
         "homeSpread": 6.5,
         "awaySpread": -6.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -116,
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -117,
         "homeMoneyline": 216,
         "awayMoneyline": -263
       },
@@ -163,8 +163,8 @@
       "statsLine": {
         "homeSpread": 4.5,
         "awaySpread": -4.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
         "homeMoneyline": 154,
         "awayMoneyline": -184
       },
@@ -227,12 +227,12 @@
       "statsLine": {
         "homeSpread": 15.5,
         "awaySpread": -15.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": 710,
-        "awayMoneyline": -1100
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": 650,
+        "awayMoneyline": -990
       },
-      "totalsLine": 228.5
+      "totalsLine": 229.5
     }
   ]
 }
