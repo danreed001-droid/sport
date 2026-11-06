@@ -53,7 +53,16 @@
         "Magic missing Banchero, Suggs, Isaac, Penda, Nelson (5 OUT, incl. best player); Suns missing Mark Williams (OUT) plus Goodwin/Fleming (game-time decisions) and are on 2nd night of a back-to-back"
       ],
       "time": "9:00 PM ET",
-      "totalsLine": 222.5
+      "totalsLine": 222.5,
+      "statsSpread": -1.5,
+      "statsLine": {
+        "homeSpread": -1.5,
+        "awaySpread": 1.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -121,
+        "awayMoneyline": 102
+      }
     },
     {
       "altCategoryTally": "2-5",
@@ -122,9 +131,18 @@
       "time": "10:00 PM ET",
       "totalsLine": 235.5,
       "statsCorrect": true,
-      "statsReturn": 35.59,
+      "statsReturn": 59.88,
       "statsCover": true,
-      "statsSpreadReturn": 94.34
+      "statsSpreadReturn": 86.96,
+      "statsSpread": -3.5,
+      "statsLine": {
+        "homeSpread": -3.5,
+        "awaySpread": 3.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -167,
+        "awayMoneyline": 140
+      }
     }
   ],
   "scoredAt": "2026-11-06T07:25:10.913257+00:00"

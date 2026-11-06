@@ -58,14 +58,17 @@ REPO_OWNED_GAME_FIELDS = ("statsFavors", "statsCheck", "statsRules", "statsCorre
                           "ncaabStatsFavors", "ncaabStatsCheck", "ncaabStatsRules", "ncaabStatsCorrect", "ncaabStatsReturn",
                           "ncaabStatsCover", "ncaabStatsSpreadReturn", "statsBackfill",
                           "totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsCorrect", "totalsReturn", "totalsBackfill",
-                          "totalsWatch", "statsWatch")
+                          "totalsWatch", "statsWatch",
+                          # Live lines kept until start (nba_stats_signals.py; slate_totals.py).
+                          "statsSpread", "statsLine", "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds")
 
 
 def carry_repo_fields(current, doc):
     """Replaces REPO_OWNED_GAME_FIELDS on the incoming database copy with the
     repo copy's values (or their absence), matching games by away/home."""
-    by_matchup = {(g.get("away"), g.get("home")): g for g in (current or {}).get("games", [])}
-    for g in doc.get("games", []):
+    key = "matches" if "matches" in doc else "games"   # soccer slates hold "matches"
+    by_matchup = {(g.get("away"), g.get("home")): g for g in (current or {}).get(key, [])}
+    for g in doc.get(key, []):
         old = by_matchup.get((g.get("away"), g.get("home")), {})
         for k in REPO_OWNED_GAME_FIELDS:
             if k in old:
