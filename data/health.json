@@ -48,6 +48,12 @@
       "status": "success",
       "okOn": "2026-11-06",
       "failingSince": null
+    },
+    "ncaabRatings": {
+      "label": "NCAAB ratings (Sports Reference)",
+      "status": "success",
+      "okOn": "2026-11-06",
+      "failingSince": null
     }
   }
 }
