@@ -770,6 +770,8 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
     regular = regular_season_games(session, date_str)
     tonight = tonight_games(session, date_str)
     mk = action_network.market(date_str)
+    print(f"Action Network (rule 50): {len(mk)} game(s) with lines for {date_str}"
+          f"{'' if mk else ' -- feed unreachable or empty, rule 50 skipped this run'}.")
     for g in doc.get("games", []):
         away, home = g.get("away"), g.get("home")
         if not away or not home:
