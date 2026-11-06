@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-06",
+  "picks": {
+    "nba-2026-11-06-portland-trail-blazers-los-angeles-lakers-10-00-pm-et": {
+      "sport": "nba",
+      "away": "Portland Trail Blazers",
+      "home": "Los Angeles Lakers",
+      "time": "10:00 PM ET",
+      "side": "home",
+      "team": "Los Angeles Lakers",
+      "spread": -2.5,
+      "spreadOdds": -106,
+      "moneyline": -130,
+      "submittedAt": "2026-11-06T22:57:24+00:00",
+      "issue": 18
+    }
+  },
+  "scores": {
+    "nba-2026-11-06-boston-celtics-charlotte-hornets-7-00-pm-et": "NNNaNNNNN",
+    "nba-2026-11-06-philadelphia-76ers-cleveland-cavaliers-7-30-pm-et": "NNNaNNNNN",
+    "nba-2026-11-06-portland-trail-blazers-los-angeles-lakers-10-00-pm-et": "NNNhNNNNN",
+    "nba-2026-11-06-san-antonio-spurs-sacramento-kings-10-00-pm-et": "NNNaNNNNN"
+  },
+  "totals": {
+    "nba-2026-11-06-washington-wizards-atlanta-hawks-7-00-pm-et": {
+      "sport": "nba",
+      "away": "Washington Wizards",
+      "home": "Atlanta Hawks",
+      "time": "7:00 PM ET",
+      "side": "under",
+      "line": 227.5,
+      "odds": -113,
+      "submittedAt": "2026-11-06T22:57:24+00:00",
+      "issue": 18
+    }
+  }
+}
