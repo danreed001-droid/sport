@@ -64,6 +64,11 @@ jobs:
         continue-on-error: true
         run: python scripts/apply_manual.py
 
+      - name: Save Action Network's NBA board (betting splits) for the Basketball Routine
+        id: market
+        continue-on-error: true
+        run: python scripts/archive_market.py
+
       - name: Patch today's NBA Stats picks onto the NBA slate
         id: nba
         continue-on-error: true

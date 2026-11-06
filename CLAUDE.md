@@ -133,6 +133,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   swapped). Checked until
   tip-off, then frozen; no feed means it just doesn't fire. Public %, money %
   and plain line moves on their own tested at 49-54% (2023-24 to now).
+  `scripts/archive_market.py` (each scoring and game-time run) saves Action
+  Network's NBA board for today and tomorrow to `data/raw/market/nba/<date>.json`
+  (consensus line, opener, bet/money splits, and `rlmFavorite`, the team rule
+  50's test backs). The Basketball Routine can't reach Action Network (the
+  scheduled-task network blocks it, and its robots.txt bars WebFetch) but can
+  read raw.githubusercontent.com, so its Market category reads this file.
   NBA Stats rules that read tonight's spread use `statsSpread`: ESPN
   pickcenter's (DraftKings) line, refreshed until tip-off and then kept,
   because a slate's line can be stale (2026-11-05 Heat @ Warriors: slate

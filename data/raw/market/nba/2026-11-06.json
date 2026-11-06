@@ -1,0 +1,214 @@
+{
+ "date": "2026-11-06",
+ "source": "Action Network public feed (consensus = book 15, opener = book 30)",
+ "fetchedAt": "2026-11-06T19:21:17+00:00",
+ "games": [
+  {
+   "away": "Boston Celtics",
+   "home": "Charlotte Hornets",
+   "start": "2026-11-07T00:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": 9.5,
+    "open": 8.5,
+    "tix_home": 20,
+    "money_home": 15
+   },
+   "total": {
+    "now": 207.5,
+    "open": 210.5,
+    "tix_over": 87,
+    "money_over": 84
+   },
+   "moneyline": {
+    "home": 300,
+    "away": -375
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Washington Wizards",
+   "home": "Atlanta Hawks",
+   "start": "2026-11-07T00:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": -8.5,
+    "open": -6.5,
+    "tix_home": 53,
+    "money_home": 54
+   },
+   "total": {
+    "now": 228.5,
+    "open": 230.5,
+    "tix_over": 72,
+    "money_over": 71
+   },
+   "moneyline": {
+    "home": -295,
+    "away": 240
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Philadelphia 76ers",
+   "home": "Cleveland Cavaliers",
+   "start": "2026-11-07T00:30:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": 2.5,
+    "open": -1.5,
+    "tix_home": 14,
+    "money_home": 18
+   },
+   "total": {
+    "now": 231,
+    "open": 234.5,
+    "tix_over": 66,
+    "money_over": 64
+   },
+   "moneyline": {
+    "home": 125,
+    "away": -148
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Toronto Raptors",
+   "home": "Milwaukee Bucks",
+   "start": "2026-11-07T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": 4.5,
+    "open": 7.5,
+    "tix_home": 35,
+    "money_home": 77
+   },
+   "total": {
+    "now": 229.5,
+    "open": 231.5,
+    "tix_over": 65,
+    "money_over": 61
+   },
+   "moneyline": {
+    "home": 158,
+    "away": -190
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Minnesota Timberwolves",
+   "home": "New Orleans Pelicans",
+   "start": "2026-11-07T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": 3.5,
+    "open": 5.5,
+    "tix_home": 29,
+    "money_home": 36
+   },
+   "total": {
+    "now": 230.5,
+    "open": 229.5,
+    "tix_over": 72,
+    "money_over": 82
+   },
+   "moneyline": {
+    "home": 135,
+    "away": -160
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Utah Jazz",
+   "home": "Dallas Mavericks",
+   "start": "2026-11-07T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": -6.5,
+    "open": -7.5,
+    "tix_home": 85,
+    "money_home": 88
+   },
+   "total": {
+    "now": 225.5,
+    "open": 224.5,
+    "tix_over": 78,
+    "money_over": 87
+   },
+   "moneyline": {
+    "home": -270,
+    "away": 220
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Oklahoma City Thunder",
+   "home": "Memphis Grizzlies",
+   "start": "2026-11-07T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": 4.5,
+    "open": 3.5,
+    "tix_home": 21,
+    "money_home": 23
+   },
+   "total": {
+    "now": 223.5,
+    "open": 224.5,
+    "tix_over": 83,
+    "money_over": 79
+   },
+   "moneyline": {
+    "home": 145,
+    "away": -175
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "San Antonio Spurs",
+   "home": "Sacramento Kings",
+   "start": "2026-11-07T03:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": 16.5,
+    "open": 15.5,
+    "tix_home": 26,
+    "money_home": 29
+   },
+   "total": {
+    "now": 231,
+    "open": 228.5,
+    "tix_over": 73,
+    "money_over": 71
+   },
+   "moneyline": {
+    "home": 800,
+    "away": -1400
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Portland Trail Blazers",
+   "home": "Los Angeles Lakers",
+   "start": "2026-11-07T03:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": -2.5,
+    "open": -3.5,
+    "tix_home": 74,
+    "money_home": 64
+   },
+   "total": {
+    "now": 231.5,
+    "open": 238.5,
+    "tix_over": 86,
+    "money_over": 85
+   },
+   "moneyline": {
+    "home": -155,
+    "away": 125
+   },
+   "rlmFavorite": null
+  }
+ ]
+}
