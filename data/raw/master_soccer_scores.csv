@@ -1,7 +1,7 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
 401928527,2026-11-05,Postponed,Levante,0,-,CD Tarancon,0,-,-,-,1:00 PM
 401928505,2026-11-05,Postponed,Mallorca,0,-,Alcoyano,0,-,-,-,3:00 PM
-401926824,2026-11-05,18',Antofagasta,0,-,Universidad de Chile,0,-,-,-,5:00 PM
+401926824,2026-11-05,FT,Antofagasta,0,-,Universidad de Chile,4,-,-,-,5:00 PM
 401915534,2026-11-05,FT,Ferencvaros,2,-,AC Milan,0,-,-,-,12:45 PM
 401915538,2026-11-05,FT,RB Salzburg,0,-,Anderlecht,2,-,-,-,12:45 PM
 401915526,2026-11-05,FT,TSG Hoffenheim,1,-,Crystal Palace,1,-,-,-,12:45 PM
@@ -51,31 +51,31 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401912757,2026-11-05,FT,Tampines Rovers FC,0,-,PKR Svay Rieng,2,-,-,-,7:15 AM
 401931917,2026-11-05,Scheduled,Piratas,0,-,Cancún FC,0,-,-,-,8:00 PM
 401931854,2026-11-05,Scheduled,Leones Negros,0,-,Durango,0,-,-,-,10:05 PM
-401924349,2026-11-05,31',Tigres UANL,0,-,Atlante,0,-,-,-,4:45 PM
-401924386,2026-11-05,Scheduled,Atlas,0,-,Necaxa,0,-,-,-,6:00 PM
+401924349,2026-11-05,FT,Tigres UANL,4,-,Atlante,0,-,-,-,4:45 PM
+401924386,2026-11-05,59',Atlas,1,-,Necaxa,1,-,-,-,6:00 PM
 401924360,2026-11-05,Scheduled,Toluca,0,-,Querétaro,0,-,-,-,8:06 PM
 401924364,2026-11-05,Scheduled,Tijuana,0,-,Santos,0,-,-,-,10:10 PM
 401841659,2026-11-05,FT,River Plate,2,-,Aldosivi,0,-,-,-,1:00 PM
-401841667,2026-11-05,4',Belgrano (Córdoba),0,-,Gimnasia La Plata,0,-,-,-,5:15 PM
-401841300,2026-11-05,Scheduled,Remo,0,-,Palmeiras,0,-,-,-,5:30 PM
+401841667,2026-11-05,FT,Belgrano (Córdoba),1,-,Gimnasia La Plata,2,-,-,-,5:15 PM
+401841300,2026-11-05,85',Remo,1,-,Palmeiras,6,-,-,-,5:30 PM
 401841303,2026-11-05,Scheduled,Bahia,0,-,Cruzeiro,0,-,-,-,7:30 PM
-401860431,2026-11-05,Scheduled,Londrina,0,-,Botafogo-SP,0,-,-,-,5:30 PM
-401888568,2026-11-05,19',Sportivo Luqueño,0,-,Rubio Ñú,0,-,-,-,5:00 PM
-401929983,2026-11-05,Scheduled,Real Potosí,0,-,Bolívar,0,-,-,-,6:00 PM
-401926716,2026-11-05,59',Real España,1,-,Génesis PN,0,-,-,-,4:00 PM
-401926715,2026-11-05,Scheduled,CA Independiente Siguatepeque,0,-,CD Choloma,0,-,-,-,6:15 PM
+401860431,2026-11-05,89',Londrina,0,-,Botafogo-SP,4,-,-,-,5:30 PM
+401888568,2026-11-05,FT,Sportivo Luqueño,5,-,Rubio Ñú,0,-,-,-,5:00 PM
+401929983,2026-11-05,61',Real Potosí,0,-,Bolívar,1,-,-,-,6:00 PM
+401926716,2026-11-05,FT,Real España,1,-,Génesis PN,1,-,-,-,4:00 PM
+401926715,2026-11-05,46',CA Independiente Siguatepeque,0,-,CD Choloma,0,-,-,-,6:15 PM
 401926714,2026-11-05,Scheduled,Platense,0,-,Club Deportivo Marathón,0,-,-,-,8:30 PM
-401876889,2026-11-05,Scheduled,Cartaginés,0,-,Inter de San Carlos,0,-,-,-,6:00 PM
+401876889,2026-11-05,56',Cartaginés,0,-,Inter de San Carlos,1,-,-,-,6:00 PM
 401876827,2026-11-05,Scheduled,Saprissa,0,-,Herediano,0,-,-,-,9:00 PM
 401932722,2026-11-05,FT,India,3,-,Pakistan,2,-,-,-,4:30 AM
 401932723,2026-11-05,FT,Bangladesh,1,-,Bhutan,0,-,-,-,9:00 AM
 401925417,2026-11-05,FT,NorthEast United FC,2,-,Churchill Brothers,0,-,-,-,6:30 AM
 401925416,2026-11-05,FT,Odisha FC,2,-,Mohun Bagan Super Giant,3,-,-,-,9:00 AM
 401930704,2026-11-05,FT,Dempo Sports Club,2,-,Samaleswari SC,1,-,-,-,8:00 AM
-401929837,2026-11-05,84',Liberty,2,-,East Tennessee State,2,-,-,-,3:00 PM
-401929750,2026-11-05,15',Charleston,0,-,Elon,0,-,-,-,5:00 PM
-401929838,2026-11-05,14',VMI,0,-,UNC Greensboro,0,-,-,-,5:00 PM
-401898885,2026-11-05,Scheduled,New Haven,0,-,Central Connecticut,0,-,-,-,6:00 PM
+401929837,2026-11-05,FT-Pens,Liberty,2,-,East Tennessee State,2,-,-,-,3:00 PM
+401929750,2026-11-05,FT,Charleston,2,-,Elon,0,-,-,-,5:00 PM
+401929838,2026-11-05,FT,VMI,1,-,UNC Greensboro,4,-,-,-,5:00 PM
+401898885,2026-11-05,58',New Haven,0,-,Central Connecticut,0,-,-,-,6:00 PM
 401929751,2026-11-05,Scheduled,Drexel,0,-,Hofstra,0,-,-,-,7:30 PM
 401929921,2026-11-05,FT,William & Mary,1,-,Elon,0,-,-,-,12:00 PM
 401890174,2026-11-05,FT,UT Rio Grande Valley,1,-,Northwestern State,2,-,-,-,12:00 PM
@@ -91,26 +91,26 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401897220,2026-11-05,FT,Utah Tech,2,-,Southern Utah,0,-,-,-,3:00 PM
 401929865,2026-11-05,AGT,UMBC,1,-,Vermont,0,-,-,-,3:00 PM
 401890318,2026-11-05,FT,Idaho State,1,-,Weber State,9,-,-,-,3:00 PM
-401900260,2026-11-05,45',Alabama A&M,0,-,Alcorn State,2,-,-,-,4:00 PM
+401900260,2026-11-05,FT,Alabama A&M,1,-,Alcorn State,8,-,-,-,4:00 PM
 401900296,2026-11-05,FT,Prairie View A&M,6,-,Arkansas-Pine Bluff,0,-,-,-,4:00 PM
-401900288,2026-11-05,51',Texas Southern,0,-,Jackson State,3,-,-,-,4:00 PM
-401929911,2026-11-05,14',Washington,0,-,Michigan State,1,-,-,-,5:00 PM
-401887095,2026-11-05,14',Clemson,0,-,Wake Forest,0,-,-,-,5:00 PM
-401889730,2026-11-05,Scheduled,Stanford,0,-,Boston College,0,-,-,-,6:00 PM
-401889758,2026-11-05,Scheduled,Virginia,0,-,Duke,0,-,-,-,6:00 PM
-401889788,2026-11-05,Scheduled,North Carolina,0,-,Louisville,0,-,-,-,6:00 PM
-401889774,2026-11-05,Scheduled,Virginia Tech,0,-,Florida State,0,-,-,-,6:30 PM
-401929861,2026-11-05,Scheduled,Lipscomb,0,-,Bellarmine,0,-,-,-,7:00 PM
-401886864,2026-11-05,Scheduled,West Virginia,0,-,Cincinnati,0,-,-,-,7:00 PM
-401929905,2026-11-05,Scheduled,Longwood,0,-,High Point,0,-,-,-,7:00 PM
-401887057,2026-11-05,Scheduled,Texas Tech,0,-,Kansas,0,-,-,-,7:00 PM
-401929866,2026-11-05,Scheduled,UAlbany,0,-,Maine,0,-,-,-,7:00 PM
-401901442,2026-11-05,Scheduled,Miami,0,-,Notre Dame,0,-,-,-,7:00 PM
-401929904,2026-11-05,Scheduled,Gardner-Webb,0,-,Radford,0,-,-,-,7:00 PM
-401889810,2026-11-05,Scheduled,Pittsburgh,0,-,SMU,0,-,-,-,7:00 PM
-401889745,2026-11-05,Scheduled,California,0,-,Syracuse,0,-,-,-,7:00 PM
-401887046,2026-11-05,Scheduled,Iowa State,0,-,UCF,0,-,-,-,7:00 PM
-401929860,2026-11-05,Scheduled,Jacksonville,0,-,West Florida,0,-,-,-,7:00 PM
+401900288,2026-11-05,FT,Texas Southern,0,-,Jackson State,3,-,-,-,4:00 PM
+401929911,2026-11-05,96',Washington,2,-,Michigan State,3,-,-,-,5:00 PM
+401887095,2026-11-05,FT,Clemson,0,-,Wake Forest,2,-,-,-,5:00 PM
+401889730,2026-11-05,52',Stanford,1,-,Boston College,0,-,-,-,6:00 PM
+401889758,2026-11-05,53',Virginia,0,-,Duke,0,-,-,-,6:00 PM
+401889788,2026-11-05,50',North Carolina,1,-,Louisville,0,-,-,-,6:00 PM
+401889774,2026-11-05,39',Virginia Tech,1,-,Florida State,0,-,-,-,6:30 PM
+401929861,2026-11-05,13',Lipscomb,0,-,Bellarmine,0,-,-,-,7:00 PM
+401886864,2026-11-05,13',West Virginia,0,-,Cincinnati,0,-,-,-,7:00 PM
+401929905,2026-11-05,12',Longwood,0,-,High Point,1,-,-,-,7:00 PM
+401887057,2026-11-05,14',Texas Tech,0,-,Kansas,0,-,-,-,7:00 PM
+401929866,2026-11-05,13',UAlbany,0,-,Maine,1,-,-,-,7:00 PM
+401901442,2026-11-05,12',Miami,0,-,Notre Dame,0,-,-,-,7:00 PM
+401929904,2026-11-05,12',Gardner-Webb,0,-,Radford,1,-,-,-,7:00 PM
+401889810,2026-11-05,13',Pittsburgh,0,-,SMU,1,-,-,-,7:00 PM
+401889745,2026-11-05,13',California,0,-,Syracuse,0,-,-,-,7:00 PM
+401887046,2026-11-05,12',Iowa State,0,-,UCF,1,-,-,-,7:00 PM
+401929860,2026-11-05,11',Jacksonville,0,-,West Florida,0,-,-,-,7:00 PM
 401886985,2026-11-05,Scheduled,Houston,0,-,Baylor,0,-,-,-,8:00 PM
 401889632,2026-11-05,Scheduled,Stephen F. Austin,0,-,East Texas A&M,0,-,-,-,8:00 PM
 401889670,2026-11-05,Scheduled,Houston Christian,0,-,Incarnate Word,0,-,-,-,8:00 PM
