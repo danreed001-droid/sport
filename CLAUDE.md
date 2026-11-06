@@ -178,6 +178,19 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   Routine's scope and the feed the grader reads -- with lines from ESPN's
   pickcenter, marked autoSlate so a Routine's slate still replaces it.
   `archive_lines.py` keeps NCAAB opening/closing lines too.
+- NCAAB Ledger inputs: KenPom is paywalled, BartTorvik's robots.txt bars
+  ClaudeBot and TeamRankings errors, so the Basketball Routine skipped every
+  NCAAB game "no-data" on 2026-11-06. `scripts/archive_ncaab_ratings.py`
+  (each scoring run; fetches at most once a day after 8 AM ET, plain request,
+  allowed by robots.txt) saves Sports Reference's ratings page to
+  `data/raw/ncaab/ratings/<date>.json`, plus last season's final once
+  (`final-<season>.json`): MOV (= PD/g) and adjusted ORtg/DRtg per 100
+  possessions with ranks, and the Ledger's inputs with its early-season rule
+  already applied (`ledgerMov`, `ledgerORtg`/`ledgerDRtg` and their ranks
+  among `ledgerN` teams; 0 games = last final, first 10 = 50/50 blend). The
+  Routine and the research check read it through raw.githubusercontent.com.
+  Sports Reference names schools its own way (Connecticut, Mississippi,
+  Louisiana State, Miami (FL)). Don't fetch sites that block bots.
 - NCAAB Stats (`scripts/ncaab_stats_signals.py`, rules in `scripts/lib/ncaab_stats_rules.py`)
   patches picks onto the NCAAB slate each run, like NBA/NFL Stats, but has no
   active rules: Rule 1 (back a team after a loss where the opponent out-shot it
