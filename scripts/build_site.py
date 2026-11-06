@@ -68,7 +68,9 @@ def tally(acc, g_result):
         acc["mlW"] += 1
     elif ml["result"] == "L":
         acc["mlL"] += 1
-    if ml["profit"] is not None:
+    # A moneyline pick the grading rules skip (priced -400 or shorter, or an
+    # NFL/CFB/NCAAB dog of 7+) is left out of the profit too, as on the page.
+    if ml["counted"] and ml["profit"] is not None:
         acc["mlProfit"] += ml["profit"]
         acc["mlPriced"] += 1
 
