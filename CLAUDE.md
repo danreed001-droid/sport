@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -124,6 +124,19 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   game-level shuffle passed 36-91 combinations vs 79 real, so it's on trial;
   last-game team stats and 3/5-game stat trends were also searched and were
   no better than luck.
+  Rule 50 (on trial) backs the favorite when 60%+ of spread bets are on a 7+
+  point underdog but the line moved 1-4.5 points toward the favorite since
+  the open (reverse line movement), from Action Network's public feed
+  (`lib/action_network.py`: consensus line, opener, ticket %); 89-55 replayed
+  on 2024-25 and 2025-26 (no openers in the 2023-24 feed). Moves of 5+ are
+  left out: some are injury news, some a bad opener (a few have home/away
+  swapped). Checked until
+  tip-off, then frozen; no feed means it just doesn't fire. Public %, money %
+  and plain line moves on their own tested at 49-54% (2023-24 to now).
+  NBA Stats rules that read tonight's spread use `statsSpread`: ESPN
+  pickcenter's (DraftKings) line, refreshed until tip-off and then kept,
+  because a slate's line can be stale (2026-11-05 Heat @ Warriors: slate
+  -7.5, market -3.5).
   Overlapping slices of one situation (NBA Stats 20-29, 35-40, 41-43, 44-48; NBA Totals 4-8,
   9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`

@@ -62,7 +62,7 @@ from datetime import date, datetime, timezone
 from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(__file__))
-from lib import espn, manual, store  # noqa: E402
+from lib import action_network, espn, manual, store  # noqa: E402
 from lib.nba_absence import big_scorers, injury_status, watch_entries  # noqa: E402
 from lib.nba_revenge import revenge_facts  # noqa: E402
 from score_slate import _same_team  # noqa: E402
@@ -159,6 +159,7 @@ ALLOWED_REST = {
         33: {}, 34: {}, 35: {}, 36: {}, 37: {"rested": True}, 38: {"rested": True},
         39: {}, 40: {"rested": True}, 41: {}, 42: {}, 43: {}, 44: {}, 45: {}, 46: {}, 47: {}, 48: {}}.items()},
     49: {"b2b"},
+    50: {"b2b", "1", "2+"},
 }
 LATE_COMEBACK = 5
 STARTER_PTS = 10      # rule 14: points every starter scored
@@ -255,7 +256,7 @@ def tonight_games(session, date_str):
             st = status_fn(team)
             return None if st is None else {pid for pid, v in st.items() if v[1] == "out"}
         out[(teams.get("away"), teams.get("home"))] = {"state": (comp.get("status") or {}).get("type", {}).get("state"),
-                                                       "out": out_fn, "status": status_fn}
+                                                       "out": out_fn, "status": status_fn, "id": ev["id"]}
     return out
 
 
@@ -455,7 +456,8 @@ class BoxCache:
                 json.dump(self.data, f, separators=(",", ":"))
 
 
-def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonight=None, only_rules=None, home_spread=None):
+def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonight=None, only_rules=None, home_spread=None,
+                  market=None):
     """Returns (pick_team, check_text) or None. Collects every rule that
     fires for either team; skips the game if they disagree on a side.
     tonight: {"state": ESPN game state, "out": team -> set of player ids out
@@ -655,6 +657,27 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 pick = ot if n == 48 else rt
                 picks.append((pick, n, f"{'Fading' if n == 48 else 'Backing'} {rt}: {why} -- {RULE_BACKTEST.get(n, '')}."))
 
+    # Rule 50: 60%+ of spread bets on a 7+ point underdog, yet the line moved 1+
+    # (but under 5) point further toward the favorite since it opened -> back the favorite.
+    # market: this game's Action Network entry (lib/action_network.py). Checked
+    # until tip-off, then frozen: a game that has started keeps what it had.
+    if tonight is not None and tonight.get("state") not in (None, "pre"):
+        prev = next((r for r in tonight.get("prior") or [] if r.get("rule") == 50), None)
+        if prev:
+            faded = home if str(prev.get("detail", "")).startswith(f"Fading {home}:") else away
+            picks.append((away if faded == home else home, 50, prev.get("detail", "")))
+    elif market and market.get("tix_home") is not None and market.get("spread_home") is not None \
+            and market.get("open_home") is not None:
+        for dog, is_home in ((home, True), (away, False)):
+            sp = market["spread_home"] if is_home else -market["spread_home"]
+            op = market["open_home"] if is_home else -market["open_home"]
+            tix = market["tix_home"] if is_home else 100 - market["tix_home"]
+            if sp >= 7 and tix >= 60 and 1 <= sp - op < 5:  # 5+ point moves: injury news or a bad opener
+                fav = away if is_home else home
+                picks.append((fav, 50, f"Fading {dog}: {tix:g}% of spread bets are on {dog} at {sp:+g}, but the line has "
+                                       f"moved from {op:+g} toward {fav} since it opened (Action Network consensus) -- "
+                                       f"{RULE_BACKTEST.get(50, '')}."))
+
     picks = [p for p in picks if p[1] in RULE_NAMES]  # retired rules (lib/nba_stats_rules.RETIRED) never pick
     if only_rules is not None:  # backfill: just these rules, as if no other rule existed
         picks = [p for p in picks if p[1] in only_rules]
@@ -745,18 +768,27 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
     changed = 0
     regular = regular_season_games(session, date_str)
     tonight = tonight_games(session, date_str)
+    mk = action_network.market(date_str)
     for g in doc.get("games", []):
         away, home = g.get("away"), g.get("home")
         if not away or not home:
             continue
         fails = FAILS[0]
-        watch_before = g.get("statsWatch")
+        watch_before, spread_before = g.get("statsWatch"), g.get("statsSpread")
         if regular.get((away, home), True):
             ev = next((v for (a, h), v in tonight.items() if _same_team(away, a) and _same_team(home, h)), None)
             ctx = None if ev is None else {"state": ev["state"], "out": ev["out"], "status": ev["status"],
                                            "prior": g.get("statsRules") or [], "watch": []}
+            # Rules that read tonight's spread (43-49) use the market's current line
+            # (ESPN pickcenter / DraftKings), refreshed until tip-off and then kept
+            # as statsSpread: a slate's line can be stale.
+            if ctx and ctx["state"] == "pre" and ev.get("id"):
+                live = espn.pickcenter_lines(session, "basketball", "nba", ev["id"]).get("homeSpread")
+                if live is not None:
+                    g["statsSpread"] = live
             result = evaluate_game(session, points, by_team, q_cache, date_str, home, away, ctx,
-                                   home_spread=g.get("homeSpread"))
+                                   home_spread=g.get("statsSpread", g.get("homeSpread")),
+                                   market=action_network.lookup(mk, away, home, _same_team))
             if ctx and ctx["state"] == "pre":  # injury watch: refreshed until tip-off, then kept as it was
                 if ctx["watch"]:
                     g["statsWatch"] = ctx["watch"]
@@ -778,7 +810,8 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
         else:
             for k in ("statsFavors", "statsCheck", "statsRules", "statsCorrect", "statsReturn", "statsCover", "statsSpreadReturn"):
                 g.pop(k, None)
-        if (g.get("statsFavors"), g.get("statsCheck"), g.get("statsRules")) != before or g.get("statsWatch") != watch_before:
+        if (g.get("statsFavors"), g.get("statsCheck"), g.get("statsRules")) != before or g.get("statsWatch") != watch_before \
+                or g.get("statsSpread") != spread_before:
             changed += 1
     if changed:
         store.write_doc("nba", date_str, doc)
@@ -806,8 +839,9 @@ def backfill(session, points, by_team, q_cache, rules, dates):
         for g in doc.get("games", []):
             if not isinstance(g.get("awayScore"), (int, float)):
                 continue
+            mk = action_network.lookup(action_network.market(date_str), g["away"], g["home"], _same_team) if 50 in rules else None
             r = evaluate_game(session, points, by_team, q_cache, date_str, g["home"], g["away"], None, set(rules),
-                              home_spread=g.get("homeSpread"))
+                              home_spread=g.get("homeSpread"), market=mk)
             if not r:
                 continue
             pick, new = r
