@@ -1,23 +1,23 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401879242,2026-11-06,72',Coventry City,1,-,Everton,2,-,-,-,3:00 PM
-401882809,2026-11-06,68',Alavés,0,-,Sevilla,0,-,-,-,3:00 PM
+401879242,2026-11-06,FT,Coventry City,1,-,Everton,3,-,-,-,3:00 PM
+401882809,2026-11-06,FT,Alavés,0,-,Sevilla,0,-,-,-,3:00 PM
 401932959,2026-11-06,Scheduled,Utah Royals,0,-,San Diego Wave FC,0,-,-,-,10:00 PM
 401884739,2026-11-06,FT,Borussia Mönchengladbach,1,-,Hamburg SV,3,-,-,-,2:30 PM
-401874815,2026-11-06,88',Udinese,1,-,Venezia,2,-,-,-,2:45 PM
-401876910,2026-11-06,Scheduled,FC Juárez,0,-,Atlético de San Luis,0,-,-,-,8:00 PM
-401876909,2026-11-06,Scheduled,Tijuana,0,-,Necaxa,0,-,-,-,8:00 PM
+401874815,2026-11-06,FT,Udinese,1,-,Venezia,2,-,-,-,2:45 PM
+401876910,2026-11-06,HT,FC Juárez,0,-,Atlético de San Luis,0,-,-,-,8:00 PM
+401876909,2026-11-06,HT,Tijuana,0,-,Necaxa,1,-,-,-,8:00 PM
 401876908,2026-11-06,Scheduled,Santos,0,-,Atlante,0,-,-,-,10:00 PM
-401876405,2026-11-06,86',Strasbourg,1,-,Toulouse,3,-,-,-,2:45 PM
+401876405,2026-11-06,FT,Strasbourg,1,-,Toulouse,3,-,-,-,2:45 PM
 401931085,2026-11-06,FT,Cambridge United,0,-,Bristol Rovers,2,-,-,-,2:30 PM
-401931109,2026-11-06,88',Leicester City,4,-,Oxford City,2,-,-,-,2:45 PM
-401933097,2026-11-06,Scheduled,AS Etoile Matoury,0,-,Olympique De Cayenne,0,-,-,-,2:00 PM
+401931109,2026-11-06,FT,Leicester City,4,-,Oxford City,2,-,-,-,2:45 PM
+401933097,2026-11-06,FT,AS Etoile Matoury,3,-,Olympique De Cayenne,1,-,-,-,2:00 PM
 401875556,2026-11-06,FT,PEC Zwolle,1,-,Willem II,1,-,-,-,2:00 PM
-401880167,2026-11-06,75',Bolton Wanderers,1,-,Derby County,2,-,-,-,3:00 PM
-401878611,2026-11-06,Scheduled,Lexington SC,0,-,DC Power FC,0,-,-,-,7:00 PM
-401878613,2026-11-06,Scheduled,Tampa Bay Sun FC,0,-,Fort Lauderdale United FC,0,-,-,-,7:30 PM
+401880167,2026-11-06,FT,Bolton Wanderers,1,-,Derby County,3,-,-,-,3:00 PM
+401878611,2026-11-06,90'+2',Lexington SC,0,-,DC Power FC,1,-,-,-,7:00 PM
+401878613,2026-11-06,58',Tampa Bay Sun FC,0,-,Fort Lauderdale United FC,0,-,-,-,7:30 PM
 401885697,2026-11-06,FT,Toulouse,1,-,Nantes,1,-,-,-,1:00 PM
 401885647,2026-11-06,FT,Montpellier,0,-,Paris FC,5,-,-,-,1:00 PM
-401885648,2026-11-06,71',Le Havre AC,0,-,Paris Saint-Germain,3,-,-,-,3:00 PM
+401885648,2026-11-06,FT,Le Havre AC,0,-,Paris Saint-Germain,4,-,-,-,3:00 PM
 401892144,2026-11-06,FT,Central Coast Mariners FC,1,-,Sydney FC,4,-,-,-,3:40 AM
 401892143,2026-11-06,Scheduled,Wellington Phoenix,0,-,Auckland FC,0,-,-,-,11:00 PM
 401913239,2026-11-06,FT,Wellington Phoenix,2,-,Adelaide United ,0,-,-,-,3:00 AM
@@ -25,15 +25,15 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401900874,2026-11-06,Postponed,Al Riyadh,0,-,Al Fateh,0,-,-,-,3:00 PM
 401900442,2026-11-06,Postponed,Al Nassr,0,-,Al Hazem,0,-,-,-,3:00 PM
 401900873,2026-11-06,Postponed,Neom SC,0,-,Al Ittihad,0,-,-,-,3:00 PM
-401885399,2026-11-06,HT,Arouca,0,-,FC Famalicao,0,-,-,-,3:45 PM
+401885399,2026-11-06,FT,Arouca,0,-,FC Famalicao,1,-,-,-,3:45 PM
 401888256,2026-11-06,FT,Kasimpasa,2,-,Gaziantep FK,0,-,-,-,12:00 PM
-401924377,2026-11-06,Scheduled,Puebla,0,-,Pachuca,0,-,-,-,6:00 PM
-401924362,2026-11-06,Scheduled,Atlético de San Luis,0,-,Pumas UNAM,0,-,-,-,6:00 PM
-401924376,2026-11-06,Scheduled,América,0,-,Guadalajara,0,-,-,-,8:06 PM
-401924401,2026-11-06,Scheduled,León,0,-,Cruz Azul,0,-,-,-,8:10 PM
+401924377,2026-11-06,FT,Puebla,3,-,Pachuca,4,-,-,-,6:00 PM
+401924362,2026-11-06,FT,Atlético de San Luis,1,-,Pumas UNAM,3,-,-,-,6:00 PM
+401924376,2026-11-06,HT,América,1,-,Guadalajara,0,-,-,-,8:06 PM
+401924401,2026-11-06,45',León,0,-,Cruz Azul,0,-,-,-,8:10 PM
 401924363,2026-11-06,Scheduled,Monterrey,0,-,FC Juárez,0,-,-,-,10:10 PM
 401879812,2026-11-06,FT,Rubin Kazan,1,-,Lokomotiv Moscow,0,-,-,-,11:30 AM
-401878951,2026-11-06,86',Waasland-Beveren,0,-,Standard Liege,3,-,-,-,2:45 PM
+401878951,2026-11-06,FT,Waasland-Beveren,0,-,Standard Liege,3,-,-,-,2:45 PM
 401883120,2026-11-06,Postponed,Eibar,0,-,Castellón,0,-,-,-,2:30 PM
 401885061,2026-11-06,FT,SpVgg Greuther Fürth,0,-,Dynamo Dresden,3,-,-,-,12:30 PM
 401885058,2026-11-06,FT,Energie Cottbus,0,-,TSV Eintracht Braunschweig,0,-,-,-,12:30 PM
@@ -56,50 +56,50 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401842876,2026-11-06,FT,IF Elfsborg,1,-,Hammarby IF,4,-,-,-,1:00 PM
 401874537,2026-11-06,FT,Lyngby Boldklub,0,-,Silkeborg IF,1,-,-,-,1:00 PM
 401841670,2026-11-06,FT,Racing Club,0,-,Barracas Central,2,-,-,-,1:00 PM
-401841665,2026-11-06,Scheduled,Deportivo Riestra,0,-,Independiente,0,-,-,-,5:15 PM
-401841662,2026-11-06,Scheduled,Platense,0,-,San Lorenzo,0,-,-,-,5:15 PM
-401841660,2026-11-06,Scheduled,Vélez Sarsfield,0,-,Unión (Santa Fe),0,-,-,-,5:15 PM
-401841671,2026-11-06,Scheduled,Atlético Tucumán,0,-,Banfield,0,-,-,-,8:00 PM
-401841673,2026-11-06,Scheduled,Sarmiento (Junín),0,-,Tigre,0,-,-,-,8:00 PM
-401841302,2026-11-06,Scheduled,Fluminense,0,-,Vitória,0,-,-,-,6:00 PM
-401860425,2026-11-06,Scheduled,Sport,0,-,Operário PR,0,-,-,-,5:30 PM
-401878064,2026-11-06,Scheduled,Internacional de Bogotá,0,-,Boyacá Chicó FC,0,-,-,-,6:00 PM
-401877916,2026-11-06,Scheduled,Independiente Medellín,0,-,Fortaleza CEIF,0,-,-,-,8:00 PM
-401886145,2026-11-06,70',Cusco FC,0,-,Atlético Grau,1,-,-,-,3:00 PM
-401930010,2026-11-06,Scheduled,Real Tomayapo,0,-,Independiente Petrolero,0,-,-,-,6:00 PM
+401841665,2026-11-06,FT,Deportivo Riestra,1,-,Independiente,2,-,-,-,5:15 PM
+401841662,2026-11-06,FT,Platense,2,-,San Lorenzo,0,-,-,-,5:15 PM
+401841660,2026-11-06,FT,Vélez Sarsfield,0,-,Unión (Santa Fe),2,-,-,-,5:15 PM
+401841671,2026-11-06,HT,Atlético Tucumán,2,-,Banfield,0,-,-,-,8:00 PM
+401841673,2026-11-06,HT,Sarmiento (Junín),0,-,Tigre,0,-,-,-,8:00 PM
+401841302,2026-11-06,FT,Fluminense,3,-,Vitória,0,-,-,-,6:00 PM
+401860425,2026-11-06,FT,Sport,2,-,Operário PR,3,-,-,-,5:30 PM
+401878064,2026-11-06,FT,Internacional de Bogotá,1,-,Boyacá Chicó FC,2,-,-,-,6:00 PM
+401877916,2026-11-06,HT,Independiente Medellín,1,-,Fortaleza CEIF,0,-,-,-,8:00 PM
+401886145,2026-11-06,FT,Cusco FC,0,-,Atlético Grau,3,-,-,-,3:00 PM
+401930010,2026-11-06,FT,Real Tomayapo,2,-,Independiente Petrolero,0,-,-,-,6:00 PM
 401877557,2026-11-06,Scheduled,Tokyo Verdy 1969,0,-,Shimizu S-Pulse,0,-,-,-,11:00 PM
 401879602,2026-11-06,Scheduled,Suchitepequez,0,-,CD Guastatoya,0,-,-,-,9:00 PM
-401899772,2026-11-06,Scheduled,Isidro Metapán,0,-,Inca Aruba,0,-,-,-,7:00 PM
+401899772,2026-11-06,87',Isidro Metapán,1,-,Inca Aruba,1,-,-,-,7:00 PM
 401925415,2026-11-06,FT,Bengaluru FC,2,-,FC GOA,1,-,-,-,9:00 AM
 401930703,2026-11-06,FT,Mohammedan SC,3,-,Bengaluru United FC,4,-,-,-,5:30 AM
 401930702,2026-11-06,FT,Chanmari FC,1,-,Shillong Lajong FC,1,-,-,-,8:00 AM
 401929720,2026-11-06,FT,Dayton,0,-,Saint Louis,1,-,-,-,2:00 PM
-401929721,2026-11-06,60',Fordham,0,-,George Mason,0,-,-,-,3:00 PM
-401929693,2026-11-06,Scheduled,Florida International,0,-,Charlotte,0,-,-,-,6:00 PM
-401887735,2026-11-06,Scheduled,Xavier,0,-,Butler,0,-,-,-,7:00 PM
-401890734,2026-11-06,Scheduled,DePaul,0,-,Creighton,0,-,-,-,7:00 PM
-401929718,2026-11-06,Scheduled,La Salle,0,-,Duquesne,0,-,-,-,7:00 PM
-401929694,2026-11-06,Scheduled,Memphis,0,-,Florida Atlantic,0,-,-,-,7:00 PM
-401887837,2026-11-06,Scheduled,Akron,0,-,Marquette,0,-,-,-,7:00 PM
-401887762,2026-11-06,Scheduled,St. John's,0,-,Providence,0,-,-,-,7:00 PM
-401929719,2026-11-06,Scheduled,Davidson,0,-,Rhode Island,0,-,-,-,7:00 PM
-401887577,2026-11-06,Scheduled,Villanova,0,-,Seton Hall,0,-,-,-,7:00 PM
-401887561,2026-11-06,Scheduled,Georgetown,0,-,UConn,0,-,-,-,7:00 PM
-401898970,2026-11-06,Scheduled,Grand Canyon,0,-,Air Force,0,-,-,-,8:00 PM
-401892390,2026-11-06,Scheduled,Seattle U,0,-,Denver,0,-,-,-,8:00 PM
-401929846,2026-11-06,Scheduled,St. Thomas,0,-,Oral Roberts,0,-,-,-,8:00 PM
+401929721,2026-11-06,FT,Fordham,1,-,George Mason,0,-,-,-,3:00 PM
+401929693,2026-11-06,FT,Florida International,3,-,Charlotte,3,-,-,-,6:00 PM
+401887735,2026-11-06,76',Xavier,3,-,Butler,1,-,-,-,7:00 PM
+401890734,2026-11-06,82',DePaul,1,-,Creighton,2,-,-,-,7:00 PM
+401929718,2026-11-06,81',La Salle,0,-,Duquesne,1,-,-,-,7:00 PM
+401929694,2026-11-06,75',Memphis,5,-,Florida Atlantic,2,-,-,-,7:00 PM
+401887837,2026-11-06,83',Akron,2,-,Marquette,0,-,-,-,7:00 PM
+401887762,2026-11-06,81',St. John's,2,-,Providence,3,-,-,-,7:00 PM
+401929719,2026-11-06,11',Davidson,0,-,Rhode Island,0,-,-,-,7:00 PM
+401887577,2026-11-06,77',Villanova,0,-,Seton Hall,3,-,-,-,7:00 PM
+401887561,2026-11-06,82',Georgetown,2,-,UConn,1,-,-,-,7:00 PM
+401898970,2026-11-06,HT,Grand Canyon,0,-,Air Force,1,-,-,-,8:00 PM
+401892390,2026-11-06,42',Seattle U,0,-,Denver,1,-,-,-,8:00 PM
+401929846,2026-11-06,HT,St. Thomas,0,-,Oral Roberts,0,-,-,-,8:00 PM
 401901543,2026-11-06,Scheduled,Pacific,0,-,Loyola Marymount,0,-,-,-,9:00 PM
 401898992,2026-11-06,Scheduled,San José State,0,-,UC Davis,0,-,-,-,9:00 PM
 401901558,2026-11-06,Scheduled,Saint Mary's,0,-,San Diego,0,-,-,-,10:00 PM
 401901554,2026-11-06,Scheduled,Portland,0,-,San Francisco,0,-,-,-,10:00 PM
 401898998,2026-11-06,Scheduled,Utah Tech,0,-,UNLV,0,-,-,-,10:00 PM
-401931338,2026-11-06,HT,South Dakota,0,-,Omaha,0,-,-,-,3:30 PM
-401929878,2026-11-06,Scheduled,Loyola Chicago,0,-,La Salle,0,-,-,-,5:00 PM
-401931315,2026-11-06,Scheduled,VMI,0,-,UNC Greensboro,0,-,-,-,6:00 PM
-401929877,2026-11-06,Scheduled,George Washington,0,-,Dayton,0,-,-,-,7:00 PM
-401931316,2026-11-06,Scheduled,Wofford,0,-,Mercer,0,-,-,-,7:00 PM
-401931339,2026-11-06,Scheduled,St. Thomas,0,-,South Dakota State,0,-,-,-,7:00 PM
-401931317,2026-11-06,Scheduled,Western Carolina,0,-,The Citadel,0,-,-,-,7:00 PM
+401931338,2026-11-06,FT,South Dakota,0,-,Omaha,0,-,-,-,3:30 PM
+401929878,2026-11-06,FT,Loyola Chicago,0,-,La Salle,1,-,-,-,5:00 PM
+401931315,2026-11-06,FT,VMI,0,-,UNC Greensboro,4,-,-,-,6:00 PM
+401929877,2026-11-06,81',George Washington,0,-,Dayton,2,-,-,-,7:00 PM
+401931316,2026-11-06,84',Wofford,2,-,Mercer,3,-,-,-,7:00 PM
+401931339,2026-11-06,84',St. Thomas,1,-,South Dakota State,2,-,-,-,7:00 PM
+401931317,2026-11-06,87',Western Carolina,4,-,The Citadel,3,-,-,-,7:00 PM
 401900969,2026-11-06,Scheduled,Grand Canyon,0,-,UTEP,0,-,-,-,9:00 PM
 401928527,2026-11-05,Postponed,Levante,0,-,CD Tarancon,0,-,-,-,1:00 PM
 401928505,2026-11-05,Postponed,Mallorca,0,-,Alcoyano,0,-,-,-,3:00 PM

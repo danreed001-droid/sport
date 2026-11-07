@@ -1,7 +1,7 @@
 {
  "date": "2026-11-06",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-07T00:46:25+00:00",
+ "fetchedAt": "2026-11-07T01:57:27+00:00",
  "games": [
   {
    "away": "Boston Celtics",
@@ -172,8 +172,8 @@
    "spread": {
     "home": 17.5,
     "open": 15.5,
-    "tix_home": 26,
-    "money_home": 27
+    "tix_home": 27,
+    "money_home": 28
    },
    "total": {
     "now": 231.5,
@@ -182,8 +182,8 @@
     "money_over": 67
    },
    "moneyline": {
-    "home": 830,
-    "away": -1400
+    "home": 870,
+    "away": -1500
    },
    "rlmFavorite": null
   },
@@ -195,7 +195,7 @@
    "spread": {
     "home": -3.5,
     "open": -3.5,
-    "tix_home": 72,
+    "tix_home": 71,
     "money_home": 64
    },
    "total": {
@@ -205,7 +205,7 @@
     "money_over": 88
    },
    "moneyline": {
-    "home": -155,
+    "home": -154,
     "away": 130
    },
    "rlmFavorite": null
