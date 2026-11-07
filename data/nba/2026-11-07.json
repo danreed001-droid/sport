@@ -123,9 +123,9 @@
       "awaySpreadOdds": -105,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 227.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
       "home": "Atlanta Hawks",
       "homeMoneyline": -275,
       "homeNetRtg": 2.65,
@@ -150,10 +150,10 @@
       "statsLine": {
         "homeSpread": -6.5,
         "awaySpread": 6.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
-        "homeMoneyline": -283,
-        "awayMoneyline": 231
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -265,
+        "awayMoneyline": 217
       },
       "statsRules": [
         {
@@ -165,7 +165,7 @@
       ],
       "statsSpread": -6.5,
       "time": "7:30 PM ET",
-      "totalsLine": 227.5
+      "totalsLine": 226.5
     },
     {
       "altCategoryTally": "4-0",
@@ -196,8 +196,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 223.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Cleveland Cavaliers",
       "homeMoneyline": 170,
       "homeNetRtg": 3.1,
@@ -268,8 +268,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 223.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotalOverOdds": -114,
+      "gameTotalUnderOdds": -106,
       "home": "Oklahoma City Thunder",
       "homeMoneyline": -550,
       "homeNetRtg": 6.03,
@@ -289,31 +289,31 @@
         "NetRtg blend: away -5.95 (rank~24.0, 20.7 pct) vs home +6.03 (rank~8.5, 74.1 pct) \u2014 gap 53.5",
         "Context: both teams played last night (Wizards lost at Atlanta, Thunder won by 31 at Memphis) \u2014 back-to-back for both, but Wizards used only 8 players 10+ minutes last night"
       ],
-      "statsCheck": "Rule 43: Backing Oklahoma City Thunder: both teams played last night (Oklahoma City Thunder on the road, Washington Wizards lost); Oklahoma City Thunder favored by 11.5 -- 64.9% ATS, 37-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8. Rule 49: Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Atlanta Hawks), now a +11.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13.",
+      "statsCheck": "Rule 43: Backing Oklahoma City Thunder: both teams played last night (Oklahoma City Thunder on the road, Washington Wizards lost); Oklahoma City Thunder favored by 12.5 -- 64.9% ATS, 37-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8. Rule 49: Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Atlanta Hawks), now a +12.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13.",
       "statsFavors": "Oklahoma City Thunder",
       "statsLine": {
-        "homeSpread": -11.5,
-        "awaySpread": 11.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -116,
-        "homeMoneyline": -522,
-        "awayMoneyline": 396
+        "homeSpread": -12.5,
+        "awaySpread": 12.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -620,
+        "awayMoneyline": 458
       },
       "statsRules": [
         {
           "rule": 43,
           "name": "Both teams on a back-to-back: back a home team favored by 5+ that played on the road last night (on trial)",
           "backtest": "64.9% ATS, 37-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
-          "detail": "Backing Oklahoma City Thunder: both teams played last night (Oklahoma City Thunder on the road, Washington Wizards lost); Oklahoma City Thunder favored by 11.5 -- 64.9% ATS, 37-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8."
+          "detail": "Backing Oklahoma City Thunder: both teams played last night (Oklahoma City Thunder on the road, Washington Wizards lost); Oklahoma City Thunder favored by 12.5 -- 64.9% ATS, 37-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8."
         },
         {
           "rule": 49,
           "name": "Fade a 7+ point underdog on a back-to-back that used 8 or fewer players (10+ min) last game (on trial)",
           "backtest": "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
-          "detail": "Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Atlanta Hawks), now a +11.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
+          "detail": "Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Atlanta Hawks), now a +12.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
         }
       ],
-      "statsSpread": -11.5,
+      "statsSpread": -12.5,
       "time": "8:00 PM ET",
       "totalsCheck": "Rule 10: Oklahoma City Thunder won by 31 on the road at Memphis Grizzlies on 2026-11-06 as a -4.5; now home vs. a worse-record Washington Wizards, on a back-to-back. Rule 14: Oklahoma City Thunder won by 31 on the road at Memphis Grizzlies on 2026-11-06 as a -4.5; now home vs. a worse-record Washington Wizards, on a back-to-back.",
       "totalsFavors": "Under",
@@ -512,10 +512,10 @@
       "statsLine": {
         "homeSpread": 5.5,
         "awaySpread": -5.5,
-        "homeSpreadOdds": -112,
-        "awaySpreadOdds": -108,
-        "homeMoneyline": 171,
-        "awayMoneyline": -205
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 180,
+        "awayMoneyline": -217
       },
       "statsRules": [
         {
