@@ -123,9 +123,9 @@
       "awaySpreadOdds": -105,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 226.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Atlanta Hawks",
       "homeMoneyline": -275,
       "homeNetRtg": 2.65,
@@ -165,7 +165,7 @@
       ],
       "statsSpread": -6.5,
       "time": "7:30 PM ET",
-      "totalsLine": 226.5
+      "totalsLine": 227.5
     },
     {
       "altCategoryTally": "4-0",
@@ -195,9 +195,9 @@
       "awaySpreadOdds": -110,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 224.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Cleveland Cavaliers",
       "homeMoneyline": 170,
       "homeNetRtg": 3.1,
@@ -222,10 +222,10 @@
       "statsLine": {
         "homeSpread": 4.5,
         "awaySpread": -4.5,
-        "homeSpreadOdds": -103,
-        "awaySpreadOdds": -117,
-        "homeMoneyline": 170,
-        "awayMoneyline": -204
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 164,
+        "awayMoneyline": -197
       },
       "statsRules": [
         {
@@ -237,7 +237,7 @@
       ],
       "statsSpread": 4.5,
       "time": "8:00 PM ET",
-      "totalsLine": 224.5
+      "totalsLine": 223.5
     },
     {
       "altCategoryTally": "0-5",
@@ -267,9 +267,9 @@
       "awaySpreadOdds": -106,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 222.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "Oklahoma City Thunder",
       "homeMoneyline": -550,
       "homeNetRtg": 6.03,
@@ -294,10 +294,10 @@
       "statsLine": {
         "homeSpread": -11.5,
         "awaySpread": 11.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -103,
-        "homeMoneyline": -598,
-        "awayMoneyline": 443
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": -522,
+        "awayMoneyline": 396
       },
       "statsRules": [
         {
@@ -317,7 +317,7 @@
       "time": "8:00 PM ET",
       "totalsCheck": "Rule 10: Oklahoma City Thunder won by 31 on the road at Memphis Grizzlies on 2026-11-06 as a -4.5; now home vs. a worse-record Washington Wizards, on a back-to-back. Rule 14: Oklahoma City Thunder won by 31 on the road at Memphis Grizzlies on 2026-11-06 as a -4.5; now home vs. a worse-record Washington Wizards, on a back-to-back.",
       "totalsFavors": "Under",
-      "totalsLine": 222.5,
+      "totalsLine": 223.5,
       "totalsRules": [
         {
           "rule": 10,
@@ -361,9 +361,9 @@
       "awaySpreadOdds": -115,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 220.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 219.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "Golden State Warriors",
       "homeMoneyline": -225,
       "homeNetRtg": 2.19,
@@ -388,12 +388,12 @@
         "awaySpread": 7.5,
         "homeSpreadOdds": -104,
         "awaySpreadOdds": -117,
-        "homeMoneyline": -273,
-        "awayMoneyline": 224
+        "homeMoneyline": -284,
+        "awayMoneyline": 231
       },
       "statsSpread": -7.5,
       "time": "8:30 PM ET",
-      "totalsLine": 220.5
+      "totalsLine": 219.5
     },
     {
       "altCategoryTally": "1-2",
@@ -423,9 +423,9 @@
       "awaySpreadOdds": -115,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 223.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107,
+      "gameTotal": 224.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Phoenix Suns",
       "homeMoneyline": 220,
       "homeNetRtg": -3.2,
@@ -448,14 +448,14 @@
       "statsLine": {
         "homeSpread": 6.5,
         "awaySpread": -6.5,
-        "homeSpreadOdds": -113,
-        "awaySpreadOdds": -107,
-        "homeMoneyline": 221,
-        "awayMoneyline": -270
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": 217,
+        "awayMoneyline": -264
       },
       "statsSpread": 6.5,
       "time": "9:00 PM ET",
-      "totalsLine": 223.5
+      "totalsLine": 224.5
     },
     {
       "altCategoryTally": "3-1",
