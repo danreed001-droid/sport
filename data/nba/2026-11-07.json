@@ -60,8 +60,8 @@
       "statsLine": {
         "homeSpread": 7.5,
         "awaySpread": -7.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -116,
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -118,
         "homeMoneyline": 261,
         "awayMoneyline": -324
       },
@@ -195,9 +195,9 @@
       "awaySpreadOdds": -110,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 223.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105,
+      "gameTotal": 224.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Cleveland Cavaliers",
       "homeMoneyline": 170,
       "homeNetRtg": 3.1,
@@ -220,10 +220,10 @@
       "statsCheck": "Rule 47: Backing New York Knicks: New York Knicks lost the last meeting by 15 (New York Knicks 94 @ Cleveland Cavaliers 109, 2026-02-25) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
       "statsFavors": "New York Knicks",
       "statsLine": {
-        "homeSpread": 5.5,
-        "awaySpread": -5.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -103,
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -117,
         "homeMoneyline": 170,
         "awayMoneyline": -204
       },
@@ -235,9 +235,9 @@
           "detail": "Backing New York Knicks: New York Knicks lost the last meeting by 15 (New York Knicks 94 @ Cleveland Cavaliers 109, 2026-02-25) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
         }
       ],
-      "statsSpread": 5.5,
+      "statsSpread": 4.5,
       "time": "8:00 PM ET",
-      "totalsLine": 223.5
+      "totalsLine": 224.5
     },
     {
       "altCategoryTally": "0-5",
@@ -361,9 +361,9 @@
       "awaySpreadOdds": -115,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 219.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105,
+      "gameTotal": 220.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Golden State Warriors",
       "homeMoneyline": -225,
       "homeNetRtg": 2.19,
@@ -384,16 +384,16 @@
         "Injuries: Magic missing Banchero (best player), Suggs, Isaac, Penda, Nelson (all out) \u2014 severe cluster; Warriors missing Butler (torn ACL) and Porzingis (stepped away), plus Green/Payton/Santos day-to-day"
       ],
       "statsLine": {
-        "homeSpread": -6.5,
-        "awaySpread": 6.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
+        "homeSpread": -7.5,
+        "awaySpread": 7.5,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -117,
         "homeMoneyline": -273,
         "awayMoneyline": 224
       },
-      "statsSpread": -6.5,
+      "statsSpread": -7.5,
       "time": "8:30 PM ET",
-      "totalsLine": 219.5
+      "totalsLine": 220.5
     },
     {
       "altCategoryTally": "1-2",
@@ -510,10 +510,10 @@
       "statsCheck": "Rule 47: Backing Portland Trail Blazers: Portland Trail Blazers lost the last meeting by 11 (Portland Trail Blazers 101 @ San Antonio Spurs 112, 2026-04-09) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
       "statsFavors": "Portland Trail Blazers",
       "statsLine": {
-        "homeSpread": 4.5,
-        "awaySpread": -4.5,
-        "homeSpreadOdds": -103,
-        "awaySpreadOdds": -118,
+        "homeSpread": 5.5,
+        "awaySpread": -5.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
         "homeMoneyline": 171,
         "awayMoneyline": -205
       },
@@ -525,7 +525,7 @@
           "detail": "Backing Portland Trail Blazers: Portland Trail Blazers lost the last meeting by 11 (Portland Trail Blazers 101 @ San Antonio Spurs 112, 2026-04-09) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
         }
       ],
-      "statsSpread": 4.5,
+      "statsSpread": 5.5,
       "time": "10:00 PM ET",
       "totalsLine": 229.5
     }
