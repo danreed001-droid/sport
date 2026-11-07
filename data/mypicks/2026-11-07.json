@@ -26,6 +26,32 @@
       "moneyline": -230,
       "submittedAt": "2026-11-07T16:31:15+00:00",
       "issue": 19
+    },
+    "nba-2026-11-07-new-york-knicks-cleveland-cavaliers-8-00-pm-et": {
+      "sport": "nba",
+      "away": "New York Knicks",
+      "home": "Cleveland Cavaliers",
+      "time": "8:00 PM ET",
+      "side": "away",
+      "team": "New York Knicks",
+      "spread": -5,
+      "spreadOdds": -110,
+      "moneyline": -210,
+      "submittedAt": "2026-11-07T18:34:11+00:00",
+      "issue": 20
+    },
+    "nba-2026-11-07-washington-wizards-oklahoma-city-thunder-8-00-pm-et": {
+      "sport": "nba",
+      "away": "Washington Wizards",
+      "home": "Oklahoma City Thunder",
+      "time": "8:00 PM ET",
+      "side": "home",
+      "team": "Oklahoma City Thunder",
+      "spread": -11.5,
+      "spreadOdds": -115,
+      "moneyline": -550,
+      "submittedAt": "2026-11-07T18:34:11+00:00",
+      "issue": 20
     }
   },
   "scores": {
@@ -42,7 +68,15 @@
     "cfb-2026-11-07-texas-a-m-south-carolina-3-00-pm-et": "NNNNh",
     "cfb-2026-11-07-texas-missouri-12-00-pm-et": "NhN",
     "cfb-2026-11-07-ucla-minnesota-12-00-pm-et": "NNNNha",
-    "cfb-2026-11-07-west-virginia-texas-tech-9-30-pm-et": "NNNNN"
+    "cfb-2026-11-07-west-virginia-texas-tech-9-30-pm-et": "NNNNN",
+    "nba-2026-11-07-brooklyn-nets-atlanta-hawks-7-30-pm-et": "NNNaNNNNN",
+    "nba-2026-11-07-denver-nuggets-indiana-pacers-5-00-pm-et": "NNNaNNNaN",
+    "nba-2026-11-07-houston-rockets-phoenix-suns-9-00-pm-et": "NNNhNNNNN",
+    "nba-2026-11-07-new-york-knicks-cleveland-cavaliers-8-00-pm-et": "NNNaNaNNN",
+    "nba-2026-11-07-orlando-magic-golden-state-warriors-8-30-pm-et": "NNNhNNNNN",
+    "nba-2026-11-07-san-antonio-spurs-portland-trail-blazers-10-00-pm-et": "NNNaNhNNN",
+    "nba-2026-11-07-washington-wizards-oklahoma-city-thunder-8-00-pm-et": "NNhhNNHNN",
+    "ncaab-2026-11-07-new-mexico-state-aggies-gonzaga-bulldogs-5-00-pm-et": "NNhNhNhNh"
   },
   "totals": {}
 }
