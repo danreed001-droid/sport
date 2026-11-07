@@ -412,8 +412,10 @@ def main():
     version = hashlib.sha1(page.encode("utf-8")).hexdigest()[:12]
     with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(page.replace("__PAGE_VERSION__", version))
-    for extra in ("manual.html", "grading.html"):
+    for extra in ("manual.html", "grading.html", "manifest.webmanifest", "sw.js"):
         shutil.copy(os.path.join(store.REPO_ROOT, "site", extra), os.path.join(out_dir, extra))
+    # App icons (installable app: manifest.webmanifest + sw.js).
+    shutil.copytree(os.path.join(store.REPO_ROOT, "site", "icons"), os.path.join(out_dir, "icons"), dirs_exist_ok=True)
     payload = build()
     payload["pageVersion"] = version
     with open(os.path.join(out_dir, "data.json"), "w", encoding="utf-8") as f:

@@ -169,6 +169,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   NCAAB stand-in slate as its starting game list and spread check, and the
   season records and NBA Stats/Totals rule flags for its closing summary
   (context only, never an input to the Ledger or Second Opinion).
+- The pick sheet is an installable app (PWA): `site/manifest.webmanifest`,
+  `site/sw.js` and `site/icons/` (copied into `_site` by `build_site.py`), with
+  the manifest/icon tags and the service-worker registration in each page's
+  head/body. The service worker is network-first for this site's own files, so
+  pages and data.json are always fresh online and the last copy opens offline;
+  bump `CACHE` in sw.js only to clear old caches.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
