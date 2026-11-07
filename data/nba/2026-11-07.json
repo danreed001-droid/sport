@@ -1,0 +1,202 @@
+{
+  "date": "2026-11-07",
+  "weekday": "Saturday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-07T05:21:38Z",
+  "games": [
+    {
+      "espnId": "401909938",
+      "away": "Denver Nuggets",
+      "home": "Indiana Pacers",
+      "time": "5:00 PM ET",
+      "homeSpread": 7.5,
+      "awaySpread": -7.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": 220.0,
+      "awayMoneyline": -268.0,
+      "statsSpread": 7.5,
+      "statsLine": {
+        "homeSpread": 7.5,
+        "awaySpread": -7.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": 220,
+        "awayMoneyline": -268
+      },
+      "statsFavors": "Denver Nuggets",
+      "statsRules": [
+        {
+          "rule": 20,
+          "name": "Fade a road-upset winner now home vs. a stronger team, rested, after winning by 1-9 as less than a 7-pt dog (on trial)",
+          "backtest": "68.9% ATS, 42-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-7",
+          "detail": "Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 68.9% ATS, 42-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-7."
+        },
+        {
+          "rule": 21,
+          "name": "Fade a road-upset winner now home vs. a stronger team, after winning by 1-9 as less than a 7-pt dog (on trial)",
+          "backtest": "66.2% ATS, 51-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8",
+          "detail": "Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 66.2% ATS, 51-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8."
+        },
+        {
+          "rule": 24,
+          "name": "Fade a road-upset winner now home, rested, after winning by 1-9 as less than a 7-pt dog (on trial)",
+          "backtest": "63.1% ATS, 77-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14",
+          "detail": "Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 63.1% ATS, 77-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14."
+        },
+        {
+          "rule": 28,
+          "name": "Fade a road-upset winner now home after winning by 1-9 as less than a 7-pt dog (on trial)",
+          "backtest": "61.8% ATS, 89-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17",
+          "detail": "Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 61.8% ATS, 89-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17."
+        }
+      ],
+      "statsCheck": "Rule 20: Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 68.9% ATS, 42-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-7. Rule 21: Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 66.2% ATS, 51-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8. Rule 24: Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 63.1% ATS, 77-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14. Rule 28: Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 61.8% ATS, 89-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17.",
+      "totalsLine": 229.5
+    },
+    {
+      "espnId": "401909939",
+      "away": "Brooklyn Nets",
+      "home": "Atlanta Hawks",
+      "time": "7:30 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": -258.0,
+      "awayMoneyline": 212.0,
+      "statsSpread": -6.5,
+      "statsLine": {
+        "homeSpread": -6.5,
+        "awaySpread": 6.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -258,
+        "awayMoneyline": 212
+      },
+      "totalsLine": 224.5
+    },
+    {
+      "espnId": "401909940",
+      "away": "New York Knicks",
+      "home": "Cleveland Cavaliers",
+      "time": "8:00 PM ET",
+      "homeSpread": 4.5,
+      "awaySpread": -4.5,
+      "homeSpreadOdds": -106.0,
+      "awaySpreadOdds": -114.0,
+      "homeMoneyline": 160.0,
+      "awayMoneyline": -191.0,
+      "statsSpread": 4.5,
+      "statsLine": {
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": 160,
+        "awayMoneyline": -191
+      },
+      "totalsLine": 225.5
+    },
+    {
+      "espnId": "401909941",
+      "away": "Washington Wizards",
+      "home": "Oklahoma City Thunder",
+      "time": "8:00 PM ET",
+      "homeSpread": -11.5,
+      "awaySpread": 11.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -486.0,
+      "awayMoneyline": 373.0,
+      "statsSpread": -11.5,
+      "statsLine": {
+        "homeSpread": -11.5,
+        "awaySpread": 11.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -486,
+        "awayMoneyline": 373
+      },
+      "totalsLine": 220.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 6,
+          "detail": "Washington Wizards lost at home to Atlanta Hawks by 15 on 2026-11-04 (the worse-record team); now on the road vs. better-record Oklahoma City Thunder.",
+          "name": "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
+          "backtest": "62.2% unders, 107-65 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30"
+        }
+      ],
+      "totalsCheck": "Rule 6: Washington Wizards lost at home to Atlanta Hawks by 15 on 2026-11-04 (the worse-record team); now on the road vs. better-record Oklahoma City Thunder."
+    },
+    {
+      "espnId": "401909942",
+      "away": "Orlando Magic",
+      "home": "Golden State Warriors",
+      "time": "8:30 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": -258.0,
+      "awayMoneyline": 212.0,
+      "statsSpread": -6.5,
+      "statsLine": {
+        "homeSpread": -6.5,
+        "awaySpread": 6.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -258,
+        "awayMoneyline": 212
+      },
+      "totalsLine": 220.5
+    },
+    {
+      "espnId": "401909943",
+      "away": "Houston Rockets",
+      "home": "Phoenix Suns",
+      "time": "9:00 PM ET",
+      "homeSpread": 7.5,
+      "awaySpread": -7.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 237.0,
+      "awayMoneyline": -291.0,
+      "statsSpread": 7.5,
+      "statsLine": {
+        "homeSpread": 7.5,
+        "awaySpread": -7.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 237,
+        "awayMoneyline": -291
+      },
+      "totalsLine": 222.5
+    },
+    {
+      "espnId": "401909944",
+      "away": "San Antonio Spurs",
+      "home": "Portland Trail Blazers",
+      "time": "10:00 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": 128.0,
+      "awayMoneyline": -152.0,
+      "statsSpread": 3.5,
+      "statsLine": {
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": 128,
+        "awayMoneyline": -152
+      },
+      "totalsLine": 228.5
+    }
+  ]
+}
