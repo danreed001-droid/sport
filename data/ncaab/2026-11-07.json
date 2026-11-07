@@ -15,7 +15,10 @@
       "awaySpread": 37.5,
       "homeSpreadOdds": -108,
       "awaySpreadOdds": -112,
-      "total": 151.5
+      "total": 151.5,
+      "gameTotal": 151.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401928788",
@@ -27,7 +30,10 @@
       "awaySpreadOdds": -115,
       "homeMoneyline": -50000,
       "awayMoneyline": 4000,
-      "total": 151.5
+      "total": 151.5,
+      "gameTotal": 151.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     }
   ]
 }

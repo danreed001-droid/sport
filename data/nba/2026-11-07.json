@@ -74,15 +74,25 @@
       "statsLine": {
         "homeSpread": -6.5,
         "awaySpread": 6.5,
-        "homeSpreadOdds": -114,
+        "homeSpreadOdds": -115,
         "awaySpreadOdds": -106,
         "homeMoneyline": -258,
         "awayMoneyline": 212
       },
-      "totalsLine": 224.5,
-      "gameTotal": 224.5,
-      "gameTotalOverOdds": -114,
-      "gameTotalUnderOdds": -106
+      "totalsLine": 226.5,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "statsFavors": "Brooklyn Nets",
+      "statsRules": [
+        {
+          "rule": 17,
+          "name": "Fade a home team after a win where it allowed 130+ (any rest)",
+          "backtest": "62.0% ATS, 62-38 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+          "detail": "Fading Atlanta Hawks: won last game but allowed 132 points (130+), now at home -- teams in this spot were faded 65.5% of the time ATS (n=58)."
+        }
+      ],
+      "statsCheck": "Rule 17: Fading Atlanta Hawks: won last game but allowed 132 points (130+), now at home -- teams in this spot were faded 65.5% of the time ATS (n=58)."
     },
     {
       "espnId": "401909940",
@@ -99,15 +109,25 @@
       "statsLine": {
         "homeSpread": 4.5,
         "awaySpread": -4.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
         "homeMoneyline": 160,
         "awayMoneyline": -191
       },
-      "totalsLine": 225.5,
-      "gameTotal": 225.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -114
+      "totalsLine": 224.5,
+      "gameTotal": 224.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "statsFavors": "New York Knicks",
+      "statsRules": [
+        {
+          "rule": 47,
+          "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
+          "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
+          "detail": "Backing New York Knicks: New York Knicks lost the last meeting by 15 (New York Knicks 94 @ Cleveland Cavaliers 109, 2026-02-25) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
+        }
+      ],
+      "statsCheck": "Rule 47: Backing New York Knicks: New York Knicks lost the last meeting by 15 (New York Knicks 94 @ Cleveland Cavaliers 109, 2026-02-25) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
     },
     {
       "espnId": "401909941",
@@ -126,23 +146,45 @@
         "awaySpread": 11.5,
         "homeSpreadOdds": -110,
         "awaySpreadOdds": -110,
-        "homeMoneyline": -486,
-        "awayMoneyline": 373
+        "homeMoneyline": -449,
+        "awayMoneyline": 349
       },
-      "totalsLine": 220.5,
+      "totalsLine": 219.5,
       "totalsFavors": "Under",
       "totalsRules": [
         {
-          "rule": 6,
-          "detail": "Washington Wizards lost at home to Atlanta Hawks by 15 on 2026-11-04 (the worse-record team); now on the road vs. better-record Oklahoma City Thunder.",
-          "name": "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
-          "backtest": "62.2% unders, 107-65 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30"
+          "rule": 10,
+          "detail": "Oklahoma City Thunder won by 31 on the road at Memphis Grizzlies on 2026-11-06 as a -4.5; now home vs. a worse-record Washington Wizards, on a back-to-back.",
+          "name": "Under when the home team is back from a 20+ road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)",
+          "backtest": "62.8% unders, 59-35 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-17"
+        },
+        {
+          "rule": 14,
+          "detail": "Oklahoma City Thunder won by 31 on the road at Memphis Grizzlies on 2026-11-06 as a -4.5; now home vs. a worse-record Washington Wizards, on a back-to-back.",
+          "name": "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
+          "backtest": "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24"
         }
       ],
-      "totalsCheck": "Rule 6: Washington Wizards lost at home to Atlanta Hawks by 15 on 2026-11-04 (the worse-record team); now on the road vs. better-record Oklahoma City Thunder.",
-      "gameTotal": 220.5,
+      "totalsCheck": "Rule 10: Oklahoma City Thunder won by 31 on the road at Memphis Grizzlies on 2026-11-06 as a -4.5; now home vs. a worse-record Washington Wizards, on a back-to-back. Rule 14: Oklahoma City Thunder won by 31 on the road at Memphis Grizzlies on 2026-11-06 as a -4.5; now home vs. a worse-record Washington Wizards, on a back-to-back.",
+      "gameTotal": 219.5,
       "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalUnderOdds": -110,
+      "statsFavors": "Oklahoma City Thunder",
+      "statsRules": [
+        {
+          "rule": 43,
+          "name": "Both teams on a back-to-back: back a home team favored by 5+ that played on the road last night (on trial)",
+          "backtest": "64.9% ATS, 37-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
+          "detail": "Backing Oklahoma City Thunder: both teams played last night (Oklahoma City Thunder on the road, Washington Wizards lost); Oklahoma City Thunder favored by 11.5 -- 64.9% ATS, 37-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8."
+        },
+        {
+          "rule": 49,
+          "name": "Fade a 7+ point underdog on a back-to-back that used 8 or fewer players (10+ min) last game (on trial)",
+          "backtest": "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
+          "detail": "Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Atlanta Hawks), now a +11.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
+        }
+      ],
+      "statsCheck": "Rule 43: Backing Oklahoma City Thunder: both teams played last night (Oklahoma City Thunder on the road, Washington Wizards lost); Oklahoma City Thunder favored by 11.5 -- 64.9% ATS, 37-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8. Rule 49: Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Atlanta Hawks), now a +11.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
     },
     {
       "espnId": "401909942",
@@ -159,15 +201,15 @@
       "statsLine": {
         "homeSpread": -6.5,
         "awaySpread": 6.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
         "homeMoneyline": -258,
         "awayMoneyline": 212
       },
       "totalsLine": 221.5,
       "gameTotal": 221.5,
-      "gameTotalOverOdds": -114,
-      "gameTotalUnderOdds": -106
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401909943",
@@ -186,13 +228,13 @@
         "awaySpread": -7.5,
         "homeSpreadOdds": -110,
         "awaySpreadOdds": -110,
-        "homeMoneyline": 237,
-        "awayMoneyline": -291
+        "homeMoneyline": 249,
+        "awayMoneyline": -308
       },
-      "totalsLine": 222.5,
-      "gameTotal": 222.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "totalsLine": 221.5,
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909944",
@@ -205,19 +247,29 @@
       "awaySpreadOdds": -106.0,
       "homeMoneyline": 128.0,
       "awayMoneyline": -152.0,
-      "statsSpread": 3.5,
+      "statsSpread": 6.5,
       "statsLine": {
-        "homeSpread": 3.5,
-        "awaySpread": -3.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": 128,
-        "awayMoneyline": -152
+        "homeSpread": 6.5,
+        "awaySpread": -6.5,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": 170,
+        "awayMoneyline": -204
       },
-      "totalsLine": 228.5,
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "totalsLine": 227.5,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -115,
+      "statsFavors": "Portland Trail Blazers",
+      "statsRules": [
+        {
+          "rule": 47,
+          "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
+          "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
+          "detail": "Backing Portland Trail Blazers: Portland Trail Blazers lost the last meeting by 11 (Portland Trail Blazers 101 @ San Antonio Spurs 112, 2026-04-09) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
+        }
+      ],
+      "statsCheck": "Rule 47: Backing Portland Trail Blazers: Portland Trail Blazers lost the last meeting by 11 (Portland Trail Blazers 101 @ San Antonio Spurs 112, 2026-04-09) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
     }
   ]
 }

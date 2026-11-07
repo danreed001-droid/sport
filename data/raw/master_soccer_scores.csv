@@ -101,11 +101,11 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401878341,2026-11-07,Scheduled,Dundee,0,-,St Johnstone,0,-,-,-,10:00 AM
 401878344,2026-11-07,Scheduled,Hibernian,0,-,Aberdeen,0,-,-,-,12:45 PM
 401878340,2026-11-07,Scheduled,Rangers,0,-,St Mirren,0,-,-,-,3:00 PM
-401892142,2026-11-07,Scheduled,Western Sydney Wanderers FC,0,-,Melbourne City FC,0,-,-,-,3:40 AM
+401892142,2026-11-07,4',Western Sydney Wanderers FC,0,-,Melbourne City FC,0,-,-,-,3:40 AM
 401892141,2026-11-07,Scheduled,Newcastle Jets,0,-,Perth Glory FC,0,-,-,-,5:45 AM
 401892140,2026-11-07,Scheduled,Brisbane Roar FC,0,-,Macarthur FC,0,-,-,-,11:00 PM
-401913237,2026-11-07,36',Melbourne Victory ,0,-,Brisbane Roar,1,-,-,-,1:00 AM
-401913236,2026-11-07,Scheduled,Canberra United ,0,-,Perth Glory,0,-,-,-,3:00 AM
+401913237,2026-11-07,FT,Melbourne Victory ,0,-,Brisbane Roar,2,-,-,-,1:00 AM
+401913236,2026-11-07,HT,Canberra United ,0,-,Perth Glory,0,-,-,-,3:00 AM
 401900876,2026-11-07,Postponed,Al Taawoun,0,-,Al Ahli,0,-,-,-,3:00 PM
 401900875,2026-11-07,Postponed,Al Hilal,0,-,Al Ettifaq,0,-,-,-,3:00 PM
 401900871,2026-11-07,Postponed,Al Diriyah,0,-,Al Faisaly,0,-,-,-,3:00 PM
@@ -194,11 +194,11 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401930009,2026-11-07,Scheduled,Real Oruro,0,-,GV San José,0,-,-,-,2:00 PM
 401930008,2026-11-07,Scheduled,ABB,0,-,Always Ready,0,-,-,-,4:15 PM
 401930018,2026-11-07,Scheduled,San Antonio Bulo Bulo,0,-,Guabirá,0,-,-,-,6:30 PM
-401877536,2026-11-07,75',Kyoto Sanga,2,-,Nagoya Grampus,0,-,-,-,12:00 AM
-401877558,2026-11-07,74',Fagiano Okayama,1,-,Yokohama F. Marinos,1,-,-,-,12:00 AM
-401877535,2026-11-07,33',V-Varen Nagasaki,1,-,Avispa Fukuoka,0,-,-,-,1:00 AM
-401877556,2026-11-07,33',Kashima Antlers,0,-,FC Tokyo,0,-,-,-,1:00 AM
-401877560,2026-11-07,Scheduled,Kawasaki Frontale,0,-,Kashiwa Reysol,0,-,-,-,2:00 AM
+401877536,2026-11-07,FT,Kyoto Sanga,2,-,Nagoya Grampus,0,-,-,-,12:00 AM
+401877558,2026-11-07,FT,Fagiano Okayama,1,-,Yokohama F. Marinos,1,-,-,-,12:00 AM
+401877535,2026-11-07,FT,V-Varen Nagasaki,1,-,Avispa Fukuoka,1,-,-,-,1:00 AM
+401877556,2026-11-07,FT,Kashima Antlers,0,-,FC Tokyo,2,-,-,-,1:00 AM
+401877560,2026-11-07,90',Kawasaki Frontale,1,-,Kashiwa Reysol,2,-,-,-,2:00 AM
 401926713,2026-11-07,Scheduled,CD Estrella Roja,0,-,Juticalpa FC,0,-,-,-,4:00 PM
 401926712,2026-11-07,Scheduled,FC Motagua,0,-,UPNFM,0,-,-,-,6:15 PM
 401926725,2026-11-07,Scheduled,Olancho FC,0,-,Club Deportivo Olimpia,0,-,-,-,8:30 PM
@@ -277,7 +277,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401885647,2026-11-06,FT,Montpellier,0,-,Paris FC,5,-,-,-,1:00 PM
 401885648,2026-11-06,FT,Le Havre AC,0,-,Paris Saint-Germain,4,-,-,-,3:00 PM
 401892144,2026-11-06,FT,Central Coast Mariners FC,1,-,Sydney FC,4,-,-,-,3:40 AM
-401892143,2026-11-06,81',Wellington Phoenix,0,-,Auckland FC,0,-,-,-,11:00 PM
+401892143,2026-11-06,FT,Wellington Phoenix,0,-,Auckland FC,0,-,-,-,11:00 PM
 401913239,2026-11-06,FT,Wellington Phoenix,2,-,Adelaide United ,0,-,-,-,3:00 AM
 401913181,2026-11-06,FT,Newcastle Jets ,1,-,Central Coast Mariners,1,-,-,-,11:00 PM
 401900874,2026-11-06,Postponed,Al Riyadh,0,-,Al Fateh,0,-,-,-,3:00 PM
