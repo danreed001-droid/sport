@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-07",
+  "weekday": "Saturday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-07T06:36:45Z",
+  "games": [
+    {
+      "espnId": "401918948",
+      "away": "Morehead State Eagles",
+      "home": "Louisville Cardinals",
+      "time": "12:00 PM ET",
+      "homeSpread": -37.5,
+      "awaySpread": 37.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "total": 151.5
+    },
+    {
+      "espnId": "401928788",
+      "away": "New Mexico State Aggies",
+      "home": "Gonzaga Bulldogs",
+      "time": "5:00 PM ET",
+      "homeSpread": -27.5,
+      "awaySpread": 27.5,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": -50000,
+      "awayMoneyline": 4000,
+      "total": 151.5
+    }
+  ]
+}

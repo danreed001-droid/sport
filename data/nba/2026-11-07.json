@@ -54,7 +54,10 @@
         }
       ],
       "statsCheck": "Rule 20: Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 68.9% ATS, 42-19 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-7. Rule 21: Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 66.2% ATS, 51-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8. Rule 24: Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 63.1% ATS, 77-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14. Rule 28: Fading Indiana Pacers: won at better-record Memphis Grizzlies 107-103 as a +5.5 underdog last game; now home vs. a better-record team, rested -- 61.8% ATS, 89-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17.",
-      "totalsLine": 229.5
+      "totalsLine": 229.5,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114
     },
     {
       "espnId": "401909939",
@@ -76,7 +79,10 @@
         "homeMoneyline": -258,
         "awayMoneyline": 212
       },
-      "totalsLine": 224.5
+      "totalsLine": 224.5,
+      "gameTotal": 224.5,
+      "gameTotalOverOdds": -114,
+      "gameTotalUnderOdds": -106
     },
     {
       "espnId": "401909940",
@@ -98,7 +104,10 @@
         "homeMoneyline": 160,
         "awayMoneyline": -191
       },
-      "totalsLine": 225.5
+      "totalsLine": 225.5,
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114
     },
     {
       "espnId": "401909941",
@@ -130,7 +139,10 @@
           "backtest": "62.2% unders, 107-65 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30"
         }
       ],
-      "totalsCheck": "Rule 6: Washington Wizards lost at home to Atlanta Hawks by 15 on 2026-11-04 (the worse-record team); now on the road vs. better-record Oklahoma City Thunder."
+      "totalsCheck": "Rule 6: Washington Wizards lost at home to Atlanta Hawks by 15 on 2026-11-04 (the worse-record team); now on the road vs. better-record Oklahoma City Thunder.",
+      "gameTotal": 220.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909942",
@@ -152,7 +164,10 @@
         "homeMoneyline": -258,
         "awayMoneyline": 212
       },
-      "totalsLine": 220.5
+      "totalsLine": 221.5,
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -114,
+      "gameTotalUnderOdds": -106
     },
     {
       "espnId": "401909943",
@@ -174,7 +189,10 @@
         "homeMoneyline": 237,
         "awayMoneyline": -291
       },
-      "totalsLine": 222.5
+      "totalsLine": 222.5,
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909944",
@@ -196,7 +214,10 @@
         "homeMoneyline": 128,
         "awayMoneyline": -152
       },
-      "totalsLine": 228.5
+      "totalsLine": 228.5,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     }
   ]
 }
