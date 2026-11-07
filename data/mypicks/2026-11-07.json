@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-07",
+  "picks": {
+    "cfb-2026-11-07-miami-notre-dame-7-30-pm-et": {
+      "sport": "cfb",
+      "away": "Miami",
+      "home": "Notre Dame",
+      "time": "7:30 PM ET",
+      "side": "away",
+      "team": "Miami",
+      "spread": 7,
+      "spreadOdds": -108,
+      "moneyline": 225,
+      "submittedAt": "2026-11-07T16:31:15+00:00",
+      "issue": 19
+    },
+    "cfb-2026-11-07-oklahoma-florida-7-45-pm-et": {
+      "sport": "cfb",
+      "away": "Oklahoma",
+      "home": "Florida",
+      "time": "7:45 PM ET",
+      "side": "home",
+      "team": "Florida",
+      "spread": -6.5,
+      "spreadOdds": null,
+      "moneyline": -230,
+      "submittedAt": "2026-11-07T16:31:15+00:00",
+      "issue": 19
+    }
+  },
+  "scores": {
+    "cfb-2026-11-07-alabama-lsu-3-30-pm-et": "NNhhN",
+    "cfb-2026-11-07-boise-state-colorado-state-6-00-pm-et": "NhNNNN",
+    "cfb-2026-11-07-byu-utah-12-00-pm-et": "NhNNhh",
+    "cfb-2026-11-07-cincinnati-houston-3-30-pm-et": "NNNaNh",
+    "cfb-2026-11-07-georgia-ole-miss-7-30-pm-et": "NNNha",
+    "cfb-2026-11-07-iowa-northwestern-7-30-pm-et": "NN",
+    "cfb-2026-11-07-kentucky-tennessee-6-15-pm-et": "NaNhh",
+    "cfb-2026-11-07-miami-notre-dame-7-30-pm-et": "NaNha",
+    "cfb-2026-11-07-oklahoma-florida-7-45-pm-et": "NNNhh",
+    "cfb-2026-11-07-oregon-ohio-state-3-30-pm-et": "Nh",
+    "cfb-2026-11-07-texas-a-m-south-carolina-3-00-pm-et": "NNNNh",
+    "cfb-2026-11-07-texas-missouri-12-00-pm-et": "NhN",
+    "cfb-2026-11-07-ucla-minnesota-12-00-pm-et": "NNNNha",
+    "cfb-2026-11-07-west-virginia-texas-tech-9-30-pm-et": "NNNNN"
+  },
+  "totals": {}
+}
