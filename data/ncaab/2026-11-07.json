@@ -3,37 +3,9 @@
   "weekday": "Saturday",
   "sport": "ncaab",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-07T06:36:45Z",
+  "generatedAt": "2026-11-07T16:30:00Z",
   "games": [
-    {
-      "espnId": "401918948",
-      "away": "Morehead State Eagles",
-      "home": "Louisville Cardinals",
-      "time": "12:00 PM ET",
-      "homeSpread": -37.5,
-      "awaySpread": 37.5,
-      "homeSpreadOdds": -108,
-      "awaySpreadOdds": -112,
-      "total": 151.5,
-      "gameTotal": 152.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
-    },
-    {
-      "espnId": "401928788",
-      "away": "New Mexico State Aggies",
-      "home": "Gonzaga Bulldogs",
-      "time": "5:00 PM ET",
-      "homeSpread": -27.5,
-      "awaySpread": 27.5,
-      "awaySpreadOdds": -115,
-      "homeMoneyline": -50000,
-      "awayMoneyline": 4000,
-      "total": 151.5,
-      "gameTotal": 151.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
-    }
+    {"altCategoryTally":"0-4","altConfidence":"lean","altCorrect":null,"altCover":null,"altPick":"Louisville Cardinals","altReasons":["Scoring margin: favors Louisville Cardinals (blended PD/g +12.9 vs +7.55)","Rest: neutral — Louisville last played Nov 2, Morehead State played Nov 2 and Nov 5; no clear rest edge","Travel: neutral — in-state Kentucky trip for Morehead State, not a major factor","Injuries/Lineup: neutral — no notable injury reports found for either team","Form: favors Louisville Cardinals — Louisville opened with a competitive win over Chattanooga (D-I); Morehead State was blown out by 25 at Western Kentucky before beating a non-D-I opponent (Virginia-Lynchburg) by 54","Motivation/Spot: neutral — early-season non-conference game for both, no rivalry/revenge angle","Venue/Crowd: favors Louisville Cardinals — KFC Yum! Center is a power-conference home-court advantage against an OVC opponent","Market: neutral — no college-basketball line-movement/public-betting data source available for this game","Matchup splits: favors Louisville Cardinals — significant roster talent gap between an ACC program and an OVC opponent"],"altReturn":null,"altSpreadReturn":null,"away":"Morehead State Eagles","awayMoneyline":null,"awayPDpg":7.55,"awayRank":null,"awayScore":null,"awaySpread":37.5,"awaySpreadOdds":-110,"confidence":"lean","correct":null,"gameTotal":152.5,"gameTotalOverOdds":-105,"gameTotalUnderOdds":-115,"home":"Louisville Cardinals","homeMoneyline":null,"homePDpg":12.9,"homeRank":11,"homeScore":null,"homeSpread":-37.5,"homeSpreadOdds":-110,"offGap":52.34,"pick":"Louisville Cardinals","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["Off. eff. blend (50/50 cur BartTorvik AdjOE + 2025-26 final sports-ref ORtg): away 105.25 (rank~211.5 of 365, 42.2 pct) vs home 118.35 (rank~21 of 365, 94.5 pct) — gap 52.3","Def. eff. blend (AdjDE/DRtg, lower=better): away 111.55 (rank~301) vs home 97.9 (rank~37.5) — Louisville's defense is far better, so no def-veto on the Louisville pick","PD/g blend: away +7.55 (cur +14.5 over 2 games / last +0.6) vs home +12.9 (cur +14 over 1 game / last +11.8)","No notable injury reports found for either team this early in the season"],"time":"12:00 PM ET"},
+    {"altCategoryTally":"0-5","altConfidence":"strong","altCorrect":null,"altCover":null,"altPick":"Gonzaga Bulldogs","altReasons":["Scoring margin: favors Gonzaga Bulldogs (blended PD/g +12.05 vs +5.05)","Rest: neutral — Gonzaga played Nov 2, New Mexico State played Nov 3; similar rest","Travel: favors Gonzaga Bulldogs — New Mexico State travels from Las Cruces, NM to Spokane, WA, a long cross-country trip with a time-zone change","Injuries/Lineup: neutral — no notable injury reports found for either team","Form: favors Gonzaga Bulldogs — Gonzaga opened with a neutral-site win over a high-major (Purdue, 78-72); New Mexico State's opening win came against a non-D-I opponent (Western New Mexico)","Motivation/Spot: neutral — early-season non-conference game for both, no rivalry/revenge angle beyond a notable first-ever matchup storyline","Venue/Crowd: favors Gonzaga Bulldogs — The Kennel is one of the most renowned home-court advantages in college basketball","Market: neutral — no college-basketball line-movement/public-betting data source available for this game","Matchup splits: favors Gonzaga Bulldogs — significant roster talent gap between a power-level WCC program and a Conference USA opponent"],"altReturn":null,"altSpreadReturn":null,"away":"New Mexico State Aggies","awayMoneyline":4000,"awayPDpg":5.05,"awayRank":null,"awayScore":null,"awaySpread":27.5,"awaySpreadOdds":-115,"confidence":"lean","correct":null,"gameTotal":151.5,"gameTotalOverOdds":-112,"gameTotalUnderOdds":-108,"home":"Gonzaga Bulldogs","homeMoneyline":-50000,"homePDpg":12.05,"homeRank":15,"homeScore":null,"homeSpread":-27.5,"homeSpreadOdds":-105,"offGap":55.08,"pick":"Gonzaga Bulldogs","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["Off. eff. blend (50/50 cur BartTorvik AdjOE/sports-ref ORtg + 2025-26 final sports-ref ORtg): away 107.0 (rank~211 of 365, 42.3 pct) vs home 119.8 (rank~10.5 of 365, 97.4 pct) — gap 55.1","Def. eff. blend (AdjDE/DRtg, lower=better): away 99.7 (rank~131.5) vs home 94.15 (rank~8) — Gonzaga's defense is better, so no def-veto on the Gonzaga pick","PD/g blend: away +5.05 (cur +7 over 1 game / last +3.1) vs home +12.05 (cur +6 over 1 game, beat Purdue 78-72 / last +18.1)","No notable injury reports found for either team this early in the season"],"time":"5:00 PM ET"}
   ]
 }
