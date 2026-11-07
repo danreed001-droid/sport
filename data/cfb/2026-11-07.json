@@ -70,8 +70,8 @@
       ],
       "time": "12:00 PM ET",
       "gameTotal": 49.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "altBlowoutCheck": "UCLA's last game was a 27-point win over Nevada (27-0). Sub-conditions: (1) padded win - UCLA forced 4 takeaways, committed 0 (margin +4) - HIT. (2) market bought in - UCLA favored by 4+ today - HIT. (3) opponent (Minnesota) defensive ranks not confirmed top-10/top-5 (points-allowed rank 39th) - NOT hit. (4) run-heavy win - only 29 rush attempts, below 33+ - NOT hit. (5) turnover-prone - Dieffenbach has just 1 INT on 100 attempts - NOT hit. 2 of 5, does not fire. The win came against Nevada, a clearly weaker Mountain West opponent, reinforcing the non-fire.",
@@ -202,9 +202,9 @@
         "QB eff 148.4 vs 152.0 (Manning vs Simmons) - QB veto qb-close"
       ],
       "time": "12:00 PM ET",
-      "gameTotal": 42.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
+      "gameTotal": 43.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "altBlowoutCheck": "South Carolina's last game was a 17-point win over Oklahoma (42-25), right at the threshold. Sub-conditions: (1) padded win - takeaway margin and halftime score not found - NOT hit. (2) market bought in - South Carolina favored by well over 3 points today - HIT. (3) opponent (Texas A&M) defensive ranks not top-10 (points-allowed 27th-tied) - NOT hit. (4) run-heavy win - South Carolina had 44 rush attempts - HIT. (5) turnover-prone - LaNorris Sellers has thrown 7 INT this season, including 3 in this very game - HIT. 3 of 5 hit, so the check FIRES: +6 to Texas A&M. Oklahoma was not a clearly outmatched opponent, so this isn't an obvious false positive.",
@@ -529,9 +529,9 @@
         "QB eff 163.0 vs 157.3 (Russell vs Leavitt)"
       ],
       "time": "3:30 PM ET",
-      "gameTotal": 52.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 53.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a win by 17+ points (Boise State won by just 1 over Texas State; Colorado State lost by 17 at Utah State) - not applicable to either team.",
