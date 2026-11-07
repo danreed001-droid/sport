@@ -226,17 +226,26 @@
       "statsFavors": "Minnesota Timberwolves",
       "statsRules": [
         {
-          "backtest": "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
-          "detail": "Fading New Orleans Pelicans: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77).",
+          "rule": 2,
           "name": "Fade an OT winner vs. a stronger team (any rest)",
-          "rule": 2
+          "backtest": "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+          "detail": "Fading New Orleans Pelicans: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77)."
         }
       ],
       "time": "8:00 PM ET",
       "totalsLine": 230.5,
       "gameTotal": 230.5,
       "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
+      "gameTotalUnderOdds": -108,
+      "statsSpread": 3.5,
+      "statsLine": {
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 140,
+        "awayMoneyline": -166
+      }
     },
     {
       "altCategoryTally": "1-2",
@@ -286,10 +295,19 @@
         "Injuries: OKC - Chet Holmgren (out to 1/2), Jalen Williams (out to 3/2), Cason Wallace (out to 3/2), Jaylin Williams (out to 11/7); MEM - Isaiah Stewart (out to 11/9), Scotty Pippen Jr. (out to 11/9)"
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 223.5,
-      "gameTotal": 223.5,
+      "totalsLine": 224.5,
+      "gameTotal": 224.5,
       "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112
+      "gameTotalUnderOdds": -112,
+      "statsSpread": 4.5,
+      "statsLine": {
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": 146,
+        "awayMoneyline": -174
+      }
     },
     {
       "altCategoryTally": "0-2",
@@ -339,10 +357,19 @@
         "Injuries: TOR - Kawhi Leonard (out to 11/23, team's best player), Scottie Barnes (GTD), Nate Bittle (out to 11/9); MIL - Kam Jones (out to 11/8, bench)"
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 229.5,
+      "totalsLine": 228.5,
       "gameTotal": 228.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "statsSpread": 3.5,
+      "statsLine": {
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 136,
+        "awayMoneyline": -162
+      }
     },
     {
       "altCategoryTally": "0-1",
@@ -392,10 +419,19 @@
         "Injuries: UTA - Jaren Jackson Jr. (out to 12/14), Jusuf Nurkic (out to 11/13), Trey Alexander (out to 11/8); DAL - Dereck Lively II (out to 11/12), Santi Aldama (GTD), Max Christie (GTD)"
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 225.5,
-      "gameTotal": 225.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "totalsLine": 226.5,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
+      "statsSpread": -6.5,
+      "statsLine": {
+        "homeSpread": -6.5,
+        "awaySpread": 6.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -257,
+        "awayMoneyline": 211
+      }
     },
     {
       "altCategoryTally": "0-3",
@@ -448,17 +484,26 @@
       "statsFavors": "Los Angeles Lakers",
       "statsRules": [
         {
-          "backtest": "62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16",
-          "detail": "Backing Los Angeles Lakers: Los Angeles Lakers lost the last meeting by 7 (Portland Trail Blazers 136 @ Los Angeles Lakers 129, 2026-10-27) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16.",
+          "rule": 46,
           "name": "Revenge: back a favored team with the worse record after losing the last meeting as the favorite, its 2nd+ straight loss to them (on trial)",
-          "rule": 46
+          "backtest": "62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16",
+          "detail": "Backing Los Angeles Lakers: Los Angeles Lakers lost the last meeting by 7 (Portland Trail Blazers 136 @ Los Angeles Lakers 129, 2026-10-27) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16."
         }
       ],
       "time": "10:00 PM ET",
       "totalsLine": 231.5,
       "gameTotal": 231.5,
       "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
+      "gameTotalUnderOdds": -108,
+      "statsSpread": -3.5,
+      "statsLine": {
+        "homeSpread": -3.5,
+        "awaySpread": 3.5,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": -154,
+        "awayMoneyline": 130
+      }
     },
     {
       "altCategoryTally": "3-0",
@@ -510,8 +555,17 @@
       "time": "10:00 PM ET",
       "totalsLine": 231.5,
       "gameTotal": 231.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "statsSpread": 17.5,
+      "statsLine": {
+        "homeSpread": 17.5,
+        "awaySpread": -17.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 810,
+        "awayMoneyline": -1340
+      }
     }
   ]
 }
