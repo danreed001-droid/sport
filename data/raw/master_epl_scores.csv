@@ -1,9 +1,9 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401879244,2026-11-08,75',Brentford,0,0.78,Brighton & Hove Albion,2,1.89,-,-,9:00 AM
-401879243,2026-11-08,75',Liverpool,2,0.22,Crystal Palace,0,-1.33,-,-,9:00 AM
-401878759,2026-11-08,79',AFC Bournemouth,2,0.11,Ipswich Town,1,-0.44,-,-,9:00 AM
-401879239,2026-11-08,72',Chelsea,0,0.44,Sunderland,1,-1.11,-,-,9:00 AM
-401879240,2026-11-08,Scheduled,Aston Villa,0,-0.33,Manchester United,0,-0.56,-,-,11:30 AM
+401879244,2026-11-08,FT,Brentford,0,0.5,Brighton & Hove Albion,2,1.9,320,-125,9:00 AM
+401879243,2026-11-08,FT,Liverpool,3,0.4,Crystal Palace,1,-1.4,-185,475,9:00 AM
+401878759,2026-11-08,FT,AFC Bournemouth,2,0.2,Ipswich Town,1,-0.5,100,260,9:00 AM
+401879239,2026-11-08,FT,Chelsea,0,0.3,Sunderland,1,-0.9,125,225,9:00 AM
+401879240,2026-11-08,FT,Aston Villa,4,-0.3,Manchester United,4,-0.5,240,100,11:30 AM
 401878758,2026-11-07,FT,Tottenham Hotspur,0,-0.1,Leeds United,1,0.2,155,180,7:30 AM
 401878760,2026-11-07,FT,Hull City,0,0.0,Arsenal,1,1.0,1900,-700,10:00 AM
 401879241,2026-11-07,FT,Newcastle United,1,-0.3,Fulham,1,-0.2,260,-105,10:00 AM
