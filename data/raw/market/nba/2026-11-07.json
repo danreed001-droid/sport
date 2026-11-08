@@ -1,7 +1,7 @@
 {
  "date": "2026-11-07",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-07T23:58:01+00:00",
+ "fetchedAt": "2026-11-08T00:18:02+00:00",
  "games": [
   {
    "away": "Denver Nuggets",
@@ -44,8 +44,8 @@
     "money_over": 72
    },
    "moneyline": {
-    "home": -285,
-    "away": 225
+    "home": -270,
+    "away": 220
    },
    "rlmFavorite": null
   },
@@ -61,7 +61,7 @@
     "money_home": 57
    },
    "total": {
-    "now": 223.5,
+    "now": 222.5,
     "open": 224.5,
     "tix_over": 78,
     "money_over": 76
@@ -90,8 +90,8 @@
     "money_over": 84
    },
    "moneyline": {
-    "home": -650,
-    "away": 450
+    "home": -625,
+    "away": 458
    },
    "rlmFavorite": null
   },
@@ -113,8 +113,8 @@
     "money_over": 85
    },
    "moneyline": {
-    "home": -285,
-    "away": 231
+    "home": -295,
+    "away": 245
    },
    "rlmFavorite": null
   },
