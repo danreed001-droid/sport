@@ -1,0 +1,56 @@
+{
+  "date": "2026-11-08",
+  "picks": {
+    "nfl-2026-11-08-arizona-cardinals-seattle-seahawks-4-25-pm-et": {
+      "sport": "nfl",
+      "away": "Arizona Cardinals",
+      "home": "Seattle Seahawks",
+      "time": "4:25 PM ET",
+      "side": "home",
+      "team": "Seattle Seahawks",
+      "spread": -1,
+      "spreadOdds": -313,
+      "moneyline": -427,
+      "submittedAt": "2026-11-08T15:44:35+00:00",
+      "issue": 22,
+      "alt": true,
+      "posted": {
+        "spread": -8.5,
+        "spreadOdds": 100
+      }
+    },
+    "nfl-2026-11-08-tampa-bay-buccaneers-chicago-bears-8-20-pm-et": {
+      "sport": "nfl",
+      "away": "Tampa Bay Buccaneers",
+      "home": "Chicago Bears",
+      "time": "8:20 PM ET",
+      "side": "away",
+      "team": "Tampa Bay Buccaneers",
+      "spread": 10,
+      "spreadOdds": -176,
+      "moneyline": 221,
+      "submittedAt": "2026-11-08T15:44:35+00:00",
+      "issue": 22,
+      "alt": true,
+      "posted": {
+        "spread": 6,
+        "spreadOdds": 100
+      }
+    }
+  },
+  "scores": {
+    "nfl-2026-11-08-arizona-cardinals-seattle-seahawks-4-25-pm-et": "NhhNaN",
+    "nfl-2026-11-08-cleveland-browns-new-orleans-saints-1-00-pm-et": "NNNNh",
+    "nfl-2026-11-08-dallas-cowboys-indianapolis-colts-1-00-pm-et": "NNah",
+    "nfl-2026-11-08-denver-broncos-carolina-panthers-1-00-pm-et": "NhNaNa",
+    "nfl-2026-11-08-detroit-lions-miami-dolphins-1-00-pm-et": "NhNNha",
+    "nfl-2026-11-08-green-bay-packers-new-england-patriots-4-25-pm-et": "Nh",
+    "nfl-2026-11-08-houston-texans-los-angeles-chargers-4-05-pm-et": "NNNhaNN",
+    "nfl-2026-11-08-las-vegas-raiders-san-francisco-49ers-4-25-pm-et": "NhaNNhh",
+    "nfl-2026-11-08-los-angeles-rams-washington-commanders-1-00-pm-et": "NNNNN",
+    "nfl-2026-11-08-new-york-giants-philadelphia-eagles-1-00-pm-et": "NNaNNaN",
+    "nfl-2026-11-08-new-york-jets-kansas-city-chiefs-1-00-pm-et": "NhNN",
+    "nfl-2026-11-08-tampa-bay-buccaneers-chicago-bears-8-20-pm-et": "NahhNNNa"
+  },
+  "totals": {}
+}
