@@ -601,15 +601,28 @@ footer b{color:var(--ink);}
     if(!rb){ var b = dataBounds(); return DATA.plays.length ? 'All time · '+fmtLong(b[0])+' – '+fmtLong(b[1]) : 'All time'; }
     return fmtLong(rb[0])+' – '+fmtLong(rb[1]);
   }
-  function outcome(p){ return DASH.market==='ats' ? {r:p.a, v:p.ap} : {r:p.m, v:p.mp}; }
+  // Over/under picks count with the model's (or your) side picks everywhere: the tiles,
+  // sparklines, running-profit and win-rate lines, by-sport bars and tables all go
+  // through belongs/outcome/summarize/seriesFor, so they always show the same numbers.
+  // NBA Totals count in NBA Stats and your O/U picks in You; a totals play counts the
+  // same in the spread and moneyline views (it has no spread or moneyline).
+  var TOTALS_OF = {stats:'totals', mine:'mytotal', nflstats:'nfltotals', ncaabstats:'ncaabtotals'};
+  function belongs(p, who){ return p.w === who || p.w === TOTALS_OF[who]; }
+  function outcome(p){
+    if(p.w==='totals' || p.w==='mytotal' || p.w==='nfltotals' || p.w==='ncaabtotals') return {r:p.tr, v:p.tp};
+    return DASH.market==='ats' ? {r:p.a, v:p.ap} : {r:p.m, v:p.mp};
+  }
   function summarize(list, who){
-    var a = {w:0,l:0,p:0,profit:0,priced:0,dogs:0};
+    var a = {w:0,l:0,p:0,profit:0,priced:0,dogs:0,late:0,tot:{n:0,w:0,l:0,p:0,v:0}};
     list.forEach(function(p){
-      if(p.w !== who) return;
-      if(DASH.market==='ml' && DASH.mlCutoff && p.x){ a.dogs++; return; }
+      if(!belongs(p, who)) return;
+      var isTot = p.w !== who;
+      if(!isTot && DASH.market==='ml' && DASH.mlCutoff && p.x){ a.dogs++; return; }
       var o = outcome(p);
       if(o.r==='W') a.w++; else if(o.r==='L') a.l++; else if(o.r==='P') a.p++;
       if(num(o.v)){ a.profit += o.v; a.priced++; }
+      if(isTot && o.r){ a.tot.n++; if(o.r==='W') a.tot.w++; else if(o.r==='L') a.tot.l++; else a.tot.p++; a.tot.v += num(o.v) ? o.v : 0; }
+      if(p.lt && o.r) a.late++;
     });
     return a;
   }
@@ -622,7 +635,7 @@ footer b{color:var(--ink);}
       dates.forEach(function(d){
         var dw = 0, dl = 0, dp = 0;
         list.forEach(function(p){
-          if(p.w!==w.k || p.d!==d || (DASH.market==='ml' && DASH.mlCutoff && p.x)) return;
+          if(!belongs(p, w.k) || p.d!==d || (DASH.market==='ml' && DASH.mlCutoff && p.x)) return;
           var o = outcome(p);
           if(num(o.v)){ cum += o.v; any = true; }
           if(o.r==='W'){ wins++; n++; dw++; } else if(o.r==='L'){ n++; dl++; } else if(o.r==='P') dp++;
@@ -916,7 +929,7 @@ footer b{color:var(--ink);}
     var models = WHO.filter(function(w){ return w.k!=='mine'; });
     var has = function(p, k, key){ return (p[key]||[]).indexOf(k) >= 0; };
     var rows = [
-      ['All your picks', function(){ return true; }, 1],
+      ['All your side picks', function(){ return true; }, 1],
       ['At least 1 model with you', function(p){ return (p.ag||[]).length >= 1; }],
       ['2 or more models with you', function(p){ return (p.ag||[]).length >= 2; }],
       ['Models with you, none against', function(p){ return (p.ag||[]).length && !(p.op||[]).length; }],
@@ -925,7 +938,7 @@ footer b{color:var(--ink);}
     ].concat(models.map(function(w){ return ['With '+(/^The /.test(w.label)?'the '+w.label.slice(4):'the '+w.label), function(p){ return has(p, w.k, 'ag'); }, 0, w.c]; }))
      .concat(models.map(function(w){ return ['Against '+(/^The /.test(w.label)?'the '+w.label.slice(4):'the '+w.label), function(p){ return has(p, w.k, 'op'); }, 0, w.c]; }));
     document.getElementById('agsub').textContent = mine.length
-      ? 'Your graded picks '+mk+', grouped by which models took the same side or the other side of that game.'
+      ? 'Your graded side picks '+mk+', grouped by which models took the same side or the other side of that game. Over/unders are left out here (no model to agree with), so this is your tile minus them.'
       : 'No graded picks of yours in this view yet. Once you make picks, this shows how they do when the models agree or disagree.';
     document.getElementById('agtbl').innerHTML = mine.length ? '<thead><tr><th>When</th><th class="num">Picks</th><th class="num">Record</th><th class="num">Win %</th><th class="num">Profit</th><th class="num">ROI</th></tr></thead><tbody>'
       + rows.map(function(r){
@@ -937,21 +950,6 @@ footer b{color:var(--ink);}
         }).join('') + '</tbody>' : '';
   }
 
-  // Over/under picks count in the same tile as the model's (or your) side picks:
-  // NBA Totals in NBA Stats, your O/U in You (and any other model's totals
-  // plays, keyed in TOTALS_OF). Same sport/date filters as the rest of the view.
-  var TOTALS_OF = {stats:'totals', mine:'mytotal', nflstats:'nfltotals', ncaabstats:'ncaabtotals'};
-  function addTotals(a, list, who){
-    var t = {n:0, w:0, l:0, p:0, v:0}, k = TOTALS_OF[who];
-    if(!k) return t;
-    list.forEach(function(p){
-      if(p.w!==k || !p.tr) return;
-      t.n++; if(p.tr==='W') t.w++; else if(p.tr==='L') t.l++; else t.p++;
-      if(num(p.tp)){ t.v += p.tp; a.profit += p.tp; a.priced++; }
-    });
-    a.w += t.w; a.l += t.l; a.p += t.p;
-    return t;
-  }
   function renderDash(){
     if(!document.getElementById('dashboard')) return;
     var list = filteredPlays(), mk = DASH.market==='ats' ? 'against the spread' : 'on the moneyline';
@@ -959,16 +957,17 @@ footer b{color:var(--ink);}
     rc.hidden = DASH.range !== 'custom';
     if(DASH.range === 'custom'){ var cb = rangeBounds(); rf.value = cb[0]; rt.value = cb[1]; }
     rf.min = rt.min = db[0]; rf.max = rt.max = todayStr();
-    document.getElementById('rangelbl').textContent = rangeLabel() + ' · ' + list.filter(function(p){ return DASH.market==='ats' ? p.a : (p.m && !(DASH.mlCutoff && p.x)); }).length + ' graded plays';
+    document.getElementById('rangelbl').textContent = rangeLabel() + ' · ' + list.filter(function(p){ if(p.tr!==undefined) return true; return DASH.market==='ats' ? p.a : (p.m && !(DASH.mlCutoff && p.x)); }).length + ' graded plays';
     var ser = seriesFor(list);
     document.getElementById('kpis').innerHTML = WHO.map(function(w, i){
-      var a = summarize(list, w.k), t = addTotals(a, list, w.k), r = roi(a), n = a.w+a.l;
+      var a = summarize(list, w.k), t = a.tot, r = roi(a), n = a.w+a.l;
       var note = a.dogs ? '<div class="kpi-note">'+a.dogs+' pick'+(a.dogs===1?'':'s')+' left out of the moneyline (7+ point NFL/college dogs, favorites at −400 or shorter).</div>'
         : (!(n+a.p) ? '<div class="kpi-note">'+(w.k==='mine' ? 'No graded picks in this view yet.' : 'No graded plays in this view.')+'</div>' : '');
       return '<div class="kpi"><div class="kpi-h"><i class="key" style="background:'+w.c+'"></i><b>'+w.label+'</b><span>'+w.role+'</span></div>'
         + '<div class="kpi-main"><div class="kpi-fig '+(a.priced?cls(a.profit):'flat')+'">'+(a.priced?money(a.profit):'—')+'<small>profit '+mk+'</small></div>'+sparkSvg(ser.series[i].prof, w.c)+'</div>'
         + '<div class="kpi-stats"><div>Record<b>'+recText(a)+'</b></div><div>Win %<b>'+(n?pct(a.w,n):'—')+'</b></div><div>ROI<b class="'+(r==null?'flat':cls(r))+'">'+(r==null?'—':(r>0?'+':'')+r+'%')+'</b></div></div>'
-        + note + (t.n ? '<div class="kpi-note">Includes '+t.n+' over/under pick'+(t.n===1?'':'s')+' ('+t.w+'-'+t.l+(t.p?'-'+t.p:'')+', '+money(t.v)+') along with the sides '+mk+'.</div>' : '') + '</div>';
+        + note + (t.n ? '<div class="kpi-note">Includes '+t.n+' over/under pick'+(t.n===1?'':'s')+' ('+t.w+'-'+t.l+(t.p?'-'+t.p:'')+', '+money(t.v)+'); they count in both the spread and moneyline views, in the charts and the tables too.</div>' : '')
+        + (a.late ? '<div class="kpi-note">'+a.late+' of these '+(a.late===1?'was':'were')+' made after the game had started; the public Results page leaves '+(a.late===1?'it':'them')+' out.</div>' : '') + '</div>';
     }).join('');
 
     renderAgree(list, mk);

@@ -21,7 +21,7 @@ from lib import grading_patterns, manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
 from lib.nba_stats_rules import families as nba_families  # noqa: E402
 from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules  # noqa: E402
-from lib.results import build_results, results_csv  # noqa: E402
+from lib.results import build_results, lead_minutes, results_csv  # noqa: E402
 from lib.picks import game_id, grade, grade_total, is_final, line_for, mine_view, ml_skip, side_of, stats_view, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
@@ -154,6 +154,10 @@ def build():
                     if play_rules:
                         play["rr"] = play_rules
                     if who == "mine":
+                        pk = picks_today.get(game_id(sport, date_str, g)) or {}
+                        lead = lead_minutes(date_str, pk.get("time"), pk.get("submittedAt"))
+                        if lead is not None and lead < 0:
+                            play["lt"] = 1   # submitted after the game started (the public Results page leaves it out)
                         # Which models were on your side ("ag") or the other
                         # side ("op") of this game, for the agreement table.
                         play["ag"] = [k for k, s in model_sides if s == side]
@@ -181,6 +185,9 @@ def build():
                 if mt and isinstance(mt.get("line"), (int, float)):
                     play = {"d": date_str, "s": sport, "w": "mytotal", "g": f"{g.get('away')} @ {g.get('home')}",
                             "k": f"{mt['side'].title()} {mt['line']:g}", "tl": mt["line"]}
+                    lead = lead_minutes(date_str, mt.get("time"), mt.get("submittedAt"))
+                    if lead is not None and lead < 0:
+                        play["lt"] = 1
                     if final:
                         r = grade_total(g, mt["side"], mt["line"], mt.get("odds"))
                         play.update({"tr": r["result"], "tp": r["profit"], "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})

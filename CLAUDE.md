@@ -238,6 +238,14 @@ category grades have held up: for each non-neutral grade, did the graded side
 win and cover, by category, full vs half grade, sport, lean size, and
 favorite vs underdog. It's a record of their grading, never a pick.
 
+Dashboard numbers all come from one calculation: `belongs` / `outcome` / `summarize` /
+`seriesFor` in `site/index.html` count over/unders (NBA Totals in NBA Stats, your O/U
+in You; `TOTALS_OF`) in the tiles, sparklines, running-profit and win-rate lines,
+by-sport bars and every table, so they can't disagree (2026-11-08: tiles had them,
+charts didn't). The agreement table is side picks only. Plays you made after the
+game started carry `lt`; the You tile says how many are in it, and the public
+Results page leaves them out unless its box is ticked.
+
 Over/under picks: each game's pick row also has Over / Under buttons at the
 game's total. `scripts/slate_totals.py` (every scoring run, and NBA in the
 game-time run) puts ESPN pickcenter's line on today's and tomorrow's slates as
