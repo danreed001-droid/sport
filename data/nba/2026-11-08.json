@@ -26,7 +26,10 @@
         "homeMoneyline": 293,
         "awayMoneyline": -368
       },
-      "totalsLine": 238.5
+      "totalsLine": 238.5,
+      "gameTotal": 238.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909946",
@@ -48,7 +51,10 @@
         "homeMoneyline": -185,
         "awayMoneyline": 155
       },
-      "totalsLine": 222.5
+      "totalsLine": 222.5,
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114
     },
     {
       "espnId": "401909947",
@@ -70,7 +76,10 @@
         "homeMoneyline": -569,
         "awayMoneyline": 426
       },
-      "totalsLine": 223.5
+      "totalsLine": 223.5,
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909948",
@@ -92,7 +101,10 @@
         "homeMoneyline": -352,
         "awayMoneyline": 282
       },
-      "totalsLine": 219.5
+      "totalsLine": 219.5,
+      "gameTotal": 219.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909949",
@@ -111,10 +123,13 @@
         "awaySpread": -12.5,
         "homeSpreadOdds": -110,
         "awaySpreadOdds": -110,
-        "homeMoneyline": 472,
+        "homeMoneyline": 473,
         "awayMoneyline": -650
       },
-      "totalsLine": 222.5
+      "totalsLine": 222.5,
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909950",
@@ -133,10 +148,13 @@
         "awaySpread": -1.5,
         "homeSpreadOdds": -110,
         "awaySpreadOdds": -110,
-        "homeMoneyline": 101,
+        "homeMoneyline": 100,
         "awayMoneyline": -119
       },
-      "totalsLine": 229.5
+      "totalsLine": 229.5,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909951",
@@ -168,7 +186,10 @@
         }
       ],
       "statsCheck": "Rule 47: Backing Sacramento Kings: Sacramento Kings lost the last meeting by 13 (Miami Heat 130 @ Sacramento Kings 117, 2026-01-21) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
-      "totalsLine": 238.5
+      "totalsLine": 238.5,
+      "gameTotal": 238.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114
     }
   ]
 }

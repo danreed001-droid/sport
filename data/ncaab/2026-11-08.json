@@ -1,0 +1,65 @@
+{
+  "date": "2026-11-08",
+  "weekday": "Sunday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-08T06:06:31Z",
+  "games": [
+    {
+      "espnId": "401924646",
+      "away": "Iona Gaels",
+      "home": "St. John's Red Storm",
+      "time": "12:00 PM ET",
+      "homeSpread": -29.5,
+      "awaySpread": 29.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": -50000,
+      "awayMoneyline": 4000,
+      "total": 151.5
+    },
+    {
+      "espnId": "401920424",
+      "away": "Arkansas Razorbacks",
+      "home": "Virginia Cavaliers",
+      "time": "1:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -155,
+      "awayMoneyline": 130,
+      "total": 162.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401918053",
+      "away": "Houston Cougars",
+      "home": "California Golden Bears",
+      "time": "8:30 PM ET",
+      "homeSpread": 19.5,
+      "awaySpread": -19.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": 1700,
+      "awayMoneyline": -4500,
+      "total": 145.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401919029",
+      "away": "USC Trojans",
+      "home": "Wichita State Shockers",
+      "time": "11:00 PM ET",
+      "homeSpread": 6.5,
+      "awaySpread": -6.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": 220,
+      "awayMoneyline": -270,
+      "total": 156.5,
+      "neutral": true
+    }
+  ]
+}
