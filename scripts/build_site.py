@@ -21,7 +21,7 @@ from lib import grading_patterns, manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
 from lib.nba_stats_rules import families as nba_families  # noqa: E402
 from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules  # noqa: E402
-from lib.picks import game_id, grade, grade_total, is_final, line_for, ml_skip, side_of, stats_view, team_for  # noqa: E402
+from lib.picks import game_id, grade, grade_total, is_final, line_for, mine_view, ml_skip, side_of, stats_view, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
 SLATE_FIELDS = [
@@ -143,7 +143,9 @@ def build():
                         tier = ("Rules " if len(nums) > 1 else "Rule ") + " + ".join(nums) + (" · stacked" if stacked else "")
                         play_rules = [{"n": r.get("rule"), "name": rule_src[1].get(r.get("rule"), r.get("name", "")),
                                        "bt": rule_src[2].get(r.get("rule"), r.get("backtest", ""))} for r in g[rule_src[0]]]
-                    gv = stats_view(g) if who == "stats" else g  # NBA Stats: graded at its live line
+                    # NBA Stats: graded at its live line; your picks: at the line you took.
+                    gv = (stats_view(g) if who == "stats"
+                          else mine_view(g, picks_today.get(game_id(sport, date_str, g))) if who == "mine" else g)
                     ln = line_for(gv, side)
                     play = {"d": date_str, "s": sport, "w": who, "t": tier,
                             "g": f"{g.get('away')} @ {g.get('home')}", "k": team_for(g, side),
@@ -277,6 +279,7 @@ def build():
         sport = p.get("sport")
         game = next((g for g in slate["sports"].get(sport, {}).get("games", []) if g["id"] == gid), None)
         if game:
+            game = mine_view(game, p)   # graded at the line you took
             skip = ml_skip(sport, line_for(game, p["side"]))
             entry["bigDog"] = skip == "dog"
             entry["heavyFav"] = skip == "fav"

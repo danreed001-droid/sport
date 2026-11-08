@@ -52,6 +52,22 @@ def stats_view(g):
     return {**g, **{k: line[k] for k in STATS_LINE_KEYS if line.get(k) is not None}}
 
 
+def mine_view(g, pick):
+    """The game as one of your picks is graded: the spread, its odds and the
+    moneyline saved with the pick when you submitted it (an alternate line
+    included), in place of the slate's current ones."""
+    if not pick or pick.get("side") not in ("away", "home"):
+        return g
+    side = pick["side"]
+    v = dict(g)
+    if _num(pick.get("spread")):
+        v[f"{side}Spread"] = pick["spread"]
+        v[f"{side}SpreadOdds"] = pick.get("spreadOdds")
+    if _num(pick.get("moneyline")):
+        v[f"{side}Moneyline"] = pick["moneyline"]
+    return v
+
+
 def line_for(g, side):
     return {
         "moneyline": g.get(f"{side}Moneyline"),

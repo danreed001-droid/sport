@@ -14,6 +14,7 @@ from datetime import datetime, timezone
 
 sys.path.insert(0, os.path.dirname(__file__))
 from lib import sports, store  # noqa: E402
+from lib.altlines import MAX_STEP, alt_price  # noqa: E402
 from lib.picks import game_id, game_total_line, is_final, line_for, team_for  # noqa: E402
 
 BLOCK = re.compile(r"```json\s*(\{.*?\})\s*```", re.S)
@@ -54,6 +55,10 @@ def process(issue):
     picks = payload.get("picks") or {}
     scores = payload.get("scores") or {}
     totals = payload.get("totals") or {}
+    alts = payload.get("alts") or {}            # game id -> your alternate spread
+    total_alts = payload.get("totalAlts") or {}  # game id -> your alternate total
+    if not isinstance(alts, dict): alts = {}
+    if not isinstance(total_alts, dict): total_alts = {}
     if (not isinstance(date_str, str) or not DATE.match(date_str) or not isinstance(picks, dict) or not isinstance(scores, dict)
             or not isinstance(totals, dict)):
         return False, "The picks block is missing a valid date or picks list."
@@ -108,13 +113,25 @@ def process(issue):
                 cleared.append(label)
             continue
         ln = line_for(g, side)
-        current["picks"][gid] = {
+        entry = {
             "sport": sport, "away": g["away"], "home": g["home"], "time": g.get("time"),
             "side": side, "team": team_for(g, side), "spread": ln["spread"], "spreadOdds": ln["spreadOdds"],
             "moneyline": ln["moneyline"], "submittedAt": now, "issue": issue.get("number"),
         }
-        spread = ln["spread"]
-        saved.append(f"{team_for(g, side)} {'' if spread is None else ('+' if spread > 0 else '') + str(spread)} ({label})".replace("  ", " "))
+        alt = alts.get(gid)
+        if alt is not None and side in ("away", "home"):
+            ok = isinstance(alt, (int, float)) and ln["spread"] is not None and float(alt * 2).is_integer() \
+                and abs(alt - ln["spread"]) <= MAX_STEP
+            price = alt_price(sport, "spread", ln["spread"], ln["spreadOdds"], alt) if ok else None
+            if price is None:
+                rejected.append(f"{label} — alternate line {alt} isn't available (saved at the posted line)")
+            elif alt != ln["spread"]:
+                entry.update({"spread": alt, "spreadOdds": price, "alt": True,
+                              "posted": {"spread": ln["spread"], "spreadOdds": ln["spreadOdds"]}})
+        current["picks"][gid] = entry
+        spread = entry["spread"]
+        alt_note = f" (alternate line, est. {entry['spreadOdds']:+g})" if entry.get("alt") else ""
+        saved.append(f"{team_for(g, side)} {'' if spread is None else ('+' if spread > 0 else '') + f'{spread:g}'}{alt_note} ({label})".replace("  ", " "))
 
     # Over/under picks: locked at the slate's line (and its odds) when submitted.
     for gid, ou in totals.items():
@@ -138,10 +155,18 @@ def process(issue):
             rejected.append(f"{label} — no over/under line on the slate yet")
             continue
         odds = over_odds if ou == "over" else under_odds
-        current["totals"][gid] = {
-            "sport": sport, "away": g["away"], "home": g["home"], "time": g.get("time"),
-            "side": ou, "line": line, "odds": odds, "submittedAt": now, "issue": issue.get("number"),
-        }
+        tentry = {"sport": sport, "away": g["away"], "home": g["home"], "time": g.get("time"),
+                  "side": ou, "line": line, "odds": odds, "submittedAt": now, "issue": issue.get("number")}
+        talt = total_alts.get(gid)
+        if talt is not None:
+            ok = isinstance(talt, (int, float)) and float(talt * 2).is_integer() and abs(talt - line) <= MAX_STEP
+            price = alt_price(sport, ou, line, odds, talt) if ok else None
+            if price is None:
+                rejected.append(f"{label} — alternate total {talt} isn't available (saved at the posted total)")
+            elif talt != line:
+                tentry.update({"line": talt, "odds": price, "alt": True, "posted": {"line": line, "odds": odds}})
+        current["totals"][gid] = tentry
+        line, odds = tentry["line"], tentry["odds"]
         saved.append(f"{ou.title()} {line:g}{'' if odds is None else f' ({odds:+g})'} ({label})")
 
     changed = bool(saved or cleared or scored)

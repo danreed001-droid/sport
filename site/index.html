@@ -227,6 +227,11 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .state.local{background:color-mix(in srgb,var(--warn) 16%,transparent);color:var(--warn);}
 .pickbtns{display:flex;gap:8px;}
 .ttlhead{margin-top:10px;}
+.altrow{display:flex;align-items:center;gap:8px;margin-top:8px;flex-wrap:wrap;}
+.altrow .lbl{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;}
+.altbtn{font:inherit;width:32px;height:32px;border-radius:8px;border:1.5px solid var(--rule-2);background:var(--surface);color:var(--ink);cursor:pointer;}
+.altbtn:hover{border-color:var(--mine);}
+.altinfo{font-size:12px;color:var(--muted);}
 .pickbtn .pr{color:var(--muted);font-size:12px;}
 .pickbtn.draw{flex:.7;}
 .pickbtn{flex:1;min-width:0;font:inherit;background:var(--surface);border:1.5px solid var(--rule-2);color:var(--ink);border-radius:8px;padding:9px 8px;cursor:pointer;text-align:center;transition:background .12s,border-color .12s;}
@@ -319,15 +324,107 @@ footer b{color:var(--ink);}
 
   // ---- your unsubmitted picks live in this browser until you submit them ----
   function pendingKey(){ return 'picksheet.pending.' + DATA.slate.date; }
-  function loadPending(){ try{ var o = JSON.parse(localStorage.getItem(pendingKey())||'{}')||{}; return {sides:o.sides||{}, scores:o.scores||{}, totals:o.totals||{}}; }catch(e){ return {sides:{}, scores:{}, totals:{}}; } }
-  function savePending(){ try{ localStorage.setItem(pendingKey(), JSON.stringify({sides:pending, scores:pendingScores, totals:pendingTotals})); }catch(e){} }
-  var pending = {}, pendingScores = {}, pendingTotals = {};
+  function loadPending(){ try{ var o = JSON.parse(localStorage.getItem(pendingKey())||'{}')||{}; return {sides:o.sides||{}, scores:o.scores||{}, totals:o.totals||{}, alts:o.alts||{}, totAlts:o.totAlts||{}}; }catch(e){ return {sides:{}, scores:{}, totals:{}, alts:{}, totAlts:{}}; } }
+  function savePending(){ try{ localStorage.setItem(pendingKey(), JSON.stringify({sides:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totAlts:pendingTotAlt})); }catch(e){} }
+  var pending = {}, pendingScores = {}, pendingTotals = {}, pendingAlt = {}, pendingTotAlt = {};
+
+  // ---- alternate lines: estimated prices (same math as scripts/lib/altlines.py) ----
+  var ALT = {SD:{nfl:13.5, cfb:16, nba:12, ncaab:11, mlb:4.2}, TSD:{nfl:10, cfb:14, nba:17, ncaab:15, mlb:4.4},
+    KEY:{nfl:{3:2.3, 7:1.7, 10:1.35, 6:1.25, 4:1.25, 14:1.3, 1:1.1, 17:1.15}, cfb:{3:1.8, 7:1.6, 10:1.3, 14:1.3, 17:1.2, 4:1.15, 6:1.1, 21:1.15}},
+    HOLD:1.045, MAX:10};
+  function altPmf(mu, sd, keys, lo, hi){
+    var ks = [], vs = [], t = 0, k;
+    for(k = lo; k <= hi; k++){ var v = Math.exp(-0.5*Math.pow((k-mu)/sd, 2)) * (keys[Math.abs(k)] || 1); ks.push(k); vs.push(v); }
+    for(k = 0; k < vs.length; k++) t += vs[k];
+    t = t || 1;
+    for(k = 0; k < vs.length; k++) vs[k] = vs[k] / t;
+    return {ks:ks, vs:vs};
+  }
+  function altWinPush(pm, thr, above){
+    var win = 0, push = 0;
+    for(var i = 0; i < pm.ks.length; i++){ var k = pm.ks[i]; if(above ? k > thr : k < thr) win += pm.vs[i]; if(k === thr) push = pm.vs[i]; }
+    return [win, Math.floor(thr) === thr ? push : 0];
+  }
+  function altAmerican(p){
+    if(p <= 0) return null;
+    if(p >= 0.5) return p < 1 ? Math.floor(-100*p/(1-p) + 0.5) : null;
+    return Math.floor(100*(1-p)/p + 0.5);
+  }
+  function altPrice(sport, kind, posted, postedOdds, alt){
+    if(!ALT.SD.hasOwnProperty(sport) || !num(posted) || !num(alt)) return null;
+    if(Math.abs(alt - posted) > ALT.MAX + 1e-9) return null;
+    if(alt === posted) return num(postedOdds) ? postedOdds : -110;
+    var o = num(postedOdds) ? postedOdds : -110, imp = o > 0 ? 100/(o+100) : -o/(-o+100);
+    var q = Math.min(0.97, Math.max(0.03, imp/ALT.HOLD)), sd, probs, center;
+    if(kind === 'spread'){
+      sd = ALT.SD[sport]; var keys = ALT.KEY[sport] || {};
+      probs = function(mu, s){ return altWinPush(altPmf(mu, sd, keys, -90, 90), -s, true); };
+      center = -posted;
+    } else {
+      sd = ALT.TSD[sport];
+      probs = function(mu, line){ return altWinPush(altPmf(mu, sd, {}, Math.max(0, Math.trunc(mu - 8*sd)), Math.trunc(mu + 8*sd) + 1), line, kind === 'over'); };
+      center = posted;
+    }
+    var lo = center - 4*sd, hi = center + 4*sd, increasing = kind === 'spread' || kind === 'over';
+    for(var i = 0; i < 60; i++){
+      var mid = (lo + hi)/2, wp = probs(mid, posted), val = wp[1] < 1 ? wp[0]/(1 - wp[1]) : 0.5;
+      if((val < q) === increasing) lo = mid; else hi = mid;
+    }
+    var r = probs((lo + hi)/2, alt);
+    if(r[1] >= 1) return null;
+    var odds = altAmerican(Math.min(0.995, (r[0]/(1 - r[1])) * ALT.HOLD));
+    return odds === null ? null : Math.max(-2000, Math.min(2000, odds));
+  }
+  function winsOn100(odds){ return num(odds) ? (odds > 0 ? odds : 10000/Math.abs(odds)) : null; }
+  function slateSpread(g, side){ return side==='away' ? g.awaySpread : side==='home' ? g.homeSpread : null; }
+  function slateSpreadOdds(g, side){ return side==='away' ? g.awaySpreadOdds : side==='home' ? g.homeSpreadOdds : null; }
+  function committedPick(id){ return DATA.myPicks[id] || null; }
+  function effectiveLine(id, side){
+    if(pendingAlt.hasOwnProperty(id)) return pendingAlt[id];
+    var c = committedPick(id);
+    if(c && c.side === side && !pending.hasOwnProperty(id) && num(c.spread)) return c.spread;
+    return slateSpread(GAMES[id].game, side);
+  }
+  function stepAlt(id, dir){
+    var side = effectiveSide(id), e = GAMES[id], g = e.game, base = slateSpread(g, side);
+    if(!side || side==='draw' || !num(base)) return;
+    var next = effectiveLine(id, side) + 0.5*dir;
+    if(Math.abs(next - base) > ALT.MAX || altPrice(e.sport, 'spread', base, slateSpreadOdds(g, side), next) === null) return;
+    var c = committedPick(id);
+    if(c && c.side === side && num(c.spread) && next === c.spread){ delete pendingAlt[id]; delete pending[id]; }
+    else { pendingAlt[id] = next; pending[id] = side; }
+    savePending(); renderPickRow(id); renderSubmitBar();
+  }
+  function effectiveTotLine(id){
+    if(pendingTotAlt.hasOwnProperty(id)) return pendingTotAlt[id];
+    var c = (DATA.myTotals||{})[id], L = gameTotalLine(GAMES[id].game);
+    if(c && !pendingTotals.hasOwnProperty(id)) return c.line;
+    return L ? L.t : null;
+  }
+  function stepTotAlt(id, dir){
+    var ou = effectiveTotal(id), e = GAMES[id], L = gameTotalLine(e.game);
+    if(!ou || !L) return;
+    var next = effectiveTotLine(id) + 0.5*dir;
+    if(Math.abs(next - L.t) > ALT.MAX || altPrice(e.sport, ou, L.t, ou==='over' ? L.o : L.u, next) === null) return;
+    var c = (DATA.myTotals||{})[id];
+    if(c && c.side === ou && next === c.line){ delete pendingTotAlt[id]; delete pendingTotals[id]; }
+    else { pendingTotAlt[id] = next; pendingTotals[id] = ou; }
+    savePending(); renderPickRow(id); renderSubmitBar();
+  }
+  function altRow(kind, id, line, base, price, isAlt){
+    return '<div class="altrow"><span class="lbl">'+(kind==='total'?'Total':'Line')+'</span>'
+      + '<button type="button" class="altbtn" data-id="'+esc(id)+'" data-kind="'+kind+'" data-dir="-1" aria-label="Lower line">−</button>'
+      + '<b class="mono">'+(kind==='total' ? esc(String(line)) : sgn(line))+'</b>'
+      + '<button type="button" class="altbtn" data-id="'+esc(id)+'" data-kind="'+kind+'" data-dir="1" aria-label="Raise line">+</button>'
+      + '<span class="altinfo">'+(isAlt ? 'alternate · est. ' : 'posted · ')+(num(price) ? sgn(price)+' · $100 wins $'+Math.round(winsOn100(price)) : 'no price')+'</span></div>';
+  }
 
   // ---- your over/under picks: locked at the slate's line when submitted ----
   function committedTotal(id){ var t = (DATA.myTotals||{})[id]; return t ? t.side : null; }
   function effectiveTotal(id){ return pendingTotals.hasOwnProperty(id) ? (pendingTotals[id]==='none'?null:pendingTotals[id]) : committedTotal(id); }
   function gameTotalLine(g){ return num(g.gameTotal) ? {t:g.gameTotal, o:g.gameTotalOverOdds, u:g.gameTotalUnderOdds} : num(g.totalsLine) ? {t:g.totalsLine, o:null, u:null} : null; }
   function chooseTotal(id, ou){
+    delete pendingTotAlt[id];
     var next = effectiveTotal(id)===ou ? null : ou, c = committedTotal(id);
     if((next||null) === (c||null)) delete pendingTotals[id]; else pendingTotals[id] = next || 'none';
     savePending(); renderPickRow(id); renderSubmitBar();
@@ -338,13 +435,17 @@ footer b{color:var(--ink);}
 
   function reconcile(){
     Object.keys(pending).forEach(function(id){
-      var c = committedSide(id), p = pending[id];
-      if((p==='none' && !c) || p===c) delete pending[id];
+      var c = committedSide(id), p = pending[id], cp = committedPick(id);
+      var altDiff = pendingAlt.hasOwnProperty(id) && !(cp && pendingAlt[id] === cp.spread);
+      if(((p==='none' && !c) || p===c) && !altDiff){ delete pending[id]; delete pendingAlt[id]; }
     });
+    Object.keys(pendingAlt).forEach(function(id){ if(!pending.hasOwnProperty(id)) delete pendingAlt[id]; });
     Object.keys(pendingTotals).forEach(function(id){
-      var c = committedTotal(id), p = pendingTotals[id];
-      if((p==='none' && !c) || p===c) delete pendingTotals[id];
+      var c = committedTotal(id), p = pendingTotals[id], ct = (DATA.myTotals||{})[id];
+      var altDiff = pendingTotAlt.hasOwnProperty(id) && !(ct && pendingTotAlt[id] === ct.line);
+      if(((p==='none' && !c) || p===c) && !altDiff){ delete pendingTotals[id]; delete pendingTotAlt[id]; }
     });
+    Object.keys(pendingTotAlt).forEach(function(id){ if(!pendingTotals.hasOwnProperty(id)) delete pendingTotAlt[id]; });
     Object.keys(pendingScores).forEach(function(id){
       if(!GAMES[id] || pendingScores[id]===baseScores(id)) delete pendingScores[id];
     });
@@ -357,6 +458,7 @@ footer b{color:var(--ink);}
     else pending[id] = next || 'none';
   }
   function choose(id, side){
+    delete pendingAlt[id];
     setSide(id, effectiveSide(id)===side ? null : side);
     savePending();
     renderPickRow(id);
@@ -1098,7 +1200,20 @@ footer b{color:var(--ink);}
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="away" aria-pressed="'+(side==='away')+'"'+dis+'>'+btnLabel(g.away,g.awaySpread,g.awayMoneyline)+'</button>'
       + (num(g.drawMoneyline) ? '<button type="button" class="pickbtn draw" data-id="'+esc(id)+'" data-side="draw" aria-pressed="'+(side==='draw')+'"'+dis+'>'+btnLabel('Draw',null,g.drawMoneyline)+'</button>' : '')
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="home" aria-pressed="'+(side==='home')+'"'+dis+'>'+btnLabel(g.home,g.homeSpread,g.homeMoneyline)+'</button>'
-      + '</div>' + notes + totalRowInner(id);
+      + '</div>' + sideAltInner(id) + notes + totalRowInner(id);
+  }
+  function sideAltInner(id){
+    var e = GAMES[id], g = e.game, side = effectiveSide(id), cp = committedPick(id);
+    if(!side || side === 'draw' || !ALT.SD.hasOwnProperty(e.sport)) return '';
+    var base = slateSpread(g, side);
+    if(g.final || !num(base)){
+      return (cp && cp.alt) ? '<span class="note">You took '+esc(cp.team)+' '+sgn(cp.spread)+' ('+sgn(cp.spreadOdds)+', alternate line; posted '+sgn((cp.posted||{}).spread)+').</span>' : '';
+    }
+    var line = effectiveLine(id, side), isAlt = line !== base;
+    var price = !isAlt ? slateSpreadOdds(g, side)
+      : (!pendingAlt.hasOwnProperty(id) && cp && cp.alt && cp.spread === line) ? cp.spreadOdds
+      : altPrice(e.sport, 'spread', base, slateSpreadOdds(g, side), line);
+    return altRow('side', id, line, base, price, isAlt);
   }
   function totalRowInner(id){
     var g = GAMES[id].game, L = gameTotalLine(g), ou = effectiveTotal(id), c = (DATA.myTotals||{})[id];
@@ -1117,7 +1232,16 @@ footer b{color:var(--ink);}
       + '<div class="pickbtns">'
       + '<button type="button" class="pickbtn ttlbtn" data-id="'+esc(id)+'" data-ou="over" aria-pressed="'+(ou==='over')+'"'+dis+'>Over '+esc(String(L.t))+odds(L.o)+'</button>'
       + '<button type="button" class="pickbtn ttlbtn" data-id="'+esc(id)+'" data-ou="under" aria-pressed="'+(ou==='under')+'"'+dis+'>Under '+esc(String(L.t))+odds(L.u)+'</button>'
-      + '</div>' + note;
+      + '</div>' + totAltInner(id, ou, L) + note;
+  }
+  function totAltInner(id, ou, L){
+    var e = GAMES[id], g = e.game, c = (DATA.myTotals||{})[id];
+    if(!ou || g.final || !ALT.SD.hasOwnProperty(e.sport)) return '';
+    var line = effectiveTotLine(id), isAlt = line !== L.t, posted = ou==='over' ? L.o : L.u;
+    var price = !isAlt ? posted
+      : (!pendingTotAlt.hasOwnProperty(id) && c && c.alt && c.line === line) ? c.odds
+      : altPrice(e.sport, ou, L.t, posted, line);
+    return altRow('total', id, line, L.t, price, isAlt);
   }
   function renderPickRow(id){
     var el = document.getElementById('pr-'+id);
@@ -1169,7 +1293,7 @@ footer b{color:var(--ink);}
   // ---- submit bar ----
   function issueUrl(){
     var body = 'Picks submitted from the pick sheet. Leave the block below as-is — the Pick intake workflow reads it, commits the picks to data/mypicks/, and closes this issue.\n\n```json\n'
-      + JSON.stringify({date:DATA.slate.date, picks:pending, scores:pendingScores, totals:pendingTotals}) + '\n```\n';
+      + JSON.stringify({date:DATA.slate.date, picks:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totalAlts:pendingTotAlt}) + '\n```\n';
     return 'https://github.com/'+DATA.repo+'/issues/new?title='+encodeURIComponent('picks '+DATA.slate.date)+'&body='+encodeURIComponent(body);
   }
   function renderSubmitBar(){
@@ -1240,6 +1364,8 @@ footer b{color:var(--ink);}
       if(b.hasAttribute('data-ou')) chooseTotal(b.getAttribute('data-id'), b.getAttribute('data-ou'));
       else choose(b.getAttribute('data-id'), b.getAttribute('data-side'));
     }
+    var ab = e.target.closest('.altbtn');
+    if(ab){ var dir = +ab.getAttribute('data-dir'); if(ab.getAttribute('data-kind')==='total') stepTotAlt(ab.getAttribute('data-id'), dir); else stepAlt(ab.getAttribute('data-id'), dir); }
     var sb = e.target.closest('.seg5 button');
     if(sb && !sb.disabled) setScore(sb.getAttribute('data-sid'), +sb.getAttribute('data-i'), sb.getAttribute('data-c'));
   });
@@ -1303,7 +1429,7 @@ footer b{color:var(--ink);}
     paintThemeBtn();
   });
   document.getElementById('discard').addEventListener('click', function(){
-    pending = {}; pendingScores = {}; pendingTotals = {}; savePending();
+    pending = {}; pendingScores = {}; pendingTotals = {}; pendingAlt = {}; pendingTotAlt = {}; savePending();
     Object.keys(GAMES).forEach(function(id){ renderScore(id); renderPickRow(id); }); renderSubmitBar();
   });
   document.getElementById('submitlink').addEventListener('click', function(){
@@ -1322,7 +1448,7 @@ footer b{color:var(--ink);}
         return;
       }
     }
-    DATA = d; var lp = loadPending(); pending = lp.sides; pendingScores = lp.scores; pendingTotals = lp.totals; render(); reconcile(); Object.keys(GAMES).forEach(renderPickRow); renderSubmitBar();
+    DATA = d; var lp = loadPending(); pending = lp.sides; pendingScores = lp.scores; pendingTotals = lp.totals; pendingAlt = lp.alts; pendingTotAlt = lp.totAlts; render(); reconcile(); Object.keys(GAMES).forEach(renderPickRow); renderSubmitBar();
   }).catch(function(){
     document.getElementById('app').innerHTML = '<p class="loading">Couldn\'t load data.json. If you opened this file directly, run <span class="mono">python scripts/build_site.py</span> and open <span class="mono">_site/index.html</span> through a local server instead.</p>';
   });

@@ -8,11 +8,16 @@
       "time": "7:30 PM ET",
       "side": "away",
       "team": "Miami",
-      "spread": 7,
-      "spreadOdds": -108,
+      "spread": 7.5,
+      "spreadOdds": -110,
       "moneyline": 225,
       "submittedAt": "2026-11-07T16:31:15+00:00",
-      "issue": 19
+      "issue": 19,
+      "posted": {
+        "spread": 7,
+        "spreadOdds": -108
+      },
+      "correction": "Line corrected to +7.5 on 2026-11-08 at the user's request: the pick was taken at +7.5 (DraftKings had Miami +7.5 at open and close); the slate showed +7."
     },
     "cfb-2026-11-07-oklahoma-florida-7-45-pm-et": {
       "sport": "cfb",

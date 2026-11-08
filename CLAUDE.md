@@ -250,6 +250,19 @@ starts (repo-owned in `sync_ledger.py`). The submitted payload's `totals` map
 shown in the pick log ("Your O/U") and as a row on the dashboard's You card,
 kept out of the ATS/moneyline figures.
 
+Your picks are graded at the line you took, never the slate's current one:
+`lib/picks.mine_view` puts the spread, its odds and the moneyline saved with
+the pick in place of the slate's (the dashboard, pick log and the card).
+Alternate lines: a picked side or total gets a − / + stepper (half points, up
+to 10 either way, not soccer) with an estimated price. `lib/altlines.alt_price`
+estimates it from the posted line and price (normal margin/total model with
+football key numbers, 4.5% hold); `site/index.html`'s `altPrice` is the same
+math in JavaScript (2,000 random cases match exactly) and `intake_picks.py`
+recomputes the price itself from the payload's `alts` / `totalAlts`, saving
+`alt: true` and the `posted` line with the pick. The user's picks may be
+corrected by hand only when they ask (2026-11-07 Miami was taken at +7.5,
+slate said +7; the entry keeps `posted` and a `correction` note).
+
 Don't write picks into game objects in `data/<sport>/` (no `userPick`,
 `yourPick`, `myPick` fields) and don't ask the user to tell you their picks.
 Grading of their picks happens in `scripts/lib/picks.py` from the game's final
