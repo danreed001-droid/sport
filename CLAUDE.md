@@ -263,6 +263,18 @@ recomputes the price itself from the payload's `alts` / `totalAlts`, saving
 corrected by hand only when they ask (2026-11-07 Miami was taken at +7.5,
 slate said +7; the entry keeps `posted` and a `correction` note).
 
+Public results page (`site/results.html`, linked from the pick sheet): every one of
+the user's picks, sides and over/unders, graded at the line taken. `lib/results.py`
+builds `results.json` / `results.csv` in `build_site.py`. Each row has when it was
+submitted and how many minutes before the game's start (the slate's `time`);
+picks submitted after the start (2026-09-26 Texas @ Tennessee, 2026-10-10
+Stanford @ Notre Dame) are flagged and left out of the page's numbers unless the
+box is ticked, because a pick logged during a game can't be verified. Intake
+doesn't reject them (it only blocks final games). Corrections and alternate
+lines are labelled. The repo and Pages site are public, so the picks files and
+their commit timestamps are the verification trail. It's the user's record, not
+advice, and has a sample-size note (95% range).
+
 Don't write picks into game objects in `data/<sport>/` (no `userPick`,
 `yourPick`, `myPick` fields) and don't ask the user to tell you their picks.
 Grading of their picks happens in `scripts/lib/picks.py` from the game's final

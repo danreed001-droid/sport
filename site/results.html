@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Pick Results</title>
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0f100e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Pick Sheet">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icons/favicon-32.png">
+<script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('picksheet.theme')||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600;700;800&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<style>
+:root{
+  --paper:#f6f4ec; --surface:#fcfcfb; --surface-2:#ece7d3; --ink:#201d16; --muted:#726c58;
+  --rule:#ddd5b9; --rule-2:#c9bf9c; --accent:#2a78d6; --accent-ink:#1c5cab; --warn:#b3471b; --ok:#0b7a52;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f100e; --surface:#1a1a19; --surface-2:#232320; --ink:#f3f2ec; --muted:#9b9a92;
+    --rule:#2c2c2a; --rule-2:#3d3d39; --accent:#3987e5; --accent-ink:#86b6ef; --warn:#f0955e; --ok:#4fd3a0;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f100e; --surface:#1a1a19; --surface-2:#232320; --ink:#f3f2ec; --muted:#9b9a92;
+  --rule:#2c2c2a; --rule-2:#3d3d39; --accent:#3987e5; --accent-ink:#86b6ef; --warn:#f0955e; --ok:#4fd3a0;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Work Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:14px;line-height:1.5;-webkit-font-smoothing:antialiased;}
+h1,h2{font-family:'Big Shoulders Display','Arial Narrow',system-ui,sans-serif;text-transform:uppercase;letter-spacing:.01em;margin:0;}
+h1{font-size:34px;line-height:1.05;}
+h2{font-size:20px;margin:0 0 4px;}
+.wrap{max-width:920px;margin:0 auto;padding:16px;}
+.top{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:6px;}
+.top a{color:var(--accent-ink);font-weight:600;text-decoration:none;}
+.lede{color:var(--muted);margin:6px 0 14px;max-width:70ch;}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:14px;margin:0 0 12px;}
+.sub{color:var(--muted);font-size:12.5px;margin:0 0 10px;}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:0 0 12px;}
+.tile{background:var(--surface);border:1px solid var(--rule);border-radius:12px;padding:10px 12px;}
+.tile .k{font-size:11.5px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;}
+.tile .v{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;font-weight:600;line-height:1.2;}
+.tile .s{font-size:12px;color:var(--muted);}
+.pos{color:var(--ok);} .neg{color:var(--warn);}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;margin:0 0 12px;}
+label{display:flex;flex-direction:column;gap:3px;font-size:12px;font-weight:600;color:var(--muted);}
+label.chk{flex-direction:row;align-items:center;gap:8px;font-size:13px;color:var(--ink);font-weight:500;}
+select{font:inherit;font-size:14px;color:var(--ink);background:var(--surface-2);border:1px solid var(--rule-2);border-radius:8px;padding:7px 9px;}
+select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:1px;}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;}
+table{width:100%;border-collapse:collapse;font-size:13.5px;}
+th{font-size:11.5px;font-weight:600;color:var(--muted);text-align:left;padding:6px 8px;border-bottom:1px solid var(--rule-2);white-space:nowrap;}
+td{padding:7px 8px;border-bottom:1px solid var(--rule);vertical-align:middle;white-space:nowrap;}
+td.gm{white-space:normal;min-width:170px;}
+td.num,th.num{text-align:right;font-family:'IBM Plex Mono',ui-monospace,monospace;}
+.chip{display:inline-block;font-size:12px;font-weight:700;padding:1px 8px;border-radius:999px;border:1px solid var(--rule-2);}
+.chip.w{color:var(--ok);border-color:var(--ok);} .chip.l{color:var(--warn);border-color:var(--warn);} .chip.p,.chip.n{color:var(--muted);}
+.tag{display:inline-block;font-size:11px;font-weight:600;padding:0 6px;border-radius:6px;border:1px solid var(--rule-2);color:var(--muted);margin-left:4px;}
+.tag.late{color:var(--warn);border-color:var(--warn);}
+.note{font-size:12.5px;color:var(--muted);margin:6px 0 0;}
+.warnbox{border:1px solid var(--warn);border-radius:12px;padding:12px 14px;margin:0 0 12px;background:var(--surface);}
+.warnbox b{color:var(--warn);}
+svg{width:100%;height:auto;display:block;}
+a{color:var(--accent-ink);}
+@media (max-width:600px){ h1{font-size:28px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><a href="./">&larr; Pick sheet</a><a href="grading.html">My grading</a></div>
+  <h1>Pick results</h1>
+  <p class="lede">Every pick I have made on the pick sheet, graded at the line I took, win or lose. Nothing is removed. Each pick is saved to a public git repository with the time it was submitted, so it can be checked against the game's start. Wins and losses use a flat $100 a bet (1 unit).</p>
+  <div id="app"><p class="sub">Loading&hellip;</p></div>
+  <p class="note">Past results don't predict future results. This is a record of my own picks, not betting advice. Bet only what you can afford to lose; 21+ where legal.</p>
+</div>
+<script>
+(function(){
+  var DATA = null, ROWS = [];
+  var F = {sport:'all', kind:'all', result:'all', late:false};
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function isNum(v){ return typeof v==='number' && isFinite(v); }
+  function sgn(v){ return isNum(v) ? (v>0?'+':'')+v : ''; }
+  function units(v){ return isNum(v) ? (v>=0?'+':'−')+Math.abs(v).toFixed(2)+'u' : '—'; }
+  function pct(w,n){ return n ? (Math.round(w/n*1000)/10)+'%' : '—'; }
+  function cls(v){ return !isNum(v)||v===0 ? '' : v>0 ? 'pos' : 'neg'; }
+  var SPORT = {nfl:'NFL', cfb:'CFB', nba:'NBA', ncaab:'NCAAB', mlb:'MLB', soccer:'Soccer', epl:'Premier League'};
+  function verified(r){ return r.lead!==null && r.lead>=0; }
+  function wilson(w, n){
+    if(!n) return null;
+    var z = 1.96, p = w/n, d = 1 + z*z/n, c = (p + z*z/(2*n))/d, h = z*Math.sqrt(p*(1-p)/n + z*z/(4*n*n))/d;
+    return [Math.max(0, c-h), Math.min(1, c+h)];
+  }
+  function tally(rows){
+    var t = {w:0, l:0, p:0, u:0, n:0};
+    rows.forEach(function(r){
+      if(r.result==='W') t.w++; else if(r.result==='L') t.l++; else if(r.result==='P') t.p++; else return;
+      t.n++; t.u += r.units||0;
+    });
+    return t;
+  }
+  function rec(t){ return t.n ? t.w+'-'+t.l+(t.p?'-'+t.p:'') : '—'; }
+  function leadText(r){
+    if(r.lead===null) return '—';
+    if(r.lead<0){ var m = -r.lead; return (m>=60 ? Math.floor(m/60)+'h '+(m%60)+'m' : m+'m')+' after start'; }
+    var m2 = r.lead; return (m2>=60 ? Math.floor(m2/60)+'h '+(m2%60)+'m' : m2+'m')+' before';
+  }
+  function when(iso){
+    var d = new Date(iso); if(isNaN(d)) return '';
+    return d.toLocaleString('en-US',{timeZone:'America/New_York', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'})+' ET';
+  }
+  function chart(rows){
+    var g = rows.filter(function(r){ return isNum(r.units) && (r.result==='W'||r.result==='L'||r.result==='P'); });
+    g.sort(function(a,b){ return a.d<b.d?-1:a.d>b.d?1:(a.submitted||'')<(b.submitted||'')?-1:1; });
+    if(g.length<2) return '';
+    var cum = [0], s = 0; g.forEach(function(r){ s += r.units; cum.push(s); });
+    var W = 600, H = 190, L = 8, R = 8, T = 26, B = 28, lo = Math.min(0, Math.min.apply(null, cum)), hi = Math.max(0, Math.max.apply(null, cum));
+    if(hi===lo) hi = lo+1;
+    var x = function(i){ return L + (W-L-R)*i/(cum.length-1); }, y = function(v){ return T + (H-T-B)*(1-(v-lo)/(hi-lo)); };
+    var pts = cum.map(function(v,i){ return x(i).toFixed(1)+','+y(v).toFixed(1); }).join(' ');
+    var end = cum[cum.length-1], col = end>=0 ? 'var(--ok)' : 'var(--warn)';
+    return '<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="Running profit in units, one point per graded pick">'
+      + '<line x1="'+L+'" x2="'+(W-R)+'" y1="'+y(0).toFixed(1)+'" y2="'+y(0).toFixed(1)+'" stroke="var(--rule-2)" stroke-dasharray="4 4"/>'
+      + '<polyline points="'+pts+'" fill="none" stroke="'+col+'" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>'
+      + '<circle cx="'+x(cum.length-1).toFixed(1)+'" cy="'+y(end).toFixed(1)+'" r="4" fill="'+col+'"/>'
+      + '<text x="'+(W-R)+'" y="'+(y(end)-8).toFixed(1)+'" text-anchor="end" font-size="19" font-weight="700" fill="'+col+'" font-family="IBM Plex Mono,monospace">'+units(end)+'</text>'
+      + '<text x="'+L+'" y="'+(H-6)+'" font-size="16" fill="var(--muted)">'+esc(g[0].d)+'</text>'
+      + '<text x="'+(W-R)+'" y="'+(H-6)+'" text-anchor="end" font-size="16" fill="var(--muted)">'+esc(g[g.length-1].d)+'</text></svg>';
+  }
+  function render(){
+    var all = ROWS, ok = all.filter(verified), late = all.filter(function(r){ return r.lead!==null && r.lead<0; });
+    var base = F.late ? all : ok;
+    var side = base.filter(function(r){ return r.kind==='side'; }), tot = base.filter(function(r){ return r.kind==='total'; });
+    var ts = tally(side), tt = tally(tot), tc = tally(side.concat(tot));
+    var mlRows = side.filter(function(r){ return r.mlResult && r.mlCounted; });
+    var mw = mlRows.filter(function(r){ return r.mlResult==='W'; }).length, ml = mlRows.length - mw;
+    var mu = mlRows.reduce(function(a,r){ return a + (r.mlUnits||0); }, 0);
+    var ci = wilson(ts.w, ts.w+ts.l), n = ts.w+ts.l;
+    var roi = tc.n ? tc.u/tc.n : null;
+    var h = '';
+    if(late.length){
+      h += '<div class="warnbox"><b>'+late.length+' pick'+(late.length===1?' was':'s were')+' submitted after the game had started.</b> '
+        + (F.late ? 'They are included below.' : 'They are left out of the numbers on this page unless you tick the box below, because a pick logged during a game can\'t be checked.')
+        + ' '+late.map(function(r){ return esc(r.game)+' ('+esc(r.d)+', '+leadText(r)+')'; }).join('; ')+'.</div>';
+    }
+    h += '<div class="tiles">'
+      + '<div class="tile"><div class="k">Spread picks</div><div class="v">'+rec(ts)+'</div><div class="s">'+pct(ts.w, n)+' &middot; '+n+' graded</div></div>'
+      + '<div class="tile"><div class="k">Units (spread + over/under)</div><div class="v '+cls(tc.u)+'">'+units(tc.u)+'</div><div class="s">'+(roi===null?'':'ROI '+(roi>=0?'+':'−')+Math.abs(roi*100).toFixed(1)+'% on '+tc.n+' bets')+'</div></div>'
+      + '<div class="tile"><div class="k">Over/under picks</div><div class="v">'+rec(tt)+'</div><div class="s">'+units(tt.u)+'</div></div>'
+      + '<div class="tile"><div class="k">Moneyline (reference)</div><div class="v">'+(mlRows.length ? mw+'-'+ml : '—')+'</div><div class="s">'+units(mlRows.length?mu:null)+' &middot; excludes 7+ pt football/college dogs and −400 favorites</div></div>'
+      + '</div>';
+    var c = chart(base); if(c) h += '<div class="card"><h2>Running profit</h2><p class="sub">Units after each graded pick, spread and over/under together, in the order they were made.</p>'+c+'</div>';
+    h += '<div class="card"><h2>How much does this prove?</h2><p class="sub">Break-even at −110 is 52.4%. Pushes are left out of win %.</p>';
+    if(ci){
+      h += '<p style="margin:0">'+n+' graded spread picks at '+pct(ts.w, n)+'. The 95% range for the true win rate is about <b>'+Math.round(ci[0]*100)+'% to '+Math.round(ci[1]*100)+'%</b>.</p>';
+      h += '<p class="note">'+(n<100 ? 'Under 100 picks: promising, not proven. Hot starts usually drift back toward normal, and a bettor who really wins 55–58% needs about 100–200 picks before it shows clearly.' : 'With 100+ picks the range is narrow enough to be meaningful; compare its low end with 52.4%.')+'</p>';
+    } else h += '<p style="margin:0">No graded spread picks yet.</p>';
+    h += '</div>';
+    var sports = Object.keys(all.reduce(function(a,r){ a[r.sport]=1; return a; }, {})).sort();
+    h += '<div class="card"><h2>Every pick</h2><p class="sub">Line shown is the line I took (an alternate line is marked, with the posted line it was moved from). Times are when the pick reached the repository.</p>'
+      + '<div class="filters"><label>Sport<select id="fs"><option value="all">All</option>'+sports.map(function(s){ return '<option value="'+s+'"'+(F.sport===s?' selected':'')+'>'+esc(SPORT[s]||s)+'</option>'; }).join('')+'</select></label>'
+      + '<label>Type<select id="fk"><option value="all">All</option><option value="side"'+(F.kind==='side'?' selected':'')+'>Spread</option><option value="total"'+(F.kind==='total'?' selected':'')+'>Over/under</option></select></label>'
+      + '<label>Result<select id="fr"><option value="all">All</option><option value="W"'+(F.result==='W'?' selected':'')+'>Won</option><option value="L"'+(F.result==='L'?' selected':'')+'>Lost</option><option value="pending"'+(F.result==='pending'?' selected':'')+'>Pending</option></select></label>'
+      + '<label class="chk"><input type="checkbox" id="fl"'+(F.late?' checked':'')+'> Count picks made after the game started</label></div>';
+    var shown = all.filter(function(r){
+      return (F.sport==='all'||r.sport===F.sport) && (F.kind==='all'||r.kind===F.kind)
+        && (F.result==='all' || (F.result==='pending' ? r.result===null : r.result===F.result));
+    }).slice().reverse();
+    h += '<div class="scroll"><table><thead><tr><th>Date</th><th>Sport</th><th>Game</th><th>Pick</th><th class="num">Odds</th><th>Submitted</th><th>Timing</th><th>Result</th><th class="num">Units</th></tr></thead><tbody>'
+      + (shown.map(function(r){
+          var chip = r.result==='W' ? '<span class="chip w">Won</span>' : r.result==='L' ? '<span class="chip l">Lost</span>' : r.result==='P' ? '<span class="chip p">Push</span>'
+            : r.result==='NS' ? '<span class="chip n" title="No spread was saved with this pick">ML only</span>' : r.result==='void' ? '<span class="chip n">Void</span>' : '<span class="chip n">Pending</span>';
+          var lateTag = r.lead!==null && r.lead<0 ? '<span class="tag late">after start</span>' : '';
+          var alt = r.alt ? '<span class="tag" title="Alternate line, price estimated">alt line</span>' : '';
+          var fix = r.note ? '<span class="tag" title="'+esc(r.note)+'">corrected*</span>' : '';
+          var posted = r.posted ? ' <span class="sub" style="font-size:11.5px">(posted '+esc(r.kind==='total' ? (isNum(r.posted.line)?r.posted.line:'') : sgn(r.posted.spread))+')</span>' : '';
+          return '<tr><td>'+esc(r.d)+'</td><td>'+esc(SPORT[r.sport]||r.sport)+'</td><td class="gm">'+esc(r.game)+'</td><td><b>'+esc(r.pick)+'</b>'+alt+fix+posted+'</td>'
+            + '<td class="num">'+(isNum(r.odds)?sgn(r.odds):'—')+'</td><td>'+esc(when(r.submitted))+'</td><td>'+esc(leadText(r))+lateTag+'</td><td>'+chip+'</td>'
+            + '<td class="num '+cls(r.units)+'">'+(isNum(r.units)?units(r.units):'—')+'</td></tr>';
+        }).join('') || '<tr><td colspan="9" class="sub" style="text-align:center;padding:18px">No picks match.</td></tr>')
+      + '</tbody></table></div></div>';
+    var fixes = all.filter(function(r){ return r.note; });
+    if(fixes.length) h += '<div class="card"><h2>Corrections</h2>'+fixes.map(function(r){ return '<p class="note"><b>*</b> '+esc(r.game)+' ('+esc(r.d)+'): '+esc(r.note)+'</p>'; }).join('')+'</div>';
+    var repo = DATA.repo;
+    h += '<div class="card"><h2>Check it yourself</h2><p class="note" style="margin-top:0">Picks are saved by an automated workflow to a public git repository, one file per day, so every pick has a permanent timestamp I can\'t edit quietly: '
+      + '<a href="https://github.com/'+esc(repo)+'/commits/main/data/mypicks" target="_blank" rel="noopener">commit history of the picks files</a>, '
+      + '<a href="https://github.com/'+esc(repo)+'/tree/main/data/mypicks" target="_blank" rel="noopener">the raw files</a>, and <a href="results.csv">this table as a spreadsheet (CSV)</a>. '
+      + 'Games are graded automatically from ESPN results at the spread and odds saved with each pick.</p></div>';
+    document.getElementById('app').innerHTML = h;
+    document.getElementById('fs').onchange = function(e){ F.sport = e.target.value; render(); };
+    document.getElementById('fk').onchange = function(e){ F.kind = e.target.value; render(); };
+    document.getElementById('fr').onchange = function(e){ F.result = e.target.value; render(); };
+    document.getElementById('fl').onchange = function(e){ F.late = e.target.checked; render(); };
+  }
+  fetch('results.json', {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }).then(function(d){
+    DATA = d; ROWS = d.rows || []; render();
+  }).catch(function(){ document.getElementById('app').innerHTML = '<p class="sub">Results are unavailable right now. Try again in a minute.</p>'; });
+})();
+</script>
+<script>if('serviceWorker' in navigator){window.addEventListener('load',function(){navigator.serviceWorker.register('sw.js').catch(function(){});});}</script>
+</body>
+</html>

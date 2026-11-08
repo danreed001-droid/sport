@@ -21,6 +21,7 @@ from lib import grading_patterns, manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
 from lib.nba_stats_rules import families as nba_families  # noqa: E402
 from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules  # noqa: E402
+from lib.results import build_results, results_csv  # noqa: E402
 from lib.picks import game_id, grade, grade_total, is_final, line_for, mine_view, ml_skip, side_of, stats_view, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
@@ -415,7 +416,7 @@ def main():
     version = hashlib.sha1(page.encode("utf-8")).hexdigest()[:12]
     with open(os.path.join(out_dir, "index.html"), "w", encoding="utf-8") as f:
         f.write(page.replace("__PAGE_VERSION__", version))
-    for extra in ("manual.html", "grading.html", "manifest.webmanifest", "sw.js"):
+    for extra in ("manual.html", "grading.html", "results.html", "manifest.webmanifest", "sw.js"):
         shutil.copy(os.path.join(store.REPO_ROOT, "site", extra), os.path.join(out_dir, extra))
     # App icons (installable app: manifest.webmanifest + sw.js).
     shutil.copytree(os.path.join(store.REPO_ROOT, "site", "icons"), os.path.join(out_dir, "icons"), dirs_exist_ok=True)
@@ -423,6 +424,12 @@ def main():
     payload["pageVersion"] = version
     with open(os.path.join(out_dir, "data.json"), "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
+    # Public results: every pick of yours, graded at the line you took (site/results.html).
+    rows = build_results(load_mypicks(), {k: store.list_docs(cfg["collection"]) for k, cfg in sports.SPORTS.items()})
+    with open(os.path.join(out_dir, "results.json"), "w", encoding="utf-8") as f:
+        json.dump({"generatedAt": payload["generatedAt"], "repo": REPO, "rows": rows}, f, ensure_ascii=False, separators=(",", ":"))
+    with open(os.path.join(out_dir, "results.csv"), "w", encoding="utf-8", newline="") as f:
+        f.write(results_csv(rows))
     n = sum(len(s["games"]) for s in payload["slate"]["sports"].values())
     print(f"Wrote {out_dir}: slate {payload['slate']['date']} ({n} games), {len(payload['myPicks'])} of your picks on it.")
 

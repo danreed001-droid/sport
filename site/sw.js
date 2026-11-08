@@ -2,8 +2,8 @@
 // open without a connection. Network first, always: every page and data.json
 // load fresh when online (picks and lines change all day); the saved copy is
 // only a fallback when the network fails. Only this site's own files are cached.
-const CACHE = 'picksheet-v1';
-const SHELL = ['./', 'index.html', 'grading.html', 'manual.html', 'data.json', 'manifest.webmanifest',
+const CACHE = 'picksheet-v2';
+const SHELL = ['./', 'index.html', 'grading.html', 'manual.html', 'results.html', 'results.json', 'data.json', 'manifest.webmanifest',
                'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
 
 self.addEventListener('install', e => {
