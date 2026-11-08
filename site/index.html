@@ -435,6 +435,7 @@ footer b{color:var(--ink);}
   WHO_BY_KEY.mytotal = {k:'mytotal', label:'Your O/U', short:'You (O/U)', c:'var(--mine)'};
   var DASH = {sports:[], market:'ats', range:'all', from:null, to:null, mlCutoff:false};
   try{ var ds = JSON.parse(localStorage.getItem('picksheet.dash')||'null'); if(ds) DASH = Object.assign(DASH, ds); }catch(e){}
+  DASH.market = 'ats';  // always open on Against the spread; a Moneyline switch lasts until the page reloads
   if(['7','30','year','all','custom'].indexOf(DASH.range) < 0) DASH.range = 'all';
   DASH.mlCutoff = !!DASH.mlCutoff;
   // Sport filter is multi-select: an empty list means every sport. (Older
