@@ -1,0 +1,174 @@
+{
+  "date": "2026-11-08",
+  "weekday": "Sunday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-08T05:18:35Z",
+  "games": [
+    {
+      "espnId": "401909945",
+      "away": "Philadelphia 76ers",
+      "home": "Chicago Bulls",
+      "time": "3:30 PM ET",
+      "homeSpread": 8.5,
+      "awaySpread": -8.5,
+      "homeSpreadOdds": -106.0,
+      "awaySpreadOdds": -114.0,
+      "homeMoneyline": 293.0,
+      "awayMoneyline": -368.0,
+      "statsSpread": 8.5,
+      "statsLine": {
+        "homeSpread": 8.5,
+        "awaySpread": -8.5,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": 293,
+        "awayMoneyline": -368
+      },
+      "totalsLine": 238.5
+    },
+    {
+      "espnId": "401909946",
+      "away": "Los Angeles Lakers",
+      "home": "Detroit Pistons",
+      "time": "6:00 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -185.0,
+      "awayMoneyline": 155.0,
+      "statsSpread": -4.5,
+      "statsLine": {
+        "homeSpread": -4.5,
+        "awaySpread": 4.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -185,
+        "awayMoneyline": 155
+      },
+      "totalsLine": 222.5
+    },
+    {
+      "espnId": "401909947",
+      "away": "Utah Jazz",
+      "home": "Minnesota Timberwolves",
+      "time": "7:00 PM ET",
+      "homeSpread": -11.5,
+      "awaySpread": 11.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": -569.0,
+      "awayMoneyline": 426.0,
+      "statsSpread": -11.5,
+      "statsLine": {
+        "homeSpread": -11.5,
+        "awaySpread": 11.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -569,
+        "awayMoneyline": 426
+      },
+      "totalsLine": 223.5
+    },
+    {
+      "espnId": "401909948",
+      "away": "Brooklyn Nets",
+      "home": "Dallas Mavericks",
+      "time": "7:30 PM ET",
+      "homeSpread": -8.5,
+      "awaySpread": 8.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -352.0,
+      "awayMoneyline": 282.0,
+      "statsSpread": -8.5,
+      "statsLine": {
+        "homeSpread": -8.5,
+        "awaySpread": 8.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -352,
+        "awayMoneyline": 282
+      },
+      "totalsLine": 219.5
+    },
+    {
+      "espnId": "401909949",
+      "away": "Boston Celtics",
+      "home": "Milwaukee Bucks",
+      "time": "8:00 PM ET",
+      "homeSpread": 12.5,
+      "awaySpread": -12.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 472.0,
+      "awayMoneyline": -650.0,
+      "statsSpread": 12.5,
+      "statsLine": {
+        "homeSpread": 12.5,
+        "awaySpread": -12.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 472,
+        "awayMoneyline": -650
+      },
+      "totalsLine": 222.5
+    },
+    {
+      "espnId": "401909950",
+      "away": "New Orleans Pelicans",
+      "home": "LA Clippers",
+      "time": "9:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 101.0,
+      "awayMoneyline": -119.0,
+      "statsSpread": 1.5,
+      "statsLine": {
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 101,
+        "awayMoneyline": -119
+      },
+      "totalsLine": 229.5
+    },
+    {
+      "espnId": "401909951",
+      "away": "Miami Heat",
+      "home": "Sacramento Kings",
+      "time": "9:00 PM ET",
+      "homeSpread": 8.5,
+      "awaySpread": -8.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": 271.0,
+      "awayMoneyline": -337.0,
+      "statsSpread": 8.5,
+      "statsLine": {
+        "homeSpread": 8.5,
+        "awaySpread": -8.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": 271,
+        "awayMoneyline": -337
+      },
+      "statsFavors": "Sacramento Kings",
+      "statsRules": [
+        {
+          "rule": 47,
+          "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
+          "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
+          "detail": "Backing Sacramento Kings: Sacramento Kings lost the last meeting by 13 (Miami Heat 130 @ Sacramento Kings 117, 2026-01-21) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
+        }
+      ],
+      "statsCheck": "Rule 47: Backing Sacramento Kings: Sacramento Kings lost the last meeting by 13 (Miami Heat 130 @ Sacramento Kings 117, 2026-01-21) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
+      "totalsLine": 238.5
+    }
+  ]
+}
