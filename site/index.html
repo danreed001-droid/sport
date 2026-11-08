@@ -833,31 +833,20 @@ footer b{color:var(--ink);}
         }).join('') + '</tbody>' : '';
   }
 
-  // NBA Totals (over/under) record for the NBA Stats card, in the dashboard's sport and date range.
-  function totalsKpi(){
-    if(DASH.sports.length && !sportOn('nba')) return '';
-    var rb = rangeBounds(), w = 0, l = 0, pu = 0, v = 0;
-    (DATA.nbaTotalsPlays||[]).forEach(function(p){
-      if(rb && (p.d < rb[0] || p.d > rb[1])) return;
-      if(p.r==='W') w++; else if(p.r==='L') l++; else if(p.r==='P') pu++;
-      v += p.v||0;
-    });
-    var n = w+l;
-    return '<div class="kpi-stats kpi-tot"><div>NBA Totals<b>'+(n+pu ? w+'-'+l+(pu?'-'+pu:'') : '—')+'</b></div><div>Win %<b>'+(n?pct(w,n):'—')+'</b></div><div>Profit<b class="'+(n+pu?cls(v):'flat')+'">'+(n+pu?money(v):'—')+'</b></div></div>'
-      + '<div class="kpi-note">Over/under picks, $100 at −110 (the same in either market view).</div>';
-  }
-  // Your own over/under picks for the You card, in the dashboard's sport and date range.
-  function myTotalsKpi(list){
-    var w = 0, l = 0, pu = 0, v = 0;
+  // Over/under picks count in the same tile as the model's (or your) side picks:
+  // NBA Totals in NBA Stats, your O/U in You (and any other model's totals
+  // plays, keyed in TOTALS_OF). Same sport/date filters as the rest of the view.
+  var TOTALS_OF = {stats:'totals', mine:'mytotal', nflstats:'nfltotals', ncaabstats:'ncaabtotals'};
+  function addTotals(a, list, who){
+    var t = {n:0, w:0, l:0, p:0, v:0}, k = TOTALS_OF[who];
+    if(!k) return t;
     list.forEach(function(p){
-      if(p.w!=='mytotal' || !p.tr) return;
-      if(p.tr==='W') w++; else if(p.tr==='L') l++; else pu++;
-      v += p.tp||0;
+      if(p.w!==k || !p.tr) return;
+      t.n++; if(p.tr==='W') t.w++; else if(p.tr==='L') t.l++; else t.p++;
+      if(num(p.tp)){ t.v += p.tp; a.profit += p.tp; a.priced++; }
     });
-    var n = w+l;
-    if(!(n+pu)) return '';
-    return '<div class="kpi-stats kpi-tot"><div>Your O/U<b>'+w+'-'+l+(pu?'-'+pu:'')+'</b></div><div>Win %<b>'+(n?pct(w,n):'—')+'</b></div><div>Profit<b class="'+cls(v)+'">'+money(v)+'</b></div></div>'
-      + '<div class="kpi-note">Your over/under picks, $100 at the locked odds (the same in either market view).</div>';
+    a.w += t.w; a.l += t.l; a.p += t.p;
+    return t;
   }
   function renderDash(){
     if(!document.getElementById('dashboard')) return;
@@ -869,13 +858,13 @@ footer b{color:var(--ink);}
     document.getElementById('rangelbl').textContent = rangeLabel() + ' · ' + list.filter(function(p){ return DASH.market==='ats' ? p.a : (p.m && !(DASH.mlCutoff && p.x)); }).length + ' graded plays';
     var ser = seriesFor(list);
     document.getElementById('kpis').innerHTML = WHO.map(function(w, i){
-      var a = summarize(list, w.k), r = roi(a), n = a.w+a.l;
+      var a = summarize(list, w.k), t = addTotals(a, list, w.k), r = roi(a), n = a.w+a.l;
       var note = a.dogs ? '<div class="kpi-note">'+a.dogs+' pick'+(a.dogs===1?'':'s')+' left out of the moneyline (7+ point NFL/college dogs, favorites at −400 or shorter).</div>'
         : (!(n+a.p) ? '<div class="kpi-note">'+(w.k==='mine' ? 'No graded picks in this view yet.' : 'No graded plays in this view.')+'</div>' : '');
       return '<div class="kpi"><div class="kpi-h"><i class="key" style="background:'+w.c+'"></i><b>'+w.label+'</b><span>'+w.role+'</span></div>'
         + '<div class="kpi-main"><div class="kpi-fig '+(a.priced?cls(a.profit):'flat')+'">'+(a.priced?money(a.profit):'—')+'<small>profit '+mk+'</small></div>'+sparkSvg(ser.series[i].prof, w.c)+'</div>'
         + '<div class="kpi-stats"><div>Record<b>'+recText(a)+'</b></div><div>Win %<b>'+(n?pct(a.w,n):'—')+'</b></div><div>ROI<b class="'+(r==null?'flat':cls(r))+'">'+(r==null?'—':(r>0?'+':'')+r+'%')+'</b></div></div>'
-        + note + (w.k==='stats' ? totalsKpi() : '') + (w.k==='mine' ? myTotalsKpi(list) : '') + '</div>';
+        + note + (t.n ? '<div class="kpi-note">Includes '+t.n+' over/under pick'+(t.n===1?'':'s')+' ('+t.w+'-'+t.l+(t.p?'-'+t.p:'')+', '+money(t.v)+') along with the sides '+mk+'.</div>' : '') + '</div>';
     }).join('');
 
     renderAgree(list, mk);
