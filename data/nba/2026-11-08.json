@@ -95,9 +95,9 @@
       "awaySpreadOdds": -110,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 218.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 217.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Detroit Pistons",
       "homeMoneyline": -190,
       "homeNetRtg": 8.83,
@@ -120,14 +120,14 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -103,
-        "awaySpreadOdds": -118,
-        "homeMoneyline": -269,
-        "awayMoneyline": 220
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -264,
+        "awayMoneyline": 217
       },
       "statsSpread": -7.5,
       "time": "6:00 PM ET",
-      "totalsLine": 218.5
+      "totalsLine": 217.5
     },
     {
       "altCategoryTally": "0-2",
@@ -180,14 +180,14 @@
         "Jazz: Jaren Jackson Jr., Jusuf Nurkic, Trey Alexander all out; Lauri Markkanen questionable. Wolves: Anthony Edwards out (knee surgery) despite being #1 in the NBA in NetRtg; Donte DiVincenzo also out"
       ],
       "statsLine": {
-        "homeSpread": -11.5,
-        "awaySpread": 11.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
+        "homeSpread": -12.5,
+        "awaySpread": 12.5,
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -117,
         "homeMoneyline": -650,
         "awayMoneyline": 470
       },
-      "statsSpread": -11.5,
+      "statsSpread": -12.5,
       "time": "7:00 PM ET",
       "totalsLine": 221.5
     },
@@ -220,8 +220,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 222.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
       "home": "Dallas Mavericks",
       "homeMoneyline": -324,
       "homeNetRtg": -2.1,
@@ -244,10 +244,10 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -113,
-        "awaySpreadOdds": -107,
-        "homeMoneyline": -325,
-        "awayMoneyline": 262
+        "homeSpreadOdds": -107,
+        "awaySpreadOdds": -113,
+        "homeMoneyline": -305,
+        "awayMoneyline": 248
       },
       "statsSpread": -7.5,
       "time": "7:30 PM ET",
@@ -282,8 +282,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 221.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Milwaukee Bucks",
       "homeMoneyline": 553,
       "homeNetRtg": -9.4,
@@ -306,10 +306,10 @@
       "statsLine": {
         "homeSpread": 12.5,
         "awaySpread": -12.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -111,
-        "homeMoneyline": 530,
-        "awayMoneyline": -750
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": 527,
+        "awayMoneyline": -740
       },
       "statsSpread": 12.5,
       "time": "8:00 PM ET",
@@ -406,8 +406,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 237.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Sacramento Kings",
       "homeMoneyline": 340,
       "homeNetRtg": -11.96,
