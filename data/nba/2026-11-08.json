@@ -21,15 +21,15 @@
       "statsLine": {
         "homeSpread": 9.5,
         "awaySpread": -9.5,
-        "homeSpreadOdds": -118,
-        "awaySpreadOdds": -103,
-        "homeMoneyline": 319,
-        "awayMoneyline": -405
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": 329,
+        "awayMoneyline": -420
       },
       "totalsLine": 237.5,
       "gameTotal": 237.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909946",
@@ -46,15 +46,15 @@
       "statsLine": {
         "homeSpread": -4.5,
         "awaySpread": 4.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
         "homeMoneyline": -185,
         "awayMoneyline": 155
       },
-      "totalsLine": 222.5,
-      "gameTotal": 222.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -115
+      "totalsLine": 221.5,
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909947",
@@ -98,13 +98,13 @@
         "awaySpread": 7.5,
         "homeSpreadOdds": -117,
         "awaySpreadOdds": -104,
-        "homeMoneyline": -351,
-        "awayMoneyline": 281
+        "homeMoneyline": -324,
+        "awayMoneyline": 261
       },
-      "totalsLine": 220.5,
-      "gameTotal": 220.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112
+      "totalsLine": 222.5,
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114
     },
     {
       "espnId": "401909949",
@@ -117,19 +117,19 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": 472.0,
       "awayMoneyline": -650.0,
-      "statsSpread": 12.5,
+      "statsSpread": 13.5,
       "statsLine": {
-        "homeSpread": 12.5,
-        "awaySpread": -12.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": 552,
-        "awayMoneyline": -790
+        "homeSpread": 13.5,
+        "awaySpread": -13.5,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": 530,
+        "awayMoneyline": -750
       },
       "totalsLine": 221.5,
       "gameTotal": 221.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909950",
@@ -151,10 +151,10 @@
         "homeMoneyline": 103,
         "awayMoneyline": -121
       },
-      "totalsLine": 228.5,
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
+      "totalsLine": 226.5,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909951",
@@ -167,14 +167,14 @@
       "awaySpreadOdds": -106.0,
       "homeMoneyline": 271.0,
       "awayMoneyline": -337.0,
-      "statsSpread": 8.5,
+      "statsSpread": 10.5,
       "statsLine": {
-        "homeSpread": 8.5,
-        "awaySpread": -8.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 286,
-        "awayMoneyline": -358
+        "homeSpread": 10.5,
+        "awaySpread": -10.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": 346,
+        "awayMoneyline": -446
       },
       "statsFavors": "Sacramento Kings",
       "statsRules": [
@@ -188,8 +188,8 @@
       "statsCheck": "Rule 47: Backing Sacramento Kings: Sacramento Kings lost the last meeting by 13 (Miami Heat 130 @ Sacramento Kings 117, 2026-01-21) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
       "totalsLine": 238.5,
       "gameTotal": 238.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     }
   ]
 }
