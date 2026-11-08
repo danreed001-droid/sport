@@ -175,6 +175,14 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   head/body. The service worker is network-first for this site's own files, so
   pages and data.json are always fresh online and the last copy opens offline;
   bump `CACHE` in sw.js only to clear old caches.
+- Totals models for other sports were tested on 2026-11-08 with the NBA
+  Totals bars (61%+ counted, 55%+ unseen, found on 2022-24) and a game-level
+  shuffle: NCAAB (AP Top 25 games 2018-19 to 2025-26, 3,819 with a total; 22
+  passes vs 18.9 by chance, p=0.34), NFL (2017-2025, 1,780 games; 1 pass vs 3.9,
+  and 12 vs 11.6 with 2021-22 as the finding seasons since ESPN has few 2023
+  totals) and CFB (ranked-team games 2018-2025, 1,313; 10 vs 3.3, p=0.13).
+  None is better than luck, so there are no NFL/NCAA totals models.
+  `TOTALS_OF` in `site/index.html` would fold one into its tile if one is added.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
