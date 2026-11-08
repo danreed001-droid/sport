@@ -966,8 +966,7 @@ footer b{color:var(--ink);}
       return '<div class="kpi"><div class="kpi-h"><i class="key" style="background:'+w.c+'"></i><b>'+w.label+'</b><span>'+w.role+'</span></div>'
         + '<div class="kpi-main"><div class="kpi-fig '+(a.priced?cls(a.profit):'flat')+'">'+(a.priced?money(a.profit):'—')+'<small>profit '+mk+'</small></div>'+sparkSvg(ser.series[i].prof, w.c)+'</div>'
         + '<div class="kpi-stats"><div>Record<b>'+recText(a)+'</b></div><div>Win %<b>'+(n?pct(a.w,n):'—')+'</b></div><div>ROI<b class="'+(r==null?'flat':cls(r))+'">'+(r==null?'—':(r>0?'+':'')+r+'%')+'</b></div></div>'
-        + note + (t.n ? '<div class="kpi-note">Includes '+t.n+' over/under pick'+(t.n===1?'':'s')+' ('+t.w+'-'+t.l+(t.p?'-'+t.p:'')+', '+money(t.v)+'); they count in both the spread and moneyline views, in the charts and the tables too.</div>' : '')
-        + (a.late ? '<div class="kpi-note">'+a.late+' of these '+(a.late===1?'was':'were')+' made after the game had started; the public Results page leaves '+(a.late===1?'it':'them')+' out.</div>' : '') + '</div>';
+        + note + (t.n ? '<div class="kpi-note">Includes '+t.n+' over/under pick'+(t.n===1?'':'s')+' ('+t.w+'-'+t.l+(t.p?'-'+t.p:'')+', '+money(t.v)+'); they count in both the spread and moneyline views, in the charts and the tables too.</div>' : '') + '</div>';
     }).join('');
 
     renderAgree(list, mk);

@@ -243,8 +243,8 @@ Dashboard numbers all come from one calculation: `belongs` / `outcome` / `summar
 in You; `TOTALS_OF`) in the tiles, sparklines, running-profit and win-rate lines,
 by-sport bars and every table, so they can't disagree (2026-11-08: tiles had them,
 charts didn't). The agreement table is side picks only. Plays you made after the
-game started carry `lt`; the You tile says how many are in it, and the public
-Results page leaves them out unless its box is ticked.
+game started carry `lt`; only the public Results page uses it (it leaves them out
+unless its box is ticked). The pick page's You tile doesn't mention them.
 
 Over/under picks: each game's pick row also has Over / Under buttons at the
 game's total. `scripts/slate_totals.py` (every scoring run, and NBA in the
