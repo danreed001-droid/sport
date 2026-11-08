@@ -16,7 +16,10 @@
       "homeSpreadOdds": 100.0,
       "awaySpreadOdds": -120.0,
       "homeMoneyline": 145.0,
-      "awayMoneyline": -175.0
+      "awayMoneyline": -175.0,
+      "gameTotal": 52.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401873040",
@@ -28,7 +31,10 @@
       "homeSpreadOdds": -115.0,
       "awaySpreadOdds": -105.0,
       "homeMoneyline": 190.0,
-      "awayMoneyline": -230.0
+      "awayMoneyline": -230.0,
+      "gameTotal": 51.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401873045",
@@ -40,7 +46,10 @@
       "homeSpreadOdds": -115.0,
       "awaySpreadOdds": -105.0,
       "homeMoneyline": -535.0,
-      "awayMoneyline": 400.0
+      "awayMoneyline": 400.0,
+      "gameTotal": 48.5,
+      "gameTotalOverOdds": -102,
+      "gameTotalUnderOdds": -118
     },
     {
       "espnId": "401873042",
@@ -52,7 +61,10 @@
       "homeSpreadOdds": -108.0,
       "awaySpreadOdds": -112.0,
       "homeMoneyline": 240.0,
-      "awayMoneyline": -298.0
+      "awayMoneyline": -298.0,
+      "gameTotal": 49.5,
+      "gameTotalOverOdds": -122,
+      "gameTotalUnderOdds": 102
     },
     {
       "espnId": "401873039",
@@ -64,7 +76,10 @@
       "homeSpreadOdds": -120.0,
       "awaySpreadOdds": 100.0,
       "homeMoneyline": -170.0,
-      "awayMoneyline": 142.0
+      "awayMoneyline": 142.0,
+      "gameTotal": 42.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401873044",
@@ -86,7 +101,10 @@
           "detail": "Fading New York Giants: won last game (2026-10-25, vs. Houston Texans) as a 9.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100)."
         }
       ],
-      "nflStatsCheck": "Rule 2: Fading New York Giants: won last game (2026-10-25, vs. Houston Texans) as a 9.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100)."
+      "nflStatsCheck": "Rule 2: Fading New York Giants: won last game (2026-10-25, vs. Houston Texans) as a 9.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100).",
+      "gameTotal": 38.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401873043",
@@ -98,7 +116,10 @@
       "homeSpreadOdds": 100.0,
       "awaySpreadOdds": -120.0,
       "homeMoneyline": 195.0,
-      "awayMoneyline": -238.0
+      "awayMoneyline": -238.0,
+      "gameTotal": 47.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401873041",
@@ -110,7 +131,10 @@
       "homeSpreadOdds": 100.0,
       "awaySpreadOdds": -120.0,
       "homeMoneyline": 120.0,
-      "awayMoneyline": -142.0
+      "awayMoneyline": -142.0,
+      "gameTotal": 44.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401873046",
@@ -122,7 +146,10 @@
       "homeSpreadOdds": -112.0,
       "awaySpreadOdds": -108.0,
       "homeMoneyline": 200.0,
-      "awayMoneyline": -245.0
+      "awayMoneyline": -245.0,
+      "gameTotal": 40.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401873049",
@@ -134,7 +161,10 @@
       "homeSpreadOdds": -102.0,
       "awaySpreadOdds": -118.0,
       "homeMoneyline": -175.0,
-      "awayMoneyline": 145.0
+      "awayMoneyline": 145.0,
+      "gameTotal": 44.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401873047",
@@ -146,7 +176,10 @@
       "homeSpreadOdds": -115.0,
       "awaySpreadOdds": -105.0,
       "homeMoneyline": -500.0,
-      "awayMoneyline": 380.0
+      "awayMoneyline": 380.0,
+      "gameTotal": 51.5,
+      "gameTotalOverOdds": -120,
+      "gameTotalUnderOdds": 100
     },
     {
       "espnId": "401873048",
@@ -168,7 +201,10 @@
           "detail": "Fading Arizona Cardinals: won last game (2026-11-01, vs. Dallas Cowboys) as a 7.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100)."
         }
       ],
-      "nflStatsCheck": "Rule 2: Fading Arizona Cardinals: won last game (2026-11-01, vs. Dallas Cowboys) as a 7.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100)."
+      "nflStatsCheck": "Rule 2: Fading Arizona Cardinals: won last game (2026-11-01, vs. Dallas Cowboys) as a 7.5-point underdog (7+) -- teams coming off an upset that big were faded 60.0% of the time ATS in their next game, 2017-2025 (n=100).",
+      "gameTotal": 39.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401873050",
@@ -190,7 +226,10 @@
           "detail": "Backing Tampa Bay Buccaneers: Bucky Irving ran for 170 yards last game (150+), and Tampa Bay Buccaneers is a 6-point underdog now -- teams in this spot covered 66.7% ATS, 2017-2025 (n=39, small sample)."
         }
       ],
-      "nflStatsCheck": "Rule 3: Backing Tampa Bay Buccaneers: Bucky Irving ran for 170 yards last game (150+), and Tampa Bay Buccaneers is a 6-point underdog now -- teams in this spot covered 66.7% ATS, 2017-2025 (n=39, small sample)."
+      "nflStatsCheck": "Rule 3: Backing Tampa Bay Buccaneers: Bucky Irving ran for 170 yards last game (150+), and Tampa Bay Buccaneers is a 6-point underdog now -- teams in this spot covered 66.7% ATS, 2017-2025 (n=39, small sample).",
+      "gameTotal": 47.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     }
   ]
 }

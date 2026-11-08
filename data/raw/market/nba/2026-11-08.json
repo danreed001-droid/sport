@@ -1,7 +1,7 @@
 {
  "date": "2026-11-08",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-08T06:05:54+00:00",
+ "fetchedAt": "2026-11-08T06:42:39+00:00",
  "games": [
   {
    "away": "Philadelphia 76ers",
@@ -11,17 +11,17 @@
    "spread": {
     "home": 9.5,
     "open": 8.5,
-    "tix_home": 9,
+    "tix_home": 10,
     "money_home": 6
    },
    "total": {
     "now": 238.5,
     "open": 239.5,
-    "tix_over": 42,
-    "money_over": 37
+    "tix_over": 40,
+    "money_over": 34
    },
    "moneyline": {
-    "home": 300,
+    "home": 325,
     "away": -400
    },
    "rlmFavorite": null
@@ -61,14 +61,14 @@
     "money_home": 70
    },
    "total": {
-    "now": 224,
+    "now": 224.5,
     "open": 224.5,
     "tix_over": 62,
     "money_over": 76
    },
    "moneyline": {
     "home": -600,
-    "away": 426
+    "away": 450
    },
    "rlmFavorite": null
   },
@@ -90,8 +90,8 @@
     "money_over": 82
    },
    "moneyline": {
-    "home": -375,
-    "away": 300
+    "home": -400,
+    "away": 310
    },
    "rlmFavorite": null
   },
@@ -114,7 +114,7 @@
    },
    "moneyline": {
     "home": 525,
-    "away": -700
+    "away": -750
    },
    "rlmFavorite": null
   },
@@ -153,14 +153,14 @@
     "money_home": 26
    },
    "total": {
-    "now": 229.5,
+    "now": 228.5,
     "open": 232.5,
     "tix_over": 57,
     "money_over": 57
    },
    "moneyline": {
     "home": -102,
-    "away": -119
+    "away": -118
    },
    "rlmFavorite": null
   }

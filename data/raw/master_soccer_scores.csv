@@ -50,7 +50,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401882462,2026-11-08,Scheduled,Madrid CFF,0,-,Barcelona,0,-,-,-,10:00 AM
 401878339,2026-11-08,Scheduled,Falkirk,0,-,Heart of Midlothian,0,-,-,-,10:00 AM
 401878343,2026-11-08,Scheduled,Kilmarnock,0,-,Celtic,0,-,-,-,11:00 AM
-401892139,2026-11-08,Scheduled,Melbourne Victory,0,-,Adelaide United FC,0,-,-,-,1:00 AM
+401892139,2026-11-08,34',Melbourne Victory,0,-,Adelaide United FC,0,-,-,-,1:00 AM
 401885400,2026-11-08,Postponed,Maritimo,0,-,Estoril,0,-,-,-,10:30 AM
 401885396,2026-11-08,Scheduled,Gil Vicente,0,-,Santa Clara,0,-,-,-,10:30 AM
 401885394,2026-11-08,Scheduled,FC Porto,0,-,Vitória de Guimaraes,0,-,-,-,1:00 PM
@@ -155,9 +155,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401930007,2026-11-08,Scheduled,Real Potosí,0,-,Nacional Potosí,0,-,-,-,2:00 PM
 401930006,2026-11-08,Scheduled,The Strongest,0,-,Bolívar,0,-,-,-,4:15 PM
 401930005,2026-11-08,Scheduled,Oriente Petrolero,0,-,Blooming,0,-,-,-,6:30 PM
-401877559,2026-11-08,HT,Sanfrecce Hiroshima,0,-,Machida Zelvia,0,-,-,-,12:00 AM
-401877554,2026-11-08,47',Urawa Red Diamonds,0,-,Vissel Kobe,1,-,-,-,12:00 AM
-401877555,2026-11-08,4',Cerezo Osaka,0,-,Gamba Osaka,0,-,-,-,1:00 AM
+401877559,2026-11-08,75',Sanfrecce Hiroshima,0,-,Machida Zelvia,0,-,-,-,12:00 AM
+401877554,2026-11-08,84',Urawa Red Diamonds,1,-,Vissel Kobe,1,-,-,-,12:00 AM
+401877555,2026-11-08,40',Cerezo Osaka,1,-,Gamba Osaka,0,-,-,-,1:00 AM
 401877577,2026-11-08,Scheduled,Mito Hollyhock,0,-,JEF United Ichihara-Chiba,0,-,-,-,3:00 AM
 401926711,2026-11-08,Scheduled,Génesis PN,0,-,Platense,0,-,-,-,4:00 PM
 401926710,2026-11-08,Scheduled,Real España,0,-,CA Independiente Siguatepeque,0,-,-,-,6:15 PM

@@ -17,7 +17,10 @@
       "awaySpreadOdds": -115,
       "homeMoneyline": -50000,
       "awayMoneyline": 4000,
-      "total": 151.5
+      "total": 151.5,
+      "gameTotal": 151.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401920424",
@@ -31,7 +34,10 @@
       "homeMoneyline": -155,
       "awayMoneyline": 130,
       "total": 162.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 162.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401918053",
@@ -45,7 +51,10 @@
       "homeMoneyline": 1700,
       "awayMoneyline": -4500,
       "total": 145.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 145.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401919029",
@@ -59,7 +68,10 @@
       "homeMoneyline": 220,
       "awayMoneyline": -270,
       "total": 156.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 156.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     }
   ]
 }
