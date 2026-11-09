@@ -3,23 +3,8 @@
   "weekday": "Monday",
   "sport": "nfl",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-09T07:12:43Z",
+  "generatedAt": "2026-11-09T13:26:26Z",
   "games": [
-    {
-      "espnId": "401873051",
-      "away": "Buffalo Bills",
-      "home": "Minnesota Vikings",
-      "time": "8:15 PM ET",
-      "homeSpread": 3.0,
-      "awaySpread": -3.0,
-      "homeSpreadOdds": 100.0,
-      "awaySpreadOdds": -120.0,
-      "homeMoneyline": 145.0,
-      "awayMoneyline": -175.0,
-      "gameTotal": 43.5,
-      "gameTotalOverOdds": -118,
-      "gameTotalUnderOdds": -102
-    }
+    {"altBlowoutCheck":"Bills off a 36-10 (+26) win over BAL - blowout-win check applies to Buffalo. Sub-conditions: (1) padded win - NO (turnover margin only +1, not +2; led just 16-7/9pts at half, already more than a one-score cushion, not a close-then-pulled-away game); (2) market bought in - YES (Buffalo favored -3 to -3.5 vs Minnesota, clears the 3-point bar); (3) opponent takes it away - YES (Minnesota ranks #1 in points allowed at 13.3 PPG and #1 in pass defense); (4) run-heavy win - YES (41 rush attempts in the blowout, clears 33+); (5) turnover-prone - NO/unconfirmed (5 INT in 7 games this season, but no verified multi-giveaway-loss pattern found). 3 of 5 hit - regression flag ON: +6 to Minnesota Vikings.","altBlowoutFavors":"Minnesota Vikings","altCategoryTally":"Buffalo 4 - Minnesota 0 on the 9-category vote, +0 trend check, +6 blowout-regression to Minnesota = net Minnesota +2 (combined, within the 3-pt pass band)","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Buffalo (blended PD/g +7.13 vs Minnesota's +3.68; Minnesota's number was built mostly under Kyler Murray, who started 6 of Minnesota's first 8 games this season, not tonight's starter Carson Wentz - WEIGHTED-RULE discount applies to Minnesota's side, but Buffalo's own +7.13 is unaffected by any QB change and is independently strong enough to carry the category alone).","Injuries/Lineup: favors Buffalo (Minnesota's named 2026 starting QB Kyler Murray is OUT with a hamstring strain; backup Carson Wentz starts in his place. Single premium-position injury, not a multi-starter cluster, so this stays a normal 1-vote category).","Form: favors Buffalo (Vikings' 2-1 last-3-game record (L vs DET, W vs IND, W at NO) was built entirely under Kyler Murray, not Wentz - WEIGHTED-RULE discount applies, so it doesn't carry for Minnesota; Bills' 3-0 last-3 under Josh Allen, unaffected by any QB change, is clearly strong enough to carry the category alone).","Market: favors Buffalo (line moved from Minnesota as ~2.5-3pt underdogs pregame-week to Bills -3.5/Vikings +3.5 and the total dropped from ~46.5-47.5 to 44.5 once Kyler Murray was ruled out - a standard move toward Buffalo, no reverse line movement detected)."],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Bills prior game (Wk9 home vs BAL, Nov 1, won 36-10): 426 total net yards, 21/34 passing (280 yds, 8.24 YPA), 41 rush att for 146 yds, overall YPP 5.68 - no pattern matched (Pattern B's YPA clears 7.5 but YPP 5.68 exceeds the 5.15 ceiling; Patterns C/D need pass att >=41 or a <=1.0 rush/pass ratio, neither met at 34 pass att / 41 rush att). Vikings prior game (Wk9 at DET, Nov 1, lost 15-19): 266 total net yards (185 passing on 17/29, 6.38 YPA; 81 rushing on 18 att) - no pattern matched (4-pt margin is under the 11-pt floor for Pattern A; YPA below 7.5 for Pattern B; 18 rush attempts well under 34 for Patterns C/D). Net trend-check swing: 0.","altTrendFavors":null,"away":"Buffalo Bills","awayMoneyline":-163,"awayPDpg":7.13,"awayQB":"Josh Allen","awayQBRating":101.1,"awayScore":null,"awaySpread":-3.5,"awaySpreadOdds":113,"awayYPP":6.1,"confidence":"skip","correct":null,"gameTotal":43.5,"gameTotalOverOdds":-118,"gameTotalUnderOdds":-102,"home":"Minnesota Vikings","homeMoneyline":160,"homePDpg":3.68,"homeQB":"Carson Wentz","homeQBRating":106.4,"homeScore":null,"homeSpread":3.5,"homeSpreadOdds":-115,"homeYPP":5.2,"offGap":54.8,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"qb-veto","skipped":true,"statLines":["PD/g (blend) +7.13 vs +3.68","Yds/play 6.1 vs 5.2 · rank 4th vs T-21st of 32 (54.8-pt percentile gap)","QB rating 101.1 vs 106.4 (Allen, full 7-game season vs Wentz, 2-game sample filling in for injured Kyler Murray)"],"time":"8:15 PM ET"}
   ]
 }
