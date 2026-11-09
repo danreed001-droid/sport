@@ -306,10 +306,10 @@
       "statsLine": {
         "homeSpread": 13.5,
         "awaySpread": -13.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
-        "homeMoneyline": 527,
-        "awayMoneyline": -740
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 580,
+        "awayMoneyline": -840
       },
       "statsSpread": 13.5,
       "time": "8:00 PM ET",
@@ -405,9 +405,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 237.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113,
+      "gameTotal": 236.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -115,
       "home": "Sacramento Kings",
       "homeMoneyline": 340,
       "homeNetRtg": -11.96,
@@ -430,12 +430,12 @@
       "statsCheck": "Rule 47: Backing Sacramento Kings: Sacramento Kings lost the last meeting by 13 (Miami Heat 130 @ Sacramento Kings 117, 2026-01-21) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
       "statsFavors": "Sacramento Kings",
       "statsLine": {
-        "homeSpread": 9.5,
-        "awaySpread": -9.5,
-        "homeSpreadOdds": -103,
-        "awaySpreadOdds": -117,
-        "homeMoneyline": 346,
-        "awayMoneyline": -446
+        "homeSpread": 11.5,
+        "awaySpread": -11.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": 394,
+        "awayMoneyline": -518
       },
       "statsRules": [
         {
@@ -445,9 +445,9 @@
           "detail": "Backing Sacramento Kings: Sacramento Kings lost the last meeting by 13 (Miami Heat 130 @ Sacramento Kings 117, 2026-01-21) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
         }
       ],
-      "statsSpread": 9.5,
+      "statsSpread": 11.5,
       "time": "9:00 PM ET",
-      "totalsLine": 237.5
+      "totalsLine": 236.5
     }
   ]
 }
