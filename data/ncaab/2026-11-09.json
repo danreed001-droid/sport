@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-09",
+  "weekday": "Monday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-09T07:12:55Z",
+  "games": [
+    {
+      "espnId": "401920686",
+      "away": "Wagner Seahawks",
+      "home": "UConn Huskies",
+      "time": "7:00 PM ET",
+      "homeSpread": -37.5,
+      "awaySpread": 37.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "total": 140.5
+    },
+    {
+      "espnId": "401906865",
+      "away": "Grambling Tigers",
+      "home": "Texas Longhorns",
+      "time": "7:00 PM ET",
+      "homeSpread": -35.5,
+      "awaySpread": 35.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 152.5
+    },
+    {
+      "espnId": "401906849",
+      "away": "Radford Highlanders",
+      "home": "Tennessee Volunteers",
+      "time": "7:00 PM ET",
+      "homeSpread": -28.5,
+      "awaySpread": 28.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -50000,
+      "awayMoneyline": 4000,
+      "total": 152.5
+    },
+    {
+      "espnId": "401921720",
+      "away": "North Florida Ospreys",
+      "home": "Miami Hurricanes",
+      "time": "7:00 PM ET",
+      "homeSpread": -34.5,
+      "awaySpread": 34.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "total": 162.5
+    },
+    {
+      "espnId": "401906759",
+      "away": "Oakland Golden Grizzlies",
+      "home": "Alabama Crimson Tide",
+      "time": "7:30 PM ET",
+      "homeSpread": -32.5,
+      "awaySpread": 32.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -100000,
+      "awayMoneyline": 5000,
+      "total": 171.5
+    }
+  ]
+}

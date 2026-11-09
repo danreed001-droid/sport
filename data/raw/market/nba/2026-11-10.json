@@ -1,7 +1,7 @@
 {
  "date": "2026-11-10",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-09T05:29:43+00:00",
+ "fetchedAt": "2026-11-09T07:12:40+00:00",
  "games": [
   {
    "away": "Milwaukee Bucks",
@@ -35,13 +35,13 @@
     "home": -1.5,
     "open": -1.5,
     "tix_home": 62,
-    "money_home": 69
+    "money_home": 68
    },
    "total": {
     "now": 215.5,
     "open": 216.5,
-    "tix_over": 86,
-    "money_over": 85
+    "tix_over": 87,
+    "money_over": 92
    },
    "moneyline": {
     "home": -112,

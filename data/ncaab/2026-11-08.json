@@ -2,7 +2,7 @@
   "date": "2026-11-08",
   "weekday": "Sunday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-08T16:28:53Z",
   "games": [
     {
@@ -28,7 +28,7 @@
       "awayMoneyline": 4000,
       "awayPDpg": null,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 65.0,
       "awaySpread": 29.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -40,7 +40,7 @@
       "homeMoneyline": -50000,
       "homePDpg": 15,
       "homeRank": 13,
-      "homeScore": null,
+      "homeScore": 104.0,
       "homeSpread": -29.5,
       "homeSpreadOdds": -110,
       "offGap": null,
@@ -80,7 +80,7 @@
       "awayMoneyline": 130,
       "awayPDpg": 45,
       "awayRank": 12,
-      "awayScore": null,
+      "awayScore": 72.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -92,7 +92,7 @@
       "homeMoneyline": -155,
       "homePDpg": 27,
       "homeRank": 9,
-      "homeScore": null,
+      "homeScore": 91.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -108,
       "offGap": 7.17,
@@ -132,7 +132,7 @@
       "awayMoneyline": -4500,
       "awayPDpg": 39,
       "awayRank": 10,
-      "awayScore": null,
+      "awayScore": 86.0,
       "awaySpread": -19.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -144,7 +144,7 @@
       "homeMoneyline": 1700,
       "homePDpg": 21.5,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 68.0,
       "homeSpread": 19.5,
       "homeSpreadOdds": -110,
       "offGap": 25.07,
@@ -184,7 +184,7 @@
       "awayMoneyline": -270,
       "awayPDpg": 32,
       "awayRank": 21,
-      "awayScore": null,
+      "awayScore": 93.0,
       "awaySpread": -6.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -196,7 +196,7 @@
       "homeMoneyline": 220,
       "homePDpg": 12,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 86.0,
       "homeSpread": 6.5,
       "homeSpreadOdds": -110,
       "offGap": 9.37,
@@ -213,5 +213,6 @@
       ],
       "time": "11:00 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-09T07:13:02.465421+00:00"
 }

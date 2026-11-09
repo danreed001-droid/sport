@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-09",
+  "weekday": "Monday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-09T07:12:43Z",
+  "games": [
+    {
+      "espnId": "401873051",
+      "away": "Buffalo Bills",
+      "home": "Minnesota Vikings",
+      "time": "8:15 PM ET",
+      "homeSpread": 3.0,
+      "awaySpread": -3.0,
+      "homeSpreadOdds": 100.0,
+      "awaySpreadOdds": -120.0,
+      "homeMoneyline": 145.0,
+      "awayMoneyline": -175.0
+    }
+  ]
+}
