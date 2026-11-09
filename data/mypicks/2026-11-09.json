@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-09",
+  "picks": {
+    "nfl-2026-11-09-buffalo-bills-minnesota-vikings-8-15-pm-et": {
+      "sport": "nfl",
+      "away": "Buffalo Bills",
+      "home": "Minnesota Vikings",
+      "time": "8:15 PM ET",
+      "side": "away",
+      "team": "Buffalo Bills",
+      "spread": -0.5,
+      "spreadOdds": -141,
+      "moneyline": -163,
+      "submittedAt": "2026-11-09T23:52:09+00:00",
+      "issue": 23,
+      "alt": true,
+      "posted": {
+        "spread": -3.5,
+        "spreadOdds": 113
+      }
+    }
+  },
+  "scores": {
+    "nba-2026-11-09-cleveland-cavaliers-charlotte-hornets-7-00-pm-et": "NNNhNNNaN",
+    "nba-2026-11-09-denver-nuggets-houston-rockets-8-30-pm-et": "NNNaNNNhN",
+    "nba-2026-11-09-indiana-pacers-dallas-mavericks-8-00-pm-et": "NaNhNNNNN",
+    "nba-2026-11-09-los-angeles-lakers-atlanta-hawks-7-00-pm-et": "NhhaNNNNN",
+    "nba-2026-11-09-memphis-grizzlies-toronto-raptors-7-30-pm-et": "NNNNNNNhN",
+    "nba-2026-11-09-new-orleans-pelicans-golden-state-warriors-10-00-pm-et": "NhhNNNNaN",
+    "nba-2026-11-09-san-antonio-spurs-phoenix-suns-9-00-pm-et": "NNhaNNNNN",
+    "nba-2026-11-09-washington-wizards-detroit-pistons-7-00-pm-et": "NaNhNNNNN",
+    "nfl-2026-11-09-buffalo-bills-minnesota-vikings-8-15-pm-et": "NaNa"
+  },
+  "totals": {}
+}
