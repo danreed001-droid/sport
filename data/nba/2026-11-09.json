@@ -32,8 +32,8 @@
       "confidence": null,
       "correct": null,
       "gameTotal": 236.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotalOverOdds": -114,
+      "gameTotalUnderOdds": -106,
       "home": "Atlanta Hawks",
       "homeMoneyline": 117,
       "homeScore": null,
@@ -53,10 +53,10 @@
       "statsLine": {
         "homeSpread": -1.5,
         "awaySpread": 1.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": -125,
-        "awayMoneyline": 106
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -120,
+        "awayMoneyline": 102
       },
       "statsSpread": -1.5,
       "time": "7:00 PM ET",
@@ -88,9 +88,9 @@
       "awaySpreadOdds": -105,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 214.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 215.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Charlotte Hornets",
       "homeMoneyline": 284,
       "homeScore": null,
@@ -117,7 +117,7 @@
       },
       "statsSpread": 8.5,
       "time": "7:00 PM ET",
-      "totalsLine": 214.5
+      "totalsLine": 215.5
     },
     {
       "altCategoryTally": "1-4",
@@ -145,9 +145,9 @@
       "awaySpreadOdds": -103,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 218.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 219.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Detroit Pistons",
       "homeMoneyline": -468,
       "homeScore": null,
@@ -167,14 +167,14 @@
       "statsLine": {
         "homeSpread": -10.5,
         "awaySpread": 10.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
         "homeMoneyline": -518,
         "awayMoneyline": 394
       },
       "statsSpread": -10.5,
       "time": "7:00 PM ET",
-      "totalsLine": 218.5
+      "totalsLine": 219.5
     },
     {
       "altCategoryTally": "0-3",
@@ -226,10 +226,10 @@
       "statsLine": {
         "homeSpread": -2.5,
         "awaySpread": 2.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -147,
-        "awayMoneyline": 124
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": -135,
+        "awayMoneyline": 114
       },
       "statsRules": [
         {
@@ -276,8 +276,8 @@
       "confidence": null,
       "correct": null,
       "gameTotal": 226.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotalOverOdds": -109,
+      "gameTotalUnderOdds": -111,
       "home": "Dallas Mavericks",
       "homeMoneyline": -161,
       "homeScore": null,
@@ -298,12 +298,12 @@
       "statsCheck": "Rule 45: Backing Indiana Pacers: Indiana Pacers lost the last meeting by 16 (Dallas Mavericks 121 @ Indiana Pacers 105, 2026-10-23) as the favorite, its 3 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16.",
       "statsFavors": "Indiana Pacers",
       "statsLine": {
-        "homeSpread": -3.5,
-        "awaySpread": 3.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -161,
-        "awayMoneyline": 136
+        "homeSpread": -4.5,
+        "awaySpread": 4.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": -170,
+        "awayMoneyline": 143
       },
       "statsRules": [
         {
@@ -313,7 +313,7 @@
           "detail": "Backing Indiana Pacers: Indiana Pacers lost the last meeting by 16 (Dallas Mavericks 121 @ Indiana Pacers 105, 2026-10-23) as the favorite, its 3 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16."
         }
       ],
-      "statsSpread": -3.5,
+      "statsSpread": -4.5,
       "time": "8:00 PM ET",
       "totalsLine": 226.5
     },
@@ -343,9 +343,9 @@
       "awaySpreadOdds": -105,
       "confidence": null,
       "correct": null,
-      "gameTotal": 219.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
       "home": "Houston Rockets",
       "homeMoneyline": -359,
       "homeScore": null,
@@ -363,27 +363,17 @@
         "Injuries: DEN Cameron Johnson questionable, Strawther/Spencer Jones out; HOU Steven Adams out, Clint Capela questionable",
         "Both teams played an NBA Global Games contest in Mexico City on Nov 7 before this game"
       ],
-      "statsCheck": "Rule 50: Fading Denver Nuggets: 60% of spread bets are on Denver Nuggets at +8.5, but the line has moved from +4.5 toward Houston Rockets since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24).",
-      "statsFavors": "Houston Rockets",
       "statsLine": {
-        "homeSpread": -8.5,
-        "awaySpread": 8.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -344,
-        "awayMoneyline": 276
+        "homeSpread": -4.5,
+        "awaySpread": 4.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": -173,
+        "awayMoneyline": 146
       },
-      "statsRules": [
-        {
-          "rule": 50,
-          "name": "Back the favorite when 60%+ of spread bets are on a 7+ point underdog but the line moved 1-4.5 pts toward the favorite (on trial)",
-          "backtest": "61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)",
-          "detail": "Fading Denver Nuggets: 60% of spread bets are on Denver Nuggets at +8.5, but the line has moved from +4.5 toward Houston Rockets since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)."
-        }
-      ],
-      "statsSpread": -8.5,
+      "statsSpread": -4.5,
       "time": "8:30 PM ET",
-      "totalsLine": 219.5
+      "totalsLine": 223.5
     },
     {
       "altCategoryTally": "3-1",
@@ -468,9 +458,9 @@
       "awaySpreadOdds": -110,
       "confidence": null,
       "correct": null,
-      "gameTotal": 232.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114,
       "home": "Golden State Warriors",
       "homeMoneyline": -378,
       "homeScore": null,
@@ -488,16 +478,16 @@
         "Injuries: NOP Zion Williamson out (hamstring), Yves Missi out; GSW Jimmy Butler out all season (ACL), Porzingis away from team, Moses Moody out"
       ],
       "statsLine": {
-        "homeSpread": -9.5,
-        "awaySpread": 9.5,
-        "homeSpreadOdds": -102,
-        "awaySpreadOdds": -118,
-        "homeMoneyline": -382,
-        "awayMoneyline": 303
+        "homeSpread": -11.5,
+        "awaySpread": 11.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -569,
+        "awayMoneyline": 426
       },
-      "statsSpread": -9.5,
+      "statsSpread": -11.5,
       "time": "10:00 PM ET",
-      "totalsLine": 232.5
+      "totalsLine": 229.5
     }
   ]
 }
