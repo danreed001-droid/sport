@@ -17,19 +17,19 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": 117.0,
       "awayMoneyline": -138.0,
-      "statsSpread": 2.5,
+      "statsSpread": 1.5,
       "statsLine": {
-        "homeSpread": 2.5,
-        "awaySpread": -2.5,
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
         "homeSpreadOdds": -105,
         "awaySpreadOdds": -115,
-        "homeMoneyline": 117,
-        "awayMoneyline": -139
+        "homeMoneyline": 105,
+        "awayMoneyline": -124
       },
-      "totalsLine": 235.5,
-      "gameTotal": 235.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "totalsLine": 237.5,
+      "gameTotal": 237.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909953",
@@ -42,18 +42,18 @@
       "awaySpreadOdds": -105.0,
       "homeMoneyline": 284.0,
       "awayMoneyline": -356.0,
-      "statsSpread": 8.5,
+      "statsSpread": 9.5,
       "statsLine": {
-        "homeSpread": 8.5,
-        "awaySpread": -8.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 284,
-        "awayMoneyline": -356
+        "homeSpread": 9.5,
+        "awaySpread": -9.5,
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": 296,
+        "awayMoneyline": -373
       },
       "totalsLine": 214.5,
       "gameTotal": 214.5,
-      "gameTotalOverOdds": -111,
+      "gameTotalOverOdds": -112,
       "gameTotalUnderOdds": -108
     },
     {
@@ -71,15 +71,15 @@
       "statsLine": {
         "homeSpread": -10.5,
         "awaySpread": 10.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
-        "homeMoneyline": -468,
-        "awayMoneyline": 361
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -490,
+        "awayMoneyline": 376
       },
       "totalsLine": 218.5,
       "gameTotal": 218.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909955",
@@ -117,10 +117,10 @@
         }
       ],
       "statsCheck": "Rule 36: Backing Memphis Grizzlies: lost by 31 at home last game (97-128 vs Oklahoma City Thunder) as a +4.5; now on the road vs. a worse-record team, rested -- 64.9% ATS, 48-26 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-8. Rule 37: Backing Memphis Grizzlies: lost by 31 at home last game (97-128 vs Oklahoma City Thunder) as a +4.5; now on the road vs. a worse-record team, rested -- 64.6% ATS, 42-23 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 12-6.",
-      "totalsLine": 230.5,
-      "gameTotal": 230.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112
+      "totalsLine": 231.5,
+      "gameTotal": 231.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909956",
@@ -133,14 +133,14 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -169.0,
       "awayMoneyline": 142.0,
-      "statsSpread": -3.5,
+      "statsSpread": -2.5,
       "statsLine": {
-        "homeSpread": -3.5,
-        "awaySpread": 3.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
-        "homeMoneyline": -169,
-        "awayMoneyline": 142
+        "homeSpread": -2.5,
+        "awaySpread": 2.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -148,
+        "awayMoneyline": 124
       },
       "statsFavors": "Indiana Pacers",
       "statsRules": [
@@ -152,10 +152,10 @@
         }
       ],
       "statsCheck": "Rule 45: Backing Indiana Pacers: Indiana Pacers lost the last meeting by 16 (Dallas Mavericks 121 @ Indiana Pacers 105, 2026-10-23) as the favorite, its 3 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16.",
-      "totalsLine": 222.5,
-      "gameTotal": 222.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "totalsLine": 223.5,
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401909957",
@@ -183,14 +183,14 @@
           "rule": 50,
           "name": "Back the favorite when 60%+ of spread bets are on a 7+ point underdog but the line moved 1-4.5 pts toward the favorite (on trial)",
           "backtest": "61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)",
-          "detail": "Fading Denver Nuggets: 69% of spread bets are on Denver Nuggets at +8.5, but the line has moved from +4.5 toward Houston Rockets since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)."
+          "detail": "Fading Denver Nuggets: 64% of spread bets are on Denver Nuggets at +8.5, but the line has moved from +4.5 toward Houston Rockets since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)."
         }
       ],
-      "statsCheck": "Rule 50: Fading Denver Nuggets: 69% of spread bets are on Denver Nuggets at +8.5, but the line has moved from +4.5 toward Houston Rockets since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24).",
+      "statsCheck": "Rule 50: Fading Denver Nuggets: 64% of spread bets are on Denver Nuggets at +8.5, but the line has moved from +4.5 toward Houston Rockets since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24).",
       "totalsLine": 217.5,
       "gameTotal": 217.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -106
     },
     {
       "espnId": "401909958",
@@ -212,10 +212,10 @@
         "homeMoneyline": 282,
         "awayMoneyline": -352
       },
-      "totalsLine": 228.5,
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112
+      "totalsLine": 227.5,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909959",
@@ -228,19 +228,19 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -378.0,
       "awayMoneyline": 300.0,
-      "statsSpread": -8.5,
+      "statsSpread": -9.5,
       "statsLine": {
-        "homeSpread": -8.5,
-        "awaySpread": 8.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
-        "homeMoneyline": -378,
-        "awayMoneyline": 300
+        "homeSpread": -9.5,
+        "awaySpread": 9.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -395,
+        "awayMoneyline": 312
       },
       "totalsLine": 231.5,
       "gameTotal": 231.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     }
   ]
 }
