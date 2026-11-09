@@ -1,0 +1,145 @@
+{
+ "date": "2026-11-10",
+ "source": "Action Network public feed (consensus = book 15, opener = book 30)",
+ "fetchedAt": "2026-11-09T05:29:43+00:00",
+ "games": [
+  {
+   "away": "Milwaukee Bucks",
+   "home": "New York Knicks",
+   "start": "2026-11-11T00:30:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Boston Celtics",
+   "home": "Philadelphia 76ers",
+   "start": "2026-11-11T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": -1.5,
+    "open": -1.5,
+    "tix_home": 62,
+    "money_home": 69
+   },
+   "total": {
+    "now": 215.5,
+    "open": 216.5,
+    "tix_over": 86,
+    "money_over": 85
+   },
+   "moneyline": {
+    "home": -112,
+    "away": -107
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Miami Heat",
+   "home": "Utah Jazz",
+   "start": "2026-11-11T02:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Los Angeles Clippers",
+   "home": "Phoenix Suns",
+   "start": "2026-11-11T02:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Orlando Magic",
+   "home": "Sacramento Kings",
+   "start": "2026-11-11T03:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Oklahoma City Thunder",
+   "home": "Portland Trail Blazers",
+   "start": "2026-11-11T04:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  }
+ ]
+}
