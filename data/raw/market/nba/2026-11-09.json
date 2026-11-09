@@ -1,7 +1,7 @@
 {
  "date": "2026-11-09",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-09T00:40:22+00:00",
+ "fetchedAt": "2026-11-09T02:41:18+00:00",
  "games": [
   {
    "away": "Los Angeles Lakers",
@@ -32,20 +32,20 @@
    "start": "2026-11-10T00:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": 8.5,
+    "open": 7.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 216.5,
+    "open": 217.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": 240,
+    "away": -300
    },
    "rlmFavorite": null
   },
@@ -55,20 +55,20 @@
    "start": "2026-11-10T00:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": -10.5,
+    "open": -10.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 218.5,
+    "open": 220.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": -475,
+    "away": 350
    },
    "rlmFavorite": null
   },
@@ -78,20 +78,20 @@
    "start": "2026-11-10T00:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": -3,
+    "open": -2.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 228.5,
+    "open": 228.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": -160,
+    "away": 135
    },
    "rlmFavorite": null
   },
@@ -126,17 +126,17 @@
    "spread": {
     "home": -8.5,
     "open": -4.5,
-    "tix_home": 35,
-    "money_home": 54
+    "tix_home": 28,
+    "money_home": 37
    },
    "total": {
-    "now": 217,
+    "now": 217.5,
     "open": 222.5,
-    "tix_over": 84,
-    "money_over": 62
+    "tix_over": 83,
+    "money_over": 74
    },
    "moneyline": {
-    "home": -320,
+    "home": -325,
     "away": 260
    },
    "rlmFavorite": "Houston Rockets"
@@ -149,18 +149,18 @@
    "spread": {
     "home": 8.5,
     "open": 7.5,
-    "tix_home": 19,
-    "money_home": 19
+    "tix_home": 21,
+    "money_home": 18
    },
    "total": {
     "now": 226.5,
     "open": 225.5,
     "tix_over": 79,
-    "money_over": 77
+    "money_over": 83
    },
    "moneyline": {
-    "home": 240,
-    "away": -300
+    "home": 260,
+    "away": -325
    },
    "rlmFavorite": null
   },
