@@ -2,7 +2,7 @@
   "date": "2026-11-09",
   "weekday": "Monday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-09T16:35:45Z",
   "games": [
     {
@@ -27,7 +27,7 @@
       "away": "Wagner Seahawks",
       "awayMoneyline": null,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 41.0,
       "awaySpread": 37.5,
       "awaySpreadOdds": -105,
       "confidence": null,
@@ -38,7 +38,7 @@
       "home": "UConn Huskies",
       "homeMoneyline": null,
       "homeRank": 4,
-      "homeScore": null,
+      "homeScore": 83.0,
       "homeSpread": -37.5,
       "homeSpreadOdds": -115,
       "offGap": null,
@@ -77,7 +77,7 @@
       "away": "Grambling Tigers",
       "awayMoneyline": null,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 62.0,
       "awaySpread": 35.5,
       "awaySpreadOdds": -110,
       "confidence": null,
@@ -88,7 +88,7 @@
       "home": "Texas Longhorns",
       "homeMoneyline": null,
       "homeRank": 7,
-      "homeScore": null,
+      "homeScore": 93.0,
       "homeSpread": -35.5,
       "homeSpreadOdds": -110,
       "offGap": null,
@@ -108,8 +108,8 @@
     {
       "altCategoryTally": "0-4",
       "altConfidence": "lean",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": false,
       "altPick": "Tennessee Volunteers",
       "altReasons": [
         "Scoring margin: favors Tennessee Volunteers \u2014 blended PD/g +20.1 vs -5.7, no best-player-out trigger for either side.",
@@ -123,11 +123,11 @@
         "Matchup splits: favors Tennessee Volunteers \u2014 a wide efficiency-ranking gap cited in previews (KenPom 21 vs 268, BartTorvik 16 vs 282, EvanMiya 22 vs 255) is a specific, checkable mismatch."
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": -100.0,
       "away": "Radford Highlanders",
       "awayMoneyline": null,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 47.0,
       "awaySpread": 28.5,
       "awaySpreadOdds": -108,
       "confidence": null,
@@ -138,7 +138,7 @@
       "home": "Tennessee Volunteers",
       "homeMoneyline": null,
       "homeRank": 8,
-      "homeScore": null,
+      "homeScore": 70.0,
       "homeSpread": -28.5,
       "homeSpreadOdds": -112,
       "offGap": null,
@@ -177,7 +177,7 @@
       "away": "North Florida Ospreys",
       "awayMoneyline": null,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 51.0,
       "awaySpread": 34.5,
       "awaySpreadOdds": -115,
       "confidence": null,
@@ -188,7 +188,7 @@
       "home": "Miami Hurricanes",
       "homeMoneyline": null,
       "homeRank": 14,
-      "homeScore": null,
+      "homeScore": 89.0,
       "homeSpread": -34.5,
       "homeSpreadOdds": -105,
       "offGap": null,
@@ -208,8 +208,8 @@
     {
       "altCategoryTally": "1-3",
       "altConfidence": "lean",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": true,
       "altPick": "Alabama Crimson Tide",
       "altReasons": [
         "Scoring margin: favors Alabama Crimson Tide \u2014 blended PD/g +13.5 vs -9.05; Amari Allen (questionable) is not clearly Alabama's single best player (Aden Holloway, healthy and available, and Drew Fielder are also central), so no star-out neutralization applies.",
@@ -223,11 +223,11 @@
         "Matchup splits: favors Oakland Golden Grizzlies \u2014 Oakland still has individual scoring punch (Chris Fields Jr. 18/9, Nassim Mashhour 19 points on four 3s in his last game) despite the 0-3 record, a specific counterbalancing fact."
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": 86.96,
       "away": "Oakland Golden Grizzlies",
       "awayMoneyline": null,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 68.0,
       "awaySpread": 32.5,
       "awaySpreadOdds": -105,
       "confidence": null,
@@ -238,7 +238,7 @@
       "home": "Alabama Crimson Tide",
       "homeMoneyline": null,
       "homeRank": 20,
-      "homeScore": null,
+      "homeScore": 109.0,
       "homeSpread": -32.5,
       "homeSpreadOdds": -115,
       "offGap": null,
@@ -255,5 +255,6 @@
       ],
       "time": "7:30 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-10T12:59:38.474038+00:00"
 }

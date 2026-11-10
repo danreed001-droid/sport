@@ -23,10 +23,13 @@
         "awaySpread": 15.5,
         "homeSpreadOdds": -111,
         "awaySpreadOdds": -109,
-        "homeMoneyline": -1100,
-        "awayMoneyline": 700
+        "homeMoneyline": -1080,
+        "awayMoneyline": 690
       },
-      "totalsLine": 219.5
+      "totalsLine": 220.5,
+      "gameTotal": 220.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909961",
@@ -43,12 +46,15 @@
       "statsLine": {
         "homeSpread": 1.5,
         "awaySpread": -1.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 102,
-        "awayMoneyline": -121
+        "homeSpreadOdds": -120,
+        "awaySpreadOdds": -101,
+        "homeMoneyline": -105,
+        "awayMoneyline": -113
       },
-      "totalsLine": 217.5
+      "totalsLine": 217.5,
+      "gameTotal": 217.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401909962",
@@ -61,16 +67,19 @@
       "awaySpreadOdds": -116.0,
       "homeMoneyline": -180.0,
       "awayMoneyline": 151.0,
-      "statsSpread": -4.5,
+      "statsSpread": -3.5,
       "statsLine": {
-        "homeSpread": -4.5,
-        "awaySpread": 4.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -116,
-        "homeMoneyline": -180,
-        "awayMoneyline": 151
+        "homeSpread": -3.5,
+        "awaySpread": 3.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -167,
+        "awayMoneyline": 140
       },
-      "totalsLine": 226.5
+      "totalsLine": 225.5,
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909963",
@@ -87,12 +96,15 @@
       "statsLine": {
         "homeSpread": 9.5,
         "awaySpread": -9.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 331,
-        "awayMoneyline": -423
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": 312,
+        "awayMoneyline": -395
       },
-      "totalsLine": 228.5
+      "totalsLine": 227.5,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909964",
@@ -105,16 +117,19 @@
       "awaySpreadOdds": -108.0,
       "homeMoneyline": 196.0,
       "awayMoneyline": -237.0,
-      "statsSpread": 5.5,
+      "statsSpread": 6.5,
       "statsLine": {
-        "homeSpread": 5.5,
-        "awaySpread": -5.5,
-        "homeSpreadOdds": -112,
-        "awaySpreadOdds": -108,
-        "homeMoneyline": 196,
-        "awayMoneyline": -237
+        "homeSpread": 6.5,
+        "awaySpread": -6.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": 190,
+        "awayMoneyline": -229
       },
-      "totalsLine": 221.5
+      "totalsLine": 222.5,
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909965",
@@ -127,16 +142,19 @@
       "awaySpreadOdds": -105.0,
       "homeMoneyline": 110.0,
       "awayMoneyline": -130.0,
-      "statsSpread": 2.5,
+      "statsSpread": 1.5,
       "statsLine": {
-        "homeSpread": 2.5,
-        "awaySpread": -2.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
         "homeMoneyline": 110,
         "awayMoneyline": -130
       },
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     }
   ]
 }

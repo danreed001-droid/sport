@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-10",
+  "weekday": "Tuesday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-10T12:59:33Z",
+  "games": [
+    {
+      "espnId": "401906771",
+      "away": "Florida Gators",
+      "home": "Florida State Seminoles",
+      "time": "6:00 PM ET",
+      "homeSpread": 9.5,
+      "awaySpread": -9.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": 360,
+      "awayMoneyline": -470,
+      "total": 166.5
+    },
+    {
+      "espnId": "401909564",
+      "away": "Michigan State Spartans",
+      "home": "Duke Blue Devils",
+      "time": "7:00 PM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": -310,
+      "awayMoneyline": 250,
+      "total": 147.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401918987",
+      "away": "Memphis Tigers",
+      "home": "Vanderbilt Commodores",
+      "time": "7:15 PM ET",
+      "homeSpread": -16.5,
+      "awaySpread": 16.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -2100,
+      "awayMoneyline": 1100,
+      "total": 160.5
+    },
+    {
+      "espnId": "401913527",
+      "away": "Illinois Fighting Illini",
+      "home": "Texas Tech Red Raiders",
+      "time": "8:00 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -118,
+      "awaySpreadOdds": -102,
+      "homeMoneyline": 114,
+      "awayMoneyline": -135,
+      "total": 167.5
+    },
+    {
+      "espnId": "401920425",
+      "away": "Bucknell Bison",
+      "home": "Virginia Cavaliers",
+      "time": "9:00 PM ET",
+      "homeSpread": -37.5,
+      "awaySpread": 37.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "total": 148.5
+    },
+    {
+      "espnId": "401909740",
+      "away": "Northern Arizona Lumberjacks",
+      "home": "Arizona Wildcats",
+      "time": "9:00 PM ET",
+      "homeSpread": -36.5,
+      "awaySpread": 36.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "total": 156.5
+    },
+    {
+      "espnId": "401921740",
+      "away": "Queens University Royals",
+      "home": "BYU Cougars",
+      "time": "9:00 PM ET",
+      "homeSpread": -28.5,
+      "awaySpread": 28.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -10000,
+      "awayMoneyline": 3000,
+      "total": 181.5
+    },
+    {
+      "espnId": "401909786",
+      "away": "Kansas Jayhawks",
+      "home": "Kentucky Wildcats",
+      "time": "9:30 PM ET",
+      "homeSpread": 4.5,
+      "awaySpread": -4.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": 164,
+      "awayMoneyline": -198,
+      "total": 155.5,
+      "neutral": true
+    }
+  ]
+}

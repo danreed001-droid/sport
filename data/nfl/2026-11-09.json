@@ -2,7 +2,7 @@
   "date": "2026-11-09",
   "weekday": "Monday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-09T13:26:26Z",
   "games": [
     {
@@ -28,7 +28,7 @@
       "awayPDpg": 7.13,
       "awayQB": "Josh Allen",
       "awayQBRating": 101.1,
-      "awayScore": null,
+      "awayScore": 23.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": 113,
       "awayYPP": 6.1,
@@ -42,7 +42,7 @@
       "homePDpg": 3.68,
       "homeQB": "Carson Wentz",
       "homeQBRating": 106.4,
-      "homeScore": null,
+      "homeScore": 6.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -115,
       "homeYPP": 5.2,
@@ -58,7 +58,16 @@
         "Yds/play 6.1 vs 5.2 \u00b7 rank 4th vs T-21st of 32 (54.8-pt percentile gap)",
         "QB rating 101.1 vs 106.4 (Allen, full 7-game season vs Wentz, 2-game sample filling in for injured Kyler Murray)"
       ],
-      "time": "8:15 PM ET"
+      "time": "8:15 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": false,
+      "altBlowoutReturn": -100.0,
+      "altBlowoutCover": false,
+      "altBlowoutSpreadReturn": -100.0
     }
-  ]
+  ],
+  "scoredAt": "2026-11-10T12:59:35.324146+00:00"
 }
