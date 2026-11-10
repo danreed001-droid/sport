@@ -1,0 +1,142 @@
+{
+  "date": "2026-11-10",
+  "weekday": "Tuesday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-10T06:41:22Z",
+  "games": [
+    {
+      "espnId": "401909960",
+      "away": "Milwaukee Bucks",
+      "home": "New York Knicks",
+      "time": "7:30 PM ET",
+      "homeSpread": -15.5,
+      "awaySpread": 15.5,
+      "homeSpreadOdds": -111.0,
+      "awaySpreadOdds": -109.0,
+      "homeMoneyline": -1100.0,
+      "awayMoneyline": 700.0,
+      "statsSpread": -15.5,
+      "statsLine": {
+        "homeSpread": -15.5,
+        "awaySpread": 15.5,
+        "homeSpreadOdds": -111,
+        "awaySpreadOdds": -109,
+        "homeMoneyline": -1100,
+        "awayMoneyline": 700
+      },
+      "totalsLine": 219.5
+    },
+    {
+      "espnId": "401909961",
+      "away": "Boston Celtics",
+      "home": "Philadelphia 76ers",
+      "time": "8:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 102.0,
+      "awayMoneyline": -121.0,
+      "statsSpread": 1.5,
+      "statsLine": {
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 102,
+        "awayMoneyline": -121
+      },
+      "totalsLine": 217.5
+    },
+    {
+      "espnId": "401909962",
+      "away": "LA Clippers",
+      "home": "Phoenix Suns",
+      "time": "9:00 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -116.0,
+      "homeMoneyline": -180.0,
+      "awayMoneyline": 151.0,
+      "statsSpread": -4.5,
+      "statsLine": {
+        "homeSpread": -4.5,
+        "awaySpread": 4.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": -180,
+        "awayMoneyline": 151
+      },
+      "totalsLine": 226.5
+    },
+    {
+      "espnId": "401909963",
+      "away": "Miami Heat",
+      "home": "Utah Jazz",
+      "time": "9:00 PM ET",
+      "homeSpread": 9.5,
+      "awaySpread": -9.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 331.0,
+      "awayMoneyline": -423.0,
+      "statsSpread": 9.5,
+      "statsLine": {
+        "homeSpread": 9.5,
+        "awaySpread": -9.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 331,
+        "awayMoneyline": -423
+      },
+      "totalsLine": 228.5
+    },
+    {
+      "espnId": "401909964",
+      "away": "Orlando Magic",
+      "home": "Sacramento Kings",
+      "time": "10:00 PM ET",
+      "homeSpread": 5.5,
+      "awaySpread": -5.5,
+      "homeSpreadOdds": -112.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": 196.0,
+      "awayMoneyline": -237.0,
+      "statsSpread": 5.5,
+      "statsLine": {
+        "homeSpread": 5.5,
+        "awaySpread": -5.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": 196,
+        "awayMoneyline": -237
+      },
+      "totalsLine": 221.5
+    },
+    {
+      "espnId": "401909965",
+      "away": "Oklahoma City Thunder",
+      "home": "Portland Trail Blazers",
+      "time": "11:00 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": 110.0,
+      "awayMoneyline": -130.0,
+      "statsSpread": 2.5,
+      "statsLine": {
+        "homeSpread": 2.5,
+        "awaySpread": -2.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": 110,
+        "awayMoneyline": -130
+      },
+      "totalsLine": 226.5
+    }
+  ]
+}
