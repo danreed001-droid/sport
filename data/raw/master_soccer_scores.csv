@@ -1,53 +1,53 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401928519,2026-11-10,Scheduled,UD Logroñés,0,-,Amorebieta,0,-,-,-,2:00 PM
-401928514,2026-11-10,Scheduled,Alavés,0,-,Anaitasuna,0,-,-,-,1:00 PM
-401928516,2026-11-10,Scheduled,Eibar,0,-,CD Pamplona,0,-,-,-,1:00 PM
-401928528,2026-11-10,Scheduled,Real Jaen CF,0,-,Mijas Las Lagunas,0,-,-,-,2:00 PM
-401928550,2026-11-10,Scheduled,Leganés,0,-,Trival Valderas,0,-,-,-,2:00 PM
-401928504,2026-11-10,Scheduled,Valencia,0,-,Tavernes de la Valldigna,0,-,-,-,3:00 PM
-401916991,2026-11-10,Scheduled,Chelsea,0,-,BK Häcken,0,-,-,-,12:45 PM
-401916990,2026-11-10,Scheduled,Paris FC,0,-,Real Madrid,0,-,-,-,12:45 PM
-401916988,2026-11-10,Scheduled,Manchester City,0,-,Internazionale,0,-,-,-,3:00 PM
-401916987,2026-11-10,Scheduled,Bayern Munich,0,-,Paris Saint-Germain,0,-,-,-,3:00 PM
-401916989,2026-11-10,Scheduled,Servette,0,-,Roma,0,-,-,-,3:00 PM
-401933295,2026-11-10,Scheduled,Central African Republic,0,-,Congo,0,-,-,-,7:15 AM
-401933275,2026-11-10,Scheduled,Chad,0,-,Gabon,0,-,-,-,9:30 AM
+401928519,2026-11-10,FT,UD Logroñés,0,-,Amorebieta,1,-,-,-,2:00 PM
+401928514,2026-11-10,FT,Alavés,6,-,Anaitasuna,1,-,-,-,1:00 PM
+401928516,2026-11-10,FT,Eibar,3,-,CD Pamplona,0,-,-,-,1:00 PM
+401928528,2026-11-10,90'+4',Real Jaen CF,2,-,Mijas Las Lagunas,1,-,-,-,2:00 PM
+401928550,2026-11-10,FT,Leganés,1,-,Trival Valderas,0,-,-,-,2:00 PM
+401928504,2026-11-10,HT,Valencia,4,-,Tavernes de la Valldigna,0,-,-,-,3:00 PM
+401916991,2026-11-10,FT,Chelsea,0,-,BK Häcken,0,-,-,-,12:45 PM
+401916990,2026-11-10,FT,Paris FC,0,-,Real Madrid,3,-,-,-,12:45 PM
+401916988,2026-11-10,HT,Manchester City,2,-,Internazionale,1,-,-,-,3:00 PM
+401916987,2026-11-10,HT,Bayern Munich,2,-,Paris Saint-Germain,0,-,-,-,3:00 PM
+401916989,2026-11-10,HT,Servette,0,-,Roma,2,-,-,-,3:00 PM
+401933295,2026-11-10,FT,Central African Republic,1,-,Congo,1,-,-,-,7:15 AM
+401933275,2026-11-10,FT,Chad,3,-,Gabon,0,-,-,-,9:30 AM
 401932079,2026-11-10,Scheduled,Tigres UANL,0,-,Pumas UNAM,0,-,-,-,8:00 PM
 401932078,2026-11-10,Scheduled,Guadalajara,0,-,FC Juárez,0,-,-,-,10:00 PM
-401928137,2026-11-10,Scheduled,VfL Wolfsburg,0,-,Feyenoord Rotterdam,0,-,-,-,1:00 PM
-401933765,2026-11-10,Scheduled,TSV Eintracht Braunschweig,0,-,SC Paderborn 07,0,-,-,-,7:00 AM
-401933840,2026-11-10,Scheduled,TBD Away,0,-,SV Bergisch Gladbach 09,0,-,-,-,1:30 PM
-401906329,2026-11-10,Scheduled,Leyton Orient,0,-,Barnet,0,-,-,-,2:00 PM
-401906331,2026-11-10,Scheduled,Reading,0,-,Bristol Rovers,0,-,-,-,2:00 PM
-401906336,2026-11-10,Scheduled,Notts County,0,-,Burton Albion,0,-,-,-,2:00 PM
-401906251,2026-11-10,Scheduled,Wigan Athletic,0,-,Crewe Alexandra,0,-,-,-,2:00 PM
-401906335,2026-11-10,Scheduled,Nottingham Forest U21,0,-,Grimsby Town,0,-,-,-,2:00 PM
-401906334,2026-11-10,Scheduled,Liverpool U21,0,-,Huddersfield Town,0,-,-,-,2:00 PM
-401906332,2026-11-10,Scheduled,Walsall,0,-,Leicester City,0,-,-,-,2:00 PM
-401906338,2026-11-10,Scheduled,Chesterfield,0,-,Mansfield Town,0,-,-,-,2:00 PM
-401906328,2026-11-10,Scheduled,Gillingham,0,-,Northampton Town,0,-,-,-,2:00 PM
-401906333,2026-11-10,Scheduled,Cheltenham Town,0,-,Oxford United,0,-,-,-,2:00 PM
-401906330,2026-11-10,Scheduled,Swindon Town,0,-,Plymouth Argyle,0,-,-,-,2:00 PM
-401906250,2026-11-10,Scheduled,Fulham U21,0,-,Stevenage,0,-,-,-,2:00 PM
-401906337,2026-11-10,Scheduled,Tranmere Rovers,0,-,Stockport County,0,-,-,-,2:00 PM
-401906339,2026-11-10,Scheduled,York City,0,-,Bradford City,0,-,-,-,2:30 PM
-401906327,2026-11-10,Scheduled,Milton Keynes Dons,0,-,Bromley,0,-,-,-,2:30 PM
-401906272,2026-11-10,Scheduled,Brentford U21,0,-,Crawley Town,0,-,-,-,2:30 PM
-401906271,2026-11-10,Scheduled,Ipswich Town U21,0,-,Colchester United,0,-,-,-,2:45 PM
+401928137,2026-11-10,FT,VfL Wolfsburg,3,-,Feyenoord Rotterdam,0,-,-,-,1:00 PM
+401933765,2026-11-10,FT,TSV Eintracht Braunschweig,1,-,SC Paderborn 07,4,-,-,-,7:00 AM
+401933840,2026-11-10,Scheduled,SV SCHLEBUSCH,0,-,SV Bergisch Gladbach 09,0,-,-,-,1:30 PM
+401906329,2026-11-10,90'+2',Leyton Orient,2,-,Barnet,4,-,-,-,2:00 PM
+401906331,2026-11-10,90'+3',Reading,2,-,Bristol Rovers,2,-,-,-,2:00 PM
+401906336,2026-11-10,FT,Notts County,3,-,Burton Albion,0,-,-,-,2:00 PM
+401906251,2026-11-10,90'+5',Wigan Athletic,2,-,Crewe Alexandra,1,-,-,-,2:00 PM
+401906335,2026-11-10,FT,Nottingham Forest U21,3,-,Grimsby Town,0,-,-,-,2:00 PM
+401906334,2026-11-10,FT,Liverpool U21,0,-,Huddersfield Town,4,-,-,-,2:00 PM
+401906332,2026-11-10,90'+2',Walsall,1,-,Leicester City,2,-,-,-,2:00 PM
+401906338,2026-11-10,90'+3',Chesterfield,5,-,Mansfield Town,3,-,-,-,2:00 PM
+401906328,2026-11-10,90'+1',Gillingham,2,-,Northampton Town,1,-,-,-,2:00 PM
+401906333,2026-11-10,FT,Cheltenham Town,0,-,Oxford United,4,-,-,-,2:00 PM
+401906330,2026-11-10,90'+2',Swindon Town,1,-,Plymouth Argyle,1,-,-,-,2:00 PM
+401906250,2026-11-10,90'+4',Fulham U21,2,-,Stevenage,2,-,-,-,2:00 PM
+401906337,2026-11-10,90'+4',Tranmere Rovers,0,-,Stockport County,0,-,-,-,2:00 PM
+401906339,2026-11-10,65',York City,0,-,Bradford City,2,-,-,-,2:30 PM
+401906327,2026-11-10,62',Milton Keynes Dons,2,-,Bromley,1,-,-,-,2:30 PM
+401906272,2026-11-10,64',Brentford U21,2,-,Crawley Town,0,-,-,-,2:30 PM
+401906271,2026-11-10,HT,Ipswich Town U21,0,-,Colchester United,0,-,-,-,2:45 PM
 401933182,2026-11-10,Scheduled,América de Cali,0,-,Internacional de Bogotá,0,-,-,-,6:30 PM
 401933181,2026-11-10,Scheduled,Atlético Nacional,0,-,Once Caldas,0,-,-,-,8:30 PM
 401899697,2026-11-10,Scheduled,Luis Ángel Firpo,0,-,Cacahuatique,0,-,-,-,4:30 PM
 401899696,2026-11-10,Scheduled,C.D. Platense,0,-,Isidro Metapán,0,-,-,-,8:00 PM
-401929834,2026-11-10,Scheduled,Bucknell,0,-,American University,0,-,-,-,12:00 PM
-401929722,2026-11-10,Scheduled,Fordham,0,-,Duquesne,0,-,-,-,1:00 PM
+401929834,2026-11-10,FT,Bucknell,2,-,American University,1,-,-,-,12:00 PM
+401929722,2026-11-10,FT,Fordham,5,-,Duquesne,2,-,-,-,1:00 PM
 401929723,2026-11-10,Scheduled,Davidson,0,-,Saint Louis,0,-,-,-,5:00 PM
 401929833,2026-11-10,Scheduled,Lehigh,0,-,Boston University,0,-,-,-,6:00 PM
 401929791,2026-11-10,Scheduled,Air Force,0,-,Grand Canyon,0,-,-,-,9:00 PM
 401929790,2026-11-10,Scheduled,San José State,0,-,UNLV,0,-,-,-,9:00 PM
-401931288,2026-11-10,Scheduled,Georgia,0,-,South Carolina,0,-,-,-,12:30 PM
-401931325,2026-11-10,Scheduled,Nicholls,0,-,Incarnate Word,0,-,-,-,1:00 PM
-401929959,2026-11-10,Scheduled,Ball State,0,-,Massachusetts,0,-,-,-,1:00 PM
-401931289,2026-11-10,Scheduled,LSU,0,-,Alabama,0,-,-,-,3:00 PM
+401931288,2026-11-10,FT,Georgia,0,-,South Carolina,3,-,-,-,12:30 PM
+401931325,2026-11-10,FT,Nicholls,0,-,Incarnate Word,4,-,-,-,1:00 PM
+401929959,2026-11-10,AGT,Ball State,0,-,Massachusetts,1,-,-,-,1:00 PM
+401931289,2026-11-10,24',LSU,0,-,Alabama,0,-,-,-,3:25 PM
 401929930,2026-11-10,Scheduled,Delaware,0,-,Western Kentucky,0,-,-,-,4:00 PM
 401931326,2026-11-10,Scheduled,McNeese,0,-,Northwestern State,0,-,-,-,4:30 PM
 401929960,2026-11-10,Scheduled,Miami (OH),0,-,Western Michigan,0,-,-,-,5:00 PM
