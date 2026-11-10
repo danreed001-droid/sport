@@ -17,7 +17,10 @@
       "awaySpreadOdds": -112,
       "homeMoneyline": 360,
       "awayMoneyline": -470,
-      "total": 166.5
+      "total": 166.5,
+      "gameTotal": 166.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909564",
@@ -31,7 +34,10 @@
       "homeMoneyline": -310,
       "awayMoneyline": 250,
       "total": 147.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 145.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401918987",
@@ -44,7 +50,10 @@
       "awaySpreadOdds": -112,
       "homeMoneyline": -2100,
       "awayMoneyline": 1100,
-      "total": 160.5
+      "total": 160.5,
+      "gameTotal": 160.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401913527",
@@ -57,7 +66,10 @@
       "awaySpreadOdds": -102,
       "homeMoneyline": 114,
       "awayMoneyline": -135,
-      "total": 167.5
+      "total": 167.5,
+      "gameTotal": 167.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401920425",
@@ -68,7 +80,10 @@
       "awaySpread": 37.5,
       "homeSpreadOdds": -112,
       "awaySpreadOdds": -108,
-      "total": 148.5
+      "total": 148.5,
+      "gameTotal": 149.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401909740",
@@ -79,7 +94,10 @@
       "awaySpread": 36.5,
       "homeSpreadOdds": -112,
       "awaySpreadOdds": -108,
-      "total": 156.5
+      "total": 156.5,
+      "gameTotal": 156.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401921740",
@@ -92,7 +110,10 @@
       "awaySpreadOdds": -112,
       "homeMoneyline": -10000,
       "awayMoneyline": 3000,
-      "total": 181.5
+      "total": 181.5,
+      "gameTotal": 184.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909786",
@@ -106,7 +127,10 @@
       "homeMoneyline": 164,
       "awayMoneyline": -198,
       "total": 155.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 155.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     }
   ]
 }
