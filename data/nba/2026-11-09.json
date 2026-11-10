@@ -458,9 +458,9 @@
       "awaySpreadOdds": -110,
       "confidence": null,
       "correct": null,
-      "gameTotal": 229.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -114,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
       "home": "Golden State Warriors",
       "homeMoneyline": -378,
       "homeScore": null,
@@ -480,14 +480,14 @@
       "statsLine": {
         "homeSpread": -11.5,
         "awaySpread": 11.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": -569,
-        "awayMoneyline": 426
+        "homeSpreadOdds": -102,
+        "awaySpreadOdds": -118,
+        "homeMoneyline": -542,
+        "awayMoneyline": 409
       },
       "statsSpread": -11.5,
       "time": "10:00 PM ET",
-      "totalsLine": 229.5
+      "totalsLine": 228.5
     }
   ]
 }

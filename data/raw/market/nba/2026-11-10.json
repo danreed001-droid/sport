@@ -1,7 +1,7 @@
 {
  "date": "2026-11-10",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-09T22:24:16+00:00",
+ "fetchedAt": "2026-11-10T02:55:37+00:00",
  "games": [
   {
    "away": "Milwaukee Bucks",
@@ -11,18 +11,18 @@
    "spread": {
     "home": -15.5,
     "open": -14.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 70,
+    "money_home": 74
    },
    "total": {
-    "now": 220.5,
+    "now": 220,
     "open": 221.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 69,
+    "money_over": 62
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": -1200,
+    "away": 750
    },
    "rlmFavorite": null
   },
@@ -34,8 +34,8 @@
    "spread": {
     "home": 1.5,
     "open": -1.5,
-    "tix_home": 67,
-    "money_home": 73
+    "tix_home": 65,
+    "money_home": 69
    },
    "total": {
     "now": 216.5,
@@ -44,8 +44,8 @@
     "money_over": 91
    },
    "moneyline": {
-    "home": 102,
-    "away": -120
+    "home": 100,
+    "away": -118
    },
    "rlmFavorite": null
   },
@@ -55,20 +55,20 @@
    "start": "2026-11-11T02:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
-    "tix_home": null,
-    "money_home": null
+    "home": 10.5,
+    "open": 10.5,
+    "tix_home": 44,
+    "money_home": 44
    },
    "total": {
-    "now": null,
-    "open": null,
-    "tix_over": null,
-    "money_over": null
+    "now": 228.5,
+    "open": 229.5,
+    "tix_over": 66,
+    "money_over": 73
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": 375,
+    "away": -500
    },
    "rlmFavorite": null
   },
@@ -101,20 +101,20 @@
    "start": "2026-11-11T03:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": 5.5,
+    "open": 6.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 221.5,
+    "open": 221.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": 185,
+    "away": -225
    },
    "rlmFavorite": null
   },
@@ -124,20 +124,20 @@
    "start": "2026-11-11T04:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
-    "tix_home": null,
-    "money_home": null
+    "home": 1.5,
+    "open": 1.5,
+    "tix_home": 20,
+    "money_home": 20
    },
    "total": {
-    "now": null,
-    "open": null,
-    "tix_over": null,
-    "money_over": null
+    "now": 226.5,
+    "open": 227.5,
+    "tix_over": 77,
+    "money_over": 67
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": 102,
+    "away": -120
    },
    "rlmFavorite": null
   }

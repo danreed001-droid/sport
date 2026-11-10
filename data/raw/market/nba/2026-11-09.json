@@ -1,7 +1,7 @@
 {
  "date": "2026-11-09",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-09T22:24:16+00:00",
+ "fetchedAt": "2026-11-10T02:55:37+00:00",
  "games": [
   {
    "away": "Los Angeles Lakers",
@@ -172,18 +172,18 @@
    "spread": {
     "home": -11.5,
     "open": -10.5,
-    "tix_home": 82,
-    "money_home": 75
+    "tix_home": 77,
+    "money_home": 73
    },
    "total": {
-    "now": 229.5,
+    "now": 228.5,
     "open": 231.5,
-    "tix_over": 73,
-    "money_over": 58
+    "tix_over": 76,
+    "money_over": 66
    },
    "moneyline": {
-    "home": -590,
-    "away": 425
+    "home": -550,
+    "away": 400
    },
    "rlmFavorite": null
   }
