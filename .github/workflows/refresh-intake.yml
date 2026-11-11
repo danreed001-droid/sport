@@ -1,0 +1,31 @@
+name: Refresh intake
+
+# The pick sheet's Refresh button links to a new "refresh" issue. This starts
+# the scoring run (ESPN scores, lines, picks) and the NBA game-time run so the
+# sheet has the latest data; pages.yml rebuilds the site when they finish.
+# Only the repo owner's issues are processed: the repo is public, so anyone
+# else's is ignored.
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  issues: write
+  actions: write   # start the runs
+
+jobs:
+  refresh:
+    if: github.event.issue.title == 'refresh' && github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Start the scoring and NBA game-time runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          gh workflow run diamond-ledger.yml --repo "$GITHUB_REPOSITORY" --ref main
+          gh workflow run nba-gametime.yml --repo "$GITHUB_REPOSITORY" --ref main
+          gh issue comment "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body "Started the scoring run and the NBA game-time run. The pick sheet rebuilds when they finish (usually 5-10 minutes); tap Refresh on the sheet then."
+          gh issue close "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY"
