@@ -1,6 +1,6 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401885700,2026-11-11,Scheduled,Toulouse,0,-,FC Fleury 91,0,-,-,-,11:00 AM
-401930244,2026-11-11,Scheduled,Chinese Taipei,0,-,Vietnam,0,-,-,-,7:00 AM
+401885700,2026-11-11,11',Toulouse,0,-,FC Fleury 91,0,-,-,-,11:00 AM
+401930244,2026-11-11,FT,Chinese Taipei,0,-,Vietnam,2,-,-,-,7:00 AM
 401916985,2026-11-11,Scheduled,HB Køge,0,-,OH Leuven,0,-,-,-,12:45 PM
 401916983,2026-11-11,Postponed,Austria Vienna,0,-,Benfica,0,-,-,-,3:00 PM
 401916984,2026-11-11,Scheduled,OL Lyonnes,0,-,Juventus,0,-,-,-,3:00 PM
@@ -14,7 +14,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401931915,2026-11-11,Scheduled,Club Atlético La Paz,0,-,Piratas,0,-,-,-,9:00 PM
 401932063,2026-11-11,Scheduled,Toluca,0,-,América,0,-,-,-,8:00 PM
 401932066,2026-11-11,Scheduled,Monterrey,0,-,Pachuca,0,-,-,-,10:00 PM
-401928139,2026-11-11,Scheduled,SK Brann,0,-,Czarni Sosnowiec,0,-,-,-,11:00 AM
+401928139,2026-11-11,12',SK Brann,1,-,Czarni Sosnowiec,0,-,-,-,11:00 AM
 401928153,2026-11-11,Scheduled,Rosenborg,0,-,Brondby,0,-,-,-,12:00 PM
 401928140,2026-11-11,Scheduled,Real Sociedad,0,-,Feberbache,0,-,-,-,12:00 PM
 401928150,2026-11-11,Scheduled,PSV Eindhoven,0,-,Eintracht Frankfurt,0,-,-,-,12:30 PM
@@ -30,15 +30,15 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401930275,2026-11-11,Scheduled,Always Ready,0,-,Independiente Petrolero,0,-,-,-,5:00 PM
 401899280,2026-11-11,Scheduled,Alianza FC,0,-,Fuerte San Francisco,0,-,-,-,4:30 PM
 401899662,2026-11-11,Scheduled,Internacional Santa Tecla,0,-,CD FAS,0,-,-,-,8:00 PM
-401932726,2026-11-11,Scheduled,Maldives,0,-,India,0,-,-,-,4:30 AM
-401932727,2026-11-11,Scheduled,Sri Lanka,0,-,Bangladesh,0,-,-,-,9:00 AM
+401932726,2026-11-11,FT,Maldives,0,-,India,1,-,-,-,4:30 AM
+401932727,2026-11-11,FT,Sri Lanka,0,-,Bangladesh,4,-,-,-,9:00 AM
 401929757,2026-11-11,Scheduled,Cleveland State,0,-,Milwaukee,0,-,-,-,2:00 PM
 401929847,2026-11-11,Scheduled,Delaware,0,-,Omaha,0,-,-,-,3:00 PM
 401929758,2026-11-11,Scheduled,Wright State,0,-,Purdue Fort Wayne,0,-,-,-,4:00 PM
 401929716,2026-11-11,Scheduled,Charlotte,0,-,Missouri State,0,-,-,-,4:30 PM
 401929818,2026-11-11,Scheduled,Houston Christian,0,-,Lindenwood,0,-,-,-,5:00 PM
 401929857,2026-11-11,Scheduled,Denver,0,-,San Diego,0,-,-,-,5:00 PM
-401931278,2026-11-11,Scheduled,Maryland,0,-,Indiana,0,-,-,-,6:00 PM
+401931278,2026-11-11,Scheduled,Maryland,0,-,Indiana,0,-,-,-,7:30 PM
 401929690,2026-11-11,Scheduled,NJIT,0,-,UAlbany,0,-,-,-,6:30 PM
 401929787,2026-11-11,Scheduled,UIC,0,-,Bowling Green,0,-,-,-,7:00 PM
 401929788,2026-11-11,Scheduled,Western Michigan,0,-,Evansville,0,-,-,-,7:00 PM

@@ -21,13 +21,13 @@
       "statsLine": {
         "homeSpread": -3.5,
         "awaySpread": 3.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
-        "homeMoneyline": -155,
-        "awayMoneyline": 131
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": -148,
+        "awayMoneyline": 124
       },
-      "totalsLine": 225.5,
-      "gameTotal": 225.5,
+      "totalsLine": 227.5,
+      "gameTotal": 227.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110
     },
@@ -46,15 +46,15 @@
       "statsLine": {
         "homeSpread": -4.5,
         "awaySpread": 4.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
-        "homeMoneyline": -166,
-        "awayMoneyline": 140
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -180,
+        "awayMoneyline": 151
       },
-      "totalsLine": 221.5,
-      "gameTotal": 221.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "totalsLine": 222.5,
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401909968",
@@ -67,19 +67,19 @@
       "awaySpreadOdds": -112.0,
       "homeMoneyline": 206.0,
       "awayMoneyline": -249.0,
-      "statsSpread": 7.5,
+      "statsSpread": 6.5,
       "statsLine": {
-        "homeSpread": 7.5,
-        "awaySpread": -7.5,
-        "homeSpreadOdds": -112,
-        "awaySpreadOdds": -108,
-        "homeMoneyline": 228,
-        "awayMoneyline": -279
+        "homeSpread": 6.5,
+        "awaySpread": -6.5,
+        "homeSpreadOdds": -118,
+        "awaySpreadOdds": -103,
+        "homeMoneyline": 200,
+        "awayMoneyline": -243
       },
-      "totalsLine": 215.5,
-      "gameTotal": 215.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
+      "totalsLine": 216.5,
+      "gameTotal": 216.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909969",
@@ -92,19 +92,19 @@
       "awaySpreadOdds": -109.0,
       "homeMoneyline": 750.0,
       "awayMoneyline": -1200.0,
-      "statsSpread": 15.5,
+      "statsSpread": 14.5,
       "statsLine": {
-        "homeSpread": 15.5,
-        "awaySpread": -15.5,
-        "homeSpreadOdds": -111,
-        "awaySpreadOdds": -109,
+        "homeSpread": 14.5,
+        "awaySpread": -14.5,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
         "homeMoneyline": 750,
         "awayMoneyline": -1200
       },
-      "totalsLine": 240.5,
-      "gameTotal": 240.5,
-      "gameTotalOverOdds": -109,
-      "gameTotalUnderOdds": -111
+      "totalsLine": 238.5,
+      "gameTotal": 238.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401909970",
@@ -122,13 +122,14 @@
         "homeSpread": 3.5,
         "awaySpread": -3.5,
         "homeSpreadOdds": -106,
-        "homeMoneyline": 146,
-        "awayMoneyline": -174
+        "awaySpreadOdds": -114,
+        "homeMoneyline": 140,
+        "awayMoneyline": -166
       },
-      "totalsLine": 228.5,
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -107
+      "totalsLine": 230.5,
+      "gameTotal": 230.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909971",
@@ -141,19 +142,19 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": 473.0,
       "awayMoneyline": -650.0,
-      "statsSpread": 11.5,
+      "statsSpread": 14.5,
       "statsLine": {
-        "homeSpread": 11.5,
-        "awaySpread": -11.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 431,
-        "awayMoneyline": -578
+        "homeSpread": 14.5,
+        "awaySpread": -14.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": 530,
+        "awayMoneyline": -750
       },
-      "totalsLine": 232.5,
-      "gameTotal": 232.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "totalsLine": 229.5,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909972",
@@ -175,7 +176,7 @@
         "homeMoneyline": -186,
         "awayMoneyline": 156
       },
-      "totalsLine": 229.5,
+      "totalsLine": 230.5,
       "totalsFavors": "Over",
       "totalsRules": [
         {
@@ -186,16 +187,16 @@
         }
       ],
       "totalsCheck": "Rule 16: New Orleans Pelicans lost by 51 on the road at Golden State Warriors on 2026-11-09; now home vs. worse-record Brooklyn Nets.",
-      "gameTotal": 229.5,
-      "gameTotalOverOdds": -109,
-      "gameTotalUnderOdds": -111
+      "gameTotal": 230.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909973",
       "away": "Orlando Magic",
       "home": "Utah Jazz",
       "time": "9:00 PM ET",
-      "gameTotal": 217.5,
+      "gameTotal": 214.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110,
       "homeSpread": 4.5,
@@ -204,16 +205,16 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": 140.0,
       "awayMoneyline": -166.0,
-      "statsSpread": 4.5,
+      "statsSpread": 3.5,
       "statsLine": {
-        "homeSpread": 4.5,
-        "awaySpread": -4.5,
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
         "homeSpreadOdds": -110,
         "awaySpreadOdds": -110,
-        "homeMoneyline": 140,
-        "awayMoneyline": -166
+        "homeMoneyline": 136,
+        "awayMoneyline": -161
       },
-      "totalsLine": 217.5
+      "totalsLine": 214.5
     },
     {
       "espnId": "401909974",
@@ -230,24 +231,24 @@
       "statsLine": {
         "homeSpread": -6.5,
         "awaySpread": 6.5,
-        "homeSpreadOdds": -107,
-        "awaySpreadOdds": -113,
-        "homeMoneyline": -237,
-        "awayMoneyline": 196
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -249,
+        "awayMoneyline": 205
       },
-      "totalsLine": 221.5,
-      "gameTotal": 221.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
+      "totalsLine": 220.5,
+      "gameTotal": 220.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909975",
       "away": "Oklahoma City Thunder",
       "home": "Portland Trail Blazers",
       "time": "10:00 PM ET",
-      "gameTotal": 226.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "homeSpread": 1.5,
       "awaySpread": -1.5,
       "homeSpreadOdds": -112.0,
@@ -258,12 +259,12 @@
       "statsLine": {
         "homeSpread": 1.5,
         "awaySpread": -1.5,
-        "homeSpreadOdds": -112,
-        "awaySpreadOdds": -108,
-        "homeMoneyline": -102,
-        "awayMoneyline": -116
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": -101,
+        "awayMoneyline": -117
       },
-      "totalsLine": 226.5
+      "totalsLine": 225.5
     }
   ]
 }
