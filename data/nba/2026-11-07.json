@@ -97,7 +97,8 @@
       "statsCorrect": true,
       "statsReturn": 30.86,
       "statsCover": true,
-      "statsSpreadReturn": 84.75
+      "statsSpreadReturn": 84.75,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "2-0",
@@ -173,7 +174,8 @@
       "statsCorrect": false,
       "statsReturn": -100.0,
       "statsCover": true,
-      "statsSpreadReturn": 90.91
+      "statsSpreadReturn": 90.91,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "4-0",
@@ -249,7 +251,8 @@
       "statsCorrect": true,
       "statsReturn": 50.76,
       "statsCover": true,
-      "statsSpreadReturn": 89.29
+      "statsSpreadReturn": 89.29,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "0-5",
@@ -411,7 +414,24 @@
       },
       "statsSpread": -7.5,
       "time": "8:30 PM ET",
-      "totalsLine": 220.5
+      "totalsLine": 220.5,
+      "statsFavors": "Golden State Warriors",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Golden State Warriors: covered its last two games (by 16.5 vs Miami Heat and by 0.5 vs Phoenix Suns), now at home in game 10 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 54: Backing Golden State Warriors: covered its last two games (by 16.5 vs Miami Heat and by 0.5 vs Phoenix Suns), now at home in game 10 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsBackfill": 10,
+      "statsCorrect": true,
+      "statsReturn": 32.36,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "1-2",
@@ -473,7 +493,8 @@
       },
       "statsSpread": 6.5,
       "time": "9:00 PM ET",
-      "totalsLine": 224.5
+      "totalsLine": 224.5,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "3-1",
@@ -549,8 +570,9 @@
       "statsCorrect": false,
       "statsReturn": -100.0,
       "statsCover": false,
-      "statsSpreadReturn": -100.0
+      "statsSpreadReturn": -100.0,
+      "totalsBackfill": 10
     }
   ],
-  "scoredAt": "2026-11-08T06:06:46.130305+00:00"
+  "scoredAt": "2026-11-11T17:43:41.200255+00:00"
 }

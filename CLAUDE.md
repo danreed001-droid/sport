@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -158,6 +158,23 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   back-to-back is the signal. Found on 2026-11-11 by drilling into a lean
   from the Knicks-Bucks game (which itself was NOT a back-to-back for
   Milwaukee and isn't a rule-53 game); no 2026-27 games qualified at backfill.
+  Rule 54 (on trial, "momentum" family with 51-52) backs a home team that
+  covered its last two games with a line (`data/raw/nba_lines.csv`, pushes
+  skipped), in games 6-20 of its season, with at least a day off: 172-105
+  rested, 202-126 any rest (30-21 on a back-to-back); flat 50% from game 21
+  on and 46% on the road; 2024-now only 52-38 and 2020-21 was 24-28. Found
+  on 2026-11-11 from a split-season search of 243,000 three-way side
+  combinations that was luck overall (162 held vs 247 by chance); its own
+  family passes by luck 0.6% of the time. Backfilled for 2026-27: 10-8
+  (2026-11-02 Pelicans @ Grizzlies left with no pick: 51 was on New Orleans).
+  NBA Totals rule 22 (on trial) bets the UNDER in a near pick'em (spread 2 or
+  less) when the total is 3+ above the two teams' season scoring averages
+  (`inflated_total` in `nba_totals_signals.py`: (home PF + away PA)/2 + (away
+  PF + home PA)/2, both 5+ games) and a team's last five went over their
+  closing totals by 6+ a game: 108-66, unseen 46-32, 2024-now 18-11. Tighter
+  spreads and bigger gaps do better (spread 3-/5+ 61.0%, 4.5- 54%). From a
+  2026-11-11 split-season totals search (5,240 combinations, luck overall);
+  its family passes by luck 0.4% of the time. No 2026-27 games yet.
   `scripts/archive_market.py` (each scoring and game-time run) saves Action
   Network's NBA board for today and tomorrow to `data/raw/market/nba/<date>.json`
   (consensus line, opener, bet/money splits, and `rlmFavorite`, the team rule
@@ -172,7 +189,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (`lib/picks.stats_view`: score_slate.py, the dashboard, pick log, rule
   records); every other model is still graded at the slate's line. Games
   from before 2026-11-05 have no statsLine and stay graded at the slate's.
-  Overlapping slices of one situation (NBA Stats 20-29, 35-40, 41-43, 44-48, 49+53, 51-52; NBA Totals 4-8,
+  Overlapping slices of one situation (NBA Stats 20-29, 35-40, 41-43, 44-48, 49+53, 51-52+54; NBA Totals 4-8,
   9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).

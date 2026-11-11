@@ -60,7 +60,8 @@
       },
       "statsSpread": -1.5,
       "time": "7:00 PM ET",
-      "totalsLine": 236.5
+      "totalsLine": 236.5,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "3-2",
@@ -117,7 +118,8 @@
       },
       "statsSpread": 8.5,
       "time": "7:00 PM ET",
-      "totalsLine": 215.5
+      "totalsLine": 215.5,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "1-4",
@@ -174,7 +176,8 @@
       },
       "statsSpread": -10.5,
       "time": "7:00 PM ET",
-      "totalsLine": 219.5
+      "totalsLine": 219.5,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "0-3",
@@ -251,7 +254,8 @@
       "statsCorrect": true,
       "statsReturn": 114.0,
       "statsCover": true,
-      "statsSpreadReturn": 87.72
+      "statsSpreadReturn": 87.72,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "1-5",
@@ -323,7 +327,8 @@
       "statsCorrect": false,
       "statsReturn": -100.0,
       "statsCover": true,
-      "statsSpreadReturn": 86.96
+      "statsSpreadReturn": 86.96,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "2-3",
@@ -381,7 +386,8 @@
       },
       "statsSpread": -4.5,
       "time": "8:30 PM ET",
-      "totalsLine": 223.5
+      "totalsLine": 223.5,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "3-1",
@@ -438,7 +444,24 @@
       },
       "statsSpread": 8.5,
       "time": "9:00 PM ET",
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "statsFavors": "Phoenix Suns",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Phoenix Suns: covered its last two games (by 9.5 vs Houston Rockets and by 11.5 vs Orlando Magic), now at home in game 9 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 54: Backing Phoenix Suns: covered its last two games (by 9.5 vs Houston Rockets and by 11.5 vs Orlando Magic), now at home in game 9 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsBackfill": 10,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "0-7",
@@ -495,8 +518,9 @@
       },
       "statsSpread": -11.5,
       "time": "10:00 PM ET",
-      "totalsLine": 228.5
+      "totalsLine": 228.5,
+      "totalsBackfill": 10
     }
   ],
-  "scoredAt": "2026-11-10T12:59:36.856208+00:00"
+  "scoredAt": "2026-11-11T17:43:41.202039+00:00"
 }

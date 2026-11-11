@@ -56,7 +56,7 @@ SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsWatch")
 # Bumped whenever rules are added, so --backfill rechecks past games with them.
-BACKFILL_VERSION = 9
+BACKFILL_VERSION = 10
 
 
 def season_start(date_str):
@@ -164,7 +164,43 @@ ROAD_BLOWOUT = {
 }
 
 
-def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=None, watch=None):
+_TOTAL_CLOSE = None
+
+
+def total_close_of(game_id):
+    """A finished game's closing total (data/raw/nba_lines.csv), or None."""
+    global _TOTAL_CLOSE
+    if _TOTAL_CLOSE is None:
+        _TOTAL_CLOSE = {}
+        if os.path.exists(LINES_CSV):
+            with open(LINES_CSV, encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    try:
+                        _TOTAL_CLOSE[r["game_id"]] = float(r["total_close"])
+                    except (TypeError, ValueError):
+                        pass
+    return _TOTAL_CLOSE.get(str(game_id))
+
+
+def inflated_total(hlog, alog, spread, total):
+    """Rule 22's facts, or None: a near pick'em (spread 2 or less) whose total
+    is 3+ above what the two teams' season scoring averages give, with a team
+    whose last five games went over their closing totals by 6+ a game.
+    As backtested: both teams 5+ games played; 4+ of the last five with a line."""
+    if spread is None or total is None or abs(spread) > 2 or len(hlog) < 5 or len(alog) < 5:
+        return None
+    avg = lambda log, k: sum(x[k] for x in log) / len(log)
+    model = (avg(hlog, "pf") + avg(alog, "pa")) / 2 + (avg(alog, "pf") + avg(hlog, "pa")) / 2
+    if total - model < 3:
+        return None
+    def over5(log):
+        d = [x["pf"] + x["pa"] - c for x in log[-5:] for c in [total_close_of(x.get("id"))] if c is not None]
+        return sum(d) / len(d) if len(d) >= 4 else None
+    hot = [(side, o) for side, o in (("home", over5(hlog)), ("away", over5(alog))) if o is not None and o >= 6]
+    return {"model": model, "gap": total - model, "hot": hot} if hot else None
+
+
+def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=None, watch=None, total=None):
     """Rules that fire for game g. absent(team_name) -> set of player ids out
     tonight (None if unknown); points is NBA Stats' BoxCache. Without them
     rule 3 isn't checked."""
@@ -250,6 +286,12 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=
             rules.append({"rule": 20, "detail": why})
         if 10 <= rv["margin"] <= 19:
             rules.append({"rule": 21, "detail": why})
+    # Rule 22: near pick'em, total above the teams' season averages, a team running hot on overs -> under.
+    it = inflated_total(hlog, alog, spread, total)
+    if it:
+        who = " and ".join(f"{g[side]}'s last five went over by {o:.1f} a game" for side, o in it["hot"])
+        rules.append({"rule": 22, "detail": f"Spread {g['home']} {spread:+g} (2 or less); the total {total:g} is {it['gap']:.1f} above "
+                                            f"the {it['model']:.1f} the two teams' season scoring averages give; {who}."})
     rules = [r for r in rules if r["rule"] in RULE_NAMES]  # retired rules (lib/nba_totals_rules.RETIRED) never pick
     for r in rules:
         r["name"], r["backtest"] = RULE_NAMES[r["rule"]], RULE_BACKTEST[r["rule"]]
@@ -310,7 +352,7 @@ def run_for_date(session, points, rows, date_str):
                 st = status(team)
                 return None if st is None else {pid for pid, v in st.items() if v[1] == "out"}
             watch = []
-            rules = evaluate(g, rows, date_str, since, spread, points, absent, status, watch)
+            rules = evaluate(g, rows, date_str, since, spread, points, absent, status, watch, total=g.get("totalsLine"))
             if watch:
                 g["totalsWatch"] = watch
             else:
@@ -365,7 +407,7 @@ def backfill(points, rows, dates):
                 key = next((k for k in names if _same_team(team, k)), None)
                 box = points.get(gid, key) if key else None
                 return None if box is None else _NotIn(box)
-            rules = evaluate(g, rows, date_str, since, spread, points, absent)
+            rules = evaluate(g, rows, date_str, since, spread, points, absent, total=total)
             side = verdict(rules)
             before = (g.get("totalsFavors"), [r["rule"] for r in g.get("totalsRules") or []])
             g["totalsBackfill"] = BACKFILL_VERSION  # checked with every rule, even when none fired, so it's never re-done

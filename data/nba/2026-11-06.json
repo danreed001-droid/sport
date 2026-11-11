@@ -56,7 +56,8 @@
       "totalsLine": 208.5,
       "gameTotal": 208.5,
       "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "gameTotalUnderOdds": -115,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "0-1",
@@ -175,7 +176,8 @@
       "totalsLine": 231.5,
       "gameTotal": 231.5,
       "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalUnderOdds": -110,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "0-2",
@@ -251,7 +253,8 @@
       "statsCorrect": true,
       "statsReturn": 60.24,
       "statsCover": true,
-      "statsSpreadReturn": 90.91
+      "statsSpreadReturn": 90.91,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "1-2",
@@ -313,7 +316,8 @@
         "awaySpreadOdds": -104,
         "homeMoneyline": 146,
         "awayMoneyline": -174
-      }
+      },
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "0-2",
@@ -375,7 +379,8 @@
         "awaySpreadOdds": -115,
         "homeMoneyline": 136,
         "awayMoneyline": -162
-      }
+      },
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "0-1",
@@ -437,7 +442,8 @@
         "awaySpreadOdds": -108,
         "homeMoneyline": -257,
         "awayMoneyline": 211
-      }
+      },
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "0-3",
@@ -486,7 +492,7 @@
         "NetRtg (blend): POR +5.61 (69.0th pct of 30) vs LAL +4.79 (65.5th pct) \u2014 gap 3.4, under 30 so Ledger screens out",
         "Injuries: POR - Ja Morant (out to 12/1, team's best player), Shaedon Sharpe (out to 3/2); LAL - Sandro Mamukelashvili (GTD, illness, bench)"
       ],
-      "statsCheck": "Rule 46: Backing Los Angeles Lakers: Los Angeles Lakers lost the last meeting by 7 (Portland Trail Blazers 136 @ Los Angeles Lakers 129, 2026-10-27) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16.",
+      "statsCheck": "Rule 46: Backing Los Angeles Lakers: Los Angeles Lakers lost the last meeting by 7 (Portland Trail Blazers 136 @ Los Angeles Lakers 129, 2026-10-27) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16. Rule 54: Backing Los Angeles Lakers: covered its last two games (by 0.5 at Sacramento Kings and by 19.5 vs Miami Heat), now at home in game 10 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
       "statsFavors": "Los Angeles Lakers",
       "statsRules": [
         {
@@ -494,6 +500,13 @@
           "name": "Revenge: back a favored team with the worse record after losing the last meeting as the favorite, its 2nd+ straight loss to them (on trial)",
           "backtest": "62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16",
           "detail": "Backing Los Angeles Lakers: Los Angeles Lakers lost the last meeting by 7 (Portland Trail Blazers 136 @ Los Angeles Lakers 129, 2026-10-27) as the favorite, its 2 straight loss to them; tonight home, favored, with the worse record -- 62.5% ATS, 70-42 (2018-19 and 2021-22 to now); unseen 12-7; 2024-now 22-16."
+        },
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Los Angeles Lakers: covered its last two games (by 0.5 at Sacramento Kings and by 19.5 vs Miami Heat), now at home in game 10 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+          "backfill": true
         }
       ],
       "time": "10:00 PM ET",
@@ -510,6 +523,7 @@
         "homeMoneyline": -154,
         "awayMoneyline": 130
       },
+      "totalsBackfill": 10,
       "statsCorrect": true,
       "statsReturn": 64.94,
       "statsCover": true,
@@ -575,8 +589,9 @@
         "awaySpreadOdds": -110,
         "homeMoneyline": 810,
         "awayMoneyline": -1340
-      }
+      },
+      "totalsBackfill": 10
     }
   ],
-  "scoredAt": "2026-11-07T06:36:50.713279+00:00"
+  "scoredAt": "2026-11-11T17:43:41.198565+00:00"
 }

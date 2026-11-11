@@ -21,6 +21,7 @@ RULE_NAMES = {
     16: "Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)",
     20: "Revenge: under when the team that lost the last meeting at home earlier this season is the underdog with the better record (on trial)",
     21: "Revenge: under when the team that lost the last meeting at home by 10-19 is the underdog with the better record (on trial)",
+    22: "Under in a near pick'em (spread 2 or less) when the total is 3+ above the teams' season scoring averages and a team's last five went over by 6+ a game (on trial)",
 }
 RULE_BACKTEST = {
     3: "64.4% overs, 56-31 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 13-8",
@@ -31,6 +32,7 @@ RULE_BACKTEST = {
     16: "67.2% overs, 41-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-8",
     20: "65.2% unders, 58-31 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 19-14; 2024-now 14-9",
     21: "64.1% unders, 59-33 (2018-19 and 2021-22 to now); unseen 17-8; 2024-now 19-13",
+    22: "62.1% unders, 108-66 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 46-32; 2024-now 18-11",
 }
 
 # Retired 2026-11-03 (under 61% on 2018-19 and 2021-22 to now): 4, 5, 11, 12, 13, 15, 17, 18, 19. Earlier: 1, 2.

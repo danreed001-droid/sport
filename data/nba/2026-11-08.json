@@ -65,7 +65,8 @@
       },
       "statsSpread": 9.5,
       "time": "3:30 PM ET",
-      "totalsLine": 238.5
+      "totalsLine": 238.5,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "2-2",
@@ -127,7 +128,8 @@
       },
       "statsSpread": -8.5,
       "time": "6:00 PM ET",
-      "totalsLine": 216.5
+      "totalsLine": 216.5,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "0-2",
@@ -189,7 +191,24 @@
       },
       "statsSpread": -11.5,
       "time": "7:00 PM ET",
-      "totalsLine": 222.5
+      "totalsLine": 222.5,
+      "statsFavors": "Minnesota Timberwolves",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Minnesota Timberwolves: covered its last two games (by 2.5 at New Orleans Pelicans and by 17.5 at Houston Rockets), now at home in game 11 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 2.5 at New Orleans Pelicans and by 17.5 at Houston Rockets), now at home in game 11 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsBackfill": 10,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": true,
+      "statsSpreadReturn": 86.96
     },
     {
       "altCategoryTally": "0-4",
@@ -251,7 +270,24 @@
       },
       "statsSpread": -7.5,
       "time": "7:30 PM ET",
-      "totalsLine": 223.5
+      "totalsLine": 223.5,
+      "statsFavors": "Dallas Mavericks",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Dallas Mavericks: covered its last two games (by 5.5 vs Utah Jazz and by 11.5 at San Antonio Spurs), now at home in game 10 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 54: Backing Dallas Mavericks: covered its last two games (by 5.5 vs Utah Jazz and by 11.5 at San Antonio Spurs), now at home in game 10 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsBackfill": 10,
+      "statsCorrect": true,
+      "statsReturn": 32.79,
+      "statsCover": true,
+      "statsSpreadReturn": 93.46
     },
     {
       "altCategoryTally": "2-1",
@@ -313,7 +349,8 @@
       },
       "statsSpread": 13.5,
       "time": "8:00 PM ET",
-      "totalsLine": 221.5
+      "totalsLine": 221.5,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "2-2",
@@ -375,7 +412,8 @@
       },
       "statsSpread": 1.5,
       "time": "9:00 PM ET",
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "totalsBackfill": 10
     },
     {
       "altCategoryTally": "5-0",
@@ -451,8 +489,9 @@
       "statsCorrect": null,
       "statsReturn": null,
       "statsCover": true,
-      "statsSpreadReturn": 86.96
+      "statsSpreadReturn": 86.96,
+      "totalsBackfill": 10
     }
   ],
-  "scoredAt": "2026-11-09T07:13:00.393514+00:00"
+  "scoredAt": "2026-11-11T17:43:41.201298+00:00"
 }
