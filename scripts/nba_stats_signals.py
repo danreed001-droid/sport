@@ -38,6 +38,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   on a back-to-back (one family with 49).
   54 (on trial): back a home team that covered its last two games, in its
   first 20 games of the season, with at least a day off (family with 51-52).
+  55 (on trial): back a road team in its first road game after 3+ straight at
+  home, 1,000+ miles away, after a loss, with at least a day off.
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -73,6 +75,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from lib import action_network, espn, manual, store  # noqa: E402
 from lib.nba_absence import big_scorers, injury_status, watch_entries  # noqa: E402
 from lib.nba_revenge import revenge_facts  # noqa: E402
+from lib.nba_arenas import miles_between  # noqa: E402
 from score_slate import _same_team  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
@@ -172,6 +175,7 @@ ALLOWED_REST = {
     52: {"1", "2+"},
     53: {"b2b"},
     54: {"1", "2+"},
+    55: {"1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -667,6 +671,21 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 how = " and ".join(f"by {c[1]:g} {'vs' if c[2]['is_home'] else 'at'} {c[2]['opp']}" for c in covers)
                 picks.append((team, 54, f"Backing {team}: covered its last two games ({how}), now at home in game "
                                         f"{len(prior) + 1} of its season -- {RULE_BACKTEST.get(54, '')}."))
+
+        # Rule 55: back a road team in its first road game after 3+ straight
+        # home games, 1,000+ miles from home, that lost its last game (5+ games
+        # played; rested only, see ALLOWED_REST).
+        if not is_home and len(prior) >= 5 and not last["won"] and all(g["is_home"] for g in prior[-3:]):
+            far = miles_between(team, opp)
+            if far is not None and far >= 1000:
+                stand = 0
+                for g in reversed(prior):
+                    if not g["is_home"]:
+                        break
+                    stand += 1
+                picks.append((team, 55, f"Backing {team}: first road game after {stand} straight at home, about {far:,.0f} miles "
+                                        f"away, after losing {last['team_score']:g}-{last['opp_score']:g} to {last['opp']} "
+                                        f"-- {RULE_BACKTEST.get(55, '')}."))
 
         # Rule 49: fade a 7+ point underdog on a back-to-back whose last game
         # used 8 or fewer players for 10+ minutes (as backtested: 6+ games

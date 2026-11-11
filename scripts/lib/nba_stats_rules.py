@@ -34,6 +34,7 @@ RULE_NAMES = {
     52: "Back a home team that beat the spread by 15+ in each of its last two games, with at least a day off (on trial)",
     53: "Back a home favorite of 10+ vs. a team at .300 or worse on the second night of a back-to-back (on trial)",
     54: "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+    55: "Back a road team in its first road game after 3+ straight at home, 1,000+ miles away, after a loss, with at least a day off (on trial)",
 }
 RULE_BACKTEST = {
     2: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
@@ -59,6 +60,7 @@ RULE_BACKTEST = {
     52: "65.9% ATS, 58-30 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-5; 2024-now 26-12",
     53: "66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10",
     54: "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+    55: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19",
 }
 
 # Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the

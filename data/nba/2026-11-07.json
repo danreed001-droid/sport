@@ -494,7 +494,23 @@
       "statsSpread": 6.5,
       "time": "9:00 PM ET",
       "totalsLine": 224.5,
-      "totalsBackfill": 10
+      "totalsBackfill": 10,
+      "statsFavors": "Houston Rockets",
+      "statsRules": [
+        {
+          "rule": 55,
+          "name": "Back a road team in its first road game after 3+ straight at home, 1,000+ miles away, after a loss, with at least a day off (on trial)",
+          "backtest": "66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19",
+          "detail": "Backing Houston Rockets: first road game after 3 straight at home, about 1,015 miles away, after losing 107-117 to Minnesota Timberwolves -- 66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 55: Backing Houston Rockets: first road game after 3 straight at home, about 1,015 miles away, after losing 107-117 to Minnesota Timberwolves -- 66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19.",
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "3-1",
@@ -574,5 +590,5 @@
       "totalsBackfill": 10
     }
   ],
-  "scoredAt": "2026-11-11T17:43:41.200255+00:00"
+  "scoredAt": "2026-11-11T17:45:36.526956+00:00"
 }
