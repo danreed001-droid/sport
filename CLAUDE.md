@@ -340,6 +340,13 @@ category grades have held up: for each non-neutral grade, did the graded side
 win and cover, by category, full vs half grade, sport, lean size, and
 favorite vs underdog. It's a record of their grading, never a pick.
 
+A **Models** filter (multi-select chips, like Leagues; `DASH.models`, empty = all,
+saved in localStorage) sits in the scorecard's filters and the pick log: it limits
+the tiles, charts, legends, by-sport bars, chart tables, the pick log rows and the
+game cards' model badges to the chosen models (`shownWho`, `playModelOn`,
+`BADGE_OF`). NBA Totals follow NBA Stats and your O/U follows You; the
+agreement table hides when You isn't selected. Your pick row on each card always shows.
+
 Dashboard numbers all come from one calculation: `belongs` / `outcome` / `summarize` /
 `seriesFor` in `site/index.html` count over/unders (NBA Totals in NBA Stats, your O/U
 in You; `TOTALS_OF`) in the tiles, sparklines, running-profit and win-rate lines,
