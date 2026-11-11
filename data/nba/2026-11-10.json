@@ -97,8 +97,8 @@
       "confidence": "lean",
       "correct": null,
       "gameTotal": 216.5,
-      "gameTotalOverOdds": -116,
-      "gameTotalUnderOdds": -105,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
       "home": "Philadelphia 76ers",
       "homeMoneyline": 102,
       "homeNetRtg": 3.03,
@@ -122,10 +122,10 @@
       "statsLine": {
         "homeSpread": 1.5,
         "awaySpread": -1.5,
-        "homeSpreadOdds": -107,
-        "awaySpreadOdds": -113,
-        "homeMoneyline": -101,
-        "awayMoneyline": -117
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": 105,
+        "awayMoneyline": -124
       },
       "statsSpread": 1.5,
       "time": "8:00 PM ET",
@@ -159,9 +159,9 @@
       "awaySpreadOdds": -116,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 224.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "Phoenix Suns",
       "homeMoneyline": -168,
       "homeNetRtg": -2.52,
@@ -192,7 +192,7 @@
       },
       "statsSpread": -3.5,
       "time": "9:00 PM ET",
-      "totalsLine": 224.5
+      "totalsLine": 223.5
     },
     {
       "altCategoryTally": "5-3",
@@ -222,9 +222,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 227.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Utah Jazz",
       "homeMoneyline": 300,
       "homeNetRtg": -9.89,
@@ -246,16 +246,16 @@
         "Utah: Keyonte George (out), Jusuf Nurkic (out), Jaren Jackson Jr. (out, season-altering MCL tear), Lauri Markkanen (questionable, wrist) - extremely shorthanded"
       ],
       "statsLine": {
-        "homeSpread": 9.5,
-        "awaySpread": -9.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": 341,
-        "awayMoneyline": -438
+        "homeSpread": 6.5,
+        "awaySpread": -6.5,
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": 205,
+        "awayMoneyline": -249
       },
-      "statsSpread": 9.5,
+      "statsSpread": 6.5,
       "time": "9:00 PM ET",
-      "totalsLine": 227.5
+      "totalsLine": 226.5
     },
     {
       "altCategoryTally": "2-3",
@@ -286,8 +286,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 222.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Sacramento Kings",
       "homeMoneyline": 196,
       "homeNetRtg": -11.57,
@@ -309,14 +309,14 @@
         "Sacramento: Ben Simmons (out, long-term Achilles), Maxime Raynaud (out); Domantas Sabonis and Keegan Murray both questionable"
       ],
       "statsLine": {
-        "homeSpread": 6.5,
-        "awaySpread": -6.5,
-        "homeSpreadOdds": -111,
-        "awaySpreadOdds": -109,
-        "homeMoneyline": 196,
-        "awayMoneyline": -237
+        "homeSpread": 5.5,
+        "awaySpread": -5.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 180,
+        "awayMoneyline": -217
       },
-      "statsSpread": 6.5,
+      "statsSpread": 5.5,
       "time": "10:00 PM ET",
       "totalsLine": 222.5
     },
@@ -349,8 +349,8 @@
       "confidence": "lean",
       "correct": null,
       "gameTotal": 226.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Portland Trail Blazers",
       "homeMoneyline": 110,
       "homeNetRtg": 2.82,
