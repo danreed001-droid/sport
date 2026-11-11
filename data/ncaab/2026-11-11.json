@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-11",
+  "weekday": "Wednesday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-11T07:09:35Z",
+  "games": [
+    {
+      "espnId": "401920680",
+      "away": "Colgate Raiders",
+      "home": "St. John's Red Storm",
+      "time": "7:00 PM ET",
+      "homeSpread": -28.5,
+      "awaySpread": 28.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -20000,
+      "awayMoneyline": 3500,
+      "total": 156.5
+    },
+    {
+      "espnId": "401909524",
+      "away": "Marquette Golden Eagles",
+      "home": "Michigan Wolverines",
+      "time": "7:00 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -180,
+      "awayMoneyline": 150,
+      "total": 157.5
+    },
+    {
+      "espnId": "401925702",
+      "away": "Jacksonville State Gamecocks",
+      "home": "Houston Cougars",
+      "time": "8:00 PM ET",
+      "homeSpread": -36.5,
+      "awaySpread": 36.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "total": 135.5
+    },
+    {
+      "espnId": "401928824",
+      "away": "Robert Morris Colonials",
+      "home": "Arkansas Razorbacks",
+      "time": "8:00 PM ET",
+      "homeSpread": -31.5,
+      "awaySpread": 31.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "total": 158.5
+    },
+    {
+      "espnId": "401930177",
+      "away": "Arkansas-Pine Bluff Golden Lions",
+      "home": "UCLA Bruins",
+      "time": "9:00 PM ET",
+      "homeSpread": -44.5,
+      "awaySpread": 44.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "total": 157.5
+    },
+    {
+      "espnId": "401926062",
+      "away": "Lindenwood Lions",
+      "home": "Nebraska Cornhuskers",
+      "time": "9:00 PM ET",
+      "homeSpread": -34.5,
+      "awaySpread": 34.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 150.5
+    },
+    {
+      "espnId": "401918054",
+      "away": "USC Trojans",
+      "home": "California Golden Bears",
+      "time": "11:00 PM ET",
+      "homeSpread": 8.5,
+      "awaySpread": -8.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": 285,
+      "awayMoneyline": -360,
+      "total": 161.5
+    }
+  ]
+}
