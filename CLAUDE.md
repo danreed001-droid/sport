@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -150,6 +150,14 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   on the road it's 54%. Found on 2026-11-11 from seven scenario families (270
   variants; this family passes by luck ~5% of the time). 2026-11-02 Pelicans
   @ Grizzlies had 51 on New Orleans and 52 on Memphis: no pick, as live.
+  Rule 53 (on trial, one "tired-underdog" family with 49) backs a home
+  favorite of 10+ (tonight's `statsSpread`) vs. a team at .300 or worse (8+
+  games played) on the second night of a back-to-back: 76-38, unseen 23-14,
+  every counted season positive; it climbs with the spread (7+ 63.6%, 12+
+  74.7%), and the same bad teams with a day off covered 50% (194-193), so the
+  back-to-back is the signal. Found on 2026-11-11 by drilling into a lean
+  from the Knicks-Bucks game (which itself was NOT a back-to-back for
+  Milwaukee and isn't a rule-53 game); no 2026-27 games qualified at backfill.
   `scripts/archive_market.py` (each scoring and game-time run) saves Action
   Network's NBA board for today and tomorrow to `data/raw/market/nba/<date>.json`
   (consensus line, opener, bet/money splits, and `rlmFavorite`, the team rule
@@ -164,7 +172,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (`lib/picks.stats_view`: score_slate.py, the dashboard, pick log, rule
   records); every other model is still graded at the slate's line. Games
   from before 2026-11-05 have no statsLine and stay graded at the slate's.
-  Overlapping slices of one situation (NBA Stats 20-29, 35-40, 41-43, 44-48, 51-52; NBA Totals 4-8,
+  Overlapping slices of one situation (NBA Stats 20-29, 35-40, 41-43, 44-48, 49+53, 51-52; NBA Totals 4-8,
   9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).

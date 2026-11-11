@@ -34,6 +34,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   10+ each, with at least a day off.
   52 (on trial): back a home team that beat the spread by 15+ in each of its
   last two games, with at least a day off (one family with 51).
+  53 (on trial): fade a 10+ point road underdog at .300 or worse (8+ games)
+  on a back-to-back (one family with 49).
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -166,6 +168,7 @@ ALLOWED_REST = {
     50: {"b2b", "1", "2+"},
     51: {"1", "2+"},
     52: {"1", "2+"},
+    53: {"b2b"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -654,6 +657,15 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                                     f"(vs {last['opp']}), now a {my_spread:+g} underdog on the second night of a back-to-back "
                                     f"-- {RULE_BACKTEST.get(49, '')}."))
 
+        # Rule 53: fade a 10+ point road underdog with a record of .300 or worse
+        # (8+ games played) on the second night of a back-to-back -- back the
+        # home favorite. Same "tired underdog" family as rule 49.
+        if (not is_home and my_spread is not None and my_spread >= 10 and len(prior) >= 8 and team_pct <= 0.3
+                and (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days == 1):
+            picks.append((opp, 53, f"Fading {team}: {team_w}-{team_l} on the season, a {my_spread:+g} underdog on the road "
+                                   f"on the second night of a back-to-back (played {'vs' if last['is_home'] else 'at'} "
+                                   f"{last['opp']} last night) -- {RULE_BACKTEST.get(53, '')}."))
+
         # Keep only the rules whose backtest cleared 62% for this team's rest
         # (days off since its last game).
         gap = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days - 1
@@ -814,7 +826,7 @@ def run_for_date(session, points, by_team, q_cache, date_str, setup_failed=False
             ev = next((v for (a, h), v in tonight.items() if _same_team(away, a) and _same_team(home, h)), None)
             ctx = None if ev is None else {"state": ev["state"], "out": ev["out"], "status": ev["status"],
                                            "prior": g.get("statsRules") or [], "watch": []}
-            # Rules that read tonight's spread (43-49) use the market's current line
+            # Rules that read tonight's spread (43-49, 53) use the market's current line
             # (ESPN pickcenter / DraftKings), refreshed until tip-off and then kept
             # as statsSpread: a slate's line can be stale.
             # statsLine keeps the whole live line (spread, its odds, moneylines): NBA

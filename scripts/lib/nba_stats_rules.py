@@ -32,6 +32,7 @@ RULE_NAMES = {
     50: "Back the favorite when 60%+ of spread bets are on a 7+ point underdog but the line moved 1-4.5 pts toward the favorite (on trial)",
     51: "Back a losing-record team that won its last two games by 10+ each, with at least a day off (on trial)",
     52: "Back a home team that beat the spread by 15+ in each of its last two games, with at least a day off (on trial)",
+    53: "Back a home favorite of 10+ vs. a team at .300 or worse on the second night of a back-to-back (on trial)",
 }
 RULE_BACKTEST = {
     2: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
@@ -55,6 +56,7 @@ RULE_BACKTEST = {
     49: "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
     51: "69.2% ATS, 101-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 35-13; 2024-now 43-18",
     52: "65.9% ATS, 58-30 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-5; 2024-now 26-12",
+    53: "66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10",
 }
 
 # Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the
@@ -78,7 +80,7 @@ STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule pick
 # distinct families, not rules.
 FAMILY = {**{n: "road-upset" for n in range(20, 30)}, **{n: "blowout-loss" for n in range(35, 41)},
           **{n: "both-b2b" for n in range(41, 44)}, **{n: "revenge" for n in range(44, 49)},
-          51: "momentum", 52: "momentum"}
+          51: "momentum", 52: "momentum", 49: "tired-underdog", 53: "tired-underdog"}
 
 
 def families(nums):
