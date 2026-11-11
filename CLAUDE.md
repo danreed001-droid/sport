@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -173,6 +173,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   33-16, 2024-now 30-19. The weakest of 51-55: the same spot after a win is
   47.5% and it isn't steady as the miles go up; its family passes by luck
   about 1% of the time. Backfilled for 2026-27: 2 games.
+  Rule 56 (on trial, one "hard-win" family with 2 and 9) fades a team on the
+  second night of a back-to-back that won last night with a player logging
+  40+ minutes (`BoxCache.max_minutes`, the box score's MIN; both teams 5+
+  games): 120-73, unseen 41-21, 2024-now 38-22, no losing season. It needs
+  all three parts: after a loss it's 102-103, with rest 51%; 38+ min is 57.5%
+  and 42+ is 64.0%. From a 2026-11-11 split-season search of 206,000 side
+  combinations with a player box-score fact (137 held vs 85 by chance); its
+  family passes by luck 0.7% of the time. Rebounding facts (50+ team
+  rebounds vs. a team on a back-to-back: 56.6%) and totals with player facts
+  didn't clear the bar. Backfilled for 2026-27: 1 game (already a pick).
   NBA Totals rule 22 (on trial) bets the UNDER in a near pick'em (spread 2 or
   less) when the total is 3+ above the two teams' season scoring averages
   (`inflated_total` in `nba_totals_signals.py`: (home PF + away PA)/2 + (away
@@ -199,7 +209,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (`lib/picks.stats_view`: score_slate.py, the dashboard, pick log, rule
   records); every other model is still graded at the slate's line. Games
   from before 2026-11-05 have no statsLine and stay graded at the slate's.
-  Overlapping slices of one situation (NBA Stats 20-29, 35-40, 41-43, 44-48, 49+53, 51-52+54; NBA Totals 4-8,
+  Overlapping slices of one situation (NBA Stats 2+9+56, 20-29, 35-40, 41-43, 44-48, 49+53, 51-52+54; NBA Totals 4-8,
   9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).
