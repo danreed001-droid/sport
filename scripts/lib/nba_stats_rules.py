@@ -36,6 +36,11 @@ RULE_NAMES = {
     54: "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
     55: "Back a road team in its first road game after 3+ straight at home, 1,000+ miles away, after a loss, with at least a day off (on trial)",
     56: "Fade a team on a back-to-back that won last night with a player logging 40+ minutes (on trial)",
+    57: "Back a team beating the spread by 6+ a game over its last five vs. an opponent with no double-digit rebounder in its last two games, with at least a day off (on trial)",
+    58: "Fade a team that won its last game by 1-5 when tonight's opponent scored 130+ in its last game (on trial)",
+    59: "Fade a home team in its first game back from 4+ straight road games when it's being outscored by 5+ a game, with at least a day off (on trial)",
+    60: "Back a team that won its last two by 10+ vs. an opponent whose last game went over its total by 20+ (on trial)",
+    61: "Fade a team at .250 or worse (8+ games) that used 8 or fewer players for 10+ minutes in its last game (on trial)",
 }
 RULE_BACKTEST = {
     2: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
@@ -63,6 +68,11 @@ RULE_BACKTEST = {
     54: "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
     55: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19",
     56: "62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22",
+    57: "64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35",
+    58: "63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22",
+    59: "65.1% ATS, 69-37 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-7; 2024-now 27-16",
+    60: "64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27",
+    61: "61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22",
 }
 
 # Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the
@@ -86,7 +96,7 @@ STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule pick
 # distinct families, not rules.
 FAMILY = {**{n: "road-upset" for n in range(20, 30)}, **{n: "blowout-loss" for n in range(35, 41)},
           **{n: "both-b2b" for n in range(41, 44)}, **{n: "revenge" for n in range(44, 49)},
-          51: "momentum", 52: "momentum", 54: "momentum", 49: "tired-underdog", 53: "tired-underdog",
+          51: "momentum", 52: "momentum", 54: "momentum", 57: "momentum", 60: "momentum", 49: "tired-underdog", 53: "tired-underdog", 61: "tired-underdog",
           2: "hard-win", 9: "hard-win", 56: "hard-win"}
 
 

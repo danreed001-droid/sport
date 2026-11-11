@@ -42,6 +42,13 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   home, 1,000+ miles away, after a loss, with at least a day off.
   56 (on trial): fade a team on a back-to-back that won last night with a
   player at 40+ minutes (family with 2 and 9).
+  57-61 (on trial, 2026-11-11): 57 back a team beating the spread by 6+ a
+  game over its last five vs. an opponent with no double-digit rebounder in
+  its last two; 58 fade a 1-5 point winner when tonight's opponent scored
+  130+ last game; 59 fade a home team back from 4+ road games that's being
+  outscored by 5+ a game; 60 back a team that won its last two by 10+ vs. an
+  opponent whose last game went over by 20+; 61 fade a .250-or-worse team
+  that used 8 or fewer players last game.
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -160,6 +167,24 @@ def home_spread_of(event_id):
                     except (TypeError, ValueError):
                         pass
     return _HOME_SPREAD.get(str(event_id))
+_TOTAL_CLOSE = None
+
+
+def total_close_of(event_id):
+    """A finished game's closing total (data/raw/nba_lines.csv), or None."""
+    global _TOTAL_CLOSE
+    if _TOTAL_CLOSE is None:
+        _TOTAL_CLOSE = {}
+        if os.path.exists(LINES_CSV):
+            with open(LINES_CSV, encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    try:
+                        _TOTAL_CLOSE[r["game_id"]] = float(r["total_close"])
+                    except (TypeError, ValueError):
+                        pass
+    return _TOTAL_CLOSE.get(str(event_id))
+
+
 # Rest days (for the team the rule is about) on which each rule backtested
 # at 62%+ ATS: "b2b" = played yesterday, "1" = one day off, "2+" = two or more.
 ALLOWED_REST = {
@@ -179,6 +204,7 @@ ALLOWED_REST = {
     54: {"1", "2+"},
     55: {"1", "2+"},
     56: {"b2b"},
+    57: {"1", "2+"}, 58: {"b2b", "1", "2+"}, 59: {"1", "2+"}, 60: {"b2b", "1", "2+"}, 61: {"b2b", "1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -402,6 +428,17 @@ class BoxCache:
                 self.dirty = True
         return (e or {}).get("maxmin", {}).get(team)
 
+    def top_rebounds(self, event_id, team):
+        """The most rebounds by one of `team`'s players in that game (rule 57),
+        or None. Entries cached before this was added are fetched again once."""
+        e = self._entry(event_id)
+        if e and "topreb" not in e:
+            new = self._fetch(event_id)
+            if new:
+                e = self.data[event_id] = new
+                self.dirty = True
+        return (e or {}).get("topreb", {}).get(team)
+
     def is_regular_season(self, event_id):
         return self._entry(event_id).get("type") == 2
 
@@ -419,7 +456,7 @@ class BoxCache:
             return None
         box = d.get("boxscore", {})
         pts_by_team, to_by_team, ast_by_team, stl_by_team, ftm_by_team, reb_by_team, starters_by_team = {}, {}, {}, {}, {}, {}, {}
-        ast_p_by_team, tp_by_team, rot_by_team, maxmin_by_team = {}, {}, {}, {}
+        ast_p_by_team, tp_by_team, rot_by_team, maxmin_by_team, topreb_by_team = {}, {}, {}, {}, {}
         for t in box.get("players", []):
             if not t.get("statistics"):
                 continue
@@ -431,6 +468,7 @@ class BoxCache:
             mi = labels.index("MIN") if "MIN" in labels else None
             rot = 0
             top_min = [0.0, None]
+            top_reb = 0
             r = labels.index("REB") if "REB" in labels else None
             a = labels.index("AST") if "AST" in labels else None
             pts, reb, starters, ast_p = {}, 0, [], {}
@@ -455,6 +493,8 @@ class BoxCache:
                     # Player rebounds, summed -- the backtest's definition (the
                     # team total can also include uncredited "team rebounds").
                     reb += int(st[r]) if r is not None and r < len(st) else 0
+                    if r is not None and r < len(st):
+                        top_reb = max(top_reb, int(st[r]))
                 except (TypeError, ValueError, KeyError):
                     continue
             pts_by_team[t["team"]["displayName"]] = pts
@@ -465,6 +505,7 @@ class BoxCache:
                 maxmin_by_team[t["team"]["displayName"]] = top_min
             if r is not None:
                 reb_by_team[t["team"]["displayName"]] = reb
+                topreb_by_team[t["team"]["displayName"]] = top_reb
         for t in box.get("teams", []):
             stats = {s.get("name"): s.get("displayValue") for s in t.get("statistics", [])}
             name = t["team"]["displayName"]
@@ -484,7 +525,7 @@ class BoxCache:
         if not pts_by_team:
             return None
         return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team, "stl": stl_by_team, "ftm": ftm_by_team, "reb": reb_by_team,
-                "starters": starters_by_team, "ast_p": ast_p_by_team, "tp": tp_by_team, "rot": rot_by_team, "maxmin": maxmin_by_team, "type": d.get("header", {}).get("season", {}).get("type")}
+                "starters": starters_by_team, "ast_p": ast_p_by_team, "tp": tp_by_team, "rot": rot_by_team, "maxmin": maxmin_by_team, "topreb": topreb_by_team, "type": d.get("header", {}).get("season", {}).get("type")}
 
     def save(self):
         if self.dirty:
@@ -738,6 +779,55 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 picks.append((opp, 56, f"Fading {team}: won last night ({last['team_score']:g}-{last['opp_score']:g} "
                                        f"{'vs' if last['is_home'] else 'at'} {last['opp']}) with {mm[1] or 'a player'} playing "
                                        f"{mm[0]:g} minutes, now on the second night of a back-to-back -- {RULE_BACKTEST.get(56, '')}."))
+
+        # Rules 57-61 (2026-11-11 search; both teams 5+ games played, as backtested).
+        if len(prior) >= 5 and len(opp_prior) >= 5:
+            opp_last = opp_prior[-1]
+            # 57: back a team beating the closing spread by 6+ a game over its
+            # last five (4+ with a line) vs. an opponent with no double-digit
+            # rebounder in either of its last two games. Rested only.
+            beat5 = [g["team_score"] - g["opp_score"] + (hs if g["is_home"] else -hs)
+                     for g in prior[-5:] for hs in [home_spread_of(g["event_id"])] if hs is not None]
+            if len(beat5) >= 4 and sum(beat5) / len(beat5) >= 6:
+                tops = [points.top_rebounds(g["event_id"], opp) for g in opp_prior[-2:]]
+                if all(t is not None and t < 10 for t in tops):
+                    picks.append((team, 57, f"Backing {team}: beat the spread by {sum(beat5) / len(beat5):.1f} a game over its last "
+                                            f"five, and {opp} had no double-digit rebounder in its last two games (top: "
+                                            f"{tops[0]} and {tops[1]}) -- {RULE_BACKTEST.get(57, '')}."))
+            # 58: fade a team that won its last game by 1-5 when tonight's
+            # opponent scored 130+ in its last game.
+            won_by = last["team_score"] - last["opp_score"]
+            if 1 <= won_by <= 5 and opp_last["team_score"] >= 130:
+                picks.append((opp, 58, f"Fading {team}: won its last game by {won_by:g} ({last['team_score']:g}-{last['opp_score']:g} "
+                                       f"{'vs' if last['is_home'] else 'at'} {last['opp']}), and {opp} scored "
+                                       f"{opp_last['team_score']:g} in its last game -- {RULE_BACKTEST.get(58, '')}."))
+            # 59: fade a home team in its first game back from 4+ straight road
+            # games when it's being outscored by 5+ a game. Rested only.
+            diff = sum(g["team_score"] - g["opp_score"] for g in prior) / len(prior)
+            if is_home and all(not g["is_home"] for g in prior[-4:]) and diff <= -5:
+                trip = 0
+                for g in reversed(prior):
+                    if g["is_home"]:
+                        break
+                    trip += 1
+                picks.append((opp, 59, f"Fading {team}: first home game after {trip} straight on the road, and it's being "
+                                       f"outscored by {-diff:.1f} a game this season -- {RULE_BACKTEST.get(59, '')}."))
+            # 60: back a team that won its last two by 10+ vs. an opponent whose
+            # last game went over its closing total by 20+.
+            if all(g["team_score"] - g["opp_score"] >= 10 for g in prior[-2:]):
+                close = total_close_of(opp_last["event_id"])
+                over_by = None if close is None else opp_last["team_score"] + opp_last["opp_score"] - close
+                if over_by is not None and over_by >= 20:
+                    picks.append((team, 60, f"Backing {team}: won its last two by 10+, and {opp}'s last game "
+                                            f"({opp_last['team_score']:g}-{opp_last['opp_score']:g} {'vs' if opp_last['is_home'] else 'at'} "
+                                            f"{opp_last['opp']}) went over its total of {close:g} by {over_by:g} -- {RULE_BACKTEST.get(60, '')}."))
+            # 61: fade a team at .250 or worse (8+ games) that used 8 or fewer
+            # players for 10+ minutes in its last game.
+            if len(prior) >= 8 and team_pct <= 0.25:
+                rot = points.rotation(last["event_id"], team)
+                if rot is not None and rot <= 8:
+                    picks.append((opp, 61, f"Fading {team}: {team_w}-{team_l} on the season and only {rot} players played 10+ "
+                                           f"minutes in its last game (vs {last['opp']}) -- {RULE_BACKTEST.get(61, '')}."))
 
         # Keep only the rules whose backtest cleared 62% for this team's rest
         # (days off since its last game).
