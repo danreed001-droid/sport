@@ -32,6 +32,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   48 fades it as a home favorite after a home loss it was expected to take.
   51 (on trial): back a losing-record team that won its last two games by
   10+ each, with at least a day off.
+  52 (on trial): back a home team that beat the spread by 15+ in each of its
+  last two games, with at least a day off (one family with 51).
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -163,6 +165,7 @@ ALLOWED_REST = {
     49: {"b2b"},
     50: {"b2b", "1", "2+"},
     51: {"1", "2+"},
+    52: {"1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -622,6 +625,21 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 how = " and ".join(f"{g['team_score']:g}-{g['opp_score']:g} {'vs' if g['is_home'] else 'at'} {g['opp']}" for g in two)
                 picks.append((team, 51, f"Backing {team}: {team_w}-{team_l} on the season but won its last two games by "
                                         f"{margins[0]:g} and {margins[1]:g} ({how}) -- {RULE_BACKTEST.get(51, '')}."))
+
+        # Rule 52: back a home team that beat the closing spread by 15+ in each of
+        # its last two games (spreads from data/raw/nba_lines.csv; 5+ games
+        # played; rested only, see ALLOWED_REST -- on a back-to-back it went 10-10).
+        if is_home and len(prior) >= 5:
+            beat = []
+            for g in prior[-2:]:
+                hs = home_spread_of(g["event_id"])
+                if hs is None:
+                    break
+                beat.append(g["team_score"] - g["opp_score"] + (hs if g["is_home"] else -hs))
+            if len(beat) == 2 and all(b >= 15 for b in beat):
+                how = " and ".join(f"{g['team_score']:g}-{g['opp_score']:g} {'vs' if g['is_home'] else 'at'} {g['opp']}" for g in prior[-2:])
+                picks.append((team, 52, f"Backing {team}: beat the spread by {beat[0]:g} and {beat[1]:g} in its last two games "
+                                        f"({how}), now at home -- {RULE_BACKTEST.get(52, '')}."))
 
         # Rule 49: fade a 7+ point underdog on a back-to-back whose last game
         # used 8 or fewer players for 10+ minutes (as backtested: 6+ games

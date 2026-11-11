@@ -31,6 +31,7 @@ RULE_NAMES = {
     49: "Fade a 7+ point underdog on a back-to-back that used 8 or fewer players (10+ min) last game (on trial)",
     50: "Back the favorite when 60%+ of spread bets are on a 7+ point underdog but the line moved 1-4.5 pts toward the favorite (on trial)",
     51: "Back a losing-record team that won its last two games by 10+ each, with at least a day off (on trial)",
+    52: "Back a home team that beat the spread by 15+ in each of its last two games, with at least a day off (on trial)",
 }
 RULE_BACKTEST = {
     2: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
@@ -53,6 +54,7 @@ RULE_BACKTEST = {
     50: "61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)",
     49: "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
     51: "69.2% ATS, 101-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 35-13; 2024-now 43-18",
+    52: "65.9% ATS, 58-30 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-5; 2024-now 26-12",
 }
 
 # Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the
@@ -75,7 +77,8 @@ STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule pick
 # several firing on one game is not independent agreement: "stacked" counts
 # distinct families, not rules.
 FAMILY = {**{n: "road-upset" for n in range(20, 30)}, **{n: "blowout-loss" for n in range(35, 41)},
-          **{n: "both-b2b" for n in range(41, 44)}, **{n: "revenge" for n in range(44, 49)}}
+          **{n: "both-b2b" for n in range(41, 44)}, **{n: "revenge" for n in range(44, 49)},
+          51: "momentum", 52: "momentum"}
 
 
 def families(nums):

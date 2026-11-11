@@ -467,23 +467,7 @@
         "MEM has the league's best record/point differential despite trading away Ja Morant; NO's Jordan Poole was out until approx. today, Yves Missi still out"
       ],
       "time": "8:00 PM ET",
-      "totalsBackfill": 9,
-      "statsFavors": "New Orleans Pelicans",
-      "statsRules": [
-        {
-          "rule": 51,
-          "name": "Back a losing-record team that won its last two games by 10+ each, with at least a day off (on trial)",
-          "backtest": "69.2% ATS, 101-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 35-13; 2024-now 43-18",
-          "detail": "Backing New Orleans Pelicans: 2-4 on the season but won its last two games by 12 and 22 (132-120 vs Sacramento Kings and 121-99 vs Atlanta Hawks) -- 69.2% ATS, 101-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 35-13; 2024-now 43-18.",
-          "backfill": true
-        }
-      ],
-      "statsBackfill": true,
-      "statsCheck": "Rule 51: Backing New Orleans Pelicans: 2-4 on the season but won its last two games by 12 and 22 (132-120 vs Sacramento Kings and 121-99 vs Atlanta Hawks) -- 69.2% ATS, 101-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 35-13; 2024-now 43-18.",
-      "statsCorrect": true,
-      "statsReturn": 198.0,
-      "statsCover": true,
-      "statsSpreadReturn": 98.04
+      "totalsBackfill": 9
     },
     {
       "altCategoryTally": "2-3",
