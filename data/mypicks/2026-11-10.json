@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-10",
+  "picks": {
+    "nba-2026-11-10-la-clippers-phoenix-suns-9-00-pm-et": {
+      "sport": "nba",
+      "away": "LA Clippers",
+      "home": "Phoenix Suns",
+      "time": "9:00 PM ET",
+      "side": "away",
+      "team": "LA Clippers",
+      "spread": 7,
+      "spreadOdds": -195,
+      "moneyline": 140,
+      "submittedAt": "2026-11-11T00:47:29+00:00",
+      "issue": 24,
+      "alt": true,
+      "posted": {
+        "spread": 3.5,
+        "spreadOdds": -116
+      }
+    }
+  },
+  "scores": {
+    "nba-2026-11-10-boston-celtics-philadelphia-76ers-8-00-pm-et": "NNNNNNNaN",
+    "nba-2026-11-10-la-clippers-phoenix-suns-9-00-pm-et": "NaNaNNNaa",
+    "nba-2026-11-10-miami-heat-utah-jazz-9-00-pm-et": "NNNaNNNNN",
+    "nba-2026-11-10-milwaukee-bucks-new-york-knicks-7-30-pm-et": "NNNhNNNhN",
+    "nba-2026-11-10-oklahoma-city-thunder-portland-trail-blazers-11-00-pm-et": "NNNNNNNNN",
+    "nba-2026-11-10-orlando-magic-sacramento-kings-10-00-pm-et": "NNhhNNNNN"
+  },
+  "totals": {}
+}
