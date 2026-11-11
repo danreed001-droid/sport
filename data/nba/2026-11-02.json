@@ -3,7 +3,7 @@
   "weekday": "Monday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-11T19:52:43.110723+00:00",
+  "scoredAt": "2026-11-11T20:20:52.667192+00:00",
   "generatedAt": "2026-11-02T16:50:00Z",
   "games": [
     {
@@ -370,11 +370,8 @@
         "SAC missing Sabonis, De'Andre Hunter, and Zach LaVine all for the season; DAL's Cooper Flagg and Kyrie Irving both trending toward available but not fully confirmed"
       ],
       "statsBackfill": true,
-      "statsCheck": "Rule 54: Backing Dallas Mavericks: covered its last two games (by 10.5 vs Houston Rockets and by 28.5 vs Oklahoma City Thunder), now at home in game 7 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "statsCorrect": null,
-      "statsCover": false,
+      "statsCheck": "Rule 54: Backing Dallas Mavericks: covered its last two games (by 10.5 vs Houston Rockets and by 28.5 vs Oklahoma City Thunder), now at home in game 7 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 62: Backing Dallas Mavericks: covered its last 3 games, and Sacramento Kings's top scorer Darius Acuff Jr. scored 38 last game (26.3 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16.",
       "statsFavors": "Dallas Mavericks",
-      "statsReturn": null,
       "statsRules": [
         {
           "backfill": true,
@@ -382,9 +379,15 @@
           "detail": "Backing Dallas Mavericks: covered its last two games (by 10.5 vs Houston Rockets and by 28.5 vs Oklahoma City Thunder), now at home in game 7 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
           "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
           "rule": 54
+        },
+        {
+          "rule": 62,
+          "name": "Back a team that covered its last 3+ games vs. an opponent whose top scorer scored 10+ over his average last game, with at least a day off (on trial)",
+          "backtest": "68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16",
+          "detail": "Backing Dallas Mavericks: covered its last 3 games, and Sacramento Kings's top scorer Darius Acuff Jr. scored 38 last game (26.3 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16.",
+          "backfill": true
         }
       ],
-      "statsSpreadReturn": -100.0,
       "time": "8:00 PM ET",
       "totalsBackfill": 10,
       "totalsCheck": "Rule 3: Dallas Mavericks (home) won its last game on 2026-10-30 and Kyrie Irving (35) is out tonight. (backfilled from the DraftKings closing line)",
@@ -399,7 +402,11 @@
           "name": "Over when the home team won its last game and that game's 30-39 point scorer is out (on trial)",
           "rule": 3
         }
-      ]
+      ],
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "2-1",
@@ -863,7 +870,7 @@
         "LAL on 2nd night of a back-to-back (beat TOR 131-125 on 11/1), now built around Luka Doncic post-LeBron departure; MIA's Giannis has not yet translated to a positive team net rating"
       ],
       "statsBackfill": true,
-      "statsCheck": "Rule 51: Backing Miami Heat: 2-4 on the season but won its last two games by 12 and 20 (129-117 at Atlanta Hawks and 145-125 vs Indiana Pacers) -- 69.2% ATS, 101-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 35-13; 2024-now 43-18. Rule 60: Backing Miami Heat: won its last two by 10+, and Los Angeles Lakers's last game (131-125 vs Toronto Raptors) went over its total of 224.5 by 31.5 -- 64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27.",
+      "statsCheck": "Rule 51: Backing Miami Heat: 2-4 on the season but won its last two games by 12 and 20 (129-117 at Atlanta Hawks and 145-125 vs Indiana Pacers) -- 69.2% ATS, 101-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 35-13; 2024-now 43-18. Rule 60: Backing Miami Heat: won its last two by 10+, and Los Angeles Lakers's last game (131-125 vs Toronto Raptors) went over its total of 224.5 by 31.5 -- 64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27. Rule 63: Fading Los Angeles Lakers: won last night shooting 18-of-37 (49%) from three, now on the second night of a back-to-back -- 61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33.",
       "statsFavors": "Miami Heat",
       "statsRules": [
         {
@@ -878,6 +885,13 @@
           "name": "Back a team that won its last two by 10+ vs. an opponent whose last game went over its total by 20+ (on trial)",
           "backtest": "64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27",
           "detail": "Backing Miami Heat: won its last two by 10+, and Los Angeles Lakers's last game (131-125 vs Toronto Raptors) went over its total of 224.5 by 31.5 -- 64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27.",
+          "backfill": true
+        },
+        {
+          "rule": 63,
+          "name": "Fade a team on a back-to-back that won last night shooting 45%+ from three (25+ attempts) (on trial)",
+          "backtest": "61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33",
+          "detail": "Fading Los Angeles Lakers: won last night shooting 18-of-37 (49%) from three, now on the second night of a back-to-back -- 61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33.",
           "backfill": true
         }
       ],

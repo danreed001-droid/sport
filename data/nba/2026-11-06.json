@@ -3,7 +3,7 @@
   "weekday": "Friday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-11T19:52:43.114578+00:00",
+  "scoredAt": "2026-11-11T20:20:52.668899+00:00",
   "generatedAt": "2026-11-06T16:25:04Z",
   "games": [
     {
@@ -444,7 +444,23 @@
       "statsSpread": -6.5,
       "time": "8:00 PM ET",
       "totalsBackfill": 10,
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "statsFavors": "Dallas Mavericks",
+      "statsRules": [
+        {
+          "rule": 64,
+          "name": "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
+          "backtest": "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
+          "detail": "Backing Dallas Mavericks: 5-3 against the spread this season, vs. Utah Jazz, 0-3 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 64: Backing Dallas Mavericks: 5-3 against the spread this season, vs. Utah Jazz, 0-3 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
+      "statsCorrect": true,
+      "statsReturn": 38.91,
+      "statsCover": true,
+      "statsSpreadReturn": 89.29
     },
     {
       "altCategoryTally": "0-3",

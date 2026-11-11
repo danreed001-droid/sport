@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -205,6 +205,23 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   teams 59.5%). Backfilled for 2026-27: 57 2-1, 58 1-1, 59 1-1, 60 1-1, 61
   0-2 (several on games that already had a pick; four left alone because an
   existing pick was on the other side).
+  Rules 62-64 (on trial) came from a 2026-11-11 search adding star-player
+  (top scorer by points per game, 5+ games: missed / big night), pace,
+  schedule-density and home/road-record facts; those new facts alone were
+  weak (7 pairs vs 3.6 by chance). 62 ("momentum") backs a team that covered
+  its last 3+ games with a line vs. an opponent whose top scorer scored 10+
+  over his average last game, rested: 71-33 (83-42 any rest), unseen 38-11,
+  2024-now 23-16; climbs 8+ 58.6% / 10+ 66.4% / 12+ 71.8%. 63 ("hard-win"
+  with 2, 9, 56) fades a team on a back-to-back that won last night shooting
+  45%+ from three on 25+ attempts (`BoxCache.threes`): 152-96, unseen 54-25,
+  but 2024-now 39-33 and 2025-26 14-16; rested it's 48-51%, after a loss
+  28-33. 64 backs a home team covering 60%+ this season (8+ games with a
+  line) vs. a team .250 or worse on the road (3+ road games), rested:
+  106-61, unseen 30-24 (just over 55%), 2024-now 44-15; it doesn't strengthen
+  with a higher bar (65%+ ATS: 54.7%). An OT winner with a 30+ scorer
+  (146-88) was left out: rule 2 already covers most of it and the rest is
+  57.9%. Backfilled for 2026-27: 62 0-1, 63 0-2, 64 4-0 (one new pick; the
+  rest on games that already had one).
   NBA Totals rule 22 (on trial) bets the UNDER in a near pick'em (spread 2 or
   less) when the total is 3+ above the two teams' season scoring averages
   (`inflated_total` in `nba_totals_signals.py`: (home PF + away PA)/2 + (away
@@ -231,7 +248,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (`lib/picks.stats_view`: score_slate.py, the dashboard, pick log, rule
   records); every other model is still graded at the slate's line. Games
   from before 2026-11-05 have no statsLine and stay graded at the slate's.
-  Overlapping slices of one situation (NBA Stats 2+9+56, 20-29, 35-40, 41-43, 44-48, 49+53+61, 51-52+54+57+60; NBA Totals 4-8,
+  Overlapping slices of one situation (NBA Stats 2+9+56+63, 20-29, 35-40, 41-43, 44-48, 49+53+61, 51-52+54+57+60+62; NBA Totals 4-8,
   9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).

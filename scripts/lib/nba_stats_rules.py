@@ -41,6 +41,9 @@ RULE_NAMES = {
     59: "Fade a home team in its first game back from 4+ straight road games when it's being outscored by 5+ a game, with at least a day off (on trial)",
     60: "Back a team that won its last two by 10+ vs. an opponent whose last game went over its total by 20+ (on trial)",
     61: "Fade a team at .250 or worse (8+ games) that used 8 or fewer players for 10+ minutes in its last game (on trial)",
+    62: "Back a team that covered its last 3+ games vs. an opponent whose top scorer scored 10+ over his average last game, with at least a day off (on trial)",
+    63: "Fade a team on a back-to-back that won last night shooting 45%+ from three (25+ attempts) (on trial)",
+    64: "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
 }
 RULE_BACKTEST = {
     2: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
@@ -73,6 +76,9 @@ RULE_BACKTEST = {
     59: "65.1% ATS, 69-37 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-7; 2024-now 27-16",
     60: "64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27",
     61: "61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22",
+    62: "68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16",
+    63: "61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33",
+    64: "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
 }
 
 # Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the
@@ -96,8 +102,8 @@ STACKED_BACKTEST = "67.5% ATS, 27-13 (replay on 6 unseen seasons); one-rule pick
 # distinct families, not rules.
 FAMILY = {**{n: "road-upset" for n in range(20, 30)}, **{n: "blowout-loss" for n in range(35, 41)},
           **{n: "both-b2b" for n in range(41, 44)}, **{n: "revenge" for n in range(44, 49)},
-          51: "momentum", 52: "momentum", 54: "momentum", 57: "momentum", 60: "momentum", 49: "tired-underdog", 53: "tired-underdog", 61: "tired-underdog",
-          2: "hard-win", 9: "hard-win", 56: "hard-win"}
+          51: "momentum", 52: "momentum", 54: "momentum", 57: "momentum", 60: "momentum", 62: "momentum", 49: "tired-underdog", 53: "tired-underdog", 61: "tired-underdog",
+          2: "hard-win", 9: "hard-win", 56: "hard-win", 63: "hard-win"}
 
 
 def families(nums):

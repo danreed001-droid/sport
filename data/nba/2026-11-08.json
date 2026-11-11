@@ -3,7 +3,7 @@
   "weekday": "Sunday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-11T19:52:43.117187+00:00",
+  "scoredAt": "2026-11-11T20:20:52.671073+00:00",
   "generatedAt": "2026-11-08T16:28:53Z",
   "games": [
     {
@@ -183,9 +183,7 @@
         "Jazz: Jaren Jackson Jr., Jusuf Nurkic, Trey Alexander all out; Lauri Markkanen questionable. Wolves: Anthony Edwards out (knee surgery) despite being #1 in the NBA in NetRtg; Donte DiVincenzo also out"
       ],
       "statsBackfill": true,
-      "statsCheck": "Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 2.5 at New Orleans Pelicans and by 17.5 at Houston Rockets), now at home in game 11 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "statsCorrect": null,
-      "statsCover": true,
+      "statsCheck": "Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 2.5 at New Orleans Pelicans and by 17.5 at Houston Rockets), now at home in game 11 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 64: Backing Minnesota Timberwolves: 9-1 against the spread this season, vs. Utah Jazz, 0-4 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
       "statsFavors": "Minnesota Timberwolves",
       "statsLine": {
         "awayMoneyline": 457,
@@ -195,7 +193,6 @@
         "homeSpread": -11.5,
         "homeSpreadOdds": -115
       },
-      "statsReturn": null,
       "statsRules": [
         {
           "backfill": true,
@@ -203,13 +200,23 @@
           "detail": "Backing Minnesota Timberwolves: covered its last two games (by 2.5 at New Orleans Pelicans and by 17.5 at Houston Rockets), now at home in game 11 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
           "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
           "rule": 54
+        },
+        {
+          "rule": 64,
+          "name": "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
+          "backtest": "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
+          "detail": "Backing Minnesota Timberwolves: 9-1 against the spread this season, vs. Utah Jazz, 0-4 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
+          "backfill": true
         }
       ],
       "statsSpread": -11.5,
-      "statsSpreadReturn": 86.96,
       "time": "7:00 PM ET",
       "totalsBackfill": 10,
-      "totalsLine": 222.5
+      "totalsLine": 222.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": true,
+      "statsSpreadReturn": 86.96
     },
     {
       "altCategoryTally": "0-4",
@@ -262,9 +269,7 @@
         "Nets: on a back-to-back (played @Atlanta Nov 7), Day'Ron Sharpe a game-time decision. Mavericks: Kyrie Irving questionable (knee, dated report), Dereck Lively II out"
       ],
       "statsBackfill": true,
-      "statsCheck": "Rule 54: Backing Dallas Mavericks: covered its last two games (by 5.5 vs Utah Jazz and by 11.5 at San Antonio Spurs), now at home in game 10 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "statsCorrect": true,
-      "statsCover": true,
+      "statsCheck": "Rule 54: Backing Dallas Mavericks: covered its last two games (by 5.5 vs Utah Jazz and by 11.5 at San Antonio Spurs), now at home in game 10 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 64: Backing Dallas Mavericks: 6-3 against the spread this season, vs. Brooklyn Nets, 1-4 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
       "statsFavors": "Dallas Mavericks",
       "statsLine": {
         "awayMoneyline": 248,
@@ -274,7 +279,6 @@
         "homeSpread": -7.5,
         "homeSpreadOdds": -107
       },
-      "statsReturn": 32.79,
       "statsRules": [
         {
           "backfill": true,
@@ -282,13 +286,23 @@
           "detail": "Backing Dallas Mavericks: covered its last two games (by 5.5 vs Utah Jazz and by 11.5 at San Antonio Spurs), now at home in game 10 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
           "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
           "rule": 54
+        },
+        {
+          "rule": 64,
+          "name": "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
+          "backtest": "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
+          "detail": "Backing Dallas Mavericks: 6-3 against the spread this season, vs. Brooklyn Nets, 1-4 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
+          "backfill": true
         }
       ],
       "statsSpread": -7.5,
-      "statsSpreadReturn": 93.46,
       "time": "7:30 PM ET",
       "totalsBackfill": 10,
-      "totalsLine": 223.5
+      "totalsLine": 223.5,
+      "statsCorrect": true,
+      "statsReturn": 32.79,
+      "statsCover": true,
+      "statsSpreadReturn": 93.46
     },
     {
       "altCategoryTally": "2-1",

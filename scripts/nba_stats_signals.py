@@ -49,6 +49,10 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   outscored by 5+ a game; 60 back a team that won its last two by 10+ vs. an
   opponent whose last game went over by 20+; 61 fade a .250-or-worse team
   that used 8 or fewer players last game.
+  62-64 (on trial, 2026-11-11): 62 back a team that covered its last 3+ vs.
+  an opponent whose top scorer scored 10+ over his average last game; 63 fade
+  a team on a back-to-back that won last night shooting 45%+ from three; 64
+  back a home team covering 60%+ this season vs. a team .250 or worse on the road.
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -205,6 +209,7 @@ ALLOWED_REST = {
     55: {"1", "2+"},
     56: {"b2b"},
     57: {"1", "2+"}, 58: {"b2b", "1", "2+"}, 59: {"1", "2+"}, 60: {"b2b", "1", "2+"}, 61: {"b2b", "1", "2+"},
+    62: {"1", "2+"}, 63: {"b2b"}, 64: {"1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -828,6 +833,60 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 if rot is not None and rot <= 8:
                     picks.append((opp, 61, f"Fading {team}: {team_w}-{team_l} on the season and only {rot} players played 10+ "
                                            f"minutes in its last game (vs {last['opp']}) -- {RULE_BACKTEST.get(61, '')}."))
+
+        # Rules 62-64 (2026-11-11 search; both teams 5+ games played, as backtested).
+        if len(prior) >= 5 and len(opp_prior) >= 5:
+            def covered(g):
+                hs = home_spread_of(g["event_id"])
+                if hs is None:
+                    return None
+                cm = g["team_score"] - g["opp_score"] + (hs if g["is_home"] else -hs)
+                return None if cm == 0 else cm > 0
+            # 62: back a team that covered its last 3+ games (with a line) vs. an
+            # opponent whose top scorer (best per game, 5+ games) scored 10+ over
+            # his average last game. Rested only.
+            streak = 0
+            for g in reversed(prior):
+                c = covered(g)
+                if c is None:
+                    continue
+                if not c:
+                    break
+                streak += 1
+            if streak >= 3:
+                tot = {}
+                for g in opp_prior:
+                    for pid, (pts, name) in (points.get(g["event_id"], opp) or {}).items():
+                        t = tot.setdefault(pid, [0, 0, name])
+                        t[0] += 1
+                        t[1] += pts
+                best = max(((v[1] / v[0], pid, v[2]) for pid, v in tot.items() if v[0] >= 5), default=None)
+                if best:
+                    last_pts = ((points.get(opp_prior[-1]["event_id"], opp) or {}).get(best[1]) or [None])[0]
+                    if last_pts is not None and last_pts >= best[0] + 10:
+                        picks.append((team, 62, f"Backing {team}: covered its last {streak} games, and {opp}'s top scorer "
+                                                f"{best[2]} scored {last_pts} last game ({best[0]:.1f} a game this season) "
+                                                f"-- {RULE_BACKTEST.get(62, '')}."))
+            # 63: fade a team on the second night of a back-to-back that won
+            # last night shooting 45%+ from three on 25+ attempts.
+            if last["won"] and (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days == 1:
+                three = points.threes(last["event_id"], team)
+                if three and three[1] >= 25 and three[0] / three[1] >= 0.45:
+                    picks.append((opp, 63, f"Fading {team}: won last night shooting {three[0]}-of-{three[1]} "
+                                           f"({three[0] / three[1]:.0%}) from three, now on the second night of a "
+                                           f"back-to-back -- {RULE_BACKTEST.get(63, '')}."))
+            # 64: back a home team covering 60%+ this season (8+ games with a
+            # line) vs. a road team that's .250 or worse on the road (3+ road
+            # games). Rested only.
+            if is_home:
+                cv = [c for c in (covered(g) for g in prior) if c is not None]
+                road = [g for g in opp_prior if not g["is_home"]]
+                if len(cv) >= 8 and sum(cv) / len(cv) >= 0.6 and len(road) >= 3:
+                    rw = sum(1 for g in road if g["won"]) / len(road)
+                    if rw <= 0.25:
+                        picks.append((team, 64, f"Backing {team}: {sum(cv)}-{len(cv) - sum(cv)} against the spread this season, "
+                                                f"vs. {opp}, {sum(1 for g in road if g['won'])}-{len(road) - sum(1 for g in road if g['won'])} "
+                                                f"on the road -- {RULE_BACKTEST.get(64, '')}."))
 
         # Keep only the rules whose backtest cleared 62% for this team's rest
         # (days off since its last game).

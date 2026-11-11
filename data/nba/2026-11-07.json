@@ -3,7 +3,7 @@
   "weekday": "Saturday",
   "sport": "nba",
   "scored": true,
-  "scoredAt": "2026-11-11T19:52:43.115916+00:00",
+  "scoredAt": "2026-11-11T20:20:52.669979+00:00",
   "generatedAt": "2026-11-07T16:30:00Z",
   "games": [
     {
@@ -570,9 +570,7 @@
         "NetRtg blend: away +8.26 (rank~4.0, 89.7 pct) vs home +5.61 (rank~9.5, 70.7 pct) \u2014 gap 19.0 (<30, Ledger skips this game)",
         "Injuries: Blazers missing Morant, Sharpe, Krejci (all out) \u2014 severe cluster incl. likely best player; Spurs missing Harris and Quaintance (out, lower-impact role players)"
       ],
-      "statsCheck": "Rule 47: Backing Portland Trail Blazers: Portland Trail Blazers lost the last meeting by 11 (Portland Trail Blazers 101 @ San Antonio Spurs 112, 2026-04-09) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
-      "statsCorrect": false,
-      "statsCover": false,
+      "statsCheck": "Rule 47: Backing Portland Trail Blazers: Portland Trail Blazers lost the last meeting by 11 (Portland Trail Blazers 101 @ San Antonio Spurs 112, 2026-04-09) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22. Rule 63: Fading San Antonio Spurs: won last night shooting 15-of-30 (50%) from three, now on the second night of a back-to-back -- 61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33.",
       "statsFavors": "Portland Trail Blazers",
       "statsLine": {
         "awayMoneyline": -217,
@@ -582,20 +580,29 @@
         "homeSpread": 5.5,
         "homeSpreadOdds": -108
       },
-      "statsReturn": -100.0,
       "statsRules": [
         {
           "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
           "detail": "Backing Portland Trail Blazers: Portland Trail Blazers lost the last meeting by 11 (Portland Trail Blazers 101 @ San Antonio Spurs 112, 2026-04-09) as the underdog; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
           "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
           "rule": 47
+        },
+        {
+          "rule": 63,
+          "name": "Fade a team on a back-to-back that won last night shooting 45%+ from three (25+ attempts) (on trial)",
+          "backtest": "61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33",
+          "detail": "Fading San Antonio Spurs: won last night shooting 15-of-30 (50%) from three, now on the second night of a back-to-back -- 61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33.",
+          "backfill": true
         }
       ],
       "statsSpread": 5.5,
-      "statsSpreadReturn": -100.0,
       "time": "10:00 PM ET",
       "totalsBackfill": 10,
-      "totalsLine": 229.5
+      "totalsLine": 229.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     }
   ]
 }
