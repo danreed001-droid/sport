@@ -148,7 +148,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   rest (10-10 on a back-to-back); 2022-23 was 5-8. Beating the spread twice
   running climbs steadily (5+ 53.6%, 10+ 56.3%, 15+ 58.5%; at home 63.0%), but
   on the road it's 54%. Found on 2026-11-11 from seven scenario families (270
-  variants; this family passes by luck ~5% of the time). 2026-11-02 Pelicans
+  variants; this family passes by luck ~2% of the time). 2026-11-02 Pelicans
   @ Grizzlies had 51 on New Orleans and 52 on Memphis: no pick, as live.
   Rule 53 (on trial, one "tired-underdog" family with 49) backs a home
   favorite of 10+ (tonight's `statsSpread`) vs. a team at .300 or worse (8+
@@ -164,23 +164,27 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   rested, 202-126 any rest (30-21 on a back-to-back); flat 50% from game 21
   on and 46% on the road; 2024-now only 52-38 and 2020-21 was 24-28. Found
   on 2026-11-11 from a split-season search of 243,000 three-way side
-  combinations that was luck overall (162 held vs 247 by chance); its own
-  family passes by luck 0.6% of the time. Backfilled for 2026-27: 10-8
+  combinations (162 held in both halves vs 89 by chance); its own family
+  passes by luck 0.3% of the time. Backfilled for 2026-27: 10-8
   (2026-11-02 Pelicans @ Grizzlies left with no pick: 51 was on New Orleans).
   Rule 55 (on trial) backs a road team in its first road game after 3+
   straight at home, 1,000+ miles from home (`lib/nba_arenas.py`, arena to
   arena), after losing its last game, with at least a day off: 97-50, unseen
   33-16, 2024-now 30-19. The weakest of 51-55: the same spot after a win is
-  47.5%, it isn't steady as the miles go up, and its family passes by luck
-  about 7% of the time. Backfilled for 2026-27: 2 games.
+  47.5% and it isn't steady as the miles go up; its family passes by luck
+  about 1% of the time. Backfilled for 2026-27: 2 games.
   NBA Totals rule 22 (on trial) bets the UNDER in a near pick'em (spread 2 or
   less) when the total is 3+ above the two teams' season scoring averages
   (`inflated_total` in `nba_totals_signals.py`: (home PF + away PA)/2 + (away
   PF + home PA)/2, both 5+ games) and a team's last five went over their
   closing totals by 6+ a game: 108-66, unseen 46-32, 2024-now 18-11. Tighter
   spreads and bigger gaps do better (spread 3-/5+ 61.0%, 4.5- 54%). From a
-  2026-11-11 split-season totals search (5,240 combinations, luck overall);
-  its family passes by luck 0.4% of the time. No 2026-27 games yet.
+  2026-11-11 split-season totals search (5,240 combinations, about chance
+  overall); its family passes by luck under 0.1% of the time. No 2026-27 games yet.
+  Shuffle checks must permute only games that have a result (2% of games
+  are pushes or have no line): an early version of the 2026-11-11 checks
+  shuffled the blanks in too, which overstated chance for side searches; the
+  figures for 51-55 and Totals 22 above are from the corrected check.
   `scripts/archive_market.py` (each scoring and game-time run) saves Action
   Network's NBA board for today and tomorrow to `data/raw/market/nba/<date>.json`
   (consensus line, opener, bet/money splits, and `rlmFavorite`, the team rule
