@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -133,6 +133,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   swapped). Checked until
   tip-off, then frozen; no feed means it just doesn't fire. Public %, money %
   and plain line moves on their own tested at 49-54% (2023-24 to now).
+  Rule 51 (on trial) backs a team with a losing record that won its last two
+  games by 10+ each, with at least a day off (5+ games played): 101-45 rested,
+  114-62 any rest (13-17 on a back-to-back, so those are left out); every
+  season positive. It came from a 2026-11-11 search of schedule, travel,
+  home-stand, vs-the-spread and streak facts (8,300 side and 6,600 total
+  combinations) that was otherwise no better than luck (39 passes vs 32 by
+  chance); the losing-record cut was chosen after looking, so treat the
+  backtest as optimistic. Backfilled for 2026-27 (2 games). It can point the
+  other way from rules 20-29 (a disagreement means no pick).
   `scripts/archive_market.py` (each scoring and game-time run) saves Action
   Network's NBA board for today and tomorrow to `data/raw/market/nba/<date>.json`
   (consensus line, opener, bet/money splits, and `rlmFavorite`, the team rule

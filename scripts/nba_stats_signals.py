@@ -30,6 +30,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   44-48 (on trial), revenge: the team that lost the last meeting
   (lib/nba_revenge.py) -- 44-47 back it after an upset loss / a 10-19 loss,
   48 fades it as a home favorite after a home loss it was expected to take.
+  51 (on trial): back a losing-record team that won its last two games by
+  10+ each, with at least a day off.
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -160,6 +162,7 @@ ALLOWED_REST = {
         39: {}, 40: {"rested": True}, 41: {}, 42: {}, 43: {}, 44: {}, 45: {}, 46: {}, 47: {}, 48: {}}.items()},
     49: {"b2b"},
     50: {"b2b", "1", "2+"},
+    51: {"1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -608,6 +611,17 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 picks.append((team, 19, f"Backing {team}: lost at home to worse-record {last['opp']} "
                                      f"({last['team_score']:g}-{last['opp_score']:g}) last night, now on the road on a "
                                      f"back-to-back -- teams in this spot covered 65.9% ATS (29-15, 2022-23 to 2025-26)."))
+
+        # Rule 51: back a team with a losing record that won its last two games
+        # by 10+ each (as backtested: 5+ games played this season; rested only,
+        # see ALLOWED_REST -- on a back-to-back it went 13-17).
+        if len(prior) >= 5 and team_pct < 0.5:
+            two = prior[-2:]
+            margins = [g["team_score"] - g["opp_score"] for g in two]
+            if all(m >= 10 for m in margins):
+                how = " and ".join(f"{g['team_score']:g}-{g['opp_score']:g} {'vs' if g['is_home'] else 'at'} {g['opp']}" for g in two)
+                picks.append((team, 51, f"Backing {team}: {team_w}-{team_l} on the season but won its last two games by "
+                                        f"{margins[0]:g} and {margins[1]:g} ({how}) -- {RULE_BACKTEST.get(51, '')}."))
 
         # Rule 49: fade a 7+ point underdog on a back-to-back whose last game
         # used 8 or fewer players for 10+ minutes (as backtested: 6+ games
