@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-11",
+  "picks": {
+    "nba-2026-11-11-los-angeles-lakers-milwaukee-bucks-8-00-pm-et": {
+      "sport": "nba",
+      "away": "Los Angeles Lakers",
+      "home": "Milwaukee Bucks",
+      "time": "8:00 PM ET",
+      "side": "away",
+      "team": "Los Angeles Lakers",
+      "spread": -10.5,
+      "spreadOdds": -115,
+      "moneyline": -650,
+      "submittedAt": "2026-11-11T23:54:06+00:00",
+      "issue": 25
+    }
+  },
+  "scores": {
+    "nba-2026-11-11-cleveland-cavaliers-new-york-knicks-7-00-pm-et": "NNNNNNNhN",
+    "nba-2026-11-11-los-angeles-lakers-milwaukee-bucks-8-00-pm-et": "NaNaNNNaN"
+  },
+  "totals": {}
+}
