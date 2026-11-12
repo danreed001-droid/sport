@@ -273,7 +273,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).
-- **Refresh button** (pick sheet's top bar): re-fetches `data.json` in place (pending picks kept) and offers a link that opens a `refresh` issue; `.github/workflows/refresh-intake.yml` (owner's issues only) starts `diamond-ledger.yml` and `nba-gametime.yml` and closes it, and `pages.yml` rebuilds when they finish. A static page can't start a workflow without a token, hence the issue, as for picks and hand-entered data.
+- **Refresh button** (pick sheet's top bar): re-fetches `data.json` in place (pending picks kept) and offers a link that opens a `refresh` issue; `.github/workflows/refresh-intake.yml` (owner's issues only) starts `diamond-ledger.yml` and closes it, and `pages.yml` rebuilds when it finishes. It used to start `nba-gametime.yml` too; the two then collided pushing today's NBA slate and the scoring run failed (2026-11-12), so now both workflows' push steps retry a conflicted rebase with `-X theirs` (this run's lines win) and push only if the touched JSON still parses. A static page can't start a workflow without a token, hence the issue, as for picks and hand-entered data.
 - `.github/workflows/nba-gametime.yml` re-runs only `nba_stats_signals.py` and
   `nba_totals_signals.py` every 15 minutes, 4 PM-midnight ET, so injury-based
   rules (NBA Stats 18, NBA Totals 3) and totals lines are checked near

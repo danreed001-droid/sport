@@ -70,9 +70,21 @@ jobs:
             exit 0
           fi
           git commit -m "NBA game-time picks $(TZ=America/New_York date +'%F %H:%M ET')"
+          # A plain rebase first. If it conflicts (the scoring and game-time runs
+          # both rewrite today's NBA slate and market file), rebase again keeping
+          # this run's version of the conflicting lines, and only push if every
+          # JSON file this commit touches still parses.
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0
-            git rebase --abort 2>/dev/null || true  # a real conflict: the next run redoes it from scratch
+            git rebase --abort 2>/dev/null || true
+            if git pull --rebase -X theirs origin main; then
+              if git diff --name-only HEAD~1 HEAD -- '*.json' | xargs -r python -c "import json,sys; [json.load(open(f, encoding='utf-8')) for f in sys.argv[1:]]"; then
+                git push origin HEAD:main && exit 0
+              else
+                echo "::warning::A merged JSON file did not parse; not pushing this attempt."
+              fi
+            fi
+            git rebase --abort 2>/dev/null || true  # still stuck: the next run redoes it from scratch
             sleep $((i * 10))
           done
           exit 1
