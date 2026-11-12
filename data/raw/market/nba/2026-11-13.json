@@ -1,7 +1,7 @@
 {
  "date": "2026-11-13",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-12T23:42:56+00:00",
+ "fetchedAt": "2026-11-12T23:49:40+00:00",
  "games": [
   {
    "away": "New York Knicks",
@@ -84,14 +84,14 @@
     "money_home": null
    },
    "total": {
-    "now": 244.5,
+    "now": 243.5,
     "open": 244.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": 205,
+    "away": -250
    },
    "rlmFavorite": null
   },
@@ -130,14 +130,14 @@
     "money_home": null
    },
    "total": {
-    "now": 218.5,
+    "now": 218,
     "open": 218.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": -1500,
-    "away": 870
+    "home": -1539,
+    "away": 885
    },
    "rlmFavorite": null
   },
@@ -147,20 +147,20 @@
    "start": "2026-11-14T02:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -12,
+    "home": -13.5,
     "open": -10.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": 226.5,
+    "now": 218.5,
     "open": 236.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": -550,
-    "away": 400
+    "home": -750,
+    "away": 528
    },
    "rlmFavorite": null
   },
@@ -205,8 +205,8 @@
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": 245,
+    "away": -300
    },
    "rlmFavorite": null
   }

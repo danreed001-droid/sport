@@ -1,27 +1,27 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401916983,2026-11-12,HT,Austria Vienna,0,-,Benfica,1,-,-,-,3:00 PM
+401916983,2026-11-12,FT,Austria Vienna,1,-,Benfica,3,-,-,-,3:00 PM
 401928138,2026-11-12,FT,Sparta Prague,0,-,Torreense,3,-,-,-,12:00 PM
-401878034,2026-11-12,Scheduled,Atlético Junior,0,-,Deportivo Pasto,0,-,-,-,5:00 PM
+401878034,2026-11-12,HT,Atlético Junior,0,-,Deportivo Pasto,0,-,-,-,6:00 PM
 401877890,2026-11-12,Scheduled,Boyacá Chicó FC,0,-,Llaneros FC,0,-,-,-,7:00 PM
 401928527,2026-11-12,AET,Levante,2,-,CD Tarancon,1,-,-,-,1:00 PM
-401928562,2026-11-12,90'+4',Deportivo,1,-,CE Europa,0,-,-,-,2:00 PM
+401928562,2026-11-12,FT,Deportivo,1,-,CE Europa,0,-,-,-,2:00 PM
 401928506,2026-11-12,FT,Albacete,3,-,CS Puertollano,0,-,-,-,12:30 PM
 401928540,2026-11-12,FT,Dux Logroño,3,-,Osasuna,2,-,-,-,1:00 PM
 401928551,2026-11-12,AET,Real Betis,3,-,CD Artistico Navalcarnero,2,-,-,-,1:00 PM
-401929778,2026-11-12,89',Guadeloupe,3,-,Barbados,0,-,-,-,2:00 PM
+401929778,2026-11-12,FT,Guadeloupe,3,-,Barbados,0,-,-,-,2:00 PM
 401929797,2026-11-12,FT,Guyana,6,-,Cayman Islands,0,-,-,-,2:00 PM
 401929777,2026-11-12,FT,Cuba,7,-,Bonaire,1,-,-,-,2:00 PM
-401929779,2026-11-12,Scheduled,Martinique,0,-,Aruba,0,-,-,-,5:00 PM
-401929796,2026-11-12,Scheduled,Trinidad and Tobago,0,-,Antigua and Barbuda,0,-,-,-,6:00 PM
+401929779,2026-11-12,90'+5',Martinique,0,-,Aruba,0,-,-,-,5:00 PM
+401929796,2026-11-12,HT,Trinidad and Tobago,3,-,Antigua and Barbuda,1,-,-,-,6:00 PM
 401929776,2026-11-12,Scheduled,Panama,0,-,Curaçao,0,-,-,-,7:30 PM
 401861146,2026-11-12,FT,Cyprus,1,-,Armenia,1,-,-,-,12:00 PM
 401861145,2026-11-12,FT,Belgium,2,-,Türkiye,1,-,-,-,12:00 PM
-401861147,2026-11-12,49',Finland,0,-,Albania,1,-,-,-,2:45 PM
-401861148,2026-11-12,47',Spain,1,-,Czechia,0,-,-,-,2:45 PM
-401861150,2026-11-12,49',Croatia,0,-,England,1,-,-,-,2:45 PM
-401861151,2026-11-12,HT,France,1,-,Italy,1,-,-,-,2:45 PM
-401861152,2026-11-12,48',Latvia,0,-,Montenegro,0,-,-,-,2:45 PM
-401861149,2026-11-12,48',Belarus,2,-,San Marino,0,-,-,-,2:45 PM
+401861147,2026-11-12,FT,Finland,0,-,Albania,2,-,-,-,2:45 PM
+401861148,2026-11-12,FT,Spain,2,-,Czechia,0,-,-,-,2:45 PM
+401861150,2026-11-12,FT,Croatia,1,-,England,2,-,-,-,2:45 PM
+401861151,2026-11-12,FT,France,1,-,Italy,3,-,-,-,2:45 PM
+401861152,2026-11-12,FT,Latvia,1,-,Montenegro,2,-,-,-,2:45 PM
+401861149,2026-11-12,FT,Belarus,2,-,San Marino,0,-,-,-,2:45 PM
 401906458,2026-11-12,FT,India,0,-,New Zealand,5,-,-,-,1:00 AM
 401930962,2026-11-12,FT,Russia,3,-,Uzbekistan,2,-,-,-,10:00 AM
 401933115,2026-11-12,FT,Suriname,0,-,Lithuania,0,-,-,-,12:00 PM
@@ -33,10 +33,10 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401927210,2026-11-12,FT,Zimbabwe,0,-,Equatorial Guinea,0,-,-,-,11:00 AM
 401927184,2026-11-12,FT,Guinea-Bissau,1,-,Madagascar,1,-,-,-,11:00 AM
 401927189,2026-11-12,FT,Eritrea,1,-,Guinea,2,-,-,-,12:00 PM
-401927209,2026-11-12,88',Central African Republic,1,-,Benin,4,-,-,-,2:00 PM
-401927207,2026-11-12,90'+2',Namibia,0,-,Cameroon,2,-,-,-,2:00 PM
-401927213,2026-11-12,88',Gambia,1,-,Ivory Coast,2,-,-,-,2:00 PM
-401927202,2026-11-12,89',Sudan,1,-,Senegal,4,-,-,-,2:00 PM
+401927209,2026-11-12,FT,Central African Republic,1,-,Benin,4,-,-,-,2:00 PM
+401927207,2026-11-12,FT,Namibia,0,-,Cameroon,2,-,-,-,2:00 PM
+401927213,2026-11-12,FT,Gambia,1,-,Ivory Coast,2,-,-,-,2:00 PM
+401927202,2026-11-12,FT,Sudan,1,-,Senegal,4,-,-,-,2:00 PM
 401931922,2026-11-12,Scheduled,Leones Negros,0,-,Club Atlético Morelia,0,-,-,-,9:00 PM
 401933861,2026-11-12,FT,Polonia Bytom,0,-,Gornik Zabrze,6,-,-,-,4:30 AM
 401933766,2026-11-12,FT,OFK Mladost DG,1,-,Iskra,3,-,-,-,5:00 AM
@@ -58,20 +58,20 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929701,2026-11-12,FT,Greece U21,1,-,Iceland U21,1,-,-,-,8:00 AM
 401933455,2026-11-12,FT,Ukraine U21,0,-,Scotland U21,4,-,-,-,8:00 AM
 401933438,2026-11-12,FT,North Macedonia U21,0,-,Serbia U21,2,-,-,-,8:00 AM
-401875813,2026-11-12,Scheduled,Independiente Rivadavia,0,-,Estudiantes de La Plata,0,-,-,-,6:00 PM
-401860434,2026-11-12,Scheduled,Operário PR,0,-,Ponte Preta,0,-,-,-,5:00 PM
-401860436,2026-11-12,Scheduled,Athletic,0,-,São Bernardo,0,-,-,-,6:00 PM
-401933238,2026-11-12,Scheduled,Progreso,0,-,Cerro Largo,0,-,-,-,6:00 PM
-401930994,2026-11-12,Scheduled,Monagas SC,0,-,Academia Puerto Cabello,0,-,-,-,5:00 PM
-401930227,2026-11-12,Scheduled,Nacional Potosí,0,-,Real Potosí,0,-,-,-,6:00 PM
-401879608,2026-11-12,Scheduled,Deportivo Mixco,0,-,Aurora FC,0,-,-,-,5:00 PM
-401899695,2026-11-12,Scheduled,CD Municipal Limeño,0,-,Águila,0,-,-,-,4:30 PM
-401899770,2026-11-12,Scheduled,Inca Aruba,0,-,Atletico Balboa,0,-,-,-,4:30 PM
+401875813,2026-11-12,HT,Independiente Rivadavia,0,-,Estudiantes de La Plata,0,-,-,-,6:00 PM
+401860434,2026-11-12,90'+2',Operário PR,1,-,Ponte Preta,0,-,-,-,5:00 PM
+401860436,2026-11-12,45'+2',Athletic,0,-,São Bernardo,0,-,-,-,6:00 PM
+401933238,2026-11-12,45'+4',Progreso,0,-,Cerro Largo,1,-,-,-,6:00 PM
+401930994,2026-11-12,90'+2',Monagas SC,0,-,Academia Puerto Cabello,0,-,-,-,5:00 PM
+401930227,2026-11-12,45'+2',Nacional Potosí,4,-,Real Potosí,2,-,-,-,6:00 PM
+401879608,2026-11-12,HT,Deportivo Mixco,1,-,Aurora FC,0,-,-,-,5:00 PM
+401899695,2026-11-12,FT,CD Municipal Limeño,1,-,Águila,1,-,-,-,4:30 PM
+401899770,2026-11-12,FT,Inca Aruba,1,-,Atletico Balboa,4,-,-,-,4:30 PM
 401929793,2026-11-12,FT,Mercyhurst,0,-,Long Island University,1,-,-,-,1:00 PM
-401929794,2026-11-12,Delay,Central Connecticut,0,-,Fairleigh Dickinson,0,-,-,-,3:00 PM
-401929760,2026-11-12,14',Harvard,0,-,Cornell,0,-,-,-,3:30 PM
-401929739,2026-11-12,Scheduled,Akron,0,-,Creighton,0,-,-,-,5:00 PM
-401929736,2026-11-12,Scheduled,NC State,0,-,North Carolina,0,-,-,-,5:30 PM
+401929794,2026-11-12,52',Central Connecticut,0,-,Fairleigh Dickinson,0,-,-,-,3:00 PM
+401929760,2026-11-12,FT,Harvard,1,-,Cornell,2,-,-,-,3:30 PM
+401929739,2026-11-12,75',Akron,3,-,Creighton,0,-,-,-,5:00 PM
+401929736,2026-11-12,HT,NC State,0,-,North Carolina,0,-,-,-,5:30 PM
 401929761,2026-11-12,Scheduled,Yale,0,-,Pennsylvania,0,-,-,-,7:00 PM
 401929740,2026-11-12,Scheduled,Seton Hall,0,-,Georgetown,0,-,-,-,7:30 PM
 401929737,2026-11-12,Scheduled,Syracuse,0,-,SMU,0,-,-,-,8:30 PM
@@ -80,16 +80,16 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929972,2026-11-12,AGT,Stonehill,0,-,Fairleigh Dickinson,1,-,-,-,12:00 PM
 401929971,2026-11-12,FT-Pens,Wagner,0,-,Central Connecticut,0,-,-,-,1:00 PM
 401929955,2026-11-12,FT,Siena,0,-,Quinnipiac,1,-,-,-,1:00 PM
-401931333,2026-11-12,77',Texas Southern,2,-,Alabama A&M,1,-,-,-,2:00 PM
-401929886,2026-11-12,78',Duke,0,-,North Carolina,1,-,-,-,2:00 PM
-401931340,2026-11-12,42',South Dakota,0,-,North Dakota State,1,-,-,-,3:00 PM
-401929949,2026-11-12,13',Princeton,0,-,Columbia,0,-,-,-,3:30 PM
-401929968,2026-11-12,Scheduled,Illinois State,0,-,Southern Illinois,0,-,-,-,4:00 PM
-401929980,2026-11-12,Scheduled,SIU Edwardsville,0,-,UT Martin,0,-,-,-,4:00 PM
-401931292,2026-11-12,Scheduled,Texas,0,-,Arkansas,0,-,-,-,4:30 PM
-401931328,2026-11-12,Scheduled,Incarnate Word,0,-,Lamar,0,-,-,-,4:30 PM
-401931332,2026-11-12,Scheduled,Southern,0,-,Grambling,0,-,-,-,5:00 PM
-401929954,2026-11-12,Scheduled,Fairfield,0,-,Niagara,0,-,-,-,6:00 PM
+401931333,2026-11-12,AGT,Texas Southern,2,-,Alabama A&M,3,-,-,-,2:00 PM
+401929886,2026-11-12,FT,Duke,0,-,North Carolina,1,-,-,-,2:00 PM
+401931340,2026-11-12,FT,South Dakota,0,-,North Dakota State,1,-,-,-,3:00 PM
+401929949,2026-11-12,FT,Princeton,0,-,Columbia,1,-,-,-,3:30 PM
+401929968,2026-11-12,FT,Illinois State,0,-,Southern Illinois,1,-,-,-,4:00 PM
+401929980,2026-11-12,FT,SIU Edwardsville,1,-,UT Martin,2,-,-,-,4:00 PM
+401931292,2026-11-12,90',Texas,2,-,Arkansas,2,-,-,-,4:30 PM
+401931328,2026-11-12,FT,Incarnate Word,0,-,Lamar,1,-,-,-,4:30 PM
+401931332,2026-11-12,71',Southern,0,-,Grambling,0,-,-,-,5:00 PM
+401929954,2026-11-12,42',Fairfield,1,-,Niagara,1,-,-,-,6:00 PM
 401929950,2026-11-12,Scheduled,Brown,0,-,Dartmouth,0,-,-,-,7:00 PM
 401929969,2026-11-12,Scheduled,Murray State,0,-,Drake,0,-,-,-,7:00 PM
 401931341,2026-11-12,Scheduled,St. Thomas,0,-,Oral Roberts,0,-,-,-,7:00 PM
