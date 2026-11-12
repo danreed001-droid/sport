@@ -1,7 +1,7 @@
 {
  "date": "2026-11-11",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-11T22:43:09+00:00",
+ "fetchedAt": "2026-11-12T02:10:22+00:00",
  "games": [
   {
    "away": "Washington Wizards",
@@ -170,20 +170,20 @@
    "start": "2026-11-12T02:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 4.5,
+    "home": 3.5,
     "open": 4.5,
-    "tix_home": 25,
-    "money_home": 31
+    "tix_home": 28,
+    "money_home": 47
    },
    "total": {
-    "now": 214.5,
+    "now": 215.5,
     "open": 217.5,
-    "tix_over": 79,
-    "money_over": 76
+    "tix_over": 78,
+    "money_over": 77
    },
    "moneyline": {
     "home": 150,
-    "away": -180
+    "away": -179
    },
    "rlmFavorite": null
   },
@@ -196,17 +196,17 @@
     "home": -6.5,
     "open": -5.5,
     "tix_home": 36,
-    "money_home": 34
+    "money_home": 41
    },
    "total": {
-    "now": 220.5,
+    "now": 219.5,
     "open": 222.5,
-    "tix_over": 84,
-    "money_over": 84
+    "tix_over": 85,
+    "money_over": 85
    },
    "moneyline": {
-    "home": -270,
-    "away": 220
+    "home": -250,
+    "away": 205
    },
    "rlmFavorite": null
   },
@@ -218,18 +218,18 @@
    "spread": {
     "home": -2.5,
     "open": 2.5,
-    "tix_home": 40,
-    "money_home": 44
+    "tix_home": 44,
+    "money_home": 43
    },
    "total": {
     "now": 224.5,
     "open": 224.5,
-    "tix_over": 78,
-    "money_over": 71
+    "tix_over": 80,
+    "money_over": 76
    },
    "moneyline": {
-    "home": -145,
-    "away": 118
+    "home": -146,
+    "away": 123
    },
    "rlmFavorite": null
   }

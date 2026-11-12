@@ -511,7 +511,7 @@
       "awaySpreadOdds": -110,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 214.5,
+      "gameTotal": 215.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110,
       "home": "Utah Jazz",
@@ -536,14 +536,14 @@
       "statsLine": {
         "homeSpread": 4.5,
         "awaySpread": -4.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
         "homeMoneyline": 150,
         "awayMoneyline": -179
       },
       "statsSpread": 4.5,
       "time": "9:00 PM ET",
-      "totalsLine": 214.5
+      "totalsLine": 215.5
     },
     {
       "altCategoryTally": "1-2",
@@ -574,8 +574,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 219.5,
-      "gameTotalOverOdds": -111,
-      "gameTotalUnderOdds": -109,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -115,
       "home": "Houston Rockets",
       "homeMoneyline": -217,
       "homeNetRtg": 9.45,
@@ -600,8 +600,8 @@
         "awaySpread": 6.5,
         "homeSpreadOdds": -115,
         "awaySpreadOdds": -106,
-        "homeMoneyline": -264,
-        "awayMoneyline": 217
+        "homeMoneyline": -249,
+        "awayMoneyline": 205
       },
       "statsSpread": -6.5,
       "time": "9:30 PM ET",
@@ -662,8 +662,8 @@
       "statsLine": {
         "homeSpread": -2.5,
         "awaySpread": 2.5,
-        "homeSpreadOdds": -109,
-        "awaySpreadOdds": -111,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -106,
         "homeMoneyline": -147,
         "awayMoneyline": 124
       },
