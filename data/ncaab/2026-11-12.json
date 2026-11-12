@@ -4,9 +4,64 @@
   "sport": "ncaab",
   "scored": false,
   "generatedAt": "2026-11-12T16:32:13Z",
-  "auditChanges": ["NCAAB Montana State @ BYU: Ledger BYU solid -> skip (off-gap); the slate skipped the early-season 50/50 blend (blended offense ranks #75 vs #7 of 365, gap 18.7 < 30)."],
+  "auditChanges": [
+    "NCAAB Montana State @ BYU: Ledger BYU solid -> skip (off-gap); the slate skipped the early-season 50/50 blend (blended offense ranks #75 vs #7 of 365, gap 18.7 < 30)."
+  ],
   "auditedAt": "2026-11-12T16:46:24Z",
   "games": [
-    {"altCategoryTally":"1-5","altConfidence":"lean","altCorrect":null,"altCover":null,"altPick":"BYU Cougars","altReasons":["Scoring margin: BYU's +15.39 PD/g (50/50 blend: +22.67 over 3 games this season, +8.11 last season) clears Montana State's +4.0 (+1.5 in 2 games, +6.5 last season) -- favors BYU.","Rest: Montana State has had four days off since beating Long Beach State on Saturday; BYU has had one day off since hosting Queens on Tuesday (not a back-to-back) -- favors Montana State.","Travel: Montana State is on a roughly 500-mile true road trip from Bozeman to Provo while BYU stays home -- favors BYU.","Injuries/Lineup: no notable injury report surfaced for either team -- both appear to be at full strength -- neutral.","Form: BYU is 3-0 with elite shooting efficiency (#5 nationally in BartTorvik AdjOE), including a season-opening win over Ohio State at a neutral site in Salt Lake City; Montana State is a modest 1-1 -- favors BYU.","Motivation/Spot: no concrete edge found either way -- neutral.","Venue/Crowd: the Marriott Center (~19,000) is known for a loud environment when BYU has national buzz, which it does after the Ohio State win -- favors BYU.","Market: BYU -23.5 is drawing about 77% of bets; no opening line could be confirmed to check for movement, so no reverse-line-movement signal could be verified -- neutral.","Matchup splits: Montana State's defense (BartTorvik AdjDE #139 nationally) against BYU's top-5 offense (17 threes vs Queens) sets up BYU's offense to operate largely unimpeded -- favors BYU."],"altReturn":null,"altSpreadReturn":null,"auditNote":"Ledger now skips (off-gap): with the required early-season 50/50 blend the offense-rank gap is 18.7 percentile points, under 30; also fixed BYU's game count, the Queens date (Tue, not a back-to-back) and the rebounding claim.","away":"Montana State Bobcats","awayMoneyline":2200,"awayPDpg":4,"awayRank":null,"awayScore":null,"awaySpread":23.5,"awaySpreadOdds":-112,"confidence":"skip","correct":null,"gameTotal":164.5,"gameTotalOverOdds":-110,"gameTotalUnderOdds":-110,"home":"BYU Cougars","homeMoneyline":-8000,"homePDpg":15.39,"homeRank":23,"homeScore":null,"homeSpread":-23.5,"homeSpreadOdds":-108,"offGap":18.68,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +4.0 vs +15.39 (50/50 blend of this season + 2025-26 final: Montana State +1.5 in 2 GP & +6.5; BYU +22.67 in 3 GP & +8.11)","Adj. offense rank (Sports Reference, blended) #75 vs #7 of 365 -- off pct 79.7 vs 98.4, gap 18.68 (below 30 threshold: off-gap skip)","Adj. defense rank (blended) #291 vs #122 -- no def-veto (moot after the off-gap skip)","No notable injuries either side; BYU last played Tue Nov 10 (one day off), Montana State Sat Nov 7"],"time":"9:00 PM ET"}
+    {
+      "altCategoryTally": "1-5",
+      "altConfidence": "lean",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": "BYU Cougars",
+      "altReasons": [
+        "Scoring margin: BYU's +15.39 PD/g (50/50 blend: +22.67 over 3 games this season, +8.11 last season) clears Montana State's +4.0 (+1.5 in 2 games, +6.5 last season) -- favors BYU.",
+        "Rest: Montana State has had four days off since beating Long Beach State on Saturday; BYU has had one day off since hosting Queens on Tuesday (not a back-to-back) -- favors Montana State.",
+        "Travel: Montana State is on a roughly 500-mile true road trip from Bozeman to Provo while BYU stays home -- favors BYU.",
+        "Injuries/Lineup: no notable injury report surfaced for either team -- both appear to be at full strength -- neutral.",
+        "Form: BYU is 3-0 with elite shooting efficiency (#5 nationally in BartTorvik AdjOE), including a season-opening win over Ohio State at a neutral site in Salt Lake City; Montana State is a modest 1-1 -- favors BYU.",
+        "Motivation/Spot: no concrete edge found either way -- neutral.",
+        "Venue/Crowd: the Marriott Center (~19,000) is known for a loud environment when BYU has national buzz, which it does after the Ohio State win -- favors BYU.",
+        "Market: BYU -23.5 is drawing about 77% of bets; no opening line could be confirmed to check for movement, so no reverse-line-movement signal could be verified -- neutral.",
+        "Matchup splits: Montana State's defense (BartTorvik AdjDE #139 nationally) against BYU's top-5 offense (17 threes vs Queens) sets up BYU's offense to operate largely unimpeded -- favors BYU."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Ledger now skips (off-gap): with the required early-season 50/50 blend the offense-rank gap is 18.7 percentile points, under 30; also fixed BYU's game count, the Queens date (Tue, not a back-to-back) and the rebounding claim.",
+      "away": "Montana State Bobcats",
+      "awayMoneyline": 2200,
+      "awayPDpg": 4,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 23.5,
+      "awaySpreadOdds": -112,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 162.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
+      "home": "BYU Cougars",
+      "homeMoneyline": -8000,
+      "homePDpg": 15.39,
+      "homeRank": 23,
+      "homeScore": null,
+      "homeSpread": -23.5,
+      "homeSpreadOdds": -108,
+      "offGap": 18.68,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +4.0 vs +15.39 (50/50 blend of this season + 2025-26 final: Montana State +1.5 in 2 GP & +6.5; BYU +22.67 in 3 GP & +8.11)",
+        "Adj. offense rank (Sports Reference, blended) #75 vs #7 of 365 -- off pct 79.7 vs 98.4, gap 18.68 (below 30 threshold: off-gap skip)",
+        "Adj. defense rank (blended) #291 vs #122 -- no def-veto (moot after the off-gap skip)",
+        "No notable injuries either side; BYU last played Tue Nov 10 (one day off), Montana State Sat Nov 7"
+      ],
+      "time": "9:00 PM ET"
+    }
   ]
 }
