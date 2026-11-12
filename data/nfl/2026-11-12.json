@@ -3,23 +3,8 @@
   "weekday": "Thursday",
   "sport": "nfl",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-12T07:44:53Z",
+  "generatedAt": "2026-11-12T13:19:40Z",
   "games": [
-    {
-      "espnId": "401873052",
-      "away": "Washington Commanders",
-      "home": "New York Giants",
-      "time": "8:15 PM ET",
-      "homeSpread": -2.5,
-      "awaySpread": 2.5,
-      "homeSpreadOdds": -105.0,
-      "awaySpreadOdds": -115.0,
-      "homeMoneyline": -142.0,
-      "awayMoneyline": 120.0,
-      "gameTotal": 40.5,
-      "gameTotalOverOdds": -118,
-      "gameTotalUnderOdds": -102
-    }
+    {"altBlowoutCheck":"Does not apply to either team — neither team's most recent game was a win by 17+ (Commanders lost 13-20 to the Rams; Giants won by only 8, 19-11, over the Eagles).","altBlowoutFavors":null,"altCategoryTally":"3-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: neutral (WEIGHTED-RULE major-QB-change discount — Giants' +1.3 PPG-this-season differential was built mostly under Jameis Winston [4 starts, Wks 3-6] and Jaxson Dart [Wks 1-2], not tonight's starter J.J. McCarthy [only 2 starts entering tonight, Wk7 & Wk9]; Commanders' own -4.70 blended PD/g under consistent starter Daniels isn't positive/strong enough to carry the category alone, so neutral rather than flipping to Washington).","Injuries/Lineup: favors Giants (Commanders missing starting C Lucas Patrick, OUT with a concussion, plus TE Colson Yankoff OUT; Giants' only designation is LB Malik Harrison, Questionable). Single-starter OL injury for Washington — normal 1 vote, not the multi-starter double-weight.","Form (last 3 games): favors Giants (Giants 2-1 in last 3 — Wk7 win and Wk9 win both started by McCarthy, Wk6 loss where he relieved Winston — vs Commanders 1-2 in last 3 under Daniels: Wk6 L at SF, Wk8 W vs PHI, Wk9 L vs LAR). WEIGHTED-RULE check: McCarthy started the majority (2 of 3) of the Giants' last 3 games, so no major-QB-change discount applies here — record carries normally.","Market: favors Giants (line moved from Giants -1.5 at open to Giants -2/-2.5 by game day, with DraftKings reporting 63% of moneyline and 69% of spread tickets on the Giants — consensus movement toward the favorite, not reverse line movement).","Rest: neutral (both teams playing on a standard short week off Sunday Nov 8 games).","Travel: neutral (Washington's trip to MetLife Stadium is a short regional trip with no time-zone change).","Motivation/Spot: neutral (both teams have real stakes — Daniels called it a 'must win' for the 2-5-1 Commanders; the 5-2-1 Giants are defending the NFC East lead — cuts both ways).","Weather/Venue: neutral (no material forecast signal found for MetLife Stadium).","Matchup splits: neutral (no specific, verifiable unit-vs-unit mismatch found)."],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Commanders prior game (Wk9 vs LAR, CBS boxscore, L 13-20): 313 total net yds, 24/35 passing for 253 yds (7.23 YPA), 19 rush att for 60 yds, 54 total plays (5.80 YPP) — no pattern matched (margin was 7, not 11+; YPA/YPP and volume thresholds not met). Giants prior game (Wk9 vs PHI, CBS boxscore, W 19-11): 243 total net yds, 18/27 passing for 163 yds (6.04 YPA), 31 rush att for 80 yds, 58 total plays (4.19 YPP), rush/pass ratio 1.15 — no pattern matched.","altTrendFavors":null,"away":"Washington Commanders","awayMoneyline":120,"awayPDpg":-4.7,"awayQB":"Jayden Daniels","awayQBRating":97.2,"awayScore":null,"awaySpread":2.5,"awaySpreadOdds":-112,"awayYPP":5.2,"confidence":"skip","correct":null,"gameTotal":40.5,"gameTotalOverOdds":-118,"gameTotalUnderOdds":-102,"home":"New York Giants","homeMoneyline":-142,"homePDpg":-1.06,"homeQB":"J.J. McCarthy","homeQBRating":91.7,"homeScore":null,"homeSpread":-2.5,"homeSpreadOdds":-108,"homeYPP":5.1,"offGap":9.68,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"qb-veto","skipped":true,"statLines":["PD/g (blended 2026/2025) -4.70 vs -1.06","Yds/play 5.2 vs 5.1 · 9.7-pt off-gap","QB rating 97.2 vs 91.7 (Daniels vs McCarthy)"],"time":"8:15 PM ET"}
   ]
 }
