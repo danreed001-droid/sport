@@ -56,7 +56,7 @@ SCORES_CSV = os.path.join(REPO_ROOT, "data", "raw", "master_nba_scores.csv")
 LINES_CSV = os.path.join(REPO_ROOT, "data", "raw", "nba_lines.csv")
 FIELDS = ("totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsWatch")
 # Bumped whenever rules are added, so --backfill rechecks past games with them.
-BACKFILL_VERSION = 10
+BACKFILL_VERSION = 11
 
 
 def season_start(date_str):
@@ -292,6 +292,20 @@ def evaluate(g, rows, date_str, since, spread, points=None, absent=None, status=
         who = " and ".join(f"{g[side]}'s last five went over by {o:.1f} a game" for side, o in it["hot"])
         rules.append({"rule": 22, "detail": f"Spread {g['home']} {spread:+g} (2 or less); the total {total:g} is {it['gap']:.1f} above "
                                             f"the {it['model']:.1f} the two teams' season scoring averages give; {who}."})
+    # Rules 23-24 (overs, 2026-11-12). 23: the home team's last game went over
+    # its closing total by 10+ and the road team allowed 130+ in its last game
+    # (both teams 5+ games). 24: late season (home team 66+ games played) and
+    # both teams lost their last game.
+    if len(hlog) >= 5 and len(alog) >= 5:
+        hl2, al2 = hlog[-1], alog[-1]
+        hclose = total_close_of(hl2.get("id"))
+        if hclose is not None and hl2["pf"] + hl2["pa"] - hclose >= 10 and al2["pa"] >= 130:
+            rules.append({"rule": 23, "detail": f"{g['home']}'s last game ({hl2['pf']:g}-{hl2['pa']:g} on {hl2['date']}) went over its total "
+                                                f"of {hclose:g} by {hl2['pf'] + hl2['pa'] - hclose:g}, and {g['away']} allowed "
+                                                f"{al2['pa']:g} in its last game."})
+        if len(hlog) >= 66 and hl2["pf"] < hl2["pa"] and al2["pf"] < al2["pa"]:
+            rules.append({"rule": 24, "detail": f"Late season ({g['home']} has played {len(hlog)} games) and both teams lost their last "
+                                                f"game ({g['home']} {hl2['pf']:g}-{hl2['pa']:g}, {g['away']} {al2['pf']:g}-{al2['pa']:g})."})
     rules = [r for r in rules if r["rule"] in RULE_NAMES]  # retired rules (lib/nba_totals_rules.RETIRED) never pick
     for r in rules:
         r["name"], r["backtest"] = RULE_NAMES[r["rule"]], RULE_BACKTEST[r["rule"]]

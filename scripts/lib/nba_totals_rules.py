@@ -21,6 +21,8 @@ RULE_NAMES = {
     16: "Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)",
     20: "Revenge: under when the team that lost the last meeting at home earlier this season is the underdog with the better record (on trial)",
     21: "Revenge: under when the team that lost the last meeting at home by 10-19 is the underdog with the better record (on trial)",
+    23: "Over when the home team's last game went over its total by 10+ and the road team allowed 130+ in its last game (on trial)",
+    24: "Over late in the season (home team 66+ games played) when both teams lost their last game (on trial)",
     22: "Under in a near pick'em (spread 2 or less) when the total is 3+ above the teams' season scoring averages and a team's last five went over by 6+ a game (on trial)",
 }
 RULE_BACKTEST = {
@@ -32,6 +34,8 @@ RULE_BACKTEST = {
     16: "67.2% overs, 41-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-8",
     20: "65.2% unders, 58-31 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 19-14; 2024-now 14-9",
     21: "64.1% unders, 59-33 (2018-19 and 2021-22 to now); unseen 17-8; 2024-now 19-13",
+    23: "62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38",
+    24: "61.2% overs, 205-130 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 64-50; 2024-now 75-45",
     22: "62.1% unders, 108-66 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 46-32; 2024-now 18-11",
 }
 
@@ -41,7 +45,7 @@ RULE_BACKTEST = {
 # Their code paths stay in nba_totals_signals.py but never pick; numbers aren't reused.
 RETIRED = {1, 2, 4, 5, 7, 8, 11, 12, 13, 15, 17, 18, 19}
 
-OVER_RULES = {3, 16}
+OVER_RULES = {3, 16, 23, 24}
 OT_LOOKBACK_DAYS = 10
 
 

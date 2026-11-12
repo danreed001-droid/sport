@@ -44,6 +44,7 @@ RULE_NAMES = {
     62: "Back a team that covered its last 3+ games vs. an opponent whose top scorer scored 10+ over his average last game, with at least a day off (on trial)",
     63: "Fade a team on a back-to-back that won last night shooting 45%+ from three (25+ attempts) (on trial)",
     64: "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
+    65: "Near pick'em (spread within 3.5): back the team facing an opponent that plays 60+ more minutes a game of players 6'4\" and under (on trial)",
 }
 RULE_BACKTEST = {
     2: "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
@@ -79,6 +80,7 @@ RULE_BACKTEST = {
     62: "68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16",
     63: "61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33",
     64: "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
+    65: "63.3% ATS, 114-66 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-32; 2024-now 36-16",
 }
 
 # Retired 2026-11-03 (under 61% ATS on 2018-19 and 2021-22 to now, with the

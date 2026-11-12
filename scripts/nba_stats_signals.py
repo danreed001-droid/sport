@@ -53,6 +53,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   an opponent whose top scorer scored 10+ over his average last game; 63 fade
   a team on a back-to-back that won last night shooting 45%+ from three; 64
   back a home team covering 60%+ this season vs. a team .250 or worse on the road.
+  65 (on trial): in a near pick'em, back the team facing an opponent that plays
+  60+ more minutes a game of players 6'4" and under (lib/nba_heights.py).
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -89,6 +91,7 @@ from lib import action_network, espn, manual, store  # noqa: E402
 from lib.nba_absence import big_scorers, injury_status, watch_entries  # noqa: E402
 from lib.nba_revenge import revenge_facts  # noqa: E402
 from lib.nba_arenas import miles_between  # noqa: E402
+from lib import nba_heights  # noqa: E402
 from score_slate import _same_team  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
 from lib.dates import et_date_of_iso, today_et_str, weekday_et  # noqa: E402
@@ -171,6 +174,22 @@ def home_spread_of(event_id):
                     except (TypeError, ValueError):
                         pass
     return _HOME_SPREAD.get(str(event_id))
+SMALL_GUARD_IN = 76   # 6'4"
+
+
+def small_guard_minutes(session, points, games, team):
+    """Minutes a game `team` gave to players 6'4" and under, averaged over its
+    last five games (rule 65). A game counts when 7+ of its players who played
+    have a known height; needs 3+ such games, else None."""
+    per_game = []
+    for g in games[-5:]:
+        mins = points.minutes(g["event_id"], team) or {}
+        known = [(m, h) for m, h in ((m, nba_heights.height(session, pid)) for pid, m in mins.items() if m) if h]
+        if len(known) >= 7:
+            per_game.append(sum(m for m, h in known if h <= SMALL_GUARD_IN))
+    return sum(per_game) / len(per_game) if len(per_game) >= 3 else None
+
+
 _TOTAL_CLOSE = None
 
 
@@ -210,6 +229,7 @@ ALLOWED_REST = {
     56: {"b2b"},
     57: {"1", "2+"}, 58: {"b2b", "1", "2+"}, 59: {"1", "2+"}, 60: {"b2b", "1", "2+"}, 61: {"b2b", "1", "2+"},
     62: {"1", "2+"}, 63: {"b2b"}, 64: {"1", "2+"},
+    65: {"b2b", "1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -444,6 +464,17 @@ class BoxCache:
                 self.dirty = True
         return (e or {}).get("topreb", {}).get(team)
 
+    def minutes(self, event_id, team):
+        """{player id: minutes} for `team` in that game (rule 65), or None.
+        Entries cached before this was added are fetched again once."""
+        e = self._entry(event_id)
+        if e and "min_p" not in e:
+            new = self._fetch(event_id)
+            if new:
+                e = self.data[event_id] = new
+                self.dirty = True
+        return (e or {}).get("min_p", {}).get(team)
+
     def is_regular_season(self, event_id):
         return self._entry(event_id).get("type") == 2
 
@@ -461,7 +492,7 @@ class BoxCache:
             return None
         box = d.get("boxscore", {})
         pts_by_team, to_by_team, ast_by_team, stl_by_team, ftm_by_team, reb_by_team, starters_by_team = {}, {}, {}, {}, {}, {}, {}
-        ast_p_by_team, tp_by_team, rot_by_team, maxmin_by_team, topreb_by_team = {}, {}, {}, {}, {}
+        ast_p_by_team, tp_by_team, rot_by_team, maxmin_by_team, topreb_by_team, min_p_by_team = {}, {}, {}, {}, {}, {}
         for t in box.get("players", []):
             if not t.get("statistics"):
                 continue
@@ -477,6 +508,7 @@ class BoxCache:
             r = labels.index("REB") if "REB" in labels else None
             a = labels.index("AST") if "AST" in labels else None
             pts, reb, starters, ast_p = {}, 0, [], {}
+            min_p = {}
             for ath in cat.get("athletes", []):
                 st = ath.get("stats") or []
                 if ath.get("didNotPlay") or len(st) <= i:
@@ -491,6 +523,7 @@ class BoxCache:
                         try:
                             mins = float(str(st[mi]).split(":")[0])
                             rot += mins >= 10
+                            min_p[ath["athlete"]["id"]] = mins
                             if mins > top_min[0]:
                                 top_min = [mins, ath["athlete"].get("displayName")]
                         except ValueError:
@@ -508,6 +541,7 @@ class BoxCache:
             if mi is not None:
                 rot_by_team[t["team"]["displayName"]] = rot
                 maxmin_by_team[t["team"]["displayName"]] = top_min
+                min_p_by_team[t["team"]["displayName"]] = min_p
             if r is not None:
                 reb_by_team[t["team"]["displayName"]] = reb
                 topreb_by_team[t["team"]["displayName"]] = top_reb
@@ -530,7 +564,7 @@ class BoxCache:
         if not pts_by_team:
             return None
         return {"pts": pts_by_team, "to": to_by_team, "ast": ast_by_team, "stl": stl_by_team, "ftm": ftm_by_team, "reb": reb_by_team,
-                "starters": starters_by_team, "ast_p": ast_p_by_team, "tp": tp_by_team, "rot": rot_by_team, "maxmin": maxmin_by_team, "topreb": topreb_by_team, "type": d.get("header", {}).get("season", {}).get("type")}
+                "starters": starters_by_team, "ast_p": ast_p_by_team, "tp": tp_by_team, "rot": rot_by_team, "maxmin": maxmin_by_team, "topreb": topreb_by_team, "min_p": min_p_by_team, "type": d.get("header", {}).get("season", {}).get("type")}
 
     def save(self):
         if self.dirty:
@@ -888,6 +922,17 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                                                 f"vs. {opp}, {sum(1 for g in road if g['won'])}-{len(road) - sum(1 for g in road if g['won'])} "
                                                 f"on the road -- {RULE_BACKTEST.get(64, '')}."))
 
+        # Rule 65: in a near pick'em (tonight's spread within 3.5), back the team
+        # whose opponent has been giving 60+ more minutes a game to players
+        # 6'4" and under over its last five games (both teams 5+ games played).
+        if my_spread is not None and abs(my_spread) <= 3.5 and len(prior) >= 5 and len(opp_prior) >= 5:
+            sg_me, sg_opp = (small_guard_minutes(session, points, prior, team),
+                             small_guard_minutes(session, points, opp_prior, opp))
+            if sg_me is not None and sg_opp is not None and sg_opp - sg_me >= 60:
+                picks.append((team, 65, f"Backing {team}: {opp} has given {sg_opp:.0f} minutes a game to players 6'4\" and "
+                                        f"under over its last five, {sg_opp - sg_me:.0f} more than {team} ({sg_me:.0f}), "
+                                        f"and the spread is {my_spread:+g} -- {RULE_BACKTEST.get(65, '')}."))
+
         # Keep only the rules whose backtest cleared 62% for this team's rest
         # (days off since its last game).
         gap = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days - 1
@@ -1177,6 +1222,7 @@ def main():
             run_for_date(session, points, by_team, q_cache, date_str, setup_failed)
     finally:
         points.save()
+        nba_heights.save()
 
 
 if __name__ == "__main__":

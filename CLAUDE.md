@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22, 23, 24. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -222,6 +222,27 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (146-88) was left out: rule 2 already covers most of it and the rest is
   57.9%. Backfilled for 2026-27: 62 0-1, 63 0-2, 64 4-0 (one new pick; the
   rest on games that already had one).
+  Rule 65 (on trial) backs a team in a near pick'em (tonight's spread within
+  3.5) whose opponent has been giving 60+ more minutes a game to players 6'4"
+  and under over its last five games (`small_guard_minutes`: per-player minutes
+  from `BoxCache.minutes`, heights from `lib/nba_heights.py` /
+  `data/raw/nba_heights.json`, ESPN athlete pages, new players looked up once;
+  a game counts with 7+ known heights, 3+ such games): 114-66, unseen 54-32,
+  2024-now 36-16; climbs 20+ 53.2% / 40+ 58.5% / 60+ 63.3%. From a 2026-11-12
+  look at player size: minutes-weighted height edge alone tilts ATS 47.5% ->
+  52.5% across fifths; weight predicts wins, not covers; a shorter (1+ in) or
+  guard-heavy team on a back-to-back covers ~40-43% (watch list, under the
+  bar); size x rest/travel/strength grids (1,478 side, 1,157 total
+  combinations) were luck overall and size does nothing for totals.
+  NBA Totals rules 23-24 (on trial, OVER; 2026-11-12): no single factor of 128
+  moved totals 5+ points in both halves and all-pairs searches were at chance,
+  but two pairs had steady patterns of their own. 23: the home team's last
+  game went over its closing total by 10+ and the road team allowed 130+ in
+  its last game (141-85, unseen 27-17, 2024-now 60-38; 125+ 58.5%, 135+ 59.1%;
+  the mirror, road over / home allowed, is 51.6%). 24: late season (home team
+  66+ games played) and both teams lost their last game (205-130, unseen
+  64-50, 2024-now 75-45; climbs 50+ 55.9% / 60+ 58.7% / 74+ 63.4%, nothing
+  before game 50; fires from about March). Backfilled 2026-27: 23 on 3 games.
   NBA Totals rule 22 (on trial) bets the UNDER in a near pick'em (spread 2 or
   less) when the total is 3+ above the two teams' season scoring averages
   (`inflated_total` in `nba_totals_signals.py`: (home PF + away PA)/2 + (away
