@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-12T07:45:00Z",
+  "games": [
+    {
+      "espnId": "401921741",
+      "away": "Montana State Bobcats",
+      "home": "BYU Cougars",
+      "time": "9:00 PM ET",
+      "homeSpread": -23.5,
+      "awaySpread": 23.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -8000,
+      "awayMoneyline": 2200,
+      "total": 164.5
+    }
+  ]
+}

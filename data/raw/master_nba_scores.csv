@@ -1,4 +1,8 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
+401909976,2026-11-12,11/12 - 7:00 PM EST,Toronto Raptors,0,-,Philadelphia 76ers,0,-,-,-,7:00 PM
+401909977,2026-11-12,11/12 - 7:00 PM EST,Detroit Pistons,0,-,Washington Wizards,0,-,-,-,7:00 PM
+401909978,2026-11-12,11/12 - 8:00 PM EST,Dallas Mavericks,0,-,Minnesota Timberwolves,0,-,-,-,8:00 PM
+401909979,2026-11-12,11/12 - 9:00 PM EST,Charlotte Hornets,0,-,Phoenix Suns,0,-,-,-,9:00 PM
 401909966,2026-11-11,Final,Washington Wizards,101,-,Indiana Pacers,114,-,130,-154,7:00 PM
 401909967,2026-11-11,Final,Cleveland Cavaliers,115,-,New York Knicks,107,-,180,-217,7:00 PM
 401909968,2026-11-11,Final,Boston Celtics,98,-,Toronto Raptors,93,-,-197,165,7:00 PM
@@ -6,9 +10,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401909970,2026-11-11,Final,Denver Nuggets,123,-,Memphis Grizzlies,118,-,-161,136,8:00 PM
 401909971,2026-11-11,Final,Los Angeles Lakers,123,-,Milwaukee Bucks,112,-,-930,620,8:00 PM
 401909972,2026-11-11,Final,Brooklyn Nets,145,-,New Orleans Pelicans,111,-,120,-142,8:00 PM
-401909973,2026-11-11,3:32 - 3rd,Orlando Magic,82,-,Utah Jazz,79,-,-,-,9:00 PM
-401909974,2026-11-11,Halftime,Golden State Warriors,51,-,Houston Rockets,56,-,-,-,9:30 PM
-401909975,2026-11-11,6:31 - 2nd,Oklahoma City Thunder,41,-,Portland Trail Blazers,38,-,-,-,10:00 PM
+401909973,2026-11-11,Final,Orlando Magic,123,-,Utah Jazz,108,-,-179,150,9:00 PM
+401909974,2026-11-11,Final,Golden State Warriors,108,-,Houston Rockets,115,-,205,-249,9:30 PM
+401909975,2026-11-11,Final,Oklahoma City Thunder,108,-,Portland Trail Blazers,118,-,124,-147,10:00 PM
 401909960,2026-11-10,Final,Milwaukee Bucks,85,-,New York Knicks,117,-,670,-1040,7:30 PM
 401909961,2026-11-10,Final,Boston Celtics,123,-,Philadelphia 76ers,101,-,-124,105,8:00 PM
 401909962,2026-11-10,Final,LA Clippers,110,-,Phoenix Suns,133,-,150,-179,9:00 PM

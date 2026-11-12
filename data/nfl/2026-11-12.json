@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-12T07:44:53Z",
+  "games": [
+    {
+      "espnId": "401873052",
+      "away": "Washington Commanders",
+      "home": "New York Giants",
+      "time": "8:15 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": -142.0,
+      "awayMoneyline": 120.0
+    }
+  ]
+}

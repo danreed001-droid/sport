@@ -36,7 +36,10 @@
         }
       ],
       "statsCheck": "Rule 47: Backing Toronto Raptors: Toronto Raptors lost the last meeting by 13 (Philadelphia 76ers 115 @ Toronto Raptors 102, 2026-01-13) as the underdog; tonight on the road, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
-      "totalsLine": 221.5
+      "totalsLine": 221.5,
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909977",
@@ -68,7 +71,10 @@
         }
       ],
       "statsCheck": "Rule 49: Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +9.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13.",
-      "totalsLine": 221.5
+      "totalsLine": 221.5,
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909978",
@@ -106,7 +112,9 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 2.5 vs Utah Jazz and by 2.5 at New Orleans Pelicans), now at home in game 12 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 62: Backing Minnesota Timberwolves: covered its last 6 games, and Dallas Mavericks's top scorer Cooper Flagg scored 43 last game (25.9 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16.",
-      "totalsLine": 227.5
+      "totalsLine": 227.5,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -110
     },
     {
       "espnId": "401909979",
@@ -128,7 +136,10 @@
         "homeMoneyline": -244,
         "awayMoneyline": 201
       },
-      "totalsLine": 213.5
+      "totalsLine": 214.5,
+      "gameTotal": 214.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     }
   ]
 }
