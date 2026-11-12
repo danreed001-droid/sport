@@ -22,7 +22,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401861151,2026-11-12,Scheduled,France,0,-,Italy,0,-,-,-,2:45 PM
 401861152,2026-11-12,Scheduled,Latvia,0,-,Montenegro,0,-,-,-,2:45 PM
 401861149,2026-11-12,Scheduled,Belarus,0,-,San Marino,0,-,-,-,2:45 PM
-401906458,2026-11-12,77',India,0,-,New Zealand,5,-,-,-,1:00 AM
+401906458,2026-11-12,FT,India,0,-,New Zealand,5,-,-,-,1:00 AM
 401930962,2026-11-12,Scheduled,Russia,0,-,Uzbekistan,0,-,-,-,10:00 AM
 401933115,2026-11-12,Scheduled,Suriname,0,-,Lithuania,0,-,-,-,12:00 PM
 401931296,2026-11-12,Scheduled,Eswatini,0,-,Malta,0,-,-,-,12:30 PM
@@ -97,6 +97,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929981,2026-11-12,Scheduled,Southern Indiana,0,-,Southeast Missouri State,0,-,-,-,7:00 PM
 401931331,2026-11-12,Scheduled,Alabama State,0,-,Alcorn State,0,-,-,-,8:00 PM
 401931329,2026-11-12,Scheduled,Northwestern State,0,-,Houston Christian,0,-,-,-,8:00 PM
+401934155,2026-11-12,Scheduled,RFC Seraing,0,-,Metz,0,-,-,-,8:00 AM
 401885700,2026-11-11,FT,Toulouse,0,-,FC Fleury 91,7,-,-,-,11:00 AM
 401930244,2026-11-11,FT,Chinese Taipei,0,-,Vietnam,2,-,-,-,7:00 AM
 401916985,2026-11-11,FT,HB Køge,1,-,OH Leuven,1,-,-,-,12:45 PM

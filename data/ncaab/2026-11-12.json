@@ -17,7 +17,10 @@
       "awaySpreadOdds": -112,
       "homeMoneyline": -8000,
       "awayMoneyline": 2200,
-      "total": 164.5
+      "total": 164.5,
+      "gameTotal": 164.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     }
   ]
 }

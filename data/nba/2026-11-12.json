@@ -17,14 +17,14 @@
       "awaySpreadOdds": -118.0,
       "homeMoneyline": -410.0,
       "awayMoneyline": 322.0,
-      "statsSpread": -10.5,
+      "statsSpread": -9.5,
       "statsLine": {
-        "homeSpread": -10.5,
-        "awaySpread": 10.5,
-        "homeSpreadOdds": -103,
-        "awaySpreadOdds": -118,
-        "homeMoneyline": -410,
-        "awayMoneyline": 322
+        "homeSpread": -9.5,
+        "awaySpread": 9.5,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -103,
+        "homeMoneyline": -437,
+        "awayMoneyline": 341
       },
       "statsFavors": "Toronto Raptors",
       "statsRules": [
@@ -38,8 +38,8 @@
       "statsCheck": "Rule 47: Backing Toronto Raptors: Toronto Raptors lost the last meeting by 13 (Philadelphia 76ers 115 @ Toronto Raptors 102, 2026-01-13) as the underdog; tonight on the road, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
       "totalsLine": 221.5,
       "gameTotal": 221.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909977",
@@ -52,14 +52,14 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": 331.0,
       "awayMoneyline": -423.0,
-      "statsSpread": 9.5,
+      "statsSpread": 10.5,
       "statsLine": {
-        "homeSpread": 9.5,
-        "awaySpread": -9.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": 331,
-        "awayMoneyline": -423
+        "homeSpread": 10.5,
+        "awaySpread": -10.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": 343,
+        "awayMoneyline": -440
       },
       "statsFavors": "Detroit Pistons",
       "statsRules": [
@@ -67,14 +67,14 @@
           "rule": 49,
           "name": "Fade a 7+ point underdog on a back-to-back that used 8 or fewer players (10+ min) last game (on trial)",
           "backtest": "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
-          "detail": "Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +9.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
+          "detail": "Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +10.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
         }
       ],
-      "statsCheck": "Rule 49: Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +9.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13.",
-      "totalsLine": 221.5,
-      "gameTotal": 221.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "statsCheck": "Rule 49: Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +10.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13.",
+      "totalsLine": 220.5,
+      "gameTotal": 220.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401909978",
@@ -136,10 +136,10 @@
         "homeMoneyline": -244,
         "awayMoneyline": 201
       },
-      "totalsLine": 214.5,
-      "gameTotal": 214.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113
+      "totalsLine": 213.5,
+      "gameTotal": 213.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     }
   ]
 }
