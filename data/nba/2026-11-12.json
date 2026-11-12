@@ -41,9 +41,9 @@
       "awaySpreadOdds": -118,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 224.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "Philadelphia 76ers",
       "homeMoneyline": -410,
       "homeNetRtg": 0.86,
@@ -68,9 +68,9 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -102,
-        "awaySpreadOdds": -119,
-        "homeMoneyline": -269,
+        "homeSpreadOdds": -107,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -270,
         "awayMoneyline": 221
       },
       "statsRules": [
@@ -83,7 +83,7 @@
       ],
       "statsSpread": -7.5,
       "time": "7:00 PM ET",
-      "totalsLine": 224.5
+      "totalsLine": 223.5
     },
     {
       "altCategoryTally": "7-0",
@@ -114,9 +114,9 @@
       "awaySpreadOdds": -112,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 221.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113,
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Washington Wizards",
       "homeMoneyline": 360,
       "homeNetRtg": -5.92,
@@ -136,13 +136,13 @@
         "NetRtg +8.10 this szn blended w/ last season final +8.23 = +8.165 (5th of 30) vs -5.92 (24th) -- 86.2nd vs 20.7th pct, gap 65.52",
         "Detroit: Jalen Duren (hamstring) OUT, Isaiah Joe (hip) OUT; Washington: Tristan Vukcevic, Reece Beekman, Justin Champagnie, Jamir Watkins all OUT"
       ],
-      "statsCheck": "Rule 49: Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +9.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13.",
+      "statsCheck": "Rule 49: Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +10.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13.",
       "statsFavors": "Detroit Pistons",
       "statsLine": {
-        "homeSpread": 9.5,
-        "awaySpread": -9.5,
-        "homeSpreadOdds": -103,
-        "awaySpreadOdds": -117,
+        "homeSpread": 10.5,
+        "awaySpread": -10.5,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -103,
         "homeMoneyline": 341,
         "awayMoneyline": -438
       },
@@ -151,12 +151,12 @@
           "rule": 49,
           "name": "Fade a 7+ point underdog on a back-to-back that used 8 or fewer players (10+ min) last game (on trial)",
           "backtest": "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
-          "detail": "Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +9.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
+          "detail": "Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +10.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
         }
       ],
-      "statsSpread": 9.5,
+      "statsSpread": 10.5,
       "time": "7:00 PM ET",
-      "totalsLine": 221.5
+      "totalsLine": 222.5
     },
     {
       "altCategoryTally": "3-1",
