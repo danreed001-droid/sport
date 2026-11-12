@@ -5,6 +5,58 @@
   "scored": false,
   "generatedAt": "2026-11-12T16:32:13Z",
   "games": [
-    {"altCategoryTally":"1-5","altConfidence":"lean","altCorrect":null,"altCover":null,"altPick":"BYU Cougars","altReasons":["Scoring margin: BYU's roughly +26.0 PD/g through its first two confirmed games crushes Montana State's +1.5 -- favors BYU.","Rest: BYU is on a back-to-back (hosted Queens Wednesday night, hosts Montana State Thursday); Montana State has had five days off since beating Long Beach State -- favors Montana State.","Travel: Montana State is on a roughly 500-mile true road trip from Bozeman to Provo while BYU stays home -- favors BYU.","Injuries/Lineup: no notable injury report surfaced for either team -- both appear to be at full strength -- neutral.","Form: BYU is 3-0 with elite shooting efficiency (#5 nationally in AdjOE, top-15 in 3P%), including a season-opening road win over Ohio State; Montana State is a modest 1-1 -- favors BYU.","Motivation/Spot: BYU's home-opener energy was already spent against Omaha, making tonight more of a business-as-usual quick-turnaround game, while Montana State has only pride and experience to play for as a heavy road underdog -- no concrete edge found either way -- neutral.","Venue/Crowd: the Marriott Center (~19,000) is known for a loud environment when BYU has national buzz, which it does after the Ohio State win -- favors BYU.","Market: BYU -23.5 is drawing about 77% of bets; no opening line could be confirmed to check for movement, so no reverse-line-movement signal could be verified -- neutral.","Matchup splits: Montana State's defense (AdjDE rank #137 nationally) against BYU's elite shooting and rebounding margin (BYU out-rebounded Queens 39-31) sets up BYU's offense to operate largely unimpeded -- favors BYU."],"altReturn":null,"altSpreadReturn":null,"away":"Montana State Bobcats","awayMoneyline":2200,"awayPDpg":1.5,"awayRank":null,"awayScore":null,"awaySpread":23.5,"awaySpreadOdds":-112,"confidence":"solid","correct":null,"gameTotal":164.5,"gameTotalOverOdds":-115,"gameTotalUnderOdds":-105,"home":"BYU Cougars","homeMoneyline":-8000,"homePDpg":26,"homeRank":23,"homeScore":null,"homeSpread":-23.5,"homeSpreadOdds":-108,"offGap":35.26,"pick":"BYU Cougars","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g +1.5 (Montana State, 2 GP) vs +26.0 (BYU, avg of its first 2 confirmed box scores; BYU is 3-0 overall through 3 GP)","AdjOE 107.9 (#133 of ~364 D-I, BartTorvik) vs 120.2 (#5) -- off pct 63.6 vs 98.9, gap 35.26 (above 30 threshold)","AdjDE 104.5 (#137) vs 98.8 (#48) -- BYU's defense is not worse than Montana State's by more than 3.0 (it's better), so no def-veto","No notable injuries either side; BYU on a back-to-back (hosted Queens Wed night), Montana State has 5 days rest after a ~500-mile road trip from Bozeman to Provo"],"time":"9:00 PM ET"}
+    {
+      "altCategoryTally": "1-5",
+      "altConfidence": "lean",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": "BYU Cougars",
+      "altReasons": [
+        "Scoring margin: BYU's roughly +26.0 PD/g through its first two confirmed games crushes Montana State's +1.5 -- favors BYU.",
+        "Rest: BYU is on a back-to-back (hosted Queens Wednesday night, hosts Montana State Thursday); Montana State has had five days off since beating Long Beach State -- favors Montana State.",
+        "Travel: Montana State is on a roughly 500-mile true road trip from Bozeman to Provo while BYU stays home -- favors BYU.",
+        "Injuries/Lineup: no notable injury report surfaced for either team -- both appear to be at full strength -- neutral.",
+        "Form: BYU is 3-0 with elite shooting efficiency (#5 nationally in AdjOE, top-15 in 3P%), including a season-opening road win over Ohio State; Montana State is a modest 1-1 -- favors BYU.",
+        "Motivation/Spot: BYU's home-opener energy was already spent against Omaha, making tonight more of a business-as-usual quick-turnaround game, while Montana State has only pride and experience to play for as a heavy road underdog -- no concrete edge found either way -- neutral.",
+        "Venue/Crowd: the Marriott Center (~19,000) is known for a loud environment when BYU has national buzz, which it does after the Ohio State win -- favors BYU.",
+        "Market: BYU -23.5 is drawing about 77% of bets; no opening line could be confirmed to check for movement, so no reverse-line-movement signal could be verified -- neutral.",
+        "Matchup splits: Montana State's defense (AdjDE rank #137 nationally) against BYU's elite shooting and rebounding margin (BYU out-rebounded Queens 39-31) sets up BYU's offense to operate largely unimpeded -- favors BYU."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Montana State Bobcats",
+      "awayMoneyline": 2200,
+      "awayPDpg": 1.5,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 23.5,
+      "awaySpreadOdds": -112,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 164.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "home": "BYU Cougars",
+      "homeMoneyline": -8000,
+      "homePDpg": 26,
+      "homeRank": 23,
+      "homeScore": null,
+      "homeSpread": -23.5,
+      "homeSpreadOdds": -108,
+      "offGap": 35.26,
+      "pick": "BYU Cougars",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g +1.5 (Montana State, 2 GP) vs +26.0 (BYU, avg of its first 2 confirmed box scores; BYU is 3-0 overall through 3 GP)",
+        "AdjOE 107.9 (#133 of ~364 D-I, BartTorvik) vs 120.2 (#5) -- off pct 63.6 vs 98.9, gap 35.26 (above 30 threshold)",
+        "AdjDE 104.5 (#137) vs 98.8 (#48) -- BYU's defense is not worse than Montana State's by more than 3.0 (it's better), so no def-veto",
+        "No notable injuries either side; BYU on a back-to-back (hosted Queens Wed night), Montana State has 5 days rest after a ~500-mile road trip from Bozeman to Provo"
+      ],
+      "time": "9:00 PM ET"
+    }
   ]
 }

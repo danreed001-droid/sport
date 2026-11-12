@@ -1,6 +1,6 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
 401916983,2026-11-12,Scheduled,Austria Vienna,0,-,Benfica,0,-,-,-,3:00 PM
-401928138,2026-11-12,Scheduled,Sparta Prague,0,-,Torreense,0,-,-,-,12:00 PM
+401928138,2026-11-12,5',Sparta Prague,0,-,Torreense,0,-,-,-,12:00 PM
 401878034,2026-11-12,Scheduled,Atlético Junior,0,-,Deportivo Pasto,0,-,-,-,5:00 PM
 401877890,2026-11-12,Scheduled,Boyacá Chicó FC,0,-,Llaneros FC,0,-,-,-,7:00 PM
 401928527,2026-11-12,Scheduled,Levante,0,-,CD Tarancon,0,-,-,-,1:00 PM
@@ -14,8 +14,8 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929779,2026-11-12,Scheduled,Martinique,0,-,Aruba,0,-,-,-,5:00 PM
 401929796,2026-11-12,Scheduled,Trinidad and Tobago,0,-,Antigua and Barbuda,0,-,-,-,6:00 PM
 401929776,2026-11-12,Scheduled,Panama,0,-,Curaçao,0,-,-,-,7:30 PM
-401861146,2026-11-12,Scheduled,Cyprus,0,-,Armenia,0,-,-,-,12:00 PM
-401861145,2026-11-12,Scheduled,Belgium,0,-,Türkiye,0,-,-,-,12:00 PM
+401861146,2026-11-12,4',Cyprus,0,-,Armenia,0,-,-,-,12:00 PM
+401861145,2026-11-12,3',Belgium,0,-,Türkiye,0,-,-,-,12:00 PM
 401861147,2026-11-12,Scheduled,Finland,0,-,Albania,0,-,-,-,2:45 PM
 401861148,2026-11-12,Scheduled,Spain,0,-,Czechia,0,-,-,-,2:45 PM
 401861150,2026-11-12,Scheduled,Croatia,0,-,England,0,-,-,-,2:45 PM
@@ -23,41 +23,41 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401861152,2026-11-12,Scheduled,Latvia,0,-,Montenegro,0,-,-,-,2:45 PM
 401861149,2026-11-12,Scheduled,Belarus,0,-,San Marino,0,-,-,-,2:45 PM
 401906458,2026-11-12,FT,India,0,-,New Zealand,5,-,-,-,1:00 AM
-401930962,2026-11-12,Scheduled,Russia,0,-,Uzbekistan,0,-,-,-,10:00 AM
-401933115,2026-11-12,Scheduled,Suriname,0,-,Lithuania,0,-,-,-,12:00 PM
+401930962,2026-11-12,FT,Russia,3,-,Uzbekistan,2,-,-,-,10:00 AM
+401933115,2026-11-12,3',Suriname,0,-,Lithuania,0,-,-,-,12:00 PM
 401931296,2026-11-12,Scheduled,Eswatini,0,-,Malta,0,-,-,-,12:30 PM
 401916986,2026-11-12,Scheduled,Arsenal,0,-,Barcelona,0,-,-,-,12:45 PM
 401932846,2026-11-12,Scheduled,Grenoble,0,-,Chambéry Savoie,0,-,-,-,1:00 PM
-401927214,2026-11-12,Scheduled,Somalia,0,-,Ghana,0,-,-,-,10:00 AM
-401927211,2026-11-12,Scheduled,Sierra Leone,0,-,Congo DR,0,-,-,-,11:00 AM
-401927210,2026-11-12,Scheduled,Zimbabwe,0,-,Equatorial Guinea,0,-,-,-,11:00 AM
-401927184,2026-11-12,Scheduled,Guinea-Bissau,0,-,Madagascar,0,-,-,-,11:00 AM
-401927189,2026-11-12,Scheduled,Eritrea,0,-,Guinea,0,-,-,-,12:00 PM
+401927214,2026-11-12,FT,Somalia,0,-,Ghana,2,-,-,-,10:00 AM
+401927211,2026-11-12,HT,Sierra Leone,0,-,Congo DR,2,-,-,-,11:00 AM
+401927210,2026-11-12,HT,Zimbabwe,0,-,Equatorial Guinea,0,-,-,-,11:00 AM
+401927184,2026-11-12,47',Guinea-Bissau,0,-,Madagascar,0,-,-,-,11:00 AM
+401927189,2026-11-12,1',Eritrea,0,-,Guinea,0,-,-,-,12:00 PM
 401927209,2026-11-12,Scheduled,Central African Republic,0,-,Benin,0,-,-,-,2:00 PM
 401927207,2026-11-12,Scheduled,Namibia,0,-,Cameroon,0,-,-,-,2:00 PM
 401927213,2026-11-12,Scheduled,Gambia,0,-,Ivory Coast,0,-,-,-,2:00 PM
 401927202,2026-11-12,Scheduled,Sudan,0,-,Senegal,0,-,-,-,2:00 PM
 401931922,2026-11-12,Scheduled,Leones Negros,0,-,Club Atlético Morelia,0,-,-,-,9:00 PM
-401933861,2026-11-12,Scheduled,Polonia Bytom,0,-,Gornik Zabrze,0,-,-,-,4:30 AM
-401933766,2026-11-12,Scheduled,OFK Mladost DG,0,-,Iskra,0,-,-,-,5:00 AM
-401933396,2026-11-12,Scheduled,Mlada Boleslav,0,-,RB Leipzig,0,-,-,-,5:00 AM
-401933781,2026-11-12,Scheduled,TSV Havelse,0,-,Hannover 96,0,-,-,-,6:00 AM
-401933961,2026-11-12,Scheduled,Eupen,0,-,Racing Genk,0,-,-,-,6:00 AM
-401933782,2026-11-12,Scheduled,SV Meppen,0,-,Arminia Bielefeld,0,-,-,-,7:00 AM
-401933842,2026-11-12,Scheduled,NK VERES RIVNE,0,-,Karpaty Lviv,0,-,-,-,7:00 AM
-401933885,2026-11-12,Scheduled,Warta Poznan,0,-,Pogon Szczecin,0,-,-,-,7:00 AM
-401933976,2026-11-12,Scheduled,Standard Liege,0,-,Borussia Mönchengladbach,0,-,-,-,8:00 AM
-401933768,2026-11-12,Scheduled,FC Wacker Innsbruck,0,-,FC Ingolstadt 04,0,-,-,-,8:00 AM
-401933977,2026-11-12,Scheduled,Odense Boldklub,0,-,Holstein Kiel,0,-,-,-,8:00 AM
-401933841,2026-11-12,Scheduled,Dunajska Streda,0,-,Rapid Vienna,0,-,-,-,8:00 AM
-401933857,2026-11-12,Scheduled,FC Wil 1900,0,-,St. Gallen,0,-,-,-,8:00 AM
-401933855,2026-11-12,Scheduled,Austria Lustenau,0,-,FC Zürich,0,-,-,-,8:30 AM
-401933764,2026-11-12,Scheduled,1. FC Union Berlin,0,-,VfL Wolfsburg,0,-,-,-,8:30 AM
-401933856,2026-11-12,Scheduled,FC Stade Lausanne-Ouchy,0,-,Young Boys,0,-,-,-,8:30 AM
+401933861,2026-11-12,FT,Polonia Bytom,0,-,Gornik Zabrze,6,-,-,-,4:30 AM
+401933766,2026-11-12,FT,OFK Mladost DG,1,-,Iskra,3,-,-,-,5:00 AM
+401933396,2026-11-12,FT,Mlada Boleslav,5,-,RB Leipzig,4,-,-,-,5:00 AM
+401933781,2026-11-12,FT,TSV Havelse,1,-,Hannover 96,6,-,-,-,6:00 AM
+401933961,2026-11-12,FT,Eupen,3,-,Racing Genk,1,-,-,-,6:00 AM
+401933782,2026-11-12,FT,SV Meppen,1,-,Arminia Bielefeld,2,-,-,-,7:00 AM
+401933842,2026-11-12,FT,NK VERES RIVNE,1,-,Karpaty Lviv,1,-,-,-,7:00 AM
+401933885,2026-11-12,FT,Warta Poznan,2,-,Pogon Szczecin,3,-,-,-,7:00 AM
+401933976,2026-11-12,FT,Standard Liege,0,-,Borussia Mönchengladbach,1,-,-,-,8:00 AM
+401933768,2026-11-12,FT,FC Wacker Innsbruck,1,-,FC Ingolstadt 04,3,-,-,-,8:00 AM
+401933977,2026-11-12,FT,Odense Boldklub,0,-,Holstein Kiel,4,-,-,-,8:00 AM
+401933841,2026-11-12,FT,Dunajska Streda,0,-,Rapid Vienna,3,-,-,-,8:00 AM
+401933857,2026-11-12,FT,FC Wil 1900,3,-,St. Gallen,3,-,-,-,8:00 AM
+401933855,2026-11-12,FT,Austria Lustenau,2,-,FC Zürich,1,-,-,-,8:30 AM
+401933764,2026-11-12,FT,1. FC Union Berlin,0,-,VfL Wolfsburg,2,-,-,-,8:30 AM
+401933856,2026-11-12,FT,FC Stade Lausanne-Ouchy,0,-,Young Boys,0,-,-,-,8:30 AM
 401930155,2026-11-12,Canceled,Fredrikstad,0,-,BK Häcken,0,-,-,-,9:00 AM
-401929701,2026-11-12,Scheduled,Greece U21,0,-,Iceland U21,0,-,-,-,8:00 AM
-401933455,2026-11-12,Scheduled,Ukraine U21,0,-,Scotland U21,0,-,-,-,8:00 AM
-401933438,2026-11-12,Scheduled,North Macedonia U21,0,-,Serbia U21,0,-,-,-,8:00 AM
+401929701,2026-11-12,FT,Greece U21,1,-,Iceland U21,1,-,-,-,8:00 AM
+401933455,2026-11-12,FT,Ukraine U21,0,-,Scotland U21,4,-,-,-,8:00 AM
+401933438,2026-11-12,FT,North Macedonia U21,0,-,Serbia U21,2,-,-,-,8:00 AM
 401875813,2026-11-12,Scheduled,Independiente Rivadavia,0,-,Estudiantes de La Plata,0,-,-,-,6:00 PM
 401860434,2026-11-12,Scheduled,Operário PR,0,-,Ponte Preta,0,-,-,-,5:00 PM
 401860436,2026-11-12,Scheduled,Athletic,0,-,São Bernardo,0,-,-,-,6:00 PM
@@ -67,7 +67,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401879608,2026-11-12,Scheduled,Deportivo Mixco,0,-,Aurora FC,0,-,-,-,5:00 PM
 401899695,2026-11-12,Scheduled,CD Municipal Limeño,0,-,Águila,0,-,-,-,4:30 PM
 401899770,2026-11-12,Scheduled,Inca Aruba,0,-,Atletico Balboa,0,-,-,-,4:30 PM
-401929793,2026-11-12,Scheduled,Mercyhurst,0,-,Long Island University,0,-,-,-,1:00 PM
+401929793,2026-11-12,1',Mercyhurst,0,-,Long Island University,0,-,-,-,1:00 PM
 401929794,2026-11-12,Scheduled,Central Connecticut,0,-,Fairleigh Dickinson,0,-,-,-,3:00 PM
 401929760,2026-11-12,Scheduled,Harvard,0,-,Cornell,0,-,-,-,3:30 PM
 401929739,2026-11-12,Scheduled,Akron,0,-,Creighton,0,-,-,-,5:00 PM
@@ -75,8 +75,8 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929761,2026-11-12,Scheduled,Yale,0,-,Pennsylvania,0,-,-,-,7:00 PM
 401929740,2026-11-12,Scheduled,Seton Hall,0,-,Georgetown,0,-,-,-,7:30 PM
 401929737,2026-11-12,Scheduled,Syracuse,0,-,SMU,0,-,-,-,8:30 PM
-401931334,2026-11-12,Scheduled,Prairie View A&M,0,-,Jackson State,0,-,-,-,11:00 AM
-401929887,2026-11-12,Scheduled,Virginia,0,-,Notre Dame,0,-,-,-,11:00 AM
+401931334,2026-11-12,HT,Prairie View A&M,1,-,Jackson State,1,-,-,-,11:00 AM
+401929887,2026-11-12,HT,Virginia,1,-,Notre Dame,0,-,-,-,11:00 AM
 401929972,2026-11-12,Scheduled,Stonehill,0,-,Fairleigh Dickinson,0,-,-,-,12:00 PM
 401929971,2026-11-12,Scheduled,Wagner,0,-,Central Connecticut,0,-,-,-,1:00 PM
 401929955,2026-11-12,Scheduled,Siena,0,-,Quinnipiac,0,-,-,-,1:00 PM
@@ -97,7 +97,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929981,2026-11-12,Scheduled,Southern Indiana,0,-,Southeast Missouri State,0,-,-,-,7:00 PM
 401931331,2026-11-12,Scheduled,Alabama State,0,-,Alcorn State,0,-,-,-,8:00 PM
 401931329,2026-11-12,Scheduled,Northwestern State,0,-,Houston Christian,0,-,-,-,8:00 PM
-401934155,2026-11-12,Scheduled,RFC Seraing,0,-,Metz,0,-,-,-,8:00 AM
+401934155,2026-11-12,FT,RFC Seraing,1,-,Metz,1,-,-,-,8:00 AM
 401885700,2026-11-11,FT,Toulouse,0,-,FC Fleury 91,7,-,-,-,11:00 AM
 401930244,2026-11-11,FT,Chinese Taipei,0,-,Vietnam,2,-,-,-,7:00 AM
 401916985,2026-11-11,FT,HB Køge,1,-,OH Leuven,1,-,-,-,12:45 PM
