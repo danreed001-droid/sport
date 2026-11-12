@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-12",
+  "picks": {
+    "nba-2026-11-12-detroit-pistons-washington-wizards-7-00-pm-et": {
+      "sport": "nba",
+      "away": "Detroit Pistons",
+      "home": "Washington Wizards",
+      "time": "7:00 PM ET",
+      "side": "away",
+      "team": "Detroit Pistons",
+      "spread": -10,
+      "spreadOdds": -120,
+      "moneyline": -467,
+      "submittedAt": "2026-11-12T23:59:53+00:00",
+      "issue": 27,
+      "alt": true,
+      "posted": {
+        "spread": -10.5,
+        "spreadOdds": -112
+      }
+    }
+  },
+  "scores": {
+    "nba-2026-11-12-charlotte-hornets-phoenix-suns-9-00-pm-et": "NNhhNNNNN",
+    "nba-2026-11-12-dallas-mavericks-minnesota-timberwolves-8-00-pm-et": "NNNNNNNhN",
+    "nba-2026-11-12-detroit-pistons-washington-wizards-7-00-pm-et": "NaNaNNNaN",
+    "nba-2026-11-12-toronto-raptors-philadelphia-76ers-7-00-pm-et": "NhNaNNNhN",
+    "nfl-2026-11-12-washington-commanders-new-york-giants-8-15-pm-et": "NhNhNhNNN"
+  },
+  "totals": {}
+}
