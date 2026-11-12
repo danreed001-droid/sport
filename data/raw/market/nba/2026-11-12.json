@@ -1,7 +1,7 @@
 {
  "date": "2026-11-12",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-12T03:49:31+00:00",
+ "fetchedAt": "2026-11-12T06:32:52+00:00",
  "games": [
   {
    "away": "Detroit Pistons",
@@ -11,18 +11,18 @@
    "spread": {
     "home": 9.5,
     "open": 9.5,
-    "tix_home": 20,
-    "money_home": 10
+    "tix_home": 29,
+    "money_home": 25
    },
    "total": {
     "now": 220.5,
     "open": 220.5,
-    "tix_over": 65,
-    "money_over": 37
+    "tix_over": 70,
+    "money_over": 60
    },
    "moneyline": {
-    "home": 310,
-    "away": -400
+    "home": 320,
+    "away": -423
    },
    "rlmFavorite": null
   },
@@ -32,20 +32,20 @@
    "start": "2026-11-13T00:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
-    "tix_home": null,
-    "money_home": null
+    "home": -10.5,
+    "open": -9.5,
+    "tix_home": 63,
+    "money_home": 70
    },
    "total": {
-    "now": null,
-    "open": null,
-    "tix_over": null,
-    "money_over": null
+    "now": 221.5,
+    "open": 220.5,
+    "tix_over": 74,
+    "money_over": 58
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": -450,
+    "away": 333
    },
    "rlmFavorite": null
   },
@@ -57,18 +57,18 @@
    "spread": {
     "home": -5.5,
     "open": -4.5,
-    "tix_home": 50,
-    "money_home": 43
+    "tix_home": 49,
+    "money_home": 35
    },
    "total": {
-    "now": 225.5,
+    "now": 227.5,
     "open": 225.5,
-    "tix_over": 64,
-    "money_over": 70
+    "tix_over": 66,
+    "money_over": 65
    },
    "moneyline": {
-    "home": -210,
-    "away": 170
+    "home": -220,
+    "away": 180
    },
    "rlmFavorite": null
   },
@@ -81,17 +81,17 @@
     "home": -6.5,
     "open": -6.5,
     "tix_home": 75,
-    "money_home": 80
+    "money_home": 65
    },
    "total": {
     "now": 213.5,
     "open": 212.5,
-    "tix_over": 75,
-    "money_over": 82
+    "tix_over": 79,
+    "money_over": 86
    },
    "moneyline": {
     "home": -250,
-    "away": 202
+    "away": 201
    },
    "rlmFavorite": null
   }

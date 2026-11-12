@@ -1,0 +1,134 @@
+{
+  "date": "2026-11-12",
+  "weekday": "Thursday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-12T06:32:53Z",
+  "games": [
+    {
+      "espnId": "401909976",
+      "away": "Toronto Raptors",
+      "home": "Philadelphia 76ers",
+      "time": "7:00 PM ET",
+      "homeSpread": -10.5,
+      "awaySpread": 10.5,
+      "homeSpreadOdds": -103.0,
+      "awaySpreadOdds": -118.0,
+      "homeMoneyline": -410.0,
+      "awayMoneyline": 322.0,
+      "statsSpread": -10.5,
+      "statsLine": {
+        "homeSpread": -10.5,
+        "awaySpread": 10.5,
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -118,
+        "homeMoneyline": -410,
+        "awayMoneyline": 322
+      },
+      "statsFavors": "Toronto Raptors",
+      "statsRules": [
+        {
+          "rule": 47,
+          "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
+          "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
+          "detail": "Backing Toronto Raptors: Toronto Raptors lost the last meeting by 13 (Philadelphia 76ers 115 @ Toronto Raptors 102, 2026-01-13) as the underdog; tonight on the road, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
+        }
+      ],
+      "statsCheck": "Rule 47: Backing Toronto Raptors: Toronto Raptors lost the last meeting by 13 (Philadelphia 76ers 115 @ Toronto Raptors 102, 2026-01-13) as the underdog; tonight on the road, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
+      "totalsLine": 221.5
+    },
+    {
+      "espnId": "401909977",
+      "away": "Detroit Pistons",
+      "home": "Washington Wizards",
+      "time": "7:00 PM ET",
+      "homeSpread": 9.5,
+      "awaySpread": -9.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": 331.0,
+      "awayMoneyline": -423.0,
+      "statsSpread": 9.5,
+      "statsLine": {
+        "homeSpread": 9.5,
+        "awaySpread": -9.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 331,
+        "awayMoneyline": -423
+      },
+      "statsFavors": "Detroit Pistons",
+      "statsRules": [
+        {
+          "rule": 49,
+          "name": "Fade a 7+ point underdog on a back-to-back that used 8 or fewer players (10+ min) last game (on trial)",
+          "backtest": "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
+          "detail": "Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +9.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
+        }
+      ],
+      "statsCheck": "Rule 49: Fading Washington Wizards: only 8 players played 10+ minutes in last night's game (vs Indiana Pacers), now a +9.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13.",
+      "totalsLine": 221.5
+    },
+    {
+      "espnId": "401909978",
+      "away": "Dallas Mavericks",
+      "home": "Minnesota Timberwolves",
+      "time": "8:00 PM ET",
+      "homeSpread": -5.5,
+      "awaySpread": 5.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": -222.0,
+      "awayMoneyline": 184.0,
+      "statsSpread": -5.5,
+      "statsLine": {
+        "homeSpread": -5.5,
+        "awaySpread": 5.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -222,
+        "awayMoneyline": 184
+      },
+      "statsFavors": "Minnesota Timberwolves",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Minnesota Timberwolves: covered its last two games (by 2.5 vs Utah Jazz and by 2.5 at New Orleans Pelicans), now at home in game 12 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        },
+        {
+          "rule": 62,
+          "name": "Back a team that covered its last 3+ games vs. an opponent whose top scorer scored 10+ over his average last game, with at least a day off (on trial)",
+          "backtest": "68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16",
+          "detail": "Backing Minnesota Timberwolves: covered its last 6 games, and Dallas Mavericks's top scorer Cooper Flagg scored 43 last game (25.9 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 2.5 vs Utah Jazz and by 2.5 at New Orleans Pelicans), now at home in game 12 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 62: Backing Minnesota Timberwolves: covered its last 6 games, and Dallas Mavericks's top scorer Cooper Flagg scored 43 last game (25.9 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16.",
+      "totalsLine": 227.5
+    },
+    {
+      "espnId": "401909979",
+      "away": "Charlotte Hornets",
+      "home": "Phoenix Suns",
+      "time": "9:00 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -244.0,
+      "awayMoneyline": 201.0,
+      "statsSpread": -6.5,
+      "statsLine": {
+        "homeSpread": -6.5,
+        "awaySpread": 6.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -244,
+        "awayMoneyline": 201
+      },
+      "totalsLine": 213.5
+    }
+  ]
+}

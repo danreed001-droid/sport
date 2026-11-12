@@ -1,0 +1,214 @@
+{
+ "date": "2026-11-13",
+ "source": "Action Network public feed (consensus = book 15, opener = book 30)",
+ "fetchedAt": "2026-11-12T06:32:52+00:00",
+ "games": [
+  {
+   "away": "New York Knicks",
+   "home": "Indiana Pacers",
+   "start": "2026-11-14T00:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": 2.5,
+    "open": 2.5,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": 233.5,
+    "open": 233.5,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": 105,
+    "away": -125
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Milwaukee Bucks",
+   "home": "Orlando Magic",
+   "start": "2026-11-14T00:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Memphis Grizzlies",
+   "home": "New Orleans Pelicans",
+   "start": "2026-11-14T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Atlanta Hawks",
+   "home": "Chicago Bulls",
+   "start": "2026-11-14T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Cleveland Cavaliers",
+   "home": "Miami Heat",
+   "start": "2026-11-14T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Utah Jazz",
+   "home": "Houston Rockets",
+   "start": "2026-11-14T01:30:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Golden State Warriors",
+   "home": "San Antonio Spurs",
+   "start": "2026-11-14T02:30:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": -10.5,
+    "open": -10.5,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": 234.5,
+    "open": 236.5,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": -535,
+    "away": 395
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Portland Trail Blazers",
+   "home": "Sacramento Kings",
+   "start": "2026-11-14T03:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Oklahoma City Thunder",
+   "home": "Los Angeles Clippers",
+   "start": "2026-11-14T03:30:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  }
+ ]
+}
