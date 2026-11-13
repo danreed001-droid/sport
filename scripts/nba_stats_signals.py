@@ -57,8 +57,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   60+ more minutes a game of players 6'4" and under (lib/nba_heights.py).
   66 (on trial): back a team that has missed the spread by 6+ a game over its last
   five when the opponent's last game went to overtime (family with 2, 9, 56, 63).
-  67 (on trial): fade an Eastern home team in its first game back from a road
-  game on the Pacific coast, 3 time zones west ("jet lag homecoming").
+  67 (retired 2026-11-13, a losing 2022-23): fade an Eastern home team in its
+  first game back from a road game on the Pacific coast ("jet lag homecoming").
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their

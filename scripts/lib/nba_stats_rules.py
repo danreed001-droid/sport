@@ -95,7 +95,8 @@ RULE_BACKTEST = {
 # Retired 2026-11-05: 41 (60.0%, 27-18) once 2025-26 games were dated by their
 # Eastern tip-off date -- the lines archive's 2025-26 dates are UTC, a day late
 # for evening games, which had miscounted some back-to-backs in the replay.
-RETIRED = {14, 18, 19, 22, 23, 25, 26, 27, 29, 33, 34, 35, 38, 40, 41, 42}
+# 67 retired 2026-11-13 the day it was added: 2022-23 was a losing season (4-7).
+RETIRED = {14, 18, 19, 22, 23, 25, 26, 27, 29, 33, 34, 35, 38, 40, 41, 42, 67}
 
 # A pick two or more rules agree on ("stacked"), replayed on the same six
 # unseen seasons: one-rule picks went 57.4% (269-200).
