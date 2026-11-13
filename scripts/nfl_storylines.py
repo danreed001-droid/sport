@@ -4,14 +4,15 @@
 Each storyline is a situation a sportswriter could tell a story about (a team
 "on a short week after an overtime war", a "trap game" between two division
 games, a West Coast team "body clock" kickoff at 1 PM ET). 52 of them were
-tested on 2026-11-13 on every regular-season game from 2010 to 2025, with the
+tested on 2026-11-13, then 10 more the same day (round 2: heartbreak losses,
+blown leads, shutouts, late-season spoilers...), 62 in all, on every regular-season game from 2010 to 2025, with the
 2020 empty-stadium season reported separately and left out of the numbers
 below (nflverse games file: closing spread, rest, kickoff time, roof, weather,
 starting QBs and head coaches; ESPN scoreboards for the quarter scores;
 nflverse team stats for turnovers). The story's bet was graded against the
 closing spread, pushes left out; neutral-site games (London, Germany, Mexico,
 ...) were left out, and a story that pointed at both teams in one game was
-skipped for that game. Only one of the 52 was at p<0.05 (about 2.6 would be
+skipped for that game. Only one of the 62 was at p<0.05 (about 3.1 would be
 expected by chance), so as a group they're no better than luck. These are
 the ones where history leaned 53%+ one way on 50+ games, or p<0.05 -- which
 side that is can be the opposite of what the story says (the West Coast team
@@ -81,6 +82,14 @@ STORIES = {
     "unbeaten": ("Target on their back", "fade", (57, 48), "unbeaten after 4+ games"),
     "hidden_gem": ("Better than its record", "back", (60, 48),
                    "its record is .200+ worse than its points scored and allowed suggest (Pythagorean, 6+ games)"),
+    # Round 2 (2026-11-13, ten more tested, same seasons and bar).
+    "shutout": ("Shut out last week", "back", (44, 29), "scored 0 points in its last game"),
+    "heartbreak": ("Heartbreak hangover", "fade", (196, 173),
+                   "lost its last game by 1-3 points after leading or being tied after three quarters"),
+    "blown_14": ("Blew a 14-point lead", "fade", (39, 50), "led by 14+ at the end of a quarter (1st-3rd) last game and lost"),
+    "smoke_mirrors": ("Smoke and mirrors", "fade", (69, 80),
+                      "a favorite with a winning record but a negative point differential (4+ games)"),
+    "spoiler": ("Playing spoiler at home", "back", (36, 45), "week 14 or later, a .350-or-worse home team vs a .600+ team"),
 }
 
 CODE = {"Arizona Cardinals": "ARI", "Atlanta Falcons": "ATL", "Baltimore Ravens": "BAL", "Buffalo Bills": "BUF",
@@ -205,7 +214,7 @@ _SEASONS = {}
 def season_games(session, season):
     """Every regular-season game of `season` from ESPN's weekly scoreboards,
     hand-entered finals on top: [{eid, date (ET), kick (ET hour), neutral,
-    final, ot, home, away, hs, as, hq, aq}]. Raises if a week can't be read:
+    final, ot, week, home, away, hs, as, hq, aq}]. Raises if a week can't be read:
     a missing week would make a team's record (and so its storylines) wrong."""
     if season in _SEASONS:
         return _SEASONS[season]
@@ -222,7 +231,7 @@ def season_games(session, season):
             kick = datetime.fromisoformat(ev["date"].replace("Z", "+00:00")).astimezone(ET)
             st = comp.get("status") or {}
             g = {"eid": ev["id"], "date": kick.strftime("%Y-%m-%d"), "kick": kick.hour + kick.minute / 60,
-                 "neutral": bool(comp.get("neutralSite")), "final": bool((st.get("type") or {}).get("completed")),
+                 "week": week, "neutral": bool(comp.get("neutralSite")), "final": bool((st.get("type") or {}).get("completed")),
                  "ot": (st.get("period") or 0) > 4, "home": t["home"]["team"]["displayName"],
                  "away": t["away"]["team"]["displayName"], "hs": _num(t["home"].get("score")),
                  "as": _num(t["away"].get("score")),
@@ -243,7 +252,7 @@ def season_games(session, season):
             continue
         for m in manual.load("nfl", d).values():
             if manual.has_final(m) and (d, m.get("away"), m.get("home")) not in listed:
-                out.append({"eid": f"manual:{d}", "date": d, "kick": kick_hour(m.get("time")), "neutral": False,
+                out.append({"eid": f"manual:{d}", "date": d, "kick": kick_hour(m.get("time")), "week": None, "neutral": False,
                             "final": True, "ot": bool(m.get("ot")), "home": m["home"], "away": m["away"],
                             "hs": float(m["homeScore"]), "as": float(m["awayScore"]), "hq": [], "aq": []})
     out.sort(key=lambda g: (g["date"], g["kick"] or 0))
@@ -254,6 +263,7 @@ def season_games(session, season):
 def team_log(games, team):
     """The team's games in date order, from its side: {date, opp, venue
     ('H'/'A'/'N'), final, pf, pa, m, ot, q3 (its lead after three quarters,
+    None when unknown), lead (its biggest lead at the end of quarters 1-3,
     None when unknown), eid}."""
     out = []
     for g in games:
@@ -262,10 +272,12 @@ def team_log(games, team):
         h = g["home"] == team
         pf, pa = (g["hs"], g["as"]) if h else (g["as"], g["hs"])
         mq, oq = (g["hq"], g["aq"]) if h else (g["aq"], g["hq"])
-        q3 = sum(mq[:3]) - sum(oq[:3]) if len(mq) >= 3 and len(oq) >= 3 and None not in mq[:3] + oq[:3] else None
+        known = len(mq) >= 3 and len(oq) >= 3 and None not in mq[:3] + oq[:3]
+        q3 = sum(mq[:3]) - sum(oq[:3]) if known else None
+        lead = max(sum(mq[:i]) - sum(oq[:i]) for i in (1, 2, 3)) if known else None
         out.append({"date": g["date"], "opp": g["away"] if h else g["home"], "venue": "N" if g["neutral"] else ("H" if h else "A"),
                     "final": g["final"] and pf is not None and pa is not None, "pf": pf, "pa": pa,
-                    "m": None if pf is None or pa is None else pf - pa, "ot": g["ot"], "q3": q3, "eid": g["eid"]})
+                    "m": None if pf is None or pa is None else pf - pa, "ot": g["ot"], "q3": q3, "lead": lead, "eid": g["eid"]})
     return out
 
 
@@ -298,10 +310,10 @@ def starting_qb(session, slate_qb, last):
     return None, ""
 
 
-def team_side(session, date_str, team, opp, is_home, prior, nxt, line, kick, slate_qb):
-    """Storylines about `team` today. `prior` is its finished games before
-    today, `nxt` its next game after today (or None), `line` its own spread
-    (+ = underdog)."""
+def team_side(session, date_str, week, team, opp, is_home, prior, oprior, nxt, line, kick, slate_qb):
+    """Storylines about `team` today. `prior` / `oprior` are its and the
+    opponent's finished games before today, `nxt` its next game after today
+    (or None), `line` its own spread (+ = underdog), `week` today's week."""
     out = []
     D = date.fromisoformat(date_str)
     tc, oc = CODE.get(team), CODE.get(opp)
@@ -353,6 +365,22 @@ def team_side(session, date_str, team, opp, is_home, prior, nxt, line, kick, sla
                                                       f"{sum(p['pf'] for p in prior):g} and allowed "
                                                       f"{sum(p['pa'] for p in prior):g}, which usually goes with about "
                                                       f"{py * n:.1f} wins in {n} games."))
+    if last and last["pf"] == 0:
+        out.append(entry("shutout", team, opp, f"{team} was shut out {last['pf']:g}-{last['pa']:g} by {last['opp']} last game."))
+    if last and -3 <= last["m"] <= -1 and last["q3"] is not None and last["q3"] >= 0:
+        lead = "led by " + f"{last['q3']:g}" if last["q3"] > 0 else "was tied"
+        out.append(entry("heartbreak", team, opp, f"{team} {lead} after three quarters against {last['opp']} last game and "
+                                                  f"lost {last['pf']:g}-{last['pa']:g}."))
+    if last and last["m"] < 0 and last["lead"] is not None and last["lead"] >= 14:
+        out.append(entry("blown_14", team, opp, f"{team} led {last['opp']} by {last['lead']:g} last game and lost "
+                                                f"{last['pf']:g}-{last['pa']:g}."))
+    if len(prior) >= 4 and win_pct(prior) > 0.5 and sum(p["m"] for p in prior) < 0 and line is not None and line < 0:
+        out.append(entry("smoke_mirrors", team, opp, f"{team} is {record(prior)} but has been outscored "
+                                                     f"{sum(p['pf'] for p in prior):g}-{sum(p['pa'] for p in prior):g}, "
+                                                     f"and is a {line:+g} favorite."))
+    if (is_home and week is not None and week >= 14 and prior and oprior and win_pct(prior) <= 0.35
+            and win_pct(oprior) >= 0.6):
+        out.append(entry("spoiler", team, opp, f"Week {week}: {team} ({record(prior)}) hosts {opp} ({record(oprior)})."))
     return out
 
 
@@ -377,8 +405,9 @@ def storylines_for(session, games, date_str, g):
         log = team_log(games, team)
         prior = [p for p in log if p["date"] < date_str and p["final"]]
         nxt = next((p for p in log if p["date"] > date_str), None)
+        oprior = [p for p in team_log(games, opp) if p["date"] < date_str and p["final"]]
         line = None if hs is None else (hs if is_home else -hs)
-        out += team_side(session, date_str, team, opp, is_home, prior, nxt, line, kick,
+        out += team_side(session, date_str, today["week"], team, opp, is_home, prior, oprior, nxt, line, kick,
                          g.get("homeQB" if is_home else "awayQB"))
     # A story that points at both teams in one game says nothing: drop it
     # (the backtest skipped those games).

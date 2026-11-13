@@ -244,3 +244,29 @@ def fetch_ap(session, season, week):
         if ranks:
             return {rk["team"]["$ref"].split("/teams/")[1].split("?")[0]: rk["current"] for rk in ranks}
     raise RuntimeError(f"no AP poll for {season} week {week}")
+
+
+def fetch_ap_weeks(session, season, weeks):
+    return {w: fetch_ap(session, season, w) for w in weeks}
+
+
+def _norm(s):
+    s = (s or "").lower().replace("'", "").replace("’", "").replace(".", "").replace("&", " and ")
+    s = re.sub(r"[^a-z0-9() ]+", " ", s)
+    return " ".join(s.split())
+
+
+ALIASES = {"pitt": "pittsburgh", "hawaii": "hawaii", "umass": "massachusetts", "uconn": "uconn", "connecticut": "uconn",
+           "miami (fl)": "miami", "miami fl": "miami", "ole miss": "ole miss", "mississippi": "ole miss",
+           "louisiana monroe": "ul monroe", "ulm": "ul monroe", "appalachian state": "app state",
+           "southern mississippi": "southern miss", "nc state": "nc state", "north carolina state": "nc state",
+           "fiu": "florida international", "utsa": "utsa", "sam houston state": "sam houston", "san jose state": "san jose state"}
+
+
+def same_school(slate_name, comp):
+    """A slate's school name vs an ESPN competitor: exact on ESPN's location,
+    abbreviation or full name (after aliases), so "Miami" never matches
+    "Miami (OH)"."""
+    n = _norm(slate_name)
+    n = ALIASES.get(n, n)
+    return n in {_norm(comp["loc"]), _norm(comp["abbr"]), _norm(comp["name"])}
