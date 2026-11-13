@@ -37,6 +37,7 @@ def net_toward_home(game):
 # soccer are judged against the odds' implied win %, not 50%.
 BACKTEST = {
     "nba": {"1": [1549, 1320, 0], "1.5-2": [496, 367, 0], "2.5-3": [81, 54, 0], "3.5+": [22, 9, 0]},
+    "ncaab": {"1": [1331, 1198, 32], "1.5-2": [677, 549, 13], "2.5-3": [358, 300, 8], "3.5+": [250, 182, 9]},
     "nfl": {"1": [634, 541, 42], "1.5-2": [166, 117, 6], "2.5-3": [32, 16, 0], "3.5+": [5, 1, 1]},
     "cfb": {"1": [1043, 882, 24], "1.5-2": [174, 136, 5], "2.5-3": [24, 23, 1], "3.5+": [4, 1, 0]},
     "mlb": {"1": [361, 338, 0], "1.5-2": [527, 423, 0], "2.5-3": [18, 12, 0], "3.5+": [0, 0, 0]},
@@ -44,6 +45,7 @@ BACKTEST = {
 }
 NOTES = {
     "nba": "NBA 2018-19 and 2021-22 to 2025-26",
+    "ncaab": "games with an AP Top 25 team, 2015-16 to 2025-26 without 2020-21; bigger leans are almost all toward the home team (home teams covered 52.4%), so part of the climb is home court counted several times",
     "nfl": "NFL regular seasons 2010-2025 without 2020",
     "cfb": "FBS vs FBS regular seasons 2015-2025 without 2020",
     "mlb": "MLB 2015-2025 without 2020; the odds priced the leaned team at about 50% (so 50% is break-even-ish, before the vig)",
