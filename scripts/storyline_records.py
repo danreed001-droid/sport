@@ -25,8 +25,8 @@ from lib.picks import is_final  # noqa: E402
 from lib.storyline_live import PATH  # noqa: E402
 from score_slate import _same_team  # noqa: E402
 
-SPORTS = ("nba", "nfl", "cfb", "mlb", "soccer")
-ATS = {"nba", "nfl", "cfb"}
+SPORTS = ("nba", "nfl", "cfb", "ncaab", "mlb", "soccer")
+ATS = {"nba", "nfl", "cfb", "ncaab"}
 
 
 def which(g, team):

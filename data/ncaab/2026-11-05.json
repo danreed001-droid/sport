@@ -52,7 +52,26 @@
         "AdjOE 109.0 (rank 107/365, pct 70.9) vs 115.4 (rank 38/365, pct 89.8) -- gap 19.0 (current-season only; last-season split unavailable)",
         "Wake Forest returns just 1 scholarship player after a near-total transfer-portal overhaul (last season's number barely represents this roster); Vanderbilt lost G Frankie Collins (injury/departure) but returns its core"
       ],
-      "time": "6:00 PM ET"
+      "time": "6:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Wake Forest Demon Deacons",
+          "says": "back",
+          "fact": "Wake Forest lost to Vanderbilt 67-98 last season (2025-12-21).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "Wake Forest Demon Deacons",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-2",
@@ -102,7 +121,26 @@
         "AdjDE 105.5 (rank 170) vs 93.5 (rank 9) -- MSU's defense is far better, so no def-veto",
         "No notable injuries either side; MSU PG Jeremy Fears Jr. looked fully healthy (13p/11a in the opener)"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Toledo Rockets",
+          "says": "back",
+          "fact": "Toledo lost to Michigan State 69-92 last season (2025-12-16).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "Toledo Rockets",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-3",
@@ -151,7 +189,26 @@
         "Current adjusted efficiency for Gardner-Webb unavailable (KenPom/BartTorvik/TeamRankings all blocked automated access despite repeated attempts) -- Ledger skipped for no-data",
         "Texas missing G Mikey Lewis (fractured foot, out indefinitely); no injuries reported for Gardner-Webb"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "big_stage",
+          "name": "Down from the big stage",
+          "team": "Gardner-Webb Runnin' Bulldogs",
+          "says": "fade",
+          "fact": "Gardner-Webb played #4 UConn last time out (lost 46-86).",
+          "record": "272-234",
+          "pct": 53.8,
+          "leans": "Texas Longhorns",
+          "leanPct": 53.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-2",
@@ -201,7 +258,26 @@
         "Florida returns its entire Final Four core (Haugh, Chinyelu, Condon, Fland, Klavzar) plus transfer Aberdeen, no injuries reported; Jacksonville HC Jordan Mincy (ex-UF assistant) returns to Gainesville",
         "Ledger skipped: Jacksonville's this-season PD/g is genuinely unavailable (no-data)"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "Florida Gators",
+          "says": "fade",
+          "fact": "#1 Florida is a -34.5 favorite.",
+          "record": "95-117",
+          "pct": 44.8,
+          "leans": "Florida Gators",
+          "leanPct": 55.2,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-4",
@@ -250,7 +326,26 @@
         "Current adjusted efficiency for Coastal Carolina unavailable (KenPom/BartTorvik both blocked repeatedly) -- Ledger skipped for no-data; Duke currently AdjOE rank 3/365, AdjDE rank 1/365",
         "Coastal Carolina brought in 11 newcomers and lost its opener to Eastern Michigan 70-71; Duke lost freshman Cameron Boozer to the NBA draft but has reloaded (current #3 offense, #1 defense nationally)"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "Duke Blue Devils",
+          "says": "fade",
+          "fact": "#2 Duke is a -40 favorite.",
+          "record": "95-117",
+          "pct": 44.8,
+          "leans": "Duke Blue Devils",
+          "leanPct": 55.2,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-2",
@@ -299,7 +394,26 @@
         "Current and last-season adjusted-efficiency figures for Penn are unavailable -- Ledger skipped for no-data; Illinois currently AdjOE rank 1/365 (122.2), AdjDE rank 16/365",
         "Rematch of the 2025-26 NCAA Tournament first round, which Illinois won 105-70 en route to the Final Four; no injuries confirmed for either team tonight"
       ],
-      "time": "8:30 PM ET"
+      "time": "8:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "#3 Illinois is a -30.5 favorite.",
+          "record": "95-117",
+          "pct": 44.8,
+          "leans": "Illinois Fighting Illini",
+          "leanPct": 55.2,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-1",
@@ -398,7 +512,26 @@
         "Current adjusted efficiency for Cal Poly unavailable (BartTorvik page never cleared its bot-check despite ~6 attempts) -- Ledger skipped for no-data; Arizona currently AdjOE rank 12/365, AdjDE rank 2/365",
         "Arizona returns Final Four pieces Krivas and Kharchenkov plus transfer RJ Godfrey (his suspension applied only to Aug. exhibitions, not tonight); no injuries reported for Cal Poly"
       ],
-      "time": "10:30 PM ET"
+      "time": "10:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "Arizona Wildcats",
+          "says": "fade",
+          "fact": "#5 Arizona is a -30.5 favorite.",
+          "record": "95-117",
+          "pct": 44.8,
+          "leans": "Arizona Wildcats",
+          "leanPct": 55.2,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-11-06T07:25:18.281097+00:00"

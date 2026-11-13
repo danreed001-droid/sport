@@ -53,7 +53,26 @@
         "AdjOE: UConn 116.0 (BartTorvik rank 35 of ~364); Wagner's adjusted efficiency unavailable (KenPom/BartTorvik/TeamRankings all blocked for this team) \u2014 Ledger skipped: no-data",
         "Injuries: UConn G Solo Ball out for the season (wrist, medical redshirt); Wagner none reported"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "UConn Huskies",
+          "says": "fade",
+          "fact": "#4 UConn is a -37.5 favorite.",
+          "record": "95-117",
+          "pct": 44.8,
+          "leans": "UConn Huskies",
+          "leanPct": 55.2,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-2",
@@ -203,7 +222,26 @@
         "AdjOE: Miami 118.7 (BartTorvik rank 15 of ~364); North Florida's adjusted efficiency unavailable (KenPom/BartTorvik/TeamRankings all blocked for this team) \u2014 Ledger skipped: no-data",
         "Injuries: Miami F Marcus Allen out for the season (torn ACL, on top of a prior cancer battle); North Florida none reported"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "North Florida Ospreys",
+          "says": "back",
+          "fact": "North Florida lost to Miami 67-105 last season (2025-12-21).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "North Florida Ospreys",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-3",

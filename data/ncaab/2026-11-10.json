@@ -56,7 +56,77 @@
         "Florida: no injuries; lost Walter Clayton Jr./Alijah Martin/Olivier Rioux to the NBA, added transfer Boogie Fland",
         "Florida State: 2nd year under HC Luke Loucks, no acute injuries reported"
       ],
-      "time": "6:00 PM ET"
+      "time": "6:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Florida State Seminoles",
+          "says": "back",
+          "fact": "Florida State lost to Florida 76-78 last season (2025-11-11).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "Florida State Seminoles",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "midweek_road",
+          "name": "School night on the road",
+          "team": "Florida Gators",
+          "says": "fade",
+          "fact": "#1 Florida plays at Florida State on a Tuesday.",
+          "record": "631-539",
+          "pct": 53.9,
+          "leans": "Florida State Seminoles",
+          "leanPct": 53.9,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "nonconf_road",
+          "name": "Non-conference road trip",
+          "team": "Florida Gators",
+          "says": "fade",
+          "fact": "#1 Florida plays a non-conference game at Florida State.",
+          "record": "200-166",
+          "pct": 54.6,
+          "leans": "Florida State Seminoles",
+          "leanPct": 54.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving home",
+          "team": "Florida Gators",
+          "says": "fade",
+          "fact": "#1 Florida's first true road game of the season.",
+          "record": "130-112",
+          "pct": 53.7,
+          "leans": "Florida State Seminoles",
+          "leanPct": 53.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-2",
@@ -109,7 +179,43 @@
         "AdjOE blended rank #19 of 365 (95.1 pct) vs #5 of 365 (98.9 pct) - gap 3.85, below the 30-point screen",
         "Both teams at full strength; Michigan State's Jeremy Fears Jr. (preseason All-American PG) is healthy"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "november_hype",
+          "name": "November hype",
+          "team": "Duke Blue Devils",
+          "says": "fade",
+          "fact": "#2 Duke is a -7.5 favorite over #5 Michigan State on a neutral floor.",
+          "record": "31-35",
+          "pct": 47.0,
+          "leans": "Duke Blue Devils",
+          "leanPct": 53.0,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Michigan State Spartans",
+          "says": "back",
+          "fact": "Michigan State lost to Duke 60-66 last season (2025-12-06).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "Michigan State Spartans",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-3",
@@ -162,7 +268,26 @@
         "Memphis: HC Penny Hardaway retained but fired 4 assistants including longtime associate HC Rick Stansbury in the offseason, with a major portal roster rebuild - last year's numbers barely describe this roster",
         "Vanderbilt: lost 4 starters from last year's 27-win team, very young roster (7 freshmen, 4 sophomores)"
       ],
-      "time": "7:15 PM ET"
+      "time": "7:15 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Memphis Tigers",
+          "says": "back",
+          "fact": "Memphis lost to Vanderbilt 70-77 last season (2025-12-17).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "Memphis Tigers",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "4-3",
@@ -215,7 +340,77 @@
         "Texas Tech: star forward JT Toppin (ACL, Feb. 2026) is out with no set return timetable and has not played either game yet",
         "Illinois: Andrej Stojakovic (withdrew from the 2026 NBA draft to return) healthy and leading the team"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Texas Tech Red Raiders",
+          "says": "back",
+          "fact": "Texas Tech lost to Illinois 77-81 last season (2025-11-11).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "Texas Tech Red Raiders",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "midweek_road",
+          "name": "School night on the road",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "#3 Illinois plays at Texas Tech on a Tuesday.",
+          "record": "631-539",
+          "pct": 53.9,
+          "leans": "Texas Tech Red Raiders",
+          "leanPct": 53.9,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "nonconf_road",
+          "name": "Non-conference road trip",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "#3 Illinois plays a non-conference game at Texas Tech.",
+          "record": "200-166",
+          "pct": 54.6,
+          "leans": "Texas Tech Red Raiders",
+          "leanPct": 54.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving home",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "#3 Illinois' first true road game of the season.",
+          "record": "130-112",
+          "pct": 53.7,
+          "leans": "Texas Tech Red Raiders",
+          "leanPct": 53.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-5",
@@ -321,7 +516,26 @@
         "Arizona: lost its opener to UCLA, shooting just 7-of-30 and then 4-of-14 from three in its first two games; HC Tommy Lloyd has publicly flagged rebounding-effort lapses",
         "No injuries reported for either team; Northern Arizona's current-season form/record could not be independently verified"
       ],
-      "time": "9:00 PM ET"
+      "time": "9:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Northern Arizona Lumberjacks",
+          "says": "back",
+          "fact": "Northern Arizona lost to Arizona 49-84 last season (2025-11-11).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "Northern Arizona Lumberjacks",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-5",

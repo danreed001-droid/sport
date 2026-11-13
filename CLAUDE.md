@@ -351,7 +351,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   moneylines from SportsbookReviewsOnline to 2021 and ESPN core odds after;
   46 tested, 1 at p<0.05 vs 2.2 by chance, 4 shown: Rust, Split the
   doubleheader, Ace vs ace dog, Extra-innings hangover). Live it reads ESPN's
-  probable starters, so a late pitching change can change what fires.
+  probable starters, so a late pitching change can change what fires. NCAAB:
+  `scripts/ncaab_storylines.py` (games with an AP Top 25 team, 2015-16 to
+  2025-26, 2020-21 left out; 79 tested, 5 at p<0.05 vs ~4 by chance, 26
+  shown -- the user asked for 20+ at the same bar; several are slices of one
+  effect, ranked teams covering 47.3% in the other team's gym; Nail-biters
+  and Home skid are WEAK).
   Live records: `scripts/storyline_records.py` (after scoring, each run)
   marks each storyline on a finished game `result` hit/miss/push for the
   story's bet (ATS at the slate's line, NBA at statsSpread; soccer/MLB the

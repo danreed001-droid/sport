@@ -1,10 +1,63 @@
 #!/usr/bin/env python3
 """NCAA men's basketball storylines: context for the pick sheet, never a pick.
 
-DOCSTRING_PLACEHOLDER
+Each storyline is a situation a writer could tell a story about (a ranked
+team "on a school night" in a road gym, an unranked team "hung over" after
+beating a top-10 team, a top-5 team "laying 25"). 79 were tested on
+2026-11-13, in two rounds (48, then 31 more), on every regular-season game
+involving an AP Top 25 team from 2015-16 to 2025-26 with a closing spread
+(6,693 games; conference tournaments and the postseason left out; the
+2020-21 COVID season, 497 games in mostly empty arenas, reported separately
+and left out of the numbers below). Data: ESPN's daily D-I scoreboards
+(groups=50: scores, overtime, site, venue, conference game, TV, team three-
+point/field-goal/free-throw/rebound totals), ESPN's weekly AP polls (each
+date's poll from the Monday it was released; week 1 = preseason) and ESPN's
+closing spreads (core odds API: ESPN BET's line when listed, else the median
+of the sportsbooks). The story's bet was graded against the closing spread,
+pushes left out, and a story that pointed at both teams in one game was
+skipped for that game. 5 of the 79 were at p<0.05 where about 4 would be
+expected by chance, and 26 met the display bar where about 19 would by
+chance, so as a group they're no better than luck. These are the 26 where
+history leaned 53%+ one way on 50+ games, or p<0.05 (last year's grudge,
+52.4% on 2,679 games) -- which side that can be the opposite of the story
+(an AP top-5 team favored by 25+ covered 55.2%; the story says fade it, so
+it's marked `against`). Several are one pattern sliced different ways: in
+these games AP-ranked teams on a true road floor covered 47.3% and home
+teams 52.4%, which is most of what school night on the road, snake pit,
+disrespected on the road, non-conference road trip and leaving home show.
+Small samples: upset hangover (75 games), November hype (66), home cooking
+(80). Leaning opposite ways in even and odd seasons: nail-biters, home skid
+(counted half in the tally, WEAK). They're shown on the game card with their
+record and aren't graded or counted anywhere except their own live record.
+
+Not tested, because these feeds don't carry them: senior night as such (the
+last home game was tested: 48.7%), buzzer-beaters (won by 1-2: 51.7%),
+coaching changes, injuries, and player stats. Rivalries were tested from a
+hard-coded list of 62 pairs: underdogs covered 51.9%, so they aren't shown.
+
+Writes `storylines` onto each game of today's NCAAB slate (or the dates
+given) that hasn't started: [{key, name, team, says, fact, record, pct,
+leans, leanPct, against, unit, weight, live}], where `team` is who the story
+is about, `says` is the story's bet ("back"/"fade" that team), `record`/`pct`
+are that bet's history ATS (`unit`) plus its live record since going live
+(`live`, lib/storyline_live.py), and `leans`/`leanPct` the side history
+favors. Once a game has a score the entry is kept as it was before tip-off.
+Live, each team's games come from ESPN's daily D-I scoreboards from Nov 1
+(as in the backtest; through five days ahead, for the sandwich game), the AP
+ranks from ESPN's weekly polls, tonight's spread from the slate's homeSpread
+(the backtest used the closing line), last season's meetings and the games a
+team has left from ESPN's team schedules. Only games with an AP Top 25 team,
+a spread, in the regular season and not in a conference tournament get any
+(as backtested). If ESPN can't be reached, nothing is changed.
+
+Usage: python scripts/ncaab_storylines.py [--dry-run] [--include-final] [--backfill] [YYYY-MM-DD ...]
+  --dry-run        print what fires, write nothing
+  --include-final  (with --dry-run) also evaluate games that have a score
+  --backfill       also write finished games (this season's games before
+                   storylines went live, from the games before each one);
+                   run storyline_records.py after
 """
 import os
-import statistics
 import sys
 import threading
 from collections import Counter
@@ -59,7 +112,6 @@ STORIES = {
     "november_hype": ("November hype", "fade", (31, 35), "an AP top-10 team favored over a ranked team on a neutral floor in November"),
 }
 
-POWER = {"2", "4", "7", "8", "21", "23"}  # ACC, Big East, Big Ten, Big 12, Pac-12, SEC (ESPN conference ids)
 B1G_B12 = {"7", "8"}
 STATE_TZ = {}
 for _z, _states in ((0, "CT DE DC FL GA IN KY ME MD MA MI NH NJ NY NC OH PA RI SC VT VA WV"),
@@ -305,7 +357,7 @@ def _score(r):
 def team_side(c):
     """[(key, fact)] for the team in context `c` (game_context)."""
     out = []
-    P, OP, sp, D = c["prior"], c["oprior"], c["sp"], c["D"]
+    P, sp, D = c["prior"], c["sp"], c["D"]
     last = P[-1] if P else None
     T, O = c["team"], c["opp"]
     rk, ork = c["rank"], c["orank"]
@@ -463,9 +515,9 @@ class Season:
         self.session, self.season = session, season
         start = date(season - 1, 11, 1)
         days = [start + timedelta(days=i) for i in range((through - start).days + 1)]
+        self.polls, dated = fetch_polls(session, season)  # fails fast when ESPN can't be reached
         with ThreadPoolExecutor(4) as ex:
             self.by_date = dict(zip(days, ex.map(fetch_day, days)))
-        self.polls, dated = fetch_polls(session, season)
         self.weeks = map_weeks(self.by_date, self.polls, dated)
         self.rows = season_rows(self.by_date, self.polls, self.weeks)
         self.homes = {tid: home_info(rs) for tid, rs in self.rows.items()}
@@ -525,10 +577,22 @@ def _match(g, comps):
     """The slate's home and away teams among an ESPN event's competitors."""
     def hit(name, c):
         return any(_same_team(name, x) for x in (c["name"], c["loc"]) if x)
-    h = [c for c in comps if hit(g["home"], c)]
-    a = [c for c in comps if hit(g["away"], c)]
-    if len(h) == 1 and len(a) == 1 and h[0] is not a[0]:
-        return h[0], a[0]
+    for test in (lambda name, c: name == c["name"], hit):  # exact display name first ("Tennessee" vs "Tennessee State")
+        h = [c for c in comps if test(g["home"], c)]
+        a = [c for c in comps if test(g["away"], c)]
+        if len(h) == 1 and len(a) == 1 and h[0] is not a[0]:
+            return h[0], a[0]
+        if len(h) == 1 and len(a) == 2 and h[0] in a:
+            return h[0], next(c for c in a if c is not h[0])
+        if len(a) == 1 and len(h) == 2 and a[0] in h:
+            return next(c for c in h if c is not a[0]), a[0]
+    # one side by name, the other by nickname ("Penn Quakers" = "Pennsylvania Quakers")
+    nick = lambda name, c: name.split()[-1:] == (c["name"] or "").split()[-1:]  # noqa: E731
+    for x, y in ((comps[0], comps[1]), (comps[1], comps[0])):
+        if hit(g["home"], x) and nick(g["away"], y) and not hit(g["away"], x):
+            return x, y
+        if hit(g["away"], y) and nick(g["home"], x) and not hit(g["home"], y):
+            return x, y
     return None
 
 

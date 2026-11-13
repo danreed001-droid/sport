@@ -55,7 +55,26 @@
         "Adj. offensive/defensive efficiency: Iona not found (BartTorvik inaccessible/unranked in available data) vs St. John's 114.4 AdjOE (46th), 96.0 AdjDE (21st) of 364 D-I teams",
         "St. John's enters with an almost entirely new roster (portal rebuild under Rick Pitino); Iona is 2-0 under 2nd-year coach Dan Geriot"
       ],
-      "time": "12:00 PM ET"
+      "time": "12:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Iona Gaels",
+          "says": "back",
+          "fact": "Iona lost to St. John's 64-91 last season (2025-12-13).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "Iona Gaels",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-1",
@@ -107,7 +126,26 @@
         "Adj. offensive efficiency: Arkansas 116.2 (33rd) vs Virginia 119.6 (7th) of 364 D-I teams \u2014 gap 7.17, screened out at Screen 1 (off-gap)",
         "Arkansas: G Isaiah Sealy out indefinitely (knee surgery); Calipari's rotation already thin at 6-7 deep. Virginia returns All-ACC F Thijs De Ridder; no injuries reported"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "november_hype",
+          "name": "November hype",
+          "team": "Virginia Cavaliers",
+          "says": "fade",
+          "fact": "#9 Virginia is a -3.5 favorite over #12 Arkansas on a neutral floor.",
+          "record": "31-35",
+          "pct": 47.0,
+          "leans": "Virginia Cavaliers",
+          "leanPct": 53.0,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "2-1",
@@ -211,7 +249,26 @@
         "Adj. offensive efficiency: USC 114.3 (49th) vs Wichita State 111.0 (83rd) of 364 D-I teams \u2014 gap 9.37, screened out at Screen 1 (off-gap)",
         "USC: multiple preseason injury watch-list items (Rodney Rice, season-ending shoulder surgery; Eric Reibe, limited in practice) with no same-day confirmation either way. Wichita State: brings back 10 players from a 24-12 team, no injuries reported, highest roster continuity of any team on this slate"
       ],
-      "time": "11:00 PM ET"
+      "time": "11:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "after_dark",
+          "name": "After dark out West",
+          "team": "Wichita State Shockers",
+          "says": "fade",
+          "fact": "Wichita State tips at 11:00 PM ET in Stateline, NV.",
+          "record": "73-83",
+          "pct": 46.8,
+          "leans": "Wichita State Shockers",
+          "leanPct": 53.2,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-11-09T07:13:02.465421+00:00"

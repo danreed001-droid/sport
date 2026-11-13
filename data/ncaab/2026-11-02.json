@@ -52,7 +52,43 @@
         "Miami's ENTIRE roster turned over under new HC Jai Lucas (every key piece transferred out); last year's numbers barely describe this team",
         "Neutral site (Tampa, Orion180 Tipoff Classic); line moved from Florida -10.5 toward -4.5, sharp money respecting Miami's portal haul"
       ],
-      "time": "6:00 PM ET"
+      "time": "6:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "november_hype",
+          "name": "November hype",
+          "team": "Florida Gators",
+          "says": "fade",
+          "fact": "#1 Florida is a -4.5 favorite over #14 Miami on a neutral floor.",
+          "record": "31-35",
+          "pct": 47.0,
+          "leans": "Florida Gators",
+          "leanPct": 53.0,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Miami Hurricanes",
+          "says": "back",
+          "fact": "Miami lost to Florida 68-82 last season (2025-11-16).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "Miami Hurricanes",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-2",
@@ -787,7 +823,43 @@
         "Arizona lost 4 key seniors plus presumptive draft departures (Peat, Burries) and, per reporting, had no confirmed portal signings as of late in the offseason - a real uncertainty flag for a team that was elite (36-3) last year",
         "Neutral site (T-Mobile Arena, Las Vegas, Hall of Fame Series)"
       ],
-      "time": "10:00 PM ET"
+      "time": "10:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "UCLA Bruins",
+          "says": "back",
+          "fact": "UCLA lost to Arizona 65-69 last season (2025-11-14).",
+          "record": "1405-1274",
+          "pct": 52.4,
+          "leans": "UCLA Bruins",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "november_hype",
+          "name": "November hype",
+          "team": "Arizona Wildcats",
+          "says": "fade",
+          "fact": "#5 Arizona is a -4.5 favorite over #22 UCLA on a neutral floor.",
+          "record": "31-35",
+          "pct": 47.0,
+          "leans": "Arizona Wildcats",
+          "leanPct": 53.0,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-1",

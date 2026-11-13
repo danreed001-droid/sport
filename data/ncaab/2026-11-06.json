@@ -206,7 +206,26 @@
         "This is a National Championship rematch (TNT Sports Hall of Fame Series, TD Garden, Boston) \u2014 UConn lost last season's title game to Michigan and is cast as seeking revenge",
         "Spread moved from UConn -7.5 (earlier in the week, per CBS Sports) to UConn -5.5 (Covers, morning of 11/6) \u2014 a 2-point move toward Michigan; no public bet-share data available to confirm this as genuine reverse line movement"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "november_hype",
+          "name": "November hype",
+          "team": "UConn",
+          "says": "fade",
+          "fact": "#4 UConn is a -5.5 favorite over #16 Michigan on a neutral floor.",
+          "record": "31-35",
+          "pct": 47.0,
+          "leans": "UConn",
+          "leanPct": 53.0,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-1",
@@ -413,7 +432,24 @@
         "No AdjO/AdjD or national rank available for either team this early in the season"
       ],
       "time": "9:00 PM ET",
-      "gradeNote": "Not played on this date (moved or postponed); no result."
+      "gradeNote": "Not played on this date (moved or postponed); no result.",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "big_stage",
+          "name": "Down from the big stage",
+          "team": "Miami (FL)",
+          "says": "fade",
+          "fact": "Miami played #1 Florida last time out (lost 67-77).",
+          "record": "272-234",
+          "pct": 53.8,
+          "leans": "Wagner",
+          "leanPct": 53.8,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-1",
@@ -466,7 +502,43 @@
       "time": "TBA ET (unconfirmed)",
       "gameTotal": 155.5,
       "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
+      "gameTotalUnderOdds": -108,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "big_stage",
+          "name": "Down from the big stage",
+          "team": "UCLA",
+          "says": "fade",
+          "fact": "UCLA played #5 Arizona last time out (won 84-75).",
+          "record": "272-234",
+          "pct": 53.8,
+          "leans": "North Florida",
+          "leanPct": 53.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "after_dark",
+          "name": "After dark out West",
+          "team": "North Florida",
+          "says": "fade",
+          "fact": "North Florida tips at 10:30 PM ET in Los Angeles, CA.",
+          "record": "73-83",
+          "pct": 46.8,
+          "leans": "North Florida",
+          "leanPct": 53.2,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-11-10T12:59:38.473396+00:00"

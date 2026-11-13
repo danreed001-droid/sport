@@ -106,6 +106,10 @@ jobs:
         continue-on-error: true
         run: python scripts/cfb_storylines.py
 
+      - name: NCAAB storylines on today's slate (context only)
+        continue-on-error: true
+        run: python scripts/ncaab_storylines.py
+
       - name: Soccer storylines on today's slate (context only)
         continue-on-error: true
         run: python scripts/soccer_storylines.py

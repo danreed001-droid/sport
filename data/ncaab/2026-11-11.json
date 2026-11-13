@@ -108,7 +108,26 @@
         "AdjO blended rank 79 vs rank 14 (78.5 vs 96.4 pct) \u2014 gap 17.9, below the 30 screen threshold",
         "Michigan (defending national champion) broke in new HC Mike Boynton; lost a title rematch at UConn 77-85; Marquette is 2-0 vs lower-tier non-conference foes"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "big_stage",
+          "name": "Down from the big stage",
+          "team": "Michigan Wolverines",
+          "says": "fade",
+          "fact": "Michigan played #4 UConn last time out (lost 77-85).",
+          "record": "272-234",
+          "pct": 53.8,
+          "leans": "Marquette Golden Eagles",
+          "leanPct": 53.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-3",
@@ -161,7 +180,26 @@
         "Jacksonville State's AdjO/AdjD could not be found from any source (this season or last) \u2014 Ledger skipped (no-data)",
         "Houston a heavy favorite (~-37 spread); Milos Uzan and Emanuel Sharp both active for Houston"
       ],
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "ot_loser",
+          "name": "Overtime heartbreak",
+          "team": "Jacksonville State Gamecocks",
+          "says": "back",
+          "fact": "Jacksonville State lost to South Alabama 80-83 in overtime last time out.",
+          "record": "151-126",
+          "pct": 54.5,
+          "leans": "Jacksonville State Gamecocks",
+          "leanPct": 54.5,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-2",
@@ -267,7 +305,43 @@
         "AdjD blended 98.85 vs Arkansas-Pine Bluff's 113.4 (this season only) \u2014 no def-veto, UCLA defense far better",
         "UCLA 2-0 incl. a ranked road upset over then-No. 5 Arizona (84-75); Arkansas-Pine Bluff 0-2, outscored by 95 combined"
       ],
-      "time": "9:00 PM ET"
+      "time": "9:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "UCLA Bruins",
+          "says": "fade",
+          "fact": "UCLA moved up from #22 to #9 in this week's AP poll.",
+          "record": "235-265",
+          "pct": 47.0,
+          "leans": "UCLA Bruins",
+          "leanPct": 53.0,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "after_dark",
+          "name": "After dark out West",
+          "team": "Arkansas-Pine Bluff Golden Lions",
+          "says": "fade",
+          "fact": "Arkansas-Pine Bluff tips at 9:00 PM ET in Los Angeles, CA.",
+          "record": "73-83",
+          "pct": 46.8,
+          "leans": "Arkansas-Pine Bluff Golden Lions",
+          "leanPct": 53.2,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-2",
@@ -372,7 +446,60 @@
         "AdjO blended rank 73 vs rank 98.5 (80.2 vs 73.1 pct) \u2014 gap 7.0, well below the 30 screen threshold",
         "Both are ACC members post-realignment; California just returned from the Lake Tahoe Classic, where it lost to then-No. 10 Houston 86-68"
       ],
-      "time": "11:00 PM ET"
+      "time": "11:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "midweek_road",
+          "name": "School night on the road",
+          "team": "USC Trojans",
+          "says": "fade",
+          "fact": "#21 USC plays at California on a Wednesday.",
+          "record": "631-539",
+          "pct": 53.9,
+          "leans": "California Golden Bears",
+          "leanPct": 53.9,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "nonconf_road",
+          "name": "Non-conference road trip",
+          "team": "USC Trojans",
+          "says": "fade",
+          "fact": "#21 USC plays a non-conference game at California.",
+          "record": "200-166",
+          "pct": 54.6,
+          "leans": "California Golden Bears",
+          "leanPct": 54.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving home",
+          "team": "USC Trojans",
+          "says": "fade",
+          "fact": "#21 USC's first true road game of the season.",
+          "record": "130-112",
+          "pct": 53.7,
+          "leans": "California Golden Bears",
+          "leanPct": 53.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-11-12T07:45:04.559445+00:00"
