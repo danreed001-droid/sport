@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-13",
+  "picks": {
+    "nba-2026-11-13-atlanta-hawks-chicago-bulls-8-00-pm-et": {
+      "sport": "nba",
+      "away": "Atlanta Hawks",
+      "home": "Chicago Bulls",
+      "time": "8:00 PM ET",
+      "side": "away",
+      "team": "Atlanta Hawks",
+      "spread": -2.5,
+      "spreadOdds": -230,
+      "moneyline": -275,
+      "submittedAt": "2026-11-13T20:58:48+00:00",
+      "issue": 28,
+      "alt": true,
+      "posted": {
+        "spread": -7.5,
+        "spreadOdds": -112
+      }
+    },
+    "nba-2026-11-13-memphis-grizzlies-new-orleans-pelicans-8-00-pm-et": {
+      "sport": "nba",
+      "away": "Memphis Grizzlies",
+      "home": "New Orleans Pelicans",
+      "time": "8:00 PM ET",
+      "side": "away",
+      "team": "Memphis Grizzlies",
+      "spread": 0,
+      "spreadOdds": -184,
+      "moneyline": -160,
+      "submittedAt": "2026-11-13T20:58:48+00:00",
+      "issue": 28,
+      "alt": true,
+      "posted": {
+        "spread": -3.5,
+        "spreadOdds": -110
+      }
+    },
+    "nba-2026-11-13-utah-jazz-houston-rockets-8-30-pm-et": {
+      "sport": "nba",
+      "away": "Utah Jazz",
+      "home": "Houston Rockets",
+      "time": "8:30 PM ET",
+      "side": "home",
+      "team": "Houston Rockets",
+      "spread": -12,
+      "spreadOdds": -234,
+      "moneyline": -1600,
+      "submittedAt": "2026-11-13T20:58:48+00:00",
+      "issue": 28,
+      "alt": true,
+      "posted": {
+        "spread": -17.5,
+        "spreadOdds": -104
+      }
+    }
+  },
+  "scores": {
+    "cfb-2026-11-13-houston-colorado-10-15-pm-et": "NNNNNh",
+    "nba-2026-11-13-atlanta-hawks-chicago-bulls-8-00-pm-et": "NNNaNNNaN",
+    "nba-2026-11-13-cleveland-cavaliers-miami-heat-8-00-pm-et": "NNNhNNNNN",
+    "nba-2026-11-13-golden-state-warriors-san-antonio-spurs-9-30-pm-et": "NNNhNNNhN",
+    "nba-2026-11-13-memphis-grizzlies-new-orleans-pelicans-8-00-pm-et": "NNNaNNNNN",
+    "nba-2026-11-13-milwaukee-bucks-orlando-magic-7-00-pm-et": "NNNaNNNhN",
+    "nba-2026-11-13-new-york-knicks-indiana-pacers-7-00-pm-et": "NNNaNNNaN",
+    "nba-2026-11-13-oklahoma-city-thunder-la-clippers-10-30-pm-et": "NNNNNNNhN",
+    "nba-2026-11-13-portland-trail-blazers-sacramento-kings-10-00-pm-et": "NNNhNNNhN",
+    "ncaab-2026-11-13-merrimack-warriors-florida-gators-7-00-pm-et": "NNNNNNNNN",
+    "ncaab-2026-11-13-north-alabama-lions-miami-hurricanes-5-00-pm-et": "NNNNNNNNN",
+    "ncaab-2026-11-13-northern-iowa-panthers-michigan-state-spartans-7-00-pm-et": "NNNNNNNNN",
+    "ncaab-2026-11-13-prairie-view-a-m-panthers-vanderbilt-commodores-7-00-pm-et": "NNNNNNNNN",
+    "ncaab-2026-11-13-sam-houston-bearkats-illinois-fighting-illini-7-00-pm-et": "NNNNNNNNN"
+  },
+  "totals": {}
+}
