@@ -157,6 +157,21 @@ def ncaabstats_side(g):
     return side_of(g, g["ncaabStatsFavors"]) if g.get("ncaabStatsFavors") else None
 
 
+# Storyline veto (the user's call, 2026-11-13): from this date on, a model's
+# pick on a game whose storylines lean the other way (the card's weighted
+# tally, frozen at the start) sits out -- it counts neither for nor against
+# the model anywhere on the page. Your own picks always count. The pick log
+# keeps what the pick would have done ("sx"/"sxa"), so the change can be judged.
+STORY_VETO_FROM = "2026-11-13"
+
+
+def story_vetoed(date_str, g, side):
+    if date_str < STORY_VETO_FROM or side not in ("home", "away") or not g.get("storylines"):
+        return False
+    net = storyline_buckets.net_toward_home(g)
+    return (net < 0) if side == "home" else (net > 0)
+
+
 # Trend/blowout are only populated on NFL and CFB games, stats only on NBA
 # games and nflstats only on NFL games; every other sport's games lack these
 # keys entirely so these "models" contribute nothing outside their sport.
@@ -208,8 +223,9 @@ def build():
                             play["lt"] = 1   # submitted after the game started (the public Results page leaves it out)
                         # Which models were on your side ("ag") or the other
                         # side ("op") of this game, for the agreement table.
-                        play["ag"] = [k for k, s in model_sides if s == side]
-                        play["op"] = [k for k, s in model_sides if s and s != side]
+                        live_sides = [(k, s) for k, s in model_sides if s and not story_vetoed(date_str, g, s)]  # sat-out picks don't count
+                        play["ag"] = [k for k, s in live_sides if s == side]
+                        play["op"] = [k for k, s in live_sides if s != side]
                         # Storylines' net lean toward your side (each storyline's
                         # tally weight; + with you, - against), when the game had any.
                         if g.get("storylines"):
@@ -223,11 +239,21 @@ def build():
                                 else:
                                     net += wt if lean == mine_team else -wt
                             play["sl"] = net
+                    vetoed = who != "mine" and story_vetoed(date_str, g, side)
+                    if vetoed:
+                        play["sx"] = 1   # sits out: the storylines leaned the other way
                     if not final:
                         play.update({"a": None, "ap": None, "m": None, "mp": None, "x": 0, "pd": 1})
                         plays.append(play)
                         continue
                     r = grade(sport, gv, side)
+                    if vetoed:
+                        # Not counted anywhere; "sxa"/"sxm" keep what it would have done.
+                        play.update({"a": None, "ap": None, "m": None, "mp": None, "x": 0,
+                                     "sxa": {"cover": "W", "miss": "L", "push": "P"}.get(r["ats"]["result"]),
+                                     "sxm": r["ml"]["result"], "sc": f"{g['awayScore']:g}–{g['homeScore']:g}"})
+                        plays.append(play)
+                        continue
                     tally(totals[who], r)
                     ats_code = {"cover": "W", "miss": "L", "push": "P"}.get(r["ats"]["result"])
                     # "m"/"mp" carry the moneyline result/profit even for a skipped
@@ -276,7 +302,7 @@ def build():
     rule_records = {n: {"w": 0, "l": 0, "p": 0} for n in RULE_NAMES}
     for date_str, doc in all_docs.get("nba", []):
         for g in doc.get("games", []):
-            if not g.get("statsFavors") or not is_final(doc, g):
+            if not g.get("statsFavors") or not is_final(doc, g) or story_vetoed(date_str, g, side_of(g, g["statsFavors"])):
                 continue
             r = grade("nba", stats_view(g), side_of(g, g["statsFavors"]))["ats"]["result"]
             key = {"cover": "w", "miss": "l", "push": "p"}.get(r)
@@ -295,7 +321,7 @@ def build():
     nfl_records = {n: {"w": 0, "l": 0, "p": 0} for n in nfl_stats_rules.RULE_NAMES}
     for date_str, doc in all_docs.get("nfl", []):
         for g in doc.get("games", []):
-            if not g.get("nflStatsFavors") or not is_final(doc, g):
+            if not g.get("nflStatsFavors") or not is_final(doc, g) or story_vetoed(date_str, g, side_of(g, g["nflStatsFavors"])):
                 continue
             key = {"cover": "w", "miss": "l", "push": "p"}.get(grade("nfl", g, side_of(g, g["nflStatsFavors"]))["ats"]["result"])
             for rule in g.get("nflStatsRules") or []:
@@ -309,7 +335,7 @@ def build():
     ncaab_records = {n: {"w": 0, "l": 0, "p": 0} for n in ncaab_stats_rules.RULE_NAMES}
     for date_str, doc in all_docs.get("ncaab", []):
         for g in doc.get("games", []):
-            if not g.get("ncaabStatsFavors") or not is_final(doc, g):
+            if not g.get("ncaabStatsFavors") or not is_final(doc, g) or story_vetoed(date_str, g, side_of(g, g["ncaabStatsFavors"])):
                 continue
             key = {"cover": "w", "miss": "l", "push": "p"}.get(grade("ncaab", g, side_of(g, g["ncaabStatsFavors"]))["ats"]["result"])
             for rule in g.get("ncaabStatsRules") or []:
@@ -335,7 +361,7 @@ def build():
                 row["final"] = is_final(doc, g)
                 if row["final"]:
                     row["results"] = {
-                        who: grade(sport, stats_view(g) if who == "stats" else g, side)
+                        who: ({"sx": 1} if story_vetoed(date_str, g, side) else grade(sport, stats_view(g) if who == "stats" else g, side))
                         for who, side in [(k, f(g)) for k, f in MODEL_SIDES]
                         if side
                     }
@@ -385,6 +411,7 @@ def build():
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
         "storyStrength": storyline_strength(all_docs),
+        "storyVetoFrom": STORY_VETO_FROM,
         "storyBacktest": storyline_buckets.BACKTEST,
         "storyBacktestNotes": storyline_buckets.NOTES,
         "statsBackfilled": stats_backfilled,
@@ -467,10 +494,10 @@ def stacked_record(docs, sport, favors, rules, families=len, view=lambda g: g):
     """This season's record on picks two or more rules agreed on (rule
     families for NBA Stats: overlapping slices of one situation count once)."""
     rec = {"w": 0, "l": 0, "p": 0}
-    for _, doc in docs:
+    for date_str, doc in docs:
         for g in doc.get("games", []):
             nums = [r.get("rule") for r in g.get(rules) or []]
-            if not g.get(favors) or families(nums) < 2 or not is_final(doc, g):
+            if not g.get(favors) or families(nums) < 2 or not is_final(doc, g) or story_vetoed(date_str, g, side_of(g, g[favors])):
                 continue
             key = {"cover": "w", "miss": "l", "push": "p"}.get(grade(sport, view(g), side_of(g, g[favors]))["ats"]["result"])
             if key:

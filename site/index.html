@@ -227,6 +227,10 @@ details.why{font-size:12px;color:var(--muted);}
 .stories .st-hist{color:var(--muted);}
 .stories .st-strong{color:var(--warn);font-size:11px;font-weight:600;}
 .stories .st-weak{color:var(--muted);font-size:11px;}
+.vetoline{font-size:12px;border-left:3px solid var(--warn);padding:4px 10px;margin:8px 0 0;color:var(--ink);}
+.vetoline b{color:var(--warn);}
+.vetonote{font-size:13px;border:1px solid var(--warn);border-radius:8px;padding:8px 12px;margin:0 0 14px;color:var(--ink);}
+.vetonote b{color:var(--warn);}
 details.why summary{cursor:pointer;color:var(--opinion-ink);font-weight:600;font-size:11.5px;width:max-content;max-width:100%;}
 details.why ul{margin:8px 0 0;padding-left:17px;line-height:1.55;}
 details.rules-tbl{margin:0 0 14px;}
@@ -842,6 +846,7 @@ footer b{color:var(--ink);}
     if(DASH.sports.length === sp.length) DASH.sports = [];  // every sport picked = all
     return '<section id="dashboard"><div class="eyebrow">Scorecard</div><h2 class="sec-h">How everyone is doing</h2>'
       + '<p class="sec-p">Every graded play, flat $100 a bet at the lines stored on pick day. The filters apply to everything below them, including today\'s slate; tap more than one league or model to combine them.</p>'
+      + (DATA.storyVetoFrom ? '<div class="vetonote"><b>Big change, '+esc(fmtLong(DATA.storyVetoFrom))+':</b> from this slate on, a model\'s pick on a game whose storylines lean the other way (the card\'s weighted tally at the start) <b>sits out</b>. It isn\'t counted for or against that model anywhere here: tiles, charts, tables, rule records. The pick log still shows it as "Sat out" with what it would have done. Why: this season, model picks with the storylines went 35-17 (67%) and against them 31-40 (44%). Your own picks always count. Earlier picks are unchanged.</div>' : '')
       + '<div class="filters">'
         + '<span class="fgroup"><span class="flbl">Range</span>'+seg('range',[['7','7 days'],['30','30 days'],['year','This year'],['all','All time'],['custom','Custom']])
           + '<span class="daterange" id="rcustom"'+(DASH.range==='custom'?'':' hidden')+'><label for="rfrom" class="sr">From</label><input type="date" id="rfrom"> <span class="to">to</span> <label for="rto" class="sr">To</label><input type="date" id="rto"></span></span>'
@@ -932,8 +937,10 @@ footer b{color:var(--ink);}
     var body = rows.slice(0, LOG.shown).map(function(p){
       var w = WL[p.w], pend = p.pd;
       if(p.w==='totals' || p.w==='mytotal') return totalsLogRow(p, w);
-      var ats = pend ? '<span class="res pend">Pending</span>' : (p.a ? resCell(p.a) : '<span class="muted">no line</span>');
-      var ml = pend ? '<span class="res pend">Pending</span>' : (p.x ? (p.x===2 ? '<span class="muted" title="Priced -400 or shorter: not a moneyline bet">No ML bet</span>' : '<span class="muted" title="NFL or college pick on a 7+ point dog: counted ATS only">ATS only</span>') : (p.m ? resCell(p.m) : '<span class="muted">—</span>'));
+      var wouldTxt = function(r){ return r==='W' ? 'would have won' : r==='L' ? 'would have lost' : r==='P' ? 'would have pushed' : 'no result'; };
+      var ats = p.sx && !pend ? '<span class="muted" title="Storylines leaned the other way: not counted">Sat out · '+wouldTxt(p.sxa)+'</span>'
+        : pend ? '<span class="res pend">Pending'+(p.sx ? ' · sits out' : '')+'</span>' : (p.a ? resCell(p.a) : '<span class="muted">no line</span>');
+      var ml = p.sx && !pend ? '<span class="muted">Sat out · '+wouldTxt(p.sxm)+'</span>' : pend ? '<span class="res pend">Pending</span>' : (p.x ? (p.x===2 ? '<span class="muted" title="Priced -400 or shorter: not a moneyline bet">No ML bet</span>' : '<span class="muted" title="NFL or college pick on a 7+ point dog: counted ATS only">ATS only</span>') : (p.m ? resCell(p.m) : '<span class="muted">—</span>'));
       return '<tr>'
         + '<td class="c-date">'+fmtDay(p.d)+'</td>'
         + '<td>'+esc((DATA.sportLabels[p.s]||p.s).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB'))+'</td>'
@@ -1053,6 +1060,7 @@ footer b{color:var(--ink);}
   // ---- game cards ----
   function resultChips(r){
     if(!r) return '';
+    if(r.sx) return '<span class="chip p" title="The storylines leaned the other way: this pick isn\'t counted">sat out</span>';
     var out = '';
     var ats = r.ats && r.ats.result;
     if(ats) out += '<span class="chip '+(ats==='cover'?'w':ats==='miss'?'l':'p')+'">ATS '+(ats==='cover'?'✓':ats==='miss'?'✕':'push')+'</span>';
@@ -1150,6 +1158,25 @@ footer b{color:var(--ink);}
   // Storylines (scripts/<sport>_storylines.py): situations a story could be
   // told about, with how they went historically (ATS; soccer: to win / not to
   // win, with the odds' implied % and return). Context only -- never a pick.
+  // Storyline veto (from DATA.storyVetoFrom): models whose pick goes against
+  // the storylines' lean sit the game out -- not counted for or against them.
+  var VETO_MODELS = [['ledger','The Ledger', function(g){ return g.pick && g.confidence!=='skip' && !g.skipped ? g.pick : null; }],
+    ['alt','Second Opinion', function(g){ return g.altPick && g.altConfidence!=='pass' ? g.altPick : null; }],
+    ['trend','Trend check', function(g){ return g.altTrendFavors; }], ['blowout','Blowout check', function(g){ return g.altBlowoutFavors; }],
+    ['stats','NBA Stats', function(g){ return g.statsFavors; }], ['nflstats','NFL Stats', function(g){ return g.nflStatsFavors; }],
+    ['ncaabstats','NCAAB Stats', function(g){ return g.ncaabStatsFavors; }]];
+  function vetoed(g){
+    if(!DATA.storyVetoFrom || !DATA.slate || DATA.slate.date < DATA.storyVetoFrom) return [];
+    var net = storyNet(g);
+    if(!net) return [];
+    var against = net > 0 ? g.away : g.home;
+    return VETO_MODELS.filter(function(m){ var t = m[2](g); return t && t===against; }).map(function(m){ return m[1]; });
+  }
+  function vetoLine(g){
+    var v = vetoed(g);
+    if(!v.length) return '';
+    return '<div class="vetoline"><b>Sitting out</b> · '+esc(v.join(', '))+(v.length===1?' picks':' pick')+' against the storylines\' lean ('+esc(storyNet(g)>0 ? g.home : g.away)+'), so '+(v.length===1?'it doesn\'t':'they don\'t')+' count for or against '+(v.length===1?'it':'them')+(g.final ? '' : ' if the lean holds at the start')+'.</div>';
+  }
   function storyBlock(g, k){
     var rows = g.storylines||[];
     if(!rows.length) return '';
@@ -1394,7 +1421,7 @@ footer b{color:var(--ink);}
     return '<article class="game">'
       + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
       + '<div class="lines">'+lineText(g)+(g.manualFields && g.manualFields.length ? '<br><span class="handnote" title="Entered on the Enter data by hand page">\u270e hand-entered: '+esc(manualLabel(g.manualFields))+'</span>' : '')+'</div></div>'
-      + '<div class="models">'+models+'</div>'+injuryWatch(g)+storyBlock(g, sport)
+      + '<div class="models">'+models+'</div>'+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
       + '</article>';

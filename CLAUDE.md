@@ -418,6 +418,20 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   scores archive; NBA/NFL Stats read the box-score facts for their rules.
   Don't edit `data/manual/` on the user's behalf unless they ask.
 
+- **Storyline veto (the user's call, 2026-11-13):** from `STORY_VETO_FROM`
+  in `build_site.py` on, a model's side pick (Ledger, Second Opinion, Trend,
+  Blowout, NBA/NFL/NCAAB Stats) on a game whose storylines' weighted net lean
+  (`storyline_buckets.net_toward_home`, the frozen pre-game tally) points the
+  other way sits out (`story_vetoed`): it's left out of every record on the
+  page -- scoreboard, by-sport, plays/tiles/charts, rule records, stacked
+  rows, the agreement table -- and the pick log shows "Sat out" with what it
+  would have done (`sx`/`sxa`/`sxm`); cards show "Sitting out" (`vetoLine`)
+  and a "sat out" chip. Your own picks always count; NBA Totals (not a side)
+  are unaffected; picks before that date are unchanged. Reason: model picks
+  with the storylines went 35-17 and against 31-40 that season to date. The
+  slate files keep every pick and `score_slate.py` still grades it; only the
+  page's records apply the veto, and the scorecard has a note saying so.
+
 ## The user's own picks come from the pick sheet, not from Claude
 
 The GitHub Pages pick sheet (`site/index.html`, built by `scripts/build_site.py`,
