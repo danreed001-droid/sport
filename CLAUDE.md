@@ -340,7 +340,13 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   `scripts/cfb_storylines.py` (FBS vs FBS, 2015-2025, 2020 left out; 53
   tested, none at p<0.05 vs 2.7 by chance, 14 shown; AP poll from ESPN's
   weekly rankings, the date is skipped until that week's poll exists; bowls,
-  conference title games and FCS opponents left out).
+  conference title games and FCS opponents left out). Soccer:
+  `scripts/soccer_storylines.py` (big five leagues 2018-19 to 2025-26, MLS,
+  Liga MX; ESPN's stored pre-match 1X2, no-vig by the power method; 55
+  tested, 1 at p<0.05 vs 2.2 by chance, 4 shown, all the opposite of their
+  story). Moneyline entries carry `implied` and `roi`, and `unit` is the
+  favored bet ("to win" / "not to win"). football-data.co.uk's robots.txt
+  bars ClaudeBot: don't fetch it.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.

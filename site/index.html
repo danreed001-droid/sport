@@ -1148,15 +1148,20 @@ footer b{color:var(--ink);}
     var rows = g.storylines||[];
     if(!rows.length) return '';
     var tally = {};
-    rows.forEach(function(r){ if(r.leans) tally[r.leans] = (tally[r.leans]||0)+1; });
+    rows.forEach(function(r){ if(r.leans){ var k = r.unit==='not to win' ? r.leans+' not to win' : r.leans; tally[k] = (tally[k]||0)+1; } });
     var lean = Object.keys(tally).sort(function(a,b){ return tally[b]-tally[a]; }).map(function(t){ return esc(t)+' '+tally[t]; }).join(', ');
     return '<details class="stories"><summary><b>Storylines ('+rows.length+')</b> · history leans: '+lean+'</summary><ul>'+rows.map(function(r){
       var says = (r.says==='back'?'back ':'fade ')+esc(r.team);
-      var unit = r.unit||'ATS';
-      var hist = 'Story says '+says+': '+esc(r.record)+' ('+esc(String(r.pct))+'%) '+esc(unit)
-        + (num(r.implied) ? ', odds implied '+esc(String(r.implied))+'%' : '')
-        + (num(r.roi) ? ', '+(r.roi>0?'+':'')+esc(String(r.roi))+'% return' : '')
-        + (r.leans ? (r.against ? ' — history went the other way: leans '+esc(r.leans)+' '+esc(String(r.leanPct))+'%' : ' — leans '+esc(r.leans)+' '+esc(String(r.leanPct))+'%') : ' — a coin flip');
+      var unit = r.unit||'ATS', hist;
+      if(num(r.implied)){
+        // Moneyline sports (soccer, MLB): hit rate vs what the odds implied, and the return on the side history favors.
+        hist = 'Story says '+says+': '+esc(r.record)+' ('+esc(String(r.pct))+'%) vs '+esc(String(r.implied))+'% the odds implied'
+          + (r.leans ? ' — history favors '+esc(r.leans)+' '+esc(unit)+' ('+esc(String(r.leanPct))+'%'
+            + (num(r.roi) ? ', '+(r.roi>0?'+':'')+esc(String(r.roi))+'% return at the odds' : '')+')' : ' — in line with the odds');
+      } else {
+        hist = 'Story says '+says+': '+esc(r.record)+' ('+esc(String(r.pct))+'%) '+esc(unit)
+          + (r.leans ? (r.against ? ' — history went the other way: leans '+esc(r.leans)+' '+esc(String(r.leanPct))+'%' : ' — leans '+esc(r.leans)+' '+esc(String(r.leanPct))+'%') : ' — a coin flip');
+      }
       return '<li><b>'+esc(r.name)+'</b> — '+esc(r.fact)+'<br><span class="st-hist">'+hist+'</span></li>';
     }).join('')+'</ul><div class="st-hist">Context, not a pick: none of these cleared the bar a model rule needs, most are within luck, and they aren\'t graded.</div></details>';
   }
