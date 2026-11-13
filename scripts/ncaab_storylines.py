@@ -23,7 +23,54 @@ ET = ZoneInfo("America/New_York")
 SITE = "https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball"
 CORE = "https://sports.core.api.espn.com/v2/sports/basketball/leagues/mens-college-basketball"
 
-STORIES_PLACEHOLDER
+# key: (name, story's bet, wins-losses for that bet 2015-16 to 2025-26 without 2020-21, games where it applies)
+STORIES = {
+    "midweek_road": ("School night on the road", "fade", (631, 539),
+                     "an AP-ranked team on the road (not a neutral floor) on a Tuesday, Wednesday or Thursday"),
+    "hostile_gym": ("Big Ten / Big 12 snake pit", "fade", (449, 385),
+                    "an AP-ranked team on the road in a Big Ten or Big 12 conference game"),
+    "ranked_road_dog": ("Disrespected on the road", "back", (446, 515), "AP-ranked, on the road, and an underdog"),
+    "nonconf_road": ("Non-conference road trip", "fade", (200, 166), "an AP-ranked team in a true road non-conference game"),
+    "first_road": ("Leaving home", "fade", (130, 112), "an AP-ranked team in its first true road game of the season"),
+    "last_season_grudge": ("Last year's grudge", "back", (1405, 1274),
+                           "lost its last meeting with this opponent last season; first meeting this season"),
+    "revenge": ("The rematch", "back", (723, 642), "lost to this opponent earlier this season"),
+    "payback": ("Payback", "back", (230, 203), "lost to this opponent by 15+ earlier this season"),
+    "big_stage": ("Down from the big stage", "fade", (272, 234), "played an AP top-5 team in its last game"),
+    "rolling_dog": ("Rolling underdog", "back", (264, 302), "an underdog on a 5+ game winning streak"),
+    "top5_huge": ("Top-5 laying 25", "fade", (95, 117), "an AP top-5 team favored by 25+"),
+    "ot_loser": ("Overtime heartbreak", "back", (151, 126), "lost its last game in overtime"),
+    "steamroller": ("Steamroller", "fade", (115, 138), "won each of its last three games by 20+"),
+    "home_skid": ("Home skid", "back", (179, 154), "unranked, at home, on a 3+ game losing streak"),
+    "poll_riser": ("Poll riser", "fade", (235, 265), "AP-ranked and up 5+ spots in this week's poll"),
+    "conf_opener_dog": ("Conference-opener underdog", "back", (100, 119), "an underdog in its first conference game"),
+    "rust": ("Holiday rust", "fade", (143, 165), "8+ days since its last game, in December or January"),
+    "upset_hangover": ("Upset hangover", "fade", (43, 32), "unranked, and beat an AP top-10 team in its last game"),
+    "sandwich": ("Sandwich game", "fade", (144, 125),
+                 "AP-ranked vs an unranked team, after a game vs a ranked team and before another within 5 days"),
+    "bracket_lock": ("Bracket lock", "fade", (79, 65), "an AP top-5 team in its last three regular-season games, February on"),
+    "home_cooking": ("Home cooking", "back", (35, 45), "its first home game after 3+ straight true road games"),
+    "holiday_fav": ("Holiday hangover", "fade", (119, 136), "favored, December 26 to January 1"),
+    "mte_hangover": ("Tournament-trip hangover", "fade", (124, 109),
+                     "first game off a November/December neutral-site event (its last two games on neutral floors)"),
+    "nail_biters": ("Nail-biters", "fade", (95, 108), "each of its last three games decided by 5 or fewer"),
+    "after_dark": ("After dark out West", "fade", (73, 83),
+                   "an Eastern/Central-time team away from home in the Pacific time zone, tipping 9 PM ET or later"),
+    "november_hype": ("November hype", "fade", (31, 35), "an AP top-10 team favored over a ranked team on a neutral floor in November"),
+}
+
+POWER = {"2", "4", "7", "8", "21", "23"}  # ACC, Big East, Big Ten, Big 12, Pac-12, SEC (ESPN conference ids)
+B1G_B12 = {"7", "8"}
+STATE_TZ = {}
+for _z, _states in ((0, "CT DE DC FL GA IN KY ME MD MA MI NH NJ NY NC OH PA RI SC VT VA WV"),
+                    (1, "AL AR IL IA KS LA MN MS MO NE ND OK SD TN TX WI"),
+                    (2, "CO MT NM UT WY ID AZ"), (3, "CA NV OR WA"), (4, "AK"), (5, "HI")):
+    for _s in _states.split():
+        STATE_TZ[_s] = _z  # hours behind Eastern (standard time)
+CITY_TZ = {("El Paso", "TX"): 2, ("Knoxville", "TN"): 0, ("Chattanooga", "TN"): 0, ("Johnson City", "TN"): 0,
+           ("Bowling Green", "KY"): 1, ("Murray", "KY"): 1, ("Moscow", "ID"): 3, ("Pensacola", "FL"): 1,
+           ("Evansville", "IN"): 1, ("Valparaiso", "IN"): 1, ("Hammond", "IN"): 1, ("Cookeville", "TN"): 1,
+           ("Grand Forks", "ND"): 1, ("Fargo", "ND"): 1}
 
 
 def pos(name):
@@ -31,7 +78,19 @@ def pos(name):
     return name + ("'" if name.endswith("s") else "'s")
 
 
-STRONG_WEAK_PLACEHOLDER
+# Storylines counted double in the card's "history leans" tally. None for
+# college basketball: 5 of the 79 tested were at p<0.05 where about 4 would be
+# by chance, and the strongest (school night on the road, snake pit,
+# disrespected on the road) are slices of one base pattern -- AP-ranked teams
+# on a true road floor covered 47.3% in these games -- so none stands out as
+# the most robust.
+STRONG = set()
+
+
+# Storylines counted as half a point: their lean flips between even and odd
+# seasons (nail-biters 41-68 in even seasons, 54-40 in odd; home skid 117-82
+# even, 62-72 odd).
+WEAK = {"nail_biters", "home_skid"}
 
 
 def entry(key, team, opp, fact):
@@ -201,11 +260,14 @@ def streak_of(prior):
     return s
 
 
-def game_context(rows, polls, homes, row, spread, last_rows=None):
+def game_context(rows, polls, homes, row, spread, extra=None):
     """What a storyline may read about `row` (one team's side of a game), all
     known before tip-off: both teams' season so far, the team's remaining
     schedule (opponents, sites, dates -- not results), this week's and last
-    week's AP poll and the preseason one, and last season's meetings."""
+    week's AP poll and the preseason one, and last season's meetings.
+    `extra` (live) supplies last season's meetings and the count of
+    regular-season games left from ESPN's team schedules; without it both come
+    from `rows` (the backtest's full-season data)."""
     w = row["week"]
     now = polls.get(w, {}) if w else {}
     prevw = w - 1 if w else None
@@ -215,27 +277,124 @@ def game_context(rows, polls, homes, row, spread, last_rows=None):
     mine, theirs = rows.get(row["tid"], []), rows.get(row["oid"], [])
     done = lambda r: r["kick"] < row["kick"] and r["done"] and r["stype"] == 2 and r["ts"] is not None  # noqa: E731
     prior = [r for r in mine if done(r)]
+    later = [dict(r, orank_now=now.get(r["oid"])) for r in mine if r["kick"] > row["kick"] and r["stype"] == 2]
+    if extra is not None:
+        last_meets = extra.last_meets(row["tid"], row["oid"])
+        remaining = lambda: extra.remaining(row["tid"], row["kick"])  # noqa: E731
+    else:
+        last_meets = []
+        remaining = lambda: sum(1 for r in later if not r["ctourney"])  # noqa: E731
     return {"D": row["D"], "team": row["team"], "opp": row["opp"], "tid": row["tid"], "oid": row["oid"],
             "rank": now.get(row["tid"]), "orank": now.get(row["oid"]), "week": w,
             "prev_known": prev is not None, "prev_rank": (prev or {}).get(row["tid"]), "pre_rank": polls.get(1, {}).get(row["tid"]),
             "site": row["site"], "city": row["city"], "state": row["state"], "confgame": row["confgame"],
             "conf": row["conf"], "oconf": row["oconf"], "sp": spread, "prior": prior, "oprior": [r for r in theirs if done(r)],
-            "later": [dict(r, orank_now=now.get(r["oid"])) for r in mine if r["kick"] > row["kick"] and r["stype"] == 2],
+            "later": later, "remaining": remaining, "last_meets": last_meets,
             "streak": streak_of(prior), "home": homes.get(row["tid"], (None, None, None)), "tv": row["tv"],
-            "et_hour": row["et_hour"],
-            "last_meets": [r for r in (last_rows or {}).get(row["tid"], [])
-                           if r["oid"] == row["oid"] and r["done"] and r["ts"] is not None and r["stype"] == 2]}
+            "et_hour": row["et_hour"]}
 
 
-TEAM_SIDE_PLACEHOLDER
+def _m(r):
+    return r["ts"] - r["os"]
 
 
-def game_stories(rows, polls, homes, home_row, away_row, home_spread, last_rows=None):
+def _score(r):
+    return f"{r['ts']:g}-{r['os']:g}"
+
+
+def team_side(c):
+    """[(key, fact)] for the team in context `c` (game_context)."""
+    out = []
+    P, OP, sp, D = c["prior"], c["oprior"], c["sp"], c["D"]
+    last = P[-1] if P else None
+    T, O = c["team"], c["opp"]
+    rk, ork = c["rank"], c["orank"]
+    site = c["site"]
+    later = c["later"]
+    nxt = later[0] if later else None
+    hz = c["home"][0]
+    vz = zone_of(c["city"], c["state"])
+    rT = f"#{rk} {T}" if rk else T
+    meets = [r for r in P if r["oid"] == c["oid"]]
+    add = lambda k, fact: out.append((k, fact))  # noqa: E731
+
+    if rk and site == "away" and D.weekday() in (1, 2, 3):
+        add("midweek_road", f"{rT} plays at {O} on a {D.strftime('%A')}.")
+    if rk and site == "away" and c["confgame"] and c["oconf"] in B1G_B12:
+        add("hostile_gym", f"{rT} plays at {O} in a {'Big Ten' if c['oconf'] == '7' else 'Big 12'} game.")
+    if rk and site == "away" and sp is not None and sp > 0:
+        add("ranked_road_dog", f"{rT} is a {sp:+g} underdog at {O}.")
+    if rk and site == "away" and not c["confgame"]:
+        add("nonconf_road", f"{rT} plays a non-conference game at {O}.")
+    if rk and site == "away" and P and not any(r["site"] == "away" for r in P):
+        add("first_road", f"{pos(rT)} first true road game of the season.")
+    lm = c.get("last_meets") or []
+    if lm and _m(lm[-1]) < 0 and not meets:
+        add("last_season_grudge", f"{T} lost to {O} {_score(lm[-1])} last season ({lm[-1]['date']}).")
+    if meets and _m(meets[-1]) < 0:
+        add("revenge", f"{T} lost to {O} {_score(meets[-1])} on {meets[-1]['date']}.")
+    if meets and _m(meets[-1]) <= -15:
+        add("payback", f"{T} lost to {O} by {-_m(meets[-1]):g} on {meets[-1]['date']}.")
+    if last and last["orank"] and last["orank"] <= 5:
+        add("big_stage", f"{T} played #{last['orank']} {last['opp']} last time out ({'won' if _m(last) > 0 else 'lost'} "
+                         f"{_score(last)}).")
+    if c["streak"] >= 5 and sp is not None and sp > 0:
+        add("rolling_dog", f"{T} has won {c['streak']} straight and is a {sp:+g} underdog.")
+    if rk and rk <= 5 and sp is not None and sp <= -25:
+        add("top5_huge", f"#{rk} {T} is a {sp:+g} favorite.")
+    if last and last["ot"] and _m(last) < 0:
+        add("ot_loser", f"{T} lost to {last['opp']} {_score(last)} in overtime last time out.")
+    if len(P) >= 3 and all(_m(r) >= 20 for r in P[-3:]):
+        add("steamroller", f"{T} won its last three by {', '.join(f'{_m(r):g}' for r in reversed(P[-3:]))}.")
+    if not rk and site == "home" and c["streak"] <= -3:
+        add("home_skid", f"{T} has lost {-c['streak']} straight and is at home.")
+    if rk and c["prev_rank"] and c["prev_rank"] - rk >= 5:
+        add("poll_riser", f"{T} moved up from #{c['prev_rank']} to #{rk} in this week's AP poll.")
+    if c["confgame"] and not any(r["confgame"] for r in P) and sp is not None and sp > 0:
+        add("conf_opener_dog", f"{pos(T)} first conference game; it's a {sp:+g} underdog.")
+    if last and D.month in (12, 1) and (D - last["D"]).days >= 8:
+        add("rust", f"{T} hasn't played since {last['date']} ({(D - last['D']).days} days).")
+    if not rk and last and _m(last) > 0 and last["orank"] and last["orank"] <= 10 and not last["rank"]:
+        add("upset_hangover", f"Unranked {T} beat #{last['orank']} {last['opp']} {_score(last)} last time out.")
+    if rk and not ork and last and last["orank"] and nxt and nxt["orank_now"] and (nxt["D"] - D).days <= 5:
+        add("sandwich", f"{rT} is between #{last['orank']} {last['opp']} and #{nxt['orank_now']} {nxt['opp']} "
+                        f"({nxt['date']}).")
+    if rk and rk <= 5 and D.month >= 2:
+        left = c["remaining"]()
+        if left is not None and left <= 2:
+            add("bracket_lock", f"#{rk} {T} has {left} regular-season game{'s' if left != 1 else ''} left after this one.")
+    if site == "home" and len(P) >= 3 and all(r["site"] == "away" for r in P[-3:]):
+        trip = 0
+        for r in reversed(P):
+            if r["site"] != "away":
+                break
+            trip += 1
+        add("home_cooking", f"{pos(T)} first home game after {trip} straight on the road.")
+    if ((D.month == 12 and D.day >= 26) or (D.month == 1 and D.day == 1)) and sp is not None and sp < 0:
+        add("holiday_fav", f"{T} is a {sp:+g} favorite in the holiday week.")
+    if site != "neutral" and len(P) >= 2 and P[-1]["site"] == "neutral" and P[-2]["site"] == "neutral" \
+            and P[-1]["D"].month in (11, 12) and not P[-1]["confgame"]:
+        ev = next((n for n in P[-1]["notes"] if n), None)
+        add("mte_hangover", f"{pos(T)} first game back from neutral-site games"
+                            f"{f' ({ev})' if ev else ''}.")
+    if len(P) >= 3 and all(abs(_m(r)) <= 5 for r in P[-3:]):
+        add("nail_biters", f"{pos(T)} last three were decided by {', '.join(f'{abs(_m(r)):g}' for r in reversed(P[-3:]))}.")
+    if site != "home" and hz is not None and hz <= 1 and vz is not None and vz >= 3 and c["et_hour"] is not None \
+            and c["et_hour"] >= 21:
+        h = int(c["et_hour"])
+        add("after_dark", f"{T} tips at {h - 12 if h > 12 else h}:{int(round((c['et_hour'] - h) * 60)):02d} PM ET in "
+                          f"{c['city']}, {c['state']}.")
+    if D.month == 11 and site == "neutral" and rk and rk <= 10 and ork and sp is not None and sp < 0:
+        add("november_hype", f"#{rk} {T} is a {sp:+g} favorite over #{ork} {O} on a neutral floor.")
+    return out
+
+
+def game_stories(rows, polls, homes, home_row, away_row, home_spread, extra=None):
     """[(key, team row, fact)] for one game; a story that points at both teams
     is dropped (the backtest skipped those)."""
     fired = []
     for row, sp in ((home_row, home_spread), (away_row, None if home_spread is None else -home_spread)):
-        c = game_context(rows, polls, homes, row, sp, last_rows)
+        c = game_context(rows, polls, homes, row, sp, extra)
         fired += [(k, row, fact) for k, fact in team_side(c)]
     keys = Counter(k for k, _, _ in fired)
     return [f for f in fired if keys[f[0]] == 1]
@@ -310,21 +469,56 @@ class Season:
         self.weeks = map_weeks(self.by_date, self.polls, dated)
         self.rows = season_rows(self.by_date, self.polls, self.weeks)
         self.homes = {tid: home_info(rs) for tid, rs in self.rows.items()}
-        self.last_rows = None
+        self.schedules = Schedules(session, season)
 
-    def need_last_season(self):
-        if self.last_rows is None:
-            s0 = self.season - 1
-            start, end = date(s0 - 1, 11, 1), date(s0, 3, 20)
-            days = [start + timedelta(days=i) for i in range((end - start).days + 1)]
-            with ThreadPoolExecutor(4) as ex:
-                by_date = dict(zip(days, ex.map(fetch_day, days)))
-            self.last_rows = season_rows(by_date, {}, {})
-            # a team with no home game yet this season: last season's floor
-            for tid, rs in self.last_rows.items():
-                if self.homes.get(tid, (None,))[0] is None:
-                    self.homes[tid] = home_info(rs)
-        return self.last_rows
+
+
+class Schedules:
+    """Teams' ESPN schedules (regular season, conference tournaments included),
+    fetched only when a storyline asks and kept for the run: last season's
+    meetings with tonight's opponent, the regular-season games a team has
+    left, and a home floor for a team with no home game on the boards yet."""
+
+    def __init__(self, session, season):
+        self.session, self.season, self.cache = session, season, {}
+
+    def rows(self, tid, season):
+        key = (tid, season)
+        if key not in self.cache:
+            r = self.session.get(f"{SITE}/teams/{tid}/schedule?season={season}&seasontype=2", timeout=20)
+            r.raise_for_status()
+            out = []
+            for e in r.json().get("events", []):
+                c = (e.get("competitions") or [{}])[0]
+                comps = c.get("competitors") or []
+                me = next((x for x in comps if str(x.get("id")) == str(tid)), None)
+                op = next((x for x in comps if x is not me), None)
+                if me is None or op is None:
+                    continue
+                done = bool(((c.get("status") or {}).get("type") or {}).get("completed"))
+                k = kickoff(e.get("date"))
+                addr = (c.get("venue") or {}).get("address") or {}
+                sc = lambda x: _num((x.get("score") or {}).get("value") if isinstance(x.get("score"), dict) else x.get("score"))  # noqa: E731
+                out.append({"oid": str(op.get("id")), "date": k.date().isoformat() if k else None, "kick": e.get("date"),
+                            "done": done, "ts": sc(me) if done else None, "os": sc(op) if done else None,
+                            "stype": (e.get("seasonType") or {}).get("type"),
+                            "site": "neutral" if c.get("neutralSite") else me.get("homeAway"),
+                            "city": addr.get("city"), "state": addr.get("state"),
+                            "ctourney": conf_tourney({"notes": [n.get("headline") for n in c.get("notes") or []],
+                                                      "confgame": False}, k.date() if k else date(season, 1, 1))})
+            self.cache[key] = out
+        return self.cache[key]
+
+    def last_meets(self, tid, oid):
+        return [r for r in self.rows(tid, self.season - 1)
+                if r["oid"] == oid and r["done"] and r["ts"] is not None and r["stype"] == 2]
+
+    def remaining(self, tid, kick):
+        return sum(1 for r in self.rows(tid, self.season)
+                   if (r["kick"] or "") > kick and r["stype"] == 2 and not r["ctourney"])
+
+    def home(self, tid):
+        return home_info(self.rows(tid, self.season))
 
 
 def _match(g, comps):
@@ -369,8 +563,10 @@ def storylines_for(live, date_str, g):
         names = {hrow["team"]: g["away"], arow["team"]: g["home"]}
     else:
         names = {hrow["team"]: g["home"], arow["team"]: g["away"]}
-    last_rows = live.need_last_season() if NEEDS_LAST_SEASON else None
-    fired = game_stories(live.rows, live.polls, live.homes, hrow, arow, hs, last_rows)
+    for row in (hrow, arow):
+        if live.homes.get(row["tid"], (None,))[0] is None:
+            live.homes[row["tid"]] = live.schedules.home(row["tid"])  # no home game on the boards yet
+    fired = game_stories(live.rows, live.polls, live.homes, hrow, arow, hs, live.schedules)
     out = []
     for key, row, fact in fired:
         me = names[row["team"]]
@@ -403,8 +599,8 @@ def main():
         season = season_of(D)
         try:
             live = seasons.get(season)
-            if live is None or max(live.by_date) < D:
-                live = seasons[season] = Season(session, season, max(D, date.fromisoformat(max(dates))))
+            if live is None or max(live.by_date) < D + timedelta(days=5):
+                live = seasons[season] = Season(session, season, max(D, date.fromisoformat(max(dates))) + timedelta(days=5))
         except Exception as exc:  # noqa: BLE001
             print(f"{date_str}: ESPN unreachable ({exc.__class__.__name__}: {exc}) -- storylines left as they were.")
             continue
