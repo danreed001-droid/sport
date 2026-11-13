@@ -3,11 +3,11 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401928487,2026-11-13,Scheduled,Celta Vigo,0,-,Salamanca UDS,0,-,-,-,3:00 PM
 401929714,2026-11-13,Scheduled,St. Lucia,0,-,Bermuda,0,-,-,-,2:00 PM
 401929795,2026-11-13,Scheduled,Dominica,0,-,Puerto Rico,0,-,-,-,2:00 PM
-401929713,2026-11-13,Scheduled,St. Kitts and Nevis,0,-,Grenada,0,-,-,-,3:00 PM
+401929713,2026-11-13,Scheduled,St. Kitts and Nevis,0,-,Grenada,0,-,-,-,2:00 PM
 401929712,2026-11-13,Scheduled,El Salvador,0,-,St. Martin,0,-,-,-,6:00 PM
 401929775,2026-11-13,Scheduled,Nicaragua,0,-,Montserrat,0,-,-,-,7:00 PM
 401929711,2026-11-13,Scheduled,Canada,0,-,Guatemala,0,-,-,-,9:00 PM
-401861162,2026-11-13,Scheduled,Kazakhstan,0,-,Moldova,0,-,-,-,12:00 PM
+401861162,2026-11-13,45',Kazakhstan,0,-,Moldova,1,-,-,-,12:00 PM
 401861155,2026-11-13,Scheduled,Gibraltar,0,-,Andorra,0,-,-,-,2:45 PM
 401861157,2026-11-13,Scheduled,Iceland,0,-,Bulgaria,0,-,-,-,2:45 PM
 401861153,2026-11-13,Scheduled,Azerbaijan,0,-,Liechtenstein,0,-,-,-,2:45 PM
@@ -17,11 +17,11 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401861158,2026-11-13,Scheduled,Germany,0,-,Serbia,0,-,-,-,2:45 PM
 401861160,2026-11-13,Scheduled,Faroe Islands,0,-,Slovakia,0,-,-,-,2:45 PM
 401861156,2026-11-13,Scheduled,Switzerland,0,-,Slovenia,0,-,-,-,2:45 PM
-401916338,2026-11-13,38',Paraguay,1,-,Singapore,1,-,-,-,7:00 AM
-401931957,2026-11-13,Scheduled,Honduras,0,-,United Arab Emirates,0,-,-,-,9:10 AM
-401931476,2026-11-13,Scheduled,South Korea,0,-,Saudi Arabia,0,-,-,-,9:30 AM
-401919978,2026-11-13,Scheduled,Australia,0,-,Qatar,0,-,-,-,9:45 AM
-401933636,2026-11-13,Scheduled,Lebanon,0,-,Iraq,0,-,-,-,10:00 AM
+401916338,2026-11-13,FT,Paraguay,4,-,Singapore,1,-,-,-,7:00 AM
+401931957,2026-11-13,FT,Honduras,1,-,United Arab Emirates,3,-,-,-,9:10 AM
+401931476,2026-11-13,FT,South Korea,2,-,Saudi Arabia,3,-,-,-,9:30 AM
+401919978,2026-11-13,FT,Australia,3,-,Qatar,0,-,-,-,9:45 AM
+401933636,2026-11-13,FT,Lebanon,0,-,Iraq,0,-,-,-,10:00 AM
 401931978,2026-11-13,Scheduled,Syria,0,-,Kuwait,0,-,-,-,11:30 AM
 401919975,2026-11-13,Canceled,Indonesia,0,-,Jordan,0,-,-,-,3:00 PM
 401930876,2026-11-13,Scheduled,Uruguay,0,-,Argentina,0,-,-,-,6:00 PM
@@ -35,47 +35,47 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401888026,2026-11-13,Scheduled,Lens,0,-,Nantes,0,-,-,-,1:00 PM
 401913235,2026-11-13,Scheduled,Newcastle Jets ,0,-,Melbourne City,0,-,-,-,11:00 PM
 401913234,2026-11-13,Scheduled,Adelaide United ,0,-,Melbourne Victory ,0,-,-,-,11:00 PM
-401927206,2026-11-13,Scheduled,Congo,0,-,Comoros,0,-,-,-,8:00 AM
-401927187,2026-11-13,Scheduled,Ethiopia,0,-,Mozambique,0,-,-,-,8:00 AM
-401927203,2026-11-13,Scheduled,Burundi,0,-,Zambia,0,-,-,-,8:00 AM
-401927208,2026-11-13,Scheduled,Mauritania,0,-,Burkina Faso,0,-,-,-,11:00 AM
-401927186,2026-11-13,Scheduled,Liberia,0,-,Cape Verde,0,-,-,-,11:00 AM
-401927192,2026-11-13,Scheduled,Lesotho,0,-,Gabon,0,-,-,-,11:00 AM
-401927183,2026-11-13,Scheduled,Tanzania,0,-,Nigeria,0,-,-,-,11:00 AM
-401927212,2026-11-13,Scheduled,Kenya,0,-,South Africa,0,-,-,-,11:00 AM
-401927205,2026-11-13,Scheduled,Libya,0,-,Tunisia,0,-,-,-,11:00 AM
+401927206,2026-11-13,FT,Congo,0,-,Comoros,0,-,-,-,8:00 AM
+401927187,2026-11-13,FT,Ethiopia,1,-,Mozambique,0,-,-,-,8:00 AM
+401927203,2026-11-13,FT,Burundi,1,-,Zambia,1,-,-,-,8:00 AM
+401927208,2026-11-13,88',Mauritania,0,-,Burkina Faso,0,-,-,-,11:00 AM
+401927186,2026-11-13,82',Liberia,1,-,Cape Verde,3,-,-,-,11:00 AM
+401927192,2026-11-13,83',Lesotho,0,-,Gabon,2,-,-,-,11:00 AM
+401927183,2026-11-13,83',Tanzania,1,-,Nigeria,3,-,-,-,11:00 AM
+401927212,2026-11-13,84',Kenya,1,-,South Africa,2,-,-,-,11:00 AM
+401927205,2026-11-13,82',Libya,2,-,Tunisia,0,-,-,-,11:00 AM
 401927190,2026-11-13,Scheduled,Malawi,0,-,Egypt,0,-,-,-,2:00 PM
 401927185,2026-11-13,Scheduled,Rwanda,0,-,Mali,0,-,-,-,2:00 PM
 401927191,2026-11-13,Scheduled,Niger,0,-,Morocco,0,-,-,-,3:00 PM
-401934215,2026-11-13,Scheduled,Kladno,0,-,FC Sellier & Bellot Vla'im,0,-,-,-,5:00 AM
+401934215,2026-11-13,FT,Kladno,2,-,FC Sellier & Bellot Vla'im,1,-,-,-,5:00 AM
 401933377,2026-11-13,Canceled,Vysocina Jihlava,0,-,Mlada Boleslav,0,-,-,-,5:00 AM
-401933780,2026-11-13,Scheduled,SC Rheindorf Altach,0,-,Schwarz-Weiß Bregenz,0,-,-,-,5:00 AM
-401928130,2026-11-13,Scheduled,IF Brommapojkarna,0,-,Västerås SK,0,-,-,-,6:00 AM
-401930883,2026-11-13,Scheduled,FC Ilves,0,-,TPS,0,-,-,-,6:30 AM
-401933779,2026-11-13,Scheduled,Floridsdorfer AC,0,-,TSV Hartberg,0,-,-,-,6:30 AM
-401933125,2026-11-13,Scheduled,Dukla Prague,0,-,Dynamo Dresden,0,-,-,-,7:00 AM
-401934146,2026-11-13,Scheduled,NK Radomlje,0,-,NK Istra 1961 Pula,0,-,-,-,7:00 AM
-401933767,2026-11-13,Scheduled,NK Uljanik,0,-,SV Kapfenberg,0,-,-,-,7:00 AM
-401934163,2026-11-13,Scheduled,NK Maribor,0,-,NK Varazdin,0,-,-,-,8:00 AM
-401933865,2026-11-13,Scheduled,Lechia Gdansk,0,-,Raków Czestochowa,0,-,-,-,8:30 AM
+401933780,2026-11-13,FT,SC Rheindorf Altach,5,-,Schwarz-Weiß Bregenz,1,-,-,-,5:00 AM
+401928130,2026-11-13,FT,IF Brommapojkarna,1,-,Västerås SK,1,-,-,-,6:00 AM
+401930883,2026-11-13,FT,FC Ilves,1,-,TPS,2,-,-,-,6:30 AM
+401933779,2026-11-13,FT,Floridsdorfer AC,1,-,TSV Hartberg,1,-,-,-,6:30 AM
+401933125,2026-11-13,FT,Dukla Prague,0,-,Dynamo Dresden,2,-,-,-,7:00 AM
+401934146,2026-11-13,FT,NK Radomlje,5,-,NK Istra 1961 Pula,2,-,-,-,7:00 AM
+401933767,2026-11-13,FT,NK Uljanik,1,-,SV Kapfenberg,2,-,-,-,7:00 AM
+401934163,2026-11-13,FT,NK Maribor,3,-,NK Varazdin,0,-,-,-,8:00 AM
+401933865,2026-11-13,FT,Lechia Gdansk,0,-,Raków Czestochowa,0,-,-,-,8:30 AM
 401933777,2026-11-13,Scheduled,SR Donaufeld,0,-,Austria Vienna II,0,-,-,-,11:30 AM
 401933776,2026-11-13,Scheduled,SV Donau,0,-,Rapid Vienna II,0,-,-,-,12:00 PM
 401883136,2026-11-13,Scheduled,Burgos,0,-,Leganés,0,-,-,-,2:30 PM
-401929699,2026-11-13,Scheduled,Czechia U21,0,-,Türkiye U21,0,-,-,-,11:00 AM
-401929700,2026-11-13,Scheduled,Republic of Ireland U21,0,-,Finland U21,0,-,-,-,11:15 AM
-401929702,2026-11-13,Scheduled,Netherlands U21,0,-,Denmark U21,0,-,-,-,12:30 PM
-401934052,2026-11-13,Scheduled,Montenegro U21,0,-,Bosnia-Herzegovina U21,0,-,-,-,8:00 AM
+401929699,2026-11-13,89',Czechia U21,1,-,Türkiye U21,0,-,-,-,11:00 AM
+401929700,2026-11-13,HT,Republic of Ireland U21,0,-,Finland U21,1,-,-,-,11:15 AM
+401929702,2026-11-13,14',Netherlands U21,1,-,Denmark U21,0,-,-,-,12:30 PM
+401934052,2026-11-13,FT,Montenegro U21,1,-,Bosnia-Herzegovina U21,3,-,-,-,8:00 AM
 401933437,2026-11-13,Scheduled,Norway U21,0,-,Poland U21,0,-,-,-,11:30 AM
-401932567,2026-11-13,Scheduled,Belgium U21,0,-,Germany U21,0,-,-,-,12:00 PM
-401931777,2026-11-13,Scheduled,Italy U21,0,-,France U21,0,-,-,-,12:30 PM
+401932567,2026-11-13,45',Belgium U21,1,-,Germany U21,1,-,-,-,12:00 PM
+401931777,2026-11-13,16',Italy U21,0,-,France U21,0,-,-,-,12:30 PM
 401933056,2026-11-13,Scheduled,Luxembourg U21,0,-,Albania U21,0,-,-,-,1:00 PM
 401933835,2026-11-13,Scheduled,Japan U21,0,-,Spain U21,0,-,-,-,1:00 PM
 401930176,2026-11-13,Scheduled,Portugal U21,0,-,England U21,0,-,-,-,2:30 PM
 401933237,2026-11-13,Scheduled,Racing (Montevideo),0,-,Montevideo City Torque,0,-,-,-,2:30 PM
-401930699,2026-11-13,Scheduled,Sreenidi Deccan FC,0,-,Shillong Lajong FC,0,-,-,-,8:00 AM
+401930699,2026-11-13,FT,Sreenidi Deccan FC,1,-,Shillong Lajong FC,2,-,-,-,8:00 AM
 401929749,2026-11-13,Scheduled,Cal State Bakersfield,0,-,UC Santa Barbara,0,-,-,-,8:00 PM
-401929932,2026-11-13,Scheduled,Western Kentucky,0,-,Liberty,0,-,-,-,12:00 PM
-401929901,2026-11-13,Scheduled,Northern Arizona,0,-,Northern Colorado,0,-,-,-,12:30 PM
+401929932,2026-11-13,33',Western Kentucky,1,-,Liberty,0,-,-,-,12:00 PM
+401929901,2026-11-13,9',Northern Arizona,0,-,Northern Colorado,0,-,-,-,12:30 PM
 401929902,2026-11-13,Scheduled,Idaho,0,-,Weber State,0,-,-,-,3:30 PM
 401929864,2026-11-13,Scheduled,Lipscomb,0,-,Florida Gulf Coast,0,-,-,-,4:00 PM
 401931335,2026-11-13,Scheduled,Alabama A&M,0,-,Jackson State,0,-,-,-,4:00 PM
@@ -84,7 +84,11 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401931336,2026-11-13,Scheduled,Southern,0,-,Alcorn State,0,-,-,-,7:00 PM
 401929961,2026-11-13,Scheduled,Massachusetts,0,-,Western Michigan,0,-,-,-,7:30 PM
 401931323,2026-11-13,Scheduled,Mercer,0,-,East Tennessee State,0,-,-,-,8:00 PM
-401934223,2026-11-13,Scheduled,AFC METALUL BUZAU,0,-,Petrolul Ploiesti,0,-,-,-,7:00 AM
+401934223,2026-11-13,FT,AFC METALUL BUZAU,0,-,Petrolul Ploiesti,2,-,-,-,7:00 AM
+401934264,2026-11-13,Scheduled,FCSB,0,-,Chindia Targoviste,0,-,-,-,5:00 AM
+401934230,2026-11-13,FT,TBD Away,0,-,Universitatea Cluj,0,-,-,-,5:00 AM
+401934262,2026-11-13,FT,Slaven Belupo Koprivnica,1,-,NK NAFTA 1903 LENDAVA,1,-,-,-,6:00 AM
+401934261,2026-11-13,FT,FC Blau-Weiß Linz,0,-,SSV Jahn Regensburg,2,-,-,-,8:00 AM
 401916983,2026-11-12,FT,Austria Vienna,1,-,Benfica,3,-,-,-,3:00 PM
 401928138,2026-11-12,FT,Sparta Prague,0,-,Torreense,3,-,-,-,12:00 PM
 401878034,2026-11-12,FT,Atlético Junior,1,-,Deportivo Pasto,0,-,-,-,6:00 PM
