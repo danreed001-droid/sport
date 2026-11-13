@@ -21,7 +21,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from lib import grading_patterns, manual, sports, store  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # noqa: E402
 from lib.nba_stats_rules import families as nba_families  # noqa: E402
-from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules  # noqa: E402
+from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules, storyline_buckets  # noqa: E402
 from lib.results import build_results, lead_minutes, results_csv  # noqa: E402
 from lib.picks import game_id, grade, grade_total, is_final, line_for, mine_view, ml_skip, side_of, stats_view, team_for  # noqa: E402
 
@@ -42,36 +42,38 @@ SLATE_FIELDS = [
 
 
 
-# How a game's storylines did by the size of their weighted lean (the card's
-# tally): did the side they leaned to cover (MLB: win)? Finished games only.
-STORY_BUCKETS = (("1", 0, 1), ("1.5-2", 1, 2), ("2.5+", 2, 99))
 
-
+# How a game's storylines did by the size of their weighted net lean (the
+# card's tally), this season's finished games; lib/storyline_buckets.py has
+# the backtest per sport, and the page shows both and the two together.
 def storyline_strength(all_docs):
     out = {}
-    for sport in ("nba", "nfl", "cfb", "ncaab", "mlb"):
-        rec = {b: {"w": 0, "l": 0, "p": 0} for b, _, _ in STORY_BUCKETS}
+    for sport in ("nba", "nfl", "cfb", "ncaab", "mlb", "soccer"):
+        rec = {b: [0, 0, 0] for b in storyline_buckets.BUCKETS}
         for _, doc in all_docs.get(sport, []):
             for g in doc.get("games", []):
                 if not g.get("storylines") or not is_final(doc, g):
                     continue
-                net = sum(float(e.get("weight") or 1) * (1 if e["leans"] == g.get("home") else -1)
-                          for e in g["storylines"] if e.get("leans"))
+                net = storyline_buckets.net_toward_home(g)
                 if net == 0:
                     continue
                 margin = g["homeScore"] - g["awayScore"]
-                if sport == "mlb":
+                if sport in ("mlb", "soccer"):
                     res = margin
                 else:
                     hs = g.get("statsSpread") if sport == "nba" and isinstance(g.get("statsSpread"), (int, float)) else g.get("homeSpread")
                     if not isinstance(hs, (int, float)):
                         continue
                     res = margin + hs
-                b = next(name for name, lo, hi in STORY_BUCKETS if lo < abs(net) <= hi)
-                rec[b]["p" if res == 0 else "w" if (res > 0) == (net > 0) else "l"] += 1
-        if any(v["w"] + v["l"] for v in rec.values()):
+                b = storyline_buckets.bucket(net)
+                if res == 0:
+                    rec[b][1 if sport == "soccer" else 2] += 1  # soccer: a draw means the leaned team didn't win
+                else:
+                    rec[b][0 if (res > 0) == (net > 0) else 1] += 1
+        if any(sum(v) for v in rec.values()):
             out[sport] = rec
     return out
+
 
 def backtest_wl(text):
     """(wins, losses) from a rule's backtest text ("66.0% ATS, 97-50 (...)" or
@@ -383,6 +385,8 @@ def build():
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
         "storyStrength": storyline_strength(all_docs),
+        "storyBacktest": storyline_buckets.BACKTEST,
+        "storyBacktestNotes": storyline_buckets.NOTES,
         "statsBackfilled": stats_backfilled,
         "nflStatsRules": nfl_rules,
         "ncaabStatsRules": ncaab_rules,

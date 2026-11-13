@@ -1150,13 +1150,20 @@ footer b{color:var(--ink);}
   // Storylines (scripts/<sport>_storylines.py): situations a story could be
   // told about, with how they went historically (ATS; soccer: to win / not to
   // win, with the odds' implied % and return). Context only -- never a pick.
-  function storyBlock(g){
+  function storyBlock(g, k){
     var rows = g.storylines||[];
     if(!rows.length) return '';
+    var net = storyNet(g), leanTxt;
+    if(!net) leanTxt = ' · net lean: even';
+    else {
+      var b = storyBucket(net), r = storyBucketRec(k, b), n = r.w+r.l;
+      leanTxt = ' · net lean '+esc(net>0 ? g.home : g.away)+' +'+Math.abs(net)
+        + (n ? ' · games leaning '+(b==='1' ? '1 point' : b+' points')+' '+storyVerb(k)+' '+pct(r.w,n)+' ('+r.w+'-'+r.l+' all in)' : '');
+    }
     var tally = {};
     rows.forEach(function(r){ if(r.leans){ var k = r.unit==='not to win' ? r.leans+' not to win' : r.leans; tally[k] = (tally[k]||0)+(r.weight||1); } });
     var lean = Object.keys(tally).sort(function(a,b){ return tally[b]-tally[a]; }).map(function(t){ return esc(t)+' '+tally[t]; }).join(', ');
-    return '<details class="stories"><summary><b>Storylines ('+rows.length+')</b> · history leans (points): '+lean+'</summary><ul>'+rows.map(function(r){
+    return '<details class="stories"><summary><b>Storylines ('+rows.length+')</b>'+leanTxt+'<br><span class="st-hist">points: '+lean+'</span></summary><ul>'+rows.map(function(r){
       var says = (r.says==='back'?'back ':'fade ')+esc(r.team);
       var unit = r.unit||'ATS', hist;
       if(num(r.implied)){
@@ -1217,22 +1224,33 @@ footer b{color:var(--ink);}
     var w = r.btW + r.w, l = r.btL + r.l;
     return w+'-'+l+' ('+(w+l ? (100*w/(w+l)).toFixed(1) : '0')+'%)';
   }
-  // Storylines by the size of their weighted lean, this season (finished games):
-  // does a bigger lean do better? The NBA backtest says it did (but that's
-  // optimistic: each storyline was kept because it leaned).
+  // Storylines by the size of their weighted net lean (the card's tally):
+  // backtest per sport (lib/storyline_buckets.py) + this season's finished
+  // games, so the record keeps updating.
+  var STORY_BUCKETS = [['1','Lean of 1 point or less'],['1.5-2','Lean of 1.5-2 points'],['2.5-3','Lean of 2.5-3 points'],['3.5+','Lean of 3.5+ points']];
+  function storyNet(g){
+    var t = {};
+    (g.storylines||[]).forEach(function(e){ if(!e.leans) return; var w = e.weight||1; t[e.leans] = (t[e.leans]||0) + (e.unit==='not to win' ? -w : w); });
+    return (t[g.home]||0) - (t[g.away]||0);
+  }
+  function storyBucket(net){ var a = Math.abs(net); return a<=1 ? '1' : a<=2 ? '1.5-2' : a<=3 ? '2.5-3' : '3.5+'; }
+  function storyBucketRec(k, b){
+    var bt = ((DATA.storyBacktest||{})[k]||{})[b] || [0,0,0], lv = ((DATA.storyStrength||{})[k]||{})[b] || [0,0,0];
+    return {bt: bt, lv: lv, w: bt[0]+lv[0], l: bt[1]+lv[1]};
+  }
+  function storyVerb(k){ return (k==='mlb' || k==='soccer') ? 'won' : 'covered'; }
   function storyStrengthTable(k){
-    var r = (DATA.storyStrength||{})[k];
-    if(!r) return '';
-    var unit = k==='mlb' ? 'won' : 'covered';
-    var rows = [['1', 'Lean of 1 point or less'], ['1.5-2', 'Lean of 1.5-2 points'], ['2.5+', 'Lean of 2.5+ points']].map(function(b){
-      var x = r[b[0]], n = x.w+x.l;
-      return '<tr><td>'+b[1]+'</td><td class="mono">'+(n+x.p ? x.w+'-'+x.l+(x.p?'-'+x.p:'') : '—')+'</td><td class="mono">'+(n ? pct(x.w,n) : '—')+'</td></tr>';
+    var hasBt = !!(DATA.storyBacktest||{})[k], hasLv = !!(DATA.storyStrength||{})[k];
+    if(!hasBt && !hasLv) return '';
+    var wl = function(x){ return x[0]+x[1]+x[2] ? x[0]+'-'+x[1]+(x[2]?'-'+x[2]:'') : '—'; };
+    var rows = STORY_BUCKETS.map(function(b){
+      var r = storyBucketRec(k, b[0]), n = r.w+r.l;
+      return '<tr><td>'+b[1]+'</td><td class="mono">'+wl(r.bt)+'</td><td class="mono">'+wl(r.lv)+'</td><td class="mono">'+(n ? r.w+'-'+r.l+' ('+pct(r.w,n)+')' : '—')+'</td></tr>';
     }).join('');
+    var note = (DATA.storyBacktestNotes||{})[k];
     return '<details class="why rules-tbl"><summary>Storylines — does a bigger lean do better?</summary>'
-      + '<div class="tblwrap"><table><thead><tr><th>Storylines on the game</th><th>Leaned side '+unit+'</th><th>%</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
-      + '<p class="note" style="margin:8px 0 0">This season\'s finished games, using the card\'s weighted tally (★ 2, ½ for the shakiest, else 1).'
-      + (k==='nba' ? ' In the NBA backtest (2018-19 and 2021-22 to 2025-26) a bigger lean did better: 1 point 54.0%, 1.5-2 57.5%, 2.5-3 60.0%, 3.5+ 71.0% (31 games), and when 3+ storylines all pointed the same way 60.7%. That\'s optimistic, because each storyline was kept for leaning; this table is the real test.' : '')
-      + '</p></details>';
+      + '<div class="tblwrap"><table><thead><tr><th>Storylines on the game</th><th>Backtest</th><th>This season</th><th>All in</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
+      + '<p class="note" style="margin:8px 0 0">Did the side the storylines leaned to '+(storyVerb(k)==='won' ? 'win' : 'cover')+', by the size of the card\'s weighted tally (★ 2, ½ for the shakiest, else 1).'+(note ? ' Backtest: '+esc(note)+'.' : ' No backtest for this sport yet.')+' The backtest is optimistic (each storyline was kept for leaning); this season is the real test, and it updates every scoring run.</p></details>';
   }
   function statsRulesTable(){
     var rules = DATA.statsRules||[];
@@ -1376,7 +1394,7 @@ footer b{color:var(--ink);}
     return '<article class="game">'
       + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
       + '<div class="lines">'+lineText(g)+(g.manualFields && g.manualFields.length ? '<br><span class="handnote" title="Entered on the Enter data by hand page">\u270e hand-entered: '+esc(manualLabel(g.manualFields))+'</span>' : '')+'</div></div>'
-      + '<div class="models">'+models+'</div>'+injuryWatch(g)+storyBlock(g)
+      + '<div class="models">'+models+'</div>'+injuryWatch(g)+storyBlock(g, sport)
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
       + '</article>';

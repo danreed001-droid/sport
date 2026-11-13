@@ -366,8 +366,11 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   The NBA/NFL/NCAAB Stats and NBA Totals rules tables add an "All in" column:
   backtest W-L (`backtest_wl` in build_site.py) plus this season.
   Each sport's section has "Storylines — does a bigger lean do better?"
-  (`storyline_strength` in build_site.py: this season's finished games by the
-  card's weighted net lean, 1 / 1.5-2 / 2.5+; MLB by winner, soccer left out),
+  (backtest per sport in `lib/storyline_buckets.py`, this season's finished
+  games from `storyline_strength` in build_site.py, and the two all in; buckets
+  of the card's weighted net lean 1 / 1.5-2 / 2.5-3 / 3.5+; ATS, MLB and soccer
+  by winner), and each card's Storylines summary shows the game's net lean and
+  that bucket's all-in record (`storyNet`/`storyBucketRec` in site/index.html),
   and the agreement table has rows for storylines leaning with/against your
   pick (`sl` on your plays). NBA backtest by net lean: 54.0% / 57.5% / 60.0%
   (2.5-3) / 71.0% (3.5+, 31 games); 3+ all one way 60.7% -- optimistic, since
