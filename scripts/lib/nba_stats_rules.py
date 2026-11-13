@@ -45,6 +45,7 @@ RULE_NAMES = {
     63: "Fade a team on a back-to-back that won last night shooting 45%+ from three (25+ attempts) (on trial)",
     64: "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
     66: "Back a team that has missed the spread by 6+ a game over its last five when the opponent's last game went to overtime (on trial)",
+    67: "Fade an Eastern home team in its first game back from a road game on the Pacific coast (3 time zones west) (on trial)",
     65: "Near pick'em (spread within 3.5): back the team facing an opponent that plays 60+ more minutes a game of players 6'4\" and under (on trial)",
 }
 RULE_BACKTEST = {
@@ -82,6 +83,7 @@ RULE_BACKTEST = {
     63: "61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33",
     64: "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
     66: "65.1% ATS, 84-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 31-18; 2024-now 23-12",
+    67: "67.9% ATS, 38-18 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-3; 2024-now 16-7; 2022-23 4-7",
     65: "63.3% ATS, 114-66 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-32; 2024-now 36-16",
 }
 

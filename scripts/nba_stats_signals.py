@@ -57,6 +57,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   60+ more minutes a game of players 6'4" and under (lib/nba_heights.py).
   66 (on trial): back a team that has missed the spread by 6+ a game over its last
   five when the opponent's last game went to overtime (family with 2, 9, 56, 63).
+  67 (on trial): fade an Eastern home team in its first game back from a road
+  game on the Pacific coast, 3 time zones west ("jet lag homecoming").
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -92,7 +94,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from lib import action_network, espn, manual, store  # noqa: E402
 from lib.nba_absence import big_scorers, injury_status, watch_entries  # noqa: E402
 from lib.nba_revenge import revenge_facts  # noqa: E402
-from lib.nba_arenas import miles_between  # noqa: E402
+from lib.nba_arenas import miles_between, time_zone  # noqa: E402
 from lib import nba_heights  # noqa: E402
 from score_slate import _same_team  # noqa: E402
 from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES  # noqa: E402
@@ -233,6 +235,7 @@ ALLOWED_REST = {
     62: {"1", "2+"}, 63: {"b2b"}, 64: {"1", "2+"},
     65: {"b2b", "1", "2+"},
     66: {"b2b", "1", "2+"},
+    67: {"b2b", "1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -817,6 +820,16 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                 picks.append((opp, 49, f"Fading {team}: only {rot} players played 10+ minutes in last night's game "
                                     f"(vs {last['opp']}), now a {my_spread:+g} underdog on the second night of a back-to-back "
                                     f"-- {RULE_BACKTEST.get(49, '')}."))
+
+        # Rule 67: fade an Eastern home team in its first game back from a road
+        # game 3 time zones west (Pacific coast) -- flying east is the hard
+        # direction for the body clock. Both teams 8+ games played, as
+        # backtested; any rest (a cross-country back-to-back is almost unheard of).
+        if (is_home and not last["is_home"] and len(prior) >= 8 and len(opp_prior) >= 8
+                and time_zone(team) == 0 and time_zone(last["opp"]) == -3):
+            picks.append((opp, 67, f"Fading {team}: first home game back from the Pacific coast "
+                                   f"({'won' if last['won'] else 'lost'} {last['team_score']:g}-{last['opp_score']:g} at {last['opp']} on {last['date']}), three time "
+                                   f"zones east -- {RULE_BACKTEST.get(67, '')}."))
 
         # Rule 53: fade a 10+ point road underdog with a record of .300 or worse
         # (8+ games played) on the second night of a back-to-back -- back the

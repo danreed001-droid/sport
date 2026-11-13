@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22, 23, 24. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22, 23, 24. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -243,6 +243,14 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   luck 0.1% of the time. From a 2026-11-13 search of what precedes an 8+ point
   cover (base rate 26.8%; single factors reach ~31%, pairs were at chance, 4
   vs 2.5). No 2026-27 game had both conditions at backfill.
+  Rule 67 (on trial, "jet lag homecoming") fades an Eastern home team in its
+  first game back from a road game on the Pacific coast, 3 time zones west
+  (`time_zone` in `lib/nba_arenas.py`; both teams 8+ games, any rest): 38-18,
+  unseen 12-3, 2024-now 16-7, but 2022-23 was 4-7 and it's a small sample.
+  Flying home east climbs with the zones crossed (0: 47.7%, 1: 47.1%, 2:
+  56.9%, 3: 66.7% after 3+ game trips) and flying home west is 49.7%. From a
+  2026-11-13 test of 49 "storyline" situations (4 at p<0.05 vs ~2.5 by
+  chance), so treat it as a lead to watch. No 2026-27 game qualified at backfill.
   NBA Totals rules 23-24 (on trial, OVER; 2026-11-12): no single factor of 128
   moved totals 5+ points in both halves and all-pairs searches were at chance,
   but two pairs had steady patterns of their own. 23: the home team's last
