@@ -1141,9 +1141,9 @@ footer b{color:var(--ink);}
       return esc(r.player)+' ('+esc(r.status)+', scored '+esc(String(r.pts))+' last game) — if he sits: '+esc(r.ifOut);
     }).join('<br>')+'</div>';
   }
-  // NBA storylines (scripts/nba_storylines.py): situations a story could be
-  // told about, with how they went ATS from 2018-19 and 2021-22 to 2025-26.
-  // Context only -- never a pick, not graded, none cleared the 61% bar.
+  // Storylines (scripts/<sport>_storylines.py): situations a story could be
+  // told about, with how they went historically (ATS; soccer: to win / not to
+  // win, with the odds' implied % and return). Context only -- never a pick.
   function storyBlock(g){
     var rows = g.storylines||[];
     if(!rows.length) return '';
@@ -1152,10 +1152,13 @@ footer b{color:var(--ink);}
     var lean = Object.keys(tally).sort(function(a,b){ return tally[b]-tally[a]; }).map(function(t){ return esc(t)+' '+tally[t]; }).join(', ');
     return '<details class="stories"><summary><b>Storylines ('+rows.length+')</b> · history leans: '+lean+'</summary><ul>'+rows.map(function(r){
       var says = (r.says==='back'?'back ':'fade ')+esc(r.team);
-      var hist = 'Story says '+says+': '+esc(r.record)+' ('+esc(String(r.pct))+'%) ATS'
+      var unit = r.unit||'ATS';
+      var hist = 'Story says '+says+': '+esc(r.record)+' ('+esc(String(r.pct))+'%) '+esc(unit)
+        + (num(r.implied) ? ', odds implied '+esc(String(r.implied))+'%' : '')
+        + (num(r.roi) ? ', '+(r.roi>0?'+':'')+esc(String(r.roi))+'% return' : '')
         + (r.leans ? (r.against ? ' — history went the other way: leans '+esc(r.leans)+' '+esc(String(r.leanPct))+'%' : ' — leans '+esc(r.leans)+' '+esc(String(r.leanPct))+'%') : ' — a coin flip');
       return '<li><b>'+esc(r.name)+'</b> — '+esc(r.fact)+'<br><span class="st-hist">'+hist+'</span></li>';
-    }).join('')+'</ul><div class="st-hist">Context, not a pick: none of these cleared the 61% rule bar, most are within luck of 50%, and they aren\'t graded.</div></details>';
+    }).join('')+'</ul><div class="st-hist">Context, not a pick: none of these cleared the bar a model rule needs, most are within luck, and they aren\'t graded.</div></details>';
   }
   function totalsChip(r){
     if(!r || !r.result) return '';
