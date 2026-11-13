@@ -187,5 +187,60 @@ def game_context(rows_by_team, prev_rows_by_team, homes, ap_by_week, row, spread
         "meets": [r for r in prev_rows_by_team.get(tid, []) if r["oid"] == oid and r["ts"] is not None],
         "home": home, "ohome": ohome, "conf": row["conf"], "oconf": row["oconf"],
         "power": is_power(row["conf"], tid, row["season"]), "opower": is_power(row["oconf"], oid, row["season"]),
-        "rivalry": frozenset((row["team"], row["opp"])) in rivals,
+        "rivalry": frozenset((row["team"], row["opp"])) in rivals, "row_confgame": bool(row["confgame"]),
+        "prev_conf": (Counter(r["conf"] for r in prev_rows_by_team.get(tid, [])).most_common(1) or [(None, 0)])[0][0],
     }
+
+
+# ---------------------------------------------------------------- live data
+
+def _scoreboard_week(session, season, week, limits):
+    evs = {}
+    errors = 0
+    for limit in limits:
+        url = f"{SITE}/scoreboard?dates={season}&seasontype=2&week={week}&groups=80&limit={limit}"
+        try:
+            r = session.get(url, timeout=20)
+            r.raise_for_status()
+            for e in r.json().get("events", []):
+                if e.get("id") and e.get("competitions"):
+                    evs.setdefault(str(e["id"]), trim_event(e, week))
+        except Exception:  # noqa: BLE001
+            errors += 1
+    if errors == len(limits):
+        raise RuntimeError(f"ESPN scoreboard {season} week {week} unreachable")
+    return list(evs.values())
+
+
+def fetch_season(session, season, limits=(1000, 500)):
+    """Every FBS regular-season event of a season (played and scheduled),
+    week by week, as the backtest read them."""
+    events, empty = [], 0
+    for wk in range(1, 18):
+        evs = _scoreboard_week(session, season, wk, limits)
+        if not evs:
+            empty += 1
+            if wk > 12 and empty >= 2:
+                break
+            continue
+        empty = 0
+        events += evs
+    return events
+
+
+def fetch_ap(session, season, week):
+    """{team_id: AP rank} for the poll that applies to `week`'s games (week 1 =
+    preseason). Raises if ESPN can't be reached, so a missing poll never reads
+    as "unranked"."""
+    urls = [f"{CORE}/seasons/{season}/types/2/weeks/{week}/rankings/1"]
+    if week == 1:
+        urls.append(f"{CORE}/seasons/{season}/types/1/weeks/1/rankings/1")
+    for url in urls:
+        r = session.get(url, timeout=20)
+        if r.status_code == 404:
+            continue
+        r.raise_for_status()
+        ranks = r.json().get("ranks") or []
+        if ranks:
+            return {rk["team"]["$ref"].split("/teams/")[1].split("?")[0]: rk["current"] for rk in ranks}
+    raise RuntimeError(f"no AP poll for {season} week {week}")
