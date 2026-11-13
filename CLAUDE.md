@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22, 23, 24. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22, 23, 24. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -234,6 +234,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   guard-heavy team on a back-to-back covers ~40-43% (watch list, under the
   bar); size x rest/travel/strength grids (1,478 side, 1,157 total
   combinations) were luck overall and size does nothing for totals.
+  Rule 66 (on trial, "hard-win" family with 2, 9, 56, 63) backs a team that has
+  missed the closing spread by 6+ a game over its last five (4+ with a line)
+  when tonight's opponent's last game went to overtime, won or lost
+  (`went_to_ot`: ESPN scoreboard period > 4, hand-entered data first): 84-45,
+  unseen 31-18, 2024-now 23-12, every counted season positive; climbs with
+  the slump (0+ 53.2%, 4+ 60.3%, 8+ 68.4%, 10+ 79.5%); its family passes by
+  luck 0.1% of the time. From a 2026-11-13 search of what precedes an 8+ point
+  cover (base rate 26.8%; single factors reach ~31%, pairs were at chance, 4
+  vs 2.5). No 2026-27 game had both conditions at backfill.
   NBA Totals rules 23-24 (on trial, OVER; 2026-11-12): no single factor of 128
   moved totals 5+ points in both halves and all-pairs searches were at chance,
   but two pairs had steady patterns of their own. 23: the home team's last
@@ -269,7 +278,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (`lib/picks.stats_view`: score_slate.py, the dashboard, pick log, rule
   records); every other model is still graded at the slate's line. Games
   from before 2026-11-05 have no statsLine and stay graded at the slate's.
-  Overlapping slices of one situation (NBA Stats 2+9+56+63, 20-29, 35-40, 41-43, 44-48, 49+53+61, 51-52+54+57+60+62; NBA Totals 4-8,
+  Overlapping slices of one situation (NBA Stats 2+9+56+63+66, 20-29, 35-40, 41-43, 44-48, 49+53+61, 51-52+54+57+60+62; NBA Totals 4-8,
   9-15, 17-19, 20-21) are one "family": several firing
   on a game don't make it "stacked" (`families()` in the rules files, `famCount`
   in `site/index.html`).

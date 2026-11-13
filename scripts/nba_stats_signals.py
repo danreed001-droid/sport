@@ -55,6 +55,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   back a home team covering 60%+ this season vs. a team .250 or worse on the road.
   65 (on trial): in a near pick'em, back the team facing an opponent that plays
   60+ more minutes a game of players 6'4" and under (lib/nba_heights.py).
+  66 (on trial): back a team that has missed the spread by 6+ a game over its last
+  five when the opponent's last game went to overtime (family with 2, 9, 56, 63).
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -230,6 +232,7 @@ ALLOWED_REST = {
     57: {"1", "2+"}, 58: {"b2b", "1", "2+"}, 59: {"1", "2+"}, 60: {"b2b", "1", "2+"}, 61: {"b2b", "1", "2+"},
     62: {"1", "2+"}, 63: {"b2b"}, 64: {"1", "2+"},
     65: {"b2b", "1", "2+"},
+    66: {"b2b", "1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -361,6 +364,22 @@ def quarter_data(session, cache, date_str):
     cache[date_str] = out
     return out
 
+
+
+def went_to_ot(session, cache, game, team):
+    """True when `team`'s game `game` (a by_team entry) went to overtime, False
+    when it didn't, None when unknown. Hand-entered data wins (lib/manual.py)."""
+    m_game = manual.team_game("nba", game["date"], team) or {}
+    if m_game.get("ot"):
+        return True
+    m_box = manual.team_box("nba", game["date"], team)
+    if m_box.get("quarters"):
+        return len(m_box["quarters"]) > 4
+    q = quarter_data(session, cache, game["date"])
+    e = next((v for v in q.values() if team in v["teams"] and game["opp"] in v["teams"]), None)
+    if not e or not e.get("period"):
+        return None
+    return e["period"] > 4
 
 
 def trailed_after_three(q_entry, team, opp):
@@ -833,6 +852,14 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                     picks.append((team, 57, f"Backing {team}: beat the spread by {sum(beat5) / len(beat5):.1f} a game over its last "
                                             f"five, and {opp} had no double-digit rebounder in its last two games (top: "
                                             f"{tops[0]} and {tops[1]}) -- {RULE_BACKTEST.get(57, '')}."))
+            # 66: back a team that has missed the closing spread by 6+ a game over
+            # its last five (4+ with a line) when tonight's opponent's last game
+            # went to overtime (won or lost).
+            if len(beat5) >= 4 and sum(beat5) / len(beat5) <= -6 and went_to_ot(session, q_cache, opp_last, opp):
+                picks.append((team, 66, f"Backing {team}: has missed the spread by {-sum(beat5) / len(beat5):.1f} a game over its last "
+                                        f"five, and {opp}'s last game ({opp_last['team_score']:g}-{opp_last['opp_score']:g} "
+                                        f"{'vs' if opp_last['is_home'] else 'at'} {opp_last['opp']}) went to overtime "
+                                        f"-- {RULE_BACKTEST.get(66, '')}."))
             # 58: fade a team that won its last game by 1-5 when tonight's
             # opponent scored 130+ in its last game.
             won_by = last["team_score"] - last["opp_score"]
