@@ -89,6 +89,10 @@ jobs:
         continue-on-error: true
         run: python scripts/nba_totals_signals.py
 
+      - name: NBA storylines on today's slate (context only)
+        continue-on-error: true
+        run: python scripts/nba_storylines.py
+
       - name: Patch today's NFL Stats picks onto the NFL slate
         id: nfl
         continue-on-error: true

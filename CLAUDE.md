@@ -324,6 +324,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   totals) and CFB (ranked-team games 2018-2025, 1,313; 10 vs 3.3, p=0.13).
   None is better than luck, so there are no NFL/NCAA totals models.
   `TOTALS_OF` in `site/index.html` would fold one into its tile if one is added.
+- **Storylines** (`scripts/nba_storylines.py`, each scoring and game-time run;
+  `storylines` on each NBA game, repo-owned in `sync_ledger.py`): situations a
+  story could be told about (fat and happy, jet lag homecoming, the schedule
+  loss, ghost town...), 20 of ~70 tested on 2026-11-13 -- the ones where
+  history leaned 53%+ one way on 50+ games or p<0.05, sometimes the opposite
+  of the story (`against`). Each entry has the story's bet, its ATS record from
+  2018-19 and 2021-22 to 2025-26 (both teams 8+ games) and the side history
+  leans to. The card shows them in a collapsed "Storylines" box with a tally.
+  Context only: never a pick, not graded, not an input to any model; frozen
+  once the game has a score.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.

@@ -35,7 +35,7 @@ SLATE_FIELDS = [
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore", "manualFields",
     "totalsLine", "totalsFavors", "totalsCheck", "totalsRules", "statsWatch", "statsLine", "totalsWatch",
-    "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds",
+    "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds", "storylines",
 ]
 
 

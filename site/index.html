@@ -219,6 +219,12 @@ details.tv table{min-width:0;}
 details.why{font-size:12px;color:var(--muted);}
 .injwatch{font-size:12px;border:1px dashed var(--rule-2);border-radius:8px;padding:6px 10px;margin:8px 0 0;color:var(--ink);}
 .injwatch b{color:var(--warn);}
+.stories{font-size:12px;border:1px solid var(--rule-2);border-radius:8px;padding:6px 10px;margin:8px 0 0;color:var(--ink);}
+.stories summary{cursor:pointer;color:var(--muted);}
+.stories summary b{color:var(--ink);}
+.stories ul{margin:6px 0 2px;padding-left:16px;}
+.stories li{margin:0 0 5px;}
+.stories .st-hist{color:var(--muted);}
 details.why summary{cursor:pointer;color:var(--opinion-ink);font-weight:600;font-size:11.5px;width:max-content;max-width:100%;}
 details.why ul{margin:8px 0 0;padding-left:17px;line-height:1.55;}
 details.rules-tbl{margin:0 0 14px;}
@@ -1135,6 +1141,22 @@ footer b{color:var(--ink);}
       return esc(r.player)+' ('+esc(r.status)+', scored '+esc(String(r.pts))+' last game) — if he sits: '+esc(r.ifOut);
     }).join('<br>')+'</div>';
   }
+  // NBA storylines (scripts/nba_storylines.py): situations a story could be
+  // told about, with how they went ATS from 2018-19 and 2021-22 to 2025-26.
+  // Context only -- never a pick, not graded, none cleared the 61% bar.
+  function storyBlock(g){
+    var rows = g.storylines||[];
+    if(!rows.length) return '';
+    var tally = {};
+    rows.forEach(function(r){ if(r.leans) tally[r.leans] = (tally[r.leans]||0)+1; });
+    var lean = Object.keys(tally).sort(function(a,b){ return tally[b]-tally[a]; }).map(function(t){ return esc(t)+' '+tally[t]; }).join(', ');
+    return '<details class="stories"><summary><b>Storylines ('+rows.length+')</b> · history leans: '+lean+'</summary><ul>'+rows.map(function(r){
+      var says = (r.says==='back'?'back ':'fade ')+esc(r.team);
+      var hist = 'Story says '+says+': '+esc(r.record)+' ('+esc(String(r.pct))+'%) ATS'
+        + (r.leans ? (r.against ? ' — history went the other way: leans '+esc(r.leans)+' '+esc(String(r.leanPct))+'%' : ' — leans '+esc(r.leans)+' '+esc(String(r.leanPct))+'%') : ' — a coin flip');
+      return '<li><b>'+esc(r.name)+'</b> — '+esc(r.fact)+'<br><span class="st-hist">'+hist+'</span></li>';
+    }).join('')+'</ul><div class="st-hist">Context, not a pick: none of these cleared the 61% rule bar, most are within luck of 50%, and they aren\'t graded.</div></details>';
+  }
   function totalsChip(r){
     if(!r || !r.result) return '';
     return '<span class="chip '+(r.result==='W'?'w':r.result==='L'?'l':'p')+'">'+(r.result==='W'?'✓':r.result==='L'?'✕':'push')+'</span>';
@@ -1315,7 +1337,7 @@ footer b{color:var(--ink);}
     return '<article class="game">'
       + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
       + '<div class="lines">'+lineText(g)+(g.manualFields && g.manualFields.length ? '<br><span class="handnote" title="Entered on the Enter data by hand page">\u270e hand-entered: '+esc(manualLabel(g.manualFields))+'</span>' : '')+'</div></div>'
-      + '<div class="models">'+models+'</div>'+injuryWatch(g)
+      + '<div class="models">'+models+'</div>'+injuryWatch(g)+storyBlock(g)
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
       + '</article>';
