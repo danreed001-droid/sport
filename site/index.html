@@ -1217,6 +1217,23 @@ footer b{color:var(--ink);}
     var w = r.btW + r.w, l = r.btL + r.l;
     return w+'-'+l+' ('+(w+l ? (100*w/(w+l)).toFixed(1) : '0')+'%)';
   }
+  // Storylines by the size of their weighted lean, this season (finished games):
+  // does a bigger lean do better? The NBA backtest says it did (but that's
+  // optimistic: each storyline was kept because it leaned).
+  function storyStrengthTable(k){
+    var r = (DATA.storyStrength||{})[k];
+    if(!r) return '';
+    var unit = k==='mlb' ? 'won' : 'covered';
+    var rows = [['1', 'Lean of 1 point or less'], ['1.5-2', 'Lean of 1.5-2 points'], ['2.5+', 'Lean of 2.5+ points']].map(function(b){
+      var x = r[b[0]], n = x.w+x.l;
+      return '<tr><td>'+b[1]+'</td><td class="mono">'+(n+x.p ? x.w+'-'+x.l+(x.p?'-'+x.p:'') : '—')+'</td><td class="mono">'+(n ? pct(x.w,n) : '—')+'</td></tr>';
+    }).join('');
+    return '<details class="why rules-tbl"><summary>Storylines — does a bigger lean do better?</summary>'
+      + '<div class="tblwrap"><table><thead><tr><th>Storylines on the game</th><th>Leaned side '+unit+'</th><th>%</th></tr></thead><tbody>'+rows+'</tbody></table></div>'
+      + '<p class="note" style="margin:8px 0 0">This season\'s finished games, using the card\'s weighted tally (★ 2, ½ for the shakiest, else 1).'
+      + (k==='nba' ? ' In the NBA backtest (2018-19 and 2021-22 to 2025-26) a bigger lean did better: 1 point 54.0%, 1.5-2 57.5%, 2.5-3 60.0%, 3.5+ 71.0% (31 games), and when 3+ storylines all pointed the same way 60.7%. That\'s optimistic, because each storyline was kept for leaning; this table is the real test.' : '')
+      + '</p></details>';
+  }
   function statsRulesTable(){
     var rules = DATA.statsRules||[];
     if(!rules.length) return '';
@@ -1406,7 +1423,7 @@ footer b{color:var(--ink);}
         + (k==='mlb' ? '<p class="sec-p">MLB grades against the run line stored for each game (usually ±1.5).</p>'
           : k==='soccer' ? '<p class="sec-p">Three-way moneyline: pick home, draw or away. No spread.</p>'
           : '<p class="sec-p">Tap a side to pick it against the spread.</p>')
-        + (k==='nba' ? statsRulesTable()+totalsRulesTable() : '') + (k==='nfl' ? nflStatsRulesTable() : '') + (k==='ncaab' ? ncaabStatsRulesTable() : '')
+        + (k==='nba' ? statsRulesTable()+totalsRulesTable() : '') + (k==='nfl' ? nflStatsRulesTable() : '') + (k==='ncaab' ? ncaabStatsRulesTable() : '') + storyStrengthTable(k)
         + '<div class="games">'+sp.games.map(function(g){ return card(k,g); }).join('')+'</div></section>';
     }).join('');
     document.getElementById('app').innerHTML = healthBanner() +

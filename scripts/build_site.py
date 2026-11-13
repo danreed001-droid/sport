@@ -41,6 +41,38 @@ SLATE_FIELDS = [
 
 
 
+
+# How a game's storylines did by the size of their weighted lean (the card's
+# tally): did the side they leaned to cover (MLB: win)? Finished games only.
+STORY_BUCKETS = (("1", 0, 1), ("1.5-2", 1, 2), ("2.5+", 2, 99))
+
+
+def storyline_strength(all_docs):
+    out = {}
+    for sport in ("nba", "nfl", "cfb", "ncaab", "mlb"):
+        rec = {b: {"w": 0, "l": 0, "p": 0} for b, _, _ in STORY_BUCKETS}
+        for _, doc in all_docs.get(sport, []):
+            for g in doc.get("games", []):
+                if not g.get("storylines") or not is_final(doc, g):
+                    continue
+                net = sum(float(e.get("weight") or 1) * (1 if e["leans"] == g.get("home") else -1)
+                          for e in g["storylines"] if e.get("leans"))
+                if net == 0:
+                    continue
+                margin = g["homeScore"] - g["awayScore"]
+                if sport == "mlb":
+                    res = margin
+                else:
+                    hs = g.get("statsSpread") if sport == "nba" and isinstance(g.get("statsSpread"), (int, float)) else g.get("homeSpread")
+                    if not isinstance(hs, (int, float)):
+                        continue
+                    res = margin + hs
+                b = next(name for name, lo, hi in STORY_BUCKETS if lo < abs(net) <= hi)
+                rec[b]["p" if res == 0 else "w" if (res > 0) == (net > 0) else "l"] += 1
+        if any(v["w"] + v["l"] for v in rec.values()):
+            out[sport] = rec
+    return out
+
 def backtest_wl(text):
     """(wins, losses) from a rule's backtest text ("66.0% ATS, 97-50 (...)" or
     "60.0% ATS, n=100 (...)"), or (None, None) when it can't be read."""
@@ -350,6 +382,7 @@ def build():
         "sportLabels": {k: cfg["label"] for k, cfg in sports.SPORTS.items()},
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
+        "storyStrength": storyline_strength(all_docs),
         "statsBackfilled": stats_backfilled,
         "nflStatsRules": nfl_rules,
         "ncaabStatsRules": ncaab_rules,

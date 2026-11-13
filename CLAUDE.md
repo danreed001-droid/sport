@@ -365,6 +365,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   body clock; NFL short week after OT, night owls, 1 PM body clock), else 1.
   The NBA/NFL/NCAAB Stats and NBA Totals rules tables add an "All in" column:
   backtest W-L (`backtest_wl` in build_site.py) plus this season.
+  Each sport's section has "Storylines — does a bigger lean do better?"
+  (`storyline_strength` in build_site.py: this season's finished games by the
+  card's weighted net lean, 1 / 1.5-2 / 2.5+; MLB by winner, soccer left out),
+  and the agreement table has rows for storylines leaning with/against your
+  pick (`sl` on your plays). NBA backtest by net lean: 54.0% / 57.5% / 60.0%
+  (2.5-3) / 71.0% (3.5+, 31 games); 3+ all one way 60.7% -- optimistic, since
+  each storyline was kept for leaning. Best NBA pairs (20+ games, in-sample):
+  ghost town + quiet giant 19-6, payback + prodigal 18-6, schedule loss +
+  second battle 56-37.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
