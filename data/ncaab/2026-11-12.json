@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "weekday": "Thursday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-12T16:32:13Z",
   "auditChanges": [
     "NCAAB Montana State @ BYU: Ledger BYU solid -> skip (off-gap); the slate skipped the early-season 50/50 blend (blended offense ranks #75 vs #7 of 365, gap 18.7 < 30)."
@@ -13,7 +13,7 @@
       "altCategoryTally": "1-5",
       "altConfidence": "lean",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": false,
       "altPick": "BYU Cougars",
       "altReasons": [
         "Scoring margin: BYU's +15.39 PD/g (50/50 blend: +22.67 over 3 games this season, +8.11 last season) clears Montana State's +4.0 (+1.5 in 2 games, +6.5 last season) -- favors BYU.",
@@ -27,13 +27,13 @@
         "Matchup splits: Montana State's defense (BartTorvik AdjDE #139 nationally) against BYU's top-5 offense (17 threes vs Queens) sets up BYU's offense to operate largely unimpeded -- favors BYU."
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": -100.0,
       "auditNote": "Ledger now skips (off-gap): with the required early-season 50/50 blend the offense-rank gap is 18.7 percentile points, under 30; also fixed BYU's game count, the Queens date (Tue, not a back-to-back) and the rebounding claim.",
       "away": "Montana State Bobcats",
       "awayMoneyline": 2200,
       "awayPDpg": 4,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 71.0,
       "awaySpread": 23.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -45,7 +45,7 @@
       "homeMoneyline": -8000,
       "homePDpg": 15.39,
       "homeRank": 23,
-      "homeScore": null,
+      "homeScore": 86.0,
       "homeSpread": -23.5,
       "homeSpreadOdds": -108,
       "offGap": 18.68,
@@ -63,5 +63,6 @@
       ],
       "time": "9:00 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-13T09:34:57.570767+00:00"
 }

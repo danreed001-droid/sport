@@ -2,7 +2,7 @@
   "date": "2026-11-12",
   "weekday": "Thursday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-12T13:19:40Z",
   "auditChanges": [
     "NFL Commanders @ Giants: skipReason qb-veto -> off-gap (Screen 1 comes first); altCategoryTally 3-0 -> 0-3 (the 3 votes are the Giants', home). Still no Ledger pick, Second Opinion still a pass."
@@ -38,7 +38,7 @@
       "awayPDpg": -4.7,
       "awayQB": "Jayden Daniels",
       "awayQBRating": 97.2,
-      "awayScore": null,
+      "awayScore": 24.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -112,
       "awayYPP": 5.2,
@@ -52,7 +52,7 @@
       "homePDpg": -1.06,
       "homeQB": "J.J. McCarthy",
       "homeQBRating": 91.7,
-      "homeScore": null,
+      "homeScore": 21.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -108,
       "homeYPP": 5.1,
@@ -68,7 +68,16 @@
         "Yds/play 5.2 vs 5.1 \u00b7 9.7-pt off-gap",
         "QB rating 97.2 vs 91.7 (Daniels vs McCarthy)"
       ],
-      "time": "8:15 PM ET"
+      "time": "8:15 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     }
-  ]
+  ],
+  "scoredAt": "2026-11-13T09:34:51.353705+00:00"
 }
