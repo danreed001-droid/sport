@@ -39,8 +39,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 219.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
       "home": "Indiana Pacers",
       "homeMoneyline": 220,
       "homeNetRtg": -2.47,
@@ -63,12 +63,12 @@
       "statsCheck": "Rule 54: Backing Indiana Pacers: covered its last two games (by 9.5 vs Washington Wizards and by 1.5 at Dallas Mavericks), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
       "statsFavors": "Indiana Pacers",
       "statsLine": {
-        "homeSpread": 8.5,
-        "awaySpread": -8.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 271,
-        "awayMoneyline": -337
+        "homeSpread": 7.5,
+        "awaySpread": -7.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 259,
+        "awayMoneyline": -321
       },
       "statsRules": [
         {
@@ -78,7 +78,7 @@
           "detail": "Backing Indiana Pacers: covered its last two games (by 9.5 vs Washington Wizards and by 1.5 at Dallas Mavericks), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
         }
       ],
-      "statsSpread": 8.5,
+      "statsSpread": 7.5,
       "storylines": [
         {
           "weight": 1,
@@ -87,7 +87,7 @@
           "name": "Friday night lights",
           "team": "New York Knicks",
           "says": "fade",
-          "fact": "New York Knicks is a -8.5 road favorite on a Friday.",
+          "fact": "New York Knicks is a -7.5 road favorite on a Friday.",
           "record": "195-236",
           "pct": 45.2,
           "leans": "New York Knicks",
@@ -101,7 +101,7 @@
           "name": "The emperor's new clothes",
           "team": "New York Knicks",
           "says": "fade",
-          "fact": "New York Knicks is a -8.5 favorite but has covered 4 of 11 this season.",
+          "fact": "New York Knicks is a -7.5 favorite but has covered 4 of 11 this season.",
           "record": "179-152",
           "pct": 54.1,
           "leans": "Indiana Pacers",
@@ -141,9 +141,9 @@
       "awaySpreadOdds": -112,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 223.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotal": 224.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
       "home": "Orlando Magic",
       "homeMoneyline": -400,
       "homeNetRtg": -5.45,
@@ -169,8 +169,8 @@
         "awaySpread": 9.5,
         "homeSpreadOdds": -112,
         "awaySpreadOdds": -108,
-        "homeMoneyline": -395,
-        "awayMoneyline": 312
+        "homeMoneyline": -410,
+        "awayMoneyline": 322
       },
       "statsSpread": -9.5,
       "storylines": [
@@ -218,7 +218,7 @@
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 223.5
+      "totalsLine": 224.5
     },
     {
       "altCategoryTally": "1-2",
@@ -248,9 +248,9 @@
       "awaySpreadOdds": -112,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 235.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotal": 236.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Miami Heat",
       "homeMoneyline": -135,
       "homeNetRtg": -4.09,
@@ -297,16 +297,7 @@
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 235.5,
-      "totalsWatch": [
-        {
-          "player": "Giannis Antetokounmpo",
-          "pts": 30,
-          "status": "Day-To-Day",
-          "rule": 3,
-          "ifOut": "NBA Totals rule 3 would bet the over"
-        }
-      ]
+      "totalsLine": 236.5
     },
     {
       "altCategoryTally": "4-0",
@@ -336,9 +327,9 @@
       "awaySpreadOdds": -112,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 245.5,
-      "gameTotalOverOdds": -111,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 246.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Chicago Bulls",
       "homeMoneyline": 230,
       "homeNetRtg": -10.06,
@@ -361,12 +352,12 @@
       "statsCheck": "Rule 54: Backing Chicago Bulls: covered its last two games (by 10.5 vs San Antonio Spurs and by 3.5 vs Philadelphia 76ers), now at home in game 11 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
       "statsFavors": "Chicago Bulls",
       "statsLine": {
-        "homeSpread": 7.5,
-        "awaySpread": -7.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": 236,
-        "awayMoneyline": -290
+        "homeSpread": 6.5,
+        "awaySpread": -6.5,
+        "homeSpreadOdds": -107,
+        "awaySpreadOdds": -113,
+        "homeMoneyline": 227,
+        "awayMoneyline": -277
       },
       "statsRules": [
         {
@@ -376,53 +367,53 @@
           "detail": "Backing Chicago Bulls: covered its last two games (by 10.5 vs San Antonio Spurs and by 3.5 vs Philadelphia 76ers), now at home in game 11 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
         }
       ],
-      "statsSpread": 7.5,
+      "statsSpread": 6.5,
       "storylines": [
         {
-          "against": false,
-          "fact": "Chicago Bulls' top scorer Norman Powell (19.2 a game) missed its last two games; Chicago Bulls is a +7.5 underdog.",
-          "key": "ghost_town",
-          "leanPct": 52.6,
-          "leans": "Atlanta Hawks",
+          "weight": 1,
           "live": "2-1",
+          "key": "ghost_town",
           "name": "Ghost town",
-          "pct": 52.6,
-          "record": "822-741",
-          "says": "fade",
           "team": "Chicago Bulls",
-          "weight": 1
-        },
-        {
-          "against": true,
-          "fact": "Atlanta Hawks is a -7.5 road favorite on a Friday.",
-          "key": "friday",
-          "leanPct": 54.8,
+          "says": "fade",
+          "fact": "Chicago Bulls' top scorer Norman Powell (19.2 a game) missed its last two games; Chicago Bulls is a +6.5 underdog.",
+          "record": "822-741",
+          "pct": 52.6,
           "leans": "Atlanta Hawks",
-          "live": "2-4",
-          "name": "Friday night lights",
-          "pct": 45.2,
-          "record": "195-236",
-          "says": "fade",
-          "team": "Atlanta Hawks",
-          "weight": 1
+          "leanPct": 52.6,
+          "against": false
         },
         {
-          "against": false,
-          "fact": "Atlanta Hawks is a -7.5 favorite but has covered 4 of 12 this season.",
-          "key": "emperor",
-          "leanPct": 54.1,
-          "leans": "Chicago Bulls",
-          "live": "3-0",
-          "name": "The emperor's new clothes",
-          "pct": 54.1,
-          "record": "179-152",
-          "says": "fade",
+          "weight": 1,
+          "live": "2-4",
+          "key": "friday",
+          "name": "Friday night lights",
           "team": "Atlanta Hawks",
-          "weight": 1
+          "says": "fade",
+          "fact": "Atlanta Hawks is a -6.5 road favorite on a Friday.",
+          "record": "195-236",
+          "pct": 45.2,
+          "leans": "Atlanta Hawks",
+          "leanPct": 54.8,
+          "against": true
+        },
+        {
+          "weight": 1,
+          "live": "3-0",
+          "key": "emperor",
+          "name": "The emperor's new clothes",
+          "team": "Atlanta Hawks",
+          "says": "fade",
+          "fact": "Atlanta Hawks is a -6.5 favorite but has covered 4 of 12 this season.",
+          "record": "179-152",
+          "pct": 54.1,
+          "leans": "Chicago Bulls",
+          "leanPct": 54.1,
+          "against": false
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 245.5
+      "totalsLine": 246.5
     },
     {
       "altCategoryTally": "4-0",
@@ -453,7 +444,7 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 237.5,
+      "gameTotal": 235.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110,
       "home": "New Orleans Pelicans",
@@ -477,14 +468,14 @@
         "Pelicans: Bennedict Mathurin and Trey Murphy III (two of New Orleans' top scorers) both doubtful; Trendon Watford out, Yves Missi out/doubtful, Bryce McGowens doubtful"
       ],
       "statsLine": {
-        "homeSpread": 2.5,
-        "awaySpread": -2.5,
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
         "homeSpreadOdds": -112,
         "awaySpreadOdds": -108,
-        "homeMoneyline": 114,
-        "awayMoneyline": -135
+        "homeMoneyline": 136,
+        "awayMoneyline": -162
       },
-      "statsSpread": 2.5,
+      "statsSpread": 3.5,
       "storylines": [
         {
           "weight": 1,
@@ -493,7 +484,7 @@
           "name": "The prodigal star",
           "team": "New Orleans Pelicans",
           "says": "back",
-          "fact": "New Orleans Pelicans' top scorer Zion Williamson (21.7 a game) returned last game after missing the one before; New Orleans Pelicans is a +2.5 underdog.",
+          "fact": "New Orleans Pelicans' top scorer Zion Williamson (21.7 a game) returned last game after missing the one before; New Orleans Pelicans is a +3.5 underdog.",
           "record": "171-208",
           "pct": 45.1,
           "leans": "Memphis Grizzlies",
@@ -507,7 +498,7 @@
           "name": "Friday night lights",
           "team": "Memphis Grizzlies",
           "says": "fade",
-          "fact": "Memphis Grizzlies is a -2.5 road favorite on a Friday.",
+          "fact": "Memphis Grizzlies is a -3.5 road favorite on a Friday.",
           "record": "195-236",
           "pct": 45.2,
           "leans": "Memphis Grizzlies",
@@ -516,7 +507,7 @@
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 237.5
+      "totalsLine": 235.5
     },
     {
       "altCategoryTally": "0-4",
@@ -547,8 +538,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 220.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
       "home": "Houston Rockets",
       "homeMoneyline": -1600,
       "homeNetRtg": 9.28,
@@ -574,10 +565,10 @@
       "statsLine": {
         "homeSpread": -15.5,
         "awaySpread": 15.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": -1340,
-        "awayMoneyline": 810
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -1180,
+        "awayMoneyline": 740
       },
       "statsRules": [
         {
@@ -656,8 +647,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 217.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "San Antonio Spurs",
       "homeMoneyline": -700,
       "homeNetRtg": 11.4,
@@ -679,14 +670,14 @@
         "Spurs: Tobias Harris out, Jayden Quaintance not yet cleared, Devin Vassell day-to-day \u2014 none Spurs' best player; Spurs on a 10-game winning streak (L10 10-0)"
       ],
       "statsLine": {
-        "homeSpread": -11.5,
-        "awaySpread": 11.5,
-        "homeSpreadOdds": -113,
-        "awaySpreadOdds": -107,
-        "homeMoneyline": -670,
-        "awayMoneyline": 487
+        "homeSpread": -12.5,
+        "awaySpread": 12.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": -650,
+        "awayMoneyline": 473
       },
-      "statsSpread": -11.5,
+      "statsSpread": -12.5,
       "storylines": [
         {
           "weight": 1,
@@ -695,7 +686,7 @@
           "name": "Fat and happy",
           "team": "San Antonio Spurs",
           "says": "fade",
-          "fact": "San Antonio Spurs has won 10 straight and is a -11.5 favorite.",
+          "fact": "San Antonio Spurs has won 10 straight and is a -12.5 favorite.",
           "record": "156-135",
           "pct": 53.6,
           "leans": "Golden State Warriors",
@@ -734,9 +725,9 @@
       "awaySpreadOdds": -112,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "Sacramento Kings",
       "homeMoneyline": 400,
       "homeNetRtg": -12.53,
@@ -783,7 +774,7 @@
         }
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 228.5
+      "totalsLine": 229.5
     },
     {
       "altCategoryTally": "2-0",
@@ -814,7 +805,7 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 222.5,
-      "gameTotalOverOdds": -105,
+      "gameTotalOverOdds": -108,
       "home": "LA Clippers",
       "homeMoneyline": 230,
       "homeNetRtg": -2.405,
@@ -838,8 +829,8 @@
       "statsLine": {
         "homeSpread": 7.5,
         "awaySpread": -7.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -103,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -107,
         "homeMoneyline": 231,
         "awayMoneyline": -283
       },
@@ -876,7 +867,7 @@
       ],
       "time": "10:30 PM ET",
       "totalsLine": 222.5,
-      "gameTotalUnderOdds": -115
+      "gameTotalUnderOdds": -112
     }
   ]
 }
