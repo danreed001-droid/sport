@@ -336,7 +336,11 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   once the game has a score. NFL: `scripts/nfl_storylines.py` (2010-2025,
   2020 left out; 62 tested in two rounds, 1 at p<0.05 vs 3.1 by chance, 16 shown; the wind
   story has no allowed live forecast source, and the QB-vs-old-team table runs
-  through 2025 and needs a refresh each offseason).
+  through 2025 and needs a refresh each offseason). CFB:
+  `scripts/cfb_storylines.py` (FBS vs FBS, 2015-2025, 2020 left out; 53
+  tested, none at p<0.05 vs 2.7 by chance, 14 shown; AP poll from ESPN's
+  weekly rankings, the date is skipped until that week's poll exists; bowls,
+  conference title games and FCS opponents left out).
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
