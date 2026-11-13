@@ -17,7 +17,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401861158,2026-11-13,Scheduled,Germany,0,-,Serbia,0,-,-,-,2:45 PM
 401861160,2026-11-13,Scheduled,Faroe Islands,0,-,Slovakia,0,-,-,-,2:45 PM
 401861156,2026-11-13,Scheduled,Switzerland,0,-,Slovenia,0,-,-,-,2:45 PM
-401916338,2026-11-13,Scheduled,Paraguay,0,-,Singapore,0,-,-,-,7:00 AM
+401916338,2026-11-13,38',Paraguay,1,-,Singapore,1,-,-,-,7:00 AM
 401931957,2026-11-13,Scheduled,Honduras,0,-,United Arab Emirates,0,-,-,-,9:10 AM
 401931476,2026-11-13,Scheduled,South Korea,0,-,Saudi Arabia,0,-,-,-,9:30 AM
 401919978,2026-11-13,Scheduled,Australia,0,-,Qatar,0,-,-,-,9:45 AM
@@ -84,6 +84,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401931336,2026-11-13,Scheduled,Southern,0,-,Alcorn State,0,-,-,-,7:00 PM
 401929961,2026-11-13,Scheduled,Massachusetts,0,-,Western Michigan,0,-,-,-,7:30 PM
 401931323,2026-11-13,Scheduled,Mercer,0,-,East Tennessee State,0,-,-,-,8:00 PM
+401934223,2026-11-13,Scheduled,AFC METALUL BUZAU,0,-,Petrolul Ploiesti,0,-,-,-,7:00 AM
 401916983,2026-11-12,FT,Austria Vienna,1,-,Benfica,3,-,-,-,3:00 PM
 401928138,2026-11-12,FT,Sparta Prague,0,-,Torreense,3,-,-,-,12:00 PM
 401878034,2026-11-12,FT,Atlético Junior,1,-,Deportivo Pasto,0,-,-,-,6:00 PM
