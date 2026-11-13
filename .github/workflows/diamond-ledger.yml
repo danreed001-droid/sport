@@ -110,6 +110,10 @@ jobs:
         continue-on-error: true
         run: python scripts/soccer_storylines.py
 
+      - name: MLB storylines on today's slate (context only)
+        continue-on-error: true
+        run: python scripts/mlb_storylines.py
+
       - name: Build today's NCAA basketball slate from ESPN if no Routine has
         id: ncaab
         continue-on-error: true

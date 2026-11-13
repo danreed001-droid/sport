@@ -346,7 +346,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   tested, 1 at p<0.05 vs 2.2 by chance, 4 shown, all the opposite of their
   story). Moneyline entries carry `implied` and `roi`, and `unit` is the
   favored bet ("to win" / "not to win"). football-data.co.uk's robots.txt
-  bars ClaudeBot: don't fetch it.
+  bars ClaudeBot: don't fetch it. MLB: `scripts/mlb_storylines.py`
+  (2015-2025, 2020 left out; Retrosheet event files for game context, closing
+  moneylines from SportsbookReviewsOnline to 2021 and ESPN core odds after;
+  46 tested, 1 at p<0.05 vs 2.2 by chance, 4 shown: Rust, Split the
+  doubleheader, Ace vs ace dog, Extra-innings hangover). Live it reads ESPN's
+  probable starters, so a late pitching change can change what fires.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
