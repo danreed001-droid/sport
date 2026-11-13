@@ -311,9 +311,28 @@ def storylines_for(feed, ev, g):
     return [e for e in out if len(sides[e["key"]]) == 1]
 
 
-def find_event(events, g):
-    """The ESPN event for a slate game (a doubleheader by the slate's time)."""
+def slate_minutes(g):
+    try:
+        t, ampm = str(g.get("time")).replace("ET", "").split()[:2]
+        h, m = (t.split(":") + ["0"])[:2]
+        return (int(h) % 12 + (12 if ampm.upper() == "PM" else 0)) * 60 + int(m)
+    except (ValueError, AttributeError):
+        return None
+
+
+def find_event(events, g, doubleheader=False):
+    """The ESPN event for a slate game (a doubleheader by the slate's time).
+    For a slate doubleheader, the event must start within 90 minutes of the
+    slate's time: game 1 is often a makeup that ESPN files under the original
+    date, and matching it to game 2 would hand game 1 game 2's storylines
+    (found 2026-11-13: "lost game 1" on game 1 itself)."""
     hits = [e for e in events if _same_team(g["home"], e["home_name"]) and _same_team(g["away"], e["away_name"])]
+    if doubleheader:
+        mins = slate_minutes(g)
+        if mins is None:
+            return None
+        close = [e for e in hits if abs(e["start"].hour * 60 + e["start"].minute - mins) <= 90]
+        return min(close, key=lambda e: abs(e["start"].hour * 60 + e["start"].minute - mins)) if close else None
     if len(hits) <= 1:
         return hits[0] if hits else None
     try:
@@ -349,7 +368,8 @@ def main():
                 continue
             if isinstance(g.get("awayScore"), (int, float)) and not include_final:
                 continue  # started or final: keep what was there before first pitch
-            ev = find_event(events, g)
+            twins = sum(1 for x in doc.get("games", []) if x.get("away") == g["away"] and x.get("home") == g["home"])
+            ev = find_event(events, g, doubleheader=twins > 1)
             if ev is None:
                 print(f"  {g['away']} @ {g['home']}: not on ESPN's board for {date_str} -- left as it was.")
                 continue
