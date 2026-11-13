@@ -430,7 +430,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   other way sits out (`story_vetoed`): it's left out of every record on the
   page -- scoreboard, by-sport, plays/tiles/charts, rule records, stacked
   rows, the agreement table -- and the pick log shows "Sat out" with what it
-  would have done (`sx`/`sxa`/`sxm`); cards show "Sitting out" (`vetoLine`)
+  would have done (`sx`/`sxa`/`sxm`); on cards the model's badge shows "Sat
+  out" instead of its pick (`satBadge`), it's left off the sides line, and a
+  "Sitting out" note explains (`vetoLine`)
   and a "sat out" chip. Each card also lists the models on each side with
   their season win % in that sport (`sidesLine`: ATS, soccer moneyline, from
   `DATA.bySport`, so veto-aware). Your own picks always count; NBA Totals (not a side)

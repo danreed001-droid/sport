@@ -1185,14 +1185,18 @@ footer b{color:var(--ink);}
     var sit = vetoed(g), bySide = {};
     VETO_MODELS.forEach(function(m){
       var t = m[2](g);
-      if(!t) return;
+      if(!t || sit.indexOf(m[1])>=0) return;  // sitting out: not shown with a side
       var r = modelRec(sport, m[0]);
-      (bySide[t] = bySide[t] || []).push('<b>'+esc(m[1])+'</b> '+(r ? r.pct+' <span class="muted">('+r.w+'-'+r.l+')</span>' : '<span class="muted">no record yet</span>')+(sit.indexOf(m[1])>=0 ? ' <span class="muted">· sitting out</span>' : ''));
+      (bySide[t] = bySide[t] || []).push('<b>'+esc(m[1])+'</b> '+(r ? r.pct+' <span class="muted">('+r.w+'-'+r.l+')</span>' : '<span class="muted">no record yet</span>')+'');
     });
     var teams = Object.keys(bySide);
     if(!teams.length) return '';
     return '<div class="sidesline">'+teams.map(function(t){ return esc(t)+': '+bySide[t].join(', '); }).join('<br>')
       + '<div class="muted" style="font-size:11px;margin-top:2px">Each model\'s win % '+(sport==='soccer' ? 'on the moneyline' : 'against the spread')+' this season in this sport.</div></div>';
+  }
+  function satBadge(cls, label, g){
+    var lean = storyNet(g) > 0 ? g.home : g.away;
+    return '<div class="badge '+cls+'"><span class="lbl">'+esc(label)+'</span><span class="val none">Sat out</span><div class="muted" style="font-size:11px">storylines lean '+esc(lean)+'</div></div>';
   }
   function vetoLine(g){
     var v = vetoed(g);
@@ -1414,7 +1418,12 @@ footer b{color:var(--ink);}
     var reasons = (g.altReasons&&g.altReasons.length) ? '<details class="score" id="sc-'+esc(g.id)+'"></details>' : '';
     var stat = (g.statLines&&g.statLines.length) ? '<details class="why"><summary style="color:var(--ledger-ink)">Ledger inputs</summary><ul>'+g.statLines.map(function(r){return '<li>'+esc(r)+'</li>';}).join('')+'</ul></details>' : '';
     var football = sport==='nfl' || sport==='cfb';
-    var models = ledgerBadge(g) + altBadge(g) + (football ? trendBadge(g)+blowoutBadge(g) : '') + (sport==='nba' ? statsBadge(g)+totalsBadge(g) : '') + (sport==='nfl' ? nflStatsBadge(g) : '') + (sport==='ncaab' ? ncaabStatsBadge(g) : '');
+    // A model sitting out (storyline veto) shows no pick in its badge.
+    var sit = vetoed(g);
+    var B = function(label, cls, html){ return sit.indexOf(label)>=0 ? satBadge(cls, label, g) : html; };
+    var models = B('The Ledger','ledger',ledgerBadge(g)) + B('Second Opinion','opinion',altBadge(g))
+      + (football ? B('Trend check','trend',trendBadge(g))+B('Blowout check','blowout',blowoutBadge(g)) : '')
+      + (sport==='nba' ? B('NBA Stats','stats',statsBadge(g))+totalsBadge(g) : '') + (sport==='nfl' ? B('NFL Stats','nflstats',nflStatsBadge(g)) : '') + (sport==='ncaab' ? B('NCAAB Stats','ncaabstats',ncaabStatsBadge(g)) : '');
     var checks = '';
     if(football){
       if(g.altTrendCheck) checks += '<details class="why"><summary style="color:var(--trend-ink)">Trend check — why</summary><ul><li>'+esc(g.altTrendCheck)+'</li></ul></details>';
