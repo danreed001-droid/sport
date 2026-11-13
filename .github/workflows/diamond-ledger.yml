@@ -129,6 +129,10 @@ jobs:
         continue-on-error: true
         run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab soccer epl' }}
 
+      - name: Grade storylines on finished games (live records)
+        continue-on-error: true
+        run: python scripts/storyline_records.py
+
       - name: Archive finished NBA, NFL and NCAAB games' opening and closing lines
         id: lines
         continue-on-error: true

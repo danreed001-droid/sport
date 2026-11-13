@@ -124,7 +124,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "heartbreak",
+          "name": "Heartbreak hangover",
+          "team": "Dallas Cowboys",
+          "says": "fade",
+          "fact": "Dallas Cowboys led by 7 after three quarters against Arizona Cardinals last game and lost 30-33.",
+          "record": "196-173",
+          "pct": 53.1,
+          "leans": "Indianapolis Colts",
+          "leanPct": 53.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable -- both teams' prior games were losses (Jets by 5, Chiefs by 4).",
@@ -314,7 +333,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "New Orleans Saints",
+          "says": "fade",
+          "fact": "New Orleans Saints is coming off a bye (14 days since its last game) and is a -3 home favorite.",
+          "record": "64-54",
+          "pct": 54.2,
+          "leans": "Cleveland Browns",
+          "leanPct": 54.2,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable -- Giants won by 6 (OT, below the 17+ threshold) and Eagles lost by 17.",
@@ -456,7 +494,43 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "west_early",
+          "name": "Body clock: West Coast team at 1 PM ET",
+          "team": "Los Angeles Rams",
+          "says": "fade",
+          "fact": "Los Angeles Rams (Pacific time) plays at the Washington Commanders at 1:00 PM ET, 10:00 AM on its body clock.",
+          "record": "69-89",
+          "pct": 43.7,
+          "leans": "Los Angeles Rams",
+          "leanPct": 56.3,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Los Angeles Rams",
+          "says": "fade",
+          "fact": "Los Angeles Rams travels about 2,310 miles to play the Washington Commanders.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Los Angeles Rams",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable -- Broncos won by 4 (below the 17+ threshold) and Panthers lost.",
@@ -521,7 +595,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 2,
+          "live": "0-0",
+          "key": "escape",
+          "name": "Escape artists",
+          "team": "Denver Broncos",
+          "says": "fade",
+          "fact": "Denver Broncos trailed Kansas City Chiefs by 11 after three quarters last game and won 28-24.",
+          "record": "58-37",
+          "pct": 61.1,
+          "leans": "Carolina Panthers",
+          "leanPct": 61.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable -- both teams' prior games were losses (Texans by 6 in OT, Chargers by 15).",
@@ -585,7 +678,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "hidden_gem",
+          "name": "Better than its record",
+          "team": "Los Angeles Chargers",
+          "says": "back",
+          "fact": "Los Angeles Chargers is 0-7 but has scored 99 and allowed 175, which usually goes with about 1.4 wins in 7 games.",
+          "record": "60-48",
+          "pct": 55.6,
+          "leans": "Los Angeles Chargers",
+          "leanPct": 55.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable -- Packers won by 8 and Patriots won by 5, both below the 17+ threshold.",
@@ -708,7 +820,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "San Francisco 49ers",
+          "says": "fade",
+          "fact": "San Francisco 49ers is coming off a bye (14 days since its last game) and is a -9.5 home favorite.",
+          "record": "64-54",
+          "pct": 54.2,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 54.2,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable -- Cardinals won by 3 in OT (below the 17+ threshold) and Seahawks lost (their prior game was a loss, not a win, so the blowout-win check doesn't apply regardless of margin).",
@@ -866,7 +997,26 @@
       "nflStatsCorrect": false,
       "nflStatsReturn": -100.0,
       "nflStatsCover": true,
-      "nflStatsSpreadReturn": 100.0
+      "nflStatsSpreadReturn": 100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "hidden_gem",
+          "name": "Better than its record",
+          "team": "Tampa Bay Buccaneers",
+          "says": "back",
+          "fact": "Tampa Bay Buccaneers is 3-5 but has scored 178 and allowed 151, which usually goes with about 4.8 wins in 8 games.",
+          "record": "60-48",
+          "pct": 55.6,
+          "leans": "Tampa Bay Buccaneers",
+          "leanPct": 55.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-11-09T07:12:57.600723+00:00"

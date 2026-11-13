@@ -68,7 +68,26 @@
         "YPP 6.2 vs 6.0 (national rank unavailable this run)",
         "QB eff 92.5 vs 148.4 (Brown questionable, AC-joint/shoulder sprain, vs Williams Jr.)"
       ],
-      "time": "9:00 PM ET"
+      "time": "9:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unranked_fav",
+          "name": "Vegas knows",
+          "team": "Washington",
+          "says": "back",
+          "fact": "Unranked Washington is a -3 favorite over #20 Iowa.",
+          "record": "67-58",
+          "pct": 53.6,
+          "leans": "Washington",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a win by 17+ points (Iowa State beat West Virginia 45-42; BYU beat TCU 17-10), so the blowout-win regression check does not apply to either team.",
@@ -132,7 +151,43 @@
         "YPP 6.2 vs ~6.7 (BYU #2 nat'l in YPP; Iowa State's national rank unavailable this run)",
         "QB eff 131.6 vs 108.0 (Raynor vs Bachmeier)"
       ],
-      "time": "10:15 PM ET"
+      "time": "10:15 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Iowa State",
+          "says": "fade",
+          "fact": "Iowa State's first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Iowa State",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "altitude",
+          "name": "Thin air",
+          "team": "Iowa State",
+          "says": "fade",
+          "fact": "Iowa State plays at altitude in Provo, UT.",
+          "record": "46-39",
+          "pct": 54.1,
+          "leans": "BYU",
+          "leanPct": 54.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-10-10T17:29:47.509816+00:00"

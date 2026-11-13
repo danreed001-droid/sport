@@ -139,7 +139,43 @@
       "time": "12:00 PM ET",
       "gameTotal": 38.5,
       "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
+      "gameTotalUnderOdds": -105,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "UCLA",
+          "says": "fade",
+          "fact": "UCLA's first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "UCLA",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cold_nov",
+          "name": "Cold-weather trip",
+          "team": "UCLA",
+          "says": "fade",
+          "fact": "UCLA (CA) plays in Minneapolis, MN in November.",
+          "record": "53-41",
+          "pct": 56.4,
+          "leans": "Minnesota",
+          "leanPct": 56.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Both teams' most recent games were wins by 17+ points (Texas 31-3, margin 28; Missouri 34-10, margin 24). Texas's win: (1) halftime/takeaway data not found - NOT hit; (2) Texas favored by only ~2.5-3 points today, sources conflict, treated as not clearly >=3 - NOT hit; (3) Missouri's defensive ranks not top-10 (points-allowed 23rd) - NOT hit; (4) Texas had 32 rush attempts, just under 33+ - NOT hit; (5) Arch Manning has 7 INT in 8 games - HIT. 1 of 5, does not fire. Missouri's win: (1) not found - NOT hit; (2) Missouri is the underdog today - NOT hit; (3) Texas's defensive ranks not top-10 (19th-tied) - NOT hit; (4) Missouri had 35 rush attempts, above 33+ - HIT; (5) Austin Simmons has just 2 INT in 8 games - NOT hit. 1 of 5, does not fire. Neither fires.",
@@ -204,7 +240,26 @@
       "time": "12:00 PM ET",
       "gameTotal": 43.5,
       "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Texas",
+          "says": "fade",
+          "fact": "Texas' first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Texas",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "South Carolina's last game was a 17-point win over Oklahoma (42-25), right at the threshold. Sub-conditions: (1) padded win - takeaway margin and halftime score not found - NOT hit. (2) market bought in - South Carolina favored by well over 3 points today - HIT. (3) opponent (Texas A&M) defensive ranks not top-10 (points-allowed 27th-tied) - NOT hit. (4) run-heavy win - South Carolina had 44 rush attempts - HIT. (5) turnover-prone - LaNorris Sellers has thrown 7 INT this season, including 3 in this very game - HIT. 3 of 5 hit, so the check FIRES: +6 to Texas A&M. Oklahoma was not a clearly outmatched opponent, so this isn't an obvious false positive.",
@@ -733,7 +788,26 @@
       "time": "7:30 PM ET",
       "gameTotal": 54.5,
       "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cold_nov",
+          "name": "Cold-weather trip",
+          "team": "Miami",
+          "says": "fade",
+          "fact": "Miami (FL) plays in Notre Dame, IN in November.",
+          "record": "53-41",
+          "pct": 56.4,
+          "leans": "Notre Dame",
+          "leanPct": 56.4,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "push"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Iowa's last game was a 30-point win over Wisconsin (30-0). Sub-conditions: (1) padded win - Iowa forced 3 takeaways, committed 0 (margin +3) - HIT. (2) market bought in - Iowa is actually an underdog today (+2.5) - NOT hit. (3) opponent (Northwestern) defensive ranks not confirmed top-10/top-5 (points-allowed rank 29th) - NOT hit. (4) run-heavy win - 42 rush attempts, above 33+ - HIT. (5) turnover-prone - Hank Brown has 3 INT on 169 attempts, described as moderate/not alarming - NOT hit. 2 of 5, does not fire.",
@@ -797,7 +871,43 @@
       "time": "7:30 PM ET",
       "gameTotal": 42.5,
       "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fell_out",
+          "name": "Fell out of the poll",
+          "team": "Northwestern",
+          "says": "back",
+          "fact": "Northwestern was #20 in last week's AP poll and is unranked this week.",
+          "record": "145-122",
+          "pct": 54.3,
+          "leans": "Northwestern",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unranked_fav",
+          "name": "Vegas knows",
+          "team": "Northwestern",
+          "says": "back",
+          "fact": "Unranked Northwestern is a -2.5 favorite over #21 Iowa.",
+          "record": "67-58",
+          "pct": 53.6,
+          "leans": "Northwestern",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Both teams' most recent games were wins by 17+ points (Georgia 27-8, margin 19; Ole Miss 45-15, margin 30). Georgia's win: (1) not found - NOT hit; (2) Georgia favored by 3.5 today - HIT; (3) Ole Miss's defensive ranks not confirmed top-10/top-5 - NOT hit; (4) Georgia had 42 rush attempts - HIT; (5) Gunner Stockton has 4 INT in 181 attempts, a modest/not-alarming history - NOT hit. 2 of 5, does not fire. Ole Miss's win: (1) not found - NOT hit; (2) Ole Miss is the underdog today - NOT hit; (3) Georgia's defensive ranks not found - NOT hit; (4) Ole Miss rush attempts not found (no CBS box score) - NOT hit; (5) Trinidad Chambliss has thrown 8 INT this season, the most turnover-prone QB in this slate - HIT. 1 of 5, does not fire. Neither fires.",

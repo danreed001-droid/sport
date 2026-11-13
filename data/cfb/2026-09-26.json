@@ -68,7 +68,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Texas",
+          "says": "fade",
+          "fact": "Texas' first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Texas",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "2-1",
@@ -130,7 +149,43 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fifty_win",
+          "name": "Fifty-burger",
+          "team": "Ohio State",
+          "says": "fade",
+          "fact": "Ohio State beat Kent State 59-3 in its last game.",
+          "record": "130-156",
+          "pct": 45.5,
+          "leans": "Ohio State",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Illinois",
+          "says": "fade",
+          "fact": "Illinois' first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Illinois",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "2-0",
@@ -191,7 +246,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fifty_win",
+          "name": "Fifty-burger",
+          "team": "Sam Houston",
+          "says": "fade",
+          "fact": "Sam Houston beat Nicholls 59-0 in its last game.",
+          "record": "130-156",
+          "pct": 45.5,
+          "leans": "Sam Houston",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-1",
@@ -378,7 +452,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": false,
-      "altBlowoutSpreadReturn": -100.0
+      "altBlowoutSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fell_out",
+          "name": "Fell out of the poll",
+          "team": "Oklahoma",
+          "says": "back",
+          "fact": "Oklahoma was #24 in last week's AP poll and is unranked this week.",
+          "record": "145-122",
+          "pct": 54.3,
+          "leans": "Oklahoma",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "6-0",
@@ -443,7 +536,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "Ole Miss",
+          "says": "fade",
+          "fact": "Ole Miss (#8 then) beat #7 LSU 32-24 in its last game.",
+          "record": "89-69",
+          "pct": 56.3,
+          "leans": "Florida",
+          "leanPct": 56.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "3-1",
@@ -506,7 +618,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Utah",
+          "says": "fade",
+          "fact": "Utah's first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Utah",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "4-1",
@@ -570,7 +701,43 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Iowa",
+          "says": "fade",
+          "fact": "Iowa's first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Iowa",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fifty_win",
+          "name": "Fifty-burger",
+          "team": "Iowa",
+          "says": "fade",
+          "fact": "Iowa beat Northern Iowa 55-0 in its last game.",
+          "record": "130-156",
+          "pct": 45.5,
+          "leans": "Iowa",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "2-4",
@@ -821,7 +988,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "South Carolina",
+          "says": "fade",
+          "fact": "South Carolina's first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "South Carolina",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "2-2",
@@ -884,7 +1070,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Texas A&M",
+          "says": "fade",
+          "fact": "Texas A&M's first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Texas A&M",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "4-3",
@@ -950,7 +1155,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fifty_win",
+          "name": "Fifty-burger",
+          "team": "Oregon",
+          "says": "fade",
+          "fact": "Oregon beat Portland State 84-0 in its last game.",
+          "record": "130-156",
+          "pct": 45.5,
+          "leans": "Oregon",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "3-1",
@@ -1073,7 +1297,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "angry_big_fav",
+          "name": "Angry giant",
+          "team": "SMU",
+          "says": "back",
+          "fact": "SMU lost to Louisville 31-41 and is a -34.5 favorite.",
+          "record": "35-43",
+          "pct": 44.9,
+          "leans": "Missouri State",
+          "leanPct": 55.1,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-09-27T11:29:19.490876+00:00"

@@ -352,6 +352,19 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   46 tested, 1 at p<0.05 vs 2.2 by chance, 4 shown: Rust, Split the
   doubleheader, Ace vs ace dog, Extra-innings hangover). Live it reads ESPN's
   probable starters, so a late pitching change can change what fires.
+  Live records: `scripts/storyline_records.py` (after scoring, each run)
+  marks each storyline on a finished game `result` hit/miss/push for the
+  story's bet (ATS at the slate's line, NBA at statsSpread; soccer/MLB the
+  moneyline) and totals them in `data/storylines_record.json`; each script
+  adds those to its backtest record (`lib/storyline_live.py`), so records,
+  % and the side history leans keep updating (`live` shows the part since
+  going live). This season's finished games were backfilled on 2026-11-13
+  (`--include-final --backfill`, NBA `--backfill`). Tally weights (the
+  user's choice, `weight`): 2 for `STRONG` (the comeback-win fade -- NBA/NFL
+  escape artists, CFB held on -- NBA jet lag, MLB rust), 0.5 for `WEAK` (NBA
+  body clock; NFL short week after OT, night owls, 1 PM body clock), else 1.
+  The NBA/NFL/NCAAB Stats and NBA Totals rules tables add an "All in" column:
+  backtest W-L (`backtest_wl` in build_site.py) plus this season.
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.

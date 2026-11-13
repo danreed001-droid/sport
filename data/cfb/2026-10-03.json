@@ -134,7 +134,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Boston College",
+          "says": "fade",
+          "fact": "Boston College's first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Boston College",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "4-2",
@@ -394,7 +413,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "altitude",
+          "name": "Thin air",
+          "team": "Texas Tech",
+          "says": "fade",
+          "fact": "Texas Tech plays at altitude in Boulder, CO.",
+          "record": "46-39",
+          "pct": 54.1,
+          "leans": "Colorado",
+          "leanPct": 54.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "2-1",
@@ -517,7 +555,43 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Washington",
+          "says": "fade",
+          "fact": "Washington's first road game after 4 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Washington",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "ats_cold",
+          "name": "Can't buy a cover",
+          "team": "Washington",
+          "says": "back",
+          "fact": "Washington has failed to cover its last four (Minnesota -12.5, Eastern Washington -42.5, Utah State -28.5, Washington State -23.5).",
+          "record": "309-271",
+          "pct": 53.3,
+          "leans": "Washington",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-1",
@@ -578,7 +652,60 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fifty_win",
+          "name": "Fifty-burger",
+          "team": "Rutgers",
+          "says": "fade",
+          "fact": "Rutgers beat Howard 58-7 in its last game.",
+          "record": "130-156",
+          "pct": 45.5,
+          "leans": "Rutgers",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Indiana",
+          "says": "fade",
+          "fact": "Indiana's first road game after 4 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Indiana",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "ats_cold",
+          "name": "Can't buy a cover",
+          "team": "Indiana",
+          "says": "back",
+          "fact": "Indiana has failed to cover its last four (Northwestern -20.5, Western Kentucky -44.5, Howard -57.5, North Texas -39.5).",
+          "record": "309-271",
+          "pct": 53.3,
+          "leans": "Indiana",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "4-0",
@@ -831,7 +958,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Auburn",
+          "says": "fade",
+          "fact": "Auburn's first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Auburn",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "5-1",
@@ -896,7 +1042,26 @@
       "altBlowoutCorrect": true,
       "altBlowoutReturn": 180.0,
       "altBlowoutCover": true,
-      "altBlowoutSpreadReturn": 90.91
+      "altBlowoutSpreadReturn": 90.91,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "Florida",
+          "says": "fade",
+          "fact": "Florida (#21 then) beat #4 Ole Miss 52-28 in its last game.",
+          "record": "89-69",
+          "pct": 56.3,
+          "leans": "Missouri",
+          "leanPct": 56.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "3-1",
@@ -959,7 +1124,26 @@
       "altBlowoutCorrect": false,
       "altBlowoutReturn": -100.0,
       "altBlowoutCover": false,
-      "altBlowoutSpreadReturn": -100.0
+      "altBlowoutSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unranked_fav",
+          "name": "Vegas knows",
+          "team": "South Carolina",
+          "says": "back",
+          "fact": "Unranked South Carolina is a -3 favorite over #24 Kentucky.",
+          "record": "67-58",
+          "pct": 53.6,
+          "leans": "South Carolina",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "3-2",

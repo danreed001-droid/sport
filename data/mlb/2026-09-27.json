@@ -674,7 +674,27 @@
       "pickSpreadReturn": null,
       "skipReason": "opsa-close",
       "skipped": true,
-      "time": "1:05 PM ET"
+      "time": "1:05 PM ET",
+      "storylines": [
+        {
+          "weight": 2,
+          "live": "0-0",
+          "key": "rust",
+          "name": "Rust",
+          "team": "New York Yankees",
+          "says": "fade",
+          "fact": "New York Yankees' starter Elmer Rodriguez last pitched in a big-league game on 2026-08-31, 27 days ago.",
+          "record": "559-443",
+          "pct": 55.8,
+          "implied": 52.4,
+          "roi": 3.3,
+          "leans": "Baltimore Orioles",
+          "leanPct": 55.8,
+          "against": false,
+          "unit": "to win",
+          "backfill": true
+        }
+      ]
     }
   ],
   "scoredAt": "2026-09-28T09:57:32.787343+00:00"

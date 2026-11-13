@@ -51,7 +51,28 @@
         "Draw rate 12.5% vs 50.0%",
         "Keeper: Penders ~67% vs Lammens ~63% (both low-sample)"
       ],
-      "time": "12:30 PM GMT"
+      "time": "12:30 PM GMT",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cup_120_midweek",
+          "name": "120 minutes in midweek",
+          "team": "Chelsea",
+          "says": "fade",
+          "fact": "Chelsea played 120 minutes against Liverpool in the League Cup 3 days ago (1-1, decided on penalties).",
+          "record": "166-140",
+          "pct": 54.2,
+          "implied": 60.6,
+          "roi": -13.7,
+          "leans": "Chelsea",
+          "leanPct": 45.8,
+          "against": true,
+          "unit": "to win",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "Home 2 - Draw 0 - Away 1",
@@ -286,7 +307,47 @@
         "xG/g (net, this season) +0.75 vs +0.60 - both top-5 in the league",
         "Draw rate 0% vs 12.5%"
       ],
-      "time": "3:00 PM GMT"
+      "time": "3:00 PM GMT",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cup_120_midweek",
+          "name": "120 minutes in midweek",
+          "team": "Manchester City",
+          "says": "fade",
+          "fact": "Manchester City played 120 minutes against Brighton & Hove Albion in the League Cup 3 days ago (2-2, decided on penalties).",
+          "record": "166-140",
+          "pct": 54.2,
+          "implied": 60.6,
+          "roi": -13.7,
+          "leans": "Manchester City",
+          "leanPct": 45.8,
+          "against": true,
+          "unit": "to win",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cup_120_midweek",
+          "name": "120 minutes in midweek",
+          "team": "Brighton & Hove Albion",
+          "says": "fade",
+          "fact": "Brighton & Hove Albion played 120 minutes against Manchester City in the League Cup 3 days ago (2-2, decided on penalties).",
+          "record": "166-140",
+          "pct": 54.2,
+          "implied": 60.6,
+          "roi": -13.7,
+          "leans": "Brighton & Hove Albion",
+          "leanPct": 45.8,
+          "against": true,
+          "unit": "to win",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "Home 4 - Draw 0 - Away 0",
@@ -427,7 +488,28 @@
         "xG/g (net, this season) -0.48 vs -0.36",
         "Draw rate 35.1% vs 45.8% (both blended, very draw-prone sides)"
       ],
-      "time": "3:15 PM GMT"
+      "time": "3:15 PM GMT",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cup_120_midweek",
+          "name": "120 minutes in midweek",
+          "team": "Rayo Vallecano",
+          "says": "fade",
+          "fact": "Rayo Vallecano played 120 minutes against Recreativo Huelva in the Copa del Rey 4 days ago (3-2, decided after extra time).",
+          "record": "166-140",
+          "pct": 54.2,
+          "implied": 60.6,
+          "roi": -13.7,
+          "leans": "Rayo Vallecano",
+          "leanPct": 45.8,
+          "against": true,
+          "unit": "to win",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "Home 3 - Draw 0 - Away 0",
@@ -800,7 +882,28 @@
         "xG/g (net, this season) +0.03 vs +0.67",
         "Hoffenheim's regular keeper Oliver Baumann (foot) has uncertain status for this date"
       ],
-      "time": "3:30 PM CET"
+      "time": "3:30 PM CET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cup_120_midweek",
+          "name": "120 minutes in midweek",
+          "team": "TSG Hoffenheim",
+          "says": "fade",
+          "fact": "TSG Hoffenheim played 120 minutes against Holstein Kiel in the DFB-Pokal 3 days ago (1-1, decided on penalties).",
+          "record": "166-140",
+          "pct": 54.2,
+          "implied": 60.6,
+          "roi": -13.7,
+          "leans": "TSG Hoffenheim",
+          "leanPct": 45.8,
+          "against": true,
+          "unit": "to win",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "Home 1 - Draw 0 - Away 2",

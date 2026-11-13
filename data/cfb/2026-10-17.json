@@ -275,7 +275,43 @@
         "Yds/play 7.12 (#12, Florida) vs 5.43 (rank est., Texas)",
         "QB eff 162.0 (Philo) vs 141.3 (Manning, 1 pick-six last game)"
       ],
-      "time": "12:00 PM ET"
+      "time": "12:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "ats_cold",
+          "name": "Can't buy a cover",
+          "team": "Texas",
+          "says": "back",
+          "fact": "Texas has failed to cover its last four (Oklahoma -7.5, Tennessee -5.5, UTSA -29.5, Ohio State -2.5).",
+          "record": "309-271",
+          "pct": 53.3,
+          "leans": "Texas",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fell_out",
+          "name": "Fell out of the poll",
+          "team": "Florida",
+          "says": "back",
+          "fact": "Florida was #16 in last week's AP poll and is unranked this week.",
+          "record": "145-122",
+          "pct": 54.3,
+          "leans": "Florida",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a win (Mississippi State lost by 33 to Alabama, LSU lost by 1 in OT to Kentucky) - check does not apply to either team.",
@@ -820,7 +856,43 @@
         "Yds/play 6.87 (#17) vs 7.10 (#11)",
         "QB eff 186.7 (Carr) vs 162.2 (Bachmeier); BYU missing RB LJ Martin"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "altitude",
+          "name": "Thin air",
+          "team": "Notre Dame",
+          "says": "fade",
+          "fact": "Notre Dame plays at altitude in Provo, UT.",
+          "record": "46-39",
+          "pct": 54.1,
+          "leans": "BYU",
+          "leanPct": 54.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fifty_win",
+          "name": "Fifty-burger",
+          "team": "Notre Dame",
+          "says": "fade",
+          "fact": "Notre Dame beat Stanford 58-7 in its last game.",
+          "record": "130-156",
+          "pct": 45.5,
+          "leans": "Notre Dame",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Wisconsin's last game was a 28-point win over Michigan State (31-3), a 17+ point blowout. Sub-conditions: (1) padded win - NOT met (takeaway margin 0, not within 8 at half, Wisconsin led 17-3); (2) favored by 3+ today - NOT met (Wisconsin is the underdog, +2.5); (3) UCLA ranks top-10 in takeaways forced - MET (UCLA ranks #2 nationally in turnover margin); (4) 33+ rush attempts - MET (42 carries); (5) turnover-prone history - MET (QB Joseph has 5 INT in 5 games, including a 3-INT game). 3 of 5 met - check FIRES. UCLA (today's opponent) gets +6; Michigan State is a Big Ten opponent, not an outmatched mismatch. UCLA's own last game (2-point win over Oregon) does not qualify (margin under 17).",
@@ -957,7 +1029,26 @@
         "Yds/play 6.32 (rank est.) vs 5.01 (rank est., 128th in total offense)",
         "QB eff 152.1 (Minchey) vs 144.9 (Mateer)"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unranked_fav",
+          "name": "Vegas knows",
+          "team": "Oklahoma",
+          "says": "back",
+          "fact": "Unranked Oklahoma is a -6.5 favorite over #15 Kentucky.",
+          "record": "67-58",
+          "pct": 53.6,
+          "leans": "Oklahoma",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Utah's last game was a 17-point win over Kansas (41-24) that was actually just a 4-point game at halftime (21-17) before Utah pulled away - the padded-win sub-condition is MET via the halftime clause. Also MET: favored by 3+ today (Utah -14.5) and 33+ rush attempts (47 carries). NOT met: Colorado ranks 133rd in turnover margin, 86th points allowed, 83rd pass defense (a notably bad defense, not a ball-hawking unit), and QB Dampier is turnover-clean (2 INT/131 att) despite the team being -1 in turnovers that game. 3 of 5 met - check FIRES. Colorado (today's opponent) gets +6; Kansas is a Big 12 opponent, not an outmatched mismatch.",
@@ -1026,7 +1117,26 @@
         "QB eff 171.6 (Dampier) vs 109.3 (Wilson)",
         "Blowout-regression check fires for Utah, +6 to Colorado - net tally favors Colorado"
       ],
-      "time": "10:15 PM ET"
+      "time": "10:15 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "ats_cold",
+          "name": "Can't buy a cover",
+          "team": "Colorado",
+          "says": "back",
+          "fact": "Colorado has failed to cover its last four (Texas Tech +13.5, Baylor +8.5, Northwestern +3.5, Weber State -38.5).",
+          "record": "309-271",
+          "pct": 53.3,
+          "leans": "Colorado",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Wake Forest's last game was a 24-point win over NC State (38-14) that was only a 4-point game at halftime (14-10) before a second-half surge - the padded-win sub-condition is MET via the halftime clause. Also MET: favored by 3+ today (Wake -10) and 33+ rush attempts (36 carries). NOT met: California ranks 44th/87th/47th in takeaways/points-allowed/pass-defense (not top-10/top-5), and QB Lopez is turnover-clean (1 INT/184 att). 3 of 5 met - check FIRES. California (today's opponent) gets +6; NC State is an ACC opponent, not an outmatched mismatch. California's own last game was a loss, so the check does not apply to Cal.",

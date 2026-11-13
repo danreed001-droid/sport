@@ -443,7 +443,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Arizona Cardinals",
+          "says": "fade",
+          "fact": "Arizona Cardinals travels about 2,140 miles to play the New York Giants.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Arizona Cardinals",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "N/A \u2014 both teams lost their most recent game.",
@@ -506,7 +525,60 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "west_early",
+          "name": "Body clock: West Coast team at 1 PM ET",
+          "team": "Los Angeles Rams",
+          "says": "fade",
+          "fact": "Los Angeles Rams (Pacific time) plays at the Philadelphia Eagles at 1:00 PM ET, 10:00 AM on its body clock.",
+          "record": "69-89",
+          "pct": 43.7,
+          "leans": "Los Angeles Rams",
+          "leanPct": 56.3,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Los Angeles Rams",
+          "says": "fade",
+          "fact": "Los Angeles Rams travels about 2,400 miles to play the Philadelphia Eagles.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Los Angeles Rams",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "blown_14",
+          "name": "Blew a 14-point lead",
+          "team": "Los Angeles Rams",
+          "says": "fade",
+          "fact": "Los Angeles Rams led Denver Broncos by 16 last game and lost 26-30.",
+          "record": "39-50",
+          "pct": 43.8,
+          "leans": "Los Angeles Rams",
+          "leanPct": 56.2,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "N/A \u2014 both teams lost their most recent game.",
@@ -807,7 +879,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "sandwich",
+          "name": "Trap game",
+          "team": "San Francisco 49ers",
+          "says": "fade",
+          "fact": "San Francisco 49ers is a -3 favorite against the Denver Broncos, a non-division game between division games with Arizona Cardinals and Seattle Seahawks.",
+          "record": "114-100",
+          "pct": 53.3,
+          "leans": "Denver Broncos",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "N/A \u2014 neither team's most recent game was a win by 17+ (Lions won by 7, Panthers lost).",

@@ -42,27 +42,31 @@
       "gameTotalUnderOdds": -107,
       "storylines": [
         {
+          "weight": 1,
+          "live": "2-4",
           "key": "friday",
           "name": "Friday night lights",
           "team": "New York Knicks",
           "says": "fade",
           "fact": "New York Knicks is a -6.5 road favorite on a Friday.",
-          "record": "193-232",
-          "pct": 45.4,
+          "record": "195-236",
+          "pct": 45.2,
           "leans": "New York Knicks",
-          "leanPct": 54.6,
+          "leanPct": 54.8,
           "against": true
         },
         {
+          "weight": 1,
+          "live": "3-0",
           "key": "emperor",
           "name": "The emperor's new clothes",
           "team": "New York Knicks",
           "says": "fade",
           "fact": "New York Knicks is a -6.5 favorite but has covered 4 of 11 this season.",
-          "record": "176-152",
-          "pct": 53.7,
+          "record": "179-152",
+          "pct": 54.1,
           "leans": "Indiana Pacers",
-          "leanPct": 53.7,
+          "leanPct": 54.1,
           "against": false
         }
       ]
@@ -93,6 +97,8 @@
       "gameTotalUnderOdds": -112,
       "storylines": [
         {
+          "weight": 2,
+          "live": "0-0",
           "key": "jet_lag",
           "name": "Jet lag homecoming",
           "team": "Orlando Magic",
@@ -105,27 +111,31 @@
           "against": false
         },
         {
+          "weight": 1,
+          "live": "5-5",
           "key": "schedule_loss",
           "name": "The schedule loss",
           "team": "Milwaukee Bucks",
           "says": "fade",
           "fact": "Milwaukee Bucks' 4th game in 6 nights, on the road; Orlando Magic has had 1 day off.",
-          "record": "862-760",
+          "record": "867-765",
           "pct": 53.1,
           "leans": "Orlando Magic",
           "leanPct": 53.1,
           "against": false
         },
         {
+          "weight": 1,
+          "live": "0-1",
           "key": "prodigal",
           "name": "The prodigal star",
           "team": "Milwaukee Bucks",
           "says": "back",
           "fact": "Milwaukee Bucks' top scorer Tyler Herro (21.9 a game) returned last game after missing the one before; Milwaukee Bucks is a +9.5 underdog.",
-          "record": "171-207",
-          "pct": 45.2,
+          "record": "171-208",
+          "pct": 45.1,
           "leans": "Orlando Magic",
-          "leanPct": 54.8,
+          "leanPct": 54.9,
           "against": true
         }
       ]
@@ -165,6 +175,8 @@
       "gameTotalUnderOdds": -105,
       "storylines": [
         {
+          "weight": 2,
+          "live": "0-0",
           "key": "jet_lag",
           "name": "Jet lag homecoming",
           "team": "Miami Heat",
@@ -214,39 +226,45 @@
       "gameTotalUnderOdds": -108,
       "storylines": [
         {
+          "weight": 1,
+          "live": "2-1",
           "key": "ghost_town",
           "name": "Ghost town",
           "team": "Chicago Bulls",
           "says": "fade",
           "fact": "Chicago Bulls' top scorer Norman Powell (19.2 a game) missed its last two games; Chicago Bulls is a +7.5 underdog.",
-          "record": "820-740",
+          "record": "822-741",
           "pct": 52.6,
           "leans": "Atlanta Hawks",
           "leanPct": 52.6,
           "against": false
         },
         {
+          "weight": 1,
+          "live": "2-4",
           "key": "friday",
           "name": "Friday night lights",
           "team": "Atlanta Hawks",
           "says": "fade",
           "fact": "Atlanta Hawks is a -7.5 road favorite on a Friday.",
-          "record": "193-232",
-          "pct": 45.4,
+          "record": "195-236",
+          "pct": 45.2,
           "leans": "Atlanta Hawks",
-          "leanPct": 54.6,
+          "leanPct": 54.8,
           "against": true
         },
         {
+          "weight": 1,
+          "live": "3-0",
           "key": "emperor",
           "name": "The emperor's new clothes",
           "team": "Atlanta Hawks",
           "says": "fade",
           "fact": "Atlanta Hawks is a -7.5 favorite but has covered 4 of 12 this season.",
-          "record": "176-152",
-          "pct": 53.7,
+          "record": "179-152",
+          "pct": 54.1,
           "leans": "Chicago Bulls",
-          "leanPct": 53.7,
+          "leanPct": 54.1,
           "against": false
         }
       ]
@@ -277,27 +295,31 @@
       "gameTotalUnderOdds": -108,
       "storylines": [
         {
+          "weight": 1,
+          "live": "0-1",
           "key": "prodigal",
           "name": "The prodigal star",
           "team": "New Orleans Pelicans",
           "says": "back",
           "fact": "New Orleans Pelicans' top scorer Zion Williamson (21.7 a game) returned last game after missing the one before; New Orleans Pelicans is a +3.5 underdog.",
-          "record": "171-207",
-          "pct": 45.2,
+          "record": "171-208",
+          "pct": 45.1,
           "leans": "Memphis Grizzlies",
-          "leanPct": 54.8,
+          "leanPct": 54.9,
           "against": true
         },
         {
+          "weight": 1,
+          "live": "2-4",
           "key": "friday",
           "name": "Friday night lights",
           "team": "Memphis Grizzlies",
           "says": "fade",
           "fact": "Memphis Grizzlies is a -3.5 road favorite on a Friday.",
-          "record": "193-232",
-          "pct": 45.4,
+          "record": "195-236",
+          "pct": 45.2,
           "leans": "Memphis Grizzlies",
-          "leanPct": 54.6,
+          "leanPct": 54.8,
           "against": true
         }
       ]
@@ -344,27 +366,31 @@
       "gameTotalUnderOdds": -110,
       "storylines": [
         {
+          "weight": 1,
+          "live": "5-5",
           "key": "schedule_loss",
           "name": "The schedule loss",
           "team": "Utah Jazz",
           "says": "fade",
           "fact": "Utah Jazz's 4th game in 6 nights, on the road; Houston Rockets has had 1 day off.",
-          "record": "862-760",
+          "record": "867-765",
           "pct": 53.1,
           "leans": "Houston Rockets",
           "leanPct": 53.1,
           "against": false
         },
         {
+          "weight": 1,
+          "live": "0-1",
           "key": "prodigal",
           "name": "The prodigal star",
           "team": "Utah Jazz",
           "says": "back",
           "fact": "Utah Jazz's top scorer Keyonte George (20.4 a game) returned last game after missing the one before; Utah Jazz is a +17.5 underdog.",
-          "record": "171-207",
-          "pct": 45.2,
+          "record": "171-208",
+          "pct": 45.1,
           "leans": "Houston Rockets",
-          "leanPct": 54.8,
+          "leanPct": 54.9,
           "against": true
         }
       ]
@@ -395,15 +421,17 @@
       "gameTotalUnderOdds": -107,
       "storylines": [
         {
+          "weight": 1,
+          "live": "4-2",
           "key": "fat_happy",
           "name": "Fat and happy",
           "team": "San Antonio Spurs",
           "says": "fade",
           "fact": "San Antonio Spurs has won 10 straight and is a -12.5 favorite.",
-          "record": "152-133",
-          "pct": 53.3,
+          "record": "156-135",
+          "pct": 53.6,
           "leans": "Golden State Warriors",
-          "leanPct": 53.3,
+          "leanPct": 53.6,
           "against": false
         }
       ]
@@ -434,15 +462,17 @@
       "gameTotalUnderOdds": -107,
       "storylines": [
         {
+          "weight": 1,
+          "live": "2-4",
           "key": "friday",
           "name": "Friday night lights",
           "team": "Portland Trail Blazers",
           "says": "fade",
           "fact": "Portland Trail Blazers is a -10.5 road favorite on a Friday.",
-          "record": "193-232",
-          "pct": 45.4,
+          "record": "195-236",
+          "pct": 45.2,
           "leans": "Portland Trail Blazers",
-          "leanPct": 54.6,
+          "leanPct": 54.8,
           "against": true
         }
       ]
@@ -472,27 +502,31 @@
       "gameTotalOverOdds": -112,
       "storylines": [
         {
+          "weight": 1,
+          "live": "2-4",
           "key": "friday",
           "name": "Friday night lights",
           "team": "Oklahoma City Thunder",
           "says": "fade",
           "fact": "Oklahoma City Thunder is a -6.5 road favorite on a Friday.",
-          "record": "193-232",
-          "pct": 45.4,
+          "record": "195-236",
+          "pct": 45.2,
           "leans": "Oklahoma City Thunder",
-          "leanPct": 54.6,
+          "leanPct": 54.8,
           "against": true
         },
         {
+          "weight": 1,
+          "live": "3-1",
           "key": "champions",
           "name": "Champions don't lose three",
           "team": "Oklahoma City Thunder",
           "says": "back",
           "fact": "Oklahoma City Thunder (8-4) lost its last two.",
-          "record": "63-50",
-          "pct": 55.8,
+          "record": "66-51",
+          "pct": 56.4,
           "leans": "Oklahoma City Thunder",
-          "leanPct": 55.8,
+          "leanPct": 56.4,
           "against": false
         }
       ]

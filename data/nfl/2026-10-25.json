@@ -133,7 +133,26 @@
       "nflStatsCorrect": true,
       "nflStatsReturn": 76.34,
       "nflStatsCover": true,
-      "nflStatsSpreadReturn": 90.91
+      "nflStatsSpreadReturn": 90.91,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "smoke_mirrors",
+          "name": "Smoke and mirrors",
+          "team": "Cleveland Browns",
+          "says": "fade",
+          "fact": "Cleveland Browns is 4-2 but has been outscored 106-122, and is a -2 favorite.",
+          "record": "69-80",
+          "pct": 46.3,
+          "leans": "Cleveland Browns",
+          "leanPct": 53.7,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a 17+ point win \u2014 check does not apply.",
@@ -207,7 +226,26 @@
       "nflStatsCorrect": false,
       "nflStatsReturn": -100.0,
       "nflStatsCover": false,
-      "nflStatsSpreadReturn": -100.0
+      "nflStatsSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "heartbreak",
+          "name": "Heartbreak hangover",
+          "team": "Baltimore Ravens",
+          "says": "fade",
+          "fact": "Baltimore Ravens led by 7 after three quarters against Cleveland Browns last game and lost 10-13.",
+          "record": "196-173",
+          "pct": 53.1,
+          "leans": "Cincinnati Bengals",
+          "leanPct": 53.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a 17+ point win \u2014 check does not apply.",
@@ -267,7 +305,43 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "Minnesota Vikings",
+          "says": "fade",
+          "fact": "Minnesota Vikings is coming off a bye (14 days since its last game) and is a -6.5 home favorite.",
+          "record": "64-54",
+          "pct": 54.2,
+          "leans": "Indianapolis Colts",
+          "leanPct": 54.2,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unbeaten",
+          "name": "Target on their back",
+          "team": "Minnesota Vikings",
+          "says": "fade",
+          "fact": "Minnesota Vikings is 5-0.",
+          "record": "57-48",
+          "pct": 54.3,
+          "leans": "Indianapolis Colts",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a 17+ point win \u2014 check does not apply.",
@@ -461,7 +535,60 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "west_early",
+          "name": "Body clock: West Coast team at 1 PM ET",
+          "team": "San Francisco 49ers",
+          "says": "fade",
+          "fact": "San Francisco 49ers (Pacific time) plays at the Atlanta Falcons at 1:00 PM ET, 10:00 AM on its body clock.",
+          "record": "69-89",
+          "pct": 43.7,
+          "leans": "San Francisco 49ers",
+          "leanPct": 56.3,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "San Francisco 49ers",
+          "says": "fade",
+          "fact": "San Francisco 49ers travels about 2,110 miles to play the Atlanta Falcons.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "San Francisco 49ers",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unbeaten",
+          "name": "Target on their back",
+          "team": "San Francisco 49ers",
+          "says": "fade",
+          "fact": "San Francisco 49ers is 6-0.",
+          "record": "57-48",
+          "pct": 54.3,
+          "leans": "Atlanta Falcons",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a 17+ point win \u2014 check does not apply.",
@@ -519,7 +646,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "hidden_gem",
+          "name": "Better than its record",
+          "team": "Tampa Bay Buccaneers",
+          "says": "back",
+          "fact": "Tampa Bay Buccaneers is 1-5 but has scored 119 and allowed 138, which usually goes with about 2.5 wins in 6 games.",
+          "record": "60-48",
+          "pct": 55.6,
+          "leans": "Tampa Bay Buccaneers",
+          "leanPct": 55.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Arizona's prior game was an 18-16 win (not a 17+ point margin) \u2014 blowout-win check does not apply to Arizona. Denver's prior game (Thursday-night OT win at Seattle) was also not a 17+ point win \u2014 check does not apply to Denver.",
@@ -592,7 +738,26 @@
       "nflStatsCorrect": true,
       "nflStatsReturn": 44.44,
       "nflStatsCover": true,
-      "nflStatsSpreadReturn": 92.59
+      "nflStatsSpreadReturn": 92.59,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "smoke_mirrors",
+          "name": "Smoke and mirrors",
+          "team": "Denver Broncos",
+          "says": "fade",
+          "fact": "Denver Broncos is 4-2 but has been outscored 114-125, and is a -4.5 favorite.",
+          "record": "69-80",
+          "pct": 46.3,
+          "leans": "Denver Broncos",
+          "leanPct": 53.7,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Detroit's most recent game was a 45-21 win over Arizona (Week 5, before a bye) \u2014 evaluated: padded win NO (24-7 at halftime, not close, only +1 takeaway margin), market bought in YES (Lions -3.5 today), run-heavy NO (32 rush attempts, just under the 33 threshold), turnover-prone NO (Goff has 0 INT this season) \u2014 only 1-2 of 5 sub-conditions hold; check does not fire.",
@@ -666,7 +831,26 @@
       "nflStatsCorrect": false,
       "nflStatsReturn": -100.0,
       "nflStatsCover": true,
-      "nflStatsSpreadReturn": 102.0
+      "nflStatsSpreadReturn": 102.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "Detroit Lions",
+          "says": "fade",
+          "fact": "Detroit Lions is coming off a bye (14 days since its last game) and is a -3.5 home favorite.",
+          "record": "64-54",
+          "pct": 54.2,
+          "leans": "Green Bay Packers",
+          "leanPct": 54.2,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a 17+ point win \u2014 check does not apply.",
@@ -787,7 +971,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unbeaten",
+          "name": "Target on their back",
+          "team": "Kansas City Chiefs",
+          "says": "fade",
+          "fact": "Kansas City Chiefs is 5-0.",
+          "record": "57-48",
+          "pct": 54.3,
+          "leans": "Seattle Seahawks",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-10-26T07:21:11.393120+00:00"

@@ -68,7 +68,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "heartbreak",
+          "name": "Heartbreak hangover",
+          "team": "Seattle Seahawks",
+          "says": "fade",
+          "fact": "Seattle Seahawks led by 5 after three quarters against San Francisco 49ers last game and lost 29-32.",
+          "record": "196-173",
+          "pct": 53.1,
+          "leans": "Denver Broncos",
+          "leanPct": 53.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-10-16T06:40:49.719627+00:00"

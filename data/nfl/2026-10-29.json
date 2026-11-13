@@ -82,7 +82,26 @@
       "nflStatsCorrect": false,
       "nflStatsReturn": -100.0,
       "nflStatsCover": false,
-      "nflStatsSpreadReturn": -100.0
+      "nflStatsSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "smoke_mirrors",
+          "name": "Smoke and mirrors",
+          "team": "Green Bay Packers",
+          "says": "fade",
+          "fact": "Green Bay Packers is 4-3 but has been outscored 144-145, and is a -3.5 favorite.",
+          "record": "69-80",
+          "pct": 46.3,
+          "leans": "Green Bay Packers",
+          "leanPct": 53.7,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-10-30T06:28:04.018337+00:00"

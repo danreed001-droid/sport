@@ -53,7 +53,28 @@
       "pickSpreadReturn": null,
       "skipReason": "whip-close",
       "skipped": true,
-      "time": "12:35 PM ET"
+      "time": "12:35 PM ET",
+      "storylines": [
+        {
+          "weight": 2,
+          "live": "0-0",
+          "key": "rust",
+          "name": "Rust",
+          "team": "Washington Nationals",
+          "says": "fade",
+          "fact": "Washington Nationals' starter Connelly Early last pitched in a big-league game on 2026-06-30, 88 days ago.",
+          "record": "559-443",
+          "pct": 55.8,
+          "implied": 52.4,
+          "roi": 3.3,
+          "leans": "New York Mets",
+          "leanPct": 55.8,
+          "against": false,
+          "unit": "to win",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-0",
@@ -98,7 +119,28 @@
       "pickSpreadReturn": null,
       "skipReason": "ops-gap",
       "skipped": true,
-      "time": "1:10 PM ET"
+      "time": "1:10 PM ET",
+      "storylines": [
+        {
+          "weight": 2,
+          "live": "0-0",
+          "key": "rust",
+          "name": "Rust",
+          "team": "Detroit Tigers",
+          "says": "fade",
+          "fact": "Detroit Tigers' starter Justin Verlander last pitched in a big-league game on 2026-03-30, 180 days ago.",
+          "record": "559-443",
+          "pct": 55.8,
+          "implied": 52.4,
+          "roi": 3.3,
+          "leans": "Pittsburgh Pirates",
+          "leanPct": 55.8,
+          "against": false,
+          "unit": "to win",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-0",

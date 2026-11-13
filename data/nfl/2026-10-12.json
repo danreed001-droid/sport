@@ -68,7 +68,60 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "west_night",
+          "name": "West Coast night owls",
+          "team": "Los Angeles Rams",
+          "says": "back",
+          "fact": "Los Angeles Rams (Pacific time) hosts Buffalo Bills (Eastern time) in a night game.",
+          "record": "40-30",
+          "pct": 57.1,
+          "leans": "Los Angeles Rams",
+          "leanPct": 57.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 2,
+          "live": "0-0",
+          "key": "escape",
+          "name": "Escape artists",
+          "team": "Los Angeles Rams",
+          "says": "fade",
+          "fact": "Los Angeles Rams trailed Philadelphia Eagles by 10 after three quarters last game and won 24-20.",
+          "record": "58-37",
+          "pct": 61.1,
+          "leans": "Buffalo Bills",
+          "leanPct": 61.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Buffalo Bills",
+          "says": "fade",
+          "fact": "Buffalo Bills travels about 2,210 miles to play the Los Angeles Rams.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Buffalo Bills",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-10-13T08:52:23.895731+00:00"

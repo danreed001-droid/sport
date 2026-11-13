@@ -357,7 +357,43 @@
       "nflStatsCorrect": false,
       "nflStatsReturn": -100.0,
       "nflStatsCover": false,
-      "nflStatsSpreadReturn": -100.0
+      "nflStatsSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "west_early",
+          "name": "Body clock: West Coast team at 1 PM ET",
+          "team": "Los Angeles Chargers",
+          "says": "fade",
+          "fact": "Los Angeles Chargers (Pacific time) plays at the Buffalo Bills at 1:00 PM ET, 10:00 AM on its body clock.",
+          "record": "69-89",
+          "pct": 43.7,
+          "leans": "Los Angeles Chargers",
+          "leanPct": 56.3,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Los Angeles Chargers",
+          "says": "fade",
+          "fact": "Los Angeles Chargers travels about 2,210 miles to play the Buffalo Bills.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Los Angeles Chargers",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Patriots off 20-3 win over PIT (17-pt margin, qualifies) \u2014 but NE is not favored today (they're +3 underdogs, so 'market bought in' fails outright); takeaway margin even, halftime/rush-attempts unconfirmed, JAX defensive ranks unconfirmed, but Maye already has 4 INTs in 2 games (turnover-prone flag). Only 1 of 5 conditions met \u2014 regression flag OFF.",
@@ -476,7 +512,26 @@
         "Yds/play 4.83 vs 5.36",
         "QB rating 95.8 vs 113.2 (Smith vs Goff)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "heartbreak",
+          "name": "Heartbreak hangover",
+          "team": "New York Jets",
+          "says": "fade",
+          "fact": "New York Jets led by 7 after three quarters against Green Bay Packers last game and lost 17-20.",
+          "record": "196-173",
+          "pct": 53.1,
+          "leans": "Detroit Lions",
+          "leanPct": 53.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Seahawks off 31-7 win over ARI (24-pt margin, qualifies) \u2014 favored 7.5-8.5 today (met), but takeaway margin even/halftime unconfirmed, WAS is a bottom-tier defense (30.5 PA/g, doesn't 'take it away'), rush attempts unconfirmed, Darnold not clearly turnover-prone this season. Only 1 of 5 conditions met \u2014 regression flag OFF.",
@@ -553,7 +608,43 @@
         "Yds/play 5.79 vs 5.10",
         "QB rating 84.95 vs 86.1 (Darnold vs Mariota)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "west_early",
+          "name": "Body clock: West Coast team at 1 PM ET",
+          "team": "Seattle Seahawks",
+          "says": "fade",
+          "fact": "Seattle Seahawks (Pacific time) plays at the Washington Commanders at 1:00 PM ET, 10:00 AM on its body clock.",
+          "record": "69-89",
+          "pct": 43.7,
+          "leans": "Seattle Seahawks",
+          "leanPct": 56.3,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Seattle Seahawks",
+          "says": "fade",
+          "fact": "Seattle Seahawks travels about 2,330 miles to play the Washington Commanders.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Seattle Seahawks",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "N/A \u2014 both teams lost their most recent game.",

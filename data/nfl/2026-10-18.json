@@ -124,7 +124,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "heartbreak",
+          "name": "Heartbreak hangover",
+          "team": "Philadelphia Eagles",
+          "says": "fade",
+          "fact": "Philadelphia Eagles led by 4 after three quarters against Jacksonville Jaguars last game and lost 17-19.",
+          "record": "196-173",
+          "pct": 53.1,
+          "leans": "Carolina Panthers",
+          "leanPct": 53.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Ravens won by 7 in OT, Browns lost) \u2014 not applicable to either side.",
@@ -301,7 +320,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "ot_short",
+          "name": "Short week after an overtime war",
+          "team": "Los Angeles Rams",
+          "says": "fade",
+          "fact": "Los Angeles Rams went to overtime against Buffalo Bills on 2026-10-12 (34-37) and plays again 6 days later.",
+          "record": "36-24",
+          "pct": 60.0,
+          "leans": "Arizona Cardinals",
+          "leanPct": 60.0,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Bills won by 3 in OT, Raiders lost by 28) \u2014 not applicable to either side.",
@@ -360,7 +398,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "ot_short",
+          "name": "Short week after an overtime war",
+          "team": "Buffalo Bills",
+          "says": "fade",
+          "fact": "Buffalo Bills went to overtime against Los Angeles Rams on 2026-10-12 (37-34) and plays again 6 days later.",
+          "record": "36-24",
+          "pct": 60.0,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 60.0,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Chiefs won by 3, Chargers lost by 6) \u2014 not applicable to either side.",
@@ -420,7 +477,43 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "Kansas City Chiefs",
+          "says": "fade",
+          "fact": "Kansas City Chiefs is coming off a bye (14 days since its last game) and is a -7.5 home favorite.",
+          "record": "64-54",
+          "pct": 54.2,
+          "leans": "Los Angeles Chargers",
+          "leanPct": 54.2,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unbeaten",
+          "name": "Target on their back",
+          "team": "Kansas City Chiefs",
+          "says": "fade",
+          "fact": "Kansas City Chiefs is 4-0.",
+          "record": "57-48",
+          "pct": 54.3,
+          "leans": "Los Angeles Chargers",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Packers off a 31-7 win over Chicago (+5 takeaway margin \u2014 hit; only -1.5-point favorites tonight, not 3+ \u2014 miss; Cowboys' defense isn't a top unit \u2014 miss; only 26 rush attempts \u2014 miss; Love has a pick-six turnover history this season \u2014 hit) \u2014 2 of 5 hit, regression flag OFF. Cowboys' last game was a loss, not applicable.",
@@ -480,7 +573,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "smoke_mirrors",
+          "name": "Smoke and mirrors",
+          "team": "Green Bay Packers",
+          "says": "fade",
+          "fact": "Green Bay Packers is 3-2 but has been outscored 104-112, and is a -1.5 favorite.",
+          "record": "69-80",
+          "pct": 46.3,
+          "leans": "Green Bay Packers",
+          "leanPct": 53.7,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point win (Saints lost by 10, Giants tied) \u2014 not applicable to either side.",
@@ -539,7 +651,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "qb_former",
+          "name": "QB vs his old team",
+          "team": "New York Giants",
+          "says": "back",
+          "fact": "New York Giants QB Jameis Winston made 11 regular-season starts for New Orleans Saints.",
+          "record": "41-50",
+          "pct": 45.1,
+          "leans": "New Orleans Saints",
+          "leanPct": 54.9,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Patriots off a 45-17 blowout win over Las Vegas \u2014 favored by 7 tonight, market has bought in (hit); Jets rank top-5 in the league in points allowed (hit); Drake Maye already has a 3-INT game this season that decided a loss to Seattle, a turnover-trouble history (hit); only 31 rush attempts in the blowout win (miss); takeaway margin was even and New England led only 21-7 (more than one score) at half, so the win wasn't padded by turnovers or a sudden pull-away (miss) \u2014 3 of 5 hit, regression flag ON: +6 to the Jets.",

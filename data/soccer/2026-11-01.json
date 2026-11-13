@@ -95,7 +95,28 @@
         "xG/g not reliably found for either club this research cycle; Ledger attack-gap screen and draw-check skipped rather than estimated",
         "Season draw rate 37.5% (3/8) vs 0.0% (0/8, no draws yet this season)"
       ],
-      "time": "4:30 PM GMT"
+      "time": "4:30 PM GMT",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cup_120_midweek",
+          "name": "120 minutes in midweek",
+          "team": "Liverpool",
+          "says": "fade",
+          "fact": "Liverpool played 120 minutes against Chelsea in the League Cup 4 days ago (1-1, decided on penalties).",
+          "record": "166-140",
+          "pct": 54.2,
+          "implied": 60.6,
+          "roi": -13.7,
+          "leans": "Liverpool",
+          "leanPct": 45.8,
+          "against": true,
+          "unit": "to win",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "Home 2 - Draw 0 - Away 0",

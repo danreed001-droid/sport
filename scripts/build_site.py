@@ -11,6 +11,7 @@ Usage: python scripts/build_site.py [--out _site]
 import glob
 import hashlib
 import json
+import re
 import os
 import shutil
 import sys
@@ -38,6 +39,19 @@ SLATE_FIELDS = [
     "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds", "storylines",
 ]
 
+
+
+def backtest_wl(text):
+    """(wins, losses) from a rule's backtest text ("66.0% ATS, 97-50 (...)" or
+    "60.0% ATS, n=100 (...)"), or (None, None) when it can't be read."""
+    m = re.search(r"(?:ATS|overs|unders),\s*(\d+)-(\d+)", text or "")
+    if m:
+        return int(m.group(1)), int(m.group(2))
+    m = re.search(r"^([\d.]+)% ATS, n=(\d+)", text or "")
+    if m:
+        w = round(float(m.group(1)) / 100 * int(m.group(2)))
+        return w, int(m.group(2)) - w
+    return None, None
 
 def load_mypicks():
     out = {}
@@ -224,7 +238,8 @@ def build():
                     rule_records[rule["rule"]][key] += 1
     stats_stacked = {**stacked_record(all_docs.get("nba", []), "nba", "statsFavors", "statsRules", nba_families, stats_view),
                      "backtest": STACKED_BACKTEST}
-    stats_rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], **rule_records[n]}
+    stats_rules = [{"rule": n, "name": RULE_NAMES[n], "backtest": RULE_BACKTEST[n], **rule_records[n],
+                    **dict(zip(("btW", "btL"), backtest_wl(RULE_BACKTEST[n])))}
                    for n in sorted(RULE_NAMES)]
     # NBA Stats picks (or rules on a pick) added after the fact by
     # `nba_stats_signals.py --backfill`, so the page can say so.
@@ -241,7 +256,8 @@ def build():
                     nfl_records[rule["rule"]][key] += 1
     nfl_stacked = {**stacked_record(all_docs.get("nfl", []), "nfl", "nflStatsFavors", "nflStatsRules"),
                    "backtest": nfl_stats_rules.STACKED_BACKTEST}
-    nfl_rules = [{"rule": n, "name": nfl_stats_rules.RULE_NAMES[n], "backtest": nfl_stats_rules.RULE_BACKTEST[n], **nfl_records[n]}
+    nfl_rules = [{"rule": n, "name": nfl_stats_rules.RULE_NAMES[n], "backtest": nfl_stats_rules.RULE_BACKTEST[n], **nfl_records[n],
+                  **dict(zip(("btW", "btL"), backtest_wl(nfl_stats_rules.RULE_BACKTEST[n])))}
                  for n in sorted(nfl_stats_rules.RULE_NAMES)]
     ncaab_records = {n: {"w": 0, "l": 0, "p": 0} for n in ncaab_stats_rules.RULE_NAMES}
     for date_str, doc in all_docs.get("ncaab", []):
@@ -252,7 +268,8 @@ def build():
             for rule in g.get("ncaabStatsRules") or []:
                 if key and rule.get("rule") in ncaab_records:
                     ncaab_records[rule["rule"]][key] += 1
-    ncaab_rules = [{"rule": n, "name": ncaab_stats_rules.RULE_NAMES[n], "backtest": ncaab_stats_rules.RULE_BACKTEST[n], **ncaab_records[n]}
+    ncaab_rules = [{"rule": n, "name": ncaab_stats_rules.RULE_NAMES[n], "backtest": ncaab_stats_rules.RULE_BACKTEST[n], **ncaab_records[n],
+                    **dict(zip(("btW", "btL"), backtest_wl(ncaab_stats_rules.RULE_BACKTEST[n])))}
                    for n in sorted(ncaab_stats_rules.RULE_NAMES)]
 
     nba_totals = nba_totals_record(all_docs.get("nba", []))
@@ -390,7 +407,8 @@ def nba_totals_record(docs):
                 allp["backfilled"] += 1
                 allp["backfilledThrough"] = max(allp["backfilledThrough"] or date_str, date_str)
     allp["profit"] = round(allp["profit"], 2)
-    return {"rules": [{"rule": n, "name": nba_totals_rules.RULE_NAMES[n], "backtest": nba_totals_rules.RULE_BACKTEST[n], **rules[n]}
+    return {"rules": [{"rule": n, "name": nba_totals_rules.RULE_NAMES[n], "backtest": nba_totals_rules.RULE_BACKTEST[n], **rules[n],
+                       **dict(zip(("btW", "btL"), backtest_wl(nba_totals_rules.RULE_BACKTEST[n])))}
                       for n in sorted(rules)],
             "all": {**allp, "both": both}, "plays": plays}
 

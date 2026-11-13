@@ -47,6 +47,7 @@ from datetime import date, datetime, timedelta
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+from lib import storyline_live  # noqa: E402
 from lib import espn, store  # noqa: E402
 from lib.dates import ET, today_et_str  # noqa: E402
 from score_slate import _same_team, find_match_loose  # noqa: E402
@@ -113,12 +114,18 @@ def regular(lg, e):
     return not any(k in slug for k in ("playoff", "promotion", "relegation"))
 
 
+STRONG = set()
+WEAK = set()
+
+
 def entry(key, team, fact):
     name, says, (w, n), implied, roi, _ = STORIES[key]
+    lw, ln = storyline_live.live("soccer", key)  # graded since it went live
+    w, n = w + lw, n + ln
     pct = 100 * w / (w + n)
     against = pct < implied
     favoured_back = (says == "back") != against
-    return {"key": key, "name": name, "team": team, "says": says, "fact": fact, "record": f"{w}-{n}",
+    return {"weight": 2 if key in STRONG else (0.5 if key in WEAK else 1), "live": f"{lw}-{ln}", "key": key, "name": name, "team": team, "says": says, "fact": fact, "record": f"{w}-{n}",
             "pct": round(pct, 1), "implied": implied, "roi": roi,
             "leans": team if pct != implied else None, "leanPct": round(100 - pct if against else pct, 1),
             "against": against, "unit": "to win" if favoured_back else "not to win"}
@@ -342,7 +349,7 @@ def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     dry = "--dry-run" in sys.argv
     # Testing only: also run on matches that already have a score (needs --dry-run).
-    redo = dry and "--include-final" in sys.argv
+    redo = (dry or "--backfill" in sys.argv) and "--include-final" in sys.argv
     dates = args or [today_et_str()]
     feed = Feed()
     for date_str in dates:

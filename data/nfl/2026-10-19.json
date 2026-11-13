@@ -64,7 +64,60 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "west_night",
+          "name": "West Coast night owls",
+          "team": "San Francisco 49ers",
+          "says": "back",
+          "fact": "San Francisco 49ers (Pacific time) hosts Washington Commanders (Eastern time) in a night game.",
+          "record": "40-30",
+          "pct": 57.1,
+          "leans": "San Francisco 49ers",
+          "leanPct": 57.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unbeaten",
+          "name": "Target on their back",
+          "team": "San Francisco 49ers",
+          "says": "fade",
+          "fact": "San Francisco 49ers is 5-0.",
+          "record": "57-48",
+          "pct": 54.3,
+          "leans": "Washington Commanders",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Washington Commanders",
+          "says": "fade",
+          "fact": "Washington Commanders travels about 2,430 miles to play the San Francisco 49ers.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Washington Commanders",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-10-20T07:03:16.392950+00:00"

@@ -138,7 +138,26 @@
         "Yds/play 4.12 vs 4.13 \u00b7 3-pt gap",
         "QB rating 89.1 vs 84.2 (Rodgers vs Maye)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "heartbreak",
+          "name": "Heartbreak hangover",
+          "team": "New England Patriots",
+          "says": "fade",
+          "fact": "New England Patriots led by 7 after three quarters against Seattle Seahawks last game and lost 10-13.",
+          "record": "196-173",
+          "pct": 53.1,
+          "leans": "Pittsburgh Steelers",
+          "leanPct": 53.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Backfilled: Bears' prior game was a 22-pt win over CAR \u2014 4 of 5 conditions hit (+2 takeaway margin, favored -4.5, 39 carries, turnover-prone across Wk1-2) \u2192 regression flag ON, +6 to Vikings.",
@@ -529,7 +548,26 @@
         "Yds/play 5.55 vs 5.22 \u00b7 19-pt gap",
         "QB rating 97.7 vs 94.7 (Watson vs Mayfield)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "qb_former",
+          "name": "QB vs his old team",
+          "team": "Tampa Bay Buccaneers",
+          "says": "back",
+          "fact": "Tampa Bay Buccaneers QB Baker Mayfield made 59 regular-season starts for Cleveland Browns.",
+          "record": "41-50",
+          "pct": 45.1,
+          "leans": "Cleveland Browns",
+          "leanPct": 54.9,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Backfilled: Jaguars' prior game was a 24-pt win over CLE, but only 1 of 5 conditions hit (padded win via +3 takeaway margin; not favored, only 32 carries, not turnover-prone) \u2014 no regression flag.",
@@ -784,7 +822,43 @@
         "Yds/play 5.18 vs 5.92 \u00b7 39-pt gap",
         "QB rating 106.2 vs 103.0 (Willis vs Purdy)"
       ],
-      "time": "4:25 PM ET"
+      "time": "4:25 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "sandwich",
+          "name": "Trap game",
+          "team": "San Francisco 49ers",
+          "says": "fade",
+          "fact": "San Francisco 49ers is a -13.5 favorite against the Miami Dolphins, a non-division game between division games with Los Angeles Rams and Arizona Cardinals.",
+          "record": "114-100",
+          "pct": 53.3,
+          "leans": "Miami Dolphins",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Miami Dolphins",
+          "says": "fade",
+          "fact": "Miami Dolphins travels about 2,550 miles to play the San Francisco 49ers.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Miami Dolphins",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Backfilled: neither team's prior game was a 13+ point win (both lost).",

@@ -63,7 +63,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "Missouri",
+          "says": "fade",
+          "fact": "Missouri (#25 then) beat #8 Florida 45-17 in its last game.",
+          "record": "89-69",
+          "pct": 56.3,
+          "leans": "Texas A&M",
+          "leanPct": 56.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Oklahoma State's last game was a blowout win over West Virginia, 41-24 (margin 17): tied/within one score at half (14-13) before pulling away - fires; favored by double digits today - fires; opponent UCF not top-5/10 defensively - fails; Oklahoma State ran 41 times - fires; QB Mestemaker 5 INT in 4 games - fires. 4 of 5, CHECK FIRES. West Virginia was a competitive power-conference opponent, not a mismatch, so the fire stands. Swing: +6 to UCF.",
@@ -318,7 +337,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "ats_cold",
+          "name": "Can't buy a cover",
+          "team": "South Carolina",
+          "says": "back",
+          "fact": "South Carolina has failed to cover its last four (Kentucky -2.5, Alabama +12.5, Mississippi State -3, Towson -44.5).",
+          "record": "309-271",
+          "pct": 53.3,
+          "leans": "South Carolina",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a win by 17+ (Stanford lost; Notre Dame won by 11). Does not apply.",
@@ -381,7 +419,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "top5_huge",
+          "name": "Top-5 laying 30",
+          "team": "Notre Dame",
+          "says": "fade",
+          "fact": "#3 Notre Dame is a -39.5 favorite.",
+          "record": "65-56",
+          "pct": 53.7,
+          "leans": "Stanford",
+          "leanPct": 53.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a win by 17+ (Houston won by 10; Kansas State lost). Does not apply.",
@@ -442,7 +499,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unranked_fav",
+          "name": "Vegas knows",
+          "team": "Kansas State",
+          "says": "back",
+          "fact": "Unranked Kansas State is a -2.5 favorite over #22 Houston.",
+          "record": "67-58",
+          "pct": 53.6,
+          "leans": "Kansas State",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "UCLA's 54-3 win over Maryland evaluated vs today's opponent Oregon: padded win not confirmed; UCLA is an underdog today so market fails; Oregon ranks 71st in points allowed, fails; UCLA had 39 rush attempts, fires; Iamaleava has just 2 INT on 99 attempts, fails. Only 1 of 5 - does not fire; Maryland was also a clearly outmatched opponent this season.",
@@ -504,7 +580,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fifty_win",
+          "name": "Fifty-burger",
+          "team": "UCLA",
+          "says": "fade",
+          "fact": "UCLA beat Maryland 54-3 in its last game.",
+          "record": "130-156",
+          "pct": 45.5,
+          "leans": "UCLA",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a win by 17+ (both lost). Does not apply.",
@@ -687,7 +782,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": true,
-      "altBlowoutSpreadReturn": 90.91
+      "altBlowoutSpreadReturn": 90.91,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "top5_huge",
+          "name": "Top-5 laying 30",
+          "team": "Ohio State",
+          "says": "fade",
+          "fact": "#5 Ohio State is a -32.5 favorite.",
+          "record": "65-56",
+          "pct": 53.7,
+          "leans": "Maryland",
+          "leanPct": 53.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's last game was a win by 17+ (Tennessee won by 10; Arkansas lost). Does not apply.",
@@ -747,7 +861,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "first_road",
+          "name": "Leaving the nest",
+          "team": "Tennessee",
+          "says": "fade",
+          "fact": "Tennessee's first road game after 3 straight at home.",
+          "record": "183-211",
+          "pct": 46.4,
+          "leans": "Tennessee",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "LSU's last game was a 63-14 win, but over FCS McNeese State - a clear mismatch, not a meaningful quality opponent. Mechanically, market-bought-in (favored by 9.5+ today) and run-heavy (53 att) fire, turnover-prone is arguable (7 INT this season); padded-win and opponent-takeaways not confirmed. Per the model's own mismatch guidance, judgment is applied and the check does not fire. No swing.",
@@ -809,7 +942,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fell_out",
+          "name": "Fell out of the poll",
+          "team": "Kentucky",
+          "says": "back",
+          "fact": "Kentucky was #24 in last week's AP poll and is unranked this week.",
+          "record": "145-122",
+          "pct": 54.3,
+          "leans": "Kentucky",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's last game was a win by 17+ (Penn State lost; USC won by only 4). Does not apply.",
@@ -872,7 +1024,43 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unranked_fav",
+          "name": "Vegas knows",
+          "team": "Penn State",
+          "says": "back",
+          "fact": "Unranked Penn State is a -1.5 favorite over #19 USC.",
+          "record": "67-58",
+          "pct": 53.6,
+          "leans": "Penn State",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "ats_cold",
+          "name": "Can't buy a cover",
+          "team": "USC",
+          "says": "back",
+          "fact": "USC has failed to cover its last four (Washington -7.5, Oregon +3.5, Rutgers -21, Louisiana -30.5).",
+          "record": "309-271",
+          "pct": 53.3,
+          "leans": "USC",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Georgia (opp=Alabama): halftime within one score (21-14) fires; Alabama not favored 3+ today, fails; Alabama's defense 15th in points allowed, not top-5/10, fails; Georgia's 32 rush attempts miss the 33+ threshold; no turnover-prone history for Stockton. Only 1/5 - does not fire. Alabama (opp=Georgia): halftime lead 11, not within one score, fails; Alabama not favored 3+, fails; Georgia's defense 15th, fails; Alabama's ~35 rush attempts fires; no established turnover history for Russell. Only 1/5 - does not fire.",
@@ -999,7 +1187,43 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "altitude",
+          "name": "Thin air",
+          "team": "Kansas",
+          "says": "fade",
+          "fact": "Kansas plays at altitude in Salt Lake City, UT.",
+          "record": "46-39",
+          "pct": 54.1,
+          "leans": "Utah",
+          "leanPct": 54.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fifty_win",
+          "name": "Fifty-burger",
+          "team": "Kansas",
+          "says": "fade",
+          "fact": "Kansas beat Middle Tennessee 55-0 in its last game.",
+          "record": "130-156",
+          "pct": 45.5,
+          "leans": "Kansas",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Boise State (opp=Fresno State): halftime lead 18, not within one score, fails; Boise favored by 6.5 today, fires; Fresno ranks only 30th in points allowed, fails; Boise had 41 rush attempts, fires; Madsen 0 INT, fails. 2/5 - does not fire. Fresno State (opp=Boise State): halftime tied 6-6 before pulling away, fires; Fresno is the underdog today, fails; Boise ranks only 54th in points allowed, fails; Fresno had 34 rush attempts, fires (barely); Mandal only 1 INT in 5 games, fails. 2/5 - does not fire.",

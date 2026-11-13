@@ -27,6 +27,7 @@ from datetime import date
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import nba_stats_signals as ns  # noqa: E402
+from lib import storyline_live  # noqa: E402
 from lib import espn, store  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 from lib.nba_arenas import time_zone  # noqa: E402
@@ -71,13 +72,28 @@ def pos(name):
     return name + ("'" if name.endswith("s") else "'s")
 
 
+# Storylines the user chose to count double in the card's "history leans"
+# tally (2026-11-13): the comeback-win fade (NFL/NBA escape artists, CFB held
+# on for dear life -- the same pattern in three sports), NBA jet lag (climbs
+# with time zones crossed) and MLB rust (climbs with the layoff).
+STRONG = {'escape', 'jet_lag'}
+
+
+# Storylines counted as half a point (2026-11-13): their record doesn't hold
+# up in both halves of the seasons, or the same idea went the other way in
+# another sport.
+WEAK = {'body_clock'}
+
+
 def entry(key, team, opp, fact):
     name, says, (w, l), _ = STORIES[key]
+    lw, ll = storyline_live.live("nba", key)  # graded since it went live
+    w, l = w + lw, l + ll
     pct = 100 * w / (w + l)
     lean, lean_pct = (team, pct) if (pct > 50) == (says == "back") else (opp, 100 - pct)
     if pct == 50:
         lean = None
-    return {"key": key, "name": name, "team": team, "says": says, "fact": fact, "record": f"{w}-{l}", "pct": round(pct, 1),
+    return {"weight": 2 if key in STRONG else (0.5 if key in WEAK else 1), "live": f"{lw}-{ll}", "key": key, "name": name, "team": team, "says": says, "fact": fact, "record": f"{w}-{l}", "pct": round(pct, 1),
             "leans": lean, "leanPct": round(max(pct, 100 - pct), 1), "against": pct < 50}
 
 
@@ -255,7 +271,10 @@ def storylines_for(session, points, by_team, q_cache, date_str, home, away, home
 
 
 def main():
-    dates = sys.argv[1:] or [today_et_str()]
+    # --backfill: also finished games (this season's games before storylines
+    # went live, from the games before each one); run storyline_records.py after.
+    backfill = "--backfill" in sys.argv
+    dates = [a for a in sys.argv[1:] if not a.startswith("--")] or [today_et_str()]
     session = espn.make_session()
     points = ns.BoxCache(session)
 
@@ -278,7 +297,7 @@ def main():
             regular_today = ns.regular_season_games(session, date_str)
             changed = 0
             for g in doc.get("games", []):
-                if not g.get("away") or not g.get("home") or isinstance(g.get("awayScore"), (int, float)):
+                if not g.get("away") or not g.get("home") or (isinstance(g.get("awayScore"), (int, float)) and not backfill):
                     continue  # started or final: keep what was there before tip-off
                 if not regular_today.get((g["away"], g["home"]), True):
                     new = []

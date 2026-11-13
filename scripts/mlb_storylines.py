@@ -81,6 +81,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+from lib import storyline_live  # noqa: E402
 from lib import espn, store  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 from score_slate import _same_team  # noqa: E402
@@ -120,14 +121,26 @@ def ip_text(outs):
     return f"{outs // 3}.{outs % 3}"
 
 
+# Storylines the user chose to count double in the card's "history leans"
+# tally (2026-11-13): the comeback-win fade (NFL/NBA escape artists, CFB held
+# on for dear life -- the same pattern in three sports), NBA jet lag (climbs
+# with time zones crossed) and MLB rust (climbs with the layoff).
+STRONG = {'rust'}
+
+
+WEAK = set()
+
+
 def entry(key, team, opp, fact):
     name, says, (w, l_), imp, roi, _ = STORIES[key]
+    lw, ll = storyline_live.live("mlb", key)  # graded since it went live
+    w, l_ = w + lw, l_ + ll
     pct = 100 * w / (w + l_)
     beat = pct > imp  # the story's bet beat the odds
     lean = (team if says == "back" else opp) if beat else (opp if says == "back" else team)
     if pct == imp:
         lean = None
-    return {"key": key, "name": name, "team": team, "says": says, "fact": fact, "record": f"{w}-{l_}",
+    return {"weight": 2 if key in STRONG else (0.5 if key in WEAK else 1), "live": f"{lw}-{ll}", "key": key, "name": name, "team": team, "says": says, "fact": fact, "record": f"{w}-{l_}",
             "pct": round(pct, 1), "implied": imp, "roi": roi, "leans": lean,
             "leanPct": round(pct if beat else 100 - pct, 1), "against": not beat, "unit": "to win"}
 
@@ -316,7 +329,7 @@ def main():
     args = sys.argv[1:]
     dry = "--dry-run" in args
     include_final = "--include-final" in args
-    if include_final and not dry:
+    if include_final and not dry and "--backfill" not in args:
         sys.exit("--include-final only works with --dry-run (finished games keep their pre-game storylines).")
     dates = [a for a in args if not a.startswith("--")] or [today_et_str()]
     feed = Feed(espn.make_session())

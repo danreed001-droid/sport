@@ -253,7 +253,25 @@
       "statsSpreadReturn": 89.29,
       "time": "8:00 PM ET",
       "totalsBackfill": 11,
-      "totalsLine": 222.5
+      "totalsLine": 222.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "sleeping_giant",
+          "name": "The sleeping giant",
+          "team": "Cleveland Cavaliers",
+          "says": "back",
+          "fact": "Cleveland Cavaliers (5-4) is 2-3 in its last five; New York Knicks is 4-1.",
+          "record": "154-135",
+          "pct": 53.3,
+          "leans": "Cleveland Cavaliers",
+          "leanPct": 53.3,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-5",
@@ -439,7 +457,25 @@
       "statsSpreadReturn": -100.0,
       "time": "8:30 PM ET",
       "totalsBackfill": 11,
-      "totalsLine": 220.5
+      "totalsLine": 220.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fat_happy",
+          "name": "Fat and happy",
+          "team": "Golden State Warriors",
+          "says": "fade",
+          "fact": "Golden State Warriors has won 6 straight and is a -7.5 favorite.",
+          "record": "152-133",
+          "pct": 53.3,
+          "leans": "Orlando Magic",
+          "leanPct": 53.3,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-2",

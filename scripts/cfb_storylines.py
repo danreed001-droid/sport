@@ -56,6 +56,7 @@ from zoneinfo import ZoneInfo
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+from lib import storyline_live  # noqa: E402
 from lib import espn, store  # noqa: E402
 from lib.dates import today_et_str  # noqa: E402
 
@@ -128,13 +129,25 @@ def pos(name):
     return name + ("'" if name.endswith("s") else "'s")
 
 
+# Storylines the user chose to count double in the card's "history leans"
+# tally (2026-11-13): the comeback-win fade (NFL/NBA escape artists, CFB held
+# on for dear life -- the same pattern in three sports), NBA jet lag (climbs
+# with time zones crossed) and MLB rust (climbs with the layoff).
+STRONG = {'held_on'}
+
+
+WEAK = set()
+
+
 def entry(key, team, opp, fact):
     name, says, (w, l), _ = STORIES[key]
+    lw, ll = storyline_live.live("cfb", key)  # graded since it went live
+    w, l = w + lw, l + ll
     pct = 100 * w / (w + l)
     lean, lean_pct = (team, pct) if (pct > 50) == (says == "back") else (opp, 100 - pct)
     if pct == 50:
         lean = None
-    return {"key": key, "name": name, "team": team, "says": says, "fact": fact, "record": f"{w}-{l}", "pct": round(pct, 1),
+    return {"weight": 2 if key in STRONG else (0.5 if key in WEAK else 1), "live": f"{lw}-{ll}", "key": key, "name": name, "team": team, "says": says, "fact": fact, "record": f"{w}-{l}", "pct": round(pct, 1),
             "leans": lean, "leanPct": round(max(pct, 100 - pct), 1), "against": pct < 50, "unit": "ATS"}
 
 
@@ -537,7 +550,7 @@ def main():
     args = sys.argv[1:]
     dry = "--dry-run" in args
     include_final = "--include-final" in args
-    if include_final and not dry:
+    if include_final and not dry and "--backfill" not in args:
         sys.exit("--include-final only works with --dry-run (finished games keep their pre-kickoff storylines).")
     dates = [a for a in args if not a.startswith("--")] or [today_et_str()]
     session = espn.make_session()

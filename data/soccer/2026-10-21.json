@@ -534,7 +534,28 @@
         "Both teams lost their most recent match on the same day (Oct 18)",
         "Match was rescheduled from an earlier postponed date due to weather"
       ],
-      "time": "7:00 PM ET"
+      "time": "7:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "mls_midweek_road",
+          "name": "Midweek road trip",
+          "team": "D.C. United",
+          "says": "fade",
+          "fact": "D.C. United is on the road on a Wednesday, 4 days after its last match (Orlando City SC).",
+          "record": "335-142",
+          "pct": 70.2,
+          "implied": 73.6,
+          "roi": -10.2,
+          "leans": "D.C. United",
+          "leanPct": 29.8,
+          "against": true,
+          "unit": "to win",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "Toluca 5 \u2013 Draw 0 \u2013 Tijuana 0",

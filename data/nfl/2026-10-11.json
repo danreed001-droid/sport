@@ -470,7 +470,77 @@
       "nflStatsCorrect": false,
       "nflStatsReturn": -100.0,
       "nflStatsCover": false,
-      "nflStatsSpreadReturn": -100.0
+      "nflStatsSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "sandwich",
+          "name": "Trap game",
+          "team": "New England Patriots",
+          "says": "fade",
+          "fact": "New England Patriots is a -3.5 favorite against the Las Vegas Raiders, a non-division game between division games with Buffalo Bills and New York Jets.",
+          "record": "114-100",
+          "pct": 53.3,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "west_early",
+          "name": "Body clock: West Coast team at 1 PM ET",
+          "team": "Las Vegas Raiders",
+          "says": "fade",
+          "fact": "Las Vegas Raiders (Pacific time) plays at the New England Patriots at 1:00 PM ET, 10:00 AM on its body clock.",
+          "record": "69-89",
+          "pct": 43.7,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 56.3,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Las Vegas Raiders",
+          "says": "fade",
+          "fact": "Las Vegas Raiders travels about 2,370 miles to play the New England Patriots.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "heartbreak",
+          "name": "Heartbreak hangover",
+          "team": "Las Vegas Raiders",
+          "says": "fade",
+          "fact": "Las Vegas Raiders led by 3 after three quarters against Kansas City Chiefs last game and lost 27-30.",
+          "record": "196-173",
+          "pct": 53.1,
+          "leans": "New England Patriots",
+          "leanPct": 53.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable \u2014 Vikings won by only 5 points; Saints lost their last game.",
@@ -530,7 +600,26 @@
         "Yds/play 4.53 vs 5.22 \u00b7 38.7-pt gap",
         "QB rating 73.3 vs 95.7 (Murray vs Shough)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unbeaten",
+          "name": "Target on their back",
+          "team": "Minnesota Vikings",
+          "says": "fade",
+          "fact": "Minnesota Vikings is 4-0.",
+          "record": "57-48",
+          "pct": 54.3,
+          "leans": "New Orleans Saints",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable \u2014 Giants won by only 12 points; Commanders lost their most recent game.",
@@ -768,7 +857,26 @@
         "Yds/play 6.65 vs 5.94 \u00b7 16.1-pt gap",
         "QB rating 126.2 vs 101.1 (Purdy vs Darnold)"
       ],
-      "time": "4:25 PM ET"
+      "time": "4:25 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unbeaten",
+          "name": "Target on their back",
+          "team": "San Francisco 49ers",
+          "says": "fade",
+          "fact": "San Francisco 49ers is 4-0.",
+          "record": "57-48",
+          "pct": 54.3,
+          "leans": "Seattle Seahawks",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Falcons off a 45-24 win over NO (already led 24-7 at halftime \u2014 not a close game pulled away late; +1 takeaway margin, short of the +2 padded-win bar; 33 rushing attempts, meeting the run-heavy bar; now favored -3 vs Baltimore, meeting the market-buy-in bar; Ravens rank 20th in points allowed and 15th in pass defense, not an elite takeaway-forcing defense by the available data; Penix has been turnover-clean in his 2 starts) \u2014 only 2 of 5 hit, regression flag OFF.",

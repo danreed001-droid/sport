@@ -82,7 +82,26 @@
       "nflStatsCorrect": true,
       "nflStatsReturn": 205.0,
       "nflStatsCover": true,
-      "nflStatsSpreadReturn": 86.96
+      "nflStatsSpreadReturn": 86.96,
+      "storylines": [
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "ot_short",
+          "name": "Short week after an overtime war",
+          "team": "Green Bay Packers",
+          "says": "fade",
+          "fact": "Green Bay Packers went to overtime against New York Jets on 2026-09-20 (20-17) and plays again 4 days later.",
+          "record": "36-24",
+          "pct": 60.0,
+          "leans": "Atlanta Falcons",
+          "leanPct": 60.0,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ]
 }

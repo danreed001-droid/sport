@@ -67,7 +67,43 @@
         "PD/g +27.7 vs +0.6",
         "Yds/play 6.52 (#25) vs 6.44 (#30) \u2014 off-gap 3.8 pts, Ledger Screen-1 skip"
       ],
-      "time": "12:00 PM ET"
+      "time": "12:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "top5_huge",
+          "name": "Top-5 laying 30",
+          "team": "Notre Dame",
+          "says": "fade",
+          "fact": "#5 Notre Dame is a -30.5 favorite.",
+          "record": "65-56",
+          "pct": 53.7,
+          "leans": "Navy",
+          "leanPct": 53.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "angry_big_fav",
+          "name": "Angry giant",
+          "team": "Notre Dame",
+          "says": "back",
+          "fact": "Notre Dame lost to BYU 24-28 and is a -30.5 favorite.",
+          "record": "35-43",
+          "pct": 44.9,
+          "leans": "Navy",
+          "leanPct": 55.1,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Arizona's last game was a 36-point win over Iowa State (17+, qualifies). Sub-conditions: (1) takeaway margin only +1, not padded; (2) Arizona is actually an underdog today (+3.5), not favored by 3+; (3) Texas Tech's defense ranks #86 nationally in total D with no top-5/10 rank found in takeaways/points/pass defense; (4) rush attempts ambiguous (24-36 across conflicting sources); (5) Fifita has a moderate but not alarming 4 INTs in 6 games. 0-1 of 5 conditions met \u2014 check does not fire. Iowa State (3-4, 1-3 Big 12) was also a clearly outmatched opponent, reinforcing that this reads as a mismatch win rather than a padded/lucky one.",
@@ -452,7 +488,26 @@
         "PD/g +22.9 vs +9.0",
         "Yds/play 6.83 (#13) vs 6.85 (#10) \u2014 off-gap 2.3 pts, Ledger Screen-1 skip"
       ],
-      "time": "3:45 PM ET"
+      "time": "3:45 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "Cincinnati",
+          "says": "fade",
+          "fact": "Cincinnati (unranked then) beat #8 Texas Tech 37-24 in its last game.",
+          "record": "89-69",
+          "pct": 56.3,
+          "leans": "Utah",
+          "leanPct": 56.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Arizona State won by 11 (not 17+) and BYU's last game was a loss \u2014 not applicable.",
@@ -642,7 +697,26 @@
         "Yds/play 6.84 (#11) vs 5.98 (#57)",
         "Oregon's starting QB Dante Moore (178.3 rtg) is out; backup Raiola (134.8) starts"
       ],
-      "time": "3:30 PM ET"
+      "time": "3:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unranked_fav",
+          "name": "Vegas knows",
+          "team": "Oregon",
+          "says": "back",
+          "fact": "Unranked Oregon is a -3.5 favorite over #20 Northwestern.",
+          "record": "67-58",
+          "pct": 53.6,
+          "leans": "Oregon",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Florida won by 3 and Georgia's last game was a loss \u2014 neither qualifies as a 17+ blowout win. Not applicable.",
@@ -706,7 +780,26 @@
         "PD/g +11.3 vs +27.1",
         "Yds/play 6.31 (#39) vs 7.68 (#2) \u2014 off-gap 27.8 pts, Ledger Screen-1 skip"
       ],
-      "time": "3:30 PM ET"
+      "time": "3:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "Florida",
+          "says": "fade",
+          "fact": "Florida (unranked then) beat #7 Texas 27-24 in its last game.",
+          "record": "89-69",
+          "pct": 56.3,
+          "leans": "Georgia",
+          "leanPct": 56.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "South Carolina won by 3 and Oklahoma won by 8 \u2014 neither qualifies as a 17+ blowout win. Not applicable.",
@@ -963,7 +1056,26 @@
         "Ohio State's season-long starter Julian Sayin is out for the year; true freshman Fahey (0 starts, relief appearances only) is the likely starter \u2014 QB eff set null per the zero-starts/no-prior-season rule",
         "Ledger skip: no-data (USC YPP rank unconfirmed)"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fell_out",
+          "name": "Fell out of the poll",
+          "team": "USC",
+          "says": "back",
+          "fact": "USC was #16 in last week's AP poll and is unranked this week.",
+          "record": "145-122",
+          "pct": 54.3,
+          "leans": "USC",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Mississippi State's last game was a loss and Texas won by only 7 \u2014 neither qualifies as a 17+ blowout win. Not applicable.",
@@ -1029,7 +1141,26 @@
         "Mississippi State starting QB Kamario Taylor is out for the season (foot surgery); Puckett is the presumptive starter",
         "Ledger skip: no-data (YPP ranks unconfirmed both sides)"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "Texas",
+          "says": "fade",
+          "fact": "Texas (#19 then) beat #7 Ole Miss 34-27 in its last game.",
+          "record": "89-69",
+          "pct": 56.3,
+          "leans": "Mississippi State",
+          "leanPct": 56.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Missouri's last game was a loss and Arkansas won by only 10 \u2014 neither qualifies as a 17+ blowout win. Not applicable.",

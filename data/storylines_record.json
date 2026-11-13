@@ -1,0 +1,237 @@
+{
+ "cfb": {
+  "altitude": {
+   "l": 1,
+   "p": 0,
+   "w": 4
+  },
+  "angry_big_fav": {
+   "l": 2,
+   "p": 0,
+   "w": 1
+  },
+  "ats_cold": {
+   "l": 1,
+   "p": 0,
+   "w": 6
+  },
+  "cold_nov": {
+   "l": 1,
+   "p": 1,
+   "w": 0
+  },
+  "fell_out": {
+   "l": 2,
+   "p": 0,
+   "w": 3
+  },
+  "fifty_win": {
+   "l": 5,
+   "p": 0,
+   "w": 7
+  },
+  "first_road": {
+   "l": 8,
+   "p": 0,
+   "w": 7
+  },
+  "top5_huge": {
+   "l": 1,
+   "p": 0,
+   "w": 3
+  },
+  "unranked_fav": {
+   "l": 6,
+   "p": 0,
+   "w": 2
+  },
+  "upset_hangover": {
+   "l": 2,
+   "p": 0,
+   "w": 7
+  }
+ },
+ "mlb": {
+  "ace_vs_ace": {
+   "l": 1,
+   "p": 0,
+   "w": 3
+  },
+  "dh_split": {
+   "l": 2,
+   "p": 0,
+   "w": 2
+  },
+  "extra_hangover": {
+   "l": 0,
+   "p": 0,
+   "w": 1
+  },
+  "rust": {
+   "l": 6,
+   "p": 0,
+   "w": 7
+  }
+ },
+ "nba": {
+  "champions": {
+   "l": 1,
+   "p": 0,
+   "w": 3
+  },
+  "emperor": {
+   "l": 0,
+   "p": 0,
+   "w": 3
+  },
+  "escape": {
+   "l": 0,
+   "p": 0,
+   "w": 1
+  },
+  "fat_happy": {
+   "l": 2,
+   "p": 0,
+   "w": 4
+  },
+  "friday": {
+   "l": 4,
+   "p": 0,
+   "w": 2
+  },
+  "ghost_town": {
+   "l": 1,
+   "p": 0,
+   "w": 2
+  },
+  "leaky": {
+   "l": 1,
+   "p": 0,
+   "w": 0
+  },
+  "payback": {
+   "l": 0,
+   "p": 0,
+   "w": 1
+  },
+  "prodigal": {
+   "l": 1,
+   "p": 0,
+   "w": 0
+  },
+  "quiet_giant": {
+   "l": 5,
+   "p": 0,
+   "w": 2
+  },
+  "running_fumes": {
+   "l": 0,
+   "p": 0,
+   "w": 1
+  },
+  "schedule_loss": {
+   "l": 5,
+   "p": 0,
+   "w": 5
+  },
+  "second_battle": {
+   "l": 1,
+   "p": 0,
+   "w": 3
+  },
+  "shell_shocked": {
+   "l": 1,
+   "p": 0,
+   "w": 0
+  },
+  "sleeping_giant": {
+   "l": 1,
+   "p": 0,
+   "w": 2
+  },
+  "steady": {
+   "l": 1,
+   "p": 0,
+   "w": 2
+  }
+ },
+ "nfl": {
+  "blown_14": {
+   "l": 1,
+   "p": 0,
+   "w": 0
+  },
+  "bye_rust": {
+   "l": 5,
+   "p": 0,
+   "w": 3
+  },
+  "cross_country": {
+   "l": 5,
+   "p": 0,
+   "w": 7
+  },
+  "escape": {
+   "l": 1,
+   "p": 0,
+   "w": 1
+  },
+  "heartbreak": {
+   "l": 1,
+   "p": 0,
+   "w": 6
+  },
+  "hidden_gem": {
+   "l": 2,
+   "p": 0,
+   "w": 3
+  },
+  "ot_short": {
+   "l": 0,
+   "p": 0,
+   "w": 3
+  },
+  "qb_former": {
+   "l": 3,
+   "p": 0,
+   "w": 0
+  },
+  "sandwich": {
+   "l": 4,
+   "p": 0,
+   "w": 0
+  },
+  "smoke_mirrors": {
+   "l": 4,
+   "p": 0,
+   "w": 0
+  },
+  "unbeaten": {
+   "l": 3,
+   "p": 0,
+   "w": 5
+  },
+  "west_early": {
+   "l": 3,
+   "p": 0,
+   "w": 4
+  },
+  "west_night": {
+   "l": 2,
+   "p": 0,
+   "w": 1
+  }
+ },
+ "soccer": {
+  "cup_120_midweek": {
+   "l": 4,
+   "p": 0,
+   "w": 3
+  },
+  "mls_midweek_road": {
+   "l": 0,
+   "p": 0,
+   "w": 1
+  }
+ }
+}

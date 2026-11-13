@@ -254,7 +254,26 @@
         "Yds/play 7.1 (rk11) vs 5.8 (rk79)",
         "QB eff 152.5 vs 144.8 \u2014 diff 7.7 triggers qb-close veto"
       ],
-      "time": "3:30 PM ET"
+      "time": "3:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "BYU",
+          "says": "fade",
+          "fact": "BYU (#8 then) beat #2 Notre Dame 28-24 in its last game.",
+          "record": "89-69",
+          "pct": 56.3,
+          "leans": "UCF",
+          "leanPct": 56.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Arizona's most recent game was a 52-31 win over West Virginia (margin 21, qualifies). Sub-conditions: (1) Padded win: takeaway margin only +1, but game was within 8 at halftime (24-17) \u2014 met via halftime clause. (2) Market: Arizona favored by 9.5 today \u2014 met. (3) Opponent (Iowa State) takeaway/defense ranks not confirmed \u2014 not met. (4) Run-heavy: only 27 rush attempts (<33) \u2014 not met. (5) Turnover-prone: Fifita has a modest 4 INT/191 att (~2.1%), no clear turnover-trouble pattern \u2014 not met. Only 2 of 5 conditions met \u2192 check does NOT fire.",
@@ -380,7 +399,26 @@
         "Yds/play 6.8 (rk21) vs 7.2 (rk10) \u2014 offense-percentile gap 8.3 < 30",
         "Ledger: skip (off-gap screen)"
       ],
-      "time": "10:15 PM ET"
+      "time": "10:15 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "altitude",
+          "name": "Thin air",
+          "team": "Houston",
+          "says": "fade",
+          "fact": "Houston plays at altitude in Salt Lake City, UT.",
+          "record": "46-39",
+          "pct": 54.1,
+          "leans": "Utah",
+          "leanPct": 54.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a win by 17+ (Indiana lost; Michigan won by 3). Check does not apply.",
@@ -823,7 +861,26 @@
         "Yds/play 6.5 (rk36) vs 5.7 (rk83)",
         "QB eff n/a vs n/a (Nussmeier, Byrum Brown season ratings unconfirmed) \u00b7 Tiger Bowl rivalry"
       ],
-      "time": "12:00 PM ET"
+      "time": "12:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "Auburn",
+          "says": "fade",
+          "fact": "Auburn (unranked then) beat #1 Georgia 27-24 in its last game.",
+          "record": "89-69",
+          "pct": 56.3,
+          "leans": "LSU",
+          "leanPct": 56.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Texas A&M's most recent game was a 41-0 win over The Citadel (margin 41, qualifies by score). Sub-conditions: (1) Padded win: 0-0 takeaways, A&M led 28-0 at half (not close) \u2014 not met. (2) Market: A&M is actually an underdog today (+13.5/14 vs Alabama) \u2014 not met. (3) Opponent (Alabama) ranks top-5 in both INT (5th) and fumbles recovered (5th) \u2192 top-10 takeaways forced \u2014 met. (4) Run-heavy: 40 rush attempts (\u226533) \u2014 met. (5) Turnover-prone: Marcel Reed has thrown 7 INT in 7 games, the worst rate in this slate \u2014 met. Mechanically 3 of 5 conditions are met, which would fire the check. However, the opponent in that blowout \u2014 The Citadel \u2014 is an FCS team, a clear, expected mismatch rather than a padded/lucky win against a real Power-4 foe. Per the instruction to use judgment on blowouts against clearly outmatched G5/FCS opponents, this check is NOT applied despite mechanically clearing the 3-of-5 bar.",
@@ -948,7 +1005,43 @@
         "Yds/play 6.0 (rk66) vs 6.5 (rk34) \u2014 offense-percentile gap 24.1 < 30",
         "Ledger: skip (off-gap screen)"
       ],
-      "time": "3:30 PM ET"
+      "time": "3:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unranked_fav",
+          "name": "Vegas knows",
+          "team": "South Carolina",
+          "says": "back",
+          "fact": "Unranked South Carolina is a -2.5 favorite over #11 Tennessee.",
+          "record": "67-58",
+          "pct": 53.6,
+          "leans": "South Carolina",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "Tennessee",
+          "says": "fade",
+          "fact": "Tennessee (#14 then) beat #6 Alabama 26-10 in its last game.",
+          "record": "89-69",
+          "pct": 56.3,
+          "leans": "South Carolina",
+          "leanPct": 56.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Ole Miss's most recent game was a 31-3 win over (then-#13) Missouri (margin 28, qualifies). Sub-conditions: (1) Padded win: 0 takeaway margin, Ole Miss led 21-3 at half (18-pt lead, not close) \u2014 not met. (2) Market: Ole Miss is actually an underdog today (+3/3.5) \u2014 not met. (3) Opponent (Texas) ranks: 96th INT, 67th FR (not top-10); 28th points allowed (not top-5); 12th pass defense (not top-5, close) \u2014 not met. (4) Run-heavy: 38 rush attempts (\u226533) \u2014 met. (5) Turnover-prone: Chambliss has 4 INT in 6 games but graded as a strong overall passer, not alarming; team fumble-loss rate a moderate 37.5% \u2014 not clearly met. Only 1 of 5 conditions clearly met \u2192 check does NOT fire.",
@@ -1010,7 +1103,26 @@
         "Yds/play 6.5 (rk37) vs 5.4 (rk103)",
         "QB eff 152.9 vs 145.2 \u2014 diff 7.6 triggers qb-close veto"
       ],
-      "time": "7:30 PM ET"
+      "time": "7:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "ats_cold",
+          "name": "Can't buy a cover",
+          "team": "Texas",
+          "says": "back",
+          "fact": "Texas has failed to cover its last four (Florida -13.5, Oklahoma -7.5, Tennessee -5.5, UTSA -29.5).",
+          "record": "309-271",
+          "pct": 53.3,
+          "leans": "Texas",
+          "leanPct": 53.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a win by 17+ (Vanderbilt lost; Kentucky won by only 8). Check does not apply.",

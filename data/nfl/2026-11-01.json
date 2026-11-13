@@ -76,7 +76,26 @@
       "nflStatsCorrect": false,
       "nflStatsReturn": -100.0,
       "nflStatsCover": false,
-      "nflStatsSpreadReturn": -100.0
+      "nflStatsSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "Buffalo Bills",
+          "says": "fade",
+          "fact": "Buffalo Bills is coming off a bye (14 days since its last game) and is a -3.5 home favorite.",
+          "record": "64-54",
+          "pct": 54.2,
+          "leans": "Baltimore Ravens",
+          "leanPct": 54.2,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Bengals off 35-13 win over BAL \u2014 but trailed 0-13 at halftime before scoring 35 unanswered (not a padded/lucky blowout), forced only 1 takeaway (+1 margin, below +2), ran only 20 times (below 33+), favored -12.5 today (market-bought-in condition met), and Titans' defense is not a top-tier unit (22.3 PPG allowed, 1-6) so the 'opponent takes it away' condition fails; Burrow has only 3 INT this season, not turnover-prone. Only 1 of 5 sub-conditions (market) hit \u2014 regression flag OFF.",
@@ -265,7 +284,26 @@
       "nflStatsCorrect": true,
       "nflStatsReturn": 60.24,
       "nflStatsCover": true,
-      "nflStatsSpreadReturn": 92.59
+      "nflStatsSpreadReturn": 92.59,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "unbeaten",
+          "name": "Target on their back",
+          "team": "Minnesota Vikings",
+          "says": "fade",
+          "fact": "Minnesota Vikings is 6-0.",
+          "record": "57-48",
+          "pct": 54.3,
+          "leans": "Detroit Lions",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team won its most recent game (both lost) \u2014 check not applicable.",
@@ -340,7 +378,60 @@
       "nflStatsCorrect": false,
       "nflStatsReturn": -100.0,
       "nflStatsCover": false,
-      "nflStatsSpreadReturn": -100.0
+      "nflStatsSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "qb_former",
+          "name": "QB vs his old team",
+          "team": "New York Jets",
+          "says": "back",
+          "fact": "New York Jets QB Geno Smith made 15 regular-season starts for Las Vegas Raiders.",
+          "record": "41-50",
+          "pct": 45.1,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 54.9,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 0.5,
+          "live": "0-0",
+          "key": "west_early",
+          "name": "Body clock: West Coast team at 1 PM ET",
+          "team": "Las Vegas Raiders",
+          "says": "fade",
+          "fact": "Las Vegas Raiders (Pacific time) plays at the New York Jets at 1:00 PM ET, 10:00 AM on its body clock.",
+          "record": "69-89",
+          "pct": 43.7,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 56.3,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "Las Vegas Raiders",
+          "says": "fade",
+          "fact": "Las Vegas Raiders travels about 2,230 miles to play the New York Jets.",
+          "record": "173-200",
+          "pct": 46.4,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team's most recent game was a win by 17+ (Browns won by 3, Steelers won by 6) \u2014 check not applicable.",
@@ -461,7 +552,26 @@
       "altBlowoutCorrect": false,
       "altBlowoutReturn": -100.0,
       "altBlowoutCover": false,
-      "altBlowoutSpreadReturn": -100.0
+      "altBlowoutSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "hidden_gem",
+          "name": "Better than its record",
+          "team": "Tampa Bay Buccaneers",
+          "says": "back",
+          "fact": "Tampa Bay Buccaneers is 2-5 but has scored 162 and allowed 151, which usually goes with about 3.8 wins in 7 games.",
+          "record": "60-48",
+          "pct": 55.6,
+          "leans": "Tampa Bay Buccaneers",
+          "leanPct": 55.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Neither team won its most recent game (both lost) \u2014 check not applicable.",
@@ -519,7 +629,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "Jacksonville Jaguars",
+          "says": "fade",
+          "fact": "Jacksonville Jaguars is coming off a bye (14 days since its last game) and is a -7.5 home favorite.",
+          "record": "64-54",
+          "pct": 54.2,
+          "leans": "Indianapolis Colts",
+          "leanPct": 54.2,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Rams won their last game by 14, under the 17-point trigger; Chargers lost \u2014 check not applicable to either.",
@@ -577,7 +706,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "hidden_gem",
+          "name": "Better than its record",
+          "team": "Los Angeles Chargers",
+          "says": "back",
+          "fact": "Los Angeles Chargers is 0-6 but has scored 90 and allowed 151, which usually goes with about 1.4 wins in 6 games.",
+          "record": "60-48",
+          "pct": 55.6,
+          "leans": "Los Angeles Chargers",
+          "leanPct": 55.6,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Broncos won their last game by 14, under the 17-point trigger; Chiefs lost \u2014 check not applicable to either.",
@@ -768,7 +916,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "Washington Commanders",
+          "says": "fade",
+          "fact": "Washington Commanders is coming off a bye (13 days since its last game) and is a -5.5 home favorite.",
+          "record": "64-54",
+          "pct": 54.2,
+          "leans": "Philadelphia Eagles",
+          "leanPct": 54.2,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-11-02T06:51:07.202669+00:00"
