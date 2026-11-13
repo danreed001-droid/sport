@@ -176,6 +176,19 @@ def build():
                         # side ("op") of this game, for the agreement table.
                         play["ag"] = [k for k, s in model_sides if s == side]
                         play["op"] = [k for k, s in model_sides if s and s != side]
+                        # Storylines' net lean toward your side (each storyline's
+                        # tally weight; + with you, - against), when the game had any.
+                        if g.get("storylines"):
+                            mine_team, net = team_for(g, side), 0.0
+                            for e in g["storylines"]:
+                                lean, wt = e.get("leans"), float(e.get("weight") or 1)
+                                if not lean:
+                                    continue
+                                if e.get("unit") == "not to win":
+                                    net -= wt if lean == mine_team else 0
+                                else:
+                                    net += wt if lean == mine_team else -wt
+                            play["sl"] = net
                     if not final:
                         play.update({"a": None, "ap": None, "m": None, "mp": None, "x": 0, "pd": 1})
                         plays.append(play)

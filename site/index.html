@@ -972,11 +972,15 @@ footer b{color:var(--ink);}
       ['2 or more models with you', function(p){ return (p.ag||[]).length >= 2; }],
       ['Models with you, none against', function(p){ return (p.ag||[]).length && !(p.op||[]).length; }],
       ['A model on the other side', function(p){ return (p.op||[]).length >= 1; }],
-      ['No model picked the game', function(p){ return !(p.ag||[]).length && !(p.op||[]).length; }]
+      ['No model picked the game', function(p){ return !(p.ag||[]).length && !(p.op||[]).length; }],
+      // Storylines aren't a model: their weighted lean (the card's tally) on your side or not.
+      ['Storylines lean with you', function(p){ return num(p.sl) && p.sl > 0; }],
+      ['Storylines lean against you', function(p){ return num(p.sl) && p.sl < 0; }],
+      ['Storylines split evenly', function(p){ return num(p.sl) && p.sl === 0; }]
     ].concat(models.map(function(w){ return ['With '+(/^The /.test(w.label)?'the '+w.label.slice(4):'the '+w.label), function(p){ return has(p, w.k, 'ag'); }, 0, w.c]; }))
      .concat(models.map(function(w){ return ['Against '+(/^The /.test(w.label)?'the '+w.label.slice(4):'the '+w.label), function(p){ return has(p, w.k, 'op'); }, 0, w.c]; }));
     document.getElementById('agsub').textContent = mine.length
-      ? 'Your graded side picks '+mk+', grouped by which models took the same side or the other side of that game. Over/unders are left out here (no model to agree with), so this is your tile minus them.'
+      ? 'Your graded side picks '+mk+', grouped by which models took the same side or the other side of that game, and which way the game\'s storylines leaned (their weighted tally). Over/unders are left out here (no model to agree with), so this is your tile minus them.'
       : 'No graded picks of yours in this view yet. Once you make picks, this shows how they do when the models agree or disagree.';
     document.getElementById('agtbl').innerHTML = mine.length ? '<thead><tr><th>When</th><th class="num">Picks</th><th class="num">Record</th><th class="num">Win %</th><th class="num">Profit</th><th class="num">ROI</th></tr></thead><tbody>'
       + rows.map(function(r){
