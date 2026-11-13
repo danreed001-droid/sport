@@ -1,0 +1,253 @@
+{
+  "date": "2026-11-13",
+  "weekday": "Friday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-13T05:51:19Z",
+  "games": [
+    {
+      "espnId": "401909296",
+      "away": "New York Knicks",
+      "home": "Indiana Pacers",
+      "time": "7:00 PM ET",
+      "homeSpread": 6.5,
+      "awaySpread": -6.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": 220.0,
+      "awayMoneyline": -269.0,
+      "statsSpread": 6.5,
+      "statsLine": {
+        "homeSpread": 6.5,
+        "awaySpread": -6.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 220,
+        "awayMoneyline": -269
+      },
+      "statsFavors": "Indiana Pacers",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Indiana Pacers: covered its last two games (by 9.5 vs Washington Wizards and by 1.5 at Dallas Mavericks), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing Indiana Pacers: covered its last two games (by 9.5 vs Washington Wizards and by 1.5 at Dallas Mavericks), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsLine": 219.5
+    },
+    {
+      "espnId": "401909297",
+      "away": "Milwaukee Bucks",
+      "home": "Orlando Magic",
+      "time": "7:00 PM ET",
+      "homeSpread": -9.5,
+      "awaySpread": 9.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -378.0,
+      "awayMoneyline": 300.0,
+      "statsSpread": -9.5,
+      "statsLine": {
+        "homeSpread": -9.5,
+        "awaySpread": 9.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -378,
+        "awayMoneyline": 300
+      },
+      "totalsLine": 223.5
+    },
+    {
+      "espnId": "401909298",
+      "away": "Cleveland Cavaliers",
+      "home": "Miami Heat",
+      "time": "8:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -135.0,
+      "awayMoneyline": 114.0,
+      "statsSpread": -2.5,
+      "statsLine": {
+        "homeSpread": -2.5,
+        "awaySpread": 2.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -135,
+        "awayMoneyline": 114
+      },
+      "totalsLine": 236.5,
+      "totalsWatch": [
+        {
+          "player": "Giannis Antetokounmpo",
+          "pts": 30,
+          "status": "Day-To-Day",
+          "rule": 3,
+          "ifOut": "NBA Totals rule 3 would bet the over"
+        }
+      ]
+    },
+    {
+      "espnId": "401909299",
+      "away": "Atlanta Hawks",
+      "home": "Chicago Bulls",
+      "time": "8:00 PM ET",
+      "homeSpread": 6.5,
+      "awaySpread": -6.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": 227.0,
+      "awayMoneyline": -277.0,
+      "statsSpread": 6.5,
+      "statsLine": {
+        "homeSpread": 6.5,
+        "awaySpread": -6.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 227,
+        "awayMoneyline": -277
+      },
+      "statsFavors": "Chicago Bulls",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Chicago Bulls: covered its last two games (by 10.5 vs San Antonio Spurs and by 3.5 vs Philadelphia 76ers), now at home in game 11 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing Chicago Bulls: covered its last two games (by 10.5 vs San Antonio Spurs and by 3.5 vs Philadelphia 76ers), now at home in game 11 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsLine": 245.5
+    },
+    {
+      "espnId": "401909300",
+      "away": "Memphis Grizzlies",
+      "home": "New Orleans Pelicans",
+      "time": "8:00 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 133.0,
+      "awayMoneyline": -158.0,
+      "statsSpread": 3.5,
+      "statsLine": {
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 133,
+        "awayMoneyline": -158
+      },
+      "totalsLine": 235.5
+    },
+    {
+      "espnId": "401909301",
+      "away": "Utah Jazz",
+      "home": "Houston Rockets",
+      "time": "8:30 PM ET",
+      "homeSpread": -17.5,
+      "awaySpread": 17.5,
+      "homeSpreadOdds": -104.0,
+      "awaySpreadOdds": -116.0,
+      "homeMoneyline": -1580.0,
+      "awayMoneyline": 900.0,
+      "statsSpread": -17.5,
+      "statsLine": {
+        "homeSpread": -17.5,
+        "awaySpread": 17.5,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": -1580,
+        "awayMoneyline": 900
+      },
+      "statsFavors": "Houston Rockets",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Houston Rockets: covered its last two games (by 0.5 vs Golden State Warriors and by 5.5 vs Denver Nuggets), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        },
+        {
+          "rule": 64,
+          "name": "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
+          "backtest": "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
+          "detail": "Backing Houston Rockets: 9-3 against the spread this season, vs. Utah Jazz, 0-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing Houston Rockets: covered its last two games (by 0.5 vs Golden State Warriors and by 5.5 vs Denver Nuggets), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 64: Backing Houston Rockets: 9-3 against the spread this season, vs. Utah Jazz, 0-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
+      "totalsLine": 219.5
+    },
+    {
+      "espnId": "401909302",
+      "away": "Golden State Warriors",
+      "home": "San Antonio Spurs",
+      "time": "9:30 PM ET",
+      "homeSpread": -12.5,
+      "awaySpread": 12.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -750.0,
+      "awayMoneyline": 530.0,
+      "statsSpread": -12.5,
+      "statsLine": {
+        "homeSpread": -12.5,
+        "awaySpread": 12.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -750,
+        "awayMoneyline": 530
+      },
+      "totalsLine": 219.5
+    },
+    {
+      "espnId": "401909303",
+      "away": "Portland Trail Blazers",
+      "home": "Sacramento Kings",
+      "time": "10:00 PM ET",
+      "homeSpread": 10.5,
+      "awaySpread": -10.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": 411.0,
+      "awayMoneyline": -546.0,
+      "statsSpread": 10.5,
+      "statsLine": {
+        "homeSpread": 10.5,
+        "awaySpread": -10.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 411,
+        "awayMoneyline": -546
+      },
+      "totalsLine": 228.5
+    },
+    {
+      "espnId": "401909304",
+      "away": "Oklahoma City Thunder",
+      "home": "LA Clippers",
+      "time": "10:30 PM ET",
+      "homeSpread": 7.5,
+      "awaySpread": -7.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": 231.0,
+      "awayMoneyline": -283.0,
+      "statsSpread": 7.5,
+      "statsLine": {
+        "homeSpread": 7.5,
+        "awaySpread": -7.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": 231,
+        "awayMoneyline": -283
+      },
+      "totalsLine": 222.5
+    }
+  ]
+}
