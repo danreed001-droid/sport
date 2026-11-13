@@ -227,6 +227,7 @@ details.why{font-size:12px;color:var(--muted);}
 .stories .st-hist{color:var(--muted);}
 .stories .st-strong{color:var(--warn);font-size:11px;font-weight:600;}
 .stories .st-weak{color:var(--muted);font-size:11px;}
+.sidesline{font-size:12px;margin:8px 0 0;color:var(--ink);line-height:1.5;}
 .vetoline{font-size:12px;border-left:3px solid var(--warn);padding:4px 10px;margin:8px 0 0;color:var(--ink);}
 .vetoline b{color:var(--warn);}
 .vetonote{font-size:13px;border:1px solid var(--warn);border-radius:8px;padding:8px 12px;margin:0 0 14px;color:var(--ink);}
@@ -1172,6 +1173,27 @@ footer b{color:var(--ink);}
     var against = net > 0 ? g.away : g.home;
     return VETO_MODELS.filter(function(m){ var t = m[2](g); return t && t===against; }).map(function(m){ return m[1]; });
   }
+  // Each side's models with their season win % in this sport (ATS; soccer:
+  // moneyline), from the same records as the scorecard (DATA.bySport).
+  function modelRec(sport, k){
+    var r = ((DATA.bySport||{})[sport]||{})[k];
+    if(!r) return null;
+    var w = sport==='soccer' ? r.mlW : r.atsW, l = sport==='soccer' ? r.mlL : r.atsL;
+    return w+l ? {w:w, l:l, pct: pct(w, w+l)} : null;
+  }
+  function sidesLine(sport, g){
+    var sit = vetoed(g), bySide = {};
+    VETO_MODELS.forEach(function(m){
+      var t = m[2](g);
+      if(!t) return;
+      var r = modelRec(sport, m[0]);
+      (bySide[t] = bySide[t] || []).push('<b>'+esc(m[1])+'</b> '+(r ? r.pct+' <span class="muted">('+r.w+'-'+r.l+')</span>' : '<span class="muted">no record yet</span>')+(sit.indexOf(m[1])>=0 ? ' <span class="muted">· sitting out</span>' : ''));
+    });
+    var teams = Object.keys(bySide);
+    if(!teams.length) return '';
+    return '<div class="sidesline">'+teams.map(function(t){ return esc(t)+': '+bySide[t].join(', '); }).join('<br>')
+      + '<div class="muted" style="font-size:11px;margin-top:2px">Each model\'s win % '+(sport==='soccer' ? 'on the moneyline' : 'against the spread')+' this season in this sport.</div></div>';
+  }
   function vetoLine(g){
     var v = vetoed(g);
     if(!v.length) return '';
@@ -1421,7 +1443,7 @@ footer b{color:var(--ink);}
     return '<article class="game">'
       + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
       + '<div class="lines">'+lineText(g)+(g.manualFields && g.manualFields.length ? '<br><span class="handnote" title="Entered on the Enter data by hand page">\u270e hand-entered: '+esc(manualLabel(g.manualFields))+'</span>' : '')+'</div></div>'
-      + '<div class="models">'+models+'</div>'+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
+      + '<div class="models">'+models+'</div>'+sidesLine(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
       + '</article>';

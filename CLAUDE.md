@@ -431,7 +431,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   page -- scoreboard, by-sport, plays/tiles/charts, rule records, stacked
   rows, the agreement table -- and the pick log shows "Sat out" with what it
   would have done (`sx`/`sxa`/`sxm`); cards show "Sitting out" (`vetoLine`)
-  and a "sat out" chip. Your own picks always count; NBA Totals (not a side)
+  and a "sat out" chip. Each card also lists the models on each side with
+  their season win % in that sport (`sidesLine`: ATS, soccer moneyline, from
+  `DATA.bySport`, so veto-aware). Your own picks always count; NBA Totals (not a side)
   are unaffected; picks before that date are unchanged. Reason: model picks
   with the storylines went 35-17 and against 31-40 that season to date. The
   slate files keep every pick and `score_slate.py` still grades it; only the
