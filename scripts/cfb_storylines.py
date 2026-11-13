@@ -17,6 +17,22 @@ FBS_CONF = {"1", "4", "5", "8", "9", "12", "15", "17", "18", "37", "151"}
 NOTRE_DAME = "87"
 
 
+# Traditional rivalries (ESPN's school names). Hard-coded: ESPN doesn't flag them.
+RIVALRY_PAIRS = """Alabama|Auburn; Ohio State|Michigan; Texas|Oklahoma; Georgia|Florida; Georgia|Georgia Tech;
+Clemson|South Carolina; Florida|Florida State; Florida State|Miami; USC|UCLA; USC|Notre Dame; Oregon|Oregon State;
+Washington|Washington State; Stanford|California; LSU|Alabama; Ole Miss|Mississippi State; Texas|Texas A&M;
+Tennessee|Alabama; Kentucky|Louisville; Tennessee|Vanderbilt; Iowa|Iowa State; Minnesota|Wisconsin;
+Michigan|Michigan State; Pittsburgh|West Virginia; Penn State|Pittsburgh; Virginia|Virginia Tech; North Carolina|NC State;
+North Carolina|Duke; Kansas|Kansas State; Kansas|Missouri; Oklahoma|Oklahoma State; Arizona|Arizona State; Utah|BYU;
+Colorado|Colorado State; Army|Navy; Air Force|Army; Air Force|Navy; Indiana|Purdue; Illinois|Northwestern; Nebraska|Iowa;
+Minnesota|Iowa; Wisconsin|Iowa; TCU|SMU; TCU|Baylor; Miami (OH)|Ohio; Toledo|Bowling Green; Oregon|Washington;
+Arkansas|LSU; Auburn|Georgia; Notre Dame|Navy; Florida|Tennessee; Texas A&M|Arkansas; Missouri|Arkansas;
+New Mexico|New Mexico State; Wyoming|Colorado State; Nevada|UNLV; Houston|Rice; Boise State|Fresno State; Texas|Texas Tech;
+Michigan|Notre Dame; Louisiana|UL Monroe; Louisiana|Louisiana Monroe; Utah|Utah State; Cincinnati|Miami (OH);
+Memphis|Ole Miss; Tulane|Southern Miss; Boston College|Syracuse; Duke|Wake Forest; Clemson|Georgia Tech"""
+RIVALS = {frozenset(p.strip().split("|")) for p in RIVALRY_PAIRS.split(";")}
+
+
 def is_power(conf, team_id, season):
     """ACC, Big Ten, Big 12, SEC (and the Pac-12 before 2024), plus Notre Dame."""
     return team_id == NOTRE_DAME or conf in {"1", "4", "5", "8"} or (conf == "9" and season < 2024)
@@ -121,7 +137,8 @@ def season_rows(events, season, ap_by_week, spreads=None):
 
 
 def home_zones(*row_sets):
-    """{team_id: IANA zone of its usual home stadium} from its non-neutral home games."""
+    """{team_id: (IANA zone, city, state) of its usual home stadium}, from its
+    non-neutral home games."""
     seen = {}
     for rows_by_team in row_sets:
         for tid, rows in rows_by_team.items():
@@ -129,5 +146,46 @@ def home_zones(*row_sets):
                 if r["site"] == "home":
                     z = zone_of(r["city"], r["state"])
                     if z:
-                        seen.setdefault(tid, Counter())[(z, r["city"])] += 1
+                        seen.setdefault(tid, Counter())[(z, r["city"], r["state"])] += 1
     return {tid: c.most_common(1)[0][0] for tid, c in seen.items()}
+
+
+def record(rows):
+    w = sum(1 for r in rows if r["ts"] > r["os"])
+    return w, sum(1 for r in rows if r["ts"] < r["os"])
+
+
+def game_context(rows_by_team, prev_rows_by_team, homes, ap_by_week, row, spread, rivals, kick_iso=None):
+    """What a storyline may read about `row` (one team's side of a game), all
+    known before kickoff: the season so far for both teams, the rest of the
+    team's schedule (opponents and sites, not results), AP ranks this week, last
+    week and in the preseason, and last season's meeting."""
+    tid, oid = row["tid"], row["oid"]
+    kick_iso = kick_iso or row["kick"]
+    mine, theirs = rows_by_team.get(tid, []), rows_by_team.get(oid, [])
+    prior = [r for r in mine if r["kick"] < kick_iso and r["ts"] is not None]
+    oprior = [r for r in theirs if r["kick"] < kick_iso and r["ts"] is not None]
+    later = [r for r in mine if r["kick"] > kick_iso and not r["title"]]
+    wk = row["week"]
+    now, prev, pre = ap_by_week.get(wk) or {}, ap_by_week.get(wk - 1) if wk > 1 else None, ap_by_week.get(1) or {}
+    k = kickoff(kick_iso)
+    vz = zone_of(row["city"], row["state"]) if row["site"] != "neutral" or row["state"] else None
+    local_hour = None
+    if k is not None and row["kick_known"] and vz:
+        lk = k.astimezone(ZoneInfo(vz))
+        local_hour = lk.hour + lk.minute / 60
+    home = homes.get(tid) or (None, None, None)
+    ohome = homes.get(oid) or (None, None, None)
+    return {
+        "season": row["season"], "week": wk, "date": row["date"], "D": date.fromisoformat(row["date"]), "kick": k,
+        "et_hour": (k.hour + k.minute / 60) if (k is not None and row["kick_known"]) else None, "local_hour": local_hour,
+        "tid": tid, "team": row["team"], "oid": oid, "opp": row["opp"], "site": row["site"], "city": row["city"],
+        "state": row["state"], "venue_zone": vz, "sp": spread, "prior": prior, "oprior": oprior, "later": later,
+        "rank": now.get(tid), "orank": now.get(oid), "now_ranks": now,
+        "prev_rank": None if prev is None else prev.get(tid), "has_prev": prev is not None,
+        "pre_rank": pre.get(tid), "opre_rank": pre.get(oid),
+        "meets": [r for r in prev_rows_by_team.get(tid, []) if r["oid"] == oid and r["ts"] is not None],
+        "home": home, "ohome": ohome, "conf": row["conf"], "oconf": row["oconf"],
+        "power": is_power(row["conf"], tid, row["season"]), "opower": is_power(row["oconf"], oid, row["season"]),
+        "rivalry": frozenset((row["team"], row["opp"])) in rivals,
+    }

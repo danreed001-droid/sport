@@ -333,7 +333,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2018-19 and 2021-22 to 2025-26 (both teams 8+ games) and the side history
   leans to. The card shows them in a collapsed "Storylines" box with a tally.
   Context only: never a pick, not graded, not an input to any model; frozen
-  once the game has a score.
+  once the game has a score. NFL: `scripts/nfl_storylines.py` (2010-2025,
+  2020 left out; 52 tested, 1 at p<0.05 vs 2.6 by chance, 11 shown; the wind
+  story has no allowed live forecast source, and the QB-vs-old-team table runs
+  through 2025 and needs a refresh each offseason).
 - NBA and NFL Stats only pick regular-season games, and NBA Stats only reads
   the current season's games from the growing scores archive.
 - `curl_cffi` is pinned in `requirements.txt`; bump it deliberately.
