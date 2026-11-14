@@ -121,9 +121,9 @@
       "awaySpreadOdds": -114,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 229.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -106,
       "home": "Cleveland Cavaliers",
       "homeMoneyline": 110,
       "homeNetRtg": 0.91,
@@ -148,10 +148,10 @@
       "statsLine": {
         "homeSpread": 4.5,
         "awaySpread": -4.5,
-        "homeSpreadOdds": -105,
+        "homeSpreadOdds": -106,
         "awaySpreadOdds": -115,
-        "homeMoneyline": 137,
-        "awayMoneyline": -163
+        "homeMoneyline": 164,
+        "awayMoneyline": -196
       },
       "statsRules": [
         {
@@ -187,7 +187,7 @@
       "time": "7:30 PM ET",
       "totalsCheck": "Rule 16: Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers. Rule 23: Cleveland Cavaliers's last game (121-133 on 2026-11-13) went over its total of 234.5 by 19.5, and Dallas Mavericks allowed 133 in its last game.",
       "totalsFavors": "Over",
-      "totalsLine": 229.5,
+      "totalsLine": 227.5,
       "totalsRules": [
         {
           "rule": 16,
@@ -353,8 +353,8 @@
         "awaySpread": 2.5,
         "homeSpreadOdds": -110,
         "awaySpreadOdds": -110,
-        "homeMoneyline": -148,
-        "awayMoneyline": 125
+        "homeMoneyline": -143,
+        "awayMoneyline": 121
       },
       "statsRules": [
         {
@@ -413,9 +413,9 @@
       "awaySpreadOdds": -112,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 234.5,
-      "gameTotalOverOdds": -111,
-      "gameTotalUnderOdds": -109,
+      "gameTotal": 235.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Minnesota Timberwolves",
       "homeMoneyline": -970,
       "homeNetRtg": 13.36,
@@ -440,10 +440,10 @@
       "statsLine": {
         "homeSpread": -15.5,
         "awaySpread": 15.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
-        "homeMoneyline": -970,
-        "awayMoneyline": 640
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -1020,
+        "awayMoneyline": 660
       },
       "statsRules": [
         {
@@ -543,7 +543,7 @@
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 234.5
+      "totalsLine": 235.5
     }
   ]
 }
