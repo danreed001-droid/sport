@@ -537,9 +537,9 @@
       "awaySpreadOdds": -116,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 220.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107,
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Houston Rockets",
       "homeMoneyline": -1600,
       "homeNetRtg": 9.28,
@@ -567,8 +567,8 @@
         "awaySpread": 15.5,
         "homeSpreadOdds": -108,
         "awaySpreadOdds": -112,
-        "homeMoneyline": -1180,
-        "awayMoneyline": 740
+        "homeMoneyline": -1340,
+        "awayMoneyline": 810
       },
       "statsRules": [
         {
@@ -616,7 +616,7 @@
         }
       ],
       "time": "8:30 PM ET",
-      "totalsLine": 220.5
+      "totalsLine": 221.5
     },
     {
       "altCategoryTally": "0-4",
@@ -646,9 +646,9 @@
       "awaySpreadOdds": -112,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 217.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 216.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
       "home": "San Antonio Spurs",
       "homeMoneyline": -700,
       "homeNetRtg": 11.4,
@@ -672,8 +672,8 @@
       "statsLine": {
         "homeSpread": -12.5,
         "awaySpread": 12.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -118,
         "homeMoneyline": -650,
         "awayMoneyline": 473
       },
@@ -695,7 +695,7 @@
         }
       ],
       "time": "9:30 PM ET",
-      "totalsLine": 217.5
+      "totalsLine": 216.5
     },
     {
       "altCategoryTally": "0-2",
