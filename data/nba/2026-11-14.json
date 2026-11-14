@@ -34,15 +34,15 @@
         {
           "weight": 1,
           "live": "0-0",
-          "key": "tired_hosts",
-          "name": "Tired hosts",
-          "team": "New Orleans Pelicans",
-          "says": "fade",
-          "fact": "New Orleans Pelicans played last night (2026-11-13) and is at home vs Denver Nuggets, which has had 3 days since its last game.",
-          "record": "389-318",
-          "pct": 55.0,
+          "key": "road_fresh_fav",
+          "name": "Rested road favorite",
+          "team": "Denver Nuggets",
+          "says": "back",
+          "fact": "Denver Nuggets is a -12.5 road favorite on 3 days' rest; New Orleans Pelicans played last night (2026-11-13).",
+          "record": "47-32",
+          "pct": 59.5,
           "leans": "Denver Nuggets",
-          "leanPct": 55.0,
+          "leanPct": 59.5,
           "against": false
         }
       ]
@@ -106,20 +106,6 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
-          "key": "tired_hosts",
-          "name": "Tired hosts",
-          "team": "Cleveland Cavaliers",
-          "says": "fade",
-          "fact": "Cleveland Cavaliers played last night (2026-11-13) and is at home vs Dallas Mavericks, which has had 2 days since its last game.",
-          "record": "389-318",
-          "pct": 55.0,
-          "leans": "Dallas Mavericks",
-          "leanPct": 55.0,
-          "against": false
-        },
-        {
-          "weight": 1,
           "live": "0-1",
           "key": "leaky",
           "name": "Leaky defense meets leaky defense",
@@ -131,6 +117,20 @@
           "leans": "Dallas Mavericks",
           "leanPct": 53.9,
           "against": true
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "road_fresh_dog",
+          "name": "Fresh underdog on the road",
+          "team": "Dallas Mavericks",
+          "says": "back",
+          "fact": "Dallas Mavericks is a +1.5 road underdog on 2 days' rest; Cleveland Cavaliers played last night (2026-11-13).",
+          "record": "162-119",
+          "pct": 57.7,
+          "leans": "Dallas Mavericks",
+          "leanPct": 57.7,
+          "against": false
         }
       ]
     },
@@ -177,23 +177,7 @@
           "backtest": "62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38"
         }
       ],
-      "totalsCheck": "Rule 23: Miami Heat's last game (133-121 on 2026-11-13) went over its total of 234.5 by 19.5, and Detroit Pistons allowed 140 in its last game.",
-      "storylines": [
-        {
-          "weight": 1,
-          "live": "0-0",
-          "key": "tired_hosts",
-          "name": "Tired hosts",
-          "team": "Miami Heat",
-          "says": "fade",
-          "fact": "Miami Heat played last night (2026-11-13) and is at home vs Detroit Pistons, which has had 2 days since its last game.",
-          "record": "389-318",
-          "pct": 55.0,
-          "leans": "Detroit Pistons",
-          "leanPct": 55.0,
-          "against": false
-        }
-      ]
+      "totalsCheck": "Rule 23: Miami Heat's last game (133-121 on 2026-11-13) went over its total of 234.5 by 19.5, and Detroit Pistons allowed 140 in its last game."
     },
     {
       "espnId": "401909983",
@@ -234,23 +218,7 @@
           "backtest": "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24"
         }
       ],
-      "totalsCheck": "Rule 10: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back. Rule 14: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.",
-      "storylines": [
-        {
-          "weight": 1,
-          "live": "0-0",
-          "key": "tired_hosts",
-          "name": "Tired hosts",
-          "team": "Memphis Grizzlies",
-          "says": "fade",
-          "fact": "Memphis Grizzlies played last night (2026-11-13) and is at home vs Brooklyn Nets, which has had 3 days since its last game.",
-          "record": "389-318",
-          "pct": 55.0,
-          "leans": "Brooklyn Nets",
-          "leanPct": 55.0,
-          "against": false
-        }
-      ]
+      "totalsCheck": "Rule 10: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back. Rule 14: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back."
     },
     {
       "espnId": "401909984",

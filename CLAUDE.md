@@ -368,7 +368,11 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   nothing, 2+ days helps mostly at home): "Fresh legs at home" backs a home team
   on 3 days vs a visitor on a back-to-back (117-82, 58.8%, p=0.02, halves
   54%/64%); "Tired hosts" fades a home team on a back-to-back vs a visitor
-  on 2+ days (389-318, 55.0%). Rest does nothing for totals (16 cells, none at
+  on 2+ days (389-318, 55.0%) -- retired the same day (no longer fires) when its
+  two strong slices became "Rested road favorite" (road favorite on 3 days vs a
+  home team on a back-to-back, 47-32, 59.5%) and "Fresh underdog on the road"
+  (road underdog on 2 days vs a home team on a back-to-back, 162-119, 57.7%,
+  p=0.01, halves 55%/60%); the rest of it was 180-167. Rest does nothing for totals (16 cells, none at
   p<0.05; a 2+ day gap either way leans over 53.8%). The same rest, letdown and
   big-underdog tests on NFL, CFB, NCAAB, MLB and soccer were at chance
   (scratchpad TESTS3.md per sport): these are NBA-only effects. Moneyline entries carry `implied` and `roi`, and `unit` is the

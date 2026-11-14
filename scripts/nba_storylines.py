@@ -76,8 +76,14 @@ STORIES = {
     # does, mostly for the home team. (4+ days vs 2 is NBA Stats rule 68.)
     "home_fresh": ("Fresh legs at home", "back", (117, 82),
                    "home team on 3 days since its last game vs a visitor on the second night of a back-to-back"),
+    # Retired 2026-11-14 (no longer fires): its strong parts became the two
+    # below, and what's left is 180-167 (51.9%). Kept so past entries resolve.
     "tired_hosts": ("Tired hosts", "fade", (389, 318),
                     "home team on the second night of a back-to-back vs a visitor with 2+ days"),
+    "road_fresh_fav": ("Rested road favorite", "back", (47, 32),
+                       "road favorite on 3 days since its last game vs a home team on the second night of a back-to-back"),
+    "road_fresh_dog": ("Fresh underdog on the road", "back", (162, 119),
+                       "road underdog on 2 days since its last game vs a home team on the second night of a back-to-back"),
     "spotlight": ("Spotlight letdown", "fade", (147, 114),
                   "won its last game on national TV, now a 5+ favorite vs a weaker team and not on national TV"),
     "letdown": ("Letdown spot", "fade", (355, 299),
@@ -308,7 +314,14 @@ def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp
                                                   f"{', as a ' + format(sp, '+g') + ' underdog' if sp is not None and sp > 0 else ''}."))
     if is_home and rest == 3 and orest == 1:
         out.append(entry("home_fresh", team, opp, f"{team} is at home on 3 days' rest; {opp} played last night ({opp_prior[-1]['date']})."))
-    if is_home and rest == 1 and orest >= 2:
+    if not is_home and orest == 1 and sp is not None:
+        if rest == 3 and sp < 0:
+            out.append(entry("road_fresh_fav", team, opp, f"{team} is a {sp:+g} road favorite on 3 days' rest; {opp} "
+                                                          f"played last night ({opp_prior[-1]['date']})."))
+        if rest == 2 and sp > 0:
+            out.append(entry("road_fresh_dog", team, opp, f"{team} is a {sp:+g} road underdog on 2 days' rest; {opp} "
+                                                          f"played last night ({opp_prior[-1]['date']})."))
+    if False and is_home and rest == 1 and orest >= 2:  # Tired hosts, retired 2026-11-14
         out.append(entry("tired_hosts", team, opp, f"{team} played last night ({last['date']}) and is at home vs {opp}, "
                                                    f"which has had {orest} days since its last game."))
     # Letdown storylines: a 5+ favorite vs a .450-or-worse team.

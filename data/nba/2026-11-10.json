@@ -234,22 +234,6 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
-          "key": "tired_hosts",
-          "name": "Tired hosts",
-          "team": "Phoenix Suns",
-          "says": "fade",
-          "fact": "Phoenix Suns played last night (2026-11-09) and is at home vs LA Clippers, which has had 2 days since its last game.",
-          "record": "389-318",
-          "pct": 55.0,
-          "leans": "LA Clippers",
-          "leanPct": 55.0,
-          "against": false,
-          "backfill": true,
-          "result": "miss"
-        },
-        {
-          "weight": 1,
           "live": "2-5",
           "key": "quiet_giant",
           "name": "The quiet giant vs the hype machine",
@@ -260,6 +244,22 @@
           "pct": 55.3,
           "leans": "LA Clippers",
           "leanPct": 55.3,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "road_fresh_dog",
+          "name": "Fresh underdog on the road",
+          "team": "LA Clippers",
+          "says": "back",
+          "fact": "LA Clippers is a +3.5 road underdog on 2 days' rest; Phoenix Suns played last night (2026-11-09).",
+          "record": "162-119",
+          "pct": 57.7,
+          "leans": "LA Clippers",
+          "leanPct": 57.7,
           "against": false,
           "backfill": true,
           "result": "miss"
