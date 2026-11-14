@@ -303,6 +303,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   pick would fire if a listed-but-not-Out player sits (questionable,
   doubtful, day-to-day), the scripts write `statsWatch` / `totalsWatch` and
   the card shows an "Injury watch" until the game is final.
+- Game cards (2026-11-14 redesign, the user approved screenshots first):
+  `matchupHeader` (team rows with a colored badge, Away/Home, spread chip and
+  moneyline, a time/Final pill; final scores replace the lines and the loser is
+  dimmed), a two-team color stripe on top (`--ca`/`--ch`), `leanMeter` (models
+  not sitting out + the storylines' net lean, as a bar), accented model
+  badges (`.badge` left border in the model's color; sat-out dashed). Team
+  colors/abbreviations: `TEAM_COLORS`/`TEAM_ABBR` (NBA, NFL), `TEAM_COLORS2`
+  second colors used when a color is near-black or the two teams look alike
+  (`gameColors`); other teams get a hashed color and initials.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page

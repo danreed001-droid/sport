@@ -185,10 +185,47 @@ details.tv table{min-width:0;}
 .stepbtn:focus-visible{outline:2px solid var(--ledger);outline-offset:1px;}
 .logmore{display:flex;align-items:center;gap:12px;margin-top:10px;font-size:12px;color:var(--muted);}
 .logmore button{font:inherit;font-size:12px;font-weight:600;background:var(--surface);color:var(--ink);border:1px solid var(--rule-2);border-radius:8px;padding:6px 12px;cursor:pointer;}
-.games{display:flex;flex-direction:column;gap:12px;}
+.games{display:flex;flex-direction:column;gap:14px;}
+/* Card redesign (2026-11-14): team-colored matchup header, lean meter, accented model badges. */
+.game{position:relative;overflow:hidden;}
+.game::before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--ca,#888) 0%,var(--ca,#888) 48%,var(--ch,#888) 52%,var(--ch,#888) 100%);opacity:.9;}
+.mu{display:grid;grid-template-columns:1fr auto;gap:8px 14px;align-items:start;padding-top:4px;}
+.mu-rows{display:flex;flex-direction:column;gap:6px;min-width:0;}
+.mu-row{display:grid;grid-template-columns:34px 1fr auto;align-items:center;gap:10px;}
+.tbadge{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Big Shoulders Display',sans-serif;font-weight:800;font-size:13.5px;letter-spacing:.02em;color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.18),0 1px 2px rgba(0,0,0,.35);text-shadow:0 1px 1px rgba(0,0,0,.35);}
+.tbadge.sm{display:inline-flex;vertical-align:middle;width:18px;height:18px;font-size:8.5px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.2);}
+.mu-name{font-family:'Big Shoulders Display',sans-serif;font-size:20px;font-weight:700;line-height:1.05;min-width:0;}
+.mu-name .ha{display:block;font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:500;letter-spacing:.1em;color:var(--muted);text-transform:uppercase;}
+.mu-row.lost .mu-name,.mu-row.lost .mu-score{opacity:.55;}
+.mu-score{font-family:'Big Shoulders Display',sans-serif;font-size:24px;font-weight:800;min-width:2ch;text-align:right;}
+.mu-line{font-family:'IBM Plex Mono',monospace;font-size:12px;text-align:right;white-space:nowrap;display:flex;gap:6px;justify-content:flex-end;}
+.mu-line .sp{background:var(--surface-2);border:1px solid var(--rule);border-radius:6px;padding:2px 7px;font-weight:600;color:var(--ink);}
+.mu-line .ml{color:var(--muted);padding:2px 0;}
+.mu-meta{display:flex;flex-direction:column;align-items:flex-end;gap:5px;}
+.mu-status{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:600;padding:3px 8px;border-radius:999px;background:var(--surface-2);border:1px solid var(--rule-2);white-space:nowrap;}
+.mu-status.final{background:var(--ink);color:var(--surface);border-color:var(--ink);}
+.mu-draw{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:var(--muted);padding-left:44px;}
+.meter{display:flex;flex-direction:column;gap:5px;}
+.meter-bar{position:relative;height:10px;border-radius:999px;background:var(--surface-2);overflow:hidden;display:flex;}
+.meter-bar span{display:block;height:100%;}
+.meter-bar .mid{position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:var(--surface);}
+:root[data-theme="dark"] .meter-bar span,:root[data-theme="dark"] .game::before{filter:brightness(1.55) saturate(1.15);}
+:root[data-theme="dark"] .tbadge{box-shadow:inset 0 0 0 2px rgba(255,255,255,.28),0 1px 2px rgba(0,0,0,.35);}
+.meter-lbl{display:flex;justify-content:space-between;gap:10px;font-size:11.5px;color:var(--muted);}
+.meter-lbl b{color:var(--ink);}
+.meter-lbl .lean{font-weight:700;color:var(--ink);}
+.badge{position:relative;border:1px solid var(--rule);border-left:3px solid var(--bc,var(--rule-2));background:linear-gradient(180deg,var(--surface-2),transparent 160%);transition:transform .12s ease,border-color .12s ease;}
+.badge:hover{transform:translateY(-1px);}
+.badge.ledger{--bc:var(--ledger-ink);} .badge.opinion{--bc:var(--opinion-ink);} .badge.trend{--bc:var(--trend-ink);} .badge.blowout{--bc:var(--blowout-ink);}
+.badge.stats{--bc:var(--stats-ink);} .badge.nflstats{--bc:var(--nflstats-ink);} .badge.ncaabstats{--bc:var(--ncaabstats-ink);} .badge.totals{--bc:var(--totals-ink);}
+.badge.satout{border-style:dashed;border-left-style:solid;opacity:.72;}
+.sidesline{display:flex;flex-direction:column;gap:4px;}
+.sidesline .side{display:block;}
+.meter-lbl > span{display:inline-flex;align-items:center;gap:5px;flex-wrap:wrap;}
 .game{background:var(--surface);border:1px solid var(--rule);border-radius:12px;box-shadow:var(--shadow);padding:14px 16px 15px;display:flex;flex-direction:column;gap:11px;}
 .game-top{display:flex;justify-content:space-between;align-items:flex-start;gap:6px 14px;flex-wrap:wrap;}
 .teams{font-family:'Big Shoulders Display',sans-serif;font-size:21px;font-weight:700;line-height:1.1;}
+@media (max-width:520px){.mu{grid-template-columns:1fr;}.mu-meta{flex-direction:row;align-items:center;justify-content:space-between;}.mu-name{font-size:18px;}}
 .teams .sc{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--muted);margin-left:8px;}
 .sub{font-size:11.5px;color:var(--muted);font-family:'IBM Plex Mono',monospace;margin-top:2px;}
 .lines{font-size:11.5px;color:var(--muted);font-family:'IBM Plex Mono',monospace;text-align:right;}
@@ -1191,12 +1228,113 @@ footer b{color:var(--ink);}
     });
     var teams = Object.keys(bySide);
     if(!teams.length) return '';
-    return '<div class="sidesline">'+teams.map(function(t){ return esc(t)+': '+bySide[t].join(', '); }).join('<br>')
+    return '<div class="sidesline">'+teams.map(function(t){ return '<div class="side">'+teamBadge(t,true)+' <b>'+esc(t)+'</b>: '+bySide[t].join(', ')+'</div>'; }).join('')
       + '<div class="muted" style="font-size:11px;margin-top:2px">Each model\'s win % '+(sport==='soccer' ? 'on the moneyline' : 'against the spread')+' this season in this sport.</div></div>';
+  }
+  // ---- team colors and badges (matchup header, lean meter) ----
+  var TEAM_COLORS = {
+    'Atlanta Hawks':'#E03A3E','Boston Celtics':'#007A33','Brooklyn Nets':'#3a3a3a','Charlotte Hornets':'#1D1160','Chicago Bulls':'#CE1141',
+    'Cleveland Cavaliers':'#860038','Dallas Mavericks':'#00538C','Denver Nuggets':'#0E2240','Detroit Pistons':'#C8102E','Golden State Warriors':'#1D428A',
+    'Houston Rockets':'#CE1141','Indiana Pacers':'#002D62','LA Clippers':'#C8102E','Los Angeles Clippers':'#C8102E','Los Angeles Lakers':'#552583','LA Lakers':'#552583',
+    'Memphis Grizzlies':'#5D76A9','Miami Heat':'#98002E','Milwaukee Bucks':'#00471B','Minnesota Timberwolves':'#0C2340','New Orleans Pelicans':'#0C2340',
+    'New York Knicks':'#006BB6','Oklahoma City Thunder':'#007AC1','Orlando Magic':'#0077C0','Philadelphia 76ers':'#006BB6','Phoenix Suns':'#E56020',
+    'Portland Trail Blazers':'#E03A3E','Sacramento Kings':'#5A2D81','San Antonio Spurs':'#8A8D8F','Toronto Raptors':'#CE1141','Utah Jazz':'#4B2E83','Washington Wizards':'#002B5C',
+    'Arizona Cardinals':'#97233F','Atlanta Falcons':'#A71930','Baltimore Ravens':'#241773','Buffalo Bills':'#00338D','Carolina Panthers':'#0085CA','Chicago Bears':'#0B162A',
+    'Cincinnati Bengals':'#FB4F14','Cleveland Browns':'#311D00','Dallas Cowboys':'#041E42','Denver Broncos':'#FB4F14','Detroit Lions':'#0076B6','Green Bay Packers':'#203731',
+    'Houston Texans':'#03202F','Indianapolis Colts':'#002C5F','Jacksonville Jaguars':'#006778','Kansas City Chiefs':'#E31837','Las Vegas Raiders':'#2b2b2b','Los Angeles Chargers':'#0080C6',
+    'Los Angeles Rams':'#003594','Miami Dolphins':'#008E97','Minnesota Vikings':'#4F2683','New England Patriots':'#002244','New Orleans Saints':'#B3995D','New York Giants':'#0B2265',
+    'New York Jets':'#125740','Philadelphia Eagles':'#004C54','Pittsburgh Steelers':'#FFB612','San Francisco 49ers':'#AA0000','Seattle Seahawks':'#002244','Tampa Bay Buccaneers':'#D50A0A',
+    'Tennessee Titans':'#4B92DB','Washington Commanders':'#5A1414'
+  };
+  var TEAM_ABBR = {
+    'Atlanta Hawks':'ATL','Boston Celtics':'BOS','Brooklyn Nets':'BKN','Charlotte Hornets':'CHA','Chicago Bulls':'CHI','Cleveland Cavaliers':'CLE','Dallas Mavericks':'DAL',
+    'Denver Nuggets':'DEN','Detroit Pistons':'DET','Golden State Warriors':'GSW','Houston Rockets':'HOU','Indiana Pacers':'IND','LA Clippers':'LAC','Los Angeles Clippers':'LAC',
+    'Los Angeles Lakers':'LAL','LA Lakers':'LAL','Memphis Grizzlies':'MEM','Miami Heat':'MIA','Milwaukee Bucks':'MIL','Minnesota Timberwolves':'MIN','New Orleans Pelicans':'NOP',
+    'New York Knicks':'NYK','Oklahoma City Thunder':'OKC','Orlando Magic':'ORL','Philadelphia 76ers':'PHI','Phoenix Suns':'PHX','Portland Trail Blazers':'POR',
+    'Sacramento Kings':'SAC','San Antonio Spurs':'SAS','Toronto Raptors':'TOR','Utah Jazz':'UTA','Washington Wizards':'WAS',
+    'Arizona Cardinals':'ARI','Atlanta Falcons':'ATL','Baltimore Ravens':'BAL','Buffalo Bills':'BUF','Carolina Panthers':'CAR','Chicago Bears':'CHI','Cincinnati Bengals':'CIN',
+    'Cleveland Browns':'CLE','Dallas Cowboys':'DAL','Denver Broncos':'DEN','Detroit Lions':'DET','Green Bay Packers':'GB','Houston Texans':'HOU','Indianapolis Colts':'IND',
+    'Jacksonville Jaguars':'JAX','Kansas City Chiefs':'KC','Las Vegas Raiders':'LV','Los Angeles Chargers':'LAC','Los Angeles Rams':'LAR','Miami Dolphins':'MIA',
+    'Minnesota Vikings':'MIN','New England Patriots':'NE','New Orleans Saints':'NO','New York Giants':'NYG','New York Jets':'NYJ','Philadelphia Eagles':'PHI',
+    'Pittsburgh Steelers':'PIT','San Francisco 49ers':'SF','Seattle Seahawks':'SEA','Tampa Bay Buccaneers':'TB','Tennessee Titans':'TEN','Washington Commanders':'WAS'
+  };
+  // Second colors, used when both teams' main colors look alike (the lean meter, the top stripe).
+  var TEAM_COLORS2 = {
+    'Atlanta Hawks':'#C1D32F','Boston Celtics':'#BA9653','Brooklyn Nets':'#9a9a9a','Charlotte Hornets':'#00788C','Chicago Bulls':'#9a9a9a','Cleveland Cavaliers':'#FDBB30',
+    'Dallas Mavericks':'#B8C4CA','Denver Nuggets':'#FEC524','Detroit Pistons':'#1D42BA','Golden State Warriors':'#FFC72C','Houston Rockets':'#9a9a9a','Indiana Pacers':'#FDBB30',
+    'LA Clippers':'#1D428A','Los Angeles Clippers':'#1D428A','Los Angeles Lakers':'#FDB927','LA Lakers':'#FDB927','Memphis Grizzlies':'#F5B112','Miami Heat':'#F9A01B',
+    'Milwaukee Bucks':'#EEE1C6','Minnesota Timberwolves':'#78BE20','New Orleans Pelicans':'#B4975A','New York Knicks':'#F58426','Oklahoma City Thunder':'#EF3B24',
+    'Orlando Magic':'#C4CED4','Philadelphia 76ers':'#ED174C','Phoenix Suns':'#1D1160','Portland Trail Blazers':'#9a9a9a','Sacramento Kings':'#63727A',
+    'San Antonio Spurs':'#2b2b2b','Toronto Raptors':'#A1A1A4','Utah Jazz':'#F9A01B','Washington Wizards':'#E31837'
+  };
+  function hexRgb(c){ var m = /^#([0-9a-f]{6})$/i.exec(c||''); if(!m) return null; var n = parseInt(m[1],16); return [n>>16, (n>>8)&255, n&255]; }
+  function alike(c1, c2){ var a = hexRgb(c1), b = hexRgb(c2); if(!a || !b) return c1===c2; return Math.abs(a[0]-b[0])+Math.abs(a[1]-b[1])+Math.abs(a[2]-b[2]) < 120; }
+  // The pair of colors for a game: the home team switches to its second color if the two look alike.
+  function dark(c){ var r = hexRgb(c); return r ? (0.2126*r[0] + 0.7152*r[1] + 0.0722*r[2]) < 45 : false; }
+  // A team's color for bars: its second color when the main one is near-black/navy.
+  function barColor(name){ var c = teamColor(name); return dark(c) && TEAM_COLORS2[name] ? TEAM_COLORS2[name] : c; }
+  function gameColors(g){
+    var ca = barColor(g.away), ch = barColor(g.home);
+    if(alike(ca, ch)){
+      var other = ch === teamColor(g.home) ? TEAM_COLORS2[g.home] : teamColor(g.home);
+      ch = other || (ch.indexOf('hsl')===0 ? ch.replace(/(\d+)%\)$/, '62%)') : '#9a9a9a');
+    }
+    return [ca, ch];
+  }
+  function teamColor(name){
+    if(TEAM_COLORS[name]) return TEAM_COLORS[name];
+    var h = 0; String(name||'').split('').forEach(function(c){ h = (h*31 + c.charCodeAt(0)) % 360; });
+    return 'hsl('+h+', 55%, 38%)';
+  }
+  function teamAbbr(name){
+    if(TEAM_ABBR[name]) return TEAM_ABBR[name];
+    var w = String(name||'').replace(/[^A-Za-z0-9& ]/g,' ').split(/\s+/).filter(function(x){ return x && !/^(of|the|fc|cf|sc|afc|de|la|el)$/i.test(x); });
+    if(!w.length) return '?';
+    if(w.length===1) return w[0].slice(0,3).toUpperCase();
+    return w.slice(0,3).map(function(x){ return x[0]; }).join('').toUpperCase();
+  }
+  function teamBadge(name, small){
+    return '<span class="tbadge'+(small?' sm':'')+'" style="background:'+teamColor(name)+'" title="'+esc(name)+'">'+esc(teamAbbr(name))+'</span>';
+  }
+  function matchupHeader(sport, g, who){
+    var hasScore = num(g.awayScore) && num(g.homeScore);
+    var row = function(side){
+      var team = side==='away' ? g.away : g.home;
+      var sp = side==='away' ? g.awaySpread : g.homeSpread, ml = side==='away' ? g.awayMoneyline : g.homeMoneyline;
+      var sc = side==='away' ? g.awayScore : g.homeScore, other = side==='away' ? g.homeScore : g.awayScore;
+      var lost = g.final && hasScore && sc < other;
+      return '<div class="mu-row'+(lost?' lost':'')+'">'+teamBadge(team)
+        + '<div class="mu-name"><span class="ha">'+(side==='away'?'Away':'Home')+'</span>'+esc(team)+'</div>'
+        + (hasScore ? '<div class="mu-score">'+sc+'</div>'
+          : '<div class="mu-line">'+(num(sp) ? '<span class="sp">'+sgn(sp)+'</span>' : '')+(num(ml) ? '<span class="ml">'+sgn(ml)+'</span>' : '')+'</div>')
+        + '</div>';
+    };
+    var lines = hasScore ? '<div class="lines">'+lineText(g)+'</div>' : '';
+    var hand = g.manualFields && g.manualFields.length ? '<span class="handnote" title="Entered on the Enter data by hand page">\u270e hand-entered: '+esc(manualLabel(g.manualFields))+'</span>' : '';
+    return '<div class="mu"><div class="mu-rows">'+row('away')+row('home')
+      + (num(g.drawMoneyline) && !hasScore ? '<div class="mu-draw">Draw '+sgn(g.drawMoneyline)+'</div>' : '')+'</div>'
+      + '<div class="mu-meta"><span class="mu-status'+(g.final?' final':'')+'">'+(g.final ? 'Final' : esc(g.time||''))+'</span>'+lines+hand+'</div></div>'
+      + (who ? '<div style="margin-top:-6px">'+who+'</div>' : '');
+  }
+  // Lean meter: which side the models (not sitting out) and the storylines point to.
+  function leanMeter(sport, g){
+    var sit = vetoed(g), a = 0, h = 0;
+    VETO_MODELS.forEach(function(m){ var t = m[2](g); if(!t || sit.indexOf(m[1])>=0) return; if(t===g.away) a++; else if(t===g.home) h++; });
+    var net = storyNet(g), sa = net<0 ? -net : 0, sh = net>0 ? net : 0;
+    var A = a + sa, H = h + sh;
+    if(!A && !H) return '';
+    var pa = Math.round(100*A/(A+H));
+    var lean = A===H ? 'Split' : (A>H ? g.away : g.home);
+    var mtxt = function(x){ return x+' model'+(x===1?'':'s'); };
+    var gc = gameColors(g);
+    return '<div class="meter"><div class="meter-bar"><span style="width:'+pa+'%;background:'+gc[0]+'"></span><span style="width:'+(100-pa)+'%;background:'+gc[1]+'"></span><i class="mid"></i></div>'
+      + '<div class="meter-lbl"><span>'+teamBadge(g.away,true)+' <b>'+mtxt(a)+'</b>'+(sa ? ' + stories '+sa : '')+'</span>'
+      + '<span class="lean">'+(A===H ? 'Split' : 'Leans '+esc(lean))+'</span>'
+      + '<span><b>'+mtxt(h)+'</b>'+(sh ? ' + stories '+sh : '')+' '+teamBadge(g.home,true)+'</span></div></div>';
   }
   function satBadge(cls, label, g){
     var lean = storyNet(g) > 0 ? g.home : g.away;
-    return '<div class="badge '+cls+'"><span class="lbl">'+esc(label)+'</span><span class="val none">Sat out</span><div class="muted" style="font-size:11px">storylines lean '+esc(lean)+'</div></div>';
+    return '<div class="badge '+cls+' satout"><span class="lbl">'+esc(label)+'</span><span class="val none">Sat out</span><div class="muted" style="font-size:11px">storylines lean '+esc(lean)+'</div></div>';
   }
   function vetoLine(g){
     var v = vetoed(g);
@@ -1449,9 +1587,10 @@ footer b{color:var(--ink);}
         + g.nflStatsRules.map(function(r){ return '<li><b>Rule '+r.rule+' · '+esc(r.name)+'</b><br><span class="mono">Backtest '+esc(r.backtest)+' · '+esc(ruleSeason(r.rule, DATA.nflStatsRules))+'</span><br>'+esc(r.detail)+'</li>'; }).join('')
         + '</ul></details>';
     }
-    return '<article class="game">'
-      + '<div class="game-top"><div><div class="teams">'+esc(g.away)+' @ '+esc(g.home)+score+'</div><div class="sub">'+esc(g.time||'')+'</div>'+who+'</div>'
-      + '<div class="lines">'+lineText(g)+(g.manualFields && g.manualFields.length ? '<br><span class="handnote" title="Entered on the Enter data by hand page">\u270e hand-entered: '+esc(manualLabel(g.manualFields))+'</span>' : '')+'</div></div>'
+    var gcol = gameColors(g);
+    return '<article class="game" style="--ca:'+gcol[0]+';--ch:'+gcol[1]+'">'
+      + matchupHeader(sport, g, who)
+      + leanMeter(sport, g)
       + '<div class="models">'+models+'</div>'+sidesLine(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
