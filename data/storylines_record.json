@@ -75,14 +75,14 @@
  },
  "nba": {
   "champions": {
-   "l": 1,
+   "l": 2,
    "p": 0,
    "w": 3
   },
   "emperor": {
    "l": 0,
    "p": 0,
-   "w": 3
+   "w": 5
   },
   "escape": {
    "l": 0,
@@ -90,19 +90,24 @@
    "w": 1
   },
   "fat_happy": {
-   "l": 2,
+   "l": 3,
    "p": 0,
    "w": 4
   },
   "friday": {
-   "l": 4,
+   "l": 6,
+   "p": 0,
+   "w": 5
+  },
+  "ghost_town": {
+   "l": 2,
    "p": 0,
    "w": 2
   },
-  "ghost_town": {
+  "jet_lag": {
    "l": 1,
    "p": 0,
-   "w": 2
+   "w": 1
   },
   "leaky": {
    "l": 1,
@@ -115,9 +120,9 @@
    "w": 1
   },
   "prodigal": {
-   "l": 1,
+   "l": 2,
    "p": 0,
-   "w": 0
+   "w": 2
   },
   "quiet_giant": {
    "l": 5,
@@ -130,7 +135,7 @@
    "w": 1
   },
   "schedule_loss": {
-   "l": 5,
+   "l": 7,
    "p": 0,
    "w": 5
   },
@@ -162,19 +167,19 @@
    "w": 3
   },
   "big_stage": {
-   "l": 2,
-   "p": 0,
-   "w": 1
-  },
-  "first_road": {
-   "l": 1,
+   "l": 3,
    "p": 0,
    "w": 2
   },
-  "last_season_grudge": {
-   "l": 6,
+  "first_road": {
+   "l": 2,
    "p": 0,
-   "w": 5
+   "w": 3
+  },
+  "last_season_grudge": {
+   "l": 7,
+   "p": 0,
+   "w": 9
   },
   "midweek_road": {
    "l": 1,
@@ -182,9 +187,9 @@
    "w": 2
   },
   "nonconf_road": {
-   "l": 1,
+   "l": 2,
    "p": 0,
-   "w": 2
+   "w": 3
   },
   "november_hype": {
    "l": 3,
@@ -201,10 +206,20 @@
    "p": 0,
    "w": 0
   },
-  "top5_huge": {
-   "l": 3,
+  "sandwich": {
+   "l": 1,
    "p": 0,
    "w": 2
+  },
+  "steamroller": {
+   "l": 0,
+   "p": 0,
+   "w": 1
+  },
+  "top5_huge": {
+   "l": 4,
+   "p": 0,
+   "w": 5
   }
  },
  "nfl": {

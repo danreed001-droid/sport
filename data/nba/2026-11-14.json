@@ -17,12 +17,12 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": 417.0,
       "awayMoneyline": -556.0,
-      "statsSpread": 10.5,
+      "statsSpread": 11.5,
       "statsLine": {
-        "homeSpread": 10.5,
-        "awaySpread": -10.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
+        "homeSpread": 11.5,
+        "awaySpread": -11.5,
+        "homeSpreadOdds": -107,
+        "awaySpreadOdds": -113,
         "homeMoneyline": 417,
         "awayMoneyline": -556
       },
@@ -35,14 +35,17 @@
           "name": "The prodigal star",
           "team": "New Orleans Pelicans",
           "says": "back",
-          "fact": "New Orleans Pelicans' top scorer Zion Williamson (21.7 a game) returned last game after missing the one before; New Orleans Pelicans is a +10.5 underdog.",
+          "fact": "New Orleans Pelicans' top scorer Zion Williamson (21.7 a game) returned last game after missing the one before; New Orleans Pelicans is a +11.5 underdog.",
           "record": "171-208",
           "pct": 45.1,
           "leans": "Denver Nuggets",
           "leanPct": 54.9,
           "against": true
         }
-      ]
+      ],
+      "gameTotal": 234.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909981",
@@ -59,10 +62,9 @@
       "statsLine": {
         "homeSpread": -3.5,
         "awaySpread": 3.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": -140,
-        "awayMoneyline": 118
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -135,
+        "awayMoneyline": 114
       },
       "totalsLine": 231.5,
       "totalsFavors": "Over",
@@ -74,7 +76,10 @@
           "backtest": "67.2% overs, 41-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-8"
         }
       ],
-      "totalsCheck": "Rule 16: Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers."
+      "totalsCheck": "Rule 16: Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers.",
+      "gameTotal": 231.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909982",
@@ -87,14 +92,14 @@
       "awaySpreadOdds": -106.0,
       "homeMoneyline": 152.0,
       "awayMoneyline": -181.0,
-      "statsSpread": 5.5,
+      "statsSpread": 4.5,
       "statsLine": {
-        "homeSpread": 5.5,
-        "awaySpread": -5.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": 152,
-        "awayMoneyline": -181
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 160,
+        "awayMoneyline": -191
       },
       "statsFavors": "Miami Heat",
       "statsRules": [
@@ -106,7 +111,7 @@
         }
       ],
       "statsCheck": "Rule 66: Backing Miami Heat: has missed the spread by 9.9 a game over its last five, and Detroit Pistons's last game (144-140 at Washington Wizards) went to overtime -- 65.1% ATS, 84-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 31-18; 2024-now 23-12.",
-      "totalsLine": 226.5,
+      "totalsLine": 228.5,
       "storylines": [
         {
           "weight": 2,
@@ -122,7 +127,10 @@
           "leanPct": 60.0,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909983",
@@ -139,12 +147,15 @@
       "statsLine": {
         "homeSpread": -5.5,
         "awaySpread": 5.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -195,
-        "awayMoneyline": 163
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -117,
+        "homeMoneyline": -224,
+        "awayMoneyline": 186
       },
-      "totalsLine": 225.5
+      "totalsLine": 226.5,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401909984",
@@ -176,6 +187,20 @@
       "storylines": [
         {
           "weight": 1,
+          "live": "4-2",
+          "key": "fat_happy",
+          "name": "Fat and happy",
+          "team": "Minnesota Timberwolves",
+          "says": "fade",
+          "fact": "Minnesota Timberwolves has won 5 straight and is a -14.5 favorite.",
+          "record": "156-135",
+          "pct": 53.6,
+          "leans": "Chicago Bulls",
+          "leanPct": 53.6,
+          "against": false
+        },
+        {
+          "weight": 1,
           "live": "2-5",
           "key": "quiet_giant",
           "name": "The quiet giant vs the hype machine",
@@ -187,8 +212,41 @@
           "leans": "Minnesota Timberwolves",
           "leanPct": 55.3,
           "against": false
+        },
+        {
+          "weight": 1,
+          "live": "2-1",
+          "key": "ghost_town",
+          "name": "Ghost town",
+          "team": "Chicago Bulls",
+          "says": "fade",
+          "fact": "Chicago Bulls' top scorer Norman Powell (19.2 a game) missed its last two games; Chicago Bulls is a +14.5 underdog.",
+          "record": "822-741",
+          "pct": 52.6,
+          "leans": "Minnesota Timberwolves",
+          "leanPct": 52.6,
+          "against": false
         }
-      ]
+      ],
+      "gameTotal": 236.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "homeSpread": -14.5,
+      "awaySpread": 14.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": -840.0,
+      "awayMoneyline": 580.0,
+      "statsSpread": -14.5,
+      "statsLine": {
+        "homeSpread": -14.5,
+        "awaySpread": 14.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": -840,
+        "awayMoneyline": 580
+      },
+      "totalsLine": 236.5
     }
   ]
 }

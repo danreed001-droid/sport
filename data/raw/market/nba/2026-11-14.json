@@ -1,7 +1,7 @@
 {
  "date": "2026-11-14",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-14T05:40:26+00:00",
+ "fetchedAt": "2026-11-14T06:28:27+00:00",
  "games": [
   {
    "away": "Denver Nuggets",
@@ -11,17 +11,17 @@
    "spread": {
     "home": 11.5,
     "open": 11.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 27,
+    "money_home": 12
    },
    "total": {
     "now": 234,
     "open": 233.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 57,
+    "money_over": 54
    },
    "moneyline": {
-    "home": 427,
+    "home": 425,
     "away": -590
    },
    "rlmFavorite": null
@@ -32,7 +32,7 @@
    "start": "2026-11-15T00:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -3,
+    "home": -2.5,
     "open": -3.5,
     "tix_home": null,
     "money_home": null
@@ -44,8 +44,8 @@
     "money_over": null
    },
    "moneyline": {
-    "home": -142,
-    "away": 120
+    "home": -135,
+    "away": 110
    },
    "rlmFavorite": null
   },
@@ -67,8 +67,8 @@
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": -1000,
+    "away": 625
    },
    "rlmFavorite": null
   },
@@ -80,18 +80,18 @@
    "spread": {
     "home": 4.5,
     "open": 5.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 57,
+    "money_home": 56
    },
    "total": {
-    "now": 226.5,
+    "now": 227.5,
     "open": 226.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 74,
+    "money_over": 78
    },
    "moneyline": {
-    "home": 148,
-    "away": -180
+    "home": 155,
+    "away": -190
    },
    "rlmFavorite": null
   },
@@ -107,14 +107,14 @@
     "money_home": null
    },
    "total": {
-    "now": 225.5,
+    "now": 226.5,
     "open": 224.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": -195,
-    "away": 163
+    "home": -220,
+    "away": 180
    },
    "rlmFavorite": null
   }

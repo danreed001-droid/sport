@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-14",
+  "weekday": "Saturday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-14T06:28:34Z",
+  "games": [
+    {
+      "espnId": "401919847",
+      "away": "Stonehill Skyhawks",
+      "home": "Texas Tech Red Raiders",
+      "time": "1:00 PM ET",
+      "homeSpread": -40.5,
+      "awaySpread": 40.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "total": 142.5
+    },
+    {
+      "espnId": "401921689",
+      "away": "LSU Tigers",
+      "home": "Gonzaga Bulldogs",
+      "time": "3:30 PM ET",
+      "homeSpread": -5.5,
+      "awaySpread": 5.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -238,
+      "awayMoneyline": 195,
+      "total": 161.5
+    }
+  ]
+}
