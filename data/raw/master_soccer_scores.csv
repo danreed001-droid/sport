@@ -11,7 +11,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929710,2026-11-14,Scheduled,United States,0,-,Haiti,0,-,-,-,4:30 PM
 401929773,2026-11-14,Scheduled,Belize,0,-,St. Vincent and the Grenadines,0,-,-,-,7:00 PM
 401929772,2026-11-14,Scheduled,Mexico,0,-,Jamaica,0,-,-,-,8:00 PM
-401861163,2026-11-14,Scheduled,Israel,0,-,Kosovo,0,-,-,-,9:00 AM
+401861163,2026-11-14,11',Israel,0,-,Kosovo,0,-,-,-,9:00 AM
 401861164,2026-11-14,Scheduled,Hungary,0,-,Georgia,0,-,-,-,12:00 PM
 401861165,2026-11-14,Scheduled,Wales,0,-,Norway,0,-,-,-,12:00 PM
 401861170,2026-11-14,Scheduled,Republic of Ireland,0,-,Austria,0,-,-,-,2:45 PM
@@ -22,9 +22,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401876988,2026-11-14,Scheduled,Monterrey,0,-,Querétaro,0,-,-,-,6:00 PM
 401933864,2026-11-14,FT,Cook Islands,0,-,Tahiti,4,-,-,-,12:30 AM
 401930879,2026-11-14,FT,Yemen,1,-,Bahrain,3,-,-,-,1:00 AM
-401916337,2026-11-14,70',Brazil,1,-,Japan,2,-,-,-,5:15 AM
-401930236,2026-11-14,Scheduled,Malaysia,0,-,China,0,-,-,-,7:00 AM
-401930243,2026-11-14,Scheduled,Kyrgyz Republic,0,-,Chinese Taipei,0,-,-,-,7:00 AM
+401916337,2026-11-14,FT,Brazil,2,-,Japan,3,-,-,-,5:15 AM
+401930236,2026-11-14,FT,Malaysia,0,-,China,2,-,-,-,7:00 AM
+401930243,2026-11-14,FT,Kyrgyz Republic,0,-,Chinese Taipei,0,-,-,-,7:00 AM
 401932237,2026-11-14,Scheduled,Iran,0,-,Palestine,0,-,-,-,10:00 AM
 401906463,2026-11-14,Scheduled,India,0,-,New Zealand,0,-,-,-,10:10 PM
 401932858,2026-11-14,Scheduled,Montpellier,0,-,Balagne,0,-,-,-,8:00 AM
@@ -80,15 +80,15 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401932816,2026-11-14,Scheduled,Mazeres Uzos Rontignon,0,-,Stade Bordelais,0,-,-,-,1:00 PM
 401932824,2026-11-14,Scheduled,SC Amiens,0,-,Olympique des Membres de Cambrai Amerique,0,-,-,-,2:00 PM
 401933039,2026-11-14,Scheduled,Thionville,0,-,AS Tefana,0,-,-,-,11:00 PM
-401902863,2026-11-14,Scheduled,Crystal Palace,0,-,Manchester United,0,-,-,-,7:45 AM
-401902865,2026-11-14,Scheduled,Manchester City,0,-,Chelsea,0,-,-,-,8:30 AM
+401902863,2026-11-14,68',Crystal Palace,0,-,Manchester United,2,-,-,-,7:45 AM
+401902865,2026-11-14,41',Manchester City,0,-,Chelsea,0,-,-,-,8:30 AM
 401902861,2026-11-14,Scheduled,Everton,0,-,Tottenham Hotspur,0,-,-,-,10:00 AM
 401902862,2026-11-14,Scheduled,Liverpool,0,-,Brighton & Hove Albion,0,-,-,-,12:15 PM
 401931842,2026-11-14,Scheduled,Portishead Town,0,-,Dulwich Hamlet,0,-,-,-,10:00 AM
-401882458,2026-11-14,45',Tenerife,0,-,Espanyol,1,-,-,-,6:00 AM
+401882458,2026-11-14,FT,Tenerife,3,-,Espanyol,1,-,-,-,6:00 AM
 401882460,2026-11-14,Scheduled,Eibar,0,-,Alavés,0,-,-,-,12:00 PM
 401882456,2026-11-14,Scheduled,FC Badalona,0,-,Real Madrid,0,-,-,-,2:30 PM
-401885645,2026-11-14,Scheduled,Paris FC,0,-,Le Havre AC,0,-,-,-,9:00 AM
+401885645,2026-11-14,11',Paris FC,1,-,Le Havre AC,0,-,-,-,9:00 AM
 401885694,2026-11-14,Scheduled,Saint-Malo,0,-,OL Lyonnes,0,-,-,-,12:00 PM
 401885695,2026-11-14,Scheduled,Toulouse,0,-,Strasbourg,0,-,-,-,12:00 PM
 401885646,2026-11-14,Scheduled,FC Fleury 91,0,-,Montpellier,0,-,-,-,12:30 PM
@@ -105,26 +105,26 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401932077,2026-11-14,Scheduled,Pumas UNAM,0,-,Tigres UANL,0,-,-,-,6:00 PM
 401932062,2026-11-14,Scheduled,FC Juárez,0,-,Guadalajara,0,-,-,-,10:06 PM
 401915934,2026-11-14,Scheduled,AFC Toronto,0,-,Montreal Roses FC,0,-,-,-,2:00 PM
-401934157,2026-11-14,Scheduled,CSC Dumbravita,0,-,ACS Poli Timisoara,0,-,-,-,4:00 AM
-401934229,2026-11-14,Scheduled,Unirea Slobozia,0,-,FC Farul Constanta,0,-,-,-,4:00 AM
-401934260,2026-11-14,Scheduled,Bacau,0,-,Csíkszereda,0,-,-,-,4:30 AM
-401934263,2026-11-14,Scheduled,Rapid Bucuresti,0,-,FC Arges,0,-,-,-,5:00 AM
+401934157,2026-11-14,FT,CSC Dumbravita,1,-,ACS Poli Timisoara,4,-,-,-,4:00 AM
+401934229,2026-11-14,FT,Unirea Slobozia,0,-,FC Farul Constanta,2,-,-,-,4:00 AM
+401934260,2026-11-14,FT,Bacau,2,-,Csíkszereda,3,-,-,-,4:30 AM
+401934263,2026-11-14,FT,Rapid Bucuresti,1,-,FC Arges,0,-,-,-,5:00 AM
 401933655,2026-11-14,Scheduled,FC Inter Turku II,0,-,PK-35,0,-,-,-,5:15 AM
 401933884,2026-11-14,Scheduled,Pogon Grodzisk Mazowiecki,0,-,Legia Warsaw,0,-,-,-,5:30 AM
-401934231,2026-11-14,Scheduled,Olimpija Ljubljana,0,-,NK Lokomotiva,0,-,-,-,6:00 AM
-401933860,2026-11-14,Scheduled,PFC Nyva Vinnytsia,0,-,Obolon Kyiv,0,-,-,-,6:00 AM
-401933886,2026-11-14,Scheduled,Unia Skierniwice,0,-,Widzew Lodz,0,-,-,-,6:00 AM
+401934231,2026-11-14,FT,Olimpija Ljubljana,1,-,NK Lokomotiva,4,-,-,-,6:00 AM
+401933860,2026-11-14,FT,PFC Nyva Vinnytsia,1,-,Obolon Kyiv,3,-,-,-,6:00 AM
+401933886,2026-11-14,FT,Unia Skierniwice,0,-,Widzew Lodz,1,-,-,-,6:00 AM
 401933775,2026-11-14,Scheduled,SV Tasmania Berlin,0,-,BFC Dynamo Berlin,0,-,-,-,7:00 AM
 401933955,2026-11-14,Scheduled,FC Arsenal Tula,0,-,CSKA Moscow,0,-,-,-,7:00 AM
-401933958,2026-11-14,Scheduled,Otrant Ulcinj,0,-,Novi Pazar,0,-,-,-,7:00 AM
+401933958,2026-11-14,FT,Otrant Ulcinj,0,-,Novi Pazar,0,-,-,-,7:00 AM
 401934156,2026-11-14,Scheduled,Beselidhja,0,-,Vllaznia Shkoder,0,-,-,-,7:30 AM
 401933807,2026-11-14,Scheduled,Gimnasia La Plata,0,-,River Plate,0,-,-,-,8:00 AM
 401933778,2026-11-14,Scheduled,First Vienna FC 1894,0,-,SV Josko Ried,0,-,-,-,8:00 AM
 401933957,2026-11-14,Scheduled,Partizan Belgrade,0,-,PAOK,0,-,-,-,10:45 AM
-401933858,2026-11-14,TBD,FC Kharkiv,0,-,FC Zorya Luhansk,0,-,-,-,3:00 PM
+401933858,2026-11-14,FT,FC Kharkiv,3,-,FC Zorya Luhansk,1,-,-,-,5:00 AM
 401932876,2026-11-14,Scheduled,J-Lease FC,0,-,Oita Trinita,0,-,-,-,9:00 PM
 401931125,2026-11-14,Scheduled,Venezuela,0,-,Basque Country,0,-,-,-,2:00 PM
-401883114,2026-11-14,Scheduled,Castellón,0,-,Real Valladolid,0,-,-,-,8:00 AM
+401883114,2026-11-14,47',Castellón,0,-,Real Valladolid,0,-,-,-,8:00 AM
 401883134,2026-11-14,Scheduled,Sporting Gijón,0,-,Real Sociedad II,0,-,-,-,10:15 AM
 401883118,2026-11-14,Scheduled,FC Andorra,0,-,Almería,0,-,-,-,12:30 PM
 401883135,2026-11-14,Scheduled,Córdoba,0,-,Mallorca,0,-,-,-,12:30 PM
@@ -139,7 +139,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401880745,2026-11-14,Scheduled,Reading,0,-,Stockport County,0,-,-,-,10:00 AM
 401880744,2026-11-14,Scheduled,Barnsley,0,-,Wigan Athletic,0,-,-,-,10:00 AM
 401880743,2026-11-14,Postponed,Huddersfield Town,0,-,Wycombe Wanderers,0,-,-,-,10:00 AM
-401881273,2026-11-14,Scheduled,Cheltenham Town,0,-,Exeter City,0,-,-,-,7:30 AM
+401881273,2026-11-14,83',Cheltenham Town,0,-,Exeter City,1,-,-,-,7:30 AM
 401881276,2026-11-14,Scheduled,Chesterfield,0,-,Bristol Rovers,0,-,-,-,10:00 AM
 401881275,2026-11-14,Scheduled,Gillingham,0,-,Colchester United,0,-,-,-,10:00 AM
 401881274,2026-11-14,Scheduled,Newport County,0,-,Crewe Alexandra,0,-,-,-,10:00 AM
@@ -193,7 +193,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401860437,2026-11-14,Scheduled,Vila Nova,0,-,Fortaleza,0,-,-,-,2:30 PM
 401860441,2026-11-14,Scheduled,Botafogo-SP,0,-,Juventude,0,-,-,-,2:30 PM
 401860433,2026-11-14,Scheduled,Goiás,0,-,Sport,0,-,-,-,2:30 PM
-401933236,2026-11-14,Scheduled,Boston River,0,-,Central Español Fútbol Club,0,-,-,-,8:00 AM
+401933236,2026-11-14,52',Boston River,0,-,Central Español Fútbol Club,0,-,-,-,8:00 AM
 401933257,2026-11-14,Scheduled,Cerro,0,-,Deportivo Maldonado,0,-,-,-,2:30 PM
 401933256,2026-11-14,Scheduled,Albion FC,0,-,Nacional,0,-,-,-,6:00 PM
 401879607,2026-11-14,Scheduled,CD Guastatoya,0,-,Xelajú MC,0,-,-,-,4:00 PM
@@ -202,10 +202,10 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401899661,2026-11-14,Scheduled,Cacahuatique,0,-,Internacional Santa Tecla,0,-,-,-,7:00 PM
 401899279,2026-11-14,Scheduled,CD FAS,0,-,Alianza FC,0,-,-,-,9:00 PM
 401899735,2026-11-14,Scheduled,Luis Ángel Firpo,0,-,Isidro Metapán,0,-,-,-,9:00 PM
-401934182,2026-11-14,Scheduled,Bhutan,0,-,India,0,-,-,-,4:00 AM
+401934182,2026-11-14,FT,Bhutan,1,-,India,2,-,-,-,4:00 AM
 401934183,2026-11-14,Scheduled,Pakistan,0,-,Bangladesh,0,-,-,-,9:30 AM
-401930698,2026-11-14,55',Real Kashmir,2,-,Bengaluru United FC,1,-,-,-,5:30 AM
-401930697,2026-11-14,Scheduled,Gokulam Kerala FC,0,-,Nagaland United SC,0,-,-,-,8:00 AM
+401930698,2026-11-14,FT,Real Kashmir,2,-,Bengaluru United FC,2,-,-,-,5:30 AM
+401930697,2026-11-14,51',Gokulam Kerala FC,1,-,Nagaland United SC,0,-,-,-,8:00 AM
 401929759,2026-11-14,Scheduled,Cleveland State,0,-,Purdue Fort Wayne,0,-,-,-,1:00 PM
 401929717,2026-11-14,Scheduled,Charlotte,0,-,Tulsa,0,-,-,-,4:00 PM
 401929754,2026-11-14,Scheduled,Charleston,0,-,Hofstra,0,-,-,-,5:00 PM

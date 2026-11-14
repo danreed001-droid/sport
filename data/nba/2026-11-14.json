@@ -21,15 +21,15 @@
       "statsLine": {
         "homeSpread": 12.5,
         "awaySpread": -12.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -103,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
         "homeMoneyline": 443,
         "awayMoneyline": -597
       },
       "totalsLine": 235.5,
       "gameTotal": 235.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113
+      "gameTotalOverOdds": -109,
+      "gameTotalUnderOdds": -111
     },
     {
       "espnId": "401909981",
@@ -169,10 +169,10 @@
         "homeMoneyline": -167,
         "awayMoneyline": 140
       },
-      "totalsLine": 227.5,
-      "gameTotal": 227.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "totalsLine": 228.5,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "totalsFavors": "Under",
       "totalsRules": [
         {
@@ -243,7 +243,7 @@
           "name": "Fat and happy",
           "team": "Minnesota Timberwolves",
           "says": "fade",
-          "fact": "Minnesota Timberwolves has won 5 straight and is a -14.5 favorite.",
+          "fact": "Minnesota Timberwolves has won 5 straight and is a -15.5 favorite.",
           "record": "156-136",
           "pct": 53.4,
           "leans": "Chicago Bulls",
@@ -271,7 +271,7 @@
           "name": "Letdown spot",
           "team": "Minnesota Timberwolves",
           "says": "fade",
-          "fact": "Minnesota Timberwolves is a -14.5 favorite vs Chicago Bulls (2-9): it just beat Dallas Mavericks (0.636) by 39.",
+          "fact": "Minnesota Timberwolves is a -15.5 favorite vs Chicago Bulls (2-9): it just beat Dallas Mavericks (0.636) by 39.",
           "record": "358-301",
           "pct": 54.3,
           "leans": "Chicago Bulls",
@@ -285,7 +285,7 @@
           "name": "The prodigal star",
           "team": "Chicago Bulls",
           "says": "back",
-          "fact": "Chicago Bulls' top scorer Norman Powell (20.8 a game) returned last game after missing the one before; Chicago Bulls is a +14.5 underdog.",
+          "fact": "Chicago Bulls' top scorer Norman Powell (20.8 a game) returned last game after missing the one before; Chicago Bulls is a +15.5 underdog.",
           "record": "173-209",
           "pct": 45.3,
           "leans": "Minnesota Timberwolves",
@@ -294,8 +294,8 @@
         }
       ],
       "gameTotal": 235.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -107,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "homeSpread": -14.5,
       "awaySpread": 14.5,
       "homeSpreadOdds": -105.0,
