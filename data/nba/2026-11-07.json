@@ -180,6 +180,22 @@
       "storylines": [
         {
           "weight": 1,
+          "live": "0-0",
+          "key": "tired_hosts",
+          "name": "Tired hosts",
+          "team": "Atlanta Hawks",
+          "says": "fade",
+          "fact": "Atlanta Hawks played last night (2026-11-06) and is at home vs Brooklyn Nets, which has had 3 days since its last game.",
+          "record": "389-318",
+          "pct": 55.0,
+          "leans": "Brooklyn Nets",
+          "leanPct": 55.0,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
           "live": "3-2",
           "key": "letdown",
           "name": "Letdown spot",
@@ -288,6 +304,22 @@
           "against": false,
           "backfill": true,
           "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "tired_hosts",
+          "name": "Tired hosts",
+          "team": "Cleveland Cavaliers",
+          "says": "fade",
+          "fact": "Cleveland Cavaliers played last night (2026-11-06) and is at home vs New York Knicks, which has had 3 days since its last game.",
+          "record": "389-318",
+          "pct": 55.0,
+          "leans": "New York Knicks",
+          "leanPct": 55.0,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
         }
       ]
     },

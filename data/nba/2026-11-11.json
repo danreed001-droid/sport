@@ -186,7 +186,25 @@
       "statsCorrect": false,
       "statsReturn": -100.0,
       "statsCover": false,
-      "statsSpreadReturn": -100.0
+      "statsSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "tired_hosts",
+          "name": "Tired hosts",
+          "team": "New York Knicks",
+          "says": "fade",
+          "fact": "New York Knicks played last night (2026-11-10) and is at home vs Cleveland Cavaliers, which has had 2 days since its last game.",
+          "record": "389-318",
+          "pct": 55.0,
+          "leans": "Cleveland Cavaliers",
+          "leanPct": 55.0,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "4-1",
@@ -536,6 +554,22 @@
       "statsCover": false,
       "statsSpreadReturn": -100.0,
       "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "tired_hosts",
+          "name": "Tired hosts",
+          "team": "Milwaukee Bucks",
+          "says": "fade",
+          "fact": "Milwaukee Bucks played last night (2026-11-10) and is at home vs Los Angeles Lakers, which has had 2 days since its last game.",
+          "record": "389-318",
+          "pct": 55.0,
+          "leans": "Los Angeles Lakers",
+          "leanPct": 55.0,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        },
         {
           "weight": 1,
           "live": "4-3",

@@ -72,6 +72,12 @@ STORIES = {
     # 61.2%, every counted season positive; as a road favorite 10-12 (left out).
     "fresh_legs": ("Fresh legs", "back", (112, 71),
                    "4+ days since its last game vs an opponent on 2, at home or as an underdog"),
+    # Home/away rest grid (2026-11-14): a 1-day rest edge does nothing; 2+ days
+    # does, mostly for the home team. (4+ days vs 2 is NBA Stats rule 68.)
+    "home_fresh": ("Fresh legs at home", "back", (117, 82),
+                   "home team on 3 days since its last game vs a visitor on the second night of a back-to-back"),
+    "tired_hosts": ("Tired hosts", "fade", (389, 318),
+                    "home team on the second night of a back-to-back vs a visitor with 2+ days"),
     "spotlight": ("Spotlight letdown", "fade", (147, 114),
                   "won its last game on national TV, now a 5+ favorite vs a weaker team and not on national TV"),
     "letdown": ("Letdown spot", "fade", (355, 299),
@@ -300,6 +306,11 @@ def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp
         out.append(entry("fresh_legs", team, opp, f"{team} has had {rest} days since its last game ({last['date']}), {opp} 2"
                                                   f"{', and ' + team + ' is at home' if is_home else ''}"
                                                   f"{', as a ' + format(sp, '+g') + ' underdog' if sp is not None and sp > 0 else ''}."))
+    if is_home and rest == 3 and orest == 1:
+        out.append(entry("home_fresh", team, opp, f"{team} is at home on 3 days' rest; {opp} played last night ({opp_prior[-1]['date']})."))
+    if is_home and rest == 1 and orest >= 2:
+        out.append(entry("tired_hosts", team, opp, f"{team} played last night ({last['date']}) and is at home vs {opp}, "
+                                                   f"which has had {orest} days since its last game."))
     # Letdown storylines: a 5+ favorite vs a .450-or-worse team.
     if sp is not None and sp <= -5 and o["wp"] <= 0.45:
         won_by = last["team_score"] - last["opp_score"]

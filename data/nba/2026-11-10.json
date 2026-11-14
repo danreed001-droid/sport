@@ -234,6 +234,22 @@
       "storylines": [
         {
           "weight": 1,
+          "live": "0-0",
+          "key": "tired_hosts",
+          "name": "Tired hosts",
+          "team": "Phoenix Suns",
+          "says": "fade",
+          "fact": "Phoenix Suns played last night (2026-11-09) and is at home vs LA Clippers, which has had 2 days since its last game.",
+          "record": "389-318",
+          "pct": 55.0,
+          "leans": "LA Clippers",
+          "leanPct": 55.0,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
           "live": "2-5",
           "key": "quiet_giant",
           "name": "The quiet giant vs the hype machine",

@@ -159,7 +159,25 @@
       "statsSpreadReturn": 86.96,
       "time": "10:00 PM ET",
       "totalsBackfill": 11,
-      "totalsLine": 235.5
+      "totalsLine": 235.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "home_fresh",
+          "name": "Fresh legs at home",
+          "team": "Golden State Warriors",
+          "says": "back",
+          "fact": "Golden State Warriors is at home on 3 days' rest; Miami Heat played last night (2026-11-04).",
+          "record": "117-82",
+          "pct": 58.8,
+          "leans": "Golden State Warriors",
+          "leanPct": 58.8,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ]
 }

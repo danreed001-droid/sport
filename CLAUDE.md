@@ -363,7 +363,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   trial; same conditions, both teams 8+ games, tonight's statsSpread for
   "underdog"); the storyline no longer fires (the past entries stay).
   `--backfill 68`: 2 games (2026-11-08 Bulls, Pistons); Clippers left alone,
-  NBA Stats already had the Pelicans. Moneyline entries carry `implied` and `roi`, and `unit` is the
+  NBA Stats already had the Pelicans.
+  Rest grid storylines (2026-11-14; home/away rest grid: a 1-day edge does
+  nothing, 2+ days helps mostly at home): "Fresh legs at home" backs a home team
+  on 3 days vs a visitor on a back-to-back (117-82, 58.8%, p=0.02, halves
+  54%/64%); "Tired hosts" fades a home team on a back-to-back vs a visitor
+  on 2+ days (389-318, 55.0%). Rest does nothing for totals (16 cells, none at
+  p<0.05; a 2+ day gap either way leans over 53.8%). The same rest, letdown and
+  big-underdog tests on NFL, CFB, NCAAB, MLB and soccer were at chance
+  (scratchpad TESTS3.md per sport): these are NBA-only effects. Moneyline entries carry `implied` and `roi`, and `unit` is the
   favored bet ("to win" / "not to win"). football-data.co.uk's robots.txt
   bars ClaudeBot: don't fetch it. MLB: `scripts/mlb_storylines.py`
   (2015-2025, 2020 left out; Retrosheet event files for game context, closing

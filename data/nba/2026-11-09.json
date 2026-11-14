@@ -282,6 +282,22 @@
         },
         {
           "weight": 1,
+          "live": "0-0",
+          "key": "tired_hosts",
+          "name": "Tired hosts",
+          "team": "Detroit Pistons",
+          "says": "fade",
+          "fact": "Detroit Pistons played last night (2026-11-08) and is at home vs Washington Wizards, which has had 2 days since its last game.",
+          "record": "389-318",
+          "pct": 55.0,
+          "leans": "Washington Wizards",
+          "leanPct": 55.0,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
           "live": "2-2",
           "key": "ghost_town",
           "name": "Ghost town",
@@ -454,7 +470,25 @@
       "statsSpreadReturn": 86.96,
       "time": "8:00 PM ET",
       "totalsBackfill": 11,
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "tired_hosts",
+          "name": "Tired hosts",
+          "team": "Dallas Mavericks",
+          "says": "fade",
+          "fact": "Dallas Mavericks played last night (2026-11-08) and is at home vs Indiana Pacers, which has had 2 days since its last game.",
+          "record": "389-318",
+          "pct": 55.0,
+          "leans": "Indiana Pacers",
+          "leanPct": 55.0,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "2-3",
