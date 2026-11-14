@@ -61,6 +61,10 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   first game back from a road game on the Pacific coast ("jet lag homecoming").
   68 (on trial): back a team with 4+ days since its last game vs an opponent on
   2, at home or as an underdog ("fresh legs").
+  69 (on trial): fade a team that beat the spread by 20+ last game when that
+  line was within 3, now vs a better-record team ("fool's gold").
+  70 (on trial): back a home team that missed the spread by 20+ last game when
+  that line was within 3, now vs a worse-record team ("home bounce-back").
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -239,6 +243,8 @@ ALLOWED_REST = {
     66: {"b2b", "1", "2+"},
     67: {"b2b", "1", "2+"},
     68: {"b2b", "1", "2+"},
+    69: {"b2b", "1", "2+"},
+    70: {"b2b", "1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -845,6 +851,23 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
                                         f"{', at home' if is_home else ''}"
                                         f"{', as a ' + format(my_spread, '+g') + ' underdog' if my_spread is not None and my_spread > 0 else ''}"
                                         f" -- {RULE_BACKTEST.get(68, '')}."))
+
+        # Rules 69-70: the team's last game had a spread within 3 and it covered
+        # or missed by 20+ (closing line, data/raw/nba_lines.csv). Records within
+        # .050 count as even. Both teams 8+ games played, as backtested.
+        if len(prior) >= 8 and len(opp_prior) >= 8:
+            hs_last = home_spread_of(last["event_id"])
+            if hs_last is not None:
+                my_last = hs_last if last["is_home"] else -hs_last
+                cm_last = last["team_score"] - last["opp_score"] + my_last
+                if abs(my_last) <= 3 and cm_last >= 20 and opp_pct > team_pct + 0.05:
+                    picks.append((opp, 69, f"Fading {team}: beat the spread by {cm_last:g} last game (a {my_last:+g} line vs "
+                                           f"{last['opp']}), now vs {opp} with the better record ({opp_w}-{opp_l} "
+                                           f"vs {team_w}-{team_l}) -- {RULE_BACKTEST.get(69, '')}."))
+                if abs(my_last) <= 3 and cm_last <= -20 and is_home and opp_pct < team_pct - 0.05:
+                    picks.append((team, 70, f"Backing {team}: missed the spread by {-cm_last:g} last game (a {my_last:+g} line vs "
+                                            f"{last['opp']}), now home vs {opp} with the worse record ({opp_w}-{opp_l} "
+                                            f"vs {team_w}-{team_l}) -- {RULE_BACKTEST.get(70, '')}."))
 
         # Rule 53: fade a 10+ point road underdog with a record of .300 or worse
         # (8+ games played) on the second night of a back-to-back -- back the

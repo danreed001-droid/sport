@@ -59,7 +59,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 68; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22, 23, 24. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 68, 69, 70; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22, 23, 24. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -368,6 +368,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   "underdog"); the storyline no longer fires (the past entries stay).
   `--backfill 68`: 2 games (2026-11-08 Bulls, Pistons); Clippers left alone,
   NBA Stats already had the Pelicans.
+  Rules 69-70 (on trial, 2026-11-14, from the Nets 145 @ Pelicans 111 game):
+  the team's last game had a closing spread within 3 (`home_spread_of`) and it
+  beat or missed the spread by 20+. 69 fades it when it beat the spread by 20+
+  and now faces a better-record team (by .050+): 47-25, unseen 12-8, 2024-now
+  16-10; climbs 15+ 56.9% / 20+ 65.3% / 25+ 68.8%. 70 backs a home team that
+  missed by 20+ when it now faces a worse-record team: 31-17, unseen 14-9, but
+  2018-19 7-8 and 2025-26 3-4 (the weaker of the two). Overall a big miss or
+  cover in a close game predicts nothing (48-52%); it's who's next. From ~60
+  cells (2-3 at p<0.05, about luck), kept for the dose-response and both
+  halves. Backfill: none (2026-11-12 76ers left alone, NBA Stats had Toronto).
   Rest grid storylines (2026-11-14; home/away rest grid: a 1-day edge does
   nothing, 2+ days helps mostly at home): "Fresh legs at home" backs a home team
   on 3 days vs a visitor on a back-to-back (117-82, 58.8%, p=0.02, halves

@@ -58,14 +58,14 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": -140.0,
       "awayMoneyline": 118.0,
-      "statsSpread": -1.5,
+      "statsSpread": 1.5,
       "statsLine": {
-        "homeSpread": -1.5,
-        "awaySpread": 1.5,
-        "homeSpreadOdds": -101,
-        "awaySpreadOdds": -120,
-        "homeMoneyline": -109,
-        "awayMoneyline": -109
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -118,
+        "awaySpreadOdds": -102,
+        "homeMoneyline": -105,
+        "awayMoneyline": -113
       },
       "totalsLine": 231.5,
       "totalsFavors": "Over",
@@ -93,16 +93,16 @@
           "rule": 44,
           "name": "Revenge: back a team at home with the worse record after losing the last meeting by 10-19 as the favorite (on trial)",
           "backtest": "67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15",
-          "detail": "Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, favored, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15."
+          "detail": "Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15."
         },
         {
           "rule": 47,
           "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
           "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
-          "detail": "Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
+          "detail": "Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
         }
       ],
-      "statsCheck": "Rule 44: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, favored, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15. Rule 47: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
+      "statsCheck": "Rule 44: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15. Rule 47: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
       "storylines": [
         {
           "weight": 1,
@@ -145,12 +145,12 @@
       "awaySpreadOdds": -106.0,
       "homeMoneyline": 152.0,
       "awayMoneyline": -181.0,
-      "statsSpread": 5.5,
+      "statsSpread": 4.5,
       "statsLine": {
-        "homeSpread": 5.5,
-        "awaySpread": -5.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
         "homeMoneyline": 160,
         "awayMoneyline": -191
       },
@@ -218,7 +218,17 @@
           "backtest": "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24"
         }
       ],
-      "totalsCheck": "Rule 10: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back. Rule 14: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back."
+      "totalsCheck": "Rule 10: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back. Rule 14: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.",
+      "statsFavors": "Memphis Grizzlies",
+      "statsRules": [
+        {
+          "rule": 69,
+          "name": "Fade a team that beat the spread by 20+ in a close-spread game (within 3), now vs a better-record team (on trial)",
+          "backtest": "65.3% ATS, 47-25 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-8; 2024-now 16-10; climbs 15+ 56.9% / 25+ 68.8%",
+          "detail": "Fading Brooklyn Nets: beat the spread by 36.5 last game (a +2.5 line vs New Orleans Pelicans), now vs Memphis Grizzlies with the better record (8-4 vs 3-8) -- 65.3% ATS, 47-25 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-8; 2024-now 16-10; climbs 15+ 56.9% / 25+ 68.8%."
+        }
+      ],
+      "statsCheck": "Rule 69: Fading Brooklyn Nets: beat the spread by 36.5 last game (a +2.5 line vs New Orleans Pelicans), now vs Memphis Grizzlies with the better record (8-4 vs 3-8) -- 65.3% ATS, 47-25 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-8; 2024-now 16-10; climbs 15+ 56.9% / 25+ 68.8%."
     },
     {
       "espnId": "401909984",
