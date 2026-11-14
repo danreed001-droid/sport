@@ -12,7 +12,8 @@ archive also holds preseason games, so they're archived too. nba_lines.csv
 was seeded with all of 2025-26 and nfl_lines.csv with the 2025 and 2026
 seasons so far (whatever opening lines ESPN still had).
 
-Usage: python scripts/archive_lines.py nba|nfl|ncaab [...]   (default: nba nfl)
+Usage: python scripts/archive_lines.py nba|nfl|ncaab|cfb [...]   (default: nba nfl)
+(cfb added 2026-11-14 for the cards' totals trend.)
 """
 import csv
 import os
@@ -23,7 +24,8 @@ sys.path.insert(0, os.path.dirname(__file__))
 from lib import espn  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-ESPN_PATH = {"nba": "basketball/nba", "nfl": "football/nfl", "ncaab": "basketball/mens-college-basketball"}
+ESPN_PATH = {"nba": "basketball/nba", "nfl": "football/nfl", "ncaab": "basketball/mens-college-basketball",
+             "cfb": "football/college-football"}
 RETRY_DAYS = 3
 FIELDS = ["game_id", "date", "away", "home", "away_score", "home_score", "provider",
           "spread_open", "spread_close", "spread_odds_open", "spread_odds_close",

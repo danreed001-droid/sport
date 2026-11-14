@@ -75,6 +75,91 @@ def storyline_strength(all_docs):
     return out
 
 
+
+# ATS trend on the game cards: each slate team's last N graded games (football
+# 7, basketball 14) from the sport's slate files -- the cover margin (margin +
+# the team's spread; NBA at statsSpread when it has one) per game. College
+# slates don't hold every game a team plays, so those trends are "on our slates".
+TREND_GAMES = {"nfl": 7, "cfb": 7, "nba": 14, "ncaab": 14}
+
+
+def _team_key(name):
+    n = (name or "").lower().replace("la clippers", "los angeles clippers").replace("la lakers", "los angeles lakers")
+    return " ".join(n.split())
+
+
+_LINES = {}
+
+
+def closing_total(sport, date_str, g):
+    """A finished game's closing total: data/raw/<sport>_lines.csv (date +/- a
+    day, teams by name), else the slate's own total fields."""
+    if sport not in _LINES:
+        by = {}
+        path = os.path.join(store.REPO_ROOT, "data", "raw", f"{sport}_lines.csv")
+        if os.path.exists(path):
+            import csv as _csv
+            from datetime import date as _date
+            with open(path, encoding="utf-8") as f:
+                for r in _csv.DictReader(f):
+                    try:
+                        t = float(r.get("total_close") or "")
+                    except ValueError:
+                        continue
+                    by.setdefault(r["date"], []).append((_team_key(r["away"]), _team_key(r["home"]), t))
+        _LINES[sport] = by
+    from datetime import date as _date, timedelta as _td
+    a, h = _team_key(g.get("away")), _team_key(g.get("home"))
+    for off in (0, 1, -1):
+        d = (_date.fromisoformat(date_str) + _td(days=off)).isoformat()
+        for ra, rh, t in _LINES[sport].get(d, []):
+            if (ra == a or ra in a or a in ra) and (rh == h or rh in h or h in rh):
+                return t
+    for k in ("totalsLine", "gameTotal", "total"):
+        if isinstance(g.get(k), (int, float)):
+            return g[k]
+    return None
+
+
+def ats_trends(all_docs, slate_date, slate_sports, totals=False):
+    """totals=False: cover margin per game; True: points over (+) or under (-)
+    the closing total."""
+    out = {}
+    for sport, n in TREND_GAMES.items():
+        today = (slate_sports.get(sport) or {}).get("games") or []
+        if not today:
+            continue
+        wanted = {_team_key(t): t for g in today for t in (g.get("away"), g.get("home")) if t}
+        hist = {k: [] for k in wanted}
+        for date_str, doc in all_docs.get(sport, []):
+            if slate_date and date_str >= slate_date:
+                continue
+            for g in doc.get("games", []):
+                if not is_final(doc, g):
+                    continue
+                sides = [s_ for s_ in ("home", "away") if _team_key(g.get(s_)) in hist]
+                if not sides:
+                    continue
+                if totals:
+                    tot = closing_total(sport, date_str, g)
+                    if tot is None:
+                        continue
+                    over = g["homeScore"] + g["awayScore"] - tot
+                    for side in sides:
+                        hist[_team_key(g.get(side))].append([date_str, g.get("away" if side == "home" else "home"), round(over, 1), tot, int(side == "home")])
+                    continue
+                hs = g.get("statsSpread") if sport == "nba" and isinstance(g.get("statsSpread"), (int, float)) else g.get("homeSpread")
+                if not isinstance(hs, (int, float)):
+                    continue
+                margin = g["homeScore"] - g["awayScore"]
+                for side in sides:
+                    k = _team_key(g.get(side))
+                    my_sp = hs if side == "home" else -hs
+                    m = margin if side == "home" else -margin
+                    hist[k].append([date_str, g.get("away" if side == "home" else "home"), round(m + my_sp, 1), my_sp, int(side == "home")])
+        out[sport] = {wanted[k]: sorted(v)[-n:] for k, v in hist.items() if v}
+    return out
+
 def backtest_wl(text):
     """(wins, losses) from a rule's backtest text ("66.0% ATS, 97-50 (...)" or
     "60.0% ATS, n=100 (...)"), or (None, None) when it can't be read."""
@@ -411,6 +496,8 @@ def build():
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
         "storyStrength": storyline_strength(all_docs),
+        "atsTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}),
+        "ouTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}, totals=True),
         "storyVetoFrom": STORY_VETO_FROM,
         "storyBacktest": storyline_buckets.BACKTEST,
         "storyBacktestNotes": storyline_buckets.NOTES,

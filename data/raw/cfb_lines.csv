@@ -1,0 +1,435 @@
+game_id,date,away,home,away_score,home_score,provider,spread_open,spread_close,spread_odds_open,spread_odds_close,total_open,total_close,home_ml_open,home_ml_close,away_ml_open,away_ml_close
+401869941,2026-09-24,Liberty Flames,Coastal Carolina Chanticleers,34,17,DraftKings,-1.5,2.5,-110,-105,54.5,50.5,-120,120,100,-142
+401858234,2026-09-25,Clemson Tigers,California Golden Bears,24,10,DraftKings,1.5,2.5,-115,-105,47.5,52.5,-105,120,-115,-142
+401858461,2026-09-25,Northwestern Wildcats,Indiana Hoosiers,23,29,DraftKings,-23.5,-20.5,-110,-115,47.5,49.5,-4000,-1650,1600,950
+401858468,2026-09-25,Howard Bison,Rutgers Scarlet Knights,7,58,DraftKings,-41.5,-42.5,-120,-102,55.5,57.5,,,,
+401862778,2026-09-25,Navy Midshipmen,UAB Blazers,20,24,DraftKings,11.5,6.5,-110,-110,53.5,50.5,380,205,-500,-250
+401862779,2026-09-25,Army Black Knights,Temple Owls,21,17,DraftKings,3,4,-110,-112,49.5,48.5,130,164,-155,-198
+401856696,2026-09-26,South Carolina Gamecocks,Alabama Crimson Tide,18,49,DraftKings,-11.5,-12.5,-108,-110,46.5,53.5,-455,-520,350,390
+401856697,2026-09-26,Tulsa Golden Hurricane,Arkansas Razorbacks,6,34,DraftKings,-8.5,-7,-105,-105,52.5,51.5,-285,-278,230,225
+401856698,2026-09-26,Vanderbilt Commodores,Auburn Tigers,15,21,DraftKings,-8.5,-10,-110,-108,50.5,54.5,-340,-395,270,310
+401856699,2026-09-26,Ole Miss Rebels,Florida Gators,28,52,DraftKings,-1.5,-4,-108,-112,57.5,58.5,-115,-175,-105,145
+401856700,2026-09-26,Oklahoma Sooners,Georgia Bulldogs,13,41,DraftKings,-10,-11.5,-110,-108,52.5,43.5,-395,-520,310,390
+401856702,2026-09-26,Texas A&M Aggies,LSU Tigers,6,35,DraftKings,-3,-8.5,-110,-108,57.5,52.5,-162,-375,136,295
+401856703,2026-09-26,Missouri Tigers,Mississippi State Bulldogs,24,31,DraftKings,-1.5,-3.5,-105,-112,56.5,58.5,-115,-175,-105,145
+401856704,2026-09-26,Texas Longhorns,Tennessee Volunteers,20,17,DraftKings,7,5.5,-110,-115,56.5,54.5,210,170,-258,-205
+401856804,2026-09-26,Arizona Wildcats,Washington State Cougars,34,24,DraftKings,13.5,11.5,-110,-110,48.5,47.5,425,330,-575,-425
+401856805,2026-09-26,Sam Houston Bearkats,Texas Tech Red Raiders,14,49,DraftKings,-37.5,-34.5,-110,-112,54.5,55.5,,,,
+401856806,2026-09-26,Houston Cougars,Georgia Southern Eagles,42,28,DraftKings,19.5,17.5,-110,-112,55.5,56.5,900,625,-1600,-950
+401856813,2026-09-26,Colorado Buffaloes,Baylor Bears,13,23,DraftKings,-8.5,-8.5,-110,-105,53.5,54.5,-290,-345,235,275
+401856814,2026-09-26,Kansas State Wildcats,Cincinnati Bearcats,26,31,DraftKings,6,6,-110,-112,52.5,55.5,185,195,-225,-238
+401856815,2026-09-26,TCU Horned Frogs,UCF Knights,13,21,DraftKings,3,3.5,-110,-112,50.5,48.5,130,142,-155,-170
+401856816,2026-09-26,Utah Utes,Iowa State Cyclones,31,17,DraftKings,11.5,7.5,-110,-112,49.5,46.5,370,260,-485,-325
+401856881,2026-09-26,Oklahoma State Cowboys,West Virginia Mountaineers,41,24,DraftKings,2.5,-1.5,-110,-112,57.5,60.5,110,-125,-130,105
+401858236,2026-09-26,Bucknell Bison,Pittsburgh Panthers,0,59,DraftKings,-53.5,-54.5,-110,-110,61.5,63.5,,,,
+401858237,2026-09-26,Central Arkansas Bears,Florida State Seminoles,7,34,DraftKings,-42.5,-45.5,-110,-108,59.5,62.5,,,,
+401858238,2026-09-26,Central Michigan Chippewas,Miami Hurricanes,3,52,DraftKings,-42.5,-41.5,-110,-105,54.5,52.5,,,,
+401858239,2026-09-26,Delaware Blue Hens,Virginia Cavaliers,3,42,DraftKings,-20.5,-19.5,-110,-115,54.5,52.5,-1450,-1450,850,850
+401858240,2026-09-26,Georgia Tech Yellow Jackets,Stanford Cardinal,27,34,DraftKings,4.5,3,-110,-108,48.5,48.5,150,130,-180,-155
+401858241,2026-09-26,Missouri State Bears,SMU Mustangs,24,34,DraftKings,-34.5,-30.5,-110,-112,59.5,60.5,-20000,-9000,3500,2500
+401858242,2026-09-26,Virginia Tech Hokies,Boston College Eagles,21,14,DraftKings,14,14.5,-110,-108,54.5,45.5,490,500,-675,-700
+401858243,2026-09-26,Wake Forest Demon Deacons,Louisville Cardinals,30,27,DraftKings,-13.5,-11.5,-110,-110,58.5,57.5,-650,-485,470,370
+401858244,2026-09-26,William & Mary Tribe,Duke Blue Devils,7,62,DraftKings,-43.5,-43.5,-110,-110,60.5,61.5,,,,
+401858462,2026-09-26,UCLA Bruins,Maryland Terrapins,54,3,DraftKings,1.5,2.5,-112,-102,51.5,55.5,-102,124,-118,-148
+401858463,2026-09-26,Iowa Hawkeyes,Michigan Wolverines,20,19,DraftKings,-4.5,-4.5,-110,-110,39.5,39.5,-192,-205,160,170
+401858464,2026-09-26,Nebraska Cornhuskers,Michigan State Spartans,31,13,DraftKings,5.5,6,-110,-112,52.5,48.5,170,185,-205,-225
+401858465,2026-09-26,Illinois Fighting Illini,Ohio State Buckeyes,19,42,DraftKings,-27.5,-25.5,-110,-112,54.5,53.5,-6500,-4000,2000,1600
+401858466,2026-09-26,Wisconsin Badgers,Penn State Nittany Lions,24,20,DraftKings,-11.5,-9.5,-105,-112,42.5,43.5,-455,-380,350,300
+401858467,2026-09-26,Notre Dame Fighting Irish,Purdue Boilermakers,49,10,DraftKings,27.5,27.5,-105,-110,56.5,57.5,2000,1700,-6500,-4500
+401858469,2026-09-26,Oregon Ducks,USC Trojans,41,27,DraftKings,5.5,3.5,-110,-110,58.5,60.5,195,154,-238,-185
+401858470,2026-09-26,Minnesota Golden Gophers,Washington Huskies,27,24,DraftKings,-9.5,-12.5,-110,-108,44.5,44.5,-410,-455,320,350
+401860891,2026-09-26,Rice Owls,Fresno State Bulldogs,24,38,DraftKings,-13.5,-12.5,-110,-108,43.5,43.5,-520,-500,390,380
+401860892,2026-09-26,Incarnate Word Cardinals,Texas State Bobcats,10,63,DraftKings,-29.5,-30.5,-110,-112,63.5,66.5,-4500,-2800,1700,1300
+401860893,2026-09-26,San Diego State Aztecs,Toledo Rockets,16,41,DraftKings,1.5,-2.5,-110,-118,48.5,50.5,-102,-142,-118,120
+401860894,2026-09-26,Troy Trojans,Utah State Aggies,10,21,DraftKings,-2.5,-3,-110,-105,52.5,47.5,-130,-148,110,124
+401860895,2026-09-26,Oregon State Beavers,UTEP Miners,33,7,DraftKings,12.5,11.5,-110,-115,55.5,56.5,425,350,-575,-455
+401860896,2026-09-26,Colorado State Rams,UTSA Roadrunners,45,59,DraftKings,-11.5,-14.5,-110,-105,57.5,56.5,-575,-675,425,490
+401860897,2026-09-26,Boise State Broncos,Western Michigan Broncos,32,7,DraftKings,7.5,8.5,-108,-112,47.5,50.5,240,240,-298,-298
+401861970,2026-09-26,UConn Huskies,Miami (OH) RedHawks,21,24,DraftKings,-3,-2.5,-110,-115,50.5,52.5,-148,-142,124,120
+401862780,2026-09-26,Louisiana Ragin' Cajuns,Charlotte 49ers,34,7,DraftKings,14.5,9.5,-110,-112,52.5,49.5,470,310,-650,-395
+401862781,2026-09-26,North Carolina Central Eagles,East Carolina Pirates,9,42,DraftKings,-34.5,-37.5,-110,-110,54.5,58.5,-50000,-100000,4000,5000
+401862782,2026-09-26,Florida Atlantic Owls,UL Monroe Warhawks,45,17,DraftKings,13.5,11.5,-110,-105,59.5,58.5,440,370,-600,-485
+401862783,2026-09-26,Houston Christian Huskies,North Texas Mean Green,14,63,DraftKings,-37.5,-38.5,-110,-105,58.5,60.5,-100000,-100000,5000,5000
+401862784,2026-09-26,Southern Miss Golden Eagles,Tulane Green Wave,21,24,DraftKings,-17.5,-17.5,-102,-115,53.5,52.5,-1200,-1050,750,675
+401862785,2026-09-26,South Florida Bulls,Bowling Green Falcons,14,6,DraftKings,15.5,17.5,-110,-108,51.5,48.5,600,675,-900,-1050
+401864509,2026-09-26,Air Force Falcons,Nevada Wolf Pack,36,33,DraftKings,4.5,4.5,-110,-108,48.5,50.5,170,185,-205,-225
+401864510,2026-09-26,Hawai'i Rainbow Warriors,Wyoming Cowboys,10,27,DraftKings,5.5,2.5,-110,-115,44.5,44.5,170,105,-205,-125
+401864511,2026-09-26,Northern Illinois Huskies,Georgia State Panthers,14,35,DraftKings,-8.5,-8.5,-110,-110,54.5,56.5,-380,-345,300,275
+401864512,2026-09-26,UNLV Rebels,Akron Zips,38,10,DraftKings,14,13.5,-110,-112,49.5,52.5,470,410,-650,-550
+401864572,2026-09-26,App State Mountaineers,NC State Wolfpack,31,41,DraftKings,-14,-12.5,-110,-112,55.5,56.5,-535,-535,400,400
+401864576,2026-09-26,South Alabama Jaguars,Kentucky Wildcats,21,45,DraftKings,-19.5,-20.5,-110,-115,55.5,54.5,-1650,-1600,950,900
+401864579,2026-09-26,New Mexico Lobos,New Mexico State Aggies,42,18,DraftKings,12.5,11.5,-110,-110,49.5,47.5,410,350,-550,-455
+401866425,2026-09-26,Ball State Cardinals,Kent State Golden Flashes,13,26,DraftKings,-4.5,-2.5,-110,-115,51.5,51.5,-185,-142,154,120
+401866426,2026-09-26,Robert Morris Colonials,Buffalo Bulls,28,31,DraftKings,-28.5,-27.5,-110,-118,44.5,46.5,-6500,-3200,2000,1400
+401866427,2026-09-26,Lindenwood Lions,Eastern Michigan Eagles,3,29,DraftKings,-25.5,-24.5,-110,-102,50.5,53.5,-2400,-2400,1200,1200
+401866428,2026-09-26,Stonehill Skyhawks,Ohio Bobcats,7,35,DraftKings,-34.5,-32.5,-110,-112,50.5,53.5,-50000,-5000,4000,1800
+401866429,2026-09-26,Massachusetts Minutemen,Sacramento State Hornets,35,6,DraftKings,6,6,-110,-110,50.5,49.5,185,180,-225,-218
+401867909,2026-09-26,Long Island University Sharks,Florida International Panthers,3,20,DraftKings,-35.5,-37.5,-110,-108,50.5,54.5,-10000,-4500,3000,1700
+401868188,2026-09-26,Gardner-Webb Runnin' Bulldogs,Marshall Thundering Herd,35,36,DraftKings,-23.5,-24.5,-110,-115,50.5,56.5,-2400,-2100,1200,1100
+401869931,2026-09-26,Kennesaw State Owls,Arkansas State Red Wolves,14,17,DraftKings,-5.5,-6.5,-105,-108,53.5,53.5,-185,-238,154,195
+401869961,2026-09-26,James Madison Dukes,Old Dominion Monarchs,46,20,DraftKings,4.5,7,-110,-112,50.5,44.5,145,215,-175,-265
+401870745,2026-09-26,Mercyhurst Lakers,Western Kentucky Hilltoppers,7,52,DraftKings,-38.5,-39.5,-110,-108,56.5,58.5,,,,
+401871048,2026-09-26,Middle Tennessee Blue Raiders,Jacksonville State Gamecocks,13,23,DraftKings,-9.5,-7,-110,-115,54.5,50.5,-325,-285,260,230
+401862786,2026-10-01,North Texas Mean Green,Tulsa Golden Hurricane,45,44,DraftKings,1.5,3,-115,-118,57.5,56.5,-108,124,-112,-148
+401871049,2026-10-01,Western Kentucky Hilltoppers,New Mexico State Aggies,13,34,DraftKings,-1.5,-1.5,-108,-115,53.5,55.5,-112,-125,-108,105
+401858245,2026-10-02,Pittsburgh Panthers,Virginia Tech Hokies,35,33,DraftKings,-5.5,-1.5,-110,-102,56.5,53.5,-205,-115,170,-105
+401858476,2026-10-02,Penn State Nittany Lions,Northwestern Wildcats,13,34,DraftKings,7,3,-110,-115,48.5,46.5,225,124,-278,-148
+401871050,2026-10-02,Liberty Flames,Delaware Blue Hens,30,14,DraftKings,7,7,-110,-110,50.5,51.5,190,225,-230,-278
+401856705,2026-10-03,Vanderbilt Commodores,Georgia Bulldogs,14,38,DraftKings,-23.5,-25.5,-110,-108,57.5,49.5,-3200,-2800,1400,1300
+401856706,2026-10-03,McNeese Cowboys,LSU Tigers,14,63,DraftKings,-53.5,-53.5,-110,-115,60.5,62.5,,,,
+401856707,2026-10-03,Alabama Crimson Tide,Mississippi State Bulldogs,56,23,DraftKings,3,5.5,-110,-108,58.5,62.5,130,170,-155,-205
+401856708,2026-10-03,Florida Gators,Missouri Tigers,17,45,DraftKings,2.5,5.5,-110,-110,53.5,57.5,110,180,-130,-218
+401856709,2026-10-03,Kentucky Wildcats,South Carolina Gamecocks,35,34,DraftKings,-7,-2.5,-110,-110,49.5,52.5,-270,-130,220,110
+401856710,2026-10-03,Auburn Tigers,Tennessee Volunteers,14,24,DraftKings,-7.5,-6,-110,-110,57.5,54.5,-285,-230,230,190
+401856711,2026-10-03,Arkansas Razorbacks,Texas A&M Aggies,7,34,DraftKings,-14.5,-13.5,-110,-112,51.5,51.5,-700,-600,500,440
+401856807,2026-10-03,Middle Tennessee Blue Raiders,Kansas Jayhawks,0,55,DraftKings,-21.5,-21.5,-110,-112,52.5,51.5,-2800,-1800,1300,1000
+401856817,2026-10-03,Baylor Bears,Arizona State Sun Devils,55,19,DraftKings,-3.5,-3.5,-115,-105,51.5,49.5,-180,-166,150,140
+401856818,2026-10-03,BYU Cougars,TCU Horned Frogs,17,10,DraftKings,5.5,5.5,-110,-112,52.5,48.5,164,185,-198,-225
+401856819,2026-10-03,UCF Knights,Houston Cougars,17,27,DraftKings,-12.5,-10.5,-110,-105,51.5,50.5,-440,-425,340,330
+401856820,2026-10-03,Cincinnati Bearcats,Arizona Wildcats,7,34,DraftKings,-8.5,-7,-112,-105,54.5,56.5,-285,-265,230,215
+401856821,2026-10-03,Texas Tech Red Raiders,Colorado Buffaloes,29,7,DraftKings,14.5,13.5,-105,-105,50.5,50.5,550,440,-800,-600
+401856822,2026-10-03,West Virginia Mountaineers,Iowa State Cyclones,42,45,DraftKings,-1.5,-3,-108,-110,53.5,53.5,-115,-155,-105,130
+401858246,2026-10-03,Boston College Eagles,SMU Mustangs,16,25,DraftKings,-21,-21.5,-110,-105,56.5,55.5,-2100,-1650,1100,950
+401858247,2026-10-03,California Golden Bears,UNLV Rebels,31,39,DraftKings,-1.5,-1.5,-108,-102,52.5,51.5,-115,-115,-105,-105
+401858248,2026-10-03,Louisville Cardinals,NC State Wolfpack,28,31,DraftKings,7.5,5.5,-110,-108,59.5,56.5,250,195,-310,-238
+401858249,2026-10-03,Miami Hurricanes,Clemson Tigers,41,13,DraftKings,7,14,-110,-108,55.5,49.5,285,500,-360,-700
+401858250,2026-10-03,Notre Dame Fighting Irish,North Carolina Tar Heels,37,26,DraftKings,24.5,21,-115,-105,55.5,46.5,1200,1000,-2400,-1800
+401858251,2026-10-03,Stanford Cardinal,Wake Forest Demon Deacons,3,57,DraftKings,-12.5,-14.5,-110,-112,54.5,54.5,-470,-650,360,470
+401858252,2026-10-03,Syracuse Orange,UConn Huskies,42,41,DraftKings,6.5,6.5,-115,-105,53.5,51.5,170,215,-205,-265
+401858253,2026-10-03,Virginia Cavaliers,Florida State Seminoles,7,38,DraftKings,1.5,1.5,-110,-118,51.5,51.5,-102,-108,-118,-112
+401858472,2026-10-03,Purdue Boilermakers,Illinois Fighting Illini,24,17,DraftKings,-10,-9.5,-110,-112,60.5,62.5,-410,-360,320,285
+401858473,2026-10-03,Ohio State Buckeyes,Iowa Hawkeyes,31,14,DraftKings,14,14.5,-110,-105,44.5,46.5,500,500,-700,-700
+401858474,2026-10-03,Michigan Wolverines,Minnesota Golden Gophers,14,20,DraftKings,8.5,6.5,-110,-115,44.5,41.5,270,190,-340,-230
+401858475,2026-10-03,Maryland Terrapins,Nebraska Cornhuskers,23,48,DraftKings,-12.5,-15.5,-110,-108,53.5,52.5,-550,-700,410,500
+401858477,2026-10-03,Indiana Hoosiers,Rutgers Scarlet Knights,47,15,DraftKings,23.5,24.5,-102,-112,53.5,56.5,1300,1200,-2800,-2400
+401858478,2026-10-03,Washington Huskies,USC Trojans,21,25,DraftKings,-10,-7.5,-110,100,57.5,58.5,-360,-305,285,245
+401858479,2026-10-03,Michigan State Spartans,Wisconsin Badgers,3,31,DraftKings,-10,-8.5,-110,-108,44.5,43.5,-360,-355,285,280
+401860898,2026-10-03,Utah State Aggies,Boise State Broncos,18,37,DraftKings,-20.5,-19.5,-110,-110,49.5,50.5,-1800,-1350,1000,800
+401860899,2026-10-03,Oregon State Beavers,Colorado State Rams,56,26,DraftKings,3.5,7,-110,-112,59.5,60.5,154,215,-185,-265
+401860900,2026-10-03,Texas State Bobcats,San Diego State Aztecs,29,31,DraftKings,4.5,10,-110,-115,60.5,57.5,150,280,-180,-355
+401860921,2026-10-03,Fresno State Bulldogs,Washington State Cougars,26,6,DraftKings,-1.5,-2.5,-110,-105,45.5,44.5,-118,-130,-102,110
+401862787,2026-10-03,Memphis Tigers,Charlotte 49ers,59,8,DraftKings,21.5,18.5,-110,-110,54.5,52.5,1300,750,-2800,-1200
+401862788,2026-10-03,UTSA Roadrunners,Rice Owls,16,14,DraftKings,12.5,11.5,-110,-105,52.5,56.5,360,380,-470,-500
+401862790,2026-10-03,Texas Southern Tigers,Florida Atlantic Owls,10,66,DraftKings,-43.5,-47.5,-110,-105,60.5,62.5,,,,
+401862791,2026-10-03,Navy Midshipmen,Air Force Falcons,9,14,DraftKings,-1.5,-2.5,-105,-120,49.5,45.5,-115,-142,-105,120
+401862792,2026-10-03,Temple Owls,South Florida Bulls,17,13,DraftKings,-6.5,-5.5,-110,-108,52.5,50.5,-225,-218,185,180
+401862793,2026-10-03,Samford Bulldogs,UAB Blazers,14,33,DraftKings,-30.5,-30.5,-110,-118,50.5,54.5,-10000,-8000,3000,2200
+401864513,2026-10-03,San José State Spartans,Hawai'i Rainbow Warriors,20,16,DraftKings,-5.5,-2.5,-110,-115,52.5,51.5,-180,-135,150,114
+401864514,2026-10-03,UTEP Miners,New Mexico Lobos,7,61,DraftKings,-21,-23.5,-110,-115,53.5,47.5,-2100,-3200,1100,1400
+401864515,2026-10-03,Wyoming Cowboys,North Dakota State Bison,0,28,DraftKings,-21,-17.5,-105,-110,47.5,44.5,-1800,-950,1000,625
+401866430,2026-10-03,Akron Zips,Central Michigan Chippewas,17,41,DraftKings,-5.5,-6.5,-110,-118,46.5,47.5,-225,-278,185,225
+401866431,2026-10-03,Toledo Rockets,Ball State Cardinals,39,24,DraftKings,17.5,20.5,-115,-108,51.5,52.5,800,750,-1350,-1200
+401866432,2026-10-03,Western Michigan Broncos,Buffalo Bulls,20,17,DraftKings,16.5,13.5,-110,-115,51.5,46.5,550,400,-800,-535
+401866433,2026-10-03,Eastern Michigan Eagles,Massachusetts Minutemen,38,14,DraftKings,-2.5,-5.5,-110,-110,48.5,49.5,-130,-218,124,180
+401866434,2026-10-03,Ohio Bobcats,Kent State Golden Flashes,13,10,DraftKings,5.5,3.5,-110,-112,52.5,50.5,164,145,-198,-175
+401866477,2026-10-03,Bowling Green Falcons,Miami (OH) RedHawks,24,20,DraftKings,-15.5,-10.5,-110,-110,50.5,41.5,-850,-470,575,360
+401869842,2026-10-03,Army Black Knights,Louisiana Tech Bulldogs,29,31,DraftKings,3.5,-1.5,-110,100,44.5,46.5,145,-110,-175,-110
+401869932,2026-10-03,Arkansas State Red Wolves,Louisiana Ragin' Cajuns,20,23,DraftKings,-4,-4.5,-110,-115,49.5,49.5,-175,-205,145,170
+401869942,2026-10-03,Georgia Southern Eagles,Coastal Carolina Chanticleers,31,24,DraftKings,-1.5,2.5,-105,-102,52.5,53.5,-112,120,-108,-142
+401869956,2026-10-03,Old Dominion Monarchs,Georgia State Panthers,10,42,DraftKings,1.5,-1.5,-110,-115,52.5,51.5,-105,-125,-115,105
+401869962,2026-10-03,Marshall Thundering Herd,James Madison Dukes,17,45,DraftKings,-13.5,-14.5,-115,-112,55.5,55.5,-700,-750,500,525
+401871089,2026-10-03,UL Monroe Warhawks,South Alabama Jaguars,35,52,DraftKings,-14.5,-12.5,-110,-112,55.5,57.5,-800,-550,550,410
+401871090,2026-10-06,Southern Miss Golden Eagles,Troy Trojans,34,55,DraftKings,-8.5,-9.5,-110,-112,48.5,51.5,-340,-410,270,320
+401871051,2026-10-07,Jacksonville State Gamecocks,Kennesaw State Owls,27,26,DraftKings,2.5,3,-105,-115,48.5,48.5,114,124,-135,-148
+401871066,2026-10-07,New Mexico State Aggies,Florida International Panthers,3,22,DraftKings,-3.5,-7,-110,-108,47.5,46.5,-162,-265,136,215
+401862794,2026-10-08,South Florida Bulls,UTSA Roadrunners,24,31,DraftKings,-6.5,-5.5,-110,-110,55.5,49.5,-250,-230,205,190
+401869933,2026-10-08,South Alabama Jaguars,Arkansas State Red Wolves,56,49,DraftKings,-1.5,-3,-105,-115,56.5,60.5,-112,-162,-108,136
+401870766,2026-10-08,Sam Houston Bearkats,Liberty Flames,3,35,DraftKings,-13.5,-13.5,-110,-110,52.5,52.5,-600,-575,440,425
+401871052,2026-10-08,Missouri State Bears,Western Kentucky Hilltoppers,13,34,DraftKings,1.5,1.5,-110,-112,56.5,56.5,-105,-102,-115,-118
+401856826,2026-10-09,Iowa State Cyclones,BYU Cougars,10,24,DraftKings,-14.5,-11.5,-110,-108,50.5,46.5,-650,-470,470,360
+401858254,2026-10-09,Florida State Seminoles,Louisville Cardinals,20,44,DraftKings,-7.5,-4,-110,-112,58.5,60.5,-305,-192,245,160
+401858487,2026-10-09,Iowa Hawkeyes,Washington Huskies,41,24,DraftKings,-1.5,-3,-110,-108,41.5,41.5,-118,-155,-102,130
+401860922,2026-10-09,Washington State Cougars,Utah State Aggies,16,17,DraftKings,-3,-4,-110,-112,44.5,44.5,-142,-185,120,154
+401864519,2026-10-09,Wyoming Cowboys,San José State Spartans,16,13,DraftKings,-6,-4.5,-110,-110,44.5,42.5,-225,-192,185,160
+401856712,2026-10-10,Georgia Bulldogs,Alabama Crimson Tide,20,17,DraftKings,3,-2.5,-110,-108,51.5,51.5,120,-125,-142,105
+401856713,2026-10-10,Tennessee Volunteers,Arkansas Razorbacks,24,17,DraftKings,14,13.5,-110,-105,49.5,51.5,470,425,-650,-575
+401856714,2026-10-10,South Carolina Gamecocks,Florida Gators,38,19,DraftKings,-14.5,-10.5,-110,-112,57.5,59.5,-675,-455,490,350
+401856715,2026-10-10,LSU Tigers,Kentucky Wildcats,34,35,DraftKings,10.5,9.5,-110,-110,49.5,50.5,330,285,-425,-360
+401856716,2026-10-10,Texas A&M Aggies,Missouri Tigers,6,27,DraftKings,-1.5,-4.5,-110,-110,50.5,50.5,-118,-205,-102,170
+401856717,2026-10-10,Texas Longhorns,Oklahoma Sooners,24,27,DraftKings,6,7.5,-110,-105,48.5,40.5,180,275,-218,-345
+401856718,2026-10-10,Ole Miss Rebels,Vanderbilt Commodores,52,17,DraftKings,10.5,9.5,-110,-112,57.5,54.5,320,280,-410,-355
+401856808,2026-10-10,Hawai'i Rainbow Warriors,Arizona State Sun Devils,12,30,DraftKings,-20.5,-20.5,-115,-112,51.5,51.5,-1800,-1650,1000,950
+401856823,2026-10-10,Arizona Wildcats,West Virginia Mountaineers,52,31,DraftKings,3,3.5,-110,-115,58.5,61.5,120,145,-142,-175
+401856824,2026-10-10,UCF Knights,Oklahoma State Cowboys,28,42,DraftKings,-10,-10.5,-110,-112,52.5,53.5,-395,-395,310,310
+401856825,2026-10-10,Houston Cougars,Kansas State Wildcats,35,16,DraftKings,-2.5,-2.5,-102,-115,54.5,55.5,-130,-142,110,120
+401856827,2026-10-10,Kansas Jayhawks,Utah Utes,24,41,DraftKings,-16.5,-15.5,-110,-115,52.5,49.5,-800,-750,550,525
+401858255,2026-10-10,Duke Blue Devils,Georgia Tech Yellow Jackets,25,28,DraftKings,6.5,4.5,-110,-108,50.5,45.5,205,170,-250,-205
+401858256,2026-10-10,North Carolina Tar Heels,Pittsburgh Panthers,21,17,DraftKings,-4.5,-3.5,-105,-108,46.5,47.5,-162,-175,136,145
+401858257,2026-10-10,Stanford Cardinal,Notre Dame Fighting Irish,7,58,DraftKings,-35.5,-40.5,-110,-102,55.5,55.5,,,,
+401858258,2026-10-10,Syracuse Orange,Virginia Cavaliers,25,28,DraftKings,-8.5,-14,-110,-105,50.5,49.5,-340,-550,270,410
+401858259,2026-10-10,Virginia Tech Hokies,California Golden Bears,20,25,DraftKings,10.5,11.5,-105,-112,52.5,51.5,350,340,-455,-440
+401858260,2026-10-10,Wake Forest Demon Deacons,NC State Wolfpack,38,14,DraftKings,2.5,4,-110,-108,60.5,56.5,110,150,-130,-180
+401858480,2026-10-10,Illinois Fighting Illini,Michigan State Spartans,38,37,DraftKings,3,2.5,-105,-105,50.5,48.5,130,120,-155,-142
+401858481,2026-10-10,Indiana Hoosiers,Nebraska Cornhuskers,20,17,DraftKings,9.5,9.5,-110,-112,50.5,48.5,310,285,-395,-360
+401858482,2026-10-10,Ball State Cardinals,Northwestern Wildcats,14,45,DraftKings,-34.5,-34.5,-110,-110,52.5,53.5,-100000,-100000,5000,5000
+401858483,2026-10-10,Maryland Terrapins,Ohio State Buckeyes,16,45,DraftKings,-37.5,-31.5,-110,-105,54.5,56.5,,,,
+401858484,2026-10-10,UCLA Bruins,Oregon Ducks,17,15,DraftKings,-12.5,-10,-110,-108,60.5,57.5,-535,-410,400,320
+401858485,2026-10-10,USC Trojans,Penn State Nittany Lions,31,23,DraftKings,1.5,1.5,-110,-110,56.5,54.5,-112,100,-108,-120
+401858486,2026-10-10,Minnesota Golden Gophers,Purdue Boilermakers,13,41,DraftKings,4.5,2.5,-110,-102,49.5,48.5,154,120,-185,-142
+401860901,2026-10-10,Boise State Broncos,Fresno State Bulldogs,38,31,DraftKings,7.5,8.5,-105,-110,48.5,48.5,245,250,-305,-310
+401860902,2026-10-10,San Diego State Aztecs,Oregon State Beavers,14,66,DraftKings,-13.5,-14.5,-110,-110,57.5,52.5,-550,-700,410,500
+401861964,2026-10-10,UConn Huskies,Temple Owls,34,20,DraftKings,-3,-3.5,-110,-112,53.5,55.5,-148,-180,124,150
+401862795,2026-10-10,Tulane Green Wave,Army Black Knights,17,20,DraftKings,-6.5,-5.5,-110,-105,44.5,48.5,-250,-205,205,170
+401862796,2026-10-10,Charlotte 49ers,North Texas Mean Green,10,50,DraftKings,-23.5,-27.5,-110,-110,62.5,58.5,-4500,-4500,1700,1700
+401862797,2026-10-10,Rice Owls,East Carolina Pirates,12,28,DraftKings,-9.5,-10,-105,-108,50.5,46.5,-360,-380,285,300
+401862798,2026-10-10,UAB Blazers,Memphis Tigers,13,38,DraftKings,-14,-15.5,-110,-112,59.5,55.5,-650,-700,470,500
+401862799,2026-10-10,Tulsa Golden Hurricane,Navy Midshipmen,26,34,DraftKings,-3,-3,-110,-112,52.5,47.5,-162,-155,136,130
+401864516,2026-10-10,Air Force Falcons,Northern Illinois Huskies,28,7,DraftKings,12.5,7,-110,-118,47.5,48.5,360,220,-470,-270
+401864517,2026-10-10,Nevada Wolf Pack,UTEP Miners,30,13,DraftKings,9.5,10,-110,-105,52.5,48.5,280,310,-355,-395
+401864518,2026-10-10,North Dakota State Bison,UNLV Rebels,7,13,DraftKings,4,3,-110,-120,49.5,47.5,142,120,-170,-142
+401866435,2026-10-10,Eastern Michigan Eagles,Akron Zips,25,23,DraftKings,3.5,4.5,-110,-110,50.5,51.5,142,170,-170,-205
+401866436,2026-10-10,Sacramento State Hornets,Bowling Green Falcons,10,38,DraftKings,-6.5,-9.5,-110,-108,46.5,43.5,-245,-325,200,260
+401866437,2026-10-10,Buffalo Bulls,Toledo Rockets,23,8,DraftKings,-19.5,-18.5,-110,-112,55.5,54.5,-1350,-1100,800,700
+401866438,2026-10-10,Central Michigan Chippewas,Ohio Bobcats,14,31,DraftKings,-3.5,-2.5,-110,-112,48.5,45.5,-170,-135,142,114
+401866439,2026-10-10,Kent State Golden Flashes,Western Michigan Broncos,7,38,DraftKings,-15.5,-13.5,-110,-115,48.5,43.5,-750,-575,525,425
+401866440,2026-10-10,Miami (OH) RedHawks,Massachusetts Minutemen,20,19,DraftKings,2.5,6,-110,-108,49.5,44.5,110,185,-130,-225
+401869843,2026-10-10,Old Dominion Monarchs,App State Mountaineers,10,3,DraftKings,-5.5,-8.5,-110,-112,51.5,45.5,-218,-340,180,270
+401869943,2026-10-10,Coastal Carolina Chanticleers,Marshall Thundering Herd,27,21,DraftKings,-2.5,-4.5,-110,-108,55.5,57.5,-142,-198,120,164
+401869949,2026-10-10,James Madison Dukes,Georgia Southern Eagles,27,24,DraftKings,10,7,-110,-108,53.5,51.5,280,230,-355,-285
+401869965,2026-10-10,Louisiana Ragin' Cajuns,Louisiana Tech Bulldogs,31,32,DraftKings,-2.5,-3,-110,-112,50.5,48.5,-125,-155,105,130
+401871053,2026-10-13,Florida International Panthers,Jacksonville State Gamecocks,24,27,DraftKings,-3,-3,-115,-105,45.5,44.5,-148,-142,124,120
+401871067,2026-10-13,Delaware Blue Hens,Middle Tennessee Blue Raiders,30,33,DraftKings,1.5,1.5,-110,-115,48.5,49.5,-102,100,-118,-120
+401871054,2026-10-14,Kennesaw State Owls,Missouri State Bears,21,24,DraftKings,3,2.5,-110,-108,50.5,52.5,124,114,-148,-135
+401871068,2026-10-14,Western Kentucky Hilltoppers,Sam Houston Bearkats,16,3,DraftKings,1.5,1.5,-110,-118,51.5,53.5,-105,-112,-115,-108
+401860923,2026-10-15,Colorado State Rams,Texas State Bobcats,27,66,DraftKings,-12.5,-15.5,-105,-108,67.5,69.5,-425,-750,330,525
+401862800,2026-10-15,East Carolina Pirates,UAB Blazers,17,30,DraftKings,6.5,5.5,-110,-115,53.5,49.5,190,164,-230,-198
+401869950,2026-10-15,Georgia Southern Eagles,Old Dominion Monarchs,23,15,DraftKings,2.5,3,-105,-110,49.5,44.5,120,130,-142,-155
+401858493,2026-10-16,Washington Huskies,Purdue Boilermakers,38,26,DraftKings,-2.5,-3,-120,-112,51.5,50.5,-148,-155,124,130
+401862801,2026-10-16,Memphis Tigers,Tulane Green Wave,17,31,DraftKings,7,6.5,-110,-105,53.5,55.5,220,210,-270,-258
+401869844,2026-10-16,App State Mountaineers,Coastal Carolina Chanticleers,35,32,DraftKings,1.5,1.5,-105,-118,51.5,48.5,102,-108,-122,-112
+401856719,2026-10-17,Auburn Tigers,Georgia Bulldogs,27,24,DraftKings,-16.5,-19.5,-110,-108,55.5,50.5,-1000,-1350,650,800
+401856720,2026-10-17,Mississippi State Bulldogs,LSU Tigers,0,31,DraftKings,-12.5,-17.5,-105,-112,59.5,56.5,-455,-950,350,625
+401856721,2026-10-17,Missouri Tigers,Ole Miss Rebels,3,31,DraftKings,-6,-4,-115,-108,57.5,57.5,-230,-180,190,150
+401856722,2026-10-17,Kentucky Wildcats,Oklahoma Sooners,21,13,DraftKings,-6.5,-7,-110,-110,41.5,44.5,-238,-270,195,220
+401856723,2026-10-17,Alabama Crimson Tide,Tennessee Volunteers,10,26,DraftKings,1.5,7.5,-110,-112,56.5,50.5,-105,260,-115,-325
+401856724,2026-10-17,Florida Gators,Texas Longhorns,27,24,DraftKings,-9.5,-13.5,-110,-110,53.5,51.5,-345,-550,275,410
+401856725,2026-10-17,The Citadel Bulldogs,Texas A&M Aggies,0,41,DraftKings,-45.5,-46.5,-110,-108,56.5,56.5,,,,
+401856726,2026-10-17,Arkansas Razorbacks,Vanderbilt Commodores,31,21,DraftKings,-6.5,-5.5,-110,-110,50.5,48.5,-205,-225,170,185
+401856809,2026-10-17,Notre Dame Fighting Irish,BYU Cougars,24,28,DraftKings,11.5,10.5,-110,-110,54.5,47.5,350,320,-455,-410
+401856828,2026-10-17,Arizona State Sun Devils,Texas Tech Red Raiders,25,53,DraftKings,-12.5,-16.5,-110,-118,52.5,50.5,-520,-850,390,575
+401856829,2026-10-17,Cincinnati Bearcats,West Virginia Mountaineers,42,45,DraftKings,-1.5,-1.5,-110,-108,61.5,64.5,-120,-122,100,102
+401856830,2026-10-17,Kansas Jayhawks,Kansas State Wildcats,24,35,DraftKings,-8.5,-3,-110,-115,54.5,55.5,-360,-155,285,130
+401856831,2026-10-17,Oklahoma State Cowboys,Houston Cougars,32,35,DraftKings,-3.5,-4,-110,-112,57.5,62.5,-162,-185,136,154
+401856832,2026-10-17,TCU Horned Frogs,Baylor Bears,17,6,DraftKings,-6.5,-3.5,-110,-110,51.5,50.5,-205,-180,170,150
+401856833,2026-10-17,Utah Utes,Colorado Buffaloes,27,24,DraftKings,16.5,15.5,-102,-112,49.5,49.5,525,550,-750,-800
+401858261,2026-10-17,Charleston Southern Buccaneers,Clemson Tigers,0,37,DraftKings,-43.5,-42.5,-110,-108,58.5,53.5,,,,
+401858262,2026-10-17,Elon Phoenix,Stanford Cardinal,7,34,DraftKings,-35.5,-33.5,-110,-115,56.5,55.5,,,,
+401858263,2026-10-17,Florida State Seminoles,Miami Hurricanes,35,43,DraftKings,-16.5,-20.5,-110,-108,53.5,57.5,-950,-1600,625,900
+401858264,2026-10-17,Georgia Tech Yellow Jackets,Virginia Tech Hokies,24,34,DraftKings,-10,-8.5,-110,-112,55.5,55.5,-310,-355,250,280
+401858265,2026-10-17,Louisville Cardinals,Syracuse Orange,34,26,DraftKings,10.5,14.5,-110,-108,55.5,56.5,370,470,-485,-650
+401858266,2026-10-17,North Carolina Tar Heels,Duke Blue Devils,24,20,DraftKings,-4.5,-3,-110,-110,54.5,46.5,-198,-155,164,130
+401858267,2026-10-17,Pittsburgh Panthers,Boston College Eagles,21,27,DraftKings,7,6.5,-110,-108,46.5,42.5,200,200,-245,-245
+401858268,2026-10-17,Virginia Cavaliers,SMU Mustangs,13,23,DraftKings,-7.5,-10,-115,-105,53.5,51.5,-310,-360,250,285
+401858269,2026-10-17,Wake Forest Demon Deacons,California Golden Bears,41,7,DraftKings,8.5,10,-110,-108,53.5,54.5,250,310,-310,-395
+401858488,2026-10-17,Ohio State Buckeyes,Indiana Hoosiers,19,15,DraftKings,0,3,-110,-115,48.5,49.5,-112,124,-108,-148
+401858489,2026-10-17,Rutgers Scarlet Knights,Maryland Terrapins,37,30,DraftKings,-4.5,-5.5,-110,-110,58.5,55.5,-175,-218,145,180
+401858490,2026-10-17,Penn State Nittany Lions,Michigan Wolverines,18,21,DraftKings,-6.5,-6,-110,-110,51.5,43.5,-265,-230,215,190
+401858491,2026-10-17,Northwestern Wildcats,Michigan State Spartans,24,21,DraftKings,8.5,7.5,-110,-115,47.5,50.5,270,215,-340,-265
+401858492,2026-10-17,Nebraska Cornhuskers,Oregon Ducks,14,17,DraftKings,-21.5,-6.5,-110,-110,51.5,50.5,-1800,-238,1000,195
+401858494,2026-10-17,Wisconsin Badgers,UCLA Bruins,7,17,DraftKings,-3,-1.5,-115,-112,49.5,42.5,-155,-122,130,102
+401860903,2026-10-17,Washington State Cougars,Oregon State Beavers,30,48,DraftKings,-17.5,-18.5,-102,-110,52.5,52.5,-900,-1000,600,650
+401860904,2026-10-17,Fresno State Bulldogs,San Diego State Aztecs,23,26,DraftKings,8.5,6.5,-110,-108,43.5,46.5,270,215,-340,-265
+401862802,2026-10-17,Florida Atlantic Owls,Army Black Knights,24,56,DraftKings,-3,-2.5,-110,-108,59.5,55.5,-155,-130,130,110
+401862803,2026-10-17,Charlotte 49ers,Temple Owls,38,31,DraftKings,-23.5,-17.5,-110,-105,49.5,47.5,-2100,-1200,1100,750
+401862804,2026-10-17,Navy Midshipmen,UTSA Roadrunners,34,38,DraftKings,-7,-5.5,-110,-112,55.5,52.5,-265,-218,215,180
+401862805,2026-10-17,Tulsa Golden Hurricane,Rice Owls,38,17,DraftKings,2.5,3.5,-105,-108,46.5,47.5,114,154,-135,-185
+401862806,2026-10-17,Kent State Golden Flashes,South Florida Bulls,2,29,DraftKings,-18.5,-20.5,-110,-110,49.5,46.5,-1200,-1450,750,850
+401864520,2026-10-17,Nevada Wolf Pack,North Dakota State Bison,17,31,DraftKings,-14.5,-14.5,-110,-112,46.5,42.5,-950,-700,625,500
+401864521,2026-10-17,New Mexico Lobos,Hawai'i Rainbow Warriors,21,10,DraftKings,15.5,14.5,-110,-115,48.5,46.5,525,490,-750,-675
+401864522,2026-10-17,Northern Illinois Huskies,Wyoming Cowboys,23,41,DraftKings,-7.5,-7,-110,-115,38.5,42.5,-310,-290,250,235
+401864523,2026-10-17,San José State Spartans,UTEP Miners,24,11,DraftKings,10,6.5,-110,100,52.5,46.5,295,220,-375,-270
+401864524,2026-10-17,UNLV Rebels,Air Force Falcons,31,41,DraftKings,3,-1.5,-110,-102,48.5,49.5,130,-105,-155,-115
+401866441,2026-10-17,Ball State Cardinals,Bowling Green Falcons,32,31,DraftKings,-8.5,-6,-110,-110,44.5,46.5,-360,-238,285,195
+401866442,2026-10-17,Massachusetts Minutemen,Buffalo Bulls,18,25,DraftKings,-4.5,-6.5,-115,-112,47.5,43.5,-175,-250,145,205
+401866443,2026-10-17,Western Michigan Broncos,Central Michigan Chippewas,21,14,DraftKings,7,7.5,-110,-112,42.5,42.5,240,235,-298,-290
+401866444,2026-10-17,Toledo Rockets,Eastern Michigan Eagles,34,14,DraftKings,6.5,7.5,-110,-115,52.5,51.5,200,225,-245,-278
+401866445,2026-10-17,Ohio Bobcats,Sacramento State Hornets,48,7,DraftKings,13.5,17.5,-110,-112,49.5,46.5,490,625,-675,-950
+401866478,2026-10-17,Akron Zips,Miami (OH) RedHawks,14,34,DraftKings,-9.5,-9.5,-110,-108,46.5,47.5,-375,-355,295,280
+401869934,2026-10-17,Arkansas State Red Wolves,Southern Miss Golden Eagles,23,13,DraftKings,6.5,5.5,-110,-108,55.5,61.5,195,180,-238,-218
+401869957,2026-10-17,Georgia State Panthers,James Madison Dukes,22,49,DraftKings,-12.5,-7.5,-110,-112,54.5,57.5,-440,-340,340,270
+401869966,2026-10-17,Troy Trojans,Louisiana Ragin' Cajuns,6,33,DraftKings,-3.5,-3,-110,-118,47.5,49.5,-170,-162,142,136
+401871091,2026-10-17,Louisiana Tech Bulldogs,UL Monroe Warhawks,24,0,DraftKings,14.5,13.5,-110,-108,52.5,55.5,490,425,-675,-575
+401871055,2026-10-20,Middle Tennessee Blue Raiders,Florida International Panthers,26,23,DraftKings,-10,-10.5,-110,-105,45.5,46.5,-410,-410,320,320
+401871069,2026-10-20,Missouri State Bears,Delaware Blue Hens,38,61,DraftKings,-3,-3,-110,-120,52.5,54.5,-142,-170,120,142
+401871092,2026-10-20,South Alabama Jaguars,Marshall Thundering Herd,13,20,DraftKings,3,1.5,-110,-105,62.5,66.5,120,105,-142,-125
+401871070,2026-10-21,New Mexico State Aggies,Sam Houston Bearkats,30,24,DraftKings,2.5,3,-110,-108,47.5,46.5,114,136,-135,-162
+401862807,2026-10-22,East Carolina Pirates,Memphis Tigers,34,41,DraftKings,-9.5,-10.5,-110,-105,53.5,55.5,-395,-425,310,330
+401869845,2026-10-22,James Madison Dukes,App State Mountaineers,31,34,DraftKings,10.5,12.5,-110,-108,56.5,56.5,320,370,-410,-485
+401871056,2026-10-22,Liberty Flames,Kennesaw State Owls,34,6,DraftKings,8.5,8.5,-110,-112,47.5,50.5,270,300,-340,-380
+401858271,2026-10-23,Duke Blue Devils,Virginia Cavaliers,19,16,DraftKings,-6.5,-2.5,-110,-110,53.5,47.5,-265,-135,215,114
+401858272,2026-10-23,NC State Wolfpack,Stanford Cardinal,28,31,DraftKings,7.5,7.5,-115,-115,55.5,54.5,225,235,-278,-290
+401861965,2026-10-23,Massachusetts Minutemen,UConn Huskies,16,35,DraftKings,-15.5,-12.5,-110,-112,49.5,53.5,-800,-520,550,390
+401862808,2026-10-23,Army Black Knights,Tulsa Golden Hurricane,38,35,DraftKings,-1.5,1.5,-105,-110,50.5,53.5,-112,-102,-108,-118
+401864525,2026-10-23,Air Force Falcons,Wyoming Cowboys,14,28,DraftKings,6.5,7,-115,-118,42.5,46.5,190,210,-230,-258
+401856727,2026-10-24,Texas A&M Aggies,Alabama Crimson Tide,20,31,DraftKings,-2.5,-13.5,-110,-112,54.5,49.5,-142,-600,120,440
+401856728,2026-10-24,LSU Tigers,Auburn Tigers,38,17,DraftKings,6.5,7,-110,-105,50.5,51.5,185,230,-225,-285
+401856729,2026-10-24,Vanderbilt Commodores,Kentucky Wildcats,17,34,DraftKings,-9.5,-9.5,-110,-122,52.5,51.5,-360,-440,285,340
+401856730,2026-10-24,Oklahoma Sooners,Mississippi State Bulldogs,23,15,DraftKings,1.5,1.5,-105,-108,46.5,49.5,105,102,-125,-122
+401856731,2026-10-24,Tennessee Volunteers,South Carolina Gamecocks,24,27,DraftKings,2.5,-2.5,-110,-110,51.5,50.5,110,-135,-130,114
+401856732,2026-10-24,Ole Miss Rebels,Texas Longhorns,27,34,DraftKings,-9.5,-3,-110,-125,54.5,54.5,-340,-170,270,142
+401856834,2026-10-24,Baylor Bears,Kansas Jayhawks,24,25,DraftKings,1.5,-1.5,-110,-108,54.5,54.5,100,-118,-120,-102
+401856835,2026-10-24,BYU Cougars,UCF Knights,31,39,DraftKings,9.5,7.5,-110,-112,45.5,43.5,295,245,-375,-305
+401856837,2026-10-24,Houston Cougars,Utah Utes,13,21,DraftKings,-6.5,-6.5,-110,-108,50.5,57.5,-258,-230,210,190
+401856838,2026-10-24,Iowa State Cyclones,Arizona Wildcats,3,39,DraftKings,-10,-11.5,-110,-112,50.5,51.5,-395,-375,310,295
+401856840,2026-10-24,Texas Tech Red Raiders,Cincinnati Bearcats,24,37,DraftKings,11.5,10.5,-110,-108,56.5,57.5,330,330,-425,-425
+401856841,2026-10-24,West Virginia Mountaineers,TCU Horned Frogs,24,20,DraftKings,-7,-10,-110,-112,58.5,58.5,-258,-360,210,285
+401858270,2026-10-24,California Golden Bears,SMU Mustangs,20,59,DraftKings,-16.5,-18.5,-115,-110,52.5,55.5,-800,-1050,550,675
+401858274,2026-10-24,Pittsburgh Panthers,Miami Hurricanes,23,52,DraftKings,-23.5,-20.5,-110,-112,53.5,50.5,-2800,-1650,1300,950
+401858495,2026-10-24,Oregon Ducks,Illinois Fighting Illini,10,21,DraftKings,12.5,10.5,-110,-110,51.5,49.5,330,320,-425,-410
+401858496,2026-10-24,Indiana Hoosiers,Michigan Wolverines,13,6,DraftKings,6.5,7.5,-110,-120,52.5,43.5,210,240,-258,-298
+401858497,2026-10-24,Iowa Hawkeyes,Minnesota Golden Gophers,10,13,DraftKings,4.5,7.5,-110,-110,42.5,40.5,154,235,-185,-290
+401858498,2026-10-24,Rutgers Scarlet Knights,Northwestern Wildcats,14,42,DraftKings,-16.5,-15.5,-115,-108,58.5,58.5,-1000,-750,650,525
+401858499,2026-10-24,Michigan State Spartans,UCLA Bruins,10,28,DraftKings,-13.5,-16.5,-110,-112,47.5,43.5,-535,-850,400,575
+401858500,2026-10-24,USC Trojans,Wisconsin Badgers,7,24,DraftKings,1.5,1.5,-110,-108,52.5,50.5,100,105,-120,-125
+401860907,2026-10-24,Boise State Broncos,Washington State Cougars,31,10,DraftKings,14,14.5,-110,-110,50.5,52.5,470,455,-650,-625
+401862809,2026-10-24,Rice Owls,Florida Atlantic Owls,49,51,DraftKings,-10.5,-9.5,-110,-108,58.5,55.5,-410,-340,320,270
+401862810,2026-10-24,North Texas Mean Green,Navy Midshipmen,49,39,DraftKings,1.5,3,-110,-118,61.5,60.5,102,124,-122,-148
+401866446,2026-10-24,Akron Zips,Kent State Golden Flashes,20,35,DraftKings,-3.5,-3,-110,-102,43.5,48.5,-155,-148,130,124
+401866447,2026-10-24,Sacramento State Hornets,Ball State Cardinals,17,34,DraftKings,-9.5,-14.5,-110,-108,49.5,51.5,-360,-600,285,440
+401866450,2026-10-24,Western Michigan Broncos,Toledo Rockets,38,45,DraftKings,-1.5,-2.5,-110,-112,44.5,48.5,-118,-142,-102,120
+401866476,2026-10-24,Miami (OH) RedHawks,Central Michigan Chippewas,28,27,DraftKings,-1.5,3.5,-105,-115,42.5,41.5,-115,140,-105,-166
+401871071,2026-10-27,Delaware Blue Hens,Western Kentucky Hilltoppers,35,21,DraftKings,1.5,-2.5,-105,-110,58.5,55.5,100,-135,-120,114
+401871072,2026-10-27,Sam Houston Bearkats,Missouri State Bears,3,24,DraftKings,-6,-5.5,-110,-110,51.5,51.5,-218,-218,180,180
+401871057,2026-10-28,Jacksonville State Gamecocks,New Mexico State Aggies,24,0,DraftKings,3,3,-110,-108,50.5,50.5,120,130,-142,-155
+401871058,2026-10-28,Kennesaw State Owls,Middle Tennessee Blue Raiders,44,28,DraftKings,-2.5,1.5,-115,-120,49.5,49.5,-155,-108,130,-112
+401862812,2026-10-29,Florida Atlantic Owls,North Texas Mean Green,41,48,DraftKings,-12.5,-15.5,-110,-108,69.5,78.5,-575,-625,425,455
+401869963,2026-10-29,Troy Trojans,James Madison Dukes,24,21,DraftKings,-17.5,-17.5,-110,-110,52.5,52.5,-1100,-1050,700,675
+401856844,2026-10-30,Baylor Bears,UCF Knights,41,9,DraftKings,-1.5,2.5,-115,-108,49.5,49.5,-130,114,110,-135
+401862813,2026-10-30,Tulane Green Wave,Charlotte 49ers,38,31,DraftKings,13.5,8.5,-110,-112,45.5,47.5,400,270,-535,-340
+401866451,2026-10-30,Kent State Golden Flashes,Sacramento State Hornets,10,31,DraftKings,9.5,7.5,-110,120,45.5,47.5,285,320,-360,-410
+401856733,2026-10-31,Missouri Tigers,Arkansas Razorbacks,34,10,DraftKings,10.5,10.5,-105,-115,48.5,48.5,295,330,-375,-425
+401856734,2026-10-31,Florida Gators,Georgia Bulldogs,8,27,DraftKings,-12.5,-11.5,-110,-112,53.5,56.5,-500,-410,380,320
+401856735,2026-10-31,Auburn Tigers,Ole Miss Rebels,15,45,DraftKings,-10.5,-10.5,-110,-108,53.5,58.5,-410,-410,320,320
+401856736,2026-10-31,South Carolina Gamecocks,Oklahoma Sooners,42,25,DraftKings,-5.5,-3.5,-110,-108,43.5,44.5,-198,-170,164,142
+401856737,2026-10-31,Mississippi State Bulldogs,Texas Longhorns,3,31,DraftKings,-18.5,-19.5,-110,-115,52.5,50.5,-1050,-1350,675,800
+401856842,2026-10-31,Arizona Wildcats,Texas Tech Red Raiders,26,34,DraftKings,-7.5,-4,-110,-110,52.5,55.5,-290,-180,235,150
+401856843,2026-10-31,Arizona State Sun Devils,BYU Cougars,20,27,DraftKings,-17.5,-17.5,-110,-108,51.5,46.5,-850,-900,575,600
+401856845,2026-10-31,Kansas Jayhawks,TCU Horned Frogs,16,22,DraftKings,-4.5,-6.5,-110,-105,48.5,45.5,-180,-230,150,190
+401856846,2026-10-31,Kansas State Wildcats,Colorado Buffaloes,24,27,DraftKings,3.5,-3,-110,-110,48.5,47.5,136,-166,-162,140
+401856847,2026-10-31,Oklahoma State Cowboys,Iowa State Cyclones,49,51,DraftKings,9.5,10,-110,-108,56.5,58.5,280,295,-355,-375
+401856848,2026-10-31,Utah Utes,Cincinnati Bearcats,49,25,DraftKings,9.5,7,-110,-102,56.5,56.5,270,220,-340,-270
+401858277,2026-10-31,California Golden Bears,NC State Wolfpack,10,31,DraftKings,-8.5,-9.5,-110,-112,56.5,56.5,-310,-325,250,260
+401858278,2026-10-31,SMU Mustangs,Syracuse Orange,27,30,DraftKings,12.5,8.5,-105,-112,55.5,58.5,350,260,-455,-325
+401858279,2026-10-31,Boston College Eagles,Duke Blue Devils,2,47,DraftKings,-7,-7,-115,-108,47.5,49.5,-258,-278,210,225
+401858280,2026-10-31,Clemson Tigers,Florida State Seminoles,36,24,DraftKings,1.5,-4.5,-110,-115,51.5,50.5,-108,-205,-112,170
+401858281,2026-10-31,Georgia Tech Yellow Jackets,Pittsburgh Panthers,11,34,DraftKings,-7,-9.5,-110,-115,52.5,54.5,-250,-340,205,270
+401858282,2026-10-31,Miami Hurricanes,North Carolina Tar Heels,38,35,DraftKings,14.5,13.5,-110,-112,50.5,52.5,455,400,-625,-535
+401858283,2026-10-31,Stanford Cardinal,Louisville Cardinals,24,52,DraftKings,-21,-22.5,-110,-112,61.5,59.5,-1450,-2100,800,1100
+401858284,2026-10-31,Virginia Cavaliers,Wake Forest Demon Deacons,7,51,DraftKings,-13.5,-13.5,-105,-110,49.5,48.5,-500,-575,380,425
+401858501,2026-10-31,Minnesota Golden Gophers,Indiana Hoosiers,16,23,DraftKings,-22.5,-20.5,-110,-112,45.5,40.5,-2100,-1450,1100,850
+401858502,2026-10-31,Wisconsin Badgers,Iowa Hawkeyes,0,30,DraftKings,-4.5,-2.5,-110,-115,39.5,36.5,-185,-135,154,114
+401858503,2026-10-31,Illinois Fighting Illini,Maryland Terrapins,20,17,DraftKings,3,3,-110,-122,52.5,54.5,120,120,-142,-142
+401858504,2026-10-31,Washington Huskies,Nebraska Cornhuskers,17,10,DraftKings,-9.5,-7.5,-115,-108,49.5,49.5,-340,-298,270,240
+401858505,2026-10-31,Northwestern Wildcats,Oregon Ducks,26,34,DraftKings,-7.5,-4,-110,-110,50.5,47.5,-270,-180,220,150
+401858506,2026-10-31,Purdue Boilermakers,Penn State Nittany Lions,17,31,DraftKings,-8.5,-10,-110,-112,52.5,55.5,-305,-375,245,295
+401858507,2026-10-31,Michigan Wolverines,Rutgers Scarlet Knights,28,21,DraftKings,14,16.5,-110,-108,47.5,47.5,455,550,-625,-800
+401858508,2026-10-31,Nevada Wolf Pack,UCLA Bruins,0,27,DraftKings,-23.5,-22.5,-110,-115,48.5,43.5,-2400,-2100,1200,1100
+401858509,2026-10-31,Ohio State Buckeyes,USC Trojans,18,30,DraftKings,7.5,6.5,-110,-108,55.5,50.5,250,200,-310,-245
+401859185,2026-10-31,Notre Dame Fighting Irish,Navy Midshipmen,35,13,DraftKings,28.5,30.5,-110,102,53.5,54.5,2200,2200,-8000,-8000
+401860908,2026-10-31,Texas State Bobcats,Boise State Broncos,45,46,DraftKings,-12.5,-10,-110,-105,65.5,63.5,-440,-410,340,320
+401860909,2026-10-31,Washington State Cougars,San Diego State Aztecs,20,26,DraftKings,-2.5,-2.5,-110,-115,48.5,47.5,-130,-148,110,124
+401860910,2026-10-31,Colorado State Rams,Utah State Aggies,14,31,DraftKings,-3.5,-9.5,-110,-166,64.5,59.5,-155,-520,130,390
+401860924,2026-10-31,Oregon State Beavers,Fresno State Bulldogs,22,38,DraftKings,7,6,-110,-108,56.5,57.5,210,185,-258,-225
+401861966,2026-10-31,UConn Huskies,Air Force Falcons,26,35,DraftKings,-4,-2.5,-110,-105,56.5,53.5,-175,-125,145,105
+401862814,2026-10-31,Army Black Knights,Memphis Tigers,22,49,DraftKings,-6,-6,-110,-112,56.5,59.5,-245,-218,200,180
+401862815,2026-10-31,Temple Owls,East Carolina Pirates,9,17,DraftKings,-4.5,-4,-110,-105,49.5,51.5,-175,-185,145,154
+401862816,2026-10-31,UAB Blazers,South Florida Bulls,10,30,DraftKings,-9.5,-7.5,-110,-108,46.5,43.5,-340,-305,270,245
+401864529,2026-10-31,New Mexico Lobos,San José State Spartans,21,16,DraftKings,14.5,15.5,-110,-105,42.5,43.5,455,525,-625,-750
+401864530,2026-10-31,Northern Illinois Huskies,UNLV Rebels,24,31,DraftKings,-24.5,-21.5,-110,-110,52.5,55.5,-3200,-2100,1400,1100
+401864531,2026-10-31,UTEP Miners,North Dakota State Bison,7,31,DraftKings,-27.5,-23.5,-110,-118,49.5,44.5,-6500,-2400,2000,1200
+401866452,2026-10-31,Bowling Green Falcons,Western Michigan Broncos,10,23,DraftKings,-15.5,-14,-110,-112,43.5,44.5,-750,-625,525,455
+401869846,2026-10-31,App State Mountaineers,Georgia Southern Eagles,3,19,DraftKings,-3.5,-6,-110,-112,54.5,54.5,-162,-225,136,185
+401869944,2026-10-31,Coastal Carolina Chanticleers,Georgia State Panthers,31,20,DraftKings,-6.5,-3.5,-105,-108,57.5,55.5,-218,-175,180,145
+401871059,2026-10-31,Florida International Panthers,Liberty Flames,10,49,DraftKings,-11.5,-13.5,-110,-112,44.5,45.5,-425,-550,330,410
+401871095,2026-10-31,Southern Miss Golden Eagles,UL Monroe Warhawks,35,21,DraftKings,3,3.5,-110,-112,52.5,54.5,114,145,-135,-175
+401871096,2026-10-31,Marshall Thundering Herd,Old Dominion Monarchs,36,23,DraftKings,2.5,3,-110,-112,46.5,45.5,110,120,-130,-142
+401871097,2026-10-31,Louisiana Tech Bulldogs,South Alabama Jaguars,35,20,DraftKings,3.5,6,-105,-105,56.5,57.5,142,190,-170,-230
+401866453,2026-11-03,Ohio Bobcats,Akron Zips,28,20,DraftKings,12.5,12.5,-110,-112,49.5,52.5,360,370,-470,-485
+401866454,2026-11-03,Buffalo Bulls,Miami (OH) RedHawks,34,31,DraftKings,-6.5,-6.5,-110,-120,45.5,45.5,-230,-265,190,215
+401866455,2026-11-04,Ball State Cardinals,Massachusetts Minutemen,30,31,DraftKings,-4.5,-2.5,-110,-115,48.5,48.5,-180,-142,150,120
+401866456,2026-11-04,Central Michigan Chippewas,Eastern Michigan Eagles,35,7,DraftKings,-1.5,2.5,-110,-102,46.5,44.5,-118,120,-102,-142
+401866457,2026-11-04,Toledo Rockets,Sacramento State Hornets,20,17,DraftKings,26.5,25.5,-110,-112,51.5,52.5,1500,1300,-3600,-2800
+401862817,2026-11-05,UTSA Roadrunners,Florida Atlantic Owls,29,60,DraftKings,6.5,7,-110,-105,70.5,72.5,185,230,-225,-285
+401869964,2026-11-05,James Madison Dukes,Southern Miss Golden Eagles,54,23,DraftKings,15.5,13.5,-110,-110,56.5,58.5,440,425,-600,-575
+401856855,2026-11-06,TCU Horned Frogs,Arizona Wildcats,28,29,DraftKings,-9.5,-6,-115,-112,44.5,46.5,-375,-250,295,205
+401858288,2026-11-06,Virginia Tech Hokies,SMU Mustangs,28,51,DraftKings,-7.5,-6,-110,-112,57.5,57.5,-278,-218,225,180
+401858510,2026-11-06,Nebraska Cornhuskers,Illinois Fighting Illini,13,24,DraftKings,6,4.5,-110,-108,50.5,52.5,180,164,-218,-198
+401862818,2026-11-06,South Florida Bulls,East Carolina Pirates,17,20,DraftKings,1.5,-1.5,-115,-105,45.5,39.5,-108,-115,-112,-105
+401864533,2026-11-06,New Mexico Lobos,Nevada Wolf Pack,31,3,DraftKings,12.5,10.5,-110,-110,43.5,39.5,350,330,-455,-425
+401856738,2026-11-07,Arkansas Razorbacks,Auburn Tigers,23,26,DraftKings,-12.5,-10.5,-110,-105,50.5,53.5,-440,-410,340,320
+401856739,2026-11-07,Oklahoma Sooners,Florida Gators,23,7,DraftKings,-4,-4,-110,-108,48.5,46.5,-170,-185,142,154
+401856740,2026-11-07,Alabama Crimson Tide,LSU Tigers,31,13,DraftKings,-4,-6,-110,-110,54.5,54.5,-180,-218,150,180
+401856741,2026-11-07,Georgia Bulldogs,Ole Miss Rebels,42,7,DraftKings,5.5,3.5,-110,-105,55.5,56.5,170,145,-205,-175
+401856742,2026-11-07,Vanderbilt Commodores,Mississippi State Bulldogs,25,23,DraftKings,-3,-3,-110,-105,48.5,48.5,-135,-148,114,124
+401856743,2026-11-07,Texas Longhorns,Missouri Tigers,34,20,DraftKings,3.5,2.5,-105,-112,49.5,44.5,142,110,-170,-130
+401856744,2026-11-07,Texas A&M Aggies,South Carolina Gamecocks,9,17,DraftKings,-6.5,-6.5,-115,-115,51.5,52.5,-218,-250,180,205
+401856745,2026-11-07,Kentucky Wildcats,Tennessee Volunteers,6,34,DraftKings,-6,-6.5,-110,-110,50.5,49.5,-205,-205,170,170
+401856849,2026-11-07,BYU Cougars,Utah Utes,20,28,DraftKings,-3,-4,-110,-112,51.5,49.5,-155,-192,130,160
+401856850,2026-11-07,UCF Knights,Kansas Jayhawks,33,32,DraftKings,-2.5,-6,-110,-112,48.5,47.5,-130,-225,110,185
+401856851,2026-11-07,Cincinnati Bearcats,Houston Cougars,24,31,DraftKings,-10.5,-10,-110,-110,61.5,61.5,-410,-380,320,300
+401856852,2026-11-07,Colorado Buffaloes,Arizona State Sun Devils,10,20,DraftKings,-4,-3,-110,-110,49.5,45.5,-170,-155,142,130
+401856853,2026-11-07,Iowa State Cyclones,Baylor Bears,31,42,DraftKings,-9.5,-10,-108,-112,50.5,50.5,-325,-375,260,295
+401856854,2026-11-07,Oklahoma State Cowboys,Kansas State Wildcats,66,28,DraftKings,6.5,7,-110,-110,60.5,64.5,160,200,-192,-245
+401856856,2026-11-07,West Virginia Mountaineers,Texas Tech Red Raiders,48,53,DraftKings,-17.5,-16.5,-110,-108,63.5,68.5,-750,-750,525,525
+401858285,2026-11-07,Clemson Tigers,Syracuse Orange,18,13,DraftKings,1.5,1.5,-115,-118,49.5,50.5,-105,-105,-115,-115
+401858286,2026-11-07,Duke Blue Devils,NC State Wolfpack,41,3,DraftKings,5.5,4.5,-110,-108,49.5,53.5,170,160,-205,-192
+401858287,2026-11-07,Louisville Cardinals,Georgia Tech Yellow Jackets,44,17,DraftKings,13.5,14.5,-110,-110,59.5,62.5,440,500,-600,-700
+401858289,2026-11-07,Florida State Seminoles,Boston College Eagles,31,24,DraftKings,6.5,5.5,-105,-108,51.5,53.5,195,180,-238,-218
+401858290,2026-11-07,Merrimack Warriors,Wake Forest Demon Deacons,0,77,DraftKings,-47.5,-46.5,-110,-110,59.5,55.5,,,,
+401858291,2026-11-07,Miami Hurricanes,Notre Dame Fighting Irish,24,31,DraftKings,-7.5,-7.5,-110,-102,54.5,54.5,-245,-290,200,235
+401858292,2026-11-07,North Carolina Tar Heels,UConn Huskies,38,21,DraftKings,8.5,7.5,-110,-108,51.5,55.5,260,240,-325,-298
+401858511,2026-11-07,Michigan State Spartans,Michigan Wolverines,15,6,DraftKings,-18.5,-14,-110,-112,50.5,39.5,-950,-625,625,455
+401858512,2026-11-07,UCLA Bruins,Minnesota Golden Gophers,34,20,DraftKings,6.5,3.5,-110,-112,42.5,37.5,195,142,-238,-170
+401858513,2026-11-07,Iowa Hawkeyes,Northwestern Wildcats,24,10,DraftKings,-2.5,3,-110,-102,42.5,42.5,-130,136,110,-162
+401858514,2026-11-07,Oregon Ducks,Ohio State Buckeyes,41,28,DraftKings,-6,-7.5,-110,-115,52.5,44.5,-238,-325,195,260
+401858515,2026-11-07,Maryland Terrapins,Purdue Boilermakers,34,29,DraftKings,-7,-5.5,-110,-105,57.5,56.5,-230,-205,190,170
+401858516,2026-11-07,Penn State Nittany Lions,Washington Huskies,28,25,DraftKings,-2.5,-2.5,-105,-110,44.5,46.5,-122,-135,102,114
+401858517,2026-11-07,Rutgers Scarlet Knights,Wisconsin Badgers,10,31,DraftKings,-16.5,-19.5,-110,-108,46.5,45.5,-750,-1100,525,700
+401860911,2026-11-07,Boise State Broncos,Colorado State Rams,64,38,DraftKings,19.5,15.5,-110,-108,68.5,69.5,750,575,-1200,-850
+401860912,2026-11-07,Texas State Bobcats,Oregon State Beavers,42,21,DraftKings,-8.5,-4,-110,-108,66.5,72.5,-290,-185,235,154
+401860913,2026-11-07,Fresno State Bulldogs,Utah State Aggies,10,17,DraftKings,2.5,-1.5,-110,100,41.5,44.5,105,-112,-125,-108
+401862819,2026-11-07,Charlotte 49ers,UAB Blazers,12,23,DraftKings,-10,-7.5,-110,-110,51.5,47.5,-355,-310,280,250
+401862820,2026-11-07,Temple Owls,Navy Midshipmen,35,42,DraftKings,-7.5,-8.5,-110,-105,52.5,55.5,-310,-305,250,245
+401862821,2026-11-07,Rice Owls,North Texas Mean Green,23,52,DraftKings,-16.5,-14.5,-110,-112,64.5,65.5,-950,-700,625,500
+401862822,2026-11-07,Tulsa Golden Hurricane,Tulane Green Wave,60,10,DraftKings,3,3,-110,-118,48.5,50.5,120,124,-142,-148
+401862823,2026-11-07,Air Force Falcons,Army Black Knights,24,21,DraftKings,-6,-3.5,-110,-110,52.5,43.5,-218,-175,180,145
+401864532,2026-11-07,Hawai'i Rainbow Warriors,UTEP Miners,17,14,DraftKings,11.5,7,-110,-115,49.5,48.5,330,220,-425,-270
+401864534,2026-11-07,Northern Illinois Huskies,San José State Spartans,19,30,DraftKings,-11.5,-11.5,-110,-110,50.5,52.5,-380,-440,300,340
+401864535,2026-11-07,Wyoming Cowboys,UNLV Rebels,41,35,DraftKings,-8.5,-3,-110,-115,45.5,50.5,-285,-162,230,136
+401869927,2026-11-07,Georgia State Panthers,App State Mountaineers,39,23,DraftKings,-3.5,-6.5,-110,-112,57.5,53.5,-162,-230,136,190
+401869936,2026-11-07,UL Monroe Warhawks,Arkansas State Red Wolves,19,17,DraftKings,-14.5,-14.5,-110,-110,51.5,52.5,-750,-675,525,490
+401869945,2026-11-07,Old Dominion Monarchs,Coastal Carolina Chanticleers,21,8,DraftKings,-7,-6.5,-110,-115,45.5,43.5,-238,-250,195,205
+401869951,2026-11-07,Marshall Thundering Herd,Georgia Southern Eagles,13,49,DraftKings,-8.5,-7,-110,-118,53.5,54.5,-310,-285,250,230
+401869968,2026-11-07,South Alabama Jaguars,Louisiana Ragin' Cajuns,26,28,DraftKings,-5.5,-7,-110,-115,57.5,57.5,-175,-285,145,230
+401870795,2026-11-07,Liberty Flames,New Mexico State Aggies,30,14,DraftKings,12.5,14.5,-105,-108,47.5,46.5,370,500,-485,-700
+401871073,2026-11-07,Delaware Blue Hens,Kennesaw State Owls,40,42,DraftKings,3,1.5,-110,-115,51.5,57.5,124,-102,-148,-118
+401871074,2026-11-07,Missouri State Bears,Florida International Panthers,20,23,DraftKings,-4.5,-4.5,-110,-112,49.5,50.5,-185,-205,154,170
+401871075,2026-11-07,Sam Houston Bearkats,Jacksonville State Gamecocks,14,47,DraftKings,-14,-17.5,-110,-102,47.5,45.5,-550,-850,410,575
+401871076,2026-11-07,Western Kentucky Hilltoppers,Middle Tennessee Blue Raiders,42,51,DraftKings,-1.5,1.5,-110,-105,52.5,53.5,-118,110,-102,-130
+401871098,2026-11-07,Louisiana Tech Bulldogs,Troy Trojans,41,17,DraftKings,6.5,7,-110,-115,45.5,48.5,180,210,-218,-258
+401866458,2026-11-10,Western Michigan Broncos,Akron Zips,42,14,DraftKings,13.5,15.5,-110,-112,47.5,50.5,440,525,-600,-750
+401866459,2026-11-10,Kent State Golden Flashes,Bowling Green Falcons,28,33,DraftKings,-5.5,-3.5,-110,-112,44.5,42.5,-205,-180,170,150
+401866460,2026-11-10,Ohio Bobcats,Miami (OH) RedHawks,17,34,DraftKings,-1.5,1.5,-110,-118,47.5,47.5,-118,-105,-102,-115
+401866461,2026-11-11,Buffalo Bulls,Ball State Cardinals,28,7,DraftKings,3,1.5,-110,-118,51.5,52.5,120,-108,-142,-112
+401866462,2026-11-11,Sacramento State Hornets,Central Michigan Chippewas,7,28,DraftKings,-15.5,-17.5,-110,-108,44.5,41.5,-750,-1050,525,675
+401866463,2026-11-11,Massachusetts Minutemen,Toledo Rockets,0,24,DraftKings,-14,-14,-110,-115,53.5,52.5,-575,-625,425,455
+401862824,2026-11-12,Memphis Tigers,South Florida Bulls,52,41,DraftKings,6,4.5,-110,-105,49.5,51.5,190,170,-230,-205
+401869969,2026-11-12,Louisiana Ragin' Cajuns,UL Monroe Warhawks,42,21,DraftKings,10.5,10,-110,-112,48.5,47.5,320,310,-410,-395
+401856860,2026-11-13,Houston Cougars,Colorado Buffaloes,32,42,DraftKings,10.5,7.5,-110,-115,47.5,53.5,310,260,-395,-325
+401858293,2026-11-13,Florida State Seminoles,Pittsburgh Panthers,16,10,DraftKings,-3,-3,-105,-115,53.5,52.5,-142,-155,120,130
+401858526,2026-11-13,Illinois Fighting Illini,UCLA Bruins,14,22,DraftKings,-12.5,-10.5,-110,-105,47.5,48.5,-500,-440,380,340
+401856859,2026-11-14,Cincinnati Bearcats,Iowa State Cyclones,13,41,DraftKings,-1.5,-2.5,-105,-112,60.5,57.5,-115,-130,-105,110
+401856862,2026-11-14,Kansas State Wildcats,TCU Horned Frogs,10,20,DraftKings,-9.5,-14,-110,-110,45.5,44.5,-345,-535,275,400
+401856889,2026-11-14,Alabama Crimson Tide,Vanderbilt Commodores,21,6,DraftKings,19.5,15.5,-110,-108,54.5,48.5,800,550,-1350,-800
+401858296,2026-11-14,Duke Blue Devils,Miami Hurricanes,25,36,DraftKings,-20.5,-14,-110,-108,55.5,55.5,-1650,-600,950,440
+401858297,2026-11-14,Georgia Tech Yellow Jackets,Clemson Tigers,20,6,DraftKings,-13.5,-15.5,-110,-110,49.5,47.5,-575,-675,425,490
+401858300,2026-11-14,Syracuse Orange,NC State Wolfpack,34,31,DraftKings,1.5,3,-110,-120,56.5,54.5,-102,120,-118,-142
+401858301,2026-11-14,Wake Forest Demon Deacons,SMU Mustangs,49,7,DraftKings,3.5,-2.5,-115,-118,55.5,60.5,136,-142,-162,120
+401858520,2026-11-14,Wisconsin Badgers,Maryland Terrapins,21,24,DraftKings,7.5,8.5,-110,-108,43.5,40.5,220,260,-270,-325
+401858522,2026-11-14,Northwestern Wildcats,Ohio State Buckeyes,19,28,DraftKings,-9.5,-14.5,-110,-108,48.5,45.5,-375,-650,295,470
+401858525,2026-11-14,Nebraska Cornhuskers,Rutgers Scarlet Knights,31,0,DraftKings,12.5,15.5,-105,-108,54.5,51.5,400,500,-535,-700
+401861967,2026-11-14,James Madison Dukes,UConn Huskies,22,46,DraftKings,1.5,4.5,-110,-110,56.5,56.5,-102,164,-118,-198
+401862825,2026-11-14,East Carolina Pirates,Charlotte 49ers,17,16,DraftKings,13.5,12.5,-110,-112,47.5,46.5,440,370,-600,-485
+401862829,2026-11-14,UAB Blazers,Temple Owls,36,10,DraftKings,-2.5,-2.5,-110,-122,51.5,48.5,-125,-142,105,120
+401869937,2026-11-14,Arkansas State Red Wolves,Coastal Carolina Chanticleers,21,28,DraftKings,-1.5,1.5,-110,-120,50.5,53.5,-118,-110,-102,-110
+401870769,2026-11-14,Kennesaw State Owls,Sam Houston Bearkats,26,7,DraftKings,7.5,9.5,-110,-110,44.5,44.5,245,275,-305,-345

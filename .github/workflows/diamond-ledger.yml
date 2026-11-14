@@ -140,7 +140,7 @@ jobs:
       - name: Archive finished NBA, NFL and NCAAB games' opening and closing lines
         id: lines
         continue-on-error: true
-        run: python scripts/archive_lines.py nba nfl ncaab
+        run: python scripts/archive_lines.py nba nfl ncaab cfb
 
       - name: Record run health
         if: always()
