@@ -4,13 +4,546 @@
   "sport": "nba",
   "scored": false,
   "generatedAt": "2026-11-14T16:30:00Z",
-  "auditChanges": ["Denver @ New Orleans: NOP PD/g -9.15 and NetRtg -9.51 (Nov 13 game included), Mathurin claim dropped, prices to DraftKings -597/+443, -12.5 -108/+12.5 -112; picks unchanged.", "Dallas @ Cleveland: spread un-swapped to DraftKings Dallas -1.5 -114 / Cleveland +1.5 -106, ML -130/+110; CLE PD/g +1.00, NetRtg +0.91 (16th), gap 3.45; still skip/pass.", "Detroit @ Miami: Miami had Thompson and Larsson out, so Injuries is neutral (tally 2-0, still pass); MIA PD/g -2.92, NetRtg -2.72, DET 8th, gap 37.93; prices to DraftKings -203/+169, -4.5 -117/+4.5 -103.", "Brooklyn @ Memphis: MEM PD/g +8.08, NetRtg +7.97 (6th), gap 55.17; Edey out not questionable; prices to DraftKings +131/-155, +3.5 -112/-3.5 -108; picks unchanged.", "Chicago @ Minnesota: CHI is 11 GP, so no blend — PD/g -13.36, NetRtg -12.98 (29th), MIN 2nd, gap 93.10; Powell not questionable; prices to DraftKings +640/-970, +15.5 -112/-15.5 -108; picks unchanged."],
+  "auditChanges": [
+    "Denver @ New Orleans: NOP PD/g -9.15 and NetRtg -9.51 (Nov 13 game included), Mathurin claim dropped, prices to DraftKings -597/+443, -12.5 -108/+12.5 -112; picks unchanged.",
+    "Dallas @ Cleveland: spread un-swapped to DraftKings Dallas -1.5 -114 / Cleveland +1.5 -106, ML -130/+110; CLE PD/g +1.00, NetRtg +0.91 (16th), gap 3.45; still skip/pass.",
+    "Detroit @ Miami: Miami had Thompson and Larsson out, so Injuries is neutral (tally 2-0, still pass); MIA PD/g -2.92, NetRtg -2.72, DET 8th, gap 37.93; prices to DraftKings -203/+169, -4.5 -117/+4.5 -103.",
+    "Brooklyn @ Memphis: MEM PD/g +8.08, NetRtg +7.97 (6th), gap 55.17; Edey out not questionable; prices to DraftKings +131/-155, +3.5 -112/-3.5 -108; picks unchanged.",
+    "Chicago @ Minnesota: CHI is 11 GP, so no blend \u2014 PD/g -13.36, NetRtg -12.98 (29th), MIN 2nd, gap 93.10; Powell not questionable; prices to DraftKings +640/-970, +15.5 -112/-15.5 -108; picks unchanged."
+  ],
   "auditedAt": "2026-11-14T16:47:14Z",
   "games": [
-    {"altCategoryTally":"5-0","altConfidence":"strong","altCorrect":null,"altCover":null,"altPick":"Denver Nuggets","altReasons":["Scoring margin: favors Denver Nuggets (PD/g +3.18 blended vs -9.15; New Orleans has lost its last two by a combined 65)","Rest: favors Denver Nuggets (2 days off since beating Memphis Nov 11; New Orleans on the second night of a back-to-back after losing at home to Memphis Nov 13)","Travel: neutral (no unusual travel burden beyond the back-to-back already counted under Rest)","Injuries/Lineup: favors Denver Nuggets (weighted x2 — multi-player cluster: New Orleans missing Dejounte Murray, Trey Murphy III, Yves Missi, Trendon Watford and Bryce McGowens; Denver has only non-rotation Julian Strawther out)","Form: favors Denver Nuggets (won at Memphis 123-118 on Nov 11; New Orleans lost at home to Memphis 111-142 on Nov 13)","Motivation/Spot: neutral (no verified revenge/letdown angle)","Venue/Crowd: neutral (no notable edge)","Market: neutral (Action Network: 30% of spread bets on Denver -12.5, line moved from 11.5 to 12.5 toward Denver — not reverse line movement)","Matchup splits: neutral (unverified)"],"altReturn":null,"altSpreadReturn":null,"auditNote":"New Orleans stats updated for its Nov 13 game (PD/g -9.15, NetRtg -9.51), Mathurin isn't a game-time decision, prices set to DraftKings; Denver solid/strong unchanged.","away":"Denver Nuggets","awayMoneyline":-597,"awayNetRtg":3.07,"awayPDpg":3.18,"awayScore":null,"awaySpread":-12.5,"awaySpreadOdds":-108,"confidence":"solid","correct":null,"gameTotal":235.5,"gameTotalOverOdds":-109,"gameTotalUnderOdds":-111,"home":"New Orleans Pelicans","homeMoneyline":443,"homeNetRtg":-9.51,"homePDpg":-9.15,"homeScore":null,"homeSpread":12.5,"homeSpreadOdds":-112,"netRtgGap":44.83,"pick":"Denver Nuggets","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g +3.18 vs -9.15 (Denver blended 50/50 with 2025-26 final at 10 GP this season; New Orleans full 2026-27 season, 13 GP)","NetRtg +3.07 vs -9.51 (rank 12th vs 25th of 30 teams — gap 44.83)","New Orleans missing Dejounte Murray, Trey Murphy III, Yves Missi, Trendon Watford, Bryce McGowens; Denver at full strength"],"statsLine":{"awayMoneyline":-597,"awaySpread":-12.5,"awaySpreadOdds":-108,"homeMoneyline":443,"homeSpread":12.5,"homeSpreadOdds":-112},"statsSpread":12.5,"storylines":[{"against":false,"fact":"Denver Nuggets is a -12.5 road favorite on 3 days' rest; New Orleans Pelicans played last night (2026-11-13).","key":"road_fresh_fav","leanPct":59.5,"leans":"Denver Nuggets","live":"0-0","name":"Rested road favorite","pct":59.5,"record":"47-32","says":"back","team":"Denver Nuggets","weight":1}],"time":"7:00 PM ET","totalsLine":235.5},
-    {"altCategoryTally":"3-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: neutral (PD/g tied at +1.00 vs +1.00)","Rest: favors Dallas Mavericks (1 day off after a Nov 12 loss at Minnesota; Cleveland on the second night of a back-to-back after losing at Miami Nov 13)","Travel: neutral (folded into the back-to-back already counted under Rest)","Injuries/Lineup: favors Dallas Mavericks (weighted x2 — multi-player cluster for Cleveland: Evan Mobley and Sam Merrill out; Dallas's own cluster of Lively II/Biberovic/de Larrea is depth, not a starter of Mobley's caliber)","Form: neutral (both lost their last game — Dallas by 39 at Minnesota, Cleveland by 12 at Miami)","Motivation/Spot: neutral (no verified angle)","Venue/Crowd: neutral","Market: neutral (line moved from Cleveland -3.5 to Dallas -1.5 at DraftKings; Action Network bet split unverified)","Matchup splits: neutral (unverified)"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Cleveland stats updated for its Nov 13 game (PD/g +1.00, NetRtg +0.91, 16th; gap 3.45), Dallas is the DraftKings favorite (-1.5, -130), Mitchell not Mobley is Cleveland's best player; still skip and pass.","away":"Dallas Mavericks","awayMoneyline":-130,"awayNetRtg":1.19,"awayPDpg":1,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":-114,"confidence":"skip","correct":null,"gameTotal":231.5,"gameTotalOverOdds":-110,"gameTotalUnderOdds":-110,"home":"Cleveland Cavaliers","homeMoneyline":110,"homeNetRtg":0.91,"homePDpg":1,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":-106,"netRtgGap":3.45,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"netrtg-gap","skipped":true,"statLines":["PD/g +1.00 vs +1.00 (both full 2026-27 season; Dallas 12 GP, Cleveland 13 GP)","NetRtg +1.19 vs +0.91 (15th vs 16th of 30 teams — gap 3.45, below the 30-point screen)","Cleveland missing Evan Mobley (toe), Sam Merrill (elbow) and Jaylon Tomlin; Dallas missing Dereck Lively II, Tarik Biberovic and Sergio de Larrea, Max Christie questionable"],"statsCheck":"Rule 44: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15. Rule 47: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.","statsFavors":"Cleveland Cavaliers","statsLine":{"awayMoneyline":-113,"awaySpread":-1.5,"awaySpreadOdds":-102,"homeMoneyline":-105,"homeSpread":1.5,"homeSpreadOdds":-118},"statsRules":[{"backtest":"67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15","detail":"Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15.","name":"Revenge: back a team at home with the worse record after losing the last meeting by 10-19 as the favorite (on trial)","rule":44},{"backtest":"61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22","detail":"Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.","name":"Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)","rule":47}],"statsSpread":1.5,"storylines":[{"against":true,"fact":"Cleveland Cavaliers allowed 133 last game and Dallas Mavericks allowed 133.","key":"leaky","leanPct":53.9,"leans":"Dallas Mavericks","live":"0-1","name":"Leaky defense meets leaky defense","pct":46.1,"record":"117-137","says":"back","team":"Cleveland Cavaliers","weight":1},{"against":false,"fact":"Dallas Mavericks is a +1.5 road underdog on 2 days' rest; Cleveland Cavaliers played last night (2026-11-13).","key":"road_fresh_dog","leanPct":57.7,"leans":"Dallas Mavericks","live":"0-0","name":"Fresh underdog on the road","pct":57.7,"record":"162-119","says":"back","team":"Dallas Mavericks","weight":1}],"time":"7:30 PM ET","totalsCheck":"Rule 16: Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers. Rule 23: Cleveland Cavaliers's last game (121-133 on 2026-11-13) went over its total of 234.5 by 19.5, and Dallas Mavericks allowed 133 in its last game.","totalsFavors":"Over","totalsLine":231.5,"totalsRules":[{"backtest":"67.2% overs, 41-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-8","detail":"Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers.","name":"Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)","rule":16},{"backtest":"62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38","detail":"Cleveland Cavaliers's last game (121-133 on 2026-11-13) went over its total of 234.5 by 19.5, and Dallas Mavericks allowed 133 in its last game.","name":"Over when the home team's last game went over its total by 10+ and the road team allowed 130+ in its last game (on trial)","rule":23}]},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Detroit Pistons (PD/g +7.73 vs -4.27)","Rest: favors Detroit Pistons (1 day off since a 2OT win over Washington Nov 12; Miami on the second night of a back-to-back after beating Cleveland at home Nov 13)","Travel: neutral (Detroit's trip to Miami is a routine single road stop with a day to adjust)","Injuries/Lineup: neutral (both teams have a cluster: Detroit without Jalen Duren and Isaiah Joe, Miami without Klay Thompson and Pelle Larsson on the latest report)","Form: neutral (Detroit needed double overtime to win at Washington; Miami beat Cleveland by 12 — not enough to separate on a verified multi-game trend)","Motivation/Spot: neutral (no verified angle)","Venue/Crowd: neutral","Market: neutral (line moved from Detroit -5.5 to -4.5 toward Miami; Action Network bet split unverified)","Matchup splits: neutral (unverified)"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Miami's injury report isn't clean (Thompson, Larsson out), so Injuries is neutral and the tally is 2-0, still a pass; Miami stats updated for Nov 13; Detroit solid unchanged.","away":"Detroit Pistons","awayMoneyline":-203,"awayNetRtg":7.68,"awayPDpg":7.73,"awayScore":null,"awaySpread":-4.5,"awaySpreadOdds":-117,"confidence":"solid","correct":null,"gameTotal":228.5,"gameTotalOverOdds":-115,"gameTotalUnderOdds":-105,"home":"Miami Heat","homeMoneyline":169,"homeNetRtg":-2.72,"homePDpg":-2.92,"homeScore":null,"homeSpread":4.5,"homeSpreadOdds":-103,"netRtgGap":37.93,"pick":"Detroit Pistons","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g +7.73 vs -2.92 (both full 2026-27 season; Detroit 11 GP, Miami 12 GP)","NetRtg +7.68 vs -2.72 (8th vs 19th of 30 teams — gap 37.93)","Detroit missing Jalen Duren (hamstring) and Isaiah Joe (hip), Ugonna Onyenso out (two-way); Miami had Klay Thompson (ankle) and Pelle Larsson (illness) out on its Nov 13 report"],"statsCheck":"Rule 58: Fading Detroit Pistons: won its last game by 4 (144-140 at Washington Wizards), and Miami Heat scored 133 in its last game -- 63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22.","statsFavors":"Miami Heat","statsLine":{"awayMoneyline":-191,"awaySpread":-4.5,"awaySpreadOdds":-115,"homeMoneyline":160,"homeSpread":4.5,"homeSpreadOdds":-105},"statsRules":[{"backtest":"63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22","detail":"Fading Detroit Pistons: won its last game by 4 (144-140 at Washington Wizards), and Miami Heat scored 133 in its last game -- 63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22.","name":"Fade a team that won its last game by 1-5 when tonight's opponent scored 130+ in its last game (on trial)","rule":58}],"statsSpread":4.5,"time":"8:00 PM ET","totalsCheck":"Rule 23: Miami Heat's last game (133-121 on 2026-11-13) went over its total of 234.5 by 19.5, and Detroit Pistons allowed 140 in its last game.","totalsFavors":"Over","totalsLine":228.5,"totalsRules":[{"backtest":"62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38","detail":"Miami Heat's last game (133-121 on 2026-11-13) went over its total of 234.5 by 19.5, and Detroit Pistons allowed 140 in its last game.","name":"Over when the home team's last game went over its total by 10+ and the road team allowed 130+ in its last game (on trial)","rule":23}]},
-    {"altCategoryTally":"3-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Memphis Grizzlies (PD/g +8.08 vs -5.09)","Rest: favors Brooklyn Nets (2 days off since beating New Orleans Nov 11; Memphis on the second night of a back-to-back after winning at New Orleans Nov 13)","Travel: neutral (folded into the back-to-back already counted under Rest)","Injuries/Lineup: favors Brooklyn Nets (weighted x2 — multi-player cluster for Memphis: Quinten Post, Scotty Pippen Jr. and Zach Edey out on the latest report; Brooklyn's Mikel Brown Jr. is questionable and Nolan Traore probable)","Form: neutral (Memphis won by 31 last time out, Brooklyn won by 34 two games ago — both strong, not enough to separate)","Motivation/Spot: neutral (no verified angle)","Venue/Crowd: neutral","Market: neutral (Action Network: 82% of spread bets on Memphis -3.5, line moved from -5.5 toward Brooklyn — not reverse line movement)","Matchup splits: neutral (unverified)"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Memphis stats updated for its Nov 13 game (PD/g +8.08, NetRtg +7.97, 6th; gap 55.17), Edey is out, prices set to DraftKings; Memphis solid and the pass unchanged.","away":"Brooklyn Nets","awayMoneyline":131,"awayNetRtg":-4.96,"awayPDpg":-5.09,"awayScore":null,"awaySpread":3.5,"awaySpreadOdds":-112,"confidence":"solid","correct":null,"gameTotal":228.5,"gameTotalOverOdds":-107,"gameTotalUnderOdds":-113,"home":"Memphis Grizzlies","homeMoneyline":-155,"homeNetRtg":7.97,"homePDpg":8.08,"homeScore":null,"homeSpread":-3.5,"homeSpreadOdds":-108,"netRtgGap":55.17,"pick":"Memphis Grizzlies","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -5.09 vs +8.08 (both full 2026-27 season; Brooklyn 11 GP, Memphis 12 GP)","NetRtg -4.96 vs +7.97 (22nd vs 6th of 30 teams — gap 55.17)","Memphis missing Quinten Post (concussion), Scotty Pippen Jr. (back), Zach Edey (ankle) and two-way Richie Saunders; Brooklyn's Mikel Brown Jr. questionable, Nolan Traore probable"],"statsCheck":"Rule 69: Fading Brooklyn Nets: beat the spread by 36.5 last game (a +2.5 line vs New Orleans Pelicans), now vs Memphis Grizzlies with the better record (8-4 vs 3-8) -- 65.3% ATS, 47-25 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-8; 2024-now 16-10; climbs 15+ 56.9% / 25+ 68.8%.","statsFavors":"Memphis Grizzlies","statsLine":{"awayMoneyline":140,"awaySpread":3.5,"awaySpreadOdds":-108,"homeMoneyline":-167,"homeSpread":-3.5,"homeSpreadOdds":-112},"statsRules":[{"backtest":"65.3% ATS, 47-25 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-8; 2024-now 16-10; climbs 15+ 56.9% / 25+ 68.8%","detail":"Fading Brooklyn Nets: beat the spread by 36.5 last game (a +2.5 line vs New Orleans Pelicans), now vs Memphis Grizzlies with the better record (8-4 vs 3-8) -- 65.3% ATS, 47-25 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-8; 2024-now 16-10; climbs 15+ 56.9% / 25+ 68.8%.","name":"Fade a team that beat the spread by 20+ in a close-spread game (within 3), now vs a better-record team (on trial)","rule":69}],"statsSpread":-3.5,"time":"8:00 PM ET","totalsCheck":"Rule 10: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back. Rule 14: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.","totalsFavors":"Under","totalsLine":228.5,"totalsRules":[{"backtest":"62.8% unders, 59-35 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-17","detail":"Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.","name":"Under when the home team is back from a 20+ road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)","rule":10},{"backtest":"61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24","detail":"Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.","name":"Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)","rule":14}]},
-    {"altCategoryTally":"2-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: neutral (Minnesota has the far better PD/g, but its best player Anthony Edwards is out, so the star-out rule blocks it)","Rest: favors Minnesota Timberwolves (1 day off since beating Dallas Nov 12; Chicago on the second night of a back-to-back after an OT win over Atlanta Nov 13)","Travel: favors Minnesota Timberwolves (Chicago must fly to Minneapolis the same day on the back end of its back-to-back)","Injuries/Lineup: favors Chicago Bulls (weighted x2 — Minnesota's cluster includes Anthony Edwards, a true star, plus Donte DiVincenzo; Chicago's absences — Caleb Wilson, Swain, Awaka — are depth)","Form: neutral (Minnesota blocked by the star-out rule; Chicago's OT win over Atlanta is one game in a 2-9 start)","Motivation/Spot: neutral (no verified angle)","Venue/Crowd: neutral","Market: neutral (Action Network: 57% of spread bets on Minnesota -15.5, line moved from -13.5 toward Minnesota — not reverse line movement)","Matchup splits: neutral (unverified)"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Chicago has 11 GP so uses this season only (PD/g -13.36, NetRtg -12.98, 29th; gap 93.10), Powell isn't on the injury report, prices set to DraftKings; Minnesota solid and the pass unchanged.","away":"Chicago Bulls","awayMoneyline":640,"awayNetRtg":-12.98,"awayPDpg":-13.36,"awayScore":null,"awaySpread":15.5,"awaySpreadOdds":-112,"confidence":"solid","correct":null,"gameTotal":235.5,"gameTotalOverOdds":-105,"gameTotalUnderOdds":-115,"home":"Minnesota Timberwolves","homeMoneyline":-970,"homeNetRtg":13.36,"homePDpg":13.42,"homeScore":null,"homeSpread":-15.5,"homeSpreadOdds":-108,"netRtgGap":93.1,"pick":"Minnesota Timberwolves","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -13.36 vs +13.42 (both full 2026-27 season; Chicago 11 GP, Minnesota 12 GP)","NetRtg -12.98 vs +13.36 (29th vs 2nd of 30 teams — gap 93.10)","Minnesota missing Anthony Edwards (knee) and Donte DiVincenzo (Achilles); Chicago missing Caleb Wilson (hand), Swain and Awaka, Norman Powell available on the latest report"],"statsCheck":"Rule 2: Fading Chicago Bulls: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77). Rule 53: Fading Chicago Bulls: 2-9 on the season, a +15.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10. Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 33.5 vs Dallas Mavericks and by 2.5 vs Utah Jazz), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 56: Fading Chicago Bulls: won last night (125-117 vs Atlanta Hawks) with Isaac Okoro playing 41 minutes, now on the second night of a back-to-back -- 62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22. Rule 62: Backing Minnesota Timberwolves: covered its last 7 games, and Chicago Bulls's top scorer Norman Powell scored 33 last game (20.8 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16. Rule 64: Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.","statsFavors":"Minnesota Timberwolves","statsLine":{"awayMoneyline":620,"awaySpread":15.5,"awaySpreadOdds":-117,"homeMoneyline":-930,"homeSpread":-15.5,"homeSpreadOdds":-104},"statsRules":[{"backtest":"66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)","detail":"Fading Chicago Bulls: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77).","name":"Fade an OT winner vs. a stronger team (any rest)","rule":2},{"backtest":"66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10","detail":"Fading Chicago Bulls: 2-9 on the season, a +15.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10.","name":"Back a home favorite of 10+ vs. a team at .300 or worse on the second night of a back-to-back (on trial)","rule":53},{"backtest":"62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38","detail":"Backing Minnesota Timberwolves: covered its last two games (by 33.5 vs Dallas Mavericks and by 2.5 vs Utah Jazz), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.","name":"Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)","rule":54},{"backtest":"62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22","detail":"Fading Chicago Bulls: won last night (125-117 vs Atlanta Hawks) with Isaac Okoro playing 41 minutes, now on the second night of a back-to-back -- 62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22.","name":"Fade a team on a back-to-back that won last night with a player logging 40+ minutes (on trial)","rule":56},{"backtest":"68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16","detail":"Backing Minnesota Timberwolves: covered its last 7 games, and Chicago Bulls's top scorer Norman Powell scored 33 last game (20.8 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16.","name":"Back a team that covered its last 3+ games vs. an opponent whose top scorer scored 10+ over his average last game, with at least a day off (on trial)","rule":62},{"backtest":"63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15","detail":"Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.","name":"Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)","rule":64}],"statsSpread":-15.5,"storylines":[{"against":false,"fact":"Minnesota Timberwolves has won 5 straight and is a -15.5 favorite.","key":"fat_happy","leanPct":53.4,"leans":"Chicago Bulls","live":"4-3","name":"Fat and happy","pct":53.4,"record":"156-136","says":"fade","team":"Minnesota Timberwolves","weight":1},{"against":false,"fact":"Minnesota Timberwolves' point differential (+13.4 a game) is better than its 9-3 record, and Chicago Bulls' record is better than its -13.4.","key":"quiet_giant","leanPct":55.3,"leans":"Minnesota Timberwolves","live":"2-5","name":"The quiet giant vs the hype machine","pct":55.3,"record":"105-85","says":"back","team":"Minnesota Timberwolves","weight":1},{"against":false,"fact":"Minnesota Timberwolves is a -15.5 favorite vs Chicago Bulls (2-9): it just beat Dallas Mavericks (0.636) by 39.","key":"letdown","leanPct":54.3,"leans":"Chicago Bulls","live":"3-2","name":"Letdown spot","pct":54.3,"record":"358-301","says":"fade","team":"Minnesota Timberwolves","weight":1},{"against":true,"fact":"Chicago Bulls' top scorer Norman Powell (20.8 a game) returned last game after missing the one before; Chicago Bulls is a +15.5 underdog.","key":"prodigal","leanPct":54.7,"leans":"Minnesota Timberwolves","live":"2-2","name":"The prodigal star","pct":45.3,"record":"173-209","says":"back","team":"Chicago Bulls","weight":1}],"time":"8:00 PM ET","totalsLine":235.5}
+    {
+      "altCategoryTally": "5-0",
+      "altConfidence": "strong",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": "Denver Nuggets",
+      "altReasons": [
+        "Scoring margin: favors Denver Nuggets (PD/g +3.18 blended vs -9.15; New Orleans has lost its last two by a combined 65)",
+        "Rest: favors Denver Nuggets (2 days off since beating Memphis Nov 11; New Orleans on the second night of a back-to-back after losing at home to Memphis Nov 13)",
+        "Travel: neutral (no unusual travel burden beyond the back-to-back already counted under Rest)",
+        "Injuries/Lineup: favors Denver Nuggets (weighted x2 \u2014 multi-player cluster: New Orleans missing Dejounte Murray, Trey Murphy III, Yves Missi, Trendon Watford and Bryce McGowens; Denver has only non-rotation Julian Strawther out)",
+        "Form: favors Denver Nuggets (won at Memphis 123-118 on Nov 11; New Orleans lost at home to Memphis 111-142 on Nov 13)",
+        "Motivation/Spot: neutral (no verified revenge/letdown angle)",
+        "Venue/Crowd: neutral (no notable edge)",
+        "Market: neutral (Action Network: 30% of spread bets on Denver -12.5, line moved from 11.5 to 12.5 toward Denver \u2014 not reverse line movement)",
+        "Matchup splits: neutral (unverified)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "New Orleans stats updated for its Nov 13 game (PD/g -9.15, NetRtg -9.51), Mathurin isn't a game-time decision, prices set to DraftKings; Denver solid/strong unchanged.",
+      "away": "Denver Nuggets",
+      "awayMoneyline": -597,
+      "awayNetRtg": 3.07,
+      "awayPDpg": 3.18,
+      "awayScore": null,
+      "awaySpread": -12.5,
+      "awaySpreadOdds": -108,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 235.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "home": "New Orleans Pelicans",
+      "homeMoneyline": 443,
+      "homeNetRtg": -9.51,
+      "homePDpg": -9.15,
+      "homeScore": null,
+      "homeSpread": 12.5,
+      "homeSpreadOdds": -112,
+      "netRtgGap": 44.83,
+      "pick": "Denver Nuggets",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g +3.18 vs -9.15 (Denver blended 50/50 with 2025-26 final at 10 GP this season; New Orleans full 2026-27 season, 13 GP)",
+        "NetRtg +3.07 vs -9.51 (rank 12th vs 25th of 30 teams \u2014 gap 44.83)",
+        "New Orleans missing Dejounte Murray, Trey Murphy III, Yves Missi, Trendon Watford, Bryce McGowens; Denver at full strength"
+      ],
+      "statsLine": {
+        "homeSpread": 12.5,
+        "awaySpread": -12.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": 483,
+        "awayMoneyline": -670
+      },
+      "statsSpread": 12.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-1",
+          "key": "road_fresh_fav",
+          "name": "Rested road favorite",
+          "team": "Denver Nuggets",
+          "says": "back",
+          "fact": "Denver Nuggets is a -12.5 road favorite on 3 days' rest; New Orleans Pelicans played last night (2026-11-13).",
+          "record": "48-33",
+          "pct": 59.3,
+          "leans": "Denver Nuggets",
+          "leanPct": 59.3,
+          "against": false
+        }
+      ],
+      "time": "7:00 PM ET",
+      "totalsLine": 235.5
+    },
+    {
+      "altCategoryTally": "3-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: neutral (PD/g tied at +1.00 vs +1.00)",
+        "Rest: favors Dallas Mavericks (1 day off after a Nov 12 loss at Minnesota; Cleveland on the second night of a back-to-back after losing at Miami Nov 13)",
+        "Travel: neutral (folded into the back-to-back already counted under Rest)",
+        "Injuries/Lineup: favors Dallas Mavericks (weighted x2 \u2014 multi-player cluster for Cleveland: Evan Mobley and Sam Merrill out; Dallas's own cluster of Lively II/Biberovic/de Larrea is depth, not a starter of Mobley's caliber)",
+        "Form: neutral (both lost their last game \u2014 Dallas by 39 at Minnesota, Cleveland by 12 at Miami)",
+        "Motivation/Spot: neutral (no verified angle)",
+        "Venue/Crowd: neutral",
+        "Market: neutral (line moved from Cleveland -3.5 to Dallas -1.5 at DraftKings; Action Network bet split unverified)",
+        "Matchup splits: neutral (unverified)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Cleveland stats updated for its Nov 13 game (PD/g +1.00, NetRtg +0.91, 16th; gap 3.45), Dallas is the DraftKings favorite (-1.5, -130), Mitchell not Mobley is Cleveland's best player; still skip and pass.",
+      "away": "Dallas Mavericks",
+      "awayMoneyline": -130,
+      "awayNetRtg": 1.19,
+      "awayPDpg": 1,
+      "awayScore": null,
+      "awaySpread": -1.5,
+      "awaySpreadOdds": -114,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "home": "Cleveland Cavaliers",
+      "homeMoneyline": 110,
+      "homeNetRtg": 0.91,
+      "homePDpg": 1,
+      "homeScore": null,
+      "homeSpread": 1.5,
+      "homeSpreadOdds": -106,
+      "netRtgGap": 3.45,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "netrtg-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +1.00 vs +1.00 (both full 2026-27 season; Dallas 12 GP, Cleveland 13 GP)",
+        "NetRtg +1.19 vs +0.91 (15th vs 16th of 30 teams \u2014 gap 3.45, below the 30-point screen)",
+        "Cleveland missing Evan Mobley (toe), Sam Merrill (elbow) and Jaylon Tomlin; Dallas missing Dereck Lively II, Tarik Biberovic and Sergio de Larrea, Max Christie questionable"
+      ],
+      "statsCheck": "Rule 44: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15. Rule 47: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
+      "statsFavors": "Cleveland Cavaliers",
+      "statsLine": {
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 137,
+        "awayMoneyline": -163
+      },
+      "statsRules": [
+        {
+          "rule": 44,
+          "name": "Revenge: back a team at home with the worse record after losing the last meeting by 10-19 as the favorite (on trial)",
+          "backtest": "67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15",
+          "detail": "Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15."
+        },
+        {
+          "rule": 47,
+          "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
+          "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
+          "detail": "Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, the underdog, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
+        }
+      ],
+      "statsSpread": 4.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-1",
+          "key": "leaky",
+          "name": "Leaky defense meets leaky defense",
+          "team": "Cleveland Cavaliers",
+          "says": "back",
+          "fact": "Cleveland Cavaliers allowed 133 last game and Dallas Mavericks allowed 133.",
+          "record": "117-137",
+          "pct": 46.1,
+          "leans": "Dallas Mavericks",
+          "leanPct": 53.9,
+          "against": true
+        }
+      ],
+      "time": "7:30 PM ET",
+      "totalsCheck": "Rule 16: Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers. Rule 23: Cleveland Cavaliers's last game (121-133 on 2026-11-13) went over its total of 234.5 by 19.5, and Dallas Mavericks allowed 133 in its last game.",
+      "totalsFavors": "Over",
+      "totalsLine": 229.5,
+      "totalsRules": [
+        {
+          "rule": 16,
+          "detail": "Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers.",
+          "name": "Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)",
+          "backtest": "67.2% overs, 41-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-8"
+        },
+        {
+          "rule": 23,
+          "detail": "Cleveland Cavaliers's last game (121-133 on 2026-11-13) went over its total of 234.5 by 19.5, and Dallas Mavericks allowed 133 in its last game.",
+          "name": "Over when the home team's last game went over its total by 10+ and the road team allowed 130+ in its last game (on trial)",
+          "backtest": "62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Detroit Pistons (PD/g +7.73 vs -4.27)",
+        "Rest: favors Detroit Pistons (1 day off since a 2OT win over Washington Nov 12; Miami on the second night of a back-to-back after beating Cleveland at home Nov 13)",
+        "Travel: neutral (Detroit's trip to Miami is a routine single road stop with a day to adjust)",
+        "Injuries/Lineup: neutral (both teams have a cluster: Detroit without Jalen Duren and Isaiah Joe, Miami without Klay Thompson and Pelle Larsson on the latest report)",
+        "Form: neutral (Detroit needed double overtime to win at Washington; Miami beat Cleveland by 12 \u2014 not enough to separate on a verified multi-game trend)",
+        "Motivation/Spot: neutral (no verified angle)",
+        "Venue/Crowd: neutral",
+        "Market: neutral (line moved from Detroit -5.5 to -4.5 toward Miami; Action Network bet split unverified)",
+        "Matchup splits: neutral (unverified)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Miami's injury report isn't clean (Thompson, Larsson out), so Injuries is neutral and the tally is 2-0, still a pass; Miami stats updated for Nov 13; Detroit solid unchanged.",
+      "away": "Detroit Pistons",
+      "awayMoneyline": -203,
+      "awayNetRtg": 7.68,
+      "awayPDpg": 7.73,
+      "awayScore": null,
+      "awaySpread": -4.5,
+      "awaySpreadOdds": -117,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "home": "Miami Heat",
+      "homeMoneyline": 169,
+      "homeNetRtg": -2.72,
+      "homePDpg": -2.92,
+      "homeScore": null,
+      "homeSpread": 4.5,
+      "homeSpreadOdds": -103,
+      "netRtgGap": 37.93,
+      "pick": "Detroit Pistons",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g +7.73 vs -2.92 (both full 2026-27 season; Detroit 11 GP, Miami 12 GP)",
+        "NetRtg +7.68 vs -2.72 (8th vs 19th of 30 teams \u2014 gap 37.93)",
+        "Detroit missing Jalen Duren (hamstring) and Isaiah Joe (hip), Ugonna Onyenso out (two-way); Miami had Klay Thompson (ankle) and Pelle Larsson (illness) out on its Nov 13 report"
+      ],
+      "statsCheck": "Rule 58: Fading Detroit Pistons: won its last game by 4 (144-140 at Washington Wizards), and Miami Heat scored 133 in its last game -- 63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22.",
+      "statsFavors": "Miami Heat",
+      "statsLine": {
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 146,
+        "awayMoneyline": -173
+      },
+      "statsRules": [
+        {
+          "rule": 58,
+          "name": "Fade a team that won its last game by 1-5 when tonight's opponent scored 130+ in its last game (on trial)",
+          "backtest": "63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22",
+          "detail": "Fading Detroit Pistons: won its last game by 4 (144-140 at Washington Wizards), and Miami Heat scored 133 in its last game -- 63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22."
+        }
+      ],
+      "statsSpread": 3.5,
+      "time": "8:00 PM ET",
+      "totalsCheck": "Rule 23: Miami Heat's last game (133-121 on 2026-11-13) went over its total of 234.5 by 19.5, and Detroit Pistons allowed 140 in its last game.",
+      "totalsFavors": "Over",
+      "totalsLine": 229.5,
+      "totalsRules": [
+        {
+          "rule": 23,
+          "detail": "Miami Heat's last game (133-121 on 2026-11-13) went over its total of 234.5 by 19.5, and Detroit Pistons allowed 140 in its last game.",
+          "name": "Over when the home team's last game went over its total by 10+ and the road team allowed 130+ in its last game (on trial)",
+          "backtest": "62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38"
+        }
+      ],
+      "totalsWatch": [
+        {
+          "player": "Giannis Antetokounmpo",
+          "pts": 37,
+          "status": "Day-To-Day",
+          "rule": 3,
+          "ifOut": "NBA Totals rule 3 would bet the over"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "3-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Memphis Grizzlies (PD/g +8.08 vs -5.09)",
+        "Rest: favors Brooklyn Nets (2 days off since beating New Orleans Nov 11; Memphis on the second night of a back-to-back after winning at New Orleans Nov 13)",
+        "Travel: neutral (folded into the back-to-back already counted under Rest)",
+        "Injuries/Lineup: favors Brooklyn Nets (weighted x2 \u2014 multi-player cluster for Memphis: Quinten Post, Scotty Pippen Jr. and Zach Edey out on the latest report; Brooklyn's Mikel Brown Jr. is questionable and Nolan Traore probable)",
+        "Form: neutral (Memphis won by 31 last time out, Brooklyn won by 34 two games ago \u2014 both strong, not enough to separate)",
+        "Motivation/Spot: neutral (no verified angle)",
+        "Venue/Crowd: neutral",
+        "Market: neutral (Action Network: 82% of spread bets on Memphis -3.5, line moved from -5.5 toward Brooklyn \u2014 not reverse line movement)",
+        "Matchup splits: neutral (unverified)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Memphis stats updated for its Nov 13 game (PD/g +8.08, NetRtg +7.97, 6th; gap 55.17), Edey is out, prices set to DraftKings; Memphis solid and the pass unchanged.",
+      "away": "Brooklyn Nets",
+      "awayMoneyline": 131,
+      "awayNetRtg": -4.96,
+      "awayPDpg": -5.09,
+      "awayScore": null,
+      "awaySpread": 3.5,
+      "awaySpreadOdds": -112,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "home": "Memphis Grizzlies",
+      "homeMoneyline": -155,
+      "homeNetRtg": 7.97,
+      "homePDpg": 8.08,
+      "homeScore": null,
+      "homeSpread": -3.5,
+      "homeSpreadOdds": -108,
+      "netRtgGap": 55.17,
+      "pick": "Memphis Grizzlies",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g -5.09 vs +8.08 (both full 2026-27 season; Brooklyn 11 GP, Memphis 12 GP)",
+        "NetRtg -4.96 vs +7.97 (22nd vs 6th of 30 teams \u2014 gap 55.17)",
+        "Memphis missing Quinten Post (concussion), Scotty Pippen Jr. (back), Zach Edey (ankle) and two-way Richie Saunders; Brooklyn's Mikel Brown Jr. questionable, Nolan Traore probable"
+      ],
+      "statsCheck": "Rule 69: Fading Brooklyn Nets: beat the spread by 36.5 last game (a +2.5 line vs New Orleans Pelicans), now vs Memphis Grizzlies with the better record (8-4 vs 3-8) -- 65.3% ATS, 47-25 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-8; 2024-now 16-10; climbs 15+ 56.9% / 25+ 68.8%.",
+      "statsFavors": "Memphis Grizzlies",
+      "statsLine": {
+        "homeSpread": -2.5,
+        "awaySpread": 2.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -148,
+        "awayMoneyline": 125
+      },
+      "statsRules": [
+        {
+          "rule": 69,
+          "name": "Fade a team that beat the spread by 20+ in a close-spread game (within 3), now vs a better-record team (on trial)",
+          "backtest": "65.3% ATS, 47-25 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-8; 2024-now 16-10; climbs 15+ 56.9% / 25+ 68.8%",
+          "detail": "Fading Brooklyn Nets: beat the spread by 36.5 last game (a +2.5 line vs New Orleans Pelicans), now vs Memphis Grizzlies with the better record (8-4 vs 3-8) -- 65.3% ATS, 47-25 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 12-8; 2024-now 16-10; climbs 15+ 56.9% / 25+ 68.8%."
+        }
+      ],
+      "statsSpread": -2.5,
+      "time": "8:00 PM ET",
+      "totalsCheck": "Rule 10: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back. Rule 14: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.",
+      "totalsFavors": "Under",
+      "totalsLine": 228.5,
+      "totalsRules": [
+        {
+          "rule": 10,
+          "detail": "Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.",
+          "name": "Under when the home team is back from a 20+ road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)",
+          "backtest": "62.8% unders, 59-35 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-17"
+        },
+        {
+          "rule": 14,
+          "detail": "Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.",
+          "name": "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
+          "backtest": "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "2-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: neutral (Minnesota has the far better PD/g, but its best player Anthony Edwards is out, so the star-out rule blocks it)",
+        "Rest: favors Minnesota Timberwolves (1 day off since beating Dallas Nov 12; Chicago on the second night of a back-to-back after an OT win over Atlanta Nov 13)",
+        "Travel: favors Minnesota Timberwolves (Chicago must fly to Minneapolis the same day on the back end of its back-to-back)",
+        "Injuries/Lineup: favors Chicago Bulls (weighted x2 \u2014 Minnesota's cluster includes Anthony Edwards, a true star, plus Donte DiVincenzo; Chicago's absences \u2014 Caleb Wilson, Swain, Awaka \u2014 are depth)",
+        "Form: neutral (Minnesota blocked by the star-out rule; Chicago's OT win over Atlanta is one game in a 2-9 start)",
+        "Motivation/Spot: neutral (no verified angle)",
+        "Venue/Crowd: neutral",
+        "Market: neutral (Action Network: 57% of spread bets on Minnesota -15.5, line moved from -13.5 toward Minnesota \u2014 not reverse line movement)",
+        "Matchup splits: neutral (unverified)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Chicago has 11 GP so uses this season only (PD/g -13.36, NetRtg -12.98, 29th; gap 93.10), Powell isn't on the injury report, prices set to DraftKings; Minnesota solid and the pass unchanged.",
+      "away": "Chicago Bulls",
+      "awayMoneyline": 640,
+      "awayNetRtg": -12.98,
+      "awayPDpg": -13.36,
+      "awayScore": null,
+      "awaySpread": 15.5,
+      "awaySpreadOdds": -112,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 234.5,
+      "gameTotalOverOdds": -111,
+      "gameTotalUnderOdds": -109,
+      "home": "Minnesota Timberwolves",
+      "homeMoneyline": -970,
+      "homeNetRtg": 13.36,
+      "homePDpg": 13.42,
+      "homeScore": null,
+      "homeSpread": -15.5,
+      "homeSpreadOdds": -108,
+      "netRtgGap": 93.1,
+      "pick": "Minnesota Timberwolves",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g -13.36 vs +13.42 (both full 2026-27 season; Chicago 11 GP, Minnesota 12 GP)",
+        "NetRtg -12.98 vs +13.36 (29th vs 2nd of 30 teams \u2014 gap 93.10)",
+        "Minnesota missing Anthony Edwards (knee) and Donte DiVincenzo (Achilles); Chicago missing Caleb Wilson (hand), Swain and Awaka, Norman Powell available on the latest report"
+      ],
+      "statsCheck": "Rule 2: Fading Chicago Bulls: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77). Rule 53: Fading Chicago Bulls: 2-9 on the season, a +15.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10. Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 33.5 vs Dallas Mavericks and by 2.5 vs Utah Jazz), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 56: Fading Chicago Bulls: won last night (125-117 vs Atlanta Hawks) with Isaac Okoro playing 41 minutes, now on the second night of a back-to-back -- 62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22. Rule 62: Backing Minnesota Timberwolves: covered its last 7 games, and Chicago Bulls's top scorer Norman Powell scored 33 last game (20.8 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16. Rule 64: Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
+      "statsFavors": "Minnesota Timberwolves",
+      "statsLine": {
+        "homeSpread": -15.5,
+        "awaySpread": 15.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -970,
+        "awayMoneyline": 640
+      },
+      "statsRules": [
+        {
+          "rule": 2,
+          "name": "Fade an OT winner vs. a stronger team (any rest)",
+          "backtest": "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+          "detail": "Fading Chicago Bulls: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77)."
+        },
+        {
+          "rule": 53,
+          "name": "Back a home favorite of 10+ vs. a team at .300 or worse on the second night of a back-to-back (on trial)",
+          "backtest": "66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10",
+          "detail": "Fading Chicago Bulls: 2-9 on the season, a +15.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10."
+        },
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Minnesota Timberwolves: covered its last two games (by 33.5 vs Dallas Mavericks and by 2.5 vs Utah Jazz), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        },
+        {
+          "rule": 56,
+          "name": "Fade a team on a back-to-back that won last night with a player logging 40+ minutes (on trial)",
+          "backtest": "62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22",
+          "detail": "Fading Chicago Bulls: won last night (125-117 vs Atlanta Hawks) with Isaac Okoro playing 41 minutes, now on the second night of a back-to-back -- 62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22."
+        },
+        {
+          "rule": 62,
+          "name": "Back a team that covered its last 3+ games vs. an opponent whose top scorer scored 10+ over his average last game, with at least a day off (on trial)",
+          "backtest": "68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16",
+          "detail": "Backing Minnesota Timberwolves: covered its last 7 games, and Chicago Bulls's top scorer Norman Powell scored 33 last game (20.8 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16."
+        },
+        {
+          "rule": 64,
+          "name": "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
+          "backtest": "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
+          "detail": "Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15."
+        }
+      ],
+      "statsSpread": -15.5,
+      "storylines": [
+        {
+          "against": false,
+          "fact": "Minnesota Timberwolves has won 5 straight and is a -15.5 favorite.",
+          "key": "fat_happy",
+          "leanPct": 53.4,
+          "leans": "Chicago Bulls",
+          "live": "4-3",
+          "name": "Fat and happy",
+          "pct": 53.4,
+          "record": "156-136",
+          "says": "fade",
+          "team": "Minnesota Timberwolves",
+          "weight": 1
+        },
+        {
+          "against": false,
+          "fact": "Minnesota Timberwolves' point differential (+13.4 a game) is better than its 9-3 record, and Chicago Bulls' record is better than its -13.4.",
+          "key": "quiet_giant",
+          "leanPct": 55.3,
+          "leans": "Minnesota Timberwolves",
+          "live": "2-5",
+          "name": "The quiet giant vs the hype machine",
+          "pct": 55.3,
+          "record": "105-85",
+          "says": "back",
+          "team": "Minnesota Timberwolves",
+          "weight": 1
+        },
+        {
+          "against": false,
+          "fact": "Minnesota Timberwolves is a -15.5 favorite vs Chicago Bulls (2-9): it just beat Dallas Mavericks (0.636) by 39.",
+          "key": "letdown",
+          "leanPct": 54.3,
+          "leans": "Chicago Bulls",
+          "live": "3-2",
+          "name": "Letdown spot",
+          "pct": 54.3,
+          "record": "358-301",
+          "says": "fade",
+          "team": "Minnesota Timberwolves",
+          "weight": 1
+        },
+        {
+          "against": true,
+          "fact": "Chicago Bulls' top scorer Norman Powell (20.8 a game) returned last game after missing the one before; Chicago Bulls is a +15.5 underdog.",
+          "key": "prodigal",
+          "leanPct": 54.7,
+          "leans": "Minnesota Timberwolves",
+          "live": "2-2",
+          "name": "The prodigal star",
+          "pct": 45.3,
+          "record": "173-209",
+          "says": "back",
+          "team": "Chicago Bulls",
+          "weight": 1
+        }
+      ],
+      "time": "8:00 PM ET",
+      "totalsLine": 234.5
+    }
   ]
 }
