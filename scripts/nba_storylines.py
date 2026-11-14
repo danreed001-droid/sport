@@ -67,6 +67,11 @@ STORIES = {
     # Letdown storylines (2026-11-14): a 5+ favorite vs a .450-or-worse team.
     # National TV = ESPN, ABC, TNT, NBC, Prime Video, Peacock (ESPN scoreboard
     # broadcasts). After a non-national win the underdog covered 47.9%.
+    # 2026-11-14, from the Hawks @ Bulls game (Atlanta 4 days, Chicago 2): the
+    # rested team covered 58.1% (186) at 4 vs 2 days; at home or as an underdog
+    # 61.2%, every counted season positive; as a road favorite 10-12 (left out).
+    "fresh_legs": ("Fresh legs", "back", (112, 71),
+                   "4+ days since its last game vs an opponent on 2, at home or as an underdog"),
     "spotlight": ("Spotlight letdown", "fade", (147, 114),
                   "won its last game on national TV, now a 5+ favorite vs a weaker team and not on national TV"),
     "letdown": ("Letdown spot", "fade", (355, 299),
@@ -291,6 +296,10 @@ def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp
     if sp is not None and sp < 0 and len(t["margins"]) >= 3 and all(5 <= m <= 15 for m in t["margins"][-3:]):
         out.append(entry("steady", team, opp, f"{team} won its last three by "
                                               f"{', '.join(f'{m:g}' for m in reversed(t['margins'][-3:]))}."))
+    if rest >= 4 and orest == 2 and (is_home or (sp is not None and sp > 0)):
+        out.append(entry("fresh_legs", team, opp, f"{team} has had {rest} days since its last game ({last['date']}), {opp} 2"
+                                                  f"{', and ' + team + ' is at home' if is_home else ''}"
+                                                  f"{', as a ' + format(sp, '+g') + ' underdog' if sp is not None and sp > 0 else ''}."))
     # Letdown storylines: a 5+ favorite vs a .450-or-worse team.
     if sp is not None and sp <= -5 and o["wp"] <= 0.45:
         won_by = last["team_score"] - last["opp_score"]

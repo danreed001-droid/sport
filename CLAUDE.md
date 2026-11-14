@@ -353,7 +353,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   a .550+ team, a win over a classic rival (`RIVALS`), a 15+ point win over a
   .600+ team, or its 3rd game in 4 nights vs a rested team (355-299, 54.3%,
   chosen after looking; skipped when Spotlight fires). Backfilled to 2026-11-12
-  only (the veto started 11-13); not in the NBA lean-size backtest. Moneyline entries carry `implied` and `roi`, and `unit` is the
+  only (the veto started 11-13); not in the NBA lean-size backtest. "Fresh legs"
+  (2026-11-14, from Hawks @ Bulls) backs a team with 4+ days since its last
+  game vs an opponent on 2, at home or as an underdog: 112-71 (61.2%), every
+  counted season positive, unseen 2018-19 + 2021-22 41-32 -- it would clear the
+  NBA Stats rule bar, but it was found after looking at one game; 4 vs 2 as a
+  road favorite went 10-12 and is left out. Backfilled to 2026-11-12: 2-1. Moneyline entries carry `implied` and `roi`, and `unit` is the
   favored bet ("to win" / "not to win"). football-data.co.uk's robots.txt
   bars ClaudeBot: don't fetch it. MLB: `scripts/mlb_storylines.py`
   (2015-2025, 2020 left out; Retrosheet event files for game context, closing

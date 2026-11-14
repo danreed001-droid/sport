@@ -84,6 +84,22 @@
           "against": false,
           "backfill": true,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fresh_legs",
+          "name": "Fresh legs",
+          "team": "Chicago Bulls",
+          "says": "back",
+          "fact": "Chicago Bulls has had 4 days since its last game (2026-11-04), Philadelphia 76ers 2, and Chicago Bulls is at home, as a +9.5 underdog.",
+          "record": "112-71",
+          "pct": 61.2,
+          "leans": "Chicago Bulls",
+          "leanPct": 61.2,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
         }
       ]
     },
@@ -148,7 +164,25 @@
       "statsSpread": -8.5,
       "time": "6:00 PM ET",
       "totalsBackfill": 11,
-      "totalsLine": 216.5
+      "totalsLine": 216.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fresh_legs",
+          "name": "Fresh legs",
+          "team": "Detroit Pistons",
+          "says": "back",
+          "fact": "Detroit Pistons has had 4 days since its last game (2026-11-04), Los Angeles Lakers 2, and Detroit Pistons is at home.",
+          "record": "112-71",
+          "pct": 61.2,
+          "leans": "Detroit Pistons",
+          "leanPct": 61.2,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-2",
@@ -498,7 +532,25 @@
       "statsSpreadReturn": -100.0,
       "time": "9:00 PM ET",
       "totalsBackfill": 11,
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "fresh_legs",
+          "name": "Fresh legs",
+          "team": "LA Clippers",
+          "says": "back",
+          "fact": "LA Clippers has had 4 days since its last game (2026-11-04), New Orleans Pelicans 2, and LA Clippers is at home, as a +1.5 underdog.",
+          "record": "112-71",
+          "pct": 61.2,
+          "leans": "LA Clippers",
+          "leanPct": 61.2,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "5-0",
