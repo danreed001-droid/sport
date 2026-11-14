@@ -59,6 +59,8 @@ scripts/lib/nba_stats_rules.py and ALLOWED_REST below.
   five when the opponent's last game went to overtime (family with 2, 9, 56, 63).
   67 (retired 2026-11-13, a losing 2022-23): fade an Eastern home team in its
   first game back from a road game on the Pacific coast ("jet lag homecoming").
+  68 (on trial): back a team with 4+ days since its last game vs an opponent on
+  2, at home or as an underdog ("fresh legs").
   Retired: rule 4 (never cleared 62%); rules 1, 3, 6, 7, 8, 10, 11, 12 and
   15, which went under 60% ATS when replayed on 2023-24 and 2024-25 --
   seasons none of the rules were found on (ESPN's core odds feed has their
@@ -236,6 +238,7 @@ ALLOWED_REST = {
     65: {"b2b", "1", "2+"},
     66: {"b2b", "1", "2+"},
     67: {"b2b", "1", "2+"},
+    68: {"b2b", "1", "2+"},
 }
 STATS_LINE_KEYS = ("homeSpread", "awaySpread", "homeSpreadOdds", "awaySpreadOdds", "homeMoneyline", "awayMoneyline")
 LATE_COMEBACK = 5
@@ -830,6 +833,18 @@ def evaluate_game(session, points, by_team, q_cache, date_str, home, away, tonig
             picks.append((opp, 67, f"Fading {team}: first home game back from the Pacific coast "
                                    f"({'won' if last['won'] else 'lost'} {last['team_score']:g}-{last['opp_score']:g} at {last['opp']} on {last['date']}), three time "
                                    f"zones east -- {RULE_BACKTEST.get(67, '')}."))
+
+        # Rule 68: back a team with 4+ days since its last game vs an opponent on
+        # 2, at home or as an underdog (not as a road favorite: 10-12). Both
+        # teams 8+ games played, as backtested.
+        if len(prior) >= 8 and len(opp_prior) >= 8 and (is_home or (my_spread is not None and my_spread > 0)):
+            my_days = (date.fromisoformat(date_str) - date.fromisoformat(last["date"])).days
+            opp_days = (date.fromisoformat(date_str) - date.fromisoformat(opp_prior[-1]["date"])).days
+            if my_days >= 4 and opp_days == 2:
+                picks.append((team, 68, f"Backing {team}: {my_days} days since its last game ({last['date']}) vs {opp} on 2"
+                                        f"{', at home' if is_home else ''}"
+                                        f"{', as a ' + format(my_spread, '+g') + ' underdog' if my_spread is not None and my_spread > 0 else ''}"
+                                        f" -- {RULE_BACKTEST.get(68, '')}."))
 
         # Rule 53: fade a 10+ point road underdog with a record of .300 or worse
         # (8+ games played) on the second night of a back-to-back -- back the

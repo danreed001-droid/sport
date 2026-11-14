@@ -101,7 +101,19 @@
           "backfill": true,
           "result": "hit"
         }
-      ]
+      ],
+      "statsFavors": "Chicago Bulls",
+      "statsRules": [
+        {
+          "rule": 68,
+          "name": "Back a team with 4+ days since its last game vs an opponent on 2, at home or as an underdog (on trial)",
+          "backtest": "61.2% ATS, 112-71 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-32; 2024-now 31-16; every counted season positive",
+          "detail": "Backing Chicago Bulls: 4 days since its last game (2026-11-04) vs Philadelphia 76ers on 2, at home, as a +9.5 underdog -- 61.2% ATS, 112-71 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-32; 2024-now 31-16; every counted season positive.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 68: Backing Chicago Bulls: 4 days since its last game (2026-11-04) vs Philadelphia 76ers on 2, at home, as a +9.5 underdog -- 61.2% ATS, 112-71 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-32; 2024-now 31-16; every counted season positive."
     },
     {
       "altCategoryTally": "2-2",
@@ -182,7 +194,19 @@
           "backfill": true,
           "result": "miss"
         }
-      ]
+      ],
+      "statsFavors": "Detroit Pistons",
+      "statsRules": [
+        {
+          "rule": 68,
+          "name": "Back a team with 4+ days since its last game vs an opponent on 2, at home or as an underdog (on trial)",
+          "backtest": "61.2% ATS, 112-71 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-32; 2024-now 31-16; every counted season positive",
+          "detail": "Backing Detroit Pistons: 4 days since its last game (2026-11-04) vs Los Angeles Lakers on 2, at home -- 61.2% ATS, 112-71 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-32; 2024-now 31-16; every counted season positive.",
+          "backfill": true
+        }
+      ],
+      "statsBackfill": true,
+      "statsCheck": "Rule 68: Backing Detroit Pistons: 4 days since its last game (2026-11-04) vs Los Angeles Lakers on 2, at home -- 61.2% ATS, 112-71 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-32; 2024-now 31-16; every counted season positive."
     },
     {
       "altCategoryTally": "0-2",

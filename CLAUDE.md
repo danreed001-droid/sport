@@ -55,7 +55,7 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   2019-20 bubble and 2020-21 empty-arena seasons left out; 2018-19 and
   2021-22 were never seen by the rules found on 2022-26), and 55%+ on those two
   unseen seasons alone. Active: NBA Stats 2, 9, 16, 17, 20, 21, 24, 28, 36,
-  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22, 23, 24. Retired rules are listed in `RETIRED` in each rules file;
+  37, 39, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 68; NBA Totals 3, 6, 9, 10, 14, 16, 20, 21, 22, 23, 24. Retired rules are listed in `RETIRED` in each rules file;
   their code stays but the scripts drop them, and numbers aren't reused.
   `data/raw/nba_lines.csv` dates for 2025-26 are the UTC date (a day late for
   evening games; 2026-27 rows are Eastern): backtests date games by ESPN's
@@ -358,7 +358,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   game vs an opponent on 2, at home or as an underdog: 112-71 (61.2%), every
   counted season positive, unseen 2018-19 + 2021-22 41-32 -- it would clear the
   NBA Stats rule bar, but it was found after looking at one game; 4 vs 2 as a
-  road favorite went 10-12 and is left out. Backfilled to 2026-11-12: 2-1. Moneyline entries carry `implied` and `roi`, and `unit` is the
+  road favorite went 10-12 and is left out. Backfilled to 2026-11-12: 2-1.
+  Promoted the same day, at the user's request, to NBA Stats rule 68 (on
+  trial; same conditions, both teams 8+ games, tonight's statsSpread for
+  "underdog"); the storyline no longer fires (the past entries stay).
+  `--backfill 68`: 2 games (2026-11-08 Bulls, Pistons); Clippers left alone,
+  NBA Stats already had the Pelicans. Moneyline entries carry `implied` and `roi`, and `unit` is the
   favored bet ("to win" / "not to win"). football-data.co.uk's robots.txt
   bars ClaudeBot: don't fetch it. MLB: `scripts/mlb_storylines.py`
   (2015-2025, 2020 left out; Retrosheet event files for game context, closing

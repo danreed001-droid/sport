@@ -296,7 +296,7 @@ def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp
     if sp is not None and sp < 0 and len(t["margins"]) >= 3 and all(5 <= m <= 15 for m in t["margins"][-3:]):
         out.append(entry("steady", team, opp, f"{team} won its last three by "
                                               f"{', '.join(f'{m:g}' for m in reversed(t['margins'][-3:]))}."))
-    if rest >= 4 and orest == 2 and (is_home or (sp is not None and sp > 0)):
+    if False and rest >= 4 and orest == 2 and (is_home or (sp is not None and sp > 0)):  # promoted to NBA Stats rule 68
         out.append(entry("fresh_legs", team, opp, f"{team} has had {rest} days since its last game ({last['date']}), {opp} 2"
                                                   f"{', and ' + team + ' is at home' if is_home else ''}"
                                                   f"{', as a ' + format(sp, '+g') + ' underdog' if sp is not None and sp > 0 else ''}."))

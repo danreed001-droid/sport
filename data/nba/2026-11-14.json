@@ -17,12 +17,12 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": 417.0,
       "awayMoneyline": -556.0,
-      "statsSpread": 11.5,
+      "statsSpread": 12.5,
       "statsLine": {
-        "homeSpread": 11.5,
-        "awaySpread": -11.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -117,
+        "homeSpread": 12.5,
+        "awaySpread": -12.5,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -103,
         "homeMoneyline": 443,
         "awayMoneyline": -597
       },
@@ -46,10 +46,10 @@
       "statsLine": {
         "homeSpread": -1.5,
         "awaySpread": 1.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -125,
-        "awayMoneyline": 105
+        "homeSpreadOdds": -101,
+        "awaySpreadOdds": -120,
+        "homeMoneyline": -109,
+        "awayMoneyline": -109
       },
       "totalsLine": 231.5,
       "totalsFavors": "Over",
@@ -115,12 +115,12 @@
       "awaySpreadOdds": -106.0,
       "homeMoneyline": 152.0,
       "awayMoneyline": -181.0,
-      "statsSpread": 4.5,
+      "statsSpread": 5.5,
       "statsLine": {
-        "homeSpread": 4.5,
-        "awaySpread": -4.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
+        "homeSpread": 5.5,
+        "awaySpread": -5.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
         "homeMoneyline": 160,
         "awayMoneyline": -191
       },
@@ -160,14 +160,14 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -195.0,
       "awayMoneyline": 163.0,
-      "statsSpread": -4.5,
+      "statsSpread": -3.5,
       "statsLine": {
-        "homeSpread": -4.5,
-        "awaySpread": 4.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -197,
-        "awayMoneyline": 164
+        "homeSpread": -3.5,
+        "awaySpread": 3.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -167,
+        "awayMoneyline": 140
       },
       "totalsLine": 227.5,
       "gameTotal": 227.5,
@@ -207,7 +207,7 @@
           "rule": 53,
           "name": "Back a home favorite of 10+ vs. a team at .300 or worse on the second night of a back-to-back (on trial)",
           "backtest": "66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10",
-          "detail": "Fading Chicago Bulls: 2-9 on the season, a +14.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10."
+          "detail": "Fading Chicago Bulls: 2-9 on the season, a +15.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10."
         },
         {
           "rule": 54,
@@ -234,7 +234,7 @@
           "detail": "Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15."
         }
       ],
-      "statsCheck": "Rule 2: Fading Chicago Bulls: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77). Rule 53: Fading Chicago Bulls: 2-9 on the season, a +14.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10. Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 33.5 vs Dallas Mavericks and by 2.5 vs Utah Jazz), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 56: Fading Chicago Bulls: won last night (125-117 vs Atlanta Hawks) with Isaac Okoro playing 41 minutes, now on the second night of a back-to-back -- 62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22. Rule 62: Backing Minnesota Timberwolves: covered its last 7 games, and Chicago Bulls's top scorer Norman Powell scored 33 last game (20.8 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16. Rule 64: Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
+      "statsCheck": "Rule 2: Fading Chicago Bulls: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77). Rule 53: Fading Chicago Bulls: 2-9 on the season, a +15.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10. Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 33.5 vs Dallas Mavericks and by 2.5 vs Utah Jazz), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 56: Fading Chicago Bulls: won last night (125-117 vs Atlanta Hawks) with Isaac Okoro playing 41 minutes, now on the second night of a back-to-back -- 62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22. Rule 62: Backing Minnesota Timberwolves: covered its last 7 games, and Chicago Bulls's top scorer Norman Powell scored 33 last game (20.8 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16. Rule 64: Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
       "storylines": [
         {
           "weight": 1,
@@ -302,14 +302,14 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": -840.0,
       "awayMoneyline": 580.0,
-      "statsSpread": -14.5,
+      "statsSpread": -15.5,
       "statsLine": {
-        "homeSpread": -14.5,
-        "awaySpread": 14.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": -880,
-        "awayMoneyline": 599
+        "homeSpread": -15.5,
+        "awaySpread": 15.5,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -117,
+        "homeMoneyline": -930,
+        "awayMoneyline": 620
       },
       "totalsLine": 235.5
     }
