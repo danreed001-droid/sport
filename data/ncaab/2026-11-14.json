@@ -15,7 +15,27 @@
       "awaySpread": 40.5,
       "homeSpreadOdds": -105,
       "awaySpreadOdds": -115,
-      "total": 142.5
+      "total": 142.5,
+      "gameTotal": 142.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-3",
+          "key": "big_stage",
+          "name": "Down from the big stage",
+          "team": "Texas Tech Red Raiders",
+          "says": "fade",
+          "fact": "Texas Tech played #3 Illinois last time out (won 84-78).",
+          "record": "274-237",
+          "pct": 53.6,
+          "leans": "Stonehill Skyhawks",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401921689",
@@ -28,7 +48,27 @@
       "awaySpreadOdds": -105,
       "homeMoneyline": -238,
       "awayMoneyline": 195,
-      "total": 161.5
+      "total": 161.5,
+      "gameTotal": 161.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-0",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "LSU Tigers",
+          "says": "fade",
+          "fact": "LSU won its last three by 40, 41, 43.",
+          "record": "116-138",
+          "pct": 45.7,
+          "leans": "LSU Tigers",
+          "leanPct": 54.3,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     }
   ]
 }

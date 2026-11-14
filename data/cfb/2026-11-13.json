@@ -2,7 +2,7 @@
   "date": "2026-11-13",
   "weekday": "Friday",
   "sport": "cfb",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-13T13:12:34Z",
   "games": [
     {
@@ -38,7 +38,7 @@
       "awayQB": "Katin Houser",
       "awayQBEff": 146.8,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 14.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": 108,
       "awayYPP": 6.29,
@@ -50,7 +50,7 @@
       "homeQB": "Ty Dieffenbach",
       "homeQBEff": 142.8,
       "homeRank": 4,
-      "homeScore": null,
+      "homeScore": 22.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -113,
       "homeYPP": 6.51,
@@ -82,7 +82,8 @@
           "leans": "Illinois",
           "leanPct": 53.1,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ],
       "gameTotal": 48.5,
@@ -113,37 +114,37 @@
       "altSpreadReturn": null,
       "altTrendCheck": "Houston (W 31-24 over Cincinnati, 11/7): 468 total yds, 227 pass yds / 24 att (9.46 YPA), 35 rush att \u2014 no pattern thresholds met (YPP 468/59=7.93). Colorado (L 10-20 at Arizona State, 11/7): 300 total yds, 248 pass yds / 31 att (8.0 YPA), 34 rush att \u2014 Pattern B fires: YPA 8.0\u22657.5 AND overall Y/P 300/65=4.62\u22645.15 \u2192 +2 to Colorado. (Rush/pass ratio 34/31=1.10 just misses the \u22641.0 threshold for Pattern C, so no fade.) Net: Colorado +2.",
       "altTrendCorrect": null,
-      "altTrendCover": null,
+      "altTrendCover": true,
       "altTrendFavors": "Colorado",
       "altTrendReturn": null,
-      "altTrendSpreadReturn": null,
+      "altTrendSpreadReturn": 89.29,
       "away": "Houston",
       "awayMoneyline": -395,
       "awayPDpg": 14.1,
       "awayQB": "Conner Weigman",
       "awayQBEff": 167.5,
       "awayRank": 14,
-      "awayScore": null,
+      "awayScore": 32.0,
       "awaySpread": -10,
       "awaySpreadOdds": -108,
       "awayYPP": 6.8,
       "confidence": "solid",
-      "correct": null,
+      "correct": false,
       "home": "Colorado",
       "homeMoneyline": 310,
       "homePDpg": -8.6,
       "homeQB": "Isaac Wilson",
       "homeQBEff": 133.3,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 42.0,
       "homeSpread": 10,
       "homeSpreadOdds": -112,
       "homeYPP": 5.62,
       "offGap": 55.6,
       "pick": "Houston",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -167,7 +168,8 @@
           "leans": "Colorado",
           "leanPct": 55.6,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -182,12 +184,14 @@
           "leans": "Colorado",
           "leanPct": 55.8,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ],
       "gameTotal": 51.5,
       "gameTotalOverOdds": -115,
       "gameTotalUnderOdds": -105
     }
-  ]
+  ],
+  "scoredAt": "2026-11-14T11:45:57.907083+00:00"
 }

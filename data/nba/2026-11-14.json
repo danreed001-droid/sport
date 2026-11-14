@@ -21,31 +21,15 @@
       "statsLine": {
         "homeSpread": 11.5,
         "awaySpread": -11.5,
-        "homeSpreadOdds": -107,
-        "awaySpreadOdds": -113,
-        "homeMoneyline": 417,
-        "awayMoneyline": -556
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -117,
+        "homeMoneyline": 443,
+        "awayMoneyline": -597
       },
-      "totalsLine": 234.5,
-      "storylines": [
-        {
-          "weight": 1,
-          "live": "0-1",
-          "key": "prodigal",
-          "name": "The prodigal star",
-          "team": "New Orleans Pelicans",
-          "says": "back",
-          "fact": "New Orleans Pelicans' top scorer Zion Williamson (21.7 a game) returned last game after missing the one before; New Orleans Pelicans is a +11.5 underdog.",
-          "record": "171-208",
-          "pct": 45.1,
-          "leans": "Denver Nuggets",
-          "leanPct": 54.9,
-          "against": true
-        }
-      ],
-      "gameTotal": 234.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "totalsLine": 235.5,
+      "gameTotal": 235.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909981",
@@ -58,13 +42,14 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": -140.0,
       "awayMoneyline": 118.0,
-      "statsSpread": -3.5,
+      "statsSpread": -1.5,
       "statsLine": {
-        "homeSpread": -3.5,
-        "awaySpread": 3.5,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -135,
-        "awayMoneyline": 114
+        "homeSpread": -1.5,
+        "awaySpread": 1.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -125,
+        "awayMoneyline": 105
       },
       "totalsLine": 231.5,
       "totalsFavors": "Over",
@@ -74,12 +59,50 @@
           "detail": "Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers.",
           "name": "Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)",
           "backtest": "67.2% overs, 41-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-8"
+        },
+        {
+          "rule": 23,
+          "detail": "Cleveland Cavaliers's last game (121-133 on 2026-11-13) went over its total of 234.5 by 19.5, and Dallas Mavericks allowed 133 in its last game.",
+          "name": "Over when the home team's last game went over its total by 10+ and the road team allowed 130+ in its last game (on trial)",
+          "backtest": "62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38"
         }
       ],
-      "totalsCheck": "Rule 16: Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers.",
+      "totalsCheck": "Rule 16: Dallas Mavericks lost by 39 on the road at Minnesota Timberwolves on 2026-11-12; now on the road vs. worse-record Cleveland Cavaliers. Rule 23: Cleveland Cavaliers's last game (121-133 on 2026-11-13) went over its total of 234.5 by 19.5, and Dallas Mavericks allowed 133 in its last game.",
       "gameTotal": 231.5,
       "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalUnderOdds": -110,
+      "statsFavors": "Cleveland Cavaliers",
+      "statsRules": [
+        {
+          "rule": 44,
+          "name": "Revenge: back a team at home with the worse record after losing the last meeting by 10-19 as the favorite (on trial)",
+          "backtest": "67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15",
+          "detail": "Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, favored, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15."
+        },
+        {
+          "rule": 47,
+          "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
+          "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
+          "detail": "Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
+        }
+      ],
+      "statsCheck": "Rule 44: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, favored, with the worse record -- 67.8% ATS, 59-28 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 15-6; 2024-now 22-15. Rule 47: Backing Cleveland Cavaliers: Cleveland Cavaliers lost the last meeting by 10 (Dallas Mavericks 130 @ Cleveland Cavaliers 120, 2026-03-15) as the favorite; tonight home, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-1",
+          "key": "leaky",
+          "name": "Leaky defense meets leaky defense",
+          "team": "Cleveland Cavaliers",
+          "says": "back",
+          "fact": "Cleveland Cavaliers allowed 133 last game and Dallas Mavericks allowed 133.",
+          "record": "117-137",
+          "pct": 46.1,
+          "leans": "Dallas Mavericks",
+          "leanPct": 53.9,
+          "against": true
+        }
+      ]
     },
     {
       "espnId": "401909982",
@@ -104,33 +127,27 @@
       "statsFavors": "Miami Heat",
       "statsRules": [
         {
-          "rule": 66,
-          "name": "Back a team that has missed the spread by 6+ a game over its last five when the opponent's last game went to overtime (on trial)",
-          "backtest": "65.1% ATS, 84-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 31-18; 2024-now 23-12",
-          "detail": "Backing Miami Heat: has missed the spread by 9.9 a game over its last five, and Detroit Pistons's last game (144-140 at Washington Wizards) went to overtime -- 65.1% ATS, 84-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 31-18; 2024-now 23-12."
+          "rule": 58,
+          "name": "Fade a team that won its last game by 1-5 when tonight's opponent scored 130+ in its last game (on trial)",
+          "backtest": "63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22",
+          "detail": "Fading Detroit Pistons: won its last game by 4 (144-140 at Washington Wizards), and Miami Heat scored 133 in its last game -- 63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22."
         }
       ],
-      "statsCheck": "Rule 66: Backing Miami Heat: has missed the spread by 9.9 a game over its last five, and Detroit Pistons's last game (144-140 at Washington Wizards) went to overtime -- 65.1% ATS, 84-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 31-18; 2024-now 23-12.",
+      "statsCheck": "Rule 58: Fading Detroit Pistons: won its last game by 4 (144-140 at Washington Wizards), and Miami Heat scored 133 in its last game -- 63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22.",
       "totalsLine": 228.5,
-      "storylines": [
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "totalsFavors": "Over",
+      "totalsRules": [
         {
-          "weight": 2,
-          "live": "0-0",
-          "key": "jet_lag",
-          "name": "Jet lag homecoming",
-          "team": "Miami Heat",
-          "says": "fade",
-          "fact": "Miami Heat's first home game after a 5-game road trip that ended at Utah Jazz, 2 time zones west.",
-          "record": "102-68",
-          "pct": 60.0,
-          "leans": "Detroit Pistons",
-          "leanPct": 60.0,
-          "against": false
+          "rule": 23,
+          "detail": "Miami Heat's last game (133-121 on 2026-11-13) went over its total of 234.5 by 19.5, and Detroit Pistons allowed 140 in its last game.",
+          "name": "Over when the home team's last game went over its total by 10+ and the road team allowed 130+ in its last game (on trial)",
+          "backtest": "62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38"
         }
       ],
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113
+      "totalsCheck": "Rule 23: Miami Heat's last game (133-121 on 2026-11-13) went over its total of 234.5 by 19.5, and Detroit Pistons allowed 140 in its last game."
     },
     {
       "espnId": "401909983",
@@ -143,19 +160,35 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -195.0,
       "awayMoneyline": 163.0,
-      "statsSpread": -5.5,
+      "statsSpread": -4.5,
       "statsLine": {
-        "homeSpread": -5.5,
-        "awaySpread": 5.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -117,
-        "homeMoneyline": -224,
-        "awayMoneyline": 186
+        "homeSpread": -4.5,
+        "awaySpread": 4.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -197,
+        "awayMoneyline": 164
       },
-      "totalsLine": 226.5,
-      "gameTotal": 226.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107
+      "totalsLine": 227.5,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 10,
+          "detail": "Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.",
+          "name": "Under when the home team is back from a 20+ road win, now vs. a weaker team, and wasn't a 7+ pt favorite in that win (on trial)",
+          "backtest": "62.8% unders, 59-35 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-17"
+        },
+        {
+          "rule": 14,
+          "detail": "Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back.",
+          "name": "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
+          "backtest": "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24"
+        }
+      ],
+      "totalsCheck": "Rule 10: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back. Rule 14: Memphis Grizzlies won by 31 on the road at New Orleans Pelicans on 2026-11-13 as a -3.5; now home vs. a worse-record Brooklyn Nets, on a back-to-back."
     },
     {
       "espnId": "401909984",
@@ -165,16 +198,34 @@
       "statsFavors": "Minnesota Timberwolves",
       "statsRules": [
         {
+          "rule": 2,
+          "name": "Fade an OT winner vs. a stronger team (any rest)",
+          "backtest": "66.0% ATS, 97-50 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out)",
+          "detail": "Fading Chicago Bulls: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77)."
+        },
+        {
+          "rule": 53,
+          "name": "Back a home favorite of 10+ vs. a team at .300 or worse on the second night of a back-to-back (on trial)",
+          "backtest": "66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10",
+          "detail": "Fading Chicago Bulls: 2-9 on the season, a +14.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10."
+        },
+        {
           "rule": 54,
           "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
           "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
           "detail": "Backing Minnesota Timberwolves: covered its last two games (by 33.5 vs Dallas Mavericks and by 2.5 vs Utah Jazz), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
         },
         {
-          "rule": 57,
-          "name": "Back a team beating the spread by 6+ a game over its last five vs. an opponent with no double-digit rebounder in its last two games, with at least a day off (on trial)",
-          "backtest": "64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35",
-          "detail": "Backing Minnesota Timberwolves: beat the spread by 11.3 a game over its last five, and Chicago Bulls had no double-digit rebounder in its last two games (top: 8 and 7) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35."
+          "rule": 56,
+          "name": "Fade a team on a back-to-back that won last night with a player logging 40+ minutes (on trial)",
+          "backtest": "62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22",
+          "detail": "Fading Chicago Bulls: won last night (125-117 vs Atlanta Hawks) with Isaac Okoro playing 41 minutes, now on the second night of a back-to-back -- 62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22."
+        },
+        {
+          "rule": 62,
+          "name": "Back a team that covered its last 3+ games vs. an opponent whose top scorer scored 10+ over his average last game, with at least a day off (on trial)",
+          "backtest": "68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16",
+          "detail": "Backing Minnesota Timberwolves: covered its last 7 games, and Chicago Bulls's top scorer Norman Powell scored 33 last game (20.8 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16."
         },
         {
           "rule": 64,
@@ -183,20 +234,20 @@
           "detail": "Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15."
         }
       ],
-      "statsCheck": "Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 33.5 vs Dallas Mavericks and by 2.5 vs Utah Jazz), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 57: Backing Minnesota Timberwolves: beat the spread by 11.3 a game over its last five, and Chicago Bulls had no double-digit rebounder in its last two games (top: 8 and 7) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35. Rule 64: Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
+      "statsCheck": "Rule 2: Fading Chicago Bulls: won last game in OT, now facing a better-record opponent -- faded 63.6% of the time ATS (n=77). Rule 53: Fading Chicago Bulls: 2-9 on the season, a +14.5 underdog on the road on the second night of a back-to-back (played vs Atlanta Hawks last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10. Rule 54: Backing Minnesota Timberwolves: covered its last two games (by 33.5 vs Dallas Mavericks and by 2.5 vs Utah Jazz), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 56: Fading Chicago Bulls: won last night (125-117 vs Atlanta Hawks) with Isaac Okoro playing 41 minutes, now on the second night of a back-to-back -- 62.2% ATS, 120-73 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-21; 2024-now 38-22. Rule 62: Backing Minnesota Timberwolves: covered its last 7 games, and Chicago Bulls's top scorer Norman Powell scored 33 last game (20.8 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16. Rule 64: Backing Minnesota Timberwolves: 11-1 against the spread this season, vs. Chicago Bulls, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
       "storylines": [
         {
           "weight": 1,
-          "live": "4-2",
+          "live": "4-3",
           "key": "fat_happy",
           "name": "Fat and happy",
           "team": "Minnesota Timberwolves",
           "says": "fade",
           "fact": "Minnesota Timberwolves has won 5 straight and is a -14.5 favorite.",
-          "record": "156-135",
-          "pct": 53.6,
+          "record": "156-136",
+          "pct": 53.4,
           "leans": "Chicago Bulls",
-          "leanPct": 53.6,
+          "leanPct": 53.4,
           "against": false
         },
         {
@@ -206,7 +257,7 @@
           "name": "The quiet giant vs the hype machine",
           "team": "Minnesota Timberwolves",
           "says": "back",
-          "fact": "Minnesota Timberwolves' point differential (+13.4 a game) is better than its 9-3 record, and Chicago Bulls' record is better than its -15.5.",
+          "fact": "Minnesota Timberwolves' point differential (+13.4 a game) is better than its 9-3 record, and Chicago Bulls' record is better than its -13.4.",
           "record": "105-85",
           "pct": 55.3,
           "leans": "Minnesota Timberwolves",
@@ -215,22 +266,22 @@
         },
         {
           "weight": 1,
-          "live": "2-1",
-          "key": "ghost_town",
-          "name": "Ghost town",
+          "live": "2-2",
+          "key": "prodigal",
+          "name": "The prodigal star",
           "team": "Chicago Bulls",
-          "says": "fade",
-          "fact": "Chicago Bulls' top scorer Norman Powell (19.2 a game) missed its last two games; Chicago Bulls is a +14.5 underdog.",
-          "record": "822-741",
-          "pct": 52.6,
+          "says": "back",
+          "fact": "Chicago Bulls' top scorer Norman Powell (20.8 a game) returned last game after missing the one before; Chicago Bulls is a +14.5 underdog.",
+          "record": "173-209",
+          "pct": 45.3,
           "leans": "Minnesota Timberwolves",
-          "leanPct": 52.6,
-          "against": false
+          "leanPct": 54.7,
+          "against": true
         }
       ],
-      "gameTotal": 236.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotal": 235.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -107,
       "homeSpread": -14.5,
       "awaySpread": 14.5,
       "homeSpreadOdds": -105.0,
@@ -243,10 +294,10 @@
         "awaySpread": 14.5,
         "homeSpreadOdds": -105,
         "awaySpreadOdds": -115,
-        "homeMoneyline": -840,
-        "awayMoneyline": 580
+        "homeMoneyline": -880,
+        "awayMoneyline": 599
       },
-      "totalsLine": 236.5
+      "totalsLine": 235.5
     }
   ]
 }

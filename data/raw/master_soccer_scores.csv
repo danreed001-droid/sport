@@ -20,9 +20,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401861168,2026-11-14,Scheduled,Poland,0,-,Romania,0,-,-,-,2:45 PM
 401861166,2026-11-14,Scheduled,Bosnia-Herzegovina,0,-,Sweden,0,-,-,-,2:45 PM
 401876988,2026-11-14,Scheduled,Monterrey,0,-,Querétaro,0,-,-,-,6:00 PM
-401933864,2026-11-14,Scheduled,Cook Islands,0,-,Tahiti,0,-,-,-,12:30 AM
-401930879,2026-11-14,Scheduled,Yemen,0,-,Bahrain,0,-,-,-,1:00 AM
-401916337,2026-11-14,Scheduled,Brazil,0,-,Japan,0,-,-,-,5:15 AM
+401933864,2026-11-14,FT,Cook Islands,0,-,Tahiti,4,-,-,-,12:30 AM
+401930879,2026-11-14,FT,Yemen,1,-,Bahrain,3,-,-,-,1:00 AM
+401916337,2026-11-14,70',Brazil,1,-,Japan,2,-,-,-,5:15 AM
 401930236,2026-11-14,Scheduled,Malaysia,0,-,China,0,-,-,-,7:00 AM
 401930243,2026-11-14,Scheduled,Kyrgyz Republic,0,-,Chinese Taipei,0,-,-,-,7:00 AM
 401932237,2026-11-14,Scheduled,Iran,0,-,Palestine,0,-,-,-,10:00 AM
@@ -85,7 +85,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401902861,2026-11-14,Scheduled,Everton,0,-,Tottenham Hotspur,0,-,-,-,10:00 AM
 401902862,2026-11-14,Scheduled,Liverpool,0,-,Brighton & Hove Albion,0,-,-,-,12:15 PM
 401931842,2026-11-14,Scheduled,Portishead Town,0,-,Dulwich Hamlet,0,-,-,-,10:00 AM
-401882458,2026-11-14,Scheduled,Tenerife,0,-,Espanyol,0,-,-,-,6:00 AM
+401882458,2026-11-14,45',Tenerife,0,-,Espanyol,1,-,-,-,6:00 AM
 401882460,2026-11-14,Scheduled,Eibar,0,-,Alavés,0,-,-,-,12:00 PM
 401882456,2026-11-14,Scheduled,FC Badalona,0,-,Real Madrid,0,-,-,-,2:30 PM
 401885645,2026-11-14,Scheduled,Paris FC,0,-,Le Havre AC,0,-,-,-,9:00 AM
@@ -93,7 +93,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401885695,2026-11-14,Scheduled,Toulouse,0,-,Strasbourg,0,-,-,-,12:00 PM
 401885646,2026-11-14,Scheduled,FC Fleury 91,0,-,Montpellier,0,-,-,-,12:30 PM
 401885644,2026-11-14,Scheduled,Paris Saint-Germain,0,-,Marseille,0,-,-,-,3:00 PM
-401913233,2026-11-14,29',Perth Glory,0,-,Central Coast Mariners,0,-,-,-,1:00 AM
+401913233,2026-11-14,FT,Perth Glory,1,-,Central Coast Mariners,0,-,-,-,1:00 AM
 401913232,2026-11-14,Scheduled,Sydney FC ,0,-,Wellington Phoenix,0,-,-,-,8:00 PM
 401913231,2026-11-14,Scheduled,Brisbane Roar,0,-,Canberra United ,0,-,-,-,11:00 PM
 401927188,2026-11-14,Scheduled,Botswana,0,-,Uganda,0,-,-,-,11:00 AM
@@ -204,7 +204,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401899735,2026-11-14,Scheduled,Luis Ángel Firpo,0,-,Isidro Metapán,0,-,-,-,9:00 PM
 401934182,2026-11-14,Scheduled,Bhutan,0,-,India,0,-,-,-,4:00 AM
 401934183,2026-11-14,Scheduled,Pakistan,0,-,Bangladesh,0,-,-,-,9:30 AM
-401930698,2026-11-14,Scheduled,Real Kashmir,0,-,Bengaluru United FC,0,-,-,-,5:30 AM
+401930698,2026-11-14,55',Real Kashmir,2,-,Bengaluru United FC,1,-,-,-,5:30 AM
 401930697,2026-11-14,Scheduled,Gokulam Kerala FC,0,-,Nagaland United SC,0,-,-,-,8:00 AM
 401929759,2026-11-14,Scheduled,Cleveland State,0,-,Purdue Fort Wayne,0,-,-,-,1:00 PM
 401929717,2026-11-14,Scheduled,Charlotte,0,-,Tulsa,0,-,-,-,4:00 PM
@@ -233,6 +233,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401930123,2026-11-14,Scheduled,Boise State,0,-,Utah State,0,-,-,-,7:30 PM
 401929895,2026-11-14,Scheduled,Baylor,0,-,BYU,0,-,-,-,8:00 PM
 401931349,2026-11-14,Scheduled,South Alabama,0,-,Old Dominion,0,-,-,-,8:00 PM
+401934378,2026-11-14,Scheduled,América,0,-,Red Bull New York,0,-,-,-,7:30 PM
 401877838,2026-11-13,FT,Independiente Santa Fe,2,-,Internacional de Bogotá,0,-,-,-,8:30 PM
 401928487,2026-11-13,FT,Celta Vigo,5,-,Salamanca UDS,0,-,-,-,3:00 PM
 401929714,2026-11-13,FT,St. Lucia,2,-,Bermuda,1,-,-,-,2:00 PM
