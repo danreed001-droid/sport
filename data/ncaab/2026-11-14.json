@@ -3,72 +3,9 @@
   "weekday": "Saturday",
   "sport": "ncaab",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-14T06:28:34Z",
+  "generatedAt": "2026-11-14T16:30:00Z",
   "games": [
-    {
-      "espnId": "401919847",
-      "away": "Stonehill Skyhawks",
-      "home": "Texas Tech Red Raiders",
-      "time": "1:00 PM ET",
-      "homeSpread": -40.5,
-      "awaySpread": 40.5,
-      "homeSpreadOdds": -105,
-      "awaySpreadOdds": -115,
-      "total": 142.5,
-      "gameTotal": 143.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
-      "storylines": [
-        {
-          "weight": 1,
-          "live": "2-3",
-          "key": "big_stage",
-          "name": "Down from the big stage",
-          "team": "Texas Tech Red Raiders",
-          "says": "fade",
-          "fact": "Texas Tech played #3 Illinois last time out (won 84-78).",
-          "record": "274-237",
-          "pct": 53.6,
-          "leans": "Stonehill Skyhawks",
-          "leanPct": 53.6,
-          "against": false,
-          "unit": "ATS"
-        }
-      ]
-    },
-    {
-      "espnId": "401921689",
-      "away": "LSU Tigers",
-      "home": "Gonzaga Bulldogs",
-      "time": "3:30 PM ET",
-      "homeSpread": -5.5,
-      "awaySpread": 5.5,
-      "homeSpreadOdds": -115,
-      "awaySpreadOdds": -105,
-      "homeMoneyline": -238,
-      "awayMoneyline": 195,
-      "total": 161.5,
-      "gameTotal": 161.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
-      "storylines": [
-        {
-          "weight": 1,
-          "live": "1-0",
-          "key": "steamroller",
-          "name": "Steamroller",
-          "team": "LSU Tigers",
-          "says": "fade",
-          "fact": "LSU won its last three by 40, 41, 43.",
-          "record": "116-138",
-          "pct": 45.7,
-          "leans": "LSU Tigers",
-          "leanPct": 54.3,
-          "against": true,
-          "unit": "ATS"
-        }
-      ]
-    }
+    {"altCategoryTally":"1-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: neutral (Texas Tech's best player JT Toppin has been out all season, so scoring margin can't count for Texas Tech per the star-out rule, even though Texas Tech's own 2026-27 PD/g without him is still far better than Stonehill's)","Rest: neutral (Texas Tech last played Nov 10, Stonehill Nov 9 — both normally rested, no back-to-back for either)","Travel: favors Texas Tech Red Raiders (Stonehill travels from Massachusetts to Lubbock, Texas, a long cross-country trip, while Texas Tech stays home)","Injuries/Lineup: neutral (Texas Tech's only confirmed absence is the season-long loss of Toppin, already noted; Dra Gibbs-Lawhorn's status is unconfirmed and Stonehill has no reported injuries, so there isn't a clean second data point to weigh)","Form: neutral (blocked for Texas Tech by the star-out rule; Stonehill has lost its last two by 20 each, but that alone isn't used to flip the category)","Motivation/Spot: favors Stonehill Skyhawks (Texas Tech just upset No. 3 Illinois on Nov 10 and now faces a massive step down in competition — a classic letdown/trap-game spot)","Venue/Crowd: neutral","Market: neutral (no reliable reverse-line-movement data found for this game)","Matchup splits: neutral (unverified)"],"altReturn":null,"altSpreadReturn":null,"away":"Stonehill Skyhawks","awayMoneyline":6650,"awayPDpg":-3.09,"awayRank":null,"awayScore":null,"awaySpread":39.5,"awaySpreadOdds":-104,"confidence":"solid","correct":null,"gameTotal":143.5,"gameTotalOverOdds":-112,"gameTotalUnderOdds":-108,"home":"Texas Tech Red Raiders","homeMoneyline":-6667,"homePDpg":13.26,"homeRank":16,"homeScore":null,"homeSpread":-39.5,"homeSpreadOdds":104,"offGap":93.96,"pick":"Texas Tech Red Raiders","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -3.09 vs +13.26 (both blended 50/50 with 2025-26 final; Stonehill 3 GP, Texas Tech 3 GP this season)","Offense percentile 3.2 vs 97.1 of 365 D-I teams (blended rank ~354th vs ~12th — gap 93.96)","Texas Tech has played all three games this season without JT Toppin (torn ACL, out all season); Dra Gibbs-Lawhorn is questionable after an apparent lower-body injury in the Illinois win"],"storylines":[{"against":false,"fact":"Texas Tech played #3 Illinois last time out (won 84-78).","key":"big_stage","leanPct":53.6,"leans":"Stonehill Skyhawks","live":"2-3","name":"Down from the big stage","pct":53.6,"record":"274-237","says":"fade","team":"Texas Tech Red Raiders","unit":"ATS","weight":1}],"time":"1:00 PM ET"},
+    {"altCategoryTally":"1-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors LSU Tigers (blended PD/g +22.14 vs +20.81), though LSU's number is inflated by a very weak early schedule (New Orleans, Texas Southern, Louisiana Tech) compared with Gonzaga's win over Purdue","Rest: neutral (Gonzaga last played Nov 7, LSU Nov 9 — both well rested)","Travel: favors Gonzaga Bulldogs (LSU travels from Baton Rouge to Spokane, a cross-country trip with a two-hour time change)","Injuries/Lineup: neutral (no confirmed injuries found for either team)","Form: neutral (both teams have won comfortably in their most recent games; LSU's margins came against much weaker competition)","Motivation/Spot: neutral (first-ever meeting between the programs, no clear edge either way)","Venue/Crowd: favors Gonzaga Bulldogs (one of the sport's most durable home-court advantages at the Kennel)","Market: neutral (no reliable reverse-line-movement data found for this game)","Matchup splits: neutral (unverified)"],"altReturn":null,"altSpreadReturn":null,"away":"LSU Tigers","awayMoneyline":195,"awayPDpg":22.14,"awayRank":null,"awayScore":null,"awaySpread":5.5,"awaySpreadOdds":-105,"confidence":"skip","correct":null,"gameTotal":161.5,"gameTotalOverOdds":-105,"gameTotalUnderOdds":-115,"home":"Gonzaga Bulldogs","homeMoneyline":-238,"homePDpg":20.81,"homeRank":14,"homeScore":null,"homeSpread":-5.5,"homeSpreadOdds":-115,"offGap":5.63,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +22.14 vs +20.81 (both blended 50/50 with 2025-26 final; LSU 3 GP vs a weak non-conference slate, Gonzaga 2 GP including a win over Purdue)","Offense percentile 88.1 vs 93.7 of 365 D-I teams (blended rank ~45th vs ~24th — gap 5.63, below the 30-point screen)","First-ever meeting between the schools (part of the Bad Boy Mowers Spokane Series); no confirmed injuries of note for either side"],"storylines":[{"against":true,"fact":"LSU won its last three by 40, 41, 43.","key":"steamroller","leanPct":54.3,"leans":"LSU Tigers","live":"1-0","name":"Steamroller","pct":45.7,"record":"116-138","says":"fade","team":"LSU Tigers","unit":"ATS","weight":1}],"time":"3:30 PM ET"}
   ]
 }
