@@ -78,6 +78,9 @@ jobs:
           # both rewrite today's NBA slate and market file), rebase again keeping
           # this run's version of the conflicting lines, and only push if every
           # JSON file this commit touches still parses.
+          # JSON data files merge field by field on a rebase (scripts/json_merge.py), so a
+          # concurrent hand fix or sync to another field of the same game isn't undone.
+          git config merge.jsonmerge.driver "python scripts/json_merge.py %O %A %B"
           for i in 1 2 3 4 5; do
             git pull --rebase origin main && git push origin HEAD:main && exit 0
             git rebase --abort 2>/dev/null || true

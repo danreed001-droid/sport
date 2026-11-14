@@ -1,0 +1,3 @@
+# Data files merge field by field (scripts/json_merge.py) when a workflow
+# rebases its commit; the workflows enable the driver with git config.
+data/**/*.json merge=jsonmerge
