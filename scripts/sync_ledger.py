@@ -67,9 +67,21 @@ def carry_repo_fields(current, doc):
     """Replaces REPO_OWNED_GAME_FIELDS on the incoming database copy with the
     repo copy's values (or their absence), matching games by away/home."""
     rows = lambda d: (d or {}).get("games") or (d or {}).get("matches") or []   # soccer: "matches" before normalizing
-    by_matchup = {(g.get("away"), g.get("home")): g for g in rows(current)}
+    # A doubleheader has the same away/home twice: match by start time, then by
+    # order (keying on away/home alone gave both games game 2's fields --
+    # storylines, picks, lines -- until 2026-11-14).
+    by_matchup = {}
+    for g in rows(current):
+        by_matchup.setdefault((g.get("away"), g.get("home")), []).append(g)
+    seen = {}
     for g in rows(doc):
-        old = by_matchup.get((g.get("away"), g.get("home")), {})
+        key = (g.get("away"), g.get("home"))
+        cands = by_matchup.get(key, [])
+        old = next((c for c in cands if c.get("time") and c.get("time") == g.get("time")), None)
+        if old is None:
+            i = seen.get(key, 0)
+            old = cands[i] if i < len(cands) else {}
+        seen[key] = seen.get(key, 0) + 1
         for k in REPO_OWNED_GAME_FIELDS:
             if k in old:
                 g[k] = old[k]

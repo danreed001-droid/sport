@@ -10,7 +10,11 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   database only. They don't push to git.
 - **Into the repo:** the hourly "Diamond Ledger — sync to GitHub" Routine runs
   `scripts/sync_ledger.py` on an export of the database and commits new or
-  changed slates in `data/<sport>/` to `main`. Mirror the database exactly;
+  changed slates in `data/<sport>/` to `main`. Repo-owned fields (picks the
+  repo patches on, storylines, live lines) are carried over from the repo copy
+  by matching games on away/home, then start time, then order -- a doubleheader
+  has the same teams twice (matching on teams alone gave both MLB games game 2's
+  fields until 2026-11-14). Mirror the database exactly;
   never generate a second, different slate for a date that already has one.
 - **Research check (final say):** the "Diamond Ledger — research check"
   Routine runs at 11:40 AM ET. It fact-checks that day's slates in the database,
