@@ -312,6 +312,14 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   colors/abbreviations: `TEAM_COLORS`/`TEAM_ABBR` (NBA, NFL), `TEAM_COLORS2`
   second colors used when a color is near-black or the two teams look alike
   (`gameColors`); other teams get a hashed color and initials.
+  Trend charts (2026-11-14): "ATS trend" and "Totals trend" on NBA/NFL/CFB/
+  NCAAB cards (`trendChart` in site/index.html; data `atsTrend`/`ouTrend`
+  from `ats_trends` in build_site.py): each team's running cover margin, and
+  running points over/under the closing total, over its last 14 (basketball)
+  or 7 (football) graded games on the sport's slates (college slates don't
+  hold every game). Closing totals come from `data/raw/<sport>_lines.csv`
+  (`closing_total`, date +/- a day, teams by name), else the slate's own total;
+  `archive_lines.py` now also archives CFB (seeded with 2026's 434 games).
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
