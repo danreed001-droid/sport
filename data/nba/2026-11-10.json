@@ -152,16 +152,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "2-5",
           "key": "quiet_giant",
           "name": "The quiet giant vs the hype machine",
           "team": "Boston Celtics",
           "says": "back",
           "fact": "Boston Celtics' point differential (+10.7 a game) is better than its 8-2 record, and Philadelphia 76ers' record is better than its +3.1.",
-          "record": "103-80",
-          "pct": 56.3,
+          "record": "105-85",
+          "pct": 55.3,
           "leans": "Boston Celtics",
-          "leanPct": 56.3,
+          "leanPct": 55.3,
           "against": false,
           "backfill": true,
           "result": "hit"
@@ -234,16 +234,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "2-5",
           "key": "quiet_giant",
           "name": "The quiet giant vs the hype machine",
           "team": "LA Clippers",
           "says": "back",
           "fact": "LA Clippers' point differential (-4.0 a game) is better than its 2-7 record, and Phoenix Suns' record is better than its -8.4.",
-          "record": "103-80",
-          "pct": 56.3,
+          "record": "105-85",
+          "pct": 55.3,
           "leans": "LA Clippers",
-          "leanPct": 56.3,
+          "leanPct": 55.3,
           "against": false,
           "backfill": true,
           "result": "miss"
@@ -332,16 +332,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "5-0",
           "key": "emperor",
           "name": "The emperor's new clothes",
           "team": "Miami Heat",
           "says": "fade",
           "fact": "Miami Heat is a -8.5 favorite but has covered 2 of 10 this season.",
-          "record": "176-152",
-          "pct": 53.7,
+          "record": "181-152",
+          "pct": 54.4,
           "leans": "Utah Jazz",
-          "leanPct": 53.7,
+          "leanPct": 54.4,
           "against": false,
           "backfill": true,
           "result": "hit"
@@ -501,16 +501,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "3-2",
           "key": "champions",
           "name": "Champions don't lose three",
           "team": "Portland Trail Blazers",
           "says": "back",
           "fact": "Portland Trail Blazers (6-3) lost its last two.",
-          "record": "63-50",
-          "pct": 55.8,
+          "record": "66-52",
+          "pct": 55.9,
           "leans": "Portland Trail Blazers",
-          "leanPct": 55.8,
+          "leanPct": 55.9,
           "against": false,
           "backfill": true,
           "result": "hit"

@@ -344,7 +344,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   `scripts/soccer_storylines.py` (big five leagues 2018-19 to 2025-26, MLS,
   Liga MX; ESPN's stored pre-match 1X2, no-vig by the power method; 55
   tested, 1 at p<0.05 vs 2.2 by chance, 4 shown, all the opposite of their
-  story). Moneyline entries carry `implied` and `roi`, and `unit` is the
+  story). NBA letdown storylines (2026-11-14, from ~85 letdown variants, none
+  near the rule bar): "Spotlight letdown" fades a 5+ favorite vs a .450-or-worse
+  team that won its last game on national TV and isn't on national TV tonight
+  (`national()`: ESPN scoreboard broadcasts, ESPN/ABC/TNT/NBC/Prime/Peacock;
+  147-114, 56.3%, p=0.047; after a non-national win 47.9%; 2025-26 was 34-34),
+  and "Letdown spot" fades that favorite after any of: that national-TV win over
+  a .550+ team, a win over a classic rival (`RIVALS`), a 15+ point win over a
+  .600+ team, or its 3rd game in 4 nights vs a rested team (355-299, 54.3%,
+  chosen after looking; skipped when Spotlight fires). Backfilled to 2026-11-12
+  only (the veto started 11-13); not in the NBA lean-size backtest. Moneyline entries carry `implied` and `roi`, and `unit` is the
   favored bet ("to win" / "not to win"). football-data.co.uk's robots.txt
   bars ClaudeBot: don't fetch it. MLB: `scripts/mlb_storylines.py`
   (2015-2025, 2020 left out; Retrosheet event files for game context, closing

@@ -71,16 +71,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "3-1",
           "key": "second_battle",
           "name": "Second battle",
           "team": "Chicago Bulls",
           "says": "back",
           "fact": "Chicago Bulls lost to Philadelphia 76ers 107-126 6 days ago and is at home tonight.",
-          "record": "217-181",
-          "pct": 54.5,
+          "record": "220-182",
+          "pct": 54.7,
           "leans": "Chicago Bulls",
-          "leanPct": 54.5,
+          "leanPct": 54.7,
           "against": false,
           "backfill": true,
           "result": "hit"
@@ -238,16 +238,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "2-1",
           "key": "steady",
           "name": "Steady Eddie",
           "team": "Minnesota Timberwolves",
           "says": "back",
           "fact": "Minnesota Timberwolves won its last three by 6, 10, 12.",
-          "record": "93-81",
-          "pct": 53.4,
+          "record": "95-82",
+          "pct": 53.7,
           "leans": "Minnesota Timberwolves",
-          "leanPct": 53.4,
+          "leanPct": 53.7,
           "against": false,
           "backfill": true,
           "result": "hit"
@@ -405,16 +405,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "3-1",
           "key": "second_battle",
           "name": "Second battle",
           "team": "Milwaukee Bucks",
           "says": "back",
           "fact": "Milwaukee Bucks lost to Boston Celtics 102-109 4 days ago and is at home tonight.",
-          "record": "217-181",
-          "pct": 54.5,
+          "record": "220-182",
+          "pct": 54.7,
           "leans": "Milwaukee Bucks",
-          "leanPct": 54.5,
+          "leanPct": 54.7,
           "against": false,
           "backfill": true,
           "result": "miss"

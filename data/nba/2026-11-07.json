@@ -176,7 +176,25 @@
       "statsSpreadReturn": 90.91,
       "time": "7:30 PM ET",
       "totalsBackfill": 11,
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "letdown",
+          "name": "Letdown spot",
+          "team": "Atlanta Hawks",
+          "says": "fade",
+          "fact": "Atlanta Hawks is a -6.5 favorite vs Brooklyn Nets (2-6): it's playing its 3rd game in 4 nights and Brooklyn Nets is rested.",
+          "record": "355-299",
+          "pct": 54.3,
+          "leans": "Brooklyn Nets",
+          "leanPct": 54.3,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "4-0",
@@ -257,16 +275,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "2-1",
           "key": "sleeping_giant",
           "name": "The sleeping giant",
           "team": "Cleveland Cavaliers",
           "says": "back",
           "fact": "Cleveland Cavaliers (5-4) is 2-3 in its last five; New York Knicks is 4-1.",
-          "record": "154-135",
-          "pct": 53.3,
+          "record": "156-136",
+          "pct": 53.4,
           "leans": "Cleveland Cavaliers",
-          "leanPct": 53.3,
+          "leanPct": 53.4,
           "against": false,
           "backfill": true,
           "result": "miss"
@@ -371,6 +389,24 @@
           "name": "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
           "rule": 14
         }
+      ],
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "letdown",
+          "name": "Letdown spot",
+          "team": "Oklahoma City Thunder",
+          "says": "fade",
+          "fact": "Oklahoma City Thunder is a -12.5 favorite vs Washington Wizards (4-5): it just beat Memphis Grizzlies (0.750) by 31.",
+          "record": "355-299",
+          "pct": 54.3,
+          "leans": "Washington Wizards",
+          "leanPct": 54.3,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        }
       ]
     },
     {
@@ -461,16 +497,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "4-3",
           "key": "fat_happy",
           "name": "Fat and happy",
           "team": "Golden State Warriors",
           "says": "fade",
           "fact": "Golden State Warriors has won 6 straight and is a -7.5 favorite.",
-          "record": "152-133",
-          "pct": 53.3,
+          "record": "156-136",
+          "pct": 53.4,
           "leans": "Orlando Magic",
-          "leanPct": 53.3,
+          "leanPct": 53.4,
           "against": false,
           "backfill": true,
           "result": "hit"

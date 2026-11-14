@@ -64,6 +64,15 @@ STORIES = {
     "emperor": ("The emperor's new clothes", "fade", (176, 152), "favored by 5+ while covering under 40% this season"),
     "steady": ("Steady Eddie", "back", (93, 81), "favored, after three straight wins by 5-15"),
     "leaky": ("Leaky defense meets leaky defense", "back", (117, 136), "home team, and both teams allowed 125+ last game"),
+    # Letdown storylines (2026-11-14): a 5+ favorite vs a .450-or-worse team.
+    # National TV = ESPN, ABC, TNT, NBC, Prime Video, Peacock (ESPN scoreboard
+    # broadcasts). After a non-national win the underdog covered 47.9%.
+    "spotlight": ("Spotlight letdown", "fade", (147, 114),
+                  "won its last game on national TV, now a 5+ favorite vs a weaker team and not on national TV"),
+    "letdown": ("Letdown spot", "fade", (355, 299),
+                "a 5+ favorite vs a weaker team right after a big game: a national-TV win over a .550+ team "
+                "(tonight not national), a win over a classic rival, a 15+ point win over a .600+ team, or its "
+                "3rd game in 4 nights vs a rested team"),
 }
 
 
@@ -147,7 +156,52 @@ def tip_hour(time_str):
         return None
 
 
-def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp_prior, my_spread, tip):
+NATIONAL_NETS = {"ESPN", "ABC", "TNT", "NBC", "Prime Video", "Peacock", "truTV", "HBO Max", "ESPN2", "TBS"}
+RIVALS = {frozenset(p) for p in [
+    ("Boston Celtics", "Los Angeles Lakers"), ("Boston Celtics", "Philadelphia 76ers"), ("Boston Celtics", "New York Knicks"),
+    ("New York Knicks", "Brooklyn Nets"), ("Los Angeles Lakers", "LA Clippers"), ("Los Angeles Lakers", "Los Angeles Clippers"),
+    ("Chicago Bulls", "Detroit Pistons"), ("New York Knicks", "Miami Heat"), ("Golden State Warriors", "Cleveland Cavaliers"),
+    ("Dallas Mavericks", "San Antonio Spurs"), ("Houston Rockets", "San Antonio Spurs"), ("Dallas Mavericks", "Houston Rockets"),
+    ("Los Angeles Lakers", "Golden State Warriors"), ("Phoenix Suns", "Los Angeles Lakers"), ("Miami Heat", "Boston Celtics"),
+    ("Indiana Pacers", "New York Knicks"), ("Utah Jazz", "Denver Nuggets"), ("Milwaukee Bucks", "Chicago Bulls"),
+    ("Philadelphia 76ers", "Brooklyn Nets"), ("Memphis Grizzlies", "Golden State Warriors")]}
+_TV = {}
+
+
+def national(session, date_str, a, b):
+    """True when ESPN lists a national broadcast for a vs b on date_str, False
+    when it lists the game without one, None when unknown."""
+    if date_str not in _TV:
+        try:
+            evs = espn.fetch_scoreboard(session, "basketball", "nba", date_str.replace("-", ""))
+        except Exception:
+            return None  # not cached: retried on the next use
+        day = []
+        for ev in evs:
+            comp = ev["competitions"][0]
+            names = [c["team"]["displayName"] for c in comp["competitors"]]
+            nets = set()
+            for bc in comp.get("broadcasts") or []:
+                if (bc.get("market") or "").lower() == "national":
+                    nets.update(bc.get("names") or [])
+            for gb in comp.get("geoBroadcasts") or []:
+                if ((gb.get("market") or {}).get("type") or "").lower() == "national":
+                    nets.add((gb.get("media") or {}).get("shortName"))
+            day.append((names, bool(nets & NATIONAL_NETS)))
+        _TV[date_str] = day
+    for names, nat in _TV[date_str]:
+        if any(_same_team(a, x) for x in names) and any(_same_team(b, x) for x in names):
+            return nat
+    return None
+
+
+def record_before(games, before):
+    """Win pct from a team's games before a date (None with no games)."""
+    gs = [g for g in games if g["date"] < before]
+    return sum(g["won"] for g in gs) / len(gs) if gs else None
+
+
+def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp_prior, my_spread, tip, by_team=None):
     """Storylines about `team` tonight."""
     out = []
     D = date.fromisoformat(date_str)
@@ -237,6 +291,29 @@ def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp
     if sp is not None and sp < 0 and len(t["margins"]) >= 3 and all(5 <= m <= 15 for m in t["margins"][-3:]):
         out.append(entry("steady", team, opp, f"{team} won its last three by "
                                               f"{', '.join(f'{m:g}' for m in reversed(t['margins'][-3:]))}."))
+    # Letdown storylines: a 5+ favorite vs a .450-or-worse team.
+    if sp is not None and sp <= -5 and o["wp"] <= 0.45:
+        won_by = last["team_score"] - last["opp_score"]
+        prev_opp_games = (by_team or {}).get(next((k for k in (by_team or {}) if _same_team(last["opp"], k)), ""), [])
+        pwp = record_before([g for g in prev_opp_games if g["date"] >= ns.season_start(date_str)], last["date"])
+        prev_nat = national(session, last["date"], team, last["opp"]) if won_by > 0 else None
+        now_nat = national(session, date_str, team, opp)
+        spot = won_by > 0 and prev_nat is True and now_nat is False
+        if spot:
+            out.append(entry("spotlight", team, opp, f"{team} beat {last['opp']} {last['team_score']:g}-{last['opp_score']:g} "
+                                                     f"on national TV and is a {sp:+g} favorite tonight off national TV."))
+        reasons = []
+        if spot and pwp is not None and pwp >= 0.55:
+            reasons.append(f"it just beat {last['opp']} on national TV")
+        if won_by > 0 and frozenset((team, last["opp"])) in RIVALS:
+            reasons.append(f"it just beat rival {last['opp']}")
+        if won_by >= 15 and pwp is not None and pwp >= 0.60:
+            reasons.append(f"it just beat {last['opp']} ({pwp:.3f}) by {won_by:g}")
+        if 1 + sum(1 for g in prior if (D - date.fromisoformat(g["date"])).days <= 3) >= 3 and orest >= 2:
+            reasons.append(f"it's playing its 3rd game in 4 nights and {opp} is rested")
+        if reasons and not spot:  # the spotlight storyline already covers that game
+            out.append(entry("letdown", team, opp, f"{team} is a {sp:+g} favorite vs {opp} ({round(o['wp'] * o['gp'])}-"
+                                                   f"{o['gp'] - round(o['wp'] * o['gp'])}): " + "; ".join(reasons) + "."))
     if is_home and last["opp_score"] >= 125 and opp_prior[-1]["opp_score"] >= 125:
         out.append(entry("leaky", team, opp, f"{team} allowed {last['opp_score']:g} last game and {opp} allowed "
                                              f"{opp_prior[-1]['opp_score']:g}."))
@@ -258,9 +335,9 @@ def storylines_for(session, points, by_team, q_cache, date_str, home, away, home
     ap = [g for g in by_team[a] if s0 <= g["date"] < date_str]
     if len(hp) < 8 or len(ap) < 8:  # as backtested: both teams 8+ games
         return []
-    out = team_side(session, points, q_cache, date_str, h, a, True, hp, ap, home_spread, tip)
+    out = team_side(session, points, q_cache, date_str, h, a, True, hp, ap, home_spread, tip, by_team)
     out += team_side(session, points, q_cache, date_str, a, h, False, ap, hp,
-                     None if home_spread is None else -home_spread, tip)
+                     None if home_spread is None else -home_spread, tip, by_team)
     # Name teams as the slate does.
     names = {h: home, a: away}
     for e in out:
