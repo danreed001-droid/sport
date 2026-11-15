@@ -316,8 +316,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   NCAAB cards (`trendChart` in site/index.html; data `atsTrend`/`ouTrend`
   from `ats_trends` in build_site.py): each team's running cover margin, and
   running points over/under the closing total, over its last 14 (basketball)
-  or 7 (football) graded games on the sport's slates (college slates don't
-  hold every game). Closing totals come from `data/raw/<sport>_lines.csv`
+  or 7 (football) graded games on the sport's slates; college slates don't
+  hold every game, so CFB/NCAAB teams are filled from `data/raw/<sport>_lines.csv`
+  (`_fill_from_lines`; full-name match, ambiguous names like Miami/Michigan stay slate-only). Closing totals come from `data/raw/<sport>_lines.csv`
   (`closing_total`, date +/- a day, teams by name), else the slate's own total;
   `archive_lines.py` now also archives CFB (seeded with 2026's 434 games).
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
