@@ -9,8 +9,15 @@ A row:
   result ("W"|"L"|"P"|None for pending|"NS" no spread saved|"void" game left the slate),
   units (profit / 100), mlResult / mlUnits / mlCounted (sides only),
   alt (an alternate line, price estimated), posted (the posted line it was
-  moved from), note (a hand correction, kept visible).
+  moved from), note (a hand correction, kept visible),
+  close (the closing line from the pick's side: spread, or the total) and clv
+  (points better (+) or worse (-) than the close: the posted line for an
+  alternate, since buying points isn't beating the market).
+Closing lines: data/raw/<sport>_lines.csv (nba, nfl, ncaab, cfb; date +/- a
+day, teams by name); NBA spreads prefer the slate's statsSpread (DraftKings
+frozen at tip-off); otherwise none (MLB, soccer).
 """
+import os
 import csv
 import io
 import re
@@ -54,6 +61,40 @@ def _fmt(v):
     return f"{v:+g}" if _num(v) else ""
 
 
+_CLOSE = {}
+LINES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "data", "raw")
+
+
+def _key(name):
+    n = (name or "").lower().replace("la clippers", "los angeles clippers").replace("la lakers", "los angeles lakers")
+    return " ".join(n.split())
+
+
+def _close_row(sport, date_str, away, home):
+    """(home closing spread, closing total) from the lines archive, or (None, None)."""
+    if sport not in _CLOSE:
+        by = {}
+        path = os.path.join(LINES_DIR, f"{sport}_lines.csv")
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    def fl(v):
+                        try:
+                            return float(v)
+                        except (TypeError, ValueError):
+                            return None
+                    by.setdefault(r["date"], []).append((_key(r["away"]), _key(r["home"]), fl(r.get("spread_close")), fl(r.get("total_close"))))
+        _CLOSE[sport] = by
+    from datetime import date as _d, timedelta as _td
+    a, h = _key(away), _key(home)
+    for off in (0, 1, -1):
+        d = (_d.fromisoformat(date_str) + _td(days=off)).isoformat()
+        for ra, rh, sp, tot in _CLOSE[sport].get(d, []):
+            if (ra == a or ra in a or a in ra) and (rh == h or rh in h or h in rh):
+                return sp, tot
+    return None, None
+
+
 def build_results(mypicks, all_docs):
     docs = {sport: {d: doc for d, doc in lst} for sport, lst in all_docs.items()}
     rows = []
@@ -72,6 +113,16 @@ def build_results(mypicks, all_docs):
                    "lead": lead_minutes(date_str, p.get("time"), p.get("submittedAt")),
                    "result": None, "units": None, "mlResult": None, "mlUnits": None, "mlCounted": None,
                    "alt": bool(p.get("alt")), "posted": p.get("posted"), "note": p.get("correction")}
+            # vs the close: the line taken (the posted one for an alternate) against the closing spread.
+            # (Picks made after the start are left out: the slate's line by then can be long stale.)
+            if g is not None and p.get("side") in ("home", "away") and not (row["lead"] is not None and row["lead"] < 0):
+                c_sp, _ = _close_row(sport, date_str, g.get("away"), g.get("home"))
+                if sport == "nba" and _num(g.get("statsSpread")):
+                    c_sp = g["statsSpread"]
+                taken = (p.get("posted") or {}).get("spread") if p.get("alt") else p.get("spread")
+                if _num(c_sp) and _num(taken):
+                    mine_close = c_sp if p["side"] == "home" else -c_sp
+                    row["close"], row["clv"] = mine_close, round(taken - mine_close, 1)
             if g is None:
                 row["result"] = "void"
             elif is_final(doc, g):
@@ -97,6 +148,13 @@ def build_results(mypicks, all_docs):
                    "lead": lead_minutes(date_str, t.get("time"), t.get("submittedAt")),
                    "result": None, "units": None, "mlResult": None, "mlUnits": None, "mlCounted": None,
                    "alt": bool(t.get("alt")), "posted": t.get("posted"), "note": t.get("correction")}
+            if g is not None and t.get("side") in ("over", "under") and not (row["lead"] is not None and row["lead"] < 0):
+                _, c_tot = _close_row(sport, date_str, g.get("away"), g.get("home"))
+                if c_tot is None and sport == "nba" and _num(g.get("totalsLine")):
+                    c_tot = g["totalsLine"]
+                taken = (t.get("posted") or {}).get("line") if t.get("alt") else line
+                if _num(c_tot) and _num(taken):
+                    row["close"], row["clv"] = c_tot, round((c_tot - taken) if t["side"] == "over" else (taken - c_tot), 1)
             if g is None:
                 row["result"] = "void"
             elif is_final(doc, g) and _num(line):
@@ -110,7 +168,8 @@ def build_results(mypicks, all_docs):
 def results_csv(rows):
     buf = io.StringIO()
     cols = ["date", "sport", "game", "type", "pick", "line", "odds", "submitted_utc", "minutes_before_start",
-            "result", "units", "moneyline", "moneyline_result", "moneyline_units", "alternate_line", "posted_line", "note"]
+            "result", "units", "moneyline", "moneyline_result", "moneyline_units", "alternate_line", "posted_line", "note",
+            "closing_line", "vs_close"]
     w = csv.writer(buf)
     w.writerow(cols)
     for r in rows:
@@ -118,5 +177,5 @@ def results_csv(rows):
         w.writerow([r["d"], r["sport"], r["game"], "over/under" if r["kind"] == "total" else "spread", r["pick"],
                     r["line"], r["odds"], r["submitted"], r["lead"], r["result"] or "pending", r["units"], r["ml"],
                     r["mlResult"], r["mlUnits"], "yes" if r["alt"] else "",
-                    posted.get("spread", posted.get("line", "")), r["note"] or ""])
+                    posted.get("spread", posted.get("line", "")), r["note"] or "", r.get("close", ""), r.get("clv", "")])
     return buf.getvalue()
