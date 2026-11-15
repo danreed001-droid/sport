@@ -13,6 +13,19 @@
       "moneyline": 1875,
       "submittedAt": "2026-11-14T16:28:03+00:00",
       "issue": 29
+    },
+    "nba-2026-11-14-dallas-mavericks-cleveland-cavaliers-7-30-pm-et": {
+      "sport": "nba",
+      "away": "Dallas Mavericks",
+      "home": "Cleveland Cavaliers",
+      "time": "7:30 PM ET",
+      "side": "away",
+      "team": "Dallas Mavericks",
+      "spread": -1.5,
+      "spreadOdds": -114,
+      "moneyline": -130,
+      "submittedAt": "2026-11-15T00:43:58+00:00",
+      "issue": 30
     }
   },
   "scores": {
@@ -34,7 +47,23 @@
     "cfb-2026-11-14-unlv-new-mexico-7-30-pm-et": "NNhaNhN",
     "cfb-2026-11-14-usc-indiana-3-30-pm-et": "NhNNaN",
     "cfb-2026-11-14-utah-arizona-7-30-pm-et": "NNNa",
-    "cfb-2026-11-14-wake-forest-smu-12-00-pm-et": "NNNNNh"
+    "cfb-2026-11-14-wake-forest-smu-12-00-pm-et": "NNNNNh",
+    "nba-2026-11-14-brooklyn-nets-memphis-grizzlies-8-00-pm-et": "NaNaNNNaN",
+    "nba-2026-11-14-dallas-mavericks-cleveland-cavaliers-7-30-pm-et": "NaNaNNNaN",
+    "nba-2026-11-14-denver-nuggets-new-orleans-pelicans-7-00-pm-et": "NaNaNNNaN",
+    "nba-2026-11-14-detroit-pistons-miami-heat-8-00-pm-et": "NaNHNNNaN"
   },
-  "totals": {}
+  "totals": {
+    "nba-2026-11-14-brooklyn-nets-memphis-grizzlies-8-00-pm-et": {
+      "sport": "nba",
+      "away": "Brooklyn Nets",
+      "home": "Memphis Grizzlies",
+      "time": "8:00 PM ET",
+      "side": "under",
+      "line": 227.5,
+      "odds": -112,
+      "submittedAt": "2026-11-15T00:43:58+00:00",
+      "issue": 30
+    }
+  }
 }
