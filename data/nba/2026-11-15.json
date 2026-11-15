@@ -1,0 +1,418 @@
+{
+  "date": "2026-11-15",
+  "weekday": "Sunday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-15T05:39:38Z",
+  "games": [
+    {
+      "espnId": "401909985",
+      "away": "Indiana Pacers",
+      "home": "Philadelphia 76ers",
+      "time": "1:00 PM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -288.0,
+      "awayMoneyline": 235.0,
+      "statsSpread": -7.5,
+      "statsLine": {
+        "homeSpread": -7.5,
+        "awaySpread": 7.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -288,
+        "awayMoneyline": 235
+      },
+      "totalsLine": 224.5
+    },
+    {
+      "espnId": "401909986",
+      "away": "Los Angeles Lakers",
+      "home": "Phoenix Suns",
+      "time": "4:00 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 124.0,
+      "awayMoneyline": -148.0,
+      "statsSpread": 2.5,
+      "statsLine": {
+        "homeSpread": 2.5,
+        "awaySpread": -2.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 124,
+        "awayMoneyline": -148
+      },
+      "totalsLine": 225.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-1",
+          "key": "steady",
+          "name": "Steady Eddie",
+          "team": "Los Angeles Lakers",
+          "says": "back",
+          "fact": "Los Angeles Lakers won its last three by 11, 10, 5.",
+          "record": "95-82",
+          "pct": 53.7,
+          "leans": "Los Angeles Lakers",
+          "leanPct": 53.7,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909987",
+      "away": "Charlotte Hornets",
+      "home": "LA Clippers",
+      "time": "4:30 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -112.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": -118.0,
+      "awayMoneyline": 100.0,
+      "statsSpread": -1.5,
+      "statsLine": {
+        "homeSpread": -1.5,
+        "awaySpread": 1.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -118,
+        "awayMoneyline": 100
+      },
+      "totalsLine": 215.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-5",
+          "key": "quiet_giant",
+          "name": "The quiet giant vs the hype machine",
+          "team": "LA Clippers",
+          "says": "back",
+          "fact": "LA Clippers' point differential (-5.3 a game) is better than its 3-8 record, and Charlotte Hornets' record is better than its -11.0.",
+          "record": "105-85",
+          "pct": 55.3,
+          "leans": "LA Clippers",
+          "leanPct": 55.3,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "2-2",
+          "key": "ghost_town",
+          "name": "Ghost town",
+          "team": "Charlotte Hornets",
+          "says": "fade",
+          "fact": "Charlotte Hornets' top scorer Brandon Miller (20.6 a game) missed its last two games; Charlotte Hornets is a +1.5 underdog.",
+          "record": "822-742",
+          "pct": 52.6,
+          "leans": "LA Clippers",
+          "leanPct": 52.6,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909988",
+      "away": "San Antonio Spurs",
+      "home": "Utah Jazz",
+      "time": "5:00 PM ET",
+      "homeSpread": 17.5,
+      "awaySpread": -17.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": 850.0,
+      "awayMoneyline": -1460.0,
+      "statsSpread": 17.5,
+      "statsLine": {
+        "homeSpread": 17.5,
+        "awaySpread": -17.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": 850,
+        "awayMoneyline": -1460
+      },
+      "statsFavors": "San Antonio Spurs",
+      "statsRules": [
+        {
+          "rule": 57,
+          "name": "Back a team beating the spread by 6+ a game over its last five vs. an opponent with no double-digit rebounder in its last two games, with at least a day off (on trial)",
+          "backtest": "64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35",
+          "detail": "Backing San Antonio Spurs: beat the spread by 9.1 a game over its last five, and Utah Jazz had no double-digit rebounder in its last two games (top: 8 and 9) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35."
+        }
+      ],
+      "statsCheck": "Rule 57: Backing San Antonio Spurs: beat the spread by 9.1 a game over its last five, and Utah Jazz had no double-digit rebounder in its last two games (top: 8 and 9) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35.",
+      "totalsLine": 223.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-3",
+          "key": "fat_happy",
+          "name": "Fat and happy",
+          "team": "San Antonio Spurs",
+          "says": "fade",
+          "fact": "San Antonio Spurs has won 11 straight and is a -17.5 favorite.",
+          "record": "156-136",
+          "pct": 53.4,
+          "leans": "Utah Jazz",
+          "leanPct": 53.4,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "1-0",
+          "key": "spotlight",
+          "name": "Spotlight letdown",
+          "team": "San Antonio Spurs",
+          "says": "fade",
+          "fact": "San Antonio Spurs beat Golden State Warriors 123-85 on national TV and is a -17.5 favorite tonight off national TV.",
+          "record": "148-114",
+          "pct": 56.5,
+          "leans": "Utah Jazz",
+          "leanPct": 56.5,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909989",
+      "away": "Dallas Mavericks",
+      "home": "Boston Celtics",
+      "time": "6:00 PM ET",
+      "homeSpread": -13.5,
+      "awaySpread": 13.5,
+      "homeSpreadOdds": -111.0,
+      "awaySpreadOdds": -109.0,
+      "homeMoneyline": -800.0,
+      "awayMoneyline": 558.0,
+      "statsSpread": -13.5,
+      "statsLine": {
+        "homeSpread": -13.5,
+        "awaySpread": 13.5,
+        "homeSpreadOdds": -111,
+        "awaySpreadOdds": -109,
+        "homeMoneyline": -800,
+        "awayMoneyline": 558
+      },
+      "statsFavors": "Boston Celtics",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Boston Celtics: covered its last two games (by 0.5 at Toronto Raptors and by 20.5 at Philadelphia 76ers), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing Boston Celtics: covered its last two games (by 0.5 at Toronto Raptors and by 20.5 at Philadelphia 76ers), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsLine": 217.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-3",
+          "key": "fat_happy",
+          "name": "Fat and happy",
+          "team": "Boston Celtics",
+          "says": "fade",
+          "fact": "Boston Celtics has won 5 straight and is a -13.5 favorite.",
+          "record": "156-136",
+          "pct": 53.4,
+          "leans": "Dallas Mavericks",
+          "leanPct": 53.4,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909990",
+      "away": "New York Knicks",
+      "home": "Toronto Raptors",
+      "time": "6:00 PM ET",
+      "homeSpread": 4.5,
+      "awaySpread": -4.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 160.0,
+      "awayMoneyline": -192.0,
+      "statsSpread": 4.5,
+      "statsLine": {
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 160,
+        "awayMoneyline": -192
+      },
+      "totalsLine": 217.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-2",
+          "key": "ghost_town",
+          "name": "Ghost town",
+          "team": "Toronto Raptors",
+          "says": "fade",
+          "fact": "Toronto Raptors' top scorer Scottie Barnes (23.5 a game) missed its last two games; Toronto Raptors is a +4.5 underdog.",
+          "record": "822-742",
+          "pct": 52.6,
+          "leans": "New York Knicks",
+          "leanPct": 52.6,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "5-7",
+          "key": "schedule_loss",
+          "name": "The schedule loss",
+          "team": "New York Knicks",
+          "says": "fade",
+          "fact": "New York Knicks' 4th game in 6 nights, on the road; Toronto Raptors has had 2 days off.",
+          "record": "867-767",
+          "pct": 53.1,
+          "leans": "Toronto Raptors",
+          "leanPct": 53.1,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909991",
+      "away": "Houston Rockets",
+      "home": "Washington Wizards",
+      "time": "7:00 PM ET",
+      "homeSpread": 9.5,
+      "awaySpread": -9.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 341.0,
+      "awayMoneyline": -438.0,
+      "statsSpread": 9.5,
+      "statsLine": {
+        "homeSpread": 9.5,
+        "awaySpread": -9.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 341,
+        "awayMoneyline": -438
+      },
+      "totalsLine": 222.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-1",
+          "key": "steady",
+          "name": "Steady Eddie",
+          "team": "Houston Rockets",
+          "says": "back",
+          "fact": "Houston Rockets won its last three by 7, 7, 10.",
+          "record": "95-82",
+          "pct": 53.7,
+          "leans": "Houston Rockets",
+          "leanPct": 53.7,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909992",
+      "away": "Atlanta Hawks",
+      "home": "Milwaukee Bucks",
+      "time": "8:00 PM ET",
+      "homeSpread": 7.5,
+      "awaySpread": -7.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 251.0,
+      "awayMoneyline": -310.0,
+      "statsSpread": 7.5,
+      "statsLine": {
+        "homeSpread": 7.5,
+        "awaySpread": -7.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 251,
+        "awayMoneyline": -310
+      },
+      "statsFavors": "Milwaukee Bucks",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Milwaukee Bucks: covered its last two games (by 1.5 at Orlando Magic and by 3.5 vs Los Angeles Lakers), now at home in game 14 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing Milwaukee Bucks: covered its last two games (by 1.5 at Orlando Magic and by 3.5 vs Los Angeles Lakers), now at home in game 14 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsLine": 234.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "5-0",
+          "key": "emperor",
+          "name": "The emperor's new clothes",
+          "team": "Atlanta Hawks",
+          "says": "fade",
+          "fact": "Atlanta Hawks is a -7.5 favorite but has covered 4 of 13 this season.",
+          "record": "181-152",
+          "pct": 54.4,
+          "leans": "Milwaukee Bucks",
+          "leanPct": 54.4,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909993",
+      "away": "Oklahoma City Thunder",
+      "home": "Sacramento Kings",
+      "time": "9:00 PM ET",
+      "homeSpread": 10.5,
+      "awaySpread": -10.5,
+      "homeSpreadOdds": -111.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": 360.0,
+      "awayMoneyline": -467.0,
+      "statsSpread": 10.5,
+      "statsLine": {
+        "homeSpread": 10.5,
+        "awaySpread": -10.5,
+        "homeSpreadOdds": -111,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": 360,
+        "awayMoneyline": -467
+      },
+      "statsFavors": "Oklahoma City Thunder",
+      "statsRules": [
+        {
+          "rule": 61,
+          "name": "Fade a team at .250 or worse (8+ games) that used 8 or fewer players for 10+ minutes in its last game (on trial)",
+          "backtest": "61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22",
+          "detail": "Fading Sacramento Kings: 1-11 on the season and only 8 players played 10+ minutes in its last game (vs Portland Trail Blazers) -- 61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22."
+        }
+      ],
+      "statsCheck": "Rule 61: Fading Sacramento Kings: 1-11 on the season and only 8 players played 10+ minutes in its last game (vs Portland Trail Blazers) -- 61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22.",
+      "totalsLine": 222.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "5-7",
+          "key": "schedule_loss",
+          "name": "The schedule loss",
+          "team": "Oklahoma City Thunder",
+          "says": "fade",
+          "fact": "Oklahoma City Thunder's 4th game in 6 nights, on the road; Sacramento Kings has had 1 day off.",
+          "record": "867-767",
+          "pct": 53.1,
+          "leans": "Sacramento Kings",
+          "leanPct": 53.1,
+          "against": false
+        }
+      ]
+    }
+  ]
+}
