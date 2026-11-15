@@ -1,16 +1,16 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
 401933096,2026-11-15,FT,La Tamponnaise,2,-,Saint-Pauloise FC,1,-,-,-,9:45 AM
 401928690,2026-11-15,FT,Peterborough United,3,-,Lye Town,1,-,-,-,8:00 AM
-401933740,2026-11-15,HT,Kansas City Current,1,-,Gotham FC,0,-,-,-,3:00 PM
+401933740,2026-11-15,FT,Kansas City Current,2,-,Gotham FC,1,-,-,-,3:00 PM
 401929709,2026-11-15,Scheduled,Curaçao,0,-,Panama,0,-,-,-,6:00 PM
 401861172,2026-11-15,FT,Montenegro,4,-,Cyprus,1,-,-,-,9:00 AM
 401861171,2026-11-15,FT,Armenia,0,-,Latvia,0,-,-,-,9:00 AM
 401861173,2026-11-15,FT,Albania,2,-,Belarus,0,-,-,-,12:00 PM
 401861174,2026-11-15,FT,San Marino,2,-,Finland,7,-,-,-,12:00 PM
-401861176,2026-11-15,73',Italy,1,-,Belgium,3,-,-,-,2:45 PM
-401861178,2026-11-15,77',Czechia,0,-,Croatia,1,-,-,-,2:45 PM
-401861177,2026-11-15,75',Türkiye,0,-,France,1,-,-,-,2:45 PM
-401861175,2026-11-15,69',England,3,-,Spain,1,-,-,-,2:45 PM
+401861176,2026-11-15,FT,Italy,1,-,Belgium,4,-,-,-,2:45 PM
+401861178,2026-11-15,FT,Czechia,1,-,Croatia,2,-,-,-,2:45 PM
+401861177,2026-11-15,FT,Türkiye,1,-,France,2,-,-,-,2:45 PM
+401861175,2026-11-15,FT,England,3,-,Spain,2,-,-,-,2:45 PM
 401933837,2026-11-15,FT,Eswatini,0,-,Suriname,4,-,-,-,12:00 PM
 401902859,2026-11-15,FT,Birmingham City,0,-,Aston Villa,1,-,-,-,9:00 AM
 401902860,2026-11-15,FT,Charlton Athletic,0,-,West Ham United,2,-,-,-,9:00 AM
@@ -47,7 +47,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401932799,2026-11-15,FT-Pens,USF Fecamp,0,-,Stade Sotteville,0,-,-,-,8:30 AM
 401932736,2026-11-15,FT,AS Cannes,2,-,Atlas Paillade,0,-,-,-,9:00 AM
 401932735,2026-11-15,FT,Saint-Étienne,2,-,Rumilly Vallières,1,-,-,-,9:00 AM
-401878628,2026-11-15,Scheduled,DC Power FC,0,-,Sporting Jax,0,-,-,-,5:00 PM
+401878628,2026-11-15,44',DC Power FC,1,-,Sporting Jax,0,-,-,-,5:00 PM
 401878607,2026-11-15,Scheduled,Dallas Trinity FC,0,-,Tampa Bay Sun FC,0,-,-,-,5:00 PM
 401931840,2026-11-15,FT,Bournemouth,1,-,Norwich City,2,-,-,-,7:00 AM
 401931852,2026-11-15,FT,Bolton,0,-,Derby County,7,-,-,-,8:00 AM
@@ -97,17 +97,17 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401882134,2026-11-15,FT,Heerenveen,2,-,Feyenoord Rotterdam,3,-,-,-,10:45 AM
 401882135,2026-11-15,FT,FC Utrecht,1,-,PEC Zwolle,1,-,-,-,10:45 AM
 401932764,2026-11-15,FT,Colegiales,1,-,Deportivo Morón,1,-,-,-,1:00 PM
-401932779,2026-11-15,59',Tristán Suárez,1,-,Godoy Cruz Antonio Tomba,2,-,-,-,3:00 PM
+401932779,2026-11-15,FT,Tristán Suárez,1,-,Godoy Cruz Antonio Tomba,3,-,-,-,3:00 PM
 401932782,2026-11-15,Scheduled,Gimnasia y Tiro (Salta),0,-,Ferro Carril Oeste,0,-,-,-,6:30 PM
-401933255,2026-11-15,90'+2',Liverpool,2,-,Danubio,1,-,-,-,2:30 PM
+401933255,2026-11-15,FT,Liverpool,2,-,Danubio,1,-,-,-,2:30 PM
 401933376,2026-11-15,Scheduled,Peñarol,0,-,Defensor Sporting,0,-,-,-,6:00 PM
 401886113,2026-11-15,FT,Sport Boys,3,-,Comerciantes Unidos,3,-,-,-,1:00 PM
-401886137,2026-11-15,HT,Deportivo Garcilaso,1,-,Juan Pablo II,1,-,-,-,3:15 PM
+401886137,2026-11-15,FT,Deportivo Garcilaso,2,-,Juan Pablo II,2,-,-,-,3:15 PM
 401930228,2026-11-15,FT,Independiente Petrolero,0,-,Always Ready,2,-,-,-,2:00 PM
-401930229,2026-11-15,Scheduled,Real Potosí,0,-,Nacional Potosí,0,-,-,-,4:30 PM
-401879641,2026-11-15,16',Marquense,0,-,Deportivo San Pedro,0,-,-,-,4:00 PM
+401930229,2026-11-15,64',Real Potosí,1,-,Nacional Potosí,0,-,-,-,4:30 PM
+401879641,2026-11-15,89',Marquense,0,-,Deportivo San Pedro,2,-,-,-,4:00 PM
 401879611,2026-11-15,Scheduled,Antigua GFC,0,-,Suchitepequez,0,-,-,-,6:05 PM
-401899769,2026-11-15,12',Atletico Balboa,1,-,C.D. Platense,1,-,-,-,4:00 PM
+401899769,2026-11-15,83',Atletico Balboa,2,-,C.D. Platense,1,-,-,-,4:00 PM
 401899768,2026-11-15,Scheduled,Águila,0,-,Inca Aruba,0,-,-,-,6:00 PM
 401930696,2026-11-15,FT,Chanmari FC,2,-,Dempo Sports Club,1,-,-,-,5:30 AM
 401930695,2026-11-15,FT,Rajasthan United FC,2,-,Samaleswari SC,0,-,-,-,8:00 AM
@@ -115,9 +115,9 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929762,2026-11-15,FT,Pennsylvania,0,-,Cornell,2,-,-,-,1:00 PM
 401929815,2026-11-15,FT,Fairleigh Dickinson,1,-,Long Island University,0,-,-,-,1:00 PM
 401929856,2026-11-15,FT,South Carolina,0,-,West Virginia,4,-,-,-,1:00 PM
-401929741,2026-11-15,FT,Akron,0,-,Georgetown,0,-,-,-,2:00 PM
-401931280,2026-11-15,48',Washington,1,-,Indiana,0,-,-,-,3:00 PM
-401929738,2026-11-15,13',North Carolina,0,-,SMU,0,-,-,-,4:00 PM
+401929741,2026-11-15,AGT,Akron,1,-,Georgetown,0,-,-,-,2:00 PM
+401931280,2026-11-15,110',Washington,2,-,Indiana,2,-,-,-,3:00 PM
+401929738,2026-11-15,81',North Carolina,2,-,SMU,0,-,-,-,4:00 PM
 401929888,2026-11-15,FT,Virginia,0,-,North Carolina,2,-,-,-,12:00 PM
 401929973,2026-11-15,FT-Pens,Fairleigh Dickinson,1,-,Central Connecticut,1,-,-,-,1:00 PM
 401929951,2026-11-15,FT,Brown,1,-,Columbia,0,-,-,-,1:00 PM
@@ -125,13 +125,13 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929956,2026-11-15,FT,Fairfield,1,-,Quinnipiac,1,-,-,-,1:00 PM
 401929883,2026-11-15,FT,Dayton,0,-,Saint Louis,2,-,-,-,1:00 PM
 401929908,2026-11-15,FT,Radford,1,-,UNC Asheville,2,-,-,-,1:00 PM
-401929970,2026-11-15,90',Southern Illinois,1,-,Drake,0,-,-,-,2:00 PM
+401929970,2026-11-15,FT,Southern Illinois,1,-,Drake,0,-,-,-,2:00 PM
 401931337,2026-11-15,FT,Alcorn State,0,-,Jackson State,1,-,-,-,9:00 AM
-401931342,2026-11-15,90',North Dakota State,0,-,Oral Roberts,1,-,-,-,2:00 PM
-401931324,2026-11-15,98',Mercer,1,-,Samford,1,-,-,-,2:00 PM
-401929982,2026-11-15,49',Southern Indiana,0,-,UT Martin,0,-,-,-,3:00 PM
-401929903,2026-11-15,53',Northern Colorado,0,-,Weber State,0,-,-,-,3:00 PM
-401931294,2026-11-15,Scheduled,Texas,0,-,South Carolina,0,-,-,-,4:30 PM
+401931342,2026-11-15,FT,North Dakota State,0,-,Oral Roberts,1,-,-,-,2:00 PM
+401931324,2026-11-15,FT-Pens,Mercer,1,-,Samford,1,-,-,-,2:00 PM
+401929982,2026-11-15,FT,Southern Indiana,1,-,UT Martin,2,-,-,-,3:00 PM
+401929903,2026-11-15,AET,Northern Colorado,0,-,Weber State,1,-,-,-,3:00 PM
+401931294,2026-11-15,46',Texas,1,-,South Carolina,2,-,-,-,4:30 PM
 401877770,2026-11-14,FT,Independiente Medellín,1,-,Águilas Doradas,0,-,-,-,3:30 PM
 401877917,2026-11-14,FT,Fortaleza CEIF,0,-,Atlético Bucaramanga,1,-,-,-,3:30 PM
 401878029,2026-11-14,FT,Once Caldas,1,-,Atlético Nacional,1,-,-,-,3:30 PM

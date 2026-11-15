@@ -380,9 +380,9 @@
       "awaySpreadOdds": -109,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 218.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotal": 217.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Boston Celtics",
       "homeMoneyline": -800,
       "homeNetRtg": 11.51,
@@ -405,12 +405,12 @@
       "statsCheck": "Rule 54: Backing Boston Celtics: covered its last two games (by 0.5 at Toronto Raptors and by 20.5 at Philadelphia 76ers), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 57: Backing Boston Celtics: beat the spread by 10.1 a game over its last five, and Dallas Mavericks had no double-digit rebounder in its last two games (top: 7 and 8) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35.",
       "statsFavors": "Boston Celtics",
       "statsLine": {
-        "homeSpread": -14.5,
-        "awaySpread": 14.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -840,
-        "awayMoneyline": 580
+        "homeSpread": -15.5,
+        "awaySpread": 15.5,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": -970,
+        "awayMoneyline": 640
       },
       "statsRules": [
         {
@@ -426,7 +426,7 @@
           "detail": "Backing Boston Celtics: beat the spread by 10.1 a game over its last five, and Dallas Mavericks had no double-digit rebounder in its last two games (top: 7 and 8) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35."
         }
       ],
-      "statsSpread": -14.5,
+      "statsSpread": -15.5,
       "storylines": [
         {
           "weight": 1,
@@ -435,7 +435,7 @@
           "name": "Fat and happy",
           "team": "Boston Celtics",
           "says": "fade",
-          "fact": "Boston Celtics has won 5 straight and is a -14.5 favorite.",
+          "fact": "Boston Celtics has won 5 straight and is a -15.5 favorite.",
           "record": "157-136",
           "pct": 53.6,
           "leans": "Dallas Mavericks",
@@ -444,7 +444,7 @@
         }
       ],
       "time": "6:00 PM ET",
-      "totalsLine": 218.5
+      "totalsLine": 217.5
     },
     {
       "altCategoryTally": "3-1",
@@ -475,8 +475,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 217.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
       "home": "Toronto Raptors",
       "homeMoneyline": 160,
       "homeNetRtg": 0.71,
@@ -497,14 +497,14 @@
         "Raptors' Scottie Barnes (groin) is a game-time decision along with 3 other questionables."
       ],
       "statsLine": {
-        "homeSpread": 5.5,
-        "awaySpread": -5.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
-        "homeMoneyline": 179,
-        "awayMoneyline": -216
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": 132,
+        "awayMoneyline": -157
       },
-      "statsSpread": 5.5,
+      "statsSpread": 3.5,
       "storylines": [
         {
           "weight": 1,
@@ -513,7 +513,7 @@
           "name": "Ghost town",
           "team": "Toronto Raptors",
           "says": "fade",
-          "fact": "Toronto Raptors' top scorer Scottie Barnes (23.5 a game) missed its last two games; Toronto Raptors is a +5.5 underdog.",
+          "fact": "Toronto Raptors' top scorer Scottie Barnes (23.5 a game) missed its last two games; Toronto Raptors is a +3.5 underdog.",
           "record": "822-742",
           "pct": 52.6,
           "leans": "New York Knicks",
@@ -532,20 +532,6 @@
           "pct": 53.1,
           "leans": "Toronto Raptors",
           "leanPct": 53.1,
-          "against": false
-        },
-        {
-          "weight": 1,
-          "live": "5-0",
-          "key": "emperor",
-          "name": "The emperor's new clothes",
-          "team": "New York Knicks",
-          "says": "fade",
-          "fact": "New York Knicks is a -5.5 favorite but has covered 4 of 12 this season.",
-          "record": "181-152",
-          "pct": 54.4,
-          "leans": "Toronto Raptors",
-          "leanPct": 54.4,
           "against": false
         }
       ],
@@ -581,8 +567,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 223.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Washington Wizards",
       "homeMoneyline": 341,
       "homeNetRtg": -5.73,
@@ -605,10 +591,10 @@
       "statsLine": {
         "homeSpread": 8.5,
         "awaySpread": -8.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -103,
-        "homeMoneyline": 262,
-        "awayMoneyline": -326
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": 276,
+        "awayMoneyline": -345
       },
       "statsSpread": 8.5,
       "storylines": [
