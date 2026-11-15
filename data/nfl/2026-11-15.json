@@ -1,0 +1,238 @@
+{
+  "date": "2026-11-15",
+  "weekday": "Sunday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-15T07:12:58Z",
+  "games": [
+    {
+      "espnId": "401873053",
+      "away": "New England Patriots",
+      "home": "Detroit Lions",
+      "time": "9:30 AM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -118.0,
+      "awaySpreadOdds": -102.0,
+      "homeMoneyline": -148.0,
+      "awayMoneyline": 124.0
+    },
+    {
+      "espnId": "401873058",
+      "away": "Kansas City Chiefs",
+      "home": "Atlanta Falcons",
+      "time": "1:00 PM ET",
+      "homeSpread": 3.0,
+      "awaySpread": -3.0,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 140.0,
+      "awayMoneyline": -166.0
+    },
+    {
+      "espnId": "401873056",
+      "away": "Houston Texans",
+      "home": "Cleveland Browns",
+      "time": "1:00 PM ET",
+      "homeSpread": 4.5,
+      "awaySpread": -4.5,
+      "homeSpreadOdds": -112.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": 185.0,
+      "awayMoneyline": -225.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "6-1",
+          "key": "heartbreak",
+          "name": "Heartbreak hangover",
+          "team": "Cleveland Browns",
+          "says": "fade",
+          "fact": "Cleveland Browns was tied after three quarters against New Orleans Saints last game and lost 22-23.",
+          "record": "202-174",
+          "pct": 53.7,
+          "leans": "Houston Texans",
+          "leanPct": 53.7,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "espnId": "401873060",
+      "away": "Minnesota Vikings",
+      "home": "Green Bay Packers",
+      "time": "1:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -120.0,
+      "awaySpreadOdds": 100.0,
+      "homeMoneyline": -148.0,
+      "awayMoneyline": 124.0
+    },
+    {
+      "espnId": "401873057",
+      "away": "Jacksonville Jaguars",
+      "home": "Tennessee Titans",
+      "time": "1:00 PM ET",
+      "homeSpread": 10.5,
+      "awaySpread": -10.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": 500.0,
+      "awayMoneyline": -700.0,
+      "nflStatsFavors": "Tennessee Titans",
+      "nflStatsRules": [
+        {
+          "rule": 1,
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing Tennessee Titans: a 10.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        }
+      ],
+      "nflStatsCheck": "Rule 1: Backing Tennessee Titans: a 10.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+    },
+    {
+      "espnId": "401873059",
+      "away": "Miami Dolphins",
+      "home": "Indianapolis Colts",
+      "time": "1:00 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -218.0,
+      "awayMoneyline": 180.0
+    },
+    {
+      "espnId": "401873055",
+      "away": "Carolina Panthers",
+      "home": "New Orleans Saints",
+      "time": "1:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": -130.0,
+      "awayMoneyline": 110.0
+    },
+    {
+      "espnId": "401873054",
+      "away": "Buffalo Bills",
+      "home": "New York Jets",
+      "time": "1:00 PM ET",
+      "homeSpread": 7.5,
+      "awaySpread": -7.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": 300.0,
+      "awayMoneyline": -380.0,
+      "nflStatsFavors": "New York Jets",
+      "nflStatsRules": [
+        {
+          "rule": 1,
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing New York Jets: a 7.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        }
+      ],
+      "nflStatsCheck": "Rule 1: Backing New York Jets: a 7.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+    },
+    {
+      "espnId": "401873062",
+      "away": "Seattle Seahawks",
+      "home": "Las Vegas Raiders",
+      "time": "4:05 PM ET",
+      "homeSpread": 6.5,
+      "awaySpread": -6.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": 245.0,
+      "awayMoneyline": -305.0,
+      "nflStatsFavors": "Seattle Seahawks",
+      "nflStatsRules": [
+        {
+          "rule": 10,
+          "name": "Bet on the ATS record catching up: back a winning team covering under 40%, fade a losing team covering 60%+",
+          "backtest": "back side 66.7% ATS (n=78), fade side 61.9% (n=147), 2017-2025; no losing season either way",
+          "detail": "Fading Las Vegas Raiders: 4-5 straight up but 6-3 against the spread (67%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 10: Fading Las Vegas Raiders: 4-5 straight up but 6-3 against the spread (67%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season.",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-4",
+          "key": "sandwich",
+          "name": "Trap game",
+          "team": "Seattle Seahawks",
+          "says": "fade",
+          "fact": "Seattle Seahawks is a -6.5 favorite against the Las Vegas Raiders, a non-division game between division games with Arizona Cardinals and San Francisco 49ers.",
+          "record": "114-104",
+          "pct": 52.3,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 52.3,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "espnId": "401873061",
+      "away": "Los Angeles Rams",
+      "home": "Arizona Cardinals",
+      "time": "4:05 PM ET",
+      "homeSpread": 9.5,
+      "awaySpread": -9.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": 390.0,
+      "awayMoneyline": -520.0,
+      "nflStatsFavors": "Arizona Cardinals",
+      "nflStatsRules": [
+        {
+          "rule": 1,
+          "name": "Back a home underdog of 7+ points (fade a road favorite of 7+)",
+          "backtest": "64.7% ATS, n=116; held-out 2024-25: 26-11",
+          "detail": "Backing Arizona Cardinals: a 9.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+        }
+      ],
+      "nflStatsCheck": "Rule 1: Backing Arizona Cardinals: a 9.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+    },
+    {
+      "espnId": "401873063",
+      "away": "San Francisco 49ers",
+      "home": "Dallas Cowboys",
+      "time": "4:25 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": 170.0,
+      "awayMoneyline": -205.0,
+      "nflStatsFavors": "San Francisco 49ers",
+      "nflStatsRules": [
+        {
+          "rule": 6,
+          "name": "Fade a team that gained 500+ yards, 300+ of them passing, last game",
+          "backtest": "60.0% ATS, n=115 (2017-2025); 2017-21 59.8%, 2022-25 60.7%; only losing season 2021 (7-8)",
+          "detail": "Fading Dallas Cowboys: gained 508 yards last game, 329 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115)."
+        }
+      ],
+      "nflStatsCheck": "Rule 6: Fading Dallas Cowboys: gained 508 yards last game, 329 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115)."
+    },
+    {
+      "espnId": "401873064",
+      "away": "Pittsburgh Steelers",
+      "home": "Cincinnati Bengals",
+      "time": "8:20 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -185.0,
+      "awayMoneyline": 154.0
+    }
+  ]
+}

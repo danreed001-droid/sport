@@ -2,7 +2,7 @@
   "date": "2026-11-14",
   "weekday": "Saturday",
   "sport": "nba",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-14T16:30:00Z",
   "auditChanges": [
     "Denver @ New Orleans: NOP PD/g -9.15 and NetRtg -9.51 (Nov 13 game included), Mathurin claim dropped, prices to DraftKings -597/+443, -12.5 -108/+12.5 -112; picks unchanged.",
@@ -17,7 +17,7 @@
       "altCategoryTally": "5-0",
       "altConfidence": "strong",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": false,
       "altPick": "Denver Nuggets",
       "altReasons": [
         "Scoring margin: favors Denver Nuggets (PD/g +3.18 blended vs -9.15; New Orleans has lost its last two by a combined 65)",
@@ -31,13 +31,13 @@
         "Matchup splits: neutral (unverified)"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": -100.0,
       "auditNote": "New Orleans stats updated for its Nov 13 game (PD/g -9.15, NetRtg -9.51), Mathurin isn't a game-time decision, prices set to DraftKings; Denver solid/strong unchanged.",
       "away": "Denver Nuggets",
       "awayMoneyline": -597,
       "awayNetRtg": 3.07,
       "awayPDpg": 3.18,
-      "awayScore": null,
+      "awayScore": 116.0,
       "awaySpread": -12.5,
       "awaySpreadOdds": -108,
       "confidence": "solid",
@@ -49,14 +49,14 @@
       "homeMoneyline": 443,
       "homeNetRtg": -9.51,
       "homePDpg": -9.15,
-      "homeScore": null,
+      "homeScore": 108.0,
       "homeSpread": 12.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 44.83,
       "pick": "Denver Nuggets",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -86,7 +86,8 @@
           "pct": 59.3,
           "leans": "Denver Nuggets",
           "leanPct": 59.3,
-          "against": false
+          "against": false,
+          "result": "miss"
         }
       ],
       "time": "7:00 PM ET",
@@ -116,7 +117,7 @@
       "awayMoneyline": -130,
       "awayNetRtg": 1.19,
       "awayPDpg": 1,
-      "awayScore": null,
+      "awayScore": 117.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -114,
       "confidence": "skip",
@@ -128,7 +129,7 @@
       "homeMoneyline": 110,
       "homeNetRtg": 0.91,
       "homePDpg": 1,
-      "homeScore": null,
+      "homeScore": 127.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -106,
       "netRtgGap": 3.45,
@@ -165,7 +166,8 @@
           "pct": 46.1,
           "leans": "Dallas Mavericks",
           "leanPct": 53.9,
-          "against": true
+          "against": true,
+          "result": "hit"
         }
       ],
       "time": "7:30 PM ET",
@@ -185,7 +187,9 @@
           "name": "Over when the home team's last game went over its total by 10+ and the road team allowed 130+ in its last game (on trial)",
           "backtest": "62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38"
         }
-      ]
+      ],
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "2-0",
@@ -211,11 +215,11 @@
       "awayMoneyline": -203,
       "awayNetRtg": 7.68,
       "awayPDpg": 7.73,
-      "awayScore": null,
+      "awayScore": 117.0,
       "awaySpread": -4.5,
       "awaySpreadOdds": -117,
       "confidence": "solid",
-      "correct": null,
+      "correct": false,
       "gameTotal": 228.5,
       "gameTotalOverOdds": -113,
       "gameTotalUnderOdds": -107,
@@ -223,14 +227,14 @@
       "homeMoneyline": 169,
       "homeNetRtg": -2.72,
       "homePDpg": -2.92,
-      "homeScore": null,
+      "homeScore": 137.0,
       "homeSpread": 4.5,
       "homeSpreadOdds": -103,
       "netRtgGap": 37.93,
       "pick": "Detroit Pistons",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -268,7 +272,13 @@
           "name": "Over when the home team's last game went over its total by 10+ and the road team allowed 130+ in its last game (on trial)",
           "backtest": "62.4% overs, 141-85 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 27-17; 2024-now 60-38"
         }
-      ]
+      ],
+      "statsCorrect": true,
+      "statsReturn": 146.0,
+      "statsCover": true,
+      "statsSpreadReturn": 89.29,
+      "totalsCorrect": true,
+      "totalsReturn": 90.91
     },
     {
       "altCategoryTally": "3-1",
@@ -294,11 +304,11 @@
       "awayMoneyline": 131,
       "awayNetRtg": -4.96,
       "awayPDpg": -5.09,
-      "awayScore": null,
+      "awayScore": 110.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 224.5,
       "gameTotalOverOdds": -106,
       "gameTotalUnderOdds": -115,
@@ -306,14 +316,14 @@
       "homeMoneyline": -155,
       "homeNetRtg": 7.97,
       "homePDpg": 8.08,
-      "homeScore": null,
+      "homeScore": 129.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 55.17,
       "pick": "Memphis Grizzlies",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 64.52,
+      "pickSpreadReturn": 92.59,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -357,7 +367,13 @@
           "name": "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
           "backtest": "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24"
         }
-      ]
+      ],
+      "statsCorrect": true,
+      "statsReturn": 52.36,
+      "statsCover": true,
+      "statsSpreadReturn": 93.46,
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "2-2",
@@ -383,7 +399,7 @@
       "awayMoneyline": 640,
       "awayNetRtg": -12.98,
       "awayPDpg": -13.36,
-      "awayScore": null,
+      "awayScore": 117.0,
       "awaySpread": 15.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
@@ -395,14 +411,14 @@
       "homeMoneyline": -970,
       "homeNetRtg": 13.36,
       "homePDpg": 13.42,
-      "homeScore": null,
+      "homeScore": 106.0,
       "homeSpread": -15.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 93.1,
       "pick": "Minnesota Timberwolves",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -472,7 +488,8 @@
           "pct": 53.4,
           "leans": "Chicago Bulls",
           "leanPct": 53.4,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -486,7 +503,8 @@
           "pct": 55.3,
           "leans": "Minnesota Timberwolves",
           "leanPct": 55.3,
-          "against": false
+          "against": false,
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -500,7 +518,8 @@
           "pct": 54.3,
           "leans": "Chicago Bulls",
           "leanPct": 54.3,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -514,11 +533,17 @@
           "pct": 45.3,
           "leans": "Minnesota Timberwolves",
           "leanPct": 54.7,
-          "against": true
+          "against": true,
+          "result": "hit"
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 237.5
+      "totalsLine": 237.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     }
-  ]
+  ],
+  "scoredAt": "2026-11-15T07:13:15.410320+00:00"
 }

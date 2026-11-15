@@ -1,0 +1,86 @@
+{
+  "date": "2026-11-15",
+  "weekday": "Sunday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-15T07:13:09Z",
+  "games": [
+    {
+      "espnId": "401918949",
+      "away": "Louisville Cardinals",
+      "home": "Memphis Tigers",
+      "time": "1:00 PM ET",
+      "homeSpread": 8.5,
+      "awaySpread": -8.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": 320,
+      "awayMoneyline": -410,
+      "total": 163.5
+    },
+    {
+      "espnId": "401926063",
+      "away": "Boise State Broncos",
+      "home": "Nebraska Cornhuskers",
+      "time": "1:00 PM ET",
+      "homeSpread": -9.5,
+      "awaySpread": 9.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -500,
+      "awayMoneyline": 380,
+      "total": 158.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401918453",
+      "away": "William & Mary Tribe",
+      "home": "Michigan Wolverines",
+      "time": "2:00 PM ET",
+      "homeSpread": -28.5,
+      "awaySpread": 28.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -20000,
+      "awayMoneyline": 3500,
+      "total": 166.5
+    },
+    {
+      "espnId": "401906866",
+      "away": "Baylor Bears",
+      "home": "Texas Longhorns",
+      "time": "3:00 PM ET",
+      "homeSpread": -5.5,
+      "awaySpread": 5.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": -225,
+      "awayMoneyline": 185,
+      "total": 158.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401920681",
+      "away": "Syracuse Orange",
+      "home": "St. John's Red Storm",
+      "time": "7:00 PM ET",
+      "homeSpread": -12.5,
+      "awaySpread": 12.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "total": 150.5
+    },
+    {
+      "espnId": "401926772",
+      "away": "Arkansas-Pine Bluff Golden Lions",
+      "home": "USC Trojans",
+      "time": "7:00 PM ET",
+      "homeSpread": -44.5,
+      "awaySpread": 44.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "total": 158.5
+    }
+  ]
+}

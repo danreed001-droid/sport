@@ -1,4 +1,5 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
+401856887,2026-11-15,11/15 - 1:00 PM EST,Ole Miss Rebels,0,-,Oklahoma Sooners,0,-,-,-,1:00 PM
 401858296,2026-11-14,Final,Duke Blue Devils,25,-,Miami Hurricanes,36,-,440,-600,12:00 PM
 401858301,2026-11-14,Final,Wake Forest Demon Deacons,49,-,SMU Mustangs,7,-,120,-142,12:00 PM
 401858522,2026-11-14,Final,Northwestern Wildcats,19,-,Ohio State Buckeyes,28,-,470,-650,12:00 PM
@@ -28,7 +29,6 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401871061,2026-11-14,Final,Middle Tennessee Blue Raiders,23,-,Liberty Flames,28,-,1100,-2100,3:30 PM
 401856861,2026-11-14,Final,Kansas Jayhawks,37,-,West Virginia Mountaineers,14,-,105,-125,3:30 PM
 401860916,2026-11-14,Final,Fresno State Bulldogs,35,-,Texas State Bobcats,37,-,340,-440,4:00 PM
-401856887,2026-11-14,11/14 - 4:15 PM EST,Ole Miss Rebels,0,-,Oklahoma Sooners,0,-,-,-,4:15 PM
 401856886,2026-11-14,Final,Auburn Tigers,41,-,Mississippi State Bulldogs,9,-,-148,124,4:15 PM
 401862828,2026-11-14,Final,Tulane Green Wave,20,-,Rice Owls,17,-,150,-180,4:30 PM
 401871099,2026-11-14,Final,Southern Miss Golden Eagles,31,-,Louisiana Tech Bulldogs,63,-,650,-1000,5:00 PM
@@ -37,24 +37,24 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401860914,2026-11-14,Final,Oregon State Beavers,41,-,Boise State Broncos,46,-,575,-850,6:00 PM
 401869928,2026-11-14,Final,App State Mountaineers,20,-,Marshall Thundering Herd,16,-,-105,-115,6:00 PM
 401856884,2026-11-14,Final,Florida Gators,21,-,Kentucky Wildcats,14,-,124,-148,6:15 PM
-401856858,2026-11-14,14:49 - 4th,Baylor Bears,0,-,BYU Cougars,21,-,-,-,7:00 PM
-401858298,2026-11-14,12:47 - 4th,Louisville Cardinals,13,-,North Carolina Tar Heels,7,-,-,-,7:00 PM
-401858524,2026-11-14,End of 3rd,Minnesota Golden Gophers,14,-,Penn State Nittany Lions,35,-,-,-,7:00 PM
-401864538,2026-11-14,15:00 - 3rd,San José State Spartans,3,-,Air Force Falcons,17,-,-,-,7:00 PM
-401871100,2026-11-14,9:34 - 4th,Troy Trojans,14,-,South Alabama Jaguars,27,-,-,-,7:00 PM
-401862826,2026-11-14,10:27 - 3rd,Florida Atlantic Owls,14,-,Tulsa Golden Hurricane,27,-,-,-,7:15 PM
-401856885,2026-11-14,Halftime,Texas Longhorns,10,-,LSU Tigers,14,-,-,-,7:30 PM
-401858519,2026-11-14,4:31 - 3rd,Purdue Boilermakers,7,-,Iowa Hawkeyes,28,-,-,-,7:30 PM
-401858299,2026-11-14,12:25 - 3rd,Stanford Cardinal,24,-,Virginia Tech Hokies,7,-,-,-,7:30 PM
-401864539,2026-11-14,9:00 - 3rd,UNLV Rebels,7,-,New Mexico Lobos,14,-,-,-,7:30 PM
-401856882,2026-11-14,End of 2nd,South Carolina Gamecocks,0,-,Arkansas Razorbacks,17,-,-,-,7:45 PM
-401862827,2026-11-14,4:01 - 1st,North Texas Mean Green,0,-,UTSA Roadrunners,7,-,-,-,9:00 PM
-401856863,2026-11-14,14:46 - 1st,Texas Tech Red Raiders,7,-,Oklahoma State Cowboys,0,-,-,-,9:30 PM
-401860915,2026-11-14,11/14 - 9:30 PM EST,Utah State Aggies,0,-,San Diego State Aztecs,0,-,-,-,9:30 PM
-401864540,2026-11-14,11/14 - 10:00 PM EST,Wyoming Cowboys,0,-,UTEP Miners,0,-,-,-,10:00 PM
-401856864,2026-11-14,11/14 - 10:30 PM EST,Utah Utes,0,-,Arizona Wildcats,0,-,-,-,10:30 PM
-401860917,2026-11-14,11/14 - 10:45 PM EST,Colorado State Rams,0,-,Washington State Cougars,0,-,-,-,10:45 PM
-401864537,2026-11-14,11/14 - 11:00 PM EST,North Dakota State Bison,0,-,Hawai'i Rainbow Warriors,0,-,-,-,11:00 PM
+401856858,2026-11-14,Final,Baylor Bears,7,-,BYU Cougars,28,-,250,-310,7:00 PM
+401858298,2026-11-14,Final,Louisville Cardinals,16,-,North Carolina Tar Heels,14,-,-180,150,7:00 PM
+401858524,2026-11-14,Final,Minnesota Golden Gophers,14,-,Penn State Nittany Lions,42,-,380,-500,7:00 PM
+401864538,2026-11-14,Final,San José State Spartans,3,-,Air Force Falcons,24,-,490,-675,7:00 PM
+401871100,2026-11-14,Final,Troy Trojans,14,-,South Alabama Jaguars,27,-,130,-155,7:00 PM
+401862826,2026-11-14,Final,Florida Atlantic Owls,21,-,Tulsa Golden Hurricane,38,-,195,-238,7:15 PM
+401856885,2026-11-14,Final,Texas Longhorns,22,-,LSU Tigers,21,-,170,-205,7:30 PM
+401858519,2026-11-14,Final,Purdue Boilermakers,7,-,Iowa Hawkeyes,28,-,800,-1350,7:30 PM
+401858299,2026-11-14,Final,Stanford Cardinal,40,-,Virginia Tech Hokies,22,-,625,-950,7:30 PM
+401864539,2026-11-14,Final,UNLV Rebels,21,-,New Mexico Lobos,17,-,700,-1100,7:30 PM
+401856882,2026-11-14,Final,South Carolina Gamecocks,6,-,Arkansas Razorbacks,34,-,-265,215,7:45 PM
+401862827,2026-11-14,Final,North Texas Mean Green,16,-,UTSA Roadrunners,35,-,-142,120,9:00 PM
+401856863,2026-11-14,Final,Texas Tech Red Raiders,52,-,Oklahoma State Cowboys,27,-,160,-192,9:30 PM
+401860915,2026-11-14,Final,Utah State Aggies,13,-,San Diego State Aztecs,30,-,-155,130,9:30 PM
+401864540,2026-11-14,Final,Wyoming Cowboys,27,-,UTEP Miners,15,-,-285,230,10:00 PM
+401856864,2026-11-14,1:57 - 4th,Utah Utes,40,-,Arizona Wildcats,39,-,-,-,10:30 PM
+401860917,2026-11-14,Final,Colorado State Rams,7,-,Washington State Cougars,73,-,235,-290,10:45 PM
+401864537,2026-11-14,2:31 - 4th,North Dakota State Bison,21,-,Hawai'i Rainbow Warriors,13,-,-,-,11:00 PM
 401858293,2026-11-13,Final,Florida State Seminoles,16,-,Pittsburgh Panthers,10,-,130,-155,7:00 PM
 401858526,2026-11-13,Final,Illinois Fighting Illini,14,-,UCLA Bruins,22,-,340,-440,9:00 PM
 401856860,2026-11-13,Final,Houston Cougars,32,-,Colorado Buffaloes,42,-,-325,260,10:15 PM

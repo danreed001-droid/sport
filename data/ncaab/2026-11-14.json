@@ -2,7 +2,7 @@
   "date": "2026-11-14",
   "weekday": "Saturday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-14T16:30:00Z",
   "auditChanges": [
     "Stonehill @ Texas Tech: spread prices corrected to DraftKings -102/-118 and blended offense ranks to 364th vs 49th (gap 86.54); Texas Tech solid unchanged.",
@@ -34,7 +34,7 @@
       "awayMoneyline": 6650,
       "awayPDpg": -3.09,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 37.0,
       "awaySpread": 39.5,
       "awaySpreadOdds": -118,
       "confidence": "solid",
@@ -46,14 +46,14 @@
       "homeMoneyline": -6667,
       "homePDpg": 13.26,
       "homeRank": 16,
-      "homeScore": null,
+      "homeScore": 88.0,
       "homeSpread": -39.5,
       "homeSpreadOdds": -102,
       "offGap": 86.54,
       "pick": "Texas Tech Red Raiders",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 98.04,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -75,7 +75,8 @@
           "says": "fade",
           "team": "Texas Tech Red Raiders",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "1:00 PM ET"
@@ -104,7 +105,7 @@
       "awayMoneyline": 195,
       "awayPDpg": 22.14,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 81.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -116,7 +117,7 @@
       "homeMoneyline": -238,
       "homePDpg": 20.81,
       "homeRank": 14,
-      "homeScore": null,
+      "homeScore": 80.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -105,
       "offGap": 11.54,
@@ -145,10 +146,12 @@
           "says": "fade",
           "team": "LSU Tigers",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "3:30 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-15T07:13:16.688924+00:00"
 }
