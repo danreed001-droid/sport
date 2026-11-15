@@ -559,9 +559,9 @@ slate said +7; the entry keeps `posted` and a `correction` note).
 
 Public results page (`site/results.html`, linked from the pick sheet): every one of
 the user's picks, sides and over/unders, graded at the line taken. `lib/results.py`
-builds `results.json` / `results.csv` in `build_site.py`. Each row has when it was
-submitted and how many minutes before the game's start (the slate's `time`).
-Every pick counts and none is labelled late (the user's call, 2026-11-15; it
+builds `results.json` / `results.csv` in `build_site.py`. The page and CSV don't
+show when a pick was made (the user's call, 2026-11-15; the JSON keeps
+`submitted`/`lead` for ordering). Every pick counts and none is labelled late (it
 used to flag and leave out picks that reached the repo after the listed start,
 but NBA tips ~10 minutes after it and the timestamp is the issue, not the bet).
 Intake only blocks final games. Corrections and alternate

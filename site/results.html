@@ -107,15 +107,6 @@ a{color:var(--accent-ink);}
     return t;
   }
   function rec(t){ return t.n ? t.w+'-'+t.l+(t.p?'-'+t.p:'') : '—'; }
-  function leadText(r){
-    if(r.lead===null) return '—';
-    if(r.lead<0) return '—';
-    var m2 = r.lead; return (m2>=60 ? Math.floor(m2/60)+'h '+(m2%60)+'m' : m2+'m')+' before';
-  }
-  function when(iso){
-    var d = new Date(iso); if(isNaN(d)) return '';
-    return d.toLocaleString('en-US',{timeZone:'America/New_York', month:'short', day:'numeric', hour:'numeric', minute:'2-digit'})+' ET';
-  }
   function chart(rows){
     var g = rows.filter(function(r){ return isNum(r.units) && (r.result==='W'||r.result==='L'||r.result==='P'); });
     g.sort(function(a,b){ return a.d<b.d?-1:a.d>b.d?1:(a.submitted||'')<(b.submitted||'')?-1:1; });
@@ -163,7 +154,7 @@ a{color:var(--accent-ink);}
     } else h += '<p style="margin:0">No graded spread picks yet.</p>';
     h += '</div>';
     var sports = Object.keys(all.reduce(function(a,r){ a[r.sport]=1; return a; }, {})).sort();
-    h += '<div class="card"><h2>Every pick</h2><p class="sub">Line shown is the line I took (an alternate line is marked, with the posted line it was moved from). Times are when the pick reached the repository. <b>vs close</b>: points better (+) or worse (−) than the closing line (an alternate is measured from its posted line). Beating the close over many picks is the best early sign of a real edge.</p>'
+    h += '<div class="card"><h2>Every pick</h2><p class="sub">Line shown is the line I took (an alternate line is marked, with the posted line it was moved from). <b>vs close</b>: points better (+) or worse (−) than the closing line (an alternate is measured from its posted line). Beating the close over many picks is the best early sign of a real edge.</p>'
       + '<div class="filters"><label>Sport<select id="fs"><option value="all">All</option>'+sports.map(function(s){ return '<option value="'+s+'"'+(F.sport===s?' selected':'')+'>'+esc(SPORT[s]||s)+'</option>'; }).join('')+'</select></label>'
       + '<label>Type<select id="fk"><option value="all">All</option><option value="side"'+(F.kind==='side'?' selected':'')+'>Spread</option><option value="total"'+(F.kind==='total'?' selected':'')+'>Over/under</option></select></label>'
       + '<label>Result<select id="fr"><option value="all">All</option><option value="W"'+(F.result==='W'?' selected':'')+'>Won</option><option value="L"'+(F.result==='L'?' selected':'')+'>Lost</option><option value="pending"'+(F.result==='pending'?' selected':'')+'>Pending</option></select></label></div>';
@@ -171,7 +162,7 @@ a{color:var(--accent-ink);}
       return (F.sport==='all'||r.sport===F.sport) && (F.kind==='all'||r.kind===F.kind)
         && (F.result==='all' || (F.result==='pending' ? r.result===null : r.result===F.result));
     }).slice().reverse();
-    h += '<div class="scroll"><table><thead><tr><th>Date</th><th>Sport</th><th>Game</th><th>Pick</th><th class="num">Odds</th><th class="num" title="Points better (+) or worse (−) than the closing line">vs close</th><th>Submitted</th><th>Timing</th><th>Result</th><th class="num">Units</th></tr></thead><tbody>'
+    h += '<div class="scroll"><table><thead><tr><th>Date</th><th>Sport</th><th>Game</th><th>Pick</th><th class="num">Odds</th><th class="num" title="Points better (+) or worse (−) than the closing line">vs close</th><th>Result</th><th class="num">Units</th></tr></thead><tbody>'
       + (shown.map(function(r){
           var chip = r.result==='W' ? '<span class="chip w">Won</span>' : r.result==='L' ? '<span class="chip l">Lost</span>' : r.result==='P' ? '<span class="chip p">Push</span>'
             : r.result==='NS' ? '<span class="chip n" title="No spread was saved with this pick">ML only</span>' : r.result==='void' ? '<span class="chip n">Void</span>' : '<span class="chip n">Pending</span>';
@@ -181,9 +172,9 @@ a{color:var(--accent-ink);}
           return '<tr><td>'+esc(r.d)+'</td><td>'+esc(SPORT[r.sport]||r.sport)+'</td><td class="gm">'+esc(r.game)+'</td><td><b>'+esc(r.pick)+'</b>'+alt+fix+posted+'</td>'
             + '<td class="num">'+(isNum(r.odds)?sgn(r.odds):'—')+'</td>'
             + '<td class="num '+(isNum(r.clv) ? (r.clv>0?'pos':r.clv<0?'neg':'') : '')+'" title="'+(isNum(r.close) ? 'Closing line '+(r.kind==='total'?r.close:sgn(r.close)) : 'No closing line on file')+'">'+(isNum(r.clv) ? (r.clv>0?'+':r.clv<0?'−':'')+Math.abs(r.clv) : '—')+'</td>'
-            + '<td>'+esc(when(r.submitted))+'</td><td>'+esc(leadText(r))+'</td><td>'+chip+'</td>'
+            + '<td>'+chip+'</td>'
             + '<td class="num '+cls(r.units)+'">'+(isNum(r.units)?units(r.units):'—')+'</td></tr>';
-        }).join('') || '<tr><td colspan="10" class="sub" style="text-align:center;padding:18px">No picks match.</td></tr>')
+        }).join('') || '<tr><td colspan="8" class="sub" style="text-align:center;padding:18px">No picks match.</td></tr>')
       + '</tbody></table></div></div>';
     var fixes = all.filter(function(r){ return r.note; });
     if(fixes.length) h += '<div class="card"><h2>Corrections</h2>'+fixes.map(function(r){ return '<p class="note"><b>*</b> '+esc(r.game)+' ('+esc(r.d)+'): '+esc(r.note)+'</p>'; }).join('')+'</div>';

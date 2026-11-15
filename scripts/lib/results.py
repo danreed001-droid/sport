@@ -166,7 +166,7 @@ def build_results(mypicks, all_docs):
 
 def results_csv(rows):
     buf = io.StringIO()
-    cols = ["date", "sport", "game", "type", "pick", "line", "odds", "submitted_utc", "minutes_before_start",
+    cols = ["date", "sport", "game", "type", "pick", "line", "odds",
             "result", "units", "moneyline", "moneyline_result", "moneyline_units", "alternate_line", "posted_line", "note",
             "closing_line", "vs_close"]
     w = csv.writer(buf)
@@ -174,7 +174,7 @@ def results_csv(rows):
     for r in rows:
         posted = r.get("posted") or {}
         w.writerow([r["d"], r["sport"], r["game"], "over/under" if r["kind"] == "total" else "spread", r["pick"],
-                    r["line"], r["odds"], r["submitted"], r["lead"], r["result"] or "pending", r["units"], r["ml"],
+                    r["line"], r["odds"], r["result"] or "pending", r["units"], r["ml"],
                     r["mlResult"], r["mlUnits"], "yes" if r["alt"] else "",
                     posted.get("spread", posted.get("line", "")), r["note"] or "", r.get("close", ""), r.get("clv", "")])
     return buf.getvalue()
