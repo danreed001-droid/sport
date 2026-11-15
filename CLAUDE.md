@@ -407,7 +407,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   p=0.01, halves 55%/60%); the rest of it was 180-167. Rest does nothing for totals (16 cells, none at
   p<0.05; a 2+ day gap either way leans over 53.8%). The same rest, letdown and
   big-underdog tests on NFL, CFB, NCAAB, MLB and soccer were at chance
-  (scratchpad TESTS3.md per sport): these are NBA-only effects. Moneyline entries carry `implied` and `roi`, and `unit` is the
+  (scratchpad TESTS3.md per sport): these are NBA-only effects. "Gutted home underdog"
+  (2026-11-15, from Mavericks @ Cavaliers): a home underdog missing 3+ of its
+  top 5 scorers (season points a game, 5+ games; players out 30+ days not
+  counted; `top_scorers`) -- the story backs it, history fades it: 100-152
+  (fade 60.3%, p=0.001, every counted season, unseen 48-24; road 50%,
+  4+ out 49.5%, "home underdog" chosen after looking). Live, "out" is ESPN's
+  injury report Out (checked until tip-off); on finished games, not in the box
+  score. `nba_storylines.py --only=KEY DATE...` adds just that storyline to
+  finished games, leaving their other entries as frozen; backfilled for
+  2026-27: 2 games (Hornets 11-09, Cavaliers 11-14), both covered. Moneyline entries carry `implied` and `roi`, and `unit` is the
   favored bet ("to win" / "not to win"). football-data.co.uk's robots.txt
   bars ClaudeBot: don't fetch it. MLB: `scripts/mlb_storylines.py`
   (2015-2025, 2020 left out; Retrosheet event files for game context, closing

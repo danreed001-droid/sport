@@ -203,6 +203,22 @@
           "against": false,
           "backfill": true,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "gutted",
+          "name": "Gutted home underdog",
+          "team": "Charlotte Hornets",
+          "says": "back",
+          "fact": "Charlotte Hornets is a +8.5 home underdog without 3 of its top 5 scorers: Brandon Miller (20.6), Dennis Schroder (10.2), Moussa Diabate (8.9).",
+          "record": "100-152",
+          "pct": 39.7,
+          "leans": "Cleveland Cavaliers",
+          "leanPct": 60.3,
+          "against": true,
+          "backfill": true,
+          "result": "hit"
         }
       ]
     },

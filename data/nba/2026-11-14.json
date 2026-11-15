@@ -168,6 +168,22 @@
           "leanPct": 53.9,
           "against": true,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "gutted",
+          "name": "Gutted home underdog",
+          "team": "Cleveland Cavaliers",
+          "says": "back",
+          "fact": "Cleveland Cavaliers is a +8.5 home underdog without 4 of its top 5 scorers: Donovan Mitchell (23.0), James Harden (16.9), Evan Mobley (16.9), Jarrett Allen (12.5).",
+          "record": "100-152",
+          "pct": 39.7,
+          "leans": "Dallas Mavericks",
+          "leanPct": 60.3,
+          "against": true,
+          "backfill": true,
+          "result": "hit"
         }
       ],
       "time": "7:30 PM ET",

@@ -90,6 +90,16 @@ STORIES = {
                 "a 5+ favorite vs a weaker team right after a big game: a national-TV win over a .550+ team "
                 "(tonight not national), a win over a classic rival, a 15+ point win over a .600+ team, or its "
                 "3rd game in 4 nights vs a rested team"),
+    # 2026-11-15, from Mavericks @ Cavaliers (Cleveland sat five of its rotation
+    # on a back-to-back and won by 10 as an 8.5-point home underdog): the story
+    # says back the gutted team (nothing to lose); history says fade it. Top 5
+    # scorers by season points a game (5+ games), "out" = didn't play, players
+    # gone 30+ days not counted. 3+ of 5 out: 46.5% ATS overall, at home 42.9%,
+    # home underdog 39.7% (100-152, p=0.001), every counted season the fade's
+    # way, unseen 2018-19 + 2021-22 24-48; on the road 50%. "Home underdog" was
+    # chosen after looking and 4+ out isn't stronger (49.5%, 210 games).
+    "gutted": ("Gutted home underdog", "back", (100, 152),
+               "home underdog missing 3+ of its top 5 scorers (season points a game, 5+ games)"),
 }
 
 
@@ -218,7 +228,28 @@ def record_before(games, before):
     return sum(g["won"] for g in gs) / len(gs) if gs else None
 
 
-def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp_prior, my_spread, tip, by_team=None):
+def top_scorers(points, games, date_str, n=5):
+    """[(ppg, player_id, name)] for the team's top n scorers by points a game
+    (5+ games), leaving out players who haven't played in 30+ days (long-term
+    injuries and trades, as backtested). None if a box score is missing."""
+    D = date.fromisoformat(date_str)
+    tot = {}
+    for g in games:
+        box = points.get(g["event_id"], g["team"])
+        if box is None:
+            return None
+        for pid, (pts, name) in box.items():
+            t = tot.setdefault(pid, [0, 0, name, g["date"]])
+            t[0] += 1
+            t[1] += pts
+            t[3] = max(t[3], g["date"])
+    ranked = sorted(((v[1] / v[0], pid, v[2]) for pid, v in tot.items()
+                     if v[0] >= 5 and (D - date.fromisoformat(v[3])).days < 30), reverse=True)
+    return ranked[:n] if len(ranked) >= n else None
+
+
+def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp_prior, my_spread, tip, by_team=None,
+              out_ids=None):
     """Storylines about `team` tonight."""
     out = []
     D = date.fromisoformat(date_str)
@@ -350,10 +381,17 @@ def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp
     if is_home and last["opp_score"] >= 125 and opp_prior[-1]["opp_score"] >= 125:
         out.append(entry("leaky", team, opp, f"{team} allowed {last['opp_score']:g} last game and {opp} allowed "
                                              f"{opp_prior[-1]['opp_score']:g}."))
+    if is_home and sp is not None and sp > 0 and out_ids is not None:
+        top = top_scorers(points, [dict(g, team=team) for g in prior], date_str)
+        gone = [(ppg, name) for ppg, pid, name in (top or []) if pid in out_ids]
+        if len(gone) >= 3:
+            out.append(entry("gutted", team, opp, f"{team} is a {sp:+g} home underdog without {len(gone)} of its top 5 "
+                                                  f"scorers: " + ", ".join(f"{nm} ({ppg:.1f})" for ppg, nm in gone) + "."))
     return out
 
 
-def storylines_for(session, points, by_team, q_cache, date_str, home, away, home_spread, tip):
+def storylines_for(session, points, by_team, q_cache, date_str, home, away, home_spread, tip, out_fn=None):
+    """out_fn(team) -> set of player ids out tonight (None if unknown)."""
     s0 = ns.season_start(date_str)
 
     def resolve(name):
@@ -368,7 +406,8 @@ def storylines_for(session, points, by_team, q_cache, date_str, home, away, home
     ap = [g for g in by_team[a] if s0 <= g["date"] < date_str]
     if len(hp) < 8 or len(ap) < 8:  # as backtested: both teams 8+ games
         return []
-    out = team_side(session, points, q_cache, date_str, h, a, True, hp, ap, home_spread, tip, by_team)
+    out = team_side(session, points, q_cache, date_str, h, a, True, hp, ap, home_spread, tip, by_team,
+                    out_fn(home) if out_fn else None)
     out += team_side(session, points, q_cache, date_str, a, h, False, ap, hp,
                      None if home_spread is None else -home_spread, tip, by_team)
     # Name teams as the slate does.
@@ -380,10 +419,40 @@ def storylines_for(session, points, by_team, q_cache, date_str, home, away, home
     return out
 
 
+class _NotIn:
+    """Player ids that aren't in a finished game's box score."""
+
+    def __init__(self, played):
+        self.played = played
+
+    def __contains__(self, pid):
+        return pid not in self.played
+
+
+def out_fn(tonight, g, final, points):
+    """team -> player ids out tonight: ESPN's injury report ("Out") before
+    tip-off, or who isn't in the box score once the game is final (as
+    backtested). None when unknown."""
+    t = next((v for (a, h), v in tonight.items() if _same_team(a or "", g["away"]) and _same_team(h or "", g["home"])), None)
+    if t is None:
+        return None
+
+    def f(team):
+        if final:
+            boxes = points._entry(t["id"]).get("pts", {})
+            box = next((v for k, v in boxes.items() if _same_team(k, team)), None)
+            return _NotIn(set(box)) if box else None
+        return t["out"](team)
+    return f
+
+
 def main():
     # --backfill: also finished games (this season's games before storylines
     # went live, from the games before each one); run storyline_records.py after.
     backfill = "--backfill" in sys.argv
+    # --only KEY[,KEY]: on finished games, add just these storylines and leave
+    # the rest as frozen before tip-off (for a storyline added later).
+    only = next((a.split("=", 1)[1].split(",") for a in sys.argv[1:] if a.startswith("--only=")), None)
     dates = [a for a in sys.argv[1:] if not a.startswith("--")] or [today_et_str()]
     session = espn.make_session()
     points = ns.BoxCache(session)
@@ -405,15 +474,25 @@ def main():
                 print(f"{date_str}: no NBA slate.")
                 continue
             regular_today = ns.regular_season_games(session, date_str)
+            tonight = ns.tonight_games(session, date_str)
             changed = 0
             for g in doc.get("games", []):
-                if not g.get("away") or not g.get("home") or (isinstance(g.get("awayScore"), (int, float)) and not backfill):
+                final = isinstance(g.get("awayScore"), (int, float))
+                if not g.get("away") or not g.get("home") or (final and not backfill and not only):
                     continue  # started or final: keep what was there before tip-off
+                if only and not final:
+                    continue
                 if not regular_today.get((g["away"], g["home"]), True):
                     new = []
                 else:
                     new = storylines_for(session, points, by_team, q_cache, date_str, g["home"], g["away"],
-                                         g.get("statsSpread", g.get("homeSpread")), tip_hour(g.get("time")))
+                                         g.get("statsSpread", g.get("homeSpread")), tip_hour(g.get("time")),
+                                         out_fn(tonight, g, final, points))
+                if only:
+                    old = g.get("storylines") or []
+                    have = {(e["key"], e["team"]) for e in old}
+                    add = [dict(e, backfill=True) for e in new if e["key"] in only and (e["key"], e["team"]) not in have]
+                    new = old + add
                 if new != (g.get("storylines") or []):
                     if new:
                         g["storylines"] = new
