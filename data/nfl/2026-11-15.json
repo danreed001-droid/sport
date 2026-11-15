@@ -16,7 +16,10 @@
       "homeSpreadOdds": -118.0,
       "awaySpreadOdds": -102.0,
       "homeMoneyline": -148.0,
-      "awayMoneyline": 124.0
+      "awayMoneyline": 124.0,
+      "gameTotal": 49.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401873058",
@@ -28,7 +31,10 @@
       "homeSpreadOdds": -110.0,
       "awaySpreadOdds": -110.0,
       "homeMoneyline": 140.0,
-      "awayMoneyline": -166.0
+      "awayMoneyline": -166.0,
+      "gameTotal": 47.5,
+      "gameTotalOverOdds": -102,
+      "gameTotalUnderOdds": -118
     },
     {
       "espnId": "401873056",
@@ -57,7 +63,10 @@
           "against": false,
           "unit": "ATS"
         }
-      ]
+      ],
+      "gameTotal": 40.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401873060",
@@ -69,7 +78,10 @@
       "homeSpreadOdds": -120.0,
       "awaySpreadOdds": 100.0,
       "homeMoneyline": -148.0,
-      "awayMoneyline": 124.0
+      "awayMoneyline": 124.0,
+      "gameTotal": 42.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401873057",
@@ -91,7 +103,10 @@
           "detail": "Backing Tennessee Titans: a 10.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
         }
       ],
-      "nflStatsCheck": "Rule 1: Backing Tennessee Titans: a 10.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+      "nflStatsCheck": "Rule 1: Backing Tennessee Titans: a 10.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+      "gameTotal": 46.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401873059",
@@ -103,7 +118,10 @@
       "homeSpreadOdds": -108.0,
       "awaySpreadOdds": -112.0,
       "homeMoneyline": -218.0,
-      "awayMoneyline": 180.0
+      "awayMoneyline": 180.0,
+      "gameTotal": 37.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401873055",
@@ -115,7 +133,10 @@
       "homeSpreadOdds": -115.0,
       "awaySpreadOdds": -105.0,
       "homeMoneyline": -130.0,
-      "awayMoneyline": 110.0
+      "awayMoneyline": 110.0,
+      "gameTotal": 48.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401873054",
@@ -137,7 +158,10 @@
           "detail": "Backing New York Jets: a 7.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
         }
       ],
-      "nflStatsCheck": "Rule 1: Backing New York Jets: a 7.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+      "nflStatsCheck": "Rule 1: Backing New York Jets: a 7.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+      "gameTotal": 51.5,
+      "gameTotalOverOdds": 100,
+      "gameTotalUnderOdds": -120
     },
     {
       "espnId": "401873062",
@@ -176,7 +200,10 @@
           "against": false,
           "unit": "ATS"
         }
-      ]
+      ],
+      "gameTotal": 40.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401873061",
@@ -198,7 +225,10 @@
           "detail": "Backing Arizona Cardinals: a 9.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
         }
       ],
-      "nflStatsCheck": "Rule 1: Backing Arizona Cardinals: a 9.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons."
+      "nflStatsCheck": "Rule 1: Backing Arizona Cardinals: a 9.5-point home underdog (7+) -- home dogs this big covered 64.7% ATS from 2020-2025 (n=116), 70.3% on the held-out 2024-25 seasons.",
+      "gameTotal": 38.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401873063",
@@ -220,7 +250,10 @@
           "detail": "Fading Dallas Cowboys: gained 508 yards last game, 329 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115)."
         }
       ],
-      "nflStatsCheck": "Rule 6: Fading Dallas Cowboys: gained 508 yards last game, 329 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115)."
+      "nflStatsCheck": "Rule 6: Fading Dallas Cowboys: gained 508 yards last game, 329 of them passing (500+ with 300+ through the air) -- teams in this spot were faded 60.0% of the time ATS next game, 2017-2025 (n=115).",
+      "gameTotal": 55.5,
+      "gameTotalOverOdds": -118,
+      "gameTotalUnderOdds": -102
     },
     {
       "espnId": "401873064",
@@ -232,7 +265,10 @@
       "homeSpreadOdds": -108.0,
       "awaySpreadOdds": -112.0,
       "homeMoneyline": -185.0,
-      "awayMoneyline": 154.0
+      "awayMoneyline": 154.0,
+      "gameTotal": 49.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     }
   ]
 }

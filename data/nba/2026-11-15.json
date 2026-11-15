@@ -21,15 +21,15 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
+        "homeSpreadOdds": -102,
+        "awaySpreadOdds": -118,
         "homeMoneyline": -288,
         "awayMoneyline": 235
       },
       "totalsLine": 224.5,
       "gameTotal": 224.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -106
     },
     {
       "espnId": "401909986",
@@ -46,12 +46,12 @@
       "statsLine": {
         "homeSpread": 2.5,
         "awaySpread": -2.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 124,
-        "awayMoneyline": -148
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 131,
+        "awayMoneyline": -156
       },
-      "totalsLine": 226.5,
+      "totalsLine": 227.5,
       "storylines": [
         {
           "weight": 1,
@@ -68,9 +68,9 @@
           "against": false
         }
       ],
-      "gameTotal": 226.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909987",
@@ -87,8 +87,8 @@
       "statsLine": {
         "homeSpread": -1.5,
         "awaySpread": 1.5,
-        "homeSpreadOdds": -112,
-        "awaySpreadOdds": -108,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
         "homeMoneyline": -118,
         "awayMoneyline": 100
       },
@@ -96,16 +96,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "2-5",
+          "live": "2-6",
           "key": "quiet_giant",
           "name": "The quiet giant vs the hype machine",
           "team": "LA Clippers",
           "says": "back",
           "fact": "LA Clippers' point differential (-5.3 a game) is better than its 3-8 record, and Charlotte Hornets' record is better than its -11.0.",
-          "record": "105-85",
-          "pct": 55.3,
+          "record": "105-86",
+          "pct": 55.0,
           "leans": "LA Clippers",
-          "leanPct": 55.3,
+          "leanPct": 55.0,
           "against": false
         },
         {
@@ -124,8 +124,8 @@
         }
       ],
       "gameTotal": 215.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -106
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909988",
@@ -156,20 +156,20 @@
         }
       ],
       "statsCheck": "Rule 57: Backing San Antonio Spurs: beat the spread by 9.1 a game over its last five, and Utah Jazz had no double-digit rebounder in its last two games (top: 8 and 9) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35.",
-      "totalsLine": 223.5,
+      "totalsLine": 224.5,
       "storylines": [
         {
           "weight": 1,
-          "live": "4-3",
+          "live": "5-3",
           "key": "fat_happy",
           "name": "Fat and happy",
           "team": "San Antonio Spurs",
           "says": "fade",
           "fact": "San Antonio Spurs has won 11 straight and is a -17.5 favorite.",
-          "record": "156-136",
-          "pct": 53.4,
+          "record": "157-136",
+          "pct": 53.6,
           "leans": "Utah Jazz",
-          "leanPct": 53.4,
+          "leanPct": 53.6,
           "against": false
         },
         {
@@ -187,9 +187,9 @@
           "against": false
         }
       ],
-      "gameTotal": 223.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
+      "gameTotal": 224.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909989",
@@ -218,29 +218,35 @@
           "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
           "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
           "detail": "Backing Boston Celtics: covered its last two games (by 0.5 at Toronto Raptors and by 20.5 at Philadelphia 76ers), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        },
+        {
+          "rule": 57,
+          "name": "Back a team beating the spread by 6+ a game over its last five vs. an opponent with no double-digit rebounder in its last two games, with at least a day off (on trial)",
+          "backtest": "64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35",
+          "detail": "Backing Boston Celtics: beat the spread by 10.1 a game over its last five, and Dallas Mavericks had no double-digit rebounder in its last two games (top: 7 and 8) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35."
         }
       ],
-      "statsCheck": "Rule 54: Backing Boston Celtics: covered its last two games (by 0.5 at Toronto Raptors and by 20.5 at Philadelphia 76ers), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 217.5,
+      "statsCheck": "Rule 54: Backing Boston Celtics: covered its last two games (by 0.5 at Toronto Raptors and by 20.5 at Philadelphia 76ers), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 57: Backing Boston Celtics: beat the spread by 10.1 a game over its last five, and Dallas Mavericks had no double-digit rebounder in its last two games (top: 7 and 8) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35.",
+      "totalsLine": 216.5,
       "storylines": [
         {
           "weight": 1,
-          "live": "4-3",
+          "live": "5-3",
           "key": "fat_happy",
           "name": "Fat and happy",
           "team": "Boston Celtics",
           "says": "fade",
           "fact": "Boston Celtics has won 5 straight and is a -13.5 favorite.",
-          "record": "156-136",
-          "pct": 53.4,
+          "record": "157-136",
+          "pct": 53.6,
           "leans": "Dallas Mavericks",
-          "leanPct": 53.4,
+          "leanPct": 53.6,
           "against": false
         }
       ],
-      "gameTotal": 217.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 216.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401909990",
@@ -259,8 +265,8 @@
         "awaySpread": -4.5,
         "homeSpreadOdds": -115,
         "awaySpreadOdds": -106,
-        "homeMoneyline": 160,
-        "awayMoneyline": -192
+        "homeMoneyline": 155,
+        "awayMoneyline": -185
       },
       "totalsLine": 217.5,
       "storylines": [
@@ -368,7 +374,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Milwaukee Bucks: covered its last two games (by 1.5 at Orlando Magic and by 3.5 vs Los Angeles Lakers), now at home in game 14 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 234.5,
+      "totalsLine": 235.5,
       "storylines": [
         {
           "weight": 1,
@@ -385,9 +391,9 @@
           "against": false
         }
       ],
-      "gameTotal": 234.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 235.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909993",
