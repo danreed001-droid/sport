@@ -566,7 +566,13 @@ picks submitted after the start (2026-09-26 Texas @ Tennessee, 2026-10-10
 Stanford @ Notre Dame) are flagged and left out of the page's numbers unless the
 box is ticked, because a pick logged during a game can't be verified. Intake
 doesn't reject them (it only blocks final games). Corrections and alternate
-lines are labelled. The repo and Pages site are public, so the picks files and
+lines are labelled. "vs close" (2026-11-15, `close`/`clv` in `lib/results.py`):
+points better or worse than the closing line (lines archives; NBA spreads
+the slate's statsSpread; an alternate measured from its posted line; picks
+made after the start left out), with a "Beat the closing line" tile. The pick
+sheet warns under an alternate line priced -150 or worse with its break-even
+win % (`altwarn`): the user's bought-point picks went 4-4, -$186, vs +$4 at
+the posted lines. The repo and Pages site are public, so the picks files and
 their commit timestamps are the verification trail. It's the user's record, not
 advice, and has a sample-size note (95% range).
 
