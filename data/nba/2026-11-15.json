@@ -21,15 +21,15 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -102,
+        "homeSpreadOdds": -103,
         "awaySpreadOdds": -118,
-        "homeMoneyline": -288,
-        "awayMoneyline": 235
+        "homeMoneyline": -270,
+        "awayMoneyline": 221
       },
-      "totalsLine": 224.5,
-      "gameTotal": 224.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -106
+      "totalsLine": 225.5,
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909986",
@@ -46,12 +46,12 @@
       "statsLine": {
         "homeSpread": 2.5,
         "awaySpread": -2.5,
-        "homeSpreadOdds": -106,
+        "homeSpreadOdds": -105,
         "awaySpreadOdds": -115,
-        "homeMoneyline": 131,
-        "awayMoneyline": -156
+        "homeMoneyline": 130,
+        "awayMoneyline": -154
       },
-      "totalsLine": 227.5,
+      "totalsLine": 228.5,
       "storylines": [
         {
           "weight": 1,
@@ -68,9 +68,9 @@
           "against": false
         }
       ],
-      "gameTotal": 227.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401909987",
@@ -83,16 +83,16 @@
       "awaySpreadOdds": -108.0,
       "homeMoneyline": -118.0,
       "awayMoneyline": 100.0,
-      "statsSpread": -1.5,
+      "statsSpread": 1.5,
       "statsLine": {
-        "homeSpread": -1.5,
-        "awaySpread": 1.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
-        "homeMoneyline": -118,
-        "awayMoneyline": 100
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -103,
+        "homeMoneyline": -105,
+        "awayMoneyline": -113
       },
-      "totalsLine": 215.5,
+      "totalsLine": 214.5,
       "storylines": [
         {
           "weight": 1,
@@ -107,25 +107,11 @@
           "leans": "LA Clippers",
           "leanPct": 55.0,
           "against": false
-        },
-        {
-          "weight": 1,
-          "live": "2-2",
-          "key": "ghost_town",
-          "name": "Ghost town",
-          "team": "Charlotte Hornets",
-          "says": "fade",
-          "fact": "Charlotte Hornets' top scorer Brandon Miller (20.6 a game) missed its last two games; Charlotte Hornets is a +1.5 underdog.",
-          "record": "822-742",
-          "pct": 52.6,
-          "leans": "LA Clippers",
-          "leanPct": 52.6,
-          "against": false
         }
       ],
-      "gameTotal": 215.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113
+      "gameTotal": 214.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909988",
@@ -138,11 +124,12 @@
       "awaySpreadOdds": -105.0,
       "homeMoneyline": 850.0,
       "awayMoneyline": -1460.0,
-      "statsSpread": 17.5,
+      "statsSpread": 16.5,
       "statsLine": {
-        "homeSpread": 17.5,
-        "awaySpread": -17.5,
-        "awaySpreadOdds": -113,
+        "homeSpread": 16.5,
+        "awaySpread": -16.5,
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
         "homeMoneyline": 850,
         "awayMoneyline": -1460
       },
@@ -156,7 +143,7 @@
         }
       ],
       "statsCheck": "Rule 57: Backing San Antonio Spurs: beat the spread by 9.1 a game over its last five, and Utah Jazz had no double-digit rebounder in its last two games (top: 8 and 9) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35.",
-      "totalsLine": 224.5,
+      "totalsLine": 226.5,
       "storylines": [
         {
           "weight": 1,
@@ -165,7 +152,7 @@
           "name": "Fat and happy",
           "team": "San Antonio Spurs",
           "says": "fade",
-          "fact": "San Antonio Spurs has won 11 straight and is a -17.5 favorite.",
+          "fact": "San Antonio Spurs has won 11 straight and is a -16.5 favorite.",
           "record": "157-136",
           "pct": 53.6,
           "leans": "Utah Jazz",
@@ -179,7 +166,7 @@
           "name": "Spotlight letdown",
           "team": "San Antonio Spurs",
           "says": "fade",
-          "fact": "San Antonio Spurs beat Golden State Warriors 123-85 on national TV and is a -17.5 favorite tonight off national TV.",
+          "fact": "San Antonio Spurs beat Golden State Warriors 123-85 on national TV and is a -16.5 favorite tonight off national TV.",
           "record": "148-114",
           "pct": 56.5,
           "leans": "Utah Jazz",
@@ -187,9 +174,9 @@
           "against": false
         }
       ],
-      "gameTotal": 224.5,
+      "gameTotal": 226.5,
       "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -112
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909989",
@@ -206,10 +193,10 @@
       "statsLine": {
         "homeSpread": -13.5,
         "awaySpread": 13.5,
-        "homeSpreadOdds": -111,
-        "awaySpreadOdds": -109,
-        "homeMoneyline": -800,
-        "awayMoneyline": 558
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -750,
+        "awayMoneyline": 530
       },
       "statsFavors": "Boston Celtics",
       "statsRules": [
@@ -227,7 +214,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Boston Celtics: covered its last two games (by 0.5 at Toronto Raptors and by 20.5 at Philadelphia 76ers), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 57: Backing Boston Celtics: beat the spread by 10.1 a game over its last five, and Dallas Mavericks had no double-digit rebounder in its last two games (top: 7 and 8) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35.",
-      "totalsLine": 216.5,
+      "totalsLine": 219.5,
       "storylines": [
         {
           "weight": 1,
@@ -244,9 +231,9 @@
           "against": false
         }
       ],
-      "gameTotal": 216.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107
+      "gameTotal": 219.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401909990",
@@ -265,8 +252,8 @@
         "awaySpread": -4.5,
         "homeSpreadOdds": -115,
         "awaySpreadOdds": -106,
-        "homeMoneyline": 155,
-        "awayMoneyline": -185
+        "homeMoneyline": 160,
+        "awayMoneyline": -191
       },
       "totalsLine": 217.5,
       "storylines": [
@@ -300,8 +287,8 @@
         }
       ],
       "gameTotal": 217.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -109,
+      "gameTotalUnderOdds": -111
     },
     {
       "espnId": "401909991",
@@ -314,16 +301,16 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": 341.0,
       "awayMoneyline": -438.0,
-      "statsSpread": 9.5,
+      "statsSpread": 8.5,
       "statsLine": {
-        "homeSpread": 9.5,
-        "awaySpread": -9.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 329,
-        "awayMoneyline": -420
+        "homeSpread": 8.5,
+        "awaySpread": -8.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 286,
+        "awayMoneyline": -359
       },
-      "totalsLine": 222.5,
+      "totalsLine": 223.5,
       "storylines": [
         {
           "weight": 1,
@@ -340,9 +327,9 @@
           "against": false
         }
       ],
-      "gameTotal": 222.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909992",
@@ -359,8 +346,8 @@
       "statsLine": {
         "homeSpread": 7.5,
         "awaySpread": -7.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
         "homeMoneyline": 251,
         "awayMoneyline": -310
       },
@@ -374,7 +361,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Milwaukee Bucks: covered its last two games (by 1.5 at Orlando Magic and by 3.5 vs Los Angeles Lakers), now at home in game 14 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 235.5,
+      "totalsLine": 234.5,
       "storylines": [
         {
           "weight": 1,
@@ -391,9 +378,9 @@
           "against": false
         }
       ],
-      "gameTotal": 235.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113
+      "gameTotal": 234.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401909993",
@@ -410,10 +397,10 @@
       "statsLine": {
         "homeSpread": 10.5,
         "awaySpread": -10.5,
-        "homeSpreadOdds": -111,
-        "awaySpreadOdds": -108,
-        "homeMoneyline": 360,
-        "awayMoneyline": -467
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 361,
+        "awayMoneyline": -468
       },
       "statsFavors": "Oklahoma City Thunder",
       "statsRules": [
@@ -443,8 +430,8 @@
         }
       ],
       "gameTotal": 222.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     }
   ]
 }
