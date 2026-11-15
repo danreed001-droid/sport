@@ -1396,7 +1396,7 @@ footer b{color:var(--ink);}
       return rows.length ? '<span><i class="'+(dimColor(color)?'dk':'')+'" style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+rec(rows)+(OU?' over-under, ':' ATS, ')+fmtSigned(cs[cs.length-1])+' in '+rows.length+'</span>'
         : '<span>'+teamBadge(team,true)+' no graded games yet</span>';
     };
-    return '<div class="atstrend"><div class="at-head"><b>'+(OU?'Totals trend':'ATS trend')+'</b><span>'+(OU?'running points over (+) or under (\u2212) the closing total':'running cover margin')+', last '+N+' games'+((sport==='cfb'||sport==='ncaab')?' on our slates':'')+' \u00b7 hover a point</span></div>'
+    return '<div class="atstrend"><div class="at-head"><b>'+(OU?'Totals trend':'ATS trend')+'</b><span>'+(OU?'running points over (+) or under (\u2212) the closing total':'running cover margin')+', last '+N+' games'+''+' \u00b7 hover a point</span></div>'
       + '<div class="at-legend">'+leg(A, ca, gc[0], g.away)+leg(H, ch, gc[1], g.home)+'</div>'+svg+'</div>';
   }
   function satBadge(cls, label, g){

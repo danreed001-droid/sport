@@ -79,7 +79,7 @@ def storyline_strength(all_docs):
 # ATS trend on the game cards: each slate team's last N graded games (football
 # 7, basketball 14) from the sport's slate files -- the cover margin (margin +
 # the team's spread; NBA at statsSpread when it has one) per game. College
-# slates don't hold every game a team plays, so those trends are "on our slates".
+# slates don't hold every game a team plays, so those trends also read the lines file.
 TREND_GAMES = {"nfl": 7, "cfb": 7, "nba": 14, "ncaab": 14}
 
 
@@ -121,6 +121,74 @@ def closing_total(sport, date_str, g):
     return None
 
 
+_LINE_ROWS = {}
+
+
+def _line_rows(sport):
+    """Every finished game in data/raw/<sport>_lines.csv (not only the ones on our
+    slates): (date, away, home, away_score, home_score, home_spread, total)."""
+    if sport not in _LINE_ROWS:
+        rows = []
+        path = os.path.join(store.REPO_ROOT, "data", "raw", f"{sport}_lines.csv")
+        if os.path.exists(path):
+            import csv as _csv
+            with open(path, encoding="utf-8") as f:
+                for r in _csv.DictReader(f):
+                    def num(k):
+                        try:
+                            return float(r.get(k) or "")
+                        except ValueError:
+                            return None
+                    a, h = num("away_score"), num("home_score")
+                    if a is None or h is None:
+                        continue
+                    rows.append((r["date"], r["away"], r["home"], a, h, num("spread_close"), num("total_close")))
+        _LINE_ROWS[sport] = rows
+    return _LINE_ROWS[sport]
+
+
+def _full_name(sport, name, slate_date):
+    """A slate's short school name ("Duke") -> the lines file's full name ("Duke Blue
+    Devils"), or None when it's missing or ambiguous (Miami / Miami (OH))."""
+    n = _team_key(name)
+    names = {}
+    for d, a, h, *_ in _line_rows(sport):
+        for t in (a, h):
+            names.setdefault(_team_key(t), t)
+    if n in names:
+        return names[n]
+    cands = {k: v for k, v in names.items() if k.startswith(n + " ")}
+    return next(iter(cands.values())) if len(cands) == 1 else None
+
+
+def _fill_from_lines(sport, wanted, hist, slate_date, totals):
+    """College slates don't hold every game a team plays, so a team whose opponent
+    wasn't on earlier slates had no trend line. Add its games from the lines file."""
+    if sport not in ("cfb", "ncaab"):
+        return
+    rows = _line_rows(sport)
+    for k, name in wanted.items():
+        full = _full_name(sport, name, slate_date)
+        if not full:
+            continue
+        have = {e[0] for e in hist[k]}
+        for d, a, h, asc, hsc, hs, tot in rows:
+            if (slate_date and d >= slate_date) or d in have or full not in (a, h):
+                continue
+            home = full == h
+            opp = a if home else h
+            if totals:
+                if tot is None:
+                    continue
+                hist[k].append([d, opp, round(asc + hsc - tot, 1), tot, int(home)])
+            else:
+                if hs is None:
+                    continue
+                my_sp = hs if home else -hs
+                m = (hsc - asc) if home else (asc - hsc)
+                hist[k].append([d, opp, round(m + my_sp, 1), my_sp, int(home)])
+
+
 def ats_trends(all_docs, slate_date, slate_sports, totals=False):
     """totals=False: cover margin per game; True: points over (+) or under (-)
     the closing total."""
@@ -157,6 +225,7 @@ def ats_trends(all_docs, slate_date, slate_sports, totals=False):
                     my_sp = hs if side == "home" else -hs
                     m = margin if side == "home" else -margin
                     hist[k].append([date_str, g.get("away" if side == "home" else "home"), round(m + my_sp, 1), my_sp, int(side == "home")])
+        _fill_from_lines(sport, wanted, hist, slate_date, totals)
         out[sport] = {wanted[k]: sorted(v)[-n:] for k, v in hist.items() if v}
     return out
 
