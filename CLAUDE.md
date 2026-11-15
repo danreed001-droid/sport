@@ -530,8 +530,7 @@ Dashboard numbers all come from one calculation: `belongs` / `outcome` / `summar
 in You; `TOTALS_OF`) in the tiles, sparklines, running-profit and win-rate lines,
 by-sport bars and every table, so they can't disagree (2026-11-08: tiles had them,
 charts didn't). The agreement table is side picks only. Plays you made after the
-game started carry `lt`; only the public Results page uses it (it leaves them out
-unless its box is ticked). The pick page's You tile doesn't mention them.
+game started carry `lt`; nothing on the pages uses it now.
 
 Over/under picks: each game's pick row also has Over / Under buttons at the
 game's total. `scripts/slate_totals.py` (every scoring run, and NBA in the
@@ -561,15 +560,14 @@ slate said +7; the entry keeps `posted` and a `correction` note).
 Public results page (`site/results.html`, linked from the pick sheet): every one of
 the user's picks, sides and over/unders, graded at the line taken. `lib/results.py`
 builds `results.json` / `results.csv` in `build_site.py`. Each row has when it was
-submitted and how many minutes before the game's start (the slate's `time`);
-picks submitted after the start (2026-09-26 Texas @ Tennessee, 2026-10-10
-Stanford @ Notre Dame) are flagged and left out of the page's numbers unless the
-box is ticked, because a pick logged during a game can't be verified. Intake
-doesn't reject them (it only blocks final games). Corrections and alternate
+submitted and how many minutes before the game's start (the slate's `time`).
+Every pick counts and none is labelled late (the user's call, 2026-11-15; it
+used to flag and leave out picks that reached the repo after the listed start,
+but NBA tips ~10 minutes after it and the timestamp is the issue, not the bet).
+Intake only blocks final games. Corrections and alternate
 lines are labelled. "vs close" (2026-11-15, `close`/`clv` in `lib/results.py`):
 points better or worse than the closing line (lines archives; NBA spreads
-the slate's statsSpread; an alternate measured from its posted line; picks
-made after the start left out), with a "Beat the closing line" tile. The pick
+the slate's statsSpread; an alternate measured from its posted line), with a "Beat the closing line" tile. The pick
 sheet warns under an alternate line priced -150 or worse with its break-even
 win % (`altwarn`): the user's bought-point picks went 4-4, -$186, vs +$4 at
 the posted lines. The repo and Pages site are public, so the picks files and

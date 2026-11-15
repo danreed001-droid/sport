@@ -114,8 +114,7 @@ def build_results(mypicks, all_docs):
                    "result": None, "units": None, "mlResult": None, "mlUnits": None, "mlCounted": None,
                    "alt": bool(p.get("alt")), "posted": p.get("posted"), "note": p.get("correction")}
             # vs the close: the line taken (the posted one for an alternate) against the closing spread.
-            # (Picks made after the start are left out: the slate's line by then can be long stale.)
-            if g is not None and p.get("side") in ("home", "away") and not (row["lead"] is not None and row["lead"] < 0):
+            if g is not None and p.get("side") in ("home", "away"):
                 c_sp, _ = _close_row(sport, date_str, g.get("away"), g.get("home"))
                 if sport == "nba" and _num(g.get("statsSpread")):
                     c_sp = g["statsSpread"]
@@ -148,7 +147,7 @@ def build_results(mypicks, all_docs):
                    "lead": lead_minutes(date_str, t.get("time"), t.get("submittedAt")),
                    "result": None, "units": None, "mlResult": None, "mlUnits": None, "mlCounted": None,
                    "alt": bool(t.get("alt")), "posted": t.get("posted"), "note": t.get("correction")}
-            if g is not None and t.get("side") in ("over", "under") and not (row["lead"] is not None and row["lead"] < 0):
+            if g is not None and t.get("side") in ("over", "under"):
                 _, c_tot = _close_row(sport, date_str, g.get("away"), g.get("home"))
                 if c_tot is None and sport == "nba" and _num(g.get("totalsLine")):
                     c_tot = g["totalsLine"]

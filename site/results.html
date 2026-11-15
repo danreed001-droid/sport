@@ -85,7 +85,7 @@ a{color:var(--accent-ink);}
 <script>
 (function(){
   var DATA = null, ROWS = [];
-  var F = {sport:'all', kind:'all', result:'all', late:false};
+  var F = {sport:'all', kind:'all', result:'all'};
   function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
   function isNum(v){ return typeof v==='number' && isFinite(v); }
   function sgn(v){ return isNum(v) ? (v>0?'+':'')+v : ''; }
@@ -93,7 +93,6 @@ a{color:var(--accent-ink);}
   function pct(w,n){ return n ? (Math.round(w/n*1000)/10)+'%' : '—'; }
   function cls(v){ return !isNum(v)||v===0 ? '' : v>0 ? 'pos' : 'neg'; }
   var SPORT = {nfl:'NFL', cfb:'CFB', nba:'NBA', ncaab:'NCAAB', mlb:'MLB', soccer:'Soccer', epl:'Premier League'};
-  function verified(r){ return r.lead!==null && r.lead>=0; }
   function wilson(w, n){
     if(!n) return null;
     var z = 1.96, p = w/n, d = 1 + z*z/n, c = (p + z*z/(2*n))/d, h = z*Math.sqrt(p*(1-p)/n + z*z/(4*n*n))/d;
@@ -110,7 +109,7 @@ a{color:var(--accent-ink);}
   function rec(t){ return t.n ? t.w+'-'+t.l+(t.p?'-'+t.p:'') : '—'; }
   function leadText(r){
     if(r.lead===null) return '—';
-    if(r.lead<0){ var m = -r.lead; return (m>=60 ? Math.floor(m/60)+'h '+(m%60)+'m' : m+'m')+' after start'; }
+    if(r.lead<0) return '—';
     var m2 = r.lead; return (m2>=60 ? Math.floor(m2/60)+'h '+(m2%60)+'m' : m2+'m')+' before';
   }
   function when(iso){
@@ -136,8 +135,7 @@ a{color:var(--accent-ink);}
       + '<text x="'+(W-R)+'" y="'+(H-6)+'" text-anchor="end" font-size="16" fill="var(--muted)">'+esc(g[g.length-1].d)+'</text></svg>';
   }
   function render(){
-    var all = ROWS, ok = all.filter(verified), late = all.filter(function(r){ return r.lead!==null && r.lead<0; });
-    var base = F.late ? all : ok;
+    var all = ROWS, base = all;
     var side = base.filter(function(r){ return r.kind==='side'; }), tot = base.filter(function(r){ return r.kind==='total'; });
     var ts = tally(side), tt = tally(tot), tc = tally(side.concat(tot));
     var mlRows = side.filter(function(r){ return r.mlResult && r.mlCounted; });
@@ -146,11 +144,6 @@ a{color:var(--accent-ink);}
     var ci = wilson(ts.w, ts.w+ts.l), n = ts.w+ts.l;
     var roi = tc.n ? tc.u/tc.n : null;
     var h = '';
-    if(late.length){
-      h += '<div class="warnbox"><b>'+late.length+' pick'+(late.length===1?' was':'s were')+' submitted after the game had started.</b> '
-        + (F.late ? 'They are included below.' : 'They are left out of the numbers on this page unless you tick the box below, because a pick logged during a game can\'t be checked.')
-        + ' '+late.map(function(r){ return esc(r.game)+' ('+esc(r.d)+', '+leadText(r)+')'; }).join('; ')+'.</div>';
-    }
     h += '<div class="tiles">'
       + '<div class="tile"><div class="k">Spread picks</div><div class="v">'+rec(ts)+'</div><div class="s">'+pct(ts.w, n)+' &middot; '+n+' graded</div></div>'
       + '<div class="tile"><div class="k">Units (spread + over/under)</div><div class="v '+cls(tc.u)+'">'+units(tc.u)+'</div><div class="s">'+(roi===null?'':'ROI '+(roi>=0?'+':'−')+Math.abs(roi*100).toFixed(1)+'% on '+tc.n+' bets')+'</div></div>'
@@ -170,11 +163,10 @@ a{color:var(--accent-ink);}
     } else h += '<p style="margin:0">No graded spread picks yet.</p>';
     h += '</div>';
     var sports = Object.keys(all.reduce(function(a,r){ a[r.sport]=1; return a; }, {})).sort();
-    h += '<div class="card"><h2>Every pick</h2><p class="sub">Line shown is the line I took (an alternate line is marked, with the posted line it was moved from). Times are when the pick reached the repository. <b>vs close</b>: points better (+) or worse (−) than the closing line (an alternate is measured from its posted line; picks made after the start are left out). Beating the close over many picks is the best early sign of a real edge.</p>'
+    h += '<div class="card"><h2>Every pick</h2><p class="sub">Line shown is the line I took (an alternate line is marked, with the posted line it was moved from). Times are when the pick reached the repository. <b>vs close</b>: points better (+) or worse (−) than the closing line (an alternate is measured from its posted line). Beating the close over many picks is the best early sign of a real edge.</p>'
       + '<div class="filters"><label>Sport<select id="fs"><option value="all">All</option>'+sports.map(function(s){ return '<option value="'+s+'"'+(F.sport===s?' selected':'')+'>'+esc(SPORT[s]||s)+'</option>'; }).join('')+'</select></label>'
       + '<label>Type<select id="fk"><option value="all">All</option><option value="side"'+(F.kind==='side'?' selected':'')+'>Spread</option><option value="total"'+(F.kind==='total'?' selected':'')+'>Over/under</option></select></label>'
-      + '<label>Result<select id="fr"><option value="all">All</option><option value="W"'+(F.result==='W'?' selected':'')+'>Won</option><option value="L"'+(F.result==='L'?' selected':'')+'>Lost</option><option value="pending"'+(F.result==='pending'?' selected':'')+'>Pending</option></select></label>'
-      + '<label class="chk"><input type="checkbox" id="fl"'+(F.late?' checked':'')+'> Count picks made after the game started</label></div>';
+      + '<label>Result<select id="fr"><option value="all">All</option><option value="W"'+(F.result==='W'?' selected':'')+'>Won</option><option value="L"'+(F.result==='L'?' selected':'')+'>Lost</option><option value="pending"'+(F.result==='pending'?' selected':'')+'>Pending</option></select></label></div>';
     var shown = all.filter(function(r){
       return (F.sport==='all'||r.sport===F.sport) && (F.kind==='all'||r.kind===F.kind)
         && (F.result==='all' || (F.result==='pending' ? r.result===null : r.result===F.result));
@@ -183,14 +175,13 @@ a{color:var(--accent-ink);}
       + (shown.map(function(r){
           var chip = r.result==='W' ? '<span class="chip w">Won</span>' : r.result==='L' ? '<span class="chip l">Lost</span>' : r.result==='P' ? '<span class="chip p">Push</span>'
             : r.result==='NS' ? '<span class="chip n" title="No spread was saved with this pick">ML only</span>' : r.result==='void' ? '<span class="chip n">Void</span>' : '<span class="chip n">Pending</span>';
-          var lateTag = r.lead!==null && r.lead<0 ? '<span class="tag late">after start</span>' : '';
           var alt = r.alt ? '<span class="tag" title="Alternate line, price estimated">alt line</span>' : '';
           var fix = r.note ? '<span class="tag" title="'+esc(r.note)+'">corrected*</span>' : '';
           var posted = r.posted ? ' <span class="sub" style="font-size:11.5px">(posted '+esc(r.kind==='total' ? (isNum(r.posted.line)?r.posted.line:'') : sgn(r.posted.spread))+')</span>' : '';
           return '<tr><td>'+esc(r.d)+'</td><td>'+esc(SPORT[r.sport]||r.sport)+'</td><td class="gm">'+esc(r.game)+'</td><td><b>'+esc(r.pick)+'</b>'+alt+fix+posted+'</td>'
             + '<td class="num">'+(isNum(r.odds)?sgn(r.odds):'—')+'</td>'
             + '<td class="num '+(isNum(r.clv) ? (r.clv>0?'pos':r.clv<0?'neg':'') : '')+'" title="'+(isNum(r.close) ? 'Closing line '+(r.kind==='total'?r.close:sgn(r.close)) : 'No closing line on file')+'">'+(isNum(r.clv) ? (r.clv>0?'+':r.clv<0?'−':'')+Math.abs(r.clv) : '—')+'</td>'
-            + '<td>'+esc(when(r.submitted))+'</td><td>'+esc(leadText(r))+lateTag+'</td><td>'+chip+'</td>'
+            + '<td>'+esc(when(r.submitted))+'</td><td>'+esc(leadText(r))+'</td><td>'+chip+'</td>'
             + '<td class="num '+cls(r.units)+'">'+(isNum(r.units)?units(r.units):'—')+'</td></tr>';
         }).join('') || '<tr><td colspan="10" class="sub" style="text-align:center;padding:18px">No picks match.</td></tr>')
       + '</tbody></table></div></div>';
@@ -205,7 +196,6 @@ a{color:var(--accent-ink);}
     document.getElementById('fs').onchange = function(e){ F.sport = e.target.value; render(); };
     document.getElementById('fk').onchange = function(e){ F.kind = e.target.value; render(); };
     document.getElementById('fr').onchange = function(e){ F.result = e.target.value; render(); };
-    document.getElementById('fl').onchange = function(e){ F.late = e.target.checked; render(); };
   }
   fetch('results.json', {cache:'no-store'}).then(function(r){ if(!r.ok) throw new Error(r.status); return r.json(); }).then(function(d){
     DATA = d; ROWS = d.rows || []; render();
