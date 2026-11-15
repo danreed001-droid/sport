@@ -312,6 +312,14 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   colors/abbreviations: `TEAM_COLORS`/`TEAM_ABBR` (NBA, NFL), `TEAM_COLORS2`
   second colors used when a color is near-black or the two teams look alike
   (`gameColors`); other teams get a hashed color and initials.
+  Model + storyline mix donut (2026-11-15, `modelPie`/`pieRow` in
+  site/index.html, the user approved screenshots): a slice per model with a
+  pick (sat-out ones included, marked *) and per storyline (STY, sized by its
+  tally weight); each slice is split by the model's season win % in that
+  sport (`modelRec`; no record = 50%) or the storyline's leanPct -- that
+  share in the pick's team color, the rest lighter to the other side (soccer:
+  split between the other two results). The middle is the weighted blend.
+  Chart only: records, the veto and the lean meter are unchanged.
   Trend charts (2026-11-14): "ATS trend" and "Totals trend" on NBA/NFL/CFB/
   NCAAB cards (`trendChart` in site/index.html; data `atsTrend`/`ouTrend`
   from `ats_trends` in build_site.py): each team's running cover margin, and
