@@ -185,8 +185,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 213.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "LA Clippers",
       "homeMoneyline": -118,
       "homeNetRtg": -5.31,
@@ -207,28 +207,42 @@
         "Brandon Miller is off the injury report; Hornets without Knueppel/Schr\u00f6der, Clippers without Ingram, Beal, J. Miller, Niederhauser."
       ],
       "statsLine": {
-        "homeSpread": 1.5,
-        "awaySpread": -1.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
-        "homeMoneyline": -106,
-        "awayMoneyline": -111
+        "homeSpread": -1.5,
+        "awaySpread": 1.5,
+        "homeSpreadOdds": -101,
+        "awaySpreadOdds": -119,
+        "homeMoneyline": -110,
+        "awayMoneyline": -108
       },
-      "statsSpread": 1.5,
+      "statsSpread": -1.5,
       "storylines": [
         {
-          "against": false,
-          "fact": "LA Clippers' point differential (-5.3 a game) is better than its 3-8 record, and Charlotte Hornets' record is better than its -11.0.",
-          "key": "quiet_giant",
-          "leanPct": 55.0,
-          "leans": "LA Clippers",
+          "weight": 1,
           "live": "2-6",
+          "key": "quiet_giant",
           "name": "The quiet giant vs the hype machine",
-          "pct": 55.0,
-          "record": "105-86",
-          "says": "back",
           "team": "LA Clippers",
-          "weight": 1
+          "says": "back",
+          "fact": "LA Clippers' point differential (-5.3 a game) is better than its 3-8 record, and Charlotte Hornets' record is better than its -11.0.",
+          "record": "105-86",
+          "pct": 55.0,
+          "leans": "LA Clippers",
+          "leanPct": 55.0,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "2-2",
+          "key": "ghost_town",
+          "name": "Ghost town",
+          "team": "Charlotte Hornets",
+          "says": "fade",
+          "fact": "Charlotte Hornets' top scorer Brandon Miller (20.6 a game) missed its last two games; Charlotte Hornets is a +1.5 underdog.",
+          "record": "822-742",
+          "pct": 52.6,
+          "leans": "LA Clippers",
+          "leanPct": 52.6,
+          "against": false
         }
       ],
       "time": "4:30 PM ET",
@@ -263,9 +277,9 @@
       "awaySpreadOdds": -105,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 225.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Utah Jazz",
       "homeMoneyline": 850,
       "homeNetRtg": -11.1,
@@ -288,12 +302,12 @@
       "statsCheck": "Rule 57: Backing San Antonio Spurs: beat the spread by 9.1 a game over its last five, and Utah Jazz had no double-digit rebounder in its last two games (top: 8 and 9) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35.",
       "statsFavors": "San Antonio Spurs",
       "statsLine": {
-        "homeSpread": 15.5,
-        "awaySpread": -15.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
-        "homeMoneyline": 810,
-        "awayMoneyline": -1340
+        "homeSpread": 14.5,
+        "awaySpread": -14.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 670,
+        "awayMoneyline": -1040
       },
       "statsRules": [
         {
@@ -303,7 +317,7 @@
           "detail": "Backing San Antonio Spurs: beat the spread by 9.1 a game over its last five, and Utah Jazz had no double-digit rebounder in its last two games (top: 8 and 9) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35."
         }
       ],
-      "statsSpread": 15.5,
+      "statsSpread": 14.5,
       "storylines": [
         {
           "weight": 1,
@@ -312,7 +326,7 @@
           "name": "Fat and happy",
           "team": "San Antonio Spurs",
           "says": "fade",
-          "fact": "San Antonio Spurs has won 11 straight and is a -15.5 favorite.",
+          "fact": "San Antonio Spurs has won 11 straight and is a -14.5 favorite.",
           "record": "157-136",
           "pct": 53.6,
           "leans": "Utah Jazz",
@@ -326,7 +340,7 @@
           "name": "Spotlight letdown",
           "team": "San Antonio Spurs",
           "says": "fade",
-          "fact": "San Antonio Spurs beat Golden State Warriors 123-85 on national TV and is a -15.5 favorite tonight off national TV.",
+          "fact": "San Antonio Spurs beat Golden State Warriors 123-85 on national TV and is a -14.5 favorite tonight off national TV.",
           "record": "148-114",
           "pct": 56.5,
           "leans": "Utah Jazz",
@@ -335,7 +349,7 @@
         }
       ],
       "time": "5:00 PM ET",
-      "totalsLine": 225.5
+      "totalsLine": 222.5
     },
     {
       "altCategoryTally": "1-5",
@@ -366,9 +380,9 @@
       "awaySpreadOdds": -109,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 219.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113,
+      "gameTotal": 218.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Boston Celtics",
       "homeMoneyline": -800,
       "homeNetRtg": 11.51,
@@ -391,12 +405,12 @@
       "statsCheck": "Rule 54: Backing Boston Celtics: covered its last two games (by 0.5 at Toronto Raptors and by 20.5 at Philadelphia 76ers), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 57: Backing Boston Celtics: beat the spread by 10.1 a game over its last five, and Dallas Mavericks had no double-digit rebounder in its last two games (top: 7 and 8) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35.",
       "statsFavors": "Boston Celtics",
       "statsLine": {
-        "homeSpread": -13.5,
-        "awaySpread": 13.5,
-        "homeSpreadOdds": -111,
-        "awaySpreadOdds": -108,
-        "homeMoneyline": -750,
-        "awayMoneyline": 530
+        "homeSpread": -14.5,
+        "awaySpread": 14.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -840,
+        "awayMoneyline": 580
       },
       "statsRules": [
         {
@@ -412,25 +426,25 @@
           "detail": "Backing Boston Celtics: beat the spread by 10.1 a game over its last five, and Dallas Mavericks had no double-digit rebounder in its last two games (top: 7 and 8) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35."
         }
       ],
-      "statsSpread": -13.5,
+      "statsSpread": -14.5,
       "storylines": [
         {
-          "against": false,
-          "fact": "Boston Celtics has won 5 straight and is a -13.5 favorite.",
-          "key": "fat_happy",
-          "leanPct": 53.6,
-          "leans": "Dallas Mavericks",
+          "weight": 1,
           "live": "5-3",
+          "key": "fat_happy",
           "name": "Fat and happy",
-          "pct": 53.6,
-          "record": "157-136",
-          "says": "fade",
           "team": "Boston Celtics",
-          "weight": 1
+          "says": "fade",
+          "fact": "Boston Celtics has won 5 straight and is a -14.5 favorite.",
+          "record": "157-136",
+          "pct": 53.6,
+          "leans": "Dallas Mavericks",
+          "leanPct": 53.6,
+          "against": false
         }
       ],
       "time": "6:00 PM ET",
-      "totalsLine": 219.5
+      "totalsLine": 218.5
     },
     {
       "altCategoryTally": "3-1",
@@ -461,8 +475,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 217.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
       "home": "Toronto Raptors",
       "homeMoneyline": 160,
       "homeNetRtg": 0.71,
@@ -483,42 +497,56 @@
         "Raptors' Scottie Barnes (groin) is a game-time decision along with 3 other questionables."
       ],
       "statsLine": {
-        "homeSpread": 4.5,
-        "awaySpread": -4.5,
-        "homeSpreadOdds": -103,
-        "awaySpreadOdds": -118,
-        "homeMoneyline": 165,
-        "awayMoneyline": -197
+        "homeSpread": 5.5,
+        "awaySpread": -5.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 179,
+        "awayMoneyline": -216
       },
-      "statsSpread": 4.5,
+      "statsSpread": 5.5,
       "storylines": [
         {
-          "against": false,
-          "fact": "Toronto Raptors' top scorer Scottie Barnes (23.5 a game) missed its last two games; Toronto Raptors is a +4.5 underdog.",
-          "key": "ghost_town",
-          "leanPct": 52.6,
-          "leans": "New York Knicks",
+          "weight": 1,
           "live": "2-2",
+          "key": "ghost_town",
           "name": "Ghost town",
-          "pct": 52.6,
-          "record": "822-742",
-          "says": "fade",
           "team": "Toronto Raptors",
-          "weight": 1
+          "says": "fade",
+          "fact": "Toronto Raptors' top scorer Scottie Barnes (23.5 a game) missed its last two games; Toronto Raptors is a +5.5 underdog.",
+          "record": "822-742",
+          "pct": 52.6,
+          "leans": "New York Knicks",
+          "leanPct": 52.6,
+          "against": false
         },
         {
-          "against": false,
-          "fact": "New York Knicks' 4th game in 6 nights, on the road; Toronto Raptors has had 2 days off.",
-          "key": "schedule_loss",
-          "leanPct": 53.1,
-          "leans": "Toronto Raptors",
+          "weight": 1,
           "live": "5-7",
+          "key": "schedule_loss",
           "name": "The schedule loss",
-          "pct": 53.1,
-          "record": "867-767",
-          "says": "fade",
           "team": "New York Knicks",
-          "weight": 1
+          "says": "fade",
+          "fact": "New York Knicks' 4th game in 6 nights, on the road; Toronto Raptors has had 2 days off.",
+          "record": "867-767",
+          "pct": 53.1,
+          "leans": "Toronto Raptors",
+          "leanPct": 53.1,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "5-0",
+          "key": "emperor",
+          "name": "The emperor's new clothes",
+          "team": "New York Knicks",
+          "says": "fade",
+          "fact": "New York Knicks is a -5.5 favorite but has covered 4 of 12 this season.",
+          "record": "181-152",
+          "pct": 54.4,
+          "leans": "Toronto Raptors",
+          "leanPct": 54.4,
+          "against": false
         }
       ],
       "time": "6:00 PM ET",
@@ -552,9 +580,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 224.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
       "home": "Washington Wizards",
       "homeMoneyline": 341,
       "homeNetRtg": -5.73,
@@ -577,10 +605,10 @@
       "statsLine": {
         "homeSpread": 8.5,
         "awaySpread": -8.5,
-        "homeSpreadOdds": -118,
-        "awaySpreadOdds": -102,
-        "homeMoneyline": 276,
-        "awayMoneyline": -344
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -103,
+        "homeMoneyline": 262,
+        "awayMoneyline": -326
       },
       "statsSpread": 8.5,
       "storylines": [
@@ -600,7 +628,7 @@
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 224.5
+      "totalsLine": 223.5
     },
     {
       "altCategoryTally": "1-2",
@@ -631,8 +659,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 233.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -115,
       "home": "Milwaukee Bucks",
       "homeMoneyline": 251,
       "homeNetRtg": -14.54,
@@ -718,9 +746,9 @@
       "awaySpreadOdds": -108,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 222.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105,
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Sacramento Kings",
       "homeMoneyline": 360,
       "homeNetRtg": -12.58,
@@ -745,8 +773,8 @@
       "statsLine": {
         "homeSpread": 10.5,
         "awaySpread": -10.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
         "homeMoneyline": 361,
         "awayMoneyline": -468
       },
@@ -776,7 +804,7 @@
         }
       ],
       "time": "9:00 PM ET",
-      "totalsLine": 222.5
+      "totalsLine": 223.5
     }
   ]
 }
