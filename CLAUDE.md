@@ -306,8 +306,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
 - Game cards (2026-11-14 redesign, the user approved screenshots first):
   `matchupHeader` (team rows with a colored badge, Away/Home, spread chip and
   moneyline, a time/Final pill; final scores replace the lines and the loser is
-  dimmed), a two-team color stripe on top (`--ca`/`--ch`), `leanMeter` (models
-  not sitting out + the storylines' net lean, as a bar), accented model
+  dimmed), a two-team color stripe on top (`--ca`/`--ch`), `leanMeter` (since
+  2026-11-15 the same win-% blend as the mix donut, `mixData`: each team's
+  blended %, soccer's draw in gray), accented model
   badges (`.badge` left border in the model's color; sat-out dashed). Team
   colors/abbreviations: `TEAM_COLORS`/`TEAM_ABBR` (NBA, NFL), `TEAM_COLORS2`
   second colors used when a color is near-black or the two teams look alike
@@ -319,7 +320,8 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   sport (`modelRec`; no record = 50%) or the storyline's leanPct -- that
   share in the pick's team color, the rest lighter to the other side (soccer:
   split between the other two results). The middle is the weighted blend.
-  Chart only: records, the veto and the lean meter are unchanged.
+  The lean meter shows the same blend (`mixData` feeds both). Display only:
+  records and the veto are unchanged.
   Trend charts (2026-11-14): "ATS trend" and "Totals trend" on NBA/NFL/CFB/
   NCAAB cards (`trendChart` in site/index.html; data `atsTrend`/`ouTrend`
   from `ats_trends` in build_site.py): each team's running cover margin, and

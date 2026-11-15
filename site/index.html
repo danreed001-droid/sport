@@ -215,6 +215,9 @@ details.tv table{min-width:0;}
 .meter-lbl{display:flex;justify-content:space-between;gap:10px;font-size:11.5px;color:var(--muted);}
 .meter-lbl b{color:var(--ink);}
 .meter-lbl .lean{font-weight:700;color:var(--ink);}
+.meter-lbl > span:first-child,.meter-lbl > span:last-child{white-space:nowrap;flex-wrap:nowrap;}
+.meter-lbl .lean{text-align:center;}
+.meter-sub{font-size:11px;color:var(--muted);text-align:center;}
 .badge{position:relative;border:1px solid var(--rule);border-left:3px solid var(--bc,var(--rule-2));background:linear-gradient(180deg,var(--surface-2),transparent 160%);transition:transform .12s ease,border-color .12s ease;}
 .badge:hover{transform:translateY(-1px);}
 .badge.ledger{--bc:var(--ledger-ink);} .badge.opinion{--bc:var(--opinion-ink);} .badge.trend{--bc:var(--trend-ink);} .badge.blowout{--bc:var(--blowout-ink);}
@@ -1353,21 +1356,25 @@ footer b{color:var(--ink);}
       + (who ? '<div style="margin-top:-6px">'+who+'</div>' : '');
   }
   // Lean meter: which side the models (not sitting out) and the storylines point to.
+  // Lean meter: the same blend as the mix donut (models, sat-out ones
+  // included, and storylines, each split by its win %), as a bar.
   function leanMeter(sport, g){
-    var sit = vetoed(g), a = 0, h = 0;
-    VETO_MODELS.forEach(function(m){ var t = m[2](g); if(!t || sit.indexOf(m[1])>=0) return; if(t===g.away) a++; else if(t===g.home) h++; });
-    var net = storyNet(g), sa = net<0 ? -net : 0, sh = net>0 ? net : 0;
-    var A = a + sa, H = h + sh;
-    if(!A && !H) return '';
-    var pa = Math.round(100*A/(A+H));
-    var lean = A===H ? 'Split' : (A>H ? g.away : g.home);
-    var mtxt = function(x){ return x+' model'+(x===1?'':'s'); };
-    var gc = gameColors(g);
-    return '<div class="meter"><div class="meter-bar"><span class="'+(dimColor(gc[0])?'dk':'')+'" style="width:'+pa+'%;background:'+gc[0]+'"></span><span class="'+(dimColor(gc[1])?'dk':'')+'" style="width:'+(100-pa)+'%;background:'+gc[1]+'"></span><i class="mid"></i></div>'
-      + '<div class="meter-lbl"><span>'+teamBadge(g.away,true)+' <b>'+mtxt(a)+'</b>'+(sa ? ' + stories '+sa : '')+'</span>'
-      + '<span class="lean">'+(A===H ? 'Split' : 'Leans '+esc(lean))+'</span>'
-      + '<span><b>'+mtxt(h)+'</b>'+(sh ? ' + stories '+sh : '')+' '+teamBadge(g.home,true)+'</span></div></div>';
+    var mx = mixData(sport, g); if(!mx) return '';
+    var b = mx.blend, gc = gameColors(g), soccer = sport==='soccer';
+    var pa = Math.round(100*b.away), pd = soccer ? Math.round(100*b.draw) : 0, ph = 100-pa-pd;
+    var nm = mx.parts.filter(function(p){ return !p.story; }).length, ns = mx.parts.length - nm;
+    var top = mx.outs.slice().sort(function(x,y){ return b[y]-b[x]; }), tie = Math.abs(b[top[0]]-b[top[1]]) < 0.005;
+    var lead = top[0]==='away' ? g.away : top[0]==='home' ? g.home : 'a draw';
+    var what = [nm ? nm+' model'+(nm===1?'':'s') : '', ns ? ns+' storyline'+(ns===1?'':'s') : ''].filter(Boolean).join(' + ');
+    return '<div class="meter"><div class="meter-bar"><span class="'+(dimColor(gc[0])?'dk':'')+'" style="width:'+pa+'%;background:'+gc[0]+'"></span>'
+      + (pd ? '<span style="width:'+pd+'%;background:#9a9a9a"></span>' : '')
+      + '<span class="'+(dimColor(gc[1])?'dk':'')+'" style="width:'+ph+'%;background:'+gc[1]+'"></span><i class="mid"></i></div>'
+      + '<div class="meter-lbl"><span>'+teamBadge(g.away,true)+' <b>'+pa+'%</b></span>'
+      + '<span class="lean">'+(tie ? 'Split' : 'Leans '+esc(lead))+'</span>'
+      + '<span><b>'+ph+'%</b> '+teamBadge(g.home,true)+'</span></div>'
+      + '<div class="meter-sub">Blend of '+what+', each by its win %'+(soccer && pd ? ' · draw '+pd+'%' : '')+'</div></div>';
   }
+
   // Model mix donut: a slice per model with a side tonight (models sitting
   // out under the storyline veto included, marked *) and per storyline with a lean.
   // A model that wins p% of the time says its pick covers p% and the other
@@ -1378,7 +1385,7 @@ footer b{color:var(--ink);}
   // storyline its tally weight (2 / 1 / 0.5). The middle is the blend: each
   // side's weighted average. Win % is the model's season record in this sport
   // (no record yet: 50%); a storyline's % is its backtest plus live record.
-  function modelPie(sport, g){
+  function mixData(sport, g){
     var sit = vetoed(g), parts = [], DRAW = 'Draw';
     var key = function(t){ return t===g.away ? 'away' : t===g.home ? 'home' : 'draw'; };
     var outs = sport==='soccer' ? ['away','draw','home'] : ['away','home'];
@@ -1397,20 +1404,26 @@ footer b{color:var(--ink);}
       parts.push({story:true, label:'STY', k:k, p:pr, size: e.weight||1, share: split(k, pr), pl: Math.round(100*pr)+'%',
         tip: 'Storyline: '+e.name+(e.weight && e.weight!==1 ? ' ('+(e.weight===2?'counts 2':'counts ½')+')' : '')+' — history: '+(e.leans)+(notWin?' not to win ':' ')+e.leanPct+'% ('+e.record+')'});
     });
-    if(!parts.length) return '';
+    if(!parts.length) return null;
+    var S = parts.reduce(function(a,p){ return a+p.size; }, 0), blend = {away:0, home:0, draw:0};
+    parts.forEach(function(p){ outs.forEach(function(o){ blend[o] += p.share[o]*p.size/S; }); });
+    return {parts: parts, outs: outs, S: S, blend: blend, key: key};
+  }
+  function modelPie(sport, g){
+    var mx = mixData(sport, g); if(!mx) return '';
+    var parts = mx.parts, outs = mx.outs, S = mx.S, blend = mx.blend, DRAW = 'Draw';
     var gc = gameColors(g);
     var COL = {away: gc[0], home: gc[1], draw: '#9a9a9a'}, NAME = {away: g.away, home: g.home, draw: DRAW};
     var ord = {away:0, draw:1, home:2};
     parts.sort(function(a,b){ return (a.story-b.story) || (ord[a.k]-ord[b.k]); });
     var light = function(c){ var m = /^#?([0-9a-f]{6})$/i.exec(c||''); if(!m) return false; var v = parseInt(m[1],16); return (0.299*(v>>16)+0.587*((v>>8)&255)+0.114*(v&255)) > 160; };
-    var n = parts.length, S = parts.reduce(function(a,p){ return a+p.size; }, 0), R = 38, C = 2*Math.PI*R, gap = n>1 ? 3 : 0, off = 0, wedges = '', labels = '';
-    var rot = n===2 ? 0 : -90, blend = {away:0, home:0, draw:0};
+    var n = parts.length, R = 38, C = 2*Math.PI*R, gap = n>1 ? 3 : 0, off = 0, wedges = '', labels = '';
+    var rot = n===2 ? 0 : -90;
     var arc = function(start, len, color, cls, tip){
       return '<circle class="w'+cls+(dimColor(color)?' dk':'')+'" r="'+R+'" cx="50" cy="50" stroke="'+color+'" stroke-width="18" stroke-dasharray="'+Math.max(len,0.01).toFixed(2)+' '+(C-Math.max(len,0.01)).toFixed(2)+'" stroke-dashoffset="'+(-start).toFixed(2)+'" transform="rotate('+rot+' 50 50)"><title>'+esc(tip)+'</title></circle>';
     };
     parts.forEach(function(p){
       var full = C*p.size/S, seg = full - gap, others = outs.filter(function(o){ return o!==p.k; });
-      outs.forEach(function(o){ blend[o] += p.share[o]*p.size/S; });
       var pickLen = seg*p.p, at = off + gap/2;
       wedges += arc(at, pickLen, COL[p.k], p.story ? ' sty' : '', p.tip);
       if(pickLen > 9){
