@@ -3,53 +3,9 @@
   "weekday": "Monday",
   "sport": "ncaab",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-16T07:18:34Z",
+  "generatedAt": "2026-11-16T16:22:19Z",
   "games": [
-    {
-      "espnId": "401921804",
-      "away": "Grambling Tigers",
-      "home": "Kentucky Wildcats",
-      "time": "7:00 PM ET",
-      "homeSpread": -29.5,
-      "awaySpread": 29.5,
-      "homeSpreadOdds": -115,
-      "awaySpreadOdds": -105,
-      "total": 158.5,
-      "gameTotal": 158.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
-    },
-    {
-      "espnId": "401924265",
-      "away": "Long Beach State Beach",
-      "home": "UCLA Bruins",
-      "time": "10:00 PM ET",
-      "homeSpread": -34.5,
-      "awaySpread": 34.5,
-      "homeSpreadOdds": -105,
-      "awaySpreadOdds": -115,
-      "total": 148.5,
-      "gameTotal": 148.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
-      "storylines": [
-        {
-          "weight": 1,
-          "live": "0-1",
-          "key": "poll_riser",
-          "name": "Poll riser",
-          "team": "UCLA Bruins",
-          "says": "fade",
-          "fact": "UCLA moved up from #22 to #9 in this week's AP poll.",
-          "record": "235-266",
-          "pct": 46.9,
-          "leans": "UCLA Bruins",
-          "leanPct": 53.1,
-          "against": true,
-          "unit": "ATS"
-        }
-      ]
-    }
+    {"altCategoryTally":"0-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Kentucky PD/g +4.50 vs Grambling -14.50 — favors Kentucky Wildcats.","Rest: Kentucky has 3 days rest (last played Nov 13 vs Northern Arizona) while Grambling has 7 days rest (last played Nov 9 at Texas) — both adequately rested — neutral.","Travel: Grambling's trip from Louisiana to Lexington is an ordinary non-conference road trip with no unusual burden — neutral.","Injuries/Lineup: no injuries listed for either team (Kentucky's ESPN injury report shows no data; none found for Grambling) — neutral.","Form: Kentucky is 3-1 but needed a late basket to escape Northern Arizona 78-77 and lost to Kansas 69-89; Grambling is 1-1 but was just blown out 62-93 at Texas — favors Kentucky Wildcats.","Motivation/Spot: no verified rivalry, revenge, or letdown angle found for this November non-conference game — neutral.","Venue/Crowd: Kentucky hosts at Rupp Arena, one of the sport's largest and loudest home environments — favors Kentucky Wildcats.","Market: no reliable opening-line or public-betting data could be found for this low-major mismatch to check for reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"away":"Grambling Tigers","awayMoneyline":null,"awayPDpg":-14.5,"awayRank":null,"awayScore":null,"awaySpread":29.5,"awaySpreadOdds":-105,"confidence":"solid","correct":null,"gameTotal":158.5,"gameTotalOverOdds":-112,"gameTotalUnderOdds":-108,"home":"Kentucky Wildcats","homeMoneyline":null,"homePDpg":4.5,"homeRank":24,"homeScore":null,"homeSpread":-29.5,"homeSpreadOdds":-115,"offGap":81.32,"pick":"Kentucky Wildcats","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -14.50 vs +4.50 (2026-27 season, Grambling 1-1 / Kentucky 3-1)","AdjOE 96.9 (rank 331/365) vs 117.3 (rank 35/365) — off. pct gap 81.32","AdjDE 111.6 (rank 302/365) vs 101.8 (rank 90/365)"],"time":"7:00 PM ET"},
+    {"altCategoryTally":"1-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: UCLA PD/g +43.00 vs Long Beach State -4.33 — favors UCLA Bruins.","Rest: both teams last played Nov 11 — 5 days rest apiece — neutral.","Travel: Long Beach State's trip to UCLA covers roughly 25 miles within the same metro area — no meaningful travel burden — neutral.","Injuries/Lineup: no injuries listed for UCLA (ESPN injury report shows no data); none found for Long Beach State — neutral.","Form: UCLA is 3-0 with wins by 9, 51 and 69 points, climbing to No. 9 in the AP poll; Long Beach State is 1-2, including a 13-point road loss at Montana State — favors UCLA Bruins.","Motivation/Spot: UCLA just jumped from No. 22 to No. 9 in this week's AP poll after routing Arkansas-Pine Bluff by 69 — a classic letdown/lookahead spot against a lightly-regarded mid-major — favors Long Beach State Beach.","Venue/Crowd: UCLA hosts at Pauley Pavilion with standard power-conference home-court advantage — favors UCLA Bruins.","Market: no reliable opening-line or public-betting split could be found for this mismatch to check for reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"away":"Long Beach State Beach","awayMoneyline":29500,"awayPDpg":-4.33,"awayRank":null,"awayScore":null,"awaySpread":33.5,"awaySpreadOdds":102,"confidence":"solid","correct":null,"gameTotal":148.5,"gameTotalOverOdds":-108,"gameTotalUnderOdds":-112,"home":"UCLA Bruins","homeMoneyline":-29412,"homePDpg":43,"homeRank":9,"homeScore":null,"homeSpread":-33.5,"homeSpreadOdds":-102,"offGap":59.07,"pick":"UCLA Bruins","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -4.33 vs +43.00 (2026-27 season, Long Beach St. 1-2 / UCLA 3-0)","AdjOE 103.3 (rank 227/365) vs 119.7 (rank 12/365) — off. pct gap 59.07","AdjDE 110.3 (rank 269/365) vs 96.6 (rank 22/365)"],"storylines":[{"against":true,"fact":"UCLA moved up from #22 to #9 in this week's AP poll.","key":"poll_riser","leanPct":53.1,"leans":"UCLA Bruins","live":"0-1","name":"Poll riser","pct":46.9,"record":"235-266","says":"fade","team":"UCLA Bruins","unit":"ATS","weight":1}],"time":"10:00 PM ET"}
   ]
 }
