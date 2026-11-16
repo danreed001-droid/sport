@@ -1,7 +1,7 @@
 {
  "date": "2026-11-16",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-16T00:52:35+00:00",
+ "fetchedAt": "2026-11-16T02:45:40+00:00",
  "games": [
   {
    "away": "Chicago Bulls",
@@ -9,20 +9,20 @@
    "start": "2026-11-17T00:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": -9.5,
+    "open": -8.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 241.5,
+    "open": 241.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": -445,
+    "away": 335
    },
    "rlmFavorite": null
   },
@@ -32,14 +32,14 @@
    "start": "2026-11-17T00:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": 6.5,
+    "open": 6.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 229.5,
+    "open": 229.5,
     "tix_over": null,
     "money_over": null
    },
@@ -55,20 +55,20 @@
    "start": "2026-11-17T00:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": -10,
+    "open": -9.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 210.5,
+    "open": 212.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": -425,
+    "away": 302
    },
    "rlmFavorite": null
   },
@@ -101,20 +101,20 @@
    "start": "2026-11-17T00:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": 5.5,
+    "open": 6.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 226.5,
+    "open": 227.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": 200,
+    "away": -250
    },
    "rlmFavorite": null
   },
@@ -126,8 +126,8 @@
    "spread": {
     "home": -2.5,
     "open": -2.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 58,
+    "money_home": 55
    },
    "total": {
     "now": 228.5,
@@ -136,8 +136,8 @@
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": -140,
+    "away": 115
    },
    "rlmFavorite": null
   },
@@ -147,20 +147,20 @@
    "start": "2026-11-17T01:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": 2.5,
+    "open": 1.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
-    "tix_over": null,
-    "money_over": null
+    "now": 226.5,
+    "open": 225.5,
+    "tix_over": 75,
+    "money_over": 81
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": 125,
+    "away": -155
    },
    "rlmFavorite": null
   },
@@ -170,14 +170,14 @@
    "start": "2026-11-17T02:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": -11.5,
+    "open": -11.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 228.5,
+    "open": 228.5,
     "tix_over": null,
     "money_over": null
    },

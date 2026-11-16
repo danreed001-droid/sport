@@ -775,18 +775,32 @@
       "statsSpread": 11.5,
       "storylines": [
         {
-          "against": false,
-          "fact": "Oklahoma City Thunder's 4th game in 6 nights, on the road; Sacramento Kings has had 1 day off.",
-          "key": "schedule_loss",
-          "leanPct": 53.1,
-          "leans": "Sacramento Kings",
+          "weight": 1,
+          "live": "2-0",
+          "key": "gutted",
+          "name": "Gutted home underdog",
+          "team": "Sacramento Kings",
+          "says": "back",
+          "fact": "Sacramento Kings is a +11.5 home underdog without 3 of its top 5 scorers: Zach LaVine (21.4), De'Andre Hunter (14.3), Precious Achiuwa (10.4).",
+          "record": "102-152",
+          "pct": 40.2,
+          "leans": "Oklahoma City Thunder",
+          "leanPct": 59.8,
+          "against": true
+        },
+        {
+          "weight": 1,
           "live": "5-7",
+          "key": "schedule_loss",
           "name": "The schedule loss",
-          "pct": 53.1,
-          "record": "867-767",
-          "says": "fade",
           "team": "Oklahoma City Thunder",
-          "weight": 1
+          "says": "fade",
+          "fact": "Oklahoma City Thunder's 4th game in 6 nights, on the road; Sacramento Kings has had 1 day off.",
+          "record": "867-767",
+          "pct": 53.1,
+          "leans": "Sacramento Kings",
+          "leanPct": 53.1,
+          "against": false
         }
       ],
       "time": "9:00 PM ET",
