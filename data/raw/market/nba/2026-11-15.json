@@ -1,7 +1,7 @@
 {
  "date": "2026-11-15",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-15T22:51:24+00:00",
+ "fetchedAt": "2026-11-16T00:52:34+00:00",
  "games": [
   {
    "away": "Indiana Pacers",
@@ -172,18 +172,18 @@
    "spread": {
     "home": 8.5,
     "open": 7.5,
-    "tix_home": 33,
-    "money_home": 32
+    "tix_home": 34,
+    "money_home": 22
    },
    "total": {
-    "now": 233.5,
+    "now": 234,
     "open": 231.5,
     "tix_over": 66,
     "money_over": 68
    },
    "moneyline": {
-    "home": 260,
-    "away": -324
+    "home": 275,
+    "away": -340
    },
    "rlmFavorite": null
   },
@@ -193,16 +193,16 @@
    "start": "2026-11-16T02:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 10.5,
+    "home": 11.5,
     "open": 10.5,
-    "tix_home": 29,
-    "money_home": 39
+    "tix_home": 31,
+    "money_home": 35
    },
    "total": {
     "now": 223.5,
     "open": 221.5,
-    "tix_over": 83,
-    "money_over": 82
+    "tix_over": 82,
+    "money_over": 83
    },
    "moneyline": {
     "home": 375,

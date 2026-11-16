@@ -645,8 +645,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 233.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -115,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Milwaukee Bucks",
       "homeMoneyline": 251,
       "homeNetRtg": -14.54,
@@ -671,10 +671,10 @@
       "statsLine": {
         "homeSpread": 8.5,
         "awaySpread": -8.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": 261,
-        "awayMoneyline": -324
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 270,
+        "awayMoneyline": -336
       },
       "statsRules": [
         {
@@ -733,8 +733,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 223.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Sacramento Kings",
       "homeMoneyline": 360,
       "homeNetRtg": -12.58,
@@ -757,10 +757,10 @@
       "statsCheck": "Rule 61: Fading Sacramento Kings: 1-11 on the season and only 8 players played 10+ minutes in its last game (vs Portland Trail Blazers) -- 61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22.",
       "statsFavors": "Oklahoma City Thunder",
       "statsLine": {
-        "homeSpread": 10.5,
-        "awaySpread": -10.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
+        "homeSpread": 11.5,
+        "awaySpread": -11.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -105,
         "homeMoneyline": 361,
         "awayMoneyline": -468
       },
@@ -772,7 +772,7 @@
           "detail": "Fading Sacramento Kings: 1-11 on the season and only 8 players played 10+ minutes in its last game (vs Portland Trail Blazers) -- 61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22."
         }
       ],
-      "statsSpread": 10.5,
+      "statsSpread": 11.5,
       "storylines": [
         {
           "against": false,
