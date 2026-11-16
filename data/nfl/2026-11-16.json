@@ -3,55 +3,8 @@
   "weekday": "Monday",
   "sport": "nfl",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-16T07:18:03Z",
+  "generatedAt": "2026-11-16T13:19:31Z",
   "games": [
-    {
-      "espnId": "401873065",
-      "away": "Los Angeles Chargers",
-      "home": "Baltimore Ravens",
-      "time": "8:15 PM ET",
-      "homeSpread": -4.5,
-      "awaySpread": 4.5,
-      "homeSpreadOdds": -112.0,
-      "awaySpreadOdds": -108.0,
-      "homeMoneyline": -225.0,
-      "awayMoneyline": 185.0,
-      "storylines": [
-        {
-          "weight": 0.5,
-          "live": "1-2",
-          "key": "west_night",
-          "name": "West Coast night owls",
-          "team": "Los Angeles Chargers",
-          "says": "back",
-          "fact": "Los Angeles Chargers (Pacific time) visits Baltimore Ravens (Eastern time) in a night game.",
-          "record": "41-32",
-          "pct": 56.2,
-          "leans": "Los Angeles Chargers",
-          "leanPct": 56.2,
-          "against": false,
-          "unit": "ATS"
-        },
-        {
-          "weight": 1,
-          "live": "7-5",
-          "key": "cross_country",
-          "name": "Cross-country trip",
-          "team": "Los Angeles Chargers",
-          "says": "fade",
-          "fact": "Los Angeles Chargers travels about 2,320 miles to play the Baltimore Ravens.",
-          "record": "180-205",
-          "pct": 46.8,
-          "leans": "Los Angeles Chargers",
-          "leanPct": 53.2,
-          "against": true,
-          "unit": "ATS"
-        }
-      ],
-      "gameTotal": 38.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
-    }
+    {"altBlowoutCheck":"Neither team's most recent game was a win by 17+ points — Ravens lost 10-33 at Jacksonville, Chargers lost 22-44 at Houston — so the blowout-win regression check does not apply to either side this week.","altBlowoutFavors":null,"altCategoryTally":"5-0","altConfidence":"strong","altCorrect":null,"altCover":null,"altPick":"Baltimore Ravens","altReasons":["Scoring margin: neutral (Ravens' -1.85 blended PD/g was built largely under Lamar Jackson, who is out for the season and is not tonight's starter Jacoby Brissett, just acquired via trade from Arizona; Chargers' own -5.30 blended PD/g isn't independently strong enough to carry the category alone)","Rest: favors Ravens (Baltimore played Thursday Nov 5, giving them 11 days off before this Monday kickoff, vs. the Chargers' standard 8-day turnaround from their Sunday Nov 8 loss at Houston)","Travel: favors Ravens (Chargers make the full cross-country trip from LA to Baltimore for a prime-time road game)","Injuries/Lineup (weighted x2 — multi-starter cluster): favors Ravens (Chargers WR1 Ladd McConkey is Out with a back injury, with starting OT Trey Pipkins, DT Justin Eboigbe, MLB Denzel Perryman and G Kayode Awosika all Questionable; Ravens' own report is comparatively clean — S Jaylinn Hawkins Out and backup RB Adam Randall Questionable, with LT Ronnie Stanley and CB Nate Wiggins both unlisted as game-status concerns this week)","Form: neutral (Ravens' 0-3 record over their last 3 games was produced under Joe Fagnano and an injured Lamar Jackson, not tonight's starter Jacoby Brissett; Chargers' own 0-3 stretch, within an 0-8 season, isn't independently strong enough to carry the category alone)","Motivation/Spot: favors Ravens (Baltimore is 4-5 and still fighting for AFC playoff positioning, while the 0-8 Chargers have far less riding on this game down the stretch)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Ravens prior game (Nov 5 at Jacksonville, lost 10-33, CBS/team box score): 227 total net yards (55 net passing on 11/19, 2.9 YPA; 172 rushing on 34 att) — Pattern A needs 426+ yards (missed), Pattern B needs YPA≥7.5 (missed), Pattern C needs rush/pass ratio ≤1.0 with rush att≥34 (34/19=1.79, ratio missed), Pattern D needs pass att≥41 (19, missed) — no pattern matched. Chargers prior game (Nov 8 vs Houston, lost 22-44): 315 total net yards (177 passing on 15/30, 5.9 YPA; 138 rushing on 30 att) — Pattern A needs 426+ (missed), Pattern B needs YPA≥7.5 (missed), Pattern C needs rush att≥34 (30, missed), Pattern D needs pass att≥41 (30, missed) — no pattern matched for either team.","altTrendFavors":null,"away":"Los Angeles Chargers","awayMoneyline":185,"awayPDpg":-5.3,"awayQB":"Justin Herbert","awayQBRating":70.4,"awayScore":null,"awaySpread":4.5,"awaySpreadOdds":-110,"awayYPP":4.7,"confidence":"lean","correct":null,"gameTotal":38.5,"gameTotalOverOdds":-115,"gameTotalUnderOdds":-105,"home":"Baltimore Ravens","homeMoneyline":-225,"homePDpg":-1.85,"homeQB":"Jacoby Brissett","homeQBRating":79.7,"homeScore":null,"homeSpread":-4.5,"homeSpreadOdds":-108,"homeYPP":5.5,"offGap":51.61,"pick":"Baltimore Ravens","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"statLines":["PD/g -5.30 vs -1.85 (blended 50/50 2026/2025)","Yds/play 4.7 vs 5.5 · 51.6-pt gap","QB rating 70.4 vs 79.7 (Herbert vs Brissett)"],"storylines":[{"against":false,"fact":"Los Angeles Chargers (Pacific time) visits Baltimore Ravens (Eastern time) in a night game.","key":"west_night","leanPct":56.2,"leans":"Los Angeles Chargers","live":"1-2","name":"West Coast night owls","pct":56.2,"record":"41-32","says":"back","team":"Los Angeles Chargers","unit":"ATS","weight":0.5},{"against":true,"fact":"Los Angeles Chargers travels about 2,320 miles to play the Baltimore Ravens.","key":"cross_country","leanPct":53.2,"leans":"Los Angeles Chargers","live":"7-5","name":"Cross-country trip","pct":46.8,"record":"180-205","says":"fade","team":"Los Angeles Chargers","unit":"ATS","weight":1}],"time":"8:15 PM ET"}
   ]
 }
