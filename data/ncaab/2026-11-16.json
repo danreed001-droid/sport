@@ -15,7 +15,10 @@
       "awaySpread": 29.5,
       "homeSpreadOdds": -115,
       "awaySpreadOdds": -105,
-      "total": 158.5
+      "total": 158.5,
+      "gameTotal": 158.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401924265",
@@ -26,7 +29,27 @@
       "awaySpread": 34.5,
       "homeSpreadOdds": -105,
       "awaySpreadOdds": -115,
-      "total": 148.5
+      "total": 148.5,
+      "gameTotal": 148.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-1",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "UCLA Bruins",
+          "says": "fade",
+          "fact": "UCLA moved up from #22 to #9 in this week's AP poll.",
+          "record": "235-266",
+          "pct": 46.9,
+          "leans": "UCLA Bruins",
+          "leanPct": 53.1,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     }
   ]
 }
