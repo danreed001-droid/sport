@@ -529,6 +529,23 @@
           "unit": "ATS",
           "backfill": true,
           "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Washington Commanders",
+          "says": "back",
+          "fact": "Washington Commanders beat Philadelphia Eagles 27-10 last game despite 9 penalties for 70 yards to their 6 for 30.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Washington Commanders",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
         }
       ]
     },
@@ -609,6 +626,23 @@
           "pct": 61.1,
           "leans": "Carolina Panthers",
           "leanPct": 61.1,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Denver Broncos",
+          "says": "fade",
+          "fact": "Denver Broncos beat Kansas City Chiefs 28-24 last game while Kansas City Chiefs was penalized 11 times for 105 yards (to 6 for 45).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "Carolina Panthers",
+          "leanPct": 56.7,
           "against": false,
           "unit": "ATS",
           "backfill": true,
@@ -1015,6 +1049,23 @@
           "unit": "ATS",
           "backfill": true,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Chicago Bears",
+          "says": "back",
+          "fact": "Chicago Bears beat Seattle Seahawks 34-17 last game despite 10 penalties for 85 yards to their 5 for 43.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Chicago Bears",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
         }
       ]
     }

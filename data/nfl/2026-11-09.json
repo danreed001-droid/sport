@@ -66,7 +66,26 @@
       "altBlowoutCorrect": false,
       "altBlowoutReturn": -100.0,
       "altBlowoutCover": false,
-      "altBlowoutSpreadReturn": -100.0
+      "altBlowoutSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Buffalo Bills",
+          "says": "back",
+          "fact": "Buffalo Bills beat Baltimore Ravens 36-10 last game despite 10 penalties for 87 yards to their 7 for 38.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Buffalo Bills",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-11-10T12:59:35.324146+00:00"

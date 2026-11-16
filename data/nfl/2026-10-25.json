@@ -664,6 +664,23 @@
           "unit": "ATS",
           "backfill": true,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Carolina Panthers",
+          "says": "back",
+          "fact": "Carolina Panthers beat Philadelphia Eagles 25-14 last game despite 13 penalties for 149 yards to their 11 for 84.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Carolina Panthers",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
         }
       ]
     },

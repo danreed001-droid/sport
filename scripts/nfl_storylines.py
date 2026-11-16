@@ -91,6 +91,17 @@ STORIES = {
     "smoke_mirrors": ("Smoke and mirrors", "fade", (69, 80),
                       "a favorite with a winning record but a negative point differential (4+ games)"),
     "spoiler": ("Playing spoiler at home", "back", (36, 45), "week 14 or later, a .350-or-worse home team vs a .600+ team"),
+    # Penalty yards in a win (2026-11-16, nflverse play-by-play 2016-2025,
+    # 2020 left out -- a shorter span than the rest): a team that won its
+    # last game while being penalized 40+ more yards than the opponent was
+    # better than the score showed (back it: 134-102, 56.8%, halves 59/55, 7 of
+    # 9 seasons; at home 62.1%, home favorite 63.3%); one that won with the
+    # opponent penalized 40+ more yards had help (fade: 156-119). After a loss
+    # the gap means nothing. 13 of 48 split cells vs 6.3 by luck (p=0.01).
+    "beat_refs": ("Beat the refs too", "back", (134, 102),
+                  "won its last game while being penalized 40+ more yards than the opponent"),
+    "flag_help": ("Help from the flags", "fade", (156, 119),
+                  "won its last game while the opponent was penalized 40+ more yards"),
 }
 
 CODE = {"Arizona Cardinals": "ARI", "Atlanta Falcons": "ATL", "Baltimore Ravens": "BAL", "Buffalo Bills": "BUF",
@@ -326,6 +337,29 @@ def starting_qb(session, slate_qb, last):
     return None, ""
 
 
+_PEN = {}
+
+
+def penalty_yards(session, eid):
+    """{team displayName: (penalties, yards)} from ESPN's box score for a
+    finished game, or {} if unknown (hand-entered games have no box)."""
+    if str(eid).startswith("manual") or not eid:
+        return {}
+    if eid not in _PEN:
+        out = {}
+        try:
+            d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/football/nfl/summary?event={eid}", timeout=20).json()
+            for t in (d.get("boxscore") or {}).get("teams") or []:
+                for st in t.get("statistics") or []:
+                    if st.get("name") == "totalPenaltiesYards":
+                        n, y = str(st.get("displayValue", "")).split("-")
+                        out[t["team"]["displayName"]] = (int(n), int(y))
+        except Exception:  # noqa: BLE001
+            out = {}
+        _PEN[eid] = out
+    return _PEN[eid]
+
+
 def team_side(session, date_str, week, team, opp, is_home, prior, oprior, nxt, line, kick, slate_qb):
     """Storylines about `team` today. `prior` / `oprior` are its and the
     opponent's finished games before today, `nxt` its next game after today
@@ -394,6 +428,19 @@ def team_side(session, date_str, week, team, opp, is_home, prior, oprior, nxt, l
         out.append(entry("smoke_mirrors", team, opp, f"{team} is {record(prior)} but has been outscored "
                                                      f"{sum(p['pf'] for p in prior):g}-{sum(p['pa'] for p in prior):g}, "
                                                      f"and is a {line:+g} favorite."))
+    if last and last["final"] and last["m"] > 0:
+        pen = penalty_yards(session, last["eid"])
+        mine = next((v for k, v in pen.items() if k == team or _same_team(k, team)), None)
+        theirs = next((v for k, v in pen.items() if k == last["opp"] or _same_team(k, last["opp"])), None)
+        if mine and theirs:
+            gap = mine[1] - theirs[1]
+            if gap >= 40:
+                out.append(entry("beat_refs", team, opp, f"{team} beat {last['opp']} {last['pf']:g}-{last['pa']:g} last game despite "
+                                                         f"{mine[0]} penalties for {mine[1]} yards to their {theirs[0]} for {theirs[1]}."))
+            elif gap <= -40:
+                out.append(entry("flag_help", team, opp, f"{team} beat {last['opp']} {last['pf']:g}-{last['pa']:g} last game while "
+                                                         f"{last['opp']} was penalized {theirs[0]} times for {theirs[1]} yards "
+                                                         f"(to {mine[0]} for {mine[1]})."))
     if (is_home and week is not None and week >= 14 and prior and oprior and win_pct(prior) <= 0.35
             and win_pct(oprior) >= 0.6):
         out.append(entry("spoiler", team, opp, f"Week {week}: {team} ({record(prior)}) hosts {opp} ({record(oprior)})."))
@@ -445,6 +492,9 @@ def main():
     include_final = "--include-final" in args
     if include_final and not dry and "--backfill" not in args:
         sys.exit("--include-final only works with --dry-run (finished games keep their pre-kickoff storylines).")
+    only = next((a.split("=", 1)[1].split(",") for a in args if a.startswith("--only=")), None)
+    if only:
+        include_final = True  # add just these storylines to finished games; their other entries stay frozen
     dates = [a for a in args if not a.startswith("--")] or [today_et_str()]
     session = espn.make_session()
     for date_str in dates:
@@ -469,6 +519,12 @@ def main():
                 print(f"  {g['away']} @ {g['home']}: skipped ({exc.__class__.__name__}: {exc})")
                 continue
             new = new or []
+            if only:
+                if not isinstance(g.get("awayScore"), (int, float)):
+                    continue
+                old = g.get("storylines") or []
+                have = {(e["key"], e["team"]) for e in old}
+                new = old + [dict(e, backfill=True) for e in new if e["key"] in only and (e["key"], e["team"]) not in have]
             if new != (g.get("storylines") or []):
                 if new:
                     g["storylines"] = new

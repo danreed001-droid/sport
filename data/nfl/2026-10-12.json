@@ -120,6 +120,23 @@
           "unit": "ATS",
           "backfill": true,
           "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Los Angeles Rams",
+          "says": "back",
+          "fact": "Los Angeles Rams beat Philadelphia Eagles 24-20 last game despite 8 penalties for 100 yards to their 10 for 57.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Los Angeles Rams",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
         }
       ]
     }

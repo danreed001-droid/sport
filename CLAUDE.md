@@ -368,7 +368,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   once the game has a score. NFL: `scripts/nfl_storylines.py` (2010-2025,
   2020 left out; 62 tested in two rounds, 1 at p<0.05 vs 3.1 by chance, 16 shown; the wind
   story has no allowed live forecast source, and the QB-vs-old-team table runs
-  through 2025 and needs a refresh each offseason). CFB:
+  through 2025 and needs a refresh each offseason). Penalty storylines (2026-11-16, nflverse
+  play-by-play 2016-2025, 2020 out): "Beat the refs too" backs a team that
+  won its last game while penalized 40+ more yards than the opponent (134-102,
+  56.8%, halves 59/55; home favorite 63.3%), "Help from the flags" fades one
+  that won with the opponent penalized 40+ more (156-119); after a loss the gap
+  means nothing; split cells beat luck (13 vs 6.3, p=0.01). Live from ESPN's box
+  score `totalPenaltiesYards` (`penalty_yards`). `nfl_storylines.py --only=KEY
+  DATE...` adds just those storylines to finished games (others stay frozen);
+  backfilled 2026: beat_refs 7-6-1, flag_help 8-4 (fade). CFB:
   `scripts/cfb_storylines.py` (FBS vs FBS, 2015-2025, 2020 left out; 53
   tested, none at p<0.05 vs 2.7 by chance, 14 shown; AP poll from ESPN's
   weekly rankings, the date is skipped until that week's poll exists; bowls,

@@ -156,6 +156,23 @@
           "unit": "ATS",
           "backfill": true,
           "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Pittsburgh Steelers",
+          "says": "fade",
+          "fact": "Pittsburgh Steelers beat Atlanta Falcons 20-13 last game while Atlanta Falcons was penalized 9 times for 96 yards (to 7 for 52).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "New England Patriots",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
         }
       ]
     },
@@ -217,7 +234,26 @@
         "Yds/play 3.92 vs 7.89 \u00b7 97-pt gap",
         "QB rating 104.7 vs 107.1 (Wentz vs Williams)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Minnesota Vikings",
+          "says": "fade",
+          "fact": "Minnesota Vikings beat Green Bay Packers 39-22 last game while Green Bay Packers was penalized 12 times for 98 yards (to 3 for 15).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "Chicago Bears",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Backfilled: neither team's prior game was a 13+ point win (Panthers lost by 22, Falcons lost by 7).",
@@ -430,7 +466,26 @@
       "nflStatsCorrect": true,
       "nflStatsReturn": 340.0,
       "nflStatsCover": true,
-      "nflStatsSpreadReturn": 86.96
+      "nflStatsSpreadReturn": 86.96,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Baltimore Ravens",
+          "says": "back",
+          "fact": "Baltimore Ravens beat Indianapolis Colts 41-23 last game despite 10 penalties for 86 yards to their 4 for 29.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Baltimore Ravens",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Backfilled: neither team's prior game was a 13+ point win.",
@@ -627,7 +682,26 @@
         "Yds/play 6.43 vs 3.74 \u00b7 87-pt gap",
         "QB rating 120.8 vs 78.5 (Lawrence vs Nix)"
       ],
-      "time": "4:05 PM ET"
+      "time": "4:05 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Jacksonville Jaguars",
+          "says": "fade",
+          "fact": "Jacksonville Jaguars beat Cleveland Browns 34-10 last game while Cleveland Browns was penalized 11 times for 75 yards (to 4 for 25).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "Denver Broncos",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Backfilled: Raiders' prior game was a 14-pt win over MIA, but only 1 of 5 conditions hit (37 carries; not favored, no clear turnover pattern) \u2014 no regression flag.",

@@ -68,7 +68,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Chicago Bears",
+          "says": "back",
+          "fact": "Chicago Bears beat Atlanta Falcons 31-23 last game despite 12 penalties for 133 yards to their 4 for 31.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Chicago Bears",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-10-23T06:52:55.286016+00:00"

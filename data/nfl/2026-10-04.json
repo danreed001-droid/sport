@@ -897,6 +897,23 @@
           "unit": "ATS",
           "backfill": true,
           "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Denver Broncos",
+          "says": "fade",
+          "fact": "Denver Broncos beat Los Angeles Rams 30-26 last game while Los Angeles Rams was penalized 13 times for 91 yards (to 5 for 38).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "San Francisco 49ers",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
         }
       ]
     },

@@ -154,7 +154,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Cincinnati Bengals",
+          "says": "fade",
+          "fact": "Cincinnati Bengals beat Baltimore Ravens 35-13 last game while Baltimore Ravens was penalized 10 times for 57 yards (to 1 for 15).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "Tennessee Titans",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Cowboys off 38-21 win over PHI (17-pt margin, triggers check): led only 20-14 at half before pulling away (within-one-score condition met), favored by 6-7.5 today (met), ran 38 times (met, \u226533), and Dak has 5 INT/2 multi-INT games this season (turnover-prone history met) \u2014 but Arizona's defense is NOT a tough unit (31st in pass D, ~29.7 PPG allowed), so the 'opponent takes it away' condition fails. 4 of 5 sub-conditions hit \u2014 regression flag ON: +6 to Arizona Cardinals.",
@@ -784,7 +803,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Denver Broncos",
+          "says": "back",
+          "fact": "Denver Broncos beat Arizona Cardinals 30-16 last game despite 11 penalties for 114 yards to their 9 for 59.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Denver Broncos",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Dolphins won their last game by only 3, under the 17-point trigger; Patriots lost \u2014 check not applicable to either.",

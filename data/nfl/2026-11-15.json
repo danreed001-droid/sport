@@ -222,7 +222,26 @@
       "nflStatsCorrect": null,
       "nflStatsReturn": null,
       "nflStatsCover": false,
-      "nflStatsSpreadReturn": -100.0
+      "nflStatsSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Buffalo Bills",
+          "says": "back",
+          "fact": "Buffalo Bills beat Minnesota Vikings 23-6 last game despite 8 penalties for 62 yards to their 4 for 20.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Buffalo Bills",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Texans won last game 44-22 (+22) but only 1 of 5 sub-conditions clearly hit (favored by 3+ today); takeaway margin ~even, halftime unconfirmed, rush attempts (28) below 33, opponent Cleveland not an elite defense by the stated thresholds \u2014 does not fire.",
@@ -309,6 +328,23 @@
           "unit": "ATS",
           "weight": 1,
           "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Houston Texans",
+          "says": "fade",
+          "fact": "Houston Texans beat Los Angeles Chargers 44-22 last game while Los Angeles Chargers was penalized 9 times for 79 yards (to 6 for 36).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "Cleveland Browns",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
         }
       ],
       "time": "1:00 PM ET",
@@ -831,7 +867,26 @@
       "nflStatsCorrect": true,
       "nflStatsReturn": 46.08,
       "nflStatsCover": true,
-      "nflStatsSpreadReturn": 90.91
+      "nflStatsSpreadReturn": 90.91,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Dallas Cowboys",
+          "says": "back",
+          "fact": "Dallas Cowboys beat Indianapolis Colts 27-23 last game despite 14 penalties for 153 yards to their 9 for 67.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Dallas Cowboys",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Steelers off 27-6 home win over CLE: takeaway margin only +1 (2 takeaways, 1 giveaway) and led 20-6 at half (not padded); 3.5-pt underdog today; Cincinnati not top 10 in takeaways (12), top 5 in points allowed (21.9) or top 5 in pass D (14th); 33 rush att is the only clear hit \u2014 at most 2 of 5, does not fire. (Bengals' own 34-17 win over ATL only hit 2 of 5 conditions and does not fire on their side.)",
@@ -895,7 +950,26 @@
       "altBlowoutCorrect": null,
       "altBlowoutReturn": null,
       "altBlowoutCover": null,
-      "altBlowoutSpreadReturn": null
+      "altBlowoutSpreadReturn": null,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Cincinnati Bengals",
+          "says": "fade",
+          "fact": "Cincinnati Bengals beat Atlanta Falcons 34-17 last game while Atlanta Falcons was penalized 12 times for 88 yards (to 6 for 43).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "Pittsburgh Steelers",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-11-16T07:18:35.982078+00:00"

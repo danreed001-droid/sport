@@ -200,7 +200,43 @@
         "Yds/play 5.75 vs 5.26 \u00b7 19.4-pt gap",
         "QB rating 82.8 vs 86.5 (Bagent vs Love)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Green Bay Packers",
+          "says": "back",
+          "fact": "Green Bay Packers beat Tampa Bay Buccaneers 17-14 last game despite 10 penalties for 68 yards to their 4 for 17.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Green Bay Packers",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Chicago Bears",
+          "says": "fade",
+          "fact": "Chicago Bears beat New York Jets 23-12 last game while New York Jets was penalized 12 times for 76 yards (to 4 for 29).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "Green Bay Packers",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable \u2014 Browns won by only 3 points; Jets lost.",
@@ -397,7 +433,26 @@
         "Yds/play 4.52 vs 5.22 \u00b7 38.7-pt gap",
         "QB rating 73.9 vs 81.6 (Jones vs Rodgers)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Indianapolis Colts",
+          "says": "fade",
+          "fact": "Indianapolis Colts beat Washington Commanders 30-13 last game while Washington Commanders was penalized 10 times for 84 yards (to 1 for 5).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "Pittsburgh Steelers",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altBlowoutCheck": "Not applicable \u2014 Raiders lost their last game; Patriots won by only 3 points.",
@@ -936,7 +991,26 @@
         "Yds/play 6.66 vs 5.85 \u00b7 25.8-pt gap",
         "QB rating 103.1 vs 113.1 (Huntley vs Penix)"
       ],
-      "time": "8:20 PM ET"
+      "time": "8:20 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Baltimore Ravens",
+          "says": "back",
+          "fact": "Baltimore Ravens beat Tennessee Titans 24-18 last game despite 13 penalties for 131 yards to their 5 for 32.",
+          "record": "134-102",
+          "pct": 56.8,
+          "leans": "Baltimore Ravens",
+          "leanPct": 56.8,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ]
 }

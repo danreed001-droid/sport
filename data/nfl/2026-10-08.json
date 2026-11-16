@@ -82,7 +82,26 @@
       "nflStatsCorrect": true,
       "nflStatsReturn": 360.0,
       "nflStatsCover": true,
-      "nflStatsSpreadReturn": 90.91
+      "nflStatsSpreadReturn": 90.91,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Dallas Cowboys",
+          "says": "fade",
+          "fact": "Dallas Cowboys beat Houston Texans 34-30 last game while Houston Texans was penalized 13 times for 90 yards (to 6 for 47).",
+          "record": "156-119",
+          "pct": 56.7,
+          "leans": "Tampa Bay Buccaneers",
+          "leanPct": 56.7,
+          "against": false,
+          "unit": "ATS",
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-10-09T18:33:06.588392+00:00"
