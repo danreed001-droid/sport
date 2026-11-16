@@ -316,11 +316,16 @@ def ncaabstats_side(g):
 # tally, frozen at the start) sits out -- it counts neither for nor against
 # the model anywhere on the page. Your own picks always count. The pick log
 # keeps what the pick would have done ("sx"/"sxa"), so the change can be judged.
-STORY_VETO_FROM = "2026-11-13"
+# The storyline veto ran 2026-11-13 to 2026-11-15 and was removed on
+# 2026-11-16 at the user's request (storylines didn't do much better than the
+# models): every model pick counts again, those days included. Set a date
+# here to turn it back on from that date.
+STORY_VETO_FROM = None
+STORY_VETO_REMOVED = "2026-11-16"
 
 
 def story_vetoed(date_str, g, side):
-    if date_str < STORY_VETO_FROM or side not in ("home", "away") or not g.get("storylines"):
+    if not STORY_VETO_FROM or date_str < STORY_VETO_FROM or side not in ("home", "away") or not g.get("storylines"):
         return False
     net = storyline_buckets.net_toward_home(g)
     return (net < 0) if side == "home" else (net > 0)
@@ -568,6 +573,7 @@ def build():
         "atsTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}),
         "ouTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}, totals=True),
         "storyVetoFrom": STORY_VETO_FROM,
+        "storyVetoRemoved": STORY_VETO_REMOVED,
         "storyBacktest": storyline_buckets.BACKTEST,
         "storyBacktestNotes": storyline_buckets.NOTES,
         "statsBackfilled": stats_backfilled,
