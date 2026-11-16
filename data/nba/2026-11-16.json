@@ -138,8 +138,8 @@
         "awaySpread": 8.5,
         "homeSpreadOdds": -113,
         "awaySpreadOdds": -107,
-        "homeMoneyline": -359,
-        "awayMoneyline": 286
+        "homeMoneyline": -344,
+        "awayMoneyline": 276
       },
       "statsSpread": -8.5,
       "storylines": [
@@ -232,8 +232,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 232.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -114,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Washington Wizards",
       "homeMoneyline": 146,
       "homeNetRtg": -7.4,
@@ -260,8 +260,8 @@
         "awaySpread": -3.5,
         "homeSpreadOdds": -110,
         "awaySpreadOdds": -110,
-        "homeMoneyline": 136,
-        "awayMoneyline": -161
+        "homeMoneyline": 131,
+        "awayMoneyline": -155
       },
       "statsRules": [
         {
@@ -303,9 +303,9 @@
       "awaySpreadOdds": -115,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 225.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -106,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Brooklyn Nets",
       "homeMoneyline": 191,
       "homeNetRtg": -6.3,
@@ -330,8 +330,8 @@
       "statsLine": {
         "homeSpread": 4.5,
         "awaySpread": -4.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -118,
         "homeMoneyline": 180,
         "awayMoneyline": -217
       },
@@ -345,7 +345,7 @@
       ],
       "statsSpread": 4.5,
       "time": "7:30 PM ET",
-      "totalsLine": 225.5
+      "totalsLine": 226.5
     },
     {
       "altCategoryTally": "1-4",
@@ -375,9 +375,9 @@
       "awaySpreadOdds": -112,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 231.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 232.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Miami Heat",
       "homeMoneyline": 120,
       "homeNetRtg": -1.1,
@@ -402,8 +402,8 @@
       "statsLine": {
         "homeSpread": 1.5,
         "awaySpread": -1.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -116,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
         "homeMoneyline": 110,
         "awayMoneyline": -130
       },
@@ -445,7 +445,7 @@
         }
       ],
       "time": "7:30 PM ET",
-      "totalsLine": 231.5
+      "totalsLine": 232.5
     },
     {
       "altCategoryTally": "1-2",
@@ -475,9 +475,9 @@
       "awaySpreadOdds": -110,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 227.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Minnesota Timberwolves",
       "homeMoneyline": -142,
       "homeNetRtg": 11.4,
@@ -507,7 +507,7 @@
       },
       "statsSpread": -2.5,
       "time": "8:00 PM ET",
-      "totalsLine": 227.5
+      "totalsLine": 228.5
     },
     {
       "altCategoryTally": "1-1",
