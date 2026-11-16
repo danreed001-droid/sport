@@ -1,0 +1,358 @@
+{
+  "date": "2026-11-16",
+  "weekday": "Monday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-16T05:39:36Z",
+  "games": [
+    {
+      "espnId": "401909994",
+      "away": "Orlando Magic",
+      "home": "Boston Celtics",
+      "time": "7:00 PM ET",
+      "homeSpread": -8.5,
+      "awaySpread": 8.5,
+      "homeSpreadOdds": -119.0,
+      "awaySpreadOdds": -102.0,
+      "homeMoneyline": -378.0,
+      "awayMoneyline": 300.0,
+      "statsSpread": -8.5,
+      "statsLine": {
+        "homeSpread": -8.5,
+        "awaySpread": 8.5,
+        "homeSpreadOdds": -119,
+        "awaySpreadOdds": -102,
+        "homeMoneyline": -378,
+        "awayMoneyline": 300
+      },
+      "totalsLine": 211.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "5-3",
+          "key": "fat_happy",
+          "name": "Fat and happy",
+          "team": "Boston Celtics",
+          "says": "fade",
+          "fact": "Boston Celtics has won 6 straight and is a -8.5 favorite.",
+          "record": "157-136",
+          "pct": 53.6,
+          "leans": "Orlando Magic",
+          "leanPct": 53.6,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909995",
+      "away": "Chicago Bulls",
+      "home": "Cleveland Cavaliers",
+      "time": "7:00 PM ET",
+      "homeSpread": -9.5,
+      "awaySpread": 9.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -395.0,
+      "awayMoneyline": 312.0,
+      "statsSpread": -9.5,
+      "statsLine": {
+        "homeSpread": -9.5,
+        "awaySpread": 9.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -395,
+        "awayMoneyline": 312
+      },
+      "totalsLine": 243.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-6",
+          "key": "quiet_giant",
+          "name": "The quiet giant vs the hype machine",
+          "team": "Cleveland Cavaliers",
+          "says": "back",
+          "fact": "Cleveland Cavaliers' point differential (+1.6 a game) is better than its 7-7 record, and Chicago Bulls' record is better than its -11.3.",
+          "record": "105-86",
+          "pct": 55.0,
+          "leans": "Cleveland Cavaliers",
+          "leanPct": 55.0,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "5-0",
+          "key": "emperor",
+          "name": "The emperor's new clothes",
+          "team": "Cleveland Cavaliers",
+          "says": "fade",
+          "fact": "Cleveland Cavaliers is a -9.5 favorite but has covered 5 of 14 this season.",
+          "record": "181-152",
+          "pct": 54.4,
+          "leans": "Chicago Bulls",
+          "leanPct": 54.4,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "4-2",
+          "key": "letdown",
+          "name": "Letdown spot",
+          "team": "Cleveland Cavaliers",
+          "says": "fade",
+          "fact": "Cleveland Cavaliers is a -9.5 favorite vs Chicago Bulls (3-9): it's playing its 3rd game in 4 nights and Chicago Bulls is rested.",
+          "record": "359-301",
+          "pct": 54.4,
+          "leans": "Chicago Bulls",
+          "leanPct": 54.4,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "5-7",
+          "key": "schedule_loss",
+          "name": "The schedule loss",
+          "team": "Chicago Bulls",
+          "says": "fade",
+          "fact": "Chicago Bulls' 4th game in 6 nights, on the road; Cleveland Cavaliers has had 1 day off.",
+          "record": "867-767",
+          "pct": 53.1,
+          "leans": "Cleveland Cavaliers",
+          "leanPct": 53.1,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909996",
+      "away": "Memphis Grizzlies",
+      "home": "Washington Wizards",
+      "time": "7:00 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": 146.0,
+      "awayMoneyline": -173.0,
+      "statsSpread": 3.5,
+      "statsLine": {
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 146,
+        "awayMoneyline": -173
+      },
+      "statsFavors": "Memphis Grizzlies",
+      "statsRules": [
+        {
+          "rule": 60,
+          "name": "Back a team that won its last two by 10+ vs. an opponent whose last game went over its total by 20+ (on trial)",
+          "backtest": "64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27",
+          "detail": "Backing Memphis Grizzlies: won its last two by 10+, and Washington Wizards's last game (119-147 vs Houston Rockets) went over its total of 224.5 by 41.5 -- 64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27."
+        }
+      ],
+      "statsCheck": "Rule 60: Backing Memphis Grizzlies: won its last two by 10+, and Washington Wizards's last game (119-147 vs Houston Rockets) went over its total of 224.5 by 41.5 -- 64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27.",
+      "totalsLine": 229.5
+    },
+    {
+      "espnId": "401909997",
+      "away": "Philadelphia 76ers",
+      "home": "Brooklyn Nets",
+      "time": "7:30 PM ET",
+      "homeSpread": 5.5,
+      "awaySpread": -5.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": 191.0,
+      "awayMoneyline": -230.0,
+      "statsSpread": 5.5,
+      "statsLine": {
+        "homeSpread": 5.5,
+        "awaySpread": -5.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 191,
+        "awayMoneyline": -230
+      },
+      "statsFavors": "Philadelphia 76ers",
+      "statsRules": [
+        {
+          "rule": 59,
+          "name": "Fade a home team in its first game back from 4+ straight road games when it's being outscored by 5+ a game, with at least a day off (on trial)",
+          "backtest": "65.1% ATS, 69-37 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-7; 2024-now 27-16",
+          "detail": "Fading Brooklyn Nets: first home game after 4 straight on the road, and it's being outscored by 6.2 a game this season -- 65.1% ATS, 69-37 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-7; 2024-now 27-16."
+        }
+      ],
+      "statsCheck": "Rule 59: Fading Brooklyn Nets: first home game after 4 straight on the road, and it's being outscored by 6.2 a game this season -- 65.1% ATS, 69-37 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-7; 2024-now 27-16.",
+      "totalsLine": 224.5
+    },
+    {
+      "espnId": "401909998",
+      "away": "Houston Rockets",
+      "home": "Miami Heat",
+      "time": "7:30 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": 120.0,
+      "awayMoneyline": -142.0,
+      "statsSpread": 2.5,
+      "statsLine": {
+        "homeSpread": 2.5,
+        "awaySpread": -2.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 120,
+        "awayMoneyline": -142
+      },
+      "statsFavors": "Miami Heat",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Miami Heat: covered its last two games (by 24.5 vs Detroit Pistons and by 9.5 vs Cleveland Cavaliers), now at home in game 14 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        },
+        {
+          "rule": 60,
+          "name": "Back a team that won its last two by 10+ vs. an opponent whose last game went over its total by 20+ (on trial)",
+          "backtest": "64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27",
+          "detail": "Backing Miami Heat: won its last two by 10+, and Houston Rockets's last game (147-119 at Washington Wizards) went over its total of 224.5 by 41.5 -- 64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27."
+        },
+        {
+          "rule": 63,
+          "name": "Fade a team on a back-to-back that won last night shooting 45%+ from three (25+ attempts) (on trial)",
+          "backtest": "61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33",
+          "detail": "Fading Houston Rockets: won last night shooting 15-of-33 (45%) from three, now on the second night of a back-to-back -- 61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing Miami Heat: covered its last two games (by 24.5 vs Detroit Pistons and by 9.5 vs Cleveland Cavaliers), now at home in game 14 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 60: Backing Miami Heat: won its last two by 10+, and Houston Rockets's last game (147-119 at Washington Wizards) went over its total of 224.5 by 41.5 -- 64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27. Rule 63: Fading Houston Rockets: won last night shooting 15-of-33 (45%) from three, now on the second night of a back-to-back -- 61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33.",
+      "totalsLine": 230.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "5-7",
+          "key": "schedule_loss",
+          "name": "The schedule loss",
+          "team": "Houston Rockets",
+          "says": "fade",
+          "fact": "Houston Rockets' 4th game in 6 nights, on the road; Miami Heat has had 1 day off.",
+          "record": "867-767",
+          "pct": 53.1,
+          "leans": "Miami Heat",
+          "leanPct": 53.1,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401909999",
+      "away": "Portland Trail Blazers",
+      "home": "Minnesota Timberwolves",
+      "time": "8:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -142.0,
+      "awayMoneyline": 120.0,
+      "statsSpread": -2.5,
+      "statsLine": {
+        "homeSpread": -2.5,
+        "awaySpread": 2.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -142,
+        "awayMoneyline": 120
+      },
+      "totalsLine": 228.5
+    },
+    {
+      "espnId": "401910000",
+      "away": "Golden State Warriors",
+      "home": "New Orleans Pelicans",
+      "time": "8:00 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -116.0,
+      "awaySpreadOdds": -104.0,
+      "homeMoneyline": 128.0,
+      "awayMoneyline": -152.0,
+      "statsSpread": 3.5,
+      "statsLine": {
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": 128,
+        "awayMoneyline": -152
+      },
+      "totalsLine": 225.5,
+      "totalsFavors": "Over",
+      "totalsRules": [
+        {
+          "rule": 16,
+          "detail": "Golden State Warriors lost by 38 on the road at San Antonio Spurs on 2026-11-13; now on the road vs. worse-record New Orleans Pelicans.",
+          "name": "Over when a team lost by 30+ on the road last game and now faces a weaker team (on trial)",
+          "backtest": "67.2% overs, 41-20 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 11-8"
+        }
+      ],
+      "totalsCheck": "Rule 16: Golden State Warriors lost by 38 on the road at San Antonio Spurs on 2026-11-13; now on the road vs. worse-record New Orleans Pelicans.",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-1",
+          "key": "second_battle",
+          "name": "Second battle",
+          "team": "New Orleans Pelicans",
+          "says": "back",
+          "fact": "New Orleans Pelicans lost to Golden State Warriors 87-138 7 days ago and is at home tonight.",
+          "record": "220-182",
+          "pct": 54.7,
+          "leans": "New Orleans Pelicans",
+          "leanPct": 54.7,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "1-0",
+          "key": "payback",
+          "name": "Payback with interest",
+          "team": "New Orleans Pelicans",
+          "says": "back",
+          "fact": "New Orleans Pelicans lost the last meeting 87-138 (2026-11-09).",
+          "record": "234-263",
+          "pct": 47.1,
+          "leans": "Golden State Warriors",
+          "leanPct": 52.9,
+          "against": true
+        }
+      ]
+    },
+    {
+      "espnId": "401910001",
+      "away": "Phoenix Suns",
+      "home": "Denver Nuggets",
+      "time": "9:00 PM ET",
+      "homeSpread": -10.5,
+      "awaySpread": 10.5,
+      "homeSpreadOdds": -104.0,
+      "awaySpreadOdds": -116.0,
+      "homeMoneyline": -438.0,
+      "awayMoneyline": 341.0,
+      "statsSpread": -10.5,
+      "statsLine": {
+        "homeSpread": -10.5,
+        "awaySpread": 10.5,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": -438,
+        "awayMoneyline": 341
+      },
+      "totalsLine": 228.5
+    }
+  ]
+}
