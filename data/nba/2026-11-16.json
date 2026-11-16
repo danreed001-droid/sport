@@ -17,12 +17,12 @@
       "awaySpreadOdds": -102.0,
       "homeMoneyline": -378.0,
       "awayMoneyline": 300.0,
-      "statsSpread": -8.5,
+      "statsSpread": -9.5,
       "statsLine": {
-        "homeSpread": -8.5,
-        "awaySpread": 8.5,
-        "homeSpreadOdds": -119,
-        "awaySpreadOdds": -102,
+        "homeSpread": -9.5,
+        "awaySpread": 9.5,
+        "homeSpreadOdds": -102,
+        "awaySpreadOdds": -119,
         "homeMoneyline": -378,
         "awayMoneyline": 300
       },
@@ -35,14 +35,17 @@
           "name": "Fat and happy",
           "team": "Boston Celtics",
           "says": "fade",
-          "fact": "Boston Celtics has won 6 straight and is a -8.5 favorite.",
+          "fact": "Boston Celtics has won 6 straight and is a -9.5 favorite.",
           "record": "157-136",
           "pct": 53.6,
           "leans": "Orlando Magic",
           "leanPct": 53.6,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 211.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -109
     },
     {
       "espnId": "401909995",
@@ -64,7 +67,7 @@
         "homeMoneyline": -395,
         "awayMoneyline": 312
       },
-      "totalsLine": 243.5,
+      "totalsLine": 242.5,
       "storylines": [
         {
           "weight": 1,
@@ -122,7 +125,10 @@
           "leanPct": 53.1,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 242.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401909996",
@@ -135,12 +141,12 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": 146.0,
       "awayMoneyline": -173.0,
-      "statsSpread": 3.5,
+      "statsSpread": 4.5,
       "statsLine": {
-        "homeSpread": 3.5,
-        "awaySpread": -3.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
         "homeMoneyline": 146,
         "awayMoneyline": -173
       },
@@ -154,7 +160,10 @@
         }
       ],
       "statsCheck": "Rule 60: Backing Memphis Grizzlies: won its last two by 10+, and Washington Wizards's last game (119-147 vs Houston Rockets) went over its total of 224.5 by 41.5 -- 64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27.",
-      "totalsLine": 229.5
+      "totalsLine": 229.5,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401909997",
@@ -171,10 +180,10 @@
       "statsLine": {
         "homeSpread": 5.5,
         "awaySpread": -5.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": 191,
-        "awayMoneyline": -230
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -117,
+        "homeMoneyline": 197,
+        "awayMoneyline": -238
       },
       "statsFavors": "Philadelphia 76ers",
       "statsRules": [
@@ -186,7 +195,10 @@
         }
       ],
       "statsCheck": "Rule 59: Fading Brooklyn Nets: first home game after 4 straight on the road, and it's being outscored by 6.2 a game this season -- 65.1% ATS, 69-37 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-7; 2024-now 27-16.",
-      "totalsLine": 224.5
+      "totalsLine": 225.5,
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909998",
@@ -205,8 +217,8 @@
         "awaySpread": -2.5,
         "homeSpreadOdds": -108,
         "awaySpreadOdds": -112,
-        "homeMoneyline": 120,
-        "awayMoneyline": -142
+        "homeMoneyline": 114,
+        "awayMoneyline": -135
       },
       "statsFavors": "Miami Heat",
       "statsRules": [
@@ -246,7 +258,10 @@
           "leanPct": 53.1,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 230.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909999",
@@ -263,12 +278,15 @@
       "statsLine": {
         "homeSpread": -2.5,
         "awaySpread": 2.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -115,
         "homeMoneyline": -142,
         "awayMoneyline": 120
       },
-      "totalsLine": 228.5
+      "totalsLine": 228.5,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910000",
@@ -330,7 +348,10 @@
           "leanPct": 52.9,
           "against": true
         }
-      ]
+      ],
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -106
     },
     {
       "espnId": "401910001",
@@ -347,12 +368,15 @@
       "statsLine": {
         "homeSpread": -10.5,
         "awaySpread": 10.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -116,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
         "homeMoneyline": -438,
         "awayMoneyline": 341
       },
-      "totalsLine": 228.5
+      "totalsLine": 227.5,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     }
   ]
 }

@@ -2,7 +2,7 @@
   "date": "2026-11-15",
   "weekday": "Sunday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-15T16:30:00Z",
   "auditChanges": [
     "NCAAB Boise State vs Nebraska: venue corrected to neutral site (Sioux Falls); no pick change",
@@ -33,7 +33,7 @@
       "awayMoneyline": -410,
       "awayPDpg": 21.9,
       "awayRank": 10,
-      "awayScore": null,
+      "awayScore": 78.0,
       "awaySpread": -8.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -45,7 +45,7 @@
       "homeMoneyline": 320,
       "homePDpg": -3.92,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 98.0,
       "homeSpread": 8.5,
       "homeSpreadOdds": -108,
       "offGap": 23.9,
@@ -74,7 +74,8 @@
           "says": "back",
           "team": "Memphis Tigers",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -89,7 +90,8 @@
           "says": "fade",
           "team": "Louisville Cardinals",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -104,7 +106,8 @@
           "says": "fade",
           "team": "Louisville Cardinals",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "1:00 PM ET"
@@ -133,7 +136,7 @@
       "awayMoneyline": 380,
       "awayPDpg": 24.02,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 75.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -145,7 +148,7 @@
       "homeMoneyline": -500,
       "homePDpg": 19.62,
       "homeRank": 25,
-      "homeScore": null,
+      "homeScore": 102.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -110,
       "offGap": 17.58,
@@ -186,7 +189,7 @@
       "awayMoneyline": 3500,
       "awayPDpg": 9.37,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 79.0,
       "awaySpread": 28.5,
       "awaySpreadOdds": -105,
       "confidence": "toss-up",
@@ -198,14 +201,14 @@
       "homeMoneyline": -20000,
       "homePDpg": 12.57,
       "homeRank": 20,
-      "homeScore": null,
+      "homeScore": 123.0,
       "homeSpread": -28.5,
       "homeSpreadOdds": -115,
       "offGap": 44.5,
       "pick": "Michigan Wolverines",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 86.96,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -239,7 +242,7 @@
       "awayMoneyline": 185,
       "awayPDpg": 20.49,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 72.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -251,7 +254,7 @@
       "homeMoneyline": -225,
       "homePDpg": 24.8,
       "homeRank": 7,
-      "homeScore": null,
+      "homeScore": 75.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -105,
       "offGap": 5.22,
@@ -292,7 +295,7 @@
       "awayMoneyline": 900,
       "awayPDpg": 11.4,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 62.0,
       "awaySpread": 12.5,
       "awaySpreadOdds": -104,
       "confidence": "skip",
@@ -304,7 +307,7 @@
       "homeMoneyline": -900,
       "homePDpg": 19.82,
       "homeRank": 13,
-      "homeScore": null,
+      "homeScore": 79.0,
       "homeSpread": -12.5,
       "homeSpreadOdds": 104,
       "offGap": 15.11,
@@ -344,7 +347,7 @@
       "awayMoneyline": 65000,
       "awayPDpg": -24.9,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 46.0,
       "awaySpread": 46.5,
       "awaySpreadOdds": 100,
       "confidence": "solid",
@@ -356,14 +359,14 @@
       "homeMoneyline": -66667,
       "homePDpg": 8.85,
       "homeRank": 21,
-      "homeScore": null,
+      "homeScore": 122.0,
       "homeSpread": -46.5,
       "homeSpreadOdds": 100,
       "offGap": 90.11,
       "pick": "USC Trojans",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -373,5 +376,6 @@
       ],
       "time": "7:00 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-16T07:18:41.760275+00:00"
 }

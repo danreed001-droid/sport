@@ -2,7 +2,7 @@
   "date": "2026-11-15",
   "weekday": "Sunday",
   "sport": "cfb",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-15T13:30:00-05:00",
   "games": [
     {
@@ -37,7 +37,7 @@
       "awayQB": "Trinidad Chambliss",
       "awayQBEff": 135.32,
       "awayRank": 19,
-      "awayScore": null,
+      "awayScore": 17.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -105,
       "awayYPP": 5.85,
@@ -49,7 +49,7 @@
       "homeQB": "John Mateer",
       "homeQBEff": 139.3,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 24.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -110,
       "homeYPP": 5.14,
@@ -84,9 +84,11 @@
           "leans": "Oklahoma",
           "leanPct": 51.5,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     }
-  ]
+  ],
+  "scoredAt": "2026-11-16T07:18:37.839753+00:00"
 }

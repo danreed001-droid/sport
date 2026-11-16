@@ -1,4 +1,12 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
+401909994,2026-11-16,11/16 - 7:00 PM EST,Orlando Magic,0,-,Boston Celtics,0,-,-,-,7:00 PM
+401909995,2026-11-16,11/16 - 7:00 PM EST,Chicago Bulls,0,-,Cleveland Cavaliers,0,-,-,-,7:00 PM
+401909996,2026-11-16,11/16 - 7:00 PM EST,Memphis Grizzlies,0,-,Washington Wizards,0,-,-,-,7:00 PM
+401909997,2026-11-16,11/16 - 7:30 PM EST,Philadelphia 76ers,0,-,Brooklyn Nets,0,-,-,-,7:30 PM
+401909998,2026-11-16,11/16 - 7:30 PM EST,Houston Rockets,0,-,Miami Heat,0,-,-,-,7:30 PM
+401909999,2026-11-16,11/16 - 8:00 PM EST,Portland Trail Blazers,0,-,Minnesota Timberwolves,0,-,-,-,8:00 PM
+401910000,2026-11-16,11/16 - 8:00 PM EST,Golden State Warriors,0,-,New Orleans Pelicans,0,-,-,-,8:00 PM
+401910001,2026-11-16,11/16 - 9:00 PM EST,Phoenix Suns,0,-,Denver Nuggets,0,-,-,-,9:00 PM
 401909985,2026-11-15,Final,Indiana Pacers,124,-,Philadelphia 76ers,131,-,235,-288,1:00 PM
 401909986,2026-11-15,Final,Los Angeles Lakers,131,-,Phoenix Suns,123,-,-161,136,4:00 PM
 401909987,2026-11-15,Final,Charlotte Hornets,105,-,LA Clippers,113,-,100,-118,4:30 PM
@@ -6,8 +14,8 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401909989,2026-11-15,Final,Dallas Mavericks,94,-,Boston Celtics,131,-,640,-970,6:00 PM
 401909990,2026-11-15,Final/OT,New York Knicks,112,-,Toronto Raptors,108,-,-173,146,6:00 PM
 401909991,2026-11-15,Final,Houston Rockets,147,-,Washington Wizards,119,-,-359,286,7:00 PM
-401909992,2026-11-15,49.0 - 3rd,Atlanta Hawks,85,-,Milwaukee Bucks,78,-,-,-,8:00 PM
-401909993,2026-11-15,7:59 - 2nd,Oklahoma City Thunder,37,-,Sacramento Kings,39,-,-,-,9:00 PM
+401909992,2026-11-15,Final,Atlanta Hawks,113,-,Milwaukee Bucks,106,-,-351,281,8:00 PM
+401909993,2026-11-15,Final,Oklahoma City Thunder,125,-,Sacramento Kings,103,-,-620,458,9:00 PM
 401909980,2026-11-14,Final,Denver Nuggets,116,-,New Orleans Pelicans,108,-,-650,470,7:00 PM
 401909981,2026-11-14,Final,Dallas Mavericks,117,-,Cleveland Cavaliers,127,-,-344,276,7:30 PM
 401909982,2026-11-14,Final,Detroit Pistons,117,-,Miami Heat,137,-,-173,146,8:00 PM
