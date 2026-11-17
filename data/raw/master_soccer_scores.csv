@@ -1,69 +1,69 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401929704,2026-11-17,Scheduled,Sint Maarten,0,-,Belize,0,-,-,-,2:00 PM
-401929769,2026-11-17,Scheduled,Cayman Islands,0,-,Dominica,0,-,-,-,2:00 PM
-401929767,2026-11-17,Scheduled,Bonaire,0,-,St. Kitts and Nevis,0,-,-,-,2:00 PM
-401929768,2026-11-17,Scheduled,Barbados,0,-,St. Lucia,0,-,-,-,2:00 PM
+401929704,2026-11-17,FT,Sint Maarten,2,-,Belize,1,-,-,-,2:00 PM
+401929769,2026-11-17,FT,Cayman Islands,0,-,Dominica,5,-,-,-,2:00 PM
+401929767,2026-11-17,FT,Bonaire,2,-,St. Kitts and Nevis,3,-,-,-,2:00 PM
+401929768,2026-11-17,FT,Barbados,0,-,St. Lucia,2,-,-,-,2:00 PM
 401929765,2026-11-17,Scheduled,St. Vincent and the Grenadines,0,-,French Guiana,0,-,-,-,7:00 PM
 401929766,2026-11-17,Scheduled,Haiti,0,-,United States,0,-,-,-,7:00 PM
 401929764,2026-11-17,Scheduled,St. Martin,0,-,El Salvador,0,-,-,-,8:00 PM
 401929763,2026-11-17,Scheduled,Jamaica,0,-,Mexico,0,-,-,-,9:30 PM
 401929703,2026-11-17,Scheduled,Montserrat,0,-,Nicaragua,0,-,-,-,10:00 PM
-401861196,2026-11-17,Scheduled,Romania,0,-,Bosnia-Herzegovina,0,-,-,-,2:45 PM
-401861194,2026-11-17,Scheduled,Norway,0,-,Denmark,0,-,-,-,2:45 PM
-401861191,2026-11-17,Scheduled,Northern Ireland,0,-,Hungary,0,-,-,-,2:45 PM
-401861193,2026-11-17,Scheduled,Austria,0,-,Israel,0,-,-,-,2:45 PM
-401861195,2026-11-17,Scheduled,Sweden,0,-,Poland,0,-,-,-,2:45 PM
-401861192,2026-11-17,Scheduled,Kosovo,0,-,Republic of Ireland,0,-,-,-,2:45 PM
-401861190,2026-11-17,Scheduled,Georgia,0,-,Ukraine,0,-,-,-,2:45 PM
-401861189,2026-11-17,Scheduled,Portugal,0,-,Wales,0,-,-,-,2:45 PM
+401861196,2026-11-17,FT,Romania,1,-,Bosnia-Herzegovina,2,-,-,-,2:45 PM
+401861194,2026-11-17,FT,Norway,3,-,Denmark,2,-,-,-,2:45 PM
+401861191,2026-11-17,FT,Northern Ireland,1,-,Hungary,1,-,-,-,2:45 PM
+401861193,2026-11-17,FT,Austria,1,-,Israel,1,-,-,-,2:45 PM
+401861195,2026-11-17,FT,Sweden,1,-,Poland,1,-,-,-,2:45 PM
+401861192,2026-11-17,FT,Kosovo,0,-,Republic of Ireland,3,-,-,-,2:45 PM
+401861190,2026-11-17,FT,Georgia,0,-,Ukraine,1,-,-,-,2:45 PM
+401861189,2026-11-17,FT,Portugal,3,-,Wales,2,-,-,-,2:45 PM
 401933879,2026-11-17,FT,Cook Islands,3,-,Tahiti,3,-,-,-,12:30 AM
 401930237,2026-11-17,FT,Yemen,1,-,Malaysia,2,-,-,-,1:00 AM
 401916335,2026-11-17,FT,Brazil,7,-,Singapore,0,-,-,-,5:00 AM
 401930880,2026-11-17,FT,Bahrain,2,-,China,2,-,-,-,7:00 AM
 401930242,2026-11-17,FT,Vietnam,1,-,Kyrgyz Republic,2,-,-,-,7:00 AM
-401933635,2026-11-17,Scheduled,Palestine,0,-,Lebanon,0,-,-,-,8:00 AM
-401916336,2026-11-17,57',Paraguay,2,-,Japan,0,-,-,-,8:10 AM
-401931477,2026-11-17,28',South Korea,0,-,Qatar,0,-,-,-,9:00 AM
-401932718,2026-11-17,18',Syria,0,-,United Arab Emirates,0,-,-,-,9:10 AM
-401931495,2026-11-17,Scheduled,Uzbekistan,0,-,Saudi Arabia,0,-,-,-,10:30 AM
-401919974,2026-11-17,Scheduled,Australia,0,-,Jordan,0,-,-,-,11:00 AM
-401930978,2026-11-17,Scheduled,Venezuela,0,-,Russia,0,-,-,-,11:00 AM
-401933615,2026-11-17,Scheduled,Iran,0,-,Iraq,0,-,-,-,11:15 AM
-401931956,2026-11-17,Scheduled,Honduras,0,-,Kuwait,0,-,-,-,11:30 AM
+401933635,2026-11-17,FT,Palestine,0,-,Lebanon,0,-,-,-,8:00 AM
+401916336,2026-11-17,FT,Paraguay,2,-,Japan,1,-,-,-,8:10 AM
+401931477,2026-11-17,FT,South Korea,1,-,Qatar,0,-,-,-,9:00 AM
+401932718,2026-11-17,FT,Syria,2,-,United Arab Emirates,4,-,-,-,9:10 AM
+401931495,2026-11-17,FT,Uzbekistan,2,-,Saudi Arabia,1,-,-,-,10:30 AM
+401919974,2026-11-17,FT,Australia,0,-,Jordan,2,-,-,-,11:00 AM
+401930978,2026-11-17,FT,Venezuela,0,-,Russia,2,-,-,-,11:00 AM
+401933615,2026-11-17,FT,Iran,1,-,Iraq,1,-,-,-,11:15 AM
+401931956,2026-11-17,FT,Honduras,2,-,Kuwait,0,-,-,-,11:30 AM
 401930895,2026-11-17,Scheduled,Costa Rica,0,-,Argentina,0,-,-,-,6:00 PM
 401921304,2026-11-17,Scheduled,Colombia,0,-,Chile,0,-,-,-,6:00 PM
 401930899,2026-11-17,Scheduled,Bolivia,0,-,Ecuador,0,-,-,-,6:30 PM
 401932215,2026-11-17,Scheduled,Dominican Republic,0,-,Uruguay,0,-,-,-,6:30 PM
-401927169,2026-11-17,67',Zambia,0,-,Burundi,0,-,-,-,8:00 AM
-401927168,2026-11-17,69',Mozambique,1,-,Ethiopia,0,-,-,-,8:00 AM
-401927181,2026-11-17,67',Gabon,0,-,Lesotho,2,-,-,-,8:00 AM
-401927179,2026-11-17,70',Egypt,0,-,Malawi,0,-,-,-,8:00 AM
-401927178,2026-11-17,65',Angola,1,-,South Sudan,0,-,-,-,8:00 AM
-401927165,2026-11-17,61',Nigeria,0,-,Tanzania,0,-,-,-,8:00 AM
-401927182,2026-11-17,Scheduled,Ivory Coast,0,-,Gambia,0,-,-,-,11:00 AM
-401927166,2026-11-17,Scheduled,Madagascar,0,-,Guinea-Bissau,0,-,-,-,11:00 AM
-401927175,2026-11-17,Scheduled,South Africa,0,-,Kenya,0,-,-,-,11:00 AM
-401927137,2026-11-17,Scheduled,Tunisia,0,-,Libya,0,-,-,-,11:00 AM
-401927174,2026-11-17,Scheduled,Congo DR,0,-,Sierra Leone,0,-,-,-,11:00 AM
-401927136,2026-11-17,Scheduled,Algeria,0,-,Togo,0,-,-,-,11:00 AM
-401927138,2026-11-17,Scheduled,Uganda,0,-,Botswana,0,-,-,-,2:00 PM
-401927139,2026-11-17,Scheduled,Comoros,0,-,Congo,0,-,-,-,2:00 PM
-401927167,2026-11-17,Scheduled,Cape Verde,0,-,Liberia,0,-,-,-,2:00 PM
-401927171,2026-11-17,Scheduled,Burkina Faso,0,-,Mauritania,0,-,-,-,2:00 PM
-401927134,2026-11-17,Scheduled,Mali,0,-,Rwanda,0,-,-,-,2:00 PM
-401927180,2026-11-17,Scheduled,Morocco,0,-,Niger,0,-,-,-,3:00 PM
-401929695,2026-11-17,Scheduled,Türkiye U21,0,-,Czechia U21,0,-,-,-,11:00 AM
-401929698,2026-11-17,Scheduled,Denmark U21,0,-,Netherlands U21,0,-,-,-,12:30 PM
-401929696,2026-11-17,Scheduled,Finland U21,0,-,Republic of Ireland U21,0,-,-,-,12:45 PM
-401934336,2026-11-17,Scheduled,Japan U21,0,-,Egypt U21,0,-,-,-,11:00 AM
-401931797,2026-11-17,Scheduled,Germany U21,0,-,Croatia U21,0,-,-,-,12:00 PM
-401933436,2026-11-17,Scheduled,Serbia U21,0,-,Poland U21,0,-,-,-,12:00 PM
-401931799,2026-11-17,Scheduled,Norway U21,0,-,Portugal U21,0,-,-,-,12:30 PM
-401932217,2026-11-17,Scheduled,Spain U21,0,-,Albania U21,0,-,-,-,1:00 PM
-401906326,2026-11-17,Scheduled,Peterborough United,0,-,Luton Town,0,-,-,-,2:00 PM
+401927169,2026-11-17,FT,Zambia,1,-,Burundi,1,-,-,-,8:00 AM
+401927168,2026-11-17,FT,Mozambique,1,-,Ethiopia,0,-,-,-,8:00 AM
+401927181,2026-11-17,FT,Gabon,1,-,Lesotho,2,-,-,-,8:00 AM
+401927179,2026-11-17,FT,Egypt,0,-,Malawi,0,-,-,-,8:00 AM
+401927178,2026-11-17,FT,Angola,1,-,South Sudan,0,-,-,-,8:00 AM
+401927165,2026-11-17,FT,Nigeria,0,-,Tanzania,0,-,-,-,8:00 AM
+401927182,2026-11-17,FT,Ivory Coast,2,-,Gambia,2,-,-,-,11:00 AM
+401927166,2026-11-17,FT,Madagascar,0,-,Guinea-Bissau,2,-,-,-,11:00 AM
+401927175,2026-11-17,FT,South Africa,2,-,Kenya,1,-,-,-,11:00 AM
+401927137,2026-11-17,FT,Tunisia,1,-,Libya,1,-,-,-,11:00 AM
+401927174,2026-11-17,FT,Congo DR,1,-,Sierra Leone,1,-,-,-,11:00 AM
+401927136,2026-11-17,FT,Algeria,0,-,Togo,3,-,-,-,11:00 AM
+401927138,2026-11-17,FT,Uganda,1,-,Botswana,1,-,-,-,2:00 PM
+401927139,2026-11-17,FT,Comoros,1,-,Congo,0,-,-,-,2:00 PM
+401927167,2026-11-17,FT,Cape Verde,0,-,Liberia,2,-,-,-,2:00 PM
+401927171,2026-11-17,FT,Burkina Faso,3,-,Mauritania,1,-,-,-,2:00 PM
+401927134,2026-11-17,FT,Mali,2,-,Rwanda,0,-,-,-,2:00 PM
+401927180,2026-11-17,FT,Morocco,1,-,Niger,0,-,-,-,3:00 PM
+401929695,2026-11-17,FT,Türkiye U21,1,-,Czechia U21,1,-,-,-,11:00 AM
+401929698,2026-11-17,FT,Denmark U21,3,-,Netherlands U21,2,-,-,-,12:30 PM
+401929696,2026-11-17,AET,Finland U21,2,-,Republic of Ireland U21,2,-,-,-,12:45 PM
+401934336,2026-11-17,FT-Pens,Japan U21,0,-,Egypt U21,0,-,-,-,11:00 AM
+401931797,2026-11-17,FT,Germany U21,2,-,Croatia U21,3,-,-,-,12:00 PM
+401933436,2026-11-17,FT,Serbia U21,0,-,Poland U21,1,-,-,-,12:00 PM
+401931799,2026-11-17,FT,Norway U21,0,-,Portugal U21,1,-,-,-,12:30 PM
+401932217,2026-11-17,FT,Spain U21,0,-,Albania U21,0,-,-,-,1:00 PM
+401906326,2026-11-17,FT,Peterborough United,0,-,Luton Town,3,-,-,-,2:00 PM
 401933183,2026-11-17,Scheduled,Once Caldas,0,-,Atlético Nacional,0,-,-,-,6:30 PM
 401933121,2026-11-17,Scheduled,Internacional de Bogotá,0,-,América de Cali,0,-,-,-,8:30 PM
-401934455,2026-11-17,Scheduled,Pakistan,0,-,India,0,-,-,-,9:00 AM
+401934455,2026-11-17,FT,Pakistan,1,-,India,2,-,-,-,9:00 AM
 401933617,2026-11-16,AET,Sacramento Republic FC,2,-,New Mexico United,1,-,-,-,9:00 PM
 401929707,2026-11-16,FT,Grenada,0,-,Cuba,9,-,-,-,2:00 PM
 401929771,2026-11-16,FT,Bermuda,1,-,Guadeloupe,4,-,-,-,2:00 PM
