@@ -23,8 +23,8 @@
         "awaySpread": -2.5,
         "homeSpreadOdds": -105,
         "awaySpreadOdds": -115,
-        "homeMoneyline": 128,
-        "awayMoneyline": -152
+        "homeMoneyline": 125,
+        "awayMoneyline": -148
       },
       "totalsLine": 216.5,
       "storylines": [
@@ -56,7 +56,10 @@
           "leanPct": 54.6,
           "against": true
         }
-      ]
+      ],
+      "gameTotal": 216.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910003",
@@ -69,16 +72,19 @@
       "awaySpreadOdds": -118.0,
       "homeMoneyline": -135.0,
       "awayMoneyline": 114.0,
-      "statsSpread": -2.5,
+      "statsSpread": -1.5,
       "statsLine": {
-        "homeSpread": -2.5,
-        "awaySpread": 2.5,
-        "homeSpreadOdds": -102,
-        "awaySpreadOdds": -118,
+        "homeSpread": -1.5,
+        "awaySpread": 1.5,
+        "homeSpreadOdds": -119,
+        "awaySpreadOdds": -102,
         "homeMoneyline": -135,
         "awayMoneyline": 114
       },
-      "totalsLine": 226.5
+      "totalsLine": 228.5,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910004",
@@ -95,10 +101,10 @@
       "statsLine": {
         "homeSpread": -9.5,
         "awaySpread": 9.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -116,
-        "homeMoneyline": -371,
-        "awayMoneyline": 295
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -396,
+        "awayMoneyline": 312
       },
       "statsFavors": "Detroit Pistons",
       "statsRules": [
@@ -110,7 +116,7 @@
         }
       ],
       "statsCheck": "Rule 39: Backing Detroit Pistons: lost by 20 on the road last game (117-137 vs Miami Heat) as a -4.5; now on the road vs. a better-record team, rested -- 62.0% ATS, 44-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9.",
-      "totalsLine": 221.5,
+      "totalsLine": 222.5,
       "storylines": [
         {
           "weight": 1,
@@ -140,7 +146,10 @@
           "leanPct": 53.4,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -106
     },
     {
       "espnId": "401910006",
@@ -172,7 +181,10 @@
         }
       ],
       "statsCheck": "Rule 54: Backing LA Clippers: covered its last two games (by 6.5 vs Charlotte Hornets and by 7.5 vs Oklahoma City Thunder), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 225.5
+      "totalsLine": 225.5,
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910005",
@@ -189,10 +201,10 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -316,
-        "awayMoneyline": 255
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -306,
+        "awayMoneyline": 248
       },
       "statsFavors": "Los Angeles Lakers",
       "statsRules": [
@@ -204,7 +216,7 @@
         }
       ],
       "statsCheck": "Rule 64: Backing Los Angeles Lakers: 10-4 against the spread this season, vs. Charlotte Hornets, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
-      "totalsLine": 218.5,
+      "totalsLine": 221.5,
       "storylines": [
         {
           "weight": 1,
@@ -262,7 +274,10 @@
           "leanPct": 54.6,
           "against": true
         }
-      ]
+      ],
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     }
   ]
 }

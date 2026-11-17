@@ -2,7 +2,7 @@
   "date": "2026-11-16",
   "weekday": "Monday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-16T13:19:31Z",
   "games": [
     {
@@ -10,8 +10,8 @@
       "altBlowoutFavors": null,
       "altCategoryTally": "5-0",
       "altConfidence": "strong",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": false,
+      "altCover": false,
       "altPick": "Baltimore Ravens",
       "altReasons": [
         "Scoring margin: neutral (Ravens' -1.85 blended PD/g was built largely under Lamar Jackson, who is out for the season and is not tonight's starter Jacoby Brissett, just acquired via trade from Arizona; Chargers' own -5.30 blended PD/g isn't independently strong enough to carry the category alone)",
@@ -21,8 +21,8 @@
         "Form: neutral (Ravens' 0-3 record over their last 3 games was produced under Joe Fagnano and an injured Lamar Jackson, not tonight's starter Jacoby Brissett; Chargers' own 0-3 stretch, within an 0-8 season, isn't independently strong enough to carry the category alone)",
         "Motivation/Spot: favors Ravens (Baltimore is 4-5 and still fighting for AFC playoff positioning, while the 0-8 Chargers have far less riding on this game down the stretch)"
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": -100.0,
+      "altSpreadReturn": -100.0,
       "altTrendCheck": "Ravens prior game (Nov 5 at Jacksonville, lost 10-33, CBS/team box score): 227 total net yards (55 net passing on 11/19, 2.9 YPA; 172 rushing on 34 att) \u2014 Pattern A needs 426+ yards (missed), Pattern B needs YPA\u22657.5 (missed), Pattern C needs rush/pass ratio \u22641.0 with rush att\u226534 (34/19=1.79, ratio missed), Pattern D needs pass att\u226541 (19, missed) \u2014 no pattern matched. Chargers prior game (Nov 8 vs Houston, lost 22-44): 315 total net yards (177 passing on 15/30, 5.9 YPA; 138 rushing on 30 att) \u2014 Pattern A needs 426+ (missed), Pattern B needs YPA\u22657.5 (missed), Pattern C needs rush att\u226534 (30, missed), Pattern D needs pass att\u226541 (30, missed) \u2014 no pattern matched for either team.",
       "altTrendFavors": null,
       "away": "Los Angeles Chargers",
@@ -30,12 +30,12 @@
       "awayPDpg": -5.3,
       "awayQB": "Justin Herbert",
       "awayQBRating": 70.4,
-      "awayScore": null,
+      "awayScore": 23.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -110,
       "awayYPP": 4.7,
       "confidence": "lean",
-      "correct": null,
+      "correct": false,
       "gameTotal": 39.5,
       "gameTotalOverOdds": -108,
       "gameTotalUnderOdds": -112,
@@ -44,15 +44,15 @@
       "homePDpg": -1.85,
       "homeQB": "Jacoby Brissett",
       "homeQBRating": 79.7,
-      "homeScore": null,
+      "homeScore": 20.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -108,
       "homeYPP": 5.5,
       "offGap": 51.61,
       "pick": "Baltimore Ravens",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "statLines": [
         "PD/g -5.30 vs -1.85 (blended 50/50 2026/2025)",
         "Yds/play 4.7 vs 5.5 \u00b7 51.6-pt gap",
@@ -72,7 +72,8 @@
           "says": "back",
           "team": "Los Angeles Chargers",
           "unit": "ATS",
-          "weight": 0.5
+          "weight": 0.5,
+          "result": "hit"
         },
         {
           "against": true,
@@ -87,10 +88,20 @@
           "says": "fade",
           "team": "Los Angeles Chargers",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
-      "time": "8:15 PM ET"
+      "time": "8:15 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     }
-  ]
+  ],
+  "scoredAt": "2026-11-17T13:52:15.879419+00:00"
 }

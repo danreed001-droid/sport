@@ -2,7 +2,7 @@
   "date": "2026-11-16",
   "weekday": "Monday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-16T16:22:19Z",
   "games": [
     {
@@ -28,11 +28,11 @@
       "awayMoneyline": null,
       "awayPDpg": -14.5,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 59.0,
       "awaySpread": 29.5,
       "awaySpreadOdds": -105,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 158.5,
       "gameTotalOverOdds": -112,
       "gameTotalUnderOdds": -108,
@@ -40,14 +40,14 @@
       "homeMoneyline": null,
       "homePDpg": 4.5,
       "homeRank": 24,
-      "homeScore": null,
+      "homeScore": 88.0,
       "homeSpread": -29.5,
       "homeSpreadOdds": -115,
       "offGap": 81.32,
       "pick": "Kentucky Wildcats",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -80,7 +80,7 @@
       "awayMoneyline": 29500,
       "awayPDpg": -4.33,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 66.0,
       "awaySpread": 33.5,
       "awaySpreadOdds": 102,
       "confidence": "solid",
@@ -92,14 +92,14 @@
       "homeMoneyline": -29412,
       "homePDpg": 43,
       "homeRank": 9,
-      "homeScore": null,
+      "homeScore": 105.0,
       "homeSpread": -33.5,
       "homeSpreadOdds": -102,
       "offGap": 59.07,
       "pick": "UCLA Bruins",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 98.04,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -109,5 +109,6 @@
       ],
       "time": "10:00 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-17T13:52:19.413908+00:00"
 }
