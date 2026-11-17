@@ -1,7 +1,7 @@
 {
  "date": "2026-11-17",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-17T13:52:05+00:00",
+ "fetchedAt": "2026-11-17T14:28:06+00:00",
  "games": [
   {
    "away": "New York Knicks",
@@ -9,20 +9,20 @@
    "start": "2026-11-18T00:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 3,
+    "home": 2.5,
     "open": 3.5,
     "tix_home": 26,
     "money_home": 46
    },
    "total": {
-    "now": 216.5,
+    "now": 215,
     "open": 216.5,
     "tix_over": 84,
     "money_over": 78
    },
    "moneyline": {
     "home": 125,
-    "away": -150
+    "away": -148
    },
    "rlmFavorite": null
   },
@@ -68,7 +68,7 @@
    },
    "moneyline": {
     "home": -400,
-    "away": 310
+    "away": 312
    },
    "rlmFavorite": null
   },
@@ -84,7 +84,7 @@
     "money_home": 73
    },
    "total": {
-    "now": 225.5,
+    "now": 225,
     "open": 223.5,
     "tix_over": 68,
     "money_over": 66

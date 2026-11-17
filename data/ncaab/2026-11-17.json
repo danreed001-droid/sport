@@ -18,7 +18,27 @@
       "homeMoneyline": -2400,
       "awayMoneyline": 1200,
       "total": 142.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 142.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-1",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Rutgers Scarlet Knights",
+          "says": "fade",
+          "fact": "Rutgers won its last three by 21, 37, 27.",
+          "record": "116-139",
+          "pct": 45.5,
+          "leans": "Rutgers Scarlet Knights",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401906773",
@@ -32,7 +52,27 @@
       "homeMoneyline": -1800,
       "awayMoneyline": 1000,
       "total": 150.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 150.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-1",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Notre Dame Fighting Irish",
+          "says": "fade",
+          "fact": "Notre Dame won its last three by 40, 24, 27.",
+          "record": "116-139",
+          "pct": 45.5,
+          "leans": "Notre Dame Fighting Irish",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401909566",
@@ -45,7 +85,57 @@
       "awaySpreadOdds": -110,
       "homeMoneyline": -375,
       "awayMoneyline": 295,
-      "total": 164.5
+      "total": 164.5,
+      "gameTotal": 164.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-1",
+          "key": "midweek_road",
+          "name": "School night on the road",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "#10 Illinois plays at Duke on a Tuesday.",
+          "record": "633-540",
+          "pct": 54.0,
+          "leans": "Duke Blue Devils",
+          "leanPct": 54.0,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "ranked_road_dog",
+          "name": "Disrespected on the road",
+          "team": "Illinois Fighting Illini",
+          "says": "back",
+          "fact": "#10 Illinois is a +7.5 underdog at Duke.",
+          "record": "446-515",
+          "pct": 46.4,
+          "leans": "Duke Blue Devils",
+          "leanPct": 53.6,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "4-2",
+          "key": "nonconf_road",
+          "name": "Non-conference road trip",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "#10 Illinois plays a non-conference game at Duke.",
+          "record": "204-168",
+          "pct": 54.8,
+          "leans": "Duke Blue Devils",
+          "leanPct": 54.8,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401921722",
@@ -56,7 +146,27 @@
       "awaySpread": 41.5,
       "homeSpreadOdds": -115,
       "awaySpreadOdds": -105,
-      "total": 149.5
+      "total": 149.5,
+      "gameTotal": 148.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-1",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Miami Hurricanes",
+          "says": "fade",
+          "fact": "Miami won its last three by 42, 38, 26.",
+          "record": "116-139",
+          "pct": 45.5,
+          "leans": "Miami Hurricanes",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401906761",
@@ -69,7 +179,27 @@
       "awaySpreadOdds": -115,
       "homeMoneyline": -6500,
       "awayMoneyline": 2000,
-      "total": 175.5
+      "total": 175.5,
+      "gameTotal": 175.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "10-7",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Kennesaw State Owls",
+          "says": "back",
+          "fact": "Kennesaw State lost to Alabama 81-92 last season (2025-12-21).",
+          "record": "1415-1281",
+          "pct": 52.5,
+          "leans": "Kennesaw State Owls",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401916289",
@@ -83,7 +213,10 @@
       "homeMoneyline": 114,
       "awayMoneyline": -135,
       "total": 155.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 153.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401921826",
@@ -94,7 +227,42 @@
       "awaySpread": 43.5,
       "homeSpreadOdds": -115,
       "awaySpreadOdds": -105,
-      "total": 146.5
+      "total": 146.5,
+      "gameTotal": 146.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-1",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Vanderbilt Commodores",
+          "says": "fade",
+          "fact": "Vanderbilt won its last three by 27, 24, 23.",
+          "record": "116-139",
+          "pct": 45.5,
+          "leans": "Vanderbilt Commodores",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "0-1",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "Vanderbilt Commodores",
+          "says": "fade",
+          "fact": "Vanderbilt moved up from #22 to #15 in this week's AP poll.",
+          "record": "235-266",
+          "pct": 46.9,
+          "leans": "Vanderbilt Commodores",
+          "leanPct": 53.1,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401906851",
@@ -107,7 +275,57 @@
       "awaySpreadOdds": -115,
       "homeMoneyline": 130,
       "awayMoneyline": -155,
-      "total": 150.5
+      "total": 150.5,
+      "gameTotal": 149.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-1",
+          "key": "midweek_road",
+          "name": "School night on the road",
+          "team": "Michigan State Spartans",
+          "says": "fade",
+          "fact": "#2 Michigan State plays at Tennessee on a Tuesday.",
+          "record": "633-540",
+          "pct": 54.0,
+          "leans": "Tennessee Volunteers",
+          "leanPct": 54.0,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "4-2",
+          "key": "nonconf_road",
+          "name": "Non-conference road trip",
+          "team": "Michigan State Spartans",
+          "says": "fade",
+          "fact": "#2 Michigan State plays a non-conference game at Tennessee.",
+          "record": "204-168",
+          "pct": 54.8,
+          "leans": "Tennessee Volunteers",
+          "leanPct": 54.8,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "4-2",
+          "key": "first_road",
+          "name": "Leaving home",
+          "team": "Michigan State Spartans",
+          "says": "fade",
+          "fact": "#2 Michigan State's first true road game of the season.",
+          "record": "134-114",
+          "pct": 54.0,
+          "leans": "Tennessee Volunteers",
+          "leanPct": 54.0,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401920426",
@@ -120,7 +338,42 @@
       "awaySpreadOdds": -112,
       "homeMoneyline": -20000,
       "awayMoneyline": 3500,
-      "total": 146.5
+      "total": 146.5,
+      "gameTotal": 146.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "5-4",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "Virginia Cavaliers",
+          "says": "fade",
+          "fact": "#4 Virginia is a -26.5 favorite.",
+          "record": "100-121",
+          "pct": 45.2,
+          "leans": "Virginia Cavaliers",
+          "leanPct": 54.8,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "rolling_dog",
+          "name": "Rolling underdog",
+          "team": "Old Dominion Monarchs",
+          "says": "back",
+          "fact": "Old Dominion has won 5 straight and is a +26.5 underdog.",
+          "record": "264-302",
+          "pct": 46.6,
+          "leans": "Virginia Cavaliers",
+          "leanPct": 53.4,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401909787",
@@ -134,7 +387,42 @@
       "homeMoneyline": -2400,
       "awayMoneyline": 1200,
       "total": 157.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 157.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-1",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Kansas Jayhawks",
+          "says": "fade",
+          "fact": "Kansas won its last three by 20, 44, 30.",
+          "record": "116-139",
+          "pct": 45.5,
+          "leans": "Kansas Jayhawks",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "3-0",
+          "key": "after_dark",
+          "name": "After dark out West",
+          "team": "Kansas Jayhawks",
+          "says": "fade",
+          "fact": "Kansas tips at 9:30 PM ET in Las Vegas, NV.",
+          "record": "76-83",
+          "pct": 47.8,
+          "leans": "Kansas Jayhawks",
+          "leanPct": 52.2,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401925879",
@@ -147,7 +435,10 @@
       "awaySpreadOdds": -110,
       "homeMoneyline": -6500,
       "awayMoneyline": 2000,
-      "total": 152.5
+      "total": 152.5,
+      "gameTotal": 152.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     }
   ]
 }

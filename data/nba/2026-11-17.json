@@ -26,20 +26,20 @@
         "homeMoneyline": 125,
         "awayMoneyline": -148
       },
-      "totalsLine": 216.5,
+      "totalsLine": 215.5,
       "storylines": [
         {
           "weight": 1,
-          "live": "3-1",
+          "live": "4-1",
           "key": "second_battle",
           "name": "Second battle",
           "team": "Toronto Raptors",
           "says": "back",
           "fact": "Toronto Raptors lost to New York Knicks 108-112 2 days ago and is at home tonight.",
-          "record": "220-182",
-          "pct": 54.7,
+          "record": "221-182",
+          "pct": 54.8,
           "leans": "Toronto Raptors",
-          "leanPct": 54.7,
+          "leanPct": 54.8,
           "against": false
         },
         {
@@ -57,9 +57,9 @@
           "against": true
         }
       ],
-      "gameTotal": 216.5,
+      "gameTotal": 215.5,
       "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "gameTotalUnderOdds": -116
     },
     {
       "espnId": "401910003",
@@ -120,16 +120,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "6-4",
+          "live": "7-4",
           "key": "fat_happy",
           "name": "Fat and happy",
           "team": "San Antonio Spurs",
           "says": "fade",
           "fact": "San Antonio Spurs has won 12 straight and is a -9.5 favorite.",
-          "record": "158-137",
-          "pct": 53.6,
+          "record": "159-137",
+          "pct": 53.7,
           "leans": "Detroit Pistons",
-          "leanPct": 53.6,
+          "leanPct": 53.7,
           "against": false
         },
         {
@@ -220,16 +220,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "6-4",
+          "live": "7-4",
           "key": "fat_happy",
           "name": "Fat and happy",
           "team": "Los Angeles Lakers",
           "says": "fade",
           "fact": "Los Angeles Lakers has won 8 straight and is a -7.5 favorite.",
-          "record": "158-137",
-          "pct": 53.6,
+          "record": "159-137",
+          "pct": 53.7,
           "leans": "Charlotte Hornets",
-          "leanPct": 53.6,
+          "leanPct": 53.7,
           "against": false
         },
         {
@@ -248,16 +248,16 @@
         },
         {
           "weight": 1,
-          "live": "4-2",
+          "live": "4-3",
           "key": "letdown",
           "name": "Letdown spot",
           "team": "Los Angeles Lakers",
           "says": "fade",
           "fact": "Los Angeles Lakers is a -7.5 favorite vs Charlotte Hornets (4-9): it just beat rival Phoenix Suns.",
-          "record": "359-301",
-          "pct": 54.4,
+          "record": "359-302",
+          "pct": 54.3,
           "leans": "Charlotte Hornets",
-          "leanPct": 54.4,
+          "leanPct": 54.3,
           "against": false
         },
         {
