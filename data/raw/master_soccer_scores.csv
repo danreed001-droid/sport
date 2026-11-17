@@ -1,11 +1,11 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401933617,2026-11-16,Scheduled,Sacramento Republic FC,0,-,New Mexico United,0,-,-,-,9:00 PM
+401933617,2026-11-16,HT,Sacramento Republic FC,0,-,New Mexico United,0,-,-,-,9:00 PM
 401929707,2026-11-16,FT,Grenada,0,-,Cuba,9,-,-,-,2:00 PM
 401929771,2026-11-16,FT,Bermuda,1,-,Guadeloupe,4,-,-,-,2:00 PM
 401929708,2026-11-16,FT,Puerto Rico,2,-,Guyana,4,-,-,-,2:00 PM
-401929706,2026-11-16,Scheduled,Aruba,0,-,Martinique,0,-,-,-,7:00 PM
-401929705,2026-11-16,Scheduled,Antigua and Barbuda,0,-,Trinidad and Tobago,0,-,-,-,7:00 PM
-401929770,2026-11-16,Scheduled,Guatemala,0,-,Canada,0,-,-,-,8:00 PM
+401929706,2026-11-16,FT,Aruba,1,-,Martinique,1,-,-,-,7:00 PM
+401929705,2026-11-16,FT,Antigua and Barbuda,1,-,Trinidad and Tobago,1,-,-,-,7:00 PM
+401929770,2026-11-16,FT,Guatemala,1,-,Canada,4,-,-,-,8:00 PM
 401861180,2026-11-16,FT,Moldova,0,-,Faroe Islands,1,-,-,-,10:00 AM
 401861181,2026-11-16,FT,Slovakia,2,-,Kazakhstan,2,-,-,-,10:00 AM
 401861183,2026-11-16,FT,Bulgaria,1,-,Estonia,2,-,-,-,12:00 PM
@@ -30,10 +30,10 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401934135,2026-11-16,FT,Belgium U21,2,-,Italy U21,2,-,-,-,12:15 PM
 401933456,2026-11-16,FT,Cyprus U21,3,-,Hungary U21,5,-,-,-,1:00 PM
 401930175,2026-11-16,FT,France U21,2,-,England U21,3,-,-,-,2:30 PM
-401933375,2026-11-16,Scheduled,Juventud,0,-,Montevideo Wanderers,0,-,-,-,6:00 PM
+401933375,2026-11-16,FT,Juventud,1,-,Montevideo Wanderers,2,-,-,-,6:00 PM
 401886134,2026-11-16,FT,Los Chankas,3,-,UTC,5,-,-,-,1:00 PM
-401886121,2026-11-16,90'+3',ADT,2,-,Cusco FC,2,-,-,-,3:15 PM
-401886119,2026-11-16,88',Atlético Grau,1,-,Deportivo Moquegua,1,-,-,-,3:15 PM
+401886121,2026-11-16,FT,ADT,2,-,Cusco FC,2,-,-,-,3:15 PM
+401886119,2026-11-16,FT,Atlético Grau,1,-,Deportivo Moquegua,2,-,-,-,3:15 PM
 401933096,2026-11-15,FT,La Tamponnaise,2,-,Saint-Pauloise FC,1,-,-,-,9:45 AM
 401928690,2026-11-15,ABN,Peterborough United,3,-,Lye Town,1,-,-,-,8:00 AM
 401933740,2026-11-15,FT,Kansas City Current,2,-,Gotham FC,1,-,-,-,3:00 PM
