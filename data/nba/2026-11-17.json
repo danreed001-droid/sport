@@ -1,0 +1,268 @@
+{
+  "date": "2026-11-17",
+  "weekday": "Tuesday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-17T07:16:40Z",
+  "games": [
+    {
+      "espnId": "401910002",
+      "away": "New York Knicks",
+      "home": "Toronto Raptors",
+      "time": "7:30 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -115.0,
+      "homeMoneyline": 128.0,
+      "awayMoneyline": -152.0,
+      "statsSpread": 2.5,
+      "statsLine": {
+        "homeSpread": 2.5,
+        "awaySpread": -2.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 128,
+        "awayMoneyline": -152
+      },
+      "totalsLine": 216.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-1",
+          "key": "second_battle",
+          "name": "Second battle",
+          "team": "Toronto Raptors",
+          "says": "back",
+          "fact": "Toronto Raptors lost to New York Knicks 108-112 2 days ago and is at home tonight.",
+          "record": "220-182",
+          "pct": 54.7,
+          "leans": "Toronto Raptors",
+          "leanPct": 54.7,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "3-2",
+          "key": "prodigal",
+          "name": "The prodigal star",
+          "team": "Toronto Raptors",
+          "says": "back",
+          "fact": "Toronto Raptors' top scorer Scottie Barnes (24.2 a game) returned last game after missing the one before; Toronto Raptors is a +2.5 underdog.",
+          "record": "174-209",
+          "pct": 45.4,
+          "leans": "New York Knicks",
+          "leanPct": 54.6,
+          "against": true
+        }
+      ]
+    },
+    {
+      "espnId": "401910003",
+      "away": "Portland Trail Blazers",
+      "home": "Minnesota Timberwolves",
+      "time": "8:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -102.0,
+      "awaySpreadOdds": -118.0,
+      "homeMoneyline": -135.0,
+      "awayMoneyline": 114.0,
+      "statsSpread": -2.5,
+      "statsLine": {
+        "homeSpread": -2.5,
+        "awaySpread": 2.5,
+        "homeSpreadOdds": -102,
+        "awaySpreadOdds": -118,
+        "homeMoneyline": -135,
+        "awayMoneyline": 114
+      },
+      "totalsLine": 226.5
+    },
+    {
+      "espnId": "401910004",
+      "away": "Detroit Pistons",
+      "home": "San Antonio Spurs",
+      "time": "8:00 PM ET",
+      "homeSpread": -9.5,
+      "awaySpread": 9.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -116.0,
+      "homeMoneyline": -371.0,
+      "awayMoneyline": 295.0,
+      "statsSpread": -9.5,
+      "statsLine": {
+        "homeSpread": -9.5,
+        "awaySpread": 9.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": -371,
+        "awayMoneyline": 295
+      },
+      "statsFavors": "Detroit Pistons",
+      "statsRules": [
+        {
+          "rule": 39,
+          "name": "Back a road team vs. a stronger team after a 20-29 point road loss where it wasn't a 7+ pt dog (on trial)",
+          "backtest": "62.0% ATS, 44-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9",
+          "detail": "Backing Detroit Pistons: lost by 20 on the road last game (117-137 vs Miami Heat) as a -4.5; now on the road vs. a better-record team, rested -- 62.0% ATS, 44-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9."
+        }
+      ],
+      "statsCheck": "Rule 39: Backing Detroit Pistons: lost by 20 on the road last game (117-137 vs Miami Heat) as a -4.5; now on the road vs. a better-record team, rested -- 62.0% ATS, 44-27 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 14-9.",
+      "totalsLine": 221.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "6-4",
+          "key": "fat_happy",
+          "name": "Fat and happy",
+          "team": "San Antonio Spurs",
+          "says": "fade",
+          "fact": "San Antonio Spurs has won 12 straight and is a -9.5 favorite.",
+          "record": "158-137",
+          "pct": 53.6,
+          "leans": "Detroit Pistons",
+          "leanPct": 53.6,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "2-1",
+          "key": "sleeping_giant",
+          "name": "The sleeping giant",
+          "team": "Detroit Pistons",
+          "says": "back",
+          "fact": "Detroit Pistons (8-4) is 2-3 in its last five; San Antonio Spurs is 5-0.",
+          "record": "156-136",
+          "pct": 53.4,
+          "leans": "Detroit Pistons",
+          "leanPct": 53.4,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401910006",
+      "away": "Utah Jazz",
+      "home": "LA Clippers",
+      "time": "10:30 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -107.0,
+      "awaySpreadOdds": -113.0,
+      "homeMoneyline": -238.0,
+      "awayMoneyline": 197.0,
+      "statsSpread": -6.5,
+      "statsLine": {
+        "homeSpread": -6.5,
+        "awaySpread": 6.5,
+        "homeSpreadOdds": -107,
+        "awaySpreadOdds": -113,
+        "homeMoneyline": -238,
+        "awayMoneyline": 197
+      },
+      "statsFavors": "LA Clippers",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing LA Clippers: covered its last two games (by 6.5 vs Charlotte Hornets and by 7.5 vs Oklahoma City Thunder), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing LA Clippers: covered its last two games (by 6.5 vs Charlotte Hornets and by 7.5 vs Oklahoma City Thunder), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsLine": 225.5
+    },
+    {
+      "espnId": "401910005",
+      "away": "Charlotte Hornets",
+      "home": "Los Angeles Lakers",
+      "time": "11:00 PM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -316.0,
+      "awayMoneyline": 255.0,
+      "statsSpread": -7.5,
+      "statsLine": {
+        "homeSpread": -7.5,
+        "awaySpread": 7.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -316,
+        "awayMoneyline": 255
+      },
+      "statsFavors": "Los Angeles Lakers",
+      "statsRules": [
+        {
+          "rule": 64,
+          "name": "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
+          "backtest": "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
+          "detail": "Backing Los Angeles Lakers: 10-4 against the spread this season, vs. Charlotte Hornets, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15."
+        }
+      ],
+      "statsCheck": "Rule 64: Backing Los Angeles Lakers: 10-4 against the spread this season, vs. Charlotte Hornets, 1-5 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
+      "totalsLine": 218.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "6-4",
+          "key": "fat_happy",
+          "name": "Fat and happy",
+          "team": "Los Angeles Lakers",
+          "says": "fade",
+          "fact": "Los Angeles Lakers has won 8 straight and is a -7.5 favorite.",
+          "record": "158-137",
+          "pct": 53.6,
+          "leans": "Charlotte Hornets",
+          "leanPct": 53.6,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "4-1",
+          "key": "steady",
+          "name": "Steady Eddie",
+          "team": "Los Angeles Lakers",
+          "says": "back",
+          "fact": "Los Angeles Lakers won its last three by 8, 11, 10.",
+          "record": "97-82",
+          "pct": 54.2,
+          "leans": "Los Angeles Lakers",
+          "leanPct": 54.2,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "4-2",
+          "key": "letdown",
+          "name": "Letdown spot",
+          "team": "Los Angeles Lakers",
+          "says": "fade",
+          "fact": "Los Angeles Lakers is a -7.5 favorite vs Charlotte Hornets (4-9): it just beat rival Phoenix Suns.",
+          "record": "359-301",
+          "pct": 54.4,
+          "leans": "Charlotte Hornets",
+          "leanPct": 54.4,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "3-2",
+          "key": "prodigal",
+          "name": "The prodigal star",
+          "team": "Charlotte Hornets",
+          "says": "back",
+          "fact": "Charlotte Hornets' top scorer Brandon Miller (19.2 a game) returned last game after missing the one before; Charlotte Hornets is a +7.5 underdog.",
+          "record": "174-209",
+          "pct": 45.4,
+          "leans": "Los Angeles Lakers",
+          "leanPct": 54.6,
+          "against": true
+        }
+      ]
+    }
+  ]
+}
