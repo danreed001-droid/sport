@@ -241,6 +241,42 @@ def backtest_wl(text):
         return w, int(m.group(2)) - w
     return None, None
 
+def nba_rosters(slate):
+    """{slate team name: [[ESPN athlete id, name, points a game], ...]} for the
+    NBA teams on today's slate, from the box scores NBA Stats caches
+    (data/raw/nba_player_points.json): everyone who played in the team's last
+    10 games, best scorers first. Feeds the pick sheet's player-prop picker."""
+    from score_slate import _same_team
+    games = (slate.get("sports") or {}).get("nba", {}).get("games") or []
+    teams = {t for g in games for t in (g.get("away"), g.get("home")) if t}
+    if not teams:
+        return {}
+    try:
+        with open(os.path.join(store.REPO_ROOT, "data", "raw", "nba_player_points.json"), encoding="utf-8") as f:
+            cache = json.load(f)
+    except (OSError, ValueError):
+        return {}
+    seen = {}  # cache team name -> [box, ...] newest last (event ids grow with time)
+    for eid in sorted(cache, key=lambda k: int(k) if str(k).isdigit() else 0):
+        for team, box in ((cache[eid] or {}).get("pts") or {}).items():
+            seen.setdefault(team, []).append(box)
+    out = {}
+    for t in teams:
+        k = next((x for x in seen if x == t or _same_team(x, t)), None)
+        if not k:
+            continue
+        tot = {}
+        for box in seen[k][-10:]:
+            for pid, v in box.items():
+                if not v:
+                    continue
+                r = tot.setdefault(pid, [0, 0, v[1]])
+                r[0] += 1
+                r[1] += v[0] or 0
+        out[t] = sorted(([pid, r[2], round(r[1] / r[0], 1)] for pid, r in tot.items()), key=lambda x: -x[2])
+    return out
+
+
 def load_mypicks():
     out = {}
     for path in sorted(glob.glob(os.path.join(store.REPO_ROOT, "data", "mypicks", "*.json"))):
@@ -563,6 +599,8 @@ def build():
         "slate": slate,
         "myPicks": committed,
         "myTotals": my_totals,
+        "myProps": mypicks.get(slate_date, {}).get("props", {}),
+        "rosters": nba_rosters(slate),
         "myScores": mypicks.get(slate_date, {}).get("scores", {}),
         "scoreboard": totals,
         "plays": sorted(plays, key=lambda p: p["d"]),
