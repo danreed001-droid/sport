@@ -357,6 +357,13 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .qtable td:first-child{text-align:left;}
 .qtable .qn{color:var(--muted);font-size:11px;}
 .qstrip{display:block;width:100%;height:auto;margin-top:2px;}
+.qlwrap{margin-top:6px;}
+.ql-h{font-size:11.5px;color:var(--muted);display:flex;align-items:center;gap:5px;}
+.qlchart{display:block;width:100%;height:auto;}
+.qlchart .ql{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round;}
+.qlchart .ql-l{font-size:12px;font-weight:700;}
+@media (max-width:600px){.qlchart .ql-l{font-size:18px;} .qlchart .yl{font-size:15px;}}
+.qlchart .hit{fill:transparent;}
 .qstrip .qb{fill:#2e9e5b;} .qstrip .qb.neg{fill:#d0544c;}
 .qstrip .yl{font-size:10px;fill:var(--muted);}
 .proprow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;}
@@ -1559,7 +1566,46 @@ footer b{color:var(--ink);}
       return '<svg class="qstrip" viewBox="0 0 '+W+' '+SH+'" role="img" aria-label="'+esc(team)+' by '+qName(sport)+', each game"><line class="zero" x1="'+L+'" x2="'+(W-R)+'" y1="'+(SH/2)+'" y2="'+(SH/2)+'"></line>'
         + '<text class="yl" x="'+(W-R+10)+'" y="'+(SH/2+4)+'">'+esc(teamAbbr(team))+' '+(sport==='ncaab'?'halves':'qtrs')+'</text>'+out+'</svg>';
     };
-    var strips = strip(A, g.away) + strip(H, g.home);
+    // One small chart per team with a running line per quarter (NCAAB: half):
+    // the quarter's margin plus a quarter of the spread (totals: the quarter's
+    // points minus a quarter of the total), added up game by game, so the lines
+    // sum to the main line (overtime aside). Same x positions as the main chart.
+    var QC = ['#3b82f6','#14b8a6','#f59e0b','#a855f7'];
+    var qlines = function(rows, team){
+      var ok = rows.some(function(r){ return r[5] && r[5].length >= NQ; });
+      if(!ok) return '';
+      var n = rows.length, run = [], sers = [];
+      for(var j=0;j<NQ;j++){ run[j] = 0; sers[j] = []; }
+      rows.forEach(function(r, i){
+        for(var j=0;j<NQ;j++){
+          if(r[5] && r[5].length >= NQ) run[j] += (OU ? r[5][j] - r[3]/NQ : r[5][j] + r[3]/NQ);
+          sers[j].push([xs(i, n), Math.round(run[j]*10)/10, r]);
+        }
+      });
+      var all = [0]; sers.forEach(function(sr){ sr.forEach(function(p){ all.push(p[1]); }); });
+      var qmx = Math.max.apply(null, all.map(Math.abs)) || 1, QH = window.innerWidth < 600 ? 130 : 100, qy = function(v){ return 8 + (QH-16)*(qmx - v)/(2*qmx); };
+      var out = '<line class="zero" x1="'+L+'" x2="'+(W-R)+'" y1="'+qy(0).toFixed(1)+'" y2="'+qy(0).toFixed(1)+'"></line>'
+        + '<text class="yl" x="'+(L-6)+'" y="'+(qy(qmx)+4).toFixed(1)+'" text-anchor="end">+'+Math.round(qmx)+'</text>'
+        + '<text class="yl" x="'+(L-6)+'" y="'+(qy(-qmx)+4).toFixed(1)+'" text-anchor="end">−'+Math.round(qmx)+'</text>';
+      var ends = [];
+      sers.forEach(function(sr, j){
+        var d = sr.map(function(p,i){ return (i?'L':'M')+p[0].toFixed(1)+' '+qy(p[1]).toFixed(1); }).join(' ');
+        out += '<path class="ql" d="'+d+'" stroke="'+QC[j]+'"></path>' + sr.map(function(p){
+          var r = p[2], v = r[5] ? r[5][j] : null;
+          return '<g><title>'+esc(team+' '+qLabel(sport,j)+' — '+fmtDay(r[0])+' '+(r[4]?'vs ':'@ ')+r[1]+': '+(v==null?'no quarter scores':(OU ? v+' points (pace '+(r[3]/NQ).toFixed(1)+')' : fmtSigned(v)+' margin, '+fmtSigned(Math.round((v + r[3]/NQ)*10)/10)+' vs a quarter of the spread'))+' · running '+fmtSigned(p[1]))+'</title><circle class="hit" cx="'+p[0].toFixed(1)+'" cy="'+qy(p[1]).toFixed(1)+'" r="7"></circle><circle cx="'+p[0].toFixed(1)+'" cy="'+qy(p[1]).toFixed(1)+'" r="2.6" fill="'+QC[j]+'"></circle></g>';
+        }).join('');
+        var last = sr[sr.length-1]; ends.push([j, last[1], last[0]]);
+      });
+      // end labels, nudged apart
+      ends.sort(function(a,b){ return b[1]-a[1]; });
+      var prevY = -99;
+      ends.forEach(function(e){
+        var gap = window.innerWidth < 600 ? 17 : 12, y = qy(e[1]) + 4; if(y < prevY + gap) y = prevY + gap; prevY = y;
+        out += '<text class="endl ql-l" x="'+(e[2]+8).toFixed(1)+'" y="'+y.toFixed(1)+'" fill="'+QC[e[0]]+'">'+qLabel(sport,e[0])+' '+fmtSigned(e[1])+'</text>';
+      });
+      return '<div class="qlwrap"><div class="ql-h">'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> by '+qName(sport)+'</div><svg class="qlchart" viewBox="0 0 '+W+' '+QH+'" role="img" aria-label="'+esc(team)+' running trend by '+qName(sport)+'">'+out+'</svg></div>';
+    };
+    var strips = qlines(A, g.away) + qlines(H, g.home);
     var rec = function(rows){ var w = 0, l = 0; rows.forEach(function(r){ if(r[2]>0) w++; else if(r[2]<0) l++; }); return w+'-'+l; };
     var leg = function(rows, cs, color, team){
       return rows.length ? '<span><i class="'+(dimColor(color)?'dk':'')+'" style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+rec(rows)+(OU?' over-under, ':' ATS, ')+fmtSigned(cs[cs.length-1])+' in '+rows.length+'</span>'
@@ -1591,7 +1637,7 @@ footer b{color:var(--ink);}
         return '<td class="mono '+(v>=1?'pos':v<=-1?'neg':'')+'">'+(v>0?'+':v<0?'\u2212':'')+Math.abs(v).toFixed(1)+'</td>';
       }).join('')+'<td class="mono qn">'+x.n+'</td></tr>';
     };
-    return '<div class="qtable"><div class="qhead">By '+qName(sport)+' \u00b7 bars under the chart: each game\'s '+qName(sport)+'s ('+(OU ? 'green = more points than the total\'s pace, red = fewer' : 'green = won the '+qName(sport)+', red = lost it')+'). Table: the average '+(OU ? 'points scored by both teams' : 'scoring margin')+' in each '+qName(sport)+'.</div>'
+    return '<div class="qtable"><div class="qhead">By '+qName(sport)+' \u00b7 the small charts are each team\'s running '+(OU ? 'points vs the total\'s pace' : 'margin vs the spread')+', one line per '+qName(sport)+' (a quarter of the '+(OU?'total':'spread')+' each; the lines add up to the main line). Table: the average '+(OU ? 'points scored by both teams' : 'scoring margin')+' in each '+qName(sport)+'.</div>'
       + '<table>'+head+row(a, g.away, gc[0])+row(h, g.home, gc[1])+'</table></div>';
   }
   function satBadge(cls, label, g){

@@ -335,10 +335,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   `quarters` in build_site.py from `data/raw/linescores/<sport>.json`, saved by
   `scripts/archive_linescores.py` each scoring run): the team's margin per
   quarter (NCAAB halves) on the ATS chart, both teams' points per period on the
-  totals chart. The card draws a strip of per-game quarter bars under each chart
-  (same x as the game's dot; totals bars vs the total's pace, total/4), puts the
-  quarters in each dot's hover, and a table of each team's average per period
-  (`quarterTable`). Covers stay full-game (no quarter lines).
+  totals chart. Under each chart, a small chart per team with one running line
+  per quarter (NCAAB: half; `qlines` in trendChart, the user asked for "4
+  lines"): the quarter's margin plus a quarter of the spread (totals: points
+  minus a quarter of the total), so the lines add up to the main line apart from
+  overtime; then a table of each team's average per period (`quarterTable`). The
+  game dots' hovers list the quarters. Books' covers stay full-game.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
