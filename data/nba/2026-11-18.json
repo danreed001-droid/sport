@@ -17,16 +17,16 @@
       "awaySpreadOdds": -117.0,
       "homeMoneyline": -205.0,
       "awayMoneyline": 171.0,
-      "statsSpread": -5.5,
+      "statsSpread": -4.5,
       "statsLine": {
-        "homeSpread": -5.5,
-        "awaySpread": 5.5,
-        "homeSpreadOdds": -103,
-        "awaySpreadOdds": -117,
+        "homeSpread": -4.5,
+        "awaySpread": 4.5,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -104,
         "homeMoneyline": -205,
         "awayMoneyline": 171
       },
-      "totalsLine": 234.5,
+      "totalsLine": 235.5,
       "totalsFavors": "Under",
       "totalsRules": [
         {
@@ -59,14 +59,17 @@
           "name": "Ghost town",
           "team": "Memphis Grizzlies",
           "says": "fade",
-          "fact": "Memphis Grizzlies' top scorer Ty Jerome (25.4 a game) missed its last two games; Memphis Grizzlies is a +5.5 underdog.",
+          "fact": "Memphis Grizzlies' top scorer Ty Jerome (25.4 a game) missed its last two games; Memphis Grizzlies is a +4.5 underdog.",
           "record": "824-742",
           "pct": 52.6,
           "leans": "Cleveland Cavaliers",
           "leanPct": 52.6,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 235.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401910008",
@@ -83,8 +86,8 @@
       "statsLine": {
         "homeSpread": 7.5,
         "awaySpread": -7.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
+        "homeSpreadOdds": -109,
+        "awaySpreadOdds": -111,
         "homeMoneyline": 228,
         "awayMoneyline": -279
       },
@@ -98,7 +101,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Indiana Pacers: covered its last two games (by 0.5 at Philadelphia 76ers and by 9.5 vs New York Knicks), now at home in game 15 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 224.5,
+      "totalsLine": 225.5,
       "storylines": [
         {
           "weight": 1,
@@ -142,7 +145,10 @@
           "leanPct": 54.3,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910009",
@@ -224,7 +230,10 @@
           "leanPct": 54.3,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 236.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910010",
@@ -237,14 +246,14 @@
       "awaySpreadOdds": -105.0,
       "homeMoneyline": -101.0,
       "awayMoneyline": -117.0,
-      "statsSpread": 1.5,
+      "statsSpread": 2.5,
       "statsLine": {
-        "homeSpread": 1.5,
-        "awaySpread": -1.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -101,
-        "awayMoneyline": -117
+        "homeSpread": 2.5,
+        "awaySpread": -2.5,
+        "homeSpreadOdds": -111,
+        "awaySpreadOdds": -109,
+        "homeMoneyline": 114,
+        "awayMoneyline": -135
       },
       "statsFavors": "Orlando Magic",
       "statsRules": [
@@ -272,7 +281,10 @@
           "leanPct": 54.2,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401910011",
@@ -294,7 +306,7 @@
         "homeMoneyline": -152,
         "awayMoneyline": 128
       },
-      "totalsLine": 237.5,
+      "totalsLine": 238.5,
       "storylines": [
         {
           "weight": 1,
@@ -324,7 +336,10 @@
           "leanPct": 53.1,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 238.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401910012",
@@ -337,16 +352,16 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": -276.0,
       "awayMoneyline": 226.0,
-      "statsSpread": -7.5,
+      "statsSpread": -6.5,
       "statsLine": {
-        "homeSpread": -7.5,
-        "awaySpread": 7.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": -276,
-        "awayMoneyline": 226
+        "homeSpread": -6.5,
+        "awaySpread": 6.5,
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": -249,
+        "awayMoneyline": 205
       },
-      "totalsLine": 226.5,
+      "totalsLine": 227.5,
       "storylines": [
         {
           "weight": 1,
@@ -355,7 +370,7 @@
           "name": "Letdown spot",
           "team": "Toronto Raptors",
           "says": "fade",
-          "fact": "Toronto Raptors is a -7.5 favorite vs Washington Wizards (4-11): it's playing its 3rd game in 4 nights and Washington Wizards is rested.",
+          "fact": "Toronto Raptors is a -6.5 favorite vs Washington Wizards (4-11): it's playing its 3rd game in 4 nights and Washington Wizards is rested.",
           "record": "359-302",
           "pct": 54.3,
           "leans": "Washington Wizards",
@@ -369,14 +384,17 @@
           "name": "Fresh underdog on the road",
           "team": "Washington Wizards",
           "says": "back",
-          "fact": "Washington Wizards is a +7.5 road underdog on 2 days' rest; Toronto Raptors played last night (2026-11-17).",
+          "fact": "Washington Wizards is a +6.5 road underdog on 2 days' rest; Toronto Raptors played last night (2026-11-17).",
           "record": "164-121",
           "pct": 57.5,
           "leans": "Washington Wizards",
           "leanPct": 57.5,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -116
     },
     {
       "espnId": "401910013",
@@ -408,7 +426,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing New Orleans Pelicans: covered its last two games (by 24.5 vs Golden State Warriors and by 4.5 vs Denver Nuggets), now at home in game 16 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 229.5,
+      "totalsLine": 228.5,
       "storylines": [
         {
           "weight": 1,
@@ -424,7 +442,10 @@
           "leanPct": 56.7,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401910014",
@@ -443,8 +464,8 @@
         "awaySpread": 6.5,
         "homeSpreadOdds": -114,
         "awaySpreadOdds": -106,
-        "homeMoneyline": -283,
-        "awayMoneyline": 231
+        "homeMoneyline": -265,
+        "awayMoneyline": 218
       },
       "totalsLine": 228.5,
       "totalsFavors": "Under",
@@ -472,7 +493,10 @@
           "leanPct": 59.9,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401910016",
@@ -491,8 +515,8 @@
         "awaySpread": 5.5,
         "homeSpreadOdds": -114,
         "awaySpreadOdds": -106,
-        "homeMoneyline": -230,
-        "awayMoneyline": 191
+        "homeMoneyline": -222,
+        "awayMoneyline": 184
       },
       "statsFavors": "Golden State Warriors",
       "statsRules": [
@@ -520,7 +544,10 @@
           "leanPct": 52.6,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114
     },
     {
       "espnId": "401910015",
@@ -542,7 +569,10 @@
         "homeMoneyline": 114,
         "awayMoneyline": -135
       },
-      "totalsLine": 221.5
+      "totalsLine": 222.5,
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -114,
+      "gameTotalUnderOdds": -106
     },
     {
       "espnId": "401910017",
@@ -555,14 +585,14 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -578.0,
       "awayMoneyline": 431.0,
-      "statsSpread": -12.5,
+      "statsSpread": -10.5,
       "statsLine": {
-        "homeSpread": -12.5,
-        "awaySpread": 12.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -578,
-        "awayMoneyline": 431
+        "homeSpread": -10.5,
+        "awaySpread": 10.5,
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": -484,
+        "awayMoneyline": 371
       },
       "statsFavors": "Los Angeles Lakers",
       "statsRules": [
@@ -574,7 +604,7 @@
         }
       ],
       "statsCheck": "Rule 64: Backing Los Angeles Lakers: 10-4 against the spread this season, vs. Utah Jazz, 0-6 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
-      "totalsLine": 231.5,
+      "totalsLine": 230.5,
       "storylines": [
         {
           "weight": 1,
@@ -583,7 +613,7 @@
           "name": "Fat and happy",
           "team": "Los Angeles Lakers",
           "says": "fade",
-          "fact": "Los Angeles Lakers has won 8 straight and is a -12.5 favorite.",
+          "fact": "Los Angeles Lakers has won 8 straight and is a -10.5 favorite.",
           "record": "159-137",
           "pct": 53.7,
           "leans": "Utah Jazz",
@@ -611,14 +641,17 @@
           "name": "Letdown spot",
           "team": "Los Angeles Lakers",
           "says": "fade",
-          "fact": "Los Angeles Lakers is a -12.5 favorite vs Utah Jazz (1-13): it just beat rival Phoenix Suns.",
+          "fact": "Los Angeles Lakers is a -10.5 favorite vs Utah Jazz (1-13): it just beat rival Phoenix Suns.",
           "record": "359-302",
           "pct": 54.3,
           "leans": "Utah Jazz",
           "leanPct": 54.3,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 230.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910018",
@@ -670,7 +703,10 @@
           "leanPct": 54.3,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     }
   ]
 }

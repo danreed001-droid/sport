@@ -1,0 +1,119 @@
+{
+  "date": "2026-11-18",
+  "weekday": "Wednesday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-18T07:57:00Z",
+  "games": [
+    {
+      "espnId": "401920514",
+      "away": "Houston Cougars",
+      "home": "Florida Gators",
+      "time": "4:30 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": -130,
+      "awayMoneyline": 110,
+      "total": 148.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401920682",
+      "away": "Siena Saints",
+      "home": "St. John's Red Storm",
+      "time": "7:00 PM ET",
+      "homeSpread": -29.5,
+      "awaySpread": 29.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -50000,
+      "awayMoneyline": 4000,
+      "total": 167.5
+    },
+    {
+      "espnId": "401921134",
+      "away": "LSU New Orleans Privateers",
+      "home": "Texas Tech Red Raiders",
+      "time": "7:30 PM ET",
+      "homeSpread": -34.5,
+      "awaySpread": 34.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "total": 153.5
+    },
+    {
+      "espnId": "401920515",
+      "away": "Kansas Jayhawks",
+      "home": "West Virginia Mountaineers",
+      "time": "7:30 PM ET",
+      "homeSpread": 8.5,
+      "awaySpread": -8.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "total": 150.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401917982",
+      "away": "UL Monroe Warhawks",
+      "home": "LSU Tigers",
+      "time": "8:00 PM ET",
+      "homeSpread": -36.5,
+      "awaySpread": 36.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "total": 158.5
+    },
+    {
+      "espnId": "401926064",
+      "away": "South Dakota Coyotes",
+      "home": "Nebraska Cornhuskers",
+      "time": "8:30 PM ET",
+      "homeSpread": -33.5,
+      "awaySpread": 33.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 161.5
+    },
+    {
+      "espnId": "401909742",
+      "away": "UConn Huskies",
+      "home": "Arizona Wildcats",
+      "time": "9:00 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -166,
+      "awayMoneyline": 140,
+      "total": 148.5
+    },
+    {
+      "espnId": "401921742",
+      "away": "Northern Colorado Bears",
+      "home": "BYU Cougars",
+      "time": "9:00 PM ET",
+      "homeSpread": -29.5,
+      "awaySpread": 29.5,
+      "homeSpreadOdds": -118,
+      "awaySpreadOdds": -102,
+      "homeMoneyline": -50000,
+      "awayMoneyline": 4000,
+      "total": 162.5
+    },
+    {
+      "espnId": "401920158",
+      "away": "Cal State Fullerton Titans",
+      "home": "UCLA Bruins",
+      "time": "10:30 PM ET",
+      "homeSpread": -34.5,
+      "awaySpread": 34.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 166.5
+    }
+  ]
+}

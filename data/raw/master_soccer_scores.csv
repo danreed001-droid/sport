@@ -1,4 +1,32 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
+401928690,2026-11-18,Scheduled,Peterborough United,0,-,Lye Town,0,-,-,-,2:45 PM
+401928505,2026-11-18,Scheduled,Mallorca,0,-,Alcoyano,0,-,-,-,2:00 PM
+401928561,2026-11-18,Scheduled,Valencia,0,-,CD Samper,0,-,-,-,2:30 PM
+401928518,2026-11-18,Scheduled,Real Unión Irun,0,-,Portugalete,0,-,-,-,1:00 PM
+401928497,2026-11-18,Scheduled,CD Sabadell,0,-,Utebo,0,-,-,-,1:00 PM
+401928524,2026-11-18,Scheduled,FC Cartagena,0,-,CD Minera,0,-,-,-,2:30 PM
+401928500,2026-11-18,Scheduled,Barakaldo,0,-,Reus FC Reddis,0,-,-,-,2:30 PM
+401928559,2026-11-18,Scheduled,Eibar,0,-,Levante,0,-,-,-,12:00 PM
+401928558,2026-11-18,Scheduled,Alavés,0,-,CP Cacereño,0,-,-,-,1:00 PM
+401928532,2026-11-18,Scheduled,Tenerife,0,-,Badajoz,0,-,-,-,2:00 PM
+401916982,2026-11-18,Scheduled,Manchester City,0,-,BK Häcken,0,-,-,-,12:45 PM
+401916981,2026-11-18,Scheduled,Internazionale,0,-,Real Madrid,0,-,-,-,12:45 PM
+401916980,2026-11-18,Scheduled,Paris Saint-Germain,0,-,Chelsea,0,-,-,-,3:00 PM
+401916979,2026-11-18,Scheduled,OH Leuven,0,-,Juventus,0,-,-,-,3:00 PM
+401923287,2026-11-18,Scheduled,Brighton & Hove Albion,0,-,London City Lionesses,0,-,-,-,2:00 PM
+401923284,2026-11-18,Scheduled,Everton,0,-,Manchester United,0,-,-,-,2:00 PM
+401923286,2026-11-18,Scheduled,Liverpool,0,-,Nottingham Forest,0,-,-,-,2:00 PM
+401923285,2026-11-18,Scheduled,Leicester City,0,-,Tottenham Hotspur,0,-,-,-,2:00 PM
+401923377,2026-11-18,Scheduled,Wolverhampton,0,-,West Ham United,0,-,-,-,2:00 PM
+401841315,2026-11-18,Scheduled,Santos,0,-,Coritiba,0,-,-,-,5:30 PM
+401841310,2026-11-18,Scheduled,Chapecoense,0,-,Remo,0,-,-,-,6:00 PM
+401841314,2026-11-18,Scheduled,Palmeiras,0,-,Cruzeiro,0,-,-,-,6:30 PM
+401841313,2026-11-18,Scheduled,Athletico-PR,0,-,Flamengo,0,-,-,-,6:30 PM
+401841316,2026-11-18,Scheduled,Botafogo,0,-,Corinthians,0,-,-,-,7:30 PM
+401841312,2026-11-18,Scheduled,Bahia,0,-,Grêmio,0,-,-,-,7:30 PM
+401886138,2026-11-18,Scheduled,Melgar,0,-,Alianza Atlético,0,-,-,-,3:00 PM
+401930226,2026-11-18,Scheduled,Real Potosí,0,-,Always Ready,0,-,-,-,6:30 PM
+401930694,2026-11-18,Scheduled,Sreenidi Deccan FC,0,-,Bengaluru United FC,0,-,-,-,8:00 AM
 401929704,2026-11-17,FT,Sint Maarten,2,-,Belize,1,-,-,-,2:00 PM
 401929769,2026-11-17,FT,Cayman Islands,0,-,Dominica,5,-,-,-,2:00 PM
 401929767,2026-11-17,FT,Bonaire,2,-,St. Kitts and Nevis,3,-,-,-,2:00 PM
@@ -6,8 +34,8 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401929765,2026-11-17,FT,St. Vincent and the Grenadines,0,-,French Guiana,1,-,-,-,7:00 PM
 401929766,2026-11-17,FT,Haiti,0,-,United States,2,-,-,-,7:00 PM
 401929764,2026-11-17,FT,St. Martin,1,-,El Salvador,3,-,-,-,8:00 PM
-401929763,2026-11-17,90'+5',Jamaica,0,-,Mexico,1,-,-,-,9:30 PM
-401929703,2026-11-17,61',Montserrat,0,-,Nicaragua,1,-,-,-,10:00 PM
+401929763,2026-11-17,FT,Jamaica,0,-,Mexico,1,-,-,-,9:30 PM
+401929703,2026-11-17,FT,Montserrat,0,-,Nicaragua,2,-,-,-,10:00 PM
 401861196,2026-11-17,FT,Romania,1,-,Bosnia-Herzegovina,2,-,-,-,2:45 PM
 401861194,2026-11-17,FT,Norway,3,-,Denmark,2,-,-,-,2:45 PM
 401861191,2026-11-17,FT,Northern Ireland,1,-,Hungary,1,-,-,-,2:45 PM
@@ -100,7 +128,6 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401886121,2026-11-16,FT,ADT,2,-,Cusco FC,2,-,-,-,3:15 PM
 401886119,2026-11-16,FT,Atlético Grau,1,-,Deportivo Moquegua,2,-,-,-,3:15 PM
 401933096,2026-11-15,FT,La Tamponnaise,2,-,Saint-Pauloise FC,1,-,-,-,9:45 AM
-401928690,2026-11-15,ABN,Peterborough United,3,-,Lye Town,1,-,-,-,8:00 AM
 401933740,2026-11-15,FT,Kansas City Current,2,-,Gotham FC,1,-,-,-,3:00 PM
 401929709,2026-11-15,FT,Curaçao,0,-,Panama,2,-,-,-,6:00 PM
 401861172,2026-11-15,FT,Montenegro,4,-,Cyprus,1,-,-,-,9:00 AM
@@ -1396,7 +1423,6 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401931339,2026-11-06,AET,St. Thomas,3,-,South Dakota State,2,-,-,-,7:00 PM
 401931317,2026-11-06,FT,Western Carolina,4,-,The Citadel,3,-,-,-,7:00 PM
 401900969,2026-11-06,FT,Grand Canyon,0,-,UTEP,0,-,-,-,9:00 PM
-401928505,2026-11-05,Postponed,Mallorca,0,-,Alcoyano,0,-,-,-,3:00 PM
 401926824,2026-11-05,FT,Antofagasta,0,-,Universidad de Chile,4,-,-,-,5:00 PM
 401915534,2026-11-05,FT,Ferencvaros,2,-,AC Milan,0,-,-,-,12:45 PM
 401915538,2026-11-05,FT,RB Salzburg,0,-,Anderlecht,2,-,-,-,12:45 PM
@@ -1434,7 +1460,6 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401915818,2026-11-05,FT,Jablonec,1,-,Riga FC,1,-,-,-,3:00 PM
 401915820,2026-11-05,FT,SK Brann,1,-,Sint-Truidense,1,-,-,-,3:00 PM
 401928560,2026-11-05,Postponed,FC Badalona,0,-,Sporting de Huelva,0,-,-,-,2:00 PM
-401928561,2026-11-05,Postponed,Valencia,0,-,CD Samper,0,-,-,-,2:30 PM
 401900443,2026-11-05,Postponed,Al Shabab,0,-,Abha,0,-,-,-,3:00 PM
 401900872,2026-11-05,Postponed,Al Khaleej,0,-,Al Kholood,0,-,-,-,3:00 PM
 401900870,2026-11-05,Postponed,Al Fayha,0,-,Al Qadsiah,0,-,-,-,3:00 PM
@@ -1525,10 +1550,6 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401890423,2026-11-05,FT,Texas State,3,-,Fresno State,1,-,-,-,10:00 PM
 401900961,2026-11-05,FT,Colorado College,0,-,UNLV,1,-,-,-,10:00 PM
 401878967,2026-11-04,FT,KV Mechelen,3,-,KV Kortrijk,1,-,-,-,2:30 PM
-401928518,2026-11-04,Postponed,Real Unión Irun,0,-,Portugalete,0,-,-,-,1:00 PM
-401928497,2026-11-04,Postponed,CD Sabadell,0,-,Utebo,0,-,-,-,2:30 PM
-401928524,2026-11-04,Postponed,FC Cartagena,0,-,CD Minera,0,-,-,-,2:30 PM
-401928500,2026-11-04,Postponed,Barakaldo,0,-,Reus FC Reddis,0,-,-,-,2:30 PM
 401929680,2026-11-04,FT,Coquimbo Unido,2,-,Unión La Calera,0,-,-,-,5:00 PM
 401915383,2026-11-04,FT,Real Madrid,3,-,AEK Athens,2,-,-,-,12:45 PM
 401915382,2026-11-04,FT,Liverpool,2,-,Fenerbahce,3,-,-,-,12:45 PM
@@ -1546,9 +1567,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401880176,2026-11-04,FT,Wolverhampton Wanderers,2,-,Bristol City,1,-,-,-,3:00 PM
 401933038,2026-11-04,FT,Congo,4,-,Sao Tome E Principe,1,-,-,-,7:00 AM
 401933059,2026-11-04,FT,Chad,1,-,Central African Republic,1,-,-,-,10:00 AM
-401928559,2026-11-04,Postponed,Eibar,0,-,Levante,0,-,-,-,12:00 PM
 401928541,2026-11-04,Postponed,Madrid CFF,0,-,CD Argual,0,-,-,-,2:00 PM
-401928558,2026-11-04,Postponed,Alavés,0,-,CP Cacereño,0,-,-,-,3:00 PM
 401912614,2026-11-04,FT,Gamba Osaka,3,-,Pohang Steelers,3,-,-,-,5:00 AM
 401912613,2026-11-04,FT,Kashima Antlers,0,-,Buriram United,0,-,-,-,7:15 AM
 401912769,2026-11-04,FT,Persib Bandung,2,-,Melbourne Victory,1,-,-,-,2:45 AM
@@ -2652,7 +2671,6 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 761917,2026-10-28,FT,Colorado Rapids,2,-,San Jose Earthquakes,2,-,-,-,10:30 PM
 761916,2026-10-28,FT,Houston Dynamo FC,1,-,Seattle Sounders FC,0,-,-,-,10:30 PM
 761918,2026-10-28,FT,San Diego FC,1,-,Vancouver Whitecaps,4,-,-,-,10:30 PM
-401928532,2026-10-28,Postponed,Tenerife,0,-,Badajoz,0,-,-,-,3:00 PM
 401916999,2026-10-28,FT,Real Madrid,2,-,Bayern Munich,2,-,-,-,1:45 PM
 401917000,2026-10-28,FT,Roma,0,-,Chelsea,2,-,-,-,1:45 PM
 401916998,2026-10-28,FT,OH Leuven,1,-,Servette,5,-,-,-,1:45 PM

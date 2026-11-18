@@ -2,7 +2,7 @@
   "date": "2026-11-17",
   "weekday": "Tuesday",
   "sport": "nba",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-17T16:28:50Z",
   "auditChanges": [
     "Hornets @ Lakers: Second Opinion Lakers strong \u2192 pass (Reaves and Kessler both out; Injuries/Lineup neutral, tally 0-5 \u2192 0-3)."
@@ -32,7 +32,7 @@
       "awayMoneyline": -152,
       "awayNetRtg": 6.2,
       "awayPDpg": 5.92,
-      "awayScore": null,
+      "awayScore": 111.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -44,7 +44,7 @@
       "homeMoneyline": 128,
       "homeNetRtg": 1,
       "homePDpg": 1,
-      "homeScore": null,
+      "homeScore": 102.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 24.14,
@@ -81,7 +81,8 @@
           "record": "221-182",
           "says": "back",
           "team": "Toronto Raptors",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": true,
@@ -95,7 +96,8 @@
           "record": "174-209",
           "says": "back",
           "team": "Toronto Raptors",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "7:30 PM ET",
@@ -124,7 +126,7 @@
       "awayMoneyline": 114,
       "awayNetRtg": 6.6,
       "awayPDpg": 6.54,
-      "awayScore": null,
+      "awayScore": 105.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -118,
       "confidence": "skip",
@@ -136,7 +138,7 @@
       "homeMoneyline": -135,
       "homeNetRtg": 11.1,
       "homePDpg": 11.29,
-      "homeScore": null,
+      "homeScore": 106.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -102,
       "netRtgGap": 13.79,
@@ -187,7 +189,7 @@
       "awayMoneyline": 295,
       "awayNetRtg": 5.4,
       "awayPDpg": 5.42,
-      "awayScore": null,
+      "awayScore": 105.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": -116,
       "confidence": "skip",
@@ -199,7 +201,7 @@
       "homeMoneyline": -371,
       "homeNetRtg": 13,
       "homePDpg": 12.86,
-      "homeScore": null,
+      "homeScore": 93.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -105,
       "netRtgGap": 27.59,
@@ -247,7 +249,8 @@
           "record": "159-137",
           "says": "fade",
           "team": "San Antonio Spurs",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -261,11 +264,16 @@
           "record": "156-136",
           "says": "back",
           "team": "Detroit Pistons",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 221.5
+      "totalsLine": 221.5,
+      "statsCorrect": true,
+      "statsReturn": 340.0,
+      "statsCover": true,
+      "statsSpreadReturn": 95.24
     },
     {
       "altCategoryTally": "0-0",
@@ -290,7 +298,7 @@
       "awayMoneyline": 197,
       "awayNetRtg": -10.9,
       "awayPDpg": -10.93,
-      "awayScore": null,
+      "awayScore": 132.0,
       "awaySpread": 6.5,
       "awaySpreadOdds": -113,
       "confidence": "skip",
@@ -302,7 +310,7 @@
       "homeMoneyline": -238,
       "homeNetRtg": -4.1,
       "homePDpg": -4.17,
-      "homeScore": null,
+      "homeScore": 107.0,
       "homeSpread": -6.5,
       "homeSpreadOdds": -107,
       "netRtgGap": 17.25,
@@ -338,7 +346,11 @@
       ],
       "statsSpread": -5.5,
       "time": "10:30 PM ET",
-      "totalsLine": 227.5
+      "totalsLine": 227.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "0-3",
@@ -364,11 +376,11 @@
       "awayMoneyline": 255,
       "awayNetRtg": -11.3,
       "awayPDpg": -10.77,
-      "awayScore": null,
+      "awayScore": 114.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 221.5,
       "gameTotalOverOdds": -105,
       "gameTotalUnderOdds": -115,
@@ -376,14 +388,14 @@
       "homeMoneyline": -316,
       "homeNetRtg": 7.9,
       "homePDpg": 7.93,
-      "homeScore": null,
+      "homeScore": 118.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 75.86,
       "pick": "Los Angeles Lakers",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": 31.65,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -424,7 +436,8 @@
           "record": "159-137",
           "says": "fade",
           "team": "Los Angeles Lakers",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -438,7 +451,8 @@
           "record": "97-82",
           "says": "back",
           "team": "Los Angeles Lakers",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -452,7 +466,8 @@
           "record": "359-302",
           "says": "fade",
           "team": "Los Angeles Lakers",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": true,
@@ -466,11 +481,17 @@
           "record": "174-209",
           "says": "back",
           "team": "Charlotte Hornets",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "11:00 PM ET",
-      "totalsLine": 221.5
+      "totalsLine": 221.5,
+      "statsCorrect": true,
+      "statsReturn": 34.6,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     }
-  ]
+  ],
+  "scoredAt": "2026-11-18T07:57:07.795984+00:00"
 }

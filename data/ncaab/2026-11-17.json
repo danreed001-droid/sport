@@ -2,7 +2,7 @@
   "date": "2026-11-17",
   "weekday": "Tuesday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-17T16:28:50Z",
   "games": [
     {
@@ -28,7 +28,7 @@
       "awayMoneyline": 1200,
       "awayPDpg": 11.76,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 73.0,
       "awaySpread": 18.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -40,7 +40,7 @@
       "homeMoneyline": -2400,
       "homePDpg": 24.42,
       "homeRank": 8,
-      "homeScore": null,
+      "homeScore": 85.0,
       "homeSpread": -18.5,
       "homeSpreadOdds": -105,
       "offGap": 24.58,
@@ -69,7 +69,8 @@
           "says": "fade",
           "team": "Rutgers Scarlet Knights",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "2:00 PM ET"
@@ -97,7 +98,7 @@
       "awayMoneyline": 1000,
       "awayPDpg": 11.22,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 78.0,
       "awaySpread": 15.5,
       "awaySpreadOdds": -105,
       "confidence": "skip",
@@ -109,7 +110,7 @@
       "homeMoneyline": -1800,
       "homePDpg": 17.7,
       "homeRank": 1,
-      "homeScore": null,
+      "homeScore": 86.0,
       "homeSpread": -15.5,
       "homeSpreadOdds": -115,
       "offGap": 17.31,
@@ -138,7 +139,8 @@
           "says": "fade",
           "team": "Notre Dame Fighting Irish",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "4:30 PM ET"
@@ -166,7 +168,7 @@
       "awayMoneyline": 295,
       "awayPDpg": 23.88,
       "awayRank": 10,
-      "awayScore": null,
+      "awayScore": 99.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -178,7 +180,7 @@
       "homeMoneyline": -375,
       "homePDpg": 25.5,
       "homeRank": 5,
-      "homeScore": null,
+      "homeScore": 78.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -110,
       "offGap": 1.51,
@@ -207,7 +209,8 @@
           "says": "fade",
           "team": "Illinois Fighting Illini",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": true,
@@ -222,7 +225,8 @@
           "says": "back",
           "team": "Illinois Fighting Illini",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -237,7 +241,8 @@
           "says": "fade",
           "team": "Illinois Fighting Illini",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "7:00 PM ET"
@@ -265,11 +270,11 @@
       "awayMoneyline": null,
       "awayPDpg": -13.08,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 48.0,
       "awaySpread": 41.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 148.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110,
@@ -277,14 +282,14 @@
       "homeMoneyline": null,
       "homePDpg": 17.13,
       "homeRank": 17,
-      "homeScore": null,
+      "homeScore": 95.0,
       "homeSpread": -41.5,
       "homeSpreadOdds": -105,
       "offGap": 90.25,
       "pick": "Miami Hurricanes",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 95.24,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -307,7 +312,8 @@
           "says": "fade",
           "team": "Miami Hurricanes",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "7:00 PM ET"
@@ -335,7 +341,7 @@
       "awayMoneyline": 2000,
       "awayPDpg": 18.82,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 91.0,
       "awaySpread": 25.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -347,7 +353,7 @@
       "homeMoneyline": -6500,
       "homePDpg": 14.73,
       "homeRank": 16,
-      "homeScore": null,
+      "homeScore": 109.0,
       "homeSpread": -25.5,
       "homeSpreadOdds": -105,
       "offGap": 43.68,
@@ -377,7 +383,8 @@
           "says": "back",
           "team": "Kennesaw State Owls",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "7:30 PM ET"
@@ -405,7 +412,7 @@
       "awayMoneyline": -135,
       "awayPDpg": 12.33,
       "awayRank": 20,
-      "awayScore": null,
+      "awayScore": 76.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -105,
       "confidence": "skip",
@@ -417,7 +424,7 @@
       "homeMoneyline": 114,
       "homePDpg": 13.5,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 81.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -115,
       "offGap": 0.41,
@@ -457,11 +464,11 @@
       "awayMoneyline": null,
       "awayPDpg": -7.22,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 50.0,
       "awaySpread": 43.5,
       "awaySpreadOdds": -105,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 147.5,
       "gameTotalOverOdds": -115,
       "gameTotalUnderOdds": -105,
@@ -469,14 +476,14 @@
       "homeMoneyline": null,
       "homePDpg": 20.38,
       "homeRank": 15,
-      "homeScore": null,
+      "homeScore": 96.0,
       "homeSpread": -43.5,
       "homeSpreadOdds": -115,
       "offGap": 88.32,
       "pick": "Vanderbilt Commodores",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 86.96,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -499,7 +506,8 @@
           "says": "fade",
           "team": "Vanderbilt Commodores",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": true,
@@ -514,7 +522,8 @@
           "says": "fade",
           "team": "Vanderbilt Commodores",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "8:00 PM ET"
@@ -542,7 +551,7 @@
       "awayMoneyline": -155,
       "awayPDpg": 18.63,
       "awayRank": 2,
-      "awayScore": null,
+      "awayScore": 46.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -554,7 +563,7 @@
       "homeMoneyline": 130,
       "homePDpg": 14.49,
       "homeRank": 14,
-      "homeScore": null,
+      "homeScore": 61.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -105,
       "offGap": 3.98,
@@ -583,7 +592,8 @@
           "says": "fade",
           "team": "Michigan State Spartans",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -598,7 +608,8 @@
           "says": "fade",
           "team": "Michigan State Spartans",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -613,7 +624,8 @@
           "says": "fade",
           "team": "Michigan State Spartans",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "9:00 PM ET"
@@ -641,7 +653,7 @@
       "awayMoneyline": 3500,
       "awayPDpg": 8.45,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 65.0,
       "awaySpread": 26.5,
       "awaySpreadOdds": -112,
       "confidence": "lean",
@@ -653,14 +665,14 @@
       "homeMoneyline": -20000,
       "homePDpg": 16.91,
       "homeRank": 4,
-      "homeScore": null,
+      "homeScore": 85.0,
       "homeSpread": -26.5,
       "homeSpreadOdds": -108,
       "offGap": 50.55,
       "pick": "Virginia Cavaliers",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -683,7 +695,8 @@
           "says": "fade",
           "team": "Virginia Cavaliers",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": true,
@@ -698,7 +711,8 @@
           "says": "back",
           "team": "Old Dominion Monarchs",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "9:00 PM ET"
@@ -726,7 +740,7 @@
       "awayMoneyline": 1200,
       "awayPDpg": 5.12,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 77.0,
       "awaySpread": 18.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -738,7 +752,7 @@
       "homeMoneyline": -2400,
       "homePDpg": 18.68,
       "homeRank": 11,
-      "homeScore": null,
+      "homeScore": 102.0,
       "homeSpread": -18.5,
       "homeSpreadOdds": -108,
       "offGap": 11.26,
@@ -767,7 +781,8 @@
           "says": "fade",
           "team": "Kansas Jayhawks",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": true,
@@ -782,7 +797,8 @@
           "says": "fade",
           "team": "Kansas Jayhawks",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "9:30 PM ET"
@@ -791,7 +807,7 @@
       "altCategoryTally": "0-4",
       "altConfidence": "lean",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": false,
       "altPick": "Gonzaga Bulldogs",
       "altReasons": [
         "Scoring margin: favors Gonzaga Bulldogs (blended PD/g +16.71 vs Montana State's +4.90)",
@@ -805,12 +821,12 @@
         "Matchup splits: neutral \u2014 no specific verifiable unit-vs-unit mismatch found"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": -100.0,
       "away": "Montana State Bobcats",
       "awayMoneyline": 2000,
       "awayPDpg": 4.9,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 62.0,
       "awaySpread": 23.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -822,14 +838,14 @@
       "homeMoneyline": -6500,
       "homePDpg": 16.71,
       "homeRank": 22,
-      "homeScore": null,
+      "homeScore": 74.0,
       "homeSpread": -23.5,
       "homeSpreadOdds": -110,
       "offGap": 30.22,
       "pick": "Gonzaga Bulldogs",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -840,5 +856,6 @@
       ],
       "time": "11:00 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-18T07:57:09.941020+00:00"
 }

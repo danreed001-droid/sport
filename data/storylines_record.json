@@ -97,7 +97,7 @@
   "fat_happy": {
    "l": 4,
    "p": 0,
-   "w": 7
+   "w": 9
   },
   "friday": {
    "l": 6,
@@ -132,7 +132,7 @@
   "letdown": {
    "l": 3,
    "p": 0,
-   "w": 4
+   "w": 5
   },
   "payback": {
    "l": 0,
@@ -140,9 +140,9 @@
    "w": 2
   },
   "prodigal": {
-   "l": 2,
+   "l": 3,
    "p": 0,
-   "w": 3
+   "w": 4
   },
   "quiet_giant": {
    "l": 6,
@@ -170,7 +170,7 @@
    "w": 7
   },
   "second_battle": {
-   "l": 1,
+   "l": 2,
    "p": 0,
    "w": 4
   },
@@ -182,7 +182,7 @@
   "sleeping_giant": {
    "l": 1,
    "p": 0,
-   "w": 2
+   "w": 3
   },
   "spotlight": {
    "l": 0,
@@ -190,14 +190,14 @@
    "w": 2
   },
   "steady": {
-   "l": 1,
+   "l": 2,
    "p": 0,
    "w": 4
   }
  },
  "ncaab": {
   "after_dark": {
-   "l": 0,
+   "l": 1,
    "p": 0,
    "w": 3
   },
@@ -209,22 +209,22 @@
   "first_road": {
    "l": 2,
    "p": 0,
-   "w": 4
+   "w": 5
   },
   "last_season_grudge": {
    "l": 7,
    "p": 0,
-   "w": 10
+   "w": 11
   },
   "midweek_road": {
-   "l": 1,
-   "p": 0,
-   "w": 2
-  },
-  "nonconf_road": {
    "l": 2,
    "p": 0,
-   "w": 4
+   "w": 3
+  },
+  "nonconf_road": {
+   "l": 3,
+   "p": 0,
+   "w": 5
   },
   "november_hype": {
    "l": 3,
@@ -237,9 +237,19 @@
    "w": 0
   },
   "poll_riser": {
-   "l": 1,
+   "l": 2,
    "p": 0,
    "w": 0
+  },
+  "ranked_road_dog": {
+   "l": 0,
+   "p": 0,
+   "w": 1
+  },
+  "rolling_dog": {
+   "l": 0,
+   "p": 0,
+   "w": 1
   },
   "sandwich": {
    "l": 1,
@@ -247,14 +257,14 @@
    "w": 2
   },
   "steamroller": {
-   "l": 1,
+   "l": 6,
    "p": 0,
    "w": 1
   },
   "top5_huge": {
    "l": 4,
    "p": 0,
-   "w": 5
+   "w": 6
   }
  },
  "nfl": {
