@@ -516,8 +516,8 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
 - **Storyline veto: REMOVED 2026-11-16 (the user's call: storylines weren't
   doing much better than the models).** `STORY_VETO_FROM = None` in
   `build_site.py`, so `story_vetoed` is always false and every model pick
-  counts again, Nov 13-15 included (the 20 benched picks went 12-8); the
-  scorecard shows a one-line note (`storyVetoRemoved`). The code below is kept
+  counts again, Nov 13-15 included (the 20 benched picks went 12-8); no
+  note on the page (removed 2026-11-18 at the user's request). The code below is kept
   and comes back by setting a date. What it did while it ran:
 - **Storyline veto (the user's call, 2026-11-13):** from `STORY_VETO_FROM`
   in `build_site.py` on, a model's side pick (Ledger, Second Opinion, Trend,
