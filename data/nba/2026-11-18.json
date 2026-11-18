@@ -21,12 +21,12 @@
       "statsLine": {
         "homeSpread": -4.5,
         "awaySpread": 4.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -104,
-        "homeMoneyline": -205,
-        "awayMoneyline": 171
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -197,
+        "awayMoneyline": 164
       },
-      "totalsLine": 235.5,
+      "totalsLine": 234.5,
       "totalsFavors": "Under",
       "totalsRules": [
         {
@@ -67,9 +67,9 @@
           "against": false
         }
       ],
-      "gameTotal": 235.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112
+      "gameTotal": 234.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401910008",
@@ -86,10 +86,10 @@
       "statsLine": {
         "homeSpread": 7.5,
         "awaySpread": -7.5,
-        "homeSpreadOdds": -109,
-        "awaySpreadOdds": -111,
-        "homeMoneyline": 228,
-        "awayMoneyline": -279
+        "homeSpreadOdds": -111,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": 236,
+        "awayMoneyline": -290
       },
       "statsFavors": "Indiana Pacers",
       "statsRules": [
@@ -101,7 +101,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Indiana Pacers: covered its last two games (by 0.5 at Philadelphia 76ers and by 9.5 vs New York Knicks), now at home in game 15 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 225.5,
+      "totalsLine": 224.5,
       "storylines": [
         {
           "weight": 1,
@@ -133,22 +133,22 @@
         },
         {
           "weight": 1,
-          "live": "4-3",
+          "live": "5-3",
           "key": "letdown",
           "name": "Letdown spot",
           "team": "Houston Rockets",
           "says": "fade",
           "fact": "Houston Rockets is a -7.5 favorite vs Indiana Pacers (5-9): it's playing its 3rd game in 4 nights and Indiana Pacers is rested.",
-          "record": "359-302",
-          "pct": 54.3,
+          "record": "360-302",
+          "pct": 54.4,
           "leans": "Indiana Pacers",
-          "leanPct": 54.3,
+          "leanPct": 54.4,
           "against": false
         }
       ],
-      "gameTotal": 225.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "gameTotal": 224.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401910009",
@@ -161,14 +161,14 @@
       "awaySpreadOdds": -106.0,
       "homeMoneyline": -800.0,
       "awayMoneyline": 558.0,
-      "statsSpread": -12.5,
+      "statsSpread": -11.5,
       "statsLine": {
-        "homeSpread": -12.5,
-        "awaySpread": 12.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": -800,
-        "awayMoneyline": 558
+        "homeSpread": -11.5,
+        "awaySpread": 11.5,
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": -700,
+        "awayMoneyline": 505
       },
       "statsFavors": "Miami Heat",
       "statsRules": [
@@ -186,20 +186,20 @@
         }
       ],
       "statsCheck": "Rule 52: Backing Miami Heat: beat the spread by 24.5 and 19.5 in its last two games (137-117 vs Detroit Pistons and 128-110 vs Houston Rockets), now at home -- 65.9% ATS, 58-30 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-5; 2024-now 26-12. Rule 54: Backing Miami Heat: covered its last two games (by 19.5 vs Houston Rockets and by 24.5 vs Detroit Pistons), now at home in game 15 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 236.5,
+      "totalsLine": 234.5,
       "storylines": [
         {
           "weight": 1,
-          "live": "7-4",
+          "live": "9-4",
           "key": "fat_happy",
           "name": "Fat and happy",
           "team": "Miami Heat",
           "says": "fade",
-          "fact": "Miami Heat has won 5 straight and is a -12.5 favorite.",
-          "record": "159-137",
-          "pct": 53.7,
+          "fact": "Miami Heat has won 5 straight and is a -11.5 favorite.",
+          "record": "161-137",
+          "pct": 54.0,
           "leans": "Milwaukee Bucks",
-          "leanPct": 53.7,
+          "leanPct": 54.0,
           "against": false
         },
         {
@@ -209,7 +209,7 @@
           "name": "The emperor's new clothes",
           "team": "Miami Heat",
           "says": "fade",
-          "fact": "Miami Heat is a -12.5 favorite but has covered 5 of 14 this season.",
+          "fact": "Miami Heat is a -11.5 favorite but has covered 5 of 14 this season.",
           "record": "182-153",
           "pct": 54.3,
           "leans": "Milwaukee Bucks",
@@ -218,22 +218,22 @@
         },
         {
           "weight": 1,
-          "live": "4-3",
+          "live": "5-3",
           "key": "letdown",
           "name": "Letdown spot",
           "team": "Miami Heat",
           "says": "fade",
-          "fact": "Miami Heat is a -12.5 favorite vs Milwaukee Bucks (1-13): it just beat Houston Rockets (0.786) by 18.",
-          "record": "359-302",
-          "pct": 54.3,
+          "fact": "Miami Heat is a -11.5 favorite vs Milwaukee Bucks (1-13): it just beat Houston Rockets (0.786) by 18.",
+          "record": "360-302",
+          "pct": 54.4,
           "leans": "Milwaukee Bucks",
-          "leanPct": 54.3,
+          "leanPct": 54.4,
           "against": false
         }
       ],
-      "gameTotal": 236.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 234.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401910010",
@@ -246,14 +246,14 @@
       "awaySpreadOdds": -105.0,
       "homeMoneyline": -101.0,
       "awayMoneyline": -117.0,
-      "statsSpread": 2.5,
+      "statsSpread": 1.5,
       "statsLine": {
-        "homeSpread": 2.5,
-        "awaySpread": -2.5,
-        "homeSpreadOdds": -111,
-        "awaySpreadOdds": -109,
-        "homeMoneyline": 114,
-        "awayMoneyline": -135
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 105,
+        "awayMoneyline": -125
       },
       "statsFavors": "Orlando Magic",
       "statsRules": [
@@ -269,16 +269,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "4-1",
+          "live": "4-2",
           "key": "steady",
           "name": "Steady Eddie",
           "team": "Philadelphia 76ers",
           "says": "back",
           "fact": "Philadelphia 76ers won its last three by 12, 7, 11.",
-          "record": "97-82",
-          "pct": 54.2,
+          "record": "97-83",
+          "pct": 53.9,
           "leans": "Philadelphia 76ers",
-          "leanPct": 54.2,
+          "leanPct": 53.9,
           "against": false
         }
       ],
@@ -306,7 +306,7 @@
         "homeMoneyline": -152,
         "awayMoneyline": 128
       },
-      "totalsLine": 238.5,
+      "totalsLine": 239.5,
       "storylines": [
         {
           "weight": 1,
@@ -337,9 +337,9 @@
           "against": false
         }
       ],
-      "gameTotal": 238.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
+      "gameTotal": 239.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401910012",
@@ -356,8 +356,8 @@
       "statsLine": {
         "homeSpread": -6.5,
         "awaySpread": 6.5,
-        "homeSpreadOdds": -113,
-        "awaySpreadOdds": -107,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
         "homeMoneyline": -249,
         "awayMoneyline": 205
       },
@@ -365,16 +365,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "4-3",
+          "live": "5-3",
           "key": "letdown",
           "name": "Letdown spot",
           "team": "Toronto Raptors",
           "says": "fade",
           "fact": "Toronto Raptors is a -6.5 favorite vs Washington Wizards (4-11): it's playing its 3rd game in 4 nights and Washington Wizards is rested.",
-          "record": "359-302",
-          "pct": 54.3,
+          "record": "360-302",
+          "pct": 54.4,
           "leans": "Washington Wizards",
-          "leanPct": 54.3,
+          "leanPct": 54.4,
           "against": false
         },
         {
@@ -393,8 +393,8 @@
         }
       ],
       "gameTotal": 227.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -116
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401910013",
@@ -411,8 +411,8 @@
       "statsLine": {
         "homeSpread": 7.5,
         "awaySpread": -7.5,
-        "homeSpreadOdds": -112,
-        "awaySpreadOdds": -108,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -103,
         "homeMoneyline": 227,
         "awayMoneyline": -277
       },
@@ -426,7 +426,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing New Orleans Pelicans: covered its last two games (by 24.5 vs Golden State Warriors and by 4.5 vs Denver Nuggets), now at home in game 16 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 228.5,
+      "totalsLine": 227.5,
       "storylines": [
         {
           "weight": 1,
@@ -443,9 +443,9 @@
           "against": false
         }
       ],
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401910014",
@@ -462,12 +462,12 @@
       "statsLine": {
         "homeSpread": -6.5,
         "awaySpread": 6.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": -265,
-        "awayMoneyline": 218
+        "homeSpreadOdds": -107,
+        "awaySpreadOdds": -113,
+        "homeMoneyline": -270,
+        "awayMoneyline": 221
       },
-      "totalsLine": 228.5,
+      "totalsLine": 227.5,
       "totalsFavors": "Under",
       "totalsRules": [
         {
@@ -494,9 +494,9 @@
           "against": false
         }
       ],
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401910016",
@@ -509,14 +509,14 @@
       "awaySpreadOdds": -106.0,
       "homeMoneyline": -230.0,
       "awayMoneyline": 191.0,
-      "statsSpread": -5.5,
+      "statsSpread": -4.5,
       "statsLine": {
-        "homeSpread": -5.5,
-        "awaySpread": 5.5,
-        "homeSpreadOdds": -114,
+        "homeSpread": -4.5,
+        "awaySpread": 4.5,
+        "homeSpreadOdds": -115,
         "awaySpreadOdds": -106,
-        "homeMoneyline": -222,
-        "awayMoneyline": 184
+        "homeMoneyline": -197,
+        "awayMoneyline": 164
       },
       "statsFavors": "Golden State Warriors",
       "statsRules": [
@@ -537,7 +537,7 @@
           "name": "Ghost town",
           "team": "Golden State Warriors",
           "says": "fade",
-          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +5.5 underdog.",
+          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +4.5 underdog.",
           "record": "824-742",
           "pct": 52.6,
           "leans": "Dallas Mavericks",
@@ -546,8 +546,8 @@
         }
       ],
       "gameTotal": 222.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -114
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910015",
@@ -564,15 +564,15 @@
       "statsLine": {
         "homeSpread": 2.5,
         "awaySpread": -2.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": 114,
-        "awayMoneyline": -135
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 120,
+        "awayMoneyline": -142
       },
       "totalsLine": 222.5,
       "gameTotal": 222.5,
-      "gameTotalOverOdds": -114,
-      "gameTotalUnderOdds": -106
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910017",
@@ -589,69 +589,59 @@
       "statsLine": {
         "homeSpread": -10.5,
         "awaySpread": 10.5,
-        "homeSpreadOdds": -113,
-        "awaySpreadOdds": -107,
-        "homeMoneyline": -484,
-        "awayMoneyline": 371
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -464,
+        "awayMoneyline": 359
       },
-      "statsFavors": "Los Angeles Lakers",
-      "statsRules": [
-        {
-          "rule": 64,
-          "name": "Back a home team covering 60%+ this season vs. a team that's .250 or worse on the road, with at least a day off (on trial)",
-          "backtest": "63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15",
-          "detail": "Backing Los Angeles Lakers: 10-4 against the spread this season, vs. Utah Jazz, 0-6 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15."
-        }
-      ],
-      "statsCheck": "Rule 64: Backing Los Angeles Lakers: 10-4 against the spread this season, vs. Utah Jazz, 0-6 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
-      "totalsLine": 230.5,
+      "totalsLine": 228.5,
       "storylines": [
         {
           "weight": 1,
-          "live": "7-4",
+          "live": "9-4",
           "key": "fat_happy",
           "name": "Fat and happy",
           "team": "Los Angeles Lakers",
           "says": "fade",
-          "fact": "Los Angeles Lakers has won 8 straight and is a -10.5 favorite.",
-          "record": "159-137",
-          "pct": 53.7,
+          "fact": "Los Angeles Lakers has won 9 straight and is a -10.5 favorite.",
+          "record": "161-137",
+          "pct": 54.0,
           "leans": "Utah Jazz",
-          "leanPct": 53.7,
+          "leanPct": 54.0,
           "against": false
         },
         {
           "weight": 1,
-          "live": "4-1",
-          "key": "steady",
-          "name": "Steady Eddie",
-          "team": "Los Angeles Lakers",
-          "says": "back",
-          "fact": "Los Angeles Lakers won its last three by 8, 11, 10.",
-          "record": "97-82",
-          "pct": 54.2,
-          "leans": "Los Angeles Lakers",
-          "leanPct": 54.2,
-          "against": false
-        },
-        {
-          "weight": 1,
-          "live": "4-3",
-          "key": "letdown",
-          "name": "Letdown spot",
+          "live": "2-0",
+          "key": "spotlight",
+          "name": "Spotlight letdown",
           "team": "Los Angeles Lakers",
           "says": "fade",
-          "fact": "Los Angeles Lakers is a -10.5 favorite vs Utah Jazz (1-13): it just beat rival Phoenix Suns.",
-          "record": "359-302",
-          "pct": 54.3,
+          "fact": "Los Angeles Lakers beat Charlotte Hornets 118-114 on national TV and is a -10.5 favorite tonight off national TV.",
+          "record": "149-114",
+          "pct": 56.7,
           "leans": "Utah Jazz",
-          "leanPct": 54.3,
+          "leanPct": 56.7,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "4-6",
+          "key": "quiet_giant",
+          "name": "The quiet giant vs the hype machine",
+          "team": "Utah Jazz",
+          "says": "back",
+          "fact": "Utah Jazz's point differential (-8.5 a game) is better than its 2-13 record, and Los Angeles Lakers' record is better than its +7.7.",
+          "record": "107-86",
+          "pct": 55.4,
+          "leans": "Utah Jazz",
+          "leanPct": 55.4,
           "against": false
         }
       ],
-      "gameTotal": 230.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114
     },
     {
       "espnId": "401910018",
@@ -673,7 +663,7 @@
         "homeMoneyline": 220,
         "awayMoneyline": -269
       },
-      "totalsLine": 228.5,
+      "totalsLine": 227.5,
       "storylines": [
         {
           "weight": 1,
@@ -691,22 +681,22 @@
         },
         {
           "weight": 1,
-          "live": "4-3",
+          "live": "5-3",
           "key": "letdown",
           "name": "Letdown spot",
           "team": "Phoenix Suns",
           "says": "fade",
           "fact": "Phoenix Suns is a -6.5 favorite vs Sacramento Kings (1-12): it's playing its 3rd game in 4 nights and Sacramento Kings is rested.",
-          "record": "359-302",
-          "pct": 54.3,
+          "record": "360-302",
+          "pct": 54.4,
           "leans": "Sacramento Kings",
-          "leanPct": 54.3,
+          "leanPct": 54.4,
           "against": false
         }
       ],
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     }
   ]
 }

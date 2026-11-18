@@ -18,7 +18,27 @@
       "homeMoneyline": -130,
       "awayMoneyline": 110,
       "total": 148.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 148.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-3",
+          "key": "november_hype",
+          "name": "November hype",
+          "team": "Florida Gators",
+          "says": "fade",
+          "fact": "#1 Florida is a -2.5 favorite over #8 Houston on a neutral floor.",
+          "record": "33-38",
+          "pct": 46.5,
+          "leans": "Florida Gators",
+          "leanPct": 53.5,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401920682",
@@ -31,7 +51,10 @@
       "awaySpreadOdds": -110,
       "homeMoneyline": -50000,
       "awayMoneyline": 4000,
-      "total": 167.5
+      "total": 167.5,
+      "gameTotal": 168.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401921134",
@@ -42,7 +65,42 @@
       "awaySpread": 34.5,
       "homeSpreadOdds": -105,
       "awaySpreadOdds": -115,
-      "total": 153.5
+      "total": 153.5,
+      "gameTotal": 156.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-2",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "Texas Tech Red Raiders",
+          "says": "fade",
+          "fact": "Texas Tech moved up from #16 to #9 in this week's AP poll.",
+          "record": "235-267",
+          "pct": 46.8,
+          "leans": "Texas Tech Red Raiders",
+          "leanPct": 53.2,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "11-7",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "LSU New Orleans Privateers",
+          "says": "back",
+          "fact": "LSU New Orleans lost to Texas Tech 50-82 last season (2025-11-26).",
+          "record": "1416-1281",
+          "pct": 52.5,
+          "leans": "LSU New Orleans Privateers",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401920515",
@@ -54,7 +112,57 @@
       "homeSpreadOdds": -108,
       "awaySpreadOdds": -112,
       "total": 150.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 152.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "conf_opener_dog",
+          "name": "Conference-opener underdog",
+          "team": "West Virginia Mountaineers",
+          "says": "back",
+          "fact": "West Virginia's first conference game; it's a +8.5 underdog.",
+          "record": "100-119",
+          "pct": 45.7,
+          "leans": "Kansas Jayhawks",
+          "leanPct": 54.3,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "11-7",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Kansas Jayhawks",
+          "says": "back",
+          "fact": "Kansas lost to West Virginia 75-86 last season (2026-01-10).",
+          "record": "1416-1281",
+          "pct": 52.5,
+          "leans": "Kansas Jayhawks",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "1-6",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Kansas Jayhawks",
+          "says": "fade",
+          "fact": "Kansas won its last three by 25, 20, 44.",
+          "record": "116-144",
+          "pct": 44.6,
+          "leans": "Kansas Jayhawks",
+          "leanPct": 55.4,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401917982",
@@ -65,7 +173,10 @@
       "awaySpread": 36.5,
       "homeSpreadOdds": -108,
       "awaySpreadOdds": -112,
-      "total": 158.5
+      "total": 158.5,
+      "gameTotal": 159.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401926064",
@@ -76,7 +187,10 @@
       "awaySpread": 33.5,
       "homeSpreadOdds": -110,
       "awaySpreadOdds": -110,
-      "total": 161.5
+      "total": 161.5,
+      "gameTotal": 157.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909742",
@@ -89,7 +203,87 @@
       "awaySpreadOdds": -112,
       "homeMoneyline": -166,
       "awayMoneyline": 140,
-      "total": 148.5
+      "total": 148.5,
+      "gameTotal": 148.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-2",
+          "key": "midweek_road",
+          "name": "School night on the road",
+          "team": "UConn Huskies",
+          "says": "fade",
+          "fact": "#3 UConn plays at Arizona on a Wednesday.",
+          "record": "634-541",
+          "pct": 54.0,
+          "leans": "Arizona Wildcats",
+          "leanPct": 54.0,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "1-0",
+          "key": "ranked_road_dog",
+          "name": "Disrespected on the road",
+          "team": "UConn Huskies",
+          "says": "back",
+          "fact": "#3 UConn is a +3.5 underdog at Arizona.",
+          "record": "447-515",
+          "pct": 46.5,
+          "leans": "Arizona Wildcats",
+          "leanPct": 53.5,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "5-3",
+          "key": "nonconf_road",
+          "name": "Non-conference road trip",
+          "team": "UConn Huskies",
+          "says": "fade",
+          "fact": "#3 UConn plays a non-conference game at Arizona.",
+          "record": "205-169",
+          "pct": 54.8,
+          "leans": "Arizona Wildcats",
+          "leanPct": 54.8,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "5-2",
+          "key": "first_road",
+          "name": "Leaving home",
+          "team": "UConn Huskies",
+          "says": "fade",
+          "fact": "#3 UConn's first true road game of the season.",
+          "record": "135-114",
+          "pct": 54.2,
+          "leans": "Arizona Wildcats",
+          "leanPct": 54.2,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "11-7",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "UConn Huskies",
+          "says": "back",
+          "fact": "UConn lost to Arizona 67-71 last season (2025-11-19).",
+          "record": "1416-1281",
+          "pct": 52.5,
+          "leans": "UConn Huskies",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401921742",
@@ -102,7 +296,10 @@
       "awaySpreadOdds": -102,
       "homeMoneyline": -50000,
       "awayMoneyline": 4000,
-      "total": 162.5
+      "total": 162.5,
+      "gameTotal": 162.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401920158",
@@ -113,7 +310,27 @@
       "awaySpread": 34.5,
       "homeSpreadOdds": -110,
       "awaySpreadOdds": -110,
-      "total": 166.5
+      "total": 166.5,
+      "gameTotal": 165.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-6",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "UCLA Bruins",
+          "says": "fade",
+          "fact": "UCLA won its last three by 39, 69, 51.",
+          "record": "116-144",
+          "pct": 44.6,
+          "leans": "UCLA Bruins",
+          "leanPct": 55.4,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     }
   ]
 }
