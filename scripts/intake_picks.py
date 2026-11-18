@@ -24,26 +24,51 @@ SCORE = re.compile(r"^[AaNhH]*$")
 POINTS = {"A": (1, 0), "a": (0.5, 0), "N": (0, 0), "h": (0, 0.5), "H": (0, 1)}
 
 
-PROP_SPORTS = {"nba"}
-PROP_STATS = {"points": "points", "rebounds": "rebounds", "assists": "assists", "threes": "3-pointers",
-              "pra": "pts+reb+ast", "pr": "pts+reb", "pa": "pts+ast", "ra": "reb+ast"}
-ESPN_PATH = {"nba": "basketball/nba"}
+from lib import props as props_lib  # noqa: E402
+
+PROP_STATS = {sp: {k: short for k, _label, short, _keys in v} for sp, v in props_lib.STATS.items()}
 
 
-def espn_event_id(sport, date_str, away, home):
-    """ESPN's event id for the slate game (to grade a prop from its box score)."""
-    from lib import espn
-    from score_slate import _same_team
+def _saved_rosters(sport, date_str):
     try:
-        evs = espn.make_session().get(f"https://site.api.espn.com/apis/site/v2/sports/{ESPN_PATH[sport]}/scoreboard"
-                                      f"?dates={date_str.replace('-', '')}", timeout=25).json().get("events", [])
-    except Exception:  # noqa: BLE001
-        return None
-    for ev in evs:
-        t = {c["homeAway"]: c["team"]["displayName"] for c in ev["competitions"][0]["competitors"]}
-        if _same_team(t.get("away", ""), away) and _same_team(t.get("home", ""), home):
-            return str(ev["id"])
-    return None
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "raw", "rosters", f"{sport}.json"),
+                  encoding="utf-8") as f:
+            return json.load(f).get(date_str) or {}
+    except (OSError, ValueError):
+        return {}
+
+
+def prop_event_and_player(sport, date_str, g, pid, name, team):
+    """(ESPN event id, athlete id, canonical name) for a prop; athlete id is
+    looked up on the team's roster by name when the sheet didn't send one.
+    (None, ...) when the game can't be found."""
+    from lib import espn
+    saved = _saved_rosters(sport, date_str)
+    eid = (saved.get("events") or {}).get(f"{g['away']}@{g['home']}")
+    session = espn.make_session()
+    ids = {}
+    if not eid or not pid:
+        try:
+            eid2, ids, _ = props_lib.event_for(session, sport, date_str, g["away"], g["home"])
+            eid = eid or eid2
+        except Exception:  # noqa: BLE001
+            pass
+    if not eid:
+        return None, pid, name
+    if pid:
+        return eid, pid, name
+    rows = (saved.get("teams") or {}).get(team) or []
+    if not rows and ids:
+        side = "away" if team == g["away"] else "home"
+        try:
+            rows = props_lib.team_roster(session, sport, ids.get(side), props_lib.league_slug(session, sport, eid))
+        except Exception:  # noqa: BLE001
+            rows = []
+    want = props_lib.norm(name)
+    hit = [r for r in rows if props_lib.norm(r[1]) == want] or [r for r in rows if want and want in props_lib.norm(r[1])]
+    if len(hit) == 1:
+        return eid, hit[0][0], hit[0][1]
+    return eid, "", name   # graded by name from the box score
 
 
 def tally_text(g, code):
@@ -203,7 +228,8 @@ def process(issue):
         parts = str(pkey).split("|")
         if pe == "none" or (isinstance(pe, dict) and pe.get("remove")):
             pid, stat = (parts + ["", "", ""])[1:3]
-            hit = [k for k, v in current["props"].items() if v.get("gameId") == gid and str(v.get("playerId")) == pid and v.get("stat") == stat]
+            hit = [k for k, v in current["props"].items() if v.get("gameId") == gid and v.get("stat") == stat
+                   and (str(v.get("playerId")) == pid or "n:" + props_lib.norm(v.get("player")) == pid)]
             if hit and is_final(doc, g):
                 rejected.append(f"{label} — prop already final, can't remove")
                 continue
@@ -211,31 +237,32 @@ def process(issue):
                 cleared.append(f"{current['props'][k].get('player')} {current['props'][k].get('stat')} ({label})")
                 current["props"].pop(k)
             continue
-        if not isinstance(pe, dict) or sport not in PROP_SPORTS:
-            rejected.append(f"{label} — player props are NBA only for now")
+        if not isinstance(pe, dict) or sport not in PROP_STATS:
+            rejected.append(f"{label} — no player props for this sport yet")
             continue
         if is_final(doc, g):
             rejected.append(f"{label} — already final, props are locked")
             continue
         stat, side, line, odds = pe.get("stat"), pe.get("side"), pe.get("line"), pe.get("odds")
         pid, player = str(pe.get("playerId") or ""), str(pe.get("player") or "").strip()[:60]
-        if stat not in PROP_STATS or side not in ("over", "under") or not isinstance(line, (int, float)) \
-                or not float(line * 2).is_integer() or not 0 < line < 150 or not pid.isdigit() or not player:
+        if stat not in PROP_STATS[sport] or side not in ("over", "under") or not isinstance(line, (int, float)) \
+                or not float(line * 2).is_integer() or not 0 < line < 1000 or (pid and not pid.isdigit()) or not player:
             rejected.append(f"{label} — prop {player or pkey} isn't complete (player, stat, over/under, a line in half points)")
             continue
         if not (isinstance(odds, (int, float)) and (odds <= -100 or odds >= 100) and abs(odds) <= 5000):
             odds = None
-        eid = espn_event_id(sport, date_str, g["away"], g["home"])
+        team = str(pe.get("team") or "")[:60]
+        eid, pid, player = prop_event_and_player(sport, date_str, g, pid, player, team)
         if eid is None:
             rejected.append(f"{label} — couldn't find the game on ESPN to grade the prop; try again")
             continue
-        key = f"{sport}-espn-{eid}|{pid}|{stat}"
+        key = f"{sport}-espn-{eid}|{pid or 'n:' + props_lib.norm(player)}|{stat}"
         current["props"][key] = {"sport": sport, "eventId": eid, "gameId": gid, "away": g["away"], "home": g["home"],
                                  "time": g.get("time"), "player": player, "playerId": pid,
-                                 "team": str(pe.get("team") or "")[:60], "stat": stat, "line": line, "side": side,
+                                 "team": team, "stat": stat, "line": line, "side": side,
                                  "odds": odds, "reason": str(pe.get("reason") or "").strip()[:600] or None,
                                  "submittedAt": now, "issue": issue.get("number")}
-        saved.append(f"{player} {side.title()} {line:g} {PROP_STATS[stat]}{'' if odds is None else f' ({odds:+g})'} ({label})")
+        saved.append(f"{player} {side.title()} {line:g} {PROP_STATS[sport][stat]}{'' if pid else ' (matched by name at grading)'}{'' if odds is None else f' ({odds:+g})'} ({label})")
 
     changed = bool(saved or cleared or scored)
     if changed:

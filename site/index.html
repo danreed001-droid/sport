@@ -1750,19 +1750,18 @@ footer b{color:var(--ink);}
     return altRow('total', id, line, L.t, price, isAlt);
   }
   // ---- your player props (NBA): pick a player, stat, side, line, odds, and why ----
-  var PROP_STATS = [['points','Points','pts'],['rebounds','Rebounds','reb'],['assists','Assists','ast'],['threes','3-pointers','3PM'],
-    ['pra','Pts + Reb + Ast','PRA'],['pr','Pts + Reb','P+R'],['pa','Pts + Ast','P+A'],['ra','Reb + Ast','R+A']];
-  function propStat(k){ var s = PROP_STATS.filter(function(x){ return x[0]===k; })[0]; return s ? s[2] : k; }
+  function propStats(sport){ return (DATA.propStats||{})[sport] || []; }
+  function propStat(k, sport){ var s = propStats(sport).filter(function(x){ return x[0]===k; })[0]; return s ? s[2] : k; }
   function propsOf(id){
     var g = GAMES[id].game;
     return Object.keys(DATA.myProps||{}).map(function(k){ return DATA.myProps[k]; })
       .filter(function(p){ return p.gameId ? p.gameId === id : (p.away === g.away && p.home === g.home); });
   }
-  function committedProp(id, pid, stat){ return propsOf(id).filter(function(p){ return String(p.playerId)===String(pid) && p.stat===stat; })[0]; }
-  function propLine(p){ return esc(p.player)+' <b>'+(p.side==='over'?'Over':'Under')+' '+esc(String(p.line))+' '+esc(propStat(p.stat))+'</b>'+(num(p.odds)?' <span class="pr">'+sgn(p.odds)+'</span>':''); }
+  function committedProp(id, pid, stat){ return propsOf(id).filter(function(p){ return (String(p.playerId)===String(pid) || ('n:'+String(p.player||'').toLowerCase().replace(/[^a-z]/g,''))===String(pid)) && p.stat===stat; })[0]; }
+  function propLine(p){ return esc(p.player)+' <b>'+(p.side==='over'?'Over':'Under')+' '+esc(String(p.line))+' '+esc(propStat(p.stat, p.sport))+'</b>'+(num(p.odds)?' <span class="pr">'+sgn(p.odds)+'</span>':''); }
   function propsInner(id){
     var e = GAMES[id], g = e.game;
-    if(e.sport !== 'nba') return '';
+    if(!propStats(e.sport).length) return '';
     var rows = '';
     propsOf(id).forEach(function(p){
       var k = id+'|'+p.playerId+'|'+p.stat, gone = pendingProps[k] === 'none';
@@ -1783,12 +1782,14 @@ footer b{color:var(--ink);}
       rows += '<div class="proprow"><span>Change: '+propLine(p)+'</span><span class="state local">not submitted</span><button type="button" class="propx" data-k="'+esc(k)+'" title="Undo the change">✕</button>'
         + (p.reason ? '<div class="propwhy">'+esc(p.reason)+'</div>' : '') + '</div>';
     });
-    var R = (DATA.rosters||{}), opt = function(team){
-      return (R[team]||[]).length ? '<optgroup label="'+esc(team)+'">'+R[team].map(function(r){ return '<option value="'+esc(r[0])+'" data-team="'+esc(team)+'" data-name="'+esc(r[1])+'">'+esc(r[1])+' ('+r[2]+' ppg)</option>'; }).join('')+'</optgroup>' : '';
+    var R = ((DATA.rosters||{})[e.sport])||{}, opt = function(team){
+      return (R[team]||[]).length ? '<optgroup label="'+esc(team)+'">'+R[team].map(function(r){ return '<option value="'+esc(r[0])+'" data-team="'+esc(team)+'" data-name="'+esc(r[1])+'">'+esc(r[1])+(r[2]?' ('+esc(r[2])+')':'')+'</option>'; }).join('')+'</optgroup>' : '';
     };
+    var hasRoster = (R[g.away]||[]).length || (R[g.home]||[]).length;
     var form = g.final ? '' : '<details class="propadd"><summary>＋ Add a player prop</summary><div class="propform" id="pf-'+esc(id)+'">'
-      + '<label>Player<select class="pf-player"><option value="">Choose a player…</option>'+opt(g.away)+opt(g.home)+'</select></label>'
-      + '<label>Stat<select class="pf-stat">'+PROP_STATS.map(function(x){ return '<option value="'+x[0]+'">'+x[1]+'</option>'; }).join('')+'</select></label>'
+      + (hasRoster ? '<label>Player<select class="pf-player"><option value="">Choose a player…</option>'+opt(g.away)+opt(g.home)+'</select></label>'
+         : '<label>Player<input class="pf-pname" type="text" maxlength="60" placeholder="Player name"></label><label>Team<select class="pf-team"><option>'+esc(g.away)+'</option><option>'+esc(g.home)+'</option></select></label>')
+      + '<label>Stat<select class="pf-stat">'+propStats(e.sport).map(function(x){ return '<option value="'+x[0]+'">'+x[1]+'</option>'; }).join('')+'</select></label>'
       + '<span class="pf-side" role="group" aria-label="Over or under"><button type="button" class="pf-ou" data-ou="over" aria-pressed="false">Over</button><button type="button" class="pf-ou" data-ou="under" aria-pressed="false">Under</button></span>'
       + '<label>Line<input class="pf-line" type="number" step="0.5" min="0.5" inputmode="decimal" placeholder="16.5"></label>'
       + '<label>Odds<input class="pf-odds" type="number" step="1" inputmode="numeric" placeholder="-110"></label>'
@@ -1799,15 +1800,16 @@ footer b{color:var(--ink);}
   }
   function addProp(id){
     var f = document.getElementById('pf-'+id); if(!f) return;
-    var sel = f.querySelector('.pf-player'), o = sel.options[sel.selectedIndex];
+    var sel = f.querySelector('.pf-player'), o = sel ? sel.options[sel.selectedIndex] : null, nm = f.querySelector('.pf-pname');
     var ou = f.querySelector('.pf-ou[aria-pressed="true"]'), line = parseFloat(f.querySelector('.pf-line').value), odds = parseInt(f.querySelector('.pf-odds').value, 10);
     var msg = f.querySelector('.pf-msg');
-    if(!sel.value){ msg.textContent = 'Choose a player.'; return; }
+    if(sel ? !sel.value : !(nm && nm.value.trim())){ msg.textContent = sel ? 'Choose a player.' : 'Type the player\'s name.'; return; }
     if(!ou){ msg.textContent = 'Choose Over or Under.'; return; }
     if(!(line > 0) || Math.round(line*2) !== line*2){ msg.textContent = 'Enter the line in half points (e.g. 16.5 or 17).'; return; }
     if(f.querySelector('.pf-odds').value && !(odds <= -100 || odds >= 100)){ msg.textContent = 'Odds look off: use American odds like -115 or +100.'; return; }
-    var stat = f.querySelector('.pf-stat').value, k = id+'|'+sel.value+'|'+stat;
-    pendingProps[k] = {gameId:id, playerId:sel.value, player:o.getAttribute('data-name'), team:o.getAttribute('data-team'), stat:stat,
+    var stat = f.querySelector('.pf-stat').value, pid = sel ? sel.value : '', pname = sel ? o.getAttribute('data-name') : nm.value.trim();
+    var k = id+'|'+(pid || 'n:'+pname.toLowerCase().replace(/[^a-z]/g,''))+'|'+stat;
+    pendingProps[k] = {gameId:id, sport:GAMES[id].sport, playerId:pid, player:pname, team:sel ? o.getAttribute('data-team') : f.querySelector('.pf-team').value, stat:stat,
       side:ou.getAttribute('data-ou'), line:line, odds:(num(odds) && (odds<=-100||odds>=100)) ? odds : null, reason:f.querySelector('.pf-reason').value.trim()};
     savePending(); renderPickRow(id); renderSubmitBar();
   }

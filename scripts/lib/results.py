@@ -162,8 +162,9 @@ def build_results(mypicks, all_docs):
             rows.append(row)
         # Player props (graded by scripts/grade_props.py from the box score).
         for key, p in sorted((mp.get("props") or {}).items()):
-            STAT = {"points": "pts", "rebounds": "reb", "assists": "ast", "threes": "3PM", "pra": "PRA",
-                    "pr": "P+R", "pa": "P+A", "ra": "R+A"}
+            from lib.props import stat_def
+            sd = stat_def(p.get("sport", "nba"), p.get("stat"))
+            STAT = {p.get("stat"): sd[2] if sd else p.get("stat")}
             res = p.get("result")
             rows.append({"d": date_str, "sport": p.get("sport", "nba"), "game": f"{p.get('away')} @ {p.get('home')}", "kind": "prop",
                          "pick": f"{p.get('player')} {str(p.get('side')).title()} {p.get('line'):g} {STAT.get(p.get('stat'), p.get('stat'))}",
