@@ -1,0 +1,99 @@
+{
+ "date": "2026-11-19",
+ "source": "Action Network public feed (consensus = book 15, opener = book 30)",
+ "fetchedAt": "2026-11-18T06:41:15+00:00",
+ "games": [
+  {
+   "away": "New York Knicks",
+   "home": "Minnesota Timberwolves",
+   "start": "2026-11-20T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Portland Trail Blazers",
+   "home": "Milwaukee Bucks",
+   "start": "2026-11-20T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Los Angeles Clippers",
+   "home": "San Antonio Spurs",
+   "start": "2026-11-20T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Golden State Warriors",
+   "home": "Memphis Grizzlies",
+   "start": "2026-11-20T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  }
+ ]
+}
