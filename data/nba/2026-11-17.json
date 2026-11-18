@@ -295,9 +295,9 @@
       "awaySpreadOdds": -113,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 225.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
       "home": "LA Clippers",
       "homeMoneyline": -238,
       "homeNetRtg": -4.1,
@@ -321,12 +321,12 @@
       "statsCheck": "Rule 54: Backing LA Clippers: covered its last two games (by 6.5 vs Charlotte Hornets and by 7.5 vs Oklahoma City Thunder), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
       "statsFavors": "LA Clippers",
       "statsLine": {
-        "homeSpread": -6.5,
-        "awaySpread": 6.5,
-        "homeSpreadOdds": -107,
-        "awaySpreadOdds": -113,
-        "homeMoneyline": -238,
-        "awayMoneyline": 197
+        "homeSpread": -5.5,
+        "awaySpread": 5.5,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -103,
+        "homeMoneyline": -229,
+        "awayMoneyline": 190
       },
       "statsRules": [
         {
@@ -336,9 +336,9 @@
           "detail": "Backing LA Clippers: covered its last two games (by 6.5 vs Charlotte Hornets and by 7.5 vs Oklahoma City Thunder), now at home in game 13 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
         }
       ],
-      "statsSpread": -6.5,
+      "statsSpread": -5.5,
       "time": "10:30 PM ET",
-      "totalsLine": 225.5
+      "totalsLine": 227.5
     },
     {
       "altCategoryTally": "0-3",
@@ -369,7 +369,7 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 222.5,
+      "gameTotal": 221.5,
       "gameTotalOverOdds": -105,
       "gameTotalUnderOdds": -115,
       "home": "Los Angeles Lakers",
@@ -397,8 +397,8 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -101,
-        "awaySpreadOdds": -120,
+        "homeSpreadOdds": -102,
+        "awaySpreadOdds": -118,
         "homeMoneyline": -289,
         "awayMoneyline": 236
       },
@@ -470,7 +470,7 @@
         }
       ],
       "time": "11:00 PM ET",
-      "totalsLine": 222.5
+      "totalsLine": 221.5
     }
   ]
 }
