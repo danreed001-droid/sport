@@ -133,6 +133,10 @@ jobs:
         continue-on-error: true
         run: python scripts/run.py ${{ github.event.inputs.sports || 'nfl cfb mlb nba ncaab soccer epl' }}
 
+      - name: Grade your player props
+        continue-on-error: true
+        run: python scripts/grade_props.py
+
       - name: Grade storylines on finished games (live records)
         continue-on-error: true
         run: python scripts/storyline_records.py

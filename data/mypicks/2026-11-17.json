@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-17",
+  "props": {
+    "nba-espn-401910004|5107199|points": {
+      "sport": "nba",
+      "eventId": "401910004",
+      "away": "Detroit Pistons",
+      "home": "San Antonio Spurs",
+      "time": "8:00 PM ET",
+      "player": "Daniss Jenkins",
+      "playerId": "5107199",
+      "team": "Detroit Pistons",
+      "stat": "points",
+      "line": 17,
+      "side": "under",
+      "odds": null,
+      "submittedAt": "2026-11-18T01:36:12+00:00",
+      "note": "Entered by Claude at the user's request during the 1st quarter (the pick sheet has no prop entry yet). Odds not given: graded at -110. DraftKings' main line was 14.5 (opened 13.5), so 17 is an alternate line."
+    }
+  }
+}

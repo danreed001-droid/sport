@@ -160,6 +160,19 @@ def build_results(mypicks, all_docs):
                 r = grade_total(g, t["side"], line, t.get("odds"))
                 row["result"], row["units"] = r["result"], round(r["profit"] / 100, 2)
             rows.append(row)
+        # Player props (graded by scripts/grade_props.py from the box score).
+        for key, p in sorted((mp.get("props") or {}).items()):
+            STAT = {"points": "pts", "rebounds": "reb", "assists": "ast", "threes": "3PM", "pra": "PRA",
+                    "pr": "P+R", "pa": "P+A", "ra": "R+A"}
+            res = p.get("result")
+            rows.append({"d": date_str, "sport": p.get("sport", "nba"), "game": f"{p.get('away')} @ {p.get('home')}", "kind": "prop",
+                         "pick": f"{p.get('player')} {str(p.get('side')).title()} {p.get('line'):g} {STAT.get(p.get('stat'), p.get('stat'))}",
+                         "line": p.get("line"), "odds": p.get("odds"), "ml": None, "submitted": p.get("submittedAt"),
+                         "lead": lead_minutes(date_str, p.get("time"), p.get("submittedAt")),
+                         "result": None if not res else ("void" if res == "void" else res),
+                         "units": round(p["profit"] / 100, 2) if res in ("W", "L", "P") and _num(p.get("profit")) else None,
+                         "actual": p.get("actual"), "mlResult": None, "mlUnits": None, "mlCounted": None,
+                         "alt": False, "posted": None, "note": p.get("note")})
     rows.sort(key=lambda r: (r["d"], r["submitted"] or "", r["kind"]))
     return rows
 

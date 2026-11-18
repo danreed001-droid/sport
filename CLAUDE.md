@@ -607,6 +607,19 @@ the posted lines. The repo and Pages site are public, so the picks files and
 their commit timestamps are the verification trail. It's the user's record, not
 advice, and has a sample-size note (95% range).
 
+Player props (2026-11-17): the user's prop bets live under `props` in
+`data/mypicks/<date>.json`, keyed `<sport>-espn-<event id>|<athlete id>|<stat>`,
+each with sport, eventId, away/home, player, playerId (ESPN athlete id), team,
+stat (points/rebounds/assists/threes/pra/pr/pa/ra), line, side, odds (null =
+graded at -110), submittedAt and a note. `scripts/grade_props.py` (scoring run,
+after the scores) fills `actual`/`result`/`profit` from ESPN's box score once the
+game is final ("void" if the player didn't play); `lib/results.py` lists them
+(kind "prop") and the results page has a Player props tile and type filter, kept
+out of the spread/over-under units. The pick sheet has no prop entry yet, so
+they're entered by hand when the user asks (first: Daniss Jenkins under 17
+points, 2026-11-17 Pistons @ Spurs, entered in the 1st quarter; DraftKings' main
+line was 14.5). intake_picks.py keeps the `props` key when it merges picks.
+
 Don't write picks into game objects in `data/<sport>/` (no `userPick`,
 `yourPick`, `myPick` fields) and don't ask the user to tell you their picks.
 Grading of their picks happens in `scripts/lib/picks.py` from the game's final
