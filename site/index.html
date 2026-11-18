@@ -349,6 +349,16 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .seg5 button:focus-visible{outline:2px solid var(--opinion);outline-offset:1px;}
 .seg5 button[disabled]{opacity:.5;cursor:not-allowed;}
 .tallyline{font-size:11.5px;color:var(--muted);}
+.qtable{margin-top:6px;font-size:12px;}
+.qtable .qhead{color:var(--muted);font-size:11px;margin-bottom:4px;}
+.qtable table{width:100%;min-width:0;border-collapse:collapse;}
+.qtable th{font-size:10px;font-weight:600;color:var(--muted);text-align:center;padding:2px 4px;}
+.qtable td{padding:4px;text-align:center;border-top:1px solid var(--rule);white-space:nowrap;}
+.qtable td:first-child{text-align:left;}
+.qtable .qn{color:var(--muted);font-size:11px;}
+.qstrip{display:block;width:100%;height:auto;margin-top:2px;}
+.qstrip .qb{fill:#2e9e5b;} .qstrip .qb.neg{fill:#d0544c;}
+.qstrip .yl{font-size:10px;fill:var(--muted);}
 .proprow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;}
 .proprow.gone > span:first-child{text-decoration:line-through;opacity:.6;}
 .propwhy{flex-basis:100%;font-size:12px;color:var(--muted);font-style:italic;padding-left:2px;}
@@ -1514,7 +1524,8 @@ footer b{color:var(--ink);}
       var dots = rows.map(function(r,i){
         var tip = fmtDay(r[0])+' '+(r[4]?'vs ':'@ ')+r[1]+(OU
           ? ' (total '+r[3]+'): '+(r[2]>0?'over by '+r[2]:r[2]<0?'under by '+(-r[2]):'landed on it')
-          : ' ('+sgn(r[3])+'): '+(r[2]>0?'covered by '+r[2]:r[2]<0?'missed by '+(-r[2]):'push'))+' \u00b7 running '+fmtSigned(cs[i]);
+          : ' ('+sgn(r[3])+'): '+(r[2]>0?'covered by '+r[2]:r[2]<0?'missed by '+(-r[2]):'push'))+' \u00b7 running '+fmtSigned(cs[i])
+          + (r[5] && r[5].length ? ' \u00b7 '+(OU ? 'points by '+qName(sport)+': ' : 'margin by '+qName(sport)+': ')+r[5].map(function(v, j){ return qLabel(sport, j)+' '+(OU ? v : fmtSigned(v)); }).join(', ') : '');
         return '<g><title>'+esc(team+' \u2014 '+tip)+'</title><circle class="hit" cx="'+pts[i][0].toFixed(1)+'" cy="'+pts[i][1].toFixed(1)+'" r="9"></circle>'
           + '<circle class="pt c'+dk+'" cx="'+pts[i][0].toFixed(1)+'" cy="'+pts[i][1].toFixed(1)+'" r="4" fill="'+color+'"></circle></g>';
       }).join('');
@@ -1529,13 +1540,59 @@ footer b{color:var(--ink);}
       + '<text class="yl" x="'+(L-6)+'" y="'+(ys(0)+4).toFixed(1)+'" text-anchor="end">0</text>'
       + '<text class="yl" x="'+(L-6)+'" y="'+(ys(-mx)+4).toFixed(1)+'" text-anchor="end">\u2212'+Math.round(mx)+'</text>'
       + series(A, ca, gc[0], g.away) + series(H, ch, gc[1], g.home) + '</svg>';
+    var NQ = sport==='ncaab' ? 2 : 4, SH = 30;
+    var qv = function(r, j){ return OU ? r[5][j] - r[3]/NQ : r[5][j]; };
+    var strip = function(rows, team){
+      var ok = rows.filter(function(r){ return r[5] && r[5].length >= NQ; });
+      if(!ok.length) return '';
+      var qm = Math.max.apply(null, ok.map(function(r){ return Math.max.apply(null, [0,1,2,3].slice(0,NQ).map(function(j){ return Math.abs(qv(r,j)); })); }).concat([1]));
+      var n = rows.length, bw = Math.max(2, Math.min(7, (W-L-R)/Math.max(N-1,1)/(NQ+2.5))), out = '';
+      rows.forEach(function(r, i){
+        if(!r[5] || r[5].length < NQ) return;
+        var cx = xs(i, n);
+        for(var j=0;j<NQ;j++){
+          var v = qv(r, j), hgt = Math.max(1, Math.abs(v)/qm*(SH/2-2));
+          var x = cx + (j - (NQ-1)/2)*bw*1.15 - bw/2, y = v >= 0 ? SH/2 - hgt : SH/2;
+          out += '<rect x="'+x.toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+hgt.toFixed(1)+'" class="qb'+(v<0?' neg':'')+'"><title>'+esc(team+' '+fmtDay(r[0])+' vs '+r[1]+' \u2014 '+qLabel(sport,j)+': '+(OU ? r[5][j]+' points (the total\'s pace: '+(r[3]/NQ).toFixed(1)+')' : fmtSigned(r[5][j])))+'</title></rect>';
+        }
+      });
+      return '<svg class="qstrip" viewBox="0 0 '+W+' '+SH+'" role="img" aria-label="'+esc(team)+' by '+qName(sport)+', each game"><line class="zero" x1="'+L+'" x2="'+(W-R)+'" y1="'+(SH/2)+'" y2="'+(SH/2)+'"></line>'
+        + '<text class="yl" x="'+(W-R+10)+'" y="'+(SH/2+4)+'">'+esc(teamAbbr(team))+' '+(sport==='ncaab'?'halves':'qtrs')+'</text>'+out+'</svg>';
+    };
+    var strips = strip(A, g.away) + strip(H, g.home);
     var rec = function(rows){ var w = 0, l = 0; rows.forEach(function(r){ if(r[2]>0) w++; else if(r[2]<0) l++; }); return w+'-'+l; };
     var leg = function(rows, cs, color, team){
       return rows.length ? '<span><i class="'+(dimColor(color)?'dk':'')+'" style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+rec(rows)+(OU?' over-under, ':' ATS, ')+fmtSigned(cs[cs.length-1])+' in '+rows.length+'</span>'
         : '<span>'+teamBadge(team,true)+' no graded games yet</span>';
     };
     return '<div class="atstrend"><div class="at-head"><b>'+(OU?'Totals trend':'ATS trend')+'</b><span>'+(OU?'running points over (+) or under (\u2212) the closing total':'running cover margin')+', last '+N+' games'+''+' \u00b7 hover a point</span></div>'
-      + '<div class="at-legend">'+leg(A, ca, gc[0], g.away)+leg(H, ch, gc[1], g.home)+'</div>'+svg+'</div>';
+      + '<div class="at-legend">'+leg(A, ca, gc[0], g.away)+leg(H, ch, gc[1], g.home)+'</div>'+svg+strips+quarterTable(sport, g, A, H, OU, gc)+'</div>';
+  }
+  // Quarter (NCAAB: half) breakdown under a trend chart: each team's average
+  // margin per period over the same games (totals chart: both teams' points
+  // per period), overtime left out; the per-game numbers are in each point's hover.
+  function qName(sport){ return sport==='ncaab' ? 'half' : 'quarter'; }
+  function qLabel(sport, j){ var n = sport==='ncaab' ? 2 : 4; return j < n ? (sport==='ncaab' ? 'H' : 'Q')+(j+1) : 'OT'+(j-n+1 > 1 ? j-n+1 : ''); }
+  function quarterTable(sport, g, A, H, OU, gc){
+    var n = sport==='ncaab' ? 2 : 4;
+    var avg = function(rows){
+      var s = [], c = 0;
+      rows.forEach(function(r){ if(!r[5] || r[5].length < n) return; c++; for(var j=0;j<n;j++) s[j] = (s[j]||0) + r[5][j]; });
+      return c ? {v: s.map(function(x){ return Math.round(x/c*10)/10; }), n: c} : null;
+    };
+    var a = avg(A), h = avg(H);
+    if(!a && !h) return '';
+    var head = '<tr><th></th>'+Array.apply(null, {length:n}).map(function(_, j){ return '<th>'+qLabel(sport, j)+'</th>'; }).join('')+'<th class="qn">games</th></tr>';
+    var row = function(x, team, color){
+      if(!x) return '<tr><td>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b></td><td colspan="'+(n+1)+'" class="muted">no quarter scores yet</td></tr>';
+      var mx = OU ? null : Math.max.apply(null, x.v.map(Math.abs)) || 1;
+      return '<tr><td>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b></td>'+x.v.map(function(v){
+        if(OU) return '<td class="mono">'+v.toFixed(1)+'</td>';
+        return '<td class="mono '+(v>=1?'pos':v<=-1?'neg':'')+'">'+(v>0?'+':v<0?'\u2212':'')+Math.abs(v).toFixed(1)+'</td>';
+      }).join('')+'<td class="mono qn">'+x.n+'</td></tr>';
+    };
+    return '<div class="qtable"><div class="qhead">By '+qName(sport)+' \u00b7 bars under the chart: each game\'s '+qName(sport)+'s ('+(OU ? 'green = more points than the total\'s pace, red = fewer' : 'green = won the '+qName(sport)+', red = lost it')+'). Table: the average '+(OU ? 'points scored by both teams' : 'scoring margin')+' in each '+qName(sport)+'.</div>'
+      + '<table>'+head+row(a, g.away, gc[0])+row(h, g.home, gc[1])+'</table></div>';
   }
   function satBadge(cls, label, g){
     var lean = storyNet(g) > 0 ? g.home : g.away;

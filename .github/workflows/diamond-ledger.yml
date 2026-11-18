@@ -137,6 +137,10 @@ jobs:
         continue-on-error: true
         run: python scripts/archive_rosters.py
 
+      - name: Save quarter scores of finished games (trend charts' by-quarter view)
+        continue-on-error: true
+        run: python scripts/archive_linescores.py
+
       - name: Grade your player props
         continue-on-error: true
         run: python scripts/grade_props.py
