@@ -1564,7 +1564,7 @@ footer b{color:var(--ink);}
         // opponent label: above the dot when this team is the higher line at this game, else below
         var oi = i + ocs.length - n, ov = oi >= 0 && oi < ocs.length ? ocs[oi] : null;
         var up = ov == null ? cs[i] >= 0 : cs[i] >= ov;
-        labs.push({x: gx, y: gy, up: up, cls: 'opl'+dk, color: color, t: (r[4]?'':'@')+teamAbbr(r[1]), rec: r[6] || ''});
+        labs.push({x: gx, y: gy, up: up, cls: 'opl'+dk, color: color, t: (r[4]?'':'@')+teamAbbr(r[1]), rec: r[6] || '', last: i === n-1});
       });
       var lx = xs(n-1, n), ly = ys(cs[cs.length-1]);
       return {line: '<path class="ln'+dk+'" d="'+path+'" stroke="'+color+'"></path>', marks: qd+dots, opp: labs,
@@ -1596,16 +1596,18 @@ footer b{color:var(--ink);}
       list.forEach(function(l){
         var two = !!l.rec, hgt = two ? fs + rs + 1 : fs, w = Math.max(l.t.length * fs, l.rec.length * rs) * 0.7;
         // y is the top line's baseline; above the dot the block ends just over it, below it starts just under it
+        // the newest game's label ends at its dot, clear of the end label to the right
+        var cx = l.last ? l.x + 4 - w/2 : l.x, anc = l.last ? 'end' : 'middle', tx = l.last ? l.x + 4 : l.x;
         var base = l.up ? l.y - (PH ? 9 : 8) - (two ? rs + 1 : 0) : l.y + (PH ? 19 : 15), y = base;
         for(var k=0;k<8;k++){
           y = base + (l.up ? -1 : 1) * k * step;
-          var hit = placed.some(function(p){ return Math.abs(p.x - l.x) < (p.w + w)/2 + 3 && y - fs < p.y - fs + p.h && p.y - fs < y - fs + hgt; });
+          var hit = placed.some(function(p){ return Math.abs(p.x - cx) < (p.w + w)/2 + 3 && y - fs < p.y - fs + p.h && p.y - fs < y - fs + hgt; });
           if(!hit) break;
         }
-        placed.push({x: l.x, y: y, w: w, h: hgt});
+        placed.push({x: cx, y: y, w: w, h: hgt});
         top = Math.min(top, y - fs); bottom = Math.max(bottom, y - fs + hgt + 3);
-        out += '<text class="opl" x="'+l.x.toFixed(1)+'" y="'+y.toFixed(1)+'" text-anchor="middle" style="fill:'+recColor(l.rec)+'">'+esc(l.t)
-          + (two ? '<tspan class="oprec" x="'+l.x.toFixed(1)+'" dy="'+(rs + 1)+'">'+esc(l.rec)+'</tspan>' : '')+'</text>';
+        out += '<text class="opl" x="'+tx.toFixed(1)+'" y="'+y.toFixed(1)+'" text-anchor="'+anc+'" style="fill:'+recColor(l.rec)+'">'+esc(l.t)
+          + (two ? '<tspan class="oprec" x="'+tx.toFixed(1)+'" dy="'+(rs + 1)+'">'+esc(l.rec)+'</tspan>' : '')+'</text>';
       });
       return out;
     };
