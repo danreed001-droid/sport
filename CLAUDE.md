@@ -340,7 +340,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   trend, not separate charts): small dots after each quarter, at the running
   total plus the quarter's margin and a quarter of the spread (totals: points
   minus a quarter of the total), so the last step lands on the game's big dot
-  (overtime folded into it); games without quarter scores go straight. Then a
+  (overtime folded into it); games without quarter scores go straight. Each game
+  dot is labelled with the opponent (`@` = away; `oppLabels` nudges a label out
+  a row when it would overlap another; the higher line's labels go above). Then a
   table of each team's average per period (`quarterTable`). The game dots'
   hovers list the quarters. Books' covers stay full-game.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:

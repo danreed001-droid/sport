@@ -358,7 +358,9 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .qtable .qn{color:var(--muted);font-size:11px;}
 .atstrend .gsep{stroke:var(--grid);stroke-width:1;}
 .atstrend .qpt{stroke:var(--surface);stroke-width:1;}
-@media (max-width:600px){.atstrend .qpt{r:2.4;}.atstrend .pt{r:6.5;}}
+.atstrend .opl{font-size:8.5px;font-weight:700;paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;pointer-events:none;}
+.atstrend .opl.dk{fill:var(--ink);}
+@media (max-width:600px){.atstrend .qpt{r:2.4;}.atstrend .pt{r:6.5;}.atstrend .opl{font-size:12.5px;stroke-width:3.5px;}}
 .proprow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;}
 .proprow.gone > span:first-child{text-decoration:line-through;opacity:.6;}
 .propwhy{flex-basis:100%;font-size:12px;color:var(--muted);font-style:italic;padding-left:2px;}
@@ -1531,15 +1533,15 @@ footer b{color:var(--ink);}
     var all = ca.concat(ch, [0]);
     qa.concat(qh).forEach(function(q){ all = all.concat(q); });
     var mx = Math.max.apply(null, all.map(Math.abs)) || 1;
-    var W = 600, Hh = window.innerWidth < 600 ? 200 : 160, L = window.innerWidth < 600 ? 46 : 34, R = 132, Tp = 8, B = 16;
+    var PH = window.innerWidth < 600, W = 600, Hh = PH ? 236 : 160, L = PH ? 46 : 34, R = 132, Tp = PH ? 34 : 20, B = PH ? 38 : 24;
     // N+1 slots: slot 0 is the start (0) before the oldest game; latest game at the right edge.
     var xs = function(i, n){ return L + (W-L-R) * (N-n+i+1)/N; };
     var ys = function(v){ return Tp + (Hh-Tp-B) * (mx - v) / (2*mx); };
     var fmtSigned = function(v){ return (v>0?'+':v<0?'−':'')+Math.abs(v); };
-    var series = function(rows, cs, qs, color, team){
+    var series = function(rows, cs, qs, color, team, ocs){
       if(!rows.length) return '';
       var n = rows.length, dk = dimColor(color) ? ' dk' : '', dx = (W-L-R)/N;
-      var path = 'M'+xs(-1,n).toFixed(1)+' '+ys(0).toFixed(1), qd = '', dots = '';
+      var path = 'M'+xs(-1,n).toFixed(1)+' '+ys(0).toFixed(1), qd = '', dots = '', labs = [];
       rows.forEach(function(r, i){
         var x0 = xs(i-1, n), opp = (r[4]?'vs ':'@ ')+r[1];
         qs[i].forEach(function(v, j){
@@ -1555,12 +1557,16 @@ footer b{color:var(--ink);}
           + (hasQ(r) ? ' · '+(OU ? 'points by '+qName(sport)+': ' : 'margin by '+qName(sport)+': ')+r[5].map(function(v, j){ return qLabel(sport, j)+' '+(OU ? v : fmtSigned(v)); }).join(', ') : ' · no '+qName(sport)+' scores');
         dots += '<g><title>'+esc(team+' — '+tip)+'</title><circle class="hit" cx="'+gx.toFixed(1)+'" cy="'+gy.toFixed(1)+'" r="6"></circle>'
           + '<circle class="pt c'+dk+'" cx="'+gx.toFixed(1)+'" cy="'+gy.toFixed(1)+'" r="4" fill="'+color+'"></circle></g>';
+        // opponent label: above the dot when this team is the higher line at this game, else below
+        var oi = i + ocs.length - n, ov = oi >= 0 && oi < ocs.length ? ocs[oi] : null;
+        var up = ov == null ? cs[i] >= 0 : cs[i] >= ov;
+        labs.push({x: gx, y: gy, up: up, cls: 'opl'+dk, color: color, t: (r[4]?'':'@')+teamAbbr(r[1])});
       });
       var lx = xs(n-1, n), ly = ys(cs[cs.length-1]);
-      return {line: '<path class="ln'+dk+'" d="'+path+'" stroke="'+color+'"></path>', marks: qd+dots,
+      return {line: '<path class="ln'+dk+'" d="'+path+'" stroke="'+color+'"></path>', marks: qd+dots, opp: labs,
         label: [ly, '<text class="endl" x="'+(lx+10).toFixed(1)+'" y="@Y@">'+esc(teamAbbr(team))+' '+fmtSigned(cs[cs.length-1])+'</text>']};
     };
-    var sa = series(A, ca, qa, gc[0], g.away), sh = series(H, ch, qh, gc[1], g.home);
+    var sa = series(A, ca, qa, gc[0], g.away, ch), sh = series(H, ch, qh, gc[1], g.home, ca);
     // light lines between games
     var grid = '', dxg = (W-L-R)/N;
     for(var k=0;k<=N;k++){ var gxk = L + dxg*k; grid += '<line class="gsep" x1="'+gxk.toFixed(1)+'" x2="'+gxk.toFixed(1)+'" y1="'+Tp+'" y2="'+(Hh-B)+'"></line>'; }
@@ -1569,19 +1575,35 @@ footer b{color:var(--ink);}
     labs.sort(function(a,b){ return a[0]-b[0]; });
     var gapL = window.innerWidth < 520 ? 22 : 14, prevY = -99, labOut = '';
     labs.forEach(function(lb){ var y = Math.max(lb[0]+4, prevY+gapL); prevY = y; labOut += lb[1].replace('@Y@', y.toFixed(1)); });
+    // Opponent labels: each sits just above (or below) its dot; one that would
+    // overlap a label already placed moves out a row at a time.
+    var oppLabels = function(list){
+      var fs = PH ? 12.5 : 8.5, step = fs + 1.5, placed = [], out = '';
+      list.forEach(function(l){
+        var w = l.t.length * fs * 0.66, base = l.up ? l.y - (PH ? 9 : 8) : l.y + (PH ? 19 : 15), y = base;
+        for(var k=0;k<4;k++){
+          y = base + (l.up ? -1 : 1) * k * step;
+          var hit = placed.some(function(p){ return Math.abs(p.x - l.x) < (p.w + w)/2 + 1 && Math.abs(p.y - y) < step - 1; });
+          if(!hit) break;
+        }
+        placed.push({x: l.x, y: y, w: w});
+        out += '<text class="'+l.cls+'" x="'+l.x.toFixed(1)+'" y="'+y.toFixed(1)+'" text-anchor="middle" fill="'+l.color+'">'+esc(l.t)+'</text>';
+      });
+      return out;
+    };
     var svg = '<svg viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+(OU?'Running points over or under the total':'Running cover margin')+' by '+qName(sport)+', last '+N+' games: '+esc(g.away)+' '+(ca.length?fmtSigned(ca[ca.length-1]):'n/a')+', '+esc(g.home)+' '+(ch.length?fmtSigned(ch[ch.length-1]):'n/a')+'">'
       + grid
       + '<line class="zero" x1="'+L+'" x2="'+(W-R)+'" y1="'+ys(0).toFixed(1)+'" y2="'+ys(0).toFixed(1)+'"></line>'
       + '<text class="yl" x="'+(L-6)+'" y="'+(ys(mx)+4).toFixed(1)+'" text-anchor="end">+'+Math.round(mx)+'</text>'
       + '<text class="yl" x="'+(L-6)+'" y="'+(ys(0)+4).toFixed(1)+'" text-anchor="end">0</text>'
       + '<text class="yl" x="'+(L-6)+'" y="'+(ys(-mx)+4).toFixed(1)+'" text-anchor="end">−'+Math.round(mx)+'</text>'
-      + (sa ? sa.line : '') + (sh ? sh.line : '') + (sa ? sa.marks : '') + (sh ? sh.marks : '') + labOut + '</svg>';
+      + (sa ? sa.line : '') + (sh ? sh.line : '') + (sa ? sa.marks : '') + (sh ? sh.marks : '') + oppLabels((sa ? sa.opp : []).concat(sh ? sh.opp : [])) + labOut + '</svg>';
     var rec = function(rows){ var w = 0, l = 0; rows.forEach(function(r){ if(r[2]>0) w++; else if(r[2]<0) l++; }); return w+'-'+l; };
     var leg = function(rows, cs, color, team){
       return rows.length ? '<span><i class="'+(dimColor(color)?'dk':'')+'" style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+rec(rows)+(OU?' over-under, ':' ATS, ')+fmtSigned(cs[cs.length-1])+' in '+rows.length+'</span>'
         : '<span>'+teamBadge(team,true)+' no graded games yet</span>';
     };
-    return '<div class="atstrend"><div class="at-head"><b>'+(OU?'Totals trend':'ATS trend')+'</b><span>'+(OU?'running points over (+) or under (\u2212) the closing total':'running cover margin')+', last '+N+' games \u00b7 big dots: each game, small dots: after each '+qName(sport)+' \u00b7 hover a point</span></div>'
+    return '<div class="atstrend"><div class="at-head"><b>'+(OU?'Totals trend':'ATS trend')+'</b><span>'+(OU?'running points over (+) or under (\u2212) the closing total':'running cover margin')+', last '+N+' games \u00b7 big dots: each game (labelled with the opponent, @ = away), small dots: after each '+qName(sport)+' \u00b7 hover a point</span></div>'
       + '<div class="at-legend">'+leg(A, ca, gc[0], g.away)+leg(H, ch, gc[1], g.home)+'</div>'+svg+quarterTable(sport, g, A, H, OU, gc)+'</div>';
   }
   // Quarter (NCAAB: half) breakdown under a trend chart: each team's average
