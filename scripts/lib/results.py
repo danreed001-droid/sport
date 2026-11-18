@@ -172,7 +172,7 @@ def build_results(mypicks, all_docs):
                          "result": None if not res else ("void" if res == "void" else res),
                          "units": round(p["profit"] / 100, 2) if res in ("W", "L", "P") and _num(p.get("profit")) else None,
                          "actual": p.get("actual"), "mlResult": None, "mlUnits": None, "mlCounted": None,
-                         "alt": False, "posted": None, "note": p.get("note")})
+                         "alt": False, "posted": None, "note": p.get("note"), "reason": p.get("reason")})
     rows.sort(key=lambda r: (r["d"], r["submitted"] or "", r["kind"]))
     return rows
 

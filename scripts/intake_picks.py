@@ -24,6 +24,28 @@ SCORE = re.compile(r"^[AaNhH]*$")
 POINTS = {"A": (1, 0), "a": (0.5, 0), "N": (0, 0), "h": (0, 0.5), "H": (0, 1)}
 
 
+PROP_SPORTS = {"nba"}
+PROP_STATS = {"points": "points", "rebounds": "rebounds", "assists": "assists", "threes": "3-pointers",
+              "pra": "pts+reb+ast", "pr": "pts+reb", "pa": "pts+ast", "ra": "reb+ast"}
+ESPN_PATH = {"nba": "basketball/nba"}
+
+
+def espn_event_id(sport, date_str, away, home):
+    """ESPN's event id for the slate game (to grade a prop from its box score)."""
+    from lib import espn
+    from score_slate import _same_team
+    try:
+        evs = espn.make_session().get(f"https://site.api.espn.com/apis/site/v2/sports/{ESPN_PATH[sport]}/scoreboard"
+                                      f"?dates={date_str.replace('-', '')}", timeout=25).json().get("events", [])
+    except Exception:  # noqa: BLE001
+        return None
+    for ev in evs:
+        t = {c["homeAway"]: c["team"]["displayName"] for c in ev["competitions"][0]["competitors"]}
+        if _same_team(t.get("away", ""), away) and _same_team(t.get("home", ""), home):
+            return str(ev["id"])
+    return None
+
+
 def tally_text(g, code):
     away = sum(POINTS[c][0] for c in code)
     home = sum(POINTS[c][1] for c in code)
@@ -169,12 +191,61 @@ def process(issue):
         line, odds = tentry["line"], tentry["odds"]
         saved.append(f"{ou.title()} {line:g}{'' if odds is None else f' ({odds:+g})'} ({label})")
 
+    # Player props (NBA): {pending key: {gameId, playerId, player, team, stat, side, line, odds, reason} or "none"}
+    current.setdefault("props", {})
+    for pkey, pe in (payload.get("props") or {}).items():
+        gid = (pe or {}).get("gameId") if isinstance(pe, dict) else str(pkey).split("|")[0]
+        if gid not in games:
+            rejected.append(f"prop {pkey} — game isn't on the {date_str} slate")
+            continue
+        sport, doc, g = games[gid]
+        label = f"{g['away']} @ {g['home']}"
+        parts = str(pkey).split("|")
+        if pe == "none" or (isinstance(pe, dict) and pe.get("remove")):
+            pid, stat = (parts + ["", "", ""])[1:3]
+            hit = [k for k, v in current["props"].items() if v.get("gameId") == gid and str(v.get("playerId")) == pid and v.get("stat") == stat]
+            if hit and is_final(doc, g):
+                rejected.append(f"{label} — prop already final, can't remove")
+                continue
+            for k in hit:
+                cleared.append(f"{current['props'][k].get('player')} {current['props'][k].get('stat')} ({label})")
+                current["props"].pop(k)
+            continue
+        if not isinstance(pe, dict) or sport not in PROP_SPORTS:
+            rejected.append(f"{label} — player props are NBA only for now")
+            continue
+        if is_final(doc, g):
+            rejected.append(f"{label} — already final, props are locked")
+            continue
+        stat, side, line, odds = pe.get("stat"), pe.get("side"), pe.get("line"), pe.get("odds")
+        pid, player = str(pe.get("playerId") or ""), str(pe.get("player") or "").strip()[:60]
+        if stat not in PROP_STATS or side not in ("over", "under") or not isinstance(line, (int, float)) \
+                or not float(line * 2).is_integer() or not 0 < line < 150 or not pid.isdigit() or not player:
+            rejected.append(f"{label} — prop {player or pkey} isn't complete (player, stat, over/under, a line in half points)")
+            continue
+        if not (isinstance(odds, (int, float)) and (odds <= -100 or odds >= 100) and abs(odds) <= 5000):
+            odds = None
+        eid = espn_event_id(sport, date_str, g["away"], g["home"])
+        if eid is None:
+            rejected.append(f"{label} — couldn't find the game on ESPN to grade the prop; try again")
+            continue
+        key = f"{sport}-espn-{eid}|{pid}|{stat}"
+        current["props"][key] = {"sport": sport, "eventId": eid, "gameId": gid, "away": g["away"], "home": g["home"],
+                                 "time": g.get("time"), "player": player, "playerId": pid,
+                                 "team": str(pe.get("team") or "")[:60], "stat": stat, "line": line, "side": side,
+                                 "odds": odds, "reason": str(pe.get("reason") or "").strip()[:600] or None,
+                                 "submittedAt": now, "issue": issue.get("number")}
+        saved.append(f"{player} {side.title()} {line:g} {PROP_STATS[stat]}{'' if odds is None else f' ({odds:+g})'} ({label})")
+
     changed = bool(saved or cleared or scored)
     if changed:
         os.makedirs(os.path.dirname(path), exist_ok=True)
         current["picks"] = dict(sorted(current["picks"].items()))
         current["scores"] = dict(sorted(current["scores"].items()))
         current["totals"] = dict(sorted(current["totals"].items()))
+        current["props"] = dict(sorted(current["props"].items()))
+        if not current["props"]:
+            current.pop("props")
         with open(path, "w", encoding="utf-8") as f:
             json.dump(current, f, indent=2, ensure_ascii=False)
             f.write("\n")

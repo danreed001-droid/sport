@@ -349,6 +349,21 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .seg5 button:focus-visible{outline:2px solid var(--opinion);outline-offset:1px;}
 .seg5 button[disabled]{opacity:.5;cursor:not-allowed;}
 .tallyline{font-size:11.5px;color:var(--muted);}
+.proprow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;}
+.proprow.gone > span:first-child{text-decoration:line-through;opacity:.6;}
+.propwhy{flex-basis:100%;font-size:12px;color:var(--muted);font-style:italic;padding-left:2px;}
+.propx{border:1px solid var(--rule);background:var(--surface);color:var(--muted);border-radius:6px;padding:1px 7px;font-size:12px;cursor:pointer;}
+.propadd > summary{cursor:pointer;font-size:13px;font-weight:600;color:var(--accent,#2a78d6);list-style:none;}
+.propadd > summary::-webkit-details-marker{display:none;}
+.propform{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px 10px;align-items:end;margin-top:8px;}
+.propform label{display:flex;flex-direction:column;gap:3px;font-size:11.5px;color:var(--muted);}
+.propform select,.propform input,.propform textarea{font:inherit;font-size:14px;padding:7px 8px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);min-width:0;}
+.propform .pf-wide{grid-column:1/-1;}
+.pf-side{display:flex;gap:6px;}
+.pf-ou{flex:1;padding:8px;border:1px solid var(--rule);border-radius:8px;background:var(--surface);color:var(--ink);font-weight:600;cursor:pointer;}
+.pf-ou[aria-pressed="true"]{border-color:var(--ink);background:var(--ink);color:var(--surface);}
+.pf-add{padding:9px 14px;border-radius:8px;border:0;background:var(--ink);color:var(--surface);font-weight:700;cursor:pointer;}
+.pf-msg{font-size:12px;color:var(--warn,#c43232);grid-column:1/-1;}
 .tallyline b{color:var(--ink);font-family:'IBM Plex Mono',monospace;}
 .chip{font-size:10.5px;font-weight:700;padding:2px 7px;border-radius:999px;font-family:'IBM Plex Mono',monospace;}
 .chip.w{background:color-mix(in srgb,var(--win) 16%,transparent);color:var(--win);} .chip.l{background:var(--loss-soft);color:var(--loss);} .chip.p{background:var(--surface-2);color:var(--push);}
@@ -421,9 +436,9 @@ footer b{color:var(--ink);}
 
   // ---- your unsubmitted picks live in this browser until you submit them ----
   function pendingKey(){ return 'picksheet.pending.' + DATA.slate.date; }
-  function loadPending(){ try{ var o = JSON.parse(localStorage.getItem(pendingKey())||'{}')||{}; return {sides:o.sides||{}, scores:o.scores||{}, totals:o.totals||{}, alts:o.alts||{}, totAlts:o.totAlts||{}}; }catch(e){ return {sides:{}, scores:{}, totals:{}, alts:{}, totAlts:{}}; } }
-  function savePending(){ try{ localStorage.setItem(pendingKey(), JSON.stringify({sides:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totAlts:pendingTotAlt})); }catch(e){} }
-  var pending = {}, pendingScores = {}, pendingTotals = {}, pendingAlt = {}, pendingTotAlt = {};
+  function loadPending(){ try{ var o = JSON.parse(localStorage.getItem(pendingKey())||'{}')||{}; return {sides:o.sides||{}, scores:o.scores||{}, totals:o.totals||{}, alts:o.alts||{}, totAlts:o.totAlts||{}, props:o.props||{}}; }catch(e){ return {sides:{}, scores:{}, totals:{}, alts:{}, totAlts:{}, props:{}}; } }
+  function savePending(){ try{ localStorage.setItem(pendingKey(), JSON.stringify({sides:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totAlts:pendingTotAlt, props:pendingProps})); }catch(e){} }
+  var pending = {}, pendingScores = {}, pendingTotals = {}, pendingAlt = {}, pendingTotAlt = {}, pendingProps = {};
 
   // ---- alternate lines: estimated prices (same math as scripts/lib/altlines.py) ----
   var ALT = {SD:{nfl:13.5, cfb:16, nba:12, ncaab:11, mlb:4.2}, TSD:{nfl:10, cfb:14, nba:17, ncaab:15, mlb:4.4},
@@ -533,6 +548,10 @@ footer b{color:var(--ink);}
   function effectiveSide(id){ return pending.hasOwnProperty(id) ? (pending[id]==='none'?null:pending[id]) : committedSide(id); }
 
   function reconcile(){
+    Object.keys(pendingProps).forEach(function(k){
+      var p = pendingProps[k], parts = k.split('|'), c = committedProp(parts[0], parts[1], parts[2]);
+      if(p === 'none' ? !c : (c && c.side === p.side && c.line === p.line && (c.odds||null) === (p.odds||null) && (c.reason||'') === (p.reason||''))) delete pendingProps[k];
+    });
     Object.keys(pending).forEach(function(id){
       var c = committedSide(id), p = pending[id], cp = committedPick(id);
       var altDiff = pendingAlt.hasOwnProperty(id) && !(cp && pendingAlt[id] === cp.spread);
@@ -1687,7 +1706,7 @@ footer b{color:var(--ink);}
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="away" aria-pressed="'+(side==='away')+'"'+dis+'>'+btnLabel(g.away,g.awaySpread,g.awayMoneyline)+'</button>'
       + (num(g.drawMoneyline) ? '<button type="button" class="pickbtn draw" data-id="'+esc(id)+'" data-side="draw" aria-pressed="'+(side==='draw')+'"'+dis+'>'+btnLabel('Draw',null,g.drawMoneyline)+'</button>' : '')
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="home" aria-pressed="'+(side==='home')+'"'+dis+'>'+btnLabel(g.home,g.homeSpread,g.homeMoneyline)+'</button>'
-      + '</div>' + sideAltInner(id) + notes + totalRowInner(id);
+      + '</div>' + sideAltInner(id) + notes + totalRowInner(id) + propsInner(id);
   }
   function sideAltInner(id){
     var e = GAMES[id], g = e.game, side = effectiveSide(id), cp = committedPick(id);
@@ -1729,6 +1748,68 @@ footer b{color:var(--ink);}
       : (!pendingTotAlt.hasOwnProperty(id) && c && c.alt && c.line === line) ? c.odds
       : altPrice(e.sport, ou, L.t, posted, line);
     return altRow('total', id, line, L.t, price, isAlt);
+  }
+  // ---- your player props (NBA): pick a player, stat, side, line, odds, and why ----
+  var PROP_STATS = [['points','Points','pts'],['rebounds','Rebounds','reb'],['assists','Assists','ast'],['threes','3-pointers','3PM'],
+    ['pra','Pts + Reb + Ast','PRA'],['pr','Pts + Reb','P+R'],['pa','Pts + Ast','P+A'],['ra','Reb + Ast','R+A']];
+  function propStat(k){ var s = PROP_STATS.filter(function(x){ return x[0]===k; })[0]; return s ? s[2] : k; }
+  function propsOf(id){
+    var g = GAMES[id].game;
+    return Object.keys(DATA.myProps||{}).map(function(k){ return DATA.myProps[k]; })
+      .filter(function(p){ return p.gameId ? p.gameId === id : (p.away === g.away && p.home === g.home); });
+  }
+  function committedProp(id, pid, stat){ return propsOf(id).filter(function(p){ return String(p.playerId)===String(pid) && p.stat===stat; })[0]; }
+  function propLine(p){ return esc(p.player)+' <b>'+(p.side==='over'?'Over':'Under')+' '+esc(String(p.line))+' '+esc(propStat(p.stat))+'</b>'+(num(p.odds)?' <span class="pr">'+sgn(p.odds)+'</span>':''); }
+  function propsInner(id){
+    var e = GAMES[id], g = e.game;
+    if(e.sport !== 'nba') return '';
+    var rows = '';
+    propsOf(id).forEach(function(p){
+      var k = id+'|'+p.playerId+'|'+p.stat, gone = pendingProps[k] === 'none';
+      var chip = p.result ? '<span class="chip '+(p.result==='W'?'w':p.result==='L'?'l':'p')+'">'+(p.result==='void'?'void':p.result==='P'?'push':(p.result==='W'?'✓ ':'✕ ')+money(p.profit))+(num(p.actual)?' · '+p.actual:'')+'</span>' : '';
+      rows += '<div class="proprow'+(gone?' gone':'')+'"><span>'+propLine(p)+'</span>'+(gone?'<span class="state local">removing — not submitted</span>':'<span class="state repo">in repo</span>')+chip
+        + (!g.final && !p.result ? '<button type="button" class="propx" data-k="'+esc(k)+'" data-c="1" title="'+(gone?'Keep it':'Remove it')+'">'+(gone?'↺':'✕')+'</button>' : '')
+        + (p.reason ? '<div class="propwhy">'+esc(p.reason)+'</div>' : '') + '</div>';
+    });
+    Object.keys(pendingProps).forEach(function(k){
+      var p = pendingProps[k];
+      if(p === 'none' || p.gameId !== id || committedProp(id, p.playerId, p.stat)) return;
+      rows += '<div class="proprow"><span>'+propLine(p)+'</span><span class="state local">not submitted</span><button type="button" class="propx" data-k="'+esc(k)+'" title="Remove">✕</button>'
+        + (p.reason ? '<div class="propwhy">'+esc(p.reason)+'</div>' : '') + '</div>';
+    });
+    Object.keys(pendingProps).forEach(function(k){
+      var p = pendingProps[k], c;
+      if(p === 'none' || p.gameId !== id || !(c = committedProp(id, p.playerId, p.stat))) return;
+      rows += '<div class="proprow"><span>Change: '+propLine(p)+'</span><span class="state local">not submitted</span><button type="button" class="propx" data-k="'+esc(k)+'" title="Undo the change">✕</button>'
+        + (p.reason ? '<div class="propwhy">'+esc(p.reason)+'</div>' : '') + '</div>';
+    });
+    var R = (DATA.rosters||{}), opt = function(team){
+      return (R[team]||[]).length ? '<optgroup label="'+esc(team)+'">'+R[team].map(function(r){ return '<option value="'+esc(r[0])+'" data-team="'+esc(team)+'" data-name="'+esc(r[1])+'">'+esc(r[1])+' ('+r[2]+' ppg)</option>'; }).join('')+'</optgroup>' : '';
+    };
+    var form = g.final ? '' : '<details class="propadd"><summary>＋ Add a player prop</summary><div class="propform" id="pf-'+esc(id)+'">'
+      + '<label>Player<select class="pf-player"><option value="">Choose a player…</option>'+opt(g.away)+opt(g.home)+'</select></label>'
+      + '<label>Stat<select class="pf-stat">'+PROP_STATS.map(function(x){ return '<option value="'+x[0]+'">'+x[1]+'</option>'; }).join('')+'</select></label>'
+      + '<span class="pf-side" role="group" aria-label="Over or under"><button type="button" class="pf-ou" data-ou="over" aria-pressed="false">Over</button><button type="button" class="pf-ou" data-ou="under" aria-pressed="false">Under</button></span>'
+      + '<label>Line<input class="pf-line" type="number" step="0.5" min="0.5" inputmode="decimal" placeholder="16.5"></label>'
+      + '<label>Odds<input class="pf-odds" type="number" step="1" inputmode="numeric" placeholder="-110"></label>'
+      + '<label class="pf-wide">Your reason<textarea class="pf-reason" rows="2" maxlength="600" placeholder="Why you like it (optional)"></textarea></label>'
+      + '<button type="button" class="pf-add" data-id="'+esc(id)+'">Add prop</button><span class="pf-msg" role="status"></span></div></details>';
+    if(!rows && g.final) return '';
+    return '<div class="pickhead"><span class="lbl">Your player props</span></div>' + rows + form;
+  }
+  function addProp(id){
+    var f = document.getElementById('pf-'+id); if(!f) return;
+    var sel = f.querySelector('.pf-player'), o = sel.options[sel.selectedIndex];
+    var ou = f.querySelector('.pf-ou[aria-pressed="true"]'), line = parseFloat(f.querySelector('.pf-line').value), odds = parseInt(f.querySelector('.pf-odds').value, 10);
+    var msg = f.querySelector('.pf-msg');
+    if(!sel.value){ msg.textContent = 'Choose a player.'; return; }
+    if(!ou){ msg.textContent = 'Choose Over or Under.'; return; }
+    if(!(line > 0) || Math.round(line*2) !== line*2){ msg.textContent = 'Enter the line in half points (e.g. 16.5 or 17).'; return; }
+    if(f.querySelector('.pf-odds').value && !(odds <= -100 || odds >= 100)){ msg.textContent = 'Odds look off: use American odds like -115 or +100.'; return; }
+    var stat = f.querySelector('.pf-stat').value, k = id+'|'+sel.value+'|'+stat;
+    pendingProps[k] = {gameId:id, playerId:sel.value, player:o.getAttribute('data-name'), team:o.getAttribute('data-team'), stat:stat,
+      side:ou.getAttribute('data-ou'), line:line, odds:(num(odds) && (odds<=-100||odds>=100)) ? odds : null, reason:f.querySelector('.pf-reason').value.trim()};
+    savePending(); renderPickRow(id); renderSubmitBar();
   }
   function renderPickRow(id){
     var el = document.getElementById('pr-'+id);
@@ -1786,15 +1867,15 @@ footer b{color:var(--ink);}
   // ---- submit bar ----
   function issueUrl(){
     var body = 'Picks submitted from the pick sheet. Leave the block below as-is — the Pick intake workflow reads it, commits the picks to data/mypicks/, and closes this issue.\n\n```json\n'
-      + JSON.stringify({date:DATA.slate.date, picks:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totalAlts:pendingTotAlt}) + '\n```\n';
+      + JSON.stringify({date:DATA.slate.date, picks:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totalAlts:pendingTotAlt, props:pendingProps}) + '\n```\n';
     return 'https://github.com/'+DATA.repo+'/issues/new?title='+encodeURIComponent('picks '+DATA.slate.date)+'&body='+encodeURIComponent(body);
   }
   function renderSubmitBar(){
-    var n = Object.keys(pending).length + Object.keys(pendingScores).length + Object.keys(pendingTotals).length;
+    var n = Object.keys(pending).length + Object.keys(pendingScores).length + Object.keys(pendingTotals).length + Object.keys(pendingProps).length;
     var bar = document.getElementById('submitbar');
     bar.hidden = n===0;
     if(!n) return;
-    document.getElementById('submitmsg').innerHTML = '<b>'+n+'</b> change'+(n===1?'':'s')+' (picks, totals or reason scores) saved in this browser, not in the repo yet.';
+    document.getElementById('submitmsg').innerHTML = '<b>'+n+'</b> change'+(n===1?'':'s')+' (picks, totals, props or reason scores) saved in this browser, not in the repo yet.';
     document.getElementById('submitlink').href = issueUrl();
   }
 
@@ -1859,6 +1940,17 @@ footer b{color:var(--ink);}
     }
     var ab = e.target.closest('.altbtn');
     if(ab){ var dir = +ab.getAttribute('data-dir'); if(ab.getAttribute('data-kind')==='total') stepTotAlt(ab.getAttribute('data-id'), dir); else stepAlt(ab.getAttribute('data-id'), dir); }
+    var po = e.target.closest('.pf-ou');
+    if(po){ po.parentNode.querySelectorAll('.pf-ou').forEach(function(x){ x.setAttribute('aria-pressed', String(x===po)); }); }
+    var pa = e.target.closest('.pf-add');
+    if(pa) addProp(pa.getAttribute('data-id'));
+    var px = e.target.closest('.propx');
+    if(px){
+      var pk = px.getAttribute('data-k'), pgid = pk.split('|')[0];
+      if(px.getAttribute('data-c')) { if(pendingProps[pk] === 'none') delete pendingProps[pk]; else pendingProps[pk] = 'none'; }
+      else delete pendingProps[pk];
+      savePending(); renderPickRow(pgid); renderSubmitBar();
+    }
     var sb = e.target.closest('.seg5 button');
     if(sb && !sb.disabled) setScore(sb.getAttribute('data-sid'), +sb.getAttribute('data-i'), sb.getAttribute('data-c'));
   });
@@ -1934,7 +2026,7 @@ footer b{color:var(--ink);}
     paintThemeBtn();
   });
   document.getElementById('discard').addEventListener('click', function(){
-    pending = {}; pendingScores = {}; pendingTotals = {}; pendingAlt = {}; pendingTotAlt = {}; savePending();
+    pending = {}; pendingScores = {}; pendingTotals = {}; pendingAlt = {}; pendingTotAlt = {}; pendingProps = {}; savePending();
     Object.keys(GAMES).forEach(function(id){ renderScore(id); renderPickRow(id); }); renderSubmitBar();
   });
   document.getElementById('submitlink').addEventListener('click', function(){
@@ -1975,7 +2067,7 @@ footer b{color:var(--ink);}
         return;
       }
     }
-    DATA = d; var lp = loadPending(); pending = lp.sides; pendingScores = lp.scores; pendingTotals = lp.totals; pendingAlt = lp.alts; pendingTotAlt = lp.totAlts; render(); reconcile(); Object.keys(GAMES).forEach(renderPickRow); renderSubmitBar();
+    DATA = d; var lp = loadPending(); pending = lp.sides; pendingScores = lp.scores; pendingTotals = lp.totals; pendingAlt = lp.alts; pendingTotAlt = lp.totAlts; pendingProps = lp.props; render(); reconcile(); Object.keys(GAMES).forEach(renderPickRow); renderSubmitBar();
   }).catch(function(){
     document.getElementById('app').innerHTML = '<p class="loading">Couldn\'t load data.json. If you opened this file directly, run <span class="mono">python scripts/build_site.py</span> and open <span class="mono">_site/index.html</span> through a local server instead.</p>';
   });
