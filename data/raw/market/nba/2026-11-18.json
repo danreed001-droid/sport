@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-18T02:48:24+00:00",
+ "fetchedAt": "2026-11-18T04:25:40+00:00",
  "games": [
   {
    "away": "Houston Rockets",
@@ -11,18 +11,18 @@
    "spread": {
     "home": 6.5,
     "open": 7.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 23,
+    "money_home": 17
    },
    "total": {
     "now": 224.5,
     "open": 225,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 84,
+    "money_over": 87
    },
    "moneyline": {
-    "home": 205,
-    "away": -250
+    "home": 217,
+    "away": -264
    },
    "rlmFavorite": null
   },
@@ -34,18 +34,18 @@
    "spread": {
     "home": -12.5,
     "open": -12.5,
-    "tix_home": 78,
-    "money_home": 80
+    "tix_home": 79,
+    "money_home": 82
    },
    "total": {
     "now": 236.5,
     "open": 236.5,
-    "tix_over": 60,
-    "money_over": 54
+    "tix_over": 58,
+    "money_over": 55
    },
    "moneyline": {
-    "home": -750,
-    "away": 530
+    "home": -800,
+    "away": 550
    },
    "rlmFavorite": null
   },
@@ -57,14 +57,14 @@
    "spread": {
     "home": -5.5,
     "open": -5.5,
-    "tix_home": 60,
-    "money_home": 60
+    "tix_home": 65,
+    "money_home": 57
    },
    "total": {
-    "now": 235.5,
+    "now": 234.5,
     "open": 234.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 65,
+    "money_over": 78
    },
    "moneyline": {
     "home": -200,
@@ -81,17 +81,17 @@
     "home": 1.5,
     "open": 1.5,
     "tix_home": 12,
-    "money_home": 66
+    "money_home": 61
    },
    "total": {
-    "now": 223.5,
+    "now": 222.5,
     "open": 223.5,
-    "tix_over": 82,
-    "money_over": 86
+    "tix_over": 83,
+    "money_over": 88
    },
    "moneyline": {
     "home": 105,
-    "away": -124
+    "away": -125
    },
    "rlmFavorite": null
   },
@@ -101,20 +101,20 @@
    "start": "2026-11-19T00:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -6.5,
+    "home": -7.5,
     "open": -6.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": 226.5,
+    "now": 227.5,
     "open": 226.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": null,
-    "away": null
+    "home": -275,
+    "away": 226
    },
    "rlmFavorite": null
   },
@@ -126,17 +126,17 @@
    "spread": {
     "home": -2.5,
     "open": -2.5,
-    "tix_home": 53,
-    "money_home": 64
+    "tix_home": 49,
+    "money_home": 59
    },
    "total": {
     "now": 237.5,
     "open": 236.5,
-    "tix_over": 49,
+    "tix_over": 52,
     "money_over": 48
    },
    "moneyline": {
-    "home": -152,
+    "home": -154,
     "away": 126
    },
    "rlmFavorite": null
@@ -147,7 +147,7 @@
    "start": "2026-11-19T01:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 6.5,
+    "home": 7.5,
     "open": 6.5,
     "tix_home": null,
     "money_home": null
@@ -170,20 +170,20 @@
    "start": "2026-11-19T01:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -7.5,
+    "home": -6.5,
     "open": -7.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 70,
+    "money_home": 78
    },
    "total": {
-    "now": 227,
+    "now": 228,
     "open": 225.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 77,
+    "money_over": 85
    },
    "moneyline": {
-    "home": -295,
-    "away": 230
+    "home": -283,
+    "away": 225
    },
    "rlmFavorite": null
   },
@@ -193,7 +193,7 @@
    "start": "2026-11-19T01:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -6.5,
+    "home": -5.5,
     "open": -6.5,
     "tix_home": null,
     "money_home": null
@@ -201,8 +201,8 @@
    "total": {
     "now": 221.5,
     "open": 221.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 84,
+    "money_over": 71
    },
    "moneyline": {
     "home": -225,
@@ -218,17 +218,17 @@
    "spread": {
     "home": 2.5,
     "open": 2.5,
-    "tix_home": 29,
-    "money_home": 52
+    "tix_home": 26,
+    "money_home": 40
    },
    "total": {
-    "now": 219.5,
+    "now": 221.5,
     "open": 220.5,
-    "tix_over": 87,
-    "money_over": 84
+    "tix_over": 86,
+    "money_over": 81
    },
    "moneyline": {
-    "home": 118,
+    "home": 115,
     "away": -140
    },
    "rlmFavorite": null
@@ -268,14 +268,14 @@
     "money_home": null
    },
    "total": {
-    "now": 229.5,
+    "now": 228.5,
     "open": 229.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 64,
+    "money_over": 54
    },
    "moneyline": {
-    "home": 200,
-    "away": -250
+    "home": 220,
+    "away": -269
    },
    "rlmFavorite": null
   }
