@@ -23,6 +23,7 @@ from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # n
 from lib.nba_stats_rules import families as nba_families  # noqa: E402
 from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules, storyline_buckets  # noqa: E402
 from lib.results import build_results, lead_minutes, results_csv  # noqa: E402
+from lib import props as props_lib  # noqa: E402
 from lib.picks import game_id, grade, grade_total, is_final, line_for, mine_view, ml_skip, side_of, stats_view, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
@@ -274,6 +275,48 @@ def nba_rosters(slate):
                 r[0] += 1
                 r[1] += v[0] or 0
         out[t] = sorted(([pid, r[2], round(r[1] / r[0], 1)] for pid, r in tot.items()), key=lambda x: -x[2])
+    return out
+
+
+POS_ORDER = {"nfl": ["QB", "RB", "WR", "TE", "FB", "K"], "cfb": ["QB", "RB", "WR", "TE", "FB", "K"],
+             "mlb": ["C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH", "OF", "IF", "SP", "RP", "P"],
+             "soccer": ["F", "M", "D", "G"]}
+
+
+def prop_rosters(slate):
+    """{sport: {slate team name: [[athlete id, name, tag], ...]}} for the player-
+    prop picker: ESPN rosters saved by archive_rosters.py for the slate date
+    (tag = position), NBA sorted by points a game from the box-score cache
+    (tag = "25.4 ppg"); players who don't play these props' positions last."""
+    out = {}
+    date_str = slate.get("date")
+    nba_ppg = {pid: (name, ppg) for team in nba_rosters(slate).values() for pid, name, ppg in team}
+    for sport, block in (slate.get("sports") or {}).items():
+        try:
+            with open(os.path.join(store.REPO_ROOT, "data", "raw", "rosters", f"{sport}.json"), encoding="utf-8") as f:
+                teams = (json.load(f).get(date_str) or {}).get("teams") or {}
+        except (OSError, ValueError):
+            teams = {}
+        res = {}
+        for g in block.get("games") or []:
+            for t in (g.get("away"), g.get("home")):
+                if not t or t in res:
+                    continue
+                rows = [list(r) for r in teams.get(t) or []]
+                if sport == "nba":
+                    known = {r[0] for r in rows}
+                    rows = [[r[0], r[1], f"{nba_ppg[r[0]][1]} ppg" if r[0] in nba_ppg else r[2]] for r in rows]
+                    for team_rows in nba_rosters(slate).get(t, []):
+                        if team_rows[0] not in known:
+                            rows.append([team_rows[0], team_rows[1], f"{team_rows[2]} ppg"])
+                    rows.sort(key=lambda r: -float(r[2].split()[0]) if r[2].endswith("ppg") else 1)
+                else:
+                    order = POS_ORDER.get(sport, [])
+                    rows.sort(key=lambda r: (order.index(r[2]) if r[2] in order else len(order), r[1]))
+                if rows:
+                    res[t] = rows
+        if res:
+            out[sport] = res
     return out
 
 
@@ -600,7 +643,8 @@ def build():
         "myPicks": committed,
         "myTotals": my_totals,
         "myProps": mypicks.get(slate_date, {}).get("props", {}),
-        "rosters": nba_rosters(slate),
+        "rosters": prop_rosters(slate),
+        "propStats": {k: [[x[0], x[1], x[2]] for x in v] for k, v in props_lib.STATS.items()},
         "myScores": mypicks.get(slate_date, {}).get("scores", {}),
         "scoreboard": totals,
         "plays": sorted(plays, key=lambda p: p["d"]),

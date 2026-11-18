@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Grade your player prop bets (data/mypicks/<date>.json "props").
 
-Each prop entry carries the ESPN event id, the player's ESPN athlete id, the
-stat ("points", "rebounds", "assists", "threes", "pra"), the line, the side
+Each prop entry carries the ESPN event id, the player's ESPN athlete id (or
+just the name, matched in the box score), the stat (lib/props.py STATS, per
+sport), the line, the side
 ("over"/"under") and the odds taken (-110 if none). Once ESPN marks the game
 final, this reads the player's line from the box score and stores `actual`,
 `result` ("W"/"L"/"P"; "void" if he didn't play) and `profit` ($100 a bet).
@@ -13,39 +14,25 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from lib import espn  # noqa: E402
+from lib import espn, props  # noqa: E402
 from lib.picks import payout  # noqa: E402
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "data", "mypicks")
-PATHS = {"nba": "basketball/nba", "ncaab": "basketball/mens-college-basketball"}
-KEYS = {"points": ("PTS",), "rebounds": ("REB",), "assists": ("AST",), "threes": ("3PT",),
-        "pra": ("PTS", "REB", "AST"), "pr": ("PTS", "REB"), "pa": ("PTS", "AST"), "ra": ("REB", "AST")}
 
 
-def stat_line(session, sport, eid, pid):
-    """(final?, {label: value} for the player or None if he didn't play)."""
-    d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/{PATHS[sport]}/summary?event={eid}", timeout=25).json()
+def player_row(session, sport, eid, pid, name):
+    """(final?, the player's box-score row or None if he didn't play)."""
+    d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/{props.espn_path(sport)}/summary?event={eid}",
+                    timeout=25).json()
     st = ((d.get("header") or {}).get("competitions") or [{}])[0].get("status", {}).get("type", {})
     if not st.get("completed"):
         return False, None
-    for team in (d.get("boxscore") or {}).get("players") or []:
-        block = (team.get("statistics") or [{}])[0]
-        labels = block.get("labels") or block.get("names") or []
-        for a in block.get("athletes") or []:
-            if str((a.get("athlete") or {}).get("id")) == str(pid):
-                vals = a.get("stats") or []
-                if not vals or a.get("didNotPlay"):
-                    return True, None
-                return True, dict(zip(labels, vals))
-    return True, None
-
-
-def value(stats, stat):
-    total = 0.0
-    for k in KEYS[stat]:
-        v = str(stats.get(k, "")).split("-")[0]  # 3PT is "made-attempted"
-        total += float(v)
-    return total
+    box = props.flatten_box(d)
+    if pid and str(pid) in box:
+        return True, box[str(pid)]
+    want = props.norm(name)
+    hit = [r for r in box.values() if props.norm(r.get("_name")) == want]
+    return True, (hit[0] if len(hit) == 1 else None)
 
 
 def main():
@@ -61,16 +48,16 @@ def main():
             if p.get("result"):
                 continue
             try:
-                final, stats = stat_line(session, p.get("sport", "nba"), p["eventId"], p["playerId"])
+                final, row = player_row(session, p.get("sport", "nba"), p["eventId"], p.get("playerId"), p.get("player"))
             except Exception as exc:  # noqa: BLE001
                 print(f"{name} {key}: ESPN unreachable ({exc.__class__.__name__}); try next run")
                 continue
             if not final:
                 continue
-            if stats is None:
+            act = props.stat_value(row, p.get("sport", "nba"), p["stat"]) if row is not None else None
+            if act is None:
                 p.update(result="void", profit=0.0, actual=None)
             else:
-                act = value(stats, p["stat"])
                 won = (act > p["line"]) if p["side"] == "over" else (act < p["line"])
                 odds = p.get("odds") if isinstance(p.get("odds"), (int, float)) else -110
                 p.update(actual=act, result="P" if act == p["line"] else ("W" if won else "L"),

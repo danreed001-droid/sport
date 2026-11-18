@@ -607,18 +607,25 @@ the posted lines. The repo and Pages site are public, so the picks files and
 their commit timestamps are the verification trail. It's the user's record, not
 advice, and has a sample-size note (95% range).
 
-Player props (2026-11-17): the user's prop bets live under `props` in
-`data/mypicks/<date>.json`, keyed `<sport>-espn-<event id>|<athlete id>|<stat>`,
-each with sport, eventId, away/home, player, playerId (ESPN athlete id), team,
-stat (points/rebounds/assists/threes/pra/pr/pa/ra), line, side, odds (null =
-graded at -110), submittedAt and a note. `scripts/grade_props.py` (scoring run,
-after the scores) fills `actual`/`result`/`profit` from ESPN's box score once the
-game is final ("void" if the player didn't play); `lib/results.py` lists them
-(kind "prop") and the results page has a Player props tile and type filter, kept
-out of the spread/over-under units. The pick sheet has no prop entry yet, so
-they're entered by hand when the user asks (first: Daniss Jenkins under 17
-points, 2026-11-17 Pistons @ Spurs, entered in the 1st quarter; DraftKings' main
-line was 14.5). intake_picks.py keeps the `props` key when it merges picks.
+Player props (2026-11-17, every sport since 2026-11-18): each game card's pick
+row has "Your player props" (`propsInner` in site/index.html): pick a player
+(from `DATA.rosters`, saved daily by `scripts/archive_rosters.py` from ESPN team
+rosters into `data/raw/rosters/<sport>.json`, NBA sorted by points a game from
+the box-score cache; a typed name + team when there's no roster), a stat
+(`lib/props.py` STATS per sport: basketball pts/reb/ast/3PM/combos, football
+passing/rushing/receiving yards, receptions, TDs..., MLB hits/HR/RBI/runs/H+R+RBI/
+batter and pitcher Ks/outs..., soccer goals/assists/shots/SOT), Over/Under, line,
+odds (blank = -110) and an optional reason. They go out in the picks issue as
+`props`; `intake_picks.py` finds the ESPN event (saved rosters file, else the
+scoreboard) and the athlete id (a typed name is matched on the roster, else
+graded by name) and saves them under `props` in `data/mypicks/<date>.json`,
+keyed `<sport>-espn-<event id>|<athlete id or n:name>|<stat>`, with the reason.
+`scripts/grade_props.py` (scoring run) fills `actual`/`result`/`profit` from the
+box score once final (`lib/props.flatten_box`/`stat_value`; "void" if he didn't
+play). `lib/results.py` lists them (kind "prop", with the reason) and the
+results page has a Player props tile and type filter, kept out of the
+spread/over-under units. First prop (entered by hand before the form existed):
+Daniss Jenkins under 17 points +100, 2026-11-17 Pistons @ Spurs.
 
 Don't write picks into game objects in `data/<sport>/` (no `userPick`,
 `yourPick`, `myPick` fields) and don't ask the user to tell you their picks.
