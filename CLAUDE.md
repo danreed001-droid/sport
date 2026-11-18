@@ -347,7 +347,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   build_site.py from `data/raw/records/<sport>.json`, which
   `archive_linescores.py` saves from the same scoreboards: ESPN's record on a
   finished game is the one after it, so the result is taken back off; college
-  dates come from the lines files too). Hovers show it as well. Then a
+  dates come from the lines files too). Hovers show it as well. The label's color
+  is the opponent's win % going in, not the team color (the user's call):
+  blue winning, red losing, deeper further from .500 (full at .750/.250),
+  gray at .500 or 0-0 (`recColor`, `--recw`/`--recl`/`--recn`, with a key). Then a
   table of each team's average per period (`quarterTable`). The game dots'
   hovers list the quarters. Books' covers stay full-game.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:

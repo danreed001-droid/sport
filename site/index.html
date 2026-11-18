@@ -22,6 +22,7 @@
   --rule:#ddd5b9; --rule-2:#c9bf9c; --grid:#e6e1cf; --axis:#b9b2a0;
   --ledger:#2a78d6; --opinion:#eb6834; --trend:#7c5cd6; --blowout:#0e7c86; --stats:#b8860b; --nflstats:#c2416b; --ncaabstats:#3f8f2f; --totals:#4a6f8a; --mine:#1baf7a;
   --ledger-ink:#1c5cab; --opinion-ink:#b3471b; --trend-ink:#5b3fb0; --blowout-ink:#0b6169; --stats-ink:#8a6508; --nflstats-ink:#9e2a51; --ncaabstats-ink:#2e6b22; --totals-ink:#355268; --mine-ink:#0b7a52; --mine-soft:rgba(27,175,122,.14);
+  --recw:#1f5fd1; --recl:#d0342c; --recn:#8f8a78;
   --win:#006300; --loss:#d03b3b; --loss-soft:rgba(208,59,59,.12); --push:#8a8672; --warn:#9a6a12;
   --shadow:0 1px 2px rgba(32,29,22,.05), 0 10px 26px -18px rgba(32,29,22,.4);
   color-scheme:light;
@@ -31,6 +32,7 @@
   --rule:#2c2c2a; --rule-2:#3d3d39; --grid:#2c2c2a; --axis:#46463f;
   --ledger:#3987e5; --opinion:#d95926; --trend:#a78bfa; --blowout:#2dd4bf; --stats:#e3b341; --nflstats:#f07ca0; --ncaabstats:#7fcf5f; --totals:#8fb3cf; --mine:#199e70;
   --ledger-ink:#86b6ef; --opinion-ink:#f0955e; --trend-ink:#c4b5fd; --blowout-ink:#5eead4; --stats-ink:#f0cc75; --nflstats-ink:#f5a3bd; --ncaabstats-ink:#a8e08f; --totals-ink:#b5cfe3; --mine-ink:#4fd3a0; --mine-soft:rgba(25,158,112,.18);
+  --recw:#6aa6ff; --recl:#ff6b63; --recn:#8f8e86;
   --win:#0ca30c; --loss:#e66767; --loss-soft:rgba(230,103,103,.16); --push:#a8a79e; --warn:#e0b458;
   --shadow:0 1px 2px rgba(0,0,0,.45), 0 12px 28px -18px rgba(0,0,0,.8);
   color-scheme:dark;
@@ -359,8 +361,9 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .atstrend .gsep{stroke:var(--grid);stroke-width:1;}
 .atstrend .qpt{stroke:var(--surface);stroke-width:1;}
 .atstrend .opl{font-size:8.5px;font-weight:700;paint-order:stroke;stroke:var(--surface);stroke-width:3px;stroke-linejoin:round;pointer-events:none;}
-.atstrend .opl.dk{fill:var(--ink);}
-.atstrend .opl .oprec{font-size:7.5px;font-weight:600;fill:var(--muted);}
+.atstrend .opl .oprec{font-size:7.5px;font-weight:600;}
+.reckey{display:inline-flex;align-items:center;gap:4px;white-space:nowrap;}
+.reckey i{display:inline-block;width:46px;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--recl),var(--recn),var(--recw));}
 @media (max-width:600px){.atstrend .qpt{r:2.4;}.atstrend .pt{r:6.5;}.atstrend .opl{font-size:12.5px;stroke-width:3.5px;}.atstrend .opl .oprec{font-size:11px;}}
 .proprow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;}
 .proprow.gone > span:first-child{text-decoration:line-through;opacity:.6;}
@@ -1579,6 +1582,14 @@ footer b{color:var(--ink);}
     // Opponent labels: each sits just above (or below) its dot; one that would
     // overlap a label already placed moves out a row at a time.
     var top = 0, bottom = Hh;   // labels pushed past the chart's edge grow its viewBox
+    // Opponent label color by its win % going in: blue winning, red losing, deeper
+    // the further from .500 (full at .750 / .250); .500 or no games gray.
+    var recColor = function(rec){
+      var p = (rec || '').split('-').map(Number), gp = (p[0]||0) + (p[1]||0) + (p[2]||0);
+      if(!gp || isNaN(gp)) return 'var(--recn)';
+      var t = ((p[0] + (p[2]||0)/2) / gp - 0.5) / 0.25, a = Math.round(Math.min(1, Math.abs(t)) * 100);
+      return a ? 'color-mix(in oklab, var(--rec'+(t > 0 ? 'w' : 'l')+') '+a+'%, var(--recn))' : 'var(--recn)';
+    };
     var oppLabels = function(list){
       var fs = PH ? 12.5 : 8.5, rs = PH ? 11 : 7.5, step = fs + 1.5, placed = [], out = '';
       top = 0; bottom = Hh;
@@ -1593,7 +1604,7 @@ footer b{color:var(--ink);}
         }
         placed.push({x: l.x, y: y, w: w, h: hgt});
         top = Math.min(top, y - fs); bottom = Math.max(bottom, y - fs + hgt + 3);
-        out += '<text class="'+l.cls+'" x="'+l.x.toFixed(1)+'" y="'+y.toFixed(1)+'" text-anchor="middle" fill="'+l.color+'">'+esc(l.t)
+        out += '<text class="opl" x="'+l.x.toFixed(1)+'" y="'+y.toFixed(1)+'" text-anchor="middle" style="fill:'+recColor(l.rec)+'">'+esc(l.t)
           + (two ? '<tspan class="oprec" x="'+l.x.toFixed(1)+'" dy="'+(rs + 1)+'">'+esc(l.rec)+'</tspan>' : '')+'</text>';
       });
       return out;
@@ -1611,7 +1622,7 @@ footer b{color:var(--ink);}
       return rows.length ? '<span><i class="'+(dimColor(color)?'dk':'')+'" style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+rec(rows)+(OU?' over-under, ':' ATS, ')+fmtSigned(cs[cs.length-1])+' in '+rows.length+'</span>'
         : '<span>'+teamBadge(team,true)+' no graded games yet</span>';
     };
-    return '<div class="atstrend"><div class="at-head"><b>'+(OU?'Totals trend':'ATS trend')+'</b><span>'+(OU?'running points over (+) or under (\u2212) the closing total':'running cover margin')+', last '+N+' games \u00b7 big dots: each game (labelled with the opponent and its record going in, @ = away), small dots: after each '+qName(sport)+' \u00b7 hover a point</span></div>'
+    return '<div class="atstrend"><div class="at-head"><b>'+(OU?'Totals trend':'ATS trend')+'</b><span>'+(OU?'running points over (+) or under (\u2212) the closing total':'running cover margin')+', last '+N+' games \u00b7 big dots: each game (labelled with the opponent and its record going in, @ = away; <span class="reckey">losing <i></i> winning</span>), small dots: after each '+qName(sport)+' \u00b7 hover a point</span></div>'
       + '<div class="at-legend">'+leg(A, ca, gc[0], g.away)+leg(H, ch, gc[1], g.home)+'</div>'+svg+quarterTable(sport, g, A, H, OU, gc)+'</div>';
   }
   // Quarter (NCAAB: half) breakdown under a trend chart: each team's average
