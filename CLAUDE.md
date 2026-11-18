@@ -331,6 +331,18 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (`_fill_from_lines`; full-name match, ambiguous names like Miami/Michigan stay slate-only). Closing totals come from `data/raw/<sport>_lines.csv`
   (`closing_total`, date +/- a day, teams by name), else the slate's own total;
   `archive_lines.py` now also archives CFB (seeded with 2026's 434 games).
+  By quarter (2026-11-18): each trend game also carries its periods (row[5],
+  `quarters` in build_site.py from `data/raw/linescores/<sport>.json`, saved by
+  `scripts/archive_linescores.py` each scoring run): the team's margin per
+  quarter (NCAAB halves) on the ATS chart, both teams' points per period on the
+  totals chart. On the chart itself each game's step is split into its
+  quarters (NCAAB: halves; the user asked for the quarter trend inside the game
+  trend, not separate charts): small dots after each quarter, at the running
+  total plus the quarter's margin and a quarter of the spread (totals: points
+  minus a quarter of the total), so the last step lands on the game's big dot
+  (overtime folded into it); games without quarter scores go straight. Then a
+  table of each team's average per period (`quarterTable`). The game dots'
+  hovers list the quarters. Books' covers stay full-game.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page

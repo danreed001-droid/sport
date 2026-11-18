@@ -190,6 +190,28 @@ def _fill_from_lines(sport, wanted, hist, slate_date, totals):
                 hist[k].append([d, opp, round(m + my_sp, 1), my_sp, int(home)])
 
 
+_QLINES = {}
+
+
+def quarters(sport, date_str, g, side, totals):
+    """The game's periods from data/raw/linescores/<sport>.json: the team's
+    margin per quarter (half in NCAAB; overtime periods after), or with
+    totals=True the points both teams scored per period. None if not saved."""
+    if sport not in _QLINES:
+        try:
+            with open(os.path.join(store.REPO_ROOT, "data", "raw", "linescores", f"{sport}.json"), encoding="utf-8") as f:
+                _QLINES[sport] = json.load(f)
+        except (OSError, ValueError):
+            _QLINES[sport] = {}
+    ls = (_QLINES[sport].get(date_str) or {}).get(f"{g.get('away')}@{g.get('home')}")
+    if not ls or len(ls[0]) != len(ls[1]):
+        return None
+    a, h = ls
+    if totals:
+        return [round(x + y) for x, y in zip(a, h)]
+    return [round(y - x) if side == "home" else round(x - y) for x, y in zip(a, h)]
+
+
 def ats_trends(all_docs, slate_date, slate_sports, totals=False):
     """totals=False: cover margin per game; True: points over (+) or under (-)
     the closing total."""
@@ -215,7 +237,8 @@ def ats_trends(all_docs, slate_date, slate_sports, totals=False):
                         continue
                     over = g["homeScore"] + g["awayScore"] - tot
                     for side in sides:
-                        hist[_team_key(g.get(side))].append([date_str, g.get("away" if side == "home" else "home"), round(over, 1), tot, int(side == "home")])
+                        hist[_team_key(g.get(side))].append([date_str, g.get("away" if side == "home" else "home"), round(over, 1), tot, int(side == "home"),
+                                                             quarters(sport, date_str, g, side, True)])
                     continue
                 hs = g.get("statsSpread") if sport == "nba" and isinstance(g.get("statsSpread"), (int, float)) else g.get("homeSpread")
                 if not isinstance(hs, (int, float)):
@@ -225,7 +248,8 @@ def ats_trends(all_docs, slate_date, slate_sports, totals=False):
                     k = _team_key(g.get(side))
                     my_sp = hs if side == "home" else -hs
                     m = margin if side == "home" else -margin
-                    hist[k].append([date_str, g.get("away" if side == "home" else "home"), round(m + my_sp, 1), my_sp, int(side == "home")])
+                    hist[k].append([date_str, g.get("away" if side == "home" else "home"), round(m + my_sp, 1), my_sp, int(side == "home"),
+                                    quarters(sport, date_str, g, side, False)])
         _fill_from_lines(sport, wanted, hist, slate_date, totals)
         out[sport] = {wanted[k]: sorted(v)[-n:] for k, v in hist.items() if v}
     return out

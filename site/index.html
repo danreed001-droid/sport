@@ -349,6 +349,16 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .seg5 button:focus-visible{outline:2px solid var(--opinion);outline-offset:1px;}
 .seg5 button[disabled]{opacity:.5;cursor:not-allowed;}
 .tallyline{font-size:11.5px;color:var(--muted);}
+.qtable{margin-top:6px;font-size:12px;}
+.qtable .qhead{color:var(--muted);font-size:11px;margin-bottom:4px;}
+.qtable table{width:100%;min-width:0;border-collapse:collapse;}
+.qtable th{font-size:10px;font-weight:600;color:var(--muted);text-align:center;padding:2px 4px;}
+.qtable td{padding:4px;text-align:center;border-top:1px solid var(--rule);white-space:nowrap;}
+.qtable td:first-child{text-align:left;}
+.qtable .qn{color:var(--muted);font-size:11px;}
+.atstrend .gsep{stroke:var(--grid);stroke-width:1;}
+.atstrend .qpt{stroke:var(--surface);stroke-width:1;}
+@media (max-width:600px){.atstrend .qpt{r:2.4;}.atstrend .pt{r:6.5;}}
 .proprow{display:flex;align-items:center;gap:8px;flex-wrap:wrap;font-size:13px;}
 .proprow.gone > span:first-child{text-decoration:line-through;opacity:.6;}
 .propwhy{flex-basis:100%;font-size:12px;color:var(--muted);font-style:italic;padding-left:2px;}
@@ -1502,40 +1512,103 @@ footer b{color:var(--ink);}
     var gc = gameColors(g);
     var cum = function(rows){ var c = 0; return rows.map(function(r){ c += r[2]; return Math.round(c*10)/10; }); };
     var ca = cum(A), ch = cum(H);
-    var all = ca.concat(ch, [0]), mx = Math.max.apply(null, all.map(Math.abs)) || 1;
-    var W = 600, Hh = 120, L = 34, R = 132, Tp = 8, B = 10;
-    var xs = function(i, n){ return L + (W-L-R) * (N<=1 ? 1 : (N-n+i)/(N-1)); };   // right-aligned: latest game at the right edge
-    var ys = function(v){ return Tp + (Hh-Tp-B) * (mx - v) / (2*mx); };
-    var fmtSigned = function(v){ return (v>0?'+':v<0?'\u2212':'')+Math.abs(v); };
-    var series = function(rows, cs, color, team){
-      if(!rows.length) return '';
-      var n = rows.length, pts = cs.map(function(v,i){ return [xs(i,n), ys(v)]; }), dk = dimColor(color) ? ' dk' : '';
-      var path = pts.map(function(p,i){ return (i?'L':'M')+p[0].toFixed(1)+' '+p[1].toFixed(1); }).join(' ');
-      var dots = rows.map(function(r,i){
-        var tip = fmtDay(r[0])+' '+(r[4]?'vs ':'@ ')+r[1]+(OU
-          ? ' (total '+r[3]+'): '+(r[2]>0?'over by '+r[2]:r[2]<0?'under by '+(-r[2]):'landed on it')
-          : ' ('+sgn(r[3])+'): '+(r[2]>0?'covered by '+r[2]:r[2]<0?'missed by '+(-r[2]):'push'))+' \u00b7 running '+fmtSigned(cs[i]);
-        return '<g><title>'+esc(team+' \u2014 '+tip)+'</title><circle class="hit" cx="'+pts[i][0].toFixed(1)+'" cy="'+pts[i][1].toFixed(1)+'" r="9"></circle>'
-          + '<circle class="pt c'+dk+'" cx="'+pts[i][0].toFixed(1)+'" cy="'+pts[i][1].toFixed(1)+'" r="4" fill="'+color+'"></circle></g>';
-      }).join('');
-      var last = pts[pts.length-1];
-      return '<path class="ln'+dk+'" d="'+path+'" stroke="'+color+'"></path>'+dots
-        + '<text class="endl" x="'+(last[0]+10).toFixed(1)+'" y="'+(last[1]+4).toFixed(1)+'">'+esc(teamAbbr(team))+' '+fmtSigned(cs[cs.length-1])+'</text>';
+    var NQ = sport==='ncaab' ? 2 : 4;
+    // A quarter's share of the game's number: ATS the quarter's margin plus a
+    // quarter of the spread; totals the quarter's points minus a quarter of the
+    // total. The last step of each game lands on the game's point (overtime in it).
+    var hasQ = function(r){ return r[5] && r[5].length >= NQ; };
+    var qv = function(r, j){ return OU ? r[5][j] - r[3]/NQ : r[5][j] + r[3]/NQ; };
+    var qsteps = function(rows, cs){
+      // per game: [running value after Q1..Q(NQ-1)] (or [] without quarter scores)
+      return rows.map(function(r, i){
+        var prev = i ? cs[i-1] : 0, run = prev, out = [];
+        if(!hasQ(r)) return out;
+        for(var j=0;j<NQ-1;j++){ run += qv(r, j); out.push(Math.round(run*10)/10); }
+        return out;
+      });
     };
+    var qa = qsteps(A, ca), qh = qsteps(H, ch);
+    var all = ca.concat(ch, [0]);
+    qa.concat(qh).forEach(function(q){ all = all.concat(q); });
+    var mx = Math.max.apply(null, all.map(Math.abs)) || 1;
+    var W = 600, Hh = window.innerWidth < 600 ? 200 : 160, L = window.innerWidth < 600 ? 46 : 34, R = 132, Tp = 8, B = 16;
+    // N+1 slots: slot 0 is the start (0) before the oldest game; latest game at the right edge.
+    var xs = function(i, n){ return L + (W-L-R) * (N-n+i+1)/N; };
+    var ys = function(v){ return Tp + (Hh-Tp-B) * (mx - v) / (2*mx); };
+    var fmtSigned = function(v){ return (v>0?'+':v<0?'−':'')+Math.abs(v); };
+    var series = function(rows, cs, qs, color, team){
+      if(!rows.length) return '';
+      var n = rows.length, dk = dimColor(color) ? ' dk' : '', dx = (W-L-R)/N;
+      var path = 'M'+xs(-1,n).toFixed(1)+' '+ys(0).toFixed(1), qd = '', dots = '';
+      rows.forEach(function(r, i){
+        var x0 = xs(i-1, n), opp = (r[4]?'vs ':'@ ')+r[1];
+        qs[i].forEach(function(v, j){
+          var x = x0 + dx*(j+1)/NQ, y = ys(v), q = r[5][j];
+          path += ' L'+x.toFixed(1)+' '+y.toFixed(1);
+          qd += '<g><title>'+esc(team+' — '+fmtDay(r[0])+' '+opp+', after '+qLabel(sport,j)+': '+(OU ? q+' points (the total\'s pace '+(r[3]/NQ).toFixed(1)+')' : fmtSigned(q)+' in the '+qName(sport))+' · running '+fmtSigned(v))+'</title><circle class="hit" cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="4"></circle><circle class="qpt'+dk+'" cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="1.9" fill="'+color+'"></circle></g>';
+        });
+        var gx = xs(i, n), gy = ys(cs[i]);
+        path += ' L'+gx.toFixed(1)+' '+gy.toFixed(1);
+        var tip = fmtDay(r[0])+' '+opp+(OU
+          ? ' (total '+r[3]+'): '+(r[2]>0?'over by '+r[2]:r[2]<0?'under by '+(-r[2]):'landed on it')
+          : ' ('+sgn(r[3])+'): '+(r[2]>0?'covered by '+r[2]:r[2]<0?'missed by '+(-r[2]):'push'))+' · running '+fmtSigned(cs[i])
+          + (hasQ(r) ? ' · '+(OU ? 'points by '+qName(sport)+': ' : 'margin by '+qName(sport)+': ')+r[5].map(function(v, j){ return qLabel(sport, j)+' '+(OU ? v : fmtSigned(v)); }).join(', ') : ' · no '+qName(sport)+' scores');
+        dots += '<g><title>'+esc(team+' — '+tip)+'</title><circle class="hit" cx="'+gx.toFixed(1)+'" cy="'+gy.toFixed(1)+'" r="6"></circle>'
+          + '<circle class="pt c'+dk+'" cx="'+gx.toFixed(1)+'" cy="'+gy.toFixed(1)+'" r="4" fill="'+color+'"></circle></g>';
+      });
+      var lx = xs(n-1, n), ly = ys(cs[cs.length-1]);
+      return {line: '<path class="ln'+dk+'" d="'+path+'" stroke="'+color+'"></path>', marks: qd+dots,
+        label: [ly, '<text class="endl" x="'+(lx+10).toFixed(1)+'" y="@Y@">'+esc(teamAbbr(team))+' '+fmtSigned(cs[cs.length-1])+'</text>']};
+    };
+    var sa = series(A, ca, qa, gc[0], g.away), sh = series(H, ch, qh, gc[1], g.home);
+    // light lines between games
+    var grid = '', dxg = (W-L-R)/N;
+    for(var k=0;k<=N;k++){ var gxk = L + dxg*k; grid += '<line class="gsep" x1="'+gxk.toFixed(1)+'" x2="'+gxk.toFixed(1)+'" y1="'+Tp+'" y2="'+(Hh-B)+'"></line>'; }
     // Keep the two end labels from overlapping.
-    var svg = '<svg viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+(OU?'Running points over or under the total':'Running cover margin')+', last '+N+' games: '+esc(g.away)+' '+(ca.length?fmtSigned(ca[ca.length-1]):'n/a')+', '+esc(g.home)+' '+(ch.length?fmtSigned(ch[ch.length-1]):'n/a')+'">'
+    var labs = [sa, sh].filter(function(s){ return s && s.label; }).map(function(s){ return s.label; });
+    labs.sort(function(a,b){ return a[0]-b[0]; });
+    var gapL = window.innerWidth < 520 ? 22 : 14, prevY = -99, labOut = '';
+    labs.forEach(function(lb){ var y = Math.max(lb[0]+4, prevY+gapL); prevY = y; labOut += lb[1].replace('@Y@', y.toFixed(1)); });
+    var svg = '<svg viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+(OU?'Running points over or under the total':'Running cover margin')+' by '+qName(sport)+', last '+N+' games: '+esc(g.away)+' '+(ca.length?fmtSigned(ca[ca.length-1]):'n/a')+', '+esc(g.home)+' '+(ch.length?fmtSigned(ch[ch.length-1]):'n/a')+'">'
+      + grid
       + '<line class="zero" x1="'+L+'" x2="'+(W-R)+'" y1="'+ys(0).toFixed(1)+'" y2="'+ys(0).toFixed(1)+'"></line>'
       + '<text class="yl" x="'+(L-6)+'" y="'+(ys(mx)+4).toFixed(1)+'" text-anchor="end">+'+Math.round(mx)+'</text>'
       + '<text class="yl" x="'+(L-6)+'" y="'+(ys(0)+4).toFixed(1)+'" text-anchor="end">0</text>'
-      + '<text class="yl" x="'+(L-6)+'" y="'+(ys(-mx)+4).toFixed(1)+'" text-anchor="end">\u2212'+Math.round(mx)+'</text>'
-      + series(A, ca, gc[0], g.away) + series(H, ch, gc[1], g.home) + '</svg>';
+      + '<text class="yl" x="'+(L-6)+'" y="'+(ys(-mx)+4).toFixed(1)+'" text-anchor="end">−'+Math.round(mx)+'</text>'
+      + (sa ? sa.line : '') + (sh ? sh.line : '') + (sa ? sa.marks : '') + (sh ? sh.marks : '') + labOut + '</svg>';
     var rec = function(rows){ var w = 0, l = 0; rows.forEach(function(r){ if(r[2]>0) w++; else if(r[2]<0) l++; }); return w+'-'+l; };
     var leg = function(rows, cs, color, team){
       return rows.length ? '<span><i class="'+(dimColor(color)?'dk':'')+'" style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+rec(rows)+(OU?' over-under, ':' ATS, ')+fmtSigned(cs[cs.length-1])+' in '+rows.length+'</span>'
         : '<span>'+teamBadge(team,true)+' no graded games yet</span>';
     };
-    return '<div class="atstrend"><div class="at-head"><b>'+(OU?'Totals trend':'ATS trend')+'</b><span>'+(OU?'running points over (+) or under (\u2212) the closing total':'running cover margin')+', last '+N+' games'+''+' \u00b7 hover a point</span></div>'
-      + '<div class="at-legend">'+leg(A, ca, gc[0], g.away)+leg(H, ch, gc[1], g.home)+'</div>'+svg+'</div>';
+    return '<div class="atstrend"><div class="at-head"><b>'+(OU?'Totals trend':'ATS trend')+'</b><span>'+(OU?'running points over (+) or under (\u2212) the closing total':'running cover margin')+', last '+N+' games \u00b7 big dots: each game, small dots: after each '+qName(sport)+' \u00b7 hover a point</span></div>'
+      + '<div class="at-legend">'+leg(A, ca, gc[0], g.away)+leg(H, ch, gc[1], g.home)+'</div>'+svg+quarterTable(sport, g, A, H, OU, gc)+'</div>';
+  }
+  // Quarter (NCAAB: half) breakdown under a trend chart: each team's average
+  // margin per period over the same games (totals chart: both teams' points
+  // per period), overtime left out; the per-game numbers are in each point's hover.
+  function qName(sport){ return sport==='ncaab' ? 'half' : 'quarter'; }
+  function qLabel(sport, j){ var n = sport==='ncaab' ? 2 : 4; return j < n ? (sport==='ncaab' ? 'H' : 'Q')+(j+1) : 'OT'+(j-n+1 > 1 ? j-n+1 : ''); }
+  function quarterTable(sport, g, A, H, OU, gc){
+    var n = sport==='ncaab' ? 2 : 4;
+    var avg = function(rows){
+      var s = [], c = 0;
+      rows.forEach(function(r){ if(!r[5] || r[5].length < n) return; c++; for(var j=0;j<n;j++) s[j] = (s[j]||0) + r[5][j]; });
+      return c ? {v: s.map(function(x){ return Math.round(x/c*10)/10; }), n: c} : null;
+    };
+    var a = avg(A), h = avg(H);
+    if(!a && !h) return '';
+    var head = '<tr><th></th>'+Array.apply(null, {length:n}).map(function(_, j){ return '<th>'+qLabel(sport, j)+'</th>'; }).join('')+'<th class="qn">games</th></tr>';
+    var row = function(x, team, color){
+      if(!x) return '<tr><td>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b></td><td colspan="'+(n+1)+'" class="muted">no quarter scores yet</td></tr>';
+      var mx = OU ? null : Math.max.apply(null, x.v.map(Math.abs)) || 1;
+      return '<tr><td>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b></td>'+x.v.map(function(v){
+        if(OU) return '<td class="mono">'+v.toFixed(1)+'</td>';
+        return '<td class="mono '+(v>=1?'pos':v<=-1?'neg':'')+'">'+(v>0?'+':v<0?'\u2212':'')+Math.abs(v).toFixed(1)+'</td>';
+      }).join('')+'<td class="mono qn">'+x.n+'</td></tr>';
+    };
+    return '<div class="qtable"><div class="qhead">By '+qName(sport)+' \u00b7 on the chart, each game\'s step is split into its '+qName(sport)+'s (a '+qName(sport)+' of the '+(OU?'total':'spread')+' each, so they end on the game\'s point). Table: the average '+(OU ? 'points scored by both teams' : 'scoring margin')+' in each '+qName(sport)+'.</div>'
+      + '<table>'+head+row(a, g.away, gc[0])+row(h, g.home, gc[1])+'</table></div>';
   }
   function satBadge(cls, label, g){
     var lean = storyNet(g) > 0 ? g.home : g.away;
