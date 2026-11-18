@@ -212,6 +212,26 @@ def quarters(sport, date_str, g, side, totals):
     return [round(y - x) if side == "home" else round(x - y) for x, y in zip(a, h)]
 
 
+_RECS = {}
+
+
+def record_at(sport, date_str, team):
+    """The team's overall record going into its game on that date, from
+    data/raw/records/<sport>.json (archive_linescores.py), or None."""
+    if sport not in _RECS:
+        try:
+            with open(os.path.join(store.REPO_ROOT, "data", "raw", "records", f"{sport}.json"), encoding="utf-8") as f:
+                _RECS[sport] = json.load(f)
+        except (OSError, ValueError):
+            _RECS[sport] = {}
+    day = _RECS[sport].get(date_str) or {}
+    if team in day:
+        return day[team]
+    from score_slate import _same_team
+    hits = [v for k, v in day.items() if k != "_done" and _same_team(k, team)]
+    return hits[0] if len(hits) == 1 else None
+
+
 def ats_trends(all_docs, slate_date, slate_sports, totals=False):
     """totals=False: cover margin per game; True: points over (+) or under (-)
     the closing total."""
@@ -251,7 +271,13 @@ def ats_trends(all_docs, slate_date, slate_sports, totals=False):
                     hist[k].append([date_str, g.get("away" if side == "home" else "home"), round(m + my_sp, 1), my_sp, int(side == "home"),
                                     quarters(sport, date_str, g, side, False)])
         _fill_from_lines(sport, wanted, hist, slate_date, totals)
-        out[sport] = {wanted[k]: sorted(v)[-n:] for k, v in hist.items() if v}
+        out[sport] = {}
+        for k, v in hist.items():
+            if not v:
+                continue
+            rows = sorted(v, key=lambda r: r[:5])[-n:]
+            # row[6]: the opponent's record going into the game
+            out[sport][wanted[k]] = [r[:5] + [r[5] if len(r) > 5 else None, record_at(sport, r[0], r[1])] for r in rows]
     return out
 
 def backtest_wl(text):

@@ -342,7 +342,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   minus a quarter of the total), so the last step lands on the game's big dot
   (overtime folded into it); games without quarter scores go straight. Each game
   dot is labelled with the opponent (`@` = away; `oppLabels` nudges a label out
-  a row when it would overlap another; the higher line's labels go above). Then a
+  a row when it would overlap another; the higher line's labels go above) and
+  the opponent's record going into the game (row[6], `record_at` in
+  build_site.py from `data/raw/records/<sport>.json`, which
+  `archive_linescores.py` saves from the same scoreboards: ESPN's record on a
+  finished game is the one after it, so the result is taken back off; college
+  dates come from the lines files too). Hovers show it as well. Then a
   table of each team's average per period (`quarterTable`). The game dots'
   hovers list the quarters. Books' covers stay full-game.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
