@@ -402,6 +402,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   record with $, over/unders and props (NBA Totals with NBA Stats, yours with
   You), and pending, from DATA.plays for that date with the scorecard's
   `belongs`; follows the league and model filters (`applySlateFilter`).
+  Each finished game's card is scored right under its header (`resultStrip`,
+  the user's ask: "each game scored in its section"): who won and by how much,
+  who covered the spread (MLB run line; NBA at statsSpread when set), the total
+  against its line, then every pick on that game graded as chips -- models
+  from `g.results` (ATS and counted ML), NBA Totals, your pick (ATS with $,
+  ML), your O/U and your props (with the player's number).
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page

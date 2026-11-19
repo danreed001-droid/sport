@@ -104,6 +104,12 @@ section.hero{border-top:0;}
 .dayres table{width:100%;min-width:0;border-collapse:collapse;font-size:13px;} .dayres td,.dayres th{text-align:left !important;} .dayres td:first-child{width:34%;} .dayres th{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:4px 6px;border-bottom:1px solid var(--rule);}
 .dayres td{padding:5px 6px;border-bottom:1px solid var(--rule);white-space:nowrap;}
 @media (max-width:600px){.dayres td.mono{white-space:normal;} .dayres td.mono span{display:block;font-size:12px;} .dayres td,.dayres th{padding:5px 4px;}} .dayres tr:last-child td{border-bottom:0;}
+.rstrip{margin:8px 0 6px;padding:8px 10px;border:1px solid var(--rule);border-left:4px solid var(--ink);border-radius:8px;background:var(--surface-2);font-size:13px;line-height:1.5;}
+.rs-tag{font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:8px;}
+.rs-d{color:var(--muted);} .rs-p{margin-top:6px;display:flex;flex-wrap:wrap;gap:6px 12px;}
+.rp{display:inline-flex;align-items:center;gap:4px;font-size:12.5px;}
+.rchip{display:inline-block;padding:1px 6px;border-radius:6px;font-size:11.5px;font-weight:700;}
+.rchip.w{background:rgba(46,158,79,.16);color:var(--win);} .rchip.l{background:var(--loss-soft);color:var(--loss);} .rchip.p{background:var(--surface);color:var(--push);border:1px solid var(--rule);}
 .pastnote{margin:10px 0 6px;padding:10px 12px;border:1px solid var(--rule-2);border-left:4px solid var(--warn);border-radius:8px;background:var(--surface);font-size:13.5px;}
 .linkbtn{border:0;background:none;color:var(--ledger);font:inherit;font-weight:700;cursor:pointer;padding:0 0 0 6px;text-decoration:underline;}
 .pastview .pickrow button,.pastview .pickrow select,.pastview .pickrow input,.pastview .pickrow textarea,.pastview .scorebtn,.pastview details.score button{pointer-events:none;}
@@ -2119,6 +2125,40 @@ footer b{color:var(--ink);}
     var el = document.getElementById('pr-'+id);
     if(el) el.innerHTML = pickRowInner(id);
   }
+  // A finished game's result, scored on its card: who won and by how much, who
+  // covered, the total against its line, then every pick on the game graded
+  // (models from g.results, yours from your picks, over/unders and props).
+  function resultStrip(sport, g){
+    if(!g.final || !num(g.homeScore) || !num(g.awayScore)) return '';
+    var ab = function(t){ return esc(teamAbbr(t)); }, f1 = function(v){ return Math.round(v*10)/10; };
+    var m = g.homeScore - g.awayScore, soccer = sport==='soccer' || sport==='epl', unit = sport==='mlb' ? 'run' : soccer ? 'goal' : 'point';
+    var lines = [];
+    lines.push(m === 0 ? (soccer ? 'Draw' : 'Tied') : '<b>'+esc(m > 0 ? g.home : g.away)+'</b> won by '+Math.abs(m)+' '+unit+(Math.abs(m)===1?'':'s'));
+    var hs = num(g.statsSpread) ? g.statsSpread : g.homeSpread;
+    if(num(hs) && !soccer){
+      var c = f1(m + hs);
+      lines.push(c === 0 ? 'Push on the '+(sport==='mlb'?'run line':'spread') : ab(c > 0 ? g.home : g.away)+' covered ('+sgn(c > 0 ? hs : -hs)+') by '+Math.abs(c));
+    }
+    var tl = gameTotalLine(g);
+    if(tl){ var tot = g.homeScore + g.awayScore, o = f1(tot - tl.t); lines.push('Total '+tot+' \u00b7 '+(o === 0 ? 'push on '+tl.t : (o > 0 ? 'over ' : 'under ')+tl.t+' by '+Math.abs(o))); }
+    var chip = function(r, txt){ var k = r==='W'||r==='cover' ? 'w' : r==='L'||r==='miss' ? 'l' : 'p'; return '<span class="rchip '+k+'">'+(k==='w'?'\u2713 ':k==='l'?'\u2717 ':'')+txt+'</span>'; };
+    var picks = [];
+    var R = g.results || {};
+    Object.keys(R).forEach(function(who){
+      var x = R[who]; if(!x || x.sx) return;
+      if(who === 'totals'){ if(x.result) picks.push('<span class="rp"><b>NBA Totals</b> '+chip(x.result, esc(g.totalsFavors||'')+' '+(num(g.totalsLine)?g.totalsLine:''))+'</span>'); return; }
+      var w = WHO_BY_KEY[who]; if(!w || !modelOn(who)) return;
+      var bits = (x.ats && x.ats.result ? chip(x.ats.result, 'ATS') : '') + (x.ml && x.ml.result && x.ml.counted !== false ? chip(x.ml.result, 'ML') : '');
+      if(bits) picks.push('<span class="rp"><b>'+esc(w.short)+'</b> '+bits+'</span>');
+    });
+    var mp = (DATA.myPicks||{})[g.id];
+    if(mp && mp.result){ var mb = (mp.result.ats && mp.result.ats.result ? chip(mp.result.ats.result, 'ATS '+(num(mp.result.ats.profit)?money(mp.result.ats.profit):'')) : '') + (mp.result.ml && mp.result.ml.result && mp.result.ml.counted !== false ? chip(mp.result.ml.result, 'ML') : ''); if(mb) picks.push('<span class="rp"><b>You</b> '+ab(mp.team || (mp.side==='home'?g.home:g.away))+' '+mb+'</span>'); }
+    var mt = (DATA.myTotals||{})[g.id];
+    if(mt && mt.result && mt.result.result) picks.push('<span class="rp"><b>Your O/U</b> '+chip(mt.result.result, (mt.side==='over'?'Over ':'Under ')+mt.line+' '+(num(mt.result.profit)?money(mt.result.profit):''))+'</span>');
+    propsOf(g.id).forEach(function(p){ if(p.result && p.result !== 'void') picks.push('<span class="rp"><b>Your prop</b> '+chip(p.result, esc(p.player)+' '+(p.side==='over'?'O':'U')+' '+p.line+' '+esc(propStat(p.stat, p.sport))+(num(p.actual)?' (had '+p.actual+')':''))+'</span>'); });
+    return '<div class="rstrip"><div class="rs-l"><span class="rs-tag">Result</span>'+lines.join(' <span class="rs-d">\u00b7</span> ')+'</div>'
+      + (picks.length ? '<div class="rs-p">'+picks.join('')+'</div>' : '<div class="rs-p muted">No picks on this game.</div>') + '</div>';
+  }
   function card(sport, g){
     GAMES[g.id] = {sport:sport, game:g};
     var who = sport==='mlb' && (g.awayPitcher||g.homePitcher) ? '<div class="sub">'+esc(g.awayPitcher||'TBD')+' vs '+esc(g.homePitcher||'TBD')+'</div>'
@@ -2161,6 +2201,7 @@ footer b{color:var(--ink);}
     var gcol = gameColors(g);
     return '<article class="game'+(dimColor(gcol[0]) && dimColor(gcol[1]) ? ' dk-a' : '')+'" style="--ca:'+gcol[0]+';--ch:'+gcol[1]+'">'
       + matchupHeader(sport, g, who)
+      + resultStrip(sport, g)
       + leanMeter(sport, g)
       + '<div class="models">'+models+'</div>'+pieRow(sport, g)+atsTrend(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
       + stat + checks + reasons
