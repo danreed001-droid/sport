@@ -168,7 +168,7 @@ a{color:var(--accent-ink);}
           var chip = r.result==='W' ? '<span class="chip w">Won</span>' : r.result==='L' ? '<span class="chip l">Lost</span>' : r.result==='P' ? '<span class="chip p">Push</span>'
             : r.result==='NS' ? '<span class="chip n" title="No spread was saved with this pick">ML only</span>' : r.result==='void' ? '<span class="chip n">Void</span>' : '<span class="chip n">Pending</span>';
           var alt = r.alt ? '<span class="tag" title="Alternate line, price estimated">alt line</span>' : '';
-          var fix = r.note ? '<span class="tag" title="'+esc(r.note)+'">corrected*</span>' : '';
+          var fix = r.note ? '<span class="tag" title="'+esc(r.note)+'">'+(r.kind==='prop' ? 'entered by hand*' : 'corrected*')+'</span>' : '';
           var why = r.reason ? '<div class="sub" style="font-size:12px;font-style:italic;white-space:normal">'+esc(r.reason)+'</div>' : '';
           var posted = r.posted ? ' <span class="sub" style="font-size:11.5px">(posted '+esc(r.kind==='total' ? (isNum(r.posted.line)?r.posted.line:'') : sgn(r.posted.spread))+')</span>' : '';
           return '<tr><td>'+esc(r.d)+'</td><td>'+esc(SPORT[r.sport]||r.sport)+'</td><td class="gm">'+esc(r.game)+'</td><td><b>'+esc(r.pick)+'</b>'+alt+fix+posted+why+'</td>'

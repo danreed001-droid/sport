@@ -646,7 +646,11 @@ keyed `<sport>-espn-<event id>|<athlete id or n:name>|<stat>`, with the reason.
 box score once final (`lib/props.flatten_box`/`stat_value`; "void" if he didn't
 play). `lib/results.py` lists them (kind "prop", with the reason) and the
 results page has a Player props tile and type filter, kept out of the
-spread/over-under units. First prop (entered by hand before the form existed):
+spread/over-under units. The pick sheet's pick log lists them too (`propLog` from
+`prop_log` in build_site.py, `propLogRow`; shown with You, "Your prop", its own
+W-L in the footer, kept out of every other total), since a past day's game card
+is gone from the page. A prop entered by hand is tagged "entered by hand*" on
+the results page (not "corrected*"); the CSV type is "player prop". First prop (entered by hand before the form existed):
 Daniss Jenkins under 17 points +100, 2026-11-17 Pistons @ Spurs.
 
 Don't write picks into game objects in `data/<sport>/` (no `userPick`,

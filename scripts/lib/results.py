@@ -187,7 +187,7 @@ def results_csv(rows):
     w.writerow(cols)
     for r in rows:
         posted = r.get("posted") or {}
-        w.writerow([r["d"], r["sport"], r["game"], "over/under" if r["kind"] == "total" else "spread", r["pick"],
+        w.writerow([r["d"], r["sport"], r["game"], {"total": "over/under", "prop": "player prop"}.get(r["kind"], "spread"), r["pick"],
                     r["line"], r["odds"], r["result"] or "pending", r["units"], r["ml"],
                     r["mlResult"], r["mlUnits"], "yes" if r["alt"] else "",
                     posted.get("spread", posted.get("line", "")), r["note"] or "", r.get("close", ""), r.get("clv", "")])

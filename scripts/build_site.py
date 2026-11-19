@@ -379,6 +379,20 @@ def load_mypicks():
     return out
 
 
+def prop_log(mypicks):
+    """Every player prop of yours, for the pick log (kept out of every record)."""
+    out = []
+    for date_str, doc in sorted(mypicks.items()):
+        for p in (doc.get("props") or {}).values():
+            sd = props_lib.stat_def(p.get("sport", "nba"), p.get("stat"))
+            res = p.get("result")
+            out.append({"d": date_str, "s": p.get("sport", "nba"), "g": f"{p.get('away')} @ {p.get('home')}",
+                        "k": f"{p.get('player')} {str(p.get('side')).title()} {p.get('line'):g} {sd[2] if sd else p.get('stat')}",
+                        "o": p.get("odds"), "r": res, "u": p.get("profit"), "act": p.get("actual"),
+                        "why": p.get("reason"), "pd": not res})
+    return out
+
+
 def blank():
     return {"atsW": 0, "atsL": 0, "atsP": 0, "atsProfit": 0.0, "atsPriced": 0,
             "mlW": 0, "mlL": 0, "mlProfit": 0.0, "mlPriced": 0, "mlSkipped": 0}
@@ -692,6 +706,7 @@ def build():
         "slate": slate,
         "myPicks": committed,
         "myTotals": my_totals,
+        "propLog": prop_log(mypicks),
         "myProps": mypicks.get(slate_date, {}).get("props", {}),
         "rosters": prop_rosters(slate),
         "propStats": {k: [[x[0], x[1], x[2]] for x in v] for k, v in props_lib.STATS.items()},
