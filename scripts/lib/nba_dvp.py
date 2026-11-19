@@ -21,6 +21,18 @@ BOX = os.path.join(ROOT, "data", "raw", "nba_player_box.json")
 HEIGHTS = os.path.join(ROOT, "data", "raw", "nba_heights.json")
 POS = ("PG", "SG", "SF", "PF", "C")
 STATS = ("pts", "reb", "ast", "tpm")
+# Matchup score (the user's ask, 2026-11-19): how soft tonight's defense is to
+# the positions this offense scores through. Per position, the defense's
+# allowed numbers vs the league, weighted pts .5 / reb .2 / ast .2 / 3PM .1;
+# then each position weighted by its share of this offense's points.
+# +5 = the defense gives this offense's mix 5% more than an average defense.
+# 2025-26 replay (979 games, 10+ games in, before-the-game data): points vs the
+# team's own last-10 average = about 0.77 x score (+8 or more: +8.2, beat its
+# average 71%; +4 to +8: +5.9, 67%; -8 to -4: -4.9, 37%); against the spread
+# the gap between the two offenses' scores did nothing (50.6%), and for totals
+# both scores high went over 53% (104-92), both low under 57% (111-85, p=0.07).
+SCORE_W = {"pts": .5, "reb": .2, "ast": .2, "tpm": .1}
+MIN_GAMES = 5
 _CACHE = {}
 
 
@@ -82,6 +94,7 @@ def for_slate(slate_date, games_today):
         return {}
     pos_of = derive_positions(games, heights)
     allowed = defaultdict(lambda: defaultdict(list))      # defense team -> pos -> [per-game dict]
+    made = defaultdict(lambda: defaultdict(list))         # offense team -> pos -> [per-game dict]
     players = defaultdict(lambda: defaultdict(lambda: [None, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0]))  # team -> pid -> [name, g, min, pts, reb, ast, tpm, +/- total, games with +/-]
     last_team = {}
     for _d, _eid, e in games:
@@ -115,6 +128,7 @@ def for_slate(slate_date, games_today):
                 last_team[pid] = team
             for P in POS:
                 allowed[opp][P].append(sums[P])
+                made[team][P].append(sums[P])
     league = {P: {k: round(sum(g[k] for t in allowed for g in allowed[t][P]) / max(1, sum(len(allowed[t][P]) for t in allowed)), 1)
                   for k in STATS} for P in POS}
     avg = {t: {P: {k: sum(g[k] for g in allowed[t][P]) / len(allowed[t][P]) for k in STATS} for P in POS if allowed[t][P]}
@@ -143,7 +157,26 @@ def for_slate(slate_date, games_today):
             out["players"] = sorted(rows, key=lambda x: -x[3])[:9]
         return out
 
+    def score(off, dfn):
+        """{"score": %, "pos": {P: [defense vs league %, share of the offense's points %]}} or None."""
+        o = next((t for t in made if _same(t, off)), None)
+        d = next((t for t in avg if _same(t, dfn)), None)
+        if not o or not d or len(made[o]["PG"]) < MIN_GAMES or len(allowed[d]["PG"]) < MIN_GAMES:
+            return None
+        pts = {P: sum(g["pts"] for g in made[o][P]) / len(made[o][P]) for P in POS}
+        tot = sum(pts.values()) or 1
+        out, total = {}, 0.0
+        for P in POS:
+            if P not in avg[d]:
+                continue
+            comp = sum(w * (avg[d][P][k] / league[P][k] - 1) for k, w in SCORE_W.items() if league[P][k] > 0)
+            share = pts[P] / tot
+            total += share * comp
+            out[P] = [round(100 * comp, 1), round(100 * share)]
+        return {"score": round(100 * total, 1), "pos": out}
+
     res = {"_league": league}
     for gid, away, home in games_today:
-        res[gid] = {"away": side(away), "home": side(home)}
+        res[gid] = {"away": side(away), "home": side(home),
+                    "score": {"away": score(away, home), "home": score(home, away)}}
     return res
