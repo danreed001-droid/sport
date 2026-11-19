@@ -22,6 +22,16 @@ STATS = {
 }
 STATS["TE"] = STATS["WR"]
 SPEC = {P: [[k, lab] for k, lab, _f in STATS[P]] for P in POS}
+# Matchup score (2026-11-19): how soft tonight's defense is to this offense, the
+# NFL version of lib/nba_dvp.py's. Per position, the defense's allowed numbers vs
+# the league (QB pass yds .6 / pass TD .3 / INT -.1; RB rush yds .6 / rec yds .2
+# / TD .2; WR and TE rec yds .6 / TD .3 / rec .1), each position weighted by how
+# this offense gains its yards: its passing share split QB .45 / WR .40 / TE .15,
+# its rushing share to RB. Not backtested (one season of box scores so far).
+SCORE_W = {"QB": {"pyd": .6, "ptd": .3, "int": -.1}, "RB": {"ryd": .6, "cyd": .2, "td": .2},
+           "WR": {"cyd": .6, "td": .3, "rec": .1}, "TE": {"cyd": .6, "td": .3, "rec": .1}}
+PASS_SPLIT = {"QB": .45, "WR": .40, "TE": .15}
+MIN_GAMES = 3
 _CACHE = {}
 
 
@@ -59,6 +69,7 @@ def for_slate(slate_date, games_today):
         return {}
     allowed = defaultdict(lambda: defaultdict(list))
     players = defaultdict(dict)   # team -> pid -> [name, pos, g, usage, {stat: total}]
+    yds = defaultdict(lambda: [0.0, 0.0, 0])   # offense team -> [pass yds, rush yds, games]
     last_team = {}
     for _d, _eid, e in games:
         teams = list(e["players"])
@@ -81,6 +92,10 @@ def for_slate(slate_date, games_today):
                 last_team[r[0]] = team
             for P in POS:
                 allowed[opp][P].append(sums[P])
+            y = yds[team]
+            y[0] += sums["QB"]["pyd"]
+            y[1] += sum(r[9] for r in e["players"][team])
+            y[2] += 1
     league = {P: {k: round(sum(g[k] for t in allowed for g in allowed[t][P]) / max(1, sum(len(allowed[t][P]) for t in allowed)), 1)
                   for k, _l, _f in STATS[P]} for P in POS}
     avg = {t: {P: {k: sum(g[k] for g in allowed[t][P]) / len(allowed[t][P]) for k, _l, _f in STATS[P]} for P in POS if allowed[t][P]}
@@ -110,7 +125,24 @@ def for_slate(slate_date, games_today):
             out["players"] = rows
         return out
 
+    def score(off, dfn):
+        o = next((t for t in yds if _same(t, off)), None)
+        d = next((t for t in avg if _same(t, dfn)), None)
+        if not o or not d or yds[o][2] < MIN_GAMES or len(allowed[d]["QB"]) < MIN_GAMES:
+            return None
+        ps = yds[o][0] / max(1.0, yds[o][0] + yds[o][1])
+        out, total = {}, 0.0
+        for P in POS:
+            if P not in avg[d]:
+                continue
+            comp = sum(w * (avg[d][P][k] / league[P][k] - 1) for k, w in SCORE_W[P].items() if league[P][k] > 0)
+            share = ps * PASS_SPLIT[P] if P in PASS_SPLIT else 1 - ps
+            total += share * comp
+            out[P] = [round(100 * comp, 1), round(100 * share)]
+        return {"score": round(100 * total, 1), "pos": out}
+
     res = {"_league": league, "_spec": SPEC}
     for gid, away, home in games_today:
-        res[gid] = {"away": side(away), "home": side(home)}
+        res[gid] = {"away": side(away), "home": side(home),
+                    "score": {"away": score(away, home), "home": score(home, away)}}
     return res

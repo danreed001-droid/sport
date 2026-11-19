@@ -104,6 +104,19 @@ section.hero{border-top:0;}
 .dayres table{width:100%;min-width:0;border-collapse:collapse;font-size:13px;} .dayres td,.dayres th{text-align:left !important;} .dayres td:first-child{width:34%;} .dayres th{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:4px 6px;border-bottom:1px solid var(--rule);}
 .dayres td{padding:5px 6px;border-bottom:1px solid var(--rule);white-space:nowrap;}
 @media (max-width:600px){.dayres td.mono{white-space:normal;} .dayres td.mono span{display:block;font-size:12px;} .dayres td,.dayres th{padding:5px 4px;}} .dayres tr:last-child td{border-bottom:0;}
+.mms{margin:8px 0 10px;} .mms-row{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center;padding:8px 0;border-bottom:1px solid var(--rule-2);}
+.mms-row:last-of-type{border-bottom:0;} .mms-team{display:flex;align-items:center;gap:8px;font-size:13px;}
+.mmg{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:9px;font-weight:800;font-size:18px;color:#fff;flex:none;}
+.mmg.gA{background:#1f8f4e;} .mmg.gB{background:#5fae74;} .mmg.gC{background:#7d7a72;} .mmg.gD{background:#d0745f;} .mmg.gF{background:#c0392b;}
+.mms-t b{display:block;font-size:14px;} .mms-t small{color:var(--muted);font-size:12px;}
+.mmp{display:grid;grid-template-columns:repeat(var(--n),1fr);gap:6px;} .mmp > div{font-size:11px;text-align:center;}
+.mmp .pb{position:relative;height:8px;border-radius:4px;background:var(--grid);margin:3px 0;overflow:hidden;}
+.mmp .pb::after{content:'';position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--axis);}
+.mmp .pb i{position:absolute;top:0;bottom:0;} .mmp .pb i.u{left:50%;background:var(--win);} .mmp .pb i.d{right:50%;background:var(--loss);}
+.mmp b{font-size:12px;} .mmp small{display:block;color:var(--muted);font-size:10.5px;}
+.mms-net{font-size:13px;margin:6px 0 2px;} .mmchip{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--ink-2,inherit);}
+.mmchip .mmg{width:20px;height:20px;font-size:12px;border-radius:5px;}
+@media (max-width:600px){.mms-row{grid-template-columns:1fr;} .mmp small{font-size:10px;}}
 .dvpbox{margin:10px 0 4px;border:1px solid var(--rule-2);border-radius:10px;background:var(--surface-2);}
 .dvpbox > summary{list-style:none;cursor:pointer;display:flex;align-items:center;flex-wrap:wrap;gap:4px 8px;padding:10px 12px;font-size:14px;}
 .dvpbox > summary::-webkit-details-marker{display:none;}
@@ -1352,6 +1365,39 @@ footer b{color:var(--ink);}
   // NBA defense vs position (DATA.dvp from lib/nba_dvp.py): what each defense
   // allows a game to PGs, SGs, SFs, PFs and centers, and each player's season
   // averages with how tonight's defense treats his position (vs the league).
+  // Matchup score (lib/nba_dvp.py / nfl_dvp.py `score`): how soft tonight's
+  // defense is to the positions this offense gets its production from, graded A-F.
+  var MM_CUT = {nba: [4, 8], nfl: [10, 20]};
+  function mmGrade(sport, v){
+    var c = MM_CUT[sport] || [4, 8];
+    return v >= c[1] ? ['A','Big edge'] : v >= c[0] ? ['B','Edge'] : v > -c[0] ? ['C','Even'] : v > -c[1] ? ['D','Tough'] : ['F','Very tough'];
+  }
+  function mmPct(v){ return (v > 0 ? '+' : v < 0 ? '−' : '')+Math.abs(Math.round(v*10)/10)+'%'; }
+  function mmChips(sport, g, x){
+    var S = x && x.score; if(!S) return '';
+    return ['away','home'].map(function(sd){ var o = S[sd]; if(!o) return ''; var gr = mmGrade(sport, o.score);
+      return '<span class="mmchip" title="'+esc(teamAbbr(g[sd])+' offense vs '+teamAbbr(g[sd==='away'?'home':'away'])+' defense: '+gr[1]+' ('+mmPct(o.score)+')')+'"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span>'+esc(teamAbbr(g[sd]))+'</span>'; }).join(' ');
+  }
+  function mmBlock(sport, g, x, POS){
+    var S = x && x.score; if(!S || (!S.away && !S.home)) return '';
+    var row = function(sd){
+      var o = S[sd]; if(!o) return '';
+      var off = g[sd], def = g[sd==='away'?'home':'away'], gr = mmGrade(sport, o.score);
+      var est = sport === 'nba' ? ' · about '+(o.score*0.77 >= 0 ? '+' : '−')+Math.abs(Math.round(o.score*0.77*10)/10)+' pts vs its average' : '';
+      var cells = POS.filter(function(P){ return o.pos[P]; }).map(function(P){
+        var v = o.pos[P][0], sh = o.pos[P][1], w = Math.min(50, Math.abs(v) / 30 * 50);
+        return '<div title="'+esc(teamAbbr(def)+' gives '+P+'s '+mmPct(v)+' vs an average defense; '+P+'s make '+sh+'% of '+teamAbbr(off)+(sport==='nfl' ? '\'s yards' : '\'s points'))+'"><b>'+P+'</b><div class="pb"><i class="'+(v >= 0 ? 'u' : 'd')+'" style="width:'+w.toFixed(1)+'%"></i></div>'+mmPct(v)+'<small>'+sh+'% of '+(sport==='nfl' ? 'yds' : 'pts')+'</small></div>';
+      }).join('');
+      return '<div class="mms-row"><div class="mms-team"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span><div class="mms-t"><b>'+teamBadge(off, true)+' '+esc(teamAbbr(off))+' offense vs '+esc(teamAbbr(def))+' D</b><small>'+gr[1]+' · '+mmPct(o.score)+est+'</small></div></div>'
+        + '<div class="mmp" style="--n:'+POS.length+'">'+cells+'</div></div>';
+    };
+    var net = S.away && S.home ? S.home.score - S.away.score : null;
+    var who = net == null ? '' : Math.abs(net) < 2 ? 'about even' : 'edge '+teamAbbr(net > 0 ? g.home : g.away)+' offense ('+(net > 0 ? mmPct(S.home.score)+' vs '+mmPct(S.away.score) : mmPct(S.away.score)+' vs '+mmPct(S.home.score))+')';
+    return '<div class="mms"><div class="dvcap">Matchup score</div>'+row('away')+row('home')
+      + (who ? '<div class="mms-net"><b>Mismatch:</b> '+esc(who)+'</div>' : '')
+      + '<p class="dvnote">The grade is how soft this defense is to the positions the offense '+(sport==='nfl' ? 'gains its yards through (its passing share split QB 45% / WR 40% / TE 15%, its rushing share to RBs)' : 'scores through (each position weighted by its share of the team\'s points)')+': per position, what the defense allows vs the league ('+(sport==='nfl' ? 'QB pass yds, TDs, fewer INTs; RB rush and rec yds, TDs; WR/TE rec yds, TDs, catches' : 'points 50%, rebounds 20%, assists 20%, 3s 10%')+'). A '+(MM_CUT[sport]||[4,8])[1]+'%+ · B '+(MM_CUT[sport]||[4,8])[0]+'%+ · C even · D −'+(MM_CUT[sport]||[4,8])[0]+'% · F −'+(MM_CUT[sport]||[4,8])[1]+'%.'
+      + (sport==='nba' ? ' Replayed on 2025-26 (979 games): offenses graded A scored 8.2 points over their own average (beat it 71%), B +5.9 (67%), D −4.9 (37%). But the books price it: backing the team with the bigger score went 50.6% against the spread. Both offenses high went over 53%, both low under 57% (not significant). Context, not a pick. Early in the season the scores swing more (few games).' : ' Not backtested yet (one season of box scores); scores swing more early in the season. Context, not a pick.')+'</p></div>';
+  }
   function dvpBlock(sport, g){
     var D = DATA.dvp || {}, x = D[g.id], L = D._league;
     if(sport !== 'nba' || !x || !L) return '';
@@ -1382,7 +1428,8 @@ footer b{color:var(--ink);}
     };
     var body = half(x.away, x.home, g.away, g.home) + half(x.home, x.away, g.home, g.away);
     if(!body) return '';
-    return '<details class="dvpbox"><summary><span class="dvi">\u25a6</span><b>Matchup by position</b><span class="dvs">what each defense allows \u00b7 tap to open</span></summary>'
+    return '<details class="dvpbox"><summary><span class="dvi">\u25a6</span><b>Matchup by position</b>'+mmChips(sport, g, x)+'<span class="dvs">what each defense allows \u00b7 tap to open</span></summary>'
+      + mmBlock(sport, g, x, POS)
       + '<p class="dvnote">Per game this season to each position (#1 = allows the most; green = more than the league average, red = less). Under each player, his season average, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average, and his average plus/minus (his team\'s point margin while he\'s on the floor). Positions: ESPN\'s guard / forward / center, guards split by assists (5+ per 36 min = PG) and forwards by height (6\'9" and up = PF).</p>'
       + body + '</details>';
   }
@@ -1416,7 +1463,8 @@ footer b{color:var(--ink);}
     };
     var body = half(x.away, x.home, g.away, g.home) + half(x.home, x.away, g.home, g.away);
     if(!body) return '';
-    return '<details class="dvpbox"><summary><span class="dvi">\u25a6</span><b>Matchup by position</b><span class="dvs">what each defense allows \u00b7 tap to open</span></summary>'
+    return '<details class="dvpbox"><summary><span class="dvi">\u25a6</span><b>Matchup by position</b>'+mmChips(sport, g, x)+'<span class="dvs">what each defense allows \u00b7 tap to open</span></summary>'
+      + mmBlock(sport, g, x, POS)
       + '<p class="dvnote">Per game this season to each position: quarterbacks, running backs (fullbacks included), wide receivers and tight ends (#1 = allows the most; green = more than the league average, red = less). Under each player, his average a game, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average. Positions from ESPN\'s team rosters.</p>'
       + body + '</details>';
   }

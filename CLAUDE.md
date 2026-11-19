@@ -452,6 +452,19 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   58% vs 50% (rebounds), 52.5% vs 49% (assists), 49% vs 45% (3PM); PGs vs a top-5
   "3s to PGs" defense 47%. Small, and books already price matchups: context,
   not a pick.
+  Matchup score (2026-11-19, the user's ask for "a rubric to show mismatches"):
+  each offense vs tonight's defense graded A-F (`score` in `lib/nba_dvp.py` /
+  `lib/nfl_dvp.py`, `mmBlock`/`mmChips` in site/index.html; the grades also sit
+  on the closed "Matchup by position" bar). Per position, what the defense
+  allows vs the league (NBA pts .5 / reb .2 / ast .2 / 3PM .1; NFL per
+  position, INT counted against), each position weighted by its share of the
+  offense's points (NFL: passing share split QB .45 / WR .40 / TE .15, rushing
+  to RB). Cuts (`MM_CUT`): NBA A +8% / B +4% / D -4% / F -8%, NFL +-10/+-20
+  (its scores swing wider). 2025-26 NBA replay (979 games, 10+ games in): about
+  0.77 points vs the team's own last-10 average per 1% (A +8.2, beat it 71%;
+  B +5.9, 67%; D -4.9, 37%), but the gap between the two offenses' scores did
+  nothing ATS (50.6%); both high over 53% (104-92), both low under 57% (111-85,
+  p=0.07). NFL not backtested. Context, not a pick.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
