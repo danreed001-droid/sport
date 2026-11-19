@@ -3,55 +3,8 @@
   "weekday": "Thursday",
   "sport": "nfl",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-19T12:53:21Z",
+  "generatedAt": "2026-11-19T13:17:38Z",
   "games": [
-    {
-      "espnId": "401873066",
-      "away": "Indianapolis Colts",
-      "home": "Houston Texans",
-      "time": "8:15 PM ET",
-      "homeSpread": -12.5,
-      "awaySpread": 12.5,
-      "homeSpreadOdds": -108.0,
-      "awaySpreadOdds": -112.0,
-      "homeMoneyline": -750.0,
-      "awayMoneyline": 525.0,
-      "storylines": [
-        {
-          "weight": 1,
-          "live": "3-2",
-          "key": "hidden_gem",
-          "name": "Better than its record",
-          "team": "Houston Texans",
-          "says": "back",
-          "fact": "Houston Texans is 3-6 but has scored 233 and allowed 219, which usually goes with about 4.8 wins in 9 games.",
-          "record": "63-50",
-          "pct": 55.8,
-          "leans": "Houston Texans",
-          "leanPct": 55.8,
-          "against": false,
-          "unit": "ATS"
-        },
-        {
-          "weight": 1,
-          "live": "7-6",
-          "key": "beat_refs",
-          "name": "Beat the refs too",
-          "team": "Indianapolis Colts",
-          "says": "back",
-          "fact": "Indianapolis Colts beat Miami Dolphins 24-22 last game despite 13 penalties for 83 yards to their 3 for 30.",
-          "record": "141-108",
-          "pct": 56.6,
-          "leans": "Indianapolis Colts",
-          "leanPct": 56.6,
-          "against": false,
-          "unit": "ATS"
-        }
-      ],
-      "gameTotal": 43.5,
-      "gameTotalOverOdds": -118,
-      "gameTotalUnderOdds": -102
-    }
+    {"altBlowoutCheck":"Neither team's most recent game was a 17+ point win (Colts won by 2 vs MIA; Texans lost by 3 @ CLE) — regression check does not apply to either side.","altBlowoutFavors":null,"altCategoryTally":"6-0","altConfidence":"strong","altCorrect":null,"altCover":null,"altPick":"Houston Texans","altReasons":["Scoring margin: favors Texans — blended PD/g +3.98 (Texans) vs -1.56 (Colts); no major QB change for either team this season (Stroud and Jones have started all of their team's games), so neither side's figure is discounted","Injuries/Lineup (weighted x2 — multi-starter cluster): favors Texans — Colts are without both starting tackles (Jalen Travis OUT - knee, Bernhard Raimann OUT - concussion) and both starting corners are compromised (Charvarius Ward OUT - knee, Sauce Gardner Questionable - calf), plus TE Will Mallory (OUT - hamstring) and DT Jerry Tillery (OUT - calf); Texans' comparable loss is a single starter, DE Danielle Hunter (OUT - hamstring)","Form: favors Texans — both teams are 1-2 over their last three games, but Texans' point differential is +13 over that stretch (L 24-27 @ CLE, W 44-22 @ LAC, L 21-27 vs NYG) vs the Colts' -37 (L 7-42 @ JAX, L 23-27 vs DAL, W 24-22 vs MIA); no QB-change discount applies since both starters played every game in that span","Market: favors Texans — the line has moved further toward Houston as the week progressed (mid-week DraftKings had Colts at roughly +350 / +9.5; CBS Sports' live board now shows Colts +570 / +12.5), consistent with the Colts' worsening O-line/CB injury news","Matchup splits: favors Texans — Colts' makeshift offensive line (both projected starting tackles out) faces a Texans front that, even without DE Danielle Hunter, still returns DE Will Anderson Jr. and DT Foley Fatukasi","Rest: neutral — both teams played Sunday 11/15 and are on the same short Thursday turnaround","Travel: neutral — Colts' trip to Houston is a routine divisional road game, no time-zone/cross-country factor","Motivation/Spot: neutral — AFC South rivalry game, but no clearly verified one-sided motivational edge","Weather/Venue: neutral — Reliant Stadium is a dome, no weather factor"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Colts prior game (Wk10 vs MIA, CBS box score): 276 total net yds (104 pass yds on 11-22, 172 rush yds on 34 att), won by 2 — no pattern matched (not a loss, so Pattern A N/A; YPA 4.7 < 7.5 misses Pattern B; rush/pass ratio 1.55 > 1.0 misses Pattern C; pass att 22 < 41 misses Pattern D). Texans prior game (Wk10 @ CLE, CBS box score): 290 total net yds (202 pass yds on 20-38, 88 rush yds on 24 att), lost by 3 — no pattern matched (margin only 3, not 11+, misses Pattern A; YPA 5.3 < 7.5 misses Pattern B; rush att 24 < 34 misses Pattern C; pass att 38 < 41 misses Pattern D). Net: no trend signal either way.","altTrendFavors":null,"away":"Indianapolis Colts","awayMoneyline":570,"awayPDpg":-1.56,"awayQB":"Daniel Jones","awayQBRating":67,"awayScore":null,"awaySpread":12.5,"awaySpreadOdds":-108,"awayYPP":4.5,"confidence":"lean","correct":null,"gameTotal":43.5,"gameTotalOverOdds":-118,"gameTotalUnderOdds":-102,"home":"Houston Texans","homeMoneyline":-699,"homePDpg":3.98,"homeQB":"C.J. Stroud","homeQBRating":102.4,"homeScore":null,"homeSpread":-12.5,"homeSpreadOdds":-108,"homeYPP":5.6,"offGap":70.97,"pick":"Houston Texans","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -1.6 vs +4.0","Yds/play 4.5 vs 5.6 (rank 31st vs 9th) · 71-pt offense-percentile gap","QB rating 67.0 vs 102.4 (Jones vs Stroud)"],"storylines":[{"against":false,"fact":"Houston Texans is 3-6 but has scored 233 and allowed 219, which usually goes with about 4.8 wins in 9 games.","key":"hidden_gem","leanPct":55.8,"leans":"Houston Texans","live":"3-2","name":"Better than its record","pct":55.8,"record":"63-50","says":"back","team":"Houston Texans","unit":"ATS","weight":1},{"against":false,"fact":"Indianapolis Colts beat Miami Dolphins 24-22 last game despite 13 penalties for 83 yards to their 3 for 30.","key":"beat_refs","leanPct":56.6,"leans":"Indianapolis Colts","live":"7-6","name":"Beat the refs too","pct":56.6,"record":"141-108","says":"back","team":"Indianapolis Colts","unit":"ATS","weight":1}],"time":"8:15 PM ET"}
   ]
 }
