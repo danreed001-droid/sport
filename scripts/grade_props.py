@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Grade your player prop bets (data/mypicks/<date>.json "props").
+"""Grade your player and team prop bets (data/mypicks/<date>.json "props").
+
+Team props ("kind": "team") read the team's number from the game's score, its
+periods or the team box score (lib/props.py TEAM_STATS, `team_value`).
 
 Each prop entry carries the ESPN event id, the player's ESPN athlete id (or
 just the name, matched in the box score), the stat (lib/props.py STATS, per
@@ -35,6 +38,17 @@ def player_row(session, sport, eid, pid, name):
     return True, (hit[0] if len(hit) == 1 else None)
 
 
+def grade(p, act):
+    """Fill actual/result/profit; "void" when the number isn't there (didn't play)."""
+    if act is None:
+        p.update(result="void", profit=0.0, actual=None)
+        return
+    won = (act > p["line"]) if p["side"] == "over" else (act < p["line"])
+    odds = p.get("odds") if isinstance(p.get("odds"), (int, float)) else -110
+    p.update(actual=act, result="P" if act == p["line"] else ("W" if won else "L"),
+             profit=0.0 if act == p["line"] else round(payout(odds, won), 2))
+
+
 def main():
     session = espn.make_session()
     for name in sorted(os.listdir(ROOT)):
@@ -47,6 +61,18 @@ def main():
         for key, p in (doc.get("props") or {}).items():
             if p.get("result"):
                 continue
+            if p.get("kind") == "team":
+                try:
+                    final, act = props.team_value(session, p.get("sport", "nba"), p["eventId"], p.get("teamSide"), p["stat"])
+                except Exception as exc:  # noqa: BLE001
+                    print(f"{name} {key}: ESPN unreachable ({exc.__class__.__name__}); try next run")
+                    continue
+                if not final:
+                    continue
+                grade(p, act)
+                changed = True
+                print(f"{name}: {p['player']} {p['side']} {p['line']:g} {p['stat']} -> {p.get('actual')} {p['result']}")
+                continue
             try:
                 final, row = player_row(session, p.get("sport", "nba"), p["eventId"], p.get("playerId"), p.get("player"))
             except Exception as exc:  # noqa: BLE001
@@ -55,13 +81,7 @@ def main():
             if not final:
                 continue
             act = props.stat_value(row, p.get("sport", "nba"), p["stat"]) if row is not None else None
-            if act is None:
-                p.update(result="void", profit=0.0, actual=None)
-            else:
-                won = (act > p["line"]) if p["side"] == "over" else (act < p["line"])
-                odds = p.get("odds") if isinstance(p.get("odds"), (int, float)) else -110
-                p.update(actual=act, result="P" if act == p["line"] else ("W" if won else "L"),
-                         profit=0.0 if act == p["line"] else round(payout(odds, won), 2))
+            grade(p, act)
             changed = True
             print(f"{name}: {p['player']} {p['side']} {p['line']:g} {p['stat']} -> {p.get('actual')} {p['result']}")
         if changed:

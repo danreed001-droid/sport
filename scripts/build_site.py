@@ -380,16 +380,23 @@ def load_mypicks():
 
 
 def prop_log(mypicks):
-    """Every player prop of yours, for the pick log (kept out of every record)."""
+    """Every prop of yours (player and team) as plays ("w": "myprop"): they count
+    in your record like your over/unders (tl line, tr result, tp profit; a void
+    prop has no result)."""
     out = []
     for date_str, doc in sorted(mypicks.items()):
         for p in (doc.get("props") or {}).values():
-            sd = props_lib.stat_def(p.get("sport", "nba"), p.get("stat"))
+            sd = props_lib.any_stat_def(p.get("sport", "nba"), p.get("stat"))
             res = p.get("result")
-            out.append({"d": date_str, "s": p.get("sport", "nba"), "g": f"{p.get('away')} @ {p.get('home')}",
-                        "k": f"{p.get('player')} {str(p.get('side')).title()} {p.get('line'):g} {sd[2] if sd else p.get('stat')}",
-                        "o": p.get("odds"), "r": res, "u": p.get("profit"), "act": p.get("actual"),
-                        "why": p.get("reason"), "pd": not res})
+            play = {"d": date_str, "s": p.get("sport", "nba"), "w": "myprop", "g": f"{p.get('away')} @ {p.get('home')}",
+                    "k": f"{p.get('player')} {str(p.get('side')).title()} {p.get('line'):g} {sd[2] if sd else p.get('stat')}",
+                    "tl": p.get("line"), "o": p.get("odds"), "r": res, "act": p.get("actual"), "why": p.get("reason"),
+                    "team": 1 if p.get("kind") == "team" else 0}
+            if res in ("W", "L", "P"):
+                play.update({"tr": res, "tp": p.get("profit")})
+            elif not res:
+                play["pd"] = 1
+            out.append(play)
     return out
 
 
@@ -706,13 +713,13 @@ def build():
         "slate": slate,
         "myPicks": committed,
         "myTotals": my_totals,
-        "propLog": prop_log(mypicks),
         "myProps": mypicks.get(slate_date, {}).get("props", {}),
         "rosters": prop_rosters(slate),
         "propStats": {k: [[x[0], x[1], x[2]] for x in v] for k, v in props_lib.STATS.items()},
+        "teamPropStats": {k: [[x[0], x[1], x[2]] for x in v] for k, v in props_lib.TEAM_STATS.items()},
         "myScores": mypicks.get(slate_date, {}).get("scores", {}),
         "scoreboard": totals,
-        "plays": sorted(plays, key=lambda p: p["d"]),
+        "plays": sorted(plays + prop_log(mypicks), key=lambda p: p["d"]),
         "sportLabels": {k: cfg["label"] for k, cfg in sports.SPORTS.items()},
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,

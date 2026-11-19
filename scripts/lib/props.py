@@ -144,3 +144,109 @@ def stat_value(row, sport, key):
     if not found and sport in ("nfl", "cfb", "soccer", "epl", "mlb") and row:
         return 0.0   # played, just no line in that table (e.g. a WR with no rushes)
     return tot if found else None
+
+
+# Team props: one team's number in the game, over/under a line.
+# TEAM_STATS[sport] = [(key, label, short, spec)]; spec is ("score",) the final
+# score (overtime in), ("periods", first, last) points in those periods (0-based,
+# last None = to the end, overtime in), ("box", name) a team box-score stat (the
+# made part of "6-25"), ("opp", name) the opponent's box stat (sacks: the
+# sacks the other side took), ("box+", [names]) a sum, ("mlb", group, name).
+_BB = [("team_points", "Team points", "team pts", ("score",)),
+       ("team_h1", "1st-half team points", "1H team pts", ("periods", 0, 1)),
+       ("team_h2", "2nd-half team points (OT in)", "2H team pts", ("periods", 2, None)),
+       ("team_q1", "1st-quarter team points", "1Q team pts", ("periods", 0, 0)),
+       ("team_threes", "Team 3-pointers made", "team 3PM", ("box", "threePointFieldGoalsMade-threePointFieldGoalsAttempted")),
+       ("team_rebounds", "Team rebounds", "team reb", ("box", "totalRebounds")),
+       ("team_assists", "Team assists", "team ast", ("box", "assists")),
+       ("team_turnovers", "Team turnovers", "team TO", ("box", "totalTurnovers")),
+       ("team_steals", "Team steals", "team stl", ("box", "steals")),
+       ("team_blocks", "Team blocks", "team blk", ("box", "blocks"))]
+_NCAAB = [s for s in _BB if s[0] not in ("team_q1", "team_h1", "team_h2", "team_turnovers")] + [
+    ("team_h1", "1st-half team points", "1H team pts", ("periods", 0, 0)),
+    ("team_h2", "2nd-half team points (OT in)", "2H team pts", ("periods", 1, None)),
+    ("team_turnovers", "Team turnovers", "team TO", ("box", "turnovers"))]
+_FB = [("team_points", "Team points", "team pts", ("score",)),
+       ("team_h1", "1st-half team points", "1H team pts", ("periods", 0, 1)),
+       ("team_h2", "2nd-half team points (OT in)", "2H team pts", ("periods", 2, None)),
+       ("team_q1", "1st-quarter team points", "1Q team pts", ("periods", 0, 0)),
+       ("team_total_yds", "Team total yards", "team yds", ("box", "totalYards")),
+       ("team_rush_yds", "Team rushing yards", "team rush yds", ("box", "rushingYards")),
+       ("team_pass_yds", "Team passing yards", "team pass yds", ("box", "netPassingYards")),
+       ("team_first_downs", "Team first downs", "team 1st downs", ("box", "firstDowns")),
+       ("team_turnovers", "Team turnovers", "team TO", ("box", "turnovers")),
+       ("team_sacks", "Team sacks (by its defense)", "team sacks", ("opp", "sacksYardsLost"))]
+TEAM_STATS = {
+    "nba": _BB, "ncaab": _NCAAB, "nfl": _FB, "cfb": _FB,
+    "mlb": [("team_runs", "Team runs", "team runs", ("score",)),
+            ("team_f5", "Team runs, first 5 innings", "F5 team runs", ("periods", 0, 4)),
+            ("team_hits", "Team hits", "team hits", ("mlb", "batting", "hits")),
+            ("team_hr", "Team home runs", "team HR", ("mlb", "batting", "homeRuns")),
+            ("team_pitcher_ks", "Team strikeouts (its pitchers)", "team pitcher K", ("mlb", "pitching", "strikeouts"))],
+    "soccer": [("team_goals", "Team goals", "team goals", ("score",)),
+               ("team_h1_goals", "1st-half team goals", "1H team goals", ("periods", 0, 0)),
+               ("team_corners", "Team corners", "team corners", ("box", "wonCorners")),
+               ("team_shots", "Team shots", "team shots", ("box", "totalShots")),
+               ("team_sot", "Team shots on target", "team SOT", ("box", "shotsOnTarget")),
+               ("team_cards", "Team cards (yellow + red)", "team cards", ("box+", ["yellowCards", "redCards"]))],
+}
+TEAM_STATS["epl"] = TEAM_STATS["soccer"]
+
+
+def team_stat_def(sport, key):
+    return next((s for s in TEAM_STATS.get(sport, []) if s[0] == key), None)
+
+
+def any_stat_def(sport, key):
+    """A player or team stat's (key, label, short, ...) for display."""
+    return stat_def(sport, key) or team_stat_def(sport, key)
+
+
+def _first(v):
+    try:
+        return float(re.split(r"[/-]", str(v))[0])
+    except (TypeError, ValueError):
+        return None
+
+
+def team_value(session, sport, eid, side, key):
+    """(final?, the team's number for a team-prop stat or None). side: "home"/"away"."""
+    d = team_stat_def(sport, key)
+    base = f"https://site.api.espn.com/apis/site/v2/sports/{espn_path(sport)}/summary?event={eid}"
+    summ = session.get(base, timeout=25).json()
+    comp = ((summ.get("header") or {}).get("competitions") or [{}])[0]
+    if not ((comp.get("status") or {}).get("type") or {}).get("completed"):
+        return False, None
+    if not d:
+        return True, None
+    me = next((c for c in comp.get("competitors") or [] if c.get("homeAway") == side), None)
+    if me is None:
+        return True, None
+    spec = d[3]
+    if spec[0] == "score":
+        return True, _first(me.get("score"))
+    if spec[0] == "periods":
+        ls = [_first(x.get("displayValue", x.get("value"))) for x in me.get("linescores") or []]
+        last = spec[2] if spec[2] is not None else len(ls) - 1
+        if len(ls) <= last or any(v is None for v in ls[spec[1]:last + 1]):
+            return True, None
+        return True, sum(ls[spec[1]:last + 1])
+    if sport in ("soccer", "epl") and not (summ.get("boxscore") or {}).get("teams"):
+        slug = ((summ.get("header") or {}).get("league") or {}).get("slug")
+        if slug:
+            summ = session.get(f"https://site.api.espn.com/apis/site/v2/sports/soccer/{slug}/summary?event={eid}", timeout=25).json()
+    teams = (summ.get("boxscore") or {}).get("teams") or []
+    want = side if spec[0] != "opp" else ("home" if side == "away" else "away")
+    tid = str(((next((c for c in comp.get("competitors") or [] if c.get("homeAway") == want), {}) or {}).get("team") or {}).get("id"))
+    t = next((x for x in teams if str((x.get("team") or {}).get("id")) == tid or x.get("homeAway") == want), None)
+    if t is None:
+        return True, None
+    stats = t.get("statistics") or []
+    if spec[0] == "mlb":
+        grp = next((g for g in stats if g.get("name") == spec[1]), {})
+        return True, _first(next((x.get("displayValue") for x in grp.get("stats") or [] if x.get("name") == spec[2]), None))
+    flat = {x.get("name"): x.get("displayValue") for x in stats}
+    if spec[0] == "box+":
+        vals = [_first(flat.get(n)) for n in spec[1]]
+        return True, (sum(v for v in vals if v is not None) if any(v is not None for v in vals) else None)
+    return True, _first(flat.get(spec[1]))

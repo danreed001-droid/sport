@@ -669,6 +669,7 @@ footer b{color:var(--ink);}
   // NBA Totals picks show in the pick log only (they are over/under bets, not sides).
   WHO_BY_KEY.totals = {k:'totals', label:'NBA Totals', short:'NBA Totals', c:'var(--totals)'};
   WHO_BY_KEY.mytotal = {k:'mytotal', label:'Your O/U', short:'You (O/U)', c:'var(--mine)'};
+  WHO_BY_KEY.myprop = {k:'myprop', label:'Your props', short:'You (props)', c:'var(--mine)'};
   var DASH = {sports:[], market:'ats', range:'all', from:null, to:null, mlCutoff:false};
   try{ var ds = JSON.parse(localStorage.getItem('picksheet.dash')||'null'); if(ds) DASH = Object.assign(DASH, ds); }catch(e){}
   DASH.market = 'ats';  // always open on Against the spread; a Moneyline switch lasts until the page reloads
@@ -759,16 +760,18 @@ footer b{color:var(--ink);}
   // NBA Totals count in NBA Stats and your O/U picks in You; a totals play counts the
   // same in the spread and moneyline views (it has no spread or moneyline).
   var TOTALS_OF = {stats:'totals', mine:'mytotal', nflstats:'nfltotals', ncaabstats:'ncaabtotals'};
-  function belongs(p, who){ return p.w === who || p.w === TOTALS_OF[who]; }
+  // Your player and team props (w 'myprop') count in You too, like your over/unders.
+  function belongs(p, who){ return p.w === who || p.w === TOTALS_OF[who] || (who === 'mine' && p.w === 'myprop'); }
   function outcome(p){
-    if(p.w==='totals' || p.w==='mytotal' || p.w==='nfltotals' || p.w==='ncaabtotals') return {r:p.tr, v:p.tp};
+    if(p.w==='totals' || p.w==='mytotal' || p.w==='nfltotals' || p.w==='ncaabtotals' || p.w==='myprop') return {r:p.tr, v:p.tp};
     return DASH.market==='ats' ? {r:p.a, v:p.ap} : {r:p.m, v:p.mp};
   }
   function summarize(list, who){
-    var a = {w:0,l:0,p:0,profit:0,priced:0,dogs:0,late:0,tot:{n:0,w:0,l:0,p:0,v:0}};
+    var a = {w:0,l:0,p:0,profit:0,priced:0,dogs:0,late:0,tot:{n:0,w:0,l:0,p:0,v:0},prop:{n:0,w:0,l:0,p:0,v:0}};
     list.forEach(function(p){
       if(!belongs(p, who)) return;
-      var isTot = p.w !== who;
+      var isProp = p.w === 'myprop', isTot = p.w !== who && !isProp;
+      if(isProp){ var po = outcome(p); if(po.r){ a.prop.n++; if(po.r==='W') a.prop.w++; else if(po.r==='L') a.prop.l++; else a.prop.p++; a.prop.v += num(po.v) ? po.v : 0; } }
       if(!isTot && DASH.market==='ml' && DASH.mlCutoff && p.x){ a.dogs++; return; }
       var o = outcome(p);
       if(o.r==='W') a.w++; else if(o.r==='L') a.l++; else if(o.r==='P') a.p++;
@@ -978,13 +981,13 @@ footer b{color:var(--ink);}
 
   var LOG = {result:'all', shown:50, mode:'day', day:null, from:null, to:null};
   function logSportPlays(){ return DATA.plays.filter(function(p){ return sportOn(p.s); }); }
-  function logDays(){ var seen = {}; logSportPlays().forEach(function(p){ seen[p.d] = 1; }); (DATA.propLog||[]).forEach(function(p){ if(sportOn(p.s)) seen[p.d] = 1; }); return Object.keys(seen).sort(); }
+  function logDays(){ var seen = {}; logSportPlays().forEach(function(p){ seen[p.d] = 1; }); return Object.keys(seen).sort(); }
   function logHtml(){
     function seg(name, opts){
       return '<span class="segctl" role="group" aria-label="'+name+'">'+opts.map(function(o){ return '<button type="button" data-lf="'+name+'" data-v="'+o[0]+'" aria-pressed="'+(LOG[name]===o[0])+'">'+o[1]+'</button>'; }).join('')+'</span>';
     }
     return '<section id="picklog"><div class="eyebrow">Pick log</div><h2 class="sec-h">Every pick, win or lose</h2>'
-      + '<p class="sec-p">Each model\'s pick and yours, graded against the spread and on the moneyline at $100 a bet; NBA Totals picks are graded on the over/under at $100, -110, shown in the ATS columns and kept out of the ATS total. Pick a day or a date range; the league and model filters above apply too (NBA Totals picks show with NBA Stats, your over/unders and player props with You; props are kept out of every total but their own).</p>'
+      + '<p class="sec-p">Each model\'s pick and yours, graded against the spread and on the moneyline at $100 a bet; NBA Totals picks are graded on the over/under at $100, -110, shown in the ATS columns and kept out of the ATS total. Pick a day or a date range; the league and model filters above apply too (NBA Totals picks show with NBA Stats, your over/unders and props with You; props count in your record like your over/unders).</p>'
       + '<div class="filters">'
         + '<span class="fgroup"><span class="flbl">Dates</span>'+seg('mode',[['day','Day'],['range','Range']])
           + '<span class="daterange" id="lday"><button type="button" class="stepbtn" id="lprev" aria-label="Previous day with picks">‹</button><label for="ldate" class="sr">Day</label><input type="date" id="ldate"><button type="button" class="stepbtn" id="lnext" aria-label="Next day with picks">›</button></span>'
@@ -1020,12 +1023,12 @@ footer b{color:var(--ink);}
     var res = p.pd ? '<span class="res pend">Pending</span>' : p.r==='void' ? '<span class="muted">Void (didn\'t play)</span>' : resCell(p.r);
     return '<tr>'
       + '<td class="c-date">'+fmtDay(p.d)+'</td><td>'+esc((DATA.sportLabels[p.s]||p.s).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB'))+'</td>'
-      + '<td><span class="who"><i style="background:var(--mine)"></i>Your prop</span></td>'
+      + '<td><span class="who"><i style="background:var(--mine)"></i>'+(p.team ? 'Your team prop' : 'Your prop')+'</span></td>'
       + '<td class="gm">'+esc(p.g)+'</td>'
       + '<td><b>'+esc(p.k)+'</b>'+(num(p.act) ? '<span class="muted tier">he had '+esc(String(p.act))+'</span>' : '')+(p.why ? '<span class="muted tier">why: '+esc(p.why)+'</span>' : '')+'</td>'
       + '<td class="mono" title="Odds">'+(num(p.o) ? sgn(p.o) : '-110')+'</td>'
       + '<td>'+res+'</td>'
-      + '<td class="mono '+(num(p.u)?cls(p.u):'flat')+'">'+(num(p.u) ? money(p.u) : '—')+'</td>'
+      + '<td class="mono '+(num(p.tp)?cls(p.tp):'flat')+'">'+(num(p.tp) ? money(p.tp) : '—')+'</td>'
       + '<td class="mono">—</td><td><span class="muted">—</span></td><td class="mono flat">—</td></tr>';
   }
   function renderLog(){
@@ -1045,14 +1048,10 @@ footer b{color:var(--ink);}
     var rows = logSportPlays().filter(function(p){ return p.d >= lo && p.d <= hi; }).filter(function(p){
       return playModelOn(p) && (LOG.result==='all' || (LOG.result==='pending' ? p.pd : !p.pd));
     });
-    // Your player props (DATA.propLog) show with You; they stay out of every total but their own.
-    if(modelOn('mine')) rows = rows.concat((DATA.propLog||[]).filter(function(p){
-      return sportOn(p.s) && p.d >= lo && p.d <= hi && (LOG.result==='all' || (LOG.result==='pending' ? p.pd : !p.pd));
-    }).map(function(p){ var q = Object.assign({}, p); q.w = 'myprop'; return q; }));
     rows = rows.slice().sort(function(a,b){ return a.d<b.d ? 1 : a.d>b.d ? -1 : (a.s<b.s ? -1 : a.s>b.s ? 1 : 0); });
     var WL = WHO_BY_KEY, t = {aw:0,al:0,ap:0,a$:0,mw:0,ml:0,m$:0}, tt = {w:0,l:0,p:0,v:0,n:0}, pt = {w:0,l:0,p:0,v:0,n:0};
     rows.forEach(function(p){
-      if(p.w==='myprop'){ pt.n++; if(p.r==='W') pt.w++; else if(p.r==='L') pt.l++; else if(p.r==='P') pt.p++; if(num(p.u)) pt.v += p.u; return; }
+      if(p.w==='myprop'){ pt.n++; if(p.tr==='W') pt.w++; else if(p.tr==='L') pt.l++; else if(p.tr==='P') pt.p++; if(num(p.tp)) pt.v += p.tp; return; }
       if(p.w==='totals' || p.w==='mytotal'){ tt.n++; if(p.tr==='W') tt.w++; else if(p.tr==='L') tt.l++; else if(p.tr==='P') tt.p++; if(num(p.tp)) tt.v += p.tp; return; }
       if(p.a==='W') t.aw++; else if(p.a==='L') t.al++; else if(p.a==='P') t.ap++;
       if(num(p.ap)) t.a$ += p.ap;
@@ -1088,7 +1087,7 @@ footer b{color:var(--ink);}
     }).join('');
     var tbl = document.getElementById('logtbl'); tbl.classList.toggle('dayview', LOG.mode==='day');
     var graded = rows.some(function(p){ return !p.pd && p.w!=='totals' && p.w!=='mytotal' && p.w!=='myprop'; });
-    var foot = rows.length ? '<tfoot><tr><td class="c-date"></td><td colspan="5">Total · '+rows.length+' pick'+(rows.length===1?'':'s')+(rows.length>LOG.shown?' (all, not just the rows shown)':'')+(tt.n ? ' · totals '+(tt.w+tt.l+tt.p ? tt.w+'-'+tt.l+(tt.p?'-'+tt.p:'')+' '+money(tt.v) : 'pending')+' (not in the ATS total)' : '')+(pt.n ? ' · player props '+(pt.w+pt.l+pt.p ? pt.w+'-'+pt.l+(pt.p?'-'+pt.p:'')+' '+money(pt.v) : 'pending')+' (kept separate)' : '')+'</td>'
+    var foot = rows.length ? '<tfoot><tr><td class="c-date"></td><td colspan="5">Total · '+rows.length+' pick'+(rows.length===1?'':'s')+(rows.length>LOG.shown?' (all, not just the rows shown)':'')+(tt.n ? ' · totals '+(tt.w+tt.l+tt.p ? tt.w+'-'+tt.l+(tt.p?'-'+tt.p:'')+' '+money(tt.v) : 'pending')+' (not in the ATS total)' : '')+(pt.n ? ' · props '+(pt.w+pt.l+pt.p ? pt.w+'-'+pt.l+(pt.p?'-'+pt.p:'')+' '+money(pt.v) : 'pending')+' (not in the ATS total)' : '')+'</td>'
       + '<td class="mono">'+(t.aw+t.al+t.ap ? t.aw+'-'+t.al+(t.ap?'-'+t.ap:'') : '—')+'</td><td class="mono '+(graded?cls(t.a$):'flat')+'">'+(graded?money(t.a$):'—')+'</td><td></td>'
       + '<td class="mono">'+(t.mw+t.ml ? t.mw+'-'+t.ml : '—')+'</td><td class="mono '+(graded?cls(t.m$):'flat')+'">'+(graded?money(t.m$):'—')+'</td></tr></tfoot>' : '';
     document.getElementById('logtbl').innerHTML = '<thead><tr><th class="c-date">Date</th><th>Sport</th><th>Model</th><th>Game</th><th>Pick</th><th>Spread</th><th>ATS</th><th>ATS $</th><th>ML odds</th><th>ML</th><th>ML $</th></tr></thead>'
@@ -1148,7 +1147,8 @@ footer b{color:var(--ink);}
       return '<div class="kpi"><div class="kpi-h"><i class="key" style="background:'+w.c+'"></i><b>'+w.label+'</b><span>'+w.role+'</span></div>'
         + '<div class="kpi-main"><div class="kpi-fig '+(a.priced?cls(a.profit):'flat')+'">'+(a.priced?money(a.profit):'—')+'<small>profit '+mk+'</small></div>'+sparkSvg(ser.series[i].prof, w.c)+'</div>'
         + '<div class="kpi-stats"><div>Record<b>'+recText(a)+'</b></div><div>Win %<b>'+(n?pct(a.w,n):'—')+'</b></div><div>ROI<b class="'+(r==null?'flat':cls(r))+'">'+(r==null?'—':(r>0?'+':'')+r+'%')+'</b></div></div>'
-        + note + (t.n ? '<div class="kpi-note">Includes '+t.n+' over/under pick'+(t.n===1?'':'s')+' ('+t.w+'-'+t.l+(t.p?'-'+t.p:'')+', '+money(t.v)+'); they count in both the spread and moneyline views, in the charts and the tables too.</div>' : '') + '</div>';
+        + note + (t.n ? '<div class="kpi-note">Includes '+t.n+' over/under pick'+(t.n===1?'':'s')+' ('+t.w+'-'+t.l+(t.p?'-'+t.p:'')+', '+money(t.v)+'); they count in both the spread and moneyline views, in the charts and the tables too.</div>' : '')
+        + (a.prop && a.prop.n ? '<div class="kpi-note">Includes '+a.prop.n+' prop'+(a.prop.n===1?'':'s')+' (player &amp; team: '+a.prop.w+'-'+a.prop.l+(a.prop.p?'-'+a.prop.p:'')+', '+money(a.prop.v)+'), counted like your over/unders.</div>' : '') + '</div>';
     }).join('');
 
     renderAgree(list, mk);
@@ -1887,7 +1887,8 @@ footer b{color:var(--ink);}
   }
   // ---- your player props (NBA): pick a player, stat, side, line, odds, and why ----
   function propStats(sport){ return (DATA.propStats||{})[sport] || []; }
-  function propStat(k, sport){ var s = propStats(sport).filter(function(x){ return x[0]===k; })[0]; return s ? s[2] : k; }
+  function teamPropStats(sport){ return (DATA.teamPropStats||{})[sport] || []; }
+  function propStat(k, sport){ var s = propStats(sport).concat(teamPropStats(sport)).filter(function(x){ return x[0]===k; })[0]; return s ? s[2] : k; }
   function propsOf(id){
     var g = GAMES[id].game;
     return Object.keys(DATA.myProps||{}).map(function(k){ return DATA.myProps[k]; })
@@ -1931,8 +1932,28 @@ footer b{color:var(--ink);}
       + '<label>Odds<input class="pf-odds" type="number" step="1" inputmode="numeric" placeholder="-110"></label>'
       + '<label class="pf-wide">Your reason<textarea class="pf-reason" rows="2" maxlength="600" placeholder="Why you like it (optional)"></textarea></label>'
       + '<button type="button" class="pf-add" data-id="'+esc(id)+'">Add prop</button><span class="pf-msg" role="status"></span></div></details>';
+    // Team props: one team's number (points, a half, a quarter, yards, corners...) over or under a line.
+    if(!g.final && teamPropStats(e.sport).length) form += '<details class="propadd"><summary>＋ Add a team prop</summary><div class="propform" id="tf-'+esc(id)+'">'
+      + '<label>Team<select class="tf-team"><option value="away">'+esc(g.away)+'</option><option value="home">'+esc(g.home)+'</option></select></label>'
+      + '<label>Stat<select class="tf-stat">'+teamPropStats(e.sport).map(function(x){ return '<option value="'+x[0]+'">'+x[1]+'</option>'; }).join('')+'</select></label>'
+      + '<span class="pf-side" role="group" aria-label="Over or under"><button type="button" class="pf-ou" data-ou="over" aria-pressed="false">Over</button><button type="button" class="pf-ou" data-ou="under" aria-pressed="false">Under</button></span>'
+      + '<label>Line<input class="pf-line" type="number" step="0.5" min="0" inputmode="decimal" placeholder="112.5"></label>'
+      + '<label>Odds<input class="pf-odds" type="number" step="1" inputmode="numeric" placeholder="-110"></label>'
+      + '<label class="pf-wide">Your reason<textarea class="pf-reason" rows="2" maxlength="600" placeholder="Why you like it (optional)"></textarea></label>'
+      + '<button type="button" class="pf-add tf-add" data-id="'+esc(id)+'">Add team prop</button><span class="pf-msg" role="status"></span></div></details>';
     if(!rows && g.final) return '';
-    return '<div class="pickhead"><span class="lbl">Your player props</span></div>' + rows + form;
+    return '<div class="pickhead"><span class="lbl">Your props (player &amp; team)</span></div>' + rows + form;
+  }
+  function addTeamProp(id){
+    var f = document.getElementById('tf-'+id); if(!f) return;
+    var ou = f.querySelector('.pf-ou[aria-pressed="true"]'), line = parseFloat(f.querySelector('.pf-line').value), odds = parseInt(f.querySelector('.pf-odds').value, 10);
+    var msg = f.querySelector('.pf-msg'), g = GAMES[id].game, side = f.querySelector('.tf-team').value, stat = f.querySelector('.tf-stat').value;
+    if(!ou){ msg.textContent = 'Choose Over or Under.'; return; }
+    if(!(line >= 0) || isNaN(line) || Math.round(line*2) !== line*2){ msg.textContent = 'Enter the line in half points (e.g. 112.5).'; return; }
+    if(f.querySelector('.pf-odds').value && !(odds <= -100 || odds >= 100)){ msg.textContent = 'Odds look off: use American odds like -115 or +100.'; return; }
+    pendingProps[id+'|t:'+side+'|'+stat] = {gameId:id, sport:GAMES[id].sport, playerId:'t:'+side, player:g[side], team:g[side], stat:stat,
+      side:ou.getAttribute('data-ou'), line:line, odds:(num(odds) && (odds<=-100||odds>=100)) ? odds : null, reason:f.querySelector('.pf-reason').value.trim()};
+    savePending(); renderPickRow(id); renderSubmitBar();
   }
   function addProp(id){
     var f = document.getElementById('pf-'+id); if(!f) return;
@@ -2081,7 +2102,7 @@ footer b{color:var(--ink);}
     var po = e.target.closest('.pf-ou');
     if(po){ po.parentNode.querySelectorAll('.pf-ou').forEach(function(x){ x.setAttribute('aria-pressed', String(x===po)); }); }
     var pa = e.target.closest('.pf-add');
-    if(pa) addProp(pa.getAttribute('data-id'));
+    if(pa) (pa.classList.contains('tf-add') ? addTeamProp : addProp)(pa.getAttribute('data-id'));
     var px = e.target.closest('.propx');
     if(px){
       var pk = px.getAttribute('data-k'), pgid = pk.split('|')[0];

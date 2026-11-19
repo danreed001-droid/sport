@@ -646,10 +646,19 @@ keyed `<sport>-espn-<event id>|<athlete id or n:name>|<stat>`, with the reason.
 box score once final (`lib/props.flatten_box`/`stat_value`; "void" if he didn't
 play). `lib/results.py` lists them (kind "prop", with the reason) and the
 results page has a Player props tile and type filter, kept out of the
-spread/over-under units. The pick sheet's pick log lists them too (`propLog` from
-`prop_log` in build_site.py, `propLogRow`; shown with You, "Your prop", its own
-W-L in the footer, kept out of every other total), since a past day's game card
-is gone from the page. A prop entered by hand is tagged "entered by hand*" on
+spread/over-under units. Since 2026-11-19 props count in your record like your
+over/unders (the user's call): `prop_log` in build_site.py adds them to
+`DATA.plays` as `w: "myprop"` (tl/tr/tp; a void prop has no result), `belongs`
+puts them in You, the You card notes how many, and the pick log shows them
+(`propLogRow`, "Your prop" / "Your team prop"). Team props (2026-11-19): one
+team's number over/under a line -- points, 1st/2nd half, 1st quarter, 3PM,
+rebounds..., football yards/first downs/turnovers/sacks, MLB runs/first 5/hits/
+HR/pitcher Ks, soccer goals/1H goals/corners/shots/SOT/cards (`TEAM_STATS` and
+`team_value` in lib/props.py: the score, its periods, or the team box score;
+soccer's box comes from the league's own summary). The card's "Add a team
+prop" form sends `playerId: "t:home"/"t:away"`; intake saves `kind: "team"`,
+`teamSide`, keyed `<sport>-espn-<eid>|t:<side>|<stat>`; grade_props.py grades
+them. A prop entered by hand is tagged "entered by hand*" on
 the results page (not "corrected*"); the CSV type is "player prop". First prop (entered by hand before the form existed):
 Daniss Jenkins under 17 points +100, 2026-11-17 Pistons @ Spurs.
 

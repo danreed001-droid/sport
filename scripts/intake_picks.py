@@ -27,6 +27,7 @@ POINTS = {"A": (1, 0), "a": (0.5, 0), "N": (0, 0), "h": (0, 0.5), "H": (0, 1)}
 from lib import props as props_lib  # noqa: E402
 
 PROP_STATS = {sp: {k: short for k, _label, short, _keys in v} for sp, v in props_lib.STATS.items()}
+TEAM_PROP_STATS = {sp: {k: short for k, _label, short, _spec in v} for sp, v in props_lib.TEAM_STATS.items()}
 
 
 def _saved_rosters(sport, date_str):
@@ -244,6 +245,28 @@ def process(issue):
             rejected.append(f"{label} — already final, props are locked")
             continue
         stat, side, line, odds = pe.get("stat"), pe.get("side"), pe.get("line"), pe.get("odds")
+        if str(pe.get("playerId") or "").startswith("t:"):
+            # Team prop: one team's number in the game (lib/props.py TEAM_STATS).
+            tside = str(pe["playerId"])[2:]
+            if tside not in ("home", "away") or stat not in TEAM_PROP_STATS.get(sport, {}) or side not in ("over", "under") \
+                    or not isinstance(line, (int, float)) or not float(line * 2).is_integer() or not 0 <= line < 2000:
+                rejected.append(f"{label} — team prop isn't complete (team, stat, over/under, a line in half points)")
+                continue
+            if not (isinstance(odds, (int, float)) and (odds <= -100 or odds >= 100) and abs(odds) <= 5000):
+                odds = None
+            team = g[tside]
+            eid, _pid, _n = prop_event_and_player(sport, date_str, g, "t", team, team)
+            if eid is None:
+                rejected.append(f"{label} — couldn't find the game on ESPN to grade the prop; try again")
+                continue
+            key = f"{sport}-espn-{eid}|t:{tside}|{stat}"
+            current["props"][key] = {"sport": sport, "kind": "team", "eventId": eid, "gameId": gid, "away": g["away"], "home": g["home"],
+                                     "time": g.get("time"), "player": team, "playerId": f"t:{tside}", "teamSide": tside,
+                                     "team": team, "stat": stat, "line": line, "side": side,
+                                     "odds": odds, "reason": str(pe.get("reason") or "").strip()[:600] or None,
+                                     "submittedAt": now, "issue": issue.get("number")}
+            saved.append(f"{team} {side.title()} {line:g} {TEAM_PROP_STATS[sport][stat]}{'' if odds is None else f' ({odds:+g})'} ({label})")
+            continue
         pid, player = str(pe.get("playerId") or ""), str(pe.get("player") or "").strip()[:60]
         if stat not in PROP_STATS[sport] or side not in ("over", "under") or not isinstance(line, (int, float)) \
                 or not float(line * 2).is_integer() or not 0 < line < 1000 or (pid and not pid.isdigit()) or not player:
