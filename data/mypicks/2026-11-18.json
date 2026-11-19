@@ -1,0 +1,28 @@
+{
+  "date": "2026-11-18",
+  "picks": {},
+  "scores": {},
+  "totals": {},
+  "props": {
+    "nba-espn-401910007|t:away|team_points": {
+      "sport": "nba",
+      "kind": "team",
+      "eventId": "401910007",
+      "gameId": "nba-2026-11-18-memphis-grizzlies-cleveland-cavaliers-7-00-pm-et",
+      "away": "Memphis Grizzlies",
+      "home": "Cleveland Cavaliers",
+      "time": "7:00 PM ET",
+      "player": "Memphis Grizzlies",
+      "playerId": "t:away",
+      "teamSide": "away",
+      "team": "Memphis Grizzlies",
+      "stat": "team_points",
+      "line": 116.5,
+      "side": "under",
+      "odds": null,
+      "reason": "Total trended up..almost stretched like stocks",
+      "submittedAt": "2026-11-19T00:17:58+00:00",
+      "issue": 32
+    }
+  }
+}
