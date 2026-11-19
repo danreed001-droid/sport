@@ -13,6 +13,11 @@ from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BOX = os.path.join(ROOT, "data", "raw", "nfl_player_box.json")
+# College football (archive_college_player_box.py): only games of teams on our
+# CFB slates are saved, so a defense needs 3+ saved games to be ranked; box
+# scores have no targets, so WR/TE usage is catches and targets aren't shown.
+BOXES = {"nfl": BOX, "cfb": os.path.join(ROOT, "data", "raw", "cfb_player_box.json")}
+MIN_TEAM_GAMES = 3
 POS = ("QB", "RB", "WR", "TE")
 # per position: (key, label, value from a box row)
 STATS = {
@@ -39,15 +44,16 @@ def _pos(p):
     return "RB" if p == "FB" else p if p in POS else None
 
 
-def _load():
-    if "box" not in _CACHE:
+def _load(sport="nfl"):
+    path = BOX if sport == "nfl" else BOXES[sport]
+    if ("box", path) not in _CACHE:
         try:
-            with open(BOX, encoding="utf-8") as f:
+            with open(path, encoding="utf-8") as f:
                 box = json.load(f)
         except (OSError, ValueError):
             box = {}
-        _CACHE["box"] = sorted((e["date"], eid, e) for eid, e in box.items() if e.get("players"))
-    return _CACHE["box"]
+        _CACHE[("box", path)] = sorted((e["date"], eid, e) for eid, e in box.items() if e.get("players"))
+    return _CACHE[("box", path)]
 
 
 def _same(a, b):
@@ -56,15 +62,16 @@ def _same(a, b):
 
 
 def _usage(P, r):
-    return r[4] if P == "QB" else (r[8] + r[11]) if P == "RB" else r[14]
+    return r[4] if P == "QB" else (r[8] + r[11]) if P == "RB" else (r[14] or r[11])
 
 
-def for_slate(slate_date, games_today):
+def for_slate(slate_date, games_today, sport="nfl"):
     """{"_league": {pos: {stat: per game}}, "_spec": SPEC,
         game id: {"away": side, "home": side}}; a side is
        {"allows": {pos: {stat: [per game, rank 1 = most allowed]}}, "teams": n,
         "players": [[name, pos, games, {stat: per game}], ...]}."""
-    games = [g for g in _load() if g[0] < slate_date]
+    games = [g for g in _load(sport) if g[0] < slate_date]
+    stats = STATS if sport == "nfl" else {P: [x for x in v if x[0] != "tgt"] for P, v in STATS.items()}
     if not games or not games_today:
         return {}
     allowed = defaultdict(lambda: defaultdict(list))
@@ -77,17 +84,17 @@ def for_slate(slate_date, games_today):
             continue
         for i, team in enumerate(teams):
             opp = teams[1 - i]
-            sums = {P: {k: 0.0 for k, _l, _f in STATS[P]} for P in POS}
+            sums = {P: {k: 0.0 for k, _l, _f in stats[P]} for P in POS}
             for r in e["players"][team]:
                 P = _pos(r[2])
                 if not P:
                     continue
-                for k, _l, f in STATS[P]:
+                for k, _l, f in stats[P]:
                     sums[P][k] += f(r)
-                x = players[team].setdefault(r[0], [r[1], P, 0, 0.0, {k: 0.0 for k, _l, _f in STATS[P]}])
+                x = players[team].setdefault(r[0], [r[1], P, 0, 0.0, {k: 0.0 for k, _l, _f in stats[P]}])
                 x[2] += 1
                 x[3] += _usage(P, r)
-                for k, _l, f in STATS[P]:
+                for k, _l, f in stats[P]:
                     x[4][k] = x[4].get(k, 0.0) + f(r)
                 last_team[r[0]] = team
             for P in POS:
@@ -96,20 +103,25 @@ def for_slate(slate_date, games_today):
             y[0] += sums["QB"]["pyd"]
             y[1] += sum(r[9] for r in e["players"][team])
             y[2] += 1
-    league = {P: {k: round(sum(g[k] for t in allowed for g in allowed[t][P]) / max(1, sum(len(allowed[t][P]) for t in allowed)), 1)
-                  for k, _l, _f in STATS[P]} for P in POS}
-    avg = {t: {P: {k: sum(g[k] for g in allowed[t][P]) / len(allowed[t][P]) for k, _l, _f in STATS[P]} for P in POS if allowed[t][P]}
-           for t in allowed}
+    ranked = [t for t in allowed if len(allowed[t]["QB"]) >= MIN_TEAM_GAMES]
+    league = {P: {k: round(sum(g[k] for t in ranked for g in allowed[t][P]) / max(1, sum(len(allowed[t][P]) for t in ranked)), 1)
+                  for k, _l, _f in stats[P]} for P in POS}
+    avg = {t: {P: {k: sum(g[k] for g in allowed[t][P]) / len(allowed[t][P]) for k, _l, _f in stats[P]} for P in POS if allowed[t][P]}
+           for t in ranked}
     ranks = {}
     for P in POS:
-        for k, _l, _f in STATS[P]:
+        for k, _l, _f in stats[P]:
             for i, t in enumerate(sorted((t for t in avg if P in avg[t]), key=lambda t: -avg[t][P][k])):
                 ranks[(t, P, k)] = i + 1
     cap = {"QB": 1, "RB": 2, "WR": 3, "TE": 1}
 
+    def pick(keys, name):
+        hits = [t for t in keys if t == name] or [t for t in keys if _same(t, name)]
+        return max(hits, key=lambda t: len(allowed[t]["QB"])) if hits else None
+
     def side(name):
-        team = next((t for t in avg if _same(t, name)), None)
-        roster = next((t for t in players if _same(t, name)), None)
+        team = pick(avg, name)
+        roster = pick(players, name)
         out = {"allows": {}, "players": [], "teams": len(avg)}
         if team:
             out["allows"] = {P: {k: [round(v, 1), ranks.get((team, P, k))] for k, v in avg[team][P].items()} for P in POS if P in avg[team]}
@@ -126,8 +138,8 @@ def for_slate(slate_date, games_today):
         return out
 
     def score(off, dfn):
-        o = next((t for t in yds if _same(t, off)), None)
-        d = next((t for t in avg if _same(t, dfn)), None)
+        o = pick(yds, off)
+        d = pick(avg, dfn)
         if not o or not d or yds[o][2] < MIN_GAMES or len(allowed[d]["QB"]) < MIN_GAMES:
             return None
         ps = yds[o][0] / max(1.0, yds[o][0] + yds[o][1])
@@ -141,7 +153,7 @@ def for_slate(slate_date, games_today):
             out[P] = [round(100 * comp, 1), round(100 * share)]
         return {"score": round(100 * total, 1), "pos": out}
 
-    res = {"_league": league, "_spec": SPEC}
+    res = {"_league": league, "_spec": {P: [[k, lab] for k, lab, _f in stats[P]] for P in POS}}
     for gid, away, home in games_today:
         res[gid] = {"away": side(away), "home": side(home),
                     "score": {"away": score(away, home), "home": score(home, away)}}

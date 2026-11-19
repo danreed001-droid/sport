@@ -1367,7 +1367,7 @@ footer b{color:var(--ink);}
   // averages with how tonight's defense treats his position (vs the league).
   // Matchup score (lib/nba_dvp.py / nfl_dvp.py `score`): how soft tonight's
   // defense is to the positions this offense gets its production from, graded A-F.
-  var MM_CUT = {nba: [4, 8], nfl: [10, 20]};
+  var MM_CUT = {nba: [4, 8], nfl: [10, 20], ncaab: [12, 25], cfb: [15, 30]};   // college swings much more (few games, cupcake opponents)
   function mmGrade(sport, v){
     var c = MM_CUT[sport] || [4, 8];
     return v >= c[1] ? ['A','Big edge'] : v >= c[0] ? ['B','Edge'] : v > -c[0] ? ['C','Even'] : v > -c[1] ? ['D','Tough'] : ['F','Very tough'];
@@ -1379,6 +1379,7 @@ footer b{color:var(--ink);}
       return '<span class="mmchip" title="'+esc(teamAbbr(g[sd])+' offense vs '+teamAbbr(g[sd==='away'?'home':'away'])+' defense: '+gr[1]+' ('+mmPct(o.score)+')')+'"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span>'+esc(teamAbbr(g[sd]))+'</span>'; }).join(' ');
   }
   function mmBlock(sport, g, x, POS){
+    var FB = sport === 'nfl' || sport === 'cfb';
     var S = x && x.score; if(!S || (!S.away && !S.home)) return '';
     var row = function(sd){
       var o = S[sd]; if(!o) return '';
@@ -1386,7 +1387,7 @@ footer b{color:var(--ink);}
       var est = sport === 'nba' ? ' · about '+(o.score*0.77 >= 0 ? '+' : '−')+Math.abs(Math.round(o.score*0.77*10)/10)+' pts vs its average' : '';
       var cells = POS.filter(function(P){ return o.pos[P]; }).map(function(P){
         var v = o.pos[P][0], sh = o.pos[P][1], w = Math.min(50, Math.abs(v) / 30 * 50);
-        return '<div title="'+esc(teamAbbr(def)+' gives '+P+'s '+mmPct(v)+' vs an average defense; '+P+'s make '+sh+'% of '+teamAbbr(off)+(sport==='nfl' ? '\'s yards' : '\'s points'))+'"><b>'+P+'</b><div class="pb"><i class="'+(v >= 0 ? 'u' : 'd')+'" style="width:'+w.toFixed(1)+'%"></i></div>'+mmPct(v)+'<small>'+sh+'% of '+(sport==='nfl' ? 'yds' : 'pts')+'</small></div>';
+        return '<div title="'+esc(teamAbbr(def)+' gives '+P+'s '+mmPct(v)+' vs an average defense; '+P+'s make '+sh+'% of '+teamAbbr(off)+(FB ? '\'s yards' : '\'s points'))+'"><b>'+P+'</b><div class="pb"><i class="'+(v >= 0 ? 'u' : 'd')+'" style="width:'+w.toFixed(1)+'%"></i></div>'+mmPct(v)+'<small>'+sh+'% of '+(FB ? 'yds' : 'pts')+'</small></div>';
       }).join('');
       return '<div class="mms-row"><div class="mms-team"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span><div class="mms-t"><b>'+teamBadge(off, true)+' '+esc(teamAbbr(off))+' offense vs '+esc(teamAbbr(def))+' D</b><small>'+gr[1]+' · '+mmPct(o.score)+est+'</small></div></div>'
         + '<div class="mmp" style="--n:'+POS.length+'">'+cells+'</div></div>';
@@ -1395,12 +1396,12 @@ footer b{color:var(--ink);}
     var who = net == null ? '' : Math.abs(net) < 2 ? 'about even' : 'edge '+teamAbbr(net > 0 ? g.home : g.away)+' offense ('+(net > 0 ? mmPct(S.home.score)+' vs '+mmPct(S.away.score) : mmPct(S.away.score)+' vs '+mmPct(S.home.score))+')';
     return '<div class="mms"><div class="dvcap">Matchup score</div>'+row('away')+row('home')
       + (who ? '<div class="mms-net"><b>Mismatch:</b> '+esc(who)+'</div>' : '')
-      + '<p class="dvnote">The grade is how soft this defense is to the positions the offense '+(sport==='nfl' ? 'gains its yards through (its passing share split QB 45% / WR 40% / TE 15%, its rushing share to RBs)' : 'scores through (each position weighted by its share of the team\'s points)')+': per position, what the defense allows vs the league ('+(sport==='nfl' ? 'QB pass yds, TDs, fewer INTs; RB rush and rec yds, TDs; WR/TE rec yds, TDs, catches' : 'points 50%, rebounds 20%, assists 20%, 3s 10%')+'). A '+(MM_CUT[sport]||[4,8])[1]+'%+ · B '+(MM_CUT[sport]||[4,8])[0]+'%+ · C even · D −'+(MM_CUT[sport]||[4,8])[0]+'% · F −'+(MM_CUT[sport]||[4,8])[1]+'%.'
+      + '<p class="dvnote">The grade is how soft this defense is to the positions the offense '+(FB ? 'gains its yards through (its passing share split QB 45% / WR 40% / TE 15%, its rushing share to RBs)' : 'scores through (each position weighted by its share of the team\'s points)')+': per position, what the defense allows vs the league ('+(FB ? 'QB pass yds, TDs, fewer INTs; RB rush and rec yds, TDs; WR/TE rec yds, TDs, catches' : 'points 50%, rebounds 20%, assists 20%, 3s 10%')+'). A '+(MM_CUT[sport]||[4,8])[1]+'%+ · B '+(MM_CUT[sport]||[4,8])[0]+'%+ · C even · D −'+(MM_CUT[sport]||[4,8])[0]+'% · F −'+(MM_CUT[sport]||[4,8])[1]+'%.'
       + (sport==='nba' ? ' Replayed on 2025-26 (979 games): offenses graded A scored 8.2 points over their own average (beat it 71%), B +5.9 (67%), D −4.9 (37%). But the books price it: backing the team with the bigger score went 50.6% against the spread. Both offenses high went over 53%, both low under 57% (not significant). Context, not a pick. Early in the season the scores swing more (few games).' : ' Not backtested yet (one season of box scores); scores swing more early in the season. Context, not a pick.')+'</p></div>';
   }
   function dvpBlock(sport, g){
-    var D = DATA.dvp || {}, x = D[g.id], L = D._league;
-    if(sport !== 'nba' || !x || !L) return '';
+    var D = (sport === 'ncaab' ? DATA.dvpNcaab : DATA.dvp) || {}, x = D[g.id], L = D._league;
+    if((sport !== 'nba' && sport !== 'ncaab') || !x || !L) return '';
     var POS = ['PG','SG','SF','PF','C'], ST = [['pts','PTS'],['reb','REB'],['ast','AST'],['tpm','3PM']];
     var shade = function(v, lg){ var r = lg ? v / lg - 1 : 0, a = Math.round(Math.min(1, Math.abs(r) / 0.35) * 100);
       return a < 8 ? '' : 'background:color-mix(in oklab, '+(r > 0 ? 'var(--win)' : 'var(--loss)')+' '+Math.round(a*0.5)+'%, transparent)'; };
@@ -1419,25 +1420,25 @@ footer b{color:var(--ink);}
           return '<td title="'+esc(r[0]+' averages '+v+' '+s[1]+'; '+teamAbbr(defName)+' allows '+(c?c[0]:'?')+' to '+P+'s vs league '+(lg||'?'))+'">'+v+tag+'</td>';
         }).join('');
         var pm = r[8], pmc = num(pm) ? '<td class="mono '+(pm > 0 ? 'pos' : pm < 0 ? 'neg' : '')+'" title="'+esc(r[0]+'\'s average plus/minus a game (the team\'s point margin while he\'s on the floor)')+'">'+(pm > 0 ? '+' : pm < 0 ? '\u2212' : '')+Math.abs(pm)+'</td>' : '<td class="muted">\u2014</td>';
-        return '<tr><td class="dvn">'+esc(r[0])+' <span class="muted">'+P+' \u00b7 '+r[3]+'m</span></td>'+cells+pmc+'</tr>';
+        return '<tr><td class="dvn">'+esc(r[0])+' <span class="muted">'+P+' \u00b7 '+r[3]+'m</span></td>'+cells+(sport === 'nba' ? pmc : '')+'</tr>';
       }).join('');
       return '<div class="dvh"><div class="dvh-h">'+teamBadge(offName, true)+' <b>'+esc(teamAbbr(offName))+' offense</b> vs '+teamBadge(defName, true)+' <b>'+esc(teamAbbr(defName))+' defense</b></div>'
         + '<div class="dvgrid">'+tbl
-        + (pl ? '<table class="dvt dvp"><thead><tr><th>Player (avg)</th>'+ST.map(function(s){ return '<th>'+s[1]+'</th>'; }).join('')+'<th title="Average plus/minus a game">+/\u2212</th></tr></thead><tbody>'+pl+'</tbody></table>' : '')
+        + (pl ? '<table class="dvt dvp"><thead><tr><th>Player (avg)</th>'+ST.map(function(s){ return '<th>'+s[1]+'</th>'; }).join('')+(sport === 'nba' ? '<th title="Average plus/minus a game">+/\u2212</th>' : '')+'</tr></thead><tbody>'+pl+'</tbody></table>' : '')
         + '</div></div>';
     };
     var body = half(x.away, x.home, g.away, g.home) + half(x.home, x.away, g.home, g.away);
     if(!body) return '';
     return '<details class="dvpbox"><summary><span class="dvi">\u25a6</span><b>Matchup by position</b>'+mmChips(sport, g, x)+'<span class="dvs">what each defense allows \u00b7 tap to open</span></summary>'
       + mmBlock(sport, g, x, POS)
-      + '<p class="dvnote">Per game this season to each position (#1 = allows the most; green = more than the league average, red = less). Under each player, his season average, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average, and his average plus/minus (his team\'s point margin while he\'s on the floor). Positions: ESPN\'s guard / forward / center, guards split by assists (5+ per 36 min = PG) and forwards by height (6\'9" and up = PF).</p>'
+      + '<p class="dvnote">Per game this season to each position (#1 = allows the most; green = more than the league average, red = less). Under each player, his season average, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average'+(sport==='nba' ? ', and his average plus/minus (his team\'s point margin while he\'s on the floor). Positions: ESPN\'s guard / forward / center, guards split by assists (5+ per 36 min = PG) and forwards by height (6\'9" and up = PF).' : '.') + (sport==='ncaab' || sport==='cfb' ? ' <b>College:</b> only games of teams that have been on our '+(sport==='cfb'?'CFB':'NCAAB')+' slates are saved, so ranks are among those teams\' defenses (3+ saved games) and the averages come from those games'+(sport==='ncaab' ? '; guards split by assists, forwards by rebounds (8+ per 36 min = PF)' : '; college box scores have no targets')+'.' : '')+'</p>'
       + body + '</details>';
   }
   // NFL defense vs position (DATA.dvpNfl from lib/nfl_dvp.py): what each defense
   // allows a game to QBs, RBs, WRs and TEs; each position has its own stats (_spec).
   function dvpNflBlock(sport, g){
-    var D = DATA.dvpNfl || {}, x = D[g.id], L = D._league, SP = D._spec;
-    if(sport !== 'nfl' || !x || !L || !SP) return '';
+    var D = (sport === 'cfb' ? DATA.dvpCfb : DATA.dvpNfl) || {}, x = D[g.id], L = D._league, SP = D._spec;
+    if((sport !== 'nfl' && sport !== 'cfb') || !x || !L || !SP) return '';
     var POS = ['QB','RB','WR','TE'];
     var shade = function(v, lg){ var r = lg ? v / lg - 1 : 0, a = Math.round(Math.min(1, Math.abs(r) / 0.35) * 100);
       return a < 8 ? '' : 'background:color-mix(in oklab, '+(r > 0 ? 'var(--win)' : 'var(--loss)')+' '+Math.round(a*0.5)+'%, transparent)'; };
@@ -1465,7 +1466,7 @@ footer b{color:var(--ink);}
     if(!body) return '';
     return '<details class="dvpbox"><summary><span class="dvi">\u25a6</span><b>Matchup by position</b>'+mmChips(sport, g, x)+'<span class="dvs">what each defense allows \u00b7 tap to open</span></summary>'
       + mmBlock(sport, g, x, POS)
-      + '<p class="dvnote">Per game this season to each position: quarterbacks, running backs (fullbacks included), wide receivers and tight ends (#1 = allows the most; green = more than the league average, red = less). Under each player, his average a game, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average. Positions from ESPN\'s team rosters.</p>'
+      + '<p class="dvnote">Per game this season to each position: quarterbacks, running backs (fullbacks included), wide receivers and tight ends (#1 = allows the most; green = more than the league average, red = less). Under each player, his average a game, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average. Positions from ESPN\'s team rosters.' + (sport==='ncaab' || sport==='cfb' ? ' <b>College:</b> only games of teams that have been on our '+(sport==='cfb'?'CFB':'NCAAB')+' slates are saved, so ranks are among those teams\' defenses (3+ saved games) and the averages come from those games'+(sport==='ncaab' ? '; guards split by assists, forwards by rebounds (8+ per 36 min = PF)' : '; college box scores have no targets')+'.' : '')+'</p>'
       + body + '</details>';
   }
   function injuryWatch(g){
@@ -2424,7 +2425,7 @@ footer b{color:var(--ink);}
   }
   // ---- slate date picker: past slates (slates/<date>.json) shown view-only ----
   var LATEST = null, VIEW_PAST = false;
-  var SLATE_KEYS = ['slate','myPicks','myTotals','myProps','myScores','atsTrend','ouTrend','atsNext','rosters','dvp','dvpNfl'];
+  var SLATE_KEYS = ['slate','myPicks','myTotals','myProps','myScores','atsTrend','ouTrend','atsNext','rosters','dvp','dvpNfl','dvpNcaab','dvpCfb'];
   function slateDateLabel(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',timeZone:'UTC'}); }
   function slatePicker(){
     var cur = DATA.slate.date, latest = LATEST ? LATEST.slate.date : cur, short = function(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'}); };

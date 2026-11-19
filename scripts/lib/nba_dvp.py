@@ -18,6 +18,11 @@ from collections import defaultdict
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BOX = os.path.join(ROOT, "data", "raw", "nba_player_box.json")
+# College basketball uses the same rows (archive_college_player_box.py): only
+# games of teams on our NCAAB slates are saved, so a defense needs 3+ saved
+# games to be ranked, and forwards split by rebounds (no heights saved).
+BOXES = {"nba": BOX, "ncaab": os.path.join(ROOT, "data", "raw", "ncaab_player_box.json")}
+MIN_TEAM_GAMES = 3
 HEIGHTS = os.path.join(ROOT, "data", "raw", "nba_heights.json")
 POS = ("PG", "SG", "SF", "PF", "C")
 STATS = ("pts", "reb", "ast", "tpm")
@@ -36,29 +41,36 @@ MIN_GAMES = 5
 _CACHE = {}
 
 
-def _load():
-    if "box" not in _CACHE:
+def _load(sport="nba"):
+    path = BOX if sport == "nba" else BOXES[sport]
+    if ("box", path) not in _CACHE:
         try:
-            with open(BOX, encoding="utf-8") as f:
+            with open(path, encoding="utf-8") as f:
                 box = json.load(f)
         except (OSError, ValueError):
             box = {}
-        try:
-            with open(HEIGHTS, encoding="utf-8") as f:
-                heights = json.load(f)
-        except (OSError, ValueError):
-            heights = {}
-        _CACHE["box"] = sorted((e["date"], eid, e) for eid, e in box.items() if e.get("players"))
-        _CACHE["h"] = heights
-    return _CACHE["box"], _CACHE["h"]
+        heights = {}
+        if sport == "nba":
+            try:
+                with open(HEIGHTS, encoding="utf-8") as f:
+                    heights = json.load(f)
+            except (OSError, ValueError):
+                pass
+        _CACHE[("box", path)] = (sorted((e["date"], eid, e) for eid, e in box.items() if e.get("players")), heights)
+    return _CACHE[("box", path)]
 
 
-def derive_positions(games, heights):
-    """{athlete id: PG|SG|SF|PF|C} from season totals over `games`."""
+def derive_positions(games, heights, college=False):
+    """{athlete id: PG|SG|SF|PF|C} from season totals over `games`. College
+    guards pass less, so there each team's top guard by assists per 36 (10+
+    min a game) is a PG too, besides any guard at 4+ per 36."""
     tot = defaultdict(lambda: [0.0, 0.0, 0.0, ""])   # min, reb, ast, ESPN pos
+    team_of, gp = {}, defaultdict(int)
     for _d, _eid, e in games:
-        for rows in e["players"].values():
+        for team, rows in e["players"].items():
             for row in rows:
+                team_of[row[0]] = team
+                gp[row[0]] += 1
                 pid, pos, mi, r, a = row[0], row[2], row[4], row[6], row[7]
                 x = tot[pid]
                 x[0] += mi
@@ -71,10 +83,20 @@ def derive_positions(games, heights):
         if pos == "C":
             out[pid] = "C"
         elif pos == "G":
-            out[pid] = "PG" if a / m * 36 >= 5.0 else "SG"
+            out[pid] = "PG" if a / m * 36 >= (4.0 if college else 5.0) else "SG"
         elif pos == "F":
             h = heights.get(pid)
             out[pid] = ("PF" if h >= 81 else "SF") if h else ("PF" if r / m * 36 >= 8 else "SF")
+    if college:
+        best = {}
+        for pid, (mi, r, a, pos) in tot.items():
+            if pos == "G" and gp[pid] and mi / gp[pid] >= 10:
+                t = team_of.get(pid)
+                v = a / max(mi, 1.0)
+                if t and v > best.get(t, (-1, None))[0]:
+                    best[t] = (v, pid)
+        for _v, pid in best.values():
+            out[pid] = "PG"
     return out
 
 
@@ -83,16 +105,16 @@ def _same(a, b):
     return a == b or _same_team(a, b)
 
 
-def for_slate(slate_date, games_today):
+def for_slate(slate_date, games_today, sport="nba"):
     """{game id: {"away": side, "home": side}} for tonight's NBA games, where a
     side is {"allows": {pos: {stat: [per game, rank 1 = most allowed]}},
              "players": [[name, pos, games, min, pts, reb, ast, tpm, +/- a game], ...]}
     plus "league": {pos: {stat: per game}} under the key "_league"."""
-    box, heights = _load()
+    box, heights = _load(sport)
     games = [g for g in box if g[0] < slate_date]
     if not games or not games_today:
         return {}
-    pos_of = derive_positions(games, heights)
+    pos_of = derive_positions(games, heights, college=sport != "nba")
     allowed = defaultdict(lambda: defaultdict(list))      # defense team -> pos -> [per-game dict]
     made = defaultdict(lambda: defaultdict(list))         # offense team -> pos -> [per-game dict]
     players = defaultdict(lambda: defaultdict(lambda: [None, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0]))  # team -> pid -> [name, g, min, pts, reb, ast, tpm, +/- total, games with +/-]
@@ -129,10 +151,13 @@ def for_slate(slate_date, games_today):
             for P in POS:
                 allowed[opp][P].append(sums[P])
                 made[team][P].append(sums[P])
-    league = {P: {k: round(sum(g[k] for t in allowed for g in allowed[t][P]) / max(1, sum(len(allowed[t][P]) for t in allowed)), 1)
+    # the league average is over the defenses that are ranked (3+ games): for
+    # college, that's the teams on our slates, not their opponents
+    ranked = [t for t in allowed if len(allowed[t]["PG"]) >= MIN_TEAM_GAMES]
+    league = {P: {k: round(sum(g[k] for t in ranked for g in allowed[t][P]) / max(1, sum(len(allowed[t][P]) for t in ranked)), 1)
                   for k in STATS} for P in POS}
     avg = {t: {P: {k: sum(g[k] for g in allowed[t][P]) / len(allowed[t][P]) for k in STATS} for P in POS if allowed[t][P]}
-           for t in allowed}
+           for t in ranked}
     ranks = {}
     for P in POS:
         for k in STATS:
@@ -141,9 +166,13 @@ def for_slate(slate_date, games_today):
                 ranks[(t, P, k)] = i + 1
     nteams = len(avg)
 
+    def pick(keys, name):
+        hits = [t for t in keys if t == name] or [t for t in keys if _same(t, name)]
+        return max(hits, key=lambda t: len(allowed[t]["PG"])) if hits else None
+
     def side(name):
-        team = next((t for t in avg if _same(t, name)), None)
-        roster = next((t for t in players if _same(t, name)), None)
+        team = pick(avg, name)
+        roster = pick(players, name)
         out = {"allows": {}, "players": [], "teams": nteams}
         if team:
             out["allows"] = {P: {k: [round(avg[team][P][k], 1), ranks.get((team, P, k))] for k in STATS} for P in POS if P in avg[team]}
@@ -159,9 +188,10 @@ def for_slate(slate_date, games_today):
 
     def score(off, dfn):
         """{"score": %, "pos": {P: [defense vs league %, share of the offense's points %]}} or None."""
-        o = next((t for t in made if _same(t, off)), None)
-        d = next((t for t in avg if _same(t, dfn)), None)
-        if not o or not d or len(made[o]["PG"]) < MIN_GAMES or len(allowed[d]["PG"]) < MIN_GAMES:
+        o = pick(made, off)
+        d = pick(avg, dfn)
+        need = MIN_GAMES if sport == "nba" else MIN_TEAM_GAMES
+        if not o or not d or len(made[o]["PG"]) < need or len(allowed[d]["PG"]) < need:
             return None
         pts = {P: sum(g["pts"] for g in made[o][P]) / len(made[o][P]) for P in POS}
         tot = sum(pts.values()) or 1
