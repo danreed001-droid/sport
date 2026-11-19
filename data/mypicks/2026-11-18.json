@@ -22,7 +22,10 @@
       "odds": null,
       "reason": "Total trended up..almost stretched like stocks",
       "submittedAt": "2026-11-19T00:17:58+00:00",
-      "issue": 32
+      "issue": 32,
+      "actual": 124.0,
+      "result": "L",
+      "profit": -100.0
     }
   }
 }
