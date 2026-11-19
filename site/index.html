@@ -370,7 +370,7 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .abars .ol{font-size:9.5px;font-weight:700;} .abars .orc{font-size:8.5px;font-weight:600;}
 .abars .tn{fill:var(--muted);} .abars .oat{font-size:8px;fill:var(--muted);}
 .abars .rst{font-size:8px;fill:var(--muted);font-weight:600;} .abars .rst.b2b{fill:#e07b00;font-weight:800;}
-.abars .dayoff{stroke:var(--muted);stroke-width:1.6;stroke-linecap:round;}
+.abars .dayoff{stroke:var(--muted);stroke-width:2;stroke-linecap:round;}
 .abars .lvl{stroke:var(--grid);stroke-width:1;}
 .abars .yl{font-size:10px;fill:var(--muted);}
 @media (max-width:600px){.abars .rst{font-size:11px;} .abars .oat{font-size:11px;} .abars .bv{font-size:11px;letter-spacing:-.04em;} .abars .ol{font-size:13.5px;} .abars .orc{font-size:12px;} .abars .yl{font-size:14px;}}
@@ -1566,11 +1566,11 @@ footer b{color:var(--ink);}
     var restTxt = function(gap){ return gap == null ? '' : gap <= 1 ? 'B2B' : (gap-1)+'d off'; };
     var panel = function(rows, team, opp, home, color){
       var W = 600, L = PH ? 48 : 40, R = 8, Tp = PH ? 22 : 16, CH = PH ? 210 : 150;
-      // x by date, like a calendar: a back-to-back sits one step from the night before,
-      // each day off adds a step (capped at 3 days off so a long break doesn't eat the chart).
+      // x by date, one slot per calendar day (like a team page's game results): a
+      // back-to-back sits in the next slot, and every day not played is an empty slot.
       var n = rows.length, gaps = rows.map(function(r, i){ return i ? dayN(r[0]) - dayN(rows[i-1][0]) : null; });
       var tGap = n ? dayN(tonight) - dayN(rows[n-1][0]) : null;
-      var units = gaps.map(function(gp){ return gp == null ? 0 : Math.min(Math.max(gp, 1), 4); }), tU = tGap == null ? 1 : Math.min(Math.max(tGap, 1), 4);
+      var units = gaps.map(function(gp){ return gp == null ? 0 : Math.max(gp, 1); }), tU = tGap == null ? 1 : Math.max(tGap, 1);
       var total = 1.2 + units.reduce(function(a, b){ return a + b; }, 0) + tU, uw = (W - L - R) / total;
       var xs = [], acc = 0.6; units.forEach(function(u){ acc += u; xs.push(L + uw * acc); }); var tx = L + uw * (acc + tU);
       if(!n) tx = L + (W - L - R) / 2;
@@ -1593,8 +1593,8 @@ footer b{color:var(--ink);}
         out += '<line class="'+(t===0?'zero0':'grid0')+'" x1="'+L+'" x2="'+(W-R)+'" y1="'+y.toFixed(1)+'" y2="'+y.toFixed(1)+'"></line>'
           + '<text class="yl" x="'+(L-6)+'" y="'+(y+4).toFixed(1)+'" text-anchor="end">'+fmt(t)+'</text>';
       }
-      // a small tick on the zero line for each day off (like the dashes on a team page)
-      var tick = function(xa, xb, gp){ var off = Math.min(gp - 1, 3), o = ''; for(var d = 1; d <= off; d++){ var xx = xa + (xb - xa) * d / (off + 1); o += '<line class="dayoff" x1="'+(xx-2.5).toFixed(1)+'" x2="'+(xx+2.5).toFixed(1)+'" y1="'+y0.toFixed(1)+'" y2="'+y0.toFixed(1)+'"></line>'; } return o; };
+      // a dash on the zero line in each day not played (like the dashes on a team page)
+      var tick = function(xa, xb, gp){ var o = '', dw = Math.min(uw * 0.55, 8) / 2; for(var d = 1; d < gp; d++){ var xx = xa + uw * d; o += '<line class="dayoff" x1="'+(xx-dw).toFixed(1)+'" x2="'+(xx+dw).toFixed(1)+'" y1="'+y0.toFixed(1)+'" y2="'+y0.toFixed(1)+'"></line>'; } return o; };
       rows.forEach(function(r, i){ if(i) out += tick(xs[i-1], xs[i], gaps[i]); });
       if(n && tGap) out += tick(xs[n-1], tx, tGap);
       var label = function(k){
@@ -1622,7 +1622,7 @@ footer b{color:var(--ink);}
       var head = '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+(rows.length ? w+'-'+l+(p?'-'+p:'')+' ATS, '+fmt(sum)+' in '+rows.length+' (avg '+fmt(sum/rows.length)+')' : 'no graded games yet')+'</div>';
       return head + '<svg class="abars" viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+esc(team)+' against the spread, last '+N+' games">'+out+'</svg>';
     };
-    return '<div class="atstrend"><div class="at-head"><b>ATS trend</b><span>each bar: how much the team beat (green) or missed (red) the closing spread, last '+N+' games on a calendar (a back-to-back sits next to the night before; each day off opens a gap, ticks on the zero line), then tonight \u00b7 under each bar its rest (<b style="color:#e07b00">B2B</b> or days off), the opponent (@ = away) and its record going in, <span class="reckey">losing <i></i> winning</span> \u00b7 hover a bar for the spread and the '+qName(sport)+'s</span></div>'
+    return '<div class="atstrend"><div class="at-head"><b>ATS trend</b><span>each bar: how much the team beat (green) or missed (red) the closing spread, last '+N+' games on a calendar, one space per day (a back-to-back sits next to the night before; a dash on the zero line for each day not played), then tonight \u00b7 under each bar its rest (<b style="color:#e07b00">B2B</b> or days off), the opponent (@ = away) and its record going in, <span class="reckey">losing <i></i> winning</span> \u00b7 hover a bar for the spread and the '+qName(sport)+'s</span></div>'
       + panel(A, g.away, g.home, false, gc[0]) + panel(H, g.home, g.away, true, gc[1])
       + quarterTable(sport, g, A, H, false, gc, true) + '</div>';
   }

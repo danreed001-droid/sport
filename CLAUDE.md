@@ -362,9 +362,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   it (`recShade`). Hovers give the spread and the quarters; `quarterTable`
   (bars=true) keeps the per-quarter averages. The totals trend is still the
   running line with quarter steps.
-  Bars sit on a calendar (the user asked for the spacing, as on that page): a
-  back-to-back is one step from the night before, each day off adds a step
-  (capped at 3 days off), with a tick on the zero line per day off; each bar's
+  Bars sit on a calendar, one slot per day (the user asked for the spacing,
+  as on that page): a back-to-back is the next slot, every day not played is
+  an empty slot with a dash on the zero line (no cap: an NFL bye is a wide gap); each bar's
   label starts with its rest (orange "B2B" or "Nd off"; tonight's from the
   slate date), and a label that would overlap drops a level with a thin
   connector.
