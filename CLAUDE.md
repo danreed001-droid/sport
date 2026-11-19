@@ -44,6 +44,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   own ESPN game page (`refresh_unfinished_slate_games` in `fetch_scores.py`).
   If a slate is still ungraded at noon ET the next day, the health check
   starts a scoring run and opens its issue naming the games, for entry by hand.
+- **Scoring chaser** (`.github/workflows/score-chaser.yml`, 2026-11-19, the
+  user's call): GitHub's hourly schedule skipped every run from 10:31 PM ET on
+  2026-11-18 to the next morning (and the 4-hourly health check ran twice a
+  day), so that night's games stayed ungraded. After every scoring run the
+  chaser runs `scripts/scoring_pending.py` (a game that started 2-14 hours ago
+  whose slate doesn't have it graded, `is_final`; start from the slate's
+  `time` and its zone); if any, it waits 40 minutes, looks again on the latest
+  main, and starts a scoring run unless one is queued or running. Each run
+  finishing starts the chaser again (a newer one cancels a waiting one), so it
+  stops once everything is graded; the 14-hour cap stops it on postponed games.
 - `data/health.json` holds each step's last status (dates only, so it changes
   about once a day: that daily bot commit keeps GitHub from switching off the
   scheduled workflows after 60 days without repo activity in the off-season).

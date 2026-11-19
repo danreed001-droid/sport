@@ -1,0 +1,57 @@
+name: Scoring chaser
+
+# Backup for GitHub's hourly schedule, which runs late and sometimes skips for
+# hours (no scoring run between 10:31 PM ET on 2026-11-18 and the next
+# morning left that night's games ungraded). After every scoring run, if a
+# game that started 2-14 hours ago still isn't graded
+# (scripts/scoring_pending.py), wait 40 minutes and start another scoring run.
+# That run finishing starts this again, so it keeps going until the night's
+# games are graded, then stops. A newer scoring run finishing cancels a
+# waiting chaser (concurrency), and nothing is started while a scoring run is
+# already queued or running.
+
+on:
+  workflow_run:
+    workflows: ["Diamond Ledger (scoring)"]
+    types: [completed]
+
+permissions:
+  contents: read
+  actions: write   # start the scoring run
+
+concurrency:
+  group: score-chaser
+  cancel-in-progress: true
+
+jobs:
+  chase:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Anything waiting to be graded?
+        id: check
+        run: python scripts/scoring_pending.py
+
+      - name: Wait, then start another scoring run
+        if: steps.check.outputs.pending == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sleep 2400
+          # Look again at the latest data: a scheduled run may have graded them meanwhile.
+          git fetch -q origin main && git checkout -q FETCH_HEAD
+          python scripts/scoring_pending.py > pending.txt; cat pending.txt
+          if grep -q "Nothing waiting" pending.txt; then echo "All graded now."; exit 0; fi
+          busy=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow diamond-ledger.yml --limit 5 --json status \
+                 --jq '[.[] | select(.status == "queued" or .status == "in_progress" or .status == "waiting")] | length')
+          if [ "$busy" != "0" ]; then echo "A scoring run is already queued or running."; exit 0; fi
+          gh workflow run diamond-ledger.yml --repo "$GITHUB_REPOSITORY" --ref main
+          echo "Started a scoring run."
