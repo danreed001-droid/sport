@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-18T21:58:49+00:00",
+ "fetchedAt": "2026-11-19T02:00:06+00:00",
  "games": [
   {
    "away": "Houston Rockets",
@@ -218,18 +218,18 @@
    "spread": {
     "home": 2.5,
     "open": 2.5,
-    "tix_home": 38,
-    "money_home": 34
+    "tix_home": 39,
+    "money_home": 47
    },
    "total": {
-    "now": 219.5,
+    "now": 219,
     "open": 220.5,
-    "tix_over": 77,
-    "money_over": 69
+    "tix_over": 78,
+    "money_over": 74
    },
    "moneyline": {
-    "home": 120,
-    "away": -145
+    "home": 116,
+    "away": -136
    },
    "rlmFavorite": null
   },
@@ -239,20 +239,20 @@
    "start": "2026-11-19T03:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -12,
+    "home": -12.5,
     "open": -12.5,
     "tix_home": 69,
-    "money_home": 71
+    "money_home": 67
    },
    "total": {
-    "now": 231.5,
+    "now": 230.5,
     "open": 230.5,
-    "tix_over": 79,
-    "money_over": 76
+    "tix_over": 75,
+    "money_over": 67
    },
    "moneyline": {
-    "home": -590,
-    "away": 425
+    "home": -550,
+    "away": 400
    },
    "rlmFavorite": null
   },
@@ -262,20 +262,20 @@
    "start": "2026-11-19T03:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 6.5,
+    "home": 7.5,
     "open": 6.5,
-    "tix_home": 22,
-    "money_home": 24
+    "tix_home": 25,
+    "money_home": 29
    },
    "total": {
     "now": 227.5,
     "open": 229.5,
-    "tix_over": 63,
-    "money_over": 54
+    "tix_over": 62,
+    "money_over": 55
    },
    "moneyline": {
-    "home": 220,
-    "away": -270
+    "home": 230,
+    "away": -285
    },
    "rlmFavorite": null
   }

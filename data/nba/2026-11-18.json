@@ -939,10 +939,10 @@
       "statsLine": {
         "homeSpread": 2.5,
         "awaySpread": -2.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 120,
-        "awayMoneyline": -142
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": 115,
+        "awayMoneyline": -136
       },
       "statsSpread": 2.5,
       "time": "9:30 PM ET",
@@ -976,9 +976,9 @@
       "awaySpreadOdds": -118,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 231.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Los Angeles Lakers",
       "homeMoneyline": -437,
       "homeNetRtg": 7.9,
@@ -1000,14 +1000,14 @@
         "LAL: Austin Reaves OUT (heel, ruled out); Walker Kessler OUT (leg) \u2014 LAL's top player not flagged out"
       ],
       "statsLine": {
-        "homeSpread": -12.5,
-        "awaySpread": 12.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
+        "homeSpread": -11.5,
+        "awaySpread": 11.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
         "homeMoneyline": -567,
         "awayMoneyline": 424
       },
-      "statsSpread": -12.5,
+      "statsSpread": -11.5,
       "storylines": [
         {
           "weight": 1,
@@ -1016,7 +1016,7 @@
           "name": "Fat and happy",
           "team": "Los Angeles Lakers",
           "says": "fade",
-          "fact": "Los Angeles Lakers has won 9 straight and is a -12.5 favorite.",
+          "fact": "Los Angeles Lakers has won 9 straight and is a -11.5 favorite.",
           "record": "161-137",
           "pct": 54.0,
           "leans": "Utah Jazz",
@@ -1030,7 +1030,7 @@
           "name": "Spotlight letdown",
           "team": "Los Angeles Lakers",
           "says": "fade",
-          "fact": "Los Angeles Lakers beat Charlotte Hornets 118-114 on national TV and is a -12.5 favorite tonight off national TV.",
+          "fact": "Los Angeles Lakers beat Charlotte Hornets 118-114 on national TV and is a -11.5 favorite tonight off national TV.",
           "record": "149-114",
           "pct": 56.7,
           "leans": "Utah Jazz",
@@ -1053,7 +1053,7 @@
         }
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 231.5
+      "totalsLine": 229.5
     },
     {
       "altCategoryTally": "4-0",
@@ -1083,9 +1083,9 @@
       "awaySpreadOdds": -115,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 226.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Sacramento Kings",
       "homeMoneyline": 211,
       "homeNetRtg": -13.4,
@@ -1107,46 +1107,46 @@
         "SAC: Zach LaVine DTD/questionable (illness) \u2014 likely best player; De'Andre Hunter/Precious Achiuwa DTD; Maxime Raynaud OUT; Ben Simmons OUT (season, Achilles)"
       ],
       "statsLine": {
-        "homeSpread": 6.5,
-        "awaySpread": -6.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -117,
+        "homeSpread": 7.5,
+        "awaySpread": -7.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
         "homeMoneyline": 221,
         "awayMoneyline": -269
       },
-      "statsSpread": 6.5,
+      "statsSpread": 7.5,
       "storylines": [
         {
-          "against": false,
-          "fact": "Phoenix Suns is a -6.5 favorite but has covered 4 of 13 this season.",
-          "key": "emperor",
-          "leanPct": 54.3,
-          "leans": "Sacramento Kings",
+          "weight": 1,
           "live": "6-1",
+          "key": "emperor",
           "name": "The emperor's new clothes",
-          "pct": 54.3,
-          "record": "182-153",
-          "says": "fade",
           "team": "Phoenix Suns",
-          "weight": 1
+          "says": "fade",
+          "fact": "Phoenix Suns is a -7.5 favorite but has covered 4 of 13 this season.",
+          "record": "182-153",
+          "pct": 54.3,
+          "leans": "Sacramento Kings",
+          "leanPct": 54.3,
+          "against": false
         },
         {
-          "against": false,
-          "fact": "Phoenix Suns is a -6.5 favorite vs Sacramento Kings (1-12): it's playing its 3rd game in 4 nights and Sacramento Kings is rested.",
-          "key": "letdown",
-          "leanPct": 54.4,
-          "leans": "Sacramento Kings",
+          "weight": 1,
           "live": "5-3",
+          "key": "letdown",
           "name": "Letdown spot",
-          "pct": 54.4,
-          "record": "360-302",
-          "says": "fade",
           "team": "Phoenix Suns",
-          "weight": 1
+          "says": "fade",
+          "fact": "Phoenix Suns is a -7.5 favorite vs Sacramento Kings (1-12): it's playing its 3rd game in 4 nights and Sacramento Kings is rested.",
+          "record": "360-302",
+          "pct": 54.4,
+          "leans": "Sacramento Kings",
+          "leanPct": 54.4,
+          "against": false
         }
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 226.5
+      "totalsLine": 227.5
     }
   ]
 }
