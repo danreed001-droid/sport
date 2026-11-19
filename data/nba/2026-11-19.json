@@ -17,35 +17,35 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -334.0,
       "awayMoneyline": 268.0,
-      "statsSpread": -6.5,
+      "statsSpread": -7.5,
       "statsLine": {
-        "homeSpread": -6.5,
-        "awaySpread": 6.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -103,
+        "homeSpread": -7.5,
+        "awaySpread": 7.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
         "homeMoneyline": -284,
         "awayMoneyline": 231
       },
-      "totalsLine": 227.5,
+      "totalsLine": 226.5,
       "storylines": [
         {
           "weight": 1,
-          "live": "4-2",
+          "live": "5-3",
           "key": "ghost_town",
           "name": "Ghost town",
           "team": "Golden State Warriors",
           "says": "fade",
-          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +6.5 underdog.",
-          "record": "824-742",
+          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +7.5 underdog.",
+          "record": "825-743",
           "pct": 52.6,
           "leans": "Memphis Grizzlies",
           "leanPct": 52.6,
           "against": false
         }
       ],
-      "gameTotal": 227.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -115
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401910020",
@@ -67,10 +67,10 @@
         "homeMoneyline": 331,
         "awayMoneyline": -423
       },
-      "totalsLine": 229.5,
-      "gameTotal": 229.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "totalsLine": 228.5,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401910021",

@@ -18,7 +18,10 @@
       "homeMoneyline": 320,
       "awayMoneyline": -410,
       "total": 149.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 149.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401906867",
@@ -29,7 +32,10 @@
       "awaySpread": 38.5,
       "homeSpreadOdds": -112,
       "awaySpreadOdds": -108,
-      "total": 157.5
+      "total": 157.5,
+      "gameTotal": 157.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401918950",
@@ -40,7 +46,10 @@
       "awaySpread": 35.5,
       "homeSpreadOdds": -110,
       "awaySpreadOdds": -110,
-      "total": 154.5
+      "total": 154.5,
+      "gameTotal": 154.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401920518",
@@ -54,7 +63,10 @@
       "homeMoneyline": 114,
       "awayMoneyline": -135,
       "total": 150.5,
-      "neutral": true
+      "neutral": true,
+      "gameTotal": 150.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401926773",
@@ -67,7 +79,27 @@
       "awaySpreadOdds": -105,
       "homeMoneyline": -10000,
       "awayMoneyline": 3000,
-      "total": 159.5
+      "total": 159.5,
+      "gameTotal": 159.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-1",
+          "key": "after_dark",
+          "name": "After dark out West",
+          "team": "Tarleton State Texans",
+          "says": "fade",
+          "fact": "Tarleton State tips at 11:00 PM ET in Los Angeles, CA.",
+          "record": "76-84",
+          "pct": 47.5,
+          "leans": "Tarleton State Texans",
+          "leanPct": 52.5,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     }
   ]
 }
