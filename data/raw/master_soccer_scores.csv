@@ -1,4 +1,46 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
+401928541,2026-11-19,Scheduled,Madrid CFF,0,-,CD Argual,0,-,-,-,1:00 PM
+401928542,2026-11-19,Scheduled,Espanyol,0,-,Celta Vigo,0,-,-,-,1:00 PM
+401933535,2026-11-19,Scheduled,FC Cincinnati,0,-,Orlando City SC,0,-,-,-,7:30 PM
+401933555,2026-11-19,Scheduled,Real Salt Lake,0,-,Seattle Sounders FC,0,-,-,-,10:00 PM
+401916978,2026-11-19,Scheduled,Bayern Munich,0,-,Austria Vienna,0,-,-,-,12:45 PM
+401916977,2026-11-19,Scheduled,HB Køge,0,-,Paris FC,0,-,-,-,12:45 PM
+401916976,2026-11-19,Scheduled,OL Lyonnes,0,-,Arsenal,0,-,-,-,3:00 PM
+401916975,2026-11-19,Scheduled,Servette,0,-,Barcelona,0,-,-,-,3:00 PM
+401916974,2026-11-19,Scheduled,Roma,0,-,Benfica,0,-,-,-,3:00 PM
+401933395,2026-11-19,Scheduled,KuPS Kuopio,0,-,IFK Norrköping,0,-,-,-,8:00 AM
+401873513,2026-11-19,Scheduled,Haiti U17,0,-,France U17,0,-,-,-,8:00 AM
+401873510,2026-11-19,Scheduled,Ecuador U17,0,-,New Caledonia U17,0,-,-,-,8:00 AM
+401873517,2026-11-19,Scheduled,Uganda U17,0,-,South Korea U17,0,-,-,-,8:30 AM
+401873514,2026-11-19,Scheduled,Uruguay U17,0,-,Saudi Arabia U17,0,-,-,-,9:00 AM
+401873512,2026-11-19,Scheduled,Denmark U17,0,-,Mozambique U17,0,-,-,-,10:00 AM
+401873515,2026-11-19,Scheduled,Panama U17,0,-,Qatar U17,0,-,-,-,10:30 AM
+401873511,2026-11-19,Scheduled,Australia U17,0,-,Argentina U17,0,-,-,-,11:00 AM
+401873516,2026-11-19,Scheduled,Greece U17,0,-,Egypt U17,0,-,-,-,11:00 AM
+401841308,2026-11-19,Scheduled,Internacional,0,-,Vasco da Gama,0,-,-,-,5:30 PM
+401841317,2026-11-19,Scheduled,Red Bull Bragantino,0,-,Vitória,0,-,-,-,5:30 PM
+401841309,2026-11-19,Scheduled,Fluminense,0,-,São Paulo,0,-,-,-,7:30 PM
+401934704,2026-11-19,Scheduled,Deportivo Maldonado,0,-,Boston River,0,-,-,-,2:30 PM
+401934686,2026-11-19,Scheduled,Cerro Largo,0,-,Peñarol,0,-,-,-,2:30 PM
+401934703,2026-11-19,Scheduled,Montevideo City Torque,0,-,Progreso,0,-,-,-,2:30 PM
+401930693,2026-11-19,FT,Shillong Lajong FC,1,-,Dempo Sports Club,2,-,-,-,5:30 AM
+401930692,2026-11-19,Scheduled,Nagaland United SC,0,-,Samaleswari SC,0,-,-,-,8:00 AM
+401932578,2026-11-19,Scheduled,Lehigh,0,-,Charlotte,0,-,-,-,6:00 PM
+401932581,2026-11-19,Scheduled,Charleston,0,-,NC State,0,-,-,-,6:00 PM
+401932575,2026-11-19,Scheduled,Sacred Heart,0,-,Syracuse,0,-,-,-,6:00 PM
+401932580,2026-11-19,Scheduled,Liberty,0,-,UNC Wilmington,0,-,-,-,6:00 PM
+401932585,2026-11-19,Scheduled,Longwood,0,-,Wake Forest,0,-,-,-,6:00 PM
+401932577,2026-11-19,Scheduled,Houston Christian,0,-,Bryant,0,-,-,-,7:00 PM
+401932590,2026-11-19,Scheduled,Fairleigh Dickinson,0,-,Cornell,0,-,-,-,7:00 PM
+401932588,2026-11-19,Scheduled,North Florida,0,-,Vermont,0,-,-,-,7:00 PM
+401932586,2026-11-19,Scheduled,Bowling Green,0,-,Marshall,0,-,-,-,7:10 PM
+401932576,2026-11-19,Scheduled,Omaha,0,-,Creighton,0,-,-,-,7:30 PM
+401932584,2026-11-19,Scheduled,Saint Louis,0,-,Missouri State,0,-,-,-,7:30 PM
+401932582,2026-11-19,Scheduled,Cal State Bakersfield,0,-,Oregon State,0,-,-,-,9:00 PM
+401932587,2026-11-19,Scheduled,Tulsa,0,-,Stanford,0,-,-,-,9:00 PM
+401932579,2026-11-19,Scheduled,California,0,-,Portland,0,-,-,-,10:00 PM
+401932589,2026-11-19,Scheduled,Grand Canyon,0,-,San Diego,0,-,-,-,10:00 PM
+401932583,2026-11-19,Scheduled,Cleveland State,0,-,Washington,0,-,-,-,10:00 PM
 401928690,2026-11-18,Scheduled,Peterborough United,0,-,Lye Town,0,-,-,-,2:45 PM
 401928505,2026-11-18,AET,Mallorca,3,-,Alcoyano,1,-,-,-,2:00 PM
 401928561,2026-11-18,FT,Valencia,3,-,CD Samper,0,-,-,-,2:30 PM
@@ -1567,7 +1609,6 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401880176,2026-11-04,FT,Wolverhampton Wanderers,2,-,Bristol City,1,-,-,-,3:00 PM
 401933038,2026-11-04,FT,Congo,4,-,Sao Tome E Principe,1,-,-,-,7:00 AM
 401933059,2026-11-04,FT,Chad,1,-,Central African Republic,1,-,-,-,10:00 AM
-401928541,2026-11-04,Postponed,Madrid CFF,0,-,CD Argual,0,-,-,-,2:00 PM
 401912614,2026-11-04,FT,Gamba Osaka,3,-,Pohang Steelers,3,-,-,-,5:00 AM
 401912613,2026-11-04,FT,Kashima Antlers,0,-,Buriram United,0,-,-,-,7:15 AM
 401912769,2026-11-04,FT,Persib Bandung,2,-,Melbourne Victory,1,-,-,-,2:45 AM
@@ -1667,7 +1708,6 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401880178,2026-11-03,FT,Lincoln City,0,-,Watford,1,-,-,-,2:45 PM
 401880184,2026-11-03,FT,Millwall,0,-,Birmingham City,3,-,-,-,3:00 PM
 401880177,2026-11-03,FT,Southampton,1,-,West Bromwich Albion,1,-,-,-,3:00 PM
-401928542,2026-11-03,Postponed,Espanyol,0,-,Celta Vigo,0,-,-,-,12:00 PM
 401912606,2026-11-03,FT,Shanghai Port FC,4,-,Newcastle Jets,2,-,-,-,2:45 AM
 401912617,2026-11-03,FT,Johor Darul Ta'zim,0,-,Jeonbuk Hyundai Motors,2,-,-,-,5:00 AM
 401912604,2026-11-03,FT,Daejeon Hana Citizen FC,0,-,Kashiwa Reysol,2,-,-,-,5:00 AM

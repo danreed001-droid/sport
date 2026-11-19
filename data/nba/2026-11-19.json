@@ -17,16 +17,16 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -334.0,
       "awayMoneyline": 268.0,
-      "statsSpread": -8.5,
+      "statsSpread": -6.5,
       "statsLine": {
-        "homeSpread": -8.5,
-        "awaySpread": 8.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -334,
-        "awayMoneyline": 268
+        "homeSpread": -6.5,
+        "awaySpread": 6.5,
+        "homeSpreadOdds": -117,
+        "awaySpreadOdds": -103,
+        "homeMoneyline": -284,
+        "awayMoneyline": 231
       },
-      "totalsLine": 225.5,
+      "totalsLine": 227.5,
       "storylines": [
         {
           "weight": 1,
@@ -35,14 +35,17 @@
           "name": "Ghost town",
           "team": "Golden State Warriors",
           "says": "fade",
-          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +8.5 underdog.",
+          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +6.5 underdog.",
           "record": "824-742",
           "pct": 52.6,
           "leans": "Memphis Grizzlies",
           "leanPct": 52.6,
           "against": false
         }
-      ]
+      ],
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910020",
@@ -55,16 +58,19 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": 282.0,
       "awayMoneyline": -352.0,
-      "statsSpread": 9.5,
+      "statsSpread": 10.5,
       "statsLine": {
-        "homeSpread": 9.5,
-        "awaySpread": -9.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 282,
-        "awayMoneyline": -352
+        "homeSpread": 10.5,
+        "awaySpread": -10.5,
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": 331,
+        "awayMoneyline": -423
       },
-      "totalsLine": 226.5
+      "totalsLine": 229.5,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910021",
@@ -81,10 +87,10 @@
       "statsLine": {
         "homeSpread": 1.5,
         "awaySpread": -1.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 105,
-        "awayMoneyline": -124
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -104,
+        "awayMoneyline": -113
       },
       "statsFavors": "New York Knicks",
       "statsRules": [
@@ -96,7 +102,10 @@
         }
       ],
       "statsCheck": "Rule 47: Backing New York Knicks: New York Knicks lost the last meeting by 11 (New York Knicks 104 @ Minnesota Timberwolves 115, 2025-12-24) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
-      "totalsLine": 216.5
+      "totalsLine": 217.5,
+      "gameTotal": 217.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401910022",
@@ -113,10 +122,10 @@
       "statsLine": {
         "homeSpread": -15.5,
         "awaySpread": 15.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": -1320,
-        "awayMoneyline": 800
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -1040,
+        "awayMoneyline": 670
       },
       "statsFavors": "LA Clippers",
       "statsRules": [
@@ -144,7 +153,10 @@
           "backtest": "62.2% unders, 107-65 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30"
         }
       ],
-      "totalsCheck": "Rule 6: LA Clippers lost at home to Utah Jazz by 25 on 2026-11-17 (the worse-record team); now on the road vs. better-record San Antonio Spurs."
+      "totalsCheck": "Rule 6: LA Clippers lost at home to Utah Jazz by 25 on 2026-11-17 (the worse-record team); now on the road vs. better-record San Antonio Spurs.",
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     }
   ]
 }

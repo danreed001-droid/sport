@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-19",
+  "weekday": "Thursday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-19T12:53:21Z",
+  "games": [
+    {
+      "espnId": "401873066",
+      "away": "Indianapolis Colts",
+      "home": "Houston Texans",
+      "time": "8:15 PM ET",
+      "homeSpread": -12.5,
+      "awaySpread": 12.5,
+      "homeSpreadOdds": -108.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -750.0,
+      "awayMoneyline": 525.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-2",
+          "key": "hidden_gem",
+          "name": "Better than its record",
+          "team": "Houston Texans",
+          "says": "back",
+          "fact": "Houston Texans is 3-6 but has scored 233 and allowed 219, which usually goes with about 4.8 wins in 9 games.",
+          "record": "63-50",
+          "pct": 55.8,
+          "leans": "Houston Texans",
+          "leanPct": 55.8,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "7-6",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Indianapolis Colts",
+          "says": "back",
+          "fact": "Indianapolis Colts beat Miami Dolphins 24-22 last game despite 13 penalties for 83 yards to their 3 for 30.",
+          "record": "141-108",
+          "pct": 56.6,
+          "leans": "Indianapolis Colts",
+          "leanPct": 56.6,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
+    }
+  ]
+}

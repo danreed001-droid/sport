@@ -1,0 +1,73 @@
+{
+  "date": "2026-11-19",
+  "weekday": "Thursday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-19T12:53:45Z",
+  "games": [
+    {
+      "espnId": "401920517",
+      "away": "Florida Gators",
+      "home": "West Virginia Mountaineers",
+      "time": "2:30 PM ET",
+      "homeSpread": 9.5,
+      "awaySpread": -9.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": 320,
+      "awayMoneyline": -410,
+      "total": 149.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401906867",
+      "away": "Southern Utah Thunderbirds",
+      "home": "Texas Longhorns",
+      "time": "8:00 PM ET",
+      "homeSpread": -38.5,
+      "awaySpread": 38.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "total": 157.5
+    },
+    {
+      "espnId": "401918950",
+      "away": "Stetson Hatters",
+      "home": "Louisville Cardinals",
+      "time": "8:00 PM ET",
+      "homeSpread": -35.5,
+      "awaySpread": 35.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 154.5
+    },
+    {
+      "espnId": "401920518",
+      "away": "Houston Cougars",
+      "home": "Kansas Jayhawks",
+      "time": "11:00 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": 114,
+      "awayMoneyline": -135,
+      "total": 150.5,
+      "neutral": true
+    },
+    {
+      "espnId": "401926773",
+      "away": "Tarleton State Texans",
+      "home": "USC Trojans",
+      "time": "11:00 PM ET",
+      "homeSpread": -26.5,
+      "awaySpread": 26.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -10000,
+      "awayMoneyline": 3000,
+      "total": 159.5
+    }
+  ]
+}

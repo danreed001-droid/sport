@@ -2,7 +2,7 @@
   "date": "2026-11-18",
   "weekday": "Wednesday",
   "sport": "nba",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-18T16:27:26Z",
   "auditChanges": [
     "NBA Wizards @ Raptors: Ledger Toronto solid -> skip (netrtg-gap); Toronto NetRtg -0.43, 17th per Basketball-Reference, gap 27.6.",
@@ -36,11 +36,11 @@
       "awayMoneyline": 164,
       "awayNetRtg": 9.4,
       "awayPDpg": 9.4,
-      "awayScore": null,
+      "awayScore": 124.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -106,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 238.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110,
@@ -48,14 +48,14 @@
       "homeMoneyline": -197,
       "homeNetRtg": 2.3,
       "homePDpg": 2.3,
-      "homeScore": null,
+      "homeScore": 121.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -114,
       "netRtgGap": 31.04,
       "pick": "Memphis Grizzlies",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 164.0,
+      "pickSpreadReturn": 94.34,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -86,7 +86,8 @@
           "record": "869-769",
           "says": "fade",
           "team": "Memphis Grizzlies",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -100,7 +101,8 @@
           "record": "824-742",
           "says": "fade",
           "team": "Memphis Grizzlies",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "7:00 PM ET",
@@ -114,13 +116,15 @@
           "name": "Revenge: under when the team that lost the last meeting at home by 10-19 is the underdog with the better record (on trial)",
           "backtest": "64.1% unders, 59-33 (2018-19 and 2021-22 to now); unseen 17-8; 2024-now 19-13"
         }
-      ]
+      ],
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "4-0",
       "altConfidence": "lean",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": true,
       "altPick": "Houston Rockets",
       "altReasons": [
         "Scoring margin: PD/g +8.3 (HOU) vs -2.4 (IND) \u2014 favors Houston",
@@ -133,17 +137,17 @@
         "Market: 72% of spread bets on Houston -7.5; line unchanged (7.5 open/now) \u2014 no reverse-line-movement \u2014 neutral",
         "Matchup splits: no specific mismatch verified \u2014 neutral"
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": 32.89,
+      "altSpreadReturn": 89.29,
       "away": "Houston Rockets",
       "awayMoneyline": -304,
       "awayNetRtg": 8.6,
       "awayPDpg": 8.3,
-      "awayScore": null,
+      "awayScore": 119.0,
       "awaySpread": -7.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 224.5,
       "gameTotalOverOdds": -113,
       "gameTotalUnderOdds": -107,
@@ -151,14 +155,14 @@
       "homeMoneyline": 247,
       "homeNetRtg": -2.5,
       "homePDpg": -2.4,
-      "homeScore": null,
+      "homeScore": 104.0,
       "homeSpread": 7.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 44.83,
       "pick": "Houston Rockets",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 32.89,
+      "pickSpreadReturn": 89.29,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -199,7 +203,8 @@
           "record": "118-137",
           "says": "back",
           "team": "Indiana Pacers",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -213,7 +218,8 @@
           "record": "869-769",
           "says": "fade",
           "team": "Houston Rockets",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -227,11 +233,16 @@
           "record": "360-302",
           "says": "fade",
           "team": "Houston Rockets",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 224.5
+      "totalsLine": 224.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "2-2",
@@ -256,7 +267,7 @@
       "awayMoneyline": 505,
       "awayNetRtg": -13.8,
       "awayPDpg": -13.6,
-      "awayScore": null,
+      "awayScore": 130.0,
       "awaySpread": 11.5,
       "awaySpreadOdds": -103,
       "confidence": "solid",
@@ -268,14 +279,14 @@
       "homeMoneyline": -700,
       "homeNetRtg": 0.2,
       "homePDpg": 0.3,
-      "homeScore": null,
+      "homeScore": 137.0,
       "homeSpread": -11.5,
       "homeSpreadOdds": -117,
       "netRtgGap": 44.83,
       "pick": "Miami Heat",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -322,7 +333,8 @@
           "pct": 54.0,
           "leans": "Milwaukee Bucks",
           "leanPct": 54.0,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -336,7 +348,8 @@
           "pct": 54.3,
           "leans": "Milwaukee Bucks",
           "leanPct": 54.3,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -350,11 +363,16 @@
           "pct": 54.4,
           "leans": "Milwaukee Bucks",
           "leanPct": 54.4,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 235.5
+      "totalsLine": 235.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "0-0",
@@ -379,11 +397,11 @@
       "awayMoneyline": -117,
       "awayNetRtg": 2.8,
       "awayPDpg": 2.8,
-      "awayScore": null,
+      "awayScore": 121.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -105,
       "confidence": "lean",
-      "correct": null,
+      "correct": true,
       "gameTotal": 221.5,
       "gameTotalOverOdds": -113,
       "gameTotalUnderOdds": -107,
@@ -391,14 +409,14 @@
       "homeMoneyline": -101,
       "homeNetRtg": -3.3,
       "homePDpg": -3.4,
-      "homeScore": null,
+      "homeScore": 116.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -115,
       "netRtgGap": 31.04,
       "pick": "Philadelphia 76ers",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 85.47,
+      "pickSpreadReturn": 95.24,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -439,11 +457,16 @@
           "record": "97-83",
           "says": "back",
           "team": "Philadelphia 76ers",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 221.5
+      "totalsLine": 221.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "2-2",
@@ -468,7 +491,7 @@
       "awayMoneyline": 128,
       "awayNetRtg": -10.9,
       "awayPDpg": -11.3,
-      "awayScore": null,
+      "awayScore": 137.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -480,7 +503,7 @@
       "homeMoneyline": -152,
       "homeNetRtg": -6.7,
       "homePDpg": -6.6,
-      "homeScore": null,
+      "homeScore": 107.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 10.35,
@@ -518,7 +541,8 @@
           "record": "118-137",
           "says": "back",
           "team": "Brooklyn Nets",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -532,7 +556,8 @@
           "record": "869-769",
           "says": "fade",
           "team": "Chicago Bulls",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "7:30 PM ET",
@@ -562,7 +587,7 @@
       "awayMoneyline": 205,
       "awayNetRtg": -7.9,
       "awayPDpg": -7.9,
-      "awayScore": null,
+      "awayScore": 103.0,
       "awaySpread": 6.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -574,7 +599,7 @@
       "homeMoneyline": -249,
       "homeNetRtg": -0.4,
       "homePDpg": 0.3,
-      "homeScore": null,
+      "homeScore": 99.0,
       "homeSpread": -6.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 27.59,
@@ -612,7 +637,8 @@
           "pct": 54.4,
           "leans": "Washington Wizards",
           "leanPct": 54.4,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -626,7 +652,8 @@
           "pct": 57.5,
           "leans": "Washington Wizards",
           "leanPct": 57.5,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "7:30 PM ET",
@@ -655,11 +682,11 @@
       "awayMoneyline": -264,
       "awayNetRtg": 5.4,
       "awayPDpg": 5.9,
-      "awayScore": null,
+      "awayScore": 122.0,
       "awaySpread": -6.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 226.5,
       "gameTotalOverOdds": -105,
       "gameTotalUnderOdds": -115,
@@ -667,14 +694,14 @@
       "homeMoneyline": 217,
       "homeNetRtg": -6.9,
       "homePDpg": -7.1,
-      "homeScore": null,
+      "homeScore": 109.0,
       "homeSpread": 6.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 51.72,
       "pick": "Detroit Pistons",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 37.88,
+      "pickSpreadReturn": 89.29,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -703,7 +730,11 @@
       ],
       "statsSpread": 4.5,
       "time": "8:00 PM ET",
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "1-1",
@@ -729,7 +760,7 @@
       "awayMoneyline": 221,
       "awayNetRtg": 1.7,
       "awayPDpg": 1.7,
-      "awayScore": null,
+      "awayScore": 117.0,
       "awaySpread": 6.5,
       "awaySpreadOdds": -113,
       "confidence": "skip",
@@ -741,7 +772,7 @@
       "homeMoneyline": -270,
       "homeNetRtg": 5.2,
       "homePDpg": 5,
-      "homeScore": null,
+      "homeScore": 112.0,
       "homeSpread": -6.5,
       "homeSpreadOdds": -107,
       "netRtgGap": 13.8,
@@ -779,7 +810,8 @@
           "record": "103-69",
           "says": "fade",
           "team": "Oklahoma City Thunder",
-          "weight": 2
+          "weight": 2,
+          "result": "hit"
         }
       ],
       "time": "8:00 PM ET",
@@ -793,7 +825,9 @@
           "name": "Under when the home team is back from a 20+ road win, now vs. a weaker team (on trial)",
           "backtest": "61.2% unders, 90-57 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 33-24"
         }
-      ]
+      ],
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     },
     {
       "altCategoryTally": "1-2",
@@ -819,7 +853,7 @@
       "awayMoneyline": 164,
       "awayNetRtg": 2.5,
       "awayPDpg": 2.5,
-      "awayScore": null,
+      "awayScore": 94.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -106,
       "confidence": "skip",
@@ -831,7 +865,7 @@
       "homeMoneyline": -197,
       "homeNetRtg": -2.5,
       "homePDpg": -2.5,
-      "homeScore": null,
+      "homeScore": 116.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -115,
       "netRtgGap": 24.14,
@@ -879,11 +913,16 @@
           "record": "824-742",
           "says": "fade",
           "team": "Golden State Warriors",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 225.5
+      "totalsLine": 225.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "2-1",
@@ -908,11 +947,11 @@
       "awayMoneyline": -142,
       "awayNetRtg": 12.1,
       "awayPDpg": 11.5,
-      "awayScore": null,
+      "awayScore": 101.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
-      "correct": null,
+      "correct": false,
       "gameTotal": 218.5,
       "gameTotalOverOdds": -113,
       "gameTotalUnderOdds": -107,
@@ -920,14 +959,14 @@
       "homeMoneyline": 120,
       "homeNetRtg": 0.7,
       "homePDpg": 0.6,
-      "homeScore": null,
+      "homeScore": 105.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 48.27,
       "pick": "Boston Celtics",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -952,7 +991,7 @@
       "altCategoryTally": "0-4",
       "altConfidence": "lean",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": false,
       "altPick": "Los Angeles Lakers",
       "altReasons": [
         "Scoring margin: PD/g +7.7 (LAL) vs -8.6 (UTA) \u2014 favors LAL; using Utah's own (already bad) PD/g reinforces this independent of the Markkanen injury",
@@ -966,12 +1005,12 @@
         "Matchup splits: no specific mismatch verified \u2014 neutral"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": -100.0,
       "away": "Utah Jazz",
       "awayMoneyline": 341,
       "awayNetRtg": -10.9,
       "awayPDpg": -8.6,
-      "awayScore": null,
+      "awayScore": 109.0,
       "awaySpread": 10.5,
       "awaySpreadOdds": -118,
       "confidence": "solid",
@@ -983,14 +1022,14 @@
       "homeMoneyline": -437,
       "homeNetRtg": 7.9,
       "homePDpg": 7.7,
-      "homeScore": null,
+      "homeScore": 97.0,
       "homeSpread": -10.5,
       "homeSpreadOdds": -103,
       "netRtgGap": 72.42,
       "pick": "Los Angeles Lakers",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -1021,7 +1060,8 @@
           "pct": 54.0,
           "leans": "Utah Jazz",
           "leanPct": 54.0,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -1035,7 +1075,8 @@
           "pct": 56.7,
           "leans": "Utah Jazz",
           "leanPct": 56.7,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -1049,7 +1090,8 @@
           "pct": 55.4,
           "leans": "Utah Jazz",
           "leanPct": 55.4,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "10:00 PM ET",
@@ -1058,8 +1100,8 @@
     {
       "altCategoryTally": "4-0",
       "altConfidence": "lean",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": true,
       "altPick": "Phoenix Suns",
       "altReasons": [
         "Scoring margin: PD/g -3.4 (PHX) vs -13.4 (SAC) \u2014 favors Phoenix; Phoenix's best player (Booker) is healthy, Sacramento's likely best player (LaVine) is questionable, reinforcing the gap",
@@ -1072,13 +1114,13 @@
         "Market: only 17% of tickets but 52% of the money on Sacramento (the home underdog) \u2014 a notable split, but it doesn't meet the tested 60%+-tickets-on-a-7+pt-dog pattern and the file's rlmFavorite flag is null \u2014 neutral",
         "Matchup splits: no specific mismatch verified \u2014 neutral"
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": 38.91,
+      "altSpreadReturn": 86.96,
       "away": "Phoenix Suns",
       "awayMoneyline": -257,
       "awayNetRtg": -3.5,
       "awayPDpg": -3.4,
-      "awayScore": null,
+      "awayScore": 128.0,
       "awaySpread": -6.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -1090,7 +1132,7 @@
       "homeMoneyline": 211,
       "homeNetRtg": -13.4,
       "homePDpg": -13.4,
-      "homeScore": null,
+      "homeScore": 107.0,
       "homeSpread": 6.5,
       "homeSpreadOdds": -106,
       "netRtgGap": 27.58,
@@ -1128,7 +1170,8 @@
           "pct": 54.3,
           "leans": "Sacramento Kings",
           "leanPct": 54.3,
-          "against": false
+          "against": false,
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -1142,11 +1185,13 @@
           "pct": 54.4,
           "leans": "Sacramento Kings",
           "leanPct": 54.4,
-          "against": false
+          "against": false,
+          "result": "miss"
         }
       ],
       "time": "10:00 PM ET",
       "totalsLine": 227.5
     }
-  ]
+  ],
+  "scoredAt": "2026-11-19T12:53:53.036240+00:00"
 }
