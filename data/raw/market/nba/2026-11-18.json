@@ -1,7 +1,7 @@
 {
  "date": "2026-11-18",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-19T02:00:06+00:00",
+ "fetchedAt": "2026-11-19T02:25:33+00:00",
  "games": [
   {
    "away": "Houston Rockets",
@@ -222,7 +222,7 @@
     "money_home": 47
    },
    "total": {
-    "now": 219,
+    "now": 218.5,
     "open": 220.5,
     "tix_over": 78,
     "money_over": 74
@@ -274,8 +274,8 @@
     "money_over": 55
    },
    "moneyline": {
-    "home": 230,
-    "away": -285
+    "home": 225,
+    "away": -275
    },
    "rlmFavorite": null
   }
