@@ -336,6 +336,11 @@ details.tv table{min-width:0;}
 .tier .stacked,.why summary .stacked,.logtbl .stacked{display:inline-block;margin-left:4px;padding:0 5px;border-radius:4px;font-weight:700;color:var(--mine-ink);background:var(--mine-soft);}
 .stackrow td{font-weight:600;}
 details.why{font-size:12px;color:var(--muted);}
+.h2hbox{margin:8px 0 2px;padding:8px 12px;border:1px solid var(--rule-2);border-radius:10px;background:var(--surface-2);font-size:12.5px;}
+.h2hbox .h2hh{display:flex;flex-wrap:wrap;gap:2px 10px;align-items:baseline;margin-bottom:4px;} .h2hbox .h2hh b:first-child{font-weight:800;}
+.h2hbox details > summary{cursor:pointer;color:var(--muted);font-size:12px;padding:4px 0;} .h2hg{display:grid;grid-template-columns:52px 1fr;gap:2px 10px;padding:5px 0;border-top:1px solid var(--rule-2);align-items:baseline;}
+.h2hg .hd{color:var(--muted);font-size:11.5px;white-space:nowrap;} .h2hg .hs{font-weight:700;} .h2hg .hx{grid-column:2;color:var(--muted);font-size:12px;}
+.h2hg .hx b{color:var(--ink);font-weight:600;} .h2hbox .w{color:var(--win);} .h2hbox .l{color:var(--loss);}
 .lmrow{margin:8px 0 2px;padding:7px 12px;border:1px solid var(--rule-2);border-radius:10px;background:var(--surface-2);font-size:12.5px;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;}
 .lmrow .lmh{font-weight:800;} .lmrow .lmi{white-space:nowrap;} .lmrow .lma{color:var(--muted);} .lmrow .lmz{color:var(--muted);}
 .lmrow .lmtag{display:inline-block;font-size:10.5px;font-weight:700;border-radius:4px;padding:0 5px;margin-left:4px;background:#e07b00;color:#fff;vertical-align:1px;}
@@ -1484,6 +1489,35 @@ footer b{color:var(--ink);}
       + '<p class="dvnote">Per game this season to each position: quarterbacks, running backs (fullbacks included), wide receivers and tight ends (#1 = allows the most; green = more than the league average, red = less). Under each player, his average a game, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average. Positions from ESPN\'s team rosters.' + (sport==='ncaab' || sport==='cfb' ? ' <b>College:</b> only games of teams that have been on our '+(sport==='cfb'?'CFB':'NCAAB')+' slates are saved, so ranks are among those teams\' defenses (3+ saved games) and the averages come from those games'+(sport==='ncaab' ? '; guards split by assists, forwards by rebounds (8+ per 36 min = PF)' : '; college box scores have no targets')+'.' : '')+'</p>'
       + body + '</details>';
   }
+  // Earlier meetings this season between tonight's two teams (DATA.h2h from
+  // head_to_head in build_site.py): score, who covered the closing spread, and
+  // the total against its line.
+  function h2hBlock(sport, g){
+    var R = (DATA.h2h || {})[g.id]; if(!R || !R.length) return '';
+    var SOC = sport === 'soccer' || sport === 'epl', A = teamAbbr(g.away), H = teamAbbr(g.home);
+    var same = function(x, y){ return x === y || teamAbbr(x) === teamAbbr(y); };
+    var wA = 0, wH = 0, dr = 0, cA = 0, cH = 0, cp = 0;
+    var rows = R.map(function(r, idx){
+      var aw = r[1], hm = r[2], as = r[3], hs = r[4], sp = r[5], tot = r[6], m = hs - as;
+      var winner = m > 0 ? hm : m < 0 ? aw : null;
+      if(winner == null) dr++; else if(same(winner, g.away)) wA++; else wH++;
+      var x = [];
+      x.push(winner ? '<b>'+esc(teamAbbr(winner))+'</b> won by '+Math.abs(m) : 'Draw');
+      if(num(sp) && !SOC){
+        var c = m + sp, fav = sp < 0 ? hm : aw;
+        var cov = c > 0 ? hm : c < 0 ? aw : null;
+        if(cov == null) cp++; else if(same(cov, g.away)) cA++; else cH++;
+        x.push(esc(teamAbbr(fav))+' '+(sp === 0 ? 'PK' : '−'+Math.abs(sp))+': '+(cov ? '<b>'+esc(teamAbbr(cov))+'</b> covered by '+Math.abs(Math.round(c*10)/10) : 'push'));
+      }
+      if(num(tot)){ var o = Math.round((as + hs - tot)*10)/10; x.push('total '+(as + hs)+' vs '+tot+': <b class="'+(o > 0 ? 'w' : o < 0 ? 'l' : '')+'">'+(o > 0 ? 'OVER' : o < 0 ? 'UNDER' : 'PUSH')+'</b>'+(o ? ' by '+Math.abs(o) : '')); }
+      return (R.length > 4 && idx === 0 ? '<details><summary>Show '+(R.length - 4)+' earlier</summary>' : '')
+        + '<div class="h2hg"><span class="hd">'+esc(fmtDay(r[0]))+'</span><span class="hs">'+esc(teamAbbr(aw))+' '+as+' @ '+esc(teamAbbr(hm))+' '+hs+'</span><span class="hx">'+x.join(' · ')+'</span></div>'
+        + (R.length > 4 && idx === R.length - 5 ? '</details>' : '');
+    }).join('');
+    var rec = SOC ? esc(A)+' '+wA+'-'+dr+'-'+wH+' (W-D-L)' : (wA === wH ? 'split '+wA+'-'+wH : esc(wA > wH ? A : H)+' leads '+Math.max(wA, wH)+'-'+Math.min(wA, wH));
+    var ats = (cA + cH + cp) ? 'ATS: '+(cA === cH ? 'split '+cA+'-'+cH : esc(cA > cH ? A : H)+' '+Math.max(cA, cH)+'-'+Math.min(cA, cH))+(cp ? ', '+cp+' push' : '') : '';
+    return '<div class="h2hbox"><div class="h2hh"><b>⇄ Earlier this season</b><span>'+R.length+' meeting'+(R.length > 1 ? 's' : '')+' · '+rec+(ats ? ' · '+ats : '')+'</span></div>'+rows+'</div>';
+  }
   // Line-move check (scripts/line_moves.py): the spread, total and moneyline as
   // they opened and now (DraftKings via ESPN), kept at the last pre-game look once
   // a game starts (about the close); NBA adds the public betting split.
@@ -2489,6 +2523,7 @@ footer b{color:var(--ink);}
       + resultStrip(sport, g)
       + leanMeter(sport, g)
       + lineMoveRow(sport, g)
+      + h2hBlock(sport, g)
       + starterAlert(sport, g)
       + '<div class="models">'+models+'</div>'+pieRow(sport, g)+dvpBlock(sport, g)+dvpNflBlock(sport, g)+atsTrend(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
       + stat + checks + reasons
@@ -2527,7 +2562,7 @@ footer b{color:var(--ink);}
   }
   // ---- slate date picker: past slates (slates/<date>.json) shown view-only ----
   var LATEST = null, VIEW_PAST = false;
-  var SLATE_KEYS = ['slate','myPicks','myTotals','myProps','myScores','atsTrend','ouTrend','atsNext','rosters','dvp','dvpNfl','dvpNcaab','dvpCfb'];
+  var SLATE_KEYS = ['slate','myPicks','myTotals','myProps','myScores','atsTrend','ouTrend','atsNext','h2h','rosters','dvp','dvpNfl','dvpNcaab','dvpCfb'];
   function slateDateLabel(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',timeZone:'UTC'}); }
   function slatePicker(){
     var cur = DATA.slate.date, latest = LATEST ? LATEST.slate.date : cur, short = function(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'}); };

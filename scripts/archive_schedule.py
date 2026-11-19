@@ -5,7 +5,8 @@ games" (after tonight's game, on the same calendar as the bars).
 Writes data/raw/schedule/<sport>.json:
   {"fetched": ISO time of the last look ahead,
    "done": [past dates saved for good],
-   "dates": {Eastern date: [[away, home, away record, home record, ESPN event id], ...]}}
+   "dates": {Eastern date: [[away, home, away record, home record, ESPN event id,
+                             away score, home score (finished games, else None)], ...]}}
 with ESPN's team names. A record is the team's overall record going into
 that game: for a game not yet played, its record when it was last looked at
 (the look ahead refreshes every few hours, so the night before it's current);
@@ -62,6 +63,13 @@ def _save(path, data):
         f.write("\n")
 
 
+def _num(v):
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
 def _rec(c, other, completed, post):
     if completed:
         return record_before(c, other, post)
@@ -95,8 +103,10 @@ def _rows(evs):
         done = bool(st.get("completed"))
         post = (ev.get("season") or {}).get("type") == 3
         a, h = t["away"], t["home"]
+        score = lambda c: _num(c.get("score")) if done else None  # noqa: E731
         by.setdefault(d, {})[str(ev["id"])] = [a["team"]["displayName"], h["team"]["displayName"],
-                                               _rec(a, h, done, post), _rec(h, a, done, post), str(ev["id"])]
+                                               _rec(a, h, done, post), _rec(h, a, done, post), str(ev["id"]),
+                                               score(a), score(h)]
         fin[d] = fin.get(d, True) and done
     return by, fin
 
@@ -117,6 +127,8 @@ def main():
         path = os.path.join(OUT, f"{sport}.json")
         data = _load(path)
         dates, done = data.setdefault("dates", {}), set(data.get("done") or [])
+        # rows saved before final scores were kept (5 fields) are fetched again once
+        done -= {d for d in done if any(len(r) < 7 for r in dates.get(d) or [])}
         try:
             fresh = now - datetime.fromisoformat(data.get("fetched")) < timedelta(hours=LOOKAHEAD_HOURS)
         except (TypeError, ValueError):

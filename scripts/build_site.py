@@ -96,6 +96,7 @@ def _team_key(name):
 
 
 _LINES = {}
+H2H_START = {"nba": "2026-10-20", "nfl": "2026-09-09", "mlb": "2026-03-25"}
 
 
 def closing_total(sport, date_str, g):
@@ -343,11 +344,16 @@ def next_games(slate_date, slate_sports):
                 _SCHED[sport] = []
         later = [(d, rows) for d, rows in _SCHED[sport] if d > slate_date]
         res = {}
+        full = {}
+        for g in today:
+            fa, fh = resolve_teams(sport, slate_date, g.get("away"), g.get("home"))
+            full[g.get("away")], full[g.get("home")] = fa, fh
         for t in {t for g in today for t in (g.get("away"), g.get("home")) if t}:
+            ft = full.get(t, t)
             nxt = []
             for d, rows in later:
                 for r in rows:
-                    me = 1 if (r[1] == t or _same_team(r[1], t)) else 0 if (r[0] == t or _same_team(r[0], t)) else None
+                    me = 1 if r[1] == ft else 0 if r[0] == ft else None
                     if me is None:
                         continue
                     nxt.append([d, r[0] if me else r[1], me, None if sport == "soccer" else (r[2] if me else r[3])])
@@ -358,6 +364,123 @@ def next_games(slate_date, slate_sports):
                 res[t] = nxt
         if res:
             out[sport] = res
+    return out
+
+
+def _sched_rows(sport):
+    if sport not in _SCHED:
+        try:
+            with open(os.path.join(store.REPO_ROOT, "data", "raw", "schedule", f"{sport}.json"), encoding="utf-8") as f:
+                _SCHED[sport] = sorted((json.load(f).get("dates") or {}).items())
+        except (OSError, ValueError):
+            _SCHED[sport] = []
+    return _SCHED[sport]
+
+
+def _name_fit(full, short):
+    """How well ESPN's full team name fits a slate's name: 3 exact, 2 the slate
+    name plus a one-word mascot (or a known two-word one), 1 a looser match, 0 none.
+    "Texas" fits "Texas Longhorns" (2), not "Texas A&M Aggies" (1)."""
+    from score_slate import _same_team
+    if full == short:
+        return 3
+    if full.startswith(short + " "):
+        rest = full[len(short) + 1:]
+        if " " not in rest or rest in TWO_WORD_MASCOTS:
+            return 2
+    return 1 if _same_team(full, short) else 0
+
+
+TWO_WORD_MASCOTS = {"Crimson Tide", "Blue Devils", "Fighting Illini", "Golden Gophers", "Tar Heels", "Red Raiders", "Sun Devils",
+                    "Nittany Lions", "Yellow Jackets", "Scarlet Knights", "Mean Green", "Rainbow Warriors", "Golden Eagles",
+                    "Blue Raiders", "Red Wolves", "Wolf Pack", "Golden Flashes", "Black Knights", "Fighting Irish", "Demon Deacons",
+                    "Horned Frogs", "Golden Hurricane", "Thundering Herd", "Ragin' Cajuns", "Blue Hens", "Green Wave", "Golden Bears",
+                    "Red Storm", "Blue Jays", "Golden Griffins", "Purple Eagles", "Great Danes", "River Hawks", "Big Red", "Big Green",
+                    "Mountain Hawks", "Fighting Hawks", "Golden Lions", "Blue Hose", "Red Flash", "Black Bears", "Sea Wolves",
+                    "Trail Blazers", "Red Foxes", "Fighting Camels", "Golden Grizzlies", "Purple Aces", "Golden Panthers"}
+
+
+def resolve_teams(sport, date_str, away, home):
+    """ESPN's full names for a slate game's two teams, from the schedule game
+    that date (or a day either side) that fits both names best; else the slate's."""
+    from datetime import date as _date, timedelta as _td
+    best, fit = (away, home), 0
+    try:
+        d0 = _date.fromisoformat(date_str)
+    except (TypeError, ValueError):
+        return best
+    days = {(d0 + _td(days=k)).isoformat() for k in (-1, 0, 1)}
+    for d, rows in _sched_rows(sport):
+        if d not in days:
+            continue
+        for r in rows:
+            fa, fh = _name_fit(r[0], away), _name_fit(r[1], home)
+            if fa and fh and fa + fh > fit:
+                best, fit = (r[0], r[1]), fa + fh
+    return best
+
+_LINES_BY_ID = {}
+
+
+def _closing(sport, eid):
+    """(home closing spread, closing total) from data/raw/<sport>_lines.csv by ESPN id."""
+    if sport not in _LINES_BY_ID:
+        _LINES_BY_ID[sport] = {}
+        path = os.path.join(store.REPO_ROOT, "data", "raw", f"{sport}_lines.csv")
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                for r in csv.DictReader(f):
+                    _LINES_BY_ID[sport][r.get("game_id")] = r
+    r = _LINES_BY_ID[sport].get(str(eid)) or {}
+    num = lambda v: float(v) if v not in (None, "") else None  # noqa: E731
+    try:
+        return num(r.get("spread_close")), num(r.get("total_close"))
+    except ValueError:
+        return None, None
+
+
+def head_to_head(all_docs, slate_date, slate_sports):
+    """{game id: [[date, away, home, away score, home score, home spread, total], ...]}:
+    this season's earlier meetings between each slate game's two teams, from
+    data/raw/schedule/<sport>.json (archive_schedule.py: every game with its final
+    score), the closing spread and total from the lines files, else our slate's."""
+    from score_slate import _same_team
+    from archive_schedule import CFG
+    out = {}
+    for sport, sp in (slate_sports or {}).items():
+        games = sp.get("games") or []
+        if not games or sport not in CFG:
+            continue
+        if sport not in _SCHED:
+            try:
+                with open(os.path.join(store.REPO_ROOT, "data", "raw", "schedule", f"{sport}.json"), encoding="utf-8") as f:
+                    _SCHED[sport] = sorted((json.load(f).get("dates") or {}).items())
+            except (OSError, ValueError):
+                _SCHED[sport] = []
+        start = H2H_START.get(sport, CFG[sport][0])   # regular season only (the schedule has preseason games)
+        past = [(d, r) for d, rows in _SCHED[sport] if start <= d < slate_date for r in rows if len(r) > 6 and r[5] is not None]
+        slates = {d: doc for d, doc in all_docs.get(sport, []) if start <= d < slate_date}
+        same = lambda a, b: a == b or _same_team(a, b)  # noqa: E731
+        for g in games:
+            A, H = resolve_teams(sport, slate_date, g.get("away"), g.get("home"))
+            rows = []
+            for d, r in past:
+                if not ((r[0] == A and r[1] == H) or (r[0] == H and r[1] == A)):
+                    continue
+                hs, tot = _closing(sport, r[4])
+                if hs is None or tot is None:
+                    for sg in (slates.get(d) or {}).get("games", []):
+                        if same(sg.get("away", ""), r[0]) and same(sg.get("home", ""), r[1]):
+                            if hs is None:
+                                v = sg.get("statsSpread") if sport == "nba" else None
+                                hs = v if isinstance(v, (int, float)) else sg.get("homeSpread") if isinstance(sg.get("homeSpread"), (int, float)) else None
+                            if tot is None:
+                                v = sg.get("gameTotal", sg.get("totalsLine"))
+                                tot = v if isinstance(v, (int, float)) else None
+                            break
+                rows.append([d, r[0], r[1], r[5], r[6], hs, tot])
+            if rows:
+                out[g["id"]] = rows
     return out
 
 def backtest_wl(text):
@@ -629,6 +752,7 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
         "atsTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}),
         "ouTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}, totals=True),
         "atsNext": next_games(slate.get("date"), slate.get("sports") or {}),
+        "h2h": head_to_head(all_docs, slate.get("date"), slate.get("sports") or {}),
         "dvp": nba_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
                                               for g in (slate.get("sports") or {}).get("nba", {}).get("games", [])]),
         "dvpNfl": nfl_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
@@ -854,6 +978,7 @@ def build():
         "atsTrend": cur["atsTrend"],
         "ouTrend": cur["ouTrend"],
         "atsNext": cur["atsNext"],
+        "h2h": cur["h2h"],
         "dvp": cur["dvp"],
         "dvpNfl": cur["dvpNfl"],
         "dvpNcaab": cur["dvpNcaab"],

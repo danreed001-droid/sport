@@ -506,6 +506,20 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (under the lean meter) flags a big move (2+ basketball, 1.5+ football),
   football crossing 3 or 7, and a spread move against a 60%+ public side.
   The starter-out box drops its own line text when this row is there.
+- **Earlier this season** (2026-11-19, the user's ask: "a record of in-season
+  games already played between the teams in the slate"): `head_to_head` in
+  build_site.py (`h2h` in slate payloads, so past slates too) lists this
+  season's earlier meetings of each game's two teams from
+  `data/raw/schedule/<sport>.json` (archive_schedule.py now keeps final scores,
+  row[5]/row[6]; older rows were re-fetched once), regular season on
+  (`H2H_START`: NBA 10-20, NFL 09-09, MLB 03-25; postseason included), with
+  the closing spread and total from `data/raw/<sport>_lines.csv` by ESPN id,
+  else our slate's. The card's `h2hBlock` (under the line-move row): series
+  record, ATS record, each game's score, who covered, total over/under; more
+  than 4 meetings fold the earlier ones. Team names: `resolve_teams` finds
+  ESPN's full names from the schedule game that night (`_name_fit`: exact, or
+  the slate name plus a one-word or known two-word mascot), so "Texas" no
+  longer matches Texas A&M or "Missouri" Missouri State; `next_games` uses it too.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
