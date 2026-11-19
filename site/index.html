@@ -362,6 +362,10 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .ab-h{display:flex;align-items:center;gap:6px;font-size:12.5px;margin:10px 0 2px;}
 .ab-h > i{width:14px;height:3px;border-radius:2px;display:inline-block;}
 .abars{display:block;width:100%;height:auto;}
+.abwrap{position:relative;} .abtog{position:absolute;right:0;top:0;z-index:1;} .abtog button{font-size:11.5px;padding:3px 9px;}
+.abwrap .m-win{display:none;} html.abwin .abwrap .m-win{display:block;} html.abwin .abwrap .m-ats{display:none;}
+.abwrap .at-head{padding-right:170px;}
+@media (max-width:600px){.abtog{position:static;margin:4px 0 6px;} .abwrap .at-head{padding-right:0;}}
 .abars .grid0{stroke:var(--grid);stroke-width:1;}
 .abars .zero0{stroke:var(--axis);stroke-width:1.2;}
 .abars .bw{fill:#2e9e4f;} .abars .bl{fill:#d93a2f;} .abars .bp{fill:var(--push);}
@@ -1555,7 +1559,17 @@ footer b{color:var(--ink);}
   // "Game Results"): each bar is how much the team beat (green, up) or missed
   // (red, down) the closing spread, oldest to newest, then tonight's game in gray.
   // Under each bar: the opponent (@ = away) and its record going in, colored by it.
+  // ATS trend with a switch: "ATS" bars (cover margin) or "Win margin" bars (the
+  // final score margin, spread aside). Both are drawn; html.abwin shows the win
+  // bars on every card, remembered in localStorage.
   function atsBars(sport, g, A, H, N){
+    var win = false; try { win = localStorage.getItem('dl-abmode') === 'win'; } catch(e){}
+    document.documentElement.classList.toggle('abwin', win);
+    return '<div class="abwrap"><div class="segctl abtog" role="group" aria-label="Bars show"><button type="button" data-ab="ats" aria-pressed="'+(!win)+'">ATS</button><button type="button" data-ab="win" aria-pressed="'+win+'">Win margin</button></div>'
+      + '<div class="m-ats">'+abBuild(sport, g, A, H, N, false)+'</div><div class="m-win">'+abBuild(sport, g, A, H, N, true)+'</div></div>';
+  }
+  function abBuild(sport, g, A, H, N, WIN){
+    if(WIN){ var mg = function(r){ var q = r.slice(); q[2] = Math.round((r[2] - r[3])*10)/10; return q; }; A = A.map(mg); H = H.map(mg); }
     var PH = window.innerWidth < 600, gc = gameColors(g);
     var all = A.concat(H).map(function(r){ return Math.abs(r[2]); }), mx = Math.max.apply(null, all.concat([1]));
     var steps = [2, 5, 10, 15, 20, 25, 30, 40, 50], step = steps.filter(function(x){ return mx / x <= 3; })[0] || 50, top = Math.max(step, Math.ceil(mx / step) * step);
@@ -1609,7 +1623,7 @@ footer b{color:var(--ink);}
       rows.forEach(function(r, i){
         var cx = xs[i], v = r[2], y = ys(Math.max(v, 0)), h = Math.max(1.5, Math.abs(ys(v) - ys(0)));
         var cl = v > 0 ? 'bw' : v < 0 ? 'bl' : 'bp';
-        var tip = team+' — '+fmtDay(r[0])+' '+(r[4]?'vs ':'@ ')+r[1]+(r[6]?' ('+r[6]+')':'')+(gaps[i] ? ', '+(gaps[i] === 1 ? 'second night of a back-to-back' : (gaps[i]-1)+' day'+(gaps[i]===2?'':'s')+' off') : '')+' ('+sgn(r[3])+'): '+(v>0?'covered by '+v:v<0?'missed by '+(-v):'push')
+        var tip = team+' — '+fmtDay(r[0])+' '+(r[4]?'vs ':'@ ')+r[1]+(r[6]?' ('+r[6]+')':'')+(gaps[i] ? ', '+(gaps[i] === 1 ? 'second night of a back-to-back' : (gaps[i]-1)+' day'+(gaps[i]===2?'':'s')+' off') : '')+' ('+sgn(r[3])+'): '+(WIN ? (v>0?'won by '+v:v<0?'lost by '+(-v):'tied') : (v>0?'covered by '+v:v<0?'missed by '+(-v):'push'))
           + (r[5] && r[5].length ? ' · margin by '+qName(sport)+': '+r[5].map(function(q, j){ return qLabel(sport, j)+' '+fmt(q); }).join(', ') : '');
         out += '<g><title>'+esc(tip)+'</title><rect class="'+cl+'" x="'+(cx-bw/2).toFixed(1)+'" y="'+(v >= 0 ? y : ys(0)).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="2"></rect>'
           + '<text class="bv" x="'+cx.toFixed(1)+'" y="'+(v >= 0 ? ys(v) - 4 : ys(v) + (PH ? 15 : 11)).toFixed(1)+'" text-anchor="middle">'+fmt(v)+'</text>'
@@ -1619,10 +1633,10 @@ footer b{color:var(--ink);}
       out += '<g><title>'+esc(team+' — tonight '+(home?'vs ':'@ ')+opp+(tGap ? ', '+(tGap === 1 ? 'second night of a back-to-back' : (tGap-1)+' day'+(tGap===2?'':'s')+' off') : ''))+'</title><rect class="bt" x="'+(tx-bw/2).toFixed(1)+'" y="'+(y0-CH/7).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+(CH/3.5).toFixed(1)+'" rx="2"></rect>'
         + label(blocks[n]) + '</g>';
       var w = 0, l = 0, p = 0, sum = 0; rows.forEach(function(r){ if(r[2]>0) w++; else if(r[2]<0) l++; else p++; sum += r[2]; });
-      var head = '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+(rows.length ? w+'-'+l+(p?'-'+p:'')+' ATS, '+fmt(sum)+' in '+rows.length+' (avg '+fmt(sum/rows.length)+')' : 'no graded games yet')+'</div>';
-      return head + '<svg class="abars" viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+esc(team)+' against the spread, last '+N+' games">'+out+'</svg>';
+      var head = '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+(rows.length ? w+'-'+l+(p?'-'+p:'')+(WIN ? ', point margin ' : ' ATS, ')+fmt(sum)+' in '+rows.length+' (avg '+fmt(sum/rows.length)+')' : 'no graded games yet')+'</div>';
+      return head + '<svg class="abars" viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+esc(team)+(WIN ? ' win margins' : ' against the spread')+', last '+N+' games">'+out+'</svg>';
     };
-    return '<div class="atstrend"><div class="at-head"><b>ATS trend</b><span>each bar: how much the team beat (green) or missed (red) the closing spread, last '+N+' games on a calendar, one space per day (a back-to-back sits next to the night before; a dash on the zero line for each day not played), then tonight \u00b7 under each bar its rest (<b style="color:#e07b00">B2B</b> or days off), the opponent (@ = away) and its record going in, <span class="reckey">losing <i></i> winning</span> \u00b7 hover a bar for the spread and the '+qName(sport)+'s</span></div>'
+    return '<div class="atstrend"><div class="at-head"><b>'+(WIN ? 'Win margin trend' : 'ATS trend')+'</b><span>each bar: '+(WIN ? 'how much the team won (green) or lost (red) by, spread aside' : 'how much the team beat (green) or missed (red) the closing spread')+', last '+N+' games on a calendar, one space per day (a back-to-back sits next to the night before; a dash on the zero line for each day not played), then tonight \u00b7 under each bar its rest (<b style="color:#e07b00">B2B</b> or days off), the opponent (@ = away) and its record going in, <span class="reckey">losing <i></i> winning</span> \u00b7 hover a bar for the spread and the '+qName(sport)+'s</span></div>'
       + panel(A, g.away, g.home, false, gc[0]) + panel(H, g.home, g.away, true, gc[1])
       + quarterTable(sport, g, A, H, false, gc, true) + '</div>';
   }
@@ -2202,6 +2216,10 @@ footer b{color:var(--ink);}
     if(ab){ var dir = +ab.getAttribute('data-dir'); if(ab.getAttribute('data-kind')==='total') stepTotAlt(ab.getAttribute('data-id'), dir); else stepAlt(ab.getAttribute('data-id'), dir); }
     var po = e.target.closest('.pf-ou');
     if(po){ po.parentNode.querySelectorAll('.pf-ou').forEach(function(x){ x.setAttribute('aria-pressed', String(x===po)); }); }
+    var abt = e.target.closest('.abtog button');
+    if(abt){ var m = abt.getAttribute('data-ab'); try { localStorage.setItem('dl-abmode', m); } catch(err){}
+      document.documentElement.classList.toggle('abwin', m === 'win');
+      document.querySelectorAll('.abtog button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-ab') === m)); }); }
     var pa = e.target.closest('.pf-add');
     if(pa) (pa.classList.contains('tf-add') ? addTeamProp : addProp)(pa.getAttribute('data-id'));
     var px = e.target.closest('.propx');

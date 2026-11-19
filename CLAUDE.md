@@ -367,7 +367,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   an empty slot with a dash on the zero line (no cap: an NFL bye is a wide gap); each bar's
   label starts with its rest (orange "B2B" or "Nd off"; tonight's from the
   slate date), and a label that would overlap drops a level with a thin
-  connector.
+  connector. An "ATS | Win margin" switch (top right; phone, above) flips every
+  card's bars between the cover margin and the final score margin (r[2] -
+  r[3]): `atsBars` draws both via `abBuild(..., WIN)` and `html.abwin` picks
+  one, remembered in localStorage `dl-abmode`.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
