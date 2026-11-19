@@ -496,6 +496,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   top QB1/RB1/WR1-2/TE1 by usage a game (2+ games). The card's
   `starterAlert` (under the lean meter) adds the opponent defense's number vs
   that position from the matchup data. Context, not a pick.
+- **Line-move check** (2026-11-19, the user's ask): `scripts/line_moves.py`
+  (scoring run, every sport; NBA also in the game-time run) writes `lineMove` on
+  each game that hasn't started (repo-owned; frozen at the last pre-game look,
+  about the close): spread (home), total and moneyline as they opened and now
+  from ESPN pickcenter (DraftKings `pointSpread`/`total`/`moneyline` open/close;
+  soccer adds the draw), and for NBA the public split and rule 50's
+  `rlmFavorite` from `data/raw/market/nba/<date>.json`. The card's `lineMoveRow`
+  (under the lean meter) flags a big move (2+ basketball, 1.5+ football),
+  football crossing 3 or 7, and a spread move against a 60%+ public side.
+  The starter-out box drops its own line text when this row is there.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page

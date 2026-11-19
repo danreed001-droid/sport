@@ -67,6 +67,10 @@ jobs:
         continue-on-error: true
         run: python scripts/starter_out.py nba
 
+      - name: Line-move check (NBA)
+        continue-on-error: true
+        run: python scripts/line_moves.py nba
+
       - name: Commit and push changes
         if: always()
         run: |

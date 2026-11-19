@@ -161,6 +161,10 @@ jobs:
         continue-on-error: true
         run: python scripts/starter_out.py
 
+      - name: Line-move check (opening vs current lines, every sport)
+        continue-on-error: true
+        run: python scripts/line_moves.py
+
       - name: Grade your player props
         continue-on-error: true
         run: python scripts/grade_props.py

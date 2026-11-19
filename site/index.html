@@ -336,6 +336,10 @@ details.tv table{min-width:0;}
 .tier .stacked,.why summary .stacked,.logtbl .stacked{display:inline-block;margin-left:4px;padding:0 5px;border-radius:4px;font-weight:700;color:var(--mine-ink);background:var(--mine-soft);}
 .stackrow td{font-weight:600;}
 details.why{font-size:12px;color:var(--muted);}
+.lmrow{margin:8px 0 2px;padding:7px 12px;border:1px solid var(--rule-2);border-radius:10px;background:var(--surface-2);font-size:12.5px;display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;}
+.lmrow .lmh{font-weight:800;} .lmrow .lmi{white-space:nowrap;} .lmrow .lma{color:var(--muted);} .lmrow .lmz{color:var(--muted);}
+.lmrow .lmtag{display:inline-block;font-size:10.5px;font-weight:700;border-radius:4px;padding:0 5px;margin-left:4px;background:#e07b00;color:#fff;vertical-align:1px;}
+.lmrow .lmtag.sh{background:color-mix(in oklab, var(--ledger) 75%, #000);} .lmrow small{color:var(--muted);font-size:11px;width:100%;}
 .soalert{margin:8px 0 2px;border:1px solid color-mix(in oklab, var(--warn) 55%, transparent);border-radius:10px;background:color-mix(in oklab, var(--warn) 9%, var(--surface-2));}
 .soalert > summary{list-style:none;cursor:pointer;padding:8px 12px;font-size:13px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;}
 .soalert > summary::-webkit-details-marker{display:none;} .soalert > summary::after{content:'\25be';margin-left:auto;color:var(--muted);}
@@ -1480,6 +1484,46 @@ footer b{color:var(--ink);}
       + '<p class="dvnote">Per game this season to each position: quarterbacks, running backs (fullbacks included), wide receivers and tight ends (#1 = allows the most; green = more than the league average, red = less). Under each player, his average a game, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average. Positions from ESPN\'s team rosters.' + (sport==='ncaab' || sport==='cfb' ? ' <b>College:</b> only games of teams that have been on our '+(sport==='cfb'?'CFB':'NCAAB')+' slates are saved, so ranks are among those teams\' defenses (3+ saved games) and the averages come from those games'+(sport==='ncaab' ? '; guards split by assists, forwards by rebounds (8+ per 36 min = PF)' : '; college box scores have no targets')+'.' : '')+'</p>'
       + body + '</details>';
   }
+  // Line-move check (scripts/line_moves.py): the spread, total and moneyline as
+  // they opened and now (DraftKings via ESPN), kept at the last pre-game look once
+  // a game starts (about the close); NBA adds the public betting split.
+  function lineMoveRow(sport, g){
+    var M = g.lineMove; if(!M) return '';
+    var FB = sport === 'nfl' || sport === 'cfb', SOC = sport === 'soccer' || sport === 'epl';
+    var big = FB ? 1.5 : (sport === 'nba' || sport === 'ncaab') ? 2 : 99, now = g.final ? 'close' : 'now';
+    var H = teamAbbr(g.home), A = teamAbbr(g.away), parts = [], flags = [];
+    var odds = function(v){ return v > 0 ? '+'+v : String(v).replace('-', '−'); };
+    var line = function(v){ return v > 0 ? '+'+v : v < 0 ? '−'+(-v) : 'PK'; };
+    if(M.spread && num(M.spread[0]) && num(M.spread[1]) && !SOC){
+      var d = Math.round((M.spread[1] - M.spread[0])*10)/10, toward = d > 0 ? A : H;
+      var keyx = FB ? [3, 7].filter(function(k){ var a = Math.abs(M.spread[0]), b = Math.abs(M.spread[1]); return (a < k && b > k) || (a > k && b < k); }) : [];
+      parts.push('<span class="lmi"><b>Spread</b> '+esc(H)+' '+line(M.spread[0])+' → '+line(M.spread[1])+(d ? ' <span class="lma">'+Math.abs(d)+' toward '+esc(toward)+'</span>' : ' <span class="lmz">no move</span>')+'</span>');
+      if(Math.abs(d) >= big) flags.push('big move');
+      if(keyx.length) flags.push('crossed '+keyx.join(' & '));
+      var P = M.public;
+      if(P && num(P.betsHome) && d){
+        var pubHome = P.betsHome >= 60, pubAway = P.betsHome <= 40;
+        if((pubHome && d > 0) || (pubAway && d < 0)) flags.push('moved against the public');
+      }
+    }
+    if(M.total && num(M.total[0]) && num(M.total[1])){
+      var t = Math.round((M.total[1] - M.total[0])*10)/10;
+      parts.push('<span class="lmi"><b>Total</b> '+M.total[0]+' → '+M.total[1]+(t ? ' <span class="lma">'+(t > 0 ? '▲' : '▼')+Math.abs(t)+'</span>' : ' <span class="lmz">no move</span>')+'</span>');
+    }
+    var ml = M.ml || {};
+    if(ml.home && ml.away && num(ml.home[0]) && num(ml.home[1]))
+      parts.push('<span class="lmi"><b>ML</b> '+esc(H)+' '+odds(ml.home[0])+' → '+odds(ml.home[1])+' · '+esc(A)+' '+odds(ml.away[0])+' → '+odds(ml.away[1])+(ml.draw && SOC ? ' · draw '+odds(ml.draw[0])+' → '+odds(ml.draw[1]) : '')+'</span>');
+    if(!parts.length) return '';
+    var P2 = M.public, pub = '';
+    if(P2 && num(P2.betsHome)){
+      var hb = P2.betsHome >= 50, bp = hb ? P2.betsHome : 100 - P2.betsHome, mp = num(P2.moneyHome) ? (hb ? P2.moneyHome : 100 - P2.moneyHome) : null;
+      pub = '<span class="lmi"><b>Public</b> '+bp+'% of bets'+(mp != null ? ', '+mp+'% of money' : '')+' on '+esc(hb ? H : A)+'</span>';
+      if(P2.rlm) flags.push('sharp side '+teamAbbr(P2.rlm)+' (rule 50)');
+    }
+    return '<div class="lmrow"><span class="lmh">⇅ Line move</span>'+parts.join('')+pub
+      + flags.map(function(f){ return '<span class="lmtag'+(/sharp|against/.test(f) ? ' sh' : '')+'">'+esc(f)+'</span>'; }).join('')
+      + '<small>Opened → '+now+' at DraftKings (via ESPN)'+(g.final ? ', last look before the start' : '')+(P2 ? '; public split from Action Network' : '')+'. A big move or a move against the public usually means news or sharp money. Context, not a pick.</small></div>';
+  }
   // Starter-out alert (scripts/starter_out.py): regular starters ESPN lists as
   // out (or questionable) for this game, whether it's news (he played the last
   // game) or an absence the line has had time to price, the line's move since
@@ -1494,7 +1538,7 @@ footer b{color:var(--ink);}
     var sum = ['away','home'].map(function(sd){ var L = S[sd] || []; if(!L.length) return '';
       return '<span class="sop"><b>'+esc(teamAbbr(g[sd]))+'</b> '+L.map(function(e){ return esc(e.player.split(' ').slice(-1)[0])+' ('+e.pos+')'+tag(e); }).join(', ')+'</span>'; }).filter(Boolean).join(' · ');
     var ln = '';
-    if(S.line && num(S.line.open) && num(S.line.now)){
+    if(!g.lineMove && S.line && num(S.line.open) && num(S.line.now)){
       var mv = Math.round((S.line.now - S.line.open)*10)/10;
       ln = '<span class="soline">Line: '+esc(teamAbbr(g.home))+' opened <b>'+sgn(S.line.open)+'</b>, '+(g.final ? 'last seen' : 'now')+' <b>'+sgn(S.line.now)+'</b>'
         + (mv ? ' — moved '+Math.abs(mv)+' toward '+esc(teamAbbr(mv > 0 ? g.away : g.home)) : ' — no move')+' (DraftKings via ESPN)</span>';
@@ -2444,6 +2488,7 @@ footer b{color:var(--ink);}
       + matchupHeader(sport, g, who)
       + resultStrip(sport, g)
       + leanMeter(sport, g)
+      + lineMoveRow(sport, g)
       + starterAlert(sport, g)
       + '<div class="models">'+models+'</div>'+pieRow(sport, g)+dvpBlock(sport, g)+dvpNflBlock(sport, g)+atsTrend(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
       + stat + checks + reasons
