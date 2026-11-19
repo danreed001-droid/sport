@@ -96,7 +96,10 @@ def _team_key(name):
 
 
 _LINES = {}
-H2H_START = {"nba": "2026-10-20", "nfl": "2026-09-09", "mlb": "2026-03-25"}
+# Regular-season starts for head_to_head (the schedule archive has preseason
+# games). Not imported from archive_schedule.py: the Pages build has no curl_cffi.
+H2H_START = {"nba": "2026-10-20", "nfl": "2026-09-09", "mlb": "2026-03-25", "cfb": "2026-08-20",
+             "ncaab": "2026-11-01", "soccer": "2026-08-01"}
 
 
 def closing_total(sport, date_str, g):
@@ -445,11 +448,10 @@ def head_to_head(all_docs, slate_date, slate_sports):
     data/raw/schedule/<sport>.json (archive_schedule.py: every game with its final
     score), the closing spread and total from the lines files, else our slate's."""
     from score_slate import _same_team
-    from archive_schedule import CFG
     out = {}
     for sport, sp in (slate_sports or {}).items():
         games = sp.get("games") or []
-        if not games or sport not in CFG:
+        if not games or sport not in H2H_START:
             continue
         if sport not in _SCHED:
             try:
@@ -457,7 +459,7 @@ def head_to_head(all_docs, slate_date, slate_sports):
                     _SCHED[sport] = sorted((json.load(f).get("dates") or {}).items())
             except (OSError, ValueError):
                 _SCHED[sport] = []
-        start = H2H_START.get(sport, CFG[sport][0])   # regular season only (the schedule has preseason games)
+        start = H2H_START[sport]   # regular season only (the schedule has preseason games)
         past = [(d, r) for d, rows in _SCHED[sport] if start <= d < slate_date for r in rows if len(r) > 6 and r[5] is not None]
         slates = {d: doc for d, doc in all_docs.get(sport, []) if start <= d < slate_date}
         same = lambda a, b: a == b or _same_team(a, b)  # noqa: E731
