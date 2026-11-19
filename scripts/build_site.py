@@ -320,6 +320,46 @@ def ats_trends(all_docs, slate_date, slate_sports, totals=False):
                                               else (r[6] if len(r) > 6 else None)] for r in rows]
     return out
 
+_SCHED = {}
+NEXT_GAMES = 3
+
+
+def next_games(slate_date, slate_sports):
+    """{sport: {slate team: [[date, opponent, home (1/0), opponent's record], ...]}}:
+    each slate team's next NEXT_GAMES games after the slate's date, from
+    data/raw/schedule/<sport>.json (archive_schedule.py), for the trend bars.
+    Soccer records are left off (ESPN's are per competition)."""
+    from score_slate import _same_team
+    out = {}
+    for sport in TREND_GAMES:
+        today = (slate_sports.get(sport) or {}).get("games") or []
+        if not today or not slate_date:
+            continue
+        if sport not in _SCHED:
+            try:
+                with open(os.path.join(store.REPO_ROOT, "data", "raw", "schedule", f"{sport}.json"), encoding="utf-8") as f:
+                    _SCHED[sport] = sorted((json.load(f).get("dates") or {}).items())
+            except (OSError, ValueError):
+                _SCHED[sport] = []
+        later = [(d, rows) for d, rows in _SCHED[sport] if d > slate_date]
+        res = {}
+        for t in {t for g in today for t in (g.get("away"), g.get("home")) if t}:
+            nxt = []
+            for d, rows in later:
+                for r in rows:
+                    me = 1 if (r[1] == t or _same_team(r[1], t)) else 0 if (r[0] == t or _same_team(r[0], t)) else None
+                    if me is None:
+                        continue
+                    nxt.append([d, r[0] if me else r[1], me, None if sport == "soccer" else (r[2] if me else r[3])])
+                    break
+                if len(nxt) >= NEXT_GAMES:
+                    break
+            if nxt:
+                res[t] = nxt
+        if res:
+            out[sport] = res
+    return out
+
 def backtest_wl(text):
     """(wins, losses) from a rule's backtest text ("66.0% ATS, 97-50 (...)" or
     "60.0% ATS, n=100 (...)"), or (None, None) when it can't be read."""
@@ -588,6 +628,7 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
         "rosters": prop_rosters(slate) if with_rosters else {},
         "atsTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}),
         "ouTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}, totals=True),
+        "atsNext": next_games(slate.get("date"), slate.get("sports") or {}),
         "dvp": nba_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
                                               for g in (slate.get("sports") or {}).get("nba", {}).get("games", [])]),
         "dvpNfl": nfl_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
@@ -808,6 +849,7 @@ def build():
         "storyStrength": storyline_strength(all_docs),
         "atsTrend": cur["atsTrend"],
         "ouTrend": cur["ouTrend"],
+        "atsNext": cur["atsNext"],
         "dvp": cur["dvp"],
         "dvpNfl": cur["dvpNfl"],
         "slateDates": past_slate_dates(all_docs, slate_date),

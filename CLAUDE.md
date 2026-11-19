@@ -393,6 +393,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   postseason ESPN shows the final regular-season record, kept as is.
   MLB abbreviations: `MLB_ABBR` in site/index.html. Bar numbers are left off
   where bars are packed (MLB's daily games on a phone); the hover has them.
+  Next 3 games (2026-11-19, the user's ask): after tonight's gray bar, each
+  team's next 3 games sit on the same calendar as dashed empty outlines (white
+  dashes at home) with rest, opponent and its record (`atsNext`, `next_games`
+  in build_site.py; soccer without records, ESPN's are per competition). From
+  `scripts/archive_schedule.py` (each scoring run): `data/raw/schedule/<sport>.json`,
+  every game back to the season's start (past dates saved once, so a past slate
+  shows the games that followed it) and ahead (looked at again every 4 hours);
+  NBA/NFL/MLB a month per request, college a day at a time, soccer per league
+  (`SOCCER_LEAGUES`; a club in an unlisted competition shows fewer). Edge labels
+  are kept inside the chart (`lx`).
   Home games' bars have a white border (`.hm`, every sport, both views and
   tonight's bar; the user's call), with a thin dark ring on the light theme so
   it shows on a light background; a key in the chart's note.

@@ -141,6 +141,10 @@ jobs:
         continue-on-error: true
         run: python scripts/archive_linescores.py
 
+      - name: Save every team's schedule (trend charts' next 3 games)
+        continue-on-error: true
+        run: python scripts/archive_schedule.py
+
       - name: Save NBA player box scores (matchup by position)
         continue-on-error: true
         run: python scripts/archive_nba_player_box.py
