@@ -383,6 +383,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   postseason ESPN shows the final regular-season record, kept as is.
   MLB abbreviations: `MLB_ABBR` in site/index.html. Bar numbers are left off
   where bars are packed (MLB's daily games on a phone); the hover has them.
+  Home games' bars have a white border (`.hm`, every sport, both views and
+  tonight's bar; the user's call), with a thin dark ring on the light theme so
+  it shows on a light background; a key in the chart's note.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
