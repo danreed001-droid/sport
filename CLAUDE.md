@@ -353,6 +353,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   gray at .500 or 0-0 (`recColor`, `--recw`/`--recl`/`--recn`, with a key). Then a
   table of each team's average per period (`quarterTable`). The game dots'
   hovers list the quarters. Books' covers stay full-game.
+  ATS bars (2026-11-19, the user's call, from a Basketball-Reference "Game
+  Results" screenshot): the ATS trend is no longer a line -- `atsBars` draws
+  one panel per team, a bar per game for how much it beat (green, up) or
+  missed (red, down) the closing spread, oldest to newest, on a labelled scale,
+  then tonight's game as a gray dashed bar; under each bar the opponent (@ =
+  away; phone puts @/vs on its own line) and its record going in, colored by
+  it (`recShade`). Hovers give the spread and the quarters; `quarterTable`
+  (bars=true) keeps the per-quarter averages. The totals trend is still the
+  running line with quarter steps.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
