@@ -1,0 +1,150 @@
+{
+  "date": "2026-11-19",
+  "weekday": "Thursday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-19T06:42:57Z",
+  "games": [
+    {
+      "espnId": "401910019",
+      "away": "Golden State Warriors",
+      "home": "Memphis Grizzlies",
+      "time": "8:00 PM ET",
+      "homeSpread": -8.5,
+      "awaySpread": 8.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -334.0,
+      "awayMoneyline": 268.0,
+      "statsSpread": -8.5,
+      "statsLine": {
+        "homeSpread": -8.5,
+        "awaySpread": 8.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -334,
+        "awayMoneyline": 268
+      },
+      "totalsLine": 225.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-2",
+          "key": "ghost_town",
+          "name": "Ghost town",
+          "team": "Golden State Warriors",
+          "says": "fade",
+          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +8.5 underdog.",
+          "record": "824-742",
+          "pct": 52.6,
+          "leans": "Memphis Grizzlies",
+          "leanPct": 52.6,
+          "against": false
+        }
+      ]
+    },
+    {
+      "espnId": "401910020",
+      "away": "Portland Trail Blazers",
+      "home": "Milwaukee Bucks",
+      "time": "8:00 PM ET",
+      "homeSpread": 9.5,
+      "awaySpread": -9.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 282.0,
+      "awayMoneyline": -352.0,
+      "statsSpread": 9.5,
+      "statsLine": {
+        "homeSpread": 9.5,
+        "awaySpread": -9.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 282,
+        "awayMoneyline": -352
+      },
+      "totalsLine": 226.5
+    },
+    {
+      "espnId": "401910021",
+      "away": "New York Knicks",
+      "home": "Minnesota Timberwolves",
+      "time": "8:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 105.0,
+      "awayMoneyline": -124.0,
+      "statsSpread": 1.5,
+      "statsLine": {
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 105,
+        "awayMoneyline": -124
+      },
+      "statsFavors": "New York Knicks",
+      "statsRules": [
+        {
+          "rule": 47,
+          "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
+          "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
+          "detail": "Backing New York Knicks: New York Knicks lost the last meeting by 11 (New York Knicks 104 @ Minnesota Timberwolves 115, 2025-12-24) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22."
+        }
+      ],
+      "statsCheck": "Rule 47: Backing New York Knicks: New York Knicks lost the last meeting by 11 (New York Knicks 104 @ Minnesota Timberwolves 115, 2025-12-24) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
+      "totalsLine": 216.5
+    },
+    {
+      "espnId": "401910022",
+      "away": "LA Clippers",
+      "home": "San Antonio Spurs",
+      "time": "8:00 PM ET",
+      "homeSpread": -15.5,
+      "awaySpread": 15.5,
+      "homeSpreadOdds": -114.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": -1320.0,
+      "awayMoneyline": 800.0,
+      "statsSpread": -15.5,
+      "statsLine": {
+        "homeSpread": -15.5,
+        "awaySpread": 15.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -1320,
+        "awayMoneyline": 800
+      },
+      "statsFavors": "LA Clippers",
+      "statsRules": [
+        {
+          "rule": 45,
+          "name": "Revenge: back a team with the worse record after losing the last meeting by 10-19 as the favorite, its 2nd+ straight loss to them (on trial)",
+          "backtest": "64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16",
+          "detail": "Backing LA Clippers: LA Clippers lost the last meeting by 19 (San Antonio Spurs 118 @ LA Clippers 99, 2026-04-03) as the favorite, its 3 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16."
+        },
+        {
+          "rule": 55,
+          "name": "Back a road team in its first road game after 3+ straight at home, 1,000+ miles away, after a loss, with at least a day off (on trial)",
+          "backtest": "66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19",
+          "detail": "Backing LA Clippers: first road game after 3 straight at home, about 1,207 miles away, after losing 107-132 to Utah Jazz -- 66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19."
+        }
+      ],
+      "statsCheck": "Rule 45: Backing LA Clippers: LA Clippers lost the last meeting by 19 (San Antonio Spurs 118 @ LA Clippers 99, 2026-04-03) as the favorite, its 3 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16. Rule 55: Backing LA Clippers: first road game after 3 straight at home, about 1,207 miles away, after losing 107-132 to Utah Jazz -- 66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19.",
+      "totalsLine": 226.5,
+      "totalsFavors": "Under",
+      "totalsRules": [
+        {
+          "rule": 6,
+          "detail": "LA Clippers lost at home to Utah Jazz by 25 on 2026-11-17 (the worse-record team); now on the road vs. better-record San Antonio Spurs.",
+          "name": "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
+          "backtest": "62.2% unders, 107-65 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30"
+        }
+      ],
+      "totalsCheck": "Rule 6: LA Clippers lost at home to Utah Jazz by 25 on 2026-11-17 (the worse-record team); now on the road vs. better-record San Antonio Spurs."
+    }
+  ]
+}
