@@ -526,6 +526,86 @@ MODEL_SIDES = (("ledger", ledger_side), ("alt", alt_side), ("trend", trend_side)
                ("blowout", blowout_side), ("stats", stats_side), ("nflstats", nflstats_side), ("ncaabstats", ncaabstats_side))
 
 
+def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
+    """Everything the slate section of the pick sheet shows for one date: its
+    games (with results once final), your picks, over/unders and props on it,
+    and the trend charts as they stood going into that date. The latest date
+    goes in data.json; past dates are written to slates/<date>.json for the
+    sheet's date picker."""
+    slate = {"date": slate_date, "weekday": None, "sports": {}}
+    for sport, docs in all_docs.items():
+        for date_str, doc in docs:
+            if date_str != slate_date:
+                continue
+            slate["weekday"] = doc.get("weekday") or slate["weekday"]
+            games = []
+            for g in doc.get("games", []):
+                row = {k: g.get(k) for k in SLATE_FIELDS}
+                row["id"] = game_id(sport, date_str, g)
+                row["final"] = is_final(doc, g)
+                if row["final"]:
+                    row["results"] = {
+                        who: ({"sx": 1} if story_vetoed(date_str, g, side) else grade(sport, stats_view(g) if who == "stats" else g, side))
+                        for who, side in [(k, f(g)) for k, f in MODEL_SIDES]
+                        if side
+                    }
+                    t = totals_result(g)
+                    if t:
+                        row["results"]["totals"] = {"result": t}
+                games.append(row)
+            slate["sports"][sport] = {"label": sports.SPORTS[sport]["label"], "games": games}
+
+    committed = {}
+    for gid, p in mypicks.get(slate_date, {}).get("picks", {}).items():
+        entry = dict(p)
+        sport = p.get("sport")
+        game = next((g for g in slate["sports"].get(sport, {}).get("games", []) if g["id"] == gid), None)
+        if game:
+            game = mine_view(game, p)   # graded at the line you took
+            skip = ml_skip(sport, line_for(game, p["side"]))
+            entry["bigDog"] = skip == "dog"
+            entry["heavyFav"] = skip == "fav"
+            if game["final"]:
+                entry["result"] = grade(sport, game, p["side"])
+        committed[gid] = entry
+
+    my_totals = {}
+    for gid, t in mypicks.get(slate_date, {}).get("totals", {}).items():
+        entry = dict(t)
+        game = next((g for g in slate["sports"].get(t.get("sport"), {}).get("games", []) if g["id"] == gid), None)
+        if game and game["final"] and isinstance(t.get("line"), (int, float)):
+            entry["result"] = grade_total(game, t["side"], t["line"], t.get("odds"))
+        my_totals[gid] = entry
+
+    return {
+        "slate": slate,
+        "myPicks": committed,
+        "myTotals": my_totals,
+        "myProps": mypicks.get(slate_date, {}).get("props", {}),
+        "myScores": mypicks.get(slate_date, {}).get("scores", {}),
+        "rosters": prop_rosters(slate) if with_rosters else {},
+        "atsTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}),
+        "ouTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}, totals=True),
+    }
+
+
+# How far back the pick sheet's slate date picker goes (calendar days before the
+# latest slate). Each past date is its own small file, fetched only when picked.
+SLATE_HISTORY_DAYS = None   # None = every date this season
+
+
+def past_slate_dates(all_docs, latest):
+    """Dates before the latest slate that had at least one game, newest first."""
+    if not latest:
+        return []
+    days = {d for docs in all_docs.values() for d, doc in docs if d < latest and doc.get("games")}
+    if SLATE_HISTORY_DAYS:
+        from datetime import date as _d, timedelta
+        lo = (_d.fromisoformat(latest) - timedelta(days=SLATE_HISTORY_DAYS)).isoformat()
+        days = {d for d in days if d >= lo}
+    return sorted(days, reverse=True)
+
+
 def build():
     mypicks = load_mypicks()
     all_docs = {k: store.list_docs(cfg["collection"]) for k, cfg in sports.SPORTS.items()}
@@ -695,50 +775,8 @@ def build():
     nba_totals = nba_totals_record(all_docs.get("nba", []))
 
     slate_date = max((d for docs in all_docs.values() for d, _ in docs), default=None)
-    slate = {"date": slate_date, "weekday": None, "sports": {}}
-    for sport, docs in all_docs.items():
-        for date_str, doc in docs:
-            if date_str != slate_date:
-                continue
-            slate["weekday"] = doc.get("weekday") or slate["weekday"]
-            games = []
-            for g in doc.get("games", []):
-                row = {k: g.get(k) for k in SLATE_FIELDS}
-                row["id"] = game_id(sport, date_str, g)
-                row["final"] = is_final(doc, g)
-                if row["final"]:
-                    row["results"] = {
-                        who: ({"sx": 1} if story_vetoed(date_str, g, side) else grade(sport, stats_view(g) if who == "stats" else g, side))
-                        for who, side in [(k, f(g)) for k, f in MODEL_SIDES]
-                        if side
-                    }
-                    t = totals_result(g)
-                    if t:
-                        row["results"]["totals"] = {"result": t}
-                games.append(row)
-            slate["sports"][sport] = {"label": sports.SPORTS[sport]["label"], "games": games}
-
-    committed = {}
-    for gid, p in mypicks.get(slate_date, {}).get("picks", {}).items():
-        entry = dict(p)
-        sport = p.get("sport")
-        game = next((g for g in slate["sports"].get(sport, {}).get("games", []) if g["id"] == gid), None)
-        if game:
-            game = mine_view(game, p)   # graded at the line you took
-            skip = ml_skip(sport, line_for(game, p["side"]))
-            entry["bigDog"] = skip == "dog"
-            entry["heavyFav"] = skip == "fav"
-            if game["final"]:
-                entry["result"] = grade(sport, game, p["side"])
-        committed[gid] = entry
-
-    my_totals = {}
-    for gid, t in mypicks.get(slate_date, {}).get("totals", {}).items():
-        entry = dict(t)
-        game = next((g for g in slate["sports"].get(t.get("sport"), {}).get("games", []) if g["id"] == gid), None)
-        if game and game["final"] and isinstance(t.get("line"), (int, float)):
-            entry["result"] = grade_total(game, t["side"], t["line"], t.get("odds"))
-        my_totals[gid] = entry
+    cur = slate_payload(all_docs, mypicks, slate_date)
+    slate = cur["slate"]
 
     for block in [totals, *by_sport.values()]:
         for acc in block.values():
@@ -749,21 +787,22 @@ def build():
         "generatedAt": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "repo": REPO,
         "slate": slate,
-        "myPicks": committed,
-        "myTotals": my_totals,
-        "myProps": mypicks.get(slate_date, {}).get("props", {}),
-        "rosters": prop_rosters(slate),
+        "myPicks": cur["myPicks"],
+        "myTotals": cur["myTotals"],
+        "myProps": cur["myProps"],
+        "rosters": cur["rosters"],
         "propStats": {k: [[x[0], x[1], x[2]] for x in v] for k, v in props_lib.STATS.items()},
         "teamPropStats": {k: [[x[0], x[1], x[2]] for x in v] for k, v in props_lib.TEAM_STATS.items()},
-        "myScores": mypicks.get(slate_date, {}).get("scores", {}),
+        "myScores": cur["myScores"],
         "scoreboard": totals,
         "plays": sorted(plays + prop_log(mypicks), key=lambda p: p["d"]),
         "sportLabels": {k: cfg["label"] for k, cfg in sports.SPORTS.items()},
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
         "storyStrength": storyline_strength(all_docs),
-        "atsTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}),
-        "ouTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}, totals=True),
+        "atsTrend": cur["atsTrend"],
+        "ouTrend": cur["ouTrend"],
+        "slateDates": past_slate_dates(all_docs, slate_date),
         "storyVetoFrom": STORY_VETO_FROM,
         "storyVetoRemoved": STORY_VETO_REMOVED,
         "storyBacktest": storyline_buckets.BACKTEST,
@@ -878,6 +917,14 @@ def main():
     shutil.copytree(os.path.join(store.REPO_ROOT, "site", "icons"), os.path.join(out_dir, "icons"), dirs_exist_ok=True)
     payload = build()
     payload["pageVersion"] = version
+    # Past slates for the date picker: slates/<date>.json, same fields as data.json's slate part.
+    sdir = os.path.join(out_dir, "slates")
+    os.makedirs(sdir, exist_ok=True)
+    docs_all = {k: store.list_docs(cfg["collection"]) for k, cfg in sports.SPORTS.items()}
+    mp = load_mypicks()
+    for d in payload.get("slateDates") or []:
+        with open(os.path.join(sdir, f"{d}.json"), "w", encoding="utf-8") as f:
+            json.dump(slate_payload(docs_all, mp, d, with_rosters=False), f, ensure_ascii=False, separators=(",", ":"))
     with open(os.path.join(out_dir, "data.json"), "w", encoding="utf-8") as f:
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
     # Public results: every pick of yours, graded at the line you took (site/results.html).

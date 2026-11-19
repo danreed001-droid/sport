@@ -386,6 +386,17 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   Home games' bars have a white border (`.hm`, every sport, both views and
   tonight's bar; the user's call), with a thin dark ring on the light theme so
   it shows on a light background; a key in the chart's note.
+- Slate date picker (2026-11-19, the user's call): the slate bar's "Date" select
+  and ‹ › show any past slate as it stood -- games, results, model and your
+  picks, props, storylines, trend charts going into that day -- view only
+  (`.pastview`: pick buttons off, prop forms and the submit bar hidden; a note
+  with "Back to today"). `slate_payload` in build_site.py makes the slate part
+  of data.json for the latest date and `slates/<date>.json` (same keys, no
+  rosters) for every earlier date with games (`past_slate_dates`,
+  `SLATE_HISTORY_DAYS` None = all season; ~70 files, 3.8 MB, built in ~2 s,
+  each fetched only when picked; `_site` isn't committed). `data.json`'s
+  `slateDates` lists them. The page swaps `SLATE_KEYS` into DATA and redraws
+  only the slate (`rerenderSlate`); the dashboard and pick log don't change.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
