@@ -24,7 +24,8 @@ from lib.nba_stats_rules import RULE_BACKTEST, RULE_NAMES, STACKED_BACKTEST  # n
 from lib.nba_stats_rules import families as nba_families  # noqa: E402
 from lib import nba_totals_rules, ncaab_stats_rules, nfl_stats_rules, storyline_buckets  # noqa: E402
 from lib.results import build_results, lead_minutes, results_csv  # noqa: E402
-from lib import props as props_lib  # noqa: E402
+from lib import props as props_lib
+from lib import nba_dvp  # noqa: E402
 from lib.picks import game_id, grade, grade_total, is_final, line_for, mine_view, ml_skip, side_of, stats_view, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
@@ -586,6 +587,8 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
         "rosters": prop_rosters(slate) if with_rosters else {},
         "atsTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}),
         "ouTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}, totals=True),
+        "dvp": nba_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
+                                              for g in (slate.get("sports") or {}).get("nba", {}).get("games", [])]),
     }
 
 
@@ -802,6 +805,7 @@ def build():
         "storyStrength": storyline_strength(all_docs),
         "atsTrend": cur["atsTrend"],
         "ouTrend": cur["ouTrend"],
+        "dvp": cur["dvp"],
         "slateDates": past_slate_dates(all_docs, slate_date),
         "storyVetoFrom": STORY_VETO_FROM,
         "storyVetoRemoved": STORY_VETO_REMOVED,

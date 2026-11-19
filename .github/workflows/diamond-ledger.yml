@@ -141,6 +141,10 @@ jobs:
         continue-on-error: true
         run: python scripts/archive_linescores.py
 
+      - name: Save NBA player box scores (matchup by position)
+        continue-on-error: true
+        run: python scripts/archive_nba_player_box.py
+
       - name: Grade your player props
         continue-on-error: true
         run: python scripts/grade_props.py
