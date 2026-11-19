@@ -32,7 +32,7 @@ jobs:
     timeout-minutes: 15
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment2.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
         with:
@@ -54,7 +54,19 @@ jobs:
         with:
           path: _site
 
+      # GitHub's deploy step sometimes can't see the artifact just uploaded
+      # ("No artifacts named github-pages", 2026-11-19, twice in a row): wait
+      # and try once more.
       - id: deployment
+        continue-on-error: true
+        uses: actions/deploy-pages@v4
+
+      - name: Wait before retrying the deploy
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - id: deployment2
+        if: steps.deployment.outcome == 'failure'
         uses: actions/deploy-pages@v4
 
       - name: Publish data.json to the site-data branch
