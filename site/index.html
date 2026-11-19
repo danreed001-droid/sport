@@ -104,14 +104,21 @@ section.hero{border-top:0;}
 .dayres table{width:100%;min-width:0;border-collapse:collapse;font-size:13px;} .dayres td,.dayres th{text-align:left !important;} .dayres td:first-child{width:34%;} .dayres th{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:4px 6px;border-bottom:1px solid var(--rule);}
 .dayres td{padding:5px 6px;border-bottom:1px solid var(--rule);white-space:nowrap;}
 @media (max-width:600px){.dayres td.mono{white-space:normal;} .dayres td.mono span{display:block;font-size:12px;} .dayres td,.dayres th{padding:5px 4px;}} .dayres tr:last-child td{border-bottom:0;}
-.dvpbox{margin-top:8px;} .dvnote{font-size:12px;color:var(--muted);margin:6px 0;}
+.dvpbox{margin:10px 0 4px;border:1px solid var(--rule-2);border-radius:10px;background:var(--surface-2);}
+.dvpbox > summary{list-style:none;cursor:pointer;display:flex;align-items:center;flex-wrap:wrap;gap:4px 8px;padding:10px 12px;font-size:14px;}
+.dvpbox > summary::-webkit-details-marker{display:none;}
+.dvpbox > summary::after{content:'\25be';margin-left:auto;color:var(--muted);transition:transform .15s;}
+.dvpbox[open] > summary::after{transform:rotate(180deg);}
+.dvpbox .dvi{color:var(--ledger);font-size:15px;} .dvpbox .dvs{font-size:12px;color:var(--muted);}
+.dvpbox[open]{padding-bottom:6px;} .dvpbox[open] > :not(summary){margin-left:12px;margin-right:12px;} .dvnote{font-size:12px;color:var(--muted);margin:6px 0;}
 .dvh{margin:10px 0;} .dvh-h{display:flex;align-items:center;gap:5px;font-size:13px;margin-bottom:5px;}
 .dvgrid{display:grid;grid-template-columns:minmax(0,0.8fr) minmax(0,1.2fr);gap:10px;align-items:start;}
 @media (max-width:700px){.dvgrid{grid-template-columns:1fr;} table.dvp{table-layout:fixed;} table.dvp td:first-child,table.dvp th:first-child{width:36%;}
   .dvt td,.dvt th{padding:4px 3px;} table.dvp i{display:block;margin-left:0;font-size:9.5px;} .dvt td.dvn{font-size:11.5px;line-height:1.25;}}
 table.dvt{width:100%;min-width:0;border-collapse:collapse;font-size:12px;} .dvt th{font-size:9.5px;padding:4px 5px;text-align:right;} .dvt th:first-child{text-align:left;}
 .dvt td{padding:4px 5px;text-align:right;border-bottom:1px solid var(--rule);white-space:nowrap;} .dvt td:first-child{text-align:left;}
-.dvt td small{display:block;font-size:9.5px;color:var(--muted);} .dvt td.dvn{white-space:normal;}
+.dvt td small{display:block;font-size:9.5px;color:var(--muted);} .dvt td small.lb{font-size:9px;text-transform:uppercase;letter-spacing:.04em;}
+.dvcap{font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:2px 0 3px;} .dvt td.dvn{white-space:normal;}
 .dvt i{font-style:normal;font-size:10px;font-weight:700;margin-left:3px;} .dvt i.up{color:var(--win);} .dvt i.dn{color:var(--loss);}
 .rstrip{margin:8px 0 6px;padding:8px 10px 10px;border:1px solid var(--rule);border-radius:10px;background:var(--surface-2);font-size:13px;line-height:1.45;}
 .rtiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:4px;}
@@ -1373,8 +1380,42 @@ footer b{color:var(--ink);}
     };
     var body = half(x.away, x.home, g.away, g.home) + half(x.home, x.away, g.home, g.away);
     if(!body) return '';
-    return '<details class="why dvpbox"><summary style="color:var(--ink)">Matchup by position \u2014 what each defense allows</summary>'
+    return '<details class="dvpbox"><summary><span class="dvi">\u25a6</span><b>Matchup by position</b><span class="dvs">what each defense allows \u00b7 tap to open</span></summary>'
       + '<p class="dvnote">Per game this season to each position (#1 = allows the most; green = more than the league average, red = less). Under each player, his season average, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average. Positions: ESPN\'s guard / forward / center, guards split by assists (5+ per 36 min = PG) and forwards by height (6\'9" and up = PF).</p>'
+      + body + '</details>';
+  }
+  // NFL defense vs position (DATA.dvpNfl from lib/nfl_dvp.py): what each defense
+  // allows a game to QBs, RBs, WRs and TEs; each position has its own stats (_spec).
+  function dvpNflBlock(sport, g){
+    var D = DATA.dvpNfl || {}, x = D[g.id], L = D._league, SP = D._spec;
+    if(sport !== 'nfl' || !x || !L || !SP) return '';
+    var POS = ['QB','RB','WR','TE'];
+    var shade = function(v, lg){ var r = lg ? v / lg - 1 : 0, a = Math.round(Math.min(1, Math.abs(r) / 0.35) * 100);
+      return a < 8 ? '' : 'background:color-mix(in oklab, '+(r > 0 ? 'var(--win)' : 'var(--loss)')+' '+Math.round(a*0.5)+'%, transparent)'; };
+    var half = function(off, def, offName, defName){
+      var A = def.allows || {}, n = def.teams || 32;
+      if(!Object.keys(A).length) return '';
+      var tbl = '<table class="dvt nflt"><tbody>' + POS.filter(function(P){ return A[P]; }).map(function(P){
+        return '<tr><td><b>'+P+'</b></td>'+SP[P].map(function(s){ var c = A[P][s[0]], lg = L[P][s[0]];
+          return '<td style="'+shade(c[0], lg)+'" title="'+esc(teamAbbr(defName)+' allows '+c[0]+' '+s[1]+' a game to '+P+'s (#'+c[1]+' of '+n+'; league '+lg+')')+'"><small class="lb">'+s[1]+'</small><b>'+c[0]+'</b><small>#'+c[1]+'</small></td>'; }).join('')+'</tr>';
+      }).join('') + '</tbody></table>';
+      var pl = (off.players || []).map(function(r){
+        var P = r[1], st = r[3];
+        return '<tr><td class="dvn">'+esc(r[0])+' <span class="muted">'+P+' \u00b7 '+r[2]+'g</span></td>'+SP[P].map(function(s){
+          var v = st[s[0]], c = A[P] && A[P][s[0]], lg = L[P] && L[P][s[0]], f = c && lg ? c[0] / lg - 1 : 0;
+          var tag = f >= 0.12 ? '<i class="up">\u25b2'+Math.round(f*100)+'%</i>' : f <= -0.12 ? '<i class="dn">\u25bc'+Math.round(-f*100)+'%</i>' : '';
+          return '<td title="'+esc(r[0]+' averages '+v+' '+s[1]+'; '+teamAbbr(defName)+' allows '+(c?c[0]:'?')+' to '+P+'s vs league '+(lg||'?'))+'"><small class="lb">'+s[1]+'</small>'+v+tag+'</td>';
+        }).join('')+'</tr>';
+      }).join('');
+      return '<div class="dvh"><div class="dvh-h">'+teamBadge(offName, true)+' <b>'+esc(teamAbbr(offName))+' offense</b> vs '+teamBadge(defName, true)+' <b>'+esc(teamAbbr(defName))+' defense</b></div>'
+        + '<div class="dvgrid"><div><div class="dvcap">'+esc(teamAbbr(defName))+' allows a game</div>'+tbl+'</div>'
+        + (pl ? '<div><div class="dvcap">Players (avg a game)</div><table class="dvt dvp nflt"><tbody>'+pl+'</tbody></table></div>' : '')
+        + '</div></div>';
+    };
+    var body = half(x.away, x.home, g.away, g.home) + half(x.home, x.away, g.home, g.away);
+    if(!body) return '';
+    return '<details class="dvpbox"><summary><span class="dvi">\u25a6</span><b>Matchup by position</b><span class="dvs">what each defense allows \u00b7 tap to open</span></summary>'
+      + '<p class="dvnote">Per game this season to each position: quarterbacks, running backs (fullbacks included), wide receivers and tight ends (#1 = allows the most; green = more than the league average, red = less). Under each player, his average a game, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average. Positions from ESPN\'s team rosters.</p>'
       + body + '</details>';
   }
   function injuryWatch(g){
@@ -2280,7 +2321,7 @@ footer b{color:var(--ink);}
       + matchupHeader(sport, g, who)
       + resultStrip(sport, g)
       + leanMeter(sport, g)
-      + '<div class="models">'+models+'</div>'+pieRow(sport, g)+atsTrend(sport, g)+dvpBlock(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
+      + '<div class="models">'+models+'</div>'+pieRow(sport, g)+dvpBlock(sport, g)+dvpNflBlock(sport, g)+atsTrend(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
       + '</article>';
@@ -2317,7 +2358,7 @@ footer b{color:var(--ink);}
   }
   // ---- slate date picker: past slates (slates/<date>.json) shown view-only ----
   var LATEST = null, VIEW_PAST = false;
-  var SLATE_KEYS = ['slate','myPicks','myTotals','myProps','myScores','atsTrend','ouTrend','rosters','dvp'];
+  var SLATE_KEYS = ['slate','myPicks','myTotals','myProps','myScores','atsTrend','ouTrend','rosters','dvp','dvpNfl'];
   function slateDateLabel(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',timeZone:'UTC'}); }
   function slatePicker(){
     var cur = DATA.slate.date, latest = LATEST ? LATEST.slate.date : cur, short = function(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'}); };

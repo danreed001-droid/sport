@@ -423,6 +423,24 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (OVER orange / UNDER blue, by how much), each topped in the team's or
   over/under color, the spread and total with a gauge (`gauge`: the line in
   the middle, a dot where the game finished); the pick chips below.
+- **Matchup by position** (2026-11-19, the user's ask from an article on
+  Indiana allowing 3s to point guards): a "Matchup by position" bar on NBA and
+  NFL cards, above the trend charts, opens what each defense allows a game to
+  each position (rank, green above / red below the league average) and each
+  player's averages with ▲/▼ when tonight's defense gives his position 12%+
+  more or less. NBA: `scripts/archive_nba_player_box.py` saves every player's
+  line (`data/raw/nba_player_box.json`); `lib/nba_dvp.py` derives PG/SG/SF/PF/C
+  (ESPN only lists G/F/C: guards 5+ assists per 36 = PG, forwards 6'9"+ = PF,
+  `nba_heights.json`), pts/reb/ast/3PM. NFL: `scripts/archive_nfl_player_box.py`
+  (`data/raw/nfl_player_box.json`, positions from ESPN rosters in
+  `data/raw/nfl_positions.json`), `lib/nfl_dvp.py`: QB pass yds/TD/INT/rush yds,
+  RB rush yds/rec/rec yds/TD, WR and TE rec/rec yds/TD/targets. Both count only
+  games before the slate's date (`dvp`/`dvpNfl` in slate payloads). Tested on
+  2025-26 NBA (14,000 player-games, before-the-game data only): softest vs
+  toughest fifth of defenses, players beat their own average 59% vs 54% (points),
+  58% vs 50% (rebounds), 52.5% vs 49% (assists), 49% vs 45% (3PM); PGs vs a top-5
+  "3s to PGs" defense 47%. Small, and books already price matchups: context,
+  not a pick.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
