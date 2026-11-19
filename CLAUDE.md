@@ -371,6 +371,18 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   card's bars between the cover margin and the final score margin (r[2] -
   r[3]): `atsBars` draws both via `abBuild(..., WIN)` and `html.abwin` picks
   one, remembered in localStorage `dl-abmode`.
+  MLB and soccer have the bars too (2026-11-19, the user's call: "all
+  sports"; `TREND_GAMES` mlb 14, soccer 7, `NO_LINE_OK`): MLB's ATS is the run
+  line where the slate has one (about half its games; the rest show "no line",
+  and Win margin covers every game), soccer is Win margin only (no spread; W-D-L
+  record). Each row carries row[7], the final margin, for games with no line.
+  Soccer uses only our slates' matches: ESPN's combined soccer archive mixes
+  women's/youth sides under the same club names with no league column, so
+  `_fill_from_scores` is kept but unused. MLB records come from the same
+  archive script (`archive_linescores.py`, records only: NO_LINESCORES); in the
+  postseason ESPN shows the final regular-season record, kept as is.
+  MLB abbreviations: `MLB_ABBR` in site/index.html. Bar numbers are left off
+  where bars are packed (MLB's daily games on a phone); the hover has them.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page

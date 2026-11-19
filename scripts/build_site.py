@@ -10,6 +10,7 @@ Usage: python scripts/build_site.py [--out _site]
 """
 import glob
 import hashlib
+import csv
 import json
 import re
 import os
@@ -81,7 +82,10 @@ def storyline_strength(all_docs):
 # 7, basketball 14) from the sport's slate files -- the cover margin (margin +
 # the team's spread; NBA at statsSpread when it has one) per game. College
 # slates don't hold every game a team plays, so those trends also read the lines file.
-TREND_GAMES = {"nfl": 7, "cfb": 7, "nba": 14, "ncaab": 14}
+TREND_GAMES = {"nfl": 7, "cfb": 7, "nba": 14, "ncaab": 14, "mlb": 14, "soccer": 7}
+# Sports whose trend games may have no spread (MLB's run line is on about half
+# the slate games; soccer has none): those games still give a win margin.
+NO_LINE_OK = ("mlb", "soccer")
 
 
 def _team_key(name):
@@ -190,6 +194,30 @@ def _fill_from_lines(sport, wanted, hist, slate_date, totals):
                 hist[k].append([d, opp, round(m + my_sp, 1), my_sp, int(home)])
 
 
+def _fill_from_scores(sport, wanted, hist, slate_date):
+    """Soccer slates hold only a few matches a team plays, so its other finished
+    matches come from the scores archive (data/raw/master_soccer_scores.csv):
+    win margin only, no line."""
+    path = os.path.join(store.REPO_ROOT, "data", "raw", f"master_{sport}_scores.csv")
+    try:
+        with open(path, encoding="utf-8") as f:
+            rows = list(csv.DictReader(f))
+    except OSError:
+        return
+    for r in rows:
+        d = r.get("Date") or ""
+        if (slate_date and d >= slate_date) or r.get("Status") not in ("FT", "AET", "FT-Pens", "AGT", "Final"):
+            continue
+        try:
+            a_sc, h_sc = float(r["Away_Score"]), float(r["Home_Score"])
+        except (TypeError, ValueError, KeyError):
+            continue
+        for side, team, opp, m in (("home", r.get("Home_Team"), r.get("Away_Team"), h_sc - a_sc), ("away", r.get("Away_Team"), r.get("Home_Team"), a_sc - h_sc)):
+            k = _team_key(team)
+            if k in hist and d not in {e[0] for e in hist[k]}:
+                hist[k].append([d, opp, None, None, int(side == "home"), None, round(m, 1)])
+
+
 _QLINES = {}
 
 
@@ -261,9 +289,13 @@ def ats_trends(all_docs, slate_date, slate_sports, totals=False):
                                                              quarters(sport, date_str, g, side, True)])
                     continue
                 hs = g.get("statsSpread") if sport == "nba" and isinstance(g.get("statsSpread"), (int, float)) else g.get("homeSpread")
-                if not isinstance(hs, (int, float)):
-                    continue
                 margin = g["homeScore"] - g["awayScore"]
+                if not isinstance(hs, (int, float)):
+                    if sport in NO_LINE_OK:
+                        for side in sides:
+                            hist[_team_key(g.get(side))].append([date_str, g.get("away" if side == "home" else "home"), None, None,
+                                                                 int(side == "home"), None, round(margin if side == "home" else -margin, 1)])
+                    continue
                 for side in sides:
                     k = _team_key(g.get(side))
                     my_sp = hs if side == "home" else -hs
@@ -271,13 +303,19 @@ def ats_trends(all_docs, slate_date, slate_sports, totals=False):
                     hist[k].append([date_str, g.get("away" if side == "home" else "home"), round(m + my_sp, 1), my_sp, int(side == "home"),
                                     quarters(sport, date_str, g, side, False)])
         _fill_from_lines(sport, wanted, hist, slate_date, totals)
+        # (Soccer isn't filled from data/raw/master_soccer_scores.csv: ESPN's combined
+        # feed has women's and youth sides under the same club names and no league
+        # column, so only our slates' matches are used. `_fill_from_scores` is kept.)
         out[sport] = {}
         for k, v in hist.items():
             if not v:
                 continue
-            rows = sorted(v, key=lambda r: r[:5])[-n:]
-            # row[6]: the opponent's record going into the game
-            out[sport][wanted[k]] = [r[:5] + [r[5] if len(r) > 5 else None, record_at(sport, r[0], r[1])] for r in rows]
+            rows = sorted(v, key=lambda r: (r[0], str(r[1])))[-n:]
+            # row[6]: the opponent's record going into the game; row[7]: the team's
+            # final margin (also for games with no spread)
+            out[sport][wanted[k]] = [r[:5] + [r[5] if len(r) > 5 else None, record_at(sport, r[0], r[1]),
+                                              round(r[2] - r[3], 1) if isinstance(r[2], (int, float)) and isinstance(r[3], (int, float))
+                                              else (r[6] if len(r) > 6 else None)] for r in rows]
     return out
 
 def backtest_wl(text):

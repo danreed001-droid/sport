@@ -26,7 +26,8 @@ from score_slate import _same_team  # noqa: E402
 
 OUT = os.path.join(store.REPO_ROOT, "data", "raw", "linescores")
 REC = os.path.join(store.REPO_ROOT, "data", "raw", "records")
-SPORTS = ("nba", "ncaab", "nfl", "cfb")
+SPORTS = ("nba", "ncaab", "nfl", "cfb", "mlb")
+NO_LINESCORES = ("mlb",)   # innings aren't used; only its records
 EXTRA = {"cfb": "&groups=80", "ncaab": "&groups=50"}
 
 
@@ -51,8 +52,10 @@ def _save(path, data):
         f.write("\n")
 
 
-def record_before(c, other):
-    """A finished game's competitor -> its overall record going into the game."""
+def record_before(c, other, postseason=False):
+    """A finished game's competitor -> its overall record going into the game.
+    In the postseason ESPN shows the final regular-season record, which is kept
+    as it is (nothing to take back off)."""
     rec = next((r for r in c.get("records") or [] if r.get("type") == "total" or r.get("name") == "overall"), None)
     try:
         parts = [int(x) for x in (rec or {}).get("summary", "").split("-")]
@@ -60,6 +63,8 @@ def record_before(c, other):
         return None
     if len(parts) < 2:
         return None
+    if postseason:
+        return "-".join(str(x) for x in (parts if len(parts) < 3 or parts[2] else parts[:2]))
     if c.get("winner"):
         parts[0] -= 1
     elif other.get("winner"):
@@ -107,6 +112,8 @@ def main():
             doc = docs.get(date_str) or {"games": []}
             done = data.get(date_str, {})
             want = [g for g in doc.get("games", []) if is_final(doc, g) and f"{g.get('away')}@{g.get('home')}" not in done]
+            if sport in NO_LINESCORES:
+                want = []
             # records: a past date is fetched once (a "_done" mark once every game on it is final)
             need_rec = not (recs.get(date_str) or {}).get("_done")
             if not want and not need_rec:
@@ -128,8 +135,9 @@ def main():
                     cs = comp.get("competitors") or []
                     if len(cs) != 2:
                         continue
+                    post = ((ev.get("season") or {}).get("type") == 3)
                     for c, o in ((cs[0], cs[1]), (cs[1], cs[0])):
-                        r = record_before(c, o)
+                        r = record_before(c, o, post)
                         if r:
                             day[c["team"]["displayName"]] = r
                 if all_final:
