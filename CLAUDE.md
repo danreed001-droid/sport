@@ -407,7 +407,12 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   who covered the spread (MLB run line; NBA at statsSpread when set), the total
   against its line, then every pick on that game graded as chips -- models
   from `g.results` (ATS and counted ML), NBA Totals, your pick (ATS with $,
-  ML), your O/U and your props (with the player's number).
+  ML), your O/U and your props (with the player's number). Shown as three tiles
+  (2026-11-19, the user wanted better visuals than a text line): Winner (team
+  badge, margin, score), Spread (who covered, by how much) and Total
+  (OVER orange / UNDER blue, by how much), each topped in the team's or
+  over/under color, the spread and total with a gauge (`gauge`: the line in
+  the middle, a dot where the game finished); the pick chips below.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
