@@ -86,9 +86,9 @@
       "awaySpreadOdds": 101,
       "confidence": "lean",
       "correct": null,
-      "gameTotal": 156.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotal": 155.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Texas Longhorns",
       "homeMoneyline": -30303,
       "homePDpg": 33,
@@ -117,10 +117,10 @@
         ],
         "total": [
           157.5,
-          156.5
+          155.5
         ],
         "ml": {},
-        "checked": "2026-11-19T21:01:00+00:00"
+        "checked": "2026-11-19T22:20:21+00:00"
       }
     },
     {
@@ -343,14 +343,14 @@
         "ml": {
           "home": [
             -10000.0,
-            -100000.0
+            null
           ],
           "away": [
             3000.0,
-            5000.0
+            null
           ]
         },
-        "checked": "2026-11-19T21:01:00+00:00"
+        "checked": "2026-11-19T22:20:21+00:00"
       }
     }
   ]

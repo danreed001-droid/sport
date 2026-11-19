@@ -41,7 +41,7 @@
       "awaySpreadOdds": -108,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 224.5,
+      "gameTotal": 225.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110,
       "home": "Memphis Grizzlies",
@@ -90,7 +90,7 @@
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 224.5,
+      "totalsLine": 225.5,
       "starterOut": {
         "checked": "2026-11-19T19:46:58+00:00",
         "line": {
@@ -421,7 +421,7 @@
         ],
         "total": [
           225.5,
-          224.5
+          225.5
         ],
         "ml": {
           "home": [
@@ -438,7 +438,7 @@
           "moneyHome": 74,
           "rlm": null
         },
-        "checked": "2026-11-19T21:39:19+00:00"
+        "checked": "2026-11-19T22:20:20+00:00"
       }
     },
     {
@@ -494,21 +494,21 @@
         "MIL: missing Ryan Rollins (illness) and Ousmane Dieng (finger); leading scorer Tyler Herro (19.4 ppg) available"
       ],
       "statsLine": {
-        "homeSpread": 10.5,
-        "awaySpread": -10.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -117,
+        "homeSpread": 11.5,
+        "awaySpread": -11.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
         "homeMoneyline": 378,
         "awayMoneyline": -494
       },
-      "statsSpread": 10.5,
+      "statsSpread": 11.5,
       "time": "8:00 PM ET",
       "totalsLine": 230.5,
       "starterOut": {
-        "checked": "2026-11-19T21:39:18+00:00",
+        "checked": "2026-11-19T22:20:20+00:00",
         "line": {
           "open": 9.5,
-          "now": 10.5
+          "now": 11.5
         },
         "away": [
           {
@@ -788,7 +788,7 @@
       "lineMove": {
         "spread": [
           9.5,
-          10.5
+          11.5
         ],
         "total": [
           225.5,
@@ -805,11 +805,11 @@
           ]
         },
         "public": {
-          "betsHome": 34,
-          "moneyHome": 37,
+          "betsHome": 33,
+          "moneyHome": 38,
           "rlm": null
         },
-        "checked": "2026-11-19T21:39:19+00:00"
+        "checked": "2026-11-19T22:20:20+00:00"
       }
     },
     {
@@ -1072,10 +1072,10 @@
         },
         "public": {
           "betsHome": 38,
-          "moneyHome": 42,
+          "moneyHome": 41,
           "rlm": null
         },
-        "checked": "2026-11-19T21:39:19+00:00"
+        "checked": "2026-11-19T22:20:20+00:00"
       }
     },
     {
