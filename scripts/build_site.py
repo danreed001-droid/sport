@@ -633,6 +633,10 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
                                               for g in (slate.get("sports") or {}).get("nba", {}).get("games", [])]),
         "dvpNfl": nfl_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
                                                  for g in (slate.get("sports") or {}).get("nfl", {}).get("games", [])]),
+        "dvpNcaab": nba_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
+                                                   for g in (slate.get("sports") or {}).get("ncaab", {}).get("games", [])], "ncaab"),
+        "dvpCfb": nfl_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
+                                                 for g in (slate.get("sports") or {}).get("cfb", {}).get("games", [])], "cfb"),
     }
 
 
@@ -852,6 +856,8 @@ def build():
         "atsNext": cur["atsNext"],
         "dvp": cur["dvp"],
         "dvpNfl": cur["dvpNfl"],
+        "dvpNcaab": cur["dvpNcaab"],
+        "dvpCfb": cur["dvpCfb"],
         "slateDates": past_slate_dates(all_docs, slate_date),
         "storyVetoFrom": STORY_VETO_FROM,
         "storyVetoRemoved": STORY_VETO_REMOVED,

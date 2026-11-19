@@ -465,6 +465,21 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   B +5.9, 67%; D -4.9, 37%), but the gap between the two offenses' scores did
   nothing ATS (50.6%); both high over 53% (104-92), both low under 57% (111-85,
   p=0.07). NFL not backtested. Context, not a pick.
+  College (2026-11-19, the user's ask): NCAAB and CFB cards have the same
+  matchup view and score (`dvpNcaab`/`dvpCfb`; `for_slate(..., sport)` in
+  `lib/nba_dvp.py` / `lib/nfl_dvp.py`). `scripts/archive_college_player_box.py`
+  (scoring run, after `archive_schedule.py`, whose event ids it uses; at most 250
+  fetches a sport a run) saves every finished game of a team that has been on
+  our slates for that sport (`data/raw/ncaab_player_box.json`, NBA rows with no
+  +/-; `data/raw/cfb_player_box.json`, NFL rows with no targets, positions from
+  ESPN rosters in `data/raw/cfb_positions.json`). So a defense needs 3+ saved
+  games to be ranked (`MIN_TEAM_GAMES`; NBA/NFL too) and the league average is
+  over the ranked defenses, which in college are mostly ranked teams. NCAAB
+  positions: no heights, so forwards split by rebounds; guards PG at 4+ assists
+  per 36 or the team's top-assist guard (college plays three guards, so SG is
+  the big bucket). A slate name matching two schools ("Miami") takes the one with
+  more saved games. Cuts: NCAAB +-12/+-25, CFB +-15/+-30 (scores swing much
+  more: few games, cupcake opponents). Not backtested.
 - **Starter-out alert** (2026-11-19, the user's ask for an edge outside stats:
   injury news the line may not have caught up to): `scripts/starter_out.py`
   (scoring run for NBA and NFL; NBA also in the game-time run every 15 min)
