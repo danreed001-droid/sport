@@ -1929,7 +1929,7 @@ footer b{color:var(--ink);}
       + '<label>Stat<select class="pf-stat">'+propStats(e.sport).map(function(x){ return '<option value="'+x[0]+'">'+x[1]+'</option>'; }).join('')+'</select></label>'
       + '<span class="pf-side" role="group" aria-label="Over or under"><button type="button" class="pf-ou" data-ou="over" aria-pressed="false">Over</button><button type="button" class="pf-ou" data-ou="under" aria-pressed="false">Under</button></span>'
       + '<label>Line<input class="pf-line" type="number" step="0.5" min="0.5" inputmode="decimal" placeholder="16.5"></label>'
-      + '<label>Odds<input class="pf-odds" type="number" step="1" inputmode="numeric" placeholder="-110"></label>'
+      + '<label>Odds<input class="pf-odds" type="text" inputmode="text" autocomplete="off" maxlength="6" placeholder="-110 or +120"></label>'
       + '<label class="pf-wide">Your reason<textarea class="pf-reason" rows="2" maxlength="600" placeholder="Why you like it (optional)"></textarea></label>'
       + '<button type="button" class="pf-add" data-id="'+esc(id)+'">Add prop</button><span class="pf-msg" role="status"></span></div></details>';
     // Team props: one team's number (points, a half, a quarter, yards, corners...) over or under a line.
@@ -1938,7 +1938,7 @@ footer b{color:var(--ink);}
       + '<label>Stat<select class="tf-stat">'+teamPropStats(e.sport).map(function(x){ return '<option value="'+x[0]+'">'+x[1]+'</option>'; }).join('')+'</select></label>'
       + '<span class="pf-side" role="group" aria-label="Over or under"><button type="button" class="pf-ou" data-ou="over" aria-pressed="false">Over</button><button type="button" class="pf-ou" data-ou="under" aria-pressed="false">Under</button></span>'
       + '<label>Line<input class="pf-line" type="number" step="0.5" min="0" inputmode="decimal" placeholder="112.5"></label>'
-      + '<label>Odds<input class="pf-odds" type="number" step="1" inputmode="numeric" placeholder="-110"></label>'
+      + '<label>Odds<input class="pf-odds" type="text" inputmode="text" autocomplete="off" maxlength="6" placeholder="-110 or +120"></label>'
       + '<label class="pf-wide">Your reason<textarea class="pf-reason" rows="2" maxlength="600" placeholder="Why you like it (optional)"></textarea></label>'
       + '<button type="button" class="pf-add tf-add" data-id="'+esc(id)+'">Add team prop</button><span class="pf-msg" role="status"></span></div></details>';
     if(!rows && g.final) return '';
@@ -1946,7 +1946,7 @@ footer b{color:var(--ink);}
   }
   function addTeamProp(id){
     var f = document.getElementById('tf-'+id); if(!f) return;
-    var ou = f.querySelector('.pf-ou[aria-pressed="true"]'), line = parseFloat(f.querySelector('.pf-line').value), odds = parseInt(f.querySelector('.pf-odds').value, 10);
+    var ou = f.querySelector('.pf-ou[aria-pressed="true"]'), line = parseFloat(f.querySelector('.pf-line').value), odds = parseInt(String(f.querySelector('.pf-odds').value).replace(/[\u2212\u2013]/g,'-').replace(/\s/g,''), 10);
     var msg = f.querySelector('.pf-msg'), g = GAMES[id].game, side = f.querySelector('.tf-team').value, stat = f.querySelector('.tf-stat').value;
     if(!ou){ msg.textContent = 'Choose Over or Under.'; return; }
     if(!(line >= 0) || isNaN(line) || Math.round(line*2) !== line*2){ msg.textContent = 'Enter the line in half points (e.g. 112.5).'; return; }
@@ -1958,7 +1958,7 @@ footer b{color:var(--ink);}
   function addProp(id){
     var f = document.getElementById('pf-'+id); if(!f) return;
     var sel = f.querySelector('.pf-player'), o = sel ? sel.options[sel.selectedIndex] : null, nm = f.querySelector('.pf-pname');
-    var ou = f.querySelector('.pf-ou[aria-pressed="true"]'), line = parseFloat(f.querySelector('.pf-line').value), odds = parseInt(f.querySelector('.pf-odds').value, 10);
+    var ou = f.querySelector('.pf-ou[aria-pressed="true"]'), line = parseFloat(f.querySelector('.pf-line').value), odds = parseInt(String(f.querySelector('.pf-odds').value).replace(/[\u2212\u2013]/g,'-').replace(/\s/g,''), 10);
     var msg = f.querySelector('.pf-msg');
     if(sel ? !sel.value : !(nm && nm.value.trim())){ msg.textContent = sel ? 'Choose a player.' : 'Type the player\'s name.'; return; }
     if(!ou){ msg.textContent = 'Choose Over or Under.'; return; }
