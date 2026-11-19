@@ -46,7 +46,8 @@ def derive_positions(games, heights):
     tot = defaultdict(lambda: [0.0, 0.0, 0.0, ""])   # min, reb, ast, ESPN pos
     for _d, _eid, e in games:
         for rows in e["players"].values():
-            for pid, _n, pos, _st, mi, _p, r, a, _t in rows:
+            for row in rows:
+                pid, pos, mi, r, a = row[0], row[2], row[4], row[6], row[7]
                 x = tot[pid]
                 x[0] += mi
                 x[1] += r
@@ -73,7 +74,7 @@ def _same(a, b):
 def for_slate(slate_date, games_today):
     """{game id: {"away": side, "home": side}} for tonight's NBA games, where a
     side is {"allows": {pos: {stat: [per game, rank 1 = most allowed]}},
-             "players": [[name, pos, games, min, pts, reb, ast, tpm], ...]}
+             "players": [[name, pos, games, min, pts, reb, ast, tpm, +/- a game], ...]}
     plus "league": {pos: {stat: per game}} under the key "_league"."""
     box, heights = _load()
     games = [g for g in box if g[0] < slate_date]
@@ -81,7 +82,7 @@ def for_slate(slate_date, games_today):
         return {}
     pos_of = derive_positions(games, heights)
     allowed = defaultdict(lambda: defaultdict(list))      # defense team -> pos -> [per-game dict]
-    players = defaultdict(lambda: defaultdict(lambda: [None, 0, 0.0, 0.0, 0.0, 0.0, 0.0]))  # team -> pid -> [name, g, min, pts, reb, ast, tpm]
+    players = defaultdict(lambda: defaultdict(lambda: [None, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0]))  # team -> pid -> [name, g, min, pts, reb, ast, tpm, +/- total, games with +/-]
     last_team = {}
     for _d, _eid, e in games:
         teams = list(e["players"])
@@ -90,7 +91,9 @@ def for_slate(slate_date, games_today):
         for i, team in enumerate(teams):
             opp = teams[1 - i]
             sums = {p: dict.fromkeys(STATS, 0.0) for p in POS}
-            for pid, name, _pos, _st, mi, p, r, a, t in e["players"][team]:
+            for row in e["players"][team]:
+                pid, name, mi, p, r, a, t = row[0], row[1], row[4], row[5], row[6], row[7], row[8]
+                pm = row[9] if len(row) > 9 else None
                 P = pos_of.get(pid)
                 if P:
                     s = sums[P]
@@ -106,6 +109,9 @@ def for_slate(slate_date, games_today):
                 x[4] += r
                 x[5] += a
                 x[6] += t
+                if pm is not None:
+                    x[7] += pm
+                    x[8] += 1
                 last_team[pid] = team
             for P in POS:
                 allowed[opp][P].append(sums[P])
@@ -129,10 +135,11 @@ def for_slate(slate_date, games_today):
             out["allows"] = {P: {k: [round(avg[team][P][k], 1), ranks.get((team, P, k))] for k in STATS} for P in POS if P in avg[team]}
         if roster:
             rows = []
-            for pid, (pname, g, mi, p, r, a, t) in players[roster].items():
+            for pid, (pname, g, mi, p, r, a, t, pm, pmg) in players[roster].items():
                 if g < 3 or mi / g < 15 or last_team.get(pid) != roster or pid not in pos_of:
                     continue
-                rows.append([pname, pos_of[pid], g, round(mi / g, 1), round(p / g, 1), round(r / g, 1), round(a / g, 1), round(t / g, 1)])
+                rows.append([pname, pos_of[pid], g, round(mi / g, 1), round(p / g, 1), round(r / g, 1), round(a / g, 1), round(t / g, 1),
+                             round(pm / pmg, 1) if pmg else None])
             out["players"] = sorted(rows, key=lambda x: -x[3])[:9]
         return out
 

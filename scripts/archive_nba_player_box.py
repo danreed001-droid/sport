@@ -4,7 +4,7 @@
 
 Writes data/raw/nba_player_box.json:
   {event id: {"date", "away", "home",
-              "players": {team: [[athlete id, name, pos, starter, min, pts, reb, ast, 3pm], ...]}}}
+              "players": {team: [[athlete id, name, pos, starter, min, pts, reb, ast, 3pm, +/-], ...]}}}
 `pos` is ESPN's G/F/C (ESPN no longer splits guards and forwards; the site
 derives PG/SG/SF/PF itself, see `nba_positions` in build_site.py). Each final
 regular-season game is fetched once. Run in the scoring workflow.
@@ -29,6 +29,18 @@ def _n(v):
         return 0.0
 
 
+def _pm(v):
+    try:
+        return float(str(v).replace("+", ""))
+    except (TypeError, ValueError):
+        return None
+
+
+def _old(e):
+    """A game saved before +/- was kept (rows of 9) gets fetched again."""
+    return any(len(r) < 10 for rows in (e.get("players") or {}).values() for r in rows)
+
+
 def fetch(session, eid):
     d = session.get(f"https://site.api.espn.com/apis/site/v2/sports/basketball/nba/summary?event={eid}", timeout=25).json()
     comp = ((d.get("header") or {}).get("competitions") or [{}])[0]
@@ -41,7 +53,7 @@ def fetch(session, eid):
         team = (t.get("team") or {}).get("displayName")
         st = (t.get("statistics") or [{}])[0]
         lab = st.get("labels") or []
-        ix = {k: lab.index(k) for k in ("MIN", "PTS", "REB", "AST", "3PT") if k in lab}
+        ix = {k: lab.index(k) for k in ("MIN", "PTS", "REB", "AST", "3PT", "+/-") if k in lab}
         rows = []
         for a in st.get("athletes") or []:
             v = a.get("stats") or []
@@ -49,7 +61,8 @@ def fetch(session, eid):
                 continue   # didn't play
             at = a.get("athlete") or {}
             rows.append([str(at.get("id")), at.get("displayName"), (at.get("position") or {}).get("abbreviation") or "",
-                         1 if a.get("starter") else 0] + [_n(v[ix[k]]) if k in ix else 0.0 for k in ("MIN", "PTS", "REB", "AST", "3PT")])
+                         1 if a.get("starter") else 0] + [_n(v[ix[k]]) if k in ix else 0.0 for k in ("MIN", "PTS", "REB", "AST", "3PT")]
+                        + [_pm(v[ix["+/-"]]) if "+/-" in ix else None])
         out[team] = rows
     return {"players": out}
 
@@ -66,7 +79,7 @@ def main():
     added = 0
     for r in games:
         eid = r["Game_ID"]
-        if eid in data:
+        if eid in data and not _old(data[eid]):
             continue
         try:
             e = fetch(session, eid)

@@ -431,7 +431,8 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   more or less. NBA: `scripts/archive_nba_player_box.py` saves every player's
   line (`data/raw/nba_player_box.json`); `lib/nba_dvp.py` derives PG/SG/SF/PF/C
   (ESPN only lists G/F/C: guards 5+ assists per 36 = PG, forwards 6'9"+ = PF,
-  `nba_heights.json`), pts/reb/ast/3PM. NFL: `scripts/archive_nfl_player_box.py`
+  `nba_heights.json`), pts/reb/ast/3PM, plus each player's average +/- (row[9]
+  in the box file, the user's ask; games saved before it are re-fetched). NFL: `scripts/archive_nfl_player_box.py`
   (`data/raw/nfl_player_box.json`, positions from ESPN rosters in
   `data/raw/nfl_positions.json`), `lib/nfl_dvp.py`: QB pass yds/TD/INT/rush yds,
   RB rush yds/rec/rec yds/TD, WR and TE rec/rec yds/TD/targets. Both count only

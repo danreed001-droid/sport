@@ -113,12 +113,13 @@ section.hero{border-top:0;}
 .dvpbox[open]{padding-bottom:6px;} .dvpbox[open] > :not(summary){margin-left:12px;margin-right:12px;} .dvnote{font-size:12px;color:var(--muted);margin:6px 0;}
 .dvh{margin:10px 0;} .dvh-h{display:flex;align-items:center;gap:5px;font-size:13px;margin-bottom:5px;}
 .dvgrid{display:grid;grid-template-columns:minmax(0,0.8fr) minmax(0,1.2fr);gap:10px;align-items:start;}
-@media (max-width:700px){.dvgrid{grid-template-columns:1fr;} table.dvp{table-layout:fixed;} table.dvp td:first-child,table.dvp th:first-child{width:36%;}
+@media (max-width:700px){.dvgrid{grid-template-columns:1fr;} table.dvp{table-layout:fixed;} table.dvp td:first-child,table.dvp th:first-child{width:31%;}
   .dvt td,.dvt th{padding:4px 3px;} table.dvp i{display:block;margin-left:0;font-size:9.5px;} .dvt td.dvn{font-size:11.5px;line-height:1.25;}}
 table.dvt{width:100%;min-width:0;border-collapse:collapse;font-size:12px;} .dvt th{font-size:9.5px;padding:4px 5px;text-align:right;} .dvt th:first-child{text-align:left;}
 .dvt td{padding:4px 5px;text-align:right;border-bottom:1px solid var(--rule);white-space:nowrap;} .dvt td:first-child{text-align:left;}
 .dvt td small{display:block;font-size:9.5px;color:var(--muted);} .dvt td small.lb{font-size:9px;text-transform:uppercase;letter-spacing:.04em;}
 .dvcap{font-family:'IBM Plex Mono',monospace;font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin:2px 0 3px;} .dvt td.dvn{white-space:normal;}
+.dvt td.pos{color:var(--win);font-weight:700;} .dvt td.neg{color:var(--loss);font-weight:700;}
 .dvt i{font-style:normal;font-size:10px;font-weight:700;margin-left:3px;} .dvt i.up{color:var(--win);} .dvt i.dn{color:var(--loss);}
 .rstrip{margin:8px 0 6px;padding:8px 10px 10px;border:1px solid var(--rule);border-radius:10px;background:var(--surface-2);font-size:13px;line-height:1.45;}
 .rtiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:4px;}
@@ -1371,17 +1372,18 @@ footer b{color:var(--ink);}
           var tag = f >= 0.12 ? '<i class="up">\u25b2'+Math.round(f*100)+'%</i>' : f <= -0.12 ? '<i class="dn">\u25bc'+Math.round(-f*100)+'%</i>' : '';
           return '<td title="'+esc(r[0]+' averages '+v+' '+s[1]+'; '+teamAbbr(defName)+' allows '+(c?c[0]:'?')+' to '+P+'s vs league '+(lg||'?'))+'">'+v+tag+'</td>';
         }).join('');
-        return '<tr><td class="dvn">'+esc(r[0])+' <span class="muted">'+P+' \u00b7 '+r[3]+'m</span></td>'+cells+'</tr>';
+        var pm = r[8], pmc = num(pm) ? '<td class="mono '+(pm > 0 ? 'pos' : pm < 0 ? 'neg' : '')+'" title="'+esc(r[0]+'\'s average plus/minus a game (the team\'s point margin while he\'s on the floor)')+'">'+(pm > 0 ? '+' : pm < 0 ? '\u2212' : '')+Math.abs(pm)+'</td>' : '<td class="muted">\u2014</td>';
+        return '<tr><td class="dvn">'+esc(r[0])+' <span class="muted">'+P+' \u00b7 '+r[3]+'m</span></td>'+cells+pmc+'</tr>';
       }).join('');
       return '<div class="dvh"><div class="dvh-h">'+teamBadge(offName, true)+' <b>'+esc(teamAbbr(offName))+' offense</b> vs '+teamBadge(defName, true)+' <b>'+esc(teamAbbr(defName))+' defense</b></div>'
         + '<div class="dvgrid">'+tbl
-        + (pl ? '<table class="dvt dvp"><thead><tr><th>Player (avg)</th>'+ST.map(function(s){ return '<th>'+s[1]+'</th>'; }).join('')+'</tr></thead><tbody>'+pl+'</tbody></table>' : '')
+        + (pl ? '<table class="dvt dvp"><thead><tr><th>Player (avg)</th>'+ST.map(function(s){ return '<th>'+s[1]+'</th>'; }).join('')+'<th title="Average plus/minus a game">+/\u2212</th></tr></thead><tbody>'+pl+'</tbody></table>' : '')
         + '</div></div>';
     };
     var body = half(x.away, x.home, g.away, g.home) + half(x.home, x.away, g.home, g.away);
     if(!body) return '';
     return '<details class="dvpbox"><summary><span class="dvi">\u25a6</span><b>Matchup by position</b><span class="dvs">what each defense allows \u00b7 tap to open</span></summary>'
-      + '<p class="dvnote">Per game this season to each position (#1 = allows the most; green = more than the league average, red = less). Under each player, his season average, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average. Positions: ESPN\'s guard / forward / center, guards split by assists (5+ per 36 min = PG) and forwards by height (6\'9" and up = PF).</p>'
+      + '<p class="dvnote">Per game this season to each position (#1 = allows the most; green = more than the league average, red = less). Under each player, his season average, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average, and his average plus/minus (his team\'s point margin while he\'s on the floor). Positions: ESPN\'s guard / forward / center, guards split by assists (5+ per 36 min = PG) and forwards by height (6\'9" and up = PF).</p>'
       + body + '</details>';
   }
   // NFL defense vs position (DATA.dvpNfl from lib/nfl_dvp.py): what each defense
