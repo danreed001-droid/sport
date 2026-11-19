@@ -397,6 +397,11 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   each fetched only when picked; `_site` isn't committed). `data.json`'s
   `slateDates` lists them. The page swaps `SLATE_KEYS` into DATA and redraws
   only the slate (`rerenderSlate`); the dashboard and pick log don't change.
+  A "Slate results" box tops each slate once any of its games are graded
+  (`slateResultsHtml`, today's too): per model and You, that day's ATS and ML
+  record with $, over/unders and props (NBA Totals with NBA Stats, yours with
+  You), and pending, from DATA.plays for that date with the scorecard's
+  `belongs`; follows the league and model filters (`applySlateFilter`).
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
