@@ -465,6 +465,22 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   B +5.9, 67%; D -4.9, 37%), but the gap between the two offenses' scores did
   nothing ATS (50.6%); both high over 53% (104-92), both low under 57% (111-85,
   p=0.07). NFL not backtested. Context, not a pick.
+- **Starter-out alert** (2026-11-19, the user's ask for an edge outside stats:
+  injury news the line may not have caught up to): `scripts/starter_out.py`
+  (scoring run for NBA and NFL; NBA also in the game-time run every 15 min)
+  writes `starterOut` on each game that hasn't started (repo-owned in
+  `sync_ledger.py`, passed through in build_site.py's game fields; frozen once
+  ESPN's summary state isn't "pre"): regular starters on ESPN's injury report
+  (Out/IR/suspended = out; questionable, doubtful, day-to-day = watch), NEW when
+  he played the team's last game, else "out Ng" (missed N straight: likely
+  priced); the line's move since it opened (ESPN pickcenter `pointSpread`
+  open/close, DraftKings); and up to 3 teammates at his position with their
+  averages with him and in this season's games without him (NBA min/pts/reb/
+  ast/3PM; NFL by position). Starters: NBA started half the last 10 games or
+  60%+ of his games with 20+ min (positions from `lib/nba_dvp.py`); NFL the
+  top QB1/RB1/WR1-2/TE1 by usage a game (2+ games). The card's
+  `starterAlert` (under the lean meter) adds the opponent defense's number vs
+  that position from the matchup data. Context, not a pick.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page

@@ -336,6 +336,17 @@ details.tv table{min-width:0;}
 .tier .stacked,.why summary .stacked,.logtbl .stacked{display:inline-block;margin-left:4px;padding:0 5px;border-radius:4px;font-weight:700;color:var(--mine-ink);background:var(--mine-soft);}
 .stackrow td{font-weight:600;}
 details.why{font-size:12px;color:var(--muted);}
+.soalert{margin:8px 0 2px;border:1px solid color-mix(in oklab, var(--warn) 55%, transparent);border-radius:10px;background:color-mix(in oklab, var(--warn) 9%, var(--surface-2));}
+.soalert > summary{list-style:none;cursor:pointer;padding:8px 12px;font-size:13px;display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;}
+.soalert > summary::-webkit-details-marker{display:none;} .soalert > summary::after{content:'\25be';margin-left:auto;color:var(--muted);}
+.soalert[open] > summary::after{transform:rotate(180deg);} .soalert .sot{font-weight:800;color:var(--warn);}
+.soalert .sop{white-space:nowrap;} .sotag{display:inline-block;font-size:10.5px;font-weight:700;border-radius:4px;padding:0 5px;margin-left:3px;vertical-align:1px;}
+.sotag.new{background:#e07b00;color:#fff;} .sotag.old{background:var(--grid);color:var(--muted);} .sotag.q{background:color-mix(in oklab, var(--warn) 30%, transparent);color:var(--ink);}
+.soline{font-size:12.5px;color:var(--muted);width:100%;} .soline b{color:var(--ink);}
+.sobody{padding:0 12px 8px;} .soent{margin:8px 0 10px;} .soent h5{margin:0 0 3px;font-size:13px;} .soent .sonote{font-size:12px;color:var(--muted);margin:0 0 4px;}
+.sot2{width:100%;border-collapse:collapse;font-size:12px;table-layout:fixed;min-width:0;} .sot2 th{background:none;text-transform:none;letter-spacing:0;font-family:inherit;} .sot2 td,.sot2 th{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sot2 tr.nm td{text-align:left;font-weight:700;padding-top:6px;border-top:1px solid var(--rule-2);} .sot2 tr.nm + tr td{border-top:0;} .sot2 col.c1{width:30%;} .sot2 th{font-size:10.5px;color:var(--muted);font-weight:600;text-align:right;padding:2px 4px;} .sot2 th:first-child,.sot2 td:first-child{text-align:left;}
+.sot2 td{text-align:right;padding:3px 4px;border-top:1px solid var(--rule-2);font-variant-numeric:tabular-nums;} .sot2 .wo{font-weight:700;} .sot2 .up{color:var(--win);} .sot2 .dn{color:var(--loss);}
 .injwatch{font-size:12px;border:1px dashed var(--rule-2);border-radius:8px;padding:6px 10px;margin:8px 0 0;color:var(--ink);}
 .injwatch b{color:var(--warn);}
 .stories{font-size:12px;border:1px solid var(--rule-2);border-radius:8px;padding:6px 10px;margin:8px 0 0;color:var(--ink);}
@@ -1468,6 +1479,51 @@ footer b{color:var(--ink);}
       + '<p class="dvnote">Per game this season to each position: quarterbacks, running backs (fullbacks included), wide receivers and tight ends (#1 = allows the most; green = more than the league average, red = less). Under each player, his average a game, with \u25b2 / \u25bc when tonight\'s defense gives his position 12%+ more or less than average. Positions from ESPN\'s team rosters.</p>'
       + body + '</details>';
   }
+  // Starter-out alert (scripts/starter_out.py): regular starters ESPN lists as
+  // out (or questionable) for this game, whether it's news (he played the last
+  // game) or an absence the line has had time to price, the line's move since
+  // it opened, and the teammates at his position with their numbers with him
+  // and without him this season. Context only, never a pick.
+  function starterAlert(sport, g){
+    var S = g.starterOut; if(!S || (!(S.away||[]).length && !(S.home||[]).length)) return '';
+    var NB = sport === 'nba';
+    var COLS = NB ? ['MIN','PTS','REB','AST','3PM'] : {QB:['ATT','PASS','TD','RUSH'], RB:['CAR','RUSH','REC','REC YD'], WR:['TGT','REC','YDS','TD'], TE:['TGT','REC','YDS','TD']};
+    var LONG = NB ? ['min','pts','reb','ast','3pm'] : {QB:['att','pass yds','pass td','rush yds'], RB:['car','rush yds','rec','rec yds'], WR:['tgt','rec','rec yds','td'], TE:['tgt','rec','rec yds','td']};
+    var tag = function(e){ return !e.out ? '<span class="sotag q">'+esc(e.status)+'</span>' : e.lastGame ? '<span class="sotag new" title="Played the team\'s last game: news the line may still be catching up to">NEW</span>' : '<span class="sotag old" title="Has missed the team\'s last '+e.missed+' game'+(e.missed===1?'':'s')+': the line has had time to price it">out '+e.missed+'g</span>'; };
+    var sum = ['away','home'].map(function(sd){ var L = S[sd] || []; if(!L.length) return '';
+      return '<span class="sop"><b>'+esc(teamAbbr(g[sd]))+'</b> '+L.map(function(e){ return esc(e.player.split(' ').slice(-1)[0])+' ('+e.pos+')'+tag(e); }).join(', ')+'</span>'; }).filter(Boolean).join(' · ');
+    var ln = '';
+    if(S.line && num(S.line.open) && num(S.line.now)){
+      var mv = Math.round((S.line.now - S.line.open)*10)/10;
+      ln = '<span class="soline">Line: '+esc(teamAbbr(g.home))+' opened <b>'+sgn(S.line.open)+'</b>, '+(g.final ? 'last seen' : 'now')+' <b>'+sgn(S.line.now)+'</b>'
+        + (mv ? ' — moved '+Math.abs(mv)+' toward '+esc(teamAbbr(mv > 0 ? g.away : g.home)) : ' — no move')+' (DraftKings via ESPN)</span>';
+    }
+    var DV = NB ? (DATA.dvp || {}) : (DATA.dvpNfl || {}), dv = DV[g.id], LG = DV._league;
+    var key = NB ? 'pts' : {QB:'pyd', RB:'ryd', WR:'cyd', TE:'cyd'};
+    var body = ['away','home'].map(function(sd){
+      var L = S[sd] || [], opp = sd === 'away' ? 'home' : 'away';
+      return L.map(function(e){
+        var cols = NB ? COLS : (COLS[e.pos] || []), k = NB ? key : key[e.pos];
+        var al = dv && dv[opp] && dv[opp].allows && dv[opp].allows[e.pos] && dv[opp].allows[e.pos][k], lg = LG && LG[e.pos] && LG[e.pos][k];
+        var mtx = al && lg ? ' · '+esc(teamAbbr(g[opp]))+' D gives '+e.pos+'s '+(al[0]/lg-1 >= 0 ? '+' : '−')+Math.abs(Math.round((al[0]/lg-1)*100))+'% '+(NB ? 'pts' : (e.pos==='QB' ? 'pass yds' : e.pos==='RB' ? 'rush yds' : 'rec yds'))+' vs average (#'+al[1]+')' : '';
+        var fmt = function(a){ return a ? a.slice(1).map(function(v){ return '<td>'+v+'</td>'; }).join('') : cols.map(function(){ return '<td class="muted">—</td>'; }).join(''); };
+        var wo = function(a, w){ if(!a) return cols.map(function(){ return '<td class="muted">—</td>'; }).join('');
+          return a.slice(1).map(function(v, i){ var d = w ? v - w[i+1] : 0; return '<td class="wo '+(d > 0.5 ? 'up' : d < -0.5 ? 'dn' : '')+'">'+v+'</td>'; }).join(''); };
+        var rows = (e.gainers || []).map(function(m){
+          return '<tr class="nm"><td colspan="'+(cols.length+1)+'">'+esc(m.player)+' <span class="muted">'+esc(m.pos)+'</span></td></tr>'
+            + '<tr><td class="muted">with · '+(m['with'] ? m['with'][0] : 0)+'g</td>'+fmt(m['with'])+'</tr>'
+            + '<tr><td class="muted">without · '+(m.without ? m.without[0] : 0)+'g</td>'+wo(m.without, m['with'])+'</tr>';
+        }).join('');
+        return '<div class="soent"><h5>'+teamBadge(g[sd], true)+' '+esc(e.player)+' ('+e.pos+') '+tag(e)+'</h5>'
+          + '<p class="sonote">'+(e.avg ? 'Averages '+(NB ? LONG : LONG[e.pos] || []).map(function(c, i){ return e.avg[i+1]+' '+c; }).join(', ')+' in '+e.avg[0]+' games' : '')
+          + (e.out ? (e.lastGame ? ' · played the last game: news' : ' · out the last '+e.missed+' game'+(e.missed===1?'':'s')) : ' · '+esc(e.status)+': may play')+mtx+'</p>'
+          + (rows ? '<table class="sot2"><colgroup><col class="c1">'+cols.map(function(){ return '<col>'; }).join('')+'</colgroup><thead><tr><th>Picks up role</th>'+cols.map(function(c){ return '<th>'+c+'</th>'; }).join('')+'</tr></thead><tbody>'+rows+'</tbody></table>' : '<p class="sonote">No teammate at his position with 2+ games yet.</p>')
+          + '</div>';
+      }).join('');
+    }).join('');
+    return '<details class="soalert"><summary><span class="sot">⚠ Starter'+((S.away||[]).length + (S.home||[]).length > 1 ? 's' : '')+' out</span>'+sum+ln+'</summary><div class="sobody">'+body
+      + '<p class="dvnote">Regular starters on ESPN\'s injury report for this game'+(g.final ? ', as it stood before the start' : '')+'. <b>NEW</b> = he played the team\'s last game, so the line may still be catching up; "out Ng" = he has missed N straight games and the line has had time to price it. Under each, the teammates at his position: their averages a game with him and in this season\'s games without him (green = more without him). Context, not a pick.</p></div></details>';
+  }
   function injuryWatch(g){
     var rows = (g.statsWatch||[]).concat(g.totalsWatch||[]);
     if(g.final || !rows.length) return '';
@@ -2387,6 +2443,7 @@ footer b{color:var(--ink);}
       + matchupHeader(sport, g, who)
       + resultStrip(sport, g)
       + leanMeter(sport, g)
+      + starterAlert(sport, g)
       + '<div class="models">'+models+'</div>'+pieRow(sport, g)+dvpBlock(sport, g)+dvpNflBlock(sport, g)+atsTrend(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'

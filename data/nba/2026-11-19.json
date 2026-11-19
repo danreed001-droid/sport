@@ -4,12 +4,1158 @@
   "sport": "nba",
   "scored": false,
   "generatedAt": "2026-11-19T16:25:00Z",
-  "auditChanges": ["NBA GSW@MEM: PD/g corrected (+0.87 vs +9.00), Ledger Memphis lean -> solid; prices set to DraftKings MEM -243/GSW +200, MEM -6.5 (-112).", "NBA POR@MIL: prices set to DraftKings POR -467/MIL +360, POR -10.5 (-112); Portland last played Nov 17, not Nov 13.", "NBA NYK@MIN: prices set to DraftKings NYK -113/MIN -104, NYK -1.5 (-102); no pick change.", "NBA LAC@SAS: prices set to DraftKings SAS -1040/LAC +670, SAS -15.5 (-110); last-5 form corrected to SAS 4-1, LAC 3-2, no pick change."],
+  "auditChanges": [
+    "NBA GSW@MEM: PD/g corrected (+0.87 vs +9.00), Ledger Memphis lean -> solid; prices set to DraftKings MEM -243/GSW +200, MEM -6.5 (-112).",
+    "NBA POR@MIL: prices set to DraftKings POR -467/MIL +360, POR -10.5 (-112); Portland last played Nov 17, not Nov 13.",
+    "NBA NYK@MIN: prices set to DraftKings NYK -113/MIN -104, NYK -1.5 (-102); no pick change.",
+    "NBA LAC@SAS: prices set to DraftKings SAS -1040/LAC +670, SAS -15.5 (-110); last-5 form corrected to SAS 4-1, LAC 3-2, no pick change."
+  ],
   "auditedAt": "2026-11-19T16:46:07Z",
   "games": [
-    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Memphis has the better PD/g (+9.0 vs +0.9), but Memphis's leading scorer Ty Jerome (25.4 ppg) is questionable/trending toward out (hip) and Golden State's best player Stephen Curry is out (abdomen) — this category can't count for either team's own star situation — neutral.","Rest: both teams are on the second night of a back-to-back (GSW lost at Dallas, MEM won at Cleveland, both on Nov 18) — neutral.","Travel: Golden State continues a true road trip (Dallas to Memphis, different city); Memphis returns home after its back-to-back — favors Memphis Grizzlies.","Injuries/Lineup: Golden State's cluster is more severe (Curry, Butler, and Porzingis all out, plus Horford/Moody/Williams) than Memphis's (Jerome plus bench-level absences). Both technically clear the 2+ cluster threshold so no double-weight applied — favors Memphis Grizzlies on severity.","Form: Memphis is 4-1 and Golden State 1-4 over their last 5, but both records were compiled with each team's best player compromised, so the rule voids crediting either side on their own form — neutral.","Motivation/Spot: no rivalry, revenge, or notable spot angle found — neutral.","Venue/Crowd: Memphis hosts at FedExForum; nothing notable beyond a standard home environment — neutral.","Market: 78% of spread bets and 81% of money are on home favorite Memphis, and the line moved from -7.5 to -7 (toward Golden State) since open — ordinary chalk action, not reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"PD/g corrected to +0.87 (GSW) and +9.00 (MEM) per Basketball-Reference, gap 8.13 moves the Ledger tier from lean to solid; prices set to DraftKings.","away":"Golden State Warriors","awayMoneyline":200,"awayNetRtg":0.9,"awayPDpg":0.87,"awayScore":null,"awaySpread":6.5,"awaySpreadOdds":-108,"confidence":"solid","correct":null,"gameTotal":226.5,"gameTotalOverOdds":-113,"gameTotalUnderOdds":-107,"home":"Memphis Grizzlies","homeMoneyline":-243,"homeNetRtg":9,"homePDpg":9,"homeScore":null,"homeSpread":-6.5,"homeSpreadOdds":-112,"netRtgGap":34.49,"pick":"Memphis Grizzlies","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g +0.9 vs +9.0 (2026-27 season, 15 GP each)","NetRtg +0.9 vs +9.0 (51.7th vs 86.2nd pct of 30 teams — gap 34.49)","GSW missing Stephen Curry, Jimmy Butler, Kristaps Porzingis, Al Horford, Moses Moody, Brandon Williams","MEM: leading scorer Ty Jerome (25.4 ppg) questionable/trending out (hip); also missing Isaiah Stewart, Scotty Pippen Jr., Gregory Jackson, Richie Saunders"],"statsLine":{"awayMoneyline":231,"awaySpread":7.5,"awaySpreadOdds":-115,"homeMoneyline":-284,"homeSpread":-7.5,"homeSpreadOdds":-105},"statsSpread":-7.5,"storylines":[{"against":false,"fact":"Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +7.5 underdog.","key":"ghost_town","leanPct":52.6,"leans":"Memphis Grizzlies","live":"5-3","name":"Ghost town","pct":52.6,"record":"825-743","says":"fade","team":"Golden State Warriors","weight":1}],"time":"8:00 PM ET","totalsLine":226.5},
-    {"altCategoryTally":"1-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Portland has the far better PD/g (+6.0 vs -13.6), but Portland's leading scorer Deni Avdija is a game-time decision tonight, voiding this category for Portland; Milwaukee's own -13.6 margin gives no basis to credit Milwaukee either — neutral.","Rest: Milwaukee played last night (Nov 18) at Miami and is on the second night of a back-to-back; Portland last played Nov 17 at Minnesota — favors Portland Trail Blazers.","Travel: no distinct travel factor beyond the back-to-back already captured under Rest — neutral.","Injuries/Lineup: Portland's cluster is far larger (Morant, Sharpe, Robert Williams III, Krejci out; Avdija, Camara, Youngblood questionable — 7 total) than Milwaukee's (Rollins, Dieng — 2 total). Both clear the 2+ threshold so no double-weight applied — favors Milwaukee Bucks on severity.","Form: Portland is 3-2 over its last 5 (including two wins over Oklahoma City) but Avdija's questionable tag voids crediting Portland; Milwaukee is 0-5 over its last 5, which doesn't support crediting Milwaukee either — neutral.","Motivation/Spot: no rivalry, revenge, or notable spot angle found — neutral.","Venue/Crowd: Milwaukee hosts at Fiserv Forum; nothing notable beyond a standard home environment — neutral.","Market: about 65% of spread bets are on road favorite Portland, and the line moved from 9.5 to 10.5 toward Portland since open — ordinary chalk, not reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"Prices set to DraftKings (stored -418/+418 matched no book); Portland's last game corrected to Nov 17, Rest still favors Portland.","away":"Portland Trail Blazers","awayMoneyline":-467,"awayNetRtg":6,"awayPDpg":6,"awayScore":null,"awaySpread":-10.5,"awaySpreadOdds":-112,"confidence":"solid","correct":null,"gameTotal":228.5,"gameTotalOverOdds":-115,"gameTotalUnderOdds":-105,"home":"Milwaukee Bucks","homeMoneyline":360,"homeNetRtg":-13.2,"homePDpg":-13.6,"homeScore":null,"homeSpread":10.5,"homeSpreadOdds":-108,"netRtgGap":68.97,"pick":"Portland Trail Blazers","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g +6.0 vs -13.6 (2026-27 season, 14 vs 15 GP)","NetRtg +6.0 vs -13.2 (72.4th vs 3.4th pct of 30 teams — gap 68.97)","POR: leading scorer Deni Avdija (24.2 ppg) a game-time decision (foot); also missing Ja Morant, Shaedon Sharpe, Robert Williams III, Vit Krejci; Toumani Camara/Chris Youngblood also questionable","MIL: missing Ryan Rollins (illness) and Ousmane Dieng (finger); leading scorer Tyler Herro (19.4 ppg) available"],"statsLine":{"awayMoneyline":-423,"awaySpread":-10.5,"awaySpreadOdds":-107,"homeMoneyline":331,"homeSpread":10.5,"homeSpreadOdds":-113},"statsSpread":10.5,"time":"8:00 PM ET","totalsLine":228.5},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Minnesota has the better PD/g (+10.6 vs +6.1), but Minnesota's best player Anthony Edwards has been out since Oct 27 (knee), voiding this category for Minnesota; New York's own +6.1 margin isn't being compared favorably by rule — neutral.","Rest: both teams last played Nov 17 — neutral.","Travel: no notable travel factor found for either side — neutral.","Injuries/Lineup: Minnesota is missing Anthony Edwards, Jaylen Clark, and Donte DiVincenzo (all out) plus Jonathan Kuminga/Zyon Pullin (questionable) — a clear 2+ cluster; New York has no comparable absences on the current report — favors New York Knicks (weighted x2 — multi-player cluster).","Form: Minnesota is 4-1 over its last 5, but that record can't be credited to Minnesota given Edwards's long-term absence; New York is 3-2, which doesn't clearly support crediting New York either — neutral.","Motivation/Spot: no rivalry, revenge, or notable spot angle found — neutral.","Venue/Crowd: Minnesota hosts at Target Center; nothing notable beyond a standard home environment — neutral.","Market: about 35% of spread bets and 37% of money are on home underdog Minnesota, and the spread hasn't moved from its 1.5 open — no reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"Prices set to DraftKings (stored -106/+106 matched no book); no pick change.","away":"New York Knicks","awayMoneyline":-113,"awayNetRtg":6.5,"awayPDpg":6.1,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":-102,"confidence":"skip","correct":null,"gameTotal":217.5,"gameTotalOverOdds":-107,"gameTotalUnderOdds":-113,"home":"Minnesota Timberwolves","homeMoneyline":-104,"homeNetRtg":10.5,"homePDpg":10.6,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":-119,"netRtgGap":13.79,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"netrtg-gap","skipped":true,"statLines":["PD/g +6.1 vs +10.6 (2026-27 season, 14 vs 15 GP)","NetRtg +6.5 vs +10.5 (79.3rd vs 93.1st pct of 30 teams — gap 13.79; below the 30-point netrtg-gap threshold, Ledger skips)","MIN: best player Anthony Edwards out long-term (knee, since Oct 27); also Jonathan Kuminga/Zyon Pullin questionable, Jaylen Clark/Donte DiVincenzo out","NYK: no significant absences found on the current injury report"],"statsCheck":"Rule 47: Backing New York Knicks: New York Knicks lost the last meeting by 11 (New York Knicks 104 @ Minnesota Timberwolves 115, 2025-12-24) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.","statsFavors":"New York Knicks","statsLine":{"awayMoneyline":-113,"awaySpread":-1.5,"awaySpreadOdds":-105,"homeMoneyline":-104,"homeSpread":1.5,"homeSpreadOdds":-115},"statsRules":[{"backtest":"61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22","detail":"Backing New York Knicks: New York Knicks lost the last meeting by 11 (New York Knicks 104 @ Minnesota Timberwolves 115, 2025-12-24) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.","name":"Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)","rule":47}],"statsSpread":1.5,"time":"8:00 PM ET","totalsLine":217.5},
-    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: both teams' best players (Kawhi Leonard, Victor Wembanyama) are healthy, so this counts cleanly — San Antonio's +11.2 PD/g vs LA Clippers' -5.8 — favors San Antonio Spurs.","Rest/Form split kept separate: no verified back-to-back for either side today — neutral on Rest.","Travel: no notable travel factor confirmed beyond the standard road trip — neutral.","Injuries/Lineup: both teams have comparable depth-level clusters (LAC: Ingram/Beal/Miller; SAS: Harper/Harris/Quaintance), none involving either team's top star — neutral.","Form: San Antonio is 4-1 in its last 5 (lost 93-105 to Detroit on Nov 17) while LA Clippers are 3-2 (including a 107-132 loss to Utah on Nov 17) — favors San Antonio Spurs.","Motivation/Spot: both are Western Conference foes but no specific rivalry/revenge angle found for tonight — neutral.","Venue/Crowd: San Antonio hosts at Frost Bank Center; nothing notable beyond a standard home environment — neutral.","Market: about 45% of spread bets and 35% of money are on home favorite San Antonio (majority public on the Clippers getting +15.5), and the line moved from -16.5 to -15.5 (toward the underdog) since open — not a reverse-line-movement pattern — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"Prices set to DraftKings (stored +900/-900 matched no book); last-5 records corrected to SAS 4-1, LAC 3-2, Form still favors San Antonio.","away":"LA Clippers","awayMoneyline":670,"awayNetRtg":-5.8,"awayPDpg":-5.8,"awayScore":null,"awaySpread":15.5,"awaySpreadOdds":-110,"confidence":"solid","correct":null,"gameTotal":226.5,"gameTotalOverOdds":-110,"gameTotalUnderOdds":-110,"home":"San Antonio Spurs","homeMoneyline":-1040,"homeNetRtg":11.4,"homePDpg":11.2,"homeScore":null,"homeSpread":-15.5,"homeSpreadOdds":-110,"netRtgGap":72.41,"pick":"San Antonio Spurs","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -5.8 vs +11.2 (2026-27 season, 13 vs 15 GP)","NetRtg -5.8 vs +11.4 (27.6th vs 100.0th pct of 30 teams — gap 72.41)","LAC missing Brandon Ingram, Bradley Beal, Jordan Miller; Kawhi Leonard (best player) available and playing well","SAS missing Dylan Harper, Tobias Harris, Jayden Quaintance; Victor Wembanyama (best player) available"],"statsCheck":"Rule 45: Backing LA Clippers: LA Clippers lost the last meeting by 19 (San Antonio Spurs 118 @ LA Clippers 99, 2026-04-03) as the favorite, its 3 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16. Rule 55: Backing LA Clippers: first road game after 3 straight at home, about 1,207 miles away, after losing 107-132 to Utah Jazz -- 66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19.","statsFavors":"LA Clippers","statsLine":{"awayMoneyline":670,"awaySpread":15.5,"awaySpreadOdds":-110,"homeMoneyline":-1040,"homeSpread":-15.5,"homeSpreadOdds":-110},"statsRules":[{"backtest":"64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16","detail":"Backing LA Clippers: LA Clippers lost the last meeting by 19 (San Antonio Spurs 118 @ LA Clippers 99, 2026-04-03) as the favorite, its 3 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16.","name":"Revenge: back a team with the worse record after losing the last meeting by 10-19 as the favorite, its 2nd+ straight loss to them (on trial)","rule":45},{"backtest":"66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19","detail":"Backing LA Clippers: first road game after 3 straight at home, about 1,207 miles away, after losing 107-132 to Utah Jazz -- 66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19.","name":"Back a road team in its first road game after 3+ straight at home, 1,000+ miles away, after a loss, with at least a day off (on trial)","rule":55}],"statsSpread":-15.5,"time":"8:00 PM ET","totalsCheck":"Rule 6: LA Clippers lost at home to Utah Jazz by 25 on 2026-11-17 (the worse-record team); now on the road vs. better-record San Antonio Spurs.","totalsFavors":"Under","totalsLine":226.5,"totalsRules":[{"backtest":"62.2% unders, 107-65 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30","detail":"LA Clippers lost at home to Utah Jazz by 25 on 2026-11-17 (the worse-record team); now on the road vs. better-record San Antonio Spurs.","name":"Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)","rule":6}]}
+    {
+      "altCategoryTally": "0-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Memphis has the better PD/g (+9.0 vs +0.9), but Memphis's leading scorer Ty Jerome (25.4 ppg) is questionable/trending toward out (hip) and Golden State's best player Stephen Curry is out (abdomen) \u2014 this category can't count for either team's own star situation \u2014 neutral.",
+        "Rest: both teams are on the second night of a back-to-back (GSW lost at Dallas, MEM won at Cleveland, both on Nov 18) \u2014 neutral.",
+        "Travel: Golden State continues a true road trip (Dallas to Memphis, different city); Memphis returns home after its back-to-back \u2014 favors Memphis Grizzlies.",
+        "Injuries/Lineup: Golden State's cluster is more severe (Curry, Butler, and Porzingis all out, plus Horford/Moody/Williams) than Memphis's (Jerome plus bench-level absences). Both technically clear the 2+ cluster threshold so no double-weight applied \u2014 favors Memphis Grizzlies on severity.",
+        "Form: Memphis is 4-1 and Golden State 1-4 over their last 5, but both records were compiled with each team's best player compromised, so the rule voids crediting either side on their own form \u2014 neutral.",
+        "Motivation/Spot: no rivalry, revenge, or notable spot angle found \u2014 neutral.",
+        "Venue/Crowd: Memphis hosts at FedExForum; nothing notable beyond a standard home environment \u2014 neutral.",
+        "Market: 78% of spread bets and 81% of money are on home favorite Memphis, and the line moved from -7.5 to -7 (toward Golden State) since open \u2014 ordinary chalk action, not reverse line movement \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "PD/g corrected to +0.87 (GSW) and +9.00 (MEM) per Basketball-Reference, gap 8.13 moves the Ledger tier from lean to solid; prices set to DraftKings.",
+      "away": "Golden State Warriors",
+      "awayMoneyline": 200,
+      "awayNetRtg": 0.9,
+      "awayPDpg": 0.87,
+      "awayScore": null,
+      "awaySpread": 6.5,
+      "awaySpreadOdds": -108,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
+      "home": "Memphis Grizzlies",
+      "homeMoneyline": -243,
+      "homeNetRtg": 9,
+      "homePDpg": 9,
+      "homeScore": null,
+      "homeSpread": -6.5,
+      "homeSpreadOdds": -112,
+      "netRtgGap": 34.49,
+      "pick": "Memphis Grizzlies",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g +0.9 vs +9.0 (2026-27 season, 15 GP each)",
+        "NetRtg +0.9 vs +9.0 (51.7th vs 86.2nd pct of 30 teams \u2014 gap 34.49)",
+        "GSW missing Stephen Curry, Jimmy Butler, Kristaps Porzingis, Al Horford, Moses Moody, Brandon Williams",
+        "MEM: leading scorer Ty Jerome (25.4 ppg) questionable/trending out (hip); also missing Isaiah Stewart, Scotty Pippen Jr., Gregory Jackson, Richie Saunders"
+      ],
+      "statsLine": {
+        "awayMoneyline": 231,
+        "awaySpread": 7.5,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": -284,
+        "homeSpread": -7.5,
+        "homeSpreadOdds": -105
+      },
+      "statsSpread": -7.5,
+      "storylines": [
+        {
+          "against": false,
+          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +7.5 underdog.",
+          "key": "ghost_town",
+          "leanPct": 52.6,
+          "leans": "Memphis Grizzlies",
+          "live": "5-3",
+          "name": "Ghost town",
+          "pct": 52.6,
+          "record": "825-743",
+          "says": "fade",
+          "team": "Golden State Warriors",
+          "weight": 1
+        }
+      ],
+      "time": "8:00 PM ET",
+      "totalsLine": 226.5,
+      "starterOut": {
+        "checked": "2026-11-19T19:46:58+00:00",
+        "line": {
+          "open": -8.5,
+          "now": -5.5
+        },
+        "away": [
+          {
+            "player": "Draymond Green",
+            "pos": "SF",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              13,
+              25.6,
+              3.2,
+              4.7,
+              6.5,
+              0.3
+            ],
+            "gainers": [
+              {
+                "player": "Will Richard",
+                "pos": "SG",
+                "with": [
+                  12,
+                  18.1,
+                  7.0,
+                  2.4,
+                  0.9,
+                  0.9
+                ],
+                "without": [
+                  2,
+                  26.5,
+                  7.0,
+                  0.0,
+                  2.0,
+                  2.0
+                ]
+              },
+              {
+                "player": "Graham Ike",
+                "pos": "PF",
+                "with": [
+                  10,
+                  8.7,
+                  3.9,
+                  1.9,
+                  1.2,
+                  0.5
+                ],
+                "without": [
+                  2,
+                  16.0,
+                  7.0,
+                  6.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "De'Anthony Melton",
+                "pos": "SG",
+                "with": [
+                  13,
+                  20.9,
+                  7.0,
+                  3.7,
+                  2.0,
+                  1.6
+                ],
+                "without": [
+                  2,
+                  27.5,
+                  23.0,
+                  5.5,
+                  4.0,
+                  5.0
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Stephen Curry",
+            "pos": "PG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 3,
+            "avg": [
+              10,
+              26.5,
+              27.8,
+              3.7,
+              3.9,
+              4.3
+            ],
+            "gainers": [
+              {
+                "player": "Will Richard",
+                "pos": "SG",
+                "with": [
+                  9,
+                  15.2,
+                  5.1,
+                  2.4,
+                  0.7,
+                  0.8
+                ],
+                "without": [
+                  5,
+                  26.6,
+                  10.4,
+                  1.4,
+                  1.8,
+                  1.6
+                ]
+              },
+              {
+                "player": "LJ Cryer",
+                "pos": "PG",
+                "with": [
+                  6,
+                  8.7,
+                  6.3,
+                  0.3,
+                  1.5,
+                  1.5
+                ],
+                "without": [
+                  5,
+                  16.6,
+                  7.8,
+                  0.8,
+                  2.4,
+                  2.2
+                ]
+              },
+              {
+                "player": "De'Anthony Melton",
+                "pos": "SG",
+                "with": [
+                  10,
+                  21.4,
+                  7.5,
+                  4.0,
+                  2.0,
+                  1.7
+                ],
+                "without": [
+                  5,
+                  22.6,
+                  12.4,
+                  3.8,
+                  2.8,
+                  2.8
+                ]
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "player": "Zach Edey",
+            "pos": "C",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              12,
+              20.8,
+              9.2,
+              7.4,
+              0.9,
+              0.1
+            ],
+            "gainers": [
+              {
+                "player": "Taylor Hendricks",
+                "pos": "PF",
+                "with": [
+                  7,
+                  11.1,
+                  7.6,
+                  2.6,
+                  0.4,
+                  1.0
+                ],
+                "without": [
+                  3,
+                  18.3,
+                  10.7,
+                  6.0,
+                  2.0,
+                  0.7
+                ]
+              },
+              {
+                "player": "Quinten Post",
+                "pos": "C",
+                "with": [
+                  9,
+                  11.2,
+                  4.6,
+                  1.9,
+                  0.2,
+                  0.7
+                ],
+                "without": [
+                  1,
+                  17.0,
+                  7.0,
+                  5.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Isaiah Stewart",
+                "pos": "C",
+                "with": [
+                  7,
+                  17.7,
+                  10.4,
+                  2.9,
+                  0.6,
+                  1.0
+                ],
+                "without": [
+                  3,
+                  19.0,
+                  12.0,
+                  4.3,
+                  1.7,
+                  0.7
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Ty Jerome",
+            "pos": "PG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 3,
+            "avg": [
+              11,
+              30.6,
+              25.4,
+              3.4,
+              5.3,
+              2.5
+            ],
+            "gainers": [
+              {
+                "player": "Cam Spencer",
+                "pos": "PG",
+                "with": [
+                  11,
+                  19.4,
+                  9.6,
+                  3.0,
+                  4.1,
+                  1.9
+                ],
+                "without": [
+                  4,
+                  30.0,
+                  16.2,
+                  3.2,
+                  9.2,
+                  2.8
+                ]
+              },
+              {
+                "player": "Javon Small",
+                "pos": "PG",
+                "with": [
+                  4,
+                  18.8,
+                  8.0,
+                  2.2,
+                  4.0,
+                  1.2
+                ],
+                "without": [
+                  4,
+                  25.0,
+                  10.0,
+                  3.0,
+                  6.8,
+                  1.2
+                ]
+              },
+              {
+                "player": "Jahmai Mashack",
+                "pos": "PG",
+                "with": [
+                  1,
+                  4.0,
+                  0.0,
+                  0.0,
+                  2.0,
+                  0.0
+                ],
+                "without": [
+                  4,
+                  5.2,
+                  1.2,
+                  0.5,
+                  1.0,
+                  0.2
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "altCategoryTally": "1-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Portland has the far better PD/g (+6.0 vs -13.6), but Portland's leading scorer Deni Avdija is a game-time decision tonight, voiding this category for Portland; Milwaukee's own -13.6 margin gives no basis to credit Milwaukee either \u2014 neutral.",
+        "Rest: Milwaukee played last night (Nov 18) at Miami and is on the second night of a back-to-back; Portland last played Nov 17 at Minnesota \u2014 favors Portland Trail Blazers.",
+        "Travel: no distinct travel factor beyond the back-to-back already captured under Rest \u2014 neutral.",
+        "Injuries/Lineup: Portland's cluster is far larger (Morant, Sharpe, Robert Williams III, Krejci out; Avdija, Camara, Youngblood questionable \u2014 7 total) than Milwaukee's (Rollins, Dieng \u2014 2 total). Both clear the 2+ threshold so no double-weight applied \u2014 favors Milwaukee Bucks on severity.",
+        "Form: Portland is 3-2 over its last 5 (including two wins over Oklahoma City) but Avdija's questionable tag voids crediting Portland; Milwaukee is 0-5 over its last 5, which doesn't support crediting Milwaukee either \u2014 neutral.",
+        "Motivation/Spot: no rivalry, revenge, or notable spot angle found \u2014 neutral.",
+        "Venue/Crowd: Milwaukee hosts at Fiserv Forum; nothing notable beyond a standard home environment \u2014 neutral.",
+        "Market: about 65% of spread bets are on road favorite Portland, and the line moved from 9.5 to 10.5 toward Portland since open \u2014 ordinary chalk, not reverse line movement \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Prices set to DraftKings (stored -418/+418 matched no book); Portland's last game corrected to Nov 17, Rest still favors Portland.",
+      "away": "Portland Trail Blazers",
+      "awayMoneyline": -467,
+      "awayNetRtg": 6,
+      "awayPDpg": 6,
+      "awayScore": null,
+      "awaySpread": -10.5,
+      "awaySpreadOdds": -112,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "home": "Milwaukee Bucks",
+      "homeMoneyline": 360,
+      "homeNetRtg": -13.2,
+      "homePDpg": -13.6,
+      "homeScore": null,
+      "homeSpread": 10.5,
+      "homeSpreadOdds": -108,
+      "netRtgGap": 68.97,
+      "pick": "Portland Trail Blazers",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g +6.0 vs -13.6 (2026-27 season, 14 vs 15 GP)",
+        "NetRtg +6.0 vs -13.2 (72.4th vs 3.4th pct of 30 teams \u2014 gap 68.97)",
+        "POR: leading scorer Deni Avdija (24.2 ppg) a game-time decision (foot); also missing Ja Morant, Shaedon Sharpe, Robert Williams III, Vit Krejci; Toumani Camara/Chris Youngblood also questionable",
+        "MIL: missing Ryan Rollins (illness) and Ousmane Dieng (finger); leading scorer Tyler Herro (19.4 ppg) available"
+      ],
+      "statsLine": {
+        "awayMoneyline": -423,
+        "awaySpread": -10.5,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": 331,
+        "homeSpread": 10.5,
+        "homeSpreadOdds": -113
+      },
+      "statsSpread": 10.5,
+      "time": "8:00 PM ET",
+      "totalsLine": 228.5,
+      "starterOut": {
+        "checked": "2026-11-19T19:46:58+00:00",
+        "line": {
+          "open": 9.5,
+          "now": 11.5
+        },
+        "away": [
+          {
+            "player": "Toumani Camara",
+            "pos": "SF",
+            "status": "Day-To-Day",
+            "out": false,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              14,
+              29.1,
+              12.2,
+              3.4,
+              1.3,
+              2.6
+            ],
+            "gainers": [
+              {
+                "player": "Deni Avdija",
+                "pos": "SF",
+                "with": [
+                  13,
+                  32.5,
+                  24.2,
+                  6.2,
+                  6.1,
+                  2.1
+                ],
+                "without": null
+              },
+              {
+                "player": "Sidy Cissoko",
+                "pos": "SG",
+                "with": [
+                  14,
+                  24.1,
+                  7.5,
+                  3.7,
+                  1.9,
+                  1.4
+                ],
+                "without": null
+              },
+              {
+                "player": "Scoot Henderson",
+                "pos": "SG",
+                "with": [
+                  14,
+                  22.2,
+                  8.7,
+                  1.8,
+                  1.4,
+                  0.9
+                ],
+                "without": null
+              }
+            ]
+          },
+          {
+            "player": "Deni Avdija",
+            "pos": "SF",
+            "status": "Day-To-Day",
+            "out": false,
+            "lastGame": false,
+            "missed": 1,
+            "avg": [
+              13,
+              32.5,
+              24.2,
+              6.2,
+              6.1,
+              2.1
+            ],
+            "gainers": [
+              {
+                "player": "Jayson Kent",
+                "pos": "SG",
+                "with": [
+                  4,
+                  10.2,
+                  3.8,
+                  0.8,
+                  0.2,
+                  0.8
+                ],
+                "without": [
+                  1,
+                  27.0,
+                  8.0,
+                  3.0,
+                  0.0,
+                  2.0
+                ]
+              },
+              {
+                "player": "Sidy Cissoko",
+                "pos": "SG",
+                "with": [
+                  13,
+                  23.5,
+                  7.6,
+                  3.6,
+                  2.0,
+                  1.3
+                ],
+                "without": [
+                  1,
+                  32.0,
+                  6.0,
+                  5.0,
+                  1.0,
+                  2.0
+                ]
+              },
+              {
+                "player": "Toumani Camara",
+                "pos": "SF",
+                "with": [
+                  13,
+                  28.8,
+                  12.4,
+                  3.1,
+                  1.3,
+                  2.6
+                ],
+                "without": [
+                  1,
+                  33.0,
+                  10.0,
+                  8.0,
+                  1.0,
+                  2.0
+                ]
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "player": "Kyle Kuzma",
+            "pos": "SF",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              15,
+              27.1,
+              12.3,
+              5.3,
+              2.4,
+              1.7
+            ],
+            "gainers": [
+              {
+                "player": "Jaime Jaquez Jr.",
+                "pos": "SF",
+                "with": [
+                  15,
+                  27.6,
+                  15.4,
+                  5.4,
+                  3.1,
+                  1.9
+                ],
+                "without": null
+              },
+              {
+                "player": "Brayden Burries",
+                "pos": "SG",
+                "with": [
+                  15,
+                  22.1,
+                  10.1,
+                  5.5,
+                  2.3,
+                  1.1
+                ],
+                "without": null
+              },
+              {
+                "player": "Nate Ament",
+                "pos": "PF",
+                "with": [
+                  13,
+                  17.5,
+                  7.3,
+                  2.7,
+                  0.6,
+                  1.0
+                ],
+                "without": null
+              }
+            ]
+          },
+          {
+            "player": "Myles Turner",
+            "pos": "C",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              14,
+              26.6,
+              7.1,
+              6.0,
+              2.7,
+              1.3
+            ],
+            "gainers": [
+              {
+                "player": "Jericho Sims",
+                "pos": "C",
+                "with": [
+                  9,
+                  9.3,
+                  1.3,
+                  1.4,
+                  0.3,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  18.0,
+                  0.0,
+                  4.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Kel'el Ware",
+                "pos": "C",
+                "with": [
+                  14,
+                  17.8,
+                  8.8,
+                  6.6,
+                  0.9,
+                  0.7
+                ],
+                "without": [
+                  1,
+                  23.0,
+                  8.0,
+                  5.0,
+                  1.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Nate Ament",
+                "pos": "PF",
+                "with": [
+                  12,
+                  17.2,
+                  7.8,
+                  2.6,
+                  0.6,
+                  1.1
+                ],
+                "without": [
+                  1,
+                  22.0,
+                  2.0,
+                  4.0,
+                  1.0,
+                  0.0
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Minnesota has the better PD/g (+10.6 vs +6.1), but Minnesota's best player Anthony Edwards has been out since Oct 27 (knee), voiding this category for Minnesota; New York's own +6.1 margin isn't being compared favorably by rule \u2014 neutral.",
+        "Rest: both teams last played Nov 17 \u2014 neutral.",
+        "Travel: no notable travel factor found for either side \u2014 neutral.",
+        "Injuries/Lineup: Minnesota is missing Anthony Edwards, Jaylen Clark, and Donte DiVincenzo (all out) plus Jonathan Kuminga/Zyon Pullin (questionable) \u2014 a clear 2+ cluster; New York has no comparable absences on the current report \u2014 favors New York Knicks (weighted x2 \u2014 multi-player cluster).",
+        "Form: Minnesota is 4-1 over its last 5, but that record can't be credited to Minnesota given Edwards's long-term absence; New York is 3-2, which doesn't clearly support crediting New York either \u2014 neutral.",
+        "Motivation/Spot: no rivalry, revenge, or notable spot angle found \u2014 neutral.",
+        "Venue/Crowd: Minnesota hosts at Target Center; nothing notable beyond a standard home environment \u2014 neutral.",
+        "Market: about 35% of spread bets and 37% of money are on home underdog Minnesota, and the spread hasn't moved from its 1.5 open \u2014 no reverse line movement \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Prices set to DraftKings (stored -106/+106 matched no book); no pick change.",
+      "away": "New York Knicks",
+      "awayMoneyline": -113,
+      "awayNetRtg": 6.5,
+      "awayPDpg": 6.1,
+      "awayScore": null,
+      "awaySpread": -1.5,
+      "awaySpreadOdds": -102,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 217.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
+      "home": "Minnesota Timberwolves",
+      "homeMoneyline": -104,
+      "homeNetRtg": 10.5,
+      "homePDpg": 10.6,
+      "homeScore": null,
+      "homeSpread": 1.5,
+      "homeSpreadOdds": -119,
+      "netRtgGap": 13.79,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "netrtg-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +6.1 vs +10.6 (2026-27 season, 14 vs 15 GP)",
+        "NetRtg +6.5 vs +10.5 (79.3rd vs 93.1st pct of 30 teams \u2014 gap 13.79; below the 30-point netrtg-gap threshold, Ledger skips)",
+        "MIN: best player Anthony Edwards out long-term (knee, since Oct 27); also Jonathan Kuminga/Zyon Pullin questionable, Jaylen Clark/Donte DiVincenzo out",
+        "NYK: no significant absences found on the current injury report"
+      ],
+      "statsCheck": "Rule 47: Backing New York Knicks: New York Knicks lost the last meeting by 11 (New York Knicks 104 @ Minnesota Timberwolves 115, 2025-12-24) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
+      "statsFavors": "New York Knicks",
+      "statsLine": {
+        "awayMoneyline": -113,
+        "awaySpread": -1.5,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -104,
+        "homeSpread": 1.5,
+        "homeSpreadOdds": -115
+      },
+      "statsRules": [
+        {
+          "backtest": "61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22",
+          "detail": "Backing New York Knicks: New York Knicks lost the last meeting by 11 (New York Knicks 104 @ Minnesota Timberwolves 115, 2025-12-24) as the underdog; tonight on the road, favored, with the worse record -- 61.3% ATS, 84-53 (2018-19 and 2021-22 to now); unseen 17-13; 2024-now 36-22.",
+          "name": "Revenge: back a team with the worse record whose last meeting, last season, was a 10-19 point loss (its only straight loss to them) (on trial)",
+          "rule": 47
+        }
+      ],
+      "statsSpread": 1.5,
+      "time": "8:00 PM ET",
+      "totalsLine": 217.5,
+      "starterOut": {
+        "checked": "2026-11-19T19:46:58+00:00",
+        "line": {
+          "open": 1.5,
+          "now": 1.5
+        },
+        "away": [],
+        "home": [
+          {
+            "player": "Anthony Edwards",
+            "pos": "SG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 11,
+            "avg": [
+              4,
+              33.8,
+              33.2,
+              4.8,
+              3.5,
+              4.5
+            ],
+            "gainers": [
+              {
+                "player": "Bones Hyland",
+                "pos": "PG",
+                "with": [
+                  4,
+                  8.0,
+                  2.2,
+                  1.5,
+                  1.0,
+                  0.5
+                ],
+                "without": [
+                  11,
+                  16.1,
+                  12.6,
+                  1.4,
+                  3.5,
+                  2.3
+                ]
+              },
+              {
+                "player": "Ayo Dosunmu",
+                "pos": "SG",
+                "with": [
+                  4,
+                  26.2,
+                  12.0,
+                  4.0,
+                  4.0,
+                  1.0
+                ],
+                "without": [
+                  11,
+                  33.5,
+                  21.0,
+                  4.8,
+                  3.3,
+                  2.5
+                ]
+              },
+              {
+                "player": "LaMelo Ball",
+                "pos": "PG",
+                "with": [
+                  4,
+                  25.0,
+                  14.8,
+                  2.0,
+                  6.2,
+                  3.0
+                ],
+                "without": [
+                  11,
+                  28.7,
+                  18.8,
+                  4.8,
+                  5.3,
+                  3.6
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Jonathan Kuminga",
+            "pos": "SF",
+            "status": "Day-To-Day",
+            "out": false,
+            "lastGame": false,
+            "missed": 1,
+            "avg": [
+              14,
+              30.4,
+              12.4,
+              5.7,
+              2.8,
+              1.6
+            ],
+            "gainers": [
+              {
+                "player": "Trey Lyles",
+                "pos": "PF",
+                "with": [
+                  14,
+                  18.3,
+                  6.1,
+                  3.6,
+                  0.9,
+                  0.9
+                ],
+                "without": [
+                  1,
+                  31.0,
+                  8.0,
+                  7.0,
+                  4.0,
+                  2.0
+                ]
+              },
+              {
+                "player": "Joan Beringer",
+                "pos": "PF",
+                "with": [
+                  14,
+                  16.6,
+                  5.5,
+                  6.1,
+                  0.5,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  26.0,
+                  3.0,
+                  13.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Cody Williams",
+                "pos": "SF",
+                "with": [
+                  8,
+                  4.1,
+                  0.0,
+                  0.4,
+                  0.0,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  13.0,
+                  0.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "altCategoryTally": "0-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: both teams' best players (Kawhi Leonard, Victor Wembanyama) are healthy, so this counts cleanly \u2014 San Antonio's +11.2 PD/g vs LA Clippers' -5.8 \u2014 favors San Antonio Spurs.",
+        "Rest/Form split kept separate: no verified back-to-back for either side today \u2014 neutral on Rest.",
+        "Travel: no notable travel factor confirmed beyond the standard road trip \u2014 neutral.",
+        "Injuries/Lineup: both teams have comparable depth-level clusters (LAC: Ingram/Beal/Miller; SAS: Harper/Harris/Quaintance), none involving either team's top star \u2014 neutral.",
+        "Form: San Antonio is 4-1 in its last 5 (lost 93-105 to Detroit on Nov 17) while LA Clippers are 3-2 (including a 107-132 loss to Utah on Nov 17) \u2014 favors San Antonio Spurs.",
+        "Motivation/Spot: both are Western Conference foes but no specific rivalry/revenge angle found for tonight \u2014 neutral.",
+        "Venue/Crowd: San Antonio hosts at Frost Bank Center; nothing notable beyond a standard home environment \u2014 neutral.",
+        "Market: about 45% of spread bets and 35% of money are on home favorite San Antonio (majority public on the Clippers getting +15.5), and the line moved from -16.5 to -15.5 (toward the underdog) since open \u2014 not a reverse-line-movement pattern \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Prices set to DraftKings (stored +900/-900 matched no book); last-5 records corrected to SAS 4-1, LAC 3-2, Form still favors San Antonio.",
+      "away": "LA Clippers",
+      "awayMoneyline": 670,
+      "awayNetRtg": -5.8,
+      "awayPDpg": -5.8,
+      "awayScore": null,
+      "awaySpread": 15.5,
+      "awaySpreadOdds": -110,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "home": "San Antonio Spurs",
+      "homeMoneyline": -1040,
+      "homeNetRtg": 11.4,
+      "homePDpg": 11.2,
+      "homeScore": null,
+      "homeSpread": -15.5,
+      "homeSpreadOdds": -110,
+      "netRtgGap": 72.41,
+      "pick": "San Antonio Spurs",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g -5.8 vs +11.2 (2026-27 season, 13 vs 15 GP)",
+        "NetRtg -5.8 vs +11.4 (27.6th vs 100.0th pct of 30 teams \u2014 gap 72.41)",
+        "LAC missing Brandon Ingram, Bradley Beal, Jordan Miller; Kawhi Leonard (best player) available and playing well",
+        "SAS missing Dylan Harper, Tobias Harris, Jayden Quaintance; Victor Wembanyama (best player) available"
+      ],
+      "statsCheck": "Rule 45: Backing LA Clippers: LA Clippers lost the last meeting by 19 (San Antonio Spurs 118 @ LA Clippers 99, 2026-04-03) as the favorite, its 3 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16. Rule 55: Backing LA Clippers: first road game after 3 straight at home, about 1,207 miles away, after losing 107-132 to Utah Jazz -- 66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19.",
+      "statsFavors": "LA Clippers",
+      "statsLine": {
+        "awayMoneyline": 670,
+        "awaySpread": 15.5,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -1040,
+        "homeSpread": -15.5,
+        "homeSpreadOdds": -110
+      },
+      "statsRules": [
+        {
+          "backtest": "64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16",
+          "detail": "Backing LA Clippers: LA Clippers lost the last meeting by 19 (San Antonio Spurs 118 @ LA Clippers 99, 2026-04-03) as the favorite, its 3 straight loss to them; tonight on the road, the underdog, with the worse record -- 64.8% ATS, 70-38 (2018-19 and 2021-22 to now); unseen 14-9; 2024-now 27-16.",
+          "name": "Revenge: back a team with the worse record after losing the last meeting by 10-19 as the favorite, its 2nd+ straight loss to them (on trial)",
+          "rule": 45
+        },
+        {
+          "backtest": "66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19",
+          "detail": "Backing LA Clippers: first road game after 3 straight at home, about 1,207 miles away, after losing 107-132 to Utah Jazz -- 66.0% ATS, 97-50 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-16; 2024-now 30-19.",
+          "name": "Back a road team in its first road game after 3+ straight at home, 1,000+ miles away, after a loss, with at least a day off (on trial)",
+          "rule": 55
+        }
+      ],
+      "statsSpread": -15.5,
+      "time": "8:00 PM ET",
+      "totalsCheck": "Rule 6: LA Clippers lost at home to Utah Jazz by 25 on 2026-11-17 (the worse-record team); now on the road vs. better-record San Antonio Spurs.",
+      "totalsFavors": "Under",
+      "totalsLine": 226.5,
+      "totalsRules": [
+        {
+          "backtest": "62.2% unders, 107-65 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 38-30",
+          "detail": "LA Clippers lost at home to Utah Jazz by 25 on 2026-11-17 (the worse-record team); now on the road vs. better-record San Antonio Spurs.",
+          "name": "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
+          "rule": 6
+        }
+      ],
+      "starterOut": {
+        "checked": "2026-11-19T19:46:59+00:00",
+        "line": {
+          "open": -16.5,
+          "now": -15.5
+        },
+        "away": [],
+        "home": [
+          {
+            "player": "Dylan Harper",
+            "pos": "PG",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              15,
+              31.7,
+              18.4,
+              5.4,
+              4.5,
+              1.1
+            ],
+            "gainers": [
+              {
+                "player": "Devin Vassell",
+                "pos": "SG",
+                "with": [
+                  13,
+                  30.2,
+                  11.1,
+                  3.9,
+                  2.9,
+                  1.4
+                ],
+                "without": null
+              },
+              {
+                "player": "Stephon Castle",
+                "pos": "PG",
+                "with": [
+                  15,
+                  29.3,
+                  15.3,
+                  5.2,
+                  5.5,
+                  2.0
+                ],
+                "without": null
+              },
+              {
+                "player": "De'Aaron Fox",
+                "pos": "PG",
+                "with": [
+                  14,
+                  29.0,
+                  13.1,
+                  4.2,
+                  5.5,
+                  0.9
+                ],
+                "without": null
+              }
+            ]
+          }
+        ]
+      }
+    }
   ]
 }
