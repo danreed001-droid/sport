@@ -520,6 +520,9 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   ESPN's full names from the schedule game that night (`_name_fit`: exact, or
   the slate name plus a one-word or known two-word mascot), so "Texas" no
   longer matches Texas A&M or "Missouri" Missouri State; `next_games` uses it too.
+  build_site.py runs in pages.yml without `curl_cffi` installed: it must not
+  import a script that imports `lib.espn` (the first h2h push failed the Pages
+  build on `from archive_schedule import CFG`; the live site stayed up).
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page
