@@ -1,0 +1,145 @@
+{
+ "date": "2026-11-21",
+ "source": "Action Network public feed (consensus = book 15, opener = book 30)",
+ "fetchedAt": "2026-11-20T06:30:40+00:00",
+ "games": [
+  {
+   "away": "Milwaukee Bucks",
+   "home": "Philadelphia 76ers",
+   "start": "2026-11-21T18:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Portland Trail Blazers",
+   "home": "New York Knicks",
+   "start": "2026-11-22T00:30:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Los Angeles Clippers",
+   "home": "Dallas Mavericks",
+   "start": "2026-11-22T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Memphis Grizzlies",
+   "home": "Minnesota Timberwolves",
+   "start": "2026-11-22T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "New Orleans Pelicans",
+   "home": "San Antonio Spurs",
+   "start": "2026-11-22T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Boston Celtics",
+   "home": "Sacramento Kings",
+   "start": "2026-11-22T03:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  }
+ ]
+}
