@@ -50,9 +50,9 @@
       "awayYPP": 5.8,
       "confidence": "lean",
       "correct": null,
-      "gameTotal": 43.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 42.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Michigan State",
       "homeMoneyline": 720,
       "homePDpg": -4.5,
@@ -64,25 +64,25 @@
       "homeSpreadOdds": -106,
       "homeYPP": 4.4,
       "lineMove": {
-        "checked": "2026-11-20T17:18:34+00:00",
-        "ml": {
-          "away": [
-            -455.0,
-            -950.0
-          ],
-          "home": [
-            350.0,
-            625.0
-          ]
-        },
         "spread": [
           12.5,
           17.5
         ],
         "total": [
           45.5,
-          43.5
-        ]
+          42.5
+        ],
+        "ml": {
+          "home": [
+            350.0,
+            625.0
+          ],
+          "away": [
+            -455.0,
+            -950.0
+          ]
+        },
+        "checked": "2026-11-20T21:50:12+00:00"
       },
       "offGap": 69.9,
       "pick": "Oregon",

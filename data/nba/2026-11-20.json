@@ -78,11 +78,11 @@
           ]
         },
         "public": {
-          "betsHome": 71,
-          "moneyHome": 70,
+          "betsHome": 70,
+          "moneyHome": 68,
           "rlm": null
         },
-        "checked": "2026-11-20T21:09:01+00:00"
+        "checked": "2026-11-20T21:50:11+00:00"
       },
       "netRtgGap": 55.17,
       "pick": "Atlanta Hawks",
@@ -443,8 +443,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 223.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105,
+      "gameTotalOverOdds": -111,
+      "gameTotalUnderOdds": -109,
       "home": "Brooklyn Nets",
       "homeMoneyline": 191,
       "homeNetRtg": -8.37,
@@ -484,10 +484,10 @@
         },
         "public": {
           "betsHome": 42,
-          "moneyHome": 37,
+          "moneyHome": 38,
           "rlm": null
         },
-        "checked": "2026-11-20T21:09:01+00:00"
+        "checked": "2026-11-20T21:50:11+00:00"
       },
       "netRtgGap": 24.14,
       "pick": null,
@@ -604,10 +604,10 @@
         },
         "public": {
           "betsHome": 65,
-          "moneyHome": 60,
+          "moneyHome": 61,
           "rlm": null
         },
-        "checked": "2026-11-20T21:09:01+00:00"
+        "checked": "2026-11-20T21:50:11+00:00"
       },
       "netRtgGap": 27.59,
       "pick": null,
@@ -1046,11 +1046,11 @@
           ]
         },
         "public": {
-          "betsHome": 50,
-          "moneyHome": 50,
+          "betsHome": 48,
+          "moneyHome": 52,
           "rlm": null
         },
-        "checked": "2026-11-20T21:09:01+00:00"
+        "checked": "2026-11-20T21:50:11+00:00"
       },
       "netRtgGap": 34.48,
       "pick": "Detroit Pistons",
@@ -1732,11 +1732,11 @@
           ]
         },
         "public": {
-          "betsHome": 60,
-          "moneyHome": 62,
+          "betsHome": 44,
+          "moneyHome": 47,
           "rlm": null
         },
-        "checked": "2026-11-20T21:09:01+00:00"
+        "checked": "2026-11-20T21:50:11+00:00"
       },
       "netRtgGap": 51.72,
       "pick": "Oklahoma City Thunder",
@@ -2076,11 +2076,11 @@
           ]
         },
         "public": {
-          "betsHome": 28,
-          "moneyHome": 25,
+          "betsHome": 30,
+          "moneyHome": 27,
           "rlm": null
         },
-        "checked": "2026-11-20T21:09:01+00:00"
+        "checked": "2026-11-20T21:50:11+00:00"
       },
       "netRtgGap": 17.24,
       "pick": null,
@@ -2393,11 +2393,11 @@
           ]
         },
         "public": {
-          "betsHome": 78,
-          "moneyHome": 81,
+          "betsHome": 67,
+          "moneyHome": 72,
           "rlm": null
         },
-        "checked": "2026-11-20T21:09:01+00:00"
+        "checked": "2026-11-20T21:50:11+00:00"
       },
       "netRtgGap": 37.93,
       "pick": "Houston Rockets",
@@ -2556,9 +2556,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105,
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Los Angeles Lakers",
       "homeMoneyline": -940,
       "homeNetRtg": 6.42,
@@ -2568,10 +2568,10 @@
       "homeSpreadOdds": -110,
       "injuries": {
         "away": {
-          "3907387": "out",
+          "4431679": "out",
           "4065732": "day-to-day",
-          "4431679": "day-to-day",
-          "4898371": "out"
+          "4898371": "out",
+          "3907387": "out"
         },
         "home": {
           "4066457": "out"
@@ -2584,7 +2584,7 @@
         ],
         "total": [
           230.5,
-          228.5
+          229.5
         ],
         "ml": {
           "home": [
@@ -2597,11 +2597,11 @@
           ]
         },
         "public": {
-          "betsHome": 36,
-          "moneyHome": 30,
+          "betsHome": 23,
+          "moneyHome": 29,
           "rlm": null
         },
-        "checked": "2026-11-20T21:09:01+00:00"
+        "checked": "2026-11-20T21:50:11+00:00"
       },
       "netRtgGap": 75.86,
       "pick": "Los Angeles Lakers",
@@ -2611,86 +2611,19 @@
       "skipReason": null,
       "skipped": false,
       "starterOut": {
+        "checked": "2026-11-20T21:50:11+00:00",
+        "line": {
+          "open": -14.5,
+          "now": -14.5
+        },
         "away": [
           {
-            "avg": [
-              12,
-              32.7,
-              13.7,
-              4.2,
-              1.6,
-              2.0
-            ],
-            "gainers": [
-              {
-                "player": "Leaky Black",
-                "pos": "SF",
-                "with": [
-                  7,
-                  17.4,
-                  3.7,
-                  2.6,
-                  1.1,
-                  1.0
-                ],
-                "without": [
-                  2,
-                  34.5,
-                  12.0,
-                  6.0,
-                  3.5,
-                  4.0
-                ]
-              },
-              {
-                "player": "Daeqwon Plowden",
-                "pos": "SG",
-                "with": [
-                  10,
-                  9.3,
-                  2.4,
-                  0.8,
-                  0.2,
-                  0.5
-                ],
-                "without": [
-                  1,
-                  24.0,
-                  13.0,
-                  2.0,
-                  1.0,
-                  3.0
-                ]
-              },
-              {
-                "player": "Alex Karaban",
-                "pos": "SF",
-                "with": [
-                  5,
-                  8.4,
-                  1.4,
-                  0.8,
-                  0.4,
-                  0.4
-                ],
-                "without": [
-                  2,
-                  20.0,
-                  0.0,
-                  3.0,
-                  0.5,
-                  0.0
-                ]
-              }
-            ],
+            "player": "Precious Achiuwa",
+            "pos": "SF",
+            "status": "Out",
+            "out": true,
             "lastGame": true,
             "missed": 0,
-            "out": false,
-            "player": "De'Andre Hunter",
-            "pos": "SF",
-            "status": "Day-To-Day"
-          },
-          {
             "avg": [
               12,
               24.8,
@@ -2760,18 +2693,95 @@
                   2.0
                 ]
               }
-            ],
+            ]
+          },
+          {
+            "player": "De'Andre Hunter",
+            "pos": "SF",
+            "status": "Day-To-Day",
+            "out": false,
             "lastGame": true,
             "missed": 0,
-            "out": false,
-            "player": "Precious Achiuwa",
-            "pos": "SF",
-            "status": "Day-To-Day"
+            "avg": [
+              12,
+              32.7,
+              13.7,
+              4.2,
+              1.6,
+              2.0
+            ],
+            "gainers": [
+              {
+                "player": "Leaky Black",
+                "pos": "SF",
+                "with": [
+                  7,
+                  17.4,
+                  3.7,
+                  2.6,
+                  1.1,
+                  1.0
+                ],
+                "without": [
+                  2,
+                  34.5,
+                  12.0,
+                  6.0,
+                  3.5,
+                  4.0
+                ]
+              },
+              {
+                "player": "Daeqwon Plowden",
+                "pos": "SG",
+                "with": [
+                  10,
+                  9.3,
+                  2.4,
+                  0.8,
+                  0.2,
+                  0.5
+                ],
+                "without": [
+                  1,
+                  24.0,
+                  13.0,
+                  2.0,
+                  1.0,
+                  3.0
+                ]
+              },
+              {
+                "player": "Alex Karaban",
+                "pos": "SF",
+                "with": [
+                  5,
+                  8.4,
+                  1.4,
+                  0.8,
+                  0.4,
+                  0.4
+                ],
+                "without": [
+                  2,
+                  20.0,
+                  0.0,
+                  3.0,
+                  0.5,
+                  0.0
+                ]
+              }
+            ]
           }
         ],
-        "checked": "2026-11-20T06:30:49+00:00",
         "home": [
           {
+            "player": "Austin Reaves",
+            "pos": "SG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 3,
             "avg": [
               12,
               35.2,
@@ -2841,19 +2851,9 @@
                   0.5
                 ]
               }
-            ],
-            "lastGame": false,
-            "missed": 3,
-            "out": true,
-            "player": "Austin Reaves",
-            "pos": "SG",
-            "status": "Out"
+            ]
           }
-        ],
-        "line": {
-          "now": -14.5,
-          "open": -14.5
-        }
+        ]
       },
       "statLines": [
         "PD/g -14.00 vs +6.44 (2026-27 season)",
@@ -2897,7 +2897,7 @@
         }
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 228.5
+      "totalsLine": 229.5
     }
   ]
 }

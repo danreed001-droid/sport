@@ -212,9 +212,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 147.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 146.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "Tennessee Volunteers",
       "homeMoneyline": -7194,
       "homePDpg": 13.85,
@@ -229,7 +229,7 @@
         ],
         "total": [
           143.5,
-          147.5
+          146.5
         ],
         "ml": {
           "home": [
@@ -241,7 +241,7 @@
             3500.0
           ]
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:50:12+00:00"
       },
       "offGap": 62.36,
       "pick": "Tennessee Volunteers",
@@ -437,14 +437,14 @@
       "lineMove": {
         "spread": [
           -43.5,
-          -38.5
+          -37.5
         ],
         "total": [
           151.5,
           152.5
         ],
         "ml": {},
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:50:12+00:00"
       },
       "offGap": 93.96,
       "pick": "Arkansas Razorbacks",
@@ -502,14 +502,14 @@
       "lineMove": {
         "spread": [
           -51.5,
-          -48.5
+          -47.5
         ],
         "total": [
           163.5,
           165.5
         ],
         "ml": {},
-        "checked": "2026-11-20T21:09:02+00:00"
+        "checked": "2026-11-20T21:50:12+00:00"
       },
       "offGap": 93.14,
       "pick": "Illinois Fighting Illini",
