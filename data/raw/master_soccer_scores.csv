@@ -11,7 +11,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401913230,2026-11-20,FT,Wellington Phoenix,2,-,Western Sydney ,0,-,-,-,12:50 AM
 401900905,2026-11-20,Scheduled,Al Nassr,0,-,Al Ahli,0,-,-,-,12:30 PM
 401931821,2026-11-20,Scheduled,Paredes,0,-,FC Porto,0,-,-,-,3:45 PM
-401879805,2026-11-20,Scheduled,Krylia Sovetov,0,-,Rostov,0,-,-,-,11:30 AM
+401879805,2026-11-20,45'+2',Krylia Sovetov,0,-,Rostov,1,-,-,-,11:30 AM
 401878937,2026-11-20,Scheduled,KVC Westerlo,0,-,Cercle Brugge KSV,0,-,-,-,2:45 PM
 401883112,2026-11-20,Scheduled,Leganés,0,-,FC Andorra,0,-,-,-,2:30 PM
 401885049,2026-11-20,Scheduled,1. FC Magdeburg,0,-,Arminia Bielefeld,0,-,-,-,12:30 PM
@@ -22,14 +22,14 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401876690,2026-11-20,Scheduled,Rodez Aveyron,0,-,Guingamp,0,-,-,-,2:00 PM
 401876688,2026-11-20,Scheduled,Boulogne,0,-,Metz,0,-,-,-,2:00 PM
 401876685,2026-11-20,Scheduled,Pau,0,-,Red Star FC 93,0,-,-,-,2:00 PM
-401873519,2026-11-20,Scheduled,Vietnam U17,0,-,Belgium U17,0,-,-,-,8:00 AM
-401873521,2026-11-20,Scheduled,Tajikistan U17,0,-,Cuba U17,0,-,-,-,8:00 AM
-401873518,2026-11-20,Scheduled,New Zealand U17,0,-,Mali U17,0,-,-,-,8:30 AM
-401873520,2026-11-20,Scheduled,China U17,0,-,Spain U17,0,-,-,-,9:00 AM
-401873524,2026-11-20,Scheduled,Jamaica U17,0,-,Italy U17,0,-,-,-,10:00 AM
-401873522,2026-11-20,Scheduled,Croatia U17,0,-,Senegal U17,0,-,-,-,10:30 AM
-401873525,2026-11-20,Scheduled,Morocco U17,0,-,Fiji U17,0,-,-,-,11:00 AM
-401873523,2026-11-20,Scheduled,Uzbekistan U17,0,-,Ivory Coast U17,0,-,-,-,11:00 AM
+401873519,2026-11-20,FT,Vietnam U17,2,-,Belgium U17,3,-,-,-,8:00 AM
+401873521,2026-11-20,FT,Tajikistan U17,5,-,Cuba U17,3,-,-,-,8:00 AM
+401873518,2026-11-20,FT,New Zealand U17,0,-,Mali U17,3,-,-,-,8:30 AM
+401873520,2026-11-20,FT,China U17,0,-,Spain U17,5,-,-,-,9:00 AM
+401873524,2026-11-20,FT,Jamaica U17,0,-,Italy U17,6,-,-,-,10:00 AM
+401873522,2026-11-20,90',Croatia U17,1,-,Senegal U17,1,-,-,-,10:30 AM
+401873525,2026-11-20,60',Morocco U17,5,-,Fiji U17,0,-,-,-,11:00 AM
+401873523,2026-11-20,56',Uzbekistan U17,1,-,Ivory Coast U17,1,-,-,-,11:00 AM
 401880742,2026-11-20,Scheduled,Sheffield Wednesday,0,-,Barnsley,0,-,-,-,3:00 PM
 401889201,2026-11-20,Scheduled,Boreham Wood,0,-,Southend United,0,-,-,-,2:45 PM
 401878519,2026-11-20,Scheduled,Ayr United,0,-,Inverness Caledonian Thistle,0,-,-,-,2:30 PM
@@ -55,15 +55,15 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401934707,2026-11-20,Scheduled,Millonarios,0,-,Deportivo Cali,0,-,-,-,8:40 PM
 401888560,2026-11-20,Scheduled,Sportivo Luqueño,0,-,Sportivo Ameliano,0,-,-,-,3:30 PM
 401888559,2026-11-20,Scheduled,Guaraní,0,-,Deportivo Recoleta,0,-,-,-,6:00 PM
-401921320,2026-11-20,Scheduled,Macará,0,-,Independiente del Valle,0,-,-,-,12:00 PM
+401921320,2026-11-20,15',Macará,1,-,Independiente del Valle,0,-,-,-,12:00 PM
 401877534,2026-11-20,FT,Shimizu S-Pulse,1,-,Kashima Antlers,1,-,-,-,5:00 AM
 401877553,2026-11-20,FT,JEF United Ichihara-Chiba,1,-,Kashiwa Reysol,0,-,-,-,5:00 AM
 401877548,2026-11-20,FT,Mito Hollyhock,2,-,Vissel Kobe,1,-,-,-,5:00 AM
 401876818,2026-11-20,Scheduled,AD San Carlos,0,-,Escorpiones Belén,0,-,-,-,9:00 PM
-401925412,2026-11-20,66',Sporting Club Delhi,1,-,East Bengal FC,1,-,-,-,6:30 AM
-401925411,2026-11-20,Scheduled,Mumbai City FC,0,-,Bengaluru FC,0,-,-,-,9:00 AM
+401925412,2026-11-20,FT,Sporting Club Delhi,2,-,East Bengal FC,2,-,-,-,6:30 AM
+401925411,2026-11-20,FT,Mumbai City FC,0,-,Bengaluru FC,2,-,-,-,9:00 AM
 401930691,2026-11-20,FT,Chanmari FC,4,-,Rajasthan United FC,1,-,-,-,4:30 AM
-401930690,2026-11-20,Scheduled,Gokulam Kerala FC,0,-,Mohammedan SC,0,-,-,-,8:00 AM
+401930690,2026-11-20,FT,Gokulam Kerala FC,4,-,Mohammedan SC,1,-,-,-,8:00 AM
 401932643,2026-11-20,Scheduled,Southern Illinois,0,-,Purdue,0,-,-,-,2:00 PM
 401932638,2026-11-20,Scheduled,Bryant,0,-,Virginia,0,-,-,-,3:00 PM
 401932649,2026-11-20,Scheduled,UCF,0,-,Florida State,0,-,-,-,5:00 PM
