@@ -2,7 +2,7 @@
   "date": "2026-11-19",
   "weekday": "Thursday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-19T13:17:38Z",
   "games": [
     {
@@ -11,7 +11,7 @@
       "altCategoryTally": "6-0",
       "altConfidence": "strong",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": true,
       "altPick": "Houston Texans",
       "altReasons": [
         "Scoring margin: favors Texans \u2014 blended PD/g +3.98 (Texans) vs -1.56 (Colts); no major QB change for either team this season (Stroud and Jones have started all of their team's games), so neither side's figure is discounted",
@@ -25,7 +25,7 @@
         "Weather/Venue: neutral \u2014 Reliant Stadium is a dome, no weather factor"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": 92.59,
       "altTrendCheck": "Colts prior game (Wk10 vs MIA, CBS box score): 276 total net yds (104 pass yds on 11-22, 172 rush yds on 34 att), won by 2 \u2014 no pattern matched (not a loss, so Pattern A N/A; YPA 4.7 < 7.5 misses Pattern B; rush/pass ratio 1.55 > 1.0 misses Pattern C; pass att 22 < 41 misses Pattern D). Texans prior game (Wk10 @ CLE, CBS box score): 290 total net yds (202 pass yds on 20-38, 88 rush yds on 24 att), lost by 3 \u2014 no pattern matched (margin only 3, not 11+, misses Pattern A; YPA 5.3 < 7.5 misses Pattern B; rush att 24 < 34 misses Pattern C; pass att 38 < 41 misses Pattern D). Net: no trend signal either way.",
       "altTrendFavors": null,
       "away": "Indianapolis Colts",
@@ -33,7 +33,7 @@
       "awayPDpg": -1.56,
       "awayQB": "Daniel Jones",
       "awayQBRating": 67,
-      "awayScore": null,
+      "awayScore": 3.0,
       "awaySpread": 12.5,
       "awaySpreadOdds": -108,
       "awayYPP": 4.5,
@@ -47,15 +47,15 @@
       "homePDpg": 3.98,
       "homeQB": "C.J. Stroud",
       "homeQBRating": 102.4,
-      "homeScore": null,
+      "homeScore": 26.0,
       "homeSpread": -12.5,
       "homeSpreadOdds": -108,
       "homeYPP": 5.6,
       "offGap": 70.97,
       "pick": "Houston Texans",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 92.59,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -77,7 +77,8 @@
           "says": "back",
           "team": "Houston Texans",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -92,7 +93,8 @@
           "says": "back",
           "team": "Indianapolis Colts",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "8:15 PM ET",
@@ -195,7 +197,16 @@
             ]
           }
         ]
-      }
+      },
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     }
-  ]
+  ],
+  "scoredAt": "2026-11-20T07:45:58.338976+00:00"
 }

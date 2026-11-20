@@ -2,7 +2,7 @@
   "date": "2026-11-19",
   "weekday": "Thursday",
   "sport": "nba",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-19T16:25:00Z",
   "auditChanges": [
     "NBA GSW@MEM: PD/g corrected (+0.87 vs +9.00), Ledger Memphis lean -> solid; prices set to DraftKings MEM -243/GSW +200, MEM -6.5 (-112).",
@@ -36,11 +36,11 @@
       "awayMoneyline": 200,
       "awayNetRtg": 0.9,
       "awayPDpg": 0.87,
-      "awayScore": null,
+      "awayScore": 98.0,
       "awaySpread": 6.5,
       "awaySpreadOdds": -108,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 225.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110,
@@ -48,14 +48,14 @@
       "homeMoneyline": -243,
       "homeNetRtg": 9,
       "homePDpg": 9,
-      "homeScore": null,
+      "homeScore": 126.0,
       "homeSpread": -6.5,
       "homeSpreadOdds": -112,
       "netRtgGap": 34.49,
       "pick": "Memphis Grizzlies",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 41.15,
+      "pickSpreadReturn": 89.29,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -86,7 +86,8 @@
           "pct": 52.6,
           "leans": "Memphis Grizzlies",
           "leanPct": 52.6,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "8:00 PM ET",
@@ -481,7 +482,7 @@
       "awayMoneyline": -467,
       "awayNetRtg": 6,
       "awayPDpg": 6,
-      "awayScore": null,
+      "awayScore": 124.0,
       "awaySpread": -10.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
@@ -493,14 +494,14 @@
       "homeMoneyline": 360,
       "homeNetRtg": -13.2,
       "homePDpg": -13.6,
-      "homeScore": null,
+      "homeScore": 114.0,
       "homeSpread": 10.5,
       "homeSpreadOdds": -108,
       "netRtgGap": 68.97,
       "pick": "Portland Trail Blazers",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -866,7 +867,7 @@
       "awayMoneyline": -113,
       "awayNetRtg": 6.5,
       "awayPDpg": 6.1,
-      "awayScore": null,
+      "awayScore": 102.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -102,
       "confidence": "skip",
@@ -878,7 +879,7 @@
       "homeMoneyline": -104,
       "homeNetRtg": 10.5,
       "homePDpg": 10.6,
-      "homeScore": null,
+      "homeScore": 99.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -119,
       "netRtgGap": 13.79,
@@ -1115,7 +1116,11 @@
           "4594268": "out",
           "3934673": "out"
         }
-      }
+      },
+      "statsCorrect": true,
+      "statsReturn": 88.5,
+      "statsCover": true,
+      "statsSpreadReturn": 98.04
     },
     {
       "altCategoryTally": "0-2",
@@ -1141,7 +1146,7 @@
       "awayMoneyline": 670,
       "awayNetRtg": -5.8,
       "awayPDpg": -5.8,
-      "awayScore": null,
+      "awayScore": 112.0,
       "awaySpread": 15.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -1153,14 +1158,14 @@
       "homeMoneyline": -1040,
       "homeNetRtg": 11.4,
       "homePDpg": 11.2,
-      "homeScore": null,
+      "homeScore": 124.0,
       "homeSpread": -15.5,
       "homeSpreadOdds": -110,
       "netRtgGap": 72.41,
       "pick": "San Antonio Spurs",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -1310,7 +1315,14 @@
           "6440": "out",
           "5101845": "out"
         }
-      }
+      },
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": true,
+      "statsSpreadReturn": 90.91,
+      "totalsCorrect": false,
+      "totalsReturn": -100.0
     }
-  ]
+  ],
+  "scoredAt": "2026-11-20T07:46:00.878958+00:00"
 }
