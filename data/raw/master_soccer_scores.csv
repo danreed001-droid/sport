@@ -1,8 +1,8 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
 401928541,2026-11-19,FT,Madrid CFF,0,-,CD Argual,2,-,-,-,1:00 PM
 401928542,2026-11-19,FT,Espanyol,1,-,Celta Vigo,2,-,-,-,1:00 PM
-401933535,2026-11-19,Scheduled,FC Cincinnati,0,-,Orlando City SC,0,-,-,-,7:30 PM
-401933555,2026-11-19,Scheduled,Real Salt Lake,0,-,Seattle Sounders FC,0,-,-,-,10:00 PM
+401933535,2026-11-19,FT,FC Cincinnati,3,-,Orlando City SC,1,-,-,-,7:30 PM
+401933555,2026-11-19,10',Real Salt Lake,0,-,Seattle Sounders FC,0,-,-,-,10:00 PM
 401916978,2026-11-19,FT,Bayern Munich,4,-,Austria Vienna,0,-,-,-,12:45 PM
 401916977,2026-11-19,FT,HB Køge,1,-,Paris FC,2,-,-,-,12:45 PM
 401916976,2026-11-19,FT,OL Lyonnes,2,-,Arsenal,0,-,-,-,3:00 PM
@@ -17,30 +17,30 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401873515,2026-11-19,FT,Panama U17,0,-,Qatar U17,2,-,-,-,10:30 AM
 401873511,2026-11-19,FT,Australia U17,2,-,Argentina U17,0,-,-,-,11:00 AM
 401873516,2026-11-19,FT,Greece U17,2,-,Egypt U17,1,-,-,-,11:00 AM
-401841308,2026-11-19,Scheduled,Internacional,0,-,Vasco da Gama,0,-,-,-,5:30 PM
-401841317,2026-11-19,Scheduled,Red Bull Bragantino,0,-,Vitória,0,-,-,-,5:30 PM
-401841309,2026-11-19,Scheduled,Fluminense,0,-,São Paulo,0,-,-,-,7:30 PM
+401841308,2026-11-19,FT,Internacional,1,-,Vasco da Gama,2,-,-,-,5:30 PM
+401841317,2026-11-19,FT,Red Bull Bragantino,1,-,Vitória,2,-,-,-,5:30 PM
+401841309,2026-11-19,FT,Fluminense,1,-,São Paulo,0,-,-,-,7:30 PM
 401934704,2026-11-19,FT,Deportivo Maldonado,0,-,Boston River,1,-,-,-,2:30 PM
 401934686,2026-11-19,FT,Cerro Largo,0,-,Peñarol,3,-,-,-,2:30 PM
 401934703,2026-11-19,FT,Montevideo City Torque,1,-,Progreso,1,-,-,-,2:30 PM
 401930693,2026-11-19,FT,Shillong Lajong FC,1,-,Dempo Sports Club,2,-,-,-,5:30 AM
 401930692,2026-11-19,FT,Nagaland United SC,2,-,Samaleswari SC,0,-,-,-,8:00 AM
-401932578,2026-11-19,Scheduled,Lehigh,0,-,Charlotte,0,-,-,-,6:00 PM
-401932581,2026-11-19,Scheduled,Charleston,0,-,NC State,0,-,-,-,6:00 PM
-401932575,2026-11-19,Scheduled,Sacred Heart,0,-,Syracuse,0,-,-,-,6:00 PM
-401932580,2026-11-19,Scheduled,Liberty,0,-,UNC Wilmington,0,-,-,-,6:00 PM
-401932585,2026-11-19,Scheduled,Longwood,0,-,Wake Forest,0,-,-,-,6:00 PM
-401932577,2026-11-19,Scheduled,Houston Christian,0,-,Bryant,0,-,-,-,7:00 PM
-401932590,2026-11-19,Scheduled,Fairleigh Dickinson,0,-,Cornell,0,-,-,-,7:00 PM
-401932588,2026-11-19,Scheduled,North Florida,0,-,Vermont,0,-,-,-,7:00 PM
-401932586,2026-11-19,Scheduled,Bowling Green,0,-,Marshall,0,-,-,-,7:10 PM
-401932576,2026-11-19,Scheduled,Omaha,0,-,Creighton,0,-,-,-,7:30 PM
-401932584,2026-11-19,Scheduled,Saint Louis,0,-,Missouri State,0,-,-,-,7:30 PM
-401932582,2026-11-19,Scheduled,Cal State Bakersfield,0,-,Oregon State,0,-,-,-,9:00 PM
-401932587,2026-11-19,Scheduled,Tulsa,0,-,Stanford,0,-,-,-,9:00 PM
-401932579,2026-11-19,Scheduled,California,0,-,Portland,0,-,-,-,10:00 PM
-401932589,2026-11-19,Scheduled,Grand Canyon,0,-,San Diego,0,-,-,-,10:00 PM
-401932583,2026-11-19,Scheduled,Cleveland State,0,-,Washington,0,-,-,-,10:00 PM
+401932578,2026-11-19,FT,Lehigh,1,-,Charlotte,2,-,-,-,6:00 PM
+401932581,2026-11-19,FT,Charleston,1,-,NC State,2,-,-,-,6:00 PM
+401932575,2026-11-19,FT,Sacred Heart,2,-,Syracuse,3,-,-,-,6:00 PM
+401932580,2026-11-19,FT,Liberty,0,-,UNC Wilmington,2,-,-,-,6:00 PM
+401932585,2026-11-19,FT,Longwood,1,-,Wake Forest,4,-,-,-,6:00 PM
+401932577,2026-11-19,FT,Houston Christian,2,-,Bryant,3,-,-,-,7:00 PM
+401932590,2026-11-19,FT,Fairleigh Dickinson,0,-,Cornell,6,-,-,-,7:00 PM
+401932588,2026-11-19,FT-Pens,North Florida,1,-,Vermont,2,-,-,-,7:00 PM
+401932586,2026-11-19,FT,Bowling Green,0,-,Marshall,4,-,-,-,7:10 PM
+401932576,2026-11-19,FT,Omaha,2,-,Creighton,0,-,-,-,7:30 PM
+401932584,2026-11-19,FT,Saint Louis,0,-,Missouri State,1,-,-,-,7:30 PM
+401932582,2026-11-19,51',Cal State Bakersfield,0,-,Oregon State,2,-,-,-,9:00 PM
+401932587,2026-11-19,HT,Tulsa,0,-,Stanford,1,-,-,-,9:00 PM
+401932579,2026-11-19,10',California,0,-,Portland,0,-,-,-,10:00 PM
+401932589,2026-11-19,14',Grand Canyon,0,-,San Diego,0,-,-,-,10:00 PM
+401932583,2026-11-19,14',Cleveland State,0,-,Washington,0,-,-,-,10:00 PM
 401928690,2026-11-18,Scheduled,Peterborough United,0,-,Lye Town,0,-,-,-,2:45 PM
 401928505,2026-11-18,AET,Mallorca,3,-,Alcoyano,1,-,-,-,2:00 PM
 401928561,2026-11-18,FT,Valencia,3,-,CD Samper,0,-,-,-,2:30 PM
