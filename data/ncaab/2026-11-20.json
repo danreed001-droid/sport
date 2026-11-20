@@ -27,7 +27,27 @@
         ],
         "ml": {},
         "checked": "2026-11-20T07:46:27+00:00"
-      }
+      },
+      "gameTotal": 150.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-6",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Miami Hurricanes",
+          "says": "fade",
+          "fact": "Miami won its last three by 47, 42, 38.",
+          "record": "118-144",
+          "pct": 45.0,
+          "leans": "Miami Hurricanes",
+          "leanPct": 55.0,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401920427",
@@ -50,7 +70,42 @@
         ],
         "ml": {},
         "checked": "2026-11-20T07:46:27+00:00"
-      }
+      },
+      "gameTotal": 150.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "6-4",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "Virginia Cavaliers",
+          "says": "fade",
+          "fact": "#4 Virginia is a -42.5 favorite.",
+          "record": "101-121",
+          "pct": 45.5,
+          "leans": "Virginia Cavaliers",
+          "leanPct": 54.5,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "0-1",
+          "key": "ot_loser",
+          "name": "Overtime heartbreak",
+          "team": "Loyola Maryland Greyhounds",
+          "says": "back",
+          "fact": "Loyola Maryland lost to Morgan State 61-63 in overtime last time out.",
+          "record": "151-127",
+          "pct": 54.3,
+          "leans": "Loyola Maryland Greyhounds",
+          "leanPct": 54.3,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401906852",
@@ -73,7 +128,27 @@
         ],
         "ml": {},
         "checked": "2026-11-20T07:46:28+00:00"
-      }
+      },
+      "gameTotal": 144.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-4",
+          "key": "big_stage",
+          "name": "Down from the big stage",
+          "team": "Tennessee Volunteers",
+          "says": "fade",
+          "fact": "Tennessee played #2 Michigan State last time out (won 61-46).",
+          "record": "274-238",
+          "pct": 53.5,
+          "leans": "Coastal Carolina Chanticleers",
+          "leanPct": 53.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401921757",
@@ -90,7 +165,7 @@
       "lineMove": {
         "spread": [
           -17.5,
-          -18.5
+          -17.5
         ],
         "total": [
           157.5,
@@ -106,8 +181,58 @@
             1300.0
           ]
         },
-        "checked": "2026-11-20T07:46:28+00:00"
-      }
+        "checked": "2026-11-20T12:57:30+00:00"
+      },
+      "gameTotal": 157.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-6",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Vanderbilt Commodores",
+          "says": "fade",
+          "fact": "Vanderbilt won its last three by 46, 27, 24.",
+          "record": "118-144",
+          "pct": 45.0,
+          "leans": "Vanderbilt Commodores",
+          "leanPct": 55.0,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "0-3",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "Vanderbilt Commodores",
+          "says": "fade",
+          "fact": "Vanderbilt moved up from #22 to #15 in this week's AP poll.",
+          "record": "235-268",
+          "pct": 46.7,
+          "leans": "Vanderbilt Commodores",
+          "leanPct": 53.3,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "11-10",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "UCF Knights",
+          "says": "back",
+          "fact": "UCF lost to Vanderbilt 93-105 last season (2025-11-08).",
+          "record": "1416-1284",
+          "pct": 52.4,
+          "leans": "UCF Knights",
+          "leanPct": 52.4,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401925740",
@@ -130,7 +255,10 @@
         ],
         "ml": {},
         "checked": "2026-11-20T07:46:28+00:00"
-      }
+      },
+      "gameTotal": 150.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401913529",
@@ -153,7 +281,27 @@
         ],
         "ml": {},
         "checked": "2026-11-20T07:46:28+00:00"
-      }
+      },
+      "gameTotal": 165.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-4",
+          "key": "big_stage",
+          "name": "Down from the big stage",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "Illinois played #5 Duke last time out (won 99-78).",
+          "record": "274-238",
+          "pct": 53.5,
+          "leans": "Eastern Illinois Panthers",
+          "leanPct": 53.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     }
   ]
 }

@@ -21,8 +21,8 @@
       "statsLine": {
         "homeSpread": -6.5,
         "awaySpread": 6.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
         "homeMoneyline": -230,
         "awayMoneyline": 191
       },
@@ -367,15 +367,15 @@
           ]
         },
         "public": {
-          "betsHome": 78,
-          "moneyHome": 82,
+          "betsHome": 76,
+          "moneyHome": 81,
           "rlm": null
         },
-        "checked": "2026-11-20T07:46:27+00:00"
+        "checked": "2026-11-20T12:57:29+00:00"
       },
       "gameTotal": 219.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909306",
@@ -392,12 +392,12 @@
       "statsLine": {
         "homeSpread": 5.5,
         "awaySpread": -5.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
         "homeMoneyline": 181,
         "awayMoneyline": -218
       },
-      "totalsLine": 223.5,
+      "totalsLine": 222.5,
       "storylines": [
         {
           "weight": 1,
@@ -432,7 +432,7 @@
         ],
         "total": [
           222.5,
-          223.5
+          222.5
         ],
         "ml": {
           "home": [
@@ -445,15 +445,15 @@
           ]
         },
         "public": {
-          "betsHome": 18,
-          "moneyHome": 13,
+          "betsHome": 19,
+          "moneyHome": 15,
           "rlm": null
         },
-        "checked": "2026-11-20T07:46:27+00:00"
+        "checked": "2026-11-20T12:57:29+00:00"
       },
-      "gameTotal": 223.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401909307",
@@ -472,10 +472,10 @@
         "awaySpread": 6.5,
         "homeSpreadOdds": -115,
         "awaySpreadOdds": -105,
-        "homeMoneyline": -268,
-        "awayMoneyline": 220
+        "homeMoneyline": -283,
+        "awayMoneyline": 231
       },
-      "totalsLine": 234.5,
+      "totalsLine": 232.5,
       "storylines": [
         {
           "weight": 1,
@@ -837,12 +837,12 @@
         ],
         "total": [
           234.5,
-          234.5
+          232.5
         ],
         "ml": {
           "home": [
             -246.0,
-            -268.0
+            -269.0
           ],
           "away": [
             203.0,
@@ -850,15 +850,15 @@
           ]
         },
         "public": {
-          "betsHome": 65,
-          "moneyHome": 63,
+          "betsHome": 64,
+          "moneyHome": 54,
           "rlm": null
         },
-        "checked": "2026-11-20T07:46:27+00:00"
+        "checked": "2026-11-20T12:57:29+00:00"
       },
-      "gameTotal": 234.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108
+      "gameTotal": 232.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401909308",
@@ -875,8 +875,8 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
         "homeMoneyline": -291,
         "awayMoneyline": 237
       },
@@ -1201,11 +1201,11 @@
           ]
         },
         "public": {
-          "betsHome": 64,
-          "moneyHome": 64,
+          "betsHome": 66,
+          "moneyHome": 62,
           "rlm": null
         },
-        "checked": "2026-11-20T07:46:27+00:00"
+        "checked": "2026-11-20T12:57:29+00:00"
       },
       "gameTotal": 217.5,
       "gameTotalOverOdds": -107,
@@ -1222,14 +1222,14 @@
       "awaySpreadOdds": -114.0,
       "homeMoneyline": -142.0,
       "awayMoneyline": 120.0,
-      "statsSpread": -3.5,
+      "statsSpread": -2.5,
       "statsLine": {
-        "homeSpread": -3.5,
-        "awaySpread": 3.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
-        "homeMoneyline": -142,
-        "awayMoneyline": 120
+        "homeSpread": -2.5,
+        "awaySpread": 2.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -135,
+        "awayMoneyline": 114
       },
       "statsFavors": "Chicago Bulls",
       "statsRules": [
@@ -1241,7 +1241,7 @@
         }
       ],
       "statsCheck": "Rule 58: Fading Washington Wizards: won its last game by 4 (103-99 at Toronto Raptors), and Chicago Bulls scored 137 in its last game -- 63.6% ATS, 119-68 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-18; 2024-now 58-22.",
-      "totalsLine": 240.5,
+      "totalsLine": 239.5,
       "storylines": [
         {
           "weight": 1,
@@ -1273,10 +1273,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-20T06:30:49+00:00",
+        "checked": "2026-11-20T12:57:29+00:00",
         "line": {
           "open": -2.5,
-          "now": -3.5
+          "now": -2.5
         },
         "away": [],
         "home": [
@@ -1363,32 +1363,32 @@
       "lineMove": {
         "spread": [
           -2.5,
-          -3.5
+          -2.5
         ],
         "total": [
           240.5,
-          240.5
+          239.5
         ],
         "ml": {
           "home": [
             -138.0,
-            -142.0
+            -135.0
           ],
           "away": [
             117.0,
-            120.0
+            114.0
           ]
         },
         "public": {
-          "betsHome": 61,
-          "moneyHome": 68,
+          "betsHome": 62,
+          "moneyHome": 66,
           "rlm": null
         },
-        "checked": "2026-11-20T07:46:27+00:00"
+        "checked": "2026-11-20T12:57:29+00:00"
       },
-      "gameTotal": 240.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 239.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401909310",
@@ -1410,7 +1410,7 @@
         "homeMoneyline": -546,
         "awayMoneyline": 411
       },
-      "totalsLine": 229.5,
+      "totalsLine": 228.5,
       "injuries": {
         "away": {
           "4576086": "out",
@@ -1757,7 +1757,7 @@
         ],
         "total": [
           228.5,
-          229.5
+          228.5
         ],
         "ml": {
           "home": [
@@ -1770,15 +1770,15 @@
           ]
         },
         "public": {
-          "betsHome": 58,
-          "moneyHome": 68,
+          "betsHome": 61,
+          "moneyHome": 57,
           "rlm": null
         },
-        "checked": "2026-11-20T07:46:27+00:00"
+        "checked": "2026-11-20T12:57:29+00:00"
       },
-      "gameTotal": 229.5,
-      "gameTotalOverOdds": -109,
-      "gameTotalUnderOdds": -111
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401909311",
@@ -1822,7 +1822,7 @@
         }
       ],
       "statsCheck": "Rule 51: Backing Utah Jazz: 3-13 on the season but won its last two games by 25 and 12 (132-107 at LA Clippers and 109-97 at Los Angeles Lakers) -- 69.2% ATS, 101-45 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 35-13; 2024-now 43-18. Rule 52: Backing Utah Jazz: beat the spread by 30.5 and 23.5 in its last two games (132-107 at LA Clippers and 109-97 at Los Angeles Lakers), now at home -- 65.9% ATS, 58-30 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 21-5; 2024-now 26-12. Rule 54: Backing Utah Jazz: covered its last two games (by 23.5 at Los Angeles Lakers and by 30.5 at LA Clippers), now at home in game 17 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 227.5,
+      "totalsLine": 226.5,
       "storylines": [
         {
           "weight": 1,
@@ -2036,7 +2036,7 @@
         ],
         "total": [
           226.5,
-          227.5
+          226.5
         ],
         "ml": {
           "home": [
@@ -2050,14 +2050,14 @@
         },
         "public": {
           "betsHome": 25,
-          "moneyHome": 25,
+          "moneyHome": 21,
           "rlm": null
         },
-        "checked": "2026-11-20T07:46:27+00:00"
+        "checked": "2026-11-20T12:57:29+00:00"
       },
-      "gameTotal": 227.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -114
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909312",
@@ -2076,10 +2076,10 @@
         "awaySpread": 1.5,
         "homeSpreadOdds": -112,
         "awaySpreadOdds": -108,
-        "homeMoneyline": -125,
-        "awayMoneyline": 105
+        "homeMoneyline": -119,
+        "awayMoneyline": 101
       },
-      "totalsLine": 225.5,
+      "totalsLine": 226.5,
       "storylines": [
         {
           "weight": 1,
@@ -2201,28 +2201,28 @@
         ],
         "total": [
           227.5,
-          225.5
+          226.5
         ],
         "ml": {
           "home": [
             -148.0,
-            -125.0
+            -119.0
           ],
           "away": [
             124.0,
-            105.0
+            101.0
           ]
         },
         "public": {
-          "betsHome": 49,
-          "moneyHome": 53,
+          "betsHome": 52,
+          "moneyHome": 60,
           "rlm": null
         },
-        "checked": "2026-11-20T07:46:27+00:00"
+        "checked": "2026-11-20T12:57:29+00:00"
       },
-      "gameTotal": 225.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909313",
@@ -2254,7 +2254,7 @@
         }
       ],
       "statsCheck": "Rule 64: Backing Los Angeles Lakers: 10-6 against the spread this season, vs. Sacramento Kings, 1-4 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
-      "totalsLine": 231.5,
+      "totalsLine": 229.5,
       "storylines": [
         {
           "weight": 1,
@@ -2534,7 +2534,7 @@
         ],
         "total": [
           230.5,
-          231.5
+          229.5
         ],
         "ml": {
           "home": [
@@ -2547,15 +2547,15 @@
           ]
         },
         "public": {
-          "betsHome": 58,
-          "moneyHome": 43,
+          "betsHome": 53,
+          "moneyHome": 53,
           "rlm": null
         },
-        "checked": "2026-11-20T07:46:27+00:00"
+        "checked": "2026-11-20T12:57:30+00:00"
       },
-      "gameTotal": 231.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     }
   ]
 }
