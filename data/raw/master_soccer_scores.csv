@@ -2,7 +2,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401928541,2026-11-19,FT,Madrid CFF,0,-,CD Argual,2,-,-,-,1:00 PM
 401928542,2026-11-19,FT,Espanyol,1,-,Celta Vigo,2,-,-,-,1:00 PM
 401933535,2026-11-19,FT,FC Cincinnati,3,-,Orlando City SC,1,-,-,-,7:30 PM
-401933555,2026-11-19,10',Real Salt Lake,0,-,Seattle Sounders FC,0,-,-,-,10:00 PM
+401933555,2026-11-19,45'+6',Real Salt Lake,0,-,Seattle Sounders FC,1,-,-,-,10:00 PM
 401916978,2026-11-19,FT,Bayern Munich,4,-,Austria Vienna,0,-,-,-,12:45 PM
 401916977,2026-11-19,FT,HB Køge,1,-,Paris FC,2,-,-,-,12:45 PM
 401916976,2026-11-19,FT,OL Lyonnes,2,-,Arsenal,0,-,-,-,3:00 PM
@@ -36,11 +36,11 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401932586,2026-11-19,FT,Bowling Green,0,-,Marshall,4,-,-,-,7:10 PM
 401932576,2026-11-19,FT,Omaha,2,-,Creighton,0,-,-,-,7:30 PM
 401932584,2026-11-19,FT,Saint Louis,0,-,Missouri State,1,-,-,-,7:30 PM
-401932582,2026-11-19,51',Cal State Bakersfield,0,-,Oregon State,2,-,-,-,9:00 PM
-401932587,2026-11-19,HT,Tulsa,0,-,Stanford,1,-,-,-,9:00 PM
-401932579,2026-11-19,10',California,0,-,Portland,0,-,-,-,10:00 PM
-401932589,2026-11-19,14',Grand Canyon,0,-,San Diego,0,-,-,-,10:00 PM
-401932583,2026-11-19,14',Cleveland State,0,-,Washington,0,-,-,-,10:00 PM
+401932582,2026-11-19,85',Cal State Bakersfield,0,-,Oregon State,3,-,-,-,9:00 PM
+401932587,2026-11-19,74',Tulsa,0,-,Stanford,1,-,-,-,9:00 PM
+401932579,2026-11-19,HT,California,0,-,Portland,0,-,-,-,10:00 PM
+401932589,2026-11-19,HT,Grand Canyon,0,-,San Diego,0,-,-,-,10:00 PM
+401932583,2026-11-19,HT,Cleveland State,0,-,Washington,0,-,-,-,10:00 PM
 401928690,2026-11-18,Scheduled,Peterborough United,0,-,Lye Town,0,-,-,-,2:45 PM
 401928505,2026-11-18,AET,Mallorca,3,-,Alcoyano,1,-,-,-,2:00 PM
 401928561,2026-11-18,FT,Valencia,3,-,CD Samper,0,-,-,-,2:30 PM
