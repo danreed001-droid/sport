@@ -18,6 +18,7 @@ BOX = os.path.join(ROOT, "data", "raw", "nfl_player_box.json")
 # scores have no targets, so WR/TE usage is catches and targets aren't shown.
 BOXES = {"nfl": BOX, "cfb": os.path.join(ROOT, "data", "raw", "cfb_player_box.json")}
 MIN_TEAM_GAMES = 3
+OUTISH = {"out", "injured reserve", "suspension", "suspended"}   # see lib/nba_dvp.py
 POS = ("QB", "RB", "WR", "TE")
 # per position: (key, label, value from a box row)
 STATS = {
@@ -65,7 +66,7 @@ def _usage(P, r):
     return r[4] if P == "QB" else (r[8] + r[11]) if P == "RB" else (r[14] or r[11])
 
 
-def for_slate(slate_date, games_today, sport="nfl"):
+def for_slate(slate_date, games_today, sport="nfl", injuries=None):
     """{"_league": {pos: {stat: per game}}, "_spec": SPEC,
         game id: {"away": side, "home": side}}; a side is
        {"allows": {pos: {stat: [per game, rank 1 = most allowed]}}, "teams": n,
@@ -119,7 +120,8 @@ def for_slate(slate_date, games_today, sport="nfl"):
         hits = [t for t in keys if t == name] or [t for t in keys if _same(t, name)]
         return max(hits, key=lambda t: len(allowed[t]["QB"])) if hits else None
 
-    def side(name):
+    def side(name, inj=None):
+        inj = inj or {}
         team = pick(avg, name)
         roster = pick(players, name)
         out = {"allows": {}, "players": [], "teams": len(avg)}
@@ -130,19 +132,43 @@ def for_slate(slate_date, games_today, sport="nfl"):
             for P in POS:
                 cand = [(pid, x) for pid, x in players[roster].items() if x[1] == P and last_team.get(pid) == roster and x[2] >= 2]
                 cand.sort(key=lambda px: -px[1][3] / px[1][2])
-                for pid, (pname, _P, g, use, tot) in cand[:cap[P]]:
+                n_ok = 0
+                for pid, (pname, _P, g, use, tot) in cand:
+                    if n_ok >= cap[P]:
+                        break
                     if use / g < (10 if P == "QB" else 3):
                         continue
-                    rows.append([pname, P, g, {k: round(v / g, 1) for k, v in tot.items()}])
+                    st = inj.get(pid)
+                    rows.append([pname, P, g, {k: round(v / g, 1) for k, v in tot.items()}, st])
+                    n_ok += st not in OUTISH        # an out starter is shown marked, and the next man up too
             out["players"] = rows
         return out
 
-    def score(off, dfn):
+    def score(off, dfn, inj=None):
+        """As in lib/nba_dvp.py; an out player's rushing yards come off the
+        offense's run share (a missing QB or receiver doesn't change how much
+        it throws), and he's listed in "out" with "base" the score with everyone."""
         o = pick(yds, off)
         d = pick(avg, dfn)
         if not o or not d or yds[o][2] < MIN_GAMES or len(allowed[d]["QB"]) < MIN_GAMES:
             return None
-        ps = yds[o][0] / max(1.0, yds[o][0] + yds[o][1])
+        tg = yds[o][2] or 1
+        gone, rush_off = [], 0.0
+        for pid, st in (inj or {}).items():
+            x = players[o].get(pid) if o in players else None
+            if st in OUTISH and x and last_team.get(pid) == o and x[2] >= 2:
+                rush_off += x[4].get("ryd", 0.0) / tg
+                main = {"QB": "pyd", "RB": "ryd", "WR": "cyd", "TE": "cyd"}[x[1]]
+                gone.append([x[0], x[1], round(x[4].get(main, 0.0) / tg, 1)])
+        base_ps = yds[o][0] / max(1.0, yds[o][0] + yds[o][1])
+        ps = yds[o][0] / max(1.0, yds[o][0] + max(0.0, yds[o][1] - rush_off * tg))
+        def total_at(p_s):
+            t = 0.0
+            for P in POS:
+                if P in avg[d]:
+                    c = sum(w * (avg[d][P][k] / league[P][k] - 1) for k, w in SCORE_W[P].items() if league[P][k] > 0)
+                    t += (p_s * PASS_SPLIT[P] if P in PASS_SPLIT else 1 - p_s) * c
+            return t
         out, total = {}, 0.0
         for P in POS:
             if P not in avg[d]:
@@ -151,10 +177,16 @@ def for_slate(slate_date, games_today, sport="nfl"):
             share = ps * PASS_SPLIT[P] if P in PASS_SPLIT else 1 - ps
             total += share * comp
             out[P] = [round(100 * comp, 1), round(100 * share)]
-        return {"score": round(100 * total, 1), "pos": out}
+        r_ = {"score": round(100 * total, 1), "pos": out}
+        if gone:
+            r_["base"] = round(100 * total_at(base_ps), 1)
+            r_["out"] = gone
+        return r_
 
     res = {"_league": league, "_spec": {P: [[k, lab] for k, lab, _f in stats[P]] for P in POS}}
     for gid, away, home in games_today:
-        res[gid] = {"away": side(away), "home": side(home),
-                    "score": {"away": score(away, home), "home": score(home, away)}}
+        inj = (injuries or {}).get(gid) or {}
+        ia, ih = inj.get("away") or {}, inj.get("home") or {}
+        res[gid] = {"away": side(away, ia), "home": side(home, ih),
+                    "score": {"away": score(away, home, ia), "home": score(home, away, ih)}}
     return res

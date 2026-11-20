@@ -7,6 +7,11 @@ move since it opened (ESPN pickcenter, DraftKings), and the teammates at his
 position who should pick up his role: their numbers with him and in this
 season's games without him.
 
+Also writes `injuries` on each game: {"away": {athlete id: status}, "home": ...}
+for everyone listed out or questionable/doubtful/day-to-day, which the matchup
+view (lib/nba_dvp.py / nfl_dvp.py) uses to drop out players and re-weight the
+offense's positions.
+
 Writes `starterOut` on each game (repo-owned in sync_ledger.py):
   {"checked": ISO time, "line": {"open": home spread, "now": home spread},
    "away": [entry, ...], "home": [entry, ...]}
@@ -260,6 +265,17 @@ def run(sport, session):
                     inj.setdefault((t.get("team") or {}).get("displayName"), {})[str(a.get("id"))] = str(i.get("status", "")).lower()
             res = {"checked": datetime.now(timezone.utc).isoformat(timespec="seconds"), "line": line_move(d)}
             any_ = False
+            # every player on the report as out or doubtful-ish, for the matchup view's adjustment
+            injuries = {}
+            for side in ("away", "home"):
+                st = next((v for k, v in inj.items() if k and _same_team(k, g.get(side, ""))), {})
+                injuries[side] = {pid: s for pid, s in st.items() if s in OUTISH or s in WATCH}
+            if injuries != (g.get("injuries") or {}):
+                if injuries["away"] or injuries["home"]:
+                    g["injuries"] = injuries
+                else:
+                    g.pop("injuries", None)
+                dirty = True
             for side in ("away", "home"):
                 team = find(teams, g.get(side))
                 st = next((v for k, v in inj.items() if k and _same_team(k, g.get(side, ""))), {})

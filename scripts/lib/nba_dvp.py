@@ -23,6 +23,10 @@ BOX = os.path.join(ROOT, "data", "raw", "nba_player_box.json")
 # games to be ranked, and forwards split by rebounds (no heights saved).
 BOXES = {"nba": BOX, "ncaab": os.path.join(ROOT, "data", "raw", "ncaab_player_box.json")}
 MIN_TEAM_GAMES = 3
+# Players ESPN's injury report lists (the game's `injuries`, from starter_out.py):
+# these statuses are out -- dropped from the offense's position mix in the
+# matchup score -- the rest (questionable, doubtful, day-to-day) are only marked.
+OUTISH = {"out", "injured reserve", "suspension", "suspended"}
 HEIGHTS = os.path.join(ROOT, "data", "raw", "nba_heights.json")
 POS = ("PG", "SG", "SF", "PF", "C")
 STATS = ("pts", "reb", "ast", "tpm")
@@ -105,7 +109,7 @@ def _same(a, b):
     return a == b or _same_team(a, b)
 
 
-def for_slate(slate_date, games_today, sport="nba"):
+def for_slate(slate_date, games_today, sport="nba", injuries=None):
     """{game id: {"away": side, "home": side}} for tonight's NBA games, where a
     side is {"allows": {pos: {stat: [per game, rank 1 = most allowed]}},
              "players": [[name, pos, games, min, pts, reb, ast, tpm, +/- a game], ...]}
@@ -170,7 +174,8 @@ def for_slate(slate_date, games_today, sport="nba"):
         hits = [t for t in keys if t == name] or [t for t in keys if _same(t, name)]
         return max(hits, key=lambda t: len(allowed[t]["PG"])) if hits else None
 
-    def side(name):
+    def side(name, inj=None):
+        inj = inj or {}
         team = pick(avg, name)
         roster = pick(players, name)
         out = {"allows": {}, "players": [], "teams": nteams}
@@ -182,31 +187,54 @@ def for_slate(slate_date, games_today, sport="nba"):
                 if g < 3 or mi / g < 15 or last_team.get(pid) != roster or pid not in pos_of:
                     continue
                 rows.append([pname, pos_of[pid], g, round(mi / g, 1), round(p / g, 1), round(r / g, 1), round(a / g, 1), round(t / g, 1),
-                             round(pm / pmg, 1) if pmg else None])
-            out["players"] = sorted(rows, key=lambda x: -x[3])[:9]
+                             round(pm / pmg, 1) if pmg else None, inj.get(pid)])
+            rows.sort(key=lambda x: -x[3])
+            # nine who can play, plus anyone above them who's out (shown marked)
+            keep, healthy = [], 0
+            for x in rows:
+                if healthy >= 9:
+                    break
+                keep.append(x)
+                healthy += x[9] not in OUTISH
+            out["players"] = keep
         return out
 
-    def score(off, dfn):
-        """{"score": %, "pos": {P: [defense vs league %, share of the offense's points %]}} or None."""
+    def score(off, dfn, inj=None):
+        """{"score": %, "pos": {P: [defense vs league %, share of the offense's points %]},
+        and when players are out: "base" (the score with everyone) and "out" ([name, pos, pts a team game])}
+        -- an out player's points come off his position and the other positions' shares rise."""
         o = pick(made, off)
         d = pick(avg, dfn)
         need = MIN_GAMES if sport == "nba" else MIN_TEAM_GAMES
         if not o or not d or len(made[o]["PG"]) < need or len(allowed[d]["PG"]) < need:
             return None
         pts = {P: sum(g["pts"] for g in made[o][P]) / len(made[o][P]) for P in POS}
-        tot = sum(pts.values()) or 1
-        out, total = {}, 0.0
-        for P in POS:
-            if P not in avg[d]:
-                continue
-            comp = sum(w * (avg[d][P][k] / league[P][k] - 1) for k, w in SCORE_W.items() if league[P][k] > 0)
-            share = pts[P] / tot
-            total += share * comp
-            out[P] = [round(100 * comp, 1), round(100 * share)]
-        return {"score": round(100 * total, 1), "pos": out}
+        comp = {P: sum(w * (avg[d][P][k] / league[P][k] - 1) for k, w in SCORE_W.items() if league[P][k] > 0) for P in POS if P in avg[d]}
+        gone = []
+        tg = len(made[o]["PG"]) or 1
+        for pid, st in (inj or {}).items():
+            x = players[o].get(pid) if o in players else None
+            if st in OUTISH and x and pos_of.get(pid) and last_team.get(pid) == o:
+                per = x[3] / tg
+                gone.append([x[0], pos_of[pid], round(per, 1)])
+        def mix(pp):
+            tot = sum(pp.values()) or 1
+            return sum(pp[P] / tot * comp[P] for P in comp), {P: [round(100 * comp[P], 1), round(100 * pp[P] / tot)] for P in comp}
+        base, _ = mix(pts)
+        adj = dict(pts)
+        for _n, P, per in gone:
+            adj[P] = max(0.0, adj[P] - per)
+        total, out = mix(adj)
+        res_ = {"score": round(100 * total, 1), "pos": out}
+        if gone:
+            res_["base"] = round(100 * base, 1)
+            res_["out"] = sorted(gone, key=lambda g: -g[2])
+        return res_
 
     res = {"_league": league}
     for gid, away, home in games_today:
-        res[gid] = {"away": side(away), "home": side(home),
-                    "score": {"away": score(away, home), "home": score(home, away)}}
+        inj = (injuries or {}).get(gid) or {}
+        ia, ih = inj.get("away") or {}, inj.get("home") or {}
+        res[gid] = {"away": side(away, ia), "home": side(home, ih),
+                    "score": {"away": score(away, home, ia), "home": score(home, away, ih)}}
     return res

@@ -116,6 +116,85 @@
           ]
         },
         "checked": "2026-11-19T22:20:21+00:00"
+      },
+      "injuries": {
+        "away": {
+          "4362580": "out",
+          "3863182": "out",
+          "4892240": "out",
+          "4037361": "out",
+          "4683423": "out"
+        },
+        "home": {
+          "3045474": "out",
+          "4428656": "out",
+          "4429059": "out",
+          "4432708": "out",
+          "4362732": "out"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-20T00:16:19+00:00",
+        "line": {
+          "open": -5.5,
+          "now": -12.5
+        },
+        "away": [],
+        "home": [
+          {
+            "player": "Woody Marks",
+            "pos": "RB",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              9,
+              11.9,
+              43.4,
+              1.8,
+              12.6
+            ],
+            "gainers": [
+              {
+                "player": "David Montgomery",
+                "pos": "RB",
+                "with": [
+                  5,
+                  10.4,
+                  27.6,
+                  1.4,
+                  13.4
+                ],
+                "without": null
+              },
+              {
+                "player": "Emari Demercado",
+                "pos": "RB",
+                "with": [
+                  2,
+                  6.5,
+                  16.0,
+                  1.0,
+                  3.5
+                ],
+                "without": null
+              },
+              {
+                "player": "Dare Ogunbowale",
+                "pos": "RB",
+                "with": [
+                  2,
+                  0.5,
+                  1.0,
+                  1.0,
+                  8.0
+                ],
+                "without": null
+              }
+            ]
+          }
+        ]
       }
     }
   ]

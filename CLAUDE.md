@@ -496,6 +496,18 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   top QB1/RB1/WR1-2/TE1 by usage a game (2+ games). The card's
   `starterAlert` (under the lean meter) adds the opponent defense's number vs
   that position from the matchup data. Context, not a pick.
+  Injuries in the matchup view (2026-11-20, the user's ask): starter_out.py also
+  writes `injuries` on every NBA/NFL game before it starts ({side: {athlete id:
+  status}} for out / questionable / doubtful / day-to-day; repo-owned, passed
+  through build_site.py's game fields). `for_slate(..., injuries)` in
+  lib/nba_dvp.py / nfl_dvp.py marks those players in the matchup tables (OUT
+  struck through, Q/D tags; an out player stays listed and the next man up is
+  added) and adjusts the matchup score: NBA takes an out player's points a team
+  game off his position and re-weights the rest (`out`, and `base` = the score
+  with everyone, shown as "Adjusted for ... out"); NFL only moves an out
+  player's rushing yards off the run share (a missing QB or receiver doesn't
+  change how much a team throws). The defense side isn't adjusted for missing
+  defenders. College isn't covered (no injury feed in starter_out.py).
 - **Line-move check** (2026-11-19, the user's ask): `scripts/line_moves.py`
   (scoring run, every sport; NBA also in the game-time run) writes `lineMove` on
   each game that hasn't started (repo-owned; frozen at the last pre-game look,

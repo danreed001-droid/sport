@@ -40,7 +40,7 @@ SLATE_FIELDS = [
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore", "manualFields",
     "totalsLine", "totalsFavors", "totalsCheck", "totalsRules", "statsWatch", "statsLine", "totalsWatch",
-    "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds", "storylines", "starterOut", "lineMove",
+    "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds", "storylines", "starterOut", "lineMove", "injuries",
 ]
 
 
@@ -756,9 +756,11 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
         "atsNext": next_games(slate.get("date"), slate.get("sports") or {}),
         "h2h": head_to_head(all_docs, slate.get("date"), slate.get("sports") or {}),
         "dvp": nba_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
-                                              for g in (slate.get("sports") or {}).get("nba", {}).get("games", [])]),
+                                              for g in (slate.get("sports") or {}).get("nba", {}).get("games", [])], "nba",
+                                 {g["id"]: g.get("injuries") for g in (slate.get("sports") or {}).get("nba", {}).get("games", [])}),
         "dvpNfl": nfl_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
-                                                 for g in (slate.get("sports") or {}).get("nfl", {}).get("games", [])]),
+                                                 for g in (slate.get("sports") or {}).get("nfl", {}).get("games", [])], "nfl",
+                                    {g["id"]: g.get("injuries") for g in (slate.get("sports") or {}).get("nfl", {}).get("games", [])}),
         "dvpNcaab": nba_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
                                                    for g in (slate.get("sports") or {}).get("ncaab", {}).get("games", [])], "ncaab"),
         "dvpCfb": nfl_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))

@@ -104,6 +104,9 @@ section.hero{border-top:0;}
 .dayres table{width:100%;min-width:0;border-collapse:collapse;font-size:13px;} .dayres td,.dayres th{text-align:left !important;} .dayres td:first-child{width:34%;} .dayres th{font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:left;padding:4px 6px;border-bottom:1px solid var(--rule);}
 .dayres td{padding:5px 6px;border-bottom:1px solid var(--rule);white-space:nowrap;}
 @media (max-width:600px){.dayres td.mono{white-space:normal;} .dayres td.mono span{display:block;font-size:12px;} .dayres td,.dayres th{padding:5px 4px;}} .dayres tr:last-child td{border-bottom:0;}
+.dvt tr.dvout td{opacity:.55;} .dvt tr.dvout .pn{text-decoration:line-through;text-decoration-color:var(--loss);}
+.injt{display:inline-block;font-size:10px;font-weight:800;border-radius:4px;padding:0 4px;vertical-align:1px;background:color-mix(in oklab, var(--warn) 35%, transparent);color:var(--ink);text-decoration:none;}
+.injt.o{background:var(--loss);color:#fff;} .mmadj{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;}
 .mms{margin:8px 0 10px;} .mms-row{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center;padding:8px 0;border-bottom:1px solid var(--rule-2);}
 .mms-row:last-of-type{border-bottom:0;} .mms-team{display:flex;align-items:center;gap:8px;font-size:13px;}
 .mmg{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:9px;font-weight:800;font-size:18px;color:#fff;flex:none;}
@@ -1392,6 +1395,10 @@ footer b{color:var(--ink);}
     var c = MM_CUT[sport] || [4, 8];
     return v >= c[1] ? ['A','Big edge'] : v >= c[0] ? ['B','Edge'] : v > -c[0] ? ['C','Even'] : v > -c[1] ? ['D','Tough'] : ['F','Very tough'];
   }
+  // injury status on the matchup player tables (lib/*_dvp.py from the game's `injuries`)
+  function injOut(st){ return /^(out|injured reserve|suspension|suspended)$/.test(st || ''); }
+  function injTag(st){ if(!st) return ''; var o = injOut(st);
+    return ' <span class="injt'+(o ? ' o' : '')+'" title="ESPN injury report: '+esc(st)+'">'+(o ? 'OUT' : st === 'doubtful' ? 'D' : 'Q')+'</span>'; }
   function mmPct(v){ return (v > 0 ? '+' : v < 0 ? '−' : '')+Math.abs(Math.round(v*10)/10)+'%'; }
   function mmChips(sport, g, x){
     var S = x && x.score; if(!S) return '';
@@ -1409,7 +1416,9 @@ footer b{color:var(--ink);}
         var v = o.pos[P][0], sh = o.pos[P][1], w = Math.min(50, Math.abs(v) / 30 * 50);
         return '<div title="'+esc(teamAbbr(def)+' gives '+P+'s '+mmPct(v)+' vs an average defense; '+P+'s make '+sh+'% of '+teamAbbr(off)+(FB ? '\'s yards' : '\'s points'))+'"><b>'+P+'</b><div class="pb"><i class="'+(v >= 0 ? 'u' : 'd')+'" style="width:'+w.toFixed(1)+'%"></i></div>'+mmPct(v)+'<small>'+sh+'% of '+(FB ? 'yds' : 'pts')+'</small></div>';
       }).join('');
-      return '<div class="mms-row"><div class="mms-team"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span><div class="mms-t"><b>'+teamBadge(off, true)+' '+esc(teamAbbr(off))+' offense vs '+esc(teamAbbr(def))+' D</b><small>'+gr[1]+' · '+mmPct(o.score)+est+'</small></div></div>'
+      return '<div class="mms-row"><div class="mms-team"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span><div class="mms-t"><b>'+teamBadge(off, true)+' '+esc(teamAbbr(off))+' offense vs '+esc(teamAbbr(def))+' D</b><small>'+gr[1]+' · '+mmPct(o.score)+est+'</small>'
+        + (o.out && o.out.length ? '<span class="mmadj">Adjusted for '+o.out.map(function(x){ var w = x[0].split(' ').filter(function(t){ return !/^(jr\.?|sr\.?|ii|iii|iv)$/i.test(t); }); return esc(w[w.length-1] || x[0])+' ('+x[1]+')'; }).join(', ')+' out \u2014 '+mmPct(o.base)+' with everyone</span>' : '')
+        + '</div></div>'
         + '<div class="mmp" style="--n:'+POS.length+'">'+cells+'</div></div>';
     };
     var net = S.away && S.home ? S.home.score - S.away.score : null;
@@ -1440,7 +1449,7 @@ footer b{color:var(--ink);}
           return '<td title="'+esc(r[0]+' averages '+v+' '+s[1]+'; '+teamAbbr(defName)+' allows '+(c?c[0]:'?')+' to '+P+'s vs league '+(lg||'?'))+'">'+v+tag+'</td>';
         }).join('');
         var pm = r[8], pmc = num(pm) ? '<td class="mono '+(pm > 0 ? 'pos' : pm < 0 ? 'neg' : '')+'" title="'+esc(r[0]+'\'s average plus/minus a game (the team\'s point margin while he\'s on the floor)')+'">'+(pm > 0 ? '+' : pm < 0 ? '\u2212' : '')+Math.abs(pm)+'</td>' : '<td class="muted">\u2014</td>';
-        return '<tr><td class="dvn">'+esc(r[0])+' <span class="muted">'+P+' \u00b7 '+r[3]+'m</span></td>'+cells+(sport === 'nba' ? pmc : '')+'</tr>';
+        return '<tr'+(injOut(r[9]) ? ' class="dvout"' : '')+'><td class="dvn"><span class="pn">'+esc(r[0])+'</span>'+injTag(r[9])+' <span class="muted">'+P+' \u00b7 '+r[3]+'m</span></td>'+cells+(sport === 'nba' ? pmc : '')+'</tr>';
       }).join('');
       return '<div class="dvh"><div class="dvh-h">'+teamBadge(offName, true)+' <b>'+esc(teamAbbr(offName))+' offense</b> vs '+teamBadge(defName, true)+' <b>'+esc(teamAbbr(defName))+' defense</b></div>'
         + '<div class="dvgrid">'+tbl
@@ -1471,7 +1480,7 @@ footer b{color:var(--ink);}
       }).join('') + '</tbody></table>';
       var pl = (off.players || []).map(function(r){
         var P = r[1], st = r[3];
-        return '<tr><td class="dvn">'+esc(r[0])+' <span class="muted">'+P+' \u00b7 '+r[2]+'g</span></td>'+SP[P].map(function(s){
+        return '<tr'+(injOut(r[4]) ? ' class="dvout"' : '')+'><td class="dvn"><span class="pn">'+esc(r[0])+'</span>'+injTag(r[4])+' <span class="muted">'+P+' \u00b7 '+r[2]+'g</span></td>'+SP[P].map(function(s){
           var v = st[s[0]], c = A[P] && A[P][s[0]], lg = L[P] && L[P][s[0]], f = c && lg ? c[0] / lg - 1 : 0;
           var tag = f >= 0.12 ? '<i class="up">\u25b2'+Math.round(f*100)+'%</i>' : f <= -0.12 ? '<i class="dn">\u25bc'+Math.round(-f*100)+'%</i>' : '';
           return '<td title="'+esc(r[0]+' averages '+v+' '+s[1]+'; '+teamAbbr(defName)+' allows '+(c?c[0]:'?')+' to '+P+'s vs league '+(lg||'?'))+'"><small class="lb">'+s[1]+'</small>'+v+tag+'</td>';
