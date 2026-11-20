@@ -34,8 +34,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 218.5,
-      "gameTotalOverOdds": -111,
-      "gameTotalUnderOdds": -109,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Atlanta Hawks",
       "homeMoneyline": -237,
       "homeNetRtg": 2.05,
@@ -61,7 +61,7 @@
       "lineMove": {
         "spread": [
           -5.5,
-          -6.5
+          -7.5
         ],
         "total": [
           218.5,
@@ -70,19 +70,19 @@
         "ml": {
           "home": [
             -212.0,
-            -237.0
+            -249.0
           ],
           "away": [
             177.0,
-            196.0
+            205.0
           ]
         },
         "public": {
-          "betsHome": 67,
-          "moneyHome": 73,
+          "betsHome": 71,
+          "moneyHome": 70,
           "rlm": null
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:01+00:00"
       },
       "netRtgGap": 55.17,
       "pick": "Atlanta Hawks",
@@ -92,8 +92,19 @@
       "skipReason": null,
       "skipped": false,
       "starterOut": {
+        "checked": "2026-11-20T21:09:00+00:00",
+        "line": {
+          "open": -5.5,
+          "now": -7.5
+        },
         "away": [
           {
+            "player": "Dennis Schroder",
+            "pos": "PG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 5,
             "avg": [
               9,
               30.0,
@@ -163,18 +174,17 @@
                   1.4
                 ]
               }
-            ],
-            "lastGame": false,
-            "missed": 5,
-            "out": true,
-            "player": "Dennis Schroder",
-            "pos": "PG",
-            "status": "Out"
+            ]
           }
         ],
-        "checked": "2026-11-20T06:30:48+00:00",
         "home": [
           {
+            "player": "CJ McCollum",
+            "pos": "PG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 1,
             "avg": [
               14,
               26.4,
@@ -244,15 +254,15 @@
                   1.0
                 ]
               }
-            ],
-            "lastGame": false,
-            "missed": 1,
-            "out": true,
-            "player": "CJ McCollum",
-            "pos": "PG",
-            "status": "Out"
+            ]
           },
           {
+            "player": "Kingston Flemings",
+            "pos": "PG",
+            "status": "Day-To-Day",
+            "out": false,
+            "lastGame": false,
+            "missed": 2,
             "avg": [
               12,
               21.5,
@@ -322,19 +332,9 @@
                   4.7
                 ]
               }
-            ],
-            "lastGame": false,
-            "missed": 2,
-            "out": false,
-            "player": "Kingston Flemings",
-            "pos": "PG",
-            "status": "Day-To-Day"
+            ]
           }
-        ],
-        "line": {
-          "now": -6.5,
-          "open": -5.5
-        }
+        ]
       },
       "statLines": [
         "PD/g -10.29 vs +1.93 (2026-27 season)",
@@ -345,12 +345,12 @@
       "statsCheck": "Rule 24: Fading Atlanta Hawks: won at better-record Oklahoma City Thunder 117-112 as a +6.5 underdog last game; now home vs. a worse-record team, rested -- 63.1% ATS, 77-45 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 24-14. Rule 28: Fading Atlanta Hawks: won at better-record Oklahoma City Thunder 117-112 as a +6.5 underdog last game; now home vs. a worse-record team, rested -- 61.8% ATS, 89-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17.",
       "statsFavors": "Charlotte Hornets",
       "statsLine": {
-        "homeSpread": -6.5,
-        "awaySpread": 6.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -237,
-        "awayMoneyline": 196
+        "homeSpread": -7.5,
+        "awaySpread": 7.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -249,
+        "awayMoneyline": 205
       },
       "statsRules": [
         {
@@ -366,49 +366,49 @@
           "detail": "Fading Atlanta Hawks: won at better-record Oklahoma City Thunder 117-112 as a +6.5 underdog last game; now home vs. a worse-record team, rested -- 61.8% ATS, 89-55 (2018-19 and 2021-22 to now; 2019-20 and 2020-21 left out); unseen when found, 2018-19 + 2021-22: 26-17."
         }
       ],
-      "statsSpread": -6.5,
+      "statsSpread": -7.5,
       "storylines": [
         {
-          "against": false,
-          "fact": "Atlanta Hawks is a -6.5 favorite but has covered 5 of 15 this season.",
-          "key": "emperor",
-          "leanPct": 54.3,
-          "leans": "Charlotte Hornets",
+          "weight": 1,
           "live": "7-2",
+          "key": "emperor",
           "name": "The emperor's new clothes",
-          "pct": 54.3,
-          "record": "183-154",
-          "says": "fade",
           "team": "Atlanta Hawks",
-          "weight": 1
+          "says": "fade",
+          "fact": "Atlanta Hawks is a -7.5 favorite but has covered 5 of 15 this season.",
+          "record": "183-154",
+          "pct": 54.3,
+          "leans": "Charlotte Hornets",
+          "leanPct": 54.3,
+          "against": false
         },
         {
-          "against": true,
-          "fact": "Charlotte Hornets lost the last meeting 81-128 (2026-10-23).",
-          "key": "payback",
-          "leanPct": 52.8,
-          "leans": "Atlanta Hawks",
+          "weight": 1,
           "live": "2-0",
+          "key": "payback",
           "name": "Payback with interest",
-          "pct": 47.2,
-          "record": "235-263",
-          "says": "back",
           "team": "Charlotte Hornets",
-          "weight": 1
+          "says": "back",
+          "fact": "Charlotte Hornets lost the last meeting 81-128 (2026-10-23).",
+          "record": "235-263",
+          "pct": 47.2,
+          "leans": "Atlanta Hawks",
+          "leanPct": 52.8,
+          "against": true
         },
         {
-          "against": true,
-          "fact": "Charlotte Hornets led Los Angeles Lakers by 13 after three quarters and lost 114-118.",
-          "key": "shell_shocked",
-          "leanPct": 53.4,
-          "leans": "Atlanta Hawks",
+          "weight": 1,
           "live": "0-1",
+          "key": "shell_shocked",
           "name": "Shell-shocked",
-          "pct": 46.6,
-          "record": "76-87",
-          "says": "back",
           "team": "Charlotte Hornets",
-          "weight": 1
+          "says": "back",
+          "fact": "Charlotte Hornets led Los Angeles Lakers by 13 after three quarters and lost 114-118.",
+          "record": "76-87",
+          "pct": 46.6,
+          "leans": "Atlanta Hawks",
+          "leanPct": 53.4,
+          "against": true
         }
       ],
       "time": "7:00 PM ET",
@@ -443,8 +443,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 223.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Brooklyn Nets",
       "homeMoneyline": 191,
       "homeNetRtg": -8.37,
@@ -475,19 +475,19 @@
         "ml": {
           "home": [
             168.0,
-            211.0
+            217.0
           ],
           "away": [
             -201.0,
-            -257.0
+            -264.0
           ]
         },
         "public": {
-          "betsHome": 31,
-          "moneyHome": 29,
+          "betsHome": 42,
+          "moneyHome": 37,
           "rlm": null
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:01+00:00"
       },
       "netRtgGap": 24.14,
       "pick": null,
@@ -505,10 +505,10 @@
       "statsLine": {
         "homeSpread": 6.5,
         "awaySpread": -6.5,
-        "homeSpreadOdds": -109,
-        "awaySpreadOdds": -111,
-        "homeMoneyline": 211,
-        "awayMoneyline": -257
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 217,
+        "awayMoneyline": -264
       },
       "statsSpread": 6.5,
       "storylines": [
@@ -558,9 +558,9 @@
       "awaySpreadOdds": -104,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 233.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -106,
+      "gameTotal": 234.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Cleveland Cavaliers",
       "homeMoneyline": -230,
       "homeNetRtg": 1.8,
@@ -590,7 +590,7 @@
         ],
         "total": [
           234.5,
-          233.5
+          234.5
         ],
         "ml": {
           "home": [
@@ -603,11 +603,11 @@
           ]
         },
         "public": {
-          "betsHome": 71,
-          "moneyHome": 62,
+          "betsHome": 65,
+          "moneyHome": 60,
           "rlm": null
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:01+00:00"
       },
       "netRtgGap": 27.59,
       "pick": null,
@@ -948,8 +948,8 @@
       "statsLine": {
         "homeSpread": -5.5,
         "awaySpread": 5.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -104,
+        "homeSpreadOdds": -118,
+        "awaySpreadOdds": -102,
         "homeMoneyline": -230,
         "awayMoneyline": 191
       },
@@ -971,7 +971,7 @@
         }
       ],
       "time": "7:30 PM ET",
-      "totalsLine": 233.5
+      "totalsLine": 234.5
     },
     {
       "altCategoryTally": "0-3 (away-home)",
@@ -1002,8 +1002,8 @@
       "confidence": "lean",
       "correct": null,
       "gameTotal": 216.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -112,
       "home": "Detroit Pistons",
       "homeMoneyline": -264,
       "homeNetRtg": 6.53,
@@ -1013,17 +1013,17 @@
       "homeSpreadOdds": -116,
       "injuries": {
         "away": {
-          "4395625": "out",
-          "4432586": "out",
+          "6450": "out",
           "5093267": "out",
-          "6450": "out"
+          "4395625": "out",
+          "4432586": "out"
         },
         "home": {
+          "4683771": "day-to-day",
           "2990962": "out",
+          "5258459": "out",
           "4432166": "day-to-day",
-          "4683771": "out",
-          "5037878": "day-to-day",
-          "5258459": "out"
+          "5037878": "day-to-day"
         }
       },
       "lineMove": {
@@ -1046,11 +1046,11 @@
           ]
         },
         "public": {
-          "betsHome": 40,
-          "moneyHome": 41,
+          "betsHome": 50,
+          "moneyHome": 50,
           "rlm": null
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:01+00:00"
       },
       "netRtgGap": 34.48,
       "pick": "Detroit Pistons",
@@ -1390,9 +1390,9 @@
       "awaySpreadOdds": -108,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 237.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 238.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
       "home": "Chicago Bulls",
       "homeMoneyline": -135,
       "homeNetRtg": -7.98,
@@ -1402,16 +1402,17 @@
       "homeSpreadOdds": -112,
       "injuries": {
         "away": {
+          "5105841": "day-to-day",
+          "4997537": "out",
           "4432187": "out",
           "4432907": "out",
-          "4606840": "out",
-          "4997537": "out",
-          "5105841": "day-to-day"
+          "4606840": "out"
         },
         "home": {
-          "5095151": "out",
+          "4397189": "day-to-day",
+          "5242496": "day-to-day",
           "5105555": "out",
-          "5242496": "day-to-day"
+          "5095151": "out"
         }
       },
       "lineMove": {
@@ -1421,7 +1422,7 @@
         ],
         "total": [
           240.5,
-          237.5
+          238.5
         ],
         "ml": {
           "home": [
@@ -1434,11 +1435,11 @@
           ]
         },
         "public": {
-          "betsHome": 47,
-          "moneyHome": 36,
+          "betsHome": 50,
+          "moneyHome": 39,
           "rlm": null
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:01+00:00"
       },
       "netRtgGap": 10.34,
       "pick": null,
@@ -1448,10 +1449,20 @@
       "skipReason": "netrtg-gap",
       "skipped": true,
       "starterOut": {
+        "checked": "2026-11-20T21:09:00+00:00",
+        "line": {
+          "open": -2.5,
+          "now": -2.5
+        },
         "away": [],
-        "checked": "2026-11-20T12:57:29+00:00",
         "home": [
           {
+            "player": "Caleb Wilson",
+            "pos": "PF",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 4,
             "avg": [
               10,
               30.7,
@@ -1521,19 +1532,87 @@
                   3.2
                 ]
               }
+            ]
+          },
+          {
+            "player": "Jalen Smith",
+            "pos": "SF",
+            "status": "Day-To-Day",
+            "out": false,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              13,
+              24.6,
+              13.4,
+              7.9,
+              2.2,
+              1.8
             ],
-            "lastGame": false,
-            "missed": 4,
-            "out": true,
-            "player": "Caleb Wilson",
-            "pos": "PF",
-            "status": "Out"
+            "gainers": [
+              {
+                "player": "Zach Collins",
+                "pos": "PF",
+                "with": [
+                  8,
+                  8.2,
+                  1.8,
+                  2.2,
+                  0.6,
+                  0.1
+                ],
+                "without": [
+                  1,
+                  28.0,
+                  8.0,
+                  6.0,
+                  4.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Isaac Okoro",
+                "pos": "SF",
+                "with": [
+                  13,
+                  22.2,
+                  7.1,
+                  2.0,
+                  1.7,
+                  0.9
+                ],
+                "without": [
+                  1,
+                  31.0,
+                  9.0,
+                  7.0,
+                  4.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Patrick Williams",
+                "pos": "SF",
+                "with": [
+                  6,
+                  20.5,
+                  5.8,
+                  2.5,
+                  2.2,
+                  0.8
+                ],
+                "without": [
+                  1,
+                  26.0,
+                  14.0,
+                  5.0,
+                  1.0,
+                  2.0
+                ]
+              }
+            ]
           }
-        ],
-        "line": {
-          "now": -2.5,
-          "open": -2.5
-        }
+        ]
       },
       "statLines": [
         "PD/g -7.19 vs -8.36 (2026-27 season)",
@@ -1546,8 +1625,8 @@
       "statsLine": {
         "homeSpread": -2.5,
         "awaySpread": 2.5,
-        "homeSpreadOdds": -112,
-        "awaySpreadOdds": -108,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
         "homeMoneyline": -135,
         "awayMoneyline": 114
       },
@@ -1577,7 +1656,7 @@
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 237.5
+      "totalsLine": 238.5
     },
     {
       "altCategoryTally": "0-1 (away-home)",
@@ -1607,9 +1686,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
       "home": "Oklahoma City Thunder",
       "homeMoneyline": -598,
       "homeNetRtg": 4.16,
@@ -1640,7 +1719,7 @@
         ],
         "total": [
           228.5,
-          228.5
+          227.5
         ],
         "ml": {
           "home": [
@@ -1653,11 +1732,11 @@
           ]
         },
         "public": {
-          "betsHome": 39,
-          "moneyHome": 36,
-          "rlm": "Oklahoma City Thunder"
+          "betsHome": 60,
+          "moneyHome": 62,
+          "rlm": null
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:01+00:00"
       },
       "netRtgGap": 51.72,
       "pick": "Oklahoma City Thunder",
@@ -1927,17 +2006,7 @@
       },
       "statsSpread": -11.5,
       "time": "8:00 PM ET",
-      "totalsLine": 228.5,
-      "statsFavors": "Oklahoma City Thunder",
-      "statsRules": [
-        {
-          "rule": 50,
-          "name": "Back the favorite when 60%+ of spread bets are on a 7+ point underdog but the line moved 1-4.5 pts toward the favorite (on trial)",
-          "backtest": "61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)",
-          "detail": "Fading New Orleans Pelicans: 61% of spread bets are on New Orleans Pelicans at +11.5, but the line has moved from +10.5 toward Oklahoma City Thunder since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)."
-        }
-      ],
-      "statsCheck": "Rule 50: Fading New Orleans Pelicans: 61% of spread bets are on New Orleans Pelicans at +11.5, but the line has moved from +10.5 toward Oklahoma City Thunder since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)."
+      "totalsLine": 227.5
     },
     {
       "altCategoryTally": "4-2 (away-home)",
@@ -1967,9 +2036,9 @@
       "awaySpreadOdds": -110,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 224.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107,
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Utah Jazz",
       "homeMoneyline": 154,
       "homeNetRtg": -7.18,
@@ -1994,7 +2063,7 @@
         ],
         "total": [
           226.5,
-          224.5
+          225.5
         ],
         "ml": {
           "home": [
@@ -2007,11 +2076,11 @@
           ]
         },
         "public": {
-          "betsHome": 18,
-          "moneyHome": 16,
+          "betsHome": 28,
+          "moneyHome": 25,
           "rlm": null
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:01+00:00"
       },
       "netRtgGap": 17.24,
       "pick": null,
@@ -2254,7 +2323,7 @@
         }
       ],
       "time": "9:30 PM ET",
-      "totalsLine": 224.5
+      "totalsLine": 225.5
     },
     {
       "altCategoryTally": "2-2 (away-home)",
@@ -2285,8 +2354,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 226.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "Denver Nuggets",
       "homeMoneyline": -120,
       "homeNetRtg": 0.72,
@@ -2316,19 +2385,19 @@
         "ml": {
           "home": [
             -148.0,
-            -120.0
+            -125.0
           ],
           "away": [
             124.0,
-            101.0
+            105.0
           ]
         },
         "public": {
-          "betsHome": 52,
-          "moneyHome": 51,
+          "betsHome": 78,
+          "moneyHome": 81,
           "rlm": null
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:01+00:00"
       },
       "netRtgGap": 37.93,
       "pick": "Houston Rockets",
@@ -2434,10 +2503,10 @@
       "statsLine": {
         "homeSpread": -1.5,
         "awaySpread": 1.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -120,
-        "awayMoneyline": 101
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -125,
+        "awayMoneyline": 105
       },
       "statsSpread": -1.5,
       "storylines": [
@@ -2487,9 +2556,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 229.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Los Angeles Lakers",
       "homeMoneyline": -940,
       "homeNetRtg": 6.42,
@@ -2515,24 +2584,24 @@
         ],
         "total": [
           230.5,
-          229.5
+          228.5
         ],
         "ml": {
           "home": [
             -1040.0,
-            -940.0
+            -890.0
           ],
           "away": [
             670.0,
-            630.0
+            600.0
           ]
         },
         "public": {
-          "betsHome": 32,
-          "moneyHome": 25,
+          "betsHome": 36,
+          "moneyHome": 30,
           "rlm": null
         },
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:01+00:00"
       },
       "netRtgGap": 75.86,
       "pick": "Los Angeles Lakers",
@@ -2797,10 +2866,10 @@
       "statsLine": {
         "homeSpread": -14.5,
         "awaySpread": 14.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -940,
-        "awayMoneyline": 630
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": -890,
+        "awayMoneyline": 600
       },
       "statsRules": [
         {
@@ -2828,7 +2897,7 @@
         }
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 229.5
+      "totalsLine": 228.5
     }
   ]
 }

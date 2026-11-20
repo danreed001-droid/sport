@@ -1,7 +1,7 @@
 {
  "date": "2026-11-20",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-20T17:17:56+00:00",
+ "fetchedAt": "2026-11-20T21:08:30+00:00",
  "games": [
   {
    "away": "Charlotte Hornets",
@@ -9,20 +9,20 @@
    "start": "2026-11-21T00:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -6.5,
+    "home": -7.5,
     "open": -4.5,
-    "tix_home": 67,
-    "money_home": 73
+    "tix_home": 71,
+    "money_home": 70
    },
    "total": {
     "now": 218.5,
     "open": 219.5,
-    "tix_over": 74,
-    "money_over": 76
+    "tix_over": 73,
+    "money_over": 75
    },
    "moneyline": {
-    "home": -250,
-    "away": 200
+    "home": -270,
+    "away": 220
    },
    "rlmFavorite": null
   },
@@ -34,17 +34,17 @@
    "spread": {
     "home": -5.5,
     "open": -6.5,
-    "tix_home": 71,
-    "money_home": 62
+    "tix_home": 65,
+    "money_home": 60
    },
    "total": {
-    "now": 233.5,
+    "now": 234.5,
     "open": 234.5,
-    "tix_over": 46,
-    "money_over": 48
+    "tix_over": 35,
+    "money_over": 37
    },
    "moneyline": {
-    "home": -220,
+    "home": -225,
     "away": 185
    },
    "rlmFavorite": null
@@ -57,17 +57,17 @@
    "spread": {
     "home": 6.5,
     "open": 4.5,
-    "tix_home": 31,
-    "money_home": 29
+    "tix_home": 42,
+    "money_home": 37
    },
    "total": {
-    "now": 222.5,
+    "now": 223,
     "open": 219.5,
-    "tix_over": 78,
-    "money_over": 71
+    "tix_over": 73,
+    "money_over": 67
    },
    "moneyline": {
-    "home": 200,
+    "home": 205,
     "away": -250
    },
    "rlmFavorite": null
@@ -78,20 +78,20 @@
    "start": "2026-11-21T00:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -6.5,
+    "home": -7.5,
     "open": -1.5,
-    "tix_home": 40,
-    "money_home": 41
+    "tix_home": 50,
+    "money_home": 50
    },
    "total": {
     "now": 216.5,
     "open": 227.5,
-    "tix_over": 72,
-    "money_over": 72
+    "tix_over": 77,
+    "money_over": 81
    },
    "moneyline": {
-    "home": -265,
-    "away": 217
+    "home": -275,
+    "away": 220
    },
    "rlmFavorite": null
   },
@@ -103,20 +103,20 @@
    "spread": {
     "home": -11.5,
     "open": -10.5,
-    "tix_home": 39,
-    "money_home": 36
+    "tix_home": 60,
+    "money_home": 62
    },
    "total": {
-    "now": 229,
+    "now": 227.5,
     "open": 227.5,
-    "tix_over": 64,
-    "money_over": 64
+    "tix_over": 62,
+    "money_over": 63
    },
    "moneyline": {
-    "home": -600,
+    "home": -620,
     "away": 450
    },
-   "rlmFavorite": "Oklahoma City Thunder"
+   "rlmFavorite": null
   },
   {
    "away": "Washington Wizards",
@@ -126,17 +126,17 @@
    "spread": {
     "home": -2.5,
     "open": -3.5,
-    "tix_home": 47,
-    "money_home": 36
+    "tix_home": 50,
+    "money_home": 39
    },
    "total": {
-    "now": 237.5,
+    "now": 238.5,
     "open": 242.5,
-    "tix_over": 46,
-    "money_over": 46
+    "tix_over": 49,
+    "money_over": 49
    },
    "moneyline": {
-    "home": -140,
+    "home": -136,
     "away": 115
    },
    "rlmFavorite": null
@@ -149,17 +149,17 @@
    "spread": {
     "home": 4.5,
     "open": 4.5,
-    "tix_home": 18,
-    "money_home": 16
+    "tix_home": 28,
+    "money_home": 25
    },
    "total": {
     "now": 225.5,
     "open": 226.5,
-    "tix_over": 77,
-    "money_over": 78
+    "tix_over": 54,
+    "money_over": 59
    },
    "moneyline": {
-    "home": 150,
+    "home": 154,
     "away": -184
    },
    "rlmFavorite": null
@@ -172,18 +172,18 @@
    "spread": {
     "home": -1.5,
     "open": -3.5,
-    "tix_home": 52,
-    "money_home": 51
+    "tix_home": 78,
+    "money_home": 81
    },
    "total": {
     "now": 226.5,
     "open": 227.5,
-    "tix_over": 74,
-    "money_over": 73
+    "tix_over": 65,
+    "money_over": 63
    },
    "moneyline": {
-    "home": -120,
-    "away": 101
+    "home": -125,
+    "away": 105
    },
    "rlmFavorite": null
   },
@@ -195,18 +195,18 @@
    "spread": {
     "home": -14.5,
     "open": -14.5,
-    "tix_home": 32,
-    "money_home": 25
+    "tix_home": 36,
+    "money_home": 30
    },
    "total": {
     "now": 229.5,
     "open": 230.5,
-    "tix_over": 68,
-    "money_over": 67
+    "tix_over": 71,
+    "money_over": 71
    },
    "moneyline": {
-    "home": -1000,
-    "away": 650
+    "home": -900,
+    "away": 625
    },
    "rlmFavorite": null
   }

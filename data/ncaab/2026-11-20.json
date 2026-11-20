@@ -425,8 +425,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 152.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "Arkansas Razorbacks",
       "homeMoneyline": null,
       "homePDpg": 10.3,
@@ -502,14 +502,14 @@
       "lineMove": {
         "spread": [
           -51.5,
-          -49.5
+          -48.5
         ],
         "total": [
           163.5,
           165.5
         ],
         "ml": {},
-        "checked": "2026-11-20T17:18:33+00:00"
+        "checked": "2026-11-20T21:09:02+00:00"
       },
       "offGap": 93.14,
       "pick": "Illinois Fighting Illini",

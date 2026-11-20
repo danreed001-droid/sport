@@ -4,9 +4,117 @@
   "sport": "cfb",
   "scored": false,
   "generatedAt": "2026-11-20T08:08:37-05:00",
-  "auditChanges": ["CFB Oregon @ Michigan State: Second Opinion Oregon strong -> lean (Rest was wrongly credited to Oregon off a bye; Oregon beat Michigan 31-7 on Nov. 14, so tally 6-1 -> 5-1)."],
+  "auditChanges": [
+    "CFB Oregon @ Michigan State: Second Opinion Oregon strong -> lean (Rest was wrongly credited to Oregon off a bye; Oregon beat Michigan 31-7 on Nov. 14, so tally 6-1 -> 5-1)."
+  ],
   "auditedAt": "2026-11-20T16:45:45Z",
   "games": [
-    {"altBlowoutCheck":"Oregon's most recent game was a 31-7 home win over Michigan on Nov. 14 (24-point margin; +2 takeaways, 21-7 at half, 36 rush att, now favored by 15.5-17.5). The blowout-win regression check is not part of docs/models/cfb.md, so the research check did not apply it; under the CFB skill's sub-conditions 3 of 5 appear met, which would add +6 to Michigan State -- flagged for review. Michigan State lost its last game, so the check does not apply to it.","altBlowoutCorrect":null,"altBlowoutCover":null,"altBlowoutFavors":null,"altBlowoutReturn":null,"altBlowoutSpreadReturn":null,"altCategoryTally":"5-1","altConfidence":"lean","altCorrect":null,"altCover":null,"altPick":"Oregon","altReasons":["Scoring margin: Oregon +5.3 PD/g vs Michigan State -4.5 PD/g favors Oregon","Travel: Oregon faces a cross-country trip from Eugene, OR to East Lansing, MI with a 3-hour time-zone change favors Michigan State","Injuries/Lineup: Michigan State starts true freshman emergency QB Kayd Coffman (starters Alessio Milivojevic (arm) and Cam Fancher (knee) both out) while Oregon's Dylan Raiola has 7 starts and a 144.3 rating this season favors Oregon","Form: Oregon has won 3 straight games (35.3 ppg in those wins) while Michigan State lost its last game and is 3-7 (1-6 Big Ten) favors Oregon","Market: the spread has moved from Oregon -12.5 at open to Oregon -17.5 now, with 66% of public spread bets also on Oregon, favors Oregon","Matchup splits: Oregon pass rusher Matayo Uiagalelei (9.5 sacks, among the Big Ten's best) faces a true freshman QB behind Michigan State's 132nd-of-138 ranked offense favors Oregon"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Oregon (W 31-7 vs Michigan, Nov. 14, CBS): 467 total net yds, 341 pass yds on 28 att (12.2 YPA), 36 rush att, overall 7.3 YPP, won by 24 -- no pattern fires (A needs a loss; B needs YPA >=7.5 and YPP <=5.15, YPP 7.3; C needs rush/pass ratio <=1.0, got 1.29; D needs 41+ pass att, got 28). Michigan State (L 14-21 vs Washington, Nov. 14): 342 total yards, 242 pass yds on an estimated 35 att (6.9 YPA), an estimated 36 rush att, lost by 7 -- no pattern fires. Net: no trend-check points for either team.","altTrendCorrect":null,"altTrendCover":null,"altTrendFavors":null,"altTrendReturn":null,"altTrendSpreadReturn":null,"auditNote":"Oregon played Michigan on Nov. 14 (won 31-7), not a bye: Rest is neutral (both teams on 6 days), so the Second Opinion tally drops from 6-1 to 5-1 and Oregon goes from strong to lean.","away":"Oregon","awayMoneyline":-1099,"awayPDpg":5.3,"awayQB":"Dylan Raiola","awayQBEff":144.3,"awayRank":14,"awayScore":null,"awaySpread":-17.5,"awaySpreadOdds":-114,"awayYPP":5.8,"confidence":"lean","correct":null,"gameTotal":43.5,"gameTotalOverOdds":-118,"gameTotalUnderOdds":-102,"home":"Michigan State","homeMoneyline":720,"homePDpg":-4.5,"homeQB":"Kayd Coffman","homeQBEff":88.3,"homeRank":null,"homeScore":null,"homeSpread":17.5,"homeSpreadOdds":-106,"homeYPP":4.4,"lineMove":{"checked":"2026-11-20T17:18:34+00:00","ml":{"away":[-455.0,-950.0],"home":[350.0,625.0]},"spread":[12.5,17.5],"total":[45.5,43.5]},"offGap":69.9,"pick":"Oregon","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["#14 vs unranked","PD/g +5.3 vs -4.5","Yds/play 5.8 vs 4.4 · 69.9-pt off. percentile gap","QB eff 144.3 vs 88.3 (Raiola vs Coffman; Coffman has 1 career start, 4-of-10 for 42 yds)"],"storylines":[{"against":false,"fact":"Michigan State (3-7) has lost 3 games by 8 or fewer and won none that close.","key":"unlucky_close","leanPct":53.8,"leans":"Michigan State","live":"0-0","name":"Snakebit","pct":53.8,"record":"171-147","says":"back","team":"Michigan State","unit":"ATS","weight":1}],"time":"8:00 PM ET"}
+    {
+      "altBlowoutCheck": "Oregon's most recent game was a 31-7 home win over Michigan on Nov. 14 (24-point margin; +2 takeaways, 21-7 at half, 36 rush att, now favored by 15.5-17.5). The blowout-win regression check is not part of docs/models/cfb.md, so the research check did not apply it; under the CFB skill's sub-conditions 3 of 5 appear met, which would add +6 to Michigan State -- flagged for review. Michigan State lost its last game, so the check does not apply to it.",
+      "altBlowoutCorrect": null,
+      "altBlowoutCover": null,
+      "altBlowoutFavors": null,
+      "altBlowoutReturn": null,
+      "altBlowoutSpreadReturn": null,
+      "altCategoryTally": "5-1",
+      "altConfidence": "lean",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": "Oregon",
+      "altReasons": [
+        "Scoring margin: Oregon +5.3 PD/g vs Michigan State -4.5 PD/g favors Oregon",
+        "Travel: Oregon faces a cross-country trip from Eugene, OR to East Lansing, MI with a 3-hour time-zone change favors Michigan State",
+        "Injuries/Lineup: Michigan State starts true freshman emergency QB Kayd Coffman (starters Alessio Milivojevic (arm) and Cam Fancher (knee) both out) while Oregon's Dylan Raiola has 7 starts and a 144.3 rating this season favors Oregon",
+        "Form: Oregon has won 3 straight games (35.3 ppg in those wins) while Michigan State lost its last game and is 3-7 (1-6 Big Ten) favors Oregon",
+        "Market: the spread has moved from Oregon -12.5 at open to Oregon -17.5 now, with 66% of public spread bets also on Oregon, favors Oregon",
+        "Matchup splits: Oregon pass rusher Matayo Uiagalelei (9.5 sacks, among the Big Ten's best) faces a true freshman QB behind Michigan State's 132nd-of-138 ranked offense favors Oregon"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "altTrendCheck": "Oregon (W 31-7 vs Michigan, Nov. 14, CBS): 467 total net yds, 341 pass yds on 28 att (12.2 YPA), 36 rush att, overall 7.3 YPP, won by 24 -- no pattern fires (A needs a loss; B needs YPA >=7.5 and YPP <=5.15, YPP 7.3; C needs rush/pass ratio <=1.0, got 1.29; D needs 41+ pass att, got 28). Michigan State (L 14-21 vs Washington, Nov. 14): 342 total yards, 242 pass yds on an estimated 35 att (6.9 YPA), an estimated 36 rush att, lost by 7 -- no pattern fires. Net: no trend-check points for either team.",
+      "altTrendCorrect": null,
+      "altTrendCover": null,
+      "altTrendFavors": null,
+      "altTrendReturn": null,
+      "altTrendSpreadReturn": null,
+      "auditNote": "Oregon played Michigan on Nov. 14 (won 31-7), not a bye: Rest is neutral (both teams on 6 days), so the Second Opinion tally drops from 6-1 to 5-1 and Oregon goes from strong to lean.",
+      "away": "Oregon",
+      "awayMoneyline": -1099,
+      "awayPDpg": 5.3,
+      "awayQB": "Dylan Raiola",
+      "awayQBEff": 144.3,
+      "awayRank": 14,
+      "awayScore": null,
+      "awaySpread": -17.5,
+      "awaySpreadOdds": -114,
+      "awayYPP": 5.8,
+      "confidence": "lean",
+      "correct": null,
+      "gameTotal": 43.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "home": "Michigan State",
+      "homeMoneyline": 720,
+      "homePDpg": -4.5,
+      "homeQB": "Kayd Coffman",
+      "homeQBEff": 88.3,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": 17.5,
+      "homeSpreadOdds": -106,
+      "homeYPP": 4.4,
+      "lineMove": {
+        "checked": "2026-11-20T17:18:34+00:00",
+        "ml": {
+          "away": [
+            -455.0,
+            -950.0
+          ],
+          "home": [
+            350.0,
+            625.0
+          ]
+        },
+        "spread": [
+          12.5,
+          17.5
+        ],
+        "total": [
+          45.5,
+          43.5
+        ]
+      },
+      "offGap": 69.9,
+      "pick": "Oregon",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "#14 vs unranked",
+        "PD/g +5.3 vs -4.5",
+        "Yds/play 5.8 vs 4.4 \u00b7 69.9-pt off. percentile gap",
+        "QB eff 144.3 vs 88.3 (Raiola vs Coffman; Coffman has 1 career start, 4-of-10 for 42 yds)"
+      ],
+      "storylines": [
+        {
+          "against": false,
+          "fact": "Michigan State (3-7) has lost 3 games by 8 or fewer and won none that close.",
+          "key": "unlucky_close",
+          "leanPct": 53.8,
+          "leans": "Michigan State",
+          "live": "0-0",
+          "name": "Snakebit",
+          "pct": 53.8,
+          "record": "171-147",
+          "says": "back",
+          "team": "Michigan State",
+          "unit": "ATS",
+          "weight": 1
+        }
+      ],
+      "time": "8:00 PM ET"
+    }
   ]
 }
