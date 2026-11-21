@@ -2063,7 +2063,7 @@
         ],
         "total": [
           226.5,
-          225.5
+          226.5
         ],
         "ml": {
           "home": [
@@ -2080,7 +2080,7 @@
           "moneyHome": 27,
           "rlm": null
         },
-        "checked": "2026-11-21T02:02:27+00:00"
+        "checked": "2026-11-21T02:20:07+00:00"
       },
       "netRtgGap": 17.24,
       "pick": null,
@@ -2493,7 +2493,6 @@
       "injuries": {
         "away": {
           "4431679": "out",
-          "4065732": "day-to-day",
           "4898371": "out",
           "3907387": "out"
         },
@@ -2535,7 +2534,7 @@
       "skipReason": null,
       "skipped": false,
       "starterOut": {
-        "checked": "2026-11-20T21:50:11+00:00",
+        "checked": "2026-11-21T02:20:07+00:00",
         "line": {
           "open": -14.5,
           "now": -14.5
@@ -2615,84 +2614,6 @@
                   4.0,
                   2.0,
                   2.0
-                ]
-              }
-            ]
-          },
-          {
-            "player": "De'Andre Hunter",
-            "pos": "SF",
-            "status": "Day-To-Day",
-            "out": false,
-            "lastGame": true,
-            "missed": 0,
-            "avg": [
-              12,
-              32.7,
-              13.7,
-              4.2,
-              1.6,
-              2.0
-            ],
-            "gainers": [
-              {
-                "player": "Leaky Black",
-                "pos": "SF",
-                "with": [
-                  7,
-                  17.4,
-                  3.7,
-                  2.6,
-                  1.1,
-                  1.0
-                ],
-                "without": [
-                  2,
-                  34.5,
-                  12.0,
-                  6.0,
-                  3.5,
-                  4.0
-                ]
-              },
-              {
-                "player": "Daeqwon Plowden",
-                "pos": "SG",
-                "with": [
-                  10,
-                  9.3,
-                  2.4,
-                  0.8,
-                  0.2,
-                  0.5
-                ],
-                "without": [
-                  1,
-                  24.0,
-                  13.0,
-                  2.0,
-                  1.0,
-                  3.0
-                ]
-              },
-              {
-                "player": "Alex Karaban",
-                "pos": "SF",
-                "with": [
-                  5,
-                  8.4,
-                  1.4,
-                  0.8,
-                  0.4,
-                  0.4
-                ],
-                "without": [
-                  2,
-                  20.0,
-                  0.0,
-                  3.0,
-                  0.5,
-                  0.0
                 ]
               }
             ]
