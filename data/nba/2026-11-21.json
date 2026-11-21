@@ -700,7 +700,7 @@
       "lineMove": {
         "spread": [
           -5.5,
-          -4.5
+          -5.5
         ],
         "total": [
           229.5,
@@ -721,7 +721,7 @@
           "moneyHome": 52,
           "rlm": null
         },
-        "checked": "2026-11-21T18:00:34+00:00"
+        "checked": "2026-11-21T18:41:42+00:00"
       },
       "netRtgGap": 13.79,
       "pick": null,
@@ -731,10 +731,10 @@
       "skipReason": "netrtg-gap",
       "skipped": true,
       "starterOut": {
-        "checked": "2026-11-21T18:00:34+00:00",
+        "checked": "2026-11-21T18:41:42+00:00",
         "line": {
           "open": -5.5,
-          "now": -4.5
+          "now": -5.5
         },
         "away": [],
         "home": [
@@ -804,14 +804,14 @@
         "Mavericks: Dereck Lively II, Sergio de Larrea, Tarik Biberovic, Tobi Lawal out; P.J. Washington, Walter Clayton Jr. day-to-day"
       ],
       "statsLine": {
-        "homeSpread": -4.5,
-        "awaySpread": 4.5,
-        "homeSpreadOdds": -119,
-        "awaySpreadOdds": -102,
+        "homeSpread": -5.5,
+        "awaySpread": 5.5,
+        "homeSpreadOdds": -107,
+        "awaySpreadOdds": -113,
         "homeMoneyline": -204,
         "awayMoneyline": 170
       },
-      "statsSpread": -4.5,
+      "statsSpread": -5.5,
       "time": "8:00 PM ET",
       "totalsLine": 230.5
     },
@@ -1207,15 +1207,16 @@
       "homeSpreadOdds": -115,
       "injuries": {
         "away": {
-          "3907497": "out",
+          "4397688": "out",
           "4431675": "out",
           "4576086": "out",
-          "4683634": "out"
+          "4683634": "out",
+          "3907497": "out"
         },
         "home": {
           "5037871": "out",
-          "5101845": "out",
-          "6440": "out"
+          "6440": "out",
+          "5101845": "out"
         }
       },
       "lineMove": {
@@ -1230,11 +1231,11 @@
         "ml": {
           "home": [
             -1440.0,
-            -1580.0
+            -1880.0
           ],
           "away": [
             850.0,
-            900.0
+            990.0
           ]
         },
         "public": {
@@ -1242,7 +1243,7 @@
           "moneyHome": 58,
           "rlm": null
         },
-        "checked": "2026-11-21T18:00:34+00:00"
+        "checked": "2026-11-21T18:41:42+00:00"
       },
       "netRtgGap": 79.31,
       "pick": "San Antonio Spurs",
@@ -1252,12 +1253,90 @@
       "skipReason": null,
       "skipped": false,
       "starterOut": {
-        "checked": "2026-11-21T18:00:34+00:00",
+        "checked": "2026-11-21T18:41:42+00:00",
         "line": {
           "open": -16.5,
           "now": -18.5
         },
         "away": [
+          {
+            "player": "Trey Murphy III",
+            "pos": "SF",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              10,
+              32.4,
+              15.7,
+              4.7,
+              3.3,
+              2.3
+            ],
+            "gainers": [
+              {
+                "player": "Jaron Pierre Jr.",
+                "pos": "SG",
+                "with": [
+                  1,
+                  4.0,
+                  3.0,
+                  2.0,
+                  0.0,
+                  1.0
+                ],
+                "without": [
+                  5,
+                  14.0,
+                  6.8,
+                  2.2,
+                  0.2,
+                  1.2
+                ]
+              },
+              {
+                "player": "Herbert Jones",
+                "pos": "SF",
+                "with": [
+                  10,
+                  22.2,
+                  6.8,
+                  2.5,
+                  1.1,
+                  1.0
+                ],
+                "without": [
+                  7,
+                  28.7,
+                  7.0,
+                  2.9,
+                  2.1,
+                  1.3
+                ]
+              },
+              {
+                "player": "Saddiq Bey",
+                "pos": "SF",
+                "with": [
+                  10,
+                  27.7,
+                  16.0,
+                  4.2,
+                  2.2,
+                  2.0
+                ],
+                "without": [
+                  7,
+                  33.3,
+                  17.9,
+                  5.0,
+                  3.1,
+                  3.0
+                ]
+              }
+            ]
+          },
           {
             "player": "Dejounte Murray",
             "pos": "PG",
@@ -1429,10 +1508,10 @@
       "statsLine": {
         "homeSpread": -18.5,
         "awaySpread": 18.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
-        "homeMoneyline": -1580,
-        "awayMoneyline": 900
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": -1880,
+        "awayMoneyline": 990
       },
       "statsRules": [
         {
