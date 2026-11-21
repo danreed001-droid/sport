@@ -2383,19 +2383,19 @@
         "ml": {
           "home": [
             -148.0,
-            101.0
+            103.0
           ],
           "away": [
             124.0,
-            -120.0
+            -122.0
           ]
         },
         "public": {
-          "betsHome": 39,
-          "moneyHome": 47,
+          "betsHome": 40,
+          "moneyHome": 37,
           "rlm": null
         },
-        "checked": "2026-11-21T02:02:27+00:00"
+        "checked": "2026-11-21T03:01:12+00:00"
       },
       "netRtgGap": 37.93,
       "pick": "Houston Rockets",
@@ -2415,8 +2415,8 @@
         "awaySpread": -1.5,
         "homeSpreadOdds": -110,
         "awaySpreadOdds": -110,
-        "homeMoneyline": 101,
-        "awayMoneyline": -120
+        "homeMoneyline": 103,
+        "awayMoneyline": -122
       },
       "statsSpread": 1.5,
       "storylines": [
@@ -2481,8 +2481,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 229.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
       "home": "Los Angeles Lakers",
       "homeMoneyline": -940,
       "homeNetRtg": 6.42,
@@ -2512,19 +2512,19 @@
         "ml": {
           "home": [
             -1040.0,
-            -890.0
+            -840.0
           ],
           "away": [
             670.0,
-            600.0
+            580.0
           ]
         },
         "public": {
-          "betsHome": 59,
-          "moneyHome": 51,
+          "betsHome": 65,
+          "moneyHome": 55,
           "rlm": null
         },
-        "checked": "2026-11-21T01:45:18+00:00"
+        "checked": "2026-11-21T03:01:12+00:00"
       },
       "netRtgGap": 75.86,
       "pick": "Los Angeles Lakers",
@@ -2713,8 +2713,8 @@
         "awaySpread": 14.5,
         "homeSpreadOdds": -105,
         "awaySpreadOdds": -115,
-        "homeMoneyline": -890,
-        "awayMoneyline": 600
+        "homeMoneyline": -840,
+        "awayMoneyline": 580
       },
       "statsRules": [
         {

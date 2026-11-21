@@ -1,7 +1,7 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
 401882805,2026-11-20,FT,Espanyol,1,-,Athletic Club,0,-,-,-,3:00 PM
 401884736,2026-11-20,FT,FC Cologne,1,-,Bayern Munich,1,-,-,-,2:30 PM
-401877054,2026-11-20,59',Atlético de San Luis,1,-,Puebla,1,-,-,-,8:00 PM
+401877054,2026-11-20,FT,Atlético de San Luis,1,-,Puebla,1,-,-,-,8:00 PM
 401877053,2026-11-20,Scheduled,Atlas,0,-,FC Juárez,0,-,-,-,10:00 PM
 401877052,2026-11-20,Scheduled,Atlante,0,-,Tijuana,0,-,-,-,10:10 PM
 401876395,2026-11-20,FT,Le Havre AC,1,-,Troyes,3,-,-,-,2:45 PM
@@ -52,14 +52,14 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401934701,2026-11-20,FT,Central Español Fútbol Club,0,-,Racing (Montevideo),1,-,-,-,2:30 PM
 401934708,2026-11-20,FT,Independiente Santa Fe,0,-,Independiente Medellín,1,-,-,-,4:30 PM
 401934690,2026-11-20,FT,América de Cali,2,-,Atlético Bucaramanga,2,-,-,-,6:35 PM
-401934707,2026-11-20,39',Millonarios,0,-,Deportivo Cali,0,-,-,-,8:40 PM
+401934707,2026-11-20,63',Millonarios,0,-,Deportivo Cali,0,-,-,-,8:40 PM
 401888560,2026-11-20,FT,Sportivo Luqueño,0,-,Sportivo Ameliano,1,-,-,-,3:30 PM
 401888559,2026-11-20,FT,Guaraní,2,-,Deportivo Recoleta,2,-,-,-,6:00 PM
 401921320,2026-11-20,FT,Macará,1,-,Independiente del Valle,0,-,-,-,12:00 PM
 401877534,2026-11-20,FT,Shimizu S-Pulse,1,-,Kashima Antlers,1,-,-,-,5:00 AM
 401877553,2026-11-20,FT,JEF United Ichihara-Chiba,1,-,Kashiwa Reysol,0,-,-,-,5:00 AM
 401877548,2026-11-20,FT,Mito Hollyhock,2,-,Vissel Kobe,1,-,-,-,5:00 AM
-401876818,2026-11-20,19',AD San Carlos,1,-,Escorpiones Belén,0,-,-,-,9:00 PM
+401876818,2026-11-20,HT,AD San Carlos,2,-,Escorpiones Belén,0,-,-,-,9:00 PM
 401925412,2026-11-20,FT,Sporting Club Delhi,2,-,East Bengal FC,2,-,-,-,6:30 AM
 401925411,2026-11-20,FT,Mumbai City FC,0,-,Bengaluru FC,2,-,-,-,9:00 AM
 401930691,2026-11-20,FT,Chanmari FC,4,-,Rajasthan United FC,1,-,-,-,4:30 AM
@@ -76,18 +76,18 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401932645,2026-11-20,FT,Liberty,2,-,Tennessee,3,-,-,-,6:00 PM
 401932659,2026-11-20,F/OT,Oral Roberts,2,-,Kansas,3,-,-,-,6:30 PM
 401932656,2026-11-20,FT,Samford,0,-,Mississippi State,2,-,-,-,7:00 PM
-401932644,2026-11-20,90',Houston,3,-,Texas,3,-,-,-,7:00 PM
-401932642,2026-11-20,90',Abilene Christian,0,-,Texas Tech,2,-,-,-,7:00 PM
+401932644,2026-11-20,F/OT,Houston,4,-,Texas,3,-,-,-,7:00 PM
+401932642,2026-11-20,FT,Abilene Christian,0,-,Texas Tech,2,-,-,-,7:00 PM
 401932647,2026-11-20,FT,UT Martin,0,-,Vanderbilt,5,-,-,-,7:00 PM
 401932637,2026-11-20,FT,Old Dominion,0,-,West Virginia,1,-,-,-,7:00 PM
-401932632,2026-11-20,72',Washington,0,-,Auburn,0,-,-,-,7:30 PM
-401932653,2026-11-20,70',Virginia Tech,3,-,Kentucky,1,-,-,-,7:30 PM
-401932634,2026-11-20,HT,Jackson State,0,-,Alabama,8,-,-,-,8:00 PM
-401932654,2026-11-20,51',Lamar,0,-,Baylor,2,-,-,-,8:00 PM
-401932658,2026-11-20,50',Weber State,1,-,BYU,3,-,-,-,8:00 PM
-401932657,2026-11-20,53',Utah Valley,1,-,Utah State,1,-,-,-,8:00 PM
-401932651,2026-11-20,11',Air Force,0,-,Colorado,1,-,-,-,9:00 PM
-401932633,2026-11-20,13',Santa Clara,0,-,Stanford,0,-,-,-,9:00 PM
+401932632,2026-11-20,100',Washington,0,-,Auburn,0,-,-,-,7:30 PM
+401932653,2026-11-20,FT,Virginia Tech,3,-,Kentucky,1,-,-,-,7:30 PM
+401932634,2026-11-20,74',Jackson State,0,-,Alabama,10,-,-,-,8:00 PM
+401932654,2026-11-20,89',Lamar,0,-,Baylor,3,-,-,-,8:00 PM
+401932658,2026-11-20,82',Weber State,3,-,BYU,3,-,-,-,8:00 PM
+401932657,2026-11-20,82',Utah Valley,2,-,Utah State,3,-,-,-,8:00 PM
+401932651,2026-11-20,HT,Air Force,0,-,Colorado,2,-,-,-,9:00 PM
+401932633,2026-11-20,HT,Santa Clara,0,-,Stanford,1,-,-,-,9:00 PM
 401928541,2026-11-19,FT,Madrid CFF,0,-,CD Argual,2,-,-,-,1:00 PM
 401928542,2026-11-19,FT,Espanyol,1,-,Celta Vigo,2,-,-,-,1:00 PM
 401933535,2026-11-19,FT,FC Cincinnati,3,-,Orlando City SC,1,-,-,-,7:30 PM

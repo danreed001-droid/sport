@@ -1,7 +1,7 @@
 {
  "date": "2026-11-20",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-21T02:19:17+00:00",
+ "fetchedAt": "2026-11-21T03:00:41+00:00",
  "games": [
   {
    "away": "Charlotte Hornets",
@@ -172,18 +172,18 @@
    "spread": {
     "home": 1.5,
     "open": -3.5,
-    "tix_home": 39,
-    "money_home": 47
+    "tix_home": 40,
+    "money_home": 37
    },
    "total": {
     "now": 227.5,
     "open": 227.5,
     "tix_over": 44,
-    "money_over": 43
+    "money_over": 49
    },
    "moneyline": {
-    "home": -102,
-    "away": -117
+    "home": 101,
+    "away": -120
    },
    "rlmFavorite": null
   },
@@ -195,18 +195,18 @@
    "spread": {
     "home": -14.5,
     "open": -14.5,
-    "tix_home": 59,
-    "money_home": 51
+    "tix_home": 65,
+    "money_home": 55
    },
    "total": {
-    "now": 229,
+    "now": 229.5,
     "open": 230.5,
     "tix_over": 72,
-    "money_over": 73
+    "money_over": 74
    },
    "moneyline": {
     "home": -900,
-    "away": 600
+    "away": 590
    },
    "rlmFavorite": null
   }
