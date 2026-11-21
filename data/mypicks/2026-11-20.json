@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-20",
+  "picks": {
+    "nba-2026-11-20-charlotte-hornets-atlanta-hawks-7-00-pm-et": {
+      "sport": "nba",
+      "away": "Charlotte Hornets",
+      "home": "Atlanta Hawks",
+      "time": "7:00 PM ET",
+      "side": "away",
+      "team": "Charlotte Hornets",
+      "spread": 6.5,
+      "spreadOdds": -105,
+      "moneyline": 196,
+      "submittedAt": "2026-11-21T00:15:52+00:00",
+      "issue": 34
+    },
+    "nba-2026-11-20-houston-rockets-denver-nuggets-10-00-pm-et": {
+      "sport": "nba",
+      "away": "Houston Rockets",
+      "home": "Denver Nuggets",
+      "time": "10:00 PM ET",
+      "side": "home",
+      "team": "Denver Nuggets",
+      "spread": -1.5,
+      "spreadOdds": -110,
+      "moneyline": -120,
+      "submittedAt": "2026-11-21T00:15:52+00:00",
+      "issue": 34
+    },
+    "nba-2026-11-20-washington-wizards-chicago-bulls-8-00-pm-et": {
+      "sport": "nba",
+      "away": "Washington Wizards",
+      "home": "Chicago Bulls",
+      "time": "8:00 PM ET",
+      "side": "home",
+      "team": "Chicago Bulls",
+      "spread": -2.5,
+      "spreadOdds": -112,
+      "moneyline": -135,
+      "submittedAt": "2026-11-21T00:15:52+00:00",
+      "issue": 34
+    }
+  },
+  "scores": {},
+  "totals": {}
+}
