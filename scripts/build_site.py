@@ -370,6 +370,58 @@ def next_games(slate_date, slate_sports):
     return out
 
 
+CANDLE_DAYS = 120   # the candle chart shows this many days back; the running sum starts at the season's start
+
+
+def pd_candles(slate_date, slate_sports):
+    """Point-differential candles (the user's ask, 2026-11-21, from a stock
+    chart): {sport: {slate team: {"c0": running margin before the first row,
+    "a0": running cover margin before it, "r": [[date, opponent, home (1/0),
+    points for, points against, [margin per period] or None, team's closing
+    spread or None], ...]}}} -- every finished game this season (from H2H_START)
+    before the slate's date, from data/raw/schedule/<sport>.json, periods from
+    data/raw/linescores, closing spreads from data/raw/<sport>_lines.csv. Rows
+    cover the last CANDLE_DAYS days; c0/a0 carry the earlier games' sums."""
+    from datetime import date as _date, timedelta as _td
+    out = {}
+    for sport in TREND_GAMES:
+        today = (slate_sports.get(sport) or {}).get("games") or []
+        if not today or not slate_date:
+            continue
+        start = H2H_START.get(sport, "")
+        past = [(d, rows) for d, rows in _sched_rows(sport) if start <= d < slate_date]
+        cut = (_date.fromisoformat(slate_date) - _td(days=CANDLE_DAYS)).isoformat()
+        full = {}
+        for g in today:
+            fa, fh = resolve_teams(sport, slate_date, g.get("away"), g.get("home"))
+            full[g.get("away")], full[g.get("home")] = fa, fh
+        res = {}
+        for t in {t for g in today for t in (g.get("away"), g.get("home")) if t}:
+            ft = full.get(t, t)
+            c0 = a0 = 0.0
+            rows = []
+            for d, day in past:
+                for r in day:
+                    me = 1 if r[1] == ft else 0 if r[0] == ft else None
+                    if me is None or len(r) < 7 or r[5] is None or r[6] is None:
+                        continue
+                    pf, pa = (r[6], r[5]) if me else (r[5], r[6])
+                    hs, _tot = _closing(sport, r[4])
+                    sp = None if hs is None else (hs if me else -hs)
+                    if d < cut:
+                        c0 += pf - pa
+                        if sp is not None:
+                            a0 += pf - pa + sp
+                        continue
+                    q = quarters(sport, d, {"away": r[0], "home": r[1]}, "home" if me else "away", False)
+                    rows.append([d, r[0] if me else r[1], me, pf, pa, q, sp])
+            if rows or c0:
+                res[t] = {"c0": round(c0, 1), "a0": round(a0, 1), "r": rows}
+        if res:
+            out[sport] = res
+    return out
+
+
 def _sched_rows(sport):
     if sport not in _SCHED:
         try:
@@ -754,6 +806,7 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
         "atsTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}),
         "ouTrend": ats_trends(all_docs, slate.get("date"), slate.get("sports") or {}, totals=True),
         "atsNext": next_games(slate.get("date"), slate.get("sports") or {}),
+        "pdCandles": pd_candles(slate.get("date"), slate.get("sports") or {}),
         "h2h": head_to_head(all_docs, slate.get("date"), slate.get("sports") or {}),
         "dvp": nba_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
                                               for g in (slate.get("sports") or {}).get("nba", {}).get("games", [])], "nba",
@@ -982,6 +1035,7 @@ def build():
         "atsTrend": cur["atsTrend"],
         "ouTrend": cur["ouTrend"],
         "atsNext": cur["atsNext"],
+        "pdCandles": cur["pdCandles"],
         "h2h": cur["h2h"],
         "dvp": cur["dvp"],
         "dvpNfl": cur["dvpNfl"],

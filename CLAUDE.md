@@ -403,6 +403,18 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   NBA/NFL/MLB a month per request, college a day at a time, soccer per league
   (`SOCCER_LEAGUES`; a club in an unlisted competition shows fewer). Edge labels
   are kept inside the chart (`lx`).
+  Point-differential candles (2026-11-21, the user's ask from a stock chart of
+  daily candles with each week as a hollow candle): `pdCandles` in site/index.html
+  (`cdBuild`), after the ATS bars on every trend card. Each team's running point
+  differential this season (from `H2H_START`) as one candle per game on a calendar
+  (open = the running total before it, close = after; the wick is the high and low
+  through its quarters from `data/raw/linescores`, so MLB/soccer have none), each
+  Mon-Sun week (NFL/CFB: month) a hollow candle around its games, tonight a dashed
+  outline. A "Point diff | ATS" switch (`dl-cdmode`, `html.cdats`) shows the running
+  cover margin instead (margin + closing spread from `data/raw/<sport>_lines.csv`;
+  no line = a flat gray candle). Data: `pd_candles` in build_site.py from
+  `data/raw/schedule/<sport>.json`, the last `CANDLE_DAYS` (120) days as rows with
+  the earlier games summed into `c0`/`a0`.
   Home games' bars have a white border (`.hm`, every sport, both views and
   tonight's bar; the user's call), with a thin dark ring on the light theme so
   it shows on a light background; a key in the chart's note.
