@@ -258,9 +258,9 @@
       "awaySpreadOdds": -117,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 215.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 213.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "New York Knicks",
       "homeMoneyline": -210,
       "homeNetRtg": 6.2,
@@ -271,42 +271,41 @@
       "injuries": {
         "away": {
           "4706557": "out",
-          "4683021": "day-to-day",
           "4578893": "out",
           "4279888": "out",
           "4914336": "out"
         },
         "home": {
+          "3136195": "out",
           "3934719": "out",
-          "3136195": "day-to-day",
           "2528426": "out"
         }
       },
       "lineMove": {
         "spread": [
           -5.5,
-          -2.5
+          1.5
         ],
         "total": [
           218.5,
-          215.5
+          213.5
         ],
         "ml": {
           "home": [
             -201.0,
-            -156.0
+            -105.0
           ],
           "away": [
             168.0,
-            131.0
+            -112.0
           ]
         },
         "public": {
-          "betsHome": 62,
-          "moneyHome": 46,
+          "betsHome": 66,
+          "moneyHome": 34,
           "rlm": null
         },
-        "checked": "2026-11-21T21:55:04+00:00"
+        "checked": "2026-11-21T23:21:34+00:00"
       },
       "netRtgGap": 3.45,
       "pick": null,
@@ -316,10 +315,10 @@
       "skipReason": "netrtg-gap",
       "skipped": true,
       "starterOut": {
-        "checked": "2026-11-21T21:55:03+00:00",
+        "checked": "2026-11-21T23:21:34+00:00",
         "line": {
           "open": -5.5,
-          "now": -2.5
+          "now": 1.5
         },
         "away": [
           {
@@ -399,84 +398,6 @@
                 ]
               }
             ]
-          },
-          {
-            "player": "Deni Avdija",
-            "pos": "SF",
-            "status": "Day-To-Day",
-            "out": false,
-            "lastGame": false,
-            "missed": 2,
-            "avg": [
-              13,
-              32.5,
-              24.2,
-              6.2,
-              6.1,
-              2.1
-            ],
-            "gainers": [
-              {
-                "player": "Jayson Kent",
-                "pos": "SG",
-                "with": [
-                  4,
-                  10.2,
-                  3.8,
-                  0.8,
-                  0.2,
-                  0.8
-                ],
-                "without": [
-                  2,
-                  22.0,
-                  5.0,
-                  2.0,
-                  1.0,
-                  1.0
-                ]
-              },
-              {
-                "player": "Sidy Cissoko",
-                "pos": "SG",
-                "with": [
-                  13,
-                  23.5,
-                  7.6,
-                  3.6,
-                  2.0,
-                  1.3
-                ],
-                "without": [
-                  2,
-                  31.5,
-                  9.5,
-                  5.0,
-                  2.0,
-                  1.5
-                ]
-              },
-              {
-                "player": "Toumani Camara",
-                "pos": "SF",
-                "with": [
-                  13,
-                  28.8,
-                  12.4,
-                  3.1,
-                  1.3,
-                  2.6
-                ],
-                "without": [
-                  2,
-                  35.0,
-                  14.0,
-                  7.0,
-                  2.5,
-                  3.0
-                ]
-              }
-            ]
           }
         ],
         "home": [
@@ -540,8 +461,8 @@
           {
             "player": "Karl-Anthony Towns",
             "pos": "C",
-            "status": "Day-To-Day",
-            "out": false,
+            "status": "Out",
+            "out": true,
             "lastGame": true,
             "missed": 0,
             "avg": [
@@ -603,14 +524,14 @@
         "Knicks: Jordan Clarkson out; OG Anunoby, Karl-Anthony Towns day-to-day"
       ],
       "statsLine": {
-        "homeSpread": -2.5,
-        "awaySpread": 2.5,
-        "homeSpreadOdds": -119,
-        "awaySpreadOdds": -101,
-        "homeMoneyline": -156,
-        "awayMoneyline": 131
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -105,
+        "awayMoneyline": -112
       },
-      "statsSpread": -2.5,
+      "statsSpread": 1.5,
       "storylines": [
         {
           "weight": 1,
@@ -625,24 +546,10 @@
           "leans": "New York Knicks",
           "leanPct": 52.9,
           "against": false
-        },
-        {
-          "weight": 1,
-          "live": "6-3",
-          "key": "ghost_town",
-          "name": "Ghost town",
-          "team": "Portland Trail Blazers",
-          "says": "fade",
-          "fact": "Portland Trail Blazers' top scorer Deni Avdija (24.2 a game) missed its last two games; Portland Trail Blazers is a +2.5 underdog.",
-          "record": "826-743",
-          "pct": 52.6,
-          "leans": "New York Knicks",
-          "leanPct": 52.6,
-          "against": false
         }
       ],
       "time": "7:30 PM ET",
-      "totalsLine": 215.5
+      "totalsLine": 213.5
     },
     {
       "altCategoryTally": "0-4",
@@ -709,19 +616,19 @@
         "ml": {
           "home": [
             -201.0,
-            -196.0
+            -191.0
           ],
           "away": [
             168.0,
-            164.0
+            160.0
           ]
         },
         "public": {
           "betsHome": 57,
-          "moneyHome": 54,
+          "moneyHome": 58,
           "rlm": null
         },
-        "checked": "2026-11-21T21:55:04+00:00"
+        "checked": "2026-11-21T23:21:34+00:00"
       },
       "netRtgGap": 13.79,
       "pick": null,
@@ -806,10 +713,10 @@
       "statsLine": {
         "homeSpread": -4.5,
         "awaySpread": 4.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": -196,
-        "awayMoneyline": 164
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -191,
+        "awayMoneyline": 160
       },
       "statsSpread": -4.5,
       "time": "8:00 PM ET",
@@ -871,7 +778,7 @@
       "lineMove": {
         "spread": [
           -5.5,
-          -6.5
+          -5.5
         ],
         "total": [
           227.5,
@@ -880,19 +787,19 @@
         "ml": {
           "home": [
             -191.0,
-            -223.0
+            -222.0
           ],
           "away": [
             160.0,
-            185.0
+            184.0
           ]
         },
         "public": {
-          "betsHome": 44,
-          "moneyHome": 43,
+          "betsHome": 42,
+          "moneyHome": 42,
           "rlm": null
         },
-        "checked": "2026-11-21T21:55:04+00:00"
+        "checked": "2026-11-21T23:21:34+00:00"
       },
       "netRtgGap": 3.44,
       "pick": null,
@@ -902,10 +809,10 @@
       "skipReason": "netrtg-gap",
       "skipped": true,
       "starterOut": {
-        "checked": "2026-11-21T21:55:03+00:00",
+        "checked": "2026-11-21T23:21:34+00:00",
         "line": {
           "open": -5.5,
-          "now": -6.5
+          "now": -5.5
         },
         "away": [
           {
@@ -1054,14 +961,14 @@
         "Timberwolves: Anthony Edwards, Donte DiVincenzo, Jaylen Clark out"
       ],
       "statsLine": {
-        "homeSpread": -6.5,
-        "awaySpread": 6.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -116,
-        "homeMoneyline": -223,
-        "awayMoneyline": 185
+        "homeSpread": -5.5,
+        "awaySpread": 5.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": -222,
+        "awayMoneyline": 184
       },
-      "statsSpread": -6.5,
+      "statsSpread": -5.5,
       "storylines": [
         {
           "weight": 1,
@@ -1084,7 +991,7 @@
           "name": "Ghost town",
           "team": "Memphis Grizzlies",
           "says": "fade",
-          "fact": "Memphis Grizzlies' top scorer Ty Jerome (25.4 a game) missed its last two games; Memphis Grizzlies is a +6.5 underdog.",
+          "fact": "Memphis Grizzlies' top scorer Ty Jerome (25.4 a game) missed its last two games; Memphis Grizzlies is a +5.5 underdog.",
           "record": "826-743",
           "pct": 52.6,
           "leans": "Minnesota Timberwolves",
@@ -1124,7 +1031,7 @@
       "awaySpreadOdds": -105,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 228.5,
+      "gameTotal": 229.5,
       "gameTotalOverOdds": -107,
       "gameTotalUnderOdds": -113,
       "home": "San Antonio Spurs",
@@ -1155,24 +1062,24 @@
         ],
         "total": [
           226.5,
-          228.5
+          229.5
         ],
         "ml": {
           "home": [
             -1440.0,
-            -1740.0
+            -1700.0
           ],
           "away": [
             850.0,
-            950.0
+            940.0
           ]
         },
         "public": {
-          "betsHome": 46,
-          "moneyHome": 51,
+          "betsHome": 45,
+          "moneyHome": 54,
           "rlm": null
         },
-        "checked": "2026-11-21T21:55:04+00:00"
+        "checked": "2026-11-21T23:21:34+00:00"
       },
       "netRtgGap": 79.31,
       "pick": "San Antonio Spurs",
@@ -1439,8 +1346,8 @@
         "awaySpread": 18.5,
         "homeSpreadOdds": -114,
         "awaySpreadOdds": -106,
-        "homeMoneyline": -1740,
-        "awayMoneyline": 950
+        "homeMoneyline": -1700,
+        "awayMoneyline": 940
       },
       "statsRules": [
         {
@@ -1488,7 +1395,7 @@
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 228.5
+      "totalsLine": 229.5
     },
     {
       "altCategoryTally": "1-2",
@@ -1519,9 +1426,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 216.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 215.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Sacramento Kings",
       "homeMoneyline": 525,
       "homeNetRtg": -14,
@@ -1548,24 +1455,24 @@
         ],
         "total": [
           217.5,
-          216.5
+          215.5
         ],
         "ml": {
           "home": [
             359.0,
-            443.0
+            446.0
           ],
           "away": [
             -465.0,
-            -597.0
+            -600.0
           ]
         },
         "public": {
-          "betsHome": 64,
-          "moneyHome": 87,
+          "betsHome": 48,
+          "moneyHome": 73,
           "rlm": null
         },
-        "checked": "2026-11-21T21:55:04+00:00"
+        "checked": "2026-11-21T23:21:34+00:00"
       },
       "netRtgGap": 96.55,
       "pick": "Boston Celtics",
@@ -1807,10 +1714,10 @@
       "statsLine": {
         "homeSpread": 12.5,
         "awaySpread": -12.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -103,
-        "homeMoneyline": 443,
-        "awayMoneyline": -597
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": 446,
+        "awayMoneyline": -600
       },
       "statsSpread": 12.5,
       "storylines": [
@@ -1844,7 +1751,7 @@
         }
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 216.5
+      "totalsLine": 215.5
     }
   ]
 }
