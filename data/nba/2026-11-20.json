@@ -2068,19 +2068,19 @@
         "ml": {
           "home": [
             151.0,
-            154.0
+            160.0
           ],
           "away": [
             -180.0,
-            -184.0
+            -192.0
           ]
         },
         "public": {
-          "betsHome": 30,
-          "moneyHome": 27,
+          "betsHome": 28,
+          "moneyHome": 30,
           "rlm": null
         },
-        "checked": "2026-11-20T21:50:11+00:00"
+        "checked": "2026-11-21T01:45:18+00:00"
       },
       "netRtgGap": 17.24,
       "pick": null,
@@ -2266,10 +2266,10 @@
       "statsLine": {
         "homeSpread": 4.5,
         "awaySpread": -4.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 154,
-        "awayMoneyline": -184
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 160,
+        "awayMoneyline": -192
       },
       "statsRules": [
         {
@@ -2353,9 +2353,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 226.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -114,
+      "gameTotalUnderOdds": -106,
       "home": "Denver Nuggets",
       "homeMoneyline": -120,
       "homeNetRtg": 0.72,
@@ -2365,9 +2365,7 @@
       "homeSpreadOdds": -110,
       "injuries": {
         "away": {
-          "2991235": "day-to-day",
-          "3102529": "out",
-          "4871144": "day-to-day"
+          "3102529": "out"
         },
         "home": {
           "4432181": "out"
@@ -2376,28 +2374,28 @@
       "lineMove": {
         "spread": [
           -3.5,
-          -1.5
+          1.5
         ],
         "total": [
           227.5,
-          226.5
+          227.5
         ],
         "ml": {
           "home": [
             -148.0,
-            -125.0
+            -102.0
           ],
           "away": [
             124.0,
-            105.0
+            -116.0
           ]
         },
         "public": {
-          "betsHome": 67,
-          "moneyHome": 72,
+          "betsHome": 37,
+          "moneyHome": 44,
           "rlm": null
         },
-        "checked": "2026-11-20T21:50:11+00:00"
+        "checked": "2026-11-21T01:45:18+00:00"
       },
       "netRtgGap": 37.93,
       "pick": "Houston Rockets",
@@ -2406,94 +2404,6 @@
       "pickSpreadReturn": null,
       "skipReason": null,
       "skipped": false,
-      "starterOut": {
-        "away": [
-          {
-            "avg": [
-              14,
-              32.8,
-              21.6,
-              9.1,
-              6.8,
-              1.0
-            ],
-            "gainers": [
-              {
-                "player": "Oscar Tshiebwe",
-                "pos": "C",
-                "with": [
-                  9,
-                  5.8,
-                  2.7,
-                  2.9,
-                  0.8,
-                  0.0
-                ],
-                "without": [
-                  2,
-                  12.5,
-                  3.5,
-                  5.0,
-                  1.0,
-                  0.0
-                ]
-              },
-              {
-                "player": "Kevin Durant",
-                "pos": "PF",
-                "with": [
-                  14,
-                  33.4,
-                  21.1,
-                  5.3,
-                  3.9,
-                  1.6
-                ],
-                "without": [
-                  2,
-                  34.0,
-                  23.0,
-                  5.0,
-                  2.5,
-                  1.5
-                ]
-              },
-              {
-                "player": "Jabari Smith Jr.",
-                "pos": "PF",
-                "with": [
-                  14,
-                  33.4,
-                  14.9,
-                  6.9,
-                  2.1,
-                  2.3
-                ],
-                "without": [
-                  2,
-                  32.5,
-                  18.0,
-                  2.5,
-                  2.0,
-                  3.0
-                ]
-              }
-            ],
-            "lastGame": true,
-            "missed": 0,
-            "out": false,
-            "player": "Alperen Sengun",
-            "pos": "C",
-            "status": "Day-To-Day"
-          }
-        ],
-        "checked": "2026-11-20T06:30:49+00:00",
-        "home": [],
-        "line": {
-          "now": -1.5,
-          "open": -3.5
-        }
-      },
       "statLines": [
         "PD/g +8.69 vs +0.92 (2026-27 season)",
         "NetRtg +8.95 vs +0.72 (86.2nd vs 48.3rd pct of 30 teams \u2014 gap 37.93)",
@@ -2501,32 +2411,46 @@
         "DEN: Strawther out (knee); 3-1 last 4, beat Boston on the road Nov 18"
       ],
       "statsLine": {
-        "homeSpread": -1.5,
-        "awaySpread": 1.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -125,
-        "awayMoneyline": 105
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -102,
+        "awayMoneyline": -116
       },
-      "statsSpread": -1.5,
+      "statsSpread": 1.5,
       "storylines": [
         {
-          "against": false,
-          "fact": "Houston Rockets' 4th game in 6 nights, on the road; Denver Nuggets has had 1 day off.",
-          "key": "schedule_loss",
-          "leanPct": 53.0,
-          "leans": "Denver Nuggets",
+          "weight": 1,
           "live": "7-12",
+          "key": "schedule_loss",
           "name": "The schedule loss",
-          "pct": 53.0,
-          "record": "869-772",
-          "says": "fade",
           "team": "Houston Rockets",
-          "weight": 1
+          "says": "fade",
+          "fact": "Houston Rockets' 4th game in 6 nights, on the road; Denver Nuggets has had 1 day off.",
+          "record": "869-772",
+          "pct": 53.0,
+          "leans": "Denver Nuggets",
+          "leanPct": 53.0,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "5-6",
+          "key": "friday",
+          "name": "Friday night lights",
+          "team": "Houston Rockets",
+          "says": "fade",
+          "fact": "Houston Rockets is a -1.5 road favorite on a Friday.",
+          "record": "198-238",
+          "pct": 45.4,
+          "leans": "Houston Rockets",
+          "leanPct": 54.6,
+          "against": true
         }
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 226.5
+      "totalsLine": 227.5
     },
     {
       "altCategoryTally": "0-4 (away-home)",
@@ -2597,11 +2521,11 @@
           ]
         },
         "public": {
-          "betsHome": 23,
-          "moneyHome": 29,
+          "betsHome": 59,
+          "moneyHome": 51,
           "rlm": null
         },
-        "checked": "2026-11-20T21:50:11+00:00"
+        "checked": "2026-11-21T01:45:18+00:00"
       },
       "netRtgGap": 75.86,
       "pick": "Los Angeles Lakers",

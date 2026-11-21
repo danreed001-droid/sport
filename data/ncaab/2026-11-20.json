@@ -489,9 +489,9 @@
       "awaySpreadOdds": -112,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 165.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 163.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Illinois Fighting Illini",
       "homeMoneyline": -6667,
       "homePDpg": 22.6,
@@ -502,14 +502,14 @@
       "lineMove": {
         "spread": [
           -51.5,
-          -47.5
+          -45.5
         ],
         "total": [
           163.5,
-          165.5
+          163.5
         ],
         "ml": {},
-        "checked": "2026-11-20T21:50:12+00:00"
+        "checked": "2026-11-21T01:45:18+00:00"
       },
       "offGap": 93.14,
       "pick": "Illinois Fighting Illini",
