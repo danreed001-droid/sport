@@ -2,7 +2,7 @@
   "date": "2026-11-20",
   "weekday": "Friday",
   "sport": "cfb",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-20T08:08:37-05:00",
   "auditChanges": [
     "CFB Oregon @ Michigan State: Second Opinion Oregon strong -> lean (Rest was wrongly credited to Oregon off a bye; Oregon beat Michigan 31-7 on Nov. 14, so tally 6-1 -> 5-1)."
@@ -19,7 +19,7 @@
       "altCategoryTally": "5-1",
       "altConfidence": "lean",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": true,
       "altPick": "Oregon",
       "altReasons": [
         "Scoring margin: Oregon +5.3 PD/g vs Michigan State -4.5 PD/g favors Oregon",
@@ -30,7 +30,7 @@
         "Matchup splits: Oregon pass rusher Matayo Uiagalelei (9.5 sacks, among the Big Ten's best) faces a true freshman QB behind Michigan State's 132nd-of-138 ranked offense favors Oregon"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": 87.72,
       "altTrendCheck": "Oregon (W 31-7 vs Michigan, Nov. 14, CBS): 467 total net yds, 341 pass yds on 28 att (12.2 YPA), 36 rush att, overall 7.3 YPP, won by 24 -- no pattern fires (A needs a loss; B needs YPA >=7.5 and YPP <=5.15, YPP 7.3; C needs rush/pass ratio <=1.0, got 1.29; D needs 41+ pass att, got 28). Michigan State (L 14-21 vs Washington, Nov. 14): 342 total yards, 242 pass yds on an estimated 35 att (6.9 YPA), an estimated 36 rush att, lost by 7 -- no pattern fires. Net: no trend-check points for either team.",
       "altTrendCorrect": null,
       "altTrendCover": null,
@@ -44,7 +44,7 @@
       "awayQB": "Dylan Raiola",
       "awayQBEff": 144.3,
       "awayRank": 14,
-      "awayScore": null,
+      "awayScore": 45.0,
       "awaySpread": -17.5,
       "awaySpreadOdds": -114,
       "awayYPP": 5.8,
@@ -59,7 +59,7 @@
       "homeQB": "Kayd Coffman",
       "homeQBEff": 88.3,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 7.0,
       "homeSpread": 17.5,
       "homeSpreadOdds": -106,
       "homeYPP": 4.4,
@@ -86,9 +86,9 @@
       },
       "offGap": 69.9,
       "pick": "Oregon",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 87.72,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -111,10 +111,12 @@
           "says": "back",
           "team": "Michigan State",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "8:00 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-21T11:07:53.317850+00:00"
 }

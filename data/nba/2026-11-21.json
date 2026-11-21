@@ -17,14 +17,14 @@
       "awaySpreadOdds": -103.0,
       "homeMoneyline": -650.0,
       "awayMoneyline": 474.0,
-      "statsSpread": -11.5,
+      "statsSpread": -12.5,
       "statsLine": {
-        "homeSpread": -11.5,
-        "awaySpread": 11.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -103,
-        "homeMoneyline": -650,
-        "awayMoneyline": 474
+        "homeSpread": -12.5,
+        "awaySpread": 12.5,
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -117,
+        "homeMoneyline": -620,
+        "awayMoneyline": 458
       },
       "statsFavors": "Philadelphia 76ers",
       "statsRules": [
@@ -66,10 +66,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-21T06:22:09+00:00",
+        "checked": "2026-11-21T11:08:16+00:00",
         "line": {
           "open": -11.5,
-          "now": -11.5
+          "now": -12.5
         },
         "away": [],
         "home": [
@@ -234,7 +234,7 @@
       "lineMove": {
         "spread": [
           -11.5,
-          -11.5
+          -12.5
         ],
         "total": [
           228.5,
@@ -243,20 +243,23 @@
         "ml": {
           "home": [
             -446.0,
-            -650.0
+            -620.0
           ],
           "away": [
             346.0,
-            474.0
+            458.0
           ]
         },
         "public": {
-          "betsHome": 66,
-          "moneyHome": 70,
+          "betsHome": 49,
+          "moneyHome": 47,
           "rlm": null
         },
-        "checked": "2026-11-21T06:22:09+00:00"
-      }
+        "checked": "2026-11-21T11:08:16+00:00"
+      },
+      "gameTotal": 229.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910024",
@@ -566,12 +569,15 @@
           ]
         },
         "public": {
-          "betsHome": 47,
-          "moneyHome": 42,
+          "betsHome": 55,
+          "moneyHome": 53,
           "rlm": null
         },
-        "checked": "2026-11-21T06:22:10+00:00"
-      }
+        "checked": "2026-11-21T11:08:16+00:00"
+      },
+      "gameTotal": 217.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401910025",
@@ -593,7 +599,7 @@
         "homeMoneyline": -205,
         "awayMoneyline": 171
       },
-      "totalsLine": 229.5,
+      "totalsLine": 228.5,
       "injuries": {
         "away": {
           "3913176": "out",
@@ -682,7 +688,7 @@
         ],
         "total": [
           229.5,
-          229.5
+          228.5
         ],
         "ml": {
           "home": [
@@ -695,12 +701,15 @@
           ]
         },
         "public": {
-          "betsHome": 68,
-          "moneyHome": 75,
+          "betsHome": 70,
+          "moneyHome": 71,
           "rlm": null
         },
-        "checked": "2026-11-21T06:22:10+00:00"
-      }
+        "checked": "2026-11-21T11:08:16+00:00"
+      },
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401910026",
@@ -717,12 +726,12 @@
       "statsLine": {
         "homeSpread": -5.5,
         "awaySpread": 5.5,
-        "homeSpreadOdds": -118,
-        "awaySpreadOdds": -102,
-        "homeMoneyline": -218,
-        "awayMoneyline": 181
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -223,
+        "awayMoneyline": 185
       },
-      "totalsLine": 227.5,
+      "totalsLine": 226.5,
       "storylines": [
         {
           "weight": 1,
@@ -755,10 +764,10 @@
       ],
       "injuries": {
         "away": {
+          "2991070": "out",
           "4781746": "out",
           "5041935": "out",
           "4065733": "out",
-          "2991070": "day-to-day",
           "5105550": "out"
         },
         "home": {
@@ -768,7 +777,7 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-21T06:22:09+00:00",
+        "checked": "2026-11-21T11:08:16+00:00",
         "line": {
           "open": -5.5,
           "now": -5.5
@@ -817,15 +826,15 @@
                 "without": null
               },
               {
-                "player": "Jerami Grant",
-                "pos": "SF",
+                "player": "Scotty Pippen Jr.",
+                "pos": "SG",
                 "with": [
-                  15,
-                  22.1,
-                  10.6,
-                  1.7,
-                  1.8,
-                  1.7
+                  5,
+                  16.2,
+                  6.4,
+                  2.2,
+                  2.2,
+                  0.4
                 ],
                 "without": null
               }
@@ -991,25 +1000,28 @@
         ],
         "total": [
           227.5,
-          227.5
+          226.5
         ],
         "ml": {
           "home": [
             -191.0,
-            -218.0
+            -223.0
           ],
           "away": [
             160.0,
-            181.0
+            185.0
           ]
         },
         "public": {
-          "betsHome": 35,
-          "moneyHome": 31,
+          "betsHome": 43,
+          "moneyHome": 36,
           "rlm": null
         },
-        "checked": "2026-11-21T06:22:10+00:00"
-      }
+        "checked": "2026-11-21T11:08:17+00:00"
+      },
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910027",
@@ -1022,14 +1034,14 @@
       "awaySpreadOdds": -105.0,
       "homeMoneyline": -1560.0,
       "awayMoneyline": 890.0,
-      "statsSpread": -16.5,
+      "statsSpread": -17.5,
       "statsLine": {
-        "homeSpread": -16.5,
-        "awaySpread": 16.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -1560,
-        "awayMoneyline": 890
+        "homeSpread": -17.5,
+        "awaySpread": 17.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -1460,
+        "awayMoneyline": 850
       },
       "totalsLine": 227.5,
       "storylines": [
@@ -1040,7 +1052,7 @@
           "name": "The emperor's new clothes",
           "team": "San Antonio Spurs",
           "says": "fade",
-          "fact": "San Antonio Spurs is a -16.5 favorite but has covered 6 of 16 this season.",
+          "fact": "San Antonio Spurs is a -17.5 favorite but has covered 6 of 16 this season.",
           "record": "183-154",
           "pct": 54.3,
           "leans": "New Orleans Pelicans",
@@ -1062,10 +1074,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-21T06:22:09+00:00",
+        "checked": "2026-11-21T11:08:16+00:00",
         "line": {
           "open": -16.5,
-          "now": -16.5
+          "now": -17.5
         },
         "away": [
           {
@@ -1074,7 +1086,7 @@
             "status": "Out",
             "out": true,
             "lastGame": false,
-            "missed": 4,
+            "missed": 5,
             "avg": [
               9,
               31.4,
@@ -1096,32 +1108,12 @@
                   1.0
                 ],
                 "without": [
-                  4,
-                  15.8,
-                  7.5,
+                  5,
+                  13.4,
+                  6.6,
                   1.8,
                   0.2,
                   1.2
-                ]
-              },
-              {
-                "player": "Jordan Poole",
-                "pos": "PG",
-                "with": [
-                  6,
-                  19.8,
-                  7.5,
-                  1.8,
-                  2.5,
-                  1.0
-                ],
-                "without": [
-                  4,
-                  26.5,
-                  15.0,
-                  1.8,
-                  5.0,
-                  1.5
                 ]
               },
               {
@@ -1136,12 +1128,32 @@
                   1.1
                 ],
                 "without": [
-                  7,
-                  32.1,
-                  17.1,
-                  5.9,
-                  7.9,
-                  1.1
+                  8,
+                  32.9,
+                  17.8,
+                  6.0,
+                  7.5,
+                  1.4
+                ]
+              },
+              {
+                "player": "Jordan Poole",
+                "pos": "PG",
+                "with": [
+                  6,
+                  19.8,
+                  7.5,
+                  1.8,
+                  2.5,
+                  1.0
+                ],
+                "without": [
+                  5,
+                  23.8,
+                  13.2,
+                  1.4,
+                  4.2,
+                  1.6
                 ]
               }
             ]
@@ -1231,7 +1243,7 @@
       "lineMove": {
         "spread": [
           -16.5,
-          -16.5
+          -17.5
         ],
         "total": [
           226.5,
@@ -1240,20 +1252,33 @@
         "ml": {
           "home": [
             -1440.0,
-            -1560.0
+            -1460.0
           ],
           "away": [
             850.0,
-            890.0
+            850.0
           ]
         },
         "public": {
-          "betsHome": 39,
-          "moneyHome": 36,
-          "rlm": null
+          "betsHome": 26,
+          "moneyHome": 27,
+          "rlm": "San Antonio Spurs"
         },
-        "checked": "2026-11-21T06:22:10+00:00"
-      }
+        "checked": "2026-11-21T11:08:17+00:00"
+      },
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "statsFavors": "San Antonio Spurs",
+      "statsRules": [
+        {
+          "rule": 50,
+          "name": "Back the favorite when 60%+ of spread bets are on a 7+ point underdog but the line moved 1-4.5 pts toward the favorite (on trial)",
+          "backtest": "61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)",
+          "detail": "Fading New Orleans Pelicans: 74% of spread bets are on New Orleans Pelicans at +17.5, but the line has moved from +16.5 toward San Antonio Spurs since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)."
+        }
+      ],
+      "statsCheck": "Rule 50: Fading New Orleans Pelicans: 74% of spread bets are on New Orleans Pelicans at +17.5, but the line has moved from +16.5 toward San Antonio Spurs since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)."
     },
     {
       "espnId": "401910028",
@@ -1270,10 +1295,10 @@
       "statsLine": {
         "homeSpread": 12.5,
         "awaySpread": -12.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 493,
-        "awayMoneyline": -680
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 530,
+        "awayMoneyline": -750
       },
       "totalsLine": 217.5,
       "storylines": [
@@ -1304,7 +1329,7 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-21T06:22:09+00:00",
+        "checked": "2026-11-21T11:08:16+00:00",
         "line": {
           "open": 12.5,
           "now": 12.5
@@ -1452,8 +1477,8 @@
             "pos": "SF",
             "status": "Out",
             "out": true,
-            "lastGame": true,
-            "missed": 0,
+            "lastGame": false,
+            "missed": 1,
             "avg": [
               12,
               24.8,
@@ -1495,12 +1520,12 @@
                   2.0
                 ],
                 "without": [
-                  1,
-                  42.0,
-                  24.0,
-                  5.0,
+                  2,
+                  39.5,
+                  27.0,
+                  5.5,
                   2.0,
-                  2.0
+                  3.5
                 ]
               },
               {
@@ -1515,11 +1540,11 @@
                   0.4
                 ],
                 "without": [
-                  2,
-                  30.5,
-                  11.0,
-                  4.0,
-                  2.0,
+                  3,
+                  33.7,
+                  11.7,
+                  5.0,
+                  2.7,
                   2.0
                 ]
               }
@@ -1539,15 +1564,23 @@
         "ml": {
           "home": [
             359.0,
-            493.0
+            530.0
           ],
           "away": [
             -465.0,
-            -680.0
+            -750.0
           ]
         },
-        "checked": "2026-11-21T06:22:10+00:00"
-      }
+        "public": {
+          "betsHome": 50,
+          "moneyHome": 43,
+          "rlm": null
+        },
+        "checked": "2026-11-21T11:08:17+00:00"
+      },
+      "gameTotal": 217.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-21T06:22:05+00:00",
+ "fetchedAt": "2026-11-21T11:07:44+00:00",
  "games": [
   {
    "away": "Milwaukee Bucks",
@@ -11,18 +11,18 @@
    "spread": {
     "home": -12.5,
     "open": -12.5,
-    "tix_home": 66,
-    "money_home": 70
+    "tix_home": 49,
+    "money_home": 47
    },
    "total": {
     "now": 229.5,
     "open": 229.5,
-    "tix_over": 69,
-    "money_over": 70
+    "tix_over": 61,
+    "money_over": 66
    },
    "moneyline": {
-    "home": -650,
-    "away": 475
+    "home": -625,
+    "away": 458
    },
    "rlmFavorite": null
   },
@@ -34,14 +34,14 @@
    "spread": {
     "home": -5.5,
     "open": -5.5,
-    "tix_home": 47,
-    "money_home": 42
+    "tix_home": 55,
+    "money_home": 53
    },
    "total": {
     "now": 217.5,
     "open": 218.5,
-    "tix_over": 81,
-    "money_over": 85
+    "tix_over": 78,
+    "money_over": 81
    },
    "moneyline": {
     "home": -210,
@@ -57,14 +57,14 @@
    "spread": {
     "home": -5.5,
     "open": -5.5,
-    "tix_home": 68,
-    "money_home": 75
+    "tix_home": 70,
+    "money_home": 71
    },
    "total": {
-    "now": 229.5,
+    "now": 228.5,
     "open": 230.5,
-    "tix_over": 68,
-    "money_over": 67
+    "tix_over": 65,
+    "money_over": 66
    },
    "moneyline": {
     "home": -210,
@@ -80,14 +80,14 @@
    "spread": {
     "home": -5.5,
     "open": -5.5,
-    "tix_home": 35,
-    "money_home": 31
+    "tix_home": 43,
+    "money_home": 36
    },
    "total": {
     "now": 227.5,
     "open": 228.5,
-    "tix_over": 79,
-    "money_over": 78
+    "tix_over": 76,
+    "money_over": 76
    },
    "moneyline": {
     "home": -220,
@@ -101,22 +101,22 @@
    "start": "2026-11-22T01:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -16.5,
+    "home": -17.5,
     "open": -16.5,
-    "tix_home": 39,
-    "money_home": 36
+    "tix_home": 26,
+    "money_home": 27
    },
    "total": {
     "now": 227.5,
     "open": 225.5,
-    "tix_over": 74,
-    "money_over": 78
+    "tix_over": 72,
+    "money_over": 74
    },
    "moneyline": {
-    "home": -1600,
-    "away": 875
+    "home": -1500,
+    "away": 850
    },
-   "rlmFavorite": null
+   "rlmFavorite": "San Antonio Spurs"
   },
   {
    "away": "Boston Celtics",
@@ -124,20 +124,20 @@
    "start": "2026-11-22T03:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 13.5,
+    "home": 13,
     "open": 13.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 50,
+    "money_home": 43
    },
    "total": {
     "now": 217.5,
     "open": 216.5,
-    "tix_over": 86,
-    "money_over": 82
+    "tix_over": 77,
+    "money_over": 78
    },
    "moneyline": {
-    "home": 500,
-    "away": -700
+    "home": 525,
+    "away": -750
    },
    "rlmFavorite": null
   }

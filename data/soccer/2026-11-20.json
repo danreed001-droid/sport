@@ -2,7 +2,7 @@
   "date": "2026-11-20",
   "weekday": "Friday",
   "sport": "soccer",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-20T13:01:41Z",
   "games": [
     {
@@ -25,7 +25,7 @@
       "awayGK": "Marvin Schw\u00e4be",
       "awayKeeperSavePct": 70.7,
       "awayMoneyline": 2000,
-      "awayScore": null,
+      "awayScore": 1.0,
       "awayStriker": "Sa\u00efd El Mala",
       "awayXGpg": -0.02,
       "competition": "Bundesliga",
@@ -38,7 +38,7 @@
       "homeGK": "Jonas Urbig",
       "homeKeeperSavePct": 64.7,
       "homeMoneyline": -1429,
-      "homeScore": null,
+      "homeScore": 1.0,
       "homeStriker": "Harry Kane",
       "homeXGpg": 2.59,
       "pick": null,
@@ -71,7 +71,8 @@
           "leans": "Bayern Munich",
           "leanPct": 75.2,
           "against": true,
-          "unit": "to win"
+          "unit": "to win",
+          "result": "hit"
         }
       ],
       "lineMove": {
@@ -119,12 +120,12 @@
       "awayGK": "\u00c1ngel Fortu\u00f1o",
       "awayKeeperSavePct": null,
       "awayMoneyline": 550,
-      "awayScore": null,
+      "awayScore": 1.0,
       "awayStriker": "Roberto Fern\u00e1ndez",
       "awayXGpg": -0.3,
       "competition": "La Liga",
       "confidence": "toss-up",
-      "correct": null,
+      "correct": false,
       "drawMoneyline": 333,
       "home": "Athletic Club",
       "homeDrawRate": 0.36,
@@ -132,11 +133,11 @@
       "homeGK": "Unai Sim\u00f3n",
       "homeKeeperSavePct": 75.6,
       "homeMoneyline": -200,
-      "homeScore": null,
+      "homeScore": 0.0,
       "homeStriker": "I\u00f1aki Williams",
       "homeXGpg": 0.5,
       "pick": "Athletic Club",
-      "pickReturn": null,
+      "pickReturn": -100.0,
       "result": null,
       "skipped": false,
       "statLines": [
@@ -164,7 +165,8 @@
           "leans": "Athletic Club",
           "leanPct": 75.2,
           "against": true,
-          "unit": "to win"
+          "unit": "to win",
+          "result": "hit"
         }
       ],
       "lineMove": {
@@ -196,7 +198,7 @@
     {
       "altCategoryTally": "Home 5 \u2013 Draw 0 \u2013 Away 0",
       "altConfidence": "strong",
-      "altCorrect": null,
+      "altCorrect": true,
       "altPick": "Troyes",
       "altReasons": [
         "Scoring margin: Home \u2014 Troyes's blended GD/g (-0.10) is well ahead of Le Havre's (-0.83); no lineup-change discount triggered (both sides' confirmed keepers/strikers are their regular season options).",
@@ -205,7 +207,7 @@
         "Market: Home \u2014 Troyes +120 favorite vs Le Havre +225, draw +240, market leans toward the home side despite both teams' poor overall form.",
         "Matchup splits: neutral \u2014 mixed signal; Le Havre are unbeaten against Troyes in Ligue 1 this century, but Troyes have won 3 of the last 4 meetings between the clubs (in Ligue 2)."
       ],
-      "altReturn": null,
+      "altReturn": 120.0,
       "attackGap": 0.22,
       "away": "Le Havre AC",
       "awayDrawRate": 0.2,
@@ -213,7 +215,7 @@
       "awayGK": "Arnaud Bodart",
       "awayKeeperSavePct": null,
       "awayMoneyline": 225,
-      "awayScore": null,
+      "awayScore": 1.0,
       "awayStriker": "Josh Maja",
       "awayXGpg": -0.1,
       "competition": "Ligue 1",
@@ -226,7 +228,7 @@
       "homeGK": "Hillel Konat\u00e9",
       "homeKeeperSavePct": null,
       "homeMoneyline": 120,
-      "homeScore": null,
+      "homeScore": 3.0,
       "homeStriker": "Renaud Ripart",
       "homeXGpg": -0.32,
       "pick": null,
@@ -269,5 +271,6 @@
         "checked": "2026-11-20T17:18:34+00:00"
       }
     }
-  ]
+  ],
+  "scoredAt": "2026-11-21T11:07:58.644011+00:00"
 }
