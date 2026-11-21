@@ -448,10 +448,10 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .abwrap .m-win{display:none;} html.abwin .abwrap .m-win{display:block;} html.abwin .abwrap .m-ats{display:none;}
 .abwrap .at-head{padding-right:170px;}
 @media (max-width:600px){.abtog{position:static;margin:4px 0 6px;} .abwrap .at-head{padding-right:0;}}
-.cdwrap{position:relative;} .cdtog{position:absolute;right:0;top:0;z-index:1;} .cdtog button{font-size:11.5px;padding:3px 9px;}
+.cdwrap{position:relative;} .cdctl{position:absolute;right:0;top:0;z-index:1;display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end;} .cdctl button{font-size:11.5px;padding:3px 9px;}
 .cdwrap .m-cats{display:none;} html.cdats .cdwrap .m-cats{display:block;} html.cdats .cdwrap .m-cpd{display:none;}
-.cdwrap .at-head{padding-right:170px;}
-@media (max-width:600px){.cdtog{position:static;margin:4px 0 6px;} .cdwrap .at-head{padding-right:0;}}
+.cdwrap .at-head{padding-right:330px;}
+@media (max-width:600px){.cdctl{position:static;margin:4px 0 6px;justify-content:flex-start;} .cdwrap .at-head{padding-right:0;}}
 .cdk{display:block;width:100%;height:auto;}
 .cdk .grid0{stroke:var(--grid);stroke-width:1;} .cdk .zero0{stroke:var(--axis);stroke-width:1.2;stroke-dasharray:4 3;}
 .cdk .yl,.cdk .xl{fill:var(--muted);font-family:'IBM Plex Mono',monospace;font-size:10px;}
@@ -2004,18 +2004,31 @@ footer b{color:var(--ink);}
   // week (football: month) drawn as a hollow candle around its games (green = the
   // week added points, red = it lost them). A switch shows the running cover
   // margin (margin + closing spread) instead. Data: DATA.pdCandles (build_site.py).
+  // Date range for the candles (the user's ask, 2026-11-21): the last 1, 2 or 3
+  // months or the whole season, remembered in localStorage dl-cdrange; the running
+  // total still counts from the season's start.
+  var CD_RANGES = [['m1', '1M', 30], ['m2', '2M', 61], ['m3', '3M', 91], ['all', 'Season', 0]];
+  function cdRange(){ var v = 'all'; try { v = localStorage.getItem('dl-cdrange') || 'all'; } catch(e){} return CD_RANGES.some(function(r){ return r[0] === v; }) ? v : 'all'; }
   function pdCandles(sport, g){
     var C = (DATA.pdCandles || {})[sport];
     if(!C || (!C[g.away] && !C[g.home])) return '';
+    return '<div class="cdwrap" data-sp="'+esc(sport)+'" data-gid="'+esc(g.id)+'">'+cdInner(sport, g)+'</div>';
+  }
+  function cdInner(sport, g){
+    var C = (DATA.pdCandles || {})[sport];
     var soc = sport==='soccer' || sport==='epl';
     // no closing spreads saved (MLB, soccer): point differential only
     var anyLine = [C[g.away], C[g.home]].some(function(T){ return T && (T.r || []).some(function(r){ return r[6] != null; }); });
     if(!anyLine) soc = true;
     var ats = false; if(!soc){ try { ats = localStorage.getItem('dl-cdmode') === 'ats'; } catch(e){} }
     document.documentElement.classList.toggle('cdats', ats);
-    if(soc) return '<div class="cdwrap">'+cdBuild(sport, g, C[g.away], C[g.home], false)+'</div>';
-    return '<div class="cdwrap"><div class="segctl cdtog" role="group" aria-label="Candles show"><button type="button" data-cd="pd" aria-pressed="'+(!ats)+'">'+(sport==='mlb'?'Run':'Point')+' diff</button><button type="button" data-cd="ats" aria-pressed="'+ats+'">'+(sport==='mlb'?'Run line':'ATS')+'</button></div>'
-      + '<div class="m-cpd">'+cdBuild(sport, g, C[g.away], C[g.home], false)+'</div><div class="m-cats">'+cdBuild(sport, g, C[g.away], C[g.home], true)+'</div></div>';
+    var rg = cdRange();
+    var ctl = '<div class="cdctl"><div class="segctl cdrng" role="group" aria-label="Date range">'
+      + CD_RANGES.map(function(r){ return '<button type="button" data-cdr="'+r[0]+'" aria-pressed="'+(r[0]===rg)+'">'+r[1]+'</button>'; }).join('')+'</div>'
+      + (soc ? '' : '<div class="segctl cdtog" role="group" aria-label="Candles show"><button type="button" data-cd="pd" aria-pressed="'+(!ats)+'">'+(sport==='mlb'?'Run':'Point')+' diff</button><button type="button" data-cd="ats" aria-pressed="'+ats+'">'+(sport==='mlb'?'Run line':'ATS')+'</button></div>')
+      + '</div>';
+    if(soc) return ctl + cdBuild(sport, g, C[g.away], C[g.home], false);
+    return ctl + '<div class="m-cpd">'+cdBuild(sport, g, C[g.away], C[g.home], false)+'</div><div class="m-cats">'+cdBuild(sport, g, C[g.away], C[g.home], true)+'</div>';
   }
   function cdBuild(sport, g, A, H, ATS){
     var soc = sport==='soccer' || sport==='epl', fb = sport==='nfl' || sport==='cfb';
@@ -2029,26 +2042,34 @@ footer b{color:var(--ink);}
     // the period a candle belongs to: Monday-Sunday weeks, football by month
     var periodOf = function(d){ if(fb) return d.slice(0,7); var n = dayN(d), wd = (new Date(n*864e5).getUTCDay() + 6) % 7; return dayS(n - wd); };
     var periodSpan = function(k){ if(!fb) return [dayN(k), dayN(k) + 6]; var y = +k.slice(0,4), m = +k.slice(5,7), a = dayN(k+'-01'), b = Math.round(Date.UTC(m===12?y+1:y, m===12?0:m, 1)/864e5) - 1; return [a, b]; };
+    var rDays = (CD_RANGES.filter(function(r){ return r[0] === cdRange(); })[0] || [0,0,0])[2];
+    var cutD = rDays ? dayS(dayN(tonight) - rDays) : '';
     var series = function(T){
       if(!T) return null;
-      var cum = ATS ? T.a0 : T.c0, out = [];
+      var cum = ATS ? T.a0 : T.c0, out = [], start = null, cut = !!(T.c0 || T.a0);
       (T.r || []).forEach(function(r){
         var mg = r[3] - r[4], sp = r[6], has = !ATS || sp != null, dl = has ? mg + (ATS ? sp : 0) : 0;
         var o = cum, c = cum + dl, hi = Math.max(o, c), lo = Math.min(o, c), q = r[5];
         if(has && q && q.length){
           var run = 0; q.forEach(function(x, j){ run += x; var v = o + run + (ATS ? sp * Math.min(j+1, nReg) / nReg : 0); hi = Math.max(hi, v); lo = Math.min(lo, v); });
         }
-        out.push({d: r[0], n: dayN(r[0]), opp: r[1], home: r[2], pf: r[3], pa: r[4], mg: mg, sp: sp, q: q, has: has, o: o, c: c, hi: hi, lo: lo, p: periodOf(r[0])});
+        if(r[0] < cutD) cut = true;
+        if(r[0] >= cutD){
+          if(start == null) start = o;
+          out.push({d: r[0], n: dayN(r[0]), opp: r[1], home: r[2], pf: r[3], pa: r[4], mg: mg, sp: sp, q: q, has: has, o: o, c: c, hi: hi, lo: lo, p: periodOf(r[0])});
+        }
         cum = c;
       });
-      return {rows: out, start: ATS ? T.a0 : T.c0, end: cum};
+      return {rows: out, start: start == null ? cum : start, end: cum, cut: cut};
     };
     var SA = series(A), SH = series(H);
     // one calendar for both teams: from the first game shown to tonight
     var firstN = Math.min.apply(null, [SA, SH].filter(Boolean).map(function(s){ return s.rows.length ? s.rows[0].n : dayN(tonight); }).concat([dayN(tonight)]));
+    // a range starts on its first day (not before the season's first game)
+    if(cutD){ var sf = Math.min.apply(null, [A, H].filter(function(T){ return T && T.r && T.r.length; }).map(function(T){ return dayN(T.r[0][0]); }).concat([dayN(tonight)])); firstN = Math.max(dayN(cutD), sf); }
     var p0 = periodSpan(periodOf(dayS(firstN)))[0], lastN = dayN(tonight);
     var panel = function(S, team, opp, home, color){
-      if(!S || !S.rows.length) return '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> no finished games saved this season</div>';
+      if(!S || !S.rows.length) return '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> no finished games saved '+(cutD ? 'in this range' : 'this season')+'</div>';
       var W = 600, L = PH ? 50 : 40, R = PH ? 62 : 50, Tp = 10, CH = PH ? 230 : 170, XB = PH ? 26 : 16;
       var nd = lastN - p0 + 1, uw = (W - L - R) / nd, xOf = function(n){ return L + uw * (n - p0 + 0.5); };
       var vals = [S.start, S.end]; S.rows.forEach(function(k){ vals.push(k.hi, k.lo); });
@@ -2102,7 +2123,7 @@ footer b{color:var(--ink);}
       var Hh = Tp + CH + XB + 2;
       var ng = S.rows.filter(function(k){ return k.has; }).length;
       var last = S.rows[S.rows.length-1], lastP = per[last.p], wkChg = lastP[lastP.length-1].c - lastP[0].o;
-      var head = '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+(ATS ? 'running cover margin ' : 'running '+unit+' differential ')+fmt(S.end)+' this season'
+      var head = '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+(ATS ? 'running cover margin ' : 'running '+unit+' differential ')+fmt(S.end)+' this season'+(cutD && S.cut ? ', '+fmt(S.end - S.start)+' in this range' : '')
         + (ATS && ng < S.rows.length ? ' ('+(S.rows.length - ng)+' shown game'+(S.rows.length-ng===1?'':'s')+' with no '+RL+', flat)' : '')
         + ' · '+(last.p === periodOf(tonight) ? (fb ? 'this month so far' : 'this week so far') : (fb ? 'last month' : 'last week'))+' '+fmt(wkChg)+'</div>';
       return head + '<svg class="cdk" viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+esc(team)+(ATS ? ' running cover margin' : ' running '+unit+' differential')+' candles">'+out+'</svg>';
@@ -2820,6 +2841,13 @@ footer b{color:var(--ink);}
     if(abt){ var m = abt.getAttribute('data-ab'); try { localStorage.setItem('dl-abmode', m); } catch(err){}
       document.documentElement.classList.toggle('abwin', m === 'win');
       document.querySelectorAll('.abtog button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.getAttribute('data-ab') === m)); }); }
+    var cdr = e.target.closest('.cdrng button');
+    if(cdr){ try { localStorage.setItem('dl-cdrange', cdr.getAttribute('data-cdr')); } catch(err){}
+      document.querySelectorAll('.cdwrap[data-gid]').forEach(function(w){
+        var sp = w.getAttribute('data-sp'), id = w.getAttribute('data-gid');
+        var gg = ((((DATA.slate || {}).sports || {})[sp] || {}).games || []).filter(function(x){ return x.id === id; })[0];
+        if(gg) w.innerHTML = cdInner(sp, gg);
+      }); }
     var cdt = e.target.closest('.cdtog button');
     if(cdt){ var cm = cdt.getAttribute('data-cd'); try { localStorage.setItem('dl-cdmode', cm); } catch(err){}
       document.documentElement.classList.toggle('cdats', cm === 'ats');
