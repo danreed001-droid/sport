@@ -231,7 +231,7 @@
       "lineMove": {
         "spread": [
           3.5,
-          4.5
+          3.5
         ],
         "total": [
           160.5,
@@ -240,14 +240,14 @@
         "ml": {
           "home": [
             140.0,
-            154.0
+            145.0
           ],
           "away": [
             -166.0,
-            -185.0
+            -175.0
           ]
         },
-        "checked": "2026-11-21T18:00:35+00:00"
+        "checked": "2026-11-21T21:55:04+00:00"
       },
       "offGap": 17.86,
       "pick": null,
@@ -263,8 +263,8 @@
       ],
       "time": "7:00 PM ET",
       "gameTotal": 160.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "storylines": [
         {
           "weight": 1,
