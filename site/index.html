@@ -2008,6 +2008,9 @@ footer b{color:var(--ink);}
     var C = (DATA.pdCandles || {})[sport];
     if(!C || (!C[g.away] && !C[g.home])) return '';
     var soc = sport==='soccer' || sport==='epl';
+    // no closing spreads saved (MLB, soccer): point differential only
+    var anyLine = [C[g.away], C[g.home]].some(function(T){ return T && (T.r || []).some(function(r){ return r[6] != null; }); });
+    if(!anyLine) soc = true;
     var ats = false; if(!soc){ try { ats = localStorage.getItem('dl-cdmode') === 'ats'; } catch(e){} }
     document.documentElement.classList.toggle('cdats', ats);
     if(soc) return '<div class="cdwrap">'+cdBuild(sport, g, C[g.away], C[g.home], false)+'</div>';
@@ -2021,7 +2024,8 @@ footer b{color:var(--ink);}
     var dayN = function(d){ return Math.floor(Date.parse(d+'T00:00:00Z')/864e5); };
     var dayS = function(n){ return new Date(n*864e5).toISOString().slice(0,10); };
     var fmt = function(v){ v = Math.round(v*10)/10; return (v>0?'+':v<0?'−':'')+Math.abs(v); };
-    var nReg = sport==='ncaab' ? 2 : 4;
+    var nReg = sport==='ncaab' ? 2 : sport==='mlb' ? 9 : 4;
+    var pName = sport==='mlb' ? 'inning' : qName(sport), pNames = pName==='half' ? 'halves' : pName+'s', pLab = function(j){ return sport==='mlb' ? (j < 9 ? 'Inn '+(j+1) : 'Inn '+(j+1)+' (extra)') : qLabel(sport, j); };
     // the period a candle belongs to: Monday-Sunday weeks, football by month
     var periodOf = function(d){ if(fb) return d.slice(0,7); var n = dayN(d), wd = (new Date(n*864e5).getUTCDay() + 6) % 7; return dayS(n - wd); };
     var periodSpan = function(k){ if(!fb) return [dayN(k), dayN(k) + 6]; var y = +k.slice(0,4), m = +k.slice(5,7), a = dayN(k+'-01'), b = Math.round(Date.UTC(m===12?y+1:y, m===12?0:m, 1)/864e5) - 1; return [a, b]; };
@@ -2087,7 +2091,7 @@ footer b{color:var(--ink);}
         var tip = team+' — '+fmtDay(k.d)+' '+(k.home?'vs ':'@ ')+k.opp+': '+res+' '+Math.max(k.pf,k.pa)+'-'+Math.min(k.pf,k.pa)+' ('+fmt(k.mg)+')'
           + (k.sp != null ? ', '+RL+' '+sgn(k.sp)+(ATS ? ' → '+(v>0?'covered by '+fmt(v):v<0?'missed by '+fmt(-v):'push') : '') : (ATS ? ', no '+RL+' saved (flat)' : ''))
           + ' · running '+fmt(k.o)+' → '+fmt(k.c)
-          + (k.q && k.q.length && k.has ? ' · by '+qName(sport)+': '+k.q.map(function(q, j){ return qLabel(sport, j)+' '+fmt(q); }).join(', ')+' (wick: the high and low through the game)' : '');
+          + (k.q && k.q.length && k.has ? ' · by '+pName+': '+k.q.map(function(q, j){ return pLab(j)+' '+fmt(q); }).join(', ')+' (wick: the high and low through the game)' : '');
         out += '<g><title>'+esc(tip)+'</title><line class="wick '+cl+'" x1="'+x.toFixed(1)+'" x2="'+x.toFixed(1)+'" y1="'+ys(k.hi).toFixed(1)+'" y2="'+ys(k.lo).toFixed(1)+'"></line>'
           + '<rect class="'+cl+'" x="'+(x-bw/2).toFixed(1)+'" y="'+ys(Math.max(k.o, k.c)).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+Math.max(1.5, Math.abs(ys(k.o) - ys(k.c))).toFixed(1)+'"></rect></g>';
       });
@@ -2103,7 +2107,7 @@ footer b{color:var(--ink);}
         + ' · '+(last.p === periodOf(tonight) ? (fb ? 'this month so far' : 'this week so far') : (fb ? 'last month' : 'last week'))+' '+fmt(wkChg)+'</div>';
       return head + '<svg class="cdk" viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+esc(team)+(ATS ? ' running cover margin' : ' running '+unit+' differential')+' candles">'+out+'</svg>';
     };
-    return '<div class="atstrend"><div class="at-head"><b>'+(ATS ? (sport==='mlb' ? 'Run line' : 'ATS')+' candles' : (sport==='mlb' ? 'Run' : soc ? 'Goal' : 'Point')+' differential candles')+'</b><span>the running '+(ATS ? 'cover margin (margin + closing '+RL+')' : unit+' differential')+' this season: each game a candle from the running total before it to after it (green up, red down'+(ATS ? ', gray no '+RL : '')+'), its wick the high and low through the game'+(soc || sport==='mlb' ? '' : '’s '+qName(sport)+'s')+'; each '+(fb ? 'month' : 'week (Mon-Sun)')+' a hollow candle around its games · dashed outline = tonight · hover for the score and '+(soc || sport==='mlb' ? 'the running total' : 'the '+qName(sport)+'s')+'</span></div>'
+    return '<div class="atstrend"><div class="at-head"><b>'+(ATS ? (sport==='mlb' ? 'Run line' : 'ATS')+' candles' : (sport==='mlb' ? 'Run' : soc ? 'Goal' : 'Point')+' differential candles')+'</b><span>the running '+(ATS ? 'cover margin (margin + closing '+RL+')' : unit+' differential')+' this season: each game a candle from the running total before it to after it (green up, red down'+(ATS ? ', gray no '+RL : '')+')'+(soc ? '' : ', its wick the high and low through the game’s '+pNames)+'; each '+(fb ? 'month' : 'week (Mon-Sun)')+' a hollow candle around its games · dashed outline = tonight · hover for the score'+(soc ? '' : ' and the '+pNames)+'</span></div>'
       + panel(SA, g.away, g.home, false, gc[0]) + panel(SH, g.home, g.away, true, gc[1]) + '</div>';
   }
   function trendChart(sport, g, kind){

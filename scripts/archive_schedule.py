@@ -6,7 +6,8 @@ Writes data/raw/schedule/<sport>.json:
   {"fetched": ISO time of the last look ahead,
    "done": [past dates saved for good],
    "dates": {Eastern date: [[away, home, away record, home record, ESPN event id,
-                             away score, home score (finished games, else None)], ...]}}
+                             away score, home score, away and home points per period
+                             (quarters, halves, innings; finished games, else None)], ...]}}
 with ESPN's team names. A record is the team's overall record going into
 that game: for a game not yet played, its record when it was last looked at
 (the look ahead refreshes every few hours, so the night before it's current);
@@ -78,11 +79,19 @@ def _rec(c, other, completed, post):
 
 
 def _events(session, path, query):
-    try:
-        return session.get(f"{BASE}/{path}/scoreboard?{query}&limit=1000", timeout=30).json().get("events", []) or []
-    except Exception as exc:  # noqa: BLE001
-        print(f"{path} {query}: {exc.__class__.__name__}")
-        return None
+    """A scoreboard read at two page sizes and merged: ESPN's college football
+    board returns only 25 games at limit=1000 (52 at limit=300 on 2026-10-17)."""
+    got, ok = {}, False
+    for lim in (1000, 300):
+        try:
+            evs = session.get(f"{BASE}/{path}/scoreboard?{query}&limit={lim}", timeout=30).json().get("events", []) or []
+        except Exception as exc:  # noqa: BLE001
+            print(f"{path} {query} limit={lim}: {exc.__class__.__name__}")
+            continue
+        ok = True
+        for ev in evs:
+            got.setdefault(str(ev.get("id")), ev)
+    return list(got.values()) if ok else None
 
 
 def _rows(evs):
@@ -104,9 +113,15 @@ def _rows(evs):
         post = (ev.get("season") or {}).get("type") == 3
         a, h = t["away"], t["home"]
         score = lambda c: _num(c.get("score")) if done else None  # noqa: E731
+        per = lambda c: [_num(x.get("value")) for x in c.get("linescores") or []] if done else None  # noqa: E731
+        pa, ph = per(a), per(h)
+        if pa and ph and len(pa) == len(ph) + 1:
+            ph = ph + [0.0]          # baseball: the home team didn't bat in the last inning
+        if not pa or not ph or len(pa) != len(ph) or None in pa + ph:
+            pa = ph = None
         by.setdefault(d, {})[str(ev["id"])] = [a["team"]["displayName"], h["team"]["displayName"],
                                                _rec(a, h, done, post), _rec(h, a, done, post), str(ev["id"]),
-                                               score(a), score(h)]
+                                               score(a), score(h), pa, ph]
         fin[d] = fin.get(d, True) and done
     return by, fin
 
@@ -127,8 +142,8 @@ def main():
         path = os.path.join(OUT, f"{sport}.json")
         data = _load(path)
         dates, done = data.setdefault("dates", {}), set(data.get("done") or [])
-        # rows saved before final scores were kept (5 fields) are fetched again once
-        done -= {d for d in done if any(len(r) < 7 for r in dates.get(d) or [])}
+        # rows saved before final scores (5 fields) or period scores (7) were kept are fetched again once
+        done -= {d for d in done if any(len(r) < 9 for r in dates.get(d) or [])}
         try:
             fresh = now - datetime.fromisoformat(data.get("fetched")) < timedelta(hours=LOOKAHEAD_HOURS)
         except (TypeError, ValueError):

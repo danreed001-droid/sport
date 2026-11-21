@@ -408,13 +408,20 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   (`cdBuild`), after the ATS bars on every trend card. Each team's running point
   differential this season (from `H2H_START`) as one candle per game on a calendar
   (open = the running total before it, close = after; the wick is the high and low
-  through its quarters from `data/raw/linescores`, so MLB/soccer have none), each
+  through its quarters, halves or innings, saved in the schedule rows; soccer's
+  scoreboards have no periods, so no wick), each
   Mon-Sun week (NFL/CFB: month) a hollow candle around its games, tonight a dashed
   outline. A "Point diff | ATS" switch (`dl-cdmode`, `html.cdats`) shows the running
   cover margin instead (margin + closing spread from `data/raw/<sport>_lines.csv`;
-  no line = a flat gray candle). Data: `pd_candles` in build_site.py from
-  `data/raw/schedule/<sport>.json`, the last `CANDLE_DAYS` (120) days as rows with
-  the earlier games summed into `c0`/`a0`.
+  no line = a flat gray candle; no switch where no line is saved, MLB and soccer).
+  Data: `pd_candles` in build_site.py from `data/raw/schedule/<sport>.json`, the
+  whole current season (`CANDLE_DAYS` None; a number would keep only that many
+  days as rows, the earlier games summed into `c0`/`a0`). For it,
+  archive_schedule.py saves each finished game's points per period (row[7] away,
+  row[8] home; MLB pads the home team's unplayed 9th with 0) and reads every
+  scoreboard at limit=1000 and 300 and merges them: ESPN's CFB board gave 25
+  games at 1000 (52 at 300), so the CFB schedule had missed most Saturday games
+  until 2026-11-21.
   Home games' bars have a white border (`.hm`, every sport, both views and
   tonight's bar; the user's call), with a thin dark ring on the light theme so
   it shows on a light background; a key in the chart's note.

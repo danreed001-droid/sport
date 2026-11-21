@@ -370,7 +370,7 @@ def next_games(slate_date, slate_sports):
     return out
 
 
-CANDLE_DAYS = 120   # the candle chart shows this many days back; the running sum starts at the season's start
+CANDLE_DAYS = None  # None = the whole current season; else only this many days back are rows (the sum still starts at the season)
 
 
 def pd_candles(slate_date, slate_sports):
@@ -379,9 +379,10 @@ def pd_candles(slate_date, slate_sports):
     "a0": running cover margin before it, "r": [[date, opponent, home (1/0),
     points for, points against, [margin per period] or None, team's closing
     spread or None], ...]}}} -- every finished game this season (from H2H_START)
-    before the slate's date, from data/raw/schedule/<sport>.json, periods from
-    data/raw/linescores, closing spreads from data/raw/<sport>_lines.csv. Rows
-    cover the last CANDLE_DAYS days; c0/a0 carry the earlier games' sums."""
+    before the slate's date, from data/raw/schedule/<sport>.json (periods saved
+    there, else data/raw/linescores), closing spreads from data/raw/<sport>_lines.csv.
+    With CANDLE_DAYS set, rows cover only that many days and c0/a0 carry the
+    earlier games' sums."""
     from datetime import date as _date, timedelta as _td
     out = {}
     for sport in TREND_GAMES:
@@ -390,7 +391,7 @@ def pd_candles(slate_date, slate_sports):
             continue
         start = H2H_START.get(sport, "")
         past = [(d, rows) for d, rows in _sched_rows(sport) if start <= d < slate_date]
-        cut = (_date.fromisoformat(slate_date) - _td(days=CANDLE_DAYS)).isoformat()
+        cut = (_date.fromisoformat(slate_date) - _td(days=CANDLE_DAYS)).isoformat() if CANDLE_DAYS else ""
         full = {}
         for g in today:
             fa, fh = resolve_teams(sport, slate_date, g.get("away"), g.get("home"))
@@ -413,7 +414,10 @@ def pd_candles(slate_date, slate_sports):
                         if sp is not None:
                             a0 += pf - pa + sp
                         continue
-                    q = quarters(sport, d, {"away": r[0], "home": r[1]}, "home" if me else "away", False)
+                    if len(r) > 8 and r[7] and r[8]:
+                        q = [round(y - x) if me else round(x - y) for x, y in zip(r[7], r[8])]
+                    else:
+                        q = quarters(sport, d, {"away": r[0], "home": r[1]}, "home" if me else "away", False)
                     rows.append([d, r[0] if me else r[1], me, pf, pa, q, sp])
             if rows or c0:
                 res[t] = {"c0": round(c0, 1), "a0": round(a0, 1), "r": rows}
