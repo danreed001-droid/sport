@@ -1,11 +1,11 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401879233,2026-11-21,Scheduled,Fulham,0,-0.2,Manchester City,0,0.8,-,-,7:30 AM
-401879238,2026-11-21,Scheduled,Nottingham Forest,0,-0.4,AFC Bournemouth,0,0.2,-,-,10:00 AM
-401878756,2026-11-21,Scheduled,Sunderland,0,-0.9,Aston Villa,0,-0.3,-,-,10:00 AM
-401879236,2026-11-21,Scheduled,Leeds United,0,0.2,Chelsea,0,0.3,-,-,10:00 AM
-401879235,2026-11-21,Scheduled,Crystal Palace,0,-1.4,Coventry City,0,-0.9,-,-,10:00 AM
-401878754,2026-11-21,Scheduled,Ipswich Town,0,-0.5,Tottenham Hotspur,0,-0.1,-,-,10:00 AM
-401879232,2026-11-21,Scheduled,Arsenal,0,1.0,Newcastle United,0,-0.3,-,-,12:30 PM
+401879233,2026-11-21,FT,Fulham,1,-0.18,Manchester City,1,0.73,650,-270,7:30 AM
+401879238,2026-11-21,FT,Nottingham Forest,0,-0.55,AFC Bournemouth,2,0.36,260,115,10:00 AM
+401878756,2026-11-21,FT,Sunderland,0,-0.82,Aston Villa,0,-0.27,400,-145,10:00 AM
+401879236,2026-11-21,FT,Leeds United,4,0.45,Chelsea,1,0.0,280,-105,10:00 AM
+401879235,2026-11-21,FT,Crystal Palace,2,-1.36,Coventry City,3,-0.73,170,155,10:00 AM
+401878754,2026-11-21,FT,Ipswich Town,0,-0.64,Tottenham Hotspur,2,0.09,500,-205,10:00 AM
+401879232,2026-11-21,30',Arsenal,0,1.0,Newcastle United,0,-0.3,-,-,12:30 PM
 401879244,2026-11-08,FT,Brentford,0,0.5,Brighton & Hove Albion,2,1.9,320,-125,9:00 AM
 401879243,2026-11-08,FT,Liverpool,3,0.4,Crystal Palace,1,-1.4,-185,475,9:00 AM
 401878759,2026-11-08,FT,AFC Bournemouth,2,0.2,Ipswich Town,1,-0.5,100,260,9:00 AM
