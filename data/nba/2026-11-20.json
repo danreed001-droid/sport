@@ -2037,8 +2037,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 225.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Utah Jazz",
       "homeMoneyline": 154,
       "homeNetRtg": -7.18,
@@ -2076,11 +2076,11 @@
           ]
         },
         "public": {
-          "betsHome": 28,
-          "moneyHome": 30,
+          "betsHome": 27,
+          "moneyHome": 27,
           "rlm": null
         },
-        "checked": "2026-11-21T01:45:18+00:00"
+        "checked": "2026-11-21T02:02:27+00:00"
       },
       "netRtgGap": 17.24,
       "pick": null,
@@ -2383,19 +2383,19 @@
         "ml": {
           "home": [
             -148.0,
-            -102.0
+            101.0
           ],
           "away": [
             124.0,
-            -116.0
+            -120.0
           ]
         },
         "public": {
-          "betsHome": 37,
-          "moneyHome": 44,
+          "betsHome": 39,
+          "moneyHome": 47,
           "rlm": null
         },
-        "checked": "2026-11-21T01:45:18+00:00"
+        "checked": "2026-11-21T02:02:27+00:00"
       },
       "netRtgGap": 37.93,
       "pick": "Houston Rockets",
@@ -2413,10 +2413,10 @@
       "statsLine": {
         "homeSpread": 1.5,
         "awaySpread": -1.5,
-        "homeSpreadOdds": -114,
-        "awaySpreadOdds": -106,
-        "homeMoneyline": -102,
-        "awayMoneyline": -116
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 101,
+        "awayMoneyline": -120
       },
       "statsSpread": 1.5,
       "storylines": [

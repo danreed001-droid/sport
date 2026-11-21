@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-21T01:44:36+00:00",
+ "fetchedAt": "2026-11-21T02:02:21+00:00",
  "games": [
   {
    "away": "Milwaukee Bucks",
@@ -15,14 +15,14 @@
     "money_home": null
    },
    "total": {
-    "now": 228.5,
+    "now": 229.5,
     "open": 229.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": -700,
-    "away": 500
+    "home": -724,
+    "away": 512
    },
    "rlmFavorite": null
   },
@@ -44,8 +44,8 @@
     "money_over": null
    },
    "moneyline": {
-    "home": -210,
-    "away": 176
+    "home": -220,
+    "away": 180
    },
    "rlmFavorite": null
   },
@@ -67,8 +67,8 @@
     "money_over": null
    },
    "moneyline": {
-    "home": -200,
-    "away": 165
+    "home": -210,
+    "away": 170
    },
    "rlmFavorite": null
   },
@@ -107,14 +107,14 @@
     "money_home": null
    },
    "total": {
-    "now": 226,
+    "now": 226.5,
     "open": 225.5,
     "tix_over": null,
     "money_over": null
    },
    "moneyline": {
-    "home": -1350,
-    "away": 810
+    "home": -1469,
+    "away": 860
    },
    "rlmFavorite": null
   },
