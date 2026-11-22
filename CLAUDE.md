@@ -812,6 +812,14 @@ recomputes the price itself from the payload's `alts` / `totalAlts`, saving
 `alt: true` and the `posted` line with the pick. The user's picks may be
 corrected by hand only when they ask (2026-11-07 Miami was taken at +7.5,
 slate said +7; the entry keeps `posted` and a `correction` note).
+Voided picks (2026-11-21, the user's call, option 2 of 3 offered): picks entered
+by mistake that the user asks to void after kickoff move from `picks` to
+`voided` in `data/mypicks/<date>.json` (the original entry plus `voidedAt`,
+`voidNote`), so no record counts them; `lib/results.py` still lists them, "Void"
+with a "voided*" tag and the note in Corrections. A pick the user meant to make
+but asked for only after kickoff goes in `uncounted` (listed "not counted*",
+never graded). First use: 2026-11-21 CFB, Miami, Arizona, Louisville and Boise
+State voided (two lost, one won, one at halftime), Utah -7.5 uncounted.
 
 Public results page (`site/results.html`, linked from the pick sheet): every one of
 the user's picks, sides and over/unders, graded at the line taken. `lib/results.py`

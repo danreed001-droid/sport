@@ -1,45 +1,6 @@
 {
   "date": "2026-11-21",
   "picks": {
-    "cfb-2026-11-21-arizona-kansas-state-7-00-pm-et": {
-      "sport": "cfb",
-      "away": "Arizona",
-      "home": "Kansas State",
-      "time": "7:00 PM ET",
-      "side": "away",
-      "team": "Arizona",
-      "spread": -7.5,
-      "spreadOdds": -105,
-      "moneyline": -290,
-      "submittedAt": "2026-11-21T16:58:34+00:00",
-      "issue": 35
-    },
-    "cfb-2026-11-21-pittsburgh-louisville-7-30-pm-et": {
-      "sport": "cfb",
-      "away": "Pittsburgh",
-      "home": "Louisville",
-      "time": "7:30 PM ET",
-      "side": "home",
-      "team": "Louisville",
-      "spread": -13.5,
-      "spreadOdds": -108,
-      "moneyline": -471,
-      "submittedAt": "2026-11-21T16:58:34+00:00",
-      "issue": 35
-    },
-    "cfb-2026-11-21-san-diego-state-boise-state-9-30-pm-et": {
-      "sport": "cfb",
-      "away": "San Diego State",
-      "home": "Boise State",
-      "time": "9:30 PM ET",
-      "side": "home",
-      "team": "Boise State",
-      "spread": -16.5,
-      "spreadOdds": -113,
-      "moneyline": -809,
-      "submittedAt": "2026-11-21T16:58:34+00:00",
-      "issue": 35
-    },
     "cfb-2026-11-21-smu-notre-dame-7-30-pm-et": {
       "sport": "cfb",
       "away": "SMU",
@@ -50,19 +11,6 @@
       "spread": -20.5,
       "spreadOdds": -102,
       "moneyline": -1115,
-      "submittedAt": "2026-11-21T16:58:34+00:00",
-      "issue": 35
-    },
-    "cfb-2026-11-21-virginia-tech-miami-7-00-pm-et": {
-      "sport": "cfb",
-      "away": "Virginia Tech",
-      "home": "Miami",
-      "time": "7:00 PM ET",
-      "side": "home",
-      "team": "Miami",
-      "spread": -20.5,
-      "spreadOdds": -110,
-      "moneyline": -1408,
       "submittedAt": "2026-11-21T16:58:34+00:00",
       "issue": 35
     },
@@ -81,5 +29,82 @@
     }
   },
   "scores": {},
-  "totals": {}
+  "totals": {},
+  "voided": {
+    "cfb-2026-11-21-virginia-tech-miami-7-00-pm-et": {
+      "sport": "cfb",
+      "away": "Virginia Tech",
+      "home": "Miami",
+      "time": "7:00 PM ET",
+      "side": "home",
+      "team": "Miami",
+      "spread": -20.5,
+      "spreadOdds": -110,
+      "moneyline": -1408,
+      "submittedAt": "2026-11-21T16:58:34+00:00",
+      "issue": 35,
+      "voidedAt": "2026-11-22T04:29:30+00:00",
+      "voidNote": "Entered by mistake; voided at my request after kickoff (2026-11-21, 11:30 PM ET), so it doesn't count. Originally submitted before the game."
+    },
+    "cfb-2026-11-21-arizona-kansas-state-7-00-pm-et": {
+      "sport": "cfb",
+      "away": "Arizona",
+      "home": "Kansas State",
+      "time": "7:00 PM ET",
+      "side": "away",
+      "team": "Arizona",
+      "spread": -7.5,
+      "spreadOdds": -105,
+      "moneyline": -290,
+      "submittedAt": "2026-11-21T16:58:34+00:00",
+      "issue": 35,
+      "voidedAt": "2026-11-22T04:29:30+00:00",
+      "voidNote": "Entered by mistake; voided at my request after kickoff (2026-11-21, 11:30 PM ET), so it doesn't count. Originally submitted before the game."
+    },
+    "cfb-2026-11-21-pittsburgh-louisville-7-30-pm-et": {
+      "sport": "cfb",
+      "away": "Pittsburgh",
+      "home": "Louisville",
+      "time": "7:30 PM ET",
+      "side": "home",
+      "team": "Louisville",
+      "spread": -13.5,
+      "spreadOdds": -108,
+      "moneyline": -471,
+      "submittedAt": "2026-11-21T16:58:34+00:00",
+      "issue": 35,
+      "voidedAt": "2026-11-22T04:29:30+00:00",
+      "voidNote": "Entered by mistake; voided at my request after kickoff (2026-11-21, 11:30 PM ET), so it doesn't count. Originally submitted before the game."
+    },
+    "cfb-2026-11-21-san-diego-state-boise-state-9-30-pm-et": {
+      "sport": "cfb",
+      "away": "San Diego State",
+      "home": "Boise State",
+      "time": "9:30 PM ET",
+      "side": "home",
+      "team": "Boise State",
+      "spread": -16.5,
+      "spreadOdds": -113,
+      "moneyline": -809,
+      "submittedAt": "2026-11-21T16:58:34+00:00",
+      "issue": 35,
+      "voidedAt": "2026-11-22T04:29:30+00:00",
+      "voidNote": "Entered by mistake; voided at my request after kickoff (2026-11-21, 11:30 PM ET), so it doesn't count. Originally submitted before the game."
+    }
+  },
+  "uncounted": {
+    "cfb-2026-11-21-utah-tcu-9-00-pm-et": {
+      "sport": "cfb",
+      "away": "Utah",
+      "home": "TCU",
+      "time": "9:00 PM ET",
+      "side": "away",
+      "team": "Utah",
+      "spread": -7.5,
+      "spreadOdds": 108,
+      "moneyline": -257,
+      "addedAt": "2026-11-22T04:29:30+00:00",
+      "note": "The pick I meant to make. Added after kickoff (Utah led 17-0 in the 2nd quarter), so it isn't graded or counted."
+    }
+  }
 }

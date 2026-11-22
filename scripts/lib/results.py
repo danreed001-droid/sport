@@ -9,7 +9,8 @@ A row:
   result ("W"|"L"|"P"|None for pending|"NS" no spread saved|"void" game left the slate),
   units (profit / 100), mlResult / mlUnits / mlCounted (sides only),
   alt (an alternate line, price estimated), posted (the posted line it was
-  moved from), note (a hand correction, kept visible),
+  moved from), note (a hand correction, kept visible), voided / uncounted (a pick
+  voided at the user's request, or one meant but added after kickoff: listed, never counted),
   close (the closing line from the pick's side: spread, or the total) and clv
   (points better (+) or worse (-) than the close: the posted line for an
   alternate, since buying points isn't beating the market).
@@ -160,6 +161,17 @@ def build_results(mypicks, all_docs):
                 r = grade_total(g, t["side"], line, t.get("odds"))
                 row["result"], row["units"] = r["result"], round(r["profit"] / 100, 2)
             rows.append(row)
+        # Picks voided at the user's request (entered by mistake) stay listed,
+        # marked void with the reason, and never count; "uncounted" holds a pick
+        # the user meant to make, added after kickoff, listed but never graded.
+        for key, flag in (("voided", "voided"), ("uncounted", "uncounted")):
+            for gid, p in sorted((mp.get(key) or {}).items()):
+                rows.append({"d": date_str, "sport": p.get("sport"), "game": f"{p.get('away')} @ {p.get('home')}", "kind": "side",
+                             "pick": f"{p.get('team')} {_fmt(p.get('spread'))}".strip(), "line": p.get("spread"),
+                             "odds": p.get("spreadOdds"), "ml": p.get("moneyline"), "submitted": p.get("submittedAt") or p.get("addedAt"),
+                             "lead": lead_minutes(date_str, p.get("time"), p.get("submittedAt") or p.get("addedAt")),
+                             "result": "void", "units": None, "mlResult": None, "mlUnits": None, "mlCounted": None,
+                             "alt": False, "posted": None, "note": p.get("voidNote") or p.get("note"), flag: True})
         # Player props (graded by scripts/grade_props.py from the box score).
         for key, p in sorted((mp.get("props") or {}).items()):
             from lib.props import any_stat_def as stat_def

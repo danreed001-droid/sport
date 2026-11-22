@@ -78,7 +78,7 @@ a{color:var(--accent-ink);}
 <div class="wrap">
   <div class="top"><a href="./">&larr; Pick sheet</a><a href="grading.html">My grading</a></div>
   <h1>Pick results</h1>
-  <p class="lede">Every pick I have made on the pick sheet, graded at the line I took, win or lose. Nothing is removed. Each pick is saved to a public git repository with the time it was submitted, so it can be checked against the game's start. Wins and losses use a flat $100 a bet (1 unit).</p>
+  <p class="lede">Every pick I have made on the pick sheet, graded at the line I took, win or lose. Nothing is removed: a pick voided at my request stays listed, marked Void with the reason, and doesn't count. Each pick is saved to a public git repository with the time it was submitted, so it can be checked against the game's start. Wins and losses use a flat $100 a bet (1 unit).</p>
   <div id="app"><p class="sub">Loading&hellip;</p></div>
   <p class="note">Past results don't predict future results. This is a record of my own picks, not betting advice. Bet only what you can afford to lose; 21+ where legal.</p>
 </div>
@@ -168,7 +168,7 @@ a{color:var(--accent-ink);}
           var chip = r.result==='W' ? '<span class="chip w">Won</span>' : r.result==='L' ? '<span class="chip l">Lost</span>' : r.result==='P' ? '<span class="chip p">Push</span>'
             : r.result==='NS' ? '<span class="chip n" title="No spread was saved with this pick">ML only</span>' : r.result==='void' ? '<span class="chip n">Void</span>' : '<span class="chip n">Pending</span>';
           var alt = r.alt ? '<span class="tag" title="Alternate line, price estimated">alt line</span>' : '';
-          var fix = r.note ? '<span class="tag" title="'+esc(r.note)+'">'+(r.kind==='prop' ? 'entered by hand*' : 'corrected*')+'</span>' : '';
+          var fix = r.note ? '<span class="tag" title="'+esc(r.note)+'">'+(r.voided ? 'voided*' : r.uncounted ? 'not counted*' : r.kind==='prop' ? 'entered by hand*' : 'corrected*')+'</span>' : '';
           var why = r.reason ? '<div class="sub" style="font-size:12px;font-style:italic;white-space:normal">'+esc(r.reason)+'</div>' : '';
           var posted = r.posted ? ' <span class="sub" style="font-size:11.5px">(posted '+esc(r.kind==='total' ? (isNum(r.posted.line)?r.posted.line:'') : sgn(r.posted.spread))+')</span>' : '';
           return '<tr><td>'+esc(r.d)+'</td><td>'+esc(SPORT[r.sport]||r.sport)+'</td><td class="gm">'+esc(r.game)+'</td><td><b>'+esc(r.pick)+'</b>'+alt+fix+posted+why+'</td>'
