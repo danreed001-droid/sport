@@ -45,19 +45,6 @@
         "spreadOdds": -112
       }
     },
-    "nfl-2026-11-22-pittsburgh-steelers-philadelphia-eagles-1-00-pm-et": {
-      "sport": "nfl",
-      "away": "Pittsburgh Steelers",
-      "home": "Philadelphia Eagles",
-      "time": "1:00 PM ET",
-      "side": "away",
-      "team": "Pittsburgh Steelers",
-      "spread": -3.5,
-      "spreadOdds": -111,
-      "moneyline": -196,
-      "submittedAt": "2026-11-22T17:26:02+00:00",
-      "issue": 36
-    },
     "soccer-2026-11-22-atletico-madrid-getafe-9-00-pm-cet": {
       "sport": "soccer",
       "away": "Atletico Madrid",
@@ -73,5 +60,22 @@
     }
   },
   "scores": {},
-  "totals": {}
+  "totals": {},
+  "voided": {
+    "nfl-2026-11-22-pittsburgh-steelers-philadelphia-eagles-1-00-pm-et": {
+      "sport": "nfl",
+      "away": "Pittsburgh Steelers",
+      "home": "Philadelphia Eagles",
+      "time": "1:00 PM ET",
+      "side": "away",
+      "team": "Pittsburgh Steelers",
+      "spread": -3.5,
+      "spreadOdds": -111,
+      "moneyline": -196,
+      "submittedAt": "2026-11-22T17:26:02+00:00",
+      "issue": 36,
+      "voidedAt": "2026-11-22T22:50:52+00:00",
+      "voidNote": "Removed at my request: I meant to take this pick off. The Steelers @ Eagles game itself was taken off the slate as created in error, so it was never graded or counted."
+    }
+  }
 }
