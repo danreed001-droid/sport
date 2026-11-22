@@ -1,6 +1,19 @@
 {
   "date": "2026-11-22",
   "picks": {
+    "nba-2026-11-22-orlando-magic-washington-wizards-7-00-pm-et": {
+      "sport": "nba",
+      "away": "Orlando Magic",
+      "home": "Washington Wizards",
+      "time": "7:00 PM ET",
+      "side": "away",
+      "team": "Orlando Magic",
+      "spread": -4.5,
+      "spreadOdds": -104,
+      "moneyline": -184,
+      "submittedAt": "2026-11-22T22:13:30+00:00",
+      "issue": 38
+    },
     "ncaab-2026-11-22-delaware-blue-hens-ucla-bruins-7-00-pm-et": {
       "sport": "ncaab",
       "away": "Delaware Blue Hens",
