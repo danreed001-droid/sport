@@ -5,9 +5,272 @@
   "scored": false,
   "generatedAt": "2026-11-22T16:25:00Z",
   "games": [
-    {"altCategoryTally":"1-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Nebraska +27.6 PD/g vs Butler +17.0 - favors Nebraska","Rest: no back-to-back or notable rest disparity found for either team - neutral","Travel: this is a neutral-site game in Chicago - Indianapolis to Chicago (~180 mi) is a shorter trip than Lincoln to Chicago (~500 mi) - favors Butler","Injuries/Lineup: no specific injury information verified for either roster - neutral","Form: Nebraska has won its last three games by 26, 27 and 34 points; Butler's last result was a 19-point road loss at Boise State - favors Nebraska","Motivation/Spot: this is a showcase neutral-site, non-conference game for both programs - no letdown/lookahead or revenge angle found - neutral","Venue/Crowd: true neutral site (Chicago) - no home-court edge for either team - neutral","Market: spread has held flat near 11.5 since the open, with moneyline drift toward Nebraska consistent with chalk, not reverse line movement - neutral","Matchup splits: no specific verified unit mismatch found - neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Butler Bulldogs","awayMoneyline":550,"awayPDpg":17,"awayRank":null,"awayScore":null,"awaySpread":11.5,"awaySpreadOdds":-105,"confidence":"skip","correct":null,"home":"Nebraska Cornhuskers","homeMoneyline":-800,"homePDpg":27.6,"homeRank":24,"homeScore":null,"homeSpread":-11.5,"homeSpreadOdds":-115,"offGap":19.78,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +17.0 vs +27.6 (2026-27 season; neutral site - Credit Union 1 Arena, Chicago)","AdjOE 111.2 (105th of 365) vs 118.8 (33rd of 365) - off-gap 19.78, below 30 threshold, screened","Nebraska 5-0, won last 3 by 26/27/34 points; Butler 2-1 in regular season, lost 81-100 at Boise State most recently"],"time":"12:00 PM ET"},
-    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Texas +31.2 PD/g vs Southern Indiana +5.1 - favors Texas","Rest: no back-to-back or notable rest disparity found - neutral","Travel: Evansville-area to Austin is a real but not extreme trip, with only a 1-hour time-zone change - neutral","Injuries/Lineup: no specific injury information verified for either roster - neutral","Form: Texas is 5-0 with large wins; Southern Indiana is 2-4 - favors Texas","Motivation/Spot: an early-season non-conference game for Texas, no narrative found - neutral","Venue/Crowd: standard home court for Texas, nothing beyond the ordinary verified - neutral","Market: line moved from -39.5 to -38.5 toward Southern Indiana, but no public bet-share data is available to assess reverse line movement - neutral","Matchup splits: no additional specific verified unit mismatch beyond the talent gap already captured - neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Southern Indiana Screaming Eagles","awayMoneyline":3300,"awayPDpg":5.1,"awayRank":null,"awayScore":null,"awaySpread":38.5,"awaySpreadOdds":-115,"confidence":"solid","correct":null,"gameTotal":150.5,"gameTotalOverOdds":-112,"gameTotalUnderOdds":-108,"home":"Texas Longhorns","homeMoneyline":-10000,"homePDpg":31.2,"homeRank":6,"homeScore":null,"homeSpread":-38.5,"homeSpreadOdds":-105,"lineMove":{"checked":"2026-11-22T15:22:16+00:00","ml":{},"spread":[-39.5,-38.5],"total":[148.5,150.5]},"offGap":92.31,"pick":"Texas Longhorns","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g +5.1 vs +31.2 (2026-27 season)","AdjOE 97.6 (348th of 365) vs 120.9 (12th of 365); AdjDE 112.2 vs 98.6 - off-gap 92.31 passes screen; def-veto check: Texas's defense is better, no veto","Texas 5-0, averaging 93.4 ppg; Southern Indiana 2-4"],"time":"3:00 PM ET"},
-    {"altCategoryTally":"0-4","altConfidence":"lean","altCorrect":null,"altCover":null,"altPick":"UCLA Bruins","altReasons":["Scoring margin: UCLA +34.4 PD/g vs Delaware +16.5 - favors UCLA","Rest: no back-to-back or notable rest disparity found - neutral","Travel: Newark, Delaware to Los Angeles is a genuine cross-country trip with a 3-hour time-zone change - favors UCLA","Injuries/Lineup: no specific injury information verified for either roster - neutral","Form: UCLA is 5-0 with dominant wins; Delaware is 4-2 and needed overtime to beat a weak CSU Northridge team last time out - favors UCLA","Motivation/Spot: an early-season non-conference game for UCLA, no narrative found - neutral","Venue/Crowd: Pauley Pavilion is a genuinely notable home-court environment for UCLA - favors UCLA","Market: spread has held flat at -29.5 since the open, and no public bet-share data is available to assess reverse line movement - neutral","Matchup splits: no additional specific verified unit mismatch beyond the talent gap already captured - neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Delaware Blue Hens","awayMoneyline":3233,"awayPDpg":16.5,"awayRank":null,"awayScore":null,"awaySpread":29.5,"awaySpreadOdds":-108,"confidence":"solid","correct":null,"gameTotal":144.5,"gameTotalOverOdds":-115,"gameTotalUnderOdds":-105,"home":"UCLA Bruins","homeMoneyline":-9900,"homePDpg":34.4,"homeRank":7,"homeScore":null,"homeSpread":-29.5,"homeSpreadOdds":-112,"lineMove":{"checked":"2026-11-22T16:03:49+00:00","ml":{},"spread":[-29.5,-28.5],"total":[146.5,144.5]},"offGap":60.44,"pick":"UCLA Bruins","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g +16.5 vs +34.4 (2026-27 season)","AdjOE 104.2 (233rd of 365) vs 120.5 (13th of 365); AdjDE 111.0 vs 98.2 - off-gap 60.44 passes screen; def-veto check: UCLA's defense is better, no veto","UCLA 5-0, averaging 96.8 ppg (beat Arkansas-Pine Bluff 106-37); Delaware 4-2, needed OT to beat CSU Northridge last time out"],"time":"7:00 PM ET"},
-    {"altCategoryTally":"0-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: USC +34.4 PD/g vs Louisiana -6.25 - favors USC","Rest: no back-to-back or notable rest disparity found - neutral","Travel: Lafayette, Louisiana to Los Angeles is a long cross-country trip with a 2-hour time-zone change - favors USC","Injuries/Lineup: no specific injury information verified for either roster - neutral","Form: USC is 5-0 with big wins; Louisiana is 1-3 and lost by 21 at San Francisco last time out - favors USC","Motivation/Spot: an early-season non-conference game for USC, no narrative found - neutral","Venue/Crowd: standard home court for USC at Galen Center, nothing beyond the ordinary verified - neutral","Market: spread has held close to -33.5 since the open, and no public bet-share data is available to assess reverse line movement - neutral","Matchup splits: no additional specific verified unit mismatch beyond the talent gap already captured - neutral"],"altReturn":null,"altSpreadReturn":null,"away":"Louisiana Ragin' Cajuns","awayMoneyline":2500,"awayPDpg":-6.25,"awayRank":null,"awayScore":null,"awaySpread":33.5,"awaySpreadOdds":-110,"confidence":"solid","correct":null,"gameTotal":145.5,"gameTotalOverOdds":-112,"gameTotalUnderOdds":-108,"home":"USC Trojans","homeMoneyline":-10000,"homePDpg":34.4,"homeRank":18,"homeScore":null,"homeSpread":-33.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-22T15:22:16+00:00","ml":{},"spread":[-33.5,-32.5],"total":[146.5,145.5]},"offGap":67.86,"pick":"USC Trojans","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -6.25 vs +34.4 (2026-27 season)","AdjOE 101.4 (288th of 365) vs 117.9 (41st of 365); AdjDE 110.7 vs 96.8 - off-gap 67.86 passes screen; def-veto check: USC's defense is better, no veto","USC 5-0, averaging 96.6 ppg; Louisiana 1-3, lost 56-77 at San Francisco last time out"],"time":"8:00 PM ET"}
+    {
+      "altCategoryTally": "1-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Nebraska +27.6 PD/g vs Butler +17.0 - favors Nebraska",
+        "Rest: no back-to-back or notable rest disparity found for either team - neutral",
+        "Travel: this is a neutral-site game in Chicago - Indianapolis to Chicago (~180 mi) is a shorter trip than Lincoln to Chicago (~500 mi) - favors Butler",
+        "Injuries/Lineup: no specific injury information verified for either roster - neutral",
+        "Form: Nebraska has won its last three games by 26, 27 and 34 points; Butler's last result was a 19-point road loss at Boise State - favors Nebraska",
+        "Motivation/Spot: this is a showcase neutral-site, non-conference game for both programs - no letdown/lookahead or revenge angle found - neutral",
+        "Venue/Crowd: true neutral site (Chicago) - no home-court edge for either team - neutral",
+        "Market: spread has held flat near 11.5 since the open, with moneyline drift toward Nebraska consistent with chalk, not reverse line movement - neutral",
+        "Matchup splits: no specific verified unit mismatch found - neutral"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Butler Bulldogs",
+      "awayMoneyline": 550,
+      "awayPDpg": 17,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 11.5,
+      "awaySpreadOdds": -105,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Nebraska Cornhuskers",
+      "homeMoneyline": -800,
+      "homePDpg": 27.6,
+      "homeRank": 24,
+      "homeScore": null,
+      "homeSpread": -11.5,
+      "homeSpreadOdds": -115,
+      "offGap": 19.78,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +17.0 vs +27.6 (2026-27 season; neutral site - Credit Union 1 Arena, Chicago)",
+        "AdjOE 111.2 (105th of 365) vs 118.8 (33rd of 365) - off-gap 19.78, below 30 threshold, screened",
+        "Nebraska 5-0, won last 3 by 26/27/34 points; Butler 2-1 in regular season, lost 81-100 at Boise State most recently"
+      ],
+      "time": "12:00 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-7",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Nebraska Cornhuskers",
+          "says": "fade",
+          "fact": "Nebraska won its last three by 26, 27, 34.",
+          "record": "119-145",
+          "pct": 45.1,
+          "leans": "Nebraska Cornhuskers",
+          "leanPct": 54.9,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "0-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Texas +31.2 PD/g vs Southern Indiana +5.1 - favors Texas",
+        "Rest: no back-to-back or notable rest disparity found - neutral",
+        "Travel: Evansville-area to Austin is a real but not extreme trip, with only a 1-hour time-zone change - neutral",
+        "Injuries/Lineup: no specific injury information verified for either roster - neutral",
+        "Form: Texas is 5-0 with large wins; Southern Indiana is 2-4 - favors Texas",
+        "Motivation/Spot: an early-season non-conference game for Texas, no narrative found - neutral",
+        "Venue/Crowd: standard home court for Texas, nothing beyond the ordinary verified - neutral",
+        "Market: line moved from -39.5 to -38.5 toward Southern Indiana, but no public bet-share data is available to assess reverse line movement - neutral",
+        "Matchup splits: no additional specific verified unit mismatch beyond the talent gap already captured - neutral"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Southern Indiana Screaming Eagles",
+      "awayMoneyline": 3300,
+      "awayPDpg": 5.1,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 38.5,
+      "awaySpreadOdds": -115,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 150.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
+      "home": "Texas Longhorns",
+      "homeMoneyline": -10000,
+      "homePDpg": 31.2,
+      "homeRank": 6,
+      "homeScore": null,
+      "homeSpread": -38.5,
+      "homeSpreadOdds": -105,
+      "lineMove": {
+        "checked": "2026-11-22T15:22:16+00:00",
+        "ml": {},
+        "spread": [
+          -39.5,
+          -38.5
+        ],
+        "total": [
+          148.5,
+          150.5
+        ]
+      },
+      "offGap": 92.31,
+      "pick": "Texas Longhorns",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g +5.1 vs +31.2 (2026-27 season)",
+        "AdjOE 97.6 (348th of 365) vs 120.9 (12th of 365); AdjDE 112.2 vs 98.6 - off-gap 92.31 passes screen; def-veto check: Texas's defense is better, no veto",
+        "Texas 5-0, averaging 93.4 ppg; Southern Indiana 2-4"
+      ],
+      "time": "3:00 PM ET"
+    },
+    {
+      "altCategoryTally": "0-4",
+      "altConfidence": "lean",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": "UCLA Bruins",
+      "altReasons": [
+        "Scoring margin: UCLA +34.4 PD/g vs Delaware +16.5 - favors UCLA",
+        "Rest: no back-to-back or notable rest disparity found - neutral",
+        "Travel: Newark, Delaware to Los Angeles is a genuine cross-country trip with a 3-hour time-zone change - favors UCLA",
+        "Injuries/Lineup: no specific injury information verified for either roster - neutral",
+        "Form: UCLA is 5-0 with dominant wins; Delaware is 4-2 and needed overtime to beat a weak CSU Northridge team last time out - favors UCLA",
+        "Motivation/Spot: an early-season non-conference game for UCLA, no narrative found - neutral",
+        "Venue/Crowd: Pauley Pavilion is a genuinely notable home-court environment for UCLA - favors UCLA",
+        "Market: spread has held flat at -29.5 since the open, and no public bet-share data is available to assess reverse line movement - neutral",
+        "Matchup splits: no additional specific verified unit mismatch beyond the talent gap already captured - neutral"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Delaware Blue Hens",
+      "awayMoneyline": 3233,
+      "awayPDpg": 16.5,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 29.5,
+      "awaySpreadOdds": -108,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 145.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "home": "UCLA Bruins",
+      "homeMoneyline": -9900,
+      "homePDpg": 34.4,
+      "homeRank": 7,
+      "homeScore": null,
+      "homeSpread": -29.5,
+      "homeSpreadOdds": -112,
+      "lineMove": {
+        "spread": [
+          -29.5,
+          -28.5
+        ],
+        "total": [
+          146.5,
+          145.5
+        ],
+        "ml": {},
+        "checked": "2026-11-22T21:50:26+00:00"
+      },
+      "offGap": 60.44,
+      "pick": "UCLA Bruins",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g +16.5 vs +34.4 (2026-27 season)",
+        "AdjOE 104.2 (233rd of 365) vs 120.5 (13th of 365); AdjDE 111.0 vs 98.2 - off-gap 60.44 passes screen; def-veto check: UCLA's defense is better, no veto",
+        "UCLA 5-0, averaging 96.8 ppg (beat Arkansas-Pine Bluff 106-37); Delaware 4-2, needed OT to beat CSU Northridge last time out"
+      ],
+      "time": "7:00 PM ET"
+    },
+    {
+      "altCategoryTally": "0-3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: USC +34.4 PD/g vs Louisiana -6.25 - favors USC",
+        "Rest: no back-to-back or notable rest disparity found - neutral",
+        "Travel: Lafayette, Louisiana to Los Angeles is a long cross-country trip with a 2-hour time-zone change - favors USC",
+        "Injuries/Lineup: no specific injury information verified for either roster - neutral",
+        "Form: USC is 5-0 with big wins; Louisiana is 1-3 and lost by 21 at San Francisco last time out - favors USC",
+        "Motivation/Spot: an early-season non-conference game for USC, no narrative found - neutral",
+        "Venue/Crowd: standard home court for USC at Galen Center, nothing beyond the ordinary verified - neutral",
+        "Market: spread has held close to -33.5 since the open, and no public bet-share data is available to assess reverse line movement - neutral",
+        "Matchup splits: no additional specific verified unit mismatch beyond the talent gap already captured - neutral"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Louisiana Ragin' Cajuns",
+      "awayMoneyline": 2500,
+      "awayPDpg": -6.25,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 33.5,
+      "awaySpreadOdds": -110,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 145.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "home": "USC Trojans",
+      "homeMoneyline": -10000,
+      "homePDpg": 34.4,
+      "homeRank": 18,
+      "homeScore": null,
+      "homeSpread": -33.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "spread": [
+          -33.5,
+          -32.5
+        ],
+        "total": [
+          146.5,
+          145.5
+        ],
+        "ml": {
+          "home": [
+            -50000.0,
+            null
+          ],
+          "away": [
+            4000.0,
+            null
+          ]
+        },
+        "checked": "2026-11-22T21:50:26+00:00"
+      },
+      "offGap": 67.86,
+      "pick": "USC Trojans",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g -6.25 vs +34.4 (2026-27 season)",
+        "AdjOE 101.4 (288th of 365) vs 117.9 (41st of 365); AdjDE 110.7 vs 96.8 - off-gap 67.86 passes screen; def-veto check: USC's defense is better, no veto",
+        "USC 5-0, averaging 96.6 ppg; Louisiana 1-3, lost 56-77 at San Francisco last time out"
+      ],
+      "time": "8:00 PM ET"
+    }
   ]
 }
