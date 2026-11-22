@@ -1,0 +1,38 @@
+{
+  "date": "2026-11-22",
+  "picks": {
+    "nfl-2026-11-22-miami-dolphins-buffalo-bills-1-00-pm-et": {
+      "sport": "nfl",
+      "away": "Miami Dolphins",
+      "home": "Buffalo Bills",
+      "time": "1:00 PM ET",
+      "side": "away",
+      "team": "Miami Dolphins",
+      "spread": 20,
+      "spreadOdds": -173,
+      "moneyline": 850,
+      "submittedAt": "2026-11-22T17:26:02+00:00",
+      "issue": 36,
+      "alt": true,
+      "posted": {
+        "spread": 16.5,
+        "spreadOdds": -112
+      }
+    },
+    "nfl-2026-11-22-pittsburgh-steelers-philadelphia-eagles-1-00-pm-et": {
+      "sport": "nfl",
+      "away": "Pittsburgh Steelers",
+      "home": "Philadelphia Eagles",
+      "time": "1:00 PM ET",
+      "side": "away",
+      "team": "Pittsburgh Steelers",
+      "spread": -3.5,
+      "spreadOdds": -111,
+      "moneyline": -196,
+      "submittedAt": "2026-11-22T17:26:02+00:00",
+      "issue": 36
+    }
+  },
+  "scores": {},
+  "totals": {}
+}
