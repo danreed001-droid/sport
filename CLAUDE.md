@@ -414,6 +414,10 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   outline. A "Point diff | ATS" switch (`dl-cdmode`, `html.cdats`) shows the running
   cover margin instead (margin + closing spread from `data/raw/<sport>_lines.csv`;
   no line = a flat gray candle; no switch where no line is saved, MLB and soccer).
+  A 1M | 2M | 3M | Season range (2026-11-21, the user's ask; `CD_RANGES`,
+  `dl-cdrange`, every card at once: `cdInner` redraws each `.cdwrap`) shows only
+  the last 30/61/91 days, the running total still counted from the season's start
+  (the header adds the change "in this range" when games were cut).
   Data: `pd_candles` in build_site.py from `data/raw/schedule/<sport>.json`, the
   whole current season (`CANDLE_DAYS` None; a number would keep only that many
   days as rows, the earlier games summed into `c0`/`a0`). For it,
