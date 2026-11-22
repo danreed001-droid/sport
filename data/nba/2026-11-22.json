@@ -421,8 +421,8 @@
       "confidence": "skip",
       "correct": null,
       "gameTotal": 226.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114,
       "home": "Miami Heat",
       "homeMoneyline": -158,
       "homeNetRtg": 0.6,
@@ -432,11 +432,11 @@
       "homeSpreadOdds": -103,
       "injuries": {
         "away": {
+          "5174983": "out",
           "4278073": "out",
           "5159925": "out",
           "4432823": "out",
-          "2991350": "out",
-          "5061603": "out"
+          "2991350": "out"
         },
         "home": {
           "3032977": "out"
@@ -454,19 +454,19 @@
         "ml": {
           "home": [
             -139.0,
-            -194.0
+            -191.0
           ],
           "away": [
             117.0,
-            162.0
+            160.0
           ]
         },
         "public": {
-          "betsHome": 73,
-          "moneyHome": 79,
+          "betsHome": 78,
+          "moneyHome": 81,
           "rlm": null
         },
-        "checked": "2026-11-22T22:31:46+00:00"
+        "checked": "2026-11-22T22:54:33+00:00"
       },
       "netRtgGap": 17.24,
       "pick": null,
@@ -476,7 +476,7 @@
       "skipReason": "netrtg-gap",
       "skipped": true,
       "starterOut": {
-        "checked": "2026-11-22T22:31:45+00:00",
+        "checked": "2026-11-22T22:54:32+00:00",
         "line": {
           "open": -2.5,
           "now": -4.5
@@ -534,6 +534,50 @@
                   3.4,
                   1.7,
                   2.4
+                ],
+                "without": null
+              }
+            ]
+          },
+          {
+            "player": "Aday Mara",
+            "pos": "C",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              16,
+              22.4,
+              10.0,
+              7.1,
+              1.9,
+              0.1
+            ],
+            "gainers": [
+              {
+                "player": "Chet Holmgren",
+                "pos": "C",
+                "with": [
+                  3,
+                  30.0,
+                  12.0,
+                  9.3,
+                  1.3,
+                  0.7
+                ],
+                "without": null
+              },
+              {
+                "player": "Isaiah Hartenstein",
+                "pos": "C",
+                "with": [
+                  16,
+                  25.2,
+                  8.2,
+                  10.8,
+                  3.9,
+                  0.0
                 ],
                 "without": null
               }
@@ -610,8 +654,8 @@
         "awaySpread": 4.5,
         "homeSpreadOdds": -114,
         "awaySpreadOdds": -106,
-        "homeMoneyline": -194,
-        "awayMoneyline": 162
+        "homeMoneyline": -191,
+        "awayMoneyline": 160
       },
       "statsSpread": -4.5,
       "storylines": [
@@ -662,9 +706,9 @@
       "awaySpreadOdds": -104,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 220.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotal": 219.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "Washington Wizards",
       "homeMoneyline": 184,
       "homeNetRtg": -6.3,
@@ -694,24 +738,24 @@
         ],
         "total": [
           222.5,
-          220.5
+          219.5
         ],
         "ml": {
           "home": [
             172.0,
-            165.0
+            164.0
           ],
           "away": [
             -206.0,
-            -197.0
+            -196.0
           ]
         },
         "public": {
-          "betsHome": 78,
-          "moneyHome": 78,
+          "betsHome": 79,
+          "moneyHome": 79,
           "rlm": null
         },
-        "checked": "2026-11-22T21:50:26+00:00"
+        "checked": "2026-11-22T22:54:33+00:00"
       },
       "netRtgGap": 10.34,
       "pick": null,
@@ -730,10 +774,10 @@
       "statsLine": {
         "homeSpread": 4.5,
         "awaySpread": -4.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": 165,
-        "awayMoneyline": -197
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 164,
+        "awayMoneyline": -196
       },
       "statsRules": [
         {
@@ -745,7 +789,7 @@
       ],
       "statsSpread": 4.5,
       "time": "7:00 PM ET",
-      "totalsLine": 220.5
+      "totalsLine": 219.5
     },
     {
       "altCategoryTally": "4-0",
@@ -816,11 +860,11 @@
           ]
         },
         "public": {
-          "betsHome": 50,
-          "moneyHome": 66,
+          "betsHome": 36,
+          "moneyHome": 56,
           "rlm": null
         },
-        "checked": "2026-11-22T22:31:46+00:00"
+        "checked": "2026-11-22T22:54:33+00:00"
       },
       "netRtgGap": 37.93,
       "pick": "Denver Nuggets",
@@ -1085,11 +1129,11 @@
       "homeSpreadOdds": -110,
       "injuries": {
         "away": {
-          "4278078": "day-to-day",
-          "4896372": "day-to-day",
+          "4278078": "out",
           "5106040": "out",
           "4683688": "out",
-          "5279129": "out"
+          "5279129": "out",
+          "5148538": "out"
         },
         "home": {
           "3102530": "out",
@@ -1117,11 +1161,11 @@
           ]
         },
         "public": {
-          "betsHome": 24,
-          "moneyHome": 27,
+          "betsHome": 22,
+          "moneyHome": 26,
           "rlm": null
         },
-        "checked": "2026-11-22T21:50:26+00:00"
+        "checked": "2026-11-22T22:54:33+00:00"
       },
       "netRtgGap": 24.14,
       "pick": null,
@@ -1131,7 +1175,7 @@
       "skipReason": "netrtg-gap",
       "skipped": true,
       "starterOut": {
-        "checked": "2026-11-22T21:50:25+00:00",
+        "checked": "2026-11-22T22:54:32+00:00",
         "line": {
           "open": 1.5,
           "now": 2.5
@@ -1140,8 +1184,8 @@
           {
             "player": "P.J. Washington",
             "pos": "SF",
-            "status": "Day-To-Day",
-            "out": false,
+            "status": "Out",
+            "out": true,
             "lastGame": false,
             "missed": 1,
             "avg": [
@@ -1421,9 +1465,9 @@
       "awaySpreadOdds": 104,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 213.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -114,
+      "gameTotal": 212.5,
+      "gameTotalOverOdds": -116,
+      "gameTotalUnderOdds": -105,
       "home": "New York Knicks",
       "homeMoneyline": -321,
       "homeNetRtg": 5.7,
@@ -1452,7 +1496,7 @@
         ],
         "total": [
           217.5,
-          213.5
+          212.5
         ],
         "ml": {
           "home": [
@@ -1465,11 +1509,11 @@
           ]
         },
         "public": {
-          "betsHome": 43,
-          "moneyHome": 35,
+          "betsHome": 41,
+          "moneyHome": 34,
           "rlm": null
         },
-        "checked": "2026-11-22T21:50:26+00:00"
+        "checked": "2026-11-22T22:54:33+00:00"
       },
       "netRtgGap": 44.83,
       "pick": "New York Knicks",
@@ -1870,7 +1914,7 @@
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 213.5
+      "totalsLine": 212.5
     },
     {
       "altCategoryTally": "2-2",
@@ -1944,11 +1988,11 @@
           ]
         },
         "public": {
-          "betsHome": 48,
-          "moneyHome": 43,
+          "betsHome": 40,
+          "moneyHome": 42,
           "rlm": null
         },
-        "checked": "2026-11-22T21:50:26+00:00"
+        "checked": "2026-11-22T22:54:33+00:00"
       },
       "netRtgGap": 58.62,
       "pick": "Boston Celtics",
