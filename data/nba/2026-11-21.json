@@ -2,7 +2,7 @@
   "date": "2026-11-21",
   "weekday": "Saturday",
   "sport": "nba",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-21T16:15:00Z",
   "auditChanges": [
     "NBA Milwaukee @ Philadelphia: injuries corrected (Myles Turner and Kyle Kuzma are NOT on Milwaukee's injury report; Jaylen Brown out rather than questionable; Maxey day-to-day). Tally stays 2-2, still a pass; Ledger pick Philadelphia solid unchanged.",
@@ -38,7 +38,7 @@
       "awayMoneyline": 458,
       "awayNetRtg": -13,
       "awayPDpg": -12.9,
-      "awayScore": null,
+      "awayScore": 129.0,
       "awaySpread": 12.5,
       "awaySpreadOdds": -103,
       "confidence": "solid",
@@ -50,7 +50,7 @@
       "homeMoneyline": -625,
       "homeNetRtg": 2.9,
       "homePDpg": 2.9,
-      "homeScore": null,
+      "homeScore": 132.0,
       "homeSpread": -12.5,
       "homeSpreadOdds": -117,
       "injuries": {
@@ -92,9 +92,9 @@
       },
       "netRtgGap": 62.07,
       "pick": "Philadelphia 76ers",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -223,11 +223,16 @@
           "record": "98-83",
           "says": "back",
           "team": "Philadelphia 76ers",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "1:00 PM ET",
-      "totalsLine": 231.5
+      "totalsLine": 231.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "0-3",
@@ -253,7 +258,7 @@
       "awayMoneyline": 170,
       "awayNetRtg": 6.3,
       "awayPDpg": 6.3,
-      "awayScore": null,
+      "awayScore": 96.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -117,
       "confidence": "skip",
@@ -265,7 +270,7 @@
       "homeMoneyline": -210,
       "homeNetRtg": 6.2,
       "homePDpg": 5.9,
-      "homeScore": null,
+      "homeScore": 97.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -104,
       "injuries": {
@@ -545,7 +550,8 @@
           "pct": 52.9,
           "leans": "New York Knicks",
           "leanPct": 52.9,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "7:30 PM ET",
@@ -554,8 +560,8 @@
     {
       "altCategoryTally": "0-4",
       "altConfidence": "lean",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": true,
       "altPick": "Dallas Mavericks",
       "altReasons": [
         "Scoring margin: favors Dallas Mavericks \u2014 Dallas's PD/g (-0.9) is well ahead of the Clippers' (-6.2) on its own merits.",
@@ -568,14 +574,14 @@
         "Market: neutral \u2014 home spread flat at -5.5 from the open with 70% of tickets and 71% of money already on Dallas; no reverse line movement.",
         "Matchup splits: neutral \u2014 no specific mismatch verified."
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": 47.62,
+      "altSpreadReturn": 90.91,
       "auditNote": "Dallas's injury list corrected against ESPN's report (Tobi Lawal is out, not questionable; P.J. Washington and Walter Clayton Jr. added as day-to-day). Tally stays 0-4, Second Opinion lean on Dallas unchanged.",
       "away": "LA Clippers",
       "awayMoneyline": 170,
       "awayNetRtg": -6.2,
       "awayPDpg": -6.2,
-      "awayScore": null,
+      "awayScore": 100.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -587,7 +593,7 @@
       "homeMoneyline": -210,
       "homeNetRtg": -0.9,
       "homePDpg": -0.9,
-      "homeScore": null,
+      "homeScore": 110.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -746,7 +752,7 @@
       "awayMoneyline": 180,
       "awayNetRtg": 10.3,
       "awayPDpg": 10.2,
-      "awayScore": null,
+      "awayScore": 95.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -102,
       "confidence": "skip",
@@ -758,7 +764,7 @@
       "homeMoneyline": -220,
       "homeNetRtg": 9.7,
       "homePDpg": 9.8,
-      "homeScore": null,
+      "homeScore": 104.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -118,
       "injuries": {
@@ -982,7 +988,8 @@
           "pct": 52.9,
           "leans": "Minnesota Timberwolves",
           "leanPct": 52.9,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -996,7 +1003,8 @@
           "pct": 52.6,
           "leans": "Minnesota Timberwolves",
           "leanPct": 52.6,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "8:00 PM ET",
@@ -1006,7 +1014,7 @@
       "altCategoryTally": "0-5",
       "altConfidence": "strong",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": true,
       "altPick": "San Antonio Spurs",
       "altReasons": [
         "Scoring margin: favors San Antonio Spurs \u2014 San Antonio's PD/g (+11.3) is the best mark on this slate against New Orleans's -7.4.",
@@ -1020,13 +1028,13 @@
         "Matchup splits: neutral \u2014 no specific mismatch verified."
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": 86.96,
       "auditNote": "Injury lists corrected against ESPN's report (Trey Murphy III is not listed for New Orleans; Jayden Quaintance added for San Antonio). Tally stays 0-5, Second Opinion strong on San Antonio unchanged.",
       "away": "New Orleans Pelicans",
       "awayMoneyline": 850,
       "awayNetRtg": -7.3,
       "awayPDpg": -7.4,
-      "awayScore": null,
+      "awayScore": 91.0,
       "awaySpread": 17.5,
       "awaySpreadOdds": -105,
       "confidence": "solid",
@@ -1038,7 +1046,7 @@
       "homeMoneyline": -1500,
       "homeNetRtg": 11.4,
       "homePDpg": 11.3,
-      "homeScore": null,
+      "homeScore": 114.0,
       "homeSpread": -17.5,
       "homeSpreadOdds": -115,
       "injuries": {
@@ -1083,9 +1091,9 @@
       },
       "netRtgGap": 79.31,
       "pick": "San Antonio Spurs",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 86.96,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -1383,7 +1391,8 @@
           "pct": 54.0,
           "leans": "New Orleans Pelicans",
           "leanPct": 54.0,
-          "against": false
+          "against": false,
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -1397,11 +1406,16 @@
           "pct": 52.9,
           "leans": "San Antonio Spurs",
           "leanPct": 52.9,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 226.5
+      "totalsLine": 226.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": true,
+      "statsSpreadReturn": 87.72
     },
     {
       "altCategoryTally": "1-2",
@@ -1427,7 +1441,7 @@
       "awayMoneyline": -750,
       "awayNetRtg": 10.9,
       "awayPDpg": 10.5,
-      "awayScore": null,
+      "awayScore": 96.0,
       "awaySpread": -13,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -1439,7 +1453,7 @@
       "homeMoneyline": 525,
       "homeNetRtg": -14,
       "homePDpg": -13.2,
-      "homeScore": null,
+      "homeScore": 97.0,
       "homeSpread": 13,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -1482,9 +1496,9 @@
       },
       "netRtgGap": 96.55,
       "pick": "Boston Celtics",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -1739,7 +1753,8 @@
           "pct": 55.9,
           "leans": "Boston Celtics",
           "leanPct": 55.9,
-          "against": false
+          "against": false,
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -1753,11 +1768,13 @@
           "pct": 58.5,
           "leans": "Boston Celtics",
           "leanPct": 58.5,
-          "against": false
+          "against": false,
+          "result": "miss"
         }
       ],
       "time": "10:00 PM ET",
       "totalsLine": 215.5
     }
-  ]
+  ],
+  "scoredAt": "2026-11-22T06:53:55.787141+00:00"
 }

@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-22",
+  "weekday": "Sunday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-22T06:53:48Z",
+  "games": [
+    {
+      "espnId": "401902281",
+      "away": "Nebraska Cornhuskers",
+      "home": "Butler Bulldogs",
+      "time": "12:00 PM ET",
+      "homeSpread": 11.5,
+      "awaySpread": -11.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": 550,
+      "awayMoneyline": -800,
+      "total": 154.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          11.5,
+          11.5
+        ],
+        "total": [
+          153.5,
+          154.5
+        ],
+        "ml": {
+          "home": [
+            490.0,
+            550.0
+          ],
+          "away": [
+            -675.0,
+            -800.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401906868",
+      "away": "Southern Indiana Screaming Eagles",
+      "home": "Texas Longhorns",
+      "time": "3:00 PM ET",
+      "homeSpread": -39.5,
+      "awaySpread": 39.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 148.5,
+      "lineMove": {
+        "spread": [
+          -39.5,
+          -39.5
+        ],
+        "total": [
+          148.5,
+          148.5
+        ],
+        "ml": {},
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401920905",
+      "away": "Delaware Blue Hens",
+      "home": "UCLA Bruins",
+      "time": "7:00 PM ET",
+      "homeSpread": -29.5,
+      "awaySpread": 29.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "total": 145.5,
+      "lineMove": {
+        "spread": [
+          -29.5,
+          -29.5
+        ],
+        "total": [
+          146.5,
+          145.5
+        ],
+        "ml": {},
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401926774",
+      "away": "Louisiana Ragin' Cajuns",
+      "home": "USC Trojans",
+      "time": "8:00 PM ET",
+      "homeSpread": -33.5,
+      "awaySpread": 33.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 147.5,
+      "lineMove": {
+        "spread": [
+          -33.5,
+          -33.5
+        ],
+        "total": [
+          146.5,
+          147.5
+        ],
+        "ml": {},
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    }
+  ]
+}

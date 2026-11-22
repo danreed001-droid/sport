@@ -1,0 +1,1133 @@
+{
+  "date": "2026-11-22",
+  "weekday": "Sunday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-22T06:53:33Z",
+  "games": [
+    {
+      "espnId": "401873070",
+      "away": "Miami Dolphins",
+      "home": "Buffalo Bills",
+      "time": "1:00 PM ET",
+      "homeSpread": -16.5,
+      "awaySpread": 16.5,
+      "homeSpreadOdds": -107.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -1560.0,
+      "awayMoneyline": 890.0,
+      "injuries": {
+        "away": {
+          "4036660": "questionable",
+          "4567225": "doubtful",
+          "2977680": "out",
+          "4040537": "questionable",
+          "4875079": "questionable"
+        },
+        "home": {
+          "4039303": "questionable",
+          "4036060": "questionable",
+          "4573699": "questionable",
+          "4568624": "out",
+          "4379778": "out"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          -11.5,
+          -16.5
+        ],
+        "total": [
+          47.5,
+          44.5
+        ],
+        "ml": {
+          "home": [
+            -600.0,
+            -1560.0
+          ],
+          "away": [
+            440.0,
+            890.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873071",
+      "away": "New Orleans Saints",
+      "home": "Chicago Bears",
+      "time": "1:00 PM ET",
+      "homeSpread": -11.5,
+      "awaySpread": 11.5,
+      "homeSpreadOdds": -107.0,
+      "awaySpreadOdds": -112.0,
+      "homeMoneyline": -640.0,
+      "awayMoneyline": 469.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-5",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "Chicago Bears",
+          "says": "fade",
+          "fact": "Chicago Bears is coming off a bye (14 days since its last game) and is a -11.5 home favorite.",
+          "record": "67-59",
+          "pct": 53.2,
+          "leans": "New Orleans Saints",
+          "leanPct": 53.2,
+          "against": false,
+          "unit": "ATS"
+        }
+      ],
+      "injuries": {
+        "away": {
+          "4430379": "out",
+          "3917331": "out",
+          "4606711": "out",
+          "4429568": "out",
+          "4241993": "questionable"
+        },
+        "home": {
+          "4361093": "out",
+          "4869748": "questionable",
+          "4257364": "injured reserve",
+          "3116726": "injured reserve",
+          "4251007": "injured reserve"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          -6.5,
+          -11.5
+        ],
+        "total": [
+          46.5,
+          48.5
+        ],
+        "ml": {
+          "home": [
+            -278.0,
+            -640.0
+          ],
+          "away": [
+            225.0,
+            469.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873073",
+      "away": "Tennessee Titans",
+      "home": "Dallas Cowboys",
+      "time": "1:00 PM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -106.0,
+      "awaySpreadOdds": -113.0,
+      "homeMoneyline": -343.0,
+      "awayMoneyline": 276.0,
+      "injuries": {
+        "away": {
+          "4429058": "injured reserve",
+          "4428557": "injured reserve",
+          "4871023": "questionable",
+          "4695280": "questionable",
+          "4870805": "questionable"
+        },
+        "home": {
+          "4043089": "injured reserve",
+          "4248911": "injured reserve",
+          "3929850": "out",
+          "4372096": "questionable",
+          "4426485": "out"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-22T06:54:19+00:00",
+        "line": {
+          "open": -6.5,
+          "now": -7.5
+        },
+        "away": [
+          {
+            "player": "Carnell Tate",
+            "pos": "WR",
+            "status": "Questionable",
+            "out": false,
+            "lastGame": false,
+            "missed": 2,
+            "avg": [
+              7,
+              7.3,
+              4.9,
+              59.0,
+              0.1
+            ],
+            "gainers": [
+              {
+                "player": "Elic Ayomanor",
+                "pos": "WR",
+                "with": [
+                  7,
+                  3.0,
+                  1.4,
+                  25.3,
+                  0.1
+                ],
+                "without": [
+                  2,
+                  7.5,
+                  4.0,
+                  56.5,
+                  0.0
+                ]
+              },
+              {
+                "player": "Chimere Dike",
+                "pos": "WR",
+                "with": [
+                  5,
+                  1.6,
+                  1.2,
+                  10.6,
+                  0.0
+                ],
+                "without": [
+                  2,
+                  4.5,
+                  3.5,
+                  43.5,
+                  0.5
+                ]
+              },
+              {
+                "player": "Calvin Ridley",
+                "pos": "WR",
+                "with": [
+                  5,
+                  2.0,
+                  1.0,
+                  16.2,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  3.0,
+                  1.0,
+                  10.0,
+                  0.0
+                ]
+              }
+            ]
+          }
+        ],
+        "home": []
+      },
+      "lineMove": {
+        "spread": [
+          -6.5,
+          -7.5
+        ],
+        "total": [
+          48.5,
+          54.5
+        ],
+        "ml": {
+          "home": [
+            -290.0,
+            -343.0
+          ],
+          "away": [
+            235.0,
+            276.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873072",
+      "away": "Tampa Bay Buccaneers",
+      "home": "Detroit Lions",
+      "time": "1:00 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": -111.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": -200.0,
+      "awayMoneyline": 167.0,
+      "nflStatsFavors": "Tampa Bay Buccaneers",
+      "nflStatsRules": [
+        {
+          "rule": 4,
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading Detroit Lions: Jared Goff threw for 303 yards in last game's win (300+), and Detroit Lions is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
+        }
+      ],
+      "nflStatsCheck": "Rule 4: Fading Detroit Lions: Jared Goff threw for 303 yards in last game's win (300+), and Detroit Lions is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-2",
+          "key": "hidden_gem",
+          "name": "Better than its record",
+          "team": "Tampa Bay Buccaneers",
+          "says": "back",
+          "fact": "Tampa Bay Buccaneers is 3-6 but has scored 202 and allowed 178, which usually goes with about 5.2 wins in 9 games.",
+          "record": "64-50",
+          "pct": 56.1,
+          "leans": "Tampa Bay Buccaneers",
+          "leanPct": 56.1,
+          "against": false,
+          "unit": "ATS"
+        }
+      ],
+      "injuries": {
+        "away": {
+          "3052587": "questionable",
+          "4248533": "injured reserve",
+          "4686334": "questionable",
+          "4034790": "out",
+          "4430834": "injured reserve"
+        },
+        "home": {
+          "4361788": "injured reserve",
+          "3139387": "questionable",
+          "4912274": "questionable",
+          "4372099": "injured reserve",
+          "4361861": "questionable"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-22T06:54:19+00:00",
+        "line": {
+          "open": -4.5,
+          "now": -3.5
+        },
+        "away": [
+          {
+            "player": "Baker Mayfield",
+            "pos": "QB",
+            "status": "Questionable",
+            "out": false,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              6,
+              23.7,
+              153.7,
+              0.5,
+              13.3
+            ],
+            "gainers": [
+              {
+                "player": "Jalon Daniels",
+                "pos": "QB",
+                "with": [
+                  2,
+                  1.5,
+                  0.0,
+                  0.0,
+                  3.0
+                ],
+                "without": [
+                  3,
+                  31.7,
+                  167.0,
+                  1.0,
+                  39.0
+                ]
+              }
+            ]
+          }
+        ],
+        "home": []
+      },
+      "lineMove": {
+        "spread": [
+          -4.5,
+          -3.5
+        ],
+        "total": [
+          49.5,
+          47.5
+        ],
+        "ml": {
+          "home": [
+            -230.0,
+            -200.0
+          ],
+          "away": [
+            190.0,
+            167.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873067",
+      "away": "Arizona Cardinals",
+      "home": "Kansas City Chiefs",
+      "time": "1:00 PM ET",
+      "homeSpread": -15.5,
+      "awaySpread": 15.5,
+      "homeSpreadOdds": -106.0,
+      "awaySpreadOdds": -113.0,
+      "homeMoneyline": -1320.0,
+      "awayMoneyline": 810.0,
+      "nflStatsFavors": "Arizona Cardinals",
+      "nflStatsRules": [
+        {
+          "rule": 4,
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading Kansas City Chiefs: Patrick Mahomes threw for 348 yards in last game's win (300+), and Kansas City Chiefs is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
+        }
+      ],
+      "nflStatsCheck": "Rule 4: Fading Kansas City Chiefs: Patrick Mahomes threw for 348 yards in last game's win (300+), and Kansas City Chiefs is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "injuries": {
+        "away": {
+          "4430841": "out",
+          "4367199": "out",
+          "4240619": "injured reserve",
+          "3045147": "injured reserve",
+          "4038524": "injured reserve"
+        },
+        "home": {
+          "4591008": "questionable",
+          "4043041": "out",
+          "4242459": "out",
+          "4871063": "questionable",
+          "4567048": "out"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-22T06:54:19+00:00",
+        "line": {
+          "open": -11.5,
+          "now": -15.5
+        },
+        "away": [],
+        "home": [
+          {
+            "player": "Kenneth Walker III",
+            "pos": "RB",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 1,
+            "avg": [
+              8,
+              19.9,
+              109.0,
+              3.2,
+              21.5
+            ],
+            "gainers": [
+              {
+                "player": "Emmett Johnson",
+                "pos": "RB",
+                "with": [
+                  8,
+                  3.2,
+                  13.9,
+                  1.8,
+                  29.6
+                ],
+                "without": [
+                  1,
+                  22.0,
+                  101.0,
+                  6.0,
+                  70.0
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "lineMove": {
+        "spread": [
+          -11.5,
+          -15.5
+        ],
+        "total": [
+          44.5,
+          40.5
+        ],
+        "ml": {
+          "home": [
+            -600.0,
+            -1320.0
+          ],
+          "away": [
+            440.0,
+            810.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873076",
+      "away": "Pittsburgh Steelers",
+      "home": "Philadelphia Eagles",
+      "time": "1:00 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -109.0,
+      "awaySpreadOdds": -111.0,
+      "homeMoneyline": 159.0,
+      "awayMoneyline": -190.0,
+      "injuries": {
+        "away": {
+          "4035687": "injured reserve",
+          "4431492": "questionable",
+          "4429164": "out",
+          "3929846": "questionable",
+          "4242207": "questionable"
+        },
+        "home": {
+          "3917657": "injured reserve",
+          "4431545": "questionable",
+          "4428850": "injured reserve",
+          "4431573": "doubtful",
+          "4040715": "injured reserve"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          -5.5,
+          3.5
+        ],
+        "total": [
+          42.5,
+          37.5
+        ],
+        "ml": {
+          "home": [
+            -250.0,
+            159.0
+          ],
+          "away": [
+            205.0,
+            -190.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873068",
+      "away": "Baltimore Ravens",
+      "home": "Carolina Panthers",
+      "time": "1:00 PM ET",
+      "homeSpread": -3.0,
+      "awaySpread": 3.0,
+      "homeSpreadOdds": -102.0,
+      "awaySpreadOdds": -118.0,
+      "homeMoneyline": -145.0,
+      "awayMoneyline": 123.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-5",
+          "key": "sandwich",
+          "name": "Trap game",
+          "team": "Carolina Panthers",
+          "says": "fade",
+          "fact": "Carolina Panthers is a -3 favorite against the Baltimore Ravens, a non-division game between division games with New Orleans Saints and Tampa Bay Buccaneers.",
+          "record": "114-105",
+          "pct": 52.1,
+          "leans": "Baltimore Ravens",
+          "leanPct": 52.1,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "7-7",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Carolina Panthers",
+          "says": "back",
+          "fact": "Carolina Panthers beat New Orleans Saints 20-17 last game despite 17 penalties for 152 yards to their 3 for 46.",
+          "record": "141-109",
+          "pct": 56.4,
+          "leans": "Carolina Panthers",
+          "leanPct": 56.4,
+          "against": false,
+          "unit": "ATS"
+        }
+      ],
+      "injuries": {
+        "away": {
+          "3858276": "out",
+          "4035245": "out",
+          "3126356": "out",
+          "3916387": "injured reserve",
+          "4426372": "questionable"
+        },
+        "home": {
+          "4256062": "injured reserve",
+          "4035462": "injured reserve",
+          "3917853": "questionable",
+          "4678008": "injured reserve",
+          "4372780": "questionable"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          4.5,
+          -3.0
+        ],
+        "total": [
+          46.5,
+          43.5
+        ],
+        "ml": {
+          "home": [
+            180.0,
+            -145.0
+          ],
+          "away": [
+            -218.0,
+            123.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873074",
+      "away": "New York Jets",
+      "home": "Los Angeles Chargers",
+      "time": "4:05 PM ET",
+      "homeSpread": -3.0,
+      "awaySpread": 3.0,
+      "homeSpreadOdds": -117.0,
+      "awaySpreadOdds": -102.0,
+      "homeMoneyline": -171.0,
+      "awayMoneyline": 144.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "7-6",
+          "key": "cross_country",
+          "name": "Cross-country trip",
+          "team": "New York Jets",
+          "says": "fade",
+          "fact": "New York Jets travels about 2,450 miles to play the Los Angeles Chargers.",
+          "record": "180-206",
+          "pct": 46.6,
+          "leans": "New York Jets",
+          "leanPct": 53.4,
+          "against": true,
+          "unit": "ATS"
+        }
+      ],
+      "injuries": {
+        "away": {
+          "4243375": "questionable",
+          "3117255": "questionable",
+          "4002046": "injured reserve",
+          "4683815": "questionable",
+          "4569371": "out"
+        },
+        "home": {
+          "4838693": "injured reserve",
+          "4411189": "questionable",
+          "4574105": "questionable",
+          "4360745": "out",
+          "4432571": "questionable"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          -9.5,
+          -3.0
+        ],
+        "total": [
+          41.5,
+          41.5
+        ],
+        "ml": {
+          "home": [
+            -440.0,
+            -171.0
+          ],
+          "away": [
+            340.0,
+            144.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873075",
+      "away": "Las Vegas Raiders",
+      "home": "Denver Broncos",
+      "time": "4:25 PM ET",
+      "homeSpread": -10.5,
+      "awaySpread": 10.5,
+      "homeSpreadOdds": -109.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -650.0,
+      "awayMoneyline": 476.0,
+      "nflStatsFavors": "Denver Broncos",
+      "nflStatsRules": [
+        {
+          "rule": 10,
+          "name": "Bet on the ATS record catching up: back a winning team covering under 40%, fade a losing team covering 60%+",
+          "backtest": "back side 66.7% ATS (n=78), fade side 61.9% (n=147), 2017-2025; no losing season either way",
+          "detail": "Fading Las Vegas Raiders: 4-6 straight up but 6-4 against the spread (60%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season."
+        }
+      ],
+      "nflStatsCheck": "Rule 10: Fading Las Vegas Raiders: 4-6 straight up but 6-4 against the spread (60%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season.",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-5",
+          "key": "bye_rust",
+          "name": "Bye-week rust",
+          "team": "Denver Broncos",
+          "says": "fade",
+          "fact": "Denver Broncos is coming off a bye (14 days since its last game) and is a -10.5 home favorite.",
+          "record": "67-59",
+          "pct": 53.2,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 53.2,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "8-4",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Denver Broncos",
+          "says": "fade",
+          "fact": "Denver Broncos beat Carolina Panthers 26-21 last game while Carolina Panthers was penalized 13 times for 119 yards (to 8 for 50).",
+          "record": "164-123",
+          "pct": 57.1,
+          "leans": "Las Vegas Raiders",
+          "leanPct": 57.1,
+          "against": false,
+          "unit": "ATS"
+        }
+      ],
+      "injuries": {
+        "away": {
+          "3045172": "questionable",
+          "4429109": "out",
+          "4432665": "questionable",
+          "4249087": "questionable",
+          "4243916": "injured reserve"
+        },
+        "home": {
+          "4432208": "injured reserve",
+          "4039059": "questionable",
+          "4066109": "injured reserve",
+          "4568490": "injured reserve",
+          "4362748": "injured reserve"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-22T06:54:19+00:00",
+        "line": {
+          "open": -8.5,
+          "now": -10.5
+        },
+        "away": [
+          {
+            "player": "Brock Bowers",
+            "pos": "TE",
+            "status": "Questionable",
+            "out": false,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              8,
+              9.0,
+              6.2,
+              84.5,
+              0.8
+            ],
+            "gainers": [
+              {
+                "player": "Michael Mayer",
+                "pos": "TE",
+                "with": [
+                  8,
+                  4.8,
+                  4.0,
+                  43.6,
+                  0.1
+                ],
+                "without": [
+                  2,
+                  5.5,
+                  4.5,
+                  27.5,
+                  0.0
+                ]
+              },
+              {
+                "player": "Ian Thomas",
+                "pos": "TE",
+                "with": [
+                  4,
+                  1.2,
+                  1.2,
+                  15.5,
+                  0.2
+                ],
+                "without": [
+                  1,
+                  1.0,
+                  1.0,
+                  11.0,
+                  0.0
+                ]
+              }
+            ]
+          }
+        ],
+        "home": []
+      },
+      "lineMove": {
+        "spread": [
+          -8.5,
+          -10.5
+        ],
+        "total": [
+          41.5,
+          40.5
+        ],
+        "ml": {
+          "home": [
+            -425.0,
+            -650.0
+          ],
+          "away": [
+            330.0,
+            476.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873069",
+      "away": "Jacksonville Jaguars",
+      "home": "New York Giants",
+      "time": "4:25 PM ET",
+      "homeSpread": 6.0,
+      "awaySpread": -6.0,
+      "homeSpreadOdds": -109.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 210.0,
+      "awayMoneyline": -255.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-5",
+          "key": "sandwich",
+          "name": "Trap game",
+          "team": "Jacksonville Jaguars",
+          "says": "fade",
+          "fact": "Jacksonville Jaguars is a -6 favorite against the New York Giants, a non-division game between division games with Tennessee Titans and Tennessee Titans.",
+          "record": "114-105",
+          "pct": 52.1,
+          "leans": "New York Giants",
+          "leanPct": 52.1,
+          "against": false,
+          "unit": "ATS"
+        }
+      ],
+      "injuries": {
+        "away": {
+          "4573319": "out",
+          "4875266": "injured reserve",
+          "3134316": "questionable",
+          "4242391": "out",
+          "2970716": "injured reserve"
+        },
+        "home": {
+          "4360516": "injured reserve",
+          "3929950": "injured reserve",
+          "3123075": "injured reserve",
+          "4036132": "injured reserve",
+          "4689114": "injured reserve"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          1.5,
+          6.0
+        ],
+        "total": [
+          46.5,
+          45.5
+        ],
+        "ml": {
+          "home": [
+            105.0,
+            210.0
+          ],
+          "away": [
+            -125.0,
+            -255.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    },
+    {
+      "espnId": "401873077",
+      "away": "Minnesota Vikings",
+      "home": "San Francisco 49ers",
+      "time": "8:20 PM ET",
+      "homeSpread": -3.0,
+      "awaySpread": 3.0,
+      "homeSpreadOdds": -118.0,
+      "awaySpreadOdds": -102.0,
+      "homeMoneyline": -170.0,
+      "awayMoneyline": 143.0,
+      "injuries": {
+        "away": {
+          "4044540": "questionable",
+          "3917315": "out",
+          "4875564": "injured reserve",
+          "4568007": "questionable",
+          "4429205": "out"
+        },
+        "home": {
+          "4240542": "injured reserve",
+          "3916903": "questionable",
+          "4685397": "questionable",
+          "4241464": "questionable",
+          "16737": "questionable"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-22T06:54:19+00:00",
+        "line": {
+          "open": -3.5,
+          "now": -3.0
+        },
+        "away": [
+          {
+            "player": "Kyler Murray",
+            "pos": "QB",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 2,
+            "avg": [
+              6,
+              25.7,
+              170.3,
+              0.8,
+              27.8
+            ],
+            "gainers": [
+              {
+                "player": "Carson Wentz",
+                "pos": "QB",
+                "with": [
+                  1,
+                  19.0,
+                  133.0,
+                  3.0,
+                  -1.0
+                ],
+                "without": [
+                  2,
+                  22.5,
+                  112.0,
+                  0.0,
+                  3.0
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Jordan Addison",
+            "pos": "WR",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 1,
+            "avg": [
+              7,
+              5.1,
+              2.6,
+              39.6,
+              0.1
+            ],
+            "gainers": [
+              {
+                "player": "Justin Jefferson",
+                "pos": "WR",
+                "with": [
+                  6,
+                  7.3,
+                  4.2,
+                  52.3,
+                  0.5
+                ],
+                "without": [
+                  2,
+                  10.0,
+                  7.5,
+                  76.5,
+                  0.5
+                ]
+              },
+              {
+                "player": "Tai Felton",
+                "pos": "WR",
+                "with": [
+                  3,
+                  1.3,
+                  0.3,
+                  4.7,
+                  0.0
+                ],
+                "without": [
+                  2,
+                  4.0,
+                  2.5,
+                  30.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Myles Price",
+                "pos": "WR",
+                "with": [
+                  3,
+                  2.3,
+                  1.0,
+                  4.0,
+                  0.0
+                ],
+                "without": [
+                  2,
+                  4.0,
+                  3.5,
+                  34.5,
+                  0.5
+                ]
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "player": "Mike Evans",
+            "pos": "WR",
+            "status": "Questionable",
+            "out": false,
+            "lastGame": false,
+            "missed": 3,
+            "avg": [
+              6,
+              6.5,
+              4.5,
+              70.0,
+              0.5
+            ],
+            "gainers": [
+              {
+                "player": "Jordan Watkins",
+                "pos": "WR",
+                "with": [
+                  2,
+                  1.5,
+                  1.5,
+                  41.0,
+                  0.0
+                ],
+                "without": [
+                  3,
+                  4.3,
+                  3.0,
+                  63.7,
+                  0.3
+                ]
+              },
+              {
+                "player": "Jacob Cowing",
+                "pos": "WR",
+                "with": [
+                  3,
+                  1.7,
+                  0.3,
+                  3.0,
+                  0.0
+                ],
+                "without": [
+                  2,
+                  3.0,
+                  2.0,
+                  21.5,
+                  0.0
+                ]
+              },
+              {
+                "player": "Demarcus Robinson",
+                "pos": "WR",
+                "with": [
+                  2,
+                  3.0,
+                  2.5,
+                  42.0,
+                  0.5
+                ],
+                "without": [
+                  1,
+                  4.0,
+                  3.0,
+                  22.0,
+                  0.0
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "lineMove": {
+        "spread": [
+          -3.5,
+          -3.0
+        ],
+        "total": [
+          46.5,
+          46.5
+        ],
+        "ml": {
+          "home": [
+            -205.0,
+            -170.0
+          ],
+          "away": [
+            170.0,
+            143.0
+          ]
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      }
+    }
+  ]
+}

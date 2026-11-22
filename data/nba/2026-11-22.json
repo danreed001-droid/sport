@@ -23,8 +23,8 @@
         "awaySpread": -2.5,
         "homeSpreadOdds": -113,
         "awaySpreadOdds": -107,
-        "homeMoneyline": 114,
-        "awayMoneyline": -135
+        "homeMoneyline": 110,
+        "awayMoneyline": -130
       },
       "statsFavors": "Atlanta Hawks",
       "statsRules": [
@@ -36,7 +36,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Atlanta Hawks: covered its last two games (by 6.5 vs Charlotte Hornets and by 11.5 at Oklahoma City Thunder), now at home in game 17 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 225.5,
+      "totalsLine": 226.5,
       "storylines": [
         {
           "weight": 1,
@@ -321,25 +321,28 @@
         ],
         "total": [
           227.5,
-          225.5
+          226.5
         ],
         "ml": {
           "home": [
             101.0,
-            114.0
+            110.0
           ],
           "away": [
             -120.0,
-            -135.0
+            -130.0
           ]
         },
         "public": {
-          "betsHome": 45,
-          "moneyHome": 35,
+          "betsHome": 47,
+          "moneyHome": 41,
           "rlm": null
         },
-        "checked": "2026-11-22T05:53:13+00:00"
-      }
+        "checked": "2026-11-22T06:54:20+00:00"
+      },
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910030",
@@ -536,12 +539,15 @@
           ]
         },
         "public": {
-          "betsHome": 67,
-          "moneyHome": 75,
+          "betsHome": 66,
+          "moneyHome": 73,
           "rlm": null
         },
-        "checked": "2026-11-22T05:53:13+00:00"
-      }
+        "checked": "2026-11-22T06:54:20+00:00"
+      },
+      "gameTotal": 231.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910031",
@@ -608,12 +614,15 @@
           ]
         },
         "public": {
-          "betsHome": 56,
-          "moneyHome": 54,
+          "betsHome": 61,
+          "moneyHome": 58,
           "rlm": null
         },
-        "checked": "2026-11-22T05:53:13+00:00"
-      }
+        "checked": "2026-11-22T06:54:20+00:00"
+      },
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910032",
@@ -673,6 +682,7 @@
           "4432181": "out"
         },
         "home": {
+          "4431687": "day-to-day",
           "2595516": "day-to-day",
           "4397189": "day-to-day",
           "5105555": "out",
@@ -943,12 +953,15 @@
           ]
         },
         "public": {
-          "betsHome": 20,
-          "moneyHome": 18,
+          "betsHome": 23,
+          "moneyHome": 23,
           "rlm": null
         },
-        "checked": "2026-11-22T05:53:13+00:00"
-      }
+        "checked": "2026-11-22T06:54:20+00:00"
+      },
+      "gameTotal": 237.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910033",
@@ -965,10 +978,10 @@
       "statsLine": {
         "homeSpread": 1.5,
         "awaySpread": -1.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 101,
-        "awayMoneyline": -120
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 105,
+        "awayMoneyline": -125
       },
       "statsFavors": "Utah Jazz",
       "statsRules": [
@@ -996,7 +1009,7 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-22T05:53:13+00:00",
+        "checked": "2026-11-22T06:54:19+00:00",
         "line": {
           "open": 1.5,
           "now": 1.5
@@ -1007,8 +1020,8 @@
             "pos": "SF",
             "status": "Out",
             "out": true,
-            "lastGame": true,
-            "missed": 0,
+            "lastGame": false,
+            "missed": 1,
             "avg": [
               15,
               30.9,
@@ -1019,30 +1032,44 @@
             ],
             "gainers": [
               {
-                "player": "Cooper Flagg",
+                "player": "Daniel Gafford",
                 "pos": "PF",
                 "with": [
-                  14,
-                  33.4,
-                  24.2,
-                  6.6,
-                  6.4,
-                  1.4
+                  15,
+                  21.3,
+                  8.5,
+                  5.1,
+                  1.9,
+                  0.1
                 ],
-                "without": null
+                "without": [
+                  1,
+                  31.0,
+                  10.0,
+                  10.0,
+                  3.0,
+                  0.0
+                ]
               },
               {
-                "player": "Naji Marshall",
-                "pos": "SF",
+                "player": "Max Christie",
+                "pos": "SG",
                 "with": [
                   12,
-                  25.1,
-                  11.6,
-                  2.9,
-                  4.1,
+                  17.8,
+                  5.2,
+                  2.8,
+                  1.2,
                   1.1
                 ],
-                "without": null
+                "without": [
+                  1,
+                  24.0,
+                  13.0,
+                  4.0,
+                  0.0,
+                  3.0
+                ]
               },
               {
                 "player": "Zaccharie Risacher",
@@ -1055,7 +1082,14 @@
                   1.2,
                   1.1
                 ],
-                "without": null
+                "without": [
+                  1,
+                  29.0,
+                  11.0,
+                  7.0,
+                  1.0,
+                  1.0
+                ]
               }
             ]
           }
@@ -1231,15 +1265,23 @@
         "ml": {
           "home": [
             101.0,
-            101.0
+            105.0
           ],
           "away": [
             -119.0,
-            -120.0
+            -125.0
           ]
         },
-        "checked": "2026-11-22T05:53:13+00:00"
-      }
+        "public": {
+          "betsHome": 33,
+          "moneyHome": 38,
+          "rlm": null
+        },
+        "checked": "2026-11-22T06:54:20+00:00"
+      },
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910034",
@@ -1252,16 +1294,16 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": -396.0,
       "awayMoneyline": 312.0,
-      "statsSpread": -10.5,
+      "statsSpread": -9.5,
       "statsLine": {
-        "homeSpread": -10.5,
-        "awaySpread": 10.5,
+        "homeSpread": -9.5,
+        "awaySpread": 9.5,
         "homeSpreadOdds": -105,
         "awaySpreadOdds": -115,
         "homeMoneyline": -396,
         "awayMoneyline": 312
       },
-      "totalsLine": 218.5,
+      "totalsLine": 217.5,
       "storylines": [
         {
           "weight": 1,
@@ -1293,10 +1335,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-22T05:53:13+00:00",
+        "checked": "2026-11-22T06:54:19+00:00",
         "line": {
           "open": -9.5,
-          "now": -10.5
+          "now": -9.5
         },
         "away": [
           {
@@ -1462,8 +1504,8 @@
             "pos": "SF",
             "status": "Day-To-Day",
             "out": false,
-            "lastGame": true,
-            "missed": 0,
+            "lastGame": false,
+            "missed": 1,
             "avg": [
               15,
               34.0,
@@ -1473,32 +1515,6 @@
               2.0
             ],
             "gainers": [
-              {
-                "player": "Josh Hart",
-                "pos": "SG",
-                "with": [
-                  12,
-                  29.7,
-                  6.8,
-                  6.2,
-                  3.3,
-                  1.4
-                ],
-                "without": null
-              },
-              {
-                "player": "Mikal Bridges",
-                "pos": "SG",
-                "with": [
-                  15,
-                  26.0,
-                  7.5,
-                  3.5,
-                  2.2,
-                  1.0
-                ],
-                "without": null
-              },
               {
                 "player": "Landry Shamet",
                 "pos": "SG",
@@ -1510,7 +1526,54 @@
                   1.8,
                   2.2
                 ],
-                "without": null
+                "without": [
+                  1,
+                  36.0,
+                  20.0,
+                  1.0,
+                  3.0,
+                  6.0
+                ]
+              },
+              {
+                "player": "Pacome Dadiet",
+                "pos": "PF",
+                "with": [
+                  4,
+                  4.2,
+                  3.0,
+                  0.8,
+                  0.0,
+                  0.2
+                ],
+                "without": [
+                  1,
+                  11.0,
+                  5.0,
+                  0.0,
+                  2.0,
+                  1.0
+                ]
+              },
+              {
+                "player": "Josh Hart",
+                "pos": "SG",
+                "with": [
+                  12,
+                  29.7,
+                  6.8,
+                  6.2,
+                  3.3,
+                  1.4
+                ],
+                "without": [
+                  1,
+                  35.0,
+                  0.0,
+                  8.0,
+                  6.0,
+                  0.0
+                ]
               }
             ]
           },
@@ -1519,8 +1582,8 @@
             "pos": "C",
             "status": "Day-To-Day",
             "out": false,
-            "lastGame": true,
-            "missed": 0,
+            "lastGame": false,
+            "missed": 1,
             "avg": [
               15,
               32.7,
@@ -1530,32 +1593,6 @@
               2.0
             ],
             "gainers": [
-              {
-                "player": "Andre Drummond",
-                "pos": "C",
-                "with": [
-                  15,
-                  13.0,
-                  3.7,
-                  7.3,
-                  1.0,
-                  0.0
-                ],
-                "without": null
-              },
-              {
-                "player": "Mohamed Diawara",
-                "pos": "PF",
-                "with": [
-                  6,
-                  11.8,
-                  2.8,
-                  2.2,
-                  1.7,
-                  0.3
-                ],
-                "without": null
-              },
               {
                 "player": "James Wiseman",
                 "pos": "C",
@@ -1567,7 +1604,54 @@
                   0.0,
                   0.0
                 ],
-                "without": null
+                "without": [
+                  1,
+                  25.0,
+                  5.0,
+                  6.0,
+                  2.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Andre Drummond",
+                "pos": "C",
+                "with": [
+                  15,
+                  13.0,
+                  3.7,
+                  7.3,
+                  1.0,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  23.0,
+                  7.0,
+                  13.0,
+                  1.0,
+                  1.0
+                ]
+              },
+              {
+                "player": "Pacome Dadiet",
+                "pos": "PF",
+                "with": [
+                  4,
+                  4.2,
+                  3.0,
+                  0.8,
+                  0.0,
+                  0.2
+                ],
+                "without": [
+                  1,
+                  11.0,
+                  5.0,
+                  0.0,
+                  2.0,
+                  1.0
+                ]
               }
             ]
           }
@@ -1576,11 +1660,11 @@
       "lineMove": {
         "spread": [
           -9.5,
-          -10.5
+          -9.5
         ],
         "total": [
           217.5,
-          218.5
+          217.5
         ],
         "ml": {
           "home": [
@@ -1593,12 +1677,15 @@
           ]
         },
         "public": {
-          "betsHome": 41,
-          "moneyHome": 45,
+          "betsHome": 39,
+          "moneyHome": 36,
           "rlm": null
         },
-        "checked": "2026-11-22T05:53:13+00:00"
-      }
+        "checked": "2026-11-22T06:54:20+00:00"
+      },
+      "gameTotal": 217.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910035",
@@ -1658,15 +1745,15 @@
           "4065648": "out"
         },
         "home": {
-          "6589": "day-to-day",
           "4397040": "out",
           "3975": "out",
           "3102531": "out",
-          "4432171": "out"
+          "4432171": "out",
+          "6430": "out"
         }
       },
       "starterOut": {
-        "checked": "2026-11-22T05:53:13+00:00",
+        "checked": "2026-11-22T06:54:19+00:00",
         "line": {
           "open": 8.5,
           "now": 9.5
@@ -1677,8 +1764,8 @@
             "pos": "SF",
             "status": "Out",
             "out": true,
-            "lastGame": true,
-            "missed": 0,
+            "lastGame": false,
+            "missed": 1,
             "avg": [
               14,
               34.1,
@@ -1700,32 +1787,32 @@
                   2.4
                 ],
                 "without": [
-                  1,
-                  30.0,
-                  11.0,
-                  2.0,
-                  0.0,
-                  3.0
+                  2,
+                  30.5,
+                  12.5,
+                  4.0,
+                  1.0,
+                  3.5
                 ]
               },
               {
-                "player": "Baylor Scheierman",
+                "player": "Mike Conley",
                 "pos": "SG",
                 "with": [
-                  14,
-                  18.6,
-                  5.4,
-                  3.1,
-                  1.5,
-                  1.1
+                  4,
+                  8.0,
+                  3.0,
+                  0.8,
+                  0.5,
+                  1.0
                 ],
                 "without": [
                   1,
-                  29.0,
-                  9.0,
-                  11.0,
-                  1.0,
-                  3.0
+                  18.0,
+                  19.0,
+                  4.0,
+                  2.0,
+                  4.0
                 ]
               },
               {
@@ -1740,12 +1827,12 @@
                   3.2
                 ],
                 "without": [
-                  1,
-                  35.0,
-                  25.0,
-                  3.0,
+                  2,
+                  36.0,
+                  22.0,
+                  5.5,
                   5.0,
-                  5.0
+                  3.5
                 ]
               }
             ]
@@ -1755,8 +1842,8 @@
             "pos": "PG",
             "status": "Out",
             "out": true,
-            "lastGame": true,
-            "missed": 0,
+            "lastGame": false,
+            "missed": 1,
             "avg": [
               15,
               29.9,
@@ -1766,6 +1853,26 @@
               1.7
             ],
             "gainers": [
+              {
+                "player": "Mike Conley",
+                "pos": "SG",
+                "with": [
+                  4,
+                  8.0,
+                  3.0,
+                  0.8,
+                  0.5,
+                  1.0
+                ],
+                "without": [
+                  1,
+                  18.0,
+                  19.0,
+                  4.0,
+                  2.0,
+                  4.0
+                ]
+              },
               {
                 "player": "Payton Pritchard",
                 "pos": "PG",
@@ -1777,33 +1884,34 @@
                   3.8,
                   2.4
                 ],
-                "without": null
+                "without": [
+                  1,
+                  34.0,
+                  9.0,
+                  6.0,
+                  8.0,
+                  0.0
+                ]
               },
               {
-                "player": "Baylor Scheierman",
+                "player": "Ron Harper Jr.",
                 "pos": "SG",
                 "with": [
-                  15,
-                  19.3,
-                  5.7,
-                  3.7,
-                  1.5,
-                  1.3
+                  7,
+                  6.7,
+                  2.6,
+                  0.6,
+                  0.4,
+                  0.6
                 ],
-                "without": null
-              },
-              {
-                "player": "Jordan Walsh",
-                "pos": "SG",
-                "with": [
-                  15,
-                  15.7,
-                  4.7,
-                  2.9,
-                  0.5,
-                  0.8
-                ],
-                "without": null
+                "without": [
+                  1,
+                  13.0,
+                  3.0,
+                  0.0,
+                  1.0,
+                  1.0
+                ]
               }
             ]
           }
@@ -1886,84 +1994,6 @@
                 ]
               }
             ]
-          },
-          {
-            "player": "Draymond Green",
-            "pos": "SF",
-            "status": "Day-To-Day",
-            "out": false,
-            "lastGame": false,
-            "missed": 1,
-            "avg": [
-              13,
-              25.6,
-              3.2,
-              4.7,
-              6.5,
-              0.3
-            ],
-            "gainers": [
-              {
-                "player": "Will Richard",
-                "pos": "SG",
-                "with": [
-                  12,
-                  18.1,
-                  7.0,
-                  2.4,
-                  0.9,
-                  0.9
-                ],
-                "without": [
-                  3,
-                  26.7,
-                  9.7,
-                  1.7,
-                  1.3,
-                  1.7
-                ]
-              },
-              {
-                "player": "Gary Payton II",
-                "pos": "SG",
-                "with": [
-                  11,
-                  12.6,
-                  5.0,
-                  2.1,
-                  0.4,
-                  0.5
-                ],
-                "without": [
-                  3,
-                  18.7,
-                  3.0,
-                  1.3,
-                  1.0,
-                  0.3
-                ]
-              },
-              {
-                "player": "De'Anthony Melton",
-                "pos": "SG",
-                "with": [
-                  13,
-                  20.9,
-                  7.0,
-                  3.7,
-                  2.0,
-                  1.6
-                ],
-                "without": [
-                  3,
-                  26.7,
-                  18.3,
-                  4.0,
-                  4.3,
-                  3.7
-                ]
-              }
-            ]
           }
         ]
       },
@@ -1987,12 +2017,15 @@
           ]
         },
         "public": {
-          "betsHome": 20,
-          "moneyHome": 24,
+          "betsHome": 28,
+          "moneyHome": 29,
           "rlm": null
         },
-        "checked": "2026-11-22T05:53:14+00:00"
-      }
+        "checked": "2026-11-22T06:54:20+00:00"
+      },
+      "gameTotal": 212.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     }
   ]
 }

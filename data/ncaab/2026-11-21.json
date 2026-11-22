@@ -2,7 +2,7 @@
   "date": "2026-11-21",
   "weekday": "Saturday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-21T16:15:00Z",
   "auditChanges": [
     "NCAAB Queens @ LSU: offense percentiles corrected (83.8/85.7 -> 74.2/83.0, off-gap 1.93 -> 8.8) and LSU's record to 5-0. Still an off-gap skip; no pick change.",
@@ -34,7 +34,7 @@
       "awayMoneyline": 3300,
       "awayPDpg": -19.55,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 70.0,
       "awaySpread": 30.5,
       "awaySpreadOdds": -109,
       "confidence": "solid",
@@ -43,7 +43,7 @@
       "homeMoneyline": -10000,
       "homePDpg": 14.45,
       "homeRank": 2,
-      "homeScore": null,
+      "homeScore": 91.0,
       "homeSpread": -30.5,
       "homeSpreadOdds": -111,
       "lineMove": {
@@ -60,9 +60,9 @@
       },
       "offGap": 47.39,
       "pick": "Michigan State Spartans",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -85,7 +85,8 @@
           "leans": "Michigan State Spartans",
           "leanPct": 54.3,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -100,7 +101,8 @@
           "leans": "Detroit Mercy Titans",
           "leanPct": 53.7,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -115,7 +117,8 @@
           "leans": "Detroit Mercy Titans",
           "leanPct": 52.5,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -143,7 +146,7 @@
       "awayMoneyline": 3500,
       "awayPDpg": -5.03,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 75.0,
       "awaySpread": 27.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -152,7 +155,7 @@
       "homeMoneyline": -30000,
       "homePDpg": 15.17,
       "homeRank": 25,
-      "homeScore": null,
+      "homeScore": 106.0,
       "homeSpread": -27.5,
       "homeSpreadOdds": -105,
       "lineMove": {
@@ -216,7 +219,7 @@
       "awayMoneyline": -185,
       "awayPDpg": 17.16,
       "awayRank": 18,
-      "awayScore": null,
+      "awayScore": 73.0,
       "awaySpread": -4.5,
       "awaySpreadOdds": -102,
       "confidence": "skip",
@@ -225,7 +228,7 @@
       "homeMoneyline": 154,
       "homePDpg": 9.44,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 79.0,
       "homeSpread": 4.5,
       "homeSpreadOdds": -118,
       "lineMove": {
@@ -279,7 +282,8 @@
           "leans": "Villanova Wildcats",
           "leanPct": 52.5,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -294,7 +298,8 @@
           "leans": "Villanova Wildcats",
           "leanPct": 54.9,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -309,7 +314,8 @@
           "leans": "Villanova Wildcats",
           "leanPct": 54.4,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -337,7 +343,7 @@
       "awayMoneyline": 6750,
       "awayPDpg": 1.69,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 74.0,
       "awaySpread": 25.5,
       "awaySpreadOdds": 104,
       "confidence": "skip",
@@ -346,7 +352,7 @@
       "homeMoneyline": -6757,
       "homePDpg": 20.1,
       "homeRank": 5,
-      "homeScore": null,
+      "homeScore": 78.0,
       "homeSpread": -25.5,
       "homeSpreadOdds": -104,
       "lineMove": {
@@ -401,7 +407,8 @@
           "leans": "Duke Blue Devils",
           "leanPct": 54.3,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -416,7 +423,8 @@
           "leans": "Washington State Cougars",
           "leanPct": 53.7,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -431,9 +439,11 @@
           "leans": "Duke Blue Devils",
           "leanPct": 52.2,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     }
-  ]
+  ],
+  "scoredAt": "2026-11-22T06:53:57.596349+00:00"
 }
