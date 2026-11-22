@@ -558,6 +558,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   build_site.py runs in pages.yml without `curl_cffi` installed: it must not
   import a script that imports `lib.espn` (the first h2h push failed the Pages
   build on `from archive_schedule import CFG`; the live site stayed up).
+- **Jump bar** (2026-11-22, the user's ask for a way to move between sections):
+  a sticky strip under the top bar (`.jumpstrip`, `renderJump`/`jumpSync` in
+  site/index.html; on a phone only the strip sticks, the top bar scrolls away)
+  with chips for Scorecard, Pick log, Today (the slate bar, `#slatetop`) and each
+  league on the slate with its game count, in page order; the chip for the
+  section in view is lit, leagues hidden by the Leagues filter drop out. A
+  "Game..." select jumps to any card (`id="g-<game id>"`), and a round back-to-top
+  button shows after scrolling. Jumps are instant (a smooth window scroll was cut
+  short when the strip scrolled itself); `--tbh` is the sticky height, used as
+  `scroll-margin-top`.
 - `site/index.html` builds its text inside single-quoted JavaScript strings:
   escape apostrophes (`\'`). `scripts/check_site_js.py` syntax-checks every
   built page in pages.yml and stops the deploy on an error, so a broken page

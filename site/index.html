@@ -47,6 +47,21 @@ h1,h2,h3{font-family:'Big Shoulders Display','Arial Narrow',system-ui,sans-serif
 
 .topbar{position:sticky;top:0;z-index:20;padding-top:env(safe-area-inset-top,0px);background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);}
 .topbar .wrap{display:flex;align-items:center;gap:14px;min-height:56px;padding-block:8px;flex-wrap:wrap;}
+/* Jump bar (2026-11-22, the user's ask): a strip of section links under the top bar */
+.jumpstrip{position:sticky;top:var(--tb0,0px);z-index:19;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--rule);}
+.jumpwrap{display:flex;align-items:center;padding-block:7px;gap:8px;}
+@media (max-width:600px){.topbar{position:static;}}
+.jumpbar{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0;-webkit-overflow-scrolling:touch;}
+.jumpbar::-webkit-scrollbar{display:none;}
+.jumpbar a{flex:none;font-size:12.5px;padding:4px 11px;border:1px solid var(--rule-2);border-radius:999px;color:var(--ink);text-decoration:none;white-space:nowrap;background:var(--surface);}
+.jumpbar a .n{color:var(--muted);margin-left:4px;font-size:11.5px;}
+.jumpbar a.on{background:var(--ink);color:var(--paper);border-color:var(--ink);} .jumpbar a.on .n{color:inherit;opacity:.75;}
+.jumpbar .sep{flex:none;width:1px;background:var(--rule-2);margin:3px 2px;}
+.jumpgame{flex:none;max-width:44%;font-size:12.5px;padding:4px 8px;border:1px solid var(--rule-2);border-radius:999px;background:var(--surface);color:var(--ink);}
+#app section, #app article.game, #slatetop{scroll-margin-top:var(--tbh,120px);}
+.totop{position:fixed;right:16px;bottom:84px;z-index:30;width:42px;height:42px;border-radius:50%;border:1px solid var(--rule-2);background:var(--surface);color:var(--ink);font-size:18px;box-shadow:0 2px 8px rgba(0,0,0,.25);opacity:0;pointer-events:none;transition:opacity .2s;}
+.totop.show{opacity:1;pointer-events:auto;}
+@media (max-width:600px){.jumpgame{max-width:38%;}}
 .brand{display:flex;align-items:baseline;gap:8px;margin-right:auto;}
 .brand .chip{width:10px;height:10px;background:var(--mine);border-radius:2px;transform:rotate(45deg);flex:none;align-self:center;}
 .brand b{font-family:'Big Shoulders Display',sans-serif;font-size:21px;font-weight:800;text-transform:uppercase;}
@@ -542,6 +557,8 @@ footer b{color:var(--ink);}
   <div class="stamp" id="stamp"></div>
   <button type="button" class="themebtn" id="themebtn" aria-label="Switch to light mode"></button>
 </div></div>
+<div class="jumpstrip"><div class="wrap jumpwrap"><nav class="jumpbar" id="jumpbar" aria-label="Jump to a section"></nav><select class="jumpgame" id="jumpgame" aria-label="Jump to a game" hidden></select></div></div>
+<button type="button" class="totop" id="totop" aria-label="Back to top">↑</button>
 
 <div class="wrap" id="refreshwrap"></div>
 <main class="wrap" id="app"><p class="loading">Loading today's slate…</p></main>
@@ -2675,7 +2692,7 @@ footer b{color:var(--ink);}
         + '</ul></details>';
     }
     var gcol = gameColors(g);
-    return '<article class="game'+(dimColor(gcol[0]) && dimColor(gcol[1]) ? ' dk-a' : '')+'" style="--ca:'+gcol[0]+';--ch:'+gcol[1]+'">'
+    return '<article class="game'+(dimColor(gcol[0]) && dimColor(gcol[1]) ? ' dk-a' : '')+'" id="g-'+esc(g.id)+'" style="--ca:'+gcol[0]+';--ch:'+gcol[1]+'">'
       + matchupHeader(sport, g, who)
       + resultStrip(sport, g)
       + leanMeter(sport, g)
@@ -2791,8 +2808,69 @@ footer b{color:var(--ink);}
     var sb = document.getElementById('slatepick'); if(sb) sb.innerHTML = slatePicker();
     var h1 = document.getElementById('slateh1'); if(h1) h1.textContent = slateDateLabel(DATA.slate.date);
     Object.keys(GAMES).forEach(function(id){ renderScore(id); renderPickRow(id); });
-    applySlateFilter(); renderSubmitBar();
+    applySlateFilter(); renderSubmitBar(); renderJump();
   }
+  // Jump bar: Scorecard, Pick log, the slate and each league on it (with its
+  // game count), and a game picker; the chip for the section in view is lit.
+  function renderJump(){
+    var bar = document.getElementById('jumpbar'), sel = document.getElementById('jumpgame');
+    if(!bar) return;
+    var sports = (DATA.slate && DATA.slate.sports) || {}, items = [['dashboard', 'Scorecard'], ['picklog', 'Pick log'], ['slatetop', VIEW_PAST ? 'Slate' : 'Today']];
+    var lg = Array.prototype.map.call(document.querySelectorAll('#slate > section[data-lg]'), function(s){ return s.getAttribute('data-lg'); })
+      .filter(function(k){ return sports[k] && (sports[k].games || []).length; });
+    bar.innerHTML = items.map(function(x){ return '<a href="#'+x[0]+'" data-j="'+x[0]+'">'+x[1]+'</a>'; }).join('')
+      + (lg.length ? '<span class="sep"></span>' : '')
+      + lg.map(function(k){ return '<a href="#'+k+'" data-j="'+k+'">'+esc(sports[k].label || k)+'<span class="n">'+sports[k].games.length+'</span></a>'; }).join('');
+    if(sel){
+      sel.innerHTML = '<option value="">Game…</option>' + lg.map(function(k){
+        return '<optgroup label="'+esc(sports[k].label || k)+'">'+sports[k].games.map(function(g){ return '<option value="g-'+esc(g.id)+'">'+esc(teamAbbr(g.away)+' @ '+teamAbbr(g.home)+(g.time ? ' · '+g.time.replace(/ ET$/, '') : ''))+'</option>'; }).join('')+'</optgroup>';
+      }).join('');
+      sel.hidden = !lg.length;
+    }
+    jumpSync();
+  }
+  function jumpTo(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    if(el.tagName === 'ARTICLE'){ var dt = el.closest('details'); if(dt) dt.open = true; }
+    jumpSync();
+    var off = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--tbh')) || 0;
+    window.scrollTo({top: Math.max(0, el.getBoundingClientRect().top + window.scrollY - off), behavior: 'auto'});
+  }
+  var _jumpRaf = 0;
+  function jumpSync(){
+    var tb = document.querySelector('.topbar'), js = document.querySelector('.jumpstrip');
+    var t0 = tb && getComputedStyle(tb).position === 'sticky' ? tb.getBoundingClientRect().height : 0;
+    var h = t0 + (js ? js.getBoundingClientRect().height : 0);
+    document.documentElement.style.setProperty('--tb0', t0+'px');
+    document.documentElement.style.setProperty('--tbh', (h + 8)+'px');
+    var bar = document.getElementById('jumpbar'); if(!bar) return;
+    var cur = null, best = -Infinity;
+    bar.querySelectorAll('a[data-j]').forEach(function(a){
+      var el = document.getElementById(a.getAttribute('data-j'));
+      var shown = !!(el && el.offsetParent !== null);
+      a.hidden = !shown;
+      var tp = shown ? el.getBoundingClientRect().top : Infinity;
+      if(tp <= h + 40 && tp > best){ best = tp; cur = a; }
+    });
+    bar.querySelectorAll('a.on').forEach(function(a){ if(a !== cur) a.classList.remove('on'); });
+    if(cur && !cur.classList.contains('on')){
+      cur.classList.add('on');
+      var bl = bar.getBoundingClientRect(), cl = cur.getBoundingClientRect();
+      if(cl.left < bl.left || cl.right > bl.right) bar.scrollLeft = bar.scrollLeft + cl.left - bl.left - 24;
+    }
+    var tt = document.getElementById('totop'); if(tt) tt.classList.toggle('show', window.scrollY > 900);
+  }
+  window.addEventListener('scroll', function(){ if(!_jumpRaf) _jumpRaf = requestAnimationFrame(function(){ _jumpRaf = 0; jumpSync(); }); }, {passive: true});
+  window.addEventListener('resize', function(){ jumpSync(); });
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('.jumpbar a[data-j]');
+    if(a){ e.preventDefault(); jumpTo(a.getAttribute('data-j')); return; }
+    if(e.target.closest('#totop')) window.scrollTo({top: 0, behavior: 'smooth'});
+  });
+  document.addEventListener('change', function(e){
+    if(e.target && e.target.id === 'jumpgame' && e.target.value){ jumpTo(e.target.value); e.target.value = ''; }
+  });
   function render(){
     if(!VIEW_PAST) LATEST = (function(){ var o = {}; SLATE_KEYS.forEach(function(k){ o[k] = DATA[k]; }); return o; })();
     var s = DATA.slate;
@@ -2804,7 +2882,7 @@ footer b{color:var(--ink);}
       '<section class="hero"><h1 id="slateh1">'+esc(dateLabel)+'</h1><p>Only today\'s slate. <b style="color:var(--ledger-ink)">The Ledger</b> and <b style="color:var(--opinion-ink)">the Second Opinion</b> are the two models in every sport; on NFL and CFB games, <b style="color:var(--trend-ink)">Trend check</b> and <b style="color:var(--blowout-ink)">Blowout check</b> are tracked alongside them, and on NBA games, <b style="color:var(--stats-ink)">NBA Stats</b> and <b style="color:var(--totals-ink)">NBA Totals</b> are. Both keep only rules at 61% or better on 2018-19 and 2021-22 to now (the 2019-20 bubble and 2020-21 empty-arena seasons are left out) and 55% or better on 2018-19 + 2021-22 alone, the seasons the newer rules were never found on. NBA Stats (spread) fades an OT winner vs. a stronger team, a late comeback on a back-to-back, or a home team after a win where it allowed 130+, and backs a home team on a back-to-back after losing to a team that shot 50%+ from three; on trial, it fades a team after a road upset win (rules 20, 21, 24, 28), plays a team after a 20+ point loss (36, 37, 39), backs a home team favored by 5+ when both teams are on a back-to-back (43), and plays revenge spots, the team that lost the last meeting with tonight\'s opponent (44-48: back it when it was favored in that loss and now has the worse record, or fade it at home as a favorite after an upset loss on its own floor). It also fades a 7+ point underdog on the second night of a back-to-back that used 8 or fewer players for 10+ minutes in its last game (49). And it backs the favorite when 60% or more of spread bets are on a 7+ point underdog but the line has moved 1 to 4.5 points toward the favorite since it opened (50, from Action Network\'s public betting splits). And it backs a team with a losing record that won its last two games by 10 or more each, with at least a day off (51), and a home team that beat the spread by 15 or more in each of its last two games (52). And it backs a home favorite of 10 or more against a team at .300 or worse that is on the second night of a back-to-back (53). And it backs a home team that covered its last two games, during its first 20 games of the season (54). And it backs a road team in its first road game after three or more straight at home, 1,000 or more miles away, after a loss (55). And it fades a team on the second night of a back-to-back that won the night before with a player logging 40 or more minutes (56). Five more are on trial from the same search: it backs a team beating the spread by 6 or more a game over its last five against an opponent with no double-digit rebounder in its last two games (57); fades a team that won its last game by 1 to 5 when tonight\'s opponent scored 130 or more last game (58); fades a home team in its first game back from four or more straight on the road when it is being outscored by 5 or more a game (59); backs a team that won its last two by 10 or more against an opponent whose last game went over its total by 20 or more (60); and fades a team at .250 or worse that used 8 or fewer players for 10 or more minutes in its last game (61). Also on trial: it backs a team that covered its last three or more games against an opponent whose top scorer scored 10 or more above his average last game (62); fades a team on the second night of a back-to-back that won the night before shooting 45% or better from three (63); and backs a home team covering 60% or more this season against a team that is .250 or worse on the road (64). And in a near pick\'em (spread within 3.5) it backs the team whose opponent has been giving 60 or more extra minutes a game to players 6\'4" and under (65, from ESPN player heights). And it backs a team that has missed the spread by 6 or more a game over its last five when the opponent\'s last game went to overtime (66). And it backs a team with 4 or more days since its last game against an opponent on 2, at home or as an underdog (68). It fades a team that beat the spread by 20 or more in a close-spread game (within 3) when it now faces a better-record team (69), and backs a home team that missed by 20 or more in such a game when it now faces a worse-record team (70). NBA Totals bets the over when the home team won its last game and that game&#39;s 30-39 point scorer is out (rule 3) or a team lost by 30+ on the road and now faces a weaker team (16), and the under after a home loss to a worse-record team, now on the road vs. a better one (6), or when the home team is back from a 20+ point road win (9, 10, 14), or when the team that lost the last meeting at home is now the underdog with the better record (20, 21), or in a near pick\'em (spread 2 or less) when the total is 3 or more above the two teams\' season scoring averages and one team\'s last five games went over by 6 or more a game (22). It also bets the over when the home team\'s last game went over its total by 10 or more and the road team allowed 130 or more in its last game (23), and late in the season (66 or more games played) when both teams lost their last game (24). On NFL games, <b style="color:var(--nflstats-ink)">NFL Stats</b> backs a home underdog of 7+ points (64.7% against the spread from 2020-2025) fades a team coming off a win as a 7+ point underdog (60.0%, 2017-2025), backs an underdog whose top rusher ran for 150+ yards last game (66.7%, small sample), fades a home team vs. a weaker team after its QB threw for 300+ in a win (60.3%), backs a road team after a 10+ point loss driven by 3+ turnovers rather than yards (65.3%), fades a team that gained 500+ yards with 300+ passing (60.0%), and fades a team after a game with both a 100-yard rusher and a 350-yard passer (83.3%, small sample), and bets on a team\'s ATS record catching up with its record: backs a winning team that has covered under 40% (66.7%) and fades a losing team that has covered 60%+ (61.9%). <b style="color:var(--ncaabstats-ink)">NCAAB Stats</b> has no active rules: its one rule (back a team after a loss that was mostly three-point shooting luck) replayed at 58.7% on 2018-19 to 2025-26 and was retired, and none of the NBA rules or college-specific ideas tested cleared 61% on college games. A pick two or more rules agree on is marked <b>stacked</b>: those went 77.6% when all the rules were replayed on 2017-2025. Each NBA and NFL Stats pick also says how to bet it: <b>ML</b> when the team is a small underdog (+100 to +149), where the moneyline paid more than the spread in the backtests for both sports, and <b>ATS</b> otherwise. <b style="color:var(--mine-ink)">You</b> is whatever you pick below. Tap a side, then hit <b>Submit to repo</b> — your picks are committed to <span class="mono">data/mypicks/</span> and graded the same way as the models.</p></section>'
       + dashHtml()
       + logHtml()
-      + '<div class="slatebar"><span id="slatepick">'+slatePicker()+'</span><span class="flbl">Leagues</span>'+leagueChips()+'<span class="hint" id="slatehint"></span></div>'
+      + '<div class="slatebar" id="slatetop"><span id="slatepick">'+slatePicker()+'</span><span class="flbl">Leagues</span>'+leagueChips()+'<span class="hint" id="slatehint"></span></div>'
       + '<div id="slate"'+(VIEW_PAST?' class="pastview"':'')+'>'+sportsHtml+'</div>'
       + '<footer><b>How submitting works</b><ol>'
         + '<li>Tap a side on any game, and score any Second Opinion reason Away, ½ Away, Neutral, ½ Home or Home (each starts on the Second Opinion\'s own call). When your tally margin reaches 2.5 your pick is set to the leading side; under 2.5 it clears to no bet. Tapping a side yourself overrides it. Everything is kept in this browser right away, marked <i>not submitted</i>.</li>'
@@ -2822,6 +2900,7 @@ footer b{color:var(--ink);}
     renderDash();
     renderLog();
     applySlateFilter();
+    renderJump();
   }
 
   document.addEventListener('click', function(e){
