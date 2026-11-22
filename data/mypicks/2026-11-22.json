@@ -1,6 +1,19 @@
 {
   "date": "2026-11-22",
   "picks": {
+    "ncaab-2026-11-22-delaware-blue-hens-ucla-bruins-7-00-pm-et": {
+      "sport": "ncaab",
+      "away": "Delaware Blue Hens",
+      "home": "UCLA Bruins",
+      "time": "7:00 PM ET",
+      "side": "home",
+      "team": "UCLA Bruins",
+      "spread": -29.5,
+      "spreadOdds": -112,
+      "moneyline": -9900,
+      "submittedAt": "2026-11-22T18:08:18+00:00",
+      "issue": 37
+    },
     "nfl-2026-11-22-miami-dolphins-buffalo-bills-1-00-pm-et": {
       "sport": "nfl",
       "away": "Miami Dolphins",
@@ -31,6 +44,19 @@
       "moneyline": -196,
       "submittedAt": "2026-11-22T17:26:02+00:00",
       "issue": 36
+    },
+    "soccer-2026-11-22-atletico-madrid-getafe-9-00-pm-cet": {
+      "sport": "soccer",
+      "away": "Atletico Madrid",
+      "home": "Getafe",
+      "time": "9:00 PM CET",
+      "side": "away",
+      "team": "Atletico Madrid",
+      "spread": null,
+      "spreadOdds": null,
+      "moneyline": -200,
+      "submittedAt": "2026-11-22T18:08:18+00:00",
+      "issue": 37
     }
   },
   "scores": {},
