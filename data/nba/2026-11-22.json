@@ -420,9 +420,9 @@
       "awaySpreadOdds": 104,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 228.5,
-      "gameTotalOverOdds": -111,
-      "gameTotalUnderOdds": -109,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Miami Heat",
       "homeMoneyline": -158,
       "homeNetRtg": 0.6,
@@ -439,26 +439,26 @@
           "5061603": "out"
         },
         "home": {
-          "3032977": "day-to-day"
+          "3032977": "out"
         }
       },
       "lineMove": {
         "spread": [
           -2.5,
-          -6.5
+          -4.5
         ],
         "total": [
           231.5,
-          228.5
+          226.5
         ],
         "ml": {
           "home": [
             -139.0,
-            -264.0
+            -194.0
           ],
           "away": [
             117.0,
-            217.0
+            162.0
           ]
         },
         "public": {
@@ -466,7 +466,7 @@
           "moneyHome": 79,
           "rlm": null
         },
-        "checked": "2026-11-22T21:50:26+00:00"
+        "checked": "2026-11-22T22:31:46+00:00"
       },
       "netRtgGap": 17.24,
       "pick": null,
@@ -476,10 +476,10 @@
       "skipReason": "netrtg-gap",
       "skipped": true,
       "starterOut": {
-        "checked": "2026-11-22T21:50:25+00:00",
+        "checked": "2026-11-22T22:31:45+00:00",
         "line": {
           "open": -2.5,
-          "now": -6.5
+          "now": -4.5
         },
         "away": [
           {
@@ -544,8 +544,8 @@
           {
             "player": "Giannis Antetokounmpo",
             "pos": "PF",
-            "status": "Day-To-Day",
-            "out": false,
+            "status": "Out",
+            "out": true,
             "lastGame": true,
             "missed": 0,
             "avg": [
@@ -606,29 +606,15 @@
         "Gilgeous-Alexander (OKC) questionable, back/neck; Antetokounmpo (Mia) questionable, groin - both teams' best player is questionable. OKC also missing Topic, Jaylin Williams, Caruso, Sorber, Cason Wallace, Holmgren, Jalen Williams (7 out)"
       ],
       "statsLine": {
-        "homeSpread": -6.5,
-        "awaySpread": 6.5,
-        "homeSpreadOdds": -113,
-        "awaySpreadOdds": -107,
-        "homeMoneyline": -264,
-        "awayMoneyline": 217
+        "homeSpread": -4.5,
+        "awaySpread": 4.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -194,
+        "awayMoneyline": 162
       },
-      "statsSpread": -6.5,
+      "statsSpread": -4.5,
       "storylines": [
-        {
-          "weight": 1,
-          "live": "7-5",
-          "key": "emperor",
-          "name": "The emperor's new clothes",
-          "team": "Miami Heat",
-          "says": "fade",
-          "fact": "Miami Heat is a -6.5 favorite but has covered 5 of 15 this season.",
-          "record": "183-157",
-          "pct": 53.8,
-          "leans": "Oklahoma City Thunder",
-          "leanPct": 53.8,
-          "against": false
-        },
         {
           "weight": 1,
           "live": "3-1",
@@ -645,7 +631,7 @@
         }
       ],
       "time": "6:00 PM ET",
-      "totalsLine": 228.5
+      "totalsLine": 226.5
     },
     {
       "altCategoryTally": "0-3",
@@ -806,9 +792,7 @@
         },
         "home": {
           "4278067": "out",
-          "4397189": "day-to-day",
           "2595516": "out",
-          "4431687": "day-to-day",
           "5095151": "out"
         }
       },
@@ -824,11 +808,11 @@
         "ml": {
           "home": [
             268.0,
-            340.0
+            328.0
           ],
           "away": [
             -333.0,
-            -437.0
+            -419.0
           ]
         },
         "public": {
@@ -836,7 +820,7 @@
           "moneyHome": 66,
           "rlm": null
         },
-        "checked": "2026-11-22T21:50:26+00:00"
+        "checked": "2026-11-22T22:31:46+00:00"
       },
       "netRtgGap": 37.93,
       "pick": "Denver Nuggets",
@@ -846,7 +830,7 @@
       "skipReason": null,
       "skipped": false,
       "starterOut": {
-        "checked": "2026-11-22T21:50:25+00:00",
+        "checked": "2026-11-22T22:31:45+00:00",
         "line": {
           "open": 8.5,
           "now": 10.5
@@ -1008,84 +992,6 @@
                 ]
               }
             ]
-          },
-          {
-            "player": "Jalen Smith",
-            "pos": "SF",
-            "status": "Day-To-Day",
-            "out": false,
-            "lastGame": false,
-            "missed": 1,
-            "avg": [
-              13,
-              24.6,
-              13.4,
-              7.9,
-              2.2,
-              1.8
-            ],
-            "gainers": [
-              {
-                "player": "Zach Collins",
-                "pos": "PF",
-                "with": [
-                  8,
-                  8.2,
-                  1.8,
-                  2.2,
-                  0.6,
-                  0.1
-                ],
-                "without": [
-                  2,
-                  21.5,
-                  7.0,
-                  4.0,
-                  4.0,
-                  0.0
-                ]
-              },
-              {
-                "player": "Isaac Okoro",
-                "pos": "SF",
-                "with": [
-                  13,
-                  22.2,
-                  7.1,
-                  2.0,
-                  1.7,
-                  0.9
-                ],
-                "without": [
-                  2,
-                  30.0,
-                  9.0,
-                  7.0,
-                  2.5,
-                  0.5
-                ]
-              },
-              {
-                "player": "Buddy Hield",
-                "pos": "SG",
-                "with": [
-                  11,
-                  15.2,
-                  6.7,
-                  2.0,
-                  1.8,
-                  1.4
-                ],
-                "without": [
-                  2,
-                  21.5,
-                  15.5,
-                  4.0,
-                  1.0,
-                  4.0
-                ]
-              }
-            ]
           }
         ]
       },
@@ -1101,8 +1007,8 @@
         "awaySpread": -10.5,
         "homeSpreadOdds": -117,
         "awaySpreadOdds": -104,
-        "homeMoneyline": 340,
-        "awayMoneyline": -437
+        "homeMoneyline": 328,
+        "awayMoneyline": -419
       },
       "statsRules": [
         {
@@ -2226,8 +2132,8 @@
       "statsLine": {
         "homeSpread": 7.5,
         "awaySpread": -7.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
         "homeMoneyline": 261,
         "awayMoneyline": -324
       },
