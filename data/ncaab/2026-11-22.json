@@ -163,9 +163,9 @@
       "awaySpreadOdds": -108,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 145.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 144.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
       "home": "UCLA Bruins",
       "homeMoneyline": -9900,
       "homePDpg": 34.4,
@@ -180,10 +180,19 @@
         ],
         "total": [
           146.5,
-          145.5
+          144.5
         ],
-        "ml": {},
-        "checked": "2026-11-22T21:50:26+00:00"
+        "ml": {
+          "home": [
+            -20000.0,
+            -20000.0
+          ],
+          "away": [
+            3500.0,
+            3500.0
+          ]
+        },
+        "checked": "2026-11-22T23:35:58+00:00"
       },
       "offGap": 60.44,
       "pick": "UCLA Bruins",
@@ -227,9 +236,9 @@
       "awaySpreadOdds": -110,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 145.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotal": 144.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "home": "USC Trojans",
       "homeMoneyline": -10000,
       "homePDpg": 34.4,
@@ -240,11 +249,11 @@
       "lineMove": {
         "spread": [
           -33.5,
-          -32.5
+          -31.5
         ],
         "total": [
           146.5,
-          145.5
+          144.5
         ],
         "ml": {
           "home": [
@@ -256,7 +265,7 @@
             null
           ]
         },
-        "checked": "2026-11-22T21:50:26+00:00"
+        "checked": "2026-11-22T23:35:58+00:00"
       },
       "offGap": 67.86,
       "pick": "USC Trojans",

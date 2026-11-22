@@ -1366,9 +1366,9 @@
       "awayYPP": 4.7,
       "confidence": "lean",
       "correct": null,
-      "gameTotal": 46.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -114,
+      "gameTotal": 44.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -106,
       "home": "San Francisco 49ers",
       "homeMoneyline": -170,
       "homePDpg": 6.485,
@@ -1397,23 +1397,23 @@
       "lineMove": {
         "spread": [
           -3.5,
-          -3.5
+          -4.5
         ],
         "total": [
           46.5,
-          46.5
+          44.5
         ],
         "ml": {
           "home": [
             -205.0,
-            -189.0
+            -205.0
           ],
           "away": [
             170.0,
-            159.0
+            171.0
           ]
         },
-        "checked": "2026-11-22T22:54:33+00:00"
+        "checked": "2026-11-22T23:35:58+00:00"
       },
       "offGap": 90.32,
       "pick": "San Francisco 49ers",
@@ -1421,8 +1421,19 @@
       "pickReturn": null,
       "pickSpreadReturn": null,
       "starterOut": {
+        "checked": "2026-11-22T23:35:57+00:00",
+        "line": {
+          "open": -3.5,
+          "now": -4.5
+        },
         "away": [
           {
+            "player": "Kyler Murray",
+            "pos": "QB",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 2,
             "avg": [
               6,
               25.7,
@@ -1449,15 +1460,15 @@
                   3.0
                 ]
               }
-            ],
-            "lastGame": false,
-            "missed": 2,
-            "out": true,
-            "player": "Kyler Murray",
-            "pos": "QB",
-            "status": "Out"
+            ]
           },
           {
+            "player": "Jordan Addison",
+            "pos": "WR",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 1,
             "avg": [
               7,
               5.1,
@@ -1520,18 +1531,17 @@
                   0.5
                 ]
               }
-            ],
-            "lastGame": false,
-            "missed": 1,
-            "out": true,
-            "player": "Jordan Addison",
-            "pos": "WR",
-            "status": "Out"
+            ]
           }
         ],
-        "checked": "2026-11-22T15:22:15+00:00",
         "home": [
           {
+            "player": "Mike Evans",
+            "pos": "WR",
+            "status": "Questionable",
+            "out": false,
+            "lastGame": false,
+            "missed": 3,
             "avg": [
               6,
               6.5,
@@ -1594,19 +1604,9 @@
                   0.0
                 ]
               }
-            ],
-            "lastGame": false,
-            "missed": 3,
-            "out": false,
-            "player": "Mike Evans",
-            "pos": "WR",
-            "status": "Questionable"
+            ]
           }
-        ],
-        "line": {
-          "now": -3.5,
-          "open": -3.5
-        }
+        ]
       },
       "statLines": [
         "PD/g +3.1 vs +6.5 (blended)",

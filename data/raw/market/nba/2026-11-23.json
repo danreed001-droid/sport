@@ -1,7 +1,7 @@
 {
  "date": "2026-11-23",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-22T22:53:32+00:00",
+ "fetchedAt": "2026-11-22T23:35:04+00:00",
  "games": [
   {
    "away": "Portland Trail Blazers",
@@ -170,14 +170,14 @@
    "start": "2026-11-24T01:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": null,
-    "open": null,
+    "home": -12.5,
+    "open": -12.5,
     "tix_home": null,
     "money_home": null
    },
    "total": {
-    "now": null,
-    "open": null,
+    "now": 226.5,
+    "open": 226.5,
     "tix_over": null,
     "money_over": null
    },

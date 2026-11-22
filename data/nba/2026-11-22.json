@@ -724,11 +724,10 @@
           "4432573": "out"
         },
         "home": {
-          "4845374": "day-to-day",
-          "4278129": "day-to-day",
           "4997537": "out",
           "4432187": "out",
-          "4432907": "out"
+          "4432907": "out",
+          "4606840": "out"
         }
       },
       "lineMove": {
@@ -820,9 +819,9 @@
       "awaySpreadOdds": 107,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 236.5,
-      "gameTotalOverOdds": -109,
-      "gameTotalUnderOdds": -111,
+      "gameTotal": 237.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113,
       "home": "Chicago Bulls",
       "homeMoneyline": 395,
       "homeNetRtg": -7.5,
@@ -847,7 +846,7 @@
         ],
         "total": [
           237.5,
-          236.5
+          237.5
         ],
         "ml": {
           "home": [
@@ -860,11 +859,11 @@
           ]
         },
         "public": {
-          "betsHome": 36,
-          "moneyHome": 56,
+          "betsHome": 38,
+          "moneyHome": 54,
           "rlm": null
         },
-        "checked": "2026-11-22T22:54:33+00:00"
+        "checked": "2026-11-22T23:35:58+00:00"
       },
       "netRtgGap": 37.93,
       "pick": "Denver Nuggets",
@@ -1086,7 +1085,7 @@
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 236.5
+      "totalsLine": 237.5
     },
     {
       "altCategoryTally": "4-3",
@@ -1161,11 +1160,11 @@
           ]
         },
         "public": {
-          "betsHome": 22,
-          "moneyHome": 26,
+          "betsHome": 25,
+          "moneyHome": 24,
           "rlm": null
         },
-        "checked": "2026-11-22T22:54:33+00:00"
+        "checked": "2026-11-22T23:35:58+00:00"
       },
       "netRtgGap": 24.14,
       "pick": null,
@@ -1509,11 +1508,11 @@
           ]
         },
         "public": {
-          "betsHome": 41,
-          "moneyHome": 34,
+          "betsHome": 47,
+          "moneyHome": 42,
           "rlm": null
         },
-        "checked": "2026-11-22T22:54:33+00:00"
+        "checked": "2026-11-22T23:35:58+00:00"
       },
       "netRtgGap": 44.83,
       "pick": "New York Knicks",
@@ -1988,11 +1987,11 @@
           ]
         },
         "public": {
-          "betsHome": 40,
-          "moneyHome": 42,
+          "betsHome": 43,
+          "moneyHome": 47,
           "rlm": null
         },
-        "checked": "2026-11-22T22:54:33+00:00"
+        "checked": "2026-11-22T23:35:58+00:00"
       },
       "netRtgGap": 58.62,
       "pick": "Boston Celtics",
