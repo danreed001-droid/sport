@@ -301,11 +301,11 @@
           ]
         },
         "public": {
-          "betsHome": 66,
-          "moneyHome": 34,
+          "betsHome": 63,
+          "moneyHome": 47,
           "rlm": null
         },
-        "checked": "2026-11-21T23:21:34+00:00"
+        "checked": "2026-11-22T00:02:42+00:00"
       },
       "netRtgGap": 3.45,
       "pick": null,
@@ -597,11 +597,11 @@
           "4396818": "out"
         },
         "home": {
+          "4278078": "out",
           "5106040": "out",
-          "4278078": "day-to-day",
-          "4896372": "day-to-day",
           "4683688": "out",
-          "5279129": "out"
+          "5279129": "out",
+          "5148538": "out"
         }
       },
       "lineMove": {
@@ -624,11 +624,11 @@
           ]
         },
         "public": {
-          "betsHome": 57,
-          "moneyHome": 58,
+          "betsHome": 55,
+          "moneyHome": 50,
           "rlm": null
         },
-        "checked": "2026-11-21T23:21:34+00:00"
+        "checked": "2026-11-22T00:02:42+00:00"
       },
       "netRtgGap": 13.79,
       "pick": null,
@@ -638,7 +638,7 @@
       "skipReason": "netrtg-gap",
       "skipped": true,
       "starterOut": {
-        "checked": "2026-11-21T21:55:03+00:00",
+        "checked": "2026-11-22T00:02:42+00:00",
         "line": {
           "open": -5.5,
           "now": -4.5
@@ -648,8 +648,8 @@
           {
             "player": "P.J. Washington",
             "pos": "SF",
-            "status": "Day-To-Day",
-            "out": false,
+            "status": "Out",
+            "out": true,
             "lastGame": true,
             "missed": 0,
             "avg": [
@@ -713,8 +713,8 @@
       "statsLine": {
         "homeSpread": -4.5,
         "awaySpread": 4.5,
-        "homeSpreadOdds": -112,
-        "awaySpreadOdds": -108,
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
         "homeMoneyline": -191,
         "awayMoneyline": 160
       },
@@ -787,19 +787,19 @@
         "ml": {
           "home": [
             -191.0,
-            -222.0
+            -218.0
           ],
           "away": [
             160.0,
-            184.0
+            181.0
           ]
         },
         "public": {
-          "betsHome": 42,
-          "moneyHome": 42,
+          "betsHome": 35,
+          "moneyHome": 33,
           "rlm": null
         },
-        "checked": "2026-11-21T23:21:34+00:00"
+        "checked": "2026-11-22T00:02:42+00:00"
       },
       "netRtgGap": 3.44,
       "pick": null,
@@ -963,10 +963,10 @@
       "statsLine": {
         "homeSpread": -5.5,
         "awaySpread": 5.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
-        "homeMoneyline": -222,
-        "awayMoneyline": 184
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -218,
+        "awayMoneyline": 181
       },
       "statsSpread": -5.5,
       "storylines": [
@@ -1075,11 +1075,11 @@
           ]
         },
         "public": {
-          "betsHome": 45,
-          "moneyHome": 54,
+          "betsHome": 47,
+          "moneyHome": 55,
           "rlm": null
         },
-        "checked": "2026-11-21T23:21:34+00:00"
+        "checked": "2026-11-22T00:02:42+00:00"
       },
       "netRtgGap": 79.31,
       "pick": "San Antonio Spurs",
@@ -1468,11 +1468,11 @@
           ]
         },
         "public": {
-          "betsHome": 48,
-          "moneyHome": 73,
+          "betsHome": 36,
+          "moneyHome": 68,
           "rlm": null
         },
-        "checked": "2026-11-21T23:21:34+00:00"
+        "checked": "2026-11-22T00:02:42+00:00"
       },
       "netRtgGap": 96.55,
       "pick": "Boston Celtics",

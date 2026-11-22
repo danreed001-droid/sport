@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-21T23:20:55+00:00",
+ "fetchedAt": "2026-11-22T00:02:04+00:00",
  "games": [
   {
    "away": "Milwaukee Bucks",
@@ -34,17 +34,17 @@
    "spread": {
     "home": 1.5,
     "open": -5.5,
-    "tix_home": 66,
-    "money_home": 34
+    "tix_home": 63,
+    "money_home": 47
    },
    "total": {
     "now": 213.5,
     "open": 218.5,
-    "tix_over": 57,
-    "money_over": 60
+    "tix_over": 67,
+    "money_over": 68
    },
    "moneyline": {
-    "home": -105,
+    "home": -104,
     "away": -115
    },
    "rlmFavorite": null
@@ -55,16 +55,16 @@
    "start": "2026-11-22T01:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -5,
+    "home": -4.5,
     "open": -5.5,
-    "tix_home": 57,
-    "money_home": 58
+    "tix_home": 55,
+    "money_home": 50
    },
    "total": {
     "now": 230.5,
     "open": 230.5,
-    "tix_over": 55,
-    "money_over": 53
+    "tix_over": 52,
+    "money_over": 54
    },
    "moneyline": {
     "home": -200,
@@ -80,14 +80,14 @@
    "spread": {
     "home": -5.5,
     "open": -5.5,
-    "tix_home": 42,
-    "money_home": 42
+    "tix_home": 35,
+    "money_home": 33
    },
    "total": {
     "now": 228.5,
     "open": 228.5,
-    "tix_over": 39,
-    "money_over": 37
+    "tix_over": 40,
+    "money_over": 39
    },
    "moneyline": {
     "home": -225,
@@ -103,18 +103,18 @@
    "spread": {
     "home": -18.5,
     "open": -16.5,
-    "tix_home": 45,
-    "money_home": 54
+    "tix_home": 47,
+    "money_home": 55
    },
    "total": {
     "now": 229.5,
     "open": 225.5,
-    "tix_over": 75,
-    "money_over": 72
+    "tix_over": 77,
+    "money_over": 76
    },
    "moneyline": {
     "home": -2000,
-    "away": 950
+    "away": 1000
    },
    "rlmFavorite": null
   },
@@ -126,14 +126,14 @@
    "spread": {
     "home": 11.5,
     "open": 13.5,
-    "tix_home": 48,
-    "money_home": 73
+    "tix_home": 36,
+    "money_home": 68
    },
    "total": {
-    "now": 215.5,
+    "now": 216.5,
     "open": 216.5,
-    "tix_over": 71,
-    "money_over": 74
+    "tix_over": 54,
+    "money_over": 60
    },
    "moneyline": {
     "home": 450,
