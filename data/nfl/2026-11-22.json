@@ -11,7 +11,8 @@
     "PIT@PHI: Aaron Rodgers passer rating corrected 86.2 -> 86.4. No pick change.",
     "TB@DET: QB ratings corrected (Goff 112.5 -> 105.9, Mayfield 79.0 -> 74.9); Mayfield confirmed active and D.J. Reed inactive, so Injuries/Lineup -> neutral and Market rationale restated; tally 8-7 -> 8-5. Still a pass, no pick change.",
     "LV@DEN: filled in null QB ratings (Mendoza 75.4, Nix 84.7). No pick change.",
-    "MIN@SF: Kirk Cousins passer rating corrected 90.8 -> 96.8 (CBS). Ledger 'lean' San Francisco re-confirmed, no pick change."
+    "MIN@SF: Kirk Cousins passer rating corrected 90.8 -> 96.8 (CBS). Ledger 'lean' San Francisco re-confirmed, no pick change.",
+    "PIT@PHI: game row deleted at user request 2026-11-22 \u2014 the entry was created in error. Slate goes from 11 games to 10; nothing else on the slate changed."
   ],
   "auditedAt": "2026-11-22T17:00:50Z",
   "games": [
@@ -473,100 +474,6 @@
           "unit": "ATS",
           "weight": 1
         }
-      ],
-      "time": "1:00 PM ET"
-    },
-    {
-      "altBlowoutCheck": "Neither team's last game was a win (Steelers lost by 20, Eagles lost by 8) \u2014 not applicable to either side.",
-      "altBlowoutFavors": null,
-      "altCategoryTally": "4-3",
-      "altConfidence": "pass",
-      "altCorrect": null,
-      "altCover": null,
-      "altPick": null,
-      "altReasons": [
-        "Scoring margin: favors Steelers (Pittsburgh's +1.2 blended PD/g is clean under a full-season Rodgers; Philadelphia's -2.5 is additionally unreliable since Joe Milton \u2014 Philly's 3rd different starter this season after Hurts' season-ending blood clot diagnosis and McKee's benching \u2014 is making only his 2nd start)",
-        "Form: neutral (Philadelphia's last 3 played games were started mostly by McKee, not tonight's Milton, so that record is discounted; but Pittsburgh's own recent form isn't clearly strong either \u2014 the Steelers were blown out 38-18 by Cincinnati last week \u2014 so the category can't be awarded to Pittsburgh by default)",
-        "Rest: favors Eagles (coming off their Week 10 bye)",
-        "Injuries/Lineup (weighted x2 \u2014 multi-starter cluster): favors Eagles (Steelers have WR Michael Pittman Jr. and G Gennings Dunker both questionable \u2014 a WR+OL cluster)",
-        "Motivation/Spot: favors Steelers (mild \u2014 a bounce-back spot for a playoff-contending team after a bad loss, versus an Eagles team playing out a 7-game skid behind a 3rd-string QB)",
-        "Market: favors Steelers (the line has swung a full 9 points toward Pittsburgh since opening, from Eagles -5.5 to Steelers -3.5, reflecting Milton's struggles)",
-        "Matchup splits: favors Steelers (mild \u2014 T.J. Watt's healthy pass rush against a protection unit already breaking in a 2nd-start QB)"
-      ],
-      "altReturn": null,
-      "altSpreadReturn": null,
-      "altTrendCheck": "Steelers prior game (Wk10, lost 18-38 at CIN): 222 total net yds, 120 net passing yds on 32 att (3.75 YPA), 23 rush att/102 yds \u2014 lost by 20 but well under the 426-yard bar, no pattern matched. Eagles prior game (Wk9, lost 11-19 vs NYG, then had the Wk10 bye): 220 total net yds, 128 net passing yds on 34 att (3.76 YPA), 25 rush att/92 yds \u2014 lost by 8, no pattern matched.",
-      "altTrendFavors": null,
-      "auditNote": "Aaron Rodgers' passer rating corrected from 86.2 to 86.4 per CBS. The QB veto still clears comfortably, so the Ledger stays 'lean' Pittsburgh and the Second Opinion stays a 4-3 pass.",
-      "away": "Pittsburgh Steelers",
-      "awayMoneyline": -196,
-      "awayPDpg": 1.185,
-      "awayQB": "Aaron Rodgers",
-      "awayQBRating": 86.4,
-      "awayScore": null,
-      "awaySpread": -3.5,
-      "awaySpreadOdds": -111,
-      "awayYPP": 5.1,
-      "confidence": "lean",
-      "correct": null,
-      "gameTotal": 37.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -112,
-      "home": "Philadelphia Eagles",
-      "homeMoneyline": 164,
-      "homePDpg": -2.465,
-      "homeQB": "Joe Milton III",
-      "homeQBRating": 66.9,
-      "homeScore": null,
-      "homeSpread": 3.5,
-      "homeSpreadOdds": -109,
-      "homeYPP": 4.3,
-      "injuries": {
-        "away": {
-          "3929846": "questionable",
-          "4035687": "injured reserve",
-          "4242207": "questionable",
-          "4429164": "out",
-          "4431492": "questionable"
-        },
-        "home": {
-          "3917657": "injured reserve",
-          "4040715": "injured reserve",
-          "4428850": "injured reserve",
-          "4431545": "questionable",
-          "4431573": "doubtful"
-        }
-      },
-      "lineMove": {
-        "checked": "2026-11-22T16:03:50+00:00",
-        "ml": {
-          "away": [
-            205.0,
-            -200.0
-          ],
-          "home": [
-            -250.0,
-            168.0
-          ]
-        },
-        "spread": [
-          -5.5,
-          3.5
-        ],
-        "total": [
-          42.5,
-          37.5
-        ]
-      },
-      "offGap": 32.26,
-      "pick": "Pittsburgh Steelers",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
-      "statLines": [
-        "PD/g +1.2 vs -2.5 (blended)",
-        "Yds/play 5.1 vs 4.3 \u00b7 32.3-pt gap",
-        "QB rating 86.4 vs 66.9 (Rodgers vs Milton)"
       ],
       "time": "1:00 PM ET"
     },
