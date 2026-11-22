@@ -98,8 +98,8 @@
       ],
       "time": "4:30 PM GMT",
       "gameTotal": 3.5,
-      "gameTotalOverOdds": 120,
-      "gameTotalUnderOdds": -150,
+      "gameTotalOverOdds": 125,
+      "gameTotalUnderOdds": -155,
       "lineMove": {
         "spread": [
           -0.5,
@@ -112,18 +112,18 @@
         "ml": {
           "home": [
             -125.0,
-            -130.0
+            -125.0
           ],
           "away": [
             290.0,
-            320.0
+            300.0
           ],
           "draw": [
             290.0,
             310.0
           ]
         },
-        "checked": "2026-11-22T15:22:16+00:00"
+        "checked": "2026-11-22T16:03:49+00:00"
       }
     },
     {
@@ -639,7 +639,7 @@
       ],
       "time": "6:00 PM CET",
       "gameTotal": 3.5,
-      "gameTotalOverOdds": 105,
+      "gameTotalOverOdds": 100,
       "gameTotalUnderOdds": -130,
       "lineMove": {
         "spread": [
@@ -653,18 +653,18 @@
         "ml": {
           "home": [
             -200.0,
-            -170.0
+            -175.0
           ],
           "away": [
             390.0,
-            360.0
+            380.0
           ],
           "draw": [
             340.0,
-            320.0
+            330.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:49+00:00"
       }
     },
     {
@@ -833,8 +833,8 @@
       ],
       "time": "5:15 PM CET",
       "gameTotal": 2.5,
-      "gameTotalOverOdds": 115,
-      "gameTotalUnderOdds": -150,
+      "gameTotalOverOdds": 110,
+      "gameTotalUnderOdds": -140,
       "lineMove": {
         "spread": [
           0.5,
@@ -847,18 +847,18 @@
         "ml": {
           "home": [
             180.0,
-            230.0
+            290.0
           ],
           "away": [
             140.0,
-            130.0
+            105.0
           ],
           "draw": [
             240.0,
-            220.0
+            230.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:49+00:00"
       }
     },
     {

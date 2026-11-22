@@ -65,7 +65,7 @@
       "lineMove": {
         "spread": [
           4.5,
-          -3.0
+          -2.5
         ],
         "total": [
           46.5,
@@ -74,14 +74,14 @@
         "ml": {
           "home": [
             180.0,
-            -145.0
+            -140.0
           ],
           "away": [
             -218.0,
-            123.0
+            119.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:49+00:00"
       },
       "offGap": 12.9,
       "pick": null,
@@ -113,8 +113,8 @@
       ],
       "time": "1:00 PM ET",
       "gameTotal": 44.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -113
+      "gameTotalOverOdds": -104,
+      "gameTotalUnderOdds": -115
     },
     {
       "altBlowoutCheck": "Neither team's last game was a win (Chiefs lost by 4, Cardinals lost by 28) \u2014 not applicable to either side.",
@@ -328,14 +328,14 @@
         "ml": {
           "home": [
             -600.0,
-            -1540.0
+            -1560.0
           ],
           "away": [
             440.0,
             890.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:50+00:00"
       },
       "offGap": 61.29,
       "pick": "Buffalo Bills",
@@ -421,14 +421,14 @@
         "ml": {
           "home": [
             -278.0,
-            -660.0
+            -670.0
           ],
           "away": [
             225.0,
-            479.0
+            488.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:50+00:00"
       },
       "offGap": 41.94,
       "pick": "Chicago Bears",
@@ -535,10 +535,10 @@
           ],
           "away": [
             205.0,
-            -201.0
+            -200.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:50+00:00"
       },
       "offGap": 32.26,
       "pick": "Pittsburgh Steelers",
@@ -625,14 +625,14 @@
         "ml": {
           "home": [
             -230.0,
-            -220.0
+            -219.0
           ],
           "away": [
             190.0,
             183.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:50+00:00"
       },
       "nflStatsCheck": "Rule 4: Fading Detroit Lions: Jared Goff threw for 303 yards in last game's win (300+), and Detroit Lions is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
       "nflStatsFavors": "Tampa Bay Buccaneers",
@@ -965,10 +965,10 @@
           ],
           "away": [
             340.0,
-            146.0
+            145.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:50+00:00"
       },
       "offGap": 35.48,
       "pick": null,
@@ -1001,8 +1001,8 @@
       ],
       "time": "4:05 PM ET",
       "gameTotal": 42.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -112
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -107
     },
     {
       "altBlowoutCheck": "Jaguars' last game was a 17-point win (40-23 over Tennessee) \u2014 checked: takeaway margin was even (1-1), but the game was within one score (16-10) at halftime before Jacksonville pulled away \u2014 padded-win condition met via the halftime leg; Jacksonville is favored by 5.5-6 points today, well above the +3 threshold \u2014 condition met; today's opponent, New York, is not top-10 in takeaways, not top-5 in points allowed, and not top-5 in pass defense \u2014 condition not met; Jacksonville ran the ball 36 times in that win, above the volume threshold \u2014 condition met; Trevor Lawrence's interceptions have been a recurring, cited turning point in both of Jacksonville's losses this season \u2014 condition met. 4 of 5 conditions hold \u2014 the check FIRES: +6 points added to New York's side of the combined tally, flipping this game's lead from Jacksonville (3-1 on the base category count) to New York (7-3 combined).",
@@ -1186,10 +1186,10 @@
           ],
           "away": [
             330.0,
-            471.0
+            469.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:50+00:00"
       },
       "nflStatsCheck": "Rule 10: Fading Las Vegas Raiders: 4-6 straight up but 6-4 against the spread (60%) -- a losing team that keeps covering was faded 61.9% of the time ATS in its next game, 2017-2025 (n=147), no losing season.",
       "nflStatsFavors": "Denver Broncos",
@@ -1383,14 +1383,14 @@
         "ml": {
           "home": [
             -205.0,
-            -175.0
+            -176.0
           ],
           "away": [
             170.0,
-            147.0
+            148.0
           ]
         },
-        "checked": "2026-11-22T15:22:17+00:00"
+        "checked": "2026-11-22T16:03:50+00:00"
       },
       "offGap": 90.32,
       "pick": "San Francisco 49ers",
