@@ -1,7 +1,7 @@
 {
  "date": "2026-11-21",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-22T00:02:04+00:00",
+ "fetchedAt": "2026-11-22T01:04:27+00:00",
  "games": [
   {
    "away": "Milwaukee Bucks",
@@ -55,16 +55,16 @@
    "start": "2026-11-22T01:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -4.5,
+    "home": -5.5,
     "open": -5.5,
-    "tix_home": 55,
-    "money_home": 50
+    "tix_home": 56,
+    "money_home": 48
    },
    "total": {
     "now": 230.5,
     "open": 230.5,
     "tix_over": 52,
-    "money_over": 54
+    "money_over": 57
    },
    "moneyline": {
     "home": -200,
@@ -80,18 +80,18 @@
    "spread": {
     "home": -5.5,
     "open": -5.5,
-    "tix_home": 35,
-    "money_home": 33
+    "tix_home": 49,
+    "money_home": 49
    },
    "total": {
-    "now": 228.5,
+    "now": 227.5,
     "open": 228.5,
-    "tix_over": 40,
-    "money_over": 39
+    "tix_over": 37,
+    "money_over": 44
    },
    "moneyline": {
-    "home": -225,
-    "away": 185
+    "home": -220,
+    "away": 180
    },
    "rlmFavorite": null
   },
@@ -101,22 +101,22 @@
    "start": "2026-11-22T01:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -18.5,
+    "home": -19.5,
     "open": -16.5,
-    "tix_home": 47,
-    "money_home": 55
+    "tix_home": 29,
+    "money_home": 36
    },
    "total": {
-    "now": 229.5,
+    "now": 226.5,
     "open": 225.5,
-    "tix_over": 77,
-    "money_over": 76
+    "tix_over": 50,
+    "money_over": 46
    },
    "moneyline": {
-    "home": -2000,
-    "away": 1000
+    "home": -2500,
+    "away": 1150
    },
-   "rlmFavorite": null
+   "rlmFavorite": "San Antonio Spurs"
   },
   {
    "away": "Boston Celtics",
@@ -124,20 +124,20 @@
    "start": "2026-11-22T03:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 11.5,
+    "home": 12.5,
     "open": 13.5,
-    "tix_home": 36,
-    "money_home": 68
+    "tix_home": 35,
+    "money_home": 64
    },
    "total": {
     "now": 216.5,
     "open": 216.5,
-    "tix_over": 54,
-    "money_over": 60
+    "tix_over": 51,
+    "money_over": 55
    },
    "moneyline": {
-    "home": 450,
-    "away": -600
+    "home": 475,
+    "away": -650
    },
    "rlmFavorite": null
   }

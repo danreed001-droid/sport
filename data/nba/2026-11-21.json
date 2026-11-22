@@ -624,11 +624,11 @@
           ]
         },
         "public": {
-          "betsHome": 55,
-          "moneyHome": 50,
+          "betsHome": 56,
+          "moneyHome": 48,
           "rlm": null
         },
-        "checked": "2026-11-22T00:02:42+00:00"
+        "checked": "2026-11-22T01:04:32+00:00"
       },
       "netRtgGap": 13.79,
       "pick": null,
@@ -751,7 +751,7 @@
       "awaySpreadOdds": -102,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 228.5,
+      "gameTotal": 227.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110,
       "home": "Minnesota Timberwolves",
@@ -782,7 +782,7 @@
         ],
         "total": [
           227.5,
-          228.5
+          227.5
         ],
         "ml": {
           "home": [
@@ -795,11 +795,11 @@
           ]
         },
         "public": {
-          "betsHome": 35,
-          "moneyHome": 33,
+          "betsHome": 49,
+          "moneyHome": 49,
           "rlm": null
         },
-        "checked": "2026-11-22T00:02:42+00:00"
+        "checked": "2026-11-22T01:04:32+00:00"
       },
       "netRtgGap": 3.44,
       "pick": null,
@@ -963,8 +963,8 @@
       "statsLine": {
         "homeSpread": -5.5,
         "awaySpread": 5.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
         "homeMoneyline": -218,
         "awayMoneyline": 181
       },
@@ -1000,7 +1000,7 @@
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 228.5
+      "totalsLine": 227.5
     },
     {
       "altCategoryTally": "0-5",
@@ -1031,9 +1031,9 @@
       "awaySpreadOdds": -105,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 229.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -113,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "San Antonio Spurs",
       "homeMoneyline": -1500,
       "homeNetRtg": 11.4,
@@ -1043,11 +1043,11 @@
       "homeSpreadOdds": -115,
       "injuries": {
         "away": {
+          "4395628": "out",
           "4397688": "out",
           "4431675": "out",
           "4576086": "out",
-          "4683634": "out",
-          "3907497": "out"
+          "4683634": "out"
         },
         "home": {
           "5037871": "out",
@@ -1058,11 +1058,11 @@
       "lineMove": {
         "spread": [
           -16.5,
-          -18.5
+          -19.5
         ],
         "total": [
           226.5,
-          229.5
+          226.5
         ],
         "ml": {
           "home": [
@@ -1075,11 +1075,11 @@
           ]
         },
         "public": {
-          "betsHome": 47,
-          "moneyHome": 55,
-          "rlm": null
+          "betsHome": 29,
+          "moneyHome": 36,
+          "rlm": "San Antonio Spurs"
         },
-        "checked": "2026-11-22T00:02:42+00:00"
+        "checked": "2026-11-22T01:04:32+00:00"
       },
       "netRtgGap": 79.31,
       "pick": "San Antonio Spurs",
@@ -1089,10 +1089,10 @@
       "skipReason": null,
       "skipped": false,
       "starterOut": {
-        "checked": "2026-11-21T18:41:42+00:00",
+        "checked": "2026-11-22T01:04:32+00:00",
         "line": {
           "open": -16.5,
-          "now": -18.5
+          "now": -19.5
         },
         "away": [
           {
@@ -1174,79 +1174,79 @@
             ]
           },
           {
-            "player": "Dejounte Murray",
-            "pos": "PG",
+            "player": "Zion Williamson",
+            "pos": "SF",
             "status": "Out",
             "out": true,
-            "lastGame": false,
-            "missed": 5,
+            "lastGame": true,
+            "missed": 0,
             "avg": [
-              9,
-              31.4,
-              13.4,
-              4.6,
-              4.4,
-              0.9
+              16,
+              32.4,
+              21.7,
+              5.4,
+              2.8,
+              0.4
             ],
             "gainers": [
               {
-                "player": "Jaron Pierre Jr.",
+                "player": "AJ Johnson",
                 "pos": "SG",
                 "with": [
-                  1,
-                  7.0,
-                  4.0,
-                  4.0,
+                  5,
+                  4.6,
+                  1.0,
+                  0.2,
                   0.0,
-                  1.0
+                  0.0
                 ],
                 "without": [
-                  5,
-                  13.4,
-                  6.6,
-                  1.8,
-                  0.2,
-                  1.2
+                  1,
+                  12.0,
+                  2.0,
+                  2.0,
+                  3.0,
+                  0.0
                 ]
               },
               {
-                "player": "Jeremiah Fears",
-                "pos": "PG",
+                "player": "Julian Reese",
+                "pos": "PF",
                 "with": [
-                  9,
-                  27.6,
-                  14.3,
-                  4.1,
-                  3.6,
+                  5,
+                  4.4,
+                  0.8,
+                  1.2,
+                  0.2,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  9.0,
+                  2.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Karlo Matkovic",
+                "pos": "PF",
+                "with": [
+                  15,
+                  17.4,
+                  6.6,
+                  3.5,
+                  0.8,
                   1.1
                 ],
                 "without": [
-                  8,
-                  32.9,
-                  17.8,
+                  1,
+                  17.0,
+                  4.0,
                   6.0,
-                  7.5,
-                  1.4
-                ]
-              },
-              {
-                "player": "Jordan Poole",
-                "pos": "PG",
-                "with": [
-                  6,
-                  19.8,
-                  7.5,
-                  1.8,
-                  2.5,
-                  1.0
-                ],
-                "without": [
-                  5,
-                  23.8,
-                  13.2,
-                  1.4,
-                  4.2,
-                  1.6
+                  2.0,
+                  0.0
                 ]
               }
             ]
@@ -1339,11 +1339,11 @@
         "Pelicans: Dejounte Murray, Bennedict Mathurin, Bryce McGowens, Trendon Watford out",
         "Spurs: Dylan Harper, Tobias Harris, Jayden Quaintance out"
       ],
-      "statsCheck": "Rule 49: Fading New Orleans Pelicans: only 8 players played 10+ minutes in last night's game (vs Oklahoma City Thunder), now a +18.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13. Rule 53: Fading New Orleans Pelicans: 5-12 on the season, a +18.5 underdog on the road on the second night of a back-to-back (played at Oklahoma City Thunder last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10.",
+      "statsCheck": "Rule 49: Fading New Orleans Pelicans: only 8 players played 10+ minutes in last night's game (vs Oklahoma City Thunder), now a +19.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13. Rule 50: Fading New Orleans Pelicans: 71% of spread bets are on New Orleans Pelicans at +19.5, but the line has moved from +16.5 toward San Antonio Spurs since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24). Rule 53: Fading New Orleans Pelicans: 5-12 on the season, a +19.5 underdog on the road on the second night of a back-to-back (played at Oklahoma City Thunder last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10.",
       "statsFavors": "San Antonio Spurs",
       "statsLine": {
-        "homeSpread": -18.5,
-        "awaySpread": 18.5,
+        "homeSpread": -19.5,
+        "awaySpread": 19.5,
         "homeSpreadOdds": -114,
         "awaySpreadOdds": -106,
         "homeMoneyline": -1700,
@@ -1354,16 +1354,22 @@
           "rule": 49,
           "name": "Fade a 7+ point underdog on a back-to-back that used 8 or fewer players (10+ min) last game (on trial)",
           "backtest": "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
-          "detail": "Fading New Orleans Pelicans: only 8 players played 10+ minutes in last night's game (vs Oklahoma City Thunder), now a +18.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
+          "detail": "Fading New Orleans Pelicans: only 8 players played 10+ minutes in last night's game (vs Oklahoma City Thunder), now a +19.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
+        },
+        {
+          "rule": 50,
+          "name": "Back the favorite when 60%+ of spread bets are on a 7+ point underdog but the line moved 1-4.5 pts toward the favorite (on trial)",
+          "backtest": "61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)",
+          "detail": "Fading New Orleans Pelicans: 71% of spread bets are on New Orleans Pelicans at +19.5, but the line has moved from +16.5 toward San Antonio Spurs since it opened (Action Network consensus) -- 61.8% ATS, 89-55 (Action Network consensus lines, openers and bet splits; 2024-25: 43-30, 2025-26: 46-24)."
         },
         {
           "rule": 53,
           "name": "Back a home favorite of 10+ vs. a team at .300 or worse on the second night of a back-to-back (on trial)",
           "backtest": "66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10",
-          "detail": "Fading New Orleans Pelicans: 5-12 on the season, a +18.5 underdog on the road on the second night of a back-to-back (played at Oklahoma City Thunder last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10."
+          "detail": "Fading New Orleans Pelicans: 5-12 on the season, a +19.5 underdog on the road on the second night of a back-to-back (played at Oklahoma City Thunder last night) -- 66.7% ATS, 76-38 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 23-14; 2024-now 31-10."
         }
       ],
-      "statsSpread": -18.5,
+      "statsSpread": -19.5,
       "storylines": [
         {
           "weight": 1,
@@ -1372,7 +1378,7 @@
           "name": "The emperor's new clothes",
           "team": "San Antonio Spurs",
           "says": "fade",
-          "fact": "San Antonio Spurs is a -18.5 favorite but has covered 6 of 16 this season.",
+          "fact": "San Antonio Spurs is a -19.5 favorite but has covered 6 of 16 this season.",
           "record": "183-156",
           "pct": 54.0,
           "leans": "New Orleans Pelicans",
@@ -1395,7 +1401,7 @@
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 229.5
+      "totalsLine": 226.5
     },
     {
       "altCategoryTally": "1-2",
@@ -1451,7 +1457,7 @@
       "lineMove": {
         "spread": [
           12.5,
-          12.5
+          11.5
         ],
         "total": [
           217.5,
@@ -1468,11 +1474,11 @@
           ]
         },
         "public": {
-          "betsHome": 36,
-          "moneyHome": 68,
+          "betsHome": 35,
+          "moneyHome": 64,
           "rlm": null
         },
-        "checked": "2026-11-22T00:02:42+00:00"
+        "checked": "2026-11-22T01:04:32+00:00"
       },
       "netRtgGap": 96.55,
       "pick": "Boston Celtics",
@@ -1482,10 +1488,10 @@
       "skipReason": null,
       "skipped": false,
       "starterOut": {
-        "checked": "2026-11-21T21:55:03+00:00",
+        "checked": "2026-11-22T01:04:32+00:00",
         "line": {
           "open": 12.5,
-          "now": 12.5
+          "now": 11.5
         },
         "away": [
           {
@@ -1712,14 +1718,14 @@
         "Celtics: Jayson Tatum (rest) and Derrick White (shoulder) both questionable"
       ],
       "statsLine": {
-        "homeSpread": 12.5,
-        "awaySpread": -12.5,
-        "homeSpreadOdds": -116,
-        "awaySpreadOdds": -104,
+        "homeSpread": 11.5,
+        "awaySpread": -11.5,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
         "homeMoneyline": 446,
         "awayMoneyline": -600
       },
-      "statsSpread": 12.5,
+      "statsSpread": 11.5,
       "storylines": [
         {
           "weight": 1,
@@ -1742,7 +1748,7 @@
           "name": "Rested road favorite",
           "team": "Boston Celtics",
           "says": "back",
-          "fact": "Boston Celtics is a -12.5 road favorite on 3 days' rest; Sacramento Kings played last night (2026-11-20).",
+          "fact": "Boston Celtics is a -11.5 road favorite on 3 days' rest; Sacramento Kings played last night (2026-11-20).",
           "record": "48-34",
           "pct": 58.5,
           "leans": "Boston Celtics",
