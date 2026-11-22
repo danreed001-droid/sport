@@ -17,12 +17,12 @@
       "awaySpreadOdds": -107.0,
       "homeMoneyline": 114.0,
       "awayMoneyline": -135.0,
-      "statsSpread": 2.5,
+      "statsSpread": 1.5,
       "statsLine": {
-        "homeSpread": 2.5,
-        "awaySpread": -2.5,
-        "homeSpreadOdds": -113,
-        "awaySpreadOdds": -107,
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -107,
+        "awaySpreadOdds": -113,
         "homeMoneyline": 110,
         "awayMoneyline": -130
       },
@@ -36,20 +36,20 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Atlanta Hawks: covered its last two games (by 6.5 vs Charlotte Hornets and by 11.5 at Oklahoma City Thunder), now at home in game 17 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 226.5,
+      "totalsLine": 223.5,
       "storylines": [
         {
           "weight": 1,
-          "live": "8-15",
+          "live": "11-15",
           "key": "schedule_loss",
           "name": "The schedule loss",
           "team": "Detroit Pistons",
           "says": "fade",
           "fact": "Detroit Pistons' 4th game in 6 nights, on the road; Atlanta Hawks has had 1 day off.",
-          "record": "870-775",
-          "pct": 52.9,
+          "record": "873-775",
+          "pct": 53.0,
           "leans": "Atlanta Hawks",
-          "leanPct": 52.9,
+          "leanPct": 53.0,
           "against": false
         }
       ],
@@ -70,10 +70,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-22T05:53:13+00:00",
+        "checked": "2026-11-22T15:22:14+00:00",
         "line": {
           "open": 1.5,
-          "now": 2.5
+          "now": 1.5
         },
         "away": [
           {
@@ -317,11 +317,11 @@
       "lineMove": {
         "spread": [
           1.5,
-          2.5
+          1.5
         ],
         "total": [
           227.5,
-          226.5
+          223.5
         ],
         "ml": {
           "home": [
@@ -334,15 +334,15 @@
           ]
         },
         "public": {
-          "betsHome": 47,
-          "moneyHome": 41,
+          "betsHome": 45,
+          "moneyHome": 48,
           "rlm": null
         },
-        "checked": "2026-11-22T06:54:20+00:00"
+        "checked": "2026-11-22T15:22:15+00:00"
       },
-      "gameTotal": 226.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -111,
+      "gameTotalUnderOdds": -109
     },
     {
       "espnId": "401910030",
@@ -355,14 +355,14 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -139.0,
       "awayMoneyline": 117.0,
-      "statsSpread": -2.5,
+      "statsSpread": -3.5,
       "statsLine": {
-        "homeSpread": -2.5,
-        "awaySpread": 2.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -139,
-        "awayMoneyline": 117
+        "homeSpread": -3.5,
+        "awaySpread": 3.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": -165,
+        "awayMoneyline": 139
       },
       "totalsLine": 231.5,
       "storylines": [
@@ -395,10 +395,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-22T05:53:13+00:00",
+        "checked": "2026-11-22T15:22:14+00:00",
         "line": {
           "open": -2.5,
-          "now": -2.5
+          "now": -3.5
         },
         "away": [
           {
@@ -522,7 +522,7 @@
       "lineMove": {
         "spread": [
           -2.5,
-          -2.5
+          -3.5
         ],
         "total": [
           231.5,
@@ -531,23 +531,23 @@
         "ml": {
           "home": [
             -139.0,
-            -139.0
+            -165.0
           ],
           "away": [
             117.0,
-            117.0
+            139.0
           ]
         },
         "public": {
-          "betsHome": 66,
-          "moneyHome": 73,
+          "betsHome": 70,
+          "moneyHome": 75,
           "rlm": null
         },
-        "checked": "2026-11-22T06:54:20+00:00"
+        "checked": "2026-11-22T15:22:15+00:00"
       },
       "gameTotal": 231.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401910031",
@@ -560,14 +560,14 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": 172.0,
       "awayMoneyline": -206.0,
-      "statsSpread": 5.5,
+      "statsSpread": 4.5,
       "statsLine": {
-        "homeSpread": 5.5,
-        "awaySpread": -5.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 172,
-        "awayMoneyline": -206
+        "homeSpread": 4.5,
+        "awaySpread": -4.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
+        "homeMoneyline": 180,
+        "awayMoneyline": -216
       },
       "statsFavors": "Washington Wizards",
       "statsRules": [
@@ -579,7 +579,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Washington Wizards: covered its last two games (by 6.5 at Chicago Bulls and by 8.5 at Toronto Raptors), now at home in game 18 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 222.5,
+      "totalsLine": 219.5,
       "injuries": {
         "away": {
           "4065654": "out",
@@ -597,32 +597,32 @@
       "lineMove": {
         "spread": [
           5.5,
-          5.5
+          4.5
         ],
         "total": [
           222.5,
-          222.5
+          219.5
         ],
         "ml": {
           "home": [
             172.0,
-            172.0
+            180.0
           ],
           "away": [
             -206.0,
-            -206.0
+            -216.0
           ]
         },
         "public": {
-          "betsHome": 61,
-          "moneyHome": 58,
+          "betsHome": 57,
+          "moneyHome": 55,
           "rlm": null
         },
-        "checked": "2026-11-22T06:54:20+00:00"
+        "checked": "2026-11-22T15:22:15+00:00"
       },
-      "gameTotal": 222.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 219.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401910032",
@@ -639,10 +639,10 @@
       "statsLine": {
         "homeSpread": 8.5,
         "awaySpread": -8.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 298,
-        "awayMoneyline": -375
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": 296,
+        "awayMoneyline": -372
       },
       "statsFavors": "Chicago Bulls",
       "statsRules": [
@@ -945,23 +945,23 @@
         "ml": {
           "home": [
             268.0,
-            298.0
+            296.0
           ],
           "away": [
             -333.0,
-            -375.0
+            -372.0
           ]
         },
         "public": {
-          "betsHome": 23,
-          "moneyHome": 23,
+          "betsHome": 49,
+          "moneyHome": 51,
           "rlm": null
         },
-        "checked": "2026-11-22T06:54:20+00:00"
+        "checked": "2026-11-22T15:22:15+00:00"
       },
       "gameTotal": 237.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401910033",
@@ -978,26 +978,16 @@
       "statsLine": {
         "homeSpread": 1.5,
         "awaySpread": -1.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": 105,
-        "awayMoneyline": -125
+        "homeSpreadOdds": -118,
+        "awaySpreadOdds": -102,
+        "homeMoneyline": -108,
+        "awayMoneyline": -110
       },
-      "statsFavors": "Utah Jazz",
-      "statsRules": [
-        {
-          "rule": 57,
-          "name": "Back a team beating the spread by 6+ a game over its last five vs. an opponent with no double-digit rebounder in its last two games, with at least a day off (on trial)",
-          "backtest": "64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35",
-          "detail": "Backing Utah Jazz: beat the spread by 12.7 a game over its last five, and Dallas Mavericks had no double-digit rebounder in its last two games (top: 6 and 6) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35."
-        }
-      ],
-      "statsCheck": "Rule 57: Backing Utah Jazz: beat the spread by 12.7 a game over its last five, and Dallas Mavericks had no double-digit rebounder in its last two games (top: 6 and 6) -- 64.6% ATS, 144-79 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 38-22; 2024-now 65-35.",
       "totalsLine": 225.5,
       "injuries": {
         "away": {
-          "4278078": "out",
-          "5106040": "out",
+          "4278078": "day-to-day",
+          "5106040": "day-to-day",
           "4683688": "out",
           "5279129": "out",
           "5148538": "out"
@@ -1009,7 +999,7 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-22T06:54:19+00:00",
+        "checked": "2026-11-22T15:22:14+00:00",
         "line": {
           "open": 1.5,
           "now": 1.5
@@ -1018,8 +1008,8 @@
           {
             "player": "P.J. Washington",
             "pos": "SF",
-            "status": "Out",
-            "out": true,
+            "status": "Day-To-Day",
+            "out": false,
             "lastGame": false,
             "missed": 1,
             "avg": [
@@ -1265,23 +1255,23 @@
         "ml": {
           "home": [
             101.0,
-            105.0
+            -108.0
           ],
           "away": [
             -119.0,
-            -125.0
+            -110.0
           ]
         },
         "public": {
-          "betsHome": 33,
-          "moneyHome": 38,
+          "betsHome": 29,
+          "moneyHome": 41,
           "rlm": null
         },
-        "checked": "2026-11-22T06:54:20+00:00"
+        "checked": "2026-11-22T15:22:15+00:00"
       },
       "gameTotal": 225.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -114
     },
     {
       "espnId": "401910034",
@@ -1294,16 +1284,16 @@
       "awaySpreadOdds": -115.0,
       "homeMoneyline": -396.0,
       "awayMoneyline": 312.0,
-      "statsSpread": -9.5,
+      "statsSpread": -8.5,
       "statsLine": {
-        "homeSpread": -9.5,
-        "awaySpread": 9.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": -396,
-        "awayMoneyline": 312
+        "homeSpread": -8.5,
+        "awaySpread": 8.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -111,
+        "homeMoneyline": -344,
+        "awayMoneyline": 276
       },
-      "totalsLine": 217.5,
+      "totalsLine": 213.5,
       "storylines": [
         {
           "weight": 1,
@@ -1317,6 +1307,34 @@
           "pct": 54.7,
           "leans": "New York Knicks",
           "leanPct": 54.7,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "9-5",
+          "key": "letdown",
+          "name": "Letdown spot",
+          "team": "New York Knicks",
+          "says": "fade",
+          "fact": "New York Knicks is a -8.5 favorite vs Indiana Pacers (5-11): it's playing its 3rd game in 4 nights and Indiana Pacers is rested.",
+          "record": "364-304",
+          "pct": 54.5,
+          "leans": "Indiana Pacers",
+          "leanPct": 54.5,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "3-2",
+          "key": "road_fresh_dog",
+          "name": "Fresh underdog on the road",
+          "team": "Indiana Pacers",
+          "says": "back",
+          "fact": "Indiana Pacers is a +8.5 road underdog on 2 days' rest; New York Knicks played last night (2026-11-21).",
+          "record": "165-121",
+          "pct": 57.7,
+          "leans": "Indiana Pacers",
+          "leanPct": 57.7,
           "against": false
         }
       ],
@@ -1335,10 +1353,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-22T06:54:19+00:00",
+        "checked": "2026-11-22T15:22:15+00:00",
         "line": {
           "open": -9.5,
-          "now": -9.5
+          "now": -8.5
         },
         "away": [
           {
@@ -1660,32 +1678,42 @@
       "lineMove": {
         "spread": [
           -9.5,
-          -9.5
+          -8.5
         ],
         "total": [
           217.5,
-          217.5
+          213.5
         ],
         "ml": {
           "home": [
             -373.0,
-            -396.0
+            -344.0
           ],
           "away": [
             296.0,
-            312.0
+            276.0
           ]
         },
         "public": {
-          "betsHome": 39,
-          "moneyHome": 36,
+          "betsHome": 46,
+          "moneyHome": 41,
           "rlm": null
         },
-        "checked": "2026-11-22T06:54:20+00:00"
+        "checked": "2026-11-22T15:22:15+00:00"
       },
-      "gameTotal": 217.5,
+      "gameTotal": 213.5,
       "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalUnderOdds": -110,
+      "statsFavors": "Indiana Pacers",
+      "statsRules": [
+        {
+          "rule": 63,
+          "name": "Fade a team on a back-to-back that won last night shooting 45%+ from three (25+ attempts) (on trial)",
+          "backtest": "61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33",
+          "detail": "Fading New York Knicks: won last night shooting 19-of-42 (45%) from three, now on the second night of a back-to-back -- 61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33."
+        }
+      ],
+      "statsCheck": "Rule 63: Fading New York Knicks: won last night shooting 19-of-42 (45%) from three, now on the second night of a back-to-back -- 61.3% ATS, 152-96 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 54-25; 2024-now 39-33."
     },
     {
       "espnId": "401910035",
@@ -1698,51 +1726,51 @@
       "awaySpreadOdds": -116.0,
       "homeMoneyline": 322.0,
       "awayMoneyline": -410.0,
-      "statsSpread": 9.5,
+      "statsSpread": 8.5,
       "statsLine": {
-        "homeSpread": 9.5,
-        "awaySpread": -9.5,
-        "homeSpreadOdds": -104,
-        "awaySpreadOdds": -116,
-        "homeMoneyline": 322,
-        "awayMoneyline": -410
+        "homeSpread": 8.5,
+        "awaySpread": -8.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": 286,
+        "awayMoneyline": -359
       },
-      "totalsLine": 212.5,
+      "totalsLine": 210.5,
       "storylines": [
         {
           "weight": 1,
-          "live": "6-3",
+          "live": "7-3",
           "key": "ghost_town",
           "name": "Ghost town",
           "team": "Golden State Warriors",
           "says": "fade",
-          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +9.5 underdog.",
-          "record": "826-743",
-          "pct": 52.6,
+          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +8.5 underdog.",
+          "record": "827-743",
+          "pct": 52.7,
           "leans": "Boston Celtics",
-          "leanPct": 52.6,
+          "leanPct": 52.7,
           "against": false
         },
         {
           "weight": 1,
-          "live": "3-2",
-          "key": "champions",
-          "name": "Champions don't lose three",
-          "team": "Boston Celtics",
+          "live": "1-0",
+          "key": "home_fresh",
+          "name": "Fresh legs at home",
+          "team": "Golden State Warriors",
           "says": "back",
-          "fact": "Boston Celtics (11-4) lost its last two.",
-          "record": "66-52",
-          "pct": 55.9,
-          "leans": "Boston Celtics",
-          "leanPct": 55.9,
+          "fact": "Golden State Warriors is at home on 3 days' rest; Boston Celtics played last night (2026-11-21).",
+          "record": "118-82",
+          "pct": 59.0,
+          "leans": "Golden State Warriors",
+          "leanPct": 59.0,
           "against": false
         }
       ],
       "injuries": {
         "away": {
-          "4351852": "out",
-          "3078576": "out",
-          "4065648": "out"
+          "3078576": "day-to-day",
+          "4351852": "day-to-day",
+          "4065648": "day-to-day"
         },
         "home": {
           "4397040": "out",
@@ -1753,17 +1781,17 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-22T06:54:19+00:00",
+        "checked": "2026-11-22T15:22:15+00:00",
         "line": {
           "open": 8.5,
-          "now": 9.5
+          "now": 8.5
         },
         "away": [
           {
             "player": "Jayson Tatum",
             "pos": "SF",
-            "status": "Out",
-            "out": true,
+            "status": "Day-To-Day",
+            "out": false,
             "lastGame": false,
             "missed": 1,
             "avg": [
@@ -1840,8 +1868,8 @@
           {
             "player": "Derrick White",
             "pos": "PG",
-            "status": "Out",
-            "out": true,
+            "status": "Day-To-Day",
+            "out": false,
             "lastGame": false,
             "missed": 1,
             "avg": [
@@ -2000,32 +2028,32 @@
       "lineMove": {
         "spread": [
           8.5,
-          9.5
+          8.5
         ],
         "total": [
           212.5,
-          212.5
+          210.5
         ],
         "ml": {
           "home": [
             299.0,
-            322.0
+            286.0
           ],
           "away": [
             -378.0,
-            -410.0
+            -359.0
           ]
         },
         "public": {
-          "betsHome": 28,
-          "moneyHome": 29,
+          "betsHome": 51,
+          "moneyHome": 44,
           "rlm": null
         },
-        "checked": "2026-11-22T06:54:20+00:00"
+        "checked": "2026-11-22T15:22:15+00:00"
       },
-      "gameTotal": 212.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotal": 210.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     }
   ]
 }

@@ -26,20 +26,40 @@
         ],
         "total": [
           153.5,
-          154.5
+          156.5
         ],
         "ml": {
           "home": [
             490.0,
-            550.0
+            525.0
           ],
           "away": [
             -675.0,
-            -800.0
+            -750.0
           ]
         },
-        "checked": "2026-11-22T06:54:20+00:00"
-      }
+        "checked": "2026-11-22T15:22:15+00:00"
+      },
+      "gameTotal": 156.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-7",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Nebraska Cornhuskers",
+          "says": "fade",
+          "fact": "Nebraska won its last three by 26, 27, 34.",
+          "record": "119-145",
+          "pct": 45.1,
+          "leans": "Nebraska Cornhuskers",
+          "leanPct": 54.9,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401906868",
@@ -54,15 +74,18 @@
       "lineMove": {
         "spread": [
           -39.5,
-          -39.5
+          -38.5
         ],
         "total": [
           148.5,
-          148.5
+          150.5
         ],
         "ml": {},
-        "checked": "2026-11-22T06:54:20+00:00"
-      }
+        "checked": "2026-11-22T15:22:16+00:00"
+      },
+      "gameTotal": 150.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401920905",
@@ -85,7 +108,10 @@
         ],
         "ml": {},
         "checked": "2026-11-22T06:54:20+00:00"
-      }
+      },
+      "gameTotal": 145.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401926774",
@@ -100,15 +126,18 @@
       "lineMove": {
         "spread": [
           -33.5,
-          -33.5
+          -32.5
         ],
         "total": [
           146.5,
-          147.5
+          145.5
         ],
         "ml": {},
-        "checked": "2026-11-22T06:54:20+00:00"
-      }
+        "checked": "2026-11-22T15:22:16+00:00"
+      },
+      "gameTotal": 145.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     }
   ]
 }

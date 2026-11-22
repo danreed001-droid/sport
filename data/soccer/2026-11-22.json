@@ -5,21 +5,935 @@
   "scored": false,
   "generatedAt": "2026-11-22T13:09:57Z",
   "games": [
-    {"altCategoryTally":"Home 0 - Draw 0 - Away 4","altConfidence":"lean","altCorrect":null,"altPick":"Brighton & Hove Albion","altReasons":["Scoring margin: Away (Brighton's blended GD/g +1.03 clearly outpaces Hull's +0.00)","Injuries/Lineup: Away (Hull missing starting CB Charlie Hughes; Brighton's absences are depth pieces)","Form: Away (Brighton won their last 2 without conceding and sit 2nd; Hull are winless in 8 with 4 straight home draws)","Motivation/Spot: Away (Brighton are chasing the top of the table; Hull have no table edge to play for)"],"altReturn":null,"attackGap":0.95,"away":"Brighton & Hove Albion","awayDrawRate":0.1,"awayGDpg":1.03,"awayGK":"Bart Verbruggen","awayKeeperSavePct":78.8,"awayMoneyline":-200,"awayScore":null,"awayStriker":"Charalampos Kostoulas","awayXGpg":1.97,"competition":"Premier League","confidence":"skip","correct":null,"drawMoneyline":333,"home":"Hull City","homeDrawRate":0.5,"homeGDpg":0,"homeGK":"Konstantinos Tzolakis","homeKeeperSavePct":78.8,"homeMoneyline":525,"homeScore":null,"homeStriker":"Oli McBurnie","homeXGpg":1.02,"pick":null,"pickReturn":null,"result":null,"skipReason":"keeper-close","skipped":true,"statLines":["GD/g (blended) +0.00 vs +1.03","xG/g (net) -0.46 vs +0.55","Keeper save% 78.8 vs 78.8 (Tzolakis vs Verbruggen, approximated as saves/(saves+GA))"],"time":"3:00 PM GMT"},
-    {"altCategoryTally":"Home 1 - Draw 1 - Away 3","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: Draw (GD/g gap is thin and both sides carry high season draw rates)","Travel: Home (Anfield atmosphere against a rival favors Liverpool)","Injuries/Lineup: Away (weighted x2 - Liverpool missing starting GK Alisson plus CB Ibrahima Konate a fitness doubt)","Form: Away (Man United have the better recent run; Liverpool have struggled for results)"],"altReturn":null,"attackGap":0.23,"away":"Manchester United","awayDrawRate":0.5,"awayGDpg":0,"awayGK":"Senne Lammens","awayKeeperSavePct":null,"awayMoneyline":350,"awayScore":null,"awayStriker":"Benjamin Sesko","awayXGpg":1.79,"competition":"Premier League","confidence":"draw-lean","correct":null,"drawMoneyline":320,"home":"Liverpool","homeDrawRate":0.3,"homeGDpg":0.33,"homeGK":"Giorgi Mamardashvili","homeKeeperSavePct":null,"homeMoneyline":-149,"homeScore":null,"homeStriker":"Alexander Isak","homeXGpg":1.56,"pick":"Draw","pickReturn":null,"result":null,"skipped":false,"statLines":["GD/g (blended) +0.33 vs +0.00","attack-gap 0.23 (<0.4 screen)","Both teams' season draw rate >=25% (30% vs 50%) -> draw-lean"],"time":"4:30 PM GMT"},
-    {"altCategoryTally":"Home 4 - Draw 0 - Away 0","altConfidence":"lean","altCorrect":null,"altPick":"Barcelona","altReasons":["Scoring margin: Home (Barcelona's GD/g is more than 5x Villarreal's)","Form: Home (Barcelona top the table despite a patchy month)","Motivation/Spot: Home (tight title race keeps the stakes high at home)","Matchup splits: Home (Barcelona have historically dominated this fixture at home)"],"altReturn":null,"attackGap":1.29,"away":"Villarreal","awayDrawRate":0.25,"awayGDpg":0.43,"awayGK":"Pepe Reina","awayKeeperSavePct":64.3,"awayMoneyline":1000,"awayScore":null,"awayStriker":null,"awayXGpg":2.02,"competition":"La Liga","confidence":"skip","correct":null,"drawMoneyline":750,"home":"Barcelona","homeDrawRate":0,"homeGDpg":2.24,"homeGK":"Joan Garcia","homeKeeperSavePct":65.8,"homeMoneyline":-556,"homeScore":null,"homeStriker":"Robert Lewandowski","homeXGpg":3.31,"pick":null,"pickReturn":null,"result":null,"skipReason":"keeper-close","skipped":true,"statLines":["GD/g (blended) +2.24 vs +0.43","xG/g (net) +2.22 vs +0.89","Keeper save% 65.8 vs 64.3 (close)"],"time":"2:00 PM CET"},
-    {"altCategoryTally":"Home 4 - Draw 0 - Away 2","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: Away (Real Sociedad's blended GD/g is clearly better)","Injuries/Lineup: Home (weighted x2 - Real Sociedad have 3 key-ish absences/doubts: Barrenetxea forward out, Sarr CB doubtful, Sucic creative-mid doubtful, vs. Racing's single confirmed absence)","Form: Away (Sociedad have scored in 6 straight and sit 5th; Racing have conceded a league-high 30 goals)","Weather/Venue: Home (El Sadar is a tough away trip)","Matchup splits: Home (Sociedad have conceded in 12 straight away league games)"],"altReturn":null,"attackGap":0.01,"away":"Real Sociedad","awayDrawRate":0.083,"awayGDpg":0.02,"awayGK":"Alex Remiro","awayKeeperSavePct":null,"awayMoneyline":100,"awayScore":null,"awayStriker":"Mikel Oyarzabal","awayXGpg":1.47,"competition":"La Liga","confidence":"skip","correct":null,"drawMoneyline":310,"home":"Racing Santander","homeDrawRate":0.167,"homeGDpg":-1.08,"homeGK":"Julen Agirrezabala","homeKeeperSavePct":null,"homeMoneyline":225,"homeScore":null,"homeStriker":"Yassir Zabiri","homeXGpg":1.46,"pick":null,"pickReturn":null,"result":null,"skipReason":"attack-gap","skipped":true,"statLines":["GD/g (blended) -1.08 vs +0.02","attack-gap 0.01 but GD/g gap 1.10 (>=0.5, draw-check fails)"],"time":"4:15 PM CET"},
-    {"altCategoryTally":"Home 3 - Draw 0 - Away 0","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: neutral (Osasuna's starting keeper Aitor Fernandez is out, Sergio Herrera stepping in, discounting their own record; Malaga's GD/g isn't strong enough to carry the category alone)","Injuries/Lineup: Home (Malaga's squad is thin across several positions, including a suspended starting full-back)","Form: Home (Malaga are bottom and still winless all season; Osasuna are unbeaten in 3 at home)","Weather/Venue: Home (El Sadar is a difficult away venue)"],"altReturn":null,"attackGap":0.36,"away":"Malaga","awayDrawRate":0.417,"awayGDpg":-1.17,"awayGK":"Alfonso Herrero","awayKeeperSavePct":null,"awayMoneyline":333,"awayScore":null,"awayStriker":"Adrian Nino","awayXGpg":0.99,"competition":"La Liga","confidence":"skip","correct":null,"drawMoneyline":270,"home":"Osasuna","homeDrawRate":0.25,"homeGDpg":-0.54,"homeGK":"Sergio Herrera","homeKeeperSavePct":null,"homeMoneyline":-120,"homeScore":null,"homeStriker":"Ante Budimir","homeXGpg":1.35,"pick":null,"pickReturn":null,"result":null,"skipReason":"attack-gap","skipped":true,"statLines":["GD/g (blended) -0.54 vs -1.17","attack-gap 0.36 (<0.4) but draw rates both >=25%, GD/g gap 0.63 (>=0.5, draw-check fails)"],"time":"6:30 PM CET"},
-    {"altCategoryTally":"Home 0 - Draw 0 - Away 3","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: Away (Atletico's GD/g comfortably ahead of Getafe's)","Form: Away (Atletico are 3rd and in strong form; Getafe are 15th)","Motivation/Spot: Away (Atletico are in the thick of the title race)"],"altReturn":null,"attackGap":0.86,"away":"Atletico Madrid","awayDrawRate":0.083,"awayGDpg":0.78,"awayGK":"Jan Oblak","awayKeeperSavePct":76.2,"awayMoneyline":-200,"awayScore":null,"awayStriker":"Julian Alvarez","awayXGpg":1.62,"competition":"La Liga","confidence":"solid","correct":null,"drawMoneyline":300,"home":"Getafe","homeDrawRate":0.25,"homeGDpg":-0.5,"homeGK":"David Soria","homeKeeperSavePct":69,"homeMoneyline":600,"homeScore":null,"homeStriker":"Borja Mayoral","homeXGpg":0.76,"pick":"Atletico Madrid","pickReturn":null,"result":null,"skipped":false,"statLines":["GD/g (blended) -0.50 vs +0.78","xG/g (net) -0.61 vs +0.48","Keeper save% 69.0 vs 76.2 (picked team's keeper not lower, no veto)"],"time":"9:00 PM CET"},
-    {"altCategoryTally":"Home 0 - Draw 0 - Away 1","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Form: Away (Mainz have 1 more point and 1 more win than Augsburg at a similar matches-played mark)"],"altReturn":null,"attackGap":0,"away":"Mainz 05","awayDrawRate":0.111,"awayGDpg":-0.188,"awayGK":null,"awayKeeperSavePct":null,"awayMoneyline":138,"awayScore":null,"awayStriker":"Nelson Weiper","awayXGpg":2.03,"competition":"Bundesliga","confidence":"skip","correct":null,"drawMoneyline":280,"home":"Augsburg","homeDrawRate":0.333,"homeGDpg":-0.235,"homeGK":"Finn Dahmen","homeKeeperSavePct":null,"homeMoneyline":170,"homeScore":null,"homeStriker":null,"homeXGpg":2.03,"pick":null,"pickReturn":null,"result":null,"skipReason":"attack-gap","skipped":true,"statLines":["GD/g (blended) -0.24 vs -0.19","attack-gap 0.00 but Mainz's draw rate <25%, draw-check fails"],"time":"2:30 PM CET"},
-    {"altCategoryTally":"Home 2 - Draw 0 - Away 1","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: Home (Bremen's blended GD/g clearly ahead of Hamburg's)","Form: Home (Bremen are 6th with 15 points; Hamburg are 11th with 12)","Motivation/Spot: Away ('Nordderby' rivalry plus Hamburg's greater urgency as a newly-promoted side fighting to stay up)"],"altReturn":null,"attackGap":0.5,"away":"Hamburger SV","awayDrawRate":0,"awayGDpg":-0.761,"awayGK":"Daniel Heuer Fernandes","awayKeeperSavePct":65.5,"awayMoneyline":375,"awayScore":null,"awayStriker":null,"awayXGpg":1.16,"competition":"Bundesliga","confidence":"skip","correct":null,"drawMoneyline":333,"home":"Werder Bremen","homeDrawRate":0.333,"homeGDpg":-0.227,"homeGK":"Karl Jakob Hein","homeKeeperSavePct":67.4,"homeMoneyline":-161,"homeScore":null,"homeStriker":null,"homeXGpg":1.66,"pick":null,"pickReturn":null,"result":null,"skipReason":"keeper-close","skipped":true,"statLines":["GD/g (blended) -0.23 vs -0.76","xG/g (net) +0.17 vs -0.75","Keeper save% 67.4 vs 65.5 (close)"],"time":"4:30 PM CET"},
-    {"altCategoryTally":"Home 2 - Draw 0 - Away 2","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: Home (Juventus' blended GD/g is far ahead of Venezia's, and no qualifying lineup trigger discounts it)","Injuries/Lineup: Away (weighted x2 - Juventus missing Thuram, Locatelli and Yildiz together)","Form: neutral (Juventus' recent run was built before this week's absences piled up; Venezia's own form - winless in 6 away, fewest goals in the league - isn't strong enough to carry the category)","Matchup splits: Home (Juventus' home quality edge over a side with the fewest goals in Serie A)"],"altReturn":null,"attackGap":0.03,"away":"Venezia FC","awayDrawRate":0,"awayGDpg":-1.18,"awayGK":"Filip Stankovic","awayKeeperSavePct":null,"awayMoneyline":750,"awayScore":null,"awayStriker":"John Yeboah","awayXGpg":1.46,"competition":"Serie A","confidence":"skip","correct":null,"drawMoneyline":400,"home":"Juventus","homeDrawRate":0.273,"homeGDpg":0.49,"homeGK":"Guglielmo Vicario","homeKeeperSavePct":null,"homeMoneyline":-278,"homeScore":null,"homeStriker":"Randal Kolo Muani","homeXGpg":1.49,"pick":null,"pickReturn":null,"result":null,"skipReason":"attack-gap","skipped":true,"statLines":["GD/g (blended) +0.49 vs -1.18","attack-gap 0.03 but GD/g gap 1.67 (>=0.5, draw-check fails)"],"time":"12:30 PM CET"},
-    {"altCategoryTally":"Home 0 - Draw 0 - Away 5","altConfidence":"strong","altCorrect":null,"altPick":"Genoa","altReasons":["Scoring margin: Away (Genoa's blended GD/g is well ahead of Sassuolo's)","Injuries/Lineup: Away (weighted x2 - Sassuolo without Kone and Leysen, and doubtful on creative player Berardi)","Form: Away (Sassuolo have lost 5 straight and conceded a league-high 29; Genoa have won 3 of their last 4)","Matchup splits: Away (Genoa have won their last two visits to Sassuolo, both 2-1)"],"altReturn":null,"attackGap":0.34,"away":"Genoa","awayDrawRate":0.091,"awayGDpg":-0.359,"awayGK":"Justin Bijlow","awayKeeperSavePct":null,"awayMoneyline":170,"awayScore":null,"awayStriker":"Ervin Osmajic","awayXGpg":0.91,"competition":"Serie A","confidence":"skip","correct":null,"drawMoneyline":230,"home":"Sassuolo","homeDrawRate":0.182,"homeGDpg":-0.644,"homeGK":"Muric","homeKeeperSavePct":null,"homeMoneyline":170,"homeScore":null,"homeStriker":"Armand Laurientet","homeXGpg":1.25,"pick":null,"pickReturn":null,"result":null,"skipReason":"attack-gap","skipped":true,"statLines":["GD/g (blended) -0.64 vs -0.36","attack-gap 0.34 (<0.4) but Sassuolo's draw rate <25%, draw-check fails"],"time":"3:00 PM CET"},
-    {"altCategoryTally":"Home 3 - Draw 0 - Away 0","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: Home (Bologna's GD/g is well clear of last-place Udinese's)","Form: Home (Bologna are mid-table with 17 points; Udinese are bottom with 5)","Matchup splits: Home (Udinese have the worst xGA in Serie A)"],"altReturn":null,"attackGap":0.49,"away":"Udinese","awayDrawRate":0.182,"awayGDpg":-0.631,"awayGK":"Maduka Okoye","awayKeeperSavePct":63.2,"awayMoneyline":400,"awayScore":null,"awayStriker":null,"awayXGpg":1.16,"competition":"Serie A","confidence":"skip","correct":null,"drawMoneyline":275,"home":"Bologna","homeDrawRate":0.182,"homeGDpg":0.131,"homeGK":"Lukasz Skorupski","homeKeeperSavePct":65.9,"homeMoneyline":-143,"homeScore":null,"homeStriker":null,"homeXGpg":1.64,"pick":null,"pickReturn":null,"result":null,"skipReason":"keeper-close","skipped":true,"statLines":["GD/g (blended) +0.13 vs -0.63","xG/g (net) +0.25 vs -1.08","Keeper save% 65.9 vs 63.2 (close)"],"time":"3:00 PM CET"},
-    {"altCategoryTally":"Home 0 - Draw 0 - Away 3","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: Away (weighted - Milan's own GD/g is discounted since both starting centre-backs, Gabbia and Tomori, are injured and Maignan/Pavlovic are doubtful; Frosinone's own GD/g is independently strong enough to carry the category)","Injuries/Lineup: Away (weighted x2 - Milan missing both starting centre-backs plus doubts over their goalkeeper)","Form: neutral (Milan's recent wins came with a healthy back line that is no longer available tonight; Frosinone are winless in 4 away and missing top scorer Raimondo, not clearly strong enough to carry it either)"],"altReturn":null,"attackGap":0.19,"away":"Frosinone","awayDrawRate":0.182,"awayGDpg":0.818,"awayGK":"Lorenzo Palmisani","awayKeeperSavePct":null,"awayMoneyline":400,"awayScore":null,"awayStriker":"Christian Birligea","awayXGpg":1.81,"competition":"Serie A","confidence":"skip","correct":null,"drawMoneyline":350,"home":"AC Milan","homeDrawRate":0.273,"homeGDpg":0.692,"homeGK":"Pietro Terracciano","homeKeeperSavePct":null,"homeMoneyline":-175,"homeScore":null,"homeStriker":null,"homeXGpg":1.62,"pick":null,"pickReturn":null,"result":null,"skipReason":"attack-gap","skipped":true,"statLines":["GD/g (blended) +0.69 vs +0.82","attack-gap 0.19 (<0.4) but Frosinone's draw rate <25%, draw-check fails"],"time":"6:00 PM CET"},
-    {"altCategoryTally":"Home 0 - Draw 0 - Away 4","altConfidence":"lean","altCorrect":null,"altPick":"Inter Milan","altReasons":["Scoring margin: Away (Inter's GD/g is more than 20x Atalanta's)","Form: Away (Inter are 2nd, one point off the Serie A lead; Atalanta have won just 2 of their last 9)","Motivation/Spot: Away (Inter are in the thick of the title race; Atalanta are chasing a European place)","Matchup splits: Away (Atalanta's leaky defense against the league's highest xG attack)"],"altReturn":null,"attackGap":1.131,"away":"Inter Milan","awayDrawRate":0.091,"awayGDpg":1.393,"awayGK":"Josep Martinez","awayKeeperSavePct":64.9,"awayMoneyline":-175,"awayScore":null,"awayStriker":"Lautaro Martinez","awayXGpg":2.676,"competition":"Serie A","confidence":"skip","correct":null,"drawMoneyline":350,"home":"Atalanta","homeDrawRate":0.182,"homeGDpg":0.061,"homeGK":"Marco Carnesecchi","homeKeeperSavePct":70.1,"homeMoneyline":400,"homeScore":null,"homeStriker":"Nikola Krstovic","homeXGpg":1.545,"pick":null,"pickReturn":null,"result":null,"skipReason":"keeper-veto","skipped":true,"statLines":["GD/g (blended) +0.06 vs +1.39","xG/g (net) -0.26 vs +1.72","Keeper save% 70.1 vs 64.9 (picked team Inter is the lower of the two - veto)"],"time":"8:45 PM CET"},
-    {"altCategoryTally":"Home 3 - Draw 0 - Away 0","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: Home (Paris FC's GD/g is well clear of Angers')","Injuries/Lineup: Home (Angers have more absences/doubts across the squad; Paris FC's are depth pieces)","Matchup splits: Home (Paris FC are unbeaten at home this season)"],"altReturn":null,"attackGap":0.501,"away":"Angers","awayDrawRate":0.2,"awayGDpg":-0.779,"awayGK":"Anthony Lopes","awayKeeperSavePct":68.9,"awayMoneyline":750,"awayScore":null,"awayStriker":"Peter","awayXGpg":1.335,"competition":"Ligue 1","confidence":"skip","correct":null,"drawMoneyline":425,"home":"Paris FC","homeDrawRate":0.2,"homeGDpg":0.306,"homeGK":"Kevin Trapp","homeKeeperSavePct":66.7,"homeMoneyline":-303,"homeScore":null,"homeStriker":"Lassine Sinayoko","homeXGpg":1.836,"pick":null,"pickReturn":null,"result":null,"skipReason":"keeper-close","skipped":true,"statLines":["GD/g (blended) +0.31 vs -0.78","xG/g (net) +0.84 vs -0.49","Keeper save% 66.7 vs 68.9 (close)"],"time":"3:00 PM CET"},
-    {"altCategoryTally":"Home 2 - Draw 0 - Away 0","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Injuries/Lineup: Home (Rennes' top scorer Esteban Lepaul is a doubt)","Form: Home (Lorient won their last home game and have back-to-back away clean sheets; Rennes have lost 3 of their last 4 including back-to-back away defeats)"],"altReturn":null,"attackGap":0.722,"away":"Stade Rennais","awayDrawRate":0.1,"awayGDpg":0.132,"awayGK":"Samba","awayKeeperSavePct":61.1,"awayMoneyline":140,"awayScore":null,"awayStriker":"Emeran Mayenda","awayXGpg":2,"competition":"Ligue 1","confidence":"skip","correct":null,"drawMoneyline":250,"home":"Lorient","homeDrawRate":0.3,"homeGDpg":0.006,"homeGK":"Yvon Mvogo","homeKeeperSavePct":78.9,"homeMoneyline":188,"homeScore":null,"homeStriker":"Ibrahima Aiyegun","homeXGpg":1.278,"pick":null,"pickReturn":null,"result":null,"skipReason":"keeper-veto","skipped":true,"statLines":["GD/g (blended) +0.01 vs +0.13","xG/g (net) +0.16 vs -0.10 (xG favors non-picked team Lorient, tier softened)","Keeper save% 78.9 vs 61.1 (picked team Rennes is the lower of the two - veto)"],"time":"5:15 PM CET"},
-    {"altCategoryTally":"Home 5 - Draw 0 - Away 0","altConfidence":"strong","altCorrect":null,"altPick":"Marseille","altReasons":["Scoring margin: Home (Marseille's blended GD/g is far ahead of Le Mans')","Injuries/Lineup: Home (weighted x2 - Le Mans missing key attacking midfielder Adil Bourabaa and Djibril Sidibe together)","Form: Home (Marseille have won 5 straight; Le Mans are winless in 5 and have conceded in every league game)","Matchup splits: Home (Le Mans have conceded in every match this season against a Marseille attack among the league's top scorers)"],"altReturn":null,"attackGap":0.188,"away":"Le Mans","awayDrawRate":0.5,"awayGDpg":-0.7,"awayGK":"Kocik","awayKeeperSavePct":null,"awayMoneyline":550,"awayScore":null,"awayStriker":"Habib Mafouta","awayXGpg":1.507,"competition":"Ligue 1","confidence":"skip","correct":null,"drawMoneyline":375,"home":"Marseille","homeDrawRate":0,"homeGDpg":0.665,"homeGK":"Jeffrey de Lange","homeKeeperSavePct":null,"homeMoneyline":-227,"homeScore":null,"homeStriker":"Amine Gouiri","homeXGpg":1.695,"pick":null,"pickReturn":null,"result":null,"skipReason":"attack-gap","skipped":true,"statLines":["GD/g (blended) +0.67 vs -0.70","attack-gap 0.19 (<0.4) but GD/g gap 1.37 (>=0.5, draw-check fails)"],"time":"8:45 PM CET"}
+    {
+      "altCategoryTally": "Home 0 - Draw 0 - Away 4",
+      "altConfidence": "lean",
+      "altCorrect": null,
+      "altPick": "Brighton & Hove Albion",
+      "altReasons": [
+        "Scoring margin: Away (Brighton's blended GD/g +1.03 clearly outpaces Hull's +0.00)",
+        "Injuries/Lineup: Away (Hull missing starting CB Charlie Hughes; Brighton's absences are depth pieces)",
+        "Form: Away (Brighton won their last 2 without conceding and sit 2nd; Hull are winless in 8 with 4 straight home draws)",
+        "Motivation/Spot: Away (Brighton are chasing the top of the table; Hull have no table edge to play for)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.95,
+      "away": "Brighton & Hove Albion",
+      "awayDrawRate": 0.1,
+      "awayGDpg": 1.03,
+      "awayGK": "Bart Verbruggen",
+      "awayKeeperSavePct": 78.8,
+      "awayMoneyline": -200,
+      "awayScore": null,
+      "awayStriker": "Charalampos Kostoulas",
+      "awayXGpg": 1.97,
+      "competition": "Premier League",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 333,
+      "home": "Hull City",
+      "homeDrawRate": 0.5,
+      "homeGDpg": 0,
+      "homeGK": "Konstantinos Tzolakis",
+      "homeKeeperSavePct": 78.8,
+      "homeMoneyline": 525,
+      "homeScore": null,
+      "homeStriker": "Oli McBurnie",
+      "homeXGpg": 1.02,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "keeper-close",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) +0.00 vs +1.03",
+        "xG/g (net) -0.46 vs +0.55",
+        "Keeper save% 78.8 vs 78.8 (Tzolakis vs Verbruggen, approximated as saves/(saves+GA))"
+      ],
+      "time": "3:00 PM GMT"
+    },
+    {
+      "altCategoryTally": "Home 1 - Draw 1 - Away 3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Draw (GD/g gap is thin and both sides carry high season draw rates)",
+        "Travel: Home (Anfield atmosphere against a rival favors Liverpool)",
+        "Injuries/Lineup: Away (weighted x2 - Liverpool missing starting GK Alisson plus CB Ibrahima Konate a fitness doubt)",
+        "Form: Away (Man United have the better recent run; Liverpool have struggled for results)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.23,
+      "away": "Manchester United",
+      "awayDrawRate": 0.5,
+      "awayGDpg": 0,
+      "awayGK": "Senne Lammens",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 350,
+      "awayScore": null,
+      "awayStriker": "Benjamin Sesko",
+      "awayXGpg": 1.79,
+      "competition": "Premier League",
+      "confidence": "draw-lean",
+      "correct": null,
+      "drawMoneyline": 320,
+      "home": "Liverpool",
+      "homeDrawRate": 0.3,
+      "homeGDpg": 0.33,
+      "homeGK": "Giorgi Mamardashvili",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": -149,
+      "homeScore": null,
+      "homeStriker": "Alexander Isak",
+      "homeXGpg": 1.56,
+      "pick": "Draw",
+      "pickReturn": null,
+      "result": null,
+      "skipped": false,
+      "statLines": [
+        "GD/g (blended) +0.33 vs +0.00",
+        "attack-gap 0.23 (<0.4 screen)",
+        "Both teams' season draw rate >=25% (30% vs 50%) -> draw-lean"
+      ],
+      "time": "4:30 PM GMT",
+      "gameTotal": 3.5,
+      "gameTotalOverOdds": 120,
+      "gameTotalUnderOdds": -150,
+      "lineMove": {
+        "spread": [
+          -0.5,
+          -0.5
+        ],
+        "total": [
+          2.5,
+          3.5
+        ],
+        "ml": {
+          "home": [
+            -125.0,
+            -130.0
+          ],
+          "away": [
+            290.0,
+            320.0
+          ],
+          "draw": [
+            290.0,
+            310.0
+          ]
+        },
+        "checked": "2026-11-22T15:22:16+00:00"
+      }
+    },
+    {
+      "altCategoryTally": "Home 4 - Draw 0 - Away 0",
+      "altConfidence": "lean",
+      "altCorrect": null,
+      "altPick": "Barcelona",
+      "altReasons": [
+        "Scoring margin: Home (Barcelona's GD/g is more than 5x Villarreal's)",
+        "Form: Home (Barcelona top the table despite a patchy month)",
+        "Motivation/Spot: Home (tight title race keeps the stakes high at home)",
+        "Matchup splits: Home (Barcelona have historically dominated this fixture at home)"
+      ],
+      "altReturn": null,
+      "attackGap": 1.29,
+      "away": "Villarreal",
+      "awayDrawRate": 0.25,
+      "awayGDpg": 0.43,
+      "awayGK": "Pepe Reina",
+      "awayKeeperSavePct": 64.3,
+      "awayMoneyline": 1000,
+      "awayScore": null,
+      "awayStriker": null,
+      "awayXGpg": 2.02,
+      "competition": "La Liga",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 750,
+      "home": "Barcelona",
+      "homeDrawRate": 0,
+      "homeGDpg": 2.24,
+      "homeGK": "Joan Garcia",
+      "homeKeeperSavePct": 65.8,
+      "homeMoneyline": -556,
+      "homeScore": null,
+      "homeStriker": "Robert Lewandowski",
+      "homeXGpg": 3.31,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "keeper-close",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) +2.24 vs +0.43",
+        "xG/g (net) +2.22 vs +0.89",
+        "Keeper save% 65.8 vs 64.3 (close)"
+      ],
+      "time": "2:00 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 4 - Draw 0 - Away 2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Away (Real Sociedad's blended GD/g is clearly better)",
+        "Injuries/Lineup: Home (weighted x2 - Real Sociedad have 3 key-ish absences/doubts: Barrenetxea forward out, Sarr CB doubtful, Sucic creative-mid doubtful, vs. Racing's single confirmed absence)",
+        "Form: Away (Sociedad have scored in 6 straight and sit 5th; Racing have conceded a league-high 30 goals)",
+        "Weather/Venue: Home (El Sadar is a tough away trip)",
+        "Matchup splits: Home (Sociedad have conceded in 12 straight away league games)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.01,
+      "away": "Real Sociedad",
+      "awayDrawRate": 0.083,
+      "awayGDpg": 0.02,
+      "awayGK": "Alex Remiro",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 100,
+      "awayScore": null,
+      "awayStriker": "Mikel Oyarzabal",
+      "awayXGpg": 1.47,
+      "competition": "La Liga",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 310,
+      "home": "Racing Santander",
+      "homeDrawRate": 0.167,
+      "homeGDpg": -1.08,
+      "homeGK": "Julen Agirrezabala",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": 225,
+      "homeScore": null,
+      "homeStriker": "Yassir Zabiri",
+      "homeXGpg": 1.46,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "attack-gap",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) -1.08 vs +0.02",
+        "attack-gap 0.01 but GD/g gap 1.10 (>=0.5, draw-check fails)"
+      ],
+      "time": "4:15 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 3 - Draw 0 - Away 0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: neutral (Osasuna's starting keeper Aitor Fernandez is out, Sergio Herrera stepping in, discounting their own record; Malaga's GD/g isn't strong enough to carry the category alone)",
+        "Injuries/Lineup: Home (Malaga's squad is thin across several positions, including a suspended starting full-back)",
+        "Form: Home (Malaga are bottom and still winless all season; Osasuna are unbeaten in 3 at home)",
+        "Weather/Venue: Home (El Sadar is a difficult away venue)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.36,
+      "away": "Malaga",
+      "awayDrawRate": 0.417,
+      "awayGDpg": -1.17,
+      "awayGK": "Alfonso Herrero",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 333,
+      "awayScore": null,
+      "awayStriker": "Adrian Nino",
+      "awayXGpg": 0.99,
+      "competition": "La Liga",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 270,
+      "home": "Osasuna",
+      "homeDrawRate": 0.25,
+      "homeGDpg": -0.54,
+      "homeGK": "Sergio Herrera",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": -120,
+      "homeScore": null,
+      "homeStriker": "Ante Budimir",
+      "homeXGpg": 1.35,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "attack-gap",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) -0.54 vs -1.17",
+        "attack-gap 0.36 (<0.4) but draw rates both >=25%, GD/g gap 0.63 (>=0.5, draw-check fails)"
+      ],
+      "time": "6:30 PM CET",
+      "gameTotal": 2.5,
+      "gameTotalOverOdds": 100,
+      "gameTotalUnderOdds": -125,
+      "lineMove": {
+        "spread": [
+          -0.5,
+          -0.5
+        ],
+        "total": [
+          2.5,
+          2.5
+        ],
+        "ml": {
+          "home": [
+            -135.0,
+            -120.0
+          ],
+          "away": [
+            350.0,
+            350.0
+          ],
+          "draw": [
+            270.0,
+            260.0
+          ]
+        },
+        "checked": "2026-11-22T15:22:16+00:00"
+      }
+    },
+    {
+      "altCategoryTally": "Home 0 - Draw 0 - Away 3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Away (Atletico's GD/g comfortably ahead of Getafe's)",
+        "Form: Away (Atletico are 3rd and in strong form; Getafe are 15th)",
+        "Motivation/Spot: Away (Atletico are in the thick of the title race)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.86,
+      "away": "Atletico Madrid",
+      "awayDrawRate": 0.083,
+      "awayGDpg": 0.78,
+      "awayGK": "Jan Oblak",
+      "awayKeeperSavePct": 76.2,
+      "awayMoneyline": -200,
+      "awayScore": null,
+      "awayStriker": "Julian Alvarez",
+      "awayXGpg": 1.62,
+      "competition": "La Liga",
+      "confidence": "solid",
+      "correct": null,
+      "drawMoneyline": 300,
+      "home": "Getafe",
+      "homeDrawRate": 0.25,
+      "homeGDpg": -0.5,
+      "homeGK": "David Soria",
+      "homeKeeperSavePct": 69,
+      "homeMoneyline": 600,
+      "homeScore": null,
+      "homeStriker": "Borja Mayoral",
+      "homeXGpg": 0.76,
+      "pick": "Atletico Madrid",
+      "pickReturn": null,
+      "result": null,
+      "skipped": false,
+      "statLines": [
+        "GD/g (blended) -0.50 vs +0.78",
+        "xG/g (net) -0.61 vs +0.48",
+        "Keeper save% 69.0 vs 76.2 (picked team's keeper not lower, no veto)"
+      ],
+      "time": "9:00 PM CET",
+      "gameTotal": 2.5,
+      "gameTotalOverOdds": 110,
+      "gameTotalUnderOdds": -140,
+      "lineMove": {
+        "spread": [
+          0.5,
+          0.5
+        ],
+        "total": [
+          2.5,
+          2.5
+        ],
+        "ml": {
+          "home": [
+            450.0,
+            600.0
+          ],
+          "away": [
+            -165.0,
+            -185.0
+          ],
+          "draw": [
+            280.0,
+            295.0
+          ]
+        },
+        "checked": "2026-11-22T15:22:17+00:00"
+      }
+    },
+    {
+      "altCategoryTally": "Home 0 - Draw 0 - Away 1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Form: Away (Mainz have 1 more point and 1 more win than Augsburg at a similar matches-played mark)"
+      ],
+      "altReturn": null,
+      "attackGap": 0,
+      "away": "Mainz 05",
+      "awayDrawRate": 0.111,
+      "awayGDpg": -0.188,
+      "awayGK": null,
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 138,
+      "awayScore": null,
+      "awayStriker": "Nelson Weiper",
+      "awayXGpg": 2.03,
+      "competition": "Bundesliga",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 280,
+      "home": "Augsburg",
+      "homeDrawRate": 0.333,
+      "homeGDpg": -0.235,
+      "homeGK": "Finn Dahmen",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": 170,
+      "homeScore": null,
+      "homeStriker": null,
+      "homeXGpg": 2.03,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "attack-gap",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) -0.24 vs -0.19",
+        "attack-gap 0.00 but Mainz's draw rate <25%, draw-check fails"
+      ],
+      "time": "2:30 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 2 - Draw 0 - Away 1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Home (Bremen's blended GD/g clearly ahead of Hamburg's)",
+        "Form: Home (Bremen are 6th with 15 points; Hamburg are 11th with 12)",
+        "Motivation/Spot: Away ('Nordderby' rivalry plus Hamburg's greater urgency as a newly-promoted side fighting to stay up)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.5,
+      "away": "Hamburger SV",
+      "awayDrawRate": 0,
+      "awayGDpg": -0.761,
+      "awayGK": "Daniel Heuer Fernandes",
+      "awayKeeperSavePct": 65.5,
+      "awayMoneyline": 375,
+      "awayScore": null,
+      "awayStriker": null,
+      "awayXGpg": 1.16,
+      "competition": "Bundesliga",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 333,
+      "home": "Werder Bremen",
+      "homeDrawRate": 0.333,
+      "homeGDpg": -0.227,
+      "homeGK": "Karl Jakob Hein",
+      "homeKeeperSavePct": 67.4,
+      "homeMoneyline": -161,
+      "homeScore": null,
+      "homeStriker": null,
+      "homeXGpg": 1.66,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "keeper-close",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) -0.23 vs -0.76",
+        "xG/g (net) +0.17 vs -0.75",
+        "Keeper save% 67.4 vs 65.5 (close)"
+      ],
+      "time": "4:30 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 2 - Draw 0 - Away 2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Home (Juventus' blended GD/g is far ahead of Venezia's, and no qualifying lineup trigger discounts it)",
+        "Injuries/Lineup: Away (weighted x2 - Juventus missing Thuram, Locatelli and Yildiz together)",
+        "Form: neutral (Juventus' recent run was built before this week's absences piled up; Venezia's own form - winless in 6 away, fewest goals in the league - isn't strong enough to carry the category)",
+        "Matchup splits: Home (Juventus' home quality edge over a side with the fewest goals in Serie A)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.03,
+      "away": "Venezia FC",
+      "awayDrawRate": 0,
+      "awayGDpg": -1.18,
+      "awayGK": "Filip Stankovic",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 750,
+      "awayScore": null,
+      "awayStriker": "John Yeboah",
+      "awayXGpg": 1.46,
+      "competition": "Serie A",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 400,
+      "home": "Juventus",
+      "homeDrawRate": 0.273,
+      "homeGDpg": 0.49,
+      "homeGK": "Guglielmo Vicario",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": -278,
+      "homeScore": null,
+      "homeStriker": "Randal Kolo Muani",
+      "homeXGpg": 1.49,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "attack-gap",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) +0.49 vs -1.18",
+        "attack-gap 0.03 but GD/g gap 1.67 (>=0.5, draw-check fails)"
+      ],
+      "time": "12:30 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 0 - Draw 0 - Away 5",
+      "altConfidence": "strong",
+      "altCorrect": null,
+      "altPick": "Genoa",
+      "altReasons": [
+        "Scoring margin: Away (Genoa's blended GD/g is well ahead of Sassuolo's)",
+        "Injuries/Lineup: Away (weighted x2 - Sassuolo without Kone and Leysen, and doubtful on creative player Berardi)",
+        "Form: Away (Sassuolo have lost 5 straight and conceded a league-high 29; Genoa have won 3 of their last 4)",
+        "Matchup splits: Away (Genoa have won their last two visits to Sassuolo, both 2-1)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.34,
+      "away": "Genoa",
+      "awayDrawRate": 0.091,
+      "awayGDpg": -0.359,
+      "awayGK": "Justin Bijlow",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 170,
+      "awayScore": null,
+      "awayStriker": "Ervin Osmajic",
+      "awayXGpg": 0.91,
+      "competition": "Serie A",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 230,
+      "home": "Sassuolo",
+      "homeDrawRate": 0.182,
+      "homeGDpg": -0.644,
+      "homeGK": "Muric",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": 170,
+      "homeScore": null,
+      "homeStriker": "Armand Laurientet",
+      "homeXGpg": 1.25,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "attack-gap",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) -0.64 vs -0.36",
+        "attack-gap 0.34 (<0.4) but Sassuolo's draw rate <25%, draw-check fails"
+      ],
+      "time": "3:00 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 3 - Draw 0 - Away 0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Home (Bologna's GD/g is well clear of last-place Udinese's)",
+        "Form: Home (Bologna are mid-table with 17 points; Udinese are bottom with 5)",
+        "Matchup splits: Home (Udinese have the worst xGA in Serie A)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.49,
+      "away": "Udinese",
+      "awayDrawRate": 0.182,
+      "awayGDpg": -0.631,
+      "awayGK": "Maduka Okoye",
+      "awayKeeperSavePct": 63.2,
+      "awayMoneyline": 400,
+      "awayScore": null,
+      "awayStriker": null,
+      "awayXGpg": 1.16,
+      "competition": "Serie A",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 275,
+      "home": "Bologna",
+      "homeDrawRate": 0.182,
+      "homeGDpg": 0.131,
+      "homeGK": "Lukasz Skorupski",
+      "homeKeeperSavePct": 65.9,
+      "homeMoneyline": -143,
+      "homeScore": null,
+      "homeStriker": null,
+      "homeXGpg": 1.64,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "keeper-close",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) +0.13 vs -0.63",
+        "xG/g (net) +0.25 vs -1.08",
+        "Keeper save% 65.9 vs 63.2 (close)"
+      ],
+      "time": "3:00 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 0 - Draw 0 - Away 3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Away (weighted - Milan's own GD/g is discounted since both starting centre-backs, Gabbia and Tomori, are injured and Maignan/Pavlovic are doubtful; Frosinone's own GD/g is independently strong enough to carry the category)",
+        "Injuries/Lineup: Away (weighted x2 - Milan missing both starting centre-backs plus doubts over their goalkeeper)",
+        "Form: neutral (Milan's recent wins came with a healthy back line that is no longer available tonight; Frosinone are winless in 4 away and missing top scorer Raimondo, not clearly strong enough to carry it either)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.19,
+      "away": "Frosinone",
+      "awayDrawRate": 0.182,
+      "awayGDpg": 0.818,
+      "awayGK": "Lorenzo Palmisani",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 400,
+      "awayScore": null,
+      "awayStriker": "Christian Birligea",
+      "awayXGpg": 1.81,
+      "competition": "Serie A",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 350,
+      "home": "AC Milan",
+      "homeDrawRate": 0.273,
+      "homeGDpg": 0.692,
+      "homeGK": "Pietro Terracciano",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": -175,
+      "homeScore": null,
+      "homeStriker": null,
+      "homeXGpg": 1.62,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "attack-gap",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) +0.69 vs +0.82",
+        "attack-gap 0.19 (<0.4) but Frosinone's draw rate <25%, draw-check fails"
+      ],
+      "time": "6:00 PM CET",
+      "gameTotal": 3.5,
+      "gameTotalOverOdds": 105,
+      "gameTotalUnderOdds": -130,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -0.5
+        ],
+        "total": [
+          3.5,
+          3.5
+        ],
+        "ml": {
+          "home": [
+            -200.0,
+            -170.0
+          ],
+          "away": [
+            390.0,
+            360.0
+          ],
+          "draw": [
+            340.0,
+            320.0
+          ]
+        },
+        "checked": "2026-11-22T15:22:17+00:00"
+      }
+    },
+    {
+      "altCategoryTally": "Home 0 - Draw 0 - Away 4",
+      "altConfidence": "lean",
+      "altCorrect": null,
+      "altPick": "Inter Milan",
+      "altReasons": [
+        "Scoring margin: Away (Inter's GD/g is more than 20x Atalanta's)",
+        "Form: Away (Inter are 2nd, one point off the Serie A lead; Atalanta have won just 2 of their last 9)",
+        "Motivation/Spot: Away (Inter are in the thick of the title race; Atalanta are chasing a European place)",
+        "Matchup splits: Away (Atalanta's leaky defense against the league's highest xG attack)"
+      ],
+      "altReturn": null,
+      "attackGap": 1.131,
+      "away": "Inter Milan",
+      "awayDrawRate": 0.091,
+      "awayGDpg": 1.393,
+      "awayGK": "Josep Martinez",
+      "awayKeeperSavePct": 64.9,
+      "awayMoneyline": -175,
+      "awayScore": null,
+      "awayStriker": "Lautaro Martinez",
+      "awayXGpg": 2.676,
+      "competition": "Serie A",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 350,
+      "home": "Atalanta",
+      "homeDrawRate": 0.182,
+      "homeGDpg": 0.061,
+      "homeGK": "Marco Carnesecchi",
+      "homeKeeperSavePct": 70.1,
+      "homeMoneyline": 400,
+      "homeScore": null,
+      "homeStriker": "Nikola Krstovic",
+      "homeXGpg": 1.545,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "keeper-veto",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) +0.06 vs +1.39",
+        "xG/g (net) -0.26 vs +1.72",
+        "Keeper save% 70.1 vs 64.9 (picked team Inter is the lower of the two - veto)"
+      ],
+      "time": "8:45 PM CET",
+      "gameTotal": 3.5,
+      "gameTotalOverOdds": 100,
+      "gameTotalUnderOdds": -125,
+      "lineMove": {
+        "spread": [
+          0.5,
+          1.5
+        ],
+        "total": [
+          3.5,
+          3.5
+        ],
+        "ml": {
+          "home": [
+            340.0,
+            425.0
+          ],
+          "away": [
+            -175.0,
+            -200.0
+          ],
+          "draw": [
+            320.0,
+            350.0
+          ]
+        },
+        "checked": "2026-11-22T15:22:17+00:00"
+      }
+    },
+    {
+      "altCategoryTally": "Home 3 - Draw 0 - Away 0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Home (Paris FC's GD/g is well clear of Angers')",
+        "Injuries/Lineup: Home (Angers have more absences/doubts across the squad; Paris FC's are depth pieces)",
+        "Matchup splits: Home (Paris FC are unbeaten at home this season)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.501,
+      "away": "Angers",
+      "awayDrawRate": 0.2,
+      "awayGDpg": -0.779,
+      "awayGK": "Anthony Lopes",
+      "awayKeeperSavePct": 68.9,
+      "awayMoneyline": 750,
+      "awayScore": null,
+      "awayStriker": "Peter",
+      "awayXGpg": 1.335,
+      "competition": "Ligue 1",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 425,
+      "home": "Paris FC",
+      "homeDrawRate": 0.2,
+      "homeGDpg": 0.306,
+      "homeGK": "Kevin Trapp",
+      "homeKeeperSavePct": 66.7,
+      "homeMoneyline": -303,
+      "homeScore": null,
+      "homeStriker": "Lassine Sinayoko",
+      "homeXGpg": 1.836,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "keeper-close",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) +0.31 vs -0.78",
+        "xG/g (net) +0.84 vs -0.49",
+        "Keeper save% 66.7 vs 68.9 (close)"
+      ],
+      "time": "3:00 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 2 - Draw 0 - Away 0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Injuries/Lineup: Home (Rennes' top scorer Esteban Lepaul is a doubt)",
+        "Form: Home (Lorient won their last home game and have back-to-back away clean sheets; Rennes have lost 3 of their last 4 including back-to-back away defeats)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.722,
+      "away": "Stade Rennais",
+      "awayDrawRate": 0.1,
+      "awayGDpg": 0.132,
+      "awayGK": "Samba",
+      "awayKeeperSavePct": 61.1,
+      "awayMoneyline": 140,
+      "awayScore": null,
+      "awayStriker": "Emeran Mayenda",
+      "awayXGpg": 2,
+      "competition": "Ligue 1",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 250,
+      "home": "Lorient",
+      "homeDrawRate": 0.3,
+      "homeGDpg": 0.006,
+      "homeGK": "Yvon Mvogo",
+      "homeKeeperSavePct": 78.9,
+      "homeMoneyline": 188,
+      "homeScore": null,
+      "homeStriker": "Ibrahima Aiyegun",
+      "homeXGpg": 1.278,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "keeper-veto",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) +0.01 vs +0.13",
+        "xG/g (net) +0.16 vs -0.10 (xG favors non-picked team Lorient, tier softened)",
+        "Keeper save% 78.9 vs 61.1 (picked team Rennes is the lower of the two - veto)"
+      ],
+      "time": "5:15 PM CET",
+      "gameTotal": 2.5,
+      "gameTotalOverOdds": 115,
+      "gameTotalUnderOdds": -150,
+      "lineMove": {
+        "spread": [
+          0.5,
+          0.5
+        ],
+        "total": [
+          2.5,
+          2.5
+        ],
+        "ml": {
+          "home": [
+            180.0,
+            230.0
+          ],
+          "away": [
+            140.0,
+            130.0
+          ],
+          "draw": [
+            240.0,
+            220.0
+          ]
+        },
+        "checked": "2026-11-22T15:22:17+00:00"
+      }
+    },
+    {
+      "altCategoryTally": "Home 5 - Draw 0 - Away 0",
+      "altConfidence": "strong",
+      "altCorrect": null,
+      "altPick": "Marseille",
+      "altReasons": [
+        "Scoring margin: Home (Marseille's blended GD/g is far ahead of Le Mans')",
+        "Injuries/Lineup: Home (weighted x2 - Le Mans missing key attacking midfielder Adil Bourabaa and Djibril Sidibe together)",
+        "Form: Home (Marseille have won 5 straight; Le Mans are winless in 5 and have conceded in every league game)",
+        "Matchup splits: Home (Le Mans have conceded in every match this season against a Marseille attack among the league's top scorers)"
+      ],
+      "altReturn": null,
+      "attackGap": 0.188,
+      "away": "Le Mans",
+      "awayDrawRate": 0.5,
+      "awayGDpg": -0.7,
+      "awayGK": "Kocik",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 550,
+      "awayScore": null,
+      "awayStriker": "Habib Mafouta",
+      "awayXGpg": 1.507,
+      "competition": "Ligue 1",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 375,
+      "home": "Marseille",
+      "homeDrawRate": 0,
+      "homeGDpg": 0.665,
+      "homeGK": "Jeffrey de Lange",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": -227,
+      "homeScore": null,
+      "homeStriker": "Amine Gouiri",
+      "homeXGpg": 1.695,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "attack-gap",
+      "skipped": true,
+      "statLines": [
+        "GD/g (blended) +0.67 vs -0.70",
+        "attack-gap 0.19 (<0.4) but GD/g gap 1.37 (>=0.5, draw-check fails)"
+      ],
+      "time": "8:45 PM CET",
+      "gameTotal": 3.5,
+      "gameTotalOverOdds": 130,
+      "gameTotalUnderOdds": -165,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -1.5
+        ],
+        "total": [
+          3.5,
+          3.5
+        ],
+        "ml": {
+          "home": [
+            -225.0,
+            -225.0
+          ],
+          "away": [
+            500.0,
+            550.0
+          ],
+          "draw": [
+            380.0,
+            390.0
+          ]
+        },
+        "checked": "2026-11-22T15:22:17+00:00"
+      }
+    }
   ]
 }
