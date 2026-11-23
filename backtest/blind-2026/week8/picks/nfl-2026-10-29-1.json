@@ -1,0 +1,30 @@
+{
+  "sport": "nfl", "date": "2026-10-29", "chunk": "nfl-2026-10-29-1",
+  "games": [
+    {
+      "away": "Carolina Panthers", "home": "Green Bay Packers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "[spread] Line movement: the slate's open is GB -7 and the close is -3.5. RotoWire (Oct 28) reports the drop to -3.5 came while Green Bay drew 65% of tickets and 81% of money, which is reverse movement toward the underdog. SBR (Oct 27) lists -3.5 as its opener, so the -7 looks like an early lookahead number and the week's line sat at -3.5. The close equals the slate, so there's no slate-vs-close edge. Neutral, slight Carolina.",
+        "[spread] Covers (Oct 29) trends: Carolina is 13-0 ATS in its last 13 after an outright loss; Green Bay is 1-9-1 ATS in its last 11 after an outright loss and 4-11-1 ATS in its last 16 as a favorite. Helps Carolina (a priced tiebreaker at most).",
+        "[spread] Records: Green Bay 4-3, last in the NFC North; Carolina 3-3 and leading the NFC South (Dimers / RotoWire previews). Both teams are on a short week after Sunday games. Neutral.",
+        "Recent form: Carolina lost 43-13 at home to Tampa Bay, giving up 258 rushing yards, and Bryce Young was sacked five times. Green Bay lost 20-17 at Detroit after 3-point wins over Tampa Bay and the Jets (Covers, Predictem, Oct 29). Helps Green Bay.",
+        "[angle] Carolina's offensive line is gutted: RT Taylor Moton (IR, fibula), LT Ikem Ekwonu (PUP), and G Damien Lewis (knee) questionable or out; G Torricelli Simpkins III DNP. The defense is missing CB Jaycee Horn (IR), CB Mike Jackson (IR), EDGE Jaelan Phillips (out) and EDGE Nic Scourton (IR) (RotoWire/Predictem, Oct 27-28). Helps Green Bay, though it was mostly known before the line settled.",
+        "[angle] Green Bay's offensive line is also thin: a third-string center starts (Sean Rhyan out with a high-ankle sprain, Jacob Monk on IR), and both right-side starters are out or limited (Travis Glover DNP, Aaron Banks limited). Micah Parsons is still on PUP after his ACL (RotoWire / Predictem / Dimers, Oct 27-29). Helps Carolina.",
+        "Green Bay offense: last in rushing (2.9 ypc), under 100 rushing yards in seven straight games, 28th in success rate and third-down rate, and 30th in red-zone TD rate (46.2%). It also leads the league in penalties (65) and drops (18) (Predictem, SBR, Covers, Oct 27-29). Helps Carolina.",
+        "Green Bay defense: 4th in EPA/play allowed and 6th vs. dropbacks, with a league-high 13 takeaways in seven games, and it held four straight opponents to 20 or fewer (RotoWire, Predictem, Covers). Helps Green Bay.",
+        "[angle] Josh Jacobs returns from a six-game absence (11-36 rushing in his first game back, plus 5-55-1 receiving) against a Carolina run defense that's last in yards per carry allowed (5.2) (Predictem / Dimers, Oct 28-29). Helps Green Bay.",
+        "Young has struggled over the last four games: 6:3 TD:INT, 6.9 YPA and under 60% completions in three of them (RotoWire). Covers says he passed for 250+ yards in each of his first five. Carolina's pass defense is 5th in yards per pass allowed (6.2) (Predictem). Mixed.",
+        "WR Matthew Golden (shoulder/foot) was questionable but expected to play (RotoWire headlines, Oct 28-29). Neutral.",
+        "Weather at Lambeau: about 56F, calm wind, dry (Covers/Predictem). Neutral.",
+        "Preview picks: Covers (Osborne) and SBR (Spector) took Panthers +3.5, Predictem projected GB 23-19 and Dimers GB 25-21. Not an edge, per the lessons."
+      ],
+      "reasoning": "No read beyond the line. Both teams are banged up on the offensive line, and Green Bay's elite defense and Jacobs' return against a last-ranked run defense are offset by its broken run game, red-zone problems and penalties. My projection (GB by about 3) sits on the -3.5 number, and the -7 to -3.5 move looks like a lookahead correction, so I treat the close as fair. The road team is the tiebreaker for the forced side. A pick would have needed late news (for example, Carolina's line getting worse on the game-day report).",
+      "forcedSide": "Carolina Panthers",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

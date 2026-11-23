@@ -1,0 +1,30 @@
+{
+  "sport": "nfl", "date": "2026-11-02", "chunk": "nfl-2026-11-02-1",
+  "games": [
+    {
+      "away": "Chicago Bears", "home": "Seattle Seahawks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.5,
+      "research": [
+        "[spread] Line movement: the slate's open is SEA -4.5 and the close is -3, matching the slate's -3, so there's no slate-vs-close edge. RotoWire (Oct 28) notes the drop came despite Seattle beating Kansas City, with Chicago drawing about 61% of early tickets. The move is with the public and follows the Charles Cross injury news. Helps Chicago, but priced.",
+        "[spread] Predictem (Nov 2): Chicago is 5-2 ATS and has won its last two, with Caleb Williams throwing for 305 and 308 yards since returning from a hamstring injury. Helps Chicago (a priced tiebreaker).",
+        "[angle] Rest: Chicago last played on Thursday (it beat New England on TNF) and gets 11 days to prepare. Seattle plays on eight days' rest after its Sunday-night game (Predictem; Covers' Logan, Oct 28). Helps Chicago.",
+        "[angle] Seattle's LT Charles Cross has a high-ankle sprain and is doubtful or out, so Josh Jones starts. Darnold has faced the league's highest pressure rate and leads the NFL with 8 INTs, 4 of them under pressure. Chicago is 4th in pressure rate with 19 sacks and 10 takeaways (Covers Oct 28; Predictem Nov 2; RotoWire Oct 28). Helps Chicago.",
+        "Seattle's defense held Kansas City to 3 points with no red-zone trips. It allows the fewest explosive passes, ranks 3rd in EPA per dropback, has held every QB under 180 net passing yards this season, and allows 3.5 ypc (Covers, Nov 2). Helps Seattle.",
+        "[angle] Jaxon Smith-Njigba has a 36% target share and a league-leading 51% air-yards share, with 100+ yards in six of seven games. He faces a Chicago pass defense Predictem calls the league's worst (8.7 yards per attempt allowed), which has allowed 150+ WR yards and a WR TD in every game (Covers, Predictem, SBR, Nov 2). Helps Seattle.",
+        "Chicago leads the league with 154 rushing yards a game, but Seattle allows 3.5 ypc (2nd) and per Covers hasn't allowed a 100-yard rusher in 36 straight games. RB Kyle Monangai (toe) was a question mark (Covers/Predictem, Nov 2). Helps Seattle.",
+        "Chicago's run defense is 26th in run defense DVOA and 26th in run-stop win rate (4.4 ypc), but Seattle's own run game is weak (29th in rushing efficiency, under 4.0 per carry). Zach Charbonnet is expected back (Covers Oct 28; Predictem Nov 2). Mixed.",
+        "Chicago injuries: S Anthony Johnson Jr. expected out, Coby Bryant on IR, TE Cole Kmet on IR, LB T.J. Edwards questionable. EDGE Montez Sweat is back from suspension (Predictem; RotoWire, Oct 28). Mixed.",
+        "Seattle's WR Rashid Shaheed is injured (Covers, Nov 2). Helps Chicago slightly.",
+        "Williams' one game against an elite defense this season was a 138-yard outing in a loss to Minnesota. Seattle's red-zone defense has allowed TDs on 78.6% of trips (Predictem, Nov 2). Mixed.",
+        "Weather at Lumen Field: about 50F, light wind, dry (Covers/SBR). Neutral.",
+        "Preview picks: Covers' Logan (Bears +3.5), SBR's Spector (Bears +3.5) and Predictem (Bears +3, projecting SEA 23-21). Not an edge, per the lessons."
+      ],
+      "reasoning": "The Cross injury, Chicago's rest edge and its pass rush against a turnover-prone Darnold are real, but they came before the move from -4.5 to -3, so the close already prices them. Smith-Njigba against a weak Bears pass defense and Seattle's run defense against Chicago's run-heavy offense pull the other way. My projection (SEA by about 2.5) sits on the number, so I pass. The forced side goes to Chicago on the NFL road-team tiebreaker, plus the rest edge. A pick would have needed news after the line settled, such as Williams or Monangai being limited.",
+      "forcedSide": "Chicago Bears",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
