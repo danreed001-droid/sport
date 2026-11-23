@@ -15,7 +15,10 @@ locked (committed to git) before anyone grades them.
   `totalOpen` / `totalClose` (DraftKings via ESPN, the home team's spread):
   the line's open and its close at kickoff, both knowable before the game.
   Use them for line movement and slate-vs-close instead of searching for odds
-  (odds searches were a big source of result leaks).
+  (odds searches were a big source of result leaks). The close is reliable;
+  the open is ESPN's first posted number and is sometimes a lookahead line or
+  has its sign flipped (agents caught several in Week 8), so trust the close
+  and treat a huge open-to-close move with suspicion.
 - `backtest/blind-2026/LESSONS.md`, if it exists: lessons from earlier graded
   weeks. Apply them.
 - The web, under the blindness rules below.

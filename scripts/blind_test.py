@@ -96,6 +96,9 @@ def add_market(g, d, lines):
     for k, col, sg in [("homeSpreadOpen", "spread_open", sign), ("homeSpreadClose", "spread_close", sign),
                        ("totalOpen", "total_open", 1), ("totalClose", "total_close", 1)]:
         v = num(r.get(col))
+        if k == "homeSpreadOpen" and v is not None and close is not None and v * close < 0 \
+                and abs(v) >= 3 and abs(close) >= 3:
+            continue  # opener's sign likely flipped in the archive (agents flagged these in Week 8)
         if v is not None:
             g[k] = sg * v if sg == -1 and v != 0 else v
 
