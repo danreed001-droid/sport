@@ -1,0 +1,73 @@
+{
+ "sport": "nba",
+ "date": "2026-10-24",
+ "chunk": "nba-2026-10-24-1",
+ "games": [
+  {
+   "away": "Miami Heat",
+   "home": "Charlotte Hornets",
+   "time": "6:00 PM ET",
+   "awaySpread": -3.5,
+   "homeSpread": 3.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "awayMoneyline": -142,
+   "homeMoneyline": 120
+  },
+  {
+   "away": "Brooklyn Nets",
+   "home": "Cleveland Cavaliers",
+   "time": "7:30 PM ET",
+   "awaySpread": 11.5,
+   "homeSpread": -11.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 390,
+   "homeMoneyline": -520
+  },
+  {
+   "away": "Milwaukee Bucks",
+   "home": "Philadelphia 76ers",
+   "time": "7:30 PM ET",
+   "awaySpread": 12.5,
+   "homeSpread": -12.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": 490,
+   "homeMoneyline": -675
+  },
+  {
+   "away": "San Antonio Spurs",
+   "home": "Dallas Mavericks",
+   "time": "8:00 PM ET",
+   "awaySpread": -12.5,
+   "homeSpread": 12.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": -600,
+   "homeMoneyline": 440
+  },
+  {
+   "away": "Washington Wizards",
+   "home": "Chicago Bulls",
+   "time": "8:00 PM ET",
+   "awaySpread": 1.5,
+   "homeSpread": -1.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": -102,
+   "homeMoneyline": -118
+  },
+  {
+   "away": "Houston Rockets",
+   "home": "Atlanta Hawks",
+   "time": "8:30 PM ET",
+   "awaySpread": 1.5,
+   "homeSpread": -1.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -102,
+   "homeMoneyline": -118
+  }
+ ]
+}

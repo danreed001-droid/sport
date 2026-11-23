@@ -1,0 +1,79 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-24",
+ "chunk": "cfb-2026-10-24-2",
+ "games": [
+  {
+   "away": "Indiana",
+   "home": "Michigan",
+   "time": "12:00 PM ET",
+   "awayRank": 6,
+   "awaySpread": -7.5,
+   "homeSpread": 7.5,
+   "awaySpreadOdds": -102,
+   "homeSpreadOdds": -118,
+   "awayMoneyline": -290,
+   "homeMoneyline": 235
+  },
+  {
+   "away": "Rutgers",
+   "home": "Northwestern",
+   "time": "12:00 PM ET",
+   "homeRank": 24,
+   "awaySpread": 16.5,
+   "homeSpread": -16.5,
+   "awaySpreadOdds": 100,
+   "homeSpreadOdds": -104,
+   "awayMoneyline": 614,
+   "homeMoneyline": -700
+  },
+  {
+   "away": "Iowa",
+   "home": "Minnesota",
+   "time": "3:30 PM ET",
+   "awayRank": 15,
+   "awaySpread": -4.5,
+   "homeSpread": 4.5,
+   "awaySpreadOdds": -141,
+   "homeSpreadOdds": 135,
+   "awayMoneyline": -239,
+   "homeMoneyline": 230
+  },
+  {
+   "away": "Michigan State",
+   "home": "UCLA",
+   "time": "3:30 PM ET",
+   "homeRank": 9,
+   "awaySpread": 15,
+   "homeSpread": -15,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": 567,
+   "homeMoneyline": -614
+  },
+  {
+   "away": "USC",
+   "home": "Wisconsin",
+   "time": "7:30 PM ET",
+   "awayRank": 16,
+   "awaySpread": -3,
+   "homeSpread": 3,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -150,
+   "homeMoneyline": 125
+  },
+  {
+   "away": "Boise State",
+   "home": "Washington State",
+   "time": "6:00 PM ET",
+   "awayRank": 21,
+   "awaySpread": -16.5,
+   "homeSpread": 16.5,
+   "awaySpreadOdds": 133,
+   "homeSpreadOdds": -141,
+   "awayMoneyline": -500,
+   "homeMoneyline": 471
+  }
+ ]
+}

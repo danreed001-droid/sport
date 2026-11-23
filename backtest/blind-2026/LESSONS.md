@@ -1,55 +1,81 @@
-# Lessons for the blind test (cumulative; updated after Week 5)
+# Lessons for the blind test (cumulative; updated after Week 6)
 
 Read these before researching. Each lesson ends with its evidence. "Clean" means the
-result wasn't seen before locking.
+result wasn't seen before locking. Two weeks is a small sample: anything marked
+*tentative* is a lean, not a rule.
 
 ## Process
 
 - **Keep results out of your searches.** Search for previews, odds and injury reports by
-  outlet and date (e.g. "preview", "odds", "injury report Friday"). Never open a team's
-  Wikipedia season page. Never run a broad "final status" query after kickoff. Once a lean
-  is formed, stop searching that game. Evidence: 13 of 34 games were contaminated in Wk5,
-  through Wikipedia season pages, recap headlines, a live blog, and later articles inside
-  injury-status searches.
+  outlet and date. Never open a team's Wikipedia season page or a betting site's game or
+  picks page after its date (Covers, Pickswise, Predictem and Dimers pages mark their own
+  picks won or lost once the game is played). Never run a broad "final status" search, and
+  once a lean is written down, stop searching that game. Evidence: 13 of 34 games were
+  contaminated in Wk5 and 12 of 30 in Wk6. In Wk6, 7 came from betting pages grading their
+  own picks or showing finals, and 4 from news headlines in injury or QB-status searches,
+  one of them "one more search" after the lean was set.
+- **If you see any hint of the result before your lean is written down, lock a pass.**
+  Evidence: Wk6 Cleveland was picked after a summary implied Baltimore won, and Las Vegas
+  after a results list showed its cover (a clear process error).
 - **Honor your own pass trigger.** If your reasoning names a status that would turn the pick
-  into a pass ("if X plays, pass"), confirm it from the final inactive or availability
-  report before locking. If you can't confirm it, pass. Evidence: Wk5 Saints, a clean loss
-  by 8.5 after Jefferson played (1 game, a clear process error).
+  into a pass, confirm it from the final inactive or availability report before locking. If
+  you can't confirm it, pass. Evidence: Wk5 Saints lost after Jefferson played. Wk6 LSU and
+  Chicago were correctly passed on unresolved QB status.
+- **Check the current market line for every game against the slate's number.** A slate line
+  1+ point better than where the market settled, on the side the market moved toward, is the
+  one edge that has paid. Evidence (*tentative*): 3-0 in Wk6 (Texas Tech at -14.5 vs a -16.5
+  close won by 13.5, clean; Cleveland +4.5 and Las Vegas +5.5, both contaminated).
 
 ## Weighing evidence (all sports)
 
-- **Your projection isn't sharper than the line.** On 34 games it missed by 10.6 points on
-  average vs 10.7 for the line. Picks claimed a 2.9-point edge and realized +0.5. Shade
-  every projection about halfway back to the line. Make a pick only when the edge rests on
-  something the market plausibly hasn't priced, not on season stats everyone has.
-  Evidence: Wk5, 22 picks.
-- **After a 3+ point line move, treat the new number as fair.** Don't bet further in the
-  direction of the move. Don't re-list the injury news that caused the move as a reason
-  for the same side, because that counts it twice. Don't fade a big move just because you
-  can't find its cause. Lean pass. Evidence: betting with a 3+ point move went 1-4 in Wk5
-  (clean 1-3: Iowa State, Jaguars and Alabama lost). Fading one went 0-1 (Titans, -16).
-- **Team ATS records are noise.** Don't write one as a "helps X" bullet; use it at most as a
-  tiebreaker. Evidence: backing hot-ATS teams or fading cold-ATS teams went 3-7 in Wk5
-  (clean 1-4). Tampa Bay covered despite an 0-13 ATS run.
-- **Don't count "low total, so the points are worth more" as a separate reason.** The
-  spread already reflects the total and the weather. Evidence: underdog picks that leaned on
-  it went 3-4 in Wk5.
-- **Reverse line movement (the line moving against 60%+ of tickets) has been a useful sign
-  only toward underdogs.** Tentative. Evidence: toward the underdog 3-0 clean in Wk5
-  (Oklahoma, Kentucky, Tampa Bay; Texas A&M, contaminated, lost). Toward the favorite 0-2
-  (Alabama clean, Rams contaminated).
+- **Your projection isn't sharper than the line, so make few picks.** Shade every projection
+  halfway back to the line and pick only when the shaded edge is 2+ points (an unshaded edge
+  of 4+) and rests on something the market plausibly hasn't priced. Shading doesn't make
+  the number sharper; it filters out picks. Evidence: projection error was 10.6 vs 10.7
+  points per game for the line in Wk5 and 9.80 vs 9.82 in Wk6. The forced side was
+  25-28-2 over Wk5-6 (clean 14-17-2). Unshaded edges under 4 went 20-27-1, and 4+ went 5-1
+  (clean 4-1; *tentative*, 6 games). Wk6 passes went 7-9-1, so passing cost nothing.
+- **Be harder on the favorite.** When your projection lands on the favorite, require a
+  concrete unpriced reason before picking it. Evidence: the forced side went 7-13-2 as the
+  favorite over Wk5-6 (clean 4-10-2) and 18-15 as the underdog. Underdogs covered 35 of 62
+  games. Favorites finished 1.2 points short of their projection in Wk6.
+- **Public ratings that disagree with the line are not an edge.** Don't pick because SP+,
+  FPI or a pundit's projection differs from the spread; the market has seen them. Evidence:
+  Wk6 games where ratings differed by 2.5+ went 3-6 for the ratings side (clean 2-3; Missouri
+  +5.5 on an SP+ pick'em lost by 22.5).
+- **Already in the spread, so not a reason:**
+  - team ATS records (hot/cold ATS picks 3-7 in Wk5, mixed again in Wk6);
+  - a low total or bad weather "making the points worth more" (3-4 in Wk5);
+  - head-to-head and venue history;
+  - "the underdog can't score". In Wk6, backing a favorite because the dog's offense was
+    weak went 2-5-1 (Auburn, BYU, Tennessee and the Titans won outright).
+
+  Use any of these at most as a tiebreaker.
+- **After a 3+ point line move, treat the new number as fair: don't fade it, and don't re-list
+  the news that caused it as a reason.** The direction is noise. Evidence: picks with the move
+  went 1-4 in Wk5, but in Wk6 the moved side went 9-1-1 across all games (clean 5-1-1).
+  Fading a move went 0-1 (Wk5 Titans, -16).
+- **Reverse line movement toward an underdog is the one market sign that has held.** Toward a
+  favorite it hasn't. Evidence (*tentative*): toward the underdog 5-2 over Wk5-6 (clean 4-1),
+  toward the favorite 1-4.
 - **When a starter's injury caused the line move, his team's season ATS and form numbers
-  were built with him.** Don't use those numbers to argue the move was an overreaction.
-  Evidence: Wk5 Pitt with its backup QB (contaminated loss), and BYU without LJ Martin,
-  where taking Iowa State after the 5-point move lost.
+  were built with him.** Don't use them to argue the move was an overreaction. Evidence: Wk5
+  Pitt with its backup QB lost (contaminated). Wk5 Iowa State, taken after BYU lost LJ Martin
+  and the line moved 5, lost.
+
+## CFB
+
+- **Don't lay points with a favorite whose case is its defense while its offense is middling
+  or worse.** A margin needs an offense. Evidence (*tentative*): 0-3 ATS in Wk6, all three
+  losing outright (Texas -11.5 with the 55th-ranked offense by success rate, Oklahoma -6.5
+  with the 127th, Georgia -19.5).
 
 ## NFL
 
 - **Give home field little weight.** Don't add a "home bounce-back spot" or a
-  neutral-site record as support. Evidence: NFL home picks went 1-4 in Wk5, and road teams
-  covered 10-4-1 that week.
-- **Don't fade a favorite on defensive labels.** A "regression is coming" call on its
-  turnover luck, or a "bottom-five defense" ranking from a preview, isn't enough when the
-  opponent's offense is weak. Check yards per play allowed against the opponent's offense
-  first. Evidence: in Wk5 the Vikings held the Saints to 142 yards and the "bottom-five"
-  Texans held the Titans to 187; 2 clean losses.
+  neutral-site record as support. Evidence: NFL road teams covered 18-9-2 over Wk5-6. NFL
+  home picks went 3-4 (clean 1-4).
+- **Preview labels about one unit ("bottom-five defense", "regression is coming") are
+  priced.** Check yards per play against the actual opponent before using one. Evidence: in
+  Wk5, fading a favorite on such labels went 0-2 clean (the Vikings held the Saints to 142
+  yards and the Texans held the Titans to 187).

@@ -1,0 +1,18 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-22",
+ "chunk": "nfl-2026-10-22-1",
+ "games": [
+  {
+   "away": "New England Patriots",
+   "home": "Chicago Bears",
+   "time": "8:15 PM ET",
+   "awaySpread": 3,
+   "homeSpread": -3,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -102,
+   "awayMoneyline": 132,
+   "homeMoneyline": -154
+  }
+ ]
+}
