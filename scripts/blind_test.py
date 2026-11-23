@@ -105,6 +105,14 @@ def win_amt(odds):
     return odds if odds > 0 else 10000.0 / abs(odds)
 
 
+def from_projection(p, line):
+    """The side the locked projection covers with (for passes locked before forcedSide existed)."""
+    pm = p.get("projectedMargin")
+    if pm is None or pm + line["homeSpread"] == 0:
+        return None
+    return line["home"] if pm + line["homeSpread"] > 0 else line["away"]
+
+
 def grade(w):
     rows = []
     for c in chunks(w):
@@ -119,6 +127,7 @@ def grade(w):
             r = {"week": w, "sport": c["sport"], "date": c["date"], "away": key[0], "home": key[1],
                  "homeSpread": line["homeSpread"], "pick": p.get("pick"),
                  "confidence": p.get("confidence"), "projectedMargin": p.get("projectedMargin"),
+                 "forcedSide": p.get("forcedSide") or p.get("pick") or from_projection(p, line), "forcedCover": None,
                  "reasoning": p.get("reasoning"), "contaminated": bool(p.get("contaminated")),
                  "awayScore": fin.get("awayScore"), "homeScore": fin.get("homeScore"),
                  "cover": None, "spreadReturn": None, "won": None, "mlReturn": None}
@@ -135,6 +144,12 @@ def grade(w):
                 ml = line.get(side + "Moneyline")
                 if spread <= 10 and ml is not None and margin != 0:
                     r["mlReturn"] = round(win_amt(ml), 2) if margin > 0 else -100.0
+            fs = r["forcedSide"]
+            if fs in key and r["awayScore"] is not None and r["homeScore"] is not None:
+                sd = "home" if fs == key[1] else "away"
+                ot = "away" if sd == "home" else "home"
+                ats = fin[sd + "Score"] - fin[ot + "Score"] + line[sd + "Spread"]
+                r["forcedCover"] = None if ats == 0 else ats > 0
             rows.append(r)
     json.dump(rows, open(os.path.join(week_dir(w), "graded.json"), "w"), indent=1)
     print(summary_line(rows, f"Week {w}"))
@@ -186,6 +201,18 @@ def report():
         rs = [r for r in rows if r["week"] == w]
         if rs:
             out.append(line(f"Week {w}", rs))
+    def forced(rs):
+        rs = [r for r in rs if r.get("forcedCover") is not None or (r.get("forcedSide") and r.get("awayScore") is not None)]
+        w = sum(1 for r in rs if r.get("forcedCover") is True)
+        l = sum(1 for r in rs if r.get("forcedCover") is False)
+        return f"{w}-{l}-{len(rs) - w - l}" + (f" ({100 * w / (w + l):.1f}%)" if w + l else "")
+    out += ["", "Forced side (every game, passes included; Weeks 5-6 passes use the side the locked projected margin covers with):", "",
+            "| | Clean | All |", "|---|---|---|"]
+    for label, rs in [("Total", rows)] + [(s.upper(), [r for r in rows if r["sport"] == s]) for s in SPORTS] + \
+            [(f"Week {w}", [r for r in rows if r["week"] == w]) for w in WEEKS]:
+        if rs:
+            out.append(f"| {label} | {forced([r for r in rs if not r['contaminated']])} | {forced(rs)} |")
+    out.append("")
     for conf in ["strong", "lean"]:
         rs = [r for r in rows if r["confidence"] == conf]
         if rs:

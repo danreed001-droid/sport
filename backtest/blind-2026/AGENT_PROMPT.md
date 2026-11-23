@@ -111,6 +111,16 @@ within about 2 points of the spread, the evidence is balanced, or a key player's
 late status decides it; "strong" only when the projection clears the spread by
 roughly 5+ and several independent findings agree.
 
+Also record `forcedSide` for every game, passes included: the team you'd take
+if you had to bet this game. It is graded as a separate record (it never
+replaces `pick`). For a contaminated game, give the side your pre-leak
+reasoning pointed to.
+
+Also, some betting sites leak results too (Weeks 5-6): Covers picks shown
+with ✅/❌ or "went 0-1", Dimers scoreboards and /predictions/ matchup pages,
+Pickswise game pages showing finals, Predictem results lists. Ignore any
+graded pick, scoreboard or results list; don't open those pages.
+
 Budget: aim for about 4-8 searches per game. Depth on the deciding questions
 beats breadth.
 
@@ -131,6 +141,7 @@ with the Write tool:
       "projectedMargin": 3.5,                  // home minus away
       "research": ["...10+ bullets..."],
       "reasoning": "2-4 sentences: what decided it, the most surprising [angle], what would have changed it",
+      "forcedSide": "Team Name",               // ALWAYS a team, even on a pass: the side you'd take if you had to bet
       "contaminated": false,
       "contaminationNote": null
     }
