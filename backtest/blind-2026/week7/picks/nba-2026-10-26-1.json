@@ -1,0 +1,142 @@
+{
+  "sport": "nba", "date": "2026-10-26", "chunk": "nba-2026-10-26-1",
+  "games": [
+    {
+      "away": "Washington Wizards", "home": "Charlotte Hornets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 0.5,
+      "research": [
+        "Covers moneyline picks and Covers preview (Oct 26): Kon Knueppel and Coby White are both out for Charlotte (helps Wizards +1.5).",
+        "SBR best bets (Oct 26, 10:15 AM): Knueppel and White each averaged 15+ points last season; the writer took Wizards +2.5 with a play-to of +1.5 (helps Wizards, but the slate is at the play-to limit).",
+        "Line move: Covers' preview listed Hornets -2.5; the slate has -1.5, so the market moved a point toward Washington (moved side Wizards; slate number is the worse one for Washington).",
+        "Covers moneyline picks (Oct 26): Wizards at 43% on Polymarket; the analyst priced them at 52% without Knueppel and White (helps Wizards).",
+        "Covers ATS picks (Oct 26): the writer took Wizards +1.5, citing Trae Young and Anthony Davis as impressive and an inside edge (helps Wizards).",
+        "Covers preview (Oct 26): AJ Dybantsa is still out for Washington (helps Hornets).",
+        "Covers preview (Oct 26): Charlotte was 16-6 SU as a home favorite and 50-34 ATS last season, the league's best (helps Hornets; old ATS record, tiebreaker only).",
+        "Covers preview (Oct 26): Washington was 6-35 SU on the road last season (helps Hornets; last season's roster).",
+        "[angle] Covers preview (Oct 26): Trae Young leads the league at 11.3 assists a game; Washington is top-five in pace and second in free-throw attempts (helps Wizards).",
+        "[angle] Covers preview (Oct 26): Brandon Miller is shooting ~30% early, with positive regression expected, and he scored 20+ in all three meetings with Washington last season (helps Hornets).",
+        "Covers preview (Oct 26): Charlotte is second in three-point attempts (47.5 a game), a high-variance profile (neutral)."
+      ],
+      "reasoning": "Charlotte's two missing scorers are the story, and the market has already moved a point toward Washington because of them. The slate's +1.5 is the sharpest number analysts would still play. The new number looks fair, and last season's Hornets ATS dominance came with a healthier roster. Washington is the forced side only.",
+      "forcedSide": "Washington Wizards",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Minnesota Timberwolves", "home": "Cleveland Cavaliers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.5,
+      "research": [
+        "WagerTalk preview (Oct 26): Minnesota is on the second night of a back-to-back after Sunday's home win over Toronto (helps Cavaliers -3.5).",
+        "[angle] WagerTalk preview (Oct 26): Minnesota emptied its bench Sunday and no player logged more than 31 minutes, softening the back-to-back (helps Wolves +3.5).",
+        "WagerTalk preview (Oct 26): Minnesota is 3-0 SU and ATS, each win by 22+, holding opponents to 97.7 a game; Cleveland is 0-2 ATS (helps Wolves; ATS records, tiebreaker only).",
+        "WagerTalk preview (Oct 26): the line opened Cleveland -4.5 and moved to -3.5 (toward Minnesota); 89% of bets are on Minnesota but 85% of money is on Cleveland (mixed: public on the dog, big money on the favorite).",
+        "Covers preview (Oct 26): Minnesota was 1-6 SU and 2-5 ATS as an underdog on no rest last season (helps Cavaliers; old situational record).",
+        "Covers preview (Oct 26): Cleveland was a league-worst 3-14 ATS with a rest advantage last season (helps Wolves; old situational record).",
+        "WagerTalk preview (Oct 26): Cleveland nearly blew a 22-point home lead against Brooklyn before winning by four; Harden shot 1-for-8 (helps Wolves).",
+        "[angle] Covers moneyline picks (Oct 26): Mitchell and Harden can attack Gobert's drop coverage, and Mobley and Allen can protect the rim against Edwards' drives (helps Cavaliers).",
+        "Covers preview (Oct 26): Minnesota scores 119.1 per 100 and allows 96.2; Edwards and LaMelo Ball lead its start (helps Wolves).",
+        "Covers preview (Oct 26): Jarrett Allen averaged 17.2 and 11.5 with five double-doubles in his last six meetings with Minnesota (helps Cavaliers; matchup history).",
+        "Covers ATS picks (Oct 26): Edwards is averaging 28.7 a game; the writer took Minnesota +3.5 (helps Wolves)."
+      ],
+      "reasoning": "Minnesota's dominant start is weighed against a back-to-back at a rested Cleveland, and the market has met in the middle at 3.5 after opening 4.5. The split of public bets on Minnesota and big money on Cleveland gives no clean sharp signal, so the projection sits inside the number. Minnesota is the forced side as the underdog the line moved toward.",
+      "forcedSide": "Minnesota Timberwolves",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Chicago Bulls", "home": "Boston Celtics",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 13.0,
+      "research": [
+        "Covers moneyline picks (Oct 26): Nic Claxton is out for Chicago, leaving Jalen Smith as the main interior presence (helps Celtics -13.5).",
+        "Covers preview (Oct 26): Chicago allows 128.0 a game (second-most) and 47.7 rebounds a game (helps Celtics).",
+        "Covers ATS picks (Oct 26): Boston averages about 110 a game; the writer called the spread too big given Boston's scoring (helps Bulls +13.5).",
+        "Covers preview (Oct 26): Boston is outside the top 20 in defensive rating through two games and allows 38.8% from three (helps Bulls).",
+        "[angle] Covers preview (Oct 26): Chicago's starting five (Giddey, Powell, Buzelis, Wilson, Smith) allows 3.3 points a minute, the worst among lineups with 10+ shared minutes (helps Celtics).",
+        "[angle] Covers moneyline picks (Oct 26): Boston's switchable defenders (Tatum, Walsh, George, White) can pressure Giddey (helps Celtics).",
+        "Covers preview (Oct 26): Chicago is second in pace and fourth in three-point attempts (41.3) (high variance; slight Bulls help for a backdoor).",
+        "Line: Covers' preview listed Celtics -14.5; the slate has -13.5 (a point toward Chicago).",
+        "Covers moneyline picks (Oct 26): Celtics 87% on Polymarket, analyst projected 89% (helps Celtics slightly).",
+        "Covers preview (Oct 26): Tatum is averaging 24.5 points, 6.5 rebounds and 9 assists (helps Celtics)."
+      ],
+      "reasoning": "Contaminated before a lean was written: a search summary described a later preview saying Boston beat Chicago by 35 four days earlier. Locked a pass. The forced side is the underdog default (plus the point of line drift toward Chicago) from before the leak, not a researched read.",
+      "forcedSide": "Chicago Bulls",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch (allowed_domains: wagertalk, actionnetwork, sportsbookreview, oddsshark) for this game's preview summarized a WagerTalk Oct 30 preview saying 'just four days ago, Boston blew Chicago out by 35 points'. I saw it before writing any lean, so the pick is a pass."
+    },
+    {
+      "away": "Dallas Mavericks", "home": "Miami Heat",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.5,
+      "research": [
+        "Covers preview (Oct 26): Cooper Flagg was questionable Monday morning with a shoulder injury; Dallas went 4-8 without him as a rookie (status unresolved, deciding factor).",
+        "Covers preview (Oct 26): Naji Marshall is out with illness (helps Heat -8.5).",
+        "Covers moneyline picks (Oct 26): Dallas likely without Santi Aldama and Dereck Lively, leaving Daniel Gafford as the main rim protector (helps Heat).",
+        "[angle] Covers preview (Oct 26): Kyrie Irving is off the injury report after sitting Saturday for injury management, but his minutes are limited after a 19-month ACL absence (mixed).",
+        "Covers preview (Oct 26): Miami is 0-3 and ranks 27th in both offensive (105.1) and defensive (121.4) efficiency (helps Mavericks +8.5: a big favorite with bad numbers).",
+        "[angle] Covers preview (Oct 26): Miami's new frontcourt is Giannis Antetokounmpo and Bam Adebayo against a thin Dallas frontcourt (helps Heat).",
+        "Covers preview (Oct 26): Miami has won eight straight home games when favored by 8.5+ since Nov 2025; Dallas is 9-41 SU as 8.5+ road dogs over three seasons (helps Heat; old SU trends).",
+        "Covers preview (Oct 26): Dallas was 10-30 on the road last season (helps Heat; old record).",
+        "Covers ATS picks (Oct 26): Heat -8.5 at 51% on Polymarket; the writer would switch to the Heat moneyline if Flagg plays (neutral market).",
+        "Covers moneyline picks (Oct 26): the analyst said Miami's projections show one of its biggest edges against the market at 72-74% (helps Heat; a public projection, not an edge per LESSONS).",
+        "Covers preview (Oct 26): the Under is 7-1 in Dallas's last eight against losing teams; the total is around 237.5-239.5 (neutral)."
+      ],
+      "reasoning": "Flagg's status decides the game, and I couldn't confirm it without risky searches, so pass. Miami's 0-3 start with bottom-five efficiency on both ends makes laying 8.5 hard to trust (LESSONS: be harder on favorites). A depleted Dallas frontcourt against Giannis and Bam is the counterweight. The forced side is the underdog.",
+      "forcedSide": "Dallas Mavericks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Indiana Pacers", "home": "Milwaukee Bucks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.5,
+      "research": [
+        "Covers moneyline picks and WagerTalk props (Oct 26): Indiana is on the second night of a back-to-back after Sunday's game in Brooklyn (helps Bucks +4.5).",
+        "Covers preview (Oct 26): Ivica Zubac probably won't play after rolling his ankle in Sunday's 136-109 win over Brooklyn (helps Bucks).",
+        "Covers preview (Oct 26): T.J. McConnell is doubtful and Ben Sheppard tore his meniscus on opening night (helps Bucks).",
+        "[angle] WagerTalk props (Oct 26): Haliburton, back from an Achilles tear, said he must overcome 'tired legs'; he played 31, 32 and 34 minutes in his first three games (helps Bucks if minutes are managed).",
+        "[angle] Covers moneyline picks (Oct 26): the analyst gave Milwaukee a slight edge at 39% if Haliburton plays, growing if his minutes are cut (helps Bucks).",
+        "Covers preview (Oct 26): Milwaukee is 0-3 and was projected for the East's second-fewest wins (25.5) (helps Pacers).",
+        "Covers preview (Oct 26): Milwaukee's starters are +18.2 net rating, lineups with a reserve -19.5 (mixed: starters compete, bench is a liability).",
+        "Covers ATS picks (Oct 26): Indiana shot nearly 50% from three in its last game and Milwaukee is struggling defensively; the writer took Pacers -4.5 (helps Pacers).",
+        "WagerTalk props (Oct 26): Milwaukee has the fourth-worst defensive rating; Maxey, Powell and Trae Young scored 20-26 against it (helps Pacers).",
+        "Covers preview (Oct 26): Milwaukee covered all three meetings with Indiana last season; Herro (41.7% from three) and Myles Turner, facing his old team, give it a scoring core (helps Bucks; history is a tiebreaker only).",
+        "Line: -4.5 in Covers, WagerTalk and the slate (no move despite Zubac's injury news)."
+      ],
+      "reasoning": "Indiana on a back-to-back without Zubac, McConnell or Sheppard, with Haliburton on 'tired legs', points to Milwaukee. But the Bucks are a winless, thin team, and Indiana just won by 27. I project the Pacers by about 2.5, a shaded edge near 1 point, short of the bar. Haliburton's minutes are the swing factor I can't confirm.",
+      "forcedSide": "Milwaukee Bucks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Phoenix Suns", "home": "Oklahoma City Thunder",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 8.5,
+      "research": [
+        "Covers moneyline picks (Oct 26): Chet Holmgren is ruled out and OKC is on the second night of a back-to-back (after Sunday vs. the Clippers), so regulars may rest (helps Suns +9.5).",
+        "SBR best bets (Oct 26): Jalen Williams is out for OKC; the writer expects a tighter game than 9.5 because the Suns are healthier (helps Suns).",
+        "WagerTalk preview (Oct 26): Cason Wallace and Jaylin Williams are game-time decisions and Nikola Topic is out (helps Suns).",
+        "Covers ATS picks (Oct 26): Jalen Williams suffered a serious injury Sunday, and Wallace and Jaylin Williams left early (helps Suns).",
+        "Line move: WagerTalk had OKC opening -9.5 and moving to -10.5 against 80% of bets and 87% of money on Phoenix; then Covers' analyst said Phoenix went from 16% to 26% on Polymarket overnight, consistent with the slate's -9.5 and +315 after the injury news (treat the current number as fair).",
+        "WagerTalk preview (Oct 26): Mark Williams is out for Phoenix and Oso Ighodaro is questionable, leaving the frontcourt thin; OKC out-rebounds opponents 46.3 to 40.5 (helps Thunder).",
+        "Covers preview (Oct 26): OKC is 3-0 with two double-digit wins, allows 96.3 a game, and plays at the league's slowest pace (85.2 possessions) (helps Thunder defensively; slow pace limits margin, mixed).",
+        "Covers preview (Oct 26): Phoenix is 18th in offensive efficiency (106.6) and scores 107.0 a game (helps Thunder: the dog needs to score).",
+        "[angle] WagerTalk preview (Oct 26): Booker is averaging 33.0 points on 63.2% shooting through two games (helps Suns).",
+        "SBR best bets (Oct 26): SGA averaged 31.9 points on 20.3 shots without Jalen Williams (per StatMuse), so OKC's offense funnels through him (mixed).",
+        "Covers preview (Oct 26): OKC has covered two of its first three games (tiebreaker only)."
+      ],
+      "reasoning": "OKC without Holmgren and Jalen Williams on a back-to-back is a different team, but the market has already moved for it (the Suns went from about 16% to 26%), so -9.5 is the post-news number. OKC's elite defense and Phoenix's thin frontcourt keep me from fading it further. Pass, with Phoenix as the forced side on rest and injuries.",
+      "forcedSide": "Phoenix Suns",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
