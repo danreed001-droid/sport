@@ -145,6 +145,10 @@ jobs:
         continue-on-error: true
         run: python scripts/archive_schedule.py
 
+      - name: Save soccer closing moneylines (candles' Moneyline view)
+        continue-on-error: true
+        run: python scripts/archive_soccer_odds.py
+
       - name: Save college player box scores (NCAAB/CFB matchup by position)
         continue-on-error: true
         run: python scripts/archive_college_player_box.py

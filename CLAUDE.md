@@ -414,6 +414,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   outline. A "Point diff | ATS" switch (`dl-cdmode`, `html.cdats`) shows the running
   cover margin instead (margin + closing spread from `data/raw/<sport>_lines.csv`;
   no line = a flat gray candle; no switch where no line is saved, MLB and soccer).
+  Soccer (2026-11-23, the user's ask: soccer has no spread) gets "Goal diff |
+  Moneyline" instead: the running profit from $100 on the team to win each match
+  at its closing 3-way moneyline (a win pays the price, a draw or loss costs
+  $100; no line saved = flat gray), from `scripts/archive_soccer_odds.py`
+  (scoring run, after archive_schedule.py): each finished match in the soccer
+  schedule's ESPN summary (`soccer/all/summary?event=`, pickcenter's DraftKings
+  home/away/draw) into `data/raw/soccer_odds.json` ({event id: [home, away,
+  draw] or null}), at most 400 new matches a run; row[7] of soccer's
+  `pdCandles` rows.
   A 1M | 2M | 3M | Season range (2026-11-21, the user's ask; `CD_RANGES`,
   `dl-cdrange`, every card at once: `cdInner` redraws each `.cdwrap`) shows only
   the last 30/61/91 days, the running total still counted from the season's start

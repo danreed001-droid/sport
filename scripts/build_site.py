@@ -370,6 +370,27 @@ def next_games(slate_date, slate_sports):
     return out
 
 
+_SOC_ODDS = {}
+
+
+def _soccer_odds():
+    """{ESPN event id: [home, away, draw] closing moneylines} (archive_soccer_odds.py)."""
+    if "x" not in _SOC_ODDS:
+        try:
+            with open(os.path.join(store.REPO_ROOT, "data", "raw", "soccer_odds.json"), encoding="utf-8") as f:
+                _SOC_ODDS["x"] = json.load(f)
+        except (OSError, ValueError):
+            _SOC_ODDS["x"] = {}
+    return _SOC_ODDS["x"]
+
+
+def _ml_profit(ml, won):
+    """Profit on $100 to win at American odds `ml` (a draw or loss costs the $100)."""
+    if not won:
+        return -100.0
+    return ml if ml > 0 else 10000.0 / -ml
+
+
 CANDLE_DAYS = None  # None = the whole current season; else only this many days back are rows (the sum still starts at the season)
 
 
@@ -378,7 +399,9 @@ def pd_candles(slate_date, slate_sports):
     chart): {sport: {slate team: {"c0": running margin before the first row,
     "a0": running cover margin before it, "r": [[date, opponent, home (1/0),
     points for, points against, [margin per period] or None, team's closing
-    spread or None], ...]}}} -- every finished game this season (from H2H_START)
+    spread or None (, soccer: the team's closing moneyline or None)], ...]}}}
+    -- soccer's "a0"/ATS view is the running profit from $100 on the team to win
+    each match at its closing moneyline (data/raw/soccer_odds.json) -- every finished game this season (from H2H_START)
     before the slate's date, from data/raw/schedule/<sport>.json (periods saved
     there, else data/raw/linescores), closing spreads from data/raw/<sport>_lines.csv.
     With CANDLE_DAYS set, rows cover only that many days and c0/a0 carry the
@@ -409,16 +432,22 @@ def pd_candles(slate_date, slate_sports):
                     pf, pa = (r[6], r[5]) if me else (r[5], r[6])
                     hs, _tot = _closing(sport, r[4])
                     sp = None if hs is None else (hs if me else -hs)
+                    ml = None
+                    if sport == "soccer":   # soccer has no spread: the closing moneyline stands in for ATS
+                        o3 = _soccer_odds().get(str(r[4]))
+                        ml = (o3[0] if me else o3[1]) if o3 else None
                     if d < cut:
                         c0 += pf - pa
                         if sp is not None:
                             a0 += pf - pa + sp
+                        elif ml is not None:
+                            a0 += _ml_profit(ml, pf > pa)
                         continue
                     if len(r) > 8 and r[7] and r[8]:
                         q = [round(y - x) if me else round(x - y) for x, y in zip(r[7], r[8])]
                     else:
                         q = quarters(sport, d, {"away": r[0], "home": r[1]}, "home" if me else "away", False)
-                    rows.append([d, r[0] if me else r[1], me, pf, pa, q, sp])
+                    rows.append([d, r[0] if me else r[1], me, pf, pa, q, sp] + ([ml] if sport == "soccer" else []))
             if rows or c0:
                 res[t] = {"c0": round(c0, 1), "a0": round(a0, 1), "r": rows}
         if res:
