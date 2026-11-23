@@ -51,16 +51,46 @@ def slates_for(w):
                 yield sport, d, f
 
 
+def market_lines(sport):
+    """Opening and closing home spread/total from data/raw/<sport>_lines.csv (pre-game numbers only)."""
+    import csv
+    path = os.path.join(ROOT, "data", "raw", f"{sport}_lines.csv")
+    out = {}
+    if os.path.exists(path):
+        for r in csv.DictReader(open(path)):
+            out.setdefault((r["away"], r["home"]), []).append(r)
+    return out
+
+
+def add_market(g, d, lines):
+    import datetime as dt
+    day = dt.date.fromisoformat(d)
+    near = {str(day + dt.timedelta(days=k)) for k in (-1, 0, 1)}
+    rows = [r for r in lines.get((g["away"], g["home"]), []) if r["date"] in near]
+    if len(rows) != 1:
+        return
+    r = rows[0]
+    num = lambda v: float(v) if v not in ("", None) else None
+    for k, col in [("homeSpreadOpen", "spread_open"), ("homeSpreadClose", "spread_close"),
+                   ("totalOpen", "total_open"), ("totalClose", "total_close")]:
+        if num(r.get(col)) is not None:
+            g[k] = num(r[col])
+
+
 def prep(w):
     os.makedirs(os.path.join(week_dir(w), "slates"), exist_ok=True)
     os.makedirs(os.path.join(week_dir(w), "picks"), exist_ok=True)
     made = []
+    cache = {}
     for sport, d, f in slates_for(w):
+        if sport not in cache:
+            cache[sport] = market_lines(sport) if w >= 8 else {}
         games = []
         for g in json.load(open(f))["games"]:
             if g.get("awaySpread") is None or g.get("homeSpread") is None:
                 continue  # no line: nothing to pick against the spread
             games.append({k: g[k] for k in KEEP if g.get(k) is not None})
+            add_market(games[-1], d, cache[sport])
         for i in range(0, len(games), CHUNK):
             part = games[i:i + CHUNK]
             name = f"{sport}-{d}-{i // CHUNK + 1}"

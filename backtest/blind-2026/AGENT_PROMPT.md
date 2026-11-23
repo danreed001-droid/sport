@@ -11,6 +11,11 @@ locked (committed to git) before anyone grades them.
   your task). Each game has teams, start time and the line you are picking
   against. Use that line; don't hunt for a different one (you may mention line
   movement you find in pre-game sources).
+- From Week 8, slate games may carry `homeSpreadOpen` / `homeSpreadClose` and
+  `totalOpen` / `totalClose` (DraftKings via ESPN, the home team's spread):
+  the line's open and its close at kickoff, both knowable before the game.
+  Use them for line movement and slate-vs-close instead of searching for odds
+  (odds searches were a big source of result leaks).
 - `backtest/blind-2026/LESSONS.md`, if it exists: lessons from earlier graded
   weeks. Apply them.
 - The web, under the blindness rules below.
