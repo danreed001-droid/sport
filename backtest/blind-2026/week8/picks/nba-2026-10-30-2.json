@@ -1,0 +1,95 @@
+{
+  "sport": "nba", "date": "2026-10-30", "chunk": "nba-2026-10-30-2",
+  "games": [
+    {
+      "away": "Indiana Pacers", "home": "Miami Heat",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 8.0,
+      "research": [
+        "Pacers are without Tyrese Haliburton (hamstring strain), Ivica Zubac (sprained ankle) and T.J. McConnell; Andrew Nembhard has neck soreness (probable/questionable) (Predictem, Oct 30 2026) - helps Miami, but reported before the line settled.",
+        "[angle] Rick Carlisle is away for a family funeral; Lloyd Pierce is interim coach for Indiana (Predictem, Oct 30 2026) - small edge Miami.",
+        "[angle] Without Zubac, Indiana's frontcourt is Jay Huff, Obi Toppin, Jarace Walker and Larry Nance Jr. against Giannis Antetokounmpo (27.6 ppg, 11.2 rpg) and Bam Adebayo (Predictem, Oct 30 2026) - helps Miami inside.",
+        "Miami is 1-4: 0-3 at home (lost to Minnesota by 25, Detroit by 17, Dallas by 4); its only win was Wednesday at Atlanta 129-117 (Predictem, Oct 30 2026) - helps Indiana as a fade of a weak home team.",
+        "Miami's defense allows about 116 points per 100 possessions (23rd) and ranks 25th in eFG% allowed (Predictem, Oct 30 2026) - helps Indiana's backdoor chances.",
+        "Indiana lost by 5 at Philadelphia (4-1) on Wednesday without Haliburton and Zubac, shooting 9-of-36 from three; Nembhard had 18 and 14 assists, Siakam a double-double (Predictem, Oct 30 2026) - helps Indiana: competitive without its stars.",
+        "Line: Predictem says it opened Miami -3.5 and moved four-plus points; slate -7.5, close Miami -8.5 (slate file; the slate's open is recorded as +3.5, likely a sign error) - a 5-point move on the Indiana injuries; treat the close as fair.",
+        "Slate vs close: Miami -7.5 on the slate is 1 point better than the -8.5 close on the side the market moved to (slate file) - mild information toward Miami, not an edge.",
+        "Total fell from 240.5 open to 236.5 close (slate file) - neutral for the side.",
+        "Dimers' model projects Heat 121-114 and lists Pacers +8.5 as its value side (54.3% cover); Predictem projects Heat 118-113 and picks Pacers +7.5 (Dimers/Predictem, Oct 30 2026) - preview picks are not an edge per LESSONS."
+      ],
+      "reasoning": "Contaminated before any lean: my very first search's summary said a WagerTalk/GoldSheet page listed results including 'Pacers cover'. Locked a pass per LESSONS. No read of my own before the leak; the forced side is the mechanical slate-vs-close rule (slate Miami -7.5 vs close -8.5, the side the market moved to), recorded as such rather than as a forecast.",
+      "forcedSide": "Miami Heat",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary (allowed_domains betting sites) said the WagerTalk/GoldSheet piece 'lists a final score and results (\"Pacers cover,\" \"Over\")'. No score was shown. Seen before any lean was written; pass locked. Forced side set by the slate-vs-close rule, not by research."
+    },
+    {
+      "away": "LA Clippers", "home": "Minnesota Timberwolves",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.0,
+      "research": [
+        "Anthony Edwards is out after right knee arthroscopic surgery, expected to miss up to two months (Predictem, Oct 30 2026) - helps Clippers, but known before the line settled.",
+        "Clippers are without Brandon Ingram, Bradley Beal and Max Strus; Rui Hachimura is day-to-day (quad) and Darius Garland is playing through back tightness (Predictem, Oct 30 2026) - helps Minnesota.",
+        "[angle] Minnesota blew a 24-point lead to lose 119-114 at home to Golden State on Wednesday; LaMelo Ball shot 3-of-11 with six turnovers and Chris Finch said players 'tried to be Edwards' on their first touch (Predictem, Oct 30 2026) - helps Clippers: Wolves' offense is unsettled without Ant.",
+        "Clippers scored only 87 in a 103-87 loss to the Lakers on Wednesday, with Luka Doncic not playing for LA (Predictem, Oct 30 2026) - helps Minnesota: the dog may not score enough to cover.",
+        "Clippers have 94 turnovers in four games (23.5 per game, 20.6% rate, last in the league) and a 28th-ranked offense (Predictem, Oct 30 2026) - helps Minnesota.",
+        "[angle] The Clippers' defense is 7th in efficiency and 3rd in forcing turnovers, and Tyronn Lue wants to push tempo (Predictem, Oct 30 2026) - helps Clippers keep it close.",
+        "Minnesota allows 103.4 points per 100 possessions (2nd), Rudy Gobert averages 12.2 rebounds and Minnesota secures 78% of opponents' misses (Predictem, Oct 30 2026) - helps Minnesota.",
+        "Line moved from Minnesota -9.5 open to -6.5 close (slate file) - a 3-point move toward the Clippers; treat the close as fair.",
+        "Slate vs close: Clippers +7.5 on the slate is 1 point better than the +6.5 close, on the side the market moved to (slate file) - mild information toward the Clippers.",
+        "Total dropped from 230.5 to 222.5 despite most public tickets on the Over (Predictem, Oct 30 2026; slate file) - a low-scoring game slightly favors the underdog's cover chances, which LESSONS says is already priced.",
+        "Dimers' model projects Wolves 114-108 and lists Clippers +6.5 as value; WagerTalk projects Wolves 112-102 and backs Wolves -6.5 (search summaries, Oct 30 2026) - previews split; not an edge."
+      ],
+      "reasoning": "Contaminated before any lean: a search summary quoted a later Predictem preview giving the final score (Wolves 127-101). Locked a pass. The forced side is the mechanical slate-vs-close rule (Clippers +7.5 vs +6.5 close, the side the line moved to), set the same way as the other leaked games, not from a forecast.",
+      "forcedSide": "LA Clippers",
+      "contaminated": true,
+      "contaminationNote": "My second WebSearch (allowed_domains predictem/actionnetwork/sportsbookreview/rotowire) returned a summary saying 'A separate Predictem preview says the Wolves beat the Clippers 127-101 at home on Friday night.' Seen before any lean was written; pass locked. Forced side set by the slate-vs-close rule."
+    },
+    {
+      "away": "Denver Nuggets", "home": "Phoenix Suns",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -4.0,
+      "research": [
+        "Phoenix is without starting center Mark Williams; Oso Ighodaro questionable (oblique) (Covers top picks and search summary, Oct 30 2026) - helps Denver on the glass vs Jokic.",
+        "Phoenix ranks last in defensive rating (124.9 per 100 per Predictem) and has allowed 122+ in all three games (Covers, Oct 30 2026) - helps Denver.",
+        "Phoenix ranks last in rebound percentage (Covers, Oct 30 2026) - helps Denver.",
+        "[angle] Cam Johnson, a former Sun, is questionable for Denver with an ankle injury that has cost him three games (Predictem via search summary, Oct 30 2026) - small help to Phoenix if he sits.",
+        "Denver has struggled offensively early but won both its wins by 6+ (Covers, Oct 30 2026) - helps Denver.",
+        "Line moved from Phoenix +2.5 open to +4.5 close; slate +4.5 equals the close (slate file) - market moved toward Denver; no slate-vs-close edge.",
+        "Total dipped from 233.5 to 231.5 (slate file) - neutral.",
+        "Dimers' model projects Nuggets 117-113 and lists Suns +4 as value (54.4% cover) (Dimers, Oct 30 2026) - leans Phoenix, but preview models are not an edge.",
+        "Covers' analyst picks Nuggets -3.5 (Covers, Oct 30 2026) - leans Denver, not an edge."
+      ],
+      "reasoning": "Contaminated before any lean: a search summary quoted a later Covers matchup page with the final (Denver 127-120). Locked a pass. No read of my own before the leak; fewer than 10 solid bullets gathered. The only pre-leak directional note was Dimers' Suns +4 value, so that is recorded as the forced side, not as a forecast.",
+      "forcedSide": "Phoenix Suns",
+      "contaminated": true,
+      "contaminationNote": "WebSearch (allowed_domains predictem.com, covers.com) returned a summary stating 'A later Covers page records the game as a Denver win, 127-120, and notes Murray scored 39 points.' Seen before any lean was written; pass locked. Forced side taken from the only pre-leak note (Dimers' Suns value)."
+    },
+    {
+      "away": "Los Angeles Lakers", "home": "Golden State Warriors",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.5,
+      "research": [
+        "NBA Cup group-stage game at Chase Center (Covers, Oct 30 2026) - neutral; adds some stakes for both.",
+        "Lakers are 4-1 (2-0 on the road), winning by an average of 13.8; their only loss was by 7 at Portland (Covers, Oct 30 2026) - helps Lakers.",
+        "Lakers lead the league at 123.2 points per game and 66.6 first-half points (Covers, Oct 30 2026) - helps Lakers.",
+        "Austin Reaves is shooting 56.9% and 48.1% from three through five games (Covers, Oct 30 2026) - helps Lakers.",
+        "[angle] Lakers beat the Clippers 103-87 on Wednesday without Luka Doncic (Predictem Clippers preview, Oct 30 2026); Dimers projects Doncic for 34.5 tonight, so he appears set to return (Dimers, Oct 30 2026) - helps Lakers.",
+        "Warriors started 0-3 and have won two straight, including a comeback from 24 down to win 119-114 at Minnesota on Wednesday (Covers; Predictem Clippers preview, Oct 30 2026) - helps Golden State's form.",
+        "[angle] Warriors rookie Yaxel Lendeborg (11th pick) averages 22.6 points and has 26+ in three straight (Covers, Oct 30 2026) - helps Golden State.",
+        "Warriors allow 119.4 points, 13.0 made threes and 51.1% shooting a game, and rank 28th vs backcourt players (Covers, Oct 30 2026) - helps Lakers' guards.",
+        "Line moved from Golden State +1.5 open to +2.5 close; slate Lakers -1.5 is 1 point better than the close on the side the market moved to (slate file) - mild information toward the Lakers. Some previews quoted Lakers -2.5 to -3.5 (Covers, Dimers).",
+        "Lakers have covered the last four meetings and are 7-2 SU vs Golden State since 2024-25 (Covers, Oct 30 2026) - head-to-head, already priced per LESSONS.",
+        "Both teams played Wednesday, so both are on one day of rest (Covers; Predictem, Oct 30 2026) - neutral.",
+        "Dimers' model: Lakers 118-114, 62% to win (Dimers, Oct 30 2026); Covers picks the Lakers moneyline - preview picks are not an edge."
+      ],
+      "reasoning": "Near pick'em with the line at -1.5 to -2.5; my projection (Lakers by 2.5) sits within a point of the close, and LESSONS says early-season NBA has shown no edge. The Lakers' offense with Doncic back against a porous Warriors defense and the slate being a point better than the close tilt the forced side to LA; a confirmed Doncic absence would have flipped it.",
+      "forcedSide": "Los Angeles Lakers",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
