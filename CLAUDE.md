@@ -684,6 +684,17 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   shown -- the user asked for 20+ at the same bar; several are slices of one
   effect, ranked teams covering 47.3% in the other team's gym; Nail-biters
   and Home skid are WEAK).
+  "Lockdown at home" (2026-11-23, from Magic @ Wizards): backs a home team whose
+  last two opponents averaged 7+ under the league's points a game, season to date
+  (`league_ppg`; both teams 8+ games): 791-671 (54.1%, p=0.002), every counted
+  season positive, halves 55.5%/53.0%; on the road 52-53%. Checked apart from
+  the momentum rules (51-54/57/60/62) before adding, at the user's request: ~54%
+  whether or not the team covered or won its last two (no momentum at all 53.5%),
+  and a logistic fit with streaks, ATS form, margin, win %, spread and rest left
+  it at p=0.003; vs what those opponents usually score it's weaker (p=0.04).
+  Pairing it with a road team that won on hot threes added nothing. Backfilled
+  for 2026-27 (`--only=lockdown`; Nov 22 added before that slate was graded):
+  8-17 on the season's graded games at backfill.
   Live records: `scripts/storyline_records.py` (after scoring, each run)
   marks each storyline on a finished game `result` hit/miss/push for the
   story's bet (ATS at the slate's line, NBA at statsSpread; soccer/MLB the

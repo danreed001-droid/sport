@@ -552,6 +552,22 @@
           "leanPct": 52.9,
           "against": false,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "New York Knicks",
+          "says": "back",
+          "fact": "New York Knicks held Minnesota Timberwolves to 99 and Toronto Raptors to 102, 13.1 under the league's 113.6 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "New York Knicks",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
         }
       ],
       "time": "7:30 PM ET",
@@ -1004,6 +1020,22 @@
           "leans": "Minnesota Timberwolves",
           "leanPct": 52.6,
           "against": false,
+          "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Minnesota Timberwolves",
+          "says": "back",
+          "fact": "Minnesota Timberwolves held New York Knicks to 102 and Portland Trail Blazers to 105, 10.1 under the league's 113.6 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Minnesota Timberwolves",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
           "result": "hit"
         }
       ],

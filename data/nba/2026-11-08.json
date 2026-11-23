@@ -180,7 +180,25 @@
       "statsSpreadReturn": -100.0,
       "time": "6:00 PM ET",
       "totalsBackfill": 11,
-      "totalsLine": 216.5
+      "totalsLine": 216.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Detroit Pistons",
+          "says": "back",
+          "fact": "Detroit Pistons held Philadelphia 76ers to 112 and Charlotte Hornets to 91, 11.7 under the league's 113.2 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Detroit Pistons",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-2",
@@ -370,7 +388,25 @@
       "statsSpreadReturn": 93.46,
       "time": "7:30 PM ET",
       "totalsBackfill": 11,
-      "totalsLine": 223.5
+      "totalsLine": 223.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Dallas Mavericks",
+          "says": "back",
+          "fact": "Dallas Mavericks held Utah Jazz to 100 and San Antonio Spurs to 112, 7.2 under the league's 113.2 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Dallas Mavericks",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "2-1",

@@ -1358,6 +1358,22 @@
           "leanPct": 53.0,
           "against": false,
           "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Detroit Pistons",
+          "says": "back",
+          "fact": "Detroit Pistons held New Orleans Pelicans to 109 and San Antonio Spurs to 93, 12.7 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Detroit Pistons",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ],
       "time": "7:30 PM ET",
@@ -2339,6 +2355,22 @@
           "says": "fade",
           "team": "Phoenix Suns",
           "weight": 1,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Utah Jazz",
+          "says": "back",
+          "fact": "Utah Jazz held Los Angeles Lakers to 97 and LA Clippers to 107, 11.7 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Utah Jazz",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
           "result": "miss"
         }
       ],

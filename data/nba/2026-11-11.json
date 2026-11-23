@@ -203,6 +203,22 @@
           "against": false,
           "backfill": true,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "New York Knicks",
+          "says": "back",
+          "fact": "New York Knicks held Milwaukee Bucks to 85 and Cleveland Cavaliers to 97, 22.3 under the league's 113.3 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "New York Knicks",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ]
     },
@@ -803,7 +819,25 @@
       },
       "statsSpread": -6.5,
       "time": "9:30 PM ET",
-      "totalsLine": 219.5
+      "totalsLine": 219.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Houston Rockets",
+          "says": "back",
+          "fact": "Houston Rockets held Denver Nuggets to 100 and Phoenix Suns to 102, 12.3 under the league's 113.3 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Houston Rockets",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "3-1",

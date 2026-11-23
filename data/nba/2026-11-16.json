@@ -79,6 +79,22 @@
           "team": "Boston Celtics",
           "weight": 1,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Boston Celtics",
+          "says": "back",
+          "fact": "Boston Celtics held Dallas Mavericks to 94 and Toronto Raptors to 93, 20.3 under the league's 113.8 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Boston Celtics",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ],
       "time": "7:00 PM ET",
@@ -525,7 +541,25 @@
       },
       "statsSpread": -2.5,
       "time": "8:00 PM ET",
-      "totalsLine": 228.5
+      "totalsLine": 228.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Minnesota Timberwolves",
+          "says": "back",
+          "fact": "Minnesota Timberwolves held Chicago Bulls to 117 and Dallas Mavericks to 94, 8.3 under the league's 113.8 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Minnesota Timberwolves",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-1",

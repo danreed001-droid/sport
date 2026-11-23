@@ -551,6 +551,22 @@
           "leanPct": 54.7,
           "against": true,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Minnesota Timberwolves",
+          "says": "back",
+          "fact": "Minnesota Timberwolves held Dallas Mavericks to 94 and Utah Jazz to 100, 16.5 under the league's 113.5 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Minnesota Timberwolves",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ],
       "time": "8:00 PM ET",

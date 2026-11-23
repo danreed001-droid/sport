@@ -224,6 +224,22 @@
           "team": "Milwaukee Bucks",
           "weight": 1,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Orlando Magic",
+          "says": "back",
+          "fact": "Orlando Magic held Utah Jazz to 108 and Sacramento Kings to 100, 9.4 under the league's 113.4 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Orlando Magic",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ],
       "time": "7:00 PM ET",
@@ -634,6 +650,22 @@
           "leanPct": 54.9,
           "against": true,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Houston Rockets",
+          "says": "back",
+          "fact": "Houston Rockets held Golden State Warriors to 108 and Denver Nuggets to 100, 9.4 under the league's 113.4 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Houston Rockets",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ],
       "time": "8:30 PM ET",

@@ -459,6 +459,22 @@
           "team": "Philadelphia 76ers",
           "weight": 1,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Orlando Magic",
+          "says": "back",
+          "fact": "Orlando Magic held Boston Celtics to 105 and Milwaukee Bucks to 99, 11.7 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Orlando Magic",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ],
       "time": "7:00 PM ET",
@@ -734,7 +750,25 @@
       "statsCorrect": false,
       "statsReturn": -100.0,
       "statsCover": false,
-      "statsSpreadReturn": -100.0
+      "statsSpreadReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "New Orleans Pelicans",
+          "says": "back",
+          "fact": "New Orleans Pelicans held Golden State Warriors to 94 and Denver Nuggets to 116, 8.7 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "New Orleans Pelicans",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "1-1",

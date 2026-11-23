@@ -1120,7 +1120,25 @@
       "statsCorrect": true,
       "statsReturn": 88.5,
       "statsCover": true,
-      "statsSpreadReturn": 98.04
+      "statsSpreadReturn": 98.04,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Minnesota Timberwolves",
+          "says": "back",
+          "fact": "Minnesota Timberwolves held Portland Trail Blazers to 105 and Portland Trail Blazers to 98, 12.2 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Minnesota Timberwolves",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     },
     {
       "altCategoryTally": "0-2",
@@ -1321,7 +1339,25 @@
       "statsCover": true,
       "statsSpreadReturn": 90.91,
       "totalsCorrect": false,
-      "totalsReturn": -100.0
+      "totalsReturn": -100.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "San Antonio Spurs",
+          "says": "back",
+          "fact": "San Antonio Spurs held Detroit Pistons to 105 and Utah Jazz to 102, 10.2 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "San Antonio Spurs",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        }
+      ]
     }
   ],
   "scoredAt": "2026-11-20T07:46:00.878958+00:00"

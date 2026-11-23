@@ -151,6 +151,22 @@
           "team": "Los Angeles Lakers",
           "weight": 1,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Phoenix Suns",
+          "says": "back",
+          "fact": "Phoenix Suns held Charlotte Hornets to 96 and LA Clippers to 110, 10.6 under the league's 113.6 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Phoenix Suns",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ],
       "time": "4:00 PM ET",
@@ -451,6 +467,22 @@
           "leanPct": 53.6,
           "against": false,
           "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Boston Celtics",
+          "says": "back",
+          "fact": "Boston Celtics held Toronto Raptors to 93 and Philadelphia 76ers to 101, 16.6 under the league's 113.6 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Boston Celtics",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "hit"
         }
       ],
       "time": "6:00 PM ET",

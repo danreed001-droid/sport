@@ -266,6 +266,22 @@
           "team": "Detroit Pistons",
           "weight": 1,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "San Antonio Spurs",
+          "says": "back",
+          "fact": "San Antonio Spurs held Utah Jazz to 102 and Golden State Warriors to 85, 20.3 under the league's 113.8 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "San Antonio Spurs",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ],
       "time": "8:00 PM ET",

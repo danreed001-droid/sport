@@ -620,6 +620,22 @@
           "against": false,
           "backfill": true,
           "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Houston Rockets",
+          "says": "back",
+          "fact": "Houston Rockets held Boston Celtics to 93 and Oklahoma City Thunder to 98, 17.9 under the league's 113.4 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Houston Rockets",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ]
     },

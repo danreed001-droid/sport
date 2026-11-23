@@ -158,6 +158,23 @@
           "name": "Under when a team lost at home to a worse-record team and now plays on the road vs. a better-record team (on trial)",
           "rule": 6
         }
+      ],
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Atlanta Hawks",
+          "says": "back",
+          "fact": "Atlanta Hawks held Washington Wizards to 105 and Indiana Pacers to 104, 8.9 under the league's 113.4 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Atlanta Hawks",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true
+        }
       ]
     },
     {

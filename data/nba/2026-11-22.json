@@ -386,6 +386,21 @@
           "says": "fade",
           "team": "Detroit Pistons",
           "weight": 1
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Atlanta Hawks",
+          "says": "back",
+          "fact": "Atlanta Hawks held Charlotte Hornets to 97 and Oklahoma City Thunder to 112, 9.2 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Atlanta Hawks",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true
         }
       ],
       "time": "3:30 PM ET",
@@ -788,7 +803,24 @@
       ],
       "statsSpread": 4.5,
       "time": "7:00 PM ET",
-      "totalsLine": 219.5
+      "totalsLine": 219.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Washington Wizards",
+          "says": "back",
+          "fact": "Washington Wizards held Chicago Bulls to 94 and Toronto Raptors to 99, 17.2 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Washington Wizards",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true
+        }
+      ]
     },
     {
       "altCategoryTally": "4-0",
@@ -1082,6 +1114,21 @@
           "leans": "Chicago Bulls",
           "leanPct": 56.8,
           "against": false
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Chicago Bulls",
+          "says": "back",
+          "fact": "Chicago Bulls held Washington Wizards to 98 and Brooklyn Nets to 107, 11.2 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Chicago Bulls",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true
         }
       ],
       "time": "7:00 PM ET",
@@ -1433,7 +1480,24 @@
       },
       "statsSpread": 2.5,
       "time": "7:00 PM ET",
-      "totalsLine": 225.5
+      "totalsLine": 225.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Utah Jazz",
+          "says": "back",
+          "fact": "Utah Jazz held Phoenix Suns to 111 and Los Angeles Lakers to 97, 9.7 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Utah Jazz",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true
+        }
+      ]
     },
     {
       "altCategoryTally": "1-5",
@@ -1910,6 +1974,21 @@
           "leans": "Indiana Pacers",
           "leanPct": 57.7,
           "against": false
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "New York Knicks",
+          "says": "back",
+          "fact": "New York Knicks held Portland Trail Blazers to 96 and Minnesota Timberwolves to 99, 16.2 under the league's 113.7 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "New York Knicks",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true
         }
       ],
       "time": "8:00 PM ET",

@@ -100,6 +100,21 @@ STORIES = {
     # chosen after looking and 4+ out isn't stronger (49.5%, 210 games).
     "gutted": ("Gutted home underdog", "back", (100, 152),
                "home underdog missing 3+ of its top 5 scorers (season points a game, 5+ games)"),
+    # 2026-11-23, from Magic @ Wizards (Washington held Toronto to 99 and Chicago
+    # to 94, then beat Orlando by 20 as a 4.5-point home underdog): a home team
+    # whose last two opponents averaged 7+ under the league's points a game
+    # (season to date) covered 54.1% (791-671, p=0.002), every counted season
+    # positive, halves 55.5% / 53.0%; 12+ under 54.5%, 3-7 under 47.7%; on the
+    # road the same defense was 52-53% (not significant). It holds apart from the
+    # momentum rules (NBA Stats 51-54/57/60/62): stingy home teams covered ~54%
+    # whether or not they had covered or won their last two (no momentum at all:
+    # 53.5%), and a logistic fit with covering/winning streaks, ATS form, point
+    # margin, win %, spread and rest left its effect unchanged (p=0.003). Judged
+    # against what those two opponents usually score it's weaker (p=0.04), so part
+    # of it may be slow, low-scoring games. Pairing it with a road team that won on
+    # hot 3-point shooting added nothing.
+    "lockdown": ("Lockdown at home", "back", (791, 671),
+                 "home team whose last two opponents scored 7+ under the league average (points a game, season to date)"),
 }
 
 
@@ -248,6 +263,14 @@ def top_scorers(points, games, date_str, n=5):
     return ranked[:n] if len(ranked) >= n else None
 
 
+def league_ppg(by_team, date_str):
+    """League points per team-game this season before date_str (None under 40 team-games)."""
+    s0 = ns.season_start(date_str)
+    pts = [g["team_score"] for games in (by_team or {}).values() for g in games
+           if s0 <= g["date"] < date_str and g.get("team_score") is not None]
+    return sum(pts) / len(pts) if len(pts) >= 40 else None
+
+
 def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp_prior, my_spread, tip, by_team=None,
               out_ids=None):
     """Storylines about `team` tonight."""
@@ -381,6 +404,14 @@ def team_side(session, points, q_cache, date_str, team, opp, is_home, prior, opp
     if is_home and last["opp_score"] >= 125 and opp_prior[-1]["opp_score"] >= 125:
         out.append(entry("leaky", team, opp, f"{team} allowed {last['opp_score']:g} last game and {opp} allowed "
                                              f"{opp_prior[-1]['opp_score']:g}."))
+    if is_home and len(prior) >= 2:
+        lg = league_ppg(by_team, date_str)
+        g1, g2 = prior[-1], prior[-2]
+        if lg is not None and (g1["opp_score"] + g2["opp_score"]) / 2 <= lg - 7:
+            under = lg - (g1["opp_score"] + g2["opp_score"]) / 2
+            out.append(entry("lockdown", team, opp, f"{team} held {g1['opp']} to {g1['opp_score']:g} and {g2['opp']} to "
+                                                    f"{g2['opp_score']:g}, {under:.1f} under the league's {lg:.1f} a game, "
+                                                    f"and is at home."))
     if is_home and sp is not None and sp > 0 and out_ids is not None:
         top = top_scorers(points, [dict(g, team=team) for g in prior], date_str)
         gone = [(ppg, name) for ppg, pid, name in (top or []) if pid in out_ids]

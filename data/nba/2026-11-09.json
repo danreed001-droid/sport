@@ -503,6 +503,22 @@
           "against": false,
           "backfill": true,
           "result": "hit"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Dallas Mavericks",
+          "says": "back",
+          "fact": "Dallas Mavericks held Brooklyn Nets to 93 and Utah Jazz to 100, 16.8 under the league's 113.3 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Dallas Mavericks",
+          "leanPct": 54.1,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
         }
       ]
     },
@@ -717,6 +733,22 @@
           "pct": 54.3,
           "leans": "Phoenix Suns",
           "leanPct": 54.3,
+          "against": false,
+          "backfill": true,
+          "result": "miss"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Phoenix Suns",
+          "says": "back",
+          "fact": "Phoenix Suns held Houston Rockets to 99 and Orlando Magic to 104, 11.8 under the league's 113.3 a game, and is at home.",
+          "record": "791-671",
+          "pct": 54.1,
+          "leans": "Phoenix Suns",
+          "leanPct": 54.1,
           "against": false,
           "backfill": true,
           "result": "miss"
