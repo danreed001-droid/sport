@@ -1,0 +1,67 @@
+{
+ "sport": "nba",
+ "date": "2026-11-12",
+ "chunk": "nba-2026-11-12-1",
+ "games": [
+  {
+   "away": "Toronto Raptors",
+   "home": "Philadelphia 76ers",
+   "time": "7:00 PM ET",
+   "awaySpread": 10.5,
+   "homeSpread": -10.5,
+   "awaySpreadOdds": -118,
+   "homeSpreadOdds": -103,
+   "awayMoneyline": 322,
+   "homeMoneyline": -410,
+   "homeSpreadOpen": -9.5,
+   "homeSpreadClose": -7.5,
+   "totalOpen": 221.5,
+   "totalClose": 222.5
+  },
+  {
+   "away": "Detroit Pistons",
+   "home": "Washington Wizards",
+   "time": "7:00 PM ET",
+   "awaySpread": -10.5,
+   "homeSpread": 10.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": -467,
+   "homeMoneyline": 360,
+   "homeSpreadOpen": 9.5,
+   "homeSpreadClose": 10.5,
+   "totalOpen": 220.5,
+   "totalClose": 223.5
+  },
+  {
+   "away": "Dallas Mavericks",
+   "home": "Minnesota Timberwolves",
+   "time": "8:00 PM ET",
+   "awaySpread": 5.5,
+   "homeSpread": -5.5,
+   "awaySpreadOdds": -106,
+   "homeSpreadOdds": -114,
+   "awayMoneyline": 184,
+   "homeMoneyline": -222,
+   "homeSpreadOpen": -4.5,
+   "homeSpreadClose": -5.5,
+   "totalOpen": 226.5,
+   "totalClose": 226.5
+  },
+  {
+   "away": "Charlotte Hornets",
+   "home": "Phoenix Suns",
+   "time": "9:00 PM ET",
+   "awaySpread": 6.5,
+   "homeSpread": -6.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 201,
+   "homeMoneyline": -244,
+   "homeSpreadOpen": -7.5,
+   "homeSpreadClose": -6.5,
+   "totalOpen": 213.5,
+   "totalClose": 214.5
+  }
+ ]
+}

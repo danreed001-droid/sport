@@ -1,0 +1,22 @@
+{
+ "sport": "nfl",
+ "date": "2026-11-16",
+ "chunk": "nfl-2026-11-16-1",
+ "games": [
+  {
+   "away": "Los Angeles Chargers",
+   "home": "Baltimore Ravens",
+   "time": "8:15 PM ET",
+   "awaySpread": 4.5,
+   "homeSpread": -4.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 185,
+   "homeMoneyline": -225,
+   "homeSpreadOpen": -2.5,
+   "homeSpreadClose": -3.5,
+   "totalOpen": 48.5,
+   "totalClose": 39.5
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "sport": "ncaab",
+ "date": "2026-11-14",
+ "chunk": "ncaab-2026-11-14-1",
+ "games": [
+  {
+   "away": "Stonehill Skyhawks",
+   "home": "Texas Tech Red Raiders",
+   "time": "1:00 PM ET",
+   "homeRank": 16,
+   "awaySpread": 39.5,
+   "homeSpread": -39.5,
+   "awaySpreadOdds": -118,
+   "homeSpreadOdds": -102,
+   "awayMoneyline": 6650,
+   "homeMoneyline": -6667,
+   "homeSpreadOpen": -40.5,
+   "homeSpreadClose": -39.5,
+   "totalOpen": 142.5,
+   "totalClose": 143.5
+  },
+  {
+   "away": "LSU Tigers",
+   "home": "Gonzaga Bulldogs",
+   "time": "3:30 PM ET",
+   "homeRank": 14,
+   "awaySpread": 5.5,
+   "homeSpread": -5.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 195,
+   "homeMoneyline": -238,
+   "homeSpreadOpen": -6.5,
+   "homeSpreadClose": -5.5,
+   "totalOpen": 161.5,
+   "totalClose": 160.5
+  }
+ ]
+}

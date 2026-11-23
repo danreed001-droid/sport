@@ -1,0 +1,39 @@
+{
+ "sport": "cfb",
+ "date": "2026-11-13",
+ "chunk": "cfb-2026-11-13-1",
+ "games": [
+  {
+   "away": "Illinois",
+   "home": "UCLA",
+   "time": "9:00 PM ET",
+   "homeRank": 4,
+   "awaySpread": 9.5,
+   "homeSpread": -9.5,
+   "awaySpreadOdds": 108,
+   "homeSpreadOdds": -113,
+   "awayMoneyline": 326,
+   "homeMoneyline": -335,
+   "homeSpreadOpen": -12.5,
+   "homeSpreadClose": -10.5,
+   "totalOpen": 47.5,
+   "totalClose": 48.5
+  },
+  {
+   "away": "Houston",
+   "home": "Colorado",
+   "time": "10:15 PM ET",
+   "awayRank": 14,
+   "awaySpread": -10,
+   "homeSpread": 10,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": -395,
+   "homeMoneyline": 310,
+   "homeSpreadOpen": 10.5,
+   "homeSpreadClose": 7.5,
+   "totalOpen": 47.5,
+   "totalClose": 53.5
+  }
+ ]
+}

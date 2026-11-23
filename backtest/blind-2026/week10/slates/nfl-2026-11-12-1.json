@@ -1,0 +1,22 @@
+{
+ "sport": "nfl",
+ "date": "2026-11-12",
+ "chunk": "nfl-2026-11-12-1",
+ "games": [
+  {
+   "away": "Washington Commanders",
+   "home": "New York Giants",
+   "time": "8:15 PM ET",
+   "awaySpread": 2.5,
+   "homeSpread": -2.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 120,
+   "homeMoneyline": -142,
+   "homeSpreadOpen": -1.5,
+   "homeSpreadClose": -1.5,
+   "totalOpen": 47.5,
+   "totalClose": 40.5
+  }
+ ]
+}

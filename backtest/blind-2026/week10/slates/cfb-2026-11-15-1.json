@@ -1,0 +1,23 @@
+{
+ "sport": "cfb",
+ "date": "2026-11-15",
+ "chunk": "cfb-2026-11-15-1",
+ "games": [
+  {
+   "away": "Ole Miss",
+   "home": "Oklahoma",
+   "time": "1:00 PM ET",
+   "awayRank": 19,
+   "awaySpread": 2.5,
+   "homeSpread": -2.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 117,
+   "homeMoneyline": -142,
+   "homeSpreadOpen": -4.0,
+   "homeSpreadClose": -2.5,
+   "totalOpen": 53.5,
+   "totalClose": 48.5
+  }
+ ]
+}
