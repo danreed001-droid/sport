@@ -1,0 +1,153 @@
+{
+  "sport": "ncaab",
+  "date": "2026-11-15",
+  "chunk": "ncaab-2026-11-15-1",
+  "games": [
+    {
+      "away": "Louisville Cardinals",
+      "home": "Memphis Tigers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -9.0,
+      "research": [
+        "Lines: slate Memphis +8.5; archive close +10.5, so the close moved 2 points toward Louisville. Predictem (Nov 15) said it opened Louisville -9.5 and drifted to -8.5 in the morning, so the late move went back toward Louisville. Judge against the close (+10.5). Neutral.",
+        "KenPom projected Louisville 84-79, a 5-point margin, well inside both the slate and the close (Predictem, Nov 15). Helps Memphis.",
+        "Covers' Chris Hatfield (Nov 15) projects Louisville by about 9 and takes Louisville -8.5 as a small edge. Helps Louisville slightly.",
+        "Predictem's Joe Jensen (Nov 15) takes Memphis +8.5 and projects 83-77. Helps Memphis. Preview picks are priced and are a tiebreaker at most.",
+        "Louisville injuries: C Gabe Dynes (shoulder) out and De'Shayne Montgomery out 4-6 weeks with a foot injury (Predictem, Nov 15). Known before the line settled, so priced.",
+        "Memphis star Jayden Reid (23 ppg) tweaked his left ankle at Vanderbilt but said he'd be ready. Luke Almodovar (15.3 ppg) fell hard but is expected to play (Predictem, Nov 15). This is a residual risk for Memphis.",
+        "[angle] Louisville has lost its first true road game in each of the last six seasons, this is its first true road game of 2026-27, and Hardaway is 106-21 at home (Predictem, Nov 15). Helps Memphis, but it's narrative.",
+        "Memphis was beaten 105-81 at Vanderbilt on Tuesday, with Vanderbilt shooting 57% and making 15 threes. Barttorvik has the Memphis defense outside the top 180 (Predictem, Nov 15). Helps Louisville.",
+        "Louisville is top-15 on both offense and defense per Barttorvik, beat Morehead State by 50, and is 45-of-64 on twos (about 70%) through two games. Its 3-point shooting has been poor: 9-for-35 vs Chattanooga, and Shelstad 5-for-20 (Covers and Predictem, Nov 15). Helps Louisville, with regression room on threes.",
+        "[angle] Memphis is in the bottom 15th percentile against pick-and-pop and inside-out actions, which Ekezie Jr. runs at 1.57 points per possession (Covers, Nov 15). Helps Louisville.",
+        "Memphis averages 35 free-throw attempts a game to Louisville's 27 and has made 23+ free throws in all three games. Its two wins were over Iowa State and VCU, the latter by one (Covers and Predictem, Nov 15). This helps Memphis keep the game close.",
+        "[angle] Seven of the last eight rivalry meetings were decided by single digits (Predictem, Nov 15). Head-to-head history is a weak tiebreaker for Memphis.",
+        "No ATS records or betting splits were available in clean sources."
+      ],
+      "reasoning": "This is an early-season NCAAB game with conflicting projections: KenPom has it at 5, Covers at 9, and the close at 10.5. My Louisville -9 sits right on the slate number, so I pass. The forced side is Louisville, because of its interior edge against a leaky Memphis defense. The most interesting angle is Louisville losing its first true road game six seasons running. A clear Reid ankle problem or confirmed absences would have changed it.",
+      "forcedSide": "Louisville Cardinals",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Boise State Broncos",
+      "home": "Nebraska Cornhuskers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -10.0,
+      "research": [
+        "Lines: slate Nebraska -9.5, close -9.5, open -8.5, so the slate matches the close. Neutral.",
+        "[angle] The game is at the Sanford Pentagon in Sioux Falls, S.D. It is nominally neutral, but Nebraska goes there every year and a sellout of 3,200+ is expected, so it plays like a home game (Predictem, Nov 15). Helps Nebraska.",
+        "Boise State averages 114.3 ppg on 53.4% shooting and 41.3% from three, with 100+ in all three games. The opener was against a non-D1 team, and the adjusted offense is only 87th (Predictem, Nov 15). The raw numbers are inflated.",
+        "Nebraska allows 60.7 ppg on 35% shooting and 23% from three, and has the 9th-ranked adjusted defense. It held Providence to 58 at a neutral site (Predictem, Nov 15). Helps Nebraska.",
+        "Pryce Sandfort averages 22.3 ppg with three straight 20-point games. Nebraska makes about 10 threes a game (Predictem, Nov 15). Helps Nebraska.",
+        "Boise's Aginaldo Neto averages 20 points and 6 assists, and Damari Wheeler-Thomas 17.3 (Predictem, Nov 15). This is Boise's scoring that could keep it within the number.",
+        "[angle] Nebraska has a 27-game nonconference winning streak (Predictem, Nov 15). Helps Nebraska straight up; it's priced.",
+        "Nebraska beat Boise State 79-69 in the 2025 College Basketball Crown semifinal, and Hoiberg is 2-0 vs Boise (Predictem, Nov 15). This is old head-to-head history and only a weak tiebreaker.",
+        "Predictem projects Nebraska 79-70, 9 points, essentially the line. The writer's play is the under 158.5, not a side (Predictem, Nov 15). Neutral.",
+        "[angle] Boise's 8.7 turnovers a game plays against a Nebraska defense built on half-court stops. If Boise's threes fall, it pushes pace (Predictem, Nov 15). Two-sided.",
+        "No injuries were reported for either team in the clean preview, and no ATS records or splits were found. There are fewer than 10 strong spread-specific findings, so confidence is lower."
+      ],
+      "reasoning": "The only clean projection (9) matches the close (9.5), and there's no unpriced news, so I pass. The forced side is Nebraska: its elite defense against a Boise offense inflated by weak opponents, plus a de facto home crowd in Sioux Falls (the most interesting angle). A Boise shooting outlier is the risk.",
+      "forcedSide": "Nebraska Cornhuskers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "William & Mary Tribe",
+      "home": "Michigan Wolverines",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -26.0,
+      "research": [
+        "Lines: slate Michigan -28.5; open -29.5, close -26.5. The close moved 2 points toward William & Mary, which is priced. Judged against the close, a 26-point projection is no edge.",
+        "Barttorvik projects Michigan by 25.2 (Predictem, Nov 15). Helps William & Mary against the slate's 28.5.",
+        "[angle] Michigan is the defending champion, but Dusty May left for the Dallas Mavericks and Mike Boynton Jr. is in his first season. Elliot Cadeau is the only returning starter (Predictem, Nov 15). This is a rebuilt-roster narrative, which LESSONS treats as noise.",
+        "Michigan is shooting 28% from three, and lost 85-77 to UConn going 7-of-28 from deep (Predictem, Nov 15). Helps William & Mary a little.",
+        "J.P. Estrella is 21-of-28 from the floor (17.3 ppg, 9.7 rpg), and Trey McKenney averages 18.0 ppg (Predictem, Nov 15). Interior dominance helps Michigan.",
+        "[angle] William & Mary ranked first nationally in average offensive possession length last season (13.7 seconds) under Brian Earl. A fast pace adds possessions, which can widen the margin as easily as narrow it (Predictem, Nov 15). Two-sided.",
+        "William & Mary averages 91.3 ppg and 20.7 assists and led Florida Atlantic 42-39 at halftime despite going 5-of-27 from three, before losing 95-90 (Predictem, Nov 15). It can score, which helps William & Mary as a big underdog.",
+        "Barttorvik rates William & Mary 181st overall and 253rd on defense, and Michigan 19th with the 14th-best defense (Predictem, Nov 15). The defensive gap helps Michigan.",
+        "Predictem's writer leans William & Mary +28.5 (soft) with a projection of 93-70, 23 points (Predictem, Nov 15). Preview picks are priced.",
+        "Per LESSONS, big college underdogs of 25+ are not an edge, and 'Michigan clears its bench' is priced.",
+        "No Covers preview was found (404), and no injuries were listed. There are fewer than 10 strong findings."
+      ],
+      "reasoning": "Torvik (25.2) and the close (26.5) both sit under the slate's 28.5, but the close already absorbed that, so there's no edge against it and I pass. The forced side is William & Mary, because its offense can score and Michigan can't shoot threes. The most interesting angle is the defending champion's post-May rebuild. A Michigan hot shooting night is what would beat this.",
+      "forcedSide": "William & Mary Tribe",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Baylor Bears",
+      "home": "Texas Longhorns",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.5,
+      "research": [
+        "Lines: slate Texas -5.5; open -6.5, close -3.5. The close moved 2 points toward Baylor. The slate-to-close gap is 2, under the 3-point data flag. Judge against the close.",
+        "[angle] The game is at Frost Bank Center in San Antonio, effectively a neutral site rather than Austin (Covers, Nov 15). This lowers Texas's edge compared with a true home game.",
+        "Texas has played the 4th-easiest schedule in the country and hasn't faced a top-120 team in turnover-percentage defense. Covers calls its stats inflated (Covers, Nov 15). Helps Baylor.",
+        "Baylor ranks 3rd nationally in turnover-percentage defense and 1st in close two-point percentage through three games (Covers, Nov 15). Helps Baylor.",
+        "[angle] Texas has six freshmen and returns only one key player. Its 7-footer Matas Vokietaitis leads the team in scoring, rebounding and FG% (Covers, Nov 15). An inexperienced roster against a turnover-forcing defense helps Baylor.",
+        "Baylor's Mingo brothers lead it in scoring, and Isaac Williams IV leads in assists and shoots 82.4% from the line (Covers, Nov 15). This is late-game free-throw security for the underdog.",
+        "Covers' Colby Marchio (27-21 on top picks in 2026) takes Baylor +4.5, playable to +3.5, citing a veteran core and chemistry (Covers, Nov 15). Preview picks are priced.",
+        "[angle] Baylor's opponents include Yale (No. 187), so its schedule is also soft (Covers, Nov 15). This tempers the Baylor case.",
+        "The Over is 5-1 in Baylor's last six against .600+ teams (Covers, Nov 15). A totals trend, not a side signal.",
+        "No injuries, ATS records or betting splits were found in clean sources. The Predictem preview could not be located in its sitemap. There are fewer than 10 strong findings."
+      ],
+      "reasoning": "My Texas-by-3.5 matches the close (-3.5), so the slate's +5.5 is a better number than the market's final price, not an edge in itself, and LESSONS says such slate-better sides went 26-37. Pass. The forced side is Baylor: a veteran turnover-forcing defense against a freshman-heavy Texas with an inflated schedule, at a neutral site in San Antonio (the most interesting angle). Confirmed Baylor absences would have flipped it.",
+      "forcedSide": "Baylor Bears",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Syracuse Orange",
+      "home": "St. John's Red Storm",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 11.5,
+      "research": [
+        "Lines: slate St. John's -12.5; open -12.5, close -11.5. A 1-point move toward Syracuse. Neutral.",
+        "KenPom projects St. John's 81-70, 11 points, and Barttorvik is in a similar range (Predictem, Nov 15). Slightly helps Syracuse against -12.5.",
+        "St. John's injuries: Temple transfer Aiden Tobiason is out (hamstring), and freshman Mark Morano (ankle) is a game-time decision. Donnie Freeman was lost to a torn Achilles in June (Predictem, Nov 15). This was known before the line settled, so it's priced.",
+        "[angle] St. John's is 3-0 with wins by 15, 39 and 31 over Monmouth, Iona and Colgate, and hasn't faced anyone better than KenPom 196th. This is its first real test (Predictem, Nov 15; Covers, Nov 15). Its margins are inflated, which helps Syracuse.",
+        "Syracuse lost 83-80 to Indiana in Indianapolis after leading by 4 at halftime, with a tying three at the buzzer (Predictem, Nov 15). Shows Syracuse can compete with a power-conference team, which helps Syracuse.",
+        "Syracuse ranks 19th nationally in turnover rate per KenPom, so it protects the ball. St. John's had 14 steals vs Monmouth and 11 vs Colgate (Predictem, Nov 15). A key matchup that helps Syracuse.",
+        "Syracuse ranks in the mid-200s at forcing turnovers and defending the interior, per Covers (Covers, Nov 15). Helps St. John's.",
+        "Quinn Ellis averages about 9 assists with a 13.5-to-1 assist-to-turnover ratio, and St. John's shoots nearly 40% from three and plays faster (52nd in pace) than Syracuse (Covers and Predictem, Nov 15). Helps St. John's.",
+        "[angle] Pitino vs McNamara is a Boeheim-tree coaching matchup, the first meeting at MSG since 2015-16. St. John's has won 4 straight in the series and 12 straight at MSG (Predictem, Nov 15). Head-to-head history only, a weak tiebreaker.",
+        "The previews split: Covers' Marchio takes St. John's -12.5 and Predictem's Jensen takes Syracuse +12.5 (projecting 80-70) (both Nov 15). Priced.",
+        "Covers trend: the Over is 8-0 in Syracuse's last eight as an underdog (Covers, Nov 15). A totals trend, not a side signal. No ATS records or splits were found."
+      ],
+      "reasoning": "KenPom (11) and the close (11.5) are within a point of the slate, so I pass. The forced side is Syracuse: its ball security against a St. John's team built on steals, and a competitive showing against Indiana, while St. John's margins came against sub-196 opponents (the most interesting angle). If Morano plays and St. John's shoots its season 40% from three, it covers.",
+      "forcedSide": "Syracuse Orange",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Arkansas-Pine Bluff Golden Lions",
+      "home": "USC Trojans",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 46.0,
+      "research": [
+        "Lines: slate USC -46.5, close -46.5; open -41.5. Predictem's morning note had -44.5 at most books, so the line climbed toward USC. The close is fair. Neutral.",
+        "Arkansas-Pine Bluff is 0-4, all on the road, and scored 61, 53, 37 and 60 (about 53 ppg) (Predictem, Nov 15). Helps USC: the big underdog can't reliably score.",
+        "[angle] UAPB lost 106-37 at UCLA on Wednesday, a 69-point loss to another LA Big Ten team three days earlier (Predictem, Nov 15). Helps USC.",
+        "[angle] This is UAPB's third game in five days at the end of a long road trip: UCLA Wednesday, Cal Baptist Friday (lost 74-60), USC Sunday (Predictem, Nov 15). Fatigue helps USC.",
+        "Torvik ranks UAPB's offense 364th of 365 (Predictem, Nov 15). Helps USC.",
+        "At Cal Baptist, Jalen Tatum went 2-of-3 from three and the rest of the team 0-for-10 (Predictem, Nov 15). Helps USC.",
+        "UAPB has 10 transfers on its roster (Predictem, Nov 15). Neutral to USC.",
+        "USC's offense is 36th and defense 31st on KenPom. Alijah Arenas (Big Ten Player of the Week) averages 23.3 ppg on 54.2%, and Rodney Rice 21.7 ppg and 7 assists (Predictem, Nov 15). Helps USC.",
+        "USC's wins came with 95, 93 and 77 points, and it hasn't reached 100 yet (Predictem, Nov 15). Helps UAPB slightly against a 46.5 number.",
+        "[angle] Musselman is likely to pull starters in a big lead. The Predictem writer projects 98-55, a 43-point margin, and stays off the spread (Predictem, Nov 15). Bench-clearing is priced, per LESSONS.",
+        "Per LESSONS, big NCAAB underdogs of 25+ are neither a bias to correct nor an edge.",
+        "No Covers preview was found (404), and no injuries were listed. There are no ATS records or splits."
+      ],
+      "reasoning": "This is a 46.5-point number on a one-sided mismatch with no real way to beat the close, so I pass. The forced side is USC: UAPB's 364th-ranked offense on a third game in five days, three days after a 69-point loss at UCLA (the most interesting angle), outweighs bench-clearing. A soft Predictem projection (43) is the main counterpoint.",
+      "forcedSide": "USC Trojans",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

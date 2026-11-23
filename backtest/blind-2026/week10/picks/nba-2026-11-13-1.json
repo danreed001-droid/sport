@@ -1,0 +1,186 @@
+{
+  "sport": "nba", "date": "2026-11-13", "chunk": "nba-2026-11-13-1",
+  "games": [
+    {
+      "away": "New York Knicks", "home": "Indiana Pacers",
+      "pick": null, "confidence": "pass", "projectedMargin": -7.5,
+      "research": [
+        "Tyrese Haliburton (IND) out with a left hamstring strain, missing games since Oct. 28; Carlisle said at least 10 more days (Predictem, Nov 13). Helps Knicks, but long known and priced.",
+        "Aaron Nesmith (IND) a game-time decision with right knee soreness; T.J. McConnell day-to-day with a hamstring issue (Predictem, Nov 13). [angle] Late status of two Indiana rotation players is the main unknown. Helps Knicks if both sit.",
+        "The line opened Knicks -2.5 and moved to about -7, and the total fell from 233+ to 219.5 (Predictem, Nov 13). The archive close is Knicks -7.5, a point past the slate's -6.5. The move is on injury news and is priced. Spread-specific.",
+        "Indiana has lost seven of its last nine; both teams are 0-1 in NBA Cup East Group B (Predictem, Nov 13). Helps Knicks.",
+        "Indiana has covered four of its last five meetings with New York (Covers, Nov 13). Head-to-head history only; helps Pacers. Spread-specific.",
+        "New York plays the league's slowest pace (about 95 possessions) and allows 103.5 ppg, 7th in defensive rating (Predictem/Covers, Nov 13). [angle] A slow game with a 218.5 total compresses margins. Slightly helps the Pacers +6.5.",
+        "New York lost 115-107 at home to Cleveland on Wednesday (Covers/Predictem, Nov 13). Neutral; the Knicks are on normal rest.",
+        "Indiana grabs about 21% of its own misses, the league's worst rate, while New York secures about 77% of opponents' misses, 2nd best (Predictem, Nov 13). Helps Knicks.",
+        "Indiana shoots about 33% from three; Siakam averages 22.7 and Nembhard 7.8 assists (Predictem/Covers, Nov 13). Indiana averages 111.6 ppg (Covers). Mixed.",
+        "Brunson averages 26.0 and Towns leads the league at 13.5 rebounds; Towns has scored 20+ in three straight. Mikal Bridges has slumped to 5.9 ppg (Predictem/Covers, Nov 13). [angle] Bridges' slump thins the Knicks' wing scoring. Mostly helps Knicks.",
+        "Previews split: Covers leans Pacers +6.5 in a combo, Predictem projects Knicks 112-104 (Nov 13). These are writer picks, already priced and a tiebreaker at most."
+      ],
+      "reasoning": "My projection (Knicks by 7.5) sits on the close and only a point off the slate's 6.5, so it's a pass. The biggest swing is Nesmith and McConnell's late status, and the 2.5-to-7.5 move already reflects Indiana's injuries. Forced to the Knicks on the rebounding mismatch and Indiana's 2-7 slide, with low conviction.",
+      "forcedSide": "New York Knicks",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Milwaukee Bucks", "home": "Orlando Magic",
+      "pick": null, "confidence": "pass", "projectedMargin": 10.0,
+      "research": [
+        "Milwaukee is 1-11 on an eight-game losing streak, losing by an average of 19.1 points (Covers/Predictem, Nov 13). Helps Magic.",
+        "Milwaukee covered 4 of 12 this season and is 0-5 on the road, failing to cover in four of those (Covers/Predictem, Nov 13). This is ATS history and is priced. Spread-specific; helps Magic.",
+        "Orlando is 0-4 at home despite a 2-2 West trip with wins at Sacramento and Utah (by 15) (Predictem/Covers, Nov 13). [angle] An unusual home slump. Helps Bucks +9.",
+        "Paolo Banchero (ORL) out since an Oct. 23 ankle sprain; Jalen Suggs upgraded to questionable (knee bone bruise); Tristan da Silva (calf) a concern; one report lists Myles Turner day-to-day for rest (Covers/Predictem, Nov 13). Helps Bucks if Suggs or Turner sit.",
+        "[angle] The page says Milwaukee traded Giannis Antetokounmpo for Tyler Herro, Kel'el Ware, Jaime Jaquez Jr. and picks. Herro averages 21.9 (Predictem/Covers, Nov 13). A rebuilt roster; rebuilt-roster angles have been coin flips.",
+        "Milwaukee's net rating is -14.8 (only Chicago is worse). It allows 121.3 ppg, third-worst, and gives up offensive rebounds on 32.8% of opponents' misses, 29th (Covers/Predictem, Nov 13). Helps Magic. Spread-specific (efficiency).",
+        "Milwaukee forces turnovers on 11% of possessions, the league's lowest rate, against an Orlando team that turns it over on 15% of trips (Predictem, Nov 13). [angle] Orlando's main weakness isn't punished by this opponent. Helps Magic.",
+        "Orlando's offense is 25th (108.5 ppg) and it shoots 34% from three (Predictem, Nov 13). A weak offense limits how far it pulls away; helps Bucks +9.",
+        "Franz Wagner had 38, 33 and 30 in his last three games and has played 37+ minutes in seven straight (Covers, Nov 13). Helps Magic.",
+        "The line moved from 8.5 to 9.5 (Predictem). The archive has -9.5 at both open and close, against the slate's -9. Treat the close as fair. Spread-specific.",
+        "Milwaukee lost 123-112 to the Lakers on Wednesday, giving up 31 second-chance points (Predictem, Nov 13). Neutral rest for both teams."
+      ],
+      "reasoning": "I project Orlando by about 10, within a point of the slate's 9 and the close of 9.5, so it's a pass. The case for each side is priced: Milwaukee's collapse against Orlando's 0-4 home mark and weak offense. Forced to the Magic, because Milwaukee's 19-point average losing margin and poor rebounding are this season's repeated data.",
+      "forcedSide": "Orlando Magic",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Cleveland Cavaliers", "home": "Miami Heat",
+      "pick": null, "confidence": "pass", "projectedMargin": 2.0,
+      "research": [
+        "Evan Mobley (CLE) out with a left big toe sprain; he averaged 16.9 points and 7.3 rebounds (Covers/Predictem, Nov 13). Helps Heat. Known before the close.",
+        "Without Mobley, Cleveland's other four starters (Allen, Mitchell, Harden, Watson) have a -10.9 net rating over 106 minutes (Covers, Nov 13). [angle] This is a small sample. Helps Heat.",
+        "Klay Thompson (CLE) is questionable with an ankle injury; he averages 3.8 threes (Predictem, Nov 13). This is a late status that could swing it.",
+        "Miami is 2-9 ATS and 1-3 at home; Cleveland is 4-8 ATS and 2-4 on the road (Predictem, Nov 13). Both teams' ATS records are poor and priced. Spread-specific.",
+        "Heat 8-1 ATS in their last nine home games vs teams with a road win % below .400 (Covers, Nov 13). A trend; helps Heat. Spread-specific.",
+        "Cleveland's net rating is +2.1, with a 116.5 offensive rating and 37% from three. Miami's is -4.1, and its opponents' eFG of 57.8% is the worst in the league (Predictem, Nov 13). Helps Cavaliers. Spread-specific (efficiency).",
+        "Miami's last three wins came against bottom-five teams by an average of 4.3 points; the Heat are 5-2 in their last seven after an 0-4 start (Covers, Nov 13). Mixed.",
+        "Miami last played Tuesday at Utah; Cleveland won 115-107 at New York on Wednesday (Harden 32) (Predictem/Covers, Nov 13). [angle] Miami has one more day of rest. Helps Heat slightly.",
+        "Giannis Antetokounmpo (MIA) averages 27.7 points and 12.6 rebounds and is listed probable with a sprained right wrist (Predictem, Nov 13). [angle] He's facing Cleveland without Mobley inside; Miami scores 47.3 points in the paint. Helps Heat.",
+        "The spread went from Miami -1.5 to -2.5 (archive open/close), and the moneyline moved toward Miami (Predictem, Nov 13). This move is priced. Spread-specific.",
+        "NBA Cup group game. Cleveland ranks 24th in transition points allowed, and Miami 6th in transition points (Covers, Nov 13). Helps Heat."
+      ],
+      "reasoning": "This is a near pick'em at the close (-2.5), and my projection of Miami by 2 is on the number, so it's a pass. Cleveland's better season efficiency runs into Mobley's absence, which the move from 1.5 to 2.5 already priced, plus Thompson's late status. Forced to Miami on rest and the Giannis-without-Mobley matchup, with no real conviction.",
+      "forcedSide": "Miami Heat",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Atlanta Hawks", "home": "Chicago Bulls",
+      "pick": null, "confidence": "pass", "projectedMargin": -9.0,
+      "research": [
+        "Chicago is 1-9, winless at home, with the league's worst net rating (-15.1) and worst defensive rating (124.9) (Covers/Predictem, Nov 13). Helps Hawks. Spread-specific (efficiency).",
+        "Rookie Caleb Wilson (CHI) hurt his hand Wednesday and is out until about mid-December. He averaged 18.9 points and 6.2 rebounds and had the team's highest usage (Covers/Predictem, Nov 13). Helps Hawks.",
+        "Norman Powell (CHI, 19.2 ppg) has missed two straight games with a back issue and is day-to-day (Predictem/Covers, Nov 13). This is a late status. Helps Bulls if he plays.",
+        "Atlanta lost to the Lakers on Monday and has had three days off; Chicago played Wednesday (Predictem, Nov 13). [angle] Atlanta has the rest edge. Helps Hawks.",
+        "On Wednesday Chicago blew a 22-point halftime lead to San Antonio, committing 19 turnovers, 12 after halftime (Predictem, Nov 13). [angle] It can build leads but not keep them. Mixed.",
+        "Atlanta forces turnovers on 15.8% of possessions (3rd), averages 10+ steals, and is 2nd in assists per turnover (Predictem/Covers, Nov 13). [angle] This plays into Chicago's turnover problem. Helps Hawks.",
+        "Atlanta's Flemings is questionable (lumbar spasms), and Gueye, Newell, Gilbert and Veesaar are out (Predictem, Nov 13). Helps Bulls slightly.",
+        "Atlanta is 7-3 ATS in its last 10 meetings with Chicago (Covers, Nov 13). Head-to-head history; priced. Spread-specific.",
+        "About 75% of tickets are on Atlanta (Action Network via Predictem, Nov 13). The archive close is Hawks -6.5 against the slate's -7.5, so public money didn't push the number. Spread-specific; slightly helps Bulls +7.5.",
+        "Atlanta is 4-2 on the road; Chicago plays the league's fastest pace with a total around 246 (Predictem/Covers, Nov 13). The high total widens the margin spread. Neutral.",
+        "Previews: Covers takes Hawks -6.5 (playable to 53%), and Predictem takes Hawks -7.5, projecting 128-115 (Nov 13). Priced; a tiebreaker at most."
+      ],
+      "reasoning": "I project Atlanta by about 9, within 1.5 of the slate's 7.5. The close (6.5) is a point lower, so it's a pass. Chicago's injuries and worst-in-league net rating are known and priced. Forced to Atlanta on its three days' rest and the turnover matchup, though the slate's number is the worse side of the close.",
+      "forcedSide": "Atlanta Hawks",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Memphis Grizzlies", "home": "New Orleans Pelicans",
+      "pick": null, "confidence": "pass", "projectedMargin": -5.0,
+      "research": [
+        "Zach Edey (MEM) is out for ankle management and backup 7-footer Quinten Post is out with a concussion (Covers/Predictem, Nov 13). Helps Pelicans.",
+        "New Orleans: Trey Murphy III out or doubtful (knee, missed two straight), and Dejounte Murray doubtful. Mathurin, Missi and McGowens are doubtful and Watford is out (Covers/Predictem, Nov 13). Helps Grizzlies.",
+        "[angle] Revenge spot: New Orleans won 135-134 in OT at Memphis on Nov. 2 as a 5.5-point underdog and led for 76% of that game. The Pelicans have won and covered three straight meetings (Covers/Predictem, Nov 13). Head-to-head; helps Pelicans.",
+        "Since that game New Orleans has lost four straight and allowed 138+ in each of its last three, including a 51-point loss to Golden State and 145 allowed at home to Brooklyn (3-8) on Wednesday (Predictem, Nov 13). Helps Grizzlies.",
+        "Memphis is 7-4 and 5-0 on the road, but has lost four of five; it is 2-4 SU and ATS in its last six and 19th in spread differential (Covers/Predictem, Nov 13). Mixed. Spread-specific.",
+        "Memphis' net rating is +6.0 per 100, against New Orleans' -7.1; New Orleans allows 120.5 per 100 (third-worst) and a .571 opponent eFG (Predictem, Nov 13). Helps Grizzlies. Spread-specific (efficiency).",
+        "[angle] Without Edey and Post, Memphis allows the most second-chance points in the league, and New Orleans leads the NBA in shot volume at the rim (Covers, Nov 13). Helps Pelicans.",
+        "Memphis turns it over 16.4 times a game and ranks 25th in points allowed off turnovers, while New Orleans averages 10.3 steals (Covers/Predictem, Nov 13). [angle] A turnover mismatch. Helps Pelicans.",
+        "Ty Jerome (MEM) averages 26.2 and scored 40 in the first meeting; Memphis hit 16 and 17 threes in its last two (Predictem, Nov 13). Helps Grizzlies.",
+        "The line went from Pelicans +4.5 open to +3.5 close (archive), matching the slate's 3.5. This move is priced. Spread-specific.",
+        "Previews: Covers calls it a pick'em at -3.5 and plays the Pelicans side of the matchup; Predictem takes Grizzlies -3.5, projecting 123-114 (Nov 13). These are split and priced."
+      ],
+      "reasoning": "I project Memphis by about 5, only 1.5 past the 3.5. Both teams are short-handed, so it's a pass. Memphis' efficiency edge and New Orleans' defensive collapse are this season's data, but Memphis has no size inside and turns the ball over against a team that attacks the rim. Forced to Memphis on season efficiency and New Orleans' four straight losses giving up 138+.",
+      "forcedSide": "Memphis Grizzlies",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Utah Jazz", "home": "Houston Rockets",
+      "pick": null, "confidence": "pass", "projectedMargin": 15.0,
+      "research": [
+        "Utah is 1-11 with 10 straight losses, scores 105.2 per 100 (second-worst) and hasn't held anyone under 110 (Predictem, Nov 13). Helps Rockets. Spread-specific (efficiency).",
+        "Lauri Markkanen (UTA) is out at least a month with a broken hand; Jaren Jackson Jr. (knee) and Jusuf Nurkic (foot) are also out (Covers/Predictem, Nov 13). Helps Rockets; known.",
+        "Marcus Smart (HOU) is serving a three-game suspension; Clint Capela (ankle) and Steven Adams (calf) are out (Covers/Predictem, Nov 13). [angle] Houston has no backup centers behind Sengun. Helps Jazz.",
+        "Houston is 9-3, +9.2 per 100 (4th), and 6-1 at home. Its six home wins came by 18, 10, 21, 16, 10 and 7, under 14 on average and only two of six above 17.5 (Predictem, Nov 13). [angle] Its home margins sit below this number. Helps Jazz +17.5. Spread-specific.",
+        "Houston plays one of the league's slowest paces (Predictem, Nov 13). A slow pace compresses blowout margins; helps Jazz slightly, a tiebreaker only.",
+        "Utah is 0-5 on the road, has lost six games by 10 or more, and averages 17 turnovers (Predictem/Covers, Nov 13). Helps Rockets.",
+        "Utah's last two losses came without Markkanen, by 6 to Miami and by 15 at Orlando (Predictem, Nov 13). The short-handed Jazz have stayed within the number. Helps Jazz.",
+        "Keyonte George (UTA) is back from an ankle injury, leads Utah at 20.4 ppg and has 7+ assists in four straight; rookie Darryn Peterson averages 17.1 over his last 10 (Predictem/Covers, Nov 13). The underdog can still score some. Helps Jazz.",
+        "Houston beat Golden State 115-108 on Wednesday, ending the Warriors' eight-game streak (Predictem, Nov 13). Neutral rest.",
+        "The archive line went from -17.5 at the open to -15.5 at the close, so the slate's 17.5 is two points better for the Jazz than the close. Spread-specific. Line moves have pointed nowhere; treat the close as fair.",
+        "Previews: Predictem leans Jazz +17.5, projecting 117-102. Covers notes NBA Cup point differential matters for both winless group teams (Nov 13). [angle] Houston has a Cup incentive to run up the margin. Mixed."
+      ],
+      "reasoning": "I project Houston by about 15, which matches the close of 15.5. That's 2.5 under the slate's 17.5, but shading halfway to the line leaves a gap of only about 1, so it's a pass. Houston's home margins (average under 14) and thin frontcourt point to the Jazz, but Utah is 1-11 and short its two best frontcourt players. Forced to the Jazz on Houston's home-margin history.",
+      "forcedSide": "Utah Jazz",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Golden State Warriors", "home": "San Antonio Spurs",
+      "pick": null, "confidence": "pass", "projectedMargin": 13.0,
+      "research": [
+        "Stephen Curry (GSW) is out with an oblique tear for at least two weeks, after leaving Wednesday's loss at Houston six minutes in. He averaged 30.6 ppg, and 32.6 with 5.3 threes during the eight-game win streak (Covers/Predictem, Nov 13). Helps Spurs; it's in the line, and the total fell from 234.5 to 217.5.",
+        "Jimmy Butler (ACL rehab), Kristaps Porzingis, Moses Moody and Brandon Williams are also out for Golden State (Covers/Predictem, Nov 13). Helps Spurs.",
+        "San Antonio is 10-2 with a 10-game win streak and a +11.2 net rating (2nd); its defense is 5th and its offense 4th (Predictem, Nov 13). Helps Spurs. Spread-specific (efficiency).",
+        "De'Aaron Fox (SAS) is questionable with a hip injury; Devin Vassell is out or questionable with an adductor injury (Covers/Predictem, Nov 13). This is a late status. Helps Warriors if Fox sits.",
+        "[angle] Golden State's defense is 3rd at home (105.1) and 24th on the road (119), allowing 120.2 ppg away from Chase Center (Covers, Nov 13). Helps Spurs.",
+        "[angle] Golden State gives up 20.4 fast-break points on the road (4th-most), and San Antonio leads the league in fast-break points (19.1) and is 2nd in paint points (54.8) (Covers, Nov 13). Helps Spurs.",
+        "Without Curry, De'Anthony Melton scored 25 and 21 in two earlier games; Lendeborg (25) and Podziemski (22) carried the offense Wednesday in a 7-point loss at Houston (Covers/Predictem, Nov 13). [angle] Golden State has stayed competitive without Curry. Helps Warriors.",
+        "Spurs 6-1 ATS in their last seven home games vs teams with losing road records (Covers, Nov 13). A trend; helps Spurs. Spread-specific.",
+        "The line went from -11.5 to -12.5 (archive open/close; the slate has -12). The Covers writer suggests buying to -12.5. Spread-specific; this is priced.",
+        "Both teams played Wednesday; San Antonio came back from 22 down to win at Chicago (Predictem, Nov 13). Neutral rest.",
+        "Over 90% of tickets are on the over (Action Network via Predictem). Predictem projects Spurs 116-101, by 15 (Nov 13). Priced; a tiebreaker only."
+      ],
+      "reasoning": "I project San Antonio by about 13, a point past the slate's 12 and level with the close of 12.5, so it's a pass. Curry's injury moved the total 17 points and is priced. Golden State's road defense and San Antonio's transition game are the deciding matchup and point to the Spurs. Fox's late status could change it.",
+      "forcedSide": "San Antonio Spurs",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Portland Trail Blazers", "home": "Sacramento Kings",
+      "pick": null, "confidence": "pass", "projectedMargin": -11.5,
+      "research": [
+        "Portland is 8-3 and 5-1 on the road, 2nd in points per game and 3rd in offensive rating, with a +7.3 net rating (Covers/Predictem, Nov 13). Helps Blazers. Spread-specific (efficiency).",
+        "Sacramento is 1-10, 0-6 at home and on a four-game losing streak; it allows 120.3 per 100 (4th-worst) and the 2nd-highest opponent eFG (Covers/Predictem, Nov 13). Helps Blazers.",
+        "[angle] Portland is on its third game in four nights after a home back-to-back against OKC (Tue 123-103, Wed 118-108), and then travels (Predictem, Nov 13). Helps Kings.",
+        "Portland is missing Ja Morant (hamstring), Shaedon Sharpe (torn meniscus, long term), Vit Krejci and Chris Youngblood (Predictem, Nov 13). Helps Kings; known.",
+        "Domantas Sabonis (SAC) has knee soreness, sat against Miami, and went scoreless in 24 minutes against Orlando (Predictem, Nov 13). Helps Blazers.",
+        "Darius Acuff Jr. (SAC) averages 26.2 ppg on 32.2% usage and scored 33 against Portland on Oct. 23; Portland allows 31.1 to opposing point guards. Zach LaVine scored 31 Tuesday (Covers/Predictem, Nov 13). [angle] The underdog can score. Helps Kings.",
+        "Portland hit 19 threes in both OKC wins; Avdija has gone over 1.5 threes three straight times; Sacramento allows 36.9% from three (39.1% over its last three) (Covers/Predictem, Nov 13). Helps Blazers.",
+        "Both teams turn the ball over a lot: Portland 16.3 and Sacramento 17.5 a game. Sacramento is 29th in rebounds and Clingan averages 10.5 (Predictem/Covers, Nov 13). Helps Blazers.",
+        "The spread is about a point lower than its opener while most bets are on Portland (Predictem, Nov 13). The archive has 10.5 at both open and close, matching the slate. Spread-specific; slight reverse movement toward Sacramento, which has pointed nowhere.",
+        "Covers puts the scoring-margin gap at about 20 points; Predictem's model says mid-teens is fair and projects 124-108 (Nov 13). Spread-specific (margin), but these are public models and priced.",
+        "The Over is 5-1 in Sacramento's last six home games, and the Oct. 23 meeting totaled 248 points (Covers, Nov 13). A high-scoring game widens the range of margins. Neutral."
+      ],
+      "reasoning": "I project Portland by about 11.5, a point past the 10.5 slate and close, so it's a pass. The season efficiency gap favors Portland heavily, but its third game in four nights after two emotional wins over OKC, plus Morant's absence, argue for a smaller margin. Forced to Portland on the repeated efficiency gap and Sacramento's 0-6 home record.",
+      "forcedSide": "Portland Trail Blazers",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Oklahoma City Thunder", "home": "LA Clippers",
+      "pick": null, "confidence": "pass", "projectedMargin": -6.0,
+      "research": [
+        "Oklahoma City is without Chet Holmgren (patellar tendon, out until January), Jalen Williams (fractured fibula Oct. 25), Cason Wallace (torn labrum) and Jaylin Williams (back, five straight missed); Ajay Mitchell is questionable (ankle) (Covers/Predictem, Nov 13). Helps Clippers; mostly known for weeks.",
+        "[angle] Oklahoma City is on its third straight road game and third in four nights, after losing twice at Portland (Tue/Wed); the Clippers are rested (Covers/Predictem, Nov 13). Helps Clippers.",
+        "OKC is 8-12 ATS since the start of last season with a rest disadvantage (Covers, Nov 13). Spread-specific; helps Clippers.",
+        "The Clippers covered as 16.5-point road underdogs in a 108-101 loss at OKC on Oct. 25 (Covers, Nov 13). Head-to-head; priced. Spread-specific.",
+        "The archive line went from Clippers +7.5 open to +6.5 close; the slate has +7.5. A 1-point move toward the Clippers, priced. Spread-specific.",
+        "The Clippers are 2-8 and 2-3 at home; they lost 133-110 to Phoenix on Tuesday, when Phoenix shot 22-of-43 from three (Predictem, Nov 13). Helps Thunder.",
+        "The Clippers commit 18.5 turnovers a game with a 16.1% turnover rate (2nd-worst), and their defense is among the six worst per possession (Predictem, Nov 13). Helps Thunder.",
+        "Shai Gilgeous-Alexander averages 29.7 and scored 31 Wednesday and 34 in the first meeting; OKC is 8-4 with a defense ranked 4th, about +4 per 100 (Predictem, Nov 13). Helps Thunder.",
+        "Brandon Ingram (LAC) won't play per Tyronn Lue; Bradley Beal and Yanic Konan Niederhauser haven't debuted; Darius Garland averages 20.4 (Predictem, Nov 13). Helps Thunder.",
+        "[angle] Max Strus is back for LA after missing the first six games, with a 76.9% three-point attempt rate; LA shoots 38% from three and has better wide-open three-point rates on both ends (Covers, Nov 13). This is a backdoor-cover profile. Helps Clippers.",
+        "[angle] Rookie Bennett Stirtz (OKC) has scored 11+ in five of seven with the injuries and has a 132 offensive rating on the road (Covers, Nov 13). Depth for a thin OKC rotation. Helps Thunder.",
+        "Previews split: Covers takes Clippers +7.5 (to +6.5), and Predictem takes Thunder -7.5, projecting 116-106 and calling it a lean (Nov 13). Priced."
+      ],
+      "reasoning": "I project OKC by about 6, in line with the 6.5 close and 1.5 off the slate's 7.5, so it's a pass. OKC's fatigue and injuries point to the Clippers; Gilgeous-Alexander and LA's turnover problems point to the Thunder. Forced to the Clippers on the rest disadvantage and a slate number a point better than the close, with low conviction.",
+      "forcedSide": "LA Clippers",
+      "contaminated": false, "contaminationNote": null
+    }
+  ]
+}
