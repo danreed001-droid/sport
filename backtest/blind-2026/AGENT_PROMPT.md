@@ -75,6 +75,14 @@ Do **not** open anything else in the repository (especially `data/`, `site/`,
   dated preview URLs directly over reading WebSearch summaries, which can't be
   guarded; keep WebSearch to finding URLs with tight queries.
 
+- **Build preview URLs instead of searching (clean every time in Week 8):**
+  Covers NBA previews live at
+  `https://www.covers.com/nba/<away>-vs-<home>-prediction-picks-odds-<mon>-<d>-2026`
+  (team nicknames, lowercase, e.g. `celtics-vs-magic-prediction-picks-odds-nov-1-2026`);
+  try the same pattern for other sports (`/nfl/`, `/ncaaf/`, `/ncaab/`) and
+  use the fetch guard. Search only when a built URL fails, and never search for
+  a team's back-to-back or next game (the next game's preview recaps this one).
+
 ## The method (Third Opinion)
 
 The question is not "who wins?" but **"who covers the spread?"** For every game,

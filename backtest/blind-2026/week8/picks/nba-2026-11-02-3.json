@@ -1,0 +1,76 @@
+{
+  "sport": "nba", "date": "2026-11-02", "chunk": "nba-2026-11-02-3",
+  "games": [
+    {
+      "away": "Phoenix Suns", "home": "Golden State Warriors",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.5,
+      "research": [
+        "Steph Curry (29.2 ppg, 44% 3P) and Draymond Green rested Sunday and were expected back Monday. Golden State had filed no injury report as of Monday morning, and Predictem said its -4.5 pick depended on both playing (Predictem, Nov 2). Covers at 5:15 PM ET had Curry and Podziemski in the lineup (Covers, Nov 2). Helps Golden State, but status was still unresolved when the line moved.",
+        "The line moved toward Phoenix: it opened Warriors -4.5 and closed -2.5, and the slate is -2.5, equal to the close. A 2-point move on a day Curry was 'expected back' suggests news or rest concerns I couldn't confirm. Spread-specific; treat -2.5 as fair.",
+        "Golden State is on the second night of a home back-to-back. Lendeborg and Podziemski played 34+ minutes Sunday, though Curry and Green rested (Predictem, Nov 2). Helps Phoenix slightly.",
+        "Golden State has covered five straight (Covers, Nov 2) and five of seven, unbeaten since Oct 24. It beat the Clippers 124-112 Sunday with rookie Yaxel Lendeborg scoring a career-high 37 (Predictem, Nov 2). Spread-specific; helps Golden State, but ATS form is priced.",
+        "Phoenix is 0-4 ATS since its only win, which came over Golden State on Oct 24 when Curry, Green, Podziemski and Horford sat. It lost its opener 124-83 at Portland and allowed 127 to Denver Friday (Predictem, Nov 2). Spread-specific; helps Golden State.",
+        "Phoenix ranks last in defensive rating (126.3 per 100) and second-worst in opponent FG% (Predictem, Nov 2). Helps Golden State.",
+        "[angle] Rebounding mismatch: Golden State leads the NBA in offensive rebounding rate; Phoenix has the worst defensive rebounding rate and allows the most second-chance points (Covers, Nov 2). Helps Golden State.",
+        "[angle] Revenge spot for Golden State, which lost the Oct 24 game in Phoenix shorthanded. Booker scored a season-high 43 in that game and 23 or fewer in his other three (Covers, Nov 2). Mixed: Booker can swing it for Phoenix.",
+        "[angle] Podziemski has a team-best +28.3 on/off net rating (CleaningTheGlass via Covers, Nov 2). He sat the first meeting and is back. Helps Golden State.",
+        "Phoenix: Mark Williams is out for months after shoulder surgery and Oso Ighodaro is returning from an oblique strain (Predictem, Nov 2). Known, so priced. Neutral.",
+        "Golden State's offense is 5th in points per possession with the 5th-highest three-point attempt rate (Predictem, Nov 2). Helps Golden State.",
+        "Previews: Covers took Warriors -2.5 (good to -4.5); Predictem took Warriors -4.5 (projection 120-110). Not an edge. Neutral."
+      ],
+      "reasoning": "The stat matchup (Phoenix's last-ranked defense and defensive rebounding against Golden State's offensive glass) points to Golden State. But the market moved 2 points toward Phoenix on a day the Curry/Green status wasn't official, so I treat -2.5 as fair. Shading toward the close, my projection is Warriors by about 3.5, within about a point of the line: pass. The forced side is Golden State on the rebounding matchup; Curry or Green sitting would flip it. No result seen.",
+      "forcedSide": "Golden State Warriors",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Toronto Raptors", "home": "LA Clippers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -6.5,
+      "research": [
+        "The line moved toward Toronto: it opened Clippers +5.5 and closed +6.5. Slate Raptors -4.5 is 2 points better than the close on the side the market moved to. Spread-specific; information, not an edge (LESSONS).",
+        "Derrick Jones Jr. hurt his knee late in the third quarter Sunday at Golden State and may sit (Covers, Nov 2). This is late news, likely behind part of the line move. Helps Toronto.",
+        "Toronto is still without Kawhi Leonard (knee) (Covers, Nov 2). Known, so priced. Helps the Clippers.",
+        "The Clippers have lost five straight, the latest 124-112 at Golden State Sunday in a game Curry and Green sat (Predictem/Covers, Nov 2). Helps Toronto.",
+        "Clippers offense: 26th at 105.6 per 100, and last in the league during the losing streak at 103.4, with a -13.3 net rating (Covers, Nov 2). Spread-specific; helps Toronto.",
+        "Clippers defense: 29th in opponent FG% (49.4%) and 26th in opponent 3P% (38.3%) (Covers, Nov 2). Helps Toronto.",
+        "Toronto's offense is 3rd over its last three games (122.3 per 100), but it ranks 25th in threes made and 24th in 3P% (Covers, Nov 2). Mixed.",
+        "[angle] Toronto rallied from 15 down Sunday against the Lakers; its bench cut a 26-point deficit to five late (Covers/Predictem, Nov 2). This is a sign of depth without Leonard. Helps Toronto slightly.",
+        "[angle] Both teams are on the second night of a back-to-back. Toronto stayed in LA (Crypto.com Arena to Intuit Dome); the Clippers flew home from San Francisco. Travel edge to Toronto, slight.",
+        "[angle] Toronto is 2-8 straight up in its last 10 at the Clippers since 2016 (Covers, Nov 2). Old head-to-head; not weighted.",
+        "Ja'Kobe Walter has made 3+ threes in four straight at a career-high 41.5% (Covers, Nov 2). Neutral.",
+        "Implied win probability about 66% Toronto; Covers took Raptors -5.5 (Covers, Nov 2). Preview picks aren't an edge. Neutral."
+      ],
+      "reasoning": "Everything points to Toronto: the Clippers' offense is last during a five-game slide, Jones Jr. is doubtful after Sunday's knee injury, and Toronto had no travel on the back-to-back. But the market already moved to Clippers +6.5, and the slate's -4.5 being 2 points better than the close is information, not an edge. A projection near the close gives a gap of about 2: under the bar early in the season, so a pass. The forced side is Toronto. No result seen.",
+      "forcedSide": "Toronto Raptors",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Miami Heat", "home": "LA Lakers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 1.0,
+      "research": [
+        "Line flat: it opened Lakers -1.5 and closed -1.5, the slate number. The total dropped from 239.5 to 237.5. Spread-specific; neutral.",
+        "[angle] Schedule: the Lakers are on the second night of a back-to-back, their third game in four nights. Doncic played 35 minutes and Reaves 39 Sunday, and the Lakers committed 24 turnovers. Miami has two full days off and opens a five-game West trip (Predictem/Covers, Nov 2). Covers calls it 'a schedule loss' for LA. Helps Miami, but it was known at the open.",
+        "The Lakers have committed 20.5 turnovers a game over their last four and were outscored 125-86 in fourth quarters of those games. Their 16.7% turnover rate is second-worst (Covers/Predictem, Nov 2). Helps Miami.",
+        "[angle] The Lakers blew big leads in both recent games: up 25 on Golden State before going flat, and up 26 on Toronto before the lead fell to five late (Predictem, Nov 2). Spread-specific margin tendency; helps the Miami side late.",
+        "Miami started 0-4, then won at Atlanta and routed Indiana, scoring 129.9 per 100 in those two wins. Adebayo averaged 25.5 points on 63.3% over that stretch (Covers, Nov 2). Helps Miami.",
+        "Giannis Antetokounmpo averages 28.2 points and 12.3 rebounds on 58.6% shooting for Miami (Predictem, Nov 2). Helps Miami.",
+        "Doncic leads the league at 37.7 ppg; Reaves averages 23.1; the Lakers lead the NBA in eFG% (.600) (Predictem, Nov 2). Helps the Lakers.",
+        "Defenses: the Lakers rank 20th, Miami 24th in defensive rating at the third-fastest pace (Predictem, Nov 2). Neutral on the side.",
+        "Miami has the fifth-lowest turnover rate (Predictem, Nov 2). That clean ball control against the Lakers' turnover problem helps Miami.",
+        "Tim Hardaway Jr. questionable (personal); the Lakers had filed no injury report as of Monday morning (Predictem, Nov 2). Unresolved; neutral.",
+        "Previews: Covers took the Heat moneyline and +1.5; Predictem projected Lakers 123-119 and played the over. Not an edge. Neutral."
+      ],
+      "reasoning": "Before the leak this was already a coin-flip line: Miami's rest edge and the Lakers' turnovers and fourth-quarter collapses against Doncic's scoring and LA's league-best shooting, with a flat line. A pass by the early-season NBA rule. A search summary then showed how many points the Lakers scored, so this is contaminated. The forced side is the one my pre-leak notes leaned to, Miami on the schedule spot and turnover matchup, though that spot was priced at the open.",
+      "forcedSide": "Miami Heat",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (predictem/oddsshark) said 'a separate PredictEm article notes that Miami gave up 138 to the Lakers on November 2'. That implies a high Lakers score and probably a Lakers win, though no margin was given. I saw it after reading the Covers preview but before writing a lean (my pre-leak tilt was Miami). Locked as a pass; the forced side is the pre-leak tilt, not adjusted for the leak."
+    }
+  ]
+}
