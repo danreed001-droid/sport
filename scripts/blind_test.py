@@ -62,19 +62,42 @@ def market_lines(sport):
     return out
 
 
+def _norm(n):
+    n = n.replace("LA ", "Los Angeles ", 1) if n.startswith("LA ") else n
+    return n.lower().replace(".", "").replace("&", "and")
+
+
+def _fits(slate_name, csv_name):
+    a, b = _norm(slate_name), _norm(csv_name)
+    return a == b or b.startswith(a + " ")
+
+
 def add_market(g, d, lines):
+    """Attach the archive's open/close (pre-game numbers only; scores are never read)."""
     import datetime as dt
     day = dt.date.fromisoformat(d)
     near = {str(day + dt.timedelta(days=k)) for k in (-1, 0, 1)}
-    rows = [r for r in lines.get((g["away"], g["home"]), []) if r["date"] in near]
-    if len(rows) != 1:
+    cands = []
+    for (aw, hm), rows in lines.items():
+        for r in rows:
+            if r["date"] not in near:
+                continue
+            if _fits(g["away"], aw) and _fits(g["home"], hm):
+                cands.append((r, 1))
+            elif _fits(g["away"], hm) and _fits(g["home"], aw):
+                cands.append((r, -1))  # listed the other way round (neutral site)
+    if len(cands) != 1:
         return
-    r = rows[0]
+    r, sign = cands[0]
     num = lambda v: float(v) if v not in ("", None) else None
-    for k, col in [("homeSpreadOpen", "spread_open"), ("homeSpreadClose", "spread_close"),
-                   ("totalOpen", "total_open"), ("totalClose", "total_close")]:
-        if num(r.get(col)) is not None:
-            g[k] = num(r[col])
+    close = num(r.get("spread_close"))
+    if close is not None and abs(sign * close - g["homeSpread"]) > 6:
+        return  # doesn't look like the same game/line
+    for k, col, sg in [("homeSpreadOpen", "spread_open", sign), ("homeSpreadClose", "spread_close", sign),
+                       ("totalOpen", "total_open", 1), ("totalClose", "total_close", 1)]:
+        v = num(r.get(col))
+        if v is not None:
+            g[k] = sg * v if sg == -1 and v != 0 else v
 
 
 def prep(w):

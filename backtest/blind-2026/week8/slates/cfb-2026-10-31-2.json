@@ -14,7 +14,11 @@
    "awaySpreadOdds": -110,
    "homeSpreadOdds": -110,
    "awayMoneyline": -270,
-   "homeMoneyline": 220
+   "homeMoneyline": 220,
+   "homeSpreadOpen": 9.5,
+   "homeSpreadClose": 7.0,
+   "totalOpen": 56.5,
+   "totalClose": 56.5
   },
   {
    "away": "Arizona State",
@@ -24,7 +28,11 @@
    "awaySpread": 17.5,
    "homeSpread": -17.5,
    "awaySpreadOdds": -110,
-   "homeSpreadOdds": -110
+   "homeSpreadOdds": -110,
+   "homeSpreadOpen": -17.5,
+   "homeSpreadClose": -17.5,
+   "totalOpen": 51.5,
+   "totalClose": 46.5
   },
   {
    "away": "Minnesota",
@@ -36,7 +44,11 @@
    "awaySpreadOdds": -107,
    "homeSpreadOdds": -106,
    "awayMoneyline": 1060,
-   "homeMoneyline": -1429
+   "homeMoneyline": -1429,
+   "homeSpreadOpen": -22.5,
+   "homeSpreadClose": -20.5,
+   "totalOpen": 45.5,
+   "totalClose": 40.5
   },
   {
    "away": "Northwestern",
@@ -48,7 +60,11 @@
    "awaySpreadOdds": -110,
    "homeSpreadOdds": -110,
    "awayMoneyline": 145,
-   "homeMoneyline": -175
+   "homeMoneyline": -175,
+   "homeSpreadOpen": -7.5,
+   "homeSpreadClose": -4.0,
+   "totalOpen": 50.5,
+   "totalClose": 47.5
   },
   {
    "away": "Florida",
@@ -60,7 +76,11 @@
    "awaySpreadOdds": -112,
    "homeSpreadOdds": -108,
    "awayMoneyline": 340,
-   "homeMoneyline": -440
+   "homeMoneyline": -440,
+   "homeSpreadOpen": -12.5,
+   "homeSpreadClose": -11.5,
+   "totalOpen": 53.5,
+   "totalClose": 56.5
   },
   {
    "away": "South Carolina",
@@ -72,7 +92,11 @@
    "awaySpreadOdds": -115,
    "homeSpreadOdds": -105,
    "awayMoneyline": 142,
-   "homeMoneyline": -170
+   "homeMoneyline": -170,
+   "homeSpreadOpen": -5.5,
+   "homeSpreadClose": -3.5,
+   "totalOpen": 43.5,
+   "totalClose": 44.5
   }
  ]
 }

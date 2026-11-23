@@ -33,3 +33,9 @@ Limits: the picks use the line stored on our slate, not a line the agent found
 that morning; web search can still surface a result (that's what the
 contamination flag is for); stats pages that update after games can leak
 later numbers into "pre-game" research.
+
+Orchestrator note (Week 8): while matching team names for the open/close
+lines, a lookup printed the lines archive's score columns for three Week 8
+games (Ohio State @ USC, Notre Dame @ Navy, Arizona/UCLA). The orchestrator
+makes no picks and the research agents never see its context, so the picks
+aren't affected; noted for completeness.

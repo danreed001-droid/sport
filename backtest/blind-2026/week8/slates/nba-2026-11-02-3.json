@@ -42,7 +42,11 @@
    "awaySpreadOdds": -105,
    "homeSpreadOdds": -115,
    "awayMoneyline": 103,
-   "homeMoneyline": -116
+   "homeMoneyline": -116,
+   "homeSpreadOpen": -1.5,
+   "homeSpreadClose": -1.5,
+   "totalOpen": 239.5,
+   "totalClose": 237.5
   }
  ]
 }

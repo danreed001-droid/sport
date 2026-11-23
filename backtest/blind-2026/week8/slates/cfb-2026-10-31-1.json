@@ -13,7 +13,11 @@
    "awaySpreadOdds": -110,
    "homeSpreadOdds": -110,
    "awayMoneyline": -6500,
-   "homeMoneyline": 2000
+   "homeMoneyline": 2000,
+   "homeSpreadOpen": 28.5,
+   "homeSpreadClose": 30.5,
+   "totalOpen": 53.5,
+   "totalClose": 54.5
   },
   {
    "away": "Arizona",
@@ -25,7 +29,11 @@
    "awaySpreadOdds": -112,
    "homeSpreadOdds": -108,
    "awayMoneyline": 145,
-   "homeMoneyline": -175
+   "homeMoneyline": -175,
+   "homeSpreadOpen": -7.5,
+   "homeSpreadClose": -4.0,
+   "totalOpen": 52.5,
+   "totalClose": 55.5
   },
   {
    "away": "Michigan",
@@ -37,7 +45,11 @@
    "awaySpreadOdds": -112,
    "homeSpreadOdds": -108,
    "awayMoneyline": -650,
-   "homeMoneyline": 470
+   "homeMoneyline": 470,
+   "homeSpreadOpen": 14.0,
+   "homeSpreadClose": 16.5,
+   "totalOpen": 47.5,
+   "totalClose": 47.5
   },
   {
    "away": "Auburn",
@@ -49,7 +61,11 @@
    "awaySpreadOdds": -110,
    "homeSpreadOdds": -110,
    "awayMoneyline": 400,
-   "homeMoneyline": -535
+   "homeMoneyline": -535,
+   "homeSpreadOpen": -10.5,
+   "homeSpreadClose": -10.5,
+   "totalOpen": 53.5,
+   "totalClose": 58.5
   },
   {
    "away": "Stanford",
@@ -60,7 +76,11 @@
    "homeSpread": -22.5,
    "awaySpreadOdds": -108,
    "homeSpreadOdds": -108,
-   "awayMoneyline": 1100
+   "awayMoneyline": 1100,
+   "homeSpreadOpen": -21.0,
+   "homeSpreadClose": -22.5,
+   "totalOpen": 61.5,
+   "totalClose": 59.5
   },
   {
    "away": "Virginia",
@@ -70,7 +90,11 @@
    "awaySpread": 13.5,
    "homeSpread": -13.5,
    "awayMoneyline": 441,
-   "homeMoneyline": -456
+   "homeMoneyline": -456,
+   "homeSpreadOpen": -13.5,
+   "homeSpreadClose": -13.5,
+   "totalOpen": 49.5,
+   "totalClose": 48.5
   }
  ]
 }

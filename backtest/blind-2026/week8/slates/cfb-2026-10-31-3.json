@@ -13,7 +13,11 @@
    "awaySpreadOdds": -112,
    "homeSpreadOdds": -108,
    "awayMoneyline": -662,
-   "homeMoneyline": 456
+   "homeMoneyline": 456,
+   "homeSpreadOpen": 14.5,
+   "homeSpreadClose": 13.5,
+   "totalOpen": 50.5,
+   "totalClose": 52.5
   },
   {
    "away": "Georgia Tech",
@@ -38,7 +42,11 @@
    "awaySpreadOdds": -112,
    "homeSpreadOdds": -108,
    "awayMoneyline": -251,
-   "homeMoneyline": 202
+   "homeMoneyline": 202,
+   "homeSpreadOpen": 7.5,
+   "homeSpreadClose": 6.5,
+   "totalOpen": 55.5,
+   "totalClose": 50.5
   },
   {
    "away": "Mississippi State",
@@ -48,7 +56,11 @@
    "awaySpread": 19.5,
    "homeSpread": -19.5,
    "awayMoneyline": 885,
-   "homeMoneyline": -1587
+   "homeMoneyline": -1587,
+   "homeSpreadOpen": -18.5,
+   "homeSpreadClose": -19.5,
+   "totalOpen": 52.5,
+   "totalClose": 50.5
   },
   {
    "away": "Missouri",
@@ -58,7 +70,11 @@
    "awaySpread": -10.5,
    "homeSpread": 10.5,
    "awayMoneyline": -397,
-   "homeMoneyline": 303
+   "homeMoneyline": 303,
+   "homeSpreadOpen": 10.5,
+   "homeSpreadClose": 10.5,
+   "totalOpen": 48.5,
+   "totalClose": 48.5
   },
   {
    "away": "Army",
@@ -68,7 +84,11 @@
    "awaySpread": 5.5,
    "homeSpread": -5.5,
    "awayMoneyline": 182,
-   "homeMoneyline": -226
+   "homeMoneyline": -226,
+   "homeSpreadOpen": -6.0,
+   "homeSpreadClose": -6.0,
+   "totalOpen": 56.5,
+   "totalClose": 59.5
   }
  ]
 }
