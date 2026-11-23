@@ -2033,27 +2033,31 @@ footer b{color:var(--ink);}
   }
   function cdInner(sport, g){
     var C = (DATA.pdCandles || {})[sport];
-    var soc = sport==='soccer' || sport==='epl';
-    // no closing spreads saved (MLB, soccer): point differential only
-    var anyLine = [C[g.away], C[g.home]].some(function(T){ return T && (T.r || []).some(function(r){ return r[6] != null; }); });
-    if(!anyLine) soc = true;
+    var isSoc = sport==='soccer' || sport==='epl';
+    // the switch needs a line saved: a closing spread, or for soccer (no spread) the closing moneyline (r[7]);
+    // MLB has neither saved, so it shows run differential only
+    var anyLine = [C[g.away], C[g.home]].some(function(T){ return T && (T.r || []).some(function(r){ return isSoc ? r[7] != null : r[6] != null; }); });
+    var soc = !anyLine;
     var ats = false; if(!soc){ try { ats = localStorage.getItem('dl-cdmode') === 'ats'; } catch(e){} }
     document.documentElement.classList.toggle('cdats', ats);
     var rg = cdRange();
     var ctl = '<div class="cdctl"><div class="segctl cdrng" role="group" aria-label="Date range">'
       + CD_RANGES.map(function(r){ return '<button type="button" data-cdr="'+r[0]+'" aria-pressed="'+(r[0]===rg)+'">'+r[1]+'</button>'; }).join('')+'</div>'
-      + (soc ? '' : '<div class="segctl cdtog" role="group" aria-label="Candles show"><button type="button" data-cd="pd" aria-pressed="'+(!ats)+'">'+(sport==='mlb'?'Run':'Point')+' diff</button><button type="button" data-cd="ats" aria-pressed="'+ats+'">'+(sport==='mlb'?'Run line':'ATS')+'</button></div>')
+      + (soc ? '' : '<div class="segctl cdtog" role="group" aria-label="Candles show"><button type="button" data-cd="pd" aria-pressed="'+(!ats)+'">'+(sport==='mlb'?'Run':isSoc?'Goal':'Point')+' diff</button><button type="button" data-cd="ats" aria-pressed="'+ats+'">'+(sport==='mlb'?'Run line':isSoc?'Moneyline':'ATS')+'</button></div>')
       + '</div>';
     if(soc) return ctl + cdBuild(sport, g, C[g.away], C[g.home], false);
     return ctl + '<div class="m-cpd">'+cdBuild(sport, g, C[g.away], C[g.home], false)+'</div><div class="m-cats">'+cdBuild(sport, g, C[g.away], C[g.home], true)+'</div>';
   }
   function cdBuild(sport, g, A, H, ATS){
     var soc = sport==='soccer' || sport==='epl', fb = sport==='nfl' || sport==='cfb';
-    var unit = sport==='mlb' ? 'run' : soc ? 'goal' : 'point', RL = sport==='mlb' ? 'run line' : 'spread';
+    var ML = ATS && soc;   // soccer has no spread: its "ATS" view is moneyline profit, $100 a match
+    var unit = sport==='mlb' ? 'run' : soc ? 'goal' : 'point', RL = ML ? 'moneyline' : sport==='mlb' ? 'run line' : 'spread';
+    var mlPay = function(ml){ return ml > 0 ? ml : 10000 / -ml; };
     var PH = window.innerWidth < 600, gc = gameColors(g), tonight = (DATA.slate && DATA.slate.date) || todayStr();
     var dayN = function(d){ return Math.floor(Date.parse(d+'T00:00:00Z')/864e5); };
     var dayS = function(n){ return new Date(n*864e5).toISOString().slice(0,10); };
-    var fmt = function(v){ v = Math.round(v*10)/10; return (v>0?'+':v<0?'−':'')+Math.abs(v); };
+    var fmt0 = function(v){ v = Math.round(v*10)/10; return (v>0?'+':v<0?'−':'')+Math.abs(v); };
+    var fmt = ML ? function(v){ v = Math.round(v); return (v>0?'+':v<0?'−':'')+'$'+Math.abs(v); } : fmt0;
     var nReg = sport==='ncaab' ? 2 : sport==='mlb' ? 9 : 4;
     var pName = sport==='mlb' ? 'inning' : qName(sport), pNames = pName==='half' ? 'halves' : pName+'s', pLab = function(j){ return sport==='mlb' ? (j < 9 ? 'Inn '+(j+1) : 'Inn '+(j+1)+' (extra)') : qLabel(sport, j); };
     // the period a candle belongs to: Monday-Sunday weeks, football by month
@@ -2065,7 +2069,8 @@ footer b{color:var(--ink);}
       if(!T) return null;
       var cum = ATS ? T.a0 : T.c0, out = [], start = null, cut = !!(T.c0 || T.a0);
       (T.r || []).forEach(function(r){
-        var mg = r[3] - r[4], sp = r[6], has = !ATS || sp != null, dl = has ? mg + (ATS ? sp : 0) : 0;
+        var mg = r[3] - r[4], sp = r[6], ml = ML ? r[7] : null, has = !ATS || (ML ? ml != null : sp != null);
+        var dl = !has ? 0 : ML ? (mg > 0 ? mlPay(ml) : -100) : mg + (ATS ? sp : 0);
         var o = cum, c = cum + dl, hi = Math.max(o, c), lo = Math.min(o, c), q = r[5];
         if(has && q && q.length){
           var run = 0; q.forEach(function(x, j){ run += x; var v = o + run + (ATS ? sp * Math.min(j+1, nReg) / nReg : 0); hi = Math.max(hi, v); lo = Math.min(lo, v); });
@@ -2073,7 +2078,7 @@ footer b{color:var(--ink);}
         if(r[0] < cutD) cut = true;
         if(r[0] >= cutD){
           if(start == null) start = o;
-          out.push({d: r[0], n: dayN(r[0]), opp: r[1], home: r[2], pf: r[3], pa: r[4], mg: mg, sp: sp, q: q, has: has, o: o, c: c, hi: hi, lo: lo, p: periodOf(r[0])});
+          out.push({d: r[0], n: dayN(r[0]), opp: r[1], home: r[2], pf: r[3], pa: r[4], mg: mg, sp: sp, ml: ml, q: q, has: has, o: o, c: c, hi: hi, lo: lo, p: periodOf(r[0])});
         }
         cum = c;
       });
@@ -2090,7 +2095,7 @@ footer b{color:var(--ink);}
       var W = 600, L = PH ? 50 : 40, R = PH ? 62 : 50, Tp = 10, CH = PH ? 230 : 170, XB = PH ? 26 : 16;
       var nd = lastN - p0 + 1, uw = (W - L - R) / nd, xOf = function(n){ return L + uw * (n - p0 + 0.5); };
       var vals = [S.start, S.end]; S.rows.forEach(function(k){ vals.push(k.hi, k.lo); });
-      var mn = Math.min.apply(null, vals), mx = Math.max.apply(null, vals), span = Math.max(mx - mn, soc ? 2 : 10);
+      var mn = Math.min.apply(null, vals), mx = Math.max.apply(null, vals), span = Math.max(mx - mn, ML ? 300 : soc ? 2 : 10);
       var steps = [1, 2, 5, 10, 20, 25, 50, 100, 200, 250, 500], step = steps.filter(function(x){ return span / x <= 5; })[0] || 1000;
       var lo = Math.floor((mn - span*0.04) / step) * step, hi = Math.ceil((mx + span*0.04) / step) * step;
       var ys = function(v){ return Tp + (hi - v) / (hi - lo) * CH; };
@@ -2118,7 +2123,7 @@ footer b{color:var(--ink);}
         var x1 = L + uw * (Math.max(sp[0], p0) - p0) + 0.5, x2 = L + uw * (Math.min(sp[1], lastN) - p0 + 1) - 0.5;
         var cl = c > o ? 'cu' : c < o ? 'cdn' : 'cf', y1 = ys(Math.max(o, c)), hh = Math.max(1.5, Math.abs(ys(o) - ys(c)));
         var w = 0, l = 0; ks.forEach(function(k){ if(!k.has) return; var v = k.c - k.o; if(v > 0) w++; else if(v < 0) l++; });
-        var tip = team+' — '+(fb ? new Date(Date.UTC(+pk.slice(0,4), +pk.slice(5,7)-1, 15)).toLocaleDateString('en-US',{month:'long',timeZone:'UTC'}) : 'week of '+fmtDay(pk))+': '+fmt(c - o)+' '+(ATS ? 'against the '+RL : unit+'s')+' in '+ks.length+' game'+(ks.length===1?'':'s')+' ('+w+'-'+l+(ATS?' ATS':'')+'), running '+fmt(o)+' → '+fmt(c);
+        var tip = team+' — '+(fb ? new Date(Date.UTC(+pk.slice(0,4), +pk.slice(5,7)-1, 15)).toLocaleDateString('en-US',{month:'long',timeZone:'UTC'}) : 'week of '+fmtDay(pk))+': '+fmt(c - o)+' '+(ML ? 'on the moneyline' : ATS ? 'against the '+RL : unit+'s')+' in '+ks.length+' game'+(ks.length===1?'':'s')+' ('+w+'-'+l+(ML?' on the moneyline':ATS?' ATS':'')+'), running '+fmt(o)+' → '+fmt(c);
         out += '<g><title>'+esc(tip)+'</title><rect class="wk '+cl+'" x="'+x1.toFixed(1)+'" y="'+y1.toFixed(1)+'" width="'+Math.max(2, x2 - x1).toFixed(1)+'" height="'+hh.toFixed(1)+'"></rect></g>';
       });
       // the day candles
@@ -2126,8 +2131,9 @@ footer b{color:var(--ink);}
       S.rows.forEach(function(k){
         var x = xOf(k.n), v = k.c - k.o, cl = !k.has ? 'cf' : v > 0 ? 'cu' : v < 0 ? 'cdn' : 'cf';
         var res = k.mg > 0 ? 'won' : k.mg < 0 ? 'lost' : 'tied';
-        var tip = team+' — '+fmtDay(k.d)+' '+(k.home?'vs ':'@ ')+k.opp+': '+res+' '+Math.max(k.pf,k.pa)+'-'+Math.min(k.pf,k.pa)+' ('+fmt(k.mg)+')'
-          + (k.sp != null ? ', '+RL+' '+sgn(k.sp)+(ATS ? ' → '+(v>0?'covered by '+fmt(v):v<0?'missed by '+fmt(-v):'push') : '') : (ATS ? ', no '+RL+' saved (flat)' : ''))
+        var tip = team+' — '+fmtDay(k.d)+' '+(k.home?'vs ':'@ ')+k.opp+': '+res+' '+Math.max(k.pf,k.pa)+'-'+Math.min(k.pf,k.pa)+' ('+fmt0(k.mg)+')'
+          + (ML ? (k.ml != null ? ', moneyline '+sgn(k.ml)+' \u2192 '+(k.mg > 0 ? 'won '+fmt(mlPay(k.ml)) : 'lost $100') : ', no moneyline saved (flat)')
+             : k.sp != null ? ', '+RL+' '+sgn(k.sp)+(ATS ? ' → '+(v>0?'covered by '+fmt(v):v<0?'missed by '+fmt(-v):'push') : '') : (ATS ? ', no '+RL+' saved (flat)' : ''))
           + ' · running '+fmt(k.o)+' → '+fmt(k.c)
           + (k.q && k.q.length && k.has ? ' · by '+pName+': '+k.q.map(function(q, j){ return pLab(j)+' '+fmt(q); }).join(', ')+' (wick: the high and low through the game)' : '');
         out += '<g><title>'+esc(tip)+'</title><line class="wick '+cl+'" x1="'+x.toFixed(1)+'" x2="'+x.toFixed(1)+'" y1="'+ys(k.hi).toFixed(1)+'" y2="'+ys(k.lo).toFixed(1)+'"></line>'
@@ -2140,12 +2146,12 @@ footer b{color:var(--ink);}
       var Hh = Tp + CH + XB + 2;
       var ng = S.rows.filter(function(k){ return k.has; }).length;
       var last = S.rows[S.rows.length-1], lastP = per[last.p], wkChg = lastP[lastP.length-1].c - lastP[0].o;
-      var head = '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+(ATS ? 'running cover margin ' : 'running '+unit+' differential ')+fmt(S.end)+' this season'+(cutD && S.cut ? ', '+fmt(S.end - S.start)+' in this range' : '')
+      var head = '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> '+(ML ? 'running moneyline profit ($100 a match) ' : ATS ? 'running cover margin ' : 'running '+unit+' differential ')+fmt(S.end)+' this season'+(cutD && S.cut ? ', '+fmt(S.end - S.start)+' in this range' : '')
         + (ATS && ng < S.rows.length ? ' ('+(S.rows.length - ng)+' shown game'+(S.rows.length-ng===1?'':'s')+' with no '+RL+', flat)' : '')
         + ' · '+(last.p === periodOf(tonight) ? (fb ? 'this month so far' : 'this week so far') : (fb ? 'last month' : 'last week'))+' '+fmt(wkChg)+'</div>';
-      return head + '<svg class="cdk" viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+esc(team)+(ATS ? ' running cover margin' : ' running '+unit+' differential')+' candles">'+out+'</svg>';
+      return head + '<svg class="cdk" viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+esc(team)+(ML ? ' running moneyline profit' : ATS ? ' running cover margin' : ' running '+unit+' differential')+' candles">'+out+'</svg>';
     };
-    return '<div class="atstrend"><div class="at-head"><b>'+(ATS ? (sport==='mlb' ? 'Run line' : 'ATS')+' candles' : (sport==='mlb' ? 'Run' : soc ? 'Goal' : 'Point')+' differential candles')+'</b><span>the running '+(ATS ? 'cover margin (margin + closing '+RL+')' : unit+' differential')+' this season: each game a candle from the running total before it to after it (green up, red down'+(ATS ? ', gray no '+RL : '')+')'+(soc ? '' : ', its wick the high and low through the game’s '+pNames)+'; each '+(fb ? 'month' : 'week (Mon-Sun)')+' a hollow candle around its games · dashed outline = tonight · hover for the score'+(soc ? '' : ' and the '+pNames)+'</span></div>'
+    return '<div class="atstrend"><div class="at-head"><b>'+(ML ? 'Moneyline candles' : ATS ? (sport==='mlb' ? 'Run line' : 'ATS')+' candles' : (sport==='mlb' ? 'Run' : soc ? 'Goal' : 'Point')+' differential candles')+'</b><span>the running '+(ML ? 'profit from $100 on the team to win each match at its closing moneyline (DraftKings, via ESPN): a win pays the price, a draw or a loss costs $100' : ATS ? 'cover margin (margin + closing '+RL+')' : unit+' differential')+' this season: each game a candle from the running total before it to after it (green up, red down'+(ATS ? ', gray no '+RL : '')+')'+(soc ? '' : ', its wick the high and low through the game’s '+pNames)+'; each '+(fb ? 'month' : 'week (Mon-Sun)')+' a hollow candle around its games · dashed outline = tonight · hover for the score'+(soc ? '' : ' and the '+pNames)+'</span></div>'
       + panel(SA, g.away, g.home, false, gc[0]) + panel(SH, g.home, g.away, true, gc[1]) + '</div>';
   }
   function trendChart(sport, g, kind){
