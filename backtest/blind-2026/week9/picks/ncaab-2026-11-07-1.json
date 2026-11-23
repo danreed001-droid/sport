@@ -1,0 +1,50 @@
+{
+  "sport": "ncaab",
+  "date": "2026-11-07",
+  "chunk": "ncaab-2026-11-07-1",
+  "games": [
+    {
+      "away": "Morehead State Eagles",
+      "home": "Louisville Cardinals",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": null,
+      "research": [
+        "Slate line Louisville -37.5 equals homeSpreadClose -37.5 (open -36.5); total 150.5 -> 151.5 (slate file).",
+        "Louisville opened with an 84-70 win over Chattanooga under Pat Kelsey (predictem.com preview, 2026-11-07).",
+        "Predictem's pre-game preview took Morehead State +37.5, projecting Louisville 89-58 and arguing independent models made it closer to Louisville by 30-31 (predictem.com, 2026-11-07).",
+        "Tempo: Louisville adjusted tempo near 73, Morehead State near 69 (predictem.com, 2026-11-07).",
+        "Fewer than 10 solid findings: the same search summary leaked the result (see contaminationNote) before any lean was written."
+      ],
+      "reasoning": "The search summary that surfaced the pre-game preview also quoted a later Predictem preview giving this game's result, before I had formed a lean. Locked as a pass with no forced side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (predictem.com) quoted a later Louisville preview (Stetson, 11/19) saying the Cardinals scored 107 on Morehead State and won by 50 after opening the second half on a 40-2 run, so Louisville covered -37.5. Seen before any lean was written."
+    },
+    {
+      "away": "New Mexico State Aggies",
+      "home": "Gonzaga Bulldogs",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 26.5,
+      "research": [
+        "Slate line Gonzaga -27.5; homeSpreadClose -29.5 (open -27.5): the market moved 2 points toward Gonzaga by tip (slate file). Close treated as fair; slate-vs-close not used as a reason.",
+        "Total moved from 148.5 to 151.5 (slate file); Predictem's writer still played the Under 151.5, citing a slow, grinding game (predictem.com, 2026-11-07).",
+        "Gonzaga opened with a 78-72 win over Purdue in Las Vegas, a 6-point game against a high-major (predictem.com, 2026-11-07). Helps neither side much; shows Gonzaga is good but its opener was close.",
+        "Xaivian Lee scored 18 in the opener; Braden Huff went 4-of-11 for 10 (predictem.com, 2026-11-07). Neutral.",
+        "Gonzaga rated in KenPom's top dozen with an adjusted margin around +25; New Mexico State about No. 131 (predictem.com, 2026-11-07). Rating math (~+22 neutral plus home court) lands around Gonzaga by 25-26: slightly New Mexico State.",
+        "[angle] New Mexico State's best preseason player, Gabe Warren, tore his ACL nine minutes into the opener and is out for the season (predictem.com, 2026-11-07). Helps Gonzaga, though it happened days before this line was posted, so likely priced.",
+        "[angle] KK Robinson is on a minutes restriction after back-to-back ACL tears, and Stephon Payne faces eligibility uncertainty (predictem.com, 2026-11-07). Helps Gonzaga: a thin Aggie rotation.",
+        "[angle] Coach Jason Hooten told the Spokesman-Review the roster is compromised (paraphrased in predictem.com, 2026-11-07). Helps Gonzaga.",
+        "New Mexico State beat Division II Western New Mexico only 73-66 in its opener (predictem.com, 2026-11-07). A weak showing: helps Gonzaga.",
+        "[angle] The preview notes Gonzaga tends to settle into half-court possessions and empty the bench once a lead is safe, which compresses blowout margins (predictem.com, 2026-11-07). Helps New Mexico State.",
+        "Predictem's projection was Gonzaga 82-58 (24 points) and its side lean was New Mexico State +27.5 (predictem.com, 2026-11-07). Preview picks are priced; tiebreaker at most for New Mexico State.",
+        "Home opener at McCarthey Athletic Center after a neutral-site opener in Las Vegas (predictem.com, 2026-11-07). Neutral."
+      ],
+      "reasoning": "The ratings put Gonzaga around a 25-26 point favorite, but New Mexico State's roster is thinner than its rating after Warren's injury and it barely beat a D-II team, so I project about 26.5: within roughly a point of the number, a pass. The forced side is New Mexico State on Gonzaga's bench-clearing habit in a game the market expects to be slow; a Gonzaga press or hot start would sink it.",
+      "forcedSide": "New Mexico State Aggies",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

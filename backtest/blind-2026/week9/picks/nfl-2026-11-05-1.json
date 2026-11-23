@@ -1,0 +1,29 @@
+{
+  "sport": "nfl", "date": "2026-11-05", "chunk": "nfl-2026-11-05-1",
+  "games": [
+    {
+      "away": "Jacksonville Jaguars", "home": "Baltimore Ravens",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -10,
+      "research": [
+        "[angle] Lamar Jackson (thumb) is on IR, out at least four weeks after re-injuring it on his first pass vs Buffalo (WagerTalk/GoldSheet, Nov 4). Helps Jaguars, but it was known before this line settled.",
+        "[angle] Undrafted rookie Joe Fagnano makes his first career start. He went 10-of-21 for 91 yards with 0 TD and 1 INT in relief vs Buffalo and is nursing an ankle injury on a short week (Covers, Nov 5). Helps Jaguars.",
+        "[angle] Tyler Huntley (toe) is doubtful, and newly signed Austin Reed has had little time to prepare on a Thursday turnaround, so there's no real fallback if Fagnano struggles (WagerTalk, Nov 4). Helps Jaguars.",
+        "The Ravens haven't topped 13 points in three straight games and rank 30th in yards per play over that span (Covers, Nov 5). Helps Jaguars.",
+        "The Ravens' defense allowed 71 points over its last two games, and opponents have scored TDs on 83.3% of red-zone trips over the last three (Covers, Nov 5). Helps Jaguars.",
+        "Jacksonville beat the Colts 42-7 last week (28-0 at half, a 92-yard pick-six). Tuten and Rodriguez ran for 145 yards and 2 TDs on 22 carries, though Lawrence completed only 10 passes (WagerTalk, Nov 4). Helps Jaguars; the offense leans on the run game.",
+        "Jaguars are 12-3-1 ATS in their last 16 games as a favorite and cover by 8.6 a game on average (Covers, Nov 5). Spread-specific; helps Jaguars (priced).",
+        "Ravens are 0-7 ATS in their last seven home games and 0-4-1 ATS as a home underdog in their last five, losing by 16 a game on average. They're 1-6 ATS since the opener (Covers Nov 5; WagerTalk Nov 4). Spread-specific; helps Jaguars (priced).",
+        "Line: opened Jaguars -9.5, dipped to -8.5, then went to -10 (briefly -10.5). Close is Ravens +9.5. The total fell from 42.5 to 39.5 (WagerTalk, Nov 4; slate close). Spread-specific; neutral, and the close is treated as fair.",
+        "Splits: about 83-86% of the money and 78-79% of tickets on Jacksonville (WagerTalk, Nov 4). Spread-specific; heavily public on the Jaguars, no clear sharp signal.",
+        "Previews split: Covers (Osborne) takes Jaguars -9.5 and expects a blowout. GoldSheet takes Ravens +10 and projects 23-16, citing Henry, a quality defense and home field. Preview picks are priced and not used.",
+        "Weather is upper 60s with possible light showers and light wind, not a factor (Covers, Nov 5). Neutral."
+      ],
+      "reasoning": "Every concrete fact points to Jacksonville: a hurt undrafted rookie QB on a short week, no healthy backup, an offense stuck at 13 or fewer and a leaky defense. But all of it was public before the line moved to 10, and the market has already gone 9.5 to 10 on heavy Jaguars money. The projection sits on the number, so it's a pass. The forced side is the Jaguars, since Fagnano's ankle and Huntley being doubtful leave Baltimore's offense almost nothing. A healthy Huntley would have pushed this toward Baltimore.",
+      "forcedSide": "Jacksonville Jaguars",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
