@@ -86,6 +86,14 @@ Do **not** open anything else in the repository (especially `data/`, `site/`,
   use the fetch guard. Search only when a built URL fails, and never search for
   a team's back-to-back or next game (the next game's preview recaps this one).
 
+- **Week 10 rule: avoid WebSearch entirely if you can.** Every Week 9 leak
+  came from WebSearch summaries; fetched pages behind the guard never leaked.
+  Find preview URLs without searching: build Covers URLs (above), or fetch a
+  site's sitemap (e.g. `https://www.predictem.com/post-sitemap1.xml`, and the
+  numbered ones after it) with a prompt that returns only matching URLs, then
+  fetch each dated preview with the guard. Use WebSearch only as a last resort,
+  and then treat its summary as possibly showing the result.
+
 ## The method (Third Opinion)
 
 The question is not "who wins?" but **"who covers the spread?"** For every game,

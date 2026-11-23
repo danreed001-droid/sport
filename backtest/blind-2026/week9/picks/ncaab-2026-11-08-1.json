@@ -1,0 +1,98 @@
+{
+  "sport": "ncaab",
+  "date": "2026-11-08",
+  "chunk": "ncaab-2026-11-08-1",
+  "games": [
+    {
+      "away": "Iona Gaels",
+      "home": "St. John's Red Storm",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": null,
+      "research": [
+        "Slate line St. John's -29.5; homeSpreadClose -26.5 (open -24.5); total 150.5 open and close (slate file).",
+        "St. John's is ranked No. 13 in the slate.",
+        "Fewer than 10 solid pre-game findings: my first search's summary leaked the result (see contaminationNote) before any research or lean."
+      ],
+      "reasoning": "The first search summary quoted later St. John's previews describing this game's result before any lean. Locked as a pass with no forced side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary of predictem.com pages quoted later previews (Colgate 11/11, Syracuse) saying 'the 104-65 beatdown of Iona got all the headlines' and that Tounde Yessoufou scored 23 on Iona, so St. John's won by 39 and covered -29.5. Seen before any research or lean."
+    },
+    {
+      "away": "Arkansas Razorbacks",
+      "home": "Virginia Cavaliers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.5,
+      "research": [
+        "Neutral site: Capital Showcase at Capital One Arena, Washington, D.C.; Virginia is only the designated home team (predictem.com, 2026-11-08). No real home court for either side.",
+        "Slate line Virginia -3.5; homeSpreadClose -4.5 (open -2.5): the market moved two points toward Virginia (slate file; Predictem also cites a 2.5 open). Treated as fair, not faded or followed.",
+        "Total moved from 158.5 to 162.5 (slate file): the market expects a faster game, which suits Arkansas's transition style.",
+        "KenPom has Virginia 16th and Arkansas 18th, about one point per 100 possessions apart, with Arkansas's win probability at 41% (predictem.com, 2026-11-08). Ratings imply roughly Virginia by 2-3 on a neutral floor; slight Arkansas at +3.5. Ratings are priced: tiebreaker only.",
+        "Arkansas beat Arkansas-Pine Bluff 106-61 in its opener, forcing 24 turnovers and scoring 45 fast-break points (predictem.com, 2026-11-08). Helps Arkansas.",
+        "[angle] Virginia committed 28 combined turnovers in its first two games against Drexel and Northeastern; point guard Chance Mallory had six in the opener (predictem.com, 2026-11-08). The writer calls turnovers the deciding factor against Arkansas's transition game, which was second nationally in fast-break points last season. Helps Arkansas.",
+        "[angle] Arkansas has ten newcomers, eight of them freshmen, and the youngest power-conference roster, with Billy Richmond the only returning rotation player; this is its first game against a top-20 opponent in a big arena (predictem.com, 2026-11-03 and 2026-11-08). Helps Virginia.",
+        "Virginia returns four key players from a 30-win team: preseason ACC Player of the Year Thijs De Ridder, Mallory, Sam Lewis (career 42.1% from three) and Johann Grunloh (predictem.com, 2026-11-08). Helps Virginia: continuity matters most in week one.",
+        "[angle] De Ridder is expected to have a size edge inside over Arkansas's Miikka Muurinen (predictem.com, 2026-11-08). Helps Virginia.",
+        "[angle] Arkansas freshman point guard Jordan Smith Jr. is a D.C. native, playing a homecoming game (predictem.com, 2026-11-08). Slight Arkansas (crowd and motivation), minor.",
+        "Arkansas shot 56.1% from the line in two exhibitions (predictem.com, 2026-11-03); in a game projected within a few points, late free throws matter. Helps Virginia.",
+        "Virginia's offense ranks 23rd in KenPom (predictem.com, 2026-11-08). Helps Virginia.",
+        "Predictem's writer took Arkansas +3.5 with a projected 81-79 Virginia win (predictem.com, 2026-11-08). Preview picks are priced; tiebreaker at most."
+      ],
+      "reasoning": "Two top-20 teams about a point apart in efficiency on a neutral floor: I project Virginia by about 2.5, one point off the 3.5 and well inside the pass band. The forced side is Arkansas, getting more than the rating gap with a transition attack that fits Virginia's early turnover problems; Virginia's experience edge against an all-new roster is the strongest case the other way.",
+      "forcedSide": "Arkansas Razorbacks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Houston Cougars",
+      "home": "California Golden Bears",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -18,
+      "research": [
+        "Neutral site: Lake Tahoe Classic at Tahoe Blue Event Center, Stateline, Nevada; Cal is only the designated home team (predictem.com, 2026-11-08). The slate has no neutral flag, but no home edge applies.",
+        "Slate line Houston -19.5 equals homeSpreadClose (Cal +19.5); total dropped from 145.5 to 142.5 (slate file). A falling total with a steady spread means a slower, lower-scoring game is expected, which makes a 20-point margin harder. Slight Cal.",
+        "KenPom ranks Houston 3rd overall with the No. 1 defense and Cal 101st; the writer's neutral-floor model has Houston by about 17 (predictem.com, 2026-11-08). Slight Cal; ratings are priced, tiebreaker only.",
+        "[angle] Houston's tempo ranks 318th nationally, among the slowest in Division I; fewer possessions cap the margin (predictem.com, 2026-11-08). Helps Cal.",
+        "Houston beat La Salle 94-55 in its opener, holding it to 15-of-60 shooting (25%) and grabbing 47 rebounds (predictem.com, 2026-11-08). Helps Houston.",
+        "Dedan Thomas Jr. scored 16 in his Houston debut and Delrecco Gillespie 13 (predictem.com, 2026-11-08). Helps Houston: new pieces fitting in quickly.",
+        "Last season Houston allowed 62.3 ppg and committed a nation-low 7.6 turnovers a game (predictem.com, 2026-11-08). Helps Houston: no giveaways means no cheap Cal runs.",
+        "Cal is 2-0 against Adams State (Division II) and Radford, averaging 99.5 points and making 28 of 58 threes (48.3%) (predictem.com, 2026-11-08). Those percentages came against weak defenses and are unlikely to hold against KenPom's top defense: helps Houston.",
+        "[angle] Cal's offense runs through two scorers, Nojus Indrusaitis (25 ppg, six threes in a 30-point game vs Radford) and Michael Cooper (20 ppg) (predictem.com, 2026-11-08). A big underdog covers only if it can score; two hot guards give Cal a path, but cold nights from either end it early. Mixed.",
+        "[angle] Houston's offensive rebounding against a Cal team that hasn't faced high-major size is the writer's main path to a 20+ margin (predictem.com, 2026-11-08). Helps Houston.",
+        "Predictem's writer leaned Cal +19.5 (not a strong play), projecting Houston 77-60 (predictem.com, 2026-11-08). Priced; tiebreaker at most."
+      ],
+      "reasoning": "Ratings put Houston around 17-20 on a neutral floor and the market at 19.5; with Houston's very slow pace and a total falling to 142.5, I project about 18, 1.5 points short of the number: a pass. The forced side is Cal on pace capping the margin; the case against it is that Cal's 48% three-point shooting came against Division II and Radford defenses.",
+      "forcedSide": "California Golden Bears",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "USC Trojans",
+      "home": "Wichita State Shockers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -6,
+      "research": [
+        "Neutral site: Lake Tahoe Classic at Tahoe Blue Event Center, Stateline, Nevada; Wichita State is only the designated home team (predictem.com, 2026-11-08). No home edge applies.",
+        "Slate line USC -6.5; homeSpreadClose +7.5 (USC -7.5): the market moved a point toward USC by tip (slate file). Treated as fair.",
+        "Total 156.5 -> 155.5 (slate file).",
+        "KenPom ranks USC 34th and Wichita State 81st (predictem.com, 2026-11-08). On a neutral floor that implies roughly USC by 5-6: slight Wichita State at +6.5. Priced; tiebreaker only.",
+        "[angle] USC starter Jacob Cofie played only nine minutes in the opener with back spasms, and his coach said he was worried about him for this game (predictem.com, 2026-11-08). Helps Wichita State if he sits or is limited; the line moving toward USC suggests the market did not expect a big absence. Unresolved status.",
+        "[angle] Wichita State expects Dillon Battie back, but T.J. Williams is less certain; Paul Mills said the team needs both (predictem.com, 2026-11-08). Helps USC if Williams sits. Unresolved status.",
+        "USC beat Milwaukee scoring 95, forcing 17 turnovers with 12 steals; Adonis Ratliff had 25 with five threes, Alijah Arenas 21 on 9-of-14, Darius Ratliff five blocks, Rodney Rice nine assists in his first game in almost a year (predictem.com, 2026-11-08). Helps USC.",
+        "USC has six players 6-10 or taller (predictem.com, 2026-11-08). Helps USC on the glass and at the rim.",
+        "Wichita State scored 79 against CSUN with only three turnovers, tied for second-fewest in program history (predictem.com, 2026-11-08). Ball security blunts USC's turnover-forcing defense: helps Wichita State.",
+        "Wichita State shot 37.3% from the floor vs CSUN, 18-of-38 at the rim and 0-for-7 from three after halftime (Wichita Eagle via predictem.com, 2026-11-08). Its offense looked shaky against a weak team: helps USC.",
+        "[angle] 7-2 center William Berg anchors Wichita State; the writer expects the Shockers to slow the game and play through the post, limiting USC's live-ball chances (predictem.com, 2026-11-08). Helps Wichita State.",
+        "Predictem's writer played the Under and projected USC 78-71 (7 points, on the number) (predictem.com, 2026-11-08). Neutral on the side."
+      ],
+      "reasoning": "Ratings imply USC by 5-6 on a neutral floor; the line is 6.5 (closing 7.5), and two starters' statuses (Cofie, T.J. Williams) were unresolved at preview time, which is my own pass trigger. I project about USC by 6, inside the band. The forced side is Wichita State on the rating gap and its ball security against USC's pressure; a healthy Cofie and USC's size would beat it.",
+      "forcedSide": "Wichita State Shockers",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
