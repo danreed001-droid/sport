@@ -1,0 +1,52 @@
+{
+  "sport": "nba", "date": "2026-10-24", "chunk": "nba-2026-10-24-2",
+  "games": [
+    {
+      "away": "New Orleans Pelicans", "home": "Denver Nuggets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 11.0,
+      "research": [
+        "Line: Denver -11.5, total 238; Predictem (Oct 24) reports no movement from the open yet. The slate's number matches the market, so there's no number edge (neutral).",
+        "[spread] Betting split per Predictem (Oct 24): ticket count leans Denver, but slightly more money is on New Orleans. That's a mild sharp-side hint toward the Pelicans +11.5.",
+        "[angle] Schedule: New Orleans is on the second night of a back-to-back at altitude after a one-possession loss in Salt Lake City Friday, while Denver had two days off after its opener (Predictem, Oct 24). This helps Denver.",
+        "[angle] Yves Missi left Friday's game with a left knee injury. Coach Jamahl Mosley: 'we're going to get a look at it tomorrow in Denver', so his status was unresolved. If he sits, rookie Derik Queen (29 min Friday) guards Jokic (Predictem, Oct 24). This helps Denver if Missi is out.",
+        "[angle] Denver is thin on the wings: Cam Johnson (ankle), Spencer Jones (hamstrings) and Julian Strawther (knee) are out and Alpha Diallo is questionable with a wrist sprain (Predictem, Oct 24). This helps New Orleans, since it limits Denver's rotation for pulling away.",
+        "Denver's opener at OKC was ugly: 37.8% from the field (its worst since the 2024 opener) and 22 turnovers, with Jokic 5-of-19 and Murray 2-of-11 (Predictem, Oct 24). That's a bounce-back candidate at home, but it's also a sign of rust (neutral).",
+        "[spread] Last season's efficiency per Predictem: Denver had the NBA's best offensive rating but ranked 21st on defense. New Orleans was 25th in defensive rating and 28th in defensive rebounding rate. Denver's offense matched up against a weak Pelicans defense helps Denver.",
+        "Zion Williamson scored 22 and 23 in New Orleans' first two games (Predictem, Oct 24). The Pelicans have a scorer who can keep the margin under 11.5, which helps New Orleans.",
+        "[spread] New Orleans is 0-2, but it lost to Indiana and then by one possession at Utah. Predictem flags that New Orleans 'has kept games close late' and that a backdoor cover is possible. Its margin tendency helps New Orleans.",
+        "Head-to-head: Denver has won five straight home games vs New Orleans and swept last season's three meetings (Predictem, Oct 24). Lessons say H2H is already priced (neutral, tiebreaker at most).",
+        "The Predictem writer picks Denver -11.5 with a 125-109 projection. That's a single pundit and not an edge by itself (neutral)."
+      ],
+      "reasoning": "Contaminated before any lean was formed (see note), so this is a pass. On the pre-game evidence alone it was close to the number: Denver's rest and altitude edge against a Pelicans team on a back-to-back was offset by Denver's missing wings, a slight money lean to New Orleans and the Pelicans' close-game tendency. Missi's unresolved knee was a pass trigger in its own right.",
+      "forcedSide": "New Orleans Pelicans",
+      "contaminated": true,
+      "contaminationNote": "The very first search summary (covers/predictem/sportsgambler) said a sportsgambler H2H list showed '25/10 2026 Pelicans 135-141 Nuggets'. A later Covers preview of the Oct 26 game confirmed Denver won in overtime 141-135. I saw this BEFORE forming any lean. The forced side (Pelicans, the underdog per the lessons' default when the projection sits on the number) was therefore chosen after the leak, and I can't claim it is independent of it."
+    },
+    {
+      "away": "Golden State Warriors", "home": "Phoenix Suns",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 9.0,
+      "research": [
+        "[spread] Line move: Phoenix opened -5.5 and moved to -9.5, and the total dropped from 225.5 to 219.5 (Predictem, Oct 24). The 4-point move came on the Warriors' injury and rest news. Per the lessons, treat -9.5 as fair (neutral).",
+        "Stephen Curry was doubtful ('Probably not, but I'll talk to the staff'). Brandin Podziemski was out (back) and Jimmy Butler, Moses Moody and Kristaps Porzingis were out (Predictem, Oct 24; Covers, Oct 24). This helps Phoenix, but it's already in the move.",
+        "[angle] Golden State is on the second night of a road back-to-back after a Friday home loss to Memphis in which it led by 12 with 3:47 left, scored no field goal after that and committed 19 turnovers (Predictem, Oct 24). That's a physical and emotional hangover spot, which helps Phoenix.",
+        "[spread] Covers (Oct 24): Golden State was 0-3 SU and 0-3 ATS on the road on the second night of a back-to-back last season, and Phoenix was 10-6 ATS with a rest advantage. ATS records are priced per the lessons (tiebreaker only), and they lean Phoenix.",
+        "[spread] Covers (Oct 24): through two games Golden State has been outscored by 28.6 points per 100 possessions with Curry on the bench. Without Curry this is a very weak unit, which helps Phoenix.",
+        "[angle] Phoenix's own opener was a 124-83 home loss to Portland: Portland led 21-0 and Phoenix shot 6-of-32 from three (Predictem, Oct 24). A favorite of 9.5 whose offense managed 83 in its only game helps Golden State (the lessons say a margin needs an offense).",
+        "Phoenix injuries: Mark Williams is out after shoulder surgery, Oso Ighodaro is doubtful (oblique) and Luke Kennard is questionable (knee) (Predictem, Oct 24). The thin frontcourt helps Golden State a little.",
+        "Pace: Golden State is 26th in pace this season and Phoenix was 24th last season (Covers, Oct 24). Both writers took the Under. Fewer possessions shrink margins, which helps the +9.5 dog.",
+        "Turnover matchup: Golden State was 27th in offensive turnover rate last season and Phoenix 3rd in forcing turnovers and 10th in defensive rating (Predictem, Oct 24). This helps Phoenix.",
+        "Devin Booker scored 23 on 53.8% in 29 minutes in the blowout opener and has averaged 25.6+ for eight straight seasons (Covers, Oct 24). Phoenix has a reliable scorer, which helps Phoenix.",
+        "Head-to-head: Phoenix beat Golden State 111-96 in last spring's Play-In, while Golden State won 3 of 4 regular-season meetings last season (Covers/Predictem, Oct 24). The two point in opposite directions and are priced (neutral).",
+        "Both previews project Phoenix by about 13 (Predictem 114-101; Covers takes Suns -9.5 up to -10.5). Pundit projections aren't an edge (neutral)."
+      ],
+      "reasoning": "Pass. The 4-point move on Curry's likely absence and the back-to-back makes -9.5 a fair number per the lessons. Golden State's gutted roster and turnover problems are offset by a Phoenix offense that scored 83 in its only game and a slow pace that suits the dog. Curry's game-time status was also an unresolved pass trigger. Before the leak, my forced side was the Warriors: the underdog, against a favorite with no proven offense.",
+      "forcedSide": "Golden State Warriors",
+      "contaminated": true,
+      "contaminationNote": "The pass and the Warriors forced side were decided from the two Oct 24 previews. Later, while researching the Oct 26 Warriors @ Nuggets game, a Covers Oct 26 preview said Golden State was 0-3, and a Predictem Oct 26 preview said it 'lost to Phoenix by nine' (Booker 43). That means Golden State +9.5 covered by 0.5. I saw this after the decision but before writing the file, and the decision was not changed."
+    }
+  ]
+}

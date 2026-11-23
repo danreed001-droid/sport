@@ -1,0 +1,143 @@
+{
+  "sport": "nba",
+  "date": "2026-10-23",
+  "chunk": "nba-2026-10-23-2",
+  "games": [
+    {
+      "away": "Chicago Bulls",
+      "home": "Milwaukee Bucks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 1.0,
+      "research": [
+        "Market: Covers (Oct 23) lists Bucks -1.5, total 239.5, with moneyline implied odds near 50/50 (Bulls 49%, Bucks 52%). This is a true pick'em, and neither side has an edge.",
+        "Line move: Predictem (Oct 23) calls it a near pick'em at about Bucks -1 and says 'the market has drifted toward Chicago overnight'. That is a small move toward the underdog and helps Bulls +1.5 slightly.",
+        "[angle] Bulls opener: Predictem (Oct 23) reports a 135-92 loss at Toronto, the worst season-opening loss in franchise history, with 27 turnovers and 4-for-36 from three. Rookie Caleb Wilson had 9 turnovers under new coach Tiago Splitter. This helps the Bucks, though one game is a small sample.",
+        "Shooting regression: Predictem (Oct 23) argues Chicago's 11% from three won't repeat, while its turnovers reflect real decision-making problems. The two points pull in opposite directions, so this is neutral to slightly pro-Bucks.",
+        "Bucks opener: Predictem (Oct 23) says Milwaukee lost at Washington after leading for much of the game. Herro had 24 and 9 assists, Jaquez had 22, and Davis had 34 and 12. A competitive loss helps the Bucks.",
+        "[angle] Roster overhaul: Predictem (Oct 23) says Giannis and Portis went to Miami for Herro, Jaquez, Ware, Jakucionis and picks, and Taylor Jenkins is the new coach. Friday is the Fiserv home opener and a homecoming for Herro, a Milwaukee native. This leans Bucks, but it is a narrative factor.",
+        "Rebounding: Covers (Oct 23, Cordell) says Milwaukee allowed 57 rebounds and ranked 23rd in rebound share in its opener without Giannis. Giddey had 13 rebound chances, and last season he averaged 9.3 rebounds against MIL. This favors Bulls on the glass.",
+        "Picks are split. Covers' moneyline lean is Bulls (52%) and its ATS article takes Bucks -1.5. Predictem takes the Bucks moneyline and projects 119-115. There's no consensus.",
+        "Injuries: Predictem (Oct 23) says Chicago's Nic Claxton (hamstring) is out. Giddey (wrist), Collins and Awaka are probable, and Hawkins and Swain are questionable with illness. Milwaukee has nothing listed. This is a slight Bucks edge.",
+        "[angle] Schedule: Predictem (Oct 23) says both teams play again Saturday, so each is on the first night of a back-to-back. This is neutral.",
+        "Assist/turnover: Covers (Oct 23) says both teams lost their openers by double digits and ranked near the bottom in assist-to-turnover ratio. This is neutral."
+      ],
+      "reasoning": "The game is a pick'em, and every factor is a single-game narrative (Chicago's 43-point loss, Herro's homecoming), so there's no edge of 2+ points. I project Bucks by about 1, which doesn't cover -1.5. The overnight drift toward Chicago and the lessons about underdogs tip the forced side to the Bulls. A clear sharp split or a late Giddey scratch would have changed it.",
+      "forcedSide": "Chicago Bulls",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Houston Rockets",
+      "home": "San Antonio Spurs",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 5.0,
+      "research": [
+        "Line move: WagerTalk (Oct 23) says the Spurs opened -7.5 and were bet down 2 points to -5.5. This helps Rockets +5.5 as market information, but the slate is already at the moved number.",
+        "Splits: WagerTalk (Oct 23) shows Houston with 59% of the money and 56% of the tickets on the spread. The move follows the money, so it is not reverse line movement. This helps the Rockets only mildly.",
+        "[angle] Fox status: Predictem and WagerTalk (Oct 23) list De'Aaron Fox (right wrist) as questionable/uncertain and Keldon Johnson (mouth) as questionable. Tobias Harris (calf) and Jayden Quaintance (knee) are out. The 2-point move probably reflects this. It is an unresolved status, so it's a pass trigger.",
+        "Rockets opener: WagerTalk (Oct 23) reports a 128-110 win over Dallas. Durant scored 30, Houston shot 53% and 44% from three, and it won the boards 42-33. This helps the Rockets.",
+        "Regression: Covers (Oct 23, Geoff Clark) says Houston hit 62.3% of its wide-open threes against Dallas, which he calls unsustainable. This helps the Spurs.",
+        "Spurs opener: WagerTalk (Oct 23) reports a 116-104 loss to OKC. San Antonio shot 39% and 27% from three, and Wembanyama went 1-of-13. This helps the Rockets, though one cold night from Wemby is a small sample.",
+        "Bounce-back: Covers (Oct 23) says San Antonio was 44-16 straight up after a loss last season (including playoffs), with a +10.0 margin in those games. This helps the Spurs, but it is team history and is priced.",
+        "[angle] Venue: Covers and Predictem (Oct 23) place the game at the Moody Center in Austin, a Spurs 'home' game away from Frost Bank Center. Covers argues the unfamiliar sightlines affect both teams. This trims home-court value and leans Rockets.",
+        "Defense: Covers (Oct 23) says the Spurs ranked 3rd and the Rockets 6th in defensive rating last season. All four previews (Covers, SBR, Predictem) take the under, and WagerTalk takes the over. That points to a lower-scoring game, which slightly helps the underdog.",
+        "Rockets injuries: WagerTalk (Oct 23) lists Steven Adams (calf) as questionable and Reed Sheppard with a knee issue. Covers notes VanVleet is back after missing all of last season. This is minor for Houston.",
+        "Projections: WagerTalk has Spurs 117-115 and takes Houston +5.5. Predictem has 113-107 and SBR has 116-108, both on Spurs margins of 6-8. The previews average about Spurs by 5.3, right on the number."
+      ],
+      "reasoning": "Previews average Spurs by about 5 against a -5.5 line, so the edge is tiny. Fox's questionable status, which I couldn't confirm before tip, could decide the game, so this is a pass. The forced side is Houston: the 2-point move toward the underdog, the Austin venue and Houston's strong opener. A confirmed Fox absence would have made it a Houston lean, but the line likely already reflected that.",
+      "forcedSide": "Houston Rockets",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "New Orleans Pelicans",
+      "home": "Utah Jazz",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.0,
+      "research": [
+        "Market: The slate has Pelicans -1.5 on the road, and the moneylines are near even (-112/-108). Covers' ATS article (Oct 23) is summarized as listing 'Pelicans +1.5', so sources disagree on which side was favored. That suggests the line flipped or was a pick'em.",
+        "Utah injuries: WagerTalk (Oct 23) and Covers (Oct 23) say Jusuf Nurkic is out and Bradley is questionable, which leaves the Jazz thin at center. This helps the Pelicans.",
+        "Utah defense: Covers (Oct 23) says Utah's defensive struggles carried into its opener against Memphis. This helps the Pelicans.",
+        "Pelicans opener: Covers (Oct 23) says New Orleans narrowly lost to Indiana in its opener. This is a neutral-to-positive sign for the Pelicans.",
+        "Previews: WagerTalk (Oct 23) took the Pelicans and the over 238.5, projecting 125-121 Pelicans. That points to New Orleans.",
+        "Research was cut short because the result leaked in the first search (see contaminationNote). Fewer than 10 solid bullets exist, so this is a pass."
+      ],
+      "reasoning": "I passed because the result leaked before I had written down a lean. The pre-game information I saw (Nurkic out, Utah's opener defense, the WagerTalk and Covers leans) pointed to New Orleans, and that is recorded as the forced side, but the same summary also contained the result.",
+      "forcedSide": "New Orleans Pelicans",
+      "contaminated": true,
+      "contaminationNote": "My first search (allowed_domains included pickswise.com) returned a summary quoting a later Pickswise preview: the Pelicans lost 120-119 in Salt Lake on Oct. 23 and the over cashed. I saw this before I had any lean. Pelicans -1.5 lost, so Utah covered. The forced side (Pelicans) is the side the pre-game previews pointed to, not a post-leak choice. It is the losing side, which I recorded honestly rather than flipping it."
+    },
+    {
+      "away": "Memphis Grizzlies",
+      "home": "Golden State Warriors",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "Line move: Predictem (Oct 23) says the Warriors opened -4.5 and drifted toward -2.5, and Covers' odds page shows about -3.5. That is a move toward the underdog, Memphis. The slate's -4.5 is the opening number, 1-2 points better for Memphis than the market.",
+        "Warriors injuries: Covers (Oct 23) says Golden State is without Jimmy Butler, Moses Moody and Kristaps Porzingis, leaving the rotation depleted. This helps Memphis.",
+        "Warriors opener: Predictem and WagerTalk (Oct 23, from the Clippers-Lakers previews) report a 127-105 loss at the Lakers while short-handed. This helps Memphis.",
+        "Grizzlies opener: Covers (Oct 23) says Memphis opened its 'new era' with a win over Utah. This helps Memphis.",
+        "[angle] Home opener: Predictem's (Oct 23) headline frames this as the Warriors' home opener. That helps Golden State.",
+        "Previews are split. Covers (Geoff Clark) took Golden State -4.5, playable to -6.5. Predictem took Memphis +3 and projected a 117-115 Grizzlies win. Covers' moneyline article leaned Memphis at 43%.",
+        "SBR's (Oct 23) best bet was Curry over 24.5 points, with no side pick.",
+        "Research stopped after the leak (see contaminationNote). Fewer than 10 bullets."
+      ],
+      "reasoning": "I passed because the final score leaked in the same search summary that gave me the first pre-game facts, so no lean existed before the leak. The pre-game evidence (a slate line at the opener vs a market of -2.5 to -3.5, the Warriors' injuries) would have pointed to Memphis, which is also the side the leaked score shows covering, so this game should not count.",
+      "forcedSide": "Memphis Grizzlies",
+      "contaminated": true,
+      "contaminationNote": "My first search (allowed_domains covers.com, wagertalk.com, predictem.com, sportsbookreview.com) returned a summary saying a Covers matchup page lists the final as 111-108 with Memphis covering +4.5. I saw it before forming any lean. The forced side (Memphis) matches the pre-game line move and injury evidence, but it was recorded after seeing the result, so treat it as contaminated."
+    },
+    {
+      "away": "LA Clippers",
+      "home": "Los Angeles Lakers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 9.0,
+      "research": [
+        "Line move: WagerTalk (Oct 23) says the Lakers opened -10.5, dipped to -8.5 and settled at -9.5. The slate's -9.5 equals the settled number, and there's no net direction.",
+        "Splits: WagerTalk (Oct 23) says early money was 100% on the Clippers, but the latest update has 95% of the money and only 55% of the tickets on the Lakers. A money/ticket gap that large suggests sharp/big money on the Lakers at -9.5, which helps the Lakers.",
+        "Clippers injuries: WagerTalk (Oct 23) says Bradley Beal (knee), Brandon Ingram (heel), Max Strus (foot), Jordan Miller and Yanic Konan Niederhauser are out. This helps the Lakers.",
+        "Lakers injuries: WagerTalk (Oct 23) says Collin Sexton is expected back from a calf issue, LaRavia is questionable and Thiero and Carr are out. Predictem says Kessler plays with a finger splint. Mostly healthy, which helps the Lakers.",
+        "Lakers opener: WagerTalk and Predictem (Oct 23) report a 127-105 win over Golden State on 57% shooting. Kessler went 12-for-12 for 26, Doncic had 28 in three quarters and Reaves had 23. Predictem notes the Warriors were short-handed. This helps the Lakers, with a caveat about the opponent.",
+        "Clippers opener: WagerTalk and Predictem (Oct 23) report a 121-96 win over Sacramento without trailing. They held the Kings to 42% and 29% from three. Garland had 30 in 32 minutes, and the bench outscored the Kings 53-34. This helps the Clippers.",
+        "[angle] Clippers turmoil: Predictem (Oct 23) reports the salary-cap circumvention ruling tied to Kawhi Leonard (traded to Toronto), with Ballmer suspended a year, a $30M fine and five future picks lost. Predictem frames it as fuel. This is a narrative factor with an unclear effect.",
+        "[angle] Revenge: Predictem (Oct 23) says Rui Hachimura, a former Laker, now plays for the Clippers and is motivated against his old team. This is a small Clippers factor.",
+        "Pace: Predictem (Oct 23) says the Clippers played at the third-slowest pace in the league last season. Fewer possessions help a +9.5 underdog.",
+        "Previews are split. WagerTalk takes Lakers -9.5 and projects 116-104. Predictem takes Clippers +9.5, calls the line a one-game overreaction and projects 116-108. The average is Lakers by 10, right on the number.",
+        "Head-to-head: Predictem (Oct 23) says the Lakers won 8 of the last 12 meetings. This is priced and counts as a tiebreaker only."
+      ],
+      "reasoning": "The line settled where it opened (about -9.5 after moving between 8.5 and 10.5), and the previews average Lakers by 10, so there's no edge. Late money (95% of the money on 55% of the tickets) on the Lakers argues against fading them, while the underdog lesson and the Clippers' slow pace argue for the dog. That balance makes it a pass. I'd take the Lakers if forced because the lessons say not to fade sharp money. A reverse move to -8.5 or lower would have flipped it to the Clippers.",
+      "forcedSide": "Los Angeles Lakers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Portland Trail Blazers",
+      "home": "Sacramento Kings",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -8.0,
+      "research": [
+        "Line move: WagerTalk (Oct 23) says Portland opened -6.5, moved to -7.5 on 10/22 and to -8.5 on game day. Predictem has -8 to -8.5. The slate's -9.5 is 1+ point worse for Portland than the market, so Kings +9.5 gets an extra point.",
+        "Splits: WagerTalk (Oct 23) shows 100% of the spread money on Portland at every update, with 80-88% of the tickets. Predictem says nearly 9 in 10 tickets are on the Blazers. The move follows public and money together, with no reverse signal.",
+        "[angle] Overreaction risk: Predictem (Oct 23) says the whole move came off Portland's 124-83 rout of Phoenix, in which the Suns trailed 72-39 at half. The writer declines to lay the 8 because of the public weight. One blowout drove a 2-point move, which leans Kings.",
+        "Blazers opener: WagerTalk and Predictem (Oct 23) report 48% shooting, 19 threes, 32 assists, 12 steals and a 56-39 rebounding edge. Lillard had 25 in his Achilles return, Morant had 14 and 8 assists in his debut, and Avdija had 18 and 10. This helps Portland.",
+        "[angle] New pieces: Predictem (Oct 23) says Portland has a rookie head coach (Micah Nori), and Lillard and Morant are still working out how to share the ball. Avdija played through a sore ankle. That adds a little variance and leans Kings.",
+        "Kings opener: WagerTalk and Predictem (Oct 23) report a 121-96 loss to the Clippers without ever leading. Sacramento shot 42% and 8-for-28 from three, missed 12 free throws and had 17 turnovers. LaVine had 28 and Sabonis had 18 rebounds. This helps Portland.",
+        "Kings injuries: Predictem (Oct 23) says Ben Simmons tore his Achilles in practice and is out for the season. Raynaud (knee) and Cardwell (calf) are out, which leaves no size behind Sabonis. This helps Portland.",
+        "Malik Monk: Predictem lists him as probable and WagerTalk as questionable (ankle) after he missed the opener. His return would add scoring for the Kings. This helps the Kings if he plays.",
+        "Blazers injuries: WagerTalk (Oct 23) says Shaedon Sharpe (knee), Chris Youngblood and Branden Carlson are out. That's a slight Kings factor.",
+        "[angle] Home opener: Predictem (Oct 23) frames this as Sacramento's home opener at Golden 1 Center, where the Kings could push the pace and shoot threes if they fall behind. It also cites the Kings' 26th-ranked offense last season. This is mixed.",
+        "Projections: WagerTalk has Portland 119-108 and takes Portland -8.5. Predictem has 117-106 and takes only the under 232.5. Both put Portland by 11."
+      ],
+      "reasoning": "The market settled at Portland -8 to -8.5 on all-public money after a single 41-point opener, and the slate gives the Kings +9.5, a point better than the market. I project Portland by about 8 (market, shaded slightly for the one-game overreaction). That clears the slate's 9.5 by only about 1.5 points, short of the 4-point bar for an unshaded edge. The Kings are the forced side because of the extra point and the underdog lesson. Monk confirmed out, or a move past -9.5, would have removed even that lean.",
+      "forcedSide": "Sacramento Kings",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

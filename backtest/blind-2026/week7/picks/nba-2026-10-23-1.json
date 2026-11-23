@@ -1,0 +1,132 @@
+{
+  "sport": "nba",
+  "date": "2026-10-23",
+  "chunk": "nba-2026-10-23-1",
+  "games": [
+    {
+      "away": "New York Knicks",
+      "home": "Boston Celtics",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.0,
+      "research": [
+        "Both teams are 0-1. New York lost its opener at home to Philadelphia 106-100 on banner night. Brunson shot 6-19 and the Knicks shot 37% (Predictem, Oct 23 preview; Covers, Oct 23). Helps neither side: one game, regression expected.",
+        "Boston blew a 72-50 lead at Detroit and was outscored 71-41 over the last 20 minutes. It took 42 of 88 shots from three (WagerTalk, Oct 23). Mixed: a fragile lead, but Boston was dominant for 28 minutes.",
+        "[angle] Paul George debuted for Boston with 38 points and 7 threes. Jayson Tatum went 6-23 and 0-7 from three in his return from the Achilles injury (Predictem, Oct 23). Jaylen Brown is gone from Boston (Covers, Oct 23). Tatum's rust slightly helps NYK.",
+        "[angle] Mitchell Robinson starts at center for Boston against the team he played eight seasons with, and struggled in his debut (WagerTalk, Oct 23; Predictem, Oct 23). The Knicks know his game: slight NYK edge.",
+        "Injuries are light. Boston is missing only Devin Carter (illness), and New York lists only two-way players (Predictem, Oct 23). Neutral.",
+        "Line movement: opened BOS -2.5 -110 and now -2.5 -115. Only the juice moved, toward Boston (WagerTalk, Oct 23). SBR listed BOS -1.5 at one book. Slight BOS lean in the market.",
+        "Splits: Boston has 84% of spread money and 63% of tickets (WagerTalk, Oct 23). The money is mostly on the favorite, and the number held at 2.5, so there's no clear reverse move. Neutral to slight BOS.",
+        "ATS history: NYK went 3-1 SU and ATS vs Boston last season, holding the Celtics to 103.3 ppg (WagerTalk, Oct 23). The Knicks are 8 of their last 9 ATS on the road vs the Atlantic and went 11-8 ATS as road dogs last season (Covers, Oct 23). Favors NYK, but this is H2H/ATS history (priced).",
+        "Efficiency: through one game, the Knicks rank 25th of 28 in offensive rating (SBR, Oct 23). Favors BOS, but it's a one-game sample.",
+        "[angle] Pace: both teams were bottom-five in pace last season (Predictem, Oct 23). A slow game keeps the margin small, which helps the +2.5 dog slightly.",
+        "Previews are split: Covers and WagerTalk back NYK +2.5 (WagerTalk projects NYK 111-106), while SBR (114-110 BOS) and Predictem (110-107 BOS) lean Boston. That's no consensus edge."
+      ],
+      "reasoning": "The projection is Boston by about 2, right on the 2.5 line. No edge, so pass. The angles (Tatum's rust, Robinson facing his old team) slightly favor the Knicks, and the slow pace favors the dog. New York +2.5 is the forced side, per the underdog lesson. A clear reverse line move toward New York would have made this a lean.",
+      "forcedSide": "New York Knicks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Atlanta Hawks",
+      "home": "Charlotte Hornets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.5,
+      "research": [
+        "Only one search was run on this game before the result leaked, so there is no substantive pre-game research. Fewer than 10 bullets.",
+        "The slate line is ATL -2.5 (-135/+114). No other line information was gathered."
+      ],
+      "reasoning": "Locked as a pass because the result leaked in the first search's summary, before any lean was formed. The forced side is the underdog (Charlotte), set by the standing 'underdogs cover more' lesson, not by any reasoning about this game.",
+      "forcedSide": "Charlotte Hornets",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch (allowed_domains limited to betting sites) returned a summary saying Atlanta beat Charlotte 128-81 on October 24, presumably this game in UTC. I saw it before doing any research or forming a lean. Pick locked as a pass. The forced side was set mechanically to the underdog, though it is necessarily informed by having seen the result."
+    },
+    {
+      "away": "Dallas Mavericks",
+      "home": "Indiana Pacers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.5,
+      "research": [
+        "Line movement: Covers' preview (updated 11:21 AM ET Oct 23) had IND -5.5 with IND 67% on the moneyline. Pickswise listed DAL +6.5 (-113). SportsGambler's pick was IND -6.5, and its odds table (updated 3:40 PM Oct 23) showed IND -7.5 (-104) with ML -263, matching this slate. The market climbed about 2 points toward Indiana during the day. Lessons say treat the moved number as fair.",
+        "Dallas injuries: Santi Aldama and Dereck Lively II are out, leaving the frontcourt thin. Kyrie Irving is still ramping up from his ACL injury and played only 24 minutes in the opener (Covers, Oct 23). Helps IND, but the move likely already priced it.",
+        "[angle] Haliburton plays his first home game since the Achilles tear he suffered in the Finals. He had 23 points and 12 assists in 34 minutes in the opener (Covers, Oct 23). Possible emotional boost for IND.",
+        "The Pacers beat New Orleans narrowly in their opener, scoring 123 on 52.2% shooting but going 9-30 from three. Ivica Zubac had 15 rebounds (Covers, Oct 23). Helps IND: there's room for the shooting to improve.",
+        "Dallas allowed Houston 128 points on 53.4% shooting and 16-36 from three. Cooper Flagg scored 32 with 13 free-throw attempts (Covers, Oct 23). Favors IND on defense, but Flagg's scoring keeps DAL in it.",
+        "[angle] Zubac and Siakam against a Dallas frontcourt without Lively and Aldama, with Daniel Gafford limited to 22 minutes in the opener, is the matchup the Covers analyst picks IND -5.5 on (Covers, Oct 23). Helps IND.",
+        "Dallas had the eighth-worst road point differential since last season (-7.8/game) and a bottom-five defense (Covers, Oct 23). Indiana is 67-37 SU at home with Haliburton since 2022-23, +4.9/game. Both favor IND, both priced.",
+        "SportsGambler notes DAL failed to cover +6.5 in 4 of its last 5 road games (SportsGambler, Oct 22-23). This is last-season ATS form (priced). Helps IND.",
+        "The total is high (237.5-242.5), and DAL-IND went over in 4 of the last 5 meetings (Covers). A high-possession game gives more variance, which helps a 7.5 dog slightly.",
+        "Covers' ATS split display showed 53% on DAL and 47% on IND while the line moved toward IND. That's mild reverse movement toward the favorite (the lessons say this hasn't held). Neutral.",
+        "[angle] Kyrie's 24-minute cap could loosen game to game. If he plays more, Dallas's backcourt creation improves, which helps DAL against a big number."
+      ],
+      "reasoning": "Indiana should win by about 7-8, and the slate's 7.5 sits at the top of the day's range, after a 2-point move toward Indiana that probably reflects Dallas's frontcourt injuries and Kyrie's minutes limit. With no edge left at 7.5, pass. Indiana is the forced side because the moved side and the frontcourt mismatch point the same way. Getting 5.5 would have made Indiana a lean.",
+      "forcedSide": "Indiana Pacers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Minnesota Timberwolves",
+      "home": "Orlando Magic",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 1.0,
+      "research": [
+        "Line: SportsGambler (published 10 PM Oct 22) listed ORL -1.5 (-105), MIN +1.5 (-115), ML MIN -102 / ORL -116, total 234.5. That matches the slate. No meaningful move found.",
+        "[angle] Minnesota's new-look lineup per SportsGambler: LaMelo Ball, Jaden McDaniels, Anthony Edwards, Jonathan Kuminga, Rudy Gobert. A reshaped roster still building chemistry in week one adds variance, slight ORL.",
+        "Orlando's lineup per SportsGambler: Desmond Bane, Jalen Suggs, Paolo Banchero, Franz Wagner, Wendell Carter Jr. Its core is continuous from last season, slight ORL.",
+        "Neither SportsGambler injury table lists anyone, so no injury edge was found. Neutral.",
+        "SportsGambler's best bet is Under 236.5, with a same-game parlay that includes Magic -1.5 and a projected 116-114 Orlando score. Lean ORL, but it's a pundit projection (priced).",
+        "The Magic won the last two head-to-head meetings (SportsGambler). H2H history is priced. Slight ORL.",
+        "Covers' prop page projects Kuminga at 15.0 points (over 12.5) and Suggs over 12.5. Context only.",
+        "[angle] SportsGambler's form tables (12-5 MIN, 7-9 ORL) appear to be live-updated later-season records, not pre-game numbers, so they weren't used.",
+        "No opening line, betting splits or opener box scores were found for either team. Fewer than 10 solid, independent bullets, so confidence is reduced.",
+        "Home court in a near pick'em: Orlando -1.5 at roughly even juice implies a neutral-court rating near even. Neutral."
+      ],
+      "reasoning": "This is a coin flip at -1.5 with no line move, no injury edge and thin research, so pass. The forced side is Minnesota +1.5 as the underdog (the standing lesson). Orlando's lineup continuity against Minnesota's reshuffled roster is the one angle the other way. A late injury to Banchero or Wagner would have tipped it.",
+      "forcedSide": "Minnesota Timberwolves",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Toronto Raptors",
+      "home": "Washington Wizards",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -7.5,
+      "research": [
+        "Line movement: Covers' preview had TOR -7.5 (would play to -9.5). Covers' odds page later showed TOR -8.5 -110, ML -325 / +275, matching the slate's -8.5. The move toward Toronto is priced.",
+        "Washington is without No. 1 overall pick AJ Dybantsa (ankle), out for the second straight game (Covers, Oct 23). Helps TOR, likely part of the move.",
+        "[angle] Washington remade its roster with Anthony Davis and Trae Young (Covers, Oct 23). A big underdog needs to be able to score, and Trae plus AD gives it the scoring to stay within 8.5. Helps WAS.",
+        "Washington beat Milwaukee by 12 in its opener, its first opening-night win since 2022, but allowed 116 to a team projected for about 25 wins (Covers, Oct 23). Mixed.",
+        "[angle] Toronto beat Chicago by 43, but the Bulls were shorthanded and dealing with an illness (Covers, Oct 23). The blowout probably overstates Toronto and could have inflated the line. Helps WAS.",
+        "Kawhi Leonard (with Toronto) is still working into game shape: 23 points on 5-17 in the opener (Covers, Oct 23). Slight WAS.",
+        "Toronto lost the rebounding battle 57-51 even to Chicago, and Davis has 10+ rebounds in five of his last six games vs Toronto (Covers, Oct 23). The board matchup helps WAS.",
+        "Washington was 1-7 SU and 2-6 ATS after double-digit wins in 2025-26 (Covers). Last-season ATS situational data with a different roster (priced). Slight TOR.",
+        "Toronto was 5-2 SU as a road favorite of 7.5+ in 2025-26, and 11-5-1 ATS in the last 17 meetings with WAS (Covers). H2H and ATS history are priced. Slight TOR.",
+        "Covers' Chris Walder picks TOR -7.5, citing Toronto's length and defense against a Washington roster in transition (Covers, Oct 23). Pundit pick, priced.",
+        "The total is 236.5, a high-possession game. More possessions add variance, slightly helping the dog's backdoor cover chances."
+      ],
+      "reasoning": "Toronto by about 7-8 against an 8.5 line: the line moved a point toward Toronto after its 43-point opener against a sick Bulls team, but the edge is under 2 points, so pass. Washington is the forced side because Trae Young and Anthony Davis give a big underdog the offense to cover, and Toronto's opener looks inflated. Confirmed news that Davis or Trae would sit would have flipped it to Toronto.",
+      "forcedSide": "Washington Wizards",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Detroit Pistons",
+      "home": "Miami Heat",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -1.5,
+      "research": [
+        "Only one search was run on this game before the result leaked, so there is no substantive pre-game research. Fewer than 10 bullets.",
+        "Search snippets indicated pre-game previews (Covers, WagerTalk, Predictem) leaned Detroit around -1.5, with the total around 235.5-236.5."
+      ],
+      "reasoning": "Locked as a pass because the first search's summary stated the final score before any lean was formed. The forced side is the underdog (Miami), set by the standing 'underdogs cover more' lesson, not by any reasoning about this game.",
+      "forcedSide": "Miami Heat",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch (allowed_domains wagertalk/sportsbookreview/predictem/covers) returned a summary stating Detroit won 128-111, citing the Covers matchup page. I saw it before any research or lean. Pick locked as a pass. The forced side was set mechanically to the underdog (Miami) and is contrary to the leaked result, but it is still necessarily informed by the leak."
+    }
+  ]
+}
