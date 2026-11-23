@@ -1,0 +1,76 @@
+{
+  "sport": "nba", "date": "2026-10-29", "chunk": "nba-2026-10-29-1",
+  "games": [
+    {
+      "away": "Cleveland Cavaliers", "home": "Atlanta Hawks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -1.0,
+      "research": [
+        "Cleveland is 3-1 on a three-game win streak (121-111 vs Washington Oct 28, 127-125 vs Minnesota, 125-121 vs Brooklyn); Atlanta is 2-3 on a three-game skid (129-117 loss to Miami Oct 28, two losses at Houston) (WagerTalk, Oct 29 2026) - helps Cleveland.",
+        "[angle] Both teams are on the second night of a back-to-back, but only Cleveland had to travel after last night's game (Predictem, Oct 29 2026) - helps Atlanta.",
+        "Atlanta has been outrebounded by about 10 a game during the skid (52-35 at Houston, 52-40 vs Miami) and hasn't outrebounded an opponent since opening night; Miami scored 70 in the paint (Predictem, Oct 29 2026) - helps Cleveland's Allen/Mobley frontcourt (Cleveland +15 on the boards for the season).",
+        "[angle] Atlanta's center depth is thin (Okongwu, Landale); Mouhamed Gueye (foot) out and Henri Veesaar (knee) out for the season (WagerTalk/Predictem, Oct 29 2026) - helps Cleveland.",
+        "Excluding a 47-point win over Charlotte, Atlanta has been outscored by about 5 per 100 possessions and its home defense allows about 117.5 per 100; over the last three games Cleveland is ~116 per 100 vs Atlanta ~107 (Predictem, Oct 29 2026) - helps Cleveland.",
+        "Atlanta forces 20+ turnovers a game and Dyson Daniels averages 3.4 steals; Cleveland was sloppy with the ball early and looked rough in its only road game (Predictem, Oct 29 2026) - helps Atlanta.",
+        "[angle] Neither team had filed an injury report at writing; rest news on James Harden and Donovan Mitchell (24.8 ppg) on the back-to-back was flagged as the thing to check (Predictem, Oct 29 2026) - unresolved, pass trigger.",
+        "Nickeil Alexander-Walker averages 19.6 ppg on 41.9% from three; Jalen Johnson 9.6 rpg / 8.8 apg (WagerTalk/Predictem, Oct 29 2026) - Atlanta's upside if threes fall, helps Atlanta.",
+        "Line: slate Atlanta -1; DraftKings opened and closed Atlanta -1.5 (slate file); WagerTalk describes the spread flipping several times, including Cleveland as an opening favorite in one table - essentially a pick'em with no clear direction.",
+        "Total opened 239.5 and closed 237.5 (slate file); WagerTalk says nearly all total money was on the under - no side signal.",
+        "Both previews (WagerTalk, Predictem) favored Cleveland on the moneyline/+1.5 - preview picks are not an edge per LESSONS."
+      ],
+      "reasoning": "A near pick'em with both teams on a back-to-back; Cleveland's rebounding edge and Atlanta's skid point to the Cavs, but Cleveland traveled and Mitchell/Harden rest status was unresolved. Projection Cleveland by 1 is within 2 points of the line, so pass; forced side Cleveland on the glass and efficiency gap. A Mitchell or Harden rest day would have flipped it.",
+      "forcedSide": "Cleveland Cavaliers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Sacramento Kings", "home": "New Orleans Pelicans",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.0,
+      "research": [
+        "Sacramento is 0-4, losing by almost 18 a game, the league's worst margin (losses to the Clippers, Spurs 130-103 on Oct 27, Grizzlies, Portland) (Predictem/WagerTalk, Oct 29 2026) - helps New Orleans.",
+        "New Orleans is also winless, but its first three losses came by a combined 10 points, including a blown 23-point lead and an OT loss at Denver (Predictem, Oct 29 2026) - helps New Orleans.",
+        "[angle] New Orleans is on the second night of a back-to-back, its third game in six nights, after a 104-91 loss to Denver Oct 28 in which it shot 7-of-30 from three with 19 turnovers (Predictem/WagerTalk, Oct 29 2026) - helps Sacramento.",
+        "[angle] Jordan Poole left Wednesday's game with a left ankle injury and was questionable; Yves Missi (knee) out, so DeAndre Jordan and rookie Derik Queen (9.3 rpg) get frontcourt minutes (Predictem/WagerTalk, Oct 29 2026) - unresolved, pass trigger; helps Sacramento if Poole sits.",
+        "Kings are without Keegan Murray (ankle), Maxime Raynaud (knee) and Ben Simmons (Achilles); Dylan Cardwell (calf) also out per Predictem (Oct 29 2026) - helps New Orleans.",
+        "Sacramento's defense allows 125.5 ppg and ranks 28th in eFG% allowed (.579); New Orleans scores 124.7 ppg on 48% and gets to the line often (WagerTalk/Predictem, Oct 29 2026) - helps New Orleans.",
+        "[angle] Sacramento is on a four-game road trip, the Spurs game two nights earlier (Predictem, Oct 29 2026) - mild fatigue/travel, helps New Orleans.",
+        "Zach LaVine averages 27.3 ppg on 52.2% (37 vs Memphis) and Domantas Sabonis 16.5 rpg / 7.3 apg; Zion Williamson 21.8 ppg (25 on 10-of-14 Wednesday) (WagerTalk/Predictem, Oct 29 2026) - Kings can score some, helps Sacramento hold a backdoor.",
+        "Both teams are among the league's worst three-point shooters (NOP 29% on the smallest three share; SAC 30%) (Predictem, Oct 29 2026) - lower variance from deep, no clear side.",
+        "Line: slate New Orleans -6; DraftKings opened -5.5 and closed -6.5 (slate file); WagerTalk saw -5.5 hold with only juice changes on the morning - a small move toward New Orleans, slate half a point better than close on New Orleans' side.",
+        "Total opened 237.5 and closed 234.5 (slate file); under money on totals per WagerTalk - no side signal.",
+        "Both previews backed New Orleans -5.5 (projected 119-111 and 118-112) - preview picks are not an edge per LESSONS."
+      ],
+      "reasoning": "Sacramento's -18 average margin and injuries favor the Pelicans, but New Orleans is on a back-to-back (third in six nights) and Poole's ankle status was unresolved, and the line already moved a point toward New Orleans. Projection Pelicans by 7 is only 1 point past the -6, so pass; forced side New Orleans on the margin gap. Poole confirmed out would have made it a clearer pass toward Sacramento.",
+      "forcedSide": "New Orleans Pelicans",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Memphis Grizzlies", "home": "Portland Trail Blazers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 5.5,
+      "research": [
+        "Memphis is 4-0 SU and 4-0 ATS (beat Utah 110-105 Oct 26 and 123-103, Sacramento 123-112, Golden State 111-108), scoring 116.8 and allowing 107.0 (WagerTalk, Oct 29 2026) - helps Memphis, though three of four wins came vs weak Utah/Sacramento.",
+        "Portland is 3-0 SU (won 136-129 at the Lakers Oct 27, beat Sacramento 128-120 and Phoenix 124-83), scoring 129.3 on 51% shooting and allowing 110.7 (WagerTalk, Oct 29 2026) - helps Portland.",
+        "[angle] Ja Morant, now with Portland (6.3 apg), faces his former team Memphis (WagerTalk roster/stats, Oct 29 2026) - narrative only, slight Portland motivation.",
+        "[angle] Ty Jerome is carrying Memphis at 29.8 ppg and 6.5 apg on 50.6% shooting, with rookie Cameron Boozer at 10.5 rpg (WagerTalk, Oct 29 2026) - a hot start likely to cool; helps Portland.",
+        "Portland: Shaedon Sharpe out after knee surgery; Chris Youngblood ankle (WagerTalk, Oct 29 2026) - Sharpe absence priced, minor.",
+        "Memphis: no significant injury designations (WagerTalk, Oct 29 2026) - helps Memphis.",
+        "[angle] Rest: Memphis last played Oct 26 (two days off); Portland played Oct 27 at the Lakers and returned home (one day off) (WagerTalk results, Oct 29 2026) - slight rest edge to Memphis.",
+        "Deni Avdija averages 22.3 ppg and Donovan Clingan 9.3 rpg; Portland averages 30.7 assists (WagerTalk, Oct 29 2026) - helps Portland's offense vs a Memphis team allowing 107.",
+        "Line: slate Portland -7.5; DraftKings opened and closed -7.5 (slate file), WagerTalk lists an opening -6.5 moved to -7.5 - no move on the DraftKings numbers; any move was toward the favorite.",
+        "Betting splits: public spread money leaned Memphis while the line held or rose toward Portland (WagerTalk, Oct 29 2026) - reverse movement toward a favorite, which LESSONS says not to follow (1-7).",
+        "Total opened 232.5 and closed 233.5 (slate file); over money per WagerTalk - no side signal.",
+        "WagerTalk's best bet was Memphis +7.5 with a 115-112 projection - preview pick, not an edge."
+      ],
+      "reasoning": "Two unbeaten teams, early season; Portland's offense is the better unit and Memphis's 4-0 came mostly against Utah and Sacramento, but 7.5 is a big number with Memphis rested and healthy. Projection Portland by 5.5 is 2 points short of the line, so pass; forced side Memphis on rest and the points, not on the reverse-movement signal. A confirmed Portland injury or rest change would have mattered most.",
+      "forcedSide": "Memphis Grizzlies",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

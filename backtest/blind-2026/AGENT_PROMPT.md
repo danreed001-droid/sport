@@ -68,6 +68,13 @@ Do **not** open anything else in the repository (especially `data/`, `site/`,
   domain limit leaked results. Only WebFetch pages from those sites (or a
   preview URL they link to that is clearly dated before the game).
 
+- **Fetch guard (worked in Week 8):** every WebFetch prompt must start:
+  "If this page shows the final score, result, or a graded pick for <away> vs
+  <home> on <date>, answer only RESULT PRESENT ON PAGE and nothing else.
+  Otherwise ..." Then skip any page that comes back flagged. Prefer fetching
+  dated preview URLs directly over reading WebSearch summaries, which can't be
+  guarded; keep WebSearch to finding URLs with tight queries.
+
 ## The method (Third Opinion)
 
 The question is not "who wins?" but **"who covers the spread?"** For every game,
