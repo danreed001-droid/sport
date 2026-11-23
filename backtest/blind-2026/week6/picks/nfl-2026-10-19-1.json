@@ -1,0 +1,33 @@
+{
+  "sport": "nfl",
+  "date": "2026-10-19",
+  "chunk": "nfl-2026-10-19-1",
+  "games": [
+    {
+      "away": "Washington Commanders",
+      "home": "San Francisco 49ers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.0,
+      "research": [
+        "Line: 49ers -7.5 across books on game day (DraftKings -7.5 -110, bet365 -7.5 -109/-111). Predictem says it opened -5.5, while Covers lists -7.5 at the open and notes the spread ticking upward. A move of about 2 points at most toward SF. (Predictem, Oct 19; Covers Week 6 odds; Pickswise, Oct 19). Spread-specific, slight SF.",
+        "Reverse line movement: at Circa the line went from SF -8 to -7.5 even though San Francisco took most of the bets, and VSiN read it as sharp money on Washington. A Circa split tracker had 80% of the money on SF on Sunday evening. (VSiN, Zachary Cohen, Oct 19; VSiN best bets). Spread-specific, helps WAS (the signal toward underdogs has been useful).",
+        "Kalshi: Commanders +7.5 at 51%, SF moneyline 77-78%, so the market saw the spread as a coin flip. Dimers' model gave SF 53.2% to cover -7.5 and projected 29-21. (Covers, Oct 14 and Oct 19; Dimers, Oct 19). Spread-specific, essentially neutral.",
+        "VSiN: favorites of 6+ points were 8-17-4 ATS league-wide this season entering Week 6. (VSiN, Oct 19). Slight WAS, as a tiebreaker only.",
+        "San Francisco is 5-0 and second in EPA per play (0.185). Purdy is PFF's No. 2 QB (88.5), has 13 TD and 2 INT, and the 49ers lead the NFL in EPA per dropback. They have allowed only two sacks, the fewest in the league, and have scored 24+ in every game. (VSiN, Oct 19; Predictem, Oct 19; Pickswise, Oct 19). Helps SF.",
+        "Washington's pass defense is poor: seventh-highest dropback EPA allowed (0.157), 29th vs the pass (255 yds/g, 7.1 Y/A), about 29.8 points allowed per game and 27+ allowed in four straight. (VSiN; Pickswise; Covers, Oct 14). Helps SF.",
+        "[angle] Washington's late-game collapses: the most second-half (95) and fourth-quarter (55) points allowed in the NFL, no fourth-quarter sacks all season, and 31st in second-half play (TeamRankings). The team blew a 27-13 fourth-quarter lead in a 27-27 tie with the Giants. (Predictem; Covers, Oct 14). That cuts against a backdoor cover and helps SF.",
+        "[angle] Jayden Daniels is playing in a brace after a left-elbow dislocation that cost him Weeks 3-4 (Covers called him 'one-armed'), and backup Marcus Mariota was doubtful (knee), so there's no fallback if the elbow is re-injured. Daniels still ran for 109 yards and 2 TDs vs the Giants, but took five sacks. (Predictem; Covers, Oct 14 and Oct 19). Mixed: the rushing helps WAS, the reinjury risk helps SF.",
+        "[angle] Washington's skill players were banged up: LT Laremy Tunsil on IR, RB Jacory Croskey-Merritt not practicing, Ekeler and Rachaad White limited, Stefon Diggs questionable after his first limited practice since Week 4, and McLaurin on veteran rest after failing to handle his Week 5 workload. (Covers, Oct 19; Predictem). Helps SF.",
+        "[angle] San Francisco's receivers were depleted: Deebo Samuel (hamstring) and Demarcus Robinson out, Christian Kirk and Ricky Pearsall on IR, Mike Evans questionable. That leaves Kittle and Jacob Cowing as the main targets. Nick Bosa was listed questionable (calf) by Predictem. (Covers, Oct 19; Pickswise; Predictem). Helps WAS.",
+        "[angle] Travel: Washington opened with two road games plus a London trip and now flies cross-country to Santa Clara for a Monday night game (Covers, Oct 14: 'lived out of a suitcase'). Helps SF.",
+        "Washington is +5 in turnover differential (tied for second in the NFL), a route to keeping the game inside a touchdown. Its own results were mostly close: beat SEA 33-31, tied NYG 27-27, 1-3-1 overall. (Predictem; Pickswise; Sportsgambler Seattle results). Helps WAS.",
+        "Total rose from a 49.5 lookahead to 51.5-52.5 despite injuries on both offenses (Covers, Oct 19). A shootout script raises variance around a 7.5 number. Neutral.",
+        "The 49ers' only ATS loss this season was a 6-point win over Arizona as a 7.5-point favorite, but they have also won tight games vs SEA (32-29) and the Rams. Team ATS records are noise per our lessons, so this is not counted. Neutral."
+      ],
+      "reasoning": "On efficiency the numbers clearly favor San Francisco: a top-2 offense against a bottom-10 pass defense that collapses late, plus a one-armed Daniels with no healthy backup. Models put it at about SF by 8. Against that, SF's receiving corps was gutted, and sharp money at Circa pushed the line from -8 to -7.5 against SF-heavy tickets. Shaded halfway to the line, my projection is about SF by 7, inside the 2-point pass band of -7.5. The most surprising [angle] was the sharp move toward a beat-up road dog with the league's worst second-half defense. A clean -6.5 or better would have made it a lean on SF; a 9+ would have made it a lean on Washington.",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

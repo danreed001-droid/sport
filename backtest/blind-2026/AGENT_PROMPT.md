@@ -41,7 +41,9 @@ Do **not** open anything else in the repository (especially `data/`, `site/`,
   wagertalk.com, predictem.com, dimers.com, sportsgambler.com,
   actionnetwork.com, oddsshark.com, pickswise.com) or block
   wikipedia.org / espn.com with `blocked_domains`; Wikipedia season pages and
-  post-game headlines were the main leaks.
+  post-game headlines were the main leaks. Don't include cbssports.com,
+  nbcsports.com or espn.com in injury searches: their result headlines leaked
+  in Weeks 5-6.
 - Stats pages update after every game. Prefer sources dated before the game
   (previews quote the stats). If a page clearly includes this game, don't use
   its numbers.
