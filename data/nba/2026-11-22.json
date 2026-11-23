@@ -1944,9 +1944,9 @@
       "awaySpreadOdds": 103,
       "confidence": "solid",
       "correct": null,
-      "gameTotal": 210.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotal": 211.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -106,
       "home": "Golden State Warriors",
       "homeMoneyline": 312,
       "homeNetRtg": -0.9,
@@ -1970,28 +1970,28 @@
       "lineMove": {
         "spread": [
           8.5,
-          7.5
+          8.5
         ],
         "total": [
           212.5,
-          210.5
+          211.5
         ],
         "ml": {
           "home": [
             299.0,
-            261.0
+            270.0
           ],
           "away": [
             -378.0,
-            -324.0
+            -336.0
           ]
         },
         "public": {
-          "betsHome": 43,
-          "moneyHome": 47,
+          "betsHome": 44,
+          "moneyHome": 45,
           "rlm": null
         },
-        "checked": "2026-11-22T23:35:58+00:00"
+        "checked": "2026-11-23T01:28:40+00:00"
       },
       "netRtgGap": 58.62,
       "pick": "Boston Celtics",
@@ -2001,10 +2001,10 @@
       "skipReason": null,
       "skipped": false,
       "starterOut": {
-        "checked": "2026-11-22T21:50:25+00:00",
+        "checked": "2026-11-23T01:28:40+00:00",
         "line": {
           "open": 8.5,
-          "now": 7.5
+          "now": 8.5
         },
         "away": [
           {
@@ -2173,14 +2173,14 @@
         "Curry (GSW) out, oblique tear - GSW also missing Butler (torn ACL), Moody, B. Williams, and Porzingis has stepped away; Boston on 0 days rest, end of a long road trip, Tatum tagged day-to-day/rest"
       ],
       "statsLine": {
-        "homeSpread": 7.5,
-        "awaySpread": -7.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
-        "homeMoneyline": 261,
-        "awayMoneyline": -324
+        "homeSpread": 8.5,
+        "awaySpread": -8.5,
+        "homeSpreadOdds": -114,
+        "awaySpreadOdds": -106,
+        "homeMoneyline": 270,
+        "awayMoneyline": -336
       },
-      "statsSpread": 7.5,
+      "statsSpread": 8.5,
       "storylines": [
         {
           "weight": 1,
@@ -2189,7 +2189,7 @@
           "name": "Ghost town",
           "team": "Golden State Warriors",
           "says": "fade",
-          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +7.5 underdog.",
+          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +8.5 underdog.",
           "record": "827-743",
           "pct": 52.7,
           "leans": "Boston Celtics",
@@ -2212,7 +2212,7 @@
         }
       ],
       "time": "8:30 PM ET",
-      "totalsLine": 210.5
+      "totalsLine": 211.5
     }
   ]
 }
