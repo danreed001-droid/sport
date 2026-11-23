@@ -33,7 +33,10 @@ Do **not** open anything else in the repository (especially `data/`, `site/`,
   "odds", "picks", "betting", "injury report ahead of". Don't search a player's
   status on its own; get injuries from preview articles. When a result page
   looks like a recap, don't open it. Prefer fetching pre-game preview/odds
-  articles directly over reading search summaries.
+  articles directly over reading search summaries. What worked in Week 5:
+  narrow preview queries limited to one site (e.g. nbcsports.com, si.com,
+  cbssports.com, covers.com), then WebFetch of the preview article with a
+  prompt that asks for pre-game content only.
 - Stats pages update after every game. Prefer sources dated before the game
   (previews quote the stats). If a page clearly includes this game, don't use
   its numbers.
