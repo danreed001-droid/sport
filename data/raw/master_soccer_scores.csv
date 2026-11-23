@@ -8,8 +8,8 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401882801,2026-11-22,FT,Málaga,0,-,Osasuna,1,-,-,-,12:30 PM
 401882803,2026-11-22,FT,Atlético Madrid,3,-,Getafe,0,-,-,-,3:00 PM
 401933731,2026-11-22,FT,FC Cincinnati,1,-,Nashville SC,0,-,-,-,4:00 PM
-401933730,2026-11-22,Scheduled,Charlotte FC,0,-,Chicago Fire FC,0,-,-,-,6:30 PM
-401933729,2026-11-22,Scheduled,Real Salt Lake,0,-,Vancouver Whitecaps,0,-,-,-,8:30 PM
+401933730,2026-11-22,FT,Charlotte FC,2,-,Chicago Fire FC,1,-,-,-,6:30 PM
+401933729,2026-11-22,50',Real Salt Lake,0,-,Vancouver Whitecaps,1,-,-,-,8:30 PM
 401884733,2026-11-22,FT,Mainz,1,-,FC Augsburg,3,-,-,-,9:30 AM
 401884730,2026-11-22,FT,Hamburg SV,0,-,Werder Bremen,4,-,-,-,11:30 AM
 401875008,2026-11-22,FT,Venezia,0,-,Juventus,4,-,-,-,6:30 AM
@@ -17,8 +17,8 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401874960,2026-11-22,FT,Genoa,2,-,Sassuolo,0,-,-,-,9:00 AM
 401874989,2026-11-22,FT,Frosinone,1,-,AC Milan,5,-,-,-,12:00 PM
 401875001,2026-11-22,FT,Internazionale,4,-,Atalanta,4,-,-,-,2:45 PM
-401877047,2026-11-22,27',Cruz Azul,0,-,Guadalajara,1,-,-,-,6:07 PM
-401877046,2026-11-22,Scheduled,Necaxa,0,-,Querétaro,0,-,-,-,8:10 PM
+401877047,2026-11-22,FT,Cruz Azul,0,-,Guadalajara,1,-,-,-,6:07 PM
+401877046,2026-11-22,80',Necaxa,1,-,Querétaro,2,-,-,-,8:10 PM
 401902857,2026-11-22,FT,Manchester United,2,-,Birmingham City,1,-,-,-,7:00 AM
 401902852,2026-11-22,FT,Tottenham Hotspur,3,-,Manchester City,1,-,-,-,7:00 AM
 401902856,2026-11-22,FT,Aston Villa,1,-,Charlton Athletic,1,-,-,-,9:00 AM
@@ -107,17 +107,17 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401843487,2026-11-22,FT,Sandefjord,2,-,Kristiansund BK,2,-,-,-,11:00 AM
 401843484,2026-11-22,FT,Lillestrom,2,-,Sarpsborg FK,0,-,-,-,1:15 PM
 401933759,2026-11-22,FT,Gimnasia (Mendoza),1,-,Rosario Central,3,-,-,-,2:00 PM
-401933761,2026-11-22,75',Lanús,1,-,River Plate,2,-,-,-,5:00 PM
-401933762,2026-11-22,Scheduled,Huracán,0,-,Instituto (Córdoba),0,-,-,-,8:00 PM
-401933216,2026-11-22,Scheduled,Tristán Suárez,0,-,Gimnasia y Tiro (Salta),0,-,-,-,7:00 PM
+401933761,2026-11-22,FT,Lanús,1,-,River Plate,3,-,-,-,5:00 PM
+401933762,2026-11-22,88',Huracán,1,-,Instituto (Córdoba),2,-,-,-,8:00 PM
+401933216,2026-11-22,FT,Tristán Suárez,0,-,Gimnasia y Tiro (Salta),0,-,-,-,7:00 PM
 401841318,2026-11-22,FT,Remo,2,-,Athletico-PR,4,-,-,-,2:00 PM
 401841324,2026-11-22,FT,Mirassol,0,-,Fluminense,1,-,-,-,4:30 PM
-401841321,2026-11-22,HT,Vasco da Gama,0,-,Red Bull Bragantino,0,-,-,-,5:30 PM
+401841321,2026-11-22,FT,Vasco da Gama,0,-,Red Bull Bragantino,1,-,-,-,5:30 PM
 401912682,2026-11-22,FT,Fortaleza,0,-,Criciúma,1,-,-,-,2:00 PM
 401912708,2026-11-22,FT,Vila Nova,1,-,Atlético Goianiense,1,-,-,-,4:30 PM
 401850697,2026-11-22,FT,Deportes Concepcion,0,-,Huachipato,0,-,-,-,10:00 AM
 401850693,2026-11-22,FT,Universidad Católica,0,-,Colo Colo,3,-,-,-,4:00 PM
-401850698,2026-11-22,6',La Serena,0,-,Deportes Limache,0,-,-,-,6:30 PM
+401850698,2026-11-22,FT,La Serena,2,-,Deportes Limache,1,-,-,-,6:30 PM
 401886136,2026-11-22,FT,Universitario,1,-,Sport Huancayo,4,-,-,-,3:00 PM
 401886120,2026-11-22,FT,Cienciano del Cusco,1,-,Sporting Cristal,4,-,-,-,3:00 PM
 401888645,2026-11-22,FT,Sportivo Trinidense,1,-,Club Olimpia,2,-,-,-,4:00 PM
@@ -128,14 +128,14 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401930990,2026-11-22,FT,Deportivo La Guaira,5,-,Metropolitanos,1,-,-,-,4:00 PM
 401930029,2026-11-22,FT,Bolívar,0,-,Real Potosí,1,-,-,-,2:00 PM
 401930039,2026-11-22,FT,Blooming,0,-,The Strongest,4,-,-,-,4:15 PM
-401930028,2026-11-22,8',Always Ready,0,-,San Antonio Bulo Bulo,0,-,-,-,6:30 PM
+401930028,2026-11-22,FT,Always Ready,3,-,San Antonio Bulo Bulo,0,-,-,-,6:30 PM
 401926724,2026-11-22,FT,CD Choloma,0,-,Platense,0,-,-,-,4:00 PM
-401926722,2026-11-22,21',Club Deportivo Olimpia,0,-,FC Motagua,1,-,-,-,6:15 PM
-401926723,2026-11-22,Scheduled,Olancho FC,0,-,Juticalpa FC,0,-,-,-,8:30 PM
-401876887,2026-11-22,74',Sporting San José,3,-,Inter de San Carlos,2,-,-,-,5:00 PM
+401926722,2026-11-22,FT,Club Deportivo Olimpia,0,-,FC Motagua,2,-,-,-,6:15 PM
+401926723,2026-11-22,63',Olancho FC,1,-,Juticalpa FC,1,-,-,-,8:30 PM
+401876887,2026-11-22,FT,Sporting San José,4,-,Inter de San Carlos,2,-,-,-,5:00 PM
 401879642,2026-11-22,FT,Deportivo San Pedro,0,-,Cobán Imperial,2,-,-,-,4:00 PM
-401879616,2026-11-22,27',Antigua GFC,0,-,Municipal,0,-,-,-,6:05 PM
-401879614,2026-11-22,Scheduled,Aurora FC,0,-,Marquense,0,-,-,-,8:10 PM
+401879616,2026-11-22,FT,Antigua GFC,0,-,Municipal,0,-,-,-,6:05 PM
+401879614,2026-11-22,67',Aurora FC,1,-,Marquense,2,-,-,-,8:10 PM
 401925408,2026-11-22,FT,Mohun Bagan Super Giant,2,-,Churchill Brothers,1,-,-,-,9:00 AM
 401932601,2026-11-22,FT-Pens,Missouri State,0,-,Indiana,0,-,-,-,12:00 PM
 401932600,2026-11-22,FT,Wake Forest,2,-,Akron,1,-,-,-,1:00 PM
@@ -143,16 +143,16 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401932599,2026-11-22,FT-Pens,Marshall,0,-,Michigan State,0,-,-,-,2:00 PM
 401932602,2026-11-22,F/2OT,Washington,1,-,West Virginia,0,-,-,-,3:00 PM
 401932591,2026-11-22,FT,Charlotte,0,-,Wisconsin,2,-,-,-,3:00 PM
-401932593,2026-11-22,62',Syracuse,1,-,Georgetown,2,-,-,-,5:00 PM
-401932605,2026-11-22,63',UNC Wilmington,0,-,North Carolina,2,-,-,-,5:00 PM
-401932596,2026-11-22,66',Grand Canyon,0,-,Pittsburgh,0,-,-,-,5:00 PM
-401932597,2026-11-22,25',Vermont,0,-,Clemson,0,-,-,-,6:00 PM
-401932598,2026-11-22,30',Stanford,1,-,Kansas City,2,-,-,-,6:00 PM
-401932603,2026-11-22,29',Oregon State,0,-,Louisville,0,-,-,-,6:00 PM
-401932595,2026-11-22,30',Cornell,0,-,Rutgers,0,-,-,-,6:00 PM
-401932592,2026-11-22,Scheduled,Bryant,0,-,SMU,0,-,-,-,7:00 PM
-401932606,2026-11-22,Scheduled,Portland,0,-,South Carolina,0,-,-,-,7:00 PM
-401932594,2026-11-22,Scheduled,Omaha,0,-,UCLA,0,-,-,-,7:00 PM
+401932593,2026-11-22,FT,Syracuse,1,-,Georgetown,3,-,-,-,5:00 PM
+401932605,2026-11-22,FT,UNC Wilmington,1,-,North Carolina,3,-,-,-,5:00 PM
+401932596,2026-11-22,F/2OT,Grand Canyon,1,-,Pittsburgh,0,-,-,-,5:00 PM
+401932597,2026-11-22,FT-Pens,Vermont,0,-,Clemson,0,-,-,-,6:00 PM
+401932598,2026-11-22,FT-Pens,Stanford,3,-,Kansas City,3,-,-,-,6:00 PM
+401932603,2026-11-22,FT,Oregon State,1,-,Louisville,0,-,-,-,6:00 PM
+401932595,2026-11-22,F/OT,Cornell,2,-,Rutgers,1,-,-,-,6:00 PM
+401932592,2026-11-22,FT,Bryant,0,-,SMU,2,-,-,-,7:00 PM
+401932606,2026-11-22,Pens,Portland,0,-,South Carolina,0,-,-,-,7:00 PM
+401932594,2026-11-22,FT,Omaha,1,-,UCLA,2,-,-,-,7:00 PM
 401879233,2026-11-21,FT,Fulham,1,-,Manchester City,1,-,-,-,7:30 AM
 401879238,2026-11-21,FT,Nottingham Forest,0,-,AFC Bournemouth,2,-,-,-,10:00 AM
 401878756,2026-11-21,FT,Sunderland,0,-,Aston Villa,0,-,-,-,10:00 AM

@@ -374,33 +374,32 @@
       "statsSpread": 1.5,
       "storylines": [
         {
-          "against": false,
-          "fact": "Detroit Pistons' 4th game in 6 nights, on the road; Atlanta Hawks has had 1 day off.",
-          "key": "schedule_loss",
-          "leanPct": 53.0,
-          "leans": "Atlanta Hawks",
-          "live": "11-15",
-          "name": "The schedule loss",
-          "pct": 53.0,
-          "record": "873-775",
-          "says": "fade",
-          "team": "Detroit Pistons",
-          "weight": 1
-        },
-        {
           "weight": 1,
-          "live": "0-0",
+          "live": "8-17",
           "key": "lockdown",
           "name": "Lockdown at home",
           "team": "Atlanta Hawks",
           "says": "back",
-          "fact": "Atlanta Hawks held Charlotte Hornets to 97 and Oklahoma City Thunder to 112, 9.2 under the league's 113.7 a game, and is at home.",
-          "record": "791-671",
-          "pct": 54.1,
+          "fact": "Atlanta Hawks held Charlotte Hornets to 97 and Oklahoma City Thunder to 112, 8.9 under the league's 113.4 a game, and is at home.",
+          "record": "799-688",
+          "pct": 53.7,
           "leans": "Atlanta Hawks",
-          "leanPct": 54.1,
-          "against": false,
-          "backfill": true
+          "leanPct": 53.7,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "11-15",
+          "key": "schedule_loss",
+          "name": "The schedule loss",
+          "team": "Detroit Pistons",
+          "says": "fade",
+          "fact": "Detroit Pistons' 4th game in 6 nights, on the road; Atlanta Hawks has had 1 day off.",
+          "record": "873-775",
+          "pct": 53.0,
+          "leans": "Atlanta Hawks",
+          "leanPct": 53.0,
+          "against": false
         }
       ],
       "time": "3:30 PM ET",
@@ -807,18 +806,17 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "8-17",
           "key": "lockdown",
           "name": "Lockdown at home",
           "team": "Washington Wizards",
           "says": "back",
-          "fact": "Washington Wizards held Chicago Bulls to 94 and Toronto Raptors to 99, 17.2 under the league's 113.7 a game, and is at home.",
-          "record": "791-671",
-          "pct": 54.1,
+          "fact": "Washington Wizards held Chicago Bulls to 94 and Toronto Raptors to 99, 16.9 under the league's 113.4 a game, and is at home.",
+          "record": "799-688",
+          "pct": 53.7,
           "leans": "Washington Wizards",
-          "leanPct": 54.1,
-          "against": false,
-          "backfill": true
+          "leanPct": 53.7,
+          "against": false
         }
       ]
     },
@@ -1103,6 +1101,20 @@
       "storylines": [
         {
           "weight": 1,
+          "live": "8-17",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Chicago Bulls",
+          "says": "back",
+          "fact": "Chicago Bulls held Washington Wizards to 98 and Brooklyn Nets to 107, 10.9 under the league's 113.4 a game, and is at home.",
+          "record": "799-688",
+          "pct": 53.7,
+          "leans": "Chicago Bulls",
+          "leanPct": 53.7,
+          "against": false
+        },
+        {
+          "weight": 1,
           "live": "3-0",
           "key": "spotlight",
           "name": "Spotlight letdown",
@@ -1114,21 +1126,6 @@
           "leans": "Chicago Bulls",
           "leanPct": 56.8,
           "against": false
-        },
-        {
-          "weight": 1,
-          "live": "0-0",
-          "key": "lockdown",
-          "name": "Lockdown at home",
-          "team": "Chicago Bulls",
-          "says": "back",
-          "fact": "Chicago Bulls held Washington Wizards to 98 and Brooklyn Nets to 107, 11.2 under the league's 113.7 a game, and is at home.",
-          "record": "791-671",
-          "pct": 54.1,
-          "leans": "Chicago Bulls",
-          "leanPct": 54.1,
-          "against": false,
-          "backfill": true
         }
       ],
       "time": "7:00 PM ET",
@@ -1484,18 +1481,17 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "0-0",
+          "live": "8-17",
           "key": "lockdown",
           "name": "Lockdown at home",
           "team": "Utah Jazz",
           "says": "back",
-          "fact": "Utah Jazz held Phoenix Suns to 111 and Los Angeles Lakers to 97, 9.7 under the league's 113.7 a game, and is at home.",
-          "record": "791-671",
-          "pct": 54.1,
+          "fact": "Utah Jazz held Phoenix Suns to 111 and Los Angeles Lakers to 97, 9.4 under the league's 113.4 a game, and is at home.",
+          "record": "799-688",
+          "pct": 53.7,
           "leans": "Utah Jazz",
-          "leanPct": 54.1,
-          "against": false,
-          "backfill": true
+          "leanPct": 53.7,
+          "against": false
         }
       ]
     },
@@ -1963,6 +1959,20 @@
         },
         {
           "weight": 1,
+          "live": "8-17",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "New York Knicks",
+          "says": "back",
+          "fact": "New York Knicks held Portland Trail Blazers to 96 and Minnesota Timberwolves to 99, 15.9 under the league's 113.4 a game, and is at home.",
+          "record": "799-688",
+          "pct": 53.7,
+          "leans": "New York Knicks",
+          "leanPct": 53.7,
+          "against": false
+        },
+        {
+          "weight": 1,
           "live": "3-2",
           "key": "road_fresh_dog",
           "name": "Fresh underdog on the road",
@@ -1974,21 +1984,6 @@
           "leans": "Indiana Pacers",
           "leanPct": 57.7,
           "against": false
-        },
-        {
-          "weight": 1,
-          "live": "0-0",
-          "key": "lockdown",
-          "name": "Lockdown at home",
-          "team": "New York Knicks",
-          "says": "back",
-          "fact": "New York Knicks held Portland Trail Blazers to 96 and Minnesota Timberwolves to 99, 16.2 under the league's 113.7 a game, and is at home.",
-          "record": "791-671",
-          "pct": 54.1,
-          "leans": "New York Knicks",
-          "leanPct": 54.1,
-          "against": false,
-          "backfill": true
         }
       ],
       "time": "8:00 PM ET",
