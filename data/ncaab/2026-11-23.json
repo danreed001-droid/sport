@@ -31,15 +31,18 @@
         "ml": {
           "home": [
             -535.0,
-            -900.0
+            -850.0
           ],
           "away": [
             400.0,
-            600.0
+            575.0
           ]
         },
-        "checked": "2026-11-23T08:15:33+00:00"
-      }
+        "checked": "2026-11-23T12:50:56+00:00"
+      },
+      "gameTotal": 165.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401913530",
@@ -62,7 +65,27 @@
         ],
         "ml": {},
         "checked": "2026-11-23T08:15:33+00:00"
-      }
+      },
+      "gameTotal": 180.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "5-7",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "Illinois won its last three by 62, 21, 22.",
+          "record": "120-145",
+          "pct": 45.3,
+          "leans": "Illinois Fighting Illini",
+          "leanPct": 54.7,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401909788",
@@ -81,11 +104,14 @@
         ],
         "total": [
           156.5,
-          157.5
+          158.5
         ],
         "ml": {},
-        "checked": "2026-11-23T08:15:33+00:00"
-      }
+        "checked": "2026-11-23T12:50:56+00:00"
+      },
+      "gameTotal": 158.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909743",
@@ -120,7 +146,27 @@
           ]
         },
         "checked": "2026-11-23T08:15:33+00:00"
-      }
+      },
+      "gameTotal": 159.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-5",
+          "key": "big_stage",
+          "name": "Down from the big stage",
+          "team": "Arizona Wildcats",
+          "says": "fade",
+          "fact": "Arizona played #3 UConn last time out (won 85-79).",
+          "record": "275-239",
+          "pct": 53.5,
+          "leans": "Colorado State Rams",
+          "leanPct": 53.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     }
   ]
 }

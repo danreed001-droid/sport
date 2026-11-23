@@ -20,16 +20,16 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "8-4",
+          "live": "8-5",
           "key": "flag_help",
           "name": "Help from the flags",
           "team": "Washington Commanders",
           "says": "fade",
           "fact": "Washington Commanders beat New York Giants 24-21 last game while New York Giants was penalized 6 times for 62 yards (to 4 for 17).",
-          "record": "164-123",
-          "pct": 57.1,
+          "record": "164-124",
+          "pct": 56.9,
           "leans": "Cincinnati Bengals",
-          "leanPct": 57.1,
+          "leanPct": 56.9,
           "against": false,
           "unit": "ATS"
         }
@@ -137,15 +137,18 @@
         "ml": {
           "home": [
             105.0,
-            241.0
+            246.0
           ],
           "away": [
             -125.0,
-            -296.0
+            -302.0
           ]
         },
-        "checked": "2026-11-23T08:15:33+00:00"
-      }
+        "checked": "2026-11-23T12:50:56+00:00"
+      },
+      "gameTotal": 54.5,
+      "gameTotalOverOdds": -111,
+      "gameTotalUnderOdds": -108
     }
   ]
 }
