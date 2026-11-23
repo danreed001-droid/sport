@@ -1,0 +1,30 @@
+{
+  "sport": "nba",
+  "date": "2026-10-25",
+  "chunk": "nba-2026-10-25-2",
+  "games": [
+    {
+      "away": "Memphis Grizzlies",
+      "home": "Sacramento Kings",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -4.5,
+      "research": [
+        "Covers ATS picks (Oct 25) listed Grizzlies -3.5; the slate has Memphis -4.5, so the market had moved about a point toward Memphis by the slate's number (helps Sacramento at +4.5 relative to the earlier price).",
+        "Zach Edey was ruled out for Sunday (injury management) (Covers ML picks, Oct 25) - Covers' writer called it 'a huge boost' for Domantas Sabonis on the glass and in the paint (helps Kings).",
+        "Cedric Coward was questionable after missing Friday's game against Golden State (Covers ML picks, Oct 25) (helps Kings).",
+        "Spread-specific: Memphis entered 2-0 and had 'easily covered both games' (Covers ATS picks, Oct 25) (helps Memphis; ATS form is mostly priced).",
+        "Spread-specific: Covers' ATS writer said Sacramento 'has yet to be close to winning a game this season' (Covers ATS picks, Oct 25) (helps Memphis).",
+        "[angle] Memphis played on the road after an 'emotional' Friday comeback win over Golden State (Covers ML picks, Oct 25) - a possible letdown spot (helps Kings).",
+        "Spread-specific: Polymarket had Memphis about 64% to win on the road and 51% to cover -3.5; Covers' contest consensus had 64% of picks on Memphis (Covers, Oct 25) - public side Memphis (mixed).",
+        "Covers' ML writer took Kings ML at 37%, calling Memphis 'too expensive at 64% on the road' (Covers, Oct 25) (helps Kings).",
+        "[angle] Memphis is a rebuilt roster after trading Ja Morant to Portland and Jaren Jackson Jr. to Utah (Covers, Oct 21 previews); Sacramento lost DeMar DeRozan to Denver and added De'Andre Hunter and rookie Darius Acuff Jr. (WagerTalk, Oct 21) (neutral).",
+        "Sacramento was missing Maxime Raynaud and Dylan Cardwell (out), Malik Monk (questionable, ankle) and Ben Simmons (season) at the start of the week (WagerTalk, Oct 21) (helps Memphis if still out)."
+      ],
+      "reasoning": "Locked pass because a search summary showed this game's final score before any lean was formed. Pre-leak I had no projection of my own; the default under LESSONS (underdog, line moved a point toward the favorite, Edey out) would have pointed to Sacramento, which is recorded as the forced side. projectedMargin is set to the line (no edge).",
+      "forcedSide": "Sacramento Kings",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch (covers.com/wagertalk.com, 'Grizzlies vs Kings prediction picks odds Oct 25 2026 preview') returned a summary stating Memphis won 123-112 and covered. Seen before any lean or projection was written. The forced side (Sacramento) comes from the pre-leak default in LESSONS (underdog, Edey out), not from my own projection, and it is the side the leak shows lost."
+    }
+  ]
+}
