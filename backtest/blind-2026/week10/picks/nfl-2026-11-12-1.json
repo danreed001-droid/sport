@@ -1,0 +1,31 @@
+{
+  "sport": "nfl", "date": "2026-11-12", "chunk": "nfl-2026-11-12-1",
+  "games": [
+    {
+      "away": "Washington Commanders", "home": "New York Giants",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "Records: Giants 5-2-1 and leading the NFC East after a 19-11 win at Philadelphia; Commanders 2-5-1 with no road win this season (Predictem preview, Nov 2026, pre-game). Helps NYG.",
+        "Giants have covered 6 of 8 and are 3-1 ATS at home (Predictem preview). Spread-specific; already priced. Mild NYG.",
+        "Washington is 5-2 ATS in its last seven games after an outright loss, and it lost a close game to the Rams in Week 9 while winning yards per play (Covers, Joe Osborne, Nov 12 2026, 6:46 PM ET). Spread-specific; helps WAS.",
+        "Line: slate NYG -2.5; archive close -1.5 (open -1.5). Predictem says some books opened 1.5 and moved to 2.5; Covers lists 2.5 on game day. Slate and close differ by only 1. Spread-specific; neutral (close treated as fair).",
+        "[angle] Giants QB J.J. McCarthy left Sunday's game briefly with a hip injury and plays on a short week; Harbaugh said he 'does look like he's going to play', and backup Jameis Winston was 'pretty shaky' in the first meeting (Predictem preview citing SI). Small risk for NYG.",
+        "[angle] Weather: about 52F, 74% chance of rain around kickoff, NE winds 8-11 mph with gusts of 23-25 mph (Covers, Nov 12). Total fell from 47.5 open to 40.5 close in the archive. Neutral on the side.",
+        "Washington injuries: Terry McLaurin out for the year (torn patellar tendon), Treylon Burks out (foot), OL Lucas Patrick doubtful (concussion) (Predictem). Thin receiving corps; helps NYG.",
+        "Giants injuries: RB Cam Skattebo has a hamstring injury and was limited in Monday's walkthrough (Predictem). Helps WAS slightly.",
+        "Matchup: Washington ranks 8th in yards per rush and the Giants are 27th in yards per rush allowed; Jayden Daniels ran for 103 yards and 2 TDs in the first meeting (Covers; Predictem). Helps WAS.",
+        "Matchup: Giants are tied for the 5th-most sacks allowed while Washington blitzes on 44% of dropbacks, 2nd-highest in the NFL (Covers). Helps WAS.",
+        "Efficiency: SI ranks the Giants 10th in defensive EPA per play and the Washington offense bottom-12 in EPA per play and success rate (Predictem citing SI). Helps NYG.",
+        "Red zone: Giants are last in opponent red-zone TD rate and Washington is 29th (Covers). Neutral.",
+        "[angle] First meeting in Week 5 ended 27-27 in OT; Washington won yards per play 6.3 to 4.9 and the Giants scored 14 straight in the last 11 minutes of regulation. The winner here takes the head-to-head tiebreaker (Covers; Predictem). H2H is priced; neutral.",
+        "Previews split: Predictem took Giants -2.5 (projects 23-17); Covers' Osborne took Commanders +2.5 saying the records mislead. Preview picks are priced; neutral."
+      ],
+      "reasoning": "No read. The Giants' better record and defense against a Washington offense missing McLaurin point one way, while Washington's run game against a weak Giants run defense and its heavy blitzing against a leaky Giants line point the other. The close of 1.5 sits right on top of a ~2-3 point projection. The most interesting angle is McCarthy's hip on a short week in wind and rain. A confirmed McCarthy limitation or Winston start would have pushed this to Washington.",
+      "forcedSide": "New York Giants",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
