@@ -1,0 +1,31 @@
+{
+  "sport": "nfl",
+  "date": "2026-10-12",
+  "chunk": "nfl-2026-10-12-1",
+  "games": [
+    {
+      "away": "Buffalo Bills",
+      "home": "Los Angeles Rams",
+      "pick": "Los Angeles Rams",
+      "confidence": "lean",
+      "projectedMargin": 5.0,
+      "research": [
+        "Sharp/public split: as of late Sunday, 87% of the money at Circa was on Rams -3.5 from only 36% of bets (VSiN, Oct 11 2026). Sports Betting Dime and Oddschecker had the public on Buffalo, with 72-79% of spread bets. Sharp-vs-public pattern. Helps LAR.",
+        "Line movement: opened Rams -3 (total 53.5) per NBC Sports (Oct 8), was -2.5 at DraftKings Oct 7 (SI), and moved to -3.5 at Circa and other books by Sunday/Monday (VSiN Oct 11; TheSpread). Taking -2.5, the slate's line, is a full point better than where the sharp money pushed it. Helps LAR.",
+        "Efficiency: Buffalo's defense is 30th in opponent EPA per play and 28th in opponent success rate; the Rams' defense is 3rd in opponent EPA per play and 5th in success rate, with a top-10 run defense (SI Betting, Oct 7 2026). Helps LAR.",
+        "ATS: Bills 3-1 ATS (1-0 on the road) but 4-6 ATS in their last 10 as a road underdog; Rams 2-2 ATS, 7-3 ATS and 8-2 SU as a home favorite since 2025 (NBC Sports, Oct 8 2026). Helps LAR.",
+        "[angle] Buffalo defensive injuries: DT Ed Oliver (knee) ruled out (DNP all week) and WR Joshua Palmer out; WR DJ Moore (shoulder) questionable, back at practice in a noncontact jersey; CB Christian Benford cleared after missing last week; DL Landon Jackson and CB Dee Alford questionable (ESPN/TSN, Oct 2026; Buffalo Bills injury report). Losing Oliver hurts a defense already 30th in EPA. Helps LAR.",
+        "Rams injuries: DT Aaron Donald, TE Colby Parkinson and CB Jaylen Watson were listed but are 'good to go' for Monday night (TheRams.com Week 5 injury report); Myles Garrett remains on the injured list (SportsLine, Oct 12 2026); TE Terrance Ferguson on IR (SI). Neutral to slight help to LAR.",
+        "[angle] Josh Allen's turnovers: over the last two games he has 3 rushing TDs, 1 passing TD and 3 INTs, and 5 of Buffalo's 7 turnovers in that span are his; through four games he ranks 13th or worse in every advanced accuracy metric (NBC Sports/PlayerProfiler, Oct 8 2026). Helps LAR.",
+        "[angle] Stafford vs zone: Stafford (38) has 1,189 yards (4th) but 6 INTs (2nd most), with an INT in four straight games; he ranks 31st in catchable pass rate, 26th in completion % and 33rd in passer rating vs zone, and Buffalo plays zone 77.9% of the time (NBC Sports, Oct 8 2026). SportsLine says he has 'regressed some in 2026'. Helps BUF.",
+        "Offense: Buffalo leads the NFL at 31.8 PPG and its games average 58.2 combined points; LA is 2nd in total offense at 417.0 yards a game (NBC Oct 8; SportsLine Oct 12 2026). With a 54.5 total and backdoor potential, Buffalo can keep pace. Helps BUF at +2.5.",
+        "Form/schedule: Buffalo is off its first loss, 29-26 to New England as a 6.5-point favorite; the Rams are off a 24-20 win over Philadelphia (NBC Sports, Oct 8; SI Oct 7 2026). Buffalo is traveling cross-country for a Monday night game on the West Coast. Slight help to LAR.",
+        "Head-to-head: Bills 4-2 ATS in the last six meetings and the last meeting was Rams 44-42 (SI Oct 7; NBC Oct 8 2026). Old history, weighed lightly. Slight help to BUF.",
+        "Pundits: SI's MacMillan best bet Rams -2.5; VSiN's Zach Cohen sees an edge for LA in a close game for its ability to get off the field; Rams the most-selected Week 5 side in the Circa Million consensus at -3 (SI Oct 7; VSiN Oct 11 2026). Helps LAR."
+      ],
+      "reasoning": "What decided it: sharp money moved the line from -2.5/-3 to -3.5 (87% of Circa handle on 36% of tickets), and the efficiency gap on defense is large (Rams 3rd in opponent EPA, Bills 30th, now without Ed Oliver). Getting the Rams at -2.5 is a better number than the market's close. The most surprising [angle] cuts the other way: Stafford is poor against zone and Buffalo plays zone 78% of the time. This is a lean, not strong, because Buffalo's 31.8-PPG offense and a 54.5 total leave backdoor risk. A DJ Moore return and a line back to -2.5 with sharp money on Buffalo would have changed it.",
+      "contaminated": true,
+      "contaminationNote": "While checking Buffalo's final injury statuses (search 'Bills final injury report vs Rams Ed Oliver out ...'), the search tool's summary cited a later ClutchPoints article saying the Bills won the Rams game in overtime. I saw only that Buffalo won in OT, not the score. Before seeing it I had already leaned Rams -2.5 from the sharp line move to -3.5, the Circa splits and the defensive EPA gap. I locked that same pre-contamination lean and did no further research on this game."
+    }
+  ]
+}
