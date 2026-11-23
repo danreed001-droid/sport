@@ -260,7 +260,7 @@ def report():
         if rs:
             out.append(line(f"Week {w}", rs))
     def forced(rs):
-        rs = [r for r in rs if r.get("forcedCover") is not None or (r.get("forcedSide") and r.get("awayScore") is not None)]
+        rs = [r for r in rs if r.get("forcedSide") in (r["away"], r["home"]) and r.get("awayScore") is not None]
         w = sum(1 for r in rs if r.get("forcedCover") is True)
         l = sum(1 for r in rs if r.get("forcedCover") is False)
         return f"{w}-{l}-{len(rs) - w - l}" + (f" ({100 * w / (w + l):.1f}%)" if w + l else "")
