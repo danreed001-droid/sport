@@ -1,0 +1,53 @@
+{
+  "sport": "ncaab", "date": "2026-11-16", "chunk": "ncaab-2026-11-16-1",
+  "games": [
+    {
+      "away": "Grambling Tigers", "home": "Kentucky Wildcats",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 25.0,
+      "research": [
+        "Only one clean pre-game source was found (Predictem, Nov 16); Covers had no preview URL. Fewer than 10 independent facts, so confidence is lowered.",
+        "Predictem (Nov 16): Kentucky (No. 24) beat Northern Arizona only 78-77, on a last-second three. Helps Grambling.",
+        "Predictem (Nov 16): Kentucky lost 89-69 to Kansas in the Champions Classic and turned it over 15 times. Helps Grambling.",
+        "Predictem (Nov 16): Barttorvik projects about Kentucky 87, Grambling 64, a 23-point margin, below the 29.5 slate number. Public model, priced; slight lean to Grambling.",
+        "Spread (slate): the line opened -30.5 and closed -28.5. The total fell from 158.5 to 152.5 by the close. A lower total means fewer points to build a 30-point margin, and the move is toward Grambling. Priced.",
+        "Predictem (Nov 16): Kentucky's offense ranks 34th in Barttorvik adjusted efficiency and Grambling's 336th. Helps Kentucky.",
+        "Predictem (Nov 16): Grambling lost 93-62 at Texas, a 31-point road loss to a high-major. That's about this number. Helps Kentucky.",
+        "[angle] Predictem (Nov 16): Grambling's 7-foot-2 Isaiah Miranda averages 18.5 points but went 0-for-6 from three and got into early foul trouble at Texas. If he fouls out again, Grambling has no size. Helps Kentucky.",
+        "[angle] Predictem (Nov 16): Grambling scored 89 in its opener vs Northern Illinois, so it can score in a fast game. Both teams average about 70 possessions. Helps Grambling stay inside 30.",
+        "[angle] Predictem (Nov 16): James Madison scored 80 on Kentucky, and Kentucky's defense has been leaky in early games. Helps Grambling.",
+        "Predictem (Nov 16): Zoom Diallo leads Kentucky at 14.8 points and Malachi Moreno averages 8.2 rebounds. Grambling shoots about 28% from three (ESPN, per Predictem). Helps Kentucky.",
+        "Predictem's Jensen projects 86-64 (Kentucky by 22) but plays only the Under 158.5 as a lean. No side play. Priced."
+      ],
+      "reasoning": "Kentucky's shaky early form and a Torvik projection of about 23 argue for Grambling, but those are public numbers and the close already moved to 28.5. Big college underdogs have been no edge. Pass. The angle is Miranda's foul trouble deciding whether Grambling can stay competitive. A late Kentucky absence would have made Grambling a lean.",
+      "forcedSide": "Grambling Tigers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Long Beach State Beach", "home": "UCLA Bruins",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 27.0,
+      "research": [
+        "Only one clean pre-game source was found (Predictem, Nov 16); Covers had no preview URL. Fewer than 10 independent facts, so confidence is lowered.",
+        "Line check: the slate has UCLA -33.5; the archive opened -33.5 and closed -30.5. Predictem said 34.5 at most books on the morning of the game. The slate and close differ by 3, a data flag per lessons, so I don't build a case on either number.",
+        "Predictem (Nov 16): UCLA (No. 9) beat North Florida 114-63 and Arkansas-Pine Bluff 106-37 (by 51 and 69), and beat then-No. 5 Arizona 84-75 in Las Vegas. Helps UCLA.",
+        "[angle] Predictem (Nov 16): Long Beach State led Utah 47-30 in the second half before losing 66-63 on the road, then lost by 13 at Montana State. It's competitive against better teams, which helps LBSU.",
+        "Predictem (Nov 16): LBSU is a slow, grind-it-out team averaging 65.0 points and allowing 69.3. Fewer possessions helps the big underdog, though lessons say that's priced.",
+        "Predictem (Nov 16): Barttorvik projects UCLA 86, LBSU 63, a 23-point margin, well under 33.5. Priced public model; slight lean to LBSU.",
+        "Spread (slate): the close fell 3 points to 30.5 and the total dropped from 148.5 to 144.5. Both moves are toward a lower-scoring, closer game. Priced.",
+        "[angle] Predictem (Nov 16): LBSU is a full rebuild with 13 newcomers and 3% of last season's scoring returning. Juco All-American McCaden Adams leads at 15.0 points. Per lessons, rebuilt rosters are a coin flip.",
+        "Predictem (Nov 16): LBSU averages 26.3 rebounds to UCLA's 44.0, and UCLA forces 12 steals a game. A rebounding and turnover mismatch helps UCLA.",
+        "Predictem (Nov 16): UCLA shoots 43% from three, and Barttorvik puts its offense top 12 and defense top 25. Nikola Kusturica averages 18.3 points and Trent Perry 7.3 assists. Helps UCLA.",
+        "[angle] 10 PM ET tip, a home game for UCLA after its high-profile Arizona win in Vegas. A possible flat spot helps LBSU, but it's speculative.",
+        "Predictem's Jensen picks LBSU +34.5 at a reduced stake, projecting 85-62. Priced."
+      ],
+      "reasoning": "LBSU's slow pace, its near-upset at Utah and a Torvik margin around 23 point to the underdog, but UCLA has crushed weak teams by 51 and 69, and the slate and close disagree by 3 points, which lessons treat as a data flag. Pass. The angle is LBSU blowing a 17-point lead at Utah, which shows it can compete. A clean, agreed line near 33 would have made LBSU a lean.",
+      "forcedSide": "Long Beach State Beach",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
