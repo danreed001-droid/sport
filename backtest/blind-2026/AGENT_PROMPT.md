@@ -36,7 +36,12 @@ Do **not** open anything else in the repository (especially `data/`, `site/`,
   articles directly over reading search summaries. What worked in Week 5:
   narrow preview queries limited to one site (e.g. nbcsports.com, si.com,
   cbssports.com, covers.com), then WebFetch of the preview article with a
-  prompt that asks for pre-game content only.
+  prompt that asks for pre-game content only. Also: pass WebSearch
+  `allowed_domains` limited to betting-preview sites (covers.com,
+  wagertalk.com, predictem.com, dimers.com, sportsgambler.com,
+  actionnetwork.com, oddsshark.com, pickswise.com) or block
+  wikipedia.org / espn.com with `blocked_domains`; Wikipedia season pages and
+  post-game headlines were the main leaks.
 - Stats pages update after every game. Prefer sources dated before the game
   (previews quote the stats). If a page clearly includes this game, don't use
   its numbers.
