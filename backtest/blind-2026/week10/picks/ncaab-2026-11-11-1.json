@@ -1,8 +1,11 @@
 {
-  "sport": "ncaab", "date": "2026-11-11", "chunk": "ncaab-2026-11-11-1",
+  "sport": "ncaab",
+  "date": "2026-11-11",
+  "chunk": "ncaab-2026-11-11-1",
   "games": [
     {
-      "away": "Colgate Raiders", "home": "St. John's Red Storm",
+      "away": "Colgate Raiders",
+      "home": "St. John's Red Storm",
       "pick": null,
       "confidence": "pass",
       "projectedMargin": 27.0,
@@ -26,10 +29,11 @@
       "contaminationNote": null
     },
     {
-      "away": "Marquette Golden Eagles", "home": "Michigan Wolverines",
+      "away": "Marquette Golden Eagles",
+      "home": "Michigan Wolverines",
       "pick": null,
       "confidence": "pass",
-      "projectedMargin": 3.0,
+      "projectedMargin": 4.0,
       "research": [
         "Line: slate Michigan -3.5; archive open -4.5, close -2.5. The market moved two points toward Marquette, and against the close the slate's +3.5 is a better number than the market's final price - Marquette at the slate number, but the move is priced.",
         "Total moved up from 153.5 to 157.5 (slate archive).",
@@ -44,13 +48,14 @@
         "Marquette has covered 10 of its last 13 games and gone Under in 10 of 13 (Covers, Nov 11) - ATS records are priced, mild Marquette at most.",
         "Both Covers (Marquette +3.5, combo with Under) and Predictem (Marquette +3.5, projecting 78-76) take Marquette (Nov 11). Public-facing previews on one side line up with the move to -2.5 - priced."
       ],
-      "reasoning": "Two even teams by Torvik, a close of -2.5, and a projection of Michigan by about 3 put this inside the pass band. The coaching change and foul trouble favor Marquette, and Michigan's likely shooting regression at home favors Michigan. The market already moved toward Marquette, so there is nothing unpriced. Forced Michigan on the shooting regression against a defense whose numbers came against weak opponents.",
+      "reasoning": "Two even teams by Torvik, a close of -2.5, and a projection of Michigan by about 4 put this inside the pass band. The coaching change and foul trouble favor Marquette, and Michigan's likely shooting regression at home favors Michigan. The market already moved toward Marquette, so there is nothing unpriced. Forced Michigan on the shooting regression against a defense whose numbers came against weak opponents.",
       "forcedSide": "Michigan Wolverines",
       "contaminated": false,
       "contaminationNote": null
     },
     {
-      "away": "Jacksonville State Gamecocks", "home": "Houston Cougars",
+      "away": "Jacksonville State Gamecocks",
+      "home": "Houston Cougars",
       "pick": null,
       "confidence": "pass",
       "projectedMargin": 32.0,
@@ -73,10 +78,11 @@
       "contaminationNote": null
     },
     {
-      "away": "Robert Morris Colonials", "home": "Arkansas Razorbacks",
+      "away": "Robert Morris Colonials",
+      "home": "Arkansas Razorbacks",
       "pick": null,
       "confidence": "pass",
-      "projectedMargin": 31.0,
+      "projectedMargin": 32.0,
       "research": [
         "Line: slate Arkansas -31.5; archive open and close both -29.5. The slate is 2 points higher than the market, so against the close the slate's Arkansas number is worse - mild Robert Morris at the slate number.",
         "Total moved 154.5 -> 155.5 (slate archive).",
@@ -97,7 +103,8 @@
       "contaminationNote": null
     },
     {
-      "away": "Arkansas-Pine Bluff Golden Lions", "home": "UCLA Bruins",
+      "away": "Arkansas-Pine Bluff Golden Lions",
+      "home": "UCLA Bruins",
       "pick": null,
       "confidence": "pass",
       "projectedMargin": 46.0,
@@ -120,7 +127,8 @@
       "contaminationNote": null
     },
     {
-      "away": "Lindenwood Lions", "home": "Nebraska Cornhuskers",
+      "away": "Lindenwood Lions",
+      "home": "Nebraska Cornhuskers",
       "pick": null,
       "confidence": "pass",
       "projectedMargin": 32.0,
@@ -143,7 +151,8 @@
       "contaminationNote": null
     },
     {
-      "away": "USC Trojans", "home": "California Golden Bears",
+      "away": "USC Trojans",
+      "home": "California Golden Bears",
       "pick": null,
       "confidence": "pass",
       "projectedMargin": -9.0,
