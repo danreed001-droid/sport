@@ -1,0 +1,79 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-17",
+ "chunk": "cfb-2026-10-17-2",
+ "games": [
+  {
+   "away": "Alabama",
+   "home": "Tennessee",
+   "time": "3:30 PM ET",
+   "awayRank": 6,
+   "homeRank": 14,
+   "awaySpread": -7.5,
+   "homeSpread": 7.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": -340,
+   "homeMoneyline": 270
+  },
+  {
+   "away": "Auburn",
+   "home": "Georgia",
+   "time": "3:30 PM ET",
+   "homeRank": 1,
+   "awaySpread": 19.5,
+   "homeSpread": -19.5,
+   "awayMoneyline": 834,
+   "homeMoneyline": -1538
+  },
+  {
+   "away": "Missouri",
+   "home": "Ole Miss",
+   "time": "3:30 PM ET",
+   "awayRank": 13,
+   "homeRank": 9,
+   "awaySpread": 5.5,
+   "homeSpread": -5.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 185,
+   "homeMoneyline": -225
+  },
+  {
+   "away": "Florida State",
+   "home": "Miami",
+   "time": "7:00 PM ET",
+   "homeRank": 3,
+   "awaySpread": 20.5,
+   "homeSpread": -20.5,
+   "awaySpreadOdds": -150,
+   "homeSpreadOdds": 122,
+   "awayMoneyline": 900,
+   "homeMoneyline": -1900
+  },
+  {
+   "away": "Oklahoma State",
+   "home": "Houston",
+   "time": "7:30 PM ET",
+   "awayRank": 18,
+   "homeRank": 20,
+   "awaySpread": 4.5,
+   "homeSpread": -4.5,
+   "awaySpreadOdds": -122,
+   "homeSpreadOdds": -614,
+   "awayMoneyline": 163,
+   "homeMoneyline": -203
+  },
+  {
+   "away": "Notre Dame",
+   "home": "BYU",
+   "time": "7:30 PM ET",
+   "awayRank": 2,
+   "homeRank": 8,
+   "awaySpread": -10.5,
+   "homeSpread": 10.5,
+   "awayMoneyline": -417,
+   "homeMoneyline": 318
+  }
+ ]
+}

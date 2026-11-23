@@ -1,0 +1,55 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-17",
+ "chunk": "cfb-2026-10-17-3",
+ "games": [
+  {
+   "away": "Wisconsin",
+   "home": "UCLA",
+   "time": "7:30 PM ET",
+   "homeRank": 12,
+   "awaySpread": 2.5,
+   "homeSpread": -2.5,
+   "awaySpreadOdds": -104,
+   "homeSpreadOdds": -113,
+   "awayMoneyline": 121,
+   "homeMoneyline": -137
+  },
+  {
+   "away": "Kentucky",
+   "home": "Oklahoma",
+   "time": "7:30 PM ET",
+   "awayRank": 15,
+   "awaySpread": 6.5,
+   "homeSpread": -6.5,
+   "awaySpreadOdds": -104,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": 205,
+   "homeMoneyline": -245
+  },
+  {
+   "away": "Utah",
+   "home": "Colorado",
+   "time": "10:15 PM ET",
+   "awayRank": 11,
+   "awaySpread": -14.5,
+   "homeSpread": 14.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -109,
+   "awayMoneyline": -750,
+   "homeMoneyline": 540
+  },
+  {
+   "away": "Wake Forest",
+   "home": "California",
+   "time": "10:30 PM ET",
+   "awayRank": 21,
+   "awaySpread": -10,
+   "homeSpread": 10,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -375,
+   "homeMoneyline": 300
+  }
+ ]
+}
