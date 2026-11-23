@@ -1,0 +1,67 @@
+{
+ "sport": "nba",
+ "date": "2026-10-30",
+ "chunk": "nba-2026-10-30-2",
+ "games": [
+  {
+   "away": "Indiana Pacers",
+   "home": "Miami Heat",
+   "time": "8:00 PM ET",
+   "awaySpread": 7.5,
+   "homeSpread": -7.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 235,
+   "homeMoneyline": -245,
+   "homeSpreadOpen": 3.5,
+   "homeSpreadClose": -8.5,
+   "totalOpen": 240.5,
+   "totalClose": 236.5
+  },
+  {
+   "away": "LA Clippers",
+   "home": "Minnesota Timberwolves",
+   "time": "8:00 PM ET",
+   "awaySpread": 7.5,
+   "homeSpread": -7.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 235,
+   "homeMoneyline": -238,
+   "homeSpreadOpen": -9.5,
+   "homeSpreadClose": -6.5,
+   "totalOpen": 230.5,
+   "totalClose": 222.5
+  },
+  {
+   "away": "Denver Nuggets",
+   "home": "Phoenix Suns",
+   "time": "10:00 PM ET",
+   "awaySpread": -4.5,
+   "homeSpread": 4.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": -164,
+   "homeMoneyline": 143,
+   "homeSpreadOpen": 2.5,
+   "homeSpreadClose": 4.5,
+   "totalOpen": 233.5,
+   "totalClose": 231.5
+  },
+  {
+   "away": "Los Angeles Lakers",
+   "home": "Golden State Warriors",
+   "time": "10:00 PM ET",
+   "awaySpread": -1.5,
+   "homeSpread": 1.5,
+   "awaySpreadOdds": -114,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -120,
+   "homeMoneyline": 106,
+   "homeSpreadOpen": 1.5,
+   "homeSpreadClose": 2.5,
+   "totalOpen": 234.5,
+   "totalClose": 234.5
+  }
+ ]
+}

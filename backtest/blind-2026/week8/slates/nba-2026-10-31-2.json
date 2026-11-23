@@ -1,0 +1,22 @@
+{
+ "sport": "nba",
+ "date": "2026-10-31",
+ "chunk": "nba-2026-10-31-2",
+ "games": [
+  {
+   "away": "Oklahoma City Thunder",
+   "home": "Houston Rockets",
+   "time": "8:30 PM ET",
+   "awaySpread": 4.5,
+   "homeSpread": -4.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 130,
+   "homeMoneyline": -154,
+   "homeSpreadOpen": -4.5,
+   "homeSpreadClose": -2.5,
+   "totalOpen": 218.5,
+   "totalClose": 219.5
+  }
+ ]
+}

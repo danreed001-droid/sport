@@ -1,0 +1,93 @@
+{
+ "sport": "nfl",
+ "date": "2026-11-01",
+ "chunk": "nfl-2026-11-01-1",
+ "games": [
+  {
+   "away": "Baltimore Ravens",
+   "home": "Buffalo Bills",
+   "time": "1:00 PM ET",
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awayMoneyline": 154,
+   "homeMoneyline": -185,
+   "homeSpreadOpen": -2.5,
+   "homeSpreadClose": -3.0,
+   "totalOpen": 51.5,
+   "totalClose": 54.5
+  },
+  {
+   "away": "Tennessee Titans",
+   "home": "Cincinnati Bengals",
+   "time": "1:00 PM ET",
+   "awaySpread": 12.5,
+   "homeSpread": -12.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 587,
+   "homeMoneyline": -835,
+   "homeSpreadOpen": -6.5,
+   "homeSpreadClose": -13.5,
+   "totalOpen": 49.5,
+   "totalClose": 45.5
+  },
+  {
+   "away": "Arizona Cardinals",
+   "home": "Dallas Cowboys",
+   "time": "1:00 PM ET",
+   "awaySpread": 7.5,
+   "homeSpread": -7.5,
+   "awaySpreadOdds": -113,
+   "homeSpreadOdds": 113,
+   "awayMoneyline": 285,
+   "homeMoneyline": -292,
+   "homeSpreadOpen": -10.5,
+   "homeSpreadClose": -7.0,
+   "totalOpen": 49.5,
+   "totalClose": 54.5
+  },
+  {
+   "away": "Minnesota Vikings",
+   "home": "Detroit Lions",
+   "time": "1:00 PM ET",
+   "awaySpread": 3,
+   "homeSpread": -3,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 140,
+   "homeMoneyline": -166,
+   "homeSpreadOpen": -4.5,
+   "homeSpreadClose": -3.5,
+   "totalOpen": 47.5,
+   "totalClose": 45.5
+  },
+  {
+   "away": "Las Vegas Raiders",
+   "home": "New York Jets",
+   "time": "1:00 PM ET",
+   "awaySpread": 1.5,
+   "homeSpread": -1.5,
+   "awayMoneyline": 115,
+   "homeMoneyline": -117,
+   "homeSpreadOpen": -1.5,
+   "homeSpreadClose": -1.5,
+   "totalOpen": 41.5,
+   "totalClose": 46.5
+  },
+  {
+   "away": "Cleveland Browns",
+   "home": "Pittsburgh Steelers",
+   "time": "1:00 PM ET",
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 160,
+   "homeMoneyline": -196,
+   "homeSpreadOpen": -5.5,
+   "homeSpreadClose": -3.5,
+   "totalOpen": 39.5,
+   "totalClose": 38.5
+  }
+ ]
+}

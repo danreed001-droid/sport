@@ -1,0 +1,74 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-31",
+ "chunk": "cfb-2026-10-31-3",
+ "games": [
+  {
+   "away": "Miami",
+   "home": "North Carolina",
+   "time": "7:30 PM ET",
+   "awayRank": 10,
+   "awaySpread": -14.5,
+   "homeSpread": 14.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": -662,
+   "homeMoneyline": 456
+  },
+  {
+   "away": "Georgia Tech",
+   "home": "Pitt",
+   "time": "7:30 PM ET",
+   "awayRank": 8,
+   "awaySpread": 7.5,
+   "homeSpread": -7.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -109,
+   "awayMoneyline": 245,
+   "homeMoneyline": -294
+  },
+  {
+   "away": "Ohio State",
+   "home": "USC",
+   "time": "7:30 PM ET",
+   "awayRank": 1,
+   "homeRank": 23,
+   "awaySpread": -6.5,
+   "homeSpread": 6.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": -251,
+   "homeMoneyline": 202
+  },
+  {
+   "away": "Mississippi State",
+   "home": "Texas",
+   "time": "7:30 PM ET",
+   "homeRank": 20,
+   "awaySpread": 19.5,
+   "homeSpread": -19.5,
+   "awayMoneyline": 885,
+   "homeMoneyline": -1587
+  },
+  {
+   "away": "Missouri",
+   "home": "Arkansas",
+   "time": "7:45 PM ET",
+   "awayRank": 19,
+   "awaySpread": -10.5,
+   "homeSpread": 10.5,
+   "awayMoneyline": -397,
+   "homeMoneyline": 303
+  },
+  {
+   "away": "Army",
+   "home": "Memphis",
+   "time": "8:00 PM ET",
+   "homeRank": 25,
+   "awaySpread": 5.5,
+   "homeSpread": -5.5,
+   "awayMoneyline": 182,
+   "homeMoneyline": -226
+  }
+ ]
+}

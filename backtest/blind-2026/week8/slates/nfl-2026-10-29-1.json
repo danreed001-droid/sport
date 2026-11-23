@@ -1,0 +1,22 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-29",
+ "chunk": "nfl-2026-10-29-1",
+ "games": [
+  {
+   "away": "Carolina Panthers",
+   "home": "Green Bay Packers",
+   "time": "8:15 PM ET",
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "awayMoneyline": 162,
+   "homeMoneyline": -194,
+   "homeSpreadOpen": -7.0,
+   "homeSpreadClose": -3.5,
+   "totalOpen": 45.5,
+   "totalClose": 47.5
+  }
+ ]
+}

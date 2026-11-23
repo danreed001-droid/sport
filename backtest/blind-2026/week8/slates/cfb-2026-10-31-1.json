@@ -1,0 +1,76 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-31",
+ "chunk": "cfb-2026-10-31-1",
+ "games": [
+  {
+   "away": "Notre Dame",
+   "home": "Navy",
+   "time": "12:00 PM ET",
+   "awayRank": 12,
+   "awaySpread": -30.5,
+   "homeSpread": 30.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -6500,
+   "homeMoneyline": 2000
+  },
+  {
+   "away": "Arizona",
+   "home": "Texas Tech",
+   "time": "12:00 PM ET",
+   "homeRank": 13,
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 145,
+   "homeMoneyline": -175
+  },
+  {
+   "away": "Michigan",
+   "home": "Rutgers",
+   "time": "12:30 PM ET",
+   "awayRank": 21,
+   "awaySpread": -14,
+   "homeSpread": 14,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": -650,
+   "homeMoneyline": 470
+  },
+  {
+   "away": "Auburn",
+   "home": "Ole Miss",
+   "time": "12:45 PM ET",
+   "homeRank": 7,
+   "awaySpread": 13.5,
+   "homeSpread": -13.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 400,
+   "homeMoneyline": -535
+  },
+  {
+   "away": "Stanford",
+   "home": "Louisville",
+   "time": "3:15 PM ET",
+   "homeRank": 16,
+   "awaySpread": 22.5,
+   "homeSpread": -22.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 1100
+  },
+  {
+   "away": "Virginia",
+   "home": "Wake Forest",
+   "time": "3:45 PM ET",
+   "awayRank": 15,
+   "awaySpread": 13.5,
+   "homeSpread": -13.5,
+   "awayMoneyline": 441,
+   "homeMoneyline": -456
+  }
+ ]
+}

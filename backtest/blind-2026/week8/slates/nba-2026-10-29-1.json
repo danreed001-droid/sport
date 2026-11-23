@@ -1,0 +1,52 @@
+{
+ "sport": "nba",
+ "date": "2026-10-29",
+ "chunk": "nba-2026-10-29-1",
+ "games": [
+  {
+   "away": "Cleveland Cavaliers",
+   "home": "Atlanta Hawks",
+   "time": "8:00 PM ET",
+   "awaySpread": 1,
+   "homeSpread": -1,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -107,
+   "homeMoneyline": -113,
+   "homeSpreadOpen": -1.5,
+   "homeSpreadClose": -1.5,
+   "totalOpen": 239.5,
+   "totalClose": 237.5
+  },
+  {
+   "away": "Sacramento Kings",
+   "home": "New Orleans Pelicans",
+   "time": "8:00 PM ET",
+   "awaySpread": 6,
+   "homeSpread": -6,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 213,
+   "homeMoneyline": -217,
+   "homeSpreadOpen": -5.5,
+   "homeSpreadClose": -6.5,
+   "totalOpen": 237.5,
+   "totalClose": 234.5
+  },
+  {
+   "away": "Memphis Grizzlies",
+   "home": "Portland Trail Blazers",
+   "time": "10:00 PM ET",
+   "awaySpread": 7.5,
+   "homeSpread": -7.5,
+   "awaySpreadOdds": -107,
+   "homeSpreadOdds": -113,
+   "awayMoneyline": 234,
+   "homeMoneyline": -290,
+   "homeSpreadOpen": -7.5,
+   "homeSpreadClose": -7.5,
+   "totalOpen": 232.5,
+   "totalClose": 233.5
+  }
+ ]
+}
