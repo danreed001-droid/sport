@@ -1,0 +1,76 @@
+{
+ "date": "2026-11-24",
+ "source": "Action Network public feed (consensus = book 15, opener = book 30)",
+ "fetchedAt": "2026-11-23T06:42:05+00:00",
+ "games": [
+  {
+   "away": "Detroit Pistons",
+   "home": "Orlando Magic",
+   "start": "2026-11-25T00:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": null,
+    "open": null,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": null,
+    "open": null,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": null,
+    "away": null
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Boston Celtics",
+   "home": "Washington Wizards",
+   "start": "2026-11-25T01:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": 5.5,
+    "open": 5.5,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": 230.5,
+    "open": 230.5,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": 157,
+    "away": -190
+   },
+   "rlmFavorite": null
+  },
+  {
+   "away": "Dallas Mavericks",
+   "home": "Denver Nuggets",
+   "start": "2026-11-25T03:00:00.000Z",
+   "state": "scheduled",
+   "spread": {
+    "home": -8.5,
+    "open": -8.5,
+    "tix_home": null,
+    "money_home": null
+   },
+   "total": {
+    "now": 237.5,
+    "open": 237.5,
+    "tix_over": null,
+    "money_over": null
+   },
+   "moneyline": {
+    "home": -352,
+    "away": 277
+   },
+   "rlmFavorite": null
+  }
+ ]
+}
