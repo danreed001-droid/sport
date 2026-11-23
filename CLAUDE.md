@@ -855,6 +855,15 @@ but asked for only after kickoff goes in `uncounted` (listed "not counted*",
 never graded). First use: 2026-11-21 CFB, Miami, Arizona, Louisville and Boise
 State voided (two lost, one won, one at halftime), Utah -7.5 uncounted.
 
+Your notes on a pick (2026-11-23, the user's ask): a "Why this pick?" box under
+your side pick and a "Why this over/under?" box under your total (`whyBox` in
+site/index.html; pending in localStorage as `why`/`totWhy`, sent as `reasons` /
+`totalReasons` in the picks issue). `intake_picks.py` saves it as `reason` on the
+pick or total (600 characters; re-picking keeps the old note unless a new one is
+sent; a note alone updates a pick already in the repo until the game is final).
+It shows on the results page under the pick, in the pick log ("why: ...") and on
+the card once final.
+
 Public results page (`site/results.html`, linked from the pick sheet): every one of
 the user's picks, sides and over/unders, graded at the line taken. `lib/results.py`
 builds `results.json` / `results.csv` in `build_site.py`. The page and CSV don't

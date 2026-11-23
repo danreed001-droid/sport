@@ -435,6 +435,10 @@ details.rules-tbl th{color:var(--muted);font-weight:600;}
 .pickbtn .nm{display:block;font-weight:700;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .pickbtn .ln{display:block;margin-top:1px;font-family:'IBM Plex Mono',monospace;font-size:12px;}
 .note{font-size:11px;color:var(--muted);}
+.whybox{display:flex;flex-direction:column;gap:4px;margin:8px 0 4px;font-size:11.5px;color:var(--muted);}
+.whybox i{font-style:normal;opacity:.75;}
+.whybox textarea{width:100%;box-sizing:border-box;font:inherit;font-size:13px;color:var(--ink);background:var(--surface);border:1px solid var(--rule-2);border-radius:8px;padding:6px 8px;resize:vertical;}
+.whyshow{font-size:12.5px;color:var(--muted);font-style:italic;margin:6px 0;}
 .note.dog{color:var(--warn);}
 .score{border-top:1px solid var(--rule);padding-top:10px;}
 .score summary{cursor:pointer;font-size:11.5px;font-weight:600;color:var(--opinion-ink);}
@@ -587,9 +591,10 @@ footer b{color:var(--ink);}
 
   // ---- your unsubmitted picks live in this browser until you submit them ----
   function pendingKey(){ return 'picksheet.pending.' + DATA.slate.date; }
-  function loadPending(){ try{ var o = JSON.parse(localStorage.getItem(pendingKey())||'{}')||{}; return {sides:o.sides||{}, scores:o.scores||{}, totals:o.totals||{}, alts:o.alts||{}, totAlts:o.totAlts||{}, props:o.props||{}}; }catch(e){ return {sides:{}, scores:{}, totals:{}, alts:{}, totAlts:{}, props:{}}; } }
-  function savePending(){ try{ localStorage.setItem(pendingKey(), JSON.stringify({sides:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totAlts:pendingTotAlt, props:pendingProps})); }catch(e){} }
-  var pending = {}, pendingScores = {}, pendingTotals = {}, pendingAlt = {}, pendingTotAlt = {}, pendingProps = {};
+  function loadPending(){ try{ var o = JSON.parse(localStorage.getItem(pendingKey())||'{}')||{}; return {sides:o.sides||{}, scores:o.scores||{}, totals:o.totals||{}, alts:o.alts||{}, totAlts:o.totAlts||{}, props:o.props||{}, why:o.why||{}, totWhy:o.totWhy||{}}; }catch(e){ return {sides:{}, scores:{}, totals:{}, alts:{}, totAlts:{}, props:{}, why:{}, totWhy:{}}; } }
+  function savePending(){ try{ localStorage.setItem(pendingKey(), JSON.stringify({sides:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totAlts:pendingTotAlt, props:pendingProps, why:pendingWhy, totWhy:pendingTotWhy})); }catch(e){} }
+  // your note on why (side pick / over-under), the user's ask 2026-11-23: game id -> text ("" clears it)
+  var pending = {}, pendingScores = {}, pendingTotals = {}, pendingAlt = {}, pendingTotAlt = {}, pendingProps = {}, pendingWhy = {}, pendingTotWhy = {};
 
   // ---- alternate lines: estimated prices (same math as scripts/lib/altlines.py) ----
   var ALT = {SD:{nfl:13.5, cfb:16, nba:12, ncaab:11, mlb:4.2}, TSD:{nfl:10, cfb:14, nba:17, ncaab:15, mlb:4.4},
@@ -718,6 +723,8 @@ footer b{color:var(--ink);}
     Object.keys(pendingScores).forEach(function(id){
       if(!GAMES[id] || pendingScores[id]===baseScores(id)) delete pendingScores[id];
     });
+    Object.keys(pendingWhy).forEach(function(id){ if(pendingWhy[id] === ((committedPick(id)||{}).reason||'')) delete pendingWhy[id]; });
+    Object.keys(pendingTotWhy).forEach(function(id){ if(pendingTotWhy[id] === (((DATA.myTotals||{})[id]||{}).reason||'')) delete pendingTotWhy[id]; });
     savePending();
   }
 
@@ -1213,7 +1220,7 @@ footer b{color:var(--ink);}
         + '<td>'+esc((DATA.sportLabels[p.s]||p.s).replace('College Football (FBS)','CFB').replace('NCAA Basketball','NCAAB'))+'</td>'
         + '<td><span class="who"><i style="background:'+w.c+'"></i>'+esc(w.short)+'</span></td>'
         + '<td class="gm">'+esc(p.g)+(p.sc ? '<span class="muted sc">Final '+esc(p.sc)+'</span>' : '')+'</td>'
-        + '<td><b>'+esc(p.k)+'</b>'+((p.w==='stats' || p.w==='nflstats') ? ' '+betTag(p.sp, p.mo) : '')+(p.rr && famCount(p.rr.map(function(r){ return r.n; }), p.w==='stats' ? nbaFam : null)>1 ? ' <span class="stacked">stacked · '+p.rr.length+' rules</span>' : '')+(p.rr ? p.rr.map(function(r){ var sr = ((p.w==='nflstats' ? DATA.nflStatsRules : p.w==='ncaabstats' ? DATA.ncaabStatsRules : DATA.statsRules)||[]).filter(function(x){ return x.rule===r.n; })[0], sn = sr ? sr.w+sr.l+sr.p : 0; return '<span class="rblurb'+(p.w==='nflstats'?' nfl':p.w==='ncaabstats'?' ncaab':'')+'"><b>Rule '+esc(r.n)+'</b> · '+esc(r.name)+' · past: '+esc(String(r.bt).replace(/, n=(\d+)/, ' over $1 games'))+(sn ? ' · this season '+sr.w+'-'+sr.l+(sr.p?'-'+sr.p:'') : '')+'</span>'; }).join('') : (p.t ? '<span class="muted tier">'+esc(TIER[p.t]||p.t).replace(' · stacked', ' <span class="stacked">stacked</span>')+'</span>' : ''))+'</td>'
+        + '<td><b>'+esc(p.k)+'</b>'+((p.w==='stats' || p.w==='nflstats') ? ' '+betTag(p.sp, p.mo) : '')+(p.rr && famCount(p.rr.map(function(r){ return r.n; }), p.w==='stats' ? nbaFam : null)>1 ? ' <span class="stacked">stacked · '+p.rr.length+' rules</span>' : '')+(p.rr ? p.rr.map(function(r){ var sr = ((p.w==='nflstats' ? DATA.nflStatsRules : p.w==='ncaabstats' ? DATA.ncaabStatsRules : DATA.statsRules)||[]).filter(function(x){ return x.rule===r.n; })[0], sn = sr ? sr.w+sr.l+sr.p : 0; return '<span class="rblurb'+(p.w==='nflstats'?' nfl':p.w==='ncaabstats'?' ncaab':'')+'"><b>Rule '+esc(r.n)+'</b> · '+esc(r.name)+' · past: '+esc(String(r.bt).replace(/, n=(\d+)/, ' over $1 games'))+(sn ? ' · this season '+sr.w+'-'+sr.l+(sr.p?'-'+sr.p:'') : '')+'</span>'; }).join('') : (p.t ? '<span class="muted tier">'+esc(TIER[p.t]||p.t).replace(' · stacked', ' <span class="stacked">stacked</span>')+'</span>' : ''))+(p.why ? '<span class="muted tier">why: '+esc(p.why)+'</span>' : '')+'</td>'
         + '<td class="mono">'+(num(p.sp) ? sgn(p.sp) : '—')+'</td>'
         + '<td>'+ats+'</td>'
         + '<td class="mono '+(num(p.ap)?cls(p.ap):'flat')+'">'+(num(p.ap) ? money(p.ap) : '—')+'</td>'
@@ -2471,7 +2478,16 @@ footer b{color:var(--ink);}
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="away" aria-pressed="'+(side==='away')+'"'+dis+'>'+btnLabel(g.away,g.awaySpread,g.awayMoneyline)+'</button>'
       + (num(g.drawMoneyline) ? '<button type="button" class="pickbtn draw" data-id="'+esc(id)+'" data-side="draw" aria-pressed="'+(side==='draw')+'"'+dis+'>'+btnLabel('Draw',null,g.drawMoneyline)+'</button>' : '')
       + '<button type="button" class="pickbtn" data-id="'+esc(id)+'" data-side="home" aria-pressed="'+(side==='home')+'"'+dis+'>'+btnLabel(g.home,g.homeSpread,g.homeMoneyline)+'</button>'
-      + '</div>' + sideAltInner(id) + notes + totalRowInner(id) + propsInner(id);
+      + '</div>' + sideAltInner(id) + (side && side !== 'none' ? whyBox('side', id) : '') + notes + totalRowInner(id) + propsInner(id);
+  }
+  // Your note on why, under your side pick and your over/under: saved with the
+  // pick (intake_picks.py), shown on the results page and in the pick log.
+  function whyBox(kind, id){
+    var g = GAMES[id].game, c = kind === 'side' ? committedPick(id) : (DATA.myTotals||{})[id], map = kind === 'side' ? pendingWhy : pendingTotWhy;
+    var val = map.hasOwnProperty(id) ? map[id] : ((c||{}).reason || '');
+    if(g.final || VIEW_PAST) return val ? '<div class="whyshow"><b>Why:</b> '+esc(val)+'</div>' : '';
+    return '<label class="whybox"><span>Why'+(kind === 'total' ? ' this over/under' : ' this pick')+'? <i>optional</i></span>'
+      + '<textarea class="pkwhy" data-kind="'+kind+'" data-id="'+esc(id)+'" rows="2" maxlength="600" placeholder="Your notes: saved with the pick and shown on the results page">'+esc(val)+'</textarea></label>';
   }
   function sideAltInner(id){
     var e = GAMES[id], g = e.game, side = effectiveSide(id), cp = committedPick(id);
@@ -2503,7 +2519,7 @@ footer b{color:var(--ink);}
       + '<div class="pickbtns">'
       + '<button type="button" class="pickbtn ttlbtn" data-id="'+esc(id)+'" data-ou="over" aria-pressed="'+(ou==='over')+'"'+dis+'>Over '+esc(String(L.t))+odds(L.o)+'</button>'
       + '<button type="button" class="pickbtn ttlbtn" data-id="'+esc(id)+'" data-ou="under" aria-pressed="'+(ou==='under')+'"'+dis+'>Under '+esc(String(L.t))+odds(L.u)+'</button>'
-      + '</div>' + totAltInner(id, ou, L) + note;
+      + '</div>' + totAltInner(id, ou, L) + (ou && ou !== 'none' ? whyBox('total', id) : '') + note;
   }
   function totAltInner(id, ou, L){
     var e = GAMES[id], g = e.game, c = (DATA.myTotals||{})[id];
@@ -2714,11 +2730,12 @@ footer b{color:var(--ink);}
   // ---- submit bar ----
   function issueUrl(){
     var body = 'Picks submitted from the pick sheet. Leave the block below as-is — the Pick intake workflow reads it, commits the picks to data/mypicks/, and closes this issue.\n\n```json\n'
-      + JSON.stringify({date:DATA.slate.date, picks:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totalAlts:pendingTotAlt, props:pendingProps}) + '\n```\n';
+      + JSON.stringify({date:DATA.slate.date, picks:pending, scores:pendingScores, totals:pendingTotals, alts:pendingAlt, totalAlts:pendingTotAlt, props:pendingProps, reasons:pendingWhy, totalReasons:pendingTotWhy}) + '\n```\n';
     return 'https://github.com/'+DATA.repo+'/issues/new?title='+encodeURIComponent('picks '+DATA.slate.date)+'&body='+encodeURIComponent(body);
   }
   function renderSubmitBar(){
-    var n = Object.keys(pending).length + Object.keys(pendingScores).length + Object.keys(pendingTotals).length + Object.keys(pendingProps).length;
+    var n = Object.keys(pending).length + Object.keys(pendingScores).length + Object.keys(pendingTotals).length + Object.keys(pendingProps).length
+      + Object.keys(pendingWhy).filter(function(id){ return !pending.hasOwnProperty(id); }).length + Object.keys(pendingTotWhy).filter(function(id){ return !pendingTotals.hasOwnProperty(id); }).length;
     var bar = document.getElementById('submitbar');
     bar.hidden = n===0 || VIEW_PAST;
     if(!n || VIEW_PAST) return;
@@ -3021,8 +3038,17 @@ footer b{color:var(--ink);}
     paintThemeBtn();
   });
   document.getElementById('discard').addEventListener('click', function(){
-    pending = {}; pendingScores = {}; pendingTotals = {}; pendingAlt = {}; pendingTotAlt = {}; pendingProps = {}; savePending();
+    pending = {}; pendingScores = {}; pendingTotals = {}; pendingAlt = {}; pendingTotAlt = {}; pendingProps = {}; pendingWhy = {}; pendingTotWhy = {}; savePending();
     Object.keys(GAMES).forEach(function(id){ renderScore(id); renderPickRow(id); }); renderSubmitBar();
+  });
+  document.addEventListener('input', function(e){
+    var ta = e.target && e.target.closest && e.target.closest('textarea.pkwhy');
+    if(!ta) return;
+    var id = ta.getAttribute('data-id'), side = ta.getAttribute('data-kind') === 'side';
+    var map = side ? pendingWhy : pendingTotWhy, c = side ? committedPick(id) : (DATA.myTotals||{})[id];
+    var v = ta.value.trim();
+    if(v === ((c||{}).reason || '')) delete map[id]; else map[id] = v;
+    savePending(); renderSubmitBar();
   });
   document.getElementById('submitlink').addEventListener('click', function(){
     document.getElementById('submitmsg').innerHTML = 'GitHub opened in a new tab — click <b>Submit new issue</b> there. Your picks show <i>in repo</i> here a couple of minutes later.';
@@ -3063,7 +3089,7 @@ footer b{color:var(--ink);}
         return;
       }
     }
-    DATA = d; var lp = loadPending(); pending = lp.sides; pendingScores = lp.scores; pendingTotals = lp.totals; pendingAlt = lp.alts; pendingTotAlt = lp.totAlts; pendingProps = lp.props; render(); reconcile(); Object.keys(GAMES).forEach(renderPickRow); renderSubmitBar();
+    DATA = d; var lp = loadPending(); pending = lp.sides; pendingScores = lp.scores; pendingTotals = lp.totals; pendingAlt = lp.alts; pendingTotAlt = lp.totAlts; pendingProps = lp.props; pendingWhy = lp.why; pendingTotWhy = lp.totWhy; render(); reconcile(); Object.keys(GAMES).forEach(renderPickRow); renderSubmitBar();
   }).catch(function(){
     document.getElementById('app').innerHTML = '<p class="loading">Couldn\'t load data.json. If you opened this file directly, run <span class="mono">python scripts/build_site.py</span> and open <span class="mono">_site/index.html</span> through a local server instead.</p>';
   });

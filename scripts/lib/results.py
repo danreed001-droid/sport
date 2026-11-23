@@ -113,7 +113,8 @@ def build_results(mypicks, all_docs):
                    "odds": p.get("spreadOdds"), "ml": p.get("moneyline"), "submitted": p.get("submittedAt"),
                    "lead": lead_minutes(date_str, p.get("time"), p.get("submittedAt")),
                    "result": None, "units": None, "mlResult": None, "mlUnits": None, "mlCounted": None,
-                   "alt": bool(p.get("alt")), "posted": p.get("posted"), "note": p.get("correction")}
+                   "alt": bool(p.get("alt")), "posted": p.get("posted"), "note": p.get("correction"),
+                   "reason": p.get("reason")}
             # vs the close: the line taken (the posted one for an alternate) against the closing spread.
             if g is not None and p.get("side") in ("home", "away"):
                 c_sp, _ = _close_row(sport, date_str, g.get("away"), g.get("home"))
@@ -147,7 +148,8 @@ def build_results(mypicks, all_docs):
                    "line": line, "odds": t.get("odds"), "ml": None, "submitted": t.get("submittedAt"),
                    "lead": lead_minutes(date_str, t.get("time"), t.get("submittedAt")),
                    "result": None, "units": None, "mlResult": None, "mlUnits": None, "mlCounted": None,
-                   "alt": bool(t.get("alt")), "posted": t.get("posted"), "note": t.get("correction")}
+                   "alt": bool(t.get("alt")), "posted": t.get("posted"), "note": t.get("correction"),
+                   "reason": t.get("reason")}
             if g is not None and t.get("side") in ("over", "under"):
                 _, c_tot = _close_row(sport, date_str, g.get("away"), g.get("home"))
                 if c_tot is None and sport == "nba" and _num(g.get("totalsLine")):
