@@ -1,0 +1,98 @@
+{
+  "sport": "nba", "date": "2026-11-01", "chunk": "nba-2026-11-01-1",
+  "games": [
+    {
+      "away": "Boston Celtics", "home": "Orlando Magic",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -7.0,
+      "research": [
+        "Orlando is without Paolo Banchero (high ankle sprain, 4-6 weeks), Jalen Suggs, Jonathan Isaac, Noah Penda and Izaiyah Nelson (Predictem, Nov 1). These absences were known before the line opened, so they're priced; at most a slight help to Boston -6.5.",
+        "Slate line Boston -6.5; it opened Magic +6.5 and closed +6.5, so the market didn't move at all. Spread-specific; neutral.",
+        "In two games without Banchero and Suggs, Orlando's offensive rating rose from 109.4 to 114 but its defensive rating fell from 117 to 125.3, and opponents shot 41.9% from three (Covers, Nov 1). Spread-specific; helps Boston.",
+        "Boston enters 4-1 on a four-game win streak, sixth in net rating (SBR Nov 1), and leads the league at 128 ppg over its last three (Covers, Nov 1). Helps Boston.",
+        "[angle] All four Boston wins came at TD Garden. This is its first road game since opening night, and Boston has won only once at Kia Center since 2023 (Predictem, Nov 1). Helps Orlando.",
+        "[angle] Both teams are on the front end of a back-to-back: Boston plays at Houston Monday, Orlando hosts Washington (Predictem, Nov 1). Also a 3:30 PM Sunday matinee. Neutral.",
+        "Orlando split two games at Toronto: a 30-point loss shooting 10-35 from three, then a 121-114 win shooting 18-34, with Bane scoring 28 and Wagner 26 points and 11 assists (Predictem, Nov 1). The Magic's form swings with their shooting. Helps Orlando slightly.",
+        "Orlando grabs 21.6% of its own misses (league 27.3%) and turns it over on 15.3% of possessions, while Boston forces turnovers on 15.5% (Predictem, Nov 1). This is a matchup edge for Boston. Helps Boston.",
+        "[angle] Tatum is back as a primary creator: 27.6 ppg, 7.8 apg, 32% usage; Pritchard scored 28 and 30 in recent games (Predictem/Covers, Nov 1). Helps Boston.",
+        "Implied win probability is about 70% Boston (Covers, Nov 1). The over is 4-of-5 in Orlando's games against winning teams (Covers trend). Neutral on the side.",
+        "Previews split: Predictem took Boston -6.5 (projection 117-107), Dimers' model saw value on Magic +6.5. Per LESSONS, preview picks aren't an edge. Neutral."
+      ],
+      "reasoning": "No read: the injury case for Boston was priced before the open and the line never moved, so this was a pass by the early-season NBA rule before any result was seen. The road-heavy schedule angle (first road game, poor history at Kia Center) cut against the stat case. A web-search summary then showed the final score, so this is contaminated. The forced side reflects the notes I had before the leak, which tilted only slightly to Boston on Orlando's 125 defensive rating without its starters.",
+      "forcedSide": "Boston Celtics",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (allowed_domains rotowire/dimers etc.) quoted a RotoWire headline that Tatum 'scored 32 points in a 108-97 victory over the Magic', which appears to be this game (Boston by 11, covering -6.5). I saw it after the Covers and Predictem previews but before writing any lean. Locked as a pass. The forced side was not chosen from the leak: my pre-leak notes tilted only weakly to Boston."
+    },
+    {
+      "away": "Brooklyn Nets", "home": "Indiana Pacers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.5,
+      "research": [
+        "Indiana is without Tyrese Haliburton and Ivica Zubac, Obi Toppin is questionable and Aaron Nesmith day-to-day. Covers puts the missing players at 58.4 ppg (Covers, Nov 1). Mostly priced; the late Toppin/Nesmith statuses help Brooklyn.",
+        "Brooklyn is missing rookie Mikel Brown Jr. and starting PG Egor Demin, leaving Nolan Traore as the main ball-handler (Covers, Nov 1). Helps Indiana.",
+        "The line moved toward Brooklyn: it opened Pacers -4.5 and closed -3.5. Slate Nets +4.5 is 1 point better than the close on the side the market moved to. Spread-specific; helps Brooklyn at this number.",
+        "Brooklyn is the East's last winless team (0-5) and scored 94 in a 16-point loss to Detroit (Covers, Nov 1). Helps Indiana.",
+        "Indiana has lost three straight, most recently by 20 at Miami. Coach Rick Carlisle missed that game for his father's funeral and is back Sunday (Covers, Nov 1). [angle] Carlisle's return is a slight help to Indiana.",
+        "Indiana ranks 24th in points allowed and 23rd in defensive rating, Brooklyn 25th and 21st (Covers, Nov 1). Two bad defenses; neutral.",
+        "Brooklyn is 29th in two-point percentage and 27th in two-point defense, while Indiana has made the fifth-most twos (Covers, Nov 1). Spread-specific matchup; helps Indiana.",
+        "Pace: Brooklyn is 7th, Indiana 8th, and the total is 230.5, flat from open to close. More possessions widen the range of margins. Neutral.",
+        "[angle] Same matchup a week earlier in Brooklyn, a 245-point game (Covers, Nov 1). It's a rematch with no rest edge stated. Neutral.",
+        "[angle] Siakam's usage climbs without Haliburton; he has hit 30.5 points plus rebounds in every 30+ minute game (SBR, Nov 1). Helps Indiana modestly.",
+        "Implied win probability is about 61% Indiana; Covers' preview took Pacers -3.5 and its model had Indiana near 69% (Covers, Nov 1). Preview picks aren't an edge. Neutral."
+      ],
+      "reasoning": "Two shorthanded, bad defensive teams. The market shaded toward Brooklyn, and the slate's +4.5 is a point better than the close, but that's information, not an edge, and an early-season NBA game, so a pass. A later preview's search snippet then implied Brooklyn won, so this is contaminated. My pre-leak forced side was already Brooklyn, from the slate being better than the close.",
+      "forcedSide": "Brooklyn Nets",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (pickswise/actionnetwork/wagertalk/oddstrader) quoted a Pickswise preview of the Nov 2 Nets-Knicks game saying the Nets 'played in Indianapolis on Sunday and ended a five-game season-opening losing streak', which implies Brooklyn won outright. I saw it after the Covers preview, with no lean written, though I was mentally on Brooklyn from the slate-vs-close comparison. Locked as a pass."
+    },
+    {
+      "away": "LA Clippers", "home": "Golden State Warriors",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 1.5,
+      "research": [
+        "Golden State is without Steph Curry and Draymond Green, both out (Covers, Nov 1; Predictem, Nov 1). Helps the Clippers, but it was largely priced by the time Covers posted at 2:19 PM ET.",
+        "Golden State went 13-26 straight up without Curry last season (Covers, Nov 1). Helps the Clippers.",
+        "The line moved toward the Clippers: it opened Warriors -2.5 and closed -1.5. Slate Clippers +2.5 is 1 point better than the close on the moved side. Spread-specific; helps the Clippers at this number.",
+        "The Clippers started 1-4 on a four-game losing streak and average 105.4 ppg, second-lowest in the league (Covers, Nov 1). Spread-specific; helps Golden State, since the underdog's offense is poor.",
+        "The Clippers have held three of five opponents under 110 and went 14-10 ATS as road underdogs last season (Covers, Nov 1). Helps the Clippers.",
+        "Golden State has won three straight, including a 17-point win over the Lakers Friday, but has a bottom-third defensive rating of 115.3 (Covers, Nov 1). Mixed.",
+        "[angle] Covers says the Clippers are 'missing key starters too' without naming them. Their lineup uncertainty cuts against the Clippers.",
+        "[angle] Both teams are on the front end of a back-to-back: Golden State hosts Phoenix Monday, the Clippers host Toronto Monday. Golden State resting Curry and Green may reflect B2B management. Neutral.",
+        "[angle] Without Curry and Green, Brandin Podziemski runs the offense (5+ assists in three straight); Darius Garland drives the Clippers' attack; rookie Keaton Wagler scores 14.4 ppg (Covers, Nov 1). Neutral.",
+        "The Clippers have won 8 of the last 10 meetings, and the under is 7-3 in them (Covers, Nov 1). Head-to-head history, not an edge. Neutral.",
+        "Previews split: Covers took the Clippers moneyline and +2.5, Predictem took Warriors -2.5 (projection 113-106). Neutral."
+      ],
+      "reasoning": "No real read: Curry and Green's absences were known and the market already moved a point toward the Clippers, whose offense is second-worst in the league. Projection within about a point of the line, so a pass. Then a search summary quoting a later Predictem Suns-Warriors preview gave this game's final, so it's contaminated. The forced side is the pre-leak structural tiebreaker (slate better than close on the moved side), the same rule used on Brooklyn.",
+      "forcedSide": "LA Clippers",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (predictem/wagertalk/sportsbookreview) quoted a later Predictem Suns-Warriors preview saying Golden State rested Curry and Green on Sunday and 'still beat the Clippers 124-112' (Warriors by 12, covering -2.5). I saw it after the Covers preview, before writing any lean. Locked as a pass. The forced side is the Clippers, from my pre-leak tiebreaker, not from the leak."
+    },
+    {
+      "away": "Toronto Raptors", "home": "Los Angeles Lakers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.5,
+      "research": [
+        "Toronto is without Kawhi Leonard (knee), and its scoring is down 4.5 ppg without him (Covers, Nov 1). Known before the open, so priced. Helps the Lakers.",
+        "The line moved toward Toronto: it opened Lakers -4.5 and closed -3.5, with Covers showing -2.5 midafternoon. Slate Raptors +4.5 is 1+ point better than the close on the moved side. Spread-specific; helps Toronto at this number.",
+        "Strength on strength: the Lakers' offense is 2nd at 119.3 points per 100 with the league's best shooting efficiency (50.7%), and Toronto's defense is 2nd at 103.2 allowed per 100 (Covers, Nov 1). Spread-specific; neutral to Toronto.",
+        "[angle] Toronto forces a league-best 21.4 turnovers a game, and Luka Doncic has a career-high 5.2 turnovers a game on a league-high 39.8% usage (Covers, Nov 1). Helps Toronto.",
+        "Doncic leads the league in scoring and had two 40-point games this week (SBR, Nov 1). Helps the Lakers.",
+        "The Lakers lost by 17 at Golden State Friday, scoring 95 on 40% shooting; it was their third loss in four games (Covers, Nov 1). Helps Toronto slightly.",
+        "Austin Reaves opened at 26.5 ppg but has cooled: 16.7% from three with 8 turnovers in his last two (Covers, Nov 1). Helps Toronto slightly.",
+        "Toronto is 4-0 ATS in its last four after a straight-up loss; it allowed 121 to Orlando Friday (Covers, Nov 1). Spread-specific; a mild help to Toronto, but ATS records are already priced.",
+        "[angle] Toronto has lost seven or eight straight to the Lakers (none since 2023), and eight straight in LA, by an average of 12 (SBR/Covers, Nov 1). Head-to-head history; per LESSONS, not an edge.",
+        "[angle] Toronto crossed the continent after hosting Orlando Friday. Both teams are on the front end of a back-to-back: the Lakers host Miami Monday, Toronto plays at the Clippers Monday. Neutral to slight help for the Lakers.",
+        "Scottie Barnes is at 24 ppg on 21.6 shots with his assists down to 4.4; RJ Barrett averages 25.5 in four career games vs the Lakers (Covers, Nov 1). Neutral.",
+        "Previews split: Covers took Raptors +2.5, SBR took Lakers -2.5. Neutral."
+      ],
+      "reasoning": "No clean edge: elite Lakers offense vs elite Toronto defense without Leonard. The market moved a point toward Toronto, and the slate's +4.5 is better than the close, but that's information, not an edge, early in the season. Projection Lakers by about 3.5, within a point of the line: pass. The forced side is Toronto, from the slate-vs-close tiebreaker and its turnover pressure against Doncic's turnovers. No result seen for this game.",
+      "forcedSide": "Toronto Raptors",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "sport": "nba",
+  "date": "2026-10-28",
+  "chunk": "nba-2026-10-28-2",
+  "games": [
+    {
+      "away": "New York Knicks",
+      "home": "Chicago Bulls",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -7.5,
+      "research": [
+        "Slate line Knicks -7.5; DK open and close both Bulls +7.5, so no line movement on the spread (slate file). Neutral.",
+        "Total moved 234.5 to 233.5 (slate file). Neutral for the side.",
+        "Covers (Oct 28 preview): Chicago lost three of its first four games. Helps Knicks.",
+        "[angle] Covers (Oct 28): Chicago is shooting .238 from three, last in the NBA by a wide gap. Helps Knicks, unless shooting regresses up (Bulls).",
+        "Covers (Oct 28) top pick: Knicks -6.5 (a lower number than the slate). Preview pick, not an edge.",
+        "Dimers (Oct 28) model: Knicks 119-113, with value on Bulls +6.5. Model output, not an edge.",
+        "Predictem (Oct 28): projected Knicks 116-106, played Under 234.5. Neutral for the side.",
+        "CONTAMINATED: the very first search's summary quoted a later Covers preview saying the Bulls lost by six at +7.5. Research stopped there; fewer than 10 clean bullets."
+      ],
+      "reasoning": "Locked as a pass because the first search summary revealed the result before any lean was written. No pre-leak read existed. The forced side is Knicks only because that is the side the pre-game content in the same snippet (Covers' pick, Chicago's league-worst 3P%) pointed to; discount it.",
+      "forcedSide": "New York Knicks",
+      "contaminated": true,
+      "contaminationNote": "Before writing any lean, the WebSearch summary for 'Knicks vs Bulls prediction preview October 28 2026' (covers.com etc.) quoted a later Covers preview saying the Bulls 'lost by six at +7.5 to the Knicks on Oct. 28'. Seen before deciding; locked as a pass."
+    },
+    {
+      "away": "Houston Rockets",
+      "home": "Milwaukee Bucks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -8.5,
+      "research": [
+        "Slate Rockets -8.5; DK open and close both Bucks +8.5, no spread movement (slate file). Neutral: the market didn't budge.",
+        "Total dipped from 227.5 to 226.5 (slate file). Neutral.",
+        "Covers matchup snapshot (pre-game): Houston 4-0, first in the West; Milwaukee 1-3, 12th in the East. Already in the 8.5. Helps Rockets.",
+        "[angle] Pickswise listing / Predictem: Milwaukee is rebuilding after trading Giannis Antetokounmpo to Miami. Tyler Herro, a Milwaukee-area native who came back in that deal, carries the scoring. Helps Rockets (talent gap), priced.",
+        "Covers ATS column (Oct 28): Alperen Sengun is expected to play and has a team-best +37.6 on/off net rating through four games (CleaningTheGlass). Helps Rockets.",
+        "[angle] Covers moneyline column (Oct 28): Houston's bench ranks 26th in points per game, while Milwaukee's starting five is 'holding its own'. Helps Bucks if the game is decided by the bench.",
+        "Covers (Oct 28): Milwaukee has the better wide-open 3-point attempt rate on both ends; the writer took Bucks +8.5 on 3-point make differential. Helps Bucks.",
+        "Covers matchup trends (pre-game): Rockets 5-0 ATS in their last 5 against teams under .400. Helps Rockets; ATS trend, tiebreaker at most.",
+        "Covers trends: Bucks have gone over the total in 22 of their last 35. Neutral for the side.",
+        "Dimers model (Oct 28): Rockets 116-109 with Bucks +8.5 at a 54.3% cover chance; projects Durant 26.3 pts, Herro 20.6, Jaquez 17.6. Model output, not an edge.",
+        "No injury report for either team found in a clean pre-game source; Houston's status is unverified."
+      ],
+      "reasoning": "No read: the line is unchanged from the open, and every finding (Houston 4-0, Milwaukee's rebuild, Houston's weak bench) was public when the number was set. The previews that like the Bucks rest on 3-point rate and model value, which the lessons say isn't an edge. Projection equals the line; pass. Forced side Rockets on this season's 4-0 start and Sengun's on/off, but it's close to a coin flip.",
+      "forcedSide": "Houston Rockets",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Golden State Warriors",
+      "home": "Minnesota Timberwolves",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.5,
+      "research": [
+        "Line move: DK opened Wolves -6.5 and closed -3.5, the slate's number (slate file). That's a 3-point move toward Golden State, almost surely on the Edwards news. Treat -3.5 as fair.",
+        "Covers preview (Oct 28): Anthony Edwards is out 'for the long haul', and the ATS column expects him to miss a couple of months. Helps Warriors, now priced.",
+        "[angle] Covers preview (Oct 28): without Edwards last season Minnesota went 12-9 SU and 13-8 ATS. Its defensive rating improved from 115 to 109.5 while its offensive rating fell from 117.6 to 115. Helps Wolves.",
+        "Covers preview (Oct 28): the Wolves have covered all four games to open this season. Helps Wolves; ATS record, tiebreaker only.",
+        "Covers preview (Oct 28): Golden State ranks 28th in defensive rating, and its frontcourt lacks size and depth. Helps Wolves.",
+        "Covers preview (Oct 28): Rudy Gobert has 12+ rebounds in three of four games (14.3 avg). The writer's top pick is Wolves -3.5 (good up to -4.5) on frontcourt length (Kuminga, McDaniels, Gobert). Helps Wolves.",
+        "Covers ATS and moneyline columns (Oct 28): Golden State creates more wide-open threes and allows fewer. Minnesota ranks 25th in assist rate and is easier to defend in isolation without Edwards. Helps Warriors.",
+        "Covers (Oct 28): Curry has 25+ points in five straight games and averages 26 against Minnesota in his career. Helps Warriors.",
+        "[angle] Covers (Oct 28): Ayo Dosunmu is expected to start and averaged 29.4 PRA in seven games without Edwards last season; Kuminga has started four straight. The Wolves' replacement pieces are known.",
+        "Dimers model (Oct 28): Wolves 116-111, with Wolves -3.5 covering 50.5% of the time. That puts the line on the number.",
+        "Total stayed at 227.5 from open to close (slate file). Neutral."
+      ],
+      "reasoning": "After a 3-point injury move the lessons say to treat the new number as fair, and the two Covers writers split on the side. My projection of Wolves by 3.5 sits on the line, so it's a pass. Forced side Minnesota: its defense was better without Edwards last season (109.5), and Golden State's defense ranks 28th this season. Confirmation that Minnesota's interior was healthy would have made it a lean.",
+      "forcedSide": "Minnesota Timberwolves",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "San Antonio Spurs",
+      "home": "Utah Jazz",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -13.5,
+      "research": [
+        "Line: DK opened Jazz +12.5 and closed +13.5, while the slate has +11.5 (slate file). The market moved toward San Antonio, and the slate number is 2 points better than the close on the Spurs side.",
+        "Total moved 234.5 to 232.5 (slate file). Neutral.",
+        "Covers moneyline column (Oct 28): Utah lost starting forward Jaren Jackson Jr. to a torn meniscus in its loss to Memphis, and Lauri Markkanen left that game hurt. Helps Spurs; probably part of the move from 12.5 to 13.5.",
+        "Covers preview (Oct 28): Jackson Jr. and Jusuf Nurkic are out, and Markkanen (wrist) is expected to miss. Helps Spurs.",
+        "[angle] Covers preview (Oct 28): Utah allows 52.3 paint points a game (21st), and opponents shoot a league-worst 59.4% on twos. Wembanyama scores 60.7% of his points in the paint and averaged 30.3 against Utah last season. Helps Spurs.",
+        "[angle] Covers (Oct 28): San Antonio is on the second night of a back-to-back after blowing out Sacramento on Tuesday. Last season the Spurs went 11-4 ATS on no rest (+6.2). The back-to-back helps the Jazz, though that ATS record leans Spurs.",
+        "Covers ATS column (Oct 28): Utah is 0-4 ATS this season and has faced only one projected winning team. Helps Spurs; ATS record, tiebreaker only.",
+        "Covers preview (Oct 28): the Spurs' two wins came by 16 and 27, they lead the league in scoring margin (+15.1), and they allow 109.8 a game. Helps Spurs.",
+        "Covers preview (Oct 28): Ace Bailey has scored 17 in each of his last two games and should get a bigger role without Markkanen; the Spurs allow 21.7 a game to small forwards. Helps Jazz score enough to stay inside a big number.",
+        "Covers preview (Oct 28): the Spurs are 4-0 ATS in their last four games at Utah. Venue history, already priced.",
+        "Both Covers writers took the Spurs (-12.5 and -13.5). Preview picks aren't an edge."
+      ],
+      "reasoning": "Projecting the close (Spurs by 13.5) gives a 2-point gap to the slate's 11.5. Shaded halfway to the line it's 1 point, under the bar, and the lessons call a slate line better than the close information, not an edge (4-3). The Spurs' back-to-back against a depleted frontcourt makes it a pass. Forced side Spurs: Utah's frontcourt is thin against Wembanyama, the market moved that way, and the slate number is 2 points better.",
+      "forcedSide": "San Antonio Spurs",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Oklahoma City Thunder",
+      "home": "Dallas Mavericks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -4.5,
+      "research": [
+        "Line: DK opened Mavs +5.5 (the slate) and closed +4.5 (slate file). WagerTalk (Oct 28) had OKC -6.5 at the open, moving between -5.5 and -6.5 during the day. The market drifted toward Dallas, and the slate gives Dallas 1 point more than the close.",
+        "Total fell from 230.5 to 227.5 (slate file). WagerTalk says most total money was on the under. Neutral for the side.",
+        "WagerTalk (Oct 28): OKC is out Holmgren (knee), Jalen Williams (fibula/ankle, surgery), Cason Wallace (shoulder, surgery), Alex Caruso (ankle), Topic and Sorber; Ajay Mitchell is questionable. Helps Mavs, but mostly known before the line.",
+        "WagerTalk (Oct 28): Dallas is out Dereck Lively II, Santi Aldama and others; Kyrie Irving (knee) and Naji Marshall (illness) are questionable. Unresolved status for Dallas.",
+        "Covers (Oct 28): OKC is 4-0 and won every game by 7+. It leads the NBA in defensive efficiency (104.8) and ranks fifth on offense (116.3). Helps Thunder.",
+        "Covers (Oct 28): Dallas ranks 27th in offensive efficiency (108.5), 27th in eFG% (52.7) and 22nd in rebounding rate. Helps Thunder.",
+        "[angle] Covers (Oct 28): Dallas lost its first two games to elite West teams, then won at Miami on Monday. Cooper Flagg had 29 points and 11 assists there and averages 36.6 PRA. Helps Mavs.",
+        "[angle] WagerTalk (Oct 28): public spread money is on Dallas, while the line still moved toward Dallas. Helps Mavs slightly.",
+        "Covers (Oct 28): OKC went 3-0 against Dallas last season, each win by 7+; the Covers ATS column notes Dallas covered 2 of 3 meetings. Head-to-head, already priced.",
+        "[angle] Covers (Oct 28): Hartenstein's role grows without Holmgren (12+ rebounds in each of his last two games). OKC's frontcourt is thin. Helps Mavs on the glass, though Dallas rebounds poorly.",
+        "Writers split: Covers' Scimia took OKC -5.5; Covers' ATS column and WagerTalk took Dallas (WagerTalk's projection was OKC 113-109). Not an edge."
+      ],
+      "reasoning": "OKC's long injury list was known before the line, so it's priced. The close (+4.5) is fair, and Kyrie Irving's unresolved status could swing it, so it's a pass. Forced side Dallas: the slate's +5.5 is 1 point better than the close on the side the market moved to, and OKC is missing four rotation guards and wings. A confirmed Kyrie return would have pushed it toward a lean.",
+      "forcedSide": "Dallas Mavericks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Los Angeles Lakers",
+      "home": "LA Clippers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -5.0,
+      "research": [
+        "Slate Lakers -5.5 with no open/close data; the Covers preview (Oct 28) listed Lakers -4.5. The slate is about a point worse for the Lakers than the earlier number. Helps Clippers at the slate number.",
+        "Covers (Oct 28): Clippers are without Rui Hachimura, Brandon Ingram and Max Strus, on a 'lengthy injury report'. Helps Lakers, though known before the line.",
+        "[angle] Covers (Oct 28): the Lakers are on the second night of a back-to-back, but went 9-5 ATS on no rest last season. Rest helps the Clippers; the history leans Lakers.",
+        "Covers (Oct 28): the Lakers shoot a league-best 55% from the field and 81% in the paint, and score 128.3 a game (second). Covers' moneyline column has them leading the NBA in offensive rating. Helps Lakers.",
+        "Covers (Oct 28): the Clippers average 22.7 turnovers, worst in the NBA. Helps Lakers.",
+        "Covers moneyline column (Oct 28): the Clippers rank 28th in defensive shot profile (CleaningTheGlass). Helps Lakers.",
+        "Covers (Oct 28): Austin Reaves averages 26.5 points on 63% shooting, and Doncic has 19 assists over his last two games. Both are active. Helps Lakers.",
+        "[angle] Covers (Oct 28): Darius Garland is expected to carry a major role for the Clippers (prop over 25.5). The Clippers' offense runs through one guard with thin depth.",
+        "Covers ATS column (Oct 28): Lakers -4.5 as a 'zig-zag' play because the Clippers covered their previous meeting. Situational angle, weak.",
+        "Covers (Oct 28): the Lakers are 7-3 SU in the last 10 meetings and won the last one 125-117. They went 39-25 ATS with Doncic last season. History, priced.",
+        "Covers (Oct 28): the Lakers' unbeaten start had ended. Neutral."
+      ],
+      "reasoning": "The matchup numbers (the Lakers' offense against the Clippers' turnovers and shot-profile defense) favor the Lakers, but the Clippers' absences were known. The Lakers are on a back-to-back, and the slate's -5.5 is a point worse than the -4.5 in the preview. Projecting Lakers by 5 gives no gap; pass. Forced side Lakers on this season's efficiency and turnover numbers; another Clippers absence would have strengthened it.",
+      "forcedSide": "Los Angeles Lakers",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

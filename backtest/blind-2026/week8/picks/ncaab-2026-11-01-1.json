@@ -1,0 +1,46 @@
+{
+  "sport": "ncaab", "date": "2026-11-01", "chunk": "ncaab-2026-11-01-1",
+  "games": [
+    {
+      "away": "Notre Dame Fighting Irish", "home": "Villanova Wildcats",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.5,
+      "research": [
+        "Slate: Villanova -7.5 (-105), Notre Dame +7.5 (-115), neutral site, 9:30 AM ET; total 147.5. (slate file) [spread]",
+        "Line did not move: homeSpreadOpen -7.5, homeSpreadClose -7.5, so the slate number equals the close; no market signal either way. (slate file) [spread]",
+        "Total dropped from 149.5 open to 145.5 close, the market expecting a slower game. (slate file) [spread]",
+        "Game is the season opener played in Rome (neutral, morning ET tip). (Predictem / Dimers headlines, pre-game) [angle]",
+        "Covers' pre-game preview had Villanova about 50 spots ahead of Notre Dame in KenPom, Torvik and EvanMiya; public ratings are not an edge per LESSONS. (Covers, Nov 1 2026, via search summary)",
+        "Villanova availability: Matt Hodge (ACL) not expected to play; another player (Evans) recently cleared to practice. Helps Notre Dame. (preview summary, Nov 1 2026) [angle]",
+        "Notre Dame's roster was rebuilt through the transfer portal: low continuity, a reason for early-season variance. (preview summary) [angle]",
+        "Preview writers split: Predictem and SBR leaned Notre Dame +7.5 (projected 75-70, 75-71), Covers took Villanova -7.5, Dimers model ~6. Writer picks are not an edge. (search summary, Nov 1 2026)",
+        "CONTAMINATED: the very first search summary reported a Dimers page showing the final score, before any research notes or lean existed.",
+        "Fewer than 10 solid independent bullets and no read formed before the leak: locked as a pass."
+      ],
+      "reasoning": "No read: the first search's summary showed this game's final score before I had written any notes, so per LESSONS this is a locked pass. The line sat at -7.5 from open to close, giving no market signal. The forced side is not a forecast.",
+      "forcedSide": "Villanova Wildcats",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch (allowed_domains limited to betting sites) returned a summary saying a Dimers page listed a FINAL of Villanova 72, Notre Dame 74. Seen before any lean was formed. No pre-leak read existed; the forced side is simply the slate favorite on an unmoved line and should not be counted as a forecast."
+    },
+    {
+      "away": "Liberty Flames", "home": "High Point Panthers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 9.0,
+      "research": [
+        "Slate: High Point -6.5 (-115), Liberty +6.5 (-105), neutral site, listed 11:59 PM ET (likely a placeholder time); total 155.5. (slate file) [spread]",
+        "Line moved toward High Point: open -7.5, close -9.5. (slate file) [spread]",
+        "The slate's -6.5 is 3 points better than the close on the side the market moved to (High Point); LESSONS: information, not an edge (4-3 clean). (slate file) [spread]",
+        "Total moved slightly up, 154.5 open to 155.5 close. (slate file) [spread]",
+        "Both are mid-major programs among the top of their conferences; a neutral-site meeting this early is an exempt-event or showcase game. [angle]",
+        "CONTAMINATED: the first search (predictem/sportsbookreview/wagertalk only) found no preview, and its summary quoted an SBR odds page showing the final score.",
+        "No pre-game preview content was gathered: fewer than 10 solid bullets."
+      ],
+      "reasoning": "Locked pass: the first search summary showed the final score. The only pre-leak note was from the slate: the market moved from -7.5 to -9.5 toward High Point, leaving the slate's -6.5 well short of the close, which pointed to High Point as the forced side before the leak.",
+      "forcedSide": "High Point Panthers",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary described a sportsbookreview.com odds page listing High Point 72, Liberty 57 (page dated Monday Nov 2). Seen before any research; the forced side comes from the slate's open/close movement, which I had noted before searching."
+    }
+  ]
+}
