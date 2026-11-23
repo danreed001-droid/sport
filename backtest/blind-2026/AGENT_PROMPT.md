@@ -27,6 +27,13 @@ Do **not** open anything else in the repository (especially `data/`, `site/`,
   "<team> injury report <date>", "<team> ATS record 2026", "<team> odds week 5".
   Never search for "score", "final", "recap", "result", "highlights", "who won",
   or the game's outcome, and don't open pages dated after the game.
+- Search-result summaries leak results easily (in Week 5 a plain "<team>
+  injury report" search summarized the final score). Every query should name
+  the game's date or week AND a pre-game word: "preview", "prediction",
+  "odds", "picks", "betting", "injury report ahead of". Don't search a player's
+  status on its own; get injuries from preview articles. When a result page
+  looks like a recap, don't open it. Prefer fetching pre-game preview/odds
+  articles directly over reading search summaries.
 - Stats pages update after every game. Prefer sources dated before the game
   (previews quote the stats). If a page clearly includes this game, don't use
   its numbers.
