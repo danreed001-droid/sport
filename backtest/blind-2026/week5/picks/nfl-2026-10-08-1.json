@@ -1,0 +1,32 @@
+{
+  "sport": "nfl",
+  "date": "2026-10-08",
+  "chunk": "nfl-2026-10-08-1",
+  "games": [
+    {
+      "away": "Tampa Bay Buccaneers",
+      "home": "Dallas Cowboys",
+      "pick": "Tampa Bay Buccaneers",
+      "confidence": "lean",
+      "projectedMargin": 6.0,
+      "research": [
+        "Line movement: Dallas opened -10 at DraftKings and was down to -8.5 by Wednesday; Circa opened -9.5 and was -7.5 Wednesday night. A move of 1.5-2 points toward the underdog with a rookie QB already known to be starting (SI Betting, Oct 7 2026; VSiN, Oct 7 2026). Helps TB.",
+        "Sharp/public split: at Circa, Bucs +7.5 drew 33% of spread bets but 92% of spread handle; Cowboys 67% of bets, 8% of handle. VSiN's Zach Cohen: 'sharp money pushing the line closer to a touchdown' (VSiN 'Who's Betting on the Bucs?', Oct 7 2026). Sports Betting Dime also flagged 'significant sharp resistance' on TB while 68% of bets were on Dallas. Helps TB.",
+        "Public lean: DraftKings had Tampa on only 43% of spread bets and 10% of moneyline bets; Kalshi had 79% of ~$13M volume on Dallas (SI Betting Oct 7; Covers Oct 8 2026). Classic public-favorite/sharp-dog setup. Helps TB.",
+        "ATS form: Tampa Bay 0-4 SU, 0-4 ATS (0-3-1 by some books), 0-13 ATS over its last 13 per DraftKings; Dallas 3-1 ATS, 1-0 as a home favorite, +10 point differential vs Tampa's -20 (BettingPros Oct 8; TheLines Oct 8 2026). Helps DAL; the Bucs' repeated ATS failure is the strongest number against this pick.",
+        "Dallas defense: 31st in EPA/play allowed (0.191), 30th in pass-rush win rate (42%); has allowed 20+ points every game and 28+ in three of four, 5.0 yards per carry allowed entering Week 4 (VSiN Oct 7; SI Oct 5 2026). Helps TB's backdoor chances.",
+        "Tampa defense: 5th in EPA/play allowed (-0.066) and one of the best run defenses (rush EPA allowed -0.253) per VSiN (Oct 7 2026); TheLines (Oct 8) has it 25th in opponent points per play, so the defensive grade is mixed. Leans TB.",
+        "[angle] QB: Baker Mayfield (right thumb) out, expected 3-6 weeks per Schefter (via SI Oct 5); undrafted rookie Jalon Daniels makes his first road start. In his first start vs Green Bay he was 8-of-13 for 74 yards and 2 INTs before half, then 11-of-14, 74 yards, 1 TD, 0 INT after half, plus 8 carries for 55 yards (BettingPros Oct 8 2026). Cuts both ways: low passing ceiling, but he improved within the game. Helps DAL overall.",
+        "[angle] Dual-threat matchup: Dallas has allowed the most rushing yards and attempts per game to opposing QBs and is described as struggling vs dual-threat QBs (BettingPros Oct 8; TheLines Oct 8 2026). Daniels' scrambling targets Dallas's weakest spot. Helps TB.",
+        "[angle] Bowles as a big road dog: Todd Bowles is 4-0 ATS as a road underdog of 7.5-14 points since becoming the Bucs head coach (VSiN Oct 7 2026). Helps TB.",
+        "Prime-time 2026 trend through Week 4: underdogs 9-3-1 ATS, favorites 3-9-1 (but home teams 8-3-1) (BettingPros Oct 8 2026). Mild help to TB.",
+        "Tampa secondary injuries: S Antoine Winfield Jr. (rib fracture, 2-4 weeks) and CB Benjamin Morrison ruled out (BettingPros Oct 8; VSiN Oct 7 2026), against CeeDee Lamb (17 catches, 189 yards, 1 TD last week; 37 catches on 46 targets this season, SI Oct 5). Helps DAL.",
+        "Dallas offense: 30.5 PPG, 3.39 points per drive (5th-best through four games since 2000), 3rd in points per play (0.488); Prescott has 3+ TD passes in each of his last three games as a heavy home favorite and no INT in 7 of his last 8 (BettingPros Oct 8; TheLines Oct 8 2026). Dallas is missing LB DeMarvion Overshown and CB Cobie Durant (TheLines Oct 8). Helps DAL.",
+        "Tampa offense: last in EPA/pass, 19.5 PPG, 20+ points only once this season, 14 points in the Week 4 loss to Green Bay (BettingPros Oct 8; TheLines Oct 8; SI Oct 5 2026). A big dog has to be able to score, and this is the main risk to the pick. Helps DAL."
+      ],
+      "reasoning": "The market decided it. A 1.5-2 point drop from -10 toward Tampa, with the rookie QB start already known and 92% of Circa handle on 33% of tickets, is a strong sharp signal, and the slate's +8.5 sits above Circa's 7.5. Dallas's 31st-ranked defense, which struggles against running QBs, gives a mobile rookie a path to a late score. The most surprising [angle] is Bowles' 4-0 ATS record as a 7.5-14 point road dog. This stays a lean, not strong, because Tampa is 0-13 ATS in its last 13 and has a weak offense. A bad Daniels first half like the one against Green Bay, or Dallas back at -10, would have flipped it.",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

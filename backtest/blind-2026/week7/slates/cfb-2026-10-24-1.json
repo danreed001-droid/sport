@@ -1,0 +1,80 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-24",
+ "chunk": "cfb-2026-10-24-1",
+ "games": [
+  {
+   "away": "Pittsburgh",
+   "home": "Miami",
+   "time": "12:00 PM ET",
+   "homeRank": 1,
+   "awaySpread": 23.5,
+   "homeSpread": -23.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 1300,
+   "homeMoneyline": -2800
+  },
+  {
+   "away": "California",
+   "home": "SMU",
+   "time": "12:00 PM ET",
+   "homeRank": 23,
+   "awaySpread": 19.5,
+   "homeSpread": -19.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 700,
+   "homeMoneyline": -1100
+  },
+  {
+   "away": "Texas Tech",
+   "home": "Cincinnati",
+   "time": "12:00 PM ET",
+   "awayRank": 8,
+   "awaySpread": -11.5,
+   "homeSpread": 11.5,
+   "awaySpreadOdds": 100,
+   "homeSpreadOdds": -106,
+   "awayMoneyline": -400,
+   "homeMoneyline": 376
+  },
+  {
+   "away": "BYU",
+   "home": "UCF",
+   "time": "3:30 PM ET",
+   "awayRank": 2,
+   "awaySpread": -7.5,
+   "homeSpread": 7.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": -290,
+   "homeMoneyline": 235
+  },
+  {
+   "away": "Iowa State",
+   "home": "Arizona",
+   "time": "7:30 PM ET",
+   "homeRank": 25,
+   "awaySpread": 9.5,
+   "homeSpread": -9.5,
+   "awaySpreadOdds": 106,
+   "homeSpreadOdds": -111,
+   "awayMoneyline": 285,
+   "homeMoneyline": -300
+  },
+  {
+   "away": "Houston",
+   "home": "Utah",
+   "time": "10:15 PM ET",
+   "awayRank": 14,
+   "homeRank": 10,
+   "awaySpread": 6.5,
+   "homeSpread": -6.5,
+   "awaySpreadOdds": 106,
+   "homeSpreadOdds": -111,
+   "awayMoneyline": 215,
+   "homeMoneyline": -223
+  }
+ ]
+}

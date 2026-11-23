@@ -1,0 +1,165 @@
+{
+  "sport": "nba", "date": "2026-11-07", "chunk": "nba-2026-11-07-1",
+  "games": [
+    {
+      "away": "Denver Nuggets", "home": "Indiana Pacers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -8.0,
+      "research": [
+        "[angle] Covers (Quinn Allen, Nov 7 2026): game is at Mexico City Arena, so Indiana's 'home' edge is essentially nonexistent; helps Nuggets -7.5 (but the line is set for a neutral site, so priced).",
+        "Covers (Nov 7): Tyrese Haliburton is out and the writer calls Indiana 'depleted'; helps Nuggets (known before the open, priced).",
+        "Covers (Nov 7): Denver has won two of its last three, beating Toronto by 19 and Phoenix by 7; Jokic scored 32 vs Toronto Friday; helps Nuggets.",
+        "Covers (Nov 7): Indiana has lost four of its last five and struggled to shoot; helps Nuggets.",
+        "Covers (Nov 7): Denver shoots 49.0% / 37.2% from three and is 4th in eFG (56.1%); Indiana 46.5% / 32.8% and 13th (53.5%); helps Nuggets.",
+        "Covers (Nov 7): Pacers games are Under in six of nine and 5-1 to the Under in the last six; a lower-scoring game slightly helps the +7.5 underdog.",
+        "[angle] Covers (Nov 7): Indiana allows 25.6 points per game to opposing centers, a direct Jokic matchup problem; helps Nuggets.",
+        "[angle] Covers (Nov 7): Denver allows 22.1 per game to power forwards, and Pascal Siakam averages 21.3 with 28% usage; Indiana's best path to keep it close; helps Pacers.",
+        "Covers (Nov 7): Jokic played Friday vs Toronto, so Denver is on the second night of a back-to-back with travel to Mexico City; mild help for Pacers.",
+        "Slate/ESPN: open +6.5, close +8.5 toward Denver; total 228.5 to 229.5; move treated as fair, not a reason.",
+        "Covers ATS column and Covers preview (Nov 7): both pick Nuggets -7.5 (Polymarket ~50%); public picks, priced."
+      ],
+      "reasoning": "Denver is clearly better and Jokic has a good matchup, but Haliburton's absence and the neutral site were in the number before it opened, and Denver is on a back-to-back with travel. The projection of about Nuggets by 8 sits on the 7.5 line. Pass; a late Siakam absence would have made it a Denver lean.",
+      "forcedSide": "Denver Nuggets",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Brooklyn Nets", "home": "Atlanta Hawks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 6.0,
+      "research": [
+        "Predictem (Joe Jensen, Nov 7 2026): Jalen Johnson (ankle) is out after missing Friday; he averages about 18/9/8; helps Nets +6.5 (known Friday, before this line settled).",
+        "Predictem (Nov 7): Egor Demin is out for Brooklyn with a leg bruise; helps Hawks.",
+        "[angle] Predictem (Nov 7): Atlanta played Friday, beating Washington 139-132, so the Hawks are on the second night of a back-to-back while Brooklyn last played Wednesday; rest helps Nets.",
+        "Predictem (Nov 7): without Johnson, Nickeil Alexander-Walker scored 28, Luguentz Dort 25 and Onyeka Okongwu 22 and 10 Friday; Atlanta's depth covered the absence; helps Hawks.",
+        "Predictem (Nov 7): Hawks are 6-4 on a three-game win streak but 2-2 at home and 1-3 ATS at State Farm Arena; mild help for Nets (ATS record, priced).",
+        "Predictem (Nov 7): Nets are 2-6 but 4-0 ATS on the road; mild help for Nets (ATS record, priced).",
+        "Predictem (Nov 7): Brooklyn's net rating is about -6 per 100 and it ranks near the bottom in offensive efficiency; Porter Jr. and Randle average about 21 each; a big underdog needs offense, helps Hawks.",
+        "Covers ATS column (Nov 7): Atlanta averages nearly 10 more points per game than Brooklyn, which ranks 24th in turnovers, and covered this number in two of its three straight wins; helps Hawks.",
+        "[angle] Predictem (Nov 7): Atlanta ranks top 10 in pace while Brooklyn plays slowly; tempo control is the underdog's lever, helps Nets.",
+        "Slate/ESPN: open -6.5, close -6.5 (no move); total 224.5 to 227.5; the market did not move on the back-to-back or Johnson news.",
+        "Previews split: Predictem took Nets +6.5 (projected 114-110 Hawks), Covers' ATS analyst took Hawks -6.5 (Polymarket 52%); neutral."
+      ],
+      "reasoning": "Atlanta's back-to-back and Johnson's absence point to Brooklyn, but the Hawks' depth just scored 139 without him and Brooklyn's offense is near the bottom of the league. The line never moved off 6.5 and my projection sits on it. Pass; a late Johnson return would have pushed toward Atlanta.",
+      "forcedSide": "Brooklyn Nets",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "New York Knicks", "home": "Cleveland Cavaliers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -5.0,
+      "research": [
+        "Covers (Geoff Clark, Nov 7 2026): Jarrett Allen missed Friday and is questionable; Sam Merrill left Friday with an elbow injury and is questionable; helps Knicks -5 if either sits (unresolved).",
+        "[angle] Covers (Nov 7): Cleveland is on the second night of a back-to-back after beating Philadelphia 119-95 in an NBA Cup game Friday, while New York has been off since Wednesday; rest helps Knicks.",
+        "Covers (Nov 7): Josh Hart is injured and Landry Shamet starts in his place; Shamet has 13+ in all three games with 25+ minutes; Hart's absence helps Cavaliers +5.",
+        "Covers (Nov 7): Cleveland is 23-37 ATS (38.3%) after a win since the start of last season and 1-3 ATS after a win this season; mild help for Knicks (ATS trend, priced).",
+        "[angle] Covers (Nov 7): rematch of last season's Eastern Conference Finals, won by the defending-champion Knicks; motivation angle mildly helps Cavaliers.",
+        "Covers (Nov 7): the Knicks hold a rebounding edge, bigger if Allen sits, and rank 4th in shot quality per CleaningTheGlass; helps Knicks.",
+        "[angle] Covers (Nov 7): James Harden has made exactly three threes in five straight games and averaged four threes in two regular-season games vs New York last season; helps Cavaliers.",
+        "Covers ATS column (Nov 7): analyst cites Cleveland's more efficient offense and better recent shooting and expects its pace to trouble New York; picked Cavaliers +4.5 (Polymarket 52%).",
+        "Covers preview (Nov 7): Geoff Clark picked Knicks -5.5; previews split.",
+        "Slate/ESPN: open +3.5, close +4.5 toward New York; slate +5 is half a point better than the close for Cleveland; treated as fair, not a reason."
+      ],
+      "reasoning": "The Cavaliers' back-to-back and Allen's uncertain status point to New York, but Hart's absence and Cleveland's offense keep it close; the projection lands on the 5-point number. Allen's late status would decide it, so pass per the lesson to honor that trigger.",
+      "forcedSide": "New York Knicks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Washington Wizards", "home": "Oklahoma City Thunder",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 12.0,
+      "research": [
+        "Predictem (Joe Jensen, Nov 7 2026): Chet Holmgren is out 8-10 weeks after a patellar tendon procedure, Jalen Williams is out after ankle surgery, Cason Wallace needs shoulder surgery; helps Wizards +11.5 (long-known, priced).",
+        "Predictem (Nov 7): Jaylin Williams, Nikola Topic and Thomas Sorber sat Friday's game in Memphis with status unstated; adds depth uncertainty for OKC.",
+        "[angle] Predictem (Nov 7): OKC is on the second night of a back-to-back after Friday's 128-97 win at Memphis, where Ajay Mitchell scored 35; helps Wizards on fatigue, but Mitchell's emergence helps OKC.",
+        "Predictem (Nov 7): Washington also played Friday, losing 139-132 at Atlanta (Kyshawn George 33, Trae Young 23 and 10), so both teams are on a back-to-back; rest is a wash.",
+        "Predictem / Covers ATS column (Nov 7): Anthony Davis (ankle) is day-to-day, missed Friday, and Covers lists him out; thin Washington frontcourt of Ayton and Sarr helps Thunder.",
+        "Predictem (Nov 7): OKC is 7-2 and 4-0 at home; Washington is 4-5 and covered as an 8.5-point underdog in its most recent game; mixed.",
+        "Predictem (Nov 7): OKC's net rating is only about +1.5 with the injuries, Washington's about even; a +1.5 vs 0 gap is far below 11.5 points, helps Wizards.",
+        "Covers ATS column (Nov 7): Shai Gilgeous-Alexander (~30 ppg) leads against an inconsistent Wizards defense that just allowed 139; helps Thunder.",
+        "[angle] Predictem (Nov 7): Washington's offense can score (132 at Atlanta Friday), which a double-digit underdog needs for a backdoor; helps Wizards.",
+        "Slate/ESPN: open -11.5, close -12.5 toward OKC; total 220.5 to 224.5; treated as fair (probably the Davis news).",
+        "Previews split: Predictem took Wizards +11.5 (projected 114-105), Covers ATS analyst took Thunder -11.5 (Polymarket 51%)."
+      ],
+      "reasoning": "OKC's injuries and modest net rating argue for Washington, but Davis is likely out, both teams are on back-to-backs and the market moved a point to OKC, which I treat as fair. Projection about Thunder by 12, on the number. Pass.",
+      "forcedSide": "Oklahoma City Thunder",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Orlando Magic", "home": "Golden State Warriors",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 6.5,
+      "research": [
+        "Covers (Juan Carlos Blanco, Nov 7 2026): Draymond Green (elbow) is likely to sit, raising Yaxel Lendeborg's role; helps Magic +5.5.",
+        "Covers (Nov 7) / Covers ATS column: Orlando is without Paolo Banchero and Jalen Suggs; helps Warriors (priced).",
+        "Covers (Nov 7): Golden State has won six straight after an 0-3 start, by an average of 12.8, including a 20-point win over Miami Thursday; helps Warriors.",
+        "Covers (Nov 7): Golden State is 7-0 ATS in its last seven, 5-0 ATS after wins and +7.9 ATS at home; Orlando is -1.8 ATS on the road; helps Warriors (ATS trends, priced).",
+        "Covers ATS column (Nov 7): Orlando ranks 29th in points per game, 23rd in offensive rating and 25th in defensive rating; Golden State has the fifth-ranked offense and scores 12.3 more per game; a short-handed underdog that can't score helps Warriors.",
+        "Covers (Nov 7): Orlando is on a three-game losing streak, including Thursday at Phoenix; helps Warriors.",
+        "[angle] Covers (Nov 7): Golden State has won 12 of its last 13 home games vs Orlando, the last five by 14.2 on average; H2H, tiebreaker only, helps Warriors.",
+        "[angle] Covers (Nov 7): Anthony Black has 17+ in three of five games on 50% / 45.5% from three, and Golden State allows 50.9% shooting to shooting guards; helps Magic.",
+        "Covers (Nov 7): Orlando allows 60.4 first-half points (4th most); helps Warriors early.",
+        "[angle] Schedule: Orlando played Thursday in Phoenix and Golden State hosted Thursday; both had Friday off, so rest is even. Neutral.",
+        "Slate/ESPN: open -6.5, close -7.5 toward Golden State; slate -5.5 is two points better than the close for the Warriors; per lessons not a reason or tiebreaker."
+      ],
+      "reasoning": "Golden State's form and Orlando's injury-hit, bottom-five offense point to the Warriors, but Green's likely absence trims their edge and the projection of about 6.5 barely clears 5.5. Below the pick bar and Green's late status matters, so pass.",
+      "forcedSide": "Golden State Warriors",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Houston Rockets", "home": "Phoenix Suns",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -7.0,
+      "research": [
+        "Covers (Zak Hanshew, Nov 7 2026): Steven Adams and Clint Capela are unavailable for Houston, leaving its center depth thin behind Sengun; helps Suns +6.5.",
+        "Covers (Nov 7): Houston is 7-2 straight up and 7-2 ATS; Phoenix has covered once in seven games; helps Rockets (ATS records, priced).",
+        "Covers (Nov 7): Houston holds the defensive-rating edge, 110.3 to 119.8, and Phoenix ranks 29th in defensive rating per the Covers ATS column; helps Rockets.",
+        "Covers (Nov 7): Phoenix has a 120.8 home offensive rating (3rd) and scores 121.8 at home; helps Suns keep it close.",
+        "Covers (Nov 7): Houston's road offensive rating is 119.5 (2nd); helps Rockets.",
+        "[angle] Covers (Nov 7): Houston is 9-1 SU and 8-2 ATS in its last 10 meetings with Phoenix and 4-0 in its last four in Phoenix (+84); H2H, tiebreaker only, helps Rockets.",
+        "[angle] Covers (Nov 7): Devin Booker is expected to draw Amen Thompson's defense; a hard matchup for Phoenix's main scorer, helps Rockets.",
+        "[angle] Covers (Nov 7): Alperen Sengun is averaging a career-best 8.1 assists and Miles Bridges has scored 15+ in six straight (19 avg); offsetting.",
+        "Prior games (Covers Nov 5 preview): Phoenix had lost four straight entering Thursday's game vs Orlando and allowed 132 to Portland; helps Rockets.",
+        "Slate/ESPN: open +6.5, close +6.5 (no move); total 222.5 to 223.5; Covers ATS column quoted Rockets -7.5 at writing and picked Houston.",
+        "Covers (Nov 7): Phoenix has the league's highest Over rate (71.4%) and Houston second (66.7%); a high-scoring game adds variance, neutral to the side."
+      ],
+      "reasoning": "Houston is the better team on both ends and owns this matchup, but its missing centers and Phoenix's strong home offense keep the projection near 7, half a point past the 6.5 line. Below the bar, so pass.",
+      "forcedSide": "Houston Rockets",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "San Antonio Spurs", "home": "Portland Trail Blazers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -5.5,
+      "research": [
+        "[angle] Covers (Chris Walder, Nov 7 2026): both teams are on the second night of a back-to-back; Portland blew a 16-point lead in a 124-118 loss to the Lakers Friday with Deni Avdija and Damian Lillard each playing 37+ minutes; fatigue mildly helps Spurs.",
+        "Covers (Nov 7): San Antonio is on a seven-game winning streak with the 2nd-ranked offense and 3rd-ranked defense in that span; helps Spurs.",
+        "[angle] Covers (Nov 7): four of those seven wins came against Utah and Sacramento (combined 2-16), so the streak is padded by weak opponents; helps Blazers +5.5.",
+        "Covers (Nov 7): Portland had a three-game win streak before Friday's loss; helps Blazers.",
+        "Covers (Nov 7): Spurs are 5-1 ATS in the last six meetings and have won and covered the last three in Portland; H2H, tiebreaker only, helps Spurs.",
+        "Covers (Nov 7): San Antonio has gone over in only three of nine games and Portland under in eight straight after a loss; a lower-scoring game slightly helps the +5.5 underdog.",
+        "[angle] Covers (Nov 7): Portland's net rating is +14.9 with Scoot Henderson off the floor and -1.3 with him on; his 7.9 points (down from 14.9) drag the second unit; helps Spurs.",
+        "Covers (Nov 7): Dylan Harper is shooting 37.9% from three (up from 34.3%); Julian Champagnie averages about 12 over his last six; helps Spurs.",
+        "Covers ATS column (Nov 7): Wembanyama gives the Spurs a major inside edge and San Antonio takes better care of the ball; picked Spurs (quoted at -1.5 at writing).",
+        "Slate/ESPN: open +4.5, close +5.5 toward San Antonio; treated as fair, not a reason.",
+        "Covers (Nov 7): writer's top pick Spurs -5.5 (public pick, priced)."
+      ],
+      "reasoning": "San Antonio is the better team and Portland's stars logged heavy minutes Friday, but both teams are on back-to-backs and the Spurs' streak is padded by Utah and Sacramento. Projection about Spurs by 5.5, right on the line. Pass.",
+      "forcedSide": "San Antonio Spurs",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

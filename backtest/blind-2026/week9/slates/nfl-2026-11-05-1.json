@@ -1,0 +1,21 @@
+{
+ "sport": "nfl",
+ "date": "2026-11-05",
+ "chunk": "nfl-2026-11-05-1",
+ "games": [
+  {
+   "away": "Jacksonville Jaguars",
+   "home": "Baltimore Ravens",
+   "time": "8:15 PM ET",
+   "awaySpread": -10,
+   "homeSpread": 10,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -520,
+   "homeMoneyline": 390,
+   "homeSpreadClose": 9.5,
+   "totalOpen": 49.5,
+   "totalClose": 40.5
+  }
+ ]
+}

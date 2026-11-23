@@ -1,0 +1,143 @@
+{
+  "sport": "nfl", "date": "2026-11-01", "chunk": "nfl-2026-11-01-1",
+  "games": [
+    {
+      "away": "Baltimore Ravens", "home": "Buffalo Bills",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "Slate Bills -3.5; DraftKings opened BUF -2.5 and closed -3.0 (slate file). The market moved half a point toward Buffalo, and the slate number is half a point worse for Bills backers than the close. Spread-specific; slightly favors Ravens +3.5 as the slate number.",
+        "Total opened 51.5 and closed 54.5 (slate file). The 3-point jump fits Lamar Jackson being expected to play. Neutral on the side.",
+        "Lamar Jackson (high ankle sprain) missed three straight games and is returning. Covers (Nov 1, 9:46 AM ET): 'Jackson isn't 100%, and his mobility will be tested.' Helps Bills.",
+        "[angle] The Baltimore OL is depleted: rookie G Olaivavega Ioane doubtful (MCL), the top three centers on IR (Predictem, Oct 28), and Stanley, Simpson and Ioane carrying designations (Covers, Nov 1). The line ranks 25th in adjusted sack rate (FTN). Helps Bills.",
+        "[angle] Baltimore outscored opponents by 65 in first halves and was outscored by 70 after halftime, which ESPN Research calls the second-worst swing through seven games in NFL history. It blew double-digit second-half leads in back-to-back weeks, including 35-13 at Cincinnati after leading 13-0 (Predictem, Oct 28). Helps Bills late, but a fast Ravens start also opens backdoor paths.",
+        "Baltimore is 1-4 ATS in its last five and 1-2 without Jackson (Predictem, Oct 28). Spread-specific; helps Bills, but it's priced.",
+        "Buffalo is coming off a Week 7 bye (last played Oct 18), and D.J. Moore and Ed Oliver are returning from it (Covers, Nov 1; Predictem, Oct 28). Helps Bills.",
+        "Buffalo ranks No. 1 in offensive EPA/play, including No. 1 rushing EPA, but its defense is 29th in EPA allowed/play and 23rd vs the pass, with 9 giveaways in 6 games. S C.J. Gardner-Johnson is suspended one game (Predictem, Oct 28). Mixed: the weak defense helps Ravens cover.",
+        "[angle] Buffalo's last three games were each decided by exactly three points (Predictem, Oct 28). With the slate at 3.5, a typical Bills win lands on the Ravens' side of the number. Spread-specific; helps Ravens +3.5.",
+        "Buffalo is 7-2 SU and 6-3 ATS as a home favorite of 4 or fewer since 2020 (Covers, Nov 1). Spread-specific; helps Bills (priced).",
+        "Derrick Henry is averaging 3.9 YPC, and Baltimore ran for only 83 yards vs Cincinnati (Predictem, Oct 28). Helps Bills.",
+        "Covers' moneyline split shows Bills 61% / Ravens 39% (unlabeled, Nov 1). Previews mostly back Buffalo (Covers ML, Predictem -3), while SBR took Ravens +3.5. Preview picks aren't an edge per LESSONS."
+      ],
+      "reasoning": "I project Bills by about 3, half a point short of the slate's 3.5, and the market only moved from 2.5 to 3. Jackson's not-100% return and the gutted Baltimore OL argue for Buffalo, but Buffalo's three straight exactly-3-point games and its leaky pass defense keep the hook live for Baltimore. It's a pass. Forced side Ravens: the projection lands under the number and the road side is the NFL tiebreaker. A report ruling Jackson limited or out at kickoff would have flipped it to Buffalo.",
+      "forcedSide": "Baltimore Ravens",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Tennessee Titans", "home": "Cincinnati Bengals",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 11.0,
+      "research": [
+        "Slate Bengals -12.5; DraftKings opened CIN -6.5 and closed -13.5 (slate file), a 7-point move toward Cincinnati. Per LESSONS, treat the close as fair. The slate is 1 point better than the close for Bengals backers. Spread-specific.",
+        "Predictem (Oct 28) says the line had already moved about four points (to -10.5) on 'one half of football': Cincinnati's 35-13 win over Baltimore, where it trailed 13-0 at halftime and then dominated. Helps Bengals in the market's eyes, but it's a one-game move.",
+        "[angle] Tennessee traded All-Pro DT Jeffery Simmons to the Bears on Thursday, Oct 29 (Covers, Nov 1; SBR, Oct 30). Covers calls it a major blow to an already weak run defense. That news came after the open and helps Bengals, but it's priced into the close.",
+        "Tennessee is 1-6, but five of its seven games were decided by 6 points or fewer (Predictem, Oct 28). Spread-specific margin tendency; helps Titans +12.5.",
+        "Titans are 2-1 ATS on the road, and all three road losses were by 6 or fewer (SBR, Oct 30). Spread-specific; helps Titans.",
+        "Tennessee's defense is last in DVOA (FTN, via Covers Nov 1), allowing the second-highest completion rate and the fourth-most 20+ yard passes. Helps Bengals.",
+        "Tennessee ranks 31st in EPA/play, and Cam Ward is turning the ball over too often (Predictem, Oct 28). But the Titans had a season-high 322 yards and 3 Tony Pollard TDs in Week 7 (SBR). Mostly helps Bengals; a big underdog needs to score.",
+        "Burrow is completing well above expectation, and Cincinnati ranks 5th in passing efficiency, 18th in rushing (Chase Brown 3.5 YPC) and 10th in defensive EPA/play, with 21 sacks and 10 takeaways (Predictem, Oct 28). Helps Bengals.",
+        "Cincinnati has the third-worst third-down defense, and from Weeks 3-5 it allowed 460+ rushing yards over three games (Covers Nov 1; SBR Oct 30). Helps Titans stay within the number.",
+        "Injuries: Bengals TE Erick All Jr. (IR, believed torn ACL), TE Tanner Hudson (IR) and S Kyle Dugger (out). Titans WR Calvin Ridley (hip) and RB Tyjae Spears (knee) were questionable midweek (Predictem, Oct 28). Mixed.",
+        "Weather: high-60s with some shower chance and light wind (Covers, Nov 1). Neutral.",
+        "Writers split: Predictem Titans +10.5 (projects 26-17), SBR Titans +12.5 (27-17), and a SportsbookReview AI projection on Cincinnati. Not an edge per LESSONS."
+      ],
+      "reasoning": "After a 7-point move, LESSONS says to treat the close (13.5) as fair. The move came from one strong Bengals half plus the Simmons trade, and fading it hasn't worked. My Bengals-by-11 projection would favor Tennessee, but that's a gap the lessons say not to trust. Forced side Titans: their close-loss pattern (5 of 7 games within 6, road losses all within 6) and the road tiebreaker. A healthy Ridley/Spears confirmation or Burrow-related news could have changed it; nothing decisive turned up.",
+      "forcedSide": "Tennessee Titans",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Arizona Cardinals", "home": "Dallas Cowboys",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.0,
+      "research": [
+        "Slate Cowboys -7.5 (home -7.5 at +113, away +7.5 at -113); DraftKings opened DAL -10.5 and closed -7.0 (slate file), a 3.5-point move toward Arizona. Spread-specific; per LESSONS, treat the close as fair.",
+        "Total opened 49.5 and closed 54.5 (slate file). Neutral on the side.",
+        "[angle] Dallas is on a short week after beating Philadelphia (SBR ATS article, posted Oct 30). Helps Cardinals.",
+        "[angle] Dallas's win over Philadelphia came without Jalen Hurts and DeVonta Smith and with a hobbled Saquon Barkley, so SBR's writer calls Dallas overvalued (SBR, Oct 30). Helps Cardinals (narrative).",
+        "Arizona has lost 10 straight home games (this game is in Dallas), is the only team with four double-digit losses, and has two of the season's five biggest upsets (Week 1 vs Chargers, Week 6 vs Rams) (SBR, Oct 30). Spread-specific margin tendency: a boom-or-bust team. Mixed.",
+        "Kalshi had Dallas at 74% to win, and bet365 listed ARI +235 / DAL -290 with a 53.5 total (search summary of pre-game previews). Neutral.",
+        "Research is incomplete (fewer than 10 solid bullets): I stopped after a search summary leaked the result (see contaminationNote)."
+      ],
+      "reasoning": "Contaminated before any lean was written down, so it's locked as a pass. Before the leak I had only the line move toward Arizona (10.5 to 7) and SBR's short-week/overvalued-Dallas note, with no projection reached; the 7.0 projection is just the close. The forced side is the NFL road-side tiebreaker from LESSONS, applied mechanically ('no read'); it isn't a forecast.",
+      "forcedSide": "Arizona Cardinals",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary (allowed_domains limited to betting sites) said Covers had marked its Cardinals +6.5 pick a win and its Cowboys moneyline pick a loss, implying Arizona won outright. I saw this before forming any lean on the game, then stopped researching it. Forced side Arizona comes from the NFL road tiebreaker default, not pre-leak analysis, so it isn't a real forecast."
+    },
+    {
+      "away": "Minnesota Vikings", "home": "Detroit Lions",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.0,
+      "research": [
+        "Slate Lions -3; DraftKings opened DET -4.5 and closed -3.5 (slate file). The market moved a point toward Minnesota, but the slate's +3 is half a point worse for Vikings backers than the close (+3.5). Spread-specific.",
+        "Total opened 47.5 and closed 45.5 (slate file), which fits a defense-led Vikings game. Neutral or slightly helps the underdog.",
+        "Minnesota is 6-0, the only unbeaten team, and 3-0 SU and ATS on the road. It has covered 7 of its last 10 road games (Predictem Oct 28; Covers Nov 1). Spread-specific; helps Vikings (priced).",
+        "Detroit is 1-4-1 ATS overall and 0-2-1 ATS at home (Predictem, Oct 28). Spread-specific; helps Vikings (priced).",
+        "Minnesota's defense ranks first in points allowed, EPA/play allowed and EPA vs the pass, and second in DVOA. It has allowed 74 points in six games and blitzed Daniel Jones on 85.2% of dropbacks last week, the highest rate in the Next Gen Stats era (Predictem Oct 28; Covers Nov 1; SBR Oct 30). Helps Vikings.",
+        "[angle] Jared Goff ranks No. 1 in EPA/dropback vs the blitz and leads the NFL with a 112.5 rating and zero interceptions (SBR Oct 30; Predictem Oct 28). Minnesota's signature blitz-heavy plan runs into the league's best blitz-beater. Helps Lions.",
+        "Minnesota's offense ranks 29th in EPA and 29th in passing yards/game. Kyler Murray hasn't reached 250 passing yards in a game (Predictem, Oct 28). Covers (Nov 1) says the passing game is 'finally at full strength' with Jefferson and Addison. Helps Lions; can Minnesota score enough?",
+        "Detroit's defense is 31st-last in EPA, allows a league-worst 391 yards/game and 48.2% on third down, and has given a league-high 602 receiving yards to tight ends. Hockenson has a 33.3% red-zone target share (Predictem Oct 28; Covers Nov 1). Helps Vikings.",
+        "[angle] TeamRankings rates Minnesota the luckiest team in football and has its third-easiest schedule so far (Predictem Oct 28; SBR Oct 30). Detroit is 12th and Minnesota 9th in TeamRankings' predictive ratings. Undefeated public team, soft schedule: helps Lions.",
+        "Injuries: Amon-Ra St. Brown questionable (ankle) and S Kerby Joseph still out for Detroit, though S Brian Branch is back. Minnesota's Aaron Jones is day-to-day (knee, Jordan Mason in line for work), and C Nick Samac and G Donovan Jackson are on IR (Predictem Oct 28; Covers). Mixed; St. Brown's final status was unconfirmed.",
+        "Minnesota swept Detroit last year, including an outright win at Ford Field as a 9.5-point underdog (Predictem). Head-to-head history is priced, so tiebreaker at most.",
+        "Previews lean Vikings +3.5 (Predictem projects 21-20, Covers 23-21). The slate is +3, not +3.5, and preview picks aren't an edge."
+      ],
+      "reasoning": "I project Lions by about 2, which clears the slate's 3 by only 1 for Minnesota: a pass, made weaker because the slate's +3 is worse than the +3.5 close the previews liked. The best [angle] cuts against the Vikings: their record-setting blitz meets Goff, the league's best QB vs the blitz, and Minnesota's offense is 29th in EPA. Forced side Vikings: top defense vs Detroit's 31st-ranked one, plus the road tiebreaker. A confirmed St. Brown absence would have strengthened it; a full-go St. Brown with Jones out would have moved me toward a Lions pass.",
+      "forcedSide": "Minnesota Vikings",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Las Vegas Raiders", "home": "New York Jets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 1.0,
+      "research": [
+        "Slate Jets -1.5; DraftKings opened -1.5 and closed -1.5 (slate file). No spread movement. Spread-specific.",
+        "Total opened 41.5 and closed 46.5 (slate file), a 5-point jump. The market expects a shootout between two vulnerable defenses. Neutral on the side.",
+        "[angle] Geno Smith starts for the Jets against the Raiders team he played for last season, with a 105.2 rating, 10 TDs and 2 INTs (Predictem, Oct 28). Revenge narrative; helps Jets, slightly.",
+        "Kirk Cousins (38) leads the NFL with 16 TD passes, and Las Vegas ranks 9th in EPA/dropback. Klint Kubiak says there's no QB controversy, so No. 1 pick Fernando Mendoza waits (Predictem, Oct 28). Helps Raiders.",
+        "Las Vegas started 3-0 and has lost four straight. Its defense allowed 30, 45, 33 and 35 points in that stretch and +0.256 EPA/play over the last three weeks, with a red-zone TD rate allowed of 78.6% (Predictem Oct 28; WagerTalk preview). Helps Jets.",
+        "[angle] The Jets lost at home to a previously winless Miami. Aaron Glenn is 5-19 as head coach and calls the defense, and there was a Garrett Wilson sideline exchange, so there's pressure and possible locker-room friction (Predictem, Oct 28). Helps Raiders.",
+        "The Jets' pass defense has one interception all season (last in the NFL), and New York ranks 27th in rushing EPA with a 44.4% red-zone TD rate (Predictem, Oct 28). Helps Raiders.",
+        "Ashton Jeanty is averaging only 3.1 YPC (Predictem, Oct 28). Helps Jets.",
+        "Jets RB Breece Hall (quad) may return, and Braelon Allen has also been dealing with injury (Predictem Oct 28; WagerTalk props preview). Mixed; an uncertain Jets backfield.",
+        "[angle] The Jets' offense had its best EPA game of the season against Miami (Predictem). Momentum helps Jets.",
+        "Weather: mid-60s and dry at MetLife (Predictem). Neutral.",
+        "Writers split: Predictem projects Jets 27-24, WagerTalk projects Raiders 27-24 and takes Raiders +1.5. Not an edge."
+      ],
+      "reasoning": "This is a coin flip at 1.5 with no line movement. Both defenses are collapsing and both offenses can pass, so I project Jets by about 1. Most surprising [angle]: Geno Smith gets revenge on his old team while his head coach sits at 5-19. That's balanced by the Raiders' four-game defensive collapse. Forced side Raiders only as the NFL road tiebreaker for a game on the number ('no read' otherwise). A WagerTalk search snippet listed 'Raiders cover +1.5 / Over 45.5', which matched its own 27-24 Raiders prediction (a pick, not a result), so I didn't treat it as a leak, and the game was a pass regardless.",
+      "forcedSide": "Las Vegas Raiders",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Cleveland Browns", "home": "Pittsburgh Steelers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "Slate Steelers -3.5 (-110 both sides); DraftKings opened PIT -5.5 and closed -3.5 (slate file), a 2-point move toward Cleveland that stopped on the hook. Slate equals close. Spread-specific; the market moved toward Browns.",
+        "Total opened 39.5 and closed 38.5 (slate file). It's a low total, but per LESSONS that isn't a reason. Neutral.",
+        "Both teams are 5-2, and the winner leads the AFC North alone. This is a division rivalry (Predictem, Oct 28). Neutral.",
+        "[angle] All five Cleveland wins were by 4 points or fewer, and TeamRankings rates the Browns second in luck. Cleveland ranks 29th in home-vs-road performance (Predictem, Oct 28). Helps Steelers.",
+        "Pittsburgh is 3-0 SU and ATS at home and has allowed about 17 points a game over its last three (Predictem, Oct 28). Spread-specific; helps Steelers (priced).",
+        "Deshaun Watson has been sacked 25 times, Cleveland's offense ranks 26th in EPA, and it converts just 32.6% of third downs (Predictem). Helps Steelers.",
+        "Aaron Rodgers (42) hasn't been sharp, and Pittsburgh's passing game is also 26th in EPA. Its run game is 4th in rushing EPA behind Jaylen Warren, and its defense holds opponents to 35.9% on third down (Predictem). Mixed; both offenses are limited.",
+        "Cleveland's defense is 5th in pass success rate allowed even after trading Myles Garrett to the Rams in June (Predictem). Helps Browns keep it close.",
+        "[angle] Pittsburgh has a bye next week (look-ahead risk), and McCarthy calls it the oldest team he has coached. The team recently flew home from a Paris trip (Predictem, Oct 28). Helps Browns.",
+        "Injuries: Browns Kalia Davis on IR, with Mike Hall Jr. (ankle), Tytus Howard (head) and Myles Harden (hamstring) questionable. Steelers Ben Skowronek and Brandin Echols questionable (Predictem, Oct 28). Slightly helps Steelers.",
+        "Previews split: Predictem Steelers -3.5 (23-16) vs Oddstrader Browns +2.5 (17-16). Not an edge."
+      ],
+      "reasoning": "I project Steelers by about 3, a hook short of 3.5 in a low-total division game. That's inside the pass band: Cleveland's luck in one-score wins and Pittsburgh's 3-0 home ATS are both priced. Most surprising [angle]: the oldest Steelers team, home from Paris, with a bye next week. Forced side Browns: the line moved two points their way, the projection lands just under the hook, and the road tiebreaker applies. Clear news on Watson's protection (Tytus Howard's status) could have changed it.",
+      "forcedSide": "Cleveland Browns",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

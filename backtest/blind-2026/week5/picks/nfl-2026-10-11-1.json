@@ -1,0 +1,143 @@
+{
+  "sport": "nfl", "date": "2026-10-11", "chunk": "nfl-2026-10-11-1",
+  "games": [
+    {
+      "away": "Philadelphia Eagles", "home": "Jacksonville Jaguars",
+      "pick": "Jacksonville Jaguars",
+      "confidence": "lean",
+      "projectedMargin": 10.0,
+      "research": [
+        "Final Friday report: Eagles ruled out RB Saquon Barkley (hamstring), WR DeVonta Smith (hamstring), WR Hollywood Brown (ankle), C Drew Kendall (knee) and S Marcus Epps; EDGE Jonathan Greenard questionable (PhillyVoice, Oct 9). Helps JAX.",
+        "[angle] Offensive line in upheaval: Lane Johnson retired abruptly midweek and Cam Jurgens was traded to Baltimore the next day; Landon Dickerson on IR, so RT Markel Bell makes his 2nd NFL start and Jake Majors starts at center (Inquirer/AP previews, Oct 8-10; PhillyVoice Oct 9). Helps JAX.",
+        "[angle] Owner-level talk of a rebuild: Newsweek ran 'Eagles owner not ready to admit team entering a rebuild' the week of the game (Newsweek, Oct 2026). Organizational turmoil helps JAX.",
+        "Jalen Hurts went 12-of-27 for 93 yards (career low) in the Week 4 24-20 loss to the Rams; Philly outgained by 370 yards over its last two games (NBC Sports, Oct 8). Helps JAX.",
+        "Eagles are 0-4 ATS (NFL-worst) and 9-18 ATS after a loss under Sirianni; Jaguars 3-1 ATS, 2-0 ATS as favorite this year and 9-2 ATS as a favorite under Liam Coen (NBC Sports, Oct 8). Helps JAX.",
+        "Line move: opened JAX -4.5, moved to -7/-7.5 after the Barkley/Smith news; total 44.5 down to 41.5 (NBC Sports, Oct 8; Sports Betting Dime, Oct 9). Injury-driven move = information. Helps JAX.",
+        "Splits: ~72% of spread money/bets on Jacksonville, 62% on the Under (Sports Betting Dime, Oct 9) -- public-heavy favorite, a mild caution for JAX.",
+        "Per-game: Eagles 18.8 pts, 269.8 yds, -3 TO margin, 35.9% 3rd-down; Jaguars 26.0 pts, 13.3 allowed, +6 TO margin, 51.1% 3rd-down, 81.8% red zone (Sports Betting Dime, Oct 9). Helps JAX.",
+        "Caution: Jaguars allow 354.5 yards/game, more than the Eagles' 344.0 -- their 13.3 points allowed leans on a +6 turnover margin that may not hold (Sports Betting Dime, Oct 9). Helps PHI.",
+        "First halves: Eagles score 0.8 first-quarter points/game (tied last); Jaguars have allowed 0 first-quarter points and an NFL-best 9 first-half points (NBC Sports, Oct 8). Helps JAX.",
+        "[angle] Neutral site at Tottenham (Jaguars' designated home game) trims home-field edge; Jaguars have won 11 of 12 regular-season games (AP via Bay News 9, Oct 8). Mixed; record helps JAX.",
+        "Jaguars healthy: only S Eric Murray (concussion) doubtful, nobody out (PhillyVoice, Oct 9). Helps JAX."
+      ],
+      "reasoning": "Philadelphia's offense was already the league's worst by yardage and now loses its RB1, two top WRs, its center and (via retirement/trade) two OL starters, while Jacksonville is healthy and 9-2 ATS as a favorite under Coen. The surprising angle was the Lane Johnson retirement/Jurgens trade gutting the line mid-week. A neutral site, Jax's yardage-allowed number and 72% public on Jax kept it to a lean; a healthy Barkley/Smith would have flipped it to a pass.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Cincinnati Bengals", "home": "Miami Dolphins",
+      "pick": "Cincinnati Bengals",
+      "confidence": "lean",
+      "projectedMargin": -10.0,
+      "research": [
+        "Ja'Marr Chase (concussion) and Tee Higgins (groin/neck) finished the week as full practice participants and were reported active Sunday morning (Local12, Oct 9; AP via Bay News 9, Oct 11 pregame). Helps CIN.",
+        "Dolphins are 0-4 with the league's worst point differential (-55) and a league-worst 11.5 points per game; they have scored 13 or fewer in every game (Covers, Oct 11; TheSpread, Oct 11). Helps CIN.",
+        "[angle] Miami QB Malik Willis has not topped a 40.5% success rate in any game and has been pressured 52 times; Cincinnati pressures on 38% of dropbacks with 14 sacks (3rd) (Covers, Oct 11; TheSpread, Oct 11). Helps CIN.",
+        "[angle] Miami lost De'Von Achane for the season (torn ACL) and has the most rookie starts in the league (26) under first-year coach Jeff Hafley (TheSpread, Oct 11; Covers, Oct 11). Helps CIN.",
+        "Bengals 2-2 point differential about +22 (beat TB 33-27, won 20-6 at HOU, won 30-27 at PIT, lost 22-17 to JAX), only one double-digit win (TheSpread, Oct 11). Close-game tendency helps MIA.",
+        "Bengals' run game produced 10 rushing yards vs Jacksonville; Burrow threw for 428 yards but 2 INTs (Local12, Oct 5). One-dimensional offense helps MIA at +7.",
+        "Miami allows 25.3 points and 335.3 yards per game but only 3.6 yards per carry (TheSpread, Oct 11). Pass-funnel defense vs Burrow (1,171 yds, 4th) helps CIN.",
+        "Bengals secondary thin: S Kyle Dugger out, Bryan Cook under evaluation (TheSpread, Oct 11; Local12, Oct 5). Helps MIA slightly.",
+        "Line: SBR shows an open of CIN -5.5, now -6.5/-7; total 42 up to 43.5 (SportsbookReview; TheSpread, Oct 11). Move toward CIN helps CIN.",
+        "Splits: about 75% of spread tickets on Cincinnati (TheSpread, Oct 11) -- public side, mild caution for CIN.",
+        "ATS: Miami 1-3 ATS; Cincinnati has covered 11 of its last 19 (TheSpread; Covers, Oct 11). Helps CIN.",
+        "Miami ranks 28th in defensive DVOA and 32nd vs tight ends; Mike Gesicki in line for targets (Covers, Oct 11). Helps CIN."
+      ],
+      "reasoning": "Miami can't score with this lineup (11.5 ppg, never more than 13, Willis under constant pressure), which is the key test for a big underdog. Cincinnati gets Chase and Higgins back. The most surprising angle was how lopsided Miami's season numbers are (-55 differential, most rookie starts). Bengals' close-game habit, a dead run game and 75% public tickets held it to a lean; Chase being ruled out would have made it a pass.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Chicago Bears", "home": "Green Bay Packers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -1.5,
+      "research": [
+        "QB Caleb Williams (hamstring) out; Tyson Bagent makes his second straight start (Chicago Bears game preview, Oct 10). Helps GB.",
+        "RB Kyle Monangai (toe) ruled out; Bears OL Thuney, Jackson and Wright had no designation after full Friday practices (Chicago Bears game preview, Oct 10). Mixed; Monangai out helps GB.",
+        "Bears lead the NFL in total yards (429.0), rushing (196.3) and time of possession (36:35); third-down defense 2nd at 23.7% (Chicago Bears game preview, Oct 10). Helps CHI.",
+        "Records: Bears 3-1 with +47 point differential; Packers 2-2 at -32 (search snippet of pre-game previews, Oct 2026). Helps CHI.",
+        "ATS: Bears 3-1 ATS, 1-3 to the Over; Packers 1-3 ATS (NBC Sports, Oct 2026). Helps CHI.",
+        "Line: Green Bay opened -3.5; Bears -2.5 by Monday; later -1.5; total 49.5 down to 44.5-45.5 (NBC Sports; Bleacher Nation, Oct 2026). Big early swing toward CHI, then a drift back toward GB late in the week.",
+        "[angle] Jordan Love has a 113.2 career passer rating vs Chicago, the best of any QB with 150+ attempts, and 13 TD passes vs them (Chicago Bears game preview, Oct 10). Helps GB.",
+        "[angle] Packers without RB Josh Jacobs (Commissioner's Exempt list since Aug 30), LB Edgerrin Cooper (ACL), RT Zach Tom (season) and Micah Parsons (PUP); rushing offense last at 58.0 ypg (Chicago Bears game preview, Oct 10). Helps CHI.",
+        "[angle] Bears seeking a third straight win over Green Bay, first such run since 2005-06 (Chicago Bears game preview, Oct 10). Neutral/motivation.",
+        "Bagent: 322 passing yards, 0 TD, 1 INT in 3 games of action (NBC Sports, Oct 2026). Limited passing helps GB.",
+        "Packers WRs Christian Watson (331 yds, 4 TD) and Matthew Golden (274 yds) carrying the offense (Chicago Bears game preview, Oct 10). Helps GB."
+      ],
+      "reasoning": "The Bears' season numbers (+47, 3-1 ATS, league-best rushing) point one way while a backup QB, an injured RB1 and Love's history vs Chicago point the other; at 1.5 the projection sits on the number. CONTAMINATED: a search summary showed this game's final score before I decided, so this is a pass and should be graded separately.",
+      "contaminated": true,
+      "contaminationNote": "While searching 'Bears vs Packers week 5 2026 preview odds injuries Lambeau', the search tool's summary quoted a Bleacher Nation schedule widget listing 'Bears @ Packers October 11, 2026 L 7-31' (a 31-7 Green Bay win). I saw this BEFORE deciding. I locked a pass (no pick) and a projection at the number based on the pre-game evidence."
+    },
+    {
+      "away": "Cleveland Browns", "home": "New York Jets",
+      "pick": "Cleveland Browns",
+      "confidence": "lean",
+      "projectedMargin": 0.0,
+      "research": [
+        "Records: Browns 3-1 (three straight wins as underdogs over TB, CAR, PIT after a 34-10 opening loss at JAX); Jets 1-3, three straight losses to CHI, DET, GB after beating TEN (SI, Oct 6). Helps CLE.",
+        "ATS: Browns 3-1 ATS and 6-1 ATS in their last seven; Jets 2-2 ATS (SI, Oct 6; Covers, Oct 11). Helps CLE.",
+        "Line: opened Jets -1.5, moved to -2.5; total 39.5 (SI, Oct 6 and Oct 9). Move toward NYJ helps NYJ; no splits found to say whether it was sharp.",
+        "[angle] Rest edge: Browns played Thursday night in Week 4 (beat Pittsburgh 27-24), so they have 10 days off; Jets played Sunday (SI, Oct 6/9). Helps CLE.",
+        "Jets offense had 157 total yards in Week 4 and ranks 28th rushing, 22nd total offense, 18th passing (Covers, Oct 11). Helps CLE.",
+        "Browns have the 5th-highest pressure rate (41.5%) facing Geno Smith; Browns rank 23rd vs the pass (Covers, Oct 11). Mixed; pressure helps CLE.",
+        "[angle] Forecast: significant rainstorm with sustained winds over 10 mph at MetLife (Covers, Oct 11). A low-scoring game makes +2.5 more valuable; helps CLE.",
+        "[angle] Counterpoint: SI's Ryan Gilbert argued Cleveland's lone road win was distorted by field conditions and picked Jets 24-20 (SI, Oct 9). Helps NYJ.",
+        "Browns injuries: DT Mason Graham, OL Teven Jenkins, OL Elgton Jenkins, WR Tylan Wallace questionable; Graham reported missing (SI, Oct 6; search summary of previews). Helps NYJ.",
+        "Jets: CB Jarvis Brownlee Jr. questionable, S Braiden McGregor out (SI, Oct 6). Helps CLE slightly.",
+        "Browns QB room: Dillon Gabriel on IR, Deshaun Watson named as starter (search summary of Covers preview, Oct 11). Unclear direction.",
+        "Head-to-head: Jets beat Browns 27-20 at home last November (SI, Oct 6). Old history, small weight; helps NYJ."
+      ],
+      "reasoning": "Cleveland's repeated performance (three straight wins as an underdog, 6-1 ATS in its last seven) plus 10 days of rest against a Jets offense that managed 157 yards last week makes the home favorite hard to back. The rain-and-wind forecast is the angle: in a sub-40 total, 2.5 points matter more. The Jets' move from -1.5 to -2.5 and Mason Graham's absence kept it a lean; clear sharp money on the Jets would have made it a pass.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Houston Texans", "home": "Tennessee Titans",
+      "pick": "Tennessee Titans",
+      "confidence": "lean",
+      "projectedMargin": -4.0,
+      "research": [
+        "Both teams 0-4; Texans 0-4 ATS, Titans 2-2 ATS (NBC Sports, Oct 7; SI, Oct 6). Helps TEN.",
+        "Titans covered +11.5 at Baltimore in Week 4 (scored 18) and have covered at +7.5 or more in 3 of 4 games (SI, Oct 6; SportsbookReview, Oct 11). Helps TEN.",
+        "Line: opened Texans -3.5, moved to -7/-7.5; total down six from 43.5 to 37.5 (NBC Sports, Oct 7; SportsbookReview). A big move toward HOU is information and helps HOU.",
+        "Houston defense described as bottom-five, allowing 27.3 points per game and forcing turnovers against only one opponent (SportsbookReview, Oct 11). Helps TEN.",
+        "Titans defense: no opponent has scored more than 24 or thrown for 300 yards; Jeffery Simmons anchors the line (SportsbookReview, Oct 11). Helps TEN.",
+        "C.J. Stroud: 1,141 yards, 5 TD, 0 INT, 95.9 rating but sacked 12 times; threw for 347 yards in the Week 4 loss to Dallas (NBC Sports, Oct 7; SI, Oct 6). Helps HOU.",
+        "Cam Ward: 726 yards, 3 TD, 2 INT, 81.4 rating, sacked 6 times (NBC Sports, Oct 7). Weaker passing helps HOU.",
+        "Texans injuries: Tank Dell on IR; Azeez Al-Shaair, Jaden Crumedy, Kenneth Murray Jr., Jaylin Smith questionable; CB Derek Stingley Jr. (oblique) questionable (SI, Oct 6; NBC; search summary of previews). Helps TEN.",
+        "Titans injuries: SS Amani Hooker questionable; RG Kevin Zeitler, RT JC Latham questionable (NBC Sports, Oct 7; search summary of previews). Helps HOU.",
+        "[angle] Houston has lost twice this season as a home team, including 20-6 to Cincinnati, and is 0-4 despite being favored in three of four games (SI, Oct 6; TheSpread Bengals preview). Repeated failure to cover as a favorite helps TEN.",
+        "[angle] Winless division game at home for Tennessee, with Nico Collins back for only 2 games for Houston (14 catches, 193 yds, 3 TD) (NBC Sports, Oct 7). Collins' return helps HOU.",
+        "[angle] The total of 37.5 was the lowest on the Week 5 board (NBC Sports, Oct 7); a low-scoring game makes 7 points a lot to give. Helps TEN.",
+        "Experts split: SBR best bet Titans +7.5 (projected 27-19 TEN); Covers took Texans -7.5; Squawka's model had HOU by ~8 but its editorial pick was 19-16 HOU (search summaries, Oct 2026). Mixed."
+      ],
+      "reasoning": "A winless road team giving 7 in a division game with the lowest total on the board is too much, especially from a Houston side that is 0-4 ATS and allows 27.3 a game while Tennessee has stayed within its number three times. The big move from -3.5 to -7.5 is the strongest counterpoint and is why this is a lean, not strong. A clear injury reason behind the move (none found) would have made it a pass.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Indianapolis Colts", "home": "Pittsburgh Steelers",
+      "pick": "Pittsburgh Steelers",
+      "confidence": "lean",
+      "projectedMargin": 5.0,
+      "research": [
+        "[angle] Colts played in London in Week 4 (beat Washington 30-13) and come straight back to a road game with no bye (SI, Oct 6). Helps PIT.",
+        "[angle] Steelers played Thursday night in Week 4 (lost 27-24 to Cleveland), giving them 10 days of rest (SI, Oct 6). Helps PIT.",
+        "Colts rank last in the NFL in net yards per play (-1.7) and 22nd in opponent EPA per play; they allow 26.0 points per game (SI, Oct 6; NBC Sports, Oct 6). Helps PIT.",
+        "ATS: Colts 3-1 ATS; Steelers 2-2 ATS and 6-4 ATS in their last 10 games (NBC Sports, Oct 6; SI, Oct 6). Colts record helps IND.",
+        "Line: Steelers -2.5, unchanged from open; total down from 47.5 to 44.5 (NBC Sports, Oct 6). Neutral.",
+        "Daniel Jones: 754 yards, 3 TD, 4 INT, 73.9 rating, sacked 8 times in 4 games (NBC Sports, Oct 6). Helps PIT.",
+        "Aaron Rodgers: 999 yards, 7 TD, 4 INT, 81.6 rating, sacked 13 times (NBC Sports, Oct 6). Slight edge PIT.",
+        "Jonathan Taylor: 86 carries, 353 yards, 6 TD; ran for 95 and 2 TD in London (NBC Sports; SI, Oct 6). Helps IND.",
+        "Colts injuries: DE Arden Key out, WR Keenan Allen questionable; Grover Stewart and Charvarius Ward listed as rest days on Thursday (NBC Sports, Oct 6; Fantasy Alarm practice report). Slightly helps PIT.",
+        "Steelers injuries: CB Jamel Dean doubtful, RB Rico Dowdle questionable (NBC Sports, Oct 6). Helps IND.",
+        "Series: Steelers 7-3 ATS in the last 10 meetings and won 27-20 last November (SI, Oct 6). Old history, small weight; helps PIT.",
+        "Projections: Squawka model PIT by about 3 (61%); SI writer picked Steelers -2.5 on the travel/rest gap; NBC model no spread play (search summary; SI, Oct 6; NBC Sports, Oct 6). Lean PIT."
+      ],
+      "reasoning": "The rest and travel gap (Colts back from London with no bye vs Steelers on 10 days) and Indianapolis ranking last in net yards per play point to Pittsburgh at a short number. The London-return angle is the decider; the Colts' 3-1 ATS start and Jonathan Taylor's form are the counterweights. Rodgers or Metcalf missing would have made it a pass.",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

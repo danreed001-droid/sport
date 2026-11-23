@@ -1,0 +1,74 @@
+{
+  "sport": "nba", "date": "2026-10-20", "chunk": "nba-2026-10-20-1",
+  "games": [
+    {
+      "away": "Boston Celtics", "home": "Detroit Pistons",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 0.5,
+      "research": [
+        "[spread] Line movement: Detroit opened as the favorite (-1.5 per WagerTalk, -2.5 at DraftKings per Predictem) and the number swung to Boston -1.5; Predictem (Oct 20) says it moved about four points toward Boston on the names Tatum and Paul George. Under LESSONS, a 3+ point move makes the new number fair; neutral.",
+        "[spread] Betting splits (WagerTalk, Oct 20): Boston drew 97% of spread money and 86% of tickets. The line moved WITH the public, so this isn't reverse line movement; slight contrarian lean to Detroit, but not a sharp signal.",
+        "[angle] Boston traded Jaylen Brown (28.7 PPG last season) to Philadelphia for Paul George, now 36, who played 37 games last year and said, \"Hopefully, I can remain healthy\" (Predictem/WagerTalk, Oct 20). That's a big rotation change on opening night; helps Detroit.",
+        "[angle] Jayson Tatum is back from his Achilles tear: 16 regular-season games on 41% shooting last year, 21 PPG in two preseason games (Predictem). RotoWire (Oct 17) said he was expected to suit up Tuesday. Uncertain upside; slightly helps Boston if he looks like himself.",
+        "Boston also added Mike Conley and Mitchell Robinson, who makes his debut at center; its starting five wasn't officially named (Predictem/WagerTalk, Oct 20). New pieces; helps Detroit early.",
+        "Detroit returns four of five starters from a 60-22 team (31-9 at home) and added John Collins, Isaiah Joe and Taurean Prince for shooting; it lost Isaiah Stewart (traded to Memphis), Tobias Harris and Caris LeVert (WagerTalk/Predictem, Oct 20). Continuity helps Detroit.",
+        "[angle] Jalen Duren signed a five-year, $200M deal on Oct 2 after a contract dispute and missed training camp, so his readiness is a concern; Cade Cunningham missed preseason time and was being monitored (WagerTalk, Oct 20). This cuts against Detroit.",
+        "Last season both teams were the East's top two seeds with nearly identical efficiency; Detroit allowed the league's lowest effective FG% and Boston's offense ranked second with the second-lowest turnover rate (Predictem, Oct 20). Balanced matchup.",
+        "Head-to-head: Detroit went 3-1 vs Boston last season, 2-0 at home (WagerTalk). History is priced (LESSONS); tiebreaker only, toward Detroit.",
+        "[spread] Preview projections all landed on Detroit: SBR Pistons 111-109 (power ratings even), WagerTalk 110-106, Predictem 112-108, and Pickswise Detroit +1.5. These are pundit views and not an edge per LESSONS.",
+        "The total fell from 222.5 to 220.5, as low as 218.5 on game day (WagerTalk), which points to a slower, defense-first game. A low total argues slightly for the underdog getting points but is priced."
+      ],
+      "reasoning": "This is a coin flip. The four-point swing to Boston came on heavy public money, and LESSONS says to treat a 3+ point move as fair rather than fade it. Detroit's continuity and home edge offset Boston's star power, while Duren and Cunningham's limited camps offset Boston's new pieces. The surprising angle is the Brown-for-George swap making a retooled team the road favorite. A confirmed minutes limit on Tatum or George would have pushed me to Detroit.",
+      "forcedSide": "Detroit Pistons",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Philadelphia 76ers", "home": "New York Knicks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 5.5,
+      "research": [
+        "[spread] Line movement (WagerTalk, Oct 20): opened Knicks -4.5 (-112) and stayed at -4.5 (-110); only the juice moved. The total ranged 230.5-232.5. A steady line means there's no move to follow.",
+        "[spread] Betting splits (WagerTalk, Oct 20): Philadelphia drew about 64-69% of spread money and 67-71% of tickets, yet the line didn't move toward the Sixers. That's mild resistance, which favors the Knicks side, but it isn't true reverse movement.",
+        "[angle] Philadelphia added Jaylen Brown (28.7 PPG) and LeBron James (41) to Embiid, Maxey and VJ Edgecombe; WagerTalk flags ball distribution among high-usage players as the main early concern. On debut night this helps New York.",
+        "[angle] LeBron played only two preseason games (18 and 25 minutes) after an offseason with foot arthritis and a lower-back issue; SBR (Oct 20) expected fewer minutes and a pass-first role (Under 15.5 points prop). Limits Philadelphia's upside.",
+        "Embiid has played only 96 regular-season games over the last three years (WagerTalk). A Covers preview listed an Embiid rebounds prop, implying he was expected to play; no injury designation was found. Availability risk for Philly.",
+        "New York returns nearly the whole 2025-26 title roster, with Mitchell Robinson (to Boston) the notable departure (WagerTalk, Oct 20). Continuity helps the Knicks; losing Robinson's rim protection cuts slightly the other way.",
+        "[angle] The Knicks swept Philadelphia in last year's playoffs, outscoring them by 22.3 PPG, and posted a 15.4 playoff net rating (WagerTalk). That's old history and largely priced.",
+        "[spread] The road team won and covered all four regular-season meetings last season (WagerTalk). A trend that's priced; tiebreaker toward Philadelphia.",
+        "Knicks ranked fourth in defensive efficiency last season (SBR, Oct 20); total 231.5-232.5 with several previews on the Under.",
+        "[spread] Preview projections: WagerTalk Knicks 115-108 (Knicks -4.5 best bet), SBR Knicks 118-111 (Knicks -4.5 best bet, expecting -5.5). Pundit projections, not an edge per LESSONS.",
+        "SBR cites early-season struggles for LeBron's new teams (2014-15 Cavs, 2018-19 Lakers): a narrative angle that's thin evidence, slightly toward New York."
+      ],
+      "reasoning": "I project New York by about 5.5. Shaded halfway to the line, that's only a 0.5-point edge on a favorite, under the bar. The Sixers' new stars and LeBron's limited preseason argue for New York, and the line holding at 4.5 despite about 70% of tickets on Philly hints the same way. But the edge is too small, and LESSONS says to be hard on favorites. A clear minutes cap on Embiid or LeBron would have made it a Knicks lean.",
+      "forcedSide": "New York Knicks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Oklahoma City Thunder", "home": "San Antonio Spurs",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -0.5,
+      "research": [
+        "[spread] Line movement: SBR's opening odds had Spurs -3 (ML Spurs -145 / Thunder +125); by game day it was Spurs -1.5 at most books (Predictem, Oct 20), and Sportsgambler even listed Thunder -1.5. The move toward the underdog Thunder suggests market money on OKC; helps Oklahoma City.",
+        "[spread] The total climbed from about 230 to 233.5; Predictem says the injury report doesn't explain it.",
+        "[angle] This is a rematch of last May's Western Conference Finals, which San Antonio won in Game 7. SBR (Oct 20) took Thunder +2.5 for revenge (\"I'll take the team looking for revenge at +2.5 all day\"). That's a motivation angle and narrative only.",
+        "[angle] Jalen Williams and Ajay Mitchell, who each played only three games in the conference finals, are healthy, and Chet Holmgren is off the injury report after a preseason quad issue (Predictem, Oct 20). OKC is healthier than in May; helps OKC.",
+        "OKC traded Lu Dort, its top on-ball defender, and also lost Aaron Wiggins and Isaiah Joe (Predictem; Sportsgambler). Helps San Antonio.",
+        "San Antonio is missing new addition Tobias Harris (calf) and rookie Jayden Quaintance; neither played for last year's Spurs (Predictem). Slight help to OKC.",
+        "[angle] Mitch Johnson is starting Fox, Castle and Harper together with Vassell and Wembanyama. That trio played just 69 minutes together last season and was outscored by 47; Fox and Castle each shot 33.2% from three (Predictem). Spacing risk; helps OKC.",
+        "Last season OKC had the league's best defense (107.7 per 100) and San Antonio was third (111.3); OKC led the league in deflections and was second in forced turnovers (16.7/g). Wembanyama blocked 3.1 a game and the Spurs led in defensive rebounding (Predictem). Both are elite defenses; neutral.",
+        "In the conference finals the Spurs held Gilgeous-Alexander to 25.9 PPG on 40.9% shooting and 28.6% from three (Predictem). Matchup edge for San Antonio's defense on SGA.",
+        "[spread] Preview projections: SBR Spurs 116-115 (Thunder +2.5), Predictem Spurs 114-110 (Under), Sportsgambler Spurs 116-111, and the Covers AI had OKC 118-117. Split near the number; pundit views aren't an edge.",
+        "Home court is the Spurs' only clear structural edge in a game the market rated close to even (Polymarket about 50/50 per a Covers preview)."
+      ],
+      "reasoning": "Before the leak I leaned to Oklahoma City: the line had moved 1.5-3 points toward the underdog Thunder, OKC was healthier than in the May series, and the Fox-Castle-Harper starting group was untested. But the projection sat within about 1 point of the number, so it was a pass on the edge rule anyway. Per LESSONS, a result hint before writing the lean forces a pass, so this is locked as a pass.",
+      "forcedSide": "Oklahoma City Thunder",
+      "contaminated": true,
+      "contaminationNote": "A covers.com/actionnetwork-limited WebSearch for line movement returned a summary quoting a later Covers NBA Cup article saying the Thunder beat the Spurs 116-104 in the season-opening clash. I saw it before writing any pick for this game. My pre-leak notes already leaned OKC (line moved toward OKC, healthier roster, untested Spurs backcourt) but were within the pass range. Locked as a pass; forcedSide is the pre-leak lean."
+    }
+  ]
+}

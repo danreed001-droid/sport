@@ -1,0 +1,103 @@
+{
+  "sport": "nba",
+  "date": "2026-11-12",
+  "chunk": "nba-2026-11-12-1",
+  "games": [
+    {
+      "away": "Toronto Raptors",
+      "home": "Philadelphia 76ers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 6.5,
+      "research": [
+        "Data flag: the slate has Philadelphia -10.5, but DraftKings opened -9.5 and closed -7.5, and Covers listed -8.5 at 2:06 PM ET (slate file / Covers, Nov 12). The 3-point slate-vs-close gap means, per LESSONS, no case built on either number.",
+        "LeBron James (back) is out for Philadelphia, per Covers' 2:06 PM update; Predictem's morning preview had him and Embiid (right foot) day-to-day (Covers / Predictem, Nov 12). The drop in the line reflects this. Helps Raptors against the slate, priced against the close.",
+        "Toronto is without Kawhi Leonard (knee) and Scottie Barnes (groin; three straight games missed) (Predictem / Covers, Nov 12). Helps 76ers.",
+        "[angle] Toronto is on the second night of a back-to-back after losing to Boston by five Wednesday (Predictem, Nov 12). Helps 76ers.",
+        "[angle] Philadelphia has won only two of 12 games by more than 10, and seven of its nine wins came by eight or fewer (Predictem / Covers, Nov 12). Helps Raptors getting double digits.",
+        "Philadelphia's net rating is +1.0 (16th), with the 21st-22nd ranked offense (109.8 per 100) and 7th-ranked defense; Toronto is +3.3 net with the 9th-ranked offense (Predictem / Covers, Nov 12). Helps Raptors.",
+        "Philadelphia lost its last two games by 24 at Cleveland and by 22 at home to Boston on Tuesday (Predictem, Nov 12). Mixed: poor form helps Raptors, a bounce-back spot helps 76ers.",
+        "Without Barnes and Leonard over its last three games, Toronto allowed 113.3 points per 100 possessions, 7.3 better than Philadelphia over that span (Covers, Nov 12). Helps Raptors.",
+        "Toronto creates extra possessions (32.6% offensive rebound rate, 17.6% forced turnover rate) (Predictem, Nov 12). Helps Raptors.",
+        "Maxey averages 26.7 PPG, averaged 32 points and shot 44% from three in his two previous games without LeBron, and has eight 30-point games in 17 career meetings with Toronto (Predictem / Covers, Nov 12). Helps 76ers.",
+        "Spread betting splits were even, 51% Raptors / 50% 76ers; both Covers (Raptors +8.5, playable to +6.5) and Predictem (Raptors +10.5, projected 112-106) took Toronto (Covers / Predictem, Nov 12). Writers' picks are priced; neutral."
+      ],
+      "reasoning": "On the numbers (Philadelphia rarely wins by double digits, a mediocre offense now without LeBron) the Raptors get too many points at the slate's 10.5, but the close was 7.5, three points away, which LESSONS flags as unreliable data, and against 7.5 my Philadelphia-by-6.5 projection is only a point off. Toronto's back-to-back without Barnes and Leonard limits the edge. Pass; forced side Raptors.",
+      "forcedSide": "Toronto Raptors",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Detroit Pistons",
+      "home": "Washington Wizards",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -12.0,
+      "research": [
+        "[angle] Washington is on the second night of a back-to-back after a 114-101 loss at Indiana Wednesday, in which Kyshawn George played 39 minutes and Davis, Trae Young and AJ Dybantsa 34 each. Detroit hasn't played since Monday (Predictem / Covers, Nov 12). Helps Pistons.",
+        "Washington has lost five straight by an average of 17 points and is 4-8 (Covers / Predictem, Nov 12). Helps Pistons.",
+        "Detroit is 7-3 (4-1 on the road) and 4-0 ATS in its last four as a road favorite (Predictem / Covers, Nov 12). Helps Pistons (ATS record is priced).",
+        "Detroit ranks second in defensive rating (about 104.6-106.1 allowed) and third-fourth in opponent turnover rate (15.6-15.7%); Washington is 23rd in offensive rating and 27th in forcing turnovers (Covers / Predictem, Nov 12). Helps Pistons.",
+        "Detroit is without Jalen Duren (hamstring) and Isaiah Joe (hip) (Predictem, Nov 12). Helps Wizards, especially on the glass for Anthony Davis.",
+        "[angle] Three days ago Detroit beat Washington 122-111 at home, leading for about 94% of the game, as Davis scored 44 and Washington went 9-of-36 from three (Predictem, Nov 12). Mixed: Detroit controlled it, but won by only 11.",
+        "Anthony Davis averages 25.7 points and 9.7-10 rebounds, with 13 rebounds in each of his last two games; Duren's absence softens that matchup (Predictem / Covers, Nov 12). Helps Wizards' backdoor chances.",
+        "Washington has a -5.4 net rating (22nd) and has been outscored by about six a game (Predictem, Nov 12). Helps Pistons.",
+        "Line: DraftKings opened Washington +9.5 and closed +10.5, the same as the slate (slate file). The move toward Detroit on the rest and back-to-back spot is priced.",
+        "Washington has gone under in eight of its last 10 (Covers, Nov 12); the total rose 220.5 to 223.5 (slate file). Neutral for the side.",
+        "Both Covers (Pistons -10.5, to 57%) and Predictem (Pistons -10.5, projected 117-103) took Detroit (Nov 12). Writers' picks are priced; neutral."
+      ],
+      "reasoning": "Rest and form clearly favor Detroit (a rested top-two defense against a Wizards team on a back-to-back that has lost five straight by 17), but the market already moved a point to 10.5 for it, and Duren's absence opens the glass for Davis, who had 44 in the last meeting. Projection Detroit by 12 clears the line by only 1.5, so pass; forced side Pistons.",
+      "forcedSide": "Detroit Pistons",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Dallas Mavericks",
+      "home": "Minnesota Timberwolves",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 4.0,
+      "research": [
+        "Anthony Edwards is out (arthroscopic knee surgery Oct 29, at least eight weeks); Dallas's Dereck Lively II is still out after foot surgery (Predictem, Nov 12). Lively hurts Dallas inside; Edwards is already priced.",
+        "Minnesota is 10-1 ATS, 5-2 without Edwards, and on a four-game win streak (Predictem, Nov 12). Helps Timberwolves, though team ATS records are priced.",
+        "Minnesota has the league's best defensive rating (106.1 per 100) and the second-best opponent eFG% (.497); Gobert averages 12.1 rebounds (Predictem, Nov 12). Helps Timberwolves.",
+        "Dallas is 7-4 with three straight wins, has won six of its last eight, and is 4-0 ATS in its last four as an underdog; it is 6-1 with both Flagg and Irving available, including wins over Oklahoma City and Houston and a one-point loss at San Antonio (Predictem / Covers, Nov 12). Helps Mavericks.",
+        "[angle] Covers' writer notes the two teams have nearly identical offensive, defensive and net ratings over their last seven games (Covers, Nov 12). With home court worth about 3, that points to Minnesota by about 3, under 5.5. Helps Mavericks.",
+        "Cooper Flagg averages 25.9 points, 6.9 rebounds and 6.9 assists (43 vs Indiana); Flagg and Irving combined for 78 on Monday (Predictem / Covers, Nov 12). Helps Mavericks.",
+        "[angle] Ayo Dosunmu has filled Edwards' role, averaging 23.8 points, 5.6 rebounds and 4.4 assists over five games (35.7 minutes) with 92 points in four November games; LaMelo Ball scored a season-high 34 vs Milwaukee but has had turnover and foul trouble since Edwards went down (Covers / Predictem, Nov 12). Mixed.",
+        "Dallas is fifth in share of points on fast breaks and in the paint; Minnesota allows the 10th-most fast-break and seventh-most paint points (Covers, Nov 12). Helps Mavericks.",
+        "Line moved toward Minnesota: DraftKings opened -4.5 and closed -5.5, matching the slate (slate file / Predictem). Spread splits are even, 51/50 (Covers, Nov 12). Priced; neutral.",
+        "Both teams are rested; Dallas opens a three-game road trip here (Predictem, Nov 12). Neutral.",
+        "Writers split: Covers took Mavericks moneyline (Dallas about 45% to win); Predictem played the Under and projected Minnesota 114-108, a cover by half a point (Nov 12). Neutral."
+      ],
+      "reasoning": "Recent ratings are even and Dallas is 6-1 with its two stars, which projects Minnesota by about 3-4, but Minnesota's 10-1 ATS start and top-ranked defense, plus the market moving a point its way, argue the other side. The gap to 5.5 is under 2, so pass; forced side Dallas on the even-ratings angle. News of Lively or a Dallas starter sitting would have flipped it.",
+      "forcedSide": "Dallas Mavericks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Charlotte Hornets",
+      "home": "Phoenix Suns",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 8.0,
+      "research": [
+        "Charlotte is without Brandon Miller (its leading scorer at 20.6 PPG), Kon Knueppel and Dennis Schroder; Coby White is likely on a minutes restriction (Predictem / Covers, Nov 12). Helps Suns.",
+        "Charlotte has the league's worst offensive rating (103.4 per 100), averages 19 turnovers (most) and shoots a league-worst 40% from the field, with the worst assist-to-turnover ratio (1.13) and last in rebounding (39.7) (Predictem / Covers, Nov 12). Helps Suns.",
+        "Charlotte has covered only one of its last seven, has lost three straight on the road, and lost by 39 at home to Boston last week (Covers / Predictem, Nov 12). Helps Suns.",
+        "[angle] Charlotte snapped a six-game skid by beating Cleveland 124-112 on Monday and has had two days off (Predictem, Nov 12). Helps Hornets.",
+        "[angle] Phoenix played Monday and Tuesday (a back-to-back), so it has had one day off to Charlotte's two (Predictem, Nov 12). Helps Hornets.",
+        "Phoenix is 4-6, all four wins at home, and 3-1 ATS in its last four; it beat the Clippers 133-110 on Tuesday (Covers / Predictem, Nov 12). Helps Suns.",
+        "Phoenix ranks 27th in defensive rating, though Predictem notes it has faced the league's toughest schedule (Predictem, Nov 12). Mixed.",
+        "Mark Williams is out after shoulder surgery; Jordan Goodwin returned Tuesday from a calf injury (Predictem, Nov 12). Mixed.",
+        "Phoenix is top 10 in assist-to-turnover ratio (1.90) and gets about 40 bench points a night, against Charlotte's turnover problems (Covers, Nov 12). Helps Suns.",
+        "Line: DraftKings opened Suns -7.5 and closed -6.5, matching the slate (slate file). A slight move toward Charlotte. Neutral.",
+        "Phoenix is 6-3-1 ATS in the last 10 meetings with Charlotte (Covers, Nov 12); head-to-head history is priced. Both Covers (Suns -6.5, to -7.5) and Predictem (Suns -6.5, projected 113-101) took Phoenix (Nov 12). Neutral."
+      ],
+      "reasoning": "A Charlotte team with the league's worst offense, now without Miller, Knueppel and Schroder, struggles to stay close on the road, which points to Phoenix, but the Suns' 27th-ranked defense, one fewer day of rest and a market that drifted from 7.5 to 6.5 keep the gap small. Projection Phoenix by 8 is 1.5 past the line, so pass; forced side Suns.",
+      "forcedSide": "Phoenix Suns",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

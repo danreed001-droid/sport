@@ -1,0 +1,22 @@
+{
+ "sport": "nfl",
+ "date": "2026-11-15",
+ "chunk": "nfl-2026-11-15-2",
+ "games": [
+  {
+   "away": "Pittsburgh Steelers",
+   "home": "Cincinnati Bengals",
+   "time": "8:20 PM ET",
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 160,
+   "homeMoneyline": -192,
+   "homeSpreadOpen": -3.5,
+   "homeSpreadClose": -4.5,
+   "totalOpen": 47.5,
+   "totalClose": 49.5
+  }
+ ]
+}

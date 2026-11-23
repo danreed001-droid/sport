@@ -1,0 +1,146 @@
+{
+  "sport": "nba",
+  "date": "2026-10-28",
+  "chunk": "nba-2026-10-28-1",
+  "games": [
+    {
+      "away": "Miami Heat",
+      "home": "Atlanta Hawks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.0,
+      "research": [
+        "Miami is 0-4 with a -12.4 net rating and the league's 27th-ranked offense; it ranks 23rd in rebounds allowed (58.8 a game) (Covers, Quinn Allen, Oct 28 11:15 AM ET). Helps Atlanta.",
+        "Atlanta averages 121 points, has a +9.0 net rating, leads the NBA in assists and ranks 11th defensively, with 13.3 offensive rebounds a game (Covers, Oct 28). Helps Atlanta.",
+        "Atlanta lost back-to-back games to the undefeated Houston Rockets heading into this one (Covers, Oct 28). Neutral; Atlanta's scoring has dropped in each game since its opener (SBR, Oct 28). Slightly helps Miami.",
+        "[angle] Giannis Antetokounmpo is now Miami's centerpiece: 28.5 ppg on 55.7% shooting and a 35.6% usage rate, 30+ in two of four games (Covers, Oct 28). The Heat's issue is chemistry on offense, not talent (SBR, Oct 28). Helps Miami.",
+        "[angle] Atlanta ranks 27th in defensive rebounding rate and last in opponent FG% at the rim (CleaningTheGlass via Covers moneyline column, Oct 28): a bad matchup against Giannis and Bam Adebayo inside. Helps Miami.",
+        "[angle] Covers' moneyline writer calls Miami a buy-low, max-effort spot for a winless team; SBR's analyst also takes Heat +2.5 on the Adebayo/Antetokounmpo defense (Oct 28). Preview picks aren't an edge (LESSONS). Slightly helps Miami.",
+        "Line: Hawks opened -3.5 and closed -2.5 (slate file), a one-point move toward Miami even though Covers lists Atlanta at 58% on the moneyline and Covers' top pick was Hawks -3.5. Small move toward the underdog. Slightly helps Miami.",
+        "Slate line (-2.5) equals the close, so no slate-vs-close value either way (slate file). Neutral.",
+        "Heat are 5-1 ATS in their last six meetings with Atlanta (Covers ATS column, Oct 28): head-to-head history, priced. Tiebreaker at most for Miami.",
+        "Hawks are 8-2 ATS in their last 10 home games vs teams with losing road records (Covers, Oct 28). ATS trend, priced. Tiebreaker at most for Atlanta.",
+        "No injuries reported for either team in the SBR preview (Oct 28). Neutral."
+      ],
+      "reasoning": "Season numbers (net ratings 21 points apart over four games) favor Atlanta, but the market made this a near pick'em at Atlanta and moved a point toward Miami; early-season NBA has shown no edge, so pass. The most interesting angle is Atlanta's rim and defensive-rebounding weakness against Giannis/Adebayo. Forced side Miami on the move toward it and the matchup; a clear Hawks injury or a move back to -3.5 would have flipped it.",
+      "forcedSide": "Miami Heat",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Washington Wizards",
+      "home": "Cleveland Cavaliers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 9.5,
+      "research": [
+        "Line opened Cavaliers -10.5 and closed -9.5 (slate file). The slate's -10.5 gives Washington a point more than the close, on the side the market moved to. Helps Washington (information only).",
+        "Washington is 30-52 ATS as a road underdog since last season, with a -13.1 margin in those games (Covers, Geoff Clark, Oct 28). ATS trend, priced. Tiebreaker for Cleveland.",
+        "Cleveland failed to cover recent wins over Brooklyn and Minnesota; it led Brooklyn by 16 entering the fourth and was outscored 41-29 (Covers, Oct 28). Covers calls it a buy-low spot and puts the true line at -11.5 to -12.5. Helps Cleveland.",
+        "Early-season SRS: Cleveland -2.72, Washington -15.87 (Basketball-Reference via Covers, Oct 28). A rating gap of about 13 plus home court sits near or above the line. Helps Cleveland (public rating, priced).",
+        "[angle] Washington is +17.1 net rating with Anthony Davis as its lone big and -14.1 when Alex Sarr or Deandre Ayton plays alongside him (Covers, Oct 28): its two-big lineups are the weakness Cleveland's size and spacing can attack. Helps Cleveland.",
+        "[angle] Rookie A.J. Dybantsa is questionable after missing the start of the season, and Davis is described as injury-prone (Covers moneyline column, Oct 28). Unresolved status. Neutral to Cleveland.",
+        "[angle] Cleveland is 8-0 straight-up vs Washington under Kenny Atkinson and has won 14 straight meetings (Covers moneyline column, Oct 28). Head-to-head, priced. Tiebreaker at most for Cleveland.",
+        "Kyshawn George has scored 18+ in three of his last four and averages 17.8 ppg; Washington has Trae Young at point guard (Covers, Oct 28). Shows the Wizards can score. Helps Washington's backdoor chances.",
+        "Dimers' model projects Cavaliers 122-114 (8 points) and gives Wizards +9.5 a 55% cover chance (Dimers, Oct 28 8:06 AM ET). Model pick, not an edge. Slightly helps Washington.",
+        "Polymarket priced the Cavaliers' moneyline at 77-79% (Covers/Dimers, Oct 28), consistent with a line around 9-10. Neutral.",
+        "No specific injuries were listed for Cleveland in any preview found (Covers, Dimers, Oct 28). Neutral."
+      ],
+      "reasoning": "The close (-9.5) is the fair number and the slate's -10.5 gives Washington a point; that isn't enough to clear the bar, and the arguments (Cleveland's buy-low spot vs. the Wizards' scoring and Dimers' model) offset. Most interesting angle: Washington's huge split with Davis as the lone big vs. two-big lineups. Forced side Washington on the slate-vs-close point. A confirmed Dybantsa or Davis absence would have changed the read.",
+      "forcedSide": "Washington Wizards",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Charlotte Hornets",
+      "home": "Detroit Pistons",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.0,
+      "research": [
+        "Line opened and closed Pistons -7.5, the same as the slate (slate file). No movement. Neutral.",
+        "[angle] Detroit is on the second night of a back-to-back (Covers moneyline column, Oct 28), after an overnight flight (WagerTalk preview, Oct 28). Helps Charlotte.",
+        "Last season Detroit was 16-9 ATS (+6.5 spread differential) when the opponent had the rest edge, and 12-2 straight-up with no rest, a +10.0 margin (Covers ATS and moneyline columns, Oct 28). Helps Detroit.",
+        "Charlotte went 7-12 ATS with a rest advantage last season (Covers ATS column, Oct 28). Helps Detroit (ATS trend, priced).",
+        "Detroit won and covered all three meetings with Charlotte last season (Covers moneyline column, Oct 28). Head-to-head, priced. Tiebreaker for Detroit.",
+        "WagerTalk projected Pistons 106, Hornets 103 and took Charlotte +7.5 and the under on the back-to-back (WagerTalk, Oct 28). Preview pick, not an edge.",
+        "Total opened 216.5 and closed 212.5 (slate file): the market expected a slower, lower-scoring game. Neutral.",
+        "Only 7 bullets gathered before the leak (see contaminationNote); research stopped there."
+      ],
+      "reasoning": "Contaminated before any lean was written, so locked as a pass. Pre-leak notes were split: Detroit's back-to-back after an overnight flight (Charlotte) against Detroit's strong record without rest (Detroit). No read; the forced side is a nominal choice from the back-to-back note, not a forecast.",
+      "forcedSide": "Charlotte Hornets",
+      "contaminated": true,
+      "contaminationNote": "The search summary for 'Hornets vs Pistons prediction October 28 2026 preview' (allowed_domains limited to betting sites) said a later Covers preview states 'The Pistons already beat Charlotte by eight points on Oct. 28' and that the WagerTalk page listed a Hornets-cover result. Both came in the same result as the pre-game notes, before any lean was written. The forced side is from the pre-leak back-to-back note only, with no read."
+    },
+    {
+      "away": "Philadelphia 76ers",
+      "home": "Indiana Pacers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -7.0,
+      "research": [
+        "Line opened Pacers +1.5 and closed +7.5 (slate file), a 6-point move toward Philadelphia. LESSONS: after a 3+ point move, treat the close as fair. Helps Philadelphia relative to the slate's +4.5.",
+        "The slate's 76ers -4.5 is 3 points better than the -7.5 close, on the side the market moved to (slate file). Information, not an edge (LESSONS: 4-3 clean). Helps Philadelphia.",
+        "Joel Embiid and VJ Edgecombe missed Sunday's game and were expected to play, with Philadelphia's starting unit projected intact (Covers, Chris Walder, Oct 28 4:38 PM ET). This news is likely the reason for much of the move. Helps Philadelphia (already priced at the close).",
+        "[angle] Indiana is 'battered and bruised': Andrew Nembhard's return is uncertain and Ivica Zubac's status unclear; Indiana lost by 8 to Milwaukee without Zubac, with Jay Huff starting (Covers, Oct 28). Helps Philadelphia.",
+        "[angle] Philadelphia added LeBron James and Jaylen Brown this offseason. A lineup with James, Brown and Maxey is +33.7 per 100 possessions in 32 minutes, but the Covers ATS writer flags the integration as a concern (Covers, Oct 28). Mixed.",
+        "Tyrese Maxey averages 28.8 ppg (4th in the NBA), has 26+ in all four games and scored 28+ in all four meetings with Indiana last season (Covers, Oct 28). Helps Philadelphia.",
+        "Philadelphia went 7-0 ATS last season as a road favorite of 4.5+, including two outright wins at Indiana (Covers, Oct 28). ATS trend, priced. Tiebreaker for Philadelphia.",
+        "Indiana went 7-1 ATS in its last eight home games as an underdog last season (Covers ATS column, Oct 28). ATS trend, priced. Tiebreaker for Indiana.",
+        "[angle] Covers' moneyline writer took Indiana on roster continuity, Tyrese Haliburton back from a full missed season, and transition pace against slow-retreating James/Embiid (Covers moneyline column, Oct 28). Helps Indiana.",
+        "Philadelphia had a three-game winning streak snapped Sunday (Covers, Oct 28). Neutral.",
+        "Total opened 237.5 and closed 234.5 (slate file); both teams rank in the top seven in pace (Covers, Oct 28). Neutral."
+      ],
+      "reasoning": "The 6-point move (Embiid/Edgecombe back, Indiana banged up) makes -7.5 the fair number, so the slate's -4.5 looks 3 points cheap for Philadelphia. That's under the 4-point bar, and only 1.5 after shading halfway, and slate-vs-close value has been a coin flip, so pass. Most interesting angle: Indiana's thin frontcourt without Zubac. Forced side Philadelphia; the pick would have needed Zubac and Nembhard confirmed out after the line settled.",
+      "forcedSide": "Philadelphia 76ers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Orlando Magic",
+      "home": "Toronto Raptors",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 5.0,
+      "research": [
+        "Line opened Raptors -4.5 and closed -5.5 (slate file). The slate's -4.5 is a point better than the close on the side the market moved to. Helps Toronto (information only).",
+        "Orlando is without Paolo Banchero and Jalen Suggs, and Anthony Black is questionable (Covers, Dustin Saracini, Oct 28 12:31 PM ET). Helps Toronto (mostly priced; Black's status may explain the late point).",
+        "Toronto is without Kawhi Leonard indefinitely; otherwise healthier than Orlando (Covers, Oct 28). Helps Orlando slightly (priced).",
+        "Toronto has a +4.8 spread differential and the NBA's best defensive rating; Orlando has a -5.5 spread differential (Covers ATS column, Oct 28). Helps Toronto.",
+        "Toronto has covered five of its last six meetings with Orlando (Covers ATS column, Oct 28). Head-to-head, priced. Tiebreaker for Toronto.",
+        "[angle] Toronto leads the NBA in offensive rebounding, and Orlando ranks 17th in rebounding without Banchero (Covers, Oct 28). A matchup edge for Toronto on the glass. Helps Toronto.",
+        "[angle] Scottie Barnes went 0-for-12 with 3 rebounds in his last outing (Covers, Oct 28). Bounce-back candidate. Slightly helps Toronto.",
+        "[angle] Desmond Bane's usage has risen with Orlando's injuries; he scored 22 on 4-of-9 threes against the Knicks (Covers, Oct 28). Shows Orlando has a scorer to stay close. Helps Orlando.",
+        "Both offenses are weak: Orlando 24th and Toronto 22nd in offensive rating, both bottom-10 in true shooting; Toronto has gone under in every game (Covers, Oct 28). A low total (223.5 to 224.5 close) keeps the margin small. Slightly helps Orlando (tiebreaker at most per LESSONS).",
+        "Polymarket priced Toronto's moneyline at 64-66% (Covers, Oct 28), consistent with about -4.5 to -5.5. Neutral."
+      ],
+      "reasoning": "Toronto's defense and Orlando's missing starters point to the Raptors, and the line moved a point their way, but the close (-5.5) is only a point off the slate, so no edge: pass. Most interesting angle: Toronto's offensive rebounding against a Magic frontcourt without Banchero. Forced side Toronto; Black confirmed out after the line settled would have brought it closer to a lean.",
+      "forcedSide": "Toronto Raptors",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Denver Nuggets",
+      "home": "New Orleans Pelicans",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -4.5,
+      "research": [
+        "Line opened and closed Pelicans +4.5 (slate file); the slate's +5.5 gives New Orleans a point more than both. Helps New Orleans (information only).",
+        "The teams met Oct 24 in Denver's home opener: Denver won 141-135 in overtime as an 11.5-point favorite, so New Orleans covered (WagerTalk props, Oct 28; Covers ATS column, Oct 28). Earlier game, knowable. The rematch line in New Orleans (~-4.5) is consistent with an 11.5 home line moved for venue.",
+        "[angle] Covers' ATS writer took Denver on the zig-zag theory after its non-cover as an 11.5-point favorite (Covers, Oct 28). Narrative. Slightly helps Denver.",
+        "Denver ranks 26th in defensive rating (119.3), down from 21st last season; New Orleans is 8th in offensive rating (115.8) and 23rd in defensive rating (118.2) (SBR, Oct 28). New Orleans can score with Denver. Helps New Orleans.",
+        "Denver had extra rest coming in: Jokic had two days' rest before the Oct 24 opener (Predictem, Oct 24 preview), and its most recent game was that Oct 24 opener (Covers ATS column, Oct 28). Helps Denver slightly.",
+        "Denver has won seven straight meetings with New Orleans and went 21-4 straight-up vs bottom-10 defenses last season; New Orleans ranks 26th in defensive rating per CleaningTheGlass (Covers moneyline column, Oct 28). Helps Denver (head-to-head and trends, priced).",
+        "[angle] DeJounte Murray scored 22, 16 and 23 in his first three games for New Orleans (WagerTalk, Oct 28). A capable second scorer helps a home underdog keep up. Helps New Orleans.",
+        "Dimers' model projects Nuggets 122-117 (5 points), almost exactly the line (Dimers, Oct 28). Neutral.",
+        "Total opened 238.5 and closed 241.5 (slate file); SBR expects both teams to score 130+ (Oct 28). A shootout widens the variance. Neutral.",
+        "No injuries were reported for either team in the SBR preview (Oct 28). Neutral."
+      ],
+      "reasoning": "The market held at 4.5 all day and the model agrees, so the slate's +5.5 is a point of value on New Orleans and not enough to clear the bar: pass. Most interesting angle: both defenses are bottom-10 and New Orleans just took Denver to overtime, so the Pelicans can keep pace. Forced side New Orleans on the extra point; a late Denver absence would have made it a lean.",
+      "forcedSide": "New Orleans Pelicans",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

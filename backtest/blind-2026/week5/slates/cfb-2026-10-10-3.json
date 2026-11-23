@@ -1,0 +1,68 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-10",
+ "chunk": "cfb-2026-10-10-3",
+ "games": [
+  {
+   "away": "LSU",
+   "home": "Kentucky",
+   "time": "7:00 PM ET",
+   "awayRank": 10,
+   "awaySpread": -9.5,
+   "homeSpread": 9.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": -360,
+   "homeMoneyline": 285
+  },
+  {
+   "away": "USC",
+   "home": "Penn State",
+   "time": "7:30 PM ET",
+   "awayRank": 19,
+   "awaySpread": 1.5,
+   "homeSpread": -1.5,
+   "awaySpreadOdds": -114,
+   "homeSpreadOdds": -106,
+   "awayMoneyline": -105,
+   "homeMoneyline": -114
+  },
+  {
+   "away": "Georgia",
+   "home": "Alabama",
+   "time": "7:30 PM ET",
+   "awayRank": 2,
+   "homeRank": 6,
+   "awaySpread": 1.5,
+   "homeSpread": -1.5,
+   "awaySpreadOdds": -106,
+   "homeSpreadOdds": -114,
+   "awayMoneyline": 100,
+   "homeMoneyline": -120
+  },
+  {
+   "away": "Kansas",
+   "home": "Utah",
+   "time": "10:15 PM ET",
+   "homeRank": 12,
+   "awaySpread": 15.5,
+   "homeSpread": -15.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 540,
+   "homeMoneyline": -800
+  },
+  {
+   "away": "Boise State",
+   "home": "Fresno State",
+   "time": "10:30 PM ET",
+   "awayRank": 23,
+   "awaySpread": -6.5,
+   "homeSpread": 6.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": 100,
+   "awayMoneyline": -250,
+   "homeMoneyline": 215
+  }
+ ]
+}

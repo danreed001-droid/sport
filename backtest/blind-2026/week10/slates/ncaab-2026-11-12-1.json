@@ -1,0 +1,23 @@
+{
+ "sport": "ncaab",
+ "date": "2026-11-12",
+ "chunk": "ncaab-2026-11-12-1",
+ "games": [
+  {
+   "away": "Montana State Bobcats",
+   "home": "BYU Cougars",
+   "time": "9:00 PM ET",
+   "homeRank": 23,
+   "awaySpread": 23.5,
+   "homeSpread": -23.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 2200,
+   "homeMoneyline": -8000,
+   "homeSpreadOpen": -24.5,
+   "homeSpreadClose": -21.5,
+   "totalOpen": 163.5,
+   "totalClose": 162.5
+  }
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "sport": "ncaab",
+ "date": "2026-11-07",
+ "chunk": "ncaab-2026-11-07-1",
+ "games": [
+  {
+   "away": "Morehead State Eagles",
+   "home": "Louisville Cardinals",
+   "time": "12:00 PM ET",
+   "homeRank": 11,
+   "awaySpread": 37.5,
+   "homeSpread": -37.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "homeSpreadOpen": -36.5,
+   "homeSpreadClose": -37.5,
+   "totalOpen": 150.5,
+   "totalClose": 151.5
+  },
+  {
+   "away": "New Mexico State Aggies",
+   "home": "Gonzaga Bulldogs",
+   "time": "5:00 PM ET",
+   "homeRank": 15,
+   "awaySpread": 27.5,
+   "homeSpread": -27.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 4000,
+   "homeMoneyline": -50000,
+   "homeSpreadOpen": -27.5,
+   "homeSpreadClose": -29.5,
+   "totalOpen": 148.5,
+   "totalClose": 151.5
+  }
+ ]
+}

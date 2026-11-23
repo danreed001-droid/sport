@@ -1,0 +1,73 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-18",
+ "chunk": "nfl-2026-10-18-1",
+ "games": [
+  {
+   "away": "Houston Texans",
+   "home": "Jacksonville Jaguars",
+   "time": "9:30 AM ET",
+   "awaySpread": 3,
+   "homeSpread": -3,
+   "awaySpreadOdds": -118,
+   "homeSpreadOdds": -102,
+   "awayMoneyline": 124,
+   "homeMoneyline": -148
+  },
+  {
+   "away": "Carolina Panthers",
+   "home": "Philadelphia Eagles",
+   "time": "1:00 PM ET",
+   "awaySpread": -3.5,
+   "homeSpread": 3.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -180,
+   "homeMoneyline": 152
+  },
+  {
+   "away": "Baltimore Ravens",
+   "home": "Cleveland Browns",
+   "time": "1:00 PM ET",
+   "awaySpread": -4.5,
+   "homeSpread": 4.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -225,
+   "homeMoneyline": 188
+  },
+  {
+   "away": "Chicago Bears",
+   "home": "Atlanta Falcons",
+   "time": "1:00 PM ET",
+   "awaySpread": -3,
+   "homeSpread": 3,
+   "awaySpreadOdds": -118,
+   "homeSpreadOdds": -102,
+   "awayMoneyline": -175,
+   "homeMoneyline": 145
+  },
+  {
+   "away": "Arizona Cardinals",
+   "home": "Los Angeles Rams",
+   "time": "4:05 PM ET",
+   "awaySpread": 12.5,
+   "homeSpread": -12.5,
+   "awaySpreadOdds": -102,
+   "homeSpreadOdds": -120,
+   "awayMoneyline": 640,
+   "homeMoneyline": -950
+  },
+  {
+   "away": "Buffalo Bills",
+   "home": "Las Vegas Raiders",
+   "time": "4:25 PM ET",
+   "awaySpread": -5.5,
+   "homeSpread": 5.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": -275,
+   "homeMoneyline": 225
+  }
+ ]
+}

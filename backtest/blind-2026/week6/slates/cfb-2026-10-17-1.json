@@ -1,0 +1,81 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-17",
+ "chunk": "cfb-2026-10-17-1",
+ "games": [
+  {
+   "away": "Virginia",
+   "home": "SMU",
+   "time": "12:00 PM ET",
+   "homeRank": 24,
+   "awaySpread": 9.5,
+   "homeSpread": -9.5,
+   "awaySpreadOdds": -100,
+   "homeSpreadOdds": -122,
+   "awayMoneyline": 270,
+   "homeMoneyline": -340
+  },
+  {
+   "away": "Ohio State",
+   "home": "Indiana",
+   "time": "12:00 PM ET",
+   "awayRank": 4,
+   "homeRank": 5,
+   "awaySpread": -3.5,
+   "homeSpread": 3.5,
+   "awaySpreadOdds": -104,
+   "homeSpreadOdds": -118,
+   "awayMoneyline": -166,
+   "homeMoneyline": 138
+  },
+  {
+   "away": "Northwestern",
+   "home": "Michigan State",
+   "time": "12:00 PM ET",
+   "awayRank": 25,
+   "awaySpread": -7,
+   "homeSpread": 7,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": -298,
+   "homeMoneyline": 240
+  },
+  {
+   "away": "Florida",
+   "home": "Texas",
+   "time": "12:00 PM ET",
+   "homeRank": 7,
+   "awaySpread": 11.5,
+   "homeSpread": -11.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": 340,
+   "homeMoneyline": -455
+  },
+  {
+   "away": "Mississippi State",
+   "home": "LSU",
+   "time": "12:00 PM ET",
+   "awayRank": 16,
+   "homeRank": 22,
+   "awaySpread": 14,
+   "homeSpread": -14,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 400,
+   "homeMoneyline": -535
+  },
+  {
+   "away": "Arizona State",
+   "home": "Texas Tech",
+   "time": "3:30 PM ET",
+   "homeRank": 10,
+   "awaySpread": 14.5,
+   "homeSpread": -14.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": 530,
+   "homeMoneyline": -675
+  }
+ ]
+}

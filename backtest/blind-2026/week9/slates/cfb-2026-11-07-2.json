@@ -1,0 +1,62 @@
+{
+ "sport": "cfb",
+ "date": "2026-11-07",
+ "chunk": "cfb-2026-11-07-2",
+ "games": [
+  {
+   "away": "Iowa",
+   "home": "Northwestern",
+   "time": "7:30 PM ET",
+   "awayRank": 21,
+   "awaySpread": 2.5,
+   "homeSpread": -2.5,
+   "homeSpreadOpen": -2.5,
+   "homeSpreadClose": 3.0,
+   "totalOpen": 42.5,
+   "totalClose": 42.5
+  },
+  {
+   "away": "Georgia",
+   "home": "Ole Miss",
+   "time": "7:30 PM ET",
+   "awayRank": 2,
+   "homeRank": 12,
+   "awaySpread": -3.5,
+   "homeSpread": 3.5,
+   "awayMoneyline": -175,
+   "homeSpreadOpen": 5.5,
+   "homeSpreadClose": 3.5,
+   "totalOpen": 55.5,
+   "totalClose": 56.5
+  },
+  {
+   "away": "Oklahoma",
+   "home": "Florida",
+   "time": "7:45 PM ET",
+   "homeRank": 25,
+   "awaySpread": 6.5,
+   "homeSpread": -6.5,
+   "homeMoneyline": -230,
+   "homeSpreadOpen": -4.0,
+   "homeSpreadClose": -4.0,
+   "totalOpen": 48.5,
+   "totalClose": 46.5
+  },
+  {
+   "away": "West Virginia",
+   "home": "Texas Tech",
+   "time": "9:30 PM ET",
+   "homeRank": 13,
+   "awaySpread": 15.5,
+   "homeSpread": -15.5,
+   "awaySpreadOdds": 108,
+   "homeSpreadOdds": -113,
+   "awayMoneyline": 600,
+   "homeMoneyline": -590,
+   "homeSpreadOpen": -17.5,
+   "homeSpreadClose": -16.5,
+   "totalOpen": 63.5,
+   "totalClose": 68.5
+  }
+ ]
+}

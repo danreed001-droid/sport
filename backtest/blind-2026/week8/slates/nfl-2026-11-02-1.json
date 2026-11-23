@@ -1,0 +1,22 @@
+{
+ "sport": "nfl",
+ "date": "2026-11-02",
+ "chunk": "nfl-2026-11-02-1",
+ "games": [
+  {
+   "away": "Chicago Bears",
+   "home": "Seattle Seahawks",
+   "time": "8:15 PM ET",
+   "awaySpread": 3,
+   "homeSpread": -3,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "awayMoneyline": 145,
+   "homeMoneyline": -173,
+   "homeSpreadOpen": -4.5,
+   "homeSpreadClose": -3.0,
+   "totalOpen": 47.5,
+   "totalClose": 46.5
+  }
+ ]
+}

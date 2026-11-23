@@ -1,0 +1,32 @@
+{
+  "sport": "nfl",
+  "date": "2026-10-15",
+  "chunk": "nfl-2026-10-15-1",
+  "games": [
+    {
+      "away": "Seattle Seahawks",
+      "home": "Denver Broncos",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.0,
+      "research": [
+        "Line: Seattle opened -2.5 on the road; early action was on the visitor and some books went to Seahawks -3 by game day (Dimers listed SEA -3 -104 / DEN +3 -115). It's a small move toward Seattle, not a 3-point move. (Covers, Jason Logan, Oct 13; Dimers, Oct 15). Spread-specific, slight help to SEA.",
+        "Total opened 42.5 and fell to 40.5-41.5, so the market expected a low-scoring, field-goal-sized game. That makes a 2.5/3 spread close to a coin flip. (Covers, Oct 13 and Oct 15). Spread-specific, neutral.",
+        "Kalshi pre-game probabilities: Seahawks moneyline 57% / Broncos 43%, Broncos +2.5 at 48%, Seahawks -2.5 at 57% in a later read. The market is roughly balanced on the spread. (Covers, Oct 13 and Oct 15). Spread-specific, slight SEA.",
+        "Dimers' model projected Seattle 21-19 (58.2% to win outright) but gave Denver 56.5% to cover +3, and made Broncos +3 its top bet. (Dimers, Oct 15). Helps DEN.",
+        "Denver's secondary was depleted: CB Patrick Surtain II and S Talanoa Hufanga were ruled out (ankles), and CB Riley Moss (ribs) was questionable, so Denver could be down both starting corners and a safety. (CBS Sports Week 6 injury report; Predictem preview). Helps SEA, especially Jaxon Smith-Njigba, who has a 57% target share among Seattle WRs and scored in all but one game (Covers, Oct 15).",
+        "Seattle's backfield was thin: Zach Charbonnet (knee) out, Jadarian Price on IR, so J.K. Dobbins carried it (18-68, 3.6 ypc in Week 5). Seattle ranks 29th in rushing EPA. (Covers, Oct 13 and Oct 15; Predictem). Helps DEN.",
+        "[angle] Short week plus altitude: Seattle played Sunday in a turnover-filled 32-29 loss to San Francisco (four turnovers, three fumbles) and then travelled to Mile High on four days' rest; Covers' Logan backed the home dog on that basis. (Covers, Oct 13; Predictem). Helps DEN.",
+        "[angle] Forecast called for rain and strong wind gusts in Denver, which suppresses passing for both teams and favors a close, low game. (Covers, Oct 13). Slight DEN as the underdog.",
+        "[angle] Sam Darnold's recent passing dipped: 168 and 195 yards in his last two games, about 60% completions and eight sacks taken. Seattle's OL had ankle issues (Abraham Lucas, Charles Cross listed). (Covers, Oct 13; Sportsgambler injury list, Oct 14). Helps DEN.",
+        "Denver's offense was weak: 26th in yards per play, and Bo Nix was under 6.0 yards per attempt in four of five games, failing to reach 190 passing yards in three of five. (Covers, Oct 13 and Oct 15). Helps SEA.",
+        "Seattle's defense leads the NFL in yards allowed per play, and Denver's best pass-rush showing was five sacks of Justin Herbert in a 23-17 win over the Chargers, with three takeaways. (Covers, Oct 13 and Oct 15; Predictem). Mixed: the defensive edge goes to SEA, the pass rush helps DEN.",
+        "Results before this game: SEA 3-2 (beat NE 13-10, beat ARI 31-7, lost 31-33 at WAS, beat LAC 30-23, lost 29-32 to SF); DEN 3-2 (lost 10-31 to KC, beat JAX 20-13, beat LAR 30-26, lost 14-24 to SF, beat LAC 23-17). (Sportsgambler, Oct 14). Neutral.",
+        "Both offenses rank near the bottom of the league on third down (Covers, Oct 13 and Oct 15). That points to a close, field-goal-margin game, which favors the side getting 2.5-3 in a pick'em-type projection. Slight DEN."
+      ],
+      "reasoning": "Before I saw the result, the evidence was balanced. Seattle's top-ranked defense (yards per play) and Denver's missing secondary (Surtain and Hufanga out) were set against Seattle's short week at altitude, its thin backfield, Darnold's recent dip and wind and rain. My projection (SEA by about 2, shaded to the line) sat within a point of the 2.5/3 spread, so I'd pass. The most surprising [angle] was a short-week road favorite at altitude in bad weather with a total near 40. Getting Denver +3.5 or better, or Seattle at -1.5, would have made it a lean.",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch for the Broncos' Week 6 injury report (domain-limited to betting sites plus nbcsports.com and cbssports.com) returned a summary that stated the result: Denver won 17-14 in overtime. It also included a CBS 'final score, takeaways' headline. I saw this before I had decided. I locked a pass on the pre-game evidence (projection within about a point of the spread), but the result was known at the time of locking."
+    }
+  ]
+}

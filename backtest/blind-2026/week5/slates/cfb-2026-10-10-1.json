@@ -1,0 +1,79 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-10",
+ "chunk": "cfb-2026-10-10-1",
+ "games": [
+  {
+   "away": "Texas A&M",
+   "home": "Missouri",
+   "time": "12:00 PM ET",
+   "homeRank": 14,
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -114,
+   "homeSpreadOdds": -106,
+   "awayMoneyline": 140,
+   "homeMoneyline": -169
+  },
+  {
+   "away": "UCF",
+   "home": "Oklahoma State",
+   "time": "12:00 PM ET",
+   "homeRank": 18,
+   "awaySpread": 10.5,
+   "homeSpread": -10.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 285,
+   "homeMoneyline": -370
+  },
+  {
+   "away": "North Carolina",
+   "home": "Pittsburgh",
+   "time": "12:00 PM ET",
+   "homeRank": 25,
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 140,
+   "homeMoneyline": -169
+  },
+  {
+   "away": "Indiana",
+   "home": "Nebraska",
+   "time": "12:00 PM ET",
+   "awayRank": 7,
+   "awaySpread": -7.5,
+   "homeSpread": 7.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -310,
+   "homeMoneyline": 245
+  },
+  {
+   "away": "South Carolina",
+   "home": "Florida",
+   "time": "12:45 PM ET",
+   "homeRank": 16,
+   "awaySpread": 11.5,
+   "homeSpread": -11.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 360,
+   "homeMoneyline": -481
+  },
+  {
+   "away": "Stanford",
+   "home": "Notre Dame",
+   "time": "3:30 PM ET",
+   "homeRank": 3,
+   "awaySpread": 39.5,
+   "homeSpread": -39.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": 950,
+   "homeMoneyline": -1950
+  }
+ ]
+}

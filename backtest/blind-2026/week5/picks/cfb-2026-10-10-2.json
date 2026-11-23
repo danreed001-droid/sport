@@ -1,0 +1,146 @@
+{
+  "sport": "cfb",
+  "date": "2026-10-10",
+  "chunk": "cfb-2026-10-10-2",
+  "games": [
+    {
+      "away": "Houston",
+      "home": "Kansas State",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "[spread] Line opened Kansas State -2.5 and had not moved by game day even though about 66% of spread tickets were on Houston (TheSpread, Oct 10 2026). Money matching the public number without a move is a mild sign for Kansas State; Covers' consensus showed a near 50/50 split, so the read is weak.",
+        "[spread] Houston failed to cover in its last two games, as -17.5 at Georgia Southern and -10.5 vs UCF (SI, Oct 9 2026). Its game-to-game margins have run short of the market. Helps Kansas State.",
+        "[spread] Both teams failed to cover their last two. Kansas State lost outright as a 6.5-point road favorite at Cincinnati, 31-26 (SI Oct 9; Predictem Oct 8 2026). Neutral.",
+        "Kansas State is off a bye (two weeks since Cincinnati) and at home. Houston comes off a 27-17 comeback over UCF after trailing 17-0 in the 3rd quarter (Predictem, Oct 8 2026). Helps Kansas State.",
+        "[angle] Houston's leading tackler, LB Jaden Yates (Ole Miss transfer, 29 tackles), is out with a leg injury from the UCF game (Roundtable, Oct 8 2026). That matters against a run-first Kansas State QB averaging 9.7 yards per carry (Sportschatplace preview). Helps Kansas State.",
+        "[angle] Kansas State coach Collin Klein was Conner Weigman's offensive coordinator at Texas A&M in 2024 (SI, Oct 9 2026). Klein knows the QB's tendencies well. Slightly helps Kansas State.",
+        "[angle] Kansas State lost TE Will Anciaux for the season at Cincinnati. Only one QB was available in that game; backups Barnett, Duff and Knuth were listed day to day (Roundtable, Oct 6 2026). If Avery Johnson gets hurt, there's little behind him. Helps Houston.",
+        "Kansas State allowed 270 rushing yards to Cincinnati, and Avery Johnson had to throw 50 times (Predictem, Oct 8 2026). Weigman ran 13 times for 50 yards and 3 TDs vs UCF, and his dual threat fits that weakness. Helps Houston.",
+        "Season numbers are almost even: Houston 41.0 ppg, 19.8 allowed, 483 ypg; Kansas State 40.5 ppg, 15.2 allowed, 480 ypg (Sportschatplace preview, Oct 2026). Kansas State's defense is a little better per game. Slight edge to Kansas State.",
+        "Weigman: 67.4%, 1,186 yards, 11 TD, 1 INT. Houston's only loss was 28-26 at Texas Tech, and it has scored 26+ in all five games (SI, Oct 9 2026). Helps Houston keep it within the number.",
+        "Trend notes: Kansas State has covered four straight as a home favorite against Texas teams but failed to cover in 4 of its last 5 conference games. Houston has covered six straight conference road games (Sportschatplace preview). These conflict, so neutral.",
+        "Pundits split: Predictem and Sports Gambling Podcast took Houston +2.5; The RX took Kansas State -2.5 (search summaries, Oct 8-10 2026). Neutral."
+      ],
+      "reasoning": "Two near-identical offenses with Kansas State a bit better on defense, rested and at home, against a Houston defense missing its leading tackler: I make it Kansas State by about 3. That is right on the 2.5 line, so I pass. The best angle is Klein having coached Weigman at A&M, set against Kansas State's thin QB depth. A clear injury to Johnson or a line move off 2.5 would have decided it.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "UCLA",
+      "home": "Oregon",
+      "pick": "UCLA",
+      "confidence": "lean",
+      "projectedMargin": 6.5,
+      "research": [
+        "Oregon starting QB Dante Moore (926 yards, 9 TD, 0 INT) is out with a concussion from the USC game on Sept 26. Nebraska transfer Dylan Raiola makes his first Oregon start; he went 19/25, 289 yards, 2 TD in relief at USC (TheSpread, Oct 10 2026; NBC Sports, Oct 8 2026). Helps UCLA.",
+        "[spread] Line movement: Oregon opened -11.5 and dropped to -10.5 at some books (TheSpread, Oct 10). NBC had -12.5 on Thursday. VegasInsider lists an open of -11 and consensus near -10. The market drifted toward UCLA, and 11.5 is at the top of the range. Helps UCLA.",
+        "[spread] UCLA is 4-0 ATS and 4-0 to the over; Oregon is 2-2 ATS (NBC Sports, Oct 8 2026). Helps UCLA.",
+        "[spread] Splits: 65% of spread tickets on UCLA (TheSpread, Oct 10). The public is with UCLA, which tempers the move somewhat. Neutral to slightly against UCLA.",
+        "[angle] Matchup: UCLA runs for 281.5 ypg (4th in FBS) at 6.95 yards per carry (1st), led by Wayne Knight (445 yards, 9 TD) (TheSpread, Oct 10). Oregon ranks 101st against the rush and 129th in early-down EPA allowed (VegasInsider pre-game pick). Helps UCLA, which can shorten the game and keep the margin down.",
+        "Net adjusted EPA/play: UCLA 14th, Oregon 18th (VegasInsider). On efficiency the two teams are about even, which argues against a two-score number. Helps UCLA.",
+        "Oregon lost 39-31 at Oklahoma State and allows 23.3 ppg; UCLA allows 18.8 ppg and has a +8 turnover margin (TheSpread Oct 10; NBC Oct 8). Helps UCLA.",
+        "Oregon is 28-2 at home under Dan Lanning, has won 5 straight in the series and 8 straight in Eugene, and leads the nation in third-down defense (21.2%) (TheSpread, Oct 10). Helps Oregon.",
+        "UCLA's passing is limited: Nico Iamaleava throws for about 205 ypg (96th), and the Bruins have not been an underdog all season (TheSpread, Oct 10). If Oregon forces UCLA to throw, that helps Oregon.",
+        "[angle] Both teams come off a bye. UCLA is 4-0 in Bob Chesney's first year after going 3-9 last season, and its last win at Autzen was in 2004 (Daily Bruin preview, Oct 9 2026). The program is ascending, but this is its first ranked road test. Mixed.",
+        "Oregon scores 47.5 ppg (4th), boosted by an 84-0 win over Portland State; its 145 passes have produced no interceptions (TheSpread, Oct 10). Helps Oregon if Raiola keeps that clean."
+      ],
+      "reasoning": "With Moore out, a backup QB making his first Oregon start, a weak Oregon run defense facing the nation's most efficient rushing team, and the market moving down from 11.5-12.5, I had UCLA covering +11.5 (Oregon by about 6.5) before the contamination below. The best angle is the run-game mismatch: it shortens the game, which protects a double-digit dog. A confirmed return by Moore or a move up through 12 would have changed it.",
+      "contaminated": true,
+      "contaminationNote": "After I had already formed the UCLA lean (from the TheSpread, NBC Sports and VegasInsider previews), a search for UCLA pre-game news returned an AI summary and headlines (ABC7, Daily Bruin) saying UCLA beat Oregon 17-15 and Iamaleava was hurt in the game. I did not change the pick or confidence after seeing it. Separately, the VegasInsider preview page I read was marked 'Updated on 11/22/26', but the text I got back showed no result."
+    },
+    {
+      "away": "Ole Miss",
+      "home": "Vanderbilt",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -9.0,
+      "research": [
+        "[spread] Ole Miss is 1-3 ATS this season. It came off a Week 5 bye after allowing 52 points in a 52-28 loss to Florida (SI, Oct 7 2026; SportsBettingDime, Oct 10 2026). Helps Vanderbilt.",
+        "[spread] The Kalshi spread market was about even: Ole Miss -9.5 at 52 cents, Vanderbilt +9.5 at 49 cents (SportsBettingDime, Oct 10 2026). DraftKings had -10 earlier in the week (SI, Oct 7), so there was a slight move toward Vanderbilt. Neutral.",
+        "[spread] Ole Miss averages 35.5 ppg and 440 ypg; Vanderbilt 25.4 ppg and 349 ypg. Ole Miss has a -4 turnover margin, Vanderbilt 0 (SportsBettingDime, Oct 10). The gap is about 10 points a game, the size of the spread. Neutral.",
+        "Ole Miss's defense ranks 106th in adjusted EPA/play and 92nd in success rate, and 111th in EPA/rush; it has allowed 24+ in 3 of 4 games (SI, Oct 7 2026). Helps Vanderbilt.",
+        "Vanderbilt's defense ranks 72nd in adjusted EPA/play and has allowed 20+ in four straight. Its offense averages only 3.7 yards per carry (SI, Oct 7 2026), which limits how well it can attack Ole Miss's weak run defense. Helps Ole Miss.",
+        "[angle] Vanderbilt freshman QB Jared Curtis (five-star) missed the Georgia game with a knee issue and was expected to return as the starter (Saturday Down South / ClutchPoints, week of Oct 5 2026). A first game back from injury adds variance. Mixed.",
+        "[angle] Vanderbilt was putting a 10-game home winning streak on the line (La Nacion/AP preview, Oct 8 2026). Its last two games were SEC losses: by 6 to Auburn and 38-14 to Georgia (SI Oct 7; SBD Oct 10). Helps Vanderbilt at home.",
+        "[angle] Ole Miss RB Kewan Lacy was questionable but expected to play (SportsBettingDime, Oct 10 2026). His availability helps Ole Miss.",
+        "Vanderbilt has 14 sacks to Ole Miss's 6, and 4 INTs to Ole Miss's 2. Ole Miss converts 43.5% on third down, Vanderbilt 33.8% (SportsBettingDime, Oct 10). The pass rush gives Vanderbilt some turnover upside; Ole Miss's third-down edge offsets it. Mixed.",
+        "Trinidad Chambliss: 1,222 yards, 8 TD, 3 INT, 4 rushing TD; 298 yards and 2 rushing TDs at Florida (SI, Oct 7 2026). Helps Ole Miss.",
+        "Ole Miss is coming off a bye and beat LSU earlier in the season (SI, Oct 7 2026). Rest helps Ole Miss."
+      ],
+      "reasoning": "Before contamination the evidence looked balanced: Ole Miss's better offense and the bye against its 1-3 ATS record, a bad defense and Vanderbilt's home streak, with Kalshi pricing the spread close to 50/50. I make it about Ole Miss by 9 against a 9.5 line, so I pass. The best angle was Curtis returning from a knee injury.",
+      "contaminated": true,
+      "contaminationNote": "Before I had decided on this game, a search for Vanderbilt QB/injury news returned an AI summary of a post-game article saying Vanderbilt trailed Ole Miss 52-10 late in the 4th quarter and Curtis threw 2 INTs. Based on the pre-game evidence above, I lock a pass (no pick), as I would have without that information."
+    },
+    {
+      "away": "Texas",
+      "home": "Oklahoma",
+      "pick": "Oklahoma",
+      "confidence": "lean",
+      "projectedMargin": -5.0,
+      "research": [
+        "[spread] Line movement: Texas opened -9.5 at some books and -8 at others, and had fallen to -7.5 by game day (Covers / SportsBettingDime summaries; TheSpread, Oct 10 2026). Our 8.5 is above the closing range. Helps Oklahoma.",
+        "[spread] Splits: 72% of spread tickets on Texas while the line moved toward Oklahoma, a reverse line move that suggests sharp money on Oklahoma (TheSpread, Oct 10 2026). Helps Oklahoma.",
+        "[spread] Texas is 1-3 ATS and Oklahoma 1-3 ATS. Texas's big wins have been close: 24-23 over Ohio State and 20-17 at Tennessee. It scores 33.3 ppg overall but only 24 and 20 against Power Four teams (TheSpread Oct 10; Covers Oct 10 2026). Helps Oklahoma.",
+        "[angle] The total opened around 48.5 (SportsBettingDime early-odds summary) or 40 (TheSpread) and sits at 39.5. In a game expected to land around 24-15, 8.5 points is a large share of the scoring. Helps Oklahoma.",
+        "Texas's defense ranks 3rd in net adjusted EPA/play, 5th in SP+, and allows 13.2 ppg and 271 ypg. Colin Simmons has 7.5 sacks (Covers, Oct 10 2026). Helps Texas.",
+        "Oklahoma's offense is the worst in the SEC by success rate (39.2%) and scored just 12.3 ppg over its last three games (14-6 vs New Mexico, a 17-10 loss at Michigan, a 41-13 loss at Georgia) (Covers / TheSpread, Oct 10 2026). Helps Texas; this is the main case against a dog that has to score to cover.",
+        "[angle] QB John Mateer is 69th in QBR and has 4 INTs in 3 games. Venables publicly weighed other options. Mateer threw 3 INTs against Texas last year (TheSpread / Covers, Oct 10 2026). Helps Texas.",
+        "[angle] Oklahoma is without WR Trell Harris and RB Xavier Robinson, and LT Michael Fasusi is doubtful; Texas is without WR Kaliq Lockett and OL Jordan Coleman (TheSpread, Oct 10 2026). Both offenses are short-handed, Oklahoma more so. Slightly helps Texas.",
+        "Oklahoma's defense allows 16.0 ppg and ranks 12th in havoc rate (21.6%). Arch Manning has 1 TD and 2 INTs against Power Four opponents (Covers / TheSpread, Oct 10 2026). A low-scoring game helps Oklahoma stay inside the number.",
+        "History: Texas has won 3 of 4 Red River games under Venables by an average of 32.3, with Oklahoma held under 7 in those wins (Covers, Oct 10 2026). Under the method, old head-to-head history counts less than this season's numbers. Helps Texas.",
+        "Covers projected Texas 24-13 (11 points) and played Texas -7.5. TheSpread played Oklahoma +7.5, citing the reverse line move (Oct 10 2026). Pundits split."
+      ],
+      "reasoning": "This season Texas has played close, low-scoring games against good teams (1-3 ATS, one-score wins over Ohio State and Tennessee), the total is 39.5, and the line fell from 9.5/8 to 7.5 while 72% of tickets were on Texas. I project Texas by about 5, so Oklahoma covers +8.5. The worry is Oklahoma's offense (12.3 ppg over its last three, Mateer's turnovers), which keeps this at a lean. A Mateer benching or the line moving back up to 9+ would have changed it.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Maryland",
+      "home": "Ohio State",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 32.0,
+      "research": [
+        "[spread] The spread opened at 35 on Oct 4 and fell to 32.5 while about 73% of tickets were on Ohio State, a reverse line move toward Maryland (TheSpread, Oct 10 2026). Helps Maryland.",
+        "[spread] Ohio State is 4-1 ATS and has covered both times it was favored by more than 33 this season (TheSpread, Oct 10 2026). Ohio State is 7-3 ATS in its last 10; Maryland is 2-8 ATS in its last 10 (SI, Oct 7 2026). Helps Ohio State.",
+        "[spread] Since its one-point loss at Texas, Ohio State has outscored opponents 42.2 to 12.6 ppg, a margin near 30 (TheSpread, Oct 10 2026). It won 31-14 at No. 14 Iowa. Neutral to slightly helps Ohio State at 32.5.",
+        "Maryland is 2-3 (0-2 Big Ten), with losses of 54-3 to UCLA, 48-23 at Nebraska and 35-26 to Virginia Tech. It allows 30.2 ppg (TheSpread, Oct 10 2026). Helps Ohio State.",
+        "Efficiency: Maryland is 100th in adjusted EPA/play and 87th in net success rate; Ohio State is 5th and 6th (SI, Oct 7 2026). Helps Ohio State.",
+        "[angle] Maryland QB Malik Washington has thrown 5 of his 6 INTs in the last two weeks. For a 32-point dog that has to score, that's a red flag (TheSpread, Oct 10 2026). Helps Ohio State.",
+        "[angle] Ohio State is thin on the offensive line and at receiver: OL Jaxon Powell and Vasean Washington are out, WR Amari Valerio-Hudson is out, and Brandon Inniss is on the availability report (TheSpread, Oct 10 2026). A thinner rotation once the starters sit helps Maryland in a backdoor spot.",
+        "[angle] Ohio State plays Indiana next week, a possible look-ahead and a reason to pull starters early (TheSpread, Oct 10 2026). Helps Maryland.",
+        "Maryland lost pass rusher Zahir Mathis for the season (TheSpread, Oct 10 2026), so little pressure on Julian Sayin (72.5%, 1,530 yards, 13 TD, 1 INT). Helps Ohio State.",
+        "Jeremiah Smith averages 8.8 catches, 164.6 yards and 1.8 TDs a game and is the Heisman favorite. Maryland ranks 77th in opponent EPA per pass (SI, Oct 7 2026). Helps Ohio State.",
+        "The total of 56.5 implies roughly 44-12 at -32.5. Both teams' games average about 54 combined points (TheSpread, Oct 10 2026). Neutral."
+      ],
+      "reasoning": "Ohio State's form (about +30 a game since Texas, 4-1 ATS) and Maryland's collapse (lost 54-3 to UCLA, a turnover-prone QB) point one way. The sharp move from 35 to 32.5 against 73% public tickets, Ohio State's OL and WR absences, and the Indiana look-ahead point the other. I make it about 32, right on the number, so I pass. A closing number of 30 or lower or 35 or higher would have made it a play.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Tennessee",
+      "home": "Arkansas",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -14.0,
+      "research": [
+        "[spread] The line opened at Tennessee -13.5 and had not moved by game day despite about 69% of spread tickets on Tennessee (TheSpread, Oct 10 2026). The market sat still. Neutral; slightly against Tennessee if the public money was absorbed.",
+        "[spread] Arkansas has lost every Power Four game by 27+: by 33 at Utah, 28 vs Georgia and 27 at Texas A&M. It hasn't scored more than 17 against a P4 opponent (TheSpread, Oct 10 2026). Helps Tennessee.",
+        "[spread] Tennessee's SEC games have been close: a 20-17 home loss to Texas and a 24-14 win over Auburn. Its last two games totaled 37 and 38 points (TheSpread, Oct 10 2026). Low-scoring, tight SEC results help Arkansas against 13.5.",
+        "[angle] QB change: Faizon Brandon (shoulder) is questionable after going 0-for-3 with an INT against Auburn. George MacIntyre (8/10, 86 yards in relief) is expected to make his first career start, and Heupel hasn't confirmed it (TheSpread / Covers, Oct 10 2026). Helps Arkansas.",
+        "[angle] Tennessee hosts Alabama next week, a possible look-ahead (TheSpread, Oct 10 2026). Helps Arkansas.",
+        "Matchup: Tennessee is 4th nationally in EPA per rush and runs for 240.6 ypg at 5.3 per carry (DeSean Bishop had 220 yards and 3 TDs vs Auburn). Arkansas's run defense is 128th, and it allows 59.6% on third and fourth downs (135th) (Covers / TheSpread, Oct 10 2026). Helps Tennessee.",
+        "Tennessee's passing success rate is 131st nationally (33%) (Covers, Oct 10 2026). A run-only offense with a first-time starter could struggle to pull away. Helps Arkansas.",
+        "Arkansas's offense is 131st in early-down EPA and 125th in rushing success, at 2.8 yards per carry, the worst in the Power Four. Tennessee's pass defense is 18th in EPA (Covers / TheSpread, Oct 10 2026). Helps Tennessee.",
+        "Season scoring: Tennessee 36.8 ppg, 15.2 allowed; Arkansas 19.8 ppg, 28.4 allowed (TheSpread, Oct 10 2026). The difference is about 25 a game but includes FCS-level opponents on Tennessee's side (Furman, Kennesaw State). Mixed.",
+        "[angle] Arkansas is in its first year under Ryan Silverfield. Tennessee won last year's meeting only 34-31. Weather: mostly sunny, upper 80s (TheSpread; Covers, Oct 10 2026). Heat in October slightly favors the deeper team. Slight edge to Tennessee.",
+        "Covers played Tennessee -13.5 (its AI model had 34-20); TheSpread played Arkansas +13.5 (Oct 10 2026). Pundits split."
+      ],
+      "reasoning": "Tennessee's elite run game against Arkansas's 128th-ranked run defense, and Arkansas losing every P4 game by 27+, point to Tennessee. A first-time starting QB on a team ranked 131st in passing success, close SEC games, an unmoved line and the Alabama look-ahead point to Arkansas. I project about Tennessee by 14, right on 13.5, so I pass. Clarity on Brandon's shoulder (a healthy starter) would have pushed me to Tennessee.",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

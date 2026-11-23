@@ -1,0 +1,140 @@
+{
+  "sport": "nfl", "date": "2026-10-18", "chunk": "nfl-2026-10-18-1",
+  "games": [
+    {
+      "away": "Houston Texans", "home": "Jacksonville Jaguars",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.5,
+      "research": [
+        "Market: Jaguars opened -3 (-118), dipped to -2.5, back to -3 (+100); Covers early line was -2.5 and Covers/Kalshi later showed -2.5. Slate -3 at -102 home / +3 -118 away prices the fair number just under 3. No real move to read. (WagerTalk, Covers, Oct 2026) [spread] Neutral.",
+        "Splits: Jacksonville has 71% of spread money and 69% of tickets (WagerTalk preview). Public and money on the same side, no reverse move. [spread] Mild Jaguars, not a sharp signal.",
+        "Records into Week 6: Jaguars 4-1, Texans 1-4 (Dimers, pre-game Harrison article). Jacksonville beat Philadelphia 19-17 in London in Week 5 and out-gained the Eagles by 176 yards (WagerTalk). Helps Jaguars.",
+        "[angle] Jacksonville is on a two-game UK stint, already in London after Week 5; Houston is on its third road game in three/four weeks and plays its first international game since 2019 (Covers, WagerTalk). Helps Jaguars.",
+        "[angle] Houston traded for Marvin Harrison Jr. less than a week before the game (Arizona got 2027 2nd and 6th); he had limited practice time with the team (Dimers, Predictem). Minor new piece, not a sure upgrade this week.",
+        "Jacksonville defense: 3rd in defensive DVOA, 5th-lowest EPA per play allowed, 2nd-fewest points per drive; allows 14.0 points per game; run defense 2.9 yards per carry (Covers, Predictem). Helps Jaguars.",
+        "But Jacksonville's pass defense allows 7.5 yards per attempt (27th) and 266.2 passing yards per game (3rd-most) (Predictem, Dimers). Helps Texans, with Nico Collins reported back (WagerTalk).",
+        "Houston defense: 9th in defensive DVOA, 10 sacks over the last three games, held its last three opponents to 18.7 points per game, held Tennessee to 187 yards in a 26-3 win (Covers, Predictem, WagerTalk). Helps Texans.",
+        "[angle] Jaguars LT Anton Harrison is on injured reserve; Will Anderson Jr. (7.5 sacks) faces a backup left tackle; long snapper Ross Matiscik hurt (Predictem). Helps Texans.",
+        "Houston run game: 3.4 yards per carry (3rd-worst), 31st in rushing success rate; RB David Montgomery doubtful/out with a groin injury (Predictem, WagerTalk, Covers). Helps Jaguars.",
+        "C.J. Stroud under pressure: 46.2% completions, 4.8 yards per attempt; Jaguars pass rush 7th in pressure rate (Covers). Helps Jaguars.",
+        "Trevor Lawrence: career-high 8.2 yards per attempt, 67.1% completions, 558 passing yards over his past two games (Covers). Helps Jaguars.",
+        "Low-scoring series: last five meetings each decided by one score (WagerTalk); total fell 43.5 to 42.5. Context for a field-goal spread: a 3-point margin is a live landing spot. Slight Texans +3.",
+        "Pundit projections cluster at Jaguars by 3-6 (Dimers 24-20, Predictem 20-16, WagerTalk 27-21)."
+      ],
+      "reasoning": "Jacksonville is the better team, is already settled in London, and has a top-three defense, but the market has already priced it at a fair -2.5/-3 and Houston's defense and the Jaguars' backup left tackle against Will Anderson keep this a one-score game. Shaded toward the line, my projection is Jaguars by about 2.5, inside the pass band at -3. The most surprising angle was the midweek Marvin Harrison Jr. trade. A clear Jaguars -2.5 or a Montgomery-plus-Collins absence would have pushed me to a lean.",
+      "contaminated": false,
+      "contaminationNote": "Not this game's result. A Sportsgambler page I fetched for the preview had a live standings table showing later-season records (Texans 4-6, Jaguars 7-3) and a later odds listing (Jaguars -1.5). Those don't reveal this game's outcome. I saw them after already leaning pass."
+    },
+    {
+      "away": "Carolina Panthers", "home": "Philadelphia Eagles",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -3.5,
+      "research": [
+        "Line move: Covers' early preview had Eagles -1.5 (Kalshi); after Jalen Hurts was ruled out late in the week, Panthers -3.5, a 5-point swing; total dropped about two points to 39.5 (Covers, Oct 2026). [spread] Per lessons, treat the new number as fair.",
+        "Jalen Hurts ruled out with a blood clot and placed on injured reserve, at least four weeks; Tanner McKee starts (54 career completions in three seasons) (Covers). Helps Panthers, but this caused the move.",
+        "Saquon Barkley (hamstring) ruled out; DeVonta Smith cleared after a full Friday practice (Covers). Helps Panthers.",
+        "Eagles were already struggling before the Hurts news: three-game losing streak, no game over 24 points, offense 30th in EPA per play and 31st in success rate; defense 22nd in EPA per play (Covers early preview). Helps Panthers.",
+        "[angle] Philadelphia returns from London (Week 5 loss 19-17 to Jacksonville), while Carolina comes off its Week 5 bye (Covers, Pickswise). Helps Panthers.",
+        "Carolina offense: 5th in yards per play, 6th in passing EPA, has topped 30 points in three of four games; Bryce Young leads the NFL in passing, 17 completions of 20+ yards through four games (Covers). Helps Panthers.",
+        "[angle] Carolina's secondary is thin: both starting cornerbacks, Jaycee Horn and Mike Jackson, are on injured reserve (Covers early preview). Helps Eagles if McKee can attack it.",
+        "Panthers get back Jalen Coker and Trevor Etienne (from IR); Taylor Moton activated (Covers). Helps Panthers.",
+        "Pricing: Dimers' later listing showed Panthers -2.5 (-117), and Covers showed -3.5 with Eagles +3.5 at 54% vs 47% (Kalshi), so -3.5 at -110 sits at the top of the range. [spread] Slight Eagles +3.5.",
+        "Model projections: Dimers 21-17 Panthers (62.3% win, 59.3% to cover -2.5); Covers' writer took Panthers -3.5 (Covers, Dimers). Neutral at -3.5.",
+        "Carolina has covered 13 of its last 21 games (Covers). Team ATS treated as noise per lessons. [spread]"
+      ],
+      "reasoning": "The Hurts injury caused a roughly 5-point swing to Panthers -3.5, and the lessons say to treat a 3+ point injury move as fair and not to re-count the injury. My projection, Panthers by about 3.5, sits on the number. Carolina's bye and Philadelphia's London return favour the Panthers, while Carolina's two missing starting corners are the most surprising angle and keep McKee live. A -2.5 would have made Carolina a lean.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Baltimore Ravens", "home": "Cleveland Browns",
+      "pick": "Cleveland Browns",
+      "confidence": "lean",
+      "projectedMargin": -3.0,
+      "research": [
+        "Line: Covers' early number was Ravens -4.5 (Kalshi 49% to cover); later Covers and Dimers listings showed Ravens -3.5 (Dimers: Browns +3.5 -113, Ravens ML -160). Total fell from 41.5 to 39.5-40.5 (Covers, Dimers, Oct 2026). [spread] Slate -4.5 is a point above where the market settled. Helps Browns.",
+        "Lamar Jackson (sprained ankle) was expected to miss a second straight game; Tyler Huntley projected to start (Predictem, Covers, Dimers). The move from 4.5 to 3.5 is information. Helps Browns at +4.5.",
+        "[angle] Huntley went 11-for-11 on the final two drives of Baltimore's Week 5 overtime win at Atlanta (Predictem). Covers' Jason Logan says Huntley's offense is run-heavy and short-passing, which compresses margins. Helps Browns.",
+        "Dimers' model: Ravens 21-18 (63% win), a 3-point projection, below 4.5 (Dimers). [spread] Helps Browns.",
+        "Browns haven't lost at home this season; pass rush has 16 sacks (6th) and averages 3.2 per game; defense just outside top 10 in DVOA and EPA per play (Predictem, Covers). Helps Browns.",
+        "[angle] Trey Hendrickson could return for Baltimore's pass rush; Ravens defense top 10 in EPA allowed over the last two weeks under new coordinator system (Covers). Helps Ravens.",
+        "Cleveland allows the most sacks per dropback (11.3%); Deshaun Watson faces the 4th-highest pressure rate (Predictem, Covers). Helps Ravens.",
+        "Cleveland run game: Quinshon Judkins 3.0 yards per carry with an ankle tweak (Predictem). Helps Ravens.",
+        "Cleveland run defense: opponents succeed on 52.8% of runs (2nd-worst), DTs Mason Graham and Mike Hall Jr. questionable; Derrick Henry set up well (Predictem). Helps Ravens.",
+        "Baltimore's offense top five in EPA per play and success rate (Predictem), but those numbers were built mostly with Jackson. Per lessons, don't credit them fully to Huntley.",
+        "Expert split: Predictem Ravens -4.5 (24-16), Covers early Ravens -4.5, Covers ATS writer Browns +5.5 on the low total and Huntley starting (Predictem, Covers). [spread] Mixed."
+      ],
+      "reasoning": "With Jackson out and Huntley starting, the market drifted from -4.5 to -3.5 and the total dropped, so the slate's -4.5 sits a point above the settled number. A Huntley-led, run-heavy Baltimore against a Browns defense that has been unbeaten at home projects to about a field goal. The most surprising angle was Cleveland's league-worst sack rate allowed meeting a possibly returning Hendrickson, which is the main risk. A confirmed Jackson start would have made this a pass.",
+      "contaminated": true,
+      "contaminationNote": "Before deciding, a WebSearch summary of Covers pages said Covers' moneyline pick against Baltimore 'is listed as a losing pick', which implies the Ravens won straight up. It did not show a score or margin. I formed the Browns +4.5 lean after seeing it, from the line movement and Huntley start, but the result was known."
+    },
+    {
+      "away": "Chicago Bears", "home": "Atlanta Falcons",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -3.0,
+      "research": [
+        "Line move: Chicago opened -1.5, Atlanta flipped to -1.5 on 10/11, then the market jumped to Chicago -3 after Atlanta's Week 5 game; total rose 47.5 to 49.5 (WagerTalk, Oct 2026). [spread] About a 4.5-point move; per lessons, treat -3 as fair.",
+        "Splits: Atlanta has 62% of spread money on 55% of tickets while the line moved toward Chicago (WagerTalk). [spread] Mixed: money on the dog without the line following.",
+        "Michael Penix Jr. has a rib injury; reports say it isn't serious and he's expected to play; if Tua Tagovailoa starts, Predictem's pick is off (Predictem). Key status for Atlanta.",
+        "Caleb Williams is tentatively returning from a Grade 2 hamstring strain after missing three games (WagerTalk, Predictem). Helps Bears if healthy, but Predictem doubts he'll be fully effective.",
+        "[angle] Chicago's backups Tyson Bagent and Case Keenum threw three interceptions in a 31-7 loss to Green Bay, so the Bears' recent form numbers were built without Williams (WagerTalk). Helps Bears relative to recent results.",
+        "Bears pass defense allows 8.3 yards per attempt (2nd-worst); CB Tyrique Stevenson Sr. questionable (hamstring) (Predictem). Helps Falcons.",
+        "[angle] Montez Sweat suspended two games (Predictem). Helps Falcons.",
+        "Bears run defense: 29th in run stop win rate and 27th in EPA per rush allowed; Bijan Robinson has 580 rushing yards at 5.7 per carry (Predictem, WagerTalk). Helps Falcons.",
+        "Atlanta is 6-13 ATS at home since 2024-25 (WagerTalk). Team ATS treated as noise per lessons. [spread]",
+        "Chicago's last four games all went under (WagerTalk).",
+        "Experts: WagerTalk Falcons +3 (24-20 Falcons), Predictem Falcons +3 'a pick on Penix starting'; Dimers model Bears about 56% (Predictem, WagerTalk, Dimers)."
+      ],
+      "reasoning": "Two QB injury stories, Williams returning and Penix's ribs, drove a roughly 4.5-point swing to Chicago -3. The lesson is to treat that number as fair, and the outcome hinges on Penix's late status, which I couldn't confirm cleanly. Atlanta's run game against Chicago's weak run defense, plus the Sweat suspension, argued Falcons, but Williams' return isn't in Chicago's recent numbers. Pass.",
+      "contaminated": true,
+      "contaminationNote": "Before deciding, a WebSearch summary said the Dimers matchup page scoreboard showed a final of Bears 31, Falcons 23. I passed, per the 3+ point line move lesson and Penix's unconfirmed status, but the result was seen first."
+    },
+    {
+      "away": "Arizona Cardinals", "home": "Los Angeles Rams",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 13.0,
+      "research": [
+        "Line: Rams -12.5 at open (Kalshi 52% Rams) and still -12.5 at kickoff-week previews; total 51.5 (Covers, Oct 2026). No movement. [spread] Neutral.",
+        "Records: Rams 2-3 but still 2nd in Covers' writer's power ratings; Arizona upset the Chargers in Week 1, then lost four straight by an average of 16.5 points (Covers, WagerTalk). Helps Rams.",
+        "Arizona defense: allowed 31+ in four straight, NFL-worst 32.4 points per game (37 per game during the skid); 5th-most receiving yards allowed to tight ends (Covers, WagerTalk). Helps Rams.",
+        "[angle] Arizona traded Marvin Harrison Jr. to Houston during the week, a seller's signal and one fewer weapon for Jacoby Brissett (Covers, Predictem). Helps Rams.",
+        "[angle] Arizona is missing two starting offensive linemen, and the Rams are 3rd in pressure rate; Rams win all four line-of-scrimmage win-rate metrics (Covers). Helps Rams.",
+        "RB Jeremiyah Love missed a second straight practice Thursday (ankle) and was expected to be unavailable (Covers). Helps Rams.",
+        "Rams offense at full strength, 5th in seconds per play; Arizona 9th, so a fast-paced game with more possessions (Covers). Context.",
+        "Sean McVay is 15-4 ATS vs Arizona; Rams scored 45 and 37 against Arizona last season (Covers). Head-to-head history and team ATS treated as noise per lessons. [spread]",
+        "[spread] Big-favorite risk: Covers' writer flags motivation as the concern with a double-digit favorite; a separate Covers ATS writer took Cardinals +12.5 because covering two touchdowns is a big ask (Covers).",
+        "Michael Wilson had three TD catches in two games vs the Rams last season and gains volume with Harrison gone (Covers). Slight help for Cardinals' backdoor scoring.",
+        "Projections: Covers 34-20, Predictem 34-16, WagerTalk 38-20 (all Rams by 14-18) (Covers, Predictem, WagerTalk)."
+      ],
+      "reasoning": "Every input points Rams, but the 12.5-point line already reflects Arizona's collapse, and the Rams are only 2-3. Shading the pundits' 14-18-point projections halfway back to the line gives about 13, inside the pass band. Arizona dealing Harrison midweek was the most surprising angle. A move to -11 with no news would have made the Rams a lean.",
+      "contaminated": true,
+      "contaminationNote": "Before locking, a WebSearch summary (Pickswise snippet) said the Cardinals pulled an 18-16 upset of the Rams as 13.5-point underdogs in Week 6. My pre-snippet reasoning was already near a pass (projection about 13 vs 12.5), and I locked a pass, but the result was seen first."
+    },
+    {
+      "away": "Buffalo Bills", "home": "Las Vegas Raiders",
+      "pick": "Las Vegas Raiders",
+      "confidence": "lean",
+      "projectedMargin": -3.5,
+      "research": [
+        "Line: opened Bills -6, dipped to -4.5 on 10/13, back to -5.5; total 52.5 to 53.5 (WagerTalk, Oct 2026). Covers listed -4.5. [spread] Off the open, toward the dog.",
+        "Splits: early, Buffalo had 95% of money and 89% of tickets; latest, Las Vegas has 53% of spread money while Buffalo has 65% of tickets (WagerTalk). [spread] Money against the public side, with the line down from 6. Mild reverse movement toward the underdog (a tentative lesson). Helps Raiders.",
+        "[angle] Short week: Buffalo played a 37-34 overtime win over the Rams on Monday night and stayed on the West Coast; the defense logged a heavy workload (WagerTalk, Predictem, Covers). Helps Raiders.",
+        "[angle] Buffalo has its bye after this game, a possible look-ahead or tired spot (WagerTalk). Helps Raiders.",
+        "Buffalo offense: 2nd in DVOA, 1st in EPA per play, 32.8 points per game, 6.7 yards per play (Covers, Predictem). Helps Bills.",
+        "But Buffalo's defense allows 28.2 points per game (Predictem), so the Raiders can score enough to stay inside a number. Helps Raiders.",
+        "Raiders defense: 3rd-highest EPA per play allowed and 34 points per game over the last three weeks; sack rate down from 11.8% to 4.3% (Covers). Helps Bills.",
+        "Raiders offense: league-worst rushing attack, 3.0 yards per carry (WagerTalk, Predictem). Helps Bills.",
+        "Buffalo 4-1 SU and ATS (2-0 ATS on the road); Las Vegas covered its first four games (Covers, WagerTalk). Team ATS treated as noise per lessons. [spread]",
+        "Projections: WagerTalk Bills 30-27 (took Raiders +5.5), Predictem Bills 31-24, Covers' writer Bills -4.5 (WagerTalk, Predictem, Covers). Mixed.",
+        "Four of Buffalo's five games went over, with a 53.5 total, so a shootout with a late backdoor is a live path for the dog (WagerTalk). Mild Raiders."
+      ],
+      "reasoning": "Buffalo is clearly better, but it's on a short week after a Monday overtime game, with a bye next, and its defense allows 28 a game. Money has drifted to Las Vegas against 65% of tickets, with the line off its open of 6. Shading Buffalo's edge back toward the line gives about 3.5, so +5.5 has a small cushion. The short-week, bye-next spot was the key angle. A return to -4.5 would have made it a pass.",
+      "contaminated": true,
+      "contaminationNote": "Before locking, a WebSearch summary of a Predictem handicapper's results list showed 'Las Vegas Raiders +5.5 (Covered 30-33)', which implies Buffalo won 33-30 and the Raiders covered. I had read the WagerTalk splits and short-week angle and was leaning Raiders before the snippet, but I hadn't written it down. Treat this as seen before deciding."
+    }
+  ]
+}

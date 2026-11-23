@@ -1,0 +1,37 @@
+{
+ "sport": "ncaab",
+ "date": "2026-11-16",
+ "chunk": "ncaab-2026-11-16-1",
+ "games": [
+  {
+   "away": "Grambling Tigers",
+   "home": "Kentucky Wildcats",
+   "time": "7:00 PM ET",
+   "homeRank": 24,
+   "awaySpread": 29.5,
+   "homeSpread": -29.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "homeSpreadOpen": -30.5,
+   "homeSpreadClose": -28.5,
+   "totalOpen": 158.5,
+   "totalClose": 152.5
+  },
+  {
+   "away": "Long Beach State Beach",
+   "home": "UCLA Bruins",
+   "time": "10:00 PM ET",
+   "homeRank": 9,
+   "awaySpread": 33.5,
+   "homeSpread": -33.5,
+   "awaySpreadOdds": 102,
+   "homeSpreadOdds": -102,
+   "awayMoneyline": 29500,
+   "homeMoneyline": -29412,
+   "homeSpreadOpen": -33.5,
+   "homeSpreadClose": -30.5,
+   "totalOpen": 148.5,
+   "totalClose": 144.5
+  }
+ ]
+}

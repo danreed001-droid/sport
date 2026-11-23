@@ -1,0 +1,29 @@
+{
+ "sport": "nba",
+ "date": "2026-10-22",
+ "chunk": "nba-2026-10-22-1",
+ "games": [
+  {
+   "away": "Cleveland Cavaliers",
+   "home": "Philadelphia 76ers",
+   "time": "7:00 PM ET",
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 124,
+   "homeMoneyline": -148
+  },
+  {
+   "away": "Denver Nuggets",
+   "home": "Oklahoma City Thunder",
+   "time": "9:30 PM ET",
+   "awaySpread": 7.5,
+   "homeSpread": -7.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "awayMoneyline": 250,
+   "homeMoneyline": -298
+  }
+ ]
+}

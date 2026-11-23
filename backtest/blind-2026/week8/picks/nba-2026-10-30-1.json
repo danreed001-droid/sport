@@ -1,0 +1,150 @@
+{
+  "sport": "nba",
+  "date": "2026-10-30",
+  "chunk": "nba-2026-10-30-1",
+  "games": [
+    {
+      "away": "Charlotte Hornets",
+      "home": "Washington Wizards",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -1.0,
+      "research": [
+        "[spread] Slate has Washington -1.5, but the slate's close field is Washington +1.5. Every other close field on this slate matches the previews, so this looks like a 3-point move toward Charlotte. At the slate's +1.5, Charlotte would be about 3 points better than the close. Helps Charlotte. (slate file)",
+        "[spread] The slate's total went from 234.5 at the open to 218.5 at the close. A 16-point drop suggests major late absences, probably on Washington given the spread move. That's information, and it's priced into the close. (slate file)",
+        "[spread] Covers' Oct 30 ATS picks took Hornets +1.5 and noted Charlotte allows 7.6 fewer points per game than Washington. Helps Charlotte. (Covers, Oct 30)",
+        "Charlotte has the 30th-ranked offense, per Covers' Oct 30 ATS picks. Helps Washington.",
+        "Charlotte beat Washington by 7 at home on Oct 26 as a roughly 2-point favorite. Earlier game, knowable. Mild help for Charlotte. (Covers, Oct 30)",
+        "Charlotte is without Kon Knueppel and Coby White. Knueppel was practicing with the G League Swarm but wasn't expected to play. Both absences were known before the line, so they're priced. Helps Washington. (Covers moneyline picks, Oct 30)",
+        "[angle] Naz Reid sat the second half of Charlotte's last game, against Detroit. Charlotte's offense leans on perimeter shooting from Reid, Grayson Allen and Royce O'Neale, with Brandon Miller creating. Reid's status adds risk for Charlotte. (Covers, Oct 30)",
+        "[angle] Covers' analyst cites Washington's outstanding rim protection (Anthony Davis, Alex Sarr, Deandre Ayton on the roster) against a perimeter-only Charlotte attack. Charlotte was second in 3PA at 47.5 a game through three games. Helps Washington if the threes miss. (Covers, Oct 26 and Oct 30)",
+        "Washington plays at a top-five pace (105.3), and Trae Young leads the NBA at 11.3 assists a game through week one. AJ Dybantsa was still out as of Oct 26. Mixed. (Covers, Oct 26)",
+        "Brandon Miller was shooting 30% from the field through three games but scored 34 in his last game before Oct 26. He has scored 20+ in all three recent meetings with Washington. Helps Charlotte. (Covers, Oct 26)",
+        "[angle] This is an NBA Cup group game, the second meeting in five days. (Covers, Oct 30)",
+        "Polymarket had Charlotte at 49% to win outright, so it's close to a pick'em. Neutral. (Covers, Oct 30)"
+      ],
+      "reasoning": "Contaminated before I wrote a lean, so I'm locking a pass. My pre-leak reasoning pointed to Charlotte, because the slate's close field (Washington +1.5) implied a 3-point move toward the Hornets, making the slate's +1.5 a 3-point better number. That gap was under the 4-point bar, so it would most likely have been a pass or at most a lean anyway.",
+      "forcedSide": "Charlotte Hornets",
+      "contaminated": true,
+      "contaminationNote": "I ran a WebSearch restricted to covers/wagertalk/predictem/sportsbookreview/rotowire for 'Wizards vs Hornets October 30 2026 injury report preview Trae Young Anthony Davis'. Its summary quoted a recap line: the Hornets 'lost 95-79 to the host Washington Wizards on Friday' (Oct 30). It also said Grant Williams did not play. I saw this before writing any lean. My pre-leak notes pointed to Charlotte (slate +1.5 vs a close of Charlotte -1.5), so the forced side is Charlotte, and that side lost."
+    },
+    {
+      "away": "Chicago Bulls",
+      "home": "Boston Celtics",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 14.0,
+      "research": [
+        "[spread] The slate has Boston -16.5 (Bulls -118). The close is Boston -14.5, and WagerTalk's morning line was -14.5, down from -15.5. At the slate number, Chicago gets about 1.5-2 points more than the close. Helps Chicago. (slate file; WagerTalk, Oct 30 9:27 AM)",
+        "[spread] WagerTalk says spread money shifted toward Chicago as the line fell from -15.5 to -14.5. Predictem says the series line went from -11.5 at Monday's open to -14.5 at Monday's close and -15.5 for this game, 'a market reaction to the blowout.' Helps Chicago. (WagerTalk, Oct 30; Predictem, Oct 30)",
+        "Boston beat Chicago 134-99 on Oct 26. Boston shot 21/44 from three (Pritchard and Hauser 10/14), Chicago's bench shot 2/19 from three, and Chicago had 25 turnovers. It was within 10 midway through the third quarter. Several previews call the margin noise. Helps Chicago against a margin built on that game. (WagerTalk; SBR; Predictem, Oct 30)",
+        "Chicago is last in 3P% (27.6%), 28th in defense per possession, and allows 40.6% from three (29th). They lost 135-92 at Toronto earlier. Helps Boston. (Predictem, Oct 30)",
+        "Boston has the 5th-best offense by points per possession and forces turnovers on 18% of possessions (4th), against a Chicago team that gave it away 25 times Monday. Helps Boston. (Predictem, Oct 30)",
+        "[angle] Boston needed a Tatum overtime buzzer-beater (40 points) to beat the winless Nets on Tuesday as a big favorite, so laying 16+ isn't automatic. Helps Chicago. (Predictem; Covers ATS picks, Oct 30)",
+        "[angle] Chicago blew a 19-point lead in a 133-127 home loss to the Knicks on Wednesday. Norman Powell scored 30 on 10/15. The offense can score (127 or more against New York), which matters for a big underdog covering. Helps Chicago. (Predictem; Covers, Oct 30)",
+        "[spread] Boston is 5-1 SU and ATS in the last six meetings. Chicago is on a three-game losing streak. Helps Boston, but that's already in the spread. (WagerTalk, Oct 30)",
+        "Injuries: Boston's Nic Claxton is out (hamstring). Chicago's Jalen Smith (finger) and Patrick Williams (groin) are questionable. Covers notes Boston's rebounding edge with Mitchell Robinson and Neemias Queta. Slightly helps Boston. (Predictem; Covers, Oct 30)",
+        "[angle] Boston is rested, with no game since Tuesday. Chicago played Wednesday. Chicago plays at the league's fastest pace, so more possessions widen the range in both directions. Mixed. (WagerTalk; Predictem, Oct 30)",
+        "Preview projections: WagerTalk Celtics 124-114 (by 10), Predictem 121-109 (by 12). Covers' moneyline model has Boston at about 91%. Not an edge, but none projects 17+. (Oct 30)"
+      ],
+      "reasoning": "The close of Boston -14.5 is the fair number, and the slate's -16.5 gives Chicago about 2 points. Money also moved toward the Bulls after the market overreacted to Monday's 35-point rout. Against that, Chicago's 3-point shooting and turnovers are real season-long problems. Projecting Boston by 14 leaves a 2.5-point gap, under the 4-point bar and too thin early in the season, so it's a pass with Chicago as the forced side because of the number.",
+      "forcedSide": "Chicago Bulls",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Detroit Pistons",
+      "home": "Brooklyn Nets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -8.5,
+      "research": [
+        "[spread] The slate has Detroit -7.5. The line opened at +7.5 for Brooklyn and closed at +8.5, and WagerTalk's 11:28 AM props piece and Pickswise both had Detroit -8.5. The market moved a point toward Detroit, and the slate is a point better on that side. Helps Detroit. (slate file; WagerTalk, Oct 30; Pickswise, Oct 30)",
+        "[spread] Detroit is 4-1 ATS this season and allows the second-fewest points in the league. Helps Detroit, though ATS records are mostly priced. (Covers ATS picks, Oct 30)",
+        "Brooklyn allows 124 points and 30.8 assists a game, the most assists allowed in the league, and the 6th-most to small forwards. Helps Detroit. (Covers, Oct 30; WagerTalk props, Oct 30)",
+        "Brooklyn's Egor Demin is out, so rookie PG Mikel Brown Jr. gets more minutes. Helps Detroit. (Covers moneyline picks, Oct 30)",
+        "[angle] Ausar Thompson is back from an ankle injury, with minutes approaching 30+. Covers' analyst says his on-ball pressure on rookie Brown is the key, and the pick 'would look different' without him. Helps Detroit. (Covers; WagerTalk props, Oct 30)",
+        "[angle] Brooklyn was winless but took Boston to overtime on Tuesday as a huge underdog, needing a 40-point Tatum game and a buzzer-beater to lose. They can stay close at home. Helps Brooklyn. (Predictem Bulls-Celtics preview, Oct 30)",
+        "Dimers projects Detroit 115-107 and lists Nets +7 as its value side (56.8% cover). Pickswise lists Pistons -8.5. Preview picks are split and aren't an edge. (Dimers; Pickswise, Oct 30)",
+        "Cade Cunningham is in Dimers' projections (23 points, 8.9 assists), so he's expected to play. Brooklyn's scorers are Michael Porter Jr. (21.4 projected) and Julius Randle (20.3). (Dimers, Oct 30)",
+        "Polymarket had Detroit at 72% to win outright, consistent with roughly an 8-point line. Neutral. (Covers moneyline, Oct 30)",
+        "[angle] Detroit's previous game was against Charlotte, and before that it played New York on Oct 27. It's a road game for a team with a top defense against a Nets offense starting a rookie PG. Mild help for Detroit. (Covers, Oct 30; SBR Oct 27 listing)"
+      ],
+      "reasoning": "The fair number is the close, Detroit -8.5, so the slate's -7.5 is a point better on the side the market moved to. Detroit's top defense against a rookie-led Nets backcourt is the strongest matchup note. Brooklyn's overtime scare of Boston shows it can hang around. Projecting Detroit by 8.5 leaves a 1-point edge, well under the bar, so it's a pass with Detroit as the forced side.",
+      "forcedSide": "Detroit Pistons",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "New York Knicks",
+      "home": "Philadelphia 76ers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -3.0,
+      "research": [
+        "[spread] The slate has Philadelphia +1.5 (Knicks -1.5). The close is Philadelphia +3.5. WagerTalk at 9:34 AM had Knicks -1.5 (-115), moving between -1.5 and -2.5. The 2-point move to the close is late news, probably Jaylen Brown's status. The slate is 2 points better on the Knicks, the side the market moved to. Helps New York. (slate file; WagerTalk, Oct 30)",
+        "[spread] WagerTalk says spread money was 'heavily on the Knicks', with no percentages given. Helps New York. (WagerTalk, Oct 30)",
+        "Jaylen Brown (PHI) was questionable with a sore knee in the morning, and Covers called him questionable within an otherwise healthy starting five. I couldn't confirm his final status. The close suggests he sat or was downgraded. (WagerTalk; Covers, Oct 30)",
+        "[angle] Philadelphia is on the front end of a back-to-back (at Charlotte Saturday). The front end matters less than the back, but rotation management is possible. Mild help for New York. (WagerTalk; Covers, Oct 30)",
+        "[angle] Philadelphia won the season opener 106-100 at MSG, ending New York's six-game series win streak. New York shot 37.2% and Brunson went 6/19. Revenge spot in an NBA Cup division game. Helps New York, but it's narrative. (WagerTalk, Oct 30)",
+        "Philadelphia is 4-1 and won 114-109 at Indiana on Wednesday. New York has won two straight, against Detroit and 133-127 at Chicago. (WagerTalk; SBR, Oct 30)",
+        "Philadelphia is weak on the boards and New York is 4th in rebounding, per Covers' ATS pick (Knicks -1.5). Helps New York. (Covers ATS, Oct 30)",
+        "[angle] Covers' moneyline analyst made Philadelphia about 56% to win, saying every 76ers starter can create in isolation and target Brunson defensively. Helps Philadelphia, if Brown plays. (Covers moneyline, Oct 30)",
+        "Both teams are bottom-10 in scoring and bottom-four in FG%, and the teams are a combined 8-2 to the under. The slate's total fell from 231.5 to 224.5, so a lower-scoring game is likely. Neutral on the side. (SBR; slate file, Oct 30)",
+        "New York ranks last in pace. WagerTalk projects Knicks 108-104 and SBR Knicks 114-110, both New York by 4. Not an edge. (WagerTalk; SBR, Oct 30)",
+        "Tyrese Maxey has topped 23.5 points in every game this season and averages 28.8 over his last 10 against New York. Helps Philadelphia. (SBR, Oct 30)"
+      ],
+      "reasoning": "Taking the close, Knicks -3.5, as fair after the late move, the slate's Knicks -1.5 is a 2-point better number on the moved side. That's information, not a proven edge (4-3 in past weeks). Jaylen Brown's final status is the deciding unknown, and my pass trigger says not to pick on an unresolved status. Projecting the Knicks by 3 leaves a 1.5-point gap, so it's a pass with the Knicks as the forced side.",
+      "forcedSide": "New York Knicks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Orlando Magic",
+      "home": "Toronto Raptors",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 6.0,
+      "research": [
+        "[spread] The line opened Toronto -3.5 and closed -5.5, the same as the slate, so there's no slate-vs-close edge. The 2-point move toward Toronto followed its 30-point win over Orlando on Oct 28. (slate file; Covers, Oct 30)",
+        "Orlando is without Paolo Banchero (24.5 ppg), Jalen Suggs and Jonathan Isaac. Covers says they are expected to stay out. All were known before the line, so priced. Helps Toronto. (Covers preview, Oct 30)",
+        "Toronto's Kawhi Leonard is out (knee), with no update. Helps Orlando, also priced. (Covers preview; Covers ATS picks, Oct 30)",
+        "[spread] Toronto has the league's best net rating (+25.9) and allows 91.4 points per 100. Orlando has the second-worst offensive rating. Helps Toronto. (Covers preview and ATS picks, Oct 30)",
+        "[spread] Toronto is 4-0 ATS in its last four games as a home favorite. Orlando is 5-5 ATS since 2021 after losing by 30+ as a road underdog. Mostly priced. (Covers, Oct 30)",
+        "[angle] This is a same-building rematch two days after Toronto won 129-99 on Oct 28. It's Toronto's second straight win over Orlando, and the last two meetings were decided by an average of 41. Market memory of a blowout can inflate the number. Mild help for Orlando, but fading one-game moves went 1-1. (Covers, Oct 30)",
+        "[angle] Franz Wagner had seven turnovers in the first meeting and carries the load without Banchero and Suggs. Helps Toronto. (Covers moneyline picks, Oct 30)",
+        "[angle] Jakob Poeltl and Collin Murray-Boyles were in foul trouble in the last meeting, and Wendell Carter Jr. has 9+ rebounds in three straight games. Orlando could win the glass. Helps Orlando. (Covers preview, Oct 30)",
+        "Scottie Barnes averages 26.3 points on 50% shooting in Toronto's three wins but was scoreless in the Oct 25 loss to Minnesota. Toronto is volatile, which mildly helps Orlando. (Covers preview, Oct 30)",
+        "Covers took Raptors -5.5 (play to 60%). Polymarket had Toronto about 65-66% to win outright, about right for a 5.5-point favorite. Neutral. (Covers, Oct 30)",
+        "Every Toronto game had gone under through Oct 28, and the total held at 226.5 from open to close. A low-possession game keeps the margin tighter. Mild help for Orlando. (Covers Oct 28 and Oct 30; slate file)"
+      ],
+      "reasoning": "The slate matches the close, so there's no number edge. The season data (Toronto's elite defense against an Orlando offense missing its top three players) points to Toronto. The one-game rematch overreaction and Toronto's slow pace point to Orlando. Projecting Toronto by 6 against -5.5 is no gap, so it's a pass. The forced side is Toronto on the season efficiency numbers, not the blowout.",
+      "forcedSide": "Toronto Raptors",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Houston Rockets",
+      "home": "Dallas Mavericks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -5.5,
+      "research": [
+        "[spread] The slate has Dallas +6.5. The close is Dallas +5.5, and Predictem says the line moved from Rockets -4.5 to -5.5 during the week (the slate's open field shows -4.5 with the sign flipped). The market moved toward Houston, but the slate is a point better for Dallas than the close. Helps Dallas at this number. (slate file; Predictem, Oct 30)",
+        "[spread] Houston is 5-0 SU and 5-0 ATS with an average margin of 14.2, and Covers' split percentages show slightly more on Houston (53/48). The public is on a perfect-ATS team, and that streak is priced. Neutral to slightly helps Dallas. (Covers preview, Oct 30)",
+        "Houston has the league's best offense, 123.4 points per 100, a +14.2 net rating (2nd), and is 4th in offensive rebound rate (31%). Helps Houston. (Predictem, Oct 30)",
+        "Alperen Sengun (low back) is questionable and was projected to miss. Houston beat Milwaukee 132-100 on Wednesday without him. Marcus Smart (forearm) is iffy, and Reed Sheppard and Steven Adams are out. Mixed; the market moved toward Houston anyway. (Predictem; Covers moneyline, Oct 30)",
+        "[angle] Dallas is thin up front: Dereck Lively II is out, Santi Aldama is doubtful after knee surgery, and Daniel Gafford is the only big listed. Dallas allows 53.2 paint points a game (26th), against Houston's offensive rebounding. Helps Houston. (Predictem; Covers, Oct 30)",
+        "[angle] Houston is on the front end of a back-to-back, hosting Oklahoma City on Saturday. A focus on the bigger game could mean rest for Durant late in a lopsided game. Mild help for Dallas. (Predictem, Oct 30)",
+        "Dallas is 3-2 under first-year coach Dusty May and beat Oklahoma City 120-96 on Wednesday. Kyrie Irving is off the injury report and Caleb Martin is back. Helps Dallas. (Predictem, Oct 30)",
+        "Cooper Flagg averages 25.2 points and 6.8 assists and took 23 shots in each of his last two games. Dallas scores 114.6 per game (16th), and both teams are top three in FG%, so Dallas can score. Helps Dallas. (Predictem; Covers, Oct 30)",
+        "Houston beat Dallas 128-110 in Dallas in the Oct 21 opener. Head-to-head history is weak evidence. Helps Houston. (Covers; Predictem, Oct 30)",
+        "Covers took Rockets -5.5 (to 57%) and Predictem took Rockets -5.5, projecting 117-108 and playable to -6.5 but a pass at -7.5. Covers' moneyline analyst priced Houston about 70%. Preview consensus isn't an edge, and at -6.5 we're at Predictem's limit. (Oct 30)"
+      ],
+      "reasoning": "Houston is the better team on the numbers, but the close of -5.5 already reflects that and the public's 5-0 ATS darling. The slate gives Dallas an extra point, Dallas has real scoring (Flagg, a healthy Kyrie), and Houston has OKC the next night. Dallas's lack of size against Houston's offensive rebounding is the counter. Projecting Houston by 5.5 against +6.5 is a 1-point gap, so it's a pass. Dallas is the forced side on the number.",
+      "forcedSide": "Dallas Mavericks",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

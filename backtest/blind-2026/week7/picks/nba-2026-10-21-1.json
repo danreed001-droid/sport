@@ -1,0 +1,120 @@
+{
+  "sport": "nba", "date": "2026-10-21", "chunk": "nba-2026-10-21-1",
+  "games": [
+    {
+      "away": "Atlanta Hawks", "home": "Orlando Magic",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "[spread] Line opened Orlando -2.5 and moved to Orlando -3.5 by game morning; total 232.5 -> 235.5 (WagerTalk, Oct 21 2026; Predictem, Oct 21 2026). Helps Orlando: the slate's -2.5 is a point better than where the market settled.",
+        "[spread] Reverse line movement: Atlanta drew roughly 94-98% of spread money yet the number moved toward Orlando (WagerTalk, Oct 21 2026). Helps Orlando (but RLM toward a favorite is 1-4 in LESSONS).",
+        "[spread] Predictem's writer calls Hawks +3.5/+3 playable, +2.5 only a lean and +2 or less a pass (Predictem, Oct 21 2026). At the slate's +2.5 even the Hawks backer is lukewarm. Mildly helps Orlando at this number.",
+        "Orlando out: Anthony Black (ankle, missed all preseason), Jonathan Isaac (knee), Noah Penda (hamstring), Izaiyah Nelson (ankle) (WagerTalk/Predictem, Oct 21 2026). Helps Atlanta.",
+        "[angle] Franz Wagner plays but sat the preseason finale with right shoulder soreness (Predictem, Oct 21 2026). Helps Atlanta slightly.",
+        "[angle] Orlando opens under first-time head coach Sean Sweeney (ex-Spurs assistant) after Jamahl Mosley was fired following a blown 3-1 first-round lead vs Detroit (Predictem, Oct 21 2026). Opening-night uncertainty; mildly helps Atlanta.",
+        "Atlanta out: Mouhamed Gueye (foot), Henri Veesaar (knee), both fringe players (WagerTalk, Oct 21 2026). Neutral.",
+        "[angle] Atlanta added Luguentz Dort and Aaron Wiggins from OKC's 2025 title team and went 4-1 in preseason incl. 135-111 at Dallas (Predictem, Oct 21 2026). Helps Atlanta.",
+        "Hawks' McCollum/Alexander-Walker/Daniels/Johnson/Okongwu lineup was +20.3 per 100 after the 2025-26 All-Star break; Alexander-Walker averaged 28 vs Orlando last season (Predictem, Oct 21 2026). Helps Atlanta.",
+        "Head-to-head: Atlanta swept the four 2025-26 meetings, scoring 124+ in three (WagerTalk, Oct 21 2026). Helps Atlanta, but H2H is priced per LESSONS (tiebreaker at most).",
+        "Orlando 2025-26: 28th in 3P%, 25th in eFG%, but 1st in free-throw rate and 5th in defensive rebounding (Predictem, Oct 21 2026). Mixed.",
+        "Previews' projections: WagerTalk Hawks 121-118, Predictem Hawks 116-113 (both take Atlanta +3.5). Public ratings/pundits are not an edge per LESSONS."
+      ],
+      "reasoning": "The market settled at Orlando -3.5 against nearly all the money, so the slate's -2.5 is a point of value on Orlando, but Orlando is short-handed (Black, Isaac out; Wagner's shoulder) under a new coach and Atlanta looks deep and sharp in preseason. Taking the -3.5 close as fair leaves only about a 1-point edge on Orlando, under the 2-point bar, so pass. A confirmed Wagner absence or the line reaching -4.5+ would have changed it.",
+      "forcedSide": "Orlando Magic",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Milwaukee Bucks", "home": "Washington Wizards",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 5.0,
+      "research": [
+        "[angle] Milwaukee traded Giannis Antetokounmpo and Bobby Portis to Miami for Tyler Herro, Jaime Jaquez Jr., Kel'el Ware, Kasparas Jakucionis, and also added Caris LeVert (SportsGambler, Oct 20-21 2026). Helps Washington.",
+        "Washington added No. 1 pick AJ Dybantsa, Deandre Ayton, Khris Middleton and Tre Mann; Trae Young and Anthony Davis are in the rotation (SportsGambler, Oct 21 2026). Helps Washington.",
+        "[angle] Dybantsa ruled out of his debut with an ankle sprain; he had the second-highest usage among Wizards starters in preseason (RotoWire, Oct 20 2026; WagerTalk props, Oct 21 2026). Helps Milwaukee.",
+        "Confirmed starters: MIL Turner, Herro, Rollins, Kuzma, Jaquez; WAS Coulibaly, Young, George, Sarr, Davis (SportsGambler, Oct 21 2026).",
+        "[angle] Taylor Jenkins is in his first year as Bucks coach, expected to push the pace; Milwaukee was one of the league's worst defenses in 2025-26 (WagerTalk props, Oct 21 2026). Helps Washington.",
+        "[spread] Line: Wizards -4.5 / Bucks +4.5 at BetMGM on Oct 20-21; a Dimers page later showed Wizards -5.5, ML -198/+188 (SportsGambler; Dimers search snippet). Movement toward Washington.",
+        "[spread] SportsGambler's best bet was Bucks +4.5, citing Washington failing to cover in 12 straight home games last season (stale, priced per LESSONS).",
+        "Davis preseason usage 24.9-33.2% in three games (WagerTalk props, Oct 21 2026)."
+      ],
+      "reasoning": "Locked as a pass because a search summary showed this game's final score before any lean was written. Pre-leak, the only market signal was a move from Washington -4.5 toward -5.5, which by the line-value lesson pointed to Washington; that is the forced side, but it is not a clean read.",
+      "forcedSide": "Washington Wizards",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (domains pickswise/dimers/actionnetwork etc.) reported that a Pickswise page for this matchup showed a final score of 116-128 (team order not stated; likely Bucks 116, Wizards 128). Seen before any lean was written; pass locked. Forced side Washington was based on the pre-leak line move (-4.5 to -5.5), but the leak may have influenced it."
+    },
+    {
+      "away": "Charlotte Hornets", "home": "Brooklyn Nets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -1.5,
+      "research": [
+        "[angle] Brooklyn parted with Nic Claxton (to Chicago) and added Julius Randle (WagerTalk props, Oct 21 2026; WagerTalk Bulls-Raptors, Oct 21 2026).",
+        "[angle] Charlotte traded LaMelo Ball to Minnesota and received Naz Reid (WagerTalk Wolves-Heat, Oct 21 2026). Helps Brooklyn relative to last season's Hornets.",
+        "Day'Ron Sharpe expected to be Brooklyn's starting center; 15 pts+ast in 17 preseason minutes in the finale (WagerTalk props, Oct 21 2026).",
+        "Charlotte's interior defense was mid-pack in 2025-26 (WagerTalk props, Oct 21 2026).",
+        "[spread] Slate line Charlotte -1.5 (near pick'em)."
+      ],
+      "reasoning": "Locked as a pass: a search summary gave this game's final score before any research or lean on it. There was no pre-leak reasoning, so the forced side follows the pre-set default of the underdog (underdogs covered 35 of 62 in LESSONS), which is Brooklyn. Fewer than 10 bullets were gathered because research stopped at the leak.",
+      "forcedSide": "Brooklyn Nets",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch for this game (allowed_domains wagertalk/predictem/sportsgambler) returned a summary saying Charlotte won 110-103 (listed as 22/10 2026), which means Charlotte covered -1.5. Seen before any research or lean. Pass locked; forced side set by the underdog default with no pre-leak reasoning."
+    },
+    {
+      "away": "Chicago Bulls", "home": "Toronto Raptors",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 10.0,
+      "research": [
+        "[spread] Line opened Toronto -9.5, dipped to -8.5 on Oct 20 and was back to -9.5 the morning of the game (WagerTalk, Oct 21 2026 7:47 AM). The slate's -10.5 is a point worse for Toronto than that morning number. Helps Chicago at this number.",
+        "[spread] Chicago drew most spread tickets (source gives 60-100% depending on the date; labels inconsistent) (WagerTalk, Oct 21 2026). If the close is -10.5, it moved against the public, toward the favorite (RLM toward a favorite is 1-4 in LESSONS).",
+        "Chicago injuries: Nic Claxton (hamstring) out; Leonard Miller (groin), Isaac Okoro (knee), Dailyn Swain (illness), Zach Collins (toe), Tobe Awaka (knee) listed (WagerTalk, Oct 21 2026). Helps Toronto.",
+        "Toronto: Nate Bittle (foot) out, expected to have limited impact (WagerTalk, Oct 21 2026). Neutral.",
+        "[angle] Toronto acquired Kawhi Leonard from the Clippers for Brandon Ingram and Gradey Dick, signed Kyle Anderson and lost Sandro Mamukelashvili; Leonard's Raptors debut, minutes plan unknown (WagerTalk, Oct 21 2026). Helps Toronto, but load-management uncertainty.",
+        "[angle] Chicago added Norman Powell (21.7 ppg with Miami), Buddy Hield and Claxton, drafted Caleb Wilson, and lost Collin Sexton and Anfernee Simons: many new pieces on opening night (WagerTalk, Oct 21 2026). Helps Toronto early.",
+        "2025-26: Toronto 46-36 allowing 111.8 ppg; Chicago 31-51 allowing 121.5 ppg (WagerTalk, Oct 21 2026). Helps Toronto (priced).",
+        "Chicago scorers: Giddey 17.0/8.3/9.1, Buzelis 16.3; Toronto: Barrett 19.3, Barnes 18.1/7.5/5.9, Quickley 16.4 (WagerTalk, Oct 21 2026). The Bulls dog has scorers (Powell, Giddey, Buzelis, Hield), so a backdoor cover is plausible. Helps Chicago.",
+        "Total opened 235.5 and moved to 236.5; about 92% of total money on the Under (WagerTalk, Oct 21 2026).",
+        "WagerTalk projection Toronto 120-109 and pick Raptors -9.5 (WagerTalk, Oct 21 2026). Pundit projections are not an edge per LESSONS."
+      ],
+      "reasoning": "The market sits at about Toronto -9.5 to -10.5. Chicago's depleted, reshuffled roster argues for Toronto, and the dog's scoring and the extra point over the morning number argue for Chicago. My projection of about 10 is inside a point of the line, so pass; the forced side is the underdog with the extra half point. A confirmed Leonard minutes limit (or a full night) and Chicago's final injury report would have decided it.",
+      "forcedSide": "Chicago Bulls",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Minnesota Timberwolves", "home": "Miami Heat",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 1.5,
+      "research": [
+        "[spread] WagerTalk says Miami opened -3.5 and was moved to -1.5 by heavy Minnesota support (71-100% of tracked spread money); Predictem says it opened -1.5 and hadn't moved (WagerTalk, Predictem, Oct 21 2026). The sources conflict.",
+        "Total opened 236.5 and rose to 242.5 (as high as 243.5) (WagerTalk, Oct 21 2026).",
+        "[angle] Miami acquired Giannis Antetokounmpo and Bobby Portis from Milwaukee (Herro, Jaquez, Ware out). This is Giannis's Heat debut, and he played only 36 games last season (WagerTalk; Predictem search snippet, Oct 21 2026).",
+        "[angle] Minnesota acquired LaMelo Ball from Charlotte, sending Naz Reid to Charlotte and Julius Randle to Brooklyn; it's Edwards and Ball's first game together (WagerTalk, Oct 21 2026).",
+        "Minnesota: Donte DiVincenzo out (Achilles). Miami: Vladislav Goldin questionable (ankle) (WagerTalk, Oct 21 2026).",
+        "Previews: WagerTalk Heat -1.5 (120-116) and Predictem Heat -1.5 (121-116), arguing Giannis/Adebayo size inside."
+      ],
+      "reasoning": "Locked as a pass: a search summary reported this game's final score before a lean was written. Pre-leak, I was leaning pass, with the line move toward Minnesota treated as fair. No forced side was set before the leak, so it follows the underdog default (Minnesota), which agrees with the leaked result. Treat it as contaminated.",
+      "forcedSide": "Minnesota Timberwolves",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch limited to predictem/wagertalk returned a summary quoting a later WagerTalk Pistons-Heat preview: Miami lost 131-106 at home to Minnesota (Giannis 35 points). Seen before any lean was written (I was leaning pass). Pass locked; the forced side uses the underdog default but can't be called independent of the leak."
+    },
+    {
+      "away": "Indiana Pacers", "home": "New Orleans Pelicans",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -3.5,
+      "research": [
+        "[spread] Slate line Indiana -3.5 at New Orleans (moneyline -155/+130).",
+        "No pre-game preview for this game was found; direct WagerTalk URLs returned 404."
+      ],
+      "reasoning": "Locked as a pass: the only search for this game returned a later preview saying New Orleans was 0-4 going into a later game, which implies the Pelicans lost this one. No research or lean existed before that. The forced side follows the underdog default (New Orleans); the leak points to an outright Pelicans loss.",
+      "forcedSide": "New Orleans Pelicans",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch limited to wagertalk/predictem summarized a later Kings-Pelicans preview saying both teams entered at 0-4, which implies New Orleans lost this game (margin unknown). Seen before any research or lean. Pass locked; forced side by the underdog default, chosen with the leak known."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "sport": "nba", "date": "2026-10-27", "chunk": "nba-2026-10-27-1",
+  "games": [
+    {
+      "away": "Brooklyn Nets", "home": "Boston Celtics",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 13.0,
+      "research": [
+        "Brooklyn is 0-3 straight up (losses to Charlotte, Cleveland, Indiana) and allowing 123.7 ppg (WagerTalk, Oct 27 2026) - helps Boston.",
+        "Opponents post a 60.7% eFG% vs Brooklyn, last in the league, and the Nets allow a league-high 23.3 wide-open threes per game (Predictem, Oct 27 2026) - helps Boston.",
+        "Boston is shooting 42.4% from three (53-of-125) through three games with a high three-point share (Predictem, Oct 27 2026) - matchup vs Brooklyn's open-three defense helps Boston.",
+        "[angle] Boston is on the second night of a back-to-back, but beat Chicago by about 35 Monday with no Celtic over 28 minutes and Derrick White at only 18 minutes, so starters are fresh (WagerTalk/Predictem, Oct 27 2026) - mildly helps Boston.",
+        "[angle] Jayson Tatum is back from an Achilles tear (36 vs the Knicks) and has said he can play back-to-backs; Boston's injury report had not been filed as of Tuesday morning (Predictem, Oct 27 2026) - status risk either way.",
+        "[angle] Paul George scored 38 in his Celtics debut; Julius Randle scored 33 in his Nets debut (Predictem, Oct 27 2026) - both rosters reshuffled, early-season noise.",
+        "Brooklyn forces about 19.7 turnovers per game (5th) and plays at the 6th-fastest pace, scoring 103+ every game (Predictem, Oct 27 2026) - helps Brooklyn stay within a big number.",
+        "Brooklyn cut a 22-point Cavaliers deficit to two in the final seconds Saturday (Predictem, Oct 27 2026) - backdoor tendency, helps Brooklyn +11.5.",
+        "Nets are 5-3 ATS vs Boston over the last two seasons with two overtime games in the last eight meetings (WagerTalk, Oct 27 2026) - head-to-head, tiebreaker at most, helps Brooklyn.",
+        "Line: slate Boston -11.5; DraftKings opened -11.5 and closed -13.5 (slate file), WagerTalk saw +11.5 to +12.5 during the day - market moved 2 points toward Boston, slate number 2 better than close on Boston's side.",
+        "Total opened 222.5 and closed 223.5 (slate file); Boston ranks 26th in pace (Predictem) - no strong signal."
+      ],
+      "reasoning": "No read before the leak: early-season Boston was fresh despite the back-to-back and Brooklyn's defense is the league's worst, but laying 11.5 with a reshuffled favorite is the kind of number LESSONS says to avoid. A search-result summary then showed a Covers matchup page with the final (Brooklyn 124, Boston 125) before any lean was written, so this is a pass. The forced side is Boston only because I had noted, pre-leak, that the slate -11.5 was 2 points better than the -13.5 close on the side the market moved to; it was not a formed lean.",
+      "forcedSide": "Boston Celtics",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (query naming Celtics/Nets Oct 27 2026 picks) stated that the Covers matchup page shows a final score of Brooklyn 124, Boston 125. Seen before any lean was written; locked as a pass. Forced side Boston comes from the pre-leak slate-vs-close note only (and that side lost ATS per the leaked score)."
+    },
+    {
+      "away": "Detroit Pistons", "home": "New York Knicks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.0,
+      "research": [
+        "Detroit is 3-0 SU (wins over Boston, Miami, Philadelphia) averaging 118.3 ppg and allowing 105.7; New York is 0-3 (losses to Philadelphia, Boston, Orlando) scoring 101.7 ppg (WagerTalk, Oct 27 2026) - helps Detroit.",
+        "Knicks rank 30th in offense at under 100 points per 100 possessions and shoot 32% from three; Detroit is about 114 offense / 102 defense per 100 (Predictem, Oct 27 2026) - helps Detroit.",
+        "[angle] Defending champion Knicks (16-3 title run last spring) face an 0-4 start; they blew a double-digit fourth-quarter lead to Orlando Sunday and their bench was outscored 47-11 (Predictem, Oct 27 2026) - motivation/desperation helps New York, bench problem helps Detroit.",
+        "Jalen Brunson is shooting 39% and Mikal Bridges went 5-of-23 for 10 points (Predictem, Oct 27 2026) - shooting slump likely to regress, helps New York.",
+        "Detroit is without All-Star center Jalen Duren (hamstring, out at least two weeks); Ausar Thompson (ankle) and Isaiah Joe (hip) questionable (Predictem/WagerTalk, Oct 27 2026) - helps New York, especially on the glass vs Karl-Anthony Towns (12.0 rpg).",
+        "Knicks: Jose Alvarado (ankle) out (WagerTalk, Oct 27 2026) - minor, helps Detroit.",
+        "Cade Cunningham averages 21.3 points and 8.0 assists but has 16 turnovers in three games; Detroit's turnover rate (17.3%) ranks 26th (Predictem/WagerTalk, Oct 27 2026) - helps New York.",
+        "[angle] Detroit swept last season's three meetings by an average of 28 points, with wins by 31 and 38 (Predictem, Oct 27 2026) - head-to-head, tiebreaker only, helps Detroit.",
+        "Line: slate Knicks -3.5; DraftKings opened -3.5 and closed -4.5 (slate file); WagerTalk notes it briefly touched 4.5 - market moved a point toward the 0-3 favorite, possibly on Ausar Thompson's status, and the slate number is 1 better than close on New York's side.",
+        "Total opened 218.5 and closed 220.5 (slate file); both teams allow under 109 ppg (WagerTalk) - no side signal.",
+        "Both previews (WagerTalk, Predictem) back Detroit +3.5 - preview picks are not an edge per LESSONS."
+      ],
+      "reasoning": "Detroit's form and New York's 30th-ranked offense point to the Pistons, but Duren is out, Thompson's status was unresolved, and the line moved toward the 0-3 Knicks, so the evidence is balanced and early-season. Projection Knicks by 2 sits within 2 points of the -3.5, so pass. The forced side is Detroit on the efficiency gap; a confirmed Thompson absence would have flipped it toward New York.",
+      "forcedSide": "Detroit Pistons",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Sacramento Kings", "home": "San Antonio Spurs",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 18.0,
+      "research": [
+        "Spurs are -17.5 on the slate; DraftKings opened -18.5 and closed -19.5 (slate file); WagerTalk listed -17.5 down from an opening -18.5 - market ended 2 points past the slate number toward San Antonio.",
+        "[angle] San Antonio is on a back-to-back with a trip to Utah the next night, which previews cite as a reason the Kings could stay close late (WagerTalk/Predictem search summaries, Oct 27 2026) - helps Sacramento.",
+        "A preseason meeting was a 29-point Spurs win (Predictem search summary, Oct 27 2026) - helps San Antonio (preseason, tiebreaker only).",
+        "WagerTalk projected Spurs 124-109 with a Kings +17.5 lean; Predictem backed Kings +18.5 projecting 122-107 (Oct 27 2026) - preview picks, not an edge.",
+        "Total opened 230.5 and closed 232.5 (slate file) - no side signal.",
+        "Fewer than 10 solid pre-leak findings: the game was contaminated on the first search."
+      ],
+      "reasoning": "No read: the first search's summary reported the final from a later Predictem preview before any research or lean, so this is a locked pass. Forced side San Antonio applies the same mechanical slate-vs-close rule used for Boston (slate -17.5 is 2 better than the -19.5 close on the side the market moved to); it is not a formed forecast.",
+      "forcedSide": "San Antonio Spurs",
+      "contaminated": true,
+      "contaminationNote": "The WebSearch summary for 'Kings vs Spurs odds picks prediction October 27 2026' (wagertalk/predictem/actionnetwork/oddsshark) quoted a later Predictem Nov 6 preview saying the game ended 130-103 Spurs. Seen before any lean; no pre-leak side was reached. Forced side is the mechanical slate-vs-close rule, which happens to match the leaked result."
+    },
+    {
+      "away": "Portland Trail Blazers", "home": "Los Angeles Lakers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.0,
+      "research": [
+        "Slate Lakers -2.5; DraftKings opened -2.5 and closed -1.5 (slate file); WagerTalk said the line opened Lakers -3.5 and settled at 2.5 - market moved toward Portland, slate +2.5 is 1 better than close on Portland's side.",
+        "Total opened 236.5 and closed 234.5 (slate file) - no side signal.",
+        "WagerTalk (Oct 27 2026) took Under 235.5 and Portland +2.5, projecting Lakers 114-112, noting none of the last 10 meetings closed with a total above 229.5 - preview pick, not an edge.",
+        "Fewer than 10 solid pre-leak findings: the game was contaminated on the first search."
+      ],
+      "reasoning": "No read: the first search's summary quoted a later WagerTalk piece with the final before any research or lean, so this is a locked pass. Forced side Portland is the same mechanical slate-vs-close rule used for the other leaked games (slate +2.5 vs +1.5 close, the side the market moved to), not a formed forecast.",
+      "forcedSide": "Portland Trail Blazers",
+      "contaminated": true,
+      "contaminationNote": "The WebSearch summary for 'Trail Blazers vs Lakers odds picks and prediction for October 27, 2026' (wagertalk.com only) said a later WagerTalk article reported Portland won 136-129 at the Lakers. Seen before any lean; no pre-leak side was reached. Forced side is the mechanical slate-vs-close rule, which matches the leaked result."
+    }
+  ]
+}

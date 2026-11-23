@@ -1,0 +1,29 @@
+{
+  "sport": "cfb", "date": "2026-11-15", "chunk": "cfb-2026-11-15-1",
+  "games": [
+    {
+      "away": "Ole Miss", "home": "Oklahoma",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.0,
+      "research": [
+        "[angle] The game was moved from Saturday Nov 14 at 4:15 PM ET to Sunday Nov 15 at 1 PM ET on SEC Network; no reason given (Covers, Nick Galaida, updated Nov 15 2026 10:25 AM ET). Neutral.",
+        "Line: slate Oklahoma -2.5; archive open -4, close -2.5. Covers lists OU -1.5 on game morning; Predictem (Nov 11) had Ole Miss -1.5 early in the week. Slate equals the close. Spread-specific; close treated as fair.",
+        "Oklahoma's defense ranks 2nd in adjusted EPA per play, but its offense ranks 109th in success rate and 126th in EPA per rush (Predictem, Joe Jensen, Nov 11 2026). A defense-first favorite with a poor offense; LESSONS says don't lay points here. Helps Ole Miss +2.5.",
+        "Oklahoma beat Florida 23-7, holding the Gators to 203 yards and 11 first downs with a 46.2% pressure rate, in Jason Witten's first game calling plays (Covers; Predictem). Helps Oklahoma.",
+        "[angle] Ole Miss QB Trinidad Chambliss completes 37.5% under pressure and has a 4-to-5 TD-INT ratio over his last three games (Covers). Oklahoma's pressure rate makes that a matchup problem; helps Oklahoma.",
+        "Ole Miss lost 42-7 at home to Georgia, which ended a 16-game home win streak; outgained 481-252, Chambliss 18-of-34 for 170 yards; two losses in its last three games (Predictem; Covers). Helps Oklahoma.",
+        "Ole Miss injuries: starting OL Patrick Kutas and RB Kewan Lacy (388 rush yds, 5 TD) are out (Predictem). Helps Oklahoma.",
+        "Ole Miss's season offense averaged 33.8 ppg and its defense ranks 48th in adjusted EPA per play; Chambliss has 18 pass TD, 7 rush TD, 9 INT (Predictem). Helps Ole Miss on the season numbers.",
+        "Oklahoma is 5-4 and has hit the moneyline in 7 of its last 12 (Covers; Predictem). Mixed.",
+        "Ole Miss has won three straight in the series, including 34-26 in Norman last year (Predictem). H2H is priced; neutral.",
+        "[angle] Weather: cooler, with wind gusts that could limit downfield passing, no rain (Covers). Total fell from 53.5 open to 48.5 close. Neutral on the side.",
+        "Previews: Covers takes Oklahoma -1.5; Predictem projects OU 21-20 (pick on the Under). Priced; neutral."
+      ],
+      "reasoning": "No read. Ole Miss's slump and injuries and Oklahoma's elite defense against Chambliss's struggles under pressure are matched by an Oklahoma offense that ranks near the bottom, the defense-first favorite LESSONS warns against laying with. A projection of about 2 sits on the 2.5 line. The most interesting angle is the unexplained move to Sunday. Clearer evidence that Witten's play-calling had fixed the OU offense would have made Oklahoma a lean.",
+      "forcedSide": "Ole Miss",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

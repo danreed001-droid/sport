@@ -1,0 +1,72 @@
+{
+  "sport": "nba", "date": "2026-11-04", "chunk": "nba-2026-11-04-2",
+  "games": [
+    {
+      "away": "Dallas Mavericks", "home": "San Antonio Spurs",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 12.0,
+      "research": [
+        "Covers (Chris Walder, Nov 4 2026): Kyrie Irving (knee) missed Monday's loss at Sacramento and is expected to play tonight; adds Dallas creation and helps the Mavericks +11.5 (largely priced).",
+        "[angle] Covers (Nov 4): Cooper Flagg averages 6.6 assists in the five games he has played with Irving, so Irving's return shifts Flagg into a facilitator role; mildly helps Dallas scoring and the underdog cover.",
+        "Covers (Nov 4): Dallas lost at Sacramento by 15 on Monday after a poor effort; recent form helps the Spurs -11.5.",
+        "Covers (Nov 4): Spurs are on a five-game winning streak with an average margin of 16.2 and allowing 106.8 points per 100 possessions in that span; helps the Spurs -11.5.",
+        "Covers (Nov 4): Spurs went 21-4 SU and 14-11 ATS as double-digit favorites in 2025-26 incl. playoffs; mild help for Spurs (ATS record, priced).",
+        "Covers (Nov 4): Mavericks are 5-0 ATS in their last five games on one day's rest, which is tonight's spot; mild help for Dallas (situational ATS, priced).",
+        "[angle] Covers (Nov 4): Spurs have won the last six meetings with Dallas by an average of 17.1, including a 16-point win as 14.5-point favorites on Oct 24; H2H history, helps Spurs but only as a tiebreaker.",
+        "[angle] Covers (Nov 4): Dylan Harper has averaged 21 points on 55.6% shooting over his last two games, giving San Antonio a scoring option beyond Wembanyama; helps Spurs.",
+        "Slate/ESPN close: Spurs -11.5 on the slate, closing -12.5 (no open recorded); the market moved a point toward San Antonio despite Irving's expected return; treated as fair, not a reason.",
+        "Dimers model (Nov 4): projects Spurs 118-107 (11 points) and lists Mavericks +12.5 as a 55.8% cover; model projection sits right on the number, helps neither side meaningfully.",
+        "Covers (Nov 4): writer's top pick is Spurs -11.5; both teams 2-5 to the total and San Antonio has gone over only twice in five games when the total is 228+, suggesting a slower game that slightly helps the underdog getting double digits."
+      ],
+      "reasoning": "Projection of about Spurs by 12 sits on the 11.5 number, and the evidence splits: Spurs form and the H2H blowouts versus Irving's return and Dallas's rest-spot ATS run. Early-season NBA lessons say pass without a concrete unpriced edge. A confirmed late Irving scratch would have pushed toward San Antonio.",
+      "forcedSide": "San Antonio Spurs",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Los Angeles Lakers", "home": "Sacramento Kings",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -12.0,
+      "research": [
+        "Covers (Jason Logan, Nov 4 2026): Kings are without Keegan Murray and Maxime Raynaud and Precious Achiuwa is doubtful; frontcourt depth is thin, helps Lakers -11.5 (reported before the line settled, so largely priced).",
+        "Covers (Nov 4): Kings rank 28th in defensive rating and allow the most paint points (56.6) and transition points (32.1) per game; helps Lakers.",
+        "Covers (Nov 4): Lakers have the top-rated scoring offense and rank 7th in transition frequency at 1.21 points per play (5th); matchup with Sacramento's transition defense helps Lakers.",
+        "[angle] Covers (Nov 4): Lakers allow about 15 threes per game and 18+ in each of their last three; Kings rookie Darius Acuff takes about 9.3 threes a game (165 shots in 7 games, 2nd in NBA), giving Sacramento a backdoor path; helps Kings +11.5.",
+        "[angle] Covers (Nov 4): Walker Kessler is averaging 14+ points and 10 rebounds for the Lakers and faces a Kings frontcourt missing Murray and Raynaud; helps Lakers on the glass.",
+        "Covers (Nov 4): Lakers opened November with two straight wins and are 7-0 to the Over in their last seven as double-digit road favorites; high-scoring games give both sides variance.",
+        "Prior result (Covers Mavericks-Spurs preview, Nov 4): Sacramento beat Dallas by 15 on Monday; recent form helps Kings +11.5.",
+        "Slate/ESPN: open +11.5, close +12.5 toward the Lakers; total fell 238.5 to 233.5; line movement treated as fair, not a reason.",
+        "Dimers model (Nov 4): projects Lakers 121-110 (11) with Kings +11.5 at a 58.1% cover probability; Dimers' best value bet is the Kings (public model, priced).",
+        "Dimers (Nov 4): projects Luka Doncic 36.0 pts, Austin Reaves 22.5, Acuff 24.9, Zach LaVine 20.0, De'Andre Hunter 15.5, so no listed Lakers absences; neutral."
+      ],
+      "reasoning": "Projection of about Lakers by 12 sits on the 11.5 number. Sacramento's injuries and bad defense point one way, while its three-point volume against a Lakers defense leaking threes and the model value point the other. No unpriced edge, so pass. A late Doncic or Reaves absence would have flipped it to Sacramento.",
+      "forcedSide": "Los Angeles Lakers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Miami Heat", "home": "Los Angeles Clippers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -5.0,
+      "research": [
+        "Covers (Zak Hanshew, Nov 4 2026): both teams rank 20th or worse in defensive rating and top 13 in pace; neutral, high-variance game.",
+        "Covers (Nov 4): Miami has the top offensive rating over its last three games at 130.3 points per game; helps Heat -5.5.",
+        "Covers (Nov 4): Giannis Antetokounmpo has 30+ in 4 of 7 games, averages 28.4 points on 19 shots with 31.4% usage and 7.8 assists over his last four; helps Heat.",
+        "[angle] Covers (Nov 4): writer says the Clippers lack interior personnel to handle Antetokounmpo and have allowed the fifth-most assists (30/game) over their last three; helps Heat.",
+        "Covers (Nov 4): Miami allows wide-open threes on a league-high 45.9% of opponent attempts (Clippers 10th at 39.4%); helps Clippers +5.5.",
+        "[angle] Covers (Nov 4): Rui Hachimura is averaging 2.4 threes on 38.7% in his first five Clippers games; Clippers shooting vs Miami's open-three defense helps the home underdog.",
+        "Covers (Nov 4): Clippers home-underdog games have gone Over in four straight; neutral to the side.",
+        "[angle] Covers (Nov 4): Miami is on a West Coast swing, coming off a road game at the Lakers; travel spot mildly helps Clippers.",
+        "Slate/ESPN: open +4.5, close +6.5 toward Miami; treated as fair.",
+        "Covers (Nov 4): article says wins have been scarce for both teams; no injuries listed on the page."
+      ],
+      "reasoning": "Contaminated before any lean was written: while researching the next day's Heat at Warriors game (out of date order, my error), Covers and Predictem Nov 5 previews stated Miami won Wednesday at the Clippers 117-116 in overtime. Locked as a pass with no forced side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "Before writing any lean, the Nov 5 Covers Heat-Warriors preview said Miami was 'coming off an overtime win over the Clippers' and the Nov 5 Predictem preview gave the score, 117-116 OT Heat win. Seen before deciding; no side had been noted, so pass and forcedSide 'no read'."
+    }
+  ]
+}

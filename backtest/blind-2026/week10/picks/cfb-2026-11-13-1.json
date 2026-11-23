@@ -1,0 +1,54 @@
+{
+  "sport": "cfb", "date": "2026-11-13", "chunk": "cfb-2026-11-13-1",
+  "games": [
+    {
+      "away": "Illinois", "home": "UCLA",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 8.5,
+      "research": [
+        "UCLA is 9-0 and No. 4 in the AP poll, 9-0 ATS; recent wins 17-7 Wisconsin, 28-10 Michigan State, 27-0 Nevada, 34-20 at Minnesota (Predictem, Joe Jensen, Nov 10 2026; Covers, JD Yonke, Nov 13 2026). Repeated performance helps UCLA; ATS record itself is priced.",
+        "UCLA defense allows 14.1 ppg (8th) and 4.11 yards per play, and leads the nation in defensive EPA per play since Week 6 (Predictem; Covers). Helps UCLA.",
+        "[angle] UCLA lost QB Nico Iamaleava to a season-ending knee injury on Oct 10; Ty Dieffenbach has started since and 'isn't as effective a runner'. Since Week 6 UCLA's offense ranks 86th in success rate and 133rd in explosiveness (Covers, Nov 13). A defense-first favorite with a middling offense: helps Illinois +9.5.",
+        "[angle] UCLA starting tackle Hall Schmidt and starting center Riley Robell left the Minnesota game injured (Covers, Nov 13); status not confirmed in the preview. Mild help for Illinois.",
+        "Illinois has won four straight: 21-10 over Oregon, 20-17 at Maryland, 24-13 over Nebraska, after a loss to Purdue on Oct 3 (Predictem). Helps Illinois.",
+        "[angle] Common opponent: UCLA won 17-15 at Oregon; Illinois beat Oregon 21-10 at home (Predictem). Helps Illinois.",
+        "Illinois ranks 39th in EPA per play and 33rd in explosiveness since Week 6; QB Katin Houser has 16 TD, 5 INT; RB Javari Barnett is out (Predictem; Covers). Mixed.",
+        "Illinois defense allows 5.63 yards per play (95th) and opponents score on 96.7% of red-zone trips (Predictem). Helps UCLA.",
+        "UCLA runs for 213 yards per game and holds the ball about 33 minutes (10th); UCLA ranks 125th in seconds per snap, Illinois 90th: a slow game with fewer possessions (Predictem; Covers). Slow pace is priced, so neutral.",
+        "Line: slate UCLA -9.5; archive open -12.5, close -10.5. Covers headline -9.5 with odds table -10.5. Slate and close within 1. Spread-specific; close treated as fair.",
+        "Illinois has gone under in 8 of its last 13 games and three straight; total 47.5-48.5 (Predictem; Covers). Neutral on the side.",
+        "Previews: Predictem projects UCLA 24-16 (pick on the Under); Covers takes Illinois +9.5. Preview picks are priced; neutral."
+      ],
+      "reasoning": "No read. UCLA's elite defense and unbeaten record against Illinois's strong recent form and a UCLA offense that has stalled since the QB change. LESSONS warns against laying points with a defense-first favorite but also against fading on that alone. The projection of about 8.5 is within 2 of both the 9.5 slate and the 10.5 close. The most interesting angle is the common-opponent result against Oregon. Confirmation that both UCLA linemen were out would have tipped it to Illinois.",
+      "forcedSide": "Illinois",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Houston", "home": "Colorado",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -8.0,
+      "research": [
+        "Houston (No. 14) is 3-6 ATS and 1-5 ATS as a favorite this season (Predictem, Joe Jensen, Nov 10 2026; Covers, Geoff Clark, Nov 13 2026). Spread-specific; team ATS records are priced. Mild Colorado.",
+        "Colorado is 2-6-1 ATS this season, but 9-3 ATS vs ranked teams under Deion Sanders (Covers, Nov 13). Spread-specific; mixed.",
+        "Line: slate Houston -10; archive open -10.5, close -7.5; Covers says it opened +10.5 and 'has been bet down' to 9.5-8.5 on game day. Slate and close differ by 2.5. Spread-specific; the close is treated as fair and the move is not re-counted as a reason.",
+        "[angle] Colorado has lost six of seven, needs to win out vs Houston, Cincinnati and UCF to reach a bowl; Sanders after the 20-10 loss at Arizona State (trailed 17-0 at half): 'The season doesn't look good' (Predictem). Motivation is a narrative; mixed.",
+        "Houston leads the country in third-down conversions (59.3%), holds the ball 32+ minutes and is +7 in turnover margin; QB Conner Weigman has 22 pass TD, 2 INT, 7 rush TD (Predictem). Helps Houston.",
+        "Colorado averages 19.8 ppg (123rd), is -11 in turnover margin (137th) and averages 75+ penalty yards per game (129th); QB Isaac Wilson has 8 INTs (Predictem). Helps Houston; a big dog covers only if it can score.",
+        "[angle] Houston's defense ranks 108th in yards per play allowed and 118th in defensive third-down rate, allowing nearly 253 passing yards per game (Covers; Predictem). Colorado WR Joseph Williams has 853 receiving yards. Helps Colorado.",
+        "Houston has outscored opponents by 4+ in the first quarter in six of nine games, while Colorado is 97th in first-quarter points (Covers). Helps Houston early.",
+        "Houston's recent form: lost 28-26 at Texas Tech and 21-13 at Utah, beat Cincinnati 31-24 last week (Predictem). Close games against good teams; mixed.",
+        "[angle] 10:15 PM ET kickoff at altitude in Boulder; forecast mid-40s, no rain, winds about 4 mph (Covers; Predictem calls it a 'backdoor setup'). Mild Colorado.",
+        "Red zone: Houston's offense is 101st in red-zone scoring rate, Colorado 115th (Covers). Neutral.",
+        "Last meeting: Houston won 36-20 at home in September 2025 (Predictem). H2H is priced; neutral.",
+        "Previews split: Predictem takes Houston -10.5 (projects 34-17); Covers takes Colorado +9.5 (writer 18-24 on top picks). Priced; neutral."
+      ],
+      "reasoning": "No read. Houston's efficiency and turnover edge against Colorado's turnover-prone offense is offset by Houston's poor defense and 1-5 ATS mark as a favorite. The close moved 3 points toward Colorado (10.5 to 7.5), and a projection near the close is within about 2 of the slate's 10. The most interesting angle is Colorado's season-on-the-line spot in a late kickoff at altitude. Concrete news behind the 3-point move, like a Houston starter out, would have made Colorado a lean.",
+      "forcedSide": "Colorado",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

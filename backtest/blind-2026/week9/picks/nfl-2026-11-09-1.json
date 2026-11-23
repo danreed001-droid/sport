@@ -1,0 +1,28 @@
+{
+  "sport": "nfl", "date": "2026-11-09", "chunk": "nfl-2026-11-09-1",
+  "games": [
+    {
+      "away": "Buffalo Bills", "home": "Minnesota Vikings",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -4,
+      "research": [
+        "[angle] Kyler Murray (hamstring) was questionable Monday morning (WagerTalk 9:36 AM, Nov 9). By the Covers update at 5:16 PM ET, Carson Wentz was starting for Minnesota. This is game-day news; it helps Bills.",
+        "[angle] The QB downgrade may matter less than it looks. Minnesota's offense was bottom-5 with Murray, managed 266 yards and 15 first downs in the loss to Detroit, and had no TD in a home game vs Miami (Covers Nov 9; WagerTalk Nov 9). Wentz threw 5 INTs in 5 starts last season. Mixed; slight lean to Bills.",
+        "[angle] Buffalo's LT Dion Dawkins and LG Alec Anderson are questionable after missing practice. Minnesota blitzes a league-high 73% and leads the league in opposing QBR, points allowed, sacks and pressure (Covers Nov 9). Helps Vikings.",
+        "RT Spencer Brown is back after missing Week 8, WR Joshua Palmer is out, Shakir missed Friday for personal reasons but practiced Saturday, and D.J. Moore is cleared (Covers Nov 9). Mixed, mostly neutral for Buffalo.",
+        "Josh Allen is the MVP favorite with a 16:2 TD-INT ratio in six games against Brian Flores' defenses, and plays indoors on turf (Covers Nov 9; WagerTalk Nov 9). Helps Bills.",
+        "Buffalo's pass defense is weak: most receiving TDs allowed to WRs (1.35 a game), bottom 10 vs TEs, bottom 7 in dropback EPA allowed. Vikings' TEs were the No. 2 option in Wentz's two starts (Covers Nov 9). Helps Vikings.",
+        "Strength of schedule: Buffalo faced Texans, Lions, Patriots, Raiders and Ravens. Minnesota faced Dolphins, Saints and Colts plus Chicago and Tampa Bay (WagerTalk Nov 9). Helps Bills.",
+        "Line: opened Bills -3 (-115), briefly -3.5, back to -3 with Buffalo's price at -122. The close is +3.5 Minnesota, so the Wentz news moved it half a point through 3. The total went 46.5/47.5 to 44.5 (WagerTalk Nov 9; Covers Nov 9; slate close 46.5). Spread-specific; slate +3.5 at -115 matches the close.",
+        "Splits: 84% of spread money and 78% of tickets on Buffalo, and 87% of the money on the over while the total fell (WagerTalk Nov 9). Spread-specific; public on the Bills, with the under taking sharp-looking movement.",
+        "Vikings are under in 16 of their last 19 (Covers Nov 9). A low-scoring profile makes 3.5 more valuable to Minnesota, but that's priced.",
+        "Previews: GoldSheet takes Bills -3 (24-17), and Covers' top pick is under 44.5, projecting Buffalo around 25. Priced and not used."
+      ],
+      "reasoning": "The late Murray-to-Wentz switch was game-day news, but the close already moved through 3 to 3.5, and Minnesota's offense was poor even with Murray. That's offset by Buffalo's questionable left side of the line facing the league's most aggressive blitz. The projection (Bills by about 4) is within a point of the number, so it's a pass. The forced side is Buffalo, from Allen indoors, the schedule gap and Wentz's turnover history. Dawkins and Anderson both being confirmed out would have pushed it to Minnesota.",
+      "forcedSide": "Buffalo Bills",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

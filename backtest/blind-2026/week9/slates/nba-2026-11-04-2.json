@@ -1,0 +1,51 @@
+{
+ "sport": "nba",
+ "date": "2026-11-04",
+ "chunk": "nba-2026-11-04-2",
+ "games": [
+  {
+   "away": "Dallas Mavericks",
+   "home": "San Antonio Spurs",
+   "time": "9:30 PM ET",
+   "awaySpread": 11.5,
+   "homeSpread": -11.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 411,
+   "homeMoneyline": -545,
+   "homeSpreadClose": -12.5,
+   "totalOpen": 229.5,
+   "totalClose": 226.5
+  },
+  {
+   "away": "Los Angeles Lakers",
+   "home": "Sacramento Kings",
+   "time": "10:00 PM ET",
+   "awaySpread": -11.5,
+   "homeSpread": 11.5,
+   "awaySpreadOdds": -106,
+   "homeSpreadOdds": -114,
+   "awayMoneyline": -574,
+   "homeMoneyline": 429,
+   "homeSpreadOpen": 11.5,
+   "homeSpreadClose": 12.5,
+   "totalOpen": 238.5,
+   "totalClose": 233.5
+  },
+  {
+   "away": "Miami Heat",
+   "home": "Los Angeles Clippers",
+   "time": "10:30 PM ET",
+   "awaySpread": -5.5,
+   "homeSpread": 5.5,
+   "awaySpreadOdds": -109,
+   "homeSpreadOdds": -111,
+   "awayMoneyline": -205,
+   "homeMoneyline": 171,
+   "homeSpreadOpen": 4.5,
+   "homeSpreadClose": 6.5,
+   "totalOpen": 233.5,
+   "totalClose": 233.5
+  }
+ ]
+}

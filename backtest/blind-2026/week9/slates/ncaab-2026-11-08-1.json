@@ -1,0 +1,70 @@
+{
+ "sport": "ncaab",
+ "date": "2026-11-08",
+ "chunk": "ncaab-2026-11-08-1",
+ "games": [
+  {
+   "away": "Iona Gaels",
+   "home": "St. John's Red Storm",
+   "time": "12:00 PM ET",
+   "homeRank": 13,
+   "awaySpread": 29.5,
+   "homeSpread": -29.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 4000,
+   "homeMoneyline": -50000,
+   "homeSpreadOpen": -24.5,
+   "homeSpreadClose": -26.5,
+   "totalOpen": 150.5,
+   "totalClose": 150.5
+  },
+  {
+   "away": "Arkansas Razorbacks",
+   "home": "Virginia Cavaliers",
+   "time": "1:00 PM ET",
+   "awayRank": 12,
+   "homeRank": 9,
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 130,
+   "homeMoneyline": -155,
+   "homeSpreadOpen": -2.5,
+   "homeSpreadClose": -4.5,
+   "totalOpen": 158.5,
+   "totalClose": 162.5
+  },
+  {
+   "away": "Houston Cougars",
+   "home": "California Golden Bears",
+   "time": "8:30 PM ET",
+   "awayRank": 10,
+   "awaySpread": -19.5,
+   "homeSpread": 19.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -4500,
+   "homeMoneyline": 1700,
+   "homeSpreadClose": 19.5,
+   "totalOpen": 145.5,
+   "totalClose": 142.5
+  },
+  {
+   "away": "USC Trojans",
+   "home": "Wichita State Shockers",
+   "time": "11:00 PM ET",
+   "awayRank": 21,
+   "awaySpread": -6.5,
+   "homeSpread": 6.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -270,
+   "homeMoneyline": 220,
+   "homeSpreadClose": 7.5,
+   "totalOpen": 156.5,
+   "totalClose": 155.5
+  }
+ ]
+}

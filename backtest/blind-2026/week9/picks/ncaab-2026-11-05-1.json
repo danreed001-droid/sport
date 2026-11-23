@@ -1,0 +1,142 @@
+{
+  "sport": "ncaab", "date": "2026-11-05", "chunk": "ncaab-2026-11-05-1",
+  "games": [
+    {
+      "away": "Wake Forest Demon Deacons", "home": "Vanderbilt Commodores",
+      "pick": null, "confidence": "pass", "projectedMargin": 17.0,
+      "research": [
+        "Wake Forest returned no starters from last season and kept only four players from its previous roster (Covers preview, Colby Marchio, Nov 5 2026). [angle] With a fully rebuilt roster, its true level is unknown, which cuts both ways on the spread.",
+        "Vanderbilt brings back junior guard Tyler Tanner, a first-team All-SEC and All-Defensive pick who averaged nearly 20 ppg and 5.1 apg and shot 37% from three last season (Covers, Nov 5 2026). Helps Vanderbilt.",
+        "Vanderbilt added transfers Bangot Dak (Colorado, 11.5 ppg, 6.5 rpg, 6.4% block rate) and Ace Glass (Washington State, 16.4 ppg, 2+ threes a game) (Covers, Nov 5 2026). Helps Vanderbilt.",
+        "Vanderbilt's exhibitions were against Virginia, Miami (FL) and UAB, while Wake Forest's were against Georgetown and South Carolina (Covers, Nov 5 2026). [angle] Both teams played real high-major tune-ups, so Wake isn't an untested low-major side. Slightly helps Wake.",
+        "Covers says Vanderbilt is 11-1 ATS in its last 12 games after a straight-up win by 20+, and its opener was one (Covers, Nov 5 2026). Team ATS trend: already priced, Vanderbilt side.",
+        "Both teams ranked in the top 115 in possessions per game last season (Covers, Nov 5 2026). More possessions can stretch a margin. Slightly helps the favorite; the total is 155.5.",
+        "Line: slate Vanderbilt -18.5, which was also the close (open -17.5). There was a 1-point move toward Vanderbilt, and the slate equals the close (slate file). Neutral.",
+        "[angle] Wake Forest is an ACC (power-conference) opponent, and an 18.5-point spread against a P4 team this early is large. Rebuilt rosters on both sides add variance. Slight lean to the underdog, but this is not a priced-out edge.",
+        "The Covers writer picks Vanderbilt -18.5 and expects a 20+ point win (Covers, Nov 5 2026). A public preview pick is already priced.",
+        "Only about 9 solid bullets were found (one search/fetch for this game), so confidence is lowered."
+      ],
+      "reasoning": "This is a big home favorite with a returning All-SEC guard against a fully rebuilt Wake roster, and the close matched the slate. I found no concrete fact the market hasn't priced, so I pass. Wake's high-major exhibition schedule is the only angle toward the underdog, and it is weak. Game-day injury news would have changed this.",
+      "forcedSide": "Wake Forest Demon Deacons",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Toledo Rockets", "home": "Michigan State Spartans",
+      "pick": null, "confidence": "pass", "projectedMargin": 24.0,
+      "research": [
+        "Michigan State beat Quinnipiac 96-59 in its opener and shot 58%. Jeremy Fears Jr. had 13 points and 11 assists, eight players scored 9+, and Anton Bonke had a double-double (Predictem, Joe Jensen, Nov 5 2026). Helps Michigan State.",
+        "Toledo lost 71-70 at Arkansas State while shooting 6-of-27 from three. Mynor Strong went 3-of-12 (Predictem, Nov 5 2026). [angle] That was a cold shooting night from a team built to score, which points to some regression upward. Helps Toledo.",
+        "Toledo lost its top scorer, Sonny Wilson, who scored 29 in last year's meeting, to South Florida. It added four high-major transfers (Marquette, DePaul, Providence, Ohio State) (Predictem, Nov 5 2026). Mixed.",
+        "Michigan State's Jesse McCulloch is expected back from a minor concussion (Predictem, Nov 5 2026). Slightly helps Michigan State.",
+        "KenPom had Toledo 141st, a big step up from Quinnipiac at 278th, so Michigan State's opener margin overstates things (Predictem, Nov 5 2026). [angle] Helps Toledo against a line inflated by the opener.",
+        "Under Tod Kowalczyk, Toledo's offense has rated better than its defense on KenPom in 16 of 17 seasons, and Izzo said Toledo 'can make a lot of shots' (Predictem, Nov 5 2026). A big underdog that can score is the type that covers. Helps Toledo.",
+        "Michigan State beat Toledo 92-69 at home last December, a 23-point margin (Predictem, Nov 5 2026). Head-to-head history is priced and weak.",
+        "Line: slate Michigan State -27.5. Open -26.5 and close -25.5, so the close is 2 points shorter than the slate, and the slate number is better for Toledo (slate file). Per LESSONS this is not a reason.",
+        "Predictem projects Michigan State 87-66 (21) and picks Toledo +26.5, and calls this Game 2, with ratings still leaning on priors (Predictem, Nov 5 2026). A preview pick is priced.",
+        "Risk: Michigan State's depth and transition game off Toledo turnovers could push the margin past the number by halftime (Predictem, Nov 5 2026). Helps Michigan State.",
+        "Only one source was used for this game, so confidence is lowered."
+      ],
+      "reasoning": "My ~24 projection is under 27.5, but the gap comes from ratings and a preview writer, which are priced. The slate being better than the close is explicitly not a reason. With no unpriced fact, I pass. The forced side is Toledo because its shooting can keep a big margin in check. Confirmation that McCulloch was out, or a Toledo starter out, would have changed it.",
+      "forcedSide": "Toledo Rockets",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Gardner-Webb Runnin' Bulldogs", "home": "Texas Longhorns",
+      "pick": null, "confidence": "pass", "projectedMargin": 0,
+      "research": [
+        "A Predictem preview (Nov 5 2026) listed Texas about -38.5 with a 154.5 total and recommended the Under, projecting 93-55.",
+        "Line: slate Texas -41.5, open -39.5, close -40.5 (slate file).",
+        "Research stopped after the first search returned this game's final score."
+      ],
+      "reasoning": "This is contaminated: the first search summary showed the final score before I formed any lean, so I lock a pass with no read.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary (restricted to predictem/covers/wagertalk/actionnetwork) quoted a Covers team page listing Gardner-Webb's Nov 5 game as a 50-98 loss (Texas covered 40.5). I saw it before forming any lean, so I lock a pass with no forced side."
+    },
+    {
+      "away": "Jacksonville Dolphins", "home": "Florida Gators",
+      "pick": null, "confidence": "pass", "projectedMargin": 32.0,
+      "research": [
+        "No. 1 Florida beat No. 14 Miami 77-67 in Tampa. Thomas Haugh had 19 points and 10 rebounds and Miami shot 35%, but Florida went 20-of-35 from the line and Boogie Fland was 0-of-6 inside the arc (Predictem, Joe Jensen, Nov 5 2026). The defense was elite and the offense was rusty. Mixed.",
+        "Jacksonville ranked 351st in adjusted tempo last season per KenPom, among the slowest teams in the country, and went 12-20 (Predictem, Nov 5 2026). [angle] Fewer possessions cap the margin. Helps Jacksonville.",
+        "Jacksonville's opener was against a non-Division I team, so there is no useful read on how it handles size (Predictem, Nov 5 2026). It's unknown how it handles Florida's frontcourt (Chinyelu, Condon). Helps Florida.",
+        "[angle] Coach Mincy (Jacksonville's, per my reading of Predictem) used 14 players Monday: 10 had double-digit minutes and none played more than 25 (Predictem, Nov 5 2026). A deep rotation keeps legs fresh against Florida's pressure late in the game. Slightly helps Jacksonville, but it came against a non-D1 opponent.",
+        "Jacksonville returned Hayden Wood (11.8 ppg, 37.7% from three), and 6-10, 270-pound Nehemiah Turner scored 16 in 16 minutes (Predictem, Nov 5 2026). Turner's foul trouble against Florida's bigs is a risk for Jacksonville.",
+        "Bart Torvik rates Florida 2nd and Jacksonville 222nd and projects 94-62 (32 points) (Predictem, Nov 5 2026). The rating is priced and sits near the line.",
+        "Florida is 43-3 at the O'Dome since 2023-24 and has won 35 straight home openers (Predictem, Nov 5 2026). That's straight-up history, not ATS, and it's priced.",
+        "Line: slate Florida -34.5. Open -34.5 and close -37.5, so the market moved 3 points toward Florida, and the slate is better for Jacksonville (slate file). Per LESSONS the close is fair and the slate-vs-close gap is not a reason.",
+        "The total rose from 152.5 to 155.5, so the market expects more possessions or scoring than Jacksonville's slow pace suggests (slate file). Helps Florida.",
+        "Predictem picks Jacksonville +34.5 with an 88-60 projection (28) (Predictem, Nov 5 2026). A preview pick is priced.",
+        "Only one source was used, so confidence is lowered."
+      ],
+      "reasoning": "The ratings put the margin around 32, inside the 34.5 slate number, but the market closed at 37.5 and ratings are priced. Jacksonville's extreme slow tempo is the only angle, and it's already in the total. I pass. Florida's opener free-throw rust is noise.",
+      "forcedSide": "Jacksonville Dolphins",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Coastal Carolina Chanticleers", "home": "Duke Blue Devils",
+      "pick": null, "confidence": "pass", "projectedMargin": 34.0,
+      "research": [
+        "Duke beat Army 84-50 on Monday as a 44.5-point favorite and failed to cover (Covers, Geoff Clark, Nov 5 2026). [angle] Duke's slow, defense-first style limits margins even against weak teams. Helps Coastal.",
+        "Bart Torvik and KenPom project Duke by about 31-32 points (Covers, Nov 5 2026). Both are short of 40, but ratings are priced.",
+        "Duke and Coastal Carolina both rank around 277th in adjusted tempo under their current coaches per KenPom (Covers, Nov 5 2026). [angle] A slow game means fewer possessions to build a 40-point lead. Helps Coastal.",
+        "Duke has allowed 54.8 ppg across six straight home games since Feb 3 of last season (Covers, Nov 5 2026). The elite defense helps Duke's margin.",
+        "Coastal Carolina has no returning starters, and its starting five are all underclassmen. It was a below-average three-point shooting team last season (Covers, Nov 5 2026). A big underdog needs to score, so this helps Duke.",
+        "Duke plays three 7-footers, including preseason All-ACC first-team C Patrick Ngongba II and second-team C Joaquim Boumtje Boumtje (Covers, Nov 5 2026). Size mismatch helps Duke.",
+        "Duke is 6-1 to the Under as a 35+ point favorite under Scheyer, and the Under is 7-1 in Duke's last 8 against teams below 40% (Covers, Nov 5 2026). The total trend fits a slow game. Slightly helps Coastal on the spread.",
+        "Line: slate Duke -40. Open -41.5 and close -40.5, a small move toward Coastal, and the slate is half a point better for Duke (slate file). Neutral.",
+        "The Covers writer picks Duke -40.5, playable to -42.5, plus the Under and Coastal's team total Under 54.5 (Covers, Nov 5 2026). A preview pick is priced.",
+        "Only one source was used for this game, so confidence is lowered."
+      ],
+      "reasoning": "The ratings say about 31-32 and the line says 40, but the market knows the ratings, and Coastal's young, poor-shooting roster may not be able to score. The slow tempo on both sides and Duke's non-cover against Army as a 44.5 favorite point to Coastal only as a tiebreaker. That's not enough for a pick.",
+      "forcedSide": "Coastal Carolina Chanticleers",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Penn Quakers", "home": "Illinois Fighting Illini",
+      "pick": null, "confidence": "pass", "projectedMargin": 26.0,
+      "research": [
+        "Illinois forward David Mirkovic is out after an emergency appendectomy that followed offseason foot surgery (Predictem, Nov 5 2026). [angle] It's unclear whether the market had this before opening. Helps Penn.",
+        "Illinois' Jake Davis separated his shoulder Monday, had surgery and is out indefinitely (Predictem, Nov 5 2026). This was known before the line opened, so it's priced. Slightly helps Penn.",
+        "Illinois beat FDU by a program-record 75 points with a program-record 19 threes. Andrej Stojakovic and Stefan Vaaks scored 20 each, and freshmen Quentin Coleman and Ethan Brown nearly posted triple-doubles (Predictem, Nov 5 2026). Helps Illinois, though an outlier shooting night inflates the line.",
+        "Torvik rates Illinois the country's best offense, and KenPom projects 92-69 (23) with Torvik at 91-70 (21) (Predictem, Nov 5 2026). The ratings are priced and short of 30.5.",
+        "Penn is playing its season opener on the road at State Farm Center, so rust is a risk (Predictem, Nov 5 2026). [angle] Penn has no game this season to calibrate from. Helps Illinois.",
+        "Penn's Ryan Alman is listed as questionable (Predictem, Nov 5 2026). His status is unresolved. Helps Illinois if he sits.",
+        "Penn returns TJ Power, who had 44 in the Ivy title game, and Michael Zanoni, who scored 20 against Illinois in March. Sir Mohammed scored 32 in a scrimmage (Predictem, Nov 5 2026). Penn has shot-makers, which helps a big underdog cover.",
+        "Illinois beat Penn 105-70 in the March 19, 2026 NCAA Tournament and outrebounded it 48-25. The Ivisic brothers' size is a mismatch (Predictem, Nov 5 2026). Head-to-head history is priced, but the size mismatch helps Illinois.",
+        "Line: Illinois opened -29.5 and moved to -30.5 (Predictem), and the slate is -30.5. The archive has no open or close. The move toward Illinois came despite the injuries, but per LESSONS line moves point nowhere.",
+        "Predictem picks Penn +30.5 with a 93-68 projection (25) (Predictem, Nov 5 2026). A preview pick is priced.",
+        "The total is high at 169.5, and more possessions can stretch the margin. Slightly helps Illinois."
+      ],
+      "reasoning": "The projection of about 26 is under 30.5, mainly on ratings and Illinois' missing forwards. But the injuries were reported before or around the open, the line still rose, and Alman's questionable status is unresolved. That's a pass trigger, so I pass. The forced side is Penn on its shot-making and the short-handed Illinois frontcourt.",
+      "forcedSide": "Penn Quakers",
+      "contaminated": false, "contaminationNote": null
+    },
+    {
+      "away": "Bethune-Cookman Wildcats", "home": "Texas Tech Red Raiders",
+      "pick": null, "confidence": "pass", "projectedMargin": 0,
+      "research": [
+        "A Predictem preview (Nov 5 2026) listed Texas Tech about -26.5 with a 150.5 total, picked the Under, and noted Texas Tech won the previous two meetings by 33 and 35.",
+        "Line: slate Texas Tech -29.5, open -26.5, close -30.5 (slate file).",
+        "Research stopped after the search summary returned this game's final score."
+      ],
+      "reasoning": "This is contaminated: the first search summary gave the final before I formed any lean, so I lock a pass with no read.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary (predictem.com only) cited later Predictem previews giving the Nov 5 result as Texas Tech 76-58 (won by 18, did not cover 29.5). I saw it before any lean, so I lock a pass with no forced side."
+    },
+    {
+      "away": "Cal Poly Mustangs", "home": "Arizona Wildcats",
+      "pick": null, "confidence": "pass", "projectedMargin": 0,
+      "research": [
+        "A Predictem preview (Nov 5 2026) listed Arizona -30.5 with a 173.5 total and picked the Under, citing Torvik's projection of 98-69.",
+        "Line: slate Arizona -30.5, open -29.5, close -31.5, with the total moving 168.5 to 174.5 (slate file).",
+        "Research stopped after the search summary returned this game's final score."
+      ],
+      "reasoning": "This is contaminated: the first search summary gave the final before I formed any lean, so I lock a pass with no read.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary (predictem.com only) cited a later Predictem preview reporting Arizona beat Cal Poly 104-84 (won by 20, did not cover 30.5). I saw it before any lean, so I lock a pass with no forced side."
+    }
+  ]
+}

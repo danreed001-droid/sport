@@ -1,0 +1,18 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-19",
+ "chunk": "nfl-2026-10-19-1",
+ "games": [
+  {
+   "away": "Washington Commanders",
+   "home": "San Francisco 49ers",
+   "time": "8:15 PM ET",
+   "awaySpread": 7.5,
+   "homeSpread": -7.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 330,
+   "homeMoneyline": -420
+  }
+ ]
+}

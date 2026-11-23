@@ -1,0 +1,39 @@
+{
+ "sport": "cfb",
+ "date": "2026-11-06",
+ "chunk": "cfb-2026-11-06-1",
+ "games": [
+  {
+   "away": "New Mexico",
+   "home": "Nevada",
+   "time": "9:00 PM ET",
+   "awayRank": 22,
+   "awaySpread": -9.5,
+   "homeSpread": 9.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": 101,
+   "awayMoneyline": -355,
+   "homeMoneyline": 340,
+   "homeSpreadOpen": 12.5,
+   "homeSpreadClose": 10.5,
+   "totalOpen": 43.5,
+   "totalClose": 39.5
+  },
+  {
+   "away": "TCU",
+   "home": "Arizona",
+   "time": "10:15 PM ET",
+   "homeRank": 24,
+   "awaySpread": 7.5,
+   "homeSpread": -7.5,
+   "awaySpreadOdds": -106,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 240,
+   "homeMoneyline": -275,
+   "homeSpreadOpen": -9.5,
+   "homeSpreadClose": -6.0,
+   "totalOpen": 44.5,
+   "totalClose": 46.5
+  }
+ ]
+}

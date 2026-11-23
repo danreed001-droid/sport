@@ -1,0 +1,118 @@
+{
+  "sport": "ncaab",
+  "date": "2026-11-03",
+  "chunk": "ncaab-2026-11-03-1",
+  "games": [
+    {
+      "away": "Wofford Terriers",
+      "home": "Tennessee Volunteers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": null,
+      "research": [
+        "Slate line Tennessee -26.5; homeSpreadClose -25.5 (open -27.5): the market moved about a point toward Wofford by kickoff (slate file).",
+        "Total moved up from 152.5 to 155.5 (slate file).",
+        "Covers' undated 2026-27 Wofford odds page listed TENN -27.5 / total ~155 for an upcoming game vs Tennessee (covers.com, search snippet).",
+        "Tennessee is ranked No. 8 in the slate; home opener at Thompson-Boling Arena (dimers.com preview, 2026-11-03).",
+        "Dimers' preview model projected Tennessee 90-63 (a 27-point margin, essentially on the number) and liked the under 154.5 (dimers.com, 2026-11-03).",
+        "Previous meeting was the March 2025 NCAA first round, Tennessee laying ~18.5 (sportsbookreview.com, 2025-03-20) -- old history, not used.",
+        "Fewer than 10 solid pre-game findings were gathered before the leak below; no injury or roster information was collected."
+      ],
+      "reasoning": "No lean had been formed when a Dimers search summary showed the final score of this game. Locked as a pass with no forced side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary of Dimers pages (my second search, before any lean was written) stated the final: Tennessee 90, Wofford 59 (Tennessee covered -26.5). I had no side before seeing it."
+    },
+    {
+      "away": "Drexel Dragons",
+      "home": "Virginia Cavaliers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 29,
+      "research": [
+        "Slate line Virginia -31.5 equals homeSpreadClose -31.5; the archive's open was -26.5 (possibly a placeholder; OddsTrader said books had not posted a line as of the morning of Nov. 2 and guessed ~20) (slate file; oddstrader.com, 2026-11-02). Helps neither side: close treated as fair.",
+        "Total 141.5 -> 142.5: a slow game; laying 31.5 needs roughly an 87-55 final, about 22% of the total (slate file). Slightly helps Drexel.",
+        "[angle] Drexel ranked 322nd in pace last season and Virginia 298th; OddsTrader's writer suggested Drexel slowing the game could keep it inside the number (oddstrader.com, 2026-11-02). Helps Drexel.",
+        "Drexel lost Shane Blakeney (14.2 ppg, its only double-digit scorer) to South Carolina; top returner Josh Reed averaged 7.9 ppg (oddstrader.com, 2026-11-02). Helps Virginia.",
+        "Drexel was 305th in offensive rating last season (68.1 ppg) but 69th in defensive rating (oddstrader.com, 2026-11-02). Offense helps Virginia, defense helps Drexel.",
+        "[angle] Drexel's last game vs a high-major in the preview, an 80-50 loss at Syracuse, came on 19-of-59 shooting (oddstrader.com, 2026-11-02). Helps Virginia.",
+        "Virginia went 30-6 in Ryan Odom's first season, 16-1 at home, 26th in offensive rating and 59th in defensive rating, with the roster largely intact (oddstrader.com, 2026-11-02). Helps Virginia.",
+        "[angle] Thijs De Ridder (15.6 ppg as a freshman) returns and scored 17 in an exhibition win over Villanova (oddstrader.com, 2026-11-02). Helps Virginia.",
+        "ATS last season: Drexel 18-13-1 (9-7-1 as an underdog, 6-7-1 on the road); Virginia 17-17-2, 8-8-1 as a home favorite, 6-7-2 non-conference (oddstrader.com, 2026-11-02). Slightly Drexel, but priced.",
+        "Virginia's games went under 11 of 17 as a home favorite last season (6-11 O/U) (oddstrader.com, 2026-11-02). A slow home favorite makes a 30+ margin harder: slight Drexel.",
+        "Virginia entered ranked No. 9 with title odds around +3000 (oddstrader.com, 2026-11-02). Neutral.",
+        "No notable injuries reported for either team (oddstrader.com, 2026-11-02)."
+      ],
+      "reasoning": "A slow-paced 142.5 total makes a 31.5-point cover a tall ask, but Drexel lost its only real scorer and Virginia returns a 30-win core, so I project roughly a 29-point win: inside 2.5 points of the number and below the bar. The pace angle is the only reason for the forced Drexel side; a hot Virginia shooting night would erase it.",
+      "forcedSide": "Drexel Dragons",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Manhattan Jaspers",
+      "home": "Kentucky Wildcats",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": null,
+      "research": [
+        "Slate line Kentucky -33; homeSpreadClose -33.5 (open -31.5) (slate file).",
+        "Total 158.5 open and close (slate file).",
+        "Kentucky ranked No. 23 in the slate; season opener at Rupp Arena.",
+        "Fewer than 10 solid pre-game findings: my first search returned a later (Champions Classic) preview summary that gave this game's outcome before any research or lean."
+      ],
+      "reasoning": "The first search summary leaked the result before any lean. Locked as a pass with no forced side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "My first WebSearch summary quoted an OddsTrader Kansas vs. Kentucky (Champions Classic) preview saying Kentucky won its opener against Manhattan by 28 as a 33.5-point favorite (Manhattan covered) and that Momcilovic scored 24 with six 3s. Seen before any lean."
+    },
+    {
+      "away": "Arkansas-Pine Bluff Golden Lions",
+      "home": "Arkansas Razorbacks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 37.5,
+      "research": [
+        "Slate line Arkansas -40.5; homeSpreadClose -42.5 (open -40.5); total 161.5 -> 167.5 (slate file). Close treated as fair; slate-vs-close not used.",
+        "Predictem's same-day preview listed Arkansas -38.5 / 163.5 at most books (predictem.com, 2026-11-03): the market climbed 2-4 points toward Arkansas through the day. Information, not a fade signal.",
+        "Predictem writer's Torvik-based model projected Arkansas by about 33 (94-60) and about 157 points (predictem.com, 2026-11-03). Helps Pine Bluff, but public ratings are priced: tiebreaker only.",
+        "[angle] Arkansas returns only one rotation player (Billy Richmond III) and added ten newcomers, eight of them freshmen; RotoWire called it the youngest power-conference team in the country (predictem.com, 2026-11-03). A brand-new roster in game one adds variance; slight Pine Bluff.",
+        "[angle] Arkansas shot 32-of-57 (56.1%) at the line across two exhibitions and Calipari criticized it after the Memphis game (predictem.com, 2026-11-03). Helps Pine Bluff against a 40-point number.",
+        "Arkansas has size: five players 6-11 or taller, including Furman transfer Cooper Bowser (SoCon blocks leader two years ago) (predictem.com, 2026-11-03). Helps Arkansas against an undersized SWAC team.",
+        "Nine Arkansas players averaged 17+ minutes in the exhibitions, and it scored 93 vs Memphis (predictem.com, 2026-11-03). Deep rotation means no drop-off when starters sit: helps Arkansas keep extending.",
+        "Georgia transfer Jeremiah Wilkinson made 79 threes last season (predictem.com, 2026-11-03). Helps Arkansas.",
+        "Arkansas-Pine Bluff ranks 362nd in Torvik's preseason adjusted offense and 354th overall in KenPom; it went 13-19 and was picked 11th of 12 in the SWAC (predictem.com, 2026-11-03). Helps Arkansas: can the dog score at all?",
+        "[angle] Pine Bluff played no public exhibition, so this is its first outside competition (predictem.com, 2026-11-03). Helps Arkansas.",
+        "Both teams project fast (about 72-74 possessions) (predictem.com, 2026-11-03). More possessions favor the big favorite's margin: helps Arkansas.",
+        "No injuries were reported for either team (predictem.com, 2026-11-03)."
+      ],
+      "reasoning": "Torvik-type ratings put this near Arkansas by 33 while the market went to 40-42, but ratings are priced and Pine Bluff may not reach 60 points. Shading my number most of the way to the market gives about 37.5, inside the bar: pass. The forced side is Pine Bluff on Arkansas's brand-new roster and poor exhibition free-throw shooting against a 40-plus number; a hot Arkansas shooting night from three would beat it.",
+      "forcedSide": "Arkansas-Pine Bluff Golden Lions",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Sam Houston Bearkats",
+      "home": "Alabama Crimson Tide",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 24,
+      "research": [
+        "Slate line Alabama -26.5; homeSpreadClose -27.5 (open -26.5); total 169.5 -> 172.5 (slate file). Close treated as fair.",
+        "Predictem's same-day preview listed Alabama -26.5 / 171.5 (predictem.com, 2026-11-03). The line held or rose despite the absences below.",
+        "[angle] Aden Holloway (16.8 ppg, 43.8% from three last season) is serving a five-game suspension that covers this game; he returns Nov. 9 (predictem.com, 2026-11-03). Helps Sam Houston, though it was known before the line opened, so likely priced.",
+        "[angle] Freshman guard Anderson Diaz (elbow) has not played; Nate Oats doubted he would be ready (predictem.com, 2026-11-03). Helps Sam Houston, likely priced.",
+        "Alabama lost Labaron Philon, Latrell Wrightsell and Aiden Sherrell from its Sweet 16 team; it added transfers Drew Fielder and Brandon Garrison for rebounding (predictem.com, 2026-11-03). Slight Sam Houston.",
+        "Alabama beat Auburn only 87-85 in an exhibition, and Oats said 'Rebounding still isn't fixed' (predictem.com, 2026-11-03). Slight Sam Houston.",
+        "Amari Allen (11.4 ppg, 6.9 rpg as a freshman) is a preseason SEC All-American; freshman Qayden Samuels averaged 16.3 ppg in exhibitions; NC State transfer Cole Cloer hit 8 of 18 threes (predictem.com, 2026-11-03). Helps Alabama.",
+        "Torvik projects Alabama at 76+ possessions, the fastest host in Predictem's batch (predictem.com, 2026-11-03). Pace lets a favorite run up a margin: helps Alabama.",
+        "Sam Houston went 22-12, finished second in Conference USA and made the NIT, but must replace five double-digit scorers (predictem.com, 2026-11-03). Mixed.",
+        "Point guard Justin Begg (9.5 ppg before an ankle injury) and Jacobe Coleman (45 threes as a freshman) made preseason All-CUSA (predictem.com, 2026-11-03). Helps Sam Houston: it has scorers to keep pace.",
+        "Torvik has Sam Houston 157th preseason; the writer's pace-adjusted projection was Alabama by about 19 (92-72) and his pick was Sam Houston +26.5 (predictem.com, 2026-11-03). Ratings and preview picks are priced: tiebreaker only, Sam Houston."
+      ],
+      "reasoning": "Ratings put Alabama around 19-20, the market at 26.5-27.5 even with Holloway suspended; shading toward the market I get about 24, a 2.5-point gap that misses the bar. The forced side is Sam Houston because Alabama is short its best returning guard and still has rebounding problems; Alabama's 76-possession pace is what could blow it open.",
+      "forcedSide": "Sam Houston Bearkats",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

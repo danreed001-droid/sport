@@ -1,0 +1,144 @@
+{
+  "sport": "nba",
+  "date": "2026-10-31",
+  "chunk": "nba-2026-10-31-1",
+  "games": [
+    {
+      "away": "Portland Trail Blazers",
+      "home": "Utah Jazz",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -6.5,
+      "research": [
+        "Line: Utah +6.5 opened and closed at +6.5, total 232.5 flat (slate open/close fields) -- no market move. Neutral.",
+        "Portland's Ja Morant out (Grade 2 left hamstring strain, at least four weeks) per the Blazers' Friday announcement, quoted in the same search summary (dimers/predictem, Oct 31). Helps Utah. Seen in the leaked summary.",
+        "Utah: Jaren Jackson Jr. out (MCL tear in the loss to Memphis), Jusuf Nurkic yet to play (foot), Lauri Markkanen questionable (wrist), per the same summary. Helps Portland. Seen in the leaked summary.",
+        "Covers ATS article (Oct 31): Utah had lost three straight; Portland had covered this number in all of its wins. Helps Portland, but ATS records are priced.",
+        "Research stopped at the first search because the search summary showed the final score (see contaminationNote). Fewer than 10 solid pre-game bullets; no independent read formed."
+      ],
+      "reasoning": "Contaminated on the very first search: the search tool's summary stated the final score before any notes were written, so this is locked as a pass. There was no pre-leak read. The forced side below is not a pre-game forecast and should be excluded from forced-side grading.",
+      "forcedSide": "Portland Trail Blazers",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch ('Trail Blazers vs Jazz prediction October 31 2026 preview', allowed_domains betting sites incl. dimers.com and covers.com) returned a summary saying Dimers' game page and Covers' matchup page list the final as Portland 112, Utah 90. Seen before any lean was written. No pre-leak read existed; forcedSide (Portland) was chosen after seeing the result and is not a forecast."
+    },
+    {
+      "away": "Philadelphia 76ers",
+      "home": "Charlotte Hornets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.5,
+      "research": [
+        "Line: Charlotte +1.5 opened and closed at +1.5; total fell from 216.5 to 211.5 (slate open/close). Spread flat, so no side signal; the 5-point total drop fits back-to-back / rest worries. Neutral.",
+        "Both teams are on the second night of a back-to-back (Predictem preview, Oct 31). [angle] Neutral-ish, but it raises Philadelphia's risk of resting stars.",
+        "Philadelphia beat the Knicks 98-93 Friday to go 5-1, with Tyrese Maxey scoring 27; LeBron James and Joel Embiid both played heavy minutes, and the Sixers have rested stars on back-to-backs before (Predictem, Oct 31). Helps Philadelphia on form; star-rest risk helps Charlotte.",
+        "Jaylen Brown (left knee tendinopathy) is out for Philadelphia; the Sixers' report hadn't been filed early Saturday (Predictem, Oct 31; Covers moneyline picks, Oct 31). Helps Charlotte.",
+        "[angle] Charlotte scored 79 points at Washington on Friday, shooting 12-of-56 from three (Predictem, Oct 31). Its offense ranks last in points per possession and it shoots 28.7% from three. Helps Philadelphia.",
+        "Philadelphia's defense ranks first in points per possession allowed (0.999) and second in eFG% allowed (48.5%), but its offense ranks 25th, mostly with Brown in the lineup (Predictem, Oct 31). Mixed: a strong defense against the league's worst offense helps Philadelphia; a weak offense without Brown limits any margin.",
+        "Charlotte is without Kon Knueppel, Coby White and Grant Williams, none of whom has played this season (Predictem; Covers, Oct 31). Already in Charlotte's season numbers. Neutral to Philadelphia.",
+        "[angle] Charlotte traded LaMelo Ball to Minnesota. Brandon Miller averages 24.5 points on about 37% shooting and has taken 24+ shots in four straight games (RotoWire props, Oct 31; Predictem). A one-man offense helps Philadelphia.",
+        "Rebounding: Philadelphia ranks last in offensive rebounding and Charlotte fourth; Philadelphia has the second-lowest turnover rate (Predictem, Oct 31). Mixed.",
+        "Pace and unders: Charlotte plays the slowest pace in the league; five of its six games went under this total, and the two teams were a combined 11-1 to the Under (Predictem; SBR, Oct 31). A low-possession game favors the underdog getting points slightly, but 'low total makes points worth more' is a weak lesson. Slight edge to Charlotte.",
+        "Market: Covers notes Philadelphia -1.5 at 52% on Polymarket (Covers ATS picks, Oct 31). That's close to a coin flip. Neutral."
+      ],
+      "reasoning": "This is a near pick'em at 1.5 with two tired teams. Philadelphia's elite defense against the league's worst offense points to the Sixers, but Brown is out and LeBron/Embiid could rest on the back-to-back, which is a late-status question. My projection of Philadelphia by about 2.5 is within a point of the line. A confirmed rest for Embiid or LeBron would have flipped the forced side.",
+      "forcedSide": "Philadelphia 76ers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Atlanta Hawks",
+      "home": "New Orleans Pelicans",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -5.0,
+      "research": [
+        "Line: New Orleans opened +3.5 and closed +5.5; the slate's +4.5 sits between them. The market moved 2 points toward Atlanta, so the slate's Atlanta -4.5 is 1 point better than the close (slate open/close). Lessons call this information, not an edge. Slight lean to Atlanta.",
+        "[angle] Dejounte Murray returns Saturday after missing the Kings game for the birth of his son, pushing Herb Jones out of the starting lineup (Covers moneyline picks, Oct 31). Helps New Orleans a little.",
+        "New Orleans just got its first win of the season (the Covers ATS article says so; the team was 0-4 before hosting the Kings on Oct 29, per WagerTalk Oct 29). That puts it at about 1-4. Helps Atlanta on form.",
+        "[angle] Paint matchup: Atlanta ranks 27th in points allowed in the paint and lets opponents shoot nearly 60% on two-pointers, while New Orleans ranks first in points scored in the paint (Covers ATS picks, Oct 31). Helps New Orleans.",
+        "New Orleans scores 124.7 points a game on 48% shooting, with Zion Williamson at 21.8 points and rookie Derik Queen at 9.3 rebounds; Yves Missi (knee) out and Jordan Poole (ankle) questionable as of Oct 29 (WagerTalk, Oct 29). Mixed.",
+        "New Orleans has allowed opponents to shoot 49.7% from the field through five games, one of the league's worst marks (RotoWire props, Oct 31). Helps Atlanta.",
+        "Atlanta leads the NBA with 32.5 assists a game (RotoWire, Oct 31) and averaged 121 points scored and 115.2 allowed before Oct 29 (WagerTalk, Oct 29). Helps Atlanta.",
+        "Atlanta's frontcourt is thin: Mouhamed Gueye (foot) out, and Henri Veesaar (knee) out for the season (WagerTalk, Oct 29). That matters against New Orleans' paint offense. Helps New Orleans.",
+        "Atlanta came into Oct 29 at 2-3 on a three-game losing streak, then beat Cleveland 114-111 on Oct 29 after leading by 15 (Predictem Cavs-Bucks preview, Oct 31). Rest: Atlanta's last game was Thursday and so was New Orleans', so both teams had a day off. Neutral.",
+        "Market: New Orleans +4.5 at 51% on Polymarket (Covers ATS picks, Oct 31). A coin flip at this number. Neutral.",
+        "Jalen Johnson averages 37.0 points + rebounds + assists (RotoWire, Oct 31), and Nickeil Alexander-Walker scores 19.6 a game (WagerTalk, Oct 29). Helps Atlanta."
+      ],
+      "reasoning": "The market moved 2 points toward Atlanta for a reason I couldn't find; I'd treat the close (+5.5) as fair. Against that, the slate's 4.5 is a small plus for Atlanta. The paint mismatch and Murray's return argue for New Orleans, so the evidence is balanced and the projection (Atlanta by about 5) sits on the number. Pass. The forced side follows the move and the better-than-close number.",
+      "forcedSide": "Atlanta Hawks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Sacramento Kings",
+      "home": "Memphis Grizzlies",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 8.0,
+      "research": [
+        "Line: Memphis opened -10.5 and closed -7.5 (slate open/close). That's a 3-point move toward Sacramento; the slate's Kings +10.5 is 3 points better than the close. Lessons: treat the moved number as fair, and a better-than-close slate line is information, not an edge. Leans Sacramento.",
+        "Sacramento is 0-5 and has lost by an average of 16.6 points; it ranks 28th in both offensive and defensive rating (Covers ATS picks, Oct 31). Helps Memphis.",
+        "Memphis has started 5-0 (Covers moneyline picks, Oct 31) and ranks top five in both offensive and defensive rating (Covers ATS picks, Oct 31). Helps Memphis.",
+        "Memphis already covered this number against Sacramento in a meeting on Oct. 25 (Covers ATS picks, Oct 31). Helps Memphis, though head-to-head history is weak evidence.",
+        "Sacramento allowed 125.5 points a game and scored 107.8 before Oct 29, and lost 130-103 at San Antonio on Oct 27 (WagerTalk, Oct 29). Helps Memphis.",
+        "Kings injuries as of Oct 29: Keegan Murray (ankle) and Maxime Raynaud (knee) out, Ben Simmons (Achilles) unavailable, Dylan Cardwell (calf) unclear (WagerTalk, Oct 29). A thin frontcourt helps Memphis.",
+        "[angle] Memphis' frontcourt of Zach Edey (7-foot-4), Cam Boozer (the youngest player ever to record a triple-double) and Isaiah Stewart against Domantas Sabonis; Covers says Sacramento has no one to guard Ty Jerome (Covers moneyline picks, Oct 31). Helps Memphis.",
+        "[angle] Sabonis leads the league in rebounding (16.5 a game), but Memphis is a top-five rebounding team and third in offensive rebounding rate (SBR best bets, Oct 31; WagerTalk, Oct 29). Helps Memphis on the glass.",
+        "Zach LaVine averages 27.3 points on 52.2% shooting (WagerTalk, Oct 29), and rookie Darius Acuff has made three 3s in each of his last two games. Memphis holds opponents to 30.3% from three, fourth-best (RotoWire, Oct 31). The Kings can score some, but Memphis' perimeter defense is good. Slight edge to Memphis.",
+        "Market: Memphis -10.5 at 53% on Polymarket (Covers ATS picks, Oct 31), from before the move to -7.5. Neutral.",
+        "I could not find the cause of the 3-point move (a Memphis absence or rest is the likely reason). That's unresolved status. Neutral and lowers confidence."
+      ],
+      "reasoning": "On the numbers Memphis is far better, but the market cut the line from 10.5 to 7.5, most likely on Memphis availability news I couldn't confirm. Treating -7.5 as fair puts my projection (Memphis by about 8) 2.5 short of the slate's 10.5. The cause of the move is unresolved and early-season NBA lessons say pass. The forced side is the Kings, getting 3 points more than the close.",
+      "forcedSide": "Sacramento Kings",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Cleveland Cavaliers",
+      "home": "Milwaukee Bucks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -7.5,
+      "research": [
+        "Line: Milwaukee opened +9.5 and closed +8.5; the slate is +8.5, the same as the close. Predictem (Oct 31) says most tickets are on Cleveland but most dollars are on Milwaukee: sharper money toward the home underdog. Leans Milwaukee.",
+        "[angle] Giannis Antetokounmpo was traded to Miami. Tyler Herro leads Milwaukee at 23.4 points and Jaime Jaquez Jr. averages 17.8 points and 7.2 rebounds (Predictem, Oct 31). Milwaukee was 1-4 before this game (Predictem search summary, Oct 31). Helps Cleveland, but it's priced.",
+        "Milwaukee ranks 27th in defensive rating, fouls often and forces the fewest turnovers in the league; it lost 132-100 to Houston on Wednesday, and first-year coach Taylor Jenkins said 'I didn't have our guys prepared' (Predictem, Oct 31). Helps Cleveland.",
+        "[angle] Rest: Milwaukee had two days off at home and has no one on the injury report. Cleveland played Wednesday and Thursday, then had Friday off (Predictem, Oct 31). Helps Milwaukee a little.",
+        "Cleveland is 3-2, 0-2 on the road, and 1-4 ATS; it has covered only once in three wins. Its biggest win was by 10, over Washington (Predictem; Covers ATS picks, Oct 31). Doesn't win big, which helps Milwaukee +8.5.",
+        "[angle] Cleveland has blown big leads: it led Philadelphia by 29 in the opener and lost, and lost 114-111 at Atlanta Thursday after leading by 15. Kenny Atkinson: 'We haven't had the great game' (Predictem, Oct 31). Helps Milwaukee.",
+        "Cleveland ranks 16th in net rating and 17th in defensive rating (Basketball Reference via Predictem, Oct 31). That's middling for a 8.5-point road favorite. Helps Milwaukee.",
+        "Cleveland injuries: Jaylon Tyson (ankle) and Nae'Qwan Tomlin (back) out; Meleek Thomas questionable (Predictem, Oct 31). Depth pieces only. Neutral.",
+        "Glass: Milwaukee ranks sixth in offensive rebounding rate with 15+ offensive boards in each of its last three games, while Cleveland allowed 15+ in three of five (Predictem, Oct 31). Helps Milwaukee.",
+        "Cleveland is still fitting Peyton Watson into the starting lineup; the Harden-Mitchell backcourt should attack ball screens; Milwaukee gives heavy bench minutes to rookies Jakucionis, Burries and Ament (Covers moneyline picks, Oct 31). Helps Cleveland.",
+        "Market: Milwaukee +9.5 at 53% on Polymarket before the move to 8.5 (Covers ATS picks, Oct 31). Neutral to slight Milwaukee."
+      ],
+      "reasoning": "Cleveland is the much better team on paper, but it hasn't put teams away (1-4 ATS, biggest win 10), and Milwaukee is rested at home with money behind it. My projection (Cleveland by about 7.5) is only a point off the 8.5, so pass. Preview writers' picks of Milwaukee were not counted. The forced side follows the line move and the rest edge.",
+      "forcedSide": "Milwaukee Bucks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Minnesota Timberwolves",
+      "home": "San Antonio Spurs",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 12.0,
+      "research": [
+        "Line: San Antonio opened -11.5 and closed -12.5; total rose from 227.5 to 230.5 (slate open/close). The slate's -12.5 equals the close. The market moved a point toward the Spurs. Neutral to slight San Antonio.",
+        "[angle] Anthony Edwards is out for Minnesota (Covers ATS and moneyline picks, Oct 31). Reported before the line settled, so it's priced. Helps San Antonio.",
+        "[angle] Minnesota is on the second night of a road back-to-back, and Covers expects it to be cautious with the rotation (Covers moneyline picks, Oct 31). Helps San Antonio.",
+        "[angle] Minnesota acquired LaMelo Ball from Charlotte (RotoWire, Oct 31). Covers flags his workload as a concern on the back-to-back since he didn't log heavy minutes last season; he scored 24 on Friday (Covers, Oct 31). Mixed.",
+        "Minnesota has the second-best defense in the league (Covers ATS picks, Oct 31). Helps the Wolves keep it inside 12.5.",
+        "Minnesota lost 127-125 in overtime at Cleveland earlier in the week (WagerTalk Cavs-Hawks, Oct 29). Close games, so it competes. Slight edge to Minnesota.",
+        "Naz Reid was recently benched, and Friday's game was a blowout (Covers moneyline picks, Oct 31). [angle] Rotation unrest; helps San Antonio.",
+        "San Antonio beat Sacramento 130-103 on Oct 27 (WagerTalk, Oct 29). One big win over a bad team. Helps San Antonio a little.",
+        "Market: Minnesota +11.5 at 46% on Polymarket (Covers ATS picks, Oct 31), from before the move to 12.5. Slight edge to San Antonio.",
+        "Couldn't find a full Oct 31 preview with ATS records or Spurs injury news. Only 9 solid bullets; confidence lowered."
+      ],
+      "reasoning": "Edwards out and a road back-to-back are already priced into 12.5, and Minnesota's elite defense is the only real case for the dog. 'A big underdog covers only if it can score with this lineup', and without Edwards on tired legs that's doubtful. But the projection (Spurs by about 12) sits right on the number, so pass. Learning that Wembanyama or another Spurs starter would sit would have changed the forced side.",
+      "forcedSide": "San Antonio Spurs",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

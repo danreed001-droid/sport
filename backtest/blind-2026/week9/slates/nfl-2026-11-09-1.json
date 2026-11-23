@@ -1,0 +1,22 @@
+{
+ "sport": "nfl",
+ "date": "2026-11-09",
+ "chunk": "nfl-2026-11-09-1",
+ "games": [
+  {
+   "away": "Buffalo Bills",
+   "home": "Minnesota Vikings",
+   "time": "8:15 PM ET",
+   "awaySpread": -3.5,
+   "homeSpread": 3.5,
+   "awaySpreadOdds": 113,
+   "homeSpreadOdds": -115,
+   "awayMoneyline": -163,
+   "homeMoneyline": 160,
+   "homeSpreadOpen": 3.0,
+   "homeSpreadClose": 3.5,
+   "totalOpen": 48.5,
+   "totalClose": 46.5
+  }
+ ]
+}

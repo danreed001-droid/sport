@@ -1,0 +1,40 @@
+{
+ "sport": "nba",
+ "date": "2026-10-20",
+ "chunk": "nba-2026-10-20-1",
+ "games": [
+  {
+   "away": "Boston Celtics",
+   "home": "Detroit Pistons",
+   "time": "3:00 PM ET",
+   "awaySpread": -1.5,
+   "homeSpread": 1.5,
+   "awaySpreadOdds": -107,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -120,
+   "homeMoneyline": 102
+  },
+  {
+   "away": "Philadelphia 76ers",
+   "home": "New York Knicks",
+   "time": "7:00 PM ET",
+   "awaySpread": 4.5,
+   "homeSpread": -4.5,
+   "awaySpreadOdds": -106,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 154,
+   "homeMoneyline": -170
+  },
+  {
+   "away": "Oklahoma City Thunder",
+   "home": "San Antonio Spurs",
+   "time": "9:30 PM ET",
+   "awaySpread": 1.5,
+   "homeSpread": -1.5,
+   "awaySpreadOdds": -107,
+   "homeSpreadOdds": -102,
+   "awayMoneyline": 112,
+   "homeMoneyline": -112
+  }
+ ]
+}

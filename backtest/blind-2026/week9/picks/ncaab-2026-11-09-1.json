@@ -1,0 +1,113 @@
+{
+  "sport": "ncaab",
+  "date": "2026-11-09",
+  "chunk": "ncaab-2026-11-09-1",
+  "games": [
+    {
+      "away": "Wagner Seahawks",
+      "home": "UConn Huskies",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 35.0,
+      "research": [
+        "Wagner is 0-2, scoring 50 at Boston College and 57 at No. 14 Miami on 30.4% and 33.3% shooting with 12 assists total across both games (Predictem, Nov 9 2026). It has trouble scoring, which matters for a 37.5-point dog. Helps UConn -37.5.",
+        "KenPom ranks Wagner's offense 350th of 365 (Predictem, Nov 9 2026). Helps UConn.",
+        "UConn held Gardner-Webb to 46 points, with 25.5% shooting in the first half (Predictem, Nov 9 2026). Helps UConn.",
+        "[angle] UConn's Solo Ball (wrist) sat out both games and hasn't been cleared (Predictem, Nov 9 2026). One fewer shooter to run up the margin. Mild Wagner.",
+        "[angle] Lookahead: UConn faces Ohio State in Hartford on Friday, and the preview expects Hurley to empty the bench early once the game is decided (Predictem, Nov 9 2026). Bench minutes cap the margin. Helps Wagner +37.5.",
+        "[angle] Former Husky Youssouf Singare starts at center for Wagner, so he's facing his old team (Predictem, Nov 9 2026). It's a motivation angle and probably minor. Mild Wagner.",
+        "Wagner returned none of last season's scoring. Kareem Watson and transfer Cam Estevez (10 points in each game) carry the offense (Predictem, Nov 9 2026). Helps UConn.",
+        "The line moved from -38.5 at open to -39.5 at close, against the slate's -37.5 (slate data). The market went toward UConn, but the close is fair and the slate number being better isn't a reason. Neutral.",
+        "The total is 140.5 → 139.5, a low total, so there are fewer possessions for UConn to build a 38-point margin (slate data). LESSONS say low totals aren't a reason. Neutral.",
+        "Hurley's teams foul a lot: On3 counted 23 UConn fouls against Michigan, and 30 UConn points came at the line in that game (Predictem, Nov 9 2026). Free throws stop the clock for both sides. Neutral.",
+        "Predictem projects UConn 84, Wagner 51 (+33) and took the Under, not the side (Nov 9 2026). It's a rating-based margin just under the line. Mild Wagner."
+      ],
+      "reasoning": "Wagner can barely score, but a projected margin of about 33-35 with a lookahead to Ohio State and early bench minutes sits within about 2-3 points of a 37.5 line, and the close went higher to 39.5. There's no concrete unpriced edge, so pass. Forced side is Wagner on the bench-minutes and lookahead angle. A Ball return would have pushed toward UConn.",
+      "forcedSide": "Wagner Seahawks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Grambling Tigers",
+      "home": "Texas Longhorns",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 36.0,
+      "research": [
+        "Texas beat Chicago State 109-59 (+50) and Gardner-Webb 98-50 (+48) (Predictem, Nov 9 2026). Repeated blowouts this season. Helps Texas -35.5.",
+        "Texas opponents average 54.5 points on 36.8% shooting, and Texas forced 38 turnovers in two games (Predictem, Nov 9 2026). Its pressure creates runs. Helps Texas.",
+        "[angle] Torvik rates Chicago State about the same as Grambling, so Texas's 50-point win is a like-for-like comparison, though the writer discounts it (Predictem, Nov 9 2026). Helps Texas.",
+        "Torvik has Texas 17th (10th O, 25th D) and Grambling 327th, which implies a margin in the high 20s (Predictem, Nov 9 2026). The ratings are still mostly preseason. Helps Grambling +35.5.",
+        "Grambling beat Northern Illinois 89-87 in its opener. Isaiah Miranda scored 29 on 10-of-12 with 3 blocks, and Dwayne Pierce added 19 and 8 assists (Predictem, Nov 9 2026). It can score some. Mild Grambling.",
+        "[angle] Grambling has had a full week off since its opener, while Texas has already used its bench deeply in both blowouts (Predictem, Nov 9 2026). Mixed.",
+        "Texas guard Mikey Lewis is out after foot surgery until mid-to-late December (Predictem, Nov 9 2026). It's known and priced. Mild Grambling.",
+        "[angle] Texas has 11 newcomers, including Matas Vokietaitis (15 of 17 FG) and 17-year-old reclassified Marcus Spears Jr. A young, deep roster gets lots of bench minutes, but it was still winning by 48-50. Neutral.",
+        "Grambling was picked eighth in the SWAC and returns two players from a 14-19 team (Predictem, Nov 9 2026). Helps Texas.",
+        "The line was -37.5 at both open and close, against the slate's -35.5. Predictem notes some books dropped two points (slate data / Predictem). Treat -37.5 as fair. Neutral.",
+        "The total rose from 152.5 to 155.5, so the market expects pace of about 70 possessions (slate data). More possessions help a big favorite build a margin. Mild Texas."
+      ],
+      "reasoning": "Texas's two 48-50 point wins, one over a team rated like Grambling, point to the favorite, while preseason-heavy ratings imply high 20s. My projection of about 36 is within a point of the 35.5 line, so pass. Forced side is Texas on this season's repeated margins and turnover pressure. Fresh news of Texas resting starters would have flipped it.",
+      "forcedSide": "Texas Longhorns",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Radford Highlanders",
+      "home": "Tennessee Volunteers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 27.0,
+      "research": [
+        "Radford is 0-2, losing 76-62 at San Francisco (Torvik 160th) and 84-70 at California (99th), both by 14 (Predictem, Nov 9 2026). It stays competitive against mid-majors. Helps Radford +28.5.",
+        "Tennessee beat Wofford 90-59 but trailed 34-31 at halftime before winning the second half 56-28 (Predictem, Nov 9 2026). Mixed.",
+        "Torvik has Tennessee 8th in offense and 24th in defense, and Radford 282nd overall. A simple projection gives a mid-20s margin, a few points short of the line (Predictem, Nov 9 2026). Mild Radford.",
+        "Radford has 32 turnovers in two games (19 at USF) and is shooting 14 of 50 from three (Predictem, Nov 9 2026). Tennessee scored 27 fast-break points against Wofford. Helps Tennessee.",
+        "[angle] Tennessee used 13 players against Wofford, and preseason first-team All-SEC Juke Harris came off the bench for 26 minutes and 7 points while Barnes sorts the rotation (Predictem, Nov 9 2026). A wide rotation caps the margin. Mild Radford.",
+        "[angle] Radford closes a three-game season-opening road trip here (Predictem, Nov 9 2026). Fatigue and travel. Mild Tennessee.",
+        "DeWayne Brown II had 17 points and 17 rebounds, and Tennessee had a +12.6 rebounding margin last season (Predictem, Nov 9 2026). It's a glass mismatch. Helps Tennessee.",
+        "Radford's Frederik Erichsen averages 14.0 points and 7.5 rebounds, and Ja'Corey Robinson has 5 assists in each game (Predictem, Nov 9 2026). There's modest scoring. Neutral.",
+        "The line went from -28.5 at open to -29.5 at close, with the slate at -28.5 (slate data). A small move toward Tennessee, and the close is fair. Neutral.",
+        "Predictem leaned Radford +28.5 at -108, projecting 88-62, and called the market about right (Nov 9 2026). Priced."
+      ],
+      "reasoning": "Radford's two 14-point road losses to mid-majors and Tennessee's wide early rotation point to a mid-20s margin, but Radford's turnover rate feeds Tennessee's transition game, and the close went to 29.5. My projection of 27 is only 1.5 inside the line, so pass. Forced side is Radford. Only 10 solid bullets were found.",
+      "forcedSide": "Radford Highlanders",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "North Florida Ospreys",
+      "home": "Miami Hurricanes",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 32.0,
+      "research": [
+        "Predictem (Nov 9 2026 preview, via search summary): Miami is a 34.5-point favorite with a total of 162.5. Its lean was North Florida +34.5, projecting Miami 96, North Florida 65.",
+        "Barttorvik has Miami about 15th nationally with an elite defense, and North Florida about 312th (Predictem, Nov 9 2026, via search summary).",
+        "Miami opened the season with a 77-67 loss to Florida (Predictem, via search summary). Early form was shaky.",
+        "The line moved from -30.5 at open to -35.5 at close, and the total from 158.5 to 165.5 (slate data). The close is fair.",
+        "Research stopped here because of contamination (see note). Fewer than 10 bullets."
+      ],
+      "reasoning": "Locked as a pass. A search summary showed a fact from this game, Miami's three-point shooting in it, before I had written any lean. Per LESSONS, a hint of the result before a lean means pass with no forced read.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (predictem/pickswise-limited search for North Florida @ Miami and Oakland @ Alabama previews) said a later preview noted 'Miami went 5-of-27 from three against North Florida'. That's an in-game stat, not the final score, but it hints at the outcome. I saw it before forming any lean on this game. No final score was seen."
+    },
+    {
+      "away": "Oakland Golden Grizzlies",
+      "home": "Alabama Crimson Tide",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 32.5,
+      "research": [
+        "Predictem (Nov 9 2026 preview, via search summary): No. 20 Alabama is a 32.5-point favorite with a total of 172.5. The preview leaned Oakland +32.5, projecting Alabama 100, Oakland 72.",
+        "Oakland came in 0-3 (Predictem, via search summary).",
+        "The line moved from -31.5 at open to -32.5 at close, with the total at 169.5 both times (slate data).",
+        "Research stopped because of contamination (see note). Fewer than 10 bullets."
+      ],
+      "reasoning": "Locked as a pass with no forced read. The final score showed up in a search summary before I had written any lean on this game. projectedMargin is only the line, not a read.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary for the Oakland @ Alabama preview said a later preview reported Alabama 'drilled 24 threes in a 109-68 rout of Oakland' (Alabama by 41, which covers -32.5). I saw it before forming any lean. No lean existed before the leak."
+    }
+  ]
+}

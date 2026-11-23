@@ -1,0 +1,126 @@
+{
+  "sport": "nba",
+  "date": "2026-10-21",
+  "chunk": "nba-2026-10-21-2",
+  "games": [
+    {
+      "away": "Utah Jazz",
+      "home": "Memphis Grizzlies",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 1.5,
+      "research": [
+        "Slate line Memphis -2.5; Covers' game preview (Quinn Allen, Oct 21) listed Grizzlies -1.5, total 242.5, so the slate number is about a point worse for Memphis backers than Covers' posted number (helps Utah at +2.5).",
+        "Utah is without Jusuf Nurkic and Tony Bradley (Covers preview, Oct 21), thinning its frontcourt and pushing Jaren Jackson Jr. toward center minutes (helps Memphis).",
+        "[angle] Jaren Jackson Jr. was traded from Memphis to Utah and faces his former team in the opener (Covers ATS/ML picks, Oct 21); Memphis also traded Ja Morant to Portland and is described as a rebuilding, 'new-look' roster (helps Utah).",
+        "Utah drafted No. 2 pick Darryn Peterson to pair with Lauri Markkanen, JJJ, Keyonte George and Ace Bailey; Covers' ATS writer calls Utah one of the league's more underrated teams and took Jazz +1.5 (Covers ATS picks, Oct 21) (helps Utah).",
+        "[angle] Covers' moneyline writer (Oct 21) argued Utah was among the hardest tankers the last two seasons (manipulating rotations/minutes) and expects them to 'step on the gas' now; he priced Utah at ~54% vs a 48% market (helps Utah).",
+        "Utah allowed an NBA-worst 126 PPG last season, ranked 29th in defensive rating and allowed an NBA-worst 59.4% inside the arc (Covers preview, Oct 21) (helps Memphis).",
+        "Zach Edey averaged 11.1 rebounds (3.9 offensive) last season and 11.8 PPG in his career vs Utah; Covers' top pick was Memphis ML on the size edge vs a depleted Jazz frontcourt (Covers preview, Oct 21) (helps Memphis).",
+        "Spread-specific: Utah cashed the moneyline in only 10 of its last 50 games, -37% ROI (Covers preview trend, Oct 21) - built during the tank seasons (helps Memphis, mostly priced).",
+        "Spread-specific: Polymarket had Utah 48% / Memphis 52% at the time of Covers' ML piece, consistent with a 1.5-2.5 point home line (neutral).",
+        "Cedric Coward averaged 15.2 PPG at home vs 11.8 on the road as a rookie (Covers preview, Oct 21) (slight Memphis).",
+        "Covers' total sat at 241.5-242.5, a high number implying both defenses are expected to be poor (neutral)."
+      ],
+      "reasoning": "Before the leak I had this close to the number: Utah's talent upgrade (Peterson, JJJ) and the extra point at +2.5 vs Memphis's size edge with Nurkic/Bradley out; projection Memphis by ~1.5, inside the 2-point pass band. A search summary then showed later-season information (the Jazz losing 13 of their first 15), which hints at this result, so per LESSONS this is a locked pass.",
+      "forcedSide": "Utah Jazz",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (sportsbookreview/rotowire rookie pages) said 'The Jazz dropped 13 of their first 15 games.' This doesn't give this game's score but implies Utah likely lost. Seen before any lean was written down; my pre-leak reasoning pointed to Utah +2.5 as the forced side (underdog, line a point above Covers' -1.5), with the projection inside the pass band."
+    },
+    {
+      "away": "Dallas Mavericks",
+      "home": "Houston Rockets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 9.0,
+      "research": [
+        "Line opened Houston -8.5 (some books -7.5 on 10/18) and moved to -9.5 on 10/20; total opened 226.5 and rose to 229.5-230.5 (WagerTalk preview, Oct 21). Covers' ATS piece later quoted Mavericks +10.5 (helps Houston: market moving its way).",
+        "Spread-specific: Dallas drew 99-100% of spread money and 81% of spread tickets, yet the line moved toward Houston (WagerTalk, Oct 21) - reverse movement toward the favorite, a sign that has gone 1-4 in this test (mixed).",
+        "Dallas is short in the frontcourt: Dereck Lively II (foot), Caleb Martin (thumb), Santi Aldama (knee) and Tarik Biberovic (heel) out; Jett Howard questionable (WagerTalk, Oct 21) (helps Houston).",
+        "Houston: Steven Adams (calf) and Julian Phillips (illness) questionable; Fred VanVleet back after missing last season with a knee injury; added Marcus Smart and Bogdan Bogdanovic (WagerTalk/Covers, Oct 21) (helps Houston).",
+        "[angle] Kyrie Irving returns from his ACL tear and was expected to be eased in; he played 22 minutes in a preseason win over Houston with 17 points (helps Houston that he may be limited; helps Dallas that he's back).",
+        "[angle] Dusty May coaches his first NBA game for Dallas, adjusting to a new system with Irving and second-year Cooper Flagg (21.0/6.7/4.5 as a rookie) together (WagerTalk, Oct 21) (slight Houston).",
+        "Last season Houston went 52-30 and Dallas 26-56; Houston was 5th in defensive rating and 29th in pace (WagerTalk/Covers, Oct 21) (helps Houston; priced).",
+        "Spread-specific: Houston went 30-11 SU but only 17-24 ATS at home last season; Dallas covered all four meetings last season (Covers preview, Oct 21) (helps Dallas, but ATS history is priced).",
+        "Dallas ranked 29th in road offensive rating last season and went 14-26 to the Under away (Covers, Oct 21) (helps Houston's margin case, but also supports a low-scoring game where 9.5 is a lot).",
+        "[angle] Covers' ML writer (Oct 21) hoped Ime Udoka would run a 10-man rotation and limit starters' minutes in the opener; he priced Dallas ~30% vs 22% market (helps Dallas).",
+        "WagerTalk projected Rockets 115-107 (8 points) and took Dallas +9.5; Covers' preview writer declined to lay 8.5 (helps Dallas slightly)."
+      ],
+      "reasoning": "Houston has the healthier, deeper roster against a Dallas frontcourt missing four players, but the market already moved two points to -9.5 on that, and my projection (Houston ~9) is within the pass band. Before locking, a search summary revealed the outcome direction, so this is a pass regardless. Forced side was Dallas, the underdog with the steamed-against number.",
+      "forcedSide": "Dallas Mavericks",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary of a Rotowire Kyrie Irving headline said he played 24+ minutes 'in Wednesday's season-opening loss to Houston' with 15 points. No margin shown. Seen after I had settled on pass with Dallas as forced side but before writing it down; locked as a pass."
+    },
+    {
+      "away": "Golden State Warriors",
+      "home": "Los Angeles Lakers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.5,
+      "research": [
+        "Line Lakers -6.5 (-110); spread ranged 5.5-6.5 during the week; total opened 231.5, peaked 235.5, now 234.5 (WagerTalk preview, Oct 21). Slate matches the market at -6.5 (neutral).",
+        "Spread-specific: Lakers drew 91-100% of spread money while Golden State drew 67-91% of tickets (WagerTalk, Oct 21) - money vs tickets split suggests sharper money on the Lakers (helps Lakers).",
+        "Golden State is heavily depleted: Jimmy Butler (ACL), Brandin Podziemski (back), Moses Moody (knee) and Kristaps Porzingis out; Charles Bassey questionable/doubtful (WagerTalk and Covers, Oct 21) (helps Lakers).",
+        "Stephen Curry is probable after rolling his ankle at an open gym; reportedly fine (Covers ML picks, Oct 21) (slight Lakers risk factor).",
+        "[angle] LeBron James left for Philadelphia; Luka Doncic (33.5/7.7/8.3 last season) is now the focal point, with Austin Reaves (23.3 PPG) (WagerTalk, Oct 21) (neutral - new pecking order).",
+        "[angle] Walker Kessler returns after missing almost all of last season (knee) as the Lakers' sign-and-trade center; with Porzingis out, Draymond Green is expected to start at center for GSW, ceding size and the glass (Covers preview/ML, Oct 21) (helps Lakers).",
+        "Lakers additions: Kessler, Collin Sexton (questionable, calf), Quentin Grimes, Sandro Mamukelashvili; departures Ayton, Hachimura, Smart (WagerTalk, Oct 21) (neutral).",
+        "[angle] J.J. Redick is pushing tempo after the Lakers were 22nd in pace and 2nd-fewest FGA last season; GSW runs a new five-out, heavy-3 offense that hit 18 threes in a 128-point preseason finale (Covers preview, Oct 21) (variance - helps the underdog's backdoor).",
+        "Last season Lakers 53-29, Warriors 37-45 (WagerTalk, Oct 21) (helps Lakers; priced).",
+        "Projections: WagerTalk Lakers 119-108 (11) and took Lakers -6.5; Covers ML writer priced Lakers 74% vs 67-68% market (helps Lakers).",
+        "These teams went 14-6 to the Over in their last 20 regular-season meetings (Covers, Oct 21) (neutral for the side)."
+      ],
+      "reasoning": "The Warriors' injury list (Butler, Podziemski, Moody, Porzingis) and sharp-looking money on Los Angeles point to the Lakers, but those absences were known all week and the line only moved from 5.5 to 6.5. My projection (Lakers ~7.5) clears the number by about a point, and LESSONS say be harder on favorites, so pass. Forced side Lakers because the money split suggests sharp action and GSW's offense beyond Curry is thin.",
+      "forcedSide": "Los Angeles Lakers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Phoenix Suns",
+      "home": "Portland Trail Blazers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.5,
+      "research": [
+        "Covers preview (Geoff Clark, Oct 21) lists Trail Blazers -2.5, total 231.5, implied Portland 57% / Phoenix 44%; slate matches at -2.5 (neutral).",
+        "Phoenix starting center Mark Williams is out (described as 'now-former' Suns center) (Covers, Oct 21) (helps Portland).",
+        "Portland acquired Ja Morant from Memphis and gets back Damian Lillard, who missed last season (Covers preview and ATS picks, Oct 21) (helps Portland, unproven pairing).",
+        "Jrue Holiday is not on Portland's injury report; Deni Avdija is questionable but expected to play (Covers, Oct 21) (helps Portland).",
+        "[angle] Portland's losses to Phoenix last season came when Holiday or Avdija was missing; with both it beat Phoenix in the play-in (Covers, Oct 21) (helps Portland).",
+        "Donovan Clingan led the NBA with 4.5 offensive rebounds per game and averaged 12.8 rebounds in four games vs Phoenix; Phoenix ranked 27th in defensive rebounding rate (Covers, Oct 21) (helps Portland).",
+        "Spread-specific: Portland went 12-8 ATS as a home favorite last season with an average margin of +11.5 (Covers, Oct 21) (helps Portland, priced).",
+        "Portland ranked 3rd in adjusted defensive rating after the All-Star break (Covers, Oct 21) (helps Portland).",
+        "[angle] Phoenix traded two players who shot 40%+ from three last season; Miles Bridges is a first-year Sun (Covers, Oct 21) (helps Portland).",
+        "Three of four meetings last season were played at 96.7 possessions or slower (Covers, Oct 21) (low variance; neutral)."
+      ],
+      "reasoning": "The research leaned Portland (Phoenix without its starting center against Clingan's rebounding, Morant/Lillard/Holiday/Avdija available), with a projection around Portland by 3-4, inside the pass band. A later WagerTalk preview snippet then revealed the result, so this is a locked pass.",
+      "forcedSide": "Portland Trail Blazers",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary of a WagerTalk Nuggets-Suns preview (Oct 30) said Phoenix opened its season with a 124-83 loss to Portland. Seen before a lean was written down; my pre-leak research (Covers preview) pointed to Portland as the forced side, with the projection inside the pass band."
+    },
+    {
+      "away": "Sacramento Kings",
+      "home": "Los Angeles Clippers",
+      "pick": "Sacramento Kings",
+      "confidence": "lean",
+      "projectedMargin": 0.5,
+      "research": [
+        "WagerTalk (Oct 21): Clippers opened -4.5, moved between 4.5 and 5.5 and settled back at -4.5; total fell from 230.5 to 227.5. Covers' preview listed -5.5 at publication; slate is +4.5 (neutral to slight Clippers on number).",
+        "Spread-specific: Sacramento drew 85-100% of spread money since 10/20 and 55-88% of tickets, after LA had 100% of tracked money on 10/18-19 (WagerTalk, Oct 21) - late money on the underdog, line dipped back from 5.5 to 4.5 (helps Kings).",
+        "Clippers are without Brandon Ingram (Achilles), Max Strus (foot), Bradley Beal (knee), Jordan Miller (shoulder) and Yanic Konan Niederhauser (foot) (WagerTalk, Oct 21; Covers ATS picks) (helps Kings).",
+        "[angle] The Clippers lost four starters from the start of last season, including Kawhi Leonard (traded to Toronto) and Ivica Zubac; John Collins went to Detroit (Covers/WagerTalk, Oct 21). Remaining core is Darius Garland, Bennedict Mathurin, Rui Hachimura (helps Kings).",
+        "[angle] Starting center Isaiah Jackson has started only 45 of 218 career games; Brook Lopez is expected to play 20+ minutes as backup (Covers, Oct 21) - Domantas Sabonis (15.8/11.4/4.1) has a frontcourt edge (helps Kings).",
+        "Kings: Maxime Raynaud (knee) and Dylan Cardwell (calf) out, Malik Monk questionable (ankle), Ben Simmons out for the season (WagerTalk, Oct 21) (helps Clippers).",
+        "DeMar DeRozan left for Denver, so Zach LaVine (19.2 PPG last season) takes a larger scoring role; Sacramento added De'Andre Hunter and rookie Darius Acuff Jr. (SEC assists leader) (Covers/WagerTalk, Oct 21) (neutral).",
+        "Spread-specific: Sacramento went 5-1 ATS in its final six games last season (Covers, Oct 21) (slight Kings; ATS history mostly priced).",
+        "Covers' ML writer (Oct 21) called the Clippers near the bottom of the West and took Kings ML at 35% Polymarket; Covers' preview writer took Kings +5.5 and said he'd play it down to +2.5; Covers' ATS writer took Kings +4.5 (helps Kings).",
+        "WagerTalk projected Kings 112, Clippers 108 and took Kings +4.5 (helps Kings).",
+        "The Clippers ranked 28th in pace last season; three of the last four meetings went over (Covers, Oct 21) (neutral for the side)."
+      ],
+      "reasoning": "The Clippers are without five rotation players on top of losing Leonard, Zubac and Collins, leaving a thin wing group and an inexperienced starting center against Sabonis; I project roughly a pick'em (Clippers by 0.5), a 4-point unshaded edge on the underdog. Late money moved the line back from 5.5 to 4.5 toward Sacramento. Would change if Monk and another Kings rotation player sat or if Garland/Mathurin had been clearly upgraded in preseason; it's a lean because the injuries are public and the shaded edge is only ~2.",
+      "forcedSide": "Sacramento Kings",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

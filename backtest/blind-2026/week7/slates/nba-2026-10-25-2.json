@@ -1,0 +1,18 @@
+{
+ "sport": "nba",
+ "date": "2026-10-25",
+ "chunk": "nba-2026-10-25-2",
+ "games": [
+  {
+   "away": "Memphis Grizzlies",
+   "home": "Sacramento Kings",
+   "time": "9:00 PM ET",
+   "awaySpread": -4.5,
+   "homeSpread": 4.5,
+   "awaySpreadOdds": -109,
+   "homeSpreadOdds": -111,
+   "awayMoneyline": -165,
+   "homeMoneyline": 152
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "sport": "ncaab",
+ "date": "2026-11-13",
+ "chunk": "ncaab-2026-11-13-2",
+ "games": [
+  {
+   "away": "Arizona Wildcats",
+   "home": "Auburn Tigers",
+   "time": "9:00 PM ET",
+   "awayRank": 12,
+   "awaySpread": -2.5,
+   "homeSpread": 2.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": -148,
+   "homeMoneyline": 124,
+   "homeSpreadOpen": 2.5,
+   "homeSpreadClose": 2.5,
+   "totalOpen": 159.5,
+   "totalClose": 159.5
+  },
+  {
+   "away": "Seton Hall Pirates",
+   "home": "Alabama Crimson Tide",
+   "time": "9:00 PM ET",
+   "homeRank": 18,
+   "awaySpread": 17.5,
+   "homeSpread": -17.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 1300,
+   "homeMoneyline": -2800,
+   "homeSpreadOpen": -15.5,
+   "homeSpreadClose": -18.5,
+   "totalOpen": 156.5,
+   "totalClose": 156.5
+  }
+ ]
+}

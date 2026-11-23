@@ -1,0 +1,29 @@
+{
+ "sport": "nba",
+ "date": "2026-10-24",
+ "chunk": "nba-2026-10-24-2",
+ "games": [
+  {
+   "away": "New Orleans Pelicans",
+   "home": "Denver Nuggets",
+   "time": "9:00 PM ET",
+   "awaySpread": 11.5,
+   "homeSpread": -11.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 370,
+   "homeMoneyline": -485
+  },
+  {
+   "away": "Golden State Warriors",
+   "home": "Phoenix Suns",
+   "time": "10:00 PM ET",
+   "awaySpread": 9.5,
+   "homeSpread": -9.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 295,
+   "homeMoneyline": -375
+  }
+ ]
+}

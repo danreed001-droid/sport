@@ -1,0 +1,138 @@
+{
+  "sport": "cfb", "date": "2026-10-31", "chunk": "cfb-2026-10-31-2",
+  "games": [
+    {
+      "away": "Utah", "home": "Cincinnati",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -7.0,
+      "research": [
+        "Line: slate Cincinnati +7.5; DK opened Cincinnati +9.5 and closed +7. That's a 2.5-point move toward Cincinnati, and the slate is 0.5 better for Cincinnati than the close (slate file). Helps Cincinnati, though it's mostly already priced.",
+        "Predictem (updated Oct 28) says the line opened at Utah -9.5 and moved after Cincinnati's 37-24 homecoming win over Texas Tech. The move came from a result, not injury news. Neutral.",
+        "Utah is undefeated and has covered 6 of 7 this season (Predictem, Oct 28). Utah side, but this is an ATS record and already in the spread.",
+        "Matchup: Utah ranks 17th in value per rush and Cincinnati's run defense is 103rd. Cincinnati ranks 112th at keeping opponents off schedule and 118th on running plays (Predictem, Oct 28). Helps Utah.",
+        "Utah's run defense is 11th in EPA per rush and 12th in success rate allowed, against a Cincinnati offense that Covers calls run-first, with an 80th-ranked rushing success rate (Covers Top 25 Wk9; Predictem Oct 28). Helps Utah.",
+        "[angle] Utah is without starting left guard Kelvin Obot, and its protection broke down in the first half against Houston before a comeback 21-13 win (Predictem, Oct 28). Helps Cincinnati a little.",
+        "[angle] Both sides have letdown risk: Utah comes off an emotional comeback with BYU next, and Cincinnati comes off its 'Sorsby Bowl' win over Texas Tech (Predictem Oct 28; Covers Wk9). Neutral.",
+        "[angle] Cincinnati is ranked higher (#17) than Utah (#24) yet gets 7.5 at home. Cincinnati has reached 30 points in six of seven games, and Predictem cites a 168-8 all-time record at Nippert when the Bearcats score 30 (Predictem, Oct 28). Helps Cincinnati.",
+        "Cincinnati's résumé has blowout losses: 34-7 at Arizona, and 45 points allowed at West Virginia (Predictem, Oct 28). Helps Utah.",
+        "JC French IV threw four TDs against Texas Tech and has two INTs on the season (Predictem, Oct 28). Helps Cincinnati.",
+        "SP+ has Utah 10th and Cincinnati 49th (Predictem, Oct 28). Models split ATS: SBR's AI has Utah 27-20 with Cincinnati +6.5, and Dimers has Utah 31-25 with Cincinnati +9.5 as value. Preview writers at Predictem and Covers took Utah -6.5. Per the lessons, models and preview picks aren't an edge. Neutral."
+      ],
+      "reasoning": "My projection of about Utah by 7 sits on the number. The market already moved 2.5 toward Cincinnati after the Texas Tech win, and the matchup stats (Utah's run game against a 103rd-ranked run defense) pull the other way, so I pass. The most surprising angle: the higher-ranked home team gets more than a touchdown. Any late news on Utah's offensive line would have changed it. Forced side is Cincinnati, a thin lean: the market moved its way and the slate is half a point better than the close.",
+      "forcedSide": "Cincinnati",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Arizona State", "home": "BYU",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 17.5,
+      "research": [
+        "Line: BYU -17.5 on the slate. DK opened and closed at -17.5, and the total fell from 51.5 to 46.5 (slate file). Earlier previews had -16.5 (Covers, Predictem). Neutral on the side; the market expects fewer points.",
+        "[angle] Arizona State's starting QB Mikey Keene was hurt. Dillingham called him 'honestly questionable... not doubtful.' If he can't go, true freshman Jake Fette, who has eight career pass attempts, makes his first start; Cutter Boley had been benched earlier (Covers Top 25 Wk9; Predictem Wk9). Helps BYU, though the news came before the line settled.",
+        "[angle] Predictem flags ASU star cornerback Evan Johnson as unlikely to play. Helps BYU.",
+        "BYU's unbeaten start ended with a double-overtime loss at UCF (SBR AI Wk9). Neutral.",
+        "Arizona State beat Kansas State convincingly after a loss to Texas Tech (SBR AI Wk9). Helps Arizona State.",
+        "BYU's offense is top-20 in success rate at 49.1% (Covers Top 25 Wk9). Helps BYU.",
+        "Arizona State is 1-3 ATS in October (Covers Top 25 Wk9). BYU side, but an ATS record is already in the spread.",
+        "Previews: Covers took BYU -16.5 (good to -20.5), and Predictem projected 34-14 BYU. SBR's AI projected 31-21 with ASU +16.5. Models split.",
+        "I stopped researching here because a search summary showed this game's final (see contaminationNote). Fewer than 10 solid pre-leak bullets."
+      ],
+      "reasoning": "Contaminated, so the pass is locked. Before the leak I had not reached a lean: the ASU QB uncertainty was known before the line settled, and BYU -17.5 never moved. Forced side is BYU only because the ASU quarterback news was the one pre-leak fact pointing either way. It's not a forecast (no read).",
+      "forcedSide": "BYU",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (search for 'Arizona State vs BYU prediction preview October 31 2026...', limited to betting-preview domains) said a scoreboard widget listed Arizona State 20, BYU 27 as final. I saw it before forming any lean. Locked as a pass; research stopped."
+    },
+    {
+      "away": "Minnesota", "home": "Indiana",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 17.0,
+      "research": [
+        "Line: slate Indiana -20.5. DK opened -22.5 and closed -20.5 (2 points toward Minnesota), and the total fell from 45.5 to 40.5 (slate file). The market priced Indiana's slump. Neutral to Minnesota.",
+        "Indiana is 7-1 and ranked, but 1-7 ATS this season (Predictem, Oct 28). Points to Minnesota, but an ATS record is already priced.",
+        "Indiana's offense has stalled: 20 points at Nebraska, 15 against Ohio State and 13 in OT at Michigan. At Michigan it had 212 yards and no regulation TD, and it hasn't topped 20 in three straight (Predictem Oct 28; Covers best bets Oct 31). Helps Minnesota.",
+        "[angle] QB Josh Hoover hurt his right arm against Ohio State. He was 8-of-18 for 81 yards at Michigan and has completed about 50% over his last three. He's listed probable and 'banged-up', and Cignetti expects him 'fine and better this week' (Predictem Oct 28; Covers Oct 31). Helps Minnesota, but the market knew this before the line settled.",
+        "Indiana's defense allows 2.3 yards per carry (2nd in FBS), is top-15 in points and yards per play allowed, and is 4th in opponent-adjusted EPA margin (Predictem; Covers). Helps Indiana.",
+        "Minnesota's offense is near the bottom of FBS in yards per play, rushing and passing. It averages 17.2 points in five Power Four games, has been held under 14 three times, and Drake Lindsey's dropbacks 'basically break even' (Predictem; Covers Oct 31). Helps Indiana: a big underdog has to score to cover.",
+        "Minnesota is 5-2 ATS. Its losses came by 25 and 28, including 13 rushing yards against Mississippi State (Predictem, Oct 28). Mixed: the blowout losses are the backdoor risk running the other way.",
+        "[angle] Minnesota's special teams rank 1st in ESPN FPI. It forces about two turnovers a game (9th) and beat Iowa 13-10 with a blocked punt and four takeaways (Predictem Oct 28). Helps Minnesota in a low-scoring game.",
+        "[angle] College GameDay is in Bloomington on Halloween and Indiana has a bye the next week, so there's no lookahead. Covers notes a possible post-Iowa letdown for Minnesota (Covers Oct 31; Predictem). Slight Indiana.",
+        "Indiana hasn't lost the turnover battle in 32 straight games (Predictem). Helps Indiana.",
+        "Minnesota has won the last four meetings, including 35-21 in Bloomington in 2021 (Predictem). Head-to-head history, so it doesn't count.",
+        "Previews: Predictem projects 27-10 with Minnesota +20.5, and Covers' Vasile also takes Minnesota. Covers' AI projects 31-10 Indiana. Not an edge."
+      ],
+      "reasoning": "With a 40.5 total and an Indiana offense that hasn't topped 20 in three games, I project Indiana by about 17. That's a 3.5-point gap toward Minnesota, under the bar, and the market already moved two points that way on Hoover's arm and the slump. The surprising angle is a 7-1 defending champion at 1-7 ATS. Confirmation that Hoover wasn't limited would have moved me toward Indiana. Forced side is Minnesota, from the projection gap.",
+      "forcedSide": "Minnesota",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Northwestern", "home": "Oregon",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 4.0,
+      "research": [
+        "Line: slate Oregon -3.5. DK opened -7.5 and closed -4. The 3.5-point drop toward Northwestern came on Oregon's QB and OC news, then ticked back half a point toward Oregon by the close (slate file; Predictem says some books hit 3). Per the lessons, the new number is fair; the late tick slightly favors Oregon.",
+        "[angle] Oregon QB Dante Moore is out for the season, and Lanning isn't 'anticipating him being back this season.' Nebraska transfer Dylan Raiola is the likely starter (Predictem Oct 28; Covers Wk9). The news caused the move, so it's priced.",
+        "[angle] Oregon fired OC Drew Mehringer, and Jay Johnson (ex-Wyoming/Michigan State/Colorado) takes over play-calling (Predictem; Covers). Uncertain effect: it could help or hurt Oregon.",
+        "Oregon has scored 15, 17 and 10 in its last three: a home loss to UCLA with seven turnovers, a late comeback over Nebraska, and an 11-point loss at Illinois as a 10.5-point favorite. It's under 20 in all three games without Moore (Predictem; Covers). Helps Northwestern.",
+        "Oregon's defense is rated 8th by ESPN and top-25 in success rate at 39.3%; Matayo Uiagalelei has six sacks (Predictem; Covers). Helps Oregon.",
+        "Receivers Evan Stewart, Jalen Lott and Messiah Hampton are expected back for Oregon (Predictem, Oct 28). Helps Oregon, and it's news that may not be fully in the open.",
+        "Northwestern is 6-1 with four straight wins, including 42-14 over Rutgers and a win over Penn State with 413 rushing yards. It lost by six at Indiana (Predictem; SBR AI Wk9). Helps Northwestern.",
+        "Northwestern QB Aidan Chiles completes over 71% with one INT, and the team averages 0.5 turnovers a game, 6th-fewest (Predictem). Helps Northwestern against a turnover-prone Oregon.",
+        "Northwestern allows 16.6 ppg and 5.9 yards per pass (top-10) but 4.8 yards per carry, and its line gives up sacks on 8%+ of dropbacks (Predictem). Helps Oregon's pass rush.",
+        "[angle] Covers says Northwestern ranks 122nd in rush success rate, has played one quality opponent, makes its first trip to Eugene, and is expected to be without Robert Fitzgerald (Covers Top 25 Wk9). Helps Oregon. Predictem's headline frames Chip Kelly's return to Autzen.",
+        "Previews split: Covers' Marchio and Gregory and Predictem (24-20 Northwestern) take Northwestern +3.5. Covers' Top 25 column takes Oregon up to -5.5, and Covers' AI has 27-20 Oregon. Public lean is Northwestern; the close moved back toward Oregon."
+      ],
+      "reasoning": "After a 3.5-point move on Moore's injury and the OC firing, I treat -4 as fair and project about Oregon by 4, on the number. The late tick from 3 to 4 against heavy Northwestern preview sentiment, plus Oregon's receivers returning, gives the forced side to Oregon at -3.5 (half a point better than the close). Firm news on the Northwestern absences would have changed it. Not a pick.",
+      "forcedSide": "Oregon",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Florida", "home": "Georgia",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 11.5,
+      "research": [
+        "Line: slate Georgia -12.5. DK opened -12.5 and closed -11.5, so the slate is 1 point better for Florida than the close, on the side the market moved to (slate file). Information, not an edge (lessons 4-3).",
+        "[angle] First game in Atlanta (Mercedes-Benz Stadium), a shorter trip for Georgia. Florida coach Jon Sumrall calls the site 'more road-ish' (Predictem Oct 29; Covers Top 25 Wk9). Slight Georgia.",
+        "[angle] Florida's QB is unresolved: Aaron Philo (shoulder) and Tramell Jones Jr. are both probable but banged up, and Sumrall won't name a starter (Predictem Oct 29; Covers AI Wk9). Uncertain; slight Georgia.",
+        "Georgia QB Gunner Stockton (74%, 16 TD, 4 INT) had a shoulder stinger against Auburn (Predictem). Slight Florida if he's limited.",
+        "Georgia's injuries: S KJ Bolden questionable (foot), Isiah Canion out, RB Chauncey Bowens out for a third straight game, Nate Frazier back (Predictem; Covers props Wk9). Mixed, slight Florida.",
+        "Georgia lost 27-24 to Auburn on Oct 17 and comes off a bye. Predictem cites 17-3 after losses and 12-3 off a bye; both teams had byes (SBR AI). Situational trends, already priced.",
+        "Georgia leads the country in points per opportunity (or per snap), is 2nd in offensive success rate, converts about 53% on third down, has allowed eight sacks, and is +87-14 in the first quarter (Covers; Predictem). Helps Georgia.",
+        "Florida allows about 34-35 ppg in SEC play, is 124th on third-down defense and 125th in defensive success rate (Predictem; Covers). Helps Georgia.",
+        "Georgia's run defense allowed 353 yards on 75 carries over its last two games (Predictem). Helps Florida.",
+        "Florida beat Texas 27-24 as an upset and has strong special teams (Predictem). Helps Florida.",
+        "[angle] Georgia plays at Ole Miss next week, a possible lookahead (Predictem). Helps Florida.",
+        "Georgia is 5-2 ATS. Florida covered 3 of its last 4 against Georgia, but Smart is 8-2 against Florida (Predictem). ATS and head-to-head are already priced."
+      ],
+      "reasoning": "I project Georgia by about 11.5, against a 12.5 slate and an 11.5 close. The 1-point move toward Florida and the slate's extra point make Florida the forced side, but nothing here is clearly unpriced: Florida's QB uncertainty and Georgia's mismatch with a bad Florida defense offset each other. Surprising angle: the first Cocktail Party in Atlanta. A named Florida starter would have changed it.",
+      "forcedSide": "Florida",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "South Carolina", "home": "Oklahoma",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "Line: slate Oklahoma -3.5. DK opened -5.5 and closed -3.5, a 2-point move toward South Carolina; the total went from 43.5 to 44.5 (slate file). The slate equals the close.",
+        "South Carolina upset Tennessee 27-24 the previous week (SBR AI Wk9). Helps South Carolina.",
+        "Oklahoma beat Mississippi State but its offense 'has struggled with consistency' (SBR AI Wk9). Helps South Carolina.",
+        "Covers' team page showed roughly a 52% consensus on South Carolina ATS at +3.5, a balanced split (Covers team picks page). Neutral.",
+        "A South Carolina WR, J. Sellers, is out for the season with a lower-body injury (Covers injury page). Slight Oklahoma.",
+        "I stopped researching here because a search summary showed this game's final (see contaminationNote). Fewer than 10 solid pre-leak bullets."
+      ],
+      "reasoning": "Contaminated, so the pass is locked. Before the leak I had no lean: only the 2-point line move toward South Carolina and an even consensus split. Forced side: no read. South Carolina is listed only by the same mechanical rule used elsewhere on this slate (the side the line moved to, at a slate number no worse than the close), not as a forecast.",
+      "forcedSide": "South Carolina",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (search for 'South Carolina at Oklahoma week 9 2026 betting preview pick...', limited to predictem, wagertalk, sportsbookreview and oddsshark) quoted a later SBR Week 10 preview saying South Carolina beat Oklahoma 42-25. I saw it before forming any lean. Locked as a pass; research stopped."
+    }
+  ]
+}

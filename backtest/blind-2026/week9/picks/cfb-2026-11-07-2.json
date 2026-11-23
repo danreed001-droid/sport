@@ -1,0 +1,85 @@
+{
+  "sport": "cfb", "date": "2026-11-07", "chunk": "cfb-2026-11-07-2",
+  "games": [
+    {
+      "away": "Iowa", "home": "Northwestern",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 0.0,
+      "research": [
+        "Predictem (Nov 4) lists Northwestern -2.5 with a 45.5 total; the writer took Iowa +2.5 with a 21-17 Iowa projection. Priced, not counted.",
+        "Iowa's defense is 4th in scoring defense and allows 79 rushing yards a game; only Ohio State and Washington have scored 20+ on it (Predictem, Nov 4). Helps Iowa.",
+        "Yards per play: Iowa gains 6.1 and allows 4.4; Northwestern gains 6.7 and allows 5.5 (Predictem). Helps Iowa.",
+        "Iowa QB Hank Brown went 20/24 with 2 TD in a 30-0 win over Wisconsin (Big Ten Offensive Player of the Week), but Ferentz still double-lists the QBs (Predictem).",
+        "[angle] Iowa's interior OL is depleted: Cael Winter is unlikely and two more interior linemen are out about six weeks, with a 'high number of guys' not practicing (Predictem). Helps Northwestern.",
+        "Northwestern's secondary and DL are banged up: S Robert Fitzgerald, CB Josh Fussell and DT Brendan Flakes have each missed multiple weeks, and S Jon Jon Stevens Jr. was carted off at Oregon (Predictem). Helps Iowa.",
+        "[angle] Northwestern blew a 20-6 lead at Oregon and was outscored 28-6 afterward. Braun: 'I think we got tight' (Predictem). Northwestern's +1.3 turnovers a game (6th) looks due to regress.",
+        "Northwestern is unbeaten at the new Ryan Field, has won 10 straight true home games and is 4-1 ATS at home (Predictem). Helps Northwestern; ATS records are priced.",
+        "Line: slate Northwestern -2.5, but the archive closes Iowa -3. That is a 5.5-point swing through the key number 3, which suggests big pre-game news (likely Northwestern QB availability). It was not verified before the leak.",
+        "Iowa has won the last four meetings, and six of the last nine were decided by a TD or less (Predictem). Head-to-head history is not weighed."
+      ],
+      "reasoning": "Locked as a contaminated pass. Before the leak I had Predictem's preview and the large slate-to-close swing, but no written lean; the slate-vs-close gap is not a reason under the lessons. A search for Northwestern QB Aidan Chiles' status returned a Rotowire summary stating the result.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch (rotowire.com, covers.com and others, on Aidan Chiles' injury ahead of the Iowa game) returned a summary saying Northwestern lost to Iowa 24-10 at home with Nicco Marchiol starting for an injured Chiles. I saw it before writing any lean, so this is locked as a pass with no forced side."
+    },
+    {
+      "away": "Georgia", "home": "Ole Miss",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.5,
+      "research": [
+        "SP+: Georgia is No. 1 (28.1) and Ole Miss 13th (17.1), about an 11-point neutral-field gap. Georgia's defense is 2nd in SP+ and allows 14.9 ppg; Ole Miss allows 24.0 (Predictem, updated Nov 4). Helps Georgia, but public ratings are priced.",
+        "Georgia runs for 200.1 yards a game (Frazier, Phillips, Walker) and converts 51.6% of third downs. Ole Miss allows 148.9 rushing yards a game, and Florida ran for 300+ in a 52-28 win over Ole Miss (Predictem). Helps Georgia.",
+        "Ole Miss scores 37.1 ppg, has outscored home opponents 149-51 and has won 16 straight at home (Predictem). Helps Ole Miss.",
+        "[angle] Revenge spot: Ole Miss beat Georgia 39-34 in January's Sugar Bowl quarterfinal, ending Georgia's season. Trinidad Chambliss threw for 362 yards in that game, and Kirby Smart calls him 'probably the best quarterback in the country' (Predictem). Motivation favors Georgia; the QB matchup favors Ole Miss.",
+        "[angle] Kirby Smart is 0-2 at Ole Miss as Georgia's coach. Oxford and LSU are the only SEC stadiums where he hasn't won (Predictem). Venue history is not weighed.",
+        "Ole Miss RB Kewan Lacy re-injured his shoulder against Texas and has no return timeline, though Ole Miss still ran for 224 yards against Auburn without him (Predictem). Known for a while, so priced.",
+        "Georgia CB Ellis Robinson IV left the Florida game with a knee injury; Smart says he 'looks good.' In a shootout, a hobbled corner against Chambliss would help Ole Miss (Predictem).",
+        "Georgia won at Alabama this season but lost at home to Auburn on a field goal (Predictem). The resume is mixed.",
+        "Ole Miss has 63 penalties, and Bobo warned about false starts in a hostile setting (Predictem). Minor.",
+        "Line: Georgia opened -4.5/-5.5 and moved to -3.5; slate and close are both -3.5, so the market moved toward Ole Miss. Treated as fair.",
+        "Previews split: Predictem took Georgia -3.5 (31-24); SBR's AI projection took Ole Miss +3.5 (34-27). Priced, not counted.",
+        "LESSONS check: Georgia's case rests on its defense and run game, a profile that missed laying points in 4 of 6 earlier games, but that alone is not a reason to fade it."
+      ],
+      "reasoning": "The ratings gap favors Georgia, but Ole Miss's home dominance, Chambliss and the market's move from 4.5/5.5 to 3.5 offset it. I project Georgia by about 2.5, within about a point of the line, so this is a pass. The forced side is Ole Miss on the defense-first-favorite caution and its 16-game home streak. Confirmed health for Robinson and a stronger Georgia passing profile would have tilted it to Georgia.",
+      "forcedSide": "Ole Miss",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Oklahoma", "home": "Florida",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 0.0,
+      "research": [
+        "Slate Florida -6.5; the archive opens and closes Florida -4, so the slate number is 2.5 worse for Florida than the close.",
+        "Total opened 48.5 and closed 46.5.",
+        "A Pickswise snippet (Nov 21 Texas A&M preview context) describes Oklahoma as a defense-first team that wins ugly. Seen in the same leaky search, so not used.",
+        "Fewer than 10 solid pre-game bullets were gathered: the first two predictem/wagertalk searches found no preview, and the third search's summary leaked the result."
+      ],
+      "reasoning": "Locked as a contaminated pass with no lean. The second search's summary quoted a later Pickswise column about this game's outcome before I had read any preview.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch limited to predictem.com, wagertalk.com and pickswise.com (Oklahoma at Florida odds pick, Nov 7) returned a summary quoting a later Pickswise column that said 'the Sooners suffocated the Gators last week in the Swamp,' meaning Oklahoma won. I saw it before any lean, so this is a pass with no forced side."
+    },
+    {
+      "away": "West Virginia", "home": "Texas Tech",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 0.0,
+      "research": [
+        "Predictem's preview (West Virginia vs Texas Tech, 'Lubbock Lights') lists Texas Tech -16.5 with a 64.5 total; the writer took Texas Tech -16.5 with a 41-20 projection. Priced.",
+        "West Virginia's defense allows 7.03 yards per play, 137th of 138 FBS teams (Predictem). Helps Texas Tech.",
+        "West Virginia runs for 261.6 yards a game, 5th nationally (Predictem). Helps West Virginia's backdoor chances.",
+        "Texas Tech's pass defense allows 285 yards a game and Texas Tech is 4-4 ATS (Predictem). Helps West Virginia; ATS records are priced.",
+        "Line: slate Texas Tech -15.5; archive open -17.5, close -16.5. Total moved up from 63.5 to 68.5.",
+        "Only these bullets were gathered before the leak; fewer than 10 solid findings."
+      ],
+      "reasoning": "Locked as a contaminated pass with no lean. The first search's summary quoted a later Houston vs West Virginia preview giving this game's final score.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch limited to predictem.com (West Virginia at Texas Tech preview, Nov 7) returned a summary citing a later Houston vs West Virginia preview that said WVU lost 53-48 at Texas Tech, a 5-point Texas Tech win and so a West Virginia cover at +15.5. I saw it before any lean, so this is a pass with no forced side."
+    }
+  ]
+}

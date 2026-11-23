@@ -1,0 +1,75 @@
+{
+  "sport": "nba", "date": "2026-10-26", "chunk": "nba-2026-10-26-2",
+  "games": [
+    {
+      "away": "Atlanta Hawks", "home": "Houston Rockets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 5.0,
+      "research": [
+        "[spread] Line check: Covers (Oct 26, 2:52 PM ET) lists Houston -4.5 / 230.5 and Predictem (Oct 26) lists Houston -5.5 / 229.5. The slate's +5.5 for Atlanta is at or slightly better than the market for the dog, a half-point number edge that helps Atlanta.",
+        "[angle] This is the second game of a home-and-home. Houston won 121-114 in Atlanta Saturday, and Atlanta was 13-of-49 from three, fell behind by 20 and got within five late (Predictem, Oct 26). Three-point regression and the rematch help Atlanta.",
+        "[angle] Fred VanVleet sat Saturday's second night of a back-to-back for rest and is expected back Monday. Covers calls the Houston backcourt healthy, and Reed Sheppard hit five threes filling in (Predictem/Covers, Oct 26). This helps Houston.",
+        "Houston injuries: Steven Adams is out (calf) and Marcus Smart is questionable (forearm) (Predictem, Oct 26). Losing Adams cuts into Houston's offensive-rebounding edge, which helps Atlanta.",
+        "Atlanta injuries: Jock Landale is cleared despite a broken nose, and Mouhamed Gueye (foot) and Henri Veesaar (ACL) are out (Predictem, Oct 26). Neutral to slightly Houston.",
+        "[spread] Saturday, Houston had 13 more offensive rebounds and 22 second-chance points, and Atlanta ranks below average at finishing defensive possessions with a rebound (Predictem, Oct 26). The matchup edge helps Houston.",
+        "[spread] Efficiency: Houston and Atlanta rank 3rd and 4th in offensive efficiency through the first week (Predictem). Houston averages 102.3 possessions, 2nd-fewest (Covers). A slow pace compresses margins, which helps the +5.5 dog.",
+        "Atlanta beat Charlotte by 47 Friday, the largest win in franchise history (Predictem, Oct 26). The Hawks' offense can score, so the big-dog test passes, which helps Atlanta.",
+        "Jalen Johnson is averaging about 22/10/10 with 16 assists in Saturday's loss (Predictem). Nickeil Alexander-Walker is shooting 42.9% over his last two games (Covers). Atlanta has a capable creator, which helps Atlanta.",
+        "Houston's home defense allowed 106.0 per game in 2025-26 (lowest in the West), with a 51.6% opponent eFG% at home, 4th-best (Covers, Oct 26). This helps Houston.",
+        "Rest: both teams had Sunday off (Predictem, Oct 26). Neutral.",
+        "Previews split on the side: Predictem projects Rockets 119-114 (+5, right on the number), Covers' moneyline analyst makes Houston 68% vs a 65% market, and the Covers ATS column took Hawks +5.5. Neutral."
+      ],
+      "reasoning": "Pass. The projection of Houston by about 5 sits on the 5.5 number. Atlanta's likely three-point regression in the rematch and the slight number edge at +5.5 are balanced by VanVleet's return and Houston's rebounding edge at home. The forced side is Atlanta: the underdog, at a number half a point better than one market snapshot, with an offense that can keep pace.",
+      "forcedSide": "Atlanta Hawks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Memphis Grizzlies", "home": "Utah Jazz",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -1.5,
+      "research": [
+        "[spread] Line: Utah -1.5, total 238.5 (Covers, Predictem, Dimers, Oct 26). Predictem notes the market made Utah the favorite even though Memphis won the opener 123-103. No opening number was found. Neutral.",
+        "[angle] Both teams are on the second night of a back-to-back. Memphis beat Sacramento Sunday night and traveled, and Utah lost 132-123 to the Lakers in an early (5 PM ET) game at home (Predictem, Oct 26). Utah's earlier finish and no travel help Utah.",
+        "[angle] Jaren Jackson Jr. faces his former team after eight seasons in Memphis (acquired at last season's deadline). He's averaging 19.7 points, with 24 vs New Orleans and 20 vs the Lakers, and fouled out with 15 in the opener vs Memphis (Covers, Oct 26). Revenge and motivation help Utah.",
+        "Zach Edey (left ankle) sat the Sacramento game for management and could return. Neither team's official injury report had been filed as of early Monday (Predictem, Oct 26). That's an unresolved status and a pass trigger.",
+        "[spread] Efficiency per TeamRankings via Predictem (Oct 26): Memphis allows 104.5 per 100 possessions (9th) and has a top-five offense, while Utah allows 118.9 (28th). That's a sizable matchup edge for Memphis.",
+        "[spread] Utah has committed 17+ turnovers in each of its three games, and opponents shoot 38.3% from three against it (Predictem/Covers, Oct 26). This helps Memphis.",
+        "In the opener Memphis outrebounded Utah 55-38 and shot 38.2% from three. Rookie Cameron Boozer has double-digit rebounds in all three games while shooting 14-of-49 (Covers/Predictem, Oct 26). Memphis has the rebounding edge, which helps Memphis.",
+        "Ty Jerome has 104 points in three games, including a career-high 45 against Utah (Predictem, Oct 26). Memphis's offense runs through him, which helps Memphis.",
+        "Memphis is 3-0 with two road wins (at Golden State, Edey +25 in 22 minutes there), and it went Under in 2 of 3 games (Covers/Predictem, Oct 26). Its form helps Memphis.",
+        "Previews: Predictem takes Grizzlies +1.5 (projects Memphis 120-115), Covers takes Memphis ML ('road-underdog status a gift'), and the Dimers model makes Utah 57% (Jazz 119-117). The pundits are split, so this is neutral and suggests public lean to Memphis.",
+        "Last season Memphis finished three games ahead of Utah, about 2.5 points per game better in scoring differential (Covers, Oct 26). Neutral."
+      ],
+      "reasoning": "Pass. Before the leak, my reasoning had Memphis by about 1.5 on its efficiency edge and Utah's turnover problems. That's only about 3 points off the -1.5, under the 4-point unshaded bar in the lessons, and it comes from a three-game sample. Edey's unresolved status and Jackson's revenge spot for Utah kept it a pass, with the forced side on Memphis. Then the result leaked.",
+      "forcedSide": "Memphis Grizzlies",
+      "contaminated": true,
+      "contaminationNote": "After the pass and the Memphis forced side had been reasoned (not yet written to file), a WebSearch summary restricted to betting sites (looking for the opening line) said a Wagertalk preview of a later game reported Memphis 'beating Utah 110-105 on October 26'. The decision was made before seeing this and was not changed."
+    },
+    {
+      "away": "Golden State Warriors", "home": "Denver Nuggets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.0,
+      "research": [
+        "[spread] Line: Denver -7.5 in both Covers (Oct 26, 7:01 PM ET) and Predictem (Oct 26), with totals listed at 236.5 and 233.5. The slate number matches the market and no opening or movement was found. Neutral.",
+        "[angle] Golden State rested Curry (right knee), Draymond Green, Podziemski and Al Horford (lower backs) Saturday in Phoenix, its third game in four nights. Predictem (Oct 26) says all four are expected back and none is on the early injury report. A rested veteran core returning helps Golden State.",
+        "Golden State remains without Kristaps Porzingis and Jimmy Butler (out), and Gui Santos is questionable with knee tendinitis (Predictem, Oct 26). Covers calls the frontcourt 'heavily depleted'. This helps Denver against Jokic.",
+        "[angle] Denver came back from 23 down to beat New Orleans 141-135 in OT Saturday, with Jokic playing 44 minutes and Murray 43. Monday isn't a back-to-back since Denver had Sunday off (Predictem, Oct 26). The heavy minutes are a small fatigue factor, which slightly helps Golden State.",
+        "Denver injuries: Cameron Johnson (ankle) and Alpha Diallo (wrist) are doubtful, and Spencer Jones and Julian Strawther are out (Predictem/Covers, Oct 26). Predictem calls Denver's bench thin. This helps Golden State.",
+        "[spread] Golden State's defensive rating is 122.2, 29th (Covers; Predictem says 119.1 per 100, 29th), with a net rating of -12 and getting outscored by 11.3 a game through an 0-3 start (Covers, Oct 26). This helps Denver.",
+        "[spread] Golden State's three losses were by 22 to the Lakers with Curry, by 3 to Memphis after a late collapse, and by 9 at Phoenix with the core resting (Predictem, Oct 26). Two of three were within 9, which gives the +7.5 dog backdoor potential, helping Golden State.",
+        "Denver's offense is 18th in efficiency through two games: 84 points and 22 turnovers at OKC with Jokic 5-of-19, then 141 in OT vs New Orleans (Predictem, Oct 26). The offense is inconsistent so far, which slightly helps Golden State.",
+        "Matchup history: Jokic averages 30.5/13/10 over his last eight games vs Golden State, and Denver has won eight straight home games vs Golden State by an average of 10.7 (Covers, Oct 26). That's priced per the lessons and leans Denver as a tiebreaker.",
+        "Yaxel Lendeborg (Warriors rookie) is averaging 18.7 points and 8.3 rebounds and scored 26 at Phoenix. Denver rookie Brazile scored 7 of Denver's 15 OT points Saturday (Covers/Predictem, Oct 26). Both teams have young contributors (neutral).",
+        "Previews split: Covers (Hanshew) takes Nuggets -7.5 up to -9.5 for a double-digit win, while Predictem takes Warriors +7.5 (projects Denver 118-113), saying the market overreacts to 0-3. Neutral."
+      ],
+      "reasoning": "Pass. A projection of Denver by about 7 sits within a point of the 7.5. Golden State's rested core returning and Denver's thin, hard-worked rotation offset Golden State's 29th-ranked defense against Jokic. The forced side is Golden State: the underdog, with Curry, Green and Podziemski back, against a favorite whose bench is short. Curry's knee not holding up on game day would have flipped that.",
+      "forcedSide": "Golden State Warriors",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

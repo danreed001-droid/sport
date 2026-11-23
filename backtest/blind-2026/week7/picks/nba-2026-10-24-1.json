@@ -1,0 +1,138 @@
+{
+ "sport": "nba",
+ "date": "2026-10-24",
+ "chunk": "nba-2026-10-24-1",
+ "games": [
+  {
+   "away": "Miami Heat",
+   "home": "Charlotte Hornets",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": -3.5,
+   "research": [
+    "Line: Heat -3.5 road favorite, total 231.5; Predictem's writer took Heat -3.5 and would lay up to -4.5 (Predictem, Oct 24 2026 preview). Market matches the slate number, so there's no line value either way (spread-specific).",
+    "Hornets: Kon Knueppel (hamstring) and Coby White (calf) out, Grant Williams questionable; Charles Lee gave no timetable (Predictem, Oct 24 2026). Helps Miami.",
+    "[angle] Both teams played at home Friday, so both are on the second night of a back-to-back. Miami also has to travel (Predictem, Oct 24 2026). That evens out the rest edge and slightly helps Charlotte.",
+    "Heat are 0-2 and allowed 259 points in two games, a franchise worst to open a season. They lost Friday to Detroit, which led wire to wire. Giannis Antetokounmpo (new to Miami) had 36 and 12 (Predictem, Oct 24 2026). This helps Charlotte, since Miami's defense is leaking.",
+    "Hornets are 0-2. They were blown out at home Friday by Atlanta and the crowd turned on them at halftime (Predictem, Oct 24 2026). Helps Miami.",
+    "Charlotte is 26-of-99 from three with 45 turnovers in two games, and Brandon Miller is 4-of-25 from deep (Predictem, Oct 24 2026). Helps Miami (spread-specific efficiency).",
+    "[angle] Rematch of last spring's play-in game (Predictem, Oct 24 2026). Neutral.",
+    "Dimers' model made Miami 62% to win, with a projected 116-113 Heat win. That is a 3-point margin, inside the 3.5 spread (Dimers, Oct 24 2026). Leans Charlotte against the number (spread-specific).",
+    "[angle] Miami played the league's fastest pace last season, and Charlotte's turnovers feed transition (Predictem, Oct 24 2026). Helps Miami.",
+    "Fewer than 10 solid, clean bullets: research stopped once a search summary showed the result (see contaminationNote)."
+   ],
+   "reasoning": "CONTAMINATED: a search summary quoted a later Covers column saying the Heat lost to the Hornets on Saturday, before I had written a lean, so this is locked as a pass per LESSONS. Pre-leak, the evidence was roughly balanced at the number: Dimers projected Heat by 3 and both teams were on a back-to-back.",
+   "forcedSide": "Charlotte Hornets",
+   "contaminated": true,
+   "contaminationNote": "In my second search (covers.com among the allowed domains), the summary quoted a Covers Oct 26 article: 'the Heat ruined my combo Saturday night with a loss to the Hornets'. It gave no score, but a Heat loss means Charlotte +3.5 covered. I saw this before deciding. The forced side (Charlotte) leans on the LESSONS underdog prior (a home dog getting 3.5, both teams on a back-to-back, Dimers' 3-point projection), but it is not independent of the leak."
+  },
+  {
+   "away": "Brooklyn Nets",
+   "home": "Cleveland Cavaliers",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": 10.5,
+   "research": [
+    "Slate has Cavs -11.5. Dimers' Oct 24 2026 preview had the market at Cavs -10.5 (Novig/Polymarket), and its model page showed Nets +10.0. The slate gives the Nets a point more than the market (spread-specific, helps Brooklyn).",
+    "Dimers' model projected Cavaliers 119-109 (80.5% win chance) and named Nets +10.5 (-108) its top value bet (Dimers, Oct 24 2026). Helps Brooklyn (spread-specific).",
+    "Dimers' model page projected 123-114 Cleveland, with the Nets covering at 54.8% (Dimers, Oct 24 2026). Helps Brooklyn.",
+    "SportsGambler had Cleveland at -500 on the moneyline (83% implied) (SportsGambler Oct 24 2026 listing). Neutral; consistent with about a 10-11 point spread.",
+    "Total 227.5 (Dimers, Oct 24 2026). Neutral.",
+    "Injury and rest research was not completed: the next search summary leaked a score (see contaminationNote).",
+    "Fewer than 10 solid bullets."
+   ],
+   "reasoning": "CONTAMINATED: a search summary listed 'Nets 121-125 Cavaliers on 24 Oct' from other SportsGambler matchup pages before I had written a lean, so this is locked as a pass. Pre-leak, the only evidence was that the slate's +11.5 was a point better than the -10.5 market for Brooklyn, plus Dimers' value lean on the Nets.",
+   "forcedSide": "Brooklyn Nets",
+   "contaminated": true,
+   "contaminationNote": "In my second search for this game (SportsGambler/Predictem/WagerTalk/OddsTrader allowed), the summary said several SportsGambler pages listed a previous meeting as 'Nets 121-125 Cavaliers on 24 Oct'. It was unsure of the season, but it is very likely this game: Cleveland by 4, so Brooklyn +11.5 covered. I saw it before deciding. My pre-leak lean was already Brooklyn (the slate is a point better than the -10.5 market, and Dimers' value bet was Nets +10.5), so the forced side is Brooklyn, but it is not independent of the leak."
+  },
+  {
+   "away": "Milwaukee Bucks",
+   "home": "Philadelphia 76ers",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": 11.5,
+   "research": [
+    "Line: 76ers -12.5, total 234.5. Covers' Oct 24 2026 preview listed Bucks +12.5 / 76ers -12.5 at about 50/51%. Dimers' Oct 24 write-up cited Bucks +11.5 (-109, BetRivers) and +12.5 elsewhere. The slate's +12.5 is at or slightly better than the market for Milwaukee, so there's no clear line value (spread-specific).",
+    "[angle] Giannis Antetokounmpo was traded to Miami. Milwaukee's leading scorers are now newcomers Tyler Herro, Kasparas Jakucionis and Jaime Jaquez Jr. (Covers, Oct 24 2026). This is a brand-new roster with only two games of data.",
+    "Milwaukee is 2-0 and is scoring 113.1 points per 100 possessions (13th), with 17.0 threes made a game (2nd) on 43.5 attempts (3rd) (Covers, Oct 24 2026). Helps Milwaukee: the underdog can score.",
+    "Milwaukee is on the second night of a back-to-back after allowing 135 points to Chicago on Friday (Covers, Oct 24 2026). Helps Philadelphia.",
+    "Philadelphia is 2-0 and 4th in points allowed per 100 (97.1), but 23rd on offense (103.8 per 100) and 21st in threes made (9.0) (Covers, Oct 24 2026). Mixed: their defense helps Philly, and the weak offense limits its margin, which helps Milwaukee.",
+    "[angle] Philadelphia's top end is stacked: Jaylen Brown (25.3 projected points), Tyrese Maxey (24.3), Joel Embiid (22.9) and LeBron James (18.3) are four of the game's top five projected scorers (Dimers, Oct 24 2026). Helps Philadelphia, but the market has clearly priced it at -12.5.",
+    "Dimers' model projected 76ers 122-111 (an 11-point margin), with Bucks +12.5 covering 54.5% and named that its top value bet (Dimers, Oct 24 2026). Leans Milwaukee by about 1.5 points (spread-specific). Per LESSONS, a model disagreement this small is not an edge.",
+    "Covers' top pick was Bucks +12.5, playable down to +10, on Milwaukee's roughly 10-point-per-100 offensive edge over Philadelphia. The writer noted Philly's 23-26 ATS mark when opponents make a lot of threes (Covers, Oct 24 2026). Helps Milwaukee; ATS splits are priced.",
+    "Over is 6-0 in Milwaukee's last six games as a road underdog, and Milwaukee was 9-6 ATS on no rest in 2025-26 (Covers, Oct 24 2026). That record was built with Giannis, so it has low relevance. Slightly helps Milwaukee.",
+    "Philadelphia allows 49.5 rebounds a game and ranks 28th in opponents' defensive rebounding (Covers, Oct 24 2026). A small edge for Milwaukee on second chances.",
+    "Moneyline about 16% Bucks / 82-84% 76ers (Covers, Dimers, Oct 24 2026). Consistent with a 12-12.5 point spread.",
+    "No injury report was found for either team. The previews list none, which leaves Embiid's and Brown's minutes uncertain this early in the season."
+   ],
+   "reasoning": "Every source has the market at 11.5-12.5, the same as the slate, so the number offers no value. Milwaukee's hot three-point shooting on a new roster is offset by the back-to-back and Philadelphia's top-four defense. My projection of Philly by about 11.5 is 1 point off the spread, well inside the pass zone. The [angle] that Giannis is gone and the Bucks still started 2-0 on threes is real, but two games is too small a sample to call it unpriced. A sign of rest for Embiid or Brown, or the market at 13.5+, would have changed it.",
+   "forcedSide": "Milwaukee Bucks",
+   "contaminated": false,
+   "contaminationNote": null
+  },
+  {
+   "away": "San Antonio Spurs",
+   "home": "Dallas Mavericks",
+   "pick": "San Antonio Spurs",
+   "confidence": "lean",
+   "projectedMargin": -14.5,
+   "research": [
+    "Line movement: Spurs were -10.5 on Friday evening and moved to -12.5 after the Cooper Flagg news (Predictem, Oct 24 2026). Dimers' Oct 24 2026 page later listed Spurs -14.5 / Mavs +14.5 (Polymarket, 52/50¢). That is about 4 points of movement toward San Antonio, and the slate's -12.5 is 2 points better than the later market (spread-specific, helps San Antonio).",
+    "Cooper Flagg is out with left shoulder soreness after a foul in Indianapolis (Predictem and Covers, Oct 24 2026). Helps San Antonio.",
+    "Kyrie Irving, 19 months after a torn ACL, was uncertain or on a minutes restriction and expected to have a limited workload on the second night of a back-to-back (Predictem and Covers, Oct 24 2026). Helps San Antonio.",
+    "Dallas is also without Dereck Lively II, Santi Aldama, Caleb Martin, Jett Howard and Tarik Biberovic, and Daniel Gafford is limited to 20-22 minutes (Predictem citing Dallas Sports Journal; Covers, Oct 24 2026). Helps San Antonio: Dallas has very thin frontcourt depth against Wembanyama.",
+    "[angle] Dallas scored 77 in the first half at Indiana with Flagg and only 44 in the second half without him, losing the half 62-44 after leading 75-40 (Covers and Predictem, Oct 24 2026). Helps San Antonio, since the Mavs' offense collapses without Flagg.",
+    "[angle] Both teams are on a back-to-back. San Antonio made a short trip from Austin after Friday's 114-110 loss to Houston; Dallas flew home from Indiana after a Friday night game (Predictem, Oct 24 2026). The rest is equal but Dallas has the harder travel, which slightly helps San Antonio.",
+    "[angle] The Spurs are 0-2 after losing to Oklahoma City (Wembanyama 1-of-13) and Houston, and are hunting their first win (Predictem and Covers, Oct 24 2026). Helps San Antonio's motivation.",
+    "Last season the Spurs covered all four meetings with Dallas, won them by an average of 19.3 points, and averaged 134.3 points against Dallas, their most against any opponent (Covers, Oct 24 2026). Helps San Antonio, but head-to-head history is a tiebreaker at most.",
+    "Naji Marshall averaged 19.1 ppg in 10 games without Flagg last season and has scored 15+ in both games this season (Covers, Oct 24 2026). Helps Dallas a little, since someone can still score.",
+    "Dimers' model projected Spurs 120-109 (11 points) and gave Mavericks +14.5 a 52.1% cover chance, valuing Dallas (Dimers, Oct 24 2026). Earlier, at +12.5, Dimers' top value bet was Mavs +12.5 (55.8%). Helps Dallas (spread-specific), but per LESSONS a model disagreeing with the line isn't an edge.",
+    "Covers' top pick was Spurs -12.5, tradeable up to 13.5 (Covers, Oct 24 2026). Predictem took the Under 231.5 and projected Spurs 117-105 (12 points), saying -12.5 had 'lost much of its value' after the Flagg news (Predictem, Oct 24 2026). Mixed (spread-specific).",
+    "Close to 60% of tickets were on the Over (Predictem, Oct 24 2026). Neutral for the side."
+   ],
+   "reasoning": "What decided it was market position. The line went from -10.5 to -12.5 on the Flagg news and later showed -14.5, so the slate's -12.5 sits about 2 points short of where the market moved. That is the one edge LESSONS says has paid, and after a 3+ point move the new number is treated as fair. Taking the fair number as Spurs by 14.5 gives a 2-point edge. That isn't 'strong', and it is laying points with a favorite, which LESSONS says to be careful with, hence only a lean. The most surprising [angle] is the depth of Dallas's injury list: Flagg, Lively, Aldama and Martin are out, and Irving and Gafford are limited. If the -14.5 was only a stray prediction-market quote and the consensus stayed at -12.5, this would be a pass.",
+   "forcedSide": "San Antonio Spurs",
+   "contaminated": false,
+   "contaminationNote": null
+  },
+  {
+   "away": "Washington Wizards",
+   "home": "Chicago Bulls",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": -1.0,
+   "research": [
+    "Dimers' pre-game model gave Washington about a 56% win chance and a narrow projected win of about 122-120, and named the Wizards moneyline its top value bet. The slate has the Bulls -1.5 (Dimers, Oct 24 2026). Helps Washington (spread-specific).",
+    "Covers' expert moneyline pick was the Wizards, arguing Chicago lacks the personnel to defend Washington's two-man actions (Covers, Oct 24 2026 moneyline picks). Helps Washington.",
+    "Total 243.5; Dimers flagged the Under (Dimers, Oct 24 2026). Neutral for the side.",
+    "Chicago scored 135 points on Milwaukee on Friday (Covers Bucks-76ers preview, Oct 24 2026), so the Bulls are on a back-to-back. Helps Washington.",
+    "Research stopped after the first search: its summary gave the final score (see contaminationNote). Fewer than 10 bullets."
+   ],
+   "reasoning": "CONTAMINATED: the first search summary stated the final score (from a Covers results page) before I had formed any view, so this is locked as a pass. Before the leak, the pre-game evidence (Dimers' and Covers' Wizards leans, Chicago's back-to-back) pointed to Washington at a near pick'em.",
+   "forcedSide": "Washington Wizards",
+   "contaminated": true,
+   "contaminationNote": "My first search (covers/predictem/dimers allowed) returned a summary saying 'Covers' results page lists Washington 124, Chicago 120, so the Wizards covered'. I saw this before deciding anything. The forced side (Washington) matches the pre-game sources (Dimers' value bet and Covers' expert pick were on the Wizards), but it is not independent of the leak."
+  },
+  {
+   "away": "Houston Rockets",
+   "home": "Atlanta Hawks",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": 3.0,
+   "research": [
+    "Line: Hawks -1.5, total 230; Predictem's writer took Hawks -1.5 and projected 117-111 Atlanta (Predictem, Oct 24 2026 home-opener preview). Helps Atlanta.",
+    "Dimers' Oct 24 2026 best-bets article called the Hawks moneyline its strongest play of the slate (58.8% win chance, 7.9% edge) and had Hawks -1.5 at 53.7% (Dimers, Oct 24 2026). Helps Atlanta (spread-specific).",
+    "[angle] This is Atlanta's home opener (Predictem, Oct 24 2026). Atlanta blew out Charlotte in Charlotte on Friday (Predictem Heat-Hornets preview, Oct 24 2026), so it comes in on a back-to-back after that win.",
+    "Atlanta forced turnovers at the 6th-highest rate in the league last season; Houston led the NBA in offensive rebound rate (Predictem, Oct 24 2026). This is the key matchup and it is mixed.",
+    "Houston has won four straight in the series (Predictem, Oct 24 2026). Head-to-head history only; slightly helps Houston.",
+    "Houston beat San Antonio 114-110 Friday (Predictem Spurs-Mavs preview, Oct 24 2026), so the Rockets are also on a back-to-back. Neutral.",
+    "Fewer than 10 bullets: research stopped after a result hint (see contaminationNote)."
+   ],
+   "reasoning": "CONTAMINATED (partial): a search summary quoted a later Predictem rematch preview saying the Hawks missed 36 threes on Saturday and still scored 114. That is a partial hint of the result, seen before a lean was written, so this is locked as a pass per LESSONS. Before the hint, the pre-game sources (Predictem and Dimers) leaned Atlanta at -1.5.",
+   "forcedSide": "Atlanta Hawks",
+   "contaminated": true,
+   "contaminationNote": "My first search (predictem.com only) summarized a later Predictem Oct 26 rematch preview: 'the Hawks missed 36 three-pointers on Saturday night and still scored 114 points'. It gave no winner or final score, but Atlanta's points total and poor shooting are a partial hint of the result, seen before deciding. The forced side (Atlanta) follows the pre-game Predictem and Dimers leans."
+  }
+ ]
+}

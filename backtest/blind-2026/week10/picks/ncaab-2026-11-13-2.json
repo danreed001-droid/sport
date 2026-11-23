@@ -1,0 +1,57 @@
+{
+  "sport": "ncaab",
+  "date": "2026-11-13",
+  "chunk": "ncaab-2026-11-13-2",
+  "games": [
+    {
+      "away": "Arizona Wildcats",
+      "home": "Auburn Tigers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -3.0,
+      "research": [
+        "Line: slate Auburn +2.5; archive open and close both +2.5. Predictem says the line opened with Auburn a small favorite and flipped to Arizona about -3; Covers says Arizona opened -1.5 (both Nov 13). The market moved toward Arizona early, then settled at the slate number - priced.",
+        "Total 159.5 at open and close (slate archive), though Predictem cites 157.5 -> 159.5.",
+        "Venue: a true road game at Neville Arena in Auburn (Predictem; Covers, Nov 13), not a neutral site.",
+        "[angle] Auburn has a 69-game non-conference home winning streak, the longest in the country, and no non-conference home loss in 10 years (Predictem; Covers, Nov 13) - Auburn.",
+        "[angle] Arizona already lost to UCLA 84-75 in its opener in Las Vegas despite Ivan Kharchenkov's 38 points, and fell from No. 5 to No. 12 (Predictem UCLA preview, Nov 11; Predictem, Nov 13) - mild Auburn.",
+        "Arizona shoots only about 28% from three and lives at the rim; 7-2 Motiejus Krivas shoots 73.1% (Predictem, Nov 13). Auburn blocks 8.5 shots a game and has held both opponents under 60 (Predictem, Nov 13). Rim scoring against rim protection - Auburn.",
+        "Auburn ranks 263rd in defensive rebounding rate (KenPom via Covers, Nov 13). Kharchenkov (24.7 points, 9 rebounds) and Krivas should win the glass - Arizona.",
+        "Tahaad Pettiford leads the SEC at 22.0 points and scored a career-high 30 in last December's 97-68 loss at Arizona; Auburn shoots about 40% from three and its bench scores about 35 a game (Predictem, Nov 13) - Auburn.",
+        "Under Tommy Lloyd, Arizona is 44-28-3 ATS in non-conference games and 37-17 in true road games (Covers; Predictem, Nov 13) - ATS records are priced, mild Arizona.",
+        "Auburn went 8-14 ATS as an underdog last season, and Covers expects regression after its first non-NCAA Tournament season since 2021 (Covers, Nov 13) - mild Arizona.",
+        "Projections: KenPom has Auburn by 2 (Covers, Nov 13); Predictem's tempo model has Arizona by about 3.5, 79-76 (Nov 13). The models split around the line - neutral.",
+        "Preview picks: Covers Arizona -2.5 (good to -4.5); Predictem has no side, only Under 159.5 (Nov 13) - priced."
+      ],
+      "reasoning": "The models split (KenPom Auburn by 2, Torvik-style Arizona by 3.5) and the line sits between them at Arizona -2.5 after an early move toward Arizona. The most interesting angle is Auburn's shot-blocking against an Arizona offense that can't shoot threes, offset by Auburn's weak defensive rebounding against Arizona's size. Pass. Forced Arizona on the glass edge and the market move.",
+      "forcedSide": "Arizona Wildcats",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Seton Hall Pirates",
+      "home": "Alabama Crimson Tide",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 18.0,
+      "research": [
+        "Line: slate Alabama -17.5; archive open -15.5, close -18.5. The market moved toward Alabama even with Davis-Fleming's doubtful status known, so the slate's -17.5 is a point better for Alabama than the close - priced.",
+        "Total 156.5 at open and close (slate archive).",
+        "KenPom projects Alabama by about 13, and Torvik's adjusted efficiency has Alabama by single digits (Predictem, Nov 13). Both are under the number - mild Seton Hall.",
+        "Alabama averages 102 points, ranks 5th in KenPom adjusted offense and plays one of the fastest tempos (Predictem, Nov 13) - Alabama.",
+        "Alabama beat Oakland 109-68, making 24 of 46 threes (one short of the school record); London Jemison went 6-of-6 from three (Predictem, Nov 13). Unsustainable shooting - mild Seton Hall.",
+        "[angle] Aden Holloway returned from suspension vs Oakland and made four threes (Predictem, Nov 13), so Alabama's backcourt is whole again for the first time this season - mild Alabama.",
+        "[angle] Jamarion Davis-Fleming, a 6-10 Mississippi State transfer and one of Alabama's best rebounders, missed the Oakland game with a lower-leg injury, hasn't practiced and is questionable; Nate Oats was 'not optimistic' (Predictem, Nov 13). The close moved toward Alabama anyway, so it is priced - mild Seton Hall.",
+        "Alabama ranks 297th in offensive rebound rate allowed (37.7%), and Oakland outrebounded it 37-31 (Predictem, Nov 13) - Seton Hall.",
+        "Seton Hall allows 54.7 points a game (top 15), has a top-25 adjusted defense per Barttorvik, holds opponents to a 22.1% offensive rebound rate (21st) and plays a slow tempo in the high 60s (Predictem, Nov 13) - Seton Hall.",
+        "[angle] Seton Hall's offense ranks outside the top 100 and it beat Charlotte only 68-62 on a neutral floor. A cold stretch could let Alabama's pace run away (Predictem, Nov 13), and LESSONS says a big underdog covers only if it can score - Alabama.",
+        "This is the first power-conference opponent for both teams (Predictem, Nov 13) - neutral.",
+        "Writer's pick Seton Hall +17.5, good to +14, projecting 84-72 (Predictem, Nov 13) - priced, tiebreaker only."
+      ],
+      "reasoning": "KenPom (13) sits below the number, but the market moved three points toward Alabama to -18.5 with the Davis-Fleming news already out, and LESSONS says to treat the close as fair. Shading toward the close gives about 18, within 2 of the slate, so pass. The most interesting angle is Seton Hall's defense and rebounding against Alabama's weak defensive glass, offset by a Seton Hall offense that may not keep pace. Forced Alabama: the close moved its way.",
+      "forcedSide": "Alabama Crimson Tide",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-26",
+ "chunk": "nfl-2026-10-26-1",
+ "games": [
+  {
+   "away": "Dallas Cowboys",
+   "home": "Philadelphia Eagles",
+   "time": "8:15 PM ET",
+   "awaySpread": -4.5,
+   "homeSpread": 4.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": -218,
+   "homeMoneyline": 180
+  }
+ ]
+}

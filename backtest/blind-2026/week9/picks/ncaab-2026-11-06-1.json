@@ -1,0 +1,194 @@
+{
+ "sport": "ncaab",
+ "date": "2026-11-06",
+ "chunk": "ncaab-2026-11-06-1",
+ "games": [
+  {
+   "away": "Northeastern",
+   "home": "Virginia",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": 34.5,
+   "research": [
+    "Virginia opened 2026-27 with an 89-60 home win over Drexel, setting a building record with 18 steals and 25 points off turnovers, and led 25-4 eight minutes in (Predictem preview, Nov 6 2026). Helps Virginia.",
+    "Thijs De Ridder scored 24 with 9 rebounds and Sam Lewis 20 in the opener; Chance Mallory had 4 steals (Predictem, Nov 6 2026). Helps Virginia.",
+    "[angle] Seven Cavaliers made their UVA debuts in the opener, so the rotation is new and the full-court press is the identity (Predictem, Nov 6 2026). Press against a mid-major helps Virginia run up turnovers; new rotation adds variance.",
+    "Northeastern lost its opener 93-85 to Boston University: scored well but could not get stops (Predictem, Nov 6 2026). Helps Virginia's margin; the 85 points say Northeastern can score some (backdoor potential).",
+    "[angle] Virginia beat Northeastern only 56-54 in December 2023 (Predictem, Nov 6 2026); old history under a different Virginia program, little weight. Slight Northeastern.",
+    "Line: slate Virginia -34.5; DraftKings opened and closed -33.5; total 159.5 open and close (slate file). The market sat a point below the slate number.",
+    "A public model cited by the preview projected Virginia 98-63 (35); the Predictem writer took Virginia -34.5 and projected 94-60 (Nov 6 2026). Priced.",
+    "[angle] With a 159.5 total, a fast game gives a press team more possessions to build a margin, but also gives the bench more garbage-time minutes at +30 (writer's caveat, Predictem Nov 6 2026). Balanced.",
+    "Only 8 solid pre-game findings were available from guard-safe sources (fewer than 10), so confidence is lowered."
+   ],
+   "reasoning": "Projection lands on the number (about Virginia by 35); the close at -33.5 is treated as fair, so no edge. The press-vs-poor-defense matchup is the angle and would be the forced side; a confirmed rotation absence would have changed it.",
+   "forcedSide": "Virginia",
+   "contaminated": false,
+   "contaminationNote": null
+  },
+  {
+   "away": "James Madison",
+   "home": "Kentucky",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": 24.5,
+   "research": [
+    "Kentucky is in Mark Pope's third season; the Covers writer calls it his most complete team, returning five players including Malachi Moreno (Covers preview, Nov 6 2026). Helps Kentucky.",
+    "Kentucky added Iowa State transfer Milan Momcilovic, a high-volume 3-point shooter (Covers, Nov 6 2026). Helps Kentucky.",
+    "James Madison returned only two players from last season (Covers, Nov 6 2026). Helps Kentucky.",
+    "James Madison allowed 86 points to Miami (Ohio) on Monday in its opener (Covers, Nov 6 2026). Helps Kentucky's margin.",
+    "Kentucky is 7-1 ATS in its last eight vs teams with losing records (Covers, Nov 6 2026). ATS trend, priced.",
+    "Line: slate Kentucky -25.5; DraftKings opened -25.5 and closed -23.5; total 158.5 to 156.5 (slate file). Market moved 2 toward JMU; per LESSONS this points nowhere.",
+    "[angle] Kentucky had a disappointing 2025-26 season, and the Covers writer cites pressure to perform in Rupp as a reason to expect a big margin (Covers, Nov 6 2026). Narrative, slight Kentucky.",
+    "The Covers writer picked Kentucky -25.5 (playable to -30) and over 155.5 (Nov 6 2026). Preview picks are priced.",
+    "No injury details were given for either team on the preview page (Covers, Nov 6 2026).",
+    "Only 9 solid pre-game findings were available from guard-safe sources (fewer than 10), so confidence is lowered."
+   ],
+   "reasoning": "No concrete unpriced reason either way; the market's 2-point drop to -23.5 is treated as fair, which puts my projection inside 2 points of the slate number. No read.",
+   "forcedSide": "no read",
+   "contaminated": false,
+   "contaminationNote": null
+  },
+  {
+   "away": "Arkansas State",
+   "home": "Alabama",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": null,
+   "research": [
+    "Predictem preview (Nov 6 2026): Alabama -25.5, total 175.5 at the time; writer took Arkansas State +25.5, projecting 97-76.",
+    "[angle] Arkansas State coach Ryan Pannone is a former Alabama assistant returning to Coleman Coliseum (Predictem, Nov 6 2026).",
+    "Line: slate Alabama -25.5; DraftKings opened and closed -25.5; total moved 173.5 to 178.5 (slate file).",
+    "Research stopped after the result leak described in contaminationNote."
+   ],
+   "reasoning": "Contaminated before any lean was written down, so this is locked as a pass with no forced side.",
+   "forcedSide": "no read",
+   "contaminated": true,
+   "contaminationNote": "A WebSearch summary (predictem.com-limited query for the Nov 6 preview) said a later Predictem article reported Arkansas State scored 86 at Coleman Coliseum, that Alabama won, and that Amari Allen posted a triple-double vs Arkansas State. Seen before any lean was formed; no side was in my notes."
+  },
+  {
+   "away": "Michigan",
+   "home": "UConn",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": 5.0,
+   "research": [
+    "[angle] Neutral site: the game is the Champions Classic/Hall of Fame Series at TD Garden in Boston, not in Storrs (Covers and Predictem previews, Nov 6 2026). UConn's -5.5 is not a true-road number for Michigan; Boston crowd likely leans UConn. Slight UConn.",
+    "[angle] Rematch of the April 2026 national title game, which Michigan won 69-63; Covers writer says Dan Hurley is highly motivated (Covers, Nov 6 2026). Narrative, slight UConn.",
+    "Michigan lost coach Dusty May to the NBA plus three lottery-pick bigs; first-year coach Mike Boynton Jr.; Elliot Cadeau is the lone returning starter (Predictem, Nov 6 2026). Helps UConn, but known before the line.",
+    "Michigan's Brandon McCoy Jr. is out for the season (ACL on a foreign tour); Moustapha Thiam expected back after an illness kept him out of the Oakland opener (Predictem, Nov 6 2026). Known, priced.",
+    "UConn returns two starters and five players overall, adding Silas Demary Jr., Nik Khamenia, Na'jai Hines and Colben Landrew; Jayden Ross shot nearly 40% from three last season (Covers/Predictem, Nov 6 2026). Helps UConn.",
+    "Openers: UConn beat Gardner-Webb 86-46 (Braylon Mullins 20); Michigan beat Oakland with J.P. Estrella 15 and 12 (Predictem, Nov 6 2026).",
+    "KenPom per Predictem: UConn about No. 9 (+26.6 net, top-5 adjusted defense), Michigan about No. 30 (+21.4) - a ~5-point net gap, roughly 3.5-4 points on a neutral floor at this pace (Predictem, Nov 6 2026). Helps Michigan +5.5.",
+    "Covers' computer projection: UConn 74.93-68.21 (6.7), leaning Michigan at +7.5 (Covers computer picks page title/summary, Nov 6 2026). Priced model; at +5.5 it would favor UConn slightly.",
+    "Line: slate UConn -5.5; DraftKings opened -5.5 and closed -7.5; total 146.5 to 142.5 (slate file). Preview says it opened near -3. Per LESSONS, moves point nowhere and slate-vs-close is not a reason.",
+    "Writers split: Covers took UConn -7.5 and the under; Predictem took Michigan +7.5, projecting 74-69 (Nov 6 2026). Priced.",
+    "[angle] Pace clash: Hurley wants a slow, physical game while Michigan prefers to play fast; total fell 4 points (Covers, Nov 6 2026). A slow game shrinks margins, slight Michigan."
+   ],
+   "reasoning": "Ratings make it about UConn by 4 on a neutral floor and the market by 7.5; with the slate at 5.5 my projection (UConn by 5) is within a point of the number, so pass. The neutral-site setting is the angle; the forced side rests on the ratings gap and slower pace, not the slate-vs-close difference.",
+   "forcedSide": "Michigan",
+   "contaminated": false,
+   "contaminationNote": null
+  },
+  {
+   "away": "Southern Miss",
+   "home": "Iowa State",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": 25.0,
+   "research": [
+    "Iowa State is 0-1 after losing its opener to Memphis on a neutral floor in Sioux Falls (Predictem preview, Nov 6 2026). [angle] Home opener off a loss: bounce-back motivation, helps Iowa State.",
+    "Iowa State has won eight straight home openers and is 76-11 at Hilton Coliseum under T.J. Otzelberger (Predictem, Nov 6 2026). Helps Iowa State, priced.",
+    "Otzelberger's teams have ranked top-15 in adjusted defense six straight seasons; KenPom about No. 11 with a top-10 defense (Predictem, Nov 6 2026). Helps Iowa State.",
+    "Southern Miss is in the 230s on KenPom; the writer calls it a 30-plus point efficiency gap per 100 possessions (Predictem, Nov 6 2026). At Iowa State's deliberate pace that is about 20-21 points plus home court, ~24-25: helps Southern Miss +30.5.",
+    "Southern Miss beat Tougaloo 82-35 in its opener (Predictem, Nov 6 2026); non-D1 opponent, little information.",
+    "[angle] Southern Miss has Isaac Tavares, a Sun Belt Preseason Player of the Year, as a go-to scorer for a backdoor (Predictem, Nov 6 2026). Slight Southern Miss.",
+    "Tamin Lipsey (fifth year, preseason All-Big 12) and Killyan Toure lead Iowa State (Predictem, Nov 6 2026).",
+    "Line: slate Iowa State -30.5; DraftKings opened -30.5 and closed -31.5; total 148.5 to 145.5 (slate file). Low total (slow game) limits possessions for a 30-point margin.",
+    "Writer took Iowa State -30.5, projecting 88-54; risk named: starters resting in garbage time (Predictem, Nov 6 2026). Priced.",
+    "Iowa State leads the series 4-0, last meeting a 73-45 win (Predictem, Nov 6 2026). Old history, little weight.",
+    "[angle] A 145.5 total means a 31-point cover needs roughly a 88-57 type game; Iowa State's half-court defense-first style rarely runs up scores."
+   ],
+   "reasoning": "A ratings-based projection (about Iowa State by 25) sits below the 30.5 but that is a public model and therefore priced; there is no concrete unpriced reason, so pass. Forced side Southern Miss for the slow pace/low total vs a 30+ number; a confirmed Tavares absence would have flipped it.",
+   "forcedSide": "Southern Miss",
+   "contaminated": false,
+   "contaminationNote": null
+  },
+  {
+   "away": "Middle Tennessee",
+   "home": "Kansas",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": 29.0,
+   "research": [
+    "Kansas beat Fordham 95-65 in its opener: Tre White 22, Tyran Stokes 15, Leroy Blyden Jr. 15, Melvin Council Jr. 10; shot 58%, won the boards 50-33 (Predictem preview, Nov 6 2026). Helps Kansas.",
+    "[angle] Fordham hit 13 threes and trailed by only six early in the second half before Kansas's 19-3 closing run; the writer says the rotation is still sorting out (Predictem, Nov 6 2026). Slight Middle Tennessee.",
+    "Kansas has several new pieces: freshman Tyran Stokes, Trey Kaufman-Renn (Purdue), Blyden (Toledo) (Predictem, Nov 6 2026).",
+    "Middle Tennessee beat Fisk 117-73; Quintero Barnett 24, Jahvin Carter 7 assists (Predictem, Nov 6 2026). Non-D1 opponent, little information; shows it can score.",
+    "Kansas has won 54 straight home openers (Predictem, Nov 6 2026) - win, not cover; priced.",
+    "Line: slate Kansas -29.5; DraftKings opened -27.5 and closed -28.5; total 150.5 to 156.5 (slate file). Slate number is a point above the close; per LESSONS not a reason.",
+    "Writer took Middle Tennessee +29.5, projecting 88-62 (26) (Predictem, Nov 6 2026). Priced.",
+    "No injuries mentioned for either team (Predictem, Nov 6 2026).",
+    "Only 8 solid pre-game findings were available from guard-safe sources (fewer than 10), so confidence is lowered."
+   ],
+   "reasoning": "Nothing concrete and unpriced; projection within about a point of the close-adjusted number. No read.",
+   "forcedSide": "no read",
+   "contaminated": false,
+   "contaminationNote": null
+  },
+  {
+   "away": "Omaha",
+   "home": "BYU",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": null,
+   "research": [
+    "Predictem preview (Nov 6 2026): BYU -31.5 at most books, total 160.5; line had jumped from about 29.5.",
+    "Line: slate BYU -31.5; DraftKings opened -29.5 and closed -33.5; total 160.5 to 161.5 (slate file).",
+    "Research stopped after the result leak described in contaminationNote."
+   ],
+   "reasoning": "Contaminated before any lean was written down, so this is locked as a pass with no forced side.",
+   "forcedSide": "no read",
+   "contaminated": true,
+   "contaminationNote": "A WebSearch summary (predictem.com-limited query for the Nov 6 preview) quoted later Predictem articles saying BYU beat Omaha 108-67 and covered a 33.5-point spread. Seen before any lean was formed; no side was in my notes."
+  },
+  {
+   "away": "Wagner",
+   "home": "Miami (FL)",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": 30.0,
+   "research": [
+    "Miami lost its opener 77-67 to Florida; Acaden Lewis scored 24, Malik Reneau only 5, Shelton Henderson 7 (Predictem preview, Nov 6 2026). [angle] Home bounce-back for the starters after a rivalry loss helps Miami; the writer also flags a possible post-Florida letdown.",
+    "Miami's frontcourt: Somto Cyril (6-11, 263) and Reneau (6-9, 18.9 ppg last season, first-team All-ACC); five-star freshman Caleb Gaskins scored 4 vs Florida after 20 in an exhibition (Predictem, Nov 6 2026). Size edge helps Miami.",
+    "Wagner lost 76-50 at Boston College, shooting 30%; outrebounded 34-24 in the paint and lost the turnover battle 14-5 (Predictem, Nov 6 2026). Helps Miami.",
+    "[angle] Wagner has 14 newcomers, an interim coach (Dwan McMillan) and Tracy McGrady as a strategic advisor (Predictem, Nov 6 2026). Helps Miami; also an unknown.",
+    "Kareem Watson led Wagner with 13 at BC; Fairfield transfer Cam Estevez was 0-for-6 from three (Predictem, Nov 6 2026). A big underdog covers only if it can score - Wagner scored 50. Helps Miami.",
+    "KenPom: Miami about No. 21 (+23 net), Wagner about No. 342, a gap of nearly 40 per 100 possessions (Predictem, Nov 6 2026). At ~68 possessions plus home court, ~30 points. Near the number.",
+    "Line: slate Miami -33.5; the preview says most books had -31.5 with some at -33.5; total near 146.5 (Predictem, Nov 6 2026). No DraftKings open/close in the slate.",
+    "Writer took Miami -31.5 (projected 86-50) but warned not to chase -33.5 and that Lucas may empty the bench at +30 (Predictem, Nov 6 2026). Priced.",
+    "Miami was 26-9 in Jai Lucas's first season (Predictem, Nov 6 2026).",
+    "Only 9 solid pre-game findings were available from guard-safe sources (fewer than 10), so confidence is lowered."
+   ],
+   "reasoning": "Projection (about Miami by 30) is 3.5 under the 33.5, but that is ratings-driven and the bench-at-30 caveat is generic; no concrete unpriced reason, so pass. Forced side Wagner on the number; Wagner's inability to score (50 at BC) is the main argument against it.",
+   "forcedSide": "Wagner",
+   "contaminated": false,
+   "contaminationNote": null
+  },
+  {
+   "away": "North Florida",
+   "home": "UCLA",
+   "pick": null,
+   "confidence": "pass",
+   "projectedMargin": null,
+   "research": [
+    "Predictem preview (Nov 6 2026): UCLA -31.5, total 155.5; writer took North Florida +31.5, projecting 86-58; UCLA had just beaten Arizona.",
+    "Line: slate UCLA -31.5; DraftKings opened and closed -31.5; total 155.5 to 157.5 (slate file).",
+    "Research stopped after the result leak described in contaminationNote."
+   ],
+   "reasoning": "Contaminated before any lean was written down, so this is locked as a pass with no forced side.",
+   "forcedSide": "no read",
+   "contaminated": true,
+   "contaminationNote": "A WebSearch summary (predictem.com-limited query for the Nov 6 preview) quoted a later Predictem preview saying UCLA beat North Florida 114-63 with a 34-0 first-half run. Seen before any lean was formed; no side was in my notes."
+  }
+ ]
+}

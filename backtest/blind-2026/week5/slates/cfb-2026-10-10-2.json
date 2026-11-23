@@ -1,0 +1,80 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-10",
+ "chunk": "cfb-2026-10-10-2",
+ "games": [
+  {
+   "away": "Houston",
+   "home": "Kansas State",
+   "time": "3:30 PM ET",
+   "awayRank": 22,
+   "awaySpread": 2.5,
+   "homeSpread": -2.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "awayMoneyline": 120,
+   "homeMoneyline": -142
+  },
+  {
+   "away": "UCLA",
+   "home": "Oregon",
+   "time": "3:30 PM ET",
+   "awayRank": 21,
+   "homeRank": 13,
+   "awaySpread": 11.5,
+   "homeSpread": -11.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 350,
+   "homeMoneyline": -455
+  },
+  {
+   "away": "Ole Miss",
+   "home": "Vanderbilt",
+   "time": "3:30 PM ET",
+   "awayRank": 9,
+   "awaySpread": -9.5,
+   "homeSpread": 9.5,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": -355,
+   "homeMoneyline": 280
+  },
+  {
+   "away": "Texas",
+   "home": "Oklahoma",
+   "time": "3:30 PM ET",
+   "awayRank": 1,
+   "awaySpread": -8.5,
+   "homeSpread": 8.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "awayMoneyline": -325,
+   "homeMoneyline": 260
+  },
+  {
+   "away": "Maryland",
+   "home": "Ohio State",
+   "time": "4:15 PM ET",
+   "homeRank": 5,
+   "awaySpread": 32.5,
+   "homeSpread": -32.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 3500,
+   "homeMoneyline": -20000
+  },
+  {
+   "away": "Tennessee",
+   "home": "Arkansas",
+   "time": "4:15 PM ET",
+   "awayRank": 15,
+   "awaySpread": -13.5,
+   "homeSpread": 13.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -107,
+   "awayMoneyline": -550,
+   "homeMoneyline": 420
+  }
+ ]
+}

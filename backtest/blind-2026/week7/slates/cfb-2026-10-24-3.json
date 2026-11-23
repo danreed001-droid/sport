@@ -1,0 +1,66 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-24",
+ "chunk": "cfb-2026-10-24-3",
+ "games": [
+  {
+   "away": "LSU",
+   "home": "Auburn",
+   "time": "12:00 PM ET",
+   "awayRank": 18,
+   "awaySpread": -6.5,
+   "homeSpread": 6.5,
+   "awaySpreadOdds": -124,
+   "homeSpreadOdds": 125,
+   "awayMoneyline": -251,
+   "homeMoneyline": 245
+  },
+  {
+   "away": "Texas A&M",
+   "home": "Alabama",
+   "time": "3:30 PM ET",
+   "homeRank": 13,
+   "awaySpread": 14,
+   "homeSpread": -14,
+   "awaySpreadOdds": -113,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 488,
+   "homeMoneyline": -525
+  },
+  {
+   "away": "Tennessee",
+   "home": "South Carolina",
+   "time": "3:30 PM ET",
+   "awayRank": 11,
+   "awaySpread": 2.5,
+   "homeSpread": -2.5,
+   "awayMoneyline": 115,
+   "homeMoneyline": -122
+  },
+  {
+   "away": "Ole Miss",
+   "home": "Texas",
+   "time": "7:30 PM ET",
+   "awayRank": 7,
+   "homeRank": 19,
+   "awaySpread": 3,
+   "homeSpread": -3,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": 130,
+   "homeMoneyline": -155
+  },
+  {
+   "away": "Vanderbilt",
+   "home": "Kentucky",
+   "time": "7:30 PM ET",
+   "homeRank": 12,
+   "awaySpread": 10.5,
+   "homeSpread": -10.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 340,
+   "homeMoneyline": -450
+  }
+ ]
+}

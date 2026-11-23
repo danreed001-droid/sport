@@ -1,0 +1,139 @@
+{
+  "sport": "nba", "date": "2026-10-25", "chunk": "nba-2026-10-25-1",
+  "games": [
+    {
+      "away": "Los Angeles Lakers", "home": "Utah Jazz",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -6.5,
+      "research": [
+        "Covers ATS picks (Oct 25): the Lakers 'have posted two emphatic wins with their new lineup'; the Jazz 'haven't covered yet' (helps Lakers -6.5).",
+        "Covers ATS picks (Oct 25): Polymarket had the spread at 50/50, so no lean from the market (neutral).",
+        "[angle] Covers moneyline picks (Oct 25): Walker Kessler, now with the Lakers, faces his former team (neutral to Lakers).",
+        "[angle] Covers moneyline picks (Oct 25): Markkanen and Jaren Jackson Jr. can pull Kessler out of the paint, and Doncic and Reaves are weak isolation defenders against Darryn Peterson and Keyonte George (helps Jazz +6.5).",
+        "Covers moneyline picks (Oct 25): Jazz at 32% on Polymarket, analyst priced them at 37% (helps Jazz).",
+        "Covers preview (Oct 25): visiting teams are 1-7 ATS in this matchup since 2022 (helps Jazz; head-to-head, tiebreaker only).",
+        "Covers preview (Oct 25): Lakers 5-2 SU in their last seven trips to Salt Lake City (helps Lakers; venue history).",
+        "Covers preview (Oct 25): Kessler 22-of-26 over two games, called unsustainable (helps Jazz if he regresses).",
+        "Covers preview (Oct 25): Lakers rank first in offense; Utah 20th in turnovers (helps Lakers).",
+        "Covers preview (Oct 25): Markkanen shooting 31.3% from three early (helps Lakers)."
+      ],
+      "reasoning": "Contaminated before any lean: my first search's summary reported the final score. Locked a pass. The forced side is the default underdog lean from LESSONS (underdogs covered 35 of 62), not a researched read.",
+      "forcedSide": "Utah Jazz",
+      "contaminated": true,
+      "contaminationNote": "My first WebSearch (allowed_domains limited to betting sites) summary quoted a SportsGambler head-to-head listing: 'Lakers 132 Jazz 123' on 25/10 2026. I saw it before forming any lean. Pick locked as a pass."
+    },
+    {
+      "away": "Indiana Pacers", "home": "Brooklyn Nets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -6.0,
+      "research": [
+        "Covers ATS picks (Oct 25): the Nets have covered both games this season as underdogs (helps Nets +7.5; ATS record, tiebreaker only).",
+        "Covers ATS picks (Oct 25): the Pacers 'haven't yet managed a blowout win' (helps Nets).",
+        "Covers moneyline picks (Oct 25): the analyst called Indiana a 'massive disappointment' in Friday's loss to Dallas (helps Nets).",
+        "Covers moneyline picks (Oct 25): Haliburton-Zubac two-man actions should beat Brooklyn's young guards, Egor Demin and Nolan Traore (helps Pacers -7.5).",
+        "Covers moneyline picks (Oct 25): Aaron Nesmith is back in Indiana's lineup (helps Pacers).",
+        "Covers moneyline picks (Oct 25): Pacers 69% on Polymarket, analyst priced them closer to 75% (helps Pacers).",
+        "Covers ATS picks (Oct 25): the Nets side was 51% on Polymarket, an even market at -7.5 (neutral).",
+        "Covers contest consensus (Oct 25): the page listed the line at -5.5 with picks 48% Pacers / 52% Nets; the slate's -7.5 suggests the market went toward Indiana, but I couldn't confirm the move (unclear).",
+        "[angle] WagerTalk (Oct 26) and Covers (Oct 26): Indiana plays at Milwaukee the next night, so this is the first leg of a back-to-back (minutes management could help Nets).",
+        "[angle] Covers moneyline picks (Oct 26): Haliburton is returning from the Achilles injury that cost him all of last season, and his minutes may be managed (helps Nets if he's limited late).",
+        "Fewer than the usual depth of game-specific sources found; no betting splits or confirmed open-to-close line."
+      ],
+      "reasoning": "The Pacers' talent edge against a young Nets backcourt is real, but -7.5 prices it and Indiana hasn't blown anyone out yet. With Haliburton's minutes and a back-to-back the next night, I lean Brooklyn but the edge is under 2 points. A confirmed move toward Brooklyn would have made it a pick.",
+      "forcedSide": "Brooklyn Nets",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Toronto Raptors", "home": "Minnesota Timberwolves",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 0.5,
+      "research": [
+        "Covers preview (Oct 25): both teams are 2-0, and this is the Wolves' home opener (helps Minnesota slightly).",
+        "Covers preview (Oct 25): Toronto has the league's top defensive rating (88.6), Minnesota is third (96.1) (neutral; low-total game).",
+        "Covers preview (Oct 25): Raptors lead the NBA in opponent turnovers (25 a game) (helps Raptors +1.5).",
+        "Covers preview (Oct 25): Minnesota takes ~44% of its shots from three; Toronto's rate is the league's lowest (32.7%) and both are top-two in opponent 3P% (helps Raptors, whose defense suits the Wolves' volume).",
+        "Covers preview (Oct 25): Donte DiVincenzo is out for Minnesota; Toronto is out Nate Bittle and Malachi Smith (helps Raptors).",
+        "[angle] Covers moneyline picks (Oct 25): LaMelo Ball's arrival in Toronto may be underrated by models; Kawhi Leonard, Scottie Barnes and Immanuel Quickley can hit mid-range jumpers against Gobert's drop coverage (helps Raptors).",
+        "Covers preview (Oct 25): Barnes is averaging 25.5 points, 10 rebounds and 5 assists (helps Raptors).",
+        "Covers ATS picks (Oct 25): the writer took Minnesota -1.5 as the stronger team at home (helps Wolves).",
+        "Covers ATS/preview (Oct 25): Polymarket had the Wolves at 48% on the spread and the moneyline at 51/50, so the market is a coin flip (neutral).",
+        "[angle] Covers moneyline picks (Oct 26): Minnesota plays at Cleveland the next night, so this is the first leg of a back-to-back (slight Raptors help)."
+      ],
+      "reasoning": "A pick'em between two 2-0 elite defenses, with the market dead even. Toronto's turnover pressure, its Kawhi/LaMelo creation against drop coverage, and DiVincenzo's absence give it a slight forced-side lean. Nothing approaches a 2-point edge.",
+      "forcedSide": "Toronto Raptors",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Orlando Magic", "home": "New York Knicks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 6.5,
+      "research": [
+        "Covers preview (Oct 25): Paolo Banchero has a high ankle sprain expected to keep him out for several weeks (helps Knicks -7.5; likely priced).",
+        "Covers moneyline picks (Oct 25): Anthony Black is questionable and hasn't played this season (helps Knicks).",
+        "Covers preview (Oct 25): Orlando scored 107.2 points a game without Banchero vs 111.5 with him (helps Knicks).",
+        "Covers preview (Oct 25): both teams are 0-2; the defending champion Knicks are winless (neutral).",
+        "Covers preview (Oct 25): Knicks score just 101.5 a game on 40.8% shooting, second-lowest in the league (helps Magic +7.5: a slow offense makes a 8+ margin harder).",
+        "Covers preview (Oct 25): Knicks allow 106.5 a game, sixth-fewest (helps Knicks).",
+        "Covers preview (Oct 25): Brunson is shooting 36.1% through two games (helps Magic short-term, Knicks if he regresses up).",
+        "Covers preview (Oct 25): Wendell Carter Jr. is averaging 21 and 8 (helps Magic).",
+        "[angle] Covers moneyline picks (Oct 25): without Banchero, Orlando runs through Franz Wagner, and New York can throw switchable Bridges, Anunoby and Hart at him (helps Knicks).",
+        "Covers ATS picks (Oct 25): Knicks 51% on Polymarket at -7.5, a split market (neutral).",
+        "Covers preview (Oct 25): the Knicks' last four games went Under; the total is 224.5 (low-scoring game, slight Magic help)."
+      ],
+      "reasoning": "Banchero's absence is the story, and a -7.5 line has priced it. New York's offense, at 101.5 points a game on 40.8% shooting, makes an 8-point margin no lock. My projection sits about a point inside the number: not enough to pick, but Orlando is the forced side.",
+      "forcedSide": "Orlando Magic",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "LA Clippers", "home": "Oklahoma City Thunder",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 14.5,
+      "research": [
+        "Covers preview (Oct 25): the preview listed Thunder -14.5; the slate has -15.5, so the market moved about a point toward OKC (helps Thunder per market; slate number is the worse one for OKC).",
+        "Covers preview (Oct 25): Thunder were 29-2 SU but just 17-14 ATS as 14+ point favorites in 2025-26 incl. playoffs (helps Clippers +15.5).",
+        "Covers ATS picks (Oct 25): the Clippers are 1-1 and covered both games this season (helps Clippers; tiebreaker only).",
+        "[angle] Covers preview (Oct 25): Kawhi Leonard and Ivica Zubac are gone from the Clippers; Brook Lopez, 38, comes off the bench and has scored 17+ in both games (mixed).",
+        "Covers preview (Oct 25): OKC held Denver and San Antonio to 95.9 points per 100 possessions in its first two games (helps Thunder).",
+        "Covers preview (Oct 25): Clippers are 1-15 SU in OKC since Dec 2016, losing by 21.6 a game as 9+ point dogs (helps Thunder; venue history).",
+        "Covers ATS picks (Oct 25): the writer said OKC outclasses the Clippers across the board but expected LA inside the number; Clippers 49% on Polymarket (neutral).",
+        "Covers moneyline picks (Oct 25): Thunder at 89%, the analyst projected ~93% (helps Thunder slightly).",
+        "[angle] Covers (Oct 26): OKC hosts Phoenix the next night, so this is the first leg of a back-to-back; a big lead could mean early rest for starters (helps Clippers backdoor).",
+        "Covers preview (Oct 25): the Clippers allow 39.5 rebounds a game, tied for fourth-fewest (helps Clippers)."
+      ],
+      "reasoning": "OKC's dominance and the Clippers' talent drain are priced in a 15.5-point spread. The Thunder's middling ATS record as huge favorites and a back-to-back the next night (garbage-time rest) point slightly to the Clippers. That's within a point, so pass.",
+      "forcedSide": "LA Clippers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Detroit Pistons", "home": "Philadelphia 76ers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 4.0,
+      "research": [
+        "Covers preview (Oct 25): Jalen Duren is out for Detroit after leaving his last game early (helps 76ers -3.5).",
+        "Covers preview (Oct 25): Ausar Thompson was questionable after missing shootaround, and Detroit's two leading rebounders are out (helps 76ers).",
+        "Covers preview (Oct 25): Joel Embiid sits the second game of Philadelphia's back-to-back (helps Pistons +3.5).",
+        "[angle] Covers preview (Oct 25): LeBron James, now a 76er, returns after sitting Saturday; he has 19 rebounds in two games (helps 76ers).",
+        "Covers preview (Oct 25): Philadelphia ranks 4th in defensive rating (100), Detroit 14th; the Sixers have the league's lowest turnover rate (12.4%) (helps 76ers).",
+        "Covers preview (Oct 25): Maxey averages a career-best 28.7 points on ~20 shots (helps 76ers).",
+        "[angle] Covers preview (Oct 25): Paul Reed starts for Detroit after scoring 19 in 26 minutes in relief of Duren (mitigates for Pistons).",
+        "Line move: Covers listed Pistons -1.5 (Philadelphia a 'surprising home underdog'); the slate has 76ers -3.5, a ~5-point move toward Philadelphia, consistent with Thompson/Duren news (per LESSONS, treat the new number as fair).",
+        "Covers preview (Oct 25): both teams undefeated; Polymarket had the 76ers 52% at +1.5 and the analyst took Philadelphia's moneyline up to 55% (helps 76ers at the old number).",
+        "Covers preview (Oct 25): the 76ers hit their team-total Under in 30 of their last 45 home games (low scoring, slight Pistons help)."
+      ],
+      "reasoning": "A 5-point move toward Philadelphia on Detroit's frontcourt injuries means the number already reflects the news. I treat -3.5 as fair, so pass. The forced side follows the move (the moved side was 9-1-1 in Week 6). A confirmed Cade Cunningham absence or Thompson playing would have changed the read.",
+      "forcedSide": "Philadelphia 76ers",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

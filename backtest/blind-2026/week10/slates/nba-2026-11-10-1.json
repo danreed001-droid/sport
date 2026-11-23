@@ -1,0 +1,93 @@
+{
+ "sport": "nba",
+ "date": "2026-11-10",
+ "chunk": "nba-2026-11-10-1",
+ "games": [
+  {
+   "away": "Milwaukee Bucks",
+   "home": "New York Knicks",
+   "time": "7:30 PM ET",
+   "awaySpread": 15.5,
+   "homeSpread": -15.5,
+   "awaySpreadOdds": -109,
+   "homeSpreadOdds": -111,
+   "awayMoneyline": 700,
+   "homeMoneyline": -1100,
+   "homeSpreadOpen": -15.5,
+   "homeSpreadClose": -14.5,
+   "totalOpen": 219.5,
+   "totalClose": 221.5
+  },
+  {
+   "away": "Boston Celtics",
+   "home": "Philadelphia 76ers",
+   "time": "8:00 PM ET",
+   "awaySpread": -1.5,
+   "homeSpread": 1.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -121,
+   "homeMoneyline": 102,
+   "homeSpreadOpen": 1.5,
+   "homeSpreadClose": 1.5,
+   "totalOpen": 214.5,
+   "totalClose": 216.5
+  },
+  {
+   "away": "LA Clippers",
+   "home": "Phoenix Suns",
+   "time": "9:00 PM ET",
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -116,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": 140,
+   "homeMoneyline": -168,
+   "homeSpreadOpen": -4.5,
+   "homeSpreadClose": -3.5,
+   "totalOpen": 225.5,
+   "totalClose": 224.5
+  },
+  {
+   "away": "Miami Heat",
+   "home": "Utah Jazz",
+   "time": "9:00 PM ET",
+   "awaySpread": -9.5,
+   "homeSpread": 9.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -375,
+   "homeMoneyline": 300,
+   "homeSpreadOpen": 10.5,
+   "homeSpreadClose": 8.5,
+   "totalOpen": 227.5,
+   "totalClose": 227.5
+  },
+  {
+   "away": "Orlando Magic",
+   "home": "Sacramento Kings",
+   "time": "10:00 PM ET",
+   "awaySpread": -6.5,
+   "homeSpread": 6.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -112,
+   "awayMoneyline": -235,
+   "homeMoneyline": 196,
+   "homeSpreadOpen": 5.5,
+   "homeSpreadClose": 5.5,
+   "totalOpen": 221.5,
+   "totalClose": 222.5
+  },
+  {
+   "away": "Oklahoma City Thunder",
+   "home": "Portland Trail Blazers",
+   "time": "11:00 PM ET",
+   "awaySpread": -1.5,
+   "homeSpread": 1.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "awayMoneyline": -135,
+   "homeMoneyline": 110
+  }
+ ]
+}

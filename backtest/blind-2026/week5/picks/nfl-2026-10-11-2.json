@@ -1,0 +1,138 @@
+{
+  "sport": "nfl", "date": "2026-10-11", "chunk": "nfl-2026-10-11-2",
+  "games": [
+    {
+      "away": "Las Vegas Raiders", "home": "New England Patriots",
+      "pick": "Las Vegas Raiders",
+      "confidence": "lean",
+      "projectedMargin": 1.0,
+      "research": [
+        "Raiders are 4-0 ATS this season; Patriots 2-1-1 ATS (NBC Sports preview, Oct 5). Helps LV.",
+        "Line opened Patriots -8 and was down to -3.5 by Monday; total 44.5 -> 45.5 (NBC Sports, Oct 5). The market has moved hard toward LV. Helps LV.",
+        "Raiders have scored 26+ points in each of their first four games (28.8 ppg, 8th), a start matched only by Detroit (Raiders.com preview, Oct 7). Shows the underdog can score. Helps LV.",
+        "Patriots average 16.3 ppg (30th) and 331.5 ypg (16th), though their defense allows 19.3 ppg (t-6th) and 293.8 ypg (6th) (Raiders.com, Oct 7). Mixed; the weak offense limits NE's margin. Leans LV.",
+        "QB split through 4 games: Kirk Cousins 1,026 yds, 11 TD, 4 INT, 99.5 rating; Drake Maye 854 yds, 4 TD, 7 INT, 71.0 rating, 10 sacks (NBC Sports, Oct 5). Helps LV.",
+        "[angle] Patriots ruled out both starting CBs, Christian Gonzalez (shoulder) and Carlton Davis III (neck), among six players out, against an 11-TD Cousins passing game (Heavy / Patriots.com Friday report, Oct 9). Helps LV.",
+        "[angle] Raiders RB Ashton Jeanty (ankle/foot) didn't practice Friday and was questionable; Kubiak: 'He's going to do his best to go'; rookie Mike Washington Jr. would lead the backfield if not (ABC7/AP, Oct 9). LV's run game (93 ypg, 24th) is already weak. Helps NE.",
+        "Patriots come off a road win at Buffalo, with Maye throwing for 269 yards and 3 TD plus 54 rushing yards (Raiders.com, Oct 7). Form is improving. Helps NE.",
+        "Raiders' run defense allows 134.5 ypg (27th), while the Patriots run for 117.8 ypg (10th) (Raiders.com, Oct 7). A matchup edge for NE. Helps NE.",
+        "Raiders come off their first loss, Week 4 vs Kansas City (Raiders.com, Oct 7). Neutral to slight bounce-back for LV.",
+        "[angle] Patriots OC Josh McDaniels coached the Raiders in 2023-24, and LB Robert Spillane is ex-Raiders. The Raiders have won the last three meetings, including 20-13 at New England on Sept 7, 2025 (Raiders.com, Oct 7). Old history, low weight.",
+        "NBC Sports/Rotoworld model: lean Raiders +3.5, lean Under 45.5 (NBC Sports, Oct 5). Helps LV."
+      ],
+      "reasoning": "The Raiders' 4-0 ATS start and 26+ points every week, against a Patriots offense at 16.3 ppg, make +3.5 a live number, especially with New England's top two corners ruled out. The best angle is that both NE starting CBs are out against an 11-TD Cousins. Jeanty's questionable status and the strong move from -8 down to -3.5, which takes some value off LV, keep this a lean. Projection: NE by 1.",
+      "contaminated": true,
+      "contaminationNote": "Before deciding, two search-result summaries leaked in-game and final information. The first search's summary mentioned an NBC Sports Boston live blog with a 14-7 Patriots lead in the 2nd quarter and Will Campbell and TreVeyon Henderson leaving with injuries. A later search about Jeanty's injury status said his production was limited 'in the Raiders' 45-17 loss' (apparently this game's final score). I had already formed the Raiders +3.5 lean from the pre-game evidence (4-0 ATS, both NE CBs out, NBC lean) before the second leak, and I kept the pre-game call unchanged."
+    },
+    {
+      "away": "Minnesota Vikings", "home": "New Orleans Saints",
+      "pick": "New Orleans Saints",
+      "confidence": "lean",
+      "projectedMargin": 1.0,
+      "research": [
+        "Vikings 4-0, Saints 1-3; DraftKings Vikings -1.5 (-115), moneyline -130, total 42.5 (SI Betting, Oct 6).",
+        "Vikings offense ranks 28th in EPA/play and last in success rate, and failed to score a TD in two of their four wins (SI Betting, Oct 6). Helps NO.",
+        "Vikings score 21.5 ppg (18th) with 262.8 total yards (31st), but allow a league-best 12.8 ppg and are +5 in turnover margin (TheSpread, Oct 11 preview). A 4-0 record built on defense and turnovers suggests regression. Helps NO.",
+        "Saints score 26.3 ppg (10th, offense 9th in yards) but allow 32.0 ppg (last); turnover margin -5 (TheSpread). NO's defense is a liability. Helps MIN.",
+        "Saints QB Tyler Shough: 67.2%, 1,203 yds, 9 TD, 3 INT in his second season; he practiced fully despite a left hand injury (SI Betting, Oct 6; TheSpread). Helps NO.",
+        "[angle] Vikings LT Christian Darrisaw is out (concussion) and RT Brian O'Neill is questionable, so Kyler Murray's protection is thin (TheSpread). Helps NO.",
+        "[angle] Justin Jefferson (ankle, missed the Week 4 win over Miami and didn't practice) and Jordan Addison (hamstring) were both questionable (SI / TSN, Oct 9). Minnesota's already-poor offense could be without its top two WRs. Helps NO.",
+        "Saints injuries: LB Kaden Elliss out and RB Alvin Kamara questionable (back) (TheSpread). Helps MIN.",
+        "ATS: Saints 8-2 in their last 10, Vikings 7-3 in their last 10; Saints 6-4 ATS in the last 10 meetings (SI Betting, Oct 6). Slight NO.",
+        "Line opened Minnesota -1.5 and touched -2; total fell from 44.5 to 41.5; spread tickets 54% Minnesota (TheSpread). Public money is mildly on MIN with no sharp signal. Neutral.",
+        "[angle] The Saints come off a loss to Atlanta in which they fell behind 21-0, called a home bounce-back spot (preview snippets via search, Oct 2026). Slight NO.",
+        "Picks: SI's MacMillan took Saints ML +110, TheSpread took Saints +2, Action Network backed Saints +1.5; Squawka projected MIN 26-17 (previews, Oct 6-11). Mostly NO."
+      ],
+      "reasoning": "Minnesota is 4-0 on an elite defense and +5 turnovers while its offense ranks near the bottom in EPA and success rate. Without Darrisaw, and possibly Jefferson and Addison, it shouldn't be laying points on the road against a Saints offense that scores. The best angle is that Minnesota's top two WRs and LT were all in doubt at once. The Saints' last-ranked defense is the risk; if Jefferson plays fully this is a pass. Projection: NO by 1.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "New York Giants", "home": "Washington Commanders",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "Giants 3-1 (3-1 ATS, 3-1 to the over); Commanders 1-3 (2-2 ATS) (NBC Sports, Oct 6). Helps NYG.",
+        "Giants QB is Jameis Winston (3 GP, 479 yds, 3 TD, 3 INT) after Jaxson Dart was lost in Week 1 in a 28-6 loss at the Rams; NY has won both games since (NBC Sports, Oct 6; SI Betting, Oct 9). Mixed.",
+        "[angle] Jayden Daniels (elbow) was questionable but 'trending toward a return'; Mariota is out/doubtful, so the fallback was rookie Athan Kaliakmanis's first start (NBC Sports, Oct 6; SI Betting, Oct 9). A Yardbarker headline said Daniels would start. Helps WAS.",
+        "The line moved from WAS -2.5/-3 to -3.5 on Daniels' expected return; the total fell from 48.5 to 43.5 (NBC Sports, Oct 6; SI Betting, Oct 9). Injury-news move toward WAS. Helps WAS.",
+        "Commanders' only win is an upset of Seattle; both defenses rank 22nd and 26th in opponent success rate (SI Betting, Oct 9). Neutral.",
+        "[angle] Washington has won the last four meetings, including 21-6 and 29-21 last season (search previews, Oct 2026). Old history, low weight. Helps WAS.",
+        "Commanders' questionables include WR Terry McLaurin (hamstring), RB Rachaad White, and defenders Omenihu, Reaves, Owens and Cross; WR Jaylin Lane out (NBC Sports, Oct 6). Helps NYG.",
+        "[angle] Giants WR Braxton Berrios doubtful; S Jason Pinnock (concussion) and Chauncey Golston questionable (NBC Sports, Oct 6). Helps WAS.",
+        "Stats Insider model: WAS 62% to win, projected 21-17, 50/50 to cover -3.5 (no edge), though its best bets listed Giants +3.5 (Stats Insider, Oct 2026). Neutral.",
+        "NBC/Rotoworld model: Giants +3.5 and lean Giants ML; SI's MacMillan projected WAS 27-24 and bet the over (NBC Sports, Oct 6; SI Betting, Oct 9). Slight NYG.",
+        "Slate price: Commanders -3.5 at +108 and Giants +3.5 at -111, so the half point above 3 is priced in. Neutral."
+      ],
+      "reasoning": "This sits right on the number. Daniels' return justifies Washington -3.5, and the models put it at a coin flip (Stats Insider 50/50; my projection WAS by about 3). The angle is a Giants team at 3-1 on a backup QB against a Washington team getting its franchise QB back from an elbow injury. A healthy McLaurin or a confirmed full-go Daniels would have pushed me to Washington.",
+      "contaminated": true,
+      "contaminationNote": "Before I locked a call, a search-result summary (query about Commanders/Giants defense and point differential) stated that the Week 5 Giants-Commanders game ended in a tie (Giants 3-1-1, Commanders 1-3-1 after Week 5). My pre-leak read was a near coin flip (Stats Insider 50/50 to cover), and I locked the pass that read supports rather than taking the Giants +3.5 the leak would favor."
+    },
+    {
+      "away": "Denver Broncos", "home": "Los Angeles Chargers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -3.0,
+      "research": [
+        "Broncos 2-2 (2-2 ATS, 1-3 to the over); Chargers 0-4 (0-3-1 ATS, 1-3 to the over) (NBC Sports, Oct 6). Chargers' repeated ATS failures help DEN.",
+        "The Chargers opened as 2.5-point favorites and the line flipped to Denver -3.5, a 6-point move on injury news; the total dropped (NBC Sports, Oct 6). Information on LAC injuries. Helps DEN.",
+        "[angle] LAC's OL is gutted: LT Rashawn Slater out after tightrope surgery, RT Joe Alt out, LG Trevor Penning on IR; Branson Taylor returns to start at LT (Chargers On SI, Oct 11). Helps DEN.",
+        "[angle] LAC WR Quentin Johnston out (chest) and Ladd McConkey a likely game-time decision who'd be limited; CB Donte Jackson out (Chargers On SI, Oct 11). Helps DEN.",
+        "Herbert: 59.7%, 816 yds, 4 TD, 6 INT, 70.6 rating, already sacked 12 times (NBC Sports, Oct 6). Helps DEN.",
+        "Denver's offense has scored 13 first-half points in four games and ranks 20th in EPA/play and 27th in success rate; Bo Nix is 23rd in adjusted EPA/play and 27th in CPOE (SI Betting, Oct 10). A road favorite that struggles to score. Helps LAC.",
+        "[angle] Denver's secondary is banged up: Pat Surtain II (ankle) and Pat Bryant doubtful, Riley Moss (ribs) questionable (SI Betting, Oct 10; NBC Sports, Oct 6). Helps LAC.",
+        "Net yards per play: Denver 26th (-0.7), LA 17th (-0.3) (SI Betting, Oct 10). Helps LAC.",
+        "The Chargers showed some second-half offensive life in their Week 4 loss at Seattle (Chargers On SI, Oct 11; SI Betting, Oct 10). Slight LAC.",
+        "NBC/Rotoworld model: Chargers +3.5 and Under 42.5; SI Betting: Chargers to cover, predicted 20-17 Denver (NBC Sports, Oct 6; SI Betting, Oct 10). Helps LAC.",
+        "Under 6-4 in the last 10 meetings (search previews). A low total makes 3.5 a big share of the margin. Neutral."
+      ],
+      "reasoning": "Two flawed teams meet. LA's makeshift line and missing receivers justify the 6-point flip, but Denver's offense hasn't shown it can win by margin and its top corner is likely out. My projection of DEN by 3 sits within half a point of the spread, so I pass. The most surprising angle is that the Chargers' starting LT, RT and LG are all out at once. A healthy Surtain would have made it a Denver lean.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Detroit Lions", "home": "Arizona Cardinals",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -6.0,
+      "research": [
+        "Lions 2-2 (0-3-1 ATS, 4-0 to the over); Cardinals 1-3 (2-2 ATS) (NBC Sports, Oct 7). Detroit's repeated non-covers help ARI.",
+        "Spread opened Lions -8.5 and moved to -5.5; total opened 49.5 and was bet up to 54.5 (NBC Sports, Oct 7). The market faded Detroit. Helps ARI.",
+        "Detroit's offense is 6th in EPA/play and 3rd in success rate; Goff has 1,214 yds, 9 TD, 0 INT, 108.6 rating (SI Betting, Oct 10; NBC Sports, Oct 7). Helps DET.",
+        "Detroit's defense is last in opponent EPA/play and 29th in opponent success rate, allowing 31.8 ppg (SI Betting, Oct 10; previews). Helps ARI's backdoor chances.",
+        "[angle] Detroit's secondary is depleted (previews cite Brian Branch and Kerby Joseph absent; CB Rock Ya-Sin doubtful) (NBC Sports, Oct 7; previews via search). Helps ARI.",
+        "[angle] Detroit is still looking for its first road win and lost 32-26 at Carolina as a 4.5-point favorite last week (SI Betting, Oct 10). Helps ARI.",
+        "Arizona has allowed 30+ points in each of its last three games and lost its only home game 31-7 to Seattle (SI Cardinals roundup, Oct 9; SI Betting, Oct 10). Helps DET.",
+        "[angle] Arizona's LT Paris Johnson Jr. is on IR (biceps); RG Isaiah Adams, RB Jeremiyah Love, FS Andrew Wingard and S Dadrion Taylor-Demerson questionable (NBC Sports, Oct 7). Helps DET.",
+        "Arizona QB Jacoby Brissett: 818 yds, 6 TD, 4 INT, 83.2 rating; ARI offense top half of the league in most metrics (NBC Sports, Oct 7; SI Betting, Oct 10). Helps ARI's ability to score as an underdog.",
+        "Expert scores: Prisco DET 40-31, SI DET 30-24 and 34-28, Gilbert DET 38-24; SI panel 7-3 DET, ESPN panel 11-0 DET; NBC model lean Lions -5.5 (SI roundup, Oct 9; NBC Sports, Oct 7). Public consensus on DET. Mixed."
+      ],
+      "reasoning": "Detroit's elite offense against an Arizona defense that has allowed 30+ three straight weeks points to Detroit. Detroit's last-ranked defense, 0-3-1 ATS record and road struggles point back toward Arizona in a projected shootout. My projection of DET by 6 sits right on the 5.5 line, so I pass. The angle is a 3-point market fade of Detroit from the opener despite near-unanimous expert picks on the Lions.",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "San Francisco 49ers", "home": "Seattle Seahawks",
+      "pick": "San Francisco 49ers",
+      "confidence": "lean",
+      "projectedMargin": 0.5,
+      "research": [
+        "49ers 4-0 (3-0 in NFC West), Seahawks 3-1 (SI Betting, Oct 10). Helps SF.",
+        "The 49ers lead the NFL in DVOA, net yards per play, EPA/play and success rate; Purdy leads in adjusted EPA/play and success rate and is 2nd in MVP odds (+400) (SI Betting, Oct 2026). Helps SF.",
+        "[angle] Nick Bosa (DE), DT James Thompson Jr., S Marques Sigle and FB Kyle Juszczyk ruled out Friday; Mykel Williams and Upton Stout cleared; Mike Evans off the report (49ers.com / ClutchPoints, Oct 9). SF's pass rush is weakened. Helps SEA.",
+        "[angle] Since Sam Darnold returned from a glute injury, Seattle is 1-1 (road loss at Washington, home win over the Chargers), and the offense hasn't looked much better with him than with Drew Lock (SI Betting, Oct 10). The home favorite's offense is a question mark. Helps SF.",
+        "Seattle's defense is described as elite; it beat Arizona 31-7 on the road (SI Betting, Oct 10). Helps SEA.",
+        "Spread bounced between 2.5 and 3 during the week; DraftKings SEA -2.5 (-122) late in the week; slate SEA -3 at +100 / SF +3 at -120; total 46.5-47.5 (SI Betting, Oct 10). The pricing leans SEA at 3. Slight SEA.",
+        "ATS: 49ers 6-4 in the last 10, Seahawks 7-3 in the last 10; 49ers 6-4 ATS in the last 10 meetings (SI Betting, Oct 2026). Neutral.",
+        "Seahawks injuries: DT Leonard Williams, S Ty Okada (full practice Wednesday) and LB Chazz Surratt questionable; RB Jadarian Price on IR; RB George Holani questionable (Seahawks.com / SI, Oct 2026). Slight SF.",
+        "SI's MacMillan took 49ers +2.5 and projected 49ers 26-23; Dewey liked 49ers ML; NBC 'market may be giving Niners too much respect' segment argued the other way (SI Betting, Oct 10; NBC Sports video title). Mixed, slight SF.",
+        "Expert roundup counted 14 picks Seahawks and 8 picks 49ers; Prisco SEA 28-21 (SI Seahawks roundup, Oct 2026). Public experts on SEA. Slight SEA.",
+        "[angle] Divisional game: SF already 3-0 in the NFC West, beat Denver in Week 4 (SI Betting, Oct 10). Helps SF."
+      ],
+      "reasoning": "The league's most efficient offense, an unbeaten 49ers team, is getting a full 3 points against a Seattle offense that hasn't improved with Darnold back. That's enough for a lean even without Bosa. The most surprising angle is that the experts and NBC lean Seattle while every efficiency metric favors SF. If the line had dropped to 2.5 I'd pass. Projection: SEA by 0.5.",
+      "contaminated": false,
+      "contaminationNote": "No result seen. One search summary mentioned a Seahawks.com in-game injury update page (Drake Thomas questionable, ankle) and that RB George Holani was active; neither says anything about the score or outcome, and neither affected the pick."
+    }
+  ]
+}

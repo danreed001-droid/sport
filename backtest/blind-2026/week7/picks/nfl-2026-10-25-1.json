@@ -1,0 +1,151 @@
+{
+  "sport": "nfl",
+  "date": "2026-10-25",
+  "chunk": "nfl-2026-10-25-1",
+  "games": [
+    {
+      "away": "Pittsburgh Steelers",
+      "home": "New Orleans Saints",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -3.0,
+      "research": [
+        "[angle] Neutral-site 'home' game for New Orleans at Stade de France, Saint-Denis (Paris), 9:30 AM ET kickoff; Covers ATS column (Oct 25) calls it an unusual home date for the Saints, which takes away home field (helps Steelers slightly vs a +3 home number).",
+        "[spread] Line movement: SBR (Oct 25) lists the open at Steelers -1.5 / total 41.5, later -3.5 / 44.5; Covers Kalshi table 'as of Oct 25' shows Steelers -2.5 at 55%, i.e. fair is about -3. The slate's -3 is about the market price (neutral).",
+        "[spread] Pundit split: Covers' Neil Parker (Oct 21) Steelers -2.5 (would play below 4); Covers ATS column (Oct 25) and SBR's Gary Pearson (Oct 25, 4 stars) take Saints +3.5; SBR preview projects Steelers 23-20 (Saints +3.5 best bet). No consensus edge.",
+        "Covers (Oct 21): Saints rank 32nd in run-defense DVOA and allow the highest rushing success rate; Steelers rank 2nd in rushing DVOA and 5th in EPA/rush (helps Steelers; but a one-unit preview label, likely priced).",
+        "Covers (Oct 21): Steelers defense 8th in DVOA, 6th-lowest EPA/play allowed, 6th-lowest 3rd-down conversion rate allowed; Saints tied for 2nd-most points allowed (29.7/g) (helps Steelers).",
+        "SBR (Oct 25): Aaron Rodgers' passing is concentrated on DK Metcalf and Germie Bernard (95 QBR on those targets vs 8 QBR on others) and he averaged only 3.7-3.8 air yards/attempt the last two weeks; Pittsburgh WRs Michael Pittman Jr. and Roman Wilson on IR (helps Saints keep it close).",
+        "[angle] SBR (Oct 25): Rodgers' teams scored 7 or fewer first-half points in 8 of 16 starts after a win; Pittsburgh is off an OT win over Tampa Bay (26-19) that included its largest 4th-quarter comeback since 2002 (Covers/SBR) - possible flat start (helps Saints).",
+        "SBR (Oct 25): Saints snapped a three-game losing streak with a 34-27 road win over the Giants, but they haven't scored first all season and average 0.40 points per first-quarter drive (3rd-fewest) (mixed).",
+        "SBR (Oct 25): Saints have allowed the most points off turnovers (49) and their secondary allows the 7th-highest yards per attempt (helps Steelers).",
+        "[angle] Weather (SBR, Oct 25): light morning showers, 62% chance of rain, west wind ~16 mph in Saint-Denis; total moved up 41.5 -> 44.5 anyway. Low-scoring conditions keep the 3 more valuable (slight Saints tiebreaker only; lessons say weather is priced).",
+        "Lesson check: no 3+ point move, slate line equals the market (-3 vs -2.5/-3.5 quotes), no reverse line movement toward the dog found; projection Steelers by ~3 = no edge."
+      ],
+      "reasoning": "Market fair price is about Steelers -3 (Kalshi -2.5 at 55%), the same as the slate, and the matchup edges for Pittsburgh's run game were already priced by the move from -1.5. Pre-leak I had this as a pass with a forced lean to the Saints at +3 (key number, Rodgers' slow starts, underdog base rate). After that, a search summary showed the final, so this is locked as a pass per the lessons.",
+      "forcedSide": "New Orleans Saints",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch (allowed_domains wagertalk/predictem/sportsgambler/oddstrader/oddsshark, query for a Saints QB/ATS preview) returned a summary stating New Orleans fell to 2-5 after a 16-10 loss to Pittsburgh in Paris. I had already settled on a pass with a forced lean to the Saints in my notes before seeing it, but had not written the file; locked as a pass and the forced side is the pre-leak lean."
+    },
+    {
+      "away": "Cleveland Browns",
+      "home": "Tennessee Titans",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.0,
+      "research": [
+        "[spread] Line: Covers/SBR/Predictem (Oct 21-25) list Browns -1.5; Covers Kalshi table 'as of Oct 25' shows Browns -2.5 with the Titans at 52% - so the market drifted to about -2 to -2.5 and the slate's -2 is roughly the close (no edge either way).",
+        "[spread] Total fell sharply: Predictem (Oct 22) says 40.5 open to 37.5; Covers Kalshi table 36.5 by Oct 25. Two weak offenses expected (lessons: low total making points worth more is priced).",
+        "[spread] SBR ATS column (Oct 25): Browns are 4-2 ATS, 4-1 since a Week 1 loss, 2-0 on the road; Titans 1-5, bottom five in both offensive and defensive DVOA (helps Browns, but ATS records are priced).",
+        "Covers (Oct 21): Titans offense last in total offense (236 yds/g) and scoring (14 ppg); Predictem: 5.6 yards per pass attempt, second-worst (helps Browns).",
+        "Covers/Predictem (Oct 21-22): Browns defense allows 20 ppg, 5th-best red-zone TD rate (43%), 5th in pass success rate allowed, one rushing TD allowed in six games (Covers Oct 25) (helps Browns).",
+        "Predictem (Oct 22): Browns offense has topped 300 yards once, a league-worst 12.1% sack rate, run game 31st by EPA, 17 punts and 2 TDs over a 31-possession stretch; SBR: 4th-worst offensive DVOA (helps Titans keep it close).",
+        "[angle] Predictem (Oct 22): Titans have a top-10 pass rush by sack rate, facing the league's most-sacked offense (Deshaun Watson) - the matchup where Tennessee's defense can hide its offense (helps Titans).",
+        "[angle] Emotional spots: Cleveland won 13-10 on a walk-off FG vs Baltimore (Covers ATS column calls it emotional); Tennessee got Robert Saleh's first win as head coach, 26-20 at Indianapolis after trailing 13-0 (Predictem) - possible letdown for Cleveland vs. momentum for Tennessee (helps Titans, story only).",
+        "Injuries (Predictem, Oct 22): Browns RB Quinshon Judkins (ankle), DT Mason Graham (knee), Mike Hall Jr. (ankle) questionable, S Grant Delpit in concussion protocol; Titans S Kevin Winston Jr. and S Tony Adams questionable (mixed; Browns' list is longer).",
+        "[angle] Last season's meeting: Titans won 31-29 in Cleveland (Predictem) - head-to-head, tiebreaker only.",
+        "Pundits mostly Browns (Covers' Krest -1.5, SBR 4 stars, Predictem Browns 19-13); Covers ATS column Titans +1.5. Kalshi Titans 52% at +2.5."
+      ],
+      "reasoning": "Two bottom-tier offenses and a line that settled around Browns -2 to -2.5; the slate's -2 is the market number, so there is no edge. Cleveland's defense is the better unit and NFL road teams have covered well, which is why the forced side is the Browns, but the Titans' pass rush vs Cleveland's league-worst sack rate is the [angle] that keeps it close. A move to -3 or a Watson/Judkins absence would have changed the lean.",
+      "forcedSide": "Cleveland Browns",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Cincinnati Bengals",
+      "home": "Baltimore Ravens",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.5,
+      "research": [
+        "Covers (Geoff Clark, updated Oct 25, 11:53 AM ET): Lamar Jackson officially ruled out (ankle), his third straight missed game (helps Bengals).",
+        "WagerTalk (Oct 21): Tyler Huntley likely makes a third straight start; Huntley's Ravens scored 10 in the 13-10 loss at Cleveland (helps Bengals).",
+        "[spread] Line movement: WagerTalk says Ravens opened -3 and moved to -1.5 by Oct 21 while Jackson was iffy; with Jackson out it flipped to Bengals -2.5 (Covers Kalshi table as of Oct 25, Bengals 54%) - roughly a 5.5-point move. The slate's Bengals -2.5 (-118) is the close; per lessons, treat it as fair.",
+        "[spread] Betting splits (WagerTalk, Oct 21): Cincinnati had 96% of spread money and 75-76% of tickets; the total dropped 51.5 -> 48.5 (-> 47.5 by Oct 25).",
+        "[spread] Covers (Oct 25): Baltimore is 1-5 ATS with a rest disadvantage since 2024 (-4.8 spread differential); Cincinnati 4-1-1 ATS in its last six road games (helps Bengals; ATS records priced).",
+        "[angle] Rest: Cincinnati is off its bye with a cleaner injury report (Covers Oct 25); Baltimore is on normal rest after a physical divisional loss (helps Bengals).",
+        "Joe Burrow healthy: league-high 71.4% completion rate (Covers), four TD passes at Miami on Oct 11 (WagerTalk) (helps Bengals).",
+        "Covers (Oct 25): Bengals rank 27th in yards per rush vs a Ravens defense 9th in yards per rush allowed; Cincinnati's defense 7th in run-stop win rate vs Baltimore 19th in run-block win rate (mixed: Bengals' run game stalls, but Baltimore's run game without Jackson is weaker too).",
+        "[angle] WagerTalk (Oct 21): road team has covered 9 of the last 11 meetings, and four of six meetings 2022-24 were decided by 3 or fewer points (head-to-head, tiebreaker only; close-game history supports the dog getting 2.5).",
+        "Pundits: Covers top pick Bengals ML; WagerTalk Bengals 24-20; SBR's Gary Pearson Bengals +2.5 (written at the earlier number); SBR preview Ravens 24-20 (before the Jackson ruling).",
+        "Lesson check: the move came from Jackson's status, so Baltimore's season numbers (built partly with him) can't be used to call it an overreaction; no reverse movement toward the dog."
+      ],
+      "reasoning": "Jackson's ruling-out moved this about 5.5 points to Bengals -2.5, which the lessons say to treat as fair; the slate number equals that close. The forced side goes with the move and the sharp-and-public money (Bengals), helped by the bye-week rest [angle]. A Jackson return or a number at -3.5 would have changed it.",
+      "forcedSide": "Cincinnati Bengals",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Indianapolis Colts",
+      "home": "Minnesota Vikings",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 5.5,
+      "research": [
+        "[spread] Line steady at Vikings -6.5 all week (Covers, Predictem Oct 21; Covers Kalshi table as of Oct 25, Vikings 52% at -6.5); total steamed down 44.5 -> 41.5 (Covers). Slate equals the market.",
+        "[spread] Covers (Oct 25, Tom Oldfield): Minnesota has won 10 straight and is 8-2 ATS in that span, allowing 259.8 yds/g; Indianapolis has lost 11 of its past 13 (helps Vikings; ATS records priced).",
+        "Predictem/Covers (Oct 21): Vikings defense allows a league-low 12.8 ppg, leads in EPA/play allowed and sack rate, 22% third-down conversions, red-zone TDs ~25% (helps Vikings).",
+        "[spread] Vikings offense 27th in EPA/play (Predictem); SBR (Oct 25): no more than 23 points since Week 1, 17.5 ppg excluding the opener (4th-lowest); failed to cover as a 10-point favorite vs Miami (Predictem) - a defense-first favorite laying nearly a TD (helps Colts).",
+        "Colts QB Daniel Jones: 9 turnovers (2nd-most), career-low 59.6% completions (Predictem), two INTs vs Tennessee; Colts -8 turnover margin, league-worst (helps Vikings).",
+        "Injuries: Colts WR Alec Pierce on IR, TE Tyler Warren (leading receiver) questionable with a groin injury (Predictem); Sauce Gardner unlikely (Covers Oct 25) (helps Vikings).",
+        "[angle] Vikings are off a bye and get T.J. Hockenson, Jordan Addison and Jordan Mason back (Covers Oct 25; Darrisaw/Hockenson had to clear concussion protocol per Predictem); Justin Jefferson had missed time with an ankle (helps Vikings).",
+        "[angle] SBR (Oct 25): the Colts blew a 4th-quarter lead to the previously winless Titans (26-20), a loss the article says cost GM Chris Ballard his job - front-office upheaval mid-season (mixed: response game or deeper slide).",
+        "Kyler Murray QBs Minnesota (Predictem): missed most of the opener with a concussion, 24-of-30 in New Orleans before the bye.",
+        "Colts offense averages 24 ppg (SBR) and Jonathan Taylor has 7 rushing TDs (Predictem); Colts defense allows 27 ppg, 31st in pressure rate, has allowed seven 40+ yard passes (Predictem) (mixed).",
+        "Pundits split: Covers (Saracini, Oldfield) and Predictem (Vikings 24-13) on Minnesota; Covers ATS column and SBR's Pearson (4 stars) on Colts +6.5."
+      ],
+      "reasoning": "The number never moved and Kalshi had it near 50/50, so there is no market edge. Minnesota's defense, the bye and the returning skill players argue for the Vikings, but they are a favorite whose case rests on defense while the offense averages 17.5 ppg outside Week 1, and the lessons say to be harder on that kind of favorite. Projection Vikings by about 5.5, an edge of 1 for the Colts: a pass with a forced lean to Indianapolis.",
+      "forcedSide": "Indianapolis Colts",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Miami Dolphins",
+      "home": "New York Jets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 4.0,
+      "research": [
+        "[spread] Line: Predictem (Oct 21) says the market moved about two points toward New York to -4.5; SBR (Oct 25) shows open Jets -4.5 and a -4.5 to -5.5 range (bet365 -5.5); Covers Kalshi table as of Oct 25: Jets -4.5 with the Jets at 48% - the market slightly preferred Miami at +4.5. Slate -4.5 equals the close.",
+        "[spread] SBR (Oct 25): Jets and Dolphins games are a combined 7-4 to the Under; total 38.5-39.5. Both offenses rank in the bottom seven in scoring.",
+        "Dolphins winless (0-5) under first-year coach Jeff Hafley, 14.0 ppg (31st), outscored by 62; Malik Willis completes 56% (league-worst) with 4 INT / 2 TD (Predictem; Covers Oct 25) (helps Jets).",
+        "Miami's defense: opponents complete 76.6% of passes (worst); points allowed on half of opposing possessions (highest rate) and four sacks in five games (Covers Oct 25); 26.4 ppg allowed (SBR) (helps Jets).",
+        "Jets: 2-4, defense allows 20.3 ppg (7th), run defense 4th by EPA, 10th in EPA/play, two takeaways in each of the last three games (Predictem/SBR) (helps Jets).",
+        "[spread] Jets red-zone TD rate 37.5%, worst in the league; went 0-for-3 in the red zone in the 26-19 loss at New England (Predictem) - a favorite that settles for field goals struggles to cover 4.5 (helps Dolphins).",
+        "[angle] Miami is off its bye (Covers ATS column / Predictem note Willis missed bye-week practice time with a minor issue but was expected to play) - rest edge for the dog (helps Dolphins).",
+        "[angle] Dolphins swept the Jets last season, including 34-10 at MetLife (Predictem) - head-to-head, tiebreaker only.",
+        "Dolphins run game 4.9 yards per carry (5th) (Predictem) vs a Jets run defense 4th by EPA - Miami's one strength meets New York's strength (helps Jets).",
+        "Injuries: Jets RB Breece Hall questionable (quad); rookie WR Omar Cooper Jr. back with a 48-yard TD last week; Dolphins rookie WR Caleb Douglas returns from an ankle injury (Predictem) (mixed).",
+        "Pundits: Covers (Quinn Allen) Jets -4.5, Predictem Jets 24-16 (would bet to -5.5), SBR preview Jets 22-16 (0.5u Jets -4.5); SBR ATS column Dolphins +5 (4 stars) and SBR ML pick Dolphins +198."
+      ],
+      "reasoning": "The slate equals the market close and Kalshi had the dog slightly preferred at +4.5, so there is no line edge; most of the Jets' case (Miami's 0-5 and Willis) is the kind of 'the dog can't score' argument the lessons say is priced. The Jets' last-in-the-league red-zone TD rate and Miami's bye [angle] make the points worth a forced lean, but the projection (Jets by 4) is within a point of the number.",
+      "forcedSide": "Miami Dolphins",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "New York Giants",
+      "home": "Houston Texans",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 10.5,
+      "research": [
+        "[spread] Line movement: Predictem (Oct 21) says it opened Texans -7 and moved three points to -10; WagerTalk (Oct 22-25) has -9.5 open -> -10.5; Covers Kalshi table as of Oct 25: Texans -10.5 (48%). The slate's -9.5 is a point better than the close on the side the market moved toward.",
+        "[spread] Betting splits (WagerTalk, Oct 25 update): New York had ~95% of spread dollars and 83% of tickets, yet the line moved toward Houston - reverse movement toward the favorite (lessons: that sign has been 1-4, but it marks sharp money on Houston).",
+        "[spread] WagerTalk: favorites of 6+ points are 8-19-3 ATS this season; Predictem: Texans 0-3 at home and haven't covered in any of them; Giants 3-2-1, 4-2 ATS (helps Giants; ATS records priced).",
+        "[angle] Houston is back from London after a 34-31 last-second win over Jacksonville (Covers ATS column, WagerTalk: possible letdown/jet-lag spot) (helps Giants).",
+        "[angle] Giants QB unsettled: Jameis Winston (2-1-1 as starter) was benched mid-game for J.J. McCarthy and coach John Harbaugh hadn't named a starter (Predictem Oct 21, WagerTalk); Covers (Oct 25): McCarthy completed 52.4% with an INT after New York fell behind 34-10 vs the Saints (helps Texans).",
+        "Giants injuries: LT Andrew Thomas left last game for a concussion check, RT Jermaine Eluemunor questionable (calf) (Predictem) - both tackles in doubt vs Houston's pass rush (helps Texans).",
+        "Texans: C.J. Stroud 2nd in passing yards (Predictem), 312 yards in London (Covers); Houston averaged 30.0 ppg over its last three (WagerTalk); Tank Dell expected back for the first time since December 2024 (Predictem) (helps Texans).",
+        "Texans run game 3.6 yards per carry (29th) and RB David Montgomery questionable with a groin injury (Predictem) - an offense that may lean all on Stroud (helps Giants' cover chances).",
+        "Covers (Oct 25): Houston 8th in schedule-adjusted defensive EPA/play and 4th in defensive success rate; Predictem: Texans 14th vs Giants 22nd in net EPA/play; Giants have 11 turnovers (helps Texans).",
+        "Recent form: Texans beat Tennessee 26-3 and Jacksonville 34-31; Giants lost 28-6 to the Rams and 34-27 to the Saints, rallying late (WagerTalk: Giants' last three went over) (mixed: backdoor potential for NY).",
+        "Pundits split: Predictem Giants +10 (Texans 24-17), WagerTalk Giants +10.5 (24-20), SportsGambler Giants; Covers ATS column Texans -9.5, SBR's Pearson Texans -9.5 (3 stars), SBR AI Texans 34-20."
+      ],
+      "reasoning": "The market went from about -7 / -9.5 to -10.5 against heavy public money on the Giants, and the slate's -9.5 sits a point better than the close on that side - the only lesson-backed edge on this slate. But it's a big favorite off a London trip, the Kalshi price at -10.5 was 48% for Houston, and the edge at -9.5 is only about a point, short of the 2-point shaded bar, so it's a pass with a forced lean to Houston. Confirmation of McCarthy starting behind a backup left tackle would have pushed it to a lean.",
+      "forcedSide": "Houston Texans",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

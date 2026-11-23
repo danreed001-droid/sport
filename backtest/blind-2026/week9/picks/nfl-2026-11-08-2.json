@@ -1,0 +1,53 @@
+{
+  "sport": "nfl", "date": "2026-11-08", "chunk": "nfl-2026-11-08-2",
+  "games": [
+    {
+      "away": "Arizona Cardinals", "home": "Seattle Seahawks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 9,
+      "research": [
+        "[angle] Sam Darnold is out with a quad injury. Seattle went from about -12/-12.5 to -8.5 on the news (WagerTalk Nov 5; ActionNetwork/Rotowire summaries). Helps Cardinals, but it's priced.",
+        "[angle] Seattle's backup Drew Lock has been limited by an elbow injury and inactive for two weeks. If he can't go, rookie Jalen Milroe, who has never thrown an NFL pass, starts (WagerTalk Nov 5; Covers Nov 8). The QB status is unresolved in the sources; helps Cardinals if it's Milroe.",
+        "Lock posted a 139.1 rating with 3 TDs when Seattle beat Arizona 31-7 in Week 2 (Covers Nov 8; WagerTalk Nov 5). Helps Seahawks if Lock plays.",
+        "[angle] Gardner Minshew replaced Jacoby Brissett at halftime in Dallas and went 17-of-23 for 188 yards and 3 TDs in a comeback win, after the offense went 44 minutes without scoring. He completed 75% of his 20+ yard throws vs Brissett's 20.7% (WagerTalk Nov 5; Covers Nov 8). Helps Cardinals, but it's one half against a weak Dallas defense.",
+        "Arizona's backfield is thin: Conner and Jeremiyah Love are on IR, Bam Knight is in concussion protocol, and WR Kendrick Bourne (ankle) may be done (WagerTalk Nov 5; Predictem). Helps Seahawks.",
+        "Seattle is 1-3 SU and ATS over its last four, including allowing 34 in a Monday home loss to Chicago (WagerTalk Nov 5). Spread-specific; helps Cardinals.",
+        "Seattle has won 10 straight in the series (9-1 ATS), with four straight double-digit home wins over Arizona (WagerTalk Nov 5). Head-to-head is priced; slight lean to Seahawks.",
+        "Arizona's defense has allowed 5.02 yards per play over the last two games, down from 6.18 in Weeks 1-5. Seattle ranks 29th in EPA per rush (Covers Nov 8). Helps Cardinals.",
+        "Line: WagerTalk has it opening Seattle -11.5 and peaking at -12.5 before the Darnold news, then -8.5. The archive open of -13.5 doesn't match. The close is -9.5, a point back toward Seattle on game day. The total went from 44.5 to 39.5 and closed 40.5. Spread-specific; neutral, and the close is treated as fair.",
+        "Splits: Arizona drew about 55-68% of spread money for much of the week, and up to 95% of the money was on the under (WagerTalk Nov 5). Spread-specific; mild money on Arizona.",
+        "Previews split: GoldSheet takes Seahawks -8.5 (23-13, 'market overreacted'), Covers (Farley) has Cardinals +9.5 in a combo, Rotowire projects 24-17 Seattle, and Predictem took Cardinals +12.5 before the injury. Priced and not used.",
+        "Weather is partly cloudy with gusts around 12 mph at Lumen Field, not a factor (Covers Nov 8). Neutral."
+      ],
+      "reasoning": "Seattle's starting QB is unclear in the sources (Lock's elbow vs a never-played rookie), and it's the deciding variable, so this follows the pass trigger. The close moving back to -9.5 suggests the market expects Lock. Arizona's offense with Minshew rests on one half against Dallas, its backfield is depleted, and Seattle's defense is the better unit, so the projection sits near the number. The forced side is Seattle, doubting Arizona can score enough to cover with this roster. Confirmation that Milroe starts would have flipped it to Arizona.",
+      "forcedSide": "Seattle Seahawks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Tampa Bay Buccaneers", "home": "Chicago Bears",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": null,
+      "research": [
+        "[angle] Bears are on a shorter turnaround after a Monday-night win at Seattle (the defending champion), and they traded for All-Pro DL Jeffery Simmons (Covers, Nov 8). Short week helps Buccaneers; the Simmons addition helps Bears.",
+        "[angle] Baker Mayfield is managing a thumb injury and threw just 14 passes over the last two games. Covers says he is a week further removed and healthy enough to play (WagerTalk Nov 6; Covers Nov 8). Uncertain; a limited passer slightly helps Bears.",
+        "[angle] Tampa Bay ran for 324 yards in monsoon conditions in a 16-0 win over Atlanta (Irving and Gainwell: 310 yards on 52 carries) and handed off on 53.5% of snaps over its last four. It leads the NFL in time of possession (WagerTalk Nov 6; Covers Nov 8). Helps Buccaneers keep the game short.",
+        "The Bucs' defense ranks at or near the top in EPA and DVOA. It allows an NFL-low 6.6-yard aDOT and the 7th-fewest explosive passes (Covers Nov 8; Predictem: 2nd in EPA/play). Helps Buccaneers.",
+        "Chicago is 6-2, has won and covered three straight with all three going over, and led Atlanta and New England 14-0 after the first quarter (WagerTalk Nov 6; Predictem). Spread-specific; helps Bears.",
+        "Bears are 8-0 ATS in prime time (Covers, Nov 8). Spread-specific; helps Bears (priced).",
+        "Chicago is 25th in turnover margin (Predictem). Helps Buccaneers.",
+        "Bucs have won three of their last four, the loss in OT (Covers Nov 8). Helps Buccaneers.",
+        "Line: the lookahead was about Bears -5.5 before the Monday win, and WagerTalk has it opening -6, dipping to -4.5 and back to -6. The archive open of -3.5 conflicts. The close is -6.5 and the total 47.5 (Covers Nov 8; WagerTalk Nov 6; slate). Spread-specific; neutral.",
+        "Splits: up to 99% of spread money on Chicago at points in the week, and the over drew up to 92% of the money (WagerTalk, Nov 6). Spread-specific; heavily public on the Bears.",
+        "WR Emeka Egbuka (foot) was questionable and slated to return (Rotowire, via search summary). Slightly helps Buccaneers.",
+        "Weather is mid-40s with gusts up to 10 mph and no rain (Covers Nov 8). Neutral."
+      ],
+      "reasoning": "Locked as a pass because a search-result summary showed a possible result hint before any lean was written down, so the forced side is 'no read'. Before that, the notes had the facts but no side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary (restricted to wagertalk/actionnetwork/predictem/rotowire) said a Rotowire Bears page lists a 27-24 Bears win over the Bucs tagged Week 9, dated '440 days ago'. That may be an older game, but it could be this game's result. I saw it after reading the Covers preview and before writing any lean, so I passed with no forced side."
+    }
+  ]
+}

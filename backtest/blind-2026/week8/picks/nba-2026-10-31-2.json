@@ -1,0 +1,29 @@
+{
+  "sport": "nba", "date": "2026-10-31", "chunk": "nba-2026-10-31-2",
+  "games": [
+    {
+      "away": "Oklahoma City Thunder", "home": "Houston Rockets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.5,
+      "research": [
+        "Thunder are without Chet Holmgren (knee, out a couple of months), Jalen Williams (ankle) and Alex Caruso; the writer says OKC is 'digging deep into its bench' (Covers, Oct 31 2026) - helps Houston, but known before the line settled.",
+        "OKC was also missing Cason Wallace when it lost 120-96 at Dallas on Wednesday (Predictem Rockets-Mavericks preview, Oct 30 2026) - helps Houston.",
+        "[angle] Houston played at Dallas on Friday night (Oct 30) and hosts OKC on Saturday: the Rockets are on the second night of a back-to-back, while OKC last played Wednesday (Predictem, Oct 30 2026; Covers, Oct 31 2026) - helps OKC.",
+        "[angle] Alperen Sengun was questionable for Friday's game with low back soreness and Predictem noted the Saturday OKC game could make Houston cautious with him; Marcus Smart (forearm) was iffy, Reed Sheppard (back) and Steven Adams (calf) out (Predictem, Oct 30 2026). Covers calls Houston 'relatively healthy' on Saturday and Dimers projects Sengun for 18.4 - his back-to-back status is the unresolved swing.",
+        "Houston started 5-0 (first since 2014-15) with the league's best offense, 123.4 per 100, and a +14.2 net rating, then lost its first game at Dallas (Predictem, Oct 30 2026; Covers, Oct 31 2026) - helps Houston.",
+        "Houston averages 121.0 points with 61.4% true shooting and grabs 31% of its own misses (4th) (Covers, Oct 31; Predictem, Oct 30 2026) - helps Houston vs a thin OKC frontcourt.",
+        "[angle] OKC still leads the NBA in defensive efficiency despite the absences; Isaiah Hartenstein has played 26+ minutes with 12+ rebounds in each of the last three (Covers, Oct 31 2026) - helps OKC keep it close.",
+        "Line moved from Houston -4.5 open to -2.5 close (slate file) - a 2-point move toward OKC, consistent with the back-to-back and/or Sengun news.",
+        "Slate vs close: OKC +4.5 on the slate is 2 points better than the +2.5 close, on the side the market moved to (slate file) - information toward OKC, not an edge on its own.",
+        "Rockets are 4-1 ATS in their last five meetings with OKC (Covers, Oct 31 2026) - head-to-head, already priced.",
+        "Total moved 218.5 to 219.5 (slate file); Covers expects a slow pace - neutral.",
+        "Dimers' model projects Houston 111-108 and lists Rockets -3.5 as value; Covers picks Rockets -2.5 (Dimers/Covers, Oct 31 2026) - previews lean Houston, not an edge."
+      ],
+      "reasoning": "My projection (Houston by about 2.5, the close) leaves OKC +4.5 two points to the good, which only clears the bar narrowly, and Sengun's status on the back-to-back is unresolved, so pass. The [angle] that matters is Houston on the second night of a back-to-back against a rested OKC defense, which matches the market's move toward OKC; forced side OKC. A confirmed Sengun start with the line staying at -4.5 elsewhere would have weakened it.",
+      "forcedSide": "Oklahoma City Thunder",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

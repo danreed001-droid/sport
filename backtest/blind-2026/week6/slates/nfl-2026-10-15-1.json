@@ -1,0 +1,18 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-15",
+ "chunk": "nfl-2026-10-15-1",
+ "games": [
+  {
+   "away": "Seattle Seahawks",
+   "home": "Denver Broncos",
+   "time": "8:15 PM ET",
+   "awaySpread": -2.5,
+   "homeSpread": 2.5,
+   "awaySpreadOdds": -118,
+   "homeSpreadOdds": -102,
+   "awayMoneyline": -142,
+   "homeMoneyline": 120
+  }
+ ]
+}

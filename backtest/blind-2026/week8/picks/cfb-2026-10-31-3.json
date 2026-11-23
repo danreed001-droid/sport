@@ -1,0 +1,152 @@
+{
+  "sport": "cfb",
+  "date": "2026-10-31",
+  "chunk": "cfb-2026-10-31-3",
+  "games": [
+    {
+      "away": "Miami",
+      "home": "North Carolina",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -15.0,
+      "research": [
+        "Line: DraftKings opened North Carolina +14.5 and closed +13.5 (slate file). WagerTalk (Oct 31) says the spread opened Miami -16.5 and fell to -14, with most spread money on North Carolina. The market moved toward UNC, so the slate's +14.5 is 1 point better than the close on the UNC side. That's information, not an edge. Spread-specific; favors UNC slightly.",
+        "Total: opened 50.5 and closed 52.5 (slate). WagerTalk notes early over action and that 6 of Miami's 7 games went over. A higher total slightly favors the favorite's ability to build a margin. Spread-specific; neutral to Miami.",
+        "Miami is 7-0 SU and 5-2 ATS (WagerTalk, Oct 31) and beat Pitt by 29 last week. Covers (Oct 31) cites Miami at 14-22-1 ATS in conference games since 2022 under Cristobal. Spread-specific; mixed.",
+        "UNC is 4-1 ATS as an underdog this season (Covers, Predictem, Oct 31), including a cover as a 21.5-point underdog vs Notre Dame (lost by 11). It is 3-0 ATS vs ranked teams under Belichick (Covers). Spread-specific; favors UNC (priced per LESSONS).",
+        "Predictem (Oct 31): Miami ranks 1st nationally in points, yards per play and success rate, and allows 15.3 points and 60 rushing yards a game. QB Darian Mensah is at 81% completions with 22 TD and 1 INT, and threw for 387 yards and 4 TD vs Pitt. Favors Miami.",
+        "UNC's offense ranks 97th-98th in scoring, sits in the 9th percentile in explosive-play rate (Covers) and is 133rd in fourth-quarter scoring at 3.7 points (Predictem). Favors Miami (the 'can't score' argument is priced per LESSONS).",
+        "[angle] UNC starting LT Jordan Hall and LG Andrew Threatt are both questionable (Covers, Oct 31), and CBs Kaleb Cost and Peyton Waters missed the Syracuse game with their status unknown (Predictem). If the left side of the line or the corners sit, it helps Miami.",
+        "[angle] Lookahead: Miami goes to No. 5 Notre Dame next week (Predictem, Oct 31), a classic letdown or lookahead spot for a two-touchdown road favorite. Favors UNC.",
+        "[angle] Mensah won 33-25 at Kenan Stadium last season as Duke's QB (Predictem), and UNC has won the last five meetings in the series (WagerTalk). He knows the venue; series history is priced. Neutral.",
+        "[angle] UNC is coming off a heartbreaking 1-point overtime loss to Syracuse after a failed two-point try, in which Syracuse ran 49 times for 199 yards (WagerTalk, Predictem). Emotional hangover risk; mild Miami.",
+        "Miami plays slowly (115th in seconds per play, Covers) and UNC is one of the slowest teams nationally (Predictem). Fewer possessions make a 14.5-point margin harder. Favors UNC.",
+        "Preview picks split: Covers took UNC +14.5, while Predictem (model Miami -19.5, projected 35-16) and WagerTalk/GoldSheet (38-17) took Miami. Covers reported its consensus at roughly 47% Miami and 53% UNC. Per LESSONS, writers' picks are not an edge. Neutral."
+      ],
+      "reasoning": "I project Miami by about 15, right on the 14.5 number. Miami's elite efficiency is offset by a slow pace on both sides, a lookahead to Notre Dame and a market that moved toward UNC, so the gap is under 1 point and this is a pass. For the forced side, I'd take UNC: the slate is a point better than the close and the slow pace caps the margin, but that's a slim read. Confirmation that UNC's two starting linemen were out would have pushed me toward Miami.",
+      "forcedSide": "North Carolina",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Georgia Tech",
+      "home": "Pitt",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.5,
+      "research": [
+        "Slate: Pitt -7.5 (-109), Georgia Tech +7.5 (-105), ML Pitt -294. The slate carries no open or close, and Covers (Oct 31) put the consensus at GT +7.5 to +8.5, with +9.5 at Kalshi. Spread-specific.",
+        "Covers (Oct 31): Pitt starting QB Mason Heintschel is out for the season, and Ja'Kyrian Turner and Damon Ferguson Jr. are banged up. Favors GT.",
+        "Covers (Oct 31): Georgia Tech RB Malachi Hosley is out, and OL Kevin Peay Jr., Ethan Mackenny and Markell Samuel are sidelined. Favors Pitt.",
+        "Covers (Oct 31): Pitt started 5-0, then lost three straight and failed to cover in each. Spread-specific; favors GT.",
+        "Covers (Oct 31): Pitt has allowed 11.0 points and 48 rushing yards a game in five home games, leads the ACC at 2.2 yards per carry allowed, and ranks 18th in defensive success rate. Favors Pitt.",
+        "Covers (Oct 31): Georgia Tech averages 6.09 yards per play and completes 70.8% of passes, but ranks 106th in red-zone scoring (Pitt is 86th). Mixed.",
+        "Covers (Oct 31): the under has cashed in Pitt's last four games as a home favorite. The total is 53.5, moving to 51.5. Spread-specific; neutral.",
+        "Dimers model (Oct 31 article) projected Pitt 32-22 and favored Pitt -6.5. Model picks are not an edge per LESSONS. Neutral.",
+        "[angle] It's odd for a No. 8 team to be a 7.5-point road underdog to a Pitt team on a three-game losing streak without its starting QB, which suggests the market saw GT's offensive-line and RB absences as serious. Unresolved.",
+        "Fewer than 10 solid pre-game findings were gathered before the leak (see contaminationNote); research stopped there."
+      ],
+      "reasoning": "No read: the research hadn't reached a side when a search summary leaked the result, so this is locked as a pass. The forced side is not a forecast. Covers' GT +9.5 pick was the only spread lean I had read before the leak, so I list GT, but my own notes had not sided.",
+      "forcedSide": "Georgia Tech",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch limited to betting sites ('Georgia Tech at Pitt betting preview October 31 2026 Yellow Jackets underdog') returned a summary of a WagerTalk Florida State vs Pitt preview (Nov 13, 2026). It said Pitt beat Georgia Tech 34-11 at home before its bye, and that Georgia Tech had lost its last three games by 21+. I saw this before writing any lean, so the game is locked as a pass. The forced side came from pre-leak material (Covers' GT pick), not from my own analysis."
+    },
+    {
+      "away": "Ohio State",
+      "home": "USC",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -5.0,
+      "research": [
+        "Line: DraftKings opened USC +7.5 and closed +6.5, and the slate is +6.5 (slate file), so the slate equals the close. Predictem (Oct 31) says the line moved toward USC even though most bettors were on Ohio State, which is reverse line movement toward the underdog (LESSONS: 5-3 clean, don't count on it). Spread-specific; slight USC.",
+        "Total: opened 55.5 and closed 50.5 (slate), a 5-point drop. Covers (Oct 31) says rain is expected in Los Angeles. Lower totals 'making points worth more' is priced per LESSONS. Spread-specific; neutral.",
+        "[angle] QB: Julian Sayin (2,007 yds, 19 TD, 4 INT) went down at Indiana and is likely done for the season per Ryan Day (Predictem, Oct 31). Covers (Oct 31) says true freshman Luke Fahey appears set for his first start; he went 0-for-2 at Indiana. Five-star sophomore Tavien St. Clair is also in the mix. A first career start, on the road at night in the rain. Favors USC (the injury came before the line opened, so it's mostly priced).",
+        "Ohio State's defense is No. 1 in SP+, allows 13.4 points and 4.2 yards per play, and has held 6 of 7 opponents under 20 (Covers, Predictem, Oct 31). Favors Ohio State.",
+        "Ohio State is 3-0 ATS on the road this season (Predictem) and 9-1 ATS in its last 10 as a road favorite (Covers). Spread-specific; favors Ohio State (team ATS is a tiebreaker only).",
+        "USC is 2-6 ATS this season and 1-4 ATS at home (Predictem, Oct 31). Spread-specific; favors Ohio State.",
+        "USC scored 7 points on 239 yards in a 17-point loss to Wisconsin last week as a favorite: Maiava was sacked 5 times and threw 2 INTs, and USC ran 25 times for -17 yards (Covers, Predictem). Favors Ohio State.",
+        "USC's defense ranks 96th in success rate and allows 28.8 points a game vs Big Ten opponents (Covers), and gives up 15.3 second-half points a game (Predictem). Favors Ohio State.",
+        "Ohio State RB Ja'Kobi Jackson is out (Predictem). Jeremiah Smith (984 yds, 12 TD) remains the main weapon for a freshman QB. Mixed.",
+        "[angle] LESSONS (CFB): don't lay points with a defense-first favorite whose offense is middling or worse. Ohio State's offense was top-10 with Sayin but is now unproven with a freshman first-time starter, which makes it a defense-first favorite this week. Favors USC (not a fade on its own).",
+        "[angle] USC was hammered at home by Wisconsin a week after a road win at Penn State (Predictem). A home bounce-back spot for Lincoln Riley under fifth-year pressure, while Ohio State is in a 9:30 PT start on the road. Mild USC.",
+        "Preview picks: Covers (two writers) Ohio State -6.5 on defense; Predictem USC +6.5, projecting 23-20. Kalshi had Ohio State at 68% to win. Not an edge per LESSONS. Neutral."
+      ],
+      "reasoning": "I project Ohio State by about 5, 1.5 inside the 6.5. The defensive gap is real, but laying nearly a touchdown on the road with a freshman making his first start is exactly the defense-first favorite LESSONS warns about, and the line moved toward USC against public money. The gap is under 2, so this is a pass. For the forced side, I'd take USC. An announced St. Clair start or more line movement toward Ohio State would have flipped it.",
+      "forcedSide": "USC",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Mississippi State",
+      "home": "Texas",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 19.0,
+      "research": [
+        "Line: DraftKings opened Texas -18.5 and closed -19.5, and the slate is -19.5 (slate file). That's a 1-point move toward Texas, and the slate equals the close. Spread-specific; slight Texas.",
+        "Total: opened 52.5 and closed 50.5 (slate). Predictem (Oct 31) also reports 52.5 to 50.5 and picks the under, projecting 30-10. Spread-specific; neutral.",
+        "Mississippi State QB Kamario Taylor is out for the year after toe surgery. Lebby hasn't named a starter between freshman Billy Puckett and fifth-year transfer AJ Swann (Predictem, Oct 31), and Covers' Top 25 piece says Puckett starts. The injury came well before this line opened, so it's priced. Favors Texas.",
+        "Mississippi State started 4-0, then lost three straight, scoring 38 points total: 23 vs Alabama, 0 at LSU, 15 vs Oklahoma (Predictem). The offense collapsed post-Taylor. Favors Texas.",
+        "Mississippi State has been sacked on nearly 12% of dropbacks over its last three games (Predictem). Texas allows 4.2 yards per play (4th nationally) and 5.4 yards per pass attempt (2nd), and intercepted Trinidad Chambliss three times last week. Favors Texas.",
+        "[angle] Texas's own offense: outside a 59-point opener vs Texas State it hasn't topped 34 points. It ranks 113th in value per snap and has converted barely one in five third downs over its last three games (Predictem). Favors Mississippi State covering 19.5.",
+        "[angle] Texas lost LT Trevor Goosby for the season (Andre Cojoe now at LT). Edge rusher Colin Simmons has a high-ankle sprain, and Cam Coleman hurt a shoulder but practiced fully (Predictem). The SEC report lists Simmons, Hollywood Smothers and Coleman as available (Covers). Mixed.",
+        "Covers (Oct 31) notes Texas's weak rushing offense against a Mississippi State run defense that holds opponents to few yards per carry. That limits Texas's ability to grind out a big margin. Favors Mississippi State.",
+        "[angle] LESSONS (CFB): don't lay points with a defense-first favorite whose offense is middling or worse (Wk6 Texas lost outright). Texas fits exactly at -19.5. Favors Mississippi State (not a fade on its own).",
+        "Covers took Texas -20.5 (would go to -23.5) and Predictem passed on the side, saying Texas's offense is too inconsistent to lay the full number. Writers' picks aren't an edge. Neutral.",
+        "Covers lists Texas at about 93% to win outright. ML -1587/+885 on the slate. Spread-specific; neutral."
+      ],
+      "reasoning": "I project Texas by about 19, on the number. Mississippi State's offense has cratered without Taylor, but Texas's offense is 113th per snap and a defense-first favorite laying 19.5 is the LESSONS warning case. The two cancel out, so this is a pass. For the forced side, I'd take Mississippi State, because a backdoor cover against a sputtering Texas offense is plausible. Evidence that Swann (experienced) starts or Texas's run game got healthy would have changed little.",
+      "forcedSide": "Mississippi State",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Missouri",
+      "home": "Arkansas",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -10.0,
+      "research": [
+        "Line: DraftKings opened and closed Arkansas +10.5 (slate file). No movement; Predictem (Oct 31) lists the open at Missouri -10, and Covers had -9.5. Spread-specific; neutral.",
+        "Total: 48.5 open and close (slate). Predictem lists 49.5 and picks the under, projecting Missouri 26-16. Spread-specific; neutral.",
+        "Missouri lost 31-3 at Ole Miss last week despite Austin Simmons throwing for 339 yards, failing on two first-half trips inside the Ole Miss 10. It has lost both SEC road games (Predictem, Oct 31). Favors Arkansas.",
+        "[angle] Missouri ranks 131st nationally in red-zone TD rate (about half of its trips) and is one of the slowest first-quarter starters (Predictem). That's a bad profile for laying double digits on the road. Favors Arkansas.",
+        "Missouri's Jamal Roberts leads the SEC with 867 rushing yards. Missouri allows 3.2 yards per carry and is +1 a game in turnover margin (Predictem). Favors Missouri.",
+        "Arkansas averages about 3.4 yards per carry (among FBS's worst), just under 5 yards per play and about 8 points per first half (Predictem). Favors Missouri.",
+        "Arkansas's defense ranks 125th on third down, allows 8.6 yards per pass attempt (Predictem) and ranks 114th in defensive success rate (Covers). Favors Missouri.",
+        "[angle] Missouri RB Ahmad Hardy, returning from a May gunshot wound, practiced fully Monday, but Drinkwitz didn't know if he'd play (Predictem). Possible added depth for Missouri. Slight Missouri.",
+        "[angle] Arkansas WR Chris Marshall (43 catches, 633 yds) left the Vanderbilt game with a hamstring injury but is expected to play, maybe not at full speed (Predictem). He's KJ Jackson's top target. Slight Missouri.",
+        "Arkansas is under first-year coach Ryan Silverfield and is coming off a win over Vanderbilt (Predictem). Missouri has won 9 of the last 10 meetings, including 31-17 in Fayetteville last year (history is priced). Neutral.",
+        "Over/under records: Arkansas 2-5 to the over and Missouri 3-4 (Predictem). Covers took Missouri -9.5 and the under. Neutral."
+      ],
+      "reasoning": "No read: I project Missouri by about 10, right on 10.5. Missouri's yardage edge (Arkansas allows 8.6 yards per pass attempt and can't run) is offset by its 131st-ranked red-zone finishing and 0-2 SEC road record, and the line never moved. For the forced side, I'd take Missouri, narrowly, on the matchup. A Hardy or Marshall status change would not have moved me enough to pick.",
+      "forcedSide": "Missouri",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Army",
+      "home": "Memphis",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 6.0,
+      "research": [
+        "Line: DraftKings opened and closed Memphis -6 (slate file). The slate's -5.5 is half a point better on the Memphis side than the close. Spread-specific; slight Memphis.",
+        "Total: opened 56.5 and closed 59.5 (slate), a 3-point rise toward more scoring, which tends to help the favorite stretch the margin against a ball-control triple option. Spread-specific; slight Memphis.",
+        "Covers (Oct 31) says Army has covered in 5 of its last 6 away games. Spread-specific; favors Army (ATS is a tiebreaker only).",
+        "Covers' user consensus was about 51% on Army, a near-even split with no clear sharp signal. Spread-specific; neutral.",
+        "Covers' Group of 6 piece (Oct 31) ranks Army's defense 129th in EPA per dropback, its weakest area. Memphis QB Marcus Stokes is third nationally with 21 TD passes and 15th in ADOT (11.4). Favors Memphis.",
+        "Covers: Memphis's defense ranks in the top 25 in EPA per dropback, and Army QB Cale Hellums has thrown just 20 passes in Army's last three games, so Army would struggle to throw back from behind. Favors Memphis.",
+        "[angle] Covers: Memphis hasn't faced a triple-option offense this season, though the writer says its front seven is athletic enough. A first look at the option in late October is a classic underdog-cover spot. Favors Army.",
+        "[angle] Both teams come off rallies: Memphis came back from double digits to beat East Carolina in overtime, and Army came back from double digits to beat Tulsa on a walk-off field goal (Covers). Both may be emotionally spent; neutral.",
+        "[angle] Army's option offense shortens the game: fewer possessions limit how far a 5.5-point favorite can pull away. Favors Army.",
+        "Covers' Group of 6 writer took Memphis -5.5 (Kalshi priced Memphis at 50% to cover). Writers' picks are not an edge. Neutral."
+      ],
+      "reasoning": "No read: I project Memphis by about 6, half a point over the 5.5. Memphis's passing attack against Army's 129th-ranked pass defense meets Army's shortened game and its first triple-option test, and the market didn't move the side. For the forced side, I'd take Memphis, narrowly: the slate is a half-point better than the close and the total rose. A Stokes injury note or a move to Memphis -7 would have changed the read."
+      ,
+      "forcedSide": "Memphis",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "sport": "cfb", "date": "2026-10-31", "chunk": "cfb-2026-10-31-1",
+  "games": [
+    {
+      "away": "Notre Dame", "home": "Navy",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -30.5,
+      "research": [
+        "[spread] Line opened Navy +28.5 and closed +30.5 (slate = close); total 53.5 -> 54.5. The market moved 2 points toward Notre Dame; the slate gives no number edge (slate file). Neutral.",
+        "[spread] Dimers model (Oct 31, 3 AM ET) projected Notre Dame 42-12 (30) and gave ND -28.5 only a 51.1% cover chance, naming Navy +28.5 its best bet; at -30.5 the model is slightly on Navy (Dimers, Oct 31). Helps Navy slightly (public model, priced).",
+        "[angle] Notre Dame comes in off a 28-24 loss at BYU, framed as a CJ Carr bounce-back spot (Dimers, Oct 31). Helps Notre Dame narratively.",
+        "Navy is 2-5 and ranks 102nd in SP+ defense, 118th in pass success rate allowed and 137th in EPA per dropback allowed (Covers, Rob Paul, Oct 31). Helps Notre Dame.",
+        "Notre Dame offense: No. 1 in available yards %, No. 7 offensive success rate, No. 5 pass success rate, No. 3 SP+ offense; CJ Carr 84.9 QBR, 49+ points in three of his last six games (Covers, Oct 31). Helps Notre Dame.",
+        "Navy QB Jackson Gutierrez: 599 rush yards and 8 rush TDs over the last three games, 28 runs of 10+ (4th nationally); Navy is top 10 in rush success rate and runs for 307.7 yds/game, which shortens games (Covers / Dimers, Oct 31). Helps Navy (clock control vs a big number).",
+        "Notre Dame defense is 4th in rush success rate allowed (33.9%) and 2nd in available yards % allowed (Covers, Oct 31). Helps Notre Dame vs the option.",
+        "[spread] Navy has gone over in 5 of 7 and allowed 41.6 ppg in three games vs strong passing teams (FAU, UTSA, North Texas) (Covers, Oct 31). Helps Notre Dame.",
+        "[spread] Under Freeman, ND is 4-1 ATS vs Navy, averaging 42.2 ppg in the series; Navy lost the last four meetings by a combined 177-59 (Covers / Dimers, Oct 31). H2H, already priced; tiebreaker at most for ND.",
+        "[angle] Neutral site at Gillette Stadium, Foxborough, noon ABC; weather expected non-factor (Covers, Oct 31). Neutral.",
+        "[spread] Covers consensus near even (49% on Notre Dame) though the article says trading is mostly on ND (Covers, Oct 31). No clear sharp signal.",
+        "No injury news for either team found in pre-game previews. Neutral."
+      ],
+      "reasoning": "Projection sits on the closing number (ND by ~30.5), so no gap and a pass. Notre Dame's pass offense against Navy's near-bottom pass defense is the strongest matchup edge, but Navy's 300-yard rushing attack shortening the game offsets it at a 30-point number. Forced side Notre Dame on this season's matchup data (Navy's pass-defense ranks), a weak read.",
+      "forcedSide": "Notre Dame",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Arizona", "home": "Texas Tech",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "[spread] Line opened Texas Tech -7.5 and closed -4.0; slate -3.5 (0.5 better for Arizona than close). Total 52.5 -> 55.5 (slate file). The 3.5-point move toward Arizona was mostly before the week, per Rotowire (spread barely moved since the prior weekend).",
+        "[angle] Texas Tech QB change: Will Hammond 'will not start' vs Arizona per On3, and could lose snaps per CBS's Matt Zenitz; Tommy (Thomas) Castellanos (ex-Florida State) worked into the mix (Rotowire headlines / preview, Oct 31). Late news; helps Arizona slightly or is noise.",
+        "Both teams 6-1; Texas Tech lost for the first time the previous week (Covers / Rotowire, Oct 31). Neutral.",
+        "Texas Tech pass defense ranks 127th in yards allowed (266.1-290.7 pass yds/game, some garbage time), while Arizona throws for 310.9 yds/game, 9th nationally (Rotowire, Predictem, SBR, Oct 31). Helps Arizona.",
+        "Arizona QB Noah Fifita: 9.2 yds/attempt, 2nd among Big 12 passers in total PPA; Arizona 10th in passing success rate (Covers, Oct 31). Helps Arizona.",
+        "[angle] Arizona's top three wide receivers have been out; Tre Spivey done for the season, Giovanni Richardson and Chris Hunter III questionable (Covers, Oct 31). Helps Texas Tech.",
+        "Texas Tech defense 16th in EPA/play allowed and 10th in PFF team defense grade, but 118th in front-seven havoc (Covers, Oct 31). Mixed.",
+        "Arizona defense 14th in EPA/play and 11th in success rate (Covers, Oct 31). Helps Arizona.",
+        "[spread] Texas Tech's passing attack ranks third-least explosive nationally; Hammond had 13 turnover-worthy plays (Covers, Oct 31). Helps Arizona.",
+        "[spread] Covers says Texas Tech is getting the majority of bets; moneyline split 61% TT. Public on the favorite, line drifted to -4 at close. No clear sharp signal.",
+        "[angle] Arizona has started slowly vs Washington State and Northern Illinois; Arizona 7-1 to the under in its last eight vs winning teams (Covers, Oct 31). Mixed.",
+        "Preview picks: Covers, Predictem and Rotowire all took Arizona +3.5/+4 (Oct 31). Preview picks are not an edge."
+      ],
+      "reasoning": "No read before the leak: the slate number is near the close and the Tech QB switch is unclear news. My pre-leak notes leaned slightly to Arizona (Tech's pass defense, the QB uncertainty), but not enough for a pick. A search summary then revealed the outcome, so this locks as a pass.",
+      "forcedSide": "Arizona",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary citing a WagerTalk TCU-vs-Arizona preview (Nov 6) said Texas Tech won the Arizona game, with Castellanos snuck in late; no score or margin seen. Seen before any lean was written. Forced side is the slight pre-leak lean (Arizona), which runs against the leaked straight-up result."
+    },
+    {
+      "away": "Michigan", "home": "Rutgers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -16.0,
+      "research": [
+        "[spread] Line opened Rutgers +14.0 and closed +16.5; slate Michigan -14 is 2.5 points better for Michigan than the close; total flat at 47.5 (slate file). Market moved to Michigan.",
+        "[angle] Rutgers starting QB Dylan Lonergan is out; he was hurt in the previous game, and Rutgers couldn't move the ball vs Northwestern without him (Rotowire, Week 9 best bets, Oct 2026). The likely cause of the move. Helps Michigan.",
+        "Rutgers defense ranked about 125th, allowing 37 ppg, before Week 8 (Predictem Rutgers-Northwestern preview). Helps Michigan.",
+        "Michigan lost at home to Indiana the previous week and struggled on offense; Rotowire questions whether Michigan can put up a big number (Rotowire, Oct 2026). Helps Rutgers.",
+        "Rotowire projected roughly 24-14 Michigan (10) and played the under 45.5 (Rotowire). Helps Rutgers vs 14.",
+        "[spread] Dimers model (Oct 31): Michigan 32-16 (16), 55.5% to cover -13.5, though its listed pick was Rutgers +13.5 (Dimers, Oct 31). Mixed; public model.",
+        "[angle] Michigan QB Bryce Underwood is a second-year starter; the 2026 Big Ten preview said Michigan's season hinges on him (Action Network, summer 2026). Neutral.",
+        "[angle] Rutgers had lost Athan Kaliakmanis; Lonergan won the job, so the backup is a third option (Action Network 2026 Big Ten preview + Rotowire). Helps Michigan.",
+        "[spread] Michigan's defense is described as better than Rutgers' offense can handle without its QB (Rotowire). Helps Michigan.",
+        "Game at SHI Stadium, Piscataway, 12:30 PM ET, Big Ten Network (Action Network tag page). Neutral.",
+        "[spread] A low total (47.5) with a 14-point spread means a two-score-plus margin in a low-scoring game; per lessons, low totals don't make points worth more. Neutral."
+      ],
+      "reasoning": "With the close at -16.5 after Lonergan's injury, my projection (~Michigan by 16) is about 2 points past the slate's -14: under the bar, and a slate line better than the close is information, not an edge. Michigan's own offensive struggles (the loss to Indiana) keep it a pass. Forced side Michigan on the 2.5-point number advantage vs the close and the Rutgers QB loss.",
+      "forcedSide": "Michigan",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Auburn", "home": "Ole Miss",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 12.5,
+      "research": [
+        "[spread] Slate Ole Miss -13.5; ESPN/DK open and close both shown -10.5, but morning-of previews list -12.5 (Covers odds box) and -13.5 (Predictem, Covers headline); total 53.5 -> 58.5 (slate file; Covers/Predictem Oct 31). The slate is at the high end of the market. Helps Auburn on the number.",
+        "[angle] Ole Miss is without leading rusher Kewan Lacy; Makhi Frazier replaces him with a better rushing success rate (52.9% vs 42.3%) (Covers, Oct 31; Rotowire). Roughly neutral.",
+        "Auburn QB Byrum Brown ranks 102nd of 139 at -0.03 EPA/dropback, though 20th among runners at 0.35 EPA/rush; Auburn is 91st in pass success and 122nd in yds/dropback (Covers, Oct 31). Helps Ole Miss.",
+        "[angle] Auburn managed 1.9 yds/carry and 10 points in a home loss to LSU, 5-for-16 on third down, allowing six sacks (Covers / Predictem, Oct 31). Helps Ole Miss.",
+        "Ole Miss's run defense is the SEC's worst at 161.1 rush yds/game allowed, which suits Brown's running (Covers, Oct 31). Helps Auburn.",
+        "Ole Miss offense ranks 9th in opponent-adjusted EPA/play, 96% red-zone scoring; 3-0 at home (Covers / Predictem, Oct 31). Helps Ole Miss.",
+        "[spread] Auburn's defense allowed 24 points across two road games, but its secondary gave up 715 yards over the last two games (Rotowire, Chris Bennett, picking Auburn +12.5). Mixed.",
+        "[angle] Ole Miss held the ball only 25:03 in its previous game at Texas (Covers, Oct 31); a ball-control Auburn could limit possessions. Slightly helps Auburn.",
+        "[spread] Ole Miss has won 9 of its last 12 on the moneyline (Covers, Oct 31). Priced.",
+        "Previews split: Covers took Ole Miss -13.5 (51%) and the under; Predictem took Auburn +13.5 projecting 31-21; Rotowire took Auburn +12.5 (Oct 31). Not an edge.",
+        "[spread] The total climbed 5 points (53.5 -> 58.5), so the market expects more scoring, which tends to widen margins. Slight Ole Miss."
+      ],
+      "reasoning": "Projection about Ole Miss by 12.5, one point off the slate: a pass. Auburn's offense is the weak unit (an underdog that may not score is already priced), offset by Ole Miss's bad run defense against a running QB. Forced side Auburn only because the slate's 13.5 is at the top of the morning market (-12.5 elsewhere, DK shown -10.5).",
+      "forcedSide": "Auburn",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Stanford", "home": "Louisville",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 22.5,
+      "research": [
+        "[spread] Line opened Louisville -21 and closed -22.5 (slate = close); total 61.5 -> 59.5 (slate file). A modest move to Louisville. Neutral on the number.",
+        "[angle] Louisville comes off a bye week (Rotowire, Week 9 best bets). Helps Louisville.",
+        "[angle] Stanford just pulled an upset of NC State in its previous game, a possible letdown or confidence spot (Rotowire, Week 9). Mixed.",
+        "[spread] Stanford is 0-3 against Notre Dame, Duke and Wake Forest, outscored 150-17 in those games (Rotowire, Chris Bennett, picking Louisville -21.5). Repeated blowouts vs better teams: helps Louisville.",
+        "Stanford ranks sixth-to-last nationally in total defense (Rotowire / Pickswise TD picks summary). Helps Louisville.",
+        "Louisville's defense allows 29.8 ppg to FBS opponents (Rotowire). Helps Stanford's backdoor chances.",
+        "[angle] Louisville needs RB Isaac Brown to return to form for its run game (Rotowire). Uncertainty; helps Stanford slightly.",
+        "Stanford's QB room entering 2026 was Davis Warren (Michigan transfer) or Dylan Rizk (WagerTalk 2026 Stanford preview). Low-end offense: helps Louisville.",
+        "[spread] Dimers model: Louisville 41-18 (23), Louisville -20.5 its spread lean, under 62.5 at 57.3% (Dimers, Oct 31). Public model, about on the number.",
+        "Louisville QB Lincoln Kienholz highlighted in prop picks (Pickswise/Covers prop pages). Neutral.",
+        "[spread] The total dropped 2 points, which slightly argues against a runaway margin. Slight Stanford."
+      ],
+      "reasoning": "Projection on the number (Louisville by ~22.5): pass. Stanford's three lopsided losses to good opponents (150-17) and its bottom-six defense against Louisville's rest edge point to Louisville, but Louisville's own defense (29.8 ppg allowed to FBS) leaves backdoor room. Forced side Louisville on Stanford's repeated blowout losses this season.",
+      "forcedSide": "Louisville",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Virginia", "home": "Wake Forest",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 13.0,
+      "research": [
+        "[spread] Line opened and closed Wake Forest -13.5 (slate = close); total 49.5 -> 48.5 (slate file). No movement despite Virginia being ranked 15th and the home team unranked.",
+        "[angle] A ranked team (No. 15 Virginia) is a 13.5-point road underdog to an unranked team, which suggests the market sees Virginia as much weaker than its ranking (slate file). Context.",
+        "Virginia's offense lacks firepower; QB Beau Pribula would need a season-high game (Rotowire, Jeff Edgerton, picking Wake -12.5). Helps Wake Forest.",
+        "Wake Forest has one of the country's most balanced offenses; its defensive weaknesses are noted (Rotowire). Mixed, leaning Wake.",
+        "[angle] Wake Forest beat Stanford earlier this season as part of Stanford's 150-17 run vs ND/Duke/Wake (Rotowire). Context for Wake.",
+        "Predictem projected Wake Forest 28-13 at -12.5 and played the under 49.5 (Predictem, Oct 31). Preview pick; not an edge.",
+        "[angle] Covers described Virginia as 'injury-ravaged' with more than a dozen players listed out (seen in the same search summary as the leak below). Would help Wake; injuries known before the line settled are priced.",
+        "[spread] Covers consensus: 60% of users on Wake Forest, 64% on the over (Covers). Public on the favorite; no sharp signal.",
+        "Fewer than 10 solid, independent findings: research stopped at the first leak."
+      ],
+      "reasoning": "Research stopped early: the first search summary showed a graded Covers pick on Wake Forest. Before that, my notes held only preview opinions (Rotowire's Wake -12.5 on Virginia's weak offense), with no number-based read. Pass.",
+      "forcedSide": "Wake Forest",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary quoted Covers' Week 9 Top 25 picks showing 'Wake Forest -11.5 ✅' (Wake covered -11.5), and noted the Covers matchup page suggested Wake covered. No exact score seen. This came before any lean was written. The forced side (Wake) matches the only pre-leak note (Rotowire's Wake -12.5 pick on Virginia's weak offense), but it is not a clean forecast."
+    }
+  ]
+}

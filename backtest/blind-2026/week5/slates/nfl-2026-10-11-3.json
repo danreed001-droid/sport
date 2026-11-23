@@ -1,0 +1,18 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-11",
+ "chunk": "nfl-2026-10-11-3",
+ "games": [
+  {
+   "away": "Baltimore Ravens",
+   "home": "Atlanta Falcons",
+   "time": "8:20 PM ET",
+   "awaySpread": 3,
+   "homeSpread": -3,
+   "awaySpreadOdds": -112,
+   "homeSpreadOdds": -108,
+   "awayMoneyline": 136,
+   "homeMoneyline": -162
+  }
+ ]
+}
