@@ -33,6 +33,7 @@ WEEKS = {
     10: ("2026-11-10", "2026-11-16"),
 }
 CHUNK = 6
+CHUNK_LATE = 11  # Weeks 9-10: agents passed on nearly everything, so fewer, larger chunks
 KEEP = ["away", "home", "time", "neutral", "awayRank", "homeRank",
         "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
         "awayMoneyline", "homeMoneyline", "total"]
@@ -117,9 +118,10 @@ def prep(w):
                 continue  # no line: nothing to pick against the spread
             games.append({k: g[k] for k in KEEP if g.get(k) is not None})
             add_market(games[-1], d, cache[sport])
-        for i in range(0, len(games), CHUNK):
-            part = games[i:i + CHUNK]
-            name = f"{sport}-{d}-{i // CHUNK + 1}"
+        size = CHUNK if w <= 8 else CHUNK_LATE
+        for i in range(0, len(games), size):
+            part = games[i:i + size]
+            name = f"{sport}-{d}-{i // size + 1}"
             path = os.path.join(week_dir(w), "slates", name + ".json")
             json.dump({"sport": sport, "date": d, "chunk": name, "games": part},
                       open(path, "w"), indent=1)

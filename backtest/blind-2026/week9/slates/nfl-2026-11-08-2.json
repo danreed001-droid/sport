@@ -1,0 +1,37 @@
+{
+ "sport": "nfl",
+ "date": "2026-11-08",
+ "chunk": "nfl-2026-11-08-2",
+ "games": [
+  {
+   "away": "Arizona Cardinals",
+   "home": "Seattle Seahawks",
+   "time": "4:25 PM ET",
+   "awaySpread": 8.5,
+   "homeSpread": -8.5,
+   "awaySpreadOdds": -102,
+   "homeSpreadOdds": 100,
+   "awayMoneyline": 331,
+   "homeMoneyline": -427,
+   "homeSpreadOpen": -13.5,
+   "homeSpreadClose": -9.5,
+   "totalOpen": 45.5,
+   "totalClose": 40.5
+  },
+  {
+   "away": "Tampa Bay Buccaneers",
+   "home": "Chicago Bears",
+   "time": "8:20 PM ET",
+   "awaySpread": 6,
+   "homeSpread": -6,
+   "awaySpreadOdds": 100,
+   "homeSpreadOdds": -120,
+   "awayMoneyline": 221,
+   "homeMoneyline": -272,
+   "homeSpreadOpen": -3.5,
+   "homeSpreadClose": -6.5,
+   "totalOpen": 48.5,
+   "totalClose": 47.5
+  }
+ ]
+}

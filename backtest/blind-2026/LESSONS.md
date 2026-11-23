@@ -1,112 +1,95 @@
-# Lessons for the blind test (cumulative; updated after Week 7)
+# Lessons for the blind test (cumulative; updated after Week 8)
 
-Read these before researching. Each lesson ends with its evidence. "Clean" means the
-result wasn't seen before locking. Three weeks (138 graded forced sides, 89 clean) is still
-a small sample: anything marked *tentative* is a lean, not a rule.
+Read these before researching. Each lesson ends with its evidence. "Clean" means the result
+wasn't seen before locking.
 
-**The bottom line so far:** your projections show no edge over the line, and no single
-market signal has held up. Passing is the normal outcome. A pick needs a concrete reason the
-market plausibly hasn't priced, not a bigger projected gap.
+**The bottom line after four weeks:** the clean forced side is 76-79-2 (49.0%). Nothing tested
+beat 52.4% on a decent sample in a way that held from week to week. That covers sport,
+favorite/underdog, home/road, line size, line moves, the slate number vs the close, and the size
+of your projected gap. Passing is the normal outcome. A pick needs a concrete reason the market
+plausibly hasn't priced. A rule or a market signal is not that reason.
 
 ## Process
 
 - **Keep results out of your searches.**
-  - Week 8 slates carry the open and close line, so don't search for odds or line movement.
-    Those searches caused about 10 of Wk7's leaks, on the first search, before any research.
-  - Don't open or rely on summaries of:
-    - SportsGambler head-to-head lists or standings tables;
-    - Covers matchup, team, schedule or results pages;
+  - The slate already has the lines, so don't search for odds or line movement.
+  - Don't open or rely on summaries of these, because they list finals or graded picks:
+    - Dimers game pages;
+    - Covers matchup, team, schedule and results pages, and Covers pick roundups;
+    - SBR odds pages;
+    - SportsGambler head-to-head lists and standings tables;
     - Pickswise matchup pages.
+  - Limiting a search to betting sites doesn't protect you, because those are the sites that
+    leak.
   - Once a lean is written down, stop searching that game.
-  - Evidence: 13 of 34 games were contaminated in Wk5, 12 of 30 in Wk6 and 27 of 83 in Wk7.
-    About 14 of Wk7's came from pages showing finals.
-- **Searches that match the teams' next game leak this one.** Previews and columns for a
-  team's following game quote this result, which happens most in the NBA, where teams play
-  every one to three days. Put the game's date and "preview" in every query, and only fetch
-  articles dated that day or earlier. Evidence: about 13 of 27 Wk7 leaks (12 NBA) came from
-  later previews.
-- **If you see any hint of the result before your lean is written down, lock a pass.**
-  Evidence: Wk6 Cleveland and Las Vegas were picked after hints (a process error). In Wk7 all
-  27 contaminated games were correctly locked as passes.
-- **Honor your own pass trigger.** If your reasoning names a status that would turn the pick
-  into a pass, confirm it from the final availability report or pass. Evidence: Wk5 Saints
-  lost after Jefferson played. Wk6 LSU and Chicago, and Wk7 Curry, Missi and Fox, were
-  correctly passed on unresolved status.
-- **Don't default the forced side to the underdog.** Underdogs covered 76 of 145 games over
-  Wk5-7 (52%) and 41 of 83 in Wk7, which is a coin flip.
-  - If you have no read, write "no read" in the reasoning, and on a leak give only the side
-    your pre-leak notes actually reached.
-  - Evidence: nine Wk7 contaminated NBA games had their forced side set "by the underdog
-    default". They went 3-6, and they aren't forecasts.
+  - Evidence: contaminated games were 13 of 34 (Wk5), 12 of 30 (Wk6), 27 of 83 (Wk7) and 26 of
+    94 (Wk8). About 11 in Wk8 came from pages like these, most on the first search.
+- **Searches that match a team's next game or a rematch leak this one.** Put the game's date and
+  "preview" in every query, and only use articles dated that day or earlier. Evidence: about 13
+  of 27 leaks in Wk7 and about 14 of 26 in Wk8 came from later previews, mostly NBA.
+- **If you see any hint of the result before your lean is written down, lock a pass.** Write the
+  forced side as "no read" unless your notes had a side before the leak. Never fill it from a
+  mechanical rule after the leak (underdog default, road side, slate-vs-close). Evidence: in
+  Wk7-8 all 53 contaminated games were correctly passed. But nine Wk7 "underdog default" sides
+  and about 10 Wk8 "slate-vs-close" sides were filled after the leak.
+- **Honor your own pass trigger.** If your reasoning names a status that would turn the pick into
+  a pass, confirm it from the final availability report or pass. Evidence: the Wk5 Saints lost
+  after Jefferson played. The Wk6-7 passes on unresolved status were right.
+- **Use `homeSpreadClose`. Don't trust `homeSpreadOpen`.** The archive's open is sometimes
+  sign-flipped or a lookahead number. Evidence: 7 of 94 Wk8 opens were sign-opposite to the
+  close or 5+ points away, for example Houston @ Dallas -4.5 → +5.5 and Eagles @ Commanders
+  +2.5 → -5.5. Agents flagged these themselves.
 
 ## Weighing evidence (all sports)
 
 - **Your projection isn't sharper than the line, and a bigger gap doesn't mean a better side.**
-  Keep the bar (a pick needs an unshaded gap of 4+, or 2+ after shading halfway to the line),
-  but as a filter only. Don't bend it to make picks on market signals.
-  - Average miss Wk5-7: 10.59 points for the projection and 10.57 for the line (clean).
-  - Forced sides with an unshaded gap of 2+ went 14-14-1 clean and under 2 went 31-28-1. A gap
-    of 3+ went 5-9-1 clean.
-  - The Wk6 "4+ went 5-1" sign is now 4-4 clean.
-  - Passes' forced sides went 34-30-1 clean and picks 11-12-1.
-- **Injuries reported before the line opened are priced. Only news after the line settled
-  counts.** Evidence: picks built on the opponent's known absences went 0-3:
-  - Wk7 Sacramento, on five listed Clippers absences, lost by 20.5;
-  - Wk5 Texas A&M and Las Vegas lost.
+  Keep the bar (a pick needs an unshaded gap of 4+, or 2+ after shading halfway to the line) as a
+  filter only. Evidence:
+  - average miss for the projection vs the line: 10.59 vs 10.57 in Wk5-7, 11.03 vs 10.86 in Wk8;
+  - clean forced sides with an unshaded gap of 2+ went 22-21-1 over Wk5-8, and under 2 went
+    54-58-1.
+- **A slate number better than the close is not a reason or a tiebreaker.** Evidence:
+  - clean forced sides 1+ better went 12-17 in Wk8, and 15-20 over Wk7-8 vs 47-42 for the rest;
+  - in all Wk8 games, the side with a 1+ better slate number covered 21-22;
+  - the Wk8 Atlanta lean, 6 points better than the close, lost by half a point.
+- **Line moves and reverse line movement point nowhere.** Treat the close as fair. Don't fade it,
+  and don't re-list the news that caused it as a reason. Evidence:
+  - the side a 3+ point move went to covered 15-9-1 in Wk6-7, then 7-10 in Wk8;
+  - Wk8 clean forced sides with the move went 17-23;
+  - reverse movement toward a favorite went 1-7 clean over Wk5-7 (don't follow it), and toward
+    an underdog 5-3.
+- **No home/road or favorite/underdog tiebreaker in any sport.** These base-rate runs don't carry
+  over:
+  - NFL road teams covered 29-12-2 over Wk5-7, then 4 of 14 in Wk8 (road forced sides 3-8);
+  - CFB home teams covered 18 of 35 in Wk5-6, then 27 of 35 in Wk7-8;
+  - underdogs covered 116 of 239 over Wk5-8;
+  - clean forced favorites went 31-31-2 and underdogs 45-48.
 
-  Wk6 Kentucky, picked on Oklahoma's game-day report, won outright.
-- **Public ratings, models and preview writers' picks are not an edge.** The market has seen
-  them. Evidence:
-  - ratings 2.5+ off the line went 3-6 in Wk6 (clean 2-3);
-  - in Wk7, Covers' and WagerTalk's Kings picks lost by 20.5 and Dimers' Dallas value lost;
-  - preview-lean forced sides went 1-2 (contaminated).
-- **Already in the spread, so not a reason (tiebreaker at most):**
-  - team ATS records (3-7 in Wk5, mixed since);
-  - a low total or bad weather "making the points worth more" (3-7 over Wk5-7, 0-3 in Wk7:
-    Pittsburgh, Michigan State, the Saints);
+  If you have no read, say "no read".
+- **Injuries reported before the line opened are priced. Only news after the line settled
+  counts.** Evidence: picks on the opponent's known absences went 0-3 (Wk7 Sacramento lost by
+  20.5; Wk5 Texas A&M and Las Vegas). Wk6 Kentucky, on game-day news, won.
+- **Already priced, so never a reason (tiebreaker at most):**
+  - public ratings, models and preview writers' picks (Wk6 ratings 2-3 clean, Wk7 Kings picks
+    lost by 20.5);
+  - team ATS records;
   - head-to-head and venue history;
-  - "the underdog can't score" (2-5-1 in Wk6);
-  - one-unit preview labels like "bottom-five defense" (0-2 in Wk5).
-- **After a 3+ point line move, treat the new number as fair.** Don't fade it, and don't
-  re-list the news that caused it as a reason. If a starter's injury caused the move, his
-  team's season numbers were built with him, so they can't show the move was an
-  overreaction. The direction is noise: the moved side went 10-8-1 clean over all Wk6-7 games
-  (Wk7 5-7), and picks with the move went 1-4 in Wk5.
-- **A slate line better than the close is information, not an edge.** Compare the slate's
-  number with `homeSpreadClose`. Being 1+ point better on the side the market moved to went 4-3
-  clean over Wk6-7:
-  - Wk7 won: Arizona, San Antonio, Atlanta;
-  - Wk7 lost: Pittsburgh, Orlando, the Houston Texans.
-- **Reverse line movement: don't follow it toward a favorite, and don't count on it toward an
-  underdog.**
-  - Toward the favorite, the favorite went 1-7 clean over Wk5-7.
-  - Toward the underdog it's 5-3 clean: Wk7 Atlanta won; Pittsburgh and the Eagles lost.
-- **No favorite/underdog lean.** The Wk5-6 favorite shortfall reversed: forced sides on the
-  favorite went 10-6 clean in Wk7 and 14-16-2 clean over Wk5-7. "Be harder on the favorite"
-  is dropped. Judge each case on its reason.
+  - a low total or weather "making the points worth more" (3-7, Wk5-7);
+  - "the underdog can't score" (2-5-1, Wk6);
+  - one-unit preview labels.
 
 ## CFB
 
-- **Don't lay points with a favorite whose case is its defense while its offense is middling
-  or worse, but don't fade one on that alone.**
-  - Such favorites missed in 3 of 4: Wk6 Texas, Oklahoma and Georgia lost outright.
-  - Wk7 UCLA, a defense-first favorite with a backup QB, covered -15 by 3. The Michigan State
-    pick fading it lost.
+- **Don't lay points with a favorite whose case is its defense while its offense is middling or
+  worse, but don't fade one on that alone.** Evidence:
+  - such favorites missed in 4 of 6: Wk6 Texas, Oklahoma and Georgia, and Wk8 Ohio State at USC;
+  - Wk7 UCLA and Wk8 Texas covered;
+  - fading on it alone went 1-2.
 
-## NFL
+## NBA (Weeks 7-8: the first two weeks of 2026-27)
 
-- **Give home field little weight. When an NFL game sits on the number, the road side is the
-  tiebreaker.** NFL road teams covered 29-12-2 over Wk5-7, and every week: 10-4-1, 8-5-1, 11-3.
-  NFL forced sides on the road went 11-1-1 clean and home forced sides 3-8-1. It's a base rate
-  the market could correct, so it's never a pick on its own.
-
-## NBA (one week: opening week of 2026-27)
-
-- **Early in the season, expect no edge and pass.** Lines moved 2-5 points on one opening game
-  or one injury, and margins against the line were huge (40+ points three times). Evidence:
-  - the forced side went 15-15 clean in Wk7;
-  - fading a one-game line move went 1-1 (Kings covered after Portland's rout; the 76ers
-    covered after their upset);
-  - home-opener angles went 2-3 ATS.
-- **Don't lay big numbers with a reshuffled early-season favorite** (*tentative*, one week).
-  Favorites of 7.5+ covered 8 of 19 in Wk7, and all favorites covered 23 of 52.
+- **Early in the season, expect no edge and pass.** Evidence:
+  - the clean forced side went 15-15 in Wk7 and 17-20 in Wk8;
+  - one-game line moves and home-opener angles were coin flips;
+  - the Wk7 "big reshuffled favorite" lean is dropped: favorites of 7.5+ covered 11 of 20 in
+    Wk8, 19 of 39 over Wk7-8.

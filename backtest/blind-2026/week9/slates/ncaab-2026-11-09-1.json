@@ -1,0 +1,77 @@
+{
+ "sport": "ncaab",
+ "date": "2026-11-09",
+ "chunk": "ncaab-2026-11-09-1",
+ "games": [
+  {
+   "away": "Wagner Seahawks",
+   "home": "UConn Huskies",
+   "time": "7:00 PM ET",
+   "homeRank": 4,
+   "awaySpread": 37.5,
+   "homeSpread": -37.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "homeSpreadOpen": -38.5,
+   "homeSpreadClose": -39.5,
+   "totalOpen": 140.5,
+   "totalClose": 139.5
+  },
+  {
+   "away": "Grambling Tigers",
+   "home": "Texas Longhorns",
+   "time": "7:00 PM ET",
+   "homeRank": 7,
+   "awaySpread": 35.5,
+   "homeSpread": -35.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "homeSpreadOpen": -37.5,
+   "homeSpreadClose": -37.5,
+   "totalOpen": 152.5,
+   "totalClose": 155.5
+  },
+  {
+   "away": "Radford Highlanders",
+   "home": "Tennessee Volunteers",
+   "time": "7:00 PM ET",
+   "homeRank": 8,
+   "awaySpread": 28.5,
+   "homeSpread": -28.5,
+   "awaySpreadOdds": -108,
+   "homeSpreadOdds": -112,
+   "homeSpreadOpen": -28.5,
+   "homeSpreadClose": -29.5,
+   "totalOpen": 152.5,
+   "totalClose": 153.5
+  },
+  {
+   "away": "North Florida Ospreys",
+   "home": "Miami Hurricanes",
+   "time": "7:00 PM ET",
+   "homeRank": 14,
+   "awaySpread": 34.5,
+   "homeSpread": -34.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "homeSpreadOpen": -30.5,
+   "homeSpreadClose": -35.5,
+   "totalOpen": 158.5,
+   "totalClose": 165.5
+  },
+  {
+   "away": "Oakland Golden Grizzlies",
+   "home": "Alabama Crimson Tide",
+   "time": "7:30 PM ET",
+   "homeRank": 20,
+   "awaySpread": 32.5,
+   "homeSpread": -32.5,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -115,
+   "homeSpreadOpen": -31.5,
+   "homeSpreadClose": -32.5,
+   "totalOpen": 169.5,
+   "totalClose": 169.5
+  }
+ ]
+}
