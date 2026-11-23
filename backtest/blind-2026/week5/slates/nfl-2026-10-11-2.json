@@ -1,0 +1,73 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-11",
+ "chunk": "nfl-2026-10-11-2",
+ "games": [
+  {
+   "away": "Las Vegas Raiders",
+   "home": "New England Patriots",
+   "time": "1:00 PM ET",
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -106,
+   "homeSpreadOdds": -114,
+   "awayMoneyline": 167,
+   "homeMoneyline": -185
+  },
+  {
+   "away": "Minnesota Vikings",
+   "home": "New Orleans Saints",
+   "time": "1:00 PM ET",
+   "awaySpread": -1.5,
+   "homeSpread": 1.5,
+   "awaySpreadOdds": -115,
+   "homeSpreadOdds": -105,
+   "awayMoneyline": -130,
+   "homeMoneyline": 110
+  },
+  {
+   "away": "New York Giants",
+   "home": "Washington Commanders",
+   "time": "1:00 PM ET",
+   "awaySpread": 3.5,
+   "homeSpread": -3.5,
+   "awaySpreadOdds": -111,
+   "homeSpreadOdds": 108,
+   "awayMoneyline": 163,
+   "homeMoneyline": -170
+  },
+  {
+   "away": "Denver Broncos",
+   "home": "Los Angeles Chargers",
+   "time": "4:05 PM ET",
+   "awaySpread": -3.5,
+   "homeSpread": 3.5,
+   "awaySpreadOdds": -106,
+   "homeSpreadOdds": -114,
+   "awayMoneyline": -189,
+   "homeMoneyline": 157
+  },
+  {
+   "away": "Detroit Lions",
+   "home": "Arizona Cardinals",
+   "time": "4:25 PM ET",
+   "awaySpread": -5.5,
+   "homeSpread": 5.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": -249,
+   "homeMoneyline": 202
+  },
+  {
+   "away": "San Francisco 49ers",
+   "home": "Seattle Seahawks",
+   "time": "4:25 PM ET",
+   "awaySpread": 3,
+   "homeSpread": -3,
+   "awaySpreadOdds": -120,
+   "homeSpreadOdds": 100,
+   "awayMoneyline": 142,
+   "homeMoneyline": -168
+  }
+ ]
+}

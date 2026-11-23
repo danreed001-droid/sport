@@ -1,0 +1,18 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-08",
+ "chunk": "nfl-2026-10-08-1",
+ "games": [
+  {
+   "away": "Tampa Bay Buccaneers",
+   "home": "Dallas Cowboys",
+   "time": "8:15 PM ET",
+   "awaySpread": 8.5,
+   "homeSpread": -8.5,
+   "awaySpreadOdds": -110,
+   "homeSpreadOdds": -110,
+   "awayMoneyline": 360,
+   "homeMoneyline": -470
+  }
+ ]
+}

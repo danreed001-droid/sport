@@ -1,0 +1,31 @@
+{
+ "sport": "cfb",
+ "date": "2026-10-09",
+ "chunk": "cfb-2026-10-09-1",
+ "games": [
+  {
+   "away": "Iowa",
+   "home": "Washington",
+   "time": "9:00 PM ET",
+   "awayRank": 20,
+   "awaySpread": 3,
+   "homeSpread": -3,
+   "awaySpreadOdds": -105,
+   "homeSpreadOdds": -114,
+   "awayMoneyline": 140,
+   "homeMoneyline": -162
+  },
+  {
+   "away": "Iowa State",
+   "home": "BYU",
+   "time": "10:15 PM ET",
+   "homeRank": 8,
+   "awaySpread": 9.5,
+   "homeSpread": -9.5,
+   "awaySpreadOdds": -102,
+   "homeSpreadOdds": -120,
+   "awayMoneyline": 320,
+   "homeMoneyline": -420
+  }
+ ]
+}

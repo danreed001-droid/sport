@@ -1,0 +1,18 @@
+{
+ "sport": "nfl",
+ "date": "2026-10-12",
+ "chunk": "nfl-2026-10-12-1",
+ "games": [
+  {
+   "away": "Buffalo Bills",
+   "home": "Los Angeles Rams",
+   "time": "8:15 PM ET",
+   "awaySpread": 2.5,
+   "homeSpread": -2.5,
+   "awaySpreadOdds": -102,
+   "homeSpreadOdds": -118,
+   "awayMoneyline": 124,
+   "homeMoneyline": -148
+  }
+ ]
+}
