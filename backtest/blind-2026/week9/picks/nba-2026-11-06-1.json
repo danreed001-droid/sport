@@ -1,0 +1,186 @@
+{
+  "sport": "nba",
+  "date": "2026-11-06",
+  "chunk": "nba-2026-11-06-1",
+  "games": [
+    {
+      "away": "Boston Celtics",
+      "home": "Charlotte Hornets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": null,
+      "research": [
+        "Slate: Boston -8.5 (-105), total 209.5. The archive's close was Charlotte +10.5, so the market moved 2 points toward Boston (slate file).",
+        "Predictem preview (search snippet): Boston opening a road trip as an 8.5-point road favorite with a total of 209.5; Payton Pritchard questionable (eye abrasion). Neutral to slightly Charlotte if Pritchard sits.",
+        "Covers model snippet: Charlotte's Brandon Knueppel listed out in its projections. Helps Boston.",
+        "The Covers previews URL built for this game returned 404, so I searched. The search summary showed the final result before any lean was written (see contaminationNote). Research stopped there; fewer than 10 bullets."
+      ],
+      "reasoning": "Contaminated before any lean was written: the search summary showed the final score. Per LESSONS, lock a pass with no forced side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "The WebSearch summary for 'Celtics vs Hornets prediction picks odds November 6 2026 preview' (allowed_domains limited to betting sites) said a Covers results page lists the final as Boston 119, Charlotte 80. I saw this before writing any lean, and I had no side noted beforehand."
+    },
+    {
+      "away": "Philadelphia 76ers",
+      "home": "Cleveland Cavaliers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.0,
+      "research": [
+        "Slate: Philadelphia -1.5 / Cleveland +1.5. Open and close were both Cleveland +2.5, so the slate number is a point worse for Philadelphia than the close. That is not a reason (per LESSONS).",
+        "Covers (Geoff Clark, Nov 6): starting C Jarrett Allen is expected to miss the game after getting hurt in his last outing. Helps Philadelphia. The close had already settled at +2.5, so this is likely priced.",
+        "[angle] Covers (Nov 6): Cleveland hosts the Knicks Saturday, a playoff revenge game on the second night of a back-to-back. This is a look-ahead spot for Cleveland. Mild Philadelphia.",
+        "Covers (Nov 6): Philadelphia leads the NBA in wins above expectation (CleaningTheGlass), which suggests some luck in its record. Helps Cleveland.",
+        "Covers (Nov 6): Philadelphia is 2nd in defensive rating but 24th in defensive shot quality allowed, another regression flag. Helps Cleveland.",
+        "[angle] Covers (Nov 6): in the first meeting Cleveland led by 29 and lost 114-106 in Philadelphia while shooting 24.1% from three. Cleveland's process was good and the shooting variance was bad. Helps Cleveland, but head-to-head is weak evidence.",
+        "Covers (Nov 6): offensive shot quality ranks are Philadelphia 10th and Cleveland 5th. Slight Cleveland.",
+        "Covers ML page (Nov 6, 6:51 PM): Philadelphia is not on a back-to-back and is expected to play its regulars, with LeBron James expected to play. Joel Embiid's availability against the Allen/Mobley frontcourt matters. Helps Philadelphia.",
+        "Covers ML page (Nov 6): Polymarket has Philadelphia at 59% to win, consistent with roughly -2.5. Neutral.",
+        "Covers (Nov 6): James Harden has made 3+ threes in four straight games. Jaylen Brown is shooting a career-best 44.4% from three, which is likely to regress. Mixed.",
+        "Covers' writer picks Cleveland ML; preview picks are priced (LESSONS). Neutral."
+      ],
+      "reasoning": "Allen's absence and Philadelphia's fresh legs face Philadelphia's luck-driven profile and Cleveland's good first-meeting process. The projection of Philadelphia by 2 is right at the line, so this is a pass. The look-ahead to the Knicks is the most interesting angle, but it doesn't clear the bar.",
+      "forcedSide": "Philadelphia 76ers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Minnesota Timberwolves",
+      "home": "New Orleans Pelicans",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -3.5,
+      "research": [
+        "Slate: Minnesota -4.5. Open was Pelicans +5.5 and close was +3.5, a 2-point move toward New Orleans. LESSONS says moves point nowhere.",
+        "Covers (Shawn Krest, Nov 6): Anthony Edwards is out after knee surgery, and Minnesota has now played more games without him than with him. Long-term absence, priced.",
+        "Covers (Nov 6): without Edwards, Minnesota's point differential fell from +17 to +6.6 and its rebounding differential from +13.75 to -2.2. Its early games with Edwards came against sub-.500 East teams. Helps New Orleans.",
+        "Covers (Nov 6): New Orleans has won four straight both straight up and against the spread. Short-run form is priced; slight New Orleans.",
+        "Covers (Nov 6): Minnesota has covered four straight against New Orleans. Head-to-head is priced and weak evidence.",
+        "[angle] Covers ML page (Nov 6): Yves Missi is out, which leaves New Orleans thin at center against Gobert. Karlo Matkovic's three-point shooting could pull Gobert out of the paint. Mixed: it hurts New Orleans on the glass but creates a stretch-big matchup.",
+        "[angle] Covers (Nov 6): New Orleans attempts the fewest threes in the league and ranks 26th in 3P%. It is also the weakest team at defending twos, while Minnesota is 8th in interior defense. Helps Minnesota.",
+        "Covers (Nov 6): Zion Williamson is healthy and averaging 21.5 PPG, with 22+ in four of his last five, but is shooting a career-low .426. Neutral.",
+        "Covers (Nov 6): LaMelo Ball is taking more shots without Edwards, but his assists dropped to 5.6. Neutral.",
+        "Covers (Nov 6): spread priced at 49/52 implied. Polymarket has New Orleans at 41% to win, roughly a 3-3.5 point line, which is closer to the close than to the slate's 4.5. Slight New Orleans at +4.5.",
+        "Covers' writer and the Covers ML analyst both back Minnesota -4.5; preview picks are priced. Neutral."
+      ],
+      "reasoning": "Minnesota's decline without Edwards and New Orleans's hot run against New Orleans's poor three-point profile and interior defense. My projection of Minnesota by about 3.5 is within the pass band of the 4.5 line. Missi's absence is the swing angle, and it cuts both ways.",
+      "forcedSide": "New Orleans Pelicans",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Oklahoma City Thunder",
+      "home": "Memphis Grizzlies",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -1.5,
+      "research": [
+        "Slate: Memphis +3.5. Open was +3.5 and close +4.5, a move toward OKC.",
+        "Covers (Zak Hanshew, Nov 6): OKC is without Chet Holmgren, Jalen Williams and Cason Wallace. Helps Memphis, but it was known pre-open and the line still moved to OKC, so it is priced.",
+        "Covers (Nov 6): Memphis has no notable injuries. Helps Memphis.",
+        "Covers (Nov 6): Memphis is the only team top-5 in both offensive and defensive rating, with a +10.4 net rating (4th) and +10.8 point differential per game (3rd). Helps Memphis.",
+        "Covers (Nov 6): Memphis is 2nd in threes made (15.8 per game), the only team shooting 40% from three, and leads the league in rebounds (49.5). Helps Memphis.",
+        "[angle] Covers (Nov 6): over its last five games OKC has allowed 116.2 PPG, with opponents taking 42.4 threes a game and making 15.3. That plays into Memphis's three-point volume. Helps Memphis.",
+        "Covers (Nov 6): OKC has won two straight (back-to-back wins over Cleveland), and Shai Gilgeous-Alexander scored 85 points on 61 shots over those two games. Memphis has lost two straight. Helps OKC.",
+        "Covers (Nov 6): Memphis is 4-0 ATS in its last four games against winning teams. ATS records are priced; tiebreaker only.",
+        "[angle] Covers ML page (Nov 6): the size of Zach Edey and Cameron Boozer is expected to protect the paint against SGA's drives, and the analyst projects Memphis at about 46% to win. Polymarket has Memphis at 39%. Helps Memphis.",
+        "Covers (Nov 6): Ty Jerome is averaging 27.4 PPG with two 40-point games. That is possibly unsustainable, a regression flag. Slight OKC.",
+        "Both Covers writers back Memphis +3.5; preview picks are priced."
+      ],
+      "reasoning": "Memphis's healthy, top-5-both-ways profile against a short-handed OKC suggests a near pick'em. But the market moved toward OKC to +4.5 despite the OKC injuries, and my projection of OKC by 1.5 sits just 2 points off the line, so this is a pass. The three-point matchup (OKC allowing 42 attempts a game against the league's best three-point team) is the angle.",
+      "forcedSide": "Memphis Grizzlies",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Toronto Raptors",
+      "home": "Milwaukee Bucks",
+      "pick": "Milwaukee Bucks",
+      "confidence": "lean",
+      "projectedMargin": -3.0,
+      "research": [
+        "Slate: Toronto -7.5 / Milwaukee +7.5. Open was +7.5 and close +3.5, a 4-point move toward Milwaukee that fits game-day injury news. The slate number is not the decider (LESSONS); the news after the line was set is.",
+        "[angle] Covers ML page (Nov 6, updated 6:51 PM, before the 8 PM tip): Scottie Barnes missed shootaround and was ruled out, and Immanuel Quickley was added to the injury report and is also out. This is game-day news after the 7.5 line was set. Helps Milwaukee.",
+        "Covers (Chris Walder, Nov 6): Kawhi Leonard (knee) is out. Jakob Poeltl (shoulder bursitis) missed two games and came off the bench after returning. So Toronto is missing three of its top players. Helps Milwaukee.",
+        "[angle] Covers (Nov 6): tonight is the end of Toronto's four-game road trip and its fourth game in six days. Helps Milwaukee.",
+        "Covers (Nov 6): Toronto's defense has allowed 125.1 points per 100 possessions over its last four games (28th), up from 111.4 (13th) during its 3-1 start. Opponents shot 48% from three in its four losses. Helps Milwaukee.",
+        "[angle] Covers (Nov 6): Milwaukee is 1st in three-point attempts (44.1) and 6th in threes made (15.1), while Toronto allows 36.9% from three (25th). Helps Milwaukee.",
+        "Covers (Nov 6): Toronto is 1-2 SU and ATS when Barnes doesn't lead the team in scoring. Small sample; slight Milwaukee.",
+        "Covers (Nov 6): Milwaukee has been the underdog in all eight of its games, so it is a weak team. Helps Toronto.",
+        "Covers (Nov 6): Toronto has won the last three meetings by an average of 17.5 points. Head-to-head is weak evidence, but it helps Toronto.",
+        "Covers (Nov 6): Jaime Jaquez Jr. has 18+ points in three of his last four games. Slight Milwaukee.",
+        "Covers ML page (Nov 6): Polymarket has Milwaukee at 40% to win, about a 3-point spread, and the analyst switched from Toronto at 72% to Milwaukee after the injury news. Both Covers writers back Milwaukee +7.5. Priced at the close, but the slate line is +7.5.",
+        "Covers (Nov 6): Toronto started 3-1, then lost four straight before a late comeback win over the Clippers. Slight Milwaukee."
+      ],
+      "reasoning": "This is concrete game-day news after the 7.5 line was set: Barnes and Quickley were both ruled out on top of Kawhi, on Toronto's fourth game in six days at the end of a road trip, with a sagging defense against Milwaukee's high three-point volume. I project Toronto by about 3, which clears +7.5 by 4.5. It's a lean, not strong, because Milwaukee is a weak team and the slate-vs-close gap alone has not been predictive. If Barnes or Quickley had played, this would be a pass.",
+      "forcedSide": "Milwaukee Bucks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Utah Jazz",
+      "home": "Dallas Mavericks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": null,
+      "research": [
+        "Slate: Dallas -7.5. Open was -7.5 and close -6.5 (slate file).",
+        "Predictem preview (search snippet): Utah is missing Jaren Jackson Jr. (torn MCL) and Jusuf Nurkic, and comes in on six straight losses with no road wins. Helps Dallas.",
+        "Predictem preview (search snippet): Dallas is expected to get Santi Aldama and Max Christie back. Helps Dallas.",
+        "The Covers preview URL built for this game returned 404, so I searched. The search summary showed the final score before any lean was written. Research stopped; fewer than 10 bullets."
+      ],
+      "reasoning": "Contaminated before any lean was written: the search summary gave the final score. Per LESSONS, lock a pass with no forced side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "The WebSearch summary for 'Jazz vs Mavericks prediction picks odds November 6 2026 preview' (allowed_domains limited to betting sites) said a Covers matchup page lists the game as final, Dallas 112 Utah 100. I saw this before writing any lean, and I had no side noted beforehand."
+    },
+    {
+      "away": "Portland Trail Blazers",
+      "home": "Los Angeles Lakers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.5,
+      "research": [
+        "Slate: Lakers -2.5. Open was -4.5 and close -3.5, so the line settled a point above the slate.",
+        "Covers (Chris Walder, Nov 6): Ja Morant (hamstring) is out for a fourth straight game. This is long-running and priced. Helps the Lakers.",
+        "Covers (Nov 6): Portland is 3-0 without Morant and scores 119.5 points per 100 possessions in that stretch (4th). Helps Portland.",
+        "Covers (Nov 6): the Lakers' defense ranks 21st (112.9 points allowed per 100 possessions). Helps Portland.",
+        "[angle] Covers (Nov 6): Portland won 136-129 at LA on Oct 27 as an underdog. That was the only loss in Luka Doncic's five 40-point games. Head-to-head is weak evidence; slight Portland.",
+        "[angle] Covers (Nov 6): Doncic's usage is 42.7%. The Lakers are +21.2 net rating with him on the floor and -17.5 without him, so they are extremely dependent on one player. Mixed.",
+        "[angle] Covers ML page (Nov 6): Portland's guards and initiators troubled LA in the last meeting, and LA has trouble hiding both Austin Reaves and Doncic on defense. Helps Portland.",
+        "Covers (Nov 6): Clingan and Robert Williams III each had double-digit rebounds on Oct 27, and Jrue Holiday scored 22 off the bench. Slight Portland.",
+        "Covers (Nov 6): Sandro Mamukelashvili had 2 points on 0-for-4 shooting against Sacramento on Wednesday. Neutral.",
+        "Covers ML page (Nov 6): Polymarket has Portland at 42% (about a 2.5-point spread), and the analyst projects Portland near 44%. Neutral to slight Portland.",
+        "Both Covers writers back Portland +2.5; preview picks are priced."
+      ],
+      "reasoning": "Portland's offense without Morant and LA's poor defense against the market closing at Lakers -3.5. My projection of Lakers by 2.5 equals the line, so this is a pass. The most interesting angle is the LA on/off split with Doncic, but it doesn't make an edge.",
+      "forcedSide": "Portland Trail Blazers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "San Antonio Spurs",
+      "home": "Sacramento Kings",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -16.5,
+      "research": [
+        "Slate: San Antonio -15.5. Open was Kings +15.5 and close +17.5, a 2-point move toward San Antonio.",
+        "Covers (Geoff Clark, Nov 6): San Antonio won the Oct 27 meeting 130-103. Head-to-head is weak evidence; slight San Antonio.",
+        "Covers (Nov 6): Sacramento ranks 27th in assists per game and 21st in eFG%, while San Antonio is 3rd in defensive eFG%. Helps San Antonio, but 'the underdog can't score' is priced (LESSONS).",
+        "[angle] Covers (Nov 6): San Antonio shot only 32.2% from three on the season, but hit 10-of-14 corner threes against Sacramento. Sacramento allows the third-fewest wide-open threes. Helps Sacramento.",
+        "Covers (Nov 6): San Antonio has gone under in both road games, and is 18-12 to the under when winning by 15+ since last season (KillerSports). A slower game slightly favors the big underdog. Slight Sacramento.",
+        "Covers (Nov 6): Sacramento played at a 99.2 pace last month. Slower pace means fewer possessions to build a 16-point margin. Slight Sacramento.",
+        "Covers (Nov 6): both teams are top 10 in defensive rebounding rate and neither forces many turnovers. Neutral.",
+        "[angle] Covers ML page (Nov 6): Victor Wembanyama's help-side rim protection is expected to dominate the paint. Helps San Antonio.",
+        "Covers ML page (Nov 6): Polymarket has San Antonio at 91% to win; the analyst projects about 92%. Neutral.",
+        "Covers' main writer leans Spurs -16.5, and the ML-page writer takes Sacramento +15.5, so previews split. Neutral.",
+        "LESSONS: favorites of 7.5+ covered 19 of 39 over Wk7-8, a coin flip. Neutral."
+      ],
+      "reasoning": "This is a huge favorite against a poor offense, but the pace and under trends limit blowout margins, and the market closed at 17.5. My projection of San Antonio by about 16.5 is within a point of the slate, so this is a pass. The forced side follows the close moving toward San Antonio and Sacramento's poor offensive profile, which is thin.",
+      "forcedSide": "San Antonio Spurs",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

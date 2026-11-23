@@ -1,0 +1,106 @@
+{
+  "sport": "ncaab",
+  "date": "2026-11-03",
+  "chunk": "ncaab-2026-11-03-1",
+  "games": [
+    {
+      "away": "Wofford Terriers",
+      "home": "Tennessee Volunteers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": null,
+      "research": [
+        "Slate line Tennessee -26.5; homeSpreadClose -25.5 (open -27.5): the market moved about a point toward Wofford by kickoff (slate file).",
+        "Total moved up from 152.5 to 155.5 (slate file).",
+        "Covers' undated 2026-27 Wofford odds page listed TENN -27.5 / total ~155 for an upcoming game vs Tennessee (covers.com, search snippet).",
+        "Tennessee is ranked No. 8 in the slate; home opener at Thompson-Boling Arena (dimers.com preview, 2026-11-03).",
+        "Dimers' preview model projected Tennessee 90-63 (a 27-point margin, essentially on the number) and liked the under 154.5 (dimers.com, 2026-11-03).",
+        "Previous meeting was the March 2025 NCAA first round, Tennessee laying ~18.5 (sportsbookreview.com, 2025-03-20) -- old history, not used.",
+        "Fewer than 10 solid pre-game findings were gathered before the leak below; no injury or roster information was collected."
+      ],
+      "reasoning": "No lean had been formed when a Dimers search summary showed the final score of this game. Locked as a pass with no forced side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch summary of Dimers pages (my second search, before any lean was written) stated the final: Tennessee 90, Wofford 59 (Tennessee covered -26.5). I had no side before seeing it."
+    },
+    {
+      "away": "Drexel Dragons",
+      "home": "Virginia Cavaliers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 29,
+      "research": [
+        "Slate line Virginia -31.5 equals homeSpreadClose -31.5; the archive's open was -26.5 (possibly a placeholder; OddsTrader said books had not posted a line as of the morning of Nov. 2 and guessed ~20) (slate file; oddstrader.com, 2026-11-02). Helps neither side: close treated as fair.",
+        "Total 141.5 -> 142.5: a slow game; laying 31.5 needs roughly an 87-55 final, about 22% of the total (slate file). Slightly helps Drexel.",
+        "[angle] Drexel ranked 322nd in pace last season and Virginia 298th; OddsTrader's writer suggested Drexel slowing the game could keep it inside the number (oddstrader.com, 2026-11-02). Helps Drexel.",
+        "Drexel lost Shane Blakeney (14.2 ppg, its only double-digit scorer) to South Carolina; top returner Josh Reed averaged 7.9 ppg (oddstrader.com, 2026-11-02). Helps Virginia.",
+        "Drexel was 305th in offensive rating last season (68.1 ppg) but 69th in defensive rating (oddstrader.com, 2026-11-02). Offense helps Virginia, defense helps Drexel.",
+        "[angle] Drexel's last game vs a high-major in the preview, an 80-50 loss at Syracuse, came on 19-of-59 shooting (oddstrader.com, 2026-11-02). Helps Virginia.",
+        "Virginia went 30-6 in Ryan Odom's first season, 16-1 at home, 26th in offensive rating and 59th in defensive rating, with the roster largely intact (oddstrader.com, 2026-11-02). Helps Virginia.",
+        "[angle] Thijs De Ridder (15.6 ppg as a freshman) returns and scored 17 in an exhibition win over Villanova (oddstrader.com, 2026-11-02). Helps Virginia.",
+        "ATS last season: Drexel 18-13-1 (9-7-1 as an underdog, 6-7-1 on the road); Virginia 17-17-2, 8-8-1 as a home favorite, 6-7-2 non-conference (oddstrader.com, 2026-11-02). Slightly Drexel, but priced.",
+        "Virginia's games went under 11 of 17 as a home favorite last season (6-11 O/U) (oddstrader.com, 2026-11-02). A slow home favorite makes a 30+ margin harder: slight Drexel.",
+        "Virginia entered ranked No. 9 with title odds around +3000 (oddstrader.com, 2026-11-02). Neutral.",
+        "No notable injuries reported for either team (oddstrader.com, 2026-11-02)."
+      ],
+      "reasoning": "A slow-paced 142.5 total makes a 31.5-point cover a tall ask, but Drexel lost its only real scorer and Virginia returns a 30-win core, so I project roughly a 29-point win: inside 2.5 points of the number and below the bar. The pace angle is the only reason for the forced Drexel side; a hot Virginia shooting night would erase it.",
+      "forcedSide": "Drexel Dragons",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Manhattan Jaspers",
+      "home": "Kentucky Wildcats",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": null,
+      "research": [
+        "Slate line Kentucky -33; homeSpreadClose -33.5 (open -31.5) (slate file).",
+        "Total 158.5 open and close (slate file).",
+        "Kentucky ranked No. 23 in the slate; season opener at Rupp Arena.",
+        "Fewer than 10 solid pre-game findings: my first search returned a later (Champions Classic) preview summary that gave this game's outcome before any research or lean."
+      ],
+      "reasoning": "The first search summary leaked the result before any lean. Locked as a pass with no forced side.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "My first WebSearch summary quoted an OddsTrader Kansas vs. Kentucky (Champions Classic) preview saying Kentucky won its opener against Manhattan by 28 as a 33.5-point favorite (Manhattan covered) and that Momcilovic scored 24 with six 3s. Seen before any lean."
+    },
+    {
+      "away": "Arkansas-Pine Bluff Golden Lions",
+      "home": "Arkansas Razorbacks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 41,
+      "research": [
+        "Slate line Arkansas -40.5; homeSpreadClose -42.5 (open -40.5) (slate file). Close treated as fair.",
+        "Total moved from 161.5 to 167.5 (slate file): the market expected a fast game, which gives a big favorite more possessions to build a margin.",
+        "Arkansas is ranked No. 12 in the slate; home opener in Fayetteville under John Calipari (third season).",
+        "Arkansas reached the 2026 Sweet 16 after losing its first five SEC games (actionnetwork.com Sweet 16 preview, March 2026); Calipari's 2025 class included top-10 recruits Darius Acuff Jr. and Meleek Thomas (actionnetwork.com, 2025-26 season). Whether they returned for 2026-27 was not confirmed.",
+        "Arkansas-Pine Bluff is a SWAC program, typically among the lowest-rated Division I teams.",
+        "Fewer than 10 solid findings: searches on betting-preview sites found no game preview, injury report or 2026-27 roster information. Confidence lowered accordingly."
+      ],
+      "reasoning": "No game-specific preview or injury information was found, so I have no basis to beat a 40-plus number; the projection is simply the market. Pass, no read.",
+      "forcedSide": "no read",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Sam Houston Bearkats",
+      "home": "Alabama Crimson Tide",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 27,
+      "research": [
+        "Slate line Alabama -26.5; homeSpreadClose -27.5 (open -26.5) (slate file). Close treated as fair.",
+        "Total moved from 169.5 to 172.5 (slate file): a very fast expected pace, consistent with Nate Oats' Alabama style.",
+        "Alabama is ranked No. 20 in the slate; home opener in Tuscaloosa.",
+        "Sam Houston plays in Conference USA.",
+        "Fewer than 10 solid findings: three searches of betting-preview sites found no preview, injury report or roster information for this game. Confidence lowered accordingly."
+      ],
+      "reasoning": "No game-specific information was found, so the projection is the market number. Pass, no read.",
+      "forcedSide": "no read",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
