@@ -884,6 +884,8 @@ def build():
                         lead = lead_minutes(date_str, pk.get("time"), pk.get("submittedAt"))
                         if lead is not None and lead < 0:
                             play["lt"] = 1   # submitted after the game started (the public Results page leaves it out)
+                        if pk.get("reason"):
+                            play["why"] = pk["reason"]
                         # Which models were on your side ("ag") or the other
                         # side ("op") of this game, for the agreement table.
                         live_sides = [(k, s) for k, s in model_sides if s and not story_vetoed(date_str, g, s)]  # sat-out picks don't count
@@ -935,6 +937,8 @@ def build():
                 if mt and isinstance(mt.get("line"), (int, float)):
                     play = {"d": date_str, "s": sport, "w": "mytotal", "g": f"{g.get('away')} @ {g.get('home')}",
                             "k": f"{mt['side'].title()} {mt['line']:g}", "tl": mt["line"]}
+                    if mt.get("reason"):
+                        play["why"] = mt["reason"]
                     lead = lead_minutes(date_str, mt.get("time"), mt.get("submittedAt"))
                     if lead is not None and lead < 0:
                         play["lt"] = 1

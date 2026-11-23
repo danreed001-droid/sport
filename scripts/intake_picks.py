@@ -72,6 +72,11 @@ def prop_event_and_player(sport, date_str, g, pid, name, team):
     return eid, "", name   # graded by name from the box score
 
 
+def clean_reason(text):
+    """Your note on a pick: plain text, trimmed, at most 600 characters (None if empty)."""
+    return str(text or "").strip()[:600] or None
+
+
 def tally_text(g, code):
     away = sum(POINTS[c][0] for c in code)
     home = sum(POINTS[c][1] for c in code)
@@ -104,6 +109,9 @@ def process(issue):
     scores = payload.get("scores") or {}
     totals = payload.get("totals") or {}
     alts = payload.get("alts") or {}            # game id -> your alternate spread
+    # game id -> your note on why (side pick / over-under); "" clears it
+    reasons = payload.get("reasons") if isinstance(payload.get("reasons"), dict) else {}
+    total_reasons = payload.get("totalReasons") if isinstance(payload.get("totalReasons"), dict) else {}
     total_alts = payload.get("totalAlts") or {}  # game id -> your alternate total
     if not isinstance(alts, dict): alts = {}
     if not isinstance(total_alts, dict): total_alts = {}
@@ -176,6 +184,9 @@ def process(issue):
             elif alt != ln["spread"]:
                 entry.update({"spread": alt, "spreadOdds": price, "alt": True,
                               "posted": {"spread": ln["spread"], "spreadOdds": ln["spreadOdds"]}})
+        why = clean_reason(reasons[gid]) if gid in reasons else (current["picks"].get(gid) or {}).get("reason")
+        if why:
+            entry["reason"] = why
         current["picks"][gid] = entry
         spread = entry["spread"]
         alt_note = f" (alternate line, est. {entry['spreadOdds']:+g})" if entry.get("alt") else ""
@@ -213,9 +224,30 @@ def process(issue):
                 rejected.append(f"{label} — alternate total {talt} isn't available (saved at the posted total)")
             elif talt != line:
                 tentry.update({"line": talt, "odds": price, "alt": True, "posted": {"line": line, "odds": odds}})
+        why = clean_reason(total_reasons[gid]) if gid in total_reasons else (current["totals"].get(gid) or {}).get("reason")
+        if why:
+            tentry["reason"] = why
         current["totals"][gid] = tentry
         line, odds = tentry["line"], tentry["odds"]
         saved.append(f"{ou.title()} {line:g}{'' if odds is None else f' ({odds:+g})'} ({label})")
+
+    # A note added or changed on a pick that's already in the repo (side or
+    # over/under unchanged): just the reason is updated, until the game is final.
+    for key, notes, picks_in in (("picks", reasons, picks), ("totals", total_reasons, totals)):
+        for gid, text in notes.items():
+            if gid in picks_in or gid not in games or gid not in current.get(key, {}):
+                continue
+            sport, doc, g = games[gid]
+            label = f"{g['away']} @ {g['home']}"
+            if is_final(doc, g):
+                rejected.append(f"{label} — already final, the note is locked")
+                continue
+            why = clean_reason(text)
+            if why:
+                current[key][gid]["reason"] = why
+            else:
+                current[key][gid].pop("reason", None)
+            saved.append(f"note on your {'pick' if key == 'picks' else 'over/under'} ({label})")
 
     # Player props (NBA): {pending key: {gameId, playerId, player, team, stat, side, line, odds, reason} or "none"}
     current.setdefault("props", {})
