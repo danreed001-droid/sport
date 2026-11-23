@@ -1,0 +1,151 @@
+{
+  "sport": "nba",
+  "date": "2026-11-10",
+  "chunk": "nba-2026-11-10-1",
+  "games": [
+    {
+      "away": "Milwaukee Bucks",
+      "home": "New York Knicks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 16.0,
+      "research": [
+        "Bucks are 1-9 on a six-game losing streak, tied for the worst 10-game start in franchise history, and have been outscored by 15.7 points a game during the skid (Predictem, Nov 10). Helps Knicks.",
+        "[angle] Milwaukee lost at home to Boston on Sunday and travels east for the second night of a back-to-back, while the Knicks have had two days off (Predictem, Nov 10). Helps Knicks.",
+        "Tyler Herro (right knee contusion) is questionable for Milwaukee (Covers and Predictem, Nov 10). If he sits it helps Knicks.",
+        "Josh Hart is questionable for New York with an ankle issue (Predictem, Nov 10). Helps Bucks if he sits.",
+        "Knicks are 3-6 ATS this season despite winning five of six after an 0-3 start; those five wins came by about 15 points on average (Predictem, Nov 10). Mixed: poor ATS record helps Bucks, the margin in wins helps Knicks.",
+        "[angle] The Knicks play the league's slowest pace (97.2 possessions) and allow a league-low 104.2 points, but score only 109.9 (23rd) (Covers, Nov 10). Fewer possessions make a 15.5-point margin harder. Slightly helps Bucks.",
+        "Bucks allow 121.6 points a game (third-most, about 122 per 100 possessions) and take the second-most threes while making about a third (Predictem, Nov 10). Helps Knicks.",
+        "Brunson averages 26.2 PPG and scored 33 vs Chicago and 31 vs Cleveland in his last two games; Towns averages 20.9 points and 13.6 rebounds against a weak Bucks frontcourt (Covers / Predictem, Nov 10). Helps Knicks.",
+        "Line: slate Knicks -15.5; DraftKings close -14.5 (1 point toward Milwaukee, possibly the Herro/Hart news). Total rose 219.5 to 221.5 (slate file). Slightly helps Bucks against the close, but it's priced.",
+        "Predictem's writer called Knicks -15.5 a lean only (projected 121-103), noting the Knicks' soft schedule, possible late starter rest and Milwaukee bench threes in garbage time as risks; Basketball Reference schedule-adjusted numbers have the Knicks closer to average than elite (Predictem, Nov 10). Backdoor risk helps Bucks.",
+        "Under is 4-0 in the Bucks' last four games as an underdog (Covers, Nov 10). Neutral for the side."
+      ],
+      "reasoning": "Bucks on a road back-to-back while being outscored by 15.7 a game against a rested Knicks team argues for New York, but the Knicks' slowest-in-the-league pace and 3-6 ATS record make laying 15.5 thin. Projection Knicks by 16 sits within a point of the number, so no read and a pass; forced side Knicks on the rest gap. Confirmed news that Herro sat (or that Hart played) would have pushed it toward the Knicks.",
+      "forcedSide": "New York Knicks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Boston Celtics",
+      "home": "Philadelphia 76ers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -4.0,
+      "research": [
+        "Boston is 8-2 and winning by 10.7 points a game, the best margin in the East, ranking 3rd in offensive and 4th in defensive rating (Predictem, Nov 10). Helps Celtics.",
+        "Philadelphia is 9-2 but outscoring opponents only about 111.0-107.9 (+3 a game) (Predictem, Nov 10). Helps Celtics.",
+        "[angle] The 76ers are 8-0 in clutch games (within five in the last five minutes) and have the league's highest wins above expectation (+2.6), which Covers' writer calls unsustainable (Covers, Nov 10). Helps Celtics.",
+        "Philadelphia ranks 21st in offensive rating, 26th in eFG%, 21st in half-court efficiency, and 5th in defensive rating; Boston is 6th defensively (Covers / CleaningTheGlass, Nov 10). Helps Celtics.",
+        "Embiid is shooting 38.0% from the field and 10.0% from three, with free-throw attempts down to 6.7 from 9.9 (Covers, Nov 10). Helps Celtics.",
+        "76ers frontcourt is thin: Dominick Barlow and Ariel Hukporti out, Adem Bona doubtful (back), leaving little behind Embiid at center (Predictem, Nov 10). Meanwhile Boston ranks 4th in offensive rebounding rate (Covers). Helps Celtics.",
+        "Celtics are missing only two-way guard Devin Carter (illness) (Predictem, Nov 10). Helps Celtics.",
+        "[angle] Revenge spot: Philadelphia eliminated Boston from a 3-1 deficit in Game 7 last May, and Jaylen Brown was traded by Boston in July (Covers / Predictem, Nov 10). Motivation favors Celtics, but it's a narrative.",
+        "Both teams played Sunday (Boston beat Milwaukee 117-97; Philly beat Chicago with 20 offensive rebounds and 33 second-chance points), so there's no rest edge (Predictem, Nov 10). Neutral.",
+        "Line: Celtics -1.5 at the open and the close (slate file); total 214.5 to 216.5. No move. Neutral.",
+        "[angle] Boston has gone under in five straight and plays the league's slowest pace (Covers, Nov 10). A slow game shrinks margins. Slightly helps 76ers +1.5."
+      ],
+      "reasoning": "Before any leak, my projection was Boston by about 4 on its far better margin, efficiency and Philadelphia's unsustainable clutch record, a gap of 2.5 to the line and under the bar, so the forced side was Boston with no pick. Before I wrote that down, a Nov 12 preview I fetched for another game gave this game's result, so per LESSONS it's locked as a pass with no read; the forced side is the pre-leak lean.",
+      "forcedSide": "Boston Celtics",
+      "contaminated": true,
+      "contaminationNote": "While researching the Nov 12 Raptors @ 76ers game, the Predictem preview (Nov 12) said Philadelphia had a '22-point home loss to Boston on Tuesday', which is this game's result. I had settled on the forced side, Boston (projection Boston by 4, pass), in my reasoning before that fetch, but hadn't written it to the file yet. Pick locked as a pass with no read."
+    },
+    {
+      "away": "LA Clippers",
+      "home": "Phoenix Suns",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.0,
+      "research": [
+        "[angle] Phoenix is on the second night of a back-to-back after a 122-96 home loss to San Antonio on Monday, in which Wembanyama had 40 points, 11 rebounds and 9 blocks in 25 minutes. The Clippers last played Sunday (Predictem, Nov 10). Helps Clippers.",
+        "Clippers are without Bradley Beal, Brandon Ingram and Yanic Konan Niederhauser, and Cam Christie is questionable (ankle) (Predictem, Nov 10). Helps Suns.",
+        "Phoenix is missing Mark Williams (shoulder) and Jordan Goodwin (calf) (Predictem, Nov 10). Helps Clippers.",
+        "Clippers are 0-4 on the road, turn it over 19.1 times a game, and score 8.4 fewer points on the road than at home (sixth-fewest road points) (Predictem / Covers, Nov 10). Helps Suns.",
+        "Suns allow 120.2 points per 100 possessions (one of the four worst), with a -6.4 net rating; the Clippers are -4.0 (Predictem, Nov 10). Helps Clippers slightly.",
+        "Line opened Suns -4.5 and moved to -3.5; the DraftKings close was -3.5 (Predictem, Nov 10; slate file). The move was toward the Clippers and is priced.",
+        "Phoenix is 3-6, with two losses each to Golden State and Portland (Covers, Nov 10). Helps Clippers.",
+        "Clippers snapped a seven-game skid by beating New Orleans on Sunday; Garland had 24 points and 10 assists and Brook Lopez 20 (Predictem, Nov 10). Mild help to Clippers.",
+        "[angle] Phoenix's offense stalls without Booker: Dillon Brooks went 3-of-14 with no assists vs the Spurs, and Jalen Green has 22 turnovers to 33 assists (Predictem, Nov 10). Helps Clippers.",
+        "Phoenix ranks near the bottom of the league in several rebounding metrics and allows the seventh-fewest transition points per play, while about 23% of Clippers baskets come in transition (Covers, Nov 10). Mixed.",
+        "Suns home games went under in 59% over the last three regular seasons (52-76-1), per Covers (Nov 10). Lower scoring slightly helps the +3.5 underdog; a narrative tiebreaker at most."
+      ],
+      "reasoning": "Before any leak, my projection was Phoenix by about 2 (Suns tired on a back-to-back after a blowout and missing Mark Williams, Clippers missing Beal and Ingram and 0-4 on the road), within 2 of the line, so it was a pass with Clippers +3.5 as the forced side. A Nov 12 preview I then fetched gave this game's result before I had written that down, so per LESSONS it's locked as a pass with no read; the forced side is the pre-leak lean.",
+      "forcedSide": "LA Clippers",
+      "contaminated": true,
+      "contaminationNote": "While researching the Nov 12 Hornets @ Suns game, the Predictem preview (Nov 12) said Phoenix 'beat the Clippers 133-110 on Tuesday', which is this game's result. My pre-leak lean, forced side Clippers +3.5 and a pass, was formed in my reasoning before that fetch but hadn't been written to the file. Locked as a pass with no read."
+    },
+    {
+      "away": "Miami Heat",
+      "home": "Utah Jazz",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -10.5,
+      "research": [
+        "Utah is without Keyonte George (ankle), Jaren Jackson Jr. (knee) and Jusuf Nurkic (foot); Lauri Markkanen was questionable with a sprained wrist (Predictem, Nov 10), and Covers' later update (4:28 PM ET) lists Markkanen out too. Helps Heat.",
+        "Utah has lost eight straight and ranks 28th in adjusted net rating over the last two weeks, outscored by 15.4 per 100 possessions (Covers / CleaningTheGlass, Nov 10). Helps Heat.",
+        "Utah's offensive rating is 104.4, second-worst in the league, and it shoots 32.1% from three (Predictem / Covers, Nov 10). Helps Heat.",
+        "Utah is 1-4 ATS at home, with a -2.9 spread differential (Covers, Nov 10). Helps Heat.",
+        "[angle] Miami closes a five-game Western road trip (both LA teams, Golden State, Sacramento, Utah), and Predictem's writer expects tired legs to hurt its shooting (Predictem, Nov 10). Helps Jazz.",
+        "Giannis Antetokounmpo is probable with a sprained right wrist; he scored 29 but went 1-of-7 at the line in Sunday's 114-108 win at Sacramento as an 11.5-point favorite, a game Miami failed to cover (Predictem / Covers, Nov 10). Mixed.",
+        "Miami's defense ranks 26th (defensive rating 116.8), and it plays the fastest pace in the league (102.6, tied with Atlanta) (Covers / Predictem, Nov 10). Leaky defense helps Jazz backdoor chances; pace widens the margin range.",
+        "Klay Thompson averages 20.8 PPG and 5.3 made threes on the road trip, shooting 43.0% from three (Covers, Nov 10). Helps Heat.",
+        "[angle] Rookie Darryn Peterson (26 points at Minnesota Sunday) carries the depleted Jazz offense and will see Davion Mitchell, one of the league's best perimeter defenders (Covers / Predictem, Nov 10). Helps Heat.",
+        "Line: slate Heat -9.5, DraftKings opened Utah +10.5 and closed +8.5 (slate file). The close moved toward Utah even with Markkanen out, so -9.5 is a point worse for Miami than the close. Helps Jazz against the slate.",
+        "Covers' writer took Heat -9.5 (would go to -11.5); Predictem projected Heat 115-106 (a 9-point margin) and played the Under (Nov 10). Writers split around the number; neutral."
+      ],
+      "reasoning": "Utah's best three or four players are out and its offense is 29th-level, which supports Miami, but Miami is at the end of a five-game road trip with a 26th-ranked defense, and the close dropped to 8.5. Projection Heat by about 10.5 is only a point past the 9.5, so pass; forced side Miami on Utah's missing starters. A healthy Markkanen would have moved me to Utah.",
+      "forcedSide": "Miami Heat",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Orlando Magic",
+      "home": "Sacramento Kings",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -4.5,
+      "research": [
+        "Orlando is 2-7 on a four-game losing streak and winless on this West Coast trip (Predictem, Nov 10). Helps Kings.",
+        "Sacramento is 1-9 and winless at home (Predictem, Nov 10). Helps Magic.",
+        "Orlando is without Paolo Banchero (high ankle sprain), Jalen Suggs (knee bone bruise), Jonathan Isaac and Noah Penda (Predictem, Nov 10). Helps Kings.",
+        "Sacramento's Domantas Sabonis (knee) and Keegan Murray (wrist) are questionable; Sabonis missed Sunday's 114-108 loss to Miami, and his absence costs about 14.6 rebounds a night (Predictem, Nov 10). Helps Magic if they sit.",
+        "Orlando's offense: 107.9 points per 100 possessions (fourth-worst), -9.3 net rating, 24th in FG%, 25th in defensive rating; it shot 43-of-113 and 18-of-54 from three in an OT loss at Golden State Saturday (Predictem, Nov 10). Helps Kings.",
+        "Sacramento allows 121.5 points per 100 possessions (Predictem, Nov 10). Helps Magic.",
+        "[angle] Kings rookie Darius Acuff Jr. averages 25.9 points and 7.4 assists and scored 32 vs Miami Sunday; the writer calls him 'the real deal' (Predictem, Nov 10). Helps Kings.",
+        "[angle] Orlando plays at Utah Wednesday, so this is the front end of a back-to-back that closes a long road trip (Predictem, Nov 10). Mild help to Kings (possible look-ahead or rest management).",
+        "Line: slate Magic -6.5; DraftKings opened and closed Kings +5.5, and Predictem listed -5.5 at most books (slate file / Predictem, Nov 10). The slate is a point better for Kings bettors than the close.",
+        "Predictem's writer puts a fair line near a field goal (home court about 4) and took Kings +5.5, projecting 112-110 Magic (Nov 10). Helps Kings, but writers' picks are priced.",
+        "Franz Wagner averages 20.8 points and 8.8 assists, carrying the shorthanded Magic, with Wendell Carter Jr. favored on the glass if Sabonis sits (Predictem, Nov 10). Helps Magic."
+      ],
+      "reasoning": "Two bad, banged-up teams, and Orlando's -9.3 net rating and broken shooting make laying 6.5 on the road hard to trust, but Sacramento's 121.5 defensive rating and Sabonis's uncertain status cut the other way. Projection Magic by about 4.5 is 2 points short of the slate and inside the pass band (the close was 5.5), so no pick; forced side Kings. Sabonis confirmed playing would have firmed the Kings lean.",
+      "forcedSide": "Sacramento Kings",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Oklahoma City Thunder",
+      "home": "Portland Trail Blazers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.5,
+      "research": [
+        "OKC is without Chet Holmgren (knee), Jalen Williams (ankle) and Cason Wallace (shoulder); Jaylin Williams and Thomas Sorber are day-to-day (Predictem, Nov 10). Helps Blazers.",
+        "OKC is 8-2 on a four-game win streak, beating Washington 114-75 Saturday (SGA 30 points, 9 assists); it allows a league-low 104.2 points and is +8.1 per 100 possessions (Predictem, Nov 10). Helps Thunder.",
+        "Portland is without Ja Morant (hamstring), Shaedon Sharpe and Vit Krejci; Robert Williams III returns (Predictem, Nov 10). Helps Thunder.",
+        "[angle] Portland is 1-2 at home but 5-1 on the road, and has lost two straight by 22 (125-103 to San Antonio Saturday; Luka scored 53 against it Friday) (Predictem / Covers, Nov 10). Mixed, leans Thunder.",
+        "Portland scores 119.3 a game (third), makes 15.1 threes a game and is the league's best spot-up offense (35.1 a game), while OKC allows the fifth-most spot-up points (31.5) (Predictem / Covers, Nov 10). Helps Blazers.",
+        "Portland turns it over about 17 times a game against OKC's length and defense (Predictem, Nov 10). Helps Thunder.",
+        "Line moved toward OKC: opened Thunder -1.5, -2.5 at most books on game day (Predictem, Nov 10); the slate is -1.5 (no DraftKings close in the file). Helps Thunder.",
+        "Rest is even: both teams last played Saturday (Predictem, Nov 10). Neutral.",
+        "[angle] The teams meet again in Portland on Wednesday, a two-game set where adjustments could matter in game two, not this one (Predictem, Nov 10). Neutral.",
+        "OKC is 3-7 to the over to start the year with its offense below its usual standard; Kenrich Williams has moved into the starting lineup (Covers, Nov 10). Mild help to Blazers.",
+        "Portland is 20-29 O/U as an underdog since last season (Covers, Nov 10). Neutral for the side."
+      ],
+      "reasoning": "OKC is down three starters, but SGA and the league's best defense against a Portland team without Morant and Sharpe that has lost two straight by 22 still make the Thunder the better side, and the market moved toward them (1.5 to 2.5). Projection OKC by 2.5 is only a point past the slate, so pass; forced side Thunder, also because a forced underdog in a near pick'em is the weakest cell in LESSONS. Any further OKC absence would have flipped it.",
+      "forcedSide": "Oklahoma City Thunder",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

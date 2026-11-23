@@ -1,0 +1,52 @@
+{
+  "sport": "ncaab", "date": "2026-11-14", "chunk": "ncaab-2026-11-14-1",
+  "games": [
+    {
+      "away": "Stonehill Skyhawks", "home": "Texas Tech Red Raiders",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 35.0,
+      "research": [
+        "Only one clean pre-game source was found (Predictem, Nov 14); Covers had no preview URL. Fewer than 10 independent facts, so confidence is lowered.",
+        "[angle] Predictem (Nov 14): Stonehill had travel problems from a ground stop, and tip was moved to 1 PM Central. A disrupted trip for a 345th-ranked team helps Texas Tech.",
+        "Predictem (Nov 14): Texas Tech beat No. 3 Illinois 84-78 (led 49-29 at half), beat Jackson State by 34 and Bethune-Cookman by 18. Its two cupcake margins average 26, under this 39.5. Helps Stonehill.",
+        "Predictem (Nov 14): Stonehill lost at Fordham and at Columbia, both by 20. At Columbia it led 36-34 at half and was outscored 41-19 after. A second-half collapse pattern helps Texas Tech.",
+        "Predictem (Nov 14): Texas Tech shoots 42% from the field and 29% from three. Poor shooting limits a 40-point blowout, which helps Stonehill.",
+        "Predictem (Nov 14): Texas Tech forces 11.3 steals a game and ranks 17th in Torvik adjusted defense. Stonehill shoots 39.9% and 26.7% from three. Helps Texas Tech.",
+        "[angle] Predictem (Nov 14): JT Toppin (torn ACL) is out until about late December. Known, priced. Tech's frontcourt depth leans on transfer Jamichael Stillwell (11 and 13 in his debut).",
+        "Spread (Predictem, Nov 14): the line reportedly opened around 37.5 and rose to 40.5 even though most tickets were on Stonehill. That suggests money on Tech. The archive has open -40.5 and close -39.5 (the slate's number). Treat the close as fair.",
+        "Spread (Predictem, Nov 14): the writer's own projection is inconsistent (text says Tech by about 29; projected score 85-53 is 32). He picks Stonehill +40.5 as a 'lean'. Priced.",
+        "[angle] Predictem (Nov 14): Stonehill has 11 newcomers (nine transfers). Felipe Patino and Jack Medalie average 11 points each. A rebuilt roster is a coin flip by past lessons.",
+        "Spread: the total opened 142.5 and closed 143.5, little changed. A low total means limited possessions for a 40-point margin. Per lessons, already priced and not a reason."
+      ],
+      "reasoning": "Tech's cupcake margins (34 and 18) and poor shooting argue against 39.5, but Stonehill is worse than those opponents and arrives after a travel mess. My Tech-by-35 projection is a soft number, and big college underdogs have been no edge. Pass. The most unusual angle is the ground stop and moved tip. A clean Torvik margin well under 35 would have made Stonehill a lean.",
+      "forcedSide": "Stonehill Skyhawks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "LSU Tigers", "home": "Gonzaga Bulldogs",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 6.5,
+      "research": [
+        "Covers (Nov 14): the game is at Numerica Veterans Arena in Spokane, Gonzaga's home floor (not neutral). It's a first-ever meeting.",
+        "Covers (Nov 14): KenPom, Bart Torvik and Erik Haslam project Gonzaga by 7 to 9. Public models are priced; slight lean to Gonzaga.",
+        "Spread (Predictem, Nov 14): Gonzaga opened -6.5 and moved to -5.5, with -4.5 at some books, even though most bets are on Gonzaga. That points to money on LSU. The archive has open -6.5 and close -5.5, the slate's number. Treat the close as fair.",
+        "Spread (Covers, Nov 14): Gonzaga is 19-24 ATS as a home favorite since 2024. Old and priced; slight lean to LSU.",
+        "[angle] Predictem (Nov 14): Gonzaga transfer Michael Wiggins (6-10, from Florida State) was granted eligibility Thursday and is expected to debut, and Izan Almansa is expected back from a foot injury. That late news adds frontcourt depth and helps Gonzaga.",
+        "[angle] Predictem (Nov 14): LSU has no returning player from last year's 15-17 team. Its 3-0 start came against LSU New Orleans, Texas Southern and Louisiana Tech, all at home and by 40+, so it's untested. Mild lean to Gonzaga.",
+        "Predictem (Nov 14): LSU shoots 27% from three but is top five in points in the paint. Donovan Dent averages 13.7 points, 8.3 assists and 3.3 steals. Mixed.",
+        "Covers (Nov 14): Gonzaga is 7th in KenPom adjusted offense and shooting 47.5% from three through two games. Predictem calls that unsustainable, which helps LSU.",
+        "Covers (Nov 14): LSU ranks 9th in transition frequency (Torvik) and 285th in defensive free-throw rate, so it fouls a lot. Helps Gonzaga at home.",
+        "Predictem (Nov 14): Gonzaga's seven straight wins at the Spokane arena include a 38-point win over Baylor and 16 over Oklahoma. Venue history is priced.",
+        "[angle] Predictem (Nov 14): freshman Michael Ruzic averages 15.7 points off LSU's bench on 77.8% shooting against cupcakes. Likely to regress; helps Gonzaga.",
+        "Writers split: Covers' Geoff Clark takes LSU +5.5 and the Over 160.5; Predictem's Jensen takes Gonzaga -5.5 (84-76). Priced."
+      ],
+      "reasoning": "The models (Gonzaga by 7-9), the Wiggins/Almansa news and LSU's untested résumé lean Gonzaga, but money moved the line toward LSU and Gonzaga's hot shooting should cool. My Gonzaga-by-6.5 projection is within about 1 of the 5.5 close. Pass. The surprising angle is Wiggins being cleared two days before the game. LSU's three-point shooting and the reverse movement kept me off Gonzaga.",
+      "forcedSide": "Gonzaga Bulldogs",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "sport": "ncaab", "date": "2026-11-11", "chunk": "ncaab-2026-11-11-1",
+  "games": [
+    {
+      "away": "Colgate Raiders", "home": "St. John's Red Storm",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 27.0,
+      "research": [
+        "Line: slate St. John's -28.5; archive open -27.5, close -28.5. Slate and close agree, so the market settled right on this number (slate archive) - neutral.",
+        "Total moved 156.5 -> 158.5 at the close (slate archive), so the market expected a bit more scoring, which slightly favors a bigger margin - mild St. John's.",
+        "Rick Pitino is 20-0 at Carnesecca Arena with an average 24.1-point margin, per the school (Predictem, Nov 11). That average is a few points under -28.5 - mild Colgate.",
+        "St. John's beat Iona 104-65 and Monmouth by 15; Pitino called the Monmouth game 'mediocre' after a strong first 10 minutes (Predictem, Nov 11). Two very different margins - neutral.",
+        "[angle] The St. John's press has produced 23 steals and 37 forced turnovers worth 47 points in two games (Predictem, Nov 11). Colgate's answer is ball security at about 9.5 turnovers a game. That is the key matchup, and Colgate's low turnover rate helps it - mild Colgate.",
+        "Colgate is 0-2: it lost to Washington by 14 after leading part of the first half, and lost 77-74 at Drexel after blowing an 11-point second-half lead (Predictem, Nov 11). It is competitive but not closing games - Colgate can score.",
+        "Andrew Alekseyenko (last year's Patriot League Rookie of the Year) averages 22.5 points and 12.5 rebounds and is 7-of-11 from three; Sam Wright scored 21 at Drexel (Predictem, Nov 11) - Colgate.",
+        "[angle] Colgate lost its top scorer and assist man, Jalen Cox, to USC in the transfer portal (Predictem, Nov 11), which weakens its handling against a press - St. John's.",
+        "[angle] Pitino said 'Colgate is a team that will take 40 3s if they have to' (Predictem, Nov 11). A three-heavy underdog brings variance both ways: a cold night means a blowout, a hot one means a cover - neutral.",
+        "St. John's depth: Quinn Ellis has 18 assists to 2 turnovers, Baylor transfer Tounde Yessoufou scored 23 vs Iona, Keyshawn Hall averages 19.5 and Ian Jackson is 6-of-13 from three (Predictem, Nov 11) - St. John's.",
+        "Schedule: St. John's plays Syracuse at MSG three days later (Predictem, Nov 11), a possible look-ahead or reason to rest starters late - mild Colgate.",
+        "Predictem's model has St. John's by about 23 and lists Colgate +28.5 as only 'a lean' (Predictem, Nov 11). Preview picks are already priced - tiebreaker at most."
+      ],
+      "reasoning": "The close sits right at the slate's 28.5, and the strongest finding is Pitino's 24-point average home margin against a Colgate team that protects the ball, but that is priced. The press-versus-ball-security matchup is the most interesting angle, offset by losing Cox. No read on a 25+ college line, so pass; Colgate is the forced side on ball security alone.",
+      "forcedSide": "Colgate Raiders",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Marquette Golden Eagles", "home": "Michigan Wolverines",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "Line: slate Michigan -3.5; archive open -4.5, close -2.5. The market moved two points toward Marquette, and against the close the slate's +3.5 is a better number than the market's final price - Marquette at the slate number, but the move is priced.",
+        "Total moved up from 153.5 to 157.5 (slate archive).",
+        "Barttorvik ranks Michigan 21st and Marquette 23rd overall; Marquette's defense is 13th to Michigan's 18th (Predictem, Nov 11). The teams are nearly even, so the home edge is about the line - neutral.",
+        "[angle] Michigan is in a coaching transition: Dusty May left for the Dallas Mavericks and Mike Boynton Jr. took over the defending champions (Predictem, Nov 11) - mild Marquette.",
+        "Michigan's guards are cold: they shot 23% from three as a team, Cadeau is 1-of-9, Gayle has no threes in two games, and they went 7-of-34 from three vs Oakland (Covers, Nov 11; Predictem, Nov 11). That is a two-game sample from a 38% shooter, which suggests regression at home - Michigan.",
+        "Trey McKenney averages 19.5 points and is 7-of-15 from three, with all 22 of his points vs UConn after halftime; J.P. Estrella averages 17.0 points and 10.5 rebounds (Predictem, Nov 11) - Michigan.",
+        "[angle] Michigan's bigs are in foul trouble: Estrella fouled out of the opener in 21 minutes and had four more fouls vs UConn, and Thiam had four in 15 minutes (Predictem, Nov 11) - Marquette.",
+        "Marquette's defense held Detroit Mercy and Mercyhurst to 37.5 points a game on 25.6% shooting and 9-of-55 from three, and forces turnovers on 28.1% of possessions (Predictem, Nov 11; Covers, Nov 11). Those were weak opponents, so treat the numbers as inflated - mild Marquette.",
+        "[angle] This is Marquette's first road game and first ranked opponent. It went 12-20 last season and 2-10 on the road, and hasn't won in Ann Arbor since 1954 (Predictem, Nov 11) - mild Michigan.",
+        "Michigan lost 85-77 to UConn in Boston, with 11 first-half turnovers, and is trying to avoid its first two-game losing streak since 2024-25 (Predictem; Covers, Nov 11). Bounce-back motivation at home - mild Michigan.",
+        "Marquette has covered 10 of its last 13 games and gone Under in 10 of 13 (Covers, Nov 11) - ATS records are priced, mild Marquette at most.",
+        "Both Covers (Marquette +3.5, combo with Under) and Predictem (Marquette +3.5, projecting 78-76) take Marquette (Nov 11). Public-facing previews on one side line up with the move to -2.5 - priced."
+      ],
+      "reasoning": "Two even teams by Torvik, a close of -2.5, and a projection of Michigan by about 3 put this inside the pass band. The coaching change and foul trouble favor Marquette, and Michigan's likely shooting regression at home favors Michigan. The market already moved toward Marquette, so there is nothing unpriced. Forced Michigan on the shooting regression against a defense whose numbers came against weak opponents.",
+      "forcedSide": "Michigan Wolverines",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Jacksonville State Gamecocks", "home": "Houston Cougars",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 32.0,
+      "research": [
+        "Line: slate Houston -36.5; archive open -34.5, close -33.5. The slate and close differ by 3, which is a data flag per LESSONS; Predictem also quoted 36.5 that morning - neutral, low trust.",
+        "Total closed at 136.5 (slate archive), the lowest on this slate. A low total is not a reason per LESSONS - neutral.",
+        "Barttorvik ranks Houston 5th overall with the 5th-best adjusted defense, and Jacksonville State around 213th (Predictem, Nov 11) - Houston.",
+        "Houston is 2-0 and beat California 86-68 in Lake Tahoe behind Dedan Thomas Jr.'s 20 points and 8 assists; it went 15-1 at home last season (Predictem, Nov 11) - Houston.",
+        "[angle] Jacksonville State lost 83-80 in double overtime to South Alabama after leading by 10 with 1:26 left; Ray Harper called it a gift they gave away (Predictem, Nov 11). It plays three days later on a short emotional turnaround - mild Houston.",
+        "Jacksonville State hit 16 threes vs South Alabama, with Jordan Stiemke at a career-high 27 and Chris Lockett Jr. at 25 (Predictem, Nov 11). It can score from three, which is the underdog's backdoor path - mild Jacksonville State.",
+        "Jacksonville State turned it over 14 times and missed seven free throws vs South Alabama (Predictem, Nov 11). Against Houston's turnover-forcing defense that gets worse - Houston.",
+        "[angle] Predictem's writer argues Sampson clears his bench once the lead reaches about 30 and projects the margin in the mid-20s, 81-52 (Predictem, Nov 11). LESSONS says bench-clearing is priced - neutral.",
+        "[angle] Houston follows a neutral-site trip to Lake Tahoe with a home game vs a sub-200 opponent, a classic flat-spot setting, but Sampson's teams rarely play flat at home - neutral.",
+        "Writer's pick Jacksonville State +36.5 (Predictem, Nov 11) - preview picks are priced, tiebreaker only.",
+        "Only about 10 solid facts were found for this game; no injury news for either side."
+      ],
+      "reasoning": "The slate's 36.5 sits 3 points above the 33.5 close, a data flag, so no case can rest on either number. Houston's elite defense against a sloppy Jacksonville State is real but priced in a 30+ line. Pass on a 25+ college line; forced Jacksonville State only because the slate number is above the close.",
+      "forcedSide": "Jacksonville State Gamecocks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Robert Morris Colonials", "home": "Arkansas Razorbacks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 31.0,
+      "research": [
+        "Line: slate Arkansas -31.5; archive open and close both -29.5. The slate is 2 points higher than the market, so against the close the slate's Arkansas number is worse - mild Robert Morris at the slate number.",
+        "Total moved 154.5 -> 155.5 (slate archive).",
+        "Robert Morris is 0-2, losing 86-49 at Nevada and 79-56 at UIC. It averages 52.5 points on 33% shooting, 26% from three and 19.5 turnovers a game (Predictem, Nov 11, from ESPN) - Arkansas.",
+        "Barttorvik ranks Robert Morris's offense 255th and Arkansas's defense 34th; both are still heavy on preseason priors (Predictem, Nov 11) - Arkansas.",
+        "[angle] Arkansas comes home off a 91-72 loss at Virginia, which John Calipari called 'a punch in the mouth' (Predictem, Nov 11). A motivated response at home against a weak opponent - mild Arkansas.",
+        "Arkansas beat Arkansas-Pine Bluff by 45 in its opener, scoring 106 (Predictem, Nov 11) - mild Arkansas.",
+        "Arkansas blocks 8.5 shots a game, and Billy Richmond III and Maper Maker each had three vs Virginia (Predictem, Nov 11). That is a problem for a 33%-shooting team - Arkansas.",
+        "[angle] Calipari trusts only 9-10 players, per Predictem (Nov 11), so a short rotation means less garbage-time dilution than usual for a 30-point favorite - mild Arkansas.",
+        "[angle] Robert Morris went 22-11 last season (Predictem, Nov 11), so the 0-2 start against two road opponents may overstate its decline - mild Robert Morris.",
+        "Freshman Jordan Smith Jr. averages 19.5 points for Arkansas (Predictem, Nov 11) - Arkansas.",
+        "Both teams project to 70-72 possessions; Predictem projects 89-61 (28) and plays Under 158.5 (Nov 11) - neutral on the side.",
+        "Only about 10 solid facts; no injury news for either team."
+      ],
+      "reasoning": "Robert Morris's offense (52.5 ppg, 19.5 turnovers) against Arkansas's shot-blocking is the clearest mismatch, but 'the underdog can't score' is priced and has lost before. The slate's -31.5 is 2 points above the -29.5 close. No read on a 25+ line, so pass. Forced Arkansas on the matchup and Calipari's short rotation.",
+      "forcedSide": "Arkansas Razorbacks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Arkansas-Pine Bluff Golden Lions", "home": "UCLA Bruins",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 46.0,
+      "research": [
+        "Line: slate UCLA -44.5; archive open -43.5, close -47.5. The market moved 3-4 points toward UCLA, so against the close the slate's -44.5 is the better UCLA number. Per LESSONS, a better slate number has not paid - neutral.",
+        "Total closed at 156.5 with no movement (slate archive).",
+        "Pine Bluff is 0-2, losing 106-61 at Arkansas and 109-53 at Baylor. It averages 30.5 turnovers and allows 107.5 points, last of 365 Division I teams (Predictem, Nov 11) - UCLA.",
+        "Barttorvik ranks UCLA's offense 14th and defense 22nd, and Pine Bluff 363rd (Predictem, Nov 11) - UCLA.",
+        "UCLA beat then-No. 5 Arizona 84-75, then North Florida 114-63 with a 35-0 first-half run, and rose from No. 22 to No. 9 (Predictem, Nov 11) - UCLA.",
+        "[angle] Freshman Nikola Kusturica, 17, scored 29 points after making his first nine shots and was Big Ten Freshman of the Week; freshman Joe Philon III is shooting 90% (Predictem, Nov 11). A young, hot rotation - mild UCLA.",
+        "[angle] This is Pine Bluff's third straight road guarantee game (Predictem, Nov 11), so fatigue and travel pile up - UCLA.",
+        "[angle] Mick Cronin isn't known for running up scores, and long bench minutes late could allow a backdoor cover; UCLA plays only about 69 possessions (Predictem, Nov 11). LESSONS says this is priced - mild Pine Bluff.",
+        "Pine Bluff's leading scorers are Jalen Tatum (13.5) and Macaleab Rich (13.0) (Predictem, Nov 11). There is no proven shooter to drive a backdoor - mild UCLA.",
+        "ESPN's predictor gives UCLA a 99.7% chance to win (via Predictem, Nov 11). Predictem's pick is Pine Bluff +44.5 as a 'lean', projecting 94-57 (37) - preview picks are priced.",
+        "Only about 10 solid facts; no injury news."
+      ],
+      "reasoning": "Pine Bluff's numbers (30.5 turnovers, 107.5 points allowed, losses by 45 and 56) are historically bad, and the close moved to -47.5. Against that, Cronin's slow pace and bench usage are priced. No read on a 40+ line, so pass. Forced UCLA because Pine Bluff's turnover rate feeds transition and the slate number is under the close.",
+      "forcedSide": "UCLA Bruins",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Lindenwood Lions", "home": "Nebraska Cornhuskers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 32.0,
+      "research": [
+        "Line: slate Nebraska -34.5; archive open and close both -34.5. Steady, so there is no market signal - neutral.",
+        "Total moved 151.5 -> 153.5 (slate archive).",
+        "Barttorvik ranks Nebraska 14th with the 10th-best adjusted defense, and Lindenwood 286th with the 312th offense (Predictem, Nov 11) - Nebraska.",
+        "Nebraska is 2-0, beating Le Moyne by 42 and Providence only 67-58; it went 28-7 last season and 16-2 at home (Predictem, Nov 11). The Providence game shows its defense-first style can keep margins down - mild Lindenwood.",
+        "[angle] Lindenwood's 98 points a game is inflated by wins of 74 and 71 over non-Division I Central Bible and East West (Predictem, Nov 11). Its offense has been tested only once - Nebraska.",
+        "Lindenwood lost 98-59 at TCU, a 39-point loss to a weaker power-conference team than Nebraska (Predictem, Nov 11) - Nebraska.",
+        "Pryce Sandfort averages 22.5 points and scored 25 vs Providence (Predictem, Nov 11) - Nebraska.",
+        "[angle] Predictem estimates Nebraska outscores Lindenwood by about 32 points per 100 possessions, a mid-20s margin before home court, at 70-74 possessions (Predictem, Nov 11) - mild Lindenwood.",
+        "[angle] This is a 9 PM ET weeknight home guarantee game sandwiched before Boise State (Nov 15) and South Dakota (Nov 18), per Predictem's later preview slugs, so it is a low-stakes spot for heavy starter minutes - mild Lindenwood.",
+        "Writer's pick Lindenwood +34.5, projecting 89-61, and would stop below +31 (Predictem, Nov 11) - priced, tiebreaker only.",
+        "Only about 10 solid facts; no injuries reported."
+      ],
+      "reasoning": "With a flat line at -34.5, Nebraska's elite defense against a Lindenwood offense tested once (a 39-point loss at TCU) is all known. Projected about 32, inside the noise of a 30+ college line. Pass; forced Lindenwood on Nebraska's slow, defense-first margins (only +9 vs Providence).",
+      "forcedSide": "Lindenwood Lions",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "USC Trojans", "home": "California Golden Bears",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -9.0,
+      "research": [
+        "Line: slate Cal +8.5; archive open and close both +7.5. Against the close the slate gives USC a worse number by 1 - mild Cal at the slate number.",
+        "Total moved 160.5 -> 159.5 (slate archive).",
+        "USC averages 94 points, led by Alijah Arenas (25.5) and Rodney Rice (23.5) (Covers, Nov 11) - USC.",
+        "USC gets to the line at the 5th-highest rate in the country and makes 81.8% of its free throws (Covers, Nov 11), which helps hold a margin late - USC.",
+        "[angle] Cal's only returning starter, center Lee Dort, has not played yet this season (Covers, Nov 11). That leaves Cal thin inside against USC's twin freshmen Adonis and Darius Ratliff - USC.",
+        "Cal lost 86-68 to Houston in Lake Tahoe (Predictem Houston preview, Nov 11) and ranks 93rd in KenPom adjusted offense (Covers, Nov 11) - USC.",
+        "[angle] Both teams come off the Lake Tahoe Classic, and USC travels again for an 11 PM ET tip in Berkeley; Covers calls the travel 'manageable', same state and time zone (Nov 11) - neutral.",
+        "USC is 5-0 in its last five games as a road favorite (Covers, Nov 11) - ATS trends are priced, mild USC.",
+        "[angle] Eric Musselman's team is called 'vastly improved' (Covers, Nov 11), but a rivalry road game at Haas Pavilion against a desperate home underdog is a classic spot where favorites under-perform - mild Cal.",
+        "The combined 183 points a game is inflated by weak opponents (Covers, Nov 11) - neutral.",
+        "Writer's pick USC -8.5, good to -9.5 (Covers, Nov 11) - priced.",
+        "Only about 10 solid facts; no injury report beyond Dort."
+      ],
+      "reasoning": "USC's talent and free throws against a Cal team missing Dort point to a 9-10 point USC win, but the close of +7.5 says the market likes Cal slightly more than the slate. The projection sits within a point of the number, so pass. Forced USC on the Dort absence and USC's backcourt scoring.",
+      "forcedSide": "USC Trojans",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

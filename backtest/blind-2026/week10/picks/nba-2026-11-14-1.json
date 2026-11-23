@@ -1,0 +1,124 @@
+{
+  "sport": "nba", "date": "2026-11-14", "chunk": "nba-2026-11-14-1",
+  "games": [
+    {
+      "away": "Denver Nuggets", "home": "New Orleans Pelicans",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -14.0,
+      "research": [
+        "Predictem (Nov 14): Pelicans list Trey Murphy III, Dejounte Murray, Yves Missi, Trendon Watford and Bryce McGowens as out on Friday's official report. Helps Denver.",
+        "[angle] Covers (Nov 14): Dejounte Murray has reportedly requested a trade, which leaves Jeremiah Fears as New Orleans' main guard. Helps Denver.",
+        "Predictem (Nov 14): New Orleans is 4-9 on a five-game losing streak and has allowed 138+ points in four straight games, losing by 16, 51, 34 and 31. Helps Denver.",
+        "Covers (Nov 14): over their last four games the Pelicans allowed 139.4 points per 100 possessions, 15.1 worse than any other team. Helps Denver.",
+        "[angle] Schedule (Predictem/Covers, Nov 14): Denver hasn't played since Wednesday's 123-118 win at Memphis, while New Orleans is on no rest after Friday's 142-111 home loss to Memphis. Helps Denver.",
+        "Spread (slate): Denver opened -10.5 and closed -12.5, the same as the slate. The market has already moved 2 points on the Pelicans' injuries and form. This is neutral against the close.",
+        "Predictem (Nov 14): Denver net rating is +1.2 (117.6 offense, 116.4 defense), which is modest for a 12.5-point road favorite. Helps New Orleans cover.",
+        "[angle] Covers (Nov 14): Jokic is shooting 23.3% from three, on pace for a career worst, and New Orleans' paint scoring fell to 45 a game over its last four from a league-best 56.5. Mixed.",
+        "Covers (Nov 14): New Orleans forced 20.5 turnovers a game during its earlier four-game winning streak, now 12.3 (24th). Its disruptive defense has disappeared. Helps Denver.",
+        "Spread (Covers, Nov 14): the Over is 5-0 in the Pelicans' last five as a favorite. Denver covered in its 104-91 win at New Orleans on Oct 28 and has won both meetings this season. Head-to-head is priced; slight lean to Denver.",
+        "Predictem (Nov 14): the writer flags a slower pace and Denver's own defense as the risks to a 13+ margin. Helps New Orleans.",
+        "Both preview writers (Covers' Walder, Predictem's Jensen) pick Denver -12.5. Their picks are priced and public, so this is a tiebreaker at most."
+      ],
+      "reasoning": "Every injury and form factor points to Denver, but the line already moved from 10.5 to 12.5 on them and my Denver-by-14 projection is within 2 of the close. Pass. The trade-request story around Murray is the most unusual angle. Confirmation of more Pelicans absences after the close settled would have pushed me toward Denver.",
+      "forcedSide": "Denver Nuggets",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Dallas Mavericks", "home": "Cleveland Cavaliers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -2.5,
+      "research": [
+        "Line check: the slate has Dallas -1.5 (ML -130). On Saturday morning Covers listed Cleveland -1.5 and Predictem Cleveland -2.5, a move of about 3-4 points toward Dallas. The slate has no archived close, so I can't confirm where the line closed. Priced, and a data flag.",
+        "Predictem (Nov 14): Evan Mobley is out (sprained left big toe, per ESPN), and Sam Merrill (elbow) and Nae'Qwan Tomlin (back) are also out. Helps Dallas, but it's likely what moved the line.",
+        "[angle] Covers (Nov 14): flight disruptions forced Cleveland to stay overnight in Miami, so it travels on game day on the second night of a back-to-back. Helps Dallas.",
+        "Predictem (Nov 14): Cleveland lost 133-121 at Miami on Friday and is 6-7, 4-6 in its last 10. Helps Dallas.",
+        "[angle] Predictem/Covers (Nov 14): Dallas lost 133-94 at Minnesota on Thursday, a 39-point loss, but has had a day of rest. Bounce-back spot; mildly helps Dallas.",
+        "Spread (Covers, Nov 14): Dallas is 5-1 ATS in its last six games. Priced; slight lean to Dallas.",
+        "Predictem (Nov 14): both teams have a +1.0 net rating, but Basketball Reference's schedule-adjusted rating is Dallas +4.2 vs Cleveland -0.6. Helps Dallas.",
+        "Covers (Nov 14): Cleveland ranks 21st in defense (116.0 per 100) and allows 68.3 points a game to guards. Predictem: Dallas allows 112.7 per 100. Helps Dallas.",
+        "Predictem (Nov 14): Dallas is still without Dereck Lively II (foot surgery), and Max Christie is questionable (ankle). Helps Cleveland a little.",
+        "Spread (Predictem, Nov 14): about 69% of tickets were on Cleveland in the morning, yet the line moved toward Dallas. That reads as money or news on Dallas. Per lessons, line moves point nowhere; treat the move as priced.",
+        "Covers (Nov 14): Dallas has faced the 7th-toughest schedule, Cleveland the 14th. Slightly helps Dallas.",
+        "Covers (Nov 14): Cooper Flagg averages 24.6 points and 6.5 assists (Predictem). Donovan Mitchell averages nearly 23 for Cleveland. Star matchup roughly even."
+      ],
+      "reasoning": "The rest, travel and Mobley angles all favor Dallas, but the line appears to have flipped about 4 points from Cleveland -2.5 to Dallas -1.5 on exactly that news, so it's priced. My Dallas-by-2.5 projection is within about 1 of the slate. Pass. The unusual angle is Cleveland's game-day travel after its flight was disrupted. A late Mobley return would have made Cleveland the side.",
+      "forcedSide": "Dallas Mavericks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Detroit Pistons", "home": "Miami Heat",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -5.5,
+      "research": [
+        "Predictem (Nov 14): Detroit is 8-3 and 5-1 on the road, with a +7.7 net rating and the 4th-best defense (107.9 per 100). Helps Detroit.",
+        "Predictem (Nov 14): Jalen Duren (right hamstring) and Isaiah Joe (hip) are out for Detroit. Covers: without Duren, Detroit allows 45.9 rebounds a game (23rd). Helps Miami.",
+        "Covers (Nov 14): Klay Thompson (ankle) is 'hopeful to return tonight'. Predictem: Thompson and Pelle Larsson (illness) sat Friday. Unresolved; would help Miami if he plays.",
+        "[angle] Schedule (Predictem, Nov 14): Miami is on the second night of a back-to-back after beating Cleveland 133-121 on Friday, with Adebayo playing 38 minutes and Davion Mitchell 39. Helps Detroit.",
+        "[angle] Predictem (Nov 14): Detroit played a double-overtime game at Washington on Thursday (Cunningham 52 points; Ausar Thompson 43 minutes, Daniss Jenkins 42) but had Friday off. Partly offsets Miami's fatigue.",
+        "Spread (Covers, Nov 14): Miami is 0-2 straight up and ATS on no rest this season and shot 43% or worse in both losses. Helps Detroit.",
+        "Spread (Covers, Nov 14): Detroit is 4-1 ATS in its last five as a road favorite. Priced; slight lean to Detroit.",
+        "Spread (slate): Detroit opened -5.5 and closed -4.5, a 1-point move toward Miami, matching the slate. Neutral against the close.",
+        "Covers (Nov 14): Miami allows 120.5 points per 100 at home, 3rd-worst. Predictem: Miami's net rating is -2.8 and it plays the 3rd-fastest pace. Helps Detroit.",
+        "Predictem (Nov 14): Miami has won three straight, with Adebayo (37 and 14) and Giannis Antetokounmpo (37) carrying it Friday. Helps Miami.",
+        "Head-to-head (Predictem/Covers, Nov 14): Detroit won 128-111 on Oct 24 in Miami, holding the Heat to 38% shooting. Priced; tiebreaker only.",
+        "Both writers (Walder, Jensen) pick Detroit -4.5, with Jensen projecting 117-109. Priced."
+      ],
+      "reasoning": "Detroit's efficiency edge and Miami's back-to-back point to the Pistons, but Duren's absence on the glass, a possible Klay Thompson return, and Detroit's own heavy Thursday minutes keep my Detroit-by-5.5 projection within about 1 of the 4.5 close. Pass. The angle is that both teams are tired in different ways: Detroit from double overtime two nights earlier, Miami from a back-to-back. A confirmed Thompson absence would have tilted me to Detroit.",
+      "forcedSide": "Detroit Pistons",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Brooklyn Nets", "home": "Memphis Grizzlies",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 5.0,
+      "research": [
+        "Line check: the slate has Memphis -3.5. The archive's open is -5.5 and close -4.5, and Predictem had -5 on the morning of the game. The close is 1 point past the slate, so I judge against -4.5.",
+        "Predictem (Nov 14): Memphis is without Zach Edey (ankle) and Quinten Post (concussion), and Jerami Grant left Friday's game late after a collision, status unclear. Helps Brooklyn.",
+        "[angle] Schedule (Predictem, Nov 14): Memphis is on the second night of a back-to-back after Friday's 142-111 win over New Orleans. Brooklyn last played Wednesday and is rested, but this is the last game of a four-game road trip. Mixed, leaning Brooklyn.",
+        "[angle] Predictem (Nov 14): Memphis is 6-0 on the road but 2-4 at home, with four straight home losses. An odd split that helps Brooklyn if it's real.",
+        "Spread (Predictem, Nov 14): Memphis is 8-4 ATS this season. Priced; slight lean to Memphis.",
+        "Predictem (Nov 14): Brooklyn is 3-8, scores about 110 per 100 (23rd), allows 115 and ranks 29th in turnover rate. Helps Memphis.",
+        "Predictem (Nov 14): Memphis is described as top-10 on both offense and defense by Basketball Reference efficiency. Helps Memphis.",
+        "Predictem (Nov 14): Brooklyn beat New Orleans 145-111 on Wednesday but lost its three previous road games. Mixed.",
+        "Predictem (Nov 14): Nolan Traore (calf) and Mikel Brown Jr. (illness) are day-to-day for Brooklyn. Slightly helps Memphis if they sit.",
+        "Predictem (Nov 14): Ty Jerome averages 26.2 points for Memphis. Michael Porter Jr. (21.5) and Julius Randle (19.7) lead Brooklyn, so the underdog has scorers. Helps Brooklyn's chance to stay close.",
+        "Spread (slate): the line moved from -5.5 to -4.5 toward Brooklyn, consistent with the Grant uncertainty and the back-to-back. Priced.",
+        "Predictem's Jensen picks Memphis -5, projecting 118-108. Priced."
+      ],
+      "reasoning": "The efficiency gap favors Memphis, but its back-to-back, missing bigs, Grant's unclear status and the strange home slump offset it. My Memphis-by-5 projection sits on the 4.5 close. Pass. The surprising angle is Memphis 6-0 on the road and 2-4 at home. Grant's final status was the deciding unknown, so this is a pass by my own trigger.",
+      "forcedSide": "Memphis Grizzlies",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Chicago Bulls", "home": "Minnesota Timberwolves",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 16.0,
+      "research": [
+        "Predictem (Nov 14): Minnesota has won five straight, is 6-2 since Anthony Edwards went down, and is 11-1 ATS (best in the league per TeamRankings). Helps Minnesota, though priced.",
+        "Covers (Nov 14): Minnesota is 6-0 ATS in its last six games after an ATS win. Priced; tiebreaker toward Minnesota.",
+        "Predictem (Nov 14): Edwards (knee, out since Oct 26, target around Dec 21) and Donte DiVincenzo (Achilles) are out for Minnesota. Long-known, priced.",
+        "[angle] Schedule (Predictem, Nov 14): Chicago is on the second night of a back-to-back after Friday's 125-117 overtime win over Atlanta, with travel on under 24 hours' rest, while Minnesota is rested at home. Helps Minnesota.",
+        "Predictem (Nov 14): Chicago is missing Caleb Wilson (hand surgery), Dailyn Swain and Tobe Awaka, and starting center Jalen Smith is day-to-day (hand). Helps Minnesota.",
+        "Predictem/Covers (Nov 14): Chicago allows 122.5 per 100 and 127.7 points a game, worst in the NBA. Minnesota allows 104.8 per 100, best in the league. Helps Minnesota.",
+        "[angle] Predictem (Nov 14): Chicago plays the league's fastest pace but shoots about 29% from three as a team. Covers says both teams rank top six in pace. A fast game adds variance, which slightly helps a big underdog.",
+        "Covers (Nov 14): Chicago has scored 125 and 119 in its last two games, so it can put up points. Helps Chicago stay inside the number.",
+        "Spread (slate): Minnesota opened -14.5 and closed -16.5, so the market moved 2 points toward Minnesota. The slate's -15.5 is 1 better than the close for Minnesota. Per lessons, a better slate number hasn't been an edge.",
+        "[angle] Predictem (Nov 14): Chicago snapped an eight-game losing streak Friday. Norman Powell scored 33 and Josh Giddey had 14 assists, and Giddey has averaged 12 assists over his last three (Covers). Possible letdown after the emotional win, which helps Minnesota.",
+        "Covers (Nov 14): writer Quinn Allen is 'not comfortable laying 14.5' and plays the Over 235.5. Predictem's Jensen takes Minnesota -14.5 (127-107). Split, priced."
+      ],
+      "reasoning": "A rested, elite defense against the worst defense on a tired back-to-back points to Minnesota, but the close already moved to 16.5. My Wolves-by-16 projection is right on the number, and blowout spreads carry garbage-time variance. Pass. The angle is Chicago's letdown spot after snapping an eight-game skid in overtime and then flying out. Jalen Smith's status was minor.",
+      "forcedSide": "Minnesota Timberwolves",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
