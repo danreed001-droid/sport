@@ -54,6 +54,15 @@ Do **not** open anything else in the repository (especially `data/`, `site/`,
   ruins the test. Seeing results of *earlier* games (before this game's date)
   is fine: that was knowable at the time.
 
+- **Hard rule from Weeks 5-6: every WebSearch call must pass
+  `allowed_domains` set to betting-preview sites only** (covers.com,
+  wagertalk.com, predictem.com, dimers.com, sportsgambler.com,
+  actionnetwork.com, oddsshark.com, pickswise.com, sportsbookreview.com,
+  oddstrader.com, rotowire.com betting pages). Searches limited to those stayed
+  clean; searches of team sites, newspapers, si.com, cbssports.com or with no
+  domain limit leaked results. Only WebFetch pages from those sites (or a
+  preview URL they link to that is clearly dated before the game).
+
 ## The method (Third Opinion)
 
 The question is not "who wins?" but **"who covers the spread?"** For every game,
