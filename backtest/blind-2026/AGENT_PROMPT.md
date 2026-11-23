@@ -118,7 +118,8 @@ reasoning pointed to.
 
 Also, some betting sites leak results too (Weeks 5-6): Covers picks shown
 with ✅/❌ or "went 0-1", Dimers scoreboards and /predictions/ matchup pages,
-Pickswise game pages showing finals, Predictem results lists. Ignore any
+Pickswise game pages showing finals, Predictem results lists, Sportsgambler
+preview pages (their standings tables update to today). Ignore any
 graded pick, scoreboard or results list; don't open those pages.
 
 Budget: aim for about 4-8 searches per game. Depth on the deciding questions

@@ -1,0 +1,30 @@
+{
+  "sport": "nfl", "date": "2026-10-26", "chunk": "nfl-2026-10-26-1",
+  "games": [
+    {
+      "away": "Dallas Cowboys", "home": "Philadelphia Eagles",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -4.0,
+      "research": [
+        "[spread] Line history: Philadelphia opened as a 1.5-point favorite on the lookahead. After the Hurts news the line flipped to Dallas -5.5 around Oct 18, then settled at Dallas -4.5, which held with only juice changes (WagerTalk, Oct 26). SBR (picks submitted Oct 23) had the open at Dallas -6 and some books at -3.5. Covers had -4.5 on game morning (Oct 26, 10:44 AM). The slate's +4.5 matches the consensus close, so there is no slate-line edge. The move came off the -5.5/-6 peak toward the underdog, which helps PHI slightly.",
+        "[spread] Splits disagree. WagerTalk (Oct 26): 69% of bets and 67% of money on Dallas ATS. SBR/BetMGM table: Eagles spread 41% of bets but 65% of handle. That is a possible sharp lean to Philadelphia while the line came back from -5.5/-6 to -4.5 with public tickets on Dallas, a mild reverse move toward the underdog. Helps PHI (LESSONS: the one market sign that has held, tentative).",
+        "[spread] Philadelphia is 2-4 and 1-5 ATS, on a four-game losing streak (its longest under Sirianni), and didn't cover any home game in the skid (WagerTalk; Predictem Oct 26). Dallas is 2-4 and 1-3 ATS as a favorite (Predictem). Mixed and priced.",
+        "[spread] Efficiency: Philadelphia is 30th in EPA per play and last in yards per play. It has had 4.0 ypp or fewer in each of its last three games (3.2 vs the Rams, outgained 415-172), 250 or fewer yards in each game of the skid, and 14.5 points a game in it (WagerTalk; Predictem; SBR). Helps DAL.",
+        "Jalen Hurts is out, on IR with blood clots, likely for the season. Tanner McKee makes his second start; in the first, against Carolina, he went 45 attempts for 215 yards with 35 rushing yards as a team, and said 'I need to be better' (Covers Oct 21/26; Predictem). Helps DAL, but the line already moved about 6-7 points for it, so it's priced.",
+        "[angle] Philadelphia's offensive line is gutted: Lane Johnson retired, the starting center was traded, a rookie plays right tackle and Landon Dickerson is on IR (Predictem, Oct 26). The Eagles have been held to 35 or fewer rushing yards in consecutive games for the first time since 2005 (SBR). Helps DAL.",
+        "[angle] Saquon Barkley (hamstring) was upgraded to available after missing two games, helped by the extra day before Monday night (WagerTalk Oct 26; Covers Oct 26; SBR). That would lift a run game that passed on a league-high 78.7% of plays in Week 6 under new OC Sean Mannion (Covers Oct 21). Helps PHI.",
+        "Dallas's defense is the league's worst pass defense by Predictem's numbers. It allows 6.0 yards per play, a 54.7% third-down rate and a 69% completion rate (third-worst), and has allowed 20+ points in a franchise-record 13 straight games (SBR; Predictem). Helps PHI if McKee can exploit it.",
+        "[angle] Dak Prescott's form: 4.8 YPA in the Sunday night loss at Green Bay (his lowest since 2023 Week 15), two first-half INTs there and 4 INTs in two games, a 3-4 TD-INT ratio since Week 4, and Dallas was shut out in the first half (SBR; Covers Oct 21). His two lowest YPA games came outdoors, and four of Dallas's six games were indoors; this one is outdoors in Philadelphia (Covers). Helps PHI.",
+        "[angle] The Fangio defense could copy Green Bay's zone blueprint that slowed Dallas the week before (SBR; Predictem risks). New CB Joey Porter Jr. hasn't allowed a catch on four targets, which could limit DeVonta Smith, McKee's main target with 14 targets last game (SBR). Mixed.",
+        "Dallas strengths: Prescott is sacked on 2.6% of dropbacks (best in the NFL) against an Eagles pass rush second-to-last in sack rate, and Javonte Williams has 7 rushing TDs against a bottom-five Eagles run defense by EPA (Predictem). LB DeMarvion Overshown and CB Cobie Durant could return (Predictem). Helps DAL.",
+        "[angle] Fatigue: Philly's defense has the second-most time on field this season and has allowed nearly 10 points per fourth quarter (Covers Oct 21). That favors a Dallas late margin, but it also opens backdoor paths with McKee throwing 45 times. Mixed.",
+        "Weather is low 50s with 5-10 mph wind (SBR), not a factor. The total moved between 43.5 and 44.5. Previews mostly projected Dallas by 4-8: Predictem 27-20, WagerTalk 24-16, SBR 23-17, Covers AI 24-20 (Eagles +4.5)."
+      ],
+      "reasoning": "The market already priced Hurts' absence: a 6-7 point swing from the Eagles -1.5 lookahead. My projection, Dallas by about 4, sits on the -4.5 line. Shaded, there is no 2+ point edge, so I pass. Philadelphia's dreadful offense (last in yards per play, a gutted line) is offset by Dallas's record-bad pass defense, Prescott's outdoor and turnover slump, and Barkley's return. The [angle] that stood out was the line coming back from -5.5/-6 to -4.5 with BetMGM handle on the Eagles. A close at -3.5 (a full point of slate value) or a confirmed sharp-on-Philadelphia split everywhere would have made it a lean on Philadelphia. Forced side: the Eagles, as the home underdog the line drifted toward.",
+      "forcedSide": "Philadelphia Eagles",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

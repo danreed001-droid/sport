@@ -1,0 +1,30 @@
+{
+  "sport": "nfl", "date": "2026-10-22", "chunk": "nfl-2026-10-22-1",
+  "games": [
+    {
+      "away": "New England Patriots", "home": "Chicago Bears",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "[spread] Line movement: Chicago opened -1.5 and moved to -3 (Patriots +3 -118) even though the public splits were on New England (63% / 78% NE, WagerTalk/GoldSheet, Oct 20). That is a reverse move toward the favorite, which helps CHI on paper, but LESSONS says moves toward the favorite have gone 1-4.",
+        "[spread] Covers (Joe Osborne, updated Oct 22, 6:25 PM ET) listed Bears -3.5 on game day, and Covers' early leans (Oct 19) had -2.5. The market settled about -3 to -3.5, so the slate's -3 is only half a point better for the Bears side. That is under the 1+ point slate edge LESSONS asks for, so it is neutral.",
+        "[spread] New England is 5-0 ATS and 4-1 straight up in regular-season prime-time games under Mike Vrabel (Covers, Oct 22). Helps NE, but ATS records are priced and are a tiebreaker at most.",
+        "[spread] Sportsgambler (Oct 21-22): NE covered 8 of its last 10 and 9 of its last 10 on the road; Chicago covered 5 of its last 10 and 7 of 10 at home. Helps NE, but priced.",
+        "[spread] Efficiency: New England's season yards-per-play differential is positive and Chicago's is negative (Covers, Oct 22). Helps NE.",
+        "Chicago's pass defense ranks near the bottom in yards allowed per play and 31st in yards allowed per pass attempt. It has allowed a league-high eight pass plays of 40+ yards and plays man coverage at the second-highest rate (Covers, Oct 22). Helps NE against Maye's recent form.",
+        "Drake Maye has 10 TD passes and 1 INT over NE's three-game win streak, and NE averaged 33.3 points in it: 29-26 over Buffalo, 45-17 over Las Vegas, 26-19 over the Jets (Covers Oct 22; Sportsgambler). Covers' Jason Logan (Oct 19) notes those came against softer defenses. Helps NE, with a caveat.",
+        "[angle] New England's offensive line is battered: Will Campbell, Alijah Vera-Tucker, Ben Brown and Morgan Moses are all dealing with injuries, and both starting guards were reported out (WagerTalk Oct 20; Covers Oct 22). WR Romeo Doubs is on IR (shoulder) and A.J. Brown is back from an ankle injury. Helps CHI.",
+        "[angle] Chicago's pass rush: Kyler Gordon made his season debut at Atlanta with 3 sacks and 2 forced fumbles, the Bears had 5 sacks that game, and Covers' Logan calls the rush blitz-heavy. DE Montez Sweat is suspended for PEDs pending appeal (WagerTalk Oct 20). Mostly helps CHI, offset by losing Sweat.",
+        "Caleb Williams returned from a hamstring injury and went 30-of-36 for 305 yards in a 31-23 win at Atlanta. RB Kyle Monangai (toe) was hopeful to return after missing two games (WagerTalk Oct 20; Covers Oct 19). Helps CHI.",
+        "[angle] Short week: Thursday road trip for NE, and Logan (Covers, Oct 19) argues it hurts Maye behind a depleted line. NE also 'continues to struggle with fumbles' (WagerTalk). Helps CHI.",
+        "Form is volatile on both sides. Bears: lost 3-9 to Minnesota, beat Philadelphia 27-7, beat the Jets 23-12, lost 7-31 to Green Bay, won 31-23 at Atlanta. Patriots: beat Pittsburgh 20-3, lost 6-35 at Jacksonville, then won three straight (Sportsgambler). Neutral.",
+        "Weather: clear, about 60F, wind about 5 mph (Covers, Oct 22). Neutral. Total 50.5, moved up from a 48.5 open on public Over money (WagerTalk)."
+      ],
+      "reasoning": "Before the leak the evidence was close to balanced. The market moved from Chicago -1.5 to -3/-3.5 against public New England money, while NE's efficiency edge and Chicago's leaky pass defense pointed the other way. My projection sat at about the line (Bears by 3), with no 2+ point shaded edge, so this was a pass. The [angle] that stood out was NE's line injuries (both starting guards) against a Bears rush that just had 5 sacks. Contamination forces a pass per LESSONS in any case. Forced side is the underdog, New England: LESSONS on favorites, NFL road teams covering, and moves toward the favorite not holding.",
+      "forcedSide": "New England Patriots",
+      "contaminated": true,
+      "contaminationNote": "I fetched the Sportsgambler preview (dated Oct 21-22) for its pre-game content. Its standings table showed current records of Patriots 5-5 and Bears 8-2, against 4-2 for both teams before this game. That implies Chicago won this game, margin unknown. I saw it before writing any lean. I locked a pass as LESSONS requires. The forced side (NE) comes from the pre-leak reasoning (underdog, road team, the move toward the favorite) and runs against what the leak hints."
+    }
+  ]
+}
