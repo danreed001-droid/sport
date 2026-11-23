@@ -1,0 +1,153 @@
+{
+  "sport": "nfl",
+  "date": "2026-10-25",
+  "chunk": "nfl-2026-10-25-2",
+  "games": [
+    {
+      "away": "San Francisco 49ers",
+      "home": "Atlanta Falcons",
+      "pick": "Atlanta Falcons",
+      "confidence": "lean",
+      "projectedMargin": -1.5,
+      "research": [
+        "[spread] Line has moved toward Atlanta all week: 49ers opened -5 (Predictem, Oct 22; SBR lists a -4.5 open), reached -3 by midweek, and Covers' odds table lists 49ers -2.5 as of Oct 25. The slate's Falcons +3.5 is a full point better than the settled number and on the other side of the key number 3 (helps ATL).",
+        "[spread] Reverse line movement toward the underdog: DraftKings had 79% of bets on San Francisco but 55% of the money on Atlanta (Covers industry report, Oct 23), while the line fell. Sharp-vs-public split points to ATL (helps ATL).",
+        "[angle] Body clock and short week: SF played Monday night (beat Washington 23-17), then flies cross-country for a 1 PM ET kickoff that 'feels like 10 AM' (Predictem, Oct 22). Covers notes SF has played only one true road game in six weeks (Oct 21) (helps ATL).",
+        "[angle] SF's receiving corps is banged up: Mike Evans left Monday's game with Achilles tendinitis ('hopefully' plays, per Shanahan), Deebo Samuel and LB Garret Wallow out, Nick Bosa banged up (Predictem, Oct 22; SBR Oct 25 notes several receiving injuries) (helps ATL).",
+        "[angle] SF faded in the second half Monday: 300+ yards in the first half vs Washington but only three first downs and 72 total yards after halftime (Covers early leans, Oct 21) (helps ATL, mildly).",
+        "SF is 6-0; Purdy 14 TD, 2 INT, sacked on only 2.8% of dropbacks; 49ers first in EPA/play, success rate, 3rd-down rate (51.5%) and red-zone TD rate (85%); defense allows 18.3 ppg and 4.7 yards per play, both top four (Predictem, Oct 22) (helps SF).",
+        "Atlanta's passing efficiency ranks 29th, Penix has a 4.2% interception rate (31st) and Falcons QBs are sacked on 8.7% of dropbacks (Predictem, Oct 22) (helps SF).",
+        "Atlanta's run game averages 5.1 yards per carry (3rd), and Covers expects the Falcons to lean on Bijan Robinson to shorten the game; ATL ran on 24% of plays vs Chicago and had the 8th-best points per play that week (Covers, Oct 21) (helps ATL).",
+        "Atlanta's defense ranks near the top in pressure rate and QB hits while blitzing at the 4th-lowest rate, but has the league's lowest interception rate; top CB A.J. Terrell on IR since Week 2, LBs Deablo and Daniels hurt vs Chicago, CB Henderson questionable (Covers Oct 21; Predictem Oct 22) (mixed, slightly SF).",
+        "[spread] Falcons are 0-3 straight up and ATS at home this season and on a two-game skid (Predictem Oct 22; Covers Oct 21) (helps SF, but ATS records are priced per LESSONS).",
+        "Falcons games have averaged 56+ points with Penix starting and the last four went Over (SBR, Oct 25); total 49.5-50.5 (context only).",
+        "Expert split: Covers leans ATL +3.5 ('49ers could win this game but not cover that hook'); Predictem and SBR take SF -3/-3.5 with 28-20 / 28-24 projections (Oct 21-25)."
+      ],
+      "reasoning": "On the numbers SF is the better team, but the market has steadily moved from -5 to -2.5 with money (not tickets) on Atlanta, and the slate gives +3.5, a full point better than the close and through the key number 3 -- the slate-vs-market edge and underdog RLM are the two signals LESSONS says have held. The most surprising angle is SF's Monday-night-to-1 PM ET body-clock trip with a hobbled receiving corps. A line back up at SF -4 or a confirmed healthy Evans/Bosa with SF-side money would have made this a pass.",
+      "forcedSide": "Atlanta Falcons",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Tampa Bay Buccaneers",
+      "home": "Carolina Panthers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.5,
+      "research": [
+        "[spread] Line moved toward Tampa: Panthers -3.5 earlier in the week (Covers early leans, Oct 21) to -2.5 after Baker Mayfield was named the starter (Covers, Oct 25); Covers odds table lists -2.5 as of Oct 25. Slate Panthers -3 is a half point off the settled -2.5 (slightly helps TB at +3).",
+        "[angle] Mayfield returns from a dislocated thumb after missing three games, starting in a protective glove; Covers' Krest questions his accuracy with it (Covers, Oct 25) (cuts both ways: upgrade over the backup, but not 100%).",
+        "Tampa's 29th EPA/play, 25th scoring, 24th yardage and 28th red-zone ranks were built mostly with undrafted rookie Jalon Daniels at QB in Mayfield's absence (Covers early leans, Oct 21) (Mayfield return helps TB relative to those numbers).",
+        "[angle] Tampa is without WR Emeka Egbuka (team leader in catches, yards and TDs) and RT Luke Goedeke, both ruled out (Covers, Oct 25) (helps CAR).",
+        "Carolina's offense is 2nd in total offense, 3rd in first downs, 4th in scoring; Bryce Young leads the NFL in passing yards and ranks 2nd in PFF grade (Covers, Oct 21 and Oct 25) (helps CAR).",
+        "[angle] Matchup: Tampa's run defense is top three (2nd) but its pass defense is bottom 10, which suits Carolina's pass-first attack; Carolina's run defense is 27th, which suits Bucky Irving (Covers, Oct 21/25) (mixed).",
+        "[spread] Carolina has covered 13 of its last 21 games (+4.15 units, 18% ROI) (Covers, Oct 25) (helps CAR, priced).",
+        "Tampa has scored fewer than 20 points in four of its last five and gone Under in its last three non-OT games; Carolina Under in 3 of 4 (Covers, Oct 21); total 44.5, a low total that keeps the game near the number (context).",
+        "The two QBs have combined for more interceptions than TD passes (Covers, Oct 21) (variance, neutral).",
+        "Experts lean Carolina: Covers' Krest Panthers -2.5 (55% to cover), SBR AI Panthers 28-17; SBR ATS page took Bucs +3.5 (Oct 25). No betting splits found for this game (Covers industry report, Oct 23, has none).",
+        "Moneyline Panthers about -159/-180 vs Bucs +130/+150 (slate; SBR) (context)."
+      ],
+      "reasoning": "The market already moved a point toward Tampa on Mayfield's return, and the slate's +3 is only a half point better than the close, so there's no real line edge. Mayfield's return offsets Egbuka and Goedeke being out, and Carolina's strong passing numbers offset a bottom-10 Bucs pass defense being priced; projection lands Carolina by about 2.5, within a point of the number. Splits showing sharp money on either side would have tipped it.",
+      "forcedSide": "Tampa Bay Buccaneers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Denver Broncos",
+      "home": "Arizona Cardinals",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -4.0,
+      "research": [
+        "[spread] Denver opened -7.5 and fell three points to -4.5 after Arizona upset the Rams (Predictem, Oct 24); Covers lists -4.5 as of Oct 25, matching the slate. Per LESSONS, a 3+ move makes the new number fair (neutral).",
+        "Denver is 4-2 but has been outscored on the season; its offense averages 5.6 yards per pass attempt, worst in the NFL, and gained only 168 yards in its OT win over Seattle (Predictem, Oct 24) (helps ARI).",
+        "[angle] Bo Nix and Jacoby Brissett rank 31st and 32nd in PFF big-time throw rate; Arizona is last and Denver second-to-last in explosive play rate (Covers, Oct 25) -- two offenses that struggle to build margins (helps ARI as the dog).",
+        "Denver's pass defense is 5th by EPA and allows a 56.5% completion rate, 2nd best (Predictem, Oct 24) (helps DEN).",
+        "[angle] Denver CB Pat Surtain II and S Talanoa Hufanga (both ankle) doubtful per Predictem (Oct 24); Covers (Oct 25) says Surtain practiced and could return -- conflicting, uncertain secondary vs Trey McBride (helps ARI if out).",
+        "Arizona allows 8.6 yards per pass attempt (last) and ranks 30th in pass defense EPA; averages 3.7 yards per carry; James Conner on IR, Jeremiyah Love questionable (Predictem, Oct 24) (helps DEN).",
+        "[spread] Arizona's home performance rates last in the league (TeamRankings via Predictem); it lost at home 31-7 to Seattle and 45-21 to Detroit (Predictem, Oct 24) (helps DEN).",
+        "[angle] Rest: Denver played last Thursday (beat Seattle in OT), so it has about 10 days; Arizona comes off a road upset of the Rams on normal rest (Predictem, Oct 24) (helps DEN).",
+        "[spread] Broncos 6-1 SU as road favorites since 2024 but 'haven't covered much on the road'; Under in Denver's last four road games and five straight with totals of 44 or lower (Covers Oct 25; Predictem Oct 24) (low total: points matter more; context only).",
+        "Predictive ratings put the teams about 9.5 points apart on a neutral field (Predictem, Oct 24) -- LESSONS: ratings disagreeing with the line are not an edge.",
+        "Experts split: Covers ATS pick Cardinals +4.5 (projected 22-19); Predictem DEN -4.5 (24-16); WagerTalk DEN -4.5 (23-13); SBR AI DEN 27-17 (Oct 24-25). No betting splits found."
+      ],
+      "reasoning": "The line already dropped three points from -7.5 to -4.5, and the slate matches the close, so the number is treated as fair. Denver's rest and pass defense argue for the favorite, but its league-worst passing offense makes laying 4.5 hard, and LESSONS says to be harder on favorites; projection DEN by 4, inside the number by only half a point. A clear Surtain status or splits would have been needed to pick.",
+      "forcedSide": "Arizona Cardinals",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Green Bay Packers",
+      "home": "Detroit Lions",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 2.5,
+      "research": [
+        "[spread] Line was Lions -3 at DraftKings on Oct 23 (Covers industry report) and -3.5 on Covers Oct 21 and Oct 25 and in the Oct 25 odds table; slate -3.5 matches the close. Total rose from 52.5 (Oct 21) to 53.5-55.5 by Sunday (neutral on the side).",
+        "[spread] Money on Detroit: DraftKings 58% of bets / 72% of handle on DET; BetMGM 56% of bets / 80% of handle (Covers industry report, Oct 23) (helps DET; sharp-leaning money on the favorite).",
+        "Green Bay allows 11.3 points per game and ranked 1st in defensive DVOA, with the top PFF coverage grade (Covers early leans, Oct 21); SBR (Oct 25) has it 4th in DVOA (helps GB).",
+        "Detroit's defense allows the 3rd-most points (29.6 per game), the highest EPA/play, ranks 25th in DVOA and allows 5.6 yards per play; 4th-highest EPA per rush allowed (Covers, Oct 21/25) (helps GB).",
+        "Detroit's offense is tied for the most points per game (32.8), 2nd in points per drive (3.09), but 23rd in first-quarter EPA/play (Covers, Oct 25) (helps DET overall).",
+        "[angle] Detroit is off a Week 6 bye, and C Cade Mays (wrist) and S Brian Branch (Achilles) return (Covers, Oct 25) (helps DET).",
+        "[angle] Green Bay RB Josh Jacobs returns (Covers, Oct 21); Jordan Love has 8.2 YPA and a 101.8 rating over the last three weeks (helps GB).",
+        "[angle] Green Bay ranks 30th in both pass-rush win rate and run-stop win rate (Covers, Oct 25) -- a weakness the DVOA number hides; Lions OC Drew Petzing knows Packers DC Jonathan Gannon from Arizona (helps DET).",
+        "[spread] Green Bay has covered three straight and won three straight by a combined 71-34, though two of those came against backup QBs (Covers Oct 21; SBR Oct 25) (helps GB, priced).",
+        "[spread] Detroit is 1-3-1 ATS; Lions Over in 13 of their last 18 and all five games this season (SBR Oct 25; Covers Oct 25) (helps GB, priced).",
+        "Experts: Covers early lean GB +3.5, game-day top pick DET first half -2.5; SBR ATS GB +3; SBR moneyline DET (Oct 21-25)."
+      ],
+      "reasoning": "The defensive numbers favor Green Bay, but the handle at two books is heavily on Detroit and the line ticked from 3 to 3.5, so the Packers' case is mostly priced ATS records plus a defense that is weak at the line of scrimmage. Projection DET by about 2.5 gives only a one-point edge on the hook, short of the bar. Underdog RLM toward Green Bay would have made it a pick.",
+      "forcedSide": "Green Bay Packers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Los Angeles Rams",
+      "home": "Las Vegas Raiders",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -3.0,
+      "research": [
+        "[spread] Rams opened -7.5 (Predictem) or -6.5 (SBR) and fell to -4/-4.5 midweek and -3.5 by Oct 25 (Covers), matching the slate. A 3+ point injury-driven move: LESSONS says treat the new number as fair (neutral).",
+        "[spread] Splits: DraftKings 67% of bets and 75% of handle on Las Vegas; BetMGM 80% of spread money on the Raiders (Covers industry report, Oct 23) -- money with the move toward the dog (helps LV).",
+        "[angle] Rams WR Davante Adams out (ruptured hamstring); DL Kobie Turner and NT Poona Ford out; kicker Blake Grupe tore his ACL, so Brandon McManus is their third kicker of the season (Predictem, Oct 22; Covers Oct 25) (helps LV).",
+        "[angle] Puka Nacua listed questionable after missing Friday's practice (SBR, Oct 24-25); Predictem (Oct 22) said he was still available. Status unresolved at lock (this is the pass trigger).",
+        "The Rams are 2-4, last in the NFC West, after losing to Arizona as double-digit favorites; backing them over their last 22 games lost 9.35 units (Predictem Oct 22; Covers Oct 23/25) (helps LV, but those numbers were partly built with Adams).",
+        "Rams still 7th in offensive success rate/DVOA, allowed a 32.9% third-down rate and no TDs to Arizona; problems are turnovers, penalties and special teams (Predictem, Oct 22) (helps LAR).",
+        "Rams allowed the 2nd-highest EPA per dropback and rank 29th in pass defense DVOA over the past two weeks (Covers, Oct 25) (helps LV).",
+        "[spread] Las Vegas is 5-1 ATS and 3-0 ATS at home despite three straight losses (Predictem Oct 22; Covers Oct 25) (helps LV, priced).",
+        "Raiders under Klint Kubiak: Kirk Cousins 14 TD passes, 27 points per game, 3rd-highest dropback success rate over four weeks; but the run game is last in rushing success (Ashton Jeanty 313 yards on 98 carries) (Predictem Oct 22; Covers Oct 25) (mixed).",
+        "Raiders' defense is 30th in DVOA and allowed the highest EPA/play and success rate over the past four weeks; allows 27 ppg (Covers Oct 25; Predictem Oct 22) (helps LAR).",
+        "Experts split: Covers combo includes Raiders +3.5; SBR AI Raiders 27-24; SBR ATS Raiders +4.5; Predictem Rams -4 (27-20) (Oct 22-25)."
+      ],
+      "reasoning": "The line has already fallen four points on the Rams' injuries and the slate matches the close, so the number is fair; money is on the Raiders but it moved the line with it. Nacua's status, which would swing the Rams' offense, was unresolved, which is a pass trigger. Projection LAR by 3, half a point inside the number.",
+      "forcedSide": "Las Vegas Raiders",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Kansas City Chiefs",
+      "home": "Seattle Seahawks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 3.0,
+      "research": [
+        "[spread] Seattle opened -2.5, total 42.5, with no line movement noted (Covers odds page; Covers, Oct 25); slate -2.5 matches (neutral).",
+        "[spread] Splits: DraftKings 70% of bets on KC but 60% of handle on Seattle; BetMGM 68% of bets KC, 50% of handle Seattle; KC is BetMGM's most-bet ATS team by tickets (Covers industry report, Oct 23) -- public on the dog, bigger money on the favorite, line flat (slightly helps SEA).",
+        "Kansas City is unbeaten (5-0 per SBR, Covers refers to a possible 'first loss of 2026') (helps KC).",
+        "[angle] Seattle, the defending champion, lost 17-14 at Denver on a Thursday short week after three turnovers despite outgaining Denver by 186 yards; it now has extra rest (Covers, Oct 25) (helps SEA).",
+        "Seattle ranks 2nd in defensive DVOA, has the 2nd-highest pressure rate, leads ESPN's pass-rush win rate (16 sacks, 30 QB hits) while blitzing under 24% (Covers, Oct 25) (helps SEA).",
+        "[angle] Mahomes' PFF grade falls from 90.6 when clean to 64.8 under duress; KC's 3rd-down success has dipped to 36.7% over three games, vs a Seattle defense allowing the 3rd-lowest 3rd-down rate (Covers, Oct 25) (helps SEA).",
+        "[angle] Kenneth Walker III, now with KC, returns to Seattle: 665 yards, 6 TD, 6.3 YPC through five games (SBR, Oct 25-26 page, pre-game content) (helps KC).",
+        "KC has allowed 39 catches to tight ends in five games, 2nd most (SBR) (helps SEA via AJ Barner).",
+        "Seattle RB Zach Charbonnet may return from a knee injury on limited snaps; George Holani led SEA backs with a 58% snap share last week (Covers, Oct 25) (neutral).",
+        "[spread] Seattle 7-2 SU since 2020 when favored by 3 or less at Lumen Field (Covers, Oct 25) (priced, history).",
+        "Weather: 40-47% chance of rain later, upper 40s-50s, light wind (Covers; SBR) -- not a factor per LESSONS.",
+        "Experts: Covers Logan Seattle ML; Covers AI 24-20 SEA; SBR Spector KC +2.5; Covers ATS piece KC +2.5 (Oct 25)."
+      ],
+      "reasoning": "A flat line with public tickets on KC and larger money on Seattle; Seattle's pass rush vs Mahomes under pressure and its extra rest are real, but a 2.5-point home favorite is close to fair and LESSONS warns against favorite picks and RLM toward favorites. Projection SEA by 3, half a point past the number, so a pass. A move to SEA -3.5 with the money, or to KC +3, would have changed it.",
+      "forcedSide": "Seattle Seahawks",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
