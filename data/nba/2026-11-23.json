@@ -349,11 +349,14 @@
         },
         "public": {
           "betsHome": 25,
-          "moneyHome": 18,
+          "moneyHome": 21,
           "rlm": null
         },
-        "checked": "2026-11-23T06:42:10+00:00"
-      }
+        "checked": "2026-11-23T08:15:32+00:00"
+      },
+      "gameTotal": 216.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910037",
@@ -626,7 +629,10 @@
           "rlm": null
         },
         "checked": "2026-11-23T06:42:10+00:00"
-      }
+      },
+      "gameTotal": 231.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401910038",
@@ -695,7 +701,7 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-23T06:42:10+00:00",
+        "checked": "2026-11-23T08:15:31+00:00",
         "line": {
           "open": 4.5,
           "now": 4.5
@@ -838,7 +844,7 @@
             "status": "Out",
             "out": true,
             "lastGame": false,
-            "missed": 12,
+            "missed": 13,
             "avg": [
               4,
               33.0,
@@ -880,17 +886,17 @@
                   2.0
                 ],
                 "without": [
-                  11,
-                  28.9,
-                  10.5,
-                  3.7,
+                  12,
+                  29.2,
+                  10.4,
+                  3.6,
                   2.5,
-                  1.3
+                  1.2
                 ]
               },
               {
                 "player": "Quenton Jackson",
-                "pos": "SG",
+                "pos": "PG",
                 "with": [
                   4,
                   19.5,
@@ -900,12 +906,12 @@
                   0.2
                 ],
                 "without": [
-                  12,
-                  22.7,
-                  10.6,
-                  4.1,
+                  13,
+                  22.2,
+                  9.9,
+                  3.8,
                   3.2,
-                  1.4
+                  1.3
                 ]
               }
             ]
@@ -932,12 +938,15 @@
           ]
         },
         "public": {
-          "betsHome": 57,
-          "moneyHome": 64,
+          "betsHome": 60,
+          "moneyHome": 66,
           "rlm": null
         },
-        "checked": "2026-11-23T06:42:11+00:00"
-      }
+        "checked": "2026-11-23T08:15:32+00:00"
+      },
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910039",
@@ -1222,7 +1231,10 @@
           "rlm": null
         },
         "checked": "2026-11-23T06:42:11+00:00"
-      }
+      },
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910040",
@@ -1459,12 +1471,15 @@
           ]
         },
         "public": {
-          "betsHome": 66,
-          "moneyHome": 66,
+          "betsHome": 64,
+          "moneyHome": 65,
           "rlm": null
         },
-        "checked": "2026-11-23T06:42:11+00:00"
-      }
+        "checked": "2026-11-23T08:15:32+00:00"
+      },
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910041",
@@ -1794,12 +1809,15 @@
           ]
         },
         "public": {
-          "betsHome": 46,
-          "moneyHome": 44,
+          "betsHome": 49,
+          "moneyHome": 47,
           "rlm": null
         },
-        "checked": "2026-11-23T06:42:11+00:00"
-      }
+        "checked": "2026-11-23T08:15:32+00:00"
+      },
+      "gameTotal": 240.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -109
     },
     {
       "espnId": "401910042",
@@ -2021,12 +2039,15 @@
           ]
         },
         "public": {
-          "betsHome": 27,
-          "moneyHome": 32,
+          "betsHome": 30,
+          "moneyHome": 34,
           "rlm": null
         },
-        "checked": "2026-11-23T06:42:11+00:00"
-      }
+        "checked": "2026-11-23T08:15:32+00:00"
+      },
+      "gameTotal": 233.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401910043",
@@ -2087,11 +2108,14 @@
         },
         "public": {
           "betsHome": 61,
-          "moneyHome": 67,
+          "moneyHome": 66,
           "rlm": null
         },
-        "checked": "2026-11-23T06:42:11+00:00"
-      }
+        "checked": "2026-11-23T08:15:32+00:00"
+      },
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910044",
@@ -2537,11 +2561,14 @@
         },
         "public": {
           "betsHome": 60,
-          "moneyHome": 52,
+          "moneyHome": 50,
           "rlm": null
         },
-        "checked": "2026-11-23T06:42:11+00:00"
-      }
+        "checked": "2026-11-23T08:15:33+00:00"
+      },
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     },
     {
       "espnId": "401910045",
@@ -2836,12 +2863,15 @@
           ]
         },
         "public": {
-          "betsHome": 26,
-          "moneyHome": 26,
+          "betsHome": 24,
+          "moneyHome": 24,
           "rlm": null
         },
-        "checked": "2026-11-23T06:42:11+00:00"
-      }
+        "checked": "2026-11-23T08:15:33+00:00"
+      },
+      "gameTotal": 224.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     }
   ]
 }

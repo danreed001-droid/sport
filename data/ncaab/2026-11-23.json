@@ -1,0 +1,126 @@
+{
+  "date": "2026-11-23",
+  "weekday": "Monday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-23T08:15:05Z",
+  "games": [
+    {
+      "espnId": "401921708",
+      "away": "Washington Huskies",
+      "home": "BYU Cougars",
+      "time": "5:00 PM ET",
+      "homeSpread": -12.5,
+      "awaySpread": 12.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -900,
+      "awayMoneyline": 600,
+      "total": 165.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -10.5,
+          -12.5
+        ],
+        "total": [
+          166.5,
+          165.5
+        ],
+        "ml": {
+          "home": [
+            -535.0,
+            -900.0
+          ],
+          "away": [
+            400.0,
+            600.0
+          ]
+        },
+        "checked": "2026-11-23T08:15:33+00:00"
+      }
+    },
+    {
+      "espnId": "401913530",
+      "away": "Winthrop Eagles",
+      "home": "Illinois Fighting Illini",
+      "time": "8:00 PM ET",
+      "homeSpread": -43.5,
+      "awaySpread": 43.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "total": 180.5,
+      "lineMove": {
+        "spread": [
+          -45.5,
+          -43.5
+        ],
+        "total": [
+          178.5,
+          180.5
+        ],
+        "ml": {},
+        "checked": "2026-11-23T08:15:33+00:00"
+      }
+    },
+    {
+      "espnId": "401909788",
+      "away": "Denver Pioneers",
+      "home": "Kansas Jayhawks",
+      "time": "8:00 PM ET",
+      "homeSpread": -35.5,
+      "awaySpread": 35.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "total": 157.5,
+      "lineMove": {
+        "spread": [
+          -37.5,
+          -35.5
+        ],
+        "total": [
+          156.5,
+          157.5
+        ],
+        "ml": {},
+        "checked": "2026-11-23T08:15:33+00:00"
+      }
+    },
+    {
+      "espnId": "401909743",
+      "away": "Colorado State Rams",
+      "home": "Arizona Wildcats",
+      "time": "11:30 PM ET",
+      "homeSpread": -16.5,
+      "awaySpread": 16.5,
+      "homeSpreadOdds": -118,
+      "awaySpreadOdds": -102,
+      "homeMoneyline": -2400,
+      "awayMoneyline": 1200,
+      "total": 159.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -17.5,
+          -16.5
+        ],
+        "total": [
+          158.5,
+          159.5
+        ],
+        "ml": {
+          "home": [
+            -2400.0,
+            -2400.0
+          ],
+          "away": [
+            1200.0,
+            1200.0
+          ]
+        },
+        "checked": "2026-11-23T08:15:33+00:00"
+      }
+    }
+  ]
+}

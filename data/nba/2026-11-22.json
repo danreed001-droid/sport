@@ -2,7 +2,7 @@
   "date": "2026-11-22",
   "weekday": "Sunday",
   "sport": "nba",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-22T16:25:00Z",
   "auditChanges": [
     "DET@ATL: PD/g corrected (+5.4->+5.8, +1.7->+2.7); Cunningham is probable not questionable, so Scoring margin now counts for Detroit; tally 0-1 -> 1-1. Still a pass, no pick change.",
@@ -39,7 +39,7 @@
       "awayMoneyline": -114,
       "awayNetRtg": 5.7,
       "awayPDpg": 5.8,
-      "awayScore": null,
+      "awayScore": 97.0,
       "awaySpread": -2,
       "awaySpreadOdds": 100,
       "confidence": "skip",
@@ -51,7 +51,7 @@
       "homeMoneyline": 114,
       "homeNetRtg": 2.5,
       "homePDpg": 2.7,
-      "homeScore": null,
+      "homeScore": 107.0,
       "homeSpread": 2,
       "homeSpreadOdds": 100,
       "injuries": {
@@ -385,7 +385,8 @@
           "pct": 53.7,
           "leans": "Atlanta Hawks",
           "leanPct": 53.7,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -399,11 +400,16 @@
           "pct": 53.0,
           "leans": "Atlanta Hawks",
           "leanPct": 53.0,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "3:30 PM ET",
-      "totalsLine": 223.5
+      "totalsLine": 223.5,
+      "statsCorrect": true,
+      "statsReturn": 110.0,
+      "statsCover": true,
+      "statsSpreadReturn": 93.46
     },
     {
       "altCategoryTally": "0-3",
@@ -429,7 +435,7 @@
       "awayMoneyline": 158,
       "awayNetRtg": 4.4,
       "awayPDpg": 4.5,
-      "awayScore": null,
+      "awayScore": 113.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": 104,
       "confidence": "skip",
@@ -441,7 +447,7 @@
       "homeMoneyline": -158,
       "homeNetRtg": 0.6,
       "homePDpg": 0.6,
-      "homeScore": null,
+      "homeScore": 123.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -103,
       "injuries": {
@@ -685,7 +691,8 @@
           "pct": 53.6,
           "leans": "Oklahoma City Thunder",
           "leanPct": 53.6,
-          "against": false
+          "against": false,
+          "result": "miss"
         }
       ],
       "time": "6:00 PM ET",
@@ -715,7 +722,7 @@
       "awayMoneyline": -184,
       "awayNetRtg": -3,
       "awayPDpg": -3.1,
-      "awayScore": null,
+      "awayScore": 96.0,
       "awaySpread": -4.5,
       "awaySpreadOdds": -104,
       "confidence": "skip",
@@ -727,7 +734,7 @@
       "homeMoneyline": 184,
       "homeNetRtg": -6.3,
       "homePDpg": -6.5,
-      "homeScore": null,
+      "homeScore": 116.0,
       "homeSpread": 4.5,
       "homeSpreadOdds": 104,
       "injuries": {
@@ -816,15 +823,20 @@
           "pct": 53.7,
           "leans": "Washington Wizards",
           "leanPct": 53.7,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
-      ]
+      ],
+      "statsCorrect": true,
+      "statsReturn": 164.0,
+      "statsCover": true,
+      "statsSpreadReturn": 92.59
     },
     {
       "altCategoryTally": "4-0",
       "altConfidence": "lean",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": false,
       "altPick": "Denver Nuggets",
       "altReasons": [
         "Scoring margin: Denver +1.5 PD/g vs Chicago -8.1, no star-out issue for Denver - favors Denver",
@@ -837,18 +849,18 @@
         "Market: 51% of bets on Chicago +10ish (underdog), line moved from 8.5 to 10 toward Denver (the favorite) - public and line moving together, not reverse - neutral",
         "Matchup splits: no additional specific verified mismatch beyond the injury cluster already counted - neutral"
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": 25.32,
+      "altSpreadReturn": -100.0,
       "auditNote": "Corrected both PD/g figures (+0.6 -> +1.5 Den, -11.3 -> -8.1 Chi) and Chicago's injury statuses: only Wilson is out, Powell and Jalen Smith are questionable, Patrick Williams is probable, and Awaka is not on the report at all. Three missing/questionable rotation players still clear the 2+ cluster bar, so the x2 weighting stands, the tally stays 4-0 and both the Ledger 'solid' Denver and the Second Opinion 'lean' Denver are unchanged.",
       "away": "Denver Nuggets",
       "awayMoneyline": -395,
       "awayNetRtg": 1.5,
       "awayPDpg": 1.5,
-      "awayScore": null,
+      "awayScore": 151.0,
       "awaySpread": -10.5,
       "awaySpreadOdds": 107,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 237.5,
       "gameTotalOverOdds": -107,
       "gameTotalUnderOdds": -113,
@@ -856,7 +868,7 @@
       "homeMoneyline": 395,
       "homeNetRtg": -7.5,
       "homePDpg": -8.1,
-      "homeScore": null,
+      "homeScore": 145.0,
       "homeSpread": 10.5,
       "homeSpreadOdds": -107,
       "injuries": {
@@ -897,9 +909,9 @@
       },
       "netRtgGap": 37.93,
       "pick": "Denver Nuggets",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": 25.32,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -1111,7 +1123,8 @@
           "pct": 53.7,
           "leans": "Chicago Bulls",
           "leanPct": 53.7,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -1125,11 +1138,16 @@
           "pct": 56.8,
           "leans": "Chicago Bulls",
           "leanPct": 56.8,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 237.5
+      "totalsLine": 237.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": true,
+      "statsSpreadReturn": 85.47
     },
     {
       "altCategoryTally": "4-3",
@@ -1155,7 +1173,7 @@
       "awayMoneyline": -103,
       "awayNetRtg": -0.2,
       "awayPDpg": -0.2,
-      "awayScore": null,
+      "awayScore": 116.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": 110,
       "confidence": "skip",
@@ -1167,7 +1185,7 @@
       "homeMoneyline": 103,
       "homeNetRtg": -7.2,
       "homePDpg": -7.4,
-      "homeScore": null,
+      "homeScore": 114.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -1491,15 +1509,16 @@
           "pct": 53.7,
           "leans": "Utah Jazz",
           "leanPct": 53.7,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ]
     },
     {
       "altCategoryTally": "1-5",
       "altConfidence": "lean",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": false,
       "altPick": "New York Knicks",
       "altReasons": [
         "Scoring margin: New York +5.6 PD/g vs Indiana -3.6 - New York's likely top player Brunson isn't on the injury list, no star-out issue - favors New York",
@@ -1512,18 +1531,18 @@
         "Market: 60% of bets and 65% of money on Indiana (the underdog), but the line moved from -10.5 to -8.5 toward Indiana too - the public side and the line moved together, not reverse - neutral",
         "Matchup splits: no additional specific verified mismatch beyond the injury cluster already counted - neutral"
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": 31.15,
+      "altSpreadReturn": -100.0,
       "auditNote": "Corrected both PD/g figures (-2.4 -> -3.6 Ind, +5.9 -> +5.6 NY) and added Pascal Siakam (questionable, hip) to Indiana's absence cluster. The PD/g gap is still above 7, so the Ledger stays 'solid' New York, and the 1-5 tally and 'lean' New York are unchanged.",
       "away": "Indiana Pacers",
       "awayMoneyline": 321,
       "awayNetRtg": -3.5,
       "awayPDpg": -3.6,
-      "awayScore": null,
+      "awayScore": 106.0,
       "awaySpread": 8.5,
       "awaySpreadOdds": 104,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 212.5,
       "gameTotalOverOdds": -116,
       "gameTotalUnderOdds": -105,
@@ -1531,7 +1550,7 @@
       "homeMoneyline": -321,
       "homeNetRtg": 5.7,
       "homePDpg": 5.6,
-      "homeScore": null,
+      "homeScore": 113.0,
       "homeSpread": -8.5,
       "homeSpreadOdds": -104,
       "injuries": {
@@ -1576,9 +1595,9 @@
       },
       "netRtgGap": 44.83,
       "pick": "New York Knicks",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": 31.15,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -1941,7 +1960,8 @@
           "pct": 54.7,
           "leans": "New York Knicks",
           "leanPct": 54.7,
-          "against": false
+          "against": false,
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -1955,7 +1975,8 @@
           "pct": 54.5,
           "leans": "Indiana Pacers",
           "leanPct": 54.5,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -1969,7 +1990,8 @@
           "pct": 53.7,
           "leans": "New York Knicks",
           "leanPct": 53.7,
-          "against": false
+          "against": false,
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -1983,11 +2005,16 @@
           "pct": 57.7,
           "leans": "Indiana Pacers",
           "leanPct": 57.7,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 212.5
+      "totalsLine": 212.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": true,
+      "statsSpreadReturn": 90.91
     },
     {
       "altCategoryTally": "2-2",
@@ -2013,11 +2040,11 @@
       "awayMoneyline": -312,
       "awayNetRtg": 9.7,
       "awayPDpg": 9.8,
-      "awayScore": null,
+      "awayScore": 87.0,
       "awaySpread": -8.5,
       "awaySpreadOdds": 103,
       "confidence": "solid",
-      "correct": null,
+      "correct": false,
       "gameTotal": 211.5,
       "gameTotalOverOdds": -115,
       "gameTotalUnderOdds": -106,
@@ -2025,7 +2052,7 @@
       "homeMoneyline": 312,
       "homeNetRtg": -0.9,
       "homePDpg": -0.9,
-      "homeScore": null,
+      "homeScore": 88.0,
       "homeSpread": 8.5,
       "homeSpreadOdds": -103,
       "injuries": {
@@ -2069,9 +2096,9 @@
       },
       "netRtgGap": 58.62,
       "pick": "Boston Celtics",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -2268,7 +2295,8 @@
           "pct": 52.7,
           "leans": "Boston Celtics",
           "leanPct": 52.7,
-          "against": false
+          "against": false,
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -2282,11 +2310,13 @@
           "pct": 59.0,
           "leans": "Golden State Warriors",
           "leanPct": 59.0,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "8:30 PM ET",
       "totalsLine": 211.5
     }
-  ]
+  ],
+  "scoredAt": "2026-11-23T08:15:09.721521+00:00"
 }

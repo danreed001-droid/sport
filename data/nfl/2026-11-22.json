@@ -2,7 +2,7 @@
   "date": "2026-11-22",
   "weekday": "Sunday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-22T08:35:47-05:00",
   "auditChanges": [
     "BAL@CAR: filled QB ratings, corrected 'Jackson out for the season' to IR 6-9 weeks, corrected inactive starters named in the injury cluster, fixed Week 10 MNF venue. No pick change.",
@@ -21,8 +21,8 @@
       "altBlowoutFavors": null,
       "altCategoryTally": "6-0",
       "altConfidence": "strong",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": false,
       "altPick": "Carolina Panthers",
       "altReasons": [
         "Scoring margin: neutral (Brissett is BAL's 2nd start this season after Jackson's season-ending thumb injury and multiple other QB changes \u2014 BAL's -1.7 blended PD/g isn't a reliable signal tonight; Carolina's own -3.0 isn't independently strong enough to carry the category alone)",
@@ -33,8 +33,8 @@
         "Weather/Venue: favors Panthers (mild rain in Charlotte, soft lean toward a run-heavy approach)",
         "Matchup splits: favors Panthers (Ravens breaking in a green O-line plus a 2nd-start QB against a Panthers front that can still disrupt rhythm)"
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": 68.03,
+      "altSpreadReturn": -100.0,
       "altTrendCheck": "Ravens prior game (Wk10 MNF, Nov 16, lost 20-23 at home to the Chargers at M&T Bank Stadium, CBS): 347 total net yds, 331 net passing yds on 49 att (6.76 YPA), 15 rush att/16 yds \u2014 lost by only 3, no pattern matched. Panthers prior game (Wk10, win 20-17 at NO, CBS): 283 total net yds, 186 net passing yds on 30 att (6.2 YPA), 32 rush att/97 yds \u2014 won by 3, no pattern matched.",
       "altTrendFavors": null,
       "auditNote": "Filled in both QB ratings (Brissett 79.5, Young 90.1, per CBS), corrected the claim that Lamar Jackson is out for the season (he is on IR with a 6-9 week timeline), named the actual inactive starters, and fixed the venue of Baltimore's Week 10 MNF loss (at home, not at LAC). Ledger skip (off-gap) and Second Opinion 6-0 Carolina 'strong' both unchanged.",
@@ -43,7 +43,7 @@
       "awayPDpg": -1.74,
       "awayQB": "Jacoby Brissett",
       "awayQBRating": 79.5,
-      "awayScore": null,
+      "awayScore": 33.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -110,
       "awayYPP": 5.5,
@@ -57,7 +57,7 @@
       "homePDpg": -2.98,
       "homeQB": "Bryce Young",
       "homeQBRating": 90.1,
-      "homeScore": null,
+      "homeScore": 35.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -110,
       "homeYPP": 5.4,
@@ -124,10 +124,19 @@
           "says": "back",
           "team": "Carolina Panthers",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altBlowoutCheck": "Neither team's last game was a win (Chiefs lost by 4, Cardinals lost by 28) \u2014 not applicable to either side.",
@@ -135,7 +144,7 @@
       "altCategoryTally": "5-0",
       "altConfidence": "strong",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": true,
       "altPick": "Kansas City Chiefs",
       "altReasons": [
         "Scoring margin: favors Chiefs (KC's blended PD/g +5.5 is clean and positive; Arizona's -9.2 is additionally unreliable since Josh Johnson \u2014 signed off Cincinnati's practice squad and making his first Arizona start, the 4th different Cardinals starter in 4 weeks after Brissett/Minshew/Beck \u2014 has taken no snaps in this offense this season, but KC already leads the raw comparison regardless)",
@@ -144,7 +153,7 @@
         "Matchup splits: favors Chiefs (Arizona's thin O-line, missing Gaines and Eguakun, protects a 40-year-old 4th-string starter with no reps in this offense against Kansas City's pass rush)"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": 90.91,
       "altTrendCheck": "Chiefs prior game (Wk10, loss 24-28 at DEN): 399 total net yds, ~309-321 net passing yds on 41 att (~7.5-7.8 YPA), 24 rush att/90 yds \u2014 lost by 4, YPP ~6.14 (too high for pattern B), no pattern matched. Cardinals prior game (Wk10, loss 6-34 at LAR): 123 total yds, 108 passing yds on 18 att (6.0 YPA); rushing attempts not confirmed by any source reached \u2014 data gap, but implied very low volume \u2014 no pattern matched.",
       "altTrendFavors": null,
       "auditNote": "Carson Beck was ruled out (back spasms) and is inactive; Josh Johnson is the confirmed starter, so awayQB and awayQBRating were corrected to Johnson/74.0 (2025 Washington rating; 0 starts in 2026). Re-running the QB veto with 74.0 still clears, so the Ledger stays 'solid' Kansas City. The Second Opinion's Injuries/Lineup category no longer cancels \u2014 Arizona is missing its QB plus two O-line starters \u2014 so it now counts x2 for Kansas City, moving the tally to 5-0 and the Second Opinion from pass to 'strong' Kansas City.",
@@ -153,7 +162,7 @@
       "awayPDpg": -9.16,
       "awayQB": "Josh Johnson",
       "awayQBRating": 74,
-      "awayScore": null,
+      "awayScore": 7.0,
       "awaySpread": 15.5,
       "awaySpreadOdds": null,
       "awayYPP": 4.6,
@@ -167,7 +176,7 @@
       "homePDpg": 5.5,
       "homeQB": "Patrick Mahomes",
       "homeQBRating": 106.7,
-      "homeScore": null,
+      "homeScore": 34.0,
       "homeSpread": -15.5,
       "homeSpreadOdds": null,
       "homeYPP": 6.4,
@@ -220,9 +229,9 @@
       ],
       "offGap": 90.32,
       "pick": "Kansas City Chiefs",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "starterOut": {
         "away": [],
         "checked": "2026-11-22T06:54:19+00:00",
@@ -273,7 +282,19 @@
         "Yds/play 4.6 vs 6.4 \u00b7 90.3-pt gap",
         "QB rating 74.0 vs 106.7 (Johnson vs Mahomes; Johnson has 0 starts in 2026, so his 2025 Washington rating is used)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null,
+      "nflStatsCorrect": null,
+      "nflStatsReturn": null,
+      "nflStatsCover": false,
+      "nflStatsSpreadReturn": -100.0
     },
     {
       "altBlowoutCheck": "Bills' last game was a 19-point win (31-12 over Jets) \u2014 checked: takeaway margin was roughly even and halftime score could not be confirmed (padded-win condition not established); Bills are big favorites today (>3 pts, condition met); Miami's defense is not a top-10/top-5 unit by any measure (condition not met \u2014 this actually lowers regression risk); team rush-attempt volume in that win could not be confirmed at 33+ (data gap, treated as not met); Buffalo does have a turnover-prone history this season (giveaways were decisive in their only loss, to New England) \u2014 condition met. Only 2 of 5 conditions confirmed true, below the 3-needed threshold \u2014 check does not fire. Dolphins' last game was a loss \u2014 not applicable.",
@@ -299,7 +320,7 @@
       "awayPDpg": -6.485,
       "awayQB": "Kyle McCord",
       "awayQBRating": 73.6,
-      "awayScore": null,
+      "awayScore": 9.0,
       "awaySpread": 16.5,
       "awaySpreadOdds": -112,
       "awayYPP": 5,
@@ -313,7 +334,7 @@
       "homePDpg": 8.3,
       "homeQB": "Josh Allen",
       "homeQBRating": 97.8,
-      "homeScore": null,
+      "homeScore": 26.0,
       "homeSpread": -16.5,
       "homeSpreadOdds": -108,
       "homeYPP": 6.1,
@@ -356,15 +377,23 @@
       },
       "offGap": 61.29,
       "pick": "Buffalo Bills",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 92.59,
       "statLines": [
         "PD/g -6.5 vs +8.3 (blended)",
         "Yds/play 5.0 vs 6.1 \u00b7 61.3-pt gap",
         "QB rating 73.6 vs 97.8 (McCord vs Allen)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altBlowoutCheck": "Bears' last game was a win by only 3 points (27-24) \u2014 not a 17+ point win, not applicable. Saints' last game was a loss \u2014 not applicable.",
@@ -372,7 +401,7 @@
       "altCategoryTally": "8-0",
       "altConfidence": "strong",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": false,
       "altPick": "Chicago Bears",
       "altReasons": [
         "Scoring margin: favors Bears (no QB-change discount applies to either side \u2014 Williams has started Chicago's last 4 games since returning from his hamstring injury and 6 of its 9 games overall, Shough all season \u2014 Bears' +3.9 blended PD/g beats Saints' -4.2 cleanly)",
@@ -384,7 +413,7 @@
         "Matchup splits: favors Bears (Dennis Allen's scheme was built against this exact Saints personnel, which is further hampered by the O-line injuries above)"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": -100.0,
       "altTrendCheck": "Bears' most recent completed game (Wk9, won 27-24 vs TB; Wk10 was a bye): Caleb Williams 22/37 passing, 279 yds (7.54 YPA), 2 TD, 4 INT \u2014 total team net yards and rushing attempts not confirmed by sources reached (data gap), so no pattern could be fully confirmed. Saints prior game (Wk10, lost 17-20 vs CAR): 222 total net yds, 187 passing yds on 35 att (5.34 YPA), 23 rush att/49 yds \u2014 lost by 3, no pattern matched.",
       "altTrendFavors": null,
       "auditNote": "Corrected two facts: Erik McCoy and Taliese Fuaga are out/inactive rather than doubtful, and Caleb Williams has started 4 straight games since his hamstring return (6 of 9 overall), not 6 straight. Tally stays 8-0 and the Second Opinion stays 'strong' Chicago; Ledger 'solid' Chicago unchanged.",
@@ -393,7 +422,7 @@
       "awayPDpg": -4.155,
       "awayQB": "Tyler Shough",
       "awayQBRating": 90.2,
-      "awayScore": null,
+      "awayScore": 13.0,
       "awaySpread": 11.5,
       "awaySpreadOdds": -108,
       "awayYPP": 4.8,
@@ -407,7 +436,7 @@
       "homePDpg": 3.93,
       "homeQB": "Caleb Williams",
       "homeQBRating": 95.4,
-      "homeScore": null,
+      "homeScore": 21.0,
       "homeSpread": -11.5,
       "homeSpreadOdds": -112,
       "homeYPP": 5.4,
@@ -450,9 +479,9 @@
       },
       "offGap": 41.94,
       "pick": "Chicago Bears",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "statLines": [
         "PD/g -4.2 vs +3.9 (blended)",
         "Yds/play 4.8 vs 5.4 \u00b7 41.9-pt gap",
@@ -472,10 +501,19 @@
           "says": "fade",
           "team": "Chicago Bears",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altBlowoutCheck": "Neither team's last game was a win (Steelers lost by 20, Eagles lost by 8) \u2014 not applicable to either side.",
@@ -504,12 +542,12 @@
       "awayPDpg": 1.185,
       "awayQB": "Aaron Rodgers",
       "awayQBRating": 86.4,
-      "awayScore": null,
+      "awayScore": 16.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": -111,
       "awayYPP": 5.1,
       "confidence": "lean",
-      "correct": null,
+      "correct": false,
       "gameTotal": 37.5,
       "gameTotalOverOdds": -107,
       "gameTotalUnderOdds": -112,
@@ -518,7 +556,7 @@
       "homePDpg": -2.465,
       "homeQB": "Joe Milton III",
       "homeQBRating": 66.9,
-      "homeScore": null,
+      "homeScore": 19.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -109,
       "homeYPP": 4.3,
@@ -561,15 +599,23 @@
       },
       "offGap": 32.26,
       "pick": "Pittsburgh Steelers",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "statLines": [
         "PD/g +1.2 vs -2.5 (blended)",
         "Yds/play 5.1 vs 4.3 \u00b7 32.3-pt gap",
         "QB rating 86.4 vs 66.9 (Rodgers vs Milton)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altBlowoutCheck": "Lions' last game was a 25-point win (35-10 over New England) \u2014 checked: takeaway margin was actually -1 for Detroit and the game was already 21-3 at halftime (not a padded/close-then-pulled-away win \u2014 condition not met); Detroit is favored by 3+ points today across every line version (condition met); the upcoming opponent, Tampa Bay, ranks #1 in the NFL in pass yards allowed (condition met); Detroit ran the ball 34 times in that win, at/above the volume threshold (condition met); Goff has thrown only 4 INTs all season with no clear turnover pattern in Detroit's losses (condition not met). 3 of 5 conditions hold \u2014 the check FIRES: +6 points to Tampa Bay's side, taking the base count of Detroit 5-2 to a combined Tampa Bay 8-5. A 3-point lead is still a pass.",
@@ -599,12 +645,12 @@
       "awayPDpg": 0.425,
       "awayQB": "Baker Mayfield",
       "awayQBRating": 74.9,
-      "awayScore": null,
+      "awayScore": 21.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": null,
       "awayYPP": 4.9,
       "confidence": "lean",
-      "correct": null,
+      "correct": true,
       "gameTotal": 48.5,
       "gameTotalOverOdds": -108,
       "gameTotalUnderOdds": -111,
@@ -613,7 +659,7 @@
       "homePDpg": 5.22,
       "homeQB": "Jared Goff",
       "homeQBRating": 105.9,
-      "homeScore": null,
+      "homeScore": 31.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": null,
       "homeYPP": 6,
@@ -666,9 +712,9 @@
       ],
       "offGap": 64.52,
       "pick": "Detroit Lions",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 49.02,
+      "pickSpreadReturn": 90.91,
       "starterOut": {
         "away": [
           {
@@ -733,10 +779,23 @@
           "says": "back",
           "team": "Tampa Bay Buccaneers",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": false,
+      "altBlowoutReturn": -100.0,
+      "altBlowoutCover": false,
+      "altBlowoutSpreadReturn": -100.0,
+      "nflStatsCorrect": false,
+      "nflStatsReturn": -100.0,
+      "nflStatsCover": false,
+      "nflStatsSpreadReturn": -100.0
     },
     {
       "altBlowoutCheck": "Neither team's last game was a win (Titans lost by 17, Cowboys lost by 6) \u2014 not applicable to either side.",
@@ -762,12 +821,12 @@
       "awayPDpg": -9.705,
       "awayQB": "Cam Ward",
       "awayQBRating": 80.7,
-      "awayScore": null,
+      "awayScore": 30.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": null,
       "awayYPP": 4.9,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 54.5,
       "gameTotalOverOdds": -117,
       "gameTotalUnderOdds": -102,
@@ -776,7 +835,7 @@
       "homePDpg": -0.975,
       "homeQB": "Dak Prescott",
       "homeQBRating": 96.4,
-      "homeScore": null,
+      "homeScore": 51.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": null,
       "homeYPP": 5.6,
@@ -819,9 +878,9 @@
       },
       "offGap": 45.16,
       "pick": "Dallas Cowboys",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 26.18,
+      "pickSpreadReturn": 90.91,
       "starterOut": {
         "away": [
           {
@@ -908,7 +967,15 @@
         "Yds/play 4.9 vs 5.6 \u00b7 45.2-pt gap",
         "QB rating 80.7 vs 96.4 (Ward vs Prescott)"
       ],
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altBlowoutCheck": "Chargers' last game was a win by only 3 points (23-20) \u2014 not a 17+ point win, not applicable. Jets' last game was a loss \u2014 not applicable.",
@@ -935,7 +1002,7 @@
       "awayPDpg": -8.97,
       "awayQB": "Geno Smith",
       "awayQBRating": 99.2,
-      "awayScore": null,
+      "awayScore": 27.0,
       "awaySpread": 3,
       "awaySpreadOdds": null,
       "awayYPP": 5.3,
@@ -949,7 +1016,7 @@
       "homePDpg": -4.455,
       "homeQB": "Justin Herbert",
       "homeQBRating": 71.6,
-      "homeScore": null,
+      "homeScore": 24.0,
       "homeSpread": -3,
       "homeSpreadOdds": null,
       "homeYPP": 4.7,
@@ -1016,18 +1083,27 @@
           "says": "fade",
           "team": "New York Jets",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
-      "time": "4:05 PM ET"
+      "time": "4:05 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altBlowoutCheck": "Jaguars' last game was a 17-point win (40-23 over Tennessee) \u2014 checked: takeaway margin was even (1-1), but the game was within one score (16-10) at halftime before Jacksonville pulled away \u2014 padded-win condition met via the halftime leg; Jacksonville is favored by 5.5-6 points today, well above the +3 threshold \u2014 condition met; today's opponent, New York, is not top-10 in takeaways, not top-5 in points allowed, and not top-5 in pass defense \u2014 condition not met; Jacksonville ran the ball 36 times in that win, above the volume threshold \u2014 condition met; Trevor Lawrence's interceptions have been a recurring, cited turning point in both of Jacksonville's losses this season \u2014 condition met. 4 of 5 conditions hold \u2014 the check FIRES: +6 points added to New York's side of the combined tally, flipping this game's lead from Jacksonville (3-1 on the base category count) to New York (7-3 combined).",
       "altBlowoutFavors": "New York Giants",
       "altCategoryTally": "7-3",
       "altConfidence": "lean",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": true,
       "altPick": "New York Giants",
       "altReasons": [
         "Scoring margin: favors Jaguars (New York's season-level PD/g was built mostly under Dart/Winston before McCarthy's trade-in \u2014 only 3 of 9 Giants games \u2014 so it's discounted; Jacksonville's own +11.0 blended PD/g is clean and very strong, carrying the category)",
@@ -1039,8 +1115,8 @@
         "Weather/Venue: neutral (mild temperatures with a moderate rain chance at MetLife, not an extreme-weather signal)",
         "Matchup splits: neutral (pass defense ranks are close between the two teams, and the one qualitative Jaguars-secondary note wasn't independently stat-verified)"
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": 213.0,
+      "altSpreadReturn": 90.91,
       "altTrendCheck": "Jaguars prior game (Wk10, won 40-23 at TEN): 459 total net yds, 336 passing yds on 35 att (9.60 YPA \u2014 well above the pattern-B bar), 36 rush att/123 yds \u2014 but YPP was 6.46 (too high for pattern B's \u22645.15 cutoff) and the rush/pass ratio of 1.03 narrowly misses pattern C's \u22641.0 threshold \u2014 no pattern matched despite the high YPA. Giants prior game (Wk10, lost 21-24 vs WAS): 399 total net yds, 283 passing yds on 36 att (7.86 YPA), 27 rush att/116 yds \u2014 lost by only 3, no pattern matched.",
       "altTrendFavors": null,
       "away": "Jacksonville Jaguars",
@@ -1048,12 +1124,12 @@
       "awayPDpg": 11.005,
       "awayQB": "Trevor Lawrence",
       "awayQBRating": 112.8,
-      "awayScore": null,
+      "awayScore": 18.0,
       "awaySpread": -6,
       "awaySpreadOdds": null,
       "awayYPP": 6,
       "confidence": "solid",
-      "correct": null,
+      "correct": false,
       "gameTotal": 45.5,
       "gameTotalOverOdds": -107,
       "gameTotalUnderOdds": -112,
@@ -1062,7 +1138,7 @@
       "homePDpg": -1.315,
       "homeQB": "J.J. McCarthy",
       "homeQBRating": 90,
-      "homeScore": null,
+      "homeScore": 23.0,
       "homeSpread": 6,
       "homeSpreadOdds": null,
       "homeYPP": 5.2,
@@ -1105,9 +1181,9 @@
       },
       "offGap": 41.94,
       "pick": "Jacksonville Jaguars",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "statLines": [
         "PD/g +11.0 vs -1.3 (blended)",
         "Yds/play 6.0 vs 5.2 \u00b7 41.9-pt gap",
@@ -1127,10 +1203,19 @@
           "says": "fade",
           "team": "Jacksonville Jaguars",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
-      "time": "4:25 PM ET"
+      "time": "4:25 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": true,
+      "altBlowoutReturn": 213.0,
+      "altBlowoutCover": true,
+      "altBlowoutSpreadReturn": 90.91
     },
     {
       "altBlowoutCheck": "Neither team's last game was a 17+ point result (Raiders lost by 8, Broncos won by only 5) \u2014 not applicable to either side.",
@@ -1138,7 +1223,7 @@
       "altCategoryTally": "5-0",
       "altConfidence": "strong",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": true,
       "altPick": "Denver Broncos",
       "altReasons": [
         "Scoring margin: favors Broncos (Las Vegas' season-long PD/g was built almost entirely under Kirk Cousins, traded away after Week 9 \u2014 rookie Fernando Mendoza is on just his 2nd start, so LV's -7.5 is discounted; Denver's own +3.3 blended PD/g is clean and positive, carrying the category)",
@@ -1148,7 +1233,7 @@
         "Matchup splits: favors Broncos (Denver's pass rush against a rookie QB who has been sacked 6 times in each of his first two starts behind a shaky O-line)"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": 90.91,
       "altTrendCheck": "Raiders prior game (Wk10, lost 13-21 at home vs SEA): 163 total net yds, 143 passing yds on 29 att (4.93 YPA), 24 rush att/65 yds \u2014 lost by 8, no pattern matched. Broncos prior game (Wk9, won 26-21 at CAR, then had the Wk10 bye): 312 total net yds, 237 passing yds on 37 att (6.41 YPA), 27 rush att/82 yds \u2014 won by only 5, no pattern matched.",
       "altTrendFavors": null,
       "auditNote": "Filled in both QB ratings from CBS (Mendoza 75.4, Nix 84.7), which were stored as null. Screen 1 fires first, so the Ledger skip (off-gap, 19.4) and the Second Opinion 5-0 'strong' Denver are both unchanged.",
@@ -1157,7 +1242,7 @@
       "awayPDpg": -7.52,
       "awayQB": "Fernando Mendoza",
       "awayQBRating": 75.4,
-      "awayScore": null,
+      "awayScore": 24.0,
       "awaySpread": 10.5,
       "awaySpreadOdds": null,
       "awayYPP": 5.1,
@@ -1171,7 +1256,7 @@
       "homePDpg": 3.31,
       "homeQB": "Bo Nix",
       "homeQBRating": 84.7,
-      "homeScore": null,
+      "homeScore": 38.0,
       "homeSpread": -10.5,
       "homeSpreadOdds": null,
       "homeYPP": 4.8,
@@ -1311,7 +1396,8 @@
           "says": "fade",
           "team": "Denver Broncos",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -1326,10 +1412,23 @@
           "says": "fade",
           "team": "Denver Broncos",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
-      "time": "4:25 PM ET"
+      "time": "4:25 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null,
+      "nflStatsCorrect": null,
+      "nflStatsReturn": null,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 90.91
     },
     {
       "altBlowoutCheck": "Vikings' last game was a 20-point win (30-10 over Green Bay) \u2014 checked: takeaway margin was +3, satisfying the padded-win condition; Minnesota is actually an underdog today (not favored by 3+), condition not met; today's opponent San Francisco ranks 6th in takeaways forced, clearing the top-10 bar \u2014 condition met; Minnesota's 31 rush attempts fall just short of the 33+ volume threshold \u2014 condition not met; no clear turnover-prone pattern found for Minnesota's QBs this season \u2014 condition not met. Only 2 of 5 conditions hold, below the 3-needed threshold \u2014 check does not fire. 49ers' last game was a win by only 6 points (46-40) \u2014 not a 17+ point win, not applicable.",
@@ -1360,12 +1459,12 @@
       "awayPDpg": 3.105,
       "awayQB": "Kirk Cousins",
       "awayQBRating": 96.8,
-      "awayScore": null,
+      "awayScore": 10.0,
       "awaySpread": 3,
       "awaySpreadOdds": -110,
       "awayYPP": 4.7,
       "confidence": "lean",
-      "correct": null,
+      "correct": true,
       "gameTotal": 44.5,
       "gameTotalOverOdds": -113,
       "gameTotalUnderOdds": -106,
@@ -1374,7 +1473,7 @@
       "homePDpg": 6.485,
       "homeQB": "Brock Purdy",
       "homeQBRating": 115.2,
-      "homeScore": null,
+      "homeScore": 35.0,
       "homeSpread": -3,
       "homeSpreadOdds": -110,
       "homeYPP": 6.7,
@@ -1417,9 +1516,9 @@
       },
       "offGap": 90.32,
       "pick": "San Francisco 49ers",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 58.82,
+      "pickSpreadReturn": 90.91,
       "starterOut": {
         "checked": "2026-11-22T23:35:57+00:00",
         "line": {
@@ -1613,7 +1712,16 @@
         "Yds/play 4.7 vs 6.7 \u00b7 90.3-pt gap (neutral site, Estadio Azteca, Mexico City)",
         "QB rating 96.8 vs 115.2 (Cousins vs Purdy)"
       ],
-      "time": "8:20 PM ET"
+      "time": "8:20 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     }
-  ]
+  ],
+  "scoredAt": "2026-11-23T08:15:07.426413+00:00"
 }

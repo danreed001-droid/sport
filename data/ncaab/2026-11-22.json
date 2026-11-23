@@ -2,7 +2,7 @@
   "date": "2026-11-22",
   "weekday": "Sunday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-22T16:25:00Z",
   "games": [
     {
@@ -28,7 +28,7 @@
       "awayMoneyline": 550,
       "awayPDpg": 17,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 74.0,
       "awaySpread": 11.5,
       "awaySpreadOdds": -105,
       "confidence": "skip",
@@ -37,7 +37,7 @@
       "homeMoneyline": -800,
       "homePDpg": 27.6,
       "homeRank": 24,
-      "homeScore": null,
+      "homeScore": 76.0,
       "homeSpread": -11.5,
       "homeSpreadOdds": -115,
       "offGap": 19.78,
@@ -67,7 +67,8 @@
           "leans": "Nebraska Cornhuskers",
           "leanPct": 54.9,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -94,7 +95,7 @@
       "awayMoneyline": 3300,
       "awayPDpg": 5.1,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 61.0,
       "awaySpread": 38.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -106,7 +107,7 @@
       "homeMoneyline": -10000,
       "homePDpg": 31.2,
       "homeRank": 6,
-      "homeScore": null,
+      "homeScore": 97.0,
       "homeSpread": -38.5,
       "homeSpreadOdds": -105,
       "lineMove": {
@@ -123,9 +124,9 @@
       },
       "offGap": 92.31,
       "pick": "Texas Longhorns",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -139,7 +140,7 @@
       "altCategoryTally": "0-4",
       "altConfidence": "lean",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": true,
       "altPick": "UCLA Bruins",
       "altReasons": [
         "Scoring margin: UCLA +34.4 PD/g vs Delaware +16.5 - favors UCLA",
@@ -153,12 +154,12 @@
         "Matchup splits: no additional specific verified unit mismatch beyond the talent gap already captured - neutral"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": 89.29,
       "away": "Delaware Blue Hens",
       "awayMoneyline": 3233,
       "awayPDpg": 16.5,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 48.0,
       "awaySpread": 29.5,
       "awaySpreadOdds": -108,
       "confidence": "solid",
@@ -170,7 +171,7 @@
       "homeMoneyline": -9900,
       "homePDpg": 34.4,
       "homeRank": 7,
-      "homeScore": null,
+      "homeScore": 85.0,
       "homeSpread": -29.5,
       "homeSpreadOdds": -112,
       "lineMove": {
@@ -196,9 +197,9 @@
       },
       "offGap": 60.44,
       "pick": "UCLA Bruins",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 89.29,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -231,7 +232,7 @@
       "awayMoneyline": 2500,
       "awayPDpg": -6.25,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 56.0,
       "awaySpread": 33.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -243,7 +244,7 @@
       "homeMoneyline": -10000,
       "homePDpg": 34.4,
       "homeRank": 18,
-      "homeScore": null,
+      "homeScore": 82.0,
       "homeSpread": -33.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -269,9 +270,9 @@
       },
       "offGap": 67.86,
       "pick": "USC Trojans",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -281,5 +282,6 @@
       ],
       "time": "8:00 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-23T08:15:11.275328+00:00"
 }

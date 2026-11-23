@@ -1,0 +1,151 @@
+{
+  "date": "2026-11-23",
+  "weekday": "Monday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-23T08:14:54Z",
+  "games": [
+    {
+      "espnId": "401873078",
+      "away": "Cincinnati Bengals",
+      "home": "Washington Commanders",
+      "time": "8:15 PM ET",
+      "homeSpread": 6.0,
+      "awaySpread": -6.0,
+      "homeSpreadOdds": -107.0,
+      "awaySpreadOdds": -113.0,
+      "homeMoneyline": 241.0,
+      "awayMoneyline": -296.0,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "8-4",
+          "key": "flag_help",
+          "name": "Help from the flags",
+          "team": "Washington Commanders",
+          "says": "fade",
+          "fact": "Washington Commanders beat New York Giants 24-21 last game while New York Giants was penalized 6 times for 62 yards (to 4 for 17).",
+          "record": "164-123",
+          "pct": 57.1,
+          "leans": "Cincinnati Bengals",
+          "leanPct": 57.1,
+          "against": false,
+          "unit": "ATS"
+        }
+      ],
+      "injuries": {
+        "away": {
+          "4401811": "questionable",
+          "3125082": "out",
+          "4426422": "questionable",
+          "4368003": "injured reserve",
+          "3051746": "injured reserve"
+        },
+        "home": {
+          "2576736": "questionable",
+          "4239694": "questionable",
+          "4575131": "injured reserve",
+          "4697815": "questionable",
+          "3051890": "injured reserve"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-23T08:15:32+00:00",
+        "line": {
+          "open": 1.5,
+          "now": 6.0
+        },
+        "away": [],
+        "home": [
+          {
+            "player": "Jacory Croskey-Merritt",
+            "pos": "RB",
+            "status": "Injured Reserve",
+            "out": true,
+            "lastGame": false,
+            "missed": 4,
+            "avg": [
+              5,
+              13.4,
+              47.8,
+              1.0,
+              8.0
+            ],
+            "gainers": [
+              {
+                "player": "Jeremy McNichols",
+                "pos": "RB",
+                "with": null,
+                "without": [
+                  2,
+                  5.0,
+                  17.0,
+                  0.5,
+                  3.5
+                ]
+              },
+              {
+                "player": "Austin Ekeler",
+                "pos": "RB",
+                "with": [
+                  2,
+                  3.5,
+                  14.0,
+                  1.0,
+                  13.0
+                ],
+                "without": [
+                  4,
+                  6.5,
+                  20.2,
+                  2.0,
+                  12.0
+                ]
+              },
+              {
+                "player": "Rachaad White",
+                "pos": "RB",
+                "with": [
+                  4,
+                  7.2,
+                  29.5,
+                  2.5,
+                  13.2
+                ],
+                "without": [
+                  4,
+                  9.0,
+                  39.2,
+                  2.2,
+                  20.2
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "lineMove": {
+        "spread": [
+          1.5,
+          6.0
+        ],
+        "total": [
+          52.5,
+          54.5
+        ],
+        "ml": {
+          "home": [
+            105.0,
+            241.0
+          ],
+          "away": [
+            -125.0,
+            -296.0
+          ]
+        },
+        "checked": "2026-11-23T08:15:33+00:00"
+      }
+    }
+  ]
+}
