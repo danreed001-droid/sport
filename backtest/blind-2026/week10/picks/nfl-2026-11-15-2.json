@@ -1,0 +1,31 @@
+{
+  "sport": "nfl", "date": "2026-11-15", "chunk": "nfl-2026-11-15-2",
+  "games": [
+    {
+      "away": "Pittsburgh Steelers", "home": "Cincinnati Bengals",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 4.0,
+      "research": [
+        "Line: slate Bengals -3.5; archive open -3.5, close -4.5; total rose 47.5 to 49.5 (Predictem, Nov 11 2026; archive). The close moved a point toward Cincinnati, so the slate's 3.5 is the better Cincinnati number. Spread-specific.",
+        "Betting splits: 'most of the money coming in is on Cincinnati, despite the travel' (Covers, Jason Logan, updated Nov 15 2026 5:14 PM ET). Spread-specific; helps CIN (don't fade money without a data-backed reason).",
+        "[angle] Rest: Pittsburgh is off a bye with two weeks to prepare; Cincinnati is a week removed from its Madrid game and the trip back (Predictem; Covers). Known before the line; priced. Mild PIT.",
+        "Both teams are on four-game win streaks; Cincinnati has scored 30+ in four straight (146 points), mostly against defenses ranked 22nd or worse in EPA per play since Week 5 (Covers; Predictem). Mixed: CIN's form came against soft defenses.",
+        "Pittsburgh's defense has cut opponent success rate from 46% to 38.7% since Week 5; it allows 83.9 rush yards per game and T.J. Watt has 7.5 sacks; it beat Cleveland 27-6 with eight sacks (Covers; Predictem). Helps PIT.",
+        "[angle] Pittsburgh's run game ranks 1st in EPA per handoff and 2nd in success rate since Week 5 (200 rush yards vs Cleveland; Jaylen Warren 704 yards), while Cincinnati allows 126.6 rush yards and 375.3 total yards per game (Covers; Predictem). Helps PIT.",
+        "Cincinnati's passing game: Joe Burrow has 23 TD passes, including 462 yards and 5 TD vs Tennessee; Ja'Marr Chase had 10-155 in Madrid (Predictem). Helps CIN.",
+        "Pittsburgh injuries: CBs Doneiko Slaughter and Brandin Echols questionable (hamstrings); WR Michael Pittman Jr. on IR (Predictem). Secondary depth vs Chase/Higgins; helps CIN.",
+        "Cincinnati's defense allowed 36 points to Tennessee and needed overtime to win (Predictem). Helps PIT.",
+        "Pittsburgh averages 22.5 ppg and is 2-2 on the road; Aaron Rodgers threw for 292 yards and 3 TD in the 30-27 Week 3 win over Cincinnati (Predictem). H2H priced; mixed.",
+        "Pittsburgh is 30-11-2 ATS as a divisional underdog since 2007 and 9-3 ATS in its last 12 catching points from an AFC North foe (Covers). Old ATS history; priced, neutral.",
+        "[angle] Pittsburgh's defense ranks 24th in DVOA against tight ends (FTN, via Covers), a target for Mike Gesicki. Helps CIN slightly.",
+        "Weather: high 30s, winds up to 4 mph (Covers). Neutral.",
+        "Both previews take Steelers +3.5 (Predictem projects 26-24; Covers' Logan). Preview picks are priced; neutral."
+      ],
+      "reasoning": "No read. Pittsburgh's run game against a soft Cincinnati run defense and its bye-week rest are real but known, while the money and the move to a 4.5 close went to Cincinnati. A projection near the close leaves the slate's 3.5 within 1 point. The most interesting angle is Cincinnati's 30-point streak coming against bottom-third defenses, facing an improved Steelers unit. A confirmed absence of both Steelers corners would have pushed it to a Bengals lean.",
+      "forcedSide": "Cincinnati Bengals",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
