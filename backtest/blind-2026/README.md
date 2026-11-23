@@ -27,7 +27,7 @@ Scope: every game with a line on our NFL, CFB, NBA and NCAAB slates from
 
 Grading: ATS at the slate's stored spread and odds (-110 if none), $100 flat;
 straight up at the stored moneyline (none when the pick gets 10+ points).
-Results: `RESULTS.md`.
+Results: `RESULTS.md`. Summary: `FINDINGS.md`.
 
 Limits: the picks use the line stored on our slate, not a line the agent found
 that morning; web search can still surface a result (that's what the
