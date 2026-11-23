@@ -1,0 +1,153 @@
+{
+  "sport": "nba",
+  "date": "2026-11-02",
+  "chunk": "nba-2026-11-02-1",
+  "games": [
+    {
+      "away": "Oklahoma City Thunder",
+      "home": "Cleveland Cavaliers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 4.5,
+      "research": [
+        "Slate line: Cavaliers -4.5; DraftKings open -4.5 and close -4.5, no spread movement; total moved 226.5 -> 229.5 (slate data). Neutral.",
+        "[angle] Covers preview (Nov 2, 2026): Oklahoma City without Chet Holmgren and Cason Wallace, and 'pesky defender' Alex Caruso also out -- a thin Thunder roster. Helps Cleveland, but reported before/around the open, so priced.",
+        "Covers' top pick was Cavaliers -3.5, citing the Thunder's thin roster (Covers, Nov 2, 2026). Preview-writer pick, not an edge per LESSONS. Helps Cleveland.",
+        "Dimers model (Nov 2, 2026): Cleveland 66.9% to win, projected 116-111, 51.5% to cover -4.5 -- essentially on the number. Neutral.",
+        "Predictem preview (Nov 2, 2026) projected Cavaliers 115, Thunder 104 and leaned Under 228.5. Helps Cleveland (writer projection, not an edge).",
+        "Covers Hawks-Pacers preview (Nov 2, 2026) notes Atlanta beat 4-2 Cleveland in the prior week: Cleveland 4-2 entering. Context only.",
+        "Research stopped after the first search: the search summary reported an in-game box-score snapshot for this game (see contaminationNote). Fewer than 10 bullets by design."
+      ],
+      "reasoning": "Contaminated on the first search before any lean was written, so locked as a pass per LESSONS. Pre-leak there was no read: the line was flat at -4.5 open to close and the Thunder absences (Holmgren, Wallace, Caruso) were known before the open. Forced side is Cleveland only because the pre-game previews in the same snippet pointed there; it is not a clean forecast.",
+      "forcedSide": "Cleveland Cavaliers",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary (covers/dimers/predictem domains) said a Dimers result 'contained a live box score showing Oklahoma City trailing late in the fourth quarter'. Seen before any lean was formed; no notes or side existed before it. Locked as a pass; forced side is tainted."
+    },
+    {
+      "away": "Atlanta Hawks",
+      "home": "Indiana Pacers",
+      "pick": "Atlanta Hawks",
+      "confidence": "lean",
+      "projectedMargin": -9.0,
+      "research": [
+        "Slate line Hawks -4.5, but DraftKings opened Indiana +7.5 and closed +10.5 (slate data): the market moved 3 points toward Atlanta after the open and the close sits 6 points past the slate number. Helps Atlanta at -4.5.",
+        "Total fell 234.5 -> 226.5 open to close (slate data), consistent with Indiana losing more offense after the open. Helps Atlanta.",
+        "Covers preview (Nov 2, 2026; written at Hawks -5.5): Indiana out Tyrese Haliburton, T.J. McConnell and Ivica Zubac; Obi Toppin, who missed two games, could return. Helps Atlanta (but known before the open, so priced).",
+        "[angle] Indiana is on the second night of a home back-to-back after losing 98-90 at home to the 1-5 Nets on Sunday (Covers and Predictem, Nov 2, 2026). Helps Atlanta.",
+        "Pacers are on a four-game losing streak; their only wins came against last-place teams, and they lost by eight to both the 1-5 Bucks and 1-5 Nets and also to Miami (Covers, Nov 2, 2026). Helps Atlanta.",
+        "Hawks lost four of five, but against opponents with a combined 16-10 record, and beat 4-2 Cleveland in that span (Covers, Nov 2, 2026). Mixed; slightly helps Atlanta.",
+        "[angle] Atlanta lead the NBA in assists, rank top five in protecting the ball and forcing turnovers, eighth in steals, with a top-10 perimeter defense (Covers Intel, Nov 2, 2026); Indiana is 20th in forcing turnovers. Helps Atlanta against a guard-depleted Pacers team.",
+        "Atlanta injuries: Jalen Johnson might sit; Kingston Flemings serving a one-game suspension (Covers, Nov 2, 2026); Covers' Hawks injury page lists C.J. McCollum out (calf). Helps Indiana -- but the line still moved toward Atlanta after these were known.",
+        "[angle] Hawks are slow starters: they trailed New Orleans 35-18 after one quarter and Miami by 13 at the half two games back (Covers, Nov 2, 2026). Backdoor risk; slightly helps Indiana.",
+        "Dimers model (Nov 2, 2026, pre-move): Hawks 118-113, 66.3% to win, 52.5% to cover -5.5, with Siakam projected for 22.9 points. Shows the pre-move consensus was near the slate number. Neutral.",
+        "Covers odds page lists Atlanta -10.5 with moneylines around -429 / +370 at the close (Covers matchup odds, archived pre-game). Confirms the move. Helps Atlanta at -4.5.",
+        "Andrew Nembhard averaging 21 points on 17 shots over his last three with a 34.6% usage rate (Covers, Nov 2, 2026) -- Indiana's offense runs through one healthy guard. Slightly helps Atlanta."
+      ],
+      "reasoning": "What decided it is the slate number versus the market: Atlanta -4.5 against a close of -10.5, after a 3-point move from the open on news the market saw after the slate line was set. Per LESSONS I treat the moved number as fair rather than fading it, which projects Atlanta by about 9 and clears the bar even shaded halfway to the line. The [angle] is a depleted Indiana on the second night of a back-to-back after a home loss to the 1-5 Nets. It would have been a pass if the line had stayed near 5.5, or if the move had been toward Indiana.",
+      "forcedSide": "Atlanta Hawks",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Brooklyn Nets",
+      "home": "New York Knicks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 12.0,
+      "research": [
+        "Line Knicks -14.5, open -14.5 and close -14.5; total 222.5 -> 218.5 (slate data). No spread move despite the Nets being on a back-to-back. Neutral.",
+        "Knicks are 2-4 SU and 1-5 ATS to start the season (Covers and Predictem, Nov 2, 2026). Helps Brooklyn (ATS record is a tiebreaker at most).",
+        "Knicks have won by 14+ only once this season (vs Detroit) and haven't won by more than 14 (Covers, Nov 2, 2026). Helps Brooklyn at +14.5.",
+        "Knicks offense: 29th in true shooting (53.1%), 109.3 points per 100 vs a 113 league average, about 98 possessions a game (sixth-slowest); five of six games went under (Covers/Predictem, Nov 2, 2026). Slow pace limits blowout margins. Helps Brooklyn.",
+        "[angle] Brunson is shooting 39.5%, a career low, and looked like he tweaked an ankle late in Friday's loss at Philadelphia, though he isn't on the injury report (Predictem, Nov 2, 2026). Helps Brooklyn slightly.",
+        "[angle] Nets are on the second night of a back-to-back after winning 98-90 at Indiana on Sunday; the Knicks had been home since Friday (Predictem, Nov 2, 2026). Helps New York.",
+        "Nets injuries: Egor Demin (leg) and Tyler Bilodeau (shoulder) out; Mikel Brown Jr. sat Sunday for back load management, status unconfirmed early Monday (Predictem, Nov 2, 2026). Helps New York.",
+        "Knicks injury: Jose Alvarado questionable (left ankle sprain) (Predictem, Nov 2, 2026). Slightly helps Brooklyn.",
+        "Nets are 1-5 but competitive: lost by 4 at Cleveland and by 1 in OT at Boston; only two losses by double digits (Predictem/Covers, Nov 2, 2026). Helps Brooklyn.",
+        "Nets turn it over on 16.3% of trips, fourth-worst, and rank bottom 10 in both offensive and defensive efficiency (Predictem/Covers, Nov 2, 2026). Helps New York.",
+        "[angle] Brooklyn's scoring now runs through ex-Knick Julius Randle (21.0/7.6/5.2) and Michael Porter Jr. (21.2 ppg, 3+ threes in four of six) (Predictem/Covers, Nov 2, 2026). Randle facing his former team. Context; slightly helps Brooklyn.",
+        "Knicks have won 14 straight over Brooklyn dating to January 2023 (Predictem, Nov 2, 2026). Head-to-head history, priced. Neutral.",
+        "Both Covers and Predictem writers took Nets +14.5 and projected a Knicks win by about 11 (Nov 2, 2026). Writer picks are not an edge per LESSONS."
+      ],
+      "reasoning": "I project about Knicks by 12 against a 14.5 line, but the gap is under the bar and the line didn't move at all, so it's a pass. The [angle] that kept it from being a lean is the Nets on the second night of a back-to-back with Mikel Brown Jr. unconfirmed, which offsets the Knicks' slow, inefficient offense. Forced side: Brooklyn, on the Knicks never winning by more than 14 at a slow pace and the tentative lesson against laying big numbers with a reshuffled early favorite.",
+      "forcedSide": "Brooklyn Nets",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Washington Wizards",
+      "home": "Orlando Magic",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 0.5,
+      "research": [
+        "Line Magic -2.5; DraftKings open -1.5, close -2.5 (slate data): a 1-point move toward Orlando despite its back-to-back and known injuries. Total 226.5 -> 224.5. Helps Orlando slightly (market information).",
+        "Orlando missing Paolo Banchero and Jalen Suggs (Covers, Nov 2, 2026). Helps Washington, but known before the open, so priced.",
+        "[angle] Orlando is on the second night of a back-to-back; Washington last played Friday (Covers, Nov 2, 2026). Helps Washington.",
+        "Orlando is 0-3 at home and scored under 100 in three of its last five (Covers, Nov 2, 2026). Helps Washington.",
+        "Washington allows about seven fewer points per 100 possessions than Orlando: 12th in defensive rating vs Orlando's 25th (Covers, Nov 2, 2026). Helps Washington.",
+        "Washington shoots 29.3% from three, and both teams average under 111 points (Covers, Nov 2, 2026). Helps Orlando (Wizards' offense limited).",
+        "[angle] Washington's offense now runs through Trae Young (20.7 ppg) and Anthony Davis, both listed healthy (Covers, Nov 2, 2026). Helps Washington.",
+        "Orlando gives up 12.7 rebounds a game to opposing power forwards and is 22nd in rebounds allowed (Covers, Nov 2, 2026); Davis had 13 rebounds against Charlotte. Helps Washington.",
+        "Desmond Bane is 11-for-21 from three over his last two games and averages 3.5 made threes (Covers, Nov 2, 2026). Helps Orlando.",
+        "Washington's games: the Under is 5-0 in its last five as an underdog (Covers Intel, Nov 2, 2026). Low-scoring games favor the points side slightly. Tiebreaker at most.",
+        "Covers' top pick was Wizards +2.5 (Quinn Allen, Nov 2, 2026), citing rest, defense and Orlando's home struggles. Writer pick, not an edge."
+      ],
+      "reasoning": "Contaminated before a lean was written (see note), so locked as a pass. Pre-leak the evidence was split: rest, defense and Orlando's 0-3 home start pointed to Washington, but the market moved a point toward Orlando after the injuries and back-to-back were known, and LESSONS says not to count reverse movement either way. The forced side is Washington from those pre-leak rest/defense notes, but the hint points the same way, so it is tainted.",
+      "forcedSide": "Washington Wizards",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch for this game (predictem/wagertalk/actionnetwork/sbr/oddstrader) surfaced a Predictem preview of the Nov 22, 2026 Magic at Wizards rematch; its summary said the writer 'argues the Wizards have already beaten this version of Orlando.' That likely refers to this Nov 2 game (a Washington win), though not certain. Seen before any lean was written. Locked as a pass."
+    },
+    {
+      "away": "Chicago Bulls",
+      "home": "Philadelphia 76ers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 10.5,
+      "research": [
+        "Slate line 76ers -11.5; DraftKings open -11.5, close -10.5 (slate data): a 1-point move toward Chicago, so the slate's Bulls +11.5 is 1 point better than the close. Total 239.5 -> 240.5. Slightly helps Chicago at +11.5.",
+        "[angle] Joel Embiid questionable (right foot plantar fascia injury management); LeBron James sat Saturday's back-to-back finale but was not on the report early Monday, and CBS reported both expected to play (Predictem, Nov 2, 2026). Late status -- part of why this is a pass.",
+        "76ers 6-1, but their six wins came by 6, 8, 11, 5, 5 and 5 points; only one cleared 11 (Predictem, Nov 2, 2026). Helps Chicago at +11.5.",
+        "Bulls 1-5 and lost four straight; Chicago has the East's worst road scoring margin at -21.3 (Covers, Nov 2, 2026). Helps Philadelphia.",
+        "Chicago allows a league-high 129.3 points a game (129.8 on the road) and plays the fastest pace in the league (about 106-111 possessions) (Covers/Predictem, Nov 2, 2026). Helps Philadelphia.",
+        "Philadelphia has the third-best defense (105.4 per 100) and the fewest turnovers in the NBA; allows 104.9 a game, 102 over its last three (Predictem/Covers, Nov 2, 2026). Helps Philadelphia.",
+        "[angle] After Friday's 125-111 loss in Boston, rookie Caleb Wilson said 'I just feel like we laid down' (Predictem, Nov 2, 2026). Effort concern. Helps Philadelphia.",
+        "Bulls injury: Nic Claxton doubtful (hamstring) (Predictem, Nov 2, 2026). Helps Philadelphia.",
+        "[angle] Philadelphia won Saturday at Charlotte after a late comeback and has played many close games: five of seven unders (Predictem/Covers, Nov 2, 2026). A team that wins close games slows blowout margins. Helps Chicago.",
+        "Covers Intel: Bulls have failed to cover in eight of their last nine as road underdogs vs Eastern Conference teams (Covers, Nov 2, 2026). ATS trend, a tiebreaker at most. Helps Philadelphia.",
+        "Tyrese Maxey averaging 29.6 ppg; Chicago ranks worst in opponent point-guard efficiency and opponent 3P% (50.7%) (Predictem/Covers, Nov 2, 2026). Helps Philadelphia.",
+        "Covers' writer took 76ers -10.5; Predictem projected 120-106 (Philadelphia by 14) and played the under (Nov 2, 2026). Writer picks, not an edge."
+      ],
+      "reasoning": "I project Philadelphia by about 10.5, within 2 points of the 11.5 line, and Embiid's questionable status is unresolved, so it's a pass. The [angle] on both sides: Chicago's 'we laid down' effort problem against Philadelphia's habit of winning only by 5-8. Forced side is Chicago: the slate's +11.5 is a point better than the +10.5 close on the side the market moved to, as a tiebreaker.",
+      "forcedSide": "Chicago Bulls",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Detroit Pistons",
+      "home": "Charlotte Hornets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -7.0,
+      "research": [
+        "Slate line Pistons -4.5; DraftKings open -4.5, close -5.5 (slate data); WagerTalk (Nov 2, 2026) says it opened -3.5 elsewhere and reached -5.5. Market moved toward Detroit; the slate's -4.5 is 1 point better than the close. Helps Detroit.",
+        "Betting splits: Detroit drew most of the spread money and tickets (WagerTalk, Nov 2, 2026). Public and money aligned, not a sharp/public split. Neutral to Detroit.",
+        "Detroit is 5-1 SU and 5-1 ATS, with all five wins by 8+ points (Covers/WagerTalk, Nov 2, 2026). Helps Detroit (ATS record a tiebreaker only).",
+        "Detroit won by 16 at Brooklyn on Friday and held three of its last four opponents under 100 (Covers/WagerTalk, Nov 2, 2026). Helps Detroit.",
+        "Charlotte ranks 30th in scoring (98.3) and last in offensive rating, averaging 90.7 during a three-game losing streak (losses to Washington and Philadelphia) (Covers, Nov 2, 2026). Helps Detroit.",
+        "[angle] Charlotte takes 50.7% of its shots from three (second-most) but makes only 29.6% (28th), while Detroit holds opponents to 32.5% from three (Covers, Nov 2, 2026). Helps Detroit.",
+        "[angle] Detroit forced 25 turnovers in the Oct 28 meeting, an 8-point Pistons win (97-89, as a 7.5-point favorite); Charlotte is 27th in turnovers (Covers/WagerTalk, Nov 2, 2026). Helps Detroit, but this-season matchup data, not old history.",
+        "[angle] Coby White (17.4 ppg last season) makes his season debut for Charlotte (WagerTalk, Nov 2, 2026). New offense the season stats don't include. Helps Charlotte.",
+        "Detroit center Jalen Duren is out with a leg injury (WagerTalk, Nov 2, 2026). Helps Charlotte (known before the line settled, so priced).",
+        "Total 208.5 -> 209.5 (slate data); Charlotte home totals were above 225 a week earlier (WagerTalk, Nov 2, 2026). With so few points, a 4.5 spread is a bigger share of the margin, but LESSONS says that's already priced. Neutral.",
+        "Detroit has won six straight meetings, 4-2 ATS, with Charlotte averaging 95.8 points in those games (WagerTalk, Nov 2, 2026). Head-to-head history, priced. Neutral.",
+        "Brandon Miller averaging 24.4 ppg with a 34.6% usage rate (Covers, Nov 2, 2026): Charlotte's one reliable scorer. Slight help to Charlotte.",
+        "WagerTalk leaned Pistons -5.5 and projected 112-104; Covers' writer took Pistons -4.5 (Nov 2, 2026). Writer picks, not an edge."
+      ],
+      "reasoning": "I project Detroit by about 7, 2.5 points past the 4.5 line: under the 4-point unshaded bar and only about 1.25 after shading halfway to the line, so it's a pass. Detroit's defense against Charlotte's broken three-point offense is the matchup story, and the [angle] cutting the other way is Coby White's debut adding scoring the numbers don't include. Forced side is Detroit, which the slate's 1-point edge over the close also supports.",
+      "forcedSide": "Detroit Pistons",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}

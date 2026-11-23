@@ -1,0 +1,153 @@
+{
+  "sport": "nfl",
+  "date": "2026-11-01",
+  "chunk": "nfl-2026-11-01-2",
+  "games": [
+    {
+      "away": "Atlanta Falcons",
+      "home": "Tampa Bay Buccaneers",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 1.5,
+      "research": [
+        "[spread] The line moved 2 points toward Atlanta: DraftKings opened Tampa -4.5 and closed -2.5, which matches the slate. The move is under 3 points and points to the road dog (slate file open/close). Helps Atlanta slightly.",
+        "[spread] Tampa Bay is 0-4 at home this season, averaging 17 points there (Predictem preview, updated before Nov 1, 2026). Covers' trends piece puts Tampa at 0-9 ATS in its last nine home games and 2-14 ATS over its last 16 (Covers 'Trends That Matter Week 8', Nov 1, 2026). The ATS record is priced in, so it's a tiebreaker only. Helps Atlanta.",
+        "[spread] Atlanta is 7-1 ATS in its last eight games as a road underdog (Covers preview, Geoff Clark, Nov 1, 2026). This is a priced trend, a tiebreaker only. Helps Atlanta.",
+        "Baker Mayfield is back from a dislocated right thumb that cost him three games. In last week's 43-13 win over Carolina he threw only 11 passes (7-11 for 64 yards) while Tampa ran 49 times (Predictem; Covers, Nov 1, 2026). Whether he can carry a passing offense is unproven. Helps Atlanta.",
+        "Tampa's passing offense ranks last in the NFL at 5.14 yards per pass play, and Mayfield has the third-worst QBR (Covers, Nov 1, 2026). Helps Atlanta.",
+        "Tampa's defense ranks third in EPA allowed per play, has 10 sacks in its last two games, and its run game ranks third (146.4 yards/game). Atlanta allows a poor sack rate (Predictem preview). Helps Tampa Bay.",
+        "Michael Penix Jr. has started since Week 3, with 9 TD and 1 INT, about 0.11 EPA per play since then, and Atlanta has averaged 31 points over its last five. The Falcons beat San Francisco 29-20 last week, with Penix throwing 3 TDs (Predictem preview). Helps Atlanta.",
+        "Atlanta listed RB Brian Robinson Jr., CB Avieon Terrell and S Billy Bowman Jr. as questionable (Predictem preview). Their final status wasn't confirmed. Helps Tampa Bay.",
+        "[angle] Tampa allowed the fifth-most TDs to tight ends (5). Kyle Pitts leads Atlanta with 4 TD catches and had 11-166-3 against Tampa last season (Covers, Nov 1, 2026). Helps Atlanta.",
+        "[angle] The forecast was about 80F, 13 mph wind and a 49-64% chance of rain, which both writers expect to favor the run (Covers; Predictem). The total fell from 46.5 to 43.5 (slate). Weather isn't a side reason under LESSONS. Neutral.",
+        "[angle] The last six meetings were all decided by 6 points or fewer, averaging 3.7 points (Predictem). Head-to-head history is priced. Neutral, slightly favors the points.",
+        "Preview writers at Covers and Predictem both took Atlanta +2.5, and Dimers' model had Tampa winning 22-20 (Dimers Week 8 preview). Writers' picks aren't an edge under LESSONS. Neutral."
+      ],
+      "reasoning": "I project Tampa by about 1.5 against a 2.5 line, a gap of 1. That is within the pass band, and the line already moved 2 points toward Atlanta. The surprising [angle] is Tampa's 0-4 home record with a QB who threw 11 passes in his return, but it's a narrative and the market has partly moved on it. The forced side is Atlanta, as the road dog the move went toward. Confirmation that Mayfield was limited, or a sharper late move, would have made it a pick.",
+      "forcedSide": "Atlanta Falcons",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Indianapolis Colts",
+      "home": "Jacksonville Jaguars",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 10.5,
+      "research": [
+        "[spread] This is a big line move toward Jacksonville. The slate lists DraftKings opening Jaguars -4.5 and closing -10.5. The slate's -7.5 is 3 points better than the close on the side the market moved to (slate file; SBR also lists a -7.5 opener and -10.5 later, Oct 30-Nov 2, 2026). LESSONS calls this information, not an edge. Helps Jacksonville.",
+        "[angle] Indianapolis held a mid-week fire sale. It fired GM Chris Ballard in October, then on Tuesday of game week traded LG Quenton Nelson to Seattle and DT DeForest Buckner to San Francisco for mid-round picks (Predictem, Joe Jensen, Oct 28, 2026). These are news after the open, and they drove the move. Helps Jacksonville.",
+        "Indianapolis has lost three straight. In the latest, 16-10 at Minnesota, Daniel Jones went 13-22 for 108 yards, took 4 sacks and threw a game-sealing INT. He has 4 TD and 7 INT this season, and the Colts' pass offense ranks 29th in efficiency per throw (Predictem, Oct 28, 2026). Helps Jacksonville.",
+        "[angle] Jacksonville has 14 days of rest: it played back-to-back games in London, then had a Week 7 bye (Predictem; SBR). Helps Jacksonville.",
+        "Jacksonville's offense ranks 3rd in EPA per play and 2nd in passing EPA, and Trevor Lawrence has 14 TD and 4 INT. Its run defense allows a league-low 72.2 rushing yards per game, which targets Jonathan Taylor (587 yards, 8 TD) (Predictem). Helps Jacksonville.",
+        "Jacksonville's pass defense ranks 25th in success rate allowed. RT Anton Harrison is on IR (Predictem). These are openings for the Colts. Helps Indianapolis.",
+        "Tyler Warren and Sauce Gardner were listed questionable and could return (Predictem). They would help Indianapolis if active, but their final status was unconfirmed. Helps Indianapolis.",
+        "[spread] Indianapolis is 4-1 ATS in its last five games after a straight-up loss (Covers Trends, Nov 1, 2026). Covers still flagged Indianapolis +9.5 as a spot to avoid. This is a priced trend. Slightly helps Indianapolis.",
+        "[spread] Both teams allow 5.8 yards per play, tied for fourth-worst. Indianapolis allows 25+ points per game, and Jacksonville scores 25.7 per game and has 31+ in three of six games (SBR, Matt MacKay, picks Oct 30). Helps Jacksonville.",
+        "Weather was 75F with 16-21 mph gusts and a 34-55% chance of rain (SBR; Predictem). The total fell from 49.5 to 45.5 (slate). Weather isn't a side reason. Neutral.",
+        "Projections from previews: Predictem had Jacksonville 30-16 (it would pass at -10.5 or more), Covers had 27-20, and Dimers had 28-17 (80% win probability). These are not an edge. Neutral, slightly toward Jacksonville at -7.5."
+      ],
+      "reasoning": "The market moved 6 points to the close of -10.5 after the Nelson and Buckner trades and on Jacksonville's rest. I treat -10.5 as fair, which leaves the slate's -7.5 3 points better on Jacksonville. That is under the 4-point bar, and LESSONS says a stale slate number is information, not an edge (4-3). The surprising [angle] is a contender-level fire sale in game week. Confirmation that Warren and Gardner were out, or a projection past -11.5, would have made it a pick.",
+      "forcedSide": "Jacksonville Jaguars",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Los Angeles Chargers",
+      "home": "Los Angeles Rams",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 6.0,
+      "research": [
+        "[spread] The line moved 3 points toward the Rams: it opened -3.5 and closed -6.5, which equals the slate (slate file). LESSONS says to treat it as fair. Neutral.",
+        "[spread] Covers listed spread tickets at Chargers 51% and Rams 50%, with the moneyline 73% Rams (Covers, Shawn Krest, Nov 1, 2026). There is no clear sharp or public split. Neutral.",
+        "The Chargers are winless, with an 0-6 start, and Covers calls their offense one of the least efficient in the league (Covers preview; Covers ATS-every-game article, Week 8). Helps the Rams.",
+        "Justin Herbert has been sacked 3.5 times a game, third-most in the NFL, with 13 sacks in the last three games and a 26.4% pressure rate. The Chargers started four rookie offensive linemen last game (Covers, Nov 1, 2026). Helps the Rams.",
+        "[angle] The Chargers come off a Week 7 bye. LT Joe Alt is expected back and off the injury report, WR Ladd McConkey (concussion) was a full participant, and G Kayode Awosika hadn't practiced (Covers, Nov 1, 2026). Helps the Chargers.",
+        "[angle] The Rams have lost WR Davante Adams and DT Poona Ford in the past two weeks (Covers/Dimers preview summaries). Helps the Chargers.",
+        "The Rams ran for 201 yards in a 35-21 win over Las Vegas, with Kyren Williams and Blake Corum each over 90. Their pass rush had a 66.7% win rate against the Giants (Covers, Nov 1, 2026). Helps the Rams.",
+        "Matthew Stafford's yards, completions and attempts have dropped each week since mid-October; he went 23-29 for 195 against the Raiders. The Rams allow the league's highest yards after catch (Covers, Nov 1, 2026). Helps the Chargers.",
+        "[spread] The Rams are 3-7 ATS in their last 10 games (Covers Trends, Nov 1, 2026), yet Covers advised avoiding the Chargers +6.5. This is a priced trend. Slightly helps the Chargers.",
+        "The Chargers' defense has allowed 22+ points in every game, and the Rams have allowed 20+ in four of their last five (Covers). Neutral.",
+        "Model and writer views: Dimers had the Rams 26-18 (74%), SBR's AI had 30-17, and Covers' Krest took the Chargers +6.5. These are not an edge. Neutral."
+      ],
+      "reasoning": "After a 3-point move I treat -6.5 as fair. I project the Rams by about 6, essentially on the number, so it's a pass. The bye-week line fixes (Alt and McConkey back) and the Rams' recent losses of Adams and Ford are the [angle], and they make the road side the tiebreaker per the NFL lesson. Evidence that the Chargers' line problems persisted, or a move back toward -5, would have changed the forced side.",
+      "forcedSide": "Los Angeles Chargers",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Kansas City Chiefs",
+      "home": "Denver Broncos",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -1.5,
+      "research": [
+        "[spread] The slate has the Chiefs -1.5, and the moneyline (KC -117 / DEN -102) agrees. Previews also list Kansas City -1.5 all week (Covers early, Oct 28; Predictem). But the slate's DraftKings open and close fields both show Denver -1.5, which looks like a sign error in the data. The market looks steady at KC -1.5. Neutral.",
+        "[spread] The total fell from 43.5 to 41.5 (slate). Predictem says about 75% of tickets were on the Over, so sharp money looks to be on the Under (Predictem, Joe Jensen). This is a total read, not a side one. Neutral.",
+        "Denver is 5-2 and has won three straight since Sean Payton took over play-calling, averaging 23.3 points (Predictem; Covers early, Oct 28, 2026). Helps Denver.",
+        "Kansas City started 5-0 but lost 20-3 at Seattle last week: Mahomes went 19-33 for 165 yards and an INT, and the Chiefs were 3-11 on third down (Predictem). His aDoT is a career-low 6.7, and 5.1 in each of the last two games (Covers early). Helps Denver.",
+        "Chiefs injuries: WR Rashee Rice (hamstring) and RT Jaylon Moore (concussion) were uncertain, LT Josh Simmons is on IR, and Travis Kelce was limited last week with an ankle injury (Predictem). Helps Denver.",
+        "[angle] Denver CB Patrick Surtain II (ankle) was expected back after missing recent games (Covers early, Oct 28, 2026). Helps Denver.",
+        "Denver's defense ranks 3rd in success rate allowed and 4th in pass EPA, its 21 sacks are 4th, and it leads the NFL in PFF pass-rush grade. Denver's offense ranks 29th in success rate and 30th in passing success (Predictem; Covers early). Mixed.",
+        "Kansas City ranks 2nd in rushing EPA (Kenneth Walker 701 yards), its defense is 6th in EPA allowed, it allows the fewest sacks, and Denver ranks 27th against the run by EPA (Predictem). Helps Kansas City.",
+        "[angle] The Chiefs have lost their last three games at Mile High, and the Under has hit in seven straight meetings (Covers early; Predictem). Head-to-head history is priced. Neutral, slightly Denver.",
+        "Kansas City is 15-3 to the Under in its last 18 (Covers Trends, Nov 1, 2026). This is a total trend. Neutral.",
+        "Model and writer views: Dimers had KC 21-19 (57.5%), Predictem KC 20-17, Covers' early lean was Denver +1.5, SBR took Denver +1.5, and the Covers ATS article took KC -1.5. They are split and not an edge. Neutral."
+      ],
+      "reasoning": "This is a near pick'em at a stable number, and the evidence is balanced: Kansas City's run game and Denver's run-defense weakness against Kansas City's injured passing game and Denver's pass rush. I project Kansas City by about 1.5, on the number, so it's a pass. The forced side is the road team per the NFL tiebreaker lesson. Confirmation that Rice and Moore were out would have flipped the forced side to Denver.",
+      "forcedSide": "Kansas City Chiefs",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "New England Patriots",
+      "home": "Miami Dolphins",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": -7.0,
+      "research": [
+        "[spread] DraftKings opened and closed Miami +7 (slate). Predictem also says New England opened -7 and held there, with about 3 of 4 tickets on New England (Predictem, Oct 29, 2026). The slate's +7.5 is half a point better for Miami, through the key number 7. Helps Miami.",
+        "[angle] Late injury news from preview summaries: Patriots WR A.J. Brown (ankle) was downgraded from questionable to out, and RB TreVeyon Henderson (illness) was downgraded to out. The line still held at 7 (Covers/Action Network preview summaries). Helps Miami.",
+        "Miami injuries: rookie LG Kadyn Proctor was ruled out (concussion), CB JuJu Brents was questionable (concussion), the offensive line was missing several starters, and De'Von Achane is on IR with a torn ACL (preview summaries; Predictem). Helps New England.",
+        "Drake Maye leads the NFL in adjusted EPA per play over the last four weeks, at 0.44 EPA per dropback, and New England ranks 2nd in offensive DVOA at 31 points per game during the surge (Covers, Neil Parker, Nov 1; Predictem). Helps New England.",
+        "Miami ranks last in EPA allowed, success rate allowed and EPA per pass, allows a 76.6% completion rate, has 6 sacks all season, and ranks 29th in defensive DVOA (Predictem; Covers). Helps New England.",
+        "[angle] New England is on extra rest, 10 days after losing 30-24 at Chicago on Thursday night (Predictem; Covers). Helps New England.",
+        "[spread] The Patriots are 5-0 straight up and ATS after a loss under Mike Vrabel, averaging an 11.8-point margin in those games, and 12-4 ATS in their last 16 as favorites (Covers Trends, Nov 1, 2026). This is priced, a tiebreaker only. Helps New England.",
+        "[spread] Miami has covered three straight and is 8-2 ATS in the last 10 meetings. New England is 1-3 on the road (Predictem). This is priced. Helps Miami.",
+        "Miami won its first game, 28-25 over the Jets, Jeff Hafley's first win as coach. Malik Willis has 4 TD and 4 INT. Miami's offense ranks 24th in EPA and 28th in passing EPA (Predictem). Mixed.",
+        "New England has 14 turnovers (8 INT, 6 fumbles lost) and a banged-up secondary (Carlton Davis), and C Ben Brown has a knee issue (Predictem). Helps Miami.",
+        "The total fell from 45.5 to 41.5 (slate). The forecast was 84F with a 40% chance of thunderstorms and 12-14 mph wind (Covers). Weather isn't a side reason. Neutral.",
+        "Projections: Predictem had New England 30-17, Dimers had 24-18 (72%), and Covers' Parker took Patriots -6.5. The Covers ATS article took Miami +7.5. These are not an edge. Neutral."
+      ],
+      "reasoning": "The market held at 7 all week even after A.J. Brown and Henderson were ruled out. I project New England by about 7, so the slate's +7.5 is only half a point better on Miami and well inside the pass band. Getting the hook past 7 makes Miami the forced side, rather than the usual road tiebreaker. A close moving to -8 or more on New England would have flipped it.",
+      "forcedSide": "Miami Dolphins",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Philadelphia Eagles",
+      "home": "Washington Commanders",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 5.0,
+      "research": [
+        "[spread] There was a huge 8-point move. DraftKings opened Washington +2.5 (Eagles favored) and closed Washington -5.5, which equals the slate (slate file). LESSONS says to treat the moved number as fair and not re-count the cause. Neutral.",
+        "[spread] The total fell from 46.5 to 40.5 (slate), consistent with Philadelphia losing its QB. Neutral.",
+        "Jalen Hurts is out for the year, and Tanner McKee starts for Philadelphia (SBR expert picks, Nov 1-2; Covers SNF best bets, Nov 1, 2026). This is the cause of the move. It's priced, so I don't count it again.",
+        "Philadelphia is missing WRs DeVonta Smith (questionable or out) and Dontayvion Wicks. RT Lane Johnson retired. Saquon Barkley (hamstring) is cleared after 62 yards on 7 carries against Dallas (Covers SNF; SBR). Helps Washington.",
+        "[angle] Washington's defensive front is depleted: DT Javon Kinlaw is out, and Daron Payne (foot) and Jer'Zhan Newton (pectoral) are questionable or ruled out in some reports (Covers SNF; preview summaries). This opens the run for Barkley. Helps Philadelphia.",
+        "[angle] Jayden Daniels is on an eight-game winless streak and is four weeks removed from an elbow injury. Terry McLaurin is out for the season (torn patellar tendon), and RB Jacory Croskey-Merritt is on IR (SBR; Covers SNF). Washington's offense is thin. Helps Philadelphia.",
+        "[angle] Rest edge: Washington is off a Week 7 bye, while Philadelphia is on a short turnaround with off-field distractions (Covers SNF; Covers ATS-every-game). Helps Washington.",
+        "Philadelphia's defense allowed a season-high 416 yards last week with zero sacks or QB hits. It ranks 30th in sacks, has the 5th-lowest pressure rate and is last in turnovers forced (SBR; Covers SNF). Helps Washington.",
+        "Washington ranks near the bottom in third-down and red-zone defense and has allowed 15 passing TDs, 8 to tight ends, which favors Dallas Goedert (11-109 over the last two games) (SBR; Covers SNF). Helps Philadelphia.",
+        "Philadelphia appears to be 2-5, and a loss would make it 2-6, its first such start since 1999 (SBR). Helps Washington.",
+        "Models are split on the side: Dimers had Washington 23-16 (73%), the Covers AI had Washington 23-20 but took Philadelphia +5.5, and SBR's AI had Philadelphia 24-21. These are not an edge. Neutral."
+      ],
+      "reasoning": "The 8-point move on the Hurts news makes -5.5 the fair number. I project Washington by about 5, on the number, so it's a pass. The surprising [angle] is that Washington is itself depleted: Daniels winless in eight, McLaurin gone, and three DL starters hurt, which keeps the Eagles live despite McKee. That makes the road side the tiebreaker. Clear sharp money on Washington after the close, or the Washington DL being active, would have flipped it.",
+      "forcedSide": "Philadelphia Eagles",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
