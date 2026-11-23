@@ -2092,7 +2092,7 @@ footer b{color:var(--ink);}
     var p0 = periodSpan(periodOf(dayS(firstN)))[0], lastN = dayN(tonight);
     var panel = function(S, team, opp, home, color){
       if(!S || !S.rows.length) return '<div class="ab-h"><i style="background:'+color+'"></i>'+teamBadge(team,true)+' <b>'+esc(teamAbbr(team))+'</b> no finished games saved '+(cutD ? 'in this range' : 'this season')+'</div>';
-      var W = 600, L = PH ? 50 : 40, R = PH ? 62 : 50, Tp = 10, CH = PH ? 230 : 170, XB = PH ? 26 : 16;
+      var W = 600, L = ML ? (PH ? 76 : 50) : (PH ? 50 : 40), R = PH ? 62 : 50, Tp = 10, CH = PH ? 230 : 170, XB = PH ? 26 : 16;
       var nd = lastN - p0 + 1, uw = (W - L - R) / nd, xOf = function(n){ return L + uw * (n - p0 + 0.5); };
       var vals = [S.start, S.end]; S.rows.forEach(function(k){ vals.push(k.hi, k.lo); });
       var mn = Math.min.apply(null, vals), mx = Math.max.apply(null, vals), span = Math.max(mx - mn, ML ? 300 : soc ? 2 : 10);
@@ -2151,7 +2151,7 @@ footer b{color:var(--ink);}
         + ' · '+(last.p === periodOf(tonight) ? (fb ? 'this month so far' : 'this week so far') : (fb ? 'last month' : 'last week'))+' '+fmt(wkChg)+'</div>';
       return head + '<svg class="cdk" viewBox="0 0 '+W+' '+Hh+'" role="img" aria-label="'+esc(team)+(ML ? ' running moneyline profit' : ATS ? ' running cover margin' : ' running '+unit+' differential')+' candles">'+out+'</svg>';
     };
-    return '<div class="atstrend"><div class="at-head"><b>'+(ML ? 'Moneyline candles' : ATS ? (sport==='mlb' ? 'Run line' : 'ATS')+' candles' : (sport==='mlb' ? 'Run' : soc ? 'Goal' : 'Point')+' differential candles')+'</b><span>the running '+(ML ? 'profit from $100 on the team to win each match at its closing moneyline (DraftKings, via ESPN): a win pays the price, a draw or a loss costs $100' : ATS ? 'cover margin (margin + closing '+RL+')' : unit+' differential')+' this season: each game a candle from the running total before it to after it (green up, red down'+(ATS ? ', gray no '+RL : '')+')'+(soc ? '' : ', its wick the high and low through the game’s '+pNames)+'; each '+(fb ? 'month' : 'week (Mon-Sun)')+' a hollow candle around its games · dashed outline = tonight · hover for the score'+(soc ? '' : ' and the '+pNames)+'</span></div>'
+    return '<div class="atstrend"><div class="at-head"><b>'+(ML ? 'Moneyline candles' : ATS ? (sport==='mlb' ? 'Run line' : 'ATS')+' candles' : (sport==='mlb' ? 'Run' : soc ? 'Goal' : 'Point')+' differential candles')+'</b><span>the running '+(ML ? 'profit from $100 on the team to win each match at its closing moneyline (DraftKings, via ESPN): a win pays the price, a draw or a loss costs $100. This season' : ATS ? 'cover margin (margin + closing '+RL+') this season' : unit+' differential this season')+': each game a candle from the running total before it to after it (green up, red down'+(ATS ? ', gray no '+RL : '')+')'+(soc ? '' : ', its wick the high and low through the game’s '+pNames)+'; each '+(fb ? 'month' : 'week (Mon-Sun)')+' a hollow candle around its games · dashed outline = tonight · hover for the score'+(soc ? '' : ' and the '+pNames)+'</span></div>'
       + panel(SA, g.away, g.home, false, gc[0]) + panel(SH, g.home, g.away, true, gc[1]) + '</div>';
   }
   function trendChart(sport, g, kind){
