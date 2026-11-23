@@ -1,0 +1,50 @@
+{
+  "sport": "nba", "date": "2026-11-05", "chunk": "nba-2026-11-05-1",
+  "games": [
+    {
+      "away": "Orlando Magic", "home": "Phoenix Suns",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 0.5,
+      "research": [
+        "Covers (Quinn Allen, Nov 5 2026): Orlando is without Paolo Banchero and Jalen Suggs, two of its top defenders; helps Suns -1.5 (known before the line opened, so priced).",
+        "[angle] Covers (Nov 5): Phoenix is on the second night of a back-to-back after allowing 132 at Portland on Wednesday, while Orlando last played Monday; rest edge helps Magic +1.5.",
+        "Covers (Nov 5): Phoenix has lost four straight and allowed 120+ in three of them; helps Magic.",
+        "Covers (Nov 5): Phoenix ranks last in defensive rating and 28th in opponent eFG% (57.1%); helps Magic.",
+        "Covers (Nov 5): Orlando has been held under 100 points in its last two games and ranks 28th in points per game; without Banchero its offense is a real question, helps Suns.",
+        "Covers (Nov 5): Orlando ranks 25th in defensive rating, so it cannot count on its defense to carry it without Suggs; helps Suns.",
+        "Covers (Nov 5): Orlando has won two of its three road games; mild help for Magic.",
+        "[angle] Covers (Nov 5): Desmond Bane shoots 37.3% from three on 9.6 attempts and Phoenix allows 5.1 threes a game to opposing shooting guards; matchup helps Magic.",
+        "[angle] Covers (Nov 5): Devin Booker scored 33 in the Portland loss, averages 24.7 with 27.2% usage, and Miles Bridges is 7-for-12 from three over two games; helps Suns.",
+        "Slate/ESPN: open -1.5, close -1.5 (no move); total 224.5 to 222.5; a steady line through the back-to-back news suggests the market saw it as balanced.",
+        "Dimers model (Nov 5): projects Suns 112-110 with Suns -1.5 covering 51.1%; Covers' writer took Magic +1.5. Public models split, neutral."
+      ],
+      "reasoning": "A near pick'em with offsetting factors: Phoenix's back-to-back, four-game slide and last-ranked defense against an Orlando offense stuck under 100 without Banchero and Suggs. The projection is within a point of the 1.5 line and the close never moved, so pass. A Booker absence would have made it a Magic lean.",
+      "forcedSide": "Orlando Magic",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Miami Heat", "home": "Golden State Warriors",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 4.0,
+      "research": [
+        "Predictem (Joe Jensen, Nov 5 2026): Warriors are without Jimmy Butler, Moses Moody, Kristaps Porzingis and Gui Santos; helps Heat +7.5.",
+        "Predictem (Nov 5): Giannis Antetokounmpo is playing through a right wrist sprain and logged 40+ minutes in Wednesday's overtime game at the Clippers; helps Warriors.",
+        "[angle] Covers (Nov 5) and Predictem (Nov 5): Miami is on the second night of a back-to-back, its third game in four nights, on a West Coast trip, while Golden State has not played since Monday; helps Warriors -7.5.",
+        "Covers (Nov 5): Golden State has won five straight after an 0-3 start and averaged 117.5 points, scoring 119-134 in three recent games; helps Warriors.",
+        "Predictem (Nov 5): Miami (3-5) allows 119.8 points per 100 possessions and a 58.2% opponent eFG; it allowed 138 to the Lakers Monday; helps Warriors.",
+        "Covers (Nov 5): Miami allows 49.0% shooting and 40.1% from three on the road and plays about 108 possessions per road game; helps Warriors.",
+        "[angle] Predictem (Nov 5): Stephen Curry averages about 30 and scored 34 Monday; Charles Bassey scored a career-high 19 filling in for the missing bigs; helps Warriors.",
+        "Predictem (Nov 5): line opened around Warriors -4.5 and was bet to -7.5 by Thursday morning; Covers at 7:04 PM ET still listed -7.5.",
+        "Dimers (Nov 5, updated 10:11 PM ET): the market had dropped to Warriors -3.5 at tip and its model had moved from Warriors 119-113 in the morning to 119-116; a late 4-point move toward Miami on news I did not identify. ESPN close also -3.5.",
+        "Dimers morning (Nov 5): best value Heat +7.5 at a 54.2% model cover probability; Predictem picked Warriors -7.5 (projected 120-109). Public models split."
+      ],
+      "reasoning": "Contaminated before any lean was written: a Rotowire search snippet about Draymond Green stated the Warriors won Thursday 120-100 over the Heat. Locked as a pass with no forced side. Before the leak I had only noticed the slate's -7.5 vs the -3.5 close, which the lessons bar as a reason, and had written nothing.",
+      "forcedSide": "no read",
+      "contaminated": true,
+      "contaminationNote": "A WebSearch restricted to rotowire/actionnetwork/oddstrader/wagertalk for the Warriors' pre-game injury report returned a Rotowire Draymond Green snippet saying he had 11 assists in 'Thursday's 120-100 win over the Heat'. Seen before any lean was written. My unwritten thinking had leaned Heat +7.5 only because the slate number was 4 points better than the -3.5 close (a slate-vs-close rule the lessons forbid), so forcedSide is 'no read'."
+    }
+  ]
+}
