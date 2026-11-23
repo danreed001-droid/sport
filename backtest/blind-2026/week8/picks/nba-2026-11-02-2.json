@@ -1,0 +1,138 @@
+{
+  "sport": "nba",
+  "date": "2026-11-02",
+  "chunk": "nba-2026-11-02-2",
+  "games": [
+    {
+      "away": "Sacramento Kings",
+      "home": "Dallas Mavericks",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 7.5,
+      "research": [
+        "Slate: Dallas -10.5; ESPN/DraftKings open -9.5, close -7.5. The market moved 2-3 points toward Sacramento, and the slate's +10.5 is 3 points better than the close on the side the market moved to (helps Kings; LESSONS: information, not an edge). Noted before any search.",
+        "Total opened 234.5 and closed 232.5 (slate data). Neutral.",
+        "Dimers (search snippet, Nov 2, 2026) projected Mavericks 120-111 and Dallas 77.8% to win, and listed Kings +10.5 as its value bet. Preview picks aren't an edge.",
+        "CONTAMINATION: the same search summary gave this game's final score (see contaminationNote), so research stopped and the pick is locked as a pass. Fewer than 10 bullets exist."
+      ],
+      "reasoning": "Contaminated on the first search, before any lean was written, so this is a locked pass. The only read before the leak was mechanical: the slate's +10.5 is 3 points better than the +7.5 close, on the side the market moved to. The forced side reflects that and nothing else.",
+      "forcedSide": "Sacramento Kings",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary (dimers.com domain) said a Dimers page showed a final of Kings 115, Mavericks 100. I saw it before any lean was written. The only earlier observation was the slate-vs-close gap favoring Sacramento, noted while reading the slate file. The forced side follows that pre-leak observation."
+    },
+    {
+      "away": "Milwaukee Bucks",
+      "home": "Minnesota Timberwolves",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 11.5,
+      "research": [
+        "Slate: Minnesota -10.5 (-115); ESPN/DraftKings open -10.5, close -11.5. The market moved 1 point toward Minnesota, and the slate number is 1 point better than the close for Minnesota (slate data).",
+        "Total opened and closed at 233.5 (slate data). Neutral.",
+        "Predictem's Nov 4, 2026 Wolves-at-Rockets preview (seen only as a search snippet) says Minnesota has played without Anthony Edwards: 2-2 and outscoring teams by just over 3 a game without him. That page is dated after this game.",
+        "CONTAMINATION: the first search summary mentioned a Wolves win over Milwaukee (see contaminationNote), so research stopped. Fewer than 10 bullets exist."
+      ],
+      "reasoning": "Contaminated on the first search, with no pre-leak read, so this is a locked pass with no read. The forced side is only the mechanical slate-vs-close comparison (slate -10.5 vs close -11.5, the side the market moved to). It was written down after the leak, so treat it as tainted.",
+      "forcedSide": "Minnesota Timberwolves",
+      "contaminated": true,
+      "contaminationNote": "The first WebSearch summary (betting domains) said 'the early-season results mention a Wolves win over Milwaukee'. That gives the straight-up winner, not the margin. I saw it before forming any lean. The forced side comes from the slate's open/close numbers (slate 1 point better than the close on Minnesota's side), but I wrote it down after seeing the hint, so it is not a clean forecast."
+    },
+    {
+      "away": "New Orleans Pelicans",
+      "home": "Memphis Grizzlies",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 6.5,
+      "research": [
+        "Memphis is 6-0 with five straight wins, most recently 136-105 over Sacramento; the other wins were over Golden State, Sacramento (twice), Utah and Portland. Helps Memphis, but the schedule is soft (WagerTalk, Nov 2, 2026).",
+        "New Orleans is 2-4: four straight losses, then 132-120 over Sacramento and 121-99 over Atlanta (WagerTalk, Nov 2, 2026). Mixed.",
+        "Memphis scores 121.2 and allows 106.0 a game (about +15). New Orleans scores 119.7 and allows 117.8 (about +2). Season point differential favors Memphis by more than the 4.5 (WagerTalk, Nov 2, 2026).",
+        "Pelicans injuries: Jordan Poole (ankle) OUT, Yves Missi (knee) OUT, Trey Murphy III (knee) QUESTIONABLE (WagerTalk, Nov 2, 2026). Murphy's late status could swing the number, so this points to a pass.",
+        "Grizzlies injuries: Scotty Pippen Jr. (back) and Quinten Post (ankle) QUESTIONABLE (WagerTalk, Nov 2, 2026). Slightly helps New Orleans.",
+        "[angle] Memphis out-rebounds New Orleans 49.8 to 44.0 a game, with rookie Cameron Boozer at 10.5 boards. With Missi out, the Pelicans lose their best rim protector and rebounder (WagerTalk, Nov 2, 2026). Helps Memphis.",
+        "[angle] Ty Jerome is Memphis's lead scorer at 25.8 points and 5.8 assists a game: an unusual hot start from a non-star, which may regress (WagerTalk, Nov 2, 2026). Slightly helps New Orleans.",
+        "[angle] Zion Williamson averages 20.7 points on 64.4% shooting, and New Orleans shoots 50% as a team. Its offense can keep pace, so 'can the underdog score' is yes (WagerTalk, Nov 2, 2026). Helps New Orleans.",
+        "Line: the slate is Memphis -4.5. ESPN/DraftKings opened -6.5 and closed -5.5. WagerTalk reports the open at -4.5, a peak of -6.5 and about 75% of the money on Memphis. The slate number is 1 point better than the close for Memphis (slate data; WagerTalk, Nov 2, 2026).",
+        "The total fell from 235.5 to 231.5 (slate) even though up to 83% of public bets were on the over, a sign of sharp under money (WagerTalk, Nov 2, 2026). Neutral on the side.",
+        "Preview picks: WagerTalk Memphis -5.5 (projection 119-109); Pickswise played the over. Preview picks aren't an edge."
+      ],
+      "reasoning": "Memphis's +15 differential and New Orleans's injuries point to Memphis by about 6-7. That is only about 2 points past the slate's 4.5, below the bar, and the differential came against weak opponents. Trey Murphy's questionable tag is the swing factor, so this is a pass. The forced side is Memphis: it has the stronger season numbers, the money and the close (-5.5) sit on its side, and the slate is 1 point better than the close.",
+      "forcedSide": "Memphis Grizzlies",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Boston Celtics",
+      "home": "Houston Rockets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 4.5,
+      "research": [
+        "Houston is 6-1 and 3-0 at home, coming off a 21-point win over Oklahoma City on Saturday (Predictem, Nov 2, 2026). Helps Houston.",
+        "Boston has won five straight, most recently 108-97 at Orlando on Sunday with 32 from Jayson Tatum. All five wins came against teams with losing records (Predictem, Nov 2, 2026). The form is real but the schedule was soft.",
+        "[angle] Boston is on the second night of a back-to-back after a Sunday afternoon game in Orlando, while Houston had Sunday off (Predictem, Nov 2, 2026). Helps Houston, and it was known before the line settled.",
+        "Houston scores 120.7 and allows 108.3 a game, and leads the league at 1.178 points per possession (TeamRankings via Predictem). Boston scores 120.8 and allows 109.2 and ranks 6th in offensive efficiency. Season differentials are nearly equal (+12.4 vs +11.6), which makes a 4.5-5.5 home spread look about fair.",
+        "Rockets injuries: Fred VanVleet sat Saturday (right knee management), Clint Capela (ankle) and Reed Sheppard (back) day-to-day, Steven Adams (calf) out (Predictem, Nov 2, 2026). VanVleet's status is unresolved and could swing the game. Helps Boston if he sits.",
+        "Celtics injuries: Mitchell Robinson (rest) and Devin Carter (illness) out (Predictem, Nov 2, 2026). Slightly helps Houston.",
+        "[angle] Alperen Sengun averages 22.8 points, 9.0 rebounds and 7.4 assists, and Houston plays slowly (23rd in possessions). The slow pace shrinks the game, which slightly helps the underdog getting points (Predictem, Nov 2, 2026).",
+        "Line: slate Houston -5.5 (-105), the same as the open (ESPN/DraftKings -5.5). It closed -4.5, so the market moved a point toward Boston despite the back-to-back being known. The slate +5.5 is 1 point better than the close on Boston's side (slate data; Predictem confirms -5.5 to -4.5).",
+        "The total opened 218.5 and closed 215.5 per the slate. Predictem saw 218.5 to 219.5 earlier, so it moved both ways. Neutral.",
+        "Preview pick: Predictem took the over, projecting Rockets 117-110. Preview picks aren't an edge.",
+        "Fewer than 10 fully independent sources: most facts come from one preview."
+      ],
+      "reasoning": "Equal season differentials plus home court and Boston's back-to-back give Houston about 4.5, almost exactly the line, so this is a pass. VanVleet's unresolved status is a pass trigger anyway. The forced side is Boston: the market moved a point toward the Celtics despite the known back-to-back, and the slate's +5.5 beats the +4.5 close.",
+      "forcedSide": "Boston Celtics",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Utah Jazz",
+      "home": "San Antonio Spurs",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 16.0,
+      "research": [
+        "Utah is 1-5 with four straight losses, the latest 112-90 at home to Portland on Saturday (Predictem, Nov 2, 2026). Helps San Antonio.",
+        "San Antonio is 4-2 with four straight wins, including Saturday's win over Minnesota with Wembanyama at 43 points and 6 blocks. But the Spurs are only 2-2 at home (Predictem, Nov 2, 2026). Mixed.",
+        "Utah ranks 26th in offensive efficiency and 24th in defensive efficiency, scoring 108.7 and allowing 118.8 a game (about -10). The Spurs are top 10 on both ends (TeamRankings via Predictem, Nov 2, 2026). The gap supports a big number, but it is already priced.",
+        "Jazz injuries: Jaren Jackson Jr. (knee), Jusuf Nurkic (foot) and Trey Alexander (knee) OUT (Predictem, Nov 2, 2026). All were known before the line, so they are priced.",
+        "Spurs injuries: Tobias Harris (calf) and Jayden Quaintance (knee) OUT (Predictem, Nov 2, 2026). Minor.",
+        "[angle] This is a rematch five days after San Antonio won only 117-111 in overtime in Salt Lake City, with Wembanyama at 36 and Keyonte George at 31 (Predictem, Nov 2, 2026). Utah hung with this team once. Head-to-head is noise, but a slight Utah lean.",
+        "[angle] Turnovers: Utah commits 17.7 a game and San Antonio 13.7 (Predictem, Nov 2, 2026). That is a real edge for transition blowouts. Helps San Antonio.",
+        "[angle] Wembanyama averages 28.0 points, 10.7 rebounds and 4.2 blocks, Dylan Harper scored 25 on Saturday, and De'Aaron Fox averages 7.0 assists (Predictem, Nov 2, 2026). The Spurs' talent is deep enough to keep the lead through garbage time. Helps San Antonio.",
+        "Line: ESPN/DraftKings opened -15.5 and closed -16.5, and the slate is -16.5. The 1-point move went toward San Antonio, with no slate-vs-close gap (slate data; Predictem confirms -15.5 to -16.5).",
+        "The total opened 229.5 and closed 226.5 (slate data). The lower total trims the expected margin slightly for the dog.",
+        "Preview pick: Predictem Spurs -16.5, projecting 125-105. Not an edge.",
+        "LESSONS (tentative): favorites of 7.5+ covered 8 of 19 in opening week, and big early-season numbers are risky to lay."
+      ],
+      "reasoning": "My projection of about Spurs by 16 sits on the line, so this is a pass. Utah's injuries and turnovers are priced into a number that already moved up. The forced side is Utah, but it rests only on the tentative lesson about laying 16+ early in the season and the close earlier meeting. That is close to no read.",
+      "forcedSide": "Utah Jazz",
+      "contaminated": false,
+      "contaminationNote": null
+    },
+    {
+      "away": "Portland Trail Blazers",
+      "home": "Denver Nuggets",
+      "pick": null,
+      "confidence": "pass",
+      "projectedMargin": 4.0,
+      "research": [
+        "Portland is 4-1 and 3-0 on the road, 4th in offensive and 6th in defensive efficiency (TeamRankings via Predictem, Nov 2, 2026). Helps Portland, but those numbers include games with Ja Morant.",
+        "Denver is 3-2, 11th in offensive and 21st in defensive efficiency, allowing 1.252 points per possession at home (Predictem, Nov 2, 2026). Helps Portland.",
+        "Blazers injuries: Ja Morant (hamstring, out at least four weeks) and Shaedon Sharpe (knee) OUT (Predictem, Nov 2, 2026). Helps Denver, and Portland's half-court offense without Morant is untested.",
+        "Nuggets injuries: Julian Strawther (knee) and Spencer Jones (hamstring) OUT, and Cameron Johnson is back from an ankle injury (Predictem, Nov 2, 2026). Johnson's return helps Denver.",
+        "[angle] Rest: Denver last played Friday and has an extra day. Portland played Saturday afternoon at altitude in Salt Lake City, so it is used to altitude but has one day's rest (Predictem, Nov 2, 2026). Small edge to Denver.",
+        "[angle] Portland's last two games: a 124-103 loss at Memphis (Morant's first game against the team that traded him), then a 112-90 win at 1-5 Utah (Predictem, Nov 2, 2026). The form without Morant is a short sample against a weak team.",
+        "[angle] Denver's home games: it came back from 23 down to beat New Orleans 141-135 in overtime, then lost 134-114 to Golden State. Christian Braun scored a career-high 31 in Friday's win at Phoenix (Predictem, Nov 2, 2026). Denver's defense is leaky at home, which helps the dog.",
+        "Murray averages 25.8 points; Jokic 21.2 points, 9.8 rebounds and 9.2 assists. For Portland, Deni Avdija averages 23.0 points and Damian Lillard 19.2 (Predictem, Nov 2, 2026).",
+        "Lillard averages 9.4 three-point attempts (7th in the NBA), and Denver allows the 8th-most three-point attempts (39.4) with a 21st-ranked defensive rating of 114.1 (SBR, Nov 2, 2026). Portland can score from deep, which helps the dog.",
+        "Line: ESPN/DraftKings open and close are both -4.5, the same as the slate. Predictem saw an earlier -3.5 to -4.5 move, with most action on Denver (slate data; Predictem, Nov 2, 2026). The market settled at -4.5.",
+        "Preview pick: Predictem took Portland +4.5, projecting Nuggets 115-113. Not an edge."
+      ],
+      "reasoning": "Portland's strong efficiency (built partly with Morant) against Denver's home, rest and Jokic advantages comes out near the -4.5 line: Nuggets by about 4. That is a pass. The forced side is Denver, slightly, for the rest edge and Portland's untested offense without Morant and Sharpe. It is near no read, and the market's unchanged number gives nothing.",
+      "forcedSide": "Denver Nuggets",
+      "contaminated": false,
+      "contaminationNote": null
+    }
+  ]
+}
