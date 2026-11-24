@@ -508,8 +508,13 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   team's points (correlation; matchup alone / offense + matchup / offense +
   points allowed): NBA 2025-26 .27/.33/.39, this season NBA .05/.14/.32, NCAAB
   .36/.50/.54, CFB .25/.39/.41, NFL .18/.29/.28; the matchup on top of offense
-  + points allowed adds about nothing. ATS nothing (49.9%). Injuries only move
-  the Matchup part.
+  + points allowed adds about nothing. ATS nothing (49.9%).
+  Players out (2026-11-24, the user's ask) also come off the Offense part
+  (`offBase` = with everyone, `offLost` = points taken off): NBA `OUT_KEEP`
+  0.11 of each out player's points a team game (2025-26: teams missing 20 a
+  game of regulars scored ~2 under expectation); NFL 0.5 of his share of team
+  yards (rush + rec + half the QB's passing; a QB counts half) times its points
+  a game (this season NFL fit 0.76 on 228 team-games, CFB 0.36).
   College (2026-11-19, the user's ask): NCAAB and CFB cards have the same
   matchup view and score (`dvpNcaab`/`dvpCfb`; `for_slate(..., sport)` in
   `lib/nba_dvp.py` / `lib/nfl_dvp.py`). `scripts/archive_college_player_box.py`
