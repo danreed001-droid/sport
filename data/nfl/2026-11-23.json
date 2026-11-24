@@ -2,7 +2,7 @@
   "date": "2026-11-23",
   "weekday": "Monday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-23T08:23:39-05:00",
   "auditChanges": [
     "NFL Cincinnati Bengals @ Washington Commanders: Laremy Tunsil's status corrected from 'out for the season' to 'on injured reserve after triceps surgery, est. return 20 Dec'. He is out for this game regardless, so the x2 injury weighting, the combined 6-7 tally and all picks are unchanged."
@@ -38,12 +38,12 @@
       "awayPDpg": 2.4,
       "awayQB": "Joe Burrow",
       "awayQBRating": 117.7,
-      "awayScore": null,
+      "awayScore": 20.0,
       "awaySpread": -6.5,
       "awaySpreadOdds": -102,
       "awayYPP": 6.2,
       "confidence": "lean",
-      "correct": null,
+      "correct": false,
       "gameTotal": 54.5,
       "gameTotalOverOdds": -106,
       "gameTotalUnderOdds": -113,
@@ -52,7 +52,7 @@
       "homePDpg": -4.3,
       "homeQB": "Jayden Daniels",
       "homeQBRating": 97.1,
-      "homeScore": null,
+      "homeScore": 22.0,
       "homeSpread": 6.5,
       "homeSpreadOdds": -118,
       "homeYPP": 5.2,
@@ -95,9 +95,9 @@
       },
       "offGap": 48.4,
       "pick": "Cincinnati Bengals",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipped": false,
       "statLines": [
         "PD/g +2.4 vs -4.3 (blended 0.5x2026 + 0.5x2025)",
@@ -118,7 +118,8 @@
           "says": "fade",
           "team": "Washington Commanders",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "thirdConfidence": "lean",
@@ -145,7 +146,16 @@
       ],
       "thirdReturn": null,
       "thirdSpreadReturn": null,
-      "time": "8:15 PM ET"
+      "time": "8:15 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": true,
+      "altBlowoutReturn": 239.0,
+      "altBlowoutCover": true,
+      "altBlowoutSpreadReturn": 84.75
     }
-  ]
+  ],
+  "scoredAt": "2026-11-24T10:58:00.396147+00:00"
 }

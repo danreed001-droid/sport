@@ -2,7 +2,7 @@
   "date": "2026-11-23",
   "weekday": "Monday",
   "sport": "nba",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-23T16:25:38.861354Z",
   "auditChanges": [
     "NBA Oklahoma City Thunder @ Indiana Pacers: Rest category corrected to neutral - Indiana played AT New York on 11/22 (L 113-106), not at home, so both sides are on a travel back-to-back. Second Opinion tally 0-4 -> 0-3: altPick Indiana Pacers (lean) -> null (pass). Ledger pick unchanged.",
@@ -35,11 +35,11 @@
       "awayMoneyline": -164,
       "awayNetRtg": 9.1,
       "awayPDpg": 9.06,
-      "awayScore": null,
+      "awayScore": 117.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 212.5,
       "gameTotalOverOdds": -110,
       "gameTotalUnderOdds": -110,
@@ -47,7 +47,7 @@
       "homeMoneyline": 136,
       "homeNetRtg": -11,
       "homePDpg": -10.53,
-      "homeScore": null,
+      "homeScore": 111.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -94,9 +94,9 @@
       },
       "netRtgGap": 82.76,
       "pick": "Memphis Grizzlies",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 60.98,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -382,7 +382,8 @@
           "record": "108-86",
           "says": "back",
           "team": "Memphis Grizzlies",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -396,11 +397,16 @@
           "record": "874-775",
           "says": "fade",
           "team": "Memphis Grizzlies",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 212.5
+      "totalsLine": 212.5,
+      "statsCorrect": true,
+      "statsReturn": 67.57,
+      "statsCover": true,
+      "statsSpreadReturn": 89.29
     },
     {
       "altCategoryTally": "0-3",
@@ -425,7 +431,7 @@
       "awayMoneyline": 145,
       "awayNetRtg": 5.9,
       "awayPDpg": 5.81,
-      "awayScore": null,
+      "awayScore": 128.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -437,7 +443,7 @@
       "homeMoneyline": -175,
       "homeNetRtg": 3,
       "homePDpg": 2.94,
-      "homeScore": null,
+      "homeScore": 111.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -761,7 +767,8 @@
           "pct": 55.7,
           "leans": "Portland Trail Blazers",
           "leanPct": 55.7,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -775,7 +782,8 @@
           "pct": 53.4,
           "leans": "Portland Trail Blazers",
           "leanPct": 53.4,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -789,7 +797,8 @@
           "pct": 45.5,
           "leans": "Philadelphia 76ers",
           "leanPct": 54.5,
-          "against": true
+          "against": true,
+          "result": "hit"
         }
       ],
       "time": "7:00 PM ET",
@@ -819,11 +828,11 @@
       "awayMoneyline": -198,
       "awayNetRtg": 3.7,
       "awayPDpg": 3.65,
-      "awayScore": null,
+      "awayScore": 120.0,
       "awaySpread": -5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
-      "correct": null,
+      "correct": false,
       "gameTotal": 224.5,
       "gameTotalOverOdds": -109,
       "gameTotalUnderOdds": -111,
@@ -831,7 +840,7 @@
       "homeMoneyline": 165,
       "homeNetRtg": -3.8,
       "homePDpg": -3.82,
-      "homeScore": null,
+      "homeScore": 125.0,
       "homeSpread": 5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -878,9 +887,9 @@
       },
       "netRtgGap": 34.48,
       "pick": "Oklahoma City Thunder",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -1298,7 +1307,7 @@
       "awayMoneyline": 375,
       "awayNetRtg": -12.4,
       "awayPDpg": -12.35,
-      "awayScore": null,
+      "awayScore": 116.0,
       "awaySpread": 10.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -1310,7 +1319,7 @@
       "homeMoneyline": -500,
       "homeNetRtg": 0.2,
       "homePDpg": 0.19,
-      "homeScore": null,
+      "homeScore": 111.0,
       "homeSpread": -10.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -1351,9 +1360,9 @@
       },
       "netRtgGap": 44.83,
       "pick": "Toronto Raptors",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -1566,7 +1575,8 @@
           "record": "151-114",
           "says": "fade",
           "team": "Toronto Raptors",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -1580,7 +1590,8 @@
           "record": "803-689",
           "says": "back",
           "team": "Toronto Raptors",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -1594,11 +1605,16 @@
           "record": "874-775",
           "says": "fade",
           "team": "Milwaukee Bucks",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "7:30 PM ET",
-      "totalsLine": 222.5
+      "totalsLine": 222.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": true,
+      "statsSpreadReturn": 88.5
     },
     {
       "altCategoryTally": "2-2",
@@ -1623,7 +1639,7 @@
       "awayMoneyline": 450,
       "awayNetRtg": -8,
       "awayPDpg": -7.93,
-      "awayScore": null,
+      "awayScore": 116.0,
       "awaySpread": 11.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -1635,7 +1651,7 @@
       "homeMoneyline": -625,
       "homeNetRtg": 9.6,
       "homePDpg": 9.71,
-      "homeScore": null,
+      "homeScore": 142.0,
       "homeSpread": -11.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -1676,9 +1692,9 @@
       },
       "netRtgGap": 82.76,
       "pick": "Minnesota Timberwolves",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -1876,7 +1892,8 @@
           "record": "803-689",
           "says": "back",
           "team": "Minnesota Timberwolves",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "7:30 PM ET",
@@ -1885,8 +1902,8 @@
     {
       "altCategoryTally": "6-0",
       "altConfidence": "strong",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": false,
+      "altCover": false,
       "altPick": "Cleveland Cavaliers",
       "altReasons": [
         "Scoring margin: favors Cleveland Cavaliers (PD/g +2.35 vs -7.94). No star-out override applies to Cleveland: its leading scorer Donovan Mitchell (24.5 ppg) is not on the injury report. Evan Mobley is out but is not Cleveland's best player, so the star-out rule is not triggered.",
@@ -1899,18 +1916,18 @@
         "Market: favors Cleveland Cavaliers - 64% of spread bets and 65% of money are on Chicago Bulls +8.5 (opened +6.5), but the line has moved toward Cleveland since the open - reverse line movement (rlmFavorite: Cleveland Cavaliers, backtested 61.8% ATS).",
         "Matchup splits: neutral - no specific verifiable unit matchup found."
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": -100.0,
+      "altSpreadReturn": -100.0,
       "auditNote": "Corrected the star-out reasoning: Donovan Mitchell, Cleveland's leading scorer, is available, so Scoring margin and Form count for Cleveland on their own merits rather than via Mobley's absence; Jaylon Tyson is probable, not out. Tally 6-0 and the strong Cavaliers call are unchanged.",
       "away": "Cleveland Cavaliers",
       "awayMoneyline": -330,
       "awayNetRtg": 2.4,
       "awayPDpg": 2.35,
-      "awayScore": null,
+      "awayScore": 108.0,
       "awaySpread": -8.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
-      "correct": null,
+      "correct": false,
       "gameTotal": 240.5,
       "gameTotalOverOdds": -108,
       "gameTotalUnderOdds": -112,
@@ -1918,7 +1935,7 @@
       "homeMoneyline": 265,
       "homeNetRtg": -7.6,
       "homePDpg": -7.94,
-      "homeScore": null,
+      "homeScore": 122.0,
       "homeSpread": 8.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -1959,9 +1976,9 @@
       },
       "netRtgGap": 41.38,
       "pick": "Cleveland Cavaliers",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -2237,7 +2254,8 @@
           "record": "221-184",
           "says": "back",
           "team": "Chicago Bulls",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -2251,7 +2269,8 @@
           "record": "48-35",
           "says": "back",
           "team": "Cleveland Cavaliers",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "8:00 PM ET",
@@ -2260,8 +2279,8 @@
     {
       "altCategoryTally": "4-0",
       "altConfidence": "lean",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": true,
       "altPick": "Phoenix Suns",
       "altReasons": [
         "Scoring margin: favors Phoenix Suns, based on New Orleans's own facts - New Orleans's season PD/g (-8.22) is bad on its own merits; this does not rely on New Orleans's own aggregate being credited to itself.",
@@ -2274,14 +2293,14 @@
         "Market: neutral - New Orleans's home spread moved from +2.5 to +3.5 (away from the favorite) with only 28%/31% of bets/money on New Orleans; no reverse line movement (rlmFavorite null).",
         "Matchup splits: neutral - no specific verifiable unit matchup found."
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": 63.29,
+      "altSpreadReturn": 90.91,
       "auditNote": "Corrected the New Orleans injury list: Bryce McGowens is probable, not out, and Zion Williamson and Trey Murphy III are probable rather than day-to-day. Three Pelicans rotation players are still out, so the x2 weighting and the 0-4 lean on Phoenix are unchanged.",
       "away": "Phoenix Suns",
       "awayMoneyline": -158,
       "awayNetRtg": -0.9,
       "awayPDpg": -0.87,
-      "awayScore": null,
+      "awayScore": 123.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -2293,7 +2312,7 @@
       "homeMoneyline": 129,
       "homeNetRtg": -8.1,
       "homePDpg": -8.22,
-      "homeScore": null,
+      "homeScore": 119.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -2449,7 +2468,7 @@
       "altCategoryTally": "0-4",
       "altConfidence": "lean",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": false,
       "altPick": "Houston Rockets",
       "altReasons": [
         "Scoring margin: favors Houston Rockets (PD/g +7.65 vs -6.47); no star-out override applies to either side's number here (Houston's best player is not on the injury list).",
@@ -2463,13 +2482,13 @@
         "Matchup splits: neutral - no specific verifiable unit matchup found."
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": -100.0,
       "auditNote": "Corrected the injury facts: Brandon Ingram is available and expected to make his Clippers debut (not out), and Clint Capela is available (not out). Beal and Jordan Miller are still out, so the x2 weighting and the 0-4 lean on Houston are unchanged.",
       "away": "LA Clippers",
       "awayMoneyline": 475,
       "awayNetRtg": -6.5,
       "awayPDpg": -6.47,
-      "awayScore": null,
+      "awayScore": 104.0,
       "awaySpread": 12.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -2481,7 +2500,7 @@
       "homeMoneyline": -650,
       "homeNetRtg": 7.9,
       "homePDpg": 7.65,
-      "homeScore": null,
+      "homeScore": 116.0,
       "homeSpread": -12.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -2519,9 +2538,9 @@
       },
       "netRtgGap": 62.07,
       "pick": "Houston Rockets",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -2550,13 +2569,17 @@
       ],
       "statsSpread": -13.5,
       "time": "8:30 PM ET",
-      "totalsLine": 222.5
+      "totalsLine": 222.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "0-5",
       "altConfidence": "strong",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": true,
       "altPick": "Los Angeles Lakers",
       "altReasons": [
         "Scoring margin: favors Los Angeles Lakers (PD/g +6.18 vs -7.11); no star-out override applies to the Lakers' number here (their top player is not on the injury list).",
@@ -2570,12 +2593,12 @@
         "Matchup splits: neutral - no specific verifiable unit matchup found."
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": 90.91,
       "away": "Utah Jazz",
       "awayMoneyline": 550,
       "awayNetRtg": -7.2,
       "awayPDpg": -7.11,
-      "awayScore": null,
+      "awayScore": 94.0,
       "awaySpread": 13.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -2587,7 +2610,7 @@
       "homeMoneyline": -800,
       "homeNetRtg": 6.2,
       "homePDpg": 6.18,
-      "homeScore": null,
+      "homeScore": 109.0,
       "homeSpread": -13.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -2629,9 +2652,9 @@
       },
       "netRtgGap": 62.07,
       "pick": "Los Angeles Lakers",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -2995,7 +3018,8 @@
           "record": "221-184",
           "says": "back",
           "team": "Los Angeles Lakers",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -3009,7 +3033,8 @@
           "record": "119-82",
           "says": "back",
           "team": "Los Angeles Lakers",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -3023,7 +3048,8 @@
           "record": "108-86",
           "says": "back",
           "team": "Utah Jazz",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -3037,11 +3063,16 @@
           "record": "874-775",
           "says": "fade",
           "team": "Utah Jazz",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 224.5
+      "totalsLine": 224.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": true,
+      "statsSpreadReturn": 87.72
     },
     {
       "altCategoryTally": "2-2",
@@ -3066,7 +3097,7 @@
       "awayMoneyline": -490,
       "awayNetRtg": 12.1,
       "awayPDpg": 11.94,
-      "awayScore": null,
+      "awayScore": 123.0,
       "awaySpread": -10.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -3078,7 +3109,7 @@
       "homeMoneyline": 371,
       "homeNetRtg": -12.4,
       "homePDpg": -12.31,
-      "homeScore": null,
+      "homeScore": 107.0,
       "homeSpread": 10.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -3122,9 +3153,9 @@
       },
       "netRtgGap": 100,
       "pick": "San Antonio Spurs",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -3378,11 +3409,13 @@
           "record": "803-689",
           "says": "back",
           "team": "Sacramento Kings",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "10:00 PM ET",
       "totalsLine": 225.5
     }
-  ]
+  ],
+  "scoredAt": "2026-11-24T10:58:02.384965+00:00"
 }

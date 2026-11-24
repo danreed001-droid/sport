@@ -2,7 +2,7 @@
   "date": "2026-11-23",
   "weekday": "Monday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-23T16:25:38.882024Z",
   "auditChanges": [
     "NCAAB Washington Huskies @ BYU Cougars: Washington PD/g corrected +13.3 -> +19.3 (4-0; 86.3 scored, 67.0 allowed). Venue corrected to the neutral-site Maui Invitational (Lahaina Civic Center), so Venue/Crowd and Travel are neutral and Form is neutral (both unbeaten). Tally 0-3 -> 0-1, still a pass; off-gap skip unchanged.",
@@ -36,7 +36,7 @@
       "awayMoneyline": 600,
       "awayPDpg": 19.3,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 77.0,
       "awaySpread": 12.5,
       "awaySpreadOdds": -110,
       "confidence": null,
@@ -48,7 +48,7 @@
       "homeMoneyline": -900,
       "homePDpg": 25.4,
       "homeRank": 21,
-      "homeScore": null,
+      "homeScore": 83.0,
       "homeSpread": -12.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -111,7 +111,7 @@
       "awayMoneyline": 1800,
       "awayPDpg": -6.2,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 83.0,
       "awaySpread": 43.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -123,7 +123,7 @@
       "homeMoneyline": -5000,
       "homePDpg": 36,
       "homeRank": 10,
-      "homeScore": null,
+      "homeScore": 133.0,
       "homeSpread": -43.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -140,9 +140,9 @@
       },
       "offGap": 62.64,
       "pick": "Illinois Fighting Illini",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -165,7 +165,8 @@
           "leans": "Illinois Fighting Illini",
           "leanPct": 53.8,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -180,7 +181,8 @@
           "leans": "Illinois Fighting Illini",
           "leanPct": 54.7,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -195,7 +197,8 @@
           "leans": "Illinois Fighting Illini",
           "leanPct": 53.2,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ],
       "time": "8:00 PM ET"
@@ -224,7 +227,7 @@
       "awayMoneyline": 1400,
       "awayPDpg": -9,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 67.0,
       "awaySpread": 35.5,
       "awaySpreadOdds": -105,
       "confidence": "solid",
@@ -236,7 +239,7 @@
       "homeMoneyline": -4000,
       "homePDpg": 19,
       "homeRank": 11,
-      "homeScore": null,
+      "homeScore": 84.0,
       "homeSpread": -35.5,
       "homeSpreadOdds": -115,
       "lineMove": {
@@ -253,9 +256,9 @@
       },
       "offGap": 62.09,
       "pick": "Kansas Jayhawks",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -290,7 +293,7 @@
       "awayMoneyline": 1200,
       "awayPDpg": 5.8,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 83.0,
       "awaySpread": 16.5,
       "awaySpreadOdds": -102,
       "confidence": null,
@@ -302,7 +305,7 @@
       "homeMoneyline": -2400,
       "homePDpg": 11.8,
       "homeRank": 12,
-      "homeScore": null,
+      "homeScore": 96.0,
       "homeSpread": -16.5,
       "homeSpreadOdds": -118,
       "lineMove": {
@@ -353,10 +356,12 @@
           "says": "fade",
           "team": "Arizona Wildcats",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "11:30 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-24T10:58:03.855177+00:00"
 }

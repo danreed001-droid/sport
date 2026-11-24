@@ -26,7 +26,7 @@
         "homeMoneyline": 114,
         "awayMoneyline": -135
       },
-      "totalsLine": 213.5,
+      "totalsLine": 211.5,
       "storylines": [
         {
           "weight": 1,
@@ -231,7 +231,7 @@
         ],
         "total": [
           214.5,
-          213.5
+          211.5
         ],
         "ml": {
           "home": [
@@ -245,14 +245,14 @@
         },
         "public": {
           "betsHome": 40,
-          "moneyHome": 42,
+          "moneyHome": 39,
           "rlm": null
         },
-        "checked": "2026-11-24T09:10:19+00:00"
+        "checked": "2026-11-24T10:58:25+00:00"
       },
-      "gameTotal": 213.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
+      "gameTotal": 211.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401909315",
@@ -346,11 +346,11 @@
           ]
         },
         "public": {
-          "betsHome": 70,
-          "moneyHome": 67,
+          "betsHome": 69,
+          "moneyHome": 70,
           "rlm": null
         },
-        "checked": "2026-11-24T09:10:19+00:00"
+        "checked": "2026-11-24T10:58:25+00:00"
       },
       "gameTotal": 217.5,
       "gameTotalOverOdds": -112,
@@ -376,7 +376,7 @@
         "homeMoneyline": -324,
         "awayMoneyline": 261
       },
-      "totalsLine": 232.5,
+      "totalsLine": 233.5,
       "injuries": {
         "away": {
           "5106040": "out",
@@ -482,7 +482,7 @@
         ],
         "total": [
           236.5,
-          232.5
+          233.5
         ],
         "ml": {
           "home": [
@@ -495,15 +495,15 @@
           ]
         },
         "public": {
-          "betsHome": 46,
-          "moneyHome": 51,
+          "betsHome": 38,
+          "moneyHome": 45,
           "rlm": null
         },
-        "checked": "2026-11-24T09:10:19+00:00"
+        "checked": "2026-11-24T10:58:25+00:00"
       },
-      "gameTotal": 232.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115
+      "gameTotal": 233.5,
+      "gameTotalOverOdds": -109,
+      "gameTotalUnderOdds": -111
     }
   ]
 }
