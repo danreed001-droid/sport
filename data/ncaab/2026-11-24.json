@@ -4,18 +4,969 @@
   "sport": "ncaab",
   "scored": false,
   "generatedAt": "2026-11-24T16:15:00Z",
-  "auditChanges": ["NCAAB Ole Miss Rebels @ BYU Cougars: corrected to a neutral-site Maui Invitational semifinal (Lahaina) — travel and venue edges removed, records 4-0/5-0 → 5-0/6-0, BYU PG Robert Wright III injury added, AdjOE/AdjDE refreshed, off-gap 15.38 → 14.28, tally 1-1 → 2-0. Still skip (off-gap) and pass.", "NCAAB Providence Friars @ Arizona Wildcats: corrected to a neutral-site Maui Invitational semifinal (Lahaina) — travel and venue edges removed, records 4-1/4-1 → 5-1/5-1, AdjOE/AdjDE refreshed, off-gap 20.61 → 26.37, tally 1-2 → 1-0. Still skip (off-gap) and pass.", "NCAAB Milwaukee Panthers @ Florida Gators: Boogie Fland (Florida) confirmed out with a shoulder injury and Milwaukee injury-free, so Injuries/Lineup favors Milwaukee; tally 0-2 → 1-2. Second Opinion still a pass, Ledger pick Florida (solid) unchanged.", "NCAAB Jacksonville Dolphins @ Indiana Hoosiers: Indiana's P. Moody confirmed out (knee) and Jacksonville injury-free, so Injuries/Lineup favors Jacksonville; tally 0-3 → 1-3, off-gap 48.35 → 47.53. Second Opinion still a pass, Ledger pick Indiana (solid) unchanged.", "NCAAB Ole Miss Rebels @ BYU Cougars: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 21.7. Screen, pick and tier unchanged.", "NCAAB Tennessee Volunteers @ Maryland Terrapins: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 6.5. Screen, pick and tier unchanged.", "NCAAB Miami Hurricanes @ TCU Horned Frogs: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 4.4. Screen, pick and tier unchanged.", "NCAAB Providence Friars @ Arizona Wildcats: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 20.9. Scoring margin flips to Arizona, tally 1-2 → 0-1. Screen, pick and tier unchanged.", "NCAAB Milwaukee Panthers @ Florida Gators: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 74.4. Screen, pick and tier unchanged.", "NCAAB Vanderbilt Commodores @ Ohio State Buckeyes: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 2.2. Screen, pick and tier unchanged.", "NCAAB Jacksonville Dolphins @ Indiana Hoosiers: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 70.1. Screen, pick and tier unchanged.", "NCAAB Texas Tech Red Raiders @ Louisville Cardinals: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 1.1. Screen, pick and tier unchanged.", "NCAAB Baylor Bears @ Alabama Crimson Tide: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 6.6. Screen, pick and tier unchanged.", "NCAAB Oregon Ducks @ St. John's Red Storm: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 4.1. Screen, pick and tier unchanged."],
+  "auditChanges": [
+    "NCAAB Ole Miss Rebels @ BYU Cougars: corrected to a neutral-site Maui Invitational semifinal (Lahaina) \u2014 travel and venue edges removed, records 4-0/5-0 \u2192 5-0/6-0, BYU PG Robert Wright III injury added, AdjOE/AdjDE refreshed, off-gap 15.38 \u2192 14.28, tally 1-1 \u2192 2-0. Still skip (off-gap) and pass.",
+    "NCAAB Providence Friars @ Arizona Wildcats: corrected to a neutral-site Maui Invitational semifinal (Lahaina) \u2014 travel and venue edges removed, records 4-1/4-1 \u2192 5-1/5-1, AdjOE/AdjDE refreshed, off-gap 20.61 \u2192 26.37, tally 1-2 \u2192 1-0. Still skip (off-gap) and pass.",
+    "NCAAB Milwaukee Panthers @ Florida Gators: Boogie Fland (Florida) confirmed out with a shoulder injury and Milwaukee injury-free, so Injuries/Lineup favors Milwaukee; tally 0-2 \u2192 1-2. Second Opinion still a pass, Ledger pick Florida (solid) unchanged.",
+    "NCAAB Jacksonville Dolphins @ Indiana Hoosiers: Indiana's P. Moody confirmed out (knee) and Jacksonville injury-free, so Injuries/Lineup favors Jacksonville; tally 0-3 \u2192 1-3, off-gap 48.35 \u2192 47.53. Second Opinion still a pass, Ledger pick Indiana (solid) unchanged.",
+    "NCAAB Ole Miss Rebels @ BYU Cougars: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 21.7. Screen, pick and tier unchanged.",
+    "NCAAB Tennessee Volunteers @ Maryland Terrapins: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 6.5. Screen, pick and tier unchanged.",
+    "NCAAB Miami Hurricanes @ TCU Horned Frogs: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 4.4. Screen, pick and tier unchanged.",
+    "NCAAB Providence Friars @ Arizona Wildcats: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 20.9. Scoring margin flips to Arizona, tally 1-2 \u2192 0-1. Screen, pick and tier unchanged.",
+    "NCAAB Milwaukee Panthers @ Florida Gators: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 74.4. Screen, pick and tier unchanged.",
+    "NCAAB Vanderbilt Commodores @ Ohio State Buckeyes: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 2.2. Screen, pick and tier unchanged.",
+    "NCAAB Jacksonville Dolphins @ Indiana Hoosiers: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 70.1. Screen, pick and tier unchanged.",
+    "NCAAB Texas Tech Red Raiders @ Louisville Cardinals: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 1.1. Screen, pick and tier unchanged.",
+    "NCAAB Baylor Bears @ Alabama Crimson Tide: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 6.6. Screen, pick and tier unchanged.",
+    "NCAAB Oregon Ducks @ St. John's Red Storm: PD/g and AdjOE/AdjDE replaced with the Ledger's archived Sports Reference inputs (50/50 first-10-games blend); off-gap 4.1. Screen, pick and tier unchanged."
+  ],
   "auditedAt": "2026-11-24T16:57:29Z",
   "games": [
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Ole Miss +16.69 PD/g vs BYU +15.14 PD/g (Ledger 50/50 early-season blend) — favors Ole Miss.","Rest: both played Monday 11/23 in the Maui Invitational first round, so both are on one day's rest — neutral.","Travel: neutral-site Maui Invitational semifinal at the Lahaina Civic Center; both teams flew to Hawaii — neutral.","Injuries/Lineup: BYU starting point guard Robert Wright III is day-to-day with a lower-leg injury and missed Monday's game; no injury news found for Ole Miss — favors Ole Miss.","Form: both teams are unbeaten (Ole Miss 5-0, BYU 6-0) — essentially even — neutral.","Motivation/Spot: Maui Invitational semifinal between two unbeaten ranked teams, winner to Wednesday's final — high stakes both ways — neutral.","Venue/Crowd: neutral-site tournament game in Lahaina, Hawaii — no home-court edge for either side — neutral.","Market: a near pick'em on which books disagree — DraftKings has Ole Miss -1.5 while other outlets list BYU -1.5 — no usable line signal — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"Game is a neutral-site Maui Invitational semifinal in Lahaina, not a BYU home game in Provo, so the travel and venue edges are removed; records corrected to 5-0/6-0, BYU's Robert Wright III injury added, AdjOE/AdjDE refreshed (off-gap 15.38 → 14.28). Still a Ledger skip and a Second Opinion pass. PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 21.7. Ledger outcome unchanged.","away":"Ole Miss Rebels","awayMoneyline":102,"awayPDpg":16.69,"awayRank":null,"awayScore":null,"awaySpread":1.5,"awaySpreadOdds":-112,"confidence":"skip","correct":null,"home":"BYU Cougars","homeMoneyline":-122,"homePDpg":15.14,"homeRank":19,"homeScore":null,"homeSpread":-1.5,"homeSpreadOdds":-108,"lineMove":{"checked":"2026-11-24T10:58:25+00:00","ml":{"away":[100.0,102.0],"home":[-120.0,-122.0]},"spread":[-1.5,-1.5],"total":[160.5,160.5]},"offGap":21.7,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +16.69 vs +15.14 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Ole Miss 5-0, BYU 6-0)","AdjOE 111.75 (93rd, 74.7 pct of 365) vs 122.61 (14th, 96.4 pct) — gap 21.7, under the 30 screen","AdjDE 88.57 vs 97.44 — no defensive veto issue either way","Maui Invitational semifinal, neutral site (Lahaina Civic Center, Maui)"],"time":"2:30 PM ET"},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Tennessee +14.73 PD/g vs Maryland +5.56 PD/g (Ledger 50/50 early-season blend) — favors Tennessee.","Rest: both teams enter on normal rest for a tournament opener — neutral.","Travel: neutral-site Players Era Championship game in Las Vegas — both teams traveled in, no edge either way — neutral.","Injuries/Lineup: no verifiable injury news found for either side — neutral.","Form: Tennessee 5-0 vs Maryland 3-2 — favors Tennessee.","Motivation/Spot: tournament opener for both, equal stakes (winner advances) — neutral.","Venue/Crowd: neutral-site tournament game — no home-court edge — neutral.","Market: Maryland's spread moved from +5.5 to +4.5 (toward Tennessee); public betting split unavailable to confirm reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 6.5. Ledger outcome unchanged.","away":"Tennessee Volunteers","awayMoneyline":-218,"awayPDpg":14.73,"awayRank":9,"awayScore":null,"awaySpread":-4.5,"awaySpreadOdds":-105,"confidence":"skip","correct":null,"home":"Maryland Terrapins","homeMoneyline":180,"homePDpg":5.56,"homeRank":null,"homeScore":null,"homeSpread":4.5,"homeSpreadOdds":-115,"lineMove":{"checked":"2026-11-24T10:58:25+00:00","ml":{"away":[-225.0,-218.0],"home":[185.0,180.0]},"spread":[5.5,4.5],"total":[148.5,145.5]},"offGap":6.5,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +14.73 vs +5.56 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Tennessee 5-0, Maryland 3-2)","AdjOE 110.71 (102nd, 72.3 pct of 365) vs 113.20 (78th, 78.8 pct) — gap 6.5, under the 30 screen","AdjDE 84.97 vs 100.92 — no defensive veto issue either way","Players Era Championship first-round game, neutral site (Las Vegas)"],"time":"3:00 PM ET"},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Miami +21.38 PD/g vs TCU +13.24 PD/g (Ledger 50/50 early-season blend) — favors Miami.","Rest: both teams on normal rest for a tournament opener — neutral.","Travel: neutral-site Players Era Championship game in Las Vegas — neutral.","Injuries/Lineup: no verifiable injury news found for either side — neutral.","Form: Miami 5-1 vs TCU 4-1 — one more win at the same loss count — favors Miami.","Motivation/Spot: tournament-opener stakes equal for both — neutral.","Venue/Crowd: neutral-site tournament game — neutral.","Market: TCU's spread moved from +7.5 to +6.5 (toward Miami); no public-side data to confirm reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 4.4. Ledger outcome unchanged.","away":"Miami Hurricanes","awayMoneyline":-270,"awayPDpg":21.38,"awayRank":17,"awayScore":null,"awaySpread":-6.5,"awaySpreadOdds":-105,"confidence":"skip","correct":null,"home":"TCU Horned Frogs","homeMoneyline":220,"homePDpg":13.24,"homeRank":null,"homeScore":null,"homeSpread":6.5,"homeSpreadOdds":-115,"lineMove":{"checked":"2026-11-24T10:58:25+00:00","ml":{"away":[-285.0,-270.0],"home":[230.0,220.0]},"spread":[7.5,6.5],"total":[155.5,154.5]},"offGap":4.4,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +21.38 vs +13.24 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Miami 5-1, TCU 4-1)","AdjOE 116.51 (50th, 86.5 pct of 365) vs 114.61 (66th, 82.1 pct) — gap 4.4, under the 30 screen","AdjDE 90.61 vs 95.14 — no defensive veto issue either way","Players Era Championship first-round game, neutral site (Las Vegas)"],"time":"3:00 PM ET"},
-    {"altCategoryTally":"0-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Providence +7.32 PD/g vs Arizona +14.38 PD/g (Ledger 50/50 early-season blend) — favors Arizona.","Rest: both played Monday 11/23 in the Maui Invitational first round, so both are on one day's rest — neutral.","Travel: neutral-site Maui Invitational semifinal at the Lahaina Civic Center; both teams flew to Hawaii — neutral.","Injuries/Lineup: no verifiable injury news found for either side — neutral.","Form: identical records, Providence 5-1 and Arizona 5-1 — neutral.","Motivation/Spot: Maui Invitational semifinal, winner to Wednesday's final — equal stakes both ways — neutral.","Venue/Crowd: neutral-site tournament game in Lahaina, Hawaii — no home-court edge for either side — neutral.","Market: Arizona's spread hasn't moved from -7.5 at open — no line movement, no public data — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"Game is a neutral-site Maui Invitational semifinal in Lahaina, not an Arizona home game in Tucson, so the travel and venue edges are removed; records corrected to 5-1/5-1 and AdjOE/AdjDE refreshed (off-gap 20.61 → 26.37, still under 30). Still a Ledger skip and a Second Opinion pass. PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 20.9. On the blended figures the scoring margin favors Arizona, not Providence, so the tally is 0-1 — still a pass. Ledger outcome unchanged.","away":"Providence Friars","awayMoneyline":270,"awayPDpg":7.32,"awayRank":null,"awayScore":null,"awaySpread":7.5,"awaySpreadOdds":-110,"confidence":"skip","correct":null,"home":"Arizona Wildcats","homeMoneyline":-340,"homePDpg":14.38,"homeRank":8,"homeScore":null,"homeSpread":-7.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-24T10:58:25+00:00","ml":{"away":[270.0,270.0],"home":[-340.0,-340.0]},"spread":[-7.5,-7.5],"total":[154.5,154.5]},"offGap":20.9,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +7.32 vs +14.38 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Providence 5-1, Arizona 5-1)","AdjOE 112.70 (84th, 77.2 pct of 365) vs 124.81 (8th, 98.1 pct) — gap 20.9, under the 30 screen","AdjDE 96.56 vs 89.30 — no defensive veto issue either way","Maui Invitational semifinal, neutral site (Lahaina Civic Center, Maui)"],"time":"5:00 PM ET"},
-    {"altCategoryTally":"1-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Milwaukee -4.61 PD/g vs Florida +14.23 PD/g (Ledger 50/50 early-season blend) — favors Florida.","Rest: both teams on normal in-season rest — neutral.","Travel: Milwaukee to Gainesville is a short time-zone trip, nothing unusual — neutral.","Injuries/Lineup: Florida guard Boogie Fland is out with a shoulder injury, confirmed by Todd Golden on Monday; Milwaukee reports no injuries — favors Milwaukee.","Form: Florida 6-1 vs Milwaukee 2-4 — favors Florida.","Motivation/Spot: non-conference buy game for Florida, no special stakes found — neutral.","Venue/Crowd: standard home-court setting, nothing beyond the ordinary noted — neutral.","Market: Florida's home spread moved from -38.5 to -35.5 (3 points toward Milwaukee); no public-side data to confirm reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"Injuries/Lineup corrected — Florida's Boogie Fland is out (shoulder) and Milwaukee is healthy, so the category favors Milwaukee (tally 0-2 → 1-2, still a pass); PD/g confirmed as D-I-only figures. Ledger pick Florida (solid) unchanged. PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 74.4. Ledger outcome unchanged.","away":"Milwaukee Panthers","awayMoneyline":null,"awayPDpg":-4.61,"awayRank":null,"awayScore":null,"awaySpread":35.5,"awaySpreadOdds":-112,"confidence":"solid","correct":null,"home":"Florida Gators","homeMoneyline":null,"homePDpg":14.23,"homeRank":3,"homeScore":null,"homeSpread":-35.5,"homeSpreadOdds":-108,"lineMove":{"checked":"2026-11-24T10:58:25+00:00","ml":{},"spread":[-38.5,-35.5],"total":[158.5,156.5]},"offGap":74.4,"pick":"Florida Gators","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -4.61 vs +14.23 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Milwaukee 2-4, Florida 6-1)","AdjOE 97.78 (273rd, 25.3 pct of 365) vs 126.73 (2nd, 99.7 pct) — gap 74.4, clears the 30 screen","AdjDE 110.42 vs 90.84 — Florida (the pick) is 19.6 better defensively, no veto"],"time":"7:00 PM ET"},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Vanderbilt +19.88 PD/g vs Ohio State +9.46 PD/g (Ledger 50/50 early-season blend) — favors Vanderbilt.","Rest: both teams on normal in-season rest — neutral.","Travel: Nashville to Columbus is a short regional trip — neutral.","Injuries/Lineup: no verifiable injury news found for either side — neutral.","Form: Vanderbilt 6-0 vs Ohio State 4-2 — favors Vanderbilt.","Motivation/Spot: regular non-conference game, no rivalry/revenge angle found — neutral.","Venue/Crowd: standard home-court setting, nothing notable beyond the ordinary — neutral.","Market: Ohio State's home spread moved from +1.5 to +2.5 (away from Ohio State, toward Vanderbilt); no public-side data to confirm reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 2.2. Ledger outcome unchanged.","away":"Vanderbilt Commodores","awayMoneyline":-130,"awayPDpg":19.88,"awayRank":14,"awayScore":null,"awaySpread":-2.5,"awaySpreadOdds":100,"confidence":"skip","correct":null,"home":"Ohio State Buckeyes","homeMoneyline":110,"homePDpg":9.46,"homeRank":null,"homeScore":null,"homeSpread":2.5,"homeSpreadOdds":-120,"lineMove":{"checked":"2026-11-24T10:58:25+00:00","ml":{"away":[-142.0,-130.0],"home":[120.0,110.0]},"spread":[1.5,2.5],"total":[156.5,157.5]},"offGap":2.2,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +19.88 vs +9.46 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Vanderbilt 6-0, Ohio State 4-2)","AdjOE 124.91 (7th, 98.4 pct of 365) vs 122.52 (15th, 96.2 pct) — gap 2.2, under the 30 screen","AdjDE 89.53 vs 100.16 — no defensive veto issue either way"],"time":"7:00 PM ET"},
-    {"altCategoryTally":"1-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Jacksonville -3.07 PD/g vs Indiana +11.59 PD/g (Ledger 50/50 early-season blend) — favors Indiana.","Rest: both teams on normal in-season rest — neutral.","Travel: Jacksonville, FL to Bloomington, IN is a moderate one-time-zone trip, nothing extreme — neutral.","Injuries/Lineup: Indiana guard P. Moody has been out with a knee injury since Nov 2; Jacksonville reports no injuries — favors Jacksonville.","Form: Indiana 6-0 vs Jacksonville 2-4 — favors Indiana.","Motivation/Spot: non-conference buy game for Indiana, no special stakes found — neutral.","Venue/Crowd: Indiana's Assembly Hall is one of the sport's legendary true-road environments — favors Indiana.","Market: Indiana's home spread hasn't moved from -28.5 at open — no line movement, no public data — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"Injuries/Lineup corrected — Indiana's P. Moody is out (knee) and Jacksonville is healthy, so the category favors Jacksonville (tally 0-3 → 1-3, still a pass); AdjOE/AdjDE refreshed (off-gap 48.35 → 47.53). Ledger pick Indiana (solid) unchanged. PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 70.1. Ledger outcome unchanged.","away":"Jacksonville Dolphins","awayMoneyline":5000,"awayPDpg":-3.07,"awayRank":null,"awayScore":null,"awaySpread":28.5,"awaySpreadOdds":-115,"confidence":"solid","correct":null,"home":"Indiana Hoosiers","homeMoneyline":-100000,"homePDpg":11.59,"homeRank":23,"homeScore":null,"homeSpread":-28.5,"homeSpreadOdds":-105,"lineMove":{"checked":"2026-11-24T10:58:26+00:00","ml":{"away":[4000.0,5000.0],"home":[-50000.0,-100000.0]},"spread":[-28.5,-28.5],"total":[146.5,147.5]},"offGap":70.1,"pick":"Indiana Hoosiers","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g -3.07 vs +11.59 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Jacksonville 2-4, Indiana 6-0)","AdjOE 97.66 (275th, 24.7 pct of 365) vs 121.47 (20th, 94.8 pct) — gap 70.1, clears the 30 screen","AdjDE 114.70 vs 97.77 — Indiana (the pick) is 16.9 better defensively, no veto"],"time":"7:00 PM ET"},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Texas Tech +18.99 PD/g vs Louisville +13.12 PD/g (Ledger 50/50 early-season blend) — favors Texas Tech.","Rest: both teams on normal rest for a tournament opener — neutral.","Travel: neutral-site Players Era Championship game in Las Vegas — neutral.","Injuries/Lineup: no verifiable injury news found for either side — neutral.","Form: Texas Tech 5-0 vs Louisville 3-1 — favors Texas Tech.","Motivation/Spot: tournament-opener stakes equal for both — neutral.","Venue/Crowd: neutral-site tournament game — neutral.","Market: Louisville's spread moved from +5.5 to +3.5 (2 points toward Louisville, away from favorite Texas Tech); no public-side data to confirm reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 1.1. Ledger outcome unchanged.","away":"Texas Tech Red Raiders","awayMoneyline":-180,"awayPDpg":18.99,"awayRank":5,"awayScore":null,"awaySpread":-3.5,"awaySpreadOdds":-110,"confidence":"skip","correct":null,"home":"Louisville Cardinals","homeMoneyline":150,"homePDpg":13.12,"homeRank":25,"homeScore":null,"homeSpread":3.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-24T10:58:26+00:00","ml":{"away":[-225.0,-180.0],"home":[185.0,150.0]},"spread":[5.5,3.5],"total":[153.5,152.5]},"offGap":1.1,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +18.99 vs +13.12 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Texas Tech 5-0, Louisville 3-1)","AdjOE 117.03 (42nd, 88.7 pct of 365) vs 118.11 (38th, 89.8 pct) — gap 1.1, under the 30 screen","AdjDE 81.94 vs 96.12 — no defensive veto issue either way","Players Era Championship first-round game, neutral site (Las Vegas)"],"time":"8:00 PM ET"},
-    {"altCategoryTally":"1-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Baylor +17.93 PD/g vs Alabama +14.43 PD/g (Ledger 50/50 early-season blend) — favors Baylor.","Rest: both teams on normal rest for a tournament opener — neutral.","Travel: neutral-site Players Era Championship game in Las Vegas — neutral.","Injuries/Lineup: no verifiable injury news found for either side — neutral.","Form: Alabama 5-0 vs Baylor 4-1 — favors Alabama.","Motivation/Spot: tournament-opener stakes equal for both — neutral.","Venue/Crowd: neutral-site tournament game — neutral.","Market: Alabama's home spread hasn't moved from -1.5 at open — no line movement, no public data — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 6.6. Ledger outcome unchanged.","away":"Baylor Bears","awayMoneyline":105,"awayPDpg":17.93,"awayRank":null,"awayScore":null,"awaySpread":1.5,"awaySpreadOdds":-105,"confidence":"skip","correct":null,"home":"Alabama Crimson Tide","homeMoneyline":-125,"homePDpg":14.43,"homeRank":15,"homeScore":null,"homeSpread":-1.5,"homeSpreadOdds":-115,"lineMove":{"checked":"2026-11-24T10:58:26+00:00","ml":{"away":[105.0,105.0],"home":[-125.0,-125.0]},"spread":[-1.5,-1.5],"total":[178.5,175.5]},"offGap":6.6,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +17.93 vs +14.43 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Baylor 4-1, Alabama 5-0)","AdjOE 120.25 (27th, 92.9 pct of 365) vs 125.83 (3rd, 99.5 pct) — gap 6.6, under the 30 screen","AdjDE 96.19 vs 96.63 — no defensive veto issue either way","Players Era Championship first-round game, neutral site (Las Vegas)"],"time":"10:00 PM ET"},
-    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: Oregon +6.96 PD/g vs St. John's +20.54 PD/g (Ledger 50/50 early-season blend) — favors St. John's.","Rest: both teams on normal rest for a tournament opener — neutral.","Travel: neutral-site Players Era Championship game in Las Vegas — neutral.","Injuries/Lineup: no verifiable injury news found for either side — neutral.","Form: St. John's 5-0 vs Oregon 3-1 — favors St. John's.","Motivation/Spot: tournament-opener stakes equal for both — neutral.","Venue/Crowd: neutral-site tournament game — neutral.","Market: St. John's home spread moved from -8.5 to -9.5 (favorite grew by a point); no public-side data to confirm reverse line movement — neutral.","Matchup splits: no specific verifiable unit-vs-unit mismatch found — neutral."],"altReturn":null,"altSpreadReturn":null,"auditNote":"PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 4.1. Ledger outcome unchanged.","away":"Oregon Ducks","awayMoneyline":340,"awayPDpg":6.96,"awayRank":null,"awayScore":null,"awaySpread":9.5,"awaySpreadOdds":-112,"confidence":"skip","correct":null,"home":"St. John's Red Storm","homeMoneyline":-440,"homePDpg":20.54,"homeRank":13,"homeScore":null,"homeSpread":-9.5,"homeSpreadOdds":-108,"lineMove":{"checked":"2026-11-24T10:58:26+00:00","ml":{"away":[320.0,340.0],"home":[-410.0,-440.0]},"spread":[-8.5,-9.5],"total":[158.5,155.5]},"offGap":4.1,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +6.96 vs +20.54 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Oregon 3-1, St. John's 5-0)","AdjOE 116.86 (44th, 88.2 pct of 365) vs 119.96 (29th, 92.3 pct) — gap 4.1, under the 30 screen","AdjDE 104.35 vs 88.70 — no defensive veto issue either way","Players Era Championship first-round game, neutral site (Las Vegas)"],"time":"10:30 PM ET"}
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Ole Miss +16.69 PD/g vs BYU +15.14 PD/g (Ledger 50/50 early-season blend) \u2014 favors Ole Miss.",
+        "Rest: both played Monday 11/23 in the Maui Invitational first round, so both are on one day's rest \u2014 neutral.",
+        "Travel: neutral-site Maui Invitational semifinal at the Lahaina Civic Center; both teams flew to Hawaii \u2014 neutral.",
+        "Injuries/Lineup: BYU starting point guard Robert Wright III is day-to-day with a lower-leg injury and missed Monday's game; no injury news found for Ole Miss \u2014 favors Ole Miss.",
+        "Form: both teams are unbeaten (Ole Miss 5-0, BYU 6-0) \u2014 essentially even \u2014 neutral.",
+        "Motivation/Spot: Maui Invitational semifinal between two unbeaten ranked teams, winner to Wednesday's final \u2014 high stakes both ways \u2014 neutral.",
+        "Venue/Crowd: neutral-site tournament game in Lahaina, Hawaii \u2014 no home-court edge for either side \u2014 neutral.",
+        "Market: a near pick'em on which books disagree \u2014 DraftKings has Ole Miss -1.5 while other outlets list BYU -1.5 \u2014 no usable line signal \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Game is a neutral-site Maui Invitational semifinal in Lahaina, not a BYU home game in Provo, so the travel and venue edges are removed; records corrected to 5-0/6-0, BYU's Robert Wright III injury added, AdjOE/AdjDE refreshed (off-gap 15.38 \u2192 14.28). Still a Ledger skip and a Second Opinion pass. PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 21.7. Ledger outcome unchanged.",
+      "away": "Ole Miss Rebels",
+      "awayMoneyline": 102,
+      "awayPDpg": 16.69,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 1.5,
+      "awaySpreadOdds": -112,
+      "confidence": "skip",
+      "correct": null,
+      "home": "BYU Cougars",
+      "homeMoneyline": -122,
+      "homePDpg": 15.14,
+      "homeRank": 19,
+      "homeScore": null,
+      "homeSpread": -1.5,
+      "homeSpreadOdds": -108,
+      "lineMove": {
+        "checked": "2026-11-24T10:58:25+00:00",
+        "ml": {
+          "away": [
+            100.0,
+            102.0
+          ],
+          "home": [
+            -120.0,
+            -122.0
+          ]
+        },
+        "spread": [
+          -1.5,
+          -1.5
+        ],
+        "total": [
+          160.5,
+          160.5
+        ]
+      },
+      "offGap": 21.7,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +16.69 vs +15.14 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Ole Miss 5-0, BYU 6-0)",
+        "AdjOE 111.75 (93rd, 74.7 pct of 365) vs 122.61 (14th, 96.4 pct) \u2014 gap 21.7, under the 30 screen",
+        "AdjDE 88.57 vs 97.44 \u2014 no defensive veto issue either way",
+        "Maui Invitational semifinal, neutral site (Lahaina Civic Center, Maui)"
+      ],
+      "time": "2:30 PM ET",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-0",
+          "key": "rolling_dog",
+          "name": "Rolling underdog",
+          "team": "Ole Miss Rebels",
+          "says": "back",
+          "fact": "Ole Miss has won 5 straight and is a +1.5 underdog.",
+          "record": "265-302",
+          "pct": 46.7,
+          "leans": "BYU Cougars",
+          "leanPct": 53.3,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "5-8",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Ole Miss Rebels",
+          "says": "fade",
+          "fact": "Ole Miss won its last three by 20, 35, 40.",
+          "record": "120-146",
+          "pct": 45.1,
+          "leans": "Ole Miss Rebels",
+          "leanPct": 54.9,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Tennessee +14.73 PD/g vs Maryland +5.56 PD/g (Ledger 50/50 early-season blend) \u2014 favors Tennessee.",
+        "Rest: both teams enter on normal rest for a tournament opener \u2014 neutral.",
+        "Travel: neutral-site Players Era Championship game in Las Vegas \u2014 both teams traveled in, no edge either way \u2014 neutral.",
+        "Injuries/Lineup: no verifiable injury news found for either side \u2014 neutral.",
+        "Form: Tennessee 5-0 vs Maryland 3-2 \u2014 favors Tennessee.",
+        "Motivation/Spot: tournament opener for both, equal stakes (winner advances) \u2014 neutral.",
+        "Venue/Crowd: neutral-site tournament game \u2014 no home-court edge \u2014 neutral.",
+        "Market: Maryland's spread moved from +5.5 to +4.5 (toward Tennessee); public betting split unavailable to confirm reverse line movement \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 6.5. Ledger outcome unchanged.",
+      "away": "Tennessee Volunteers",
+      "awayMoneyline": -218,
+      "awayPDpg": 14.73,
+      "awayRank": 9,
+      "awayScore": null,
+      "awaySpread": -4.5,
+      "awaySpreadOdds": -105,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Maryland Terrapins",
+      "homeMoneyline": 180,
+      "homePDpg": 5.56,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": 4.5,
+      "homeSpreadOdds": -115,
+      "lineMove": {
+        "spread": [
+          5.5,
+          2.5
+        ],
+        "total": [
+          148.5,
+          148.5
+        ],
+        "ml": {
+          "home": [
+            185.0,
+            120.0
+          ],
+          "away": [
+            -225.0,
+            -142.0
+          ]
+        },
+        "checked": "2026-11-24T19:43:18+00:00"
+      },
+      "offGap": 6.5,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +14.73 vs +5.56 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Tennessee 5-0, Maryland 3-2)",
+        "AdjOE 110.71 (102nd, 72.3 pct of 365) vs 113.20 (78th, 78.8 pct) \u2014 gap 6.5, under the 30 screen",
+        "AdjDE 84.97 vs 100.92 \u2014 no defensive veto issue either way",
+        "Players Era Championship first-round game, neutral site (Las Vegas)"
+      ],
+      "time": "3:00 PM ET",
+      "gameTotal": 148.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-4",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "Tennessee Volunteers",
+          "says": "fade",
+          "fact": "Tennessee moved up from #14 to #9 in this week's AP poll.",
+          "record": "236-269",
+          "pct": 46.7,
+          "leans": "Tennessee Volunteers",
+          "leanPct": 53.3,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Miami +21.38 PD/g vs TCU +13.24 PD/g (Ledger 50/50 early-season blend) \u2014 favors Miami.",
+        "Rest: both teams on normal rest for a tournament opener \u2014 neutral.",
+        "Travel: neutral-site Players Era Championship game in Las Vegas \u2014 neutral.",
+        "Injuries/Lineup: no verifiable injury news found for either side \u2014 neutral.",
+        "Form: Miami 5-1 vs TCU 4-1 \u2014 one more win at the same loss count \u2014 favors Miami.",
+        "Motivation/Spot: tournament-opener stakes equal for both \u2014 neutral.",
+        "Venue/Crowd: neutral-site tournament game \u2014 neutral.",
+        "Market: TCU's spread moved from +7.5 to +6.5 (toward Miami); no public-side data to confirm reverse line movement \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 4.4. Ledger outcome unchanged.",
+      "away": "Miami Hurricanes",
+      "awayMoneyline": -270,
+      "awayPDpg": 21.38,
+      "awayRank": 17,
+      "awayScore": null,
+      "awaySpread": -6.5,
+      "awaySpreadOdds": -105,
+      "confidence": "skip",
+      "correct": null,
+      "home": "TCU Horned Frogs",
+      "homeMoneyline": 220,
+      "homePDpg": 13.24,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": 6.5,
+      "homeSpreadOdds": -115,
+      "lineMove": {
+        "spread": [
+          7.5,
+          5.5
+        ],
+        "total": [
+          155.5,
+          153.5
+        ],
+        "ml": {
+          "home": [
+            230.0,
+            185.0
+          ],
+          "away": [
+            -285.0,
+            -225.0
+          ]
+        },
+        "checked": "2026-11-24T19:43:18+00:00"
+      },
+      "offGap": 4.4,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +21.38 vs +13.24 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Miami 5-1, TCU 4-1)",
+        "AdjOE 116.51 (50th, 86.5 pct of 365) vs 114.61 (66th, 82.1 pct) \u2014 gap 4.4, under the 30 screen",
+        "AdjDE 90.61 vs 95.14 \u2014 no defensive veto issue either way",
+        "Players Era Championship first-round game, neutral site (Las Vegas)"
+      ],
+      "time": "3:00 PM ET",
+      "gameTotal": 153.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-1",
+          "key": "ot_loser",
+          "name": "Overtime heartbreak",
+          "team": "TCU Horned Frogs",
+          "says": "back",
+          "fact": "TCU lost to Texas A&M 92-97 in overtime last time out.",
+          "record": "152-127",
+          "pct": 54.5,
+          "leans": "TCU Horned Frogs",
+          "leanPct": 54.5,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "5-8",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Miami Hurricanes",
+          "says": "fade",
+          "fact": "Miami won its last three by 52, 47, 42.",
+          "record": "120-146",
+          "pct": 45.1,
+          "leans": "Miami Hurricanes",
+          "leanPct": 54.9,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "0-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Providence +7.32 PD/g vs Arizona +14.38 PD/g (Ledger 50/50 early-season blend) \u2014 favors Arizona.",
+        "Rest: both played Monday 11/23 in the Maui Invitational first round, so both are on one day's rest \u2014 neutral.",
+        "Travel: neutral-site Maui Invitational semifinal at the Lahaina Civic Center; both teams flew to Hawaii \u2014 neutral.",
+        "Injuries/Lineup: no verifiable injury news found for either side \u2014 neutral.",
+        "Form: identical records, Providence 5-1 and Arizona 5-1 \u2014 neutral.",
+        "Motivation/Spot: Maui Invitational semifinal, winner to Wednesday's final \u2014 equal stakes both ways \u2014 neutral.",
+        "Venue/Crowd: neutral-site tournament game in Lahaina, Hawaii \u2014 no home-court edge for either side \u2014 neutral.",
+        "Market: Arizona's spread hasn't moved from -7.5 at open \u2014 no line movement, no public data \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Game is a neutral-site Maui Invitational semifinal in Lahaina, not an Arizona home game in Tucson, so the travel and venue edges are removed; records corrected to 5-1/5-1 and AdjOE/AdjDE refreshed (off-gap 20.61 \u2192 26.37, still under 30). Still a Ledger skip and a Second Opinion pass. PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 20.9. On the blended figures the scoring margin favors Arizona, not Providence, so the tally is 0-1 \u2014 still a pass. Ledger outcome unchanged.",
+      "away": "Providence Friars",
+      "awayMoneyline": 270,
+      "awayPDpg": 7.32,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 7.5,
+      "awaySpreadOdds": -110,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Arizona Wildcats",
+      "homeMoneyline": -340,
+      "homePDpg": 14.38,
+      "homeRank": 8,
+      "homeScore": null,
+      "homeSpread": -7.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "spread": [
+          -7.5,
+          -7.5
+        ],
+        "total": [
+          154.5,
+          157.5
+        ],
+        "ml": {
+          "home": [
+            -340.0,
+            -340.0
+          ],
+          "away": [
+            270.0,
+            270.0
+          ]
+        },
+        "checked": "2026-11-24T19:43:18+00:00"
+      },
+      "offGap": 20.9,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +7.32 vs +14.38 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Providence 5-1, Arizona 5-1)",
+        "AdjOE 112.70 (84th, 77.2 pct of 365) vs 124.81 (8th, 98.1 pct) \u2014 gap 20.9, under the 30 screen",
+        "AdjDE 96.56 vs 89.30 \u2014 no defensive veto issue either way",
+        "Maui Invitational semifinal, neutral site (Lahaina Civic Center, Maui)"
+      ],
+      "time": "5:00 PM ET",
+      "gameTotal": 157.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
+    },
+    {
+      "altCategoryTally": "1-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Milwaukee -4.61 PD/g vs Florida +14.23 PD/g (Ledger 50/50 early-season blend) \u2014 favors Florida.",
+        "Rest: both teams on normal in-season rest \u2014 neutral.",
+        "Travel: Milwaukee to Gainesville is a short time-zone trip, nothing unusual \u2014 neutral.",
+        "Injuries/Lineup: Florida guard Boogie Fland is out with a shoulder injury, confirmed by Todd Golden on Monday; Milwaukee reports no injuries \u2014 favors Milwaukee.",
+        "Form: Florida 6-1 vs Milwaukee 2-4 \u2014 favors Florida.",
+        "Motivation/Spot: non-conference buy game for Florida, no special stakes found \u2014 neutral.",
+        "Venue/Crowd: standard home-court setting, nothing beyond the ordinary noted \u2014 neutral.",
+        "Market: Florida's home spread moved from -38.5 to -35.5 (3 points toward Milwaukee); no public-side data to confirm reverse line movement \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Injuries/Lineup corrected \u2014 Florida's Boogie Fland is out (shoulder) and Milwaukee is healthy, so the category favors Milwaukee (tally 0-2 \u2192 1-2, still a pass); PD/g confirmed as D-I-only figures. Ledger pick Florida (solid) unchanged. PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 74.4. Ledger outcome unchanged.",
+      "away": "Milwaukee Panthers",
+      "awayMoneyline": null,
+      "awayPDpg": -4.61,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 35.5,
+      "awaySpreadOdds": -112,
+      "confidence": "solid",
+      "correct": null,
+      "home": "Florida Gators",
+      "homeMoneyline": null,
+      "homePDpg": 14.23,
+      "homeRank": 3,
+      "homeScore": null,
+      "homeSpread": -35.5,
+      "homeSpreadOdds": -108,
+      "lineMove": {
+        "spread": [
+          -38.5,
+          -34.5
+        ],
+        "total": [
+          158.5,
+          152.5
+        ],
+        "ml": {},
+        "checked": "2026-11-24T19:43:18+00:00"
+      },
+      "offGap": 74.4,
+      "pick": "Florida Gators",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g -4.61 vs +14.23 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Milwaukee 2-4, Florida 6-1)",
+        "AdjOE 97.78 (273rd, 25.3 pct of 365) vs 126.73 (2nd, 99.7 pct) \u2014 gap 74.4, clears the 30 screen",
+        "AdjDE 110.42 vs 90.84 \u2014 Florida (the pick) is 19.6 better defensively, no veto"
+      ],
+      "time": "7:00 PM ET",
+      "gameTotal": 152.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "9-5",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "Florida Gators",
+          "says": "fade",
+          "fact": "#3 Florida is a -35.5 favorite.",
+          "record": "104-122",
+          "pct": 46.0,
+          "leans": "Florida Gators",
+          "leanPct": 54.0,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "mte_hangover",
+          "name": "Tournament-trip hangover",
+          "team": "Florida Gators",
+          "says": "fade",
+          "fact": "Florida's first game back from neutral-site games (Players Era 8 - Third Place Game).",
+          "record": "124-109",
+          "pct": 53.2,
+          "leans": "Milwaukee Panthers",
+          "leanPct": 53.2,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Vanderbilt +19.88 PD/g vs Ohio State +9.46 PD/g (Ledger 50/50 early-season blend) \u2014 favors Vanderbilt.",
+        "Rest: both teams on normal in-season rest \u2014 neutral.",
+        "Travel: Nashville to Columbus is a short regional trip \u2014 neutral.",
+        "Injuries/Lineup: no verifiable injury news found for either side \u2014 neutral.",
+        "Form: Vanderbilt 6-0 vs Ohio State 4-2 \u2014 favors Vanderbilt.",
+        "Motivation/Spot: regular non-conference game, no rivalry/revenge angle found \u2014 neutral.",
+        "Venue/Crowd: standard home-court setting, nothing notable beyond the ordinary \u2014 neutral.",
+        "Market: Ohio State's home spread moved from +1.5 to +2.5 (away from Ohio State, toward Vanderbilt); no public-side data to confirm reverse line movement \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 2.2. Ledger outcome unchanged.",
+      "away": "Vanderbilt Commodores",
+      "awayMoneyline": -130,
+      "awayPDpg": 19.88,
+      "awayRank": 14,
+      "awayScore": null,
+      "awaySpread": -2.5,
+      "awaySpreadOdds": 100,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Ohio State Buckeyes",
+      "homeMoneyline": 110,
+      "homePDpg": 9.46,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": 2.5,
+      "homeSpreadOdds": -120,
+      "lineMove": {
+        "spread": [
+          1.5,
+          1.5
+        ],
+        "total": [
+          156.5,
+          156.5
+        ],
+        "ml": {
+          "home": [
+            120.0,
+            110.0
+          ],
+          "away": [
+            -142.0,
+            -130.0
+          ]
+        },
+        "checked": "2026-11-24T19:43:18+00:00"
+      },
+      "offGap": 2.2,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +19.88 vs +9.46 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Vanderbilt 6-0, Ohio State 4-2)",
+        "AdjOE 124.91 (7th, 98.4 pct of 365) vs 122.52 (15th, 96.2 pct) \u2014 gap 2.2, under the 30 screen",
+        "AdjDE 89.53 vs 100.16 \u2014 no defensive veto issue either way"
+      ],
+      "time": "7:00 PM ET",
+      "gameTotal": 156.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-2",
+          "key": "midweek_road",
+          "name": "School night on the road",
+          "team": "Vanderbilt Commodores",
+          "says": "fade",
+          "fact": "#14 Vanderbilt plays at Ohio State on a Tuesday.",
+          "record": "635-541",
+          "pct": 54.0,
+          "leans": "Ohio State Buckeyes",
+          "leanPct": 54.0,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "7-3",
+          "key": "nonconf_road",
+          "name": "Non-conference road trip",
+          "team": "Vanderbilt Commodores",
+          "says": "fade",
+          "fact": "#14 Vanderbilt plays a non-conference game at Ohio State.",
+          "record": "207-169",
+          "pct": 55.1,
+          "leans": "Ohio State Buckeyes",
+          "leanPct": 55.1,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "7-2",
+          "key": "first_road",
+          "name": "Leaving home",
+          "team": "Vanderbilt Commodores",
+          "says": "fade",
+          "fact": "#14 Vanderbilt's first true road game of the season.",
+          "record": "137-114",
+          "pct": 54.6,
+          "leans": "Ohio State Buckeyes",
+          "leanPct": 54.6,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "1-3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Jacksonville -3.07 PD/g vs Indiana +11.59 PD/g (Ledger 50/50 early-season blend) \u2014 favors Indiana.",
+        "Rest: both teams on normal in-season rest \u2014 neutral.",
+        "Travel: Jacksonville, FL to Bloomington, IN is a moderate one-time-zone trip, nothing extreme \u2014 neutral.",
+        "Injuries/Lineup: Indiana guard P. Moody has been out with a knee injury since Nov 2; Jacksonville reports no injuries \u2014 favors Jacksonville.",
+        "Form: Indiana 6-0 vs Jacksonville 2-4 \u2014 favors Indiana.",
+        "Motivation/Spot: non-conference buy game for Indiana, no special stakes found \u2014 neutral.",
+        "Venue/Crowd: Indiana's Assembly Hall is one of the sport's legendary true-road environments \u2014 favors Indiana.",
+        "Market: Indiana's home spread hasn't moved from -28.5 at open \u2014 no line movement, no public data \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Injuries/Lineup corrected \u2014 Indiana's P. Moody is out (knee) and Jacksonville is healthy, so the category favors Jacksonville (tally 0-3 \u2192 1-3, still a pass); AdjOE/AdjDE refreshed (off-gap 48.35 \u2192 47.53). Ledger pick Indiana (solid) unchanged. PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 70.1. Ledger outcome unchanged.",
+      "away": "Jacksonville Dolphins",
+      "awayMoneyline": 5000,
+      "awayPDpg": -3.07,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 28.5,
+      "awaySpreadOdds": -115,
+      "confidence": "solid",
+      "correct": null,
+      "home": "Indiana Hoosiers",
+      "homeMoneyline": -100000,
+      "homePDpg": 11.59,
+      "homeRank": 23,
+      "homeScore": null,
+      "homeSpread": -28.5,
+      "homeSpreadOdds": -105,
+      "lineMove": {
+        "spread": [
+          -28.5,
+          -27.5
+        ],
+        "total": [
+          146.5,
+          145.5
+        ],
+        "ml": {
+          "home": [
+            -50000.0,
+            -50000.0
+          ],
+          "away": [
+            4000.0,
+            4000.0
+          ]
+        },
+        "checked": "2026-11-24T19:43:18+00:00"
+      },
+      "offGap": 70.1,
+      "pick": "Indiana Hoosiers",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g -3.07 vs +11.59 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Jacksonville 2-4, Indiana 6-0)",
+        "AdjOE 97.66 (275th, 24.7 pct of 365) vs 121.47 (20th, 94.8 pct) \u2014 gap 70.1, clears the 30 screen",
+        "AdjDE 114.70 vs 97.77 \u2014 Indiana (the pick) is 16.9 better defensively, no veto"
+      ],
+      "time": "7:00 PM ET",
+      "gameTotal": 145.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "mte_hangover",
+          "name": "Tournament-trip hangover",
+          "team": "Indiana Hoosiers",
+          "says": "fade",
+          "fact": "Indiana's first game back from neutral-site games.",
+          "record": "124-109",
+          "pct": 53.2,
+          "leans": "Jacksonville Dolphins",
+          "leanPct": 53.2,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Texas Tech +18.99 PD/g vs Louisville +13.12 PD/g (Ledger 50/50 early-season blend) \u2014 favors Texas Tech.",
+        "Rest: both teams on normal rest for a tournament opener \u2014 neutral.",
+        "Travel: neutral-site Players Era Championship game in Las Vegas \u2014 neutral.",
+        "Injuries/Lineup: no verifiable injury news found for either side \u2014 neutral.",
+        "Form: Texas Tech 5-0 vs Louisville 3-1 \u2014 favors Texas Tech.",
+        "Motivation/Spot: tournament-opener stakes equal for both \u2014 neutral.",
+        "Venue/Crowd: neutral-site tournament game \u2014 neutral.",
+        "Market: Louisville's spread moved from +5.5 to +3.5 (2 points toward Louisville, away from favorite Texas Tech); no public-side data to confirm reverse line movement \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 1.1. Ledger outcome unchanged.",
+      "away": "Texas Tech Red Raiders",
+      "awayMoneyline": -180,
+      "awayPDpg": 18.99,
+      "awayRank": 5,
+      "awayScore": null,
+      "awaySpread": -3.5,
+      "awaySpreadOdds": -110,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Louisville Cardinals",
+      "homeMoneyline": 150,
+      "homePDpg": 13.12,
+      "homeRank": 25,
+      "homeScore": null,
+      "homeSpread": 3.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "spread": [
+          5.5,
+          2.5
+        ],
+        "total": [
+          153.5,
+          153.5
+        ],
+        "ml": {
+          "home": [
+            185.0,
+            124.0
+          ],
+          "away": [
+            -225.0,
+            -148.0
+          ]
+        },
+        "checked": "2026-11-24T19:43:18+00:00"
+      },
+      "offGap": 1.1,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +18.99 vs +13.12 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Texas Tech 5-0, Louisville 3-1)",
+        "AdjOE 117.03 (42nd, 88.7 pct of 365) vs 118.11 (38th, 89.8 pct) \u2014 gap 1.1, under the 30 screen",
+        "AdjDE 81.94 vs 96.12 \u2014 no defensive veto issue either way",
+        "Players Era Championship first-round game, neutral site (Las Vegas)"
+      ],
+      "time": "8:00 PM ET",
+      "gameTotal": 153.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-3",
+          "key": "november_hype",
+          "name": "November hype",
+          "team": "Texas Tech Red Raiders",
+          "says": "fade",
+          "fact": "#5 Texas Tech is a -3.5 favorite over #25 Louisville on a neutral floor.",
+          "record": "34-38",
+          "pct": 47.2,
+          "leans": "Texas Tech Red Raiders",
+          "leanPct": 52.8,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "1-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Baylor +17.93 PD/g vs Alabama +14.43 PD/g (Ledger 50/50 early-season blend) \u2014 favors Baylor.",
+        "Rest: both teams on normal rest for a tournament opener \u2014 neutral.",
+        "Travel: neutral-site Players Era Championship game in Las Vegas \u2014 neutral.",
+        "Injuries/Lineup: no verifiable injury news found for either side \u2014 neutral.",
+        "Form: Alabama 5-0 vs Baylor 4-1 \u2014 favors Alabama.",
+        "Motivation/Spot: tournament-opener stakes equal for both \u2014 neutral.",
+        "Venue/Crowd: neutral-site tournament game \u2014 neutral.",
+        "Market: Alabama's home spread hasn't moved from -1.5 at open \u2014 no line movement, no public data \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 6.6. Ledger outcome unchanged.",
+      "away": "Baylor Bears",
+      "awayMoneyline": 105,
+      "awayPDpg": 17.93,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 1.5,
+      "awaySpreadOdds": -105,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Alabama Crimson Tide",
+      "homeMoneyline": -125,
+      "homePDpg": 14.43,
+      "homeRank": 15,
+      "homeScore": null,
+      "homeSpread": -1.5,
+      "homeSpreadOdds": -115,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -1.5
+        ],
+        "total": [
+          178.5,
+          174.5
+        ],
+        "ml": {
+          "home": [
+            -125.0,
+            -125.0
+          ],
+          "away": [
+            105.0,
+            105.0
+          ]
+        },
+        "checked": "2026-11-24T19:43:18+00:00"
+      },
+      "offGap": 6.6,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +17.93 vs +14.43 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Baylor 4-1, Alabama 5-0)",
+        "AdjOE 120.25 (27th, 92.9 pct of 365) vs 125.83 (3rd, 99.5 pct) \u2014 gap 6.6, under the 30 screen",
+        "AdjDE 96.19 vs 96.63 \u2014 no defensive veto issue either way",
+        "Players Era Championship first-round game, neutral site (Las Vegas)"
+      ],
+      "time": "10:00 PM ET",
+      "gameTotal": 174.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
+    },
+    {
+      "altCategoryTally": "0-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: Oregon +6.96 PD/g vs St. John's +20.54 PD/g (Ledger 50/50 early-season blend) \u2014 favors St. John's.",
+        "Rest: both teams on normal rest for a tournament opener \u2014 neutral.",
+        "Travel: neutral-site Players Era Championship game in Las Vegas \u2014 neutral.",
+        "Injuries/Lineup: no verifiable injury news found for either side \u2014 neutral.",
+        "Form: St. John's 5-0 vs Oregon 3-1 \u2014 favors St. John's.",
+        "Motivation/Spot: tournament-opener stakes equal for both \u2014 neutral.",
+        "Venue/Crowd: neutral-site tournament game \u2014 neutral.",
+        "Market: St. John's home spread moved from -8.5 to -9.5 (favorite grew by a point); no public-side data to confirm reverse line movement \u2014 neutral.",
+        "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "PD/g and adjusted efficiency replaced with the Ledger's own inputs from the archived Sports Reference ratings (ledgerMov/ledgerORtg/ledgerDRtg, the 50/50 first-10-games blend); off-gap 4.1. Ledger outcome unchanged.",
+      "away": "Oregon Ducks",
+      "awayMoneyline": 340,
+      "awayPDpg": 6.96,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 9.5,
+      "awaySpreadOdds": -112,
+      "confidence": "skip",
+      "correct": null,
+      "home": "St. John's Red Storm",
+      "homeMoneyline": -440,
+      "homePDpg": 20.54,
+      "homeRank": 13,
+      "homeScore": null,
+      "homeSpread": -9.5,
+      "homeSpreadOdds": -108,
+      "lineMove": {
+        "spread": [
+          -8.5,
+          -10.5
+        ],
+        "total": [
+          158.5,
+          156.5
+        ],
+        "ml": {
+          "home": [
+            -410.0,
+            -600.0
+          ],
+          "away": [
+            320.0,
+            440.0
+          ]
+        },
+        "checked": "2026-11-24T19:43:18+00:00"
+      },
+      "offGap": 4.1,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +6.96 vs +20.54 (2026-27 Ledger basis: 50/50 blend of this season and last season's final, both teams inside their first 10 games; Oregon 3-1, St. John's 5-0)",
+        "AdjOE 116.86 (44th, 88.2 pct of 365) vs 119.96 (29th, 92.3 pct) \u2014 gap 4.1, under the 30 screen",
+        "AdjDE 104.35 vs 88.70 \u2014 no defensive veto issue either way",
+        "Players Era Championship first-round game, neutral site (Las Vegas)"
+      ],
+      "time": "10:30 PM ET",
+      "gameTotal": 156.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "5-1",
+          "key": "after_dark",
+          "name": "After dark out West",
+          "team": "St. John's Red Storm",
+          "says": "fade",
+          "fact": "St. John's tips at 10:30 PM ET in Las Vegas, NV.",
+          "record": "78-84",
+          "pct": 48.1,
+          "leans": "St. John's Red Storm",
+          "leanPct": 51.9,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    }
   ]
 }
