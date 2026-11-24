@@ -38,6 +38,12 @@ SPEC = {P: [[k, lab] for k, lab, _f in STATS[P]] for P in POS}
 SCORE_W = {"QB": {"pyd": .6, "ptd": .3, "int": -.1}, "RB": {"ryd": .6, "cyd": .2, "td": .2},
            "WR": {"cyd": .6, "td": .3, "rec": .1}, "TE": {"cyd": .6, "td": .3, "rec": .1}}
 PASS_SPLIT = {"QB": .45, "WR": .40, "TE": .15}
+# Injured offense (see lib/nba_dvp.py OUT_KEEP): an out player's share of the
+# team's yards (rush + receiving + half the QB's passing, half of a QB's own
+# total) times its points a game, taken off at OUT_KEEP. This season (228 NFL
+# team-games) the fit was 0.76 (missing 4.4 pts: 3.7 under; 7.9: 7.2 under) and
+# CFB 0.36 (870, 9.6 missing: 3.8 under); 0.5, since the NFL sample is small.
+OUT_KEEP = 0.5
 MIN_GAMES = 3
 _CACHE = {}
 
@@ -163,11 +169,16 @@ def for_slate(slate_date, games_today, sport="nfl", injuries=None):
         if not o or not d or yds[o][2] < MIN_GAMES or len(allowed[d]["QB"]) < MIN_GAMES:
             return None
         tg = yds[o][2] or 1
-        gone, rush_off = [], 0.0
+        gone, rush_off, out_share = [], 0.0, 0.0
+        team_y = yds[o][1] + 1.5 * yds[o][0]
         for pid, st in (inj or {}).items():
             x = players[o].get(pid) if o in players else None
             if st in OUTISH and x and last_team.get(pid) == o and x[2] >= 2:
                 rush_off += x[4].get("ryd", 0.0) / tg
+                mine = x[4].get("ryd", 0.0) + x[4].get("cyd", 0.0) + x[4].get("pyd", 0.0)
+                sh = (0.5 if x[1] == "QB" else 1.0) * mine / max(1.0, team_y)
+                if sh >= 0.08:
+                    out_share += sh
                 main = {"QB": "pyd", "RB": "ryd", "WR": "cyd", "TE": "cyd"}[x[1]]
                 gone.append([x[0], x[1], round(x[4].get(main, 0.0) / tg, 1)])
         base_ps = yds[o][0] / max(1.0, yds[o][0] + yds[o][1])
@@ -191,6 +202,11 @@ def for_slate(slate_date, games_today, sport="nfl", injuries=None):
         if o in offq:
             r_["off"] = round(offq[o], 1)
             r_["ppg"] = round(sum(pf[o]) / len(pf[o]), 1)
+            lost = OUT_KEEP * min(out_share, 1.0) * r_["ppg"]
+            if lost >= 0.05 and lg_pts:
+                r_["offBase"] = r_["off"]
+                r_["offLost"] = round(lost, 1)
+                r_["off"] = round(offq[o] - 100 * lost / lg_pts, 1)
             if d in defq:
                 r_["dfn"] = round(defq[d], 1)
                 r_["papg"] = round(sum(pa[d]) / len(pa[d]), 1)

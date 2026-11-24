@@ -53,6 +53,13 @@ SCORE_W = {"pts": .5, "reb": .2, "ast": .2, "tpm": .1}
 # the gap between offense + matchup scores did nothing (49.9%): the books price
 # team quality. Both offense + matchup scores in the bottom fifth went under
 # 57.7% (113-83, p=0.04).
+# Injured offense (the user's ask, 2026-11-24): an out player's points a team
+# game come off the offense's points a game at OUT_KEEP. Teams make up most of
+# it: on 2025-26 (2,152 team-games, regulars missing from a team that had them
+# within its last 3 games) scoring came in 0.3 pts under the offense + defense
+# expectation with 11.5 of those points missing, 2.1 under with 19.6, 4.0 under
+# with 35.9 -- about 0.11 of the missing points (fit 0.10).
+OUT_KEEP = 0.11
 MIN_GAMES = 5
 _CACHE = {}
 
@@ -276,6 +283,11 @@ def for_slate(slate_date, games_today, sport="nba", injuries=None):
         if o in offq:
             res_["off"] = round(offq[o], 1)
             res_["ppg"] = round(sum(pf[o]) / len(pf[o]), 1)
+            lost = OUT_KEEP * sum(g[2] for g in gone)
+            if lost >= 0.05 and lg_pts:
+                res_["offBase"] = res_["off"]
+                res_["offLost"] = round(lost, 1)
+                res_["off"] = round(offq[o] - 100 * lost / lg_pts, 1)
             if d in defq:
                 res_["dfn"] = round(defq[d], 1)
                 res_["papg"] = round(sum(pa[d]) / len(pa[d]), 1)
