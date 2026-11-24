@@ -42,15 +42,17 @@ STATS = ("pts", "reb", "ast", "tpm")
 # both scores high went over 53% (104-92), both low under 57% (111-85, p=0.07).
 SCORE_W = {"pts": .5, "reb": .2, "ast": .2, "tpm": .1}
 # Overall grade (the user's ask, 2026-11-24: "consider how good the team is as
-# well"): the matchup score plus the offense's own quality, its points a game
-# this season vs the league's (`off`), added 1:1 (a fit gave .65 x matchup +
-# .76 x offense). 2025-26 replay (979 games, before-the-game data), predicting a
-# team's points vs the league average: matchup alone r=.27, matchup + offense
-# r=.33, in both halves of the season (.19->.23, .37->.44); overall +8% or more
-# scored 7.1% over the league average (76.5% above it), +4 to +8 +4.2% (63.5%),
-# -8 to -4 -5.2% (27.3%). Against the spread it did nothing (49.9% at a 4+ gap,
-# 50.9% at 8+): the books price team quality. Both overall scores in the bottom
-# fifth went under 57.7% (113-83, p=0.04).
+# well"): the offense's points a game vs the league's (`off`) plus the points
+# tonight's defense allows a game vs the league's (`dfn`), added 1:1; the
+# position matchup (`score`) stays as the detail. Predicting a team's points vs
+# the league average (correlation, before-the-game data): 2025-26 NBA (979
+# games) matchup alone .27, offense + matchup .33, offense + points allowed .39;
+# this season NBA .05 / .14 / .32, NCAAB .36 / .50 / .54, CFB .25 / .39 / .41,
+# NFL .18 / .29 / .28. Adding the position matchup on top of offense + points
+# allowed adds about nothing (NBA this season it hurt: .20). Against the spread
+# the gap between offense + matchup scores did nothing (49.9%): the books price
+# team quality. Both offense + matchup scores in the bottom fifth went under
+# 57.7% (113-83, p=0.04).
 MIN_GAMES = 5
 _CACHE = {}
 
@@ -161,6 +163,7 @@ def for_slate(slate_date, games_today, sport="nba", injuries=None):
     players = defaultdict(lambda: defaultdict(lambda: [None, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0]))  # team -> pid -> [name, g, min, pts, reb, ast, tpm, +/- total, games with +/-]
     last_team = {}
     pf = defaultdict(list)           # offense team -> [points a game]
+    pa = defaultdict(list)           # defense team -> [points allowed a game]
     final = team_points(sport)
     for _d, _eid, e in games:
         teams = list(e["players"])
@@ -196,6 +199,7 @@ def for_slate(slate_date, games_today, sport="nba", injuries=None):
                 made[team][P].append(sums[P])
             sc = (final.get(str(_eid)) or {}).get(team)
             pf[team].append(sc if sc is not None else sum(row[5] for row in e["players"][team]))
+            pa[opp].append(pf[team][-1])
     # the league average is over the defenses that are ranked (3+ games): for
     # college, that's the teams on our slates, not their opponents
     ranked = [t for t in allowed if len(allowed[t]["PG"]) >= MIN_TEAM_GAMES]
@@ -211,6 +215,7 @@ def for_slate(slate_date, games_today, sport="nba", injuries=None):
                 ranks[(t, P, k)] = i + 1
     nteams = len(avg)
     offq, lg_pts = offense_pct(pf, ranked)
+    defq, _ = offense_pct(pa, ranked)
 
     def pick(keys, name):
         hits = [t for t in keys if t == name] or [t for t in keys if _same(t, name)]
@@ -271,7 +276,10 @@ def for_slate(slate_date, games_today, sport="nba", injuries=None):
         if o in offq:
             res_["off"] = round(offq[o], 1)
             res_["ppg"] = round(sum(pf[o]) / len(pf[o]), 1)
-            res_["overall"] = round(res_["score"] + res_["off"], 1)
+            if d in defq:
+                res_["dfn"] = round(defq[d], 1)
+                res_["papg"] = round(sum(pa[d]) / len(pa[d]), 1)
+                res_["overall"] = round(res_["off"] + res_["dfn"], 1)
         if gone:
             res_["base"] = round(100 * base, 1)
             res_["out"] = sorted(gone, key=lambda g: -g[2])
