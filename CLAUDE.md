@@ -524,7 +524,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   allows, this season (MLB from 03-25, soccer from 07-01; 10/4 games min) from
   `data/raw/schedule/<sport>.json`. Correlation with runs/goals scored: MLB .10
   (the starting pitcher isn't in it), soccer .24 (the league average mixes every
-  saved competition; opponent-adjusted was no better). No injury adjustment.
+  saved competition; opponent-adjusted was no better).
+  MLB injuries (2026-11-24, the user's ask): `scripts/archive_mlb_player_box.py`
+  (scoring run, after archive_schedule.py; 300 games a run, `MLB_BOX_MAX`) saves
+  every regular- and postseason game's batting and pitching lines
+  (`data/raw/mlb_player_box.json`, 2026 backfilled: 2,470 games, 5 MB);
+  starter_out.py writes `injuries` on MLB games too (no starter alerts). Hitters
+  listed out come off the offense at `OUT_KEEP` 0.15 of their (R + RBI) / 2 a
+  team game (2026: regulars missing 3-30 straight games cost ~0.16 of it; rest
+  days nothing measurable), shown as `offBase`/`offLost`/`out`. Soccer has no
+  injury adjustment (no ESPN injury report).
   College (2026-11-19, the user's ask): NCAAB and CFB cards have the same
   matchup view and score (`dvpNcaab`/`dvpCfb`; `for_slate(..., sport)` in
   `lib/nba_dvp.py` / `lib/nfl_dvp.py`). `scripts/archive_college_player_box.py`
