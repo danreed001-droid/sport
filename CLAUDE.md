@@ -534,6 +534,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   team game (2026: regulars missing 3-30 straight games cost ~0.16 of it; rest
   days nothing measurable), shown as `offBase`/`offLost`/`out`. Soccer has no
   injury adjustment (no ESPN injury report).
+  MLB starting pitchers (2026-11-24, the user's ask): starter_out.py also writes
+  `probables` ({side: [athlete id, name]}, ESPN scoreboard probables, before the
+  game; repo-owned in sync_ledger.py, passed through build_site.py); a past game
+  without them uses its box score's starter. The opponent's allowed (`dfn`, with
+  `dfnBase` before) adds `sp.adj`: the starter's runs per out as a starter this
+  season, shrunk toward the league's starters by `SP_SHRINK` 60 outs, minus his
+  team's starters' rate, x 27 x his average share of a game, as % of league
+  runs, plus `SP_CENTER` 2.4 (the raw adjustment averaged -2.4%). 2026 replay:
+  correlation with runs scored .095 -> .112 (first half .072 -> .097, second
+  .131 -> .132); best fifth of starters' opponents scored 3.78, worst 4.92.
   College (2026-11-19, the user's ask): NCAAB and CFB cards have the same
   matchup view and score (`dvpNcaab`/`dvpCfb`; `for_slate(..., sport)` in
   `lib/nba_dvp.py` / `lib/nfl_dvp.py`). `scripts/archive_college_player_box.py`
