@@ -515,6 +515,16 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   game of regulars scored ~2 under expectation); NFL 0.5 of his share of team
   yards (rush + rec + half the QB's passing; a QB counts half) times its points
   a game (this season NFL fit 0.76 on 228 team-games, CFB 0.36).
+  College and soccer can't be adjusted: ESPN's summaries and team injury
+  lists are empty for them (checked 2026-11-24).
+  MLB and soccer (2026-11-24, the user's ask: "do all sports"): a "Team
+  strength" box (`tsBlock`, `TS_CUT` in site/index.html; `teamStr` in slate
+  payloads from `lib/team_strength.py`): the same overall grade without the
+  position part -- runs/goals a game vs the league plus what the opponent
+  allows, this season (MLB from 03-25, soccer from 07-01; 10/4 games min) from
+  `data/raw/schedule/<sport>.json`. Correlation with runs/goals scored: MLB .10
+  (the starting pitcher isn't in it), soccer .24 (the league average mixes every
+  saved competition; opponent-adjusted was no better). No injury adjustment.
   College (2026-11-19, the user's ask): NCAAB and CFB cards have the same
   matchup view and score (`dvpNcaab`/`dvpCfb`; `for_slate(..., sport)` in
   `lib/nba_dvp.py` / `lib/nfl_dvp.py`). `scripts/archive_college_player_box.py`
