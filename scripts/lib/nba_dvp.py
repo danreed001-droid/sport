@@ -41,8 +41,45 @@ STATS = ("pts", "reb", "ast", "tpm")
 # the gap between the two offenses' scores did nothing (50.6%), and for totals
 # both scores high went over 53% (104-92), both low under 57% (111-85, p=0.07).
 SCORE_W = {"pts": .5, "reb": .2, "ast": .2, "tpm": .1}
+# Overall grade (the user's ask, 2026-11-24: "consider how good the team is as
+# well"): the matchup score plus the offense's own quality, its points a game
+# this season vs the league's (`off`), added 1:1 (a fit gave .65 x matchup +
+# .76 x offense). 2025-26 replay (979 games, before-the-game data), predicting a
+# team's points vs the league average: matchup alone r=.27, matchup + offense
+# r=.33, in both halves of the season (.19->.23, .37->.44); overall +8% or more
+# scored 7.1% over the league average (76.5% above it), +4 to +8 +4.2% (63.5%),
+# -8 to -4 -5.2% (27.3%). Against the spread it did nothing (49.9% at a 4+ gap,
+# 50.9% at 8+): the books price team quality. Both overall scores in the bottom
+# fifth went under 57.7% (113-83, p=0.04).
 MIN_GAMES = 5
 _CACHE = {}
+
+
+def team_points(sport):
+    """{event id: {team name: points}} from data/raw/schedule/<sport>.json
+    (archive_schedule.py's final scores), for each offense's points a game."""
+    key = ("pts", sport)
+    if key not in _CACHE:
+        out = {}
+        try:
+            with open(os.path.join(ROOT, "data", "raw", "schedule", sport + ".json"), encoding="utf-8") as f:
+                dates = json.load(f).get("dates") or {}
+        except (OSError, ValueError):
+            dates = {}
+        for rows in dates.values():
+            for r in rows:
+                if len(r) > 6 and r[5] is not None and r[6] is not None:
+                    out[str(r[4])] = {r[0]: r[5], r[1]: r[6]}
+        _CACHE[key] = out
+    return _CACHE[key]
+
+
+def offense_pct(pf, ranked):
+    """{team: points a game vs the league's, in %} and the league figure, over
+    the ranked teams (3+ games: in college, the teams on our slates)."""
+    tot = [x for t in ranked for x in pf.get(t, [])]
+    lg = sum(tot) / len(tot) if tot else 0
+    return ({t: 100 * (sum(v) / len(v) / lg - 1) for t, v in pf.items() if v and lg}, lg)
 
 
 def _load(sport="nba"):
@@ -123,6 +160,8 @@ def for_slate(slate_date, games_today, sport="nba", injuries=None):
     made = defaultdict(lambda: defaultdict(list))         # offense team -> pos -> [per-game dict]
     players = defaultdict(lambda: defaultdict(lambda: [None, 0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0]))  # team -> pid -> [name, g, min, pts, reb, ast, tpm, +/- total, games with +/-]
     last_team = {}
+    pf = defaultdict(list)           # offense team -> [points a game]
+    final = team_points(sport)
     for _d, _eid, e in games:
         teams = list(e["players"])
         if len(teams) != 2:
@@ -155,6 +194,8 @@ def for_slate(slate_date, games_today, sport="nba", injuries=None):
             for P in POS:
                 allowed[opp][P].append(sums[P])
                 made[team][P].append(sums[P])
+            sc = (final.get(str(_eid)) or {}).get(team)
+            pf[team].append(sc if sc is not None else sum(row[5] for row in e["players"][team]))
     # the league average is over the defenses that are ranked (3+ games): for
     # college, that's the teams on our slates, not their opponents
     ranked = [t for t in allowed if len(allowed[t]["PG"]) >= MIN_TEAM_GAMES]
@@ -169,6 +210,7 @@ def for_slate(slate_date, games_today, sport="nba", injuries=None):
             for i, t in enumerate(order):
                 ranks[(t, P, k)] = i + 1
     nteams = len(avg)
+    offq, lg_pts = offense_pct(pf, ranked)
 
     def pick(keys, name):
         hits = [t for t in keys if t == name] or [t for t in keys if _same(t, name)]
@@ -226,15 +268,19 @@ def for_slate(slate_date, games_today, sport="nba", injuries=None):
             adj[P] = max(0.0, adj[P] - per)
         total, out = mix(adj)
         res_ = {"score": round(100 * total, 1), "pos": out}
+        if o in offq:
+            res_["off"] = round(offq[o], 1)
+            res_["ppg"] = round(sum(pf[o]) / len(pf[o]), 1)
+            res_["overall"] = round(res_["score"] + res_["off"], 1)
         if gone:
             res_["base"] = round(100 * base, 1)
             res_["out"] = sorted(gone, key=lambda g: -g[2])
         return res_
 
-    res = {"_league": league}
+    res = {"_league": league, "_ppg": round(lg_pts, 1)}
     for gid, away, home in games_today:
         inj = (injuries or {}).get(gid) or {}
         ia, ih = inj.get("away") or {}, inj.get("home") or {}
         res[gid] = {"away": side(away, ia), "home": side(home, ih),
-                    "score": {"away": score(away, home, ia), "home": score(home, away, ih)}}
+                    "score": {"away": score(away, home, ia), "home": score(home, away, ih)}, "lg": round(lg_pts, 1)}
     return res

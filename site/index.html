@@ -134,6 +134,7 @@ section.hero{border-top:0;}
 .mmp b{font-size:12px;} .mmp small{display:block;color:var(--muted);font-size:10.5px;}
 .mms-net{font-size:13px;margin:6px 0 2px;} .mmchip{display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--ink-2,inherit);}
 .mmchip .mmg{width:20px;height:20px;font-size:12px;border-radius:5px;}
+.mmparts{display:flex;flex-wrap:wrap;gap:4px 12px;margin-top:3px;font-size:12px;color:var(--muted);} .mmparts span{display:inline-flex;align-items:center;gap:4px;} .mmparts .mmg{width:18px;height:18px;font-size:11px;border-radius:4px;} .mmparts b{color:var(--ink);font-weight:600;}
 @media (max-width:600px){.mms-row{grid-template-columns:1fr;} .mmp small{font-size:10px;}}
 .dvpbox{margin:10px 0 4px;border:1px solid var(--rule-2);border-radius:10px;background:var(--surface-2);}
 .dvpbox > summary{list-style:none;cursor:pointer;display:flex;align-items:center;flex-wrap:wrap;gap:4px 8px;padding:10px 12px;font-size:14px;}
@@ -1429,8 +1430,12 @@ footer b{color:var(--ink);}
   // Matchup score (lib/nba_dvp.py / nfl_dvp.py `score`): how soft tonight's
   // defense is to the positions this offense gets its production from, graded A-F.
   var MM_CUT = {nba: [4, 8], nfl: [10, 20], ncaab: [12, 25], cfb: [15, 30]};   // college swings much more (few games, cupcake opponents)
-  function mmGrade(sport, v){
-    var c = MM_CUT[sport] || [4, 8];
+  // Overall grade (2026-11-24, the user's ask to count how good the team is): matchup
+  // score + the offense's points a game vs the league (`off`), so it swings wider.
+  var OV_CUT = {nba: [4, 8], nfl: [15, 30], ncaab: [15, 30], cfb: [20, 40]};
+  var OFF_CUT = {nba: [3, 6], nfl: [10, 20], ncaab: [8, 16], cfb: [12, 25]};
+  function mmGrade(sport, v, CUT){
+    var c = (CUT || MM_CUT)[sport] || [4, 8];
     return v >= c[1] ? ['A','Big edge'] : v >= c[0] ? ['B','Edge'] : v > -c[0] ? ['C','Even'] : v > -c[1] ? ['D','Tough'] : ['F','Very tough'];
   }
   // injury status on the matchup player tables (lib/*_dvp.py from the game's `injuries`)
@@ -1440,31 +1445,38 @@ footer b{color:var(--ink);}
   function mmPct(v){ return (v > 0 ? '+' : v < 0 ? '−' : '')+Math.abs(Math.round(v*10)/10)+'%'; }
   function mmChips(sport, g, x){
     var S = x && x.score; if(!S) return '';
-    return ['away','home'].map(function(sd){ var o = S[sd]; if(!o) return ''; var gr = mmGrade(sport, o.score);
-      return '<span class="mmchip" title="'+esc(teamAbbr(g[sd])+' offense vs '+teamAbbr(g[sd==='away'?'home':'away'])+' defense: '+gr[1]+' ('+mmPct(o.score)+')')+'"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span>'+esc(teamAbbr(g[sd]))+'</span>'; }).join(' ');
+    return ['away','home'].map(function(sd){ var o = S[sd]; if(!o) return ''; var ov = o.overall != null, v = ov ? o.overall : o.score, gr = mmGrade(sport, v, ov ? OV_CUT : MM_CUT);
+      return '<span class="mmchip" title="'+esc(teamAbbr(g[sd])+' offense vs '+teamAbbr(g[sd==='away'?'home':'away'])+' defense: '+(ov ? 'overall ' : '')+gr[1]+' ('+mmPct(v)+')')+'"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span>'+esc(teamAbbr(g[sd]))+'</span>'; }).join(' ');
   }
   function mmBlock(sport, g, x, POS){
     var FB = sport === 'nfl' || sport === 'cfb';
     var S = x && x.score; if(!S || (!S.away && !S.home)) return '';
     var row = function(sd){
       var o = S[sd]; if(!o) return '';
-      var off = g[sd], def = g[sd==='away'?'home':'away'], gr = mmGrade(sport, o.score);
-      var est = sport === 'nba' ? ' · about '+(o.score*0.77 >= 0 ? '+' : '−')+Math.abs(Math.round(o.score*0.77*10)/10)+' pts vs its average' : '';
+      var off = g[sd], def = g[sd==='away'?'home':'away'], ov = o.overall != null;
+      var gr = ov ? mmGrade(sport, o.overall, OV_CUT) : mmGrade(sport, o.score), gm = mmGrade(sport, o.score), go = ov ? mmGrade(sport, o.off, OFF_CUT) : null;
+      var est = sport === 'nba' ? ' (about '+(o.score*0.77 >= 0 ? '+' : '−')+Math.abs(Math.round(o.score*0.77*10)/10)+' pts vs its own average)' : '';
+      var unit = FB || sport === 'nba' || sport === 'ncaab' ? ' pts' : '';
+      var parts = ov ? '<div class="mmparts"><span title="'+esc(teamAbbr(off)+' scores '+o.ppg+unit+' a game; the league average is '+(x.lg||'?'))+'"><span class="mmg g'+go[0]+'">'+go[0]+'</span>Offense <b>'+mmPct(o.off)+'</b> ('+o.ppg+' a game)</span>'
+        + '<span title="'+esc('How soft '+teamAbbr(def)+'\'s defense is to the positions '+teamAbbr(off)+' scores through')+'"><span class="mmg g'+gm[0]+'">'+gm[0]+'</span>Matchup <b>'+mmPct(o.score)+'</b>'+esc(est)+'</span></div>' : '';
       var cells = POS.filter(function(P){ return o.pos[P]; }).map(function(P){
         var v = o.pos[P][0], sh = o.pos[P][1], w = Math.min(50, Math.abs(v) / 30 * 50);
         return '<div title="'+esc(teamAbbr(def)+' gives '+P+'s '+mmPct(v)+' vs an average defense; '+P+'s make '+sh+'% of '+teamAbbr(off)+(FB ? '\'s yards' : '\'s points'))+'"><b>'+P+'</b><div class="pb"><i class="'+(v >= 0 ? 'u' : 'd')+'" style="width:'+w.toFixed(1)+'%"></i></div>'+mmPct(v)+'<small>'+sh+'% of '+(FB ? 'yds' : 'pts')+'</small></div>';
       }).join('');
-      return '<div class="mms-row"><div class="mms-team"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span><div class="mms-t"><b>'+teamBadge(off, true)+' '+esc(teamAbbr(off))+' offense vs '+esc(teamAbbr(def))+' D</b><small>'+gr[1]+' · '+mmPct(o.score)+est+'</small>'
-        + (o.out && o.out.length ? '<span class="mmadj">Adjusted for '+o.out.map(function(x){ var w = x[0].split(' ').filter(function(t){ return !/^(jr\.?|sr\.?|ii|iii|iv)$/i.test(t); }); return esc(w[w.length-1] || x[0])+' ('+x[1]+')'; }).join(', ')+' out \u2014 '+mmPct(o.base)+' with everyone</span>' : '')
+      return '<div class="mms-row"><div class="mms-team"><span class="mmg g'+gr[0]+'">'+gr[0]+'</span><div class="mms-t"><b>'+teamBadge(off, true)+' '+esc(teamAbbr(off))+' offense vs '+esc(teamAbbr(def))+' D</b><small>'+(ov ? 'Overall: '+gr[1]+' · '+mmPct(o.overall) : gr[1]+' · '+mmPct(o.score)+est)+'</small>'+parts
+        + (o.out && o.out.length ? '<span class="mmadj">Adjusted for '+o.out.map(function(x){ var w = x[0].split(' ').filter(function(t){ return !/^(jr\.?|sr\.?|ii|iii|iv)$/i.test(t); }); return esc(w[w.length-1] || x[0])+' ('+x[1]+')'; }).join(', ')+' out \u2014 matchup '+mmPct(o.base)+' with everyone</span>' : '')
         + '</div></div>'
         + '<div class="mmp" style="--n:'+POS.length+'">'+cells+'</div></div>';
     };
-    var net = S.away && S.home ? S.home.score - S.away.score : null;
-    var who = net == null ? '' : Math.abs(net) < 2 ? 'about even' : 'edge '+teamAbbr(net > 0 ? g.home : g.away)+' offense ('+(net > 0 ? mmPct(S.home.score)+' vs '+mmPct(S.away.score) : mmPct(S.away.score)+' vs '+mmPct(S.home.score))+')';
+    var V = function(o){ return o.overall != null ? o.overall : o.score; };
+    var net = S.away && S.home ? V(S.home) - V(S.away) : null;
+    var who = net == null ? '' : Math.abs(net) < 2 ? 'about even' : 'edge '+teamAbbr(net > 0 ? g.home : g.away)+' offense ('+(net > 0 ? mmPct(V(S.home))+' vs '+mmPct(V(S.away)) : mmPct(V(S.away))+' vs '+mmPct(V(S.home)))+')';
     return '<div class="mms"><div class="dvcap">Matchup score</div>'+row('away')+row('home')
       + (who ? '<div class="mms-net"><b>Mismatch:</b> '+esc(who)+'</div>' : '')
-      + '<p class="dvnote">The grade is how soft this defense is to the positions the offense '+(FB ? 'gains its yards through (its passing share split QB 45% / WR 40% / TE 15%, its rushing share to RBs)' : 'scores through (each position weighted by its share of the team\'s points)')+': per position, what the defense allows vs the league ('+(FB ? 'QB pass yds, TDs, fewer INTs; RB rush and rec yds, TDs; WR/TE rec yds, TDs, catches' : 'points 50%, rebounds 20%, assists 20%, 3s 10%')+'). A '+(MM_CUT[sport]||[4,8])[1]+'%+ · B '+(MM_CUT[sport]||[4,8])[0]+'%+ · C even · D −'+(MM_CUT[sport]||[4,8])[0]+'% · F −'+(MM_CUT[sport]||[4,8])[1]+'%.'
-      + (sport==='nba' ? ' Replayed on 2025-26 (979 games): offenses graded A scored 8.2 points over their own average (beat it 71%), B +5.9 (67%), D −4.9 (37%). But the books price it: backing the team with the bigger score went 50.6% against the spread. Both offenses high went over 53%, both low under 57% (not significant). Context, not a pick. Early in the season the scores swing more (few games).' : ' Not backtested yet (one season of box scores); scores swing more early in the season. Context, not a pick.')+'</p></div>';
+      + '<p class="dvnote">The big grade is overall: the offense\'s own quality (its points a game vs the league'+(x.lg ? ', '+x.lg : '')+') plus the matchup, added together. Offense A '+(OFF_CUT[sport]||[3,6])[1]+'%+ · B '+(OFF_CUT[sport]||[3,6])[0]+'%+; overall A '+(OV_CUT[sport]||[4,8])[1]+'%+ · B '+(OV_CUT[sport]||[4,8])[0]+'%+ (same steps down for D and F). '
+      + (sport==='nba' ? 'On 2025-26 (979 games) matchup + offense predicted a team\'s points better than the matchup alone (correlation .33 vs .27, in both halves of the season): overall +8% or more scored 7% over the league average (above it 77% of the time), \u22124 to \u22128 scored 5% under (above it 27%). Against the spread it did nothing (49.9%): the books price how good a team is. ' : 'This season so far, matchup + offense tracked points scored better than the matchup alone ('+({nfl:'correlation .30 vs .18', ncaab:'.50 vs .36', cfb:'.39 vs .25'}[sport]||'')+'). ')
+      + 'The matchup grade is how soft this defense is to the positions the offense '+(FB ? 'gains its yards through (its passing share split QB 45% / WR 40% / TE 15%, its rushing share to RBs)' : 'scores through (each position weighted by its share of the team\'s points)')+': per position, what the defense allows vs the league ('+(FB ? 'QB pass yds, TDs, fewer INTs; RB rush and rec yds, TDs; WR/TE rec yds, TDs, catches' : 'points 50%, rebounds 20%, assists 20%, 3s 10%')+'). A '+(MM_CUT[sport]||[4,8])[1]+'%+ · B '+(MM_CUT[sport]||[4,8])[0]+'%+ · C even · D −'+(MM_CUT[sport]||[4,8])[0]+'% · F −'+(MM_CUT[sport]||[4,8])[1]+'%.'
+      + (sport==='nba' ? ' Replayed on 2025-26 (979 games): matchups graded A scored 8.2 points over their own average (beat it 71%), B +5.9 (67%), D −4.9 (37%). But the books price it: backing the team with the bigger score went 50.6% against the spread. Both offenses high went over 53%, both low under 57% (not significant). Context, not a pick. Early in the season the scores swing more (few games).' : ' Not backtested yet (one season of box scores); scores swing more early in the season. Context, not a pick.')+'</p></div>';
   }
   function dvpBlock(sport, g){
     var D = (sport === 'ncaab' ? DATA.dvpNcaab : DATA.dvp) || {}, x = D[g.id], L = D._league;
