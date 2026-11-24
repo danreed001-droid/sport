@@ -1,7 +1,7 @@
 {
  "date": "2026-11-24",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-24T04:59:15+00:00",
+ "fetchedAt": "2026-11-24T05:12:09+00:00",
  "games": [
   {
    "away": "Detroit Pistons",
@@ -9,7 +9,7 @@
    "start": "2026-11-25T00:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 2,
+    "home": 1.5,
     "open": 1.5,
     "tix_home": 35,
     "money_home": 33
@@ -44,7 +44,7 @@
     "money_over": 84
    },
    "moneyline": {
-    "home": 351,
+    "home": 355,
     "away": -460
    },
    "rlmFavorite": null

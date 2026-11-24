@@ -1,0 +1,500 @@
+{
+  "date": "2026-11-24",
+  "weekday": "Tuesday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-24T05:12:10Z",
+  "games": [
+    {
+      "espnId": "401909314",
+      "away": "Detroit Pistons",
+      "home": "Orlando Magic",
+      "time": "7:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -104.0,
+      "awaySpreadOdds": -116.0,
+      "homeMoneyline": 110.0,
+      "awayMoneyline": -130.0,
+      "statsSpread": 1.5,
+      "statsLine": {
+        "homeSpread": 1.5,
+        "awaySpread": -1.5,
+        "homeSpreadOdds": -104,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": 110,
+        "awayMoneyline": -130
+      },
+      "totalsLine": 213.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "0-2",
+          "key": "shell_shocked",
+          "name": "Shell-shocked",
+          "team": "Detroit Pistons",
+          "says": "back",
+          "fact": "Detroit Pistons led Atlanta Hawks by 11 after three quarters and lost 97-107.",
+          "record": "76-88",
+          "pct": 46.3,
+          "leans": "Orlando Magic",
+          "leanPct": 53.7,
+          "against": true
+        }
+      ],
+      "injuries": {
+        "away": {
+          "5258459": "out",
+          "4433621": "out",
+          "4432166": "day-to-day",
+          "2990962": "out",
+          "3157465": "out"
+        },
+        "home": {
+          "4065654": "out",
+          "5107251": "out",
+          "5214637": "out",
+          "4432573": "out"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-24T05:12:13+00:00",
+        "line": {
+          "open": 1.5,
+          "now": 1.5
+        },
+        "away": [
+          {
+            "player": "Duncan Robinson",
+            "pos": "SF",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 4,
+            "avg": [
+              12,
+              30.6,
+              17.4,
+              1.8,
+              2.1,
+              3.9
+            ],
+            "gainers": [
+              {
+                "player": "Chaz Lanier",
+                "pos": "SG",
+                "with": [
+                  4,
+                  3.5,
+                  3.2,
+                  0.0,
+                  0.0,
+                  0.8
+                ],
+                "without": [
+                  3,
+                  15.7,
+                  4.0,
+                  1.3,
+                  0.3,
+                  1.3
+                ]
+              },
+              {
+                "player": "Kevin Huerter",
+                "pos": "SG",
+                "with": [
+                  12,
+                  24.4,
+                  9.9,
+                  2.5,
+                  2.5,
+                  1.6
+                ],
+                "without": [
+                  4,
+                  34.5,
+                  10.5,
+                  3.5,
+                  3.0,
+                  1.2
+                ]
+              },
+              {
+                "player": "Javonte Green",
+                "pos": "SG",
+                "with": [
+                  12,
+                  16.9,
+                  6.0,
+                  2.2,
+                  0.5,
+                  1.0
+                ],
+                "without": [
+                  4,
+                  24.8,
+                  10.5,
+                  4.2,
+                  0.2,
+                  2.0
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Cade Cunningham",
+            "pos": "PG",
+            "status": "Day-To-Day",
+            "out": false,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              15,
+              34.9,
+              24.2,
+              5.1,
+              8.3,
+              1.9
+            ],
+            "gainers": [
+              {
+                "player": "Javonte Green",
+                "pos": "SG",
+                "with": [
+                  15,
+                  17.8,
+                  6.4,
+                  2.4,
+                  0.5,
+                  1.1
+                ],
+                "without": [
+                  1,
+                  35.0,
+                  18.0,
+                  7.0,
+                  0.0,
+                  3.0
+                ]
+              },
+              {
+                "player": "Elijah Harkless",
+                "pos": "PG",
+                "with": [
+                  3,
+                  3.0,
+                  0.7,
+                  0.3,
+                  0.3,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  14.0,
+                  6.0,
+                  2.0,
+                  4.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Kevin Huerter",
+                "pos": "SG",
+                "with": [
+                  15,
+                  26.3,
+                  10.0,
+                  2.9,
+                  2.3,
+                  1.5
+                ],
+                "without": [
+                  1,
+                  36.0,
+                  11.0,
+                  1.0,
+                  7.0,
+                  1.0
+                ]
+              }
+            ]
+          }
+        ],
+        "home": []
+      },
+      "lineMove": {
+        "spread": [
+          1.5,
+          1.5
+        ],
+        "total": [
+          214.5,
+          213.5
+        ],
+        "ml": {
+          "home": [
+            106.0,
+            110.0
+          ],
+          "away": [
+            -125.0,
+            -130.0
+          ]
+        },
+        "public": {
+          "betsHome": 35,
+          "moneyHome": 33,
+          "rlm": null
+        },
+        "checked": "2026-11-24T05:12:13+00:00"
+      }
+    },
+    {
+      "espnId": "401909315",
+      "away": "Boston Celtics",
+      "home": "Washington Wizards",
+      "time": "8:00 PM ET",
+      "homeSpread": 10.5,
+      "awaySpread": -10.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 351.0,
+      "awayMoneyline": -453.0,
+      "statsSpread": 10.5,
+      "statsLine": {
+        "homeSpread": 10.5,
+        "awaySpread": -10.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 351,
+        "awayMoneyline": -453
+      },
+      "statsFavors": "Washington Wizards",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Washington Wizards: covered its last two games (by 24.5 vs Orlando Magic and by 6.5 at Chicago Bulls), now at home in game 19 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing Washington Wizards: covered its last two games (by 24.5 vs Orlando Magic and by 6.5 at Chicago Bulls), now at home in game 19 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsLine": 217.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "12-18",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Washington Wizards",
+          "says": "back",
+          "fact": "Washington Wizards held Orlando Magic to 96 and Chicago Bulls to 94, 18.5 under the league's 113.5 a game, and is at home.",
+          "record": "803-689",
+          "pct": 53.8,
+          "leans": "Washington Wizards",
+          "leanPct": 53.8,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "10-5",
+          "key": "letdown",
+          "name": "Letdown spot",
+          "team": "Boston Celtics",
+          "says": "fade",
+          "fact": "Boston Celtics is a -10.5 favorite vs Washington Wizards (7-11): it's playing its 3rd game in 4 nights and Washington Wizards is rested.",
+          "record": "365-304",
+          "pct": 54.6,
+          "leans": "Washington Wizards",
+          "leanPct": 54.6,
+          "against": false
+        }
+      ],
+      "injuries": {
+        "away": {
+          "4351852": "out"
+        },
+        "home": {
+          "4997537": "out",
+          "4432187": "out",
+          "4432907": "out",
+          "4606840": "out"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          5.5,
+          10.5
+        ],
+        "total": [
+          230.5,
+          217.5
+        ],
+        "ml": {
+          "home": [
+            164.0,
+            351.0
+          ],
+          "away": [
+            -198.0,
+            -453.0
+          ]
+        },
+        "public": {
+          "betsHome": 62,
+          "moneyHome": 52,
+          "rlm": null
+        },
+        "checked": "2026-11-24T05:12:13+00:00"
+      }
+    },
+    {
+      "espnId": "401909316",
+      "away": "Dallas Mavericks",
+      "home": "Denver Nuggets",
+      "time": "10:00 PM ET",
+      "homeSpread": -8.5,
+      "awaySpread": 8.5,
+      "homeSpreadOdds": -105.0,
+      "awaySpreadOdds": -116.0,
+      "homeMoneyline": -322.0,
+      "awayMoneyline": 260.0,
+      "statsSpread": -8.5,
+      "statsLine": {
+        "homeSpread": -8.5,
+        "awaySpread": 8.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -116,
+        "homeMoneyline": -322,
+        "awayMoneyline": 260
+      },
+      "totalsLine": 231.5,
+      "injuries": {
+        "away": {
+          "5106040": "out",
+          "4278078": "day-to-day",
+          "4683688": "out",
+          "5279129": "out",
+          "5148538": "out"
+        },
+        "home": {}
+      },
+      "starterOut": {
+        "checked": "2026-11-24T05:12:13+00:00",
+        "line": {
+          "open": -8.5,
+          "now": -8.5
+        },
+        "away": [
+          {
+            "player": "P.J. Washington",
+            "pos": "SF",
+            "status": "Day-To-Day",
+            "out": false,
+            "lastGame": false,
+            "missed": 2,
+            "avg": [
+              15,
+              30.9,
+              14.0,
+              6.7,
+              1.3,
+              2.3
+            ],
+            "gainers": [
+              {
+                "player": "Daniel Gafford",
+                "pos": "PF",
+                "with": [
+                  15,
+                  21.3,
+                  8.5,
+                  5.1,
+                  1.9,
+                  0.1
+                ],
+                "without": [
+                  2,
+                  29.5,
+                  10.0,
+                  7.0,
+                  3.5,
+                  0.0
+                ]
+              },
+              {
+                "player": "Zaccharie Risacher",
+                "pos": "SF",
+                "with": [
+                  15,
+                  23.4,
+                  8.4,
+                  4.7,
+                  1.2,
+                  1.1
+                ],
+                "without": [
+                  2,
+                  28.5,
+                  13.0,
+                  7.5,
+                  1.5,
+                  0.5
+                ]
+              },
+              {
+                "player": "Caleb Martin",
+                "pos": "SF",
+                "with": [
+                  11,
+                  21.5,
+                  6.1,
+                  3.3,
+                  2.3,
+                  1.2
+                ],
+                "without": [
+                  2,
+                  24.5,
+                  6.5,
+                  5.0,
+                  3.5,
+                  1.5
+                ]
+              }
+            ]
+          }
+        ],
+        "home": []
+      },
+      "lineMove": {
+        "spread": [
+          -8.5,
+          -8.5
+        ],
+        "total": [
+          236.5,
+          231.5
+        ],
+        "ml": {
+          "home": [
+            -345.0,
+            -322.0
+          ],
+          "away": [
+            275.0,
+            260.0
+          ]
+        },
+        "public": {
+          "betsHome": 47,
+          "moneyHome": 38,
+          "rlm": null
+        },
+        "checked": "2026-11-24T05:12:14+00:00"
+      }
+    }
+  ]
+}
