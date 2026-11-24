@@ -58,7 +58,7 @@ REPO_OWNED_GAME_FIELDS = ("statsFavors", "statsCheck", "statsRules", "statsCorre
                           "ncaabStatsFavors", "ncaabStatsCheck", "ncaabStatsRules", "ncaabStatsCorrect", "ncaabStatsReturn",
                           "ncaabStatsCover", "ncaabStatsSpreadReturn", "statsBackfill",
                           "totalsLine", "totalsFavors", "totalsRules", "totalsCheck", "totalsCorrect", "totalsReturn", "totalsBackfill",
-                          "totalsWatch", "statsWatch", "storylines", "starterOut", "lineMove", "injuries",
+                          "totalsWatch", "statsWatch", "storylines", "starterOut", "lineMove", "injuries", "probables",
                           # Live lines kept until start (nba_stats_signals.py; slate_totals.py).
                           "statsSpread", "statsLine", "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds")
 

@@ -41,7 +41,7 @@ SLATE_FIELDS = [
     "competition", "awayMoneyline", "homeMoneyline", "drawMoneyline", "awaySpread", "homeSpread", "awaySpreadOdds", "homeSpreadOdds",
     "awayScore", "homeScore", "manualFields",
     "totalsLine", "totalsFavors", "totalsCheck", "totalsRules", "statsWatch", "statsLine", "totalsWatch",
-    "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds", "storylines", "starterOut", "lineMove", "injuries",
+    "gameTotal", "gameTotalOverOdds", "gameTotalUnderOdds", "storylines", "starterOut", "lineMove", "injuries", "probables",
 ]
 
 
@@ -854,7 +854,8 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
                                                  for g in (slate.get("sports") or {}).get("cfb", {}).get("games", [])], "cfb"),
         "teamStr": {sp: team_strength.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
                                                              for g in (slate.get("sports") or {}).get(sp, {}).get("games", [])], sp,
-                                                {g["id"]: g.get("injuries") for g in (slate.get("sports") or {}).get(sp, {}).get("games", [])})
+                                                {g["id"]: g.get("injuries") for g in (slate.get("sports") or {}).get(sp, {}).get("games", [])},
+                                                {g["id"]: g.get("probables") for g in (slate.get("sports") or {}).get(sp, {}).get("games", [])})
                     for sp in ("mlb", "soccer")},
     }
 

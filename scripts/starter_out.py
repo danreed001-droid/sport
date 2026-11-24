@@ -42,8 +42,9 @@ from score_slate import _same_team  # noqa: E402
 ET = ZoneInfo("America/New_York")
 RAW = os.path.join(store.REPO_ROOT, "data", "raw")
 AHEAD = {"nba": 1, "nfl": 4, "mlb": 1}   # slate dates looked at: today .. today + N days
-# MLB (2026-11-24): only `injuries` is written (for the Team strength box's
-# offense adjustment, lib/team_strength.py); no starter alerts.
+# MLB (2026-11-24): only `injuries` and `probables` ({side: [athlete id, name]},
+# ESPN's probable starting pitchers from the scoreboard) are written, for the
+# Team strength box (lib/team_strength.py); no starter alerts.
 OUTISH = {"out", "injured reserve", "suspension", "suspended"}
 WATCH = {"questionable", "doubtful", "day-to-day", "game time decision", "gtd"}
 NBA_GROUP = {"PG": ("PG", "SG"), "SG": ("SG", "PG", "SF"), "SF": ("SF", "SG", "PF"),
@@ -254,6 +255,15 @@ def run(sport, session):
                     break
             if not eid:
                 continue
+            if sport == "mlb" and ev["competitions"][0].get("status", {}).get("type", {}).get("state") == "pre":
+                pr = {}
+                for c in ev["competitions"][0]["competitors"]:
+                    a = ((c.get("probables") or [{}])[0] or {}).get("athlete") or {}
+                    if a.get("id"):
+                        pr[c["homeAway"]] = [str(a["id"]), a.get("displayName") or a.get("fullName")]
+                if pr and pr != g.get("probables"):
+                    g["probables"] = pr
+                    dirty = True
             d = summary(session, sport, eid)
             if not d:
                 continue
