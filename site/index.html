@@ -1482,6 +1482,34 @@ footer b{color:var(--ink);}
       + 'The matchup grade is how soft this defense is to the positions the offense '+(FB ? 'gains its yards through (its passing share split QB 45% / WR 40% / TE 15%, its rushing share to RBs)' : 'scores through (each position weighted by its share of the team\'s points)')+': per position, what the defense allows vs the league ('+(FB ? 'QB pass yds, TDs, fewer INTs; RB rush and rec yds, TDs; WR/TE rec yds, TDs, catches' : 'points 50%, rebounds 20%, assists 20%, 3s 10%')+'). A '+(MM_CUT[sport]||[4,8])[1]+'%+ · B '+(MM_CUT[sport]||[4,8])[0]+'%+ · C even · D −'+(MM_CUT[sport]||[4,8])[0]+'% · F −'+(MM_CUT[sport]||[4,8])[1]+'%.'
       + (sport==='nba' ? ' Replayed on 2025-26 (979 games): matchups graded A scored 8.2 points over their own average (beat it 71%), B +5.9 (67%), D −4.9 (37%). But the books price it: backing the team with the bigger score went 50.6% against the spread. Both offenses high went over 53%, both low under 57% (not significant). Context, not a pick. Early in the season the scores swing more (few games).' : ' Not backtested yet (one season of box scores); scores swing more early in the season. Context, not a pick.')+'</p></div>';
   }
+  // Team strength (lib/team_strength.py, DATA.teamStr): MLB and soccer have no
+  // matchup-by-position view, so just the overall grade -- the offense's runs/goals
+  // a game vs the league plus what tonight's opponent allows a game vs the league.
+  var TS_CUT = {mlb: {ov: [10, 21], off: [6, 12]}, soccer: {ov: [30, 65], off: [20, 40]}};
+  function tsBlock(sport, g){
+    var x = ((DATA.teamStr || {})[sport] || {})[g.id], C = TS_CUT[sport];
+    if(!x || !C || (!x.away && !x.home)) return '';
+    var unit = sport === 'mlb' ? 'runs' : 'goals', MLB = sport === 'mlb';
+    var gr = function(v, c){ return v >= c[1] ? ['A','Big edge'] : v >= c[0] ? ['B','Edge'] : v > -c[0] ? ['C','Even'] : v > -c[1] ? ['D','Tough'] : ['F','Very tough']; };
+    var chips = ['away','home'].map(function(sd){ var o = x[sd]; if(!o) return ''; var q = gr(o.overall, C.ov);
+      return '<span class="mmchip" title="'+esc(teamAbbr(g[sd])+' offense vs '+teamAbbr(g[sd==='away'?'home':'away'])+': overall '+q[1]+' ('+mmPct(o.overall)+')')+'"><span class="mmg g'+q[0]+'">'+q[0]+'</span>'+esc(teamAbbr(g[sd]))+'</span>'; }).join(' ');
+    var row = function(sd){
+      var o = x[sd]; if(!o) return '';
+      var off = g[sd], def = g[sd==='away'?'home':'away'], q = gr(o.overall, C.ov), qo = gr(o.off, C.off), qd = gr(o.dfn, C.off);
+      return '<div class="mms-row" style="grid-template-columns:auto 1fr"><div class="mms-team"><span class="mmg g'+q[0]+'">'+q[0]+'</span><div class="mms-t"><b>'+teamBadge(off, true)+' '+esc(teamAbbr(off))+' offense vs '+esc(teamAbbr(def))+'</b><small>Overall: '+q[1]+' · '+mmPct(o.overall)+'</small>'
+        + '<div class="mmparts"><span title="'+esc(teamAbbr(off)+' scores '+o.ppg+' '+unit+' a game ('+o.gp+' games); the league average is '+x.lg)+'"><span class="mmg g'+qo[0]+'">'+qo[0]+'</span>Offense <b>'+mmPct(o.off)+'</b> ('+o.ppg+' a game)</span>'
+        + '<span title="'+esc(teamAbbr(def)+' allows '+o.papg+' '+unit+' a game; the league average is '+x.lg+' (more allowed = better for '+teamAbbr(off)+')')+'"><span class="mmg g'+qd[0]+'">'+qd[0]+'</span>'+esc(teamAbbr(def))+' allows <b>'+mmPct(o.dfn)+'</b> ('+o.papg+')</span></div>'
+        + '</div></div></div>';
+    };
+    var V = function(o){ return o ? o.overall : null; }, na = V(x.away), nh = V(x.home);
+    var who = na == null || nh == null ? '' : Math.abs(nh - na) < 5 ? 'about even' : 'edge '+teamAbbr(nh > na ? g.home : g.away)+' offense ('+mmPct(Math.max(na, nh))+' vs '+mmPct(Math.min(na, nh))+')';
+    return '<details class="dvpbox"><summary><span class="dvi">▦</span><b>Team strength</b>'+chips+'<span class="dvs">'+unit+' scored and allowed · tap to open</span></summary>'
+      + '<div class="mms"><div class="dvcap">Team strength</div>'+row('away')+row('home')
+      + (who ? '<div class="mms-net"><b>Mismatch:</b> '+esc(who)+'</div>' : '')
+      + '<p class="dvnote">Overall is the offense\'s '+unit+' a game vs the league ('+x.lg+') plus the '+unit+' tonight\'s opponent allows a game vs the league, this season. Offense and opponent A '+C.off[1]+'%+ · B '+C.off[0]+'%+; overall A '+C.ov[1]+'%+ · B '+C.ov[0]+'%+ (same steps down for D and F). '
+      + (MLB ? 'On 2026 games it tracked runs scored only loosely (correlation .10): tonight\'s starting pitcher matters more and isn\'t in it. ' : 'On this season\'s matches it tracked goals scored (correlation .24). The league average mixes every saved competition, so clubs in high-scoring leagues look a little stronger. ')
+      + 'No injury adjustment ('+(MLB ? 'no MLB player stats are saved here' : 'ESPN has no soccer injury report')+'). Context, not a pick.</p></div></details>';
+  }
   function dvpBlock(sport, g){
     var D = (sport === 'ncaab' ? DATA.dvpNcaab : DATA.dvp) || {}, x = D[g.id], L = D._league;
     if((sport !== 'nba' && sport !== 'ncaab') || !x || !L) return '';
@@ -2737,7 +2765,7 @@ footer b{color:var(--ink);}
       + lineMoveRow(sport, g)
       + h2hBlock(sport, g)
       + starterAlert(sport, g)
-      + '<div class="models">'+models+'</div>'+pieRow(sport, g)+dvpBlock(sport, g)+dvpNflBlock(sport, g)+atsTrend(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
+      + '<div class="models">'+models+'</div>'+pieRow(sport, g)+dvpBlock(sport, g)+dvpNflBlock(sport, g)+tsBlock(sport, g)+atsTrend(sport, g)+injuryWatch(g)+vetoLine(g)+storyBlock(g, sport)
       + stat + checks + reasons
       + '<div class="pickrow" id="pr-'+esc(g.id)+'"></div>'
       + '</article>';
@@ -2775,7 +2803,7 @@ footer b{color:var(--ink);}
   }
   // ---- slate date picker: past slates (slates/<date>.json) shown view-only ----
   var LATEST = null, VIEW_PAST = false;
-  var SLATE_KEYS = ['slate','myPicks','myTotals','myProps','myScores','atsTrend','ouTrend','atsNext','pdCandles','h2h','rosters','dvp','dvpNfl','dvpNcaab','dvpCfb'];
+  var SLATE_KEYS = ['slate','myPicks','myTotals','myProps','myScores','atsTrend','ouTrend','atsNext','pdCandles','h2h','rosters','dvp','dvpNfl','dvpNcaab','dvpCfb','teamStr'];
   function slateDateLabel(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'long',month:'short',day:'numeric',timeZone:'UTC'}); }
   function slatePicker(){
     var cur = DATA.slate.date, latest = LATEST ? LATEST.slate.date : cur, short = function(d){ return new Date(d+'T12:00:00Z').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric',timeZone:'UTC'}); };

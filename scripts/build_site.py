@@ -27,6 +27,7 @@ from lib.results import build_results, lead_minutes, results_csv  # noqa: E402
 from lib import props as props_lib
 from lib import nba_dvp  # noqa: E402
 from lib import nfl_dvp  # noqa: E402
+from lib import team_strength  # noqa: E402
 from lib.picks import game_id, grade, grade_total, is_final, line_for, mine_view, ml_skip, side_of, stats_view, team_for  # noqa: E402
 
 REPO = os.environ.get("GITHUB_REPOSITORY", "danreed001-droid/sport")
@@ -851,6 +852,9 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
                                                    for g in (slate.get("sports") or {}).get("ncaab", {}).get("games", [])], "ncaab"),
         "dvpCfb": nfl_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
                                                  for g in (slate.get("sports") or {}).get("cfb", {}).get("games", [])], "cfb"),
+        "teamStr": {sp: team_strength.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
+                                                             for g in (slate.get("sports") or {}).get(sp, {}).get("games", [])], sp)
+                    for sp in ("mlb", "soccer")},
     }
 
 
@@ -1078,6 +1082,7 @@ def build():
         "dvpNfl": cur["dvpNfl"],
         "dvpNcaab": cur["dvpNcaab"],
         "dvpCfb": cur["dvpCfb"],
+        "teamStr": cur["teamStr"],
         "slateDates": past_slate_dates(all_docs, slate_date),
         "storyVetoFrom": STORY_VETO_FROM,
         "storyVetoRemoved": STORY_VETO_REMOVED,
