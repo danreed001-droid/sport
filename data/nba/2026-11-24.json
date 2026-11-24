@@ -85,11 +85,11 @@
           ]
         },
         "public": {
-          "betsHome": 41,
-          "moneyHome": 42,
+          "betsHome": 43,
+          "moneyHome": 45,
           "rlm": null
         },
-        "checked": "2026-11-24T19:43:17+00:00"
+        "checked": "2026-11-24T21:14:42+00:00"
       },
       "netRtgGap": 41.38,
       "pick": "Detroit Pistons",
@@ -351,7 +351,7 @@
       "lineMove": {
         "spread": [
           5.5,
-          11.5
+          10.5
         ],
         "total": [
           230.5,
@@ -360,19 +360,19 @@
         "ml": {
           "home": [
             164.0,
-            351.0
+            331.0
           ],
           "away": [
             -198.0,
-            -453.0
+            -424.0
           ]
         },
         "public": {
-          "betsHome": 69,
-          "moneyHome": 74,
+          "betsHome": 68,
+          "moneyHome": 68,
           "rlm": null
         },
-        "checked": "2026-11-24T19:43:17+00:00"
+        "checked": "2026-11-24T21:14:42+00:00"
       },
       "netRtgGap": 65.51,
       "pick": "Boston Celtics",
@@ -389,12 +389,12 @@
       "statsCheck": "Rule 54: Backing Washington Wizards: covered its last two games (by 24.5 vs Orlando Magic and by 6.5 at Chicago Bulls), now at home in game 19 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
       "statsFavors": "Washington Wizards",
       "statsLine": {
-        "homeSpread": 11.5,
-        "awaySpread": -11.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -104,
-        "homeMoneyline": 351,
-        "awayMoneyline": -453
+        "homeSpread": 10.5,
+        "awaySpread": -10.5,
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": 331,
+        "awayMoneyline": -424
       },
       "statsRules": [
         {
@@ -404,7 +404,7 @@
           "detail": "Backing Washington Wizards: covered its last two games (by 24.5 vs Orlando Magic and by 6.5 at Chicago Bulls), now at home in game 19 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
         }
       ],
-      "statsSpread": 11.5,
+      "statsSpread": 10.5,
       "storylines": [
         {
           "weight": 1,
@@ -427,7 +427,7 @@
           "name": "Letdown spot",
           "team": "Boston Celtics",
           "says": "fade",
-          "fact": "Boston Celtics is a -11.5 favorite vs Washington Wizards (7-11): it's playing its 3rd game in 4 nights and Washington Wizards is rested.",
+          "fact": "Boston Celtics is a -10.5 favorite vs Washington Wizards (7-11): it's playing its 3rd game in 4 nights and Washington Wizards is rested.",
           "record": "365-304",
           "pct": 54.6,
           "leans": "Washington Wizards",
@@ -499,19 +499,19 @@
         "ml": {
           "home": [
             -345.0,
-            -310.0
+            -297.0
           ],
           "away": [
             275.0,
-            251.0
+            241.0
           ]
         },
         "public": {
           "betsHome": 40,
-          "moneyHome": 44,
+          "moneyHome": 43,
           "rlm": null
         },
-        "checked": "2026-11-24T19:43:18+00:00"
+        "checked": "2026-11-24T21:14:42+00:00"
       },
       "netRtgGap": 10.34,
       "pick": null,
@@ -616,10 +616,10 @@
       "statsLine": {
         "homeSpread": -8.5,
         "awaySpread": 8.5,
-        "homeSpreadOdds": -108,
-        "awaySpreadOdds": -112,
-        "homeMoneyline": -310,
-        "awayMoneyline": 251
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -118,
+        "homeMoneyline": -297,
+        "awayMoneyline": 241
       },
       "statsSpread": -8.5,
       "time": "10:00 PM ET",
