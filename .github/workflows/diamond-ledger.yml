@@ -145,6 +145,10 @@ jobs:
         continue-on-error: true
         run: python scripts/archive_schedule.py
 
+      - name: Save MLB player box scores (Team strength injury adjustment)
+        continue-on-error: true
+        run: python scripts/archive_mlb_player_box.py
+
       - name: Save soccer closing moneylines (candles' Moneyline view)
         continue-on-error: true
         run: python scripts/archive_soccer_odds.py
@@ -161,7 +165,7 @@ jobs:
         continue-on-error: true
         run: python scripts/archive_nfl_player_box.py
 
-      - name: Starter-out alerts (NBA, NFL injury report vs regular starters)
+      - name: Starter-out alerts (NBA, NFL injury report vs regular starters; MLB injury list)
         continue-on-error: true
         run: python scripts/starter_out.py
 

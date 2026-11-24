@@ -853,7 +853,8 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
         "dvpCfb": nfl_dvp.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
                                                  for g in (slate.get("sports") or {}).get("cfb", {}).get("games", [])], "cfb"),
         "teamStr": {sp: team_strength.for_slate(slate_date, [(g["id"], g.get("away"), g.get("home"))
-                                                             for g in (slate.get("sports") or {}).get(sp, {}).get("games", [])], sp)
+                                                             for g in (slate.get("sports") or {}).get(sp, {}).get("games", [])], sp,
+                                                {g["id"]: g.get("injuries") for g in (slate.get("sports") or {}).get(sp, {}).get("games", [])})
                     for sp in ("mlb", "soccer")},
     }
 

@@ -25,7 +25,7 @@ what was known at tip-off / kickoff. Context only, never a pick.
 
 Box scores: data/raw/nba_player_box.json (archive_nba_player_box.py) and
 data/raw/nfl_player_box.json (archive_nfl_player_box.py).
-Usage: starter_out.py [nba] [nfl]   (default both)
+Usage: starter_out.py [nba] [nfl] [mlb]   (default all)
 """
 import json
 import os
@@ -41,7 +41,9 @@ from score_slate import _same_team  # noqa: E402
 
 ET = ZoneInfo("America/New_York")
 RAW = os.path.join(store.REPO_ROOT, "data", "raw")
-AHEAD = {"nba": 1, "nfl": 4}          # slate dates looked at: today .. today + N days
+AHEAD = {"nba": 1, "nfl": 4, "mlb": 1}   # slate dates looked at: today .. today + N days
+# MLB (2026-11-24): only `injuries` is written (for the Team strength box's
+# offense adjustment, lib/team_strength.py); no starter alerts.
 OUTISH = {"out", "injured reserve", "suspension", "suspended"}
 WATCH = {"questionable", "doubtful", "day-to-day", "game time decision", "gtd"}
 NBA_GROUP = {"PG": ("PG", "SG"), "SG": ("SG", "PG", "SF"), "SF": ("SF", "SG", "PF"),
