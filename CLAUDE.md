@@ -497,6 +497,19 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   B +5.9, 67%; D -4.9, 37%), but the gap between the two offenses' scores did
   nothing ATS (50.6%); both high over 53% (104-92), both low under 57% (111-85,
   p=0.07). NFL not backtested. Context, not a pick.
+  Overall grade (2026-11-24, the user's ask to count how good the team is): the
+  big grade (card rows, the closed bar's chips, the Mismatch line) is now the
+  offense's points a game vs the league (`off`, `ppg`) plus what tonight's
+  defense allows a game vs the league (`dfn`, `papg`), 1:1; the position score
+  stays as the "Matchup" sub-grade with its bars (`overall` in `score`, points
+  from `data/raw/schedule/<sport>.json` via `team_points` in lib/nba_dvp.py;
+  `lg` per game = league points a game). Cuts `OV_CUT` (about a tenth at A and
+  at F this season) and `OFF_CUT` for the offense/defense parts. Predicting a
+  team's points (correlation; matchup alone / offense + matchup / offense +
+  points allowed): NBA 2025-26 .27/.33/.39, this season NBA .05/.14/.32, NCAAB
+  .36/.50/.54, CFB .25/.39/.41, NFL .18/.29/.28; the matchup on top of offense
+  + points allowed adds about nothing. ATS nothing (49.9%). Injuries only move
+  the Matchup part.
   College (2026-11-19, the user's ask): NCAAB and CFB cards have the same
   matchup view and score (`dvpNcaab`/`dvpCfb`; `for_slate(..., sport)` in
   `lib/nba_dvp.py` / `lib/nfl_dvp.py`). `scripts/archive_college_player_box.py`

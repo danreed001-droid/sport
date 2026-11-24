@@ -10,6 +10,7 @@ rush att, rush yds, rush td, rec, rec yds, rec td, targets].
 import json
 import os
 from collections import defaultdict
+from .nba_dvp import team_points, offense_pct  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 BOX = os.path.join(ROOT, "data", "raw", "nfl_player_box.json")
@@ -79,6 +80,9 @@ def for_slate(slate_date, games_today, sport="nfl", injuries=None):
     players = defaultdict(dict)   # team -> pid -> [name, pos, g, usage, {stat: total}]
     yds = defaultdict(lambda: [0.0, 0.0, 0])   # offense team -> [pass yds, rush yds, games]
     last_team = {}
+    pf = defaultdict(list)                     # offense team -> [points a game] (overall grade, see lib/nba_dvp.py)
+    pa = defaultdict(list)                     # defense team -> [points allowed a game]
+    final = team_points(sport)
     for _d, _eid, e in games:
         teams = list(e["players"])
         if len(teams) != 2:
@@ -104,6 +108,10 @@ def for_slate(slate_date, games_today, sport="nfl", injuries=None):
             y[0] += sums["QB"]["pyd"]
             y[1] += sum(r[9] for r in e["players"][team])
             y[2] += 1
+            sc = (final.get(str(_eid)) or {}).get(team)
+            if sc is not None:
+                pf[team].append(sc)
+                pa[opp].append(sc)
     ranked = [t for t in allowed if len(allowed[t]["QB"]) >= MIN_TEAM_GAMES]
     league = {P: {k: round(sum(g[k] for t in ranked for g in allowed[t][P]) / max(1, sum(len(allowed[t][P]) for t in ranked)), 1)
                   for k, _l, _f in stats[P]} for P in POS}
@@ -114,6 +122,8 @@ def for_slate(slate_date, games_today, sport="nfl", injuries=None):
         for k, _l, _f in stats[P]:
             for i, t in enumerate(sorted((t for t in avg if P in avg[t]), key=lambda t: -avg[t][P][k])):
                 ranks[(t, P, k)] = i + 1
+    offq, lg_pts = offense_pct(pf, ranked)
+    defq, _ = offense_pct(pa, ranked)
     cap = {"QB": 1, "RB": 2, "WR": 3, "TE": 1}
 
     def pick(keys, name):
@@ -178,15 +188,22 @@ def for_slate(slate_date, games_today, sport="nfl", injuries=None):
             total += share * comp
             out[P] = [round(100 * comp, 1), round(100 * share)]
         r_ = {"score": round(100 * total, 1), "pos": out}
+        if o in offq:
+            r_["off"] = round(offq[o], 1)
+            r_["ppg"] = round(sum(pf[o]) / len(pf[o]), 1)
+            if d in defq:
+                r_["dfn"] = round(defq[d], 1)
+                r_["papg"] = round(sum(pa[d]) / len(pa[d]), 1)
+                r_["overall"] = round(r_["off"] + r_["dfn"], 1)
         if gone:
             r_["base"] = round(100 * total_at(base_ps), 1)
             r_["out"] = gone
         return r_
 
-    res = {"_league": league, "_spec": {P: [[k, lab] for k, lab, _f in stats[P]] for P in POS}}
+    res = {"_league": league, "_ppg": round(lg_pts, 1), "_spec": {P: [[k, lab] for k, lab, _f in stats[P]] for P in POS}}
     for gid, away, home in games_today:
         inj = (injuries or {}).get(gid) or {}
         ia, ih = inj.get("away") or {}, inj.get("home") or {}
         res[gid] = {"away": side(away, ia), "home": side(home, ih),
-                    "score": {"away": score(away, home, ia), "home": score(home, away, ih)}}
+                    "score": {"away": score(away, home, ia), "home": score(home, away, ih)}, "lg": round(lg_pts, 1)}
     return res
