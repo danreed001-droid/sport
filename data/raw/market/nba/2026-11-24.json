@@ -1,7 +1,7 @@
 {
  "date": "2026-11-24",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-24T01:36:57+00:00",
+ "fetchedAt": "2026-11-24T04:59:15+00:00",
  "games": [
   {
    "away": "Detroit Pistons",
@@ -9,20 +9,20 @@
    "start": "2026-11-25T00:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 1.5,
+    "home": 2,
     "open": 1.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 35,
+    "money_home": 33
    },
    "total": {
-    "now": 214.5,
+    "now": 213.5,
     "open": 214.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 83,
+    "money_over": 80
    },
    "moneyline": {
-    "home": 107,
-    "away": -125
+    "home": 110,
+    "away": -130
    },
    "rlmFavorite": null
   },
@@ -34,18 +34,18 @@
    "spread": {
     "home": 10.5,
     "open": 5.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 62,
+    "money_home": 52
    },
    "total": {
-    "now": 217,
+    "now": 217.5,
     "open": 230.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 82,
+    "money_over": 84
    },
    "moneyline": {
-    "home": 350,
-    "away": -450
+    "home": 351,
+    "away": -460
    },
    "rlmFavorite": null
   },
@@ -57,18 +57,18 @@
    "spread": {
     "home": -8.5,
     "open": -8.5,
-    "tix_home": null,
-    "money_home": null
+    "tix_home": 47,
+    "money_home": 38
    },
    "total": {
     "now": 231.5,
     "open": 237.5,
-    "tix_over": null,
-    "money_over": null
+    "tix_over": 73,
+    "money_over": 74
    },
    "moneyline": {
-    "home": -330,
-    "away": 265
+    "home": -325,
+    "away": 260
    },
    "rlmFavorite": null
   }
