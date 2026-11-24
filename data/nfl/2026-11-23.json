@@ -45,8 +45,8 @@
       "confidence": "lean",
       "correct": null,
       "gameTotal": 54.5,
-      "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -106,
+      "gameTotalOverOdds": -106,
+      "gameTotalUnderOdds": -113,
       "home": "Washington Commanders",
       "homeMoneyline": 239,
       "homePDpg": -4.3,
@@ -58,18 +58,18 @@
       "homeYPP": 5.2,
       "injuries": {
         "away": {
+          "4401811": "out",
           "3125356": "injured reserve",
-          "4401811": "questionable",
           "3125082": "out",
-          "4426422": "questionable",
-          "4368003": "injured reserve"
+          "5081542": "out",
+          "4700712": "out"
         },
         "home": {
-          "2576736": "questionable",
-          "4239694": "questionable",
-          "4575131": "injured reserve",
-          "4697815": "questionable",
-          "3051890": "injured reserve"
+          "4239694": "out",
+          "4432722": "out",
+          "4605488": "out",
+          "5151317": "out",
+          "4428343": "out"
         }
       },
       "lineMove": {
@@ -84,14 +84,14 @@
         "ml": {
           "home": [
             105.0,
-            245.0
+            238.0
           ],
           "away": [
             -125.0,
-            -300.0
+            -292.0
           ]
         },
-        "checked": "2026-11-23T20:34:52+00:00"
+        "checked": "2026-11-24T00:56:24+00:00"
       },
       "offGap": 48.4,
       "pick": "Cincinnati Bengals",
@@ -99,81 +99,6 @@
       "pickReturn": null,
       "pickSpreadReturn": null,
       "skipped": false,
-      "starterOut": {
-        "away": [],
-        "checked": "2026-11-23T08:15:32+00:00",
-        "home": [
-          {
-            "avg": [
-              5,
-              13.4,
-              47.8,
-              1.0,
-              8.0
-            ],
-            "gainers": [
-              {
-                "player": "Jeremy McNichols",
-                "pos": "RB",
-                "with": null,
-                "without": [
-                  2,
-                  5.0,
-                  17.0,
-                  0.5,
-                  3.5
-                ]
-              },
-              {
-                "player": "Austin Ekeler",
-                "pos": "RB",
-                "with": [
-                  2,
-                  3.5,
-                  14.0,
-                  1.0,
-                  13.0
-                ],
-                "without": [
-                  4,
-                  6.5,
-                  20.2,
-                  2.0,
-                  12.0
-                ]
-              },
-              {
-                "player": "Rachaad White",
-                "pos": "RB",
-                "with": [
-                  4,
-                  7.2,
-                  29.5,
-                  2.5,
-                  13.2
-                ],
-                "without": [
-                  4,
-                  9.0,
-                  39.2,
-                  2.2,
-                  20.2
-                ]
-              }
-            ],
-            "lastGame": false,
-            "missed": 4,
-            "out": true,
-            "player": "Jacory Croskey-Merritt",
-            "pos": "RB",
-            "status": "Injured Reserve"
-          }
-        ],
-        "line": {
-          "now": 6.0,
-          "open": 1.5
-        }
-      },
       "statLines": [
         "PD/g +2.4 vs -4.3 (blended 0.5x2026 + 0.5x2025)",
         "Yds/play 6.2 vs 5.2 \u00b7 YPP rank 3 vs 18 (48.4-pt off-gap)",
