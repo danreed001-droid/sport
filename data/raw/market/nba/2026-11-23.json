@@ -1,7 +1,7 @@
 {
  "date": "2026-11-23",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-24T00:54:50+00:00",
+ "fetchedAt": "2026-11-24T01:36:57+00:00",
  "games": [
   {
    "away": "Portland Trail Blazers",
@@ -170,16 +170,16 @@
    "start": "2026-11-24T01:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -13,
+    "home": -13.5,
     "open": -12.5,
-    "tix_home": 49,
-    "money_home": 53
+    "tix_home": 51,
+    "money_home": 54
    },
    "total": {
-    "now": 223.5,
+    "now": 223,
     "open": 226.5,
-    "tix_over": 66,
-    "money_over": 65
+    "tix_over": 67,
+    "money_over": 66
    },
    "moneyline": {
     "home": -700,
@@ -193,7 +193,7 @@
    "start": "2026-11-24T03:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": 12.5,
+    "home": 9.5,
     "open": 12.5,
     "tix_home": 25,
     "money_home": 39
@@ -201,12 +201,12 @@
    "total": {
     "now": 224.5,
     "open": 225.5,
-    "tix_over": 59,
-    "money_over": 60
+    "tix_over": 66,
+    "money_over": 68
    },
    "moneyline": {
-    "home": 425,
-    "away": -600
+    "home": 261,
+    "away": -380
    },
    "rlmFavorite": null
   },
@@ -218,13 +218,13 @@
    "spread": {
     "home": -13.5,
     "open": -13.5,
-    "tix_home": 14,
-    "money_home": 16
+    "tix_home": 15,
+    "money_home": 18
    },
    "total": {
     "now": 225.5,
     "open": 231.5,
-    "tix_over": 76,
+    "tix_over": 75,
     "money_over": 78
    },
    "moneyline": {

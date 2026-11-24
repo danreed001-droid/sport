@@ -1,7 +1,7 @@
 {
  "date": "2026-11-24",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-24T00:54:51+00:00",
+ "fetchedAt": "2026-11-24T01:36:57+00:00",
  "games": [
   {
    "away": "Detroit Pistons",
@@ -38,7 +38,7 @@
     "money_home": null
    },
    "total": {
-    "now": 216.5,
+    "now": 217,
     "open": 230.5,
     "tix_over": null,
     "money_over": null
