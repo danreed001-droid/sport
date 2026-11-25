@@ -2,7 +2,7 @@
   "date": "2026-11-24",
   "weekday": "Tuesday",
   "sport": "nba",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-24T16:15:00Z",
   "auditChanges": [
     "NBA Detroit Pistons @ Orlando Magic: Injuries/Lineup rebuilt from the official 11/24 report (Duncan Robinson and Taurean Prince out for Detroit; Isaac/Penda/Nelson have played 0 games for Orlando); altCategoryTally 3-0 \u2192 1-2. Second Opinion still a pass, Ledger pick Detroit (solid) unchanged.",
@@ -35,11 +35,11 @@
       "awayMoneyline": -128,
       "awayNetRtg": 4.9,
       "awayPDpg": 4.8,
-      "awayScore": null,
+      "awayScore": 104.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": 101,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 212.5,
       "gameTotalOverOdds": -113,
       "gameTotalUnderOdds": -107,
@@ -47,7 +47,7 @@
       "homeMoneyline": 128,
       "homeNetRtg": -4.2,
       "homePDpg": -4.1,
-      "homeScore": null,
+      "homeScore": 86.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -101,
       "injuries": {
@@ -93,9 +93,9 @@
       },
       "netRtgGap": 41.38,
       "pick": "Detroit Pistons",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 78.12,
+      "pickSpreadReturn": 101.0,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -291,7 +291,8 @@
           "record": "76-88",
           "says": "back",
           "team": "Detroit Pistons",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "7:00 PM ET",
@@ -321,11 +322,11 @@
       "awayMoneyline": -398,
       "awayNetRtg": 9.5,
       "awayPDpg": 9.1,
-      "awayScore": null,
+      "awayScore": 131.0,
       "awaySpread": -10.5,
       "awaySpreadOdds": -105,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 218.5,
       "gameTotalOverOdds": -112,
       "gameTotalUnderOdds": -108,
@@ -333,7 +334,7 @@
       "homeMoneyline": 398,
       "homeNetRtg": -4.91,
       "homePDpg": -5.1,
-      "homeScore": null,
+      "homeScore": 116.0,
       "homeSpread": 10.5,
       "homeSpreadOdds": 105,
       "injuries": {
@@ -376,9 +377,9 @@
       },
       "netRtgGap": 65.51,
       "pick": "Boston Celtics",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 25.13,
+      "pickSpreadReturn": 95.24,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -418,7 +419,8 @@
           "pct": 53.8,
           "leans": "Washington Wizards",
           "leanPct": 53.8,
-          "against": false
+          "against": false,
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -432,17 +434,22 @@
           "pct": 54.6,
           "leans": "Washington Wizards",
           "leanPct": 54.6,
-          "against": false
+          "against": false,
+          "result": "miss"
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 218.5
+      "totalsLine": 218.5,
+      "statsCorrect": null,
+      "statsReturn": null,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "0-6",
       "altConfidence": "strong",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": false,
+      "altCover": false,
       "altPick": "Denver Nuggets",
       "altReasons": [
         "Scoring margin: Denver +1.8 PD/g vs Dallas -0.1 PD/g \u2014 favors Denver.",
@@ -455,14 +462,14 @@
         "Market: spread hasn't moved from the -8.5 open despite 38% of bets/45% of money on Denver \u2014 no line movement, rlmFavorite null \u2014 neutral.",
         "Matchup splits: no specific verifiable unit-vs-unit mismatch found \u2014 neutral."
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": -100.0,
+      "altSpreadReturn": -100.0,
       "auditNote": "Injury list corrected (de Larrea and Lawal are out, not day-to-day; Walter Clayton Jr. is available and was wrongly listed; Julian Strawther is not on Denver's roster and Denver has nobody on the report); rest detail corrected; spread -8 \u2192 -8.5 per DraftKings and the game's own market note; NetRtg values were MOV. Denver still leads 0-6, altPick unchanged.",
       "away": "Dallas Mavericks",
       "awayMoneyline": 275,
       "awayNetRtg": 0.01,
       "awayPDpg": -0.1,
-      "awayScore": null,
+      "awayScore": 120.0,
       "awaySpread": 8.5,
       "awaySpreadOdds": 100,
       "confidence": "skip",
@@ -474,7 +481,7 @@
       "homeMoneyline": -275,
       "homeNetRtg": 1.58,
       "homePDpg": 1.8,
-      "homeScore": null,
+      "homeScore": 101.0,
       "homeSpread": -8.5,
       "homeSpreadOdds": 100,
       "injuries": {
@@ -625,5 +632,6 @@
       "time": "10:00 PM ET",
       "totalsLine": 234.5
     }
-  ]
+  ],
+  "scoredAt": "2026-11-25T14:37:28.075615+00:00"
 }

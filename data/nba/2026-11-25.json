@@ -21,10 +21,10 @@
       "statsLine": {
         "homeSpread": -1.5,
         "awaySpread": 1.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
-        "homeMoneyline": -116,
-        "awayMoneyline": -102
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -125,
+        "awayMoneyline": 105
       },
       "totalsLine": 237.5,
       "totalsFavors": "Under",
@@ -225,20 +225,23 @@
         "ml": {
           "home": [
             -162.0,
-            -116.0
+            -125.0
           ],
           "away": [
             136.0,
-            -102.0
+            105.0
           ]
         },
         "public": {
-          "betsHome": 54,
-          "moneyHome": 49,
+          "betsHome": 59,
+          "moneyHome": 57,
           "rlm": null
         },
-        "checked": "2026-11-25T07:46:05+00:00"
-      }
+        "checked": "2026-11-25T14:37:58+00:00"
+      },
+      "gameTotal": 237.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909318",
@@ -257,7 +260,7 @@
         "awaySpread": 3.5,
         "homeSpreadOdds": -105,
         "awaySpreadOdds": -115,
-        "homeMoneyline": -155,
+        "homeMoneyline": -154,
         "awayMoneyline": 130
       },
       "statsFavors": "Chicago Bulls",
@@ -270,7 +273,7 @@
         }
       ],
       "statsCheck": "Rule 61: Fading Charlotte Hornets: 4-12 on the season and only 8 players played 10+ minutes in its last game (vs Memphis Grizzlies) -- 61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22.",
-      "totalsLine": 222.5,
+      "totalsLine": 221.5,
       "storylines": [
         {
           "weight": 1,
@@ -702,12 +705,12 @@
         ],
         "total": [
           222.5,
-          222.5
+          221.5
         ],
         "ml": {
           "home": [
             -163.0,
-            -155.0
+            -154.0
           ],
           "away": [
             137.0,
@@ -716,11 +719,14 @@
         },
         "public": {
           "betsHome": 33,
-          "moneyHome": 33,
+          "moneyHome": 32,
           "rlm": null
         },
-        "checked": "2026-11-25T07:46:05+00:00"
-      }
+        "checked": "2026-11-25T14:37:58+00:00"
+      },
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909319",
@@ -737,8 +743,8 @@
       "statsLine": {
         "homeSpread": -3.5,
         "awaySpread": 3.5,
-        "homeSpreadOdds": -105,
-        "awaySpreadOdds": -115,
+        "homeSpreadOdds": -101,
+        "awaySpreadOdds": -120,
         "homeMoneyline": -155,
         "awayMoneyline": 130
       },
@@ -752,7 +758,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing New York Knicks: covered its last two games (by 0.5 vs Indiana Pacers and by 2.5 vs Portland Trail Blazers), now at home in game 18 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
-      "totalsLine": 219.5,
+      "totalsLine": 218.5,
       "totalsWatch": [
         {
           "player": "Karl-Anthony Towns",
@@ -1135,7 +1141,7 @@
         ],
         "total": [
           220.5,
-          219.5
+          218.5
         ],
         "ml": {
           "home": [
@@ -1148,12 +1154,15 @@
           ]
         },
         "public": {
-          "betsHome": 72,
-          "moneyHome": 72,
+          "betsHome": 70,
+          "moneyHome": 69,
           "rlm": null
         },
-        "checked": "2026-11-25T07:46:05+00:00"
-      }
+        "checked": "2026-11-25T14:37:58+00:00"
+      },
+      "gameTotal": 218.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
     },
     {
       "espnId": "401909320",
@@ -1175,7 +1184,7 @@
         "homeMoneyline": -119,
         "awayMoneyline": 101
       },
-      "totalsLine": 223.5,
+      "totalsLine": 222.5,
       "storylines": [
         {
           "weight": 1,
@@ -1431,7 +1440,7 @@
         ],
         "total": [
           232.5,
-          223.5
+          222.5
         ],
         "ml": {
           "home": [
@@ -1445,11 +1454,14 @@
         },
         "public": {
           "betsHome": 43,
-          "moneyHome": 22,
+          "moneyHome": 39,
           "rlm": null
         },
-        "checked": "2026-11-25T07:46:05+00:00"
-      }
+        "checked": "2026-11-25T14:37:58+00:00"
+      },
+      "gameTotal": 222.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909321",
@@ -1462,16 +1474,16 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -249.0,
       "awayMoneyline": 205.0,
-      "statsSpread": -6.5,
+      "statsSpread": -7.5,
       "statsLine": {
-        "homeSpread": -6.5,
-        "awaySpread": 6.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -249,
-        "awayMoneyline": 205
+        "homeSpread": -7.5,
+        "awaySpread": 7.5,
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -269,
+        "awayMoneyline": 220
       },
-      "totalsLine": 229.5,
+      "totalsLine": 227.5,
       "injuries": {
         "away": {
           "6580": "out",
@@ -1486,10 +1498,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-25T07:46:05+00:00",
+        "checked": "2026-11-25T14:37:57+00:00",
         "line": {
           "open": -6.5,
-          "now": -6.5
+          "now": -7.5
         },
         "away": [],
         "home": [
@@ -1576,29 +1588,32 @@
       "lineMove": {
         "spread": [
           -6.5,
-          -6.5
+          -7.5
         ],
         "total": [
           229.5,
-          229.5
+          227.5
         ],
         "ml": {
           "home": [
             -276.0,
-            -249.0
+            -269.0
           ],
           "away": [
             226.0,
-            205.0
+            220.0
           ]
         },
         "public": {
-          "betsHome": 68,
-          "moneyHome": 67,
+          "betsHome": 69,
+          "moneyHome": 68,
           "rlm": null
         },
-        "checked": "2026-11-25T07:46:05+00:00"
-      }
+        "checked": "2026-11-25T14:37:58+00:00"
+      },
+      "gameTotal": 227.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401909322",
@@ -1615,10 +1630,10 @@
       "statsLine": {
         "homeSpread": -1.5,
         "awaySpread": 1.5,
-        "homeSpreadOdds": -102,
-        "awaySpreadOdds": -118,
-        "homeMoneyline": -111,
-        "awayMoneyline": -106
+        "homeSpreadOdds": -111,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -117,
+        "awayMoneyline": -101
       },
       "totalsLine": 232.5,
       "injuries": {
@@ -1727,20 +1742,23 @@
         "ml": {
           "home": [
             -119.0,
-            -111.0
+            -117.0
           ],
           "away": [
             101.0,
-            -106.0
+            -101.0
           ]
         },
         "public": {
-          "betsHome": 81,
-          "moneyHome": 87,
+          "betsHome": 80,
+          "moneyHome": 85,
           "rlm": null
         },
-        "checked": "2026-11-25T07:46:05+00:00"
-      }
+        "checked": "2026-11-25T14:37:58+00:00"
+      },
+      "gameTotal": 232.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909323",
@@ -1757,10 +1775,10 @@
       "statsLine": {
         "homeSpread": -8.5,
         "awaySpread": 8.5,
-        "homeSpreadOdds": -117,
+        "homeSpreadOdds": -118,
         "awaySpreadOdds": -103,
-        "homeMoneyline": -406,
-        "awayMoneyline": 319
+        "homeMoneyline": -424,
+        "awayMoneyline": 331
       },
       "statsFavors": "Houston Rockets",
       "statsRules": [
@@ -1791,20 +1809,23 @@
         "ml": {
           "home": [
             -369.0,
-            -406.0
+            -424.0
           ],
           "away": [
             294.0,
-            319.0
+            331.0
           ]
         },
         "public": {
-          "betsHome": 37,
-          "moneyHome": 32,
+          "betsHome": 39,
+          "moneyHome": 38,
           "rlm": null
         },
-        "checked": "2026-11-25T07:46:05+00:00"
-      }
+        "checked": "2026-11-25T14:37:58+00:00"
+      },
+      "gameTotal": 223.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909324",
@@ -1817,16 +1838,16 @@
       "awaySpreadOdds": -105.0,
       "homeMoneyline": -241.0,
       "awayMoneyline": 199.0,
-      "statsSpread": -5.5,
+      "statsSpread": -6.5,
       "statsLine": {
-        "homeSpread": -5.5,
-        "awaySpread": 5.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -241,
-        "awayMoneyline": 199
+        "homeSpread": -6.5,
+        "awaySpread": 6.5,
+        "homeSpreadOdds": -112,
+        "awaySpreadOdds": -108,
+        "homeMoneyline": -264,
+        "awayMoneyline": 217
       },
-      "totalsLine": 218.5,
+      "totalsLine": 217.5,
       "storylines": [
         {
           "weight": 1,
@@ -1857,10 +1878,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-25T07:46:05+00:00",
+        "checked": "2026-11-25T14:37:57+00:00",
         "line": {
           "open": -5.5,
-          "now": -5.5
+          "now": -6.5
         },
         "away": [],
         "home": [
@@ -2004,29 +2025,32 @@
       "lineMove": {
         "spread": [
           -5.5,
-          -5.5
+          -6.5
         ],
         "total": [
           218.5,
-          218.5
+          217.5
         ],
         "ml": {
           "home": [
             -241.0,
-            -241.0
+            -264.0
           ],
           "away": [
             199.0,
-            199.0
+            217.0
           ]
         },
         "public": {
-          "betsHome": 59,
-          "moneyHome": 47,
+          "betsHome": 52,
+          "moneyHome": 54,
           "rlm": null
         },
-        "checked": "2026-11-25T07:46:05+00:00"
-      }
+        "checked": "2026-11-25T14:37:58+00:00"
+      },
+      "gameTotal": 217.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401909325",
@@ -2043,12 +2067,12 @@
       "statsLine": {
         "homeSpread": 2.5,
         "awaySpread": -2.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -115,
-        "homeMoneyline": 124,
-        "awayMoneyline": -148
+        "homeSpreadOdds": -103,
+        "awaySpreadOdds": -117,
+        "homeMoneyline": 130,
+        "awayMoneyline": -155
       },
-      "totalsLine": 226.5,
+      "totalsLine": 225.5,
       "storylines": [
         {
           "weight": 1,
@@ -2424,25 +2448,28 @@
         ],
         "total": [
           237.5,
-          226.5
+          225.5
         ],
         "ml": {
           "home": [
             142.0,
-            124.0
+            130.0
           ],
           "away": [
             -170.0,
-            -148.0
+            -155.0
           ]
         },
         "public": {
           "betsHome": 35,
-          "moneyHome": 62,
+          "moneyHome": 46,
           "rlm": null
         },
-        "checked": "2026-11-25T07:46:06+00:00"
-      }
+        "checked": "2026-11-25T14:37:58+00:00"
+      },
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     }
   ]
 }

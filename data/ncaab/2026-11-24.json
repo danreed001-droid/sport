@@ -2,7 +2,7 @@
   "date": "2026-11-24",
   "weekday": "Tuesday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-24T16:15:00Z",
   "auditChanges": [
     "NCAAB Ole Miss Rebels @ BYU Cougars: corrected to a neutral-site Maui Invitational semifinal (Lahaina) \u2014 travel and venue edges removed, records 4-0/5-0 \u2192 5-0/6-0, BYU PG Robert Wright III injury added, AdjOE/AdjDE refreshed, off-gap 15.38 \u2192 14.28, tally 1-1 \u2192 2-0. Still skip (off-gap) and pass.",
@@ -46,7 +46,7 @@
       "awayMoneyline": 102,
       "awayPDpg": 16.69,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 73.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -55,7 +55,7 @@
       "homeMoneyline": -122,
       "homePDpg": 15.14,
       "homeRank": 19,
-      "homeScore": null,
+      "homeScore": 63.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -108,
       "lineMove": {
@@ -107,7 +107,8 @@
           "leans": "BYU Cougars",
           "leanPct": 53.3,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -122,7 +123,8 @@
           "leans": "Ole Miss Rebels",
           "leanPct": 54.9,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -150,7 +152,7 @@
       "awayMoneyline": -218,
       "awayPDpg": 14.73,
       "awayRank": 9,
-      "awayScore": null,
+      "awayScore": 72.0,
       "awaySpread": -4.5,
       "awaySpreadOdds": -105,
       "confidence": "skip",
@@ -159,7 +161,7 @@
       "homeMoneyline": 180,
       "homePDpg": 5.56,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 64.0,
       "homeSpread": 4.5,
       "homeSpreadOdds": -115,
       "lineMove": {
@@ -214,7 +216,8 @@
           "leans": "Tennessee Volunteers",
           "leanPct": 53.3,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -242,7 +245,7 @@
       "awayMoneyline": -270,
       "awayPDpg": 21.38,
       "awayRank": 17,
-      "awayScore": null,
+      "awayScore": 71.0,
       "awaySpread": -6.5,
       "awaySpreadOdds": -105,
       "confidence": "skip",
@@ -251,7 +254,7 @@
       "homeMoneyline": 220,
       "homePDpg": 13.24,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 84.0,
       "homeSpread": 6.5,
       "homeSpreadOdds": -115,
       "lineMove": {
@@ -306,7 +309,8 @@
           "leans": "TCU Horned Frogs",
           "leanPct": 54.5,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -321,7 +325,8 @@
           "leans": "Miami Hurricanes",
           "leanPct": 54.9,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -349,7 +354,7 @@
       "awayMoneyline": 270,
       "awayPDpg": 7.32,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 66.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -358,7 +363,7 @@
       "homeMoneyline": -340,
       "homePDpg": 14.38,
       "homeRank": 8,
-      "homeScore": null,
+      "homeScore": 84.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -424,16 +429,16 @@
       "awayMoneyline": null,
       "awayPDpg": -4.61,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 67.0,
       "awaySpread": 35.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "home": "Florida Gators",
       "homeMoneyline": null,
       "homePDpg": 14.23,
       "homeRank": 3,
-      "homeScore": null,
+      "homeScore": 76.0,
       "homeSpread": -35.5,
       "homeSpreadOdds": -108,
       "lineMove": {
@@ -450,9 +455,9 @@
       },
       "offGap": 74.4,
       "pick": "Florida Gators",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -478,7 +483,8 @@
           "leans": "Florida Gators",
           "leanPct": 54.0,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -493,7 +499,8 @@
           "leans": "Milwaukee Panthers",
           "leanPct": 53.2,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -521,7 +528,7 @@
       "awayMoneyline": -130,
       "awayPDpg": 19.88,
       "awayRank": 14,
-      "awayScore": null,
+      "awayScore": 72.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": 100,
       "confidence": "skip",
@@ -530,7 +537,7 @@
       "homeMoneyline": 110,
       "homePDpg": 9.46,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 66.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -120,
       "lineMove": {
@@ -584,7 +591,8 @@
           "leans": "Ohio State Buckeyes",
           "leanPct": 54.0,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -599,7 +607,8 @@
           "leans": "Ohio State Buckeyes",
           "leanPct": 55.1,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -614,7 +623,8 @@
           "leans": "Ohio State Buckeyes",
           "leanPct": 54.6,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -642,7 +652,7 @@
       "awayMoneyline": 5000,
       "awayPDpg": -3.07,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 64.0,
       "awaySpread": 28.5,
       "awaySpreadOdds": -115,
       "confidence": "solid",
@@ -651,7 +661,7 @@
       "homeMoneyline": -100000,
       "homePDpg": 11.59,
       "homeRank": 23,
-      "homeScore": null,
+      "homeScore": 82.0,
       "homeSpread": -28.5,
       "homeSpreadOdds": -105,
       "lineMove": {
@@ -677,9 +687,9 @@
       },
       "offGap": 70.1,
       "pick": "Indiana Hoosiers",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -705,7 +715,8 @@
           "leans": "Jacksonville Dolphins",
           "leanPct": 53.2,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -733,7 +744,7 @@
       "awayMoneyline": -180,
       "awayPDpg": 18.99,
       "awayRank": 5,
-      "awayScore": null,
+      "awayScore": 64.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -742,7 +753,7 @@
       "homeMoneyline": 150,
       "homePDpg": 13.12,
       "homeRank": 25,
-      "homeScore": null,
+      "homeScore": 72.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -797,7 +808,8 @@
           "leans": "Texas Tech Red Raiders",
           "leanPct": 52.8,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -825,7 +837,7 @@
       "awayMoneyline": 105,
       "awayPDpg": 17.93,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 68.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": -105,
       "confidence": "skip",
@@ -834,7 +846,7 @@
       "homeMoneyline": -125,
       "homePDpg": 14.43,
       "homeRank": 15,
-      "homeScore": null,
+      "homeScore": 63.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -115,
       "lineMove": {
@@ -900,7 +912,7 @@
       "awayMoneyline": 340,
       "awayPDpg": 6.96,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 79.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -909,7 +921,7 @@
       "homeMoneyline": -440,
       "homePDpg": 20.54,
       "homeRank": 13,
-      "homeScore": null,
+      "homeScore": 90.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -108,
       "lineMove": {
@@ -964,9 +976,11 @@
           "leans": "St. John's Red Storm",
           "leanPct": 51.9,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     }
-  ]
+  ],
+  "scoredAt": "2026-11-25T14:37:29.883680+00:00"
 }
