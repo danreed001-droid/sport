@@ -1,25 +1,25 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401878607,2026-11-24,Scheduled,Dallas Trinity FC,0,-,Tampa Bay Sun FC,0,-,-,-,6:00 PM
+401878607,2026-11-24,FT,Dallas Trinity FC,1,-,Tampa Bay Sun FC,0,-,-,-,6:00 PM
 401915380,2026-11-24,FT,LASK Linz,0,-,Bodo/Glimt,1,-,-,-,12:45 PM
 401915300,2026-11-24,FT,Aston Villa,0,-,Galatasaray,1,-,-,-,12:45 PM
-401915295,2026-11-24,58',Borussia Dortmund,1,-,Arsenal,1,-,-,-,3:00 PM
-401915296,2026-11-24,53',AEK Athens,0,-,Como,0,-,-,-,3:00 PM
-401915294,2026-11-24,54',FC Porto,1,-,Feyenoord Rotterdam,0,-,-,-,3:00 PM
-401915379,2026-11-24,57',Napoli,1,-,Manchester City,0,-,-,-,3:00 PM
-401915299,2026-11-24,58',Lens,0,-,RB Leipzig,2,-,-,-,3:00 PM
-401915298,2026-11-24,55',PSV Eindhoven,1,-,Real Madrid,1,-,-,-,3:00 PM
-401915297,2026-11-24,58',Real Betis,2,-,Slovan Bratislava,0,-,-,-,3:00 PM
-401933738,2026-11-24,Scheduled,Houston Dynamo FC,0,-,San Jose Earthquakes,0,-,-,-,10:00 PM
-401880148,2026-11-24,71',Wrexham,1,-,Bristol City,1,-,-,-,2:45 PM
-401880147,2026-11-24,71',Preston North End,4,-,Cardiff City,0,-,-,-,2:45 PM
-401880146,2026-11-24,73',Lincoln City,0,-,Charlton Athletic,3,-,-,-,2:45 PM
-401880145,2026-11-24,71',Swansea City,1,-,Middlesbrough,2,-,-,-,2:45 PM
-401880144,2026-11-24,71',Queens Park Rangers,1,-,Norwich City,1,-,-,-,2:45 PM
-401880143,2026-11-24,72',West Ham United,0,-,Portsmouth,1,-,-,-,2:45 PM
-401880142,2026-11-24,72',Southampton,1,-,Sheffield United,0,-,-,-,2:45 PM
-401880141,2026-11-24,57',Derby County,0,-,Wolverhampton Wanderers,1,-,-,-,3:00 PM
-401878348,2026-11-24,73',Dundee,1,-,Hibernian,2,-,-,-,2:45 PM
-401878345,2026-11-24,54',Aberdeen,1,-,Rangers,2,-,-,-,3:00 PM
+401915295,2026-11-24,FT,Borussia Dortmund,1,-,Arsenal,1,-,-,-,3:00 PM
+401915296,2026-11-24,FT,AEK Athens,0,-,Como,1,-,-,-,3:00 PM
+401915294,2026-11-24,FT,FC Porto,1,-,Feyenoord Rotterdam,0,-,-,-,3:00 PM
+401915379,2026-11-24,FT,Napoli,2,-,Manchester City,2,-,-,-,3:00 PM
+401915299,2026-11-24,FT,Lens,1,-,RB Leipzig,3,-,-,-,3:00 PM
+401915298,2026-11-24,FT,PSV Eindhoven,1,-,Real Madrid,5,-,-,-,3:00 PM
+401915297,2026-11-24,FT,Real Betis,2,-,Slovan Bratislava,0,-,-,-,3:00 PM
+401933738,2026-11-24,15',Houston Dynamo FC,0,-,San Jose Earthquakes,1,-,-,-,10:00 PM
+401880148,2026-11-24,FT,Wrexham,1,-,Bristol City,1,-,-,-,2:45 PM
+401880147,2026-11-24,FT,Preston North End,4,-,Cardiff City,0,-,-,-,2:45 PM
+401880146,2026-11-24,FT,Lincoln City,0,-,Charlton Athletic,4,-,-,-,2:45 PM
+401880145,2026-11-24,FT,Swansea City,1,-,Middlesbrough,2,-,-,-,2:45 PM
+401880144,2026-11-24,FT,Queens Park Rangers,1,-,Norwich City,1,-,-,-,2:45 PM
+401880143,2026-11-24,FT,West Ham United,0,-,Portsmouth,1,-,-,-,2:45 PM
+401880142,2026-11-24,FT,Southampton,1,-,Sheffield United,1,-,-,-,2:45 PM
+401880141,2026-11-24,FT,Derby County,0,-,Wolverhampton Wanderers,3,-,-,-,3:00 PM
+401878348,2026-11-24,FT,Dundee,1,-,Hibernian,2,-,-,-,2:45 PM
+401878345,2026-11-24,FT,Aberdeen,2,-,Rangers,3,-,-,-,3:00 PM
 401912609,2026-11-24,FT,Kashiwa Reysol,2,-,Newcastle Jets,1,-,-,-,2:45 AM
 401912588,2026-11-24,FT,Beijing Guoan,2,-,Daejeon Hana Citizen FC,3,-,-,-,5:00 AM
 401912587,2026-11-24,FT,Pohang Steelers,0,-,Kyoto Sanga,1,-,-,-,5:00 AM
@@ -48,33 +48,33 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401906248,2026-11-24,FT,Tottenham Hotspur U21,1,-,Oxford United,2,-,-,-,2:00 PM
 401906341,2026-11-24,FT,Sunderland U21,2,-,Salford City,3,-,-,-,2:00 PM
 401906249,2026-11-24,FT,Everton U21,1,-,Tranmere Rovers,2,-,-,-,2:00 PM
-401880824,2026-11-24,73',Leicester City,1,-,Blackpool,0,-,-,-,2:45 PM
-401880838,2026-11-24,72',Barnsley,0,-,Bradford City,2,-,-,-,2:45 PM
-401880823,2026-11-24,72',Wycombe Wanderers,1,-,Bromley,1,-,-,-,2:45 PM
-401880829,2026-11-24,72',Sheffield Wednesday,0,-,Stevenage,0,-,-,-,2:45 PM
-401881358,2026-11-24,72',Barnet,0,-,Crawley Town,0,-,-,-,2:45 PM
-401881354,2026-11-24,73',Northampton Town,1,-,Port Vale,1,-,-,-,2:45 PM
-401889190,2026-11-24,71',FC Halifax Town,1,-,AFC Fylde,0,-,-,-,2:45 PM
-401889416,2026-11-24,71',Sutton United,0,-,AFC Hornchurch,0,-,-,-,2:45 PM
-401889189,2026-11-24,72',Wealdstone,0,-,Altrincham,2,-,-,-,2:45 PM
-401889188,2026-11-24,73',Barrow,0,-,Boston United,0,-,-,-,2:45 PM
-401889187,2026-11-24,70',Tamworth,0,-,Carlisle United,1,-,-,-,2:45 PM
-401889186,2026-11-24,67',Yeovil Town,1,-,Eastleigh,0,-,-,-,2:45 PM
-401889185,2026-11-24,71',Southend United,1,-,Forest Green Rovers,0,-,-,-,2:45 PM
-401889184,2026-11-24,71',Gateshead,1,-,Scunthorpe United,1,-,-,-,2:45 PM
-401889183,2026-11-24,70',Worthing,2,-,Woking,4,-,-,-,2:45 PM
-401933239,2026-11-24,73',Airdrieonians,2,-,Arbroath,0,-,-,-,2:45 PM
-401933259,2026-11-24,74',Inverness Caledonian Thistle,1,-,Ayr United,2,-,-,-,2:45 PM
-401933258,2026-11-24,70',Queen's Park,2,-,Clydebank,2,-,-,-,2:45 PM
-401933261,2026-11-24,71',Kelty Hearts,0,-,Dunfermline Athletic,2,-,-,-,2:45 PM
-401933262,2026-11-24,73',Partick Thistle,3,-,East Kilbride,2,-,-,-,2:45 PM
-401933263,2026-11-24,74',Cove Rangers,1,-,Hamilton Academical,0,-,-,-,2:45 PM
-401933240,2026-11-24,73',Peterhead,0,-,Livingston,3,-,-,-,2:45 PM
-401933260,2026-11-24,73',Stenhousemuir,1,-,Ross County,1,-,-,-,2:45 PM
-401841335,2026-11-24,12',Palmeiras,0,-,Chapecoense,1,-,-,-,4:00 PM
-401929679,2026-11-24,Scheduled,Unión La Calera,0,-,Coquimbo Unido,0,-,-,-,5:00 PM
-401934688,2026-11-24,Scheduled,Atlético Bucaramanga,0,-,Millonarios,0,-,-,-,6:20 PM
-401934706,2026-11-24,Scheduled,Deportivo Cali,0,-,América de Cali,0,-,-,-,8:30 PM
+401880824,2026-11-24,FT,Leicester City,1,-,Blackpool,1,-,-,-,2:45 PM
+401880838,2026-11-24,FT,Barnsley,0,-,Bradford City,3,-,-,-,2:45 PM
+401880823,2026-11-24,FT,Wycombe Wanderers,1,-,Bromley,1,-,-,-,2:45 PM
+401880829,2026-11-24,FT,Sheffield Wednesday,0,-,Stevenage,0,-,-,-,2:45 PM
+401881358,2026-11-24,FT,Barnet,0,-,Crawley Town,0,-,-,-,2:45 PM
+401881354,2026-11-24,FT,Northampton Town,1,-,Port Vale,1,-,-,-,2:45 PM
+401889190,2026-11-24,FT,FC Halifax Town,2,-,AFC Fylde,0,-,-,-,2:45 PM
+401889416,2026-11-24,FT,Sutton United,0,-,AFC Hornchurch,0,-,-,-,2:45 PM
+401889189,2026-11-24,FT,Wealdstone,0,-,Altrincham,3,-,-,-,2:45 PM
+401889188,2026-11-24,FT,Barrow,1,-,Boston United,0,-,-,-,2:45 PM
+401889187,2026-11-24,FT,Tamworth,2,-,Carlisle United,1,-,-,-,2:45 PM
+401889186,2026-11-24,FT,Yeovil Town,3,-,Eastleigh,1,-,-,-,2:45 PM
+401889185,2026-11-24,FT,Southend United,2,-,Forest Green Rovers,0,-,-,-,2:45 PM
+401889184,2026-11-24,FT,Gateshead,2,-,Scunthorpe United,1,-,-,-,2:45 PM
+401889183,2026-11-24,FT,Worthing,3,-,Woking,4,-,-,-,2:45 PM
+401933239,2026-11-24,FT,Airdrieonians,3,-,Arbroath,1,-,-,-,2:45 PM
+401933259,2026-11-24,FT,Inverness Caledonian Thistle,1,-,Ayr United,2,-,-,-,2:45 PM
+401933258,2026-11-24,FT-Pens,Queen's Park,3,-,Clydebank,3,-,-,-,2:45 PM
+401933261,2026-11-24,FT,Kelty Hearts,0,-,Dunfermline Athletic,3,-,-,-,2:45 PM
+401933262,2026-11-24,FT-Pens,Partick Thistle,3,-,East Kilbride,3,-,-,-,2:45 PM
+401933263,2026-11-24,FT-Pens,Cove Rangers,1,-,Hamilton Academical,1,-,-,-,2:45 PM
+401933240,2026-11-24,FT,Peterhead,0,-,Livingston,3,-,-,-,2:45 PM
+401933260,2026-11-24,FT-Pens,Stenhousemuir,1,-,Ross County,1,-,-,-,2:45 PM
+401841335,2026-11-24,FT,Palmeiras,0,-,Chapecoense,3,-,-,-,4:00 PM
+401929679,2026-11-24,FT,Unión La Calera,1,-,Coquimbo Unido,1,-,-,-,5:00 PM
+401934688,2026-11-24,FT,Atlético Bucaramanga,1,-,Millonarios,4,-,-,-,6:20 PM
+401934706,2026-11-24,FT,Deportivo Cali,1,-,América de Cali,2,-,-,-,8:30 PM
 401925407,2026-11-24,FT,Sporting Club Delhi,1,-,NorthEast United FC,1,-,-,-,9:00 AM
 401930688,2026-11-24,FT,Bengaluru United FC,2,-,Samaleswari SC,2,-,-,-,5:30 AM
 401930687,2026-11-24,FT,Chanmari FC,1,-,Sreenidi Deccan FC,2,-,-,-,8:00 AM
