@@ -4,19 +4,1010 @@
   "sport": "ncaab",
   "scored": false,
   "generatedAt": "2026-11-26T16:25:30Z",
-  "auditChanges": ["ncaab Arkansas Razorbacks @ Michigan State Spartans: Second Opinion lean Michigan State -> PASS (altPick null). Isaiah Sealy's knee injury was June 2026, not in-season, and he is no longer enrolled at Arkansas, so Injuries/Lineup is neutral and the lead falls to 3. PD/g and offense percentiles rebuilt on the 50/50 blend (offGap 2.2 -> 0.82); Ledger off-gap skip unchanged.", "ncaab Alabama Crimson Tide @ Kansas State Wildcats: Second Opinion lean Alabama -> PASS (altPick null), and the Ledger's skipReason off-gap -> def-veto. Kansas State's 101-61 loss to Gonzaga on Nov. 25 never happened (it last played Nov. 20, losing to Campbell), so Rest flips to Kansas State and the Form/Market reasons collapse; blended off-gap is 63.5, clearing SCREEN 1, after which Alabama's defense (94.78 vs 85.41) triggers the def-veto. Still no Ledger pick.", "ncaab Baylor Bears @ Gonzaga Bulldogs: corrected Scoring margin (blended PD/g flips to Gonzaga), Rest (Gonzaga last played Nov. 17, 9 days off, so it favors Gonzaga not Baylor), Form (favors Baylor) and Market (the 8-point swing rested on a Gonzaga-Kansas State rout that never happened); tally 2-3 -> 1-3, still a pass.", "ncaab all 11 games: PD/g and offense percentiles rebuilt from the archived Sports Reference blended inputs (the model's under-10-games 50/50 rule) instead of raw 2026-27 season figures; every off-gap recomputed. Only Alabama @ Kansas State changes screen outcome."],
+  "auditChanges": [
+    "ncaab Arkansas Razorbacks @ Michigan State Spartans: Second Opinion lean Michigan State -> PASS (altPick null). Isaiah Sealy's knee injury was June 2026, not in-season, and he is no longer enrolled at Arkansas, so Injuries/Lineup is neutral and the lead falls to 3. PD/g and offense percentiles rebuilt on the 50/50 blend (offGap 2.2 -> 0.82); Ledger off-gap skip unchanged.",
+    "ncaab Alabama Crimson Tide @ Kansas State Wildcats: Second Opinion lean Alabama -> PASS (altPick null), and the Ledger's skipReason off-gap -> def-veto. Kansas State's 101-61 loss to Gonzaga on Nov. 25 never happened (it last played Nov. 20, losing to Campbell), so Rest flips to Kansas State and the Form/Market reasons collapse; blended off-gap is 63.5, clearing SCREEN 1, after which Alabama's defense (94.78 vs 85.41) triggers the def-veto. Still no Ledger pick.",
+    "ncaab Baylor Bears @ Gonzaga Bulldogs: corrected Scoring margin (blended PD/g flips to Gonzaga), Rest (Gonzaga last played Nov. 17, 9 days off, so it favors Gonzaga not Baylor), Form (favors Baylor) and Market (the 8-point swing rested on a Gonzaga-Kansas State rout that never happened); tally 2-3 -> 1-3, still a pass.",
+    "ncaab all 11 games: PD/g and offense percentiles rebuilt from the archived Sports Reference blended inputs (the model's under-10-games 50/50 rule) instead of raw 2026-27 season figures; every off-gap recomputed. Only Alabama @ Kansas State changes screen outcome."
+  ],
   "auditedAt": "2026-11-26T16:59:04Z",
   "games": [
-    {"altCategoryTally":"0-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Texas (blended PD/g +19.3 vs Georgetown +8.8)","Rest: neutral — tournament opener for both, no prior-day game","Travel: neutral — both flew in for a San Diego neutral site","Injuries/Lineup: neutral — no notable current injury confirmed for either side","Form: neutral — no specific recent trend beyond season numbers already in Scoring margin","Motivation/Spot: neutral — tournament opener, no rivalry/revenge angle found","Venue/Crowd: neutral — true neutral site, no home crowd for Texas","Market: neutral — spread unchanged from open (-8.5/-8.5)","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.","away":"Georgetown Hoyas","awayMoneyline":320,"awayPDpg":8.77,"awayRank":null,"awayScore":null,"awaySpread":8.5,"awaySpreadOdds":-110,"confidence":"skip","correct":null,"home":"Texas Longhorns","homeMoneyline":-410,"homePDpg":19.29,"homeRank":7,"homeScore":null,"homeSpread":-8.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-26T08:24:46+00:00","ml":{"away":[295.0,320.0],"home":[-375.0,-410.0]},"spread":[-8.5,-8.5],"total":[155.5,154.5]},"offGap":13.19,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +8.8 vs +19.3 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 84.3 vs 97.5 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 13.2, under the 30 screen","Neutral site: Rady Children's Invitational, San Diego (tournament day 1) — no home-court edge for either side"],"time":"2:30 PM ET"},
-    {"altCategoryTally":"0-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Iowa State (blended PD/g +17.5 vs Tennessee +13.7)","Rest: neutral — both played Nov. 24, same 2-day rest cycle","Travel: neutral — both at the same Las Vegas neutral site","Injuries/Lineup: neutral — no current injury confirmed for either side","Form: favors Iowa State — won its opener by 13 (81-68) vs Tennessee's by 8 (72-64)","Motivation/Spot: neutral — both chasing pool seeding, no extra edge found","Venue/Crowd: neutral — true neutral site","Market: favors Iowa State — home spread moved 4 points toward Iowa State since open (+1.5 to -2.5); no public-bet split available to confirm as true reverse line movement","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.","away":"Tennessee Volunteers","awayMoneyline":136,"awayPDpg":13.72,"awayRank":9,"awayScore":null,"awaySpread":2.5,"awaySpreadOdds":-105,"confidence":"skip","correct":null,"home":"Iowa State Cyclones","homeMoneyline":-162,"homePDpg":17.48,"homeRank":null,"homeScore":null,"homeSpread":-2.5,"homeSpreadOdds":-115,"lineMove":{"checked":"2026-11-26T08:24:46+00:00","ml":{"away":[-112.0,136.0],"home":[-108.0,-162.0]},"spread":[1.5,-2.5],"total":[139.5,139.5]},"offGap":7.14,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +13.7 vs +17.5 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 75.8 vs 83.0 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 7.1, under the 30 screen","Neutral site: Players Era Championship, Las Vegas — both won their Nov. 24 openers (Tennessee beat Maryland 72-64, Iowa State beat San Diego State 81-68)"],"time":"3:30 PM ET"},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Miami (blended PD/g +18.1 vs Michigan +11.8)","Rest: neutral — both played Nov. 24, same rest cycle","Travel: neutral — both at the same Las Vegas neutral site","Injuries/Lineup: neutral — no current injury confirmed for either side","Form: favors Miami — lost its opener by 13 vs Michigan's 26-point blowout loss","Motivation/Spot: neutral — both in the consolation bracket after an opening loss, letdown risk cuts both ways","Venue/Crowd: neutral — true neutral site","Market: neutral — home spread unchanged from open (+2.5/+2.5)","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.","away":"Miami Hurricanes","awayMoneyline":-142,"awayPDpg":18.13,"awayRank":17,"awayScore":null,"awaySpread":-2.5,"awaySpreadOdds":-105,"confidence":"skip","correct":null,"home":"Michigan Wolverines","homeMoneyline":120,"homePDpg":11.75,"homeRank":null,"homeScore":null,"homeSpread":2.5,"homeSpreadOdds":-115,"lineMove":{"checked":"2026-11-26T08:24:46+00:00","ml":{"away":[-162.0,-142.0],"home":[136.0,120.0]},"spread":[2.5,2.5],"total":[163.5,159.5]},"offGap":11.81,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +18.1 vs +11.8 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 84.1 vs 95.9 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 11.8, under the 30 screen","Neutral site: Players Era Championship consolation bracket, Las Vegas — Miami lost to TCU 84-71, Michigan lost to Creighton 99-73 on Nov. 24"],"time":"3:30 PM ET"},
-    {"altCategoryTally":"0-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Michigan State (blended PD/g +14.6 vs Arkansas +13.0)","Rest: neutral — standalone Thanksgiving game for both, no back-to-back found for either","Travel: favors Michigan State — Detroit is ~90 miles from East Lansing vs. a cross-country trip for Arkansas from Fayetteville","Injuries/Lineup: neutral — Arkansas wing Isaiah Sealy hurt his knee in a June 2026 pickup game and is no longer enrolled at Arkansas; he has never played this season, so he is a roster departure already baked into Arkansas' season numbers, not a lineup change for tonight. No current injury confirmed for either side.","Form: neutral — no specific recent trend beyond season numbers already in Scoring margin","Motivation/Spot: neutral — marquee Thanksgiving showcase for both, no rivalry/revenge angle found","Venue/Crowd: favors Michigan State — Detroit crowd skews toward the in-state Spartans even off-campus","Market: neutral — home spread unchanged from open (-5.5/-5.5)","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Second Opinion drops from lean Michigan State to a pass: Isaiah Sealy's injury was a June 2026 offseason knee injury and he is no longer enrolled at Arkansas, so it is not a lineup change for tonight and Injuries/Lineup goes neutral, leaving a 3-category lead; stat fields also rebuilt on the model's 50/50 early-season blend.","away":"Arkansas Razorbacks","awayMoneyline":180,"awayPDpg":12.99,"awayRank":null,"awayScore":null,"awaySpread":5.5,"awaySpreadOdds":-115,"confidence":"skip","correct":null,"home":"Michigan State Spartans","homeMoneyline":-218,"homePDpg":14.64,"homeRank":11,"homeScore":null,"homeSpread":-5.5,"homeSpreadOdds":-105,"lineMove":{"checked":"2026-11-26T08:24:46+00:00","ml":{"away":[180.0,180.0],"home":[-218.0,-218.0]},"spread":[-5.5,-5.5],"total":[151.5,149.5]},"offGap":0.82,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +13.0 vs +14.6 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 94.0 vs 93.1 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 0.8, under the 30 screen","CBS Sports Thanksgiving Classic at Little Caesars Arena, Detroit — ~90 miles from Michigan State's campus, not a true road game for Arkansas","Arkansas wing Isaiah Sealy injured his knee in June 2026 and is no longer enrolled at Arkansas; he has not played this season"],"time":"4:30 PM ET"},
-    {"altCategoryTally":"3-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Utah State (blended PD/g +22.7 vs USC +16.8)","Rest: favors Utah State — its 34-point rout let bench players close the game while USC's starters played heavy minutes in a 2-point win","Travel: neutral — both at the same Palm Desert neutral site both days","Injuries/Lineup: neutral — no current injury confirmed for either side","Form: favors Utah State — blew out SMU by 34 last night vs USC's narrow 2-point escape","Motivation/Spot: neutral — both in the same event pool, no specific extra edge found","Venue/Crowd: neutral — true neutral site","Market: neutral — home spread unchanged from open (-3.5/-3.5)","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.","away":"Utah State Aggies","awayMoneyline":130,"awayPDpg":22.72,"awayRank":null,"awayScore":null,"awaySpread":3.5,"awaySpreadOdds":-112,"confidence":"skip","correct":null,"home":"USC Trojans","homeMoneyline":-155,"homePDpg":16.83,"homeRank":18,"homeScore":null,"homeSpread":-3.5,"homeSpreadOdds":-108,"lineMove":{"checked":"2026-11-26T08:24:46+00:00","ml":{"away":[130.0,130.0],"home":[-155.0,-155.0]},"spread":[-3.5,-3.5],"total":[162.5,164.5]},"offGap":7.42,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +22.7 vs +16.8 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 97.0 vs 89.6 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 7.4, under the 30 screen","Neutral site: Acrisure Series, Palm Desert, CA — both teams are on a true back-to-back (Utah State beat SMU 93-59, USC beat South Carolina 71-69, both Nov. 25)"],"time":"4:30 PM ET"},
-    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors UCLA (blended PD/g +20.4 vs Saint Mary's +14.8)","Rest: neutral — tournament opener for both, no prior-day game","Travel: neutral — both California programs, similar distance to San Diego","Injuries/Lineup: neutral — no current injury confirmed for either side","Form: neutral — no specific recent trend beyond season numbers already in Scoring margin","Motivation/Spot: neutral — tournament opener, no rivalry/revenge angle found","Venue/Crowd: favors UCLA — bigger, closer-traveling fan base at a Southern California neutral site","Market: neutral — home spread unchanged from open (-7.5/-7.5)","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.","away":"Saint Mary's Gaels","awayMoneyline":270,"awayPDpg":14.77,"awayRank":null,"awayScore":null,"awaySpread":7.5,"awaySpreadOdds":-108,"confidence":"skip","correct":null,"home":"UCLA Bruins","homeMoneyline":-340,"homePDpg":20.43,"homeRank":6,"homeScore":null,"homeSpread":-7.5,"homeSpreadOdds":-112,"lineMove":{"checked":"2026-11-26T08:24:47+00:00","ml":{"away":[245.0,270.0],"home":[-305.0,-340.0]},"spread":[-7.5,-7.5],"total":[155.5,152.5]},"offGap":0.55,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +14.8 vs +20.4 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 97.3 vs 96.7 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 0.5, under the 30 screen","Neutral site: Rady Children's Invitational, San Diego (tournament day 1) — no home-court edge for either side"],"time":"5:00 PM ET"},
-    {"altCategoryTally":"2-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors LSU by a hair (blended PD/g +15.47 vs SMU +15.40 — effectively a tie)","Rest: favors SMU — LSU's double-overtime win Nov. 25 means roughly 50 minutes of fatigue, while SMU's blowout loss let its bench play extended minutes","Travel: neutral — both at the same Palm Desert neutral site both days","Injuries/Lineup: neutral — no current injury confirmed for either side","Form: favors LSU — gritty 2OT win over Arizona State vs SMU's 34-point blowout loss","Motivation/Spot: neutral — SMU's bounce-back urgency after an embarrassing loss could cut either way (motivated vs still reeling)","Venue/Crowd: neutral — true neutral site","Market: favors SMU — home (LSU) spread moved 2 points toward SMU since open (-7.5 to -5.5); no public-bet split available to confirm as true reverse line movement","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.","away":"SMU Mustangs","awayMoneyline":185,"awayPDpg":15.4,"awayRank":null,"awayScore":null,"awaySpread":5.5,"awaySpreadOdds":-118,"confidence":"skip","correct":null,"home":"LSU Tigers","homeMoneyline":-225,"homePDpg":15.47,"homeRank":20,"homeScore":null,"homeSpread":-5.5,"homeSpreadOdds":-102,"lineMove":{"checked":"2026-11-26T08:24:47+00:00","ml":{"away":[245.0,185.0],"home":[-305.0,-225.0]},"spread":[-7.5,-5.5],"total":[159.5,160.5]},"offGap":3.57,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +15.4 vs +15.5 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 92.3 vs 88.7 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 3.6, under the 30 screen","Neutral site: Acrisure Series, Palm Desert, CA — both on a true back-to-back (SMU lost to Utah State 93-59, LSU beat Arizona State 94-92 in 2OT, both Nov. 25)"],"time":"7:00 PM ET"},
-    {"altCategoryTally":"0-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors St. John's (blended PD/g +19.0 vs Louisville +12.5)","Rest: neutral — both played Nov. 24, same 2-day rest cycle","Travel: neutral — both at the same Las Vegas neutral site","Injuries/Lineup: neutral — no current injury confirmed for either side","Form: favors St. John's — won its opener by 11 vs Louisville's by 8","Motivation/Spot: neutral — both chasing pool seeding, no extra edge found","Venue/Crowd: neutral — true neutral site, far from both campuses","Market: favors St. John's strongly — home spread swung 6 points its way since open (St. John's opened +4.5 underdog, now -1.5 favorite)","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.","away":"Louisville Cardinals","awayMoneyline":130,"awayPDpg":12.47,"awayRank":25,"awayScore":null,"awaySpread":1.5,"awaySpreadOdds":100,"confidence":"skip","correct":null,"home":"St. John's Red Storm","homeMoneyline":-155,"homePDpg":18.97,"homeRank":13,"homeScore":null,"homeSpread":-1.5,"homeSpreadOdds":-120,"lineMove":{"checked":"2026-11-26T08:24:47+00:00","ml":{"away":[170.0,130.0],"home":[-205.0,-155.0]},"spread":[4.5,-1.5],"total":[157.5,161.5]},"offGap":2.75,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +12.5 vs +19.0 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 94.2 vs 91.5 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 2.7, under the 30 screen","Neutral site: Players Era Championship winners' bracket, Las Vegas — Louisville beat Texas Tech 72-64, St. John's beat Oregon 90-79, both Nov. 24"],"time":"9:00 PM ET"},
-    {"altCategoryTally":"2-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Alabama (blended PD/g +12.3 vs Kansas State +4.2)","Rest: favors Kansas State — Kansas State last played Nov. 20 (6 days off) while Alabama played Nov. 24 (2 days off); the stored claim that Kansas State played Nov. 25 was wrong","Travel: neutral — both at the same Las Vegas neutral site","Injuries/Lineup: neutral — no current injury confirmed for either side","Form: favors Alabama — both are 2-1 over their last three, but Alabama's loss was a competitive 68-63 to Baylor while Kansas State lost at home 80-70 to Campbell; Kansas State never played Gonzaga, so the stored '40-point blowout loss' did not happen","Motivation/Spot: neutral — Kansas State's bounce-back urgency after a bad home loss could cut either way","Venue/Crowd: neutral — true neutral site","Market: neutral — the stored 28-point swing from Kansas State -12.5 to +15.5 is not supported; no verifiable move off the open, and books currently sit at Alabama -14.5 to -15.5","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Second Opinion drops from lean Alabama to a pass and the Ledger's skip reason changes from off-gap to def-veto: Kansas State never played Gonzaga on Nov. 25 (it last played Nov. 20), so Rest actually favors Kansas State and the Form and Market claims built on that phantom 101-61 blowout are void; on blended inputs the off-gap is 63.5, which clears SCREEN 1, and the defensive veto then applies.","away":"Alabama Crimson Tide","awayMoneyline":-1100,"awayPDpg":12.32,"awayRank":15,"awayScore":null,"awaySpread":-15.5,"awaySpreadOdds":-108,"confidence":"skip","correct":null,"home":"Kansas State Wildcats","homeMoneyline":700,"homePDpg":4.16,"homeRank":null,"homeScore":null,"homeSpread":15.5,"homeSpreadOdds":-112,"lineMove":{"checked":"2026-11-26T08:24:47+00:00","ml":{"away":[-700.0,-1100.0],"home":[500.0,700.0]},"spread":[-12.5,15.5],"total":[177.5,169.5]},"offGap":63.46,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"def-veto","skipped":true,"statLines":["PD/g +12.3 vs +4.2 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 98.9 vs 35.4 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 63.5, clear of the 30 screen","Neutral site: Players Era Championship, Las Vegas — Alabama lost to Baylor 68-63 on Nov. 24; Kansas State (3-2) last played Nov. 20, losing 80-70 at home to Campbell","Off-gap of 63.5 clears SCREEN 1, so the model runs and picks Alabama on PD/g, but SCREEN 2 vetoes it: Alabama's blended adj. defensive efficiency (94.78) is 9.37 worse than Kansas State's (85.41), over the 3.0 limit"],"time":"9:00 PM ET"},
-    {"altCategoryTally":"3-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Texas Tech (blended PD/g +15.8 vs Oregon +4.2)","Rest: neutral — both played Nov. 24, same 2-day rest cycle","Travel: neutral — both at the same Las Vegas neutral site","Injuries/Lineup: neutral — no current injury confirmed for either side","Form: favors Texas Tech — lost its opener by 8 vs Oregon's by 11","Motivation/Spot: neutral — both in the consolation bracket, no extra edge found","Venue/Crowd: neutral — true neutral site","Market: favors Texas Tech slightly — home (Oregon) spread moved 1 point toward Texas Tech since open (+8.5 to +9.5)","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.","away":"Texas Tech Red Raiders","awayMoneyline":-455,"awayPDpg":15.75,"awayRank":5,"awayScore":null,"awaySpread":-9.5,"awaySpreadOdds":-112,"confidence":"skip","correct":null,"home":"Oregon Ducks","homeMoneyline":350,"homePDpg":4.16,"homeRank":null,"homeScore":null,"homeSpread":9.5,"homeSpreadOdds":-108,"lineMove":{"checked":"2026-11-26T08:24:47+00:00","ml":{"away":[-440.0,-455.0],"home":[340.0,350.0]},"spread":[8.5,9.5],"total":[153.5,149.5]},"offGap":1.65,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +15.8 vs +4.2 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 87.4 vs 85.7 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 1.6, under the 30 screen","Neutral site: Players Era Championship consolation bracket, Las Vegas — Texas Tech lost to Louisville 72-64, Oregon lost to St. John's 90-79, both Nov. 24"],"time":"11:30 PM ET"},
-    {"altCategoryTally":"1-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Gonzaga (blended PD/g +16.3 vs Baylor +15.8) — direction flips from the raw season figures, which had Baylor ahead","Rest: favors Gonzaga — Gonzaga last played Nov. 17 (9 days off) while Baylor played Nov. 24 (2 days off); the stored claim that Gonzaga played Nov. 25 was wrong, and it reversed this category","Travel: neutral — both at the same Las Vegas neutral site","Injuries/Lineup: neutral — no current injury confirmed for either side","Form: favors Baylor — both are 2-1 over their last three, but Baylor's came against far better opposition (a 75-72 loss at No. 7 Texas and a 68-63 win at No. 15 Alabama) against Gonzaga's wins over New Mexico State and Montana State either side of an 81-80 home loss to LSU; Gonzaga never played Kansas State, so the stored 40-point rout did not happen","Motivation/Spot: neutral — both chasing pool seeding, no extra edge found","Venue/Crowd: favors Gonzaga — the Zags travel as well as any program in the sport and should outnumber Baylor fans at a Vegas neutral site","Market: neutral — the stored 8-point swing was attributed to a Gonzaga blowout that never happened; no verifiable move off the open","Matchup splits: neutral — no specific style mismatch verified"],"altReturn":null,"altSpreadReturn":null,"auditNote":"Corrected three categories off a phantom game: Gonzaga never routed Kansas State 101-61 on Nov. 25 and last played Nov. 17, so Rest favors Gonzaga (not Baylor), Form favors Baylor on a much tougher recent slate, and the Market swing attributed to that rout is void; blended PD/g also flips Scoring margin to Gonzaga. Tally 1-3, still a pass.","away":"Baylor Bears","awayMoneyline":154,"awayPDpg":15.79,"awayRank":null,"awayScore":null,"awaySpread":3.5,"awaySpreadOdds":-108,"confidence":"skip","correct":null,"home":"Gonzaga Bulldogs","homeMoneyline":-185,"homePDpg":16.3,"homeRank":22,"homeScore":null,"homeSpread":-3.5,"homeSpreadOdds":-112,"lineMove":{"checked":"2026-11-26T08:24:47+00:00","ml":{"away":[180.0,154.0],"home":[-218.0,-185.0]},"spread":[4.5,-3.5],"total":[166.5,156.5]},"offGap":20.88,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +15.8 vs +16.3 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)","Off. eff. percentile 92.0 vs 71.2 of 365 D-I teams (Sports Reference blended adj. ORtg) — gap 20.9, under the 30 screen","Neutral site: Players Era Championship, Las Vegas — Baylor won 68-63 at Alabama on Nov. 24; Gonzaga (3-1) last played Nov. 17, beating Montana State 74-62"],"time":"11:30 PM ET"}
+    {
+      "altCategoryTally": "0-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Texas (blended PD/g +19.3 vs Georgetown +8.8)",
+        "Rest: neutral \u2014 tournament opener for both, no prior-day game",
+        "Travel: neutral \u2014 both flew in for a San Diego neutral site",
+        "Injuries/Lineup: neutral \u2014 no notable current injury confirmed for either side",
+        "Form: neutral \u2014 no specific recent trend beyond season numbers already in Scoring margin",
+        "Motivation/Spot: neutral \u2014 tournament opener, no rivalry/revenge angle found",
+        "Venue/Crowd: neutral \u2014 true neutral site, no home crowd for Texas",
+        "Market: neutral \u2014 spread unchanged from open (-8.5/-8.5)",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.",
+      "away": "Georgetown Hoyas",
+      "awayMoneyline": 320,
+      "awayPDpg": 8.77,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 8.5,
+      "awaySpreadOdds": -110,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Texas Longhorns",
+      "homeMoneyline": -410,
+      "homePDpg": 19.29,
+      "homeRank": 7,
+      "homeScore": null,
+      "homeSpread": -8.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "spread": [
+          -8.5,
+          -8.5
+        ],
+        "total": [
+          155.5,
+          153.5
+        ],
+        "ml": {
+          "home": [
+            -375.0,
+            -395.0
+          ],
+          "away": [
+            295.0,
+            310.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:35+00:00"
+      },
+      "offGap": 13.19,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +8.8 vs +19.3 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 84.3 vs 97.5 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 13.2, under the 30 screen",
+        "Neutral site: Rady Children's Invitational, San Diego (tournament day 1) \u2014 no home-court edge for either side"
+      ],
+      "time": "2:30 PM ET",
+      "gameTotal": 153.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-1",
+          "key": "rolling_dog",
+          "name": "Rolling underdog",
+          "team": "Georgetown Hoyas",
+          "says": "back",
+          "fact": "Georgetown has won 6 straight and is a +8.5 underdog.",
+          "record": "268-303",
+          "pct": 46.9,
+          "leans": "Texas Longhorns",
+          "leanPct": 53.1,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "0-3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Iowa State (blended PD/g +17.5 vs Tennessee +13.7)",
+        "Rest: neutral \u2014 both played Nov. 24, same 2-day rest cycle",
+        "Travel: neutral \u2014 both at the same Las Vegas neutral site",
+        "Injuries/Lineup: neutral \u2014 no current injury confirmed for either side",
+        "Form: favors Iowa State \u2014 won its opener by 13 (81-68) vs Tennessee's by 8 (72-64)",
+        "Motivation/Spot: neutral \u2014 both chasing pool seeding, no extra edge found",
+        "Venue/Crowd: neutral \u2014 true neutral site",
+        "Market: favors Iowa State \u2014 home spread moved 4 points toward Iowa State since open (+1.5 to -2.5); no public-bet split available to confirm as true reverse line movement",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.",
+      "away": "Tennessee Volunteers",
+      "awayMoneyline": 136,
+      "awayPDpg": 13.72,
+      "awayRank": 9,
+      "awayScore": null,
+      "awaySpread": 2.5,
+      "awaySpreadOdds": -105,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Iowa State Cyclones",
+      "homeMoneyline": -162,
+      "homePDpg": 17.48,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": -2.5,
+      "homeSpreadOdds": -115,
+      "lineMove": {
+        "spread": [
+          1.5,
+          -4.5
+        ],
+        "total": [
+          139.5,
+          139.5
+        ],
+        "ml": {
+          "home": [
+            -108.0,
+            -205.0
+          ],
+          "away": [
+            -112.0,
+            170.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:35+00:00"
+      },
+      "offGap": 7.14,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +13.7 vs +17.5 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 75.8 vs 83.0 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 7.1, under the 30 screen",
+        "Neutral site: Players Era Championship, Las Vegas \u2014 both won their Nov. 24 openers (Tennessee beat Maryland 72-64, Iowa State beat San Diego State 81-68)"
+      ],
+      "time": "3:30 PM ET",
+      "gameTotal": 139.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-1",
+          "key": "rolling_dog",
+          "name": "Rolling underdog",
+          "team": "Tennessee Volunteers",
+          "says": "back",
+          "fact": "Tennessee has won 6 straight and is a +2.5 underdog.",
+          "record": "268-303",
+          "pct": 46.9,
+          "leans": "Iowa State Cyclones",
+          "leanPct": 53.1,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "2-5",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "Tennessee Volunteers",
+          "says": "fade",
+          "fact": "Tennessee moved up from #14 to #9 in this week's AP poll.",
+          "record": "237-270",
+          "pct": 46.7,
+          "leans": "Tennessee Volunteers",
+          "leanPct": 53.3,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Miami (blended PD/g +18.1 vs Michigan +11.8)",
+        "Rest: neutral \u2014 both played Nov. 24, same rest cycle",
+        "Travel: neutral \u2014 both at the same Las Vegas neutral site",
+        "Injuries/Lineup: neutral \u2014 no current injury confirmed for either side",
+        "Form: favors Miami \u2014 lost its opener by 13 vs Michigan's 26-point blowout loss",
+        "Motivation/Spot: neutral \u2014 both in the consolation bracket after an opening loss, letdown risk cuts both ways",
+        "Venue/Crowd: neutral \u2014 true neutral site",
+        "Market: neutral \u2014 home spread unchanged from open (+2.5/+2.5)",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.",
+      "away": "Miami Hurricanes",
+      "awayMoneyline": -142,
+      "awayPDpg": 18.13,
+      "awayRank": 17,
+      "awayScore": null,
+      "awaySpread": -2.5,
+      "awaySpreadOdds": -105,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Michigan Wolverines",
+      "homeMoneyline": 120,
+      "homePDpg": 11.75,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": 2.5,
+      "homeSpreadOdds": -115,
+      "lineMove": {
+        "spread": [
+          2.5,
+          1.5
+        ],
+        "total": [
+          163.5,
+          159.5
+        ],
+        "ml": {
+          "home": [
+            136.0,
+            -105.0
+          ],
+          "away": [
+            -162.0,
+            -115.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:35+00:00"
+      },
+      "offGap": 11.81,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +18.1 vs +11.8 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 84.1 vs 95.9 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 11.8, under the 30 screen",
+        "Neutral site: Players Era Championship consolation bracket, Las Vegas \u2014 Miami lost to TCU 84-71, Michigan lost to Creighton 99-73 on Nov. 24"
+      ],
+      "time": "3:30 PM ET",
+      "gameTotal": 159.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
+    },
+    {
+      "altCategoryTally": "0-3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Michigan State (blended PD/g +14.6 vs Arkansas +13.0)",
+        "Rest: neutral \u2014 standalone Thanksgiving game for both, no back-to-back found for either",
+        "Travel: favors Michigan State \u2014 Detroit is ~90 miles from East Lansing vs. a cross-country trip for Arkansas from Fayetteville",
+        "Injuries/Lineup: neutral \u2014 Arkansas wing Isaiah Sealy hurt his knee in a June 2026 pickup game and is no longer enrolled at Arkansas; he has never played this season, so he is a roster departure already baked into Arkansas' season numbers, not a lineup change for tonight. No current injury confirmed for either side.",
+        "Form: neutral \u2014 no specific recent trend beyond season numbers already in Scoring margin",
+        "Motivation/Spot: neutral \u2014 marquee Thanksgiving showcase for both, no rivalry/revenge angle found",
+        "Venue/Crowd: favors Michigan State \u2014 Detroit crowd skews toward the in-state Spartans even off-campus",
+        "Market: neutral \u2014 home spread unchanged from open (-5.5/-5.5)",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Second Opinion drops from lean Michigan State to a pass: Isaiah Sealy's injury was a June 2026 offseason knee injury and he is no longer enrolled at Arkansas, so it is not a lineup change for tonight and Injuries/Lineup goes neutral, leaving a 3-category lead; stat fields also rebuilt on the model's 50/50 early-season blend.",
+      "away": "Arkansas Razorbacks",
+      "awayMoneyline": 180,
+      "awayPDpg": 12.99,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 5.5,
+      "awaySpreadOdds": -115,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Michigan State Spartans",
+      "homeMoneyline": -218,
+      "homePDpg": 14.64,
+      "homeRank": 11,
+      "homeScore": null,
+      "homeSpread": -5.5,
+      "homeSpreadOdds": -105,
+      "lineMove": {
+        "spread": [
+          -5.5,
+          -5.5
+        ],
+        "total": [
+          151.5,
+          148.5
+        ],
+        "ml": {
+          "home": [
+            -218.0,
+            -225.0
+          ],
+          "away": [
+            180.0,
+            185.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:35+00:00"
+      },
+      "offGap": 0.82,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +13.0 vs +14.6 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 94.0 vs 93.1 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 0.8, under the 30 screen",
+        "CBS Sports Thanksgiving Classic at Little Caesars Arena, Detroit \u2014 ~90 miles from Michigan State's campus, not a true road game for Arkansas",
+        "Arkansas wing Isaiah Sealy injured his knee in June 2026 and is no longer enrolled at Arkansas; he has not played this season"
+      ],
+      "time": "4:30 PM ET",
+      "gameTotal": 148.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "14-10",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Arkansas Razorbacks",
+          "says": "back",
+          "fact": "Arkansas lost to Michigan State 66-69 last season (2025-11-08).",
+          "record": "1419-1284",
+          "pct": 52.5,
+          "leans": "Arkansas Razorbacks",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "3-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Utah State (blended PD/g +22.7 vs USC +16.8)",
+        "Rest: favors Utah State \u2014 its 34-point rout let bench players close the game while USC's starters played heavy minutes in a 2-point win",
+        "Travel: neutral \u2014 both at the same Palm Desert neutral site both days",
+        "Injuries/Lineup: neutral \u2014 no current injury confirmed for either side",
+        "Form: favors Utah State \u2014 blew out SMU by 34 last night vs USC's narrow 2-point escape",
+        "Motivation/Spot: neutral \u2014 both in the same event pool, no specific extra edge found",
+        "Venue/Crowd: neutral \u2014 true neutral site",
+        "Market: neutral \u2014 home spread unchanged from open (-3.5/-3.5)",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.",
+      "away": "Utah State Aggies",
+      "awayMoneyline": 130,
+      "awayPDpg": 22.72,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 3.5,
+      "awaySpreadOdds": -112,
+      "confidence": "skip",
+      "correct": null,
+      "home": "USC Trojans",
+      "homeMoneyline": -155,
+      "homePDpg": 16.83,
+      "homeRank": 18,
+      "homeScore": null,
+      "homeSpread": -3.5,
+      "homeSpreadOdds": -108,
+      "lineMove": {
+        "spread": [
+          -3.5,
+          -1.5
+        ],
+        "total": [
+          162.5,
+          157.5
+        ],
+        "ml": {
+          "home": [
+            -155.0,
+            -122.0
+          ],
+          "away": [
+            130.0,
+            102.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:35+00:00"
+      },
+      "offGap": 7.42,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +22.7 vs +16.8 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 97.0 vs 89.6 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 7.4, under the 30 screen",
+        "Neutral site: Acrisure Series, Palm Desert, CA \u2014 both teams are on a true back-to-back (Utah State beat SMU 93-59, USC beat South Carolina 71-69, both Nov. 25)"
+      ],
+      "time": "4:30 PM ET",
+      "gameTotal": 157.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-1",
+          "key": "rolling_dog",
+          "name": "Rolling underdog",
+          "team": "Utah State Aggies",
+          "says": "back",
+          "fact": "Utah State has won 6 straight and is a +3.5 underdog.",
+          "record": "268-303",
+          "pct": 46.9,
+          "leans": "USC Trojans",
+          "leanPct": 53.1,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "7-9",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Utah State Aggies",
+          "says": "fade",
+          "fact": "Utah State won its last three by 34, 30, 38.",
+          "record": "122-147",
+          "pct": 45.4,
+          "leans": "Utah State Aggies",
+          "leanPct": 54.6,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "0-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors UCLA (blended PD/g +20.4 vs Saint Mary's +14.8)",
+        "Rest: neutral \u2014 tournament opener for both, no prior-day game",
+        "Travel: neutral \u2014 both California programs, similar distance to San Diego",
+        "Injuries/Lineup: neutral \u2014 no current injury confirmed for either side",
+        "Form: neutral \u2014 no specific recent trend beyond season numbers already in Scoring margin",
+        "Motivation/Spot: neutral \u2014 tournament opener, no rivalry/revenge angle found",
+        "Venue/Crowd: favors UCLA \u2014 bigger, closer-traveling fan base at a Southern California neutral site",
+        "Market: neutral \u2014 home spread unchanged from open (-7.5/-7.5)",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.",
+      "away": "Saint Mary's Gaels",
+      "awayMoneyline": 270,
+      "awayPDpg": 14.77,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 7.5,
+      "awaySpreadOdds": -108,
+      "confidence": "skip",
+      "correct": null,
+      "home": "UCLA Bruins",
+      "homeMoneyline": -340,
+      "homePDpg": 20.43,
+      "homeRank": 6,
+      "homeScore": null,
+      "homeSpread": -7.5,
+      "homeSpreadOdds": -112,
+      "lineMove": {
+        "spread": [
+          -7.5,
+          -7.5
+        ],
+        "total": [
+          155.5,
+          152.5
+        ],
+        "ml": {
+          "home": [
+            -305.0,
+            -325.0
+          ],
+          "away": [
+            245.0,
+            260.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:35+00:00"
+      },
+      "offGap": 0.55,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +14.8 vs +20.4 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 97.3 vs 96.7 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 0.5, under the 30 screen",
+        "Neutral site: Rady Children's Invitational, San Diego (tournament day 1) \u2014 no home-court edge for either side"
+      ],
+      "time": "5:00 PM ET",
+      "gameTotal": 152.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
+    },
+    {
+      "altCategoryTally": "2-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors LSU by a hair (blended PD/g +15.47 vs SMU +15.40 \u2014 effectively a tie)",
+        "Rest: favors SMU \u2014 LSU's double-overtime win Nov. 25 means roughly 50 minutes of fatigue, while SMU's blowout loss let its bench play extended minutes",
+        "Travel: neutral \u2014 both at the same Palm Desert neutral site both days",
+        "Injuries/Lineup: neutral \u2014 no current injury confirmed for either side",
+        "Form: favors LSU \u2014 gritty 2OT win over Arizona State vs SMU's 34-point blowout loss",
+        "Motivation/Spot: neutral \u2014 SMU's bounce-back urgency after an embarrassing loss could cut either way (motivated vs still reeling)",
+        "Venue/Crowd: neutral \u2014 true neutral site",
+        "Market: favors SMU \u2014 home (LSU) spread moved 2 points toward SMU since open (-7.5 to -5.5); no public-bet split available to confirm as true reverse line movement",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.",
+      "away": "SMU Mustangs",
+      "awayMoneyline": 185,
+      "awayPDpg": 15.4,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 5.5,
+      "awaySpreadOdds": -118,
+      "confidence": "skip",
+      "correct": null,
+      "home": "LSU Tigers",
+      "homeMoneyline": -225,
+      "homePDpg": 15.47,
+      "homeRank": 20,
+      "homeScore": null,
+      "homeSpread": -5.5,
+      "homeSpreadOdds": -102,
+      "lineMove": {
+        "spread": [
+          -7.5,
+          -6.5
+        ],
+        "total": [
+          159.5,
+          155.5
+        ],
+        "ml": {
+          "home": [
+            -305.0,
+            -310.0
+          ],
+          "away": [
+            245.0,
+            250.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:36+00:00"
+      },
+      "offGap": 3.57,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +15.4 vs +15.5 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 92.3 vs 88.7 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 3.6, under the 30 screen",
+        "Neutral site: Acrisure Series, Palm Desert, CA \u2014 both on a true back-to-back (SMU lost to Utah State 93-59, LSU beat Arizona State 94-92 in 2OT, both Nov. 25)"
+      ],
+      "time": "7:00 PM ET",
+      "gameTotal": 155.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "2-5",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "LSU Tigers",
+          "says": "fade",
+          "fact": "LSU moved up from #25 to #20 in this week's AP poll.",
+          "record": "237-270",
+          "pct": 46.7,
+          "leans": "LSU Tigers",
+          "leanPct": 53.3,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "14-10",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "SMU Mustangs",
+          "says": "back",
+          "fact": "SMU lost to LSU 77-89 last season (2025-12-13).",
+          "record": "1419-1284",
+          "pct": 52.5,
+          "leans": "SMU Mustangs",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "0-3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors St. John's (blended PD/g +19.0 vs Louisville +12.5)",
+        "Rest: neutral \u2014 both played Nov. 24, same 2-day rest cycle",
+        "Travel: neutral \u2014 both at the same Las Vegas neutral site",
+        "Injuries/Lineup: neutral \u2014 no current injury confirmed for either side",
+        "Form: favors St. John's \u2014 won its opener by 11 vs Louisville's by 8",
+        "Motivation/Spot: neutral \u2014 both chasing pool seeding, no extra edge found",
+        "Venue/Crowd: neutral \u2014 true neutral site, far from both campuses",
+        "Market: favors St. John's strongly \u2014 home spread swung 6 points its way since open (St. John's opened +4.5 underdog, now -1.5 favorite)",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.",
+      "away": "Louisville Cardinals",
+      "awayMoneyline": 130,
+      "awayPDpg": 12.47,
+      "awayRank": 25,
+      "awayScore": null,
+      "awaySpread": 1.5,
+      "awaySpreadOdds": 100,
+      "confidence": "skip",
+      "correct": null,
+      "home": "St. John's Red Storm",
+      "homeMoneyline": -155,
+      "homePDpg": 18.97,
+      "homeRank": 13,
+      "homeScore": null,
+      "homeSpread": -1.5,
+      "homeSpreadOdds": -120,
+      "lineMove": {
+        "spread": [
+          4.5,
+          -1.5
+        ],
+        "total": [
+          157.5,
+          160.5
+        ],
+        "ml": {
+          "home": [
+            -205.0,
+            -125.0
+          ],
+          "away": [
+            170.0,
+            105.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:36+00:00"
+      },
+      "offGap": 2.75,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +12.5 vs +19.0 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 94.2 vs 91.5 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 2.7, under the 30 screen",
+        "Neutral site: Players Era Championship winners' bracket, Las Vegas \u2014 Louisville beat Texas Tech 72-64, St. John's beat Oregon 90-79, both Nov. 24"
+      ],
+      "time": "9:00 PM ET",
+      "gameTotal": 160.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "4-5",
+          "key": "big_stage",
+          "name": "Down from the big stage",
+          "team": "Louisville Cardinals",
+          "says": "fade",
+          "fact": "Louisville played #5 Texas Tech last time out (won 72-64).",
+          "record": "276-239",
+          "pct": 53.6,
+          "leans": "St. John's Red Storm",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "2-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Alabama (blended PD/g +12.3 vs Kansas State +4.2)",
+        "Rest: favors Kansas State \u2014 Kansas State last played Nov. 20 (6 days off) while Alabama played Nov. 24 (2 days off); the stored claim that Kansas State played Nov. 25 was wrong",
+        "Travel: neutral \u2014 both at the same Las Vegas neutral site",
+        "Injuries/Lineup: neutral \u2014 no current injury confirmed for either side",
+        "Form: favors Alabama \u2014 both are 2-1 over their last three, but Alabama's loss was a competitive 68-63 to Baylor while Kansas State lost at home 80-70 to Campbell; Kansas State never played Gonzaga, so the stored '40-point blowout loss' did not happen",
+        "Motivation/Spot: neutral \u2014 Kansas State's bounce-back urgency after a bad home loss could cut either way",
+        "Venue/Crowd: neutral \u2014 true neutral site",
+        "Market: neutral \u2014 the stored 28-point swing from Kansas State -12.5 to +15.5 is not supported; no verifiable move off the open, and books currently sit at Alabama -14.5 to -15.5",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Second Opinion drops from lean Alabama to a pass and the Ledger's skip reason changes from off-gap to def-veto: Kansas State never played Gonzaga on Nov. 25 (it last played Nov. 20), so Rest actually favors Kansas State and the Form and Market claims built on that phantom 101-61 blowout are void; on blended inputs the off-gap is 63.5, which clears SCREEN 1, and the defensive veto then applies.",
+      "away": "Alabama Crimson Tide",
+      "awayMoneyline": -1100,
+      "awayPDpg": 12.32,
+      "awayRank": 15,
+      "awayScore": null,
+      "awaySpread": -15.5,
+      "awaySpreadOdds": -108,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Kansas State Wildcats",
+      "homeMoneyline": 700,
+      "homePDpg": 4.16,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": 15.5,
+      "homeSpreadOdds": -112,
+      "lineMove": {
+        "spread": [
+          -12.5,
+          13.5
+        ],
+        "total": [
+          177.5,
+          169.5
+        ],
+        "ml": {
+          "home": [
+            500.0,
+            700.0
+          ],
+          "away": [
+            -700.0,
+            -1100.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:36+00:00"
+      },
+      "offGap": 63.46,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "def-veto",
+      "skipped": true,
+      "statLines": [
+        "PD/g +12.3 vs +4.2 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 98.9 vs 35.4 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 63.5, clear of the 30 screen",
+        "Neutral site: Players Era Championship, Las Vegas \u2014 Alabama lost to Baylor 68-63 on Nov. 24; Kansas State (3-2) last played Nov. 20, losing 80-70 at home to Campbell",
+        "Off-gap of 63.5 clears SCREEN 1, so the model runs and picks Alabama on PD/g, but SCREEN 2 vetoes it: Alabama's blended adj. defensive efficiency (94.78) is 9.37 worse than Kansas State's (85.41), over the 3.0 limit"
+      ],
+      "time": "9:00 PM ET",
+      "gameTotal": 169.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
+    },
+    {
+      "altCategoryTally": "3-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Texas Tech (blended PD/g +15.8 vs Oregon +4.2)",
+        "Rest: neutral \u2014 both played Nov. 24, same 2-day rest cycle",
+        "Travel: neutral \u2014 both at the same Las Vegas neutral site",
+        "Injuries/Lineup: neutral \u2014 no current injury confirmed for either side",
+        "Form: favors Texas Tech \u2014 lost its opener by 8 vs Oregon's by 11",
+        "Motivation/Spot: neutral \u2014 both in the consolation bracket, no extra edge found",
+        "Venue/Crowd: neutral \u2014 true neutral site",
+        "Market: favors Texas Tech slightly \u2014 home (Oregon) spread moved 1 point toward Texas Tech since open (+8.5 to +9.5)",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Ledger stat fields rebuilt on the model's 50/50 early-season blend (every team has played 4-8 games) instead of raw 2026-27 figures; the off-gap screen still skips the game and no pick changes.",
+      "away": "Texas Tech Red Raiders",
+      "awayMoneyline": -455,
+      "awayPDpg": 15.75,
+      "awayRank": 5,
+      "awayScore": null,
+      "awaySpread": -9.5,
+      "awaySpreadOdds": -112,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Oregon Ducks",
+      "homeMoneyline": 350,
+      "homePDpg": 4.16,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": 9.5,
+      "homeSpreadOdds": -108,
+      "lineMove": {
+        "spread": [
+          8.5,
+          10.5
+        ],
+        "total": [
+          153.5,
+          148.5
+        ],
+        "ml": {
+          "home": [
+            340.0,
+            400.0
+          ],
+          "away": [
+            -440.0,
+            -535.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:36+00:00"
+      },
+      "offGap": 1.65,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +15.8 vs +4.2 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 87.4 vs 85.7 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 1.6, under the 30 screen",
+        "Neutral site: Players Era Championship consolation bracket, Las Vegas \u2014 Texas Tech lost to Louisville 72-64, Oregon lost to St. John's 90-79, both Nov. 24"
+      ],
+      "time": "11:30 PM ET",
+      "gameTotal": 148.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "5-2",
+          "key": "after_dark",
+          "name": "After dark out West",
+          "team": "Texas Tech Red Raiders",
+          "says": "fade",
+          "fact": "Texas Tech tips at 11:30 PM ET in Las Vegas, NV.",
+          "record": "78-85",
+          "pct": 47.9,
+          "leans": "Texas Tech Red Raiders",
+          "leanPct": 52.1,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    },
+    {
+      "altCategoryTally": "1-3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Gonzaga (blended PD/g +16.3 vs Baylor +15.8) \u2014 direction flips from the raw season figures, which had Baylor ahead",
+        "Rest: favors Gonzaga \u2014 Gonzaga last played Nov. 17 (9 days off) while Baylor played Nov. 24 (2 days off); the stored claim that Gonzaga played Nov. 25 was wrong, and it reversed this category",
+        "Travel: neutral \u2014 both at the same Las Vegas neutral site",
+        "Injuries/Lineup: neutral \u2014 no current injury confirmed for either side",
+        "Form: favors Baylor \u2014 both are 2-1 over their last three, but Baylor's came against far better opposition (a 75-72 loss at No. 7 Texas and a 68-63 win at No. 15 Alabama) against Gonzaga's wins over New Mexico State and Montana State either side of an 81-80 home loss to LSU; Gonzaga never played Kansas State, so the stored 40-point rout did not happen",
+        "Motivation/Spot: neutral \u2014 both chasing pool seeding, no extra edge found",
+        "Venue/Crowd: favors Gonzaga \u2014 the Zags travel as well as any program in the sport and should outnumber Baylor fans at a Vegas neutral site",
+        "Market: neutral \u2014 the stored 8-point swing was attributed to a Gonzaga blowout that never happened; no verifiable move off the open",
+        "Matchup splits: neutral \u2014 no specific style mismatch verified"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "auditNote": "Corrected three categories off a phantom game: Gonzaga never routed Kansas State 101-61 on Nov. 25 and last played Nov. 17, so Rest favors Gonzaga (not Baylor), Form favors Baylor on a much tougher recent slate, and the Market swing attributed to that rout is void; blended PD/g also flips Scoring margin to Gonzaga. Tally 1-3, still a pass.",
+      "away": "Baylor Bears",
+      "awayMoneyline": 154,
+      "awayPDpg": 15.79,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 3.5,
+      "awaySpreadOdds": -108,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Gonzaga Bulldogs",
+      "homeMoneyline": -185,
+      "homePDpg": 16.3,
+      "homeRank": 22,
+      "homeScore": null,
+      "homeSpread": -3.5,
+      "homeSpreadOdds": -112,
+      "lineMove": {
+        "spread": [
+          4.5,
+          -3.5
+        ],
+        "total": [
+          166.5,
+          153.5
+        ],
+        "ml": {
+          "home": [
+            -218.0,
+            -175.0
+          ],
+          "away": [
+            180.0,
+            145.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:36+00:00"
+      },
+      "offGap": 20.88,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g +15.8 vs +16.3 (50/50 blend of 2026-27 and last season's final, per the model's under-10-games rule)",
+        "Off. eff. percentile 92.0 vs 71.2 of 365 D-I teams (Sports Reference blended adj. ORtg) \u2014 gap 20.9, under the 30 screen",
+        "Neutral site: Players Era Championship, Las Vegas \u2014 Baylor won 68-63 at Alabama on Nov. 24; Gonzaga (3-1) last played Nov. 17, beating Montana State 74-62"
+      ],
+      "time": "11:30 PM ET",
+      "gameTotal": 153.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "5-2",
+          "key": "after_dark",
+          "name": "After dark out West",
+          "team": "Baylor Bears",
+          "says": "fade",
+          "fact": "Baylor tips at 11:30 PM ET in Las Vegas, NV.",
+          "record": "78-85",
+          "pct": 47.9,
+          "leans": "Baylor Bears",
+          "leanPct": 52.1,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
+    }
   ]
 }

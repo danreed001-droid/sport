@@ -1,15 +1,15 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401900871,2026-11-26,Scheduled,Al Diriyah,0,-,Al Faisaly,0,-,-,-,12:30 PM
-401900874,2026-11-26,Scheduled,Al Riyadh,0,-,Al Fateh,0,-,-,-,9:25 AM
-401900443,2026-11-26,Scheduled,Al Shabab,0,-,Abha,0,-,-,-,10:05 AM
-401915506,2026-11-26,Scheduled,Hapoel Be'er,0,-,Besiktas,0,-,-,-,12:45 PM
-401915519,2026-11-26,Scheduled,AFC Bournemouth,0,-,Celta Vigo,0,-,-,-,12:45 PM
-401915517,2026-11-26,Scheduled,Bayer Leverkusen,0,-,Dinamo Zagreb,0,-,-,-,12:45 PM
-401915507,2026-11-26,Scheduled,Levski Sofia,0,-,Marseille,0,-,-,-,12:45 PM
-401915521,2026-11-26,Scheduled,AC Milan,0,-,Olympiacos,0,-,-,-,12:45 PM
-401915520,2026-11-26,Scheduled,Ararat-Armenia,0,-,RB Salzburg,0,-,-,-,12:45 PM
-401915508,2026-11-26,Scheduled,Lech Poznan,0,-,Union St.-Gilloise,0,-,-,-,12:45 PM
-401915518,2026-11-26,Scheduled,Benfica,0,-,Viktoria Plzen,0,-,-,-,12:45 PM
+401900871,2026-11-26,73',Al Diriyah,2,-,Al Faisaly,1,-,-,-,12:30 PM
+401900874,2026-11-26,FT,Al Riyadh,0,-,Al Fateh,1,-,-,-,9:25 AM
+401900443,2026-11-26,FT,Al Shabab,1,-,Abha,0,-,-,-,10:05 AM
+401915506,2026-11-26,45',Hapoel Be'er,0,-,Besiktas,0,-,-,-,12:45 PM
+401915519,2026-11-26,60',AFC Bournemouth,1,-,Celta Vigo,1,-,-,-,12:45 PM
+401915517,2026-11-26,60',Bayer Leverkusen,2,-,Dinamo Zagreb,0,-,-,-,12:45 PM
+401915507,2026-11-26,59',Levski Sofia,0,-,Marseille,1,-,-,-,12:45 PM
+401915521,2026-11-26,60',AC Milan,1,-,Olympiacos,2,-,-,-,12:45 PM
+401915520,2026-11-26,62',Ararat-Armenia,0,-,RB Salzburg,2,-,-,-,12:45 PM
+401915508,2026-11-26,59',Lech Poznan,2,-,Union St.-Gilloise,1,-,-,-,12:45 PM
+401915518,2026-11-26,60',Benfica,0,-,Viktoria Plzen,4,-,-,-,12:45 PM
 401915504,2026-11-26,Scheduled,Real Sociedad,0,-,Crystal Palace,0,-,-,-,3:00 PM
 401915516,2026-11-26,Scheduled,NK Celje,0,-,Ferencvaros,0,-,-,-,3:00 PM
 401915502,2026-11-26,Scheduled,Omonia Nicosia,0,-,Juventus,0,-,-,-,3:00 PM
@@ -20,16 +20,16 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401915513,2026-11-26,Scheduled,Jagiellonia Bialystok,0,-,Sunderland,0,-,-,-,3:00 PM
 401915512,2026-11-26,Scheduled,Celtic,0,-,Torreense,0,-,-,-,3:00 PM
 401915515,2026-11-26,Scheduled,SK Sturm Graz,0,-,TSG Hoffenheim,0,-,-,-,3:00 PM
-401915816,2026-11-26,Scheduled,Mjällby AIF,0,-,Kairat Almaty,0,-,-,-,10:30 AM
-401915815,2026-11-26,Scheduled,FC Thun,0,-,Ajax Amsterdam,0,-,-,-,12:45 PM
-401915814,2026-11-26,Scheduled,CSU Craiova,0,-,Brighton & Hove Albion,0,-,-,-,12:45 PM
-401915810,2026-11-26,Scheduled,Lincoln Red Imps,0,-,Egnatia,0,-,-,-,12:45 PM
-401915811,2026-11-26,Scheduled,AS Monaco,0,-,Heart of Midlothian,0,-,-,-,12:45 PM
-401915813,2026-11-26,Scheduled,Getafe,0,-,Iberia 1999,0,-,-,-,12:45 PM
-401915812,2026-11-26,Scheduled,FC Lugano,0,-,Jablonec,0,-,-,-,12:45 PM
-401915739,2026-11-26,Scheduled,Riga FC,0,-,Kauno Zalgiris,0,-,-,-,12:45 PM
-401915809,2026-11-26,Scheduled,FC Midtjylland,0,-,Pafos,0,-,-,-,12:45 PM
-401915808,2026-11-26,Scheduled,AGF,0,-,SK Brann,0,-,-,-,12:45 PM
+401915816,2026-11-26,FT,Mjällby AIF,0,-,Kairat Almaty,1,-,-,-,10:30 AM
+401915815,2026-11-26,59',FC Thun,0,-,Ajax Amsterdam,2,-,-,-,12:45 PM
+401915814,2026-11-26,58',CSU Craiova,0,-,Brighton & Hove Albion,2,-,-,-,12:45 PM
+401915810,2026-11-26,61',Lincoln Red Imps,0,-,Egnatia,1,-,-,-,12:45 PM
+401915811,2026-11-26,55',AS Monaco,2,-,Heart of Midlothian,2,-,-,-,12:45 PM
+401915813,2026-11-26,60',Getafe,0,-,Iberia 1999,1,-,-,-,12:45 PM
+401915812,2026-11-26,60',FC Lugano,0,-,Jablonec,0,-,-,-,12:45 PM
+401915739,2026-11-26,49',Riga FC,0,-,Kauno Zalgiris,0,-,-,-,12:45 PM
+401915809,2026-11-26,62',FC Midtjylland,1,-,Pafos,0,-,-,-,12:45 PM
+401915808,2026-11-26,61',AGF,4,-,SK Brann,1,-,-,-,12:45 PM
 401915806,2026-11-26,Scheduled,Atalanta,0,-,Borac Banja Luka,0,-,-,-,3:00 PM
 401915802,2026-11-26,Scheduled,KuPS Kuopio,0,-,Braga,0,-,-,-,3:00 PM
 401915803,2026-11-26,Scheduled,Trabzonspor,0,-,CSKA Sofia,0,-,-,-,3:00 PM
@@ -40,22 +40,22 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401915801,2026-11-26,Scheduled,FC Twente,0,-,SC Freiburg,0,-,-,-,3:00 PM
 401931982,2026-11-26,Scheduled,Guadalajara,0,-,Pachuca,0,-,-,-,8:00 PM
 401931995,2026-11-26,Scheduled,Cruz Azul,0,-,León,0,-,-,-,10:10 PM
-401912744,2026-11-26,Scheduled,Kitchee SC,0,-,Gangwon FC,0,-,-,-,5:00 AM
-401912743,2026-11-26,Scheduled,Phnom Penh Crown FC,0,-,Kuching City,0,-,-,-,5:00 AM
-401912745,2026-11-26,Scheduled,Shanghai Shenhua FC,0,-,Tampines Rovers FC,0,-,-,-,5:00 AM
-401912742,2026-11-26,Scheduled,Lion City Sailors FC,0,-,BG Pathum United,0,-,-,-,7:15 AM
-401912740,2026-11-26,Scheduled,Machida Zelvia,0,-,PKR Svay Rieng,0,-,-,-,7:15 AM
-401912741,2026-11-26,Scheduled,Adelaide United FC,0,-,Tai Po FC,0,-,-,-,7:15 AM
+401912744,2026-11-26,FT,Kitchee SC,2,-,Gangwon FC,3,-,-,-,5:00 AM
+401912743,2026-11-26,FT,Phnom Penh Crown FC,0,-,Kuching City,3,-,-,-,5:00 AM
+401912745,2026-11-26,FT,Shanghai Shenhua FC,7,-,Tampines Rovers FC,1,-,-,-,5:00 AM
+401912742,2026-11-26,FT,Lion City Sailors FC,3,-,BG Pathum United,0,-,-,-,7:15 AM
+401912740,2026-11-26,FT,Machida Zelvia,0,-,PKR Svay Rieng,2,-,-,-,7:15 AM
+401912741,2026-11-26,FT,Adelaide United FC,7,-,Tai Po FC,1,-,-,-,7:15 AM
 401933656,2026-11-26,Scheduled,SJK-J,0,-,FC Ilves,0,-,-,-,8:00 AM
 401936496,2026-11-26,Scheduled,Bronshoj,0,-,Frederiksberg Alliancen 2000,0,-,-,-,11:45 AM
-401873571,2026-11-26,Scheduled,Belgium U17,0,-,New Zealand U17,0,-,-,-,8:00 AM
-401873570,2026-11-26,Scheduled,Mali U17,0,-,Vietnam U17,0,-,-,-,8:00 AM
-401873566,2026-11-26,Scheduled,Ivory Coast U17,0,-,Jamaica U17,0,-,-,-,9:00 AM
-401873567,2026-11-26,Scheduled,Italy U17,0,-,Uzbekistan U17,0,-,-,-,9:00 AM
-401873569,2026-11-26,Scheduled,Fiji U17,0,-,China U17,0,-,-,-,10:00 AM
-401873568,2026-11-26,Scheduled,Spain U17,0,-,Morocco U17,0,-,-,-,10:00 AM
-401873573,2026-11-26,Scheduled,Cuba U17,0,-,Croatia U17,0,-,-,-,11:00 AM
-401873572,2026-11-26,Scheduled,Senegal U17,0,-,Tajikistan U17,0,-,-,-,11:00 AM
+401873571,2026-11-26,FT,Belgium U17,6,-,New Zealand U17,0,-,-,-,8:00 AM
+401873570,2026-11-26,FT,Mali U17,2,-,Vietnam U17,0,-,-,-,8:00 AM
+401873566,2026-11-26,FT,Ivory Coast U17,3,-,Jamaica U17,1,-,-,-,9:00 AM
+401873567,2026-11-26,FT,Italy U17,3,-,Uzbekistan U17,1,-,-,-,9:00 AM
+401873569,2026-11-26,FT,Fiji U17,0,-,China U17,8,-,-,-,10:00 AM
+401873568,2026-11-26,FT,Spain U17,2,-,Morocco U17,0,-,-,-,10:00 AM
+401873573,2026-11-26,FT,Cuba U17,0,-,Croatia U17,7,-,-,-,11:00 AM
+401873572,2026-11-26,FT,Senegal U17,1,-,Tajikistan U17,1,-,-,-,11:00 AM
 401880728,2026-11-26,Scheduled,Huddersfield Town,0,-,Doncaster Rovers,0,-,-,-,3:00 PM
 401841329,2026-11-26,Scheduled,Remo,0,-,São Paulo,0,-,-,-,6:00 PM
 401906325,2026-11-25,FT,Leeds United U21,1,-,Fleetwood Town,2,-,-,-,2:00 PM

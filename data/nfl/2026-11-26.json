@@ -4,11 +4,622 @@
   "sport": "nfl",
   "scored": false,
   "generatedAt": "2026-11-26T13:26:32Z",
-  "auditChanges": ["nfl Chicago Bears @ Detroit Lions: Market category was backwards (line moved 1 pt toward Detroit, not 4 pts toward Chicago), Kyler Gordon is OUT not questionable, Detroit's 7-game Thanksgiving streak is false (won in 2024), the 52-21 blowout was 2025 Week 2, and Injuries/Lineup now weighted x2; tally recomposed, Second Opinion still a pass and the Ledger's Lions toss-up unchanged.", "nfl Philadelphia Eagles @ Dallas Cowboys: added the omitted absences (Eagles OLB Arnold Ebiketie out, Cowboys WR Jonathan Mingo out), noted CB1 Quinyon Mitchell is cleared to play, and corrected Jalen Hurts' blood clot to his calf per CBS with no confirmed season-ending timeline; Injuries/Lineup stays neutral, tally and both picks unchanged.", "nfl Kansas City Chiefs @ Buffalo Bills: corrected the injury lines (KC has three ruled out, not just RT Jaylon Moore; Buffalo's five are listed questionable); Injuries/Lineup still favors Buffalo with no x2 cluster, tally, Second Opinion pass and the off-gap skip all unchanged."],
+  "auditChanges": [
+    "nfl Chicago Bears @ Detroit Lions: Market category was backwards (line moved 1 pt toward Detroit, not 4 pts toward Chicago), Kyler Gordon is OUT not questionable, Detroit's 7-game Thanksgiving streak is false (won in 2024), the 52-21 blowout was 2025 Week 2, and Injuries/Lineup now weighted x2; tally recomposed, Second Opinion still a pass and the Ledger's Lions toss-up unchanged.",
+    "nfl Philadelphia Eagles @ Dallas Cowboys: added the omitted absences (Eagles OLB Arnold Ebiketie out, Cowboys WR Jonathan Mingo out), noted CB1 Quinyon Mitchell is cleared to play, and corrected Jalen Hurts' blood clot to his calf per CBS with no confirmed season-ending timeline; Injuries/Lineup stays neutral, tally and both picks unchanged.",
+    "nfl Kansas City Chiefs @ Buffalo Bills: corrected the injury lines (KC has three ruled out, not just RT Jaylon Moore; Buffalo's five are listed questionable); Injuries/Lineup still favors Buffalo with no x2 cluster, tally, Second Opinion pass and the off-gap skip all unchanged."
+  ],
   "auditedAt": "2026-11-26T16:50:28Z",
   "games": [
-    {"altBlowoutCheck":"Neither team's last game was a win by 17+ points (Bears won 21-13 at New Orleans, margin 8; Lions won 31-21 over Tampa Bay, margin 10), so the blowout-win regression check does not apply to either side this week.","altBlowoutFavors":null,"altCategoryTally":"Lions 3 - Bears 2 (categories; Injuries/Lineup weighted x2 for Chicago); trend 0; blowout 0 -> net Lions +1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Lions (blended PD/g +5.4 vs +4.0; both Goff and Williams are full-season starters, no QB-change discount applies)","Injuries/Lineup (weighted x2 - multi-starter cluster): favors Bears (Detroit is down two premium edge players in the same game - Aidan Hutchinson out for the season on IR with a torn ACL and DJ Wonnum, the only other proven edge, a did-not-practice game-time decision; Chicago's ruled-out trio is nickel CB Kyler Gordon, S Elijah Hicks and RB Roschon Johnson, none of them a listed premium position)","Market: favors Lions (the line moved one point toward Detroit, from Bears -2.5/-148 at the open to Bears -1.5/-122, on sharp money backing Detroit)","Matchup splits: favors Lions (6.0 Yds/play offense led by Jahmyr Gibbs and Amon-Ra St. Brown against a Bears secondary with starting nickel CB Kyler Gordon and S Elijah Hicks both ruled out and CB Tyrique Stevenson questionable)","Motivation/Spot: neutral (both teams are 8-2 and playing for first place in the NFC North, so the stakes are equal; Detroit has no long Thanksgiving skid to snap - it beat Chicago 23-20 on Thanksgiving 2024 - and Ben Johnson's revenge angle for the 2025 Week 2 blowout cuts the other way)","Rest: neutral (both teams on the standard Thanksgiving short week)","Travel: neutral (short regional trip for Chicago, no time zone change)","Form: neutral (both teams 3-0 in their last three games)","Weather/Venue: neutral (Ford Field is a dome)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Bears prior game (Nov 22 at NO, CBS Gametracker): 311 total net yds, 33 rush att, 23 pass att, 146 rush yds, 165 pass yds (7.17 YPA) in a 21-13 win — no pattern matched. Lions prior game (Nov 22 vs TB, CBS Gametracker): 386 total net yds, 29 rush att, 28 pass att, 109 rush yds, 277 pass yds (9.89 YPA) in a 31-21 win — Pattern B's YPA≥7.5 test passed but YPP was 6.77 (needs ≤5.15), so no pattern matched.","altTrendFavors":null,"auditNote":"Corrected the Market category (the line moved toward Detroit, not Chicago), Kyler Gordon from questionable to ruled out, the false 7-game Thanksgiving streak, and the 52-21 blowout's season (2025, not 2026); Injuries/Lineup now carries the x2 multi-starter weighting it was owed, and the Second Opinion remains a pass.","away":"Chicago Bears","awayMoneyline":-122,"awayPDpg":4,"awayQB":"Caleb Williams","awayQBRating":95.9,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":-110,"awayYPP":5.4,"confidence":"toss-up","correct":null,"home":"Detroit Lions","homeMoneyline":103,"homePDpg":5.4,"homeQB":"Jared Goff","homeQBRating":113.2,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":-110,"homeYPP":6,"injuries":{"away":{"4241007":"questionable","4242402":"out","4361093":"out","4426374":"questionable","4426386":"out"},"home":{"3045463":"questionable","4038849":"questionable","4361788":"injured reserve","4566092":"out","5103940":"injured reserve"}},"lineMove":{"checked":"2026-11-26T08:24:47+00:00","ml":{"away":[114.0,-120.0],"home":[-135.0,102.0]},"spread":[-2.5,1.5],"total":[51.5,55.5]},"offGap":32.2,"pick":"Detroit Lions","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipped":false,"statLines":["PD/g +4.0 vs +5.4 (blended 50/50 this season/last season)","Yds/play 5.4 vs 6.0 (Chicago 14th, Detroit 4th leaguewide)","QB rating 95.9 vs 113.2 (Williams vs Goff)"],"thirdConfidence":"lean","thirdCorrect":null,"thirdCover":null,"thirdPick":"Detroit Lions","thirdProjectedMargin":-2.5,"thirdReasoning":"Chicago's cleaner path at a Lions pass rush missing Aidan Hutchinson for the season is real, but Detroit's 4-game win streak, home dome certainty and an equal-stakes first-place spot tip a pick'em-level game to the Lions by a field goal. The most surprising angle is that the money has moved toward Detroit all week - the Bears opened -2.5 and sit at -1.5 on sharp Lions action - while 63% of public tickets sit on Chicago. Kyler Gordon being ruled out (not merely questionable) hands Amon-Ra St. Brown a favorable alignment. Would flip to Chicago if Wonnum is scratched and Caleb Williams faces a clean pocket all day.","thirdResearch":["[angle] Bears HC Ben Johnson, a former Lions offensive coordinator, is looking to avenge a 52-21 loss in Week 2 of the 2025 season in his return to Detroit - a game in which the Bears allowed 8.8 yards per play, the most in franchise history - and he is 0-2 against his former team (Chicago Sun-Times, FOX 32, Nov 2026) - helps Bears.","[angle] Detroit hosts as the NFC North co-leader at 8-2, with first place on the line; it does not carry a long Thanksgiving skid - the Lions beat Chicago 23-20 on Thanksgiving 2024 and lost only last year's to Green Bay (Lions year-by-year Thanksgiving results) - neutral context.","[angle] Detroit's pass rush is down to just DJ Wonnum, questionable and held out of Wednesday's practice, after Aidan Hutchinson's season-ending ACL tear; coach Dan Campbell said everyone but Skyler Gill-Howard will be a 'game-time decision' (CBS Sports injury tracker, Nov 2026) — helps Bears.","Bears starting nickel CB Kyler Gordon has been ruled OUT (shoulder) and has not played since Nov. 8; S Elijah Hicks (concussion) and RB Roschon Johnson are also out, and CB Tyrique Stevenson is questionable (groin) (CBS Sports / Bears final injury report, Nov 2026) - helps Lions.","Chicago is 6-4 ATS overall but has lost its last two games ATS, both as a home favorite vs. Tampa Bay and New Orleans — a caution on the Bears' recent spread form even as true road underdogs tonight (TeamRankings) — helps Lions.","Detroit is 5-4-1 ATS, has covered four of its last five, and has both won and covered in each of its last four games straight — the market has been pricing this Lions team correctly (TeamRankings) — helps Lions.","The spread has moved one point toward Detroit since this week's open (Bears -2.5/-148 to Bears -1.5/-122), which CBS attributes to heavy sharp money on the Lions even with a reported 63% of public spread tickets on Chicago - classic reverse line movement (CBS Sports, SI, Nov 2026) - helps Lions (spread-specific).","Detroit is just 0-1 ATS as an underdog this season (lost outright at Buffalo by 10 as a 5.5-point dog) but a strong 5-3-1 ATS as a favorite — tonight's small favorite/underdog line (Lions +1.5) is a profile shift worth watching (TeamRankings) — mixed, slight Bears hedge.","[angle] Caleb Williams is playing his first career Thursday game, and Ben Johnson's staff has emphasized an abbreviated, recovery-focused short-week prep — that can disrupt rhythm for a still-developing QB (Chicago beat reporting) — helps Lions.","Jahmyr Gibbs and a top-5 scoring Lions offense (6.0 Yds/play, 4th leaguewide) line up against a Bears defense now missing its top slot corner, a specific mismatch the raw YPP gap only partly captures (CBS injury tracker, team stats) — helps Lions.","Both teams enter 8-2 playing for an early NFC tiebreaker edge — elevated stakes for both sides cut against either team being flat (SI.com NFC North coverage) — neutral context."],"thirdReturn":null,"thirdSpreadReturn":null,"time":"1:00 PM ET"},
-    {"altBlowoutCheck":"Cowboys are off a 51-30 win over Tennessee (margin 21, triggers the check): turnover margin was only +1 (not +2) and Dallas led just 27-9 at half — not a tight game pulled away from, so condition 1 fails; Dallas is favored -8.5 tonight, condition 2 (market bought in) holds; upcoming opponent Philadelphia ranks 32nd in takeaways forced, 18th in points allowed and 17th in pass defense, so condition 3 (opponent takes it away) fails; Dallas ran it only 30 times (condition 4, needs 33+, fails); Dak Prescott has 6 INTs and 2 multi-INT games this season, so condition 5 (turnover-prone) holds. 2 of 5 conditions hit — regression flag OFF, no points awarded.","altBlowoutFavors":null,"altCategoryTally":"Cowboys 3 - Eagles 0 (categories); trend 0; blowout 0 → net Cowboys +3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: neutral (Eagles' -1.9 blended PD/g spans three different QBs this season - Jalen Hurts, 5 starts, on IR and out indefinitely with a blood clot in his calf, Tanner McKee, 3 starts, benched, and Joe Milton, tonight's expected starter making his third career start - so it doesn't reflect Milton, and Dallas' own blended PD/g is essentially 0.0, not independently strong enough to carry the category)","Injuries/Lineup: neutral (two starters out on each side and no premium-position cluster either way - Philadelphia is without OLB Arnold Ebiketie (oblique) and CB Jonathan Jones (ankle), with CB1 Quinyon Mitchell cleared to play; Dallas is without G Tyler Booker (ankle), TE Jake Ferguson (knee/ankle) and WR Jonathan Mingo (ankle))","Form: favors Cowboys (2-1 in the last three games vs. Eagles' 1-2; two of Philadelphia's last three starts were already Milton's, so this reflects tonight's starter, not a QB-change artifact)","Motivation/Spot: favors Cowboys (5-6 and fighting for a playoff spot in a crowded NFC, vs. a 3-7 Eagles team starting its third different QB of the season with little left to play for)","Market: neutral (spread is essentially unchanged from the early-offseason look-ahead line - no reverse line movement)","Matchup splits: favors Cowboys (5.8 Yds/play offense, fresh off 51 points and 480 yards, against the NFL's worst takeaway defense at 32nd/0.5 per game)","Rest: neutral (both teams on the standard Thanksgiving short week)","Travel: neutral (short regional trip, one time zone)","Weather/Venue: neutral (AT&T Stadium roof closed)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Eagles prior game (Nov 22 vs PIT, CBS Gametracker): 214 total net yds, 26 rush att, 21 pass att, 91 rush yds, 123 pass yds (5.86 YPA) in a 19-16 win — no pattern matched. Cowboys prior game (Nov 22 vs TEN, CBS Gametracker): 480 total net yds, 30 rush att, 33 pass att, 155 rush yds, 325 pass yds (9.85 YPA) in a 51-30 win — Pattern B's YPA test passed but YPP was 7.62 (needs ≤5.15); Pattern C's rush/pass ratio (0.91) passed but rush attempts (30) fell short of the 34 threshold — no pattern matched.","altTrendFavors":null,"auditNote":"Corrected the injury facts both ways - Philadelphia is also without OLB Arnold Ebiketie and Dallas also without WR Jonathan Mingo, while CB1 Quinyon Mitchell is cleared to play - and Hurts' blood clot is in his calf per CBS, with no confirmed season-ending timeline; Injuries/Lineup stays neutral and the tally is unchanged.","away":"Philadelphia Eagles","awayMoneyline":348,"awayPDpg":-1.91,"awayQB":"Joe Milton","awayQBRating":69.5,"awayScore":null,"awaySpread":8.5,"awaySpreadOdds":-110,"awayYPP":4.3,"confidence":"toss-up","correct":null,"home":"Dallas Cowboys","homeMoneyline":-446,"homePDpg":-0.04,"homeQB":"Dak Prescott","homeQBRating":97.2,"homeScore":null,"homeSpread":-8.5,"homeSpreadOdds":-110,"homeYPP":5.8,"injuries":{"away":{"2971027":"out","3917657":"injured reserve","4040715":"injured reserve","4257591":"out","4428850":"injured reserve"},"home":{"3929850":"out","4043089":"questionable","4242355":"out","4426485":"out","4702577":"injured reserve"}},"lineMove":{"checked":"2026-11-26T08:24:47+00:00","ml":{"away":[100.0,343.0],"home":[-120.0,-440.0]},"spread":[-1.5,-8.5],"total":[49.5,48.5]},"nflStatsCheck":"Rule 4: Fading Dallas Cowboys: Dak Prescott threw for 325 yards in last game's win (300+), and Dallas Cowboys is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.","nflStatsFavors":"Philadelphia Eagles","nflStatsRules":[{"backtest":"60.3% ATS, n=121 (2017-2025); every season 55%+","detail":"Fading Dallas Cowboys: Dak Prescott threw for 325 yards in last game's win (300+), and Dallas Cowboys is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.","name":"Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win","rule":4}],"offGap":80.6,"pick":"Dallas Cowboys","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipped":false,"starterOut":{"away":[],"checked":"2026-11-26T08:24:46+00:00","home":[{"avg":[8,3.4,2.4,17.0,0.5],"gainers":[{"player":"Brevyn Spann-Ford","pos":"TE","with":[7,2.3,1.6,14.1,0.0],"without":[3,3.3,2.3,20.7,0.3]},{"player":"Luke Schoonmaker","pos":"TE","with":[3,1.0,1.0,10.0,0.0],"without":[2,1.5,1.0,9.0,0.0]}],"lastGame":false,"missed":2,"out":true,"player":"Jake Ferguson","pos":"TE","status":"Out"}],"line":{"now":-8.5,"open":-1.5}},"statLines":["PD/g -1.9 vs 0.0 (blended 50/50 this season/last season)","Yds/play 4.3 vs 5.8 (Philadelphia last leaguewide, Dallas 7th) — largest gap of the slate","QB rating 69.5 vs 97.2 (Milton vs Prescott)"],"storylines":[{"against":false,"fact":"Dallas Cowboys beat Tennessee Titans 51-30 last game despite 11 penalties for 128 yards to their 8 for 60.","key":"beat_refs","leanPct":56.2,"leans":"Dallas Cowboys","live":"7-8","name":"Beat the refs too","pct":56.2,"record":"141-110","says":"back","team":"Dallas Cowboys","unit":"ATS","weight":1}],"thirdConfidence":"strong","thirdCorrect":null,"thirdCover":null,"thirdPick":"Dallas Cowboys","thirdProjectedMargin":-17,"thirdReasoning":"Dallas' offense (51 points, 480 yards last week) against the NFL's worst takeaway defense, plus Philadelphia starting its third different QB of the season on the road, points to a comfortable Dallas cover of 8.5. The most surprising angle is that Milton was a Cowboys castoff himself. Dallas' shaky 3-5 ATS record as a favorite and Eagles' banged-up corners are the main things that could keep it inside the number, but neither offsets the offense/defense mismatch. Would flip toward an Eagles backdoor cover only if Dallas empties the bench with a big fourth-quarter lead.","thirdResearch":["[angle] Eagles QB Jalen Hurts has not played since Week 5 and is on injured reserve, out indefinitely with a blood clot in his calf (CBS Sports, the designated tiebreaker; some outlets reported clots in his lungs and a season-ending timeline, which CBS does not support); backup Tanner McKee started 3 games before being benched, and Joe Milton - whom Dallas itself waived after the preseason - is Philadelphia's QB making a homecoming start against his old team (CBS Sports, Oct-Nov 2026) - helps Cowboys.","[angle] Milton was on the Cowboys' own practice squad before Philadelphia signed him off it; Dallas-market media are framing this as Milton getting a shot to 'ruin the holidays' at AT&T Stadium if he upsets his former team (AtoZ Sports, Nov 2026) — real narrative fuel, could cut either way.","[angle] Philadelphia is the NFL's worst takeaway defense at 0.5 per game (32nd of 32), while Dallas is coming off 480 total yards and 51 points on Tennessee — the Cowboys don't need to force mistakes to move the ball (TeamRankings, CBS box score) — helps Cowboys.","Eagles starting CB Jonathan Jones (ankle) and OLB Arnold Ebiketie (oblique, hurt in the Week 11 win over Pittsburgh) are both ruled out, though CB1 Quinyon Mitchell is confirmed to play after missing Week 11 - Philadelphia is down a starting corner and an edge rusher against CeeDee Lamb and Dak Prescott (Eagles injury report, Bleeding Green Nation, CBS Sports) - helps Cowboys.","Cowboys starting guard Tyler Booker (ankle), TE Jake Ferguson (knee/ankle) and WR Jonathan Mingo (ankle) all did not practice, leaving Dallas down two offensive starters - a dent in the interior protection and red-zone targeting (CBS Sports and SI injury reports) - helps Eagles.","The spread has barely moved since the early-offseason look-ahead line (Cowboys -8.5 then and now), unusual given Dallas' 5-6 record — a sign the market is pricing Philadelphia's QB situation, not the records (Covers.com, FOX Sports) — helps Cowboys (spread-specific).","Dallas is only 3-5 ATS as a favorite this season, failing to cover in losses to the Giants, Buccaneers, Packers, Cardinals and Colts — a real chance the Cowboys win big but still don't clear 8.5 (StatMuse) — helps Eagles (spread-specific).","Philadelphia is 0-3 ATS as a favorite in the games StatMuse tracks and has no recorded underdog cover yet, but Dak Prescott has multiple-interception games this season (Oct. 8 vs. Tampa Bay, Oct. 18 at Green Bay) that can open the door to a backdoor cover late (StatMuse) — helps Eagles (spread-specific, modest hedge).","Philadelphia's offense ranks dead last in the league in yards per play (4.3), the widest gap of any game on the Thanksgiving slate — exactly the kind of mismatch that has produced Dallas blowouts this season (season team stats) — helps Cowboys outright, modest Eagles backdoor-cover hedge.","Dallas is playing its first Thanksgiving home game since the 2025 death of DL Marshawn Kneeland, an emotional/legacy thread players have referenced pregame this season (6abc, 2026 reporting) — context only.","[angle] This FOX Thanksgiving window was built around the Eagles-Cowboys rivalry, and Dallas players have talked about wanting to be the team that finally 'breaks the Thanksgiving curse' against Philadelphia (SI.com) — mild extra motivation for Dallas at home."],"thirdReturn":null,"thirdSpreadReturn":null,"time":"4:30 PM ET"},
-    {"altBlowoutCheck":"Chiefs are off a 34-7 win over Arizona (margin 27, triggers the check): turnover margin was 0 and KC led only 27-7 at half, not tied/close beforehand (condition 1 fails); Kansas City is a +3 underdog tonight, not favored (condition 2 fails); upcoming opponent Buffalo ranks 8th in takeaways forced — top 10 (condition 3 holds); Kansas City ran it only 31 times (condition 4, needs 33+, fails); Mahomes has not shown a clear multi-game turnover pattern this season (condition 5 fails). 1 of 5 conditions hit — regression flag OFF. Bills are off a 26-9 win over Miami (margin 17, triggers the check): turnover margin was actually -1 for Buffalo (Miami forced 2, lost 1) and Buffalo led just 20-6 at half (condition 1 fails); Buffalo is favored -3 tonight, market bought in (condition 2 holds); upcoming opponent Kansas City ranks 2nd in points allowed — top 5 (condition 3 holds); Buffalo ran it only 27 times (condition 4 fails); Josh Allen has 9 INTs and 2 multi-turnover games this season, including 2 INTs in this very game (condition 5 holds). 3 of 5 conditions hit — regression flag ON: +6 to Kansas City.","altBlowoutFavors":"Kansas City Chiefs","altCategoryTally":"Bills 5 - Chiefs 0 (categories); trend 0; blowout +6 to Chiefs → net Chiefs +1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Bills (blended PD/g +8.7 vs +6.4; both Allen and Mahomes are full-season starters, no QB-change discount applies)","Injuries/Lineup: favors Bills (Kansas City has three players ruled out - starting RT Jaylon Moore with a high-ankle sprain, RB Kenneth Walker III with a groin injury for a third straight game, and DT Omarr Norman-Lott - with TE Noah Gray and DL Peter Woods questionable; only Moore is a listed premium position, so no x2 cluster applies. Buffalo has no player ruled out, with five listed questionable: CB Christian Benford, TE Dalton Kincaid, DL T.J. Sanders, G O'Cyrus Torrence and LB Dorian Williams)","Motivation/Spot: favors Bills (hosting its first-ever Thanksgiving home game, has won the last 5 meetings in this rivalry, and leads the AFC at 9-1)","Weather/Venue: favors Bills (forecast ~34-38F with a high chance of rain at kickoff at outdoor Highmark Stadium - a cold, wet night game that favors the acclimated home team)","Matchup splits: favors Bills (Chiefs down starting RT Moore against Buffalo's pass rush, on top of Buffalo's current 5-game win streak in the series)","Rest: neutral (both teams on the standard Thanksgiving short week)","Travel: neutral (one time zone change, non-extreme distance for Kansas City)","Form: neutral (both teams 3-0 in their last three games)","Market: neutral (spread has moved only about half a point toward Buffalo since the early look-ahead line)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Chiefs prior game (Nov 22 vs ARI, CBS Gametracker): 435 total net yds, 31 rush att, 40 pass att, 118 rush yds, 317 pass yds (7.93 YPA) in a 34-7 win — Pattern B's YPA test passed but YPP was 6.13 (needs ≤5.15); Pattern D needed 41+ pass attempts (had 40) — no pattern matched. Bills prior game (Nov 22 vs MIA, CBS Gametracker): 405 total net yds, 27 rush att, 46 pass att, 95 rush yds, 310 pass yds (6.74 YPA) in a 26-9 win — no pattern matched (27 rush attempts fell short of the 34-attempt threshold for Patterns C/D).","altTrendFavors":null,"auditNote":"Corrected the injury facts: Kansas City has three players ruled out (RT Jaylon Moore, RB Kenneth Walker III, DT Omarr Norman-Lott) rather than one, and Buffalo's five clean-report players are listed questionable; only one KC premium position is affected so no x2 cluster applies, the tally is unchanged and the Ledger's off-gap skip stands.","away":"Kansas City Chiefs","awayMoneyline":126,"awayPDpg":6.4,"awayQB":"Patrick Mahomes","awayQBRating":103.8,"awayScore":null,"awaySpread":3,"awaySpreadOdds":-110,"awayYPP":6.3,"confidence":"skip","correct":null,"home":"Buffalo Bills","homeMoneyline":-149,"homePDpg":8.66,"homeQB":"Josh Allen","homeQBRating":125.8,"homeScore":null,"homeSpread":-3,"homeSpreadOdds":-110,"homeYPP":6,"injuries":{"away":{"4043041":"out","4240472":"questionable","4567048":"out","4591008":"out","4871063":"questionable"},"home":{"4379778":"questionable","4385690":"questionable","4428696":"questionable","4568624":"questionable","4684527":"questionable"}},"lineMove":{"checked":"2026-11-26T08:24:47+00:00","ml":{"away":[114.0,127.0],"home":[-135.0,-151.0]},"spread":[-2.5,-3.0],"total":[49.5,45.5]},"nflStatsCheck":"Rule 4: Fading Buffalo Bills: Josh Allen threw for 304 yards in last game's win (300+), and Buffalo Bills is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.","nflStatsFavors":"Kansas City Chiefs","nflStatsRules":[{"backtest":"60.3% ATS, n=121 (2017-2025); every season 55%+","detail":"Fading Buffalo Bills: Josh Allen threw for 304 yards in last game's win (300+), and Buffalo Bills is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.","name":"Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win","rule":4}],"offGap":9.7,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"starterOut":{"away":[{"avg":[8,19.9,109.0,3.2,21.5],"gainers":[{"player":"Emmett Johnson","pos":"RB","with":[8,3.2,13.9,1.8,29.6],"without":[2,22.5,103.0,5.0,54.0]},{"player":"Jaydn Ott","pos":"RB","with":[1,3.0,19.0,0.0,0.0],"without":[1,5.0,12.0,0.0,0.0]},{"player":"Nate Carter","pos":"RB","with":null,"without":[2,1.5,4.5,0.0,0.0]}],"lastGame":false,"missed":2,"out":true,"player":"Kenneth Walker III","pos":"RB","status":"Out"}],"checked":"2026-11-26T08:24:46+00:00","home":[{"avg":[9,4.6,3.6,54.1,0.2],"gainers":[{"player":"Keleki Latu","pos":"TE","with":[1,1.0,1.0,25.0,1.0],"without":[1,4.0,1.0,30.0,0.0]},{"player":"Dawson Knox","pos":"TE","with":[9,2.2,1.6,9.6,0.1],"without":[1,3.0,2.0,31.0,0.0]},{"player":"Jackson Hawes","pos":"TE","with":[3,1.3,0.7,5.0,0.0],"without":null}],"lastGame":false,"missed":1,"out":false,"player":"Dalton Kincaid","pos":"TE","status":"Questionable"}],"line":{"now":-3.0,"open":-2.5}},"statLines":["PD/g +6.4 vs +8.7 (blended 50/50 this season/last season)","Yds/play 6.3 vs 6.0 — both elite (2nd and 5th leaguewide), off-gap screen triggered (9.7 pts)","QB rating 103.8 vs 125.8 (Mahomes vs Allen)"],"storylines":[{"against":false,"fact":"Buffalo Bills is a -3 favorite against the Kansas City Chiefs, a non-division game between division games with Miami Dolphins and New England Patriots.","key":"sandwich","leanPct":52.3,"leans":"Kansas City Chiefs","live":"1-5","name":"Trap game","pct":52.3,"record":"115-105","says":"fade","team":"Buffalo Bills","unit":"ATS","weight":1}],"thirdConfidence":"lean","thirdCorrect":null,"thirdCover":null,"thirdPick":"Kansas City Chiefs","thirdProjectedMargin":-2.5,"thirdReasoning":"Weather, Kansas City's O-line injuries, and Buffalo's rivalry dominance are real, but they're already baked into a short home-favorite number. Kansas City's top-5 scoring defense and the model's own blowout-regression flag on Buffalo's win over Miami (driven by Josh Allen's turnover risk and a bought-in market number) suggest the Chiefs keep this inside a field goal. The most surprising angle is that Buffalo, the rivalry's recent owner, is also this week's statistically flagged regression candidate. Would flip to Buffalo if the rain is heavier than modeled or if Kansas City's O-line injuries prove costlier than the number reflects.","thirdResearch":["[angle] Buffalo has won five straight meetings in this rivalry, including a 28-21 win last season, and tonight is the Bills' first-ever Thanksgiving home game — a milestone and a streak Buffalo is motivated to extend (NFL.com, SI.com) — helps Bills.","[angle] The Highmark Stadium forecast calls for the mid-30s and an 88% chance of heavy rain at kickoff — genuinely difficult passing conditions, and the kind of game Buffalo's identity is built around versus a Chiefs team more associated with dome/warm-weather comfort (weather data) — helps Bills.","[angle] Chiefs starting RT Jaylon Moore is out with a high-ankle sprain described as an injury that 'takes linemen longer to recover from,' and Kansas City's line is already uncertain after the recent promotion of depth piece Fred Johnson — a real pass-protection problem (Yardbarker Chiefs injury report) — helps Bills.","Chiefs RB Kenneth Walker III is out (groin), with rookie Emmett Johnson set to be the lead back and practice-squad elevations expected — a thinned-out skill group (Yardbarker) — helps Bills.","Buffalo's own injury sheet is comparatively clean: no player was ruled out on the final report, and starters such as G O'Cyrus Torrence (hadn't missed a game since 2023) and CB Christian Benford were only limited, suggesting they're expected to play (CBS Sports) — helps Bills.","Josh Allen threw 2 interceptions in last week's win over Miami and has 9 on the season; per the model's own blowout-regression check, Buffalo's win over Miami drew 3 of 5 regression flags (market bought in, a top-5 Chiefs scoring defense, and Allen's turnover history) — helps Chiefs (spread-specific/regression hedge).","Kansas City's defense ranks 2nd in the NFL in points allowed (16.3/game) and 7th in pass defense, giving the Chiefs a credible path to keeping this inside a field goal even if the offense is playing from a slim deficit (TeamRankings) — helps Chiefs (spread-specific).","Kansas City is only getting 3 points as a true road underdog in a game where its own per-play offense (6.3 Yds/play) narrowly outgrades Buffalo's (6.0) — a tighter number than the recent rivalry history alone would suggest (odds data, TeamRankings) — helps Chiefs (spread-specific).","Both teams enter a combined 17-3 and are playing for first place in the AFC — the highest-stakes game of the Thanksgiving slate, cutting against either team playing flat (SI.com) — neutral context.","[angle] Buffalo grades top-10 on a per-play basis on both sides of the ball (6.0 Yds/play, 20.8 points allowed/game), while Kansas City's defense leans more on limiting points than forcing turnovers (2nd in points allowed, only 15th in takeaways) — a style matchup where Buffalo doesn't need to force mistakes to control the game (TeamRankings) — helps Bills.","Both the moneyline (Bills -149/Chiefs +126) and the spread have held basically steady since the early-offseason look (Bills -2.5 then, -3 now) — no late sharp move either direction despite the public narrative around Buffalo's rivalry dominance (Covers.com/FOX Sports odds) — neutral context, mild hedge against overconfidence in Buffalo."],"thirdReturn":null,"thirdSpreadReturn":null,"time":"8:20 PM ET"}
+    {
+      "altBlowoutCheck": "Neither team's last game was a win by 17+ points (Bears won 21-13 at New Orleans, margin 8; Lions won 31-21 over Tampa Bay, margin 10), so the blowout-win regression check does not apply to either side this week.",
+      "altBlowoutFavors": null,
+      "altCategoryTally": "Lions 3 - Bears 2 (categories; Injuries/Lineup weighted x2 for Chicago); trend 0; blowout 0 -> net Lions +1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Lions (blended PD/g +5.4 vs +4.0; both Goff and Williams are full-season starters, no QB-change discount applies)",
+        "Injuries/Lineup (weighted x2 - multi-starter cluster): favors Bears (Detroit is down two premium edge players in the same game - Aidan Hutchinson out for the season on IR with a torn ACL and DJ Wonnum, the only other proven edge, a did-not-practice game-time decision; Chicago's ruled-out trio is nickel CB Kyler Gordon, S Elijah Hicks and RB Roschon Johnson, none of them a listed premium position)",
+        "Market: favors Lions (the line moved one point toward Detroit, from Bears -2.5/-148 at the open to Bears -1.5/-122, on sharp money backing Detroit)",
+        "Matchup splits: favors Lions (6.0 Yds/play offense led by Jahmyr Gibbs and Amon-Ra St. Brown against a Bears secondary with starting nickel CB Kyler Gordon and S Elijah Hicks both ruled out and CB Tyrique Stevenson questionable)",
+        "Motivation/Spot: neutral (both teams are 8-2 and playing for first place in the NFC North, so the stakes are equal; Detroit has no long Thanksgiving skid to snap - it beat Chicago 23-20 on Thanksgiving 2024 - and Ben Johnson's revenge angle for the 2025 Week 2 blowout cuts the other way)",
+        "Rest: neutral (both teams on the standard Thanksgiving short week)",
+        "Travel: neutral (short regional trip for Chicago, no time zone change)",
+        "Form: neutral (both teams 3-0 in their last three games)",
+        "Weather/Venue: neutral (Ford Field is a dome)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "altTrendCheck": "Bears prior game (Nov 22 at NO, CBS Gametracker): 311 total net yds, 33 rush att, 23 pass att, 146 rush yds, 165 pass yds (7.17 YPA) in a 21-13 win \u2014 no pattern matched. Lions prior game (Nov 22 vs TB, CBS Gametracker): 386 total net yds, 29 rush att, 28 pass att, 109 rush yds, 277 pass yds (9.89 YPA) in a 31-21 win \u2014 Pattern B's YPA\u22657.5 test passed but YPP was 6.77 (needs \u22645.15), so no pattern matched.",
+      "altTrendFavors": null,
+      "auditNote": "Corrected the Market category (the line moved toward Detroit, not Chicago), Kyler Gordon from questionable to ruled out, the false 7-game Thanksgiving streak, and the 52-21 blowout's season (2025, not 2026); Injuries/Lineup now carries the x2 multi-starter weighting it was owed, and the Second Opinion remains a pass.",
+      "away": "Chicago Bears",
+      "awayMoneyline": -122,
+      "awayPDpg": 4,
+      "awayQB": "Caleb Williams",
+      "awayQBRating": 95.9,
+      "awayScore": null,
+      "awaySpread": -1.5,
+      "awaySpreadOdds": -110,
+      "awayYPP": 5.4,
+      "confidence": "toss-up",
+      "correct": null,
+      "home": "Detroit Lions",
+      "homeMoneyline": 103,
+      "homePDpg": 5.4,
+      "homeQB": "Jared Goff",
+      "homeQBRating": 113.2,
+      "homeScore": null,
+      "homeSpread": 1.5,
+      "homeSpreadOdds": -110,
+      "homeYPP": 6,
+      "injuries": {
+        "away": {
+          "4241007": "questionable",
+          "4242402": "out",
+          "4361093": "out",
+          "4426374": "questionable",
+          "4426386": "out"
+        },
+        "home": {
+          "3045463": "questionable",
+          "4038849": "questionable",
+          "4361788": "injured reserve",
+          "4566092": "out",
+          "5103940": "injured reserve"
+        }
+      },
+      "lineMove": {
+        "checked": "2026-11-26T08:24:47+00:00",
+        "ml": {
+          "away": [
+            114.0,
+            -120.0
+          ],
+          "home": [
+            -135.0,
+            102.0
+          ]
+        },
+        "spread": [
+          -2.5,
+          1.5
+        ],
+        "total": [
+          51.5,
+          55.5
+        ]
+      },
+      "offGap": 32.2,
+      "pick": "Detroit Lions",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g +4.0 vs +5.4 (blended 50/50 this season/last season)",
+        "Yds/play 5.4 vs 6.0 (Chicago 14th, Detroit 4th leaguewide)",
+        "QB rating 95.9 vs 113.2 (Williams vs Goff)"
+      ],
+      "thirdConfidence": "lean",
+      "thirdCorrect": null,
+      "thirdCover": null,
+      "thirdPick": "Detroit Lions",
+      "thirdProjectedMargin": -2.5,
+      "thirdReasoning": "Chicago's cleaner path at a Lions pass rush missing Aidan Hutchinson for the season is real, but Detroit's 4-game win streak, home dome certainty and an equal-stakes first-place spot tip a pick'em-level game to the Lions by a field goal. The most surprising angle is that the money has moved toward Detroit all week - the Bears opened -2.5 and sit at -1.5 on sharp Lions action - while 63% of public tickets sit on Chicago. Kyler Gordon being ruled out (not merely questionable) hands Amon-Ra St. Brown a favorable alignment. Would flip to Chicago if Wonnum is scratched and Caleb Williams faces a clean pocket all day.",
+      "thirdResearch": [
+        "[angle] Bears HC Ben Johnson, a former Lions offensive coordinator, is looking to avenge a 52-21 loss in Week 2 of the 2025 season in his return to Detroit - a game in which the Bears allowed 8.8 yards per play, the most in franchise history - and he is 0-2 against his former team (Chicago Sun-Times, FOX 32, Nov 2026) - helps Bears.",
+        "[angle] Detroit hosts as the NFC North co-leader at 8-2, with first place on the line; it does not carry a long Thanksgiving skid - the Lions beat Chicago 23-20 on Thanksgiving 2024 and lost only last year's to Green Bay (Lions year-by-year Thanksgiving results) - neutral context.",
+        "[angle] Detroit's pass rush is down to just DJ Wonnum, questionable and held out of Wednesday's practice, after Aidan Hutchinson's season-ending ACL tear; coach Dan Campbell said everyone but Skyler Gill-Howard will be a 'game-time decision' (CBS Sports injury tracker, Nov 2026) \u2014 helps Bears.",
+        "Bears starting nickel CB Kyler Gordon has been ruled OUT (shoulder) and has not played since Nov. 8; S Elijah Hicks (concussion) and RB Roschon Johnson are also out, and CB Tyrique Stevenson is questionable (groin) (CBS Sports / Bears final injury report, Nov 2026) - helps Lions.",
+        "Chicago is 6-4 ATS overall but has lost its last two games ATS, both as a home favorite vs. Tampa Bay and New Orleans \u2014 a caution on the Bears' recent spread form even as true road underdogs tonight (TeamRankings) \u2014 helps Lions.",
+        "Detroit is 5-4-1 ATS, has covered four of its last five, and has both won and covered in each of its last four games straight \u2014 the market has been pricing this Lions team correctly (TeamRankings) \u2014 helps Lions.",
+        "The spread has moved one point toward Detroit since this week's open (Bears -2.5/-148 to Bears -1.5/-122), which CBS attributes to heavy sharp money on the Lions even with a reported 63% of public spread tickets on Chicago - classic reverse line movement (CBS Sports, SI, Nov 2026) - helps Lions (spread-specific).",
+        "Detroit is just 0-1 ATS as an underdog this season (lost outright at Buffalo by 10 as a 5.5-point dog) but a strong 5-3-1 ATS as a favorite \u2014 tonight's small favorite/underdog line (Lions +1.5) is a profile shift worth watching (TeamRankings) \u2014 mixed, slight Bears hedge.",
+        "[angle] Caleb Williams is playing his first career Thursday game, and Ben Johnson's staff has emphasized an abbreviated, recovery-focused short-week prep \u2014 that can disrupt rhythm for a still-developing QB (Chicago beat reporting) \u2014 helps Lions.",
+        "Jahmyr Gibbs and a top-5 scoring Lions offense (6.0 Yds/play, 4th leaguewide) line up against a Bears defense now missing its top slot corner, a specific mismatch the raw YPP gap only partly captures (CBS injury tracker, team stats) \u2014 helps Lions.",
+        "Both teams enter 8-2 playing for an early NFC tiebreaker edge \u2014 elevated stakes for both sides cut against either team being flat (SI.com NFC North coverage) \u2014 neutral context."
+      ],
+      "thirdReturn": null,
+      "thirdSpreadReturn": null,
+      "time": "1:00 PM ET"
+    },
+    {
+      "altBlowoutCheck": "Cowboys are off a 51-30 win over Tennessee (margin 21, triggers the check): turnover margin was only +1 (not +2) and Dallas led just 27-9 at half \u2014 not a tight game pulled away from, so condition 1 fails; Dallas is favored -8.5 tonight, condition 2 (market bought in) holds; upcoming opponent Philadelphia ranks 32nd in takeaways forced, 18th in points allowed and 17th in pass defense, so condition 3 (opponent takes it away) fails; Dallas ran it only 30 times (condition 4, needs 33+, fails); Dak Prescott has 6 INTs and 2 multi-INT games this season, so condition 5 (turnover-prone) holds. 2 of 5 conditions hit \u2014 regression flag OFF, no points awarded.",
+      "altBlowoutFavors": null,
+      "altCategoryTally": "Cowboys 3 - Eagles 0 (categories); trend 0; blowout 0 \u2192 net Cowboys +3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: neutral (Eagles' -1.9 blended PD/g spans three different QBs this season - Jalen Hurts, 5 starts, on IR and out indefinitely with a blood clot in his calf, Tanner McKee, 3 starts, benched, and Joe Milton, tonight's expected starter making his third career start - so it doesn't reflect Milton, and Dallas' own blended PD/g is essentially 0.0, not independently strong enough to carry the category)",
+        "Injuries/Lineup: neutral (two starters out on each side and no premium-position cluster either way - Philadelphia is without OLB Arnold Ebiketie (oblique) and CB Jonathan Jones (ankle), with CB1 Quinyon Mitchell cleared to play; Dallas is without G Tyler Booker (ankle), TE Jake Ferguson (knee/ankle) and WR Jonathan Mingo (ankle))",
+        "Form: favors Cowboys (2-1 in the last three games vs. Eagles' 1-2; two of Philadelphia's last three starts were already Milton's, so this reflects tonight's starter, not a QB-change artifact)",
+        "Motivation/Spot: favors Cowboys (5-6 and fighting for a playoff spot in a crowded NFC, vs. a 3-7 Eagles team starting its third different QB of the season with little left to play for)",
+        "Market: neutral (spread is essentially unchanged from the early-offseason look-ahead line - no reverse line movement)",
+        "Matchup splits: favors Cowboys (5.8 Yds/play offense, fresh off 51 points and 480 yards, against the NFL's worst takeaway defense at 32nd/0.5 per game)",
+        "Rest: neutral (both teams on the standard Thanksgiving short week)",
+        "Travel: neutral (short regional trip, one time zone)",
+        "Weather/Venue: neutral (AT&T Stadium roof closed)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "altTrendCheck": "Eagles prior game (Nov 22 vs PIT, CBS Gametracker): 214 total net yds, 26 rush att, 21 pass att, 91 rush yds, 123 pass yds (5.86 YPA) in a 19-16 win \u2014 no pattern matched. Cowboys prior game (Nov 22 vs TEN, CBS Gametracker): 480 total net yds, 30 rush att, 33 pass att, 155 rush yds, 325 pass yds (9.85 YPA) in a 51-30 win \u2014 Pattern B's YPA test passed but YPP was 7.62 (needs \u22645.15); Pattern C's rush/pass ratio (0.91) passed but rush attempts (30) fell short of the 34 threshold \u2014 no pattern matched.",
+      "altTrendFavors": null,
+      "auditNote": "Corrected the injury facts both ways - Philadelphia is also without OLB Arnold Ebiketie and Dallas also without WR Jonathan Mingo, while CB1 Quinyon Mitchell is cleared to play - and Hurts' blood clot is in his calf per CBS, with no confirmed season-ending timeline; Injuries/Lineup stays neutral and the tally is unchanged.",
+      "away": "Philadelphia Eagles",
+      "awayMoneyline": 348,
+      "awayPDpg": -1.91,
+      "awayQB": "Joe Milton",
+      "awayQBRating": 69.5,
+      "awayScore": null,
+      "awaySpread": 8.5,
+      "awaySpreadOdds": -110,
+      "awayYPP": 4.3,
+      "confidence": "toss-up",
+      "correct": null,
+      "home": "Dallas Cowboys",
+      "homeMoneyline": -446,
+      "homePDpg": -0.04,
+      "homeQB": "Dak Prescott",
+      "homeQBRating": 97.2,
+      "homeScore": null,
+      "homeSpread": -8.5,
+      "homeSpreadOdds": -110,
+      "homeYPP": 5.8,
+      "injuries": {
+        "away": {
+          "2971027": "out",
+          "3917657": "injured reserve",
+          "4040715": "injured reserve",
+          "4257591": "out",
+          "4428850": "injured reserve"
+        },
+        "home": {
+          "3929850": "out",
+          "4043089": "questionable",
+          "4242355": "out",
+          "4426485": "out",
+          "4702577": "injured reserve"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -8.5
+        ],
+        "total": [
+          49.5,
+          49.5
+        ],
+        "ml": {
+          "home": [
+            -120.0,
+            -455.0
+          ],
+          "away": [
+            100.0,
+            354.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:36+00:00"
+      },
+      "nflStatsCheck": "Rule 4: Fading Dallas Cowboys: Dak Prescott threw for 325 yards in last game's win (300+), and Dallas Cowboys is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "nflStatsFavors": "Philadelphia Eagles",
+      "nflStatsRules": [
+        {
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading Dallas Cowboys: Dak Prescott threw for 325 yards in last game's win (300+), and Dallas Cowboys is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "rule": 4
+        }
+      ],
+      "offGap": 80.6,
+      "pick": "Dallas Cowboys",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipped": false,
+      "starterOut": {
+        "away": [],
+        "checked": "2026-11-26T08:24:46+00:00",
+        "home": [
+          {
+            "avg": [
+              8,
+              3.4,
+              2.4,
+              17.0,
+              0.5
+            ],
+            "gainers": [
+              {
+                "player": "Brevyn Spann-Ford",
+                "pos": "TE",
+                "with": [
+                  7,
+                  2.3,
+                  1.6,
+                  14.1,
+                  0.0
+                ],
+                "without": [
+                  3,
+                  3.3,
+                  2.3,
+                  20.7,
+                  0.3
+                ]
+              },
+              {
+                "player": "Luke Schoonmaker",
+                "pos": "TE",
+                "with": [
+                  3,
+                  1.0,
+                  1.0,
+                  10.0,
+                  0.0
+                ],
+                "without": [
+                  2,
+                  1.5,
+                  1.0,
+                  9.0,
+                  0.0
+                ]
+              }
+            ],
+            "lastGame": false,
+            "missed": 2,
+            "out": true,
+            "player": "Jake Ferguson",
+            "pos": "TE",
+            "status": "Out"
+          }
+        ],
+        "line": {
+          "now": -8.5,
+          "open": -1.5
+        }
+      },
+      "statLines": [
+        "PD/g -1.9 vs 0.0 (blended 50/50 this season/last season)",
+        "Yds/play 4.3 vs 5.8 (Philadelphia last leaguewide, Dallas 7th) \u2014 largest gap of the slate",
+        "QB rating 69.5 vs 97.2 (Milton vs Prescott)"
+      ],
+      "storylines": [
+        {
+          "against": false,
+          "fact": "Dallas Cowboys beat Tennessee Titans 51-30 last game despite 11 penalties for 128 yards to their 8 for 60.",
+          "key": "beat_refs",
+          "leanPct": 56.2,
+          "leans": "Dallas Cowboys",
+          "live": "7-8",
+          "name": "Beat the refs too",
+          "pct": 56.2,
+          "record": "141-110",
+          "says": "back",
+          "team": "Dallas Cowboys",
+          "unit": "ATS",
+          "weight": 1
+        }
+      ],
+      "thirdConfidence": "strong",
+      "thirdCorrect": null,
+      "thirdCover": null,
+      "thirdPick": "Dallas Cowboys",
+      "thirdProjectedMargin": -17,
+      "thirdReasoning": "Dallas' offense (51 points, 480 yards last week) against the NFL's worst takeaway defense, plus Philadelphia starting its third different QB of the season on the road, points to a comfortable Dallas cover of 8.5. The most surprising angle is that Milton was a Cowboys castoff himself. Dallas' shaky 3-5 ATS record as a favorite and Eagles' banged-up corners are the main things that could keep it inside the number, but neither offsets the offense/defense mismatch. Would flip toward an Eagles backdoor cover only if Dallas empties the bench with a big fourth-quarter lead.",
+      "thirdResearch": [
+        "[angle] Eagles QB Jalen Hurts has not played since Week 5 and is on injured reserve, out indefinitely with a blood clot in his calf (CBS Sports, the designated tiebreaker; some outlets reported clots in his lungs and a season-ending timeline, which CBS does not support); backup Tanner McKee started 3 games before being benched, and Joe Milton - whom Dallas itself waived after the preseason - is Philadelphia's QB making a homecoming start against his old team (CBS Sports, Oct-Nov 2026) - helps Cowboys.",
+        "[angle] Milton was on the Cowboys' own practice squad before Philadelphia signed him off it; Dallas-market media are framing this as Milton getting a shot to 'ruin the holidays' at AT&T Stadium if he upsets his former team (AtoZ Sports, Nov 2026) \u2014 real narrative fuel, could cut either way.",
+        "[angle] Philadelphia is the NFL's worst takeaway defense at 0.5 per game (32nd of 32), while Dallas is coming off 480 total yards and 51 points on Tennessee \u2014 the Cowboys don't need to force mistakes to move the ball (TeamRankings, CBS box score) \u2014 helps Cowboys.",
+        "Eagles starting CB Jonathan Jones (ankle) and OLB Arnold Ebiketie (oblique, hurt in the Week 11 win over Pittsburgh) are both ruled out, though CB1 Quinyon Mitchell is confirmed to play after missing Week 11 - Philadelphia is down a starting corner and an edge rusher against CeeDee Lamb and Dak Prescott (Eagles injury report, Bleeding Green Nation, CBS Sports) - helps Cowboys.",
+        "Cowboys starting guard Tyler Booker (ankle), TE Jake Ferguson (knee/ankle) and WR Jonathan Mingo (ankle) all did not practice, leaving Dallas down two offensive starters - a dent in the interior protection and red-zone targeting (CBS Sports and SI injury reports) - helps Eagles.",
+        "The spread has barely moved since the early-offseason look-ahead line (Cowboys -8.5 then and now), unusual given Dallas' 5-6 record \u2014 a sign the market is pricing Philadelphia's QB situation, not the records (Covers.com, FOX Sports) \u2014 helps Cowboys (spread-specific).",
+        "Dallas is only 3-5 ATS as a favorite this season, failing to cover in losses to the Giants, Buccaneers, Packers, Cardinals and Colts \u2014 a real chance the Cowboys win big but still don't clear 8.5 (StatMuse) \u2014 helps Eagles (spread-specific).",
+        "Philadelphia is 0-3 ATS as a favorite in the games StatMuse tracks and has no recorded underdog cover yet, but Dak Prescott has multiple-interception games this season (Oct. 8 vs. Tampa Bay, Oct. 18 at Green Bay) that can open the door to a backdoor cover late (StatMuse) \u2014 helps Eagles (spread-specific, modest hedge).",
+        "Philadelphia's offense ranks dead last in the league in yards per play (4.3), the widest gap of any game on the Thanksgiving slate \u2014 exactly the kind of mismatch that has produced Dallas blowouts this season (season team stats) \u2014 helps Cowboys outright, modest Eagles backdoor-cover hedge.",
+        "Dallas is playing its first Thanksgiving home game since the 2025 death of DL Marshawn Kneeland, an emotional/legacy thread players have referenced pregame this season (6abc, 2026 reporting) \u2014 context only.",
+        "[angle] This FOX Thanksgiving window was built around the Eagles-Cowboys rivalry, and Dallas players have talked about wanting to be the team that finally 'breaks the Thanksgiving curse' against Philadelphia (SI.com) \u2014 mild extra motivation for Dallas at home."
+      ],
+      "thirdReturn": null,
+      "thirdSpreadReturn": null,
+      "time": "4:30 PM ET",
+      "gameTotal": 49.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107
+    },
+    {
+      "altBlowoutCheck": "Chiefs are off a 34-7 win over Arizona (margin 27, triggers the check): turnover margin was 0 and KC led only 27-7 at half, not tied/close beforehand (condition 1 fails); Kansas City is a +3 underdog tonight, not favored (condition 2 fails); upcoming opponent Buffalo ranks 8th in takeaways forced \u2014 top 10 (condition 3 holds); Kansas City ran it only 31 times (condition 4, needs 33+, fails); Mahomes has not shown a clear multi-game turnover pattern this season (condition 5 fails). 1 of 5 conditions hit \u2014 regression flag OFF. Bills are off a 26-9 win over Miami (margin 17, triggers the check): turnover margin was actually -1 for Buffalo (Miami forced 2, lost 1) and Buffalo led just 20-6 at half (condition 1 fails); Buffalo is favored -3 tonight, market bought in (condition 2 holds); upcoming opponent Kansas City ranks 2nd in points allowed \u2014 top 5 (condition 3 holds); Buffalo ran it only 27 times (condition 4 fails); Josh Allen has 9 INTs and 2 multi-turnover games this season, including 2 INTs in this very game (condition 5 holds). 3 of 5 conditions hit \u2014 regression flag ON: +6 to Kansas City.",
+      "altBlowoutFavors": "Kansas City Chiefs",
+      "altCategoryTally": "Bills 5 - Chiefs 0 (categories); trend 0; blowout +6 to Chiefs \u2192 net Chiefs +1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Bills (blended PD/g +8.7 vs +6.4; both Allen and Mahomes are full-season starters, no QB-change discount applies)",
+        "Injuries/Lineup: favors Bills (Kansas City has three players ruled out - starting RT Jaylon Moore with a high-ankle sprain, RB Kenneth Walker III with a groin injury for a third straight game, and DT Omarr Norman-Lott - with TE Noah Gray and DL Peter Woods questionable; only Moore is a listed premium position, so no x2 cluster applies. Buffalo has no player ruled out, with five listed questionable: CB Christian Benford, TE Dalton Kincaid, DL T.J. Sanders, G O'Cyrus Torrence and LB Dorian Williams)",
+        "Motivation/Spot: favors Bills (hosting its first-ever Thanksgiving home game, has won the last 5 meetings in this rivalry, and leads the AFC at 9-1)",
+        "Weather/Venue: favors Bills (forecast ~34-38F with a high chance of rain at kickoff at outdoor Highmark Stadium - a cold, wet night game that favors the acclimated home team)",
+        "Matchup splits: favors Bills (Chiefs down starting RT Moore against Buffalo's pass rush, on top of Buffalo's current 5-game win streak in the series)",
+        "Rest: neutral (both teams on the standard Thanksgiving short week)",
+        "Travel: neutral (one time zone change, non-extreme distance for Kansas City)",
+        "Form: neutral (both teams 3-0 in their last three games)",
+        "Market: neutral (spread has moved only about half a point toward Buffalo since the early look-ahead line)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "altTrendCheck": "Chiefs prior game (Nov 22 vs ARI, CBS Gametracker): 435 total net yds, 31 rush att, 40 pass att, 118 rush yds, 317 pass yds (7.93 YPA) in a 34-7 win \u2014 Pattern B's YPA test passed but YPP was 6.13 (needs \u22645.15); Pattern D needed 41+ pass attempts (had 40) \u2014 no pattern matched. Bills prior game (Nov 22 vs MIA, CBS Gametracker): 405 total net yds, 27 rush att, 46 pass att, 95 rush yds, 310 pass yds (6.74 YPA) in a 26-9 win \u2014 no pattern matched (27 rush attempts fell short of the 34-attempt threshold for Patterns C/D).",
+      "altTrendFavors": null,
+      "auditNote": "Corrected the injury facts: Kansas City has three players ruled out (RT Jaylon Moore, RB Kenneth Walker III, DT Omarr Norman-Lott) rather than one, and Buffalo's five clean-report players are listed questionable; only one KC premium position is affected so no x2 cluster applies, the tally is unchanged and the Ledger's off-gap skip stands.",
+      "away": "Kansas City Chiefs",
+      "awayMoneyline": 126,
+      "awayPDpg": 6.4,
+      "awayQB": "Patrick Mahomes",
+      "awayQBRating": 103.8,
+      "awayScore": null,
+      "awaySpread": 3,
+      "awaySpreadOdds": -110,
+      "awayYPP": 6.3,
+      "confidence": "skip",
+      "correct": null,
+      "home": "Buffalo Bills",
+      "homeMoneyline": -149,
+      "homePDpg": 8.66,
+      "homeQB": "Josh Allen",
+      "homeQBRating": 125.8,
+      "homeScore": null,
+      "homeSpread": -3,
+      "homeSpreadOdds": -110,
+      "homeYPP": 6,
+      "injuries": {
+        "away": {
+          "4043041": "out",
+          "4240472": "questionable",
+          "4567048": "out",
+          "4591008": "out",
+          "4871063": "questionable"
+        },
+        "home": {
+          "4379778": "questionable",
+          "4385690": "questionable",
+          "4428696": "questionable",
+          "4568624": "questionable",
+          "4684527": "questionable"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          -2.5,
+          -3.0
+        ],
+        "total": [
+          49.5,
+          45.5
+        ],
+        "ml": {
+          "home": [
+            -135.0,
+            -154.0
+          ],
+          "away": [
+            114.0,
+            130.0
+          ]
+        },
+        "checked": "2026-11-26T19:04:36+00:00"
+      },
+      "nflStatsCheck": "Rule 4: Fading Buffalo Bills: Josh Allen threw for 304 yards in last game's win (300+), and Buffalo Bills is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "nflStatsFavors": "Kansas City Chiefs",
+      "nflStatsRules": [
+        {
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading Buffalo Bills: Josh Allen threw for 304 yards in last game's win (300+), and Buffalo Bills is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "rule": 4
+        }
+      ],
+      "offGap": 9.7,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "starterOut": {
+        "away": [
+          {
+            "avg": [
+              8,
+              19.9,
+              109.0,
+              3.2,
+              21.5
+            ],
+            "gainers": [
+              {
+                "player": "Emmett Johnson",
+                "pos": "RB",
+                "with": [
+                  8,
+                  3.2,
+                  13.9,
+                  1.8,
+                  29.6
+                ],
+                "without": [
+                  2,
+                  22.5,
+                  103.0,
+                  5.0,
+                  54.0
+                ]
+              },
+              {
+                "player": "Jaydn Ott",
+                "pos": "RB",
+                "with": [
+                  1,
+                  3.0,
+                  19.0,
+                  0.0,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  5.0,
+                  12.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Nate Carter",
+                "pos": "RB",
+                "with": null,
+                "without": [
+                  2,
+                  1.5,
+                  4.5,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "lastGame": false,
+            "missed": 2,
+            "out": true,
+            "player": "Kenneth Walker III",
+            "pos": "RB",
+            "status": "Out"
+          }
+        ],
+        "checked": "2026-11-26T08:24:46+00:00",
+        "home": [
+          {
+            "avg": [
+              9,
+              4.6,
+              3.6,
+              54.1,
+              0.2
+            ],
+            "gainers": [
+              {
+                "player": "Keleki Latu",
+                "pos": "TE",
+                "with": [
+                  1,
+                  1.0,
+                  1.0,
+                  25.0,
+                  1.0
+                ],
+                "without": [
+                  1,
+                  4.0,
+                  1.0,
+                  30.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Dawson Knox",
+                "pos": "TE",
+                "with": [
+                  9,
+                  2.2,
+                  1.6,
+                  9.6,
+                  0.1
+                ],
+                "without": [
+                  1,
+                  3.0,
+                  2.0,
+                  31.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Jackson Hawes",
+                "pos": "TE",
+                "with": [
+                  3,
+                  1.3,
+                  0.7,
+                  5.0,
+                  0.0
+                ],
+                "without": null
+              }
+            ],
+            "lastGame": false,
+            "missed": 1,
+            "out": false,
+            "player": "Dalton Kincaid",
+            "pos": "TE",
+            "status": "Questionable"
+          }
+        ],
+        "line": {
+          "now": -3.0,
+          "open": -2.5
+        }
+      },
+      "statLines": [
+        "PD/g +6.4 vs +8.7 (blended 50/50 this season/last season)",
+        "Yds/play 6.3 vs 6.0 \u2014 both elite (2nd and 5th leaguewide), off-gap screen triggered (9.7 pts)",
+        "QB rating 103.8 vs 125.8 (Mahomes vs Allen)"
+      ],
+      "storylines": [
+        {
+          "against": false,
+          "fact": "Buffalo Bills is a -3 favorite against the Kansas City Chiefs, a non-division game between division games with Miami Dolphins and New England Patriots.",
+          "key": "sandwich",
+          "leanPct": 52.3,
+          "leans": "Kansas City Chiefs",
+          "live": "1-5",
+          "name": "Trap game",
+          "pct": 52.3,
+          "record": "115-105",
+          "says": "fade",
+          "team": "Buffalo Bills",
+          "unit": "ATS",
+          "weight": 1
+        }
+      ],
+      "thirdConfidence": "lean",
+      "thirdCorrect": null,
+      "thirdCover": null,
+      "thirdPick": "Kansas City Chiefs",
+      "thirdProjectedMargin": -2.5,
+      "thirdReasoning": "Weather, Kansas City's O-line injuries, and Buffalo's rivalry dominance are real, but they're already baked into a short home-favorite number. Kansas City's top-5 scoring defense and the model's own blowout-regression flag on Buffalo's win over Miami (driven by Josh Allen's turnover risk and a bought-in market number) suggest the Chiefs keep this inside a field goal. The most surprising angle is that Buffalo, the rivalry's recent owner, is also this week's statistically flagged regression candidate. Would flip to Buffalo if the rain is heavier than modeled or if Kansas City's O-line injuries prove costlier than the number reflects.",
+      "thirdResearch": [
+        "[angle] Buffalo has won five straight meetings in this rivalry, including a 28-21 win last season, and tonight is the Bills' first-ever Thanksgiving home game \u2014 a milestone and a streak Buffalo is motivated to extend (NFL.com, SI.com) \u2014 helps Bills.",
+        "[angle] The Highmark Stadium forecast calls for the mid-30s and an 88% chance of heavy rain at kickoff \u2014 genuinely difficult passing conditions, and the kind of game Buffalo's identity is built around versus a Chiefs team more associated with dome/warm-weather comfort (weather data) \u2014 helps Bills.",
+        "[angle] Chiefs starting RT Jaylon Moore is out with a high-ankle sprain described as an injury that 'takes linemen longer to recover from,' and Kansas City's line is already uncertain after the recent promotion of depth piece Fred Johnson \u2014 a real pass-protection problem (Yardbarker Chiefs injury report) \u2014 helps Bills.",
+        "Chiefs RB Kenneth Walker III is out (groin), with rookie Emmett Johnson set to be the lead back and practice-squad elevations expected \u2014 a thinned-out skill group (Yardbarker) \u2014 helps Bills.",
+        "Buffalo's own injury sheet is comparatively clean: no player was ruled out on the final report, and starters such as G O'Cyrus Torrence (hadn't missed a game since 2023) and CB Christian Benford were only limited, suggesting they're expected to play (CBS Sports) \u2014 helps Bills.",
+        "Josh Allen threw 2 interceptions in last week's win over Miami and has 9 on the season; per the model's own blowout-regression check, Buffalo's win over Miami drew 3 of 5 regression flags (market bought in, a top-5 Chiefs scoring defense, and Allen's turnover history) \u2014 helps Chiefs (spread-specific/regression hedge).",
+        "Kansas City's defense ranks 2nd in the NFL in points allowed (16.3/game) and 7th in pass defense, giving the Chiefs a credible path to keeping this inside a field goal even if the offense is playing from a slim deficit (TeamRankings) \u2014 helps Chiefs (spread-specific).",
+        "Kansas City is only getting 3 points as a true road underdog in a game where its own per-play offense (6.3 Yds/play) narrowly outgrades Buffalo's (6.0) \u2014 a tighter number than the recent rivalry history alone would suggest (odds data, TeamRankings) \u2014 helps Chiefs (spread-specific).",
+        "Both teams enter a combined 17-3 and are playing for first place in the AFC \u2014 the highest-stakes game of the Thanksgiving slate, cutting against either team playing flat (SI.com) \u2014 neutral context.",
+        "[angle] Buffalo grades top-10 on a per-play basis on both sides of the ball (6.0 Yds/play, 20.8 points allowed/game), while Kansas City's defense leans more on limiting points than forcing turnovers (2nd in points allowed, only 15th in takeaways) \u2014 a style matchup where Buffalo doesn't need to force mistakes to control the game (TeamRankings) \u2014 helps Bills.",
+        "Both the moneyline (Bills -149/Chiefs +126) and the spread have held basically steady since the early-offseason look (Bills -2.5 then, -3 now) \u2014 no late sharp move either direction despite the public narrative around Buffalo's rivalry dominance (Covers.com/FOX Sports odds) \u2014 neutral context, mild hedge against overconfidence in Buffalo."
+      ],
+      "thirdReturn": null,
+      "thirdSpreadReturn": null,
+      "time": "8:20 PM ET",
+      "gameTotal": 45.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -109
+    }
   ]
 }
