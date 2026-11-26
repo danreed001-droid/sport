@@ -783,9 +783,9 @@
       "awaySpreadOdds": -115,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 220.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -116,
       "home": "New York Knicks",
       "homeMoneyline": -155,
       "homeNetRtg": 6.2,
@@ -811,7 +811,7 @@
         ],
         "total": [
           220.5,
-          220.5
+          221.5
         ],
         "ml": {
           "home": [
@@ -828,7 +828,7 @@
           "moneyHome": 51,
           "rlm": null
         },
-        "checked": "2026-11-25T23:40:04+00:00"
+        "checked": "2026-11-26T00:21:13+00:00"
       },
       "netRtgGap": 20.69,
       "pick": null,
@@ -1059,7 +1059,7 @@
         }
       ],
       "time": "7:30 PM ET",
-      "totalsLine": 220.5
+      "totalsLine": 221.5
     },
     {
       "altCategoryTally": "2-0",
@@ -1760,8 +1760,8 @@
       "statsLine": {
         "homeSpread": -1.5,
         "awaySpread": 1.5,
-        "homeSpreadOdds": -101,
-        "awaySpreadOdds": -119,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
         "homeMoneyline": -117,
         "awayMoneyline": -101
       },
@@ -1844,11 +1844,11 @@
           ]
         },
         "public": {
-          "betsHome": 43,
-          "moneyHome": 41,
+          "betsHome": 44,
+          "moneyHome": 42,
           "rlm": null
         },
-        "checked": "2026-11-25T23:40:04+00:00"
+        "checked": "2026-11-26T00:21:13+00:00"
       },
       "netRtgGap": 44.83,
       "pick": "Houston Rockets",
@@ -1913,9 +1913,9 @@
       "awaySpreadOdds": -115,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 225.5,
-      "gameTotalOverOdds": -107,
-      "gameTotalUnderOdds": -114,
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Portland Trail Blazers",
       "homeMoneyline": 130,
       "homeNetRtg": 6.5,
@@ -1945,24 +1945,24 @@
         ],
         "total": [
           237.5,
-          225.5
+          226.5
         ],
         "ml": {
           "home": [
             142.0,
-            136.0
+            130.0
           ],
           "away": [
             -170.0,
-            -162.0
+            -155.0
           ]
         },
         "public": {
-          "betsHome": 33,
+          "betsHome": 34,
           "moneyHome": 40,
           "rlm": null
         },
-        "checked": "2026-11-25T23:40:04+00:00"
+        "checked": "2026-11-26T00:21:13+00:00"
       },
       "netRtgGap": 20.69,
       "pick": null,
@@ -2304,8 +2304,8 @@
         "awaySpread": -3.5,
         "homeSpreadOdds": -112,
         "awaySpreadOdds": -108,
-        "homeMoneyline": 136,
-        "awayMoneyline": -162
+        "homeMoneyline": 130,
+        "awayMoneyline": -155
       },
       "statsSpread": 3.5,
       "storylines": [
@@ -2339,7 +2339,7 @@
         }
       ],
       "time": "10:00 PM ET",
-      "totalsLine": 225.5
+      "totalsLine": 226.5
     },
     {
       "altCategoryTally": "2-1",
@@ -2371,8 +2371,8 @@
       "confidence": "solid",
       "correct": null,
       "gameTotal": 215.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
       "home": "Golden State Warriors",
       "homeMoneyline": -264,
       "homeNetRtg": -0.8,
@@ -2406,19 +2406,19 @@
         "ml": {
           "home": [
             -241.0,
-            -324.0
+            -304.0
           ],
           "away": [
             199.0,
-            261.0
+            247.0
           ]
         },
         "public": {
-          "betsHome": 50,
-          "moneyHome": 54,
+          "betsHome": 48,
+          "moneyHome": 50,
           "rlm": null
         },
-        "checked": "2026-11-25T23:40:04+00:00"
+        "checked": "2026-11-26T00:21:13+00:00"
       },
       "netRtgGap": 37.93,
       "pick": "Golden State Warriors",
@@ -2659,10 +2659,10 @@
       "statsLine": {
         "homeSpread": -7.5,
         "awaySpread": 7.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -324,
-        "awayMoneyline": 261
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": -304,
+        "awayMoneyline": 247
       },
       "statsSpread": -7.5,
       "storylines": [

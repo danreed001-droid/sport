@@ -54,18 +54,18 @@
       "homeYPP": 5.7,
       "injuries": {
         "away": {
-          "14931": "questionable",
-          "4426411": "questionable",
-          "4361904": "questionable",
-          "4430191": "questionable",
-          "4259305": "questionable"
+          "4360887": "out",
+          "4569661": "out",
+          "3124005": "out",
+          "4240090": "out",
+          "4047365": "out"
         },
         "home": {
+          "4598574": "out",
           "3052180": "out",
-          "4570037": "injured reserve",
-          "16800": "injured reserve",
-          "4426515": "injured reserve",
-          "4362474": "out"
+          "4685522": "out",
+          "4362294": "out",
+          "4240123": "out"
         }
       },
       "lineMove": {
@@ -80,14 +80,14 @@
         "ml": {
           "home": [
             -198.0,
-            -140.0
+            -141.0
           ],
           "away": [
             164.0,
-            118.0
+            119.0
           ]
         },
-        "checked": "2026-11-25T23:40:05+00:00"
+        "checked": "2026-11-26T00:21:13+00:00"
       },
       "offGap": 16.1,
       "pick": null,
@@ -97,150 +97,79 @@
       "skipReason": "off-gap",
       "skipped": true,
       "starterOut": {
-        "checked": "2026-11-25T23:40:04+00:00",
+        "checked": "2026-11-26T00:21:12+00:00",
         "line": {
           "open": -3.5,
           "now": -2.5
         },
-        "away": [],
-        "home": [
+        "away": [
           {
-            "player": "Puka Nacua",
-            "pos": "WR",
-            "status": "Injured Reserve",
+            "player": "Josh Jacobs",
+            "pos": "RB",
+            "status": "Out",
             "out": true,
             "lastGame": false,
             "missed": 1,
             "avg": [
-              7,
-              13.3,
-              10.0,
-              102.1,
-              0.6
+              3,
+              12.0,
+              26.7,
+              3.7,
+              22.7
             ],
             "gainers": [
               {
-                "player": "Konata Mumpfield",
-                "pos": "WR",
+                "player": "Pierre Strong Jr.",
+                "pos": "RB",
                 "with": [
-                  6,
-                  2.2,
+                  2,
+                  4.5,
+                  12.0,
                   1.0,
-                  9.5,
-                  0.0
+                  5.5
                 ],
                 "without": [
-                  3,
-                  4.7,
-                  2.7,
-                  62.0,
-                  0.3
+                  2,
+                  8.0,
+                  17.5,
+                  4.0,
+                  25.0
                 ]
               },
               {
-                "player": "Xavier Smith",
-                "pos": "WR",
+                "player": "Chris Brooks",
+                "pos": "RB",
                 "with": null,
                 "without": [
-                  2,
-                  1.5,
-                  1.0,
-                  20.0,
-                  0.5
+                  5,
+                  3.4,
+                  14.2,
+                  0.8,
+                  5.2
                 ]
               },
               {
-                "player": "Tutu Atwell",
-                "pos": "WR",
-                "with": [
-                  4,
-                  2.8,
-                  1.5,
-                  20.0,
-                  0.0
-                ],
-                "without": [
-                  2,
-                  2.0,
-                  1.0,
-                  25.0,
-                  0.0
-                ]
-              }
-            ]
-          },
-          {
-            "player": "Davante Adams",
-            "pos": "WR",
-            "status": "Injured Reserve",
-            "out": true,
-            "lastGame": false,
-            "missed": 4,
-            "avg": [
-              6,
-              8.2,
-              5.0,
-              80.0,
-              0.7
-            ],
-            "gainers": [
-              {
-                "player": "Tutu Atwell",
-                "pos": "WR",
-                "with": [
-                  3,
-                  1.3,
-                  1.0,
-                  10.3,
-                  0.0
-                ],
-                "without": [
-                  3,
-                  3.7,
-                  1.7,
-                  33.0,
-                  0.0
-                ]
-              },
-              {
-                "player": "Xavier Smith",
-                "pos": "WR",
-                "with": [
-                  1,
-                  1.0,
-                  0.0,
-                  0.0,
-                  0.0
-                ],
-                "without": [
-                  1,
-                  2.0,
-                  2.0,
-                  40.0,
-                  1.0
-                ]
-              },
-              {
-                "player": "Jordan Whittington",
-                "pos": "WR",
+                "player": "MarShawn Lloyd",
+                "pos": "RB",
                 "with": [
                   2,
+                  4.5,
+                  13.5,
                   1.5,
-                  1.0,
-                  6.0,
-                  0.0
+                  12.0
                 ],
                 "without": [
-                  1,
-                  1.0,
-                  0.0,
-                  0.0,
-                  0.0
+                  7,
+                  7.4,
+                  19.3,
+                  1.9,
+                  11.6
                 ]
               }
             ]
           }
-        ]
+        ],
+        "home": []
       },
       "statLines": [
         "PD/g (blended) +1.2 vs +8.1",

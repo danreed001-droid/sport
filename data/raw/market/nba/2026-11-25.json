@@ -1,7 +1,7 @@
 {
  "date": "2026-11-25",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-25T23:39:12+00:00",
+ "fetchedAt": "2026-11-26T00:20:40+00:00",
  "games": [
   {
    "away": "Miami Heat",
@@ -61,14 +61,14 @@
     "money_home": 51
    },
    "total": {
-    "now": 219.5,
+    "now": 220.5,
     "open": 220.5,
     "tix_over": 84,
     "money_over": 76
    },
    "moneyline": {
-    "home": -180,
-    "away": 150
+    "home": -184,
+    "away": 152
    },
    "rlmFavorite": null
   },
@@ -91,7 +91,7 @@
    },
    "moneyline": {
     "home": -139,
-    "away": 115
+    "away": 116
    },
    "rlmFavorite": null
   },
@@ -107,14 +107,14 @@
     "money_home": 31
    },
    "total": {
-    "now": 234.5,
+    "now": 234,
     "open": 228.5,
     "tix_over": 64,
     "money_over": 70
    },
    "moneyline": {
     "home": -117,
-    "away": -103
+    "away": -102
    },
    "rlmFavorite": null
   },
@@ -149,8 +149,8 @@
    "spread": {
     "home": -9.5,
     "open": -10.5,
-    "tix_home": 43,
-    "money_home": 41
+    "tix_home": 44,
+    "money_home": 42
    },
    "total": {
     "now": 222.5,
@@ -172,18 +172,18 @@
    "spread": {
     "home": 3.5,
     "open": 4.5,
-    "tix_home": 33,
+    "tix_home": 34,
     "money_home": 40
    },
    "total": {
-    "now": 225,
+    "now": 226.5,
     "open": 237.5,
-    "tix_over": 79,
-    "money_over": 77
+    "tix_over": 80,
+    "money_over": 78
    },
    "moneyline": {
-    "home": 135,
-    "away": -160
+    "home": 132,
+    "away": -156
    },
    "rlmFavorite": null
   },
@@ -195,18 +195,18 @@
    "spread": {
     "home": -8.5,
     "open": -5.5,
-    "tix_home": 50,
-    "money_home": 54
+    "tix_home": 48,
+    "money_home": 50
    },
    "total": {
-    "now": 215,
+    "now": 215.5,
     "open": 218.5,
-    "tix_over": 76,
-    "money_over": 65
+    "tix_over": 75,
+    "money_over": 69
    },
    "moneyline": {
-    "home": -325,
-    "away": 261
+    "home": -324,
+    "away": 260
    },
    "rlmFavorite": null
   }
