@@ -1,0 +1,415 @@
+{
+  "date": "2026-11-26",
+  "weekday": "Thursday",
+  "sport": "nfl",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-26T08:24:08Z",
+  "games": [
+    {
+      "espnId": "401873081",
+      "away": "Chicago Bears",
+      "home": "Detroit Lions",
+      "time": "1:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -113.0,
+      "awaySpreadOdds": -106.0,
+      "homeMoneyline": 102.0,
+      "awayMoneyline": -120.0,
+      "injuries": {
+        "away": {
+          "4241007": "questionable",
+          "4426374": "questionable",
+          "4361093": "out",
+          "4426386": "out",
+          "4242402": "out"
+        },
+        "home": {
+          "5103940": "injured reserve",
+          "4566092": "out",
+          "3045463": "questionable",
+          "4038849": "questionable",
+          "4361788": "injured reserve"
+        }
+      },
+      "lineMove": {
+        "spread": [
+          -2.5,
+          1.5
+        ],
+        "total": [
+          51.5,
+          55.5
+        ],
+        "ml": {
+          "home": [
+            -135.0,
+            102.0
+          ],
+          "away": [
+            114.0,
+            -120.0
+          ]
+        },
+        "checked": "2026-11-26T08:24:47+00:00"
+      }
+    },
+    {
+      "espnId": "401873080",
+      "away": "Philadelphia Eagles",
+      "home": "Dallas Cowboys",
+      "time": "4:30 PM ET",
+      "homeSpread": -8.5,
+      "awaySpread": 8.5,
+      "homeSpreadOdds": -111.0,
+      "awaySpreadOdds": -108.0,
+      "homeMoneyline": -440.0,
+      "awayMoneyline": 343.0,
+      "nflStatsFavors": "Philadelphia Eagles",
+      "nflStatsRules": [
+        {
+          "rule": 4,
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading Dallas Cowboys: Dak Prescott threw for 325 yards in last game's win (300+), and Dallas Cowboys is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
+        }
+      ],
+      "nflStatsCheck": "Rule 4: Fading Dallas Cowboys: Dak Prescott threw for 325 yards in last game's win (300+), and Dallas Cowboys is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "7-8",
+          "key": "beat_refs",
+          "name": "Beat the refs too",
+          "team": "Dallas Cowboys",
+          "says": "back",
+          "fact": "Dallas Cowboys beat Tennessee Titans 51-30 last game despite 11 penalties for 128 yards to their 8 for 60.",
+          "record": "141-110",
+          "pct": 56.2,
+          "leans": "Dallas Cowboys",
+          "leanPct": 56.2,
+          "against": false,
+          "unit": "ATS"
+        }
+      ],
+      "injuries": {
+        "away": {
+          "4257591": "out",
+          "2971027": "out",
+          "3917657": "injured reserve",
+          "4428850": "injured reserve",
+          "4040715": "injured reserve"
+        },
+        "home": {
+          "4702577": "injured reserve",
+          "3929850": "out",
+          "4426485": "out",
+          "4043089": "questionable",
+          "4242355": "out"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-26T08:24:46+00:00",
+        "line": {
+          "open": -1.5,
+          "now": -8.5
+        },
+        "away": [],
+        "home": [
+          {
+            "player": "Jake Ferguson",
+            "pos": "TE",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 2,
+            "avg": [
+              8,
+              3.4,
+              2.4,
+              17.0,
+              0.5
+            ],
+            "gainers": [
+              {
+                "player": "Brevyn Spann-Ford",
+                "pos": "TE",
+                "with": [
+                  7,
+                  2.3,
+                  1.6,
+                  14.1,
+                  0.0
+                ],
+                "without": [
+                  3,
+                  3.3,
+                  2.3,
+                  20.7,
+                  0.3
+                ]
+              },
+              {
+                "player": "Luke Schoonmaker",
+                "pos": "TE",
+                "with": [
+                  3,
+                  1.0,
+                  1.0,
+                  10.0,
+                  0.0
+                ],
+                "without": [
+                  2,
+                  1.5,
+                  1.0,
+                  9.0,
+                  0.0
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -8.5
+        ],
+        "total": [
+          49.5,
+          48.5
+        ],
+        "ml": {
+          "home": [
+            -120.0,
+            -440.0
+          ],
+          "away": [
+            100.0,
+            343.0
+          ]
+        },
+        "checked": "2026-11-26T08:24:47+00:00"
+      }
+    },
+    {
+      "espnId": "401873082",
+      "away": "Kansas City Chiefs",
+      "home": "Buffalo Bills",
+      "time": "8:20 PM ET",
+      "homeSpread": -3.0,
+      "awaySpread": 3.0,
+      "homeSpreadOdds": -102.0,
+      "awaySpreadOdds": -117.0,
+      "homeMoneyline": -151.0,
+      "awayMoneyline": 127.0,
+      "nflStatsFavors": "Kansas City Chiefs",
+      "nflStatsRules": [
+        {
+          "rule": 4,
+          "name": "Fade a home team vs. a weaker team after its QB threw for 300+ yards in a win",
+          "backtest": "60.3% ATS, n=121 (2017-2025); every season 55%+",
+          "detail": "Fading Buffalo Bills: Josh Allen threw for 304 yards in last game's win (300+), and Buffalo Bills is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+."
+        }
+      ],
+      "nflStatsCheck": "Rule 4: Fading Buffalo Bills: Josh Allen threw for 304 yards in last game's win (300+), and Buffalo Bills is home vs. a worse-record opponent -- teams in this spot were faded 60.3% of the time ATS, 2017-2025 (n=121), every season 55%+.",
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-5",
+          "key": "sandwich",
+          "name": "Trap game",
+          "team": "Buffalo Bills",
+          "says": "fade",
+          "fact": "Buffalo Bills is a -3 favorite against the Kansas City Chiefs, a non-division game between division games with Miami Dolphins and New England Patriots.",
+          "record": "115-105",
+          "pct": 52.3,
+          "leans": "Kansas City Chiefs",
+          "leanPct": 52.3,
+          "against": false,
+          "unit": "ATS"
+        }
+      ],
+      "injuries": {
+        "away": {
+          "4871063": "questionable",
+          "4591008": "out",
+          "4043041": "out",
+          "4240472": "questionable",
+          "4567048": "out"
+        },
+        "home": {
+          "4684527": "questionable",
+          "4568624": "questionable",
+          "4379778": "questionable",
+          "4385690": "questionable",
+          "4428696": "questionable"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-26T08:24:46+00:00",
+        "line": {
+          "open": -2.5,
+          "now": -3.0
+        },
+        "away": [
+          {
+            "player": "Kenneth Walker III",
+            "pos": "RB",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 2,
+            "avg": [
+              8,
+              19.9,
+              109.0,
+              3.2,
+              21.5
+            ],
+            "gainers": [
+              {
+                "player": "Emmett Johnson",
+                "pos": "RB",
+                "with": [
+                  8,
+                  3.2,
+                  13.9,
+                  1.8,
+                  29.6
+                ],
+                "without": [
+                  2,
+                  22.5,
+                  103.0,
+                  5.0,
+                  54.0
+                ]
+              },
+              {
+                "player": "Jaydn Ott",
+                "pos": "RB",
+                "with": [
+                  1,
+                  3.0,
+                  19.0,
+                  0.0,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  5.0,
+                  12.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Nate Carter",
+                "pos": "RB",
+                "with": null,
+                "without": [
+                  2,
+                  1.5,
+                  4.5,
+                  0.0,
+                  0.0
+                ]
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "player": "Dalton Kincaid",
+            "pos": "TE",
+            "status": "Questionable",
+            "out": false,
+            "lastGame": false,
+            "missed": 1,
+            "avg": [
+              9,
+              4.6,
+              3.6,
+              54.1,
+              0.2
+            ],
+            "gainers": [
+              {
+                "player": "Keleki Latu",
+                "pos": "TE",
+                "with": [
+                  1,
+                  1.0,
+                  1.0,
+                  25.0,
+                  1.0
+                ],
+                "without": [
+                  1,
+                  4.0,
+                  1.0,
+                  30.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Dawson Knox",
+                "pos": "TE",
+                "with": [
+                  9,
+                  2.2,
+                  1.6,
+                  9.6,
+                  0.1
+                ],
+                "without": [
+                  1,
+                  3.0,
+                  2.0,
+                  31.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Jackson Hawes",
+                "pos": "TE",
+                "with": [
+                  3,
+                  1.3,
+                  0.7,
+                  5.0,
+                  0.0
+                ],
+                "without": null
+              }
+            ]
+          }
+        ]
+      },
+      "lineMove": {
+        "spread": [
+          -2.5,
+          -3.0
+        ],
+        "total": [
+          49.5,
+          45.5
+        ],
+        "ml": {
+          "home": [
+            -135.0,
+            -151.0
+          ],
+          "away": [
+            114.0,
+            127.0
+          ]
+        },
+        "checked": "2026-11-26T08:24:47+00:00"
+      }
+    }
+  ]
+}

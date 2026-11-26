@@ -2,7 +2,7 @@
   "date": "2026-11-25",
   "weekday": "Wednesday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-25T13:10:00-05:00",
   "auditChanges": [
     "NFL Packers@Rams: blowout-check turnover detail corrected (Arizona threw 2 INT, the Rams 1 \u2014 margin still +1, so the sub-condition still fails and the check still fires 3 of 5). No pick change."
@@ -14,8 +14,8 @@
       "altBlowoutFavors": "Green Bay Packers",
       "altCategoryTally": "9-3 (GB) [base 3-3, trend check 0, blowout-regression check +6 GB]",
       "altConfidence": "strong",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": false,
+      "altCover": false,
       "altPick": "Green Bay Packers",
       "altReasons": [
         "Scoring margin: favors Los Angeles Rams (blended PD/g +8.1 vs Green Bay's +1.2 \u2014 0.5x 2026 + 0.5x 2025 PD/g for each team). Both QBs have started all 10 games this season, so no major-QB-change discount applies.",
@@ -24,8 +24,8 @@
         "Motivation/Spot: favors Los Angeles Rams. Both teams are 6-4, but per therams.com's Week 12 preview the Rams (No. 9 seed) are currently outside the NFC playoff picture while the Packers (No. 7 seed) hold a spot despite sitting last in the NFC North; Rams are home riding a 4-game win streak trying to climb back into the field.",
         "Matchup splits: favors Green Bay Packers. Rams' interior O-line injuries (Avila, Shelton out) against a Packers pass rush getting Parsons back is a clean, documented mismatch; Rams are also without top WR Puka Nacua (suspended, on IR) and TE Terrance Ferguson (out), thinning Stafford's options against a Packers defense that ranks 2nd of 32 in takeaways/game (2.0/g, TeamRankings)."
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": -100.0,
+      "altSpreadReturn": -100.0,
       "altTrendCheck": "Packers prior game (Wk10 vs MIN, CBS Gametracker): L 10-30, 220 total net yds, 164 pass yds on 18-29 (YPA 5.66), 17 rush att for 56 yds (YPP 4.78) \u2014 no pattern matched (YPA<7.5, rush att<34, pass att<41, and the 20-pt loss fell well short of Pattern A's 426-yd threshold). Rams prior game (Wk10 @ARI, CBS Gametracker): W 34-6, 436 total net yds, 234 pass yds on 18-26 (YPA 9.0), 46 rush att for 202 yds (YPP 436/72=6.06) \u2014 Pattern A doesn't apply (it was a win); Pattern B's YPA\u22657.5 hit but YPP 6.06 exceeds the \u22645.15 ceiling, so it does not fire; Pattern C/D fail (rush/pass ratio 1.77, pass att 26<41). No pattern matched for either team.",
       "altTrendFavors": null,
       "auditNote": "Corrected the turnover detail in the blowout check (ARI 2 INT, LAR 1); the takeaway margin is still +1, the sub-condition still fails, and the check still fires 3 of 5, so the Second Opinion pick is unchanged.",
@@ -34,7 +34,7 @@
       "awayPDpg": 1.16,
       "awayQB": "Jordan Love",
       "awayQBRating": 96.9,
-      "awayScore": null,
+      "awayScore": 13.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -110,
       "awayYPP": 5.5,
@@ -48,7 +48,7 @@
       "homePDpg": 8.11,
       "homeQB": "Matthew Stafford",
       "homeQBRating": 90.6,
-      "homeScore": null,
+      "homeScore": 26.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -109,
       "homeYPP": 5.7,
@@ -199,7 +199,16 @@
       ],
       "thirdReturn": null,
       "thirdSpreadReturn": null,
-      "time": "8:00 PM ET"
+      "time": "8:00 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": false,
+      "altBlowoutReturn": -100.0,
+      "altBlowoutCover": false,
+      "altBlowoutSpreadReturn": -100.0
     }
-  ]
+  ],
+  "scoredAt": "2026-11-26T08:24:22.423834+00:00"
 }

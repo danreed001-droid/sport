@@ -2,7 +2,7 @@
   "date": "2026-11-25",
   "weekday": "Wednesday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-25T16:25:28Z",
   "auditChanges": [
     "NCAAB Southern@Nebraska: Southern's PD/g was -27.8, actual -16.2 (402-499 in 6 games), and both records were wrong (Southern 1-5 not 5-7; Nebraska 6-0 not 10-2). Pick unchanged -- Nebraska still 'solid' on a 39.5 PD/g gap.",
@@ -39,7 +39,7 @@
       "awayMoneyline": -258,
       "awayPDpg": 24.7,
       "awayRank": 2,
-      "awayScore": null,
+      "awayScore": 60.0,
       "awaySpread": -6.5,
       "awaySpreadOdds": -102,
       "confidence": "skip",
@@ -48,7 +48,7 @@
       "homeMoneyline": 210,
       "homePDpg": 22.5,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 54.0,
       "homeSpread": 6.5,
       "homeSpreadOdds": -118,
       "lineMove": {
@@ -109,7 +109,7 @@
       "awayMoneyline": 164,
       "awayPDpg": 8.2,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 92.0,
       "awaySpread": 4.5,
       "awaySpreadOdds": -118,
       "confidence": "skip",
@@ -118,7 +118,7 @@
       "homeMoneyline": -198,
       "homePDpg": 15.5,
       "homeRank": 20,
-      "homeScore": null,
+      "homeScore": 94.0,
       "homeSpread": -4.5,
       "homeSpreadOdds": -102,
       "lineMove": {
@@ -168,7 +168,8 @@
           "leans": "LSU Tigers",
           "leanPct": 53.2,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -183,7 +184,8 @@
           "leans": "LSU Tigers",
           "leanPct": 53.4,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -211,7 +213,7 @@
       "awayMoneyline": 195,
       "awayPDpg": 16.7,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 73.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -220,7 +222,7 @@
       "homeMoneyline": -238,
       "homePDpg": 14.4,
       "homeRank": 8,
-      "homeScore": null,
+      "homeScore": 84.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -108,
       "lineMove": {
@@ -270,7 +272,8 @@
           "leans": "Arizona Wildcats",
           "leanPct": 53.2,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -298,7 +301,7 @@
       "awayMoneyline": 500,
       "awayPDpg": 8.9,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 69.0,
       "awaySpread": 10.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -307,7 +310,7 @@
       "homeMoneyline": -700,
       "homePDpg": 16.8,
       "homeRank": 18,
-      "homeScore": null,
+      "homeScore": 71.0,
       "homeSpread": -10.5,
       "homeSpreadOdds": -108,
       "lineMove": {
@@ -357,7 +360,8 @@
           "leans": "USC Trojans",
           "leanPct": 54.9,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -372,7 +376,8 @@
           "leans": "USC Trojans",
           "leanPct": 53.2,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -400,16 +405,16 @@
       "awayMoneyline": null,
       "awayPDpg": -7.2,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 72.0,
       "awaySpread": 35.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "home": "Nebraska Cornhuskers",
       "homeMoneyline": null,
       "homePDpg": 17.1,
       "homeRank": 21,
-      "homeScore": null,
+      "homeScore": 101.0,
       "homeSpread": -35.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -426,9 +431,9 @@
       },
       "offGap": 73.08,
       "pick": "Nebraska Cornhuskers",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -462,7 +467,7 @@
       "awayMoneyline": -175,
       "awayPDpg": 1.4,
       "awayRank": 24,
-      "awayScore": null,
+      "awayScore": 83.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -471,7 +476,7 @@
       "homeMoneyline": 145,
       "homePDpg": 5,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 70.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -105,
       "lineMove": {
@@ -535,7 +540,7 @@
       "awayMoneyline": -162,
       "awayPDpg": 15.1,
       "awayRank": 19,
-      "awayScore": null,
+      "awayScore": 85.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -118,
       "confidence": "skip",
@@ -544,7 +549,7 @@
       "homeMoneyline": 136,
       "homePDpg": 7.3,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 82.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -102,
       "lineMove": {
@@ -605,7 +610,7 @@
       "awayMoneyline": -142,
       "awayPDpg": 15.7,
       "awayRank": 10,
-      "awayScore": null,
+      "awayScore": 63.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -108,
       "confidence": "skip",
@@ -614,7 +619,7 @@
       "homeMoneyline": 120,
       "homePDpg": 18.6,
       "homeRank": 16,
-      "homeScore": null,
+      "homeScore": 77.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -112,
       "lineMove": {
@@ -667,9 +672,11 @@
           "leans": "UConn Huskies",
           "leanPct": 52.1,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     }
-  ]
+  ],
+  "scoredAt": "2026-11-26T08:24:26.309973+00:00"
 }
