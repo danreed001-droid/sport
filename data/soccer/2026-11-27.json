@@ -4,13 +4,291 @@
   "sport": "soccer",
   "scored": false,
   "generatedAt": "2026-11-27T12:48:00-05:00",
-  "auditChanges": ["soccer 2026-11-27 Nottingham Forest vs Chelsea: corrected lineup facts — Liam Delap is Forest's striker (not an injured Chelsea player), Chelsea's out list is João Pedro/Hato/Lacroix/James (Cole Palmer and Levi Colwill are expected to start, not out), and Emegha starts up front. Tally stays Home 3 - Draw 0 - Away 0 and the Ledger pick (Chelsea, toss-up) is unchanged."],
+  "auditChanges": [
+    "soccer 2026-11-27 Nottingham Forest vs Chelsea: corrected lineup facts \u2014 Liam Delap is Forest's striker (not an injured Chelsea player), Chelsea's out list is Jo\u00e3o Pedro/Hato/Lacroix/James (Cole Palmer and Levi Colwill are expected to start, not out), and Emegha starts up front. Tally stays Home 3 - Draw 0 - Away 0 and the Ledger pick (Chelsea, toss-up) is unchanged."
+  ],
   "auditedAt": "2026-11-27T16:52:32Z",
   "games": [
-    {"altCategoryTally":"Home 3 – Draw 0 – Away 0","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Injuries/Lineup (weighted x2 — multi-player cluster): favors Nottingham Forest — Chelsea are without lead striker João Pedro (thigh) and both of centre-backs Jorrel Hato (back) and Maxence Lacroix (hamstring), plus long-term absentee Reece James (knee), with Moisés Caicedo a doubt (back); Forest are missing only Nicolò Savona (knee) and Nicolás Domínguez (muscle)","Scoring margin: neutral — Chelsea's +0.08 GD/g blend was built with João Pedro as the lead striker, and with Emanuel Emegha starting in his place tonight that record isn't a reliable signal under the major-lineup-change rule; Forest's own -0.31 GD/g is negative and not strong enough to carry the category alone","Form: neutral — the same major-lineup-change caveat applies to Chelsea's recent run without João Pedro; no reliable last-5 split could be confirmed for Forest","Motivation/Spot: favors Nottingham Forest — Forest sit 17th on 9 points from 11 games, in a live relegation battle, giving the home side extra urgency at the City Ground"],"altReturn":null,"attackGap":0.84,"auditNote":"Corrected the lineup facts: Liam Delap is Forest's striker (he left Chelsea in the summer), Chelsea's absentee is João Pedro with Emegha starting, and Palmer and Colwill are both expected to start rather than injured; the tally stays Home 3 and the pick is unchanged.","away":"Chelsea","awayDrawRate":0.091,"awayGDpg":0.079,"awayGK":"Robert Sánchez","awayKeeperSavePct":null,"awayMoneyline":180,"awayScore":null,"awayStriker":"Emanuel Emegha (João Pedro out, thigh)","awayXGpg":-0.43,"competition":"Premier League","confidence":"toss-up","correct":null,"drawMoneyline":240,"home":"Nottingham Forest","homeDrawRate":0.273,"homeGDpg":-0.312,"homeGK":"Matz Sels","homeKeeperSavePct":null,"homeMoneyline":145,"homeScore":null,"homeStriker":"Liam Delap","homeXGpg":0.41,"pick":"Chelsea","pickReturn":null,"result":null,"statLines":["GD/g -0.31 vs +0.08 (season blend)","xG/g (net) +0.41 vs -0.43","Forest 17th vs Chelsea 8th in current table"],"time":"8:00 PM GMT"},
-    {"altCategoryTally":"Home 2 – Draw 0 – Away 1","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: favors Racing Santander — better blended GD/g (-0.12 vs -0.38), with no confirmed major lineup change for either side","Travel: favors Levante UD — Racing make the roughly 550km trip from Santander to Valencia (Levante's temporary home ground)","Market: favors Levante UD — pregame odds (home 2.05 / draw 3.75 / away 3.30 decimal) make the home side a clear favorite despite the GD/g edge running the other way"],"altReturn":null,"attackGap":0.16,"away":"Racing Santander","awayDrawRate":0.154,"awayGDpg":-0.116,"awayGK":"Julen Agirrezabala","awayKeeperSavePct":null,"awayMoneyline":230,"awayScore":null,"awayStriker":"Íñigo Vicente","awayXGpg":-0.7,"competition":"La Liga","confidence":"skip","correct":null,"drawMoneyline":275,"home":"Levante UD","homeDrawRate":0.462,"homeGDpg":-0.376,"homeGK":"Matthew Ryan","homeKeeperSavePct":null,"homeMoneyline":105,"homeScore":null,"homeStriker":"Iván Romero","homeXGpg":-0.54,"pick":null,"pickReturn":null,"result":null,"skipReason":"attack-gap","skipped":true,"statLines":["GD/g -0.38 vs -0.12 (season blend)","xG/g (net) -0.54 vs -0.70","Draw rate 46% vs 15% (Levante draw heavily this season)"],"time":"9:00 PM CET"},
-    {"altCategoryTally":"Home 2 – Draw 0 – Away 0","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: favors Werder Bremen — much stronger blended GD/g (-0.04 vs -0.86), with no confirmed major lineup change for either side","Market: favors Werder Bremen — pregame odds (home 1.65 / draw 4.20 / away 4.75 decimal) make the home side a heavy favorite"],"altReturn":null,"attackGap":0.92,"away":"Borussia Mönchengladbach","awayDrawRate":0.1,"awayGDpg":-0.862,"awayGK":"Moritz Nicolas","awayKeeperSavePct":null,"awayMoneyline":375,"awayScore":null,"awayStriker":"Tim Kleindienst","awayXGpg":-0.76,"competition":"Bundesliga","confidence":"solid","correct":null,"drawMoneyline":320,"home":"Werder Bremen","homeDrawRate":0.3,"homeGDpg":-0.038,"homeGK":"Karl Hein","homeKeeperSavePct":null,"homeMoneyline":-154,"homeScore":null,"homeStriker":"Justin Njinmah","homeXGpg":0.16,"pick":"Werder Bremen","pickReturn":null,"result":null,"statLines":["GD/g -0.04 vs -0.86 (season blend)","xG/g (net) +0.16 vs -0.76","Bremen 6th vs Gladbach 18th (bottom) in current table"],"time":"8:30 PM CET"},
-    {"altCategoryTally":"Home 1 – Draw 0 – Away 2","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: favors Bologna — clearly better blended GD/g (+0.12 vs -0.12), with no confirmed major lineup change for either side","Motivation/Spot: favors Venezia FC — bottom of the table fighting for Serie A survival at home, against a Bologna side chasing a European/Champions League push, giving the home side extra desperation","Market: favors Bologna — pregame odds (home 3.40 / draw 3.40 / away 2.15 decimal) make the away side the clear favorite"],"altReturn":null,"attackGap":0.79,"away":"Bologna","awayDrawRate":0.25,"awayGDpg":0.123,"awayGK":"Lukasz Skorupski","awayKeeperSavePct":null,"awayMoneyline":115,"awayScore":null,"awayStriker":"Santiago Castro","awayXGpg":0.25,"competition":"Serie A","confidence":"toss-up","correct":null,"drawMoneyline":240,"home":"Venezia FC","homeDrawRate":0,"homeGDpg":-0.116,"homeGK":"Alessandro Plizzari","homeKeeperSavePct":null,"homeMoneyline":240,"homeScore":null,"homeStriker":"Joel Pohjanpalo","homeXGpg":-0.54,"pick":"Bologna","pickReturn":null,"result":null,"statLines":["GD/g -0.12 vs +0.12 (season blend)","xG/g (net) -0.54 vs +0.25","Venezia 20th (last) vs Bologna 9th in current table"],"time":"8:45 PM CET"},
-    {"altCategoryTally":"Home 1 – Draw 0 – Away 2","altConfidence":"pass","altCorrect":null,"altPick":null,"altReasons":["Scoring margin: favors Paris FC — better blended GD/g (+0.46 vs +0.14), with confirmed GK (Trapp) and striker (Immobile) matching their regular starters","Injuries/Lineup: favors Stade Brestois 29 — Paris FC have a longer current absence list (Hamel, Ollila, Riou, Gueye, Lopez, Alakouch and Krasso doubtful/out, plus Lees-Melou suspended) versus Brest's shorter list (Locko and Doumbia doubtful, Guindo suspended)","Market: favors Paris FC — pregame odds (home 3.40 / draw 3.40 / away 2.15 decimal) make the away side the clear favorite"],"altReturn":null,"attackGap":0.28,"away":"Paris FC","awayDrawRate":0.182,"awayGDpg":0.456,"awayGK":"Kevin Trapp","awayKeeperSavePct":null,"awayMoneyline":115,"awayScore":null,"awayStriker":"Ciro Immobile","awayXGpg":0.92,"competition":"Ligue 1","confidence":"skip","correct":null,"drawMoneyline":240,"home":"Stade Brestois 29","homeDrawRate":0.273,"homeGDpg":0.142,"homeGK":"Marco Coudert","homeKeeperSavePct":null,"homeMoneyline":240,"homeScore":null,"homeStriker":"Ludovic Ajorque","homeXGpg":0.64,"pick":null,"pickReturn":null,"result":null,"skipReason":"attack-gap","skipped":true,"statLines":["GD/g +0.14 vs +0.46 (season blend)","xG/g (net) +0.64 vs +0.92","Paris FC 2nd vs Brest 6th in current Ligue 1 table"],"time":"8:45 PM CET"}
+    {
+      "altCategoryTally": "Home 3 \u2013 Draw 0 \u2013 Away 0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Injuries/Lineup (weighted x2 \u2014 multi-player cluster): favors Nottingham Forest \u2014 Chelsea are without lead striker Jo\u00e3o Pedro (thigh) and both of centre-backs Jorrel Hato (back) and Maxence Lacroix (hamstring), plus long-term absentee Reece James (knee), with Mois\u00e9s Caicedo a doubt (back); Forest are missing only Nicol\u00f2 Savona (knee) and Nicol\u00e1s Dom\u00ednguez (muscle)",
+        "Scoring margin: neutral \u2014 Chelsea's +0.08 GD/g blend was built with Jo\u00e3o Pedro as the lead striker, and with Emanuel Emegha starting in his place tonight that record isn't a reliable signal under the major-lineup-change rule; Forest's own -0.31 GD/g is negative and not strong enough to carry the category alone",
+        "Form: neutral \u2014 the same major-lineup-change caveat applies to Chelsea's recent run without Jo\u00e3o Pedro; no reliable last-5 split could be confirmed for Forest",
+        "Motivation/Spot: favors Nottingham Forest \u2014 Forest sit 17th on 9 points from 11 games, in a live relegation battle, giving the home side extra urgency at the City Ground"
+      ],
+      "altReturn": null,
+      "attackGap": 0.84,
+      "auditNote": "Corrected the lineup facts: Liam Delap is Forest's striker (he left Chelsea in the summer), Chelsea's absentee is Jo\u00e3o Pedro with Emegha starting, and Palmer and Colwill are both expected to start rather than injured; the tally stays Home 3 and the pick is unchanged.",
+      "away": "Chelsea",
+      "awayDrawRate": 0.091,
+      "awayGDpg": 0.079,
+      "awayGK": "Robert S\u00e1nchez",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 180,
+      "awayScore": null,
+      "awayStriker": "Emanuel Emegha (Jo\u00e3o Pedro out, thigh)",
+      "awayXGpg": -0.43,
+      "competition": "Premier League",
+      "confidence": "toss-up",
+      "correct": null,
+      "drawMoneyline": 240,
+      "home": "Nottingham Forest",
+      "homeDrawRate": 0.273,
+      "homeGDpg": -0.312,
+      "homeGK": "Matz Sels",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": 145,
+      "homeScore": null,
+      "homeStriker": "Liam Delap",
+      "homeXGpg": 0.41,
+      "pick": "Chelsea",
+      "pickReturn": null,
+      "result": null,
+      "statLines": [
+        "GD/g -0.31 vs +0.08 (season blend)",
+        "xG/g (net) +0.41 vs -0.43",
+        "Forest 17th vs Chelsea 8th in current table"
+      ],
+      "time": "8:00 PM GMT",
+      "gameTotal": 2.5,
+      "gameTotalOverOdds": -130,
+      "gameTotalUnderOdds": 105,
+      "lineMove": {
+        "spread": [
+          0.5,
+          -0.5
+        ],
+        "total": [
+          2.5,
+          2.5
+        ],
+        "ml": {
+          "home": [
+            170.0,
+            145.0
+          ],
+          "away": [
+            145.0,
+            185.0
+          ],
+          "draw": [
+            245.0,
+            245.0
+          ]
+        },
+        "checked": "2026-11-27T20:00:34+00:00"
+      }
+    },
+    {
+      "altCategoryTally": "Home 2 \u2013 Draw 0 \u2013 Away 1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Racing Santander \u2014 better blended GD/g (-0.12 vs -0.38), with no confirmed major lineup change for either side",
+        "Travel: favors Levante UD \u2014 Racing make the roughly 550km trip from Santander to Valencia (Levante's temporary home ground)",
+        "Market: favors Levante UD \u2014 pregame odds (home 2.05 / draw 3.75 / away 3.30 decimal) make the home side a clear favorite despite the GD/g edge running the other way"
+      ],
+      "altReturn": null,
+      "attackGap": 0.16,
+      "away": "Racing Santander",
+      "awayDrawRate": 0.154,
+      "awayGDpg": -0.116,
+      "awayGK": "Julen Agirrezabala",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 230,
+      "awayScore": null,
+      "awayStriker": "\u00cd\u00f1igo Vicente",
+      "awayXGpg": -0.7,
+      "competition": "La Liga",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 275,
+      "home": "Levante UD",
+      "homeDrawRate": 0.462,
+      "homeGDpg": -0.376,
+      "homeGK": "Matthew Ryan",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": 105,
+      "homeScore": null,
+      "homeStriker": "Iv\u00e1n Romero",
+      "homeXGpg": -0.54,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "attack-gap",
+      "skipped": true,
+      "statLines": [
+        "GD/g -0.38 vs -0.12 (season blend)",
+        "xG/g (net) -0.54 vs -0.70",
+        "Draw rate 46% vs 15% (Levante draw heavily this season)"
+      ],
+      "time": "9:00 PM CET",
+      "gameTotal": 3.5,
+      "gameTotalOverOdds": 130,
+      "gameTotalUnderOdds": -160,
+      "lineMove": {
+        "spread": [
+          -0.5,
+          -0.5
+        ],
+        "total": [
+          3.5,
+          3.5
+        ],
+        "ml": {
+          "home": [
+            105.0,
+            100.0
+          ],
+          "away": [
+            215.0,
+            250.0
+          ],
+          "draw": [
+            280.0,
+            290.0
+          ]
+        },
+        "checked": "2026-11-27T20:00:34+00:00"
+      }
+    },
+    {
+      "altCategoryTally": "Home 2 \u2013 Draw 0 \u2013 Away 0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Werder Bremen \u2014 much stronger blended GD/g (-0.04 vs -0.86), with no confirmed major lineup change for either side",
+        "Market: favors Werder Bremen \u2014 pregame odds (home 1.65 / draw 4.20 / away 4.75 decimal) make the home side a heavy favorite"
+      ],
+      "altReturn": null,
+      "attackGap": 0.92,
+      "away": "Borussia M\u00f6nchengladbach",
+      "awayDrawRate": 0.1,
+      "awayGDpg": -0.862,
+      "awayGK": "Moritz Nicolas",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 375,
+      "awayScore": null,
+      "awayStriker": "Tim Kleindienst",
+      "awayXGpg": -0.76,
+      "competition": "Bundesliga",
+      "confidence": "solid",
+      "correct": null,
+      "drawMoneyline": 320,
+      "home": "Werder Bremen",
+      "homeDrawRate": 0.3,
+      "homeGDpg": -0.038,
+      "homeGK": "Karl Hein",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": -154,
+      "homeScore": null,
+      "homeStriker": "Justin Njinmah",
+      "homeXGpg": 0.16,
+      "pick": "Werder Bremen",
+      "pickReturn": null,
+      "result": null,
+      "statLines": [
+        "GD/g -0.04 vs -0.86 (season blend)",
+        "xG/g (net) +0.16 vs -0.76",
+        "Bremen 6th vs Gladbach 18th (bottom) in current table"
+      ],
+      "time": "8:30 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 1 \u2013 Draw 0 \u2013 Away 2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Bologna \u2014 clearly better blended GD/g (+0.12 vs -0.12), with no confirmed major lineup change for either side",
+        "Motivation/Spot: favors Venezia FC \u2014 bottom of the table fighting for Serie A survival at home, against a Bologna side chasing a European/Champions League push, giving the home side extra desperation",
+        "Market: favors Bologna \u2014 pregame odds (home 3.40 / draw 3.40 / away 2.15 decimal) make the away side the clear favorite"
+      ],
+      "altReturn": null,
+      "attackGap": 0.79,
+      "away": "Bologna",
+      "awayDrawRate": 0.25,
+      "awayGDpg": 0.123,
+      "awayGK": "Lukasz Skorupski",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 115,
+      "awayScore": null,
+      "awayStriker": "Santiago Castro",
+      "awayXGpg": 0.25,
+      "competition": "Serie A",
+      "confidence": "toss-up",
+      "correct": null,
+      "drawMoneyline": 240,
+      "home": "Venezia FC",
+      "homeDrawRate": 0,
+      "homeGDpg": -0.116,
+      "homeGK": "Alessandro Plizzari",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": 240,
+      "homeScore": null,
+      "homeStriker": "Joel Pohjanpalo",
+      "homeXGpg": -0.54,
+      "pick": "Bologna",
+      "pickReturn": null,
+      "result": null,
+      "statLines": [
+        "GD/g -0.12 vs +0.12 (season blend)",
+        "xG/g (net) -0.54 vs +0.25",
+        "Venezia 20th (last) vs Bologna 9th in current table"
+      ],
+      "time": "8:45 PM CET"
+    },
+    {
+      "altCategoryTally": "Home 1 \u2013 Draw 0 \u2013 Away 2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Paris FC \u2014 better blended GD/g (+0.46 vs +0.14), with confirmed GK (Trapp) and striker (Immobile) matching their regular starters",
+        "Injuries/Lineup: favors Stade Brestois 29 \u2014 Paris FC have a longer current absence list (Hamel, Ollila, Riou, Gueye, Lopez, Alakouch and Krasso doubtful/out, plus Lees-Melou suspended) versus Brest's shorter list (Locko and Doumbia doubtful, Guindo suspended)",
+        "Market: favors Paris FC \u2014 pregame odds (home 3.40 / draw 3.40 / away 2.15 decimal) make the away side the clear favorite"
+      ],
+      "altReturn": null,
+      "attackGap": 0.28,
+      "away": "Paris FC",
+      "awayDrawRate": 0.182,
+      "awayGDpg": 0.456,
+      "awayGK": "Kevin Trapp",
+      "awayKeeperSavePct": null,
+      "awayMoneyline": 115,
+      "awayScore": null,
+      "awayStriker": "Ciro Immobile",
+      "awayXGpg": 0.92,
+      "competition": "Ligue 1",
+      "confidence": "skip",
+      "correct": null,
+      "drawMoneyline": 240,
+      "home": "Stade Brestois 29",
+      "homeDrawRate": 0.273,
+      "homeGDpg": 0.142,
+      "homeGK": "Marco Coudert",
+      "homeKeeperSavePct": null,
+      "homeMoneyline": 240,
+      "homeScore": null,
+      "homeStriker": "Ludovic Ajorque",
+      "homeXGpg": 0.64,
+      "pick": null,
+      "pickReturn": null,
+      "result": null,
+      "skipReason": "attack-gap",
+      "skipped": true,
+      "statLines": [
+        "GD/g +0.14 vs +0.46 (season blend)",
+        "xG/g (net) +0.64 vs +0.92",
+        "Paris FC 2nd vs Brest 6th in current Ligue 1 table"
+      ],
+      "time": "8:45 PM CET"
+    }
   ]
 }

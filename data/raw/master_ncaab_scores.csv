@@ -1,9 +1,9 @@
 Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Diff,Away_ML,Home_ML,Start_ET
-401920429,2026-11-27,11/27 - 11:00 AM EST,Virginia Cavaliers,0,-,Xavier Musketeers,0,-,-,-,11:00 AM
-401920533,2026-11-27,11/27 - 1:00 PM EST,St. John's Red Storm,0,-,Iowa State Cyclones,0,-,-,-,1:00 PM
-401929288,2026-11-27,11/27 - 1:30 PM EST,Wake Forest Demon Deacons,0,-,Memphis Tigers,0,-,-,-,1:30 PM
-401921827,2026-11-27,11/27 - 2:00 PM EST,Southern Jaguars,0,-,Vanderbilt Commodores,0,-,-,-,2:00 PM
-401921717,2026-11-27,11/27 - 2:30 PM EST,Georgetown Hoyas,0,-,UCLA Bruins,0,-,-,-,2:30 PM
+401920429,2026-11-27,Final,Virginia Cavaliers,83,-,Xavier Musketeers,71,-,-298,240,11:00 AM
+401920533,2026-11-27,4:29 - 2nd,Iowa State Cyclones,60,-,St. John's Red Storm,67,-,-,-,1:00 PM
+401929288,2026-11-27,19:44 - 2nd,Memphis Tigers,37,-,Wake Forest Demon Deacons,29,-,-,-,1:30 PM
+401921827,2026-11-27,Halftime,Southern Jaguars,28,-,Vanderbilt Commodores,51,-,-,-,2:00 PM
+401921717,2026-11-27,11:57 - 1st,Georgetown Hoyas,4,-,UCLA Bruins,13,-,-,-,2:30 PM
 401921718,2026-11-27,11/27 - 5:00 PM EST,Texas Longhorns,0,-,Saint Mary's Gaels,0,-,-,-,5:00 PM
 401909789,2026-11-27,11/27 - 5:00 PM EST,Villanova Wildcats,0,-,Kansas Jayhawks,0,-,-,-,5:00 PM
 401913531,2026-11-27,11/27 - 6:00 PM EST,Western Kentucky Hilltoppers,0,-,Illinois Fighting Illini,0,-,-,-,6:00 PM
@@ -12,7 +12,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401920543,2026-11-27,11/27 - 8:30 PM EST,Miami Hurricanes,0,-,Alabama Crimson Tide,0,-,-,-,8:30 PM
 401920534,2026-11-27,11/27 - 9:00 PM EST,Tennessee Volunteers,0,-,Louisville Cardinals,0,-,-,-,9:00 PM
 401920544,2026-11-27,11/27 - 11:00 PM EST,Creighton Bluejays,0,-,Gonzaga Bulldogs,0,-,-,-,11:00 PM
-401920535,2026-11-27,11/27 - 11:30 PM EST,Texas Tech Red Raiders,0,-,San Diego State Aztecs,0,-,-,-,11:30 PM
+401920535,2026-11-27,11/27 - 11:30 PM EST,San Diego State Aztecs,0,-,Texas Tech Red Raiders,0,-,-,-,11:30 PM
 401906869,2026-11-26,Final,Georgetown Hoyas,83,-,Texas Longhorns,92,-,310,-395,2:30 PM
 401920529,2026-11-26,Final,Tennessee Volunteers,75,-,Iowa State Cyclones,64,-,210,-258,3:30 PM
 401920537,2026-11-26,Final,Miami Hurricanes,97,-,Michigan Wolverines,70,-,-115,-105,3:30 PM

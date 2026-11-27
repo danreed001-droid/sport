@@ -5,18 +5,1206 @@
   "scored": false,
   "generatedAt": "2026-11-27T16:30:00Z",
   "games": [
-    {"altCategoryTally":"1-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors St. John's Red Storm (PD/g +22.4 vs Iowa State's +13.7)","Rest: neutral (both arrived for the same multi-team event)","Travel: neutral (both traveled to Las Vegas for the tournament)","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral — standard early-season tournament game","Venue/Crowd: neutral — neutral-site tournament game, no home-court edge for either side","Market: neutral — no public betting data available for this game","Matchup splits: favors Iowa State Cyclones — Iowa State's defense (AdjDE 93.8, 4th nationally) is more elite relative to the field than St. John's offense (AdjOE 120.9, 20th) is dominant"],"altReturn":null,"altSpreadReturn":null,"away":"St. John's Red Storm","awayMoneyline":-162,"awayPDpg":22.4,"awayRank":13,"awayScore":null,"awaySpread":-4.5,"awaySpreadOdds":-110,"confidence":"skip","correct":null,"gameTotal":150.5,"gameTotalOverOdds":-108,"gameTotalUnderOdds":-112,"home":"Iowa State Cyclones","homeMoneyline":136,"homePDpg":13.7,"homeRank":null,"homeScore":null,"homeSpread":4.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-27T09:07:58+00:00","ml":{"away":[-148.0,-162.0],"home":[124.0,136.0]},"spread":[-2.5,4.5],"total":[150.5,150.5]},"offGap":15.11,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g #13 Storm +22.4 vs Cyclones +13.7 (2026-27 season)","AdjOE 120.9 (natl rank 20/365, 94.78th pct) vs 114.7 (rank 75/365, 79.67th pct) — off-gap 15.11","AdjDE 95.2 (rank 10/365) vs 93.8 (rank 4/365)","Neutral site: Michelob ULTRA Arena, Las Vegas","No current-week injury confirmed for either team's rotation"],"storylines":[{"against":false,"fact":"St. John's lost to Iowa State 82-83 last season (2025-11-24).","key":"last_season_grudge","leanPct":52.5,"leans":"St. John's Red Storm","live":"15-11","name":"Last year's grudge","pct":52.5,"record":"1420-1285","says":"back","team":"St. John's Red Storm","unit":"ATS","weight":1}],"time":"1:00 PM ET"},
-    {"altCategoryTally":"1-1","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Wake Forest Demon Deacons (PD/g +13.3 vs Memphis's +5.7)","Rest: neutral (both arrived for the same multi-team event)","Travel: neutral (both traveled to the Bahamas for the tournament)","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: neutral — neutral-site tournament game","Market: neutral — no public betting data available for this game","Matchup splits: favors Memphis Tigers — Memphis's offense (AdjOE 121.1, 18th nationally) is a bigger mismatch against Wake Forest's middling defense (AdjDE 101.5, 62nd) than the reverse side of the ball"],"altReturn":null,"altSpreadReturn":null,"away":"Wake Forest Demon Deacons","awayMoneyline":114,"awayPDpg":13.3,"awayRank":null,"awayScore":null,"awaySpread":2.5,"awaySpreadOdds":-115,"confidence":"skip","correct":null,"gameTotal":154.5,"gameTotalOverOdds":-110,"gameTotalUnderOdds":-110,"home":"Memphis Tigers","homeMoneyline":-135,"homePDpg":5.7,"homeRank":24,"homeScore":null,"homeSpread":-2.5,"homeSpreadOdds":-105,"lineMove":{"checked":"2026-11-27T09:07:58+00:00","ml":{"away":[130.0,114.0],"home":[-155.0,-135.0]},"spread":[-2.5,-2.5],"total":[155.5,154.5]},"offGap":20.88,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g Deacons +13.3 vs #24 Tigers +5.7 (2026-27 season)","AdjOE 113.1 (natl rank 94/365, 74.45th pct) vs 121.1 (rank 18/365, 95.33th pct) — off-gap 20.88","AdjDE 101.5 (rank 62/365) vs 108.0 (rank 162/365)","Neutral site: Imperial Arena, Baha Mar, Bahamas","No current-week injury confirmed for either team's rotation"],"storylines":[{"against":false,"fact":"Memphis lost to Wake Forest 68-69 last season (2025-11-21).","key":"last_season_grudge","leanPct":52.5,"leans":"Memphis Tigers","live":"15-11","name":"Last year's grudge","pct":52.5,"record":"1420-1285","says":"back","team":"Memphis Tigers","unit":"ATS","weight":1},{"against":true,"fact":"Wake Forest has won 5 straight and is a +2.5 underdog.","key":"rolling_dog","leanPct":53.0,"leans":"Memphis Tigers","live":"6-2","name":"Rolling underdog","pct":47.0,"record":"270-304","says":"back","team":"Wake Forest Demon Deacons","unit":"ATS","weight":1}],"time":"1:30 PM ET"},
-    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Vanderbilt Commodores (PD/g +25.7 vs Southern's -28.0 — one of the widest gaps on the board)","Rest: neutral — no specific rest disadvantage confirmed","Travel: neutral — a standard true-road trip for a small-conference team, nothing extreme","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral — standard non-conference buy game","Venue/Crowd: neutral — Memorial Gym, standard home court, nothing unusual","Market: neutral — no public betting data available for this game; the -37.5 spread already reflects the mismatch","Matchup splits: favors Vanderbilt Commodores — Vanderbilt's defense (AdjDE 94.0, 6th nationally) against Southern's offense (AdjOE 100.0, 316th nationally) is one of the starkest unit mismatches on tonight's board"],"altReturn":null,"altSpreadReturn":null,"away":"Southern Jaguars","awayMoneyline":null,"awayPDpg":-28,"awayRank":null,"awayScore":null,"awaySpread":37.5,"awaySpreadOdds":-110,"confidence":"solid","correct":null,"gameTotal":151.5,"gameTotalOverOdds":-115,"gameTotalUnderOdds":-105,"home":"Vanderbilt Commodores","homeMoneyline":null,"homePDpg":25.7,"homeRank":14,"homeScore":null,"homeSpread":-37.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-27T09:07:58+00:00","ml":{},"spread":[-36.5,-37.5],"total":[151.5,151.5]},"offGap":77.47,"pick":"Vanderbilt Commodores","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g Jaguars -28.0 vs #14 Commodores +25.7 (2026-27 season)","AdjOE 100.0 (natl rank 316/365, 13.46th pct) vs 119.2 (rank 34/365, 90.93th pct) — off-gap 77.47","AdjDE 112.2 (rank 269/365) vs 94.0 (rank 6/365)","True road game for Southern (SWAC, Baton Rouge) at Vanderbilt (Memorial Gym, Nashville)","No current-week injury confirmed for either team's rotation"],"time":"2:00 PM ET"},
-    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors UCLA Bruins (PD/g +27.7 vs Georgetown's +13.1)","Rest: neutral (both arrived for the same event)","Travel: neutral (both traveled to San Diego for the tournament)","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: neutral — neutral-site tournament game","Market: neutral — no public betting data available for this game","Matchup splits: favors UCLA Bruins — UCLA's offense (AdjOE 121.4, 17th nationally) against Georgetown's below-average defense (AdjDE 104.4, 102nd) is the bigger mismatch of the two sides of the ball"],"altReturn":null,"altSpreadReturn":null,"away":"Georgetown Hoyas","awayMoneyline":285,"awayPDpg":13.1,"awayRank":null,"awayScore":null,"awaySpread":8.5,"awaySpreadOdds":-110,"confidence":"skip","correct":null,"gameTotal":153.5,"gameTotalOverOdds":-110,"gameTotalUnderOdds":-110,"home":"UCLA Bruins","homeMoneyline":-360,"homePDpg":27.7,"homeRank":6,"homeScore":null,"homeSpread":-8.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-27T09:07:58+00:00","ml":{"away":[285.0,285.0],"home":[-360.0,-360.0]},"spread":[-9.5,-8.5],"total":[153.5,153.5]},"offGap":5.76,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g Hoyas +13.1 vs #6 Bruins +27.7 (2026-27 season)","AdjOE 119.0 (natl rank 38/365, 89.84th pct) vs 121.4 (rank 17/365, 95.6th pct) — off-gap 5.76","AdjDE 104.4 (rank 102/365) vs 97.6 (rank 21/365)","Neutral site: Jenny Craig Pavilion, San Diego (Rady Children's Invitational)","No current-week injury confirmed for either team's rotation"],"time":"2:30 PM ET"},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Texas Longhorns (PD/g +28.7 vs Saint Mary's +16.6)","Rest: neutral (both arrived for the same event)","Travel: neutral (both traveled to San Diego for the tournament)","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: neutral — neutral-site tournament game","Market: neutral — no public betting data available for this game","Matchup splits: favors Texas Longhorns — Texas's elite offense (AdjOE 122.2, 12th nationally) against Saint Mary's average defense (AdjDE 102.8, 77th) is a clear mismatch"],"altReturn":null,"altSpreadReturn":null,"away":"Texas Longhorns","awayMoneyline":-345,"awayPDpg":28.7,"awayRank":7,"awayScore":null,"awaySpread":-7.5,"awaySpreadOdds":-115,"confidence":"skip","correct":null,"gameTotal":159.5,"gameTotalOverOdds":-108,"gameTotalUnderOdds":-112,"home":"Saint Mary's Gaels","homeMoneyline":275,"homePDpg":16.6,"homeRank":null,"homeScore":null,"homeSpread":7.5,"homeSpreadOdds":-105,"lineMove":{"checked":"2026-11-27T10:56:22+00:00","ml":{"away":[-345.0,-345.0],"home":[275.0,275.0]},"spread":[5.5,7.5],"total":[157.5,159.5]},"offGap":7.42,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g #7 Longhorns +28.7 vs Gaels +16.6 (2026-27 season)","AdjOE 122.2 (natl rank 12/365, 96.98th pct) vs 119.0 (rank 39/365, 89.56th pct) — off-gap 7.42","AdjDE 99.2 (rank 33/365) vs 102.8 (rank 77/365)","Neutral site: Jenny Craig Pavilion, San Diego (Rady Children's Invitational)","No current-week injury confirmed for either team's rotation"],"storylines":[{"against":true,"fact":"Saint Mary's has won 5 straight and is a +7.5 underdog.","key":"rolling_dog","leanPct":53.0,"leans":"Texas Longhorns","live":"6-2","name":"Rolling underdog","pct":47.0,"record":"270-304","says":"back","team":"Saint Mary's Gaels","unit":"ATS","weight":1},{"against":false,"fact":"Unranked Saint Mary's beat #6 UCLA 85-70 last time out.","key":"upset_hangover","leanPct":57.3,"leans":"Texas Longhorns","live":"0-0","name":"Upset hangover","pct":57.3,"record":"43-32","says":"fade","team":"Saint Mary's Gaels","unit":"ATS","weight":1}],"time":"5:00 PM ET"},
-    {"altCategoryTally":"0-4","altConfidence":"lean","altCorrect":null,"altCover":null,"altPick":"Kansas Jayhawks","altReasons":["Scoring margin: favors Kansas Jayhawks (PD/g +18.7 vs Villanova's +12.7)","Rest: neutral — no specific rest disadvantage confirmed","Travel: favors Kansas Jayhawks — Villanova is traveling roughly 1,100 miles from Philadelphia into a new time zone for a true road game","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: favors Kansas Jayhawks — Allen Fieldhouse is one of the sport's most storied, loudest home-court advantages","Market: neutral — no public betting data available for this game","Matchup splits: favors Kansas Jayhawks — Kansas's elite defense (AdjDE 95.1, 9th nationally) against Villanova's good-not-great offense (AdjOE 115.4, 69th) is a clear mismatch"],"altReturn":null,"altSpreadReturn":null,"away":"Villanova Wildcats","awayMoneyline":600,"awayPDpg":12.7,"awayRank":null,"awayScore":null,"awaySpread":12.5,"awaySpreadOdds":-110,"confidence":"skip","correct":null,"gameTotal":159.5,"gameTotalOverOdds":-110,"gameTotalUnderOdds":-110,"home":"Kansas Jayhawks","homeMoneyline":-900,"homePDpg":18.7,"homeRank":12,"homeScore":null,"homeSpread":-12.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-27T09:07:58+00:00","ml":{"away":[525.0,600.0],"home":[-750.0,-900.0]},"spread":[-12.5,-12.5],"total":[159.5,159.5]},"offGap":17.03,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g Wildcats +12.7 vs #12 Jayhawks +18.7 (2026-27 season)","AdjOE 115.4 (natl rank 69/365, 81.32th pct) vs 123.4 (rank 7/365, 98.35th pct) — off-gap 17.03","AdjDE 99.7 (rank 36/365) vs 95.1 (rank 9/365)","True road game for Villanova (Philadelphia) at Kansas (Lawrence) — a cross-regional trip with a time-zone shift","No current-week injury confirmed for either team's rotation"],"time":"5:00 PM ET"},
-    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Illinois Fighting Illini (PD/g +38.0 vs Western Kentucky's +8.2 — the widest PD/g gap on tonight's board)","Rest: neutral — no specific rest disadvantage confirmed","Travel: neutral — a routine regional trip (Bowling Green, KY to Champaign, IL)","Injuries/Lineup: neutral — Illinois' long-term absence of David Mirkovic is already fully baked into its (nation-leading) offensive numbers and doesn't meet a fresh 2+ cluster; no Western Kentucky absence confirmed","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: neutral — State Farm Center, solid but not an outlier home-court edge","Market: neutral — no public betting data available for this game","Matchup splits: favors Illinois Fighting Illini — Illinois has the nation's #1-ranked offense (AdjOE 128.9) against a middling Western Kentucky defense (AdjDE 101.9, 64th)"],"altReturn":null,"altSpreadReturn":null,"away":"Western Kentucky Hilltoppers","awayMoneyline":3500,"awayPDpg":8.2,"awayRank":null,"awayScore":null,"awaySpread":27.5,"awaySpreadOdds":-110,"confidence":"solid","correct":null,"gameTotal":176.5,"gameTotalOverOdds":-108,"gameTotalUnderOdds":-112,"home":"Illinois Fighting Illini","homeMoneyline":-20000,"homePDpg":38,"homeRank":4,"homeScore":null,"homeSpread":-27.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-27T09:07:58+00:00","ml":{"away":[3500.0,3500.0],"home":[-20000.0,-20000.0]},"spread":[-27.5,-27.5],"total":[174.5,176.5]},"offGap":34.62,"pick":"Illinois Fighting Illini","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g Hilltoppers +8.2 vs #4 Illini +38.0 (2026-27 season)","AdjOE 110.9 (natl rank 127/365, 65.38th pct) vs 128.9 (rank 1/365, 100.0th pct) — off-gap 34.62","AdjDE 101.9 (rank 64/365) vs 97.7 (rank 22/365)","Illinois forward David Mirkovic has been out since the preseason (foot injury in August, complicated by an emergency appendectomy on Oct 31); no firm return date, already fully reflected in Illinois' #1-ranked offense this season","No current injury confirmed for Western Kentucky's rotation"],"storylines":[{"against":true,"fact":"#4 Illinois is a -27.5 favorite.","key":"top5_huge","leanPct":53.7,"leans":"Illinois Fighting Illini","live":"10-5","name":"Top-5 laying 25","pct":46.3,"record":"105-122","says":"fade","team":"Illinois Fighting Illini","unit":"ATS","weight":1},{"against":true,"fact":"Illinois won its last three by 50, 62, 21.","key":"steamroller","leanPct":54.8,"leans":"Illinois Fighting Illini","live":"7-10","name":"Steamroller","pct":45.2,"record":"122-148","says":"fade","team":"Illinois Fighting Illini","unit":"ATS","weight":1},{"against":true,"fact":"Illinois moved up from #10 to #4 in this week's AP poll.","key":"poll_riser","leanPct":53.4,"leans":"Illinois Fighting Illini","live":"2-7","name":"Poll riser","pct":46.6,"record":"237-272","says":"fade","team":"Illinois Fighting Illini","unit":"ATS","weight":1},{"against":false,"fact":"Western Kentucky's first game back from neutral-site games (Greenbrier Tip-Off).","key":"mte_hangover","leanPct":53.6,"leans":"Illinois Fighting Illini","live":"2-0","name":"Tournament-trip hangover","pct":53.6,"record":"126-109","says":"fade","team":"Western Kentucky Hilltoppers","unit":"ATS","weight":1}],"time":"6:00 PM ET"},
-    {"altCategoryTally":"0-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Indiana Hoosiers (PD/g +17.3 vs Bowling Green's +5.8)","Rest: neutral — no specific rest disadvantage confirmed","Travel: neutral — a routine regional trip (Bowling Green, OH to Bloomington, IN)","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: favors Indiana Hoosiers — Assembly Hall is one of college basketball's most storied, loudest home environments","Market: neutral — no public betting data available for this game","Matchup splits: favors Indiana Hoosiers — Indiana's elite offense (AdjOE 122.0, 14th nationally) against Bowling Green's one of the nation's worst defenses (AdjDE 114.8, 318th) is a stark mismatch"],"altReturn":null,"altSpreadReturn":null,"away":"Bowling Green Falcons","awayMoneyline":1800,"awayPDpg":5.8,"awayRank":null,"awayScore":null,"awaySpread":22.5,"awaySpreadOdds":-108,"confidence":"skip","correct":null,"gameTotal":152.5,"gameTotalOverOdds":-105,"gameTotalUnderOdds":-115,"home":"Indiana Hoosiers","homeMoneyline":-5000,"homePDpg":17.3,"homeRank":23,"homeScore":null,"homeSpread":-22.5,"homeSpreadOdds":-112,"lineMove":{"checked":"2026-11-27T09:07:58+00:00","ml":{"away":[2500.0,1800.0],"home":[-9000.0,-5000.0]},"spread":[-23.5,-22.5],"total":[152.5,152.5]},"offGap":22.53,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g Falcons +5.8 vs #23 Hoosiers +17.3 (2026-27 season)","AdjOE 113.1 (natl rank 96/365, 73.9th pct) vs 122.0 (rank 14/365, 96.43th pct) — off-gap 22.53","AdjDE 114.8 (rank 318/365) vs 101.2 (rank 57/365)","No current-week injury confirmed for either team's rotation"],"time":"6:00 PM ET"},
-    {"altCategoryTally":"0-3","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Houston Cougars (PD/g +22.3 vs Oakland's -21.9)","Rest: neutral — no specific rest disadvantage confirmed","Travel: favors Houston Cougars — Oakland (Rochester, MI) is traveling roughly 1,100 miles for this true road game","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: neutral — Fertitta Center, solid home court but not an outlier edge","Market: neutral — no public betting data available for this game","Matchup splits: favors Houston Cougars — Houston's nationally elite, Kelvin Sampson-era defense (AdjDE 93.8, 3rd nationally) against Oakland's below-average offense (AdjOE 106.9, 196th) is a stark mismatch"],"altReturn":null,"altSpreadReturn":null,"away":"Oakland Golden Grizzlies","awayMoneyline":null,"awayPDpg":-21.9,"awayRank":null,"awayScore":null,"awaySpread":36.5,"awaySpreadOdds":-112,"confidence":"solid","correct":null,"gameTotal":146.5,"gameTotalOverOdds":-110,"gameTotalUnderOdds":-110,"home":"Houston Cougars","homeMoneyline":null,"homePDpg":22.3,"homeRank":1,"homeScore":null,"homeSpread":-36.5,"homeSpreadOdds":-108,"lineMove":{"checked":"2026-11-27T09:07:58+00:00","ml":{},"spread":[-38.5,-36.5],"total":[150.5,146.5]},"offGap":53.3,"pick":"Houston Cougars","pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":null,"skipped":false,"statLines":["PD/g Grizzlies -21.9 vs #1 Cougars +22.3 (2026-27 season)","AdjOE 106.9 (natl rank 196/365, 46.43th pct) vs 126.5 (rank 2/365, 99.73th pct) — off-gap 53.3","AdjDE 114.4 (rank 308/365) vs 93.8 (rank 3/365)","No current-week injury confirmed for either team's rotation"],"storylines":[{"against":true,"fact":"#1 Houston is a -36.5 favorite.","key":"top5_huge","leanPct":53.7,"leans":"Houston Cougars","live":"10-5","name":"Top-5 laying 25","pct":46.3,"record":"105-122","says":"fade","team":"Houston Cougars","unit":"ATS","weight":1},{"against":true,"fact":"Houston moved up from #8 to #1 in this week's AP poll.","key":"poll_riser","leanPct":53.4,"leans":"Houston Cougars","live":"2-7","name":"Poll riser","pct":46.6,"record":"237-272","says":"fade","team":"Houston Cougars","unit":"ATS","weight":1},{"against":false,"fact":"Oakland lost to Houston 45-78 last season (2025-11-12).","key":"last_season_grudge","leanPct":52.5,"leans":"Oakland Golden Grizzlies","live":"15-11","name":"Last year's grudge","pct":52.5,"record":"1420-1285","says":"back","team":"Oakland Golden Grizzlies","unit":"ATS","weight":1}],"time":"7:30 PM ET"},
-    {"altCategoryTally":"1-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Miami Hurricanes (PD/g +26.1 vs Alabama's +15.7)","Rest: neutral (both arrived for the same event)","Travel: neutral (both traveled to Las Vegas for the tournament)","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: neutral — neutral-site tournament game","Market: neutral — no public betting data available for this game","Matchup splits: neutral — Alabama's elite offense (AdjOE 121.8, 15th) matches up against Miami's elite defense (AdjDE 96.3, 14th) about as evenly as Miami's good offense matches Alabama's average defense, no clear unit-level edge either way"],"altReturn":null,"altSpreadReturn":null,"away":"Miami Hurricanes","awayMoneyline":-135,"awayPDpg":26.1,"awayRank":17,"awayScore":null,"awaySpread":-2.5,"awaySpreadOdds":-102,"confidence":"skip","correct":null,"gameTotal":170.5,"gameTotalOverOdds":-110,"gameTotalUnderOdds":-110,"home":"Alabama Crimson Tide","homeMoneyline":114,"homePDpg":15.7,"homeRank":15,"homeScore":null,"homeSpread":2.5,"homeSpreadOdds":-118,"lineMove":{"checked":"2026-11-27T09:07:58+00:00","ml":{"away":[-135.0,-135.0],"home":[114.0,114.0]},"spread":[1.5,2.5],"total":[170.5,170.5]},"offGap":4.67,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g #17 Hurricanes +26.1 vs #15 Tide +15.7 (2026-27 season)","AdjOE 119.5 (natl rank 32/365, 91.48th pct) vs 121.8 (rank 15/365, 96.15th pct) — off-gap 4.67","AdjDE 96.3 (rank 14/365) vs 101.0 (rank 54/365)","Neutral site: T-Mobile Arena, Las Vegas","No current-week injury confirmed for either team's rotation"],"time":"8:30 PM ET"},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Tennessee Volunteers (PD/g +17.1 vs Louisville's +11.5)","Rest: neutral (both arrived for the same event)","Travel: neutral (both traveled to Las Vegas for the tournament)","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: neutral — neutral-site tournament game","Market: neutral — no public betting data available for this game","Matchup splits: favors Tennessee Volunteers — Tennessee has the nation's #1-ranked defense (AdjDE 93.4) against a Louisville offense (AdjOE 120.5, 24th) that is good but hasn't faced this level of resistance"],"altReturn":null,"altSpreadReturn":null,"away":"Tennessee Volunteers","awayMoneyline":-122,"awayPDpg":17.1,"awayRank":9,"awayScore":null,"awaySpread":-1.5,"awaySpreadOdds":-102,"confidence":"skip","correct":null,"gameTotal":149.5,"gameTotalOverOdds":-110,"gameTotalUnderOdds":-110,"home":"Louisville Cardinals","homeMoneyline":102,"homePDpg":11.5,"homeRank":25,"homeScore":null,"homeSpread":1.5,"homeSpreadOdds":-118,"lineMove":{"checked":"2026-11-27T09:07:59+00:00","ml":{"away":[-122.0,-122.0],"home":[102.0,102.0]},"spread":[1.5,1.5],"total":[150.5,149.5]},"offGap":9.61,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g #9 Volunteers +17.1 vs #25 Cardinals +11.5 (2026-27 season)","AdjOE 116.4 (natl rank 59/365, 84.07th pct) vs 120.5 (rank 24/365, 93.68th pct) — off-gap 9.61","AdjDE 93.4 (rank 1/365) vs 99.2 (rank 34/365)","Neutral site: Michelob ULTRA Arena, Las Vegas","No current-week injury confirmed for either team's rotation"],"storylines":[{"against":false,"fact":"Louisville lost to Tennessee 62-83 last season (2025-12-16).","key":"last_season_grudge","leanPct":52.5,"leans":"Louisville Cardinals","live":"15-11","name":"Last year's grudge","pct":52.5,"record":"1420-1285","says":"back","team":"Louisville Cardinals","unit":"ATS","weight":1},{"against":true,"fact":"Tennessee moved up from #14 to #9 in this week's AP poll.","key":"poll_riser","leanPct":53.4,"leans":"Tennessee Volunteers","live":"2-7","name":"Poll riser","pct":46.6,"record":"237-272","says":"fade","team":"Tennessee Volunteers","unit":"ATS","weight":1},{"against":true,"fact":"#9 Tennessee is a -1.5 favorite over #25 Louisville on a neutral floor.","key":"november_hype","leanPct":51.4,"leans":"Tennessee Volunteers","live":"5-3","name":"November hype","pct":48.6,"record":"36-38","says":"fade","team":"Tennessee Volunteers","unit":"ATS","weight":1}],"time":"9:00 PM ET"},
-    {"altCategoryTally":"0-2","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Gonzaga Bulldogs (PD/g +17.7 vs Creighton's +13.4)","Rest: neutral (both arrived for the same event)","Travel: neutral (both traveled to Las Vegas for the tournament)","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: neutral — neutral-site tournament game","Market: neutral — no public betting data available for this game; no moneyline was findable for this matchup","Matchup splits: favors Gonzaga Bulldogs — Gonzaga's elite offense (AdjOE 125.4, 4th nationally) against Creighton's good-not-great defense (AdjDE 99.9, 40th) is the clearer mismatch"],"altReturn":null,"altSpreadReturn":null,"away":"Creighton Bluejays","awayMoneyline":null,"awayPDpg":13.4,"awayRank":null,"awayScore":null,"awaySpread":5.5,"awaySpreadOdds":-110,"confidence":"skip","correct":null,"gameTotal":161.5,"gameTotalOverOdds":-105,"gameTotalUnderOdds":-115,"home":"Gonzaga Bulldogs","homeMoneyline":null,"homePDpg":17.7,"homeRank":22,"homeScore":null,"homeSpread":-5.5,"homeSpreadOdds":-110,"lineMove":{"checked":"2026-11-27T09:07:59+00:00","ml":{},"spread":[-5.5,-5.5],"total":[161.5,161.5]},"offGap":9.89,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g Bluejays +13.4 vs #22 Bulldogs +17.7 (2026-27 season)","AdjOE 118.6 (natl rank 40/365, 89.29th pct) vs 125.4 (rank 4/365, 99.18th pct) — off-gap 9.89","AdjDE 99.9 (rank 40/365) vs 98.0 (rank 25/365)","Neutral site: T-Mobile Arena, Las Vegas","No current-week injury confirmed for either team's rotation"],"storylines":[{"against":false,"fact":"Creighton lost to Gonzaga 63-90 last season (2025-11-11).","key":"last_season_grudge","leanPct":52.5,"leans":"Creighton Bluejays","live":"15-11","name":"Last year's grudge","pct":52.5,"record":"1420-1285","says":"back","team":"Creighton Bluejays","unit":"ATS","weight":1},{"against":true,"fact":"Creighton tips at 11:00 PM ET in Las Vegas, NV.","key":"after_dark","leanPct":51.5,"leans":"Creighton Bluejays","live":"7-2","name":"After dark out West","pct":48.5,"record":"80-85","says":"fade","team":"Creighton Bluejays","unit":"ATS","weight":1}],"time":"11:00 PM ET"},
-    {"altCategoryTally":"2-0","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Texas Tech Red Raiders (PD/g +21.3 vs San Diego State's +13.9)","Rest: neutral (both arrived for the same event)","Travel: neutral (both traveled to Las Vegas for the tournament)","Injuries/Lineup: neutral — no current confirmed rotation absence for either side","Form: neutral — no verified recent-form data found for either team","Motivation/Spot: neutral","Venue/Crowd: neutral — neutral-site tournament game","Market: neutral — no odds were publicly posted for this game at the time of writing","Matchup splits: favors Texas Tech Red Raiders — Texas Tech's elite defense (AdjDE 94.3, 7th nationally) against San Diego State's good offense (AdjOE 115.7, 66th) is the clearer mismatch"],"altReturn":null,"altSpreadReturn":null,"away":"Texas Tech Red Raiders","awayMoneyline":null,"awayPDpg":21.3,"awayRank":5,"awayScore":null,"awaySpread":null,"awaySpreadOdds":null,"confidence":"skip","correct":null,"home":"San Diego State Aztecs","homeMoneyline":null,"homePDpg":13.9,"homeRank":null,"homeScore":null,"homeSpread":null,"homeSpreadOdds":null,"offGap":8.52,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g #5 Raiders +21.3 vs Aztecs +13.9 (2026-27 season)","AdjOE 119.1 (natl rank 35/365, 90.66th pct) vs 115.7 (rank 66/365, 82.14th pct) — off-gap 8.52","AdjDE 94.3 (rank 7/365) vs 100.2 (rank 46/365)","Neutral site: Michelob ULTRA Arena, Las Vegas","No current-week injury confirmed for either team's rotation","No spread/moneyline was publicly posted yet for this late tip-off at the time of writing"],"time":"11:30 PM ET"}
+    {
+      "altCategoryTally": "1-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors St. John's Red Storm (PD/g +22.4 vs Iowa State's +13.7)",
+        "Rest: neutral (both arrived for the same multi-team event)",
+        "Travel: neutral (both traveled to Las Vegas for the tournament)",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral \u2014 standard early-season tournament game",
+        "Venue/Crowd: neutral \u2014 neutral-site tournament game, no home-court edge for either side",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: favors Iowa State Cyclones \u2014 Iowa State's defense (AdjDE 93.8, 4th nationally) is more elite relative to the field than St. John's offense (AdjOE 120.9, 20th) is dominant"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "St. John's Red Storm",
+      "awayMoneyline": -162,
+      "awayPDpg": 22.4,
+      "awayRank": 13,
+      "awayScore": null,
+      "awaySpread": -4.5,
+      "awaySpreadOdds": -110,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 150.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "home": "Iowa State Cyclones",
+      "homeMoneyline": 136,
+      "homePDpg": 13.7,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": 4.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "checked": "2026-11-27T09:07:58+00:00",
+        "ml": {
+          "away": [
+            -148.0,
+            -162.0
+          ],
+          "home": [
+            124.0,
+            136.0
+          ]
+        },
+        "spread": [
+          -2.5,
+          4.5
+        ],
+        "total": [
+          150.5,
+          150.5
+        ]
+      },
+      "offGap": 15.11,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g #13 Storm +22.4 vs Cyclones +13.7 (2026-27 season)",
+        "AdjOE 120.9 (natl rank 20/365, 94.78th pct) vs 114.7 (rank 75/365, 79.67th pct) \u2014 off-gap 15.11",
+        "AdjDE 95.2 (rank 10/365) vs 93.8 (rank 4/365)",
+        "Neutral site: Michelob ULTRA Arena, Las Vegas",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "storylines": [
+        {
+          "against": false,
+          "fact": "St. John's lost to Iowa State 82-83 last season (2025-11-24).",
+          "key": "last_season_grudge",
+          "leanPct": 52.5,
+          "leans": "St. John's Red Storm",
+          "live": "15-11",
+          "name": "Last year's grudge",
+          "pct": 52.5,
+          "record": "1420-1285",
+          "says": "back",
+          "team": "St. John's Red Storm",
+          "unit": "ATS",
+          "weight": 1
+        }
+      ],
+      "time": "1:00 PM ET"
+    },
+    {
+      "altCategoryTally": "1-1",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Wake Forest Demon Deacons (PD/g +13.3 vs Memphis's +5.7)",
+        "Rest: neutral (both arrived for the same multi-team event)",
+        "Travel: neutral (both traveled to the Bahamas for the tournament)",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: neutral \u2014 neutral-site tournament game",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: favors Memphis Tigers \u2014 Memphis's offense (AdjOE 121.1, 18th nationally) is a bigger mismatch against Wake Forest's middling defense (AdjDE 101.5, 62nd) than the reverse side of the ball"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Wake Forest Demon Deacons",
+      "awayMoneyline": 114,
+      "awayPDpg": 13.3,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 2.5,
+      "awaySpreadOdds": -115,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 154.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "home": "Memphis Tigers",
+      "homeMoneyline": -135,
+      "homePDpg": 5.7,
+      "homeRank": 24,
+      "homeScore": null,
+      "homeSpread": -2.5,
+      "homeSpreadOdds": -105,
+      "lineMove": {
+        "checked": "2026-11-27T09:07:58+00:00",
+        "ml": {
+          "away": [
+            130.0,
+            114.0
+          ],
+          "home": [
+            -155.0,
+            -135.0
+          ]
+        },
+        "spread": [
+          -2.5,
+          -2.5
+        ],
+        "total": [
+          155.5,
+          154.5
+        ]
+      },
+      "offGap": 20.88,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g Deacons +13.3 vs #24 Tigers +5.7 (2026-27 season)",
+        "AdjOE 113.1 (natl rank 94/365, 74.45th pct) vs 121.1 (rank 18/365, 95.33th pct) \u2014 off-gap 20.88",
+        "AdjDE 101.5 (rank 62/365) vs 108.0 (rank 162/365)",
+        "Neutral site: Imperial Arena, Baha Mar, Bahamas",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "6-2",
+          "key": "rolling_dog",
+          "name": "Rolling underdog",
+          "team": "Wake Forest Demon Deacons",
+          "says": "back",
+          "fact": "Wake Forest has won 5 straight and is a +2.5 underdog.",
+          "record": "270-304",
+          "pct": 47.0,
+          "leans": "Memphis Tigers",
+          "leanPct": 53.0,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "15-11",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Memphis Tigers",
+          "says": "back",
+          "fact": "Memphis lost to Wake Forest 68-69 last season (2025-11-21).",
+          "record": "1420-1285",
+          "pct": 52.5,
+          "leans": "Memphis Tigers",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ],
+      "time": "1:30 PM ET"
+    },
+    {
+      "altCategoryTally": "0-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Vanderbilt Commodores (PD/g +25.7 vs Southern's -28.0 \u2014 one of the widest gaps on the board)",
+        "Rest: neutral \u2014 no specific rest disadvantage confirmed",
+        "Travel: neutral \u2014 a standard true-road trip for a small-conference team, nothing extreme",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral \u2014 standard non-conference buy game",
+        "Venue/Crowd: neutral \u2014 Memorial Gym, standard home court, nothing unusual",
+        "Market: neutral \u2014 no public betting data available for this game; the -37.5 spread already reflects the mismatch",
+        "Matchup splits: favors Vanderbilt Commodores \u2014 Vanderbilt's defense (AdjDE 94.0, 6th nationally) against Southern's offense (AdjOE 100.0, 316th nationally) is one of the starkest unit mismatches on tonight's board"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Southern Jaguars",
+      "awayMoneyline": null,
+      "awayPDpg": -28,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 37.5,
+      "awaySpreadOdds": -110,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 151.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
+      "home": "Vanderbilt Commodores",
+      "homeMoneyline": null,
+      "homePDpg": 25.7,
+      "homeRank": 14,
+      "homeScore": null,
+      "homeSpread": -37.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "checked": "2026-11-27T09:07:58+00:00",
+        "ml": {},
+        "spread": [
+          -36.5,
+          -37.5
+        ],
+        "total": [
+          151.5,
+          151.5
+        ]
+      },
+      "offGap": 77.47,
+      "pick": "Vanderbilt Commodores",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g Jaguars -28.0 vs #14 Commodores +25.7 (2026-27 season)",
+        "AdjOE 100.0 (natl rank 316/365, 13.46th pct) vs 119.2 (rank 34/365, 90.93th pct) \u2014 off-gap 77.47",
+        "AdjDE 112.2 (rank 269/365) vs 94.0 (rank 6/365)",
+        "True road game for Southern (SWAC, Baton Rouge) at Vanderbilt (Memorial Gym, Nashville)",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "time": "2:00 PM ET"
+    },
+    {
+      "altCategoryTally": "0-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors UCLA Bruins (PD/g +27.7 vs Georgetown's +13.1)",
+        "Rest: neutral (both arrived for the same event)",
+        "Travel: neutral (both traveled to San Diego for the tournament)",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: neutral \u2014 neutral-site tournament game",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: favors UCLA Bruins \u2014 UCLA's offense (AdjOE 121.4, 17th nationally) against Georgetown's below-average defense (AdjDE 104.4, 102nd) is the bigger mismatch of the two sides of the ball"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Georgetown Hoyas",
+      "awayMoneyline": 285,
+      "awayPDpg": 13.1,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 8.5,
+      "awaySpreadOdds": -110,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 153.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "home": "UCLA Bruins",
+      "homeMoneyline": -360,
+      "homePDpg": 27.7,
+      "homeRank": 6,
+      "homeScore": null,
+      "homeSpread": -8.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "checked": "2026-11-27T09:07:58+00:00",
+        "ml": {
+          "away": [
+            285.0,
+            285.0
+          ],
+          "home": [
+            -360.0,
+            -360.0
+          ]
+        },
+        "spread": [
+          -9.5,
+          -8.5
+        ],
+        "total": [
+          153.5,
+          153.5
+        ]
+      },
+      "offGap": 5.76,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g Hoyas +13.1 vs #6 Bruins +27.7 (2026-27 season)",
+        "AdjOE 119.0 (natl rank 38/365, 89.84th pct) vs 121.4 (rank 17/365, 95.6th pct) \u2014 off-gap 5.76",
+        "AdjDE 104.4 (rank 102/365) vs 97.6 (rank 21/365)",
+        "Neutral site: Jenny Craig Pavilion, San Diego (Rady Children's Invitational)",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "time": "2:30 PM ET"
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Texas Longhorns (PD/g +28.7 vs Saint Mary's +16.6)",
+        "Rest: neutral (both arrived for the same event)",
+        "Travel: neutral (both traveled to San Diego for the tournament)",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: neutral \u2014 neutral-site tournament game",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: favors Texas Longhorns \u2014 Texas's elite offense (AdjOE 122.2, 12th nationally) against Saint Mary's average defense (AdjDE 102.8, 77th) is a clear mismatch"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Texas Longhorns",
+      "awayMoneyline": -345,
+      "awayPDpg": 28.7,
+      "awayRank": 7,
+      "awayScore": null,
+      "awaySpread": -7.5,
+      "awaySpreadOdds": -115,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 160.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -111,
+      "home": "Saint Mary's Gaels",
+      "homeMoneyline": 275,
+      "homePDpg": 16.6,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": 7.5,
+      "homeSpreadOdds": -105,
+      "lineMove": {
+        "spread": [
+          5.5,
+          7.5
+        ],
+        "total": [
+          157.5,
+          160.5
+        ],
+        "ml": {
+          "home": [
+            275.0,
+            270.0
+          ],
+          "away": [
+            -345.0,
+            -340.0
+          ]
+        },
+        "checked": "2026-11-27T20:00:34+00:00"
+      },
+      "offGap": 7.42,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g #7 Longhorns +28.7 vs Gaels +16.6 (2026-27 season)",
+        "AdjOE 122.2 (natl rank 12/365, 96.98th pct) vs 119.0 (rank 39/365, 89.56th pct) \u2014 off-gap 7.42",
+        "AdjDE 99.2 (rank 33/365) vs 102.8 (rank 77/365)",
+        "Neutral site: Jenny Craig Pavilion, San Diego (Rady Children's Invitational)",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "storylines": [
+        {
+          "against": true,
+          "fact": "Saint Mary's has won 5 straight and is a +7.5 underdog.",
+          "key": "rolling_dog",
+          "leanPct": 53.0,
+          "leans": "Texas Longhorns",
+          "live": "6-2",
+          "name": "Rolling underdog",
+          "pct": 47.0,
+          "record": "270-304",
+          "says": "back",
+          "team": "Saint Mary's Gaels",
+          "unit": "ATS",
+          "weight": 1
+        },
+        {
+          "against": false,
+          "fact": "Unranked Saint Mary's beat #6 UCLA 85-70 last time out.",
+          "key": "upset_hangover",
+          "leanPct": 57.3,
+          "leans": "Texas Longhorns",
+          "live": "0-0",
+          "name": "Upset hangover",
+          "pct": 57.3,
+          "record": "43-32",
+          "says": "fade",
+          "team": "Saint Mary's Gaels",
+          "unit": "ATS",
+          "weight": 1
+        }
+      ],
+      "time": "5:00 PM ET"
+    },
+    {
+      "altCategoryTally": "0-4",
+      "altConfidence": "lean",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": "Kansas Jayhawks",
+      "altReasons": [
+        "Scoring margin: favors Kansas Jayhawks (PD/g +18.7 vs Villanova's +12.7)",
+        "Rest: neutral \u2014 no specific rest disadvantage confirmed",
+        "Travel: favors Kansas Jayhawks \u2014 Villanova is traveling roughly 1,100 miles from Philadelphia into a new time zone for a true road game",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: favors Kansas Jayhawks \u2014 Allen Fieldhouse is one of the sport's most storied, loudest home-court advantages",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: favors Kansas Jayhawks \u2014 Kansas's elite defense (AdjDE 95.1, 9th nationally) against Villanova's good-not-great offense (AdjOE 115.4, 69th) is a clear mismatch"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Villanova Wildcats",
+      "awayMoneyline": 600,
+      "awayPDpg": 12.7,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 12.5,
+      "awaySpreadOdds": -110,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 158.5,
+      "gameTotalOverOdds": -114,
+      "gameTotalUnderOdds": -106,
+      "home": "Kansas Jayhawks",
+      "homeMoneyline": -900,
+      "homePDpg": 18.7,
+      "homeRank": 12,
+      "homeScore": null,
+      "homeSpread": -12.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "spread": [
+          -12.5,
+          -10.5
+        ],
+        "total": [
+          159.5,
+          158.5
+        ],
+        "ml": {
+          "home": [
+            -750.0,
+            -700.0
+          ],
+          "away": [
+            525.0,
+            500.0
+          ]
+        },
+        "checked": "2026-11-27T20:00:34+00:00"
+      },
+      "offGap": 17.03,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g Wildcats +12.7 vs #12 Jayhawks +18.7 (2026-27 season)",
+        "AdjOE 115.4 (natl rank 69/365, 81.32th pct) vs 123.4 (rank 7/365, 98.35th pct) \u2014 off-gap 17.03",
+        "AdjDE 99.7 (rank 36/365) vs 95.1 (rank 9/365)",
+        "True road game for Villanova (Philadelphia) at Kansas (Lawrence) \u2014 a cross-regional trip with a time-zone shift",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "time": "5:00 PM ET"
+    },
+    {
+      "altCategoryTally": "0-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Illinois Fighting Illini (PD/g +38.0 vs Western Kentucky's +8.2 \u2014 the widest PD/g gap on tonight's board)",
+        "Rest: neutral \u2014 no specific rest disadvantage confirmed",
+        "Travel: neutral \u2014 a routine regional trip (Bowling Green, KY to Champaign, IL)",
+        "Injuries/Lineup: neutral \u2014 Illinois' long-term absence of David Mirkovic is already fully baked into its (nation-leading) offensive numbers and doesn't meet a fresh 2+ cluster; no Western Kentucky absence confirmed",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: neutral \u2014 State Farm Center, solid but not an outlier home-court edge",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: favors Illinois Fighting Illini \u2014 Illinois has the nation's #1-ranked offense (AdjOE 128.9) against a middling Western Kentucky defense (AdjDE 101.9, 64th)"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Western Kentucky Hilltoppers",
+      "awayMoneyline": 3500,
+      "awayPDpg": 8.2,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 27.5,
+      "awaySpreadOdds": -110,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 175.5,
+      "gameTotalOverOdds": -113,
+      "gameTotalUnderOdds": -107,
+      "home": "Illinois Fighting Illini",
+      "homeMoneyline": -20000,
+      "homePDpg": 38,
+      "homeRank": 4,
+      "homeScore": null,
+      "homeSpread": -27.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "spread": [
+          -27.5,
+          -26.5
+        ],
+        "total": [
+          174.5,
+          175.5
+        ],
+        "ml": {
+          "home": [
+            -20000.0,
+            -10000.0
+          ],
+          "away": [
+            3500.0,
+            3000.0
+          ]
+        },
+        "checked": "2026-11-27T20:00:34+00:00"
+      },
+      "offGap": 34.62,
+      "pick": "Illinois Fighting Illini",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g Hilltoppers +8.2 vs #4 Illini +38.0 (2026-27 season)",
+        "AdjOE 110.9 (natl rank 127/365, 65.38th pct) vs 128.9 (rank 1/365, 100.0th pct) \u2014 off-gap 34.62",
+        "AdjDE 101.9 (rank 64/365) vs 97.7 (rank 22/365)",
+        "Illinois forward David Mirkovic has been out since the preseason (foot injury in August, complicated by an emergency appendectomy on Oct 31); no firm return date, already fully reflected in Illinois' #1-ranked offense this season",
+        "No current injury confirmed for Western Kentucky's rotation"
+      ],
+      "storylines": [
+        {
+          "against": true,
+          "fact": "#4 Illinois is a -27.5 favorite.",
+          "key": "top5_huge",
+          "leanPct": 53.7,
+          "leans": "Illinois Fighting Illini",
+          "live": "10-5",
+          "name": "Top-5 laying 25",
+          "pct": 46.3,
+          "record": "105-122",
+          "says": "fade",
+          "team": "Illinois Fighting Illini",
+          "unit": "ATS",
+          "weight": 1
+        },
+        {
+          "against": true,
+          "fact": "Illinois won its last three by 50, 62, 21.",
+          "key": "steamroller",
+          "leanPct": 54.8,
+          "leans": "Illinois Fighting Illini",
+          "live": "7-10",
+          "name": "Steamroller",
+          "pct": 45.2,
+          "record": "122-148",
+          "says": "fade",
+          "team": "Illinois Fighting Illini",
+          "unit": "ATS",
+          "weight": 1
+        },
+        {
+          "against": true,
+          "fact": "Illinois moved up from #10 to #4 in this week's AP poll.",
+          "key": "poll_riser",
+          "leanPct": 53.4,
+          "leans": "Illinois Fighting Illini",
+          "live": "2-7",
+          "name": "Poll riser",
+          "pct": 46.6,
+          "record": "237-272",
+          "says": "fade",
+          "team": "Illinois Fighting Illini",
+          "unit": "ATS",
+          "weight": 1
+        },
+        {
+          "against": false,
+          "fact": "Western Kentucky's first game back from neutral-site games (Greenbrier Tip-Off).",
+          "key": "mte_hangover",
+          "leanPct": 53.6,
+          "leans": "Illinois Fighting Illini",
+          "live": "2-0",
+          "name": "Tournament-trip hangover",
+          "pct": 53.6,
+          "record": "126-109",
+          "says": "fade",
+          "team": "Western Kentucky Hilltoppers",
+          "unit": "ATS",
+          "weight": 1
+        }
+      ],
+      "time": "6:00 PM ET"
+    },
+    {
+      "altCategoryTally": "0-3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Indiana Hoosiers (PD/g +17.3 vs Bowling Green's +5.8)",
+        "Rest: neutral \u2014 no specific rest disadvantage confirmed",
+        "Travel: neutral \u2014 a routine regional trip (Bowling Green, OH to Bloomington, IN)",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: favors Indiana Hoosiers \u2014 Assembly Hall is one of college basketball's most storied, loudest home environments",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: favors Indiana Hoosiers \u2014 Indiana's elite offense (AdjOE 122.0, 14th nationally) against Bowling Green's one of the nation's worst defenses (AdjDE 114.8, 318th) is a stark mismatch"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Bowling Green Falcons",
+      "awayMoneyline": 1800,
+      "awayPDpg": 5.8,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 22.5,
+      "awaySpreadOdds": -108,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 151.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "home": "Indiana Hoosiers",
+      "homeMoneyline": -5000,
+      "homePDpg": 17.3,
+      "homeRank": 23,
+      "homeScore": null,
+      "homeSpread": -22.5,
+      "homeSpreadOdds": -112,
+      "lineMove": {
+        "spread": [
+          -23.5,
+          -21.5
+        ],
+        "total": [
+          152.5,
+          151.5
+        ],
+        "ml": {
+          "home": [
+            -9000.0,
+            -5000.0
+          ],
+          "away": [
+            2500.0,
+            1800.0
+          ]
+        },
+        "checked": "2026-11-27T20:00:34+00:00"
+      },
+      "offGap": 22.53,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g Falcons +5.8 vs #23 Hoosiers +17.3 (2026-27 season)",
+        "AdjOE 113.1 (natl rank 96/365, 73.9th pct) vs 122.0 (rank 14/365, 96.43th pct) \u2014 off-gap 22.53",
+        "AdjDE 114.8 (rank 318/365) vs 101.2 (rank 57/365)",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "time": "6:00 PM ET"
+    },
+    {
+      "altCategoryTally": "0-3",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Houston Cougars (PD/g +22.3 vs Oakland's -21.9)",
+        "Rest: neutral \u2014 no specific rest disadvantage confirmed",
+        "Travel: favors Houston Cougars \u2014 Oakland (Rochester, MI) is traveling roughly 1,100 miles for this true road game",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: neutral \u2014 Fertitta Center, solid home court but not an outlier edge",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: favors Houston Cougars \u2014 Houston's nationally elite, Kelvin Sampson-era defense (AdjDE 93.8, 3rd nationally) against Oakland's below-average offense (AdjOE 106.9, 196th) is a stark mismatch"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Oakland Golden Grizzlies",
+      "awayMoneyline": null,
+      "awayPDpg": -21.9,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 36.5,
+      "awaySpreadOdds": -112,
+      "confidence": "solid",
+      "correct": null,
+      "gameTotal": 143.5,
+      "gameTotalOverOdds": -116,
+      "gameTotalUnderOdds": -104,
+      "home": "Houston Cougars",
+      "homeMoneyline": null,
+      "homePDpg": 22.3,
+      "homeRank": 1,
+      "homeScore": null,
+      "homeSpread": -36.5,
+      "homeSpreadOdds": -108,
+      "lineMove": {
+        "spread": [
+          -38.5,
+          -36.5
+        ],
+        "total": [
+          150.5,
+          143.5
+        ],
+        "ml": {},
+        "checked": "2026-11-27T20:00:34+00:00"
+      },
+      "offGap": 53.3,
+      "pick": "Houston Cougars",
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": null,
+      "skipped": false,
+      "statLines": [
+        "PD/g Grizzlies -21.9 vs #1 Cougars +22.3 (2026-27 season)",
+        "AdjOE 106.9 (natl rank 196/365, 46.43th pct) vs 126.5 (rank 2/365, 99.73th pct) \u2014 off-gap 53.3",
+        "AdjDE 114.4 (rank 308/365) vs 93.8 (rank 3/365)",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "storylines": [
+        {
+          "against": true,
+          "fact": "#1 Houston is a -36.5 favorite.",
+          "key": "top5_huge",
+          "leanPct": 53.7,
+          "leans": "Houston Cougars",
+          "live": "10-5",
+          "name": "Top-5 laying 25",
+          "pct": 46.3,
+          "record": "105-122",
+          "says": "fade",
+          "team": "Houston Cougars",
+          "unit": "ATS",
+          "weight": 1
+        },
+        {
+          "against": true,
+          "fact": "Houston moved up from #8 to #1 in this week's AP poll.",
+          "key": "poll_riser",
+          "leanPct": 53.4,
+          "leans": "Houston Cougars",
+          "live": "2-7",
+          "name": "Poll riser",
+          "pct": 46.6,
+          "record": "237-272",
+          "says": "fade",
+          "team": "Houston Cougars",
+          "unit": "ATS",
+          "weight": 1
+        },
+        {
+          "against": false,
+          "fact": "Oakland lost to Houston 45-78 last season (2025-11-12).",
+          "key": "last_season_grudge",
+          "leanPct": 52.5,
+          "leans": "Oakland Golden Grizzlies",
+          "live": "15-11",
+          "name": "Last year's grudge",
+          "pct": 52.5,
+          "record": "1420-1285",
+          "says": "back",
+          "team": "Oakland Golden Grizzlies",
+          "unit": "ATS",
+          "weight": 1
+        }
+      ],
+      "time": "7:30 PM ET"
+    },
+    {
+      "altCategoryTally": "1-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Miami Hurricanes (PD/g +26.1 vs Alabama's +15.7)",
+        "Rest: neutral (both arrived for the same event)",
+        "Travel: neutral (both traveled to Las Vegas for the tournament)",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: neutral \u2014 neutral-site tournament game",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: neutral \u2014 Alabama's elite offense (AdjOE 121.8, 15th) matches up against Miami's elite defense (AdjDE 96.3, 14th) about as evenly as Miami's good offense matches Alabama's average defense, no clear unit-level edge either way"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Miami Hurricanes",
+      "awayMoneyline": -135,
+      "awayPDpg": 26.1,
+      "awayRank": 17,
+      "awayScore": null,
+      "awaySpread": -2.5,
+      "awaySpreadOdds": -102,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 170.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "home": "Alabama Crimson Tide",
+      "homeMoneyline": 114,
+      "homePDpg": 15.7,
+      "homeRank": 15,
+      "homeScore": null,
+      "homeSpread": 2.5,
+      "homeSpreadOdds": -118,
+      "lineMove": {
+        "spread": [
+          1.5,
+          1.5
+        ],
+        "total": [
+          170.5,
+          170.5
+        ],
+        "ml": {
+          "home": [
+            114.0,
+            114.0
+          ],
+          "away": [
+            -135.0,
+            -135.0
+          ]
+        },
+        "checked": "2026-11-27T20:00:34+00:00"
+      },
+      "offGap": 4.67,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g #17 Hurricanes +26.1 vs #15 Tide +15.7 (2026-27 season)",
+        "AdjOE 119.5 (natl rank 32/365, 91.48th pct) vs 121.8 (rank 15/365, 96.15th pct) \u2014 off-gap 4.67",
+        "AdjDE 96.3 (rank 14/365) vs 101.0 (rank 54/365)",
+        "Neutral site: T-Mobile Arena, Las Vegas",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "time": "8:30 PM ET"
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Tennessee Volunteers (PD/g +17.1 vs Louisville's +11.5)",
+        "Rest: neutral (both arrived for the same event)",
+        "Travel: neutral (both traveled to Las Vegas for the tournament)",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: neutral \u2014 neutral-site tournament game",
+        "Market: neutral \u2014 no public betting data available for this game",
+        "Matchup splits: favors Tennessee Volunteers \u2014 Tennessee has the nation's #1-ranked defense (AdjDE 93.4) against a Louisville offense (AdjOE 120.5, 24th) that is good but hasn't faced this level of resistance"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Tennessee Volunteers",
+      "awayMoneyline": -122,
+      "awayPDpg": 17.1,
+      "awayRank": 9,
+      "awayScore": null,
+      "awaySpread": -1.5,
+      "awaySpreadOdds": -102,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 148.5,
+      "gameTotalOverOdds": -116,
+      "gameTotalUnderOdds": -105,
+      "home": "Louisville Cardinals",
+      "homeMoneyline": 102,
+      "homePDpg": 11.5,
+      "homeRank": 25,
+      "homeScore": null,
+      "homeSpread": 1.5,
+      "homeSpreadOdds": -118,
+      "lineMove": {
+        "spread": [
+          1.5,
+          -3.5
+        ],
+        "total": [
+          150.5,
+          148.5
+        ],
+        "ml": {
+          "home": [
+            102.0,
+            -170.0
+          ],
+          "away": [
+            -122.0,
+            142.0
+          ]
+        },
+        "checked": "2026-11-27T20:00:34+00:00"
+      },
+      "offGap": 9.61,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g #9 Volunteers +17.1 vs #25 Cardinals +11.5 (2026-27 season)",
+        "AdjOE 116.4 (natl rank 59/365, 84.07th pct) vs 120.5 (rank 24/365, 93.68th pct) \u2014 off-gap 9.61",
+        "AdjDE 93.4 (rank 1/365) vs 99.2 (rank 34/365)",
+        "Neutral site: Michelob ULTRA Arena, Las Vegas",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "storylines": [
+        {
+          "against": false,
+          "fact": "Louisville lost to Tennessee 62-83 last season (2025-12-16).",
+          "key": "last_season_grudge",
+          "leanPct": 52.5,
+          "leans": "Louisville Cardinals",
+          "live": "15-11",
+          "name": "Last year's grudge",
+          "pct": 52.5,
+          "record": "1420-1285",
+          "says": "back",
+          "team": "Louisville Cardinals",
+          "unit": "ATS",
+          "weight": 1
+        },
+        {
+          "against": true,
+          "fact": "Tennessee moved up from #14 to #9 in this week's AP poll.",
+          "key": "poll_riser",
+          "leanPct": 53.4,
+          "leans": "Tennessee Volunteers",
+          "live": "2-7",
+          "name": "Poll riser",
+          "pct": 46.6,
+          "record": "237-272",
+          "says": "fade",
+          "team": "Tennessee Volunteers",
+          "unit": "ATS",
+          "weight": 1
+        },
+        {
+          "against": true,
+          "fact": "#9 Tennessee is a -1.5 favorite over #25 Louisville on a neutral floor.",
+          "key": "november_hype",
+          "leanPct": 51.4,
+          "leans": "Tennessee Volunteers",
+          "live": "5-3",
+          "name": "November hype",
+          "pct": 48.6,
+          "record": "36-38",
+          "says": "fade",
+          "team": "Tennessee Volunteers",
+          "unit": "ATS",
+          "weight": 1
+        }
+      ],
+      "time": "9:00 PM ET"
+    },
+    {
+      "altCategoryTally": "0-2",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Gonzaga Bulldogs (PD/g +17.7 vs Creighton's +13.4)",
+        "Rest: neutral (both arrived for the same event)",
+        "Travel: neutral (both traveled to Las Vegas for the tournament)",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: neutral \u2014 neutral-site tournament game",
+        "Market: neutral \u2014 no public betting data available for this game; no moneyline was findable for this matchup",
+        "Matchup splits: favors Gonzaga Bulldogs \u2014 Gonzaga's elite offense (AdjOE 125.4, 4th nationally) against Creighton's good-not-great defense (AdjDE 99.9, 40th) is the clearer mismatch"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Creighton Bluejays",
+      "awayMoneyline": null,
+      "awayPDpg": 13.4,
+      "awayRank": null,
+      "awayScore": null,
+      "awaySpread": 5.5,
+      "awaySpreadOdds": -110,
+      "confidence": "skip",
+      "correct": null,
+      "gameTotal": 160.5,
+      "gameTotalOverOdds": -109,
+      "gameTotalUnderOdds": -111,
+      "home": "Gonzaga Bulldogs",
+      "homeMoneyline": null,
+      "homePDpg": 17.7,
+      "homeRank": 22,
+      "homeScore": null,
+      "homeSpread": -5.5,
+      "homeSpreadOdds": -110,
+      "lineMove": {
+        "spread": [
+          -5.5,
+          -6.5
+        ],
+        "total": [
+          161.5,
+          160.5
+        ],
+        "ml": {
+          "home": [
+            -225.0,
+            -250.0
+          ],
+          "away": [
+            185.0,
+            205.0
+          ]
+        },
+        "checked": "2026-11-27T20:00:34+00:00"
+      },
+      "offGap": 9.89,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g Bluejays +13.4 vs #22 Bulldogs +17.7 (2026-27 season)",
+        "AdjOE 118.6 (natl rank 40/365, 89.29th pct) vs 125.4 (rank 4/365, 99.18th pct) \u2014 off-gap 9.89",
+        "AdjDE 99.9 (rank 40/365) vs 98.0 (rank 25/365)",
+        "Neutral site: T-Mobile Arena, Las Vegas",
+        "No current-week injury confirmed for either team's rotation"
+      ],
+      "storylines": [
+        {
+          "against": false,
+          "fact": "Creighton lost to Gonzaga 63-90 last season (2025-11-11).",
+          "key": "last_season_grudge",
+          "leanPct": 52.5,
+          "leans": "Creighton Bluejays",
+          "live": "15-11",
+          "name": "Last year's grudge",
+          "pct": 52.5,
+          "record": "1420-1285",
+          "says": "back",
+          "team": "Creighton Bluejays",
+          "unit": "ATS",
+          "weight": 1
+        },
+        {
+          "against": true,
+          "fact": "Creighton tips at 11:00 PM ET in Las Vegas, NV.",
+          "key": "after_dark",
+          "leanPct": 51.5,
+          "leans": "Creighton Bluejays",
+          "live": "7-2",
+          "name": "After dark out West",
+          "pct": 48.5,
+          "record": "80-85",
+          "says": "fade",
+          "team": "Creighton Bluejays",
+          "unit": "ATS",
+          "weight": 1
+        }
+      ],
+      "time": "11:00 PM ET"
+    },
+    {
+      "altCategoryTally": "2-0",
+      "altConfidence": "pass",
+      "altCorrect": null,
+      "altCover": null,
+      "altPick": null,
+      "altReasons": [
+        "Scoring margin: favors Texas Tech Red Raiders (PD/g +21.3 vs San Diego State's +13.9)",
+        "Rest: neutral (both arrived for the same event)",
+        "Travel: neutral (both traveled to Las Vegas for the tournament)",
+        "Injuries/Lineup: neutral \u2014 no current confirmed rotation absence for either side",
+        "Form: neutral \u2014 no verified recent-form data found for either team",
+        "Motivation/Spot: neutral",
+        "Venue/Crowd: neutral \u2014 neutral-site tournament game",
+        "Market: neutral \u2014 no odds were publicly posted for this game at the time of writing",
+        "Matchup splits: favors Texas Tech Red Raiders \u2014 Texas Tech's elite defense (AdjDE 94.3, 7th nationally) against San Diego State's good offense (AdjOE 115.7, 66th) is the clearer mismatch"
+      ],
+      "altReturn": null,
+      "altSpreadReturn": null,
+      "away": "Texas Tech Red Raiders",
+      "awayMoneyline": null,
+      "awayPDpg": 21.3,
+      "awayRank": 5,
+      "awayScore": null,
+      "awaySpread": null,
+      "awaySpreadOdds": null,
+      "confidence": "skip",
+      "correct": null,
+      "home": "San Diego State Aztecs",
+      "homeMoneyline": null,
+      "homePDpg": 13.9,
+      "homeRank": null,
+      "homeScore": null,
+      "homeSpread": null,
+      "homeSpreadOdds": null,
+      "offGap": 8.52,
+      "pick": null,
+      "pickCover": null,
+      "pickReturn": null,
+      "pickSpreadReturn": null,
+      "skipReason": "off-gap",
+      "skipped": true,
+      "statLines": [
+        "PD/g #5 Raiders +21.3 vs Aztecs +13.9 (2026-27 season)",
+        "AdjOE 119.1 (natl rank 35/365, 90.66th pct) vs 115.7 (rank 66/365, 82.14th pct) \u2014 off-gap 8.52",
+        "AdjDE 94.3 (rank 7/365) vs 100.2 (rank 46/365)",
+        "Neutral site: Michelob ULTRA Arena, Las Vegas",
+        "No current-week injury confirmed for either team's rotation",
+        "No spread/moneyline was publicly posted yet for this late tip-off at the time of writing"
+      ],
+      "time": "11:30 PM ET"
+    }
   ]
 }
