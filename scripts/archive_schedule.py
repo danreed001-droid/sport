@@ -27,6 +27,13 @@ data/raw/neutral_sites.json, {sport: {event id: venue}}, read by build_site.py
 (the card shows "Neutral site" instead of Away/Home, and the trend charts give
 neither team a home border). `--neutral-backfill` reads the whole season's
 scoreboards again for that file only (the schedule files are left alone).
+ESPN never flags soccer matches, so for soccer every match's venue is kept in
+data/raw/soccer_venues.json ({event id: [home club, venue id, venue]}) and a
+match counts as neutral when it isn't at the home club's usual ground: the
+venue of 60%+ of its home matches this season, 3+ of them -- or at another
+club's usual ground when the home club has too few saved (2026-11-27, the
+user's ask that neutral sites be shown for every sport; e.g. Shakhtar's
+Champions League "home" match at Stamford Bridge).
 """
 import json
 import os
@@ -41,6 +48,33 @@ from archive_linescores import record_before  # noqa: E402
 ET = ZoneInfo("America/New_York")
 OUT = os.path.join(store.REPO_ROOT, "data", "raw", "schedule")
 NEUTRAL = os.path.join(store.REPO_ROOT, "data", "raw", "neutral_sites.json")
+SOCCER_VENUES = os.path.join(store.REPO_ROOT, "data", "raw", "soccer_venues.json")
+
+
+def soccer_neutral(venues):
+    """{event id: venue} for soccer matches away from the home club's usual ground."""
+    from collections import Counter
+    by = {}
+    for club, vid, _name in venues.values():
+        if club and vid:
+            by.setdefault(club, Counter())[vid] += 1
+    usual = {}
+    for club, c in by.items():
+        vid, n = c.most_common(1)[0]
+        if n >= 3 and n >= 0.6 * sum(c.values()):
+            usual[club] = vid
+    owners = {}
+    for club, vid in usual.items():
+        owners.setdefault(vid, set()).add(club)
+    out = {}
+    for eid, (club, vid, name) in venues.items():
+        if not vid or usual.get(club) == vid:
+            continue
+        # away from the home club's usual ground, or at another club's ground
+        # (a club with few home matches saved, e.g. Shakhtar at Stamford Bridge)
+        if club in usual or owners.get(vid, set()) - {club}:
+            out[eid] = name or ""
+    return out
 LOOKAHEAD_HOURS = 4
 BASE = "https://site.api.espn.com/apis/site/v2/sports"
 # sport: (season start, days ahead, "month" or "day", extra query)
@@ -104,8 +138,9 @@ def _events(session, path, query):
 
 def _rows(evs):
     """{Eastern date: {event id: row}}, {Eastern date: every game on it finished},
-    {event id: venue name or "" when ESPN flags it a neutral site, None when not}."""
-    by, fin, neu = {}, {}, {}
+    {event id: venue name or "" when ESPN flags it a neutral site, None when not},
+    {event id: [home club, venue id, venue name]} (kept for soccer)."""
+    by, fin, neu, ven = {}, {}, {}, {}
     for ev in evs:
         comp = (ev.get("competitions") or [{}])[0]
         t = {c.get("homeAway"): c for c in comp.get("competitors") or []}
@@ -133,7 +168,9 @@ def _rows(evs):
                                                score(a), score(h), pa, ph]
         fin[d] = fin.get(d, True) and done
         neu[str(ev["id"])] = ((comp.get("venue") or {}).get("fullName") or "") if comp.get("neutralSite") else None
-    return by, fin, neu
+        v = comp.get("venue") or {}
+        ven[str(ev["id"])] = [h["team"]["displayName"], str(v.get("id") or ""), v.get("fullName") or ""]
+    return by, fin, neu, ven
 
 
 def _months(start, end):
@@ -151,6 +188,7 @@ def main():
     backfill = "--neutral-backfill" in sys.argv
     only = [a for a in sys.argv[1:] if a in CFG]
     neutral = _load(NEUTRAL)
+    svenues = _load(SOCCER_VENUES)
     for sport, (start, ahead, mode, extra) in CFG.items():
         if only and sport not in only:
             continue
@@ -199,7 +237,9 @@ def main():
                 if evs is None:
                     continue
                 ok.add(q)
-                by, f, nv = _rows(evs)
+                by, f, nv, vv = _rows(evs)
+                if sport == "soccer":
+                    svenues.update(vv)
                 nmap = neutral.setdefault(sport, {})
                 for eid, venue in nv.items():
                     if venue is None:
@@ -242,6 +282,9 @@ def main():
         data["done"] = sorted(done)
         _save(path, data)
         print(f"{sport}: {len(queries)} scoreboard(s), {changed} date(s) changed; {len(dates)} dates saved")
+    if svenues:
+        _save(SOCCER_VENUES, svenues)
+        neutral["soccer"] = soccer_neutral(svenues)
     _save(NEUTRAL, neutral)
 
 
