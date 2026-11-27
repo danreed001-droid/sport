@@ -631,21 +631,6 @@
       "storylines": [
         {
           "weight": 1,
-          "live": "2-5",
-          "key": "poll_riser",
-          "name": "Poll riser",
-          "team": "LSU Tigers",
-          "says": "fade",
-          "fact": "LSU moved up from #25 to #20 in this week's AP poll.",
-          "record": "237-270",
-          "pct": 46.7,
-          "leans": "LSU Tigers",
-          "leanPct": 53.3,
-          "against": true,
-          "unit": "ATS"
-        },
-        {
-          "weight": 1,
           "live": "14-10",
           "key": "last_season_grudge",
           "name": "Last year's grudge",
@@ -657,6 +642,21 @@
           "leans": "SMU Mustangs",
           "leanPct": 52.5,
           "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "2-5",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "LSU Tigers",
+          "says": "fade",
+          "fact": "LSU moved up from #25 to #20 in this week's AP poll.",
+          "record": "237-270",
+          "pct": 46.7,
+          "leans": "LSU Tigers",
+          "leanPct": 53.3,
+          "against": true,
           "unit": "ATS"
         }
       ]
@@ -875,14 +875,14 @@
         "ml": {
           "home": [
             340.0,
-            400.0
+            410.0
           ],
           "away": [
             -440.0,
-            -535.0
+            -550.0
           ]
         },
-        "checked": "2026-11-26T19:04:36+00:00"
+        "checked": "2026-11-27T02:14:26+00:00"
       },
       "offGap": 1.65,
       "pick": null,
@@ -898,8 +898,8 @@
       ],
       "time": "11:30 PM ET",
       "gameTotal": 148.5,
-      "gameTotalOverOdds": -108,
-      "gameTotalUnderOdds": -112,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108,
       "storylines": [
         {
           "weight": 1,
@@ -957,7 +957,7 @@
       "lineMove": {
         "spread": [
           4.5,
-          -3.5
+          -2.5
         ],
         "total": [
           166.5,
@@ -966,14 +966,14 @@
         "ml": {
           "home": [
             -218.0,
-            -175.0
+            -166.0
           ],
           "away": [
             180.0,
-            145.0
+            140.0
           ]
         },
-        "checked": "2026-11-26T19:04:36+00:00"
+        "checked": "2026-11-27T02:14:26+00:00"
       },
       "offGap": 20.88,
       "pick": null,
