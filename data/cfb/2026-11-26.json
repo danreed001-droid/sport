@@ -2,7 +2,7 @@
   "date": "2026-11-26",
   "weekday": "Thursday",
   "sport": "cfb",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-26T13:10:13Z",
   "auditChanges": [
     "cfb TCU @ Texas Tech: Ledger SKIP (qb-close) -> PICK Texas Tech \"lean\". The stored away QB was wrong - Jaden Craig is out with an ankle injury and Adam Schobel starts, with a season passer efficiency of 62.2 (15-of-32, 106 yds, 0 TD, 2 INT), not Craig's 137.9. The QB gap is therefore 73.5 in Texas Tech's favor, so SCREEN 2 no longer vetoes on qb-close and the PD/g gap of 8.7 sets the \"lean\" tier. Second Opinion gains Injuries/Lineup for Texas Tech (tally 2-1 -> 3-1) and remains a pass."
@@ -42,7 +42,7 @@
       "awayQB": "Adam Schobel",
       "awayQBEff": 62.2,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 27.0,
       "awaySpread": 15.5,
       "awaySpreadOdds": -110,
       "awayYPP": 4.8,
@@ -54,15 +54,15 @@
       "homeQB": "Will Hammond",
       "homeQBEff": 135.7,
       "homeRank": 9,
-      "homeScore": null,
+      "homeScore": 48.0,
       "homeSpread": -15.5,
       "homeSpreadOdds": -110,
       "homeYPP": 6.3,
       "offGap": 74.4,
       "pick": "Texas Tech",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "skipped": false,
       "statLines": [
         "unranked vs #9",
@@ -96,5 +96,6 @@
         "checked": "2026-11-26T19:04:37+00:00"
       }
     }
-  ]
+  ],
+  "scoredAt": "2026-11-27T09:06:55.732786+00:00"
 }

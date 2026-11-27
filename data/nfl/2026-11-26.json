@@ -2,7 +2,7 @@
   "date": "2026-11-26",
   "weekday": "Thursday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-26T13:26:32Z",
   "auditChanges": [
     "nfl Chicago Bears @ Detroit Lions: Market category was backwards (line moved 1 pt toward Detroit, not 4 pts toward Chicago), Kyler Gordon is OUT not questionable, Detroit's 7-game Thanksgiving streak is false (won in 2024), the 52-21 blowout was 2025 Week 2, and Injuries/Lineup now weighted x2; tally recomposed, Second Opinion still a pass and the Ledger's Lions toss-up unchanged.",
@@ -40,18 +40,18 @@
       "awayPDpg": 4,
       "awayQB": "Caleb Williams",
       "awayQBRating": 95.9,
-      "awayScore": null,
+      "awayScore": 39.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -110,
       "awayYPP": 5.4,
       "confidence": "toss-up",
-      "correct": null,
+      "correct": false,
       "home": "Detroit Lions",
       "homeMoneyline": 103,
       "homePDpg": 5.4,
       "homeQB": "Jared Goff",
       "homeQBRating": 113.2,
-      "homeScore": null,
+      "homeScore": 35.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -110,
       "homeYPP": 6,
@@ -94,9 +94,9 @@
       },
       "offGap": 32.2,
       "pick": "Detroit Lions",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": -100.0,
+      "pickSpreadReturn": -100.0,
       "skipped": false,
       "statLines": [
         "PD/g +4.0 vs +5.4 (blended 50/50 this season/last season)",
@@ -124,7 +124,15 @@
       ],
       "thirdReturn": null,
       "thirdSpreadReturn": null,
-      "time": "1:00 PM ET"
+      "time": "1:00 PM ET",
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     },
     {
       "altBlowoutCheck": "Cowboys are off a 51-30 win over Tennessee (margin 21, triggers the check): turnover margin was only +1 (not +2) and Dallas led just 27-9 at half \u2014 not a tight game pulled away from, so condition 1 fails; Dallas is favored -8.5 tonight, condition 2 (market bought in) holds; upcoming opponent Philadelphia ranks 32nd in takeaways forced, 18th in points allowed and 17th in pass defense, so condition 3 (opponent takes it away) fails; Dallas ran it only 30 times (condition 4, needs 33+, fails); Dak Prescott has 6 INTs and 2 multi-INT games this season, so condition 5 (turnover-prone) holds. 2 of 5 conditions hit \u2014 regression flag OFF, no points awarded.",
@@ -155,7 +163,7 @@
       "awayPDpg": -1.91,
       "awayQB": "Joe Milton",
       "awayQBRating": 69.5,
-      "awayScore": null,
+      "awayScore": 39.0,
       "awaySpread": 8.5,
       "awaySpreadOdds": -110,
       "awayYPP": 4.3,
@@ -166,7 +174,7 @@
       "homePDpg": -0.04,
       "homeQB": "Dak Prescott",
       "homeQBRating": 97.2,
-      "homeScore": null,
+      "homeScore": 38.0,
       "homeSpread": -8.5,
       "homeSpreadOdds": -110,
       "homeYPP": 5.8,
@@ -219,9 +227,9 @@
       ],
       "offGap": 80.6,
       "pick": "Dallas Cowboys",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipped": false,
       "starterOut": {
         "away": [],
@@ -305,7 +313,8 @@
           "says": "back",
           "team": "Dallas Cowboys",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "thirdConfidence": "strong",
@@ -332,7 +341,19 @@
       "time": "4:30 PM ET",
       "gameTotal": 49.5,
       "gameTotalOverOdds": -113,
-      "gameTotalUnderOdds": -107
+      "gameTotalUnderOdds": -107,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null,
+      "nflStatsCorrect": null,
+      "nflStatsReturn": null,
+      "nflStatsCover": true,
+      "nflStatsSpreadReturn": 90.91
     },
     {
       "altBlowoutCheck": "Chiefs are off a 34-7 win over Arizona (margin 27, triggers the check): turnover margin was 0 and KC led only 27-7 at half, not tied/close beforehand (condition 1 fails); Kansas City is a +3 underdog tonight, not favored (condition 2 fails); upcoming opponent Buffalo ranks 8th in takeaways forced \u2014 top 10 (condition 3 holds); Kansas City ran it only 31 times (condition 4, needs 33+, fails); Mahomes has not shown a clear multi-game turnover pattern this season (condition 5 fails). 1 of 5 conditions hit \u2014 regression flag OFF. Bills are off a 26-9 win over Miami (margin 17, triggers the check): turnover margin was actually -1 for Buffalo (Miami forced 2, lost 1) and Buffalo led just 20-6 at half (condition 1 fails); Buffalo is favored -3 tonight, market bought in (condition 2 holds); upcoming opponent Kansas City ranks 2nd in points allowed \u2014 top 5 (condition 3 holds); Buffalo ran it only 27 times (condition 4 fails); Josh Allen has 9 INTs and 2 multi-turnover games this season, including 2 INTs in this very game (condition 5 holds). 3 of 5 conditions hit \u2014 regression flag ON: +6 to Kansas City.",
@@ -363,7 +384,7 @@
       "awayPDpg": 6.4,
       "awayQB": "Patrick Mahomes",
       "awayQBRating": 103.8,
-      "awayScore": null,
+      "awayScore": 10.0,
       "awaySpread": 3,
       "awaySpreadOdds": -110,
       "awayYPP": 6.3,
@@ -374,7 +395,7 @@
       "homePDpg": 8.66,
       "homeQB": "Josh Allen",
       "homeQBRating": 125.8,
-      "homeScore": null,
+      "homeScore": 13.0,
       "homeSpread": -3,
       "homeSpreadOdds": -110,
       "homeYPP": 6,
@@ -592,7 +613,8 @@
           "says": "fade",
           "team": "Buffalo Bills",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "push"
         }
       ],
       "thirdConfidence": "lean",
@@ -619,7 +641,20 @@
       "time": "8:20 PM ET",
       "gameTotal": 45.5,
       "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -109
+      "gameTotalUnderOdds": -109,
+      "altTrendCorrect": null,
+      "altTrendReturn": null,
+      "altTrendCover": null,
+      "altTrendSpreadReturn": null,
+      "altBlowoutCorrect": false,
+      "altBlowoutReturn": -100.0,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": 0.0,
+      "nflStatsCorrect": false,
+      "nflStatsReturn": -100.0,
+      "nflStatsCover": null,
+      "nflStatsSpreadReturn": 0.0
     }
-  ]
+  ],
+  "scoredAt": "2026-11-27T09:06:54.802520+00:00"
 }

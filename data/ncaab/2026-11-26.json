@@ -2,7 +2,7 @@
   "date": "2026-11-26",
   "weekday": "Thursday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-26T16:25:30Z",
   "auditChanges": [
     "ncaab Arkansas Razorbacks @ Michigan State Spartans: Second Opinion lean Michigan State -> PASS (altPick null). Isaiah Sealy's knee injury was June 2026, not in-season, and he is no longer enrolled at Arkansas, so Injuries/Lineup is neutral and the lead falls to 3. PD/g and offense percentiles rebuilt on the 50/50 blend (offGap 2.2 -> 0.82); Ledger off-gap skip unchanged.",
@@ -36,7 +36,7 @@
       "awayMoneyline": 320,
       "awayPDpg": 8.77,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 83.0,
       "awaySpread": 8.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -45,7 +45,7 @@
       "homeMoneyline": -410,
       "homePDpg": 19.29,
       "homeRank": 7,
-      "homeScore": null,
+      "homeScore": 92.0,
       "homeSpread": -8.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -99,7 +99,8 @@
           "leans": "Texas Longhorns",
           "leanPct": 53.1,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -127,7 +128,7 @@
       "awayMoneyline": 136,
       "awayPDpg": 13.72,
       "awayRank": 9,
-      "awayScore": null,
+      "awayScore": 75.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -105,
       "confidence": "skip",
@@ -136,7 +137,7 @@
       "homeMoneyline": -162,
       "homePDpg": 17.48,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 64.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -115,
       "lineMove": {
@@ -190,7 +191,8 @@
           "leans": "Iowa State Cyclones",
           "leanPct": 53.1,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -205,7 +207,8 @@
           "leans": "Tennessee Volunteers",
           "leanPct": 53.3,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -233,7 +236,7 @@
       "awayMoneyline": -142,
       "awayPDpg": 18.13,
       "awayRank": 17,
-      "awayScore": null,
+      "awayScore": 97.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -105,
       "confidence": "skip",
@@ -242,7 +245,7 @@
       "homeMoneyline": 120,
       "homePDpg": 11.75,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 70.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -115,
       "lineMove": {
@@ -307,7 +310,7 @@
       "awayMoneyline": 180,
       "awayPDpg": 12.99,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 67.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -316,7 +319,7 @@
       "homeMoneyline": -218,
       "homePDpg": 14.64,
       "homeRank": 11,
-      "homeScore": null,
+      "homeScore": 70.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -105,
       "lineMove": {
@@ -371,7 +374,8 @@
           "leans": "Arkansas Razorbacks",
           "leanPct": 52.5,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -399,7 +403,7 @@
       "awayMoneyline": 130,
       "awayPDpg": 22.72,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 78.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -408,7 +412,7 @@
       "homeMoneyline": -155,
       "homePDpg": 16.83,
       "homeRank": 18,
-      "homeScore": null,
+      "homeScore": 74.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -108,
       "lineMove": {
@@ -462,7 +466,8 @@
           "leans": "USC Trojans",
           "leanPct": 53.1,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -477,7 +482,8 @@
           "leans": "Utah State Aggies",
           "leanPct": 54.6,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -505,7 +511,7 @@
       "awayMoneyline": 270,
       "awayPDpg": 14.77,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 85.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -108,
       "confidence": "skip",
@@ -514,7 +520,7 @@
       "homeMoneyline": -340,
       "homePDpg": 20.43,
       "homeRank": 6,
-      "homeScore": null,
+      "homeScore": 70.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -112,
       "lineMove": {
@@ -579,7 +585,7 @@
       "awayMoneyline": 185,
       "awayPDpg": 15.4,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 86.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -118,
       "confidence": "skip",
@@ -588,7 +594,7 @@
       "homeMoneyline": -225,
       "homePDpg": 15.47,
       "homeRank": 20,
-      "homeScore": null,
+      "homeScore": 95.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -102,
       "lineMove": {
@@ -642,7 +648,8 @@
           "leans": "SMU Mustangs",
           "leanPct": 52.5,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -657,7 +664,8 @@
           "leans": "LSU Tigers",
           "leanPct": 53.3,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -685,7 +693,7 @@
       "awayMoneyline": 130,
       "awayPDpg": 12.47,
       "awayRank": 25,
-      "awayScore": null,
+      "awayScore": 93.0,
       "awaySpread": 1.5,
       "awaySpreadOdds": 100,
       "confidence": "skip",
@@ -694,7 +702,7 @@
       "homeMoneyline": -155,
       "homePDpg": 18.97,
       "homeRank": 13,
-      "homeScore": null,
+      "homeScore": 90.0,
       "homeSpread": -1.5,
       "homeSpreadOdds": -120,
       "lineMove": {
@@ -748,7 +756,8 @@
           "leans": "St. John's Red Storm",
           "leanPct": 53.6,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -776,7 +785,7 @@
       "awayMoneyline": -1100,
       "awayPDpg": 12.32,
       "awayRank": 15,
-      "awayScore": null,
+      "awayScore": 104.0,
       "awaySpread": -15.5,
       "awaySpreadOdds": -108,
       "confidence": "skip",
@@ -785,7 +794,7 @@
       "homeMoneyline": 700,
       "homePDpg": 4.16,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 91.0,
       "homeSpread": 15.5,
       "homeSpreadOdds": -112,
       "lineMove": {
@@ -851,7 +860,7 @@
       "awayMoneyline": -455,
       "awayPDpg": 15.75,
       "awayRank": 5,
-      "awayScore": null,
+      "awayScore": 62.0,
       "awaySpread": -9.5,
       "awaySpreadOdds": -112,
       "confidence": "skip",
@@ -860,7 +869,7 @@
       "homeMoneyline": 350,
       "homePDpg": 4.16,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 59.0,
       "homeSpread": 9.5,
       "homeSpreadOdds": -108,
       "lineMove": {
@@ -914,7 +923,8 @@
           "leans": "Texas Tech Red Raiders",
           "leanPct": 52.1,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     },
@@ -942,7 +952,7 @@
       "awayMoneyline": 154,
       "awayPDpg": 15.79,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 64.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": -108,
       "confidence": "skip",
@@ -951,7 +961,7 @@
       "homeMoneyline": -185,
       "homePDpg": 16.3,
       "homeRank": 22,
-      "homeScore": null,
+      "homeScore": 72.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -112,
       "lineMove": {
@@ -1005,9 +1015,11 @@
           "leans": "Baylor Bears",
           "leanPct": 52.1,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ]
     }
-  ]
+  ],
+  "scoredAt": "2026-11-27T09:06:59.939788+00:00"
 }
