@@ -37,9 +37,9 @@
       "awaySpreadOdds": -110,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 222.5,
-      "gameTotalOverOdds": -105,
-      "gameTotalUnderOdds": -115,
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "New York Knicks",
       "homeMoneyline": -174,
       "homeNetRtg": 6.8,
@@ -66,24 +66,24 @@
         ],
         "total": [
           232.5,
-          222.5
+          221.5
         ],
         "ml": {
           "home": [
             -198.0,
-            -155.0
+            -148.0
           ],
           "away": [
             164.0,
-            130.0
+            124.0
           ]
         },
         "public": {
-          "betsHome": 50,
+          "betsHome": 51,
           "moneyHome": 38,
           "rlm": null
         },
-        "checked": "2026-11-27T20:00:34+00:00"
+        "checked": "2026-11-27T20:42:11+00:00"
       },
       "netRtgGap": 27.59,
       "pick": null,
@@ -341,10 +341,10 @@
       "statsLine": {
         "homeSpread": -2.5,
         "awaySpread": 2.5,
-        "homeSpreadOdds": -115,
-        "awaySpreadOdds": -105,
-        "homeMoneyline": -155,
-        "awayMoneyline": 130
+        "homeSpreadOdds": -108,
+        "awaySpreadOdds": -112,
+        "homeMoneyline": -148,
+        "awayMoneyline": 124
       },
       "statsRules": [
         {
@@ -400,7 +400,7 @@
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 222.5
+      "totalsLine": 221.5
     },
     {
       "altCategoryTally": "2-2",
@@ -473,10 +473,10 @@
         },
         "public": {
           "betsHome": 60,
-          "moneyHome": 65,
+          "moneyHome": 64,
           "rlm": null
         },
-        "checked": "2026-11-27T20:00:34+00:00"
+        "checked": "2026-11-27T20:42:11+00:00"
       },
       "netRtgGap": 68.96,
       "pick": "Detroit Pistons",
@@ -1222,10 +1222,10 @@
         },
         "public": {
           "betsHome": 63,
-          "moneyHome": 74,
+          "moneyHome": 72,
           "rlm": null
         },
-        "checked": "2026-11-27T20:00:34+00:00"
+        "checked": "2026-11-27T20:42:11+00:00"
       },
       "netRtgGap": 31.04,
       "pick": "Toronto Raptors",
@@ -1482,7 +1482,7 @@
       "lineMove": {
         "spread": [
           -9.5,
-          -9.5
+          -8.5
         ],
         "total": [
           222.5,
@@ -1491,19 +1491,19 @@
         "ml": {
           "home": [
             -361.0,
-            -395.0
+            -378.0
           ],
           "away": [
             288.0,
-            312.0
+            300.0
           ]
         },
         "public": {
-          "betsHome": 43,
+          "betsHome": 44,
           "moneyHome": 34,
           "rlm": null
         },
-        "checked": "2026-11-27T20:00:34+00:00"
+        "checked": "2026-11-27T20:42:11+00:00"
       },
       "netRtgGap": 24.13,
       "pick": null,
@@ -1513,10 +1513,10 @@
       "skipReason": "netrtg-gap",
       "skipped": true,
       "starterOut": {
-        "checked": "2026-11-27T20:00:33+00:00",
+        "checked": "2026-11-27T20:42:10+00:00",
         "line": {
           "open": -9.5,
-          "now": -9.5
+          "now": -8.5
         },
         "away": [
           {
@@ -1609,12 +1609,12 @@
       "statsCheck": "Rule 60: Backing Atlanta Hawks: won its last two by 10+, and Boston Celtics's last game (131-116 at Washington Wizards) went over its total of 218.5 by 28.5 -- 64.5% ATS, 111-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 45-15; 2024-now 43-27. Rule 62: Backing Atlanta Hawks: covered its last 3 games, and Boston Celtics's top scorer Jayson Tatum scored 41 last game (27.3 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16.",
       "statsFavors": "Atlanta Hawks",
       "statsLine": {
-        "homeSpread": -9.5,
-        "awaySpread": 9.5,
-        "homeSpreadOdds": -107,
-        "awaySpreadOdds": -113,
-        "homeMoneyline": -395,
-        "awayMoneyline": 312
+        "homeSpread": -8.5,
+        "awaySpread": 8.5,
+        "homeSpreadOdds": -118,
+        "awaySpreadOdds": -103,
+        "homeMoneyline": -378,
+        "awayMoneyline": 300
       },
       "statsRules": [
         {
@@ -1630,7 +1630,7 @@
           "detail": "Backing Atlanta Hawks: covered its last 3 games, and Boston Celtics's top scorer Jayson Tatum scored 41 last game (27.3 a game this season) -- 68.3% ATS, 71-33 (2018-19 and 2021-22 to now); all rest 83-42, unseen 2018-19 + 2021-22: 38-11; 2024-now 23-16."
         }
       ],
-      "statsSpread": -9.5,
+      "statsSpread": -8.5,
       "storylines": [
         {
           "against": false,
@@ -2165,11 +2165,11 @@
           ]
         },
         "public": {
-          "betsHome": 39,
-          "moneyHome": 50,
+          "betsHome": 38,
+          "moneyHome": 48,
           "rlm": null
         },
-        "checked": "2026-11-27T20:00:34+00:00"
+        "checked": "2026-11-27T20:42:11+00:00"
       },
       "netRtgGap": 20.69,
       "pick": null,
@@ -2312,9 +2312,9 @@
       "awaySpreadOdds": -110,
       "confidence": "skip",
       "correct": null,
-      "gameTotal": 226.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -108,
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105,
       "home": "San Antonio Spurs",
       "homeMoneyline": -220,
       "homeNetRtg": 11.4,
@@ -2338,7 +2338,7 @@
         ],
         "total": [
           232.5,
-          226.5
+          225.5
         ],
         "ml": {
           "home": [
@@ -2351,11 +2351,11 @@
           ]
         },
         "public": {
-          "betsHome": 36,
+          "betsHome": 35,
           "moneyHome": 33,
           "rlm": null
         },
-        "checked": "2026-11-27T20:00:34+00:00"
+        "checked": "2026-11-27T20:42:11+00:00"
       },
       "netRtgGap": 20.69,
       "pick": null,
@@ -2572,7 +2572,7 @@
         }
       ],
       "time": "9:30 PM ET",
-      "totalsLine": 226.5
+      "totalsLine": 225.5
     },
     {
       "altCategoryTally": "4-1",
@@ -2642,11 +2642,11 @@
           ]
         },
         "public": {
-          "betsHome": 37,
-          "moneyHome": 31,
+          "betsHome": 36,
+          "moneyHome": 32,
           "rlm": null
         },
-        "checked": "2026-11-27T20:00:34+00:00"
+        "checked": "2026-11-27T20:42:11+00:00"
       },
       "netRtgGap": 34.48,
       "pick": "Denver Nuggets",
@@ -3017,11 +3017,11 @@
           ]
         },
         "public": {
-          "betsHome": 67,
-          "moneyHome": 68,
+          "betsHome": 65,
+          "moneyHome": 67,
           "rlm": null
         },
-        "checked": "2026-11-27T20:00:34+00:00"
+        "checked": "2026-11-27T20:42:11+00:00"
       },
       "netRtgGap": 6.9,
       "pick": null,
@@ -3180,9 +3180,9 @@
       "awaySpreadOdds": -110,
       "confidence": "lean",
       "correct": null,
-      "gameTotal": 217.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105,
+      "gameTotal": 218.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
       "home": "Portland Trail Blazers",
       "homeMoneyline": -390,
       "homeNetRtg": 6.4,
@@ -3212,7 +3212,7 @@
         ],
         "total": [
           221.5,
-          217.5
+          218.5
         ],
         "ml": {
           "home": [
@@ -3226,10 +3226,10 @@
         },
         "public": {
           "betsHome": 77,
-          "moneyHome": 58,
+          "moneyHome": 59,
           "rlm": null
         },
-        "checked": "2026-11-27T20:00:34+00:00"
+        "checked": "2026-11-27T20:42:11+00:00"
       },
       "netRtgGap": 31.03,
       "pick": "Portland Trail Blazers",
@@ -3510,7 +3510,7 @@
         }
       ],
       "time": "9:30 PM ET",
-      "totalsLine": 217.5
+      "totalsLine": 218.5
     }
   ]
 }
