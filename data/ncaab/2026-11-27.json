@@ -39,7 +39,10 @@
           ]
         },
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 156.5,
+      "gameTotalOverOdds": -112,
+      "gameTotalUnderOdds": -108
     },
     {
       "espnId": "401920533",
@@ -74,7 +77,27 @@
           ]
         },
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 150.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "15-11",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "St. John's Red Storm",
+          "says": "back",
+          "fact": "St. John's lost to Iowa State 82-83 last season (2025-11-24).",
+          "record": "1420-1285",
+          "pct": 52.5,
+          "leans": "St. John's Red Storm",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401929288",
@@ -109,7 +132,42 @@
           ]
         },
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 154.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "15-11",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Memphis Tigers",
+          "says": "back",
+          "fact": "Memphis lost to Wake Forest 68-69 last season (2025-11-21).",
+          "record": "1420-1285",
+          "pct": 52.5,
+          "leans": "Memphis Tigers",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "6-2",
+          "key": "rolling_dog",
+          "name": "Rolling underdog",
+          "team": "Wake Forest Demon Deacons",
+          "says": "back",
+          "fact": "Wake Forest has won 5 straight and is a +2.5 underdog.",
+          "record": "270-304",
+          "pct": 47.0,
+          "leans": "Memphis Tigers",
+          "leanPct": 53.0,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401921827",
@@ -132,7 +190,10 @@
         ],
         "ml": {},
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 151.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -105
     },
     {
       "espnId": "401921717",
@@ -167,7 +228,10 @@
           ]
         },
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 153.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401921718",
@@ -189,7 +253,7 @@
         ],
         "total": [
           157.5,
-          158.5
+          159.5
         ],
         "ml": {
           "home": [
@@ -201,8 +265,43 @@
             -345.0
           ]
         },
-        "checked": "2026-11-27T09:07:58+00:00"
-      }
+        "checked": "2026-11-27T10:56:22+00:00"
+      },
+      "gameTotal": 159.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "6-2",
+          "key": "rolling_dog",
+          "name": "Rolling underdog",
+          "team": "Saint Mary's Gaels",
+          "says": "back",
+          "fact": "Saint Mary's has won 5 straight and is a +7.5 underdog.",
+          "record": "270-304",
+          "pct": 47.0,
+          "leans": "Texas Longhorns",
+          "leanPct": 53.0,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "0-0",
+          "key": "upset_hangover",
+          "name": "Upset hangover",
+          "team": "Saint Mary's Gaels",
+          "says": "fade",
+          "fact": "Unranked Saint Mary's beat #6 UCLA 85-70 last time out.",
+          "record": "43-32",
+          "pct": 57.3,
+          "leans": "Texas Longhorns",
+          "leanPct": 57.3,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401909789",
@@ -236,7 +335,10 @@
           ]
         },
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 159.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401913531",
@@ -270,7 +372,72 @@
           ]
         },
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 176.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "10-5",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "#4 Illinois is a -27.5 favorite.",
+          "record": "105-122",
+          "pct": 46.3,
+          "leans": "Illinois Fighting Illini",
+          "leanPct": 53.7,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "7-10",
+          "key": "steamroller",
+          "name": "Steamroller",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "Illinois won its last three by 50, 62, 21.",
+          "record": "122-148",
+          "pct": 45.2,
+          "leans": "Illinois Fighting Illini",
+          "leanPct": 54.8,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "2-7",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "Illinois Fighting Illini",
+          "says": "fade",
+          "fact": "Illinois moved up from #10 to #4 in this week's AP poll.",
+          "record": "237-272",
+          "pct": 46.6,
+          "leans": "Illinois Fighting Illini",
+          "leanPct": 53.4,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "2-0",
+          "key": "mte_hangover",
+          "name": "Tournament-trip hangover",
+          "team": "Western Kentucky Hilltoppers",
+          "says": "fade",
+          "fact": "Western Kentucky's first game back from neutral-site games (Greenbrier Tip-Off).",
+          "record": "126-109",
+          "pct": 53.6,
+          "leans": "Illinois Fighting Illini",
+          "leanPct": 53.6,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401911030",
@@ -304,7 +471,10 @@
           ]
         },
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 152.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401925703",
@@ -327,7 +497,57 @@
         ],
         "ml": {},
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 146.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "10-5",
+          "key": "top5_huge",
+          "name": "Top-5 laying 25",
+          "team": "Houston Cougars",
+          "says": "fade",
+          "fact": "#1 Houston is a -36.5 favorite.",
+          "record": "105-122",
+          "pct": 46.3,
+          "leans": "Houston Cougars",
+          "leanPct": 53.7,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "2-7",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "Houston Cougars",
+          "says": "fade",
+          "fact": "Houston moved up from #8 to #1 in this week's AP poll.",
+          "record": "237-272",
+          "pct": 46.6,
+          "leans": "Houston Cougars",
+          "leanPct": 53.4,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "15-11",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Oakland Golden Grizzlies",
+          "says": "back",
+          "fact": "Oakland lost to Houston 45-78 last season (2025-11-12).",
+          "record": "1420-1285",
+          "pct": 52.5,
+          "leans": "Oakland Golden Grizzlies",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401920543",
@@ -362,7 +582,10 @@
           ]
         },
         "checked": "2026-11-27T09:07:58+00:00"
-      }
+      },
+      "gameTotal": 170.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401920534",
@@ -397,7 +620,57 @@
           ]
         },
         "checked": "2026-11-27T09:07:59+00:00"
-      }
+      },
+      "gameTotal": 149.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "15-11",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Louisville Cardinals",
+          "says": "back",
+          "fact": "Louisville lost to Tennessee 62-83 last season (2025-12-16).",
+          "record": "1420-1285",
+          "pct": 52.5,
+          "leans": "Louisville Cardinals",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "2-7",
+          "key": "poll_riser",
+          "name": "Poll riser",
+          "team": "Tennessee Volunteers",
+          "says": "fade",
+          "fact": "Tennessee moved up from #14 to #9 in this week's AP poll.",
+          "record": "237-272",
+          "pct": 46.6,
+          "leans": "Tennessee Volunteers",
+          "leanPct": 53.4,
+          "against": true,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "5-3",
+          "key": "november_hype",
+          "name": "November hype",
+          "team": "Tennessee Volunteers",
+          "says": "fade",
+          "fact": "#9 Tennessee is a -1.5 favorite over #25 Louisville on a neutral floor.",
+          "record": "36-38",
+          "pct": 48.6,
+          "leans": "Tennessee Volunteers",
+          "leanPct": 51.4,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401920544",
@@ -421,7 +694,42 @@
         ],
         "ml": {},
         "checked": "2026-11-27T09:07:59+00:00"
-      }
+      },
+      "gameTotal": 161.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "15-11",
+          "key": "last_season_grudge",
+          "name": "Last year's grudge",
+          "team": "Creighton Bluejays",
+          "says": "back",
+          "fact": "Creighton lost to Gonzaga 63-90 last season (2025-11-11).",
+          "record": "1420-1285",
+          "pct": 52.5,
+          "leans": "Creighton Bluejays",
+          "leanPct": 52.5,
+          "against": false,
+          "unit": "ATS"
+        },
+        {
+          "weight": 1,
+          "live": "7-2",
+          "key": "after_dark",
+          "name": "After dark out West",
+          "team": "Creighton Bluejays",
+          "says": "fade",
+          "fact": "Creighton tips at 11:00 PM ET in Las Vegas, NV.",
+          "record": "80-85",
+          "pct": 48.5,
+          "leans": "Creighton Bluejays",
+          "leanPct": 51.5,
+          "against": true,
+          "unit": "ATS"
+        }
+      ]
     },
     {
       "espnId": "401920535",

@@ -280,11 +280,11 @@
           ]
         },
         "public": {
-          "betsHome": 52,
-          "moneyHome": 45,
+          "betsHome": 51,
+          "moneyHome": 48,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:21+00:00"
       },
       "gameTotal": 222.5,
       "gameTotalOverOdds": -113,
@@ -523,11 +523,11 @@
           ]
         },
         "public": {
-          "betsHome": 70,
+          "betsHome": 68,
           "moneyHome": 73,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:21+00:00"
       },
       "gameTotal": 218.5,
       "gameTotalOverOdds": -113,
@@ -952,10 +952,10 @@
         },
         "public": {
           "betsHome": 16,
-          "moneyHome": 17,
+          "moneyHome": 16,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:21+00:00"
       },
       "gameTotal": 230.5,
       "gameTotalOverOdds": -110,
@@ -978,8 +978,8 @@
         "awaySpread": 7.5,
         "homeSpreadOdds": -115,
         "awaySpreadOdds": -105,
-        "homeMoneyline": -310,
-        "awayMoneyline": 251
+        "homeMoneyline": -304,
+        "awayMoneyline": 247
       },
       "statsFavors": "Toronto Raptors",
       "statsRules": [
@@ -991,7 +991,7 @@
         }
       ],
       "statsCheck": "Rule 68: Backing Toronto Raptors: 4 days since its last game (2026-11-23) vs Brooklyn Nets on 2, at home -- 61.2% ATS, 112-71 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-32; 2024-now 31-16; every counted season positive.",
-      "totalsLine": 219.5,
+      "totalsLine": 220.5,
       "injuries": {
         "away": {
           "3150844": "out",
@@ -1178,28 +1178,28 @@
         ],
         "total": [
           221.5,
-          219.5
+          220.5
         ],
         "ml": {
           "home": [
             -333.0,
-            -310.0
+            -304.0
           ],
           "away": [
             268.0,
-            251.0
+            247.0
           ]
         },
         "public": {
-          "betsHome": 70,
-          "moneyHome": 74,
+          "betsHome": 69,
+          "moneyHome": 73,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:21+00:00"
       },
-      "gameTotal": 219.5,
-      "gameTotalOverOdds": -112,
-      "gameTotalUnderOdds": -107
+      "gameTotal": 220.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401909330",
@@ -1212,14 +1212,14 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -423.0,
       "awayMoneyline": 331.0,
-      "statsSpread": -9.5,
+      "statsSpread": -8.5,
       "statsLine": {
-        "homeSpread": -9.5,
-        "awaySpread": 9.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -423,
-        "awayMoneyline": 331
+        "homeSpread": -8.5,
+        "awaySpread": 8.5,
+        "homeSpreadOdds": -113,
+        "awaySpreadOdds": -107,
+        "homeMoneyline": -378,
+        "awayMoneyline": 300
       },
       "statsFavors": "Atlanta Hawks",
       "statsRules": [
@@ -1295,10 +1295,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-27T07:35:02+00:00",
+        "checked": "2026-11-27T10:56:21+00:00",
         "line": {
           "open": -9.5,
-          "now": -9.5
+          "now": -8.5
         },
         "away": [
           {
@@ -1385,7 +1385,7 @@
       "lineMove": {
         "spread": [
           -9.5,
-          -9.5
+          -8.5
         ],
         "total": [
           222.5,
@@ -1394,19 +1394,19 @@
         "ml": {
           "home": [
             -361.0,
-            -423.0
+            -378.0
           ],
           "away": [
             288.0,
-            331.0
+            300.0
           ]
         },
         "public": {
           "betsHome": 42,
-          "moneyHome": 33,
+          "moneyHome": 38,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:21+00:00"
       },
       "gameTotal": 221.5,
       "gameTotalOverOdds": -110,
@@ -1780,11 +1780,11 @@
           ]
         },
         "public": {
-          "betsHome": 47,
-          "moneyHome": 51,
+          "betsHome": 48,
+          "moneyHome": 53,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:21+00:00"
       },
       "gameTotal": 221.5,
       "gameTotalOverOdds": -105,
@@ -1801,16 +1801,16 @@
       "awaySpreadOdds": -110.0,
       "homeMoneyline": -136.0,
       "awayMoneyline": 115.0,
-      "statsSpread": -2.5,
+      "statsSpread": -1.5,
       "statsLine": {
-        "homeSpread": -2.5,
-        "awaySpread": 2.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -136,
-        "awayMoneyline": 115
+        "homeSpread": -1.5,
+        "awaySpread": 1.5,
+        "homeSpreadOdds": -116,
+        "awaySpreadOdds": -104,
+        "homeMoneyline": -130,
+        "awayMoneyline": 110
       },
-      "totalsLine": 227.5,
+      "totalsLine": 226.5,
       "injuries": {
         "away": {
           "5106040": "out",
@@ -1825,32 +1825,32 @@
       "lineMove": {
         "spread": [
           -3.5,
-          -2.5
+          -1.5
         ],
         "total": [
           227.5,
-          227.5
+          226.5
         ],
         "ml": {
           "home": [
             -142.0,
-            -136.0
+            -130.0
           ],
           "away": [
             120.0,
-            115.0
+            110.0
           ]
         },
         "public": {
           "betsHome": 41,
-          "moneyHome": 29,
+          "moneyHome": 30,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:21+00:00"
       },
-      "gameTotal": 227.5,
-      "gameTotalOverOdds": -106,
-      "gameTotalUnderOdds": -114
+      "gameTotal": 226.5,
+      "gameTotalOverOdds": -108,
+      "gameTotalUnderOdds": -112
     },
     {
       "espnId": "401909333",
@@ -1882,7 +1882,7 @@
         }
       ],
       "statsCheck": "Rule 68: Backing Los Angeles Lakers: 4 days since its last game (2026-11-23) vs San Antonio Spurs on 2, as a +5.5 underdog -- 61.2% ATS, 112-71 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 41-32; 2024-now 31-16; every counted season positive.",
-      "totalsLine": 224.5,
+      "totalsLine": 225.5,
       "storylines": [
         {
           "weight": 1,
@@ -2162,7 +2162,7 @@
         ],
         "total": [
           232.5,
-          224.5
+          225.5
         ],
         "ml": {
           "home": [
@@ -2175,15 +2175,15 @@
           ]
         },
         "public": {
-          "betsHome": 40,
-          "moneyHome": 38,
+          "betsHome": 41,
+          "moneyHome": 32,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:21+00:00"
       },
-      "gameTotal": 224.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -105
+      "gameTotal": 225.5,
+      "gameTotalOverOdds": -104,
+      "gameTotalUnderOdds": -116
     },
     {
       "espnId": "401909334",
@@ -2196,12 +2196,12 @@
       "awaySpreadOdds": -103.0,
       "homeMoneyline": 380.0,
       "awayMoneyline": -497.0,
-      "statsSpread": 10.5,
+      "statsSpread": 9.5,
       "statsLine": {
-        "homeSpread": 10.5,
-        "awaySpread": -10.5,
-        "homeSpreadOdds": -117,
-        "awaySpreadOdds": -103,
+        "homeSpread": 9.5,
+        "awaySpread": -9.5,
+        "homeSpreadOdds": -105,
+        "awaySpreadOdds": -115,
         "homeMoneyline": 380,
         "awayMoneyline": -497
       },
@@ -2228,7 +2228,7 @@
           "name": "Friday night lights",
           "team": "Denver Nuggets",
           "says": "fade",
-          "fact": "Denver Nuggets is a -10.5 road favorite on a Friday.",
+          "fact": "Denver Nuggets is a -9.5 road favorite on a Friday.",
           "record": "200-239",
           "pct": 45.6,
           "leans": "Denver Nuggets",
@@ -2246,10 +2246,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-27T07:35:02+00:00",
+        "checked": "2026-11-27T10:56:21+00:00",
         "line": {
           "open": 9.5,
-          "now": 10.5
+          "now": 9.5
         },
         "away": [],
         "home": [
@@ -2492,7 +2492,7 @@
       "lineMove": {
         "spread": [
           9.5,
-          10.5
+          9.5
         ],
         "total": [
           228.5,
@@ -2509,11 +2509,11 @@
           ]
         },
         "public": {
-          "betsHome": 35,
-          "moneyHome": 37,
+          "betsHome": 36,
+          "moneyHome": 35,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:21+00:00"
       },
       "gameTotal": 229.5,
       "gameTotalOverOdds": -107,
@@ -2676,15 +2676,15 @@
           ]
         },
         "public": {
-          "betsHome": 64,
-          "moneyHome": 71,
+          "betsHome": 65,
+          "moneyHome": 72,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:22+00:00"
       },
       "gameTotal": 231.5,
-      "gameTotalOverOdds": -110,
-      "gameTotalUnderOdds": -110
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401909336",
@@ -2697,14 +2697,14 @@
       "awaySpreadOdds": -114.0,
       "homeMoneyline": -395.0,
       "awayMoneyline": 312.0,
-      "statsSpread": -9.5,
+      "statsSpread": -8.5,
       "statsLine": {
-        "homeSpread": -9.5,
-        "awaySpread": 9.5,
-        "homeSpreadOdds": -106,
-        "awaySpreadOdds": -114,
-        "homeMoneyline": -395,
-        "awayMoneyline": 312
+        "homeSpread": -8.5,
+        "awaySpread": 8.5,
+        "homeSpreadOdds": -118,
+        "awaySpreadOdds": -103,
+        "homeMoneyline": -378,
+        "awayMoneyline": 300
       },
       "statsFavors": "Portland Trail Blazers",
       "statsRules": [
@@ -2722,7 +2722,7 @@
         }
       ],
       "statsCheck": "Rule 54: Backing Portland Trail Blazers: covered its last two games (by 8.5 vs San Antonio Spurs and by 15.5 at Philadelphia 76ers), now at home in game 19 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38. Rule 64: Backing Portland Trail Blazers: 12-6 against the spread this season, vs. Golden State Warriors, 2-7 on the road -- 63.5% ATS, 106-61 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 30-24; 2024-now 44-15.",
-      "totalsLine": 220.5,
+      "totalsLine": 221.5,
       "storylines": [
         {
           "weight": 1,
@@ -2731,7 +2731,7 @@
           "name": "Ghost town",
           "team": "Golden State Warriors",
           "says": "fade",
-          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +9.5 underdog.",
+          "fact": "Golden State Warriors' top scorer Stephen Curry (27.8 a game) missed its last two games; Golden State Warriors is a +8.5 underdog.",
           "record": "827-745",
           "pct": 52.6,
           "leans": "Portland Trail Blazers",
@@ -2754,10 +2754,10 @@
         }
       },
       "starterOut": {
-        "checked": "2026-11-27T07:35:02+00:00",
+        "checked": "2026-11-27T10:56:21+00:00",
         "line": {
           "open": -9.5,
-          "now": -9.5
+          "now": -8.5
         },
         "away": [
           {
@@ -2923,32 +2923,32 @@
       "lineMove": {
         "spread": [
           -9.5,
-          -9.5
+          -8.5
         ],
         "total": [
           221.5,
-          220.5
+          221.5
         ],
         "ml": {
           "home": [
             -325.0,
-            -395.0
+            -378.0
           ],
           "away": [
             262.0,
-            312.0
+            300.0
           ]
         },
         "public": {
-          "betsHome": 77,
+          "betsHome": 78,
           "moneyHome": 86,
           "rlm": null
         },
-        "checked": "2026-11-27T09:07:57+00:00"
+        "checked": "2026-11-27T10:56:22+00:00"
       },
-      "gameTotal": 220.5,
-      "gameTotalOverOdds": -114,
-      "gameTotalUnderOdds": -106
+      "gameTotal": 221.5,
+      "gameTotalOverOdds": -107,
+      "gameTotalUnderOdds": -113
     }
   ]
 }
