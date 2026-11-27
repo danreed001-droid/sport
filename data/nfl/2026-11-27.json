@@ -3,77 +3,8 @@
   "weekday": "Friday",
   "sport": "nfl",
   "scored": false,
-  "autoSlate": true,
-  "generatedAt": "2026-11-27T09:06:09Z",
+  "generatedAt": "2026-11-27T08:24:23-05:00",
   "games": [
-    {
-      "espnId": "401873083",
-      "away": "Denver Broncos",
-      "home": "Pittsburgh Steelers",
-      "time": "3:00 PM ET",
-      "homeSpread": 4.5,
-      "awaySpread": -4.5,
-      "homeSpreadOdds": -102.0,
-      "awaySpreadOdds": -118.0,
-      "homeMoneyline": 205.0,
-      "awayMoneyline": -248.0,
-      "storylines": [
-        {
-          "weight": 1,
-          "live": "8-6",
-          "key": "flag_help",
-          "name": "Help from the flags",
-          "team": "Denver Broncos",
-          "says": "fade",
-          "fact": "Denver Broncos beat Las Vegas Raiders 38-24 last game while Las Vegas Raiders was penalized 9 times for 63 yards (to 2 for 10).",
-          "record": "164-125",
-          "pct": 56.7,
-          "leans": "Pittsburgh Steelers",
-          "leanPct": 56.7,
-          "against": false,
-          "unit": "ATS"
-        }
-      ],
-      "injuries": {
-        "away": {
-          "4603189": "injured reserve",
-          "4432208": "injured reserve",
-          "4362748": "questionable",
-          "4039007": "out",
-          "4241985": "suspension"
-        },
-        "home": {
-          "3116689": "questionable",
-          "4431258": "injured reserve",
-          "4037333": "out",
-          "4035656": "injured reserve",
-          "4368304": "injured reserve"
-        }
-      },
-      "lineMove": {
-        "spread": [
-          1.5,
-          4.5
-        ],
-        "total": [
-          41.5,
-          37.5
-        ],
-        "ml": {
-          "home": [
-            -102.0,
-            205.0
-          ],
-          "away": [
-            -118.0,
-            -248.0
-          ]
-        },
-        "checked": "2026-11-27T09:07:59+00:00"
-      },
-      "gameTotal": 37.5,
-      "gameTotalOverOdds": -101,
-      "gameTotalUnderOdds": -119
-    }
+    {"altBlowoutCheck":"Neither team's most recent game was a win of 17+ points (Denver won by 14 over Las Vegas; Pittsburgh lost to Philadelphia) — check does not apply to either side this week.","altBlowoutFavors":null,"altCategoryTally":"5-4","altConfidence":"pass","altCorrect":null,"altCover":null,"altPick":null,"altReasons":["Scoring margin: favors Broncos (Denver's blended PD/g +4.47 — no QB change, materially positive on its own merits; Pittsburgh's +0.94 blended PD/g was built almost entirely under released starter Aaron Rodgers, so it's discounted under the WEIGHTED-RULE and can't carry for the Steelers)","Travel: favors Steelers (Denver, Mountain time, travels to Pittsburgh on a short week — Sunday Nov 22 to Friday Nov 27 — crossing a 2-hour time-zone change; Pittsburgh stays home)","Injuries/Lineup (weighted x2 — multi-starter cluster): favors Broncos (Pittsburgh is down 3 premium-position starters at once: QB Aaron Rodgers released/benched in favor of first-time-this-season starter Mason Rudolph, LG Mason McCormick on IR with a significant ankle injury suffered Nov 15, and edge rusher Alex Highsmith ruled OUT with an ankle injury after missing the full practice week; Denver's only outs — S Taylor Rapp (quad) and DE Sai'vion Jones (hamstring) — are both non-premium rotational pieces)","Form: favors Broncos (Denver is 3-0 in its last 3 games — beat Raiders by 14, Carolina by 5, Chiefs by 4 — all with Nix at QB throughout; Pittsburgh's 1-2 stretch over that same span (loss to Eagles, blowout loss to Bengals, win over Browns) was entirely under Rodgers, who won't play tonight, so under the WEIGHTED-RULE it's discounted and can't carry for Pittsburgh)","Market: favors Steelers (the spread reportedly tightened from Broncos -4.5 toward Broncos -3.5/Steelers +3.5 even after the Rudolph news broke — a mild reverse-line move toward Pittsburgh rather than away from it)","Matchup splits: favors Broncos (Denver has 5 different players with 3+ sacks this season; Pittsburgh's O-line already allowed 5 sacks to Philadelphia last week and is now down starting LG McCormick as well, with rookie/backup Spencer Anderson starting in his place)"],"altReturn":null,"altSpreadReturn":null,"altTrendCheck":"Denver Broncos prior game (Wk11 vs LV, CBS gametracker NFL_20261122_LV@DEN): W 38-24, 351 total net yds, 34 rush att / 35 pass att (ratio 0.97, rush att >=34) — Pattern C fired (fade, heavy back-and-forth volume): +2 to Steelers. Pittsburgh Steelers prior game (Wk11 at PHI, CBS gametracker NFL_20261122_PIT@PHI): L 16-19, 255 total net yds, 182 pass yds (30/44, 4.1 YPA), 73 rush yds (20 att) — no pattern matched.","altTrendFavors":"Pittsburgh Steelers","away":"Denver Broncos","awayMoneyline":-229,"awayPDpg":4.47,"awayQB":"Bo Nix","awayQBRating":83.6,"awayScore":null,"awaySpread":-3.5,"awaySpreadOdds":-110,"awayYPP":4.8,"confidence":"skip","correct":null,"gameTotal":37.5,"gameTotalOverOdds":-101,"gameTotalUnderOdds":-119,"home":"Pittsburgh Steelers","homeMoneyline":188,"homePDpg":0.94,"homeQB":"Mason Rudolph","homeQBRating":84.6,"homeScore":null,"homeSpread":3.5,"homeSpreadOdds":-110,"homeYPP":4.9,"injuries":{"away":{"4039007":"out","4241985":"suspension","4362748":"questionable","4432208":"injured reserve","4603189":"injured reserve"},"home":{"3116689":"questionable","4035656":"injured reserve","4037333":"out","4368304":"injured reserve","4431258":"injured reserve"}},"lineMove":{"checked":"2026-11-27T09:07:59+00:00","ml":{"away":[-118.0,-248.0],"home":[-102.0,205.0]},"spread":[1.5,4.5],"total":[41.5,37.5]},"offGap":9.68,"pick":null,"pickCover":null,"pickReturn":null,"pickSpreadReturn":null,"skipReason":"off-gap","skipped":true,"statLines":["PD/g +4.47 vs +0.94 (blended 50/50 with 2025 full-season PD/g)","Yds/play 4.8 vs 4.9 · 9.7-pt percentile gap (rank 26 vs 23 of 32, below the 30-pt screen)","QB rating 83.6 vs 84.6 (Nix's full 2026 season vs Rudolph's full 2025 season — Rudolph has 0 starts and 1/4 passing in 2026 before tonight)"],"storylines":[{"against":false,"fact":"Denver Broncos beat Las Vegas Raiders 38-24 last game while Las Vegas Raiders was penalized 9 times for 63 yards (to 2 for 10).","key":"flag_help","leanPct":56.7,"leans":"Pittsburgh Steelers","live":"8-6","name":"Help from the flags","pct":56.7,"record":"164-125","says":"fade","team":"Denver Broncos","unit":"ATS","weight":1}],"thirdConfidence":"strong","thirdCorrect":null,"thirdCover":null,"thirdPick":"Denver Broncos","thirdProjectedMargin":-9.5,"thirdReasoning":"Denver's six-game win streak, a deep and varied pass rush, and a clean quarterback situation line up against a Pittsburgh team that just benched its big free-agent QB signing, is already missing its starting left guard and top edge rusher, and managed only 49 first-half rushing yards combined over its last two games — that's more structural disadvantage than a 3.5-point number fully prices in. The most surprising finding was the market tightening toward Pittsburgh (Broncos -4.5 to -3.5) right as the Rudolph news broke, which argues some money sees value on the Steelers; weighing that against the O-line mismatch and Rudolph's near-zero live reps, I still lean Denver to cover. A surprisingly sharp Rudolph debut or a short week sapping Denver's own execution would be what flips this.","thirdResearch":["[angle] Steelers released/benched Aaron Rodgers on Nov. 25 and officially named Mason Rudolph their Week 12 starter, ending the Rodgers era with the team at 6-4 — a locker-room shakeup two days before a national Friday broadcast. (Yahoo Sports, Nov 26, 2026; favors Broncos — unsettled QB room.)","[angle] A day before the switch, head coach Mike McCarthy publicly said Rodgers 'is our quarterback,' then reversed course less than 24 hours later — a sudden shift suggesting real internal disagreement about the move. (Washington Post, Nov 26, 2026; favors Broncos — organizational uncertainty.)","Mason Rudolph is a 7-year veteran with only 19 career starts (9-9-1 record) and had thrown just 1-of-4 passes all season in mop-up duty before tonight — he's walking into a pressure spot with almost no live 2026 reps. (CBS Sports gametracker preview, Nov 27, 2026; favors Broncos.)","Steelers starting left guard Mason McCormick, who suffered a significant ankle injury vs. Cincinnati on Nov. 15, is on IR and out again tonight, with Spencer Anderson replacing him for a third straight game. (CBS Sports preview via AP / ClutchPoints, Nov 2026; favors Broncos — patchwork O-line.)","Steelers starting edge rusher opposite T.J. Watt, Alex Highsmith, was ruled OUT with an ankle injury after missing the entire practice week; Nick Herbig and Jack Sawyer fill in. (RotoWire, Nov 26, 2026; favors Broncos — weakens Pittsburgh's own pass rush on Rudolph's night and reduces pressure on Nix.)","Denver has 5 different players with 3-plus sacks this season, and the Steelers O-line — already down McCormick — allowed 5 sacks to Philadelphia last week. That's a bad matchup for a shuffled line protecting a QB with almost no live reps. (CBS Sports preview via AP, Nov 27, 2026; favors Broncos.)","Pittsburgh's running game has totaled just 49 rushing yards combined in the first halves of its last two games, so Rudolph won't have a steady run-game crutch behind that same shuffled line. (CBS Sports preview via AP, Nov 27, 2026; favors Broncos.)","[angle] Denver has won 6 straight games and sits 9-2, controlling the AFC West and chasing its first division title and top playoff seed in a decade — real, documented motivation to keep the streak alive on national TV. (Fox Sports, 'Broncos facing brutal stretch run,' Nov 2026; favors Broncos.)","[angle] Denver rookie RB Jonah Coleman ran for 111 yards and 3 TDs last week after starter JK Dobbins was suspended for conduct detrimental to the team — the suspension hasn't actually hurt Denver's offense. (CBS Sports preview via AP, Nov 27, 2026; neutral-to-favors Broncos — turned a potential negative into a non-issue.)","[Spread] Despite the QB chaos, the spread reportedly shrank from Broncos -4.5 toward Broncos -3.5 (AP's 'Broncos by 3 1/2' as of game day) rather than growing — a mild reverse-line move toward Pittsburgh that the public QB-change narrative alone doesn't fully explain. (CBS Sports preview via AP / oddsindex.com, Nov 27, 2026; favors Steelers on the number.)","[Spread] Pittsburgh is 5-2 against the spread this season and 1-1 ATS as an underdog — a team that has covered more often than not even while losing straight-up recently. (StatMuse, Nov 2026; favors Steelers' cover profile.)","[Spread] This is Pittsburgh's first Friday game since 1946 and Denver's first since 1985 — a historically rare short-week scheduling quirk that cuts against both teams' normal preparation equally, tempering how much extra credit either side's 'short week' deserves. (CBS Sports preview via AP, Nov 27, 2026; neutral.)","Kickoff weather in Pittsburgh is forecast in the mid-40s and breezy with a chance of a brief shower — not extreme, but one more small variable for a Denver team that rarely deals with late-fall East Coast dampness, versus a Steelers team that plays home games in it every year. (AccuWeather 10-day forecast, retrieved Nov 27, 2026; mild favors Steelers — familiarity.)"],"thirdReturn":null,"thirdSpreadReturn":null,"time":"3:00 PM ET"}
   ]
 }
