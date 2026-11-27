@@ -1,6 +1,9 @@
 {
   "date": "2026-11-26",
-  "picks": {
+  "picks": {},
+  "scores": {},
+  "totals": {},
+  "voided": {
     "ncaab-2026-11-26-arkansas-razorbacks-michigan-state-spartans-4-30-pm-et": {
       "sport": "ncaab",
       "away": "Arkansas Razorbacks",
@@ -13,7 +16,9 @@
       "moneyline": -218,
       "submittedAt": "2026-11-26T14:29:03+00:00",
       "issue": 42,
-      "reason": "Mich st would have to be on a bad run to lose...this game as they lost ats huge in 2 prior"
+      "reason": "Mich st would have to be on a bad run to lose...this game as they lost ats huge in 2 prior",
+      "voidedAt": "2026-11-27T02:34:14+00:00",
+      "voidNote": "Voided at my request after tip-off (2026-11-26, 9:30 PM ET): these were neutral-site Feast Week games and the slate listed one team as home (UCLA-Saint Mary's the opposite way from ESPN). At the time: Michigan State won 70-67 (-5.5 lost)."
     },
     "ncaab-2026-11-26-louisville-cardinals-st-john-s-red-storm-9-00-pm-et": {
       "sport": "ncaab",
@@ -27,7 +32,9 @@
       "moneyline": -155,
       "submittedAt": "2026-11-26T14:29:03+00:00",
       "issue": 42,
-      "reason": "Same as ucla"
+      "reason": "Same as ucla",
+      "voidedAt": "2026-11-27T02:34:14+00:00",
+      "voidNote": "Voided at my request after tip-off (2026-11-26, 9:30 PM ET): these were neutral-site Feast Week games and the slate listed one team as home (UCLA-Saint Mary's the opposite way from ESPN). At the time: St. John's trailed 34-25 in the first half."
     },
     "ncaab-2026-11-26-saint-mary-s-gaels-ucla-bruins-5-00-pm-et": {
       "sport": "ncaab",
@@ -46,9 +53,9 @@
         "spread": -7.5,
         "spreadOdds": -112
       },
-      "reason": "Betting on ucla to continue candle trend...ucla also has better match up"
+      "reason": "Betting on ucla to continue candle trend...ucla also has better match up",
+      "voidedAt": "2026-11-27T02:34:14+00:00",
+      "voidNote": "Voided at my request after tip-off (2026-11-26, 9:30 PM ET): these were neutral-site Feast Week games and the slate listed one team as home (UCLA-Saint Mary's the opposite way from ESPN). At the time: UCLA lost 85-70 (-4 lost)."
     }
-  },
-  "scores": {},
-  "totals": {}
+  }
 }
