@@ -292,7 +292,7 @@ def ats_trends(all_docs, slate_date, slate_sports, totals=False):
                         continue
                     over = g["homeScore"] + g["awayScore"] - tot
                     for side in sides:
-                        hist[_team_key(g.get(side))].append([date_str, g.get("away" if side == "home" else "home"), round(over, 1), tot, int(side == "home"),
+                        hist[_team_key(g.get(side))].append([date_str, g.get("away" if side == "home" else "home"), round(over, 1), tot, _home_flag(sport, date_str, g, side),
                                                              quarters(sport, date_str, g, side, True)])
                     continue
                 hs = g.get("statsSpread") if sport == "nba" and isinstance(g.get("statsSpread"), (int, float)) else g.get("homeSpread")
@@ -301,13 +301,13 @@ def ats_trends(all_docs, slate_date, slate_sports, totals=False):
                     if sport in NO_LINE_OK:
                         for side in sides:
                             hist[_team_key(g.get(side))].append([date_str, g.get("away" if side == "home" else "home"), None, None,
-                                                                 int(side == "home"), None, round(margin if side == "home" else -margin, 1)])
+                                                                 _home_flag(sport, date_str, g, side), None, round(margin if side == "home" else -margin, 1)])
                     continue
                 for side in sides:
                     k = _team_key(g.get(side))
                     my_sp = hs if side == "home" else -hs
                     m = margin if side == "home" else -margin
-                    hist[k].append([date_str, g.get("away" if side == "home" else "home"), round(m + my_sp, 1), my_sp, int(side == "home"),
+                    hist[k].append([date_str, g.get("away" if side == "home" else "home"), round(m + my_sp, 1), my_sp, _home_flag(sport, date_str, g, side),
                                     quarters(sport, date_str, g, side, False)])
         _fill_from_lines(sport, wanted, hist, slate_date, totals)
         # (Soccer isn't filled from data/raw/master_soccer_scores.csv: ESPN's combined
@@ -360,7 +360,8 @@ def next_games(slate_date, slate_sports):
                     me = 1 if r[1] == ft else 0 if r[0] == ft else None
                     if me is None:
                         continue
-                    nxt.append([d, r[0] if me else r[1], me, None if sport == "soccer" else (r[2] if me else r[3])])
+                    nxt.append([d, r[0] if me else r[1], 2 if str(r[4]) in (_neutral_map().get(sport) or {}) else me,
+                                None if sport == "soccer" else (r[2] if me else r[3])])
                     break
                 if len(nxt) >= NEXT_GAMES:
                     break
@@ -448,7 +449,8 @@ def pd_candles(slate_date, slate_sports):
                         q = [round(y - x) if me else round(x - y) for x, y in zip(r[7], r[8])]
                     else:
                         q = quarters(sport, d, {"away": r[0], "home": r[1]}, "home" if me else "away", False)
-                    rows.append([d, r[0] if me else r[1], me, pf, pa, q, sp] + ([ml] if sport == "soccer" else []))
+                    rows.append([d, r[0] if me else r[1], 2 if str(r[4]) in (_neutral_map().get(sport) or {}) else me, pf, pa, q, sp]
+                                + ([ml] if sport == "soccer" else []))
             if rows or c0:
                 res[t] = {"c0": round(c0, 1), "a0": round(a0, 1), "r": rows}
         if res:
@@ -487,6 +489,53 @@ TWO_WORD_MASCOTS = {"Crimson Tide", "Blue Devils", "Fighting Illini", "Golden Go
                     "Red Storm", "Blue Jays", "Golden Griffins", "Purple Eagles", "Great Danes", "River Hawks", "Big Red", "Big Green",
                     "Mountain Hawks", "Fighting Hawks", "Golden Lions", "Blue Hose", "Red Flash", "Black Bears", "Sea Wolves",
                     "Trail Blazers", "Red Foxes", "Fighting Camels", "Golden Grizzlies", "Purple Aces", "Golden Panthers"}
+
+
+_NEUTRAL = {}
+
+
+def _neutral_map():
+    """{sport: {ESPN event id: venue}} for neutral-site games (archive_schedule.py)."""
+    if not _NEUTRAL:
+        try:
+            with open(os.path.join(store.REPO_ROOT, "data", "raw", "neutral_sites.json"), encoding="utf-8") as f:
+                _NEUTRAL.update(json.load(f))
+        except (OSError, ValueError):
+            _NEUTRAL["_"] = {}
+    return _NEUTRAL
+
+
+def neutral_of(sport, date_str, away, home):
+    """The venue (or "") when ESPN flags this slate game a neutral site, else None.
+    The slate may list the two teams the other way round from ESPN's nominal home
+    team (2026-11-26 Saint Mary's @ UCLA: ESPN had UCLA @ Saint Mary's), so the
+    schedule game is matched either way, that date or a day either side."""
+    nm = _neutral_map().get(sport) or {}
+    if not nm or not away or not home:
+        return None
+    from datetime import date as _date, timedelta as _td
+    try:
+        d0 = _date.fromisoformat(date_str)
+    except (TypeError, ValueError):
+        return None
+    days = {(d0 + _td(days=k)).isoformat() for k in (-1, 0, 1)}
+    best, fit = None, 0
+    for d, rows in _sched_rows(sport):
+        if d not in days:
+            continue
+        for r in rows:
+            for a_, h_ in ((r[0], r[1]), (r[1], r[0])):
+                fa, fh = _name_fit(a_, away), _name_fit(h_, home)
+                if fa and fh and fa + fh > fit:
+                    best, fit = str(r[4]), fa + fh
+    return nm.get(best) if best and best in nm else None
+
+
+def _home_flag(sport, date_str, g, side):
+    """1 home, 0 away, 2 neutral site (no home border on the trend charts)."""
+    if g.get("neutral") or neutral_of(sport, date_str, g.get("away"), g.get("home")) is not None:
+        return 2
+    return int(side == "home")
 
 
 def resolve_teams(sport, date_str, away, home):
@@ -796,6 +845,10 @@ def slate_payload(all_docs, mypicks, slate_date, with_rosters=True):
                 row = {k: g.get(k) for k in SLATE_FIELDS}
                 row["id"] = game_id(sport, date_str, g)
                 row["final"] = is_final(doc, g)
+                venue = neutral_of(sport, date_str, g.get("away"), g.get("home"))
+                if venue is not None or g.get("neutral"):
+                    row["neutral"] = True
+                    row["venue"] = venue or None
                 if row["final"]:
                     row["results"] = {
                         who: ({"sx": 1} if story_vetoed(date_str, g, side) else grade(sport, stats_view(g) if who == "stats" else g, side))

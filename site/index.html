@@ -121,7 +121,7 @@ section.hero{border-top:0;}
 @media (max-width:600px){.dayres td.mono{white-space:normal;} .dayres td.mono span{display:block;font-size:12px;} .dayres td,.dayres th{padding:5px 4px;}} .dayres tr:last-child td{border-bottom:0;}
 .dvt tr.dvout td{opacity:.55;} .dvt tr.dvout .pn{text-decoration:line-through;text-decoration-color:var(--loss);}
 .injt{display:inline-block;font-size:10px;font-weight:800;border-radius:4px;padding:0 4px;vertical-align:1px;background:color-mix(in oklab, var(--warn) 35%, transparent);color:var(--ink);text-decoration:none;}
-.injt.o{background:var(--loss);color:#fff;} .mmadj{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;}
+.injt.o{background:var(--loss);color:#fff;} .ha.neu{color:var(--accent, #c9a227);} .neusite{font-size:11.5px;color:var(--muted);border:1px dashed var(--rule-2);border-radius:999px;padding:1px 8px;} .mmadj{display:block;font-size:11.5px;color:var(--muted);margin-top:2px;}
 .mms{margin:8px 0 10px;} .mms-row{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;align-items:center;padding:8px 0;border-bottom:1px solid var(--rule-2);}
 .mms-row:last-of-type{border-bottom:0;} .mms-team{display:flex;align-items:center;gap:8px;font-size:13px;}
 .mmg{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:9px;font-weight:800;font-size:18px;color:#fff;flex:none;}
@@ -1818,7 +1818,7 @@ footer b{color:var(--ink);}
       var sc = side==='away' ? g.awayScore : g.homeScore, other = side==='away' ? g.homeScore : g.awayScore;
       var lost = g.final && hasScore && sc < other;
       return '<div class="mu-row'+(lost?' lost':'')+'">'+teamBadge(team)
-        + '<div class="mu-name"><span class="ha">'+(side==='away'?'Away':'Home')+'</span>'+esc(team)+'</div>'
+        + '<div class="mu-name"><span class="ha'+(g.neutral ? ' neu' : '')+'">'+(g.neutral ? 'Neutral' : side==='away'?'Away':'Home')+'</span>'+esc(team)+'</div>'
         + (hasScore ? '<div class="mu-score">'+sc+'</div>'
           : '<div class="mu-line">'+(num(sp) ? '<span class="sp">'+sgn(sp)+'</span>' : '')+(num(ml) ? '<span class="ml">'+sgn(ml)+'</span>' : '')+'</div>')
         + '</div>';
@@ -1827,7 +1827,7 @@ footer b{color:var(--ink);}
     var hand = g.manualFields && g.manualFields.length ? '<span class="handnote" title="Entered on the Enter data by hand page">\u270e hand-entered: '+esc(manualLabel(g.manualFields))+'</span>' : '';
     return '<div class="mu"><div class="mu-rows">'+row('away')+row('home')
       + (num(g.drawMoneyline) && !hasScore ? '<div class="mu-draw">Draw '+sgn(g.drawMoneyline)+'</div>' : '')+'</div>'
-      + '<div class="mu-meta"><span class="mu-status'+(g.final?' final':'')+'">'+(g.final ? 'Final' : esc(g.time||''))+'</span>'+lines+hand+'</div></div>'
+      + '<div class="mu-meta"><span class="mu-status'+(g.final?' final':'')+'">'+(g.final ? 'Final' : esc(g.time||''))+'</span>'+(g.neutral ? '<span class="neusite" title="ESPN lists this as a neutral-site game; the slate\'s away/home order is only nominal">Neutral site'+(g.venue ? ' \u00b7 '+esc(g.venue) : '')+'</span>' : '')+lines+hand+'</div></div>'
       + (who ? '<div style="margin-top:-6px">'+who+'</div>' : '');
   }
   // Lean meter: which side the models (not sitting out) and the storylines point to.
@@ -2003,9 +2003,9 @@ footer b{color:var(--ink);}
       // label blocks under the bars (rest, @/vs on phone, opponent, record); a block that
       // would touch the one before it drops a level so back-to-backs stay readable
       var fo = PH ? 13.5 : 9.5, fr = PH ? 12 : 8.5, fa = PH ? 11 : 8, lh = PH ? 15 : 11, rowsN = PH ? 4 : 3, bh = rowsN * lh + 4;
-      var blocks = rows.map(function(r, i){ return {x: xs[i], rest: restTxt(gaps[i]), b2b: gaps[i] === 1, at: r[4] ? 'vs' : '@', opp: (PH ? '' : (r[4]?'':'@'))+teamAbbr(r[1]), rec: r[6] || '', col: recShade(r[6])}; });
-      blocks.push({x: tx, rest: restTxt(tGap), b2b: tGap === 1, at: home ? 'vs' : '@', opp: (PH ? '' : (home?'':'@'))+teamAbbr(opp), rec: 'tonight', col: null, next: 1});
-      NX.forEach(function(r, i){ blocks.push({x: nxs[i], rest: restTxt(nGaps[i]), b2b: nGaps[i] === 1, at: r[2] ? 'vs' : '@', opp: (PH ? '' : (r[2]?'':'@'))+teamAbbr(r[1]), rec: r[3] || '', col: r[3] ? recShade(r[3]) : null, next: !r[3]}); });
+      var blocks = rows.map(function(r, i){ return {x: xs[i], rest: restTxt(gaps[i]), b2b: gaps[i] === 1, at: r[4] === 2 ? 'neu' : r[4] ? 'vs' : '@', opp: (PH ? '' : (r[4] === 2 ? 'n\u00b7' : r[4]?'':'@'))+teamAbbr(r[1]), rec: r[6] || '', col: recShade(r[6])}; });
+      blocks.push({x: tx, rest: restTxt(tGap), b2b: tGap === 1, at: g.neutral ? 'neu' : home ? 'vs' : '@', opp: (PH ? '' : (g.neutral ? 'n\u00b7' : home ? '' : '@'))+teamAbbr(opp), rec: 'tonight', col: null, next: 1});
+      NX.forEach(function(r, i){ blocks.push({x: nxs[i], rest: restTxt(nGaps[i]), b2b: nGaps[i] === 1, at: r[2] === 2 ? 'neu' : r[2] ? 'vs' : '@', opp: (PH ? '' : (r[2] === 2 ? 'n\u00b7' : r[2]?'':'@'))+teamAbbr(r[1]), rec: r[3] || '', col: r[3] ? recShade(r[3]) : null, next: !r[3]}); });
       var levels = [];
       blocks.forEach(function(k){
         var w = Math.max(k.opp.length * fo, k.rec.length * fr, k.rest.length * fa) * 0.62;
@@ -2045,17 +2045,17 @@ footer b{color:var(--ink);}
         var cl = v > 0 ? 'bw' : v < 0 ? 'bl' : 'bp';
         var tip = team+' — '+fmtDay(r[0])+' '+(r[4]?'vs ':'@ ')+r[1]+(r[6]?' ('+r[6]+')':'')+(gaps[i] ? ', '+(gaps[i] === 1 ? 'second night of a back-to-back' : (gaps[i]-1)+' day'+(gaps[i]===2?'':'s')+' off') : '')+(num(r[3]) ? ' ('+sgn(r[3])+')' : '')+': '+(WIN ? (v>0?'won by '+v:v<0?'lost by '+(-v):'tied') : (v>0?'covered by '+v:v<0?'missed by '+(-v):'push'))
           + (r[5] && r[5].length ? ' · margin by '+qName(sport)+': '+r[5].map(function(q, j){ return qLabel(sport, j)+' '+fmt(q); }).join(', ') : '');
-        out += '<g><title>'+esc(tip)+'</title><rect class="'+cl+(r[4]?' hm':'')+'" x="'+(cx-bw/2).toFixed(1)+'" y="'+(v >= 0 ? y : ys(0)).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="2"></rect>'
+        out += '<g><title>'+esc(tip)+'</title><rect class="'+cl+(r[4]===1?' hm':'')+'" x="'+(cx-bw/2).toFixed(1)+'" y="'+(v >= 0 ? y : ys(0)).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+h.toFixed(1)+'" rx="2"></rect>'
           + (uw >= (PH ? 24 : 15) || i === n-1 || (i && xs[i]-xs[i-1] >= (PH ? 34 : 22) && (i === n-1 || xs[i+1]-xs[i] >= (PH ? 34 : 22))) ? '<text class="bv" x="'+cx.toFixed(1)+'" y="'+(v >= 0 ? ys(v) - 4 : ys(v) + (PH ? 15 : 11)).toFixed(1)+'" text-anchor="middle">'+fmt(v)+'</text>' : '')
           + label(blocks[i]) + '</g>';
       });
       // tonight: a gray placeholder, like a game not yet played
-      out += '<g><title>'+esc(team+' — tonight '+(home?'vs ':'@ ')+opp+(tGap ? ', '+(tGap === 1 ? 'second night of a back-to-back' : (tGap-1)+' day'+(tGap===2?'':'s')+' off') : ''))+'</title><rect class="bt'+(home?' hm':'')+'" x="'+(tx-bw/2).toFixed(1)+'" y="'+(y0-CH/7).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+(CH/3.5).toFixed(1)+'" rx="2"></rect>'
+      out += '<g><title>'+esc(team+' — tonight '+(home?'vs ':'@ ')+opp+(tGap ? ', '+(tGap === 1 ? 'second night of a back-to-back' : (tGap-1)+' day'+(tGap===2?'':'s')+' off') : ''))+'</title><rect class="bt'+(home && !g.neutral?' hm':'')+'" x="'+(tx-bw/2).toFixed(1)+'" y="'+(y0-CH/7).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+(CH/3.5).toFixed(1)+'" rx="2"></rect>'
         + label(blocks[n]) + '</g>';
       // the next games: empty dashed outlines, the opponent and its record under each
       NX.forEach(function(r, i){
         var gp = nGaps[i];
-        out += '<g><title>'+esc(team+' \u2014 next: '+fmtDay(r[0])+' '+(r[2]?'vs ':'@ ')+r[1]+(r[3]?' ('+r[3]+')':'')+(gp ? ', '+(gp === 1 ? 'second night of a back-to-back' : (gp-1)+' day'+(gp===2?'':'s')+' off') : ''))+'</title><rect class="bnx'+(r[2]?' hm':'')+'" x="'+(nxs[i]-bw/2).toFixed(1)+'" y="'+(y0-CH/7).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+(CH/3.5).toFixed(1)+'" rx="2"></rect>'
+        out += '<g><title>'+esc(team+' \u2014 next: '+fmtDay(r[0])+' '+(r[2]?'vs ':'@ ')+r[1]+(r[3]?' ('+r[3]+')':'')+(gp ? ', '+(gp === 1 ? 'second night of a back-to-back' : (gp-1)+' day'+(gp===2?'':'s')+' off') : ''))+'</title><rect class="bnx'+(r[2]===1?' hm':'')+'" x="'+(nxs[i]-bw/2).toFixed(1)+'" y="'+(y0-CH/7).toFixed(1)+'" width="'+bw.toFixed(1)+'" height="'+(CH/3.5).toFixed(1)+'" rx="2"></rect>'
           + label(blocks[n+1+i]) + '</g>';
       });
       if(NX.length) out += '<text class="nxh" x="'+((nxs[0] + nxs[NX.length-1]) / 2).toFixed(1)+'" y="'+(Tp - 4)+'" text-anchor="middle">next '+NX.length+'</text>';

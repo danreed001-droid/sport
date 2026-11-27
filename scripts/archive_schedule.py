@@ -20,6 +20,13 @@ time; college ones (which cap a month at 25 or 1,000 games) a day at a time;
 soccer a month at a time per league (the combined soccer feed caps a month at
 1,000 and mixes women's and youth sides under the same club names).
 Run in the scoring workflow.
+
+Neutral sites (2026-11-24, the user's ask after UCLA-Saint Mary's was shown as
+a UCLA home game): every game ESPN flags `neutralSite` goes in
+data/raw/neutral_sites.json, {sport: {event id: venue}}, read by build_site.py
+(the card shows "Neutral site" instead of Away/Home, and the trend charts give
+neither team a home border). `--neutral-backfill` reads the whole season's
+scoreboards again for that file only (the schedule files are left alone).
 """
 import json
 import os
@@ -33,6 +40,7 @@ from archive_linescores import record_before  # noqa: E402
 
 ET = ZoneInfo("America/New_York")
 OUT = os.path.join(store.REPO_ROOT, "data", "raw", "schedule")
+NEUTRAL = os.path.join(store.REPO_ROOT, "data", "raw", "neutral_sites.json")
 LOOKAHEAD_HOURS = 4
 BASE = "https://site.api.espn.com/apis/site/v2/sports"
 # sport: (season start, days ahead, "month" or "day", extra query)
@@ -95,8 +103,9 @@ def _events(session, path, query):
 
 
 def _rows(evs):
-    """{Eastern date: {event id: row}}, {Eastern date: every game on it finished}."""
-    by, fin = {}, {}
+    """{Eastern date: {event id: row}}, {Eastern date: every game on it finished},
+    {event id: venue name or "" when ESPN flags it a neutral site, None when not}."""
+    by, fin, neu = {}, {}, {}
     for ev in evs:
         comp = (ev.get("competitions") or [{}])[0]
         t = {c.get("homeAway"): c for c in comp.get("competitors") or []}
@@ -123,7 +132,8 @@ def _rows(evs):
                                                _rec(a, h, done, post), _rec(h, a, done, post), str(ev["id"]),
                                                score(a), score(h), pa, ph]
         fin[d] = fin.get(d, True) and done
-    return by, fin
+        neu[str(ev["id"])] = ((comp.get("venue") or {}).get("fullName") or "") if comp.get("neutralSite") else None
+    return by, fin, neu
 
 
 def _months(start, end):
@@ -138,16 +148,24 @@ def main():
     session = espn.make_session()
     now = datetime.now(timezone.utc)
     today = now.astimezone(ET).date()
+    backfill = "--neutral-backfill" in sys.argv
+    only = [a for a in sys.argv[1:] if a in CFG]
+    neutral = _load(NEUTRAL)
     for sport, (start, ahead, mode, extra) in CFG.items():
+        if only and sport not in only:
+            continue
         path = os.path.join(OUT, f"{sport}.json")
         data = _load(path)
         dates, done = data.setdefault("dates", {}), set(data.get("done") or [])
+        if backfill:
+            done = set()
         # rows saved before final scores (5 fields) or period scores (7) were kept are fetched again once
         done -= {d for d in done if any(len(r) < 9 for r in dates.get(d) or [])}
         try:
             fresh = now - datetime.fromisoformat(data.get("fetched")) < timedelta(hours=LOOKAHEAD_HOURS)
         except (TypeError, ValueError):
             fresh = False
+        fresh = fresh and not backfill
         first, last = date.fromisoformat(start), today + timedelta(days=ahead)
         if first > last:
             continue
@@ -168,7 +186,7 @@ def main():
                 if (d < today and d.isoformat() not in done) or (d >= today and not fresh):
                     queries.append(f"dates={d.strftime('%Y%m%d')}{extra}")
                 d += timedelta(days=1)
-            if len(queries) > 120:     # first run: backfill in pieces
+            if len(queries) > 120 and not backfill:     # first run: backfill in pieces
                 queries = queries[:60] + [q for q in queries if q[6:14] >= today.strftime("%Y%m%d")]
         if not queries:
             print(f"{sport}: nothing to fetch ({len(dates)} dates saved)")
@@ -181,10 +199,19 @@ def main():
                 if evs is None:
                     continue
                 ok.add(q)
-                by, f = _rows(evs)
+                by, f, nv = _rows(evs)
+                nmap = neutral.setdefault(sport, {})
+                for eid, venue in nv.items():
+                    if venue is None:
+                        nmap.pop(eid, None)
+                    else:
+                        nmap[eid] = venue
                 for d, games in by.items():
                     got.setdefault(d, {}).update(games)
                     fin[d] = fin.get(d, True) and f[d]
+        if backfill:
+            print(f"{sport}: neutral sites {len(neutral.get(sport, {}))}")
+            continue
         # Which dates did those queries cover in full? (Only replace a date we saw whole.)
         covered = set()
         for q in ok:
@@ -215,6 +242,7 @@ def main():
         data["done"] = sorted(done)
         _save(path, data)
         print(f"{sport}: {len(queries)} scoreboard(s), {changed} date(s) changed; {len(dates)} dates saved")
+    _save(NEUTRAL, neutral)
 
 
 if __name__ == "__main__":

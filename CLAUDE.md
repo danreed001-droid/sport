@@ -614,6 +614,20 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   build_site.py runs in pages.yml without `curl_cffi` installed: it must not
   import a script that imports `lib.espn` (the first h2h push failed the Pages
   build on `from archive_schedule import CFG`; the live site stayed up).
+- **Neutral sites** (2026-11-26, the user's ask after UCLA-Saint Mary's at San
+  Diego showed UCLA at home; ESPN had Saint Mary's as the nominal home team):
+  archive_schedule.py saves every game ESPN flags `neutralSite` to
+  `data/raw/neutral_sites.json` ({sport: {event id: venue}}; `--neutral-backfill
+  [sport...]` re-reads the season for it alone; 2026 backfill: NCAAB 298, CFB 37,
+  NFL 9, NBA 8, MLB 6, soccer 0 -- ESPN doesn't flag soccer). build_site.py's
+  `neutral_of` matches a slate game to its schedule game either way round and
+  sets `neutral`/`venue` on the payload game: the card's header says "Neutral"
+  for both teams plus a "Neutral site · venue" tag, and the trend bars mark
+  those games home flag 2 ("neu"/"n·", no white home border; ATS trend, next
+  games, candles). Slates aren't rewritten (picks are keyed on their order and
+  grading matches swapped games). Feast Week: 7 of 8 and 11 of 11 NCAAB games
+  on 11-25/26 were neutral, 5 listed opposite ESPN. The user's three 11-26 NCAAB
+  picks were voided at their request after tip-off (in `voided`, noted).
 - **Jump bar** (2026-11-22, the user's ask for a way to move between sections):
   a sticky strip under the top bar (`.jumpstrip`, `renderJump`/`jumpSync` in
   site/index.html; on a phone only the strip sticks, the top bar scrolls away)
