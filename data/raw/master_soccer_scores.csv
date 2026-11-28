@@ -4,7 +4,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401900870,2026-11-27,FT,Al Fayha,0,-,Al Qadsiah,2,-,-,-,9:20 AM
 401879225,2026-11-27,FT,Chelsea,2,-,Nottingham Forest,3,-,-,-,3:00 PM
 401882791,2026-11-27,FT,Racing Santander,3,-,Levante,1,-,-,-,3:00 PM
-401933727,2026-11-27,70',Inter Miami CF,0,-,Columbus Crew,0,-,-,-,8:00 PM
+401933727,2026-11-27,FT,Inter Miami CF,0,-,Columbus Crew,1,-,-,-,8:00 PM
 401933725,2026-11-27,Scheduled,Vancouver Whitecaps,0,-,Real Salt Lake,0,-,-,-,10:00 PM
 401884720,2026-11-27,FT,Borussia Mönchengladbach,3,-,Werder Bremen,3,-,-,-,2:30 PM
 401875004,2026-11-27,FT,Bologna,0,-,Venezia,0,-,-,-,2:45 PM
@@ -15,7 +15,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401875536,2026-11-27,FT,Willem II,1,-,FC Groningen,1,-,-,-,2:00 PM
 401880129,2026-11-27,FT,Middlesbrough,0,-,Southampton,2,-,-,-,3:00 PM
 401870039,2026-11-27,FT,Costa Rica,0,-,Jamaica,3,-,-,-,5:00 PM
-401870040,2026-11-27,48',El Salvador,0,-,United States,7,-,-,-,8:30 PM
+401870040,2026-11-27,90'+2',El Salvador,0,-,United States,8,-,-,-,8:30 PM
 401936396,2026-11-27,FT,Luxembourg,2,-,Cyprus,2,-,-,-,4:00 AM
 401936607,2026-11-27,FT,Senegal,1,-,Ivory Coast,4,-,-,-,11:00 AM
 401933100,2026-11-27,FT,Greece,2,-,Northern Ireland,0,-,-,-,2:00 PM
@@ -61,14 +61,14 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401912683,2026-11-27,FT,Atlético Goianiense,0,-,Vila Nova,2,-,-,-,6:00 PM
 401936333,2026-11-27,FT-Pens,Racing (Montevideo),2,-,Liverpool,2,-,-,-,6:30 PM
 401936055,2026-11-27,FT,Atlético Bucaramanga,1,-,Deportivo Cali,1,-,-,-,6:35 PM
-401936054,2026-11-27,HT,América de Cali,0,-,Millonarios,0,-,-,-,8:40 PM
+401936054,2026-11-27,81',América de Cali,0,-,Millonarios,0,-,-,-,8:40 PM
 401888643,2026-11-27,FT,Rubio Ñú,1,-,Nacional Asunción,3,-,-,-,3:30 PM
 401888557,2026-11-27,FT,Club Olimpia,2,-,Sportivo Luqueño,1,-,-,-,6:00 PM
 401921332,2026-11-27,FT,Orense,3,-,Delfín,0,-,-,-,2:00 PM
 401921361,2026-11-27,FT,Manta F.C.,0,-,Deportivo Cuenca,3,-,-,-,4:30 PM
-401930026,2026-11-27,40',Real Tomayapo,0,-,ABB,1,-,-,-,9:00 PM
+401930026,2026-11-27,67',Real Tomayapo,0,-,ABB,1,-,-,-,9:00 PM
 401930037,2026-11-27,FT,Real Oruro,1,-,Independiente Petrolero,4,-,-,-,6:00 PM
-401876813,2026-11-27,44',Escorpiones Belén,0,-,Herediano,0,-,-,-,9:00 PM
+401876813,2026-11-27,67',Escorpiones Belén,1,-,Herediano,1,-,-,-,9:00 PM
 401925406,2026-11-27,FT,Churchill Brothers,1,-,Inter Kashi,0,-,-,-,9:00 AM
 401932108,2026-11-27,FT,Al Ahli Tripoli,2,-,Azam FC,1,-,-,-,8:00 AM
 401902007,2026-11-27,FT,TS Galaxy FC,0,-,Stellenbosch,1,-,-,-,12:30 PM
@@ -87,7 +87,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401932666,2026-11-27,FT,Wisconsin,1,-,Vanderbilt,2,-,-,-,7:00 PM
 401932675,2026-11-27,FT,West Virginia,0,-,Virginia,1,-,-,-,6:00 PM
 401932669,2026-11-27,FT,Saint Louis,1,-,Wake Forest,3,-,-,-,6:00 PM
-401932668,2026-11-27,67',Virginia Tech,1,-,Baylor,1,-,-,-,8:00 PM
+401932668,2026-11-27,100',Virginia Tech,1,-,Baylor,1,-,-,-,8:00 PM
 401900871,2026-11-26,FT,Al Diriyah,2,-,Al Faisaly,2,-,-,-,12:30 PM
 401900874,2026-11-26,FT,Al Riyadh,0,-,Al Fateh,1,-,-,-,9:25 AM
 401900443,2026-11-26,FT,Al Shabab,1,-,Abha,0,-,-,-,10:05 AM

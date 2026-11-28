@@ -1,7 +1,7 @@
 {
  "date": "2026-11-28",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-28T03:10:43+00:00",
+ "fetchedAt": "2026-11-28T03:25:58+00:00",
  "games": [
   {
    "away": "Orlando Magic",
@@ -15,7 +15,7 @@
     "money_home": null
    },
    "total": {
-    "now": 218.5,
+    "now": 219,
     "open": 217.5,
     "tix_over": 82,
     "money_over": 90
@@ -84,7 +84,7 @@
     "money_home": null
    },
    "total": {
-    "now": 236,
+    "now": 235,
     "open": 236.5,
     "tix_over": null,
     "money_over": null
