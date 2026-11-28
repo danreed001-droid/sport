@@ -531,6 +531,27 @@ def neutral_of(sport, date_str, away, home):
     return nm.get(best) if best and best in nm else None
 
 
+def tag_neutral(rows, sport_key, date_key, game_key):
+    """Adds "nu" (the venue, or "") to each pick-log / results row whose game was
+    at a neutral site, so the pick log and the public results page say so."""
+    seen = {}
+    for r in rows:
+        g = str(r.get(game_key) or "")
+        if " @ " not in g:
+            continue
+        k = (r.get(sport_key), r.get(date_key), g)
+        if k not in seen:
+            a, h = g.split(" @ ", 1)
+            seen[k] = neutral_of(k[0], k[1], a, h)
+        if seen[k] is not None:
+            r["nu"] = seen[k]
+
+
+def tagged_plays(plays):
+    tag_neutral(plays, "s", "d", "g")
+    return plays
+
+
 def _home_flag(sport, date_str, g, side):
     """1 home, 0 away, 2 neutral site (no home border on the trend charts)."""
     if g.get("neutral") or neutral_of(sport, date_str, g.get("away"), g.get("home")) is not None:
@@ -1123,7 +1144,7 @@ def build():
         "teamPropStats": {k: [[x[0], x[1], x[2]] for x in v] for k, v in props_lib.TEAM_STATS.items()},
         "myScores": cur["myScores"],
         "scoreboard": totals,
-        "plays": sorted(plays + prop_log(mypicks), key=lambda p: p["d"]),
+        "plays": sorted(tagged_plays(plays + prop_log(mypicks)), key=lambda p: p["d"]),
         "sportLabels": {k: cfg["label"] for k, cfg in sports.SPORTS.items()},
         "bySport": {k: {"label": sports.SPORTS[k]["label"], **v} for k, v in by_sport.items()},
         "statsRules": stats_rules,
@@ -1265,6 +1286,7 @@ def main():
         json.dump(payload, f, ensure_ascii=False, separators=(",", ":"))
     # Public results: every pick of yours, graded at the line you took (site/results.html).
     rows = build_results(load_mypicks(), {k: store.list_docs(cfg["collection"]) for k, cfg in sports.SPORTS.items()})
+    tag_neutral(rows, "sport", "d", "game")
     with open(os.path.join(out_dir, "results.json"), "w", encoding="utf-8") as f:
         json.dump({"generatedAt": payload["generatedAt"], "repo": REPO, "rows": rows}, f, ensure_ascii=False, separators=(",", ":"))
     with open(os.path.join(out_dir, "results.csv"), "w", encoding="utf-8", newline="") as f:

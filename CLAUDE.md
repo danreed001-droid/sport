@@ -628,6 +628,15 @@ merge into `main`; the scoring, pick-intake and Pages workflows all run from it.
   grading matches swapped games). Feast Week: 7 of 8 and 11 of 11 NCAAB games
   on 11-25/26 were neutral, 5 listed opposite ESPN. The user's three 11-26 NCAAB
   picks were voided at their request after tip-off (in `voided`, noted).
+  Every sport (2026-11-27, the user's ask): ESPN never flags soccer, so
+  archive_schedule.py keeps every soccer match's venue (`data/raw/soccer_venues.json`,
+  {event id: [home club, venue id, venue]}) and `soccer_neutral` flags a match
+  away from the home club's usual ground (60%+ of its home matches, 3+) or at
+  another club's usual ground (34 this season: stadium moves, cup finals; Betis
+  back at its old ground counts; ESPN puts all Shakhtar UCL home games at
+  Stamford Bridge, so those aren't caught). Soccer cards say "Not at X's usual
+  ground · venue" and keep Away/Home. The pick log (`nuTag`) and the results
+  page tag those games too (`tag_neutral` in build_site.py: `nu` = venue).
 - **Jump bar** (2026-11-22, the user's ask for a way to move between sections):
   a sticky strip under the top bar (`.jumpstrip`, `renderJump`/`jumpSync` in
   site/index.html; on a phone only the strip sticks, the top bar scrolls away)
