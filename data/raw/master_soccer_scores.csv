@@ -2,29 +2,29 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401900873,2026-11-27,FT,Neom SC,0,-,Al Ittihad,1,-,-,-,12:30 PM
 401900872,2026-11-27,FT,Al Khaleej,1,-,Al Kholood,2,-,-,-,7:15 AM
 401900870,2026-11-27,FT,Al Fayha,0,-,Al Qadsiah,2,-,-,-,9:20 AM
-401879225,2026-11-27,42',Chelsea,0,-,Nottingham Forest,1,-,-,-,3:00 PM
-401882791,2026-11-27,40',Racing Santander,0,-,Levante,0,-,-,-,3:00 PM
-401933727,2026-11-27,Scheduled,Inter Miami CF,0,-,Columbus Crew,0,-,-,-,8:00 PM
+401879225,2026-11-27,FT,Chelsea,2,-,Nottingham Forest,3,-,-,-,3:00 PM
+401882791,2026-11-27,FT,Racing Santander,3,-,Levante,1,-,-,-,3:00 PM
+401933727,2026-11-27,70',Inter Miami CF,0,-,Columbus Crew,0,-,-,-,8:00 PM
 401933725,2026-11-27,Scheduled,Vancouver Whitecaps,0,-,Real Salt Lake,0,-,-,-,10:00 PM
-401884720,2026-11-27,51',Borussia Mönchengladbach,2,-,Werder Bremen,1,-,-,-,2:30 PM
-401875004,2026-11-27,HT,Bologna,0,-,Venezia,0,-,-,-,2:45 PM
-401876392,2026-11-27,HT,Paris FC,0,-,Brest,1,-,-,-,2:45 PM
+401884720,2026-11-27,FT,Borussia Mönchengladbach,3,-,Werder Bremen,3,-,-,-,2:30 PM
+401875004,2026-11-27,FT,Bologna,0,-,Venezia,0,-,-,-,2:45 PM
+401876392,2026-11-27,FT,Paris FC,0,-,Brest,1,-,-,-,2:45 PM
 401934489,2026-11-27,FT-Pens,Le Puy,1,-,AS Cannes,1,-,-,-,1:00 PM
-401934500,2026-11-27,Scheduled,Valenciennes,0,-,Le Pays Du Valois,0,-,-,-,2:00 PM
-401934495,2026-11-27,Scheduled,Caen,0,-,Pays de Saint-Omer,0,-,-,-,2:00 PM
-401875536,2026-11-27,78',Willem II,1,-,FC Groningen,0,-,-,-,2:00 PM
-401880129,2026-11-27,42',Middlesbrough,0,-,Southampton,0,-,-,-,3:00 PM
-401870039,2026-11-27,Scheduled,Costa Rica,0,-,Jamaica,0,-,-,-,5:00 PM
-401870040,2026-11-27,Scheduled,El Salvador,0,-,United States,0,-,-,-,8:30 PM
+401934500,2026-11-27,FT,Valenciennes,2,-,Le Pays Du Valois,1,-,-,-,2:00 PM
+401934495,2026-11-27,FT,Caen,0,-,Pays de Saint-Omer,1,-,-,-,2:00 PM
+401875536,2026-11-27,FT,Willem II,1,-,FC Groningen,1,-,-,-,2:00 PM
+401880129,2026-11-27,FT,Middlesbrough,0,-,Southampton,2,-,-,-,3:00 PM
+401870039,2026-11-27,FT,Costa Rica,0,-,Jamaica,3,-,-,-,5:00 PM
+401870040,2026-11-27,48',El Salvador,0,-,United States,7,-,-,-,8:30 PM
 401936396,2026-11-27,FT,Luxembourg,2,-,Cyprus,2,-,-,-,4:00 AM
 401936607,2026-11-27,FT,Senegal,1,-,Ivory Coast,4,-,-,-,11:00 AM
-401933100,2026-11-27,83',Greece,1,-,Northern Ireland,0,-,-,-,2:00 PM
-401930496,2026-11-27,40',Venezuela,2,-,France,1,-,-,-,3:00 PM
-401932236,2026-11-27,Scheduled,Dominican Republic,0,-,Peru,0,-,-,-,4:00 PM
-401936048,2026-11-27,Scheduled,Uruguay,0,-,Bolivia,0,-,-,-,6:00 PM
-401931680,2026-11-27,55',Ayr United,2,-,Largs Thistle,0,-,-,-,2:30 PM
+401933100,2026-11-27,FT,Greece,2,-,Northern Ireland,0,-,-,-,2:00 PM
+401930496,2026-11-27,FT,Venezuela,2,-,France,4,-,-,-,3:00 PM
+401932236,2026-11-27,FT,Dominican Republic,0,-,Peru,2,-,-,-,4:00 PM
+401936048,2026-11-27,FT,Uruguay,8,-,Bolivia,0,-,-,-,6:00 PM
+401931680,2026-11-27,FT,Ayr United,3,-,Largs Thistle,0,-,-,-,2:30 PM
 401892133,2026-11-27,FT,Melbourne City FC,0,-,Macarthur FC,2,-,-,-,3:40 AM
-401885389,2026-11-27,26',C.D. Nacional,0,-,Maritimo,0,-,-,-,3:15 PM
+401885389,2026-11-27,FT,C.D. Nacional,2,-,Maritimo,1,-,-,-,3:15 PM
 401888241,2026-11-27,FT,Konyaspor,2,-,Alanyaspor,1,-,-,-,12:00 PM
 401888240,2026-11-27,FT,Kasimpasa,2,-,Caykur Rizespor,3,-,-,-,12:00 PM
 401931800,2026-11-27,FT,TPS,3,-,FC Ilves,1,-,-,-,6:30 AM
@@ -32,8 +32,8 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401936495,2026-11-27,Scheduled,Servette II,0,-,FC Basel II,0,-,-,-,8:00 AM
 401935491,2026-11-27,FT,FK Karlskrona,3,-,Östers IF,0,-,-,-,12:30 PM
 401936493,2026-11-27,Canceled,Wolfsberger AC Amateure,0,-,FSC Eggendorf,0,-,-,-,12:45 PM
-401878930,2026-11-27,HT,KV Kortrijk,0,-,OH Leuven,1,-,-,-,2:45 PM
-401883102,2026-11-27,55',CD Sabadell,0,-,Leganés,0,-,-,-,2:30 PM
+401878930,2026-11-27,FT,KV Kortrijk,2,-,OH Leuven,2,-,-,-,2:45 PM
+401883102,2026-11-27,FT,CD Sabadell,0,-,Leganés,0,-,-,-,2:30 PM
 401885047,2026-11-27,FT,1. FC Nürnberg,1,-,1. FC Heidenheim 1846,3,-,-,-,12:30 PM
 401885045,2026-11-27,FT,SV Darmstadt 98,0,-,VfL Bochum,2,-,-,-,12:30 PM
 401881739,2026-11-27,FT,SC Rheindorf Altach,3,-,Grazer AK,2,-,-,-,1:30 PM
@@ -45,49 +45,49 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401873579,2026-11-27,FT,Chile U17,1,-,Montenegro U17,0,-,-,-,10:00 AM
 401873577,2026-11-27,FT,Cameroon U17,1,-,Romania U17,3,-,-,-,11:00 AM
 401873576,2026-11-27,FT,Mexico U17,0,-,Venezuela U17,0,-,-,-,11:00 AM
-401889179,2026-11-27,HT,Wealdstone,1,-,Scunthorpe United,1,-,-,-,2:45 PM
+401889179,2026-11-27,FT,Wealdstone,1,-,Scunthorpe United,4,-,-,-,2:45 PM
 401875834,2026-11-27,Postponed,Vitesse,0,-,FC Dordrecht,0,-,-,-,2:00 PM
-401875833,2026-11-27,82',Heracles Almelo,3,-,Jong Ajax,3,-,-,-,2:00 PM
+401875833,2026-11-27,FT,Heracles Almelo,4,-,Jong Ajax,4,-,-,-,2:00 PM
 401875832,2026-11-27,Postponed,TOP Oss,0,-,Jong AZ,0,-,-,-,2:00 PM
 401875831,2026-11-27,Postponed,Almere City,0,-,Jong FC Utrecht,0,-,-,-,2:00 PM
-401875830,2026-11-27,80',Jong PSV,2,-,MVV Maastricht,3,-,-,-,2:00 PM
-401875829,2026-11-27,82',FC Den Bosch,2,-,NAC Breda,5,-,-,-,2:00 PM
+401875830,2026-11-27,FT,Jong PSV,2,-,MVV Maastricht,3,-,-,-,2:00 PM
+401875829,2026-11-27,FT,FC Den Bosch,2,-,NAC Breda,6,-,-,-,2:00 PM
 401876061,2026-11-27,Postponed,RKC Waalwijk,0,-,VVV-Venlo,0,-,-,-,2:00 PM
 401874563,2026-11-27,FT,Brøndby IF,1,-,Sønderjyske Fodbold,1,-,-,-,1:00 PM
-401933218,2026-11-27,Scheduled,Ciudad de Bolívar,0,-,Atlanta,0,-,-,-,5:00 PM
-401933219,2026-11-27,Scheduled,Colón (Santa Fe),0,-,Deportivo Morón,0,-,-,-,7:00 PM
-401933198,2026-11-27,Scheduled,Gimnasia y Tiro (Salta),0,-,Tristán Suárez,0,-,-,-,7:00 PM
-401841337,2026-11-27,Scheduled,Cruzeiro,0,-,Fluminense,0,-,-,-,6:00 PM
-401912683,2026-11-27,Scheduled,Atlético Goianiense,0,-,Vila Nova,0,-,-,-,6:00 PM
-401936333,2026-11-27,Scheduled,Racing (Montevideo),0,-,Liverpool,0,-,-,-,6:30 PM
-401936055,2026-11-27,Scheduled,Atlético Bucaramanga,0,-,Deportivo Cali,0,-,-,-,6:35 PM
-401936054,2026-11-27,Scheduled,América de Cali,0,-,Millonarios,0,-,-,-,8:40 PM
-401888643,2026-11-27,12',Rubio Ñú,0,-,Nacional Asunción,1,-,-,-,3:30 PM
-401888557,2026-11-27,Scheduled,Club Olimpia,0,-,Sportivo Luqueño,0,-,-,-,6:00 PM
-401921332,2026-11-27,76',Orense,2,-,Delfín,0,-,-,-,2:00 PM
-401921361,2026-11-27,Scheduled,Manta F.C.,0,-,Deportivo Cuenca,0,-,-,-,4:30 PM
-401930026,2026-11-27,Scheduled,Real Tomayapo,0,-,ABB,0,-,-,-,7:00 PM
-401930037,2026-11-27,Scheduled,Real Oruro,0,-,Independiente Petrolero,0,-,-,-,6:00 PM
-401876813,2026-11-27,Scheduled,Escorpiones Belén,0,-,Herediano,0,-,-,-,9:00 PM
+401933218,2026-11-27,FT,Ciudad de Bolívar,1,-,Atlanta,0,-,-,-,5:00 PM
+401933219,2026-11-27,FT,Colón (Santa Fe),1,-,Deportivo Morón,0,-,-,-,7:00 PM
+401933198,2026-11-27,FT,Gimnasia y Tiro (Salta),1,-,Tristán Suárez,1,-,-,-,7:00 PM
+401841337,2026-11-27,FT,Cruzeiro,1,-,Fluminense,0,-,-,-,6:00 PM
+401912683,2026-11-27,FT,Atlético Goianiense,0,-,Vila Nova,2,-,-,-,6:00 PM
+401936333,2026-11-27,FT-Pens,Racing (Montevideo),2,-,Liverpool,2,-,-,-,6:30 PM
+401936055,2026-11-27,FT,Atlético Bucaramanga,1,-,Deportivo Cali,1,-,-,-,6:35 PM
+401936054,2026-11-27,HT,América de Cali,0,-,Millonarios,0,-,-,-,8:40 PM
+401888643,2026-11-27,FT,Rubio Ñú,1,-,Nacional Asunción,3,-,-,-,3:30 PM
+401888557,2026-11-27,FT,Club Olimpia,2,-,Sportivo Luqueño,1,-,-,-,6:00 PM
+401921332,2026-11-27,FT,Orense,3,-,Delfín,0,-,-,-,2:00 PM
+401921361,2026-11-27,FT,Manta F.C.,0,-,Deportivo Cuenca,3,-,-,-,4:30 PM
+401930026,2026-11-27,40',Real Tomayapo,0,-,ABB,1,-,-,-,9:00 PM
+401930037,2026-11-27,FT,Real Oruro,1,-,Independiente Petrolero,4,-,-,-,6:00 PM
+401876813,2026-11-27,44',Escorpiones Belén,0,-,Herediano,0,-,-,-,9:00 PM
 401925406,2026-11-27,FT,Churchill Brothers,1,-,Inter Kashi,0,-,-,-,9:00 AM
 401932108,2026-11-27,FT,Al Ahli Tripoli,2,-,Azam FC,1,-,-,-,8:00 AM
 401902007,2026-11-27,FT,TS Galaxy FC,0,-,Stellenbosch,1,-,-,-,12:30 PM
-401932676,2026-11-27,71',Michigan,0,-,Duke,1,-,-,-,2:00 PM
-401932664,2026-11-27,71',Villanova,1,-,Texas Tech,1,-,-,-,2:00 PM
-401932665,2026-11-27,HT,Stanford,0,-,Alabama,0,-,-,-,2:30 PM
-401932671,2026-11-27,36',Utah State,0,-,BYU,0,-,-,-,3:00 PM
-401932673,2026-11-27,35',UCLA,0,-,Kansas,1,-,-,-,3:00 PM
-401932663,2026-11-27,33',Houston,0,-,Purdue,0,-,-,-,3:00 PM
-401932667,2026-11-27,29',Florida State,0,-,South Carolina,0,-,-,-,3:00 PM
-401932678,2026-11-27,Scheduled,Clemson,0,-,Colorado,0,-,-,-,5:00 PM
-401932672,2026-11-27,Scheduled,Xavier,0,-,Michigan State,0,-,-,-,6:00 PM
-401932677,2026-11-27,Scheduled,Washington,0,-,North Carolina,0,-,-,-,6:00 PM
-401932670,2026-11-27,Scheduled,Mississippi State,0,-,Notre Dame,0,-,-,-,6:00 PM
-401932674,2026-11-27,Scheduled,Tennessee,0,-,Ohio State,0,-,-,-,6:00 PM
-401932666,2026-11-27,Scheduled,Wisconsin,0,-,Vanderbilt,0,-,-,-,6:00 PM
-401932675,2026-11-27,Scheduled,West Virginia,0,-,Virginia,0,-,-,-,6:00 PM
-401932669,2026-11-27,Scheduled,Saint Louis,0,-,Wake Forest,0,-,-,-,6:00 PM
-401932668,2026-11-27,Scheduled,Virginia Tech,0,-,Baylor,0,-,-,-,8:00 PM
+401932676,2026-11-27,FT,Michigan,0,-,Duke,1,-,-,-,2:00 PM
+401932664,2026-11-27,FT,Villanova,1,-,Texas Tech,2,-,-,-,2:00 PM
+401932665,2026-11-27,FT,Stanford,1,-,Alabama,0,-,-,-,2:30 PM
+401932671,2026-11-27,F/OT,Utah State,1,-,BYU,0,-,-,-,3:00 PM
+401932673,2026-11-27,FT-Pens,UCLA,2,-,Kansas,2,-,-,-,3:00 PM
+401932663,2026-11-27,FT,Houston,1,-,Purdue,3,-,-,-,3:00 PM
+401932667,2026-11-27,FT-Pens,Florida State,1,-,South Carolina,1,-,-,-,3:00 PM
+401932678,2026-11-27,FT,Clemson,1,-,Colorado,2,-,-,-,5:00 PM
+401932672,2026-11-27,FT,Xavier,2,-,Michigan State,6,-,-,-,6:50 PM
+401932677,2026-11-27,FT,Washington,0,-,North Carolina,3,-,-,-,6:00 PM
+401932670,2026-11-27,FT,Mississippi State,0,-,Notre Dame,4,-,-,-,6:00 PM
+401932674,2026-11-27,FT-Pens,Tennessee,2,-,Ohio State,2,-,-,-,6:00 PM
+401932666,2026-11-27,FT,Wisconsin,1,-,Vanderbilt,2,-,-,-,7:00 PM
+401932675,2026-11-27,FT,West Virginia,0,-,Virginia,1,-,-,-,6:00 PM
+401932669,2026-11-27,FT,Saint Louis,1,-,Wake Forest,3,-,-,-,6:00 PM
+401932668,2026-11-27,67',Virginia Tech,1,-,Baylor,1,-,-,-,8:00 PM
 401900871,2026-11-26,FT,Al Diriyah,2,-,Al Faisaly,2,-,-,-,12:30 PM
 401900874,2026-11-26,FT,Al Riyadh,0,-,Al Fateh,1,-,-,-,9:25 AM
 401900443,2026-11-26,FT,Al Shabab,1,-,Abha,0,-,-,-,10:05 AM

@@ -1,7 +1,7 @@
 {
  "date": "2026-11-27",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-27T20:41:07+00:00",
+ "fetchedAt": "2026-11-28T02:43:10+00:00",
  "games": [
   {
    "away": "Miami Heat",
@@ -193,20 +193,20 @@
    "start": "2026-11-28T02:30:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -5.5,
+    "home": -6.5,
     "open": -7.5,
-    "tix_home": 35,
-    "money_home": 33
+    "tix_home": 34,
+    "money_home": 32
    },
    "total": {
-    "now": 226,
+    "now": 227.5,
     "open": 232.5,
-    "tix_over": 86,
-    "money_over": 79
+    "tix_over": 85,
+    "money_over": 82
    },
    "moneyline": {
-    "home": -210,
-    "away": 171
+    "home": -240,
+    "away": 196
    },
    "rlmFavorite": null
   },
