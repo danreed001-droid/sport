@@ -78,10 +78,10 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401880125,2026-11-28,Scheduled,Portsmouth,0,-,Wrexham,0,-,-,-,10:00 AM
 401870041,2026-11-28,Scheduled,Panama,0,-,Canada,0,-,-,-,1:00 PM
 401870042,2026-11-28,Scheduled,Haiti,0,-,Mexico,0,-,-,-,4:30 PM
-401934259,2026-11-28,Scheduled,Albania,0,-,Malawi,0,-,-,-,2:00 AM
-401914355,2026-11-28,Scheduled,Colombia,0,-,Australia,0,-,-,-,3:35 AM
+401934259,2026-11-28,FT,Albania,3,-,Malawi,4,-,-,-,2:00 AM
+401914355,2026-11-28,FT,Colombia,1,-,Australia,3,-,-,-,3:35 AM
 401934357,2026-11-28,Scheduled,South Korea,0,-,Catalunya,0,-,-,-,6:00 AM
-401934222,2026-11-28,Scheduled,Thailand,0,-,China,0,-,-,-,6:35 AM
+401934222,2026-11-28,16',Thailand,0,-,China,0,-,-,-,6:35 AM
 401917868,2026-11-28,Scheduled,Liechtenstein,0,-,San Marino,0,-,-,-,11:30 AM
 401932895,2026-11-28,Scheduled,Chile,0,-,Spain,0,-,-,-,12:00 PM
 401930956,2026-11-28,Scheduled,Philippines,0,-,New Zealand,0,-,-,-,10:00 PM
@@ -118,7 +118,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401931699,2026-11-28,Scheduled,Clachnacuddin,0,-,Stranraer,0,-,-,-,10:00 AM
 401931684,2026-11-28,Scheduled,Alloa Athletic,0,-,Threave Rovers,0,-,-,-,10:00 AM
 401931691,2026-11-28,Scheduled,Raith Rovers,0,-,Troon,0,-,-,-,10:00 AM
-401892132,2026-11-28,Scheduled,Auckland FC,0,-,Central Coast Mariners FC,0,-,-,-,3:40 AM
+401892132,2026-11-28,FT,Auckland FC,3,-,Central Coast Mariners FC,2,-,-,-,3:40 AM
 401885392,2026-11-28,Scheduled,Rio Ave,0,-,Arouca,0,-,-,-,10:30 AM
 401885388,2026-11-28,Scheduled,Santa Clara,0,-,Moreirense,0,-,-,-,10:30 AM
 401885393,2026-11-28,Scheduled,Alverca,0,-,Académico de Viseu,0,-,-,-,1:00 PM
@@ -127,7 +127,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401888368,2026-11-28,Scheduled,Amed SFK,0,-,Gaziantep FK,0,-,-,-,11:00 AM
 401934475,2026-11-28,Scheduled,Club Atlético Morelia,0,-,Club Atlético La Paz,0,-,-,-,10:00 PM
 401936960,2026-11-28,Scheduled,PK-35,0,-,Espoon Palloseura,0,-,-,-,7:15 AM
-401879793,2026-11-28,Scheduled,Akron Tolyatti,0,-,Rubin Kazan,0,-,-,-,6:00 AM
+401879793,2026-11-28,HT,Akron Tolyatti,0,-,Rubin Kazan,2,-,-,-,6:00 AM
 401879794,2026-11-28,Scheduled,Zenit St Petersburg,0,-,CSKA Moscow,0,-,-,-,8:30 AM
 401879797,2026-11-28,Scheduled,Akhmat Grozny,0,-,FC Baltika Kaliningrad,0,-,-,-,11:00 AM
 401878929,2026-11-28,Scheduled,RAAL La Louvière,0,-,KVC Westerlo,0,-,-,-,10:00 AM
@@ -210,7 +210,7 @@ Game_ID,Date,Status,Away_Team,Away_Score,Away_Diff,Home_Team,Home_Score,Home_Dif
 401877539,2026-11-28,FT,Urawa Red Diamonds,0,-,Shimizu S-Pulse,1,-,-,-,12:00 AM
 401877542,2026-11-28,FT,Fagiano Okayama,1,-,Kashima Antlers,1,-,-,-,1:00 AM
 401877516,2026-11-28,FT,JEF United Ichihara-Chiba,1,-,Vissel Kobe,3,-,-,-,1:00 AM
-401877525,2026-11-28,67',Sanfrecce Hiroshima,1,-,Kashiwa Reysol,3,-,-,-,2:00 AM
+401877525,2026-11-28,FT,Sanfrecce Hiroshima,1,-,Kashiwa Reysol,3,-,-,-,2:00 AM
 401926704,2026-11-28,Scheduled,Platense,0,-,CA Independiente Siguatepeque,0,-,-,-,8:00 PM
 401926721,2026-11-28,Scheduled,Real España,0,-,CD Choloma,0,-,-,-,8:00 PM
 401926705,2026-11-28,Scheduled,Génesis PN,0,-,Club Deportivo Marathón,0,-,-,-,8:00 PM

@@ -1,7 +1,7 @@
 {
  "date": "2026-11-28",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-28T08:27:45+00:00",
+ "fetchedAt": "2026-11-28T11:50:32+00:00",
  "games": [
   {
    "away": "Orlando Magic",
@@ -11,14 +11,14 @@
    "spread": {
     "home": 3.5,
     "open": 3.5,
-    "tix_home": 65,
-    "money_home": 45
+    "tix_home": 64,
+    "money_home": 60
    },
    "total": {
     "now": 219.5,
     "open": 217.5,
-    "tix_over": 55,
-    "money_over": 63
+    "tix_over": 60,
+    "money_over": 64
    },
    "moneyline": {
     "home": 140,
@@ -34,14 +34,14 @@
    "spread": {
     "home": -6,
     "open": -6,
-    "tix_home": 59,
-    "money_home": 69
+    "tix_home": 54,
+    "money_home": 63
    },
    "total": {
     "now": 213.5,
     "open": 213.5,
-    "tix_over": 70,
-    "money_over": 79
+    "tix_over": 74,
+    "money_over": 81
    },
    "moneyline": {
     "home": -238,
@@ -57,18 +57,18 @@
    "spread": {
     "home": 11.5,
     "open": 11.5,
-    "tix_home": 56,
-    "money_home": 46
+    "tix_home": 57,
+    "money_home": 47
    },
    "total": {
     "now": 228.5,
     "open": 228.5,
-    "tix_over": 39,
-    "money_over": 41
+    "tix_over": 50,
+    "money_over": 44
    },
    "moneyline": {
-    "home": 425,
-    "away": -590
+    "home": 420,
+    "away": -561
    },
    "rlmFavorite": null
   },
@@ -80,14 +80,14 @@
    "spread": {
     "home": -2.5,
     "open": -2.5,
-    "tix_home": 68,
-    "money_home": 47
+    "tix_home": 69,
+    "money_home": 58
    },
    "total": {
-    "now": 234.5,
+    "now": 234,
     "open": 236.5,
-    "tix_over": 38,
-    "money_over": 41
+    "tix_over": 48,
+    "money_over": 32
    },
    "moneyline": {
     "home": -144,
@@ -103,14 +103,14 @@
    "spread": {
     "home": -12.5,
     "open": -12.5,
-    "tix_home": 15,
-    "money_home": 18
+    "tix_home": 26,
+    "money_home": 32
    },
    "total": {
     "now": 219.5,
     "open": 220.5,
-    "tix_over": 67,
-    "money_over": 57
+    "tix_over": 75,
+    "money_over": 75
    },
    "moneyline": {
     "home": -525,

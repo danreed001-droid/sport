@@ -150,11 +150,11 @@
           ]
         },
         "public": {
-          "betsHome": 65,
-          "moneyHome": 45,
+          "betsHome": 64,
+          "moneyHome": 60,
           "rlm": null
         },
-        "checked": "2026-11-28T08:29:13+00:00"
+        "checked": "2026-11-28T11:51:20+00:00"
       },
       "gameTotal": 220.5,
       "gameTotalOverOdds": -105,
@@ -434,11 +434,11 @@
           ]
         },
         "public": {
-          "betsHome": 59,
-          "moneyHome": 69,
+          "betsHome": 54,
+          "moneyHome": 63,
           "rlm": null
         },
-        "checked": "2026-11-28T08:29:13+00:00"
+        "checked": "2026-11-28T11:51:20+00:00"
       },
       "gameTotal": 213.5,
       "gameTotalOverOdds": -110,
@@ -847,15 +847,15 @@
           ]
         },
         "public": {
-          "betsHome": 68,
-          "moneyHome": 47,
+          "betsHome": 69,
+          "moneyHome": 58,
           "rlm": null
         },
-        "checked": "2026-11-28T08:29:13+00:00"
+        "checked": "2026-11-28T11:51:20+00:00"
       },
       "gameTotal": 234.5,
-      "gameTotalOverOdds": -115,
-      "gameTotalUnderOdds": -106
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910049",
@@ -1081,11 +1081,11 @@
           ]
         },
         "public": {
-          "betsHome": 56,
-          "moneyHome": 46,
+          "betsHome": 57,
+          "moneyHome": 47,
           "rlm": null
         },
-        "checked": "2026-11-28T08:29:13+00:00"
+        "checked": "2026-11-28T11:51:20+00:00"
       },
       "gameTotal": 228.5,
       "gameTotalOverOdds": -110,
@@ -1111,7 +1111,7 @@
         "homeMoneyline": -518,
         "awayMoneyline": 394
       },
-      "totalsLine": 219.5,
+      "totalsLine": 220.5,
       "storylines": [
         {
           "weight": 1,
@@ -1129,13 +1129,13 @@
         },
         {
           "weight": 1,
-          "live": "15-21",
+          "live": "16-23",
           "key": "lockdown",
           "name": "Lockdown at home",
           "team": "Houston Rockets",
           "says": "back",
-          "fact": "Houston Rockets held Phoenix Suns to 104 and LA Clippers to 104, 9.1 under the league's 113.1 a game, and is at home.",
-          "record": "806-692",
+          "fact": "Houston Rockets held Phoenix Suns to 104 and LA Clippers to 104, 9.0 under the league's 113.0 a game, and is at home.",
+          "record": "807-694",
           "pct": 53.8,
           "leans": "Houston Rockets",
           "leanPct": 53.8,
@@ -1419,7 +1419,7 @@
         ],
         "total": [
           220.5,
-          219.5
+          220.5
         ],
         "ml": {
           "home": [
@@ -1432,15 +1432,15 @@
           ]
         },
         "public": {
-          "betsHome": 15,
-          "moneyHome": 18,
+          "betsHome": 26,
+          "moneyHome": 32,
           "rlm": null
         },
-        "checked": "2026-11-28T08:29:13+00:00"
+        "checked": "2026-11-28T11:51:20+00:00"
       },
-      "gameTotal": 219.5,
-      "gameTotalOverOdds": -114,
-      "gameTotalUnderOdds": -106
+      "gameTotal": 220.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     }
   ]
 }
