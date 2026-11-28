@@ -1,0 +1,1431 @@
+{
+  "date": "2026-11-28",
+  "weekday": "Saturday",
+  "sport": "nba",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-28T07:02:05Z",
+  "games": [
+    {
+      "espnId": "401910046",
+      "away": "Orlando Magic",
+      "home": "Washington Wizards",
+      "time": "5:00 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 142.0,
+      "awayMoneyline": -169.0,
+      "statsSpread": 3.5,
+      "statsLine": {
+        "homeSpread": 3.5,
+        "awaySpread": -3.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 142,
+        "awayMoneyline": -169
+      },
+      "totalsLine": 219.5,
+      "injuries": {
+        "away": {
+          "4397204": "out",
+          "4397140": "out",
+          "4712849": "day-to-day",
+          "4065654": "out",
+          "5107251": "out"
+        },
+        "home": {
+          "4997537": "out",
+          "4432187": "out",
+          "4432907": "out",
+          "4606840": "out"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-28T07:02:09+00:00",
+        "line": {
+          "open": 3.5,
+          "now": 3.5
+        },
+        "away": [
+          {
+            "player": "Anthony Black",
+            "pos": "PG",
+            "status": "Day-To-Day",
+            "out": false,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              14,
+              32.9,
+              15.3,
+              5.0,
+              5.1,
+              1.9
+            ],
+            "gainers": [
+              {
+                "player": "Jalen Suggs",
+                "pos": "PG",
+                "with": [
+                  7,
+                  28.0,
+                  8.3,
+                  5.0,
+                  3.7,
+                  1.4
+                ],
+                "without": [
+                  2,
+                  33.0,
+                  10.0,
+                  4.5,
+                  5.5,
+                  0.5
+                ]
+              },
+              {
+                "player": "Jevon Carter",
+                "pos": "SG",
+                "with": [
+                  11,
+                  14.5,
+                  5.0,
+                  1.1,
+                  1.4,
+                  1.5
+                ],
+                "without": [
+                  2,
+                  15.5,
+                  2.5,
+                  1.0,
+                  2.5,
+                  0.5
+                ]
+              },
+              {
+                "player": "Jase Richardson",
+                "pos": "SG",
+                "with": [
+                  10,
+                  18.8,
+                  5.0,
+                  1.8,
+                  1.7,
+                  0.7
+                ],
+                "without": [
+                  3,
+                  19.0,
+                  5.7,
+                  1.3,
+                  3.7,
+                  0.3
+                ]
+              }
+            ]
+          }
+        ],
+        "home": []
+      },
+      "lineMove": {
+        "spread": [
+          3.5,
+          3.5
+        ],
+        "total": [
+          218.5,
+          219.5
+        ],
+        "ml": {
+          "home": [
+            137.0,
+            142.0
+          ],
+          "away": [
+            -163.0,
+            -169.0
+          ]
+        },
+        "public": {
+          "betsHome": 64,
+          "moneyHome": 65,
+          "rlm": null
+        },
+        "checked": "2026-11-28T07:02:09+00:00"
+      }
+    },
+    {
+      "espnId": "401910047",
+      "away": "Brooklyn Nets",
+      "home": "Charlotte Hornets",
+      "time": "6:00 PM ET",
+      "homeSpread": -5.5,
+      "awaySpread": 5.5,
+      "homeSpreadOdds": -119.0,
+      "awaySpreadOdds": -102.0,
+      "homeMoneyline": -224.0,
+      "awayMoneyline": 186.0,
+      "statsSpread": -5.5,
+      "statsLine": {
+        "homeSpread": -5.5,
+        "awaySpread": 5.5,
+        "homeSpreadOdds": -119,
+        "awaySpreadOdds": -102,
+        "homeMoneyline": -224,
+        "awayMoneyline": 186
+      },
+      "statsFavors": "Brooklyn Nets",
+      "statsRules": [
+        {
+          "rule": 61,
+          "name": "Fade a team at .250 or worse (8+ games) that used 8 or fewer players for 10+ minutes in its last game (on trial)",
+          "backtest": "61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22",
+          "detail": "Fading Charlotte Hornets: 4-13 on the season and only 8 players played 10+ minutes in its last game (vs Chicago Bulls) -- 61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22."
+        }
+      ],
+      "statsCheck": "Rule 61: Fading Charlotte Hornets: 4-13 on the season and only 8 players played 10+ minutes in its last game (vs Chicago Bulls) -- 61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22.",
+      "totalsLine": 213.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "7-5",
+          "key": "emperor",
+          "name": "The emperor's new clothes",
+          "team": "Charlotte Hornets",
+          "says": "fade",
+          "fact": "Charlotte Hornets is a -5.5 favorite but has covered 6 of 17 this season.",
+          "record": "183-157",
+          "pct": 53.8,
+          "leans": "Brooklyn Nets",
+          "leanPct": 53.8,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "3-0",
+          "key": "home_fresh",
+          "name": "Fresh legs at home",
+          "team": "Charlotte Hornets",
+          "says": "back",
+          "fact": "Charlotte Hornets is at home on 3 days' rest; Brooklyn Nets played last night (2026-11-27).",
+          "record": "120-82",
+          "pct": 59.4,
+          "leans": "Charlotte Hornets",
+          "leanPct": 59.4,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "14-18",
+          "key": "schedule_loss",
+          "name": "The schedule loss",
+          "team": "Brooklyn Nets",
+          "says": "fade",
+          "fact": "Brooklyn Nets' 4th game in 6 nights, on the road; Charlotte Hornets has had 2 days off.",
+          "record": "876-778",
+          "pct": 53.0,
+          "leans": "Charlotte Hornets",
+          "leanPct": 53.0,
+          "against": false
+        }
+      ],
+      "injuries": {
+        "away": {
+          "3150844": "out",
+          "5279130": "out"
+        },
+        "home": {
+          "3135045": "out",
+          "4576060": "day-to-day",
+          "3032979": "out",
+          "5061575": "out"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-28T07:02:09+00:00",
+        "line": {
+          "open": -5.5,
+          "now": -5.5
+        },
+        "away": [
+          {
+            "player": "Nolan Traore",
+            "pos": "SG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 3,
+            "avg": [
+              14,
+              22.3,
+              12.9,
+              1.6,
+              2.7,
+              1.5
+            ],
+            "gainers": [
+              {
+                "player": "Ben Saraf",
+                "pos": "PG",
+                "with": [
+                  1,
+                  4.0,
+                  2.0,
+                  1.0,
+                  0.0,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  9.0,
+                  4.0,
+                  2.0,
+                  2.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Mikel Brown Jr.",
+                "pos": "PG",
+                "with": [
+                  11,
+                  22.9,
+                  12.0,
+                  1.7,
+                  3.5,
+                  2.0
+                ],
+                "without": [
+                  3,
+                  25.7,
+                  14.7,
+                  3.0,
+                  3.7,
+                  2.7
+                ]
+              },
+              {
+                "player": "Keon Ellis",
+                "pos": "SG",
+                "with": [
+                  13,
+                  18.7,
+                  3.8,
+                  1.5,
+                  1.5,
+                  0.8
+                ],
+                "without": [
+                  4,
+                  20.5,
+                  6.0,
+                  1.8,
+                  1.8,
+                  1.2
+                ]
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "player": "Dennis Schroder",
+            "pos": "PG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 8,
+            "avg": [
+              9,
+              30.0,
+              10.2,
+              3.6,
+              4.9,
+              0.8
+            ],
+            "gainers": [
+              {
+                "player": "Christian Anderson",
+                "pos": "SG",
+                "with": [
+                  8,
+                  10.4,
+                  2.6,
+                  1.5,
+                  1.4,
+                  0.2
+                ],
+                "without": [
+                  8,
+                  20.6,
+                  11.4,
+                  1.5,
+                  2.9,
+                  2.5
+                ]
+              },
+              {
+                "player": "Coby White",
+                "pos": "PG",
+                "with": [
+                  2,
+                  17.0,
+                  5.5,
+                  2.5,
+                  2.5,
+                  0.5
+                ],
+                "without": [
+                  8,
+                  22.6,
+                  15.1,
+                  2.6,
+                  4.4,
+                  1.5
+                ]
+              },
+              {
+                "player": "Sion James",
+                "pos": "SG",
+                "with": [
+                  9,
+                  25.3,
+                  5.2,
+                  3.0,
+                  2.8,
+                  0.9
+                ],
+                "without": [
+                  8,
+                  29.6,
+                  6.2,
+                  4.9,
+                  3.2,
+                  1.2
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "lineMove": {
+        "spread": [
+          -5.5,
+          -5.5
+        ],
+        "total": [
+          213.5,
+          213.5
+        ],
+        "ml": {
+          "home": [
+            -224.0,
+            -224.0
+          ],
+          "away": [
+            186.0,
+            186.0
+          ]
+        },
+        "public": {
+          "betsHome": 61,
+          "moneyHome": 74,
+          "rlm": null
+        },
+        "checked": "2026-11-28T07:02:09+00:00"
+      }
+    },
+    {
+      "espnId": "401910048",
+      "away": "Indiana Pacers",
+      "home": "Chicago Bulls",
+      "time": "8:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -115.0,
+      "awaySpreadOdds": -105.0,
+      "homeMoneyline": -141.0,
+      "awayMoneyline": 119.0,
+      "statsSpread": -2.5,
+      "statsLine": {
+        "homeSpread": -2.5,
+        "awaySpread": 2.5,
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -141,
+        "awayMoneyline": 119
+      },
+      "statsFavors": "Chicago Bulls",
+      "statsRules": [
+        {
+          "rule": 54,
+          "name": "Back a home team that covered its last two games, in its first 20 games of the season, with at least a day off (on trial)",
+          "backtest": "62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38",
+          "detail": "Backing Chicago Bulls: covered its last two games (by 6.5 at Charlotte Hornets and by 22.5 vs Cleveland Cavaliers), now at home in game 19 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38."
+        }
+      ],
+      "statsCheck": "Rule 54: Backing Chicago Bulls: covered its last two games (by 6.5 at Charlotte Hornets and by 22.5 vs Cleveland Cavaliers), now at home in game 19 of its season -- 62.1% ATS, 172-105 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 61-29; 2024-now 52-38.",
+      "totalsLine": 234.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-0",
+          "key": "home_fresh",
+          "name": "Fresh legs at home",
+          "team": "Chicago Bulls",
+          "says": "back",
+          "fact": "Chicago Bulls is at home on 3 days' rest; Indiana Pacers played last night (2026-11-27).",
+          "record": "120-82",
+          "pct": 59.4,
+          "leans": "Chicago Bulls",
+          "leanPct": 59.4,
+          "against": false
+        }
+      ],
+      "injuries": {
+        "away": {
+          "2530530": "out",
+          "4396993": "out",
+          "4433076": "out"
+        },
+        "home": {
+          "2595516": "out",
+          "5242496": "day-to-day",
+          "4397189": "day-to-day",
+          "5095151": "out"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-28T07:02:09+00:00",
+        "line": {
+          "open": -2.5,
+          "now": -2.5
+        },
+        "away": [
+          {
+            "player": "Tyrese Haliburton",
+            "pos": "PG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 15,
+            "avg": [
+              4,
+              33.0,
+              21.8,
+              4.5,
+              9.5,
+              2.5
+            ],
+            "gainers": [
+              {
+                "player": "Kobe Brown",
+                "pos": "SG",
+                "with": [
+                  1,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "without": [
+                  7,
+                  13.1,
+                  4.6,
+                  2.0,
+                  1.0,
+                  0.4
+                ]
+              },
+              {
+                "player": "Aaron Nesmith",
+                "pos": "SG",
+                "with": [
+                  3,
+                  20.0,
+                  11.7,
+                  1.7,
+                  1.3,
+                  2.0
+                ],
+                "without": [
+                  13,
+                  28.8,
+                  10.1,
+                  3.6,
+                  2.3,
+                  1.1
+                ]
+              },
+              {
+                "player": "Quenton Jackson",
+                "pos": "SG",
+                "with": [
+                  4,
+                  19.5,
+                  5.8,
+                  2.0,
+                  2.5,
+                  0.2
+                ],
+                "without": [
+                  15,
+                  22.1,
+                  9.8,
+                  3.8,
+                  2.8,
+                  1.3
+                ]
+              }
+            ]
+          }
+        ],
+        "home": [
+          {
+            "player": "Caleb Wilson",
+            "pos": "PF",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 8,
+            "avg": [
+              10,
+              30.7,
+              18.9,
+              6.2,
+              1.9,
+              2.3
+            ],
+            "gainers": [
+              {
+                "player": "Isaac Okoro",
+                "pos": "SF",
+                "with": [
+                  10,
+                  19.1,
+                  5.2,
+                  1.4,
+                  1.4,
+                  0.3
+                ],
+                "without": [
+                  8,
+                  32.2,
+                  11.4,
+                  4.2,
+                  2.2,
+                  2.0
+                ]
+              },
+              {
+                "player": "Zach Collins",
+                "pos": "PF",
+                "with": [
+                  7,
+                  7.9,
+                  1.6,
+                  2.3,
+                  0.7,
+                  0.0
+                ],
+                "without": [
+                  5,
+                  18.0,
+                  5.6,
+                  2.8,
+                  2.0,
+                  0.8
+                ]
+              },
+              {
+                "player": "Nic Claxton",
+                "pos": "C",
+                "with": [
+                  2,
+                  17.0,
+                  10.5,
+                  5.0,
+                  2.5,
+                  0.0
+                ],
+                "without": [
+                  6,
+                  23.7,
+                  8.5,
+                  4.5,
+                  0.8,
+                  0.0
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Norman Powell",
+            "pos": "SG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 3,
+            "avg": [
+              13,
+              29.5,
+              20.8,
+              2.8,
+              2.4,
+              2.3
+            ],
+            "gainers": [
+              {
+                "player": "Buddy Hield",
+                "pos": "SG",
+                "with": [
+                  13,
+                  16.2,
+                  8.1,
+                  2.3,
+                  1.7,
+                  1.8
+                ],
+                "without": [
+                  3,
+                  31.3,
+                  19.7,
+                  5.3,
+                  3.3,
+                  4.7
+                ]
+              },
+              {
+                "player": "Jordan Hawkins",
+                "pos": "SG",
+                "with": [
+                  5,
+                  5.2,
+                  1.6,
+                  0.4,
+                  0.2,
+                  0.0
+                ],
+                "without": [
+                  5,
+                  18.8,
+                  10.2,
+                  1.8,
+                  1.6,
+                  2.2
+                ]
+              },
+              {
+                "player": "Isaac Okoro",
+                "pos": "SF",
+                "with": [
+                  13,
+                  23.2,
+                  7.5,
+                  2.8,
+                  1.7,
+                  1.0
+                ],
+                "without": [
+                  5,
+                  29.6,
+                  9.0,
+                  2.4,
+                  2.0,
+                  1.2
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Jalen Smith",
+            "pos": "SF",
+            "status": "Day-To-Day",
+            "out": false,
+            "lastGame": false,
+            "missed": 1,
+            "avg": [
+              15,
+              25.3,
+              14.1,
+              7.5,
+              2.2,
+              2.1
+            ],
+            "gainers": [
+              {
+                "player": "Zach Collins",
+                "pos": "PF",
+                "with": [
+                  9,
+                  9.2,
+                  2.1,
+                  2.1,
+                  0.6,
+                  0.2
+                ],
+                "without": [
+                  3,
+                  20.7,
+                  6.7,
+                  3.7,
+                  3.3,
+                  0.7
+                ]
+              },
+              {
+                "player": "Jordan Hawkins",
+                "pos": "SG",
+                "with": [
+                  9,
+                  11.0,
+                  5.4,
+                  0.9,
+                  0.8,
+                  0.9
+                ],
+                "without": [
+                  1,
+                  21.0,
+                  10.0,
+                  3.0,
+                  2.0,
+                  3.0
+                ]
+              },
+              {
+                "player": "Isaac Okoro",
+                "pos": "SF",
+                "with": [
+                  15,
+                  23.9,
+                  7.7,
+                  2.1,
+                  1.8,
+                  1.1
+                ],
+                "without": [
+                  3,
+                  30.3,
+                  9.3,
+                  5.7,
+                  1.7,
+                  0.7
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "lineMove": {
+        "spread": [
+          -2.5,
+          -2.5
+        ],
+        "total": [
+          236.5,
+          234.5
+        ],
+        "ml": {
+          "home": [
+            -141.0,
+            -141.0
+          ],
+          "away": [
+            119.0,
+            119.0
+          ]
+        },
+        "public": {
+          "betsHome": 69,
+          "moneyHome": 47,
+          "rlm": null
+        },
+        "checked": "2026-11-28T07:02:09+00:00"
+      }
+    },
+    {
+      "espnId": "401910049",
+      "away": "Oklahoma City Thunder",
+      "home": "Milwaukee Bucks",
+      "time": "8:00 PM ET",
+      "homeSpread": 11.5,
+      "awaySpread": -11.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": 420.0,
+      "awayMoneyline": -561.0,
+      "statsSpread": 11.5,
+      "statsLine": {
+        "homeSpread": 11.5,
+        "awaySpread": -11.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": 420,
+        "awayMoneyline": -561
+      },
+      "statsFavors": "Oklahoma City Thunder",
+      "statsRules": [
+        {
+          "rule": 49,
+          "name": "Fade a 7+ point underdog on a back-to-back that used 8 or fewer players (10+ min) last game (on trial)",
+          "backtest": "69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13",
+          "detail": "Fading Milwaukee Bucks: only 8 players played 10+ minutes in last night's game (vs Detroit Pistons), now a +11.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13."
+        },
+        {
+          "rule": 61,
+          "name": "Fade a team at .250 or worse (8+ games) that used 8 or fewer players for 10+ minutes in its last game (on trial)",
+          "backtest": "61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22",
+          "detail": "Fading Milwaukee Bucks: 2-18 on the season and only 8 players played 10+ minutes in its last game (vs Detroit Pistons) -- 61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22."
+        }
+      ],
+      "statsCheck": "Rule 49: Fading Milwaukee Bucks: only 8 players played 10+ minutes in last night's game (vs Detroit Pistons), now a +11.5 underdog on the second night of a back-to-back -- 69.5% ATS, 82-36 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 20-7; 2024-now 28-13. Rule 61: Fading Milwaukee Bucks: 2-18 on the season and only 8 players played 10+ minutes in its last game (vs Detroit Pistons) -- 61.1% ATS, 118-75 (2018-19 and 2021-22 to now); unseen 2018-19 + 2021-22: 33-21; 2024-now 42-22.",
+      "totalsLine": 228.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "1-4",
+          "key": "road_fresh_fav",
+          "name": "Rested road favorite",
+          "team": "Oklahoma City Thunder",
+          "says": "back",
+          "fact": "Oklahoma City Thunder is a -11.5 road favorite on 3 days' rest; Milwaukee Bucks played last night (2026-11-27).",
+          "record": "48-36",
+          "pct": 57.1,
+          "leans": "Oklahoma City Thunder",
+          "leanPct": 57.1,
+          "against": false
+        }
+      ],
+      "injuries": {
+        "away": {
+          "5159925": "out",
+          "5174983": "out",
+          "4432823": "out",
+          "4593803": "out",
+          "5061603": "out"
+        },
+        "home": {
+          "5214640": "out"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-28T07:02:09+00:00",
+        "line": {
+          "open": 11.5,
+          "now": 11.5
+        },
+        "away": [
+          {
+            "player": "Jalen Williams",
+            "pos": "SG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 16,
+            "avg": [
+              3,
+              31.7,
+              13.7,
+              4.7,
+              3.3,
+              1.0
+            ],
+            "gainers": [
+              {
+                "player": "Kenrich Williams",
+                "pos": "SG",
+                "with": [
+                  3,
+                  6.7,
+                  3.0,
+                  1.3,
+                  0.3,
+                  1.0
+                ],
+                "without": [
+                  16,
+                  24.4,
+                  9.5,
+                  4.5,
+                  1.8,
+                  1.6
+                ]
+              },
+              {
+                "player": "Bennett Stirtz",
+                "pos": "SG",
+                "with": [
+                  3,
+                  4.7,
+                  0.7,
+                  0.3,
+                  0.0,
+                  0.0
+                ],
+                "without": [
+                  16,
+                  22.2,
+                  9.6,
+                  1.9,
+                  1.9,
+                  2.1
+                ]
+              },
+              {
+                "player": "Jared McCain",
+                "pos": "SG",
+                "with": [
+                  3,
+                  20.3,
+                  9.0,
+                  1.0,
+                  1.0,
+                  2.3
+                ],
+                "without": [
+                  16,
+                  29.4,
+                  14.9,
+                  3.7,
+                  1.8,
+                  2.2
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Aday Mara",
+            "pos": "C",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 3,
+            "avg": [
+              16,
+              22.4,
+              10.0,
+              7.1,
+              1.9,
+              0.1
+            ],
+            "gainers": [
+              {
+                "player": "Isaiah Hartenstein",
+                "pos": "C",
+                "with": [
+                  16,
+                  25.2,
+                  8.2,
+                  10.8,
+                  3.9,
+                  0.0
+                ],
+                "without": [
+                  3,
+                  28.0,
+                  9.3,
+                  11.0,
+                  4.3,
+                  0.0
+                ]
+              },
+              {
+                "player": "Chet Holmgren",
+                "pos": "C",
+                "with": [
+                  3,
+                  30.0,
+                  12.0,
+                  9.3,
+                  1.3,
+                  0.7
+                ],
+                "without": null
+              }
+            ]
+          }
+        ],
+        "home": []
+      },
+      "lineMove": {
+        "spread": [
+          11.5,
+          11.5
+        ],
+        "total": [
+          228.5,
+          228.5
+        ],
+        "ml": {
+          "home": [
+            395.0,
+            420.0
+          ],
+          "away": [
+            -521.0,
+            -561.0
+          ]
+        },
+        "public": {
+          "betsHome": 56,
+          "moneyHome": 49,
+          "rlm": null
+        },
+        "checked": "2026-11-28T07:02:09+00:00"
+      }
+    },
+    {
+      "espnId": "401910050",
+      "away": "Philadelphia 76ers",
+      "home": "Houston Rockets",
+      "time": "8:30 PM ET",
+      "homeSpread": -12.5,
+      "awaySpread": 12.5,
+      "homeSpreadOdds": -110.0,
+      "awaySpreadOdds": -110.0,
+      "homeMoneyline": -521.0,
+      "awayMoneyline": 396.0,
+      "statsSpread": -12.5,
+      "statsLine": {
+        "homeSpread": -12.5,
+        "awaySpread": 12.5,
+        "homeSpreadOdds": -110,
+        "awaySpreadOdds": -110,
+        "homeMoneyline": -521,
+        "awayMoneyline": 396
+      },
+      "totalsLine": 219.5,
+      "storylines": [
+        {
+          "weight": 1,
+          "live": "3-0",
+          "key": "home_fresh",
+          "name": "Fresh legs at home",
+          "team": "Houston Rockets",
+          "says": "back",
+          "fact": "Houston Rockets is at home on 3 days' rest; Philadelphia 76ers played last night (2026-11-27).",
+          "record": "120-82",
+          "pct": 59.4,
+          "leans": "Houston Rockets",
+          "leanPct": 59.4,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "15-21",
+          "key": "lockdown",
+          "name": "Lockdown at home",
+          "team": "Houston Rockets",
+          "says": "back",
+          "fact": "Houston Rockets held Phoenix Suns to 104 and LA Clippers to 104, 9.1 under the league's 113.1 a game, and is at home.",
+          "record": "806-692",
+          "pct": 53.8,
+          "leans": "Houston Rockets",
+          "leanPct": 53.8,
+          "against": false
+        },
+        {
+          "weight": 1,
+          "live": "14-18",
+          "key": "schedule_loss",
+          "name": "The schedule loss",
+          "team": "Philadelphia 76ers",
+          "says": "fade",
+          "fact": "Philadelphia 76ers' 4th game in 6 nights, on the road; Houston Rockets has had 2 days off.",
+          "record": "876-778",
+          "pct": 53.0,
+          "leans": "Houston Rockets",
+          "leanPct": 53.0,
+          "against": false
+        }
+      ],
+      "injuries": {
+        "away": {
+          "3059318": "out",
+          "1966": "out",
+          "3912848": "out",
+          "3917376": "out",
+          "4871141": "out"
+        },
+        "home": {
+          "2991235": "day-to-day"
+        }
+      },
+      "starterOut": {
+        "checked": "2026-11-28T07:02:09+00:00",
+        "line": {
+          "open": -11.5,
+          "now": -12.5
+        },
+        "away": [
+          {
+            "player": "LeBron James",
+            "pos": "PF",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              16,
+              32.2,
+              17.4,
+              6.9,
+              6.8,
+              1.3
+            ],
+            "gainers": [
+              {
+                "player": "Adem Bona",
+                "pos": "C",
+                "with": [
+                  10,
+                  12.8,
+                  2.1,
+                  4.0,
+                  0.3,
+                  0.0
+                ],
+                "without": [
+                  2,
+                  16.0,
+                  1.0,
+                  3.0,
+                  2.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Jabari Walker",
+                "pos": "SF",
+                "with": [
+                  12,
+                  14.8,
+                  5.7,
+                  4.2,
+                  1.2,
+                  0.6
+                ],
+                "without": [
+                  4,
+                  15.8,
+                  9.8,
+                  5.5,
+                  0.8,
+                  0.8
+                ]
+              },
+              {
+                "player": "Justin Edwards",
+                "pos": "SF",
+                "with": [
+                  6,
+                  5.8,
+                  2.5,
+                  0.8,
+                  0.0,
+                  0.5
+                ],
+                "without": [
+                  3,
+                  1.3,
+                  0.0,
+                  0.7,
+                  0.0,
+                  0.0
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Joel Embiid",
+            "pos": "C",
+            "status": "Out",
+            "out": true,
+            "lastGame": true,
+            "missed": 0,
+            "avg": [
+              15,
+              31.7,
+              20.0,
+              9.1,
+              4.1,
+              0.5
+            ],
+            "gainers": [
+              {
+                "player": "Adem Bona",
+                "pos": "C",
+                "with": [
+                  8,
+                  11.9,
+                  1.4,
+                  2.5,
+                  0.4,
+                  0.0
+                ],
+                "without": [
+                  4,
+                  16.2,
+                  3.0,
+                  6.5,
+                  1.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Dominick Barlow",
+                "pos": "PF",
+                "with": [
+                  2,
+                  14.5,
+                  12.0,
+                  6.0,
+                  1.0,
+                  0.5
+                ],
+                "without": [
+                  2,
+                  16.0,
+                  7.5,
+                  5.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "player": "Tacko Fall",
+                "pos": "C",
+                "with": [
+                  4,
+                  4.5,
+                  1.5,
+                  1.2,
+                  0.0,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  5.0,
+                  0.0,
+                  3.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ]
+          },
+          {
+            "player": "Jaylen Brown",
+            "pos": "SG",
+            "status": "Out",
+            "out": true,
+            "lastGame": false,
+            "missed": 1,
+            "avg": [
+              16,
+              33.2,
+              21.4,
+              6.0,
+              3.4,
+              1.8
+            ],
+            "gainers": [
+              {
+                "player": "Anfernee Simons",
+                "pos": "SG",
+                "with": [
+                  16,
+                  20.3,
+                  8.9,
+                  1.8,
+                  1.1,
+                  1.9
+                ],
+                "without": [
+                  4,
+                  30.0,
+                  19.0,
+                  1.5,
+                  1.8,
+                  4.2
+                ]
+              },
+              {
+                "player": "Justin Edwards",
+                "pos": "SF",
+                "with": [
+                  7,
+                  2.7,
+                  1.4,
+                  0.7,
+                  0.0,
+                  0.3
+                ],
+                "without": [
+                  2,
+                  10.0,
+                  2.5,
+                  1.0,
+                  0.0,
+                  0.5
+                ]
+              },
+              {
+                "player": "Caleb Love",
+                "pos": "SG",
+                "with": [
+                  2,
+                  1.0,
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                "without": [
+                  1,
+                  6.0,
+                  3.0,
+                  1.0,
+                  1.0,
+                  1.0
+                ]
+              }
+            ]
+          }
+        ],
+        "home": []
+      },
+      "lineMove": {
+        "spread": [
+          -11.5,
+          -12.5
+        ],
+        "total": [
+          220.5,
+          219.5
+        ],
+        "ml": {
+          "home": [
+            -486.0,
+            -521.0
+          ],
+          "away": [
+            373.0,
+            396.0
+          ]
+        },
+        "public": {
+          "betsHome": 13,
+          "moneyHome": 21,
+          "rlm": null
+        },
+        "checked": "2026-11-28T07:02:09+00:00"
+      }
+    }
+  ]
+}
