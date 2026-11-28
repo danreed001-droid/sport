@@ -1,7 +1,7 @@
 {
  "date": "2026-11-28",
  "source": "Action Network public feed (consensus = book 15, opener = book 30)",
- "fetchedAt": "2026-11-28T07:02:03+00:00",
+ "fetchedAt": "2026-11-28T08:27:45+00:00",
  "games": [
   {
    "away": "Orlando Magic",
@@ -11,17 +11,17 @@
    "spread": {
     "home": 3.5,
     "open": 3.5,
-    "tix_home": 64,
-    "money_home": 65
+    "tix_home": 65,
+    "money_home": 45
    },
    "total": {
     "now": 219.5,
     "open": 217.5,
-    "tix_over": 54,
-    "money_over": 62
+    "tix_over": 55,
+    "money_over": 63
    },
    "moneyline": {
-    "home": 142,
+    "home": 140,
     "away": -170
    },
    "rlmFavorite": null
@@ -32,20 +32,20 @@
    "start": "2026-11-28T23:00:00.000Z",
    "state": "scheduled",
    "spread": {
-    "home": -5.5,
+    "home": -6,
     "open": -6,
-    "tix_home": 61,
-    "money_home": 74
+    "tix_home": 59,
+    "money_home": 69
    },
    "total": {
     "now": 213.5,
     "open": 213.5,
-    "tix_over": 72,
-    "money_over": 83
+    "tix_over": 70,
+    "money_over": 79
    },
    "moneyline": {
-    "home": -235,
-    "away": 195
+    "home": -238,
+    "away": 197
    },
    "rlmFavorite": null
   },
@@ -58,16 +58,16 @@
     "home": 11.5,
     "open": 11.5,
     "tix_home": 56,
-    "money_home": 49
+    "money_home": 46
    },
    "total": {
     "now": 228.5,
     "open": 228.5,
-    "tix_over": 37,
-    "money_over": 40
+    "tix_over": 39,
+    "money_over": 41
    },
    "moneyline": {
-    "home": 440,
+    "home": 425,
     "away": -590
    },
    "rlmFavorite": null
@@ -80,14 +80,14 @@
    "spread": {
     "home": -2.5,
     "open": -2.5,
-    "tix_home": 69,
+    "tix_home": 68,
     "money_home": 47
    },
    "total": {
     "now": 234.5,
     "open": 236.5,
-    "tix_over": 35,
-    "money_over": 39
+    "tix_over": 38,
+    "money_over": 41
    },
    "moneyline": {
     "home": -144,
@@ -103,18 +103,18 @@
    "spread": {
     "home": -12.5,
     "open": -12.5,
-    "tix_home": 13,
-    "money_home": 21
+    "tix_home": 15,
+    "money_home": 18
    },
    "total": {
     "now": 219.5,
     "open": 220.5,
-    "tix_over": 65,
-    "money_over": 52
+    "tix_over": 67,
+    "money_over": 57
    },
    "moneyline": {
-    "home": -550,
-    "away": 410
+    "home": -525,
+    "away": 400
    },
    "rlmFavorite": null
   }

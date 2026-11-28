@@ -21,12 +21,12 @@
       "statsLine": {
         "homeSpread": 3.5,
         "awaySpread": -3.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": 142,
-        "awayMoneyline": -169
+        "homeSpreadOdds": -109,
+        "awaySpreadOdds": -111,
+        "homeMoneyline": 140,
+        "awayMoneyline": -167
       },
-      "totalsLine": 219.5,
+      "totalsLine": 220.5,
       "injuries": {
         "away": {
           "4397204": "out",
@@ -137,25 +137,28 @@
         ],
         "total": [
           218.5,
-          219.5
+          220.5
         ],
         "ml": {
           "home": [
             137.0,
-            142.0
+            140.0
           ],
           "away": [
             -163.0,
-            -169.0
+            -167.0
           ]
         },
         "public": {
-          "betsHome": 64,
-          "moneyHome": 65,
+          "betsHome": 65,
+          "moneyHome": 45,
           "rlm": null
         },
-        "checked": "2026-11-28T07:02:09+00:00"
-      }
+        "checked": "2026-11-28T08:29:13+00:00"
+      },
+      "gameTotal": 220.5,
+      "gameTotalOverOdds": -105,
+      "gameTotalUnderOdds": -115
     },
     {
       "espnId": "401910047",
@@ -172,10 +175,10 @@
       "statsLine": {
         "homeSpread": -5.5,
         "awaySpread": 5.5,
-        "homeSpreadOdds": -119,
-        "awaySpreadOdds": -102,
-        "homeMoneyline": -224,
-        "awayMoneyline": 186
+        "homeSpreadOdds": -115,
+        "awaySpreadOdds": -105,
+        "homeMoneyline": -238,
+        "awayMoneyline": 197
       },
       "statsFavors": "Brooklyn Nets",
       "statsRules": [
@@ -423,20 +426,23 @@
         "ml": {
           "home": [
             -224.0,
-            -224.0
+            -238.0
           ],
           "away": [
             186.0,
-            186.0
+            197.0
           ]
         },
         "public": {
-          "betsHome": 61,
-          "moneyHome": 74,
+          "betsHome": 59,
+          "moneyHome": 69,
           "rlm": null
         },
-        "checked": "2026-11-28T07:02:09+00:00"
-      }
+        "checked": "2026-11-28T08:29:13+00:00"
+      },
+      "gameTotal": 213.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910048",
@@ -455,8 +461,8 @@
         "awaySpread": 2.5,
         "homeSpreadOdds": -115,
         "awaySpreadOdds": -105,
-        "homeMoneyline": -141,
-        "awayMoneyline": 119
+        "homeMoneyline": -142,
+        "awayMoneyline": 120
       },
       "statsFavors": "Chicago Bulls",
       "statsRules": [
@@ -833,20 +839,23 @@
         "ml": {
           "home": [
             -141.0,
-            -141.0
+            -142.0
           ],
           "away": [
             119.0,
-            119.0
+            120.0
           ]
         },
         "public": {
-          "betsHome": 69,
+          "betsHome": 68,
           "moneyHome": 47,
           "rlm": null
         },
-        "checked": "2026-11-28T07:02:09+00:00"
-      }
+        "checked": "2026-11-28T08:29:13+00:00"
+      },
+      "gameTotal": 234.5,
+      "gameTotalOverOdds": -115,
+      "gameTotalUnderOdds": -106
     },
     {
       "espnId": "401910049",
@@ -1073,11 +1082,14 @@
         },
         "public": {
           "betsHome": 56,
-          "moneyHome": 49,
+          "moneyHome": 46,
           "rlm": null
         },
-        "checked": "2026-11-28T07:02:09+00:00"
-      }
+        "checked": "2026-11-28T08:29:13+00:00"
+      },
+      "gameTotal": 228.5,
+      "gameTotalOverOdds": -110,
+      "gameTotalUnderOdds": -110
     },
     {
       "espnId": "401910050",
@@ -1094,10 +1106,10 @@
       "statsLine": {
         "homeSpread": -12.5,
         "awaySpread": 12.5,
-        "homeSpreadOdds": -110,
-        "awaySpreadOdds": -110,
-        "homeMoneyline": -521,
-        "awayMoneyline": 396
+        "homeSpreadOdds": -106,
+        "awaySpreadOdds": -114,
+        "homeMoneyline": -518,
+        "awayMoneyline": 394
       },
       "totalsLine": 219.5,
       "storylines": [
@@ -1412,20 +1424,23 @@
         "ml": {
           "home": [
             -486.0,
-            -521.0
+            -518.0
           ],
           "away": [
             373.0,
-            396.0
+            394.0
           ]
         },
         "public": {
-          "betsHome": 13,
-          "moneyHome": 21,
+          "betsHome": 15,
+          "moneyHome": 18,
           "rlm": null
         },
-        "checked": "2026-11-28T07:02:09+00:00"
-      }
+        "checked": "2026-11-28T08:29:13+00:00"
+      },
+      "gameTotal": 219.5,
+      "gameTotalOverOdds": -114,
+      "gameTotalUnderOdds": -106
     }
   ]
 }

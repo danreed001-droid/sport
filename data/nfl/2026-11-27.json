@@ -2,7 +2,7 @@
   "date": "2026-11-27",
   "weekday": "Friday",
   "sport": "nfl",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-27T08:24:23-05:00",
   "games": [
     {
@@ -30,7 +30,7 @@
       "awayPDpg": 4.47,
       "awayQB": "Bo Nix",
       "awayQBRating": 83.6,
-      "awayScore": null,
+      "awayScore": 5.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": -110,
       "awayYPP": 4.8,
@@ -44,7 +44,7 @@
       "homePDpg": 0.94,
       "homeQB": "Mason Rudolph",
       "homeQBRating": 84.6,
-      "homeScore": null,
+      "homeScore": 27.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -110,
       "homeYPP": 4.9,
@@ -111,7 +111,8 @@
           "says": "fade",
           "team": "Denver Broncos",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "thirdConfidence": "strong",
@@ -137,7 +138,16 @@
       ],
       "thirdReturn": null,
       "thirdSpreadReturn": null,
-      "time": "3:00 PM ET"
+      "time": "3:00 PM ET",
+      "altTrendCorrect": true,
+      "altTrendReturn": 188.0,
+      "altTrendCover": true,
+      "altTrendSpreadReturn": 90.91,
+      "altBlowoutCorrect": null,
+      "altBlowoutReturn": null,
+      "altBlowoutCover": null,
+      "altBlowoutSpreadReturn": null
     }
-  ]
+  ],
+  "scoredAt": "2026-11-28T08:28:16.432806+00:00"
 }

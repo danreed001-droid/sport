@@ -2,20 +2,20 @@
   "date": "2026-11-27",
   "weekday": "Friday",
   "sport": "cfb",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-27T13:22:47Z",
   "games": [
     {
       "altBlowoutCheck": "Iowa's last game (W 34-17 at Illinois, tied 17-17 at halftime before pulling away) qualifies for the 17+ blowout-win threshold. Sub-conditions vs today's opponent Nebraska: (1) padded win \u2014 TRUE (tied at half); (2) market bought in \u2014 TRUE (Iowa favored by 3.5 today); (3) opponent elite defense \u2014 FALSE (Nebraska ranks 12th in points allowed, 34th in takeaways, 27th in pass defense \u2014 good but not top-5/10); (4) run-heavy win \u2014 TRUE (52 rush attempts); (5) turnover-prone \u2014 FALSE (QB Hank Brown has just 4 INT in 10 games). 3 of 5 fire, so the check fires. Illinois is a legitimate Big Ten opponent (not an outmatched G5/FCS team), so no judgment override applied.",
-      "altBlowoutCorrect": null,
-      "altBlowoutCover": null,
+      "altBlowoutCorrect": false,
+      "altBlowoutCover": false,
       "altBlowoutFavors": "Nebraska",
-      "altBlowoutReturn": null,
-      "altBlowoutSpreadReturn": null,
+      "altBlowoutReturn": -100.0,
+      "altBlowoutSpreadReturn": -100.0,
       "altCategoryTally": "8-1",
       "altConfidence": "strong",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": false,
+      "altCover": false,
       "altPick": "Nebraska",
       "altReasons": [
         "Scoring margin: Nebraska +13.0 PD/g vs Iowa +12.3 PD/g \u2014 favors Nebraska (narrow)",
@@ -28,8 +28,8 @@
         "Market: neutral \u2014 no reliable opening-line comparison available",
         "Matchup splits: neutral \u2014 no clear unit-vs-unit mismatch identified"
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": -100.0,
+      "altSpreadReturn": -100.0,
       "altTrendCheck": "Nebraska (own last game, W 31-28 over #16 Ohio State): pass YPA 7.14 (200/28) \u2014 just under the 7.5 B threshold; overall YPP 7.72 (376/58) \u2014 well above the 5.15 ceiling, so B misses. Rush/pass ratio 1.61 (45/28) \u2014 misses C (needs \u22641.0). Pass att 28 \u2014 misses D (needs \u226541). No patterns fire. Iowa (own last game, W 34-17 over Illinois): pass YPA 5.31 (138/26) \u2014 misses B; rush/pass ratio 2.0 (52/26) \u2014 misses C; pass att 26 \u2014 misses D. No patterns fire for either team.",
       "altTrendCorrect": null,
       "altTrendCover": null,
@@ -42,7 +42,7 @@
       "awayQB": "Anthony Colandrea",
       "awayQBEff": 138.2,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 7.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": 100,
       "awayYPP": 5.6,
@@ -54,7 +54,7 @@
       "homeQB": "Hank Brown",
       "homeQBEff": 131,
       "homeRank": 13,
-      "homeScore": null,
+      "homeScore": 31.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -104,
       "homeYPP": 5.5,
@@ -100,17 +100,17 @@
       "altSpreadReturn": null,
       "altTrendCheck": "Mississippi State (own last game, L 9-41 to Auburn): lost by 32 (\u226511) but only 262 total net yards (well under 426), so pattern A misses. Pass YPA 7.71 (216/28, \u22657.5) and overall YPP 3.54 (262/74, \u22645.15) \u2014 pattern B fires: +2 to Mississippi State. Rush/pass ratio 1.64 (46/28) \u2014 misses C; pass att 28 \u2014 misses D. Net: +2 Mississippi State. Ole Miss (own last game, W 59-17 over Wofford): not a loss, A N/A. Pass YPA 15.6 (562/36, \u22657.5) but overall YPP 9.86 (789/80) \u2014 well above the 5.15 ceiling, so B misses. Rush/pass ratio 1.22 (44/36) \u2014 misses C; pass att 36 \u2014 misses D. No patterns fire for Ole Miss.",
       "altTrendCorrect": null,
-      "altTrendCover": null,
+      "altTrendCover": false,
       "altTrendFavors": "Mississippi State",
       "altTrendReturn": null,
-      "altTrendSpreadReturn": null,
+      "altTrendSpreadReturn": -100.0,
       "away": "Mississippi State",
       "awayMoneyline": 770,
       "awayPDpg": -4.6,
       "awayQB": "A.J. Swann",
       "awayQBEff": 140.6,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 17.0,
       "awaySpread": 18.5,
       "awaySpreadOdds": 100,
       "awayYPP": 5.3,
@@ -122,7 +122,7 @@
       "homeQB": "Trinidad Chambliss",
       "homeQBEff": 143.5,
       "homeRank": 23,
-      "homeScore": null,
+      "homeScore": 41.0,
       "homeSpread": -18.5,
       "homeSpreadOdds": -104,
       "homeYPP": 5.7,
@@ -154,7 +154,8 @@
           "leans": "Mississippi State",
           "leanPct": 53.5,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -169,7 +170,8 @@
           "leans": "Mississippi State",
           "leanPct": 53.7,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ]
     },
@@ -210,7 +212,7 @@
       "awayQB": "Aaron Philo",
       "awayQBEff": 150.9,
       "awayRank": 20,
-      "awayScore": null,
+      "awayScore": 26.0,
       "awaySpread": -6.5,
       "awaySpreadOdds": -102,
       "awayYPP": 5.4,
@@ -222,7 +224,7 @@
       "homeQB": "Ashton Daniels",
       "homeQBEff": 135.5,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 10.0,
       "homeSpread": 6.5,
       "homeSpreadOdds": 100,
       "homeYPP": 5.6,
@@ -302,27 +304,27 @@
       "awayQB": "Arch Manning",
       "awayQBEff": 151.1,
       "awayRank": 5,
-      "awayScore": null,
+      "awayScore": 16.0,
       "awaySpread": -10.5,
       "awaySpreadOdds": -106,
       "awayYPP": 5.3,
       "confidence": "lean",
-      "correct": null,
+      "correct": true,
       "home": "Texas A&M",
       "homeMoneyline": 376,
       "homePDpg": -1,
       "homeQB": "Marcel Reed",
       "homeQBEff": 108.8,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 6.0,
       "homeSpread": 10.5,
       "homeSpreadOdds": 104,
       "homeYPP": 4.5,
       "offGap": 37.23,
       "pick": "Texas",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": false,
+      "pickReturn": 25.77,
+      "pickSpreadReturn": -100.0,
       "statLines": [
         "#5 vs unranked",
         "PD/g +15.1 vs -1.0",
@@ -358,10 +360,10 @@
     {
       "altBlowoutCheck": "Utah's last game was a 21-point win over TCU (38-17; led 17-0 at half), clearing the 17+ threshold. Sub-conditions vs today's opponent West Virginia: (1) padded win \u2014 TRUE via takeaway margin (forced 2-3 turnovers, committed 0); (2) market \u2014 TRUE (Utah favored by 26 today); (3) opponent elite defense \u2014 FALSE (West Virginia ranks 138th of 138 in pass defense); (4) run-heavy win \u2014 TRUE (41 rush attempts); (5) turnover-prone \u2014 FALSE (Devon Dampier has 8 INT in 12 games, an unremarkable rate for his volume). 3 of 5 fire (1,2,4). TCU is a legitimate Big 12 opponent, not an outmatched mismatch, so no judgment override is applied. West Virginia gets +6 in the combined tally.",
       "altBlowoutCorrect": null,
-      "altBlowoutCover": null,
+      "altBlowoutCover": true,
       "altBlowoutFavors": "West Virginia",
       "altBlowoutReturn": null,
-      "altBlowoutSpreadReturn": null,
+      "altBlowoutSpreadReturn": 92.59,
       "altCategoryTally": "5-6",
       "altConfidence": "pass",
       "altCorrect": null,
@@ -392,7 +394,7 @@
       "awayQB": "Michael Hawkins Jr.",
       "awayQBEff": 155.7,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 28.0,
       "awaySpread": 26,
       "awaySpreadOdds": -108,
       "awayYPP": 5.8,
@@ -404,7 +406,7 @@
       "homeQB": "Devon Dampier",
       "homeQBEff": 156.6,
       "homeRank": 2,
-      "homeScore": null,
+      "homeScore": 52.0,
       "homeSpread": -26,
       "homeSpreadOdds": -112,
       "homeYPP": 6.4,
@@ -439,7 +441,8 @@
           "leans": "West Virginia",
           "leanPct": 54.4,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -454,7 +457,8 @@
           "leans": "West Virginia",
           "leanPct": 54.2,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -469,7 +473,8 @@
           "leans": "Utah",
           "leanPct": 56.5,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         }
       ],
       "lineMove": {
@@ -494,5 +499,6 @@
         "checked": "2026-11-27T20:00:35+00:00"
       }
     }
-  ]
+  ],
+  "scoredAt": "2026-11-28T08:28:17.571997+00:00"
 }

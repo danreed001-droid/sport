@@ -2,7 +2,7 @@
   "date": "2026-11-27",
   "weekday": "Friday",
   "sport": "ncaab",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-27T16:30:00Z",
   "games": [
     {
@@ -28,7 +28,7 @@
       "awayMoneyline": -162,
       "awayPDpg": 22.4,
       "awayRank": 13,
-      "awayScore": null,
+      "awayScore": 80.0,
       "awaySpread": -4.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -40,7 +40,7 @@
       "homeMoneyline": 136,
       "homePDpg": 13.7,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 75.0,
       "homeSpread": 4.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -92,7 +92,8 @@
           "says": "back",
           "team": "St. John's Red Storm",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "1:00 PM ET"
@@ -120,7 +121,7 @@
       "awayMoneyline": 114,
       "awayPDpg": 13.3,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 85.0,
       "awaySpread": 2.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -132,7 +133,7 @@
       "homeMoneyline": -135,
       "homePDpg": 5.7,
       "homeRank": 24,
-      "homeScore": null,
+      "homeScore": 88.0,
       "homeSpread": -2.5,
       "homeSpreadOdds": -105,
       "lineMove": {
@@ -184,7 +185,8 @@
           "leans": "Memphis Tigers",
           "leanPct": 53.0,
           "against": true,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -199,7 +201,8 @@
           "leans": "Memphis Tigers",
           "leanPct": 52.5,
           "against": false,
-          "unit": "ATS"
+          "unit": "ATS",
+          "result": "hit"
         }
       ],
       "time": "1:30 PM ET"
@@ -227,11 +230,11 @@
       "awayMoneyline": null,
       "awayPDpg": -28,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 56.0,
       "awaySpread": 37.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 151.5,
       "gameTotalOverOdds": -115,
       "gameTotalUnderOdds": -105,
@@ -239,7 +242,7 @@
       "homeMoneyline": null,
       "homePDpg": 25.7,
       "homeRank": 14,
-      "homeScore": null,
+      "homeScore": 111.0,
       "homeSpread": -37.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -256,9 +259,9 @@
       },
       "offGap": 77.47,
       "pick": "Vanderbilt Commodores",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -293,7 +296,7 @@
       "awayMoneyline": 285,
       "awayPDpg": 13.1,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 63.0,
       "awaySpread": 8.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -305,7 +308,7 @@
       "homeMoneyline": -360,
       "homePDpg": 27.7,
       "homeRank": 6,
-      "homeScore": null,
+      "homeScore": 75.0,
       "homeSpread": -8.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -368,7 +371,7 @@
       "awayMoneyline": -345,
       "awayPDpg": 28.7,
       "awayRank": 7,
-      "awayScore": null,
+      "awayScore": 76.0,
       "awaySpread": -7.5,
       "awaySpreadOdds": -115,
       "confidence": "skip",
@@ -380,7 +383,7 @@
       "homeMoneyline": 275,
       "homePDpg": 16.6,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 73.0,
       "homeSpread": 7.5,
       "homeSpreadOdds": -105,
       "lineMove": {
@@ -432,7 +435,8 @@
           "says": "back",
           "team": "Saint Mary's Gaels",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -447,7 +451,8 @@
           "says": "fade",
           "team": "Saint Mary's Gaels",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "5:00 PM ET"
@@ -456,7 +461,7 @@
       "altCategoryTally": "0-4",
       "altConfidence": "lean",
       "altCorrect": null,
-      "altCover": null,
+      "altCover": true,
       "altPick": "Kansas Jayhawks",
       "altReasons": [
         "Scoring margin: favors Kansas Jayhawks (PD/g +18.7 vs Villanova's +12.7)",
@@ -470,12 +475,12 @@
         "Matchup splits: favors Kansas Jayhawks \u2014 Kansas's elite defense (AdjDE 95.1, 9th nationally) against Villanova's good-not-great offense (AdjOE 115.4, 69th) is a clear mismatch"
       ],
       "altReturn": null,
-      "altSpreadReturn": null,
+      "altSpreadReturn": 90.91,
       "away": "Villanova Wildcats",
       "awayMoneyline": 600,
       "awayPDpg": 12.7,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 50.0,
       "awaySpread": 12.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -487,7 +492,7 @@
       "homeMoneyline": -900,
       "homePDpg": 18.7,
       "homeRank": 12,
-      "homeScore": null,
+      "homeScore": 65.0,
       "homeSpread": -12.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -550,7 +555,7 @@
       "awayMoneyline": 3500,
       "awayPDpg": 8.2,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 76.0,
       "awaySpread": 27.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -562,7 +567,7 @@
       "homeMoneyline": -20000,
       "homePDpg": 38,
       "homeRank": 4,
-      "homeScore": null,
+      "homeScore": 116.0,
       "homeSpread": -27.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -588,9 +593,9 @@
       },
       "offGap": 34.62,
       "pick": "Illinois Fighting Illini",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -614,7 +619,8 @@
           "says": "fade",
           "team": "Illinois Fighting Illini",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": true,
@@ -629,7 +635,8 @@
           "says": "fade",
           "team": "Illinois Fighting Illini",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": true,
@@ -644,7 +651,8 @@
           "says": "fade",
           "team": "Illinois Fighting Illini",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -659,7 +667,8 @@
           "says": "fade",
           "team": "Western Kentucky Hilltoppers",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "6:00 PM ET"
@@ -687,7 +696,7 @@
       "awayMoneyline": 1800,
       "awayPDpg": 5.8,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 57.0,
       "awaySpread": 22.5,
       "awaySpreadOdds": -108,
       "confidence": "skip",
@@ -699,7 +708,7 @@
       "homeMoneyline": -5000,
       "homePDpg": 17.3,
       "homeRank": 23,
-      "homeScore": null,
+      "homeScore": 93.0,
       "homeSpread": -22.5,
       "homeSpreadOdds": -112,
       "lineMove": {
@@ -761,11 +770,11 @@
       "awayMoneyline": null,
       "awayPDpg": -21.9,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 46.0,
       "awaySpread": 36.5,
       "awaySpreadOdds": -112,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 143.5,
       "gameTotalOverOdds": -116,
       "gameTotalUnderOdds": -104,
@@ -773,7 +782,7 @@
       "homeMoneyline": null,
       "homePDpg": 22.3,
       "homeRank": 1,
-      "homeScore": null,
+      "homeScore": 77.0,
       "homeSpread": -36.5,
       "homeSpreadOdds": -108,
       "lineMove": {
@@ -790,9 +799,9 @@
       },
       "offGap": 53.3,
       "pick": "Houston Cougars",
-      "pickCover": null,
+      "pickCover": false,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": -100.0,
       "skipReason": null,
       "skipped": false,
       "statLines": [
@@ -815,7 +824,8 @@
           "says": "fade",
           "team": "Houston Cougars",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": true,
@@ -830,7 +840,8 @@
           "says": "fade",
           "team": "Houston Cougars",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": false,
@@ -845,7 +856,8 @@
           "says": "back",
           "team": "Oakland Golden Grizzlies",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "7:30 PM ET"
@@ -873,7 +885,7 @@
       "awayMoneyline": -135,
       "awayPDpg": 26.1,
       "awayRank": 17,
-      "awayScore": null,
+      "awayScore": 87.0,
       "awaySpread": -2.5,
       "awaySpreadOdds": -102,
       "confidence": "skip",
@@ -885,7 +897,7 @@
       "homeMoneyline": 114,
       "homePDpg": 15.7,
       "homeRank": 15,
-      "homeScore": null,
+      "homeScore": 81.0,
       "homeSpread": 2.5,
       "homeSpreadOdds": -118,
       "lineMove": {
@@ -948,7 +960,7 @@
       "awayMoneyline": -122,
       "awayPDpg": 17.1,
       "awayRank": 9,
-      "awayScore": null,
+      "awayScore": 64.0,
       "awaySpread": -1.5,
       "awaySpreadOdds": -102,
       "confidence": "skip",
@@ -960,7 +972,7 @@
       "homeMoneyline": 102,
       "homePDpg": 11.5,
       "homeRank": 25,
-      "homeScore": null,
+      "homeScore": 84.0,
       "homeSpread": 1.5,
       "homeSpreadOdds": -118,
       "lineMove": {
@@ -1012,7 +1024,8 @@
           "says": "back",
           "team": "Louisville Cardinals",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": true,
@@ -1027,7 +1040,8 @@
           "says": "fade",
           "team": "Tennessee Volunteers",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": true,
@@ -1042,7 +1056,8 @@
           "says": "fade",
           "team": "Tennessee Volunteers",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "9:00 PM ET"
@@ -1070,7 +1085,7 @@
       "awayMoneyline": null,
       "awayPDpg": 13.4,
       "awayRank": null,
-      "awayScore": null,
+      "awayScore": 97.0,
       "awaySpread": 5.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -1082,7 +1097,7 @@
       "homeMoneyline": null,
       "homePDpg": 17.7,
       "homeRank": 22,
-      "homeScore": null,
+      "homeScore": 89.0,
       "homeSpread": -5.5,
       "homeSpreadOdds": -110,
       "lineMove": {
@@ -1134,7 +1149,8 @@
           "says": "back",
           "team": "Creighton Bluejays",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         },
         {
           "against": true,
@@ -1149,7 +1165,8 @@
           "says": "fade",
           "team": "Creighton Bluejays",
           "unit": "ATS",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "11:00 PM ET"
@@ -1177,7 +1194,7 @@
       "awayMoneyline": null,
       "awayPDpg": 21.3,
       "awayRank": 5,
-      "awayScore": null,
+      "awayScore": 78.0,
       "awaySpread": null,
       "awaySpreadOdds": null,
       "confidence": "skip",
@@ -1186,7 +1203,7 @@
       "homeMoneyline": null,
       "homePDpg": 13.9,
       "homeRank": null,
-      "homeScore": null,
+      "homeScore": 75.0,
       "homeSpread": null,
       "homeSpreadOdds": null,
       "offGap": 8.52,
@@ -1206,5 +1223,6 @@
       ],
       "time": "11:30 PM ET"
     }
-  ]
+  ],
+  "scoredAt": "2026-11-28T08:28:21.044646+00:00"
 }

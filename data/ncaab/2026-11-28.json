@@ -1,0 +1,2210 @@
+{
+  "date": "2026-11-28",
+  "weekday": "Saturday",
+  "sport": "ncaab",
+  "scored": false,
+  "autoSlate": true,
+  "generatedAt": "2026-11-28T08:27:53Z",
+  "games": [
+    {
+      "espnId": "401920890",
+      "away": "Siena Saints",
+      "home": "Seton Hall Pirates",
+      "time": "12:00 PM ET",
+      "homeSpread": -17.5,
+      "awaySpread": 17.5,
+      "homeSpreadOdds": -107,
+      "awaySpreadOdds": -113,
+      "homeMoneyline": -2400,
+      "awayMoneyline": 1200,
+      "total": 156.5,
+      "lineMove": {
+        "spread": [
+          -17.5,
+          -17.5
+        ],
+        "total": [
+          155.5,
+          156.5
+        ],
+        "ml": {
+          "home": [
+            -2800.0,
+            -2400.0
+          ],
+          "away": [
+            1300.0,
+            1200.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:13+00:00"
+      }
+    },
+    {
+      "espnId": "401920849",
+      "away": "Princeton Tigers",
+      "home": "St. Thomas Tommies",
+      "time": "12:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -109,
+      "awaySpreadOdds": -111,
+      "homeMoneyline": -135,
+      "awayMoneyline": 114,
+      "total": 143.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -2.5,
+          -2.5
+        ],
+        "total": [
+          145.5,
+          143.5
+        ],
+        "ml": {
+          "home": [
+            -155.0,
+            -135.0
+          ],
+          "away": [
+            130.0,
+            114.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401918961",
+      "away": "Elon Phoenix",
+      "home": "NC State Wolfpack",
+      "time": "12:00 PM ET",
+      "homeSpread": -20.5,
+      "awaySpread": 20.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -4000,
+      "awayMoneyline": 1600,
+      "total": 149.5,
+      "lineMove": {
+        "spread": [
+          -22.5,
+          -20.5
+        ],
+        "total": [
+          152.5,
+          149.5
+        ],
+        "ml": {
+          "home": [
+            -4000.0,
+            -4000.0
+          ],
+          "away": [
+            1600.0,
+            1600.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401927389",
+      "away": "Robert Morris Colonials",
+      "home": "Northern Iowa Panthers",
+      "time": "1:00 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": -265,
+      "awayMoneyline": 215,
+      "total": 147.5,
+      "lineMove": {
+        "spread": [
+          -6.5,
+          -6.5
+        ],
+        "total": [
+          149.5,
+          147.5
+        ],
+        "ml": {
+          "home": [
+            -278.0,
+            -265.0
+          ],
+          "away": [
+            225.0,
+            215.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401927379",
+      "away": "IU Columbus Crimson Pride",
+      "home": "Indiana State Sycamores",
+      "time": "1:00 PM ET"
+    },
+    {
+      "espnId": "401926212",
+      "away": "Wofford Terriers",
+      "home": "Purdue Fort Wayne Mastodons",
+      "time": "1:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -135,
+      "awayMoneyline": 114,
+      "total": 153.5,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -2.5
+        ],
+        "total": [
+          158.5,
+          153.5
+        ],
+        "ml": {
+          "home": [
+            -130.0,
+            -135.0
+          ],
+          "away": [
+            110.0,
+            114.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401921414",
+      "away": "Hampton Pirates",
+      "home": "Radford Highlanders",
+      "time": "1:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -114,
+      "awaySpreadOdds": -106,
+      "homeMoneyline": -120,
+      "awayMoneyline": 100,
+      "total": 133.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -1.5
+        ],
+        "total": [
+          138.5,
+          133.5
+        ],
+        "ml": {
+          "home": [
+            -125.0,
+            -120.0
+          ],
+          "away": [
+            105.0,
+            100.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401920775",
+      "away": "Vermont Catamounts",
+      "home": "Colgate Raiders",
+      "time": "1:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -106,
+      "awaySpreadOdds": -114,
+      "homeMoneyline": -130,
+      "awayMoneyline": 110,
+      "total": 143.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -2.5
+        ],
+        "total": [
+          146.5,
+          142.5
+        ],
+        "ml": {
+          "home": [
+            -122.0,
+            -135.0
+          ],
+          "away": [
+            102.0,
+            114.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401920310",
+      "away": "Alcorn State Braves",
+      "home": "Georgia Tech Yellow Jackets",
+      "time": "1:00 PM ET",
+      "homeSpread": -27.5,
+      "awaySpread": 27.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -20000,
+      "awayMoneyline": 3500,
+      "total": 162.5,
+      "lineMove": {
+        "spread": [
+          -25.5,
+          -27.5
+        ],
+        "total": [
+          162.5,
+          162.5
+        ],
+        "ml": {
+          "home": [
+            -20000.0,
+            -20000.0
+          ],
+          "away": [
+            3500.0,
+            3500.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401911395",
+      "away": "North Carolina Central Eagles",
+      "home": "Gardner-Webb Runnin' Bulldogs",
+      "time": "1:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -104,
+      "awaySpreadOdds": -116,
+      "homeMoneyline": -135,
+      "awayMoneyline": 114,
+      "total": 137.5,
+      "lineMove": {
+        "spread": [
+          1.5,
+          -1.5
+        ],
+        "total": [
+          140.5,
+          137.5
+        ],
+        "ml": {
+          "home": [
+            -125.0,
+            -135.0
+          ],
+          "away": [
+            105.0,
+            114.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401926757",
+      "away": "Lehigh Mountain Hawks",
+      "home": "Pepperdine Waves",
+      "time": "1:30 PM ET",
+      "homeSpread": -9.5,
+      "awaySpread": 9.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -106,
+      "homeMoneyline": -470,
+      "awayMoneyline": 360,
+      "total": 148.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -9.5,
+          -9.5
+        ],
+        "total": [
+          150.5,
+          148.5
+        ],
+        "ml": {
+          "home": [
+            -470.0,
+            -470.0
+          ],
+          "away": [
+            360.0,
+            360.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401925710",
+      "away": "Clinton Golden Bears",
+      "home": "Winthrop Eagles",
+      "time": "2:00 PM ET"
+    },
+    {
+      "espnId": "401924779",
+      "away": "Manhattan Jaspers",
+      "home": "Morgan State Bears",
+      "time": "2:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -106,
+      "homeMoneyline": -142,
+      "awayMoneyline": 120,
+      "total": 150.5,
+      "lineMove": {
+        "spread": [
+          -2.5,
+          -2.5
+        ],
+        "total": [
+          151.5,
+          150.5
+        ],
+        "ml": {
+          "home": [
+            -155.0,
+            -142.0
+          ],
+          "away": [
+            130.0,
+            120.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401922241",
+      "away": "New College Mighty Banyans",
+      "home": "Stetson Hatters",
+      "time": "2:00 PM ET"
+    },
+    {
+      "espnId": "401922224",
+      "away": "North Florida Ospreys",
+      "home": "Columbia Lions",
+      "time": "2:00 PM ET",
+      "homeSpread": -14.5,
+      "awaySpread": 14.5,
+      "homeSpreadOdds": -111,
+      "awaySpreadOdds": -109,
+      "homeMoneyline": -1350,
+      "awayMoneyline": 800,
+      "total": 157.5,
+      "lineMove": {
+        "spread": [
+          -16.5,
+          -14.5
+        ],
+        "total": [
+          157.5,
+          157.5
+        ],
+        "ml": {
+          "home": [
+            -1350.0,
+            -1350.0
+          ],
+          "away": [
+            800.0,
+            800.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:14+00:00"
+      }
+    },
+    {
+      "espnId": "401921245",
+      "away": "Central Connecticut Blue Devils",
+      "home": "Navy Midshipmen",
+      "time": "2:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -120,
+      "awaySpreadOdds": -101,
+      "homeMoneyline": 100,
+      "awayMoneyline": -120,
+      "total": 127.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          1.5
+        ],
+        "total": [
+          131.5,
+          127.5
+        ],
+        "ml": {
+          "home": [
+            -118.0,
+            100.0
+          ],
+          "away": [
+            -102.0,
+            -120.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401921158",
+      "away": "Delaware State Hornets",
+      "home": "North Carolina A&T Aggies",
+      "time": "2:00 PM ET",
+      "homeSpread": -10.5,
+      "awaySpread": 10.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -625,
+      "awayMoneyline": 455,
+      "total": 141.5,
+      "lineMove": {
+        "spread": [
+          -11.5,
+          -10.5
+        ],
+        "total": [
+          143.5,
+          141.5
+        ],
+        "ml": {
+          "home": [
+            -600.0,
+            -625.0
+          ],
+          "away": [
+            440.0,
+            455.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401921031",
+      "away": "Georgia Southern Eagles",
+      "home": "UNC Asheville Bulldogs",
+      "time": "2:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": 110,
+      "awayMoneyline": -130,
+      "total": 157.5,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          1.5
+        ],
+        "total": [
+          158.5,
+          157.5
+        ],
+        "ml": {
+          "home": [
+            -125.0,
+            110.0
+          ],
+          "away": [
+            105.0,
+            -130.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401920977",
+      "away": "Troy Trojans",
+      "home": "Chattanooga Mocs",
+      "time": "2:00 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -109,
+      "awaySpreadOdds": -111,
+      "homeMoneyline": -180,
+      "awayMoneyline": 150,
+      "total": 146.5,
+      "lineMove": {
+        "spread": [
+          -3.5,
+          -4.5
+        ],
+        "total": [
+          147.5,
+          146.5
+        ],
+        "ml": {
+          "home": [
+            -175.0,
+            -180.0
+          ],
+          "away": [
+            145.0,
+            150.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401920859",
+      "away": "East Texas A&M Lions",
+      "home": "Marshall Thundering Herd",
+      "time": "2:00 PM ET",
+      "homeSpread": -8.5,
+      "awaySpread": 8.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": -360,
+      "awayMoneyline": 285,
+      "total": 145.5,
+      "lineMove": {
+        "spread": [
+          -9.5,
+          -8.5
+        ],
+        "total": [
+          149.5,
+          145.5
+        ],
+        "ml": {
+          "home": [
+            -410.0,
+            -360.0
+          ],
+          "away": [
+            320.0,
+            285.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401920728",
+      "away": "Prairie View A&M Panthers",
+      "home": "Iowa Hawkeyes",
+      "time": "2:00 PM ET",
+      "homeSpread": -33.5,
+      "awaySpread": 33.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "total": 136.5,
+      "lineMove": {
+        "spread": [
+          -30.5,
+          -33.5
+        ],
+        "total": [
+          139.5,
+          136.5
+        ],
+        "ml": {},
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401920415",
+      "away": "The Citadel Bulldogs",
+      "home": "High Point Panthers",
+      "time": "2:00 PM ET",
+      "homeSpread": -26.5,
+      "awaySpread": 26.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -20000,
+      "awayMoneyline": 3500,
+      "total": 143.5,
+      "lineMove": {
+        "spread": [
+          -29.5,
+          -26.5
+        ],
+        "total": [
+          144.5,
+          143.5
+        ],
+        "ml": {
+          "home": [
+            -20000.0,
+            -20000.0
+          ],
+          "away": [
+            3500.0,
+            3500.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401920350",
+      "away": "Sacramento State Hornets",
+      "home": "Presbyterian Blue Hose",
+      "time": "2:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -114,
+      "awaySpreadOdds": -106,
+      "homeMoneyline": -130,
+      "awayMoneyline": 110,
+      "total": 156.5,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -1.5
+        ],
+        "total": [
+          155.5,
+          156.5
+        ],
+        "ml": {
+          "home": [
+            -125.0,
+            -130.0
+          ],
+          "away": [
+            105.0,
+            110.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401920077",
+      "away": "Marist Red Foxes",
+      "home": "George Mason Patriots",
+      "time": "2:00 PM ET",
+      "homeSpread": -20.5,
+      "awaySpread": 20.5,
+      "homeSpreadOdds": -107,
+      "awaySpreadOdds": -113,
+      "homeMoneyline": -3600,
+      "awayMoneyline": 1500,
+      "total": 130.5,
+      "lineMove": {
+        "spread": [
+          -19.5,
+          -20.5
+        ],
+        "total": [
+          130.5,
+          130.5
+        ],
+        "ml": {
+          "home": [
+            -2800.0,
+            -3600.0
+          ],
+          "away": [
+            1300.0,
+            1500.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401919787",
+      "away": "Le Moyne Dolphins",
+      "home": "Niagara Purple Eagles",
+      "time": "2:00 PM ET",
+      "homeSpread": 1.5,
+      "awaySpread": -1.5,
+      "homeSpreadOdds": -113,
+      "awaySpreadOdds": -107,
+      "homeMoneyline": 102,
+      "awayMoneyline": -122,
+      "total": 144.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          1.5,
+          1.5
+        ],
+        "total": [
+          144.5,
+          144.5
+        ],
+        "ml": {
+          "home": [
+            110.0,
+            102.0
+          ],
+          "away": [
+            -130.0,
+            -122.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401919736",
+      "away": "Chicago State Cougars",
+      "home": "Bradley Braves",
+      "time": "2:00 PM ET",
+      "homeSpread": -15.5,
+      "awaySpread": 15.5,
+      "homeSpreadOdds": -107,
+      "awaySpreadOdds": -113,
+      "homeMoneyline": -2100,
+      "awayMoneyline": 1100,
+      "total": 128.5,
+      "lineMove": {
+        "spread": [
+          -14.5,
+          -15.5
+        ],
+        "total": [
+          132.5,
+          128.5
+        ],
+        "ml": {
+          "home": [
+            -1650.0,
+            -2100.0
+          ],
+          "away": [
+            950.0,
+            1100.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401917920",
+      "away": "Southwestern Christian U Eagles",
+      "home": "Central Arkansas Bears",
+      "time": "2:00 PM ET"
+    },
+    {
+      "espnId": "401911202",
+      "away": "Fordham Rams",
+      "home": "Harvard Crimson",
+      "time": "2:00 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": 100,
+      "awaySpreadOdds": -121,
+      "homeMoneyline": 136,
+      "awayMoneyline": -162,
+      "total": 140.5,
+      "lineMove": {
+        "spread": [
+          2.5,
+          2.5
+        ],
+        "total": [
+          141.5,
+          140.5
+        ],
+        "ml": {
+          "home": [
+            136.0,
+            136.0
+          ],
+          "away": [
+            -162.0,
+            -162.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401911031",
+      "away": "Ball State Cardinals",
+      "home": "Southern Indiana Screaming Eagles",
+      "time": "2:00 PM ET",
+      "homeSpread": 3.5,
+      "awaySpread": -3.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": 136,
+      "awayMoneyline": -162,
+      "total": 138.5,
+      "lineMove": {
+        "spread": [
+          3.5,
+          3.5
+        ],
+        "total": [
+          139.5,
+          138.5
+        ],
+        "ml": {
+          "home": [
+            124.0,
+            136.0
+          ],
+          "away": [
+            -148.0,
+            -162.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401929048",
+      "away": "Western Illinois Leathernecks",
+      "home": "Coastal Carolina Chanticleers",
+      "time": "3:00 PM ET",
+      "homeSpread": -11.5,
+      "awaySpread": 11.5,
+      "homeSpreadOdds": -116,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -800,
+      "awayMoneyline": 550,
+      "total": 140.5,
+      "lineMove": {
+        "spread": [
+          -12.5,
+          -11.5
+        ],
+        "total": [
+          137.5,
+          140.5
+        ],
+        "ml": {
+          "home": [
+            -750.0,
+            -800.0
+          ],
+          "away": [
+            525.0,
+            550.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401928848",
+      "away": "Toledo Rockets",
+      "home": "Valparaiso Beacons",
+      "time": "3:00 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": -111,
+      "awaySpreadOdds": -109,
+      "homeMoneyline": -170,
+      "awayMoneyline": 142,
+      "total": 151.5,
+      "lineMove": {
+        "spread": [
+          -4.5,
+          -3.5
+        ],
+        "total": [
+          153.5,
+          151.5
+        ],
+        "ml": {
+          "home": [
+            -162.0,
+            -170.0
+          ],
+          "away": [
+            136.0,
+            142.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401926796",
+      "away": "Liberty Flames",
+      "home": "UNC Wilmington Seahawks",
+      "time": "3:00 PM ET",
+      "homeSpread": -5.5,
+      "awaySpread": 5.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -245,
+      "awayMoneyline": 200,
+      "total": 149.5,
+      "lineMove": {
+        "spread": [
+          -6.5,
+          -5.5
+        ],
+        "total": [
+          151.5,
+          149.5
+        ],
+        "ml": {
+          "home": [
+            -245.0,
+            -245.0
+          ],
+          "away": [
+            200.0,
+            200.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401926734",
+      "away": "Kentucky Christian Knights",
+      "home": "UT Martin Skyhawks",
+      "time": "3:00 PM ET"
+    },
+    {
+      "espnId": "401926229",
+      "away": "Denver Pioneers",
+      "home": "New Mexico State Aggies",
+      "time": "3:00 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -170,
+      "awayMoneyline": 142,
+      "total": 143.5,
+      "lineMove": {
+        "spread": [
+          -5.5,
+          -3.5
+        ],
+        "total": [
+          144.5,
+          143.5
+        ],
+        "ml": {
+          "home": [
+            -166.0,
+            -170.0
+          ],
+          "away": [
+            140.0,
+            142.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401924913",
+      "away": "UT Rio Grande Valley Vaqueros",
+      "home": "UNLV Rebels",
+      "time": "3:00 PM ET",
+      "homeSpread": -10.5,
+      "awaySpread": 10.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -106,
+      "total": 149.5,
+      "lineMove": {
+        "spread": [
+          -9.5,
+          -10.5
+        ],
+        "total": [
+          149.5,
+          149.5
+        ],
+        "ml": {},
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401921009",
+      "away": "Southeast Missouri State Redhawks",
+      "home": "Kansas City Roos",
+      "time": "3:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -113,
+      "awaySpreadOdds": -107,
+      "homeMoneyline": -142,
+      "awayMoneyline": 120,
+      "total": 146.5,
+      "lineMove": {
+        "spread": [
+          -2.5,
+          -2.5
+        ],
+        "total": [
+          148.5,
+          146.5
+        ],
+        "ml": {
+          "home": [
+            -166.0,
+            -142.0
+          ],
+          "away": [
+            140.0,
+            120.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401920917",
+      "away": "Northern Illinois Huskies",
+      "home": "Eastern Illinois Panthers",
+      "time": "3:00 PM ET",
+      "homeSpread": 10.5,
+      "awaySpread": -10.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -116,
+      "homeMoneyline": 490,
+      "awayMoneyline": -675,
+      "total": 139.5,
+      "lineMove": {
+        "spread": [
+          10.5,
+          10.5
+        ],
+        "total": [
+          143.5,
+          139.5
+        ],
+        "ml": {
+          "home": [
+            490.0,
+            490.0
+          ],
+          "away": [
+            -675.0,
+            -675.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401911312",
+      "away": "Brown Bears",
+      "home": "Air Force Falcons",
+      "time": "3:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -135,
+      "awayMoneyline": 114,
+      "total": 157.5,
+      "lineMove": {
+        "spread": [
+          -2.5,
+          -2.5
+        ],
+        "total": [
+          158.5,
+          157.5
+        ],
+        "ml": {
+          "home": [
+            -130.0,
+            -135.0
+          ],
+          "away": [
+            110.0,
+            114.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401929172",
+      "away": "North Texas Mean Green",
+      "home": "Boise State Broncos",
+      "time": "3:30 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -111,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -198,
+      "awayMoneyline": 164,
+      "total": 153.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -3.5,
+          -4.5
+        ],
+        "total": [
+          155.5,
+          153.5
+        ],
+        "ml": {
+          "home": [
+            -198.0,
+            -198.0
+          ],
+          "away": [
+            164.0,
+            164.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:15+00:00"
+      }
+    },
+    {
+      "espnId": "401928797",
+      "away": "Paul Quinn Tigers",
+      "home": "Sam Houston Bearkats",
+      "time": "3:30 PM ET"
+    },
+    {
+      "espnId": "401924811",
+      "away": "Merrimack Warriors",
+      "home": "Hofstra Pride",
+      "time": "3:30 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -125,
+      "awayMoneyline": 105,
+      "total": 124.5,
+      "lineMove": {
+        "spread": [
+          -5.5,
+          -1.5
+        ],
+        "total": [
+          125.5,
+          124.5
+        ],
+        "ml": {
+          "home": [
+            -135.0,
+            -125.0
+          ],
+          "away": [
+            114.0,
+            105.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401911032",
+      "away": "Buffalo Bulls",
+      "home": "Towson Tigers",
+      "time": "3:30 PM ET",
+      "homeSpread": -3.5,
+      "awaySpread": 3.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -162,
+      "awayMoneyline": 136,
+      "total": 138.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -4.5,
+          -3.5
+        ],
+        "total": [
+          139.5,
+          138.5
+        ],
+        "ml": {
+          "home": [
+            -135.0,
+            -162.0
+          ],
+          "away": [
+            114.0,
+            136.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401926218",
+      "away": "Tennessee Tech Golden Eagles",
+      "home": "Eastern Kentucky Colonels",
+      "time": "4:00 PM ET",
+      "homeSpread": 4.5,
+      "awaySpread": -4.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": 160,
+      "awayMoneyline": -192,
+      "total": 169.5,
+      "lineMove": {
+        "spread": [
+          3.5,
+          4.5
+        ],
+        "total": [
+          169.5,
+          169.5
+        ],
+        "ml": {
+          "home": [
+            145.0,
+            160.0
+          ],
+          "away": [
+            -175.0,
+            -192.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401925033",
+      "away": "McNeese Cowboys",
+      "home": "Louisiana Ragin' Cajuns",
+      "time": "4:00 PM ET",
+      "homeSpread": 7.5,
+      "awaySpread": -7.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": 280,
+      "awayMoneyline": -355,
+      "total": 138.5,
+      "lineMove": {
+        "spread": [
+          10.5,
+          7.5
+        ],
+        "total": [
+          141.5,
+          138.5
+        ],
+        "ml": {
+          "home": [
+            300.0,
+            280.0
+          ],
+          "away": [
+            -380.0,
+            -355.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401922024",
+      "away": "Azusa Pacific Cougars",
+      "home": "Idaho State Bengals",
+      "time": "4:00 PM ET"
+    },
+    {
+      "espnId": "401920924",
+      "away": "Drexel Dragons",
+      "home": "Mount St. Mary's Mountaineers",
+      "time": "4:00 PM ET",
+      "homeSpread": 4.5,
+      "awaySpread": -4.5,
+      "homeSpreadOdds": -102,
+      "awaySpreadOdds": -119,
+      "homeMoneyline": 170,
+      "awayMoneyline": -205,
+      "total": 136.5,
+      "lineMove": {
+        "spread": [
+          4.5,
+          4.5
+        ],
+        "total": [
+          137.5,
+          136.5
+        ],
+        "ml": {
+          "home": [
+            185.0,
+            170.0
+          ],
+          "away": [
+            -225.0,
+            -205.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401920906",
+      "away": "Delaware Blue Hens",
+      "home": "Stony Brook Seawolves",
+      "time": "4:00 PM ET",
+      "homeSpread": -5.5,
+      "awaySpread": 5.5,
+      "homeSpreadOdds": -114,
+      "awaySpreadOdds": -106,
+      "homeMoneyline": -225,
+      "awayMoneyline": 185,
+      "total": 136.5,
+      "lineMove": {
+        "spread": [
+          -5.5,
+          -5.5
+        ],
+        "total": [
+          137.5,
+          136.5
+        ],
+        "ml": {
+          "home": [
+            -185.0,
+            -225.0
+          ],
+          "away": [
+            154.0,
+            185.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401920436",
+      "away": "San Jos\u00e9 State Spartans",
+      "home": "Utah Valley Wolverines",
+      "time": "4:00 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -103,
+      "awaySpreadOdds": -117,
+      "homeMoneyline": -270,
+      "awayMoneyline": 220,
+      "total": 154.5,
+      "lineMove": {
+        "spread": [
+          -7.5,
+          -6.5
+        ],
+        "total": [
+          155.5,
+          154.5
+        ],
+        "ml": {
+          "home": [
+            -258.0,
+            -270.0
+          ],
+          "away": [
+            210.0,
+            220.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401917954",
+      "away": "Austin Peay Governors",
+      "home": "Furman Paladins",
+      "time": "4:00 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -117,
+      "awaySpreadOdds": -104,
+      "homeMoneyline": -305,
+      "awayMoneyline": 245,
+      "total": 149.5,
+      "lineMove": {
+        "spread": [
+          -8.5,
+          -6.5
+        ],
+        "total": [
+          150.5,
+          149.5
+        ],
+        "ml": {
+          "home": [
+            -305.0,
+            -305.0
+          ],
+          "away": [
+            245.0,
+            245.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401917549",
+      "away": "Northern Colorado Bears",
+      "home": "San Diego Toreros",
+      "time": "4:00 PM ET",
+      "homeSpread": -13.5,
+      "awaySpread": 13.5,
+      "homeSpreadOdds": -118,
+      "awaySpreadOdds": -103,
+      "homeMoneyline": -1450,
+      "awayMoneyline": 850,
+      "total": 146.5,
+      "lineMove": {
+        "spread": [
+          -13.5,
+          -13.5
+        ],
+        "total": [
+          146.5,
+          146.5
+        ],
+        "ml": {
+          "home": [
+            -1450.0,
+            -1450.0
+          ],
+          "away": [
+            850.0,
+            850.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401912214",
+      "away": "UMass Lowell River Hawks",
+      "home": "American University Eagles",
+      "time": "4:00 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -107,
+      "awaySpreadOdds": -113,
+      "homeMoneyline": -285,
+      "awayMoneyline": 230,
+      "total": 140.5,
+      "lineMove": {
+        "spread": [
+          -9.5,
+          -6.5
+        ],
+        "total": [
+          141.5,
+          140.5
+        ],
+        "ml": {
+          "home": [
+            -325.0,
+            -285.0
+          ],
+          "away": [
+            260.0,
+            230.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401923305",
+      "away": "Maine Black Bears",
+      "home": "Lafayette Leopards",
+      "time": "4:30 PM ET",
+      "homeSpread": -6.5,
+      "awaySpread": 6.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -265,
+      "awayMoneyline": 215,
+      "total": 134.5,
+      "lineMove": {
+        "spread": [
+          -6.5,
+          -6.5
+        ],
+        "total": [
+          135.5,
+          134.5
+        ],
+        "ml": {
+          "home": [
+            -265.0,
+            -265.0
+          ],
+          "away": [
+            215.0,
+            215.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401926778",
+      "away": "Lincoln (CA) Oaklanders",
+      "home": "UC Riverside Highlanders",
+      "time": "5:00 PM ET"
+    },
+    {
+      "espnId": "401920160",
+      "away": "Weber State Wildcats",
+      "home": "Cal State Fullerton Titans",
+      "time": "5:00 PM ET",
+      "homeSpread": -11.5,
+      "awaySpread": 11.5,
+      "homeSpreadOdds": -107,
+      "awaySpreadOdds": -113,
+      "homeMoneyline": -650,
+      "awayMoneyline": 470,
+      "total": 168.5,
+      "lineMove": {
+        "spread": [
+          -12.5,
+          -11.5
+        ],
+        "total": [
+          169.5,
+          168.5
+        ],
+        "ml": {
+          "home": [
+            -625.0,
+            -650.0
+          ],
+          "away": [
+            455.0,
+            470.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401920139",
+      "away": "Northern Arizona Lumberjacks",
+      "home": "Cal State Bakersfield Roadrunners",
+      "time": "5:00 PM ET",
+      "homeSpread": -5.5,
+      "awaySpread": 5.5,
+      "homeSpreadOdds": -108,
+      "awaySpreadOdds": -112,
+      "homeMoneyline": -230,
+      "awayMoneyline": 190,
+      "total": 148.5,
+      "lineMove": {
+        "spread": [
+          -4.5,
+          -5.5
+        ],
+        "total": [
+          150.5,
+          148.5
+        ],
+        "ml": {
+          "home": [
+            -245.0,
+            -230.0
+          ],
+          "away": [
+            200.0,
+            190.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401917548",
+      "away": "UC Irvine Anteaters",
+      "home": "Seattle U Redhawks",
+      "time": "5:00 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -106,
+      "awaySpreadOdds": -114,
+      "homeMoneyline": -205,
+      "awayMoneyline": 170,
+      "total": 137.5,
+      "lineMove": {
+        "spread": [
+          -4.5,
+          -4.5
+        ],
+        "total": [
+          139.5,
+          137.5
+        ],
+        "ml": {
+          "home": [
+            -198.0,
+            -205.0
+          ],
+          "away": [
+            164.0,
+            170.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401911459",
+      "away": "Cal Poly Humboldt Lumberjacks",
+      "home": "Nevada Wolf Pack",
+      "time": "5:00 PM ET"
+    },
+    {
+      "espnId": "401929413",
+      "away": "South Alabama Jaguars",
+      "home": "South Dakota State Jackrabbits",
+      "time": "6:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -101,
+      "awaySpreadOdds": -120,
+      "homeMoneyline": -115,
+      "awayMoneyline": -105,
+      "total": 139.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -1.5,
+          -1.5
+        ],
+        "total": [
+          141.5,
+          139.5
+        ],
+        "ml": {
+          "home": [
+            -125.0,
+            -115.0
+          ],
+          "away": [
+            105.0,
+            -105.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401927367",
+      "away": "Drake Bulldogs",
+      "home": "North Dakota State Bison",
+      "time": "6:00 PM ET",
+      "homeSpread": 5.5,
+      "awaySpread": -5.5,
+      "homeSpreadOdds": -114,
+      "awaySpreadOdds": -106,
+      "homeMoneyline": 185,
+      "awayMoneyline": -225,
+      "total": 142.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          5.5,
+          5.5
+        ],
+        "total": [
+          143.5,
+          142.5
+        ],
+        "ml": {
+          "home": [
+            195.0,
+            185.0
+          ],
+          "away": [
+            -238.0,
+            -225.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401921186",
+      "away": "Bucknell Bison",
+      "home": "Pennsylvania Quakers",
+      "time": "6:00 PM ET",
+      "homeSpread": -15.5,
+      "awaySpread": 15.5,
+      "homeSpreadOdds": -110,
+      "awaySpreadOdds": -110,
+      "homeMoneyline": -1800,
+      "awayMoneyline": 1000,
+      "total": 149.5,
+      "lineMove": {
+        "spread": [
+          -16.5,
+          -15.5
+        ],
+        "total": [
+          151.5,
+          149.5
+        ],
+        "ml": {
+          "home": [
+            -1350.0,
+            -1800.0
+          ],
+          "away": [
+            800.0,
+            1000.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401920879",
+      "away": "Trinity College of Jacksonville Eagles",
+      "home": "Jacksonville Dolphins",
+      "time": "6:00 PM ET"
+    },
+    {
+      "espnId": "401911242",
+      "away": "VMI Keydets",
+      "home": "Richmond Spiders",
+      "time": "6:00 PM ET",
+      "homeSpread": -15.5,
+      "awaySpread": 15.5,
+      "homeSpreadOdds": -102,
+      "awaySpreadOdds": -118,
+      "homeMoneyline": -1600,
+      "awayMoneyline": 900,
+      "total": 148.5,
+      "lineMove": {
+        "spread": [
+          -16.5,
+          -15.5
+        ],
+        "total": [
+          151.5,
+          148.5
+        ],
+        "ml": {
+          "home": [
+            -1600.0,
+            -1600.0
+          ],
+          "away": [
+            900.0,
+            900.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401928620",
+      "away": "Toccoa Falls Eagles",
+      "home": "Middle Tennessee Blue Raiders",
+      "time": "6:30 PM ET"
+    },
+    {
+      "espnId": "401924724",
+      "away": "St. Lawrence Saints",
+      "home": "Cornell Big Red",
+      "time": "7:00 PM ET"
+    },
+    {
+      "espnId": "401921065",
+      "away": "Bethune-Cookman Wildcats",
+      "home": "San Francisco Dons",
+      "time": "7:00 PM ET",
+      "homeSpread": -9.5,
+      "awaySpread": 9.5,
+      "homeSpreadOdds": -111,
+      "awaySpreadOdds": -109,
+      "homeMoneyline": -410,
+      "awayMoneyline": 320,
+      "total": 148.5,
+      "lineMove": {
+        "spread": [
+          -9.5,
+          -9.5
+        ],
+        "total": [
+          149.5,
+          148.5
+        ],
+        "ml": {
+          "home": [
+            -410.0,
+            -410.0
+          ],
+          "away": [
+            320.0,
+            320.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401920954",
+      "away": "Portland State Vikings",
+      "home": "Southern Illinois Salukis",
+      "time": "7:00 PM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -109,
+      "awaySpreadOdds": -111,
+      "homeMoneyline": -305,
+      "awayMoneyline": 245,
+      "total": 154.5,
+      "lineMove": {
+        "spread": [
+          -7.5,
+          -7.5
+        ],
+        "total": [
+          154.5,
+          154.5
+        ],
+        "ml": {
+          "home": [
+            -305.0,
+            -305.0
+          ],
+          "away": [
+            245.0,
+            245.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401920197",
+      "away": "Saint Joseph's Hawks",
+      "home": "Monmouth Hawks",
+      "time": "7:00 PM ET",
+      "homeSpread": 2.5,
+      "awaySpread": -2.5,
+      "homeSpreadOdds": -117,
+      "awaySpreadOdds": -103,
+      "homeMoneyline": 114,
+      "awayMoneyline": -135,
+      "total": 147.5,
+      "lineMove": {
+        "spread": [
+          1.5,
+          2.5
+        ],
+        "total": [
+          146.5,
+          147.5
+        ],
+        "ml": {
+          "home": [
+            114.0,
+            114.0
+          ],
+          "away": [
+            -135.0,
+            -135.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401917550",
+      "away": "Utah Tech Trailblazers",
+      "home": "Santa Clara Broncos",
+      "time": "7:00 PM ET",
+      "homeSpread": -17.5,
+      "awaySpread": 17.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -105,
+      "homeMoneyline": -2800,
+      "awayMoneyline": 1300,
+      "total": 165.5,
+      "lineMove": {
+        "spread": [
+          -19.5,
+          -17.5
+        ],
+        "total": [
+          166.5,
+          165.5
+        ],
+        "ml": {
+          "home": [
+            -2800.0,
+            -2800.0
+          ],
+          "away": [
+            1300.0,
+            1300.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:16+00:00"
+      }
+    },
+    {
+      "espnId": "401912232",
+      "away": "Rider Broncs",
+      "home": "Army Black Knights",
+      "time": "7:00 PM ET",
+      "homeSpread": -9.5,
+      "awaySpread": 9.5,
+      "homeSpreadOdds": -105,
+      "awaySpreadOdds": -115,
+      "homeMoneyline": -410,
+      "awayMoneyline": 320,
+      "total": 136.5,
+      "lineMove": {
+        "spread": [
+          -8.5,
+          -9.5
+        ],
+        "total": [
+          138.5,
+          136.5
+        ],
+        "ml": {
+          "home": [
+            -325.0,
+            -410.0
+          ],
+          "away": [
+            260.0,
+            320.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:17+00:00"
+      }
+    },
+    {
+      "espnId": "401911381",
+      "away": "Morehead State Eagles",
+      "home": "Charleston Southern Buccaneers",
+      "time": "7:00 PM ET",
+      "homeSpread": -2.5,
+      "awaySpread": 2.5,
+      "homeSpreadOdds": -109,
+      "awaySpreadOdds": -111,
+      "homeMoneyline": -155,
+      "awayMoneyline": 130,
+      "total": 150.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -3.5,
+          -2.5
+        ],
+        "total": [
+          149.5,
+          150.5
+        ],
+        "ml": {
+          "home": [
+            -166.0,
+            -155.0
+          ],
+          "away": [
+            140.0,
+            130.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:17+00:00"
+      }
+    },
+    {
+      "espnId": "401925783",
+      "away": "South Carolina State Bulldogs",
+      "home": "Duquesne Dukes",
+      "time": "7:30 PM ET",
+      "homeSpread": -19.5,
+      "awaySpread": 19.5,
+      "homeSpreadOdds": -115,
+      "awaySpreadOdds": -106,
+      "homeMoneyline": -4000,
+      "awayMoneyline": 1600,
+      "total": 142.5,
+      "lineMove": {
+        "spread": [
+          -20.5,
+          -19.5
+        ],
+        "total": [
+          145.5,
+          142.5
+        ],
+        "ml": {
+          "home": [
+            -4000.0,
+            -4000.0
+          ],
+          "away": [
+            1600.0,
+            1600.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:17+00:00"
+      }
+    },
+    {
+      "espnId": "401919851",
+      "away": "Stonehill Skyhawks",
+      "home": "Notre Dame Fighting Irish",
+      "time": "8:00 PM ET",
+      "homeSpread": -30.5,
+      "awaySpread": 30.5,
+      "homeSpreadOdds": -106,
+      "awaySpreadOdds": -115,
+      "total": 149.5,
+      "lineMove": {
+        "spread": [
+          -31.5,
+          -30.5
+        ],
+        "total": [
+          151.5,
+          149.5
+        ],
+        "ml": {},
+        "checked": "2026-11-28T08:29:17+00:00"
+      }
+    },
+    {
+      "espnId": "401917968",
+      "away": "Dallas Crusaders",
+      "home": "Abilene Christian Wildcats",
+      "time": "8:00 PM ET"
+    },
+    {
+      "espnId": "401916308",
+      "away": "California Golden Bears",
+      "home": "Minnesota Golden Gophers",
+      "time": "8:00 PM ET",
+      "homeSpread": -7.5,
+      "awaySpread": 7.5,
+      "homeSpreadOdds": -112,
+      "awaySpreadOdds": -108,
+      "homeMoneyline": -310,
+      "awayMoneyline": 250,
+      "total": 143.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -9.5,
+          -7.5
+        ],
+        "total": [
+          140.5,
+          143.5
+        ],
+        "ml": {
+          "home": [
+            -355.0,
+            -310.0
+          ],
+          "away": [
+            280.0,
+            250.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:17+00:00"
+      }
+    },
+    {
+      "espnId": "401917551",
+      "away": "Loyola Marymount Lions",
+      "home": "UC San Diego Tritons",
+      "time": "10:00 PM ET",
+      "homeSpread": -1.5,
+      "awaySpread": 1.5,
+      "homeSpreadOdds": -118,
+      "awaySpreadOdds": -102,
+      "homeMoneyline": -130,
+      "awayMoneyline": 110,
+      "total": 154.5,
+      "lineMove": {
+        "spread": [
+          -2.5,
+          -1.5
+        ],
+        "total": [
+          156.5,
+          154.5
+        ],
+        "ml": {
+          "home": [
+            -125.0,
+            -130.0
+          ],
+          "away": [
+            105.0,
+            110.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:17+00:00"
+      }
+    },
+    {
+      "espnId": "401920536",
+      "away": "Creighton Bluejays",
+      "home": "Louisville Cardinals",
+      "time": "10:30 PM ET",
+      "homeSpread": -4.5,
+      "awaySpread": 4.5,
+      "homeSpreadOdds": -109,
+      "awaySpreadOdds": -111,
+      "homeMoneyline": -205,
+      "awayMoneyline": 170,
+      "total": 160.5,
+      "neutral": true,
+      "lineMove": {
+        "spread": [
+          -3.5,
+          -4.5
+        ],
+        "total": [
+          157.5,
+          160.5
+        ],
+        "ml": {
+          "home": [
+            -155.0,
+            -205.0
+          ],
+          "away": [
+            130.0,
+            170.0
+          ]
+        },
+        "checked": "2026-11-28T08:29:17+00:00"
+      }
+    }
+  ]
+}

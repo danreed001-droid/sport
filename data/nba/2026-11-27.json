@@ -2,7 +2,7 @@
   "date": "2026-11-27",
   "weekday": "Friday",
   "sport": "nba",
-  "scored": false,
+  "scored": true,
   "generatedAt": "2026-11-27T16:30:00Z",
   "auditChanges": [
     "nba 2026-11-27 Memphis Grizzlies @ Minnesota Timberwolves: Second Opinion altPick Memphis (lean) -> pass, tally 4-0 -> 2-0; Ja Morant was wrongly listed as a healthy Grizzly (he was traded to Portland and is out with a hamstring strain), which removed the basis for the x2 Injuries/Lineup vote. Corrected both teams' injury facts."
@@ -32,7 +32,7 @@
       "awayMoneyline": 146,
       "awayNetRtg": 0.7,
       "awayPDpg": 0.8,
-      "awayScore": null,
+      "awayScore": 108.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -44,7 +44,7 @@
       "homeMoneyline": -174,
       "homeNetRtg": 6.8,
       "homePDpg": 6.4,
-      "homeScore": null,
+      "homeScore": 105.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -368,7 +368,8 @@
           "pct": 56.3,
           "leans": "Miami Heat",
           "leanPct": 56.3,
-          "against": false
+          "against": false,
+          "result": "hit"
         },
         {
           "weight": 1,
@@ -382,7 +383,8 @@
           "pct": 53.8,
           "leans": "New York Knicks",
           "leanPct": 53.8,
-          "against": false
+          "against": false,
+          "result": "miss"
         },
         {
           "weight": 1,
@@ -396,11 +398,16 @@
           "pct": 45.6,
           "leans": "New York Knicks",
           "leanPct": 54.4,
-          "against": true
+          "against": true,
+          "result": "hit"
         }
       ],
       "time": "7:00 PM ET",
-      "totalsLine": 221.5
+      "totalsLine": 221.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "2-2",
@@ -425,7 +432,7 @@
       "awayMoneyline": 300,
       "awayNetRtg": -11.3,
       "awayPDpg": -11.1,
-      "awayScore": null,
+      "awayScore": 98.0,
       "awaySpread": 8.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -437,7 +444,7 @@
       "homeMoneyline": -400,
       "homeNetRtg": 5.7,
       "homePDpg": 5.6,
-      "homeScore": null,
+      "homeScore": 113.0,
       "homeSpread": -8.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -480,9 +487,9 @@
       },
       "netRtgGap": 68.96,
       "pick": "Detroit Pistons",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -679,7 +686,8 @@
           "record": "806-692",
           "says": "back",
           "team": "Detroit Pistons",
-          "weight": 1
+          "weight": 1,
+          "result": "hit"
         }
       ],
       "time": "7:30 PM ET",
@@ -708,7 +716,7 @@
       "awayMoneyline": -155,
       "awayNetRtg": 2.2,
       "awayPDpg": 2.2,
-      "awayScore": null,
+      "awayScore": 111.0,
       "awaySpread": -3.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -720,7 +728,7 @@
       "homeMoneyline": 130,
       "homeNetRtg": -3.3,
       "homePDpg": -3.3,
-      "homeScore": null,
+      "homeScore": 87.0,
       "homeSpread": 3.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -1131,7 +1139,8 @@
           "record": "110-87",
           "says": "back",
           "team": "Indiana Pacers",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": true,
@@ -1145,11 +1154,16 @@
           "record": "200-239",
           "says": "fade",
           "team": "Philadelphia 76ers",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "7:30 PM ET",
-      "totalsLine": 229.5
+      "totalsLine": 229.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "3-3",
@@ -1174,11 +1188,11 @@
       "awayMoneyline": 247,
       "awayNetRtg": -8.2,
       "awayPDpg": -8.1,
-      "awayScore": null,
+      "awayScore": 100.0,
       "awaySpread": 7.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
-      "correct": null,
+      "correct": true,
       "gameTotal": 219.5,
       "gameTotalOverOdds": -112,
       "gameTotalUnderOdds": -108,
@@ -1186,7 +1200,7 @@
       "homeMoneyline": -304,
       "homeNetRtg": -0.1,
       "homePDpg": -0.1,
-      "homeScore": null,
+      "homeScore": 124.0,
       "homeSpread": -7.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -1229,9 +1243,9 @@
       },
       "netRtgGap": 31.04,
       "pick": "Toronto Raptors",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 32.89,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -1427,7 +1441,11 @@
       ],
       "statsSpread": -9.5,
       "time": "7:30 PM ET",
-      "totalsLine": 219.5
+      "totalsLine": 219.5,
+      "statsCorrect": true,
+      "statsReturn": 26.74,
+      "statsCover": true,
+      "statsSpreadReturn": 92.59
     },
     {
       "altCategoryTally": "1-4",
@@ -1452,7 +1470,7 @@
       "awayMoneyline": 300,
       "awayNetRtg": 3.1,
       "awayPDpg": 3.1,
-      "awayScore": null,
+      "awayScore": 87.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -1464,7 +1482,7 @@
       "homeMoneyline": -390,
       "homeNetRtg": 9.9,
       "homePDpg": 9.4,
-      "homeScore": null,
+      "homeScore": 86.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -1644,7 +1662,8 @@
           "record": "159-138",
           "says": "back",
           "team": "Boston Celtics",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -1658,7 +1677,8 @@
           "record": "806-692",
           "says": "back",
           "team": "Boston Celtics",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": false,
@@ -1672,11 +1692,16 @@
           "record": "75-60",
           "says": "fade",
           "team": "Atlanta Hawks",
-          "weight": 2
+          "weight": 2,
+          "result": "miss"
         }
       ],
       "time": "8:00 PM ET",
-      "totalsLine": 223.5
+      "totalsLine": 223.5,
+      "statsCorrect": true,
+      "statsReturn": 300.0,
+      "statsCover": true,
+      "statsSpreadReturn": 97.09
     },
     {
       "altCategoryTally": "2-0",
@@ -1702,7 +1727,7 @@
       "awayMoneyline": 140,
       "awayNetRtg": 9.5,
       "awayPDpg": 9.4,
-      "awayScore": null,
+      "awayScore": 114.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -1714,7 +1739,7 @@
       "homeMoneyline": -166,
       "homeNetRtg": 10.4,
       "homePDpg": 10.4,
-      "homeScore": null,
+      "homeScore": 109.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -2093,7 +2118,11 @@
       ],
       "statsSpread": -2.5,
       "time": "8:30 PM ET",
-      "totalsLine": 219.5
+      "totalsLine": 219.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": false,
+      "statsSpreadReturn": -100.0
     },
     {
       "altCategoryTally": "2-2",
@@ -2118,7 +2147,7 @@
       "awayMoneyline": 110,
       "awayNetRtg": 1,
       "awayPDpg": 1,
-      "awayScore": null,
+      "awayScore": 113.0,
       "awaySpread": 2,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -2130,7 +2159,7 @@
       "homeMoneyline": -132,
       "homeNetRtg": -1.3,
       "homePDpg": -1.3,
-      "homeScore": null,
+      "homeScore": 109.0,
       "homeSpread": -2,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -2307,7 +2336,7 @@
       "awayMoneyline": 180,
       "awayNetRtg": 6.8,
       "awayPDpg": 6.7,
-      "awayScore": null,
+      "awayScore": 96.0,
       "awaySpread": 6,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -2319,7 +2348,7 @@
       "homeMoneyline": -220,
       "homeNetRtg": 11.4,
       "homePDpg": 11.3,
-      "homeScore": null,
+      "homeScore": 99.0,
       "homeSpread": -6,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -2568,11 +2597,16 @@
           "record": "110-87",
           "says": "back",
           "team": "San Antonio Spurs",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "9:30 PM ET",
-      "totalsLine": 225.5
+      "totalsLine": 225.5,
+      "statsCorrect": false,
+      "statsReturn": -100.0,
+      "statsCover": true,
+      "statsSpreadReturn": 95.24
     },
     {
       "altCategoryTally": "4-1",
@@ -2597,7 +2631,7 @@
       "awayMoneyline": -475,
       "awayNetRtg": 0.5,
       "awayPDpg": 0.5,
-      "awayScore": null,
+      "awayScore": 120.0,
       "awaySpread": -10.5,
       "awaySpreadOdds": -110,
       "confidence": "solid",
@@ -2609,7 +2643,7 @@
       "homeMoneyline": 360,
       "homeNetRtg": -7.5,
       "homePDpg": -7.6,
-      "homeScore": null,
+      "homeScore": 107.0,
       "homeSpread": 10.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -2650,9 +2684,9 @@
       },
       "netRtgGap": 34.48,
       "pick": "Denver Nuggets",
-      "pickCover": null,
+      "pickCover": true,
       "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -2927,7 +2961,8 @@
           "record": "110-87",
           "says": "back",
           "team": "Utah Jazz",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         },
         {
           "against": true,
@@ -2941,7 +2976,8 @@
           "record": "200-239",
           "says": "fade",
           "team": "Denver Nuggets",
-          "weight": 1
+          "weight": 1,
+          "result": "miss"
         }
       ],
       "time": "9:30 PM ET",
@@ -2970,7 +3006,7 @@
       "awayMoneyline": 130,
       "awayNetRtg": -7.9,
       "awayPDpg": -8,
-      "awayScore": null,
+      "awayScore": 105.0,
       "awaySpread": 3.5,
       "awaySpreadOdds": -110,
       "confidence": "skip",
@@ -2982,7 +3018,7 @@
       "homeMoneyline": -154,
       "homeNetRtg": -7.5,
       "homePDpg": -7.5,
-      "homeScore": null,
+      "homeScore": 104.0,
       "homeSpread": -3.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -3146,7 +3182,8 @@
           "pct": 45.6,
           "leans": "LA Clippers",
           "leanPct": 54.4,
-          "against": true
+          "against": true,
+          "result": "hit"
         }
       ],
       "time": "9:30 PM ET",
@@ -3155,8 +3192,8 @@
     {
       "altCategoryTally": "0-5",
       "altConfidence": "strong",
-      "altCorrect": null,
-      "altCover": null,
+      "altCorrect": true,
+      "altCover": true,
       "altPick": "Portland Trail Blazers",
       "altReasons": [
         "Scoring margin: favors Portland Trail Blazers \u2014 Golden State's best player Stephen Curry is out, blocking this category from favoring the Warriors; Portland's own +6.4 PD/g, built mostly already without Morant/Sharpe, stands on its own merits",
@@ -3169,17 +3206,17 @@
         "Market: neutral \u2014 78% tickets/86% money on Portland, consistent, with the line moving toward the home favorite (-8.5 to -9.5); not a reverse-line-movement situation",
         "Matchup splits: favors Portland Trail Blazers \u2014 Portland's NBA-best 3-point differential lines up against a Golden State shooting identity now without its primary 3-point gravity in Curry"
       ],
-      "altReturn": null,
-      "altSpreadReturn": null,
+      "altReturn": 25.64,
+      "altSpreadReturn": 90.91,
       "away": "Golden State Warriors",
       "awayMoneyline": 300,
       "awayNetRtg": 0.3,
       "awayPDpg": 0.3,
-      "awayScore": null,
+      "awayScore": 94.0,
       "awaySpread": 9.5,
       "awaySpreadOdds": -110,
       "confidence": "lean",
-      "correct": null,
+      "correct": true,
       "gameTotal": 218.5,
       "gameTotalOverOdds": -105,
       "gameTotalUnderOdds": -115,
@@ -3187,7 +3224,7 @@
       "homeMoneyline": -390,
       "homeNetRtg": 6.4,
       "homePDpg": 6.4,
-      "homeScore": null,
+      "homeScore": 116.0,
       "homeSpread": -9.5,
       "homeSpreadOdds": -110,
       "injuries": {
@@ -3233,9 +3270,9 @@
       },
       "netRtgGap": 31.03,
       "pick": "Portland Trail Blazers",
-      "pickCover": null,
-      "pickReturn": null,
-      "pickSpreadReturn": null,
+      "pickCover": true,
+      "pickReturn": 25.64,
+      "pickSpreadReturn": 90.91,
       "skipReason": null,
       "skipped": false,
       "starterOut": {
@@ -3506,11 +3543,17 @@
           "pct": 52.6,
           "leans": "Portland Trail Blazers",
           "leanPct": 52.6,
-          "against": false
+          "against": false,
+          "result": "hit"
         }
       ],
       "time": "9:30 PM ET",
-      "totalsLine": 218.5
+      "totalsLine": 218.5,
+      "statsCorrect": true,
+      "statsReturn": 33.67,
+      "statsCover": true,
+      "statsSpreadReturn": 92.59
     }
-  ]
+  ],
+  "scoredAt": "2026-11-28T08:28:19.243527+00:00"
 }
